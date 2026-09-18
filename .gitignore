@@ -21,6 +21,11 @@ Thumbs.db
 .vscode/
 .idea/
 
+# Node - nunca subir dependencias
+node_modules/
+dist/
+package-lock.json
+
 # Agentes / local only
 .agents/
 .claude/
