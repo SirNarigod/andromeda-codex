@@ -1,0 +1,72 @@
+{
+  "record_id": "ARPG-STAGE13-COMPLETION-REPORT-V1.4.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "component": "ARPG",
+  "stage": 13,
+  "stage_name": "ECONOMY / CRAFTING",
+  "version": "V1.4.0",
+  "status": "PASS",
+  "result": "ARPG_STAGE13_ECONOMY_CRAFTING_COMPLETE",
+  "baseline": "ARPG_STAGE12_V1.3.0",
+  "master": "V2.0.1_READ_ONLY",
+  "canonical_mutations": 0,
+  "implemented": [
+    "vendors",
+    "explicit quote then execute trade",
+    "runtime wallets",
+    "supply/demand pricing",
+    "bridge/logistics price factor",
+    "stash",
+    "culinary crafting",
+    "unified technology crafting dispatch",
+    "repair service",
+    "player/NPC shared economy"
+  ],
+  "canonical_anchors": [
+    "POI-002",
+    "POI-003",
+    "POI-006",
+    "INDN-008"
+  ],
+  "culinary_projections": 4,
+  "numeric_price_authority": "RUNTIME_ONLY_NOT_CANON",
+  "currency_authority": "RUNTIME_ONLY_NOT_CANON",
+  "godot_required": false,
+  "art_dependency": "NONE",
+  "tests": {
+    "functional": {
+      "passed": 21,
+      "failed": 0
+    },
+    "persistence": {
+      "passed": 1,
+      "failed": 0
+    },
+    "validation": {
+      "passed": 35,
+      "failed": 0
+    },
+    "stress": {
+      "passed": 35,
+      "failed": 0,
+      "profiles": 4,
+      "trades": 12,
+      "replays": 12,
+      "crafts": 4,
+      "stashes": 4
+    }
+  },
+  "regressions": {
+    "stage12_unit": "20/20 PASS",
+    "stage11_unit": "20/20 PASS",
+    "stage10_unit": "18/18 PASS",
+    "stage09_unit": "19/19 PASS",
+    "stage05_unit": "21/21 PASS",
+    "stage05_validation": "68/68 PASS",
+    "stage05_stress": "62/62 PASS",
+    "country_v15": "24/24 PASS",
+    "master": "393/393 PASS"
+  },
+  "open_blockers": 0,
+  "open_corrections": 0
+}

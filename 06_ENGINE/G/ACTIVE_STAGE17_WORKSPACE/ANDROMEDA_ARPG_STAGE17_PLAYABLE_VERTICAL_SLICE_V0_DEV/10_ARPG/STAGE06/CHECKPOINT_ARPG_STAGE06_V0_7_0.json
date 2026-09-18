@@ -1,0 +1,122 @@
+{
+  "record_id": "CHECKPOINT-ARPG-STAGE06-V0.7.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "stage": "06/20",
+  "stage_name": "SKILLS / BUILD PROGRESSION",
+  "version": "V0.7.0",
+  "status": "PASS",
+  "result": "ARPG_SKILLS_BUILD_PROGRESSION_READY",
+  "parent_checkpoint": "CHECKPOINT-ARPG-STAGE05-V0.6.0",
+  "parent_checkpoint_sha256": "a18a67cbf0fafd5d768c7064baec4459609e3818f034ae41053693f902537477",
+  "master_dependency_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+  "tests": {
+    "stage06_functional_unit": {
+      "checks": 16,
+      "passed": 16,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "stage06_persistence_unit": {
+      "checks": 1,
+      "passed": 1,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "stage06_validation": {
+      "checks": 33,
+      "passed": 33,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "stage06_stress": {
+      "checks": 33,
+      "passed": 33,
+      "failed": 0,
+      "status": "PASS",
+      "profiles": 2,
+      "successful_uses": 12,
+      "idempotent_replays": 12
+    },
+    "stage05": {
+      "unit": 22,
+      "validation": 68,
+      "stress": 62,
+      "status": "PASS"
+    },
+    "stage04": {
+      "unit": 16,
+      "validation": 53,
+      "stress": 24,
+      "status": "PASS"
+    },
+    "stage03": {
+      "unit": 14,
+      "validation": 67,
+      "stress": 17,
+      "status": "PASS"
+    },
+    "stage02": {
+      "unit": 11,
+      "validation": 51,
+      "stress": 15,
+      "status": "PASS"
+    },
+    "stage01": {
+      "unit": 12,
+      "validation": 58,
+      "stress": 35,
+      "status": "PASS"
+    },
+    "stage00": {
+      "validation": 51,
+      "stress_worlds": 20,
+      "determinism_pairs": 10,
+      "status": "PASS"
+    },
+    "country_v15": {
+      "checks": 24,
+      "passed": 24,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "master": {
+      "suites": 29,
+      "checks": 393,
+      "passed": 393,
+      "failed": 0,
+      "status": "PASS"
+    }
+  },
+  "skill_catalog": {
+    "definitions": 36,
+    "canonical_magic_sources": 30,
+    "gameplay_derived_prototypes": 6
+  },
+  "hotbar": {
+    "active_slots": 8,
+    "passive_slots": 4
+  },
+  "build_progression": {
+    "fixed_class": null,
+    "model": "EMERGENT_FROM_PLAYER_CHOICES",
+    "axes": [
+      "MARTIAL",
+      "ARCANE",
+      "OFFENSE",
+      "DEFENSE",
+      "MOBILITY",
+      "PERCEPTION",
+      "SUPPORT",
+      "UTILITY"
+    ]
+  },
+  "canon_mutations": 0,
+  "open_corrections": 0,
+  "art_dependency": "NONE",
+  "godot": {
+    "connection": "USER_REPORTED_CONNECTED",
+    "editor_execution": "DEFERRED_USER_ON_MOBILE"
+  },
+  "next_stage": "07_ACTORS",
+  "generated_at": "2026-08-18T17:12:30.966775+00:00"
+}

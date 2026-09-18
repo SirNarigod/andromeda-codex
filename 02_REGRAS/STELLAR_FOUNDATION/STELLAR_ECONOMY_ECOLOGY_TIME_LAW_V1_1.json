@@ -1,0 +1,16 @@
+{
+  "record_id": "STELLAR-ECONOMY-ECOLOGY-TIME-LAW-V1.1",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.1",
+  "status": "CANON_DERIVADO_ATIVO_R2_COMPATIBLE",
+  "supersedes": "STELLAR_ECONOMY_ECOLOGY_TIME_LAW_V1_0",
+  "authority": {"r2": ["PLA-001", "TER-001 through TER-013"], "derived_sources": ["STELLAR_ECONOMIC_FLOWS_V1_0", "STELLAR_CLIMATE_SPATIAL_MODEL_V1_0", "ATLAS_ECONOMIC_BINDINGS_V1_0", "ATLAS_ECOLOGY_BINDINGS_V1_0"], "scope": "REGIONAL_ECONOMY_ECOLOGY_TIME"},
+  "dependencies": ["STELLAR_SOVEREIGNTY_TERRITORY_LAW_V1_1.json", "STELLAR_INSTITUTION_CULTURE_LAW_V1_0.json", "STELLAR_ROOT_PROGRESSION_LAW_V1_0.json", "../../01_LORE/STELLAR_REBASE_R2/R2_SOURCE_AUTHORITY_INDEX_V1_0.json"],
+  "invariants": ["ECONOMY_IS_REGIONAL_AND_SYSTEMIC", "PRODUCTION_STOCK_CONSUMPTION_ROUTE_CAPACITY_AND_MAINTENANCE_ARE_INTERDEPENDENT", "RESOURCES_AND_ECOLOGICAL_RECOVERY_ARE_FINITE", "CLIMATE_AND_ECOLOGY_HAVE_LOCAL_CONSEQUENCES", "PRICES_CURRENCY_STOCKS_AND_INVENTORIES_ARE_RUNTIME_ONLY", "NO_RUNTIME_MARKET_STATE_BECOMES_CANON"],
+  "prohibitions": ["NO_INFINITE_RESOURCE_OR_FREE_RECOVERY", "NO_CANONICAL_PRICE_OR_CURRENCY_INFERENCE", "NO_ROUTE_TELEPORTATION", "NO_ECONOMIC_EVENT_GRANTS_SOVEREIGNTY", "NO_OFFLINE_IRREVERSIBLE_ECOLOGICAL_OR_SOCIAL_LOSS", "NO_R2_FACT_RETCON_BY_SIMULATION"],
+  "derived_anchor_sets": {"economic_flows": 7, "climate_zones": 8, "economic_bindings": 274, "ecological_bindings": 75, "principle": "Resource → species or material → management or processing → storage → route → market or care."},
+  "runtime_model": {"regional_variables": ["production", "stock", "consumption", "shortage_pressure", "route_capacity", "maintenance_pressure", "ecological_recovery"], "runtime_only_variables": ["price", "currency", "vendor_stock", "inventory", "treasury"], "bounds": ["stock >= 0", "price >= 0", "0 <= shortage_pressure <= 100", "0 <= route_capacity <= 1"]},
+  "simulation_effects": ["A disrupted route changes availability, maintenance pressure and local scarcity without changing territorial borders.", "Recovery consumes time and compatible resources; it cannot erase ecological or causal records.", "Living Country and future UE5 systems receive versioned regional snapshots, not canon mutation rights."],
+  "allowed_states": ["BALANCED", "STRAINED", "SCARCE", "ROUTE_DISRUPTED", "RECOVERING", "MAINTENANCE_BACKLOG", "AUTHORIAL_EVENT_PENDING"],
+  "story_generators": ["A medical flow fails at a bridge, forcing a settlement to choose whom it can supply.", "A cheap resource boom leaves an ecological maintenance debt that becomes politically visible.", "A repaired route restores trade but exposes who profited from scarcity."]
+}

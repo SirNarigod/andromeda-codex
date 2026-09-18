@@ -1,0 +1,660 @@
+{
+  "record_id": "ARPG-GODOT-HANDOFF-MANIFEST-V0.7.0",
+  "project": "ANDROMEDA CODEX ARPG",
+  "stage": "16A/23",
+  "handoff_target": "STAGE16B_GODOT_RUNTIME_VERTICAL_SLICE",
+  "status": "READY_FOR_CODEX_GODOT_HANDOFF_UI_LOADOUT_REVISION",
+  "authority": {
+    "master": "ANDROMEDA_CODEX_MASTER_V2_0_1_READ_ONLY",
+    "living": "LIVING_SIMULATION_ENGINE_V1_0_0_PROTECTED_BASELINE",
+    "arpg_runtime": "IntegratedARPGEngineV16A / Stage01-15 cores",
+    "godot_role": "PRESENTATION_INPUT_PHYSICS_NAVIGATION_SCENES_UI_CLIENT_ORCHESTRATION",
+    "server_rule": "DO_NOT_REIMPLEMENT_AUTHORITATIVE_GAMEPLAY_RULES_IN_GDSCRIPT",
+    "canon_mutation": false
+  },
+  "codex_entry_gate": [
+    "Detect installed Godot major/minor version before writing version-specific APIs.",
+    "Locate existing local ANDROMEDA_EDITOR_BRIDGE/transport before creating a new one.",
+    "Run existing 06_GODOT_LIVING_V1_5 runtime gate without modifying it.",
+    "Run Stage16A Python accumulated suite before first Godot mutation.",
+    "Create Stage16B in a new Godot runtime folder; do not overwrite sealed historical gates."
+  ],
+  "target_folder": "07_GODOT_ARPG_STAGE16B",
+  "legacy_godot_folder": "06_GODOT_LIVING_V1_5_READ_ONLY_REFERENCE",
+  "scene_tree": {
+    "Main.tscn": {
+      "root": "Node:AndromedaARPG",
+      "children": [
+        "Node:RuntimeBridge",
+        "Node3D:WorldStreamRoot",
+        "Node3D:ActorRoot",
+        "Node3D:GroundLootRoot",
+        "Node3D:EffectsRoot",
+        "IsometricCameraRig.tscn",
+        "CanvasLayer:UILayer"
+      ],
+      "responsibility": "vertical slice composition only; no gameplay authority"
+    },
+    "Player.tscn": {
+      "root": "CharacterBody3D:Player",
+      "children": [
+        "CollisionShape3D",
+        "NavigationAgent3D",
+        "Node3D:VisualRoot",
+        "Area3D:Hurtbox",
+        "Marker3D:DialogueAnchor",
+        "Marker3D:TargetAnchor"
+      ],
+      "notes": [
+        "Mouse click commands remain authoritative through bridge.",
+        "No body-balance mechanic.",
+        "Movement must not snag on micro-relief."
+      ]
+    },
+    "NPC.tscn": {
+      "root": "CharacterBody3D:NPC",
+      "children": [
+        "CollisionShape3D",
+        "NavigationAgent3D",
+        "Node3D:VisualRoot",
+        "Area3D:InteractionSensor",
+        "Marker3D:DialogueAnchor",
+        "Marker3D:HealthBarAnchor"
+      ],
+      "notes": [
+        "Dialogue does not freeze NPC or player.",
+        "Name visible on hover only."
+      ]
+    },
+    "Enemy.tscn": {
+      "root": "CharacterBody3D:Enemy",
+      "children": [
+        "CollisionShape3D",
+        "NavigationAgent3D",
+        "Node3D:VisualRoot",
+        "Area3D:Hurtbox",
+        "Marker3D:HealthBarAnchor"
+      ],
+      "notes": [
+        "Combat result comes from Stage03/07 authority.",
+        "Enemy bar stays screen-aligned and straight."
+      ]
+    },
+    "GroundLoot.tscn": {
+      "root": "RigidBody3D:GroundLoot",
+      "children": [
+        "CollisionShape3D",
+        "MeshInstance3D:PlaceholderVisual",
+        "Area3D:PickupSensor",
+        "Label3D:OptionalMinimalLabel"
+      ],
+      "notes": [
+        "Physics only until settling, then freeze/sleep.",
+        "Pickup authoritative only at <=0.5m.",
+        "Inventory full leaves drop active.",
+        "Icon is category-based, not unique item art."
+      ]
+    },
+    "ResourceNode.tscn": {
+      "root": "StaticBody3D:ResourceNode",
+      "children": [
+        "CollisionShape3D",
+        "Node3D:VisualRoot",
+        "Area3D:InteractionSensor",
+        "Marker3D:DropAnchor"
+      ],
+      "notes": [
+        "Tree/rock/ore/flora/agriculture/hunt/fish outputs use Ground Loot channel."
+      ]
+    },
+    "RegionCell.tscn": {
+      "root": "Node3D:RegionCell",
+      "children": [
+        "Node3D:VisualSurface",
+        "StaticBody3D:CollisionSurface",
+        "NavigationRegion3D",
+        "Node3D:SpawnAnchors",
+        "Node3D:Occluders"
+      ],
+      "notes": [
+        "Visual, collision and traversal surfaces remain conceptually separated."
+      ]
+    },
+    "IsometricCameraRig.tscn": {
+      "root": "Node3D:IsometricCameraRig",
+      "children": [
+        "Node3D:SmoothHeightAnchor",
+        "Camera3D",
+        "RayCast3D:OcclusionProbe"
+      ],
+      "notes": [
+        "No free orbit in first slice.",
+        "Occluder fade before abrupt camera shortening.",
+        "Camera feedback cannot change resolved click target."
+      ]
+    },
+    "HUD.tscn": {
+      "root": "Control:MinimalHUD",
+      "children": [
+        "Control:PlayerVitals",
+        "Control:WeaponQuickSlots",
+        "Control:TargetInfo",
+        "Control:LootFeedback",
+        "Control:QuestFeedback",
+        "Control:AutoPickupStatus",
+        "Control:ImportantDialogueLine",
+        "Control:ChoiceOverlay",
+        "Control:HoverNameLayer"
+      ],
+      "notes": [
+        "World-first contextual HUD; no permanent large panels.",
+        "Weapon quick slots show exactly two loadout slots and fade back to discreet after swap.",
+        "Stamina is not a fixed HUD bar; it uses StaminaWorldRing.tscn adjacent to player."
+      ]
+    },
+    "DialogueBubble.tscn": {
+      "root": "Control:DialogueBubble",
+      "children": [
+        "PanelContainer:RoundedWhiteBubble",
+        "Label:DialogueText",
+        "Control:SubtlePointer"
+      ],
+      "notes": [
+        "White rounded bubble.",
+        "Normal text medium gray.",
+        "Important text soft light orange."
+      ]
+    },
+    "StaminaWorldRing.tscn": {
+      "root": "Control:StaminaWorldRing",
+      "children": [
+        "TextureProgressBar:RadialFill",
+        "Control:SoftShadow"
+      ],
+      "notes": [
+        "Screen-space UI follows player world projection without rotating with player.",
+        "Soft yellow radial fill depletes/replenishes with authoritative stamina.",
+        "Completely hidden at 100% when not being consumed/regenerated."
+      ]
+    },
+    "Inventory.tscn": {
+      "root": "Control:InventoryPanel",
+      "children": [
+        "PanelContainer:RoundedWhitePanel",
+        "Control:CategoryTabs",
+        "GridContainer:ItemGrid",
+        "Control:EquipmentArea",
+        "Control:WeaponQuickSlots",
+        "Label:WeightReadout",
+        "Control:TooltipLayer"
+      ],
+      "notes": [
+        "Same white rounded visual language as dialogue bubble.",
+        "Rounded legible typography; light/medium gray text with sufficient contrast.",
+        "Inventory may contain many weapons; only two quick-loadout weapon slots are active-ready."
+      ]
+    }
+  },
+  "autoloads": [
+    {
+      "name": "AndromedaBridge",
+      "script": "scripts/runtime/andromeda_bridge.gd",
+      "role": "Transport/session/snapshot/command envelopes only; never decides gameplay results."
+    },
+    {
+      "name": "InputRouter",
+      "script": "scripts/input/input_router.gd",
+      "role": "Maps Godot events to Stage16A interaction intents."
+    },
+    {
+      "name": "SceneStream",
+      "script": "scripts/world/scene_stream.gd",
+      "role": "ACTIVE/PRELOAD/SYSTEMIC scene-cell orchestration."
+    },
+    {
+      "name": "PresentationBus",
+      "script": "scripts/presentation/presentation_bus.gd",
+      "role": "Non-authoritative dialogue/HUD/camera/gamefeel events."
+    },
+    {
+      "name": "ClientSession",
+      "script": "scripts/runtime/client_session.gd",
+      "role": "Profile/session ids, client cache and reconnect state; backend remains source of truth."
+    }
+  ],
+  "input_map": [
+    {
+      "action": "pointer_left",
+      "default": "Mouse Button Left",
+      "behavior": "GROUND=>MOVE; target=>SELECT without interrupting existing path; GroundLoot=>APPROACH/PICKUP exception."
+    },
+    {
+      "action": "pointer_right",
+      "default": "Mouse Button Right",
+      "behavior": "Click only. Ground=>MOVE; hostile=>CHASE_ATTACK; NPC/object/resource/vehicle=>contextual approach/action; loot=>approach/pickup."
+    },
+    {
+      "action": "attack_selected",
+      "default": "Space",
+      "behavior": "Attack selected enemy through combat authority; cooldown cannot be bypassed."
+    },
+    {
+      "action": "interact_selected",
+      "default": "E",
+      "behavior": "Approach and interact with selected non-enemy target."
+    },
+    {
+      "action": "inventory_toggle",
+      "default": "I",
+      "behavior": "Open/close inventory; inventory not permanently visible."
+    },
+    {
+      "action": "camera_zoom_in",
+      "default": "Zoom Modifier + Mouse Wheel Up",
+      "behavior": "Only while zoom_modifier is held; clamps camera zoom; does not change weapon."
+    },
+    {
+      "action": "camera_zoom_out",
+      "default": "Zoom Modifier + Mouse Wheel Down",
+      "behavior": "Only while zoom_modifier is held; clamps camera zoom; does not change weapon."
+    },
+    {
+      "action": "pause_menu",
+      "default": "Escape",
+      "behavior": "Local menu policy; must not silently mutate Living state."
+    },
+    {
+      "action": "weapon_slot_1",
+      "default": "Key 1",
+      "behavior": "Request authoritative activation of quick weapon slot 1."
+    },
+    {
+      "action": "weapon_slot_2",
+      "default": "Key 2",
+      "behavior": "Request authoritative activation of quick weapon slot 2."
+    },
+    {
+      "action": "weapon_cycle_wheel",
+      "default": "Mouse Wheel Up/Down WITHOUT zoom modifier",
+      "behavior": "Toggle between the two authoritative quick weapon slots during gameplay context."
+    },
+    {
+      "action": "camera_zoom_modifier",
+      "default": "CONFIGURABLE_DEV_CANDIDATE",
+      "behavior": "Held modifier converts mouse wheel from weapon swap to camera zoom; user-remappable."
+    }
+  ],
+  "collision_layers_candidate": [
+    {
+      "layer": 1,
+      "name": "WORLD_STATIC",
+      "use": "terrain/buildings/large blockers"
+    },
+    {
+      "layer": 2,
+      "name": "PLAYER",
+      "use": "player body"
+    },
+    {
+      "layer": 3,
+      "name": "ACTOR_BODY",
+      "use": "active NPC/enemy/animal body; hard-body behavior requires Godot feel validation"
+    },
+    {
+      "layer": 4,
+      "name": "INTERACTABLE",
+      "use": "NPC/object/door/chair/shop sensors"
+    },
+    {
+      "layer": 5,
+      "name": "GROUND_LOOT",
+      "use": "physical ground drops and pickup query"
+    },
+    {
+      "layer": 6,
+      "name": "RESOURCE_NODE",
+      "use": "tree/rock/ore/flora/agriculture nodes"
+    },
+    {
+      "layer": 7,
+      "name": "VEHICLE",
+      "use": "vehicles and vehicle interaction"
+    },
+    {
+      "layer": 8,
+      "name": "NAV_BLOCKER",
+      "use": "dynamic navigation blockers/closed passages"
+    },
+    {
+      "layer": 9,
+      "name": "CAMERA_OCCLUDER",
+      "use": "geometry eligible for camera fade"
+    },
+    {
+      "layer": 10,
+      "name": "HIT_HURT_SENSOR",
+      "use": "combat query sensors; result still backend authoritative"
+    },
+    {
+      "layer": 11,
+      "name": "WORLD_TRIGGER",
+      "use": "waypoint/dungeon/stream/quest trigger volumes"
+    }
+  ],
+  "navigation": {
+    "player": "NavigationAgent3D path follower; click target projected from Camera3D screen ray.",
+    "actors": "NavigationAgent3D for active actors; LOD/systemic actors remain outside detailed Godot scene.",
+    "pickup": "Clicked loot creates path to reachable position; pickup attempted only once physical distance <=0.5m.",
+    "resources": "Approach interaction range determined by target contract; produced result becomes Ground Loot.",
+    "terrain_candidates": {
+      "max_walkable_slope_deg": 32.0,
+      "max_step_height_m": 0.35,
+      "micro_relief_collision_filter_m": 0.12
+    },
+    "rule": "Stage16B must tune NavigationMesh/CharacterBody against these candidates; failure changes candidate values, not authorial canon."
+  },
+  "terrain_and_streaming": {
+    "body_balance_mechanic": false,
+    "living_macro_chunk_m": 4096.0,
+    "phases": {
+      "ACTIVE": "full gameplay/visual",
+      "PRELOAD": "collision/nav/reduced visual",
+      "SYSTEMIC": "Living only, no detailed Godot scene"
+    },
+    "map_scale_candidates": {
+      "INTERIOR": {
+        "extent_m": 96,
+        "cell_m": 96,
+        "preload_ring": 0
+      },
+      "POI": {
+        "extent_m": 192,
+        "cell_m": 192,
+        "preload_ring": 0
+      },
+      "SMALL_AREA": {
+        "extent_m": 512,
+        "cell_m": 256,
+        "preload_ring": 1
+      },
+      "SUBREGION": {
+        "extent_m": 2048,
+        "cell_m": 256,
+        "preload_ring": 1
+      },
+      "REGION": {
+        "extent_m": 8192,
+        "cell_m": 512,
+        "preload_ring": 1
+      },
+      "STATE_PHASE": {
+        "extent_m": 32768,
+        "cell_m": 512,
+        "preload_ring": 1
+      }
+    },
+    "surface_rule": "Traversal cost uses Stage16A surface+slope+load; Stage05 inventory remains weight authority."
+  },
+  "camera_candidates": {
+    "mode": "stable isometric-oblique perspective",
+    "yaw_deg": 45.0,
+    "pitch_deg": 55.0,
+    "distance_m": 14.0,
+    "min_distance_m": 11.0,
+    "max_distance_m": 18.0,
+    "height_follow_half_life_s": 0.18,
+    "micro_vertical_deadband_m": 0.12,
+    "occluder_fade_alpha": 0.2,
+    "free_orbit": false,
+    "validation": "visual/physical tuning required in Godot; values are not final art/balance"
+  },
+  "dialogue_ui": {
+    "world_pause": false,
+    "next_button": false,
+    "bubble_bg": "#FFFFFF",
+    "normal_text": "#6B6B6B",
+    "important_text": "#D9A15F",
+    "corner_radius_px_candidate": 14,
+    "max_visible_bubbles_candidate": 3,
+    "full_visibility_distance_m_candidate": 8.0,
+    "fade_end_distance_m_candidate": 14.0,
+    "choice_range_m_candidate": 2.0,
+    "important_dialogue": "world bubble + subtle bottom accessibility line",
+    "npc_name": "hover only",
+    "multi_npc": "turn-gated realtime alternation"
+  },
+  "hud": {
+    "philosophy": "MINIMAL_CONTEXTUAL_WORLD_FIRST",
+    "idle_vitals_alpha_candidate": 0.22,
+    "active_vitals_alpha_candidate": 0.92,
+    "enemy_bar": "only when relevant/engaged; straight stable above head; alpha gets HP+shield",
+    "boss": "contextual boss treatment",
+    "inventory": "I toggles; white rounded Switch-like clean console UI language; not permanent HUD",
+    "auto_pickup_control": "small ON/OFF UI control; setting persisted per profile",
+    "feedback_priority": "player danger > combat result > blocked action > quest > interaction > pickup > movement > ambient",
+    "stamina": "yellow radial circle adjacent to player; fully hidden at 100% and inactive",
+    "weapon_quick_slots": "exactly 2; active slot highlighted subtly; fade back after swap",
+    "unified_visual_language": "white rounded panels + rounded legible gray typography + subtle shadows"
+  },
+  "ground_loot": {
+    "pickup_radius_m": 0.5,
+    "physical_sources": [
+      "ENEMY",
+      "TREE",
+      "ROCK",
+      "ORE",
+      "FLORA",
+      "AGRICULTURE",
+      "HUNTING",
+      "FISHING",
+      "CONTAINER",
+      "PHYSICAL_PRODUCTION",
+      "PLAYER_DROP"
+    ],
+    "auto_pickup": "per-profile ON/OFF; passive; never interrupts current action",
+    "manual_pickup": "click=>path=>pickup only at <=0.5m",
+    "blocked_path": "no pickup",
+    "inventory_full": "drop remains active",
+    "settling": "physical drop settles safely, then freezes/sleeps; prevent endless rolling/terrain penetration",
+    "stacking": "stackable quantities may be represented by one physical drop",
+    "icon_policy": "category/type icon, not unique item icon"
+  },
+  "bridge_contract": {
+    "existing_reference": [
+      "01_RUNTIME/godot_adapter_v15.py",
+      "06_GODOT_LIVING_V1_5/LivingWorldClient.gd",
+      "06_GODOT_LIVING_V1_5/GodotRuntimeGate.gd"
+    ],
+    "transport": "DISCOVER_EXISTING_LOCAL_BRIDGE_FIRST_DO_NOT_INVENT_ENDPOINTS",
+    "required_capabilities": [
+      "bind/revoke session",
+      "authoritative snapshot",
+      "command envelope",
+      "movement/path",
+      "interaction intent execution",
+      "attack/target",
+      "ground loot spawn/snapshot/pickup",
+      "gathering to Ground Loot",
+      "dialogue presentation snapshot/events",
+      "vendor quote/explicit trade",
+      "profile preferences",
+      "save/autosave",
+      "death/recovery/respawn",
+      "stream cell state",
+      "two-weapon quick-loadout snapshot/assign/activate/cycle",
+      "contextual wheel input mode (weapon swap / modified zoom / menu scroll)"
+    ],
+    "security": "Godot client must never be able to supply authoritative damage, inventory grant, currency result, quest completion or canonical mutation."
+  },
+  "implementation_order": [
+    "B01 bridge/session + headless runtime gate",
+    "B02 Main + player + camera + click-to-move/navigation",
+    "B03 contextual target selection/right-click/Space/E + authoritative two-weapon loadout + 1/2/wheel switching",
+    "B04 terrain cell + slope/stamina/load + streaming ACTIVE/PRELOAD/SYSTEMIC",
+    "B05 NPC + realtime dialogue + hover/choices + unified minimal HUD + stamina world ring + inventory theme",
+    "B06 enemy + combat presentation + health/shield bars + game feel",
+    "B07 universal Ground Loot + pickup 0.5m + Auto Pickup persistence",
+    "B08 resource nodes/gathering=>Ground Loot",
+    "B09 vendor/inventory/quest loop",
+    "B10 save/death/respawn + reload continuity",
+    "B11 integrated vertical-slice playthrough + performance/regression + restore checkpoint"
+  ],
+  "acceptance_gates": [
+    {
+      "id": "G16B-01",
+      "requirement": "Godot starts with zero parser/runtime errors and existing V1.5 runtime gate remains PASS."
+    },
+    {
+      "id": "G16B-02",
+      "requirement": "Left click ground moves; left click target selects without unintended movement interruption; left click loot approaches/picks."
+    },
+    {
+      "id": "G16B-03",
+      "requirement": "Right click is click-only contextual action; hostile chase/attack respects cooldown."
+    },
+    {
+      "id": "G16B-04",
+      "requirement": "Pickup impossible above 0.5m, through blocker, or before drop settles."
+    },
+    {
+      "id": "G16B-05",
+      "requirement": "Tree/rock/ore/flora/agriculture/hunt/fish/enemy physical output appears as Ground Loot before inventory."
+    },
+    {
+      "id": "G16B-06",
+      "requirement": "Auto Pickup ON/OFF works, persists, and never interrupts attack/movement."
+    },
+    {
+      "id": "G16B-07",
+      "requirement": "Terrain has subtle relief; movement stable; no micro-collision snagging/camera jitter; no body-balance mechanic."
+    },
+    {
+      "id": "G16B-08",
+      "requirement": "Slope+surface+load affect authoritative stamina; yellow radial player-adjacent stamina circle depletes/refills and disappears completely at 100% when inactive."
+    },
+    {
+      "id": "G16B-09",
+      "requirement": "Large logical areas stream by cells; only active+preload detailed; distant area remains Living SYSTEMIC."
+    },
+    {
+      "id": "G16B-10",
+      "requirement": "Realtime NPC dialogue uses rounded white bubble, gray normal text, light-orange important text, no Next button, no world pause."
+    },
+    {
+      "id": "G16B-11",
+      "requirement": "NPC names appear on hover only; multiple NPC conversations alternate without bubble spam; choices appear near NPC."
+    },
+    {
+      "id": "G16B-12",
+      "requirement": "Important dialogue simultaneously appears in world bubble and subtle bottom accessibility line."
+    },
+    {
+      "id": "G16B-13",
+      "requirement": "HUD remains minimal/contextual; enemy bars stable/straight; alpha HP+shield; inventory toggled with I; HUD/inventory/dialogue share white rounded legible UI language."
+    },
+    {
+      "id": "G16B-14",
+      "requirement": "Camera stays stable over micro-relief, zoom clamps, occluders fade, no forced combat zoom/free orbit; mouse wheel zoom works only while zoom modifier is held."
+    },
+    {
+      "id": "G16B-15",
+      "requirement": "Game-feel feedback never changes gameplay result; local hit freeze only; reduced-motion disables camera impulse/local freeze."
+    },
+    {
+      "id": "G16B-16",
+      "requirement": "Vendor requires explicit quote/execute; approaching/clicking shop never auto-purchases."
+    },
+    {
+      "id": "G16B-17",
+      "requirement": "Save/reload preserves player, world, Ground Loot, Auto Pickup, quest/economy and death recovery state."
+    },
+    {
+      "id": "G16B-18",
+      "requirement": "Death exits dungeon where applicable, respawns at safe waypoint, preserves XP/items under Stage15 policy."
+    },
+    {
+      "id": "G16B-19",
+      "requirement": "Full vertical slice spawn→explore→dialogue→quest→combat→loot→gather→vendor→save→death→respawn completes without debugger errors."
+    },
+    {
+      "id": "G16B-20",
+      "requirement": "No canonical Master mutation; Stage16A 143/143 + stress20/20 and touched regressions remain PASS after Godot implementation."
+    },
+    {
+      "id": "G16B-21",
+      "requirement": "Player quick loadout exposes exactly 2 weapon slots; inventory may contain more weapons; only one slot is active/equipped in MAIN_HAND at a time and inactive weapon modifiers do not stack."
+    },
+    {
+      "id": "G16B-22",
+      "requirement": "Keys 1/2 activate their weapon slots; unmodified mouse wheel toggles weapons; modifier+wheel zooms; menu/UI wheel scroll does not swap weapon or zoom."
+    },
+    {
+      "id": "G16B-23",
+      "requirement": "Dialogue, inventory, vendors, crafting, tooltips, choices and HUD share the unified white/off-white rounded clean-console UI family with rounded legible gray text and soft-orange important text; no copied Nintendo/Zelda assets."
+    }
+  ],
+  "explicit_non_goals_stage16b": [
+    "final art",
+    "final audio assets",
+    "multiplayer release",
+    "second country",
+    "free camera orbit",
+    "body balance mechanic",
+    "final Stage17 balance",
+    "canon expansion"
+  ],
+  "handoff_result": "CODEX_MAY_IMPLEMENT_STAGE16B_USING_V0_7_UI_LOADOUT_RULES_WHEN_LOCAL_PC_AND_GODOT_ARE_AVAILABLE",
+  "ui_theme": {
+    "resource_candidate": "ui/theme/AndromedaMinimalTheme.tres",
+    "reference_philosophy": "Nintendo Switch-like clean console UI without copying assets/layouts",
+    "panel_background": "#FFFFFF",
+    "panel_corner_radius_px_candidate": 14,
+    "primary_text": "#6B6B6B",
+    "secondary_text": "#8A8A8A",
+    "important_text": "#D9A15F",
+    "font_direction": "ROUNDED_SANS_LEGIBLE",
+    "shadow": "SUBTLE_ONLY",
+    "applies_to": [
+      "dialogue",
+      "HUD",
+      "inventory",
+      "vendor",
+      "crafting",
+      "quest",
+      "tooltip",
+      "choices",
+      "settings"
+    ],
+    "final_font_asset": "DEFERRED_TO_STAGE16B_VISUAL_VALIDATION"
+  },
+  "stamina_world_ring": {
+    "shape": "CIRCLE_RADIAL",
+    "color": "SOFT_YELLOW",
+    "placement": "PLAYER_ADJACENT_SCREEN_SPACE",
+    "source": "AUTHORITATIVE_STAGE04_STAMINA",
+    "depletion": "RADIAL_EMPTY_AS_STAMINA_DEPLETES",
+    "recovery": "RADIAL_REFILL_AS_STAMINA_RECOVERS",
+    "hide_when_full_and_inactive": true,
+    "numbers_permanent": false,
+    "stage16b_visual_validation_required": true
+  },
+  "weapon_loadout": {
+    "max_quick_slots": 2,
+    "simultaneously_active_weapons": 1,
+    "slots": [
+      1,
+      2
+    ],
+    "inventory_weapon_count": "LIMITED_ONLY_BY_NORMAL_INVENTORY_CAPACITY",
+    "backend_authority": "STAGE16A_TWO_WEAPON_QUICK_LOADOUT; active slot equips MAIN_HAND in Stage05 authority",
+    "switch_inputs": [
+      "KEY_1",
+      "KEY_2",
+      "MOUSE_WHEEL_WITHOUT_ZOOM_MODIFIER"
+    ],
+    "zoom_input": "ZOOM_MODIFIER_HELD_PLUS_MOUSE_WHEEL",
+    "zoom_modifier": "CONFIGURABLE_ACTION; DEV binding may be chosen by Codex only as a replaceable candidate",
+    "menu_wheel": "UI_SCROLL_ONLY; no weapon swap and no camera zoom while menu consumes wheel",
+    "presentation": "TWO_SMALL_WHITE_ROUNDED_SLOTS; active gets subtle soft-yellow accent; fades discreet after swap"
+  }
+}

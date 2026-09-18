@@ -1,0 +1,43 @@
+{
+  "record_id": "STELLAR-STRUCTURAL-INTEGRITY-INDEX-DEV-V1.0",
+  "title": "Resistência Estrutural por Tipo de Construção",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "r2_guard": "Complementa environmental_material_profile (já existente em cada EST-XXX desde o Sistema E) com uma camada qualitativa de resistência a impacto físico (não incêndio, que já é coberto).",
+  "by_building_type": [
+    {
+      "building_type": "ACAMPAMENTO",
+      "structural_tier": "FRÁGIL",
+      "note": "lona/madeira leve, colapsa com pouco impacto"
+    },
+    {
+      "building_type": "RESIDENCIAL",
+      "structural_tier": "BÁSICA",
+      "note": "madeira/alvenaria comum"
+    },
+    {
+      "building_type": "COMERCIAL",
+      "structural_tier": "BÁSICA",
+      "note": "madeira/alvenaria comum, vãos maiores"
+    },
+    {
+      "building_type": "LOJA",
+      "structural_tier": "BÁSICA",
+      "note": "similar a comercial, menor porte"
+    },
+    {
+      "building_type": "INSTITUCIONAL",
+      "structural_tier": "REFORÇADA",
+      "note": "alvenaria/pedra, construção pública duradoura"
+    },
+    {
+      "building_type": "MILITAR",
+      "structural_tier": "REFORÇADA",
+      "note": "projetada para resistir a cerco/impacto"
+    },
+    {
+      "building_type": "INDUSTRIAL",
+      "structural_tier": "PESADA",
+      "note": "estrutura metálica/pedra para suportar maquinário pesado"
+    }
+  ]
+}

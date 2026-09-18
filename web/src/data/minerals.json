@@ -1,0 +1,116 @@
+[
+ {
+  "id": "MIN-IRON",
+  "n": "Ferral Bruto",
+  "prim": "TER-002",
+  "sec": []
+ },
+ {
+  "id": "MIN-COPPER",
+  "n": "Cobrex Condutor",
+  "prim": "TER-005",
+  "sec": [
+   "TER-007"
+  ]
+ },
+ {
+  "id": "MIN-TIN",
+  "n": "Estanho Nimbo",
+  "prim": "TER-002",
+  "sec": []
+ },
+ {
+  "id": "MIN-SILVER",
+  "n": "Argêntea Pálida",
+  "prim": "TER-001",
+  "sec": [
+   "TER-004"
+  ]
+ },
+ {
+  "id": "MIN-GOLD",
+  "n": "Aúreo Solar",
+  "prim": "TER-010",
+  "sec": [
+   "TER-015"
+  ]
+ },
+ {
+  "id": "MIN-CRYSTAL",
+  "n": "Cristal Rúnico",
+  "prim": "TER-009",
+  "sec": [
+   "TER-017"
+  ]
+ },
+ {
+  "id": "MIN-MANA-ORE",
+  "n": "Manalita",
+  "prim": "TER-010",
+  "sec": []
+ },
+ {
+  "id": "MIN-VOID-GLASS",
+  "n": "Vidro Umbral",
+  "prim": "TER-011",
+  "sec": [
+   "TER-012"
+  ]
+ },
+ {
+  "id": "MIN-STONE",
+  "n": "Rocha Estrutural",
+  "prim": "TER-003",
+  "sec": []
+ },
+ {
+  "id": "MIN-BASALT",
+  "n": "Basalto Negro",
+  "prim": "TER-013",
+  "sec": [
+   "TER-014"
+  ]
+ },
+ {
+  "id": "MIN-QUARTZ",
+  "n": "Quartzo de Veio",
+  "prim": "TER-009",
+  "sec": [
+   "TER-016"
+  ]
+ },
+ {
+  "id": "MIN-RARE",
+  "n": "Liga-Núcleo Bruta",
+  "prim": "TER-005",
+  "sec": []
+ },
+ {
+  "id": "MIN-TITAN",
+  "n": "Titanita Cinzenta",
+  "prim": "TER-006",
+  "sec": [
+   "TER-018"
+  ]
+ },
+ {
+  "id": "MIN-ROBOTIUM",
+  "n": "Robotita Azul",
+  "prim": "TER-003",
+  "sec": []
+ },
+ {
+  "id": "MIN-MAGNETITE",
+  "n": "Magnetita de Pulso",
+  "prim": "TER-003",
+  "sec": []
+ },
+ {
+  "id": "MIN-ROOT-SHARD",
+  "n": "Fragmento Radicular",
+  "prim": "TER-008",
+  "sec": [
+   "TER-019"
+  ]
+ }
+]

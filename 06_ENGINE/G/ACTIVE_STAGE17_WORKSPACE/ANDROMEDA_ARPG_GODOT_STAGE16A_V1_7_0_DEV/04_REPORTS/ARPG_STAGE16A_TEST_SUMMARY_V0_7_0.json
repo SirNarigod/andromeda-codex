@@ -1,0 +1,32 @@
+{
+  "record_id": "ARPG-STAGE16A-TEST-SUMMARY-V0.7.0",
+  "status": "PASS",
+  "stage16a": {
+    "checks": 180,
+    "passed": 180,
+    "failed": 0
+  },
+  "stress": {
+    "checks": 20,
+    "passed": 20,
+    "failed": 0
+  },
+  "regressions": {
+    "stage05_item_core": {
+      "checks": 22,
+      "passed": 22,
+      "failed": 0
+    },
+    "stage15_validation": {
+      "checks": 24,
+      "passed": 24,
+      "failed": 0
+    }
+  },
+  "notes": [
+    "Grouped full-suite timeout was treated as INCONCLUSIVE and not counted; suites were rerun separately to PASS.",
+    "Vertical slice assembly: 29/29 PASS isolated.",
+    "Weapon loadout persistence across resume: PASS.",
+    "ResourceWarning configured as error in final isolated gates."
+  ]
+}

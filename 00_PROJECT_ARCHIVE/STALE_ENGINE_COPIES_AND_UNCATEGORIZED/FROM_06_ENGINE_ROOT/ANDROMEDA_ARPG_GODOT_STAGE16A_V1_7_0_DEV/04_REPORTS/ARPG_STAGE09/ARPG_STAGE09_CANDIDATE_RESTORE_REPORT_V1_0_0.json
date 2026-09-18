@@ -1,0 +1,27 @@
+{
+  "backup_authorization": "AUTHORIZED_FOR_FINAL_SEAL",
+  "generated_at": "2026-08-18T20:53:47.737860+00:00",
+  "post_test_integrity": {
+    "ledger": "538/538 PASS",
+    "manifest": "537/537 PASS",
+    "transients": 0
+  },
+  "pre_test_integrity": {
+    "ledger": "538/538 PASS",
+    "manifest": "537/537 PASS",
+    "transients": 0
+  },
+  "project": "ANDRÔMEDA CÓDEX",
+  "record_id": "ARPG-STAGE09-CANDIDATE-RESTORE-REPORT-V1.0.0",
+  "source_archive": "ANDROMEDA_ARPG_GATHERING_STAGE09_V1_0_0_CANDIDATE.zip",
+  "source_sha256": "61fb8796ee47417eb83dbef4dbe31d280cc909b0148905e04f18b89ac0cc290a",
+  "stage": "09/23",
+  "status": "PASS",
+  "tests": {
+    "functional": "19/19 PASS",
+    "persistence": "1/1 PASS",
+    "stress": "59/59 PASS",
+    "validation": "40/40 PASS"
+  },
+  "version": "V1.0.0"
+}

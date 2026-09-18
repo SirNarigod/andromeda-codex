@@ -1,0 +1,21 @@
+{
+  "record_id": "ARPG-STAGE16B-B01-EDITOR-BRIDGE-DEBUGGER-V0.8.0",
+  "captured_at": "2026-08-20T19:27:02.3949360-03:00",
+  "godot_version": "4.7.1.stable.official.a13da4feb",
+  "renderer": "OpenGL 3.3 Compatibility",
+  "device": "NVIDIA GeForce GTX 1650",
+  "gate_marker": "ANDROMEDA_STAGE16B_B01_GATE: PASS",
+  "summary": {
+    "status": "PASS",
+    "checks": 54,
+    "passed": 54,
+    "failed": 0,
+    "acceptance_scope": [
+      "G16B-01"
+    ]
+  },
+  "debugger_errors": [],
+  "process_stop": "CONTROLLED_BY_EXISTING_EDITOR_BRIDGE",
+  "live_http_backend": "NOT_PART_OF_THIS_DEBUGGER_GATE"
+}
+

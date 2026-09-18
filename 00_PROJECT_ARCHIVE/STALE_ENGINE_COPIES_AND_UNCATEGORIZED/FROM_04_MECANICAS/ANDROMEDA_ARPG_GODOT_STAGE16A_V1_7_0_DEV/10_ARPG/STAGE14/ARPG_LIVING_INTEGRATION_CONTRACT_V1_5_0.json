@@ -1,0 +1,55 @@
+{
+  "record_id": "ARPG-LIVING-INTEGRATION-CONTRACT-V1.5.0",
+  "stage": 14,
+  "version": "V1.5.0",
+  "status": "PASS",
+  "authority": "ANDROMEDA_ARPG_STAGE14_LIVING_INTEGRATION",
+  "country_ref": "TER-011",
+  "canonical_mutation": false,
+  "master_authority": "MASTER_V2_0_1_READ_ONLY",
+  "living_baseline": "LIVING_SIMULATION_ENGINE_V1_0_0_PLUS_COUNTRY_V1_5_RUNTIME",
+  "systemic_metrics": [
+    "infrastructure_resilience",
+    "resource_availability",
+    "production_capacity",
+    "market_stability",
+    "labor_capacity",
+    "ecological_resilience",
+    "security_stability",
+    "population_welfare",
+    "faction_stability",
+    "governance_stability"
+  ],
+  "causal_chain": {
+    "observe": "Stages 08-13 + sealed Living runtime",
+    "signals": "persistent gameplay-derived signals",
+    "effects": "bounded market-demand adaptation and runtime reconciliation",
+    "opportunities": "dynamic non-canonical quest opportunities",
+    "orchestrator": "sealed WorldSimulationOrchestrator remains tick authority"
+  },
+  "living_bridges": [
+    "ConsequenceEngine",
+    "WorldSimulationOrchestrator",
+    "SocietyLaborSystem",
+    "EcologySystem",
+    "WorldSystems",
+    "DomainIntegration"
+  ],
+  "guards": {
+    "population": "Runtime numeric aggregates are not canonical population facts.",
+    "factions": "Influence/runtime state never implies sovereignty; absent TER-011 faction record does not imply absence of factions.",
+    "laws": "Absent runtime law profile means unresolved policy, not lawlessness; runtime law profiles remain non-canonical policy.",
+    "ecology": "No materialized population record is not interpreted as extinction.",
+    "narrative": "Emergent opportunities never auto-create canonical quests/events.",
+    "lod": "Lazy actor/worker/ecology materialization must not be interpreted as zero population/workforce."
+  },
+  "feedback_examples": [
+    "bridge disruption -> logistics pressure -> demand shift -> dynamic infrastructure opportunity",
+    "machine degradation -> production slowdown -> component pressure",
+    "resource depletion -> scarcity signal -> supply opportunity",
+    "recovery -> bounded convergence toward neutral market demand"
+  ],
+  "art_dependency": "NONE",
+  "godot_required": false,
+  "created_at": "2026-08-18T20:49:08.386053-03:00"
+}

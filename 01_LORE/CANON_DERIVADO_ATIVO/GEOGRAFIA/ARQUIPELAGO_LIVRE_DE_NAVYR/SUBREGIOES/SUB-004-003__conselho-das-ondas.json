@@ -1,0 +1,11 @@
+{
+  "record_id": "SUB-004-003", "record_kind": "DERIVED_SUBREGION_PROFILE", "authority": "CANON_DERIVADO_ATIVO", "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Conselho das Ondas", "parent_political_unit": "TER-004",
+  "provenance": {"approval": "GAMEPLAY_DERIVED_DEV_SOURCE", "r2_anchors": ["TER-004", "nymara-vel-thal"], "compatibility": "Camada administrativa e narrativa local; não cria fronteira, cidade, soberania ou nova autoridade."},
+  "function": "Assembleia itinerante de capitãs e capitães de ilha que governa a confederação marítima.",
+  "locality_references": ["LOC-004-003 Salão das Ondas"],
+  "permitted_catalog_links": {"npc_roles": [], "professions": [], "encounters": [], "resources": []},
+  "local_conflicts": ["voto por tonelagem de frota versus voto igualitário por ilha"],
+  "prohibitions": ["NO_NEW_SOVEREIGNTY", "NO_AUTOMATIC_KENUA_SCENE", "NO_R2_EPISODE_REWRITE", "NO_FIXED_BORDER_COORDINATE"],
+  "story_generators": ["Uma ilha pequena propõe reforma no sistema de votos do conselho e enfrenta resistência das ilhas maiores."]
+}

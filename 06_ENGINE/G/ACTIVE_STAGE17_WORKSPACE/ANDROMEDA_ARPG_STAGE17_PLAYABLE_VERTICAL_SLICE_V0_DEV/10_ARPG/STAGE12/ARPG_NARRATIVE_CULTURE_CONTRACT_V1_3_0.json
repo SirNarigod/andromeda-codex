@@ -1,0 +1,59 @@
+{
+  "record_id": "ARPG-NARRATIVE-CULTURE-CONTRACT-V1.3.0",
+  "version": "V1.3.0",
+  "stage": 12,
+  "authority": "ANDROMEDA_ARPG_STAGE12_NARRATIVE_CULTURE_QUESTS",
+  "country_ref": "TER-011",
+  "canon_policy": {
+    "master": "V2.0.1_READ_ONLY",
+    "canonical_mutations": 0,
+    "quest_templates": "GAMEPLAY_DERIVED_FROM_CANON_ANCHORS",
+    "dialogue_exact_copy": "NOT_CANON_UNLESS_AUTHORED",
+    "spoiler_guard": "MAX_LEVEL_BY_VIEW",
+    "character_spatialization": "NO_AUTO_SPATIALIZATION"
+  },
+  "culture": {
+    "identity_ref": "SOC-PROP-FND-011",
+    "practice_count": 26,
+    "official_language_ref": null,
+    "official_religion_ref": null,
+    "language_guard": "DO_NOT_INVENT",
+    "belief_guard": "SYS-REL-001_FRAMEWORK_ONLY_NO_OFFICIAL_RELIGION_ASSUMED"
+  },
+  "factions": {
+    "refs": [
+      "FAC-009",
+      "FAC-010"
+    ],
+    "scope": "PLANETARY_SCOPE",
+    "territorial_control_claimed": false
+  },
+  "global_narrative_anchors": [
+    "PER-002",
+    "PER-003",
+    "TIM-029",
+    "TIM-032"
+  ],
+  "quest_templates": [
+    "QST-S12-VARGA-MEDIATION",
+    "QST-S12-BRIDGE-CONTINUITY",
+    "QST-S12-WORKSHOP-CIRCUIT",
+    "QST-S12-FRONTIER-SUPPLY",
+    "QST-S12-VARGA-ORIENTATION"
+  ],
+  "dialogue_briefs": [
+    "DLG-S12-MEDIATION",
+    "DLG-S12-WORKSHOP",
+    "DLG-S12-FRONTIER"
+  ],
+  "reputation_model": "CONTEXTUAL_NOT_GLOBAL_PER_SOC-PROP-REP-011",
+  "integrations": [
+    "STAGE05_ITEM_CORE",
+    "STAGE10_MOBILITY",
+    "STAGE11_TECHNOLOGY",
+    "STAGE01_PROFILE_PERSISTENCE"
+  ],
+  "art_dependency": "NONE",
+  "godot_required": false,
+  "status": "PASS"
+}

@@ -1,0 +1,23 @@
+{
+  "record_id": "STELLAR-R2-NAMED-APPEARANCE-GUARD-V1.0",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "AUTHORIAL_APPEARANCE_GATE",
+  "protected_records": ["PER-001 through PER-011", "LID-001 through LID-008"],
+  "default_policy": {
+    "spawn_mode": "NO_DEFAULT_RUNTIME_SPAWN",
+    "interaction_mode": "AUTHORIAL_APPEARANCE_GATE_REQUIRED",
+    "role": "NARRATIVE_APPEARANCE_NOT_GENERIC_NPC",
+    "required_fields": ["source_record", "episode_or_timeline_scope", "spoiler_level", "authorial_gate", "no_retcon_assertion"]
+  },
+  "kenua_policy": {
+    "record": "PER-002",
+    "campaign_position": "PROTECTED_PARALLEL_TO_CUSTOM_PLAYER",
+    "prohibitions": ["NO_REPEATABLE_NPC", "NO_AUTO_SPATIALIZATION", "NO_SCENE_OR_DECISION_MUTATION", "NO_EPISODE_REPLACEMENT"]
+  },
+  "season_one_policy": {
+    "sealed_episode_protection": true,
+    "amadon_contact_before_s01e08": "ABSOLUTELY_BLOCKED",
+    "dialogue": "No exact dialogue is canonical unless authored from the episode source."
+  },
+  "story_generators": ["Uma personagem R2 pode surgir como consequência de um evento autorizado, nunca como comerciante repetível.", "Uma ausência protegida de Kenua permite que a campanha do jogador tenha consequências próprias.", "Uma referência indireta cria mistério sem vazar uma revelação selada."]
+}

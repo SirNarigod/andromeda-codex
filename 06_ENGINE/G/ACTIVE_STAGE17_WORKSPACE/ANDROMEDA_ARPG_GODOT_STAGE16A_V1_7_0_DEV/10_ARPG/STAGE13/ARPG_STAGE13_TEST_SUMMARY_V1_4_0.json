@@ -1,0 +1,43 @@
+{
+  "record_id": "ARPG-STAGE13-TEST-SUMMARY-V1.4.0",
+  "stage": 13,
+  "version": "V1.4.0",
+  "status": "PASS",
+  "stage13": {
+    "functional": {
+      "passed": 21,
+      "failed": 0
+    },
+    "persistence": {
+      "passed": 1,
+      "failed": 0
+    },
+    "validation": {
+      "passed": 35,
+      "failed": 0
+    },
+    "stress": {
+      "passed": 35,
+      "failed": 0,
+      "profiles": 4,
+      "trades": 12,
+      "replays": 12,
+      "crafts": 4,
+      "stashes": 4
+    }
+  },
+  "regressions": {
+    "stage12_unit": "20/20 PASS",
+    "stage11_unit": "20/20 PASS",
+    "stage10_unit": "18/18 PASS",
+    "stage09_unit": "19/19 PASS",
+    "stage05_unit": "21/21 PASS",
+    "stage05_validation": "68/68 PASS",
+    "stage05_stress": "62/62 PASS",
+    "country_v15": "24/24 PASS",
+    "master": "393/393 PASS"
+  },
+  "canonical_mutations": 0,
+  "open_corrections": 0,
+  "blockers": 0
+}

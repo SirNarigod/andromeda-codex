@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-PREPARED-FOOD-DEV-V1.0",
+  "title": "Pratos preparados a partir dos ingredientes já catalogados (STELLAR_RESOURCE_CATALOG_V1_0)",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "canonical_status": "GAMEPLAY_DERIVED_DEV",
+  "source_reference": "04_MECANICAS/ECONOMIA_E_RECURSOS/STELLAR_RESOURCE_CATALOG_V1_0.json",
+  "r2_guard": "Toda receita cita pelo menos um RES-XXX real já catalogado (NO_UNSOURCED_RECIPE). Nenhum dos 2 recursos BIOLOGICAL_HAZARD (RES-009/010) é usado como alimento. price_tier é gameplay-derivado, nunca apresentado como preço canônico (NO_CANONICAL_PRICE). Não altera STELLAR_RESOURCE_CATALOG_V1_0.json nem 01_LORE/CANON_R2/.",
+  "dishes": [
+    {
+      "dish_id": "PRT-001",
+      "name": "Queijo de Pastagem",
+      "ingredients": [
+        "RES-001"
+      ],
+      "prepared_at": "EST-037",
+      "effect": "alimento denso, rico em proteína e cálcio (herdado de RES-001)",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 0.73,
+      "food_category": "PREPARADO",
+      "description": "alimento denso, rico em proteína e cálcio (herdado de RES-001)"
+    },
+    {
+      "dish_id": "PRT-002",
+      "name": "Creme de Brumante",
+      "ingredients": [
+        "RES-002"
+      ],
+      "prepared_at": "EST-037",
+      "effect": "recuperação em clima frio; consumo excessivo pode sobrecarregar (herdado de RES-002)",
+      "price_tier": "MÉDIO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 0.73,
+      "food_category": "PREPARADO",
+      "description": "recuperação em clima frio; consumo excessivo pode sobrecarregar (herdado de RES-002)"
+    },
+    {
+      "dish_id": "PRT-003",
+      "name": "Leite Claro de Lúmara",
+      "ingredients": [
+        "RES-003"
+      ],
+      "prepared_at": "EST-012",
+      "effect": "leve, rico em micronutrientes; exportado para uso medicinal em Rubra-Viva",
+      "price_tier": "MÉDIO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-007",
+        "CUR-000"
+      ],
+      "weight_kg": 0.73,
+      "food_category": "PREPARADO",
+      "description": "leve, rico em micronutrientes; exportado para uso medicinal em Rubra-Viva"
+    },
+    {
+      "dish_id": "PRT-004",
+      "name": "Ração Âmbar de Emergência",
+      "ingredients": [
+        "RES-004"
+      ],
+      "prepared_at": "EST-041",
+      "effect": "ração de emergência com ferro e proteína; distribuída a deslocados (herdado de RES-004)",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ],
+      "weight_kg": 0.73,
+      "food_category": "PREPARADO",
+      "description": "ração de emergência com ferro e proteína; distribuída a deslocados (herdado de RES-004)"
+    },
+    {
+      "dish_id": "PRT-005",
+      "name": "Grilo-Cobre Torrado",
+      "ingredients": [
+        "RES-005"
+      ],
+      "prepared_at": "EST-001",
+      "effect": "petisco rico em proteína, vitaminas B e zinco (herdado de RES-005)",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-001",
+        "CUR-000"
+      ],
+      "weight_kg": 0.73,
+      "food_category": "PREPARADO",
+      "description": "petisco rico em proteína, vitaminas B e zinco (herdado de RES-005)"
+    },
+    {
+      "dish_id": "PRT-006",
+      "name": "Caldo de Larva-de-Véu",
+      "ingredients": [
+        "RES-006"
+      ],
+      "prepared_at": "EST-025",
+      "effect": "caldo nutritivo servido a convalescentes; requer cozimento completo (herdado de RES-006)",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-007",
+        "CUR-000"
+      ],
+      "weight_kg": 0.73,
+      "food_category": "PREPARADO",
+      "description": "caldo nutritivo servido a convalescentes; requer cozimento completo (herdado de RES-006)"
+    },
+    {
+      "dish_id": "PRT-007",
+      "name": "Farinha de Véu",
+      "ingredients": [
+        "RES-006"
+      ],
+      "prepared_at": "EST-002",
+      "effect": "farinha de longa duração, bem de exportação portuária (herdado de RES-006)",
+      "price_tier": "MÉDIO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "weight_kg": 0.73,
+      "food_category": "PREPARADO",
+      "description": "farinha de longa duração, bem de exportação portuária (herdado de RES-006)"
+    },
+    {
+      "dish_id": "PRT-008",
+      "name": "Prato de Fronteira",
+      "ingredients": [
+        "RES-001",
+        "RES-005"
+      ],
+      "prepared_at": "EST-005",
+      "effect": "refeição farta combinando laticínio e proteína de inseto, comum nas casas de Varga",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 0.73,
+      "food_category": "PREPARADO",
+      "description": "refeição farta combinando laticínio e proteína de inseto, comum nas casas de Varga"
+    }
+  ]
+}

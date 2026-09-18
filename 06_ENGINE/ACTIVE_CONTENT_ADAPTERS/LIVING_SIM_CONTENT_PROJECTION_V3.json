@@ -1,0 +1,29 @@
+{
+  "record_id": "LIVING_SIM_CONTENT_PROJECTION_V3",
+  "status": "ACTIVE_ENGINE_NEUTRAL_READ_ONLY",
+  "supersedes": "LIVING_SIM_CONTENT_PROJECTION_V2",
+  "authority": "R2_AND_APPROVED_DERIVATION_READ_ONLY",
+  "routing_registry": "01_LORE/CONTENT_ROUTING_REGISTRY_V3.json",
+  "layers": {
+    "LIVE_ENTITY_STATE": ["PER", "LID"],
+    "LIVE_ROUTES": ["TER", "CIT"],
+    "LIVE_ECONOMY": ["BIO", "CRI", "FLO", "TEC", "RESOURCE_CATALOG"],
+    "LIVE_POPULATION": ["TER", "CIT", "PROFESSION_CATALOG"],
+    "LIVE_FACTIONS": ["FAC", "CUL", "TER"],
+    "LIVE_ENVIRONMENT": ["BIO", "CIT", "ART", "ENCOUNTER_CATALOG"],
+    "LIVE_EVENTS": ["HIS", "EPI"],
+    "LIVE_ECOLOGY": ["BIO", "CRI", "FLO", "COR"],
+    "LIVE_SOCIAL": ["PER", "LID", "FAC", "NPC_ROLE_CATALOG"],
+    "LIVE_CAUSAL": ["HIS", "EPI"],
+    "LIVE_WORKSHOPS": ["FAC-009", "FAC-010"]
+  },
+  "taxonomy_overlay": {
+    "resources": "QUALITATIVE_ONLY",
+    "professions": "SOCIAL_PRACTICE_NOT_PLAYER_CLASS",
+    "npc_roles": "GENERIC_ONLY_UNLESS_AUTHORIAL_APPEARANCE_GATE",
+    "encounters": "CONTEXTUAL_BEHAVIOR_NOT_DEFAULT_HOSTILITY",
+    "permitted_runtime_fields": ["availability", "workload", "local_trust", "contamination_risk", "encounter_context", "safety_strain", "maintenance_backlog"],
+    "blocked_runtime_fields": ["canon_write", "numerical_balance_promotion", "named_r2_spawn", "sovereignty", "episode_mutation", "root_irreversible_transition"]
+  },
+  "prohibitions": ["NO_CANON_WRITE", "NO_R2_EPISODE_MUTATION", "NO_SOVEREIGNTY_MUTATION", "NO_AUTHORIAL_DEATH_RESOLUTION", "NO_AMADON_PRE_S01E08", "NO_IRREVERSIBLE_ROOT_TRANSITION"]
+}

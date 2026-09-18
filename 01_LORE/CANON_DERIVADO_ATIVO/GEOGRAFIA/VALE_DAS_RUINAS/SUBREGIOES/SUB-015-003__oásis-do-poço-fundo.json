@@ -1,0 +1,42 @@
+{
+  "record_id": "SUB-015-003",
+  "record_kind": "DERIVED_SUBREGION_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Oásis do Poço Fundo",
+  "parent_political_unit": "TER-015",
+  "provenance": {
+    "approval": "AUTHORIAL_DECISION_FASE_48",
+    "r2_anchors": [],
+    "compatibility": "Território 100% novo por decisão explícita do autor (fase 48) — a ruína é anônima, sem nome de civilização histórica confirmada, para não inventar fato HIS-XXX novo."
+  },
+  "function": "Único ponto de água permanente da região, sustento de toda a comunidade do vale.",
+  "locality_references": [
+    "LOC-015-003"
+  ],
+  "permitted_catalog_links": {
+    "npc_roles": [],
+    "professions": [
+      "guardião de poço"
+    ],
+    "encounters": [],
+    "resources": [
+      "AGZ-099",
+      "FLO-014",
+      "EST-054"
+    ]
+  },
+  "local_conflicts": [
+    "acesso comunitário à água versus proteção contra uso excessivo"
+  ],
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY_BEYOND_FASE_48_GATE",
+    "NO_AUTOMATIC_KENUA_SCENE",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_FIXED_BORDER_COORDINATE",
+    "NO_NAMED_HISTORICAL_CIVILIZATION"
+  ],
+  "story_generators": [
+    "Uma descoberta em Oásis do Poço Fundo levanta perguntas sobre o passado do vale sem respostas definitivas."
+  ]
+}

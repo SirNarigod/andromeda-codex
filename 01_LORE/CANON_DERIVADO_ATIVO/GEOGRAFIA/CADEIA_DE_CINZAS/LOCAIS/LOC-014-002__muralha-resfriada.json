@@ -1,0 +1,27 @@
+{
+  "loc_id": "LOC-014-002",
+  "name": "Muralha Resfriada",
+  "parent_subregion": "SUB-014-002",
+  "function": "Assentamento principal protegido por rocha vulcânica resfriada.",
+  "notable_link": "TER-014 Cadeia de Cinzas (fase 44, território novo)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "record_id": "LOC-014-002",
+  "settlement_tier": "POSTO",
+  "history": "O assentamento nasceu literalmente dentro de um fluxo de lava antigo que esfriou em formato de muralha curva, protegendo o vale interno de ventos de cinza que tornam o resto da cadeia quase inabitável em certas estações. Ninguém construiu essa proteção de propósito — os primeiros colonos apenas reconheceram uma sorte geológica e se instalaram dentro dela, reforçando as partes mais finas da rocha resfriada com alvenaria ao longo de gerações.",
+  "sensory": "A muralha de rocha negra curva-se acima das construções internas como um teto parcial natural, bloqueando boa parte do céu em algumas partes do assentamento. Cinza fina se acumula nos parapeitos externos e precisa ser varrida diariamente — uma tarefa rotativa entre famílias que raramente gera reclamação, já que todos entendem sua necessidade sem precisar de lembrete. Dentro da proteção, o ar é surpreendentemente limpo comparado ao resto da cadeia, e crianças que nunca saíram do vale às vezes espirram descontroladamente na primeira vez que respiram o ar de cinza lá fora.",
+  "figures": [
+    {
+      "role": "Guardiã da Muralha",
+      "name": "Perra Cinzavento",
+      "note": "Inspeciona pessoalmente os pontos mais finos da rocha resfriada a cada temporada, marcando com giz onde reforço é necessário. Discute constantemente com o conselho do assentamento sobre a urgência de reforçar um trecho específico que ela considera perigosamente fino — o conselho acha que ela exagera o risco."
+    },
+    {
+      "role": "Conselheiro cético",
+      "name": "Bado Solraso",
+      "note": "Cresceu ouvindo Perra soar alarme sobre trechos que nunca cederam e parou de levar os avisos dela tão a sério quanto deveria — não por má-fé, mas por cansaço genuíno de anos de previsões que não se concretizaram."
+    }
+  ],
+  "hook": "O trecho que Perra mais teme começou a rachar visivelmente pela primeira vez, exatamente na estação de ventos mais fortes do ano — ela precisa convencer Bado e o resto do conselho a evacuar temporariamente aquela ala do assentamento antes que a rocha ceda de vez, mas ninguém quer abandonar casa por causa de um alarme que soou falso tantas vezes antes.",
+  "detail": "Toda construção nova dentro da Muralha Resfriada precisa da aprovação de Perra antes de encostar qualquer peso estrutural na rocha natural — uma regra que ela mesma instituiu e que ninguém contesta abertamente, mesmo os que duvidam da urgência dos avisos dela.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION"]
+}

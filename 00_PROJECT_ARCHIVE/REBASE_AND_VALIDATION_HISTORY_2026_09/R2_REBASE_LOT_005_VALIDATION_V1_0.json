@@ -1,0 +1,333 @@
+{
+  "record_id": "R2_REBASE_LOT_005_VALIDATION_V1_0",
+  "generated_at": "2026-09-07T03:09:04.567460+00:00",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "r2_source_hash",
+      "passed": true,
+      "detail": "257e456a5d0396310ec2355b3dfc0f11f4e0a5264cf6e764591c8760f5070cb0"
+    },
+    {
+      "name": "json:STELLAR_FOUNDATION_INDEX_V1_5.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:STELLAR_PLAYER_CAMPAIGN_LAW_V1_0.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:STELLAR_LIFE_DEATH_REBIRTH_LAW_V1_1.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:STELLAR_PROGRESSION_QUEST_CONSEQUENCE_LAW_V1_1.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:STELLAR_SKILL_ITEMIZATION_LAW_V1_0.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:STELLAR_INFORMATION_MEMORY_LAW_V1_1.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:R2_REBASE_DECISION_LEDGER_V1_4.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:ANDROMEDA_AUTHORITY_MATRIX_V6_R2_REBASED.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "shape:index",
+      "passed": true,
+      "detail": "STELLAR_FOUNDATION_INDEX_V1_5"
+    },
+    {
+      "name": "shape:player",
+      "passed": true,
+      "detail": "STELLAR-PLAYER-CAMPAIGN-LAW-V1.0"
+    },
+    {
+      "name": "shape:life",
+      "passed": true,
+      "detail": "STELLAR-LIFE-DEATH-REBIRTH-LAW-V1.1"
+    },
+    {
+      "name": "shape:progression",
+      "passed": true,
+      "detail": "STELLAR-PROGRESSION-QUEST-CONSEQUENCE-LAW-V1.1"
+    },
+    {
+      "name": "shape:skills",
+      "passed": true,
+      "detail": "STELLAR-SKILL-ITEMIZATION-LAW-V1.0"
+    },
+    {
+      "name": "shape:memory",
+      "passed": true,
+      "detail": "STELLAR-INFORMATION-MEMORY-LAW-V1.1"
+    },
+    {
+      "name": "shape:ledger",
+      "passed": true,
+      "detail": "R2_REBASE_DECISION_LEDGER_V1_4"
+    },
+    {
+      "name": "shape:matrix",
+      "passed": true,
+      "detail": "ANDROMEDA_AUTHORITY_MATRIX_V6_R2_REBASED"
+    },
+    {
+      "name": "indexed:STELLAR_PLAYER_CAMPAIGN_LAW_V1_0",
+      "passed": true,
+      "detail": "active index V1.5"
+    },
+    {
+      "name": "indexed:STELLAR_LIFE_DEATH_REBIRTH_LAW_V1_1",
+      "passed": true,
+      "detail": "active index V1.5"
+    },
+    {
+      "name": "indexed:STELLAR_PROGRESSION_QUEST_CONSEQUENCE_LAW_V1_1",
+      "passed": true,
+      "detail": "active index V1.5"
+    },
+    {
+      "name": "indexed:STELLAR_SKILL_ITEMIZATION_LAW_V1_0",
+      "passed": true,
+      "detail": "active index V1.5"
+    },
+    {
+      "name": "indexed:STELLAR_INFORMATION_MEMORY_LAW_V1_1",
+      "passed": true,
+      "detail": "active index V1.5"
+    },
+    {
+      "name": "active_path:STELLAR_COSMOLOGY_CANON_V1_2",
+      "passed": true,
+      "detail": "01_LORE/STELLAR_FOUNDATION/STELLAR_COSMOLOGY_CANON_V1_2.json"
+    },
+    {
+      "name": "active_path:STELLAR_CANON_CONSTITUTION_V1_1",
+      "passed": true,
+      "detail": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_CANON_CONSTITUTION_V1_1.json"
+    },
+    {
+      "name": "active_path:STELLAR_MAGIC_TECHNOLOGY_LAW_V1_1",
+      "passed": true,
+      "detail": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_MAGIC_TECHNOLOGY_LAW_V1_1.json"
+    },
+    {
+      "name": "active_path:STELLAR_SYMBIOSIS_LAW_V1_0",
+      "passed": true,
+      "detail": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_SYMBIOSIS_LAW_V1_0.json"
+    },
+    {
+      "name": "active_path:STELLAR_ROOT_PROGRESSION_LAW_V1_0",
+      "passed": true,
+      "detail": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_ROOT_PROGRESSION_LAW_V1_0.json"
+    },
+    {
+      "name": "active_path:STELLAR_SOVEREIGNTY_TERRITORY_LAW_V1_1",
+      "passed": true,
+      "detail": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_SOVEREIGNTY_TERRITORY_LAW_V1_1.json"
+    },
+    {
+      "name": "active_path:STELLAR_INSTITUTION_CULTURE_LAW_V1_0",
+      "passed": true,
+      "detail": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_INSTITUTION_CULTURE_LAW_V1_0.json"
+    },
+    {
+      "name": "active_path:STELLAR_ECONOMY_ECOLOGY_TIME_LAW_V1_1",
+      "passed": true,
+      "detail": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_ECONOMY_ECOLOGY_TIME_LAW_V1_1.json"
+    },
+    {
+      "name": "active_path:STELLAR_POPULATION_INFRASTRUCTURE_LAW_V1_0",
+      "passed": true,
+      "detail": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_POPULATION_INFRASTRUCTURE_LAW_V1_0.json"
+    },
+    {
+      "name": "active_path:STELLAR_ECOLOGY_TEMPORAL_ROUTINE_LAW_V1_0",
+      "passed": true,
+      "detail": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_ECOLOGY_TEMPORAL_ROUTINE_LAW_V1_0.json"
+    },
+    {
+      "name": "active_path:STELLAR_PLAYER_CAMPAIGN_LAW_V1_0",
+      "passed": true,
+      "detail": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_PLAYER_CAMPAIGN_LAW_V1_0.json"
+    },
+    {
+      "name": "active_path:STELLAR_LIFE_DEATH_REBIRTH_LAW_V1_1",
+      "passed": true,
+      "detail": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_LIFE_DEATH_REBIRTH_LAW_V1_1.json"
+    },
+    {
+      "name": "active_path:STELLAR_PROGRESSION_QUEST_CONSEQUENCE_LAW_V1_1",
+      "passed": true,
+      "detail": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_PROGRESSION_QUEST_CONSEQUENCE_LAW_V1_1.json"
+    },
+    {
+      "name": "active_path:STELLAR_SKILL_ITEMIZATION_LAW_V1_0",
+      "passed": true,
+      "detail": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_SKILL_ITEMIZATION_LAW_V1_0.json"
+    },
+    {
+      "name": "active_path:STELLAR_INFORMATION_MEMORY_LAW_V1_1",
+      "passed": true,
+      "detail": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_INFORMATION_MEMORY_LAW_V1_1.json"
+    },
+    {
+      "name": "active_path:STELLAR_OPEN_QUESTIONS_REGISTER_V1_1",
+      "passed": true,
+      "detail": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_OPEN_QUESTIONS_REGISTER_V1_1.json"
+    },
+    {
+      "name": "active_path:STELLAR_LORE_PROPOSAL_GUARD_V1_1",
+      "passed": true,
+      "detail": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_LORE_PROPOSAL_GUARD_V1_1.json"
+    },
+    {
+      "name": "old_life_not_active",
+      "passed": true,
+      "detail": "V1.1 supersedes V1.0"
+    },
+    {
+      "name": "old_progression_not_active",
+      "passed": true,
+      "detail": "V1.1 supersedes V1.0"
+    },
+    {
+      "name": "old_memory_not_active",
+      "passed": true,
+      "detail": "V1.1 supersedes V1.0"
+    },
+    {
+      "name": "parallel_campaign",
+      "passed": true,
+      "detail": "custom campaign is parallel"
+    },
+    {
+      "name": "kenua_protected",
+      "passed": true,
+      "detail": "Kenua and episodes protected"
+    },
+    {
+      "name": "amadon_boundary",
+      "passed": true,
+      "detail": "Episode 8 boundary"
+    },
+    {
+      "name": "death_final",
+      "passed": true,
+      "detail": "body death final"
+    },
+    {
+      "name": "incapacity_distinct",
+      "passed": true,
+      "detail": "recovery does not claim resurrection"
+    },
+    {
+      "name": "echo_transfer_boundary",
+      "passed": true,
+      "detail": "echo limits retained"
+    },
+    {
+      "name": "classless_progression",
+      "passed": true,
+      "detail": "no fixed class"
+    },
+    {
+      "name": "offline_quest_block",
+      "passed": true,
+      "detail": "offline quest resolution blocked"
+    },
+    {
+      "name": "r2_quest_boundary",
+      "passed": true,
+      "detail": "R2 gate retained"
+    },
+    {
+      "name": "r2_item_identity",
+      "passed": true,
+      "detail": "R2 item identity protected"
+    },
+    {
+      "name": "rune_guard",
+      "passed": true,
+      "detail": "no invented rune effects"
+    },
+    {
+      "name": "runtime_tuning_noncanonical",
+      "passed": true,
+      "detail": "numeric tuning remains noncanonical"
+    },
+    {
+      "name": "memory_not_proof",
+      "passed": true,
+      "detail": "subjective memory retained"
+    },
+    {
+      "name": "rumor_not_canon",
+      "passed": true,
+      "detail": "rumor promotion blocked"
+    },
+    {
+      "name": "echo_not_fact",
+      "passed": true,
+      "detail": "echo is not proof"
+    },
+    {
+      "name": "ledger_lot5",
+      "passed": true,
+      "detail": "lot recorded with no deletion"
+    },
+    {
+      "name": "matrix_r2_rank",
+      "passed": true,
+      "detail": "R2 rank 1"
+    },
+    {
+      "name": "json:R2_REBASE_CLASSIFICATION_V1_0.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "lot5_classification_records",
+      "passed": true,
+      "detail": "three semantic sources and technical evidence record"
+    },
+    {
+      "name": "json:R2_REBASE_DECISION_QUEUE_V1_0.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "batch4_closed",
+      "passed": true,
+      "detail": "all Lot 5 entries classified"
+    },
+    {
+      "name": "clean_zip_readable",
+      "passed": true,
+      "detail": "CRC valid"
+    },
+    {
+      "name": "clean_zip_contains_index",
+      "passed": true,
+      "detail": "index included"
+    }
+  ],
+  "errors": []
+}

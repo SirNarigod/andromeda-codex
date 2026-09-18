@@ -1,0 +1,54 @@
+{
+  "record_id": "CRI-004",
+  "record_kind": "R2_CANONICAL_ENTRY_MIRROR",
+  "authority": "CANON_R2_CONFIRMADO",
+  "canonical_home": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-004__lumara.json",
+  "source": {
+    "archive_sha256": "257e456a5d0396310ec2355b3dfc0f11f4e0a5264cf6e764591c8760f5070cb0",
+    "lineage": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json",
+    "document_sha256": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726"
+  },
+  "entry": {
+    "code": "CRI-004",
+    "slug": "lumara",
+    "title": "Lúmara",
+    "subtitle": "Cervídeo luminal de leite claro",
+    "category": "CRI",
+    "secondaryCategories": [],
+    "canon": "Cânone consolidado",
+    "spoiler": 1,
+    "sealed": false,
+    "image": null,
+    "imageStatus": null,
+    "summary": "Herbívoro de marcas bioluminescentes, criado em bosques abertos por seu leite claro e rico em micronutrientes.",
+    "facts": {
+      "Classe": "Animal leiteiro semidomesticado",
+      "Habitat": "Bosques luminosos e bordas do Coração Ancestral",
+      "Alimento": "Leite de lúmara",
+      "Nutrientes dominantes": "Vitamina A, folato, potássio e proteínas leves",
+      "Risco": "Foge de ruído intenso e não tolera confinamento prolongado"
+    },
+    "sections": [
+      {
+        "heading": "Importância médica",
+        "body": "Curadores usam o leite em dietas de convalescença. Ele auxilia reposição nutricional, mas não possui efeito mágico de cura."
+      }
+    ],
+    "relations": [
+      {
+        "slug": "coracao-ancestral",
+        "label": "Região de origem"
+      }
+    ],
+    "keywords": [
+      "Lúmara",
+      "leite",
+      "vitamina A",
+      "folato",
+      "cura"
+    ],
+    "sources": [
+      "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+    ]
+  }
+}

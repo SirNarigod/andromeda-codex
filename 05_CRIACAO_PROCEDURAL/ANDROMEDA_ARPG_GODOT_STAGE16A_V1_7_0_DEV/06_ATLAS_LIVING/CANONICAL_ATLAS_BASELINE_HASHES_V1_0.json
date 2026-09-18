@@ -1,0 +1,43 @@
+{
+  "record_id": "CANONICAL-ATLAS-BASELINE-HASHES-V1.0",
+  "master_release_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+  "files": [
+    {
+      "path": "02_ATLAS/runtime/atlas-core.mjs",
+      "actual_sha256": "ae2e88fea5db45cecb03705421efdf3da4a7262fc2506ae5c97d8a229b3f3d84",
+      "manifest_sha256": "ae2e88fea5db45cecb03705421efdf3da4a7262fc2506ae5c97d8a229b3f3d84",
+      "match": true
+    },
+    {
+      "path": "02_ATLAS/runtime/app.js",
+      "actual_sha256": "83abc5381a156705ecefe89017a703bf50948752c2fe95d1c400e84bc25c6f93",
+      "manifest_sha256": "83abc5381a156705ecefe89017a703bf50948752c2fe95d1c400e84bc25c6f93",
+      "match": true
+    },
+    {
+      "path": "02_ATLAS/runtime/index.html",
+      "actual_sha256": "cc692caa15f63982e417281663bd7f67d306d6934ccd33165e26dab219a1564c",
+      "manifest_sha256": "cc692caa15f63982e417281663bd7f67d306d6934ccd33165e26dab219a1564c",
+      "match": true
+    },
+    {
+      "path": "02_ATLAS/runtime/styles.css",
+      "actual_sha256": "8769d7299b95c522c0581325faa26bca10651948937a6c578711cd7075dfa017",
+      "manifest_sha256": "8769d7299b95c522c0581325faa26bca10651948937a6c578711cd7075dfa017",
+      "match": true
+    },
+    {
+      "path": "02_ATLAS/runtime/data/atlas-data.json",
+      "actual_sha256": "cb91547e06027ca91890d1972dc3702bc9224d5edd52d2ae08ff32625184e10b",
+      "manifest_sha256": "cb91547e06027ca91890d1972dc3702bc9224d5edd52d2ae08ff32625184e10b",
+      "match": true
+    },
+    {
+      "path": "02_ATLAS/runtime/data/atlas-ui-config.json",
+      "actual_sha256": "e73cdc6fa25293d7226bb24670a192e54c5a309771f1e63cd6fb1ba79f20633c",
+      "manifest_sha256": "e73cdc6fa25293d7226bb24670a192e54c5a309771f1e63cd6fb1ba79f20633c",
+      "match": true
+    }
+  ],
+  "status": "PASS"
+}

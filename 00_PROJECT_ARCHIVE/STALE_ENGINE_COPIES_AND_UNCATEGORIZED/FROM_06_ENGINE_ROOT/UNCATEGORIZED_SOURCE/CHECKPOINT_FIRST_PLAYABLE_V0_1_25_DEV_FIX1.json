@@ -1,0 +1,26 @@
+{
+  "checkpoint": "FIRST_PLAYABLE_V0_1_25_DEV_FIX1",
+  "parent_checkpoint": "FIRST_PLAYABLE_V0_1_25_DEV",
+  "status": "STATIC_VALIDATED_RUNTIME_PENDING",
+  "fix_scope": [
+    "Wildlife.gd ranged projectile parser typing"
+  ],
+  "preserved": {
+	"compact_hud": true,
+	"stable_enemy_bars": true,
+	"weapon_stamina_cost": true,
+	"three_shop_catalogs": true,
+	"organized_test_zones": true,
+	"normal_ranged_enemies": true,
+	"one_shot_enemy": true,
+	"alpha_final": true
+  },
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1",
+  "backup_authorized": false,
+  "static_checks": {
+	"checks": 13,
+	"passed": 13,
+	"failed": 0,
+	"status": "PASS"
+  }
+}

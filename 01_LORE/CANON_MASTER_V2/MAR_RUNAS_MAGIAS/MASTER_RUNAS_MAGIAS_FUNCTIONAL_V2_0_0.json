@@ -1,0 +1,5472 @@
+{
+  "record_id": "MASTER-RUNAS-MAGIAS-FUNCTIONAL-V2.0.0",
+  "title": "Runas e Magias funcionais oficiais do MASTER V2.0.1 (30 runas + 30 magias, 23 novas)",
+  "provenance": {
+    "master_release": "ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE",
+    "master_release_zip_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "source_files": [
+      "05_MAR/FUNCTIONAL/01_MAR/MAR_RUNES_FUNCTIONAL_V1_0.json (30 runas completas)",
+      "05_MAR/FUNCTIONAL/01_MAR/MAR_MAGIC_FUNCTIONAL_V1_0.json (30 magias completas)"
+    ],
+    "authority": "CANON_MASTER_V2_CONFIRMADO",
+    "namespace_check": "RUN-001..030 nao colide com nosso RUNA-001..010 (fase 23, prefixo diferente, mantido intocado - continua sem efeito numerico inventado, respeitando NO_INVENTED_RUNE_EFFECT para gameplay derivado; RUN-XXX agora e a fonte oficial completa).",
+    "mag_overlap_note": "MAG-001..007 ja sao nossos 7 arquivos de lei R2 (Leis da magia, Runas, Corrente Planetaria, Marca inselavel de Serlis, Estados de controle da simbiose, Escala de combate, Estase de Intervalo) - confirmados batendo exatamente por titulo. Incluidos aqui como espelho fiel do Master (nao sobrescrevem os arquivos R2 originais), com cross_ref explicito. MAG-008..030 (23 entradas) sao conteudo novo: magias funcionais completas criadas sob as leis MAG-001 ja existentes (CANON_CREATED, nao contradiz nenhuma lei).",
+    "richness_note": "Cada runa/magia tem ficha completa: efeito, ativacao, condicoes, alcance, duracao, limitacoes, risco, modo de falha, compatibilidade cruzada (arma/tecnologia/magia/runa), cadeia de criacao-verificacao-manutencao por profissao (JOB-XXX), posicionamento espacial (POI/territorio), e brief visual (silhueta/estados/forma). Prontidoes absolutas explicitas (ex. MAG-008: nao cria energia infinita, nao estabelece viagem temporal, nao estabelece teleporte planetario instantaneo) - regras de mundo relevantes para futuras validacoes."
+  },
+  "count_runes": 30,
+  "count_magic_already_ours": 7,
+  "count_magic_new": 23,
+  "runes": [
+    {
+      "id": "RUN-001",
+      "name": "Fluxo Primário",
+      "aliases": [],
+      "category": "CONDUÇÃO",
+      "representation": "GLIFO_CONDUÇÃO",
+      "origin": "Sistema rúnico canônico; ficha funcional derivada de hook preservado",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_DERIVED",
+      "function": {
+        "effect": "condução de energia/fluxo",
+        "activation": "aplicação registrada por operador treinado sobre superfície compatível",
+        "conditions": [
+          "fonte finita identificada",
+          "limite e condição registrados",
+          "dissipador disponível"
+        ],
+        "range": "NO_SUPORTE",
+        "duration": "CONDICIONAL_E_LIMITADA",
+        "intensity": "ESCALA_1_10_CONTROLADA",
+        "limitations": [
+          "não cria energia",
+          "não opera sem superfície compatível",
+          "não aceita sobreposição não certificada"
+        ],
+        "risk": "dissipação incompleta ou interferência exige desligamento seguro",
+        "failure_mode": "inatividade segura e registro de revisão"
+      },
+      "support": {
+        "surface": [
+          "MAT-MAR-002",
+          "MAT-MAR-001"
+        ],
+        "object_types": [
+          "equipamento registrado",
+          "infraestrutura autorizada"
+        ],
+        "organism_use": "NÃO_AUTORIZADO_COMO_PADRÃO",
+        "infrastructure_use": [
+          "condução de energia/fluxo",
+          "distribuição industrial",
+          "retorno controlado"
+        ]
+      },
+      "creation_application": {
+        "created_by_job_ids": [
+          "JOB-RUN-GRAV-001"
+        ],
+        "verified_by_job_ids": [
+          "JOB-RUN-MATRIZ-001"
+        ],
+        "activated_by_job_ids": [
+          "JOB-RUN-OPER-001"
+        ],
+        "maintenance_by_job_ids": [
+          "JOB-RUN-MNT-001"
+        ],
+        "tools": [
+          "matriz de traço",
+          "medidor de fluxo",
+          "CMP-MAR-003"
+        ],
+        "training_ref": "EDU-MAR-001",
+        "material_refs": [
+          "MAT-MAR-002",
+          "CMP-MAR-002"
+        ]
+      },
+      "compatibility": {
+        "technology_refs": [
+          "PROP-ENE-001"
+        ],
+        "weapon_refs": [
+          "WPN-001"
+        ],
+        "magic_refs": [
+          "MAG-001",
+          "MAG-002",
+          "MAG-008"
+        ],
+        "status": "CONDICIONAL",
+        "rule": "Somente com fonte, limite, dissipação e registro válidos."
+      },
+      "spatial": {
+        "poi_id": "POI-012",
+        "territory_id": "TER-001",
+        "distribution": "INSTITUCIONAL_E_REGIONAL",
+        "atlas_visibility": "REGIONAL",
+        "layer_ids": [
+          "MAR",
+          "TECHNOLOGY",
+          "INSTITUTIONS"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "glyph_geometry": "núcleo central, direção, limite, condição e dissipador legíveis",
+        "states": [
+          "inativa",
+          "registrada",
+          "ativa",
+          "em_dissipação"
+        ],
+        "application": "placa, aro ou superfície certificada"
+      },
+      "provenance": [
+        {
+          "source": "etapa06_sources/ANDROMEDA_TECH_FINAL_SELO_V1_0/FONTES_CONGELADAS/ANDROMEDA_TECH_INVENTARIO_INICIAL_V0_1.json",
+          "original_state": "PROPOSTA_DE_HOOK",
+          "spatialization_method": "HOOK_TO_FUNCTIONAL_RECORD_WITHOUT_RETROACTIVE_DEPLOYMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-RUN-001"
+    },
+    {
+      "id": "RUN-002",
+      "name": "Retorno Estável",
+      "aliases": [],
+      "category": "CONDUÇÃO",
+      "representation": "GLIFO_CONDUÇÃO",
+      "origin": "Sistema rúnico canônico; ficha funcional derivada de hook preservado",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_DERIVED",
+      "function": {
+        "effect": "condução de energia/fluxo",
+        "activation": "aplicação registrada por operador treinado sobre superfície compatível",
+        "conditions": [
+          "fonte finita identificada",
+          "limite e condição registrados",
+          "dissipador disponível"
+        ],
+        "range": "NO_SUPORTE",
+        "duration": "CONDICIONAL_E_LIMITADA",
+        "intensity": "ESCALA_1_10_CONTROLADA",
+        "limitations": [
+          "não cria energia",
+          "não opera sem superfície compatível",
+          "não aceita sobreposição não certificada"
+        ],
+        "risk": "dissipação incompleta ou interferência exige desligamento seguro",
+        "failure_mode": "inatividade segura e registro de revisão"
+      },
+      "support": {
+        "surface": [
+          "MAT-MAR-002",
+          "MAT-MAR-001"
+        ],
+        "object_types": [
+          "equipamento registrado",
+          "infraestrutura autorizada"
+        ],
+        "organism_use": "NÃO_AUTORIZADO_COMO_PADRÃO",
+        "infrastructure_use": [
+          "condução de energia/fluxo",
+          "distribuição industrial",
+          "retorno controlado"
+        ]
+      },
+      "creation_application": {
+        "created_by_job_ids": [
+          "JOB-RUN-GRAV-001"
+        ],
+        "verified_by_job_ids": [
+          "JOB-RUN-MATRIZ-001"
+        ],
+        "activated_by_job_ids": [
+          "JOB-RUN-OPER-001"
+        ],
+        "maintenance_by_job_ids": [
+          "JOB-RUN-MNT-001"
+        ],
+        "tools": [
+          "matriz de traço",
+          "medidor de fluxo",
+          "CMP-MAR-003"
+        ],
+        "training_ref": "EDU-MAR-001",
+        "material_refs": [
+          "MAT-MAR-002",
+          "CMP-MAR-002"
+        ]
+      },
+      "compatibility": {
+        "technology_refs": [
+          "PROP-ENE-001"
+        ],
+        "weapon_refs": [
+          "WPN-002"
+        ],
+        "magic_refs": [
+          "MAG-001",
+          "MAG-002",
+          "MAG-009"
+        ],
+        "status": "CONDICIONAL",
+        "rule": "Somente com fonte, limite, dissipação e registro válidos."
+      },
+      "spatial": {
+        "poi_id": "POI-012",
+        "territory_id": "TER-001",
+        "distribution": "INSTITUCIONAL_E_REGIONAL",
+        "atlas_visibility": "REGIONAL",
+        "layer_ids": [
+          "MAR",
+          "TECHNOLOGY",
+          "INSTITUTIONS"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "glyph_geometry": "núcleo central, direção, limite, condição e dissipador legíveis",
+        "states": [
+          "inativa",
+          "registrada",
+          "ativa",
+          "em_dissipação"
+        ],
+        "application": "placa, aro ou superfície certificada"
+      },
+      "provenance": [
+        {
+          "source": "etapa06_sources/ANDROMEDA_TECH_FINAL_SELO_V1_0/FONTES_CONGELADAS/ANDROMEDA_TECH_INVENTARIO_INICIAL_V0_1.json",
+          "original_state": "PROPOSTA_DE_HOOK",
+          "spatialization_method": "HOOK_TO_FUNCTIONAL_RECORD_WITHOUT_RETROACTIVE_DEPLOYMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-RUN-002"
+    },
+    {
+      "id": "RUN-003",
+      "name": "Filtro de Fluxo",
+      "aliases": [],
+      "category": "CONDUÇÃO",
+      "representation": "GLIFO_CONDUÇÃO",
+      "origin": "Sistema rúnico canônico; ficha funcional derivada de hook preservado",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_DERIVED",
+      "function": {
+        "effect": "condução de energia/fluxo",
+        "activation": "aplicação registrada por operador treinado sobre superfície compatível",
+        "conditions": [
+          "fonte finita identificada",
+          "limite e condição registrados",
+          "dissipador disponível"
+        ],
+        "range": "NO_SUPORTE",
+        "duration": "CONDICIONAL_E_LIMITADA",
+        "intensity": "ESCALA_1_10_CONTROLADA",
+        "limitations": [
+          "não cria energia",
+          "não opera sem superfície compatível",
+          "não aceita sobreposição não certificada"
+        ],
+        "risk": "dissipação incompleta ou interferência exige desligamento seguro",
+        "failure_mode": "inatividade segura e registro de revisão"
+      },
+      "support": {
+        "surface": [
+          "MAT-MAR-002",
+          "MAT-MAR-001"
+        ],
+        "object_types": [
+          "equipamento registrado",
+          "infraestrutura autorizada"
+        ],
+        "organism_use": "NÃO_AUTORIZADO_COMO_PADRÃO",
+        "infrastructure_use": [
+          "condução de energia/fluxo",
+          "distribuição industrial",
+          "retorno controlado"
+        ]
+      },
+      "creation_application": {
+        "created_by_job_ids": [
+          "JOB-RUN-GRAV-001"
+        ],
+        "verified_by_job_ids": [
+          "JOB-RUN-MATRIZ-001"
+        ],
+        "activated_by_job_ids": [
+          "JOB-RUN-OPER-001"
+        ],
+        "maintenance_by_job_ids": [
+          "JOB-RUN-MNT-001"
+        ],
+        "tools": [
+          "matriz de traço",
+          "medidor de fluxo",
+          "CMP-MAR-003"
+        ],
+        "training_ref": "EDU-MAR-001",
+        "material_refs": [
+          "MAT-MAR-002",
+          "CMP-MAR-002"
+        ]
+      },
+      "compatibility": {
+        "technology_refs": [
+          "PROP-ENE-001"
+        ],
+        "weapon_refs": [
+          "WPN-003"
+        ],
+        "magic_refs": [
+          "MAG-001",
+          "MAG-002",
+          "MAG-010"
+        ],
+        "status": "CONDICIONAL",
+        "rule": "Somente com fonte, limite, dissipação e registro válidos."
+      },
+      "spatial": {
+        "poi_id": "POI-012",
+        "territory_id": "TER-001",
+        "distribution": "INSTITUCIONAL_E_REGIONAL",
+        "atlas_visibility": "REGIONAL",
+        "layer_ids": [
+          "MAR",
+          "TECHNOLOGY",
+          "INSTITUTIONS"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "glyph_geometry": "núcleo central, direção, limite, condição e dissipador legíveis",
+        "states": [
+          "inativa",
+          "registrada",
+          "ativa",
+          "em_dissipação"
+        ],
+        "application": "placa, aro ou superfície certificada"
+      },
+      "provenance": [
+        {
+          "source": "etapa06_sources/ANDROMEDA_TECH_FINAL_SELO_V1_0/FONTES_CONGELADAS/ANDROMEDA_TECH_INVENTARIO_INICIAL_V0_1.json",
+          "original_state": "PROPOSTA_DE_HOOK",
+          "spatialization_method": "HOOK_TO_FUNCTIONAL_RECORD_WITHOUT_RETROACTIVE_DEPLOYMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-RUN-003"
+    },
+    {
+      "id": "RUN-004",
+      "name": "Selo de Portal",
+      "aliases": [],
+      "category": "CONTENÇÃO",
+      "representation": "GLIFO_CONTENÇÃO",
+      "origin": "Sistema rúnico canônico; ficha funcional derivada de hook preservado",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_DERIVED",
+      "function": {
+        "effect": "portas e zonas de segurança",
+        "activation": "aplicação registrada por operador treinado sobre superfície compatível",
+        "conditions": [
+          "fonte finita identificada",
+          "limite e condição registrados",
+          "dissipador disponível"
+        ],
+        "range": "NO_SUPORTE",
+        "duration": "CONDICIONAL_E_LIMITADA",
+        "intensity": "ESCALA_1_10_CONTROLADA",
+        "limitations": [
+          "não cria energia",
+          "não opera sem superfície compatível",
+          "não aceita sobreposição não certificada"
+        ],
+        "risk": "dissipação incompleta ou interferência exige desligamento seguro",
+        "failure_mode": "inatividade segura e registro de revisão"
+      },
+      "support": {
+        "surface": [
+          "MAT-MAR-002",
+          "MAT-MAR-001"
+        ],
+        "object_types": [
+          "equipamento registrado",
+          "infraestrutura autorizada"
+        ],
+        "organism_use": "NÃO_AUTORIZADO_COMO_PADRÃO",
+        "infrastructure_use": [
+          "portas e zonas de segurança",
+          "isolamento de processo",
+          "contenção de carga"
+        ]
+      },
+      "creation_application": {
+        "created_by_job_ids": [
+          "JOB-RUN-GRAV-001"
+        ],
+        "verified_by_job_ids": [
+          "JOB-RUN-MATRIZ-001"
+        ],
+        "activated_by_job_ids": [
+          "JOB-RUN-OPER-001"
+        ],
+        "maintenance_by_job_ids": [
+          "JOB-RUN-MNT-001"
+        ],
+        "tools": [
+          "matriz de traço",
+          "medidor de fluxo",
+          "CMP-MAR-003"
+        ],
+        "training_ref": "EDU-MAR-001",
+        "material_refs": [
+          "MAT-MAR-002",
+          "CMP-MAR-002"
+        ]
+      },
+      "compatibility": {
+        "technology_refs": [
+          "PROP-SEG-002"
+        ],
+        "weapon_refs": [
+          "WPN-004"
+        ],
+        "magic_refs": [
+          "MAG-001",
+          "MAG-002",
+          "MAG-011"
+        ],
+        "status": "CONDICIONAL",
+        "rule": "Somente com fonte, limite, dissipação e registro válidos."
+      },
+      "spatial": {
+        "poi_id": "POI-012",
+        "territory_id": "TER-001",
+        "distribution": "INSTITUCIONAL_E_REGIONAL",
+        "atlas_visibility": "REGIONAL",
+        "layer_ids": [
+          "MAR",
+          "TECHNOLOGY",
+          "INSTITUTIONS"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "glyph_geometry": "núcleo central, direção, limite, condição e dissipador legíveis",
+        "states": [
+          "inativa",
+          "registrada",
+          "ativa",
+          "em_dissipação"
+        ],
+        "application": "placa, aro ou superfície certificada"
+      },
+      "provenance": [
+        {
+          "source": "etapa06_sources/ANDROMEDA_TECH_FINAL_SELO_V1_0/FONTES_CONGELADAS/ANDROMEDA_TECH_INVENTARIO_INICIAL_V0_1.json",
+          "original_state": "PROPOSTA_DE_HOOK",
+          "spatialization_method": "HOOK_TO_FUNCTIONAL_RECORD_WITHOUT_RETROACTIVE_DEPLOYMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-RUN-004"
+    },
+    {
+      "id": "RUN-005",
+      "name": "Limite de Câmara",
+      "aliases": [],
+      "category": "CONTENÇÃO",
+      "representation": "GLIFO_CONTENÇÃO",
+      "origin": "Sistema rúnico canônico; ficha funcional derivada de hook preservado",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_DERIVED",
+      "function": {
+        "effect": "portas e zonas de segurança",
+        "activation": "aplicação registrada por operador treinado sobre superfície compatível",
+        "conditions": [
+          "fonte finita identificada",
+          "limite e condição registrados",
+          "dissipador disponível"
+        ],
+        "range": "NO_SUPORTE",
+        "duration": "CONDICIONAL_E_LIMITADA",
+        "intensity": "ESCALA_1_10_CONTROLADA",
+        "limitations": [
+          "não cria energia",
+          "não opera sem superfície compatível",
+          "não aceita sobreposição não certificada"
+        ],
+        "risk": "dissipação incompleta ou interferência exige desligamento seguro",
+        "failure_mode": "inatividade segura e registro de revisão"
+      },
+      "support": {
+        "surface": [
+          "MAT-MAR-002",
+          "MAT-MAR-001"
+        ],
+        "object_types": [
+          "equipamento registrado",
+          "infraestrutura autorizada"
+        ],
+        "organism_use": "NÃO_AUTORIZADO_COMO_PADRÃO",
+        "infrastructure_use": [
+          "portas e zonas de segurança",
+          "isolamento de processo",
+          "contenção de carga"
+        ]
+      },
+      "creation_application": {
+        "created_by_job_ids": [
+          "JOB-RUN-GRAV-001"
+        ],
+        "verified_by_job_ids": [
+          "JOB-RUN-MATRIZ-001"
+        ],
+        "activated_by_job_ids": [
+          "JOB-RUN-OPER-001"
+        ],
+        "maintenance_by_job_ids": [
+          "JOB-RUN-MNT-001"
+        ],
+        "tools": [
+          "matriz de traço",
+          "medidor de fluxo",
+          "CMP-MAR-003"
+        ],
+        "training_ref": "EDU-MAR-001",
+        "material_refs": [
+          "MAT-MAR-002",
+          "CMP-MAR-002"
+        ]
+      },
+      "compatibility": {
+        "technology_refs": [
+          "PROP-SEG-002"
+        ],
+        "weapon_refs": [
+          "WPN-005"
+        ],
+        "magic_refs": [
+          "MAG-001",
+          "MAG-002",
+          "MAG-012"
+        ],
+        "status": "CONDICIONAL",
+        "rule": "Somente com fonte, limite, dissipação e registro válidos."
+      },
+      "spatial": {
+        "poi_id": "POI-012",
+        "territory_id": "TER-001",
+        "distribution": "INSTITUCIONAL_E_REGIONAL",
+        "atlas_visibility": "REGIONAL",
+        "layer_ids": [
+          "MAR",
+          "TECHNOLOGY",
+          "INSTITUTIONS"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "glyph_geometry": "núcleo central, direção, limite, condição e dissipador legíveis",
+        "states": [
+          "inativa",
+          "registrada",
+          "ativa",
+          "em_dissipação"
+        ],
+        "application": "placa, aro ou superfície certificada"
+      },
+      "provenance": [
+        {
+          "source": "etapa06_sources/ANDROMEDA_TECH_FINAL_SELO_V1_0/FONTES_CONGELADAS/ANDROMEDA_TECH_INVENTARIO_INICIAL_V0_1.json",
+          "original_state": "PROPOSTA_DE_HOOK",
+          "spatialization_method": "HOOK_TO_FUNCTIONAL_RECORD_WITHOUT_RETROACTIVE_DEPLOYMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-RUN-005"
+    },
+    {
+      "id": "RUN-006",
+      "name": "Nó de Isolamento",
+      "aliases": [],
+      "category": "CONTENÇÃO",
+      "representation": "GLIFO_CONTENÇÃO",
+      "origin": "Sistema rúnico canônico; ficha funcional derivada de hook preservado",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_DERIVED",
+      "function": {
+        "effect": "portas e zonas de segurança",
+        "activation": "aplicação registrada por operador treinado sobre superfície compatível",
+        "conditions": [
+          "fonte finita identificada",
+          "limite e condição registrados",
+          "dissipador disponível"
+        ],
+        "range": "NO_SUPORTE",
+        "duration": "CONDICIONAL_E_LIMITADA",
+        "intensity": "ESCALA_1_10_CONTROLADA",
+        "limitations": [
+          "não cria energia",
+          "não opera sem superfície compatível",
+          "não aceita sobreposição não certificada"
+        ],
+        "risk": "dissipação incompleta ou interferência exige desligamento seguro",
+        "failure_mode": "inatividade segura e registro de revisão"
+      },
+      "support": {
+        "surface": [
+          "MAT-MAR-002",
+          "MAT-MAR-001"
+        ],
+        "object_types": [
+          "equipamento registrado",
+          "infraestrutura autorizada"
+        ],
+        "organism_use": "NÃO_AUTORIZADO_COMO_PADRÃO",
+        "infrastructure_use": [
+          "portas e zonas de segurança",
+          "isolamento de processo",
+          "contenção de carga"
+        ]
+      },
+      "creation_application": {
+        "created_by_job_ids": [
+          "JOB-RUN-GRAV-001"
+        ],
+        "verified_by_job_ids": [
+          "JOB-RUN-MATRIZ-001"
+        ],
+        "activated_by_job_ids": [
+          "JOB-RUN-OPER-001"
+        ],
+        "maintenance_by_job_ids": [
+          "JOB-RUN-MNT-001"
+        ],
+        "tools": [
+          "matriz de traço",
+          "medidor de fluxo",
+          "CMP-MAR-003"
+        ],
+        "training_ref": "EDU-MAR-001",
+        "material_refs": [
+          "MAT-MAR-002",
+          "CMP-MAR-002"
+        ]
+      },
+      "compatibility": {
+        "technology_refs": [
+          "PROP-SEG-002"
+        ],
+        "weapon_refs": [
+          "WPN-006"
+        ],
+        "magic_refs": [
+          "MAG-001",
+          "MAG-002",
+          "MAG-013"
+        ],
+        "status": "CONDICIONAL",
+        "rule": "Somente com fonte, limite, dissipação e registro válidos."
+      },
+      "spatial": {
+        "poi_id": "POI-012",
+        "territory_id": "TER-001",
+        "distribution": "INSTITUCIONAL_E_REGIONAL",
+        "atlas_visibility": "REGIONAL",
+        "layer_ids": [
+          "MAR",
+          "TECHNOLOGY",
+          "INSTITUTIONS"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "glyph_geometry": "núcleo central, direção, limite, condição e dissipador legíveis",
+        "states": [
+          "inativa",
+          "registrada",
+          "ativa",
+          "em_dissipação"
+        ],
+        "application": "placa, aro ou superfície certificada"
+      },
+      "provenance": [
+        {
+          "source": "etapa06_sources/ANDROMEDA_TECH_FINAL_SELO_V1_0/FONTES_CONGELADAS/ANDROMEDA_TECH_INVENTARIO_INICIAL_V0_1.json",
+          "original_state": "PROPOSTA_DE_HOOK",
+          "spatialization_method": "HOOK_TO_FUNCTIONAL_RECORD_WITHOUT_RETROACTIVE_DEPLOYMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-RUN-006"
+    },
+    {
+      "id": "RUN-007",
+      "name": "Pele de Guarda",
+      "aliases": [],
+      "category": "PROTEÇÃO",
+      "representation": "GLIFO_PROTEÇÃO",
+      "origin": "Sistema rúnico canônico; ficha funcional derivada de hook preservado",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_DERIVED",
+      "function": {
+        "effect": "barreiras e superfícies protetivas",
+        "activation": "aplicação registrada por operador treinado sobre superfície compatível",
+        "conditions": [
+          "fonte finita identificada",
+          "limite e condição registrados",
+          "dissipador disponível"
+        ],
+        "range": "NO_SUPORTE",
+        "duration": "CONDICIONAL_E_LIMITADA",
+        "intensity": "ESCALA_1_10_CONTROLADA",
+        "limitations": [
+          "não cria energia",
+          "não opera sem superfície compatível",
+          "não aceita sobreposição não certificada"
+        ],
+        "risk": "dissipação incompleta ou interferência exige desligamento seguro",
+        "failure_mode": "inatividade segura e registro de revisão"
+      },
+      "support": {
+        "surface": [
+          "MAT-MAR-002",
+          "MAT-MAR-001"
+        ],
+        "object_types": [
+          "equipamento registrado",
+          "infraestrutura autorizada"
+        ],
+        "organism_use": "NÃO_AUTORIZADO_COMO_PADRÃO",
+        "infrastructure_use": [
+          "barreiras e superfícies protetivas",
+          "absorção/redistribuição de impacto",
+          "proteção de equipamento"
+        ]
+      },
+      "creation_application": {
+        "created_by_job_ids": [
+          "JOB-RUN-GRAV-001"
+        ],
+        "verified_by_job_ids": [
+          "JOB-RUN-MATRIZ-001"
+        ],
+        "activated_by_job_ids": [
+          "JOB-RUN-OPER-001"
+        ],
+        "maintenance_by_job_ids": [
+          "JOB-RUN-MNT-001"
+        ],
+        "tools": [
+          "matriz de traço",
+          "medidor de fluxo",
+          "CMP-MAR-003"
+        ],
+        "training_ref": "EDU-MAR-001",
+        "material_refs": [
+          "MAT-MAR-002",
+          "CMP-MAR-002"
+        ]
+      },
+      "compatibility": {
+        "technology_refs": [
+          "PROP-SEG-001"
+        ],
+        "weapon_refs": [
+          "WPN-007"
+        ],
+        "magic_refs": [
+          "MAG-001",
+          "MAG-002",
+          "MAG-014"
+        ],
+        "status": "CONDICIONAL",
+        "rule": "Somente com fonte, limite, dissipação e registro válidos."
+      },
+      "spatial": {
+        "poi_id": "POI-012",
+        "territory_id": "TER-001",
+        "distribution": "INSTITUCIONAL_E_REGIONAL",
+        "atlas_visibility": "REGIONAL",
+        "layer_ids": [
+          "MAR",
+          "TECHNOLOGY",
+          "INSTITUTIONS"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "glyph_geometry": "núcleo central, direção, limite, condição e dissipador legíveis",
+        "states": [
+          "inativa",
+          "registrada",
+          "ativa",
+          "em_dissipação"
+        ],
+        "application": "placa, aro ou superfície certificada"
+      },
+      "provenance": [
+        {
+          "source": "etapa06_sources/ANDROMEDA_TECH_FINAL_SELO_V1_0/FONTES_CONGELADAS/ANDROMEDA_TECH_INVENTARIO_INICIAL_V0_1.json",
+          "original_state": "PROPOSTA_DE_HOOK",
+          "spatialization_method": "HOOK_TO_FUNCTIONAL_RECORD_WITHOUT_RETROACTIVE_DEPLOYMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-RUN-007"
+    },
+    {
+      "id": "RUN-008",
+      "name": "Halo de Dispersão",
+      "aliases": [],
+      "category": "PROTEÇÃO",
+      "representation": "GLIFO_PROTEÇÃO",
+      "origin": "Sistema rúnico canônico; ficha funcional derivada de hook preservado",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_DERIVED",
+      "function": {
+        "effect": "barreiras e superfícies protetivas",
+        "activation": "aplicação registrada por operador treinado sobre superfície compatível",
+        "conditions": [
+          "fonte finita identificada",
+          "limite e condição registrados",
+          "dissipador disponível"
+        ],
+        "range": "NO_SUPORTE",
+        "duration": "CONDICIONAL_E_LIMITADA",
+        "intensity": "ESCALA_1_10_CONTROLADA",
+        "limitations": [
+          "não cria energia",
+          "não opera sem superfície compatível",
+          "não aceita sobreposição não certificada"
+        ],
+        "risk": "dissipação incompleta ou interferência exige desligamento seguro",
+        "failure_mode": "inatividade segura e registro de revisão"
+      },
+      "support": {
+        "surface": [
+          "MAT-MAR-002",
+          "MAT-MAR-001"
+        ],
+        "object_types": [
+          "equipamento registrado",
+          "infraestrutura autorizada"
+        ],
+        "organism_use": "NÃO_AUTORIZADO_COMO_PADRÃO",
+        "infrastructure_use": [
+          "barreiras e superfícies protetivas",
+          "absorção/redistribuição de impacto",
+          "proteção de equipamento"
+        ]
+      },
+      "creation_application": {
+        "created_by_job_ids": [
+          "JOB-RUN-GRAV-001"
+        ],
+        "verified_by_job_ids": [
+          "JOB-RUN-MATRIZ-001"
+        ],
+        "activated_by_job_ids": [
+          "JOB-RUN-OPER-001"
+        ],
+        "maintenance_by_job_ids": [
+          "JOB-RUN-MNT-001"
+        ],
+        "tools": [
+          "matriz de traço",
+          "medidor de fluxo",
+          "CMP-MAR-003"
+        ],
+        "training_ref": "EDU-MAR-001",
+        "material_refs": [
+          "MAT-MAR-002",
+          "CMP-MAR-002"
+        ]
+      },
+      "compatibility": {
+        "technology_refs": [
+          "PROP-SEG-001"
+        ],
+        "weapon_refs": [
+          "WPN-008"
+        ],
+        "magic_refs": [
+          "MAG-001",
+          "MAG-002",
+          "MAG-015"
+        ],
+        "status": "CONDICIONAL",
+        "rule": "Somente com fonte, limite, dissipação e registro válidos."
+      },
+      "spatial": {
+        "poi_id": "POI-012",
+        "territory_id": "TER-001",
+        "distribution": "INSTITUCIONAL_E_REGIONAL",
+        "atlas_visibility": "REGIONAL",
+        "layer_ids": [
+          "MAR",
+          "TECHNOLOGY",
+          "INSTITUTIONS"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "glyph_geometry": "núcleo central, direção, limite, condição e dissipador legíveis",
+        "states": [
+          "inativa",
+          "registrada",
+          "ativa",
+          "em_dissipação"
+        ],
+        "application": "placa, aro ou superfície certificada"
+      },
+      "provenance": [
+        {
+          "source": "etapa06_sources/ANDROMEDA_TECH_FINAL_SELO_V1_0/FONTES_CONGELADAS/ANDROMEDA_TECH_INVENTARIO_INICIAL_V0_1.json",
+          "original_state": "PROPOSTA_DE_HOOK",
+          "spatialization_method": "HOOK_TO_FUNCTIONAL_RECORD_WITHOUT_RETROACTIVE_DEPLOYMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-RUN-008"
+    },
+    {
+      "id": "RUN-009",
+      "name": "Limiar Protetivo",
+      "aliases": [],
+      "category": "PROTEÇÃO",
+      "representation": "GLIFO_PROTEÇÃO",
+      "origin": "Sistema rúnico canônico; ficha funcional derivada de hook preservado",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_DERIVED",
+      "function": {
+        "effect": "barreiras e superfícies protetivas",
+        "activation": "aplicação registrada por operador treinado sobre superfície compatível",
+        "conditions": [
+          "fonte finita identificada",
+          "limite e condição registrados",
+          "dissipador disponível"
+        ],
+        "range": "NO_SUPORTE",
+        "duration": "CONDICIONAL_E_LIMITADA",
+        "intensity": "ESCALA_1_10_CONTROLADA",
+        "limitations": [
+          "não cria energia",
+          "não opera sem superfície compatível",
+          "não aceita sobreposição não certificada"
+        ],
+        "risk": "dissipação incompleta ou interferência exige desligamento seguro",
+        "failure_mode": "inatividade segura e registro de revisão"
+      },
+      "support": {
+        "surface": [
+          "MAT-MAR-002",
+          "MAT-MAR-001"
+        ],
+        "object_types": [
+          "equipamento registrado",
+          "infraestrutura autorizada"
+        ],
+        "organism_use": "NÃO_AUTORIZADO_COMO_PADRÃO",
+        "infrastructure_use": [
+          "barreiras e superfícies protetivas",
+          "absorção/redistribuição de impacto",
+          "proteção de equipamento"
+        ]
+      },
+      "creation_application": {
+        "created_by_job_ids": [
+          "JOB-RUN-GRAV-001"
+        ],
+        "verified_by_job_ids": [
+          "JOB-RUN-MATRIZ-001"
+        ],
+        "activated_by_job_ids": [
+          "JOB-RUN-OPER-001"
+        ],
+        "maintenance_by_job_ids": [
+          "JOB-RUN-MNT-001"
+        ],
+        "tools": [
+          "matriz de traço",
+          "medidor de fluxo",
+          "CMP-MAR-003"
+        ],
+        "training_ref": "EDU-MAR-001",
+        "material_refs": [
+          "MAT-MAR-002",
+          "CMP-MAR-002"
+        ]
+      },
+      "compatibility": {
+        "technology_refs": [
+          "PROP-SEG-001"
+        ],
+        "weapon_refs": [
+          "WPN-009"
+        ],
+        "magic_refs": [
+          "MAG-001",
+          "MAG-002",
+          "MAG-016"
+        ],
+        "status": "CONDICIONAL",
+        "rule": "Somente com fonte, limite, dissipação e registro válidos."
+      },
+      "spatial": {
+        "poi_id": "POI-012",
+        "territory_id": "TER-001",
+        "distribution": "INSTITUCIONAL_E_REGIONAL",
+        "atlas_visibility": "REGIONAL",
+        "layer_ids": [
+          "MAR",
+          "TECHNOLOGY",
+          "INSTITUTIONS"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "glyph_geometry": "núcleo central, direção, limite, condição e dissipador legíveis",
+        "states": [
+          "inativa",
+          "registrada",
+          "ativa",
+          "em_dissipação"
+        ],
+        "application": "placa, aro ou superfície certificada"
+      },
+      "provenance": [
+        {
+          "source": "etapa06_sources/ANDROMEDA_TECH_FINAL_SELO_V1_0/FONTES_CONGELADAS/ANDROMEDA_TECH_INVENTARIO_INICIAL_V0_1.json",
+          "original_state": "PROPOSTA_DE_HOOK",
+          "spatialization_method": "HOOK_TO_FUNCTIONAL_RECORD_WITHOUT_RETROACTIVE_DEPLOYMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-RUN-009"
+    },
+    {
+      "id": "RUN-010",
+      "name": "Guia de Passo",
+      "aliases": [],
+      "category": "MOVIMENTO",
+      "representation": "GLIFO_MOVIMENTO",
+      "origin": "Sistema rúnico canônico; ficha funcional derivada de hook preservado",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_DERIVED",
+      "function": {
+        "effect": "transporte e mecanismos móveis",
+        "activation": "aplicação registrada por operador treinado sobre superfície compatível",
+        "conditions": [
+          "fonte finita identificada",
+          "limite e condição registrados",
+          "dissipador disponível"
+        ],
+        "range": "NO_SUPORTE",
+        "duration": "CONDICIONAL_E_LIMITADA",
+        "intensity": "ESCALA_1_10_CONTROLADA",
+        "limitations": [
+          "não cria energia",
+          "não opera sem superfície compatível",
+          "não aceita sobreposição não certificada"
+        ],
+        "risk": "dissipação incompleta ou interferência exige desligamento seguro",
+        "failure_mode": "inatividade segura e registro de revisão"
+      },
+      "support": {
+        "surface": [
+          "MAT-MAR-002",
+          "MAT-MAR-001"
+        ],
+        "object_types": [
+          "equipamento registrado",
+          "infraestrutura autorizada"
+        ],
+        "organism_use": "NÃO_AUTORIZADO_COMO_PADRÃO",
+        "infrastructure_use": [
+          "transporte e mecanismos móveis",
+          "guias de trajetória",
+          "assistência de movimentação"
+        ]
+      },
+      "creation_application": {
+        "created_by_job_ids": [
+          "JOB-RUN-GRAV-001"
+        ],
+        "verified_by_job_ids": [
+          "JOB-RUN-MATRIZ-001"
+        ],
+        "activated_by_job_ids": [
+          "JOB-RUN-OPER-001"
+        ],
+        "maintenance_by_job_ids": [
+          "JOB-RUN-MNT-001"
+        ],
+        "tools": [
+          "matriz de traço",
+          "medidor de fluxo",
+          "CMP-MAR-003"
+        ],
+        "training_ref": "EDU-MAR-001",
+        "material_refs": [
+          "MAT-MAR-002",
+          "CMP-MAR-002"
+        ]
+      },
+      "compatibility": {
+        "technology_refs": [
+          "PROP-TRN-INT-001"
+        ],
+        "weapon_refs": [
+          "WPN-010"
+        ],
+        "magic_refs": [
+          "MAG-001",
+          "MAG-002",
+          "MAG-017"
+        ],
+        "status": "CONDICIONAL",
+        "rule": "Somente com fonte, limite, dissipação e registro válidos."
+      },
+      "spatial": {
+        "poi_id": "POI-012",
+        "territory_id": "TER-001",
+        "distribution": "INSTITUCIONAL_E_REGIONAL",
+        "atlas_visibility": "REGIONAL",
+        "layer_ids": [
+          "MAR",
+          "TECHNOLOGY",
+          "INSTITUTIONS"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "glyph_geometry": "núcleo central, direção, limite, condição e dissipador legíveis",
+        "states": [
+          "inativa",
+          "registrada",
+          "ativa",
+          "em_dissipação"
+        ],
+        "application": "placa, aro ou superfície certificada"
+      },
+      "provenance": [
+        {
+          "source": "etapa06_sources/ANDROMEDA_TECH_FINAL_SELO_V1_0/FONTES_CONGELADAS/ANDROMEDA_TECH_INVENTARIO_INICIAL_V0_1.json",
+          "original_state": "PROPOSTA_DE_HOOK",
+          "spatialization_method": "HOOK_TO_FUNCTIONAL_RECORD_WITHOUT_RETROACTIVE_DEPLOYMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-RUN-010"
+    },
+    {
+      "id": "RUN-011",
+      "name": "Vetor de Carga",
+      "aliases": [],
+      "category": "MOVIMENTO",
+      "representation": "GLIFO_MOVIMENTO",
+      "origin": "Sistema rúnico canônico; ficha funcional derivada de hook preservado",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_DERIVED",
+      "function": {
+        "effect": "transporte e mecanismos móveis",
+        "activation": "aplicação registrada por operador treinado sobre superfície compatível",
+        "conditions": [
+          "fonte finita identificada",
+          "limite e condição registrados",
+          "dissipador disponível"
+        ],
+        "range": "NO_SUPORTE",
+        "duration": "CONDICIONAL_E_LIMITADA",
+        "intensity": "ESCALA_1_10_CONTROLADA",
+        "limitations": [
+          "não cria energia",
+          "não opera sem superfície compatível",
+          "não aceita sobreposição não certificada"
+        ],
+        "risk": "dissipação incompleta ou interferência exige desligamento seguro",
+        "failure_mode": "inatividade segura e registro de revisão"
+      },
+      "support": {
+        "surface": [
+          "MAT-MAR-002",
+          "MAT-MAR-001"
+        ],
+        "object_types": [
+          "equipamento registrado",
+          "infraestrutura autorizada"
+        ],
+        "organism_use": "NÃO_AUTORIZADO_COMO_PADRÃO",
+        "infrastructure_use": [
+          "transporte e mecanismos móveis",
+          "guias de trajetória",
+          "assistência de movimentação"
+        ]
+      },
+      "creation_application": {
+        "created_by_job_ids": [
+          "JOB-RUN-GRAV-001"
+        ],
+        "verified_by_job_ids": [
+          "JOB-RUN-MATRIZ-001"
+        ],
+        "activated_by_job_ids": [
+          "JOB-RUN-OPER-001"
+        ],
+        "maintenance_by_job_ids": [
+          "JOB-RUN-MNT-001"
+        ],
+        "tools": [
+          "matriz de traço",
+          "medidor de fluxo",
+          "CMP-MAR-003"
+        ],
+        "training_ref": "EDU-MAR-001",
+        "material_refs": [
+          "MAT-MAR-002",
+          "CMP-MAR-002"
+        ]
+      },
+      "compatibility": {
+        "technology_refs": [
+          "PROP-TRN-INT-001"
+        ],
+        "weapon_refs": [
+          "WPN-011"
+        ],
+        "magic_refs": [
+          "MAG-001",
+          "MAG-002",
+          "MAG-018"
+        ],
+        "status": "CONDICIONAL",
+        "rule": "Somente com fonte, limite, dissipação e registro válidos."
+      },
+      "spatial": {
+        "poi_id": "POI-012",
+        "territory_id": "TER-001",
+        "distribution": "INSTITUCIONAL_E_REGIONAL",
+        "atlas_visibility": "REGIONAL",
+        "layer_ids": [
+          "MAR",
+          "TECHNOLOGY",
+          "INSTITUTIONS"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "glyph_geometry": "núcleo central, direção, limite, condição e dissipador legíveis",
+        "states": [
+          "inativa",
+          "registrada",
+          "ativa",
+          "em_dissipação"
+        ],
+        "application": "placa, aro ou superfície certificada"
+      },
+      "provenance": [
+        {
+          "source": "etapa06_sources/ANDROMEDA_TECH_FINAL_SELO_V1_0/FONTES_CONGELADAS/ANDROMEDA_TECH_INVENTARIO_INICIAL_V0_1.json",
+          "original_state": "PROPOSTA_DE_HOOK",
+          "spatialization_method": "HOOK_TO_FUNCTIONAL_RECORD_WITHOUT_RETROACTIVE_DEPLOYMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-RUN-011"
+    },
+    {
+      "id": "RUN-012",
+      "name": "Trilho de Retorno",
+      "aliases": [],
+      "category": "MOVIMENTO",
+      "representation": "GLIFO_MOVIMENTO",
+      "origin": "Sistema rúnico canônico; ficha funcional derivada de hook preservado",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_DERIVED",
+      "function": {
+        "effect": "transporte e mecanismos móveis",
+        "activation": "aplicação registrada por operador treinado sobre superfície compatível",
+        "conditions": [
+          "fonte finita identificada",
+          "limite e condição registrados",
+          "dissipador disponível"
+        ],
+        "range": "NO_SUPORTE",
+        "duration": "CONDICIONAL_E_LIMITADA",
+        "intensity": "ESCALA_1_10_CONTROLADA",
+        "limitations": [
+          "não cria energia",
+          "não opera sem superfície compatível",
+          "não aceita sobreposição não certificada"
+        ],
+        "risk": "dissipação incompleta ou interferência exige desligamento seguro",
+        "failure_mode": "inatividade segura e registro de revisão"
+      },
+      "support": {
+        "surface": [
+          "MAT-MAR-002",
+          "MAT-MAR-001"
+        ],
+        "object_types": [
+          "equipamento registrado",
+          "infraestrutura autorizada"
+        ],
+        "organism_use": "NÃO_AUTORIZADO_COMO_PADRÃO",
+        "infrastructure_use": [
+          "transporte e mecanismos móveis",
+          "guias de trajetória",
+          "assistência de movimentação"
+        ]
+      },
+      "creation_application": {
+        "created_by_job_ids": [
+          "JOB-RUN-GRAV-001"
+        ],
+        "verified_by_job_ids": [
+          "JOB-RUN-MATRIZ-001"
+        ],
+        "activated_by_job_ids": [
+          "JOB-RUN-OPER-001"
+        ],
+        "maintenance_by_job_ids": [
+          "JOB-RUN-MNT-001"
+        ],
+        "tools": [
+          "matriz de traço",
+          "medidor de fluxo",
+          "CMP-MAR-003"
+        ],
+        "training_ref": "EDU-MAR-001",
+        "material_refs": [
+          "MAT-MAR-002",
+          "CMP-MAR-002"
+        ]
+      },
+      "compatibility": {
+        "technology_refs": [
+          "PROP-TRN-INT-001"
+        ],
+        "weapon_refs": [
+          "WPN-012"
+        ],
+        "magic_refs": [
+          "MAG-001",
+          "MAG-002",
+          "MAG-019"
+        ],
+        "status": "CONDICIONAL",
+        "rule": "Somente com fonte, limite, dissipação e registro válidos."
+      },
+      "spatial": {
+        "poi_id": "POI-012",
+        "territory_id": "TER-001",
+        "distribution": "INSTITUCIONAL_E_REGIONAL",
+        "atlas_visibility": "REGIONAL",
+        "layer_ids": [
+          "MAR",
+          "TECHNOLOGY",
+          "INSTITUTIONS"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "glyph_geometry": "núcleo central, direção, limite, condição e dissipador legíveis",
+        "states": [
+          "inativa",
+          "registrada",
+          "ativa",
+          "em_dissipação"
+        ],
+        "application": "placa, aro ou superfície certificada"
+      },
+      "provenance": [
+        {
+          "source": "etapa06_sources/ANDROMEDA_TECH_FINAL_SELO_V1_0/FONTES_CONGELADAS/ANDROMEDA_TECH_INVENTARIO_INICIAL_V0_1.json",
+          "original_state": "PROPOSTA_DE_HOOK",
+          "spatialization_method": "HOOK_TO_FUNCTIONAL_RECORD_WITHOUT_RETROACTIVE_DEPLOYMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-RUN-012"
+    },
+    {
+      "id": "RUN-013",
+      "name": "Olho de Fluxo",
+      "aliases": [],
+      "category": "PERCEPÇÃO",
+      "representation": "GLIFO_PERCEPÇÃO",
+      "origin": "Sistema rúnico canônico; ficha funcional derivada de hook preservado",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_DERIVED",
+      "function": {
+        "effect": "sensoriamento e monitoramento",
+        "activation": "aplicação registrada por operador treinado sobre superfície compatível",
+        "conditions": [
+          "fonte finita identificada",
+          "limite e condição registrados",
+          "dissipador disponível"
+        ],
+        "range": "NO_SUPORTE",
+        "duration": "CONDICIONAL_E_LIMITADA",
+        "intensity": "ESCALA_1_10_CONTROLADA",
+        "limitations": [
+          "não cria energia",
+          "não opera sem superfície compatível",
+          "não aceita sobreposição não certificada"
+        ],
+        "risk": "dissipação incompleta ou interferência exige desligamento seguro",
+        "failure_mode": "inatividade segura e registro de revisão"
+      },
+      "support": {
+        "surface": [
+          "MAT-MAR-002",
+          "MAT-MAR-001"
+        ],
+        "object_types": [
+          "equipamento registrado",
+          "infraestrutura autorizada"
+        ],
+        "organism_use": "NÃO_AUTORIZADO_COMO_PADRÃO",
+        "infrastructure_use": [
+          "sensoriamento e monitoramento",
+          "inspeção industrial",
+          "alerta ambiental"
+        ]
+      },
+      "creation_application": {
+        "created_by_job_ids": [
+          "JOB-RUN-GRAV-001"
+        ],
+        "verified_by_job_ids": [
+          "JOB-RUN-MATRIZ-001"
+        ],
+        "activated_by_job_ids": [
+          "JOB-RUN-OPER-001"
+        ],
+        "maintenance_by_job_ids": [
+          "JOB-RUN-MNT-001"
+        ],
+        "tools": [
+          "matriz de traço",
+          "medidor de fluxo",
+          "CMP-MAR-003"
+        ],
+        "training_ref": "EDU-MAR-001",
+        "material_refs": [
+          "MAT-MAR-002",
+          "CMP-MAR-002"
+        ]
+      },
+      "compatibility": {
+        "technology_refs": [
+          "PROP-SEN-001"
+        ],
+        "weapon_refs": [
+          "WPN-013"
+        ],
+        "magic_refs": [
+          "MAG-001",
+          "MAG-002",
+          "MAG-020"
+        ],
+        "status": "CONDICIONAL",
+        "rule": "Somente com fonte, limite, dissipação e registro válidos."
+      },
+      "spatial": {
+        "poi_id": "POI-012",
+        "territory_id": "TER-001",
+        "distribution": "INSTITUCIONAL_E_REGIONAL",
+        "atlas_visibility": "REGIONAL",
+        "layer_ids": [
+          "MAR",
+          "TECHNOLOGY",
+          "INSTITUTIONS"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "glyph_geometry": "núcleo central, direção, limite, condição e dissipador legíveis",
+        "states": [
+          "inativa",
+          "registrada",
+          "ativa",
+          "em_dissipação"
+        ],
+        "application": "placa, aro ou superfície certificada"
+      },
+      "provenance": [
+        {
+          "source": "etapa06_sources/ANDROMEDA_TECH_FINAL_SELO_V1_0/FONTES_CONGELADAS/ANDROMEDA_TECH_INVENTARIO_INICIAL_V0_1.json",
+          "original_state": "PROPOSTA_DE_HOOK",
+          "spatialization_method": "HOOK_TO_FUNCTIONAL_RECORD_WITHOUT_RETROACTIVE_DEPLOYMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-RUN-013"
+    },
+    {
+      "id": "RUN-014",
+      "name": "Lente de Inspeção",
+      "aliases": [],
+      "category": "PERCEPÇÃO",
+      "representation": "GLIFO_PERCEPÇÃO",
+      "origin": "Sistema rúnico canônico; ficha funcional derivada de hook preservado",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_DERIVED",
+      "function": {
+        "effect": "sensoriamento e monitoramento",
+        "activation": "aplicação registrada por operador treinado sobre superfície compatível",
+        "conditions": [
+          "fonte finita identificada",
+          "limite e condição registrados",
+          "dissipador disponível"
+        ],
+        "range": "NO_SUPORTE",
+        "duration": "CONDICIONAL_E_LIMITADA",
+        "intensity": "ESCALA_1_10_CONTROLADA",
+        "limitations": [
+          "não cria energia",
+          "não opera sem superfície compatível",
+          "não aceita sobreposição não certificada"
+        ],
+        "risk": "dissipação incompleta ou interferência exige desligamento seguro",
+        "failure_mode": "inatividade segura e registro de revisão"
+      },
+      "support": {
+        "surface": [
+          "MAT-MAR-002",
+          "MAT-MAR-001"
+        ],
+        "object_types": [
+          "equipamento registrado",
+          "infraestrutura autorizada"
+        ],
+        "organism_use": "NÃO_AUTORIZADO_COMO_PADRÃO",
+        "infrastructure_use": [
+          "sensoriamento e monitoramento",
+          "inspeção industrial",
+          "alerta ambiental"
+        ]
+      },
+      "creation_application": {
+        "created_by_job_ids": [
+          "JOB-RUN-GRAV-001"
+        ],
+        "verified_by_job_ids": [
+          "JOB-RUN-MATRIZ-001"
+        ],
+        "activated_by_job_ids": [
+          "JOB-RUN-OPER-001"
+        ],
+        "maintenance_by_job_ids": [
+          "JOB-RUN-MNT-001"
+        ],
+        "tools": [
+          "matriz de traço",
+          "medidor de fluxo",
+          "CMP-MAR-003"
+        ],
+        "training_ref": "EDU-MAR-001",
+        "material_refs": [
+          "MAT-MAR-002",
+          "CMP-MAR-002"
+        ]
+      },
+      "compatibility": {
+        "technology_refs": [
+          "PROP-SEN-001"
+        ],
+        "weapon_refs": [
+          "WPN-014"
+        ],
+        "magic_refs": [
+          "MAG-001",
+          "MAG-002",
+          "MAG-021"
+        ],
+        "status": "CONDICIONAL",
+        "rule": "Somente com fonte, limite, dissipação e registro válidos."
+      },
+      "spatial": {
+        "poi_id": "POI-012",
+        "territory_id": "TER-001",
+        "distribution": "INSTITUCIONAL_E_REGIONAL",
+        "atlas_visibility": "REGIONAL",
+        "layer_ids": [
+          "MAR",
+          "TECHNOLOGY",
+          "INSTITUTIONS"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "glyph_geometry": "núcleo central, direção, limite, condição e dissipador legíveis",
+        "states": [
+          "inativa",
+          "registrada",
+          "ativa",
+          "em_dissipação"
+        ],
+        "application": "placa, aro ou superfície certificada"
+      },
+      "provenance": [
+        {
+          "source": "etapa06_sources/ANDROMEDA_TECH_FINAL_SELO_V1_0/FONTES_CONGELADAS/ANDROMEDA_TECH_INVENTARIO_INICIAL_V0_1.json",
+          "original_state": "PROPOSTA_DE_HOOK",
+          "spatialization_method": "HOOK_TO_FUNCTIONAL_RECORD_WITHOUT_RETROACTIVE_DEPLOYMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-RUN-014"
+    },
+    {
+      "id": "RUN-015",
+      "name": "Vigia Ambiental",
+      "aliases": [],
+      "category": "PERCEPÇÃO",
+      "representation": "GLIFO_PERCEPÇÃO",
+      "origin": "Sistema rúnico canônico; ficha funcional derivada de hook preservado",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_DERIVED",
+      "function": {
+        "effect": "sensoriamento e monitoramento",
+        "activation": "aplicação registrada por operador treinado sobre superfície compatível",
+        "conditions": [
+          "fonte finita identificada",
+          "limite e condição registrados",
+          "dissipador disponível"
+        ],
+        "range": "NO_SUPORTE",
+        "duration": "CONDICIONAL_E_LIMITADA",
+        "intensity": "ESCALA_1_10_CONTROLADA",
+        "limitations": [
+          "não cria energia",
+          "não opera sem superfície compatível",
+          "não aceita sobreposição não certificada"
+        ],
+        "risk": "dissipação incompleta ou interferência exige desligamento seguro",
+        "failure_mode": "inatividade segura e registro de revisão"
+      },
+      "support": {
+        "surface": [
+          "MAT-MAR-002",
+          "MAT-MAR-001"
+        ],
+        "object_types": [
+          "equipamento registrado",
+          "infraestrutura autorizada"
+        ],
+        "organism_use": "NÃO_AUTORIZADO_COMO_PADRÃO",
+        "infrastructure_use": [
+          "sensoriamento e monitoramento",
+          "inspeção industrial",
+          "alerta ambiental"
+        ]
+      },
+      "creation_application": {
+        "created_by_job_ids": [
+          "JOB-RUN-GRAV-001"
+        ],
+        "verified_by_job_ids": [
+          "JOB-RUN-MATRIZ-001"
+        ],
+        "activated_by_job_ids": [
+          "JOB-RUN-OPER-001"
+        ],
+        "maintenance_by_job_ids": [
+          "JOB-RUN-MNT-001"
+        ],
+        "tools": [
+          "matriz de traço",
+          "medidor de fluxo",
+          "CMP-MAR-003"
+        ],
+        "training_ref": "EDU-MAR-001",
+        "material_refs": [
+          "MAT-MAR-002",
+          "CMP-MAR-002"
+        ]
+      },
+      "compatibility": {
+        "technology_refs": [
+          "PROP-SEN-001"
+        ],
+        "weapon_refs": [
+          "WPN-015"
+        ],
+        "magic_refs": [
+          "MAG-001",
+          "MAG-002",
+          "MAG-022"
+        ],
+        "status": "CONDICIONAL",
+        "rule": "Somente com fonte, limite, dissipação e registro válidos."
+      },
+      "spatial": {
+        "poi_id": "POI-012",
+        "territory_id": "TER-001",
+        "distribution": "INSTITUCIONAL_E_REGIONAL",
+        "atlas_visibility": "REGIONAL",
+        "layer_ids": [
+          "MAR",
+          "TECHNOLOGY",
+          "INSTITUTIONS"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "glyph_geometry": "núcleo central, direção, limite, condição e dissipador legíveis",
+        "states": [
+          "inativa",
+          "registrada",
+          "ativa",
+          "em_dissipação"
+        ],
+        "application": "placa, aro ou superfície certificada"
+      },
+      "provenance": [
+        {
+          "source": "etapa06_sources/ANDROMEDA_TECH_FINAL_SELO_V1_0/FONTES_CONGELADAS/ANDROMEDA_TECH_INVENTARIO_INICIAL_V0_1.json",
+          "original_state": "PROPOSTA_DE_HOOK",
+          "spatialization_method": "HOOK_TO_FUNCTIONAL_RECORD_WITHOUT_RETROACTIVE_DEPLOYMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-RUN-015"
+    },
+    {
+      "id": "RUN-016",
+      "name": "Matriz de Tempera",
+      "aliases": [],
+      "category": "TRANSFORMAÇÃO",
+      "representation": "GLIFO_TRANSFORMAÇÃO",
+      "origin": "Sistema rúnico canônico; ficha funcional derivada de hook preservado",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_DERIVED",
+      "function": {
+        "effect": "processos térmicos/mecânicos",
+        "activation": "aplicação registrada por operador treinado sobre superfície compatível",
+        "conditions": [
+          "fonte finita identificada",
+          "limite e condição registrados",
+          "dissipador disponível"
+        ],
+        "range": "NO_SUPORTE",
+        "duration": "CONDICIONAL_E_LIMITADA",
+        "intensity": "ESCALA_1_10_CONTROLADA",
+        "limitations": [
+          "não cria energia",
+          "não opera sem superfície compatível",
+          "não aceita sobreposição não certificada"
+        ],
+        "risk": "dissipação incompleta ou interferência exige desligamento seguro",
+        "failure_mode": "inatividade segura e registro de revisão"
+      },
+      "support": {
+        "surface": [
+          "MAT-MAR-002",
+          "MAT-MAR-001"
+        ],
+        "object_types": [
+          "equipamento registrado",
+          "infraestrutura autorizada"
+        ],
+        "organism_use": "NÃO_AUTORIZADO_COMO_PADRÃO",
+        "infrastructure_use": [
+          "processos térmicos/mecânicos",
+          "conversão industrial limitada",
+          "controle de estado material"
+        ]
+      },
+      "creation_application": {
+        "created_by_job_ids": [
+          "JOB-RUN-GRAV-001"
+        ],
+        "verified_by_job_ids": [
+          "JOB-RUN-MATRIZ-001"
+        ],
+        "activated_by_job_ids": [
+          "JOB-RUN-OPER-001"
+        ],
+        "maintenance_by_job_ids": [
+          "JOB-RUN-MNT-001"
+        ],
+        "tools": [
+          "matriz de traço",
+          "medidor de fluxo",
+          "CMP-MAR-003"
+        ],
+        "training_ref": "EDU-MAR-001",
+        "material_refs": [
+          "MAT-MAR-002",
+          "CMP-MAR-002"
+        ]
+      },
+      "compatibility": {
+        "technology_refs": [
+          "PROP-IND-002"
+        ],
+        "weapon_refs": [
+          "WPN-016"
+        ],
+        "magic_refs": [
+          "MAG-001",
+          "MAG-002",
+          "MAG-023"
+        ],
+        "status": "CONDICIONAL",
+        "rule": "Somente com fonte, limite, dissipação e registro válidos."
+      },
+      "spatial": {
+        "poi_id": "POI-012",
+        "territory_id": "TER-001",
+        "distribution": "INSTITUCIONAL_E_REGIONAL",
+        "atlas_visibility": "REGIONAL",
+        "layer_ids": [
+          "MAR",
+          "TECHNOLOGY",
+          "INSTITUTIONS"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "glyph_geometry": "núcleo central, direção, limite, condição e dissipador legíveis",
+        "states": [
+          "inativa",
+          "registrada",
+          "ativa",
+          "em_dissipação"
+        ],
+        "application": "placa, aro ou superfície certificada"
+      },
+      "provenance": [
+        {
+          "source": "etapa06_sources/ANDROMEDA_TECH_FINAL_SELO_V1_0/FONTES_CONGELADAS/ANDROMEDA_TECH_INVENTARIO_INICIAL_V0_1.json",
+          "original_state": "PROPOSTA_DE_HOOK",
+          "spatialization_method": "HOOK_TO_FUNCTIONAL_RECORD_WITHOUT_RETROACTIVE_DEPLOYMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-RUN-016"
+    },
+    {
+      "id": "RUN-017",
+      "name": "Ajuste de Estado",
+      "aliases": [],
+      "category": "TRANSFORMAÇÃO",
+      "representation": "GLIFO_TRANSFORMAÇÃO",
+      "origin": "Sistema rúnico canônico; ficha funcional derivada de hook preservado",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_DERIVED",
+      "function": {
+        "effect": "processos térmicos/mecânicos",
+        "activation": "aplicação registrada por operador treinado sobre superfície compatível",
+        "conditions": [
+          "fonte finita identificada",
+          "limite e condição registrados",
+          "dissipador disponível"
+        ],
+        "range": "NO_SUPORTE",
+        "duration": "CONDICIONAL_E_LIMITADA",
+        "intensity": "ESCALA_1_10_CONTROLADA",
+        "limitations": [
+          "não cria energia",
+          "não opera sem superfície compatível",
+          "não aceita sobreposição não certificada"
+        ],
+        "risk": "dissipação incompleta ou interferência exige desligamento seguro",
+        "failure_mode": "inatividade segura e registro de revisão"
+      },
+      "support": {
+        "surface": [
+          "MAT-MAR-002",
+          "MAT-MAR-001"
+        ],
+        "object_types": [
+          "equipamento registrado",
+          "infraestrutura autorizada"
+        ],
+        "organism_use": "NÃO_AUTORIZADO_COMO_PADRÃO",
+        "infrastructure_use": [
+          "processos térmicos/mecânicos",
+          "conversão industrial limitada",
+          "controle de estado material"
+        ]
+      },
+      "creation_application": {
+        "created_by_job_ids": [
+          "JOB-RUN-GRAV-001"
+        ],
+        "verified_by_job_ids": [
+          "JOB-RUN-MATRIZ-001"
+        ],
+        "activated_by_job_ids": [
+          "JOB-RUN-OPER-001"
+        ],
+        "maintenance_by_job_ids": [
+          "JOB-RUN-MNT-001"
+        ],
+        "tools": [
+          "matriz de traço",
+          "medidor de fluxo",
+          "CMP-MAR-003"
+        ],
+        "training_ref": "EDU-MAR-001",
+        "material_refs": [
+          "MAT-MAR-002",
+          "CMP-MAR-002"
+        ]
+      },
+      "compatibility": {
+        "technology_refs": [
+          "PROP-IND-002"
+        ],
+        "weapon_refs": [
+          "WPN-017"
+        ],
+        "magic_refs": [
+          "MAG-001",
+          "MAG-002",
+          "MAG-024"
+        ],
+        "status": "CONDICIONAL",
+        "rule": "Somente com fonte, limite, dissipação e registro válidos."
+      },
+      "spatial": {
+        "poi_id": "POI-012",
+        "territory_id": "TER-001",
+        "distribution": "INSTITUCIONAL_E_REGIONAL",
+        "atlas_visibility": "REGIONAL",
+        "layer_ids": [
+          "MAR",
+          "TECHNOLOGY",
+          "INSTITUTIONS"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "glyph_geometry": "núcleo central, direção, limite, condição e dissipador legíveis",
+        "states": [
+          "inativa",
+          "registrada",
+          "ativa",
+          "em_dissipação"
+        ],
+        "application": "placa, aro ou superfície certificada"
+      },
+      "provenance": [
+        {
+          "source": "etapa06_sources/ANDROMEDA_TECH_FINAL_SELO_V1_0/FONTES_CONGELADAS/ANDROMEDA_TECH_INVENTARIO_INICIAL_V0_1.json",
+          "original_state": "PROPOSTA_DE_HOOK",
+          "spatialization_method": "HOOK_TO_FUNCTIONAL_RECORD_WITHOUT_RETROACTIVE_DEPLOYMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-RUN-017"
+    },
+    {
+      "id": "RUN-018",
+      "name": "Círculo de Conformação",
+      "aliases": [],
+      "category": "TRANSFORMAÇÃO",
+      "representation": "GLIFO_TRANSFORMAÇÃO",
+      "origin": "Sistema rúnico canônico; ficha funcional derivada de hook preservado",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_DERIVED",
+      "function": {
+        "effect": "processos térmicos/mecânicos",
+        "activation": "aplicação registrada por operador treinado sobre superfície compatível",
+        "conditions": [
+          "fonte finita identificada",
+          "limite e condição registrados",
+          "dissipador disponível"
+        ],
+        "range": "NO_SUPORTE",
+        "duration": "CONDICIONAL_E_LIMITADA",
+        "intensity": "ESCALA_1_10_CONTROLADA",
+        "limitations": [
+          "não cria energia",
+          "não opera sem superfície compatível",
+          "não aceita sobreposição não certificada"
+        ],
+        "risk": "dissipação incompleta ou interferência exige desligamento seguro",
+        "failure_mode": "inatividade segura e registro de revisão"
+      },
+      "support": {
+        "surface": [
+          "MAT-MAR-002",
+          "MAT-MAR-001"
+        ],
+        "object_types": [
+          "equipamento registrado",
+          "infraestrutura autorizada"
+        ],
+        "organism_use": "NÃO_AUTORIZADO_COMO_PADRÃO",
+        "infrastructure_use": [
+          "processos térmicos/mecânicos",
+          "conversão industrial limitada",
+          "controle de estado material"
+        ]
+      },
+      "creation_application": {
+        "created_by_job_ids": [
+          "JOB-RUN-GRAV-001"
+        ],
+        "verified_by_job_ids": [
+          "JOB-RUN-MATRIZ-001"
+        ],
+        "activated_by_job_ids": [
+          "JOB-RUN-OPER-001"
+        ],
+        "maintenance_by_job_ids": [
+          "JOB-RUN-MNT-001"
+        ],
+        "tools": [
+          "matriz de traço",
+          "medidor de fluxo",
+          "CMP-MAR-003"
+        ],
+        "training_ref": "EDU-MAR-001",
+        "material_refs": [
+          "MAT-MAR-002",
+          "CMP-MAR-002"
+        ]
+      },
+      "compatibility": {
+        "technology_refs": [
+          "PROP-IND-002"
+        ],
+        "weapon_refs": [
+          "WPN-018"
+        ],
+        "magic_refs": [
+          "MAG-001",
+          "MAG-002",
+          "MAG-025"
+        ],
+        "status": "CONDICIONAL",
+        "rule": "Somente com fonte, limite, dissipação e registro válidos."
+      },
+      "spatial": {
+        "poi_id": "POI-012",
+        "territory_id": "TER-001",
+        "distribution": "INSTITUCIONAL_E_REGIONAL",
+        "atlas_visibility": "REGIONAL",
+        "layer_ids": [
+          "MAR",
+          "TECHNOLOGY",
+          "INSTITUTIONS"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "glyph_geometry": "núcleo central, direção, limite, condição e dissipador legíveis",
+        "states": [
+          "inativa",
+          "registrada",
+          "ativa",
+          "em_dissipação"
+        ],
+        "application": "placa, aro ou superfície certificada"
+      },
+      "provenance": [
+        {
+          "source": "etapa06_sources/ANDROMEDA_TECH_FINAL_SELO_V1_0/FONTES_CONGELADAS/ANDROMEDA_TECH_INVENTARIO_INICIAL_V0_1.json",
+          "original_state": "PROPOSTA_DE_HOOK",
+          "spatialization_method": "HOOK_TO_FUNCTIONAL_RECORD_WITHOUT_RETROACTIVE_DEPLOYMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-RUN-018"
+    },
+    {
+      "id": "RUN-019",
+      "name": "Trama de Reparo",
+      "aliases": [],
+      "category": "RESTAURAÇÃO",
+      "representation": "GLIFO_RESTAURAÇÃO",
+      "origin": "Sistema rúnico canônico; ficha funcional derivada de hook preservado",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_DERIVED",
+      "function": {
+        "effect": "manutenção e recuperação de sistemas",
+        "activation": "aplicação registrada por operador treinado sobre superfície compatível",
+        "conditions": [
+          "fonte finita identificada",
+          "limite e condição registrados",
+          "dissipador disponível"
+        ],
+        "range": "NO_SUPORTE",
+        "duration": "CONDICIONAL_E_LIMITADA",
+        "intensity": "ESCALA_1_10_CONTROLADA",
+        "limitations": [
+          "não cria energia",
+          "não opera sem superfície compatível",
+          "não aceita sobreposição não certificada"
+        ],
+        "risk": "dissipação incompleta ou interferência exige desligamento seguro",
+        "failure_mode": "inatividade segura e registro de revisão"
+      },
+      "support": {
+        "surface": [
+          "MAT-MAR-002",
+          "MAT-MAR-001"
+        ],
+        "object_types": [
+          "equipamento registrado",
+          "infraestrutura autorizada"
+        ],
+        "organism_use": "NÃO_AUTORIZADO_COMO_PADRÃO",
+        "infrastructure_use": [
+          "manutenção e recuperação de sistemas",
+          "suporte médico/técnico sujeito a limites",
+          "recuperação de materiais"
+        ]
+      },
+      "creation_application": {
+        "created_by_job_ids": [
+          "JOB-RUN-GRAV-001"
+        ],
+        "verified_by_job_ids": [
+          "JOB-RUN-MATRIZ-001"
+        ],
+        "activated_by_job_ids": [
+          "JOB-RUN-OPER-001"
+        ],
+        "maintenance_by_job_ids": [
+          "JOB-RUN-MNT-001"
+        ],
+        "tools": [
+          "matriz de traço",
+          "medidor de fluxo",
+          "CMP-MAR-003"
+        ],
+        "training_ref": "EDU-MAR-001",
+        "material_refs": [
+          "MAT-MAR-002",
+          "CMP-MAR-002"
+        ]
+      },
+      "compatibility": {
+        "technology_refs": [
+          "PROP-MNT-001"
+        ],
+        "weapon_refs": [
+          "WPN-019"
+        ],
+        "magic_refs": [
+          "MAG-001",
+          "MAG-002",
+          "MAG-026"
+        ],
+        "status": "CONDICIONAL",
+        "rule": "Somente com fonte, limite, dissipação e registro válidos."
+      },
+      "spatial": {
+        "poi_id": "POI-012",
+        "territory_id": "TER-001",
+        "distribution": "INSTITUCIONAL_E_REGIONAL",
+        "atlas_visibility": "REGIONAL",
+        "layer_ids": [
+          "MAR",
+          "TECHNOLOGY",
+          "INSTITUTIONS"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "glyph_geometry": "núcleo central, direção, limite, condição e dissipador legíveis",
+        "states": [
+          "inativa",
+          "registrada",
+          "ativa",
+          "em_dissipação"
+        ],
+        "application": "placa, aro ou superfície certificada"
+      },
+      "provenance": [
+        {
+          "source": "etapa06_sources/ANDROMEDA_TECH_FINAL_SELO_V1_0/FONTES_CONGELADAS/ANDROMEDA_TECH_INVENTARIO_INICIAL_V0_1.json",
+          "original_state": "PROPOSTA_DE_HOOK",
+          "spatialization_method": "HOOK_TO_FUNCTIONAL_RECORD_WITHOUT_RETROACTIVE_DEPLOYMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-RUN-019"
+    },
+    {
+      "id": "RUN-020",
+      "name": "Nó de Recuperação",
+      "aliases": [],
+      "category": "RESTAURAÇÃO",
+      "representation": "GLIFO_RESTAURAÇÃO",
+      "origin": "Sistema rúnico canônico; ficha funcional derivada de hook preservado",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_DERIVED",
+      "function": {
+        "effect": "manutenção e recuperação de sistemas",
+        "activation": "aplicação registrada por operador treinado sobre superfície compatível",
+        "conditions": [
+          "fonte finita identificada",
+          "limite e condição registrados",
+          "dissipador disponível"
+        ],
+        "range": "NO_SUPORTE",
+        "duration": "CONDICIONAL_E_LIMITADA",
+        "intensity": "ESCALA_1_10_CONTROLADA",
+        "limitations": [
+          "não cria energia",
+          "não opera sem superfície compatível",
+          "não aceita sobreposição não certificada"
+        ],
+        "risk": "dissipação incompleta ou interferência exige desligamento seguro",
+        "failure_mode": "inatividade segura e registro de revisão"
+      },
+      "support": {
+        "surface": [
+          "MAT-MAR-002",
+          "MAT-MAR-001"
+        ],
+        "object_types": [
+          "equipamento registrado",
+          "infraestrutura autorizada"
+        ],
+        "organism_use": "NÃO_AUTORIZADO_COMO_PADRÃO",
+        "infrastructure_use": [
+          "manutenção e recuperação de sistemas",
+          "suporte médico/técnico sujeito a limites",
+          "recuperação de materiais"
+        ]
+      },
+      "creation_application": {
+        "created_by_job_ids": [
+          "JOB-RUN-GRAV-001"
+        ],
+        "verified_by_job_ids": [
+          "JOB-RUN-MATRIZ-001"
+        ],
+        "activated_by_job_ids": [
+          "JOB-RUN-OPER-001"
+        ],
+        "maintenance_by_job_ids": [
+          "JOB-RUN-MNT-001"
+        ],
+        "tools": [
+          "matriz de traço",
+          "medidor de fluxo",
+          "CMP-MAR-003"
+        ],
+        "training_ref": "EDU-MAR-001",
+        "material_refs": [
+          "MAT-MAR-002",
+          "CMP-MAR-002"
+        ]
+      },
+      "compatibility": {
+        "technology_refs": [
+          "PROP-MNT-001"
+        ],
+        "weapon_refs": [
+          "WPN-020"
+        ],
+        "magic_refs": [
+          "MAG-001",
+          "MAG-002",
+          "MAG-027"
+        ],
+        "status": "CONDICIONAL",
+        "rule": "Somente com fonte, limite, dissipação e registro válidos."
+      },
+      "spatial": {
+        "poi_id": "POI-012",
+        "territory_id": "TER-001",
+        "distribution": "INSTITUCIONAL_E_REGIONAL",
+        "atlas_visibility": "REGIONAL",
+        "layer_ids": [
+          "MAR",
+          "TECHNOLOGY",
+          "INSTITUTIONS"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "glyph_geometry": "núcleo central, direção, limite, condição e dissipador legíveis",
+        "states": [
+          "inativa",
+          "registrada",
+          "ativa",
+          "em_dissipação"
+        ],
+        "application": "placa, aro ou superfície certificada"
+      },
+      "provenance": [
+        {
+          "source": "etapa06_sources/ANDROMEDA_TECH_FINAL_SELO_V1_0/FONTES_CONGELADAS/ANDROMEDA_TECH_INVENTARIO_INICIAL_V0_1.json",
+          "original_state": "PROPOSTA_DE_HOOK",
+          "spatialization_method": "HOOK_TO_FUNCTIONAL_RECORD_WITHOUT_RETROACTIVE_DEPLOYMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-RUN-020"
+    },
+    {
+      "id": "RUN-021",
+      "name": "Selo de Integridade",
+      "aliases": [],
+      "category": "RESTAURAÇÃO",
+      "representation": "GLIFO_RESTAURAÇÃO",
+      "origin": "Sistema rúnico canônico; ficha funcional derivada de hook preservado",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_DERIVED",
+      "function": {
+        "effect": "manutenção e recuperação de sistemas",
+        "activation": "aplicação registrada por operador treinado sobre superfície compatível",
+        "conditions": [
+          "fonte finita identificada",
+          "limite e condição registrados",
+          "dissipador disponível"
+        ],
+        "range": "NO_SUPORTE",
+        "duration": "CONDICIONAL_E_LIMITADA",
+        "intensity": "ESCALA_1_10_CONTROLADA",
+        "limitations": [
+          "não cria energia",
+          "não opera sem superfície compatível",
+          "não aceita sobreposição não certificada"
+        ],
+        "risk": "dissipação incompleta ou interferência exige desligamento seguro",
+        "failure_mode": "inatividade segura e registro de revisão"
+      },
+      "support": {
+        "surface": [
+          "MAT-MAR-002",
+          "MAT-MAR-001"
+        ],
+        "object_types": [
+          "equipamento registrado",
+          "infraestrutura autorizada"
+        ],
+        "organism_use": "NÃO_AUTORIZADO_COMO_PADRÃO",
+        "infrastructure_use": [
+          "manutenção e recuperação de sistemas",
+          "suporte médico/técnico sujeito a limites",
+          "recuperação de materiais"
+        ]
+      },
+      "creation_application": {
+        "created_by_job_ids": [
+          "JOB-RUN-GRAV-001"
+        ],
+        "verified_by_job_ids": [
+          "JOB-RUN-MATRIZ-001"
+        ],
+        "activated_by_job_ids": [
+          "JOB-RUN-OPER-001"
+        ],
+        "maintenance_by_job_ids": [
+          "JOB-RUN-MNT-001"
+        ],
+        "tools": [
+          "matriz de traço",
+          "medidor de fluxo",
+          "CMP-MAR-003"
+        ],
+        "training_ref": "EDU-MAR-001",
+        "material_refs": [
+          "MAT-MAR-002",
+          "CMP-MAR-002"
+        ]
+      },
+      "compatibility": {
+        "technology_refs": [
+          "PROP-MNT-001"
+        ],
+        "weapon_refs": [
+          "WPN-021"
+        ],
+        "magic_refs": [
+          "MAG-001",
+          "MAG-002",
+          "MAG-028"
+        ],
+        "status": "CONDICIONAL",
+        "rule": "Somente com fonte, limite, dissipação e registro válidos."
+      },
+      "spatial": {
+        "poi_id": "POI-012",
+        "territory_id": "TER-001",
+        "distribution": "INSTITUCIONAL_E_REGIONAL",
+        "atlas_visibility": "REGIONAL",
+        "layer_ids": [
+          "MAR",
+          "TECHNOLOGY",
+          "INSTITUTIONS"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "glyph_geometry": "núcleo central, direção, limite, condição e dissipador legíveis",
+        "states": [
+          "inativa",
+          "registrada",
+          "ativa",
+          "em_dissipação"
+        ],
+        "application": "placa, aro ou superfície certificada"
+      },
+      "provenance": [
+        {
+          "source": "etapa06_sources/ANDROMEDA_TECH_FINAL_SELO_V1_0/FONTES_CONGELADAS/ANDROMEDA_TECH_INVENTARIO_INICIAL_V0_1.json",
+          "original_state": "PROPOSTA_DE_HOOK",
+          "spatialization_method": "HOOK_TO_FUNCTIONAL_RECORD_WITHOUT_RETROACTIVE_DEPLOYMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-RUN-021"
+    },
+    {
+      "id": "RUN-022",
+      "name": "Trava de Emergência",
+      "aliases": [],
+      "category": "INTERRUPÇÃO",
+      "representation": "GLIFO_INTERRUPÇÃO",
+      "origin": "Sistema rúnico canônico; ficha funcional derivada de hook preservado",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_DERIVED",
+      "function": {
+        "effect": "intertravamento de segurança",
+        "activation": "aplicação registrada por operador treinado sobre superfície compatível",
+        "conditions": [
+          "fonte finita identificada",
+          "limite e condição registrados",
+          "dissipador disponível"
+        ],
+        "range": "NO_SUPORTE",
+        "duration": "CONDICIONAL_E_LIMITADA",
+        "intensity": "ESCALA_1_10_CONTROLADA",
+        "limitations": [
+          "não cria energia",
+          "não opera sem superfície compatível",
+          "não aceita sobreposição não certificada"
+        ],
+        "risk": "dissipação incompleta ou interferência exige desligamento seguro",
+        "failure_mode": "inatividade segura e registro de revisão"
+      },
+      "support": {
+        "surface": [
+          "MAT-MAR-002",
+          "MAT-MAR-001"
+        ],
+        "object_types": [
+          "equipamento registrado",
+          "infraestrutura autorizada"
+        ],
+        "organism_use": "NÃO_AUTORIZADO_COMO_PADRÃO",
+        "infrastructure_use": [
+          "intertravamento de segurança",
+          "parada de emergência",
+          "isolamento de falhas"
+        ]
+      },
+      "creation_application": {
+        "created_by_job_ids": [
+          "JOB-RUN-GRAV-001"
+        ],
+        "verified_by_job_ids": [
+          "JOB-RUN-MATRIZ-001"
+        ],
+        "activated_by_job_ids": [
+          "JOB-RUN-OPER-001"
+        ],
+        "maintenance_by_job_ids": [
+          "JOB-RUN-MNT-001"
+        ],
+        "tools": [
+          "matriz de traço",
+          "medidor de fluxo",
+          "CMP-MAR-003"
+        ],
+        "training_ref": "EDU-MAR-001",
+        "material_refs": [
+          "MAT-MAR-002",
+          "CMP-MAR-002"
+        ]
+      },
+      "compatibility": {
+        "technology_refs": [
+          "PROP-ENE-002"
+        ],
+        "weapon_refs": [
+          "WPN-022"
+        ],
+        "magic_refs": [
+          "MAG-001",
+          "MAG-002",
+          "MAG-029"
+        ],
+        "status": "CONDICIONAL",
+        "rule": "Somente com fonte, limite, dissipação e registro válidos."
+      },
+      "spatial": {
+        "poi_id": "POI-012",
+        "territory_id": "TER-001",
+        "distribution": "INSTITUCIONAL_E_REGIONAL",
+        "atlas_visibility": "REGIONAL",
+        "layer_ids": [
+          "MAR",
+          "TECHNOLOGY",
+          "INSTITUTIONS"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "glyph_geometry": "núcleo central, direção, limite, condição e dissipador legíveis",
+        "states": [
+          "inativa",
+          "registrada",
+          "ativa",
+          "em_dissipação"
+        ],
+        "application": "placa, aro ou superfície certificada"
+      },
+      "provenance": [
+        {
+          "source": "etapa06_sources/ANDROMEDA_TECH_FINAL_SELO_V1_0/FONTES_CONGELADAS/ANDROMEDA_TECH_INVENTARIO_INICIAL_V0_1.json",
+          "original_state": "PROPOSTA_DE_HOOK",
+          "spatialization_method": "HOOK_TO_FUNCTIONAL_RECORD_WITHOUT_RETROACTIVE_DEPLOYMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-RUN-022"
+    },
+    {
+      "id": "RUN-023",
+      "name": "Corte de Falha",
+      "aliases": [],
+      "category": "INTERRUPÇÃO",
+      "representation": "GLIFO_INTERRUPÇÃO",
+      "origin": "Sistema rúnico canônico; ficha funcional derivada de hook preservado",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_DERIVED",
+      "function": {
+        "effect": "intertravamento de segurança",
+        "activation": "aplicação registrada por operador treinado sobre superfície compatível",
+        "conditions": [
+          "fonte finita identificada",
+          "limite e condição registrados",
+          "dissipador disponível"
+        ],
+        "range": "NO_SUPORTE",
+        "duration": "CONDICIONAL_E_LIMITADA",
+        "intensity": "ESCALA_1_10_CONTROLADA",
+        "limitations": [
+          "não cria energia",
+          "não opera sem superfície compatível",
+          "não aceita sobreposição não certificada"
+        ],
+        "risk": "dissipação incompleta ou interferência exige desligamento seguro",
+        "failure_mode": "inatividade segura e registro de revisão"
+      },
+      "support": {
+        "surface": [
+          "MAT-MAR-002",
+          "MAT-MAR-001"
+        ],
+        "object_types": [
+          "equipamento registrado",
+          "infraestrutura autorizada"
+        ],
+        "organism_use": "NÃO_AUTORIZADO_COMO_PADRÃO",
+        "infrastructure_use": [
+          "intertravamento de segurança",
+          "parada de emergência",
+          "isolamento de falhas"
+        ]
+      },
+      "creation_application": {
+        "created_by_job_ids": [
+          "JOB-RUN-GRAV-001"
+        ],
+        "verified_by_job_ids": [
+          "JOB-RUN-MATRIZ-001"
+        ],
+        "activated_by_job_ids": [
+          "JOB-RUN-OPER-001"
+        ],
+        "maintenance_by_job_ids": [
+          "JOB-RUN-MNT-001"
+        ],
+        "tools": [
+          "matriz de traço",
+          "medidor de fluxo",
+          "CMP-MAR-003"
+        ],
+        "training_ref": "EDU-MAR-001",
+        "material_refs": [
+          "MAT-MAR-002",
+          "CMP-MAR-002"
+        ]
+      },
+      "compatibility": {
+        "technology_refs": [
+          "PROP-ENE-002"
+        ],
+        "weapon_refs": [
+          "WPN-023"
+        ],
+        "magic_refs": [
+          "MAG-001",
+          "MAG-002",
+          "MAG-030"
+        ],
+        "status": "CONDICIONAL",
+        "rule": "Somente com fonte, limite, dissipação e registro válidos."
+      },
+      "spatial": {
+        "poi_id": "POI-012",
+        "territory_id": "TER-001",
+        "distribution": "INSTITUCIONAL_E_REGIONAL",
+        "atlas_visibility": "REGIONAL",
+        "layer_ids": [
+          "MAR",
+          "TECHNOLOGY",
+          "INSTITUTIONS"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "glyph_geometry": "núcleo central, direção, limite, condição e dissipador legíveis",
+        "states": [
+          "inativa",
+          "registrada",
+          "ativa",
+          "em_dissipação"
+        ],
+        "application": "placa, aro ou superfície certificada"
+      },
+      "provenance": [
+        {
+          "source": "etapa06_sources/ANDROMEDA_TECH_FINAL_SELO_V1_0/FONTES_CONGELADAS/ANDROMEDA_TECH_INVENTARIO_INICIAL_V0_1.json",
+          "original_state": "PROPOSTA_DE_HOOK",
+          "spatialization_method": "HOOK_TO_FUNCTIONAL_RECORD_WITHOUT_RETROACTIVE_DEPLOYMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-RUN-023"
+    },
+    {
+      "id": "RUN-024",
+      "name": "Câmara de Pausa",
+      "aliases": [],
+      "category": "INTERRUPÇÃO",
+      "representation": "GLIFO_INTERRUPÇÃO",
+      "origin": "Sistema rúnico canônico; ficha funcional derivada de hook preservado",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_DERIVED",
+      "function": {
+        "effect": "intertravamento de segurança",
+        "activation": "aplicação registrada por operador treinado sobre superfície compatível",
+        "conditions": [
+          "fonte finita identificada",
+          "limite e condição registrados",
+          "dissipador disponível"
+        ],
+        "range": "NO_SUPORTE",
+        "duration": "CONDICIONAL_E_LIMITADA",
+        "intensity": "ESCALA_1_10_CONTROLADA",
+        "limitations": [
+          "não cria energia",
+          "não opera sem superfície compatível",
+          "não aceita sobreposição não certificada"
+        ],
+        "risk": "dissipação incompleta ou interferência exige desligamento seguro",
+        "failure_mode": "inatividade segura e registro de revisão"
+      },
+      "support": {
+        "surface": [
+          "MAT-MAR-002",
+          "MAT-MAR-001"
+        ],
+        "object_types": [
+          "equipamento registrado",
+          "infraestrutura autorizada"
+        ],
+        "organism_use": "NÃO_AUTORIZADO_COMO_PADRÃO",
+        "infrastructure_use": [
+          "intertravamento de segurança",
+          "parada de emergência",
+          "isolamento de falhas"
+        ]
+      },
+      "creation_application": {
+        "created_by_job_ids": [
+          "JOB-RUN-GRAV-001"
+        ],
+        "verified_by_job_ids": [
+          "JOB-RUN-MATRIZ-001"
+        ],
+        "activated_by_job_ids": [
+          "JOB-RUN-OPER-001"
+        ],
+        "maintenance_by_job_ids": [
+          "JOB-RUN-MNT-001"
+        ],
+        "tools": [
+          "matriz de traço",
+          "medidor de fluxo",
+          "CMP-MAR-003"
+        ],
+        "training_ref": "EDU-MAR-001",
+        "material_refs": [
+          "MAT-MAR-002",
+          "CMP-MAR-002"
+        ]
+      },
+      "compatibility": {
+        "technology_refs": [
+          "PROP-ENE-002"
+        ],
+        "weapon_refs": [
+          "WPN-024"
+        ],
+        "magic_refs": [
+          "MAG-001",
+          "MAG-002",
+          "MAG-008"
+        ],
+        "status": "CONDICIONAL",
+        "rule": "Somente com fonte, limite, dissipação e registro válidos."
+      },
+      "spatial": {
+        "poi_id": "POI-012",
+        "territory_id": "TER-001",
+        "distribution": "INSTITUCIONAL_E_REGIONAL",
+        "atlas_visibility": "REGIONAL",
+        "layer_ids": [
+          "MAR",
+          "TECHNOLOGY",
+          "INSTITUTIONS"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "glyph_geometry": "núcleo central, direção, limite, condição e dissipador legíveis",
+        "states": [
+          "inativa",
+          "registrada",
+          "ativa",
+          "em_dissipação"
+        ],
+        "application": "placa, aro ou superfície certificada"
+      },
+      "provenance": [
+        {
+          "source": "etapa06_sources/ANDROMEDA_TECH_FINAL_SELO_V1_0/FONTES_CONGELADAS/ANDROMEDA_TECH_INVENTARIO_INICIAL_V0_1.json",
+          "original_state": "PROPOSTA_DE_HOOK",
+          "spatialization_method": "HOOK_TO_FUNCTIONAL_RECORD_WITHOUT_RETROACTIVE_DEPLOYMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-RUN-024"
+    },
+    {
+      "id": "RUN-025",
+      "name": "Par de Sincronia",
+      "aliases": [],
+      "category": "VÍNCULO",
+      "representation": "GLIFO_VÍNCULO",
+      "origin": "Sistema rúnico canônico; ficha funcional derivada de hook preservado",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_DERIVED",
+      "function": {
+        "effect": "sincronização de sistemas pareados",
+        "activation": "aplicação registrada por operador treinado sobre superfície compatível",
+        "conditions": [
+          "fonte finita identificada",
+          "limite e condição registrados",
+          "dissipador disponível"
+        ],
+        "range": "NO_SUPORTE",
+        "duration": "CONDICIONAL_E_LIMITADA",
+        "intensity": "ESCALA_1_10_CONTROLADA",
+        "limitations": [
+          "não cria energia",
+          "não opera sem superfície compatível",
+          "não aceita sobreposição não certificada"
+        ],
+        "risk": "dissipação incompleta ou interferência exige desligamento seguro",
+        "failure_mode": "inatividade segura e registro de revisão"
+      },
+      "support": {
+        "surface": [
+          "MAT-MAR-002",
+          "MAT-MAR-001"
+        ],
+        "object_types": [
+          "equipamento registrado",
+          "infraestrutura autorizada"
+        ],
+        "organism_use": "NÃO_AUTORIZADO_COMO_PADRÃO",
+        "infrastructure_use": [
+          "sincronização de sistemas pareados",
+          "rastreabilidade de componentes",
+          "compartilhamento controlado de carga"
+        ]
+      },
+      "creation_application": {
+        "created_by_job_ids": [
+          "JOB-RUN-GRAV-001"
+        ],
+        "verified_by_job_ids": [
+          "JOB-RUN-MATRIZ-001"
+        ],
+        "activated_by_job_ids": [
+          "JOB-RUN-OPER-001"
+        ],
+        "maintenance_by_job_ids": [
+          "JOB-RUN-MNT-001"
+        ],
+        "tools": [
+          "matriz de traço",
+          "medidor de fluxo",
+          "CMP-MAR-003"
+        ],
+        "training_ref": "EDU-MAR-001",
+        "material_refs": [
+          "MAT-MAR-002",
+          "CMP-MAR-002"
+        ]
+      },
+      "compatibility": {
+        "technology_refs": [
+          "PROP-IDN-001"
+        ],
+        "weapon_refs": [
+          "WPN-025"
+        ],
+        "magic_refs": [
+          "MAG-001",
+          "MAG-002",
+          "MAG-009"
+        ],
+        "status": "CONDICIONAL",
+        "rule": "Somente com fonte, limite, dissipação e registro válidos."
+      },
+      "spatial": {
+        "poi_id": "POI-012",
+        "territory_id": "TER-001",
+        "distribution": "INSTITUCIONAL_E_REGIONAL",
+        "atlas_visibility": "REGIONAL",
+        "layer_ids": [
+          "MAR",
+          "TECHNOLOGY",
+          "INSTITUTIONS"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "glyph_geometry": "núcleo central, direção, limite, condição e dissipador legíveis",
+        "states": [
+          "inativa",
+          "registrada",
+          "ativa",
+          "em_dissipação"
+        ],
+        "application": "placa, aro ou superfície certificada"
+      },
+      "provenance": [
+        {
+          "source": "etapa06_sources/ANDROMEDA_TECH_FINAL_SELO_V1_0/FONTES_CONGELADAS/ANDROMEDA_TECH_INVENTARIO_INICIAL_V0_1.json",
+          "original_state": "PROPOSTA_DE_HOOK",
+          "spatialization_method": "HOOK_TO_FUNCTIONAL_RECORD_WITHOUT_RETROACTIVE_DEPLOYMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-RUN-025"
+    },
+    {
+      "id": "RUN-026",
+      "name": "Marca de Rastreio",
+      "aliases": [],
+      "category": "VÍNCULO",
+      "representation": "GLIFO_VÍNCULO",
+      "origin": "Sistema rúnico canônico; ficha funcional derivada de hook preservado",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_DERIVED",
+      "function": {
+        "effect": "sincronização de sistemas pareados",
+        "activation": "aplicação registrada por operador treinado sobre superfície compatível",
+        "conditions": [
+          "fonte finita identificada",
+          "limite e condição registrados",
+          "dissipador disponível"
+        ],
+        "range": "NO_SUPORTE",
+        "duration": "CONDICIONAL_E_LIMITADA",
+        "intensity": "ESCALA_1_10_CONTROLADA",
+        "limitations": [
+          "não cria energia",
+          "não opera sem superfície compatível",
+          "não aceita sobreposição não certificada"
+        ],
+        "risk": "dissipação incompleta ou interferência exige desligamento seguro",
+        "failure_mode": "inatividade segura e registro de revisão"
+      },
+      "support": {
+        "surface": [
+          "MAT-MAR-002",
+          "MAT-MAR-001"
+        ],
+        "object_types": [
+          "equipamento registrado",
+          "infraestrutura autorizada"
+        ],
+        "organism_use": "NÃO_AUTORIZADO_COMO_PADRÃO",
+        "infrastructure_use": [
+          "sincronização de sistemas pareados",
+          "rastreabilidade de componentes",
+          "compartilhamento controlado de carga"
+        ]
+      },
+      "creation_application": {
+        "created_by_job_ids": [
+          "JOB-RUN-GRAV-001"
+        ],
+        "verified_by_job_ids": [
+          "JOB-RUN-MATRIZ-001"
+        ],
+        "activated_by_job_ids": [
+          "JOB-RUN-OPER-001"
+        ],
+        "maintenance_by_job_ids": [
+          "JOB-RUN-MNT-001"
+        ],
+        "tools": [
+          "matriz de traço",
+          "medidor de fluxo",
+          "CMP-MAR-003"
+        ],
+        "training_ref": "EDU-MAR-001",
+        "material_refs": [
+          "MAT-MAR-002",
+          "CMP-MAR-002"
+        ]
+      },
+      "compatibility": {
+        "technology_refs": [
+          "PROP-IDN-001"
+        ],
+        "weapon_refs": [
+          "WPN-026"
+        ],
+        "magic_refs": [
+          "MAG-001",
+          "MAG-002",
+          "MAG-010"
+        ],
+        "status": "CONDICIONAL",
+        "rule": "Somente com fonte, limite, dissipação e registro válidos."
+      },
+      "spatial": {
+        "poi_id": "POI-012",
+        "territory_id": "TER-001",
+        "distribution": "INSTITUCIONAL_E_REGIONAL",
+        "atlas_visibility": "REGIONAL",
+        "layer_ids": [
+          "MAR",
+          "TECHNOLOGY",
+          "INSTITUTIONS"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "glyph_geometry": "núcleo central, direção, limite, condição e dissipador legíveis",
+        "states": [
+          "inativa",
+          "registrada",
+          "ativa",
+          "em_dissipação"
+        ],
+        "application": "placa, aro ou superfície certificada"
+      },
+      "provenance": [
+        {
+          "source": "etapa06_sources/ANDROMEDA_TECH_FINAL_SELO_V1_0/FONTES_CONGELADAS/ANDROMEDA_TECH_INVENTARIO_INICIAL_V0_1.json",
+          "original_state": "PROPOSTA_DE_HOOK",
+          "spatialization_method": "HOOK_TO_FUNCTIONAL_RECORD_WITHOUT_RETROACTIVE_DEPLOYMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-RUN-026"
+    },
+    {
+      "id": "RUN-027",
+      "name": "Partilha de Carga",
+      "aliases": [],
+      "category": "VÍNCULO",
+      "representation": "GLIFO_VÍNCULO",
+      "origin": "Sistema rúnico canônico; ficha funcional derivada de hook preservado",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_DERIVED",
+      "function": {
+        "effect": "sincronização de sistemas pareados",
+        "activation": "aplicação registrada por operador treinado sobre superfície compatível",
+        "conditions": [
+          "fonte finita identificada",
+          "limite e condição registrados",
+          "dissipador disponível"
+        ],
+        "range": "NO_SUPORTE",
+        "duration": "CONDICIONAL_E_LIMITADA",
+        "intensity": "ESCALA_1_10_CONTROLADA",
+        "limitations": [
+          "não cria energia",
+          "não opera sem superfície compatível",
+          "não aceita sobreposição não certificada"
+        ],
+        "risk": "dissipação incompleta ou interferência exige desligamento seguro",
+        "failure_mode": "inatividade segura e registro de revisão"
+      },
+      "support": {
+        "surface": [
+          "MAT-MAR-002",
+          "MAT-MAR-001"
+        ],
+        "object_types": [
+          "equipamento registrado",
+          "infraestrutura autorizada"
+        ],
+        "organism_use": "NÃO_AUTORIZADO_COMO_PADRÃO",
+        "infrastructure_use": [
+          "sincronização de sistemas pareados",
+          "rastreabilidade de componentes",
+          "compartilhamento controlado de carga"
+        ]
+      },
+      "creation_application": {
+        "created_by_job_ids": [
+          "JOB-RUN-GRAV-001"
+        ],
+        "verified_by_job_ids": [
+          "JOB-RUN-MATRIZ-001"
+        ],
+        "activated_by_job_ids": [
+          "JOB-RUN-OPER-001"
+        ],
+        "maintenance_by_job_ids": [
+          "JOB-RUN-MNT-001"
+        ],
+        "tools": [
+          "matriz de traço",
+          "medidor de fluxo",
+          "CMP-MAR-003"
+        ],
+        "training_ref": "EDU-MAR-001",
+        "material_refs": [
+          "MAT-MAR-002",
+          "CMP-MAR-002"
+        ]
+      },
+      "compatibility": {
+        "technology_refs": [
+          "PROP-IDN-001"
+        ],
+        "weapon_refs": [
+          "WPN-027"
+        ],
+        "magic_refs": [
+          "MAG-001",
+          "MAG-002",
+          "MAG-011"
+        ],
+        "status": "CONDICIONAL",
+        "rule": "Somente com fonte, limite, dissipação e registro válidos."
+      },
+      "spatial": {
+        "poi_id": "POI-012",
+        "territory_id": "TER-001",
+        "distribution": "INSTITUCIONAL_E_REGIONAL",
+        "atlas_visibility": "REGIONAL",
+        "layer_ids": [
+          "MAR",
+          "TECHNOLOGY",
+          "INSTITUTIONS"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "glyph_geometry": "núcleo central, direção, limite, condição e dissipador legíveis",
+        "states": [
+          "inativa",
+          "registrada",
+          "ativa",
+          "em_dissipação"
+        ],
+        "application": "placa, aro ou superfície certificada"
+      },
+      "provenance": [
+        {
+          "source": "etapa06_sources/ANDROMEDA_TECH_FINAL_SELO_V1_0/FONTES_CONGELADAS/ANDROMEDA_TECH_INVENTARIO_INICIAL_V0_1.json",
+          "original_state": "PROPOSTA_DE_HOOK",
+          "spatialization_method": "HOOK_TO_FUNCTIONAL_RECORD_WITHOUT_RETROACTIVE_DEPLOYMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-RUN-027"
+    },
+    {
+      "id": "RUN-028",
+      "name": "Sinal de Atenção",
+      "aliases": [],
+      "category": "MENTAL",
+      "representation": "GLIFO_MENTAL",
+      "origin": "Sistema rúnico canônico; ficha funcional derivada de hook preservado",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_DERIVED",
+      "function": {
+        "effect": "interfaces de alerta/atenção",
+        "activation": "aplicação registrada por operador treinado sobre superfície compatível",
+        "conditions": [
+          "fonte finita identificada",
+          "limite e condição registrados",
+          "dissipador disponível"
+        ],
+        "range": "NO_SUPORTE",
+        "duration": "CONDICIONAL_E_LIMITADA",
+        "intensity": "ESCALA_1_10_CONTROLADA",
+        "limitations": [
+          "não cria energia",
+          "não opera sem superfície compatível",
+          "não aceita sobreposição não certificada"
+        ],
+        "risk": "dissipação incompleta ou interferência exige desligamento seguro",
+        "failure_mode": "inatividade segura e registro de revisão"
+      },
+      "support": {
+        "surface": [
+          "MAT-MAR-002",
+          "MAT-MAR-001"
+        ],
+        "object_types": [
+          "equipamento registrado",
+          "infraestrutura autorizada"
+        ],
+        "organism_use": "NÃO_AUTORIZADO_COMO_PADRÃO",
+        "infrastructure_use": [
+          "interfaces de alerta/atenção",
+          "procedimentos de foco",
+          "sinalização cognitiva limitada"
+        ]
+      },
+      "creation_application": {
+        "created_by_job_ids": [
+          "JOB-RUN-GRAV-001"
+        ],
+        "verified_by_job_ids": [
+          "JOB-RUN-MATRIZ-001"
+        ],
+        "activated_by_job_ids": [
+          "JOB-RUN-OPER-001"
+        ],
+        "maintenance_by_job_ids": [
+          "JOB-RUN-MNT-001"
+        ],
+        "tools": [
+          "matriz de traço",
+          "medidor de fluxo",
+          "CMP-MAR-003"
+        ],
+        "training_ref": "EDU-MAR-001",
+        "material_refs": [
+          "MAT-MAR-002",
+          "CMP-MAR-002"
+        ]
+      },
+      "compatibility": {
+        "technology_refs": [
+          "PROP-COM-005"
+        ],
+        "weapon_refs": [
+          "WPN-028"
+        ],
+        "magic_refs": [
+          "MAG-001",
+          "MAG-002",
+          "MAG-012"
+        ],
+        "status": "CONDICIONAL",
+        "rule": "Somente com fonte, limite, dissipação e registro válidos."
+      },
+      "spatial": {
+        "poi_id": "POI-012",
+        "territory_id": "TER-001",
+        "distribution": "INSTITUCIONAL_E_REGIONAL",
+        "atlas_visibility": "REGIONAL",
+        "layer_ids": [
+          "MAR",
+          "TECHNOLOGY",
+          "INSTITUTIONS"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "glyph_geometry": "núcleo central, direção, limite, condição e dissipador legíveis",
+        "states": [
+          "inativa",
+          "registrada",
+          "ativa",
+          "em_dissipação"
+        ],
+        "application": "placa, aro ou superfície certificada"
+      },
+      "provenance": [
+        {
+          "source": "etapa06_sources/ANDROMEDA_TECH_FINAL_SELO_V1_0/FONTES_CONGELADAS/ANDROMEDA_TECH_INVENTARIO_INICIAL_V0_1.json",
+          "original_state": "PROPOSTA_DE_HOOK",
+          "spatialization_method": "HOOK_TO_FUNCTIONAL_RECORD_WITHOUT_RETROACTIVE_DEPLOYMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-RUN-028"
+    },
+    {
+      "id": "RUN-029",
+      "name": "Foco de Vigília",
+      "aliases": [],
+      "category": "MENTAL",
+      "representation": "GLIFO_MENTAL",
+      "origin": "Sistema rúnico canônico; ficha funcional derivada de hook preservado",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_DERIVED",
+      "function": {
+        "effect": "interfaces de alerta/atenção",
+        "activation": "aplicação registrada por operador treinado sobre superfície compatível",
+        "conditions": [
+          "fonte finita identificada",
+          "limite e condição registrados",
+          "dissipador disponível"
+        ],
+        "range": "NO_SUPORTE",
+        "duration": "CONDICIONAL_E_LIMITADA",
+        "intensity": "ESCALA_1_10_CONTROLADA",
+        "limitations": [
+          "não cria energia",
+          "não opera sem superfície compatível",
+          "não aceita sobreposição não certificada"
+        ],
+        "risk": "dissipação incompleta ou interferência exige desligamento seguro",
+        "failure_mode": "inatividade segura e registro de revisão"
+      },
+      "support": {
+        "surface": [
+          "MAT-MAR-002",
+          "MAT-MAR-001"
+        ],
+        "object_types": [
+          "equipamento registrado",
+          "infraestrutura autorizada"
+        ],
+        "organism_use": "NÃO_AUTORIZADO_COMO_PADRÃO",
+        "infrastructure_use": [
+          "interfaces de alerta/atenção",
+          "procedimentos de foco",
+          "sinalização cognitiva limitada"
+        ]
+      },
+      "creation_application": {
+        "created_by_job_ids": [
+          "JOB-RUN-GRAV-001"
+        ],
+        "verified_by_job_ids": [
+          "JOB-RUN-MATRIZ-001"
+        ],
+        "activated_by_job_ids": [
+          "JOB-RUN-OPER-001"
+        ],
+        "maintenance_by_job_ids": [
+          "JOB-RUN-MNT-001"
+        ],
+        "tools": [
+          "matriz de traço",
+          "medidor de fluxo",
+          "CMP-MAR-003"
+        ],
+        "training_ref": "EDU-MAR-001",
+        "material_refs": [
+          "MAT-MAR-002",
+          "CMP-MAR-002"
+        ]
+      },
+      "compatibility": {
+        "technology_refs": [
+          "PROP-COM-005"
+        ],
+        "weapon_refs": [
+          "WPN-029"
+        ],
+        "magic_refs": [
+          "MAG-001",
+          "MAG-002",
+          "MAG-013"
+        ],
+        "status": "CONDICIONAL",
+        "rule": "Somente com fonte, limite, dissipação e registro válidos."
+      },
+      "spatial": {
+        "poi_id": "POI-012",
+        "territory_id": "TER-001",
+        "distribution": "INSTITUCIONAL_E_REGIONAL",
+        "atlas_visibility": "REGIONAL",
+        "layer_ids": [
+          "MAR",
+          "TECHNOLOGY",
+          "INSTITUTIONS"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "glyph_geometry": "núcleo central, direção, limite, condição e dissipador legíveis",
+        "states": [
+          "inativa",
+          "registrada",
+          "ativa",
+          "em_dissipação"
+        ],
+        "application": "placa, aro ou superfície certificada"
+      },
+      "provenance": [
+        {
+          "source": "etapa06_sources/ANDROMEDA_TECH_FINAL_SELO_V1_0/FONTES_CONGELADAS/ANDROMEDA_TECH_INVENTARIO_INICIAL_V0_1.json",
+          "original_state": "PROPOSTA_DE_HOOK",
+          "spatialization_method": "HOOK_TO_FUNCTIONAL_RECORD_WITHOUT_RETROACTIVE_DEPLOYMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-RUN-029"
+    },
+    {
+      "id": "RUN-030",
+      "name": "Limiar de Consciência",
+      "aliases": [],
+      "category": "MENTAL",
+      "representation": "GLIFO_MENTAL",
+      "origin": "Sistema rúnico canônico; ficha funcional derivada de hook preservado",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_DERIVED",
+      "function": {
+        "effect": "interfaces de alerta/atenção",
+        "activation": "aplicação registrada por operador treinado sobre superfície compatível",
+        "conditions": [
+          "fonte finita identificada",
+          "limite e condição registrados",
+          "dissipador disponível"
+        ],
+        "range": "NO_SUPORTE",
+        "duration": "CONDICIONAL_E_LIMITADA",
+        "intensity": "ESCALA_1_10_CONTROLADA",
+        "limitations": [
+          "não cria energia",
+          "não opera sem superfície compatível",
+          "não aceita sobreposição não certificada"
+        ],
+        "risk": "dissipação incompleta ou interferência exige desligamento seguro",
+        "failure_mode": "inatividade segura e registro de revisão"
+      },
+      "support": {
+        "surface": [
+          "MAT-MAR-002",
+          "MAT-MAR-001"
+        ],
+        "object_types": [
+          "equipamento registrado",
+          "infraestrutura autorizada"
+        ],
+        "organism_use": "NÃO_AUTORIZADO_COMO_PADRÃO",
+        "infrastructure_use": [
+          "interfaces de alerta/atenção",
+          "procedimentos de foco",
+          "sinalização cognitiva limitada"
+        ]
+      },
+      "creation_application": {
+        "created_by_job_ids": [
+          "JOB-RUN-GRAV-001"
+        ],
+        "verified_by_job_ids": [
+          "JOB-RUN-MATRIZ-001"
+        ],
+        "activated_by_job_ids": [
+          "JOB-RUN-OPER-001"
+        ],
+        "maintenance_by_job_ids": [
+          "JOB-RUN-MNT-001"
+        ],
+        "tools": [
+          "matriz de traço",
+          "medidor de fluxo",
+          "CMP-MAR-003"
+        ],
+        "training_ref": "EDU-MAR-001",
+        "material_refs": [
+          "MAT-MAR-002",
+          "CMP-MAR-002"
+        ]
+      },
+      "compatibility": {
+        "technology_refs": [
+          "PROP-COM-005"
+        ],
+        "weapon_refs": [
+          "WPN-030"
+        ],
+        "magic_refs": [
+          "MAG-001",
+          "MAG-002",
+          "MAG-014"
+        ],
+        "status": "CONDICIONAL",
+        "rule": "Somente com fonte, limite, dissipação e registro válidos."
+      },
+      "spatial": {
+        "poi_id": "POI-012",
+        "territory_id": "TER-001",
+        "distribution": "INSTITUCIONAL_E_REGIONAL",
+        "atlas_visibility": "REGIONAL",
+        "layer_ids": [
+          "MAR",
+          "TECHNOLOGY",
+          "INSTITUTIONS"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "glyph_geometry": "núcleo central, direção, limite, condição e dissipador legíveis",
+        "states": [
+          "inativa",
+          "registrada",
+          "ativa",
+          "em_dissipação"
+        ],
+        "application": "placa, aro ou superfície certificada"
+      },
+      "provenance": [
+        {
+          "source": "etapa06_sources/ANDROMEDA_TECH_FINAL_SELO_V1_0/FONTES_CONGELADAS/ANDROMEDA_TECH_INVENTARIO_INICIAL_V0_1.json",
+          "original_state": "PROPOSTA_DE_HOOK",
+          "spatialization_method": "HOOK_TO_FUNCTIONAL_RECORD_WITHOUT_RETROACTIVE_DEPLOYMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-RUN-030"
+    }
+  ],
+  "magic_cross_ref_existing_r2_laws": [
+    {
+      "id": "MAG-001",
+      "name": "Leis da magia",
+      "our_r2_file": "01_LORE/CANON_R2/SISTEMAS/MAGIA/MAG-001__*.json"
+    },
+    {
+      "id": "MAG-002",
+      "name": "Runas",
+      "our_r2_file": "01_LORE/CANON_R2/SISTEMAS/MAGIA/MAG-002__*.json"
+    },
+    {
+      "id": "MAG-003",
+      "name": "Corrente Planetária",
+      "our_r2_file": "01_LORE/CANON_R2/SISTEMAS/MAGIA/MAG-003__*.json"
+    },
+    {
+      "id": "MAG-004",
+      "name": "Marca inselável de Serlis",
+      "our_r2_file": "01_LORE/CANON_R2/SISTEMAS/MAGIA/MAG-004__*.json"
+    },
+    {
+      "id": "MAG-005",
+      "name": "Estados de controle da simbiose",
+      "our_r2_file": "01_LORE/CANON_R2/SISTEMAS/MAGIA/MAG-005__*.json"
+    },
+    {
+      "id": "MAG-006",
+      "name": "Escala de combate",
+      "our_r2_file": "01_LORE/CANON_R2/SISTEMAS/MAGIA/MAG-006__*.json"
+    },
+    {
+      "id": "MAG-007",
+      "name": "Estase de Intervalo",
+      "our_r2_file": "01_LORE/CANON_R2/SISTEMAS/MAGIA/MAG-007__*.json"
+    }
+  ],
+  "magic_new_functional": [
+    {
+      "id": "MAG-008",
+      "name": "Fio de Retorno",
+      "aliases": [],
+      "category": "CONDUÇÃO_LIMITADA",
+      "school_or_tradition": "Tradição de práticas limitadas de Stellar",
+      "origin": "Criação canônica complementar da Etapa 6 sob leis MAG-001",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_CREATED",
+      "execution": {
+        "effect": "redirecionamento breve de fluxo existente",
+        "user_requirement": "operador treinado, foco ou matriz compatível e fonte finita",
+        "activation": "método registrado, condição explícita e objetivo delimitado",
+        "range": "LOCAL_OU_DE_SUPORTE",
+        "duration": "CURTA_OU_CONDICIONAL",
+        "intensity": "ESCALA_1_10_COM_LIMITE",
+        "cost": "esforço, energia existente e revisão posterior",
+        "preparation": "proporcional à complexidade",
+        "concentration": "necessária quando a prática permanece ativa"
+      },
+      "limitations": {
+        "effort": "cresce com distância, complexidade, permanência e resistência",
+        "environment": "depende de fonte e compatibilidade do ambiente",
+        "interference": "matrizes incompatíveis, excesso de sobreposição ou ausência de dissipador",
+        "failure": "encerramento seguro, perda de efeito ou necessidade de revisão",
+        "absolute_prohibitions": [
+          "não cria energia infinita",
+          "não estabelece viagem temporal",
+          "não estabelece teleporte planetário instantâneo",
+          "não substitui cuidado ou manutenção reais"
+        ]
+      },
+      "interoperability": {
+        "rune_refs": [
+          "RUN-004"
+        ],
+        "technology_refs": [
+          "PROP-HYB-001"
+        ],
+        "status": "CONDICIONAL",
+        "special_rule": "PRÁTICA_LIMITADA_E_REGISTRADA"
+      },
+      "operator_job_ids": [
+        "JOB-MAG-MAGO-001",
+        "JOB-RUN-OPER-001"
+      ],
+      "training_ref": "EDU-MAR-001",
+      "maintenance_or_review_job_ids": [
+        "JOB-RUN-MNT-001",
+        "JOB-RUN-MATRIZ-001"
+      ],
+      "spatial": {
+        "poi_id": "POI-024",
+        "territory_id": "TER-005",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 1,
+        "layer_ids": [
+          "MAR",
+          "MAGIC",
+          "NARRATIVE"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "signature": "geometria de fluxo delimitada, sem efeito ilimitado",
+        "form": "traço, halo, foco ou matriz conforme categoria",
+        "intensity_states": [
+          "latente",
+          "ativa limitada",
+          "dissipando"
+        ],
+        "color_policy": "sem cor fixa quando não houver cânone visual prévio"
+      },
+      "provenance": [
+        {
+          "source": "AUTORIDADE_ETAPA_06",
+          "original_state": "SEM_ENTIDADE_PRÉVIA",
+          "creation_method": "CANON_CREATED_FUNCTIONAL_COMPLEMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-MAG-008"
+    },
+    {
+      "id": "MAG-009",
+      "name": "Pele de Guarda",
+      "aliases": [],
+      "category": "PROTEÇÃO",
+      "school_or_tradition": "Tradição de práticas limitadas de Stellar",
+      "origin": "Criação canônica complementar da Etapa 6 sob leis MAG-001",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_CREATED",
+      "execution": {
+        "effect": "barreira local e temporária",
+        "user_requirement": "operador treinado, foco ou matriz compatível e fonte finita",
+        "activation": "método registrado, condição explícita e objetivo delimitado",
+        "range": "LOCAL_OU_DE_SUPORTE",
+        "duration": "CURTA_OU_CONDICIONAL",
+        "intensity": "ESCALA_1_10_COM_LIMITE",
+        "cost": "esforço, energia existente e revisão posterior",
+        "preparation": "proporcional à complexidade",
+        "concentration": "necessária quando a prática permanece ativa"
+      },
+      "limitations": {
+        "effort": "cresce com distância, complexidade, permanência e resistência",
+        "environment": "depende de fonte e compatibilidade do ambiente",
+        "interference": "matrizes incompatíveis, excesso de sobreposição ou ausência de dissipador",
+        "failure": "encerramento seguro, perda de efeito ou necessidade de revisão",
+        "absolute_prohibitions": [
+          "não cria energia infinita",
+          "não estabelece viagem temporal",
+          "não estabelece teleporte planetário instantâneo",
+          "não substitui cuidado ou manutenção reais"
+        ]
+      },
+      "interoperability": {
+        "rune_refs": [
+          "RUN-013"
+        ],
+        "technology_refs": [
+          "PROP-HYB-001"
+        ],
+        "status": "CONDICIONAL",
+        "special_rule": "PRÁTICA_LIMITADA_E_REGISTRADA"
+      },
+      "operator_job_ids": [
+        "JOB-MAG-MAGO-001",
+        "JOB-RUN-OPER-001"
+      ],
+      "training_ref": "EDU-MAR-001",
+      "maintenance_or_review_job_ids": [
+        "JOB-RUN-MNT-001",
+        "JOB-RUN-MATRIZ-001"
+      ],
+      "spatial": {
+        "poi_id": "POI-024",
+        "territory_id": "TER-005",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 1,
+        "layer_ids": [
+          "MAR",
+          "MAGIC",
+          "NARRATIVE"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "signature": "geometria de fluxo delimitada, sem efeito ilimitado",
+        "form": "traço, halo, foco ou matriz conforme categoria",
+        "intensity_states": [
+          "latente",
+          "ativa limitada",
+          "dissipando"
+        ],
+        "color_policy": "sem cor fixa quando não houver cânone visual prévio"
+      },
+      "provenance": [
+        {
+          "source": "AUTORIDADE_ETAPA_06",
+          "original_state": "SEM_ENTIDADE_PRÉVIA",
+          "creation_method": "CANON_CREATED_FUNCTIONAL_COMPLEMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-MAG-009"
+    },
+    {
+      "id": "MAG-010",
+      "name": "Selo de Ancoragem",
+      "aliases": [],
+      "category": "CONTENÇÃO",
+      "school_or_tradition": "Tradição de práticas limitadas de Stellar",
+      "origin": "Criação canônica complementar da Etapa 6 sob leis MAG-001",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_CREATED",
+      "execution": {
+        "effect": "estabilização de uma condição registrada",
+        "user_requirement": "operador treinado, foco ou matriz compatível e fonte finita",
+        "activation": "método registrado, condição explícita e objetivo delimitado",
+        "range": "LOCAL_OU_DE_SUPORTE",
+        "duration": "CURTA_OU_CONDICIONAL",
+        "intensity": "ESCALA_1_10_COM_LIMITE",
+        "cost": "esforço, energia existente e revisão posterior",
+        "preparation": "proporcional à complexidade",
+        "concentration": "necessária quando a prática permanece ativa"
+      },
+      "limitations": {
+        "effort": "cresce com distância, complexidade, permanência e resistência",
+        "environment": "depende de fonte e compatibilidade do ambiente",
+        "interference": "matrizes incompatíveis, excesso de sobreposição ou ausência de dissipador",
+        "failure": "encerramento seguro, perda de efeito ou necessidade de revisão",
+        "absolute_prohibitions": [
+          "não cria energia infinita",
+          "não estabelece viagem temporal",
+          "não estabelece teleporte planetário instantâneo",
+          "não substitui cuidado ou manutenção reais"
+        ]
+      },
+      "interoperability": {
+        "rune_refs": [
+          "RUN-001"
+        ],
+        "technology_refs": [
+          "PROP-HYB-001"
+        ],
+        "status": "CONDICIONAL",
+        "special_rule": "PRÁTICA_LIMITADA_E_REGISTRADA"
+      },
+      "operator_job_ids": [
+        "JOB-MAG-MAGO-001",
+        "JOB-RUN-OPER-001"
+      ],
+      "training_ref": "EDU-MAR-001",
+      "maintenance_or_review_job_ids": [
+        "JOB-RUN-MNT-001",
+        "JOB-RUN-MATRIZ-001"
+      ],
+      "spatial": {
+        "poi_id": "POI-024",
+        "territory_id": "TER-005",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 1,
+        "layer_ids": [
+          "MAR",
+          "MAGIC",
+          "NARRATIVE"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "signature": "geometria de fluxo delimitada, sem efeito ilimitado",
+        "form": "traço, halo, foco ou matriz conforme categoria",
+        "intensity_states": [
+          "latente",
+          "ativa limitada",
+          "dissipando"
+        ],
+        "color_policy": "sem cor fixa quando não houver cânone visual prévio"
+      },
+      "provenance": [
+        {
+          "source": "AUTORIDADE_ETAPA_06",
+          "original_state": "SEM_ENTIDADE_PRÉVIA",
+          "creation_method": "CANON_CREATED_FUNCTIONAL_COMPLEMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-MAG-010"
+    },
+    {
+      "id": "MAG-011",
+      "name": "Passo de Encosta",
+      "aliases": [],
+      "category": "MOVIMENTO_ASSISTIDO",
+      "school_or_tradition": "Tradição de práticas limitadas de Stellar",
+      "origin": "Criação canônica complementar da Etapa 6 sob leis MAG-001",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_CREATED",
+      "execution": {
+        "effect": "assistência de deslocamento sem teleporte",
+        "user_requirement": "operador treinado, foco ou matriz compatível e fonte finita",
+        "activation": "método registrado, condição explícita e objetivo delimitado",
+        "range": "LOCAL_OU_DE_SUPORTE",
+        "duration": "CURTA_OU_CONDICIONAL",
+        "intensity": "ESCALA_1_10_COM_LIMITE",
+        "cost": "esforço, energia existente e revisão posterior",
+        "preparation": "proporcional à complexidade",
+        "concentration": "necessária quando a prática permanece ativa"
+      },
+      "limitations": {
+        "effort": "cresce com distância, complexidade, permanência e resistência",
+        "environment": "depende de fonte e compatibilidade do ambiente",
+        "interference": "matrizes incompatíveis, excesso de sobreposição ou ausência de dissipador",
+        "failure": "encerramento seguro, perda de efeito ou necessidade de revisão",
+        "absolute_prohibitions": [
+          "não cria energia infinita",
+          "não estabelece viagem temporal",
+          "não estabelece teleporte planetário instantâneo",
+          "não substitui cuidado ou manutenção reais"
+        ]
+      },
+      "interoperability": {
+        "rune_refs": [
+          "RUN-004"
+        ],
+        "technology_refs": [
+          "PROP-HYB-001"
+        ],
+        "status": "CONDICIONAL",
+        "special_rule": "PRÁTICA_LIMITADA_E_REGISTRADA"
+      },
+      "operator_job_ids": [
+        "JOB-MAG-MAGO-001",
+        "JOB-RUN-OPER-001"
+      ],
+      "training_ref": "EDU-MAR-001",
+      "maintenance_or_review_job_ids": [
+        "JOB-RUN-MNT-001",
+        "JOB-RUN-MATRIZ-001"
+      ],
+      "spatial": {
+        "poi_id": "POI-024",
+        "territory_id": "TER-005",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 1,
+        "layer_ids": [
+          "MAR",
+          "MAGIC",
+          "NARRATIVE"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "signature": "geometria de fluxo delimitada, sem efeito ilimitado",
+        "form": "traço, halo, foco ou matriz conforme categoria",
+        "intensity_states": [
+          "latente",
+          "ativa limitada",
+          "dissipando"
+        ],
+        "color_policy": "sem cor fixa quando não houver cânone visual prévio"
+      },
+      "provenance": [
+        {
+          "source": "AUTORIDADE_ETAPA_06",
+          "original_state": "SEM_ENTIDADE_PRÉVIA",
+          "creation_method": "CANON_CREATED_FUNCTIONAL_COMPLEMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-MAG-011"
+    },
+    {
+      "id": "MAG-012",
+      "name": "Voz de Liga",
+      "aliases": [],
+      "category": "COMUNICAÇÃO",
+      "school_or_tradition": "Tradição de práticas limitadas de Stellar",
+      "origin": "Criação canônica complementar da Etapa 6 sob leis MAG-001",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_CREATED",
+      "execution": {
+        "effect": "sinal curto entre focos registrados",
+        "user_requirement": "operador treinado, foco ou matriz compatível e fonte finita",
+        "activation": "método registrado, condição explícita e objetivo delimitado",
+        "range": "LOCAL_OU_DE_SUPORTE",
+        "duration": "CURTA_OU_CONDICIONAL",
+        "intensity": "ESCALA_1_10_COM_LIMITE",
+        "cost": "esforço, energia existente e revisão posterior",
+        "preparation": "proporcional à complexidade",
+        "concentration": "necessária quando a prática permanece ativa"
+      },
+      "limitations": {
+        "effort": "cresce com distância, complexidade, permanência e resistência",
+        "environment": "depende de fonte e compatibilidade do ambiente",
+        "interference": "matrizes incompatíveis, excesso de sobreposição ou ausência de dissipador",
+        "failure": "encerramento seguro, perda de efeito ou necessidade de revisão",
+        "absolute_prohibitions": [
+          "não cria energia infinita",
+          "não estabelece viagem temporal",
+          "não estabelece teleporte planetário instantâneo",
+          "não substitui cuidado ou manutenção reais"
+        ]
+      },
+      "interoperability": {
+        "rune_refs": [
+          "RUN-013"
+        ],
+        "technology_refs": [
+          "PROP-HYB-001"
+        ],
+        "status": "CONDICIONAL",
+        "special_rule": "PRÁTICA_LIMITADA_E_REGISTRADA"
+      },
+      "operator_job_ids": [
+        "JOB-MAG-MAGO-001",
+        "JOB-RUN-OPER-001"
+      ],
+      "training_ref": "EDU-MAR-001",
+      "maintenance_or_review_job_ids": [
+        "JOB-RUN-MNT-001",
+        "JOB-RUN-MATRIZ-001"
+      ],
+      "spatial": {
+        "poi_id": "POI-024",
+        "territory_id": "TER-005",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 1,
+        "layer_ids": [
+          "MAR",
+          "MAGIC",
+          "NARRATIVE"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "signature": "geometria de fluxo delimitada, sem efeito ilimitado",
+        "form": "traço, halo, foco ou matriz conforme categoria",
+        "intensity_states": [
+          "latente",
+          "ativa limitada",
+          "dissipando"
+        ],
+        "color_policy": "sem cor fixa quando não houver cânone visual prévio"
+      },
+      "provenance": [
+        {
+          "source": "AUTORIDADE_ETAPA_06",
+          "original_state": "SEM_ENTIDADE_PRÉVIA",
+          "creation_method": "CANON_CREATED_FUNCTIONAL_COMPLEMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-MAG-012"
+    },
+    {
+      "id": "MAG-013",
+      "name": "Olho de Fluxo",
+      "aliases": [],
+      "category": "PERCEPÇÃO",
+      "school_or_tradition": "Tradição de práticas limitadas de Stellar",
+      "origin": "Criação canônica complementar da Etapa 6 sob leis MAG-001",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_CREATED",
+      "execution": {
+        "effect": "leitura limitada de variação energética",
+        "user_requirement": "operador treinado, foco ou matriz compatível e fonte finita",
+        "activation": "método registrado, condição explícita e objetivo delimitado",
+        "range": "LOCAL_OU_DE_SUPORTE",
+        "duration": "CURTA_OU_CONDICIONAL",
+        "intensity": "ESCALA_1_10_COM_LIMITE",
+        "cost": "esforço, energia existente e revisão posterior",
+        "preparation": "proporcional à complexidade",
+        "concentration": "necessária quando a prática permanece ativa"
+      },
+      "limitations": {
+        "effort": "cresce com distância, complexidade, permanência e resistência",
+        "environment": "depende de fonte e compatibilidade do ambiente",
+        "interference": "matrizes incompatíveis, excesso de sobreposição ou ausência de dissipador",
+        "failure": "encerramento seguro, perda de efeito ou necessidade de revisão",
+        "absolute_prohibitions": [
+          "não cria energia infinita",
+          "não estabelece viagem temporal",
+          "não estabelece teleporte planetário instantâneo",
+          "não substitui cuidado ou manutenção reais"
+        ]
+      },
+      "interoperability": {
+        "rune_refs": [
+          "RUN-001"
+        ],
+        "technology_refs": [
+          "PROP-HYB-001"
+        ],
+        "status": "CONDICIONAL",
+        "special_rule": "PRÁTICA_LIMITADA_E_REGISTRADA"
+      },
+      "operator_job_ids": [
+        "JOB-MAG-MAGO-001",
+        "JOB-RUN-OPER-001"
+      ],
+      "training_ref": "EDU-MAR-001",
+      "maintenance_or_review_job_ids": [
+        "JOB-RUN-MNT-001",
+        "JOB-RUN-MATRIZ-001"
+      ],
+      "spatial": {
+        "poi_id": "POI-024",
+        "territory_id": "TER-005",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 1,
+        "layer_ids": [
+          "MAR",
+          "MAGIC",
+          "NARRATIVE"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "signature": "geometria de fluxo delimitada, sem efeito ilimitado",
+        "form": "traço, halo, foco ou matriz conforme categoria",
+        "intensity_states": [
+          "latente",
+          "ativa limitada",
+          "dissipando"
+        ],
+        "color_policy": "sem cor fixa quando não houver cânone visual prévio"
+      },
+      "provenance": [
+        {
+          "source": "AUTORIDADE_ETAPA_06",
+          "original_state": "SEM_ENTIDADE_PRÉVIA",
+          "creation_method": "CANON_CREATED_FUNCTIONAL_COMPLEMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-MAG-013"
+    },
+    {
+      "id": "MAG-014",
+      "name": "Limiar de Calor",
+      "aliases": [],
+      "category": "TRANSFORMAÇÃO_LIMITADA",
+      "school_or_tradition": "Tradição de práticas limitadas de Stellar",
+      "origin": "Criação canônica complementar da Etapa 6 sob leis MAG-001",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_CREATED",
+      "execution": {
+        "effect": "ajuste térmico controlado",
+        "user_requirement": "operador treinado, foco ou matriz compatível e fonte finita",
+        "activation": "método registrado, condição explícita e objetivo delimitado",
+        "range": "LOCAL_OU_DE_SUPORTE",
+        "duration": "CURTA_OU_CONDICIONAL",
+        "intensity": "ESCALA_1_10_COM_LIMITE",
+        "cost": "esforço, energia existente e revisão posterior",
+        "preparation": "proporcional à complexidade",
+        "concentration": "necessária quando a prática permanece ativa"
+      },
+      "limitations": {
+        "effort": "cresce com distância, complexidade, permanência e resistência",
+        "environment": "depende de fonte e compatibilidade do ambiente",
+        "interference": "matrizes incompatíveis, excesso de sobreposição ou ausência de dissipador",
+        "failure": "encerramento seguro, perda de efeito ou necessidade de revisão",
+        "absolute_prohibitions": [
+          "não cria energia infinita",
+          "não estabelece viagem temporal",
+          "não estabelece teleporte planetário instantâneo",
+          "não substitui cuidado ou manutenção reais"
+        ]
+      },
+      "interoperability": {
+        "rune_refs": [
+          "RUN-004"
+        ],
+        "technology_refs": [
+          "PROP-HYB-001"
+        ],
+        "status": "CONDICIONAL",
+        "special_rule": "PRÁTICA_LIMITADA_E_REGISTRADA"
+      },
+      "operator_job_ids": [
+        "JOB-MAG-MAGO-001",
+        "JOB-RUN-OPER-001"
+      ],
+      "training_ref": "EDU-MAR-001",
+      "maintenance_or_review_job_ids": [
+        "JOB-RUN-MNT-001",
+        "JOB-RUN-MATRIZ-001"
+      ],
+      "spatial": {
+        "poi_id": "POI-024",
+        "territory_id": "TER-005",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 1,
+        "layer_ids": [
+          "MAR",
+          "MAGIC",
+          "NARRATIVE"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "signature": "geometria de fluxo delimitada, sem efeito ilimitado",
+        "form": "traço, halo, foco ou matriz conforme categoria",
+        "intensity_states": [
+          "latente",
+          "ativa limitada",
+          "dissipando"
+        ],
+        "color_policy": "sem cor fixa quando não houver cânone visual prévio"
+      },
+      "provenance": [
+        {
+          "source": "AUTORIDADE_ETAPA_06",
+          "original_state": "SEM_ENTIDADE_PRÉVIA",
+          "creation_method": "CANON_CREATED_FUNCTIONAL_COMPLEMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-MAG-014"
+    },
+    {
+      "id": "MAG-015",
+      "name": "Pulso de Resfriamento",
+      "aliases": [],
+      "category": "TRANSFORMAÇÃO_LIMITADA",
+      "school_or_tradition": "Tradição de práticas limitadas de Stellar",
+      "origin": "Criação canônica complementar da Etapa 6 sob leis MAG-001",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_CREATED",
+      "execution": {
+        "effect": "redução local de sobrecarga térmica",
+        "user_requirement": "operador treinado, foco ou matriz compatível e fonte finita",
+        "activation": "método registrado, condição explícita e objetivo delimitado",
+        "range": "LOCAL_OU_DE_SUPORTE",
+        "duration": "CURTA_OU_CONDICIONAL",
+        "intensity": "ESCALA_1_10_COM_LIMITE",
+        "cost": "esforço, energia existente e revisão posterior",
+        "preparation": "proporcional à complexidade",
+        "concentration": "necessária quando a prática permanece ativa"
+      },
+      "limitations": {
+        "effort": "cresce com distância, complexidade, permanência e resistência",
+        "environment": "depende de fonte e compatibilidade do ambiente",
+        "interference": "matrizes incompatíveis, excesso de sobreposição ou ausência de dissipador",
+        "failure": "encerramento seguro, perda de efeito ou necessidade de revisão",
+        "absolute_prohibitions": [
+          "não cria energia infinita",
+          "não estabelece viagem temporal",
+          "não estabelece teleporte planetário instantâneo",
+          "não substitui cuidado ou manutenção reais"
+        ]
+      },
+      "interoperability": {
+        "rune_refs": [
+          "RUN-013"
+        ],
+        "technology_refs": [
+          "PROP-HYB-001"
+        ],
+        "status": "CONDICIONAL",
+        "special_rule": "PRÁTICA_LIMITADA_E_REGISTRADA"
+      },
+      "operator_job_ids": [
+        "JOB-MAG-MAGO-001",
+        "JOB-RUN-OPER-001"
+      ],
+      "training_ref": "EDU-MAR-001",
+      "maintenance_or_review_job_ids": [
+        "JOB-RUN-MNT-001",
+        "JOB-RUN-MATRIZ-001"
+      ],
+      "spatial": {
+        "poi_id": "POI-024",
+        "territory_id": "TER-005",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 1,
+        "layer_ids": [
+          "MAR",
+          "MAGIC",
+          "NARRATIVE"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "signature": "geometria de fluxo delimitada, sem efeito ilimitado",
+        "form": "traço, halo, foco ou matriz conforme categoria",
+        "intensity_states": [
+          "latente",
+          "ativa limitada",
+          "dissipando"
+        ],
+        "color_policy": "sem cor fixa quando não houver cânone visual prévio"
+      },
+      "provenance": [
+        {
+          "source": "AUTORIDADE_ETAPA_06",
+          "original_state": "SEM_ENTIDADE_PRÉVIA",
+          "creation_method": "CANON_CREATED_FUNCTIONAL_COMPLEMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-MAG-015"
+    },
+    {
+      "id": "MAG-016",
+      "name": "Trama de Reparo",
+      "aliases": [],
+      "category": "RESTAURAÇÃO_LIMITADA",
+      "school_or_tradition": "Tradição de práticas limitadas de Stellar",
+      "origin": "Criação canônica complementar da Etapa 6 sob leis MAG-001",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_CREATED",
+      "execution": {
+        "effect": "recomposição apenas de integridade não vital",
+        "user_requirement": "operador treinado, foco ou matriz compatível e fonte finita",
+        "activation": "método registrado, condição explícita e objetivo delimitado",
+        "range": "LOCAL_OU_DE_SUPORTE",
+        "duration": "CURTA_OU_CONDICIONAL",
+        "intensity": "ESCALA_1_10_COM_LIMITE",
+        "cost": "esforço, energia existente e revisão posterior",
+        "preparation": "proporcional à complexidade",
+        "concentration": "necessária quando a prática permanece ativa"
+      },
+      "limitations": {
+        "effort": "cresce com distância, complexidade, permanência e resistência",
+        "environment": "depende de fonte e compatibilidade do ambiente",
+        "interference": "matrizes incompatíveis, excesso de sobreposição ou ausência de dissipador",
+        "failure": "encerramento seguro, perda de efeito ou necessidade de revisão",
+        "absolute_prohibitions": [
+          "não cria energia infinita",
+          "não estabelece viagem temporal",
+          "não estabelece teleporte planetário instantâneo",
+          "não substitui cuidado ou manutenção reais"
+        ]
+      },
+      "interoperability": {
+        "rune_refs": [
+          "RUN-001"
+        ],
+        "technology_refs": [
+          "PROP-HYB-001"
+        ],
+        "status": "CONDICIONAL",
+        "special_rule": "PRÁTICA_LIMITADA_E_REGISTRADA"
+      },
+      "operator_job_ids": [
+        "JOB-MAG-MAGO-001",
+        "JOB-RUN-OPER-001"
+      ],
+      "training_ref": "EDU-MAR-001",
+      "maintenance_or_review_job_ids": [
+        "JOB-RUN-MNT-001",
+        "JOB-RUN-MATRIZ-001"
+      ],
+      "spatial": {
+        "poi_id": "POI-024",
+        "territory_id": "TER-005",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 1,
+        "layer_ids": [
+          "MAR",
+          "MAGIC",
+          "NARRATIVE"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "signature": "geometria de fluxo delimitada, sem efeito ilimitado",
+        "form": "traço, halo, foco ou matriz conforme categoria",
+        "intensity_states": [
+          "latente",
+          "ativa limitada",
+          "dissipando"
+        ],
+        "color_policy": "sem cor fixa quando não houver cânone visual prévio"
+      },
+      "provenance": [
+        {
+          "source": "AUTORIDADE_ETAPA_06",
+          "original_state": "SEM_ENTIDADE_PRÉVIA",
+          "creation_method": "CANON_CREATED_FUNCTIONAL_COMPLEMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-MAG-016"
+    },
+    {
+      "id": "MAG-017",
+      "name": "Marca de Rastro",
+      "aliases": [],
+      "category": "VÍNCULO",
+      "school_or_tradition": "Tradição de práticas limitadas de Stellar",
+      "origin": "Criação canônica complementar da Etapa 6 sob leis MAG-001",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_CREATED",
+      "execution": {
+        "effect": "rastreabilidade de componente registrado",
+        "user_requirement": "operador treinado, foco ou matriz compatível e fonte finita",
+        "activation": "método registrado, condição explícita e objetivo delimitado",
+        "range": "LOCAL_OU_DE_SUPORTE",
+        "duration": "CURTA_OU_CONDICIONAL",
+        "intensity": "ESCALA_1_10_COM_LIMITE",
+        "cost": "esforço, energia existente e revisão posterior",
+        "preparation": "proporcional à complexidade",
+        "concentration": "necessária quando a prática permanece ativa"
+      },
+      "limitations": {
+        "effort": "cresce com distância, complexidade, permanência e resistência",
+        "environment": "depende de fonte e compatibilidade do ambiente",
+        "interference": "matrizes incompatíveis, excesso de sobreposição ou ausência de dissipador",
+        "failure": "encerramento seguro, perda de efeito ou necessidade de revisão",
+        "absolute_prohibitions": [
+          "não cria energia infinita",
+          "não estabelece viagem temporal",
+          "não estabelece teleporte planetário instantâneo",
+          "não substitui cuidado ou manutenção reais"
+        ]
+      },
+      "interoperability": {
+        "rune_refs": [
+          "RUN-004"
+        ],
+        "technology_refs": [
+          "PROP-HYB-001"
+        ],
+        "status": "CONDICIONAL",
+        "special_rule": "PRÁTICA_LIMITADA_E_REGISTRADA"
+      },
+      "operator_job_ids": [
+        "JOB-MAG-MAGO-001",
+        "JOB-RUN-OPER-001"
+      ],
+      "training_ref": "EDU-MAR-001",
+      "maintenance_or_review_job_ids": [
+        "JOB-RUN-MNT-001",
+        "JOB-RUN-MATRIZ-001"
+      ],
+      "spatial": {
+        "poi_id": "POI-024",
+        "territory_id": "TER-005",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 1,
+        "layer_ids": [
+          "MAR",
+          "MAGIC",
+          "NARRATIVE"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "signature": "geometria de fluxo delimitada, sem efeito ilimitado",
+        "form": "traço, halo, foco ou matriz conforme categoria",
+        "intensity_states": [
+          "latente",
+          "ativa limitada",
+          "dissipando"
+        ],
+        "color_policy": "sem cor fixa quando não houver cânone visual prévio"
+      },
+      "provenance": [
+        {
+          "source": "AUTORIDADE_ETAPA_06",
+          "original_state": "SEM_ENTIDADE_PRÉVIA",
+          "creation_method": "CANON_CREATED_FUNCTIONAL_COMPLEMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-MAG-017"
+    },
+    {
+      "id": "MAG-018",
+      "name": "Círculo de Proteção",
+      "aliases": [],
+      "category": "PROTEÇÃO",
+      "school_or_tradition": "Tradição de práticas limitadas de Stellar",
+      "origin": "Criação canônica complementar da Etapa 6 sob leis MAG-001",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_CREATED",
+      "execution": {
+        "effect": "limite de área reduzida e temporária",
+        "user_requirement": "operador treinado, foco ou matriz compatível e fonte finita",
+        "activation": "método registrado, condição explícita e objetivo delimitado",
+        "range": "LOCAL_OU_DE_SUPORTE",
+        "duration": "CURTA_OU_CONDICIONAL",
+        "intensity": "ESCALA_1_10_COM_LIMITE",
+        "cost": "esforço, energia existente e revisão posterior",
+        "preparation": "proporcional à complexidade",
+        "concentration": "necessária quando a prática permanece ativa"
+      },
+      "limitations": {
+        "effort": "cresce com distância, complexidade, permanência e resistência",
+        "environment": "depende de fonte e compatibilidade do ambiente",
+        "interference": "matrizes incompatíveis, excesso de sobreposição ou ausência de dissipador",
+        "failure": "encerramento seguro, perda de efeito ou necessidade de revisão",
+        "absolute_prohibitions": [
+          "não cria energia infinita",
+          "não estabelece viagem temporal",
+          "não estabelece teleporte planetário instantâneo",
+          "não substitui cuidado ou manutenção reais"
+        ]
+      },
+      "interoperability": {
+        "rune_refs": [
+          "RUN-013"
+        ],
+        "technology_refs": [
+          "PROP-HYB-001"
+        ],
+        "status": "CONDICIONAL",
+        "special_rule": "PRÁTICA_LIMITADA_E_REGISTRADA"
+      },
+      "operator_job_ids": [
+        "JOB-MAG-MAGO-001",
+        "JOB-RUN-OPER-001"
+      ],
+      "training_ref": "EDU-MAR-001",
+      "maintenance_or_review_job_ids": [
+        "JOB-RUN-MNT-001",
+        "JOB-RUN-MATRIZ-001"
+      ],
+      "spatial": {
+        "poi_id": "POI-024",
+        "territory_id": "TER-005",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 1,
+        "layer_ids": [
+          "MAR",
+          "MAGIC",
+          "NARRATIVE"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "signature": "geometria de fluxo delimitada, sem efeito ilimitado",
+        "form": "traço, halo, foco ou matriz conforme categoria",
+        "intensity_states": [
+          "latente",
+          "ativa limitada",
+          "dissipando"
+        ],
+        "color_policy": "sem cor fixa quando não houver cânone visual prévio"
+      },
+      "provenance": [
+        {
+          "source": "AUTORIDADE_ETAPA_06",
+          "original_state": "SEM_ENTIDADE_PRÉVIA",
+          "creation_method": "CANON_CREATED_FUNCTIONAL_COMPLEMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-MAG-018"
+    },
+    {
+      "id": "MAG-019",
+      "name": "Giro de Carga",
+      "aliases": [],
+      "category": "CONDUÇÃO_LIMITADA",
+      "school_or_tradition": "Tradição de práticas limitadas de Stellar",
+      "origin": "Criação canônica complementar da Etapa 6 sob leis MAG-001",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_CREATED",
+      "execution": {
+        "effect": "redistribuição curta de carga autorizada",
+        "user_requirement": "operador treinado, foco ou matriz compatível e fonte finita",
+        "activation": "método registrado, condição explícita e objetivo delimitado",
+        "range": "LOCAL_OU_DE_SUPORTE",
+        "duration": "CURTA_OU_CONDICIONAL",
+        "intensity": "ESCALA_1_10_COM_LIMITE",
+        "cost": "esforço, energia existente e revisão posterior",
+        "preparation": "proporcional à complexidade",
+        "concentration": "necessária quando a prática permanece ativa"
+      },
+      "limitations": {
+        "effort": "cresce com distância, complexidade, permanência e resistência",
+        "environment": "depende de fonte e compatibilidade do ambiente",
+        "interference": "matrizes incompatíveis, excesso de sobreposição ou ausência de dissipador",
+        "failure": "encerramento seguro, perda de efeito ou necessidade de revisão",
+        "absolute_prohibitions": [
+          "não cria energia infinita",
+          "não estabelece viagem temporal",
+          "não estabelece teleporte planetário instantâneo",
+          "não substitui cuidado ou manutenção reais"
+        ]
+      },
+      "interoperability": {
+        "rune_refs": [
+          "RUN-001"
+        ],
+        "technology_refs": [
+          "PROP-HYB-001"
+        ],
+        "status": "CONDICIONAL",
+        "special_rule": "PRÁTICA_LIMITADA_E_REGISTRADA"
+      },
+      "operator_job_ids": [
+        "JOB-MAG-MAGO-001",
+        "JOB-RUN-OPER-001"
+      ],
+      "training_ref": "EDU-MAR-001",
+      "maintenance_or_review_job_ids": [
+        "JOB-RUN-MNT-001",
+        "JOB-RUN-MATRIZ-001"
+      ],
+      "spatial": {
+        "poi_id": "POI-024",
+        "territory_id": "TER-005",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 1,
+        "layer_ids": [
+          "MAR",
+          "MAGIC",
+          "NARRATIVE"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "signature": "geometria de fluxo delimitada, sem efeito ilimitado",
+        "form": "traço, halo, foco ou matriz conforme categoria",
+        "intensity_states": [
+          "latente",
+          "ativa limitada",
+          "dissipando"
+        ],
+        "color_policy": "sem cor fixa quando não houver cânone visual prévio"
+      },
+      "provenance": [
+        {
+          "source": "AUTORIDADE_ETAPA_06",
+          "original_state": "SEM_ENTIDADE_PRÉVIA",
+          "creation_method": "CANON_CREATED_FUNCTIONAL_COMPLEMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-MAG-019"
+    },
+    {
+      "id": "MAG-020",
+      "name": "Eco de Solo",
+      "aliases": [],
+      "category": "PERCEPÇÃO",
+      "school_or_tradition": "Tradição de práticas limitadas de Stellar",
+      "origin": "Criação canônica complementar da Etapa 6 sob leis MAG-001",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_CREATED",
+      "execution": {
+        "effect": "leitura de condição do terreno próximo",
+        "user_requirement": "operador treinado, foco ou matriz compatível e fonte finita",
+        "activation": "método registrado, condição explícita e objetivo delimitado",
+        "range": "LOCAL_OU_DE_SUPORTE",
+        "duration": "CURTA_OU_CONDICIONAL",
+        "intensity": "ESCALA_1_10_COM_LIMITE",
+        "cost": "esforço, energia existente e revisão posterior",
+        "preparation": "proporcional à complexidade",
+        "concentration": "necessária quando a prática permanece ativa"
+      },
+      "limitations": {
+        "effort": "cresce com distância, complexidade, permanência e resistência",
+        "environment": "depende de fonte e compatibilidade do ambiente",
+        "interference": "matrizes incompatíveis, excesso de sobreposição ou ausência de dissipador",
+        "failure": "encerramento seguro, perda de efeito ou necessidade de revisão",
+        "absolute_prohibitions": [
+          "não cria energia infinita",
+          "não estabelece viagem temporal",
+          "não estabelece teleporte planetário instantâneo",
+          "não substitui cuidado ou manutenção reais"
+        ]
+      },
+      "interoperability": {
+        "rune_refs": [
+          "RUN-004"
+        ],
+        "technology_refs": [
+          "PROP-HYB-001"
+        ],
+        "status": "CONDICIONAL",
+        "special_rule": "PRÁTICA_LIMITADA_E_REGISTRADA"
+      },
+      "operator_job_ids": [
+        "JOB-MAG-MAGO-001",
+        "JOB-RUN-OPER-001"
+      ],
+      "training_ref": "EDU-MAR-001",
+      "maintenance_or_review_job_ids": [
+        "JOB-RUN-MNT-001",
+        "JOB-RUN-MATRIZ-001"
+      ],
+      "spatial": {
+        "poi_id": "POI-024",
+        "territory_id": "TER-005",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 1,
+        "layer_ids": [
+          "MAR",
+          "MAGIC",
+          "NARRATIVE"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "signature": "geometria de fluxo delimitada, sem efeito ilimitado",
+        "form": "traço, halo, foco ou matriz conforme categoria",
+        "intensity_states": [
+          "latente",
+          "ativa limitada",
+          "dissipando"
+        ],
+        "color_policy": "sem cor fixa quando não houver cânone visual prévio"
+      },
+      "provenance": [
+        {
+          "source": "AUTORIDADE_ETAPA_06",
+          "original_state": "SEM_ENTIDADE_PRÉVIA",
+          "creation_method": "CANON_CREATED_FUNCTIONAL_COMPLEMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-MAG-020"
+    },
+    {
+      "id": "MAG-021",
+      "name": "Campo de Silêncio",
+      "aliases": [],
+      "category": "INTERFERÊNCIA_CONTROLADA",
+      "school_or_tradition": "Tradição de práticas limitadas de Stellar",
+      "origin": "Criação canônica complementar da Etapa 6 sob leis MAG-001",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_CREATED",
+      "execution": {
+        "effect": "redução temporária de ruído de sinal",
+        "user_requirement": "operador treinado, foco ou matriz compatível e fonte finita",
+        "activation": "método registrado, condição explícita e objetivo delimitado",
+        "range": "LOCAL_OU_DE_SUPORTE",
+        "duration": "CURTA_OU_CONDICIONAL",
+        "intensity": "ESCALA_1_10_COM_LIMITE",
+        "cost": "esforço, energia existente e revisão posterior",
+        "preparation": "proporcional à complexidade",
+        "concentration": "necessária quando a prática permanece ativa"
+      },
+      "limitations": {
+        "effort": "cresce com distância, complexidade, permanência e resistência",
+        "environment": "depende de fonte e compatibilidade do ambiente",
+        "interference": "matrizes incompatíveis, excesso de sobreposição ou ausência de dissipador",
+        "failure": "encerramento seguro, perda de efeito ou necessidade de revisão",
+        "absolute_prohibitions": [
+          "não cria energia infinita",
+          "não estabelece viagem temporal",
+          "não estabelece teleporte planetário instantâneo",
+          "não substitui cuidado ou manutenção reais"
+        ]
+      },
+      "interoperability": {
+        "rune_refs": [
+          "RUN-013"
+        ],
+        "technology_refs": [
+          "PROP-HYB-001"
+        ],
+        "status": "CONDICIONAL",
+        "special_rule": "PRÁTICA_LIMITADA_E_REGISTRADA"
+      },
+      "operator_job_ids": [
+        "JOB-MAG-MAGO-001",
+        "JOB-RUN-OPER-001"
+      ],
+      "training_ref": "EDU-MAR-001",
+      "maintenance_or_review_job_ids": [
+        "JOB-RUN-MNT-001",
+        "JOB-RUN-MATRIZ-001"
+      ],
+      "spatial": {
+        "poi_id": "POI-024",
+        "territory_id": "TER-005",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 1,
+        "layer_ids": [
+          "MAR",
+          "MAGIC",
+          "NARRATIVE"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "signature": "geometria de fluxo delimitada, sem efeito ilimitado",
+        "form": "traço, halo, foco ou matriz conforme categoria",
+        "intensity_states": [
+          "latente",
+          "ativa limitada",
+          "dissipando"
+        ],
+        "color_policy": "sem cor fixa quando não houver cânone visual prévio"
+      },
+      "provenance": [
+        {
+          "source": "AUTORIDADE_ETAPA_06",
+          "original_state": "SEM_ENTIDADE_PRÉVIA",
+          "creation_method": "CANON_CREATED_FUNCTIONAL_COMPLEMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-MAG-021"
+    },
+    {
+      "id": "MAG-022",
+      "name": "Fio de Contenção",
+      "aliases": [],
+      "category": "CONTENÇÃO",
+      "school_or_tradition": "Tradição de práticas limitadas de Stellar",
+      "origin": "Criação canônica complementar da Etapa 6 sob leis MAG-001",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_CREATED",
+      "execution": {
+        "effect": "limite de percurso de objeto registrado",
+        "user_requirement": "operador treinado, foco ou matriz compatível e fonte finita",
+        "activation": "método registrado, condição explícita e objetivo delimitado",
+        "range": "LOCAL_OU_DE_SUPORTE",
+        "duration": "CURTA_OU_CONDICIONAL",
+        "intensity": "ESCALA_1_10_COM_LIMITE",
+        "cost": "esforço, energia existente e revisão posterior",
+        "preparation": "proporcional à complexidade",
+        "concentration": "necessária quando a prática permanece ativa"
+      },
+      "limitations": {
+        "effort": "cresce com distância, complexidade, permanência e resistência",
+        "environment": "depende de fonte e compatibilidade do ambiente",
+        "interference": "matrizes incompatíveis, excesso de sobreposição ou ausência de dissipador",
+        "failure": "encerramento seguro, perda de efeito ou necessidade de revisão",
+        "absolute_prohibitions": [
+          "não cria energia infinita",
+          "não estabelece viagem temporal",
+          "não estabelece teleporte planetário instantâneo",
+          "não substitui cuidado ou manutenção reais"
+        ]
+      },
+      "interoperability": {
+        "rune_refs": [
+          "RUN-001"
+        ],
+        "technology_refs": [
+          "PROP-HYB-001"
+        ],
+        "status": "CONDICIONAL",
+        "special_rule": "PRÁTICA_LIMITADA_E_REGISTRADA"
+      },
+      "operator_job_ids": [
+        "JOB-MAG-MAGO-001",
+        "JOB-RUN-OPER-001"
+      ],
+      "training_ref": "EDU-MAR-001",
+      "maintenance_or_review_job_ids": [
+        "JOB-RUN-MNT-001",
+        "JOB-RUN-MATRIZ-001"
+      ],
+      "spatial": {
+        "poi_id": "POI-024",
+        "territory_id": "TER-005",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 1,
+        "layer_ids": [
+          "MAR",
+          "MAGIC",
+          "NARRATIVE"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "signature": "geometria de fluxo delimitada, sem efeito ilimitado",
+        "form": "traço, halo, foco ou matriz conforme categoria",
+        "intensity_states": [
+          "latente",
+          "ativa limitada",
+          "dissipando"
+        ],
+        "color_policy": "sem cor fixa quando não houver cânone visual prévio"
+      },
+      "provenance": [
+        {
+          "source": "AUTORIDADE_ETAPA_06",
+          "original_state": "SEM_ENTIDADE_PRÉVIA",
+          "creation_method": "CANON_CREATED_FUNCTIONAL_COMPLEMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-MAG-022"
+    },
+    {
+      "id": "MAG-023",
+      "name": "Vela de Navegação",
+      "aliases": [],
+      "category": "ORIENTAÇÃO",
+      "school_or_tradition": "Tradição de práticas limitadas de Stellar",
+      "origin": "Criação canônica complementar da Etapa 6 sob leis MAG-001",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_CREATED",
+      "execution": {
+        "effect": "referência de rota com fonte finita",
+        "user_requirement": "operador treinado, foco ou matriz compatível e fonte finita",
+        "activation": "método registrado, condição explícita e objetivo delimitado",
+        "range": "LOCAL_OU_DE_SUPORTE",
+        "duration": "CURTA_OU_CONDICIONAL",
+        "intensity": "ESCALA_1_10_COM_LIMITE",
+        "cost": "esforço, energia existente e revisão posterior",
+        "preparation": "proporcional à complexidade",
+        "concentration": "necessária quando a prática permanece ativa"
+      },
+      "limitations": {
+        "effort": "cresce com distância, complexidade, permanência e resistência",
+        "environment": "depende de fonte e compatibilidade do ambiente",
+        "interference": "matrizes incompatíveis, excesso de sobreposição ou ausência de dissipador",
+        "failure": "encerramento seguro, perda de efeito ou necessidade de revisão",
+        "absolute_prohibitions": [
+          "não cria energia infinita",
+          "não estabelece viagem temporal",
+          "não estabelece teleporte planetário instantâneo",
+          "não substitui cuidado ou manutenção reais"
+        ]
+      },
+      "interoperability": {
+        "rune_refs": [
+          "RUN-004"
+        ],
+        "technology_refs": [
+          "PROP-HYB-001"
+        ],
+        "status": "CONDICIONAL",
+        "special_rule": "PRÁTICA_LIMITADA_E_REGISTRADA"
+      },
+      "operator_job_ids": [
+        "JOB-MAG-MAGO-001",
+        "JOB-RUN-OPER-001"
+      ],
+      "training_ref": "EDU-MAR-001",
+      "maintenance_or_review_job_ids": [
+        "JOB-RUN-MNT-001",
+        "JOB-RUN-MATRIZ-001"
+      ],
+      "spatial": {
+        "poi_id": "POI-024",
+        "territory_id": "TER-005",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 1,
+        "layer_ids": [
+          "MAR",
+          "MAGIC",
+          "NARRATIVE"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "signature": "geometria de fluxo delimitada, sem efeito ilimitado",
+        "form": "traço, halo, foco ou matriz conforme categoria",
+        "intensity_states": [
+          "latente",
+          "ativa limitada",
+          "dissipando"
+        ],
+        "color_policy": "sem cor fixa quando não houver cânone visual prévio"
+      },
+      "provenance": [
+        {
+          "source": "AUTORIDADE_ETAPA_06",
+          "original_state": "SEM_ENTIDADE_PRÉVIA",
+          "creation_method": "CANON_CREATED_FUNCTIONAL_COMPLEMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-MAG-023"
+    },
+    {
+      "id": "MAG-024",
+      "name": "Chama de Vigília",
+      "aliases": [],
+      "category": "SINALIZAÇÃO",
+      "school_or_tradition": "Tradição de práticas limitadas de Stellar",
+      "origin": "Criação canônica complementar da Etapa 6 sob leis MAG-001",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_CREATED",
+      "execution": {
+        "effect": "alerta luminoso não ofensivo",
+        "user_requirement": "operador treinado, foco ou matriz compatível e fonte finita",
+        "activation": "método registrado, condição explícita e objetivo delimitado",
+        "range": "LOCAL_OU_DE_SUPORTE",
+        "duration": "CURTA_OU_CONDICIONAL",
+        "intensity": "ESCALA_1_10_COM_LIMITE",
+        "cost": "esforço, energia existente e revisão posterior",
+        "preparation": "proporcional à complexidade",
+        "concentration": "necessária quando a prática permanece ativa"
+      },
+      "limitations": {
+        "effort": "cresce com distância, complexidade, permanência e resistência",
+        "environment": "depende de fonte e compatibilidade do ambiente",
+        "interference": "matrizes incompatíveis, excesso de sobreposição ou ausência de dissipador",
+        "failure": "encerramento seguro, perda de efeito ou necessidade de revisão",
+        "absolute_prohibitions": [
+          "não cria energia infinita",
+          "não estabelece viagem temporal",
+          "não estabelece teleporte planetário instantâneo",
+          "não substitui cuidado ou manutenção reais"
+        ]
+      },
+      "interoperability": {
+        "rune_refs": [
+          "RUN-013"
+        ],
+        "technology_refs": [
+          "PROP-HYB-001"
+        ],
+        "status": "CONDICIONAL",
+        "special_rule": "PRÁTICA_LIMITADA_E_REGISTRADA"
+      },
+      "operator_job_ids": [
+        "JOB-MAG-MAGO-001",
+        "JOB-RUN-OPER-001"
+      ],
+      "training_ref": "EDU-MAR-001",
+      "maintenance_or_review_job_ids": [
+        "JOB-RUN-MNT-001",
+        "JOB-RUN-MATRIZ-001"
+      ],
+      "spatial": {
+        "poi_id": "POI-024",
+        "territory_id": "TER-005",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 1,
+        "layer_ids": [
+          "MAR",
+          "MAGIC",
+          "NARRATIVE"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "signature": "geometria de fluxo delimitada, sem efeito ilimitado",
+        "form": "traço, halo, foco ou matriz conforme categoria",
+        "intensity_states": [
+          "latente",
+          "ativa limitada",
+          "dissipando"
+        ],
+        "color_policy": "sem cor fixa quando não houver cânone visual prévio"
+      },
+      "provenance": [
+        {
+          "source": "AUTORIDADE_ETAPA_06",
+          "original_state": "SEM_ENTIDADE_PRÉVIA",
+          "creation_method": "CANON_CREATED_FUNCTIONAL_COMPLEMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-MAG-024"
+    },
+    {
+      "id": "MAG-025",
+      "name": "Nó de Água",
+      "aliases": [],
+      "category": "SUPORTE_AMBIENTAL",
+      "school_or_tradition": "Tradição de práticas limitadas de Stellar",
+      "origin": "Criação canônica complementar da Etapa 6 sob leis MAG-001",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_CREATED",
+      "execution": {
+        "effect": "orientação de fluxo já disponível",
+        "user_requirement": "operador treinado, foco ou matriz compatível e fonte finita",
+        "activation": "método registrado, condição explícita e objetivo delimitado",
+        "range": "LOCAL_OU_DE_SUPORTE",
+        "duration": "CURTA_OU_CONDICIONAL",
+        "intensity": "ESCALA_1_10_COM_LIMITE",
+        "cost": "esforço, energia existente e revisão posterior",
+        "preparation": "proporcional à complexidade",
+        "concentration": "necessária quando a prática permanece ativa"
+      },
+      "limitations": {
+        "effort": "cresce com distância, complexidade, permanência e resistência",
+        "environment": "depende de fonte e compatibilidade do ambiente",
+        "interference": "matrizes incompatíveis, excesso de sobreposição ou ausência de dissipador",
+        "failure": "encerramento seguro, perda de efeito ou necessidade de revisão",
+        "absolute_prohibitions": [
+          "não cria energia infinita",
+          "não estabelece viagem temporal",
+          "não estabelece teleporte planetário instantâneo",
+          "não substitui cuidado ou manutenção reais"
+        ]
+      },
+      "interoperability": {
+        "rune_refs": [
+          "RUN-001"
+        ],
+        "technology_refs": [
+          "PROP-HYB-001"
+        ],
+        "status": "CONDICIONAL",
+        "special_rule": "PRÁTICA_LIMITADA_E_REGISTRADA"
+      },
+      "operator_job_ids": [
+        "JOB-MAG-MAGO-001",
+        "JOB-RUN-OPER-001"
+      ],
+      "training_ref": "EDU-MAR-001",
+      "maintenance_or_review_job_ids": [
+        "JOB-RUN-MNT-001",
+        "JOB-RUN-MATRIZ-001"
+      ],
+      "spatial": {
+        "poi_id": "POI-024",
+        "territory_id": "TER-005",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 1,
+        "layer_ids": [
+          "MAR",
+          "MAGIC",
+          "NARRATIVE"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "signature": "geometria de fluxo delimitada, sem efeito ilimitado",
+        "form": "traço, halo, foco ou matriz conforme categoria",
+        "intensity_states": [
+          "latente",
+          "ativa limitada",
+          "dissipando"
+        ],
+        "color_policy": "sem cor fixa quando não houver cânone visual prévio"
+      },
+      "provenance": [
+        {
+          "source": "AUTORIDADE_ETAPA_06",
+          "original_state": "SEM_ENTIDADE_PRÉVIA",
+          "creation_method": "CANON_CREATED_FUNCTIONAL_COMPLEMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-MAG-025"
+    },
+    {
+      "id": "MAG-026",
+      "name": "Sopro de Dispersão",
+      "aliases": [],
+      "category": "VENTILAÇÃO_CONTROLADA",
+      "school_or_tradition": "Tradição de práticas limitadas de Stellar",
+      "origin": "Criação canônica complementar da Etapa 6 sob leis MAG-001",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_CREATED",
+      "execution": {
+        "effect": "movimento suave de ar existente",
+        "user_requirement": "operador treinado, foco ou matriz compatível e fonte finita",
+        "activation": "método registrado, condição explícita e objetivo delimitado",
+        "range": "LOCAL_OU_DE_SUPORTE",
+        "duration": "CURTA_OU_CONDICIONAL",
+        "intensity": "ESCALA_1_10_COM_LIMITE",
+        "cost": "esforço, energia existente e revisão posterior",
+        "preparation": "proporcional à complexidade",
+        "concentration": "necessária quando a prática permanece ativa"
+      },
+      "limitations": {
+        "effort": "cresce com distância, complexidade, permanência e resistência",
+        "environment": "depende de fonte e compatibilidade do ambiente",
+        "interference": "matrizes incompatíveis, excesso de sobreposição ou ausência de dissipador",
+        "failure": "encerramento seguro, perda de efeito ou necessidade de revisão",
+        "absolute_prohibitions": [
+          "não cria energia infinita",
+          "não estabelece viagem temporal",
+          "não estabelece teleporte planetário instantâneo",
+          "não substitui cuidado ou manutenção reais"
+        ]
+      },
+      "interoperability": {
+        "rune_refs": [
+          "RUN-004"
+        ],
+        "technology_refs": [
+          "PROP-HYB-001"
+        ],
+        "status": "CONDICIONAL",
+        "special_rule": "PRÁTICA_LIMITADA_E_REGISTRADA"
+      },
+      "operator_job_ids": [
+        "JOB-MAG-MAGO-001",
+        "JOB-RUN-OPER-001"
+      ],
+      "training_ref": "EDU-MAR-001",
+      "maintenance_or_review_job_ids": [
+        "JOB-RUN-MNT-001",
+        "JOB-RUN-MATRIZ-001"
+      ],
+      "spatial": {
+        "poi_id": "POI-024",
+        "territory_id": "TER-005",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 1,
+        "layer_ids": [
+          "MAR",
+          "MAGIC",
+          "NARRATIVE"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "signature": "geometria de fluxo delimitada, sem efeito ilimitado",
+        "form": "traço, halo, foco ou matriz conforme categoria",
+        "intensity_states": [
+          "latente",
+          "ativa limitada",
+          "dissipando"
+        ],
+        "color_policy": "sem cor fixa quando não houver cânone visual prévio"
+      },
+      "provenance": [
+        {
+          "source": "AUTORIDADE_ETAPA_06",
+          "original_state": "SEM_ENTIDADE_PRÉVIA",
+          "creation_method": "CANON_CREATED_FUNCTIONAL_COMPLEMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-MAG-026"
+    },
+    {
+      "id": "MAG-027",
+      "name": "Lente de Convergência",
+      "aliases": [],
+      "category": "PERCEPÇÃO",
+      "school_or_tradition": "Tradição de práticas limitadas de Stellar",
+      "origin": "Criação canônica complementar da Etapa 6 sob leis MAG-001",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_CREATED",
+      "execution": {
+        "effect": "melhora de leitura de matriz",
+        "user_requirement": "operador treinado, foco ou matriz compatível e fonte finita",
+        "activation": "método registrado, condição explícita e objetivo delimitado",
+        "range": "LOCAL_OU_DE_SUPORTE",
+        "duration": "CURTA_OU_CONDICIONAL",
+        "intensity": "ESCALA_1_10_COM_LIMITE",
+        "cost": "esforço, energia existente e revisão posterior",
+        "preparation": "proporcional à complexidade",
+        "concentration": "necessária quando a prática permanece ativa"
+      },
+      "limitations": {
+        "effort": "cresce com distância, complexidade, permanência e resistência",
+        "environment": "depende de fonte e compatibilidade do ambiente",
+        "interference": "matrizes incompatíveis, excesso de sobreposição ou ausência de dissipador",
+        "failure": "encerramento seguro, perda de efeito ou necessidade de revisão",
+        "absolute_prohibitions": [
+          "não cria energia infinita",
+          "não estabelece viagem temporal",
+          "não estabelece teleporte planetário instantâneo",
+          "não substitui cuidado ou manutenção reais"
+        ]
+      },
+      "interoperability": {
+        "rune_refs": [
+          "RUN-013"
+        ],
+        "technology_refs": [
+          "PROP-HYB-001"
+        ],
+        "status": "CONDICIONAL",
+        "special_rule": "PRÁTICA_LIMITADA_E_REGISTRADA"
+      },
+      "operator_job_ids": [
+        "JOB-MAG-MAGO-001",
+        "JOB-RUN-OPER-001"
+      ],
+      "training_ref": "EDU-MAR-001",
+      "maintenance_or_review_job_ids": [
+        "JOB-RUN-MNT-001",
+        "JOB-RUN-MATRIZ-001"
+      ],
+      "spatial": {
+        "poi_id": "POI-024",
+        "territory_id": "TER-005",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 1,
+        "layer_ids": [
+          "MAR",
+          "MAGIC",
+          "NARRATIVE"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "signature": "geometria de fluxo delimitada, sem efeito ilimitado",
+        "form": "traço, halo, foco ou matriz conforme categoria",
+        "intensity_states": [
+          "latente",
+          "ativa limitada",
+          "dissipando"
+        ],
+        "color_policy": "sem cor fixa quando não houver cânone visual prévio"
+      },
+      "provenance": [
+        {
+          "source": "AUTORIDADE_ETAPA_06",
+          "original_state": "SEM_ENTIDADE_PRÉVIA",
+          "creation_method": "CANON_CREATED_FUNCTIONAL_COMPLEMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-MAG-027"
+    },
+    {
+      "id": "MAG-028",
+      "name": "Véu de Estabilidade",
+      "aliases": [],
+      "category": "PROTEÇÃO",
+      "school_or_tradition": "Tradição de práticas limitadas de Stellar",
+      "origin": "Criação canônica complementar da Etapa 6 sob leis MAG-001",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_CREATED",
+      "execution": {
+        "effect": "redução de oscilação de pequena escala",
+        "user_requirement": "operador treinado, foco ou matriz compatível e fonte finita",
+        "activation": "método registrado, condição explícita e objetivo delimitado",
+        "range": "LOCAL_OU_DE_SUPORTE",
+        "duration": "CURTA_OU_CONDICIONAL",
+        "intensity": "ESCALA_1_10_COM_LIMITE",
+        "cost": "esforço, energia existente e revisão posterior",
+        "preparation": "proporcional à complexidade",
+        "concentration": "necessária quando a prática permanece ativa"
+      },
+      "limitations": {
+        "effort": "cresce com distância, complexidade, permanência e resistência",
+        "environment": "depende de fonte e compatibilidade do ambiente",
+        "interference": "matrizes incompatíveis, excesso de sobreposição ou ausência de dissipador",
+        "failure": "encerramento seguro, perda de efeito ou necessidade de revisão",
+        "absolute_prohibitions": [
+          "não cria energia infinita",
+          "não estabelece viagem temporal",
+          "não estabelece teleporte planetário instantâneo",
+          "não substitui cuidado ou manutenção reais"
+        ]
+      },
+      "interoperability": {
+        "rune_refs": [
+          "RUN-001"
+        ],
+        "technology_refs": [
+          "PROP-HYB-001"
+        ],
+        "status": "CONDICIONAL",
+        "special_rule": "PRÁTICA_LIMITADA_E_REGISTRADA"
+      },
+      "operator_job_ids": [
+        "JOB-MAG-MAGO-001",
+        "JOB-RUN-OPER-001"
+      ],
+      "training_ref": "EDU-MAR-001",
+      "maintenance_or_review_job_ids": [
+        "JOB-RUN-MNT-001",
+        "JOB-RUN-MATRIZ-001"
+      ],
+      "spatial": {
+        "poi_id": "POI-024",
+        "territory_id": "TER-005",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 1,
+        "layer_ids": [
+          "MAR",
+          "MAGIC",
+          "NARRATIVE"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "signature": "geometria de fluxo delimitada, sem efeito ilimitado",
+        "form": "traço, halo, foco ou matriz conforme categoria",
+        "intensity_states": [
+          "latente",
+          "ativa limitada",
+          "dissipando"
+        ],
+        "color_policy": "sem cor fixa quando não houver cânone visual prévio"
+      },
+      "provenance": [
+        {
+          "source": "AUTORIDADE_ETAPA_06",
+          "original_state": "SEM_ENTIDADE_PRÉVIA",
+          "creation_method": "CANON_CREATED_FUNCTIONAL_COMPLEMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-MAG-028"
+    },
+    {
+      "id": "MAG-029",
+      "name": "Compasso de Rota",
+      "aliases": [],
+      "category": "ORIENTAÇÃO",
+      "school_or_tradition": "Tradição de práticas limitadas de Stellar",
+      "origin": "Criação canônica complementar da Etapa 6 sob leis MAG-001",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_CREATED",
+      "execution": {
+        "effect": "confirmação de rumo registrado",
+        "user_requirement": "operador treinado, foco ou matriz compatível e fonte finita",
+        "activation": "método registrado, condição explícita e objetivo delimitado",
+        "range": "LOCAL_OU_DE_SUPORTE",
+        "duration": "CURTA_OU_CONDICIONAL",
+        "intensity": "ESCALA_1_10_COM_LIMITE",
+        "cost": "esforço, energia existente e revisão posterior",
+        "preparation": "proporcional à complexidade",
+        "concentration": "necessária quando a prática permanece ativa"
+      },
+      "limitations": {
+        "effort": "cresce com distância, complexidade, permanência e resistência",
+        "environment": "depende de fonte e compatibilidade do ambiente",
+        "interference": "matrizes incompatíveis, excesso de sobreposição ou ausência de dissipador",
+        "failure": "encerramento seguro, perda de efeito ou necessidade de revisão",
+        "absolute_prohibitions": [
+          "não cria energia infinita",
+          "não estabelece viagem temporal",
+          "não estabelece teleporte planetário instantâneo",
+          "não substitui cuidado ou manutenção reais"
+        ]
+      },
+      "interoperability": {
+        "rune_refs": [
+          "RUN-004"
+        ],
+        "technology_refs": [
+          "PROP-HYB-001"
+        ],
+        "status": "CONDICIONAL",
+        "special_rule": "PRÁTICA_LIMITADA_E_REGISTRADA"
+      },
+      "operator_job_ids": [
+        "JOB-MAG-MAGO-001",
+        "JOB-RUN-OPER-001"
+      ],
+      "training_ref": "EDU-MAR-001",
+      "maintenance_or_review_job_ids": [
+        "JOB-RUN-MNT-001",
+        "JOB-RUN-MATRIZ-001"
+      ],
+      "spatial": {
+        "poi_id": "POI-024",
+        "territory_id": "TER-005",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 1,
+        "layer_ids": [
+          "MAR",
+          "MAGIC",
+          "NARRATIVE"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "signature": "geometria de fluxo delimitada, sem efeito ilimitado",
+        "form": "traço, halo, foco ou matriz conforme categoria",
+        "intensity_states": [
+          "latente",
+          "ativa limitada",
+          "dissipando"
+        ],
+        "color_policy": "sem cor fixa quando não houver cânone visual prévio"
+      },
+      "provenance": [
+        {
+          "source": "AUTORIDADE_ETAPA_06",
+          "original_state": "SEM_ENTIDADE_PRÉVIA",
+          "creation_method": "CANON_CREATED_FUNCTIONAL_COMPLEMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-MAG-029"
+    },
+    {
+      "id": "MAG-030",
+      "name": "Sinal de Guarda",
+      "aliases": [],
+      "category": "ALERTA",
+      "school_or_tradition": "Tradição de práticas limitadas de Stellar",
+      "origin": "Criação canônica complementar da Etapa 6 sob leis MAG-001",
+      "canonical_status": "CÂNONE_ATIVO",
+      "confidence": "CANON_CREATED",
+      "execution": {
+        "effect": "sinalização institucional de ocorrência",
+        "user_requirement": "operador treinado, foco ou matriz compatível e fonte finita",
+        "activation": "método registrado, condição explícita e objetivo delimitado",
+        "range": "LOCAL_OU_DE_SUPORTE",
+        "duration": "CURTA_OU_CONDICIONAL",
+        "intensity": "ESCALA_1_10_COM_LIMITE",
+        "cost": "esforço, energia existente e revisão posterior",
+        "preparation": "proporcional à complexidade",
+        "concentration": "necessária quando a prática permanece ativa"
+      },
+      "limitations": {
+        "effort": "cresce com distância, complexidade, permanência e resistência",
+        "environment": "depende de fonte e compatibilidade do ambiente",
+        "interference": "matrizes incompatíveis, excesso de sobreposição ou ausência de dissipador",
+        "failure": "encerramento seguro, perda de efeito ou necessidade de revisão",
+        "absolute_prohibitions": [
+          "não cria energia infinita",
+          "não estabelece viagem temporal",
+          "não estabelece teleporte planetário instantâneo",
+          "não substitui cuidado ou manutenção reais"
+        ]
+      },
+      "interoperability": {
+        "rune_refs": [
+          "RUN-013"
+        ],
+        "technology_refs": [
+          "PROP-HYB-001"
+        ],
+        "status": "CONDICIONAL",
+        "special_rule": "PRÁTICA_LIMITADA_E_REGISTRADA"
+      },
+      "operator_job_ids": [
+        "JOB-MAG-MAGO-001",
+        "JOB-RUN-OPER-001"
+      ],
+      "training_ref": "EDU-MAR-001",
+      "maintenance_or_review_job_ids": [
+        "JOB-RUN-MNT-001",
+        "JOB-RUN-MATRIZ-001"
+      ],
+      "spatial": {
+        "poi_id": "POI-024",
+        "territory_id": "TER-005",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 1,
+        "layer_ids": [
+          "MAR",
+          "MAGIC",
+          "NARRATIVE"
+        ]
+      },
+      "visual": {
+        "status": "VISUAL_BRIEF_PRONTO",
+        "signature": "geometria de fluxo delimitada, sem efeito ilimitado",
+        "form": "traço, halo, foco ou matriz conforme categoria",
+        "intensity_states": [
+          "latente",
+          "ativa limitada",
+          "dissipando"
+        ],
+        "color_policy": "sem cor fixa quando não houver cânone visual prévio"
+      },
+      "provenance": [
+        {
+          "source": "AUTORIDADE_ETAPA_06",
+          "original_state": "SEM_ENTIDADE_PRÉVIA",
+          "creation_method": "CANON_CREATED_FUNCTIONAL_COMPLEMENT",
+          "timestamp": "2026-08-14T01:00:00Z",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "visual_brief_ref": "VIS-MAG-030"
+    }
+  ]
+}

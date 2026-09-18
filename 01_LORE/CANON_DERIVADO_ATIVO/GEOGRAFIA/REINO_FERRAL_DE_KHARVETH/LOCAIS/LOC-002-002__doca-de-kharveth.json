@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-002-002",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Doca de Kharveth",
+  "parent_subregion": "SUB-002-002",
+  "parent_political_unit": "TER-002",
+  "function": "Porto principal de escoamento comercial do reino.",
+  "notable_link": "Distrito Portuário de Kharveth (SUB-002-002)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-002-002",
+  "settlement_tier": "COMPLEXO",
+  "history": "A Doca de Kharveth cresceu ao redor de um guindaste que nunca foi desligado desde a primeira locomotiva. Operários juram que sua vibração impede o ferro da cidade de esfriar.",
+  "sensory": "Vapor de carvão mistura-se a limalha e chuva; cada cabo esticado canta quando um trem se aproxima.",
+  "hook": "Uma carga sem proprietário chega lacrada com o selo de Serverus.",
+  "secondary_hook": "Marta precisa escolher entre atrasar toda a doca ou abrir o contêiner.",
+  "detail": "A taxa de atracação é cobrada em minutos de uso do guindaste.",
+  "figures": [
+    {
+      "role": "Marta Rebite",
+      "name": "Marta Rebite",
+      "note": "chefe que mede justiça em tempo de descarga"
+    },
+    {
+      "role": "Oren-3",
+      "name": "Oren-3",
+      "note": "Android de carga que conhece cada falha do guindaste"
+    }
+  ]
+}

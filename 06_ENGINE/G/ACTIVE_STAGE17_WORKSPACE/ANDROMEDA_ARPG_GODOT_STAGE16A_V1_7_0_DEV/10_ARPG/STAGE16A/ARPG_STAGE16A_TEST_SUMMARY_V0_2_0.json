@@ -1,0 +1,49 @@
+{
+  "record_id": "ARPG-STAGE16A-TEST-SUMMARY-V0.2.0",
+  "status": "PASS_PARTIAL_PRE_GODOT",
+  "checks": 42,
+  "passed": 42,
+  "failed": 0,
+  "suites": [
+    {
+      "name": "interaction_intent",
+      "checks": 14,
+      "passed": 14
+    },
+    {
+      "name": "ground_loot",
+      "checks": 10,
+      "passed": 10
+    },
+    {
+      "name": "terrain_traversal_streaming",
+      "checks": 18,
+      "passed": 18
+    }
+  ],
+  "regression": [
+    {
+      "name": "stage08_world",
+      "checks": 20,
+      "passed": 20
+    },
+    {
+      "name": "stage10_mobility",
+      "checks": 19,
+      "passed": 19
+    },
+    {
+      "name": "atlas_streaming_v1_4",
+      "checks": 7,
+      "passed": 7
+    },
+    {
+      "name": "atlas_streaming_invariants_v1_4",
+      "checks": 4,
+      "passed": 4
+    }
+  ],
+  "timeout_policy": "GROUPED_TIMEOUT_NOT_COUNTED_AS_PASS; ATLAS SUITES RERUN_SEPARATELY_AND_PASS",
+  "godot_runtime_validation": "PENDING",
+  "canon_mutations": 0
+}

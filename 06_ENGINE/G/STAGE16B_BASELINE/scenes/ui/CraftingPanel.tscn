@@ -1,0 +1,159 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/crafting_panel.gd" id="1_crafting"]
+[ext_resource type="Theme" path="res://ui/theme/AndromedaMinimalTheme.tres" id="2_theme"]
+
+[node name="CraftingPanel" type="Control"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = ExtResource("2_theme")
+script = ExtResource("1_crafting")
+
+[node name="Backdrop" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+color = Color(0.1, 0.11, 0.12, 0.26)
+
+[node name="RoundedWhitePanel" type="PanelContainer" parent="Backdrop"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -340.0
+offset_top = -230.0
+offset_right = 340.0
+offset_bottom = 230.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Margin" type="MarginContainer" parent="Backdrop/RoundedWhitePanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 22
+theme_override_constants/margin_top = 18
+theme_override_constants/margin_right = 22
+theme_override_constants/margin_bottom = 18
+
+[node name="Layout" type="VBoxContainer" parent="Backdrop/RoundedWhitePanel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Header" type="HBoxContainer" parent="Backdrop/RoundedWhitePanel/Margin/Layout"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="Backdrop/RoundedWhitePanel/Margin/Layout/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.42, 0.42, 0.42, 1)
+theme_override_font_sizes/font_size = 24
+text = "Produção"
+
+[node name="Close" type="Button" parent="Backdrop/RoundedWhitePanel/Margin/Layout/Header"]
+layout_mode = 2
+text = "Esc  fechar"
+
+[node name="Workstation" type="Label" parent="Backdrop/RoundedWhitePanel/Margin/Layout"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.541, 0.541, 0.541, 1)
+text = "Estação de produção"
+
+[node name="BodyScroll" type="ScrollContainer" parent="Backdrop/RoundedWhitePanel/Margin/Layout"]
+custom_minimum_size = Vector2(0, 336)
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="Content" type="VBoxContainer" parent="Backdrop/RoundedWhitePanel/Margin/Layout/BodyScroll"]
+custom_minimum_size = Vector2(610, 620)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 12
+
+[node name="AuthorityNotice" type="Label" parent="Backdrop/RoundedWhitePanel/Margin/Layout/BodyScroll/Content"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.541, 0.541, 0.541, 1)
+text = "Receita, disponibilidade e resultado são projeções externas."
+autowrap_mode = 2
+
+[node name="RecipeName" type="Label" parent="Backdrop/RoundedWhitePanel/Margin/Layout/BodyScroll/Content"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.42, 0.42, 0.42, 1)
+theme_override_font_sizes/font_size = 20
+text = "Aguardando receita externa"
+
+[node name="IngredientHeader" type="Label" parent="Backdrop/RoundedWhitePanel/Margin/Layout/BodyScroll/Content"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.851, 0.631, 0.373, 1)
+text = "Ingredientes"
+
+[node name="Ingredients" type="VBoxContainer" parent="Backdrop/RoundedWhitePanel/Margin/Layout/BodyScroll/Content"]
+custom_minimum_size = Vector2(0, 96)
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="EmptyProjection" type="Label" parent="Backdrop/RoundedWhitePanel/Margin/Layout/BodyScroll/Content/Ingredients"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.541, 0.541, 0.541, 1)
+text = "Nenhum ingrediente projetado."
+
+[node name="QuantityRow" type="HBoxContainer" parent="Backdrop/RoundedWhitePanel/Margin/Layout/BodyScroll/Content"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Backdrop/RoundedWhitePanel/Margin/Layout/BodyScroll/Content/QuantityRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.42, 0.42, 0.42, 1)
+text = "Quantidade solicitada"
+
+[node name="Quantity" type="SpinBox" parent="Backdrop/RoundedWhitePanel/Margin/Layout/BodyScroll/Content/QuantityRow"]
+custom_minimum_size = Vector2(116, 0)
+layout_mode = 2
+min_value = 1.0
+max_value = 99.0
+value = 1.0
+allow_greater = false
+allow_lesser = false
+
+[node name="OutputHeader" type="Label" parent="Backdrop/RoundedWhitePanel/Margin/Layout/BodyScroll/Content"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.851, 0.631, 0.373, 1)
+text = "Output"
+
+[node name="OutputProjection" type="Label" parent="Backdrop/RoundedWhitePanel/Margin/Layout/BodyScroll/Content"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.42, 0.42, 0.42, 1)
+text = "Aguardando output externo"
+autowrap_mode = 2
+
+[node name="Availability" type="Label" parent="Backdrop/RoundedWhitePanel/Margin/Layout/BodyScroll/Content"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.541, 0.541, 0.541, 1)
+text = "Disponibilidade não recebida"
+
+[node name="CraftAction" type="Button" parent="Backdrop/RoundedWhitePanel/Margin/Layout/BodyScroll/Content"]
+layout_mode = 2
+text = "Solicitar produção"
+
+[node name="SeparationNotice" type="Label" parent="Backdrop/RoundedWhitePanel/Margin/Layout/BodyScroll/Content"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.541, 0.541, 0.541, 1)
+text = "A ação envia somente intenção; nenhum item é consumido ou concedido localmente."
+autowrap_mode = 2
+
+[node name="Footer" type="Label" parent="Backdrop/RoundedWhitePanel/Margin/Layout"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.541, 0.541, 0.541, 1)
+text = "Roda: scroll  ·  mundo continua ativo  ·  sem autoridade local"
+horizontal_alignment = 1

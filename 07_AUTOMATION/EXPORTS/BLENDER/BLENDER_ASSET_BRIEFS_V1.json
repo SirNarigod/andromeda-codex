@@ -1,0 +1,181 @@
+{
+  "record_id": "BLENDER_ASSET_BRIEFS_V1",
+  "status": "SAFE_PRODUCTION",
+  "asset_sources": {
+    "ART": [
+      {
+        "id": "ART-001",
+        "title": "Espinho-Negro",
+        "canonical_path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-001__espinho-negro.json",
+        "summary": "Planta fóssil inteligente criada para localizar e combater uma corrupção radicular; sua origem consciente permanece selada até o final da Temporada 1."
+      },
+      {
+        "id": "ART-003",
+        "title": "Marcador de rota",
+        "canonical_path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-003__marcador-de-rota.json",
+        "summary": "Marcador entregue a Kenua por Serverus e utilizado como parte da manipulação do contrato."
+      },
+      {
+        "id": "ART-004",
+        "title": "Sistema de armamentos de Stellar",
+        "canonical_path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-004__sistema-de-armamentos.json",
+        "summary": "Classificação de armas usada em Stellar, distinguindo ferramentas improvisadas, armamento mecânico e versões rúnicas de maior custo e potência."
+      },
+      {
+        "id": "ART-005",
+        "title": "Lâminas",
+        "canonical_path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-005__laminas.json",
+        "summary": "Categoria de armas de corte e impacto próximo, comum entre viajantes, guardas e caçadores."
+      },
+      {
+        "id": "ART-006",
+        "title": "Fuzis",
+        "canonical_path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-006__fuzis.json",
+        "summary": "Armas de longo alcance usadas por forças organizadas, caravanas ricas e caçadores licenciados."
+      },
+      {
+        "id": "ART-007",
+        "title": "Revólveres",
+        "canonical_path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-007__revolveres.json",
+        "summary": "Armas curtas valorizadas por confiabilidade e transporte discreto."
+      },
+      {
+        "id": "ART-008",
+        "title": "Espingardas",
+        "canonical_path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-008__espingardas.json",
+        "summary": "Armas de grande impacto próximo, usadas em defesa de propriedade, caça pesada e ruptura de obstáculos."
+      },
+      {
+        "id": "ART-009",
+        "title": "Fuzis de precisão",
+        "canonical_path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-009__fuzis-de-precisao.json",
+        "summary": "Categoria especializada para disparos longos, vigilância e neutralização seletiva."
+      },
+      {
+        "id": "ART-010",
+        "title": "Armas de arremesso",
+        "canonical_path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-010__armas-de-arremesso.json",
+        "summary": "Armas projetadas manualmente, de ferramentas simples a discos rúnicos de trajetória corrigida."
+      },
+      {
+        "id": "ART-011",
+        "title": "Armas de explosão",
+        "canonical_path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-011__armas-de-explosao.json",
+        "summary": "Categoria de energia expansiva, altamente regulada por seu risco coletivo."
+      },
+      {
+        "id": "ART-012",
+        "title": "Armas de contenção",
+        "canonical_path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-012__armas-de-contencao.json",
+        "summary": "Ferramentas destinadas a interromper movimento, magia ou fuga sem exigir morte do alvo."
+      },
+      {
+        "id": "ART-013",
+        "title": "Dispositivos de flash",
+        "canonical_path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-013__dispositivos-de-flash.json",
+        "summary": "Dispositivos não letais que produzem clarão, pulso sonoro ou interferência sensorial."
+      },
+      {
+        "id": "ART-014",
+        "title": "Armas improvisadas",
+        "canonical_path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-014__armas-improvisadas.json",
+        "summary": "Categoria utilizada por pessoas sem magia ou recursos: ganchos, barras, correntes, ferramentas e peças de máquinas adaptadas."
+      },
+      {
+        "id": "ART-015",
+        "title": "Armerias rúnicas",
+        "canonical_path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-015__armerias-runicas.json",
+        "summary": "Estabelecimentos licenciados onde magos e artesãos vendem, carregam e mantêm armamentos rúnicos."
+      }
+    ],
+    "CRI": [
+      {
+        "id": "CRI-001",
+        "title": "Cortassom",
+        "canonical_path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-001__cortassom.json",
+        "summary": "Criatura deslocada e ferida por mineração ilegal, investigada por Kenua no início de A Recompensa."
+      },
+      {
+        "id": "CRI-002",
+        "title": "Velúrio",
+        "canonical_path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-002__velurio.json",
+        "summary": "Animal gregário de dorso largo, criado em comunidades fronteiriças por seu leite proteico e resistente à fermentação."
+      },
+      {
+        "id": "CRI-003",
+        "title": "Brumante",
+        "canonical_path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-003__brumante.json",
+        "summary": "Herbívoro de seis membros adaptado ao frio, valorizado pelo leite denso usado em rações de inverno e recuperação muscular."
+      },
+      {
+        "id": "CRI-004",
+        "title": "Lúmara",
+        "canonical_path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-004__lumara.json",
+        "summary": "Herbívoro de marcas bioluminescentes, criado em bosques abertos por seu leite claro e rico em micronutrientes."
+      },
+      {
+        "id": "CRI-005",
+        "title": "Raizel manso",
+        "canonical_path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-005__raizel-manso.json",
+        "summary": "Animal baixo e robusto que encontra tubérculos sem danificar raízes vitais. Seu leite âmbar é usado em rações de emergência."
+      },
+      {
+        "id": "CRI-006",
+        "title": "Luzipólen",
+        "canonical_path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-006__luzipolen.json",
+        "summary": "Pequeno polinizador luminoso que transporta pólen entre flores noturnas e evita seres de grande porte."
+      },
+      {
+        "id": "CRI-007",
+        "title": "Fio-de-Orvalho",
+        "canonical_path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-007__fio-de-orvalho.json",
+        "summary": "Inseto de pernas finas que recolhe umidade em fios orgânicos e acelera a decomposição de folhas mortas."
+      },
+      {
+        "id": "CRI-008",
+        "title": "Grilo-Cobre",
+        "canonical_path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-008__grilo-cobre.json",
+        "summary": "Inseto de carapaça acobreada criado em caixas de argila e consumido torrado ou moído."
+      },
+      {
+        "id": "CRI-009",
+        "title": "Larva-de-Véu",
+        "canonical_path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-009__larva-de-veu.json",
+        "summary": "Larva criada em fibras vegetais limpas, usada em caldos densos e farinha de campanha."
+      },
+      {
+        "id": "CRI-010",
+        "title": "Vespa-de-Vidro",
+        "canonical_path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-010__vespa-de-vidro.json",
+        "summary": "Vespa translúcida cujo ferrão libera toxina neuromuscular capaz de interromper movimentos por poucos minutos."
+      },
+      {
+        "id": "CRI-011",
+        "title": "Besouro-Rubro",
+        "canonical_path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-011__besouro-rubro.json",
+        "summary": "Besouro que libera uma secreção rubra irritante quando esmagado ou ameaçado."
+      },
+      {
+        "id": "CRI-012",
+        "title": "Louva-Fenda",
+        "canonical_path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-012__louva-fenda.json",
+        "summary": "Predador do tamanho de um antebraço que se camufla em fendas de pedra e captura pequenos animais por projeção das patas dianteiras."
+      },
+      {
+        "id": "CRI-013",
+        "title": "Mandíbula-de-Névoa",
+        "canonical_path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-013__mandibula-de-nevoa.json",
+        "summary": "Inseto cinzento que caça em pequenos enxames coordenados por vibração e mudanças de pressão."
+      }
+    ],
+    "BIO": [
+      {
+        "id": "BIO-001",
+        "title": "Coração Ancestral",
+        "canonical_path": "01_LORE/CANON_R2/GEOGRAFIA/BIOMAS/BIO-001__coracao-ancestral.json",
+        "summary": "Floresta viva conectada à memória planetária, às Árvores Anciãs e às manifestações de Amadon."
+      }
+    ]
+  },
+  "constraint": "Generated assets are noncanonical until accepted through staging."
+}

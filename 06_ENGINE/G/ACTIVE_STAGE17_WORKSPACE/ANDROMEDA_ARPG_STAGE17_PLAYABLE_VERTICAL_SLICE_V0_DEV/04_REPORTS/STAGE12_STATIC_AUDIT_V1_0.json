@@ -1,0 +1,8 @@
+{
+  "record_id": "STAGE12-STATIC-AUDIT-V1.0",
+  "checks": 38,
+  "passed": 38,
+  "failed": 0,
+  "status": "PASS",
+  "failures": []
+}

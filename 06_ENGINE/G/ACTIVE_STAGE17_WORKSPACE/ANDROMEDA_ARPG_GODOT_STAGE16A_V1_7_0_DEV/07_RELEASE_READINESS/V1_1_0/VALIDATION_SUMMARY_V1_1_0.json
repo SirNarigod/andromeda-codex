@@ -1,0 +1,65 @@
+{
+  "record_id": "LIVING-SIM-V1.1.0-VALIDATION-SUMMARY",
+  "version": "V1.1.0",
+  "generated_at": "2026-08-16T00:57:19.196688+00:00",
+  "python": {
+    "legacy_regression": {
+      "passed": 672,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "v1_1_delta": {
+      "passed": 73,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "total": {
+      "passed": 745,
+      "failed": 0,
+      "status": "PASS"
+    }
+  },
+  "extended": {
+    "checks": 1403,
+    "passed": 1403,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "stage14_global": {
+    "checks": 43,
+    "passed": 43,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "stage14_multiworld": {
+    "checks": 37,
+    "passed": 37,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "corruption_matrix": {
+    "cases": 10,
+    "detected": 10,
+    "missed": 0,
+    "status": "PASS"
+  },
+  "javascript": {
+    "checks": 7,
+    "passed": 7,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "master_dependency": {
+    "file": "ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE.zip",
+    "sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "mode": "READ_ONLY",
+    "mutations": 0,
+    "status": "PASS"
+  },
+  "baseline_dependency": {
+    "file": "ANDROMEDA_LIVING_SIM_ENGINE_V1_0_0_RELEASE(1).zip",
+    "sha256": "6f12c9db0976e234ef55cdfe23b998c07240fa8d80eb0d0c247d12bbd16ebabc",
+    "status": "PASS"
+  },
+  "status": "PASS"
+}

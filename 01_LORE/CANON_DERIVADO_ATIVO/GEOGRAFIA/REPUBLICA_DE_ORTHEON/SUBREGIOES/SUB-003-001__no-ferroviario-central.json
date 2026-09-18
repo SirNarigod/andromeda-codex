@@ -1,0 +1,11 @@
+{
+  "record_id": "SUB-003-001", "record_kind": "DERIVED_SUBREGION_PROFILE", "authority": "CANON_DERIVADO_ATIVO", "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Nó Ferroviário Central", "parent_political_unit": "TER-003",
+  "provenance": {"approval": "GAMEPLAY_DERIVED_DEV_SOURCE", "r2_anchors": ["TER-003", "caelen-orthev"], "compatibility": "Camada administrativa e narrativa local; não cria fronteira, cidade, soberania ou nova autoridade."},
+  "function": "Ponto de convergência de todas as linhas férreas da cidade-estado.",
+  "locality_references": ["LOC-003-001 Estação Central"],
+  "permitted_catalog_links": {"npc_roles": ["classe:Soldados"], "professions": ["ferroviário"], "encounters": [], "resources": []},
+  "local_conflicts": ["horários de carga versus horários de passageiros", "greve ferroviária versus urgência de transporte"],
+  "prohibitions": ["NO_NEW_SOVEREIGNTY", "NO_AUTOMATIC_KENUA_SCENE", "NO_R2_EPISODE_REWRITE", "NO_FIXED_BORDER_COORDINATE"],
+  "story_generators": ["Uma falha no nó ferroviário paralisa toda a rede da república por um dia.", "Uma disputa entre operários e administração ameaça uma greve na estação central."]
+}

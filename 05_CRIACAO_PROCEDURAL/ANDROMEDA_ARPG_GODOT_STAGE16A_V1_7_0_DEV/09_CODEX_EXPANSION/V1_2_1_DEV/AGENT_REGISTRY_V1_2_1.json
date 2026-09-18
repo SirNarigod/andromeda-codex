@@ -1,0 +1,206 @@
+{
+  "record_id": "ANDROMEDA-AGENT-REGISTRY-V1.2.1",
+  "status": "ACTIVE_DEV",
+  "agent_count": 12,
+  "coordination_policy": "Agents are specialized responsibility profiles over one shared source of truth; they are not independent canon authorities.",
+  "anti_hallucination_rules": [
+    "single shared source of truth",
+    "no silent canon promotion",
+    "domain-scoped write ownership",
+    "every handoff cites generated evidence",
+    "AG-AUD-02 can block progression",
+    "on functional failure: correct then restart full convergence sequence"
+  ],
+  "agents": [
+    {
+      "id": "AG-NAM-02",
+      "name": "Nomenclatura e Canonização",
+      "type": "SPECIALIZED_OPERATIONAL_ROLE",
+      "shared_source_of_truth": true,
+      "scope": [
+        "unnamed entities",
+        "item/resource naming",
+        "name collisions",
+        "authority labels"
+      ],
+      "exit_gate": "name collision scan + authority status PASS",
+      "write_policy": "ONLY_OWN_DOMAIN_PLUS_SHARED_CONTRACT_CHANGES_WITH_AUDITOR_REVIEW",
+      "handoff_requires": "structured evidence + no unresolved contradiction"
+    },
+    {
+      "id": "AG-GEO-02",
+      "name": "Cartografia, Escala e Clima",
+      "type": "SPECIALIZED_OPERATIONAL_ROLE",
+      "shared_source_of_truth": true,
+      "scope": [
+        "country/state/block/subregion",
+        "coordinates",
+        "temperature/rain/humidity",
+        "biome positioning"
+      ],
+      "exit_gate": "hierarchy + coordinate containment + climate constraints PASS",
+      "write_policy": "ONLY_OWN_DOMAIN_PLUS_SHARED_CONTRACT_CHANGES_WITH_AUDITOR_REVIEW",
+      "handoff_requires": "structured evidence + no unresolved contradiction"
+    },
+    {
+      "id": "AG-RES-02",
+      "name": "Recursos, Minérios e Indústria",
+      "type": "SPECIALIZED_OPERATIONAL_ROLE",
+      "shared_source_of_truth": true,
+      "scope": [
+        "resource catalog",
+        "purposeful regional distribution",
+        "depletion",
+        "mining industry"
+      ],
+      "exit_gate": "resource locality + reconciliation + nonnegative stocks PASS",
+      "write_policy": "ONLY_OWN_DOMAIN_PLUS_SHARED_CONTRACT_CHANGES_WITH_AUDITOR_REVIEW",
+      "handoff_requires": "structured evidence + no unresolved contradiction"
+    },
+    {
+      "id": "AG-ECO-02",
+      "name": "Ecologia, Fauna, Flora e Raiz",
+      "type": "SPECIALIZED_OPERATIONAL_ROLE",
+      "shared_source_of_truth": true,
+      "scope": [
+        "biome adaptation",
+        "flora",
+        "fauna/insects",
+        "Root Deep predators",
+        "corruption balance"
+      ],
+      "exit_gate": "adaptation + Root Deep invariants PASS",
+      "write_policy": "ONLY_OWN_DOMAIN_PLUS_SHARED_CONTRACT_CHANGES_WITH_AUDITOR_REVIEW",
+      "handoff_requires": "structured evidence + no unresolved contradiction"
+    },
+    {
+      "id": "AG-INV-02",
+      "name": "Inventário Hierárquico",
+      "type": "SPECIALIZED_OPERATIONAL_ROLE",
+      "shared_source_of_truth": true,
+      "scope": [
+        "NPC/shop/city/subregion/block/state/country inventory",
+        "scene/dungeon inventory",
+        "currency aggregation"
+      ],
+      "exit_gate": "local mutation reconciles to country without duplication/negative values PASS",
+      "write_policy": "ONLY_OWN_DOMAIN_PLUS_SHARED_CONTRACT_CHANGES_WITH_AUDITOR_REVIEW",
+      "handoff_requires": "structured evidence + no unresolved contradiction"
+    },
+    {
+      "id": "AG-SCN-02",
+      "name": "Cenografia Interativa",
+      "type": "SPECIALIZED_OPERATIONAL_ROLE",
+      "shared_source_of_truth": true,
+      "scope": [
+        "doors",
+        "trapdoors",
+        "chairs",
+        "books",
+        "torches",
+        "chests",
+        "levers",
+        "rune pedestals",
+        "consoles",
+        "ground items"
+      ],
+      "exit_gate": "locality + persistence + state transitions PASS",
+      "write_policy": "ONLY_OWN_DOMAIN_PLUS_SHARED_CONTRACT_CHANGES_WITH_AUDITOR_REVIEW",
+      "handoff_requires": "structured evidence + no unresolved contradiction"
+    },
+    {
+      "id": "AG-DNG-02",
+      "name": "Masmorras, Iluminação e Loot",
+      "type": "SPECIALIZED_OPERATIONAL_ROLE",
+      "shared_source_of_truth": true,
+      "scope": [
+        "dungeon generation",
+        "darkness",
+        "sword/crossbow/bow/whip",
+        "keys/containers",
+        "contextual loot"
+      ],
+      "exit_gate": "required families + darkness interactions + protected access PASS",
+      "write_policy": "ONLY_OWN_DOMAIN_PLUS_SHARED_CONTRACT_CHANGES_WITH_AUDITOR_REVIEW",
+      "handoff_requires": "structured evidence + no unresolved contradiction"
+    },
+    {
+      "id": "AG-ECOCOM-02",
+      "name": "Economia, Preços e Lojas",
+      "type": "SPECIALIZED_OPERATIONAL_ROLE",
+      "shared_source_of_truth": true,
+      "scope": [
+        "runtime pricing",
+        "wallets",
+        "shop cash",
+        "scarcity/logistics/reputation",
+        "transaction conservation"
+      ],
+      "exit_gate": "money conservation + locality + stock transfer PASS",
+      "write_policy": "ONLY_OWN_DOMAIN_PLUS_SHARED_CONTRACT_CHANGES_WITH_AUDITOR_REVIEW",
+      "handoff_requires": "structured evidence + no unresolved contradiction"
+    },
+    {
+      "id": "AG-SOC-02",
+      "name": "NPCs e Proteções",
+      "type": "SPECIALIZED_OPERATIONAL_ROLE",
+      "shared_source_of_truth": true,
+      "scope": [
+        "mages/natives/robots/warriors/mercenaries/workers/children",
+        "movement",
+        "protected minors/workers"
+      ],
+      "exit_gate": "protection + location + role inventory PASS",
+      "write_policy": "ONLY_OWN_DOMAIN_PLUS_SHARED_CONTRACT_CHANGES_WITH_AUDITOR_REVIEW",
+      "handoff_requires": "structured evidence + no unresolved contradiction"
+    },
+    {
+      "id": "AG-MAR-02",
+      "name": "MAR, Equipamento e Balanceamento",
+      "type": "SPECIALIZED_OPERATIONAL_ROLE",
+      "shared_source_of_truth": true,
+      "scope": [
+        "30 canonical MAR weapons",
+        "dungeon equipment",
+        "tiers",
+        "condition/durability",
+        "combat-facing stats"
+      ],
+      "exit_gate": "0-100 range + tradeoffs + equipability PASS",
+      "write_policy": "ONLY_OWN_DOMAIN_PLUS_SHARED_CONTRACT_CHANGES_WITH_AUDITOR_REVIEW",
+      "handoff_requires": "structured evidence + no unresolved contradiction"
+    },
+    {
+      "id": "AG-SIM-02",
+      "name": "Simulação e Stress",
+      "type": "SPECIALIZED_OPERATIONAL_ROLE",
+      "shared_source_of_truth": true,
+      "scope": [
+        "multi-seed generation",
+        "interaction chains",
+        "persistence",
+        "multiworld/soak"
+      ],
+      "exit_gate": "unit + stress + long-horizon gates PASS",
+      "write_policy": "ONLY_OWN_DOMAIN_PLUS_SHARED_CONTRACT_CHANGES_WITH_AUDITOR_REVIEW",
+      "handoff_requires": "structured evidence + no unresolved contradiction"
+    },
+    {
+      "id": "AG-AUD-02",
+      "name": "Auditor de Erros Silenciosos",
+      "type": "SPECIALIZED_OPERATIONAL_ROLE",
+      "shared_source_of_truth": true,
+      "scope": [
+        "hashes",
+        "stale evidence",
+        "orphan IDs",
+        "negative inventories",
+        "cross-domain invariants",
+        "corruption detection"
+      ],
+      "exit_gate": "zero known active failures; auditor false positives separately reconciled",
+      "write_policy": "ONLY_OWN_DOMAIN_PLUS_SHARED_CONTRACT_CHANGES_WITH_AUDITOR_REVIEW",
+      "handoff_requires": "structured evidence + no unresolved contradiction"
+    }
+  ]
+}

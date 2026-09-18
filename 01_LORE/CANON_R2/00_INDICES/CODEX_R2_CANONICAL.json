@@ -1,0 +1,5443 @@
+{
+  "meta": {
+    "title": "Andrômeda Codex V1.0.1",
+    "universe": "Andromeda: Raízes de Stellar",
+    "owner": "Thalles Narigod",
+    "author": "Thalles Narigod",
+    "currentYear": "842 EC",
+    "canonVersion": "V110",
+    "lastUpdated": "2026-08-04T15:53:00-03:00",
+    "entryCount": 116,
+    "revelationPolicy": "O universo existe antes de ser revelado. O conteúdo público depende do nível de spoiler selecionado.",
+    "proceduralStageCount": 171,
+    "proceduralRegistry": "canon/index.html",
+    "proceduralVersion": "V110",
+    "certificationStatus": "CERTIFIED_SEASON_ONE_CLOSED",
+    "certificationId": "CERT-UNI-ANDROMEDA-V110",
+    "nameRightsHolder": "Thalles Narigod",
+    "certificationBaselineVersion": "V88",
+    "updatedAt": "2026-08-04T15:53:00-03:00",
+    "proceduralStages": 171,
+    "proceduralDecisions": 1800,
+    "proceduralRules": 16658,
+    "version": "V110",
+    "codexVersion": "V110",
+    "consolidatedStages": 171,
+    "nextPendingStage": null,
+    "decisionCount": 1800,
+    "ruleCount": 16658,
+    "ontologyEntityCount": 1018,
+    "ontologyAssertionCount": 18393,
+    "dependencyEdgeCount": 2966,
+    "seasonOneStatus": "CLOSED_CANONICAL",
+    "productVersion": "V1.0.1",
+    "hotfixVersion": "1.0.1"
+  },
+  "canonStatuses": [
+    "Cânone original",
+    "Cânone consolidado",
+    "Cânone derivado",
+    "Provisório procedural",
+    "Hipótese narrativa",
+    "Planejamento futuro",
+    "Arquivado",
+    "Substituído",
+    "Não canônico"
+  ],
+  "spoilerLevels": [
+    {
+      "level": 0,
+      "name": "Introdução pública"
+    },
+    {
+      "level": 1,
+      "name": "Temporada 1"
+    },
+    {
+      "level": 2,
+      "name": "Expansão de Stellar"
+    },
+    {
+      "level": 3,
+      "name": "Segredos planetários"
+    },
+    {
+      "level": 4,
+      "name": "Segredos cósmicos"
+    },
+    {
+      "level": 5,
+      "name": "Administração"
+    }
+  ],
+  "categories": [
+    {
+      "code": "COS",
+      "name": "Cósmico",
+      "description": "Entidades e fenômenos além da escala planetária."
+    },
+    {
+      "code": "PLA",
+      "name": "Planetas",
+      "description": "Mundos vivos e corpos planetários."
+    },
+    {
+      "code": "BIO",
+      "name": "Biomas",
+      "description": "Grandes sistemas naturais e órgãos vivos de Stellar."
+    },
+    {
+      "code": "TER",
+      "name": "Territórios",
+      "description": "Reinos, confederações e zonas políticas."
+    },
+    {
+      "code": "CIT",
+      "name": "Cidades e locais",
+      "description": "Assentamentos, estações e centros logísticos."
+    },
+    {
+      "code": "LID",
+      "name": "Líderes",
+      "description": "Autoridades políticas, mágicas e militares."
+    },
+    {
+      "code": "PER",
+      "name": "Personagens",
+      "description": "Indivíduos centrais e secundários da narrativa."
+    },
+    {
+      "code": "CUL",
+      "name": "Povos e culturas",
+      "description": "Culturas regionais e identidades coletivas."
+    },
+    {
+      "code": "FAC",
+      "name": "Facções",
+      "description": "Instituições, alianças e organizações."
+    },
+    {
+      "code": "CRI",
+      "name": "Fauna",
+      "description": "Animais nativos, mágicos e simbióticos."
+    },
+    {
+      "code": "COR",
+      "name": "Corrompidos",
+      "description": "Organismos e áreas alterados pela Raiz Profunda."
+    },
+    {
+      "code": "FLO",
+      "name": "Flora",
+      "description": "Plantas estruturais, alimentares e mágicas."
+    },
+    {
+      "code": "MAG",
+      "name": "Magia",
+      "description": "Fontes, métodos, runas, custos e limitações."
+    },
+    {
+      "code": "TEC",
+      "name": "Tecnologia",
+      "description": "Tecnomagia, transportes, energia e indústria."
+    },
+    {
+      "code": "ART",
+      "name": "Artefatos e armas",
+      "description": "Armas, marcas, equipamentos e objetos únicos."
+    },
+    {
+      "code": "HIS",
+      "name": "História",
+      "description": "Eras, acontecimentos e cronologia de Stellar."
+    },
+    {
+      "code": "EPI",
+      "name": "Temporadas e episódios",
+      "description": "Estrutura narrativa e produção da obra."
+    },
+    {
+      "code": "MYS",
+      "name": "Mistérios",
+      "description": "Registros selados e informações futuras."
+    }
+  ],
+  "entries": [
+    {
+      "code": "COS-001",
+      "slug": "yah-hi",
+      "title": "YAH-Hi",
+      "subtitle": "A Frequência da Criação",
+      "category": "COS",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 4,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Frequência ou Voz da Criação, sem corpo conhecido.",
+      "facts": {
+        "Natureza": "Frequência/Voz da Criação",
+        "Corpo conhecido": "Nenhum"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "stellar",
+          "label": "Escala de criação"
+        }
+      ],
+      "keywords": [
+        "YAH-Hi",
+        "criação",
+        "frequência",
+        "voz"
+      ],
+      "sources": [
+        "RESUMO_MESTRE_CANONICO.md"
+      ]
+    },
+    {
+      "code": "COS-002",
+      "slug": "amadon",
+      "title": "Amadon",
+      "subtitle": "Guardião de Stellar",
+      "category": "COS",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 4,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Consciência guardiã conectada a Stellar. Sua existência é descoberta por Kenua somente no Episódio 8 da Temporada 1.",
+      "facts": {
+        "Função": "Guardião de Stellar",
+        "Vínculo": "Corrente Planetária",
+        "Criação conhecida": "Espinho-Negro",
+        "Escala de combate": "6 — planetário",
+        "Primeira conexão com Kenua": "Episódio 8 — O Hospedeiro"
+      },
+      "sections": [
+        {
+          "heading": "Política de revelação",
+          "body": "Kenua não ouve, vê ou identifica Amadon antes do último episódio da Temporada 1. Sinais anteriores pertencem à flor, à Corrente Planetária ou a memórias incompletas, nunca a uma conversa direta com o guardião."
+        }
+      ],
+      "relations": [
+        {
+          "slug": "stellar",
+          "label": "Guardião"
+        },
+        {
+          "slug": "espinho-negro",
+          "label": "Criador"
+        },
+        {
+          "slug": "raiz-profunda",
+          "label": "Oposição"
+        }
+      ],
+      "keywords": [
+        "Amadon",
+        "guardião",
+        "Corrente Planetária",
+        "Espinho-Negro"
+      ],
+      "sources": [
+        "RESUMO_MESTRE_CANONICO.md",
+        "MAGIA_ARMAS_E_COMBATE.md"
+      ]
+    },
+    {
+      "code": "COS-003",
+      "slug": "votakhel",
+      "title": "Votakhel",
+      "subtitle": "Entidade cósmica de regulação",
+      "category": "COS",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 4,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Entidade cósmica que regula vida excessiva segundo sua própria lógica e implantou a Raiz Profunda.",
+      "facts": {
+        "Ação conhecida": "Implantou a Raiz Profunda",
+        "Escala de combate": "7 — cósmico",
+        "Manifestação na Temporada 1": "Somente voz"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "raiz-profunda",
+          "label": "Implantador"
+        },
+        {
+          "slug": "stellar",
+          "label": "Ameaça cósmica"
+        }
+      ],
+      "keywords": [
+        "Votakhel",
+        "Raiz Profunda",
+        "colheita",
+        "entidade cósmica"
+      ],
+      "sources": [
+        "RESUMO_MESTRE_CANONICO.md",
+        "CRONOLOGIA_842_EC.md"
+      ]
+    },
+    {
+      "code": "PLA-001",
+      "slug": "stellar",
+      "title": "Stellar",
+      "subtitle": "O planeta vivo",
+      "category": "PLA",
+      "secondaryCategories": [],
+      "canon": "Cânone original",
+      "spoiler": 0,
+      "sealed": false,
+      "image": "assets/images/stellar.png",
+      "imageStatus": "Arte conceitual aprovada para o MVP",
+      "summary": "Planeta vivo onde natureza, tecnologia, magia, sociedades e espíritos coexistem em equilíbrio instável.",
+      "facts": {
+        "Natureza": "Planeta vivo",
+        "Ano atual": "842 EC",
+        "Governo planetário": "Não existe",
+        "Grandes sistemas ecológicos": "6",
+        "Guardião": "Amadon"
+      },
+      "sections": [
+        {
+          "heading": "Estrutura viva",
+          "body": "Stellar reage a alterações ecológicas e mágicas como um organismo planetário. Seus sistemas naturais não esgotam toda a geografia conhecida."
+        },
+        {
+          "heading": "Equilíbrio político",
+          "body": "O Conselho de Convergência negocia crises e rotas, mas não governa os territórios."
+        }
+      ],
+      "relations": [
+        {
+          "slug": "amadon",
+          "label": "Guardião"
+        },
+        {
+          "slug": "raiz-profunda",
+          "label": "Organismo invasor"
+        },
+        {
+          "slug": "espinho-negro",
+          "label": "Defesa planetária"
+        }
+      ],
+      "keywords": [
+        "Stellar",
+        "planeta vivo",
+        "842 EC",
+        "Amadon"
+      ],
+      "sources": [
+        "RESUMO_MESTRE_CANONICO.md",
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "BIO-001",
+      "slug": "coracao-ancestral",
+      "title": "Coração Ancestral",
+      "subtitle": "Memória, vida e magia",
+      "category": "BIO",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 0,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Floresta viva conectada à memória planetária, às Árvores Anciãs e às manifestações de Amadon.",
+      "facts": {
+        "Instituição associada": "Árvores Anciãs",
+        "Função narrativa inicial": "Área de contenção e encontro com o Espinho-Negro"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "stellar",
+          "label": "Sistema ecológico"
+        }
+      ],
+      "keywords": [
+        "Coração Ancestral",
+        "bioma",
+        "Stellar"
+      ],
+      "sources": [
+        "RESUMO_MESTRE_CANONICO.md"
+      ]
+    },
+    {
+      "code": "BIO-002",
+      "slug": "planicies-luminais",
+      "title": "Planícies Luminais",
+      "subtitle": "Sistema ecológico de Stellar",
+      "category": "BIO",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Um dos seis grandes sistemas ecológicos reconhecidos de Stellar.",
+      "facts": {},
+      "sections": [],
+      "relations": [
+        {
+          "slug": "stellar",
+          "label": "Sistema ecológico"
+        }
+      ],
+      "keywords": [
+        "Planícies Luminais",
+        "bioma",
+        "Stellar"
+      ],
+      "sources": [
+        "RESUMO_MESTRE_CANONICO.md"
+      ]
+    },
+    {
+      "code": "BIO-003",
+      "slug": "oceanos-e-abissos",
+      "title": "Oceanos e Abissos",
+      "subtitle": "Sistema ecológico de Stellar",
+      "category": "BIO",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Um dos seis grandes sistemas ecológicos reconhecidos de Stellar.",
+      "facts": {},
+      "sections": [],
+      "relations": [
+        {
+          "slug": "stellar",
+          "label": "Sistema ecológico"
+        }
+      ],
+      "keywords": [
+        "Oceanos e Abissos",
+        "bioma",
+        "Stellar"
+      ],
+      "sources": [
+        "RESUMO_MESTRE_CANONICO.md"
+      ]
+    },
+    {
+      "code": "BIO-004",
+      "slug": "subsolo-cristalino",
+      "title": "Subsolo Cristalino",
+      "subtitle": "Sistema ecológico de Stellar",
+      "category": "BIO",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Um dos seis grandes sistemas ecológicos reconhecidos de Stellar.",
+      "facts": {},
+      "sections": [],
+      "relations": [
+        {
+          "slug": "stellar",
+          "label": "Sistema ecológico"
+        }
+      ],
+      "keywords": [
+        "Subsolo Cristalino",
+        "bioma",
+        "Stellar"
+      ],
+      "sources": [
+        "RESUMO_MESTRE_CANONICO.md"
+      ]
+    },
+    {
+      "code": "BIO-005",
+      "slug": "picos-de-tempestade",
+      "title": "Picos de Tempestade",
+      "subtitle": "Sistema ecológico de Stellar",
+      "category": "BIO",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Um dos seis grandes sistemas ecológicos reconhecidos de Stellar.",
+      "facts": {},
+      "sections": [],
+      "relations": [
+        {
+          "slug": "stellar",
+          "label": "Sistema ecológico"
+        }
+      ],
+      "keywords": [
+        "Picos de Tempestade",
+        "bioma",
+        "Stellar"
+      ],
+      "sources": [
+        "RESUMO_MESTRE_CANONICO.md"
+      ]
+    },
+    {
+      "code": "BIO-006",
+      "slug": "pantanos-rubros",
+      "title": "Pântanos Rubros",
+      "subtitle": "Sistema ecológico de Stellar",
+      "category": "BIO",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Um dos seis grandes sistemas ecológicos reconhecidos de Stellar.",
+      "facts": {},
+      "sections": [],
+      "relations": [
+        {
+          "slug": "stellar",
+          "label": "Sistema ecológico"
+        }
+      ],
+      "keywords": [
+        "Pântanos Rubros",
+        "bioma",
+        "Stellar"
+      ],
+      "sources": [
+        "RESUMO_MESTRE_CANONICO.md"
+      ]
+    },
+    {
+      "code": "TER-001",
+      "slug": "confederacao-de-luminor",
+      "title": "Confederação de Lúminor",
+      "subtitle": "Confederação mercantil",
+      "category": "TER",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Território de Stellar organizado como confederação mercantil.",
+      "facts": {
+        "Estrutura": "Confederação mercantil",
+        "Autoridade máxima": "Elyra Vaelor",
+        "Cultura predominante": "Luminari"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "elyra-vaelor",
+          "label": "Autoridade máxima"
+        },
+        {
+          "slug": "stellar",
+          "label": "Território de Stellar"
+        }
+      ],
+      "keywords": [
+        "Confederação de Lúminor",
+        "Confederação mercantil",
+        "Elyra Vaelor",
+        "Luminari"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "TER-002",
+      "slug": "reino-ferral-de-kharveth",
+      "title": "Reino Ferral de Kharveth",
+      "subtitle": "Monarquia industrial constitucional",
+      "category": "TER",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Território de Stellar organizado como monarquia industrial constitucional.",
+      "facts": {
+        "Estrutura": "Monarquia industrial constitucional",
+        "Autoridade máxima": "Odran Ferrak IV",
+        "Cultura predominante": "Ferralinos"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "odran-ferrak-iv",
+          "label": "Autoridade máxima"
+        },
+        {
+          "slug": "stellar",
+          "label": "Território de Stellar"
+        }
+      ],
+      "keywords": [
+        "Reino Ferral de Kharveth",
+        "Monarquia industrial constitucional",
+        "Odran Ferrak IV",
+        "Ferralinos"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "TER-003",
+      "slug": "republica-de-ortheon",
+      "title": "República de Ortheon",
+      "subtitle": "Cidade-Estado ferroviária",
+      "category": "TER",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Território de Stellar organizado como cidade-estado ferroviária.",
+      "facts": {
+        "Estrutura": "Cidade-Estado ferroviária",
+        "Autoridade máxima": "Caelen Orthev",
+        "Cultura predominante": "Ortheanos"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "caelen-orthev",
+          "label": "Autoridade máxima"
+        },
+        {
+          "slug": "stellar",
+          "label": "Território de Stellar"
+        }
+      ],
+      "keywords": [
+        "República de Ortheon",
+        "Cidade-Estado ferroviária",
+        "Caelen Orthev",
+        "Ortheanos"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "TER-004",
+      "slug": "arquipelago-livre-de-navyr",
+      "title": "Arquipélago Livre de Navyr",
+      "subtitle": "Confederação marítima",
+      "category": "TER",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Território de Stellar organizado como confederação marítima.",
+      "facts": {
+        "Estrutura": "Confederação marítima",
+        "Autoridade máxima": "Nymara Vel-Thal",
+        "Cultura predominante": "Navyrianos"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "nymara-vel-thal",
+          "label": "Autoridade máxima"
+        },
+        {
+          "slug": "stellar",
+          "label": "Território de Stellar"
+        }
+      ],
+      "keywords": [
+        "Arquipélago Livre de Navyr",
+        "Confederação marítima",
+        "Nymara Vel-Thal",
+        "Navyrianos"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "TER-005",
+      "slug": "principado-de-ithra",
+      "title": "Principado de Ithra",
+      "subtitle": "Principado tecnomágico",
+      "category": "TER",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Território de Stellar organizado como principado tecnomágico.",
+      "facts": {
+        "Estrutura": "Principado tecnomágico",
+        "Autoridade máxima": "Saelyra Ithren",
+        "Cultura predominante": "Ithrianos"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "saelyra-ithren",
+          "label": "Autoridade máxima"
+        },
+        {
+          "slug": "stellar",
+          "label": "Território de Stellar"
+        }
+      ],
+      "keywords": [
+        "Principado de Ithra",
+        "Principado tecnomágico",
+        "Saelyra Ithren",
+        "Ithrianos"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "TER-006",
+      "slug": "reino-aereo-de-altavela",
+      "title": "Reino Aéreo de Altavela",
+      "subtitle": "Monarquia eletiva",
+      "category": "TER",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Território de Stellar organizado como monarquia eletiva.",
+      "facts": {
+        "Estrutura": "Monarquia eletiva",
+        "Autoridade máxima": "Vaelora Aereth",
+        "Cultura predominante": "Altavelanos"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "vaelora-aereth",
+          "label": "Autoridade máxima"
+        },
+        {
+          "slug": "stellar",
+          "label": "Território de Stellar"
+        }
+      ],
+      "keywords": [
+        "Reino Aéreo de Altavela",
+        "Monarquia eletiva",
+        "Vaelora Aereth",
+        "Altavelanos"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "TER-007",
+      "slug": "rubra-viva",
+      "title": "Rubra-Viva",
+      "subtitle": "Confederação medicinal",
+      "category": "TER",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Território de Stellar organizado como confederação medicinal.",
+      "facts": {
+        "Estrutura": "Confederação medicinal",
+        "Autoridade máxima": "Maeryn Salvara",
+        "Cultura predominante": "Rubravivos"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "maeryn-salvara",
+          "label": "Autoridade máxima"
+        },
+        {
+          "slug": "stellar",
+          "label": "Território de Stellar"
+        }
+      ],
+      "keywords": [
+        "Rubra-Viva",
+        "Confederação medicinal",
+        "Maeryn Salvara",
+        "Rubravivos"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "TER-008",
+      "slug": "santuarios-do-coracao",
+      "title": "Santuários do Coração",
+      "subtitle": "Território sagrado descentralizado",
+      "category": "TER",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Território de Stellar organizado como território sagrado descentralizado.",
+      "facts": {
+        "Estrutura": "Território sagrado descentralizado",
+        "Autoridade máxima": "Genes Arvath",
+        "Cultura predominante": "Povos das Copas"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "genes-arvath",
+          "label": "Autoridade máxima"
+        },
+        {
+          "slug": "stellar",
+          "label": "Território de Stellar"
+        }
+      ],
+      "keywords": [
+        "Santuários do Coração",
+        "Território sagrado descentralizado",
+        "Genes Arvath",
+        "Povos das Copas"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "TER-009",
+      "slug": "liga-subcristal",
+      "title": "Liga Subcristal",
+      "subtitle": "Liga de cidades subterrâneas",
+      "category": "TER",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Território de Stellar organizado como liga de cidades subterrâneas.",
+      "facts": {
+        "Estrutura": "Liga de cidades subterrâneas",
+        "Autoridade máxima": "Torvhan Calther",
+        "Cultura predominante": "Subcristalinos"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "torvhan-calther",
+          "label": "Autoridade máxima"
+        },
+        {
+          "slug": "stellar",
+          "label": "Território de Stellar"
+        }
+      ],
+      "keywords": [
+        "Liga Subcristal",
+        "Liga de cidades subterrâneas",
+        "Torvhan Calther",
+        "Subcristalinos"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "TER-010",
+      "slug": "dominio-dos-reis-magos",
+      "title": "Domínio dos Reis Magos",
+      "subtitle": "Magocracia aristocrática",
+      "category": "TER",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Território de Stellar organizado como magocracia aristocrática.",
+      "facts": {
+        "Estrutura": "Magocracia aristocrática",
+        "Autoridade máxima": "Maelkar Enohar",
+        "Cultura predominante": "Enoharianos"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "maelkar-enohar",
+          "label": "Autoridade máxima"
+        },
+        {
+          "slug": "stellar",
+          "label": "Território de Stellar"
+        }
+      ],
+      "keywords": [
+        "Domínio dos Reis Magos",
+        "Magocracia aristocrática",
+        "Maelkar Enohar",
+        "Enoharianos"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "TER-011",
+      "slug": "terras-livres",
+      "title": "Terras Livres",
+      "subtitle": "Comunidades autônomas",
+      "category": "TER",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Território de Stellar organizado como comunidades autônomas.",
+      "facts": {
+        "Estrutura": "Comunidades autônomas",
+        "Autoridade máxima": "Kaenna Vor",
+        "Cultura predominante": "Fronteiriços"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "kaenna-vor",
+          "label": "Autoridade máxima"
+        },
+        {
+          "slug": "stellar",
+          "label": "Território de Stellar"
+        }
+      ],
+      "keywords": [
+        "Terras Livres",
+        "Comunidades autônomas",
+        "Kaenna Vor",
+        "Fronteiriços"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "TER-012",
+      "slug": "zonas-de-contencao",
+      "title": "Zonas de Contenção",
+      "subtitle": "Autoridade emergencial",
+      "category": "TER",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Território de Stellar organizado como autoridade emergencial.",
+      "facts": {
+        "Estrutura": "Autoridade emergencial",
+        "Autoridade máxima": "Ishara Veyn",
+        "Cultura predominante": "Deslocados e equipes de contenção"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "ishara-veyn",
+          "label": "Autoridade máxima"
+        },
+        {
+          "slug": "stellar",
+          "label": "Território de Stellar"
+        }
+      ],
+      "keywords": [
+        "Zonas de Contenção",
+        "Autoridade emergencial",
+        "Ishara Veyn",
+        "Deslocados e equipes de contenção"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "TER-013",
+      "slug": "fortaleza-do-trovao",
+      "title": "Fortaleza do Trovão",
+      "subtitle": "Domínio pessoal",
+      "category": "TER",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Território de Stellar organizado como domínio pessoal.",
+      "facts": {
+        "Estrutura": "Domínio pessoal",
+        "Autoridade máxima": "Serverus Vaelkor",
+        "Cultura predominante": "Seguidores e contratados"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "serverus-vaelkor",
+          "label": "Autoridade máxima"
+        },
+        {
+          "slug": "stellar",
+          "label": "Território de Stellar"
+        }
+      ],
+      "keywords": [
+        "Fortaleza do Trovão",
+        "Domínio pessoal",
+        "Serverus Vaelkor",
+        "Seguidores e contratados"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "CIT-001",
+      "slug": "posto-de-varga",
+      "title": "Posto de Varga",
+      "subtitle": "Entreposto das Terras Livres",
+      "category": "CIT",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Posto fronteiriço onde Kenua cobra um contrato, conversa com Kaenna e recebe o mandado de Serverus.",
+      "facts": {
+        "Território": "Terras Livres",
+        "Aparição": "Episódio 1 — A Recompensa"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "terras-livres",
+          "label": "Localização"
+        },
+        {
+          "slug": "kenua-vaarn",
+          "label": "Passagem"
+        },
+        {
+          "slug": "kaenna-vor",
+          "label": "Autoridade local"
+        }
+      ],
+      "keywords": [
+        "Posto de Varga",
+        "fronteira",
+        "Kaenna",
+        "contrato"
+      ],
+      "sources": [
+        "EPISODIO_1_A_RECOMPENSA_ROTEIRO_BASE.md"
+      ]
+    },
+    {
+      "code": "CIT-002",
+      "slug": "estacao-oriental",
+      "title": "Estação Oriental",
+      "subtitle": "Nó ferroviário sob investigação",
+      "category": "CIT",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Estação ligada a desaparecimentos e à rota investigada por Kenua no início de O Hospedeiro.",
+      "facts": {
+        "Função": "Estação ferroviária",
+        "Situação": "Desaparecimentos próximos"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "posto-de-varga",
+          "label": "Rota fronteiriça"
+        },
+        {
+          "slug": "episodio-1-a-recompensa",
+          "label": "Investigação"
+        }
+      ],
+      "keywords": [
+        "Estação Oriental",
+        "ferrovia",
+        "desaparecimentos"
+      ],
+      "sources": [
+        "EPISODIO_1_A_RECOMPENSA_ROTEIRO_BASE.md"
+      ]
+    },
+    {
+      "code": "LID-001",
+      "slug": "elyra-vaelor",
+      "title": "Elyra Vaelor",
+      "subtitle": "Primeira Condutora",
+      "category": "LID",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Primeira Condutora e liderança canônica associada ao território correspondente.",
+      "facts": {
+        "Cargo": "Primeira Condutora"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "confederacao-de-luminor",
+          "label": "Autoridade máxima"
+        }
+      ],
+      "keywords": [
+        "Elyra Vaelor",
+        "Primeira Condutora"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "LID-002",
+      "slug": "odran-ferrak-iv",
+      "title": "Odran Ferrak IV",
+      "subtitle": "Autoridade máxima de Kharveth",
+      "category": "LID",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Autoridade máxima de Kharveth e liderança canônica associada ao território correspondente.",
+      "facts": {
+        "Cargo": "Autoridade máxima de Kharveth"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "reino-ferral-de-kharveth",
+          "label": "Autoridade máxima"
+        }
+      ],
+      "keywords": [
+        "Odran Ferrak IV",
+        "Autoridade máxima de Kharveth"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "LID-003",
+      "slug": "caelen-orthev",
+      "title": "Caelen Orthev",
+      "subtitle": "Autoridade máxima de Ortheon",
+      "category": "LID",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Autoridade máxima de Ortheon e liderança canônica associada ao território correspondente.",
+      "facts": {
+        "Cargo": "Autoridade máxima de Ortheon"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "republica-de-ortheon",
+          "label": "Autoridade máxima"
+        }
+      ],
+      "keywords": [
+        "Caelen Orthev",
+        "Autoridade máxima de Ortheon"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "LID-004",
+      "slug": "nymara-vel-thal",
+      "title": "Nymara Vel-Thal",
+      "subtitle": "Autoridade máxima de Navyr",
+      "category": "LID",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Autoridade máxima de Navyr e liderança canônica associada ao território correspondente.",
+      "facts": {
+        "Cargo": "Autoridade máxima de Navyr"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "arquipelago-livre-de-navyr",
+          "label": "Autoridade máxima"
+        }
+      ],
+      "keywords": [
+        "Nymara Vel-Thal",
+        "Autoridade máxima de Navyr"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "LID-005",
+      "slug": "saelyra-ithren",
+      "title": "Saelyra Ithren",
+      "subtitle": "Autoridade máxima de Ithra",
+      "category": "LID",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Autoridade máxima de Ithra e liderança canônica associada ao território correspondente.",
+      "facts": {
+        "Cargo": "Autoridade máxima de Ithra"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "principado-de-ithra",
+          "label": "Autoridade máxima"
+        }
+      ],
+      "keywords": [
+        "Saelyra Ithren",
+        "Autoridade máxima de Ithra"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "LID-006",
+      "slug": "vaelora-aereth",
+      "title": "Vaelora Aereth",
+      "subtitle": "Autoridade máxima de Altavela",
+      "category": "LID",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Autoridade máxima de Altavela e liderança canônica associada ao território correspondente.",
+      "facts": {
+        "Cargo": "Autoridade máxima de Altavela"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "reino-aereo-de-altavela",
+          "label": "Autoridade máxima"
+        }
+      ],
+      "keywords": [
+        "Vaelora Aereth",
+        "Autoridade máxima de Altavela"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "LID-007",
+      "slug": "maeryn-salvara",
+      "title": "Maeryn Salvara",
+      "subtitle": "Autoridade máxima de Rubra-Viva",
+      "category": "LID",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Autoridade máxima de Rubra-Viva e liderança canônica associada ao território correspondente.",
+      "facts": {
+        "Cargo": "Autoridade máxima de Rubra-Viva"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "rubra-viva",
+          "label": "Autoridade máxima"
+        }
+      ],
+      "keywords": [
+        "Maeryn Salvara",
+        "Autoridade máxima de Rubra-Viva"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "LID-008",
+      "slug": "torvhan-calther",
+      "title": "Torvhan Calther",
+      "subtitle": "Autoridade máxima da Liga Subcristal",
+      "category": "LID",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Autoridade máxima da Liga Subcristal e liderança canônica associada ao território correspondente.",
+      "facts": {
+        "Cargo": "Autoridade máxima da Liga Subcristal"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "liga-subcristal",
+          "label": "Autoridade máxima"
+        }
+      ],
+      "keywords": [
+        "Torvhan Calther",
+        "Autoridade máxima da Liga Subcristal"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "PER-001",
+      "slug": "aelyra-voss",
+      "title": "Aelyra Voss",
+      "subtitle": "A hospedeira anterior",
+      "category": "PER",
+      "secondaryCategories": [],
+      "canon": "Cânone original",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Exploradora botânica, curadora e pesquisadora arcano-botânica; antiga companheira de Serlis e hospedeira anterior do Espinho-Negro.",
+      "facts": {
+        "Gênero": "Feminino",
+        "Idade ao morrer": "26 anos",
+        "Profissões": "Exploradora botânica e curadora",
+        "Condição": "Falecida",
+        "Vínculo": "Antiga companheira de Serlis",
+        "Grupo": "Círculo Arcano-Botânico da Flor Fóssil",
+        "Área de pesquisa": "Magia, botânica e respostas simbióticas da flor fóssil"
+      },
+      "sections": [
+        {
+          "heading": "Pesquisa e magia",
+          "body": "Aelyra integrava uma equipe multidisciplinar de pesquisadores e magos que estudava a flor fóssil sob contenção. Sua função combinava exploração botânica, cura e observação de compatibilidade."
+        },
+        {
+          "heading": "Simbiose anterior",
+          "body": "Aelyra foi selecionada pelo Espinho-Negro, mas não suportou a simbiose. Serlis prolongou a estabilização além do limite que ela desejava, erro que se tornou o centro de sua culpa."
+        }
+      ],
+      "relations": [
+        {
+          "slug": "serlis-aftermoon",
+          "label": "Antiga companheira"
+        },
+        {
+          "slug": "espinho-negro",
+          "label": "Hospedeira anterior"
+        },
+        {
+          "slug": "caso-aelyra",
+          "label": "Evento histórico"
+        },
+        {
+          "slug": "circulo-arcano-botanico",
+          "label": "Pesquisadora e maga"
+        }
+      ],
+      "keywords": [
+        "Aelyra",
+        "hospedeira anterior",
+        "Serlis",
+        "Espinho-Negro"
+      ],
+      "sources": [
+        "BIBLIA_PERSONAGENS_VOLUME_1.md",
+        "RESUMO_MESTRE_CANONICO.md"
+      ]
+    },
+    {
+      "code": "PER-002",
+      "slug": "kenua-vaarn",
+      "title": "Kenua Vaarn",
+      "subtitle": "O hospedeiro mais compatível",
+      "category": "PER",
+      "secondaryCategories": [],
+      "canon": "Cânone original",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Caçador, rastreador, investigador e mercenário das Terras Livres da Fronteira. Hospedeiro do Espinho-Negro.",
+      "facts": {
+        "Gênero": "Masculino",
+        "Idade": "31 anos",
+        "Origem": "Terras Livres da Fronteira",
+        "Profissão": "Caçador, rastreador, investigador e mercenário",
+        "Condição": "Hospedeiro do Espinho-Negro",
+        "Escala sem simbiose": "Grau 2"
+      },
+      "sections": [
+        {
+          "heading": "Perfil",
+          "body": "Sarcástico, estratégico, reservado e observador. Deseja controle e independência, mas precisa aceitar vínculo e confiança."
+        },
+        {
+          "heading": "Medo central",
+          "body": "Ferir inocentes enquanto permanece consciente dentro do próprio corpo."
+        },
+        {
+          "heading": "Histórico familiar",
+          "body": "Filho de Daren e Meyra Vaarn. Daren desapareceu em 824 EC; Meyra morreu em 832 EC durante epidemia agravada pelo atraso de medicamentos."
+        }
+      ],
+      "relations": [
+        {
+          "slug": "serlis-aftermoon",
+          "label": "Aliado em formação"
+        },
+        {
+          "slug": "espinho-negro",
+          "label": "Simbiose"
+        },
+        {
+          "slug": "kaenna-vor",
+          "label": "Aliada antiga"
+        },
+        {
+          "slug": "daren-vaarn",
+          "label": "Pai"
+        },
+        {
+          "slug": "meyra-vaarn",
+          "label": "Mãe"
+        }
+      ],
+      "keywords": [
+        "Kenua",
+        "hospedeiro",
+        "fronteira",
+        "mercenário",
+        "Espinho-Negro"
+      ],
+      "sources": [
+        "BIBLIA_PERSONAGENS_VOLUME_1.md",
+        "RESUMO_MESTRE_CANONICO.md"
+      ]
+    },
+    {
+      "code": "PER-003",
+      "slug": "serlis-aftermoon",
+      "title": "Serlis Aftermoon",
+      "subtitle": "Mestre de contenção das Árvores Anciãs",
+      "category": "PER",
+      "secondaryCategories": [],
+      "canon": "Cânone original",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Mago de alta hierarquia das Árvores Anciãs, especialista em contenção, runas, anatomia mágica e simbiose; fugitivo após o Caso Aelyra e portador de uma marca inselável.",
+      "facts": {
+        "Gênero": "Masculino",
+        "Idade": "29 anos",
+        "Especialidades": "Contenção, runas, anatomia mágica e simbiose",
+        "Condição": "Fugitivo das Árvores Anciãs",
+        "Mentor institucional": "Genes Arvath",
+        "Escala sem preparação": "Grau 3",
+        "Hierarquia anterior": "Mestre de Contenção do Ramo Interno",
+        "Vínculo de pesquisa": "Visitante e fiscal do Círculo Arcano-Botânico da Flor Fóssil",
+        "Relação com Genes": "Discípulo criado e protegido como filho"
+      },
+      "sections": [
+        {
+          "heading": "Origem e posição",
+          "body": "Encontrado ainda criança próximo a uma Árvore de Memória, Serlis foi criado pelas Árvores Anciãs e ascendeu a uma posição respeitada na hierarquia. Como Mestre de Contenção do Ramo Interno, tinha autorização para inspecionar zonas de pesquisa restritas."
+        },
+        {
+          "heading": "Aelyra e o núcleo de pesquisa",
+          "body": "Aelyra integrava um grupo de pesquisa e magia dedicado à flor fóssil. Serlis visitava a área por dever institucional e por seu vínculo afetivo com ela. Após a morte de Aelyra, recusou permitir novas exposições humanas."
+        },
+        {
+          "heading": "O pesquisador paralisado",
+          "body": "Para impedir que o pesquisador-mor Ilyan Morveth conduzisse outra tentativa, Serlis aplicou a Estase de Intervalo, uma paralisia mágica cuja fórmula completa apenas ele conhece. O objetivo foi impedir novas mortes, não executar o pesquisador."
+        },
+        {
+          "heading": "Conflito",
+          "body": "Carrega culpa por prolongar a tentativa de sobrevivência de Aelyra. Deseja salvar Kenua, mas precisa aprender a respeitar as decisões dele e a desenvolver o vínculo com a flor ao longo de várias temporadas, sem domínio imediato."
+        },
+        {
+          "heading": "Marca inselável",
+          "body": "Sua marca reage à corrupção e não foi criada pelas Árvores Anciãs."
+        }
+      ],
+      "relations": [
+        {
+          "slug": "kenua-vaarn",
+          "label": "Responsável pela contenção"
+        },
+        {
+          "slug": "genes-arvath",
+          "label": "Antigo discípulo"
+        },
+        {
+          "slug": "aelyra-voss",
+          "label": "Antigo companheiro"
+        },
+        {
+          "slug": "arvores-ancias",
+          "label": "Instituição de origem"
+        },
+        {
+          "slug": "circulo-arcano-botanico",
+          "label": "Fiscal e visitante autorizado"
+        },
+        {
+          "slug": "ilyan-morveth",
+          "label": "Responsável pela estase"
+        },
+        {
+          "slug": "estase-de-intervalo",
+          "label": "Único conhecedor completo"
+        }
+      ],
+      "keywords": [
+        "Aelyra",
+        "Estase de Intervalo",
+        "Mestre de Contenção",
+        "Ramo Interno",
+        "Serlis",
+        "contenção",
+        "mago",
+        "marca inselável",
+        "Árvores Anciãs"
+      ],
+      "sources": [
+        "BIBLIA_PERSONAGENS_VOLUME_1.md",
+        "CORRECOES_CANONICAS_OBRIGATORIAS.md"
+      ]
+    },
+    {
+      "code": "PER-004",
+      "slug": "genes-arvath",
+      "title": "Genes Arvath",
+      "subtitle": "Supremo Mago das Árvores Anciãs",
+      "category": "PER",
+      "secondaryCategories": [],
+      "canon": "Cânone original",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Supremo Mago das Árvores Anciãs, defensor de preservação e contenção. Ama Serlis como um filho e deseja trazê-lo de volta à ordem, mesmo que para isso precise enviar discípulos atrás dele.",
+      "facts": {
+        "Gênero": "Masculino",
+        "Idade": "72 anos",
+        "Cargo": "Supremo Mago das Árvores Anciãs",
+        "Escala em território preparado": "Até grau 5"
+      },
+      "sections": [
+        {
+          "heading": "Serlis",
+          "body": "Genes não considera Serlis apenas um antigo discípulo. Participou de sua criação e o protegeu como filho. A fuga foi recebida como ruptura institucional e perda familiar."
+        },
+        {
+          "heading": "Ordem de retorno",
+          "body": "Genes determina que Serlis seja encontrado vivo. Discípulos das Árvores Anciãs serão enviados gradualmente, criando pressão, confronto e tentativas de reconciliação ao longo da história."
+        },
+        {
+          "heading": "Decisão institucional",
+          "body": "Ocultou registros de hospedeiros anteriores para impedir pânico e exploração, mas sua proteção pode transformar responsabilidade em controle."
+        }
+      ],
+      "relations": [
+        {
+          "slug": "serlis-aftermoon",
+          "label": "Antigo discípulo"
+        },
+        {
+          "slug": "arvores-ancias",
+          "label": "Liderança"
+        },
+        {
+          "slug": "santuarios-do-coracao",
+          "label": "Autoridade territorial"
+        },
+        {
+          "slug": "circulo-arcano-botanico",
+          "label": "Autoridade institucional"
+        }
+      ],
+      "keywords": [
+        "Genes",
+        "Supremo Mago",
+        "Árvores Anciãs",
+        "contenção"
+      ],
+      "sources": [
+        "BIBLIA_PERSONAGENS_VOLUME_1.md"
+      ]
+    },
+    {
+      "code": "PER-005",
+      "slug": "serverus-vaelkor",
+      "title": "Serverus Vaelkor",
+      "subtitle": "Rei Mago da Preservação",
+      "category": "PER",
+      "secondaryCategories": [],
+      "canon": "Cânone original",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Rei Mago paciente, persuasivo e controlador que manipula o encontro entre Kenua, Serlis e o Espinho-Negro.",
+      "facts": {
+        "Gênero": "Masculino",
+        "Idade": "68 anos",
+        "Cargo": "Rei Mago da Preservação",
+        "Domínio": "Fortaleza do Trovão",
+        "Escala em território preparado": "Até grau 5"
+      },
+      "sections": [
+        {
+          "heading": "Objetivo",
+          "body": "Deseja utilizar o Espinho-Negro contra a Raiz Profunda e acredita que poderes planetários não podem permanecer livres."
+        },
+        {
+          "heading": "Intervenção",
+          "body": "Organizou parcialmente o encontro entre Kenua, Serlis e a planta."
+        }
+      ],
+      "relations": [
+        {
+          "slug": "kenua-vaarn",
+          "label": "Contratante"
+        },
+        {
+          "slug": "serlis-aftermoon",
+          "label": "Alvo do contrato"
+        },
+        {
+          "slug": "fortaleza-do-trovao",
+          "label": "Domínio pessoal"
+        },
+        {
+          "slug": "marcador-de-rota",
+          "label": "Instrumento de manipulação"
+        }
+      ],
+      "keywords": [
+        "Serverus",
+        "Rei Mago",
+        "preservação",
+        "contrato"
+      ],
+      "sources": [
+        "BIBLIA_PERSONAGENS_VOLUME_1.md",
+        "EPISODIO_1_A_RECOMPENSA_ROTEIRO_BASE.md"
+      ]
+    },
+    {
+      "code": "PER-006",
+      "slug": "kaenna-vor",
+      "title": "Kaenna Vor",
+      "subtitle": "Guardiã-Mor das Terras Livres",
+      "category": "PER",
+      "secondaryCategories": [],
+      "canon": "Cânone original",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Caçadora, mediadora e líder das Terras Livres; aliada antiga de Kenua e portadora de uma prótese mecânica no braço direito.",
+      "facts": {
+        "Gênero": "Feminino",
+        "Idade": "42 anos",
+        "Cargo": "Guardiã-Mor das Terras Livres",
+        "Característica": "Prótese mecânica no braço direito"
+      },
+      "sections": [
+        {
+          "heading": "Conhecimento oculto",
+          "body": "Encontrou indícios de que Daren sobreviveu ao desaparecimento inicial."
+        }
+      ],
+      "relations": [
+        {
+          "slug": "kenua-vaarn",
+          "label": "Aliada antiga"
+        },
+        {
+          "slug": "terras-livres",
+          "label": "Autoridade máxima"
+        },
+        {
+          "slug": "daren-vaarn",
+          "label": "Investigação do desaparecimento"
+        }
+      ],
+      "keywords": [
+        "Kaenna",
+        "Guardiã-Mor",
+        "Terras Livres",
+        "prótese"
+      ],
+      "sources": [
+        "BIBLIA_PERSONAGENS_VOLUME_1.md"
+      ]
+    },
+    {
+      "code": "PER-007",
+      "slug": "ishara-veyn",
+      "title": "Ishara Veyn",
+      "subtitle": "Comandante da Vigília Radicular",
+      "category": "PER",
+      "secondaryCategories": [],
+      "canon": "Cânone original",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Sobrevivente contaminada que defende transparência e contenção severa, mas esconde a própria condição.",
+      "facts": {
+        "Gênero": "Feminino",
+        "Idade": "47 anos",
+        "Cargo": "Comandante da Vigília Radicular",
+        "Condição": "Corrupção estabilizada no corpo"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "vigilia-radicular",
+          "label": "Comandante"
+        },
+        {
+          "slug": "zonas-de-contencao",
+          "label": "Autoridade máxima"
+        },
+        {
+          "slug": "raiz-profunda",
+          "label": "Contaminação estabilizada"
+        }
+      ],
+      "keywords": [
+        "Ishara",
+        "Vigília Radicular",
+        "contenção",
+        "corrupção"
+      ],
+      "sources": [
+        "BIBLIA_PERSONAGENS_VOLUME_1.md"
+      ]
+    },
+    {
+      "code": "PER-008",
+      "slug": "maelkar-enohar",
+      "title": "Maelkar Enohar",
+      "subtitle": "Primeira Coroa do Conclave",
+      "category": "PER",
+      "secondaryCategories": [],
+      "canon": "Cânone original",
+      "spoiler": 3,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Especialista em contratos e juramentos que considera a possibilidade de negociar uma sobrevivência parcial de Stellar.",
+      "facts": {
+        "Gênero": "Masculino",
+        "Idade": "74 anos",
+        "Cargo": "Primeira Coroa do Conclave",
+        "Especialidade": "Contratos e juramentos"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "dominio-dos-reis-magos",
+          "label": "Autoridade máxima"
+        },
+        {
+          "slug": "votakhel",
+          "label": "Hipótese de negociação"
+        }
+      ],
+      "keywords": [
+        "Maelkar",
+        "Conclave",
+        "contratos",
+        "juramentos"
+      ],
+      "sources": [
+        "BIBLIA_PERSONAGENS_VOLUME_1.md"
+      ]
+    },
+    {
+      "code": "PER-009",
+      "slug": "daren-vaarn",
+      "title": "Daren Vaarn",
+      "subtitle": "Pai desaparecido de Kenua",
+      "category": "PER",
+      "secondaryCategories": [],
+      "canon": "Cânone original",
+      "spoiler": 3,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Pai de Kenua, desaparecido em 824 EC. Existem indícios de que sobreviveu ao desaparecimento inicial.",
+      "facts": {
+        "Condição": "Desaparecido",
+        "Ano do desaparecimento": "824 EC",
+        "Filho": "Kenua Vaarn"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "kenua-vaarn",
+          "label": "Pai"
+        },
+        {
+          "slug": "kaenna-vor",
+          "label": "Investigação"
+        }
+      ],
+      "keywords": [
+        "Daren",
+        "desaparecimento",
+        "Kenua",
+        "824 EC"
+      ],
+      "sources": [
+        "BIBLIA_PERSONAGENS_VOLUME_1.md",
+        "CRONOLOGIA_842_EC.md"
+      ]
+    },
+    {
+      "code": "PER-010",
+      "slug": "meyra-vaarn",
+      "title": "Meyra Vaarn",
+      "subtitle": "Mãe de Kenua",
+      "category": "PER",
+      "secondaryCategories": [],
+      "canon": "Cânone original",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Mãe de Kenua, falecida em 832 EC durante uma epidemia agravada pelo atraso de medicamentos.",
+      "facts": {
+        "Condição": "Falecida",
+        "Ano da morte": "832 EC",
+        "Filho": "Kenua Vaarn"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "kenua-vaarn",
+          "label": "Mãe"
+        }
+      ],
+      "keywords": [
+        "Meyra",
+        "Kenua",
+        "epidemia",
+        "832 EC"
+      ],
+      "sources": [
+        "BIBLIA_PERSONAGENS_VOLUME_1.md"
+      ]
+    },
+    {
+      "code": "PER-011",
+      "slug": "ilyan-morveth",
+      "title": "Ilyan Morveth",
+      "subtitle": "Pesquisador-mor e guardião da flor",
+      "category": "PER",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 3,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Pesquisador importante responsável por proteger a flor fóssil e preservar o programa de estudo após a morte de Aelyra.",
+      "facts": {
+        "Gênero": "Masculino",
+        "Função": "Pesquisador-mor e guardião científico da flor",
+        "Grupo": "Círculo Arcano-Botânico da Flor Fóssil",
+        "Condição": "Vivo, mantido em Estase de Intervalo",
+        "Responsável pela estase": "Serlis Aftermoon"
+      },
+      "sections": [
+        {
+          "heading": "Confronto com Serlis",
+          "body": "Após o Caso Aelyra, Ilyan pretendia manter a flor sob pesquisa e considerava novos testes necessários. Serlis o paralisou para impedir que outra pessoa morresse pelo projeto."
+        }
+      ],
+      "relations": [
+        {
+          "slug": "serlis-aftermoon",
+          "label": "Conflito e estase"
+        },
+        {
+          "slug": "aelyra-voss",
+          "label": "Colega de pesquisa"
+        },
+        {
+          "slug": "circulo-arcano-botanico",
+          "label": "Pesquisador-mor"
+        }
+      ],
+      "keywords": [
+        "Ilyan",
+        "pesquisador",
+        "flor",
+        "estase"
+      ],
+      "sources": [
+        "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+      ]
+    },
+    {
+      "code": "CUL-001",
+      "slug": "luminari",
+      "title": "Luminari",
+      "subtitle": "Cultura predominante de um território de Stellar",
+      "category": "CUL",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Identidade coletiva associada ao território Confederação de Lúminor.",
+      "facts": {},
+      "sections": [],
+      "relations": [
+        {
+          "slug": "confederacao-de-luminor",
+          "label": "Território predominante"
+        }
+      ],
+      "keywords": [
+        "Luminari",
+        "cultura",
+        "Stellar"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "CUL-002",
+      "slug": "ferralinos",
+      "title": "Ferralinos",
+      "subtitle": "Cultura predominante de um território de Stellar",
+      "category": "CUL",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Identidade coletiva associada ao território Reino Ferral de Kharveth.",
+      "facts": {},
+      "sections": [],
+      "relations": [
+        {
+          "slug": "reino-ferral-de-kharveth",
+          "label": "Território predominante"
+        }
+      ],
+      "keywords": [
+        "Ferralinos",
+        "cultura",
+        "Stellar"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "CUL-003",
+      "slug": "ortheanos",
+      "title": "Ortheanos",
+      "subtitle": "Cultura predominante de um território de Stellar",
+      "category": "CUL",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Identidade coletiva associada ao território República de Ortheon.",
+      "facts": {},
+      "sections": [],
+      "relations": [
+        {
+          "slug": "republica-de-ortheon",
+          "label": "Território predominante"
+        }
+      ],
+      "keywords": [
+        "Ortheanos",
+        "cultura",
+        "Stellar"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "CUL-004",
+      "slug": "navyrianos",
+      "title": "Navyrianos",
+      "subtitle": "Cultura predominante de um território de Stellar",
+      "category": "CUL",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Identidade coletiva associada ao território Arquipélago Livre de Navyr.",
+      "facts": {},
+      "sections": [],
+      "relations": [
+        {
+          "slug": "arquipelago-livre-de-navyr",
+          "label": "Território predominante"
+        }
+      ],
+      "keywords": [
+        "Navyrianos",
+        "cultura",
+        "Stellar"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "CUL-005",
+      "slug": "ithrianos",
+      "title": "Ithrianos",
+      "subtitle": "Cultura predominante de um território de Stellar",
+      "category": "CUL",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Identidade coletiva associada ao território Principado de Ithra.",
+      "facts": {},
+      "sections": [],
+      "relations": [
+        {
+          "slug": "principado-de-ithra",
+          "label": "Território predominante"
+        }
+      ],
+      "keywords": [
+        "Ithrianos",
+        "cultura",
+        "Stellar"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "CUL-006",
+      "slug": "altavelanos",
+      "title": "Altavelanos",
+      "subtitle": "Cultura predominante de um território de Stellar",
+      "category": "CUL",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Identidade coletiva associada ao território Reino Aéreo de Altavela.",
+      "facts": {},
+      "sections": [],
+      "relations": [
+        {
+          "slug": "reino-aereo-de-altavela",
+          "label": "Território predominante"
+        }
+      ],
+      "keywords": [
+        "Altavelanos",
+        "cultura",
+        "Stellar"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "CUL-007",
+      "slug": "rubravivos",
+      "title": "Rubravivos",
+      "subtitle": "Cultura predominante de um território de Stellar",
+      "category": "CUL",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Identidade coletiva associada ao território Rubra-Viva.",
+      "facts": {},
+      "sections": [],
+      "relations": [
+        {
+          "slug": "rubra-viva",
+          "label": "Território predominante"
+        }
+      ],
+      "keywords": [
+        "Rubravivos",
+        "cultura",
+        "Stellar"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "CUL-008",
+      "slug": "povos-das-copas",
+      "title": "Povos das Copas",
+      "subtitle": "Cultura predominante de um território de Stellar",
+      "category": "CUL",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Identidade coletiva associada ao território Santuários do Coração.",
+      "facts": {},
+      "sections": [],
+      "relations": [
+        {
+          "slug": "santuarios-do-coracao",
+          "label": "Território predominante"
+        }
+      ],
+      "keywords": [
+        "Povos das Copas",
+        "cultura",
+        "Stellar"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "CUL-009",
+      "slug": "subcristalinos",
+      "title": "Subcristalinos",
+      "subtitle": "Cultura predominante de um território de Stellar",
+      "category": "CUL",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Identidade coletiva associada ao território Liga Subcristal.",
+      "facts": {},
+      "sections": [],
+      "relations": [
+        {
+          "slug": "liga-subcristal",
+          "label": "Território predominante"
+        }
+      ],
+      "keywords": [
+        "Subcristalinos",
+        "cultura",
+        "Stellar"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "CUL-010",
+      "slug": "enoharianos",
+      "title": "Enoharianos",
+      "subtitle": "Cultura predominante de um território de Stellar",
+      "category": "CUL",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Identidade coletiva associada ao território Domínio dos Reis Magos.",
+      "facts": {},
+      "sections": [],
+      "relations": [
+        {
+          "slug": "dominio-dos-reis-magos",
+          "label": "Território predominante"
+        }
+      ],
+      "keywords": [
+        "Enoharianos",
+        "cultura",
+        "Stellar"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "CUL-011",
+      "slug": "fronteiricos",
+      "title": "Fronteiriços",
+      "subtitle": "Cultura predominante de um território de Stellar",
+      "category": "CUL",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Identidade coletiva associada ao território Terras Livres.",
+      "facts": {},
+      "sections": [],
+      "relations": [
+        {
+          "slug": "terras-livres",
+          "label": "Território predominante"
+        }
+      ],
+      "keywords": [
+        "Fronteiriços",
+        "cultura",
+        "Stellar"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "CUL-012",
+      "slug": "deslocados-e-equipes-de-contencao",
+      "title": "Deslocados e equipes de contenção",
+      "subtitle": "Cultura predominante de um território de Stellar",
+      "category": "CUL",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Identidade coletiva associada ao território Zonas de Contenção.",
+      "facts": {},
+      "sections": [],
+      "relations": [
+        {
+          "slug": "zonas-de-contencao",
+          "label": "Território predominante"
+        }
+      ],
+      "keywords": [
+        "Deslocados e equipes de contenção",
+        "cultura",
+        "Stellar"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "CUL-013",
+      "slug": "seguidores-e-contratados",
+      "title": "Seguidores e contratados",
+      "subtitle": "Cultura predominante de um território de Stellar",
+      "category": "CUL",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Identidade coletiva associada ao território Fortaleza do Trovão.",
+      "facts": {},
+      "sections": [],
+      "relations": [
+        {
+          "slug": "fortaleza-do-trovao",
+          "label": "Território predominante"
+        }
+      ],
+      "keywords": [
+        "Seguidores e contratados",
+        "cultura",
+        "Stellar"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "FAC-001",
+      "slug": "arvores-ancias",
+      "title": "Árvores Anciãs",
+      "subtitle": "Instituição de preservação e magia",
+      "category": "FAC",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Instituição dedicada à preservação do Coração Ancestral, ao registro da magia e à contenção de ameaças biológicas.",
+      "facts": {
+        "Fundação": "1732 APC",
+        "Liderança atual": "Genes Arvath",
+        "Especialidades": "Contenção, cura, memória e magia vegetal",
+        "Estrutura": "Ordem hierárquica também chamada de culto por observadores externos",
+        "Ramo de Serlis": "Ramo Interno de Contenção"
+      },
+      "sections": [
+        {
+          "heading": "Hierarquia",
+          "body": "A instituição organiza magos por ramos de memória, cura, pesquisa e contenção. Serlis ocupava uma posição respeitada como Mestre de Contenção do Ramo Interno."
+        },
+        {
+          "heading": "Busca por Serlis",
+          "body": "Sob ordem de Genes, discípulos serão enviados para localizar e trazer Serlis de volta vivo. A perseguição será explorada progressivamente, sem concentrar toda a revelação no primeiro episódio."
+        }
+      ],
+      "relations": [
+        {
+          "slug": "genes-arvath",
+          "label": "Liderança"
+        },
+        {
+          "slug": "serlis-aftermoon",
+          "label": "Antigo membro"
+        },
+        {
+          "slug": "coracao-ancestral",
+          "label": "Santuário principal"
+        }
+      ],
+      "keywords": [
+        "Árvores Anciãs",
+        "Genes",
+        "magia",
+        "contenção"
+      ],
+      "sources": [
+        "CRONOLOGIA_842_EC.md",
+        "RESUMO_MESTRE_CANONICO.md"
+      ]
+    },
+    {
+      "code": "FAC-002",
+      "slug": "reis-magos",
+      "title": "Reis Magos",
+      "subtitle": "Instituição de poder mágico",
+      "category": "FAC",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Instituição fundada em 684 APC e ligada ao Domínio dos Reis Magos.",
+      "facts": {
+        "Fundação": "684 APC"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "dominio-dos-reis-magos",
+          "label": "Domínio político"
+        },
+        {
+          "slug": "maelkar-enohar",
+          "label": "Primeira Coroa"
+        }
+      ],
+      "keywords": [
+        "Reis Magos",
+        "684 APC",
+        "Maelkar"
+      ],
+      "sources": [
+        "CRONOLOGIA_842_EC.md"
+      ]
+    },
+    {
+      "code": "FAC-003",
+      "slug": "conselho-de-convergencia",
+      "title": "Conselho de Convergência",
+      "subtitle": "Fórum de negociação planetária",
+      "category": "FAC",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Instituição que negocia crises e rotas entre potências, sem governar Stellar.",
+      "facts": {
+        "Fundação": "392 EC",
+        "Autoridade": "Negociação, não governo planetário"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "stellar",
+          "label": "Escala planetária"
+        }
+      ],
+      "keywords": [
+        "Conselho de Convergência",
+        "rotas",
+        "crises"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md",
+        "CRONOLOGIA_842_EC.md"
+      ]
+    },
+    {
+      "code": "FAC-004",
+      "slug": "vigilia-radicular",
+      "title": "Vigília Radicular",
+      "subtitle": "Organização de contenção",
+      "category": "FAC",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Organização de resposta e contenção radicular formada em 753 EC.",
+      "facts": {
+        "Formação": "753 EC",
+        "Comandante": "Ishara Veyn"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "ishara-veyn",
+          "label": "Comandante"
+        },
+        {
+          "slug": "zonas-de-contencao",
+          "label": "Área de atuação"
+        }
+      ],
+      "keywords": [
+        "Vigília Radicular",
+        "Ishara",
+        "contenção"
+      ],
+      "sources": [
+        "CRONOLOGIA_842_EC.md",
+        "BIBLIA_PERSONAGENS_VOLUME_1.md"
+      ]
+    },
+    {
+      "code": "FAC-005",
+      "slug": "circulo-arcano-botanico",
+      "title": "Círculo Arcano-Botânico da Flor Fóssil",
+      "subtitle": "Grupo de pesquisa e magia",
+      "category": "FAC",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Núcleo multidisciplinar ligado às Árvores Anciãs que reuniu botânicos, curadores, magos e especialistas em contenção para estudar a flor fóssil.",
+      "facts": {
+        "Natureza": "Grupo de pesquisa e magia",
+        "Membro conhecido": "Aelyra Voss",
+        "Pesquisador-mor": "Ilyan Morveth",
+        "Fiscal visitante": "Serlis Aftermoon",
+        "Status": "Desativado e sob sigilo após o Caso Aelyra"
+      },
+      "sections": [
+        {
+          "heading": "Objetivo",
+          "body": "Compreender a origem, a compatibilidade e os riscos da flor sem permitir disseminação. Divergências internas sobre novos testes contribuíram para a ruptura."
+        }
+      ],
+      "relations": [
+        {
+          "slug": "aelyra-voss",
+          "label": "Pesquisadora e maga"
+        },
+        {
+          "slug": "ilyan-morveth",
+          "label": "Pesquisador-mor"
+        },
+        {
+          "slug": "serlis-aftermoon",
+          "label": "Fiscal visitante"
+        },
+        {
+          "slug": "arvores-ancias",
+          "label": "Instituição superior"
+        }
+      ],
+      "keywords": [
+        "pesquisa",
+        "magia",
+        "flor fóssil",
+        "Aelyra",
+        "Serlis"
+      ],
+      "sources": [
+        "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+      ]
+    },
+    {
+      "code": "CRI-001",
+      "slug": "cortassom",
+      "title": "Cortassom",
+      "subtitle": "Fauna das Planícies da Fronteira",
+      "category": "CRI",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Criatura deslocada e ferida por mineração ilegal, investigada por Kenua no início de A Recompensa.",
+      "facts": {
+        "Aparição": "Episódio 1 — A Recompensa",
+        "Condição observada": "Ferido e deslocado por mineração ilegal"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "kenua-vaarn",
+          "label": "Investigado sem execução"
+        },
+        {
+          "slug": "episodio-1-a-recompensa",
+          "label": "Aparição"
+        }
+      ],
+      "keywords": [
+        "Cortassom",
+        "fauna",
+        "mineração ilegal",
+        "Kenua"
+      ],
+      "sources": [
+        "EPISODIO_1_A_RECOMPENSA_ROTEIRO_BASE.md",
+        "APROVACAO_AUTORAL_EPISODIO_1_E_ADICOES.md",
+        "EPISODIO_1_A_RECOMPENSA_ROTEIRO_COMPLETO_V3.md"
+      ]
+    },
+    {
+      "code": "CRI-002",
+      "slug": "velurio",
+      "title": "Velúrio",
+      "subtitle": "Herbívoro leiteiro das planícies",
+      "category": "CRI",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Animal gregário de dorso largo, criado em comunidades fronteiriças por seu leite proteico e resistente à fermentação.",
+      "facts": {
+        "Classe": "Animal leiteiro domesticável",
+        "Habitat": "Planícies Luminais e Terras Livres da Fronteira",
+        "Alimento": "Leite veluriano",
+        "Nutrientes dominantes": "Proteínas, cálcio, vitaminas B2 e B12",
+        "Risco": "Perde qualidade quando o rebanho é alimentado em solo contaminado"
+      },
+      "sections": [
+        {
+          "heading": "Uso alimentar",
+          "body": "O leite é consumido fresco, fermentado ou concentrado em barras de viagem. É uma fonte comum de recuperação após esforço, mas não substitui água, minerais e repouso."
+        }
+      ],
+      "relations": [
+        {
+          "slug": "planicies-luminais",
+          "label": "Habitat"
+        },
+        {
+          "slug": "fronteiricos",
+          "label": "Criação tradicional"
+        }
+      ],
+      "keywords": [
+        "Velúrio",
+        "leite",
+        "vitaminas",
+        "fronteira",
+        "nutrição"
+      ],
+      "sources": [
+        "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+      ]
+    },
+    {
+      "code": "CRI-003",
+      "slug": "brumante",
+      "title": "Brumante",
+      "subtitle": "Animal leiteiro das terras altas",
+      "category": "CRI",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Herbívoro de seis membros adaptado ao frio, valorizado pelo leite denso usado em rações de inverno e recuperação muscular.",
+      "facts": {
+        "Classe": "Animal leiteiro domesticável",
+        "Habitat": "Picos de Tempestade e encostas frias",
+        "Alimento": "Leite brumante",
+        "Nutrientes dominantes": "Lipídios, vitamina D, vitamina E e cálcio",
+        "Risco": "Muito concentrado; excesso causa sobrecarga digestiva"
+      },
+      "sections": [
+        {
+          "heading": "Criação",
+          "body": "Rebanhos pequenos são mantidos próximos a abrigos de pedra. A produção diminui durante tempestades rúnicas e exige manejo paciente."
+        }
+      ],
+      "relations": [
+        {
+          "slug": "picos-de-tempestade",
+          "label": "Habitat"
+        }
+      ],
+      "keywords": [
+        "Brumante",
+        "leite",
+        "vitamina D",
+        "montanha"
+      ],
+      "sources": [
+        "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+      ]
+    },
+    {
+      "code": "CRI-004",
+      "slug": "lumara",
+      "title": "Lúmara",
+      "subtitle": "Cervídeo luminal de leite claro",
+      "category": "CRI",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Herbívoro de marcas bioluminescentes, criado em bosques abertos por seu leite claro e rico em micronutrientes.",
+      "facts": {
+        "Classe": "Animal leiteiro semidomesticado",
+        "Habitat": "Bosques luminosos e bordas do Coração Ancestral",
+        "Alimento": "Leite de lúmara",
+        "Nutrientes dominantes": "Vitamina A, folato, potássio e proteínas leves",
+        "Risco": "Foge de ruído intenso e não tolera confinamento prolongado"
+      },
+      "sections": [
+        {
+          "heading": "Importância médica",
+          "body": "Curadores usam o leite em dietas de convalescença. Ele auxilia reposição nutricional, mas não possui efeito mágico de cura."
+        }
+      ],
+      "relations": [
+        {
+          "slug": "coracao-ancestral",
+          "label": "Região de origem"
+        }
+      ],
+      "keywords": [
+        "Lúmara",
+        "leite",
+        "vitamina A",
+        "folato",
+        "cura"
+      ],
+      "sources": [
+        "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+      ]
+    },
+    {
+      "code": "CRI-005",
+      "slug": "raizel-manso",
+      "title": "Raizel manso",
+      "subtitle": "Navegador herbívoro do sub-bosque",
+      "category": "CRI",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Animal baixo e robusto que encontra tubérculos sem danificar raízes vitais. Seu leite âmbar é usado em rações de emergência.",
+      "facts": {
+        "Classe": "Animal leiteiro domesticável",
+        "Habitat": "Sub-bosques úmidos",
+        "Alimento": "Leite âmbar de raizel",
+        "Nutrientes dominantes": "Ferro biodisponível, vitamina B9, proteína e sais",
+        "Risco": "Acumula toxinas se criado próximo a zonas corrompidas"
+      },
+      "sections": [
+        {
+          "heading": "Relação com a simbiose",
+          "body": "Dietas com leite de raizel podem ajudar a repor nutrientes consumidos por processos regenerativos, mas não eliminam a fome da flor nem garantem controle."
+        }
+      ],
+      "relations": [
+        {
+          "slug": "espinho-negro",
+          "label": "Possível recurso nutricional"
+        }
+      ],
+      "keywords": [
+        "Raizel",
+        "leite âmbar",
+        "ferro",
+        "simbiose",
+        "nutrição"
+      ],
+      "sources": [
+        "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+      ]
+    },
+    {
+      "code": "CRI-006",
+      "slug": "luzipolen",
+      "title": "Luzipólen",
+      "subtitle": "Inseto polinizador inofensivo",
+      "category": "CRI",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Pequeno polinizador luminoso que transporta pólen entre flores noturnas e evita seres de grande porte.",
+      "facts": {
+        "Classe": "Inseto inofensivo",
+        "Dieta": "Néctar e pólen",
+        "Defesa": "Apaga a luz e permanece imóvel",
+        "Perigo humano": "Nenhum conhecido"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "coracao-ancestral",
+          "label": "Habitat"
+        }
+      ],
+      "keywords": [
+        "inseto",
+        "inofensivo",
+        "polinizador",
+        "luz"
+      ],
+      "sources": [
+        "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+      ]
+    },
+    {
+      "code": "CRI-007",
+      "slug": "fio-de-orvalho",
+      "title": "Fio-de-Orvalho",
+      "subtitle": "Inseto decompositor inofensivo",
+      "category": "CRI",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Inseto de pernas finas que recolhe umidade em fios orgânicos e acelera a decomposição de folhas mortas.",
+      "facts": {
+        "Classe": "Inseto inofensivo",
+        "Dieta": "Fungos e matéria vegetal morta",
+        "Função ecológica": "Reciclagem de nutrientes",
+        "Perigo humano": "Nenhum conhecido"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "coracao-ancestral",
+          "label": "Habitat"
+        }
+      ],
+      "keywords": [
+        "inseto",
+        "inofensivo",
+        "decompositor",
+        "orvalho"
+      ],
+      "sources": [
+        "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+      ]
+    },
+    {
+      "code": "CRI-008",
+      "slug": "grilo-cobre",
+      "title": "Grilo-Cobre",
+      "subtitle": "Inseto comestível de campos secos",
+      "category": "CRI",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Inseto de carapaça acobreada criado em caixas de argila e consumido torrado ou moído.",
+      "facts": {
+        "Classe": "Inseto comestível",
+        "Preparo obrigatório": "Tostado ou cozido",
+        "Nutrientes dominantes": "Proteína, vitaminas B e zinco",
+        "Risco": "Pode concentrar metais de solos contaminados"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "fronteiricos",
+          "label": "Alimento tradicional"
+        }
+      ],
+      "keywords": [
+        "inseto",
+        "comestível",
+        "proteína",
+        "grilo"
+      ],
+      "sources": [
+        "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+      ]
+    },
+    {
+      "code": "CRI-009",
+      "slug": "larva-de-veu",
+      "title": "Larva-de-Véu",
+      "subtitle": "Inseto comestível de casca macia",
+      "category": "CRI",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Larva criada em fibras vegetais limpas, usada em caldos densos e farinha de campanha.",
+      "facts": {
+        "Classe": "Inseto comestível",
+        "Preparo obrigatório": "Cozimento completo",
+        "Nutrientes dominantes": "Lipídios, vitamina E e proteína",
+        "Risco": "Crua possui enzimas irritantes"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "deslocados-e-equipes-de-contencao",
+          "label": "Ração de campanha"
+        }
+      ],
+      "keywords": [
+        "inseto",
+        "comestível",
+        "ração",
+        "vitamina E"
+      ],
+      "sources": [
+        "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+      ]
+    },
+    {
+      "code": "CRI-010",
+      "slug": "vespa-de-vidro",
+      "title": "Vespa-de-Vidro",
+      "subtitle": "Inseto peçonhento de paralisia curta",
+      "category": "CRI",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Vespa translúcida cujo ferrão libera toxina neuromuscular capaz de interromper movimentos por poucos minutos.",
+      "facts": {
+        "Classe": "Inseto peçonhento",
+        "Efeito": "Paralisia muscular temporária e dor intensa",
+        "Comportamento": "Defensivo próximo ao ninho",
+        "Interação com magia": "Afeta o corpo do portador, não cancela magia por si só"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "estase-de-intervalo",
+          "label": "Paralisia de natureza diferente"
+        }
+      ],
+      "keywords": [
+        "inseto",
+        "peçonhento",
+        "paralisia",
+        "vespa"
+      ],
+      "sources": [
+        "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+      ]
+    },
+    {
+      "code": "CRI-011",
+      "slug": "besouro-rubro",
+      "title": "Besouro-Rubro",
+      "subtitle": "Inseto venenoso de defesa química",
+      "category": "CRI",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Besouro que libera uma secreção rubra irritante quando esmagado ou ameaçado.",
+      "facts": {
+        "Classe": "Inseto venenoso",
+        "Efeito": "Queimadura química, febre e inflamação",
+        "Comportamento": "Não persegue; defesa por contato",
+        "Habitat": "Pântanos Rubros"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "pantanos-rubros",
+          "label": "Habitat"
+        }
+      ],
+      "keywords": [
+        "inseto",
+        "venenoso",
+        "besouro",
+        "pântano"
+      ],
+      "sources": [
+        "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+      ]
+    },
+    {
+      "code": "CRI-012",
+      "slug": "louva-fenda",
+      "title": "Louva-Fenda",
+      "subtitle": "Inseto predador de emboscada",
+      "category": "CRI",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Predador do tamanho de um antebraço que se camufla em fendas de pedra e captura pequenos animais por projeção das patas dianteiras.",
+      "facts": {
+        "Classe": "Inseto predador",
+        "Presa principal": "Roedores, larvas e aves pequenas",
+        "Perigo humano": "Baixo isoladamente; alto próximo a colônias",
+        "Método de caça": "Emboscada por vibração"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "subsolo-cristalino",
+          "label": "Habitat"
+        }
+      ],
+      "keywords": [
+        "inseto",
+        "predador",
+        "emboscada",
+        "subsolo"
+      ],
+      "sources": [
+        "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+      ]
+    },
+    {
+      "code": "CRI-013",
+      "slug": "mandibula-de-nevoa",
+      "title": "Mandíbula-de-Névoa",
+      "subtitle": "Inseto predador de enxame",
+      "category": "CRI",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Inseto cinzento que caça em pequenos enxames coordenados por vibração e mudanças de pressão.",
+      "facts": {
+        "Classe": "Inseto predador",
+        "Presa principal": "Insetos menores e animais feridos",
+        "Perigo humano": "Moderado em enxames",
+        "Limite": "Perde coordenação em áreas de vibração irregular"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "cortassom",
+          "label": "Vibrações interferem na coordenação"
+        }
+      ],
+      "keywords": [
+        "inseto",
+        "predador",
+        "enxame",
+        "névoa"
+      ],
+      "sources": [
+        "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+      ]
+    },
+    {
+      "code": "COR-001",
+      "slug": "raiz-profunda",
+      "title": "Raiz Profunda",
+      "subtitle": "Organismo invasor enterrado em Stellar",
+      "category": "COR",
+      "secondaryCategories": [],
+      "canon": "Cânone original",
+      "spoiler": 3,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Organismo invasor implantado por Votakhel, com fases de implantação, enraizamento, alimentação silenciosa, corrupção, emergência e colheita.",
+      "facts": {
+        "Implantador": "Votakhel",
+        "Escala de combate": "6 — planetário",
+        "Fases": "Implantação, enraizamento, alimentação silenciosa, corrupção, emergência e colheita"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "votakhel",
+          "label": "Implantador"
+        },
+        {
+          "slug": "stellar",
+          "label": "Hospedeiro planetário invadido"
+        },
+        {
+          "slug": "espinho-negro",
+          "label": "Oposição criada por Amadon"
+        }
+      ],
+      "keywords": [
+        "Raiz Profunda",
+        "Votakhel",
+        "corrupção",
+        "colheita"
+      ],
+      "sources": [
+        "RESUMO_MESTRE_CANONICO.md"
+      ]
+    },
+    {
+      "code": "MAG-001",
+      "slug": "leis-da-magia",
+      "title": "Leis da magia",
+      "subtitle": "Fonte, método, custo e consequência",
+      "category": "MAG",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Toda magia exige fonte, método, portador, objetivo, alvo, custo e consequência; ela transforma energia existente e não cria energia infinita.",
+      "facts": {
+        "Variáveis obrigatórias": "Fonte, método, portador, objetivo, alvo, custo e consequência",
+        "Aumentam o custo": "Distância, complexidade, permanência, resistência e compatibilidade"
+      },
+      "sections": [
+        {
+          "heading": "Fontes",
+          "body": "Corpo, ambiente, Corrente Planetária, cristais, energia espiritual, energia orgânica e energia corrompida."
+        },
+        {
+          "heading": "Métodos",
+          "body": "Fórmula falada, runa, gesto, vínculo, foco, ritual e instinto mágico."
+        }
+      ],
+      "relations": [
+        {
+          "slug": "runas",
+          "label": "Método estruturado"
+        },
+        {
+          "slug": "corrente-planetaria",
+          "label": "Fonte planetária"
+        }
+      ],
+      "keywords": [
+        "magia",
+        "fonte",
+        "custo",
+        "consequência"
+      ],
+      "sources": [
+        "MAGIA_ARMAS_E_COMBATE.md"
+      ]
+    },
+    {
+      "code": "MAG-002",
+      "slug": "runas",
+      "title": "Runas",
+      "subtitle": "Estruturas de direção e contenção",
+      "category": "MAG",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Sistema mágico estruturado em núcleo, direção, limite, condição e dissipador.",
+      "facts": {
+        "Componentes possíveis": "Núcleo, direção, limite, condição e dissipador",
+        "Categorias": "Condução, contenção, proteção, movimento, percepção, transformação, restauração, interrupção, vínculo e mental"
+      },
+      "sections": [
+        {
+          "heading": "Runas em armas",
+          "body": "Runas podem estabilizar, direcionar, conter ou amplificar energia já disponível. Não geram munição ou potência infinita; exigem material compatível, recarga, manutenção e conhecimento especializado."
+        }
+      ],
+      "relations": [
+        {
+          "slug": "leis-da-magia",
+          "label": "Método mágico"
+        },
+        {
+          "slug": "serlis-aftermoon",
+          "label": "Especialista"
+        },
+        {
+          "slug": "sistema-de-armamentos",
+          "label": "Aplicação em armamentos"
+        }
+      ],
+      "keywords": [
+        "runas",
+        "contenção",
+        "dissipador"
+      ],
+      "sources": [
+        "MAGIA_ARMAS_E_COMBATE.md"
+      ]
+    },
+    {
+      "code": "MAG-003",
+      "slug": "corrente-planetaria",
+      "title": "Corrente Planetária",
+      "subtitle": "Fluxo mágico de Stellar",
+      "category": "MAG",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 3,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Fonte planetária à qual Amadon está conectado e que pode alimentar fenômenos mágicos.",
+      "facts": {
+        "Escala": "Planetária",
+        "Vínculo conhecido": "Amadon"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "stellar",
+          "label": "Origem planetária"
+        },
+        {
+          "slug": "amadon",
+          "label": "Conexão"
+        }
+      ],
+      "keywords": [
+        "Corrente Planetária",
+        "Stellar",
+        "Amadon"
+      ],
+      "sources": [
+        "RESUMO_MESTRE_CANONICO.md",
+        "MAGIA_ARMAS_E_COMBATE.md"
+      ]
+    },
+    {
+      "code": "MAG-004",
+      "slug": "marca-inselavel",
+      "title": "Marca inselável de Serlis",
+      "subtitle": "Marca reativa à corrupção",
+      "category": "MAG",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Marca portada por Serlis que reage à corrupção e não foi criada pelas Árvores Anciãs.",
+      "facts": {
+        "Portador": "Serlis Aftermoon",
+        "Reação": "Corrupção",
+        "Origem": "Não criada pelas Árvores Anciãs"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "serlis-aftermoon",
+          "label": "Portador"
+        },
+        {
+          "slug": "raiz-profunda",
+          "label": "Reação à corrupção"
+        }
+      ],
+      "keywords": [
+        "marca inselável",
+        "Serlis",
+        "corrupção"
+      ],
+      "sources": [
+        "BIBLIA_PERSONAGENS_VOLUME_1.md"
+      ]
+    },
+    {
+      "code": "MAG-005",
+      "slug": "estados-de-controle-da-simbiose",
+      "title": "Estados de controle da simbiose",
+      "subtitle": "Escala de influência do Espinho-Negro",
+      "category": "MAG",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Escala de influência da flor sobre Kenua. O controle voluntário exige treinamento prolongado com Serlis e evolui por temporadas, não em um único episódio.",
+      "facts": {
+        "0–20%": "Kenua domina",
+        "20–40%": "Reações automáticas",
+        "40–60%": "Decisões misturadas",
+        "60–80%": "Funções importantes assumidas",
+        "80%": "Controle motor majoritário para evitar a morte",
+        "100%": "Instável, substituição ou integração irreversível"
+      },
+      "sections": [
+        {
+          "heading": "Progressão narrativa",
+          "body": "Na Temporada 1 predominam reações involuntárias, fome e contenção. O Episódio 8 estabelece apenas o primeiro pacto e a primeira ação conscientemente compartilhada. Domínio estável é objetivo de temporadas futuras."
+        }
+      ],
+      "relations": [
+        {
+          "slug": "kenua-vaarn",
+          "label": "Hospedeiro"
+        },
+        {
+          "slug": "espinho-negro",
+          "label": "Agente simbiótico"
+        }
+      ],
+      "keywords": [
+        "80%",
+        "controle",
+        "simbiose",
+        "Kenua"
+      ],
+      "sources": [
+        "MAGIA_ARMAS_E_COMBATE.md"
+      ]
+    },
+    {
+      "code": "MAG-006",
+      "slug": "escala-de-combate",
+      "title": "Escala de combate",
+      "subtitle": "Classificação de capacidade",
+      "category": "MAG",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Escala canônica de 0 a 7 para descrever capacidade de combate e alcance de ameaça.",
+      "facts": {
+        "0": "Não combatente",
+        "1": "Treinado",
+        "2": "Especialista",
+        "3": "Elite",
+        "4": "Autoridade",
+        "5": "Excepcional/regional",
+        "6": "Planetário",
+        "7": "Cósmico"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "kenua-vaarn",
+          "label": "Grau 2 sem simbiose"
+        },
+        {
+          "slug": "serlis-aftermoon",
+          "label": "Grau 3 sem preparação"
+        },
+        {
+          "slug": "votakhel",
+          "label": "Grau 7"
+        }
+      ],
+      "keywords": [
+        "escala de combate",
+        "grau",
+        "planetário",
+        "cósmico"
+      ],
+      "sources": [
+        "MAGIA_ARMAS_E_COMBATE.md"
+      ]
+    },
+    {
+      "code": "MAG-007",
+      "slug": "estase-de-intervalo",
+      "title": "Estase de Intervalo",
+      "subtitle": "Paralisia mágica exclusiva de Serlis",
+      "category": "MAG",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Técnica de contenção que ancora o intervalo entre impulso nervoso, intenção mágica e movimento, paralisando o alvo sem interromper funções vitais.",
+      "facts": {
+        "Criador conhecido": "Serlis Aftermoon",
+        "Conhecimento completo": "Exclusivo de Serlis",
+        "Não é": "Parada do tempo",
+        "Custo": "Concentração contínua, âncoras rúnicas e alto desgaste neural",
+        "Limite": "Risco crescente de dano se mantida por tempo excessivo"
+      },
+      "sections": [
+        {
+          "heading": "Uso no Caso Aelyra",
+          "body": "Serlis aplicou a técnica em Ilyan Morveth para impedir nova exposição à flor. A estase preserva vida, mas exige monitoramento e não é uma solução permanente."
+        }
+      ],
+      "relations": [
+        {
+          "slug": "serlis-aftermoon",
+          "label": "Único usuário completo"
+        },
+        {
+          "slug": "ilyan-morveth",
+          "label": "Alvo conhecido"
+        }
+      ],
+      "keywords": [
+        "estase",
+        "paralisia",
+        "Serlis",
+        "contenção"
+      ],
+      "sources": [
+        "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+      ]
+    },
+    {
+      "code": "TEC-001",
+      "slug": "rede-ferroviaria-de-ortheon",
+      "title": "Rede ferroviária de Ortheon",
+      "subtitle": "Infraestrutura de uma cidade-Estado ferroviária",
+      "category": "TEC",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Rede ferroviária associada à República de Ortheon e às rotas utilizadas na primeira temporada.",
+      "facts": {
+        "Território associado": "República de Ortheon",
+        "Uso narrativo": "Rota da investigação de Kenua"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "republica-de-ortheon",
+          "label": "Infraestrutura"
+        },
+        {
+          "slug": "episodio-1-a-recompensa",
+          "label": "Aparição"
+        }
+      ],
+      "keywords": [
+        "ferrovia",
+        "Ortheon",
+        "trem",
+        "rota"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md",
+        "EPISODIO_1_A_RECOMPENSA_ROTEIRO_BASE.md"
+      ]
+    },
+    {
+      "code": "TEC-002",
+      "slug": "tecnomagia-de-ithra",
+      "title": "Tecnomagia de Ithra",
+      "subtitle": "Base tecnológica do principado",
+      "category": "TEC",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Tecnologia e magia integradas na estrutura do Principado de Ithra.",
+      "facts": {
+        "Território associado": "Principado de Ithra"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "principado-de-ithra",
+          "label": "Origem territorial"
+        }
+      ],
+      "keywords": [
+        "Ithra",
+        "tecnomagia"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "TEC-003",
+      "slug": "industria-ferral",
+      "title": "Indústria ferral",
+      "subtitle": "Base produtiva de Kharveth",
+      "category": "TEC",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Estrutura industrial associada ao Reino Ferral de Kharveth.",
+      "facts": {
+        "Território associado": "Reino Ferral de Kharveth"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "reino-ferral-de-kharveth",
+          "label": "Origem territorial"
+        }
+      ],
+      "keywords": [
+        "Kharveth",
+        "indústria",
+        "ferral"
+      ],
+      "sources": [
+        "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+      ]
+    },
+    {
+      "code": "ART-001",
+      "slug": "espinho-negro",
+      "title": "Espinho-Negro",
+      "subtitle": "Planta fóssil inteligente de origem selada",
+      "category": "ART",
+      "secondaryCategories": [
+        "FLO"
+      ],
+      "canon": "Cânone original",
+      "spoiler": 1,
+      "sealed": false,
+      "image": "assets/images/espinho-negro.png",
+      "imageStatus": "Arte conceitual aprovada para o MVP",
+      "summary": "Planta fóssil inteligente criada para localizar e combater uma corrupção radicular; sua origem consciente permanece selada até o final da Temporada 1.",
+      "facts": {
+        "Natureza": "Planta fóssil inteligente",
+        "Criador": "Registro selado — revelação prevista para o Episódio 8",
+        "Objetivo": "Localizar e destruir a Raiz Profunda",
+        "Hospedeiro atual": "Kenua Vaarn",
+        "Escala máxima conhecida": "Progressiva; Kenua não possui domínio imediato"
+      },
+      "sections": [
+        {
+          "heading": "Simbiose",
+          "body": "A planta drena e exige nutrientes, aprende linguagem e moralidade pelo hospedeiro e pode integrar-se a armas. A adaptação é lenta, perigosa e desenvolvida com auxílio de Serlis ao longo das temporadas."
+        },
+        {
+          "heading": "Formas conhecidas",
+          "body": "Placas, tentáculos e lâminas são respostas potenciais, não habilidades imediatamente dominadas. A planta pode reagir antes de Kenua decidir."
+        },
+        {
+          "heading": "Limites",
+          "body": "Toda forma respeita conservação de matéria e energia; regeneração exige alimentos, água, minerais, vitaminas e reservas orgânicas. O vínculo não concede controle instantâneo."
+        }
+      ],
+      "relations": [
+        {
+          "slug": "raiz-profunda",
+          "label": "Alvo original"
+        },
+        {
+          "slug": "kenua-vaarn",
+          "label": "Hospedeiro atual"
+        },
+        {
+          "slug": "aelyra-voss",
+          "label": "Hospedeira anterior"
+        }
+      ],
+      "keywords": [
+        "Amadon",
+        "Espinho-Negro",
+        "controle gradual",
+        "nutrição",
+        "origem selada",
+        "planta fóssil",
+        "simbiose"
+      ],
+      "sources": [
+        "RESUMO_MESTRE_CANONICO.md",
+        "MAGIA_ARMAS_E_COMBATE.md"
+      ]
+    },
+    {
+      "code": "ART-002",
+      "slug": "espada-de-kenua",
+      "title": "Espada de Kenua",
+      "subtitle": "Arma integrada à simbiose",
+      "category": "ART",
+      "secondaryCategories": [],
+      "canon": "Cânone original",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Espada utilizada por Kenua e integrada às manifestações do Espinho-Negro.",
+      "facts": {
+        "Portador": "Kenua Vaarn",
+        "Integração": "Espinho-Negro"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "kenua-vaarn",
+          "label": "Portador"
+        },
+        {
+          "slug": "espinho-negro",
+          "label": "Integração"
+        }
+      ],
+      "keywords": [
+        "espada",
+        "Kenua",
+        "Espinho-Negro"
+      ],
+      "sources": [
+        "RESUMO_MESTRE_CANONICO.md"
+      ]
+    },
+    {
+      "code": "ART-003",
+      "slug": "marcador-de-rota",
+      "title": "Marcador de rota",
+      "subtitle": "Instrumento rastreável de Serverus",
+      "category": "ART",
+      "secondaryCategories": [],
+      "canon": "Cânone original",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Marcador entregue a Kenua por Serverus e utilizado como parte da manipulação do contrato.",
+      "facts": {
+        "Entregue por": "Serverus Vaelkor",
+        "Portador temporário": "Kenua Vaarn",
+        "Função aparente": "Marcação de rota",
+        "Função oculta": "Rastreamento e espera de resposta"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "serverus-vaelkor",
+          "label": "Proprietário estratégico"
+        },
+        {
+          "slug": "kenua-vaarn",
+          "label": "Portador"
+        },
+        {
+          "slug": "episodio-1-a-recompensa",
+          "label": "Aparição"
+        }
+      ],
+      "keywords": [
+        "marcador",
+        "Serverus",
+        "rastreamento",
+        "contrato"
+      ],
+      "sources": [
+        "EPISODIO_1_A_RECOMPENSA_ROTEIRO_BASE.md"
+      ]
+    },
+    {
+      "code": "ART-004",
+      "slug": "sistema-de-armamentos",
+      "title": "Sistema de armamentos de Stellar",
+      "subtitle": "Categorias, acesso e runificação",
+      "category": "ART",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Classificação de armas usada em Stellar, distinguindo ferramentas improvisadas, armamento mecânico e versões rúnicas de maior custo e potência.",
+      "facts": {
+        "Acesso sem magia": "Armas improvisadas, mecânicas e munição convencional",
+        "Acesso com recursos": "Armas rúnicas compradas em armerias ou lojas de magos",
+        "Regra central": "Runas ampliam ou direcionam energia existente; não criam potência infinita",
+        "Fatores de preço": "Material, complexidade rúnica, carga, licença e manutenção"
+      },
+      "sections": [
+        {
+          "heading": "Faixas de runificação",
+          "body": "R0: sem runas. R1: uma runa funcional. R2: matriz de runas coordenadas. R3: vínculo especializado com manutenção frequente. Quanto maior a faixa, maior o custo, a potência e o risco de falha."
+        },
+        {
+          "heading": "Desigualdade de acesso",
+          "body": "Pessoas sem magia ou poucos recursos adaptam ferramentas, peças ferroviárias e equipamento de trabalho. Quem possui dinheiro compra armas industriais ou rúnicas em lojas de magos, criando diferença real de poder."
+        }
+      ],
+      "relations": [
+        {
+          "slug": "runas",
+          "label": "Tecnologia mágica"
+        },
+        {
+          "slug": "armas-improvisadas",
+          "label": "Acesso popular"
+        },
+        {
+          "slug": "armerias-runicas",
+          "label": "Comércio especializado"
+        }
+      ],
+      "keywords": [
+        "armas",
+        "runas",
+        "categorias",
+        "lojas de magos",
+        "improvisadas"
+      ],
+      "sources": [
+        "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+      ]
+    },
+    {
+      "code": "ART-005",
+      "slug": "laminas",
+      "title": "Lâminas",
+      "subtitle": "Espadas, facões, machados e punhais",
+      "category": "ART",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Categoria de armas de corte e impacto próximo, comum entre viajantes, guardas e caçadores.",
+      "facts": {
+        "Alcance": "Curto",
+        "Versão comum": "Metal industrial ou ferramenta adaptada",
+        "Runas usuais": "Reforço, vibração, calor, retorno ou contenção",
+        "Limite": "Runas exigem carga e podem fraturar material incompatível"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "espada-de-kenua",
+          "label": "Exemplo conhecido"
+        },
+        {
+          "slug": "sistema-de-armamentos",
+          "label": "Categoria"
+        }
+      ],
+      "keywords": [
+        "lâminas",
+        "espada",
+        "faca",
+        "runa"
+      ],
+      "sources": [
+        "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+      ]
+    },
+    {
+      "code": "ART-006",
+      "slug": "fuzis",
+      "title": "Fuzis",
+      "subtitle": "Armas longas de uso geral",
+      "category": "ART",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Armas de longo alcance usadas por forças organizadas, caravanas ricas e caçadores licenciados.",
+      "facts": {
+        "Alcance": "Médio a longo",
+        "Versão comum": "Mecânica, química ou pneumática",
+        "Runas usuais": "Estabilização, aceleração e redução de recuo",
+        "Limite": "Matriz rúnica superaquecida perde precisão"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "sistema-de-armamentos",
+          "label": "Categoria"
+        }
+      ],
+      "keywords": [
+        "fuzil",
+        "arma longa",
+        "runas"
+      ],
+      "sources": [
+        "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+      ]
+    },
+    {
+      "code": "ART-007",
+      "slug": "revolveres",
+      "title": "Revólveres",
+      "subtitle": "Armas curtas de repetição",
+      "category": "ART",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Armas curtas valorizadas por confiabilidade e transporte discreto.",
+      "facts": {
+        "Alcance": "Curto a médio",
+        "Vantagem": "Mecanismo robusto",
+        "Runas usuais": "Marcação, impulso e selamento de tambor",
+        "Limite": "Pouca capacidade e recarga rúnica cara"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "sistema-de-armamentos",
+          "label": "Categoria"
+        }
+      ],
+      "keywords": [
+        "revólver",
+        "arma curta",
+        "runa"
+      ],
+      "sources": [
+        "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+      ]
+    },
+    {
+      "code": "ART-008",
+      "slug": "espingardas",
+      "title": "Espingardas",
+      "subtitle": "Dispersão e impacto em curta distância",
+      "category": "ART",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Armas de grande impacto próximo, usadas em defesa de propriedade, caça pesada e ruptura de obstáculos.",
+      "facts": {
+        "Alcance": "Curto",
+        "Efeito": "Dispersão, impacto ou carga especializada",
+        "Runas usuais": "Concentração, dispersão controlada e repulsão",
+        "Limite": "Baixa eficiência a longa distância"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "sistema-de-armamentos",
+          "label": "Categoria"
+        }
+      ],
+      "keywords": [
+        "espingarda",
+        "impacto",
+        "dispersão"
+      ],
+      "sources": [
+        "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+      ]
+    },
+    {
+      "code": "ART-009",
+      "slug": "fuzis-de-precisao",
+      "title": "Fuzis de precisão",
+      "subtitle": "Armas de distância e observação",
+      "category": "ART",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Categoria especializada para disparos longos, vigilância e neutralização seletiva.",
+      "facts": {
+        "Alcance": "Longo",
+        "Exigência": "Treinamento, cálculo e manutenção",
+        "Runas usuais": "Correção de vento, estabilidade e ótica",
+        "Limite": "Custo alto e assinatura rúnica detectável"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "sistema-de-armamentos",
+          "label": "Categoria"
+        }
+      ],
+      "keywords": [
+        "fuzil de precisão",
+        "longa distância",
+        "ótica rúnica"
+      ],
+      "sources": [
+        "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+      ]
+    },
+    {
+      "code": "ART-010",
+      "slug": "armas-de-arremesso",
+      "title": "Armas de arremesso",
+      "subtitle": "Facas, discos, lanças e cargas manuais",
+      "category": "ART",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Armas projetadas manualmente, de ferramentas simples a discos rúnicos de trajetória corrigida.",
+      "facts": {
+        "Alcance": "Curto a médio",
+        "Versão comum": "Facas, lanças, pedras e ferramentas",
+        "Runas usuais": "Retorno, trajetória e aderência",
+        "Limite": "Correção consome carga e não ignora obstáculos"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "sistema-de-armamentos",
+          "label": "Categoria"
+        }
+      ],
+      "keywords": [
+        "arremesso",
+        "lança",
+        "faca",
+        "disco"
+      ],
+      "sources": [
+        "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+      ]
+    },
+    {
+      "code": "ART-011",
+      "slug": "armas-de-explosao",
+      "title": "Armas de explosão",
+      "subtitle": "Cargas, granadas e demolição",
+      "category": "ART",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Categoria de energia expansiva, altamente regulada por seu risco coletivo.",
+      "facts": {
+        "Alcance": "Área",
+        "Uso comum": "Mineração, demolição e combate organizado",
+        "Runas usuais": "Direção de onda, atraso e supressão",
+        "Limite": "Não elimina estilhaços, calor ou consumo de material"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "sistema-de-armamentos",
+          "label": "Categoria"
+        }
+      ],
+      "keywords": [
+        "explosão",
+        "granada",
+        "demolição",
+        "runa"
+      ],
+      "sources": [
+        "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+      ]
+    },
+    {
+      "code": "ART-012",
+      "slug": "armas-de-contencao",
+      "title": "Armas de contenção",
+      "subtitle": "Redes, selos, dardos e campos",
+      "category": "ART",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Ferramentas destinadas a interromper movimento, magia ou fuga sem exigir morte do alvo.",
+      "facts": {
+        "Alcance": "Variável",
+        "Efeito": "Imobilização, ancoragem ou isolamento",
+        "Runas usuais": "Laço, peso, silêncio gestual e barreira",
+        "Limite": "Alvos fortes exigem múltiplas âncoras e grande energia"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "serlis-aftermoon",
+          "label": "Especialista"
+        },
+        {
+          "slug": "sistema-de-armamentos",
+          "label": "Categoria"
+        }
+      ],
+      "keywords": [
+        "contenção",
+        "rede",
+        "selo",
+        "não letal"
+      ],
+      "sources": [
+        "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+      ]
+    },
+    {
+      "code": "ART-013",
+      "slug": "dispositivos-de-flash",
+      "title": "Dispositivos de flash",
+      "subtitle": "Luz, som e desorientação",
+      "category": "ART",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Dispositivos não letais que produzem clarão, pulso sonoro ou interferência sensorial.",
+      "facts": {
+        "Alcance": "Área curta",
+        "Efeito": "Desorientação temporária",
+        "Runas usuais": "Foco luminoso, eco e interrupção visual",
+        "Limite": "Proteção sensorial reduz efeito; uso excessivo pode ferir"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "sistema-de-armamentos",
+          "label": "Categoria"
+        }
+      ],
+      "keywords": [
+        "flash",
+        "clarão",
+        "som",
+        "desorientação"
+      ],
+      "sources": [
+        "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+      ]
+    },
+    {
+      "code": "ART-014",
+      "slug": "armas-improvisadas",
+      "title": "Armas improvisadas",
+      "subtitle": "Ferramentas transformadas em defesa",
+      "category": "ART",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Categoria utilizada por pessoas sem magia ou recursos: ganchos, barras, correntes, ferramentas e peças de máquinas adaptadas.",
+      "facts": {
+        "Acesso": "Alto",
+        "Custo": "Baixo",
+        "Vantagem": "Disponibilidade e imprevisibilidade",
+        "Limite": "Menor durabilidade, precisão e proteção ao usuário"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "sistema-de-armamentos",
+          "label": "Faixa popular"
+        }
+      ],
+      "keywords": [
+        "improvisada",
+        "ferramenta",
+        "sem magia",
+        "fronteira"
+      ],
+      "sources": [
+        "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+      ]
+    },
+    {
+      "code": "ART-015",
+      "slug": "armerias-runicas",
+      "title": "Armerias rúnicas",
+      "subtitle": "Lojas de magos e armamento encantado",
+      "category": "ART",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Estabelecimentos licenciados onde magos e artesãos vendem, carregam e mantêm armamentos rúnicos.",
+      "facts": {
+        "Produtos": "Armas R1 a R3, selos, cargas e manutenção",
+        "Clientes": "Guardas, mercenários, nobres e equipes de contenção",
+        "Preço": "Muito superior ao armamento comum",
+        "Controle": "Licenças, assinatura do comprador e inspeção de matriz"
+      },
+      "sections": [
+        {
+          "heading": "Mercado paralelo",
+          "body": "Armas sem registro existem, mas matrizes instáveis podem falhar, drenar o portador ou explodir. A qualidade da runa importa tanto quanto a arma."
+        }
+      ],
+      "relations": [
+        {
+          "slug": "runas",
+          "label": "Base técnica"
+        },
+        {
+          "slug": "sistema-de-armamentos",
+          "label": "Mercado"
+        }
+      ],
+      "keywords": [
+        "loja de magos",
+        "armeria",
+        "armas rúnicas",
+        "comércio"
+      ],
+      "sources": [
+        "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+      ]
+    },
+    {
+      "code": "HIS-001",
+      "slug": "pacto-de-convergencia",
+      "title": "Pacto de Convergência",
+      "subtitle": "Início da Era da Convergência",
+      "category": "HIS",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Evento de 0 EC que inicia o calendário comum de Stellar.",
+      "facts": {
+        "Data": "0 EC",
+        "Consequência": "Início do calendário comum"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "conselho-de-convergencia",
+          "label": "Precedente histórico"
+        }
+      ],
+      "keywords": [
+        "Pacto de Convergência",
+        "0 EC"
+      ],
+      "sources": [
+        "CRONOLOGIA_842_EC.md"
+      ]
+    },
+    {
+      "code": "HIS-002",
+      "slug": "guerra-dos-veios-partidos",
+      "title": "Guerra dos Veios Partidos",
+      "subtitle": "Conflito de 518–501 APC",
+      "category": "HIS",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 3,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Conflito histórico ocorrido entre 518 e 501 APC.",
+      "facts": {
+        "Período": "518–501 APC"
+      },
+      "sections": [],
+      "relations": [],
+      "keywords": [
+        "Guerra dos Veios Partidos",
+        "APC"
+      ],
+      "sources": [
+        "CRONOLOGIA_842_EC.md"
+      ]
+    },
+    {
+      "code": "HIS-003",
+      "slug": "caso-aelyra",
+      "title": "Caso Aelyra",
+      "subtitle": "Simbiose anterior e ruptura institucional",
+      "category": "HIS",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Conjunto de eventos entre 840 e 841 EC envolvendo a equipe arcano-botânica, Aelyra, a flor fóssil, a estase de Ilyan Morveth e a fuga de Serlis.",
+      "facts": {
+        "840 EC": "Aelyra torna-se hospedeira",
+        "841 EC": "Aelyra morre e Serlis foge",
+        "Grupo envolvido": "Círculo Arcano-Botânico da Flor Fóssil",
+        "Ruptura final": "Serlis paralisa Ilyan Morveth para impedir novas exposições e foge"
+      },
+      "sections": [
+        {
+          "heading": "Ruptura",
+          "body": "Após a morte de Aelyra, Ilyan Morveth insistiu em proteger e continuar o programa de pesquisa. Serlis utilizou a Estase de Intervalo para impedir outra exposição humana e abandonou a instituição com parte dos registros."
+        }
+      ],
+      "relations": [
+        {
+          "slug": "aelyra-voss",
+          "label": "Hospedeira"
+        },
+        {
+          "slug": "serlis-aftermoon",
+          "label": "Sobrevivente e fugitivo"
+        },
+        {
+          "slug": "espinho-negro",
+          "label": "Simbiose"
+        },
+        {
+          "slug": "ilyan-morveth",
+          "label": "Pesquisador colocado em estase"
+        },
+        {
+          "slug": "circulo-arcano-botanico",
+          "label": "Núcleo de pesquisa"
+        }
+      ],
+      "keywords": [
+        "Caso Aelyra",
+        "840 EC",
+        "841 EC",
+        "Serlis"
+      ],
+      "sources": [
+        "CRONOLOGIA_842_EC.md",
+        "BIBLIA_PERSONAGENS_VOLUME_1.md"
+      ]
+    },
+    {
+      "code": "HIS-004",
+      "slug": "redescoberta-do-espinho-negro",
+      "title": "Redescoberta do Espinho-Negro",
+      "subtitle": "Evento de 839 EC",
+      "category": "HIS",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Redescoberta moderna do Espinho-Negro em 839 EC.",
+      "facts": {
+        "Data": "839 EC"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "espinho-negro",
+          "label": "Objeto redescoberto"
+        }
+      ],
+      "keywords": [
+        "839 EC",
+        "Espinho-Negro",
+        "redescoberta"
+      ],
+      "sources": [
+        "CRONOLOGIA_842_EC.md"
+      ]
+    },
+    {
+      "code": "EPI-001",
+      "slug": "temporada-1-o-hospedeiro",
+      "title": "Temporada 1 — O Hospedeiro",
+      "subtitle": "Primeira temporada de Andromeda: Raízes de Stellar",
+      "category": "EPI",
+      "secondaryCategories": [],
+      "canon": "Cânone original",
+      "spoiler": 1,
+      "sealed": false,
+      "image": "assets/images/temporada-1.png",
+      "imageStatus": "Arte conceitual aprovada para o MVP",
+      "summary": "Oito episódios centrados em Kenua, Serlis, Espinho-Negro, Serverus, Genes e Raiz Profunda. O Episódio 1 está aprovado e integrado ao leitor do Codex.",
+      "facts": {
+        "Episódios": "8",
+        "Pergunta": "Kenua conseguirá utilizar o Espinho-Negro sem perder a identidade?",
+        "Classificação indicativa": "12+",
+        "Episódio 1": "Roteiro V3 canônico e disponível no leitor/PDF"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "episodio-1-a-recompensa",
+          "label": "Episódio 1"
+        },
+        {
+          "slug": "episodio-2-a-flor-fechada",
+          "label": "Episódio 2"
+        },
+        {
+          "slug": "episodio-3-corpo-estranho",
+          "label": "Episódio 3"
+        },
+        {
+          "slug": "episodio-4-raizes-na-carne",
+          "label": "Episódio 4"
+        },
+        {
+          "slug": "episodio-5-a-hospedeira-anterior",
+          "label": "Episódio 5"
+        },
+        {
+          "slug": "episodio-6-o-supremo-mago",
+          "label": "Episódio 6"
+        },
+        {
+          "slug": "episodio-7-oitenta-por-cento",
+          "label": "Episódio 7"
+        },
+        {
+          "slug": "episodio-8-o-hospedeiro",
+          "label": "Episódio 8"
+        }
+      ],
+      "keywords": [
+        "Temporada 1",
+        "O Hospedeiro",
+        "Kenua",
+        "Espinho-Negro"
+      ],
+      "sources": [
+        "TEMPORADA_1_ESTRUTURA.md",
+        "RESUMO_MESTRE_CANONICO.md"
+      ]
+    },
+    {
+      "code": "EPI-002",
+      "slug": "episodio-1-a-recompensa",
+      "title": "Episódio 1 — A Recompensa",
+      "subtitle": "Roteiro completo V3 — cânone consolidado",
+      "category": "EPI",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Kenua aceita uma captura que o conduz a Serlis, ao Caso Aelyra e à primeira resposta de uma flor que permanece fechada. A V3 auditada é o episódio canônico vigente.",
+      "facts": {
+        "Temporada": "1 — O Hospedeiro",
+        "Número": "1",
+        "Status": "Roteiro completo V3 — aprovado",
+        "Aprovação": "Substituição canônica aprovada na Etapa 148 — 2 de agosto de 2026",
+        "Status V3": "Cânone vigente",
+        "Versão operacional": "V3 — única versão autorizada para continuidade, briefings, artes e projetos derivados"
+      },
+      "sections": [
+        {
+          "heading": "Versão canônica V3",
+          "body": "A Etapa 148 concluiu a auditoria versão histórica anterior × V3, aplicou correções não substantivas e promoveu a V3 a cânone vigente, preservando integralmente a versão histórica anterior."
+        }
+      ],
+      "relations": [
+        {
+          "slug": "temporada-1-o-hospedeiro",
+          "label": "Temporada"
+        }
+      ],
+      "keywords": [
+        "A Recompensa",
+        "Episódio 1",
+        "O Hospedeiro"
+      ],
+      "sources": [
+        "TEMPORADA_1_ESTRUTURA.md",
+        "APROVACAO_AUTORAL_EPISODIO_1_E_ADICOES.md",
+        "EPISODIO_1_A_RECOMPENSA_ROTEIRO_COMPLETO_V3.md"
+      ],
+      "status": "V3 canônico operacional"
+    },
+    {
+      "code": "EPI-003",
+      "slug": "episodio-2-a-flor-fechada",
+      "title": "Episódio 2 — A Flor Fechada",
+      "subtitle": "Roteiro completo V1 — cânone consolidado",
+      "category": "EPI",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "A segunda etapa de Serverus pressiona a contenção; a flor seleciona Kenua sem abrir, e Serlis interrompe a integração completa sem remover a simbiose involuntária.",
+      "facts": {
+        "Temporada": "1 — O Hospedeiro",
+        "Número": "2",
+        "Status": "Roteiro completo V1 — aprovado",
+        "Etapa": "153",
+        "Capítulos planejados": "8",
+        "Cenas planejadas": "27 + pós-créditos",
+        "Estado final": "Simbiose incompleta; integração total impedida; crise metabólica aberta",
+        "Capítulos": "8",
+        "Cenas": "27 + pós-créditos",
+        "Palavras": "7369",
+        "Promoção canônica": "Aprovada na Etapa 153"
+      },
+      "sections": [
+        {
+          "heading": "Logline",
+          "body": "Após a primeira resposta da flor, Kenua e Serlis tentam escapar de uma rede de contenção convertida pela segunda etapa de Serverus em instrumento de medição. Quando a corrupção rompe os anéis, a flor seleciona Kenua para preservá-lo; Serlis interrompe a integração completa, deixando ambos presos a uma simbiose involuntária e incompleta."
+        },
+        {
+          "heading": "Estado editorial",
+          "body": "Roteiro integral auditado e promovido a Episódio 2 canônico na Etapa 153."
+        },
+        {
+          "heading": "Limites de revelação",
+          "body": "A flor permanece fechada. Não há pacto consciente, domínio voluntário, voz identificável ou reconhecimento de Amadon."
+        },
+        {
+          "heading": "Handoff",
+          "body": "O episódio termina com simbiose incompleta, febre, fome crescente, contenção provisória e necessidade urgente de alimento, diagnóstico e abrigo."
+        }
+      ],
+      "relations": [
+        {
+          "slug": "temporada-1-o-hospedeiro",
+          "label": "Temporada"
+        }
+      ],
+      "keywords": [
+        "A Flor Fechada",
+        "Episódio 2",
+        "O Hospedeiro"
+      ],
+      "sources": [
+        "TEMPORADA_1_ESTRUTURA.md",
+        "docs/canon/20_PRODUCAO_TEMPORADA_1/EPISODIO_2_PRE_PRODUCAO/ETAPA_151_PRE_PRODUCAO_EPISODIO_2.md",
+        "docs/canon/01_CANON_ATUAL/EPISODIO_2_A_FLOR_FECHADA_ROTEIRO_COMPLETO_V1.md",
+        "docs/canon/06_SISTEMA_NARRATIVO/AUDITORIA_CANONICA_EPISODIO_2_V1.md"
+      ]
+    },
+    {
+      "code": "EPI-004",
+      "slug": "episodio-3-corpo-estranho",
+      "title": "Episódio 3 — Corpo Estranho",
+      "subtitle": "Roteiro V1 canônico — auditado na Etapa 156",
+      "category": "EPI",
+      "secondaryCategories": [],
+      "canon": "Cânone original",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "A fome impossível obriga Kenua e Serlis a medir sem provocar, construir contenção móvel e iniciar o retorno à Fronteira após confirmação codificada de Kaenna.",
+      "facts": {
+        "Temporada": "1 — O Hospedeiro",
+        "Número": "3",
+        "Status": "V1 canônico; auditado e promovido na Etapa 156"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "temporada-1-o-hospedeiro",
+          "label": "Temporada"
+        }
+      ],
+      "keywords": [
+        "Corpo Estranho",
+        "Episódio 3",
+        "O Hospedeiro"
+      ],
+      "sources": [
+        "TEMPORADA_1_ESTRUTURA.md",
+        "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md",
+        "docs/canon/01_CANON_ATUAL/EPISODIO_3_CORPO_ESTRANHO_ROTEIRO_COMPLETO_V1.md",
+        "docs/canon/06_SISTEMA_NARRATIVO/AUDITORIA_CANONICA_EPISODIO_3_V1.md"
+      ]
+    },
+    {
+      "code": "EPI-005",
+      "slug": "episodio-4-raizes-na-carne",
+      "title": "Episódio 4 — Raízes na Carne",
+      "subtitle": "Roteiro V1 canônico — Etapa 159",
+      "category": "EPI",
+      "secondaryCategories": [],
+      "canon": "Cânone original",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Kenua retorna à Fronteira sob proteção de Kaenna; a fome extrema pressiona os recursos e a primeira manifestação defensiva externa torna o segredo impossível de tratar como hipótese abstrata.",
+      "facts": {
+        "Temporada": "1 — O Hospedeiro",
+        "Número": "4",
+        "Status": "Roteiro V1 canônico auditado na Etapa 159"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "temporada-1-o-hospedeiro",
+          "label": "Temporada"
+        }
+      ],
+      "keywords": [
+        "Raízes na Carne",
+        "Episódio 4",
+        "O Hospedeiro"
+      ],
+      "sources": [
+        "TEMPORADA_1_ESTRUTURA.md",
+        "docs/canon/20_PRODUCAO_TEMPORADA_1/EPISODIO_4_PRE_PRODUCAO/ETAPA_157_PRE_PRODUCAO_EPISODIO_4.md",
+        "docs/canon/01_CANON_ATUAL/EPISODIO_4_RAIZES_NA_CARNE_ROTEIRO_COMPLETO_V1.md",
+        "docs/canon/06_SISTEMA_NARRATIVO/AUDITORIA_CANONICA_EPISODIO_4_V1.md"
+      ]
+    },
+    {
+      "code": "EPI-006",
+      "slug": "episodio-5-a-hospedeira-anterior",
+      "title": "Episódio 5 — A Hospedeira Anterior",
+      "subtitle": "Roteiro V1 canônico — Etapa 162",
+      "category": "EPI",
+      "secondaryCategories": [],
+      "canon": "Cânone original",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Kenua abre o Caso Aelyra por fontes separadas, confirma a retirada de consentimento, confronta Serlis e reescreve a governança do bracelete enquanto uma autenticação antiga alcança o Ramo Interno.",
+      "facts": {
+        "Temporada": "1 — O Hospedeiro",
+        "Número": "5",
+        "Status": "Roteiro V1 canônico auditado na Etapa 162"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "temporada-1-o-hospedeiro",
+          "label": "Temporada"
+        }
+      ],
+      "keywords": [
+        "A Hospedeira Anterior",
+        "Episódio 5",
+        "O Hospedeiro"
+      ],
+      "sources": [
+        "TEMPORADA_1_ESTRUTURA.md",
+        "BIBLIA_PERSONAGENS_VOLUME_1.md",
+        "docs/canon/20_PRODUCAO_TEMPORADA_1/EPISODIO_5_PRE_PRODUCAO/ETAPA_160_PRE_PRODUCAO_EPISODIO_5.md",
+        "docs/canon/20_PRODUCAO_TEMPORADA_1/EPISODIO_5_ROTEIRO/ETAPA_161_EPISODIO_5_A_HOSPEDEIRA_ANTERIOR_V1_PROPOSTA.md",
+        "docs/canon/01_CANON_ATUAL/EPISODIO_5_A_HOSPEDEIRA_ANTERIOR_ROTEIRO_COMPLETO_V1.md",
+        "docs/canon/06_SISTEMA_NARRATIVO/AUDITORIA_CANONICA_EPISODIO_5_V1.md"
+      ]
+    },
+    {
+      "code": "EPI-007",
+      "slug": "episodio-6-o-supremo-mago",
+      "title": "Episódio 6 — O Supremo Mago",
+      "subtitle": "Roteiro V1 canônico — Etapa 165",
+      "category": "EPI",
+      "secondaryCategories": [],
+      "canon": "Cânone original",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Genes envia discípulos para recuperar Serlis; uma audiência remota expõe julgamento, afeto paternal e arquivos ocultos antes que uma célula interna ataque e roube telemetria de Kenua.",
+      "facts": {
+        "Temporada": "1 — O Hospedeiro",
+        "Número": "6",
+        "Status": "Roteiro V1 canônico auditado na Etapa 165"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "temporada-1-o-hospedeiro",
+          "label": "Temporada"
+        }
+      ],
+      "keywords": [
+        "O Supremo Mago",
+        "Episódio 6",
+        "O Hospedeiro"
+      ],
+      "sources": [
+        "TEMPORADA_1_ESTRUTURA.md",
+        "docs/canon/20_PRODUCAO_TEMPORADA_1/EPISODIO_6_PRE_PRODUCAO/ETAPA_163_PRE_PRODUCAO_EPISODIO_6.md",
+        "docs/canon/20_PRODUCAO_TEMPORADA_1/EPISODIO_6_ROTEIRO/ETAPA_164_EPISODIO_6_O_SUPREMO_MAGO_V1_PROPOSTA.md",
+        "docs/canon/01_CANON_ATUAL/EPISODIO_6_O_SUPREMO_MAGO_ROTEIRO_COMPLETO_V1.md",
+        "docs/canon/06_SISTEMA_NARRATIVO/AUDITORIA_CANONICA_EPISODIO_6_V1.md"
+      ]
+    },
+    {
+      "code": "EPI-008",
+      "slug": "episodio-7-oitenta-por-cento",
+      "title": "Episódio 7 — Oitenta por Cento",
+      "subtitle": "Roteiro V1 canônico — Etapa 168",
+      "category": "EPI",
+      "secondaryCategories": [],
+      "canon": "Cânone original",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Um experimento força a flor a assumir a maior parte do corpo de Kenua para preservar o hospedeiro.",
+      "facts": {
+        "Temporada": "1 — O Hospedeiro",
+        "Número": "7",
+        "Status": "Roteiro V1 canônico auditado na Etapa 168"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "temporada-1-o-hospedeiro",
+          "label": "Temporada"
+        }
+      ],
+      "keywords": [
+        "Oitenta por Cento",
+        "Episódio 7",
+        "O Hospedeiro"
+      ],
+      "sources": [
+        "TEMPORADA_1_ESTRUTURA.md",
+        "docs/canon/20_PRODUCAO_TEMPORADA_1/EPISODIO_7_ROTEIRO/ETAPA_167_EPISODIO_7_OITENTA_POR_CENTO_V1_PROPOSTA.md",
+        "docs/canon/01_CANON_ATUAL/EPISODIO_7_OITENTA_POR_CENTO_ROTEIRO_COMPLETO_V1.md",
+        "docs/canon/06_SISTEMA_NARRATIVO/AUDITORIA_CANONICA_EPISODIO_7_V1.md"
+      ]
+    },
+    {
+      "code": "EPI-009",
+      "slug": "episodio-8-o-hospedeiro",
+      "title": "Episódio 8 — O Hospedeiro",
+      "subtitle": "Estrutura canônica",
+      "category": "EPI",
+      "secondaryCategories": [],
+      "canon": "Cânone original",
+      "spoiler": 1,
+      "sealed": false,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Kenua firma o primeiro pacto consciente e percebe pela primeira vez uma presença guardiã ligada à flor.",
+      "facts": {
+        "Temporada": "1 — O Hospedeiro",
+        "Número": "8",
+        "Status": "Estrutura canônica"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "temporada-1-o-hospedeiro",
+          "label": "Temporada"
+        }
+      ],
+      "keywords": [
+        "O Hospedeiro",
+        "Episódio 8",
+        "O Hospedeiro"
+      ],
+      "sources": [
+        "TEMPORADA_1_ESTRUTURA.md"
+      ]
+    },
+    {
+      "code": "MYS-001",
+      "slug": "voz-alem-da-planta",
+      "title": "A voz além da planta",
+      "subtitle": "Registro cósmico selado",
+      "category": "MYS",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 4,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Aelyra ouviu uma voz além do Espinho-Negro antes de morrer.",
+      "facts": {
+        "Testemunha": "Aelyra Voss",
+        "Estado": "Não identificado"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "aelyra-voss",
+          "label": "Testemunha"
+        },
+        {
+          "slug": "votakhel",
+          "label": "Hipótese não autorizada"
+        }
+      ],
+      "keywords": [
+        "voz",
+        "Aelyra",
+        "planta",
+        "mistério"
+      ],
+      "sources": [
+        "BIBLIA_PERSONAGENS_VOLUME_1.md"
+      ]
+    },
+    {
+      "code": "MYS-002",
+      "slug": "segunda-etapa-de-serverus",
+      "title": "Segunda etapa de Serverus",
+      "subtitle": "Operação ainda não revelada",
+      "category": "MYS",
+      "secondaryCategories": [],
+      "canon": "Cânone consolidado",
+      "spoiler": 2,
+      "sealed": true,
+      "image": null,
+      "imageStatus": null,
+      "summary": "Ordem emitida por Serverus após o marcador cumprir sua função no Episódio 1.",
+      "facts": {
+        "Origem": "Cena pós-créditos do Episódio 1",
+        "Estado": "Não revelado"
+      },
+      "sections": [],
+      "relations": [
+        {
+          "slug": "serverus-vaelkor",
+          "label": "Autor da ordem"
+        },
+        {
+          "slug": "episodio-1-a-recompensa",
+          "label": "Cena pós-créditos"
+        }
+      ],
+      "keywords": [
+        "segunda etapa",
+        "Serverus",
+        "pós-créditos"
+      ],
+      "sources": [
+        "EPISODIO_1_A_RECOMPENSA_ROTEIRO_COMPLETO_V1.md"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "date": "0 EC",
+      "event": "Pacto de Convergência e início do calendário comum.",
+      "spoiler": 1,
+      "slug": "pacto-de-convergencia"
+    },
+    {
+      "date": "118 EC",
+      "event": "Formação da Confederação de Lúminor.",
+      "spoiler": 2,
+      "slug": "confederacao-de-luminor"
+    },
+    {
+      "date": "149 EC",
+      "event": "Formação de Altavela.",
+      "spoiler": 2,
+      "slug": "reino-aereo-de-altavela"
+    },
+    {
+      "date": "1732 APC",
+      "event": "Fundação das Árvores Anciãs.",
+      "spoiler": 2,
+      "slug": "arvores-ancias"
+    },
+    {
+      "date": "201 EC",
+      "event": "Formação de Ortheon.",
+      "spoiler": 2,
+      "slug": "republica-de-ortheon"
+    },
+    {
+      "date": "267 EC",
+      "event": "Formação da Liga Subcristal.",
+      "spoiler": 2,
+      "slug": "liga-subcristal"
+    },
+    {
+      "date": "304 EC",
+      "event": "Formação de Rubra-Viva.",
+      "spoiler": 2,
+      "slug": "rubra-viva"
+    },
+    {
+      "date": "392 EC",
+      "event": "Formação do Conselho de Convergência.",
+      "spoiler": 1,
+      "slug": "conselho-de-convergencia"
+    },
+    {
+      "date": "518–501 APC",
+      "event": "Guerra dos Veios Partidos.",
+      "spoiler": 3,
+      "slug": "guerra-dos-veios-partidos"
+    },
+    {
+      "date": "617 EC",
+      "event": "Aceleração da atividade da Raiz Profunda.",
+      "spoiler": 3,
+      "slug": "raiz-profunda"
+    },
+    {
+      "date": "684 APC",
+      "event": "Fundação dos Reis Magos.",
+      "spoiler": 2,
+      "slug": "reis-magos"
+    },
+    {
+      "date": "711 EC",
+      "event": "Primeira Zona Silenciosa moderna confirmada.",
+      "spoiler": 3,
+      "slug": null
+    },
+    {
+      "date": "753 EC",
+      "event": "Formação da Vigília Radicular.",
+      "spoiler": 2,
+      "slug": "vigilia-radicular"
+    },
+    {
+      "date": "768 EC",
+      "event": "Nascimento de Maelkar Enohar.",
+      "spoiler": 3,
+      "slug": "maelkar-enohar"
+    },
+    {
+      "date": "770 EC",
+      "event": "Nascimento de Genes Arvath.",
+      "spoiler": 2,
+      "slug": "genes-arvath"
+    },
+    {
+      "date": "774 EC",
+      "event": "Nascimento de Serverus Vaelkor.",
+      "spoiler": 2,
+      "slug": "serverus-vaelkor"
+    },
+    {
+      "date": "795 EC",
+      "event": "Nascimento de Ishara Veyn.",
+      "spoiler": 2,
+      "slug": "ishara-veyn"
+    },
+    {
+      "date": "800 EC",
+      "event": "Nascimento de Kaenna Vor.",
+      "spoiler": 1,
+      "slug": "kaenna-vor"
+    },
+    {
+      "date": "811 EC",
+      "event": "Nascimento de Kenua Vaarn.",
+      "spoiler": 1,
+      "slug": "kenua-vaarn"
+    },
+    {
+      "date": "813 EC",
+      "event": "Serlis é encontrado ainda criança.",
+      "spoiler": 1,
+      "slug": "serlis-aftermoon"
+    },
+    {
+      "date": "815 EC",
+      "event": "Nascimento de Aelyra Voss.",
+      "spoiler": 2,
+      "slug": "aelyra-voss"
+    },
+    {
+      "date": "824 EC",
+      "event": "Desaparecimento de Daren Vaarn.",
+      "spoiler": 3,
+      "slug": "daren-vaarn"
+    },
+    {
+      "date": "832 EC",
+      "event": "Morte de Meyra Vaarn.",
+      "spoiler": 2,
+      "slug": "meyra-vaarn"
+    },
+    {
+      "date": "834 EC",
+      "event": "Serlis conhece Aelyra.",
+      "spoiler": 2,
+      "slug": "aelyra-voss"
+    },
+    {
+      "date": "839 EC",
+      "event": "Redescoberta moderna do Espinho-Negro.",
+      "spoiler": 2,
+      "slug": "redescoberta-do-espinho-negro"
+    },
+    {
+      "date": "840 EC",
+      "event": "Aelyra torna-se hospedeira.",
+      "spoiler": 2,
+      "slug": "caso-aelyra"
+    },
+    {
+      "date": "841 EC",
+      "event": "Aelyra morre; Serlis foge.",
+      "spoiler": 2,
+      "slug": "caso-aelyra"
+    },
+    {
+      "date": "841 EC",
+      "event": "Após a morte de Aelyra, Serlis aplica a Estase de Intervalo em Ilyan Morveth para impedir novos testes com a flor e abandona as Árvores Anciãs.",
+      "spoiler": 3,
+      "slug": "estase-ilyan",
+      "entrySlug": "ilyan-morveth"
+    },
+    {
+      "date": "842 EC",
+      "event": "Serverus contrata Kenua; começa O Hospedeiro.",
+      "spoiler": 1,
+      "slug": "episodio-1-a-recompensa"
+    },
+    {
+      "date": "c. 9020 APC",
+      "event": "Amadon cria o Espinho-Negro.",
+      "spoiler": 3,
+      "slug": "espinho-negro"
+    },
+    {
+      "date": "c. 9170 APC",
+      "event": "Amadon percebe a anomalia.",
+      "spoiler": 4,
+      "slug": "amadon"
+    },
+    {
+      "date": "c. 9400 APC",
+      "event": "Votakhel implanta a Raiz Profunda em Stellar.",
+      "spoiler": 4,
+      "slug": "raiz-profunda"
+    }
+  ],
+  "episodes": [
+    {
+      "number": 1,
+      "title": "A Recompensa",
+      "synopsis": "Serverus contrata Kenua para capturar Serlis; a caçada termina em um duelo sem vencedor e na primeira resposta da flor ainda fechada.",
+      "status": "V3 canônico operacional · aprovado na Etapa 148",
+      "spoiler": 1,
+      "slug": "episodio-1-a-recompensa",
+      "reader": "episode/1",
+      "pdf": "assets/downloads/ANDROMEDA_EPISODIO_1_A_RECOMPENSA_V3_CANONICO.pdf",
+      "canonical": "data/episode-1.json"
+    },
+    {
+      "number": 2,
+      "title": "A Flor Fechada",
+      "synopsis": "A infraestrutura de contenção vira instrumento de pressão. Kenua é selecionado pela flor sem abertura; Serlis limita a integração, mas o vínculo produz febre, fome e defesa involuntária.",
+      "status": "V1 canônico · auditado na Etapa 153",
+      "spoiler": 1,
+      "slug": "episodio-2-a-flor-fechada",
+      "reader": "episode/2",
+      "pdf": "assets/downloads/ANDROMEDA_EPISODIO_2_A_FLOR_FECHADA_V1_CANONICO.pdf",
+      "canonical": "data/episode-2.json",
+      "audit": "assets/downloads/ANDROMEDA_AUDITORIA_EPISODIO_2_V1.pdf"
+    },
+    {
+      "number": 3,
+      "title": "Corpo Estranho",
+      "synopsis": "A fome impossível obriga Kenua e Serlis a medir sem provocar, construir contenção móvel e iniciar o retorno à Fronteira após confirmação codificada de Kaenna.",
+      "status": "V1 canônico · auditado na Etapa 156",
+      "spoiler": 1,
+      "slug": "episodio-3-corpo-estranho",
+      "reader": "episode/3",
+      "pdf": "assets/downloads/ANDROMEDA_EPISODIO_3_CORPO_ESTRANHO_V1_CANONICO.pdf",
+      "canonical": "data/episode-3.json",
+      "audit": "assets/downloads/ANDROMEDA_AUDITORIA_EPISODIO_3_V1.pdf"
+    },
+    {
+      "number": 4,
+      "title": "Raízes na Carne",
+      "synopsis": "Na periferia da Fronteira, Kenua recebe abrigo e alimento sob termos recíprocos. Um acidente estrutural desencadeia a primeira manifestação defensiva externa, tornando sigilo, cuidado e verdade responsabilidades compartilhadas.",
+      "status": "V1 canônico · auditado na Etapa 159",
+      "spoiler": 1,
+      "slug": "episodio-4-raizes-na-carne",
+      "reader": "episode/4",
+      "pdf": "assets/downloads/ANDROMEDA_EPISODIO_4_RAIZES_NA_CARNE_V1_CANONICO.pdf",
+      "canonical": "data/episode-4.json",
+      "audit": "assets/downloads/ANDROMEDA_AUDITORIA_EPISODIO_4_V1.pdf"
+    },
+    {
+      "number": 5,
+      "title": "A Hospedeira Anterior",
+      "synopsis": "Kenua reconstrói o Caso Aelyra por registros, testemunho e inferência, confronta a retirada de consentimento, a culpa de Serlis, a pressão de Ilyan e a Estase de Intervalo, e reescreve a governança de sua contenção.",
+      "status": "V1 canônico · auditado na Etapa 162",
+      "spoiler": 1,
+      "slug": "episodio-5-a-hospedeira-anterior",
+      "reader": "episode/5",
+      "pdf": "assets/downloads/ANDROMEDA_EPISODIO_5_A_HOSPEDEIRA_ANTERIOR_V1_CANONICO.pdf",
+      "canonical": "data/episode-5.json",
+      "audit": "assets/downloads/ANDROMEDA_AUDITORIA_EPISODIO_5_V1.pdf"
+    },
+    {
+      "number": 6,
+      "title": "O Supremo Mago",
+      "synopsis": "Genes envia discípulos para recuperar Serlis; uma audiência remota expõe julgamento, afeto paternal e arquivos ocultos antes que uma célula interna ataque e roube telemetria de Kenua.",
+      "status": "Roteiro V1 canônico - Etapa 165",
+      "spoiler": 1,
+      "slug": "episodio-6-o-supremo-mago",
+      "reader": "episode/6",
+      "pdf": "assets/downloads/ANDROMEDA_EPISODIO_6_O_SUPREMO_MAGO_V1_CANONICO.pdf",
+      "auditPdf": "assets/downloads/ANDROMEDA_AUDITORIA_EPISODIO_6_V1.pdf"
+    },
+    {
+      "number": 7,
+      "title": "Oitenta por Cento",
+      "synopsis": "Um experimento força a simbiose a oitenta por cento e revela o perigo de confundir sobrevivência com domínio.",
+      "status": "Roteiro V1 canônico - Etapa 168",
+      "spoiler": 1,
+      "slug": "episodio-7-oitenta-por-cento",
+      "reader": "episode/7",
+      "preproduction": "docs/canon/20_PRODUCAO_TEMPORADA_1/EPISODIO_7_PRE_PRODUCAO/ETAPA_166_PRE_PRODUCAO_EPISODIO_7.md",
+      "pdf": "assets/downloads/ANDROMEDA_EPISODIO_7_OITENTA_POR_CENTO_V1_CANONICO.pdf",
+      "canonical": "data/episode-7.json",
+      "auditPdf": "assets/downloads/ANDROMEDA_AUDITORIA_EPISODIO_7_V1.pdf"
+    },
+    {
+      "number": 8,
+      "title": "O Hospedeiro",
+      "synopsis": "Kenua e a flor firmam o primeiro pacto consciente; uma presença guardiã é percebida pela primeira vez.",
+      "status": "V1 canônico - auditado na Etapa 171",
+      "spoiler": 1,
+      "slug": "episodio-8-o-hospedeiro",
+      "reader": "episode/8",
+      "preproduction": "docs/canon/20_PRODUCAO_TEMPORADA_1/EPISODIO_8_PRE_PRODUCAO/ETAPA_169_PRE_PRODUCAO_EPISODIO_8.md",
+      "stage": 171,
+      "proposal": "docs/canon/20_PRODUCAO_TEMPORADA_1/EPISODIO_8_ROTEIRO/ETAPA_170_EPISODIO_8_O_HOSPEDEIRO_V1_PROPOSTA.md",
+      "pdf": "assets/downloads/ANDROMEDA_EPISODIO_8_O_HOSPEDEIRO_V1_CANONICO.pdf",
+      "canonical": "data/episode-8.json",
+      "auditPdf": "assets/downloads/ANDROMEDA_AUDITORIA_EPISODIO_8_V1.pdf"
+    }
+  ],
+  "documents": [
+    {
+      "file": "RESUMO_MESTRE_CANONICO.md",
+      "title": "Resumo mestre canônico",
+      "status": "Cânone consolidado"
+    },
+    {
+      "file": "CORRECOES_CANONICAS_OBRIGATORIAS.md",
+      "title": "Correções canônicas obrigatórias",
+      "status": "Autoridade máxima"
+    },
+    {
+      "file": "BIBLIA_PERSONAGENS_VOLUME_1.md",
+      "title": "Bíblia de personagens — Volume 1",
+      "status": "Cânone consolidado"
+    },
+    {
+      "file": "CRONOLOGIA_842_EC.md",
+      "title": "Cronologia canônica de Stellar",
+      "status": "Cânone consolidado"
+    },
+    {
+      "file": "ATLAS_POLITICO_LIDERES_E_CULTURAS.md",
+      "title": "Atlas político, líderes e culturas",
+      "status": "Cânone consolidado"
+    },
+    {
+      "file": "MAGIA_ARMAS_E_COMBATE.md",
+      "title": "Magia, armas e combate",
+      "status": "Cânone consolidado"
+    },
+    {
+      "file": "TEMPORADA_1_ESTRUTURA.md",
+      "title": "Temporada 1 — Estrutura",
+      "status": "Cânone original"
+    },
+    {
+      "file": "EPISODIO_1_A_RECOMPENSA_ROTEIRO_BASE.md",
+      "title": "Episódio 1 — Roteiro-base",
+      "status": "Arquivo de desenvolvimento"
+    },
+    {
+      "file": "EPISODIO_1_A_RECOMPENSA_ROTEIRO_COMPLETO_V1.md",
+      "title": "Episódio 1 — Roteiro completo V1",
+      "status": "Versão anterior arquivada"
+    },
+    {
+      "file": "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md",
+      "title": "Fauna, nutrição, insetos e armamentos",
+      "status": "Cânone consolidado"
+    },
+    {
+      "file": "APROVACAO_AUTORAL_EPISODIO_1_E_ADICOES.md",
+      "title": "Aprovação autoral — Episódio 1 e adições",
+      "status": "Autoridade canônica"
+    },
+    {
+      "path": "assets/downloads/ANDROMEDA_EPISODIO_1_A_RECOMPENSA_LEITURA_CELULAR.pdf",
+      "file": "ANDROMEDA_EPISODIO_1_A_RECOMPENSA_LEITURA_CELULAR.pdf",
+      "title": "Episódio 1 — PDF de leitura para celular",
+      "status": "Cânone consolidado · PDF móvel"
+    },
+    {
+      "path": "assets/downloads/ANDROMEDA_EPISODIO_1_A_RECOMPENSA_V3_CANONICO.pdf",
+      "file": "ANDROMEDA_EPISODIO_1_A_RECOMPENSA_V3_CANONICO.pdf",
+      "title": "Episódio 1 V3 — PDF canônico",
+      "status": "Cânone consolidado · versão vigente"
+    },
+    {
+      "file": "SISTEMA_DE_PROJETOS_DERIVADOS.md",
+      "title": "Sistema de futuros projetos derivados",
+      "status": "Sistema operacional consolidado",
+      "path": "docs/canon/08_FABRICA_DE_PROJETOS/SISTEMA_DE_PROJETOS_DERIVADOS.md"
+    },
+    {
+      "path": "assets/downloads/ANDROMEDA_CERTIFICACAO_UNIVERSO_AUTOSSUSTENTAVEL_V88.pdf",
+      "file": "ANDROMEDA_CERTIFICACAO_UNIVERSO_AUTOSSUSTENTAVEL_V88.pdf",
+      "title": "Certificação do Universo Andrômeda Autossustentável",
+      "status": "Certificado vigente V88"
+    },
+    {
+      "path": "assets/downloads/ANDROMEDA_RELATORIO_AUDITORIA_GLOBAL_V88.pdf",
+      "file": "ANDROMEDA_RELATORIO_AUDITORIA_GLOBAL_V88.pdf",
+      "title": "Relatório de auditoria global V88",
+      "status": "Auditoria final aprovada"
+    },
+    {
+      "path": "SITE_AUDIT_V89.md",
+      "file": "SITE_AUDIT_V89.md",
+      "title": "Auditoria técnica do portal V89",
+      "status": "Validação técnica vigente"
+    },
+    {
+      "path": "docs/canon/20_PRODUCAO_TEMPORADA_1/EPISODIO_2_PRE_PRODUCAO/ETAPA_151_PRE_PRODUCAO_EPISODIO_2.md",
+      "file": "ETAPA_151_PRE_PRODUCAO_EPISODIO_2.md",
+      "title": "Pré-produção do Episódio 2 — A Flor Fechada",
+      "status": "Pré-produção canônica aprovada na Etapa 151"
+    },
+    {
+      "path": "docs/canon/09_CERTIFICACAO_GLOBAL/RECERTIFICACAO_INCREMENTAL_V90.md",
+      "file": "RECERTIFICACAO_INCREMENTAL_V90.md",
+      "title": "Recertificação incremental V90",
+      "status": "Aprovada"
+    },
+    {
+      "path": "docs/canon/07_HISTORICO_EDITORIAL/EPISODIO_2_A_FLOR_FECHADA_V1_PROPOSTA_ETAPA_152.md",
+      "file": "EPISODIO_2_A_FLOR_FECHADA_V1_PROPOSTA_ETAPA_152.md",
+      "title": "Episódio 2 V1 — proposta histórica da Etapa 152",
+      "status": "Histórico editorial preservado"
+    },
+    {
+      "path": "data/episode-2-script-registry.json",
+      "file": "episode-2-script-registry.json",
+      "title": "Registro estruturado do roteiro do Episódio 2",
+      "status": "Completo, pendente de auditoria"
+    },
+    {
+      "path": "docs/canon/09_CERTIFICACAO_GLOBAL/RECERTIFICACAO_INCREMENTAL_V91.md",
+      "file": "RECERTIFICACAO_INCREMENTAL_V91.md",
+      "title": "Recertificação incremental V91",
+      "status": "Aprovada"
+    },
+    {
+      "path": "docs/canon/01_CANON_ATUAL/EPISODIO_2_A_FLOR_FECHADA_ROTEIRO_COMPLETO_V1.md",
+      "file": "EPISODIO_2_A_FLOR_FECHADA_ROTEIRO_COMPLETO_V1.md",
+      "title": "Episódio 2 — A Flor Fechada — V1 canônica",
+      "status": "Cânone consolidado na Etapa 153"
+    },
+    {
+      "path": "docs/canon/06_SISTEMA_NARRATIVO/AUDITORIA_CANONICA_EPISODIO_2_V1.md",
+      "file": "AUDITORIA_CANONICA_EPISODIO_2_V1.md",
+      "title": "Auditoria canônica do Episódio 2 V1",
+      "status": "Aprovada na Etapa 153"
+    },
+    {
+      "path": "docs/canon/09_CERTIFICACAO_GLOBAL/RECERTIFICACAO_INCREMENTAL_V92.md",
+      "file": "RECERTIFICACAO_INCREMENTAL_V92.md",
+      "title": "Recertificação incremental V92",
+      "status": "Aprovada"
+    },
+    {
+      "path": "docs/canon/20_PRODUCAO_TEMPORADA_1/EPISODIO_3_PRE_PRODUCAO/ETAPA_154_PRE_PRODUCAO_EPISODIO_3.md",
+      "file": "ETAPA_154_PRE_PRODUCAO_EPISODIO_3.md",
+      "title": "Pré-produção do Episódio 3 — Corpo Estranho",
+      "status": "Pré-produção canônica aprovada na Etapa 154"
+    },
+    {
+      "path": "data/episode-3-preproduction-registry.json",
+      "file": "episode-3-preproduction-registry.json",
+      "title": "Registro estruturado da pré-produção do Episódio 3",
+      "status": "Aprovado, roteiro ainda não iniciado"
+    },
+    {
+      "path": "docs/canon/09_CERTIFICACAO_GLOBAL/RECERTIFICACAO_INCREMENTAL_V93.md",
+      "file": "RECERTIFICACAO_INCREMENTAL_V93.md",
+      "title": "Recertificação incremental V93",
+      "status": "Aprovada"
+    },
+    {
+      "path": "docs/canon/20_PRODUCAO_TEMPORADA_1/EPISODIO_3_ROTEIRO/ETAPA_155_EPISODIO_3_CORPO_ESTRANHO_V1_PROPOSTA.md",
+      "file": "ETAPA_155_EPISODIO_3_CORPO_ESTRANHO_V1_PROPOSTA.md",
+      "title": "Episódio 3 — Corpo Estranho — roteiro V1 proposta",
+      "status": "Completo, pendente de auditoria na Etapa 156"
+    },
+    {
+      "path": "data/episode-3-script-registry.json",
+      "file": "episode-3-script-registry.json",
+      "title": "Registro estruturado do roteiro do Episódio 3",
+      "status": "Completo, pendente de auditoria"
+    },
+    {
+      "path": "docs/canon/09_CERTIFICACAO_GLOBAL/RECERTIFICACAO_INCREMENTAL_V94.md",
+      "file": "RECERTIFICACAO_INCREMENTAL_V94.md",
+      "title": "Recertificação incremental V94",
+      "status": "Aprovada"
+    },
+    {
+      "path": "docs/canon/01_CANON_ATUAL/EPISODIO_3_CORPO_ESTRANHO_ROTEIRO_COMPLETO_V1.md",
+      "file": "EPISODIO_3_CORPO_ESTRANHO_ROTEIRO_COMPLETO_V1.md",
+      "title": "Episódio 3 — Corpo Estranho — V1 canônica",
+      "status": "Cânone consolidado na Etapa 156"
+    },
+    {
+      "path": "docs/canon/06_SISTEMA_NARRATIVO/AUDITORIA_CANONICA_EPISODIO_3_V1.md",
+      "file": "AUDITORIA_CANONICA_EPISODIO_3_V1.md",
+      "title": "Auditoria canônica do Episódio 3 V1",
+      "status": "Aprovada na Etapa 156"
+    },
+    {
+      "path": "docs/canon/09_CERTIFICACAO_GLOBAL/RECERTIFICACAO_INCREMENTAL_V95.md",
+      "file": "RECERTIFICACAO_INCREMENTAL_V95.md",
+      "title": "Recertificação incremental V95",
+      "status": "Aprovada"
+    },
+    {
+      "path": "docs/canon/20_PRODUCAO_TEMPORADA_1/EPISODIO_4_ROTEIRO/ETAPA_158_EPISODIO_4_RAIZES_NA_CARNE_V1_PROPOSTA.md",
+      "file": "ETAPA_158_EPISODIO_4_RAIZES_NA_CARNE_V1_PROPOSTA.md",
+      "title": "Episódio 4 — Raízes na Carne — roteiro V1 proposta",
+      "status": "Completo, pendente de auditoria na Etapa 159"
+    },
+    {
+      "path": "data/episode-4-script-registry.json",
+      "file": "episode-4-script-registry.json",
+      "title": "Registro estruturado do roteiro do Episódio 4",
+      "status": "Completo, pendente de auditoria"
+    },
+    {
+      "path": "docs/canon/09_CERTIFICACAO_GLOBAL/RECERTIFICACAO_INCREMENTAL_V97.md",
+      "file": "RECERTIFICACAO_INCREMENTAL_V97.md",
+      "title": "Recertificação incremental V97",
+      "status": "Aprovada"
+    },
+    {
+      "path": "docs/canon/01_CANON_ATUAL/EPISODIO_4_RAIZES_NA_CARNE_ROTEIRO_COMPLETO_V1.md",
+      "file": "EPISODIO_4_RAIZES_NA_CARNE_ROTEIRO_COMPLETO_V1.md",
+      "title": "Episódio 4 — Raízes na Carne — V1 canônica",
+      "status": "Cânone consolidado na Etapa 159"
+    },
+    {
+      "path": "docs/canon/06_SISTEMA_NARRATIVO/AUDITORIA_CANONICA_EPISODIO_4_V1.md",
+      "file": "AUDITORIA_CANONICA_EPISODIO_4_V1.md",
+      "title": "Auditoria canônica do Episódio 4 V1",
+      "status": "Aprovada na Etapa 159"
+    },
+    {
+      "path": "docs/canon/09_CERTIFICACAO_GLOBAL/RECERTIFICACAO_INCREMENTAL_V98.md",
+      "file": "RECERTIFICACAO_INCREMENTAL_V98.md",
+      "title": "Recertificação incremental V98",
+      "status": "Aprovada"
+    },
+    {
+      "path": "docs/canon/20_PRODUCAO_TEMPORADA_1/EPISODIO_6_PRE_PRODUCAO/ETAPA_163_PRE_PRODUCAO_EPISODIO_6.md",
+      "file": "ETAPA_163_PRE_PRODUCAO_EPISODIO_6.md",
+      "title": "Pré-produção do Episódio 6 — O Supremo Mago",
+      "status": "Aprovada na Etapa 163"
+    },
+    {
+      "path": "docs/canon/20_PRODUCAO_TEMPORADA_1/EPISODIO_6_ROTEIRO/ETAPA_164_EPISODIO_6_O_SUPREMO_MAGO_V1_PROPOSTA.md",
+      "file": "ETAPA_164_EPISODIO_6_O_SUPREMO_MAGO_V1_PROPOSTA.md",
+      "title": "Episódio 6 - O Supremo Mago - roteiro V1 proposta",
+      "status": "Proposta histórica preservada; supersedida pela versão canônica da Etapa 165"
+    },
+    {
+      "path": "data/episode-6-script-registry.json",
+      "file": "episode-6-script-registry.json",
+      "title": "Registro canônico do roteiro do Episódio 6",
+      "status": "Canônico auditado na Etapa 165"
+    },
+    {
+      "path": "docs/canon/09_CERTIFICACAO_GLOBAL/RECERTIFICACAO_INCREMENTAL_V103.md",
+      "file": "RECERTIFICACAO_INCREMENTAL_V103.md",
+      "title": "Recertificação incremental V103",
+      "status": "Aprovada"
+    },
+    {
+      "path": "docs/canon/01_CANON_ATUAL/EPISODIO_6_O_SUPREMO_MAGO_ROTEIRO_COMPLETO_V1.md",
+      "file": "EPISODIO_6_O_SUPREMO_MAGO_ROTEIRO_COMPLETO_V1.md",
+      "title": "Episódio 6 — O Supremo Mago — V1 canônica",
+      "status": "Cânone consolidado na Etapa 165"
+    },
+    {
+      "path": "docs/canon/06_SISTEMA_NARRATIVO/AUDITORIA_CANONICA_EPISODIO_6_V1.md",
+      "file": "AUDITORIA_CANONICA_EPISODIO_6_V1.md",
+      "title": "Auditoria canônica do Episódio 6 V1",
+      "status": "Aprovada na Etapa 165"
+    },
+    {
+      "path": "docs/canon/09_CERTIFICACAO_GLOBAL/RECERTIFICACAO_INCREMENTAL_V104.md",
+      "file": "RECERTIFICACAO_INCREMENTAL_V104.md",
+      "title": "Recertificação incremental V104",
+      "status": "Aprovada"
+    },
+    {
+      "title": "Etapa 166 — Pré-produção do Episódio 7 — Oitenta por Cento",
+      "path": "docs/canon/20_PRODUCAO_TEMPORADA_1/EPISODIO_7_PRE_PRODUCAO/ETAPA_166_PRE_PRODUCAO_EPISODIO_7.md",
+      "category": "Produção da Temporada 1",
+      "status": "approved_preproduction"
+    },
+    {
+      "title": "Etapa 167 — Roteiro integral V1 do Episódio 7 — Oitenta por Cento",
+      "path": "docs/canon/20_PRODUCAO_TEMPORADA_1/EPISODIO_7_ROTEIRO/ETAPA_167_EPISODIO_7_OITENTA_POR_CENTO_V1_PROPOSTA.md",
+      "category": "Produção da Temporada 1",
+      "status": "complete_script_pending_audit"
+    },
+    {
+      "path": "docs/canon/09_CERTIFICACAO_GLOBAL/RECERTIFICACAO_INCREMENTAL_V106.md",
+      "file": "RECERTIFICACAO_INCREMENTAL_V106.md",
+      "title": "Recertificação incremental V106",
+      "status": "Aprovada"
+    },
+    {
+      "path": "docs/canon/01_CANON_ATUAL/EPISODIO_7_OITENTA_POR_CENTO_ROTEIRO_COMPLETO_V1.md",
+      "file": "EPISODIO_7_OITENTA_POR_CENTO_ROTEIRO_COMPLETO_V1.md",
+      "title": "Episódio 7 — Oitenta por Cento — V1 canônica",
+      "status": "Cânone consolidado na Etapa 168"
+    },
+    {
+      "path": "docs/canon/06_SISTEMA_NARRATIVO/AUDITORIA_CANONICA_EPISODIO_7_V1.md",
+      "file": "AUDITORIA_CANONICA_EPISODIO_7_V1.md",
+      "title": "Auditoria canônica do Episódio 7 V1",
+      "status": "Aprovada na Etapa 168"
+    },
+    {
+      "path": "docs/canon/09_CERTIFICACAO_GLOBAL/RECERTIFICACAO_INCREMENTAL_V107.md",
+      "file": "RECERTIFICACAO_INCREMENTAL_V107.md",
+      "title": "Recertificação incremental V107",
+      "status": "Aprovada"
+    },
+    {
+      "title": "Pré-produção do Episódio 8 — O Hospedeiro",
+      "path": "docs/canon/20_PRODUCAO_TEMPORADA_1/EPISODIO_8_PRE_PRODUCAO/ETAPA_169_PRE_PRODUCAO_EPISODIO_8.md",
+      "category": "Produção narrativa",
+      "status": "Pré-produção aprovada"
+    },
+    {
+      "title": "Etapa 170 - Roteiro integral V1 do Episódio 8 - O Hospedeiro",
+      "path": "docs/canon/20_PRODUCAO_TEMPORADA_1/EPISODIO_8_ROTEIRO/ETAPA_170_EPISODIO_8_O_HOSPEDEIRO_V1_PROPOSTA.md",
+      "category": "Produção da Temporada 1",
+      "status": "complete_script_pending_audit"
+    },
+    {
+      "path": "docs/canon/09_CERTIFICACAO_GLOBAL/RECERTIFICACAO_INCREMENTAL_V109.md",
+      "file": "RECERTIFICACAO_INCREMENTAL_V109.md",
+      "title": "Recertificação incremental V109",
+      "status": "Aprovada"
+    },
+    {
+      "title": "Etapa 171 - Auditoria e promoção do Episódio 8",
+      "path": "docs/canon/06_SISTEMA_NARRATIVO/AUDITORIA_CANONICA_EPISODIO_8_V1.md",
+      "category": "Produção da Temporada 1",
+      "status": "canonical_audit"
+    },
+    {
+      "title": "Encerramento canônico da Temporada 1",
+      "path": "docs/canon/01_CANON_ATUAL/ENCERRAMENTO_CANONICO_TEMPORADA_1.md",
+      "category": "Cânone atual",
+      "status": "closed_canonical"
+    }
+  ],
+  "approvedAdditions": [
+    {
+      "title": "Pesquisa, perda e contenção",
+      "description": "Elementos que sustentam o passado de Serlis, Aelyra e o programa de estudo da flor fóssil.",
+      "slugs": [
+        "ilyan-morveth",
+        "circulo-arcano-botanico",
+        "estase-de-intervalo"
+      ]
+    },
+    {
+      "title": "Fauna e nutrição",
+      "description": "O Cortassom e espécies leiteiras usadas na alimentação, recuperação física e sobrevivência das comunidades.",
+      "slugs": [
+        "cortassom",
+        "velurio",
+        "brumante",
+        "lumara",
+        "raizel-manso"
+      ]
+    },
+    {
+      "title": "Insetos de Stellar",
+      "description": "Espécies inofensivas, comestíveis, peçonhentas e predadoras integradas à ecologia do planeta.",
+      "slugs": [
+        "luzipolen",
+        "fio-de-orvalho",
+        "grilo-cobre",
+        "larva-de-veu",
+        "vespa-de-vidro",
+        "besouro-rubro",
+        "louva-fenda",
+        "mandibula-de-nevoa"
+      ]
+    },
+    {
+      "title": "Armamentos e runificação",
+      "description": "Categorias de armas, recursos improvisados, contenção, flashes e armerias rúnicas.",
+      "slugs": [
+        "sistema-de-armamentos",
+        "laminas",
+        "fuzis",
+        "revolveres",
+        "espingardas",
+        "fuzis-de-precisao",
+        "armas-de-arremesso",
+        "armas-de-explosao",
+        "armas-de-contencao",
+        "dispositivos-de-flash",
+        "armas-improvisadas",
+        "armerias-runicas"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "checks": 29,
+  "failed": 0,
+  "passed": 29,
+  "record_id": "ARPG-STAGE10-VALIDATION-V1.1.0",
+  "results": [
+    {
+      "detail": null,
+      "name": "health",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "art_dependency": "NONE_PLACEHOLDER_READY",
+        "authority": "ANDROMEDA_ARPG_STAGE10_MOBILITY_INFRASTRUCTURE",
+        "boundary_routes": 3,
+        "bridges": 13,
+        "canonical_bridge": "POI-046",
+        "derived_local_connectors": 22,
+        "failures": [],
+        "segments": 26,
+        "status": "PASS",
+        "vehicle_profiles": 3,
+        "vehicles": 0
+      },
+      "name": "verify",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "automotive_canon",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "varden_bridge",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "local_road",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "boundary_all",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "profile_count",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "derived_connectors",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "bridge_count",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "vehicle_create",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "cargo_inventory",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "board",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "destination_zone": "ZONE-STA-01-BLK-03",
+        "distance_km": 512.072,
+        "integrity_loss": 12.8018,
+        "origin_zone": "ZONE-STA-01-BLK-04",
+        "propulsion_used": 40.96576,
+        "segment_ref": "DRV-ROAD-082DB319F6FC749E54",
+        "speed_kmh_effective": 28.56,
+        "status": "PASS",
+        "travel_hours": 17.929692,
+        "vehicle": {
+          "authority": "GAMEPLAY_DERIVED_STAGE10_REBALANCEABLE",
+          "driver_ref": "rt:player_profile:6aab7b20-d84e-45c4-92e5-a74d24bb683a",
+          "integrity": 87.1982,
+          "odometer_km": 512.072,
+          "owner_ref": "rt:player_profile:6aab7b20-d84e-45c4-92e5-a74d24bb683a",
+          "passenger_refs": [
+            "rt:player_profile:6aab7b20-d84e-45c4-92e5-a74d24bb683a"
+          ],
+          "profile_ref": "VEH-PROFILE-SERVICE-LIGHT",
+          "propulsion": 59.03424,
+          "status": "PARKED",
+          "vehicle_ref": "VEH-02887B8FABAF64AAB4",
+          "zone_ref": "ZONE-STA-01-BLK-03"
+        },
+        "vehicle_ref": "VEH-02887B8FABAF64AAB4"
+      },
+      "name": "travel",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "profile_moved",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "propulsion_used",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "integrity_wear",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "load",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "cargo_qty",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "unload",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "cargo_remaining",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "bridge_damage",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "bridge_ref": "POI-046",
+        "reason": "BRIDGE_INOPERABLE",
+        "status": "REJECTED"
+      },
+      "name": "bridge_blocks_local_road",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "bridge_repair",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "reason": "BOUNDARY_ROUTE_LOCKED",
+        "segment_ref": "RTE-003",
+        "status": "REJECTED"
+      },
+      "name": "boundary_reject",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "npc_vehicle_zone",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "npc_driver",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "same_seed_segments",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "same_seed_distances",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "art_dependency": "NONE_PLACEHOLDER_READY",
+        "authority": "ANDROMEDA_ARPG_STAGE10_MOBILITY_INFRASTRUCTURE",
+        "boundary_routes": 3,
+        "bridges": 13,
+        "canonical_bridge": "POI-046",
+        "derived_local_connectors": 22,
+        "failures": [],
+        "segments": 26,
+        "status": "PASS",
+        "vehicle_profiles": 3,
+        "vehicles": 2
+      },
+      "name": "final_verify",
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS"
+}

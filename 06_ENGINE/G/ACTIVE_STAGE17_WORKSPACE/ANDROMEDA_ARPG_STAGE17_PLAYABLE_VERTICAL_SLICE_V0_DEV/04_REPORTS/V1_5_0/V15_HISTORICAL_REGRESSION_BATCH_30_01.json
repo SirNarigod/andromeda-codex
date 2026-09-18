@@ -1,0 +1,19 @@
+{
+  "record_id": "V15-HISTORICAL-REGRESSION-BATCH",
+  "start": 30,
+  "file_count": 1,
+  "tests": 5,
+  "passed_files": 1,
+  "failed_files": 0,
+  "rows": [
+    {
+      "file": "test_v14_simulation_anomalies.py",
+      "tests": 5,
+      "returncode": 0,
+      "seconds": 6.767,
+      "status": "PASS"
+    }
+  ],
+  "failures": [],
+  "status": "PASS"
+}

@@ -1,0 +1,42 @@
+{
+  "record_id": "LID-007",
+  "record_kind": "R2_CANONICAL_ENTRY_MIRROR",
+  "authority": "CANON_R2_CONFIRMADO",
+  "canonical_home": "01_LORE/CANON_R2/SOCIEDADES/LIDERES/LID-007__maeryn-salvara.json",
+  "source": {
+    "archive_sha256": "257e456a5d0396310ec2355b3dfc0f11f4e0a5264cf6e764591c8760f5070cb0",
+    "lineage": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json",
+    "document_sha256": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726"
+  },
+  "entry": {
+    "code": "LID-007",
+    "slug": "maeryn-salvara",
+    "title": "Maeryn Salvara",
+    "subtitle": "Autoridade máxima de Rubra-Viva",
+    "category": "LID",
+    "secondaryCategories": [],
+    "canon": "Cânone consolidado",
+    "spoiler": 2,
+    "sealed": true,
+    "image": null,
+    "imageStatus": null,
+    "summary": "Autoridade máxima de Rubra-Viva e liderança canônica associada ao território correspondente.",
+    "facts": {
+      "Cargo": "Autoridade máxima de Rubra-Viva"
+    },
+    "sections": [],
+    "relations": [
+      {
+        "slug": "rubra-viva",
+        "label": "Autoridade máxima"
+      }
+    ],
+    "keywords": [
+      "Maeryn Salvara",
+      "Autoridade máxima de Rubra-Viva"
+    ],
+    "sources": [
+      "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+    ]
+  }
+}

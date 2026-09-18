@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-DERIVED-FOOD-DEV-V1.0",
+  "title": "Carnes, bebidas e alimentos derivados (extensão de gameplay sobre recursos já catalogados)",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "canonical_status": "GAMEPLAY_DERIVED_DEV",
+  "supplements": [
+    "STELLAR_RESOURCE_CATALOG_V1_0.json",
+    "STELLAR_PREPARED_FOOD_DEV_V1_0.json"
+  ],
+  "r2_guard": "Prefixo FOOD- novo, separado do RES- (R2-travado, NO_UNSOURCED_RECIPE). Carne é byproduct do gado já leiteiro (mesmo nível de extensão já aceito para MAT-003 Couro de Manada) — não presume caça de criaturas hostis, sem evidência R2 de que sejam comestíveis. Todo source referencia algo já catalogado (RES-/FLO-/AGZ-/FOOD-).",
+  "foods": [
+    {
+      "food_id": "FOOD-001",
+      "name": "Carne de Manada",
+      "category": "CARNE",
+      "source": "AGZ-090",
+      "produced_at": "EST-037",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 1.05,
+      "description": "Carne produzida a partir de AGZ-090."
+    },
+    {
+      "food_id": "FOOD-002",
+      "name": "Linguiça de Fronteira",
+      "category": "CARNE",
+      "source": "FOOD-001",
+      "produced_at": "EST-037",
+      "price_tier": "MÉDIO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 1.05,
+      "description": "Carne produzida a partir de FOOD-001."
+    },
+    {
+      "food_id": "FOOD-003",
+      "name": "Manteiga de Pastagem",
+      "category": "DERIVADO",
+      "source": "RES-001",
+      "produced_at": "EST-037",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 0.36,
+      "description": "Derivado produzido a partir de RES-001."
+    },
+    {
+      "food_id": "FOOD-004",
+      "name": "Iogurte de Brumante",
+      "category": "DERIVADO",
+      "source": "RES-002",
+      "produced_at": "EST-037",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 0.36,
+      "description": "Derivado produzido a partir de RES-002."
+    },
+    {
+      "food_id": "FOOD-005",
+      "name": "Vinho de Flor-de-Orvalho",
+      "category": "BEBIDA",
+      "source": "FLO-003",
+      "produced_at": "EST-005",
+      "price_tier": "MÉDIO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 0.78,
+      "description": "Bebida produzida a partir de FLO-003."
+    },
+    {
+      "food_id": "FOOD-006",
+      "name": "Cerveja de Grão",
+      "category": "BEBIDA",
+      "source": "AGZ-096",
+      "produced_at": "EST-042",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-013",
+        "CUR-000"
+      ],
+      "weight_kg": 0.78,
+      "description": "Bebida produzida a partir de AGZ-096."
+    },
+    {
+      "food_id": "FOOD-007",
+      "name": "Chá de Ervas do Jardim",
+      "category": "BEBIDA",
+      "source": "AGZ-091",
+      "produced_at": "EST-012",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-007",
+        "CUR-000"
+      ],
+      "weight_kg": 0.78,
+      "description": "Bebida produzida a partir de AGZ-091."
+    },
+    {
+      "food_id": "FOOD-008",
+      "name": "Cogumelos Grelhados",
+      "category": "DERIVADO",
+      "source": "AGZ-093",
+      "produced_at": "EST-030",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-009",
+        "CUR-000"
+      ],
+      "weight_kg": 0.37,
+      "description": "Derivado produzido a partir de AGZ-093."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "record_id": "V1.3-CATALOG-DISTRIBUTION-STRESS",
+  "status": "PASS",
+  "stats": {
+    "seeds": 300,
+    "blocks": 4478,
+    "shops": 43297,
+    "dungeons": 2900,
+    "scene_objects": 34452,
+    "npcs": 185680
+  },
+  "known_catalog_refs": 84,
+  "failure_count": 0,
+  "failures": []
+}

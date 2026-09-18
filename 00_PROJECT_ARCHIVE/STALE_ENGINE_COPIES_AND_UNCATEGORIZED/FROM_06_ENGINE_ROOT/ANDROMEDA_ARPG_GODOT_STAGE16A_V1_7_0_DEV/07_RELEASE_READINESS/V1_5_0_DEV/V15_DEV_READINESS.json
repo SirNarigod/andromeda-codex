@@ -1,0 +1,139 @@
+{
+  "record_id": "V15-DEV-READINESS",
+  "version": "V1.5.0-DEV",
+  "local_checks": 24,
+  "local_passed": 24,
+  "local_failed": 0,
+  "local_status": "PASS",
+  "external_godot_gate": {
+    "godot_executable": null,
+    "runtime_execution": "PENDING",
+    "reason": "Godot 4 executable is not installed in this environment; GDScript/runtime scene execution cannot be truthfully claimed."
+  },
+  "release_authorized": false,
+  "backup_authorized": false,
+  "status": "PASS_SERVER_CONVERGED_EXTERNAL_GODOT_PENDING",
+  "failures": [],
+  "checks_detail": [
+    {
+      "name": "MASTER_HASH",
+      "status": "PASS",
+      "detail": "9677b10890c24dfc04916178a2b9fd40a9ea131f2a13c1ec8255186ab203a98b"
+    },
+    {
+      "name": "HISTORICAL_807",
+      "status": "PASS",
+      "detail": "{'status': 'PASS', 'passed': None, 'tests': 807, 'pairs': None, 'worlds_completed': None, 'checks': None, 'detected': None}"
+    },
+    {
+      "name": "STRESS_30",
+      "status": "PASS",
+      "detail": "{'status': 'PASS', 'passed': 30, 'tests': None, 'pairs': None, 'worlds_completed': 30, 'checks': None, 'detected': None}"
+    },
+    {
+      "name": "DETERMINISM_10",
+      "status": "PASS",
+      "detail": "{'status': 'PASS', 'passed': None, 'tests': None, 'pairs': 10, 'worlds_completed': None, 'checks': None, 'detected': None}"
+    },
+    {
+      "name": "STATIC_28",
+      "status": "PASS",
+      "detail": "{'status': 'PASS', 'passed': 28, 'tests': None, 'pairs': None, 'worlds_completed': None, 'checks': 28, 'detected': None}"
+    },
+    {
+      "name": "STAGE13_1403",
+      "status": "PASS",
+      "detail": "{'status': 'PASS', 'passed': 1403, 'tests': None, 'pairs': None, 'worlds_completed': None, 'checks': 1403, 'detected': None}"
+    },
+    {
+      "name": "STAGE13_FUZZ",
+      "status": "PASS",
+      "detail": "{'status': 'PASS', 'passed': None, 'tests': None, 'pairs': None, 'worlds_completed': None, 'checks': None, 'detected': None}"
+    },
+    {
+      "name": "STAGE14_43",
+      "status": "PASS",
+      "detail": "{'status': 'PASS', 'passed': 43, 'tests': None, 'pairs': None, 'worlds_completed': None, 'checks': 43, 'detected': None}"
+    },
+    {
+      "name": "MULTIWORLD_37",
+      "status": "PASS",
+      "detail": "{'status': 'PASS', 'passed': 37, 'tests': None, 'pairs': None, 'worlds_completed': None, 'checks': 37, 'detected': None}"
+    },
+    {
+      "name": "CORRUPTION_10",
+      "status": "PASS",
+      "detail": "{'status': 'PASS', 'passed': None, 'tests': None, 'pairs': None, 'worlds_completed': None, 'checks': None, 'detected': 10}"
+    },
+    {
+      "name": "BUGS_15_CLOSED",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "HARNESS_OPEN_0",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "AGENTS_11",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SECOND_COUNTRY_LOCKED",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "GODOT_CONTRACT_V15",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "GODOT_SESSION_RULE",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIVE_HEALTH",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SESSION_BIND_LIVE",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SNAPSHOT_LIVE",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "RESUME_WORLD",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "RESUME_HEALTH",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SESSION_AFTER_RESUME",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "MOTION_AFTER_RESUME",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "NO_TRANSIENT_FILES",
+      "status": "PASS",
+      "detail": ""
+    }
+  ]
+}

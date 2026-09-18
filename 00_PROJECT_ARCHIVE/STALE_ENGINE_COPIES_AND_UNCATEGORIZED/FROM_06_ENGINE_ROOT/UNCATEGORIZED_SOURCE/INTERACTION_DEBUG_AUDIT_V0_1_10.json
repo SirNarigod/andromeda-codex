@@ -1,0 +1,9 @@
+{
+  "build": "V0.1.10",
+  "status": "PASS_STATIC_EXTERNAL_GODOT_RUNTIME_PENDING",
+  "reported_error": "Trying to assign an array of type \"Array\" to a variable of type \"Array[float]\"",
+  "source_location": "Main.gd:286 in V0.1.9",
+  "cause": "GDScript conditional expression produced generic Array; assignment to Array[float] failed when an interaction requested an approach path.",
+  "fix": "Explicit Array[float] plus append(float) branches; project-wide guard against typed-array ternary initializers.",
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1"
+}

@@ -1,0 +1,624 @@
+{
+  "record_id": "STELLAR-LOCAL-CONSTRUCTION-COORDINATES-DEV-V1.0",
+  "title": "Coordenadas Locais das Construções (para distância dentro de cada território)",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "r2_guard": "Mesmo CRS sintético já usado desde a fase 37 (ACRS-STELLAR-GEODETIC-V1). Cada EST-XXX recebe um pequeno deslocamento determinístico (hash do próprio ID, não aleatório) a partir do centro da subregião-mãe já catalogada - permite calcular distância relativa entre quaisquer duas construções do mesmo território sem inventar geometria nova.",
+  "distance_formula": "distância_relativa(A,B) ≈ sqrt((lon_A-lon_B)² + (lat_A-lat_B)²) em graus sintéticos - só para ordenar 'mais perto/mais longe', não é metragem real (metragem real depende do trabalho de medidas/escala ainda pendente).",
+  "count": 68,
+  "missing_subregion_refs": [],
+  "constructions": [
+    {
+      "est_id": "EST-001",
+      "name": "Mercado Central de Lúminor",
+      "parent_subregion": "SUB-001-001",
+      "longitude": 42.1222,
+      "latitude": 2.1259,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": -1.51
+    },
+    {
+      "est_id": "EST-002",
+      "name": "Entreposto da Doca",
+      "parent_subregion": "SUB-002-002",
+      "longitude": 35.4157,
+      "latitude": 21.5897,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 1.87
+    },
+    {
+      "est_id": "EST-003",
+      "name": "Forja Real de Kharveth (edifício)",
+      "parent_subregion": "SUB-002-001",
+      "longitude": 37.5474,
+      "latitude": 20.7081,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 0.57
+    },
+    {
+      "est_id": "EST-004",
+      "name": "Oficina de Charneira (edifício)",
+      "parent_subregion": "SUB-011-005",
+      "longitude": 2.6916,
+      "latitude": -41.829,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": -2.38
+    },
+    {
+      "est_id": "EST-005",
+      "name": "Casario de Varga",
+      "parent_subregion": "SUB-011-001",
+      "longitude": 6.9358,
+      "latitude": -37.5902,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 2.15
+    },
+    {
+      "est_id": "EST-006",
+      "name": "Casario da Vila dos Pescadores",
+      "parent_subregion": "SUB-004-002",
+      "longitude": 4.8256,
+      "latitude": 42.714,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": -2.31
+    },
+    {
+      "est_id": "EST-007",
+      "name": "Acampamento de Caravana",
+      "parent_subregion": "SUB-001-002",
+      "longitude": 40.0017,
+      "latitude": 2.9907,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": -0.7
+    },
+    {
+      "est_id": "EST-008",
+      "name": "Acampamento dos Trilhos",
+      "parent_subregion": "SUB-002-003",
+      "longitude": 33.2954,
+      "latitude": 20.7031,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": -0.79
+    },
+    {
+      "est_id": "EST-009",
+      "name": "Guarnição de Contenção",
+      "parent_subregion": "SUB-012-003",
+      "longitude": 20.5982,
+      "latitude": -30.7955,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 1.49
+    },
+    {
+      "est_id": "EST-010",
+      "name": "Guarda da Fortaleza",
+      "parent_subregion": "SUB-013-001",
+      "longitude": 37.5476,
+      "latitude": -16.46,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": -0.43
+    },
+    {
+      "est_id": "EST-011",
+      "name": "Armeria Rúnica da Forja Real",
+      "parent_subregion": "SUB-002-001",
+      "longitude": 37.5381,
+      "latitude": 20.7187,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": -1.69
+    },
+    {
+      "est_id": "EST-012",
+      "name": "Botica do Jardim Central",
+      "parent_subregion": "SUB-007-001",
+      "longitude": -36.7146,
+      "latitude": 11.6948,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 1.73
+    },
+    {
+      "est_id": "EST-013",
+      "name": "Câmara Mercantil",
+      "parent_subregion": "SUB-001-003",
+      "longitude": 37.8752,
+      "latitude": 2.1183,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 1.95
+    },
+    {
+      "est_id": "EST-014",
+      "name": "Bilheteria e Armazém da Estação",
+      "parent_subregion": "SUB-003-001",
+      "longitude": 24.842,
+      "latitude": 35.0344,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": -1.91
+    },
+    {
+      "est_id": "EST-015",
+      "name": "Galpão de Manutenção Ferroviária",
+      "parent_subregion": "SUB-003-002",
+      "longitude": 22.7131,
+      "latitude": 35.9097,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 2.94
+    },
+    {
+      "est_id": "EST-016",
+      "name": "Plenário da Assembleia",
+      "parent_subregion": "SUB-003-003",
+      "longitude": 20.6043,
+      "latitude": 35.0316,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": -1.53
+    },
+    {
+      "est_id": "EST-017",
+      "name": "Armazém do Cais",
+      "parent_subregion": "SUB-004-001",
+      "longitude": 6.9441,
+      "latitude": 41.8252,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": -1.89
+    },
+    {
+      "est_id": "EST-018",
+      "name": "Câmara do Conselho das Ondas",
+      "parent_subregion": "SUB-004-003",
+      "longitude": 2.6959,
+      "latitude": 41.8203,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": -2.53
+    },
+    {
+      "est_id": "EST-019",
+      "name": "Oficina de Fusão Tecnomágica",
+      "parent_subregion": "SUB-005-001",
+      "longitude": -12.0576,
+      "latitude": 39.5203,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": -1.27
+    },
+    {
+      "est_id": "EST-020",
+      "name": "Ala de Pesquisa Central",
+      "parent_subregion": "SUB-005-002",
+      "longitude": -14.188,
+      "latitude": 40.4074,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 2.5
+    },
+    {
+      "est_id": "EST-021",
+      "name": "Corte Principesca",
+      "parent_subregion": "SUB-005-003",
+      "longitude": -16.2972,
+      "latitude": 39.531,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": -1.58
+    },
+    {
+      "est_id": "EST-022",
+      "name": "Residência Real Suspensa",
+      "parent_subregion": "SUB-006-001",
+      "longitude": -27.8245,
+      "latitude": 28.6401,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 922.22
+    },
+    {
+      "est_id": "EST-023",
+      "name": "Terminal de Carga Aérea",
+      "parent_subregion": "SUB-006-002",
+      "longitude": -29.9311,
+      "latitude": 29.528,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 855.34
+    },
+    {
+      "est_id": "EST-024",
+      "name": "Câmara Eletiva (edifício)",
+      "parent_subregion": "SUB-006-003",
+      "longitude": -32.0653,
+      "latitude": 28.6489,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 1047.76
+    },
+    {
+      "est_id": "EST-025",
+      "name": "Enfermaria Principal",
+      "parent_subregion": "SUB-007-002",
+      "longitude": -38.8477,
+      "latitude": 12.5718,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 2.71
+    },
+    {
+      "est_id": "EST-026",
+      "name": "Sede do Conselho de Saúde",
+      "parent_subregion": "SUB-007-003",
+      "longitude": -40.9501,
+      "latitude": 11.7002,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 2.52
+    },
+    {
+      "est_id": "EST-027",
+      "name": "Moradas das Copas",
+      "parent_subregion": "SUB-008-001",
+      "longitude": -36.7075,
+      "latitude": -7.4548,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 0.03
+    },
+    {
+      "est_id": "EST-028",
+      "name": "Templo Sagrado das Raízes",
+      "parent_subregion": "SUB-008-002",
+      "longitude": -38.8403,
+      "latitude": -6.5636,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 2.17
+    },
+    {
+      "est_id": "EST-029",
+      "name": "Círculo de Conselho dos Anciãos",
+      "parent_subregion": "SUB-008-003",
+      "longitude": -40.9591,
+      "latitude": -7.4514,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": -2.17
+    },
+    {
+      "est_id": "EST-030",
+      "name": "Moradas de Cristal",
+      "parent_subregion": "SUB-009-001",
+      "longitude": -27.8268,
+      "latitude": -24.4099,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": -85.56
+    },
+    {
+      "est_id": "EST-031",
+      "name": "Galeria de Extração",
+      "parent_subregion": "SUB-009-002",
+      "longitude": -29.9314,
+      "latitude": -23.5198,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": -65.83
+    },
+    {
+      "est_id": "EST-032",
+      "name": "Plenário Subcristal",
+      "parent_subregion": "SUB-009-003",
+      "longitude": -32.0598,
+      "latitude": -24.4062,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": -84.96
+    },
+    {
+      "est_id": "EST-033",
+      "name": "Câmara do Conselho Enohariano",
+      "parent_subregion": "SUB-010-001",
+      "longitude": -12.0592,
+      "latitude": -35.2874,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 0.34
+    },
+    {
+      "est_id": "EST-034",
+      "name": "Academia de Formação Mágica",
+      "parent_subregion": "SUB-010-002",
+      "longitude": -14.1792,
+      "latitude": -34.3993,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": -2.34
+    },
+    {
+      "est_id": "EST-035",
+      "name": "Estação de Captação da Corrente",
+      "parent_subregion": "SUB-010-003",
+      "longitude": -16.3085,
+      "latitude": -35.2754,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": -0.16
+    },
+    {
+      "est_id": "EST-036",
+      "name": "Entreposto do Entroncamento",
+      "parent_subregion": "SUB-011-002",
+      "longitude": 4.8209,
+      "latitude": -36.699,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": -2.59
+    },
+    {
+      "est_id": "EST-037",
+      "name": "Curral e Estábulo",
+      "parent_subregion": "SUB-011-003",
+      "longitude": 2.7012,
+      "latitude": -37.5898,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 2.4
+    },
+    {
+      "est_id": "EST-038",
+      "name": "Acampamento do Vau",
+      "parent_subregion": "SUB-011-004",
+      "longitude": 1.8263,
+      "latitude": -39.7075,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 0.09
+    },
+    {
+      "est_id": "EST-039",
+      "name": "Guarnição do Abrigo",
+      "parent_subregion": "SUB-011-006",
+      "longitude": 4.8286,
+      "latitude": -42.7083,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 341.1
+    },
+    {
+      "est_id": "EST-040",
+      "name": "Posto Avançado do Perímetro",
+      "parent_subregion": "SUB-012-001",
+      "longitude": 24.8515,
+      "latitude": -30.8042,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": -1.65
+    },
+    {
+      "est_id": "EST-041",
+      "name": "Tendas de Acolhimento",
+      "parent_subregion": "SUB-012-002",
+      "longitude": 22.7155,
+      "latitude": -29.9287,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 1.05
+    },
+    {
+      "est_id": "EST-042",
+      "name": "Salão de Audiências de Serverus",
+      "parent_subregion": "SUB-013-002",
+      "longitude": 35.4261,
+      "latitude": -15.5961,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": -1.82
+    },
+    {
+      "est_id": "EST-043",
+      "name": "Posto da Passagem Oculta",
+      "parent_subregion": "SUB-013-003",
+      "longitude": 33.296,
+      "latitude": -16.4647,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": -1.68
+    },
+    {
+      "est_id": "EST-044",
+      "name": "Ateliê de Encantamento da Vertente",
+      "parent_subregion": "SUB-010-002",
+      "longitude": -14.1861,
+      "latitude": -34.3974,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": -0.07
+    },
+    {
+      "est_id": "EST-045",
+      "name": "Posto de Vigia da Estação Oriental",
+      "parent_subregion": "SUB-011-002",
+      "longitude": 4.8232,
+      "latitude": -36.7119,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 1.26
+    },
+    {
+      "est_id": "EST-046",
+      "name": "Oficina de Carruagens de Lúminor",
+      "parent_subregion": "SUB-001-002",
+      "longitude": 39.9972,
+      "latitude": 3.007,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 1.77
+    },
+    {
+      "est_id": "EST-047",
+      "name": "Estaleiro de Navyr",
+      "parent_subregion": "SUB-004-001",
+      "longitude": 6.9476,
+      "latitude": 41.8386,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": -2.73
+    },
+    {
+      "est_id": "EST-048",
+      "name": "Hangar de Naves de Altavela",
+      "parent_subregion": "SUB-006-002",
+      "longitude": -29.9406,
+      "latitude": 29.5189,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 942.42
+    },
+    {
+      "est_id": "EST-049",
+      "name": "Fundição da Caldeira",
+      "parent_subregion": "SUB-014-001",
+      "longitude": 38.1645,
+      "latitude": -15.2389,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 214.72
+    },
+    {
+      "est_id": "EST-050",
+      "name": "Casario da Cratera",
+      "parent_subregion": "SUB-014-002",
+      "longitude": 36.0334,
+      "latitude": -14.3528,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 230.5
+    },
+    {
+      "est_id": "EST-051",
+      "name": "Mercado dos Terraços",
+      "parent_subregion": "SUB-014-003",
+      "longitude": 33.9109,
+      "latitude": -15.2271,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 2.87
+    },
+    {
+      "est_id": "EST-052",
+      "name": "Acampamento das Dunas",
+      "parent_subregion": "SUB-015-001",
+      "longitude": 38.6672,
+      "latitude": -14.14,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": -2.63
+    },
+    {
+      "est_id": "EST-053",
+      "name": "Sitio Arqueologico das Ruinas",
+      "parent_subregion": "SUB-015-002",
+      "longitude": 36.5426,
+      "latitude": -13.2619,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": -1.44
+    },
+    {
+      "est_id": "EST-054",
+      "name": "Poco Fundo",
+      "parent_subregion": "SUB-015-003",
+      "longitude": 34.4292,
+      "latitude": -14.1536,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 2.52
+    },
+    {
+      "est_id": "EST-055",
+      "name": "Posto da Geleira",
+      "parent_subregion": "SUB-016-001",
+      "longitude": 39.0706,
+      "latitude": -13.19,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 118.53
+    },
+    {
+      "est_id": "EST-056",
+      "name": "Abrigo Central",
+      "parent_subregion": "SUB-016-002",
+      "longitude": 36.9606,
+      "latitude": -12.3033,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 134.4
+    },
+    {
+      "est_id": "EST-057",
+      "name": "Vigia da Fenda",
+      "parent_subregion": "SUB-016-003",
+      "longitude": 34.84,
+      "latitude": -13.1887,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 119.07
+    },
+    {
+      "est_id": "EST-058",
+      "name": "Doca Eterea",
+      "parent_subregion": "SUB-017-001",
+      "longitude": 39.4206,
+      "latitude": -12.3359,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 1464.56
+    },
+    {
+      "est_id": "EST-059",
+      "name": "Posto das Correntes",
+      "parent_subregion": "SUB-017-002",
+      "longitude": 37.2987,
+      "latitude": -11.4558,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 1281.94
+    },
+    {
+      "est_id": "EST-060",
+      "name": "Refugio Errante",
+      "parent_subregion": "SUB-017-003",
+      "longitude": 35.1759,
+      "latitude": -12.3363,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 1317.99
+    },
+    {
+      "est_id": "EST-061",
+      "name": "Cupula da Trincheira",
+      "parent_subregion": "SUB-018-001",
+      "longitude": 39.7002,
+      "latitude": -11.5646,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": -695.41
+    },
+    {
+      "est_id": "EST-062",
+      "name": "Vila dos Recifes",
+      "parent_subregion": "SUB-018-002",
+      "longitude": 37.5949,
+      "latitude": -10.6862,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": -488.83
+    },
+    {
+      "est_id": "EST-063",
+      "name": "Estacao de Pressao",
+      "parent_subregion": "SUB-018-003",
+      "longitude": 35.4586,
+      "latitude": -11.561,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": -597.64
+    },
+    {
+      "est_id": "EST-064",
+      "name": "Posto do Dossel",
+      "parent_subregion": "SUB-019-001",
+      "longitude": 39.9514,
+      "latitude": -10.8611,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": -0.14
+    },
+    {
+      "est_id": "EST-065",
+      "name": "Sitio das Ruinas Cobertas",
+      "parent_subregion": "SUB-019-002",
+      "longitude": 37.841,
+      "latitude": -9.9803,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": -2.72
+    },
+    {
+      "est_id": "EST-066",
+      "name": "Vigia do Pantano",
+      "parent_subregion": "SUB-019-003",
+      "longitude": 35.7082,
+      "latitude": -10.8613,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": -2.85
+    },
+    {
+      "est_id": "EST-067",
+      "name": "Entreposto do Trovao",
+      "parent_subregion": "SUB-013-001",
+      "longitude": 37.5484,
+      "latitude": -16.4684,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 1.43
+    },
+    {
+      "est_id": "EST-068",
+      "name": "Entreposto de Ithra",
+      "parent_subregion": "SUB-005-001",
+      "longitude": -12.0542,
+      "latitude": 39.5311,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "altitude_m": 1.97
+    }
+  ],
+  "altitude_note_v1_1": "altitude_m adicionado (etapa 2 do Atlas) por terrain_type da subregiao-mae, mesma tabela do índice de regiões."
+}

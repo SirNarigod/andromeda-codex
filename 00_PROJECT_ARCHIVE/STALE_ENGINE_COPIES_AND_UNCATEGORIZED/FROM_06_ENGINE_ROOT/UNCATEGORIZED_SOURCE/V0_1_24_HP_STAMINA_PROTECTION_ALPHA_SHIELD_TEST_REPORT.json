@@ -1,0 +1,40 @@
+{
+  "build": "V0.1.24 DEV",
+  "baseline": "V0.1.23 DEV — runtime PASS informado pelo autor",
+  "status": "STATIC_PASS_RUNTIME_PENDING",
+  "checks": 30,
+  "passed": 30,
+  "failed": 0,
+  "alpha_expected": {
+    "hp": 250,
+    "shield": 120
+  },
+  "weapon_alpha_full_shield_first_hit_model": {
+    "Espada de Oficina": {
+      "hp_damage": 0,
+      "shield_damage": 19
+    },
+    "Espada do Vigia Caído": {
+      "hp_damage": 6,
+      "shield_damage": 22
+    },
+    "Arco de Galho Negro": {
+      "hp_damage": 6,
+      "shield_damage": 8
+    },
+    "Besta de Ferrolho Antiga": {
+      "hp_damage": 4,
+      "shield_damage": 27
+    },
+    "Chicote de Corrente Velária": {
+      "hp_damage": 0,
+      "shield_damage": 13
+    }
+  },
+  "player": {
+    "hp": 100,
+    "stamina": 100,
+    "protection": 60
+  },
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1"
+}

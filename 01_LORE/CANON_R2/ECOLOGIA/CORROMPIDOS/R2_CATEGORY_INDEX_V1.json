@@ -1,0 +1,16 @@
+{
+  "record_id": "R2-COR-CATEGORY-INDEX-V1",
+  "authority": "CANON_R2_CONFIRMADO",
+  "category": "COR",
+  "category_name": "Corrompidos",
+  "items": [
+    {
+      "id": "COR-001",
+      "title": "Raiz Profunda",
+      "path": "01_LORE/CANON_R2/ECOLOGIA/CORROMPIDOS/COR-001__raiz-profunda.json",
+      "spoiler": 3,
+      "sealed": true
+    }
+  ],
+  "source": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json"
+}

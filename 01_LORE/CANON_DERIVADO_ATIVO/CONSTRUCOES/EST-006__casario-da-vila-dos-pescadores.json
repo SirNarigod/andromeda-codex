@@ -1,0 +1,36 @@
+{
+  "est_id": "EST-006",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Casario da Vila dos Pescadores",
+  "building_type": "RESIDENCIAL",
+  "parent_locality": "LOC-004-002",
+  "parent_subregion": "SUB-004-002",
+  "parent_political_unit": "TER-004",
+  "function": "Moradias de famílias pescadoras, construídas sobre palafitas nas Ilhas de Pesca.",
+  "economic_role": {
+    "is_vendor": false,
+    "sells": [],
+    "produces": [],
+    "regulation_factor": 0.1
+  },
+  "capacity": {
+    "jobs": 1,
+    "residents": 25
+  },
+  "professions_linked": [
+    "pescador"
+  ],
+  "notable_link": "Ilhas de Pesca (SUB-004-002)",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "MADEIRA_E_ALVENARIA",
+    "flammability": "ALTA",
+    "recovery_days": 7
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "record_id": "SUB-001-003", "record_kind": "DERIVED_SUBREGION_PROFILE", "authority": "CANON_DERIVADO_ATIVO", "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Câmara dos Mercadores", "parent_political_unit": "TER-001",
+  "provenance": {"approval": "GAMEPLAY_DERIVED_DEV_SOURCE", "r2_anchors": ["TER-001", "elyra-vaelor"], "compatibility": "Camada administrativa e narrativa local; não cria fronteira, cidade, soberania ou nova autoridade."},
+  "function": "Sede de governança da confederação, onde representantes das casas mercantis deliberam.",
+  "locality_references": ["LOC-001-003 Salão dos Mercadores"],
+  "permitted_catalog_links": {"npc_roles": [], "professions": [], "encounters": [], "resources": []},
+  "local_conflicts": ["voto por peso comercial versus voto igualitário entre casas pequenas e grandes"],
+  "prohibitions": ["NO_NEW_SOVEREIGNTY", "NO_AUTOMATIC_KENUA_SCENE", "NO_R2_EPISODE_REWRITE", "NO_FIXED_BORDER_COORDINATE"],
+  "story_generators": ["Uma casa mercantil pequena propõe reforma no sistema de votos e enfrenta resistência das casas maiores."]
+}

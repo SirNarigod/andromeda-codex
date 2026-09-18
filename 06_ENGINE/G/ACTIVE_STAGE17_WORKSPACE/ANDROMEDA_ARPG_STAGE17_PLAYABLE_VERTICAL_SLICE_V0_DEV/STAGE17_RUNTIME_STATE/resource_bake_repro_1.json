@@ -1,0 +1,146 @@
+{
+  "canonical_manifest": {
+    "constraints": [
+      {
+        "active": true,
+        "authoring_source": {
+          "node_path": "WorldStreamRoot/CollisionSurface/ResourceGatherLosBlocker",
+          "runtime_authority": false,
+          "scene_path": "13_GODOT_ARPG_STAGE17/scenes/Main.tscn",
+          "scene_sha256": "8691a691b89849307adb14e4e6e64b7b84a8d219dc8cfe872ebecf10e7476643",
+          "shape_child_path": "CollisionShape3D"
+        },
+        "block_ref": "STA-05-BLK-04",
+        "blocks_los": true,
+        "bounds": {
+          "max_altitude_m": 2.0,
+          "max_iso_x_m": 101499.61860397119,
+          "max_iso_y_m": 863285.7413193369,
+          "min_altitude_m": 0.0,
+          "min_iso_x_m": 101499.41860397118,
+          "min_iso_y_m": 863284.541319337
+        },
+        "constraint_kind": "AXIS_ALIGNED_SOLID_BLOCKER",
+        "constraint_ref": "RESOURCE-LOS-BLOCKER-S17-001",
+        "placement_revision": "S17-RESOURCE-PLACEMENT-DEV-R0001",
+        "source_authoring_hash": "f3f30d3abb29813387eeb7c7efbb1d505337489348ead920cae7bf93a04e1f95",
+        "world_instance_id": "rt:world:bd0f78f5-7018-4cc6-8f47-34f8f2875e47",
+        "zone_ref": "ZONE-STA-05-BLK-04"
+      }
+    ],
+    "coordinate_contract": {
+      "altitude_source": "OFFLINE_AUTHORED_BAKE",
+      "local_anchor_node_path": "ActorRoot/Player",
+      "local_anchor_position": {
+        "x": -7.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "local_x_axis": "+ISO_X_M",
+      "local_z_axis": "+ISO_Y_M",
+      "mapping": "AUTHORITY_ORIGIN_PLUS_LOCAL_OFFSET_METRES",
+      "scale_m_per_local_unit": 1.0
+    },
+    "gather_policy": {
+      "blocker_geometry_authority": "OFFLINE_BAKED_RUNTIME_MATERIALIZED",
+      "blocker_los_required": true,
+      "client_position_accepted": false,
+      "distance_authority": "SERVER_MOVEMENT_STATE_TO_MATERIALIZED_RESOURCE_POSITION",
+      "metric_range_m": 1.5
+    },
+    "logical_identity_policy": {
+      "gth_owns_gathering_and_depletion": true,
+      "multiple_physical_placements_per_gth_supported": true,
+      "physical_placement_identity_is_separate": true
+    },
+    "placement_algorithm_version": "S17_EXPLICIT_AUTHORIAL_BAKE_V1",
+    "placement_authority": "STAGE17_RESOURCE_METRIC_PLACEMENT_AUTHORITY",
+    "placement_model": "HYBRID_PLACEMENT_OFFLINE_BAKED_RUNTIME_MATERIALIZED",
+    "placement_revision": "S17-RESOURCE-PLACEMENT-DEV-R0001",
+    "placements": [
+      {
+        "active": true,
+        "authoring_source": {
+          "node_path": "WorldStreamRoot/B03InteractionTargets/OreB03",
+          "object_ref": "ORE_PRIMARY",
+          "runtime_authority": false,
+          "scene_path": "13_GODOT_ARPG_STAGE17/scenes/Main.tscn",
+          "scene_sha256": "8691a691b89849307adb14e4e6e64b7b84a8d219dc8cfe872ebecf10e7476643"
+        },
+        "block_ref": "STA-05-BLK-04",
+        "logical_node_ref": "GTH-34AC1BC54C33917F0553",
+        "ordinal": 0,
+        "placement_mode": "EXPLICIT",
+        "placement_ref": "RESOURCE-PLACEMENT-S17-3BDA3343A505268017CE",
+        "placement_revision": "S17-RESOURCE-PLACEMENT-DEV-R0001",
+        "position": {
+          "altitude_m": 0.0,
+          "iso_x_m": 101507.26860397118,
+          "iso_y_m": 863284.141319337
+        },
+        "position_authority": "STAGE17_RESOURCE_METRIC_PLACEMENT_MATERIALIZED",
+        "resource_kind": "ORE",
+        "schema_version": "S17_RESOURCE_METRIC_PLACEMENT_V1",
+        "source_authoring_hash": "f3f30d3abb29813387eeb7c7efbb1d505337489348ead920cae7bf93a04e1f95",
+        "source_kind": "MINERAL",
+        "source_ref": "MIN-MANA-ORE",
+        "world_instance_id": "rt:world:bd0f78f5-7018-4cc6-8f47-34f8f2875e47",
+        "zone_ref": "ZONE-STA-05-BLK-04"
+      },
+      {
+        "active": true,
+        "authoring_source": {
+          "node_path": "WorldStreamRoot/B03InteractionTargets/TreeB03",
+          "object_ref": "TREE_PRIMARY",
+          "runtime_authority": false,
+          "scene_path": "13_GODOT_ARPG_STAGE17/scenes/Main.tscn",
+          "scene_sha256": "8691a691b89849307adb14e4e6e64b7b84a8d219dc8cfe872ebecf10e7476643"
+        },
+        "block_ref": "STA-05-BLK-04",
+        "logical_node_ref": "GTH-CA3D9A47934BD64A24B4",
+        "ordinal": 0,
+        "placement_mode": "EXPLICIT",
+        "placement_ref": "RESOURCE-PLACEMENT-S17-DCC60BB7E7C256C1BF9E",
+        "placement_revision": "S17-RESOURCE-PLACEMENT-DEV-R0001",
+        "position": {
+          "altitude_m": 0.0,
+          "iso_x_m": 101500.26860397118,
+          "iso_y_m": 863285.141319337
+        },
+        "position_authority": "STAGE17_RESOURCE_METRIC_PLACEMENT_MATERIALIZED",
+        "resource_kind": "TREE",
+        "schema_version": "S17_RESOURCE_METRIC_PLACEMENT_V1",
+        "source_authoring_hash": "f3f30d3abb29813387eeb7c7efbb1d505337489348ead920cae7bf93a04e1f95",
+        "source_kind": "FLORA",
+        "source_ref": "FLR-HARDWOOD-05-04-03",
+        "world_instance_id": "rt:world:bd0f78f5-7018-4cc6-8f47-34f8f2875e47",
+        "zone_ref": "ZONE-STA-05-BLK-04"
+      }
+    ],
+    "schema_version": "S17_RESOURCE_METRIC_PLACEMENT_V1",
+    "source": {
+      "authoring_path": "STAGE17_CONTENT/RESOURCE_PLACEMENT/S17_PLAYABLE_V0_RESOURCE_AUTHORING_V0_1_0_DEV.json",
+      "authoring_sha256": "f3f30d3abb29813387eeb7c7efbb1d505337489348ead920cae7bf93a04e1f95",
+      "offline_bake": true,
+      "runtime_generation": false,
+      "scene_path": "13_GODOT_ARPG_STAGE17/scenes/Main.tscn",
+      "scene_sha256": "8691a691b89849307adb14e4e6e64b7b84a8d219dc8cfe872ebecf10e7476643"
+    },
+    "world_binding": {
+      "anchor_position": {
+        "altitude_m": 0.0,
+        "iso_x_m": 101504.26860397118,
+        "iso_y_m": 863294.141319337
+      },
+      "anchor_waypoint_ref": "WP-CANON-CIT-001",
+      "block_ref": "STA-05-BLK-04",
+      "coordinate_authority": "LIVING_SPATIAL_COORDINATE_PROJECTION_RUNTIME",
+      "owner_scope": "stage17:playable-v0-dev",
+      "world_instance_id": "rt:world:bd0f78f5-7018-4cc6-8f47-34f8f2875e47",
+      "world_seed": 160800,
+      "zone_ref": "ZONE-STA-05-BLK-04"
+    }
+  },
+  "canonical_manifest_hash": "f74cc7bafe91c539811f534caff11b6c8795445bdd93b4fa2d92a22eb4fe084b",
+  "schema": "S17_RESOURCE_METRIC_PLACEMENT_MANIFEST_ENVELOPE_V1"
+}

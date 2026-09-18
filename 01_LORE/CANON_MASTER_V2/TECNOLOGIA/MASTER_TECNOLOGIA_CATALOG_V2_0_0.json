@@ -1,0 +1,554 @@
+{
+  "record_id": "MASTER-TECNOLOGIA-CATALOG-V2.0.0",
+  "title": "Infraestrutura tecnológica oficial do MASTER V2.0.1 (83 entradas, 28 categorias)",
+  "provenance": {
+    "master_release": "ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE",
+    "master_release_zip_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "source_files": [
+      "01_CANON/ANDROMEDA_CODEX_CANON_MASTER_V2_0_0.json (entities, domain=tecnologia)"
+    ],
+    "authority": "CANON_MASTER_V2_CONFIRMADO",
+    "namespace_check": "Prefixo PROP-XXX-NNN, sem colisao com TEC-001 (Rede Ferroviaria de Ortheon, R2, intocado) nem com MIN-/MAT-/RES- (recursos, ja catalogados por nos).",
+    "structure_note": "As 83 entradas nao sao especificas de territorio - todas tem parent_id=LOC-003 (Ortheon) como ancora generica de indexacao espacial no Master, nao um fato narrativo de que a tecnologia 'pertence' a Ortheon. Sao 28 categorias de infraestrutura tecnica civilizacional de escopo planetario (energia, agua, comunicacao, transporte por modal, medicina, saneamento, mineracao, manufatura, seguranca, sensoriamento, ferroviario, rodoviario etc.) - o 'como o mundo funciona tecnicamente', complementar ao STELLAR_WORLD_RULES_GUIDE_DEV_V1_0.json ja existente.",
+    "category_label_note": "Rótulo inferido a partir do padrão de texto das próprias entradas - o pacote-fonte não documenta o significado oficial da sigla."
+  },
+  "count_total": 83,
+  "count_categories": 29,
+  "categories": [
+    {
+      "category_code": "AGR",
+      "category_label_inferred": "Tecnologia agrícola",
+      "count": 3,
+      "items": [
+        {
+          "id": "PROP-AGR-MAQ-001",
+          "name": "Interface funcional de máquina agrícola e implemento"
+        },
+        {
+          "id": "PROP-AGR-MAQ-002",
+          "name": "Ciclo de manutenção e higienização de máquinas agrícolas"
+        },
+        {
+          "id": "PROP-AGR-MAQ-003",
+          "name": "Controle operacional e segurança de máquina agrícola"
+        }
+      ]
+    },
+    {
+      "category_code": "AGU",
+      "category_label_inferred": "Água/hidráulica",
+      "count": 3,
+      "items": [
+        {
+          "id": "PROP-AGU-001",
+          "name": "Sistema civil de abastecimento de água"
+        },
+        {
+          "id": "PROP-AGU-002",
+          "name": "Entrada, condicionamento e controle de água"
+        },
+        {
+          "id": "PROP-AGU-003",
+          "name": "Reserva e setorização hídrica"
+        }
+      ]
+    },
+    {
+      "category_code": "ARMZ",
+      "category_label_inferred": "Armazenamento",
+      "count": 1,
+      "items": [
+        {
+          "id": "PROP-ARMZ-001",
+          "name": "Armazenamento e depósitos operacionais"
+        }
+      ]
+    },
+    {
+      "category_code": "COM",
+      "category_label_inferred": "Comunicação",
+      "count": 5,
+      "items": [
+        {
+          "id": "PROP-COM-001",
+          "name": "Rede civil de comunicação local"
+        },
+        {
+          "id": "PROP-COM-002",
+          "name": "Sistema de retransmissão e continuidade de sinal"
+        },
+        {
+          "id": "PROP-COM-003",
+          "name": "Despacho operacional e priorização de mensagens"
+        },
+        {
+          "id": "PROP-COM-004",
+          "name": "Continuidade local por armazenamento e retransmissão"
+        },
+        {
+          "id": "PROP-COM-005",
+          "name": "Alerta de indisponibilidade de serviço"
+        }
+      ]
+    },
+    {
+      "category_code": "CON",
+      "category_label_inferred": "Construção/montagem",
+      "count": 2,
+      "items": [
+        {
+          "id": "PROP-CON-001",
+          "name": "Sistema de construção, montagem e içamento"
+        },
+        {
+          "id": "PROP-CON-002",
+          "name": "Montagem temporária e movimentação de cargas de obra"
+        }
+      ]
+    },
+    {
+      "category_code": "EMR",
+      "category_label_inferred": "Emergência/proteção civil",
+      "count": 2,
+      "items": [
+        {
+          "id": "PROP-EMR-001",
+          "name": "Sistema integrado de emergência e proteção civil"
+        },
+        {
+          "id": "PROP-EMR-002",
+          "name": "Evacuação e suporte multimodal de emergência"
+        }
+      ]
+    },
+    {
+      "category_code": "ENE",
+      "category_label_inferred": "Energia",
+      "count": 6,
+      "items": [
+        {
+          "id": "PROP-ENE-001",
+          "name": "Sistema modular de distribuição energética"
+        },
+        {
+          "id": "PROP-ENE-002",
+          "name": "Sistema de reserva, isolamento e parada de emergência"
+        },
+        {
+          "id": "PROP-ENE-003",
+          "name": "Interface de dissipação e controle térmico"
+        },
+        {
+          "id": "PROP-ENE-004",
+          "name": "Ponto de entrega energético de infraestrutura"
+        },
+        {
+          "id": "PROP-ENE-005",
+          "name": "Medição e registro operacional de energia"
+        },
+        {
+          "id": "PROP-ENE-006",
+          "name": "Alimentação de cargas críticas e transferência segura"
+        }
+      ]
+    },
+    {
+      "category_code": "FER",
+      "category_label_inferred": "Ferramentas técnicas",
+      "count": 3,
+      "items": [
+        {
+          "id": "PROP-FER-001",
+          "name": "Conjunto modular de ferramentas técnicas portáteis"
+        },
+        {
+          "id": "PROP-FER-002",
+          "name": "Calibração e verificação funcional de instrumentos"
+        },
+        {
+          "id": "PROP-FER-003",
+          "name": "Intertravamento funcional de máquina e ferramenta"
+        }
+      ]
+    },
+    {
+      "category_code": "GRD",
+      "category_label_inferred": "Garagem/veicular terrestre",
+      "count": 5,
+      "items": [
+        {
+          "id": "PROP-GRD-001",
+          "name": "Interface terrestre de carga e passageiros"
+        },
+        {
+          "id": "PROP-GRD-002",
+          "name": "Garagem, depósito e ponto de operação automotiva"
+        },
+        {
+          "id": "PROP-GRD-003",
+          "name": "Despacho de inspeção, reparo e remoção veicular"
+        },
+        {
+          "id": "PROP-GRD-004",
+          "name": "Interface de abastecimento ou recarga agnóstica à fonte"
+        },
+        {
+          "id": "PROP-GRD-005",
+          "name": "Interface de serviço para passageiros e carga automotiva"
+        }
+      ]
+    },
+    {
+      "category_code": "HYB",
+      "category_label_inferred": "Integração tecnomágica/híbrida",
+      "count": 1,
+      "items": [
+        {
+          "id": "PROP-HYB-001",
+          "name": "Gate de integração tecnomágica/híbrida"
+        }
+      ]
+    },
+    {
+      "category_code": "IDN",
+      "category_label_inferred": "Identidade/rastreabilidade de dispositivo",
+      "count": 2,
+      "items": [
+        {
+          "id": "PROP-IDN-001",
+          "name": "Rastreabilidade e autenticação de dispositivos"
+        },
+        {
+          "id": "PROP-IDN-002",
+          "name": "Histórico técnico e cadeia de custódia de dispositivo"
+        }
+      ]
+    },
+    {
+      "category_code": "IND",
+      "category_label_inferred": "Indústria",
+      "count": 3,
+      "items": [
+        {
+          "id": "PROP-IND-001",
+          "name": "Estrutura operacional da indústria ferral"
+        },
+        {
+          "id": "PROP-IND-002",
+          "name": "Fluxo industrial de material e trabalho em processo"
+        },
+        {
+          "id": "PROP-IND-003",
+          "name": "Inspeção de qualidade e aceitação industrial"
+        }
+      ]
+    },
+    {
+      "category_code": "INS",
+      "category_label_inferred": "Inspeção/segurança de equipamento",
+      "count": 2,
+      "items": [
+        {
+          "id": "PROP-INS-001",
+          "name": "Inspeção preventiva e resposta a falhas"
+        },
+        {
+          "id": "PROP-INS-002",
+          "name": "Bloqueio, etiquetagem e liberação de equipamento inseguro"
+        }
+      ]
+    },
+    {
+      "category_code": "INTG",
+      "category_label_inferred": "Integração técnica",
+      "count": 1,
+      "items": [
+        {
+          "id": "PROP-INTG-001",
+          "name": "Registro de interfaces e compatibilidade técnica"
+        }
+      ]
+    },
+    {
+      "category_code": "LOG",
+      "category_label_inferred": "Logística de peças",
+      "count": 2,
+      "items": [
+        {
+          "id": "PROP-LOG-001",
+          "name": "Gestão de peças, consumíveis e sobressalentes"
+        },
+        {
+          "id": "PROP-LOG-002",
+          "name": "Catálogo de compatibilidade de peças"
+        }
+      ]
+    },
+    {
+      "category_code": "LUZ",
+      "category_label_inferred": "Iluminação",
+      "count": 2,
+      "items": [
+        {
+          "id": "PROP-LUZ-001",
+          "name": "Sistema de iluminação civil e operacional"
+        },
+        {
+          "id": "PROP-LUZ-002",
+          "name": "Iluminação de contingência e balizamento operacional"
+        }
+      ]
+    },
+    {
+      "category_code": "MED",
+      "category_label_inferred": "Tecnologia médica",
+      "count": 4,
+      "items": [
+        {
+          "id": "PROP-MED-001",
+          "name": "Sistema tecnológico de diagnóstico e monitoramento clínico"
+        },
+        {
+          "id": "PROP-MED-002",
+          "name": "Ciclo técnico de esterilização e descontaminação de instrumental"
+        },
+        {
+          "id": "PROP-MED-003",
+          "name": "Estação tecnológica de estabilização e suporte clínico"
+        },
+        {
+          "id": "PROP-MED-004",
+          "name": "Manutenção e rastreabilidade de próteses mecânicas"
+        }
+      ]
+    },
+    {
+      "category_code": "MFG",
+      "category_label_inferred": "Manufatura",
+      "count": 2,
+      "items": [
+        {
+          "id": "PROP-MFG-001",
+          "name": "Manufatura, soldagem e reparo estrutural de campo"
+        },
+        {
+          "id": "PROP-MFG-002",
+          "name": "Fabricação de componentes substituíveis"
+        }
+      ]
+    },
+    {
+      "category_code": "MIN",
+      "category_label_inferred": "Mineração",
+      "count": 2,
+      "items": [
+        {
+          "id": "PROP-MIN-001",
+          "name": "Sistema de mineração e escavação mecanizada"
+        },
+        {
+          "id": "PROP-MIN-002",
+          "name": "Pátio técnico de apoio à mineração e escavação"
+        }
+      ]
+    },
+    {
+      "category_code": "MNT",
+      "category_label_inferred": "Manutenção",
+      "count": 3,
+      "items": [
+        {
+          "id": "PROP-MNT-001",
+          "name": "Ciclo padronizado de manutenção"
+        },
+        {
+          "id": "PROP-MNT-002",
+          "name": "Níveis de manutenção e escalonamento"
+        },
+        {
+          "id": "PROP-MNT-003",
+          "name": "Recuperação, salvamento técnico e retorno ao serviço"
+        }
+      ]
+    },
+    {
+      "category_code": "OFI",
+      "category_label_inferred": "Oficina técnica",
+      "count": 2,
+      "items": [
+        {
+          "id": "PROP-OFI-001",
+          "name": "Oficina técnica modular"
+        },
+        {
+          "id": "PROP-OFI-002",
+          "name": "Oficina móvel de apoio técnico"
+        }
+      ]
+    },
+    {
+      "category_code": "RAL",
+      "category_label_inferred": "Ferroviário",
+      "count": 5,
+      "items": [
+        {
+          "id": "PROP-RAL-001",
+          "name": "Protocolo ferroviário de operação e manutenção"
+        },
+        {
+          "id": "PROP-RAL-002",
+          "name": "Sinalização e autorização operacional ferroviária"
+        },
+        {
+          "id": "PROP-RAL-003",
+          "name": "Gestão funcional de pátio e manobra ferroviária"
+        },
+        {
+          "id": "PROP-RAL-004",
+          "name": "Manutenção de material rodante e infraestrutura ferroviária associada"
+        },
+        {
+          "id": "PROP-RAL-005",
+          "name": "Interface de estação para passageiros e carga"
+        }
+      ]
+    },
+    {
+      "category_code": "ROD",
+      "category_label_inferred": "Rodoviário",
+      "count": 2,
+      "items": [
+        {
+          "id": "PROP-ROD-001",
+          "name": "Infraestrutura terrestre genérica de circulação automotiva"
+        },
+        {
+          "id": "PROP-ROD-002",
+          "name": "Classificação qualitativa de acesso terrestre"
+        }
+      ]
+    },
+    {
+      "category_code": "RUR",
+      "category_label_inferred": "Serviços rurais",
+      "count": 1,
+      "items": [
+        {
+          "id": "PROP-RUR-001",
+          "name": "Ponto técnico rural de serviços essenciais"
+        }
+      ]
+    },
+    {
+      "category_code": "SAN",
+      "category_label_inferred": "Saneamento",
+      "count": 4,
+      "items": [
+        {
+          "id": "PROP-SAN-001",
+          "name": "Sistema de saneamento, coleta e resíduos"
+        },
+        {
+          "id": "PROP-SAN-002",
+          "name": "Coleta e encaminhamento de efluentes"
+        },
+        {
+          "id": "PROP-SAN-003",
+          "name": "Triagem e fluxo de resíduos sólidos"
+        },
+        {
+          "id": "PROP-SAN-004",
+          "name": "Isolamento de resíduos técnicos e perigosos"
+        }
+      ]
+    },
+    {
+      "category_code": "SEG",
+      "category_label_inferred": "Segurança de infraestrutura",
+      "count": 2,
+      "items": [
+        {
+          "id": "PROP-SEG-001",
+          "name": "Segurança de infraestrutura crítica"
+        },
+        {
+          "id": "PROP-SEG-002",
+          "name": "Gate de segurança operacional intersistemas"
+        }
+      ]
+    },
+    {
+      "category_code": "SEN",
+      "category_label_inferred": "Sensoriamento/diagnóstico",
+      "count": 2,
+      "items": [
+        {
+          "id": "PROP-SEN-001",
+          "name": "Rede de sensoriamento e diagnóstico técnico"
+        },
+        {
+          "id": "PROP-SEN-002",
+          "name": "Monitoramento de condição de infraestrutura"
+        }
+      ]
+    },
+    {
+      "category_code": "SRV",
+      "category_label_inferred": "Serviço técnico de campo",
+      "count": 2,
+      "items": [
+        {
+          "id": "PROP-SRV-001",
+          "name": "Configuração funcional de veículo canônico para serviço"
+        },
+        {
+          "id": "PROP-SRV-002",
+          "name": "Kit modular de resposta técnica de campo"
+        }
+      ]
+    },
+    {
+      "category_code": "TRN",
+      "category_label_inferred": "Transporte (aéreo/aquático/carga/intermodal)",
+      "count": 9,
+      "items": [
+        {
+          "id": "PROP-TRN-AER-001",
+          "name": "Sistema de transporte aéreo de passageiros e carga"
+        },
+        {
+          "id": "PROP-TRN-AER-002",
+          "name": "Infraestrutura terrestre de apoio a operações aéreas"
+        },
+        {
+          "id": "PROP-TRN-AQU-001",
+          "name": "Sistema de transporte aquático de passageiros e carga"
+        },
+        {
+          "id": "PROP-TRN-AQU-002",
+          "name": "Terminal aquático funcional não espacial"
+        },
+        {
+          "id": "PROP-TRN-CARGA-001",
+          "name": "Gestão multimodal de carga"
+        },
+        {
+          "id": "PROP-TRN-CARGA-002",
+          "name": "Manifesto e cadeia de custódia de carga"
+        },
+        {
+          "id": "PROP-TRN-CARGA-003",
+          "name": "Carregamento, fixação e liberação de carga"
+        },
+        {
+          "id": "PROP-TRN-INT-001",
+          "name": "Sistema intermodal de transferência"
+        },
+        {
+          "id": "PROP-TRN-INT-002",
+          "name": "Núcleo de transferência intermodal"
+        }
+      ]
+    }
+  ]
+}

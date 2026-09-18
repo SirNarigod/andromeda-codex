@@ -1,0 +1,576 @@
+{
+  "record_id": "STELLAR-NPC-MODEL-SHEET-TEMPLATES-DEV-V1.0",
+  "title": "Model Sheets de NPC — Arquétipos por Classe e Tier",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "r2_guard": "Especificação técnica textual (substituto de imagem, já que este pipeline não gera arte 3D) - cada arquétipo cobre todos os NPCs do mesmo class_name+tier já catalogados, evitando repetir a mesma descrição física 58 vezes. Cores/silhueta derivam da identidade de classe já estabelecida em MAR_PLAYABLE_CLASSES_LORE_DEV_V1_0.json, altura/build deriva do tier já usado no power_budget.",
+  "scale_reference_note": "Escala de referência: humano adulto médio = 1.75m (mesma unidade métrica de STELLAR_MEASUREMENT_SCALE_SYSTEM_DEV_V1_0.json).",
+  "count_archetypes": 16,
+  "archetypes": [
+    {
+      "archetype_id": "MODELSHEET-NATIVOS-BAIXO",
+      "class_name": "Nativos",
+      "tier": "BAIXO",
+      "height_cm": 168,
+      "build": "magro, equipamento leve",
+      "silhouette_note": "robusta, adaptada à fronteira",
+      "material": "couro e osso trabalhado",
+      "color_palette": "tons terrosos (marrom, verde-oliva, osso)",
+      "armor_coverage_note": "mínima, poucas peças",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "archetype_id": "MODELSHEET-NATIVOS-MÉDIO",
+      "class_name": "Nativos",
+      "tier": "MÉDIO",
+      "height_cm": 175,
+      "build": "atlético, equipamento padrão",
+      "silhouette_note": "robusta, adaptada à fronteira",
+      "material": "couro e osso trabalhado",
+      "color_palette": "tons terrosos (marrom, verde-oliva, osso)",
+      "armor_coverage_note": "parcial, torso e membros",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "archetype_id": "MODELSHEET-NATIVOS-ALTO",
+      "class_name": "Nativos",
+      "tier": "ALTO",
+      "height_cm": 183,
+      "build": "robusto, equipamento pesado/reforçado",
+      "silhouette_note": "robusta, adaptada à fronteira",
+      "material": "couro e osso trabalhado",
+      "color_palette": "tons terrosos (marrom, verde-oliva, osso)",
+      "armor_coverage_note": "quase total, reforço visível",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "archetype_id": "MODELSHEET-SOLDADOS-BAIXO",
+      "class_name": "Soldados",
+      "tier": "BAIXO",
+      "height_cm": 168,
+      "build": "magro, equipamento leve",
+      "silhouette_note": "uniformizada, equipamento visível",
+      "material": "metal e tecido reforçado",
+      "color_palette": "cinza-metal e verde-militar",
+      "armor_coverage_note": "mínima, poucas peças",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "archetype_id": "MODELSHEET-SOLDADOS-MÉDIO",
+      "class_name": "Soldados",
+      "tier": "MÉDIO",
+      "height_cm": 175,
+      "build": "atlético, equipamento padrão",
+      "silhouette_note": "uniformizada, equipamento visível",
+      "material": "metal e tecido reforçado",
+      "color_palette": "cinza-metal e verde-militar",
+      "armor_coverage_note": "parcial, torso e membros",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "archetype_id": "MODELSHEET-SOLDADOS-ALTO",
+      "class_name": "Soldados",
+      "tier": "ALTO",
+      "height_cm": 183,
+      "build": "robusto, equipamento pesado/reforçado",
+      "silhouette_note": "uniformizada, equipamento visível",
+      "material": "metal e tecido reforçado",
+      "color_palette": "cinza-metal e verde-militar",
+      "armor_coverage_note": "quase total, reforço visível",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "archetype_id": "MODELSHEET-ANDROIDS-BAIXO",
+      "class_name": "Androids",
+      "tier": "BAIXO",
+      "height_cm": 168,
+      "build": "magro, equipamento leve",
+      "silhouette_note": "geométrica, articulações mecânicas expostas",
+      "material": "chassi metálico com juntas visíveis",
+      "color_palette": "azul-metálico e branco-osso sintético",
+      "armor_coverage_note": "mínima, poucas peças",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "archetype_id": "MODELSHEET-ANDROIDS-MÉDIO",
+      "class_name": "Androids",
+      "tier": "MÉDIO",
+      "height_cm": 175,
+      "build": "atlético, equipamento padrão",
+      "silhouette_note": "geométrica, articulações mecânicas expostas",
+      "material": "chassi metálico com juntas visíveis",
+      "color_palette": "azul-metálico e branco-osso sintético",
+      "armor_coverage_note": "parcial, torso e membros",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "archetype_id": "MODELSHEET-ANDROIDS-ALTO",
+      "class_name": "Androids",
+      "tier": "ALTO",
+      "height_cm": 183,
+      "build": "robusto, equipamento pesado/reforçado",
+      "silhouette_note": "geométrica, articulações mecânicas expostas",
+      "material": "chassi metálico com juntas visíveis",
+      "color_palette": "azul-metálico e branco-osso sintético",
+      "armor_coverage_note": "quase total, reforço visível",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "archetype_id": "MODELSHEET-MAGOS-BAIXO",
+      "class_name": "Magos",
+      "tier": "BAIXO",
+      "height_cm": 168,
+      "build": "magro, equipamento leve",
+      "silhouette_note": "esguia, vestes fluidas",
+      "material": "tecido e runas luminosas entalhadas",
+      "color_palette": "dourado e roxo-rúnico",
+      "armor_coverage_note": "mínima, poucas peças",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "archetype_id": "MODELSHEET-MAGOS-MÉDIO",
+      "class_name": "Magos",
+      "tier": "MÉDIO",
+      "height_cm": 175,
+      "build": "atlético, equipamento padrão",
+      "silhouette_note": "esguia, vestes fluidas",
+      "material": "tecido e runas luminosas entalhadas",
+      "color_palette": "dourado e roxo-rúnico",
+      "armor_coverage_note": "parcial, torso e membros",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "archetype_id": "MODELSHEET-MAGOS-ALTO",
+      "class_name": "Magos",
+      "tier": "ALTO",
+      "height_cm": 183,
+      "build": "robusto, equipamento pesado/reforçado",
+      "silhouette_note": "esguia, vestes fluidas",
+      "material": "tecido e runas luminosas entalhadas",
+      "color_palette": "dourado e roxo-rúnico",
+      "armor_coverage_note": "quase total, reforço visível",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "archetype_id": "MODELSHEET-CORROMPIDOS-BAIXO",
+      "class_name": "Corrompidos",
+      "tier": "BAIXO",
+      "height_cm": 168,
+      "build": "magro, equipamento leve",
+      "silhouette_note": "assimétrica, protuberâncias radiculares",
+      "material": "carne exposta entrelaçada com raiz",
+      "color_palette": "verde-doente e marrom-radicular",
+      "armor_coverage_note": "mínima, poucas peças",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "archetype_id": "MODELSHEET-CORROMPIDOS-MÉDIO",
+      "class_name": "Corrompidos",
+      "tier": "MÉDIO",
+      "height_cm": 175,
+      "build": "atlético, equipamento padrão",
+      "silhouette_note": "assimétrica, protuberâncias radiculares",
+      "material": "carne exposta entrelaçada com raiz",
+      "color_palette": "verde-doente e marrom-radicular",
+      "armor_coverage_note": "parcial, torso e membros",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "archetype_id": "MODELSHEET-CORROMPIDOS-ALTO",
+      "class_name": "Corrompidos",
+      "tier": "ALTO",
+      "height_cm": 183,
+      "build": "robusto, equipamento pesado/reforçado",
+      "silhouette_note": "assimétrica, protuberâncias radiculares",
+      "material": "carne exposta entrelaçada com raiz",
+      "color_palette": "verde-doente e marrom-radicular",
+      "armor_coverage_note": "quase total, reforço visível",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "archetype_id": "MODELSHEET-ZUM-CORROMPIDO",
+      "class_name": "Corrompido (NPC involuntário, não é a classe jogável)",
+      "tier": "ÚNICO (todos os 10 ZUM-XXX compartilham este arquétipo, variando só cor/detalhe menor)",
+      "height_cm": 178,
+      "build": "humanoide deformado, postura curvada",
+      "silhouette_note": "assimétrica, remanescente de roupa/equipamento do papel anterior (ex-guarda, ex-mineiro) visivelmente degradado — distinção clara em relação ao arquétipo Corrompidos jogável (que é exposição controlada, corpo íntegro)",
+      "material": "carne pálida entrelaçada com fibra radicular fina, sem armadura funcional",
+      "color_palette": "cinza-pálido e verde-doente, veios radiculares luminosos fracos",
+      "armor_coverage_note": "nenhuma — usa só resquícios do traje/uniforme anterior",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ],
+      "distinction_from_playable_class": "STELLAR_ORIGIN_AND_AUTHORSHIP / MAR_CORRUPTED_NPC_ROSTER_DEV_V1_0.json já documentam que ZUM-XXX não usa a mesma simbiose de Kenua nem o mesmo modelo asset da classe jogável Corrompidos."
+    }
+  ],
+  "count_npcs_covered": 58,
+  "roster_coverage": [
+    {
+      "npc_id": "NAT-01",
+      "name": "Guarda de Espinho",
+      "archetype_ref": "MODELSHEET-NATIVOS-ALTO"
+    },
+    {
+      "npc_id": "NAT-02",
+      "name": "Fera de Vanguarda",
+      "archetype_ref": "MODELSHEET-NATIVOS-ALTO"
+    },
+    {
+      "npc_id": "NAT-03",
+      "name": "Caçador Equilibrado",
+      "archetype_ref": "MODELSHEET-NATIVOS-MÉDIO"
+    },
+    {
+      "npc_id": "NAT-04",
+      "name": "Corredor de Trilha",
+      "archetype_ref": "MODELSHEET-NATIVOS-MÉDIO"
+    },
+    {
+      "npc_id": "NAT-05",
+      "name": "Sentinela Rústica",
+      "archetype_ref": "MODELSHEET-NATIVOS-MÉDIO"
+    },
+    {
+      "npc_id": "NAT-06",
+      "name": "Fúria de Fronteira",
+      "archetype_ref": "MODELSHEET-NATIVOS-MÉDIO"
+    },
+    {
+      "npc_id": "NAT-07",
+      "name": "Recruta de Vila",
+      "archetype_ref": "MODELSHEET-NATIVOS-BAIXO"
+    },
+    {
+      "npc_id": "NAT-08",
+      "name": "Batedor Ligeiro",
+      "archetype_ref": "MODELSHEET-NATIVOS-BAIXO"
+    },
+    {
+      "npc_id": "SOL-01",
+      "name": "Recruta de Linha",
+      "archetype_ref": "MODELSHEET-SOLDADOS-BAIXO"
+    },
+    {
+      "npc_id": "SOL-02",
+      "name": "Batedor de Fronteira",
+      "archetype_ref": "MODELSHEET-SOLDADOS-BAIXO"
+    },
+    {
+      "npc_id": "SOL-03",
+      "name": "Escudeiro de Contenção",
+      "archetype_ref": "MODELSHEET-SOLDADOS-BAIXO"
+    },
+    {
+      "npc_id": "SOL-04",
+      "name": "Atirador Novato",
+      "archetype_ref": "MODELSHEET-SOLDADOS-BAIXO"
+    },
+    {
+      "npc_id": "SOL-05",
+      "name": "Fuzileiro Padrão",
+      "archetype_ref": "MODELSHEET-SOLDADOS-MÉDIO"
+    },
+    {
+      "npc_id": "SOL-06",
+      "name": "Batedor Armado",
+      "archetype_ref": "MODELSHEET-SOLDADOS-MÉDIO"
+    },
+    {
+      "npc_id": "SOL-07",
+      "name": "Guardião de Bloqueio",
+      "archetype_ref": "MODELSHEET-SOLDADOS-MÉDIO"
+    },
+    {
+      "npc_id": "SOL-08",
+      "name": "Atirador de Elite Jr.",
+      "archetype_ref": "MODELSHEET-SOLDADOS-MÉDIO"
+    },
+    {
+      "npc_id": "SOL-09",
+      "name": "Fuzileiro de Assalto",
+      "archetype_ref": "MODELSHEET-SOLDADOS-MÉDIO"
+    },
+    {
+      "npc_id": "SOL-10",
+      "name": "Batedor Selado",
+      "archetype_ref": "MODELSHEET-SOLDADOS-MÉDIO"
+    },
+    {
+      "npc_id": "SOL-11",
+      "name": "Breacher Ágil",
+      "archetype_ref": "MODELSHEET-SOLDADOS-MÉDIO"
+    },
+    {
+      "npc_id": "SOL-12",
+      "name": "Atirador de Apoio",
+      "archetype_ref": "MODELSHEET-SOLDADOS-MÉDIO"
+    },
+    {
+      "npc_id": "SOL-13",
+      "name": "Fuzileiro de Vanguarda",
+      "archetype_ref": "MODELSHEET-SOLDADOS-ALTO"
+    },
+    {
+      "npc_id": "SOL-14",
+      "name": "Batedor de Elite",
+      "archetype_ref": "MODELSHEET-SOLDADOS-ALTO"
+    },
+    {
+      "npc_id": "SOL-15",
+      "name": "Breacher Pesado",
+      "archetype_ref": "MODELSHEET-SOLDADOS-ALTO"
+    },
+    {
+      "npc_id": "SOL-16",
+      "name": "Atirador Convergente",
+      "archetype_ref": "MODELSHEET-SOLDADOS-ALTO"
+    },
+    {
+      "npc_id": "AND-01",
+      "name": "Sentinela de Núcleo Duplo",
+      "archetype_ref": "MODELSHEET-ANDROIDS-ALTO"
+    },
+    {
+      "npc_id": "AND-02",
+      "name": "Unidade de Ruptura Gêmea",
+      "archetype_ref": "MODELSHEET-ANDROIDS-ALTO"
+    },
+    {
+      "npc_id": "AND-03",
+      "name": "Unidade de Convergência",
+      "archetype_ref": "MODELSHEET-ANDROIDS-MÉDIO"
+    },
+    {
+      "npc_id": "AND-04",
+      "name": "Chassi de Convergência Leve",
+      "archetype_ref": "MODELSHEET-ANDROIDS-MÉDIO"
+    },
+    {
+      "npc_id": "AND-05",
+      "name": "Guardião de Chassi Reforçado",
+      "archetype_ref": "MODELSHEET-ANDROIDS-MÉDIO"
+    },
+    {
+      "npc_id": "AND-06",
+      "name": "Unidade de Disrupção Leve",
+      "archetype_ref": "MODELSHEET-ANDROIDS-MÉDIO"
+    },
+    {
+      "npc_id": "AND-07",
+      "name": "Unidade de Linha Básica",
+      "archetype_ref": "MODELSHEET-ANDROIDS-BAIXO"
+    },
+    {
+      "npc_id": "AND-08",
+      "name": "Chassi de Reconhecimento",
+      "archetype_ref": "MODELSHEET-ANDROIDS-BAIXO"
+    },
+    {
+      "npc_id": "MAG-N01",
+      "name": "Arauto da Convergência",
+      "archetype_ref": "MODELSHEET-MAGOS-ALTO"
+    },
+    {
+      "npc_id": "MAG-N02",
+      "name": "Portador do Trono Duplo",
+      "archetype_ref": "MODELSHEET-MAGOS-ALTO"
+    },
+    {
+      "npc_id": "MAG-N03",
+      "name": "Guardiã do Círculo",
+      "archetype_ref": "MODELSHEET-MAGOS-MÉDIO"
+    },
+    {
+      "npc_id": "MAG-N04",
+      "name": "Andarilha do Véu",
+      "archetype_ref": "MODELSHEET-MAGOS-MÉDIO"
+    },
+    {
+      "npc_id": "MAG-N05",
+      "name": "Guardião de Pedra Rúnica",
+      "archetype_ref": "MODELSHEET-MAGOS-MÉDIO"
+    },
+    {
+      "npc_id": "MAG-N06",
+      "name": "Ritualista Instável",
+      "archetype_ref": "MODELSHEET-MAGOS-MÉDIO"
+    },
+    {
+      "npc_id": "MAG-N07",
+      "name": "Aprendiz de Bastão",
+      "archetype_ref": "MODELSHEET-MAGOS-BAIXO"
+    },
+    {
+      "npc_id": "MAG-N08",
+      "name": "Iniciada de Talismã",
+      "archetype_ref": "MODELSHEET-MAGOS-BAIXO"
+    },
+    {
+      "npc_id": "COR-N01",
+      "name": "Vetora de Contencao Senior",
+      "archetype_ref": "MODELSHEET-CORROMPIDOS-ALTO"
+    },
+    {
+      "npc_id": "COR-N02",
+      "name": "Lamina de Sangue-de-Raiz",
+      "archetype_ref": "MODELSHEET-CORROMPIDOS-ALTO"
+    },
+    {
+      "npc_id": "COR-N03",
+      "name": "Curadora de Exposicao Controlada",
+      "archetype_ref": "MODELSHEET-CORROMPIDOS-MÉDIO"
+    },
+    {
+      "npc_id": "COR-N04",
+      "name": "Batedora de Esporos",
+      "archetype_ref": "MODELSHEET-CORROMPIDOS-MÉDIO"
+    },
+    {
+      "npc_id": "COR-N05",
+      "name": "Guardia de Nucleo Vivo",
+      "archetype_ref": "MODELSHEET-CORROMPIDOS-MÉDIO"
+    },
+    {
+      "npc_id": "COR-N06",
+      "name": "Ceifadora de Casca Negra",
+      "archetype_ref": "MODELSHEET-CORROMPIDOS-MÉDIO"
+    },
+    {
+      "npc_id": "COR-N07",
+      "name": "Aprendiz de Contencao",
+      "archetype_ref": "MODELSHEET-CORROMPIDOS-BAIXO"
+    },
+    {
+      "npc_id": "COR-N08",
+      "name": "Batedor Novato",
+      "archetype_ref": "MODELSHEET-CORROMPIDOS-BAIXO"
+    },
+    {
+      "npc_id": "ZUM-001",
+      "name": "Corrompido do Perimetro",
+      "archetype_ref": "MODELSHEET-ZUM-CORROMPIDO"
+    },
+    {
+      "npc_id": "ZUM-002",
+      "name": "Corrompido do Campo",
+      "archetype_ref": "MODELSHEET-ZUM-CORROMPIDO"
+    },
+    {
+      "npc_id": "ZUM-003",
+      "name": "Corrompido do Comando",
+      "archetype_ref": "MODELSHEET-ZUM-CORROMPIDO"
+    },
+    {
+      "npc_id": "ZUM-004",
+      "name": "Corrompido das Raizes",
+      "archetype_ref": "MODELSHEET-ZUM-CORROMPIDO"
+    },
+    {
+      "npc_id": "ZUM-005",
+      "name": "Corrompido das Ruinas Cobertas",
+      "archetype_ref": "MODELSHEET-ZUM-CORROMPIDO"
+    },
+    {
+      "npc_id": "ZUM-006",
+      "name": "Corrompido das Fendas",
+      "archetype_ref": "MODELSHEET-ZUM-CORROMPIDO"
+    },
+    {
+      "npc_id": "ZUM-007",
+      "name": "Corrompido dos Tuneis",
+      "archetype_ref": "MODELSHEET-ZUM-CORROMPIDO"
+    },
+    {
+      "npc_id": "ZUM-008",
+      "name": "Corrompido da Passagem",
+      "archetype_ref": "MODELSHEET-ZUM-CORROMPIDO"
+    },
+    {
+      "npc_id": "ZUM-009",
+      "name": "Corrompido das Ruinas Antigas",
+      "archetype_ref": "MODELSHEET-ZUM-CORROMPIDO"
+    },
+    {
+      "npc_id": "ZUM-010",
+      "name": "Corrompido da Fenda Gelada",
+      "archetype_ref": "MODELSHEET-ZUM-CORROMPIDO"
+    }
+  ]
+}

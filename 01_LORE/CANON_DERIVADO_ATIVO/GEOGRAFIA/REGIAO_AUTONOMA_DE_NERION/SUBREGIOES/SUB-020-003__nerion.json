@@ -1,0 +1,51 @@
+{
+  "record_id": "SUB-020-003",
+  "record_kind": "DERIVED_SUBREGION_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Jardins de Suporte Vital",
+  "parent_political_unit": "TER-020",
+  "provenance": {
+    "approval": "AUTHORIAL_DECISION",
+    "compatibility": "Região derivada dos Androids Conscientes; não altera CANON_R2."
+  },
+  "function": "Água, alimento, medicina e estufas.",
+  "locality_references": [],
+  "permitted_catalog_links": {
+    "npc_roles": [
+      "MÉDICO",
+      "SUPORTE",
+      "TRABALHO",
+      "SOCIÁVEL",
+      "ASSALTO",
+      "FRANCO"
+    ],
+    "professions": [
+      "reparador",
+      "engenheiro de núcleo",
+      "curador de memória",
+      "técnico de estufa",
+      "mediador de autonomia"
+    ],
+    "encounters": [
+      "Android consciente",
+      "rotina treinada",
+      "agente de Serverus"
+    ],
+    "resources": [
+      "núcleos de energia",
+      "ligas de chassi",
+      "cristais de memória"
+    ]
+  },
+  "local_conflicts": [
+    "priorizar pacientes orgânicos ou Androids em reparo"
+  ],
+  "story_generators": [
+    "A rede de energia falha exatamente quando uma estufa começa a cultivar tecido nervoso."
+  ],
+  "prohibitions": [
+    "NO_R2_MUTATION",
+    "NO_NAME_FOR_MYSTERIOUS_MAGE_YET"
+  ]
+}

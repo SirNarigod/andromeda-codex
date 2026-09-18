@@ -1,0 +1,22 @@
+{
+  "record_id": "FAC-009-FAC-010-RELATIONSHIP-CHARTER-V1",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "participants": ["FAC-009", "FAC-010"],
+  "relationship": "PARTNERS_IN_TENSION",
+  "invariants": [
+    "LOCAL_CHARTER_PRECEDES_PRESENCE",
+    "NEITHER_PARTY_ACQUIRES_SOVEREIGNTY",
+    "WORKSHOP_AUTONOMY_REMAINS_LOCAL",
+    "CRISIS_COOPERATION_DOES_NOT_CREATE_PERMANENT_AUTHORITY",
+    "ALL_RUNTIME_OUTCOMES_REQUIRE_AUTHORIAL_PROMOTION_TO_BECOME_CANON"
+  ],
+  "cooperation": ["emergency repairs", "safety verification", "apprentice continuity", "route maintenance"],
+  "dispute_fields": ["licenses", "fees", "contract terms", "safety standards", "workshop independence"],
+  "forbidden_interpretations": ["planetary government", "territorial ownership", "automatic authority in Terras Livres", "mandatory Kenua involvement"],
+  "story_generators": [
+    "Uma rota de evacuação obriga a Liga a financiar uma norma de segurança que ela havia contestado.",
+    "Um mestre expulso por fraude pede ao Colegiado proteção enquanto a Liga busca suspender sua licença.",
+    "Uma cidade tenta usar uma carta provisória como domínio político e encontra resistência das duas organizações."
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "record_id": "STAGE13-DEMO-V1.0",
+  "status": "PASS",
+  "world_instance_id": "rt:world:7d020d0e-c0d5-4fb1-b900-67270500c87c",
+  "timeline_id": "rt:timeline:20a8e4d9-4df5-4f2a-bd46-494612a425d3",
+  "before": {
+    "day": 0,
+    "bridge_lifecycle": "DESTROYED",
+    "bridge_integrity": 0.0,
+    "route_operational": false,
+    "events": 2,
+    "recoveries": 1
+  },
+  "after": {
+    "day": 7,
+    "bridge_lifecycle": "ACTIVE",
+    "bridge_integrity": 100.0,
+    "route_operational": true,
+    "events": 4,
+    "history_preserved": true
+  },
+  "access": {
+    "public_runtime_access": "NONE",
+    "player_runtime_access": "PLAYER_SAFE",
+    "admin_runtime_access": "ADMIN_OPERATIONAL",
+    "admin_causal_entries": 5,
+    "snapshot_distribution": "BACKEND_ONLY_DO_NOT_SERVE_DB_FILE",
+    "readonly_probe": "PASS_READ_ONLY"
+  },
+  "projection_integrity": {
+    "before": "PASS",
+    "after": "PASS"
+  }
+}

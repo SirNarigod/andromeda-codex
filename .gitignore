@@ -1,0 +1,27 @@
+# Godot - cache local, nunca vai pro GitHub
+.godot/
+*.godot.editor.*
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# SQLite locais / dumps grandes
+*.sqlite3-journal
+*.db-journal
+
+# OS / Editor
+Thumbs.db
+.DS_Store
+*.tmp
+*.log
+.vscode/
+.idea/
+
+# Agentes / local only
+.agents/
+.claude/
+.opencode/

@@ -1,0 +1,11 @@
+{
+  "record_id": "SUB-006-003", "record_kind": "DERIVED_SUBREGION_PROFILE", "authority": "CANON_DERIVADO_ATIVO", "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Câmara Eletiva", "parent_political_unit": "TER-006",
+  "provenance": {"approval": "GAMEPLAY_DERIVED_DEV_SOURCE", "r2_anchors": ["TER-006", "vaelora-aereth"], "compatibility": "Camada administrativa e narrativa local; não cria fronteira, cidade, soberania ou nova autoridade."},
+  "function": "Local onde a nobreza elege periodicamente o monarca do reino aéreo.",
+  "locality_references": ["LOC-006-003 Salão Eletivo"],
+  "permitted_catalog_links": {"npc_roles": [], "professions": [], "encounters": [], "resources": []},
+  "local_conflicts": ["tradição de linhagem versus mérito de comando de frota nas eleições"],
+  "prohibitions": ["NO_NEW_SOVEREIGNTY", "NO_AUTOMATIC_KENUA_SCENE", "NO_R2_EPISODE_REWRITE", "NO_FIXED_BORDER_COORDINATE"],
+  "story_generators": ["Uma eleição contestada divide a nobreza entre candidatos de linhagem antiga e novos comandantes de frota."]
+}

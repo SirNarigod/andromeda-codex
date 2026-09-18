@@ -1,0 +1,19 @@
+{
+  "record_id": "VARGA-VERTICAL-SLICE-MAP-V1",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "LOCAL_PLAYABLE_OVERLAY",
+  "parent": "SUB-011-001",
+  "r2_anchors": ["TER-011", "CIT-001"],
+  "scope": "A compact playable route near the Posto de Varga; it is not a new settlement, border, or political unit.",
+  "points_of_interest": [
+    {"id":"VARGA-POI-001","title":"Abrigo de Chegada","function":"temporary shelter and orientation for displaced travelers","story_use":"The protagonist receives conditional welcome, not authority."},
+    {"id":"VARGA-POI-002","title":"Quadro de Travessia","function":"local contracts, route warnings and evidence requests","story_use":"Urgency can conflict with proof."},
+    {"id":"VARGA-POI-003","title":"Passagem das Estacas","function":"blocked community route","story_use":"The blocked path forces a choice between delay, safety and trust."},
+    {"id":"VARGA-POI-004","title":"Barranco de Vidro","function":"defensive Vespa-de-Vidro nest zone","story_use":"Containment and observation reveal possible provocation."},
+    {"id":"VARGA-POI-005","title":"Marco de Retorno","function":"safe reporting point","story_use":"The result is recorded as contextual reputation, not canon."},
+    {"id":"VARGA-POI-006","title":"Desvio Luminal","function":"optional low-risk alternate route","story_use":"Avoidance protects travelers but leaves the evidence unresolved."}
+  ],
+  "visual_language": ["stylized realism", "reused wood and metal", "luminous low vegetation", "community route signage", "readable silhouettes for isometric camera"],
+  "prohibitions": ["NO_NEW_SOVEREIGNTY", "NO_FIXED_BORDER_COORDINATE", "NO_R2_LOCALITY_DUPLICATION", "NO_KENUA_SCENE", "NO_SEALED_EPISODE_REWRITE"],
+  "runtime_only_fields": ["map_extent", "coordinates", "spawn_locations", "encounter_count", "navmesh", "lighting_values"]
+}

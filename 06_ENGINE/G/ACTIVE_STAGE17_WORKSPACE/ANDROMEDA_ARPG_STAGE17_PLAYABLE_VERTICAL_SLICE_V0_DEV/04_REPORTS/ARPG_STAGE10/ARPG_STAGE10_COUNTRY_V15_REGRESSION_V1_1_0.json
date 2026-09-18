@@ -1,0 +1,10 @@
+{
+  "core": "7/7 PASS",
+  "gameplay": "6/6 PASS",
+  "generated_at": "2026-08-18T21:26:48.175587+00:00",
+  "integration": "5/5 PASS",
+  "record_id": "ARPG-STAGE10-COUNTRY-V15-REGRESSION-V1.1.0",
+  "security_persistence": "6/6 PASS",
+  "status": "PASS",
+  "total": "24/24 PASS"
+}

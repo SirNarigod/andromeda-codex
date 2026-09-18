@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-011-003",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Curral de Luminal",
+  "parent_subregion": "SUB-011-003",
+  "parent_political_unit": "TER-011",
+  "function": "Área de pastagem comunitária das Pastagens Luminais.",
+  "notable_link": "Habitat de Velúrio (CRI-002), Brumante (CRI-003) e Lúmara (CRI-004)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-011-003",
+  "settlement_tier": "COMPLEXO",
+  "history": "O Curral de Luminal foi criado para proteger rebanhos produtores de leite denso. O curral é também banco, clínica e arquivo de parentesco para famílias deslocadas.",
+  "sensory": "Animais brilham sob a poeira; ordenhas noturnas iluminam os rostos de quem trabalha.",
+  "hook": "Um animal nasce com marcas semelhantes às de uma criatura da Zona de Contenção.",
+  "secondary_hook": "Vender o filhote salvaria o curral, mas criaria uma ameaça longe dali.",
+  "detail": "Leite é armazenado em frascos numerados por família, não por comprador.",
+  "figures": [
+    {
+      "role": "Beto Lumina",
+      "name": "Beto Lumina",
+      "note": "criador que recusa cruzamentos perigosos"
+    },
+    {
+      "role": "Yara-Passo",
+      "name": "Yara-Passo",
+      "note": "veterinária itinerante que esconde um filhote raro"
+    }
+  ]
+}

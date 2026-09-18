@@ -1,0 +1,15 @@
+{
+  "record_id": "STELLAR-INSTITUTION-CULTURE-LAW-V1.0",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.0",
+  "status": "CANON_DERIVADO_ATIVO_R2_COMPATIBLE",
+  "authority": {"r2": ["FAC-001", "FAC-002", "FAC-003", "FAC-004", "FAC-005", "TER-011"], "derived_sources": ["STELLAR_INSTITUTION_NETWORK_V1_0", "STELLAR_AGRICULTURAL_ZONES_V1_0"], "source_hashes": ["609dedb48b23852acb338e9e92c147cf91d4512f5887b87a31072ae74c9fdb57", "d2bec77b993042c61e4a47c9b99d12154baa28d218494a50836d708fa33ebd45"], "scope": "INSTITUTIONS_CULTURE_AND_LOCAL_PRODUCTION"},
+  "dependencies": ["STELLAR_SOVEREIGNTY_TERRITORY_LAW_V1_1.json", "STELLAR_MAGIC_TECHNOLOGY_LAW_V1_1.json", "../../01_LORE/STELLAR_REBASE_R2/R2_SOURCE_AUTHORITY_INDEX_V1_0.json"],
+  "invariants": ["INSTITUTIONAL_SERVICE_IS_NOT_SOVEREIGNTY", "CULTURE_IS_LOCAL_AND_PLURAL", "NO_OFFICIAL_LANGUAGE_IS_INFERRED", "NO_OFFICIAL_RELIGION_IS_INFERRED", "PRODUCTION_CHAINS_REMAIN_RESOURCE_TO_SPECIES_TO_MANAGEMENT_TO_STORAGE_TO_ROUTE_TO_MARKET", "R2_INSTITUTIONS_KEEP_THEIR_DEFINED_SCOPE"],
+  "prohibitions": ["NO_UNSOURCED_NEW_FACTION_PROMOTION", "NO_CULTURE_STEREOTYPE_AS_CANON", "NO_INSTITUTIONAL_NETWORK_AS_PLANETARY_GOVERNMENT", "NO_AUTOMATIC_TERRITORIAL_CONTROL_FROM_SERVICE_COVERAGE", "NO_FAC_009_OR_FAC_010_PROMOTION_PENDING_R2_REVIEW"],
+  "r2_institutional_anchors": [{"id": "FAC-001", "role": "Árvores Anciãs: preservação do Coração Ancestral, registro de magia e contenção biológica."}, {"id": "FAC-002", "role": "Reis Magos: instituição ligada ao Domínio dos Reis Magos."}, {"id": "FAC-003", "role": "Conselho de Convergência: negociação de crises e rotas sem governo planetário."}, {"id": "FAC-004", "role": "Vigília Radicular: resposta e contenção radicular."}, {"id": "FAC-005", "role": "Círculo Arcano-Botânico: estudo multidisciplinar da flor fóssil."}],
+  "derived_networks": ["health network", "education and science network", "justice and administration network", "eight agricultural and livestock zones"],
+  "simulation_effects": ["Living Country may represent institutional coverage, route dependency, service strain and local cultural practices without assigning sovereign control.", "LivingSim may trace production through resource, species, management, storage, route and market while retaining ecological consequences.", "References to unresolved FAC-009 and FAC-010 must fail closed as noncanonical until a separate decision."],
+  "allowed_states": ["LOCAL_SERVICE", "REGIONAL_NETWORK", "STRAINED", "DISRUPTED", "RECOVERING", "RECOGNITION_PENDING"],
+  "story_generators": ["A health network reaches a frontier settlement only if rival routes cooperate.", "A protected agricultural zone conflicts with a community's immediate food need.", "An institution's service record becomes evidence in a dispute over who truly protects a territory."]
+}

@@ -1,0 +1,14 @@
+{
+  "record_id": "AUDIT-EVIDENCE-RECONCILIATION-V1.2.1",
+  "status": "PASS",
+  "issue": "Historical Stage13 V1.0 static audit baseline no longer represents V1.1 inherited runtime modules.",
+  "affected_modules": [
+    "living_runtime.py",
+    "world_orchestrator.py",
+    "world_systems.py"
+  ],
+  "finding": "Current V1.2.1 files are byte-identical to both V1.1 sealed release and V1.2.0 inherited branch. The old V1.0 gate therefore produced a false failure when rerun and an inherited V1.2.0 PASS report was stale evidence.",
+  "correction": "V1.2.1 authoritative static gate uses UPSTREAM_BASELINE_HASHES_V1_1_SEALED.json. Historical V1.0 evidence is retained only as history, not as an active gate.",
+  "authoritative_report": "04_REPORTS/V1_2_1/STAGE13_STATIC_AUDIT_V1_2_1.json",
+  "authoritative_status": "PASS"
+}

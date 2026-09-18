@@ -1,0 +1,14 @@
+{
+  "record_id": "STELLAR-INFORMATION-MEMORY-LAW-V1.0",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.0",
+  "status": "AUTHORIAL_RUNTIME_OVERLAY",
+  "authority": {"scope": "EPISTEMIC_RULES", "memory": "SUBJECTIVE_APPEND_ONLY", "truth": "EVIDENCE_GOVERNED", "llm": "NO_TRUTH_AUTHORITY"},
+  "dependencies": ["STELLAR_COSMOLOGY_CANON_V1_0.json", "../ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/02_CONTRACTS/MEMORY_KNOWLEDGE_RELATIONSHIP_REPUTATION_CONTRACT_V1_0.json"],
+  "invariants": ["MEMORY_IS_NOT_PROOF", "COMMUNICATION_DOES_NOT_VERIFY_TRUTH", "RUMOR_MAX_HOPS_4", "RUMOR_CONFIDENCE_DECAYS_0_85_PER_HOP", "SAME_ORIGIN_DOES_NOT_AMPLIFY", "LOST_TRUTH_REMAINS_RECONSTRUCTIBLE_BY_INDEPENDENT_EVIDENCE"],
+  "prohibitions": ["NO_LLM_TRUTH_PROMOTION", "NO_FORCED_RECONCILIATION_OF_CONTESTED_MEMORY", "NO_RUMOR_AS_PLANETARY_PROMOTION_EVIDENCE", "NO_PRIVATE_MEMORY_AS_PUBLIC_CANON"],
+  "simulation_effects": ["Cosmological fragments are modeled as claims with provenance and truth status.", "Independent evidence may turn a claim VERIFIED_TRUE or VERIFIED_FALSE.", "Rumors can change behavior and reputation while remaining UNKNOWN."],
+  "allowed_states": ["UNKNOWN", "CONTESTED", "VERIFIED_TRUE", "VERIFIED_FALSE", "SEALED_PRIVATE", "LOST_FRAGMENT"],
+  "story_generators": ["Um rumor falso protege uma comunidade de uma ameaça real por razões erradas.", "Uma máquina antiga contém um fragmento verificável, mas sua interpretação social é perigosa.", "Dois ecos de renascimento fornecem provas independentes de um passado que ninguém deseja confirmar."],
+  "compatibility": {"memory_contract": "PRESERVED_AND_EXTENDED", "truth_promotion_sources": ["DIRECT_EVENT", "SYSTEM_VERIFICATION", "AUTHORIAL_PROMOTION"]}
+}

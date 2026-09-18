@@ -1,0 +1,21 @@
+{
+  "record_id": "ARPG-NARRATIVE-CULTURE-COMPATIBILITY-LAYER-V1.0",
+  "status": "ACTIVE_ENGINE_NEUTRAL_DERIVATION",
+  "source_contract": "01_LORE/ANDROMEDA_ARPG_STAGE17_PLAYABLE_VERTICAL_SLICE_V0_DEV/NARRATIVE_CULTURE/ARPG_NARRATIVE_CULTURE_CONTRACT_V1_3_0.json",
+  "source_sha256": "a4e57f054dbc3055ab53fc67531c811a46bdb51bab6efd890799a324ec43bae5",
+  "unfrozen_scope": ["FAC-009", "FAC-010", "FAC-090", "local workshop narratives", "contextual reputation", "noncanonical dialogue briefs"],
+  "fac_011_note": "FAC-090 Enclave Sintético (fase 4, renumerado de FAC-011 nesta sessão após colisão com o código oficial 'Câmara das Armarias Rúnicas' do MASTER V2.0.1; ver 01_LORE/CANON_DERIVADO_ATIVO/SOCIEDADES/FACCOES/FAC-090__enclave-sintetico.json) já define seu próprio simulation_permissions (LivingSim/LivingScale/UE5) no charter — adicionado aqui apenas para registro consistente com FAC-009/010. Nenhuma facção R2 soberana (FAC-001..008) é adicionada a este escopo — exigiriam portão autoral de soberania, fora do alcance desta camada.",
+  "retained_as_technical": ["Godot scripts", "prototype numerical values", "runtime state", "exact dialogue", "automatic spatialization"],
+  "required_guards": [
+    "NO_TERRITORIAL_CONTROL_FROM_FACTION_PRESENCE",
+    "NO_KENUA_AUTOMATIC_LINK",
+    "NO_R2_EPISODE_MUTATION",
+    "NO_OFFICIAL_LANGUAGE_OR_RELIGION_INFERENCE",
+    "NO_RUNTIME_CANON_PROMOTION"
+  ],
+  "runtime_contract": {
+    "local_chapter_requires": ["charter_or_community_consent", "location_reference", "scope", "provenance"],
+    "simulation_may_change": ["workshop_strain", "contract_pressure", "maintenance_backlog", "local_trust"],
+    "simulation_must_not_change": ["canonical_boundaries", "sovereignty", "R2_deaths", "sealed_episodes", "global_canon"]
+  }
+}

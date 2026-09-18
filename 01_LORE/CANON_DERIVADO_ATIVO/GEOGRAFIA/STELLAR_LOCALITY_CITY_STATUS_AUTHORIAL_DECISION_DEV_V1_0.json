@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-LOCALITY-CITY-STATUS-AUTHORIAL-DECISION-DEV-V1.0",
+  "record_kind": "AUTHORIAL_DECISION_GATE",
+  "title": "Decisão autoral: Localidades derivadas passam a ser exibidas e tratadas como Cidades",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "decided_by": "autor do projeto",
+  "decision": "As 60 Localidades (LOC-XXX-YYY, CANON_DERIVADO_ATIVO/GEOGRAFIA/.../LOCAIS/) deixam de ser exibidas/rotuladas como categoria separada 'Localidade' e passam a ser tratadas, exibidas e referenciadas como 'Cidade' — mesmo nível de leitura que os 2 assentamentos R2 confirmados (CIT-001 Posto de Varga, CIT-002 Estação Oriental).",
+  "rationale": "O autor considera que não fazer parte do cânone R2 confirmado não é motivo para negar a uma localidade o status de cidade dentro do mundo — é uma distinção de proveniência do registro (R2 vs. derivado), não de escala/importância do assentamento em si. As 60 localidades já cobrem os 19 territórios com função, construções e cultura próprias; renomear a categoria de exibição reconhece isso.",
+  "scope": {
+    "affected_ids": "todo LOC-XXX-YYY existente e futuro",
+    "not_affected": "CIT-001 e CIT-002 continuam R2_CANONICAL_ENTRY_MIRROR, sem alteração de conteúdo ou autoridade",
+    "no_content_rewrite": "nenhum arquivo LOC-XXX-YYY teve seu conteúdo alterado por esta decisão — é uma reclassificação de categoria de exibição/consulta, não uma reescrita de fato"
+  },
+  "r2_guard": "não reclassifica nenhuma localidade como R2_CANONICAL_ENTRY_MIRROR nem cria CIT-XXX novo — a distinção de authority (CANON_R2_CONFIRMADO vs. CANON_DERIVADO_ATIVO) permanece intacta em cada registro individual; o que muda é só o rótulo de categoria voltado ao leitor/jogador ('Cidade' em vez de 'Localidade').",
+  "implementation_note": "Aplicado no gerador do Códice (CATEGORY_LABELS['LOC'] = 'Cidade') — reclassificação de apresentação, não de dado-fonte.",
+  "amendment_v1_1": "Correção de escopo (mesmo dia): rotular TODAS as 59 localidades como 'Cidade' apagava uma distinção real de escala já presente nos próprios nomes ('Vila dos Pescadores', 'Posto de Caravana', 'Acampamento das Dunas' não são do mesmo porte que uma capital). Cada localidade recebeu um campo aditivo `settlement_tier` (CIDADE/VILA/POSTO/ACAMPAMENTO/COMPLEXO, classificação manual por nome/função, não palavra-chave automática) — a categoria exibida no Códice agora reflete essa escala real. `settlement_tier=CIDADE` foi atribuído à localidade que já é o assento de governança do território (Salão/Câmara/Círculo/Assembleia/Quartel de Comando) quando existe uma — 14 dos 19 territórios já têm uma; TER-011 já tem CIT-001 (R2) como cidade; TER-014/015/017/019 ficam sem capital promovida por ora (identidade nômade/de fronteira, gap honesto, não erro).",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "date": "2026-09-13"
+}

@@ -1,0 +1,28 @@
+{
+  "record_id": "STAGE14-CORRECTION-LEDGER-V1.0",
+  "runtime_corrections": [],
+  "harness_corrections": [
+    {
+      "id": "ET14-HARNESS-001",
+      "issue": "Long-horizon class name mismatch in new global harness",
+      "status": "CORRECTED"
+    },
+    {
+      "id": "ET14-HARNESS-002",
+      "issue": "Environment zone seed used obsolete argument shape",
+      "status": "CORRECTED"
+    },
+    {
+      "id": "ET14-HARNESS-003",
+      "issue": "Ecology decision assertion read top-level instead of selected intent",
+      "status": "CORRECTED"
+    },
+    {
+      "id": "ET14-HARNESS-004",
+      "issue": "Release audit initially omitted Master archive root prefix when hashing Atlas files",
+      "status": "CORRECTED"
+    }
+  ],
+  "open": 0,
+  "status": "PASS"
+}

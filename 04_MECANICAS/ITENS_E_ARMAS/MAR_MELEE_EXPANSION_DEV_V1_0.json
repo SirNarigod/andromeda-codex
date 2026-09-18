@@ -1,0 +1,355 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "MAR-MELEE-EXPANSION-DEV-V1.0",
+  "title": "MAR — 2ª opção por tier em Lâminas e Improvisadas (dobra o arsenal Nativos)",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "canonical_status": "GAMEPLAY_DERIVED_DEV",
+  "master_integration_status": "NOT_SUBMITTED",
+  "supplements": [
+    "MAR_MELEE_AND_SPECIAL_GAMEPLAY_STATS_DEV_V1_0.json",
+    "MAR_ARSENAL_EXPANSION_DEV_V1_0.json"
+  ],
+  "r2_guard": "Segunda variante por tier para ART-005 (Lâminas) e ART-014 (Improvisadas), completando o arsenal de 16 armas da classe Nativos. Não cria código ART novo, não edita 01_LORE/CANON_R2/, não inventa efeito numérico de runa isolado.",
+  "weapons": [
+    {
+      "weapon_id": "WPN-LAM-005",
+      "name": "Punhal Comum de Viajante",
+      "r2_source_category": "ART-005",
+      "runification_tier": "R0",
+      "runes_referenced": [],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 42,
+        "defense": 30,
+        "utility": 18,
+        "handling": 58,
+        "durability": 52,
+        "reach": 22,
+        "magic_affinity": 4,
+        "tech_affinity": 18,
+        "overall": 31
+      },
+      "balance_role": {
+        "subtype": "corte discreto",
+        "primary_strength": "handling",
+        "primary_weakness": "magic_affinity",
+        "advantage": "leve, fácil de esconder e reparar em qualquer vila",
+        "limitation": "alcance mínimo, exige combate muito próximo"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (corpo-a-corpo)",
+        "impact_type": "CORTE",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 0.8
+    },
+    {
+      "weapon_id": "WPN-LAM-006",
+      "name": "Machado de Reforço Simples",
+      "r2_source_category": "ART-005",
+      "runification_tier": "R1",
+      "runes_referenced": [
+        "reforço"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "MÉDIO",
+      "cost_tier": 2,
+      "stats": {
+        "power": 58,
+        "defense": 24,
+        "utility": 25,
+        "handling": 48,
+        "durability": 58,
+        "reach": 28,
+        "magic_affinity": 24,
+        "tech_affinity": 30,
+        "overall": 37
+      },
+      "balance_role": {
+        "subtype": "impacto de corte",
+        "primary_strength": "durability",
+        "primary_weakness": "defense",
+        "advantage": "runa de reforço permite golpes pesados sem fraturar o cabo",
+        "limitation": "peso reduz a agilidade em combate rápido"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (corpo-a-corpo)",
+        "impact_type": "CORTE",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 1.7
+    },
+    {
+      "weapon_id": "WPN-LAM-007",
+      "name": "Espada Rúnica de Retorno",
+      "r2_source_category": "ART-005",
+      "runification_tier": "R2",
+      "runes_referenced": [
+        "retorno",
+        "contenção"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 60,
+        "defense": 32,
+        "utility": 58,
+        "handling": 50,
+        "durability": 44,
+        "reach": 34,
+        "magic_affinity": 60,
+        "tech_affinity": 58,
+        "overall": 50
+      },
+      "balance_role": {
+        "subtype": "duelo tático",
+        "primary_strength": "utility",
+        "primary_weakness": "defense",
+        "advantage": "retorno à bainha se solta, contenção reduz sangramento acidental do próprio portador",
+        "limitation": "matriz dupla exige recarga entre combates"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (corpo-a-corpo)",
+        "impact_type": "CORTE",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 2.6
+    },
+    {
+      "weapon_id": "WPN-LAM-008",
+      "name": "Lança-Lâmina de Vínculo Total",
+      "r2_source_category": "ART-005",
+      "runification_tier": "R3",
+      "runes_referenced": [
+        "reforço",
+        "vibração",
+        "calor",
+        "retorno",
+        "contenção"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 74,
+        "defense": 38,
+        "utility": 60,
+        "handling": 40,
+        "durability": 36,
+        "reach": 48,
+        "magic_affinity": 74,
+        "tech_affinity": 66,
+        "overall": 55
+      },
+      "balance_role": {
+        "subtype": "corte de elite com alcance estendido",
+        "primary_strength": "power",
+        "primary_weakness": "durability",
+        "advantage": "todas as runas usuais da categoria operando juntas — maior alcance de lâmina do catálogo",
+        "limitation": "vínculo de cinco runas simultâneas é caríssimo e frágil sob falha de qualquer uma delas"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (corpo-a-corpo)",
+        "impact_type": "CORTE",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 3.5
+    },
+    {
+      "weapon_id": "WPN-IMP-005",
+      "name": "Corrente de Ferragem",
+      "r2_source_category": "ART-014",
+      "runification_tier": "R0",
+      "runes_referenced": [],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 30,
+        "defense": 16,
+        "utility": 22,
+        "handling": 42,
+        "durability": 28,
+        "reach": 26,
+        "magic_affinity": 4,
+        "tech_affinity": 16,
+        "overall": 23
+      },
+      "balance_role": {
+        "subtype": "improviso flexível",
+        "primary_strength": "handling",
+        "primary_weakness": "magic_affinity",
+        "advantage": "alcance imprevisível para o oponente, disponível em qualquer oficina",
+        "limitation": "pouco dano direto e nenhuma proteção ao usuário"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (corpo-a-corpo)",
+        "impact_type": "IMPACTO_CONTUSO",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 0.8
+    },
+    {
+      "weapon_id": "WPN-IMP-006",
+      "name": "Cano Reforçado com Runa Emprestada",
+      "r2_source_category": "ART-014",
+      "runification_tier": "R1",
+      "runes_referenced": [
+        "reforço"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 48,
+        "defense": 20,
+        "utility": 26,
+        "handling": 36,
+        "durability": 22,
+        "reach": 26,
+        "magic_affinity": 22,
+        "tech_affinity": 26,
+        "overall": 28
+      },
+      "balance_role": {
+        "subtype": "improviso de impacto",
+        "primary_strength": "power",
+        "primary_weakness": "durability",
+        "advantage": "cano de tubulação com uma runa reaproveitada, impacto surpreendente para o custo",
+        "limitation": "material incompatível com a runa reduz a vida útil da peça"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (corpo-a-corpo)",
+        "impact_type": "IMPACTO_CONTUSO",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 1.7
+    },
+    {
+      "weapon_id": "WPN-IMP-007",
+      "name": "Machadinha com Matriz Dupla Reaproveitada",
+      "r2_source_category": "ART-014",
+      "runification_tier": "R2",
+      "runes_referenced": [
+        "reforço",
+        "vibração"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 54,
+        "defense": 22,
+        "utility": 34,
+        "handling": 32,
+        "durability": 20,
+        "reach": 24,
+        "magic_affinity": 42,
+        "tech_affinity": 34,
+        "overall": 33
+      },
+      "balance_role": {
+        "subtype": "improviso duplo de corte",
+        "primary_strength": "power",
+        "primary_weakness": "durability",
+        "advantage": "ferramenta de oficina com duas runas recicladas — corte muito acima do esperado para a categoria",
+        "limitation": "combinação de runas incompatíveis acelera bastante o desgaste"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (corpo-a-corpo)",
+        "impact_type": "IMPACTO_CONTUSO",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 2.6
+    },
+    {
+      "weapon_id": "WPN-IMP-008",
+      "name": "Ferramenta de Vínculo Triplo Instável",
+      "r2_source_category": "ART-014",
+      "runification_tier": "R3",
+      "runes_referenced": [
+        "reforço",
+        "vibração",
+        "calor"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 62,
+        "defense": 20,
+        "utility": 40,
+        "handling": 24,
+        "durability": 14,
+        "reach": 26,
+        "magic_affinity": 58,
+        "tech_affinity": 40,
+        "overall": 36
+      },
+      "balance_role": {
+        "subtype": "improviso extremo",
+        "primary_strength": "power",
+        "primary_weakness": "durability",
+        "advantage": "três runas emprestadas empilhadas numa ferramenta comum — maior poder improvisado do catálogo",
+        "limitation": "risco real de fratura ou falha catastrófica a qualquer momento de uso"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (corpo-a-corpo)",
+        "impact_type": "IMPACTO_CONTUSO",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 3.5
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "record_id": "STELLAR-ROOT-PROGRESSION-LAW-V1.0",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.0",
+  "status": "CANON_DERIVADO_ATIVO_R2_GUARDED",
+  "authority": {"r2": ["COR-001", "COS-002", "PLA-001", "RESUMO_MESTRE_CANONICO.md"], "scope": "RAIZ_PROFUNDA_PLANETARY_CLOCK_AND_ECOSYSTEM_CONSEQUENCES"},
+  "dependencies": ["STELLAR_COSMOLOGY_CANON_V1_2.json", "STELLAR_SYMBIOSIS_LAW_V1_0.json", "../../01_LORE/STELLAR_REBASE_R2/R2_SOURCE_AUTHORITY_INDEX_V1_0.json"],
+  "invariants": ["RAIZ_PROFUNDA_WAS_IMPLANTED_BY_VOTAKHEL", "RAIZ_PROFUNDA_IS_A_PLANETARY_INVASIVE_ORGANISM", "ESPINHO_NEGRO_IS_AMADON_CREATED_OPPOSITION", "GLOBAL_PRESSURE_MUST_HAVE_LOCAL_OBSERVABLE_SIGNS", "PLANETARY_ESCALATION_REMAINS_AUTHORIAL_AT_PHASE_BOUNDARIES"],
+  "prohibitions": ["NO_AUTOMATIC_PLANETARY_PHASE_TRANSITION", "NO_OFFLINE_IRREVERSIBLE_DESTRUCTION", "NO_AUTOMATIC_ESPINHO_NEGRO_VICTORY", "NO_NEW_ORIGIN_FOR_ROOT_OR_ESPINHO", "NO_SEALED_REVELATION_BEFORE_ITS_R2_BOUNDARY"],
+  "phase_clock": [{"phase": 1, "id": "IMPLANTATION", "global_pressure": "LOW", "local_signs": ["anomalous substrate", "isolated record gaps"]}, {"phase": 2, "id": "ROOTING", "global_pressure": "RISING", "local_signs": ["altered roots", "waterway disturbance"]}, {"phase": 3, "id": "SILENT_FEEDING", "global_pressure": "PERSISTENT", "local_signs": ["resource depletion", "unexplained biological hunger"]}, {"phase": 4, "id": "CORRUPTION", "global_pressure": "SEVERE", "local_signs": ["ecological distortion", "contested containment"]}, {"phase": 5, "id": "EMERGENCE", "global_pressure": "CRITICAL", "local_signs": ["visible outbreaks", "route failure", "mass displacement"]}, {"phase": 6, "id": "HARVEST", "global_pressure": "EXISTENTIAL", "local_signs": ["planetary-scale consequence"], "requires": "AUTHORIAL_GATE"}],
+  "transition_policy": {"pressure_update": "May advance continuously from documented local events and recovery efforts.", "phase_transition": "Requires observed evidence, compatibility review, impact record and authorial gate.", "offline_policy": "Offline simulation may accumulate bounded pressure but cannot change phase, reveal sealed facts or destroy irreplaceable canon."},
+  "simulation_effects": ["The global clock exposes proportional local signs without naming sealed cosmic facts.", "Containment, restoration and investigation can slow or redirect pressure locally but cannot erase the causal record.", "Espinho-Negro reactions can locate or contest corruption only within symbiosis, material and revelation limits."],
+  "allowed_states": ["DORMANT_EVIDENCE", "PRESSURE_ACCUMULATING", "PHASE_GATED", "LOCALLY_CONTAINED", "RECOVERING", "AUTHORIAL_TRANSITION"],
+  "story_generators": ["A city discovers that its cheap water route is feeding an unseen phase of the Root.", "A local success slows the planetary clock but transfers danger to a rival territory.", "An outbreak offers proof of Votakhel's design while forcing characters to preserve a sealed truth."]
+}

@@ -1,0 +1,15 @@
+{
+  "record_id": "SUB-011-004",
+  "record_kind": "DERIVED_SUBREGION_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Baixios de Raizel",
+  "parent_political_unit": "TER-011",
+  "provenance": {"approval":"R2-REBASE-LOT-009","r2_anchors":["TER-011","CRI-005","RES-004","COR-001"],"compatibility":"A wet-understory locality derived from R2 raizel ecology; corruption remains contextual evidence, not a phase transition."},
+  "function":"Sub-bosques úmidos de cuidado de raizel, ração de emergência, triagem de toxinas e observação ecológica.",
+  "locality_references":[],
+  "permitted_catalog_links":{"npc_roles":["NPC-ROLE-002","NPC-ROLE-010","NPC-ROLE-011"],"professions":["JOB-001","JOB-011","JOB-012","JOB-013"],"encounters":["ENCOUNTER-005","ENCOUNTER-007","ENCOUNTER-011","ENCOUNTER-014"],"resources":["RES-004","RES-008","RES-010","PAI-066","CRI-030"]},
+  "local_conflicts":["alimento de emergência versus risco de toxina","quarentena versus necessidade de abastecimento","sinais locais de corrupção versus pânico coletivo"],
+  "prohibitions":["NO_ROOT_PHASE_ADVANCE","NO_PLANETARY_CORRUPTION_INFERENCE","NO_AUTOMATIC_QUARANTINE_AUTHORITY","NO_RESOURCE_EXPLOITATION_FACT"],
+  "story_generators":["Uma ração vital é retida quando um curador encontra uma toxina que ninguém quer reconhecer.","O comportamento de um raizel sugere alteração ecológica antes que qualquer instrumento confirme.","Uma quarentena voluntária ameaça a autonomia de uma comunidade que depende do bosque."]
+}

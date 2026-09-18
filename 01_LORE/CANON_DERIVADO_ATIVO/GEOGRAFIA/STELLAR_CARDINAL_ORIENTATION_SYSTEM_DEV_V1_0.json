@@ -1,0 +1,16 @@
+{
+  "record_id": "STELLAR-CARDINAL-ORIENTATION-SYSTEM-DEV-V1.0",
+  "title": "Sistema de Orientação Cardinal (Bússola)",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "r2_guard": "Deriva diretamente do CRS ja existente (ACRS-STELLAR-GEODETIC-V1, fase 37) - nao inventa geografia nova, so formaliza a leitura de direcao sobre as coordenadas sinteticas ja usadas em STELLAR_REGION_COORDINATE_INDEX_DEV_V1_0.json e no dominio Local do MASTER V2.",
+  "rule": {
+    "norte": "latitude crescente (+)",
+    "sul": "latitude decrescente (-)",
+    "leste": "longitude crescente (+)",
+    "oeste": "longitude decrescente (-)",
+    "formula_direcao_relativa": "Entre dois pontos A->B: direcao = atan2(long_B - long_A, lat_B - lat_A), lida em N/S/L/O e intermediarios (NE/NO/SE/SO).",
+    "precisao": "Qualitativa por padrao (N/S/L/O + intermediarios) - graus exatos disponiveis via coordinate_center para quem precisar de precisao numerica."
+  },
+  "usage_note": "Toda bussola/mapa/NPC-guia em Stellar pode usar esta regra para orientar o jogador sem inventar um novo sistema de coordenadas.",
+  "worked_example": "TER-006 Altavela (latitude alta, reino aéreo) fica ao NORTE de TER-011 Terras Livres (latitude baixa) na grade sintética atual - consistente com o layout circular já gerado na fase 37."
+}

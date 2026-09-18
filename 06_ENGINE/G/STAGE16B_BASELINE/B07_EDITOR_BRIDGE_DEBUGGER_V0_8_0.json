@@ -1,0 +1,72 @@
+{
+  "record_id": "ANDROMEDA-ARPG-STAGE16B-B07-EDITOR-BRIDGE-DEBUGGER-V0.8.0",
+  "captured_at": "2026-08-21T13:39:02.8679129-03:00",
+  "godot_version": "4.7.1.stable.official.a13da4feb",
+  "project_path": "C:/Users/thall/Documents/andromeda-argp/ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/07_GODOT_ARPG_STAGE16B",
+  "editor_bridge": "EXISTING_LOCAL_ANDROMEDA_EDITOR_BRIDGE_OPERATIONAL",
+  "user_editor_pid": 10524,
+  "user_editor_pid_preserved": true,
+  "invalidated_runs": [
+    {
+      "id": "B07_EDITOR_BRIDGE_R1",
+      "counted": false,
+      "functional_checks": {
+        "passed": 357,
+        "failed": 0
+      },
+      "reason": "Debugger contained four GDScript warnings; a warning invalidates the run.",
+      "debugger_errors": 0,
+      "debugger_warnings": 4,
+      "warnings": [
+        "Values of the ternary operator are not mutually compatible at res://scripts/interaction/ground_loot.gd:173.",
+        "Values of the ternary operator are not mutually compatible at res://scripts/interaction/ground_loot_pickup_client.gd:251.",
+        "await keyword is unnecessary at res://tests/godot/b07_runtime_gate.gd:48.",
+        "await keyword is unnecessary at res://tests/godot/b07_runtime_gate.gd:49."
+      ],
+      "controlled_stop": true,
+      "final_errors_count": 4
+    }
+  ],
+  "correction": {
+    "description": "Replaced mixed-type ternary projections with explicitly compatible values, converted StringName to String, and removed the two redundant awaits.",
+    "headless_retest_after_correction": {
+      "passed": 357,
+      "failed": 0,
+      "process_exit_code": 0,
+      "stderr_chars": 0
+    }
+  },
+  "final_runs": [
+    {
+      "id": "B07_RUNTIME_GATE_EDITOR_BRIDGE_FINAL",
+      "scene": "tests/godot/B07RuntimeGate.tscn",
+      "result": "PASS",
+      "passed": 357,
+      "failed": 0,
+      "gate_marker": "ANDROMEDA_STAGE16B_B07_GATE: PASS",
+      "debugger_errors": 0,
+      "debugger_warnings": 0,
+      "debug_output_errors": [],
+      "controlled_stop": true,
+      "finalErrors": []
+    },
+    {
+      "id": "MAIN_TSCN_EDITOR_BRIDGE_FINAL",
+      "scene": "scenes/Main.tscn",
+      "result": "PASS",
+      "observed_seconds": 5,
+      "debugger_errors": 0,
+      "debugger_warnings": 0,
+      "debug_output_errors": [],
+      "controlled_stop": true,
+      "finalErrors": []
+    }
+  ],
+  "final_debugger": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "final_controlled_stop": true,
+  "finalErrors": [],
+  "status": "PASS"
+}

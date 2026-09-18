@@ -1,0 +1,148 @@
+{
+  "record_id": "MASTER-V2-TIER-INDEX-V1.0",
+  "title": "Índice do tier CANON_MASTER_V2 (importado de ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE.zip)",
+  "authority": "CANON_MASTER_V2_CONFIRMADO",
+  "what_is_this": "Este tier reflete o pacote canônico MASTER V2.0.1 (arquivo original em C:\\Users\\thall\\AppData\\Local\\Temp\\ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE.zip, sha256 do zip: 6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2), que se autodeclara fonte canônica única do universo Stellar, superando a baseline V1.0.1 da qual nosso 01_LORE/CANON_R2 provavelmente deriva. Auditado previamente (mesma sessão) contra as 10 decisões autorais vinculantes do Master (MASTER_AUTHORIAL_DECISIONS_V2_0_0) — nenhuma violação encontrada em todo o conteúdo já existente no projeto. CANON_MASTER_V2 tem autoridade maior que CANON_DERIVADO_ATIVO e coexiste com CANON_R2 sem contradição identificada até o momento.",
+  "hierarchy_note": "CANON_MASTER_V2 (mais recente/autoritativo) > CANON_R2 (baseline V1.0.1 anterior) > CANON_DERIVADO_ATIVO (nossas extensões de gameplay).",
+  "import_status": {
+    "PROFISSOES": {
+      "status": "IMPORTADO",
+      "files": [
+        "01_LORE/CANON_MASTER_V2/PROFISSOES/MASTER_PROFESSIONS_FUNCTIONAL_V2_0_0.json (91 profissões)",
+        "01_LORE/CANON_MASTER_V2/PROFISSOES/MASTER_CHARACTER_PROFESSION_BINDINGS_V2_0_0.json (24 vínculos personagem-profissão)",
+        "01_LORE/CANON_MASTER_V2/PROFISSOES/MASTER_PROFESSION_ECONOMIC_BINDINGS_V2_0_0.json",
+        "01_LORE/CANON_MASTER_V2/PROFISSOES/MASTER_PROFESSION_EDUCATION_BINDINGS_V2_0_0.json",
+        "01_LORE/CANON_MASTER_V2/PROFISSOES/MASTER_PROFESSION_INSTITUTION_BINDINGS_V2_0_0.json",
+        "01_LORE/CANON_MASTER_V2/PROFISSOES/MASTER_PROFESSION_SPATIAL_BINDINGS_V2_0_0.json"
+      ],
+      "side_effect": "04_MECANICAS/TRABALHO_E_PROFISSOES/R2_ROLE_SOURCE_REFERENCE_V1.json atualizado: 9 de 11 PER-XXX resolvidos de formal_job_system_state=PENDING para RESOLVED_VIA_MASTER_V2 (sem binding oficial no Master para os 2 restantes). Fase 61: PER-010 fechado como CLOSED_NOT_APPLICABLE_DECEASED (TIM-023); PER-009 segue PENDING vigiado (só o desaparecimento em TIM-022, atribuir profissão inventaria biografia).",
+      "note": "Nosso STELLAR_PROFESSION_CATALOG_V1_0.json (16 JOB-XXX qualitativos, CANON_DERIVADO_ATIVO) permanece intocado - é uma camada de gameplay abstrata, não contradiz as 91 profissões oficiais."
+    },
+    "FAUNA": {
+      "status": "IMPORTADO",
+      "master_count": 64,
+      "files": [
+        "01_LORE/CANON_MASTER_V2/FAUNA/MASTER_FAUNA_CATALOG_V2_0_0.json (64 espécies: 13 confirmadas + 51 novas)"
+      ],
+      "note": "13 espécies (CRI-001..013) já existiam como arquivos R2 confirmados em CANON_R2/ECOLOGIA/FAUNA/ - o Master só confirma território/bioma, sem contradição (nenhum arquivo R2 alterado). As outras 51 (prefixos FAD-/FAS-/FPN-P) são espécies oficiais novas, só com nome+posicionamento territorial (sem stats/comportamento - o catálogo funcional completo de origem não está incluído neste release). Nossas 13 criaturas gameplay-derived (CRI-014..026, criadas nesta sessão) não colidem com nenhum ID do Master - namespaces confirmados limpos por validação cruzada."
+    },
+    "CULTURA_IDIOMAS_CRENCAS": {
+      "status": "IMPORTADO",
+      "master_count": 416,
+      "files": ["01_LORE/CANON_MASTER_V2/CULTURA/MASTER_CULTURA_TRAITS_V2_0_0.json (13 territórios x 32 traços = 416)"],
+      "note": "Namespace SOC-PROP-XXX-NNN, sem colisão com nosso CUL-001..013 (intocados). Organizado por território: cada um dos 13 povos ganha 32 traços culturais oficiais concretos (hospitalidade, alimentação, vestuário, ritual, luto, música, dança, jogos, educação, conflito, etc.) - enriquecimento aditivo real dos nossos CUL-XXX existentes, validado cruzando o nome de cultura (ex. 'Altavelanos') com o território correto."
+    },
+    "LEIS_JUSTICA_SEGURANCA_DEFESA": {
+      "status": "IMPORTADO",
+      "master_count": 103,
+      "files": ["01_LORE/CANON_MASTER_V2/LEIS_JUSTICA_SEGURANCA_DEFESA/MASTER_LEIS_CATALOG_V2_0_0.json (103 itens, 9 categorias)"],
+      "note": "Sistema legal oficial completo de Stellar: jurisdição (5), direitos civis básicos (10), propriedade civil (10), direito comercial (10), doutrina de responsabilidade criminal (10), código penal com 28 tipos de crime, procedimento de investigação (10), devido processo/julgamento (10), operações policiais (10). Prefixo LJS-, sem colisão. Todas ancoradas genericamente em POI-019 (artefato de indexação, não fato de exclusividade territorial)."
+    },
+    "TECNOLOGIA": {
+      "status": "IMPORTADO",
+      "master_count": 83,
+      "files": ["01_LORE/CANON_MASTER_V2/TECNOLOGIA/MASTER_TECNOLOGIA_CATALOG_V2_0_0.json (83 itens, 29 categorias)"],
+      "note": "Prefixo PROP-XXX-NNN, sem colisão com TEC-001 (R2, intocado) nem MIN-/MAT-/RES-. As 83 entradas são infraestrutura técnica de escopo planetário (energia, água, comunicação, transporte por modal, medicina, saneamento, mineração, manufatura, segurança, ferroviário, rodoviário etc.), não específicas de território - todas ancoradas genericamente em LOC-003/Ortheon no Master (artefato de indexação espacial, não fato narrativo)."
+    },
+    "EDUCACAO_CIENCIA": {
+      "status": "IMPORTADO",
+      "master_count": 62,
+      "files": ["01_LORE/CANON_MASTER_V2/EDUCACAO/MASTER_EDUCACAO_CATALOG_V2_0_0.json (62 nos operacionais EDUCATION/SCIENCE)"],
+      "note": "IDs ANDROMEDA-EDUCIENCIA-* (compostos, sem colisao). Nos operacionais do atlas, nao fichas de escola: os 8 EDU-XXX seguem stubs (detalhe nao incluido neste release). Fase 62."
+    },
+    "LOCAL": {
+      "status": "IMPORTADO",
+      "master_count": 52,
+      "files": ["01_LORE/CANON_MASTER_V2/LOCAL/MASTER_LOCAL_POI_CATALOG_V2_0_0.json (52 POIs, 15 locais-pai)"],
+      "note": "Prefixo POI-XXX, ancorado em LOC-XXX de 2 partes (1 por território) ou CIT-001 - formato diferente do nosso LOC-XXX-YYY de 3 partes, sem colisão confirmada. 1 POI já confirmado identico a construção nossa (POI-030 Estaleiro de Navyr = EST-047). LOC-014/015 são locais especiais fora dos 13 territórios-base (LOC-015 = Núcleo da Flor Fóssil, ligado a FAC-005)."
+    },
+    "FACCOES": {
+      "status": "IMPORTADO",
+      "master_count": 48,
+      "files": ["01_LORE/CANON_MASTER_V2/FACCOES/MASTER_FACCOES_CATALOG_V2_0_0.json (7 confirmadas + 41 novas)"],
+      "collision_resolved": "FAC-011 oficial = 'Câmara das Armarias Rúnicas', colidia com nosso FAC-011 'Enclave Sintético' (Androids). Enclave Sintético renumerado para FAC-090 em 9 arquivos + arquivo renomeado. Nenhum fato alterado, só o código.",
+      "note": "FAC-001/002/003/004/005 (R2) e FAC-009/010 (derivado) já batiam exatamente com o Master - confirmados sem alteração."
+    },
+    "ARQUITETURA": {
+      "status": "IMPORTADO",
+      "master_count": 47,
+      "files": ["01_LORE/CANON_MASTER_V2/ARQUITETURA/MASTER_ARQUITETURA_CATALOG_V2_0_0.json (11 programas + 36 propriedades construídas)"],
+      "note": "Tipologia arquitetônica oficial: ARQ-PGM (propósito funcional - centro administrativo, clínica, mercado, escola, 4 tipos de moradia, armazém, oficina) e ARQ-PRP (ativo construído físico, espelhando as categorias de Tecnologia - água/energia/saneamento/comunicação/transporte - agora como edifício). Complementa nosso catálogo de 68 EST-XXX nomeados - isto é a tipologia genérica por trás deles. Sem colisão de namespace."
+    },
+    "VESTUARIO": {
+      "status": "IMPORTADO",
+      "master_count": 117,
+      "files": ["01_LORE/CANON_MASTER_V2/VESTUARIO/MASTER_VESTUARIO_CATALOG_V2_0_0.json (5 sub-domínios: facções 46, cultura 39, indústria 15, defesa 11, profissões 6)"],
+      "note": "46 facção + 13 cultura são stubs de confirmação (sem descrição de peça); 5 VST-REG + 3 VST-SPC são stubs vazios. Conteúdo REAL: 8 materiais, 7 sistemas de acessório vestível, 11 sistemas de proteção, 6 uniformes profissionais. ACHADO NOTÁVEL: 18 ACCESSORY_INVENTORY são itens pessoais específicos de personagens R2 - objetos de Kenua Vaarn (PER-002: manga cortada em combate, bolsa, bainha, casaco), Serlis Aftermoon (PER-003: insígnias de Mestre de Contenção) e Kaenna Vor (PER-006: bracelete de contenção móvel ligado à prótese mecânica já conhecida). Dois nomes NÃO confirmados em nossos 11 PER-XXX aparecem: 'Ivara' e 'Orun' - documentados honestamente, sem biografia inventada. Sem colisão de namespace (todos os IDs são compostos, diferentes de nosso VST-001..008 bare e TRJ-001..014)."
+    },
+    "ECONOMIA_INDUSTRIA_MERCADOS": {
+      "status": "IMPORTADO",
+      "master_count": 63,
+      "files": ["01_LORE/CANON_MASTER_V2/ECONOMIA/MASTER_ECONOMIA_CATALOG_V2_0_0.json (42 bens/serviços + 21 confirmações de mercado)"],
+      "note": "42 ECO-GOOD são taxonomia planetária de bens/serviços (não específica de território, ancoragem genérica no Master) - 14 deles cruzam automaticamente com recursos/fauna já catalogados (leite veluriano=RES-001, Grilo-Cobre=CRI-008, Orvante/Torvaco/Brumápode/Viarim=FAD-001..004 recém-importados). Os 21 'mercados' (18 ECO-PROFILE + 3 ECO-MKT) são STUBS SEM CONTEÚDO REAL no pacote-fonte - só confirmam que essas facções/territórios/locais têm perfil econômico oficial reconhecido, sem descrição adicional. Nada foi inventado para preencher essa lacuna."
+    },
+    "REFERENCIAS_ORG_EDU_STUBS": {
+      "status": "VERIFICADO_SEM_CONTEUDO",
+      "master_count": 17,
+      "note": "As 9 ORG-XXX (instituição empregadora) e 8 EDU-XXX (trilha de formação) citadas pelas 91 profissões vivem no domínio 'Referência canônica' como STUBS puros (name=summary=id, fallback=true) - a ficha detalhada não está incluída neste release. Gap real e documentado, não preenchido por invenção."
+    },
+    "HISTORIA_NARRATIVA": {
+      "status": "IMPORTADO",
+      "master_count": 32,
+      "files": ["01_LORE/CANON_MASTER_V2/HISTORIA/MASTER_HISTORIA_TIMELINE_V2_0_0.json (32 eventos TIM-001..032)"],
+      "note": "Linha do tempo mestra completa de Stellar - fundações de território/facção, 8 nascimentos de personagens (cross-referenciados aos PER-XXX reais), o arco completo Serlis/Aelyra, início de 'O Hospedeiro' (Ep.1), e os fatos-base de Amadon/Espinho-Negro/Votakhel/Raiz Profunda. 4 eventos já cobertos por HIS-001..004 (R2) - cross-referenciados, não duplicados. TIM-022/023 dão fato mínimo (desaparecimento/morte) de PER-009/010 (Daren/Meyra Vaarn), sem biografia extra inventada. GUARDA: TIM-030/031/032 (Amadon/Votakhel) são fatos de fundo do próprio Master - importados como registro de linha do tempo, NÃO como autorização para revelar Amadon em gameplay antes de S01E08 (restrição já registrada em STELLAR_CONSEQUENCE_ENGINE_REGISTRY_DEV_V1_0.json permanece intocada)."
+    },
+    "MAR_RAIZ_PROFUNDA": {
+      "status": "IMPORTADO",
+      "master_count": 20,
+      "files": ["01_LORE/CANON_MASTER_V2/MAR_RAIZ_PROFUNDA/MASTER_RAIZ_PROFUNDA_CATALOG_V2_0_0.json (12 fauna + 4 flora + 4 ambiental)"],
+      "side_effect": "MAR_BESTIARY_VARIANTS_DEV_V1_0.json enriquecido: CRI-012-CORROMPIDA e CRI-013-CORROMPIDA ganharam official_name_master_v2 ('Louva-Fenda Radicular', 'Mandíbula-de-Névoa Disrupta').",
+      "territorial_finding_RESOLVIDO": "As 20 entradas oficiais tem territory_refs=[TER-012] mas parent_id=LOC-011 (Terras Livres) - local fisico real bate com nossa SUB-011-006 Fendas da Nevoa. Usuario revisou lado a lado e confirmou: MANTER as 10 subregioes do portao autoral (fase 57) como estao. Nota de reconciliacao registrada em STELLAR_ROOT_CORRUPTION_GATE_DEV_V1_0.json."
+    },
+    "CULINARIA": {
+      "status": "IMPORTADO",
+      "master_count": 17,
+      "files": ["01_LORE/CANON_MASTER_V2/CULINARIA/MASTER_CULINARIA_CATALOG_V2_0_0.json (10 recursos crus + 7 pratos preparados)"],
+      "note": "Sem colisão (CUL-DER-/CUL-ING-/CUL-PREP-/CUL-PROP- são compostos, diferentes do nosso CUL-001..013 bare). 8 dos 10 recursos crus já confirmados batendo exatamente com RES-001..004 (leites). Os 7 pratos preparados (TER-011/TER-012) têm equivalentes muito próximos no nosso STELLAR_PREPARED_FOOD_DEV_V1_0.json (fase 16), mas a grafia difere levemente (ex. 'tostado' vs nosso 'Torrado') - marcados honestamente como não-idênticos, sem forçar correspondência."
+    },
+    "VISUAL_ARTEFATOS": {
+      "status": "IMPORTADO",
+      "master_count": 15,
+      "files": ["01_LORE/CANON_MASTER_V2/VISUAL/MASTER_VISUAL_CATALOG_V2_0_0.json (15 stubs ART- + 90 briefs de design reais)"],
+      "note": "O dominio 'visual/artefatos' em si (15) e so os ART-001..015 ja conhecidos, sem info nova. O conteudo visual REAL veio de 06_VISUAL/MAR_VISUAL_BRIEFS_V1_0.json: 90 briefs de design (silhueta, materiais, mecanismo visivel, estados, vistas) para as 30 armas canonicas (ja presentes), 30 runas e 30 magias oficiais. Isso revelou um erro no registro anterior deste indice - ver MAR_ARMAS_RUNAS_MAGIAS abaixo."
+    },
+    "ATLAS_RUNTIME": {
+      "status": "IMPORTADO",
+      "files": ["01_LORE/CANON_MASTER_V2/ATLAS_RUNTIME/index.html", "01_LORE/CANON_MASTER_V2/ATLAS_RUNTIME/app.js", "01_LORE/CANON_MASTER_V2/ATLAS_RUNTIME/atlas-core.mjs", "01_LORE/CANON_MASTER_V2/ATLAS_RUNTIME/styles.css", "01_LORE/CANON_MASTER_V2/ATLAS_RUNTIME/data/atlas-data.json", "01_LORE/CANON_MASTER_V2/ATLAS_RUNTIME/data/atlas-ui-config.json", "01_LORE/CANON_MASTER_V2/ATLAS_RUNTIME/MASTER_ATLAS_RUNTIME_CATALOG_V2_0_0.json"],
+      "note": "Atlas geoespacial funcional do Master, verbatim do pacote (fase 62). Abrir index.html no navegador; somente leitura do canone. Tools do pacote em 07_AUTOMATION/TOOLS/validate_master.py + run_master_atlas_runtime.mjs."
+    },
+    "MAR_ARMAS_RUNAS_MAGIAS": {
+      "status": "CORRIGIDO_PARCIALMENTE_PENDENTE",
+      "correction_note": "Registro anterior estava ERRADO ao marcar isto como totalmente JA_PRESENTE_NO_REPO. Descoberto durante o import de Visual:",
+      "weapons_wpn_001_030": "JA_PRESENTE - MAR_CANON_GAMEPLAY_STATS_V1_1.json (correto desde o início).",
+      "magic_mag_001_030": "PARCIAL - MAG-001..007 já são nossos 7 arquivos de lei R2 (confirmados batendo exatamente). MAG-008..030 (23 entradas: Fio de Retorno, Pele de Guarda, Selo de Ancoragem etc.) são conteúdo NOVO, não importado.",
+      "runes_run_001_030": "PENDENTE - RUN-001..030 nunca foram importados. Diferentes do nosso RUNA-001..010 (fase 23). Fichas MUITO ricas: efeito, ativação, condições, alcance, duração, limitações, risco, compatibilidade com armas/tecnologia/magia, cadeia de criação/verificação/manutenção por profissão, posicionamento espacial.",
+      "status_final": "IMPORTADO",
+      "files": ["01_LORE/CANON_MASTER_V2/MAR_RUNAS_MAGIAS/MASTER_RUNAS_MAGIAS_FUNCTIONAL_V2_0_0.json (30 runas completas + 7 magias cross-ref + 23 magias novas)"],
+      "note": "30 RUN-XXX importadas com ficha completa (efeito, ativação, condições, compatibilidade cruzada, cadeia de criação/manutenção por profissão, posicionamento espacial, brief visual). MAG-001..007 cross-referenciados aos R2 reais (títulos conferidos byte a byte). MAG-008..030 (23 novas) importadas com ficha completa. Sem colisão com nosso RUNA-001..010 (fase 23, mantido intocado)."
+    }
+  },
+  "sequencing_rule": "A partir desta sessão, o próximo domínio a importar é sempre escolhido pelo maior in-degree (mais referenciado por outros domínios) no array 'relationships' de 01_CANON/ANDROMEDA_CODEX_CANON_MASTER_V2_0_0.json, entre os domínios ainda PENDENTE. Isso prioriza o domínio que mais 'alimenta' os próximos, não o maior ou mais chamativo.",
+  "SMALL_FEEDER_DOMAINS_BATCH": {
+    "status": "IMPORTADO",
+    "domains": {
+      "Indústria": {"count": 8, "file": "01_LORE/CANON_MASTER_V2/INDUSTRIA/MASTER_INDUSTRIA_CATALOG_V2_0_0.json"},
+      "Recursos": {"count": 6, "file": "01_LORE/CANON_MASTER_V2/RECURSOS/MASTER_RECURSOS_CATALOG_V2_0_0.json"},
+      "Agricultura": {"count": 8, "file": "01_LORE/CANON_MASTER_V2/AGRICULTURA/MASTER_AGRICULTURA_CATALOG_V2_0_0.json"},
+      "Transporte": {"count": 9, "file": "01_LORE/CANON_MASTER_V2/TRANSPORTE/MASTER_TRANSPORTE_CATALOG_V2_0_0.json"},
+      "Atlas/local": {"count": 2, "file": "01_LORE/CANON_MASTER_V2/LOCAL/MASTER_ATLAS_LOCAL_CITY_CONFIRMATION_V2_0_0.json"}
+    },
+    "collision_found_and_resolved": {
+      "issue": "AGZ-001..008 oficiais do Master colidiam com nossas próprias 8 zonas agrícolas (fase 15 desta sessão) - mesma numeração, conteúdo diferente. Achado extra: o motor do jogo já referenciava AGZ-001/RSZ-003 (os códigos oficiais reais) em arpg_gathering_work_core.py, pré-existente - a colisão já existia silenciosamente antes desta sessão.",
+      "resolution": "Nossas 8 zonas renumeradas para AGZ-090..097 (14 arquivos atualizados/renomeados). Nenhum fato alterado, só o código - mesmo padrão de FAC-011->FAC-090."
+    },
+    "note": "Cadeia de produção real conectada: Recursos (RSZ) -> Indústria (INDN, cita RSZ e AGZ como insumos) -> Economia (ECO-GOOD, já importado). Transporte (SRTE) conecta POI/LOC/CIT locais com distância em km e risco."
+  },
+  "sequencing_rule_status_update": "Após Local+Tecnologia, o in-degree entre os domínios pendentes caiu para quase zero (nenhum passa de 14) - os 2 maiores feeders reais do pacote já foram importados. A regra de in-degree deixou de discriminar; o critério secundário agora é: fechar referências pendurdas deixadas pelos imports já feitos. Achado concreto: as 91 profissões citam 9 'ORG-XXX' (instituição empregadora) e 8 'EDU-XXX' (trilha de formação) que vivem dentro do domínio 'Referência canônica' (161 entidades, majoritariamente stubs VIS-/RTE- de baixo valor) - só essas 17 têm valor real de fechamento.",
+  "next_recommended_step": "1) Import rápido dos 17 stubs ORG-/EDU- (fecha institution_id/path_ref das 91 profissões). 2) Depois, Economia (indústria+mercados+logística, ~63) como próximo domínio substantivo - é o que mais depende tematicamente de Profissões+Tecnologia+Local, todos já importados."
+}

@@ -1,0 +1,177 @@
+{
+  "record_id": "STELLAR-RESOURCE-CATALOG-V1.0",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "QUALITATIVE_R2_EVIDENCED_CATALOG",
+  "scope": "EXPLICIT_MATERIAL_FLOWS_AND_ECOSYSTEM_SERVICES",
+  "source_rule": "Only facts explicit in R2 are cataloged. Extraction, price, stock, rarity, recipes and loot are runtime or future authored design.",
+  "resource_entries": [
+    {
+      "id": "RES-001",
+      "title": "Leite veluriano",
+      "source": "CRI-002",
+      "type": "NOURISHMENT",
+      "evidence": "Proteína, cálcio e vitaminas B2/B12; perde qualidade em solo contaminado.",
+      "constraints": [
+        "herd feed quality",
+        "contamination traceability"
+      ],
+      "story_yield": "Uma comunidade precisa provar que o pasto é seguro antes de enviar alimento por rota.",
+      "weight_kg": 0.52,
+      "description": "Proteína, cálcio e vitaminas B2/B12; perde qualidade em solo contaminado."
+    },
+    {
+      "id": "RES-002",
+      "title": "Leite brumante",
+      "source": "CRI-003",
+      "type": "NOURISHMENT",
+      "evidence": "Leite denso para inverno e recuperação; excesso causa sobrecarga digestiva.",
+      "constraints": [
+        "cold-climate husbandry",
+        "controlled consumption"
+      ],
+      "story_yield": "Uma ração de emergência divide uma expedição entre recuperação imediata e risco de excesso.",
+      "weight_kg": 0.52,
+      "description": "Leite denso para inverno e recuperação; excesso causa sobrecarga digestiva."
+    },
+    {
+      "id": "RES-003",
+      "title": "Leite de lúmara",
+      "source": "CRI-004",
+      "type": "NOURISHMENT",
+      "evidence": "Micronutrientes e proteínas leves; espécie não tolera confinamento prolongado.",
+      "constraints": [
+        "open-grove care",
+        "low-noise handling"
+      ],
+      "story_yield": "Uma oficina luminosa ameaça uma criação que depende de silêncio e campo aberto.",
+      "weight_kg": 0.52,
+      "description": "Micronutrientes e proteínas leves; espécie não tolera confinamento prolongado."
+    },
+    {
+      "id": "RES-004",
+      "title": "Leite âmbar de raizel",
+      "source": "CRI-005",
+      "type": "NOURISHMENT",
+      "evidence": "Ração de emergência com ferro, B9, proteína e sais; risco de toxinas próximo à corrupção.",
+      "constraints": [
+        "subforest stewardship",
+        "corruption screening"
+      ],
+      "story_yield": "Um carregamento vital é retido quando surgem sinais de toxina radicular.",
+      "weight_kg": 0.52,
+      "description": "Ração de emergência com ferro, B9, proteína e sais; risco de toxinas próximo à corrupção."
+    },
+    {
+      "id": "RES-005",
+      "title": "Grilo-Cobre preparado",
+      "source": "CRI-008",
+      "type": "NOURISHMENT",
+      "evidence": "Inseto comestível, rico em proteína, vitaminas B e zinco; requer tostagem ou cozimento.",
+      "constraints": [
+        "safe preparation",
+        "soil contamination screening"
+      ],
+      "story_yield": "Uma despensa popular se torna evidência de contaminação industrial.",
+      "weight_kg": 0.52,
+      "description": "Inseto comestível, rico em proteína, vitaminas B e zinco; requer tostagem ou cozimento."
+    },
+    {
+      "id": "RES-006",
+      "title": "Larva-de-Véu preparada",
+      "source": "CRI-009",
+      "type": "NOURISHMENT",
+      "evidence": "Usada em caldo e farinha; requer cozimento completo por enzimas irritantes.",
+      "constraints": [
+        "clean fiber cultivation",
+        "complete cooking"
+      ],
+      "story_yield": "Uma cozinha de campanha precisa escolher entre velocidade e segurança sanitária.",
+      "weight_kg": 0.52,
+      "description": "Usada em caldo e farinha; requer cozimento completo por enzimas irritantes."
+    },
+    {
+      "id": "RES-007",
+      "title": "Polinização luminosa",
+      "source": "CRI-006",
+      "type": "ECOSYSTEM_SERVICE",
+      "evidence": "Luzipólen transporta pólen entre flores noturnas e evita seres grandes.",
+      "constraints": [
+        "non-extractive stewardship",
+        "night habitat continuity"
+      ],
+      "story_yield": "A perda de um polinizador parece pequena até a colheita noturna desaparecer.",
+      "weight_kg": 0.35,
+      "description": "Luzipólen transporta pólen entre flores noturnas e evita seres grandes."
+    },
+    {
+      "id": "RES-008",
+      "title": "Reciclagem de umidade e matéria vegetal",
+      "source": "CRI-007",
+      "type": "ECOSYSTEM_SERVICE",
+      "evidence": "Fio-de-Orvalho recolhe umidade e acelera decomposição de folhas.",
+      "constraints": [
+        "leaf-litter continuity",
+        "fungal habitat protection"
+      ],
+      "story_yield": "Uma limpeza excessiva deixa um assentamento seco e sem saber por quê.",
+      "weight_kg": 0.35,
+      "description": "Fio-de-Orvalho recolhe umidade e acelera decomposição de folhas."
+    },
+    {
+      "id": "RES-009",
+      "title": "Toxina de Vespa-de-Vidro",
+      "source": "CRI-010",
+      "type": "BIOLOGICAL_HAZARD",
+      "evidence": "Ferrão causa paralisia temporária e dor; comportamento defensivo perto do ninho.",
+      "constraints": [
+        "no automatic harvesting",
+        "containment and medical response required"
+      ],
+      "story_yield": "Uma suposta colheita revela que alguém provocou deliberadamente um ninho.",
+      "weight_kg": 0.25,
+      "description": "Ferrão causa paralisia temporária e dor; comportamento defensivo perto do ninho."
+    },
+    {
+      "id": "RES-010",
+      "title": "Secreção de Besouro-Rubro",
+      "source": "CRI-011",
+      "type": "BIOLOGICAL_HAZARD",
+      "evidence": "Secreção defensiva irritante causa queimadura, febre e inflamação.",
+      "constraints": [
+        "no automatic harvesting",
+        "contact hazard"
+      ],
+      "story_yield": "Um acidente nos pântanos pode ser sabotagem, doença ou manuseio irresponsável.",
+      "weight_kg": 0.25,
+      "description": "Secreção defensiva irritante causa queimadura, febre e inflamação."
+    }
+  ],
+  "runtime_only_fields": [
+    "stock",
+    "price",
+    "rarity",
+    "vendor_inventory",
+    "yield",
+    "recipe",
+    "loot",
+    "numerical_nutrition"
+  ],
+  "prohibitions": [
+    "NO_INFINITE_EXTRACTION",
+    "NO_UNSOURCED_RECIPE",
+    "NO_CANONICAL_PRICE",
+    "NO_HAZARD_AS_DEFAULT_LOOT"
+  ],
+  "simulation_permissions": [
+    "production condition",
+    "contamination risk",
+    "transport need",
+    "local shortage",
+    "ecological recovery"
+  ],
+  "story_generators": [
+    "Um alimento é seguro em um bioma e perigoso depois de atravessar uma rota contaminada.",
+    "Um serviço ecológico invisível transforma a manutenção ambiental em conflito social.",
+    "Um risco biológico exige investigação em vez de caça por recompensa."
+  ]
+}

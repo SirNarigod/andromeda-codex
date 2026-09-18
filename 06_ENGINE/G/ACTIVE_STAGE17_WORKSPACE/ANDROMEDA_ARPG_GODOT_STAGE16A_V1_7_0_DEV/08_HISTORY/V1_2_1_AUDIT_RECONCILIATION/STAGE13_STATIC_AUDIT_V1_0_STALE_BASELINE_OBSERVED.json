@@ -1,0 +1,139 @@
+{
+  "record_id": "STAGE13-STATIC-AUDIT-V1.0",
+  "checks": 41,
+  "passed": 38,
+  "failed": 3,
+  "status": "FAIL",
+  "upstream_modules": [
+    {
+      "module": "living_runtime.py",
+      "stage13_sha256": "9a8000a160f6de4f3aa3cebc9409fa3723e203929d1ad9c0bff77fc9a19d75a8",
+      "baseline_sha256": "1b1dfb052bf679af8a7820805fda88590dd4b56bb41b58d8b1d46b8239eadf72",
+      "identical": false
+    },
+    {
+      "module": "consequence_engine.py",
+      "stage13_sha256": "6924d3d43e16a94b4318a7ad41bf4acb27f5069e78abdda8f2824148fd95d6ea",
+      "baseline_sha256": "6924d3d43e16a94b4318a7ad41bf4acb27f5069e78abdda8f2824148fd95d6ea",
+      "identical": true
+    },
+    {
+      "module": "agent_brain.py",
+      "stage13_sha256": "2fb42c08b16abcda52927c0cdc8c7daa28d69895c80f6c94fd2eb374c72e6b02",
+      "baseline_sha256": "2fb42c08b16abcda52927c0cdc8c7daa28d69895c80f6c94fd2eb374c72e6b02",
+      "identical": true
+    },
+    {
+      "module": "social_memory.py",
+      "stage13_sha256": "b290ad3f0f51edfa263e7595bf2646a2823250281649f5f6aa625eeb062996e2",
+      "baseline_sha256": "b290ad3f0f51edfa263e7595bf2646a2823250281649f5f6aa625eeb062996e2",
+      "identical": true
+    },
+    {
+      "module": "ecology_brain.py",
+      "stage13_sha256": "22caf44e94cf17d67caf1628d863ad0556de9844b0277cb0eb6ca516a9622a72",
+      "baseline_sha256": "22caf44e94cf17d67caf1628d863ad0556de9844b0277cb0eb6ca516a9622a72",
+      "identical": true
+    },
+    {
+      "module": "object_environment.py",
+      "stage13_sha256": "2a5720cd9583f46c87750e6016dcef67f3f7e3d9b3a47ab725df5e97dc10b170",
+      "baseline_sha256": "2a5720cd9583f46c87750e6016dcef67f3f7e3d9b3a47ab725df5e97dc10b170",
+      "identical": true
+    },
+    {
+      "module": "world_orchestrator.py",
+      "stage13_sha256": "869bee446b1e49a9d16a23a0d40e5813128e6b8448207b7f4fe14d776754259a",
+      "baseline_sha256": "1a403f78ea3615477d84ef525ff86ea15445c2698cd47da7d240899dc8d9a6b4",
+      "identical": false
+    },
+    {
+      "module": "world_systems.py",
+      "stage13_sha256": "9882b3aa52914c3f65e8216efdc4b5a8bef529f565fbbb57439c0854c007d2a1",
+      "baseline_sha256": "4cefb8dbead39063ec0088fd5d7a507926cb407b6b4f49c633b35108f162dd65",
+      "identical": false
+    },
+    {
+      "module": "long_horizon.py",
+      "stage13_sha256": "148fcce347e93c61c0cd4af2c4e64e64dadad665e709bbe42d97deba5cde74ee",
+      "baseline_sha256": "148fcce347e93c61c0cd4af2c4e64e64dadad665e709bbe42d97deba5cde74ee",
+      "identical": true
+    },
+    {
+      "module": "llm_gateway.py",
+      "stage13_sha256": "15dfe9ef9f7672e1d81bf3bf507a9d2fbfbaa36df7944a9976ef69f1f5ecd681",
+      "baseline_sha256": "15dfe9ef9f7672e1d81bf3bf507a9d2fbfbaa36df7944a9976ef69f1f5ecd681",
+      "identical": true
+    }
+  ],
+  "canonical_atlas_runtime": [
+    {
+      "path": "02_ATLAS/runtime/atlas-core.mjs",
+      "actual_sha256": "ae2e88fea5db45cecb03705421efdf3da4a7262fc2506ae5c97d8a229b3f3d84",
+      "baseline_sha256": "ae2e88fea5db45cecb03705421efdf3da4a7262fc2506ae5c97d8a229b3f3d84",
+      "match": true
+    },
+    {
+      "path": "02_ATLAS/runtime/app.js",
+      "actual_sha256": "83abc5381a156705ecefe89017a703bf50948752c2fe95d1c400e84bc25c6f93",
+      "baseline_sha256": "83abc5381a156705ecefe89017a703bf50948752c2fe95d1c400e84bc25c6f93",
+      "match": true
+    },
+    {
+      "path": "02_ATLAS/runtime/index.html",
+      "actual_sha256": "cc692caa15f63982e417281663bd7f67d306d6934ccd33165e26dab219a1564c",
+      "baseline_sha256": "cc692caa15f63982e417281663bd7f67d306d6934ccd33165e26dab219a1564c",
+      "match": true
+    },
+    {
+      "path": "02_ATLAS/runtime/styles.css",
+      "actual_sha256": "8769d7299b95c522c0581325faa26bca10651948937a6c578711cd7075dfa017",
+      "baseline_sha256": "8769d7299b95c522c0581325faa26bca10651948937a6c578711cd7075dfa017",
+      "match": true
+    },
+    {
+      "path": "02_ATLAS/runtime/data/atlas-data.json",
+      "actual_sha256": "cb91547e06027ca91890d1972dc3702bc9224d5edd52d2ae08ff32625184e10b",
+      "baseline_sha256": "cb91547e06027ca91890d1972dc3702bc9224d5edd52d2ae08ff32625184e10b",
+      "match": true
+    },
+    {
+      "path": "02_ATLAS/runtime/data/atlas-ui-config.json",
+      "actual_sha256": "e73cdc6fa25293d7226bb24670a192e54c5a309771f1e63cd6fb1ba79f20633c",
+      "baseline_sha256": "e73cdc6fa25293d7226bb24670a192e54c5a309771f1e63cd6fb1ba79f20633c",
+      "match": true
+    }
+  ],
+  "failures": [
+    {
+      "name": "upstream-byte-identical:living_runtime.py",
+      "status": "FAIL",
+      "detail": {
+        "module": "living_runtime.py",
+        "stage13_sha256": "9a8000a160f6de4f3aa3cebc9409fa3723e203929d1ad9c0bff77fc9a19d75a8",
+        "baseline_sha256": "1b1dfb052bf679af8a7820805fda88590dd4b56bb41b58d8b1d46b8239eadf72",
+        "identical": false
+      }
+    },
+    {
+      "name": "upstream-byte-identical:world_orchestrator.py",
+      "status": "FAIL",
+      "detail": {
+        "module": "world_orchestrator.py",
+        "stage13_sha256": "869bee446b1e49a9d16a23a0d40e5813128e6b8448207b7f4fe14d776754259a",
+        "baseline_sha256": "1a403f78ea3615477d84ef525ff86ea15445c2698cd47da7d240899dc8d9a6b4",
+        "identical": false
+      }
+    },
+    {
+      "name": "upstream-byte-identical:world_systems.py",
+      "status": "FAIL",
+      "detail": {
+        "module": "world_systems.py",
+        "stage13_sha256": "9882b3aa52914c3f65e8216efdc4b5a8bef529f565fbbb57439c0854c007d2a1",
+        "baseline_sha256": "4cefb8dbead39063ec0088fd5d7a507926cb407b6b4f49c633b35108f162dd65",
+        "identical": false
+      }
+    }
+  ]
+}

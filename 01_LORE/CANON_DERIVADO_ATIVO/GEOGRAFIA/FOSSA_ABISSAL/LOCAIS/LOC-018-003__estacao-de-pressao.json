@@ -1,0 +1,27 @@
+{
+  "loc_id": "LOC-018-003",
+  "record_id": "LOC-018-003",
+  "name": "Estação de Pressão",
+  "parent_subregion": "SUB-018-003",
+  "function": "Instalação de manutenção e pesquisa das câmaras de pressão.",
+  "notable_link": "TER-018 Fossa Abissal (fase 51, território novo)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "settlement_tier": "COMPLEXO",
+  "history": "Toda a tecnologia de pressurização que mantém a Cúpula da Trincheira habitável passa, em algum momento, por testes e reparos nesta estação — fundada como instalação puramente técnica, sem população residente fixa nos primeiros anos, até que engenheiros começaram a preferir morar perto do próprio trabalho em vez de fazer o deslocamento diário até a Cúpula.",
+  "sensory": "Câmaras de teste de vidro-runa espesso ficam alinhadas em fileiras, cada uma capaz de simular níveis de pressão além do necessário pra qualquer operação normal, usadas pra certificar equipamento antes de ir pra uso real. O som é de válvulas liberando pressão em intervalos regulares, um assobio agudo seguido de silêncio, repetido tantas vezes ao dia que os técnicos mais antigos conseguem dizer que horas são só pela contagem de assobios desde o início do turno.",
+  "figures": [
+    {
+      "role": "Chefe de Certificação",
+      "name": "Orla Válvulafirme",
+      "note": "Recusa-se a certificar qualquer equipamento que não passe pelo teste completo, mesmo sob pressão de prazo da Cúpula — já teve embates diretos com Dessa Voll sobre atrasos que Orla considera necessários e Dessa considera excessivamente cautelosos."
+    },
+    {
+      "role": "Técnico júnior",
+      "name": "Bevin Testerrápido",
+      "note": "Acredita ter encontrado um atalho seguro no protocolo de teste que reduziria o tempo de certificação pela metade — Orla não confia no atalho dele, mas não conseguiu ainda provar formalmente que está errado."
+    }
+  ],
+  "hook": "A Cúpula está pressionando por certificação urgente de um novo lote de válvulas pro quarto anel, e Bevin quer aplicar o próprio atalho pela primeira vez num equipamento real, não só em teste — Orla precisa decidir se autoriza sob pressão de prazo ou se segura o processo e enfrenta a reação da Cúpula.",
+  "detail": "Toda peça certificada recebe um selo de vidro-runa com a assinatura pessoal de quem testou — se algo falha depois de instalado, a Estação consegue rastrear exatamente quem certificou, um sistema que torna cada técnico pessoalmente responsável por décadas de trabalho, sem exceção.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION"]
+}

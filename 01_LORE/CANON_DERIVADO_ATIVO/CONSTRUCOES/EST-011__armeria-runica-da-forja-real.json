@@ -1,0 +1,41 @@
+{
+  "est_id": "EST-011",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Armeria Rúnica da Forja Real",
+  "building_type": "LOJA",
+  "parent_locality": "LOC-002-001",
+  "parent_subregion": "SUB-002-001",
+  "parent_political_unit": "TER-002",
+  "function": "Balcão de venda licenciado de armas R1-R3 produzidas na Forja Real — distinto do galpão de produção (EST-003).",
+  "economic_role": {
+    "is_vendor": true,
+    "sells": [
+      "armas R1-R3 (ART-004)",
+      "cargas e manutenção rúnica"
+    ],
+    "produces": [],
+    "regulation_factor": 0.95
+  },
+  "capacity": {
+    "jobs": 6,
+    "residents": 0
+  },
+  "professions_linked": [
+    "armeiro",
+    "vendedor licenciado"
+  ],
+  "notable_link": "ART-015 Armerias rúnicas; EST-003 Forja Real de Kharveth",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION",
+    "NO_INVENTED_RUNE_EFFECT"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "MADEIRA_E_ALVENARIA",
+    "flammability": "ALTA",
+    "recovery_days": 7
+  }
+}

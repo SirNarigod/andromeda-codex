@@ -1,0 +1,22 @@
+{
+  "record_id": "VARGA-CONTRATO-DE-TRAVESSIA-V1",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "LOCAL_AUDITABLE_QUEST_TEMPLATE",
+  "locality": "SUB-011-001",
+  "encounter_ref": "ENCOUNTER-010",
+  "premise": "A Ninho de Vespa-de-Vidro blocks the Passagem das Estacas. Signs suggest that its disturbance may have been deliberate, but the evidence is incomplete.",
+  "phases": [
+    {"id":"WELCOME","objective":"Accept conditional shelter and receive the route briefing.","speaker":"VARGA-NPC-001"},
+    {"id":"EVIDENCE","objective":"Inspect route markers, nest disturbance and traveler testimony.","speaker":"VARGA-NPC-002"},
+    {"id":"DECISION","objective":"Choose a local response with documented cost.","speaker":"VARGA-NPC-003"},
+    {"id":"REPORT","objective":"Return to the Marco de Retorno and submit a factual report.","speaker":"VARGA-NPC-002"}
+  ],
+  "resolutions": [
+    {"id":"AVOID","title":"Desvio Luminal","effect":"Travelers use the alternate path; the nest remains undisturbed and evidence stays incomplete.","local_consequence":"Safety rises for the immediate group while route pressure remains."},
+    {"id":"CONTAIN","title":"Contenção do Barranco","effect":"The kit creates a controlled passage without harvesting or destroying the nest.","local_consequence":"The route reopens conditionally and the evidence record improves."},
+    {"id":"DEFEND_AND_OPEN","title":"Abertura Defensiva","effect":"The player creates an escape window during defensive swarm pressure; no fauna kill or loot is required.","local_consequence":"The passage opens briefly, but medical risk and suspicion increase."}
+  ],
+  "evidence_rule":"Evidence may support a local report and contextual reputation only. It cannot identify a culprit as canonical truth without an authorial gate.",
+  "rewards":"runtime-only contextual reputation, temporary access and practical progression; no canonical item, title, territory or fact.",
+  "prohibitions": ["NO_OFFLINE_RESOLUTION", "NO_CANON_PROMOTION", "NO_NAMED_R2_APPEARANCE", "NO_AUTHORIAL_DEATH", "NO_ROOT_ESCALATION", "NO_VESPA_LOOT_FARM"]
+}

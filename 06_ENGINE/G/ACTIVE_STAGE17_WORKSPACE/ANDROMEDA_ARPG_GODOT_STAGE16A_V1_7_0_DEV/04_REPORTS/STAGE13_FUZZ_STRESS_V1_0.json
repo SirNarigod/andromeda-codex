@@ -1,0 +1,16 @@
+{
+  "record_id": "STAGE13-FUZZ-STRESS-V1.0",
+  "status": "PASS",
+  "reader_threads": 8,
+  "player_projections": 120,
+  "admin_projections": 120,
+  "writer_route_economy_cycles": 60,
+  "atomic_snapshot_publishes": 17,
+  "threads_alive": 0,
+  "errors": [],
+  "sqlite_snapshot_integrity": "ok",
+  "foreign_key_failures": 0,
+  "readonly_probe": "PASS_READ_ONLY",
+  "runtime_integrity": "PASS",
+  "final_event_count": 120
+}

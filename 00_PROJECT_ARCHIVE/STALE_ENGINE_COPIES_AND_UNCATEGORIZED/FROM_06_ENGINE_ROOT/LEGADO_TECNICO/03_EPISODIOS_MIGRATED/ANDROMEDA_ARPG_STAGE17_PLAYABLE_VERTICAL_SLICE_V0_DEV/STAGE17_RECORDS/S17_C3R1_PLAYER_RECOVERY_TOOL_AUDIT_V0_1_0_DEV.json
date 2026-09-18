@@ -1,0 +1,132 @@
+{
+  "record_identity": "S17_C3R1_PLAYER_RECOVERY_TOOL_AUDIT_V0_1_0_DEV",
+  "created_at": "2026-08-29T09:20:00Z",
+  "stage": "STAGE17",
+  "process": "ETAPA_31_S17_C3R1_PLAYER_RECOVERY_TOOL_HARDENING",
+  "apply_executed_this_round": false,
+  "original_script": {
+    "path": "session scratchpad: .../scratchpad/repair_player_position.py",
+    "sha256": "b6f29a1cc08dbf221eaadd85700053e5ffe61e682a9558ca98ea1e22dd809d33",
+    "size_bytes": 4149,
+    "status": "PRESERVED_UNTOUCHED"
+  },
+  "hardened_script": {
+    "path": "STAGE17_TOOLS/recovery/repair_stage17_player_position.py",
+    "sha256": "a33b0b7a50794ab58fa382becb52ffcc6eef52f0a718b09096bc44e09b039854",
+    "size_bytes": 21460
+  },
+  "corrections_applied": {
+    "destination": {
+      "before": "hardcoded HOME_ISO_X/HOME_ISO_Y float literals",
+      "after": "read from canonical_manifest.world_binding.anchor_position at STAGE17_CONTENT/RESOURCE_PLACEMENT/CANONICAL/S17_RESOURCE_METRIC_PLACEMENTS_R0001.json, validated (schema_version, placement_revision, placements non-empty, anchor_kind in accepted contract, iso_x_m/iso_y_m/altitude_m present and finite)",
+      "preferred_over": "TREE resource placement position (individual Resource is not a spawn/recovery anchor when a formal world_binding.anchor_position already exists)"
+    },
+    "world_guard": {
+      "before": "hardcoded WORLD_INSTANCE_ID passed straight into resume_world()",
+      "after": "s16b_bootstrap['world_instance_id'] read via a mode=ro&immutable=1 sqlite3 connection, compared against manifest.world_binding.world_instance_id, abort STAGE17_RECOVERY_WORLD_MISMATCH on divergence, only then resume_world(stored_id)"
+    },
+    "player": {
+      "before": "hardcoded PLAYER_REF literal",
+      "after": "profile_ref read from s16b_bootstrap (via engine.runtime.conn, no second connection) -> engine.arpg(world_id).profile(profile_ref) -> avatar_ref, validated non-empty and validated against movement.state(avatar_ref) existing, mirroring Stage16BAuthorityAdapter._ensure_player_ref() without a private/adapter call"
+    },
+    "finitude": {
+      "before": "no finite check before sync_to_geodetic",
+      "after": "math.isfinite required for iso_x_m/iso_y_m/altitude_m during manifest validation; missing altitude is ANCHOR_INVALID, never silently defaulted to 0.0"
+    }
+  },
+  "dry_run_side_effect_finding": {
+    "first_attempt_result": "IntegrityError: gathering node drift:GTH-1D268772796B25C4CC6B (raised from inside resume_world -> _attach_gathering_arpg -> ARPGGatheringWorkCore._insert_node)",
+    "main_file_sha256_before": "6748cb7b81dd5a025446afdc8cee46a6ce79dbb25cb1021536221deb7776919b",
+    "main_file_sha256_after_crash": "c84d1bdaaf6de4cf3e47c3f12c4fce0e217090ebe1d15a759bc09f89b68921c6",
+    "main_file_size_before": 14905344,
+    "main_file_size_after_crash": 15060992,
+    "wal_shm_before": "present (5071752 / 32768 bytes)",
+    "wal_shm_after_crash": "absent (checkpointed away)",
+    "conclusion": "opening the full engine via resume_world() is NOT side-effect free even when the call raises; classified DRY_RUN_RUNTIME_OPEN_HAS_SIDE_EFFECTS per S17-C3R1 Section 34",
+    "corrective_action": "dry-run mode redesigned to never construct the engine; only reads the manifest file and a mode=ro&immutable=1 sqlite3 connection",
+    "second_test_result": {
+      "main_file_sha256_before": "c84d1bdaaf6de4cf3e47c3f12c4fce0e217090ebe1d15a759bc09f89b68921c6",
+      "main_file_sha256_after": "c84d1bdaaf6de4cf3e47c3f12c4fce0e217090ebe1d15a759bc09f89b68921c6",
+      "identical": true,
+      "wal_shm_created": false,
+      "note": "a plain mode=ro connection (without immutable=1) to a WAL-mode DB was separately observed to create empty -wal/-shm files on open; immutable=1 eliminates this entirely, confirmed by direct test"
+    },
+    "proof_status": "ZERO_MUTATION_PROVEN_BY_HASH_COMPARISON"
+  },
+  "new_unrelated_finding": {
+    "id": "S17_GATHERING_NODE_DEFINITION_DRIFT",
+    "entity": "GTH-1D268772796B25C4CC6B",
+    "source": "ARPGGatheringWorkCore._insert_node, raised as living_runtime.IntegrityError during resume_world()",
+    "impact": "blocks any resume_world() call against the current world DB, including any future --apply of this recovery tool",
+    "investigated_or_fixed_this_round": false,
+    "reason": "out of scope for S17-C3R1 (tool + records only)",
+    "must_be_resolved_before": "any --apply attempt of the player position recovery"
+  },
+  "manifest_validation": {
+    "path": "STAGE17_CONTENT/RESOURCE_PLACEMENT/CANONICAL/S17_RESOURCE_METRIC_PLACEMENTS_R0001.json",
+    "manifest_sha256_observed": "f0c79305c4fe6adad277b4a026311124c5ce865db399e327750e55c2d660ec92",
+    "official_expected_hash_on_record": false,
+    "note": "no separate provenance/decision record was found declaring an official expected manifest hash; the observed hash is registered as evidence, no new contract invented",
+    "world_binding_world_instance_id": "rt:world:bd0f78f5-7018-4cc6-8f47-34f8f2875e47",
+    "stored_bootstrap_world_instance_id": "rt:world:bd0f78f5-7018-4cc6-8f47-34f8f2875e47",
+    "world_match": true,
+    "anchor_kind": "SERVER_AUTHORITATIVE_PLAYER_MOTION_SNAPSHOT_DEV_AUTHORING_ANCHOR",
+    "anchor_position": {"iso_x_m": 137108.156775035, "iso_y_m": -1336956.95467694, "altitude_m": 0.0},
+    "anchor_player_ref": "PLY-455FEDE6124F42819BDA63A8E82355F4",
+    "zone_ref": "ZONE-STA-05-BLK-04",
+    "block_ref": "STA-05-BLK-04"
+  },
+  "zone_block_validation_availability": "AVAILABLE_VIA_country.block(block_ref)_LOOKUP",
+  "anchor_player_provenance_policy": "world_binding.anchor_player_ref records whose motion snapshot the manifest anchor was baked from (authoring provenance); it is not an ownership/identity requirement on later recovery use -- resource_metric_placement.py's own world-mismatch guard only ever compares world_instance_id, never anchor_player_ref. A mismatch is reported as PROVENANCE_MISMATCH_NON_FATAL, not aborted.",
+  "idempotency": {
+    "position_write": "idempotent by construction (same literal anchor written every call)",
+    "ownership_transfer": "idempotent by construction (streaming.transfer to the same correct chunk twice is a value no-op)",
+    "already_at_anchor_short_circuit": "implemented: distance_from_anchor_m < 0.01 and chunk already matching returns ALREADY_AT_RECOVERY_ANCHOR with zero calls to sync_to_geodetic/transfer"
+  },
+  "mutation_sequence_matches_authorized_order": true,
+  "transfer_guard": "streaming.transfer is only called inside the loop over move.verify() failures, only for a failure literally prefixed MOTION_OWNER_DIVERGENCE:<resolved_avatar_ref>; any other entity's divergence is left untouched and surfaced in other_entity_divergences_reported_not_fixed",
+  "verify_after_policy": "if the resolved avatar_ref is still divergent after transfer, RecoveryError VERIFY_FAILED aborts; the tool never loops attempting further fixes",
+  "sql_dml_status": "NONE -- confirmed by static test (STAGE17_TOOLS/tests/test_repair_stage17_player_position.py::test_15_no_sql_dml) scanning only string literals passed to .execute(...)",
+  "protected_mutation_status": "NONE -- tool never imports resource_metric_placement.py or andromeda_authority_adapter.py; confirmed by static test test_16_no_protected_module_reference; C1B_C1_C2_MUTATION_SURFACE = NONE by absence of any reference to that subsystem's tables or classes",
+  "tests": {
+    "file": "STAGE17_TOOLS/tests/test_repair_stage17_player_position.py",
+    "count": 18,
+    "passed": 18,
+    "failed": 0,
+    "touches_real_db": false
+  },
+  "files_created": [
+    "STAGE17_TOOLS/recovery/repair_stage17_player_position.py",
+    "STAGE17_TOOLS/tests/test_repair_stage17_player_position.py",
+    "STAGE17_RECORDS/S17_C3R1_PLAYER_RECOVERY_TOOL_HARDENING_V0_1_0_DEV.md",
+    "STAGE17_RECORDS/S17_C3R1_PLAYER_RECOVERY_TOOL_AUDIT_V0_1_0_DEV.json"
+  ],
+  "files_modified": [],
+  "preserved_status_flags": {
+    "S17_G19_COMMON_TARGET_UNBOUNDED_SELECTION_GAP": "CONFIRMED_NOT_FIXED",
+    "C3A_null_variant_fix": "VALID_PRESERVED",
+    "GroundLoot_current": "51/53",
+    "GROUND_LOOT_REACHABLE_AUTO_SETTLE_LIMITATION": "OPEN_NOT_TOUCHED"
+  },
+  "stage16b_integrity": {
+    "status": "CLOSED_READ_ONLY",
+    "checkpoint_sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc",
+    "backup_sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc"
+  },
+  "recommended_apply_procedure": [
+    "1. Resolve S17_GATHERING_NODE_DEFINITION_DRIFT for GTH-1D268772796B25C4CC6B first -- resume_world() cannot succeed while it exists, so --apply cannot succeed either.",
+    "2. Take a fresh backup of STAGE17_RUNTIME_STATE/authority/stage17_world.sqlite (backend OFF) immediately before --apply -- the existing backup predates both the earlier ownership repair and the ~2200km drift.",
+    "3. Run --apply once with backend OFF and no other Godot/backend process touching the DB.",
+    "4. Inspect the JSON result: validation_status, mutation_applied, verify_after, final_status.",
+    "5. Start the backend and confirm /health + /snapshot report the corrected position.",
+    "6. Run B1, B2, C1, C2, Combat smokes before considering G19 again.",
+    "7. Address S17_G19_COMMON_TARGET_UNBOUNDED_SELECTION_GAP before any full G19 re-run."
+  ],
+  "anomalies": [
+    "First dry-run design proved to have a real, measured file-level side effect despite being intended as read-only -- corrected within this round.",
+    "Discovered a second, unrelated, real data-integrity gap (gathering node definition hash drift) that independently blocks resume_world() for the current world."
+  ],
+  "final_hardening_status": "PASS",
+  "final_classification": "SAFE_TO_EXECUTE_WITH_EXPLICIT_AUTHOR_APPROVAL",
+  "final_classification_caveat": "apply will currently fail before reaching any player-position logic because of the unrelated S17_GATHERING_NODE_DEFINITION_DRIFT blocking resume_world(); the tool itself is ready, the world is not yet in a resumable state"
+}

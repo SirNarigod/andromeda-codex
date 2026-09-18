@@ -1,0 +1,34 @@
+{
+  "est_id": "EST-010",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Guarda da Fortaleza",
+  "building_type": "MILITAR",
+  "parent_locality": "LOC-013-001",
+  "parent_subregion": "SUB-013-001",
+  "parent_political_unit": "TER-013",
+  "function": "Posto de guarda fortificado que controla o acesso ao domínio pessoal de Serverus Vaelkor.",
+  "economic_role": {
+    "is_vendor": false,
+    "sells": [],
+    "produces": [],
+    "regulation_factor": 1.0
+  },
+  "capacity": {
+    "jobs": 12,
+    "residents": 12
+  },
+  "professions_linked": [],
+  "notable_link": "Serverus Vaelkor (autoridade máxima); classe Soldados",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "PEDRA_REFORCADA",
+    "flammability": "BAIXA",
+    "recovery_days": 7
+  }
+}

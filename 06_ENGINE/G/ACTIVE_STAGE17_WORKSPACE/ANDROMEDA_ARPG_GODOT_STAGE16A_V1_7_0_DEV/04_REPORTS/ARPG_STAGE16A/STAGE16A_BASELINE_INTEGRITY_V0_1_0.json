@@ -1,0 +1,18 @@
+{
+  "record_id": "ARPG-STAGE16A-BASELINE-INTEGRITY-V0.1.0",
+  "baseline": "STAGE15_V1.6.0_SEALED_COPY",
+  "baseline_files_checked": 655,
+  "mutated_baseline_files": [],
+  "missing_baseline_files": [],
+  "new_stage16a_files": [
+    "01_RUNTIME/arpg_ground_loot_core.py",
+    "01_RUNTIME/arpg_interaction_intent_core.py",
+    "04_REPORTS/ARPG_STAGE16A/STAGE16A_GROUND_LOOT_TEST_V0_1_0.txt",
+    "04_REPORTS/ARPG_STAGE16A/STAGE16A_INTERACTION_TEST_V0_1_0.txt",
+    "03_TESTS/STAGE16A/test_stage16a_interaction_intent.py",
+    "03_TESTS/STAGE16A/test_stage16a_ground_loot.py",
+    "10_ARPG/STAGE16A/ARPG_STAGE16A_PRE_GODOT_CONTRACT_V0_1_0.json"
+  ],
+  "transient_files": [],
+  "status": "PASS"
+}

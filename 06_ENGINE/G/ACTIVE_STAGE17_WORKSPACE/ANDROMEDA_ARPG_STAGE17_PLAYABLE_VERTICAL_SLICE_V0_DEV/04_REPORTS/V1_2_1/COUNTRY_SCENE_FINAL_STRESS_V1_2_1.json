@@ -1,0 +1,26 @@
+{
+  "record_id": "COUNTRY-SCENE-FINAL-STRESS-V1.2.1",
+  "status": "PASS",
+  "seeds_target": 300,
+  "totals": {
+    "worlds": 300,
+    "blocks": 4485,
+    "roots": 771,
+    "dungeons": 3014,
+    "objects": 103819,
+    "npcs": 183426,
+    "shops": 42421
+  },
+  "mins": {
+    "blocks": 6,
+    "dungeons": 2,
+    "objects": 148
+  },
+  "maxs": {
+    "blocks": 25,
+    "dungeons": 20,
+    "objects": 568
+  },
+  "failures": [],
+  "seconds": 7.845
+}

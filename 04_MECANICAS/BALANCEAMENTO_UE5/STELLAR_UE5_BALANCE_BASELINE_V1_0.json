@@ -1,0 +1,31 @@
+{
+  "record_id": "STELLAR-UE5-BALANCE-BASELINE-V1.0",
+  "version": "V1.0",
+  "authority": "TECHNICAL_TUNING_NOT_CANON",
+  "status": "UE5_IMPORT_READY_PENDING_PROJECT",
+  "design_pace": "TACTICAL_HYBRID_ARPG",
+  "source_policy": "Original UE5 baseline. Godot values are preserved as technical evidence but were not copied.",
+  "player_baseline": {
+    "health": 120,
+    "stamina": 100,
+    "guard": 60,
+    "universal_mana": false,
+    "zero_health_state": "RECOVERABLE_INCAPACITY_BY_DEFAULT",
+    "literal_death": "REQUIRES_LIFE_DEATH_REBIRTH_LAW_AND_NARRATIVE_CONSEQUENCE"
+  },
+  "reference_action": {"id":"BASE_PHYSICAL_ACTION","damage":20,"damage_type":"PHYSICAL","purpose":"TTK reference only; weapons and skills apply separate versioned modifiers."},
+  "encounter_tiers": [
+    {"id":"COMUM","health":100,"damage":12,"attack_interval_s":1.8,"speed_m_s":3.2,"target_hits_from_reference_action":5},
+    {"id":"VETERANO","health":180,"damage":18,"attack_interval_s":1.65,"speed_m_s":3.6,"target_hits_from_reference_action":9},
+    {"id":"ELITE","health":300,"damage":28,"attack_interval_s":1.5,"speed_m_s":4.0,"target_hits_from_reference_action":15},
+    {"id":"ALFA","health":480,"damage":40,"attack_interval_s":1.35,"speed_m_s":4.4,"target_hits_from_reference_action":24}
+  ],
+  "defense_limits": {"resistance_min_pct":-40,"resistance_max_pct":70,"armor_mitigation_max_pct":70,"critical_chance_max_pct":45},
+  "healing_baseline": {"max_health_restore_pct":30,"technical_cooldown_s":18,"rule":"Healing is a technical action; item identity, availability, quantity and price are not canon."},
+  "damage_types":["PHYSICAL","FIRE","COLD","LIGHTNING","TOXIC","ARCANE"],
+  "root_policy":{"source":"COR-001","numeric_profile":"FORBIDDEN","boss_profile":"AUTHORIAL_GATE_REQUIRED","reward_table":"FORBIDDEN"},
+  "subregion_mapping_rule":"A subregion may define encounter contexts and permitted tiers, but no fixed spawn count, coordinates or canonical difficulty rating.",
+  "runtime_only_fields":["health","damage","stamina","guard","speed","cooldown","resistance","armor","critical","ttk","spawn_rate","loot","xp","price"],
+  "validation_targets":["common=5 reference hits","veteran=9 reference hits","elite=15 reference hits","alpha=24 reference hits","zero-health defaults to incapacity","root has no numeric profile"],
+  "prohibitions":["NO_CANONICAL_POWER_LEVEL","NO_NUMERIC_ROOT_BOSS","NO_LOOT_CANON_PROMOTION","NO_FIXED_PLAYER_CLASS","NO_RUNTIME_CANON_WRITE"]
+}

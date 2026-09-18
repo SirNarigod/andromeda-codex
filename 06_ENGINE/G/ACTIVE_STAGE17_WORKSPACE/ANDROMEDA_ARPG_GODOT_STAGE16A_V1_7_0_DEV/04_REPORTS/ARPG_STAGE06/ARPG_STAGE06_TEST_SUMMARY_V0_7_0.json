@@ -1,0 +1,146 @@
+{
+  "record_id": "ARPG-STAGE06-TEST-SUMMARY-V0.7.0",
+  "stage": "06/20",
+  "status": "PASS",
+  "stage06": {
+    "functional_unit": {
+      "checks": 16,
+      "passed": 16,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "persistence_unit": {
+      "checks": 1,
+      "passed": 1,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "validation": {
+      "checks": 33,
+      "passed": 33,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "stress": {
+      "checks": 33,
+      "passed": 33,
+      "failed": 0,
+      "status": "PASS",
+      "profiles": 2,
+      "successful_uses": 12,
+      "idempotent_replays": 12
+    }
+  },
+  "regression": {
+    "stage06_functional_unit": {
+      "checks": 16,
+      "passed": 16,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "stage06_persistence_unit": {
+      "checks": 1,
+      "passed": 1,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "stage06_validation": {
+      "checks": 33,
+      "passed": 33,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "stage06_stress": {
+      "checks": 33,
+      "passed": 33,
+      "failed": 0,
+      "status": "PASS",
+      "profiles": 2,
+      "successful_uses": 12,
+      "idempotent_replays": 12
+    },
+    "stage05": {
+      "unit": 22,
+      "validation": 68,
+      "stress": 62,
+      "status": "PASS"
+    },
+    "stage04": {
+      "unit": 16,
+      "validation": 53,
+      "stress": 24,
+      "status": "PASS"
+    },
+    "stage03": {
+      "unit": 14,
+      "validation": 67,
+      "stress": 17,
+      "status": "PASS"
+    },
+    "stage02": {
+      "unit": 11,
+      "validation": 51,
+      "stress": 15,
+      "status": "PASS"
+    },
+    "stage01": {
+      "unit": 12,
+      "validation": 58,
+      "stress": 35,
+      "status": "PASS"
+    },
+    "stage00": {
+      "validation": 51,
+      "stress_worlds": 20,
+      "determinism_pairs": 10,
+      "status": "PASS"
+    },
+    "country_v15": {
+      "checks": 24,
+      "passed": 24,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "master": {
+      "suites": 29,
+      "checks": 393,
+      "passed": 393,
+      "failed": 0,
+      "status": "PASS"
+    }
+  },
+  "anomalies": [
+    {
+      "id": "S06-C01",
+      "result": "FIXED",
+      "note": "Test advanced less time than skill cooldown; harness corrected, runtime unchanged."
+    },
+    {
+      "id": "S06-C02",
+      "result": "FIXED",
+      "note": "Stress repetitions reduced without removing invariants."
+    },
+    {
+      "id": "S06-C03",
+      "result": "FIXED",
+      "note": "Restore DB close moved after profile verification loop."
+    },
+    {
+      "id": "S06-C04",
+      "result": "FIXED",
+      "note": "Legacy DEFERRED_STAGE07 marker preserved when SkillCore is absent."
+    },
+    {
+      "id": "S06-C05",
+      "result": "FIXED",
+      "note": "Transient bytecode removed and disabled for final runs."
+    },
+    {
+      "id": "S06-C06",
+      "result": "FIXED",
+      "note": "Slow chained runners executed independently for conclusive results."
+    }
+  ],
+  "open_corrections": 0,
+  "generated_at": "2026-08-18T17:12:30.966775+00:00"
+}

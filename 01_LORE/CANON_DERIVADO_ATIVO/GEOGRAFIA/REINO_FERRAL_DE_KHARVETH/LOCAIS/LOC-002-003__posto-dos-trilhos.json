@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-002-003",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Posto dos Trilhos",
+  "parent_subregion": "SUB-002-003",
+  "parent_political_unit": "TER-002",
+  "function": "Posto de segurança e triagem de carga ao longo dos Trilhos do Minério.",
+  "notable_link": "Trilhos do Minério (SUB-002-003)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-002-003",
+  "settlement_tier": "POSTO",
+  "history": "O Posto dos Trilhos começou como abrigo de trabalhadores e virou ponto de troca entre maquinistas, contrabandistas e famílias que seguem o ferro para escapar de dívidas.",
+  "sensory": "Dormem-se noites inteiras sob o estalo dos trilhos; lanternas vermelhas deixam a fuligem com aparência de sangue.",
+  "hook": "Um trem vazio passa todas as madrugadas, embora não exista em nenhum horário.",
+  "secondary_hook": "Seguir o trem pode revelar quem está desviando trabalhadores.",
+  "detail": "Mensagens são pagas por distância, não por peso.",
+  "figures": [
+    {
+      "role": "Ivo Duplo-Sino",
+      "name": "Ivo Duplo-Sino",
+      "note": "vigia que ouve locomotivas antes de vê-las"
+    },
+    {
+      "role": "Nala Ferrolho",
+      "name": "Nala Ferrolho",
+      "note": "mensageira que transporta cartas escondidas em carvão"
+    }
+  ]
+}

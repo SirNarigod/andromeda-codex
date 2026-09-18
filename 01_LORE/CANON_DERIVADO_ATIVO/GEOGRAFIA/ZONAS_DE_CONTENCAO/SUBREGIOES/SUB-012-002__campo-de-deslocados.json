@@ -1,0 +1,43 @@
+{
+  "record_id": "SUB-012-002",
+  "record_kind": "DERIVED_SUBREGION_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Campo de Deslocados",
+  "parent_political_unit": "TER-012",
+  "provenance": {
+    "approval": "GAMEPLAY_DERIVED_DEV_SOURCE",
+    "r2_anchors": [
+      "TER-012",
+      "CUL-012"
+    ],
+    "compatibility": "Camada administrativa e narrativa local; não cria fronteira, cidade, soberania ou nova autoridade."
+  },
+  "function": "Acolhimento temporário de pessoas deslocadas por incidentes em outros territórios.",
+  "locality_references": [
+    "LOC-012-002 Acampamento de Acolhimento"
+  ],
+  "permitted_catalog_links": {
+    "npc_roles": [],
+    "professions": [],
+    "encounters": [],
+    "resources": []
+  },
+  "local_conflicts": [
+    "capacidade limitada de acolhimento versus fluxo contínuo de deslocados"
+  ],
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_AUTOMATIC_KENUA_SCENE",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_FIXED_BORDER_COORDINATE"
+  ],
+  "story_generators": [
+    "Uma nova onda de deslocados chega ao campo já sem capacidade, forçando racionamento."
+  ],
+  "root_corruption": {
+    "status": "CORROMPIDA",
+    "intensity": "MEDIA",
+    "since_note": "Aplicado pelo portao autoral fase 57 (STELLAR_ROOT_CORRUPTION_GATE_DEV_V1_0.json) - fato do mundo em 842 EC, fase Alimentacao Silenciosa->Corrupcao da Raiz Profunda (COR-001)."
+  }
+}

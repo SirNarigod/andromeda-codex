@@ -1,0 +1,66 @@
+{
+  "record_id": "FAC-005",
+  "record_kind": "R2_CANONICAL_ENTRY_MIRROR",
+  "authority": "CANON_R2_CONFIRMADO",
+  "canonical_home": "01_LORE/CANON_R2/SOCIEDADES/FACCOES/FAC-005__circulo-arcano-botanico.json",
+  "source": {
+    "archive_sha256": "257e456a5d0396310ec2355b3dfc0f11f4e0a5264cf6e764591c8760f5070cb0",
+    "lineage": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json",
+    "document_sha256": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726"
+  },
+  "entry": {
+    "code": "FAC-005",
+    "slug": "circulo-arcano-botanico",
+    "title": "Círculo Arcano-Botânico da Flor Fóssil",
+    "subtitle": "Grupo de pesquisa e magia",
+    "category": "FAC",
+    "secondaryCategories": [],
+    "canon": "Cânone consolidado",
+    "spoiler": 2,
+    "sealed": true,
+    "image": null,
+    "imageStatus": null,
+    "summary": "Núcleo multidisciplinar ligado às Árvores Anciãs que reuniu botânicos, curadores, magos e especialistas em contenção para estudar a flor fóssil.",
+    "facts": {
+      "Natureza": "Grupo de pesquisa e magia",
+      "Membro conhecido": "Aelyra Voss",
+      "Pesquisador-mor": "Ilyan Morveth",
+      "Fiscal visitante": "Serlis Aftermoon",
+      "Status": "Desativado e sob sigilo após o Caso Aelyra"
+    },
+    "sections": [
+      {
+        "heading": "Objetivo",
+        "body": "Compreender a origem, a compatibilidade e os riscos da flor sem permitir disseminação. Divergências internas sobre novos testes contribuíram para a ruptura."
+      }
+    ],
+    "relations": [
+      {
+        "slug": "aelyra-voss",
+        "label": "Pesquisadora e maga"
+      },
+      {
+        "slug": "ilyan-morveth",
+        "label": "Pesquisador-mor"
+      },
+      {
+        "slug": "serlis-aftermoon",
+        "label": "Fiscal visitante"
+      },
+      {
+        "slug": "arvores-ancias",
+        "label": "Instituição superior"
+      }
+    ],
+    "keywords": [
+      "pesquisa",
+      "magia",
+      "flor fóssil",
+      "Aelyra",
+      "Serlis"
+    ],
+    "sources": [
+      "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+    ]
+  }
+}

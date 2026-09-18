@@ -1,0 +1,213 @@
+{
+  "record_id": "ANDROMEDA-STAGE16B-G16B-18-26-RETENTION-CLOTHES-CLOSURE-V0.8.8",
+  "captured_at": "2026-08-25T15:40:00-03:00",
+  "supersedes": "AUTHORITY_G16B_24_25_WATER_CLOSURE_V0_8_7.json",
+  "gates": ["G16B-18", "G16B-26"],
+  "status": "PASS",
+  "previous_status": {"G16B-18": "PARTIAL_EVIDENCE", "G16B-26": "PARTIAL_EVIDENCE"},
+
+  "gate_g16b_18": {
+    "requirement": "Death/respawn retention preserves XP, equipped weapon slots, equipped armor, equipped clothes, protected/quest items, and the single dropped-Bag container's ordinary contents, all verified server-authoritative and observed live from Godot.",
+    "status": "PASS",
+    "previous_blocker": "CLOTHES_UNREACHABLE_IN_CURRENT_REAL_CATALOG -> superseded mid-arc by CLOTHES_GODOT_OBSERVATION_PENDING once the backend-only CLOTHES provider was implemented -> closed by this record's live Godot observation.",
+    "retained_and_observed": {
+      "xp": "DEATH_XP_RETAINED -- retention.xp_retained==true, experience matches the value captured immediately after the lethal combat XP grant, before player death.",
+      "weapon_quick_slots": "DEATH_RETENTION_TWO_SLOTS -- retention.quick_slots has exactly 2 entries, unchanged by this record.",
+      "armor": "DEATH_ARMOR_RETAINED + DEATH_ARMOR_SAME_INSTANCE_RETAINED -- armor_instance_ref present in retention.equipped_armor_refs, equipment.slots.CHEST identical before/after death.",
+      "clothes": "DEATH_CLOTHES_RETAINED + DEATH_CLOTHES_SAME_INSTANCE_RETAINED + DEATH_CLOTHES_NOT_DROPPED + DEATH_CLOTHES_NO_DUPLICATION -- new this record, see clothes block below.",
+      "protected_or_critical_quest_item": "DEATH_PROTECTED_CRITICAL_RETAINED / _RETURNED_TO_OWNER / _NOT_DROPPED / _NO_DUPLICATION -- ITEM-OLD-KEY present in retention.protected_critical_refs, quantity==1 in base inventory after death, never inside the dropped Bag.",
+      "single_bag_container": "DEATH_SINGLE_BAG_CONTAINER -- bag_drop.single_container==true, exactly one dropped_bags entry.",
+      "bag_common_content_preserved": "DEATH_COMMON_BAG_CONTENT_PRESERVED -- common item quantity in the Bag before death equals the quantity granted.",
+      "stage15_baselines_protected": "NO_GDSCRIPT_SAVE_AUTHORITY / NO_GDSCRIPT_TTL_AUTHORITY / NO_GDSCRIPT_DEATH_BAG_OWNERSHIP -- all false, unchanged by this record; death/save/TTL/ownership authority remains exclusively server-side."
+    },
+    "clothes": {
+      "item_ref": "S16B-DEV-CLOTHES-LEGS-001",
+      "item_kind": "CLOTHES",
+      "slot": "LEGS",
+      "source_kind": "STAGE16B_DEVELOPMENT_ONLY",
+      "canonical_identity": false,
+      "provider": {
+        "file": "12_AUTHORITY_BACKEND/andromeda_authority_adapter.py",
+        "function": "_ensure_development_clothes_definition()",
+        "owns_exactly_one_ref": true,
+        "bypasses_classify": true,
+        "precedent": "same pattern as the economy-crafting core's own item helper and the gathering-work core's own item helper, both of which already insert directly into the protected item definitions table for domain-owned, non-catalog items",
+        "idempotency": "insert-once if missing; on a second boot, semantic drift in item_kind/equip_slots/stack_max/instance_policy/source_kind/hash raises AuthorityBootError -- never UPDATE, never DELETE, never delete+insert",
+        "instance_ref": "real and dynamic per world -- never fabricated, never hardcoded; captured live from the authoritative snapshot at each boot (example values observed across runs: itm:6c7a653a735175d88512a994a857, itm:32a65278ab4e44d37f3c31f7a9c3, itm:8558329643a5f3e103d620da4179)"
+      },
+      "equip": {
+        "command": "REQUEST_EQUIP_ITEM",
+        "params": {"instance_ref": "<real, per-world>", "slot": "LEGS"},
+        "godot_checks": ["CLOTHES_EQUIP_COMMAND_AUTHORITATIVE", "CLOTHES_EQUIP_PASS", "CLOTHES_LEGS_SLOT_ACTIVE", "CLOTHES_SAME_INSTANCE_EQUIPPED"],
+        "no_adapter_side_validation": true
+      },
+      "projection": {
+        "equipped_clothes_refs": "contains the instance_ref once equipped (CLOTHES_PROJECTED_AS_CLOTHES)",
+        "equipped_armor_refs": "does NOT contain the instance_ref (CLOTHES_NOT_PROJECTED_AS_ARMOR)",
+        "source": "andromeda_authority_adapter.py::_retention_projection(), pre-existing item_kind split logic, unmodified this record"
+      },
+      "bag_equip_interaction": "CLOTHES_REMAINS_EQUIPPED_AFTER_BAG_EQUIP -- equipping a Bag only sweeps un-equipped inventory (same rule already relied on for the armor CHEST slot); LEGS is unaffected.",
+      "save_reload": "CLOTHES_SAVE_RELOAD_PRESERVED / _SAME_INSTANCE / _NO_DUPLICATION -- same instance_ref in LEGS after a real REQUEST_SAVE + REQUEST_RELOAD_RESYNC round trip, no re-grant.",
+      "death_retention": "same real water-exhaustion death event already used for armor/protected-item retention (no second/separate death route) -- same instance_ref retained in LEGS, present in retention.equipped_clothes_refs, never in the dropped Bag, exactly one instance both before and after."
+    }
+  },
+
+  "gate_g16b_26": {
+    "requirement": "BASE_SLOT_LIMIT=8 enforced without an equipped Bag; equipping a Bag changes the effective inventory owner/destination to the Bag; armor/clothes/protected items remain retained; the without-Bag policy is proven via real transport, not fabricated.",
+    "status": "PASS",
+    "semantics": {
+      "base_slot_limit": 8,
+      "slot_accounting": "per item_ref: ceil(quantity/stack_max) for a stackable definition, 1 slot per unique instance for a non-stackable/UNIQUE_INSTANCE definition -- never 1 slot per unit inside a stack",
+      "equip_does_not_free_a_slot": "items.equip() never removes an instance from the base inventory's instance_refs; an equipped instance still counts toward used_slots"
+    },
+    "boot_precondition_change_this_record": {
+      "before": "used_slots_before < 8 (probe filled the gap to 8 via real REQUEST_GATHER before testing the 9th slot)",
+      "after": "used_slots_before == 8 -- CLOTHES (S16B-DEV-CLOTHES-LEGS-001) is granted into the base inventory at development-profile boot and already occupies the 8th slot before this probe runs",
+      "check_rename": "BASE_SLOT_COUNT_BEFORE_CAPACITY_TEST (used_slots_before<8) -> BASE_SLOT_COUNT_AT_CAPACITY (used_slots_before==8); BASE_SLOT_LIMIT_EXACTLY_EIGHT_REPORTED -> BASE_SLOT_LIMIT_EXACTLY_EIGHT",
+      "removed_as_redundant": "the fill-to-8 REQUEST_GATHER loop and its checks (BASE_SLOT_FILL_GATHER_*_AUTHORITATIVE, BASE_SLOT_1_TO_8_ACCEPTED_*, BASE_SLOT_LIMIT_EIGHT_REACHED) -- the precondition is already at capacity, so there is no real, non-rejected transport route left to fill",
+      "preserved_unchanged": "the real 9th-slot probe itself (REQUEST_GATHER PASS -> REQUEST_PICKUP REJECTED) was not weakened, only re-pointed at mining_nodes[0] instead of mining_nodes[fill_count]"
+    },
+    "ninth_slot_probe": {
+      "gather": "REQUEST_GATHER -> PASS (gather never consults capacity; the resource exists in the world before pickup)",
+      "pickup": "REQUEST_PICKUP -> REJECTED",
+      "reason": "BASE_INVENTORY_SLOT_LIMIT_WITHOUT_BAG",
+      "after": {
+        "used_slots": "still exactly 8 (BASE_SLOT_NINE_NO_PARTIAL_MUTATION)",
+        "rejected_item_absent": "not present in base inventory afterward (BASE_SLOT_NINE_NOT_PRESENT_AFTER_REJECTION)",
+        "no_implicit_bag": "routing.source remains BASE_INVENTORY (NO_BAG_IMPLICITLY_CREATED)"
+      }
+    },
+    "bag_equip_destination_change": {
+      "before": "routing.source==BASE_INVENTORY, effective_inventory_owner_ref==player (NO_BAG_EFFECTIVE_OWNER_IS_PLAYER)",
+      "after": "routing.source==EQUIPPED_BAG, effective_inventory_owner_ref==bag_ref (EQUIPPED_BAG_CHANGES_EFFECTIVE_OWNER)"
+    },
+    "retained_through_this_gate": {
+      "weapon_quick_slots": "2, unchanged",
+      "armor": "DEATH_ARMOR_RETAINED / _SAME_INSTANCE_RETAINED, unchanged",
+      "clothes": "DEATH_CLOTHES_RETAINED / _SAME_INSTANCE_RETAINED / _NOT_DROPPED / _NO_DUPLICATION, new this record",
+      "protected_item": "DEATH_PROTECTED_CRITICAL_* family, unchanged"
+    }
+  },
+
+  "protected_item_projection": {
+    "prior_correction_documented_here": {
+      "issue": "protected_critical_refs originally did not recognize QUEST_UTILITY as a protected/critical item_kind, even though the underlying protection rule itself was already correct.",
+      "fix": "12_AUTHORITY_BACKEND/andromeda_authority_adapter.py::_PROTECTED_ITEM_KINDS now includes {\"QUEST\", \"QUEST_ITEM\", \"QUEST_UTILITY\"}",
+      "affected_item": "ITEM-OLD-KEY (item_kind=QUEST_UTILITY)"
+    },
+    "observed": {
+      "protected_or_critical_flag": "true for ITEM-OLD-KEY in every inventory projection entry, both in the base inventory and inside the equipped Bag",
+      "death_flow": "ITEM-OLD-KEY exits the Bag before the death drop, returns to the Player's own base inventory, quantity==1 after death, never duplicated"
+    }
+  },
+
+  "request_equip_item_command": {
+    "command": "REQUEST_EQUIP_ITEM",
+    "characterization": "thin transport command -- does not grant an item, does not choose a reward, does not perform any validation itself",
+    "delegation": "ownership, item existence and slot compatibility are all validated and enforced by items.equip() in the protected item core; the adapter decides nothing",
+    "file": "12_AUTHORITY_BACKEND/andromeda_authority_adapter.py",
+    "function": "_request_equip_item()",
+    "used_for": ["ITEM-ARMOR -> CHEST (pre-existing, unchanged)", "S16B-DEV-CLOTHES-LEGS-001 -> LEGS (new this arc)"]
+  },
+
+  "baseline_v0_8_1_governance": {
+    "predecessor": {
+      "version": "V0_8_0",
+      "sha256": "21626a3152cb37e167eee24bff9d3142c5d389a8ca2827594b34211591525a6a",
+      "status": "SEALED_HISTORICAL_PREDECESSOR_INTACT_RESTORABLE"
+    },
+    "active": {
+      "version": "V0_8_1",
+      "sha256": "03bc6b621a5ae8e0bf6542803412611855b32503154221ec7ea1b7aaf28befc4",
+      "status": "ACTIVE_PROTECTED_STAGE16A_BASELINE",
+      "checkpoint": {"entries": 724, "verified": 724, "altered": 0, "missing": 0}
+    },
+    "reason_for_succession": {
+      "old_verify_defect": "01_RUNTIME/arpg_item_core.py::verify() used a hardcoded source_kind prefix allowlist (STAGE09_, STAGE13_) plus a pure count comparison between commerce_catalog_snapshots and arpg_item_definitions -- a legitimate additional provider (e.g. STAGE16B_DEVELOPMENT_ONLY) broke resume_world() even when its catalog membership was fully correct, and the count-only check could mask a real one-ref-missing-plus-one-extra defect.",
+      "new_verify_design": "set-membership check: commerce_catalog_refs subset-of item_definition_refs -- fails only with ITEM_DEFINITION_CATALOG_REF_MISSING:<refs> when the subset relation is violated. Strictly more correct: it still catches every case the old count check caught, plus the masking case the old check could not detect.",
+      "preserved_unchanged": ["ITEM_DEFINITION_HASH:<ref>", "ITEM_DEFINITION_REF:<ref>", "ITEM_STACK_MAX:<ref>", "payload hash contract", "stack_max contract"],
+      "outcome": "legitimate additional providers (e.g. the CLOTHES provider documented in this record) can add real, honestly-sourced definitions without fabricating a STAGE09_/STAGE13_ source_kind"
+    }
+  },
+
+  "files_changed_across_this_arc": [
+    "01_RUNTIME/arpg_item_core.py",
+    "12_AUTHORITY_BACKEND/andromeda_authority_adapter.py",
+    "12_AUTHORITY_BACKEND/tests/test_stage16b_authority_adapter.py",
+    "12_AUTHORITY_BACKEND/tests/test_stage16b_authority_save_death_water.py",
+    "12_AUTHORITY_BACKEND/tests/test_stage16b_authority_clothes.py",
+    "12_AUTHORITY_BACKEND/tests/test_stage16a_checkpoint_governance.py",
+    "12_AUTHORITY_BACKEND/run_stage16b_authority_validation.py",
+    "07_GODOT_ARPG_STAGE16B/tests/godot/authority_save_death_runtime_gate.gd"
+  ],
+  "runtime_or_canon_altered": true,
+  "runtime_alteration_note": "01_RUNTIME/arpg_item_core.py::verify() was changed, but only as the single, explicitly authorized change carried by the sealed V0_8_0 -> V0_8_1 successor-baseline process documented above -- not an ad hoc alteration of the byte-frozen Stage16A tree.",
+
+  "verification": {
+    "authority_save_death_runtime_gate": [
+      {"world": "clean_1", "checks": 194, "passed": 194, "failed": 0, "status": "PASS"},
+      {"world": "clean_2", "checks": 194, "passed": 194, "failed": 0, "status": "PASS"}
+    ],
+    "godot_debugger": "0 errors / 0 warnings on every run in this record",
+    "combat_godot": {"checks": 91, "passed": 91, "failed": 0, "status": "PASS"},
+    "ground_loot_godot": {"checks": 53, "passed": 53, "failed": 0, "status": "PASS"},
+    "gathering_godot": {"checks": 77, "passed": 77, "failed": 0, "status": "PASS"},
+    "b03": {"checks": 357, "passed": 357, "failed": 0, "status": "PASS"},
+    "b04": {"checks": 156, "passed": 156, "failed": 0, "status": "PASS"},
+    "b11": {"checks": 343, "passed": 343, "failed": 0, "status": "PASS"},
+    "backend_validation_full_suite": {
+      "record": "12_AUTHORITY_BACKEND/reports/STAGE16B_AUTHORITY_BACKEND_VALIDATION_CLOTHES_GODOT_FINAL.json",
+      "status": "PASS",
+      "failures": [],
+      "steps_green": 19
+    },
+    "stage16a_regression": {"tests": 209, "passed": 209, "failed": 0},
+    "verify_contract_suite": {"tests": 9, "passed": 9, "failed": 0},
+    "checkpoint_governance_suite": {"tests": 8, "passed": 8, "failed": 0},
+    "clothes_suite": {"tests": 13, "passed": 13, "failed": 0},
+    "http_suite": {"tests": 17, "passed": 17, "failed": 0, "note": "must run under an interpreter with uvicorn/fastapi installed (see anomaly A below)"},
+    "stage16a_checkpoint": {"entries": 724, "verified": 724, "changed": 0},
+    "master_v2_0_1_sha256": "6D9AC3CCE7DCF6A65FDCF73859C332A0211C1AF52D149077BEEF554BF7BBD0B2",
+    "open_functional_anomalies_this_block": 0
+  },
+
+  "rejection_scoping": {
+    "principle": "DROP_NOT_ACTIVE and BASE_INVENTORY_SLOT_LIMIT_WITHOUT_BAG are never globally suppressed.",
+    "mechanism": "allowance is correlated against the exact command results this gate's own flow produced, matched by command_ref/command/target_ref/reason -- never by a blanket reason-string filter.",
+    "guarantee": "any rejection not correlated to this flow's own expected drops/probes still fails the original, unmodified NO_COMMAND_REJECTIONS check.",
+    "checks": ["EXPECTED_MANUAL_DROP_REJECTIONS_SCOPED", "BASE_SLOT_NINE_REJECTION_SCOPED", "UNRELATED_DROP_NOT_ACTIVE_NOT_SUPPRESSED", "UNRELATED_BASE_SLOT_LIMIT_REJECTION_NOT_SUPPRESSED", "NO_COMMAND_REJECTIONS"]
+  },
+
+  "anomalies": {
+    "A_environment_only_http_suite_failure": {
+      "classification": "ENVIRONMENT_ONLY, not a regression",
+      "cause": "the first full backend validation run used a system Python interpreter without uvicorn/fastapi installed; test_stage16b_authority_http_suite spawns a real uvicorn subprocess and failed to boot it (0 tests collected)",
+      "resolution": "re-ran the full suite under the correct interpreter (the project's own venv with uvicorn/fastapi installed) -- 17/17 PASS, and the full backend validation reached PASS with 0 failures"
+    },
+    "B_accidental_archive_removal": {
+      "classification": "HOUSEKEEPING_ONLY, zero functional impact",
+      "cause": "a residual Godot/backend process from a prior, not-fully-closed session interfered with this round's var/ archiving sequence; a temporary archived copy of var/stage16b_world.sqlite + var/saves/ was deleted (rm -rf) instead of being kept",
+      "scope": "non-canonical Stage16B development/test world data only -- automatically regenerated by the next clean boot",
+      "confirmed_unaffected": ["Stage16A protected checkpoint (V0_8_1, 724/724, 0 altered)", "V0_8_0 predecessor checkpoint", "Master V2.0.1", "any user save data outside this dev/test loop"],
+      "operational_recommendation_documented_not_implemented": [
+        "confirm every Godot process is closed before archiving var/",
+        "confirm the backend process is stopped before archiving var/",
+        "prefer rename/move into an _archive_* folder over any delete",
+        "validate the target path is the intended one before any removal",
+        "avoid broad recursive removal of already-archived snapshot folders"
+      ]
+    }
+  },
+
+  "matrix_position": {
+    "pass": 23,
+    "partial_evidence": 5,
+    "promoted_this_record": ["G16B-18", "G16B-26"],
+    "partial_gates": ["G16B-09", "G16B-17", "G16B-19", "G16B-27", "G16B-28"],
+    "stage16b_global_status": "NOT_PASS",
+    "checkpoint_final_created": false,
+    "final_backup_created": false,
+    "stage17_started": false,
+    "g16b_27_started": false
+  }
+}

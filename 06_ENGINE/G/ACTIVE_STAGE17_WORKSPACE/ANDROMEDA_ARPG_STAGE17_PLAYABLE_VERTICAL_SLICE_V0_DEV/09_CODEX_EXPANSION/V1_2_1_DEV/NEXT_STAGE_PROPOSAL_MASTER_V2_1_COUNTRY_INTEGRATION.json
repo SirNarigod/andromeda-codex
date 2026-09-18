@@ -1,0 +1,120 @@
+{
+  "record_id": "NEXT-STAGE-PROPOSAL-MASTER-V2.1-COUNTRY-INTEGRATION",
+  "status": "PROPOSAL_NOT_EXECUTED",
+  "goal": "Consolidate author-approved country-scale structure/content into canonical Master contracts and unify country-scale actions with the existing Living V1.1 domain engines before expanding to additional Stellar countries.",
+  "proposed_stages": [
+    {
+      "stage": 1,
+      "name": "Master V2.1 Canon Consolidation",
+      "changes": [
+        "formal Planet→Country→State→Block→Subregion→Biome/City/POI→Dungeon/Scene→Entity contracts",
+        "promote author-approved names/resources/scene catalogs",
+        "promote MAR gameplay status contracts without runtime prices/placements",
+        "preserve Kenua country binding unresolved unless author explicitly selects it"
+      ],
+      "risk": "HIGH",
+      "potential_improvement_pct": 99
+    },
+    {
+      "stage": 2,
+      "name": "Country↔Living Domain Bridge",
+      "changes": [
+        "route country combat through CombatSystem",
+        "route country commerce through CommerceSystem",
+        "route fauna events through EcologyPopulationReconciler",
+        "route witnesses through Perception/Memory",
+        "remove parallel action paths that can diverge"
+      ],
+      "risk": "HIGH",
+      "potential_improvement_pct": 99
+    },
+    {
+      "stage": 3,
+      "name": "Atlas Country LOD",
+      "changes": [
+        "country/state/block/subregion navigation",
+        "climate/biome/resource/industry/magic/Root Deep overlays",
+        "inventory and status projections",
+        "spoiler/security-aware dungeon markers"
+      ],
+      "risk": "MEDIUM",
+      "potential_improvement_pct": 96
+    },
+    {
+      "stage": 4,
+      "name": "Dungeon Graph + Scene Persistence",
+      "changes": [
+        "room graph",
+        "locks/keys/traps",
+        "light propagation",
+        "ownership/theft",
+        "loot tables tied to biome/state/history",
+        "object destruction/repair persistence"
+      ],
+      "risk": "MEDIUM",
+      "potential_improvement_pct": 95
+    },
+    {
+      "stage": 5,
+      "name": "Environment & Climate Dynamics",
+      "changes": [
+        "weather fronts",
+        "seasonality",
+        "temperature/rain/humidity evolution",
+        "fires/floods/drought",
+        "disease/epidemic hooks",
+        "effects on fauna/flora/resources/travel"
+      ],
+      "risk": "HIGH",
+      "potential_improvement_pct": 94
+    },
+    {
+      "stage": 6,
+      "name": "Isometric RPG Runtime Contract",
+      "changes": [
+        "Godot-facing world chunks",
+        "interaction verbs",
+        "entity streaming/LOD",
+        "navigation/pathfinding contracts",
+        "authoritative server/runtime boundaries"
+      ],
+      "risk": "HIGH",
+      "potential_improvement_pct": 98
+    },
+    {
+      "stage": 7,
+      "name": "Convergence + Release",
+      "changes": [
+        "full regression loop",
+        "long-horizon simulation",
+        "corruption/fuzz/stress",
+        "restore test",
+        "new seal/backup only if all gates pass"
+      ],
+      "risk": "MEDIUM",
+      "potential_improvement_pct": 100
+    }
+  ],
+  "recommended_agent_order": [
+    "AG-NAM-02",
+    "AG-GEO-02",
+    "AG-RES-02",
+    "AG-ECO-02",
+    "AG-INV-02",
+    "AG-SCN-02",
+    "AG-DNG-02",
+    "AG-ECOCOM-02",
+    "AG-SOC-02",
+    "AG-MAR-02",
+    "AG-SIM-02",
+    "AG-AUD-02"
+  ],
+  "stop_conditions": [
+    "any functional regression",
+    "Master hash mutation outside planned consolidation",
+    "unresolved ID/reference conflict",
+    "non-deterministic inventory divergence",
+    "security/spoiler regression"
+  ],
+  "country_expansion_gate": "Do not add other Stellar countries until this one-country stack has canonical contracts + unified Living bridge + clean release."
+}

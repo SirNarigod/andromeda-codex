@@ -1,0 +1,20 @@
+{
+  "record_id": "ARPG-STAGE-PLAN-V1.9.0-DEV",
+  "project": "ANDROMEDA CODEX ARPG",
+  "stages_total": 23,
+  "completed_through": 15,
+  "current": "16",
+  "stage16": {
+    "16A": {
+      "status": "CLOSED_PRE_GODOT_READY_FOR_HANDOFF",
+      "checkpoint": "V0.6.0"
+    },
+    "16B": {
+      "status": "PENDING_CODEX_LOCAL_GODOT",
+      "acceptance_gates": 20
+    }
+  },
+  "backup_stage16_authorized": false,
+  "art_gate": "DEFERRED",
+  "next_after_stage16_pass": "17"
+}

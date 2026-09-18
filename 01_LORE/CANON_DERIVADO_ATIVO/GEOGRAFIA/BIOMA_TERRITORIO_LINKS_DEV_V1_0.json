@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "BIOMA-TERRITORIO-LINKS-DEV-V1.0",
+  "title": "Vínculo entre os 6 biomas canônicos (BIO-001..006) e os territórios políticos (TER-XXX)",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "r2_compatibility": "Nenhum BIO-XXX ou TER-XXX é alterado. Este arquivo apenas registra uma camada de vínculo derivada, inferida por eco de nome e fatos já existentes — não define fronteiras, coordenadas ou extensão física exata.",
+  "links": [
+    {
+      "bio_ref": "BIO-001", "bio_title": "Coração Ancestral",
+      "primary_territory_ref": "TER-008", "primary_territory_title": "Santuários do Coração",
+      "secondary_territory_refs": [],
+      "anchor_subregion_ref": "SUB-008-002",
+      "rationale": "Eco direto do nome ('Coração'); o bioma é descrito como floresta viva ligada às Árvores Anciãs e ao Espinho-Negro (ART-001), o que corresponde ao território sagrado descentralizado dos Povos das Copas."
+    },
+    {
+      "bio_ref": "BIO-002", "bio_title": "Planícies Luminais",
+      "primary_territory_ref": "TER-011", "primary_territory_title": "Terras Livres",
+      "secondary_territory_refs": [],
+      "anchor_subregion_ref": "SUB-011-003",
+      "rationale": "Eco direto do nome com a subregião 'Pastagens Luminais' (SUB-011-003), já habitat catalogado de Velúrio, Brumante e Lúmara (bestiário) e da Pastagem Luminal (flora)."
+    },
+    {
+      "bio_ref": "BIO-003", "bio_title": "Oceanos e Abissos",
+      "primary_territory_ref": "TER-004", "primary_territory_title": "Arquipélago Livre de Navyr",
+      "secondary_territory_refs": [],
+      "anchor_subregion_ref": "SUB-004-001",
+      "rationale": "Único território de Stellar descrito como confederação marítima; Porto Livre de Navyr é o ponto de contato natural com o bioma oceânico."
+    },
+    {
+      "bio_ref": "BIO-004", "bio_title": "Subsolo Cristalino",
+      "primary_territory_ref": "TER-009", "primary_territory_title": "Liga Subcristal",
+      "secondary_territory_refs": [],
+      "anchor_subregion_ref": "SUB-009-001",
+      "rationale": "Eco direto do nome ('Subcristal' / 'Subsolo Cristalino'); território é liga de cidades subterrâneas escavadas em cristal."
+    },
+    {
+      "bio_ref": "BIO-005", "bio_title": "Picos de Tempestade",
+      "primary_territory_ref": "TER-013", "primary_territory_title": "Fortaleza do Trovão",
+      "secondary_territory_refs": ["TER-006"],
+      "anchor_subregion_ref": "SUB-013-001",
+      "rationale": "'Trovão' ecoa 'Tempestade' diretamente. TER-006 Reino Aéreo de Altavela listado como secundário por operar em altitude, mas sem eco de nome tão direto."
+    },
+    {
+      "bio_ref": "BIO-006", "bio_title": "Pântanos Rubros",
+      "primary_territory_ref": "TER-007", "primary_territory_title": "Rubra-Viva",
+      "secondary_territory_refs": [],
+      "anchor_subregion_ref": "SUB-007-001",
+      "rationale": "Eco direto do nome ('Rubra' / 'Rubros'); confederação medicinal se encaixa com um bioma de pântanos ricos em flora curativa."
+    }
+  ]
+}

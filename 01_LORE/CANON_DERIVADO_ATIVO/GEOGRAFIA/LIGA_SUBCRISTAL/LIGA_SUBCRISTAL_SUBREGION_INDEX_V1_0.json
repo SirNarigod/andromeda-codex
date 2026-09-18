@@ -1,0 +1,37 @@
+{
+  "record_id": "LIGA-SUBCRISTAL-SUBREGION-INDEX-V1.0",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "parent": "TER-009",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "records": [
+    "SUB-009-001",
+    "SUB-009-002",
+    "SUB-009-003"
+  ],
+  "locality_records": [
+    "LOC-009-001",
+    "LOC-009-002",
+    "LOC-009-003"
+  ],
+  "r2_localities_referenced_only": [],
+  "invariants": [
+    "SUBREGION_IS_NOT_SOVEREIGNTY",
+    "R2_LOCALITY_IS_NOT_DUPLICATED",
+    "NO_FIXED_COORDINATES_OR_POPULATION",
+    "RUNTIME_STATE_REMAINS_NONCANONICAL"
+  ],
+  "extension_template": {
+    "required_fields": [
+      "record_id",
+      "title",
+      "parent_political_unit",
+      "provenance",
+      "function",
+      "permitted_catalog_links",
+      "local_conflicts",
+      "prohibitions",
+      "story_generators"
+    ],
+    "future_scope": "Other political units require separate authorial promotion."
+  }
+}

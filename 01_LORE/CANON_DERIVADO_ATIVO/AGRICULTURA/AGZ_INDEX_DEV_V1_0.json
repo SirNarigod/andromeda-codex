@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "AGZ-INDEX-DEV-V1.0",
+  "title": "Índice das 8 Zonas Agrícolas/Pecuárias de Stellar",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "r2_compatibility": "Concretiza a rede já citada em 02_REGRAS/STELLAR_FOUNDATION/STELLAR_INSTITUTION_CULTURE_LAW_V1_1.json#derived_networks: 'eight agricultural and livestock zones'. Exatamente 8 zonas, nem mais nem menos, para bater com o número já afirmado pela lei. Não edita a lei nem 01_LORE/CANON_R2/.",
+  "runtime_reference": "06_ENGINE/.../01_RUNTIME/arpg_gathering_work_core.py — activity AGRICULTURE, role_ref ROLE-GTH-AGRICULTURE, canonical_candidate JOB-RUR-AGR-001; prefixo AGZ- já usado internamente como suporte de nó de agricultura.",
+  "zones": [
+    {"agz_id": "AGZ-090", "title": "Pastagens Luminais", "farming_type": "PASTORAL", "parent_political_unit": "TER-011"},
+    {"agz_id": "AGZ-091", "title": "Jardins Medicinais", "farming_type": "HORTICULTURA", "parent_political_unit": "TER-007"},
+    {"agz_id": "AGZ-092", "title": "Pomares das Copas", "farming_type": "POMAR", "parent_political_unit": "TER-008"},
+    {"agz_id": "AGZ-093", "title": "Fungicultura das Câmaras", "farming_type": "FUNGICULTURA", "parent_political_unit": "TER-009"},
+    {"agz_id": "AGZ-094", "title": "Hortas do Acolhimento", "farming_type": "SUBSISTENCIA", "parent_political_unit": "TER-012"},
+    {"agz_id": "AGZ-095", "title": "Maricultura das Ilhas", "farming_type": "MARICULTURA", "parent_political_unit": "TER-004"},
+    {"agz_id": "AGZ-096", "title": "Campos de Grão do Domínio", "farming_type": "CEREALICULTURA", "parent_political_unit": "TER-013"},
+    {"agz_id": "AGZ-097", "title": "Hidroponia das Plataformas", "farming_type": "HIDROPONIA", "parent_political_unit": "TER-006"}
+  ],
+  "renumbering_note": "Renumerado de AGZ-001..008 para AGZ-090..097 nesta sessao: a importacao do dominio Agricultura do MASTER V2.0.1 revelou que AGZ-001..008 ja sao codigos oficiais de 8 zonas agricolas DIFERENTES (Campos Velurianos, Cinturao de Cultivos Luminais, Criacao de GriloCobre, Encostas Brumantes, Manejo de LarvaVeu, Manejo de Torvaco, Manejo Lumara dos Santuarios, Sub-bosques Raizel). Nenhum fato sobre nossas 8 zonas foi alterado - so o codigo. AGZ-090..097 fica fora do intervalo oficial do Master (AGZ-001..008), mesmo padrao ja usado para FAC-090 (Enclave Sintetico).",
+  "total_zones": 8
+}

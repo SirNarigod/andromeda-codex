@@ -1,0 +1,85 @@
+{
+  "art_dependency": "NONE",
+  "backup_authorized": true,
+  "candidate_restore": "PASS",
+  "canon_mutations": 0,
+  "canonical_guards": [
+    "Master remains READ_ONLY",
+    "Master flora spatialization remains blocked and is not fabricated",
+    "Fishing does not invent species canon",
+    "Canonical professions are not rebound outside their published territory",
+    "Predator hunting requires actor/combat clearance"
+  ],
+  "closed_at": "2026-08-18T20:53:47.737860+00:00",
+  "component": "ARPG Gathering / Work",
+  "generated_at": "2026-08-18T20:47:28.987657+00:00",
+  "godot_required": false,
+  "implemented": [
+    "unified work order for player and NPC",
+    "mining",
+    "logging",
+    "foraging",
+    "agriculture",
+    "hunting",
+    "fishing",
+    "tool/weapon validation",
+    "resource depletion",
+    "durability wear",
+    "universal inventory outputs",
+    "mastery progression",
+    "profession/role authority guard",
+    "child/hazard protections",
+    "deterministic nodes/outcomes",
+    "persistence",
+    "Living employment bridge"
+  ],
+  "open_blockers": 0,
+  "open_corrections": 0,
+  "project": "ANDRÔMEDA CÓDEX",
+  "record_id": "ARPG-STAGE09-COMPLETION-REPORT-V1.0.0",
+  "regressions": {
+    "country_v15": "24/24 PASS",
+    "master": "393/393 PASS",
+    "recursive_health": "PASS",
+    "stage05": {
+      "functional": "21/21 PASS",
+      "persistence": "1/1 PASS",
+      "stress": "62/62 PASS",
+      "validation": "68/68 PASS"
+    },
+    "stage06": {
+      "stress": "33/33 PASS",
+      "validation": "33/33 PASS"
+    },
+    "stage07": {
+      "stress": "31/31 PASS",
+      "validation": "30/30 PASS"
+    },
+    "stage08": {
+      "stress": "15/15 PASS",
+      "unit": "20/20 PASS",
+      "validation": "47/47 PASS"
+    }
+  },
+  "result": "ARPG_STAGE09_GATHERING_WORK_PASS",
+  "stage": "09/23",
+  "status": "PASS",
+  "tests": {
+    "stress": {
+      "failed": 0,
+      "operations": 18,
+      "passed": 59,
+      "profiles": 3,
+      "replays": 18
+    },
+    "unit": {
+      "failed": 0,
+      "passed": 20
+    },
+    "validation": {
+      "failed": 0,
+      "passed": 40
+    }
+  },
+  "version": "V1.0.0"
+}

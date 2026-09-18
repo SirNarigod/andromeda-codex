@@ -1,0 +1,11 @@
+{
+  "record_id": "ARPG-STAGE06-MASTER-REGRESSION-V0.7.0",
+  "source": "ANDROMEDA_CODEX_MASTER_V2_0_1",
+  "suites": 29,
+  "checks": 393,
+  "passed": 393,
+  "failed": 0,
+  "canon_mutations": 0,
+  "status": "PASS",
+  "generated_at": "2026-08-18T17:12:30.966775+00:00"
+}

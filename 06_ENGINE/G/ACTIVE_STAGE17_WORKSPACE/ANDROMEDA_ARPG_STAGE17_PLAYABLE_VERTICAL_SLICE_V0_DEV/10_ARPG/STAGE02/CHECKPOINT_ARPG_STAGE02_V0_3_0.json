@@ -1,0 +1,18 @@
+{
+  "record_id": "CHECKPOINT-ARPG-STAGE02-V0.3.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "process": "ARPG CONVERSION",
+  "stage": "02/18",
+  "stage_name": "CHARACTER CORE — ATTRIBUTES / VITALS / XP / LEVELS",
+  "version": "V0.3.0",
+  "status": "PASS",
+  "result": "CHARACTER_CORE_READY_FOR_COMBAT_STAGE03",
+  "parent_checkpoint": "CHECKPOINT-ARPG-STAGE01-V0.2.0",
+  "parent_checkpoint_archive_sha256": "ba1dce044532ba177b15524626dd56fd763ea32a6429f8cdfce560fc16954b10",
+  "canon_mutations": 0,
+  "numeric_authority": "GAMEPLAY_DERIVED_NOT_CANON",
+  "open_blockers": 0,
+  "backup_authorized": true,
+  "art_pipeline": "LOCKED",
+  "next_stage": "03_COMBAT_ARPG"
+}

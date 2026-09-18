@@ -1,0 +1,86 @@
+{
+  "record_id": "ARPG-STAGE14-TEST-SUMMARY-V1.5.0",
+  "stage": 14,
+  "version": "V1.5.0",
+  "status": "PASS",
+  "stage14": {
+    "functional": {
+      "checks": 19,
+      "passed": 19,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "persistence": {
+      "checks": 1,
+      "passed": 1,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "validation": {
+      "checks": 48,
+      "passed": 48,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "stress": {
+      "checks": 30,
+      "passed": 30,
+      "failed": 0,
+      "cycles": 12,
+      "replays": 12,
+      "status": "PASS"
+    }
+  },
+  "regressions": {
+    "stage13_functional": {
+      "checks": 21,
+      "passed": 21,
+      "status": "PASS"
+    },
+    "stage13_persistence": {
+      "checks": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    "stage11": {
+      "checks": 21,
+      "passed": 21,
+      "status": "PASS"
+    },
+    "stage10_functional": {
+      "checks": 18,
+      "passed": 18,
+      "status": "PASS"
+    },
+    "stage10_persistence": {
+      "checks": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    "stage09_functional": {
+      "checks": 19,
+      "passed": 19,
+      "status": "PASS"
+    },
+    "stage09_persistence": {
+      "checks": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    "country_v15": {
+      "checks": 24,
+      "passed": 24,
+      "status": "PASS"
+    },
+    "master": {
+      "suites": 29,
+      "checks": 393,
+      "passed": 393,
+      "failed": 0,
+      "status": "PASS"
+    }
+  },
+  "canonical_mutations": 0,
+  "open_corrections": 0,
+  "generated_at": "2026-08-18T20:49:08.386053-03:00"
+}

@@ -1,0 +1,57 @@
+{
+  "record_id": "QUEST-TER-015-V1.0",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "LOCAL_AUDITABLE_QUEST_TEMPLATE",
+  "title": "Segredo sob a Areia",
+  "locality": "SUB-015-002",
+  "anchor_reference": "EST-053 Sitio Arqueologico, JOB-004 Investigador de campo",
+  "premise": "Uma nova camara e descoberta nas Ruinas de Antes-do-Pacto, mas sua estrutura e instavel e seu proposito, desconhecido.",
+  "phases": [
+    {
+      "id": "WELCOME",
+      "objective": "Aceitar a tarefa local e receber o briefing no Sitio Arqueologico."
+    },
+    {
+      "id": "EVIDENCE",
+      "objective": "Investigar a camara, riscos estruturais e inscricoes nao identificadas."
+    },
+    {
+      "id": "DECISION",
+      "objective": "Escolher uma resposta local com custo documentado."
+    },
+    {
+      "id": "REPORT",
+      "objective": "Reportar a resolucao ao Conselho de Guias."
+    }
+  ],
+  "resolutions": [
+    {
+      "id": "AVOID",
+      "title": "Selamento Preventivo",
+      "effect": "A camara e selada ate nova avaliacao.",
+      "local_consequence": "Risco cai, mas a descoberta fica sem estudo."
+    },
+    {
+      "id": "REPAIR",
+      "title": "Escavacao Segura",
+      "effect": "Reforco estrutural permite exploracao controlada.",
+      "local_consequence": "Consome recursos/tempo, mas resolve a causa."
+    },
+    {
+      "id": "ESCALATE_REPORT",
+      "title": "Escalonamento Formal",
+      "effect": "O caso e reportado ao Conselho de Guias para decisao institucional.",
+      "local_consequence": "Resolucao mais lenta, mas gera registro formal."
+    }
+  ],
+  "evidence_rule": "Evidencia sustenta apenas relatorio local e reputacao contextual - nao identifica a civilizacao das ruinas como fato canonico sem portao autoral.",
+  "rewards": "reputacao contextual de runtime, acesso temporario e progressao pratica; nenhum item, titulo, territorio ou fato canonico.",
+  "prohibitions": [
+    "NO_OFFLINE_RESOLUTION",
+    "NO_CANON_PROMOTION",
+    "NO_NAMED_R2_APPEARANCE",
+    "NO_AUTHORIAL_DEATH",
+    "NO_ROOT_ESCALATION",
+    "NO_NAMED_HISTORICAL_CIVILIZATION"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "record_id": "STAGE14-RELEASE-READINESS-AUDIT-V1.0",
+  "status": "FAIL",
+  "checks": 72,
+  "passed": 67,
+  "failed": 5,
+  "failures": [
+    {
+      "name": "baseline-runtime:living_runtime.py",
+      "status": "FAIL",
+      "detail": "831ab084f1457a0d00f442e8f0ca71d128982d2b5ade42a95ac97a3f43adf6c4"
+    },
+    {
+      "name": "baseline-runtime:consequence_engine.py",
+      "status": "FAIL",
+      "detail": "42fc733d2ae63ae0ec42fc530df379ee18c9145eaac1048337a33aad16a1d5f4"
+    },
+    {
+      "name": "baseline-runtime:ecology_brain.py",
+      "status": "FAIL",
+      "detail": "4cfc8d1088a077e1de6ad87811f8f98676c1f7703ead2dbd5dba9d863a5e1895"
+    },
+    {
+      "name": "baseline-runtime:world_orchestrator.py",
+      "status": "FAIL",
+      "detail": "869bee446b1e49a9d16a23a0d40e5813128e6b8448207b7f4fe14d776754259a"
+    },
+    {
+      "name": "baseline-runtime:world_systems.py",
+      "status": "FAIL",
+      "detail": "9882b3aa52914c3f65e8216efdc4b5a8bef529f565fbbb57439c0854c007d2a1"
+    }
+  ]
+}

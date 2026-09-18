@@ -1,0 +1,137 @@
+{
+  "record_id": "ARPG-STAGE07-TEST-SUMMARY-V0.8.0",
+  "stage": "07/23",
+  "status": "PASS",
+  "stage07": {
+    "functional_unit": {
+      "checks": 16,
+      "passed": 16,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "persistence_unit": {
+      "checks": 1,
+      "passed": 1,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "validation": {
+      "checks": 30,
+      "passed": 30,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "stress": {
+      "checks": 31,
+      "passed": 31,
+      "failed": 0,
+      "status": "PASS",
+      "frames": 3,
+      "ai_ticks": 24,
+      "hostile_actors": 8
+    },
+    "lore_coverage": {
+      "checks": 25,
+      "passed": 25,
+      "failed": 0,
+      "status": "PASS",
+      "master_entities": 1660,
+      "master_relationships": 9429,
+      "entity_unmapped": 0
+    }
+  },
+  "regression": {
+    "stage06": {
+      "unit": 17,
+      "validation": 33,
+      "stress": 33,
+      "status": "PASS"
+    },
+    "stage05": {
+      "unit": 22,
+      "validation": 68,
+      "stress": 62,
+      "status": "PASS"
+    },
+    "stage04": {
+      "unit": 16,
+      "validation": 53,
+      "stress": 24,
+      "status": "PASS"
+    },
+    "stage03": {
+      "unit": 14,
+      "validation": 67,
+      "stress": 17,
+      "status": "PASS"
+    },
+    "stage02": {
+      "unit": 11,
+      "validation": 51,
+      "stress": 15,
+      "status": "PASS"
+    },
+    "stage01": {
+      "unit": 12,
+      "validation": 58,
+      "stress": 35,
+      "status": "PASS"
+    },
+    "stage00": {
+      "validation": 51,
+      "stress_worlds": 20,
+      "determinism_pairs": 10,
+      "status": "PASS"
+    },
+    "country_v15": {
+      "checks": 24,
+      "passed": 24,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "master": {
+      "suites": 29,
+      "checks": 393,
+      "passed": 393,
+      "failed": 0,
+      "status": "PASS"
+    }
+  },
+  "anomalies": [
+    {
+      "id": "S07-C01",
+      "result": "FIXED",
+      "note": "Eager materialization of ~491 actor overlays made suites scale poorly; replaced with lazy active-set/LOD materialization while Country remains source authority."
+    },
+    {
+      "id": "S07-C02",
+      "result": "FIXED",
+      "note": "Initial grouped Stage07 persistence/unit execution exceeded harness budget; suites split and lazy bootstrap corrected; conclusive results obtained."
+    },
+    {
+      "id": "S07-C03",
+      "result": "FIXED",
+      "note": "Lore coverage file generation hit an environment write-permission path once; regenerated through project filesystem and audited 25/25; runtime unaffected."
+    },
+    {
+      "id": "S07-C04",
+      "result": "RESOLVED_HARNESS",
+      "note": "Grouped Stage02 regression timed out after unit completion; validation and stress were rerun independently and passed."
+    },
+    {
+      "id": "S07-C05",
+      "result": "FIXED",
+      "note": "Combat stable-roll entropy used random runtime world UUID, so fresh worlds with the same simulation seed produced different hit/crit sequences. Roll seed policy changed to WORLD_SEED + EVENT_REF + CHANNEL; two independent Stage07 stress runs now produced identical metrics (3 frames, 24 AI ticks, 8 hostiles)."
+    }
+  ],
+  "open_corrections": 0,
+  "generated_at": "2026-08-18T18:32:18.747667+00:00",
+  "determinism": {
+    "roll_seed_policy": "WORLD_SEED_EVENT_REF_CHANNEL",
+    "independent_stress_runs": 2,
+    "metrics_identical": true,
+    "frames_each": 3,
+    "ai_ticks_each": 24,
+    "status": "PASS"
+  }
+}

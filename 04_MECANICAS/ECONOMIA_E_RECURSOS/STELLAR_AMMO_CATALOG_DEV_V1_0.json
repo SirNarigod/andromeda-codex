@@ -1,0 +1,320 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-AMMO-CATALOG-DEV-V1.0",
+  "title": "Munição para armas de fogo (Fuzil/Revólver/Espingarda/Precisão/Tecnológico)",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "canonical_status": "GAMEPLAY_DERIVED_DEV",
+  "supplements": [
+    "STELLAR_PRODUCTION_RECIPES_DEV_V1_0.json"
+  ],
+  "r2_guard": "Só recursos MIN-/MAT- já catalogados; nenhum efeito de runa isolado inventado; produzida/vendida em construções reais já existentes (EST-003/EST-011/EST-019).",
+  "compatibility_schema_note": "As 8 munições originais (AMMO-001..008) usam compatible_family+compatible_tiers (seguro pra elas: FUZ/REV/ESP/PRE são famílias 100% de arma de fogo). A Bateria (AMMO-009/010) usa compatible_weapon_ids explícito em vez de compatible_family, porque WPN-TEC é uma família mista (corpo-a-corpo/equipamento/à distância) - usar só compatible_family='WPN-TEC' erradamente também casaria com lâminas e exoesqueletos que não usam munição nenhuma.",
+  "ammo": [
+    {
+      "ammo_id": "AMMO-001",
+      "name": "Cartucho de Fuzil",
+      "compatible_family": "WPN-FUZ",
+      "compatible_tiers": [
+        "R0",
+        "R1"
+      ],
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        },
+        {
+          "resource_id": "MIN-COPPER",
+          "resource_name": "Cobrex Condutor"
+        }
+      ],
+      "produced_at": "EST-003",
+      "sold_at": "EST-011",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "weight_kg": 0.19,
+      "ammo_subcategory": "Fuzil",
+      "description": "Munição para armas da família WPN-FUZ, tiers R0/R1."
+    },
+    {
+      "ammo_id": "AMMO-002",
+      "name": "Cartucho Rúnico de Fuzil",
+      "compatible_family": "WPN-FUZ",
+      "compatible_tiers": [
+        "R2",
+        "R3"
+      ],
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        },
+        {
+          "resource_id": "MIN-COPPER",
+          "resource_name": "Cobrex Condutor"
+        },
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        }
+      ],
+      "produced_at": "EST-003",
+      "sold_at": "EST-011",
+      "price_tier": "ALTO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "weight_kg": 0.26,
+      "ammo_subcategory": "Fuzil",
+      "description": "Munição para armas da família WPN-FUZ, tiers R2/R3."
+    },
+    {
+      "ammo_id": "AMMO-003",
+      "name": "Munição de Revólver",
+      "compatible_family": "WPN-REV",
+      "compatible_tiers": [
+        "R0",
+        "R1"
+      ],
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        },
+        {
+          "resource_id": "MIN-COPPER",
+          "resource_name": "Cobrex Condutor"
+        }
+      ],
+      "produced_at": "EST-003",
+      "sold_at": "EST-011",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "weight_kg": 0.06,
+      "ammo_subcategory": "Revólver",
+      "description": "Munição para armas da família WPN-REV, tiers R0/R1."
+    },
+    {
+      "ammo_id": "AMMO-004",
+      "name": "Munição Selada de Revólver",
+      "compatible_family": "WPN-REV",
+      "compatible_tiers": [
+        "R2",
+        "R3"
+      ],
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        },
+        {
+          "resource_id": "MIN-SILVER",
+          "resource_name": "Argêntea Pálida"
+        }
+      ],
+      "produced_at": "EST-003",
+      "sold_at": "EST-011",
+      "price_tier": "ALTO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "weight_kg": 0.09,
+      "ammo_subcategory": "Revólver",
+      "description": "Munição para armas da família WPN-REV, tiers R2/R3."
+    },
+    {
+      "ammo_id": "AMMO-005",
+      "name": "Cartucho de Espingarda",
+      "compatible_family": "WPN-ESP",
+      "compatible_tiers": [
+        "R0",
+        "R1"
+      ],
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        },
+        {
+          "resource_id": "MAT-001",
+          "resource_name": "Madeira de Copas"
+        }
+      ],
+      "produced_at": "EST-003",
+      "sold_at": "EST-011",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "weight_kg": 0.12,
+      "ammo_subcategory": "Espingarda",
+      "description": "Munição para armas da família WPN-ESP, tiers R0/R1."
+    },
+    {
+      "ammo_id": "AMMO-006",
+      "name": "Cartucho de Ruptura",
+      "compatible_family": "WPN-ESP",
+      "compatible_tiers": [
+        "R2",
+        "R3"
+      ],
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        },
+        {
+          "resource_id": "MIN-COPPER",
+          "resource_name": "Cobrex Condutor"
+        }
+      ],
+      "produced_at": "EST-003",
+      "sold_at": "EST-011",
+      "price_tier": "MÉDIO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "weight_kg": 0.18,
+      "ammo_subcategory": "Espingarda",
+      "description": "Munição para armas da família WPN-ESP, tiers R2/R3."
+    },
+    {
+      "ammo_id": "AMMO-007",
+      "name": "Munição de Precisão",
+      "compatible_family": "WPN-PRE",
+      "compatible_tiers": [
+        "R0",
+        "R1"
+      ],
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        },
+        {
+          "resource_id": "MIN-QUARTZ",
+          "resource_name": "Quartzo de Veio"
+        }
+      ],
+      "produced_at": "EST-003",
+      "sold_at": "EST-011",
+      "price_tier": "MÉDIO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "weight_kg": 0.24,
+      "ammo_subcategory": "Precisão",
+      "description": "Munição para armas da família WPN-PRE, tiers R0/R1."
+    },
+    {
+      "ammo_id": "AMMO-008",
+      "name": "Munição de Convergência",
+      "compatible_family": "WPN-PRE",
+      "compatible_tiers": [
+        "R2",
+        "R3"
+      ],
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        },
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        }
+      ],
+      "produced_at": "EST-003",
+      "sold_at": "EST-011",
+      "price_tier": "ALTO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "weight_kg": 0.31,
+      "ammo_subcategory": "Precisão",
+      "description": "Munição para armas da família WPN-PRE, tiers R2/R3."
+    },
+    {
+      "ammo_id": "AMMO-009",
+      "name": "Bateria Padrão",
+      "compatible_weapon_ids": [
+        "WPN-TEC-002",
+        "WPN-TEC-006"
+      ],
+      "compatible_tiers_note": "T0-T1 - as armas de alcance real da família WPN-TEC nesses tiers (Emissor de Pulso Sináptico, Disruptor de Curto Alcance)",
+      "inputs": [
+        {
+          "resource_id": "MIN-COPPER",
+          "resource_name": "Cobrex Condutor"
+        },
+        {
+          "resource_id": "MIN-MAGNETITE",
+          "resource_name": "Magnetita de Pulso"
+        }
+      ],
+      "produced_at": "EST-019",
+      "sold_at": "EST-011",
+      "price_tier": "MÉDIO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "weight_kg": 0.55,
+      "ammo_subcategory": "Bateria",
+      "description": "Bateria compatível com 2 arma(s) tecnológica(s) de alcance real."
+    },
+    {
+      "ammo_id": "AMMO-010",
+      "name": "Célula de Sobrecarga",
+      "compatible_weapon_ids": [
+        "WPN-TEC-003",
+        "WPN-TEC-007",
+        "WPN-TEC-008",
+        "WPN-TEC-011"
+      ],
+      "compatible_tiers_note": "T2-T3 - as armas de alcance real da família WPN-TEC nesses tiers (Rifle de Convergência Cinética, Canhão de Trilho Portátil, Enxame de Nanolâminas, Torreta Portátil de Convergência)",
+      "inputs": [
+        {
+          "resource_id": "MIN-MAGNETITE",
+          "resource_name": "Magnetita de Pulso"
+        },
+        {
+          "resource_id": "MIN-ROBOTIUM",
+          "resource_name": "Robotita Azul"
+        }
+      ],
+      "produced_at": "EST-019",
+      "sold_at": "EST-011",
+      "price_tier": "ALTO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "weight_kg": 0.56,
+      "ammo_subcategory": "Bateria",
+      "description": "Bateria compatível com 4 arma(s) tecnológica(s) de alcance real."
+    }
+  ]
+}

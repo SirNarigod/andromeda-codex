@@ -1,0 +1,31 @@
+{
+  "record_id": "LIVING-SIM-ENGINE-RELEASE-METADATA-V1.1.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "component": "Living Simulation Engine",
+  "version": "V1.1.0",
+  "predecessor": "V1.0.0",
+  "release_type": "FUNCTIONAL_MINOR_RELEASE",
+  "generated_at": "2026-08-16T00:57:19.196688+00:00",
+  "master_dependency": {
+    "file": "ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE.zip",
+    "sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "mode": "READ_ONLY",
+    "bundled": false
+  },
+  "baseline_dependency": {
+    "file": "ANDROMEDA_LIVING_SIM_ENGINE_V1_0_0_RELEASE(1).zip",
+    "sha256": "6f12c9db0976e234ef55cdfe23b998c07240fa8d80eb0d0c247d12bbd16ebabc"
+  },
+  "functional_scope": [
+    "domain integration",
+    "local economy and dynamic commerce",
+    "MAR combat/resources/maintenance",
+    "route-backed mobility and biological time",
+    "law/reputation/factions/labor",
+    "integrated composition and health gates"
+  ],
+  "canon_mutations": 0,
+  "master_mutations": 0,
+  "numeric_balance_authority": "RUNTIME_ONLY_NOT_CANON",
+  "status": "RELEASE_CONTENT_READY_FOR_AUDIT"
+}

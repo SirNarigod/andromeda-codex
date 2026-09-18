@@ -1,0 +1,16 @@
+{
+  "record_id": "STAGE14-MULTIWORLD-SOAK-V1.0",
+  "status": "PASS",
+  "checks": 37,
+  "passed": 37,
+  "failed": 0,
+  "worlds": 4,
+  "concurrent_unique_ticks": 80,
+  "idempotent_callers": 64,
+  "llm_turns": 16,
+  "offline_worlds": 2,
+  "atlas_snapshots": 4,
+  "events_total": 628,
+  "failures": [],
+  "errors": []
+}

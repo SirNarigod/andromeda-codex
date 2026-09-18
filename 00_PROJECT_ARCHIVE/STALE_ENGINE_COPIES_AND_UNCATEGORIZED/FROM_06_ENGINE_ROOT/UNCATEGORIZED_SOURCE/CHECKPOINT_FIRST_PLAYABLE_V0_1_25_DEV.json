@@ -1,0 +1,35 @@
+{
+  "checkpoint": "FIRST_PLAYABLE_V0_1_25_DEV",
+  "parent_checkpoint": "FIRST_PLAYABLE_V0_1_24_DEV",
+  "status": "STATIC_VALIDATED_RUNTIME_PENDING",
+  "cycle": {
+    "functional_stages": 3,
+    "next_step": "MANDATORY_RUNTIME_TEST_AND_REGRESSION"
+  },
+  "functional_scope": [
+    "compact_hud",
+    "stable_screen_enemy_hp_shield_bars",
+    "stamina_per_weapon_attack",
+    "separate_shop_catalogs_with_confirmed_purchase",
+    "cosmetic_and_armor_bonuses",
+    "organized_test_zones",
+    "normal_ranged_and_one_shot_enemies",
+    "alpha_final"
+  ],
+  "authority": {
+    "master_v2_0_1": "READ_ONLY_UNCHANGED",
+    "living_engine_v1_0_0": "READ_ONLY_UNCHANGED",
+    "lab_content": "DEV_TEST_CONTENT"
+  },
+  "static_checks": {
+    "checks": 39,
+    "passed": 39,
+    "failed": 0
+  },
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1",
+  "backup_authorized": false,
+  "lab_test_economy": {
+    "starting_coins": 600
+  },
+  "ranged_activation": "LOCAL_PERCEPTION_OR_DAMAGE_AGGRO"
+}

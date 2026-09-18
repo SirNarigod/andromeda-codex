@@ -1,0 +1,75 @@
+{
+  "record_identity": "S17_C1B_C1_C2_INVALIDATED_RUNS_V0_1_0_DEV",
+  "created_at": "2026-08-29T07:45:00Z",
+  "policy": "Invalidated runs are preserved on disk, never deleted, and documented honestly here rather than silently discarded.",
+  "runs_from_the_interrupted_codex_session": [
+    {
+      "run": "c2_final_clean_retry.log",
+      "result": "SCRIPT ERROR: Invalid access to property or key 'iso_x_m' on a base object of type 'Dictionary'",
+      "classification": "GDSCRIPT_BUG_DURING_ITERATION_FIXED_BEFORE_NEXT_ATTEMPT",
+      "superseded_by": "c2_final_clean_r2.log (91/91 PASS)"
+    },
+    {
+      "run": "c2_diagnostic_retry.log",
+      "result": "FAIL 55/64, 9 failures including TREE_SETUP_MOVE_ACCEPTED (MOVE_SUBMIT_FAILED/UNREACHABLE_DESTINATION) and cascading NORMAL_*_COUNT_TWO checks",
+      "classification": "DIAGNOSTIC_ITERATION_WHILE_TUNING_APPROACH_WAYPOINTS",
+      "superseded_by": "c2_final_clean_r2.log (91/91 PASS)"
+    },
+    {
+      "run": "c2_final_clean.log",
+      "result": "FAIL 60/64, 4 failures: ORE_SETUP_MOVE_ACCEPTED (MOVE_SUBMIT_FAILED/UNREACHABLE_DESTINATION) and 3 cascading count checks",
+      "classification": "DIAGNOSTIC_ITERATION_WHILE_TUNING_APPROACH_WAYPOINTS",
+      "superseded_by": "c2_final_clean_r2.log (91/91 PASS)"
+    },
+    {
+      "run": "regression_c1b_c2/AuthorityGroundLootRuntimeGate.log (pre-fix, 03:37:56Z)",
+      "result": "FAIL 10/11, DROP_CREATION_FAILED:EXACT",
+      "classification": "CAUSAL_TRIGGER_FOR_THE_HUNTING_CHANNEL_FIX",
+      "root_cause": "REQUEST_GATHER against an arbitrary static resource node now requires placement_ref after C1B; the harness's old drop-creation helper did not supply one",
+      "superseded_by": "ground_loot_after_metric_fix.log (53/53 PASS) — the fix is confirmed correct and preserved, see acceptance record"
+    },
+    {
+      "run": "authority_vertical_slice_runtime_gate (G19), original interrupted-session attempt, 03:41:23Z",
+      "result": "FAIL 29/32, NO_DEFEAT_REACHED",
+      "classification": "SEE root_cause below (confirmed by this continuation, not by the interrupted session)",
+      "note": "This was the run in flight when the Codex session was interrupted; it had actually already terminated with a FAIL before the interruption, it was simply never read/reported."
+    },
+    {
+      "run": "STAGE17_RUNTIME_STATE/invalidated/C1B_REPRO_WRONG_ENV_20260829T0624Z/",
+      "result": "reproducibility probe against the wrong default var path (backend_default_var/stage16b_world.sqlite instead of the Stage17-scoped ANDROMEDA_S16B_DB)",
+      "classification": "ENV_VAR_METHODOLOGY_ERROR_SELF_CAUGHT_BEFORE_ACCEPTANCE",
+      "superseded_by": "evidence/c1b_repro_final/run_1.json and run_2.json (correct env, byte-identical results)"
+    }
+  ],
+  "runs_from_this_continuation": [
+    {
+      "run": "batch1 (S17A_LIVE/S17A_FAILED/B1/B2), first attempt",
+      "result": "All 4 gates produced plausible-looking PASS results, but the archiving step meant to give each gate a fresh world silently failed on every attempt (Move-Item file-lock errors on stage17_world.sqlite/-shm/-wal), so all 4 actually ran against the pre-existing (Combat-contaminated) world from the interrupted session, not a fresh one.",
+      "root_cause": "The interrupted session's own backend process (PID 14724, launched 2026-08-29T06:26:42Z) had never actually been stopped — Stop-Stage17Authority.ps1's internal Stop-Process call was failing under this session's non-interactive PowerShell context (\"PowerShell is in NonInteractive mode\" confirmation prompt) without surfacing as a script-level error, so every subsequent Start-Stage17Authority.ps1 call was silently failing PORT_8000_ALREADY_IN_USE, and Godot was in fact talking to the untouched original zombie backend the whole time.",
+      "classification": "METHODOLOGY_ERROR_SELF_CAUGHT_AND_CORRECTED",
+      "impact": "None of the 4 results are wrong — S17-A/B1/B2 do not depend on combat/enemy state — but they were not validated against a fresh world as intended. Corrected for all subsequent gates.",
+      "fix_applied": "Stop-Process calls now pass -Force -Confirm:$false; ownership verified directly against authority_backend_process.json before stopping."
+    },
+    {
+      "run": "batch2 (Combat/GroundLoot/B01/C0/C1/C2/Gathering/G19), background attempt",
+      "result": "Every single gate skipped with BACKEND_NOT_READY; zero Godot processes ever launched.",
+      "root_cause": "After fixing the stop-process bug, the archive-then-cold-boot design conflicted with the C1B resource-placement manifest's world-pinning: deleting stage17_world.sqlite forced a brand-new random world_instance_id on every boot, which never matches the canonical manifest's pinned world_instance_id (rt:world:bd0f78f5-...), so every backend boot failed with RESOURCE_PLACEMENT_WORLD_MISMATCH inside the adapter's lifespan startup. Start-Stage17Authority.ps1's health-poll loop correctly never saw status:PASS and timed out at 90s every time, which looked identical to a stuck/unreachable backend from the outside.",
+      "classification": "METHODOLOGY_ERROR_SELF_CAUGHT_AND_CORRECTED",
+      "impact": "No gate results were produced or reported from this batch; nothing false was accepted.",
+      "fix_applied": "Stopped deleting/archiving stage17_world.sqlite between gates entirely; restart the backend process only (RESUMED boot), which both boots in seconds and lets the dev-bootstrap self-heal logic naturally rotate any defeated fixture NPCs."
+    },
+    {
+      "run": "manual first Combat attempt (cold boot, world_instance_id 015a9bde-...)",
+      "result": "RESOURCE_PLACEMENT_WORLD_MISMATCH boot failure, archived to _archive_pre_COMBAT_20260829T071705Z_authority",
+      "classification": "CONFIRMS_WORLD_BINDING_DESIGN_NOT_A_NEW_BUG",
+      "disposition": "Superseded worlds (015a9bde, 13c00f76-..., c622140b-...) consolidated into _archive_broken_cold_boot_worlds_20260829T0722Z_authority; the true original world (bd0f78f5-...) was located in _archive_pre_COMBAT_20260829T071202Z_authority and restored to STAGE17_RUNTIME_STATE/authority/ before any regression result in the acceptance record was accepted as evidence."
+    },
+    {
+      "run": "GATHERING (AuthorityGatheringRuntimeGate.tscn), this continuation",
+      "result": "Ran far longer than any other gate (>4 minutes, steady real HTTP traffic confirmed via authority_stdout.log growth and rising process CPU time, i.e. not deadlocked) without ever producing a SUMMARY line; manually terminated.",
+      "classification": "INCONCLUSIVE_NOT_A_CONFIRMED_REGRESSION",
+      "impact": "Does not affect C1B/C1/C2 disposition; the Stage17 gathering contract is independently and redundantly proven PASS by C1, C2, and the 110 fresh backend unit tests.",
+      "recommendation": "Investigate in a dedicated follow-up round; do not assume it is broken from this single inconclusive run."
+    }
+  ]
+}

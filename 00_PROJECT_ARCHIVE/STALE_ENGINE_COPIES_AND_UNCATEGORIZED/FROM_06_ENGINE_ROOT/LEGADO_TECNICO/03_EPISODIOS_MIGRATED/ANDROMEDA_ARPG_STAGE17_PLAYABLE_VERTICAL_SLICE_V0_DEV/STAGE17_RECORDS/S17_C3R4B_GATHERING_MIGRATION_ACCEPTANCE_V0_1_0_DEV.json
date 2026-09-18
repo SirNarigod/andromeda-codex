@@ -1,0 +1,198 @@
+{
+  "record_identity": "S17_C3R4B_GATHERING_MIGRATION_ACCEPTANCE_V0_1_0_DEV",
+  "created_at": "2026-08-29T15:30:00Z",
+  "stage": "STAGE17",
+  "process": "ETAPA_31_S17_C3R4B_FORMAL_CURRENT_WORLD_MIGRATION_AND_RESUME_VALIDATION",
+  "world_instance_id": "rt:world:bd0f78f5-7018-4cc6-8f47-34f8f2875e47",
+  "preflight_reaudit": {
+    "total_nodes": 312,
+    "matching": 311,
+    "allowed_mutable_capacity_drift_count": 1,
+    "structural_drift_count": 0,
+    "backend_off": true,
+    "listener_8000": false,
+    "godot_processes": ["Godot.exe PID 11316 (pre-existing user editor, unrelated)"],
+    "db_hash_before": "c84d1bdaaf6de4cf3e47c3f12c4fce0e217090ebe1d15a759bc09f89b68921c6",
+    "db_hash_after_reaudit": "c84d1bdaaf6de4cf3e47c3f12c4fce0e217090ebe1d15a759bc09f89b68921c6"
+  },
+  "fresh_backup": {
+    "path": "STAGE17_RUNTIME_STATE/_archive_pre_s17_c3r4_gathering_migration_20260829T150548Z_authority/stage17_world.sqlite",
+    "sha256": "c84d1bdaaf6de4cf3e47c3f12c4fce0e217090ebe1d15a759bc09f89b68921c6",
+    "size": 15060992,
+    "matches_source_at_copy_time": true,
+    "validated_read_only": true,
+    "validation_evidence": {
+      "world_instance_id_match": true,
+      "known_drift_node_present_unmigrated": {"node_ref": "GTH-1D268772796B25C4CC6B", "capacity_units": 86},
+      "live_fauna_count_confirmed": {"source_ref": "FAU-BROWSER-05-04-01", "count": 58},
+      "player_ref_confirmed": "PLY-455FEDE6124F42819BDA63A8E82355F4",
+      "player_displacement_confirmed_km": 2194,
+      "resource_placement_tables_present": ["s17_resource_metric_placements", "s17_resource_metric_constraints", "s17_resource_placement_manifests"]
+    },
+    "backup_validated": true,
+    "old_backups_deleted": false
+  },
+  "migration_applied": {
+    "migration_id": "S17_GATHERING_NODE_MUTABLE_CAPACITY_MIGRATION_V1",
+    "source_schema": "V1_LEGACY_UNVERSIONED",
+    "target_schema": "S17_GATHERING_NODE_DEFINITION_SCHEMA_V2",
+    "status": "APPLIED",
+    "affected_node_count": 1,
+    "affected_node_refs": ["GTH-1D268772796B25C4CC6B"],
+    "before_hashes": {"GTH-1D268772796B25C4CC6B": "be85ac2aca9662c93b5d2d72c914c78fad28e3d54028749325db58fb2f3badd5"},
+    "after_hashes": {"GTH-1D268772796B25C4CC6B": "21945ee666fe7ce20a3dc62ab8120e469c2d4b8baeb770d997a6cbe07ea5baaf"},
+    "before_capacity_units": 86,
+    "after_capacity_units": 58,
+    "migration_payload_hash": "d1b75e632a567fad91bda4e2efd1ff996d4346f3d3ececc522e0e759b6e0fa34",
+    "started_at_utc": "2026-08-29T15:07:20.231747+00:00",
+    "completed_at_utc": "2026-08-29T15:07:20.294213+00:00",
+    "no_hardcoded_values_in_tool": true,
+    "sql_transactional": true,
+    "sql_type": "UPDATE (2 columns, 1 row) + INSERT (1 new row, new additive table)",
+    "tables_touched": ["arpg_gathering_nodes", "stage17_gathering_migrations"],
+    "tables_not_touched": ["country_scale_state", "arpg_gathering_runtime_state", "s17_resource_metric_placements", "v15_motion_state", "chunk_entity_ownership"]
+  },
+  "anomaly_found_and_fixed_inline": {
+    "id": "S17_C3R4B_POST_COMMIT_VERIFICATION_STALE_READ",
+    "symptom": "first --apply run reported main_db_unchanged:true and a stale post_migration_scan despite status:APPLIED with correct before/after hashes",
+    "root_cause": "post-commit verification used a mode=ro&immutable=1 connection (never consults a -wal file) and a raw file-hash read, both performed before any WAL checkpoint -- read stale pre-commit main-file bytes even though the transaction had already durably committed",
+    "data_integrity_impact": "NONE -- independently re-verified (separate process, after full interpreter exit auto-checkpointed) that the committed data was correct from the moment of COMMIT",
+    "fix_applied": "added PRAGMA wal_checkpoint(FULL) immediately after COMMIT, before opening any post-verification connection",
+    "regression_test_added": "STAGE17_TOOLS/tests/test_migrate_stage17_gathering_mutable_capacity_v1.py::test_38_apply_hash_after_and_post_scan_reflect_the_actual_committed_state",
+    "second_write_to_real_db_required": false,
+    "classification": "TOOL_SELF_VERIFICATION_BUG_NOT_A_DATA_FAILURE"
+  },
+  "post_migration_reaudit": {
+    "status": "ALREADY_APPLIED",
+    "prior_migration_state": "COMPLETE_AND_VERIFIED",
+    "total_nodes": 312,
+    "matching": 312,
+    "allowed_mutable_capacity_drift_count": 0,
+    "structural_drift_count": 0,
+    "unsupported_drift_count": 0,
+    "country_scale_state_self_consistent": true,
+    "main_db_unchanged_this_reaudit": true
+  },
+  "controlled_resume": {
+    "engine_class": "IntegratedARPGEngineV16A",
+    "resume_world_raised": false,
+    "resume_world_status": "PASS",
+    "gathering_verify": {"status": "PASS", "nodes": 312, "failures": [], "activities": {"MINING": 166, "LOGGING": 14, "FORAGING": 28, "AGRICULTURE": 14, "HUNTING": 87, "FISHING": 3}},
+    "movement_verify": {"status": "PASS", "failures": [], "states": 826},
+    "runtime_patch_reconciliation_events": 0,
+    "semantic_hash_before": {
+      "gathering_nodes_combined": "58c288f2857763e693aaee31fc1fb84f97421f9791789d68ea9eac60eec70e8b",
+      "movement_combined": "c929f089a1661c73cf742532e2c926510e312d2c054f2b8ef488962839b94aa7",
+      "chunk_ownership_combined": "20d4400b02dd12291b935ff04100d5549d8025624079bed85deebc7d1c112414"
+    },
+    "semantic_hash_after": {
+      "gathering_nodes_combined": "58c288f2857763e693aaee31fc1fb84f97421f9791789d68ea9eac60eec70e8b",
+      "movement_combined": "c929f089a1661c73cf742532e2c926510e312d2c054f2b8ef488962839b94aa7",
+      "chunk_ownership_combined": "20d4400b02dd12291b935ff04100d5549d8025624079bed85deebc7d1c112414"
+    },
+    "semantic_mutation_detected": false,
+    "physical_only_change": {
+      "main_hash_before": "7b58e86a83cb1979a60812ff04a144549d923c520077bfb5d7fe774c2d431fe3",
+      "main_hash_after": "2df3d4c5c44bed0ec65ff22c875e4c493ee5e243d77d33974140aed663f5becd",
+      "new_table": "stage17_gathering_migrations (expected, from the prior migration step, already present before this resume)",
+      "country_scale_events_row_delta": 1,
+      "new_event_type": "SCENE_SYSTEM_BOOTSTRAPPED",
+      "new_event_payload": {"dungeons": 12, "objects": 423},
+      "identical_to_prior_95_occurrences": true,
+      "classification": "PRE_EXISTING_PROTECTED_SYSTEM_APPEND_ONLY_LOG_NOT_CAUSED_BY_THIS_ROUNDS_CHANGES"
+    },
+    "player_position_unchanged": {"iso_x_m": 102897.27635042791, "iso_y_m": 857054.6075093196, "altitude_m": 430.0}
+  },
+  "backend_health_smoke": {
+    "adapter_class": "Stage16BAuthorityAdapter",
+    "godot_involved": false,
+    "boot_raised": false,
+    "bootstrap_mode": "RESUMED",
+    "gathering_resume_compatibility": {"status": "NOT_NEEDED", "adjustments": []},
+    "health_status": "PASS",
+    "arpg_health": "PASS",
+    "stage15_health": "PASS",
+    "stage16a_health": "PASS",
+    "resource_metric_placement": {"status": "PASS", "placement_count": 2, "constraint_count": 1, "inserted": 0, "replayed": 2, "idempotent": true, "canonical_manifest_hash": "f0c79305c4fe6adad277b4a026311124c5ce865db399e327750e55c2d660ec92"},
+    "combat_encounter_targets_observed": [
+      {"slot": "COMMON", "target_ref": "NPC-05-04-03-002", "distance_m": 80295.245908},
+      {"slot": "ALPHA", "target_ref": "NPC-01-01-01-013", "distance_m": 2194278.234832}
+    ],
+    "common_target_gap_confirmed_present": true,
+    "player_displacement_confirmed_present_m": 2194278.234832,
+    "runtime_patch_reconciliation_events": 0,
+    "semantic_mutation_detected": false
+  },
+  "c1b_c1_c2_impact": {
+    "tree_placement_ref": "GTH-CA3D9A47934BD64A24B4",
+    "ore_placement_ref": "GTH-34AC1BC54C33917F0553",
+    "touched_by_migration": false,
+    "touched_by_resume": false,
+    "resource_metric_placement_status_after_all_steps": "PASS",
+    "placement_count_stable": 2,
+    "constraint_count_stable": 1,
+    "conclusion": "C1B/C1/C2 fully unaffected by this round's changes"
+  },
+  "common_target_gap_preserved": {"id": "S17_G19_COMMON_TARGET_UNBOUNDED_SELECTION_GAP", "status": "CONFIRMED_NOT_FIXED", "touched_this_round": false},
+  "groundloot_preserved": {"status": "51/53", "null_variant_correction": "VALID", "GROUND_LOOT_REACHABLE_AUTO_SETTLE_LIMITATION": "OPEN_NOT_TOUCHED"},
+  "player_recovery": {
+    "executed_this_round": false,
+    "tool_status": "SAFE_TO_EXECUTE_WITH_EXPLICIT_AUTHOR_APPROVAL",
+    "previously_blocking_condition": "CURRENT_WORLD_RESUMABLE=false (gathering node drift)",
+    "blocking_condition_now": "RESOLVED",
+    "still_required": true,
+    "permitted_as_next_process": true
+  },
+  "source_diff": {
+    "created": [
+      "12_AUTHORITY_BACKEND_STAGE17/stage17_gathering_capacity_contract.py",
+      "STAGE17_TOOLS/migrations/migrate_stage17_gathering_mutable_capacity_v1.py",
+      "STAGE17_TOOLS/tests/test_stage17_gathering_capacity_contract.py",
+      "STAGE17_TOOLS/tests/test_migrate_stage17_gathering_mutable_capacity_v1.py",
+      "STAGE17_RECORDS/S17_C3R4A_GATHERING_MUTABLE_CAPACITY_IMPLEMENTATION_V0_1_0_DEV.md",
+      "STAGE17_RECORDS/S17_C3R4A_GATHERING_MUTABLE_CAPACITY_TESTS_V0_1_0_DEV.json",
+      "STAGE17_RECORDS/S17_C3R4B_GATHERING_MIGRATION_EXECUTION_V0_1_0_DEV.md",
+      "STAGE17_RECORDS/S17_C3R4B_GATHERING_MIGRATION_ACCEPTANCE_V0_1_0_DEV.json",
+      "STAGE17_RUNTIME_STATE/_archive_pre_s17_c3r4_gathering_migration_20260829T150548Z_authority/stage17_world.sqlite (operational backup, not an official record)"
+    ],
+    "modified": [
+      "STAGE17_RUNTIME_STATE/authority/stage17_world.sqlite (DATA, not source: 1 row updated + 1 new additive table via the formal migration; 2 subsequent idempotent protected-system event-log appends from the controlled resume and the health-boot smoke)"
+    ],
+    "deleted": [],
+    "protected_paths_modified": [],
+    "01_runtime_diff": "NONE",
+    "stage16a_diff": "NONE",
+    "stage16b_diff": "NONE",
+    "master_living_diff": "NONE"
+  },
+  "stage16b_integrity": {
+    "status": "CLOSED_READ_ONLY",
+    "checkpoint_sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc",
+    "backup_sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc",
+    "touched_this_round": false
+  },
+  "housekeeping": {
+    "backend_off": true,
+    "listener_8000": "NONE",
+    "godot_test_runners": "NONE",
+    "preexisting_editor_preserved": "Godot.exe PID 11316",
+    "world_backup_preserved": true,
+    "migration_evidence_preserved": true,
+    "final_db_sha256": "481d0eea38071ce3bdd93c580c93e6b44582fa216c1a99ae55812f3c747764e1",
+    "final_db_wal_present": false,
+    "final_db_shm_present": false
+  },
+  "records_created": [
+    "STAGE17_RECORDS/S17_C3R4A_GATHERING_MUTABLE_CAPACITY_IMPLEMENTATION_V0_1_0_DEV.md",
+    "STAGE17_RECORDS/S17_C3R4A_GATHERING_MUTABLE_CAPACITY_TESTS_V0_1_0_DEV.json",
+    "STAGE17_RECORDS/S17_C3R4B_GATHERING_MIGRATION_EXECUTION_V0_1_0_DEV.md",
+    "STAGE17_RECORDS/S17_C3R4B_GATHERING_MIGRATION_ACCEPTANCE_V0_1_0_DEV.json"
+  ],
+  "invalidated_runs_record_created": false,
+  "invalidated_runs_reason_not_created": "the anomaly found (stale post-commit self-verification) did not invalidate any conclusion or require discarding any prior evidence -- the underlying migration was independently proven correct; documented transparently inline instead",
+  "final_classification": {
+    "S17_C3R4A_GATHERING_MUTABLE_CAPACITY_CONTRACT": "PASS",
+    "S17_C3R4B_FORMAL_GATHERING_MIGRATION": "PASS",
+    "STAGE17_CURRENT_WORLD_RESUMABLE": true
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "record_id": "CONFINS-DE-GELO-SUBREGION-INDEX-V1.0",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "parent": "TER-016",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "records": [
+    "SUB-016-001",
+    "SUB-016-002",
+    "SUB-016-003"
+  ],
+  "locality_records": [
+    "LOC-016-001",
+    "LOC-016-002",
+    "LOC-016-003"
+  ],
+  "r2_localities_referenced_only": [],
+  "invariants": [
+    "SUBREGION_IS_NOT_SOVEREIGNTY",
+    "NO_FIXED_COORDINATES_OR_POPULATION_BEYOND_FASE_37_GATE",
+    "RUNTIME_STATE_REMAINS_NONCANONICAL"
+  ],
+  "extension_template": {
+    "required_fields": [
+      "record_id",
+      "title",
+      "parent_political_unit",
+      "provenance",
+      "function",
+      "permitted_catalog_links",
+      "local_conflicts",
+      "prohibitions",
+      "story_generators"
+    ],
+    "future_scope": "Ligacao economica adicional fica para rodadas futuras."
+  }
+}

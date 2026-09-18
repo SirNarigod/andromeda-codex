@@ -1,0 +1,57 @@
+{
+  "record_id": "ARPG-STAGE16A-TEST-SUMMARY-V0.8.0",
+  "status": "PASS",
+  "stage16a": {
+    "checks": 209,
+    "passed": 209,
+    "failed": 0
+  },
+  "stress": {
+    "checks": 20,
+    "passed": 20,
+    "failed": 0
+  },
+  "new_water_bag_block": {
+    "checks": 24,
+    "passed": 24,
+    "failed": 0
+  },
+  "handoff_validator": {
+    "checks": 29,
+    "passed": 29,
+    "failed": 0
+  },
+  "regressions": {
+    "stage05_item_core": {
+      "checks": 22,
+      "passed": 22,
+      "failed": 0,
+      "execution": "21 functional + 1 persistence isolated"
+    },
+    "stage15_validation": {
+      "checks": 24,
+      "passed": 24,
+      "failed": 0
+    },
+    "stage15_stress": {
+      "checks": 23,
+      "passed": 23,
+      "failed": 0,
+      "resume_seconds": 1.283
+    },
+    "stage13_economy": {
+      "checks": 22,
+      "passed": 22,
+      "failed": 0,
+      "execution": "21 functional + 1 persistence isolated after grouped timeout"
+    }
+  },
+  "notes": [
+    "V0.8 adds water traversal, swim/exhaustion, real Bag container, water TTL and NPC bag ownership.",
+    "Stage15 sealed policy remains unchanged; Stage16A derived policy supersedes only for Stage16 vertical slice.",
+    "The two initial V0.8 test errors were harness-only generator slicing and were rerun to PASS.",
+    "Bag weight is included in effective traversal/water load; vendor BUY/SELL routes through equipped Bag when present.",
+    "Grouped regression timeouts were treated as inconclusive; Stage13 and Stage05 persistence gates were rerun isolated and passed.",
+    "Stage15 stress: 23/23 PASS; multi-profile resume 1.283s."
+  ]
+}

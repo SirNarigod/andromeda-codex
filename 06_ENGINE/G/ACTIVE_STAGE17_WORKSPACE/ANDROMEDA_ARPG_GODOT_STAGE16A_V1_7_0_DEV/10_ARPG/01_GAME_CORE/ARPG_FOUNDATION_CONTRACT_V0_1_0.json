@@ -1,0 +1,32 @@
+{
+  "record_id": "ARPG-FOUNDATION-CONTRACT-V0.1.0",
+  "status": "DRAFT_ACTIVE_FOR_STAGE00",
+  "genre_target": "ISOMETRIC_ACTION_RPG",
+  "reference_policy": {
+    "structural_reference": "Diablo II: Resurrected-style ARPG loop",
+    "copy_policy": "NO_COPY_OF_CLASSES_MAPS_ITEMS_LORE_ART_OR_PROPRIETARY_IDENTITY",
+    "core_loop": [
+      "EXPLORE",
+      "FIGHT",
+      "LOOT",
+      "EVALUATE",
+      "IMPROVE_BUILD",
+      "FACE_HARDER_CONTENT",
+      "REPEAT"
+    ]
+  },
+  "runtime_principles": {
+    "server_authoritative_compatible": true,
+    "single_player_first": true,
+    "future_multiplayer_ready": true,
+    "deterministic_systems_where_practical": true,
+    "canon_read_only": true,
+    "gameplay_balance_mutable": true
+  },
+  "living_lod": {
+    "near_player": "DETAILED",
+    "active_region": "INTERMEDIATE",
+    "distant_country": "AGGREGATED",
+    "planet_rest": "LOW_FREQUENCY"
+  }
+}

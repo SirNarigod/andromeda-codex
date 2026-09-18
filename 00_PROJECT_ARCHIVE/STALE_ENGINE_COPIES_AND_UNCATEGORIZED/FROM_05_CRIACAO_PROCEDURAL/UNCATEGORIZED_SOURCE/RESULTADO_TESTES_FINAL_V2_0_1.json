@@ -1,0 +1,52 @@
+{
+  "record_id": "RESULTADO-TESTES-FINAL-V2.0.1",
+  "version": "V2.0.1",
+  "administrative_tests": {
+    "checks": 12,
+    "passed": 12,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "master_regression": {
+    "suites": 29,
+    "checks": 393,
+    "passed": 393,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "atlas_runtime": {
+    "suites": 1,
+    "checks": 21,
+    "passed": 21,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "MAR": {
+    "weapons": 30,
+    "runes": 30,
+    "magics": 30,
+    "functional_mutations": 0,
+    "status": "PASS"
+  },
+  "professions": {
+    "count": 91,
+    "functional_mutations": 0,
+    "status": "PASS"
+  },
+  "references": {
+    "entities": 1660,
+    "relationships": 9429,
+    "broken_critical": 0,
+    "status": "PASS"
+  },
+  "patch_scope": {
+    "canon_mutations": 0,
+    "atlas_functional_mutations": 0,
+    "mar_functional_mutations": 0,
+    "profession_functional_mutations": 0,
+    "schema_breaking_changes": 0,
+    "ids_renamed": 0,
+    "status": "PASS"
+  },
+  "status": "PASS"
+}

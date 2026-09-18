@@ -1,0 +1,2659 @@
+{
+  "record_id": "STELLAR-RESOURCE-VALUE-HIERARCHY-DEV-V1.0",
+  "title": "Hierarquia de Valor — Todos os Itens Vendáveis, do Mais Valioso ao Mais Comum",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "r2_guard": "STELLAR_ECONOMY_ECOLOGY_TIME_LAW_V1_1.json declara explicitamente invariante 'PRICES_CURRENCY_STOCKS_AND_INVENTORIES_ARE_RUNTIME_ONLY' e proibição 'NO_CANONICAL_PRICE_OR_CURRENCY_INFERENCE' - ou seja, NENHUM preço numérico fixo ou nome de moeda pode ser tratado como fato canônico R2. Tudo neste arquivo é GAMEPLAY_DERIVED_DEV_SOURCE (mecânica de runtime/simulação), nunca cânone confirmado, e nenhum valor é um preço fixo - são tiers qualitativos e regras de cálculo, exatamente como já usado em 'price_tier' em toda a economia (comida, munição, runas, armadura etc.).",
+  "method": "Agregação determinística dos campos de tier qualitativo JÁ EXISTENTES em cada catálogo (price_tier, relative_cost, runification_tier, category de mineral/recurso orgânico) - nenhum valor numérico novo é inventado. Escala unificada de 5 níveis: COMUM < INCOMUM < RARO < PRECIOSO < LENDÁRIO. Mapeamento: BAIXO->COMUM, MÉDIO->INCOMUM, ALTO->RARO, MUITO_ALTO->LENDÁRIO; tier de runificação R3/T3/C3 soma +1 nível; minerais/orgânicos usam a categoria já catalogada (ex. CORRUPTED_MINERAL/MAGIC_ORGANIC = mais valiosos).",
+  "scale": [
+    "COMUM",
+    "INCOMUM",
+    "RARO",
+    "PRECIOSO",
+    "LENDARIO"
+  ],
+  "tier_distribution": {
+    "COMUM": 94,
+    "INCOMUM": 61,
+    "RARO": 56,
+    "PRECIOSO": 25,
+    "LENDARIO": 3
+  },
+  "total_items": 239,
+  "items": [
+    {
+      "item_id": "MIN-ROOT-SHARD",
+      "name": "Fragmento Radicular",
+      "catalog": "Minerais",
+      "value_tier": "LENDARIO",
+      "rationale": "categoria CORRUPTED_MINERAL",
+      "currency_tags": [
+        "CUR-008",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "COR-RES-004",
+      "name": "Sangue de Raiz",
+      "catalog": "Recursos Corrompidos",
+      "value_tier": "LENDARIO",
+      "rationale": "nível de preço MUITO_ALTO (recurso de altíssimo risco/valor)",
+      "currency_tags": [
+        "CUR-012"
+      ]
+    },
+    {
+      "item_id": "COR-RES-001",
+      "name": "Seiva Corrompida",
+      "catalog": "Recursos Corrompidos",
+      "value_tier": "LENDARIO",
+      "rationale": "nível de preço MUITO_ALTO (recurso de altíssimo risco/valor)",
+      "currency_tags": [
+        "CUR-012"
+      ]
+    },
+    {
+      "item_id": "WPN-EXP-004",
+      "name": "Carga de Vínculo Rúnico Total",
+      "catalog": "Armas (MAR)",
+      "value_tier": "PRECIOSO",
+      "rationale": "custo relativo ALTO, tier de runificação R3",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-MAG-012",
+      "name": "Cetro da Última Maré Planetária",
+      "catalog": "Armas (MAR)",
+      "value_tier": "PRECIOSO",
+      "rationale": "custo relativo ALTO, tier de runificação R3",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-PRO-008",
+      "name": "Chicote-Canhao de Cinza Viva",
+      "catalog": "Armas (MAR)",
+      "value_tier": "PRECIOSO",
+      "rationale": "tier de runificação C3 (classe Corrompidos)",
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-MAG-008",
+      "name": "Coroa de Convergência Planetária",
+      "catalog": "Armas (MAR)",
+      "value_tier": "PRECIOSO",
+      "rationale": "custo relativo ALTO, tier de runificação R3",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-ARR-004",
+      "name": "Disco de Vínculo Adaptativo",
+      "catalog": "Armas (MAR)",
+      "value_tier": "PRECIOSO",
+      "rationale": "custo relativo ALTO, tier de runificação R3",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-TEC-008",
+      "name": "Enxame de Nanolâminas",
+      "catalog": "Armas (MAR)",
+      "value_tier": "PRECIOSO",
+      "rationale": "custo relativo ALTO, tier de runificação T3",
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-RAD-007",
+      "name": "Espada de Nucleo Vivo",
+      "catalog": "Armas (MAR)",
+      "value_tier": "PRECIOSO",
+      "rationale": "tier de runificação C3 (classe Corrompidos)",
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-ESP-002",
+      "name": "Espingarda Rúnica de Ruptura",
+      "catalog": "Armas (MAR)",
+      "value_tier": "PRECIOSO",
+      "rationale": "custo relativo ALTO, tier de runificação R3",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-TEC-012",
+      "name": "Exoesqueleto de Assalto",
+      "catalog": "Armas (MAR)",
+      "value_tier": "PRECIOSO",
+      "rationale": "custo relativo ALTO, tier de runificação T3",
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-PRE-002",
+      "name": "Fuzil de Precisão Convergente",
+      "catalog": "Armas (MAR)",
+      "value_tier": "PRECIOSO",
+      "rationale": "custo relativo ALTO, tier de runificação R3",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-FUZ-004",
+      "name": "Fuzil de Vínculo Sincronizado",
+      "catalog": "Armas (MAR)",
+      "value_tier": "PRECIOSO",
+      "rationale": "custo relativo ALTO, tier de runificação R3",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-LAM-008",
+      "name": "Lança-Lâmina de Vínculo Total",
+      "catalog": "Armas (MAR)",
+      "value_tier": "PRECIOSO",
+      "rationale": "custo relativo ALTO, tier de runificação R3",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-LAM-004",
+      "name": "Lâmina de Vínculo Perpétuo",
+      "catalog": "Armas (MAR)",
+      "value_tier": "PRECIOSO",
+      "rationale": "custo relativo ALTO, tier de runificação R3",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-PRO-007",
+      "name": "Nucleo Disparador de Sangue de Raiz",
+      "catalog": "Armas (MAR)",
+      "value_tier": "PRECIOSO",
+      "rationale": "tier de runificação C3 (classe Corrompidos)",
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-TEC-016",
+      "name": "Núcleo Gêmeo de Sobrecarga",
+      "catalog": "Armas (MAR)",
+      "value_tier": "PRECIOSO",
+      "rationale": "custo relativo ALTO, tier de runificação T3",
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-TEC-004",
+      "name": "Núcleo de Sobrecarga Modular",
+      "catalog": "Armas (MAR)",
+      "value_tier": "PRECIOSO",
+      "rationale": "custo relativo ALTO, tier de runificação T3",
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-FLA-004",
+      "name": "Prisma de Vínculo Sensorial Total",
+      "catalog": "Armas (MAR)",
+      "value_tier": "PRECIOSO",
+      "rationale": "custo relativo ALTO, tier de runificação R3",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-CNT-004",
+      "name": "Prisão Rúnica de Vínculo Total",
+      "catalog": "Armas (MAR)",
+      "value_tier": "PRECIOSO",
+      "rationale": "custo relativo ALTO, tier de runificação R3",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-RAD-008",
+      "name": "Punhos de Sangue de Raiz",
+      "catalog": "Armas (MAR)",
+      "value_tier": "PRECIOSO",
+      "rationale": "tier de runificação C3 (classe Corrompidos)",
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-MAG-004",
+      "name": "Relicário de Estase Convergente",
+      "catalog": "Armas (MAR)",
+      "value_tier": "PRECIOSO",
+      "rationale": "custo relativo ALTO, tier de runificação R3",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-REV-004",
+      "name": "Revólver Selado de Vínculo",
+      "catalog": "Armas (MAR)",
+      "value_tier": "PRECIOSO",
+      "rationale": "custo relativo ALTO, tier de runificação R3",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-MAG-016",
+      "name": "Trono Portátil de Convergência",
+      "catalog": "Armas (MAR)",
+      "value_tier": "PRECIOSO",
+      "rationale": "custo relativo ALTO, tier de runificação R3",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "MIN-RARE",
+      "name": "Liga-Núcleo Bruta",
+      "catalog": "Minerais",
+      "value_tier": "PRECIOSO",
+      "rationale": "categoria RARE_MINERAL",
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "MIN-TITAN",
+      "name": "Titanita Cinzenta",
+      "catalog": "Minerais",
+      "value_tier": "PRECIOSO",
+      "rationale": "categoria RARE_MINERAL",
+      "currency_tags": [
+        "CUR-006",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "VST-004",
+      "name": "Blindagem de Guarnição",
+      "catalog": "Armaduras",
+      "value_tier": "RARO",
+      "rationale": "nível de preço: ALTO",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "VST-006",
+      "name": "Chassi de Placa Reforçada",
+      "catalog": "Armaduras",
+      "value_tier": "RARO",
+      "rationale": "nível de preço: ALTO",
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "VST-002",
+      "name": "Couraça de Fronteira (reforçada)",
+      "catalog": "Armaduras",
+      "value_tier": "RARO",
+      "rationale": "nível de preço: ALTO",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "VST-008",
+      "name": "Manto Rúnico de Convergência",
+      "catalog": "Armaduras",
+      "value_tier": "RARO",
+      "rationale": "nível de preço: ALTO",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-CNT-002",
+      "name": "Campo Rúnico de Barreira",
+      "catalog": "Armas (MAR)",
+      "value_tier": "RARO",
+      "rationale": "custo relativo ALTO, tier de runificação R2",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-PRO-005",
+      "name": "Canhao de Esporos Concentrados",
+      "catalog": "Armas (MAR)",
+      "value_tier": "RARO",
+      "rationale": "tier de runificação C2 (classe Corrompidos)",
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-TEC-007",
+      "name": "Canhão de Trilho Portátil",
+      "catalog": "Armas (MAR)",
+      "value_tier": "RARO",
+      "rationale": "custo relativo ALTO, tier de runificação T2",
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-MAG-011",
+      "name": "Círculo Rúnico de Convergência Dupla",
+      "catalog": "Armas (MAR)",
+      "value_tier": "RARO",
+      "rationale": "custo relativo ALTO, tier de runificação R2",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-ARR-002",
+      "name": "Disco Rúnico de Trajetória",
+      "catalog": "Armas (MAR)",
+      "value_tier": "RARO",
+      "rationale": "custo relativo ALTO, tier de runificação R2",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-LAM-007",
+      "name": "Espada Rúnica de Retorno",
+      "catalog": "Armas (MAR)",
+      "value_tier": "RARO",
+      "rationale": "custo relativo ALTO, tier de runificação R2",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-MAG-007",
+      "name": "Espelho Rúnico de Duplo Foco",
+      "catalog": "Armas (MAR)",
+      "value_tier": "RARO",
+      "rationale": "custo relativo ALTO, tier de runificação R2",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-ESP-004",
+      "name": "Espingarda Rúnica de Concentração Dupla",
+      "catalog": "Armas (MAR)",
+      "value_tier": "RARO",
+      "rationale": "custo relativo ALTO, tier de runificação R2",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-RAD-006",
+      "name": "Foice de Casca Negra",
+      "catalog": "Armas (MAR)",
+      "value_tier": "RARO",
+      "rationale": "tier de runificação C2 (classe Corrompidos)",
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-FUZ-002",
+      "name": "Fuzil Rúnico de Vanguarda",
+      "catalog": "Armas (MAR)",
+      "value_tier": "RARO",
+      "rationale": "custo relativo ALTO, tier de runificação R2",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-PRE-004",
+      "name": "Fuzil de Precisão com Ótica Rúnica Avançada",
+      "catalog": "Armas (MAR)",
+      "value_tier": "RARO",
+      "rationale": "custo relativo ALTO, tier de runificação R2",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-EXP-002",
+      "name": "Granada Rúnica de Onda Dirigida",
+      "catalog": "Armas (MAR)",
+      "value_tier": "RARO",
+      "rationale": "custo relativo ALTO, tier de runificação R2",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-MAG-003",
+      "name": "Grimório de Vínculo Ritual",
+      "catalog": "Armas (MAR)",
+      "value_tier": "RARO",
+      "rationale": "custo relativo ALTO, tier de runificação R2",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-RAD-005",
+      "name": "Lanca de Raiz Cristalizada",
+      "catalog": "Armas (MAR)",
+      "value_tier": "RARO",
+      "rationale": "tier de runificação C2 (classe Corrompidos)",
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-PRO-006",
+      "name": "Lancador de Espinhos Cristalizados",
+      "catalog": "Armas (MAR)",
+      "value_tier": "RARO",
+      "rationale": "tier de runificação C2 (classe Corrompidos)",
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-LAM-002",
+      "name": "Lâmina Rúnica Vibrante",
+      "catalog": "Armas (MAR)",
+      "value_tier": "RARO",
+      "rationale": "custo relativo ALTO, tier de runificação R2",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-TEC-015",
+      "name": "Lâmina de Plasma Contida",
+      "catalog": "Armas (MAR)",
+      "value_tier": "RARO",
+      "rationale": "custo relativo ALTO, tier de runificação T2",
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-REV-002",
+      "name": "Revólver Selado de Marcação",
+      "catalog": "Armas (MAR)",
+      "value_tier": "RARO",
+      "rationale": "custo relativo ALTO, tier de runificação R2",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-TEC-003",
+      "name": "Rifle de Convergência Cinética",
+      "catalog": "Armas (MAR)",
+      "value_tier": "RARO",
+      "rationale": "custo relativo ALTO, tier de runificação T2",
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-TEC-011",
+      "name": "Torreta Portátil de Convergência",
+      "catalog": "Armas (MAR)",
+      "value_tier": "RARO",
+      "rationale": "custo relativo ALTO, tier de runificação T2",
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-MAG-015",
+      "name": "Véu Rúnico de Interrupção Arcana",
+      "catalog": "Armas (MAR)",
+      "value_tier": "RARO",
+      "rationale": "custo relativo ALTO, tier de runificação R2",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "EQP-010",
+      "name": "Manto Refratário",
+      "catalog": "Equipamento de Suporte",
+      "value_tier": "RARO",
+      "rationale": "nível de preço: ALTO",
+      "currency_tags": [
+        "CUR-014",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "EQP-003",
+      "name": "Rádio de Campo",
+      "catalog": "Equipamento de Suporte",
+      "value_tier": "RARO",
+      "rationale": "nível de preço: ALTO",
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "MED-002",
+      "name": "Antitóxico de Vidro",
+      "catalog": "Medicamentos",
+      "value_tier": "RARO",
+      "rationale": "nível de preço: ALTO",
+      "currency_tags": [
+        "CUR-007",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "MED-004",
+      "name": "Elixir de Restauração",
+      "catalog": "Medicamentos",
+      "value_tier": "RARO",
+      "rationale": "nível de preço: ALTO",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "MIN-SILVER",
+      "name": "Argêntea Pálida",
+      "catalog": "Minerais",
+      "value_tier": "RARO",
+      "rationale": "categoria PRECIOUS_METAL",
+      "currency_tags": [
+        "CUR-001",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "MIN-GOLD",
+      "name": "Aúreo Solar",
+      "catalog": "Minerais",
+      "value_tier": "RARO",
+      "rationale": "categoria PRECIOUS_METAL",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "MIN-CRYSTAL",
+      "name": "Cristal Rúnico",
+      "catalog": "Minerais",
+      "value_tier": "RARO",
+      "rationale": "categoria MAGIC_MINERAL",
+      "currency_tags": [
+        "CUR-009",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "MIN-MANA-ORE",
+      "name": "Manalita",
+      "catalog": "Minerais",
+      "value_tier": "RARO",
+      "rationale": "categoria MAGIC_MINERAL",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "MIN-VOID-GLASS",
+      "name": "Vidro Umbral",
+      "catalog": "Minerais",
+      "value_tier": "RARO",
+      "rationale": "categoria MAGIC_MINERAL",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "AMMO-002",
+      "name": "Cartucho Rúnico de Fuzil",
+      "catalog": "Munição",
+      "value_tier": "RARO",
+      "rationale": "nível de preço: ALTO",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "AMMO-004",
+      "name": "Munição Selada de Revólver",
+      "catalog": "Munição",
+      "value_tier": "RARO",
+      "rationale": "nível de preço: ALTO",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "AMMO-008",
+      "name": "Munição de Convergência",
+      "catalog": "Munição",
+      "value_tier": "RARO",
+      "rationale": "nível de preço: ALTO",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "COR-RES-003",
+      "name": "Cinza Viva",
+      "catalog": "Recursos Corrompidos",
+      "value_tier": "RARO",
+      "rationale": "nível de preço ALTO (recurso de altíssimo risco/valor)",
+      "currency_tags": [
+        "CUR-012"
+      ]
+    },
+    {
+      "item_id": "COR-RES-002",
+      "name": "Nucleo de Enraizamento",
+      "catalog": "Recursos Corrompidos",
+      "value_tier": "RARO",
+      "rationale": "nível de preço ALTO (recurso de altíssimo risco/valor)",
+      "currency_tags": [
+        "CUR-012"
+      ]
+    },
+    {
+      "item_id": "MAT-005",
+      "name": "Resina Rúnica",
+      "catalog": "Recursos de Artesanato",
+      "value_tier": "RARO",
+      "rationale": "categoria MAGIC_ORGANIC",
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "RUNA-010",
+      "name": "Runa de Foco Mental",
+      "catalog": "Runas",
+      "value_tier": "RARO",
+      "rationale": "nível de preço: ALTO",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "RUNA-008",
+      "name": "Runa de Interrupção",
+      "catalog": "Runas",
+      "value_tier": "RARO",
+      "rationale": "nível de preço: ALTO",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "RUNA-003",
+      "name": "Runa de Proteção",
+      "catalog": "Runas",
+      "value_tier": "RARO",
+      "rationale": "nível de preço: ALTO",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "RUNA-007",
+      "name": "Runa de Restauração",
+      "catalog": "Runas",
+      "value_tier": "RARO",
+      "rationale": "nível de preço: ALTO",
+      "currency_tags": [
+        "CUR-007",
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "RUNA-006",
+      "name": "Runa de Transformação",
+      "catalog": "Runas",
+      "value_tier": "RARO",
+      "rationale": "nível de preço: ALTO",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "RUNA-009",
+      "name": "Runa de Vínculo",
+      "catalog": "Runas",
+      "value_tier": "RARO",
+      "rationale": "nível de preço: ALTO",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "FOOD-002",
+      "name": "Linguiça de Fronteira",
+      "catalog": "Alimentos Derivados",
+      "value_tier": "INCOMUM",
+      "rationale": "nível de preço: MÉDIO",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "FOOD-005",
+      "name": "Vinho de Flor-de-Orvalho",
+      "catalog": "Alimentos Derivados",
+      "value_tier": "INCOMUM",
+      "rationale": "nível de preço: MÉDIO",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-MAG-006",
+      "name": "Anel de Vínculo Simples",
+      "catalog": "Armas (MAR)",
+      "value_tier": "INCOMUM",
+      "rationale": "custo relativo MÉDIO, tier de runificação R1",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-PRO-004",
+      "name": "Arco de Fibra Radicular",
+      "catalog": "Armas (MAR)",
+      "value_tier": "INCOMUM",
+      "rationale": "tier de runificação C1 (classe Corrompidos)",
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-MAG-010",
+      "name": "Bastão de Ecoação",
+      "catalog": "Armas (MAR)",
+      "value_tier": "INCOMUM",
+      "rationale": "custo relativo MÉDIO, tier de runificação R1",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-PRO-003",
+      "name": "Cajado Cuspidor de Seiva",
+      "catalog": "Armas (MAR)",
+      "value_tier": "INCOMUM",
+      "rationale": "tier de runificação C1 (classe Corrompidos)",
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-MAG-002",
+      "name": "Cajado de Fórmula Falada",
+      "catalog": "Armas (MAR)",
+      "value_tier": "INCOMUM",
+      "rationale": "custo relativo MÉDIO, tier de runificação R1",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-EXP-003",
+      "name": "Carga Convencional de Mineração",
+      "catalog": "Armas (MAR)",
+      "value_tier": "INCOMUM",
+      "rationale": "custo relativo MÉDIO, tier de runificação R0",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-EXP-001",
+      "name": "Carga de Demolição",
+      "catalog": "Armas (MAR)",
+      "value_tier": "INCOMUM",
+      "rationale": "custo relativo MÉDIO, tier de runificação R1",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-FLA-003",
+      "name": "Dispositivo de Clarão Aprimorado",
+      "catalog": "Armas (MAR)",
+      "value_tier": "INCOMUM",
+      "rationale": "custo relativo MÉDIO, tier de runificação R1",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-TEC-006",
+      "name": "Disruptor de Curto Alcance",
+      "catalog": "Armas (MAR)",
+      "value_tier": "INCOMUM",
+      "rationale": "custo relativo MÉDIO, tier de runificação T1",
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-TEC-002",
+      "name": "Emissor de Pulso Sináptico",
+      "catalog": "Armas (MAR)",
+      "value_tier": "INCOMUM",
+      "rationale": "custo relativo MÉDIO, tier de runificação T1",
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-TEC-014",
+      "name": "Escudo de Choque Sináptico",
+      "catalog": "Armas (MAR)",
+      "value_tier": "INCOMUM",
+      "rationale": "custo relativo MÉDIO, tier de runificação T1",
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-IMP-008",
+      "name": "Ferramenta de Vínculo Triplo Instável",
+      "catalog": "Armas (MAR)",
+      "value_tier": "INCOMUM",
+      "rationale": "custo relativo BAIXO, tier de runificação R3",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-MAG-001",
+      "name": "Foco de Corrente Planetária",
+      "catalog": "Armas (MAR)",
+      "value_tier": "INCOMUM",
+      "rationale": "custo relativo MÉDIO, tier de runificação R1",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-PRE-001",
+      "name": "Fuzil de Observação",
+      "catalog": "Armas (MAR)",
+      "value_tier": "INCOMUM",
+      "rationale": "custo relativo MÉDIO, tier de runificação R1",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-RAD-003",
+      "name": "Lamina de Espinho Corrompido",
+      "catalog": "Armas (MAR)",
+      "value_tier": "INCOMUM",
+      "rationale": "tier de runificação C1 (classe Corrompidos)",
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-ARR-003",
+      "name": "Lança de Retorno Simples",
+      "catalog": "Armas (MAR)",
+      "value_tier": "INCOMUM",
+      "rationale": "custo relativo MÉDIO, tier de runificação R1",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-TEC-010",
+      "name": "Lançador de Fragmentos Sintéticos",
+      "catalog": "Armas (MAR)",
+      "value_tier": "INCOMUM",
+      "rationale": "custo relativo MÉDIO, tier de runificação T1",
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-RAD-004",
+      "name": "Maca de No Radicular",
+      "catalog": "Armas (MAR)",
+      "value_tier": "INCOMUM",
+      "rationale": "tier de runificação C1 (classe Corrompidos)",
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-LAM-006",
+      "name": "Machado de Reforço Simples",
+      "catalog": "Armas (MAR)",
+      "value_tier": "INCOMUM",
+      "rationale": "custo relativo MÉDIO, tier de runificação R1",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-MAG-014",
+      "name": "Manopla de Gesto Ritual",
+      "catalog": "Armas (MAR)",
+      "value_tier": "INCOMUM",
+      "rationale": "custo relativo MÉDIO, tier de runificação R1",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-IMP-004",
+      "name": "Peça de Máquina com Vínculo Instável",
+      "catalog": "Armas (MAR)",
+      "value_tier": "INCOMUM",
+      "rationale": "custo relativo BAIXO, tier de runificação R3",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-FLA-002",
+      "name": "Prisma Rúnico de Interrupção",
+      "catalog": "Armas (MAR)",
+      "value_tier": "INCOMUM",
+      "rationale": "custo relativo MÉDIO, tier de runificação R2",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-REV-003",
+      "name": "Revólver de Marcação Simples",
+      "catalog": "Armas (MAR)",
+      "value_tier": "INCOMUM",
+      "rationale": "custo relativo MÉDIO, tier de runificação R1",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "PRT-002",
+      "name": "Creme de Brumante",
+      "catalog": "Culinária Preparada",
+      "value_tier": "INCOMUM",
+      "rationale": "nível de preço: MÉDIO",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "PRT-007",
+      "name": "Farinha de Véu",
+      "catalog": "Culinária Preparada",
+      "value_tier": "INCOMUM",
+      "rationale": "nível de preço: MÉDIO",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "PRT-003",
+      "name": "Leite Claro de Lúmara",
+      "catalog": "Culinária Preparada",
+      "value_tier": "INCOMUM",
+      "rationale": "nível de preço: MÉDIO",
+      "currency_tags": [
+        "CUR-007",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "EQP-001",
+      "name": "Kit de Primeiros Socorros",
+      "catalog": "Equipamento de Suporte",
+      "value_tier": "INCOMUM",
+      "rationale": "nível de preço: MÉDIO",
+      "currency_tags": [
+        "CUR-007",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "EQP-006",
+      "name": "Kit de Reparo",
+      "catalog": "Equipamento de Suporte",
+      "value_tier": "INCOMUM",
+      "rationale": "nível de preço: MÉDIO",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "EQP-007",
+      "name": "Lanterna Rúnica",
+      "catalog": "Equipamento de Suporte",
+      "value_tier": "INCOMUM",
+      "rationale": "nível de preço: MÉDIO",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "EQP-008",
+      "name": "Máscara de Filtragem",
+      "catalog": "Equipamento de Suporte",
+      "value_tier": "INCOMUM",
+      "rationale": "nível de preço: MÉDIO",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "EQP-009",
+      "name": "Máscara de Fumaça",
+      "catalog": "Equipamento de Suporte",
+      "value_tier": "INCOMUM",
+      "rationale": "nível de preço: MÉDIO",
+      "currency_tags": [
+        "CUR-014",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "MED-003",
+      "name": "Cataplasma de Besouro",
+      "catalog": "Medicamentos",
+      "value_tier": "INCOMUM",
+      "rationale": "nível de preço: MÉDIO",
+      "currency_tags": [
+        "CUR-007",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "MED-008",
+      "name": "Kit de Sutura Sintética",
+      "catalog": "Medicamentos",
+      "value_tier": "INCOMUM",
+      "rationale": "nível de preço: MÉDIO",
+      "currency_tags": [
+        "CUR-007",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "MIN-COPPER",
+      "name": "Cobrex Condutor",
+      "catalog": "Minerais",
+      "value_tier": "INCOMUM",
+      "rationale": "categoria METAL",
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "MIN-TIN",
+      "name": "Estanho Nimbo",
+      "catalog": "Minerais",
+      "value_tier": "INCOMUM",
+      "rationale": "categoria METAL",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "MIN-IRON",
+      "name": "Ferral Bruto",
+      "catalog": "Minerais",
+      "value_tier": "INCOMUM",
+      "rationale": "categoria METAL",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "MIN-MAGNETITE",
+      "name": "Magnetita de Pulso",
+      "catalog": "Minerais",
+      "value_tier": "INCOMUM",
+      "rationale": "categoria TECH_MINERAL",
+      "currency_tags": [
+        "CUR-003",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "MIN-ROBOTIUM",
+      "name": "Robotita Azul",
+      "catalog": "Minerais",
+      "value_tier": "INCOMUM",
+      "rationale": "categoria TECH_MINERAL",
+      "currency_tags": [
+        "CUR-003",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "AMMO-006",
+      "name": "Cartucho de Ruptura",
+      "catalog": "Munição",
+      "value_tier": "INCOMUM",
+      "rationale": "nível de preço: MÉDIO",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "AMMO-007",
+      "name": "Munição de Precisão",
+      "catalog": "Munição",
+      "value_tier": "INCOMUM",
+      "rationale": "nível de preço: MÉDIO",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "MAT-007",
+      "name": "Carvão de Forja",
+      "catalog": "Recursos de Artesanato",
+      "value_tier": "INCOMUM",
+      "rationale": "categoria PROCESSED_FUEL",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "MAT-006",
+      "name": "Osso Rúnico",
+      "catalog": "Recursos de Artesanato",
+      "value_tier": "INCOMUM",
+      "rationale": "categoria ORGANIC_BONE",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "MAT-008",
+      "name": "Pergaminho de Fibra",
+      "catalog": "Recursos de Artesanato",
+      "value_tier": "INCOMUM",
+      "rationale": "categoria PROCESSED_MATERIAL",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "RUNA-001",
+      "name": "Runa de Aceleração",
+      "catalog": "Runas",
+      "value_tier": "INCOMUM",
+      "rationale": "nível de preço: MÉDIO",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "RUNA-002",
+      "name": "Runa de Contenção",
+      "catalog": "Runas",
+      "value_tier": "INCOMUM",
+      "rationale": "nível de preço: MÉDIO",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "RUNA-004",
+      "name": "Runa de Retorno",
+      "catalog": "Runas",
+      "value_tier": "INCOMUM",
+      "rationale": "nível de preço: MÉDIO",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "RUNA-005",
+      "name": "Runa de Ótica",
+      "catalog": "Runas",
+      "value_tier": "INCOMUM",
+      "rationale": "nível de preço: MÉDIO",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "TRJ-018",
+      "name": "Traje de Pressao da Fossa Abissal",
+      "catalog": "Vestuário Civil",
+      "value_tier": "INCOMUM",
+      "rationale": "nível de preço: MEDIO",
+      "currency_tags": [
+        "CUR-018",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "FOOD-001",
+      "name": "Carne de Manada",
+      "catalog": "Alimentos Derivados",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "FOOD-006",
+      "name": "Cerveja de Grão",
+      "catalog": "Alimentos Derivados",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-013",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "FOOD-007",
+      "name": "Chá de Ervas do Jardim",
+      "catalog": "Alimentos Derivados",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-007",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "FOOD-008",
+      "name": "Cogumelos Grelhados",
+      "catalog": "Alimentos Derivados",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-009",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "FOOD-004",
+      "name": "Iogurte de Brumante",
+      "catalog": "Alimentos Derivados",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "FOOD-003",
+      "name": "Manteiga de Pastagem",
+      "catalog": "Alimentos Derivados",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "VST-005",
+      "name": "Chassi de Placa Leve",
+      "catalog": "Armaduras",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "VST-001",
+      "name": "Couraça de Fronteira (leve)",
+      "catalog": "Armaduras",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "VST-007",
+      "name": "Manto de Aprendiz",
+      "catalog": "Armaduras",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "VST-003",
+      "name": "Uniforme de Guarnição",
+      "catalog": "Armaduras",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-MAG-005",
+      "name": "Amuleto de Corrente Bruta",
+      "catalog": "Armas (MAR)",
+      "value_tier": "COMUM",
+      "rationale": "custo relativo BAIXO, tier de runificação R0",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-IMP-002",
+      "name": "Barra Reforçada com Runa Emprestada",
+      "catalog": "Armas (MAR)",
+      "value_tier": "COMUM",
+      "rationale": "custo relativo BAIXO, tier de runificação R1",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-IMP-006",
+      "name": "Cano Reforçado com Runa Emprestada",
+      "catalog": "Armas (MAR)",
+      "value_tier": "COMUM",
+      "rationale": "custo relativo BAIXO, tier de runificação R1",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-RAD-002",
+      "name": "Chicote de Raiz Fresca",
+      "catalog": "Armas (MAR)",
+      "value_tier": "COMUM",
+      "rationale": "tier de runificação C0 (classe Corrompidos)",
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-IMP-005",
+      "name": "Corrente de Ferragem",
+      "catalog": "Armas (MAR)",
+      "value_tier": "COMUM",
+      "rationale": "custo relativo BAIXO, tier de runificação R0",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-FLA-001",
+      "name": "Dispositivo de Clarão Simples",
+      "catalog": "Armas (MAR)",
+      "value_tier": "COMUM",
+      "rationale": "custo relativo BAIXO, tier de runificação R0",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-TEC-009",
+      "name": "Escudo Reativo Compacto",
+      "catalog": "Armas (MAR)",
+      "value_tier": "COMUM",
+      "rationale": "custo relativo BAIXO, tier de runificação T0",
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-ESP-003",
+      "name": "Espingarda de Caça Convencional",
+      "catalog": "Armas (MAR)",
+      "value_tier": "COMUM",
+      "rationale": "custo relativo BAIXO, tier de runificação R0",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-ESP-001",
+      "name": "Espingarda de Guarda",
+      "catalog": "Armas (MAR)",
+      "value_tier": "COMUM",
+      "rationale": "custo relativo BAIXO, tier de runificação R1",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-TEC-013",
+      "name": "Faca Vibracional Padrão",
+      "catalog": "Armas (MAR)",
+      "value_tier": "COMUM",
+      "rationale": "custo relativo BAIXO, tier de runificação T0",
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-ARR-001",
+      "name": "Faca de Arremesso Simples",
+      "catalog": "Armas (MAR)",
+      "value_tier": "COMUM",
+      "rationale": "custo relativo BAIXO, tier de runificação R0",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-LAM-001",
+      "name": "Facão de Oficina",
+      "catalog": "Armas (MAR)",
+      "value_tier": "COMUM",
+      "rationale": "custo relativo BAIXO, tier de runificação R1",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-IMP-003",
+      "name": "Ferramenta Adaptada com Matriz Reaproveitada",
+      "catalog": "Armas (MAR)",
+      "value_tier": "COMUM",
+      "rationale": "custo relativo BAIXO, tier de runificação R2",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-PRO-002",
+      "name": "Funda de Sementes Endurecidas",
+      "catalog": "Armas (MAR)",
+      "value_tier": "COMUM",
+      "rationale": "tier de runificação C0 (classe Corrompidos)",
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-FUZ-003",
+      "name": "Fuzil Convencional",
+      "catalog": "Armas (MAR)",
+      "value_tier": "COMUM",
+      "rationale": "custo relativo BAIXO, tier de runificação R0",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-PRE-003",
+      "name": "Fuzil de Longa Distância Convencional",
+      "catalog": "Armas (MAR)",
+      "value_tier": "COMUM",
+      "rationale": "custo relativo BAIXO, tier de runificação R0",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-FUZ-001",
+      "name": "Fuzil de Patrulha",
+      "catalog": "Armas (MAR)",
+      "value_tier": "COMUM",
+      "rationale": "custo relativo BAIXO, tier de runificação R1",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-IMP-001",
+      "name": "Gancho de Ferragem",
+      "catalog": "Armas (MAR)",
+      "value_tier": "COMUM",
+      "rationale": "custo relativo BAIXO, tier de runificação R0",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-RAD-001",
+      "name": "Garra Enraizada Bruta",
+      "catalog": "Armas (MAR)",
+      "value_tier": "COMUM",
+      "rationale": "tier de runificação C0 (classe Corrompidos)",
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-TEC-005",
+      "name": "Garra Retrátil Padrão",
+      "catalog": "Armas (MAR)",
+      "value_tier": "COMUM",
+      "rationale": "custo relativo BAIXO, tier de runificação T0",
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-PRO-001",
+      "name": "Lancador de Esporos Simples",
+      "catalog": "Armas (MAR)",
+      "value_tier": "COMUM",
+      "rationale": "tier de runificação C0 (classe Corrompidos)",
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-LAM-003",
+      "name": "Lâmina Comum de Ferreiro",
+      "catalog": "Armas (MAR)",
+      "value_tier": "COMUM",
+      "rationale": "custo relativo BAIXO, tier de runificação R0",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-TEC-001",
+      "name": "Lâmina de Servo Básica",
+      "catalog": "Armas (MAR)",
+      "value_tier": "COMUM",
+      "rationale": "custo relativo BAIXO, tier de runificação T0",
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-IMP-007",
+      "name": "Machadinha com Matriz Dupla Reaproveitada",
+      "catalog": "Armas (MAR)",
+      "value_tier": "COMUM",
+      "rationale": "custo relativo BAIXO, tier de runificação R2",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-MAG-013",
+      "name": "Pingente de Corrente Latente",
+      "catalog": "Armas (MAR)",
+      "value_tier": "COMUM",
+      "rationale": "custo relativo BAIXO, tier de runificação R0",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-LAM-005",
+      "name": "Punhal Comum de Viajante",
+      "catalog": "Armas (MAR)",
+      "value_tier": "COMUM",
+      "rationale": "custo relativo BAIXO, tier de runificação R0",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-CNT-003",
+      "name": "Rede Mecânica Comum",
+      "catalog": "Armas (MAR)",
+      "value_tier": "COMUM",
+      "rationale": "custo relativo BAIXO, tier de runificação R0",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-CNT-001",
+      "name": "Rede de Ancoragem",
+      "catalog": "Armas (MAR)",
+      "value_tier": "COMUM",
+      "rationale": "custo relativo BAIXO, tier de runificação R1",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-REV-001",
+      "name": "Revólver de Fronteira",
+      "catalog": "Armas (MAR)",
+      "value_tier": "COMUM",
+      "rationale": "custo relativo BAIXO, tier de runificação R0",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "WPN-MAG-009",
+      "name": "Talismã de Fluxo Instável",
+      "catalog": "Armas (MAR)",
+      "value_tier": "COMUM",
+      "rationale": "custo relativo BAIXO, tier de runificação R0",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "PRT-006",
+      "name": "Caldo de Larva-de-Véu",
+      "catalog": "Culinária Preparada",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-007",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "PRT-005",
+      "name": "Grilo-Cobre Torrado",
+      "catalog": "Culinária Preparada",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-001",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "PRT-008",
+      "name": "Prato de Fronteira",
+      "catalog": "Culinária Preparada",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "PRT-001",
+      "name": "Queijo de Pastagem",
+      "catalog": "Culinária Preparada",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "PRT-004",
+      "name": "Ração Âmbar de Emergência",
+      "catalog": "Culinária Preparada",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "EQP-005",
+      "name": "Barraca de Campanha",
+      "catalog": "Equipamento de Suporte",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "EQP-004",
+      "name": "Corda de Escalada",
+      "catalog": "Equipamento de Suporte",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "EQP-002",
+      "name": "Mochila de Carga",
+      "catalog": "Equipamento de Suporte",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "MED-006",
+      "name": "Analgésico de Jardim",
+      "catalog": "Medicamentos",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-007",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "MED-001",
+      "name": "Pomada de Ervas",
+      "catalog": "Medicamentos",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-007",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "MED-007",
+      "name": "Soro Reidratante",
+      "catalog": "Medicamentos",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-007",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "MED-005",
+      "name": "Tônico de Raizel",
+      "catalog": "Medicamentos",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "MIN-BASALT",
+      "name": "Basalto Negro",
+      "catalog": "Minerais",
+      "value_tier": "COMUM",
+      "rationale": "categoria STONE",
+      "currency_tags": [
+        "CUR-013",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "MIN-QUARTZ",
+      "name": "Quartzo de Veio",
+      "catalog": "Minerais",
+      "value_tier": "COMUM",
+      "rationale": "categoria STONE",
+      "currency_tags": [
+        "CUR-009",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "MIN-STONE",
+      "name": "Rocha Estrutural",
+      "catalog": "Minerais",
+      "value_tier": "COMUM",
+      "rationale": "categoria STONE",
+      "currency_tags": [
+        "CUR-003",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "AMMO-005",
+      "name": "Cartucho de Espingarda",
+      "catalog": "Munição",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "AMMO-001",
+      "name": "Cartucho de Fuzil",
+      "catalog": "Munição",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "AMMO-003",
+      "name": "Munição de Revólver",
+      "catalog": "Munição",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "MAT-002",
+      "name": "Borracha de Seiva",
+      "catalog": "Recursos de Artesanato",
+      "value_tier": "COMUM",
+      "rationale": "categoria ORGANIC_SAP",
+      "currency_tags": [
+        "CUR-008",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "MAT-003",
+      "name": "Couro de Manada",
+      "catalog": "Recursos de Artesanato",
+      "value_tier": "COMUM",
+      "rationale": "categoria ORGANIC_HIDE",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "MAT-004",
+      "name": "Fibra de Véu",
+      "catalog": "Recursos de Artesanato",
+      "value_tier": "COMUM",
+      "rationale": "categoria ORGANIC_FIBER",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "MAT-001",
+      "name": "Madeira de Copas",
+      "catalog": "Recursos de Artesanato",
+      "value_tier": "COMUM",
+      "rationale": "categoria ORGANIC_WOOD",
+      "currency_tags": [
+        "CUR-008",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "TRJ-008",
+      "name": "Traje Arbóreo dos Povos das Copas",
+      "catalog": "Vestuário Civil",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-008",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "TRJ-006",
+      "name": "Traje Aristocrático Leve de Altavela",
+      "catalog": "Vestuário Civil",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-006",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "TRJ-002",
+      "name": "Traje Industrial de Couro de Kharveth",
+      "catalog": "Vestuário Civil",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "TRJ-004",
+      "name": "Traje Marítimo de Navyr",
+      "catalog": "Vestuário Civil",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-004",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "TRJ-007",
+      "name": "Traje Medicinal de Rubra-Viva",
+      "catalog": "Vestuário Civil",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-007",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "TRJ-001",
+      "name": "Traje Mercantil de Lúminor",
+      "catalog": "Vestuário Civil",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-001",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "TRJ-009",
+      "name": "Traje Subterrâneo da Liga Subcristal",
+      "catalog": "Vestuário Civil",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-009",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "TRJ-005",
+      "name": "Traje Tecnomágico de Ithra",
+      "catalog": "Vestuário Civil",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "TRJ-015",
+      "name": "Traje de Areia do Vale das Ruinas",
+      "catalog": "Vestuário Civil",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-015",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "TRJ-011",
+      "name": "Traje de Fronteira de Terras Livres",
+      "catalog": "Vestuário Civil",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "TRJ-017",
+      "name": "Traje de Ilheu Etereo",
+      "catalog": "Vestuário Civil",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-017",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "TRJ-014",
+      "name": "Traje de Mineiro da Cadeia de Cinzas",
+      "catalog": "Vestuário Civil",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-014",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "TRJ-016",
+      "name": "Traje de Peles dos Confins de Gelo",
+      "catalog": "Vestuário Civil",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-016",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "TRJ-019",
+      "name": "Traje de Selva da Mata Perdida",
+      "catalog": "Vestuário Civil",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-019",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "TRJ-013",
+      "name": "Traje de Tempestade da Fortaleza do Trovão",
+      "catalog": "Vestuário Civil",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-013",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "TRJ-003",
+      "name": "Uniforme Ferroviário de Ortheon",
+      "catalog": "Vestuário Civil",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-003",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "TRJ-012",
+      "name": "Uniforme de Acolhimento das Zonas de Contenção",
+      "catalog": "Vestuário Civil",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "TRJ-010",
+      "name": "Vestes de Aprendiz dos Reis Magos",
+      "catalog": "Vestuário Civil",
+      "value_tier": "COMUM",
+      "rationale": "nível de preço: BAIXO",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "AMMO-009",
+      "name": "Bateria Padrão",
+      "catalog": "Munição",
+      "value_tier": "INCOMUM",
+      "rationale": "custo relativo MÉDIO, tiers T0-T1",
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "AMMO-010",
+      "name": "Célula de Sobrecarga",
+      "catalog": "Munição",
+      "value_tier": "PRECIOSO",
+      "rationale": "custo relativo ALTO, inclui tier T3 (+1 nível)",
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "RES-001",
+      "name": "Leite veluriano",
+      "catalog": "Recurso",
+      "value_tier": "COMUM",
+      "rationale": "categoria NOURISHMENT (recurso alimentar comum)",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "RES-002",
+      "name": "Leite brumante",
+      "catalog": "Recurso",
+      "value_tier": "COMUM",
+      "rationale": "categoria NOURISHMENT (recurso alimentar comum)",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "RES-003",
+      "name": "Leite de lúmara",
+      "catalog": "Recurso",
+      "value_tier": "COMUM",
+      "rationale": "categoria NOURISHMENT (recurso alimentar comum)",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "RES-004",
+      "name": "Leite âmbar de raizel",
+      "catalog": "Recurso",
+      "value_tier": "COMUM",
+      "rationale": "categoria NOURISHMENT (recurso alimentar comum)",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "RES-005",
+      "name": "Grilo-Cobre preparado",
+      "catalog": "Recurso",
+      "value_tier": "COMUM",
+      "rationale": "categoria NOURISHMENT (recurso alimentar comum)",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "RES-006",
+      "name": "Larva-de-Véu preparada",
+      "catalog": "Recurso",
+      "value_tier": "COMUM",
+      "rationale": "categoria NOURISHMENT (recurso alimentar comum)",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "RES-007",
+      "name": "Polinização luminosa",
+      "catalog": "Recurso",
+      "value_tier": "INCOMUM",
+      "rationale": "categoria ECOSYSTEM_SERVICE (serviço ecológico intangível, difícil de proteger/substituir)",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "RES-008",
+      "name": "Reciclagem de umidade e matéria vegetal",
+      "catalog": "Recurso",
+      "value_tier": "INCOMUM",
+      "rationale": "categoria ECOSYSTEM_SERVICE (serviço ecológico intangível, difícil de proteger/substituir)",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "RES-009",
+      "name": "Toxina de Vespa-de-Vidro",
+      "catalog": "Recurso",
+      "value_tier": "RARO",
+      "rationale": "categoria BIOLOGICAL_HAZARD (risco biológico, exige contenção e resposta médica)",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "RES-010",
+      "name": "Secreção de Besouro-Rubro",
+      "catalog": "Recurso",
+      "value_tier": "RARO",
+      "rationale": "categoria BIOLOGICAL_HAZARD (risco biológico, exige contenção e resposta médica)",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "BLD-FUNDACAO-T1",
+      "name": "Fundação de Madeira",
+      "catalog": "Peça de Construção",
+      "value_tier": "COMUM",
+      "rationale": "tier de material madeira, durabilidade baixa",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "BLD-CHAO-T1",
+      "name": "Chão de Madeira",
+      "catalog": "Peça de Construção",
+      "value_tier": "COMUM",
+      "rationale": "tier de material madeira, durabilidade baixa",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "BLD-PAREDE-T1",
+      "name": "Parede de Madeira",
+      "catalog": "Peça de Construção",
+      "value_tier": "COMUM",
+      "rationale": "tier de material madeira, durabilidade baixa",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "BLD-TETO-T1",
+      "name": "Teto de Madeira",
+      "catalog": "Peça de Construção",
+      "value_tier": "COMUM",
+      "rationale": "tier de material madeira, durabilidade baixa",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "BLD-PORTA-T1",
+      "name": "Porta de Madeira",
+      "catalog": "Peça de Construção",
+      "value_tier": "COMUM",
+      "rationale": "tier de material madeira, durabilidade baixa",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "BLD-JANELA-T1",
+      "name": "Janela de Madeira",
+      "catalog": "Peça de Construção",
+      "value_tier": "COMUM",
+      "rationale": "tier de material madeira, durabilidade baixa",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "BLD-RAMPA-T1",
+      "name": "Rampa de Madeira",
+      "catalog": "Peça de Construção",
+      "value_tier": "COMUM",
+      "rationale": "tier de material madeira, durabilidade baixa",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "BLD-PILAR-T1",
+      "name": "Pilar de Madeira",
+      "catalog": "Peça de Construção",
+      "value_tier": "COMUM",
+      "rationale": "tier de material madeira, durabilidade baixa",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "BLD-FUNDACAO-T2",
+      "name": "Fundação de Pedra Metal",
+      "catalog": "Peça de Construção",
+      "value_tier": "INCOMUM",
+      "rationale": "tier de material pedra/metal, durabilidade media",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "BLD-CHAO-T2",
+      "name": "Chão de Pedra Metal",
+      "catalog": "Peça de Construção",
+      "value_tier": "INCOMUM",
+      "rationale": "tier de material pedra/metal, durabilidade media",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "BLD-PAREDE-T2",
+      "name": "Parede de Pedra Metal",
+      "catalog": "Peça de Construção",
+      "value_tier": "INCOMUM",
+      "rationale": "tier de material pedra/metal, durabilidade media",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "BLD-TETO-T2",
+      "name": "Teto de Pedra Metal",
+      "catalog": "Peça de Construção",
+      "value_tier": "INCOMUM",
+      "rationale": "tier de material pedra/metal, durabilidade media",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "BLD-PORTA-T2",
+      "name": "Porta de Pedra Metal",
+      "catalog": "Peça de Construção",
+      "value_tier": "INCOMUM",
+      "rationale": "tier de material pedra/metal, durabilidade media",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "BLD-JANELA-T2",
+      "name": "Janela de Pedra Metal",
+      "catalog": "Peça de Construção",
+      "value_tier": "INCOMUM",
+      "rationale": "tier de material pedra/metal, durabilidade media",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "BLD-RAMPA-T2",
+      "name": "Rampa de Pedra Metal",
+      "catalog": "Peça de Construção",
+      "value_tier": "INCOMUM",
+      "rationale": "tier de material pedra/metal, durabilidade media",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "BLD-PILAR-T2",
+      "name": "Pilar de Pedra Metal",
+      "catalog": "Peça de Construção",
+      "value_tier": "INCOMUM",
+      "rationale": "tier de material pedra/metal, durabilidade media",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "BLD-FUNDACAO-T3",
+      "name": "Fundação de Runico",
+      "catalog": "Peça de Construção",
+      "value_tier": "RARO",
+      "rationale": "tier de material runico, durabilidade alta",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "BLD-CHAO-T3",
+      "name": "Chão de Runico",
+      "catalog": "Peça de Construção",
+      "value_tier": "RARO",
+      "rationale": "tier de material runico, durabilidade alta",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "BLD-PAREDE-T3",
+      "name": "Parede de Runico",
+      "catalog": "Peça de Construção",
+      "value_tier": "RARO",
+      "rationale": "tier de material runico, durabilidade alta",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "BLD-TETO-T3",
+      "name": "Teto de Runico",
+      "catalog": "Peça de Construção",
+      "value_tier": "RARO",
+      "rationale": "tier de material runico, durabilidade alta",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "BLD-PORTA-T3",
+      "name": "Porta de Runico",
+      "catalog": "Peça de Construção",
+      "value_tier": "RARO",
+      "rationale": "tier de material runico, durabilidade alta",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "BLD-JANELA-T3",
+      "name": "Janela de Runico",
+      "catalog": "Peça de Construção",
+      "value_tier": "RARO",
+      "rationale": "tier de material runico, durabilidade alta",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "BLD-RAMPA-T3",
+      "name": "Rampa de Runico",
+      "catalog": "Peça de Construção",
+      "value_tier": "RARO",
+      "rationale": "tier de material runico, durabilidade alta",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ]
+    },
+    {
+      "item_id": "BLD-PILAR-T3",
+      "name": "Pilar de Runico",
+      "catalog": "Peça de Construção",
+      "value_tier": "RARO",
+      "rationale": "tier de material runico, durabilidade alta",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ]
+    }
+  ],
+  "coverage_note": "Cobertura estendida nesta rodada: +2 AMMO (Bateria), +10 RES (Recurso base), +24 BLD (Peças de Construção) - as 3 lacunas reais confirmadas por auditoria (a hierarquia cobria as demais 11 categorias de item, mas essas 3 tinham 0 entradas)."
+}

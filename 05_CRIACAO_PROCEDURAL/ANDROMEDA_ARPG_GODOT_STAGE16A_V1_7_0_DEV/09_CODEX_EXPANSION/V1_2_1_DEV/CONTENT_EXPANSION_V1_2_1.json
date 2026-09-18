@@ -1,0 +1,249 @@
+{
+  "record_id": "CONTENT-EXPANSION-V1.2.1",
+  "project": "ANDRÔMEDA CÓDEX",
+  "status": "AUTHOR_AUTHORIZED_DEV_PENDING_MASTER_CONSOLIDATION",
+  "source_authority": "Autor — mensagem de 2026-08-16",
+  "permissions": {
+    "create_names_for_unnamed_items": true,
+    "expand_resource_inventory": true,
+    "expand_scene_objects_and_interactions": true,
+    "dungeon_weapon_families": [
+      "SWORD",
+      "CROSSBOW",
+      "BOW",
+      "WHIP"
+    ]
+  },
+  "state_names": {
+    "TECHNOLOGY": "Arquenor",
+    "ROBOTICS": "Ferravox",
+    "MILITARY": "Kharadum",
+    "MAGIC": "Lúmen-Vael",
+    "NATURE": "Sylvarin"
+  },
+  "resource_catalog": [
+    {
+      "id": "MIN-IRON",
+      "name": "Ferral Bruto",
+      "kind": "METAL"
+    },
+    {
+      "id": "MIN-COPPER",
+      "name": "Cobrex Condutor",
+      "kind": "METAL"
+    },
+    {
+      "id": "MIN-TIN",
+      "name": "Estanho Nimbo",
+      "kind": "METAL"
+    },
+    {
+      "id": "MIN-SILVER",
+      "name": "Argêntea Pálida",
+      "kind": "PRECIOUS_METAL"
+    },
+    {
+      "id": "MIN-GOLD",
+      "name": "Aúreo Solar",
+      "kind": "PRECIOUS_METAL"
+    },
+    {
+      "id": "MIN-CRYSTAL",
+      "name": "Cristal Rúnico",
+      "kind": "MAGIC_MINERAL"
+    },
+    {
+      "id": "MIN-MANA-ORE",
+      "name": "Manalita",
+      "kind": "MAGIC_MINERAL"
+    },
+    {
+      "id": "MIN-VOID-GLASS",
+      "name": "Vidro Umbral",
+      "kind": "MAGIC_MINERAL"
+    },
+    {
+      "id": "MIN-STONE",
+      "name": "Rocha Estrutural",
+      "kind": "STONE"
+    },
+    {
+      "id": "MIN-BASALT",
+      "name": "Basalto Negro",
+      "kind": "STONE"
+    },
+    {
+      "id": "MIN-QUARTZ",
+      "name": "Quartzo de Veio",
+      "kind": "STONE"
+    },
+    {
+      "id": "MIN-RARE",
+      "name": "Liga-Núcleo Bruta",
+      "kind": "RARE_MINERAL"
+    },
+    {
+      "id": "MIN-TITAN",
+      "name": "Titanita Cinzenta",
+      "kind": "RARE_MINERAL"
+    },
+    {
+      "id": "MIN-ROBOTIUM",
+      "name": "Robotita Azul",
+      "kind": "TECH_MINERAL"
+    },
+    {
+      "id": "MIN-MAGNETITE",
+      "name": "Magnetita de Pulso",
+      "kind": "TECH_MINERAL"
+    },
+    {
+      "id": "MIN-ROOT-SHARD",
+      "name": "Fragmento Radicular",
+      "kind": "CORRUPTED_MINERAL"
+    }
+  ],
+  "flora_names": {
+    "FLR-GRAIN": "Grão-de-Sol",
+    "FLR-PASTURE": "Capim Velário",
+    "FLR-HARDWOOD": "Madeira-Forte de Syl",
+    "FLR-MEDICINAL": "Erva Serenal",
+    "FLR-RUNIC_MOSS": "Musgo Rúnico",
+    "FLR-FROST_REED": "Junco de Geada",
+    "FLR-DESERT_SHRUB": "Arbusto Cinzabrasa"
+  },
+  "fauna_names": {
+    "FAU-GRAZER": "Ruminante de Veldra",
+    "FAU-BROWSER": "Folhívoro de Dossel",
+    "FAU-SCAVENGER": "Varredor Cinzento",
+    "FAU-PREDATOR-L": "Rasga-Mato",
+    "FAU-PREDATOR-M": "Velúrio-Cinzento",
+    "FAU-PREDATOR-H": "Quebra-Casca",
+    "FAU-INSECT-POLL": "Lúmen-Polinizador",
+    "FAU-INSECT-HIVE": "Ferra-Colmeia",
+    "FAU-ROOT-PREDATOR": "Predador Radicular"
+  },
+  "dungeon_weapons": [
+    {
+      "item_ref": "WPN-DNG-SWORD-001",
+      "name": "Espada do Vigia Caído",
+      "family": "SWORD",
+      "tier": "MÉDIO",
+      "base_durability": 74,
+      "stats": {
+        "power": 58,
+        "handling": 62,
+        "reach": 48,
+        "utility": 44
+      }
+    },
+    {
+      "item_ref": "WPN-DNG-CROSSBOW-001",
+      "name": "Besta de Ferrolho Antiga",
+      "family": "CROSSBOW",
+      "tier": "MÉDIO",
+      "base_durability": 68,
+      "stats": {
+        "power": 70,
+        "handling": 42,
+        "reach": 82,
+        "utility": 47
+      }
+    },
+    {
+      "item_ref": "WPN-DNG-BOW-001",
+      "name": "Arco de Galho Negro",
+      "family": "BOW",
+      "tier": "BAIXO",
+      "base_durability": 61,
+      "stats": {
+        "power": 55,
+        "handling": 68,
+        "reach": 78,
+        "utility": 52
+      }
+    },
+    {
+      "item_ref": "WPN-DNG-WHIP-001",
+      "name": "Chicote de Corrente Velária",
+      "family": "WHIP",
+      "tier": "ALTO",
+      "base_durability": 79,
+      "stats": {
+        "power": 50,
+        "handling": 72,
+        "reach": 66,
+        "utility": 76
+      }
+    }
+  ],
+  "named_item_catalog": {
+    "ITEM-TORCH": "Tocha de Breu Claro",
+    "ITEM-OLD-KEY": "Chave de Ferro Gasto",
+    "ITEM-RUNE-DUST": "Pó Rúnico",
+    "ITEM-MANA-CRYSTAL": "Cristal de Mana",
+    "ITEM-FOOD": "Ração de Viagem",
+    "ITEM-WATER": "Água de Cantil",
+    "ITEM-TOOL": "Ferramenta de Campo",
+    "ITEM-CIRCUIT": "Circuito Modular",
+    "ITEM-SENSOR": "Sensor de Pulso",
+    "ITEM-SERVO": "Servo Articulado",
+    "ITEM-ACTUATOR": "Atuador de Força",
+    "ITEM-GRAIN": "Saco de Grão-de-Sol",
+    "ITEM-FRUIT": "Fruta de Veldra",
+    "ITEM-ARMOR": "Armadura de Serviço",
+    "ITEM-HERB": "Erva Serenal Seca",
+    "ITEM-ENERGY-CELL": "Célula de Energia",
+    "ITEM-PERSONAL": "Pertence Pessoal",
+    "ITEM-FAUNA-RESOURCE": "Recurso Faunístico Processável",
+    "WPN-DNG-SWORD-001": "Espada do Vigia Caído",
+    "WPN-DNG-CROSSBOW-001": "Besta de Ferrolho Antiga",
+    "WPN-DNG-BOW-001": "Arco de Galho Negro",
+    "WPN-DNG-WHIP-001": "Chicote de Corrente Velária",
+    "MIN-IRON": "Ferral Bruto",
+    "MIN-COPPER": "Cobrex Condutor",
+    "MIN-TIN": "Estanho Nimbo",
+    "MIN-SILVER": "Argêntea Pálida",
+    "MIN-GOLD": "Aúreo Solar",
+    "MIN-CRYSTAL": "Cristal Rúnico",
+    "MIN-MANA-ORE": "Manalita",
+    "MIN-VOID-GLASS": "Vidro Umbral",
+    "MIN-STONE": "Rocha Estrutural",
+    "MIN-BASALT": "Basalto Negro",
+    "MIN-QUARTZ": "Quartzo de Veio",
+    "MIN-RARE": "Liga-Núcleo Bruta",
+    "MIN-TITAN": "Titanita Cinzenta",
+    "MIN-ROBOTIUM": "Robotita Azul",
+    "MIN-MAGNETITE": "Magnetita de Pulso",
+    "MIN-ROOT-SHARD": "Fragmento Radicular",
+    "ITEM-HARVEST-FLR-GRAIN": "Colheita de Grão-de-Sol",
+    "ITEM-HARVEST-FLR-PASTURE": "Colheita de Capim Velário",
+    "ITEM-HARVEST-FLR-HARDWOOD": "Colheita de Madeira-Forte de Syl",
+    "ITEM-HARVEST-FLR-MEDICINAL": "Colheita de Erva Serenal",
+    "ITEM-HARVEST-FLR-RUNIC_MOSS": "Colheita de Musgo Rúnico",
+    "ITEM-HARVEST-FLR-FROST_REED": "Colheita de Junco de Geada",
+    "ITEM-HARVEST-FLR-DESERT_SHRUB": "Colheita de Arbusto Cinzabrasa",
+    "ITEM-FAUNA-FAU-GRAZER": "Recurso de Ruminante de Veldra",
+    "ITEM-FAUNA-FAU-BROWSER": "Recurso de Folhívoro de Dossel",
+    "ITEM-FAUNA-FAU-SCAVENGER": "Recurso de Varredor Cinzento",
+    "ITEM-FAUNA-FAU-PREDATOR-L": "Recurso de Rasga-Mato",
+    "ITEM-FAUNA-FAU-PREDATOR-M": "Recurso de Velúrio-Cinzento",
+    "ITEM-FAUNA-FAU-PREDATOR-H": "Recurso de Quebra-Casca",
+    "ITEM-FAUNA-FAU-INSECT-POLL": "Recurso de Lúmen-Polinizador",
+    "ITEM-FAUNA-FAU-INSECT-HIVE": "Recurso de Ferra-Colmeia",
+    "ITEM-FAUNA-FAU-ROOT-PREDATOR": "Recurso de Predador Radicular"
+  },
+  "scene_object_types": [
+    "DOOR",
+    "TRAPDOOR",
+    "CHAIR",
+    "BOOK",
+    "TORCH",
+    "GROUND_WEAPON",
+    "CHEST",
+    "LEVER",
+    "RUNE_PEDESTAL",
+    "CONSOLE"
+  ],
+  "authority_policy": "Names and catalog additions are author-authorized; sealed Master V2.0.1 remains unchanged until explicit Master consolidation."
+}

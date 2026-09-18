@@ -1,0 +1,35 @@
+{
+  "loc_id": "LOC-018-001",
+  "record_id": "LOC-018-001",
+  "name": "Cúpula da Trincheira",
+  "parent_subregion": "SUB-018-001",
+  "function": "Estação de exploração e extração mineral na Trincheira Profunda.",
+  "notable_link": "TER-018 Fossa Abissal (fase 51, território novo)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "settlement_tier": "CIDADE",
+  "history": "A cúpula foi erguida em etapas — o núcleo central é trinta anos mais velho que os anéis externos, construídos um a um conforme a extração mineral provava ser lucrativa o bastante pra justificar o risco de expandir mais fundo. Cada anel novo tem uma pequena placa de bronze com a data de fechamento e o nome de quem morreu selando o casco; os moradores chamam isso de custo registrado, nunca de tragédia. O anel mais recente, o quarto, foi selado há apenas dois anos — é o único que ainda cheira a resina nova em vez de décadas de umidade reciclada, e os moradores mais antigos evitam morar nele por um motivo que ninguém declara em voz alta: nenhum dos anéis anteriores foi selado tão rápido, e rapidez, na Cúpula, é sinônimo de corte de segurança.",
+  "sensory": "Uma cúpula de vidro-runa reforçado pressiona contra o peso de uma coluna d'água que ninguém consegue ver o fim. A luz é sempre azul-esverdeada, filtrada — os moradores de superfície levam meses pra parar de sentir o peito apertado só de olhar pra cima e não ver céu, só água escura e o brilho ocasional de alguma criatura profunda passando longe demais pra identificar. O ronco constante das bombas de pressão é o som de fundo de toda conversa; visitantes de fora aprendem rápido a levantar a voz sem perceber que estão fazendo isso. O ar tem um gosto metálico permanente que ninguém de dentro nota mais, exceto nos raros momentos de silêncio total, quando as bombas trocam de ciclo e o mundo inteiro parece prender a respiração por um segundo antes do ronco voltar.",
+  "social_structure": "A Cúpula se organiza por proximidade ao núcleo central, não por riqueza declarada — quem mora perto do núcleo tem acesso mais rápido às bombas em caso de falha e cotas de ar maiores; quem mora nos anéis externos, principalmente no quarto anel novo, vive com cotas apertadas e sabe disso todos os dias. Ninguém chama isso de classe social, mas todo mundo sabe em qual anel nasceu e em qual anel provavelmente vai morrer.",
+  "daily_life": "Turnos são medidos em ciclos de bomba, não em horas de relógio — todo mundo sabe quanto tempo até a próxima troca de pressão só pelo som do maquinário mudando de ritmo. Comer junto no refeitório central antes de um turno de descida é quase ritual: ninguém desce sozinho sem ter comido na frente de pelo menos uma outra pessoa, um costume que começou como segurança prática e virou superstição. Moradores do quarto anel raramente são convidados a esse refeitório, e a maioria nem tenta.",
+  "figures": [
+    {
+      "role": "Chefe de Pressão",
+      "name": "Engenheira Dessa Voll",
+      "note": "Responsável por decidir, todo turno, quanto mais fundo a cúpula pode se deslocar antes do casco reclamar — uma decisão que ela nunca compartilha até estar tomada. Herdou o cargo do próprio pai, que morreu selando um dos anéis externos; carrega isso como razão pra nunca arriscar o casco além do estritamente calculado. Foi contra a velocidade de selagem do quarto anel e perdeu a discussão — publicamente aceitou a derrota, mas nunca mais falou diretamente com quem aprovou o projeto."
+    },
+    {
+      "role": "Corretora de veias",
+      "name": "Sil Amarga",
+      "note": "Compra e revende direitos de extração sobre veias minerais ainda não confirmadas — aposta que ninguém mais quer fazer. Tem uma rivalidade pessoal com Dessa Voll, que já recusou autorizar três das apostas de Sil por considerar o risco de casco alto demais. Financiou parte da construção do quarto anel, o que a torna, sem querer admitir publicamente, corresponsável por qualquer coisa que dê errado ali."
+    },
+    {
+      "role": "Moradora do quarto anel",
+      "name": "Petra Younn",
+      "note": "Mudou-se pro anel novo há dois anos porque era a única moradia que conseguia pagar, e desde então acumula pequenos sinais que ninguém mais parece notar: um zumbido fraco no vidro-runa perto da própria cabana, um cheiro de resina que nunca desaparece de vez. Já tentou reportar duas vezes; ambas as vezes foi dispensada como moradora nova demais pra saber diferenciar barulho normal de problema real."
+    }
+  ],
+  "hook": "Uma veia mineral rica foi encontrada fundo demais pra qualquer draga atual alcançar com segurança — e Sil Amarga já está oferecendo Cred o bastante pra convencer um piloto imprudente a tentar mesmo assim, sem passar pela autorização de Dessa Voll.",
+  "secondary_hook": "As placas de bronze do quarto anel têm um nome a menos do que deveriam — um engenheiro que morreu selando o casco nunca foi registrado oficialmente, e a família dele, na superfície, ainda acredita que ele está vivo e trabalhando por contrato longo. Petra Younn descobriu o nome que falta por acidente, procurando outra coisa nos registros do anel.",
+  "detail": "Na Cúpula, dívida não se cobra em Cred: cobra-se em turnos de ar — cada pessoa tem uma cota de tempo fora da área pressurizada segura, e vender parte da própria cota é o empréstimo mais comum, e mais perigoso, da cidade. Um morador com a cota vendida demais é reconhecível pelo jeito como evita qualquer conversa sobre planos de longo prazo.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION"]
+}

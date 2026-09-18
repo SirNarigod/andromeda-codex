@@ -1,0 +1,142 @@
+{
+  "record_id": "ANIMAL-CREATURE-BRAIN-ECOLOGICAL-BEHAVIOR-CONTRACT-V1.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "module": "LIVING_SIMULATION_ENGINE",
+  "stage": "ETAPA_07",
+  "version": "V1.0",
+  "baseline": {
+    "master_version": "V2.0.1",
+    "release_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "access": "READ_ONLY"
+  },
+  "authority_boundary": {
+    "canonical_fauna_source": "03_DOMAINS/SPATIALIZATION/02_DISTRIBUICOES/STELLAR_FAUNA_DISTRIBUTION_V1_0.json",
+    "canonical_fauna_count": 64,
+    "canonical_fields_used": [
+      "species_ref",
+      "name",
+      "territory distribution",
+      "biome distribution",
+      "routes/provenance"
+    ],
+    "runtime_only_fields": [
+      "diet",
+      "social_structure",
+      "cognition_mode",
+      "activity_mode",
+      "thresholds",
+      "growth/predation rates",
+      "territoriality",
+      "risk tolerance",
+      "range excursion"
+    ],
+    "rule": "Runtime profiles and food-web links MUST NOT be promoted to canon automatically."
+  },
+  "individual_state": {
+    "kinds": [
+      "ANIMAL",
+      "CREATURE"
+    ],
+    "needs": [
+      "hunger",
+      "thirst",
+      "energy",
+      "reproduction_drive",
+      "threat_pressure"
+    ],
+    "spatial": [
+      "territory_ref",
+      "biome_ref",
+      "home_territory_ref"
+    ],
+    "life": [
+      "age_days",
+      "mature",
+      "parent_refs"
+    ]
+  },
+  "decision_cycle": [
+    "ECOLOGICAL_OBSERVATION",
+    "BIOLOGICAL_STATE",
+    "PROFILE",
+    "UTILITY_SCORING",
+    "CANDIDATE_INTENT",
+    "INTENT_VALIDATOR",
+    "ACTION",
+    "EVENT",
+    "CONSEQUENCE",
+    "TERRITORIAL_MEMORY"
+  ],
+  "actions": {
+    "ECO_FORAGE": "consume bounded resource and reduce hunger",
+    "ECO_DRINK": "consume bounded water and reduce thirst",
+    "ECO_REST": "recover energy",
+    "ECO_FLEE": "respond to threat with energy cost",
+    "ECO_MIGRATE": "change territory only after habitat/range validation",
+    "ECO_HUNT": "predation with target lifecycle protection",
+    "ECO_REPRODUCE": "validated pair action followed by idempotent runtime-born child materialization",
+    "ECO_PATROL": "baseline territorial routine"
+  },
+  "groups": {
+    "structures": [
+      "HERD",
+      "PACK",
+      "FLOCK",
+      "SCHOOL",
+      "SWARM",
+      "COLONY",
+      "PAIR"
+    ],
+    "roles": [
+      "LEADER",
+      "MEMBER",
+      "JUVENILE",
+      "SCOUT",
+      "GUARD"
+    ],
+    "leader_resolution": "explicit LEADER role then rank_score then stable runtime ref",
+    "capacity": "bounded by runtime species profile"
+  },
+  "territorial_memory": {
+    "append_only": true,
+    "signals": [
+      "food_score",
+      "water_score",
+      "danger_score",
+      "success_score"
+    ],
+    "use": "migration preference only; does not rewrite canonical distribution"
+  },
+  "aggregate_ecology": {
+    "population_state": "runtime materialized + append-only delta ledger",
+    "food_web": "runtime relation, explicit not inferred from Master",
+    "routine_tick": "bounded logistic/resource/climate growth plus bounded same-territory predation",
+    "offline": "ROUTINE_SAFE only; no extraordinary migration/settlement escalation",
+    "routine_change_cap_fraction_max": 0.1
+  },
+  "offline_policy": {
+    "individual_autonomous_decisions": "BLOCKED",
+    "bounded_population_routine": "ALLOWED",
+    "extraordinary_population_migration": "BLOCKED",
+    "cross_territory_cascade": "BLOCKED_BY_ROUTINE_DESIGN"
+  },
+  "safety_invariants": [
+    "No negative individual biological resource caused by a validated ecological decision path.",
+    "No negative population count.",
+    "Narrative death protection blocks predation.",
+    "Canonical fauna snapshots are immutable.",
+    "Unknown territory/biome refs fail closed.",
+    "Same reproduction event materializes at most one child.",
+    "Shared resources use optimistic version preconditions; conflicts are safe retry outcomes.",
+    "Population routine tick is idempotent by world_instance_id + tick_key.",
+    "Integrity failure blocks world through CORRUPT_BLOCKED."
+  ],
+  "non_goals": [
+    "No geometry-based vision/hearing producer yet.",
+    "No genetics/evolution engine yet.",
+    "No disease/pathogen simulation yet.",
+    "No weather engine authored in this stage.",
+    "No LLM authority for animal actions.",
+    "No canonical diet/aggression inference from missing source data."
+  ]
+}

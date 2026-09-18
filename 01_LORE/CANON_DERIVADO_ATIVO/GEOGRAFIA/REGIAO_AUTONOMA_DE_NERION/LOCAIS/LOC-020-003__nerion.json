@@ -1,0 +1,30 @@
+{
+  "loc_id": "LOC-020-003",
+  "record_id": "LOC-020-003",
+  "name": "Oficina Alber-Vaelkor",
+  "parent_subregion": "SUB-020-002",
+  "function": "Laboratório fundador e centro de reparo de chassis.",
+  "notable_link": "TER-020 Nérion — Região Autônoma dos Despertos",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "settlement_tier": "COMPLEXO",
+  "history": "Depois do despertar, as bancadas foram seladas; reabri-las virou o primeiro ato de soberania e a primeira ferida política de Nérion.",
+  "figures": [
+    {
+      "name": "Nicolar Alber",
+      "note": "ausente, mas presente nos protocolos"
+    },
+    {
+      "name": "R-12 Cobre",
+      "note": "chefe de reparo que quer preservar o laboratório"
+    }
+  ],
+  "hook": "Um chassi inacabado apresenta atividade nervosa sem núcleo instalado.",
+  "secondary_hook": "A disputa local revela uma escolha difícil entre autonomia, segurança e memória.",
+  "detail": "Reparos são pagos em horas de oficina oferecidas à comunidade.",
+  "prohibitions": [
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION",
+    "NO_NAME_FOR_MYSTERIOUS_MAGE_YET"
+  ],
+  "sensory": "Óleo, ozônio e incenso rúnico cobrem bancadas que ainda se movem sozinhas."
+}

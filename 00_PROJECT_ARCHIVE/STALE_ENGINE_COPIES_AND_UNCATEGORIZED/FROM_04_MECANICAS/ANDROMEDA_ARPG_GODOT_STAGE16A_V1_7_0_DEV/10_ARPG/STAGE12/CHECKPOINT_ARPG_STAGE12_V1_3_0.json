@@ -1,0 +1,72 @@
+{
+  "record_id": "CHECKPOINT-ARPG-STAGE12-V1.3.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "stage": "12/23",
+  "stage_name": "QUESTS / NARRATIVE / CULTURE",
+  "version": "V1.3.0",
+  "parent": "CHECKPOINT-ARPG-STAGE11-V1.2.0",
+  "status": "PASS",
+  "result": "ARPG_STAGE12_RELEASE_READY",
+  "tests": {
+    "record_id": "ARPG-STAGE12-TEST-SUMMARY-V1.3.0",
+    "unit": {
+      "checks": 20,
+      "passed": 20,
+      "failed": 0
+    },
+    "persistence": {
+      "checks": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "validation": {
+      "checks": 45,
+      "passed": 45,
+      "failed": 0
+    },
+    "stress": {
+      "checks": 30,
+      "passed": 30,
+      "failed": 0,
+      "profiles": 4
+    },
+    "stage11_regression": {
+      "tests": 21,
+      "passed": 21,
+      "failed": 0
+    },
+    "master_regression": {
+      "suites": 29,
+      "checks": 393,
+      "passed": 393,
+      "failed": 0
+    },
+    "canonical_mutations": 0,
+    "open_corrections": 0,
+    "status": "PASS",
+    "country_v15_regression": {
+      "checks": 24,
+      "passed": 24,
+      "failed": 0,
+      "breakdown": {
+        "core": 7,
+        "gameplay": 6,
+        "integration": 5,
+        "security_persistence": 6
+      },
+      "status": "PASS"
+    },
+    "candidate_restore": {
+      "functional": "20/20 PASS",
+      "persistence": "1/1 PASS",
+      "validation": "45/45 PASS",
+      "stress": "30/30 PASS"
+    }
+  },
+  "canon_guard": "PASS",
+  "godot_required": false,
+  "backup_authorized": true,
+  "release_authorized": true,
+  "next_stage": 13,
+  "candidate_restore": "PASS"
+}

@@ -1,0 +1,11 @@
+{
+  "record_id": "SUB-003-002", "record_kind": "DERIVED_SUBREGION_PROFILE", "authority": "CANON_DERIVADO_ATIVO", "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Distrito das Oficinas Ferroviárias", "parent_political_unit": "TER-003",
+  "provenance": {"approval": "GAMEPLAY_DERIVED_DEV_SOURCE", "r2_anchors": ["TER-003"], "compatibility": "Camada administrativa e narrativa local; não cria fronteira, cidade, soberania ou nova autoridade."},
+  "function": "Manutenção e construção de locomotivas e vagões da rede ferroviária.",
+  "locality_references": ["LOC-003-002 Pátio de Manutenção"],
+  "permitted_catalog_links": {"npc_roles": ["classe:Androids"], "professions": ["mecânico"], "encounters": [], "resources": []},
+  "local_conflicts": ["modernização tecnológica versus empregos tradicionais de manutenção"],
+  "prohibitions": ["NO_NEW_SOVEREIGNTY", "NO_AUTOMATIC_KENUA_SCENE", "NO_R2_EPISODE_REWRITE", "NO_FIXED_BORDER_COORDINATE"],
+  "story_generators": ["A introdução de unidades sintéticas na oficina gera resistência dos mecânicos veteranos."]
+}

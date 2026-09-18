@@ -1,0 +1,101 @@
+{
+  "record_id": "ARPG-STAGE16B-GODOT-ACCEPTANCE-MATRIX-V0.7.0",
+  "stage": "16B/23",
+  "status": "SPECIFICATION_READY_UI_LOADOUT_REVISION",
+  "gates": [
+    {
+      "id": "G16B-01",
+      "requirement": "Godot starts with zero parser/runtime errors and existing V1.5 runtime gate remains PASS."
+    },
+    {
+      "id": "G16B-02",
+      "requirement": "Left click ground moves; left click target selects without unintended movement interruption; left click loot approaches/picks."
+    },
+    {
+      "id": "G16B-03",
+      "requirement": "Right click is click-only contextual action; hostile chase/attack respects cooldown."
+    },
+    {
+      "id": "G16B-04",
+      "requirement": "Pickup impossible above 0.5m, through blocker, or before drop settles."
+    },
+    {
+      "id": "G16B-05",
+      "requirement": "Tree/rock/ore/flora/agriculture/hunt/fish/enemy physical output appears as Ground Loot before inventory."
+    },
+    {
+      "id": "G16B-06",
+      "requirement": "Auto Pickup ON/OFF works, persists, and never interrupts attack/movement."
+    },
+    {
+      "id": "G16B-07",
+      "requirement": "Terrain has subtle relief; movement stable; no micro-collision snagging/camera jitter; no body-balance mechanic."
+    },
+    {
+      "id": "G16B-08",
+      "requirement": "Slope+surface+load affect authoritative stamina; yellow radial player-adjacent stamina circle depletes/refills and disappears completely at 100% when inactive."
+    },
+    {
+      "id": "G16B-09",
+      "requirement": "Large logical areas stream by cells; only active+preload detailed; distant area remains Living SYSTEMIC."
+    },
+    {
+      "id": "G16B-10",
+      "requirement": "Realtime NPC dialogue uses rounded white bubble, gray normal text, light-orange important text, no Next button, no world pause."
+    },
+    {
+      "id": "G16B-11",
+      "requirement": "NPC names appear on hover only; multiple NPC conversations alternate without bubble spam; choices appear near NPC."
+    },
+    {
+      "id": "G16B-12",
+      "requirement": "Important dialogue simultaneously appears in world bubble and subtle bottom accessibility line."
+    },
+    {
+      "id": "G16B-13",
+      "requirement": "HUD remains minimal/contextual; enemy bars stable/straight; alpha HP+shield; inventory toggled with I; HUD/inventory/dialogue share white rounded legible UI language."
+    },
+    {
+      "id": "G16B-14",
+      "requirement": "Camera stays stable over micro-relief, zoom clamps, occluders fade, no forced combat zoom/free orbit; mouse wheel zoom works only while zoom modifier is held."
+    },
+    {
+      "id": "G16B-15",
+      "requirement": "Game-feel feedback never changes gameplay result; local hit freeze only; reduced-motion disables camera impulse/local freeze."
+    },
+    {
+      "id": "G16B-16",
+      "requirement": "Vendor requires explicit quote/execute; approaching/clicking shop never auto-purchases."
+    },
+    {
+      "id": "G16B-17",
+      "requirement": "Save/reload preserves player, world, Ground Loot, Auto Pickup, quest/economy and death recovery state."
+    },
+    {
+      "id": "G16B-18",
+      "requirement": "Death exits dungeon where applicable, respawns at safe waypoint, preserves XP/items under Stage15 policy."
+    },
+    {
+      "id": "G16B-19",
+      "requirement": "Full vertical slice spawn→explore→dialogue→quest→combat→loot→gather→vendor→save→death→respawn completes without debugger errors."
+    },
+    {
+      "id": "G16B-20",
+      "requirement": "No canonical Master mutation; Stage16A 143/143 + stress20/20 and touched regressions remain PASS after Godot implementation."
+    },
+    {
+      "id": "G16B-21",
+      "requirement": "Player quick loadout exposes exactly 2 weapon slots; inventory may contain more weapons; only one slot is active/equipped in MAIN_HAND at a time and inactive weapon modifiers do not stack."
+    },
+    {
+      "id": "G16B-22",
+      "requirement": "Keys 1/2 activate their weapon slots; unmodified mouse wheel toggles weapons; modifier+wheel zooms; menu/UI wheel scroll does not swap weapon or zoom."
+    },
+    {
+      "id": "G16B-23",
+      "requirement": "Dialogue, inventory, vendors, crafting, tooltips, choices and HUD share the unified white/off-white rounded clean-console UI family with rounded legible gray text and soft-orange important text; no copied Nintendo/Zelda assets."
+    }
+  ],
+  "pass_rule": "ALL_23_MANDATORY_GATES_PASS_AND_ZERO_OPEN_DEBUGGER_ERRORS",
+  "backup_rule": "NO_STAGE16_FINAL_BACKUP_UNTIL_STAGE16B_PASS"
+}

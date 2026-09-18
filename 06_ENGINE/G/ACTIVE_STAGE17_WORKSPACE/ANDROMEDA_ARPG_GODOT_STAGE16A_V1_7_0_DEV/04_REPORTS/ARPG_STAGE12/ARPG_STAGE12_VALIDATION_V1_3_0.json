@@ -1,0 +1,234 @@
+{
+  "record_id": "ARPG-STAGE12-VALIDATION-V1.3.0",
+  "checks": 45,
+  "passed": 45,
+  "failed": 0,
+  "status": "PASS",
+  "results": [
+    {
+      "check": "health",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "culture_identity",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "culture_count",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "language_guard",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "belief_guard",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "reputation_contextual",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "culture_ref_SOC-PROP-FND-011",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "culture_ref_SOC-PROP-ETQ-011",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "culture_ref_SOC-PROP-REP-011",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "culture_ref_SOC-PROP-TRB-011",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "culture_ref_SOC-PROP-CFL-011",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "culture_ref_SOC-PROP-HOS-011",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "culture_ref_SOC-PROP-EDU-011",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "culture_ref_SOC-PROP-ORA-011",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "culture_ref_SOC-PROP-CIV-011",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "culture_ref_SOC-PROP-RIT-011",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "culture_ref_SOC-PROP-ESP-011",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "culture_ref_SOC-PROP-FUN-011",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "culture_ref_SOC-PROP-LUT-011",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "culture_ref_SOC-PROP-UNI-011",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "culture_ref_SOC-PROP-JOG-011",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "culture_ref_SOC-PROP-LAZ-011",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "culture_ref_SOC-PROP-CEL-011",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "culture_ref_SOC-PROP-SIM-011",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "culture_ref_SOC-PROP-ALI-011",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "culture_ref_SOC-PROP-REF-011",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "culture_ref_SOC-PROP-VES-011",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "culture_ref_SOC-PROP-MUS-011",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "culture_ref_SOC-PROP-ART-011",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "culture_ref_SOC-PROP-COM-031",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "culture_ref_SOC-PROP-COM-033",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "culture_ref_SOC-PROP-FAM-011",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "faction_guard_FAC-009",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "faction_guard_FAC-010",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "global_anchor_count",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "spoiler3_hidden",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "no_auto_spatialize",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "quest_count",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "dialogue_count",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "orientation_objective",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "orientation_turnin",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "bridge_rejects_down",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "bridge_accepts_up",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "tech_objective_real_state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "verify_final",
+      "status": "PASS",
+      "detail": null
+    }
+  ]
+}

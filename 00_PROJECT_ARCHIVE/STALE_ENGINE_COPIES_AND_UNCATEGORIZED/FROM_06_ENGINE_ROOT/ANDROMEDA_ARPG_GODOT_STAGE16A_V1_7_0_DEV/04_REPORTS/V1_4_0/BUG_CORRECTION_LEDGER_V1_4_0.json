@@ -1,0 +1,90 @@
+{
+  "record_id": "BUG-CORRECTION-LEDGER-V1.4.0",
+  "version": "V1.4.0",
+  "method": "test -> fail -> correct -> restart relevant full validation",
+  "bugs": [
+    {
+      "id": "V1.4-001",
+      "title": "signed chunk parser failed on negative coordinates",
+      "status": "CLOSED"
+    },
+    {
+      "id": "V1.4-002",
+      "title": "active entity ownership could point to unloaded chunks",
+      "status": "CLOSED"
+    },
+    {
+      "id": "V1.4-003",
+      "title": "LOD6 scene objects lacked coordinates",
+      "status": "CLOSED"
+    },
+    {
+      "id": "V1.4-004",
+      "title": "Atlas projection leaked mutable nested references",
+      "status": "CLOSED"
+    },
+    {
+      "id": "V1.4-005",
+      "title": "dungeon scene objects could be spatially far from dungeon",
+      "status": "CLOSED"
+    },
+    {
+      "id": "V1.4-006",
+      "title": "country travel reported duration without advancing world clock",
+      "status": "CLOSED"
+    },
+    {
+      "id": "V1.4-007",
+      "title": "dungeon entry did not transfer ownership and used wrong scene field",
+      "status": "CLOSED"
+    },
+    {
+      "id": "V1.4-008",
+      "title": "inventory reconciliation erased subregion coordinate centers",
+      "status": "CLOSED"
+    },
+    {
+      "id": "V1.4-009",
+      "title": "Dungeon Graph keys were outside hierarchical inventory",
+      "status": "CLOSED"
+    },
+    {
+      "id": "V1.4-010",
+      "title": "loaded chunk set leaked across repeated travels",
+      "status": "CLOSED"
+    },
+    {
+      "id": "V1.4-011",
+      "title": "spatial subregion and inventory subregion used conflicting authorities",
+      "status": "CLOSED"
+    },
+    {
+      "id": "V1.4-012",
+      "title": "DungeonGraph.move used dungeon_id instead of official scene_id",
+      "status": "CLOSED"
+    },
+    {
+      "id": "V1.4-013",
+      "title": "Atlas route layer invented derived corridors instead of canonical routes",
+      "status": "CLOSED"
+    },
+    {
+      "id": "V1.4-014",
+      "title": "integrated world could not rehydrate after full process restart",
+      "status": "CLOSED"
+    },
+    {
+      "id": "V1.4-015",
+      "title": "CountryScale version/schema metadata remained stale",
+      "status": "CLOSED"
+    },
+    {
+      "id": "V1.4-016",
+      "title": "Country LOD lacked PUBLIC vs ADMIN projection guard",
+      "status": "CLOSED"
+    }
+  ],
+  "closed": 16,
+  "open": 0,
+  "status": "PASS"
+}

@@ -1,0 +1,59 @@
+{
+  "record_id": "ARPG-STAGE03-TEST-SUMMARY-V0.4.0",
+  "stage": "03/18",
+  "stage03": {
+    "unit": {
+      "checks": 14,
+      "passed": 14,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "validation": {
+      "checks": 67,
+      "passed": 67,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "stress": {
+      "checks": 17,
+      "passed": 17,
+      "failed": 0,
+      "status": "PASS"
+    }
+  },
+  "regression": {
+    "stage02": {
+      "checks": 51,
+      "passed": 51,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "stage01": {
+      "checks": 58,
+      "passed": 58,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "stage00": {
+      "checks": 51,
+      "passed": 51,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "v15_critical": {
+      "checks": 24,
+      "passed": 24,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "master": {
+      "suites": 29,
+      "checks": 393,
+      "passed": 393,
+      "failed": 0,
+      "status": "PASS"
+    }
+  },
+  "timeout_policy": "Grouped harness timeouts are INCONCLUSIVE and were replaced by conclusive isolated execution where applicable.",
+  "status": "PASS"
+}

@@ -1,0 +1,249 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-SUBREGION-AREA-INDEX-DEV-V1.0",
+  "title": "Área Estimada por Subregião (km²) — partição da área do território-pai",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "r2_guard": "Particao simples: area_subregiao = area_territorio / numero_de_subregioes_do_territorio - garante que a soma das subregioes bate exatamente com o territorio (hierarquia consistente), sem inventar geometria nova.",
+  "subregions": [
+    {
+      "subregion_id": "SUB-001-001",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-001-002",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-001-003",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-002-001",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-002-002",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-002-003",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-003-001",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-003-002",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-003-003",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-004-001",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-004-002",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-004-003",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-005-001",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-005-002",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-005-003",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-006-001",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-006-002",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-006-003",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-007-001",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-007-002",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-007-003",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-008-001",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-008-002",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-008-003",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-009-001",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-009-002",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-009-003",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-010-001",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-010-002",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-010-003",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-011-001",
+      "estimated_area_km2": 55.12
+    },
+    {
+      "subregion_id": "SUB-011-002",
+      "estimated_area_km2": 55.12
+    },
+    {
+      "subregion_id": "SUB-011-003",
+      "estimated_area_km2": 55.12
+    },
+    {
+      "subregion_id": "SUB-011-004",
+      "estimated_area_km2": 55.12
+    },
+    {
+      "subregion_id": "SUB-011-005",
+      "estimated_area_km2": 55.12
+    },
+    {
+      "subregion_id": "SUB-011-006",
+      "estimated_area_km2": 55.12
+    },
+    {
+      "subregion_id": "SUB-012-001",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-012-002",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-012-003",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-013-001",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-013-002",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-013-003",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-014-001",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-014-002",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-014-003",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-015-001",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-015-002",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-015-003",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-016-001",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-016-002",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-016-003",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-017-001",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-017-002",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-017-003",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-018-001",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-018-002",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-018-003",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-019-001",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-019-002",
+      "estimated_area_km2": 27.56
+    },
+    {
+      "subregion_id": "SUB-019-003",
+      "estimated_area_km2": 27.56
+    }
+  ]
+}

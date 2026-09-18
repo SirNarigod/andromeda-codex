@@ -1,0 +1,66 @@
+{
+  "record_id": "STAGE14-REGRESSION-EVIDENCE-V1.0",
+  "python_tests": 672,
+  "passed": 672,
+  "failed": 0,
+  "modules": [
+    {
+      "module": "runtime_core",
+      "tests": 59,
+      "status": "PASS"
+    },
+    {
+      "module": "consequence_engine",
+      "tests": 56,
+      "status": "PASS"
+    },
+    {
+      "module": "agent_brain",
+      "tests": 90,
+      "status": "PASS"
+    },
+    {
+      "module": "social_memory",
+      "tests": 72,
+      "status": "PASS"
+    },
+    {
+      "module": "ecology_brain",
+      "tests": 77,
+      "status": "PASS"
+    },
+    {
+      "module": "object_environment",
+      "tests": 73,
+      "status": "PASS"
+    },
+    {
+      "module": "world_orchestrator",
+      "tests": 54,
+      "status": "PASS"
+    },
+    {
+      "module": "world_systems",
+      "tests": 51,
+      "status": "PASS"
+    },
+    {
+      "module": "long_horizon",
+      "tests": 44,
+      "status": "PASS"
+    },
+    {
+      "module": "llm_gateway",
+      "tests": 35,
+      "status": "PASS"
+    },
+    {
+      "module": "atlas_living_bridge",
+      "tests": 61,
+      "status": "PASS"
+    }
+  ],
+  "javascript_checks": 7,
+  "javascript_status": "PASS",
+  "status": "PASS"
+}

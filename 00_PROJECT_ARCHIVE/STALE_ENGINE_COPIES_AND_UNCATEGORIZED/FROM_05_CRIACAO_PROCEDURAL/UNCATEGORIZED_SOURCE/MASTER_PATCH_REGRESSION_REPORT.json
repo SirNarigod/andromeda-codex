@@ -1,0 +1,102 @@
+{
+  "record_id": "MASTER-PATCH-REGRESSION-REPORT-V2.0.1",
+  "version_previous": "V2.0.0",
+  "version_new": "V2.0.1",
+  "version_bump": "PATCH",
+  "protected_payloads": {
+    "sections": [
+      {
+        "left_files": 2,
+        "right_files": 2,
+        "missing": [],
+        "extra": [],
+        "mismatched": [],
+        "status": "PASS",
+        "path": "01_CANON"
+      },
+      {
+        "left_files": 6,
+        "right_files": 6,
+        "missing": [],
+        "extra": [],
+        "mismatched": [],
+        "status": "PASS",
+        "path": "02_ATLAS/runtime"
+      },
+      {
+        "left_files": 40,
+        "right_files": 40,
+        "missing": [],
+        "extra": [],
+        "mismatched": [],
+        "status": "PASS",
+        "path": "03_DOMAINS"
+      },
+      {
+        "left_files": 8,
+        "right_files": 8,
+        "missing": [],
+        "extra": [],
+        "mismatched": [],
+        "status": "PASS",
+        "path": "04_NARRATIVE"
+      },
+      {
+        "left_files": 15,
+        "right_files": 15,
+        "missing": [],
+        "extra": [],
+        "mismatched": [],
+        "status": "PASS",
+        "path": "05_MAR"
+      },
+      {
+        "left_files": 2,
+        "right_files": 2,
+        "missing": [],
+        "extra": [],
+        "mismatched": [],
+        "status": "PASS",
+        "path": "08_SCHEMAS"
+      }
+    ],
+    "protected_mutations": 0,
+    "canon_mutations": 0,
+    "atlas_functional_mutations": 0,
+    "mar_functional_mutations": 0,
+    "profession_functional_mutations": 0,
+    "schema_breaking_changes": 0,
+    "status": "PASS"
+  },
+  "baseline_master_checks": 381,
+  "master_regression": {
+    "suites": 29,
+    "checks": 393,
+    "passed": 393,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "previous_checks_preserved": {
+    "baseline_checks": 381,
+    "missing_previous_checks": [],
+    "failed_previous_checks": [],
+    "status": "PASS"
+  },
+  "atlas_runtime": {
+    "suites": 1,
+    "checks": 21,
+    "passed": 21,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "functional_counts": {
+    "weapons": 30,
+    "runes": 30,
+    "magics": 30,
+    "professions": 91,
+    "status": "PASS"
+  },
+  "ids_renamed": 0,
+  "broken_critical_references": 0,
+  "status": "PASS"
+}

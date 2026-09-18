@@ -1,0 +1,173 @@
+{
+  "record_id": "ANDROMEDA-STAGE16B-AUTHORITY-INTEGRATION-RECOVERY-V0.8.0",
+  "captured_at": "2026-08-21T22:30:45.3065332-03:00",
+  "classification": "PASS_APPLICABLE_AUTHORITY_INTEGRATION_RECOVERY_LOCAL_GAPS_WITH_BACKEND_INCOMPATIBLE",
+  "stage16b_global_status": "NOT_PASS",
+  "scope": [
+    "G16B-14 real camera occluder material fade",
+    "G16B-23 crafting runtime UI coverage",
+    "exhaustive real-backend discovery and compatibility audit",
+    "minimal authoritative round-trip probe without substitute backend",
+    "B01-B11, Stage16A, stress, Living and protected-integrity regressions"
+  ],
+  "authority_boundary": {
+    "godot_roles": ["presentation", "input", "physics and navigation client orchestration", "UI", "external-state projection"],
+    "godot_forbidden_authority_preserved": true,
+    "craft_fixture_is_authoritative": false,
+    "backend_substitute_created": false,
+    "http_endpoint_created_in_stage16b": false,
+    "canonical_mutation_detected": false
+  },
+  "acceptance_before": {
+    "pass": 9,
+    "partial_evidence": 19,
+    "fail": 0,
+    "blocked": 0
+  },
+  "acceptance_after": {
+    "pass": 11,
+    "partial_evidence": 17,
+    "fail": 0,
+    "blocked": 0,
+    "pass_gates": ["G16B-01", "G16B-02", "G16B-07", "G16B-10", "G16B-11", "G16B-12", "G16B-13", "G16B-14", "G16B-15", "G16B-20", "G16B-23"],
+    "partial_evidence_gates": ["G16B-03", "G16B-04", "G16B-05", "G16B-06", "G16B-08", "G16B-09", "G16B-16", "G16B-17", "G16B-18", "G16B-19", "G16B-21", "G16B-22", "G16B-24", "G16B-25", "G16B-26", "G16B-27", "G16B-28"],
+    "fail_gates": [],
+    "blocked_gates": []
+  },
+  "gate_changes": [
+    {
+      "id": "G16B-14",
+      "before": "PARTIAL_EVIDENCE",
+      "after": "PASS",
+      "authoritative_roundtrip_required": false,
+      "evidence": [
+        "real StandardMaterial3D alpha fade for tree, wall and tall-object occluders",
+        "multiple simultaneous occluders",
+        "smooth entry and exit with exact original-material restoration",
+        "collision layer and mask unchanged",
+        "selection/raycast target unchanged",
+        "no flicker and no dependency on Reduced Motion",
+        "Authority Recovery headless 154/154 and Editor Bridge 154/154 with clean debugger",
+        "B01-B11 regressions preserved"
+      ]
+    },
+    {
+      "id": "G16B-23",
+      "before": "PARTIAL_EVIDENCE",
+      "after": "PASS",
+      "authoritative_roundtrip_required": false,
+      "evidence": [
+        "runtime CraftingPanel integrated into the B05 HUD family",
+        "white/off-white rounded shell, rounded legible gray typography and soft-orange important state",
+        "ingredients, quantity, output, availability and separate explicit craft action",
+        "menu input isolation and scroll behavior",
+        "projection source visibly marked as fixture and never treated as authority",
+        "no recipe, yield, inventory, stamina or craft-result authority in GDScript",
+        "Authority Recovery headless 154/154 and Editor Bridge 154/154 with clean debugger",
+        "B01-B11 regressions preserved"
+      ]
+    }
+  ],
+  "backend_audit": {
+    "initial_listener_count": 0,
+    "found": true,
+    "classification": "HISTORICAL_LIVING_V1_5_SERVER_FOUND_NOT_STAGE16B_AUTHORITY",
+    "entrypoint": "C:/Users/thall/ANDROMEDA_PRODUCT/ANDROMEDA_LIVING_BRIDGE_DEV/living_api.py",
+    "working_directory": "C:/Users/thall/ANDROMEDA_PRODUCT/ANDROMEDA_LIVING_BRIDGE_DEV",
+    "python": "C:/Users/thall/ANDROMEDA_PRODUCT/.venv/Scripts/python.exe",
+    "python_version": "3.14.6",
+    "launch_command": "C:/Users/thall/ANDROMEDA_PRODUCT/.venv/Scripts/python.exe -m uvicorn living_api:app --host 127.0.0.1 --port 8000",
+    "routes": ["GET /health", "GET /snapshot", "POST /command"],
+    "health": {
+      "http_status": 200,
+      "status": "PASS",
+      "service": "ANDROMEDA_LIVING_BRIDGE",
+      "living_v15": "PASS"
+    },
+    "runtime_core": "IntegratedLivingEngineV15",
+    "uses_integrated_arpg_engine_v16a": false,
+    "master_v2_0_1_hash_verified": true,
+    "own_tests": {
+      "test_v15_core": "INVALID_FOR_APPROVAL: 7/7 ERROR due hard-coded missing /mnt/data/ANDROMEDA_CODEX_MASTER_V2_1_0_RELEASE.zip",
+      "run_v15_static_audit": "ERROR due the same missing V2.1 Linux path",
+      "run_v15_dev_readiness": "ERROR due the same missing V2.1 Linux path"
+    },
+    "protocol_findings": {
+      "move_to_point": "REJECTED: UNSUPPORTED_GODOT_COMMAND",
+      "supported_move_vector": "HTTP round-trip PASS for historical V1.5 only",
+      "duplicate_move_vector": "applied twice; no replay rejection",
+      "wrong_session_move_vector": "accepted and applied; client session_ref ignored",
+      "snapshot_server_authoritative": true,
+      "snapshot_session_ref": null,
+      "snapshot_id": null,
+      "snapshot_sequence": null,
+      "client_authority_fields_strictly_rejected": false
+    },
+    "stage16b_godot_connection_attempted": false,
+    "stage16b_minimal_authoritative_roundtrip": "NOT_ACHIEVED",
+    "reason_not_connected": "Backend self-tests failed and the live protocol lacks Stage16B MOVE_TO_POINT, session binding, snapshot sequencing and replay safety.",
+    "controlled_stop": true,
+    "final_listener_count": 0,
+    "final_status": "NOT_AVAILABLE"
+  },
+  "godot_results": {
+    "version": "4.7.1.stable.official.a13da4feb",
+    "renderer": "OpenGL 3.3 Compatibility",
+    "gpu": "NVIDIA GeForce GTX 1650",
+    "driver": "NVIDIA 560.94",
+    "authority_recovery_headless": {"checks": 154, "passed": 154, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+    "authority_recovery_editor_bridge": {"checks": 154, "passed": 154, "failed": 0, "debugger_errors": 0, "debugger_warnings": 0, "finalErrors": []},
+    "main_editor_bridge": {"status": "PASS", "observation_seconds": 8, "debugger_errors": 0, "debugger_warnings": 0, "finalErrors": []}
+  },
+  "regressions": [
+    {"id": "B01", "passed": 54, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+    {"id": "B02", "passed": 90, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+    {"id": "B03", "passed": 357, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+    {"id": "B04", "passed": 156, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+    {"id": "B05", "passed": 210, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+    {"id": "B06", "passed": 265, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+    {"id": "B07", "passed": 357, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+    {"id": "B08", "passed": 475, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+    {"id": "B09", "passed": 379, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+    {"id": "B10", "passed": 453, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+    {"id": "B11", "passed": 343, "failed": 0, "exit_code": 0, "stderr_bytes": 0}
+  ],
+  "python_and_integrity": {
+    "stage16a": {"passed": 209, "failed": 0, "runner_seconds": 270.095, "exit_code": 0, "ok": true},
+    "stage16a_stress": {"passed": 20, "failed": 0, "process_seconds": 39.957, "exit_code": 0, "stderr_bytes": 0},
+    "living_v1_5_runtime_gate": {"status": "PASS", "exit_code": 0},
+    "stage16a_baseline": {"expected": 724, "verified": 724, "missing": 0, "mismatch": 0},
+    "living_protected_files": {"expected": 4, "verified": 4, "mismatch": 0},
+    "hashes": {
+      "master_v2_0_1": "6D9AC3CCE7DCF6A65FDCF73859C332A0211C1AF52D149077BEEF554BF7BBD0B2",
+      "stage16a_checkpoint": "21626A3152CB37E167EEE24BFF9D3142C5D389A8CA2827594B34211591525A6A",
+      "source_acceptance_matrix": "9335E6C7A5FAA25F97991204787D2C77485592419AAA1F51641C01E31317454C"
+    }
+  },
+  "performance_watch_items": {
+    "prior_b11_max_frame_ms": 141.950,
+    "prior_b11_capture_seconds": 0.812,
+    "current_headless_b11_max_frame_ms": 133.333,
+    "current_headless_b11_capture_seconds": 0.625,
+    "formal_numeric_threshold_invented": false,
+    "long_soak_completed": false
+  },
+  "blockers": [
+    "No tested Stage16B-authoritative server entrypoint was found.",
+    "The only liveable server found is a historical Living V1.5 bridge with incompatible commands, session semantics, sequencing and replay behavior.",
+    "Its own V1.5 approval tests cannot pass in the discovered state because they hard-code a missing Linux Master V2.1 path.",
+    "Seventeen gates still require complete authoritative round-trips and/or persistence semantics."
+  ],
+  "watch_items": [
+    "Backend remains 127.0.0.1:8000 NOT_AVAILABLE with zero listeners after controlled shutdown.",
+    "Long multi-minute performance soak remains pending until a compatible authority is available.",
+    "Do not reinterpret the historical V1.5 MOVE_VECTOR response as Stage16B MOVE_TO_POINT authority."
+  ],
+  "closure_guards": {
+    "stage17_started": false,
+    "final_checkpoint_created": false,
+    "final_restore_executed": false,
+    "final_stage16_backup_created": false,
+    "stage16_declared_complete": false
+  }
+}

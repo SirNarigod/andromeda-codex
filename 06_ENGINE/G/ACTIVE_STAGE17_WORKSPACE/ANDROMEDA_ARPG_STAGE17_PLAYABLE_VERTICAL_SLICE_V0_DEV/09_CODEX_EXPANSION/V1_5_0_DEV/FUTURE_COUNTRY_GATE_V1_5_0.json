@@ -1,0 +1,15 @@
+{
+  "record_id":"FUTURE-COUNTRY-GATE-V1.5.0",
+  "status":"LOCKED",
+  "active_country_count":1,
+  "active_pilot_country_ref":"TER-011",
+  "rule":"NO_SECOND_COUNTRY_UNTIL_FIRST_COUNTRY_FULLY_FUNCTIONAL_AND_ACCEPTED",
+  "reserved_archetypes":[
+    {"id":"RESERVED-COLD","archetype":"COLD","implemented":false},
+    {"id":"RESERVED-HOT","archetype":"HOT","implemented":false},
+    {"id":"RESERVED-FULL-MAGIC","archetype":"FULL_MAGIC","implemented":false},
+    {"id":"RESERVED-ANCIENT-TREE-AMADON","archetype":"ANCIENT_TREE_LINKED_TO_AMADON","implemented":false},
+    {"id":"RESERVED-ROOT-DOMINATED","archetype":"ROOT_DEEP_DOMINATED_UNIQUE_CREATURE_HIERARCHY","implemented":false}
+  ],
+  "unlock_requirements":["FIRST_COUNTRY_LOCAL_RELEASE_GATES_PASS","GODOT_4_RUNTIME_EXECUTION_PASS","AUTHOR_ACCEPTANCE"]
+}

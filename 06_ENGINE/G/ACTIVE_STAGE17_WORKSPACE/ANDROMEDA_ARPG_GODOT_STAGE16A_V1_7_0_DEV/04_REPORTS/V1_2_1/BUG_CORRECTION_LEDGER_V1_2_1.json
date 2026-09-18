@@ -1,0 +1,106 @@
+{
+  "record_id": "BUG-CORRECTION-LEDGER-V1.2.1",
+  "status": "CLOSED_ZERO_KNOWN_ACTIVE_FAILURES",
+  "entries": [
+    {
+      "id": "V121-001",
+      "title": "RESOURCE_DISTRIBUTION_TOO_UBIQUITOUS",
+      "class": "Functional",
+      "status": "Corrected",
+      "correction": "Minerals now use sparse purposeful distribution by state archetype, richness, magic and Root Deep."
+    },
+    {
+      "id": "V121-002",
+      "title": "ROOT_DEEP_LATE_CONVERSION_MISSING_ROOT_SHARD",
+      "class": "Functional",
+      "status": "Corrected",
+      "correction": "Late Root Deep conversion now injects required MIN-ROOT-SHARD and revalidates incompatible content."
+    },
+    {
+      "id": "V121-003",
+      "title": "MOVED_NPC_INVENTORY_COUNTED_AT_ORIGIN",
+      "class": "Functional",
+      "status": "Corrected",
+      "correction": "Hierarchy aggregation uses NPC current block/city rather than birth container."
+    },
+    {
+      "id": "V121-004",
+      "title": "SCENE_DUNGEON_INVENTORY_SCOPE_MISSING",
+      "class": "Functional",
+      "status": "Corrected",
+      "correction": "Dungeon and scene object inventories added to hierarchy."
+    },
+    {
+      "id": "V121-005",
+      "title": "PORTABLE_TORCH_TIED_TO_SOURCE_SCENE",
+      "class": "Functional",
+      "status": "Corrected",
+      "correction": "Carried torch can be lit/extinguished from inventory after travel."
+    },
+    {
+      "id": "V121-006",
+      "title": "COUNTRY_PURCHASE_DID_NOT_CHARGE_CURRENCY",
+      "class": "Functional",
+      "status": "Corrected",
+      "correction": "Runtime wallet + shop cash + dynamic quote + conservation implemented."
+    },
+    {
+      "id": "V121-007",
+      "title": "GROUND_DUNGEON_WEAPONS_NOT_EQUIPPABLE",
+      "class": "Functional",
+      "status": "Corrected",
+      "correction": "Carried dungeon weapons now have item instances, stats, equip/unequip."
+    },
+    {
+      "id": "V121-008",
+      "title": "BRIDGE_REPAIR_CREATED_DURABILITY_WITHOUT_MATERIAL",
+      "class": "Functional",
+      "status": "Corrected",
+      "correction": "Repair consumes bridge material reserves."
+    },
+    {
+      "id": "V121-009",
+      "title": "BRIDGE_REPAIR_OVERCONSUMED_AND_NOT_IDEMPOTENT",
+      "class": "Functional",
+      "status": "Corrected",
+      "correction": "Repair consumes only units needed; full bridge consumes zero."
+    },
+    {
+      "id": "V121-010",
+      "title": "DERIVED_FLORA_FAUNA_RESOURCE_NAMES_GENERIC",
+      "class": "Content/Functional",
+      "status": "Corrected",
+      "correction": "Species-specific derived item references and author-approved names added."
+    },
+    {
+      "id": "V121-011",
+      "title": "AUDITOR_GLOBAL_RESOURCE_TYPE_DUPLICATE_FALSE_POSITIVE",
+      "class": "Audit",
+      "status": "Corrected",
+      "correction": "Auditor distinguishes reusable resource type IDs from entity instance IDs."
+    },
+    {
+      "id": "V121-012",
+      "title": "STAGE13_V1_0_STALE_BASELINE_AND_STALE_PASS_EVIDENCE",
+      "class": "Audit/Evidence",
+      "status": "Corrected",
+      "correction": "Authoritative V1.2.1 audit anchored to V1.1 sealed upstream; stale evidence isolated in history."
+    },
+    {
+      "id": "V121-013",
+      "title": "MONOLITHIC_TEST_RUNNER_EXCEEDS_EXECUTOR_WINDOW",
+      "class": "Testability",
+      "status": "Corrected",
+      "correction": "Regression gate executes modules in fresh isolated processes and consolidates results."
+    },
+    {
+      "id": "V121-014",
+      "title": "READINESS_AUDITOR_SELF_CREATED_PYCACHE_THEN_FAILED_HYGIENE",
+      "class": "Audit/Testability",
+      "status": "Corrected",
+      "correction": "Syntax gate now uses Python compile() in memory; auditor no longer writes bytecode into audited tree."
+    }
+  ],
+  "open_known_bugs": 0,
+  "note": "Zero known failures means zero failures in the defined validated scope; it is not a mathematical proof that no undiscovered defect can exist."
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-ENGINE-VEHICLE-CROSSREF-DEV-V1.0",
+  "title": "Cross-reference: perfis de veiculo de engine (Stage10) x catalogo de veiculos de lore (VEI-0##)",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "r2_guard": "Achado na varredura das pastas originais (02_REGRAS/06_ENGINE): o contrato ARPG_MOBILITY_INFRASTRUCTURE_CONTRACT_V1_1_0 (Stage10) + arpg_mobility_infrastructure_core.py ja definiam 3 perfis de veiculo mecanicos com stats reais (VEH-PROFILE-*), num namespace de engine/gameplay separado do nosso catalogo de lore (VEI-0##, fases 37-40), nunca ligados. Este arquivo so cria a correspondencia conceitual - nao reescreve nenhum dos dois lados. vehicle_numeric_stats do engine permanece REBALANCEABLE_NOT_CANON; identidade/lore de cada VEI-0## permanece exatamente como catalogada.",
+  "crossref": [
+    {
+      "engine_profile_id": "VEH-PROFILE-SERVICE-LIGHT",
+      "engine_stats": {
+        "class": "ROAD_SERVICE",
+        "speed_kmh": 42,
+        "cargo_kg": 180,
+        "passengers": 4,
+        "integrity": 100
+      },
+      "lore_vehicle_ref": "VEI-008",
+      "lore_vehicle_name": "Automóvel a Vapor de Kharveth",
+      "rationale": "Ambos sao veiculos terrestres leves de servico/passageiros, produzidos industrialmente (EST-003 Forja Real) para deslocamento rapido de curta distancia - mesmo perfil conceitual do engine (ROAD_SERVICE, foco em passageiros/carga leve)."
+    },
+    {
+      "engine_profile_id": "VEH-PROFILE-UTILITY-CARGO",
+      "engine_stats": {
+        "class": "ROAD_CARGO",
+        "speed_kmh": 32,
+        "cargo_kg": 900,
+        "passengers": 2,
+        "integrity": 130
+      },
+      "lore_vehicle_ref": "VEI-004",
+      "lore_vehicle_name": "Carroça de Caravana",
+      "rationale": "Veiculo terrestre padrao de carga comercial (mercadorias/viajantes), mais lento e com maior capacidade de carga que passageiros - mesmo perfil conceitual do engine (ROAD_CARGO, carga alta, poucos passageiros)."
+    },
+    {
+      "engine_profile_id": "VEH-PROFILE-SCOUT",
+      "engine_stats": {
+        "class": "SCOUT",
+        "speed_kmh": 38,
+        "cargo_kg": 250,
+        "passengers": 3,
+        "integrity": 110,
+        "offroad_capable": true
+      },
+      "lore_vehicle_ref": "VEI-006",
+      "lore_vehicle_name": "Carruagem de Vínculo Rúnico",
+      "rationale": "Veiculo de rota longa com runa de retorno (RUNA-004), reduzindo risco de perda em trajetos exploratorios/de reconhecimento - o mais proximo, tematicamente, do papel SCOUT do engine (velocidade media, capacidade media, foco em deslocamento confiavel fora da malha principal)."
+    }
+  ],
+  "usage_note": "Esta ligacao e so de correspondencia conceitual/tematica para consulta - nao integra os dois sistemas de dados (o engine continua usando VEH-PROFILE-* internamente para stats de jogo; o lore continua usando VEI-0## para identidade narrativa). Nenhum arquivo fonte (ARPG_MOBILITY_INFRASTRUCTURE_CONTRACT_V1_1_0, arpg_mobility_infrastructure_core.py, STELLAR_TRANSPORT_VEHICLES_CATALOG_DEV_V1_1.json) foi editado.",
+  "prohibitions": [
+    "NO_ENGINE_STAT_AS_CANON_LORE_FACT",
+    "NO_LORE_IDENTITY_REWRITE",
+    "NO_NEW_VEHICLE_INVENTED"
+  ]
+}

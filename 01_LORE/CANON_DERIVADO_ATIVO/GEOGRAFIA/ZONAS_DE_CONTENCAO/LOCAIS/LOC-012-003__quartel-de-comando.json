@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-012-003",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Quartel de Comando",
+  "parent_subregion": "SUB-012-003",
+  "parent_political_unit": "TER-012",
+  "function": "Sede de Ishara Veyn.",
+  "notable_link": "Ishara Veyn (autoridade máxima)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-012-003",
+  "settlement_tier": "CIDADE",
+  "history": "O Quartel de Comando foi construído para coordenar a contenção, mas seus mapas ficaram velhos mais rápido que seus oficiais. Uma sala inteira é dedicada a rotas que deixaram de existir.",
+  "sensory": "Tinta, metal e desinfetante dominam o ar; mensageiros correm enquanto sinos marcam níveis de risco.",
+  "hook": "Um mapa novo mostra uma saída dentro da zona interditada.",
+  "secondary_hook": "Edrik quer selá-la; Vessa acredita que alguém está preso além dela.",
+  "detail": "Ordens urgentes são gravadas em placas para impedir alterações posteriores.",
+  "figures": [
+    {
+      "role": "Comandante Edrik",
+      "name": "Comandante Edrik",
+      "note": "defende protocolo rígido"
+    },
+    {
+      "role": "Vessa Linha-Fria",
+      "name": "Vessa Linha-Fria",
+      "note": "cartógrafa que confia em testemunhas"
+    }
+  ]
+}

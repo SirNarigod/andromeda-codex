@@ -1,0 +1,46 @@
+{
+  "record_id": "ART-009",
+  "record_kind": "R2_CANONICAL_ENTRY_MIRROR",
+  "authority": "CANON_R2_CONFIRMADO",
+  "canonical_home": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-009__fuzis-de-precisao.json",
+  "source": {
+    "archive_sha256": "257e456a5d0396310ec2355b3dfc0f11f4e0a5264cf6e764591c8760f5070cb0",
+    "lineage": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json",
+    "document_sha256": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726"
+  },
+  "entry": {
+    "code": "ART-009",
+    "slug": "fuzis-de-precisao",
+    "title": "Fuzis de precisão",
+    "subtitle": "Armas de distância e observação",
+    "category": "ART",
+    "secondaryCategories": [],
+    "canon": "Cânone consolidado",
+    "spoiler": 1,
+    "sealed": false,
+    "image": null,
+    "imageStatus": null,
+    "summary": "Categoria especializada para disparos longos, vigilância e neutralização seletiva.",
+    "facts": {
+      "Alcance": "Longo",
+      "Exigência": "Treinamento, cálculo e manutenção",
+      "Runas usuais": "Correção de vento, estabilidade e ótica",
+      "Limite": "Custo alto e assinatura rúnica detectável"
+    },
+    "sections": [],
+    "relations": [
+      {
+        "slug": "sistema-de-armamentos",
+        "label": "Categoria"
+      }
+    ],
+    "keywords": [
+      "fuzil de precisão",
+      "longa distância",
+      "ótica rúnica"
+    ],
+    "sources": [
+      "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+    ]
+  }
+}

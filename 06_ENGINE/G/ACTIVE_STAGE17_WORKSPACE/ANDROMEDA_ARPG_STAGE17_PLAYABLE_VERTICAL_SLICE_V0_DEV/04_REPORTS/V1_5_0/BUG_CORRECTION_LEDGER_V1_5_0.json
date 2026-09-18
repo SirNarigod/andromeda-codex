@@ -1,0 +1,23 @@
+{
+  "record_id":"BUG-CORRECTION-LEDGER-V1.5.0",
+  "closed":15,
+  "open":0,
+  "bugs":[
+    ["V1.5-001","climate adapter expected wrong humidity key"],
+    ["V1.5-002","movement health attempted len(generator)"],
+    ["V1.5-003","stream ownership used coarse rather than continuous position"],
+    ["V1.5-004","Godot payload leaked undiscovered dungeon content"],
+    ["V1.5-005","continuous movement used invalid clock source and bypassed orchestrator"],
+    ["V1.5-006","pathfinding ignored canonical route in favor of derived detour"],
+    ["V1.5-007","city locality remained stale after continuous exit"],
+    ["V1.5-008","dungeon ownership and continuous motion diverged"],
+    ["V1.5-009","free movement could cross dungeon room boundary"],
+    ["V1.5-010","fog discovery revealed all dungeon rooms from entrance"],
+    ["V1.5-011","collision detail overwrote stable Godot error category"],
+    ["V1.5-012","discovery hash corruption was not checked by health gate"],
+    ["V1.5-013","client contract could select arbitrary player_ref"],
+    ["V1.5-014","Godot chunk NPC transform used stale coarse position"],
+    ["V1.5-015","player disappeared from own dungeon snapshot due fog filter semantics"]
+  ],
+  "status":"PASS"
+}

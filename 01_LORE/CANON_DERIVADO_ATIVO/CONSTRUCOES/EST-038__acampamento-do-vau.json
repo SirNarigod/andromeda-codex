@@ -1,0 +1,34 @@
+{
+  "est_id": "EST-038",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Acampamento do Vau",
+  "building_type": "ACAMPAMENTO",
+  "parent_locality": "LOC-011-004",
+  "parent_subregion": "SUB-011-004",
+  "parent_political_unit": "TER-011",
+  "function": "Pouso de viajantes que atravessam o Vau de Raizel.",
+  "economic_role": {
+    "is_vendor": false,
+    "sells": [],
+    "produces": [],
+    "regulation_factor": 0.1
+  },
+  "capacity": {
+    "jobs": 2,
+    "residents": 10
+  },
+  "professions_linked": [],
+  "notable_link": "Habitat do Raizel manso (CRI-005)",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "TECIDO_MADEIRA_LEVE",
+    "flammability": "ALTISSIMA",
+    "recovery_days": 3
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "record_id": "AGENT-REGISTRY-V1.3.0",
+  "agents": [
+    {
+      "id": "AG-MST-03",
+      "name": "Master Consolidation",
+      "scope": "Master V2.1 contracts, canon/runtime boundary, namespace",
+      "exit_gate": "PASS_OR_BLOCK"
+    },
+    {
+      "id": "AG-BRG-03",
+      "name": "Country↔Living Bridge",
+      "scope": "Single authority path and projection reconciliation",
+      "exit_gate": "PASS_OR_BLOCK"
+    },
+    {
+      "id": "AG-COM-03",
+      "name": "Commerce",
+      "scope": "catalog, quote, wallet, stock, money conservation",
+      "exit_gate": "PASS_OR_BLOCK"
+    },
+    {
+      "id": "AG-CBT-03",
+      "name": "Combat & MAR",
+      "scope": "equipment, combat, corpse, harvest",
+      "exit_gate": "PASS_OR_BLOCK"
+    },
+    {
+      "id": "AG-ECO-03",
+      "name": "Ecology Projection",
+      "scope": "fauna count projection and resource yield",
+      "exit_gate": "PASS_OR_BLOCK"
+    },
+    {
+      "id": "AG-SOC-03",
+      "name": "Social & Protection",
+      "scope": "witness memory, child/worker invariants",
+      "exit_gate": "PASS_OR_BLOCK"
+    },
+    {
+      "id": "AG-ATL-03",
+      "name": "Atlas Compatibility",
+      "scope": "supported baselines and read-only projection",
+      "exit_gate": "PASS_OR_BLOCK"
+    },
+    {
+      "id": "AG-AUD-03",
+      "name": "Silent Error Auditor",
+      "scope": "hashes, inventory parity, source allowlist, hygiene",
+      "exit_gate": "PASS_OR_BLOCK"
+    },
+    {
+      "id": "AG-REL-03",
+      "name": "Release & Restore",
+      "scope": "manifest, backup, clean restore, rerun gates",
+      "exit_gate": "PASS_OR_BLOCK"
+    }
+  ],
+  "shared_truth": "MASTER_V2.1_READ_ONLY + LIVING_EVENT_LEDGER + COUNTRY_PROJECTION",
+  "status": "PASS"
+}

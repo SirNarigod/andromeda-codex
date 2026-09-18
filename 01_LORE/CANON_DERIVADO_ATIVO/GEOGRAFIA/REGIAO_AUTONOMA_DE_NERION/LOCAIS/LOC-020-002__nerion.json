@@ -1,0 +1,30 @@
+{
+  "loc_id": "LOC-020-002",
+  "record_id": "LOC-020-002",
+  "name": "Arquivo das Primeiras Vozes",
+  "parent_subregion": "SUB-020-001",
+  "function": "Arquivo de identidades, gravações e memórias consentidas.",
+  "notable_link": "TER-020 Nérion — Região Autônoma dos Despertos",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "settlement_tier": "COMPLEXO",
+  "history": "O arquivo começou com fragmentos recuperados dos Androids de teste, antes que os conscientes soubessem se lembrar era propriedade ou herança.",
+  "figures": [
+    {
+      "name": "Lume-3",
+      "note": "curador que preserva memórias apagadas"
+    },
+    {
+      "name": "Ava-Null",
+      "note": "testemunha que não reconhece a própria voz"
+    }
+  ],
+  "hook": "Um registro menciona a Maga, mas cada reprodução termina com uma lembrança diferente.",
+  "secondary_hook": "A disputa local revela uma escolha difícil entre autonomia, segurança e memória.",
+  "detail": "A moeda local mais valiosa é um minuto de memória original autenticada.",
+  "prohibitions": [
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION",
+    "NO_NAME_FOR_MYSTERIOUS_MAGE_YET"
+  ],
+  "sensory": "Prismas frios guardam vozes, cheiros e sensações escolhidas pelos donos."
+}

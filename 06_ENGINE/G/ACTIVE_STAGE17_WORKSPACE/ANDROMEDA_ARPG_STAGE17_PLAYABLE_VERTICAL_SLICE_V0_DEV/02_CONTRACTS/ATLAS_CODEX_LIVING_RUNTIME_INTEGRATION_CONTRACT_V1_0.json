@@ -1,0 +1,48 @@
+{
+  "record_id": "ATLAS-CODEX-LIVING-RUNTIME-INTEGRATION-CONTRACT-V1.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "stage": "ETAPA_13",
+  "status": "DERIVAÇÃO_TÉCNICA",
+  "authority_model": "CANON_MASTER_READ_ONLY + TIMELINE_RUNTIME_READ_ONLY_PROJECTION",
+  "rules": [
+    "The canonical Atlas remains byte-preserved and authoritative only as a projection of the Master.",
+    "Living Atlas is a derived read-only overlay and never mutates canon or runtime.",
+    "PUBLIC receives canonical-only Atlas access and no runtime timeline projection.",
+    "PLAYER may read only its own owner_scope timeline and player-safe runtime fields.",
+    "ADMIN may inspect operational runtime state but raw LLM prompts/responses and credential-like fields remain excluded.",
+    "Canonical spoiler level 4 and HIDDEN Atlas entities remain excluded for every Living Atlas role.",
+    "Runtime-born entities are hidden from PLAYER unless atlas_exposure=PLAYER_VISIBLE.",
+    "Social private state is hidden from PLAYER unless a viewer_ref is explicitly supplied and only relations/reputation touching that viewer are projected.",
+    "Every projection is content-hashed and declares runtime_write_authority=false.",
+    "Atlas production reads atomic SQLite snapshots published from the authoritative Runtime under its write lock; it does not contend directly with live simulation writes.",
+    "Restricted canonical/runtime references are recursively redacted from event payloads, causal mutations and social projections, not only from top-level entity layers.",
+    "SQLite snapshot files are backend-only artifacts with restrictive filesystem permissions; clients receive JSON projections, never the snapshot database itself."
+  ],
+  "runtime_layers": [
+    "LIVE_ENTITY_STATE",
+    "LIVE_ROUTES",
+    "LIVE_ECONOMY",
+    "LIVE_POPULATION",
+    "LIVE_FACTIONS",
+    "LIVE_ENVIRONMENT",
+    "LIVE_EVENTS",
+    "LIVE_RECOVERY",
+    "LIVE_ECOLOGY",
+    "LIVE_SOCIAL",
+    "LIVE_CAUSAL",
+    "LLM_METRICS"
+  ],
+  "roles": {
+    "PUBLIC": "CANON_ONLY",
+    "PLAYER": "OWN_TIMELINE_SAFE_VIEW",
+    "ADMIN": "OPERATIONAL_AUDIT_VIEW"
+  },
+  "package_class": "WORKING_PACKAGE",
+  "transport": {
+    "recommended": "ATOMIC_SQLITE_SNAPSHOT",
+    "direct_live_db_read": "SUPPORTED_FOR_LOW_CONTENTION_DIAGNOSTICS_ONLY",
+    "snapshot_authority": "READ_ONLY_ATOMIC_RUNTIME_SNAPSHOT",
+    "client_delivery": "JSON_PROJECTION_ONLY",
+    "snapshot_file_distribution": "BACKEND_ONLY_0600"
+  }
+}

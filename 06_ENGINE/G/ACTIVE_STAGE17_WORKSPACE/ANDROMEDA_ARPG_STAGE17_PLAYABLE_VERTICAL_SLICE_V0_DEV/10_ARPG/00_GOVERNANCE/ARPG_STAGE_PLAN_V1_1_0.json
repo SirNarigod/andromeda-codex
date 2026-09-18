@@ -1,0 +1,284 @@
+{
+  "current_checkpoint": "STAGE_13_PASS",
+  "current_stage": 14,
+  "godot_status": {
+    "connection": "USER_REPORTED_CONNECTED",
+    "current_user_device": "MOBILE",
+    "direct_use_policy": "Notify user before first necessary direct editor use; defer while user is mobile.",
+    "stage07_editor_required": false,
+    "stage08_editor_required": false,
+    "stage09_editor_required": false,
+    "stage10_editor_required": false,
+    "stage11_editor_required": false,
+    "stage12_editor_required": false,
+    "stage13_editor_required": false
+  },
+  "lore_completeness_contract": {
+    "coverage_file": "10_ARPG/STAGE07/ANDROMEDA_LORE_GAMEPLAY_COVERAGE_V0_1_0.json",
+    "entity_unmapped": 0,
+    "master_entities": 1660,
+    "master_relationships": 9429,
+    "rule": "Canonical identity and relationships are READ_ONLY. Gameplay behavior/values may be derived in separate runtime namespaces. Any unsupported conversion stays guarded rather than invented as canon."
+  },
+  "next_stage_after_pass": 15,
+  "numbering": "00-22",
+  "record_id": "ARPG-STAGE-PLAN-V1.1.0",
+  "requested_capabilities": {
+    "biomes_complete_individual": 8,
+    "bridges": 10,
+    "fishing": 9,
+    "hunting": 9,
+    "machines": 11,
+    "mining": 9,
+    "professions_player_npc": 9,
+    "roads": 10,
+    "robots": 11,
+    "technology": 11,
+    "transport": 10,
+    "vehicles": 10,
+    "wood_flora": 9
+  },
+  "revision_reason": "User expanded completeness target to fishing, hunting, vehicles, roads, bridges, complete canonical biomes, technologies, machines, robots and all available Andrômeda lore as gameplay-bound content. Dedicated mobility, technology/robotics and lore-completeness gates added.",
+  "safe_batch_limit": {
+    "major_stages_per_cycle": 1,
+    "minor_stages_per_cycle": 2,
+    "rule": "Finish test/correction/regression/checkpoint before advancing."
+  },
+  "stage08_world_contract": {
+    "art_dependency": "NONE",
+    "canonical_biomes": [
+      "BIO-002",
+      "BIO-008"
+    ],
+    "canonical_climate": "CLM-002",
+    "hydrology": [
+      "BAS-001",
+      "RIV-VARDEN"
+    ],
+    "outbound_routes_locked": [
+      "RTE-001",
+      "RTE-003",
+      "RTE-013"
+    ],
+    "playable_country": "TER-011",
+    "root_deep_overlay_policy": "LOCAL_RUNTIME_OVERLAY_WITH_CANONICAL_UNDERLAY"
+  },
+  "stage09_gathering_work_contract": {
+    "activities": [
+      "MINING",
+      "LOGGING",
+      "FORAGING",
+      "AGRICULTURE",
+      "HUNTING",
+      "FISHING"
+    ],
+    "art_dependency": "NONE",
+    "fishing_spatial_rule": "RIV-VARDEN_INTERSECTION_ONLY",
+    "flora_master_spatialization": "BLOCKED_GUARDED",
+    "inventory_authority": "STAGE05_UNIVERSAL_ITEM_CORE",
+    "profession_snapshots": 91,
+    "shared_worker_contract": "PLAYER_AND_NPC"
+  },
+  "stage10_mobility_contract": {
+    "art_dependency": "NONE",
+    "boundary_routes_locked": [
+      "RTE-001",
+      "RTE-003",
+      "RTE-013"
+    ],
+    "canonical_anchors": [
+      "SYS-AUT-001",
+      "SRTE-001",
+      "POI-046"
+    ],
+    "cargo_inventory": "STAGE05_UNIVERSAL_ITEM_CORE",
+    "concrete_propulsion_technology": "DEFERRED_STAGE11",
+    "shared_driver_contract": "PLAYER_AND_NPC",
+    "vehicle_profiles": 3
+  },
+  "stage11_technology_contract": {
+    "art_dependency": "NONE",
+    "canonical_workshop": "POI-003",
+    "energy_contract": "TECH-ENERGY-BUFFER-STAGE11_GAMEPLAY_DERIVED_SOURCE_UNSPECIFIED",
+    "inventory_authority": "STAGE05_UNIVERSAL_ITEM_CORE",
+    "machine_profiles": 4,
+    "robot_legal_status": "TECH_ASSET_NOT_NPC",
+    "robot_profiles": 3,
+    "robotics_job_guard": "JOB-LOG-ROBOTICA-001 is TER-001, not TER-011",
+    "vehicle_binding": "STAGE10_MOBILITY"
+  },
+  "stage_count": 23,
+  "stages": [
+    {
+      "folder": "00_GOVERNANCE",
+      "index": 0,
+      "purpose": "Governança ARPG, baselines e Canon Guard",
+      "status": "PASS"
+    },
+    {
+      "folder": "01_GAME_CORE",
+      "index": 1,
+      "purpose": "Game loop, input autoritativo, perfis e comandos",
+      "status": "PASS"
+    },
+    {
+      "folder": "02_CHARACTER",
+      "index": 2,
+      "purpose": "Personagem, atributos, nível, XP e vitais",
+      "status": "PASS"
+    },
+    {
+      "folder": "03_COMBAT",
+      "index": 3,
+      "purpose": "Combate ARPG, dano, crítico, defesa e resistências",
+      "status": "PASS"
+    },
+    {
+      "folder": "04_ATTRIBUTES_RESOURCES",
+      "index": 4,
+      "purpose": "Recursos adaptativos, regeneração, consumíveis e cooldowns",
+      "status": "PASS"
+    },
+    {
+      "folder": "05_ITEMS",
+      "index": 5,
+      "purpose": "Itemização universal, equipamentos, materiais, raridade, qualidade, sockets e inventário player/NPC",
+      "status": "PASS"
+    },
+    {
+      "folder": "06_SKILLS",
+      "index": 6,
+      "purpose": "Habilidades ativas/passivas, maestria e build emergente",
+      "status": "PASS"
+    },
+    {
+      "folder": "07_ACTORS",
+      "index": 7,
+      "purpose": "Atores, hostilidade, PvE AI, elites, minibosses e bosses",
+      "status": "PASS"
+    },
+    {
+      "folder": "08_WORLD_BIOMES",
+      "index": 8,
+      "purpose": "Mundo ARPG, zonas, dungeons, encontros, waypoints, clima, hidrologia e biomas canônicos individualizados",
+      "status": "PASS"
+    },
+    {
+      "folder": "09_GATHERING_HUNTING_FISHING_WORK",
+      "index": 9,
+      "purpose": "Mineração, madeira, flora, agricultura, caça, pesca, recursos naturais, ferramentas, profissões e trabalho player/NPC",
+      "status": "PASS"
+    },
+    {
+      "folder": "10_MOBILITY_INFRASTRUCTURE",
+      "index": 10,
+      "purpose": "Automóveis/veículos, montarias quando aplicável, estradas, rotas, pontes, transporte e infraestrutura de travessia",
+      "status": "PASS"
+    },
+    {
+      "folder": "11_TECH_MACHINES_ROBOTICS",
+      "index": 11,
+      "purpose": "Tecnologias, máquinas, robôs, energia, automação, oficinas e sistemas industriais funcionais",
+      "status": "PASS"
+    },
+    {
+      "folder": "12_QUESTS_NARRATIVE_CULTURE",
+      "index": 12,
+      "purpose": "Quests, campanha, história, personagens, idiomas, crenças, cultura e narrativa jogável",
+      "status": "PASS"
+    },
+    {
+      "folder": "13_ECONOMY_CRAFTING",
+      "index": 13,
+      "purpose": "Vendors, stash, reparo, crafting, culinária, serviços, mercados e cadeias produtivas",
+      "status": "PASS"
+    },
+    {
+      "folder": "14_LIVING_INTEGRATION",
+      "index": 14,
+      "purpose": "Living x ARPG: facções, leis, população, ecologia, trabalho NPC, consequências e LOD sistêmico",
+      "status": "ACTIVE"
+    },
+    {
+      "folder": "15_SAVE_PERSISTENCE",
+      "index": 15,
+      "purpose": "Save, persistência, morte, recuperação, respawn e continuidade",
+      "status": "PLANNED"
+    },
+    {
+      "folder": "16_GODOT_RUNTIME",
+      "index": 16,
+      "purpose": "Vertical slice integrado no Godot; conexão direta/editor bridge usada quando usuário estiver no PC",
+      "status": "PLANNED"
+    },
+    {
+      "folder": "17_BALANCE",
+      "index": 17,
+      "purpose": "Balanceamento global de progressão, combate, loot, trabalho, recursos, economia e dificuldade",
+      "status": "PLANNED"
+    },
+    {
+      "folder": "18_TESTS",
+      "index": 18,
+      "purpose": "Regressão, stress, determinismo, segurança, integridade e performance",
+      "status": "PLANNED"
+    },
+    {
+      "folder": "19_LORE_COMPLETENESS",
+      "index": 19,
+      "purpose": "Gate de cobertura: nenhuma entidade/rota/local/bioma/tecnologia/recurso relevante do Master fica sem binding ou guard explícito",
+      "status": "PLANNED"
+    },
+    {
+      "folder": "20_PLACEHOLDER_CONTENT",
+      "index": 20,
+      "purpose": "Todo conteúdo funcional com placeholders, sem depender de arte final",
+      "status": "PLANNED"
+    },
+    {
+      "folder": "21_PRE_ART",
+      "index": 21,
+      "purpose": "Gate final de jogabilidade e conteúdo pré-arte",
+      "status": "PLANNED"
+    },
+    {
+      "folder": "22_VISUAL_PIPELINE",
+      "index": 22,
+      "purpose": "Arte conceitual, modelos, animações, VFX, áudio e UI final",
+      "status": "BLOCKED_UNTIL_STAGE_21_PASS"
+    }
+  ],
+  "status": "ACTIVE",
+  "supersedes": "ARPG-STAGE-PLAN-V0.9.0",
+  "updated_at": "2026-08-18T22:29:00.168931+00:00",
+  "stage12_narrative_contract": {
+    "culture_identity": "SOC-PROP-FND-011",
+    "culture_practices": 26,
+    "quest_templates": 5,
+    "dialogue_briefs": 3,
+    "factions_guarded": [
+      "FAC-009",
+      "FAC-010"
+    ],
+    "official_language": "UNRESOLVED_DO_NOT_INVENT",
+    "official_religion": "UNRESOLVED_DO_NOT_INVENT",
+    "global_characters_auto_spatialized": false,
+    "spoiler_guard": true,
+    "reputation": "CONTEXTUAL"
+  },
+  "stage13_economy_contract": {
+    "canonical_anchors": [
+      "POI-002",
+      "POI-003",
+      "POI-006",
+      "INDN-008"
+    ],
+    "culinary_projections": 4,
+    "currency": "RUNTIME_ONLY_NOT_CANON",
+    "pricing": "SUPPLY_DEMAND_LOGISTICS_RUNTIME_ONLY",
+    "inventory": "STAGE05_UNIVERSAL_ITEM_CORE",
+    "shared_economy": "PLAYER_AND_NPC",
+    "godot_required": false,
+    "art_dependency": "NONE"
+  }
+}

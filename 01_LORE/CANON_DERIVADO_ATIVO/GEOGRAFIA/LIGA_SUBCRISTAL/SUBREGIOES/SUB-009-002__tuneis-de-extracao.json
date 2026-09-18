@@ -1,0 +1,46 @@
+{
+  "record_id": "SUB-009-002",
+  "record_kind": "DERIVED_SUBREGION_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Túneis de Extração",
+  "parent_political_unit": "TER-009",
+  "provenance": {
+    "approval": "GAMEPLAY_DERIVED_DEV_SOURCE",
+    "r2_anchors": [
+      "TER-009"
+    ],
+    "compatibility": "Camada administrativa e narrativa local; não cria fronteira, cidade, soberania ou nova autoridade."
+  },
+  "function": "Rede de túneis de mineração de cristal que conecta as cidades da liga.",
+  "locality_references": [
+    "LOC-009-002 Posto de Extração"
+  ],
+  "permitted_catalog_links": {
+    "npc_roles": [
+      "classe:Androids"
+    ],
+    "professions": [],
+    "encounters": [],
+    "resources": [
+      "cristal"
+    ]
+  },
+  "local_conflicts": [
+    "segurança dos túneis versus velocidade de extração"
+  ],
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_AUTOMATIC_KENUA_SCENE",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_FIXED_BORDER_COORDINATE"
+  ],
+  "story_generators": [
+    "Um desmoronamento num túnel isola trabalhadores e testa a coordenação entre cidades da liga."
+  ],
+  "root_corruption": {
+    "status": "CORROMPIDA",
+    "intensity": "BAIXA",
+    "since_note": "Aplicado pelo portao autoral fase 57 (STELLAR_ROOT_CORRUPTION_GATE_DEV_V1_0.json) - fato do mundo em 842 EC, fase Alimentacao Silenciosa->Corrupcao da Raiz Profunda (COR-001)."
+  }
+}

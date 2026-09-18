@@ -1,0 +1,17 @@
+{
+  "record_id": "ARPG-STAGE00-STRESS-V0.1.0",
+  "status": "PASS",
+  "stats": {
+    "integrated_worlds": 20,
+    "health_pass": 20,
+    "movement_checks": 5,
+    "vendor_checks": 5,
+    "determinism_pairs": 10,
+    "determinism_pass": 10
+  },
+  "failure_count": 0,
+  "failures": [],
+  "seconds": 17.619,
+  "master": "V2.0.1",
+  "master_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2"
+}

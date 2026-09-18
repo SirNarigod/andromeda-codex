@@ -1,0 +1,39 @@
+{
+  "est_id": "EST-019",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Oficina de Fusão Tecnomágica",
+  "building_type": "INDUSTRIAL",
+  "parent_locality": "LOC-005-001",
+  "parent_subregion": "SUB-005-001",
+  "parent_political_unit": "TER-005",
+  "function": "Produção de itens que combinam runa e tecnologia sob licença.",
+  "economic_role": {
+    "is_vendor": false,
+    "sells": [],
+    "produces": [
+      "itens tecnomágicos"
+    ],
+    "regulation_factor": 0.8
+  },
+  "capacity": {
+    "jobs": 15,
+    "residents": 0
+  },
+  "professions_linked": [
+    "armeiro"
+  ],
+  "notable_link": "Distrito Tecnomágico (SUB-005-001); classes Androids e Magos",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION",
+    "NO_INVENTED_RUNE_EFFECT"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "METAL_E_MADEIRA",
+    "flammability": "MEDIA_COM_RISCO_EXPLOSAO",
+    "recovery_days": 10
+  }
+}

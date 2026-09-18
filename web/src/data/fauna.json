@@ -1,0 +1,110 @@
+[
+ {
+  "cri": "CRI-001",
+  "ter": "TER-011",
+  "also": [],
+  "bio": [
+   "BIO-008"
+  ]
+ },
+ {
+  "cri": "CRI-002",
+  "ter": "TER-011",
+  "also": [],
+  "bio": [
+   "BIO-002",
+   "BIO-008"
+  ]
+ },
+ {
+  "cri": "CRI-003",
+  "ter": "TER-002",
+  "also": [],
+  "bio": [
+   "BIO-005"
+  ]
+ },
+ {
+  "cri": "CRI-004",
+  "ter": "TER-008",
+  "also": [],
+  "bio": [
+   "BIO-001",
+   "BIO-007"
+  ]
+ },
+ {
+  "cri": "CRI-005",
+  "ter": "TER-005",
+  "also": [],
+  "bio": [
+   "BIO-007",
+   "BIO-009"
+  ]
+ },
+ {
+  "cri": "CRI-006",
+  "ter": "TER-008",
+  "also": [],
+  "bio": [
+   "BIO-007"
+  ]
+ },
+ {
+  "cri": "CRI-007",
+  "ter": "TER-007",
+  "also": [],
+  "bio": [
+   "BIO-006",
+   "BIO-010"
+  ]
+ },
+ {
+  "cri": "CRI-008",
+  "ter": "TER-011",
+  "also": [],
+  "bio": [
+   "BIO-008"
+  ]
+ },
+ {
+  "cri": "CRI-009",
+  "ter": "TER-011",
+  "also": [],
+  "bio": [
+   "BIO-008"
+  ]
+ },
+ {
+  "cri": "CRI-010",
+  "ter": "TER-001",
+  "also": [],
+  "bio": [
+   "BIO-007"
+  ]
+ },
+ {
+  "cri": "CRI-011",
+  "ter": "TER-007",
+  "also": [],
+  "bio": [
+   "BIO-006"
+  ]
+ },
+ {
+  "cri": "CRI-012",
+  "ter": "TER-002",
+  "also": [],
+  "bio": [
+   "BIO-005"
+  ]
+ },
+ {
+  "cri": "CRI-013",
+  "ter": "TER-005",
+  "also": [],
+  "bio": [
+   "BIO-009"
+  ]
+ }
+]

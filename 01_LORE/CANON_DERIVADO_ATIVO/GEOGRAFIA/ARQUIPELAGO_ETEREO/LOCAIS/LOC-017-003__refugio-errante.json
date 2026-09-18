@@ -1,0 +1,27 @@
+{
+  "loc_id": "LOC-017-003",
+  "record_id": "LOC-017-003",
+  "name": "Refúgio Errante",
+  "parent_subregion": "SUB-017-003",
+  "function": "Abrigo móvel para quem se aventura entre as Ilhas Errantes.",
+  "notable_link": "TER-017 Arquipélago Etéreo (fase 50, território novo)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "settlement_tier": "VILA",
+  "history": "Não existe um único Refúgio Errante — existem vários cascos de naves abandonadas, amarrados uns aos outros ao longo dos anos, que derivam juntos como uma única estrutura sem nunca ter sido projetados pra isso. A cada nave que se junta ao aglomerado, alguém acrescenta uma passarela nova, geralmente malfeita, geralmente funcional o suficiente. Ninguém sabe ao certo qual foi o primeiro casco — os moradores mais antigos discordam entre si, e cada um tem uma versão diferente que favorece a própria família como fundadora.",
+  "sensory": "Um emaranhado de cascos enferrujados unidos por passarelas de corda e metal reaproveitado, balançando de forma levemente dessincronizada conforme a corrente de éter empurra cada peça com força ligeiramente diferente. O som constante é de metal rangendo contra metal, alto o bastante que crianças nascidas ali aprendem a dormir através dele e ficam inquietas em qualquer lugar silencioso demais. Luzes de resina penduradas nas passarelas marcam o caminho seguro entre os cascos — pisar fora da luz, à noite, é como os moradores mais velhos assustam os mais novos a nunca fazer.",
+  "figures": [
+    {
+      "role": "Guardiã de Passarela",
+      "name": "Nell Cascoerrante",
+      "note": "Descendente de uma das famílias que disputa ser a fundadora original — mantém as passarelas em reparo constante, não por autoridade formal, mas porque ninguém mais tem paciência pro trabalho. Sabe exatamente qual casco está mais fraco e nunca contou a ninguém, temendo que a informação vire arma numa disputa de propriedade."
+    },
+    {
+      "role": "Contador de histórias",
+      "name": "Vesh Duasnaves",
+      "note": "Cresceu ouvindo as duas versões rivais sobre qual casco foi o primeiro e decidiu, na idade adulta, inventar uma terceira versão só pra irritar as duas famílias por igual — hoje ninguém mais sabe dizer com certeza se a versão de Vesh é brincadeira ou se ele mesmo já esqueceu que inventou."
+    }
+  ],
+  "hook": "Um dos cascos mais antigos do aglomerado começou a afundar lentamente pela primeira vez em décadas — Nell sabe que é o casco que ela sempre soube ser o mais fraco, mas revelar isso agora significa admitir que escondeu a informação por anos.",
+  "detail": "Não existe propriedade individual de casco no Refúgio — quem constrói uma passarela nova ganha direito de uso, não de posse, e um casco só é considerado \"de alguém\" enquanto essa pessoa continuar mantendo as passarelas que o ligam ao resto. Abandonar a manutenção é a única forma real de perder um lugar ali.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION"]
+}

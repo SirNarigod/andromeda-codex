@@ -1,0 +1,26 @@
+{
+  "death_policy": "NO_PERMANENT_XP_OR_ITEM_LOSS_STAGE15",
+  "features": [
+    "full SQLite snapshots",
+    "current/previous rotation",
+    "SHA-256",
+    "SQLite integrity",
+    "foreign-key validation",
+    "critical continuity fingerprint",
+    "corruption rejection",
+    "verified rollback",
+    "linear resume",
+    "safe-waypoint death recovery",
+    "post-death autosave"
+  ],
+  "master_mutations": 0,
+  "next_stage": "16_GODOT_RUNTIME",
+  "open_blockers": 0,
+  "open_corrections": 0,
+  "record_id": "ARPG-STAGE15-COMPLETION-REPORT-V1.6.0",
+  "result": "SAVE_PERSISTENCE_DEATH_RECOVERY_READY",
+  "resume_strategy": "LINEAR_REHYDRATION_SINGLE_GLOBAL_HEALTH",
+  "stage": "15/23",
+  "status": "PASS",
+  "version": "V1.6.0"
+}

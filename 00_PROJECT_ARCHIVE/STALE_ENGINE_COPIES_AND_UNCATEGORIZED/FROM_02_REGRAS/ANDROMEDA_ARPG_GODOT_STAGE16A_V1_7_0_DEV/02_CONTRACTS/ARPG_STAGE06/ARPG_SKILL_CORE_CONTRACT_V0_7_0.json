@@ -1,0 +1,37 @@
+{
+  "record_id": "ARPG-SKILL-SYSTEM-CONTRACT-V0.7.0",
+  "stage": "06/20",
+  "version": "V0.7.0",
+  "status": "IMPLEMENTED_TEST_PENDING_FINAL_SEAL",
+  "authority": "ARPG_SKILLS_BUILD_PROGRESSION_GAMEPLAY_DERIVATION",
+  "class_model": "EMERGENT_FROM_PLAYER_CHOICES_NO_FIXED_CLASS_LABEL",
+  "catalog": {
+    "canonical_magic_sources": 30,
+    "canonical_source_policy": "MASTER_READ_ONLY_NOT_AUTO_CASTABLE",
+    "gameplay_skill_prototypes": 6,
+    "prototype_policy": "GAMEPLAY_DERIVED_REPLACEABLE"
+  },
+  "loadout": {
+    "active_slots": 8,
+    "passive_slots": 4
+  },
+  "progression": {
+    "skill_ranks": "1_TO_10_BY_USE_MASTERY",
+    "mastery_per_successful_use": 10,
+    "passive_related_practice": 2,
+    "fixed_class": null
+  },
+  "integration": {
+    "character": "level/vitals authority remains CharacterCore",
+    "combat": "skill attacks use deterministic CombatCore extension",
+    "resources": "skill costs/cooldowns use ARPGResourceCore.reserve_action",
+    "items": "equipment modifiers remain additive and independent",
+    "godot": "client snapshot exposes skills/hotbar; editor execution deferred until user is on PC"
+  },
+  "canon_guard": {
+    "MAG_records": "identity/effect text preserved from Master; no numeric combat mapping inferred",
+    "runes": "not auto-applied by Stage06",
+    "canonical_skill_runtime_mapping": "AUTHORIAL_OR_LATER_SYSTEM_MAPPING_REQUIRED"
+  },
+  "art_dependency": "NONE_PLACEHOLDER_READY"
+}

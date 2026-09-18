@@ -1,0 +1,27 @@
+{
+  "loc_id": "LOC-016-002",
+  "record_id": "LOC-016-002",
+  "name": "Abrigo Central",
+  "parent_subregion": "SUB-016-002",
+  "function": "Assentamento principal escavado sob o gelo.",
+  "notable_link": "TER-016 Confins de Gelo (fase 49, território novo)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "settlement_tier": "CIDADE",
+  "history": "Escavar sob o gelo, em vez de construir sobre ele, foi decisão deliberada dos primeiros colonos depois que duas tentativas de assentamento em superfície foram destruídas por tempestades de vento congelante em anos seguidos. O Abrigo cresceu como uma rede de túneis e câmaras aquecidas por fontes geotérmicas raras encontradas por acaso durante a escavação inicial — sem essas fontes, o assentamento provavelmente nunca teria sobrevivido ao primeiro inverno completo.",
+  "sensory": "Túneis de gelo compactado e rocha se ramificam em várias direções, iluminados por lamparinas de resina fixadas em intervalos regulares que criam um brilho quente e alaranjado contrastando com o azul frio das paredes. O ar dentro é surpreendentemente ameno perto das fontes geotérmicas, mas esfria visivelmente quanto mais longe delas alguém se afasta — moradores desenvolveram um senso apurado de distância só pela temperatura no rosto. Vozes ecoam de forma estranha nos túneis mais estreitos, o que tornou comum o hábito de anunciar a própria presença em voz alta antes de virar qualquer esquina.",
+  "figures": [
+    {
+      "role": "Guardiã das Fontes",
+      "name": "Brenna Calorfundo",
+      "note": "Monitora a intensidade das fontes geotérmicas que aquecem o Abrigo, sabendo que uma queda repentina poderia significar desastre em questão de dias. Vive com o medo constante, nunca totalmente compartilhado, de que as fontes um dia simplesmente parem, como já aconteceu, segundo lendas antigas, em outro assentamento nunca encontrado."
+    },
+    {
+      "role": "Escavador de novos túneis",
+      "name": "Kelt Rochafria",
+      "note": "Lidera a expansão constante do Abrigo em busca de mais espaço habitável, e recentemente encontrou sinais de uma bolsa de calor ainda maior mais fundo — mas escavar até lá significaria passar perigosamente perto do limite de profundidade que Brenna considera seguro."
+    }
+  ],
+  "hook": "Kelt quer autorização pra escavar até a nova bolsa de calor encontrada, prometendo espaço suficiente pra dobrar o Abrigo — Brenna teme que perturbar a rocha entre as duas fontes possa desestabilizar a que já aquece o assentamento inteiro, e a decisão final ainda não foi tomada por ninguém com autoridade clara pra isso.",
+  "detail": "Todo morador do Abrigo aprende, ainda criança, a tocar a parede de gelo com as costas da mão antes de dormir — um hábito que começou como forma prática de checar a temperatura ambiente e virou ritual tranquilizador que ninguém mais questiona o motivo original.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION"]
+}

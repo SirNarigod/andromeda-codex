@@ -1,0 +1,56 @@
+{
+  "record_id": "QUEST-TER-018-V1.0",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "LOCAL_AUDITABLE_QUEST_TEMPLATE",
+  "title": "Silencio na Trincheira",
+  "locality": "SUB-018-001",
+  "anchor_reference": "EST-061 Cupula da Trincheira, JOB-016 Extrator de recursos",
+  "premise": "As transmissoes de uma equipe de extracao na Trincheira Profunda cessaram sem explicacao.",
+  "phases": [
+    {
+      "id": "WELCOME",
+      "objective": "Aceitar a tarefa local e receber o briefing na Cupula da Trincheira."
+    },
+    {
+      "id": "EVIDENCE",
+      "objective": "Investigar a ultima rota da equipe e sinais de atividade predatoria."
+    },
+    {
+      "id": "DECISION",
+      "objective": "Escolher uma resposta local com custo documentado."
+    },
+    {
+      "id": "REPORT",
+      "objective": "Reportar a resolucao ao Conselho das Profundezas."
+    }
+  ],
+  "resolutions": [
+    {
+      "id": "AVOID",
+      "title": "Recuo Preventivo",
+      "effect": "A area e evacuada ate nova avaliacao.",
+      "local_consequence": "Risco cai, mas a equipe desaparecida fica sem resgate imediato."
+    },
+    {
+      "id": "REPAIR",
+      "title": "Resgate Equipado",
+      "effect": "Equipamento de pressao reforcado permite busca segura.",
+      "local_consequence": "Consome recursos/tempo, mas resolve a causa."
+    },
+    {
+      "id": "ESCALATE_REPORT",
+      "title": "Escalonamento Formal",
+      "effect": "O caso e reportado ao Conselho das Profundezas para decisao institucional.",
+      "local_consequence": "Resolucao mais lenta, mas gera registro formal."
+    }
+  ],
+  "evidence_rule": "Evidencia sustenta apenas relatorio local e reputacao contextual - nao identifica causa como fato canonico sem portao autoral.",
+  "rewards": "reputacao contextual de runtime, acesso temporario e progressao pratica; nenhum item, titulo, territorio ou fato canonico.",
+  "prohibitions": [
+    "NO_OFFLINE_RESOLUTION",
+    "NO_CANON_PROMOTION",
+    "NO_NAMED_R2_APPEARANCE",
+    "NO_AUTHORIAL_DEATH",
+    "NO_ROOT_ESCALATION"
+  ]
+}

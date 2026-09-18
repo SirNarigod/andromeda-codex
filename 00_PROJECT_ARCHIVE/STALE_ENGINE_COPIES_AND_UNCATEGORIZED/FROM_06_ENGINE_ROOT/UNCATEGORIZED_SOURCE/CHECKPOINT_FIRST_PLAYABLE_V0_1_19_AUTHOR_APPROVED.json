@@ -1,0 +1,11 @@
+{
+  "checkpoint": "FIRST_PLAYABLE_V0_1_19_AUTHOR_APPROVED",
+  "parent_checkpoint": "FIRST_PLAYABLE_V0_1_19_DEV",
+  "status": "PASS_USER_APPROVED",
+  "validation_environment": "Godot 4.7.1 stable",
+  "reported_result": "approved_by_author",
+  "validated_by": "author_tester",
+  "ranged_weapon_correction_status": "CLOSED_FINAL",
+  "note": "O autor aprovou o comportamento e iniciou um novo recurso. Nenhuma nova alteração de balanceamento ranged foi incluída na V0.1.20.",
+  "promotion_to_v0_1_20": "AUTHORIZED"
+}

@@ -1,0 +1,13 @@
+{
+  "record_id": "ARPG-STAGE13-STRESS-V1.4.0",
+  "checks": 35,
+  "passed": 35,
+  "failed": 0,
+  "status": "PASS",
+  "profiles": 4,
+  "trades": 12,
+  "replays": 12,
+  "crafts": 4,
+  "stashes": 4,
+  "failures": []
+}

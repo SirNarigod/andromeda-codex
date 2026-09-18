@@ -1,0 +1,92 @@
+{
+  "record_id": "ANDROMEDA-STAGE17-S17-B1-B2-INVALIDATED-RUNS-V0.1.0-DEV",
+  "created_at": "2026-08-28T00:22:27.5521144-03:00",
+  "status": "PRESERVED_FOR_AUDIT",
+  "runs": [
+    {
+      "id": "S17B1-BACKEND-STARTUP-OWNER-DIVERGENCE",
+      "invalid_reason": "Cold authority startup found inherited SQLite state with MOTION_OWNER_DIVERGENCE.",
+      "resolution": "Preserved the world and saves in explicitly named archive directories and started a clean Stage17-isolated runtime; no SQL mutation or destructive deletion.",
+      "retest": "B1 36/36 PASS and B2 73/73 PASS on clean isolated authority."
+    },
+    {
+      "id": "S17B1-PARSER-MAXF-ARITY",
+      "invalid_reason": "Gate used maxf with three arguments.",
+      "resolution": "Nested the maxf calls.",
+      "retest": "B1 36/36 PASS."
+    },
+    {
+      "id": "S17B2-EMPTY-REJECTION-DIAGNOSTIC",
+      "invalid_reason": "First rejection-path gate indexed an empty result collection.",
+      "resolution": "Guarded the diagnostic collection and retained the actual failure reason.",
+      "retest": "B2 73/73 PASS."
+    },
+    {
+      "id": "S17B2-BRIDGE-SYNCING-FALSE-OFFLINE",
+      "invalid_reason": "Transient bridge SYNCING after ordinary snapshots was treated as authority offline, and unrelated traversal results were mixed with movement results.",
+      "resolution": "Permit session-bound anchored submissions during SYNCING and correlate results strictly by command_ref.",
+      "retest": "B2 73/73 PASS."
+    },
+    {
+      "id": "S17-00-CLI-MISSING-ARGUMENTS",
+      "invalid_reason": "Validator invocation omitted required explicit workspace/checkpoint/backup arguments.",
+      "resolution": "Reran with all protected paths supplied.",
+      "retest": "22/22 PASS."
+    },
+    {
+      "id": "S17A-LIVE-LISTENER-SESSION-LIFETIME",
+      "invalid_reason": "The first live regression lost the backend listener with the command session and completed 8/17.",
+      "resolution": "Restarted through the owned Stage17 launcher and reran with verified health.",
+      "retest": "17/17 PASS."
+    },
+    {
+      "id": "G19-PERSISTED-B2-POSITION",
+      "invalid_reason": "Persistent B2 movement left the authority actor outside the G19 combat encounter range; 29/32 intermediate groups passed before the range failure.",
+      "resolution": "Preserved the world, created a clean regression world, and reran from known Stage17 state.",
+      "retest": "G19 71/71 PASS."
+    },
+    {
+      "id": "COMBAT-POST-G19-RESPAWN-POSITION",
+      "invalid_reason": "G19 death/respawn state positioned the authority actor away from the combat fixture; run stopped at 46/78.",
+      "resolution": "Reran on an isolated clean regression world.",
+      "retest": "Subsequent diagnostic reached 77/78 and exposed the spatial-binding issue."
+    },
+    {
+      "id": "COMBAT-FALSE-AUTHORITY-APPROACH",
+      "invalid_reason": "Mapping a local enemy proxy position to territorial coordinates moved the authority avatar away from the real backend target; TARGET_OUT_OF_RANGE remained at 77/78.",
+      "resolution": "Separated normal ground authority movement from interaction presentation approaches and recorded authoritative spatial binding as pending.",
+      "retest": "Combat 91/91 PASS."
+    },
+    {
+      "id": "S17B1-VERTICAL-FLOOR-SETTLING",
+      "invalid_reason": "The gate compared full XYZ while CharacterBody floor settling changed presentation Y; horizontal movement semantics were otherwise correct.",
+      "resolution": "Made the movement mapping gate assert X/Z horizontal semantics while keeping finite altitude projection coverage.",
+      "retest": "B1 36/36 PASS."
+    },
+    {
+      "id": "S17B2-SPAWN-PHYSICS-SETTLING",
+      "invalid_reason": "The gate anchored before the CharacterBody reached the floor, producing 65/72.",
+      "resolution": "Wait for floor settling before pairing the actual Player with the first snapshot.",
+      "retest": "B2 73/73 PASS."
+    },
+    {
+      "id": "S17B2-PROJECTED-REGRESSION-STATE",
+      "invalid_reason": "A later run reused a world changed by preceding regression gates and reproduced 65/72.",
+      "resolution": "Preserved the state and executed the final acceptance on an isolated clean Stage17 world.",
+      "retest": "B2 73/73 PASS headless and 73/73 Editor Bridge."
+    }
+  ],
+  "archives_preserved": [
+    "STAGE17_RUNTIME_STATE/_archive_invalidated_s17b1_20260827T223100Z_authority",
+    "STAGE17_RUNTIME_STATE/_archive_invalidated_s17b1_20260827T223100Z_saves",
+    "STAGE17_RUNTIME_STATE/_archive_s17b1b2_live_evidence_20260828T000500Z_authority",
+    "STAGE17_RUNTIME_STATE/_archive_s17b1b2_live_evidence_20260828T000500Z_saves",
+    "STAGE17_RUNTIME_STATE/_archive_g19_regression_pass_20260828T002000Z_authority",
+    "STAGE17_RUNTIME_STATE/_archive_g19_regression_pass_20260828T002000Z_saves",
+    "STAGE17_RUNTIME_STATE/_archive_invalidated_combat_before_approach_split_20260828T003500Z_authority",
+    "STAGE17_RUNTIME_STATE/_archive_invalidated_combat_before_approach_split_20260828T003500Z_saves",
+    "STAGE17_RUNTIME_STATE/_archive_fast_regressions_pass_20260828T010000Z_authority",
+    "STAGE17_RUNTIME_STATE/_archive_fast_regressions_pass_20260828T010000Z_saves"
+  ]
+}
+

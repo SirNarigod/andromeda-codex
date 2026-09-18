@@ -1,0 +1,14 @@
+{
+  "record_id":"STELLAR-LIVING-CONTENT-INTEGRATION-LAW-V1.3",
+  "project":"ANDROMEDA CODEX",
+  "version":"V1.3",
+  "status":"ACTIVE_R2_COMPATIBLE_DERIVATION",
+  "supersedes":"STELLAR_LIVING_CONTENT_INTEGRATION_LAW_V1_2",
+  "authority":{"scope":"LIVING_SIM_LIVING_SCALE_AND_APPROVED_DERIVATIONS","write_authority":"NONE"},
+  "dependencies":["STELLAR_CONTENT_ROUTING_CONSTITUTION_V1_3.json","STELLAR_TERRAS_LIVRES_SUBREGION_LAW_V1_0.json","STELLAR_UE5_BALANCE_BOUNDARY_LAW_V1_0.json","STELLAR_PLAYABLE_TAXONOMY_LAW_V1_0.json"],
+  "invariants":["LIVING_SIM_READS_CANON_THROUGH_VERSIONED_PROJECTIONS","LIVING_SCALE_USES_R2_GEOGRAPHY_WITHOUT_INVENTING_LEVELS","STATE_MEANS_POLITICAL_UNIT","RUNTIME_VALUES_REMAIN_NONCANONICAL","DERIVED_SUBREGION_IS_NOT_SOVEREIGNTY","NAMED_R2_APPEARANCE_REQUIRES_AUTHORIAL_GATE","BALANCE_TUNING_IS_NOT_LORE"],
+  "prohibitions":["NO_SIMULATION_EPISODE_RETCON","NO_SIMULATION_SOVEREIGNTY_CHANGE","NO_SIMULATION_AUTHORIAL_DEATH_RESOLUTION","NO_AMADON_PRE_S01E08","NO_IRREVERSIBLE_ROOT_TRANSITION","NO_SIMULATED_FACTION_CANON_WRITE","NO_NUMERIC_BALANCE_PROMOTION","NO_ROOT_NUMERIC_PROFILE"],
+  "simulation_effects":["LivingSim may read local subregion conditions and technical tuning overlays.","Living Scale may place the six derived subregions beneath TER-011 and preserve R2 locality identity.","UE5 adapters may import subregion and balance DataTables but cannot convert either into canon authority."],
+  "allowed_states":["READ_ONLY_PROJECTION","RUNTIME_OVERLAY","PENDING_AUTHORIAL_GATE","BLOCKED"],
+  "story_generators":["Um risco local aumenta a exigência da travessia sem fixar o destino do território.","Uma revisão de dano corrige ritmo de jogo sem decidir uma consequência narrativa.","Uma sub-região pode crescer em histórias sem substituir sua cidade R2 de referência."]
+}

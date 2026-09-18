@@ -1,0 +1,44 @@
+{
+  "record_id": "SUB-008-002",
+  "record_kind": "DERIVED_SUBREGION_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Raízes Sagradas",
+  "parent_political_unit": "TER-008",
+  "provenance": {
+    "approval": "GAMEPLAY_DERIVED_DEV_SOURCE",
+    "r2_anchors": [
+      "TER-008"
+    ],
+    "compatibility": "Camada administrativa e narrativa local; não cria fronteira, cidade, soberania ou nova autoridade."
+  },
+  "function": "Base das árvores gigantes, área de rituais e sepultamentos sagrados.",
+  "locality_references": [
+    "LOC-008-002 Templo das Raízes"
+  ],
+  "permitted_catalog_links": {
+    "npc_roles": [
+      "classe:Nativos"
+    ],
+    "professions": [],
+    "encounters": [],
+    "resources": []
+  },
+  "local_conflicts": [
+    "acesso restrito a forasteiros versus necessidade de comércio com o exterior"
+  ],
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_AUTOMATIC_KENUA_SCENE",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_FIXED_BORDER_COORDINATE"
+  ],
+  "story_generators": [
+    "Um forasteiro profana sem querer um ritual e precisa reparar a ofensa antes de seguir viagem."
+  ],
+  "root_corruption": {
+    "status": "CORROMPIDA",
+    "intensity": "MEDIA",
+    "since_note": "Aplicado pelo portao autoral fase 57 (STELLAR_ROOT_CORRUPTION_GATE_DEV_V1_0.json) - fato do mundo em 842 EC, fase Alimentacao Silenciosa->Corrupcao da Raiz Profunda (COR-001)."
+  }
+}

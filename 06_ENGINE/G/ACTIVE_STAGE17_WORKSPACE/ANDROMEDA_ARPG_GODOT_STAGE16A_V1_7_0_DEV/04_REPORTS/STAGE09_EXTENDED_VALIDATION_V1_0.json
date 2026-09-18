@@ -1,0 +1,41 @@
+{
+  "record_id": "STAGE09-EXTENDED-VALIDATION-V1.0",
+  "status": "PASS",
+  "checks": 832,
+  "passed": 832,
+  "failed": 0,
+  "failures": [],
+  "world": {
+    "runs": 48,
+    "participants": 128,
+    "scopes": 3,
+    "environment_zones": 12
+  },
+  "modes": {
+    "FULL": {
+      "npc_delta": 192,
+      "ecology_delta": 192
+    },
+    "ACTIVE": {
+      "npc_delta": 96,
+      "ecology_delta": 96
+    },
+    "AGGREGATE": {
+      "npc_delta": 0,
+      "ecology_delta": 0
+    },
+    "ROUTINE_OFFLINE": {
+      "npc_delta": 0,
+      "ecology_delta": 0
+    }
+  },
+  "extensions": {
+    "economy": 36,
+    "faction": 36
+  },
+  "events": 404,
+  "propagation_runs": 403,
+  "config_snapshots": 48,
+  "sqlite_integrity": "ok",
+  "foreign_key_failures": 0
+}

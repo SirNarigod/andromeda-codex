@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-006-002",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Doca Aérea",
+  "parent_subregion": "SUB-006-002",
+  "parent_political_unit": "TER-006",
+  "function": "Ponto de ancoragem de naves visitantes.",
+  "notable_link": "Ancoradouro de Naves (SUB-006-002)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-006-002",
+  "settlement_tier": "COMPLEXO",
+  "history": "Toda nave que pretende visitar Altavela precisa atracar aqui primeiro, independentemente de destino final dentro do reino — uma exigência estabelecida gerações atrás depois que uma nave desconhecida tentou atracar diretamente na Plataforma Real sem autorização, incidente que ainda é citado como justificativa pra centralizar todo controle de tráfego aéreo num único ponto vigiado.",
+  "sensory": "Braços de ancoragem metálicos se estendem da estrutura principal como dedos abertos, cada um equipado com sistema de captura magnética capaz de estabilizar naves de tamanhos variados contra o vento constante em altitude. O som de metal ajustando tensão contra o peso de uma nave recém-atracada é constante, intercalado com anúncios de chegada gritados por controladores de tráfego posicionados em pontos estratégicos.",
+  "figures": [
+    {
+      "role": "Controladora-Chefe",
+      "name": "Ryssa Ventocontrol",
+      "note": "Decide a ordem de atracação com autoridade que poucos ousam contestar, tendo memorizado o protocolo de segurança inteiro depois de treinar sob o controlador que geriu a doca durante o incidente histórico que motivou as regras atuais."
+    },
+    {
+      "role": "Capitão frequente",
+      "name": "Dorn Casaverde",
+      "note": "Reclama abertamente que o protocolo de segurança ficou excessivamente rígido ao longo dos anos, atrasando comércio legítimo por causa de um incidente que aconteceu antes de qualquer piloto atual sequer nascer — Ryssa discorda veementemente, considerando cada regra necessária."
+    }
+  ],
+  "hook": "Dorn está organizando outros capitães frequentes pra apresentar formalmente uma petição de simplificação do protocolo — Ryssa já soube do movimento e está preparando argumentos pra defender cada regra individualmente, convencida de que ceder em qualquer ponto abre precedente perigoso.",
+  "detail": "Toda nave que atraca recebe um selo temporário de identificação magnética que só se desativa automaticamente quando a nave deixa o espaço aéreo do reino — um sistema que Ryssa monitora pessoalmente, capaz de dizer a qualquer momento exatamente quantas naves estrangeiras estão presentes em Altavela.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION"]
+}

@@ -1,0 +1,35 @@
+{
+  "record_id": "LOC-005-001",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Oficina de Convergência",
+  "parent_subregion": "SUB-005-001",
+  "parent_political_unit": "TER-005",
+  "function": "Oficina onde runa e tecnologia são combinadas sob licença.",
+  "notable_link": "Distrito Tecnomágico (SUB-005-001); classes Androids e Magos",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-005-001",
+  "settlement_tier": "COMPLEXO",
+  "history": "Esta é, segundo o próprio registro do Enclave Sintético, a oficina irmã da EST-019, onde a fusão tecnomágica que deu origem aos primeiros chassis sintéticos foi refinada — não o local de criação original, mas onde a técnica se tornou reproduzível o bastante pra sair do experimento isolado e virar ofício licenciado. Trabalhar ali significa lidar diariamente com a pergunta que o próprio Enclave nunca respondeu por completo: onde termina a máquina e começa a mente que a habita.",
+  "sensory": "Bancadas de trabalho misturam ferramentas de precisão mecânica com círculos rúnicos gravados diretamente na madeira reforçada, e o ar carrega uma mistura de ozônio fraco e óleo de manutenção que nenhum outro lugar do Principado tem. O som predominante é de ferramenta contra metal intercalado com o zumbido baixo de testes de ativação rúnica — os dois ritmos raramente coincidem, criando uma trilha sonora irregular que novatos acham desconfortável até se acostumarem.",
+  "figures": [
+    {
+      "role": "Mestre Convergente",
+      "name": "Halvor Fusaomão",
+      "note": "Treina novos técnicos há décadas e é um dos poucos vivos que participou pessoalmente do refinamento original da técnica na EST-019 — trata cada chassi sintético que passa pela oficina para reparo com um cuidado que vai além do profissional, algo que ele nunca explicou completamente nem a si mesmo."
+    },
+    {
+      "role": "Técnica sintética",
+      "name": "Unidade Ren-7, linhagem SOCIÁVEL",
+      "note": "Trabalha na oficina como intérprete entre clientes humanos e técnicos, e é uma das poucas androids da região que fala abertamente sobre a própria origem — uma rotina de conduta treinada, não uma mente transferida, fato que ela menciona sem constrangimento aparente, embora alguns colegas humanos ainda hesitem em perguntar diretamente."
+    },
+    {
+      "role": "Cliente recorrente",
+      "name": "Perrin Casomente",
+      "note": "Trouxe o próprio chassi de trabalho pra reparo tantas vezes que Halvor já perdeu a conta — carrega uma mente transferida da própria avó, falecida há anos, e trata cada visita à oficina com uma ansiedade que ninguém ali comenta em voz alta, por respeito."
+    }
+  ],
+  "hook": "Perrin trouxe o chassi com um dano que exige substituição de um componente raro só disponível através de um fornecedor que também atende o Enclave Sintético oficialmente — Ren-7 reconhece o fornecedor como alguém que, segundo rumores dela mesma nunca confirmou nem desmentiu, favorece chassis de mente transferida em detrimento de rotina treinada quando o estoque é limitado.",
+  "detail": "Toda reparo em chassi sintético exige duas assinaturas antes de ser considerado concluído: a do técnico humano responsável e a da própria unidade sintética confirmando que a reparação sente correta — uma prática que Halvor insistiu em instituir há anos, contra resistência inicial de colegas que achavam desnecessário perguntar a opinião de uma máquina sobre o próprio conserto.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION", "NO_MAGIC_LAW_REWRITE"]
+}

@@ -1,0 +1,40 @@
+{
+  "est_id": "EST-001",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Mercado Central de Lúminor",
+  "building_type": "COMERCIAL",
+  "parent_locality": "LOC-001-001",
+  "parent_subregion": "SUB-001-001",
+  "parent_political_unit": "TER-001",
+  "function": "Praça coberta de comércio geral, ponto de troca entre casas mercantis e viajantes.",
+  "economic_role": {
+    "is_vendor": true,
+    "sells": [
+      "mantimentos",
+      "tecidos",
+      "ferramentas"
+    ],
+    "produces": [],
+    "regulation_factor": 0.6
+  },
+  "capacity": {
+    "jobs": 12,
+    "residents": 0
+  },
+  "professions_linked": [
+    "mercador"
+  ],
+  "notable_link": "Feira Central de Lúminor (SUB-001-001); Elyra Vaelor",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "MADEIRA_E_ALVENARIA",
+    "flammability": "ALTA",
+    "recovery_days": 7
+  }
+}

@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/water_volume.gd" id="1_water"]
+
+[sub_resource type="StandardMaterial3D" id="Material_water"]
+transparency = 1
+shading_mode = 0
+albedo_color = Color(0.35, 0.67, 0.82, 0.42)
+roughness = 0.25
+
+[sub_resource type="BoxMesh" id="Mesh_water"]
+material = SubResource("Material_water")
+size = Vector3(6, 0.8, 4)
+
+[sub_resource type="BoxShape3D" id="Shape_water"]
+size = Vector3(6, 0.8, 4)
+
+[node name="WaterVolume" type="Area3D"]
+collision_layer = 2048
+collision_mask = 4112
+monitoring = true
+monitorable = true
+script = ExtResource("1_water")
+
+[node name="WaterVisual" type="MeshInstance3D" parent="."]
+mesh = SubResource("Mesh_water")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("Shape_water")

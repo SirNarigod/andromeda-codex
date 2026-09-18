@@ -1,0 +1,27 @@
+{
+  "record_id": "ARPG-STAGE01-TEST-SUMMARY-V0.2.0",
+  "stage": "01/18",
+  "status": "PASS",
+  "gates": {
+    "stage01_unit": {"tests": 12, "passed": 12, "failed": 0, "status": "PASS"},
+    "stage01_validation": {"checks": 58, "passed": 58, "failed": 0, "status": "PASS"},
+    "stage01_stress": {"checks": 35, "passed": 35, "failed": 0, "profiles": 12, "commands": 120, "frames": 120, "status": "PASS"},
+    "stage00_regression": {"checks": 51, "passed": 51, "failed": 0, "status": "PASS"},
+    "master_regression": {"suites": 29, "checks": 393, "passed": 393, "failed": 0, "status": "PASS"},
+    "supplemental_legacy_isolated": {
+      "country_scale_v1_2": {"tests": 9, "passed": 9, "status": "PASS"},
+      "v15_gameplay": {"tests": 6, "passed": 6, "status": "PASS"},
+      "v15_integration": {"tests": 5, "passed": 5, "status": "PASS"},
+      "v15_security_persistence": {"tests": 6, "passed": 6, "status": "PASS"}
+    }
+  },
+  "inconclusive_harness_events": [
+    {
+      "event": "Grouped legacy unittest execution exceeded executor timeout because multiple tests recreate full country worlds.",
+      "classification": "INCONCLUSIVE_TIMEOUT_NOT_FUNCTIONAL_FAIL",
+      "resolution": "Critical legacy files were executed separately; all 26 isolated tests listed above passed. Stage00 regression also passed 51/51."
+    }
+  ],
+  "godot_rendered_execution": "NOT_CLAIMED_STAGE01",
+  "art_pipeline": "LOCKED"
+}

@@ -1,0 +1,1063 @@
+{
+  "record_id": "V2.0.0-TO-V2.0.1-FINAL-DELTA-REPORT",
+  "version_previous": "V2.0.0",
+  "version_new": "V2.0.1",
+  "version_bump": "PATCH",
+  "classifications": {
+    "ADDED": 11,
+    "ADMINISTRATIVE_CHANGED": 3,
+    "METADATA_CHANGED": 3,
+    "UNCHANGED": 156
+  },
+  "rows": [
+    {
+      "path": "00_GOVERNANCE/MASTER_AUTHORIAL_DECISIONS_V2_0_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "19e970a54ed5631d151ef469103c96a0524756d89150936c00bb6ea160d4b5f3",
+      "new_sha256": "19e970a54ed5631d151ef469103c96a0524756d89150936c00bb6ea160d4b5f3"
+    },
+    {
+      "path": "00_GOVERNANCE/MASTER_AUTHORITY_MATRIX.json",
+      "classification": "ADMINISTRATIVE_CHANGED",
+      "previous_sha256": "7c214d4151f156beb99276670dff0b603e10b85146ff1fcf71dc84db328a1220",
+      "new_sha256": "d4dc86df9eccf37055aa0591891f1bd12ebcdb526d5838f006ba58f74e0c7fb2"
+    },
+    {
+      "path": "00_GOVERNANCE/MASTER_VERSIONING_DECISION_V2_0_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "aece4dcf03c67b3d700118d0d2011422f0750ae4a532342fa0b28aa58601ec3c",
+      "new_sha256": "aece4dcf03c67b3d700118d0d2011422f0750ae4a532342fa0b28aa58601ec3c"
+    },
+    {
+      "path": "00_GOVERNANCE/PATCH_V2_0_1/LEGACY_NAMESPACE_COMPATIBILITY_REGISTRY_V2_0_1.json",
+      "classification": "ADDED",
+      "previous_sha256": null,
+      "new_sha256": "f95d661d1cb9ab03b7d182e83186bc5b80d942e9cb41aa0b8d45dd8c31517ea1"
+    },
+    {
+      "path": "00_GOVERNANCE/PATCH_V2_0_1/MASTER_AUTHORITY_METADATA_V2_0_1.json",
+      "classification": "ADDED",
+      "previous_sha256": null,
+      "new_sha256": "feec08e97f493cd856a02729bfba36f57b1e1fcb2b06d8862a2613dd969ddda2"
+    },
+    {
+      "path": "00_GOVERNANCE/PATCH_V2_0_1/MASTER_NAMESPACE_POLICY_V2_0_1.json",
+      "classification": "ADDED",
+      "previous_sha256": null,
+      "new_sha256": "3c4801657ecdab94221a1fdfbd48f48f499d9da47bdd46167f994a18c1cd5258"
+    },
+    {
+      "path": "01_CANON/ANDROMEDA_CODEX_CANON_MASTER_V2_0_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "6dea942542360124afd61f36207b51e3a1f47f53f12116c43f5bff261eb391fe",
+      "new_sha256": "6dea942542360124afd61f36207b51e3a1f47f53f12116c43f5bff261eb391fe"
+    },
+    {
+      "path": "01_CANON/MASTER_CANON_MATRIX.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "ba1ebac3f72d294c3ccf938b8b94cba8b1d081b6a2f581822baa108ad20f6738",
+      "new_sha256": "ba1ebac3f72d294c3ccf938b8b94cba8b1d081b6a2f581822baa108ad20f6738"
+    },
+    {
+      "path": "02_ATLAS/ANDROMEDA_ATLAS_FINAL.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "b42ef0d31170c0066c84a144fe21cdf5579a9096a64bbf94cabcf3d7cf7d592d",
+      "new_sha256": "b42ef0d31170c0066c84a144fe21cdf5579a9096a64bbf94cabcf3d7cf7d592d"
+    },
+    {
+      "path": "02_ATLAS/AUDIT/FINAL_ATLAS_AUDIT_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "eb9f57b0a9159e29f1a4194db0a64e97787f143cc87f7a7b59500b3fcf19cfc3",
+      "new_sha256": "eb9f57b0a9159e29f1a4194db0a64e97787f143cc87f7a7b59500b3fcf19cfc3"
+    },
+    {
+      "path": "02_ATLAS/AUDIT/FINAL_SPOILER_AUDIT_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "2ac7ef50ae4a057be57f9e7dd39fc75d1dee8bc3d04a743b5688c160add72a0d",
+      "new_sha256": "2ac7ef50ae4a057be57f9e7dd39fc75d1dee8bc3d04a743b5688c160add72a0d"
+    },
+    {
+      "path": "02_ATLAS/STAGE_08_REFERENCE/01_DATA/ATLAS_ASSET_REGISTRY_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "83e872e83209ba063b3bbf887333755e156bedb65bb19e739468773900db2b91",
+      "new_sha256": "83e872e83209ba063b3bbf887333755e156bedb65bb19e739468773900db2b91"
+    },
+    {
+      "path": "02_ATLAS/STAGE_08_REFERENCE/01_DATA/ATLAS_DATA_MASTER_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "b32ac5e9b539f66b8512d012ec36fd313b16f54e7dda61c6576db711702931d9",
+      "new_sha256": "b32ac5e9b539f66b8512d012ec36fd313b16f54e7dda61c6576db711702931d9"
+    },
+    {
+      "path": "02_ATLAS/STAGE_08_REFERENCE/01_DATA/ATLAS_ENTITY_INDEX_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "dbfe0e3f351a4d447f552d1ce3a9bf5c33cfb9eca418c647b30d4479f4d62421",
+      "new_sha256": "dbfe0e3f351a4d447f552d1ce3a9bf5c33cfb9eca418c647b30d4479f4d62421"
+    },
+    {
+      "path": "02_ATLAS/STAGE_08_REFERENCE/01_DATA/ATLAS_INTERACTIVE_BUILD_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "9bae28a53463c9d7419b120103799e11fb63b9fa060a238ac7a1fe1b234d181a",
+      "new_sha256": "9bae28a53463c9d7419b120103799e11fb63b9fa060a238ac7a1fe1b234d181a"
+    },
+    {
+      "path": "02_ATLAS/STAGE_08_REFERENCE/01_DATA/ATLAS_LAYER_REGISTRY_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "6372fe7245cf3990be1750f3aac27399839c6d68d4107a6cf5a1c18e734142ea",
+      "new_sha256": "6372fe7245cf3990be1750f3aac27399839c6d68d4107a6cf5a1c18e734142ea"
+    },
+    {
+      "path": "02_ATLAS/STAGE_08_REFERENCE/01_DATA/ATLAS_LOCATION_INDEX_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "2dfee242329b785548969d3caa3d25052292e0d673eda62f2a5d889e996d153e",
+      "new_sha256": "2dfee242329b785548969d3caa3d25052292e0d673eda62f2a5d889e996d153e"
+    },
+    {
+      "path": "02_ATLAS/STAGE_08_REFERENCE/01_DATA/ATLAS_RELATIONSHIP_INDEX_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "f6103432613d2d84f4b27252a0c44ed4356f444a7aa91690302a79deb17571b9",
+      "new_sha256": "f6103432613d2d84f4b27252a0c44ed4356f444a7aa91690302a79deb17571b9"
+    },
+    {
+      "path": "02_ATLAS/STAGE_08_REFERENCE/01_DATA/ATLAS_ROUTE_INDEX_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "11d37c72487ce2a54b352a5ce9e52ebf8e03146fa7505e953184812528ee7612",
+      "new_sha256": "11d37c72487ce2a54b352a5ce9e52ebf8e03146fa7505e953184812528ee7612"
+    },
+    {
+      "path": "02_ATLAS/STAGE_08_REFERENCE/01_DATA/ATLAS_SEARCH_INDEX_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "a1e03a6031e51e1922d05c7a1081ad067f2f816f361ebf92e586e879fb6b659f",
+      "new_sha256": "a1e03a6031e51e1922d05c7a1081ad067f2f816f361ebf92e586e879fb6b659f"
+    },
+    {
+      "path": "02_ATLAS/STAGE_08_REFERENCE/01_DATA/ATLAS_SPOILER_SYSTEM_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "83ea2ba0434dc114cee21fa382eaf742b9f9a7405a1631fcf1b416fff0520f82",
+      "new_sha256": "83ea2ba0434dc114cee21fa382eaf742b9f9a7405a1631fcf1b416fff0520f82"
+    },
+    {
+      "path": "02_ATLAS/STAGE_08_REFERENCE/01_DATA/ATLAS_TIMELINE_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "1acac7b0005cf44b6009295eeb114ed4a7a4b8d87cc2dfd2fa296d8b6d330d3e",
+      "new_sha256": "1acac7b0005cf44b6009295eeb114ed4a7a4b8d87cc2dfd2fa296d8b6d330d3e"
+    },
+    {
+      "path": "02_ATLAS/STAGE_08_REFERENCE/02_BINDINGS/ATLAS_CODEX_BINDINGS_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "a86e3fbd1a0abe923cbfa456c99f369ad0193ea0034c615441cdc64803355781",
+      "new_sha256": "a86e3fbd1a0abe923cbfa456c99f369ad0193ea0034c615441cdc64803355781"
+    },
+    {
+      "path": "02_ATLAS/STAGE_08_REFERENCE/02_BINDINGS/ATLAS_ECOLOGY_BINDINGS_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "fab1455e76cf7a2683019a619f2b3d318f7a57bf6b833794b4a6078a2426ba89",
+      "new_sha256": "fab1455e76cf7a2683019a619f2b3d318f7a57bf6b833794b4a6078a2426ba89"
+    },
+    {
+      "path": "02_ATLAS/STAGE_08_REFERENCE/02_BINDINGS/ATLAS_ECONOMIC_BINDINGS_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "2ed6936bc1278be4247322dc9c9b3168e96ad7dc91b13f9a59d72dcd554cf3cd",
+      "new_sha256": "2ed6936bc1278be4247322dc9c9b3168e96ad7dc91b13f9a59d72dcd554cf3cd"
+    },
+    {
+      "path": "02_ATLAS/STAGE_08_REFERENCE/02_BINDINGS/ATLAS_FACTION_BINDINGS_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "2b708a9ed0e946c4c6f8f5451d21847741ca1afc3ae1b5320fbdd55aa812f702",
+      "new_sha256": "2b708a9ed0e946c4c6f8f5451d21847741ca1afc3ae1b5320fbdd55aa812f702"
+    },
+    {
+      "path": "02_ATLAS/STAGE_08_REFERENCE/02_BINDINGS/ATLAS_MAR_BINDINGS_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "dc59c90849ecdf5f964f870a925413c53935a656afd2ff5344fc8d0bba8a1762",
+      "new_sha256": "dc59c90849ecdf5f964f870a925413c53935a656afd2ff5344fc8d0bba8a1762"
+    },
+    {
+      "path": "02_ATLAS/STAGE_08_REFERENCE/02_BINDINGS/ATLAS_NARRATIVE_BINDINGS_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "5d2bd66c523dc4dd1f626b502706ad3212c245d6c61f4c5d534c393c5420d586",
+      "new_sha256": "5d2bd66c523dc4dd1f626b502706ad3212c245d6c61f4c5d534c393c5420d586"
+    },
+    {
+      "path": "02_ATLAS/STAGE_08_REFERENCE/02_BINDINGS/ATLAS_PROFESSION_BINDINGS_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "7f3a49511e4105dd09fd8fa10cab874c03e4344bd56e5b31c468d4e2e79921c3",
+      "new_sha256": "7f3a49511e4105dd09fd8fa10cab874c03e4344bd56e5b31c468d4e2e79921c3"
+    },
+    {
+      "path": "02_ATLAS/STAGE_08_REFERENCE/02_BINDINGS/ATLAS_ROOT_BINDINGS_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "ce0bee85ea7770e5017593e42e117865924358990aac0b26074630c32dfa35ca",
+      "new_sha256": "ce0bee85ea7770e5017593e42e117865924358990aac0b26074630c32dfa35ca"
+    },
+    {
+      "path": "02_ATLAS/STAGE_08_REFERENCE/03_INTERFACE/ATLAS_LOD_CONFIG_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "16a876b469a825bdfdc0f9411ae06e090a0081e55b9c97d6377fb081bc0c6b52",
+      "new_sha256": "16a876b469a825bdfdc0f9411ae06e090a0081e55b9c97d6377fb081bc0c6b52"
+    },
+    {
+      "path": "02_ATLAS/STAGE_08_REFERENCE/03_INTERFACE/ATLAS_UI_CONFIG_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "3c10c70a2d652fc5c0a78bebfbfbfc91415406405a77ad62d591610a372c36e7",
+      "new_sha256": "3c10c70a2d652fc5c0a78bebfbfbfc91415406405a77ad62d591610a372c36e7"
+    },
+    {
+      "path": "02_ATLAS/STAGE_08_REFERENCE/04_QUALIDADE/ATLAS_ACCESSIBILITY_REPORT_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "850994c7b5a943cb6b452a78be8b42823696cb26e38b8544a58f791e7a2ff6f3",
+      "new_sha256": "850994c7b5a943cb6b452a78be8b42823696cb26e38b8544a58f791e7a2ff6f3"
+    },
+    {
+      "path": "02_ATLAS/STAGE_08_REFERENCE/04_QUALIDADE/ATLAS_DATA_VALIDATION_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "c6b935fe29d4bd9d3fc1e59acdd938847a87d5c4e3e0276b0c2f737801b0e0aa",
+      "new_sha256": "c6b935fe29d4bd9d3fc1e59acdd938847a87d5c4e3e0276b0c2f737801b0e0aa"
+    },
+    {
+      "path": "02_ATLAS/STAGE_08_REFERENCE/04_QUALIDADE/ATLAS_DOMAIN_COVERAGE_REPORT_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "297dcd563ac6ac7fa07913a199796f3187c38f839ab267690532c816cfb8371a",
+      "new_sha256": "297dcd563ac6ac7fa07913a199796f3187c38f839ab267690532c816cfb8371a"
+    },
+    {
+      "path": "02_ATLAS/STAGE_08_REFERENCE/04_QUALIDADE/ATLAS_FUNCTIONAL_TESTS_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "fd51ab437992a9cd74190998ce84021f2eca11086ff2373de547469a6723ac92",
+      "new_sha256": "fd51ab437992a9cd74190998ce84021f2eca11086ff2373de547469a6723ac92"
+    },
+    {
+      "path": "02_ATLAS/STAGE_08_REFERENCE/04_QUALIDADE/ATLAS_PERFORMANCE_REPORT_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "0332f438bb2daffabaa98a96a07e4449d4fb94a68bef96873c7fdddb32facb54",
+      "new_sha256": "0332f438bb2daffabaa98a96a07e4449d4fb94a68bef96873c7fdddb32facb54"
+    },
+    {
+      "path": "02_ATLAS/STAGE_08_REFERENCE/04_QUALIDADE/ATLAS_REGRESSION_TESTS_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "35a28a0604b39faef6f083ca1f16a2d87a66e8bc9ffb2036135bd8242d061b78",
+      "new_sha256": "35a28a0604b39faef6f083ca1f16a2d87a66e8bc9ffb2036135bd8242d061b78"
+    },
+    {
+      "path": "02_ATLAS/STAGE_08_REFERENCE/04_QUALIDADE/ATLAS_RESPONSIVE_REPORT_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "fd90acb2321033b9a39c220a0346e2462e7cb4fa35af62642ce2f31a23f992c6",
+      "new_sha256": "fd90acb2321033b9a39c220a0346e2462e7cb4fa35af62642ce2f31a23f992c6"
+    },
+    {
+      "path": "02_ATLAS/runtime/app.js",
+      "classification": "UNCHANGED",
+      "previous_sha256": "83abc5381a156705ecefe89017a703bf50948752c2fe95d1c400e84bc25c6f93",
+      "new_sha256": "83abc5381a156705ecefe89017a703bf50948752c2fe95d1c400e84bc25c6f93"
+    },
+    {
+      "path": "02_ATLAS/runtime/atlas-core.mjs",
+      "classification": "UNCHANGED",
+      "previous_sha256": "ae2e88fea5db45cecb03705421efdf3da4a7262fc2506ae5c97d8a229b3f3d84",
+      "new_sha256": "ae2e88fea5db45cecb03705421efdf3da4a7262fc2506ae5c97d8a229b3f3d84"
+    },
+    {
+      "path": "02_ATLAS/runtime/data/atlas-data.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "cb91547e06027ca91890d1972dc3702bc9224d5edd52d2ae08ff32625184e10b",
+      "new_sha256": "cb91547e06027ca91890d1972dc3702bc9224d5edd52d2ae08ff32625184e10b"
+    },
+    {
+      "path": "02_ATLAS/runtime/data/atlas-ui-config.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "e73cdc6fa25293d7226bb24670a192e54c5a309771f1e63cd6fb1ba79f20633c",
+      "new_sha256": "e73cdc6fa25293d7226bb24670a192e54c5a309771f1e63cd6fb1ba79f20633c"
+    },
+    {
+      "path": "02_ATLAS/runtime/index.html",
+      "classification": "UNCHANGED",
+      "previous_sha256": "cc692caa15f63982e417281663bd7f67d306d6934ccd33165e26dab219a1564c",
+      "new_sha256": "cc692caa15f63982e417281663bd7f67d306d6934ccd33165e26dab219a1564c"
+    },
+    {
+      "path": "02_ATLAS/runtime/styles.css",
+      "classification": "UNCHANGED",
+      "previous_sha256": "8769d7299b95c522c0581325faa26bca10651948937a6c578711cd7075dfa017",
+      "new_sha256": "8769d7299b95c522c0581325faa26bca10651948937a6c578711cd7075dfa017"
+    },
+    {
+      "path": "03_DOMAINS/GEOSPATIAL/00_CONTROLE/CHECKPOINT_ETAPA_04_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "f5f9d1affb5dea595e5219c5fe01a0cc3ad535370ecc3eb0eb6c03356a96141d",
+      "new_sha256": "f5f9d1affb5dea595e5219c5fe01a0cc3ad535370ecc3eb0eb6c03356a96141d"
+    },
+    {
+      "path": "03_DOMAINS/GEOSPATIAL/01_MODELO/STELLAR_COORDINATE_SYSTEM_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "83a632f35821a4f4f8487c777dba8866b87ff980f6f577a7eb3113c03c223f89",
+      "new_sha256": "83a632f35821a4f4f8487c777dba8866b87ff980f6f577a7eb3113c03c223f89"
+    },
+    {
+      "path": "03_DOMAINS/GEOSPATIAL/01_MODELO/STELLAR_GEOSPATIAL_HIERARCHY_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "3c5c4200555d1c14b51b824dcd0b12f9e0e03e211f8f666a9a07ab8e05ed8d1c",
+      "new_sha256": "3c5c4200555d1c14b51b824dcd0b12f9e0e03e211f8f666a9a07ab8e05ed8d1c"
+    },
+    {
+      "path": "03_DOMAINS/GEOSPATIAL/01_MODELO/STELLAR_PLANETARY_MODEL_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "b12d3480682637927e3f42431c044639a4323ee76c4013a0493b64e4bdbf2782",
+      "new_sha256": "b12d3480682637927e3f42431c044639a4323ee76c4013a0493b64e4bdbf2782"
+    },
+    {
+      "path": "03_DOMAINS/GEOSPATIAL/01_MODELO/STELLAR_SCALE_MODEL_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "c10c0eb739d24e347ccf8add9f5a087759e85777f2763092f18aff90b56d3ac7",
+      "new_sha256": "c10c0eb739d24e347ccf8add9f5a087759e85777f2763092f18aff90b56d3ac7"
+    },
+    {
+      "path": "03_DOMAINS/GEOSPATIAL/02_GEOGRAFIA/STELLAR_BIOME_MODEL_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "9f5750e6173d99e5c4efa5c88dbf92ae03cfa013ddf7bd2657298939809c61bf",
+      "new_sha256": "9f5750e6173d99e5c4efa5c88dbf92ae03cfa013ddf7bd2657298939809c61bf"
+    },
+    {
+      "path": "03_DOMAINS/GEOSPATIAL/02_GEOGRAFIA/STELLAR_CLIMATE_SPATIAL_MODEL_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "3177cb8c59a9bae5416bb0b084d8b9955abbde5a8efc699c94665d88bc8a14c8",
+      "new_sha256": "3177cb8c59a9bae5416bb0b084d8b9955abbde5a8efc699c94665d88bc8a14c8"
+    },
+    {
+      "path": "03_DOMAINS/GEOSPATIAL/02_GEOGRAFIA/STELLAR_DISTANCE_MATRIX_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "aa9905d4d8da79f1d697fba7ec81392b0c120b86dffaf740bbba568b56bc7f24",
+      "new_sha256": "aa9905d4d8da79f1d697fba7ec81392b0c120b86dffaf740bbba568b56bc7f24"
+    },
+    {
+      "path": "03_DOMAINS/GEOSPATIAL/02_GEOGRAFIA/STELLAR_HYDROLOGY_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "25668821d520faa55fe1ac28bab243127da5e1df83c2c5727553c1b62f8b7c2a",
+      "new_sha256": "25668821d520faa55fe1ac28bab243127da5e1df83c2c5727553c1b62f8b7c2a"
+    },
+    {
+      "path": "03_DOMAINS/GEOSPATIAL/02_GEOGRAFIA/STELLAR_MAJOR_LOCATIONS_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "f612cb1fac20430d784fd23132bc812d3381cd057a2921fbf2e22f0fbbe77cf0",
+      "new_sha256": "f612cb1fac20430d784fd23132bc812d3381cd057a2921fbf2e22f0fbbe77cf0"
+    },
+    {
+      "path": "03_DOMAINS/GEOSPATIAL/02_GEOGRAFIA/STELLAR_REGIONS_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "9be5de2be17663a26a1b337dff2a3c9410827a9bf50ba366a7de4a99b9913d38",
+      "new_sha256": "9be5de2be17663a26a1b337dff2a3c9410827a9bf50ba366a7de4a99b9913d38"
+    },
+    {
+      "path": "03_DOMAINS/GEOSPATIAL/02_GEOGRAFIA/STELLAR_RELIEF_MODEL_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "fc643b5f36d2c5372383aa8c60ece100b0e743b4a72aa076e13d88596e28cba1",
+      "new_sha256": "fc643b5f36d2c5372383aa8c60ece100b0e743b4a72aa076e13d88596e28cba1"
+    },
+    {
+      "path": "03_DOMAINS/GEOSPATIAL/02_GEOGRAFIA/STELLAR_ROUTE_SKELETON_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "75c21212f25de421e8168d045ebac214574f05d4b37b57e5cf548a9381aebdc8",
+      "new_sha256": "75c21212f25de421e8168d045ebac214574f05d4b37b57e5cf548a9381aebdc8"
+    },
+    {
+      "path": "03_DOMAINS/GEOSPATIAL/02_GEOGRAFIA/STELLAR_TERRITORIES_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "5176b98c12ddcf3f5589f46e8a6f317ee1e795d7b605fc79da6d0b409241135c",
+      "new_sha256": "5176b98c12ddcf3f5589f46e8a6f317ee1e795d7b605fc79da6d0b409241135c"
+    },
+    {
+      "path": "03_DOMAINS/GEOSPATIAL/03_ATLAS/STELLAR_ATLAS_SCHEMA_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "dd85a1def8c65fe02cb66a7b7900dba2248e95f6f694cd5d88573c335b7dedd6",
+      "new_sha256": "dd85a1def8c65fe02cb66a7b7900dba2248e95f6f694cd5d88573c335b7dedd6"
+    },
+    {
+      "path": "03_DOMAINS/GEOSPATIAL/05_VALIDACAO/RESULTADO_TESTES_GEOESPACIAIS_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "51d14d0e60258e8ed2ca184dde3b96aa40cef7e34bb0e0e6c516140a6d3e90f4",
+      "new_sha256": "51d14d0e60258e8ed2ca184dde3b96aa40cef7e34bb0e0e6c516140a6d3e90f4"
+    },
+    {
+      "path": "03_DOMAINS/PROFESSIONS/02_PROFISSOES/CHARACTER_PROFESSION_BINDINGS_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "1077b9046621bca8e943087f151d82f989584dc9fe6d16cfdffb460445a1662c",
+      "new_sha256": "1077b9046621bca8e943087f151d82f989584dc9fe6d16cfdffb460445a1662c"
+    },
+    {
+      "path": "03_DOMAINS/PROFESSIONS/02_PROFISSOES/PROFESSIONS_FUNCTIONAL_MASTER_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "2e0e8bbf3d1e770b0688903f2d0b12a28621c08c149141b302de72e639f02c1e",
+      "new_sha256": "2e0e8bbf3d1e770b0688903f2d0b12a28621c08c149141b302de72e639f02c1e"
+    },
+    {
+      "path": "03_DOMAINS/PROFESSIONS/02_PROFISSOES/PROFESSION_ECONOMIC_BINDINGS_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "d1777e26447acef73fcd26dfc5a4916f7c1a36b1603c68dae8d4ee9cd4d403b7",
+      "new_sha256": "d1777e26447acef73fcd26dfc5a4916f7c1a36b1603c68dae8d4ee9cd4d403b7"
+    },
+    {
+      "path": "03_DOMAINS/PROFESSIONS/02_PROFISSOES/PROFESSION_EDUCATION_BINDINGS_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "1be42664b92952cf9783bba6bc819f787a2c477cd98afd7bda67f02961ac3d8a",
+      "new_sha256": "1be42664b92952cf9783bba6bc819f787a2c477cd98afd7bda67f02961ac3d8a"
+    },
+    {
+      "path": "03_DOMAINS/PROFESSIONS/02_PROFISSOES/PROFESSION_INSTITUTION_BINDINGS_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "b7d08e20c5b243dcbf07eb729809969a3d743a203fdccd3e459fc06bc2986270",
+      "new_sha256": "b7d08e20c5b243dcbf07eb729809969a3d743a203fdccd3e459fc06bc2986270"
+    },
+    {
+      "path": "03_DOMAINS/PROFESSIONS/02_PROFISSOES/PROFESSION_SPATIAL_BINDINGS_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "b246db9bac713406d302ac651b7ba48b4fc6a304b5bc4394bfc2419ca81ddb3c",
+      "new_sha256": "b246db9bac713406d302ac651b7ba48b4fc6a304b5bc4394bfc2419ca81ddb3c"
+    },
+    {
+      "path": "03_DOMAINS/SPATIALIZATION/01_ENTIDADES/STELLAR_ENTITY_LOCATION_BINDINGS_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "277412ba92a8520a7b97f45d0f8414bd72e0b673a8590bfdc2bd859f04eba1e4",
+      "new_sha256": "277412ba92a8520a7b97f45d0f8414bd72e0b673a8590bfdc2bd859f04eba1e4"
+    },
+    {
+      "path": "03_DOMAINS/SPATIALIZATION/01_ENTIDADES/STELLAR_SPATIALIZED_ENTITIES_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "896e3bd7e8c7e9410142f3f6b5521c4f0cac76867af5009fc345828cd9f223dd",
+      "new_sha256": "896e3bd7e8c7e9410142f3f6b5521c4f0cac76867af5009fc345828cd9f223dd"
+    },
+    {
+      "path": "03_DOMAINS/SPATIALIZATION/02_DISTRIBUICOES/STELLAR_AGRICULTURAL_ZONES_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "d2bec77b993042c61e4a47c9b99d12154baa28d218494a50836d708fa33ebd45",
+      "new_sha256": "d2bec77b993042c61e4a47c9b99d12154baa28d218494a50836d708fa33ebd45"
+    },
+    {
+      "path": "03_DOMAINS/SPATIALIZATION/02_DISTRIBUICOES/STELLAR_FAUNA_DISTRIBUTION_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "175fb37ad5fd17a8dda625a6ed233985118fb8411f90cc1d31b5291c67981eef",
+      "new_sha256": "175fb37ad5fd17a8dda625a6ed233985118fb8411f90cc1d31b5291c67981eef"
+    },
+    {
+      "path": "03_DOMAINS/SPATIALIZATION/02_DISTRIBUICOES/STELLAR_FLORA_DISTRIBUTION_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "4c5d276fd06608a154b8fcd0c904066aaa9ba37afe7031412cfccac27bca46d0",
+      "new_sha256": "4c5d276fd06608a154b8fcd0c904066aaa9ba37afe7031412cfccac27bca46d0"
+    },
+    {
+      "path": "03_DOMAINS/SPATIALIZATION/02_DISTRIBUICOES/STELLAR_POPULATION_DISTRIBUTION_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "cc7bb55bf7df6193c8fa6ee1cc173c96ffbaecd330c65dbf84bdd5db3cf9c4fd",
+      "new_sha256": "cc7bb55bf7df6193c8fa6ee1cc173c96ffbaecd330c65dbf84bdd5db3cf9c4fd"
+    },
+    {
+      "path": "03_DOMAINS/SPATIALIZATION/02_DISTRIBUICOES/STELLAR_RESOURCE_ZONES_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "ff40b908e7ccc691c47ba969bcfd3aacb6356610ab40693cfa63047ea9c79a18",
+      "new_sha256": "ff40b908e7ccc691c47ba969bcfd3aacb6356610ab40693cfa63047ea9c79a18"
+    },
+    {
+      "path": "03_DOMAINS/SPATIALIZATION/03_REDES/STELLAR_COMMUNICATION_NETWORK_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "97dc00bfe75d15ccf4ab6def0ee209967a2d8f44c84dcbc160ac56440ccff2a1",
+      "new_sha256": "97dc00bfe75d15ccf4ab6def0ee209967a2d8f44c84dcbc160ac56440ccff2a1"
+    },
+    {
+      "path": "03_DOMAINS/SPATIALIZATION/03_REDES/STELLAR_DEFENSE_NETWORK_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "393137add928b2dee282eb4781226eaf8079671d2f5fee22b994ed5ec90d34e0",
+      "new_sha256": "393137add928b2dee282eb4781226eaf8079671d2f5fee22b994ed5ec90d34e0"
+    },
+    {
+      "path": "03_DOMAINS/SPATIALIZATION/03_REDES/STELLAR_ECONOMIC_FLOWS_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "10d7dbda50b3f232054fb15ab0b983074ad66f4d978dd2ce6e2e9f5290488eb7",
+      "new_sha256": "10d7dbda50b3f232054fb15ab0b983074ad66f4d978dd2ce6e2e9f5290488eb7"
+    },
+    {
+      "path": "03_DOMAINS/SPATIALIZATION/03_REDES/STELLAR_FACTION_INFLUENCE_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "df1bd7e831f6b97ed63e58a37eb9ac4a73643642901e175a81270c3d8c980028",
+      "new_sha256": "df1bd7e831f6b97ed63e58a37eb9ac4a73643642901e175a81270c3d8c980028"
+    },
+    {
+      "path": "03_DOMAINS/SPATIALIZATION/03_REDES/STELLAR_INDUSTRIAL_NODES_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "c2fbb8231e0542588301f98c400d21306a4ef95c12bb0f00f99bcaa68c4d3c67",
+      "new_sha256": "c2fbb8231e0542588301f98c400d21306a4ef95c12bb0f00f99bcaa68c4d3c67"
+    },
+    {
+      "path": "03_DOMAINS/SPATIALIZATION/03_REDES/STELLAR_INSTITUTION_NETWORK_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "609dedb48b23852acb338e9e92c147cf91d4512f5887b87a31072ae74c9fdb57",
+      "new_sha256": "609dedb48b23852acb338e9e92c147cf91d4512f5887b87a31072ae74c9fdb57"
+    },
+    {
+      "path": "03_DOMAINS/SPATIALIZATION/03_REDES/STELLAR_SECONDARY_ROUTE_REGISTRY_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "d05227690eff4a740c8224d29cc079afeb7919ed22d068337b1a628b1525d24e",
+      "new_sha256": "d05227690eff4a740c8224d29cc079afeb7919ed22d068337b1a628b1525d24e"
+    },
+    {
+      "path": "03_DOMAINS/SPATIALIZATION/05_ATLAS/STELLAR_DISTANCE_MATRIX_EXPANDED_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "ea8201e3297b0de5cffa0ed2c7026d38cdde10e7c0b9b48b76ed48bb4690693e",
+      "new_sha256": "ea8201e3297b0de5cffa0ed2c7026d38cdde10e7c0b9b48b76ed48bb4690693e"
+    },
+    {
+      "path": "03_DOMAINS/SPATIALIZATION/05_ATLAS/STELLAR_LAYER_BINDINGS_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "cc901e722f44b00d21dae0443e30f341a84a4cd841bddd8c82b736ee8305ed2d",
+      "new_sha256": "cc901e722f44b00d21dae0443e30f341a84a4cd841bddd8c82b736ee8305ed2d"
+    },
+    {
+      "path": "03_DOMAINS/SPATIALIZATION/05_ATLAS/STELLAR_POI_REGISTRY_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "3e5a06b31a7c272a7216ad1cd98b13f85c9dabb6159e369b65311f84a9efbc06",
+      "new_sha256": "3e5a06b31a7c272a7216ad1cd98b13f85c9dabb6159e369b65311f84a9efbc06"
+    },
+    {
+      "path": "03_DOMAINS/SPATIALIZATION/05_ATLAS/STELLAR_SPOILER_MATRIX_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "f43e51df7f9fe41d33d4d88be8c4740d878850fb31f0d32a243831fc7f910100",
+      "new_sha256": "f43e51df7f9fe41d33d4d88be8c4740d878850fb31f0d32a243831fc7f910100"
+    },
+    {
+      "path": "04_NARRATIVE/SPATIAL/04_NARRATIVA/STELLAR_HISTORICAL_GEOREFERENCE_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "386f38fd681498091dc68d590d257f8a458f3266eeb12b6eb048d6f4e82c1eaa",
+      "new_sha256": "386f38fd681498091dc68d590d257f8a458f3266eeb12b6eb048d6f4e82c1eaa"
+    },
+    {
+      "path": "04_NARRATIVE/SPATIAL/04_NARRATIVA/STELLAR_MAR_SPATIAL_BINDINGS_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "e684da99f4936f31144c97ea8b8bafa9a01bdada25b928ea12c795ca3699d909",
+      "new_sha256": "e684da99f4936f31144c97ea8b8bafa9a01bdada25b928ea12c795ca3699d909"
+    },
+    {
+      "path": "04_NARRATIVE/SPATIAL/04_NARRATIVA/STELLAR_NARRATIVE_ROUTES_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "0d687c5c875d1216befb107fbd577129db4168a96c61e4c9d0c2185fcb9e3d20",
+      "new_sha256": "0d687c5c875d1216befb107fbd577129db4168a96c61e4c9d0c2185fcb9e3d20"
+    },
+    {
+      "path": "04_NARRATIVE/SPATIAL/04_NARRATIVA/STELLAR_ROOT_SPATIAL_BINDINGS_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "36b3670e094371cfa0378475696bb7d5aa852fa30cd196576e8f04bab87cb82a",
+      "new_sha256": "36b3670e094371cfa0378475696bb7d5aa852fa30cd196576e8f04bab87cb82a"
+    },
+    {
+      "path": "04_NARRATIVE/VALIDATION/ATLAS_CODEX_BINDING_VALIDATION_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "f81708620f7fdb6ce9cb66ca926a2aafa17f2184e3475d94fac8410ae2195ac5",
+      "new_sha256": "f81708620f7fdb6ce9cb66ca926a2aafa17f2184e3475d94fac8410ae2195ac5"
+    },
+    {
+      "path": "04_NARRATIVE/VALIDATION/ATLAS_SPOILER_VALIDATION_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "1a86c16c6e732cc811d3529f0b75369841ebf9332c7967648c80cc9a2d1d3dbf",
+      "new_sha256": "1a86c16c6e732cc811d3529f0b75369841ebf9332c7967648c80cc9a2d1d3dbf"
+    },
+    {
+      "path": "04_NARRATIVE/VALIDATION/NARRATIVE_MAR_VALIDATION_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "f2b8193ab58af86bc2b50740b502677932c740c32d21770b440390c658e43f78",
+      "new_sha256": "f2b8193ab58af86bc2b50740b502677932c740c32d21770b440390c658e43f78"
+    },
+    {
+      "path": "04_NARRATIVE/VALIDATION/NARRATIVE_SPATIAL_VALIDATION_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "e085c7f4f308c84975fc0b102cf01beb5c26ab0c3d268e8a91bbf12b531b4c7e",
+      "new_sha256": "e085c7f4f308c84975fc0b102cf01beb5c26ab0c3d268e8a91bbf12b531b4c7e"
+    },
+    {
+      "path": "05_MAR/FUNCTIONAL/01_MAR/MAR_COMPATIBILITY_MATRIX_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "d1f7fbbd140a927f4eb2a552acf38dbce8d013b88ea7c85b5d710dd70fbe0de2",
+      "new_sha256": "d1f7fbbd140a927f4eb2a552acf38dbce8d013b88ea7c85b5d710dd70fbe0de2"
+    },
+    {
+      "path": "05_MAR/FUNCTIONAL/01_MAR/MAR_FUNCTIONAL_MASTER_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "82bad07116f73b93a1cc54c99b8f346df73fc50132e8dec40a431a4ba5ffc0b9",
+      "new_sha256": "82bad07116f73b93a1cc54c99b8f346df73fc50132e8dec40a431a4ba5ffc0b9"
+    },
+    {
+      "path": "05_MAR/FUNCTIONAL/01_MAR/MAR_MAGIC_FUNCTIONAL_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "1a9551a30d0ea6c235a7f16223a082be53cabb5cd0ca7664e43438123d6c24ea",
+      "new_sha256": "1a9551a30d0ea6c235a7f16223a082be53cabb5cd0ca7664e43438123d6c24ea"
+    },
+    {
+      "path": "05_MAR/FUNCTIONAL/01_MAR/MAR_MAINTENANCE_MATRIX_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "cfcb3baea35197d2e1f288cc863cef51aee88550c870b48e3c85caa1c8765a2f",
+      "new_sha256": "cfcb3baea35197d2e1f288cc863cef51aee88550c870b48e3c85caa1c8765a2f"
+    },
+    {
+      "path": "05_MAR/FUNCTIONAL/01_MAR/MAR_NARRATIVE_BINDINGS_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "42940e25dce81bca6ad21b3363554048c9e62f47bd94cba5224f203c2181697a",
+      "new_sha256": "42940e25dce81bca6ad21b3363554048c9e62f47bd94cba5224f203c2181697a"
+    },
+    {
+      "path": "05_MAR/FUNCTIONAL/01_MAR/MAR_PRODUCTION_CHAINS_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "2e9f7de0da3c021a8f9434f393cf72345f7beceb04e42bbb4f3ef79471461274",
+      "new_sha256": "2e9f7de0da3c021a8f9434f393cf72345f7beceb04e42bbb4f3ef79471461274"
+    },
+    {
+      "path": "05_MAR/FUNCTIONAL/01_MAR/MAR_RUNES_FUNCTIONAL_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "b2ac90bcb50249c647d721f72f3778fbb3064207ef0fa051e83184a1f12b795f",
+      "new_sha256": "b2ac90bcb50249c647d721f72f3778fbb3064207ef0fa051e83184a1f12b795f"
+    },
+    {
+      "path": "05_MAR/FUNCTIONAL/01_MAR/MAR_SPATIAL_BINDINGS_FINAL_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "d72b900c8cd0bdc88cb5898ffa9609b71367ee6554dec4d45136eb15bc308ef2",
+      "new_sha256": "d72b900c8cd0bdc88cb5898ffa9609b71367ee6554dec4d45136eb15bc308ef2"
+    },
+    {
+      "path": "05_MAR/FUNCTIONAL/01_MAR/MAR_USER_BINDINGS_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "c818c90b05c3de36b7895d03426f60ceda604c46b83e28a5179f5905fca70a66",
+      "new_sha256": "c818c90b05c3de36b7895d03426f60ceda604c46b83e28a5179f5905fca70a66"
+    },
+    {
+      "path": "05_MAR/FUNCTIONAL/01_MAR/MAR_VISUAL_BRIEFS_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "d6e43b670861794d76f210687477d0a66bae3e2b96cb608785b0b47e62c06f94",
+      "new_sha256": "d6e43b670861794d76f210687477d0a66bae3e2b96cb608785b0b47e62c06f94"
+    },
+    {
+      "path": "05_MAR/FUNCTIONAL/01_MAR/MAR_WEAPONS_FUNCTIONAL_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "ab455b40440853f06a7a27c844c7e7bc19e9892b0a72f596cf1540b6a5d0d42e",
+      "new_sha256": "ab455b40440853f06a7a27c844c7e7bc19e9892b0a72f596cf1540b6a5d0d42e"
+    },
+    {
+      "path": "05_MAR/INTEGRATION/MAGIC_TECH_BALANCE_REPORT_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "a8662f5abc8773f83a4b5f3bc75e57370e03e5f68df0efd55bc9b000c4a308c0",
+      "new_sha256": "a8662f5abc8773f83a4b5f3bc75e57370e03e5f68df0efd55bc9b000c4a308c0"
+    },
+    {
+      "path": "05_MAR/INTEGRATION/MAR_BALANCE_MATRIX_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "a7bd971b5e376d425fbfbfafc6a33acf03605451bb2beed0861578bfe94b7fe3",
+      "new_sha256": "a7bd971b5e376d425fbfbfafc6a33acf03605451bb2beed0861578bfe94b7fe3"
+    },
+    {
+      "path": "05_MAR/INTEGRATION/MAR_SYSTEM_INTEGRATION_REPORT_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "26dff2c5cd8a4aa612408799c5b90a1d0e1d2bff1fc0289ff09bd47a99074300",
+      "new_sha256": "26dff2c5cd8a4aa612408799c5b90a1d0e1d2bff1fc0289ff09bd47a99074300"
+    },
+    {
+      "path": "05_MAR/INTEGRATION/RUNE_TECH_COMPATIBILITY_FINAL_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "7f951f6ed68a9bcaefaf1b680551301e11e4f49c646f6f60d2742cfd2b62e026",
+      "new_sha256": "7f951f6ed68a9bcaefaf1b680551301e11e4f49c646f6f60d2742cfd2b62e026"
+    },
+    {
+      "path": "06_VISUAL/ATLAS_ASSET_REGISTRY_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "83e872e83209ba063b3bbf887333755e156bedb65bb19e739468773900db2b91",
+      "new_sha256": "83e872e83209ba063b3bbf887333755e156bedb65bb19e739468773900db2b91"
+    },
+    {
+      "path": "06_VISUAL/MAR_VISUAL_BRIEFS_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "d6e43b670861794d76f210687477d0a66bae3e2b96cb608785b0b47e62c06f94",
+      "new_sha256": "d6e43b670861794d76f210687477d0a66bae3e2b96cb608785b0b47e62c06f94"
+    },
+    {
+      "path": "06_VISUAL/VISUAL_FALLBACK_POLICY_V2_0_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "ff607dab3fb56cd6fe2dad03c41ae38303c141d55a21c2426115ecef4c7809c8",
+      "new_sha256": "ff607dab3fb56cd6fe2dad03c41ae38303c141d55a21c2426115ecef4c7809c8"
+    },
+    {
+      "path": "07_RELATIONSHIPS/MASTER_RELATIONSHIP_REGISTRY_V2_0_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "bd0541c743217e04b24e3dc643491cfad00bf0e349875b07f59bd8dfb19e8ab7",
+      "new_sha256": "bd0541c743217e04b24e3dc643491cfad00bf0e349875b07f59bd8dfb19e8ab7"
+    },
+    {
+      "path": "07_RELATIONSHIPS/STAGE_06/03_BINDINGS/AUXILIARY_ENTITIES_ETAPA_06_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "ab81cea7982ee501a167989b48d6c89df5228f170dc5df2750a3fdec3f4b645d",
+      "new_sha256": "ab81cea7982ee501a167989b48d6c89df5228f170dc5df2750a3fdec3f4b645d"
+    },
+    {
+      "path": "07_RELATIONSHIPS/STAGE_06/03_BINDINGS/DEPENDENCY_TYPE_CATALOG_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "0d827fceede466b2c1daa29d84243cb3a7ef770e3f979ee56a0c2be6baf006a3",
+      "new_sha256": "0d827fceede466b2c1daa29d84243cb3a7ef770e3f979ee56a0c2be6baf006a3"
+    },
+    {
+      "path": "07_RELATIONSHIPS/STAGE_06/03_BINDINGS/GLOBAL_BINDING_REGISTRY_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "8643ec97fa3461087496a3716f83c5b110f1e697d357316074a2c4a0f225017b",
+      "new_sha256": "8643ec97fa3461087496a3716f83c5b110f1e697d357316074a2c4a0f225017b"
+    },
+    {
+      "path": "08_SCHEMAS/MASTER_DATA_CONTRACT_V2_0_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "55eab01ad9587ec388509ed7d80db924222b6144becc9b2362454be59a07e31e",
+      "new_sha256": "55eab01ad9587ec388509ed7d80db924222b6144becc9b2362454be59a07e31e"
+    },
+    {
+      "path": "08_SCHEMAS/STELLAR_ATLAS_SCHEMA_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "dd85a1def8c65fe02cb66a7b7900dba2248e95f6f694cd5d88573c335b7dedd6",
+      "new_sha256": "dd85a1def8c65fe02cb66a7b7900dba2248e95f6f694cd5d88573c335b7dedd6"
+    },
+    {
+      "path": "09_TESTS/MASTER_ATLAS_TESTS.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "c0ffeb2e7722ccac0dd15fdd9f3b6fa9660994609793e5e3037b735f4932dd20",
+      "new_sha256": "c0ffeb2e7722ccac0dd15fdd9f3b6fa9660994609793e5e3037b735f4932dd20"
+    },
+    {
+      "path": "09_TESTS/MASTER_GEOSPATIAL_TESTS.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "4f99a1cbadb4789e077e04f95f368fda1858a23677e2626e671bb004335a930f",
+      "new_sha256": "4f99a1cbadb4789e077e04f95f368fda1858a23677e2626e671bb004335a930f"
+    },
+    {
+      "path": "09_TESTS/MASTER_MAR_TESTS.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "2105bff8abc1f1a146980eaf7c4ed98b6114f660eb913829cadf465017f71bc3",
+      "new_sha256": "2105bff8abc1f1a146980eaf7c4ed98b6114f660eb913829cadf465017f71bc3"
+    },
+    {
+      "path": "09_TESTS/MASTER_PROFESSION_TESTS.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "6891c147af3ba8aefb22cb5f2ca0a2ef204a915d9ad261e7cd867fec95094900",
+      "new_sha256": "6891c147af3ba8aefb22cb5f2ca0a2ef204a915d9ad261e7cd867fec95094900"
+    },
+    {
+      "path": "09_TESTS/MASTER_REGRESSION_TESTS.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "1f5fd657a318c48398702a72212dff4c35a7eeb37e134509cb92ead3aed6fef8",
+      "new_sha256": "1f5fd657a318c48398702a72212dff4c35a7eeb37e134509cb92ead3aed6fef8"
+    },
+    {
+      "path": "09_TESTS/MASTER_TEST_RESULTS.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "0f1abe75f0b98df1482d3917af271868d449dd9aae53718255fc8c383f575bc4",
+      "new_sha256": "0f1abe75f0b98df1482d3917af271868d449dd9aae53718255fc8c383f575bc4"
+    },
+    {
+      "path": "09_TESTS/RESULTADO_TESTES_FINAL_V2_0_1.json",
+      "classification": "ADDED",
+      "previous_sha256": null,
+      "new_sha256": "2def124057d5c05fa08d30cb56e5c0582fa6da60214940b79df70061f69f2318"
+    },
+    {
+      "path": "10_TOOLS/run_master_atlas_runtime.mjs",
+      "classification": "UNCHANGED",
+      "previous_sha256": "7b67e575643fcd4b765543f07a259b26f74d8389e832f9b7de1ffa928293bf18",
+      "new_sha256": "7b67e575643fcd4b765543f07a259b26f74d8389e832f9b7de1ffa928293bf18"
+    },
+    {
+      "path": "10_TOOLS/validate_master.py",
+      "classification": "UNCHANGED",
+      "previous_sha256": "707d6756f848108ceaa9ddd726225bc017157abacc8a6b6676abe40d8b82082b",
+      "new_sha256": "707d6756f848108ceaa9ddd726225bc017157abacc8a6b6676abe40d8b82082b"
+    },
+    {
+      "path": "11_REPORTS/MASTER_COMPLETENESS_REPORT.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "1102eedff587fc118db3b5f993a474d855563009add503131bae609582d0173a",
+      "new_sha256": "1102eedff587fc118db3b5f993a474d855563009add503131bae609582d0173a"
+    },
+    {
+      "path": "11_REPORTS/MASTER_FINAL_INVENTORY.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "692660bdf122ac87836e54f688b24b98d3390307440b198076e4dd360caf9b95",
+      "new_sha256": "692660bdf122ac87836e54f688b24b98d3390307440b198076e4dd360caf9b95"
+    },
+    {
+      "path": "11_REPORTS/MASTER_INTEGRATION_LEDGER.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "837b5165e56294a244a4b40172a253ac5a09b02b0db1cd93b1565dc7743f428a",
+      "new_sha256": "837b5165e56294a244a4b40172a253ac5a09b02b0db1cd93b1565dc7743f428a"
+    },
+    {
+      "path": "11_REPORTS/MASTER_PATCH_REGRESSION_REPORT.json",
+      "classification": "ADDED",
+      "previous_sha256": null,
+      "new_sha256": "8cdc76ab4f5e465aa373cc0300af45a926d0b31cb265c04f0d29994bd196ca51"
+    },
+    {
+      "path": "11_REPORTS/MASTER_PENDING_MATRIX.json",
+      "classification": "ADMINISTRATIVE_CHANGED",
+      "previous_sha256": "4588f5a4771959d05288916f21af7ffa024f146a3f2b9967d2392279b6e045fb",
+      "new_sha256": "a10f4af0c684b2806cae52615bd8b5c8bf5822928b3576fa68fdce5cdaf72b8b"
+    },
+    {
+      "path": "11_REPORTS/MASTER_PROVENANCE_CONTINUITY_MATRIX_V2_0_1.json",
+      "classification": "ADDED",
+      "previous_sha256": null,
+      "new_sha256": "cf4b519d4d39fb4caddf7bf8dd84782643843cddab067fcc3e2d013f5a91d9dc"
+    },
+    {
+      "path": "12_MANIFESTS/MASTER_MANIFEST.json",
+      "classification": "METADATA_CHANGED",
+      "previous_sha256": "fc197da739e3f1f1af4e69a12d8a463decd85725db9eee255b32b5f3829f1cd8",
+      "new_sha256": "de92a36d4c30b93ca56be3587ed66db47160033f211eae3f1700ed146d21cc56"
+    },
+    {
+      "path": "12_MANIFESTS/MASTER_SHA256SUMS",
+      "classification": "METADATA_CHANGED",
+      "previous_sha256": "a6f5442fc446aee849551acf68f2b7fa4a1bba20ea63ca453b68023132bcd072",
+      "new_sha256": "1d8a65e0216cd47b2cae83e84bc53f1f005c547bb77d6afedbcb736cd98c703c"
+    },
+    {
+      "path": "13_HISTORY/CICLO_CURTO_GOVERNANCA_RELEASE/ETAPA_02/CHECKPOINT_RECONCILIACAO_ETAPA_02_V1_0.json",
+      "classification": "ADDED",
+      "previous_sha256": null,
+      "new_sha256": "8fb8f3bc0dc59d34391230ec1be9671eb45961ceb71783d1ff00b08120e407cd"
+    },
+    {
+      "path": "13_HISTORY/CICLO_CURTO_GOVERNANCA_RELEASE/ETAPA_02/ETAPA_02_CORRECTION_LEDGER_V2_0_1.json",
+      "classification": "ADDED",
+      "previous_sha256": null,
+      "new_sha256": "cadb7d691501c2c4b0c7adc254b68b18010b69b844ab0b4c3a7541f0d4c77d08"
+    },
+    {
+      "path": "13_HISTORY/CICLO_CURTO_GOVERNANCA_RELEASE/ETAPA_02/HISTORICAL_CHECKPOINT_CONTINUITY_LEDGER_V2_0_1.json",
+      "classification": "ADDED",
+      "previous_sha256": null,
+      "new_sha256": "5dd0a8ece589586d317eb107510ff94cc9ea871c031874b730e91ad21ff2f776"
+    },
+    {
+      "path": "13_HISTORY/CICLO_CURTO_GOVERNANCA_RELEASE/ETAPA_02/PATCH_RELEASE_INPUT_MATRIX_V2_0_1.json",
+      "classification": "ADDED",
+      "previous_sha256": null,
+      "new_sha256": "ec357764fef1de145abdc9105cb966ec36f96f288611503718321e76ec191074"
+    },
+    {
+      "path": "13_HISTORY/CICLO_CURTO_GOVERNANCA_RELEASE/ETAPA_02/V2_0_0_TO_V2_0_1_DELTA_MANIFEST.json",
+      "classification": "ADDED",
+      "previous_sha256": null,
+      "new_sha256": "69637408cdec639aba987a0b9cee0e3d24e2a3ebd3a70bdf201723dd66f9cdba"
+    },
+    {
+      "path": "13_HISTORY/ETAPA_09/01_MASTER/FINAL_GLOBAL_AUDIT_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "6015b8a639963f0e3fb19870eb90d63c318dc24cbc5eb47a671d7c2f5ceb23d9",
+      "new_sha256": "6015b8a639963f0e3fb19870eb90d63c318dc24cbc5eb47a671d7c2f5ceb23d9"
+    },
+    {
+      "path": "13_HISTORY/ETAPA_09/01_MASTER/MASTER_READINESS_REPORT_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "5385dc951deee3d3272b5d878bceea87e49d33326b21df329a678abfbc74a43b",
+      "new_sha256": "5385dc951deee3d3272b5d878bceea87e49d33326b21df329a678abfbc74a43b"
+    },
+    {
+      "path": "13_HISTORY/ETAPA_09/02_INVENTARIO/FINAL_CANON_MATRIX_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "326eaed5bf924626ed4a68a8aa770f2cc412a6a86a22857e54cfa271368c7fc7",
+      "new_sha256": "326eaed5bf924626ed4a68a8aa770f2cc412a6a86a22857e54cfa271368c7fc7"
+    },
+    {
+      "path": "13_HISTORY/ETAPA_09/02_INVENTARIO/FINAL_COMPLETENESS_MATRIX_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "01ec5eca3c6e18125d99f79d2eb474838503a7a12318dd4963cdc26193e5396b",
+      "new_sha256": "01ec5eca3c6e18125d99f79d2eb474838503a7a12318dd4963cdc26193e5396b"
+    },
+    {
+      "path": "13_HISTORY/ETAPA_09/02_INVENTARIO/FINAL_PENDING_MATRIX_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "3e40194d62097da659380795defc0039538eaf46f2a04237a58e47f2f2909529",
+      "new_sha256": "3e40194d62097da659380795defc0039538eaf46f2a04237a58e47f2f2909529"
+    },
+    {
+      "path": "13_HISTORY/ETAPA_09/02_INVENTARIO/GLOBAL_FINAL_INVENTORY_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "b98164b1cec10605954c5c9013684c5f8e6363f2dbfb376bee240b223126d507",
+      "new_sha256": "b98164b1cec10605954c5c9013684c5f8e6363f2dbfb376bee240b223126d507"
+    },
+    {
+      "path": "13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_AGRICULTURE_AUDIT_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "65f159bc40354c8ca3776c2efe297b63f2406316b2429eaf72105154ae97e9fd",
+      "new_sha256": "65f159bc40354c8ca3776c2efe297b63f2406316b2429eaf72105154ae97e9fd"
+    },
+    {
+      "path": "13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_ASSET_AUDIT_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "18113f6db75ca1e92dd001660b7cd8b9089d034b30d05866c6daece6656a48a3",
+      "new_sha256": "18113f6db75ca1e92dd001660b7cd8b9089d034b30d05866c6daece6656a48a3"
+    },
+    {
+      "path": "13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_ATLAS_AUDIT_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "eb9f57b0a9159e29f1a4194db0a64e97787f143cc87f7a7b59500b3fcf19cfc3",
+      "new_sha256": "eb9f57b0a9159e29f1a4194db0a64e97787f143cc87f7a7b59500b3fcf19cfc3"
+    },
+    {
+      "path": "13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_DEPENDENCY_AUDIT_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "d301c4f64fcc818695ecbe09b9cece6bbe551dede7b9cba3e9455f3d4392dd22",
+      "new_sha256": "d301c4f64fcc818695ecbe09b9cece6bbe551dede7b9cba3e9455f3d4392dd22"
+    },
+    {
+      "path": "13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_ECOLOGY_AUDIT_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "f0c2870bd3050cb30025912cb347b1fa4f2113e9c00b3ee5c34d4203e491fca3",
+      "new_sha256": "f0c2870bd3050cb30025912cb347b1fa4f2113e9c00b3ee5c34d4203e491fca3"
+    },
+    {
+      "path": "13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_ECONOMY_AUDIT_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "84ca943e1cda5bca4553f62981ccc5fb05a1ee8c30af5a5fcf13d4ddca111c53",
+      "new_sha256": "84ca943e1cda5bca4553f62981ccc5fb05a1ee8c30af5a5fcf13d4ddca111c53"
+    },
+    {
+      "path": "13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_GEOSPATIAL_AUDIT_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "18489a33a6810b0cd595a5957fca73db8afd3fb79757ff805685e18b7968ed78",
+      "new_sha256": "18489a33a6810b0cd595a5957fca73db8afd3fb79757ff805685e18b7968ed78"
+    },
+    {
+      "path": "13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_ID_AUDIT_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "d414787f801837bf128abf2a83e5b1359ae11e18f6582048bb2636ff3f20d91f",
+      "new_sha256": "d414787f801837bf128abf2a83e5b1359ae11e18f6582048bb2636ff3f20d91f"
+    },
+    {
+      "path": "13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_INDUSTRY_AUDIT_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "f8f69f816a89abd302a9ec302d008993fd90443016cb4b3ec00ff948acb5bbff",
+      "new_sha256": "f8f69f816a89abd302a9ec302d008993fd90443016cb4b3ec00ff948acb5bbff"
+    },
+    {
+      "path": "13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_MAR_AUDIT_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "39a84c4f34cec0efa5e6a3a07aed96d51a3c67c9ae7c46e61d6f015425f45041",
+      "new_sha256": "39a84c4f34cec0efa5e6a3a07aed96d51a3c67c9ae7c46e61d6f015425f45041"
+    },
+    {
+      "path": "13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_NARRATIVE_AUDIT_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "f99b73ae26205e2168336ae2eddcf69f5c3ec1cc5f7bcb3241baff1e73e802d5",
+      "new_sha256": "f99b73ae26205e2168336ae2eddcf69f5c3ec1cc5f7bcb3241baff1e73e802d5"
+    },
+    {
+      "path": "13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_PERFORMANCE_AUDIT_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "44d297365f35070029019662e4e74cf19998256528401eb14b416d309cf4c3e8",
+      "new_sha256": "44d297365f35070029019662e4e74cf19998256528401eb14b416d309cf4c3e8"
+    },
+    {
+      "path": "13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_POPULATION_AUDIT_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "c40539f2897cbb68930860ae797ffed38c97f07786fbf425b79f824060488563",
+      "new_sha256": "c40539f2897cbb68930860ae797ffed38c97f07786fbf425b79f824060488563"
+    },
+    {
+      "path": "13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_PROFESSIONS_AUDIT_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "289290c8e7c7cdfc07f39efed5058396a08a703f67c99da7462cee1aba2f85b8",
+      "new_sha256": "289290c8e7c7cdfc07f39efed5058396a08a703f67c99da7462cee1aba2f85b8"
+    },
+    {
+      "path": "13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_REFERENCE_AUDIT_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "7fab8b970ffec30452d4770f507aaca7b0dcc38ba81013d178021953b97db25d",
+      "new_sha256": "7fab8b970ffec30452d4770f507aaca7b0dcc38ba81013d178021953b97db25d"
+    },
+    {
+      "path": "13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_REGRESSION_AUDIT_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "67f2138ca6d40a3b644357cbd44f07e4d835b753b18dcccea4cb2dd9d2d68006",
+      "new_sha256": "67f2138ca6d40a3b644357cbd44f07e4d835b753b18dcccea4cb2dd9d2d68006"
+    },
+    {
+      "path": "13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_RESPONSIVE_AUDIT_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "85559d825e0b69ebd6bac03b4b313cf3ff27a82ee416c511d042a4cc2e132bc8",
+      "new_sha256": "85559d825e0b69ebd6bac03b4b313cf3ff27a82ee416c511d042a4cc2e132bc8"
+    },
+    {
+      "path": "13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_SPOILER_AUDIT_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "2ac7ef50ae4a057be57f9e7dd39fc75d1dee8bc3d04a743b5688c160add72a0d",
+      "new_sha256": "2ac7ef50ae4a057be57f9e7dd39fc75d1dee8bc3d04a743b5688c160add72a0d"
+    },
+    {
+      "path": "13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_TECHNOLOGY_AUDIT_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "a9eb4e5a3680905062fe43265c50eb71caa8c9dda68911d06944444f4ebba991",
+      "new_sha256": "a9eb4e5a3680905062fe43265c50eb71caa8c9dda68911d06944444f4ebba991"
+    },
+    {
+      "path": "13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_TRANSPORT_AUDIT_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "9f32a3cad4d94565d842555903f2ed6c7d1cccfd6df7dd9e778f8cf86b566906",
+      "new_sha256": "9f32a3cad4d94565d842555903f2ed6c7d1cccfd6df7dd9e778f8cf86b566906"
+    },
+    {
+      "path": "13_HISTORY/ETAPA_09/CHECKPOINT_ETAPA_09_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "9ca0b882f4478944755bb271ef31e031dc37b557a01f2ead32c7399ee38fa629",
+      "new_sha256": "9ca0b882f4478944755bb271ef31e031dc37b557a01f2ead32c7399ee38fa629"
+    },
+    {
+      "path": "13_HISTORY/ETAPA_09/FINAL_TEST_RESULTS_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "c3fc55748c228677ea47a4d03722ab32375816fbf4a8d07f2d233f139e879dbf",
+      "new_sha256": "c3fc55748c228677ea47a4d03722ab32375816fbf4a8d07f2d233f139e879dbf"
+    },
+    {
+      "path": "13_HISTORY/ETAPA_09/MASTER_ENTRY_MANIFEST_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "b2a94f84abce62c604581f84af1a62135c98bbae9cd0c2bdbdcda9fcf31b657c",
+      "new_sha256": "b2a94f84abce62c604581f84af1a62135c98bbae9cd0c2bdbdcda9fcf31b657c"
+    },
+    {
+      "path": "13_HISTORY/ETAPA_09/RESTORE_REPORT_ETAPA_09_V1_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "186b0bc78fe410e87306d2a863e32cfcb82013f5a8c195f1b69a0e45312eeb27",
+      "new_sha256": "186b0bc78fe410e87306d2a863e32cfcb82013f5a8c195f1b69a0e45312eeb27"
+    },
+    {
+      "path": "13_HISTORY/SOURCE_MODULE_REGISTRY_V2_0_0.json",
+      "classification": "UNCHANGED",
+      "previous_sha256": "7aa0c0953ad4df3523566c17d9855ebc4aa5401629e6d3cf83cc28ac7b58a767",
+      "new_sha256": "7aa0c0953ad4df3523566c17d9855ebc4aa5401629e6d3cf83cc28ac7b58a767"
+    },
+    {
+      "path": "MASTER_CHANGELOG.md",
+      "classification": "ADMINISTRATIVE_CHANGED",
+      "previous_sha256": "42874a0aa1d35205fc90a2d1116dd9f7cb62954f01220cf47c47799802116bf3",
+      "new_sha256": "9b59a0413084927d4d676d2693e2ee35940453c4c760e63afd75c85e863d4d06"
+    },
+    {
+      "path": "README_MASTER.md",
+      "classification": "UNCHANGED",
+      "previous_sha256": "7887812468602692190b4febe113033cbcd36da31cc63d2c336561b8bf59cd21",
+      "new_sha256": "7887812468602692190b4febe113033cbcd36da31cc63d2c336561b8bf59cd21"
+    },
+    {
+      "path": "RELEASE_METADATA.json",
+      "classification": "METADATA_CHANGED",
+      "previous_sha256": "64788919187ea282a086ac66aee6a8e9355eede26124cca74e237c891573955f",
+      "new_sha256": "dcb89fcad688dc71e2a883a7e0093bbc35d427e4798582f73933515338bdcbd2"
+    }
+  ],
+  "self_excluded_from_hash_rows": "11_REPORTS/V2_0_0_TO_V2_0_1_FINAL_DELTA_REPORT.json",
+  "unauthorized_changes": [],
+  "mutations": {
+    "CANON_MUTATIONS": 0,
+    "ATLAS_FUNCTIONAL_MUTATIONS": 0,
+    "MAR_FUNCTIONAL_MUTATIONS": 0,
+    "PROFESSION_FUNCTIONAL_MUTATIONS": 0,
+    "SCHEMA_BREAKING_CHANGES": 0,
+    "IDS_RENAMED": 0
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,9 @@
+{
+  "checkpoint": "FIRST_PLAYABLE_V0_1_23_RUNTIME_PASS",
+  "parent_checkpoint": "FIRST_PLAYABLE_V0_1_23_DEV",
+  "status": "PASS_USER_VALIDATED",
+  "validation_environment": "Godot 4.7.1 stable",
+  "reported_result": "perfect",
+  "validated_by": "author_tester",
+  "promotion_to_v0_1_24": "AUTHORIZED"
+}

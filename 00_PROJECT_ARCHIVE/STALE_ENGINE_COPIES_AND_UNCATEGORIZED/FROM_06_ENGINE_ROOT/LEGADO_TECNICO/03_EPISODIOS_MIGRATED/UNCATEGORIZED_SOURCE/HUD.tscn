@@ -1,0 +1,194 @@
+[gd_scene load_steps=13 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/hud_controller.gd" id="1_hud"]
+[ext_resource type="Theme" path="res://ui/theme/AndromedaMinimalTheme.tres" id="2_theme"]
+[ext_resource type="PackedScene" path="res://scenes/ui/StaminaWorldRing.tscn" id="3_stamina"]
+[ext_resource type="PackedScene" path="res://scenes/ui/WeaponQuickSlots.tscn" id="4_slots"]
+[ext_resource type="PackedScene" path="res://scenes/ui/DialogueBubble.tscn" id="5_dialogue"]
+[ext_resource type="PackedScene" path="res://scenes/ui/Inventory.tscn" id="6_inventory"]
+[ext_resource type="PackedScene" path="res://scenes/ui/PlayerCombatVitals.tscn" id="7_combat_vitals"]
+[ext_resource type="PackedScene" path="res://scenes/presentation/CombatFeedbackPresenter.tscn" id="8_combat_feedback"]
+[ext_resource type="PackedScene" path="res://scenes/ui/Vendor.tscn" id="9_vendor"]
+[ext_resource type="PackedScene" path="res://scenes/ui/QuestPanel.tscn" id="10_quest"]
+[ext_resource type="PackedScene" path="res://scenes/ui/DeathRecoveryOverlay.tscn" id="11_b10_overlay"]
+[ext_resource type="PackedScene" path="res://scenes/ui/CraftingPanel.tscn" id="12_crafting"]
+
+[node name="MinimalHUD" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = ExtResource("2_theme")
+script = ExtResource("1_hud")
+
+[node name="WorldUIRoot" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="StaminaWorldRing" parent="WorldUIRoot" instance=ExtResource("3_stamina")]
+
+[node name="EnemyCombatBarLayer" type="Control" parent="WorldUIRoot"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="DialogueBubblePool" type="Control" parent="WorldUIRoot"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Bubble1" parent="WorldUIRoot/DialogueBubblePool" instance=ExtResource("5_dialogue")]
+[node name="Bubble2" parent="WorldUIRoot/DialogueBubblePool" instance=ExtResource("5_dialogue")]
+[node name="Bubble3" parent="WorldUIRoot/DialogueBubblePool" instance=ExtResource("5_dialogue")]
+
+[node name="PlayerCombatVitals" parent="." instance=ExtResource("7_combat_vitals")]
+
+[node name="CombatFeedbackPresenter" parent="." instance=ExtResource("8_combat_feedback")]
+
+[node name="WeaponQuickSlots" parent="." instance=ExtResource("4_slots")]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -254.0
+offset_top = -120.0
+offset_right = -24.0
+offset_bottom = -24.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="ContextAction" type="PanelContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -105.0
+offset_top = -72.0
+offset_right = 105.0
+offset_bottom = -34.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="ContextAction"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.42, 0.42, 0.42, 1)
+text = "Interagir"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+
+[node name="SelectionFeedback" type="PanelContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 330.0
+offset_top = 18.0
+offset_right = -330.0
+offset_bottom = 58.0
+grow_horizontal = 2
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="SelectionFeedback"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.851, 0.631, 0.373, 1)
+text = "Alvo selecionado"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+
+[node name="ImportantDialogueLine" type="PanelContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -320.0
+offset_top = -116.0
+offset_right = 320.0
+offset_bottom = -76.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="ImportantDialogueLine"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.851, 0.631, 0.373, 1)
+text = "Linha importante de acessibilidade"
+horizontal_alignment = 1
+vertical_alignment = 1
+text_overrun_behavior = 3
+mouse_filter = 2
+
+[node name="AutoPickupStatus" type="PanelContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -236.0
+offset_top = 22.0
+offset_right = -24.0
+offset_bottom = 60.0
+grow_horizontal = 0
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="AutoPickupStatus"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.42, 0.42, 0.42, 1)
+text = "AUTO PICKUP  OFF"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+
+[node name="InventoryPanel" parent="." instance=ExtResource("6_inventory")]
+layout_mode = 1
+
+[node name="VendorPanel" parent="." instance=ExtResource("9_vendor")]
+layout_mode = 1
+
+[node name="QuestPanel" parent="." instance=ExtResource("10_quest")]
+layout_mode = 1
+
+[node name="CraftingPanel" parent="." instance=ExtResource("12_crafting")]
+layout_mode = 1
+
+[node name="DeathRecoveryOverlay" parent="." instance=ExtResource("11_b10_overlay")]
+layout_mode = 0
+
+[node name="QuestFeedbackStack" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -390.0
+offset_top = 76.0
+offset_right = -24.0
+offset_bottom = 190.0
+grow_horizontal = 0
+mouse_filter = 2
+theme_override_constants/separation = 5

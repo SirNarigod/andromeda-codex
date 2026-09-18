@@ -1,0 +1,161 @@
+{
+  "record_id": "ANDROMEDA-STAGE16B-G16B-05-STABILIZATION-V0.8.6",
+  "captured_at": "2026-08-23T18:40:00-03:00",
+  "supersedes": "AUTHORITY_G16B_05_CLOSURE_V0_8_5.json",
+  "gate": "G16B-05",
+  "status": "PASS",
+  "previous_status": "PASS",
+  "requirement": "Tree/rock/ore/flora/agriculture/hunt/fish/enemy physical output appears as Ground Loot before inventory.",
+  "scope_of_this_record": "Repeatability hardening of the AuthorityCombatRuntimeGate development bootstrap and its client-side test harness across consecutive sessions on the same backend process. No loot rule, damage formula, cooldown, chase/pathfinding rule, canon record, Master release or authority boundary was changed by any of the three microprocesses below.",
+
+  "microprocess_1_bind_provisioning": {
+    "authorized_scope": "Stage16BAuthorityAdapter.bind_session() only, under development_profile_bootstrap",
+    "symptom": "A backend process that bound a second Godot session (e.g. the Combat gate run twice consecutively against the same running process) inherited the development COMMON target the first session had already defeated. Every attack against it was rejected TARGET_ALREADY_DEFEATED, cascading into cooldown and enemy-defeat check failures.",
+    "root_cause": {
+      "summary": "_ensure_development_combat_encounter() -- the function that selects/reuses the pristine development COMMON/ALPHA actors -- ran exactly once per backend process, inside _boot(). bind_session() never re-invoked it, so a session bound after an earlier one had defeated its target read the same stale, dead target reference from persisted bootstrap state.",
+      "measured_by": "Two isolated in-process experiments against real Stage07 cores (no mock): (A) one adapter instance, two consecutive session binds on the same process -- the second bind reused the dead actor and its first attack was REJECTED/TARGET_ALREADY_DEFEATED; (B) a fresh adapter instance on the same persisted world (RESUMED mode, i.e. a process restart) correctly reselected a live actor, proving the selection logic itself was correct and only its invocation point was wrong."
+    },
+    "fix": {
+      "file": "12_AUTHORITY_BACKEND/andromeda_authority_adapter.py",
+      "function": "bind_session()",
+      "change": "After a successful session bind, when development_profile_bootstrap is enabled, re-invoke the existing, unmodified _ensure_development_combat_encounter() and store its result back onto development_profile_bootstrap['combat_encounter']. The body of _ensure_development_combat_encounter() itself was not touched by this microprocess.",
+      "guard": "Gated strictly on self.config.development_profile_bootstrap; a normal/production profile takes zero new code paths.",
+      "invariant_preserved": "A dead or partially damaged stored target is never healed and never reused; a different untouched actor is selected instead. Verified directly against the combat core, not only the projection."
+    },
+    "new_unit_tests": {
+      "file": "12_AUTHORITY_BACKEND/tests/test_stage16b_authority_combat.py",
+      "class": "Stage16BDevelopmentCombatBindProvisioningTests",
+      "tests": [
+        "test_01_bind_reuses_pristine_target (DEVELOPMENT_COMBAT_BIND_REUSES_PRISTINE_TARGET)",
+        "test_02_bind_reselects_invalid_target (DEVELOPMENT_COMBAT_BIND_RESELECTS_INVALID_TARGET)",
+        "test_03_reselection_never_heals_the_defeated_original"
+      ]
+    },
+    "guard_test": {
+      "class": "Stage16BNonDevelopmentBindGuardTests",
+      "test": "test_01_bind_never_provisions_a_combat_encounter_outside_dev_profile",
+      "proves": "development_profile_bootstrap=false leaves combat_target_common_ref/combat_target_alpha_ref unset across repeated binds -- zero effect outside the development profile."
+    }
+  },
+
+  "microprocess_2_cross_slot_reservation": {
+    "authorized_scope": "Body of _ensure_development_combat_encounter() only, minimal reservation change",
+    "symptom": "Once bind-time revalidation existed (microprocess 1), a second consecutive bind could rotate a perfectly pristine ALPHA target even though nothing had touched it, because the slot needing to reselect (COMMON, processed first) rediscovered and took over ALPHA's own live incumbent.",
+    "root_cause": {
+      "summary": "The loop resolves (\"common\", \"COMMON\") before (\"alpha\", \"CHAMPION\"). The exclusion set used while COMMON searches for a fresh candidate only contained the player ref -- it never contained the ALPHA slot's own currently-stored incumbent, because that value was only read on ALPHA's own turn, later in the same call.",
+      "measured_by": "Isolated instrumentation (diag_alpha_theft.py): defeated COMMON only, confirmed ALPHA was still ALIVE and at full health immediately before the rebind, then rebound. Result: COMMON's reselection landed exactly on ALPHA's own incumbent ref; ALPHA was then forced to rotate to a third, previously-unused actor even though its original target was proven still perfectly intact."
+    },
+    "fix": {
+      "file": "12_AUTHORITY_BACKEND/andromeda_authority_adapter.py",
+      "function": "_ensure_development_combat_encounter()",
+      "change": "Snapshot both slots' stored incumbents (stored_by_slot) once before the loop runs. Inside the loop, each slot computes slot_excluded = excluded | {the OTHER slot's stored ref}, and uses slot_excluded (instead of the bare accumulator) for both the pristine-reuse check and the fresh-candidate search filter. The existing excluded.add(target_ref) at the end of each iteration is unchanged.",
+      "symmetry": "Applies to both directions (COMMON cannot select ALPHA's incumbent; ALPHA cannot select COMMON's incumbent) regardless of loop order, self-healing even a pre-existing corrupted world where both bootstrap keys happened to point at the same actor."
+    },
+    "new_unit_tests": {
+      "file": "12_AUTHORITY_BACKEND/tests/test_stage16b_authority_combat.py",
+      "class": "Stage16BDevelopmentCombatCrossSlotTests",
+      "tests": [
+        "test_01_invalidating_common_does_not_rotate_pristine_alpha (DEVELOPMENT_COMBAT_CROSS_SLOT_ALPHA_RESERVED_FROM_COMMON, DEVELOPMENT_COMBAT_PRISTINE_ALPHA_NOT_ROTATED)",
+        "test_02_invalidating_alpha_does_not_rotate_pristine_common (DEVELOPMENT_COMBAT_CROSS_SLOT_COMMON_RESERVED_FROM_ALPHA, DEVELOPMENT_COMBAT_PRISTINE_COMMON_NOT_ROTATED)",
+        "test_03_both_slots_invalid_selects_two_new_distinct_pristine_actors (DEVELOPMENT_COMBAT_TARGETS_ALWAYS_DISTINCT)",
+        "test_04_both_slots_pristine_repeated_binds_preserve_both_refs"
+      ]
+    },
+    "godot_confirmation": "Two consecutive real Combat gate runs on the same backend process: COMMON correctly reselected away from its own dead actor to a third, previously-unused actor -- never to ALPHA's incumbent. ALPHA stayed on its original ref across the rebind. No TARGET_ALREADY_DEFEATED reappeared."
+  },
+
+  "microprocess_3_chase_timing": {
+    "authorized_scope": "AuthorityCombatRuntimeGate.gd FAR_TARGET/CHASE test block only, no runtime/client/canon change",
+    "symptom": "Combat gate on a freshly created, single-bind world (nothing invalid, nothing to reselect) intermittently failed FAR_TARGET_STARTS_LOCAL_CHASE, FAR_TARGET_NOT_REMOTE_ATTACKED and CHASE_USES_NAVIGATION, always with the identical physical_distance_m of 2.20000004768372.",
+    "root_cause": {
+      "summary": "AndromedaCombatAuthorityClient.project_combat_snapshot() re-syncs an interaction target's presented global_position from every authoritative combat_targets snapshot it receives, which can legitimately arrive at any time (Godot presents NPC position; the server owns it). The test manually moved the ALPHA node far away and waited a fixed 2 physics frames before measuring; a legitimate resync landing inside that fixed window silently reverted the manual override, including project_combat_snapshot's own hardcoded close-range anchor nudge of Vector3(0, 0, -2.2), before the chase decision was measured.",
+      "measured_by": "Frame-by-frame instrumentation of a real Combat gate run (temporary print trace, removed after diagnosis): frame SET/0 showed the correct far position (~8.06 m); a new snapshot was applied between frame 0 and frame 1 (snapshot count 5 -> 6); from frame 1 onward the position was pinned at exactly the 2.2 m anchor-nudge distance for the remainder of the wait. The extra backend round-trip added by bind-time revalidation (microprocess 1) made this pre-existing race land inside the fixed window more reliably, but the race itself predates all three microprocesses in this record."
+    },
+    "fix": {
+      "file": "07_GODOT_ARPG_STAGE16B/tests/godot/authority_combat_runtime_gate.gd",
+      "change": "Replaced the fixed await _wait_physics_frames(2) after the manual FAR_TARGET reposition with a bounded stabilization loop (max 30 physics frames): on every frame, if ALPHA's position no longer matches the commanded far position, it is reasserted (the test's own setup, not a functional override) and the stable-frame counter resets; once the position has held unchanged for 2 consecutive physics frames, the scenario is declared stable and the loop exits. No change to AndromedaCombatAuthorityClient, to chase/navigation/pathfinding logic, to attack range, damage, cooldown, or to any authority/backend code.",
+      "position_reassertion_scope": "Only ever writes the same test-setup far position that the scenario already commanded; never used to fabricate a result or to touch the authoritative side."
+    },
+    "new_checks": [
+      "FAR_TARGET_SCENARIO_STABLE_BEFORE_CHASE",
+      "FAR_TARGET_DISTANCE_CONFIRMED_BEFORE_CHASE"
+    ],
+    "original_checks_unmodified": [
+      "FAR_TARGET_STARTS_LOCAL_CHASE",
+      "FAR_TARGET_NOT_REMOTE_ATTACKED",
+      "CHASE_USES_NAVIGATION",
+      "CHASE_PRESERVES_TARGET_REF"
+    ],
+    "assertions_relaxed": false,
+    "frame_budget_increased_to_mask_defect": false
+  },
+
+  "verification": {
+    "combat_isolated_clean_world": {"checks": 91, "passed": 91, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+    "combat_three_consecutive_same_backend_process": [
+      {"run": 1, "checks": 91, "passed": 91, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+      {"run": 2, "checks": 91, "passed": 91, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+      {"run": 3, "checks": 91, "passed": 91, "failed": 0, "exit_code": 0, "stderr_bytes": 0}
+    ],
+    "ground_loot_then_gathering_then_combat_same_process": {
+      "ground_loot": {"checks": 53, "passed": 53, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+      "gathering": {"checks": 77, "passed": 77, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+      "combat": {"checks": 91, "passed": 91, "failed": 0, "exit_code": 0, "stderr_bytes": 0}
+    },
+    "replay_world_hp_not_reapplied": "PASS in every Combat run in this record, no exception",
+    "cross_slot_correctness": "PASS in every consecutive-run Combat execution in this record: no TARGET_ALREADY_DEFEATED reappearance, no rotation of a pristine incumbent",
+    "authority_combat_unit_tests": {"file": "12_AUTHORITY_BACKEND/tests/test_stage16b_authority_combat.py", "tests": 22, "passed": 22, "failed": 0},
+    "backend_validation_full_suite": {
+      "record": "12_AUTHORITY_BACKEND/reports/STAGE16B_AUTHORITY_BACKEND_VALIDATION_V0_8_0.json",
+      "status": "PASS",
+      "failures": [],
+      "steps": {
+        "master_v2_0_1_integrity": "PASS",
+        "stage16a_protected_checkpoint": "PASS",
+        "backend_suite_coverage": "PASS",
+        "test_stage16b_authority_adapter_suite": 35,
+        "test_stage16b_authority_http_suite": 17,
+        "test_stage16b_authority_profile_loadout_suite": 11,
+        "test_stage16b_authority_traversal_suite": 11,
+        "test_stage16b_authority_ground_loot_suite": 10,
+        "test_stage16b_authority_gathering_suite": 11,
+        "test_stage16b_authority_combat_suite": 22,
+        "test_stage16b_authority_economy_inventory_quest_suite": 11,
+        "test_stage16b_authority_save_death_water_suite": 12,
+        "stage16a_regression": 209,
+        "stage16a_vertical_slice_stress": {"checks": 20, "passed": 20, "failed": 0},
+        "stage15_validation": {"checks": 24, "passed": 24, "failed": 0},
+        "stage15_stress": {"checks": 23, "passed": 23, "failed": 0}
+      }
+    },
+    "b03": {"checks": 357, "passed": 357, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+    "b04": {"checks": 156, "passed": 156, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+    "b11": {"checks": 343, "passed": 343, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+    "stage16a_checkpoint": {"entries": 724, "verified": 724, "changed": 0},
+    "master_v2_0_1_sha256": "6D9AC3CCE7DCF6A65FDCF73859C332A0211C1AF52D149077BEEF554BF7BBD0B2",
+    "godot_debugger": "0 errors / 0 warnings on every run in this record: stderr 0 bytes and exit 0 for Combat (all four executions), GroundLoot, Gathering, B03, B04 and B11",
+    "runtime_or_canon_altered": false,
+    "new_anomalies_opened_this_round": 0
+  },
+
+  "files_changed": [
+    "12_AUTHORITY_BACKEND/andromeda_authority_adapter.py",
+    "12_AUTHORITY_BACKEND/tests/test_stage16b_authority_combat.py",
+    "07_GODOT_ARPG_STAGE16B/tests/godot/authority_combat_runtime_gate.gd"
+  ],
+  "files_changed_outside_dev_profile_or_test_scope": [],
+
+  "matrix_position": {
+    "pass": 19,
+    "partial_evidence": 9,
+    "promoted_this_record": [],
+    "stabilized_this_record": ["G16B-05"],
+    "partial_gates": ["G16B-09", "G16B-17", "G16B-18", "G16B-19", "G16B-24", "G16B-25", "G16B-26", "G16B-27", "G16B-28"],
+    "g16b_19": "PARTIAL_EVIDENCE - unchanged by this record",
+    "stage16b_global_status": "NOT_PASS",
+    "checkpoint_final_created": false,
+    "final_backup_created": false,
+    "stage17_started": false,
+    "water_bag_ttl_block_started": false
+  }
+}

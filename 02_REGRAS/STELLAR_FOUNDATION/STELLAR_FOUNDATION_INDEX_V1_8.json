@@ -1,0 +1,179 @@
+{
+  "record_id": "STELLAR_FOUNDATION_INDEX_V1_8",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.8",
+  "status": "ACTIVE_R2_REBASED_AUTHORIAL_INDEX_LOT_008",
+  "supersedes": "STELLAR_FOUNDATION_INDEX_V1_7",
+  "authority": {
+    "r2": "PRIMARY_LORE_ORIGIN",
+    "scope": "DISCOVERY_AND_PRECEDENCE",
+    "master_v2_0_1": "READ_ONLY_TECHNICAL_EXTENSION",
+    "living_sim_engine_v1_0_0": "READ_ONLY_TECHNICAL_EXTENSION"
+  },
+  "dependencies": [
+    "../../01_LORE/STELLAR_REBASE_R2/R2_SOURCE_AUTHORITY_INDEX_V1_0.json",
+    "../STELLAR_REBASE_R2/R2_REBASE_DECISION_LEDGER_V1_7.json"
+  ],
+  "invariants": [
+    "ACTIVE_FOUNDATION_NEVER_RETCONS_R2",
+    "HISTORICAL_RECORDS_ARE_NOT_DELETED",
+    "DERIVED_ACTIVE_CONTENT_HAS_PROVENANCE",
+    "RUNTIME_CANNOT_CROSS_AUTHORIAL_GATES",
+    "UE5_IMPLEMENTATION_REMAINS_SUBORDINATE_TO_CANON",
+    "CUSTOM_PLAYER_CAMPAIGNS_CANNOT_REPLACE_KENUA"
+  ],
+  "precedence": [
+    "R2_LORE_ORIGIN",
+    "AUTHORIAL_APPROVED_R2_COMPATIBLE_DERIVATION",
+    "MASTER_V2_0_1_TECHNICAL_EXTENSION",
+    "LIVING_SIM_ENGINE_TECHNICAL_EXTENSION",
+    "UE5_RUNTIME_STATE",
+    "LLM_OR_PLAYER_PROPOSAL"
+  ],
+  "active_contracts": [
+    {
+      "id": "STELLAR_COSMOLOGY_CANON_V1_2",
+      "path": "01_LORE/STELLAR_FOUNDATION/STELLAR_COSMOLOGY_CANON_V1_2.json",
+      "role": "COSMOLOGICAL_TRUTH"
+    },
+    {
+      "id": "STELLAR_CANON_CONSTITUTION_V1_1",
+      "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_CANON_CONSTITUTION_V1_1.json",
+      "role": "GOVERNANCE"
+    },
+    {
+      "id": "STELLAR_MAGIC_TECHNOLOGY_LAW_V1_1",
+      "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_MAGIC_TECHNOLOGY_LAW_V1_1.json",
+      "role": "FINITE_MAGIC_AND_TECH"
+    },
+    {
+      "id": "STELLAR_SYMBIOSIS_LAW_V1_0",
+      "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_SYMBIOSIS_LAW_V1_0.json",
+      "role": "KENUA_AND_ESPINHO_NEGRO"
+    },
+    {
+      "id": "STELLAR_ROOT_PROGRESSION_LAW_V1_0",
+      "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_ROOT_PROGRESSION_LAW_V1_0.json",
+      "role": "PLANETARY_ROOT_CLOCK"
+    },
+    {
+      "id": "STELLAR_SOVEREIGNTY_TERRITORY_LAW_V1_2",
+      "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_SOVEREIGNTY_TERRITORY_LAW_V1_2.json",
+      "role": "TERRITORY_AND_SOVEREIGNTY"
+    },
+    {
+      "id": "STELLAR_INSTITUTION_CULTURE_LAW_V1_1",
+      "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_INSTITUTION_CULTURE_LAW_V1_1.json",
+      "role": "INSTITUTIONS_CULTURE_AND_PRODUCTION"
+    },
+    {
+      "id": "STELLAR_ECONOMY_ECOLOGY_TIME_LAW_V1_1",
+      "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_ECONOMY_ECOLOGY_TIME_LAW_V1_1.json",
+      "role": "REGIONAL_ECONOMY_ECOLOGY_TIME"
+    },
+    {
+      "id": "STELLAR_POPULATION_INFRASTRUCTURE_LAW_V1_0",
+      "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_POPULATION_INFRASTRUCTURE_LAW_V1_0.json",
+      "role": "AGGREGATE_POPULATION_AND_INFRASTRUCTURE"
+    },
+    {
+      "id": "STELLAR_ECOLOGY_TEMPORAL_ROUTINE_LAW_V1_0",
+      "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_ECOLOGY_TEMPORAL_ROUTINE_LAW_V1_0.json",
+      "role": "LIMITED_OFFLINE_ECOLOGY"
+    },
+    {
+      "id": "STELLAR_PLAYER_CAMPAIGN_LAW_V1_0",
+      "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_PLAYER_CAMPAIGN_LAW_V1_0.json",
+      "role": "CUSTOM_PLAYER_PARALLEL_CAMPAIGN"
+    },
+    {
+      "id": "STELLAR_LIFE_DEATH_REBIRTH_LAW_V1_1",
+      "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_LIFE_DEATH_REBIRTH_LAW_V1_1.json",
+      "role": "INCAPACITY_DEATH_AND_ECHO_REBIRTH"
+    },
+    {
+      "id": "STELLAR_PROGRESSION_QUEST_CONSEQUENCE_LAW_V1_1",
+      "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_PROGRESSION_QUEST_CONSEQUENCE_LAW_V1_1.json",
+      "role": "EMERGENT_PROGRESSION_AND_LOCAL_QUESTS"
+    },
+    {
+      "id": "STELLAR_SKILL_ITEMIZATION_LAW_V1_0",
+      "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_SKILL_ITEMIZATION_LAW_V1_0.json",
+      "role": "SKILLS_ITEMS_AND_R2_IDENTITY_PROTECTION"
+    },
+    {
+      "id": "STELLAR_INFORMATION_MEMORY_LAW_V1_1",
+      "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_INFORMATION_MEMORY_LAW_V1_1.json",
+      "role": "MEMORY_KNOWLEDGE_RELATIONSHIP_REPUTATION"
+    },
+    {
+      "id": "STELLAR_OPEN_QUESTIONS_REGISTER_V1_1",
+      "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_OPEN_QUESTIONS_REGISTER_V1_1.json",
+      "role": "MYSTERY_BOUNDARIES"
+    },
+    {
+      "id": "STELLAR_LORE_PROPOSAL_GUARD_V1_1",
+      "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_LORE_PROPOSAL_GUARD_V1_1.json",
+      "role": "PROMOTION_GATE"
+    },
+    {
+      "id": "STELLAR_CONTENT_ROUTING_CONSTITUTION_V1_2",
+      "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_CONTENT_ROUTING_CONSTITUTION_V1_2.json",
+      "role": "ONE_CANONICAL_HOME_ROUTING"
+    },
+    {
+      "id": "STELLAR_LIVING_CONTENT_INTEGRATION_LAW_V1_2",
+      "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_LIVING_CONTENT_INTEGRATION_LAW_V1_2.json",
+      "role": "LIVING_SIM_AND_SCALE_READ_ONLY_INTEGRATION"
+    },
+    {
+      "id": "STELLAR_PROFESSIONAL_FACTIONS_LAW_V1_0",
+      "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_PROFESSIONAL_FACTIONS_LAW_V1_0.json",
+      "role": "TRANSREGIONAL_PROFESSIONAL_FACTIONS"
+    },
+    {
+      "id": "STELLAR_PLAYABLE_TAXONOMY_LAW_V1_0",
+      "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_PLAYABLE_TAXONOMY_LAW_V1_0.json",
+      "role": "QUALITATIVE_PLAYABLE_TAXONOMY"
+    }
+  ],
+  "pending_review_contracts": [
+    "STELLAR_CAUSALITY_LAW_V1_0",
+    "STELLAR_AUTONOMY_RESPONSIBILITY_LAW_V1_0"
+  ],
+  "historical_indices": [
+    "STELLAR_FOUNDATION_INDEX_V1_0.json",
+    "STELLAR_FOUNDATION_INDEX_V1_1.json",
+    "STELLAR_FOUNDATION_INDEX_V1_2.json",
+    "STELLAR_FOUNDATION_INDEX_V1_3.json",
+    "STELLAR_FOUNDATION_INDEX_V1_4.json",
+    "STELLAR_FOUNDATION_INDEX_V1_5.json",
+    "STELLAR_FOUNDATION_INDEX_V1_6.json",
+    "STELLAR_FOUNDATION_INDEX_V1_7.json"
+  ],
+  "prohibitions": [
+    "NO_UNINDEXED_ACTIVE_AUTHORIAL_CONTRACT",
+    "NO_UNSOURCED_KENUA_RETCON",
+    "NO_AMADON_CONTACT_BEFORE_S01E08",
+    "NO_DELETION_WITHOUT_LEDGER_APPROVAL",
+    "NO_UNREAL_RUNTIME_CANON_PROMOTION",
+    "NO_CUSTOM_PLAYER_REPLACEMENT_OF_KENUA",
+    "NO_EXTERNAL_IMPORT_CANON_PROMOTION"
+  ],
+  "simulation_effects": [
+    "Active Living Country and LivingSim layers consume engine-neutral regional and local player consequence snapshots only.",
+    "Reject numeric runtime state, player profiles, loot and rebirth events as canon sources.",
+    "Future UE5 adapters may map interface fields but cannot add canon authority or cross R2 gates."
+  ],
+  "allowed_states": [
+    "ACTIVE",
+    "PENDING_R2_REVIEW",
+    "HISTORICAL",
+    "SUPERSEDED"
+  ],
+  "story_generators": [
+    "Um novo ciclo de jogador muda o rumo de uma vila, sem tomar o lugar de Kenua na história mundial.",
+    "Uma consequência social sobrevive a um corpo e obriga o próximo a enfrentar uma dívida que não recorda.",
+    "Uma quest local dá origem a um mistério verificável, mas nunca transforma um prêmio em fato planetário."
+  ]
+}

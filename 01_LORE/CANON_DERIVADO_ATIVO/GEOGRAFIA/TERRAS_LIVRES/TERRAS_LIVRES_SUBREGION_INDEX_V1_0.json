@@ -1,0 +1,10 @@
+{
+  "record_id":"TERRAS-LIVRES-SUBREGION-INDEX-V1.0",
+  "authority":"CANON_DERIVADO_ATIVO",
+  "parent":"TER-011",
+  "status":"ACTIVE_R2_COMPATIBLE",
+  "records":["SUB-011-001","SUB-011-002","SUB-011-003","SUB-011-004","SUB-011-005","SUB-011-006"],
+  "r2_localities_referenced_only":["CIT-001","CIT-002"],
+  "invariants":["SUBREGION_IS_NOT_SOVEREIGNTY","R2_LOCALITY_IS_NOT_DUPLICATED","NO_FIXED_COORDINATES_OR_POPULATION","RUNTIME_STATE_REMAINS_NONCANONICAL"],
+  "extension_template":{"required_fields":["record_id","title","parent_political_unit","provenance","function","permitted_catalog_links","local_conflicts","prohibitions","story_generators"],"future_scope":"Other political units require separate authorial promotion."}
+}

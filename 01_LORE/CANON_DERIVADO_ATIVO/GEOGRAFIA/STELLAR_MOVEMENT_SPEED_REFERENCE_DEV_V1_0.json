@@ -1,0 +1,37 @@
+{
+  "record_id": "STELLAR-MOVEMENT-SPEED-REFERENCE-DEV-V1.0",
+  "title": "Velocidade de Deslocamento por Modal (referência qualitativa+numérica)",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "r2_guard": "Grounded na escala já calibrada (STELLAR_MEASUREMENT_SCALE_SYSTEM_DEV_V1_0.json, 105 km/grau) e nas rotas locais reais (SRTE, ~3.3km médios) - não redefine STELLAR_TERRAIN_TRAVEL_SYSTEM, só dá velocidade de referência compatível com os tempos qualitativos já existentes (CURTA/MÉDIA/LONGA).",
+  "speeds_kmh": [
+    {
+      "modal": "A pé",
+      "speed_kmh": "4-5"
+    },
+    {
+      "modal": "Cavalgadura/carroça (Torvaco, Orvante)",
+      "speed_kmh": "10-15"
+    },
+    {
+      "modal": "Veículo terrestre normal (carroça rúnica)",
+      "speed_kmh": "15-25"
+    },
+    {
+      "modal": "Ferroviário (Locomotiva de Ortheon)",
+      "speed_kmh": "35-60"
+    },
+    {
+      "modal": "Naval de superfície (Caravela de Navyr)",
+      "speed_kmh": "10-20"
+    },
+    {
+      "modal": "Aéreo (Nave de Altavela)",
+      "speed_kmh": "40-80"
+    },
+    {
+      "modal": "Submerso",
+      "speed_kmh": "5-15"
+    }
+  ],
+  "consistency_check": "Território típico tem raio ~5km (ver STELLAR_TERRITORY_AREA_ESTIMATE_DEV_V1_0.json) - a pé (5km/h) isso é atravessado em ~2h, batendo com SAME_TERRITORY='CURTA (horas)'."
+}

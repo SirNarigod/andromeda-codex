@@ -1,0 +1,32 @@
+{
+  "record_id":"ARPG-STAGE16A-CORRECTION-LEDGER-V0.5.0",
+  "stage":"16A/23",
+  "status":"PASS",
+  "open_corrections":0,
+  "entries":[
+    {
+      "id":"S16A-C05-01",
+      "finding":"Stage09 legacy work result delivered physical gathering output directly to inventory, conflicting with the newly authored universal Ground Loot rule.",
+      "correction":"Added backward-compatible delivery_mode. Legacy default remains INVENTORY; Stage16A vertical slice explicitly uses GROUND_LOOT plus delivery sink/preflight.",
+      "regression":"Stage09 20/20 PASS"
+    },
+    {
+      "id":"S16A-C05-02",
+      "finding":"TerrainTraversalStreamingCore calculated stamina cost but did not mutate the existing movement stamina authority.",
+      "correction":"Added apply_external_stamina_cost to ContinuousMovementSystem and idempotent traversal event reconciliation in VerticalSliceAssemblyCore.",
+      "regression":"Stage15 validation/stress PASS; Stage16A traversal replay does not double-charge"
+    },
+    {
+      "id":"S16A-C05-03",
+      "finding":"Auto Pickup ON/OFF existed as interaction policy but was not persisted per profile.",
+      "correction":"Added hashed arpg_stage16a_profile_prefs table included automatically by Stage15 full SQLite snapshots.",
+      "regression":"save/restore Stage16A preference PASS"
+    },
+    {
+      "id":"S16A-C05-04",
+      "finding":"Ground Loot unittest harness emitted ResourceWarning from unclosed in-memory SQLite connections.",
+      "correction":"Added tearDown close and reran with ResourceWarning promoted to error.",
+      "regression":"Ground Loot 10/10 PASS with warnings-as-errors"
+    }
+  ]
+}

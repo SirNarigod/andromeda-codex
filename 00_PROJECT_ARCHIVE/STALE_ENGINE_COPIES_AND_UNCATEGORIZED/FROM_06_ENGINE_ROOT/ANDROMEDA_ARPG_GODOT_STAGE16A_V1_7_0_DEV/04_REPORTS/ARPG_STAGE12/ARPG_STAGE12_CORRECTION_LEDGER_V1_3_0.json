@@ -1,0 +1,14 @@
+{
+  "record_id": "ARPG-STAGE12-CORRECTION-LEDGER-V1.3.0",
+  "corrections": [
+    {
+      "id": "S12-C01",
+      "type": "HARNESS_TIMEOUT",
+      "description": "Persistence test exceeded cumulative batch time after 20 functional tests.",
+      "resolution": "Execute persistence in an isolated process; PASS in ~26s.",
+      "runtime_mutation": false
+    }
+  ],
+  "open": 0,
+  "status": "PASS"
+}

@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {assertReadOnlyProjection,overlayForCanonical,runtimeBadges,accessSummary} from '../06_ATLAS_LIVING/atlas-live-core.mjs';
+const before=JSON.parse(fs.readFileSync(new URL('../06_ATLAS_LIVING/LIVING_ATLAS_PROJECTION_BEFORE_DEMO.json',import.meta.url),'utf8'));
+const after=JSON.parse(fs.readFileSync(new URL('../06_ATLAS_LIVING/LIVING_ATLAS_PROJECTION_AFTER_DEMO.json',import.meta.url),'utf8'));
+assertReadOnlyProjection(before);assertReadOnlyProjection(after);
+const br=overlayForCanonical(before,'RTE-001')[0], ar=overlayForCanonical(after,'RTE-001')[0];
+assert.equal(br.data.operational,false);assert.ok(runtimeBadges(br).includes('ROUTE_BLOCKED'));
+assert.equal(ar.data.operational,true);assert.ok(!runtimeBadges(ar).includes('ROUTE_BLOCKED'));
+assert.equal(accessSummary(after).runtime_access,'PLAYER_SAFE');
+console.log(JSON.stringify({status:'PASS',checks:7,before_route_badges:runtimeBadges(br),after_route_badges:runtimeBadges(ar)}));

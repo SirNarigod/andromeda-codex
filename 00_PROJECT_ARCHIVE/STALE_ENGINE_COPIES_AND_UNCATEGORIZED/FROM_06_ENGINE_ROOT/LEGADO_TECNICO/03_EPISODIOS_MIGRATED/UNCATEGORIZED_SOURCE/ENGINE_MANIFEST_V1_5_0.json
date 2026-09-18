@@ -1,0 +1,3187 @@
+{
+  "record_id": "ENGINE-MANIFEST-ARPG-STAGE14-V1.5.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "component": "ARPG",
+  "stage": 14,
+  "version": "V1.5.0",
+  "self_reference_policy": "manifest excludes itself and ledger; ledger includes manifest and excludes itself",
+  "file_count": 635,
+  "files": [
+    {
+      "path": "01_RUNTIME/__init__.py",
+      "size": 30,
+      "sha256": "c1c60ff7c568af56581537b4b50a9e9b15ae3cc0052282af3a4c9714bcedda50"
+    },
+    {
+      "path": "01_RUNTIME/agent_brain.py",
+      "size": 70031,
+      "sha256": "2fb42c08b16abcda52927c0cdc8c7daa28d69895c80f6c94fd2eb374c72e6b02"
+    },
+    {
+      "path": "01_RUNTIME/arpg_actor_core.py",
+      "size": 33651,
+      "sha256": "431740462c10a577d6b50db37611d16058065f43fe7b450695941b76c3d8369e"
+    },
+    {
+      "path": "01_RUNTIME/arpg_combat_core.py",
+      "size": 45614,
+      "sha256": "f1350f803d50d7d755ed6c40cfa7c08bf2597b30a99fb22cb13a1c036b9df9c5"
+    },
+    {
+      "path": "01_RUNTIME/arpg_economy_crafting_core.py",
+      "size": 27031,
+      "sha256": "dee2650fd927d68b5553f6b074321082cd5f66221291c7b4748f7189fe08e377"
+    },
+    {
+      "path": "01_RUNTIME/arpg_game_core.py",
+      "size": 52426,
+      "sha256": "74187555c0ef8a5a5a4cc9bae48e92317fb4efc57bdb42756369274c2067cf33"
+    },
+    {
+      "path": "01_RUNTIME/arpg_gathering_work_core.py",
+      "size": 36616,
+      "sha256": "332b695b21162d67515baaecb65f877d6d2157fc86bfbf7bc94327a6a04393e3"
+    },
+    {
+      "path": "01_RUNTIME/arpg_item_core.py",
+      "size": 53707,
+      "sha256": "7b220a9f982f1860b79de096dbf045fe591768a2e01d53de90f30c9804dcf7df"
+    },
+    {
+      "path": "01_RUNTIME/arpg_living_integration_core.py",
+      "size": 30479,
+      "sha256": "fa934c7ca0c44cad5957c8adf537e57c24cea74ecf5623e5a40538253a424488"
+    },
+    {
+      "path": "01_RUNTIME/arpg_mobility_infrastructure_core.py",
+      "size": 27651,
+      "sha256": "9e3002d7ff088e9fac032d9cef64f32ac268f30984579c174161b4f1e41a5711"
+    },
+    {
+      "path": "01_RUNTIME/arpg_narrative_culture_core.py",
+      "size": 19024,
+      "sha256": "f73d855147bc9d059ddc81c69ffd54ef27b8fafff698a3e64bc2f94dcb724947"
+    },
+    {
+      "path": "01_RUNTIME/arpg_resource_core.py",
+      "size": 24749,
+      "sha256": "963db1095310388f9e04b09352e8908320659d9cd28dc829f6beb804b7adb47a"
+    },
+    {
+      "path": "01_RUNTIME/arpg_skill_core.py",
+      "size": 26237,
+      "sha256": "0114944db1c86ce9c670068dff5e40342631bdc5a8ccd42b272527163ff98e43"
+    },
+    {
+      "path": "01_RUNTIME/arpg_technology_machine_robotics_core.py",
+      "size": 25974,
+      "sha256": "ab8fc10b0741369d62f3ac9f1d68cf7bad9b00ff525a2a8db628ca1cdcb96d75"
+    },
+    {
+      "path": "01_RUNTIME/arpg_world_core.py",
+      "size": 36187,
+      "sha256": "55ef555de3cdd33bc46ecaf7bd245e16b1e314fe4f98dfdd8b067f998070ae5e"
+    },
+    {
+      "path": "01_RUNTIME/atlas_country_lod.py",
+      "size": 10811,
+      "sha256": "dd2b85358fd24afd9f295e38c8e6fd4662d3c25f652c62de55c18ac56f2adac2"
+    },
+    {
+      "path": "01_RUNTIME/atlas_living_bridge.py",
+      "size": 17941,
+      "sha256": "309ce1ddd1d89ec44de7fe4e4a04ad3111751894e779520e04411124481aaa63"
+    },
+    {
+      "path": "01_RUNTIME/character_core.py",
+      "size": 24673,
+      "sha256": "b0ae2255c8a04cf59ed2f73b4aa4005f5e4f21a1dea3e9b5bbd3ea30806f7d00"
+    },
+    {
+      "path": "01_RUNTIME/collision_interaction.py",
+      "size": 3365,
+      "sha256": "9cad4889a4df16a7f2146ec6eb13be70155b449af7c37d362fa128c482eff6ea"
+    },
+    {
+      "path": "01_RUNTIME/combat_system.py",
+      "size": 23497,
+      "sha256": "fa3316c2622de61b683485d93a0cadda0e79ebfb31b05a544bb2774efd3862a3"
+    },
+    {
+      "path": "01_RUNTIME/commerce_system.py",
+      "size": 33094,
+      "sha256": "75b2f2823c8132a7b63a94a2a7df3b9498026b7de51cc68d8fe5dce67e777aef"
+    },
+    {
+      "path": "01_RUNTIME/consequence_engine.py",
+      "size": 59131,
+      "sha256": "42fc733d2ae63ae0ec42fc530df379ee18c9145eaac1048337a33aad16a1d5f4"
+    },
+    {
+      "path": "01_RUNTIME/content_catalog.py",
+      "size": 9877,
+      "sha256": "94599a15011c44a94cfcf8c1d28e5579ea99a6d9aeef289de06ce200e11bcf71"
+    },
+    {
+      "path": "01_RUNTIME/continuous_movement.py",
+      "size": 9393,
+      "sha256": "48495bf74b8be84aacb691c327d78166dddcf57d57bc5d15038e61f3b74fea57"
+    },
+    {
+      "path": "01_RUNTIME/country_living_bridge.py",
+      "size": 23099,
+      "sha256": "ade0f27ea92ef95ba1f29ba0f7fb6f5fded92be63d8832891804870a3e7aff81"
+    },
+    {
+      "path": "01_RUNTIME/country_scale.py",
+      "size": 61462,
+      "sha256": "5dec46f6eabea0ebd7e9311208cebca45b824aa78a721a5490f5ab2fb443b13b"
+    },
+    {
+      "path": "01_RUNTIME/domain_integration.py",
+      "size": 28753,
+      "sha256": "ccab1839d24638799378d579d2273ece86a0e87246542a8b2b6a8ae86a07934f"
+    },
+    {
+      "path": "01_RUNTIME/dungeon_graph_v2.py",
+      "size": 10219,
+      "sha256": "dfa986d0e4817d53c589435d20f92f90a8d1e2e95c46af47c256250c3278f355"
+    },
+    {
+      "path": "01_RUNTIME/ecology_brain.py",
+      "size": 63720,
+      "sha256": "4cfc8d1088a077e1de6ad87811f8f98676c1f7703ead2dbd5dba9d863a5e1895"
+    },
+    {
+      "path": "01_RUNTIME/environment_simulation.py",
+      "size": 2271,
+      "sha256": "bd72d5da2bb850a83c27f4520679c6477f5419ffa9825c868d59db2018be82fa"
+    },
+    {
+      "path": "01_RUNTIME/godot_adapter_v15.py",
+      "size": 8691,
+      "sha256": "da577183428969dff69d41e739fa7d887ee2cfd14a8a84784fb086498a22d983"
+    },
+    {
+      "path": "01_RUNTIME/integrated_arpg_engine_v01.py",
+      "size": 2511,
+      "sha256": "ac04ad5b533621f431edcf384ef1c81bbd1f5a17dd9f3113430f9c7e707574db"
+    },
+    {
+      "path": "01_RUNTIME/integrated_arpg_engine_v02.py",
+      "size": 2620,
+      "sha256": "8622a25fe3d57825b596f0c67d816d4a83cf440aba8d753544fcdbca6631e1a0"
+    },
+    {
+      "path": "01_RUNTIME/integrated_arpg_engine_v03.py",
+      "size": 2604,
+      "sha256": "5df8bdfe88c5c7366366ab14c9d100e6ffd9e10a72276a26f625bcf5b1ccd604"
+    },
+    {
+      "path": "01_RUNTIME/integrated_arpg_engine_v04.py",
+      "size": 2690,
+      "sha256": "95c14203dcf7899abf95811b417195fcb1322451d802a3f91060f5a21e5fe400"
+    },
+    {
+      "path": "01_RUNTIME/integrated_arpg_engine_v05.py",
+      "size": 2566,
+      "sha256": "e8f789fe1180726b3a4f13f8c29be86b4ce7e8a79e17b4c47e66f21fad085df7"
+    },
+    {
+      "path": "01_RUNTIME/integrated_arpg_engine_v06.py",
+      "size": 2572,
+      "sha256": "9604cf51b2765fbf62c7e30c1e5ab259c5db29b27c936ec03a2c33ede2bba4ed"
+    },
+    {
+      "path": "01_RUNTIME/integrated_arpg_engine_v07.py",
+      "size": 3377,
+      "sha256": "c3711b3b2dbe5fd9c6e4e69ccc3969e4b73c2e5aabd00a5cef9e8509280d26a6"
+    },
+    {
+      "path": "01_RUNTIME/integrated_arpg_engine_v08.py",
+      "size": 3240,
+      "sha256": "19ac53bb43163cb17399bcdb2e2dad9fc0c6b64d43eaa8042d98d6dd30b04155"
+    },
+    {
+      "path": "01_RUNTIME/integrated_arpg_engine_v09.py",
+      "size": 2457,
+      "sha256": "f8e3fddb85b0be1f9766e2382d0c1dec8a040cd733ed5fadfafdab1668ca7839"
+    },
+    {
+      "path": "01_RUNTIME/integrated_arpg_engine_v10.py",
+      "size": 1997,
+      "sha256": "26b1298ec79c3d741d813b207a86080d28a5992189924f00fc94614d2ac5d380"
+    },
+    {
+      "path": "01_RUNTIME/integrated_arpg_engine_v11.py",
+      "size": 2030,
+      "sha256": "f07c15638cbbbae589e9ad3bbc9bec41c1380bee39c13f4f5ded79539f2897d3"
+    },
+    {
+      "path": "01_RUNTIME/integrated_arpg_engine_v12.py",
+      "size": 1972,
+      "sha256": "d87b4da63b1ffe3895136bb6fd2ef71b363a4683fc2f0e11191d09ab1d239894"
+    },
+    {
+      "path": "01_RUNTIME/integrated_arpg_engine_v13.py",
+      "size": 1954,
+      "sha256": "a922547101149c0b6e6d6a0167e64ffa15ed6d26767fa17ffabdfbc81211bb62"
+    },
+    {
+      "path": "01_RUNTIME/integrated_arpg_engine_v14.py",
+      "size": 1975,
+      "sha256": "946b53985f90ab50d88e3e8f51cabce1b626d0f63d8024dc86c9f921d36fdda4"
+    },
+    {
+      "path": "01_RUNTIME/integrated_engine.py",
+      "size": 6701,
+      "sha256": "055286213c0b029f4fb160926940e75ac99c726e96a60a5f7992416903bc21a7"
+    },
+    {
+      "path": "01_RUNTIME/integrated_engine_v12.py",
+      "size": 3399,
+      "sha256": "21dcf50a4c85144af70f5c6fe203660cd675c923d31b612c89dcd3e3e75e670d"
+    },
+    {
+      "path": "01_RUNTIME/integrated_engine_v13.py",
+      "size": 4070,
+      "sha256": "887b35349213850625bfe3b43a84a3330fe8a9d8e36d39b9a135fcd95385040c"
+    },
+    {
+      "path": "01_RUNTIME/integrated_engine_v14.py",
+      "size": 5758,
+      "sha256": "4c7cac628d93cf2f9e0d29e49124c01a6d1ecbd87fb8b3bcacadcc417983c980"
+    },
+    {
+      "path": "01_RUNTIME/integrated_engine_v15.py",
+      "size": 3995,
+      "sha256": "bd9b58e9360a4a1b357f6ae8d2e900dfe499316391a3db0916271023218bdefe"
+    },
+    {
+      "path": "01_RUNTIME/living_runtime.py",
+      "size": 60429,
+      "sha256": "da1b086745c0c955a7daab762c4f4eb473fbdebde0d8f33d5b1aad13e5f9d98e"
+    },
+    {
+      "path": "01_RUNTIME/llm_gateway.py",
+      "size": 20851,
+      "sha256": "15dfe9ef9f7672e1d81bf3bf507a9d2fbfbaa36df7944a9976ef69f1f5ecd681"
+    },
+    {
+      "path": "01_RUNTIME/long_horizon.py",
+      "size": 46130,
+      "sha256": "148fcce347e93c61c0cd4af2c4e64e64dadad665e709bbe42d97deba5cde74ee"
+    },
+    {
+      "path": "01_RUNTIME/mar_balance.py",
+      "size": 6352,
+      "sha256": "6b6ffb0fe114b899190d7de47ee4895f6e5634be6866c7707c14805f8a7b515a"
+    },
+    {
+      "path": "01_RUNTIME/mobility_biology.py",
+      "size": 35246,
+      "sha256": "becba970a3c758c164d9f07bfffe1a734d407151adef8efce1a806f41d4bd53d"
+    },
+    {
+      "path": "01_RUNTIME/navigation_pathfinding.py",
+      "size": 5783,
+      "sha256": "915bc755d4436119b3f3efe8b5f8b36c8a7850fa8697277264fe91a1481b3962"
+    },
+    {
+      "path": "01_RUNTIME/object_environment.py",
+      "size": 34329,
+      "sha256": "2a5720cd9583f46c87750e6016dcef67f3f7e3d9b3a47ab725df5e97dc10b170"
+    },
+    {
+      "path": "01_RUNTIME/player_discovery.py",
+      "size": 5126,
+      "sha256": "13434dd8432340d88cd1ce43749442aa5604bac014395b1ae79bea665d3328cb"
+    },
+    {
+      "path": "01_RUNTIME/scene_interaction.py",
+      "size": 23349,
+      "sha256": "2d60951e58f7bb7699ef77067079e1724fd81f729982ba00ec00f6cf6b4b1835"
+    },
+    {
+      "path": "01_RUNTIME/social_memory.py",
+      "size": 61547,
+      "sha256": "b290ad3f0f51edfa263e7595bf2646a2823250281649f5f6aa625eeb062996e2"
+    },
+    {
+      "path": "01_RUNTIME/society_labor.py",
+      "size": 45571,
+      "sha256": "fd2cb5b6b8bd67de65a82c36c6a9ca6ba1911119b94d8cf07108d99d50bd3843"
+    },
+    {
+      "path": "01_RUNTIME/spatial_coordinates.py",
+      "size": 9011,
+      "sha256": "8fced7c31825964ac6f5d7d156fd15293f7b27041e980121eaab25d6cc29accc"
+    },
+    {
+      "path": "01_RUNTIME/streaming_system.py",
+      "size": 8252,
+      "sha256": "ce935ffe0b5b9747a11d58f502c31c2be0200963be64c5965204d6aa3ee5ea74"
+    },
+    {
+      "path": "01_RUNTIME/system_health.py",
+      "size": 8072,
+      "sha256": "d066a2f2c61e63d0aba644f0a03ea77da45feb0e86b63010b1c9e001cef21e42"
+    },
+    {
+      "path": "01_RUNTIME/world_orchestrator.py",
+      "size": 45289,
+      "sha256": "869bee446b1e49a9d16a23a0d40e5813128e6b8448207b7f4fe14d776754259a"
+    },
+    {
+      "path": "01_RUNTIME/world_systems.py",
+      "size": 49675,
+      "sha256": "9882b3aa52914c3f65e8216efdc4b5a8bef529f565fbbb57439c0854c007d2a1"
+    },
+    {
+      "path": "02_CONTRACTS/AGENT_BRAIN_INTENT_VALIDATOR_CONTRACT_V1_0.json",
+      "size": 5422,
+      "sha256": "2085da8ee00a153ede12752cd017bbbd3c7d144ccf4d452995ee3d9cb32f262f"
+    },
+    {
+      "path": "02_CONTRACTS/ANIMAL_CREATURE_BRAIN_ECOLOGICAL_BEHAVIOR_CONTRACT_V1_0.json",
+      "size": 4390,
+      "sha256": "0a0d47cbc89407d90a57de9821d5a9c3d80ee374da8b243866b66b36c1caa2a8"
+    },
+    {
+      "path": "02_CONTRACTS/ARPG_STAGE01/ARPG_GAME_CORE_CONTRACT_V0_2_0.json",
+      "size": 1905,
+      "sha256": "398d2e874109ebedb68b13c1aedd1aea3199037dfbccac5c84aaef2b7db0bd2b"
+    },
+    {
+      "path": "02_CONTRACTS/ARPG_STAGE02/ARPG_CHARACTER_CORE_CONTRACT_V0_3_0.json",
+      "size": 969,
+      "sha256": "9c89e4ab2b3b1e67eaf2404be3e30b31364afe437d39e583a016635da0433afc"
+    },
+    {
+      "path": "02_CONTRACTS/ARPG_STAGE03/ARPG_COMBAT_CORE_CONTRACT_V0_4_0.json",
+      "size": 1668,
+      "sha256": "d9dc4dd1aceab35ec55e8882b885b94c8a1daf13edaa697971a9bccb82b2c180"
+    },
+    {
+      "path": "02_CONTRACTS/ARPG_STAGE04/ARPG_RESOURCE_COOLDOWN_CONSUMABLE_CONTRACT_V0_5_0.json",
+      "size": 962,
+      "sha256": "a012228fd27bd1d05551f4f3b2c54db25b07f40b6e065aca3c917d08658a4b57"
+    },
+    {
+      "path": "02_CONTRACTS/ARPG_STAGE05/ARPG_ITEMIZATION_CONTRACT_V0_6_0.json",
+      "size": 1793,
+      "sha256": "13334020155f50d9231c1b31948789acf88111c61e5737d1b167bdd2f1f75e6a"
+    },
+    {
+      "path": "02_CONTRACTS/ARPG_STAGE06/ARPG_SKILL_CORE_CONTRACT_V0_7_0.json",
+      "size": 1438,
+      "sha256": "6e242a673ad01695efd3ab1dfe660839f966a615c5b81e2f1d8d7e8bb6500062"
+    },
+    {
+      "path": "02_CONTRACTS/ARPG_STAGE07/ARPG_ACTOR_AI_CONTRACT_V0_8_0.json",
+      "size": 2034,
+      "sha256": "ab809571f70379783501fe919718a435da51ed16d4f5a656a3acf4f1276f7a9d"
+    },
+    {
+      "path": "02_CONTRACTS/ARPG_STAGE08/ARPG_WORLD_SYSTEM_CONTRACT_V0_9_0.json",
+      "size": 2969,
+      "sha256": "ef9f0ee06242d4339d23caee8f1938b731fc53ea73f2ceba9c128ab927b1b865"
+    },
+    {
+      "path": "02_CONTRACTS/ARPG_STAGE09/ARPG_GATHERING_WORK_CONTRACT_V1_0_0.json",
+      "size": 4334,
+      "sha256": "88d18015f46b437f1bbddc48a8a26f624854291acfc29ec3c5925faf59e638dc"
+    },
+    {
+      "path": "02_CONTRACTS/ARPG_STAGE10/ARPG_MOBILITY_INFRASTRUCTURE_CONTRACT_V1_1_0.json",
+      "size": 1752,
+      "sha256": "1d0e537b8e2fbafe13139f04452ca4b321d02635341c1398b1179943bd24dd95"
+    },
+    {
+      "path": "02_CONTRACTS/ARPG_STAGE11/ARPG_TECH_MACHINES_ROBOTICS_CONTRACT_V1_2_0.json",
+      "size": 2222,
+      "sha256": "e0ed5b069ca46f86a3b885b956670f06f2f96b0ed36a9e8dfffc19b111cb9a2d"
+    },
+    {
+      "path": "02_CONTRACTS/ARPG_STAGE12/ARPG_NARRATIVE_CULTURE_CONTRACT_V1_3_0.json",
+      "size": 1578,
+      "sha256": "a4e57f054dbc3055ab53fc67531c811a46bdb51bab6efd890799a324ec43bae5"
+    },
+    {
+      "path": "02_CONTRACTS/ATLAS_CODEX_LIVING_RUNTIME_INTEGRATION_CONTRACT_V1_0.json",
+      "size": 2460,
+      "sha256": "31759476a31775ae4162232c8425eb728c0287710e0b0dba5b315b77afec5105"
+    },
+    {
+      "path": "02_CONTRACTS/CONSEQUENCE_ENGINE_CONTRACT_V1_0.json",
+      "size": 5064,
+      "sha256": "14f2f056a41bfe33a887e48df620f86fe3a66bc431b0e53cba94ab5da1f2a9c4"
+    },
+    {
+      "path": "02_CONTRACTS/CONTROLLED_GENERATIVE_AI_LLM_GATEWAY_CANON_GUARD_CONTRACT_V1_0.json",
+      "size": 1609,
+      "sha256": "08ebae85d574280ac87eef01e32d5293e20eb20fb7f5fa64ce2ed6dc37d800f7"
+    },
+    {
+      "path": "02_CONTRACTS/GODOT_ISOMETRIC_STREAMING_CONTRACT_V1_4.json",
+      "size": 1885,
+      "sha256": "1dac9ef0a78f1e9ded05fc3f071a9be0c068e38c4853c86671b28b783f2a7145"
+    },
+    {
+      "path": "02_CONTRACTS/GODOT_ISOMETRIC_TRAVERSAL_CONTRACT_V1_5.json",
+      "size": 652,
+      "sha256": "e5326c916db1dbe9c8e529a36ecf38886f2be2992cde72b5db30cea0d8a3b5d2"
+    },
+    {
+      "path": "02_CONTRACTS/LONG_HORIZON_OFFLINE_RECONCILIATION_CONTRACT_V1_0.json",
+      "size": 2343,
+      "sha256": "30b7d94ba334d61ad1a6d2c0423d565c02cf9a407ea647b7949e211a5da39b20"
+    },
+    {
+      "path": "02_CONTRACTS/MEMORY_KNOWLEDGE_RELATIONSHIP_REPUTATION_CONTRACT_V1_0.json",
+      "size": 3646,
+      "sha256": "636c2450f6f3134bf66b896db31499ea3831bb1813cd9340b1af5510449cc412"
+    },
+    {
+      "path": "02_CONTRACTS/OBJECT_ENVIRONMENT_REACTIVE_SYSTEM_CONTRACT_V1_0.json",
+      "size": 3642,
+      "sha256": "d3b449e42e96e24fd81694089443b4b3e157662563dbd642c92cac0b444bd492"
+    },
+    {
+      "path": "02_CONTRACTS/STAGE14_GLOBAL_STRESS_RELEASE_READINESS_CONTRACT_V1_0.json",
+      "size": 1101,
+      "sha256": "37137a1d76e8c016c4127934ef1b659b8df3fecb36fbf6bbf25f67eada977565"
+    },
+    {
+      "path": "02_CONTRACTS/SYSTEMIC_ECONOMY_FACTIONS_POPULATION_CONTRACT_V1_0.json",
+      "size": 1716,
+      "sha256": "c7089e1598179554cafef1b7bcd4dff44829b7c24fe21eb83b074e1cc1be56c9"
+    },
+    {
+      "path": "02_CONTRACTS/SYSTEMIC_INTEGRATION_WORLD_ORCHESTRATION_CONTRACT_V1_0.json",
+      "size": 3104,
+      "sha256": "0496bd6428591ffa0d16e4b0af83b474387a96008cb116dadc343f985f6d9b1f"
+    },
+    {
+      "path": "03_TESTS/STAGE14/run_stage14_corruption_matrix.py",
+      "size": 7026,
+      "sha256": "6c2e01d3651aed05fed6229c2598abdb14f92586781cdc7d84874bc51dcfddcb"
+    },
+    {
+      "path": "03_TESTS/STAGE14/run_stage14_global_integration.py",
+      "size": 13739,
+      "sha256": "b7cd7a41659b5dfcb398514a06c84bde747d490c9d9bd390b9b2c0ca4354032a"
+    },
+    {
+      "path": "03_TESTS/STAGE14/run_stage14_multiworld_soak.py",
+      "size": 9494,
+      "sha256": "f53010a93c87229c1f209ebf439243cfc80206f71e17a7c7c5d262f50ec5049e"
+    },
+    {
+      "path": "03_TESTS/STAGE14/run_stage14_release_readiness.py",
+      "size": 3222,
+      "sha256": "d9025b7d4f8c6a9a351c9693435d1cb785050980f3410827ec1d4c3e6e86016a"
+    },
+    {
+      "path": "03_TESTS/run_arpg_lore_coverage_audit_v01.py",
+      "size": 4092,
+      "sha256": "a90fb87ea4572354e2f3ec2240bb152b1250ffe5ab96e47fd2d4a99b87e8c9a3"
+    },
+    {
+      "path": "03_TESTS/run_arpg_stage00_stress.py",
+      "size": 3268,
+      "sha256": "acddd616cc9e8c93b834f3bd55ead8e03fa76ecce815f922bbe7d88c56864c1f"
+    },
+    {
+      "path": "03_TESTS/run_arpg_stage00_validation.py",
+      "size": 15197,
+      "sha256": "0b6e139474da186ad5a7667b09293bde532d88ddf8dff3749a19ed41a51b5707"
+    },
+    {
+      "path": "03_TESTS/run_arpg_stage01_stress.py",
+      "size": 4403,
+      "sha256": "52d92354ed15fcf8989a373d2b266ba82b42fc38bd81b76c2fee3c70525ad2b3"
+    },
+    {
+      "path": "03_TESTS/run_arpg_stage01_unit_report.py",
+      "size": 1206,
+      "sha256": "caee241d677555443839ed23529f6541bfff35376e55cff194382c8f835be29b"
+    },
+    {
+      "path": "03_TESTS/run_arpg_stage01_validation.py",
+      "size": 13264,
+      "sha256": "dc6c7550e18fb75cda8ed3d5af510ac63579797a210d6516f23ed1e1b30955d3"
+    },
+    {
+      "path": "03_TESTS/run_arpg_stage02_stress.py",
+      "size": 3069,
+      "sha256": "7f21249e26178e7fed0effa039c9e145d5cb525c680dd15e5f968ec3ce637fee"
+    },
+    {
+      "path": "03_TESTS/run_arpg_stage02_validation.py",
+      "size": 9308,
+      "sha256": "3e6d8cb48b2b43df3a99780fd015c1189eb109de1d95c7cf6706bce2b9f6cfda"
+    },
+    {
+      "path": "03_TESTS/run_arpg_stage03_stress.py",
+      "size": 4445,
+      "sha256": "d2c645918a1f81cc880aad4dbe3285df5ac331febcf019c9953c31e8830f9b4a"
+    },
+    {
+      "path": "03_TESTS/run_arpg_stage03_validation.py",
+      "size": 14848,
+      "sha256": "b54de2dcceb9a99cfd5421db11c8d6605c73061d9784d99fd98b84e663494986"
+    },
+    {
+      "path": "03_TESTS/run_arpg_stage04_stress.py",
+      "size": 3484,
+      "sha256": "f90b58897132fd1deaf110751fd80d0069f6ef1451b33765739ff73150903637"
+    },
+    {
+      "path": "03_TESTS/run_arpg_stage04_validation.py",
+      "size": 8522,
+      "sha256": "ae134991a4d6fb1b60be52736406e10fbd84bd94db1e315ba2df66fe585ced03"
+    },
+    {
+      "path": "03_TESTS/run_arpg_stage05_stress.py",
+      "size": 4796,
+      "sha256": "675b0661b1b01f04ddfd1bd7db220ad27ce75c35af95670e801f5051deac2151"
+    },
+    {
+      "path": "03_TESTS/run_arpg_stage05_unit_report.py",
+      "size": 1540,
+      "sha256": "088f468dc2c74f6c334671c89f76ccc7cf6374546ff9f279d276a2c8aa67c6e8"
+    },
+    {
+      "path": "03_TESTS/run_arpg_stage05_validation.py",
+      "size": 8900,
+      "sha256": "7ac0c57ec65af5cbb5d5986803f9e4a15ce80dd2b4148b92a76ffa52f2c3ab9f"
+    },
+    {
+      "path": "03_TESTS/run_arpg_stage06_stress.py",
+      "size": 3954,
+      "sha256": "1a7a11522055698b7b92a7fc7c060562cf5cde72c03bfa9f7aa5ee8b66eea91a"
+    },
+    {
+      "path": "03_TESTS/run_arpg_stage06_validation.py",
+      "size": 4495,
+      "sha256": "78a0c4f2742ca2dac04a5941ef102bc5daaeef23c373dca3ea7a00253a5fa9f3"
+    },
+    {
+      "path": "03_TESTS/run_arpg_stage07_stress.py",
+      "size": 3449,
+      "sha256": "a9f3863e87d21ebb7cfb138c63aea71a0d5516a0d449bcf1723474c5239cc46c"
+    },
+    {
+      "path": "03_TESTS/run_arpg_stage07_validation.py",
+      "size": 6170,
+      "sha256": "619b27b2612ef378a9a18d855e61f84e5d93dd032b04c78100bfe237942fa4d9"
+    },
+    {
+      "path": "03_TESTS/run_arpg_stage08_stress.py",
+      "size": 3072,
+      "sha256": "7bf7a3f7c8a98546cab63ee1b0880db3c460351446f3416d52ae0e92071876be"
+    },
+    {
+      "path": "03_TESTS/run_arpg_stage08_validation.py",
+      "size": 5939,
+      "sha256": "ff4a3132b4a511161abf5352052b3e67c9a4376e42273916a00d3772819757b4"
+    },
+    {
+      "path": "03_TESTS/run_arpg_stage09_stress.py",
+      "size": 3032,
+      "sha256": "45bcf3ee8d1ba438f56a4fc57d962b94512aa40e8039d4c1032381b91c652524"
+    },
+    {
+      "path": "03_TESTS/run_arpg_stage09_validation.py",
+      "size": 5491,
+      "sha256": "38cdb64249a797a1619e4ed1f1af8f3367127dae3e1baa8db2104fdf38468e60"
+    },
+    {
+      "path": "03_TESTS/run_arpg_stage10_stress.py",
+      "size": 3672,
+      "sha256": "334c12a7c490428e45b15787bb32015cf70a62d7d7cc8da5ae10470574eb8ead"
+    },
+    {
+      "path": "03_TESTS/run_arpg_stage10_validation.py",
+      "size": 4919,
+      "sha256": "43cc3d792c91e0166d329f160a2e4b0a08619e97f65a657427ce09627b003dfc"
+    },
+    {
+      "path": "03_TESTS/run_arpg_stage11_stress.py",
+      "size": 3372,
+      "sha256": "42a5dbc5adeda23e9722005f033e873b4ac815b7fe82f0d15d9f9db37e4ebe39"
+    },
+    {
+      "path": "03_TESTS/run_arpg_stage11_validation.py",
+      "size": 5209,
+      "sha256": "351ad312360bc65a9b1cae3465111fd4fa4359ffbe8d69d0554423e219c63eaa"
+    },
+    {
+      "path": "03_TESTS/run_arpg_stage12_stress.py",
+      "size": 3118,
+      "sha256": "f6c443bbc15ed4254b3f85cb93aab1226cccb77fd7e6671b64cec21fff6a523b"
+    },
+    {
+      "path": "03_TESTS/run_arpg_stage12_validation.py",
+      "size": 3598,
+      "sha256": "375efe87dcd4053a2dc5ec7c7329c0322eb54ce2fbe2de3136ecefe6ab143ac3"
+    },
+    {
+      "path": "03_TESTS/run_arpg_stage14_stress.py",
+      "size": 2489,
+      "sha256": "5fd2c524e0c33160e201f5ec00a02c6e17729f3e780c400bd522fd0f626ddcbf"
+    },
+    {
+      "path": "03_TESTS/run_arpg_stage14_validation.py",
+      "size": 5393,
+      "sha256": "25053e648ea50ba6c0817e0f6caf67cee73b8e6285b3d2fb78a1d3a1e25b90fa"
+    },
+    {
+      "path": "03_TESTS/run_country_scale_deep_audit_v1_2.py",
+      "size": 4434,
+      "sha256": "40907c450423b20708acfd4bf271eefc405046ff85892901d0175dc106009c78"
+    },
+    {
+      "path": "03_TESTS/run_country_scale_stress_v1_2.py",
+      "size": 2448,
+      "sha256": "f7890b4982a52d25d8042c50feb1dce613fcbd5c77169a83097377cfb760487e"
+    },
+    {
+      "path": "03_TESTS/run_country_scene_deep_audit_v1_2_1.py",
+      "size": 6949,
+      "sha256": "e0c6477e17977448f37207484de11ebf07644deb7d19c9965e32e4d8a7ac86bd"
+    },
+    {
+      "path": "03_TESTS/run_country_scene_final_stress_v1_2_1.py",
+      "size": 2701,
+      "sha256": "05d64756bf627eb0622fe169747df0ecee0d7a2bc25d65aaad4f580f3d0997fa"
+    },
+    {
+      "path": "03_TESTS/run_country_scene_interaction_stress_v1_2_1.py",
+      "size": 5014,
+      "sha256": "e5ddefe7f96fcd684e1bfc50ed9cc721f5eb44aa2b21268c9f5091f490f59133"
+    },
+    {
+      "path": "03_TESTS/run_dev_readiness_v1_2_1.py",
+      "size": 3812,
+      "sha256": "514bd2fbbfae80f55a5b8bf064e9de4e51d2b38629e227c99f60f0ad96d36dcf"
+    },
+    {
+      "path": "03_TESTS/run_extended_validation.py",
+      "size": 10703,
+      "sha256": "6b08bd1e02316d8c37ddd0e2ebe3f3ab8261faa5cfbb26d4a6aa4b359a55eef6"
+    },
+    {
+      "path": "03_TESTS/run_fuzz_stress.py",
+      "size": 4366,
+      "sha256": "4492e11b0bad4d3ca8dae07cff3882064846ffac3f37f04b52922ca9fa60bd0a"
+    },
+    {
+      "path": "03_TESTS/run_isolated_regression_v1_2_1.py",
+      "size": 1697,
+      "sha256": "25cfd68bf2e86d42dca93da97371bd1823d4f3e8bce068a6e390595454a6e151"
+    },
+    {
+      "path": "03_TESTS/run_isolated_test_matrix_v1_2_1.py",
+      "size": 1678,
+      "sha256": "e9edeeb9744880faaf8bf868fd1f62e81993b6563f32c17ab2c6d61c3af418b6"
+    },
+    {
+      "path": "03_TESTS/run_release_audit_v1_1.py",
+      "size": 3507,
+      "sha256": "8e2e396aac353e864b3126d85ea3b2bc03e4f4982177051b8f76f14ef56cf496"
+    },
+    {
+      "path": "03_TESTS/run_stage05_extended_regression.py",
+      "size": 13911,
+      "sha256": "e1a4416566d0566429130af9421aeeb56351bbd25da36ce682f90b052e72a09b"
+    },
+    {
+      "path": "03_TESTS/run_stage05_fuzz_regression.py",
+      "size": 8021,
+      "sha256": "8d9947d86bb83eac8dd92d3c8bf7cecbf627d04a237f5e7d7979060e56cf6640"
+    },
+    {
+      "path": "03_TESTS/run_stage05_static_regression.py",
+      "size": 5328,
+      "sha256": "1eaaf1682626f507ed6b3844892e5dc53f303ee46a4da80a74e56e83932308f7"
+    },
+    {
+      "path": "03_TESTS/run_stage07_extended_validation.py",
+      "size": 11227,
+      "sha256": "17a630086df116e177cba9b03eaaf446a628200d5ab1bb18e508e754a2305651"
+    },
+    {
+      "path": "03_TESTS/run_stage07_fuzz_stress.py",
+      "size": 9846,
+      "sha256": "6e86ec999c45d704e7772235c6019cc0dbf74020f20b09e083342a12210c260c"
+    },
+    {
+      "path": "03_TESTS/run_stage07_static_audit.py",
+      "size": 5970,
+      "sha256": "5a0bde576f1e0774e7604b07fbf87b4148d23907c876536a81e3799d29c7b86e"
+    },
+    {
+      "path": "03_TESTS/run_stage08_extended_validation.py",
+      "size": 9554,
+      "sha256": "bf9a0bc58607850686c2dfbbee5bed1bac415a06723f7ccd9cd8f1be4bb6cc27"
+    },
+    {
+      "path": "03_TESTS/run_stage08_fuzz_stress.py",
+      "size": 9562,
+      "sha256": "0c0ba7c0cef6e6409373e12f832a25ac8ecc077efb6267bd616e01ca4de0c3f8"
+    },
+    {
+      "path": "03_TESTS/run_stage08_static_audit.py",
+      "size": 4055,
+      "sha256": "aee08a7101a326a4ad05362f9134d979239c14ec26e6dfdae2175debb65aa8b2"
+    },
+    {
+      "path": "03_TESTS/run_stage09_extended_validation.py",
+      "size": 8878,
+      "sha256": "81e5b2d025913534ed1940d5b0da4429bc83a0d80f124fdf6d29bd72203d1bb7"
+    },
+    {
+      "path": "03_TESTS/run_stage09_fuzz_stress.py",
+      "size": 7635,
+      "sha256": "68cb6ba4c1cd6397a52c358cacb35ef4d5ec3ef36abffc0102a2f6d541825cd4"
+    },
+    {
+      "path": "03_TESTS/run_stage09_static_audit.py",
+      "size": 4773,
+      "sha256": "824aac9bd75a397ad84fd63e06edc0f0603da17ff6327f5423ec26e91b5119c4"
+    },
+    {
+      "path": "03_TESTS/run_stage10_extended_validation.py",
+      "size": 5695,
+      "sha256": "a071dcabe25a6b44107cbec6108b3d1f6b61d5ddc4c241df5872844ab8311705"
+    },
+    {
+      "path": "03_TESTS/run_stage10_fuzz_stress.py",
+      "size": 5933,
+      "sha256": "bdf6e1737ce0f323bc35bb0b273908e85d1eafe82f8eb7f2cf17c729d7940aec"
+    },
+    {
+      "path": "03_TESTS/run_stage10_static_audit.py",
+      "size": 4161,
+      "sha256": "57a035325b4e89062a9f4bf2c2b2c83e1ec6c30d24224faff1e1cffa21d107a5"
+    },
+    {
+      "path": "03_TESTS/run_stage11_extended_validation.py",
+      "size": 6019,
+      "sha256": "16f25368308b6a4fb960559c04d98613bf9bef1e81931f52575815ad7ab521f1"
+    },
+    {
+      "path": "03_TESTS/run_stage11_fuzz_stress.py",
+      "size": 6510,
+      "sha256": "dd7796ad8230bff6eb44734a2c4281d63d8880e70552ecb4035063d490c7b674"
+    },
+    {
+      "path": "03_TESTS/run_stage11_static_audit.py",
+      "size": 6452,
+      "sha256": "06750420fd67450ca2d36d033a33ada8f2adc64cc82b682c39e6437aa2a23a1e"
+    },
+    {
+      "path": "03_TESTS/run_stage12_extended_validation.py",
+      "size": 5681,
+      "sha256": "00aa73feeb74d781746694e66aa385773dbae29bbfeabb1a83cb6ee886c55e58"
+    },
+    {
+      "path": "03_TESTS/run_stage12_fuzz_stress.py",
+      "size": 5137,
+      "sha256": "36cd3f22e60a561877935e8750afa3b3a65be60553197f0fd413e75e8d6ad067"
+    },
+    {
+      "path": "03_TESTS/run_stage12_static_audit.py",
+      "size": 2956,
+      "sha256": "3e882ddf0e6377a0c677981d62771f1258db8caf194545b6ce4bffeb7f9b2a5c"
+    },
+    {
+      "path": "03_TESTS/run_stage12_unit_regression.py",
+      "size": 1524,
+      "sha256": "8aca2cdb62f192cadf09141a9836209a030857192b3f22ab4ec48c0010286156"
+    },
+    {
+      "path": "03_TESTS/run_stage13_arpg_extended_validation.py",
+      "size": 5260,
+      "sha256": "c2b3c91f58d42d7d10c5d26e36efede572ed108e41df30bd1819e5ac2aaa77a7"
+    },
+    {
+      "path": "03_TESTS/run_stage13_arpg_stress.py",
+      "size": 2781,
+      "sha256": "4e923c291297f93d27cabfe0c92c4117e5b2b7156b9948866c325aa0474a77f6"
+    },
+    {
+      "path": "03_TESTS/run_stage13_extended_validation.py",
+      "size": 4240,
+      "sha256": "1dadd7e4343fe7eb06a50e252ad3319152c71bbfe0bbaf9259b19dade3de4b97"
+    },
+    {
+      "path": "03_TESTS/run_stage13_fuzz_stress.py",
+      "size": 3589,
+      "sha256": "670e7149c335da36a6ef861ebe981609dafe7ff609be1763fe67dda917d0b25d"
+    },
+    {
+      "path": "03_TESTS/run_stage13_static_audit.py",
+      "size": 3945,
+      "sha256": "71ce66e5d2167f7d7f4a3fa5b95fd2b68c93b4fcc76d6cbe9d78b704e18c4e7c"
+    },
+    {
+      "path": "03_TESTS/run_stage13_static_audit_v1_2_1.py",
+      "size": 4306,
+      "sha256": "cdef2ac38306c6ff6f76f4f9c04c4064e81967246aaf51f423c33cafac8d98b2"
+    },
+    {
+      "path": "03_TESTS/run_stage13_unit_validation.py",
+      "size": 1203,
+      "sha256": "22193a448a89319fad03d5ce818740905a7c1bda239dbdfd2ebbb86e3abe191d"
+    },
+    {
+      "path": "03_TESTS/run_static_audit.py",
+      "size": 4976,
+      "sha256": "d8738f01ebba9daac6632f42c3e9fef29a5c5bba708018f21f2a9ca5383ccf73"
+    },
+    {
+      "path": "03_TESTS/run_unit_report.py",
+      "size": 1044,
+      "sha256": "c916d209a5a01e53d9b23996bf9aeee31e7d1a7e68d04e5bccf2befb9a29aa57"
+    },
+    {
+      "path": "03_TESTS/test_agent_brain.py",
+      "size": 40302,
+      "sha256": "2ad2cf8a1371685795eecf1e773c26224b509ff4186370f7166efda2998aa9a6"
+    },
+    {
+      "path": "03_TESTS/test_arpg_actor_core_stage07.py",
+      "size": 9282,
+      "sha256": "c179d3857b0521354e9ced2ebe9bac7be138c604338efd208d38b3d041dcb48b"
+    },
+    {
+      "path": "03_TESTS/test_arpg_character_core_stage02.py",
+      "size": 8460,
+      "sha256": "139c80f45dac9fe474f5371b51d6d0677aef6e50e8f8665dcc085f5039cdb159"
+    },
+    {
+      "path": "03_TESTS/test_arpg_combat_core_stage03.py",
+      "size": 8254,
+      "sha256": "f92e507c0240c6e19237afffcd084dce7b14339c1c40b3e32a627f3dd00bd26c"
+    },
+    {
+      "path": "03_TESTS/test_arpg_economy_stage13.py",
+      "size": 7612,
+      "sha256": "16e76d5034e5a9e1700e691748fcea5a49c58f32078a48d4b6a1fe23c8fac64e"
+    },
+    {
+      "path": "03_TESTS/test_arpg_game_core_stage01.py",
+      "size": 12277,
+      "sha256": "8c33374a337779114e6ddf6b4cc06c491d88cccc94e8b41a162c668b3b285b11"
+    },
+    {
+      "path": "03_TESTS/test_arpg_gathering_work_stage09.py",
+      "size": 10628,
+      "sha256": "0b8517208af968eaecba613eaa094a60b566e7115fa62444fba07d1422765ce8"
+    },
+    {
+      "path": "03_TESTS/test_arpg_item_core_stage05.py",
+      "size": 14139,
+      "sha256": "090c589cca3bf5a08e341bd1fbc7448faf908796534e85ed107d11ad9a5ffa86"
+    },
+    {
+      "path": "03_TESTS/test_arpg_living_integration_stage14.py",
+      "size": 6091,
+      "sha256": "8b4d5d8f89ccad3dab76908cac631ed3974a899bfdf0bc33b6207c243e27888e"
+    },
+    {
+      "path": "03_TESTS/test_arpg_mobility_stage10.py",
+      "size": 6922,
+      "sha256": "c6d8dcfeb9ae4f2bd7f690eb7df6eaa0e4b894019d379f4eb204b6fc96e15b5c"
+    },
+    {
+      "path": "03_TESTS/test_arpg_narrative_stage12.py",
+      "size": 6133,
+      "sha256": "f579ff80484840c9812358ef18d0a9b497986f2cb474ab13df9b448254482418"
+    },
+    {
+      "path": "03_TESTS/test_arpg_resource_core_stage04.py",
+      "size": 10611,
+      "sha256": "7f0418f4f623685423b0ca29410ce639711d1af9719622ac1a7f1623302144f7"
+    },
+    {
+      "path": "03_TESTS/test_arpg_skill_core_stage06.py",
+      "size": 10493,
+      "sha256": "e93d10725752665ef5f3ff888df0453e719ce321d1e39dcec7d3e8468aefdab3"
+    },
+    {
+      "path": "03_TESTS/test_arpg_technology_stage11.py",
+      "size": 6858,
+      "sha256": "250d3c3e2703acc2d2a688a4d19c4d793b0d41590014e34f96b7632d97b8e900"
+    },
+    {
+      "path": "03_TESTS/test_arpg_world_core_stage08.py",
+      "size": 7864,
+      "sha256": "e5101654e0abc6c8ea2e6a66f842136e60b3843563b9a380903184af9b7f22e7"
+    },
+    {
+      "path": "03_TESTS/test_atlas_access_guard_v1_4.py",
+      "size": 1570,
+      "sha256": "624c1a2f3ca710573b648cb65c604cb8cbf8ff0cc713c06214a5d2b13469a723"
+    },
+    {
+      "path": "03_TESTS/test_atlas_live_core.mjs",
+      "size": 1255,
+      "sha256": "b6ac4b5c6edd7760414e7d16b13a02c733521899a57da3ce06e772593dbada26"
+    },
+    {
+      "path": "03_TESTS/test_atlas_living_bridge.py",
+      "size": 16705,
+      "sha256": "cdcf7109ad2db12fec8d1074fd55961b058ec41a2e9c03fdb0ce5a69232c1c25"
+    },
+    {
+      "path": "03_TESTS/test_atlas_route_authority_v1_4.py",
+      "size": 968,
+      "sha256": "63a8cee2106318391f94ed4491e34d88ff2489b6217b84e21e4f640e66909f4a"
+    },
+    {
+      "path": "03_TESTS/test_atlas_streaming_invariants_v1_4.py",
+      "size": 2322,
+      "sha256": "0c854817f9d1c9d2485f24c375ffd5ad333b110b35d44256a8ab57a555ebe4e6"
+    },
+    {
+      "path": "03_TESTS/test_atlas_streaming_v1_4.py",
+      "size": 2815,
+      "sha256": "a2ee66c6e35ca33327c3a2fdf6b438147fbcfa6d48c5e5c46c75dd593675156c"
+    },
+    {
+      "path": "03_TESTS/test_combat_determinism_v1_3.py",
+      "size": 2830,
+      "sha256": "3eb27ca85087172a9a2e7616ad572f18ac901f62450b7e88cef455a28a77ccc1"
+    },
+    {
+      "path": "03_TESTS/test_combat_system_v1_1.py",
+      "size": 10315,
+      "sha256": "298c478b56cb881551421e4df70d423744af605d8b3c2d34243a37a50ff8fe76"
+    },
+    {
+      "path": "03_TESTS/test_commerce_system_v1_1.py",
+      "size": 9088,
+      "sha256": "d8c250a7eb7100a8da14273118237e952d11238c2948b055dc7fb7f42854b122"
+    },
+    {
+      "path": "03_TESTS/test_consequence_engine.py",
+      "size": 32394,
+      "sha256": "956f4148305757636c96a8d19a6101507e03ee5f3163809b83c199b904405669"
+    },
+    {
+      "path": "03_TESTS/test_country_living_bridge_v1_3.py",
+      "size": 10206,
+      "sha256": "e5b7f98416ef75c88b40bd18431eab2847ba70e2f04ad9db15499554e06b3cc0"
+    },
+    {
+      "path": "03_TESTS/test_country_scale_v1_2.py",
+      "size": 7283,
+      "sha256": "0f85357dc135c8985b210e59ba7cf55ec4675103f1f1563b7186131436fc25a8"
+    },
+    {
+      "path": "03_TESTS/test_domain_integration.py",
+      "size": 8472,
+      "sha256": "72d5f4c5a113a768819b1e25a6ca3afb264b50964291bbeba3762ff4ca3a3f9c"
+    },
+    {
+      "path": "03_TESTS/test_dungeon_room_position_v1_4.py",
+      "size": 1605,
+      "sha256": "0b5046e9818aa1743535d2ca1887ae3ae97ef83c1466e242324e76df903771f6"
+    },
+    {
+      "path": "03_TESTS/test_dynamic_spawn_v1_1.py",
+      "size": 3111,
+      "sha256": "ad64e2ade290d3631ef53de2731fc5481b360887005374f370548d3dd2e2d066"
+    },
+    {
+      "path": "03_TESTS/test_ecology_brain.py",
+      "size": 25689,
+      "sha256": "3b6a2b26be58663437971cdde2067846ff72b3d446797cf5389497d22ba6274a"
+    },
+    {
+      "path": "03_TESTS/test_economic_locality_v1_1.py",
+      "size": 3906,
+      "sha256": "9e4bdc99641b150674a20cc64c5ca7e958e70de3c7de9d65be169689aeb76753"
+    },
+    {
+      "path": "03_TESTS/test_faction_integration_v1_1.py",
+      "size": 3262,
+      "sha256": "ea2cc8e36009959dc02a5236b2cacbc49e4b71178c8d8f8d2ed574733de88806"
+    },
+    {
+      "path": "03_TESTS/test_godot_chunk_dungeon_v1_4.py",
+      "size": 2839,
+      "sha256": "8016c11ce1cab80e5e0d53acc11dcb83e2af0db88295b13ec2da119cc9d50a1f"
+    },
+    {
+      "path": "03_TESTS/test_integrated_engine_v1_1.py",
+      "size": 4064,
+      "sha256": "867703811deccbfd51c5788e6ea120ff8f3aac8c62fd88f42d7ae3294ba9f204"
+    },
+    {
+      "path": "03_TESTS/test_llm_gateway.py",
+      "size": 14892,
+      "sha256": "7a3ba1c7edc1a7cfa43848ef481d4c16c776dac83714ae5b382b6875d2a079a2"
+    },
+    {
+      "path": "03_TESTS/test_long_horizon.py",
+      "size": 14193,
+      "sha256": "0f335bfdec8accbc884e1972882fd69ccaa2809be3c37c9ac30b6c6cc568bd25"
+    },
+    {
+      "path": "03_TESTS/test_mobility_biology_v1_1.py",
+      "size": 9268,
+      "sha256": "a3fe4a88473970dfaa4f3491e1dd4f3fc3febf63f530ad7df38608e91aaf784e"
+    },
+    {
+      "path": "03_TESTS/test_object_environment.py",
+      "size": 20338,
+      "sha256": "16d42b0a8fc2902c41502283a2d8db562ae26e0e3c79142a9358a5f7932286a5"
+    },
+    {
+      "path": "03_TESTS/test_runtime_core.py",
+      "size": 31830,
+      "sha256": "9be0794460572ffd1d613b66f93118a44e40de69030dd1b5bec1e7306b94f925"
+    },
+    {
+      "path": "03_TESTS/test_scene_interaction_v1_2_1.py",
+      "size": 10633,
+      "sha256": "481361b0558c7a25eab4a8ff4cdb41ec583f0fb369fea49262ffd89cda0f977d"
+    },
+    {
+      "path": "03_TESTS/test_social_memory.py",
+      "size": 25465,
+      "sha256": "14f8886e1f90cb89f715b8a33c29db42b0d761438a04818d68e5a3e146aeec33"
+    },
+    {
+      "path": "03_TESTS/test_society_labor_v1_1.py",
+      "size": 12654,
+      "sha256": "01f6998aeb26afbf57fdd8bc8cb61c9f372ce9e7972b59fe896802e483debaf8"
+    },
+    {
+      "path": "03_TESTS/test_v14_long_use.py",
+      "size": 2462,
+      "sha256": "811be2d6d01a274c4d9c722ead15ffe70202660190702961e8b4d72d1d6df9fe"
+    },
+    {
+      "path": "03_TESTS/test_v14_process_resume.py",
+      "size": 2672,
+      "sha256": "a4af15e174a7186c91bbdd1c6cca961a88bde5716fb3a919126bba312a869f65"
+    },
+    {
+      "path": "03_TESTS/test_v14_simulation_anomalies.py",
+      "size": 4040,
+      "sha256": "41618fb7d639988cfb9337fd008b7f7d09ab9fdec0da43c8fed492d0c329ddfa"
+    },
+    {
+      "path": "03_TESTS/test_v14_version_metadata.py",
+      "size": 776,
+      "sha256": "2043b0ec3ff2a0c17ac802ee5c5fc38169c38a9e0a7c9ebe96405915aff4ef15"
+    },
+    {
+      "path": "03_TESTS/test_v15_core.py",
+      "size": 2418,
+      "sha256": "05ffef8601202ff308c0a3ebab513bebd216d5e23ee77a7e3394c59973503c72"
+    },
+    {
+      "path": "03_TESTS/test_v15_gameplay.py",
+      "size": 4734,
+      "sha256": "6b5ae8dfc4e8483456154e875342b26462f339e987f951c7821c16865a4fbb3f"
+    },
+    {
+      "path": "03_TESTS/test_v15_integration.py",
+      "size": 3217,
+      "sha256": "ab1f1ae284781dd83991afbc7e7f151fc02cae06604c7286d27d37bfed355243"
+    },
+    {
+      "path": "03_TESTS/test_v15_security_persistence.py",
+      "size": 4934,
+      "sha256": "9fac6d53f36e41712e445551a5218bfd0df3d6f905b08c677cd799efa3ed01b0"
+    },
+    {
+      "path": "03_TESTS/test_world_orchestrator.py",
+      "size": 17962,
+      "sha256": "1e991bdc28786a54c9923c7a5d70707351943fccf7888cc13e3e9632ee648271"
+    },
+    {
+      "path": "03_TESTS/test_world_systems.py",
+      "size": 13099,
+      "sha256": "59cbeeaa6a4c342ea9e06586aa51cf7c4eb5170467103833f5220adf7264c054"
+    },
+    {
+      "path": "04_REPORTS/ANIMAL_CREATURE_BRAIN_ECOLOGICAL_BEHAVIOR_REPORT_V1_0.json",
+      "size": 5313,
+      "sha256": "011b66247301f52d3373f834c49a2bb0b0f0707ef1c1dd9442aa30b81b6ce14d"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE00/ARPG_STAGE00_STRESS_V0_1_0.json",
+      "size": 414,
+      "sha256": "491feab30cecd4f1f292c22ac1861bad3cb889cbc72c69f982964c65f2d2eb29"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE00/ARPG_STAGE00_TEST_MATRIX_V0_1_0.json",
+      "size": 1452,
+      "sha256": "4424fa525eefdb3512dcd5b17139616e5f75f5796d0c72c4d339c0d6f4c0c21d"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE00/ARPG_STAGE00_VALIDATION_V0_1_0.json",
+      "size": 1127,
+      "sha256": "ded749c1d965ac9e5a5edb689ba82a5164e6df5898d4a0cf3bad64acf2bf88f1"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE00/HISTORICAL_V21_SUPERSESSION_NOTICE_V0_1_0.json",
+      "size": 538,
+      "sha256": "9095c072a6db423b1a089af6a7aab4381f53533db24f1870a0d7466317c8e49e"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE00/MASTER_REGRESSION_NO_WRITE_V2_0_1.json",
+      "size": 82182,
+      "sha256": "f0ee62663ccbd56ee67d182e84f18cb65a93417d4ac064c4c124c65cbe17e478"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE01/ARPG_STAGE01_COMPLETION_REPORT_V0_2_0.json",
+      "size": 1359,
+      "sha256": "2eeb20156211846fbda4f307a20b18171ee8f62185fe5d6c33bb3d5f86a575a2"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE01/ARPG_STAGE01_CORRECTION_LEDGER_V0_2_0.json",
+      "size": 2926,
+      "sha256": "fce741ddc4e5775cd907903be53bfdc7baf5e2c3e0614d11620a393dd4047948"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE01/ARPG_STAGE01_STRESS_V0_2_0.json",
+      "size": 257,
+      "sha256": "c1d571eaeac1619b3203777d96c024d3f7fb7b46489195e04d433959c917fe7f"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE01/ARPG_STAGE01_TEST_SUMMARY_V0_2_0.json",
+      "size": 1414,
+      "sha256": "37aedcbaa3cd4cb3356cfa2ce1f94ac7f1df7d04a3da69acfbae6694a1d13734"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE01/ARPG_STAGE01_UNIT_REPORT_V0_2_0.json",
+      "size": 195,
+      "sha256": "ed24ee4aba65ea432f9a1e618c6fd60cd69ce0e9a1bad092ee4bc5bdfe987ee9"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE01/ARPG_STAGE01_VALIDATION_V0_2_0.json",
+      "size": 793,
+      "sha256": "75865db3287889a17e75ec5d663653d8c34ddd9b80077b0e10bbbb0f0719f07e"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE01/MASTER_REGRESSION_STAGE01_V0_2_0.json",
+      "size": 220,
+      "sha256": "fb4fcab65eae7477f46f3bf2e4482c15ff81f1cd9c43ea8113ee2d726154e79b"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE02/ARPG_STAGE02_COMPLETION_REPORT_V0_3_0.json",
+      "size": 1308,
+      "sha256": "57f88970cc51de3887ad90c3a6567017802e6c4bab2efc2229a99ce3752bcfc2"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE02/ARPG_STAGE02_CORRECTION_LEDGER_V0_3_0.json",
+      "size": 1691,
+      "sha256": "bf3918af06fffaa0584c91887905a791f42178f8ae159f23b6caa8c69fe69b8c"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE02/ARPG_STAGE02_STRESS_V0_3_0.json",
+      "size": 242,
+      "sha256": "9031708dd4cc51caa479616658fcfaa3b2ccc998dfc596777ee634fb43d5a4eb"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE02/ARPG_STAGE02_TEST_SUMMARY_V0_3_0.json",
+      "size": 591,
+      "sha256": "725b9d3147f0ef6c6ea76599704419d163492fa19953fa01638a6f3b3878d163"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE02/ARPG_STAGE02_UNIT_REPORT_V0_3_0.json",
+      "size": 139,
+      "sha256": "e8b1673262fa90ade704f2a9cd61a03eb855819bc6da05b04f69542f5e283c64"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE02/ARPG_STAGE02_VALIDATION_V0_3_0.json",
+      "size": 298,
+      "sha256": "5b87c6ad674cdf3ea422a84c0b4c6767b8200d3ef0795344cc04535b9001629f"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE02/MASTER_REGRESSION_STAGE02_V0_3_0.json",
+      "size": 82161,
+      "sha256": "dcbdf92a95d23b5e500d515319c267e3aa265c2d5779a717336c15cf6dcf4f3e"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE03/ARPG_STAGE03_COMPLETION_REPORT_V0_4_0.json",
+      "size": 2430,
+      "sha256": "4d33f845f5237727c14f4a53e86274d96160ae21c67477236d79376eed68b74a"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE03/ARPG_STAGE03_CORRECTION_LEDGER_V0_4_0.json",
+      "size": 2252,
+      "sha256": "6250569b41e5b312dbb95d0657bf70a68105aec0f64fe31327d56b679641ab38"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE03/ARPG_STAGE03_STRESS_V0_4_0.json",
+      "size": 338,
+      "sha256": "f70983d0e632ecc5e213c1ed699eb401ad7a6292b1d308f53de3ce1dac30d15c"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE03/ARPG_STAGE03_TEST_SUMMARY_V0_4_0.json",
+      "size": 1142,
+      "sha256": "ae2a81316c225373abbf7caa32a09e03f65ea2a20b682364e06da38f71648485"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE03/ARPG_STAGE03_UNIT_REPORT_V0_4_0.json",
+      "size": 615,
+      "sha256": "9a157d778991ea4195881faf1d3ea426fbf893f1313f12c5cf0b25ac3736bd13"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE03/ARPG_STAGE03_V15_CRITICAL_REGRESSION_V0_4_0.json",
+      "size": 927,
+      "sha256": "afe47b10df3ffb13e9117ab94a62e76609c84010df59fccaaf2685ce5ea3d441"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE03/ARPG_STAGE03_VALIDATION_V0_4_0.json",
+      "size": 346,
+      "sha256": "b4fa8873b2d51ac204dcfe854d4b8a59b505490d60a3bfdfb6bdc54f5e6ae673"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE03/MASTER_REGRESSION_STAGE03_V0_4_0.json",
+      "size": 82161,
+      "sha256": "dcbdf92a95d23b5e500d515319c267e3aa265c2d5779a717336c15cf6dcf4f3e"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE05/ARPG_STAGE05_COMPLETION_REPORT_V0_6_0.json",
+      "size": 1785,
+      "sha256": "ad2a1a234f44009055c02f7ab5a7643fab19af2de4927ac114f57146764a2622"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE05/ARPG_STAGE05_CORRECTION_LEDGER_V0_6_0.json",
+      "size": 2469,
+      "sha256": "50bd508bc3675d3afa1674f4c54dcf95f590ce4fa4159f1c7f5b6266eb5a5b30"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE05/ARPG_STAGE05_TEST_SUMMARY_V0_6_0.json",
+      "size": 1672,
+      "sha256": "2344a938d3ae5bdc9927400801bf6a2d285fec33996a9763d1052f6ad04a379e"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE05/ARPG_STAGE05_UNIT_REPORT_V0_6_0.json",
+      "size": 243,
+      "sha256": "e17cd3837bd342299b11c7a02ee11aec106836125e9fc6582092375974cd881e"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE05/ARPG_STAGE05_V15_CRITICAL_REGRESSION_V0_6_0.json",
+      "size": 880,
+      "sha256": "b8dbc1c477f268a312ab55c23192b56a8ab99312c64c5cdb2521cf7bb8a02f7d"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE05/MASTER_REGRESSION_STAGE05_V0_6_0.json",
+      "size": 281,
+      "sha256": "ff2e9300f0c52c1d4fd138bda0fd8aa7d30e127041edda977bebf502f4353b71"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE06/ARPG_STAGE06_COMPLETION_REPORT_V0_7_0.json",
+      "size": 1913,
+      "sha256": "a119f9c9af99ac20738a4b3bfacb7fa158ef65d0b8d0455d71d09eb6d190c631"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE06/ARPG_STAGE06_CORRECTION_LEDGER_V0_7_0.json",
+      "size": 1796,
+      "sha256": "47ec7d9f3b0883400f23639958cdcfa3d9df24182a7368194f920811e5c6fd68"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE06/ARPG_STAGE06_COUNTRY_V15_REGRESSION_V0_7_0.json",
+      "size": 770,
+      "sha256": "0e19d930a15aa7c07848f70ca03622fd94b47cc0a74025d63941e2bc899e89a6"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE06/ARPG_STAGE06_MASTER_REGRESSION_V0_7_0.json",
+      "size": 267,
+      "sha256": "5b042745e65dc470c8d63a13249bc44e3cf413c82c8b65223806aee41249f80a"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE06/ARPG_STAGE06_TEST_SUMMARY_V0_7_0.json",
+      "size": 3072,
+      "sha256": "f76976ee9d7714a8d67c953aae9f4e2fb3dab12e8406c1c94dd17da5dcc2fcab"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE07/ARPG_STAGE07_COMPLETION_REPORT_V0_8_0.json",
+      "size": 3055,
+      "sha256": "879ca5ccc69cfe19c5ad9286d9bec9864babdfba0bb918bbbe43a34256217da2"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE07/ARPG_STAGE07_CORRECTION_LEDGER_V0_8_0.json",
+      "size": 1377,
+      "sha256": "3d9490fa071576076745b09f61b1cce7dcda4fee8de6e22b943547ed9bfe0438"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE07/ARPG_STAGE07_COUNTRY_V15_REGRESSION_V0_8_0.json",
+      "size": 804,
+      "sha256": "af529bb8f7e93815e35a15bd7a2ea3c20117e16d4165dcc7bd0e389681437ed6"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE07/ARPG_STAGE07_MASTER_REGRESSION_V0_8_0.json",
+      "size": 272,
+      "sha256": "1f1f21a3931fec304c201350e259cd78a2ec9018643ae2c2be9c1600b6186798"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE07/ARPG_STAGE07_TEST_SUMMARY_V0_8_0.json",
+      "size": 3473,
+      "sha256": "9250b9a3b7a2ac69064917559d62e1d146608b3d61b648a27a77b7cbdd05449a"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE08/ARPG_STAGE08_CANDIDATE_RESTORE_REPORT_V0_9_0.json",
+      "size": 1319,
+      "sha256": "854a4582eefe173d0aa3ce418cb4607809db780e67db27e01c81f3122929ec4c"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE08/ARPG_STAGE08_CORRECTION_LEDGER_V0_9_0.json",
+      "size": 1962,
+      "sha256": "9835ce7d9012a012216993cd1a9e7bfc4425b0fc4cccb810759272c606db6288"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE08/ARPG_STAGE08_REGRESSION_SUMMARY_V0_9_0.json",
+      "size": 1588,
+      "sha256": "89c11cd0bfa9b401c45a86a33ef2d0120e5e7187e9a06882a4973435656d39fa"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE08/ARPG_STAGE08_STRESS_V0_9_0.json",
+      "size": 2865,
+      "sha256": "e1262be03209b8377db9dd11bc5dac9e37bc11318c5153f742c5fbb2468e20b8"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE08/ARPG_STAGE08_TEST_SUMMARY_V0_9_0.json",
+      "size": 3149,
+      "sha256": "769ae5765fd859787da9539c4c2feb0bf4aae3c9ba2b594af7d9b93552fff4cf"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE08/ARPG_STAGE08_UNIT_REPORT_V0_9_0.json",
+      "size": 442,
+      "sha256": "e31809adf55839b6e5ef9edd2a748edc6087d114715fc8d528eb21eac1156892"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE08/ARPG_STAGE08_VALIDATION_V0_9_0.json",
+      "size": 8294,
+      "sha256": "143f4a406da9a140ed502146a55656789be145ca40f084dd8a8355ebe0b76b37"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE09/ARPG_STAGE09_CANDIDATE_RESTORE_REPORT_V1_0_0.json",
+      "size": 803,
+      "sha256": "27ebcb6f153ef11a9b35eec359c221815d49f56b5aa451d48e44a970222abb94"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE09/ARPG_STAGE09_COMPLETION_REPORT_V1_0_0.json",
+      "size": 2138,
+      "sha256": "0393b329208d8f6804e12d6a8322e2c53a8ea19cf5d44813fd8198b86ed208c7"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE09/ARPG_STAGE09_CORRECTION_LEDGER_V1_0_0.json",
+      "size": 2046,
+      "sha256": "d59a7ef695ded0594d90c06c557e5424788d20275c24231219e825ccd31a0f35"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE09/ARPG_STAGE09_STRESS_V1_0_0.json",
+      "size": 36034,
+      "sha256": "67e6f23aa96f82a91cbf506a0d1e07fab722e9e000b2673c7ca0bb8c3f450fdc"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE09/ARPG_STAGE09_TEST_SUMMARY_V1_0_0.json",
+      "size": 1350,
+      "sha256": "2ab4b3d9c41b52c57cf869e847c44a05416eebed2ba55d169b2839ff9d8d7339"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE09/ARPG_STAGE09_VALIDATION_V1_0_0.json",
+      "size": 14368,
+      "sha256": "84ad426926d7297b0cc7e461445a84be69c00faa1f3b06897467ac2941285406"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE10/ARPG_STAGE10_CANDIDATE_RESTORE_REPORT_V1_1_0.json",
+      "size": 768,
+      "sha256": "649c0f6690f36465b3e9c27947eaef9b633b8905a1a31878fe4e99d02768f07b"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE10/ARPG_STAGE10_COMPLETION_REPORT_V1_1_0.json",
+      "size": 1819,
+      "sha256": "fdb482635a7b080d215d789e9992e3b69f148c9a66d0c55b9f2e0cf01479151b"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE10/ARPG_STAGE10_COUNTRY_V15_REGRESSION_V1_1_0.json",
+      "size": 278,
+      "sha256": "80a7f81a9291e5073084b5e4cae5dea58390de97a8cc7379ed9d3e6191d4c2fe"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE10/ARPG_STAGE10_MASTER_REGRESSION_V1_1_0.json",
+      "size": 303,
+      "sha256": "b8f0dd576584d379edc405ace8450f261b5fc4d8a43c282c1c5932303b719fae"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE10/ARPG_STAGE10_STRESS_V1_1_0.json",
+      "size": 7484,
+      "sha256": "d77a3dff876b834093ceaf63e23210006738565499d2d132446939fe475d8e16"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE10/ARPG_STAGE10_TEST_SUMMARY_V1_1_0.json",
+      "size": 1393,
+      "sha256": "4b2c249676f2ad40f3e583f942d8363588fe770ef1f3b395993bd5bc2c99e0a0"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE10/ARPG_STAGE10_UNIT_REPORT_V1_1_0.json",
+      "size": 361,
+      "sha256": "148b0ff12ff63e01b238620a58bcde19b341e800418882680dc48bb4c7f5bd3d"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE10/ARPG_STAGE10_VALIDATION_V1_1_0.json",
+      "size": 4749,
+      "sha256": "7ce4f34735c7acf79ef5c6a41d44fb5bee1594bab913b906c31f94bb333f963f"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE11/ARPG_STAGE11_CANDIDATE_RESTORE_REPORT_V1_2_0.json",
+      "size": 659,
+      "sha256": "917d983e0a2135bd01b9a3de5432068f41a33a836ff503d50797db98de572d82"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE11/ARPG_STAGE11_COMPLETION_REPORT_V1_2_0.json",
+      "size": 2202,
+      "sha256": "a35dfb0bb60fa31212b12773ac5bbc312fc2f8149c665e8290ed7fbf051ba65f"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE11/ARPG_STAGE11_CORRECTION_LEDGER_V1_2_0.json",
+      "size": 930,
+      "sha256": "824cec191810a5da1eecdc5bd3cd5fd26884e092c5b7f7cbe0507afb8af9f5a6"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE11/ARPG_STAGE11_TEST_SUMMARY_V1_2_0.json",
+      "size": 1347,
+      "sha256": "54c21135760630d0eec524a8aa6893ce7cbfc825bf71a3bdafc98b5e211f5225"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE12/ARPG_STAGE12_CANDIDATE_RESTORE_REPORT_V1_3_0.json",
+      "size": 511,
+      "sha256": "31830606a7e2d9e6a5f178b3e67ed3077d99d3f1d592321853c09af018acd608"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE12/ARPG_STAGE12_COMPLETION_REPORT_V1_3_0.json",
+      "size": 1736,
+      "sha256": "4d7966dad2fc5aedc98b77951b5eb212ef1e55a72243d24efe95d7712bab9e33"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE12/ARPG_STAGE12_CORRECTION_LEDGER_V1_3_0.json",
+      "size": 395,
+      "sha256": "ab3a1f2968a17eb2bdf537d37a458d121998bca858e4a55bd5accd7188a7d54a"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE12/ARPG_STAGE12_MASTER_REGRESSION_V1_3_0.json",
+      "size": 243,
+      "sha256": "e248c02532f808cb0bd7b2d0bd1fec263a58fe61bcf301333ea9538fe79ec2e5"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE12/ARPG_STAGE12_STRESS_V1_3_0.json",
+      "size": 2882,
+      "sha256": "c4b051720ae30d202e5ea538ab51023497f5795a724c234de83c3822b3b467e0"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE12/ARPG_STAGE12_TEST_SUMMARY_V1_3_0.json",
+      "size": 999,
+      "sha256": "7c94242930a6f40251e2d16dd5281c1c3c51d5e8cdce4f1466c39013008652ca"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE12/ARPG_STAGE12_UNIT_REPORT_V1_3_0.json",
+      "size": 292,
+      "sha256": "5e1cc62843e1ed8d8ebda8e8ccdf321f2b45861c8e5e4045e33d3e007fa2c537"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE12/ARPG_STAGE12_VALIDATION_V1_3_0.json",
+      "size": 4643,
+      "sha256": "aebca33c8d7ca538f8895aeb68133c04c4761260ef26dc157b245b7bd4da4386"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE13/ARPG_STAGE13_STRESS_V1_4_0.json",
+      "size": 213,
+      "sha256": "53d8a52b08fc61eab0eaa2aecb907980ffda25104cb939b314f3321802233639"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE13/ARPG_STAGE13_VALIDATION_V1_4_0.json",
+      "size": 136,
+      "sha256": "38892dd5f2bfc93badc459c3675b55bed6e255a411ac996d5e7bff6a49cff5c2"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE14/ARPG_STAGE14_CANDIDATE_RESTORE_EVIDENCE_V1_5_0.json",
+      "size": 649,
+      "sha256": "a244ae6d8f18f61157b2b9a7a3f2422b2d8e02c73ef84e7c186fd1a77e643408"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE14/ARPG_STAGE14_COMPLETION_REPORT_V1_5_0.json",
+      "size": 786,
+      "sha256": "c8d84d6f913cc2030b3021780f6729654bb65d461d03841f743cded4b6fe4e2c"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE14/ARPG_STAGE14_STRESS_V1_5_0.json",
+      "size": 180,
+      "sha256": "050da9352cf9a8b8c8866ef29312fe4bfa97c7da4f5da6bb74d67a455e02ede9"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE14/ARPG_STAGE14_TEST_SUMMARY_V1_5_0.json",
+      "size": 1622,
+      "sha256": "57a84f4e91ffa64f587ecaee1fc68e19a5bac89ec637384854fdeb26f8cc3af3"
+    },
+    {
+      "path": "04_REPORTS/ARPG_STAGE14/ARPG_STAGE14_VALIDATION_V1_5_0.json",
+      "size": 147,
+      "sha256": "2e287a9a89d5ef7bc1efc6838e58786e2f3770bc9b7c31fee669c84b72286ff9"
+    },
+    {
+      "path": "04_REPORTS/ATLAS_CODEX_LIVING_RUNTIME_INTEGRATION_REPORT_V1_0.json",
+      "size": 1767,
+      "sha256": "c18e02d3669905dd67d2a96283a07d462fc786cbdbca16243dc573c472f43b4b"
+    },
+    {
+      "path": "04_REPORTS/CONTROLLED_GENERATIVE_AI_LLM_GATEWAY_CANON_GUARD_REPORT_V1_0.json",
+      "size": 2012,
+      "sha256": "a1ec9d0d56d9e27dbbdd062c89a0ac707f752ded874c2d84636a6f4db0408308"
+    },
+    {
+      "path": "04_REPORTS/CORRECTION_LEDGER_V1_0.json",
+      "size": 2505,
+      "sha256": "565b94dca2c488533a8c82fa790164e1e782555c9883e50322e6bea00f6d8f47"
+    },
+    {
+      "path": "04_REPORTS/COVERAGE_V1_0.json",
+      "size": 684,
+      "sha256": "63fbebea667ba7d5c005a7d8b587ee21bc4b037e7b73db1bf1959a6b4af1db23"
+    },
+    {
+      "path": "04_REPORTS/EXTENDED_VALIDATION_V1_0.json",
+      "size": 725,
+      "sha256": "b1f08b7493ab1036bb05fbebe07d0883a185455415ed78c67c845e47c38fa43f"
+    },
+    {
+      "path": "04_REPORTS/FUZZ_STRESS_V1_0.json",
+      "size": 1107,
+      "sha256": "5ad37a2006cd9153f53768ccff0acb1cfaef260f3618a2dfd9bc78e41c52eb5a"
+    },
+    {
+      "path": "04_REPORTS/LONG_HORIZON_OFFLINE_RECONCILIATION_REPORT_V1_0.json",
+      "size": 4471,
+      "sha256": "b8797b41ef73ad09f099f611736d5042f3c212acafa99a1f75ffdf4a644f57a4"
+    },
+    {
+      "path": "04_REPORTS/OBJECT_ENVIRONMENT_REACTIVE_SYSTEM_REPORT_V1_0.json",
+      "size": 5309,
+      "sha256": "a6375cf2f3bad691538e79676abc824c2cdf1d82078c8a72c3cda7f40f2566eb"
+    },
+    {
+      "path": "04_REPORTS/REGRESSION_EVIDENCE_V1_0.json",
+      "size": 2234,
+      "sha256": "54495536185290976721bfe64f946f51be9e5579afa889df15228b9d81173bdc"
+    },
+    {
+      "path": "04_REPORTS/SOCIAL_FUZZ_STRESS_V1_0.json",
+      "size": 828,
+      "sha256": "c6ee0c6be6b24a995ecac4afdc2e4e4a1129aca59fd8c9a77dfae7c3963e15f4"
+    },
+    {
+      "path": "04_REPORTS/STAGE06_EXTENDED_REGRESSION_V1_0.json",
+      "size": 92079,
+      "sha256": "cf0bef6e372f15bc0a51d65bf7e25b86d04ab7ea702fcab861ec466c88b8d521"
+    },
+    {
+      "path": "04_REPORTS/STAGE06_SOCIAL_FUZZ_REGRESSION_V1_0.json",
+      "size": 828,
+      "sha256": "c6ee0c6be6b24a995ecac4afdc2e4e4a1129aca59fd8c9a77dfae7c3963e15f4"
+    },
+    {
+      "path": "04_REPORTS/STAGE07_EXTENDED_REGRESSION_V1_0.json",
+      "size": 906,
+      "sha256": "fc3607c858f0e658f5de6a773bc26d893c894fee379eaf44b1f68a22c271c6a9"
+    },
+    {
+      "path": "04_REPORTS/STAGE07_FUZZ_STRESS_REGRESSION_V1_0.json",
+      "size": 1169,
+      "sha256": "368ecbbcd8ca31ecd24a446ba3accffb7766e06ad8b4f2b19c75524feb604486"
+    },
+    {
+      "path": "04_REPORTS/STAGE09_COVERAGE_V1_0.json",
+      "size": 226,
+      "sha256": "05763b9cdb9e3e8e81ef7de527f012ab4300a7e98dbdccdc51c569f39cd8e919"
+    },
+    {
+      "path": "04_REPORTS/STAGE09_EXTENDED_VALIDATION_V1_0.json",
+      "size": 744,
+      "sha256": "932b89afc4ba9b4966c98b8cdf99038e9b1b7ee776bd923da199b27fb42f3beb"
+    },
+    {
+      "path": "04_REPORTS/STAGE09_FUZZ_STRESS_V1_0.json",
+      "size": 483,
+      "sha256": "aca6b9562de050a13a2de9626fec9af9db3b354f4921cbea413291b64615e243"
+    },
+    {
+      "path": "04_REPORTS/STAGE09_STATIC_AUDIT_V1_0.json",
+      "size": 131,
+      "sha256": "c7719d1db427888a4a896b5bd0966e83c4f863938e158d899ae66a2c1264033b"
+    },
+    {
+      "path": "04_REPORTS/STAGE09_UNIT_TEST_REPORT_V1_0.json",
+      "size": 234,
+      "sha256": "d45e1f330806d3a939a0230bf43ae29e9e7053e0a27203b6543376c5865684f2"
+    },
+    {
+      "path": "04_REPORTS/STAGE10_COVERAGE_V1_0.json",
+      "size": 213,
+      "sha256": "a07b481acfe07e884678ce2899e807d5f565d91d8df06cd5ebf15e1b5b1623a3"
+    },
+    {
+      "path": "04_REPORTS/STAGE10_EXTENDED_VALIDATION_V1_0.json",
+      "size": 486,
+      "sha256": "f5a07f6e0664ddfd18e9c3d724242a4516bc66af668aaa363e3ee5e7a2d04b68"
+    },
+    {
+      "path": "04_REPORTS/STAGE10_FUZZ_STRESS_V1_0.json",
+      "size": 669,
+      "sha256": "57e5ac75895239d9cd50b2be1e0243842a28df0656c1e764a120723eb83a2032"
+    },
+    {
+      "path": "04_REPORTS/STAGE10_STATIC_AUDIT_V1_0.json",
+      "size": 131,
+      "sha256": "977061e440219bc70c78a0da177e8c07a74f2d02fc6da086a4a48c11a9a08ae6"
+    },
+    {
+      "path": "04_REPORTS/STAGE10_UNIT_TEST_REPORT_V1_0.json",
+      "size": 415,
+      "sha256": "379bb46e9066377dcf43be618f2643cd0c10e6004bdd827adb374010e73922b5"
+    },
+    {
+      "path": "04_REPORTS/STAGE11_COVERAGE_V1_0.json",
+      "size": 204,
+      "sha256": "4b8ac6dd87e9c49194220edf258200eec1a5b90e15595d028016e22e0fca38a1"
+    },
+    {
+      "path": "04_REPORTS/STAGE11_EXTENDED_VALIDATION_V1_0.json",
+      "size": 161,
+      "sha256": "7f6ebe45565a6edc8e9f2f50aee9c19aea5467bfcdae448a63dbc70b8d9b3dba"
+    },
+    {
+      "path": "04_REPORTS/STAGE11_FUZZ_STRESS_V1_0.json",
+      "size": 1442,
+      "sha256": "167473091ca3856d34ceb98647085bda2807d37fa58694aa2fc6fc483e43c160"
+    },
+    {
+      "path": "04_REPORTS/STAGE11_STATIC_AUDIT_V1_0.json",
+      "size": 131,
+      "sha256": "75ad390ac2733eba1522719b56820dc7ce1b45ea5ceabdb22100bcd51762a209"
+    },
+    {
+      "path": "04_REPORTS/STAGE11_UNIT_REGRESSION_V1_0.json",
+      "size": 1167,
+      "sha256": "f51a29c22d4dae2e09b67732cca7054d3b471f22441ea076a2a7080faf7634fd"
+    },
+    {
+      "path": "04_REPORTS/STAGE12_COVERAGE_V1_0.json",
+      "size": 203,
+      "sha256": "e294ddd59149ae73f10a9373b0ade56ea25674230109a7c2e0c830003601e458"
+    },
+    {
+      "path": "04_REPORTS/STAGE12_EXTENDED_VALIDATION_V1_0.json",
+      "size": 238,
+      "sha256": "5f506908e346c47fc24b2118d11c3071ac3e7fc25f8585172f6b830881061f3b"
+    },
+    {
+      "path": "04_REPORTS/STAGE12_FUZZ_STRESS_V1_0.json",
+      "size": 486,
+      "sha256": "eef86beacf7b17a116b3eb827f447a6e48d54ca7b0a23c9804f703d46ac77295"
+    },
+    {
+      "path": "04_REPORTS/STAGE12_STATIC_AUDIT_V1_0.json",
+      "size": 131,
+      "sha256": "588f328228ee64a68062f53680c796ecba86d081bbd0be38b54a3e2626b0d053"
+    },
+    {
+      "path": "04_REPORTS/STAGE12_UNIT_REGRESSION_V1_0.json",
+      "size": 1630,
+      "sha256": "c604bfd307bdea82c34f55f9fd71e66de171fa8c88fa9e028134fc2997f2643e"
+    },
+    {
+      "path": "04_REPORTS/STAGE13_COVERAGE_V1_0.json",
+      "size": 347,
+      "sha256": "4150d188985573c24e5a817e08c05232e74547ceb5d37faa95a11baaed9ef105"
+    },
+    {
+      "path": "04_REPORTS/STAGE13_EXTENDED_VALIDATION_V1_0.json",
+      "size": 190,
+      "sha256": "43e712dd28c374666c9ffc1dcf0a3e9925cc59cdab944b0137bc5f40afa372c0"
+    },
+    {
+      "path": "04_REPORTS/STAGE13_FUZZ_STRESS_V1_0.json",
+      "size": 418,
+      "sha256": "2391bb558163475dde0c6f8ad314a98d991c99e8cec9119a6bd1c73bdd9f0855"
+    },
+    {
+      "path": "04_REPORTS/STAGE13_REGRESSION_EVIDENCE_V1_0.json",
+      "size": 3992,
+      "sha256": "202ac9900b94b76b17d2001a0538000f36c27cf82f908ae3ac25231cebabe73d"
+    },
+    {
+      "path": "04_REPORTS/STAGE13_UNIT_VALIDATION_V1_0.json",
+      "size": 201,
+      "sha256": "ce8104466079de678aae75abe426e8d27652e38d9f24d4ad22f331afcd7e1b44"
+    },
+    {
+      "path": "04_REPORTS/STAGE14/STAGE14_CORRECTION_LEDGER_V1_0.json",
+      "size": 768,
+      "sha256": "7778a68a6634e1bf4d406ccd08a4b61de6e4adf3380b1f201bd88e28a3d259b5"
+    },
+    {
+      "path": "04_REPORTS/STAGE14/STAGE14_CORRUPTION_MATRIX_V1_0.json",
+      "size": 1154,
+      "sha256": "3ba493a12615e0486b529237cb81e3e7423fd361616c763b5f29f75314c60d90"
+    },
+    {
+      "path": "04_REPORTS/STAGE14/STAGE14_FINAL_INTEGRATION_REPORT_V1_0.json",
+      "size": 2829,
+      "sha256": "d1aa7ae76a096b4ce97522dbb2400166ff3f8238584d8609264300c65dad40db"
+    },
+    {
+      "path": "04_REPORTS/STAGE14/STAGE14_GLOBAL_INTEGRATION_V1_0.json",
+      "size": 605,
+      "sha256": "ac3120d025fe617ae9c7d90ab437764e8c6c1351506ca430a627f377fa3de802"
+    },
+    {
+      "path": "04_REPORTS/STAGE14/STAGE14_MULTIWORLD_SOAK_V1_0.json",
+      "size": 316,
+      "sha256": "18b7ee62d9afefeb42dc7197a7350075cc630264215c58ec2ef9f785a4f8a809"
+    },
+    {
+      "path": "04_REPORTS/STAGE14/STAGE14_REGRESSION_EVIDENCE_V1_0.json",
+      "size": 1188,
+      "sha256": "1ff5c19f5f00a9f88a8e28e3d511833d31f2e90f94c0b55b445f07e13ab3b244"
+    },
+    {
+      "path": "04_REPORTS/STAGE14/STAGE14_RELEASE_READINESS_AUDIT_V1_0.json",
+      "size": 1011,
+      "sha256": "8bb64ad8debc9d6a1e6e9699f0bbfc932a355b0cfda9857266058b045b5944c7"
+    },
+    {
+      "path": "04_REPORTS/STATIC_AUDIT_V1_0.json",
+      "size": 143,
+      "sha256": "0155ae957e8e9da7f60594d8c551ea441d85a80f74da052fea7fa89b8d7d6214"
+    },
+    {
+      "path": "04_REPORTS/SYSTEMIC_ECONOMY_FACTIONS_POPULATION_REPORT_V1_0.json",
+      "size": 2390,
+      "sha256": "b2d5cdcea402b532df3de16dc35b29508225439c01abb59e3bea362db2b94b7c"
+    },
+    {
+      "path": "04_REPORTS/SYSTEMIC_INTEGRATION_WORLD_ORCHESTRATION_REPORT_V1_0.json",
+      "size": 4258,
+      "sha256": "df50e152b9d0c45829c295aba624c2801fee755bafda94abedd83e41a0e52a61"
+    },
+    {
+      "path": "04_REPORTS/UNIT_TEST_REPORT_V1_0.json",
+      "size": 244,
+      "sha256": "bb6a4a7a7a3dd972f650966711afeb7315856ccaa7748c9b733eb43767583fbf"
+    },
+    {
+      "path": "04_REPORTS/UPSTREAM_MODULE_HASH_COMPARISON_V1_0.json",
+      "size": 1592,
+      "sha256": "be91b723719ebe2bcca90c571d532028d4629289f3af136db3e0650428f6145c"
+    },
+    {
+      "path": "04_REPORTS/V1_1_0/BASELINE_AUDIT_FINDINGS.json",
+      "size": 16507,
+      "sha256": "26b8149c63c34151cd7692e9f0e7d4998b88812f7b2340b8267c156eb8928067"
+    },
+    {
+      "path": "04_REPORTS/V1_1_0/BASELINE_AUDIT_REPORT.md",
+      "size": 6065,
+      "sha256": "b232fcc9c3c21d40ff04e57fb495559e225462f880ba8868f817b556fa078344"
+    },
+    {
+      "path": "04_REPORTS/V1_1_0/BASELINE_DYNAMIC_AUDIT_EVIDENCE.json",
+      "size": 2683,
+      "sha256": "6c0437140bc973273fb5cfbfc2678c4e7856954c63059595b208c7b76cdc8847"
+    },
+    {
+      "path": "04_REPORTS/V1_1_0/BASELINE_DYNAMIC_ECONOMIC_LOCALITY_EVIDENCE.json",
+      "size": 1091,
+      "sha256": "1687de2d5e74539df675342f8b9c03e114eba41f23c922195347527fccea3989"
+    },
+    {
+      "path": "04_REPORTS/V1_1_0/CHECKPOINT_CYCLE_01_INTEGRATION_FOUNDATION_V1_1_0_DEV.json",
+      "size": 2067,
+      "sha256": "d6d4efd7452c8b6f3dd8400ef91f8c370ae40a654e85d24dc8a7a32bc9fb1f8b"
+    },
+    {
+      "path": "04_REPORTS/V1_1_0/CHECKPOINT_CYCLE_02_ECONOMY_COMMERCE_V1_1_0_DEV.json",
+      "size": 2597,
+      "sha256": "0cd4f2d0be7534efacc93445264f4578c26a6b87542c52a6cb81301acc8d47a1"
+    },
+    {
+      "path": "04_REPORTS/V1_1_0/CHECKPOINT_CYCLE_03_COMBAT_RESOURCES_V1_1_0_DEV.json",
+      "size": 2187,
+      "sha256": "603e20ae988b2615c8ead85a93cd6396816e4452ac12f63ad1f04b45b3a5dfcb"
+    },
+    {
+      "path": "04_REPORTS/V1_1_0/CHECKPOINT_CYCLE_04_MOVEMENT_BIOLOGY_V1_1_0_DEV.json",
+      "size": 2150,
+      "sha256": "348b6a30273a726bef47931a9dcce3d896515f2e19072ca930a063a9bfcbba4a"
+    },
+    {
+      "path": "04_REPORTS/V1_1_0/CHECKPOINT_CYCLE_05_SOCIETY_LABOR_V1_1_0_DEV.json",
+      "size": 3230,
+      "sha256": "d5aecbfcc4730805876c8d33894a8f092c2aa6f3959f3df94b76206f10c9e7fb"
+    },
+    {
+      "path": "04_REPORTS/V1_1_0/CYCLE_01_CHANGE_REPORT.md",
+      "size": 1301,
+      "sha256": "e4d8ccd53f7a3384bd65205f180632a1aa73f894f62073cd3a36af5a2703e5e8"
+    },
+    {
+      "path": "04_REPORTS/V1_1_0/CYCLE_02_CHANGE_REPORT.md",
+      "size": 1316,
+      "sha256": "778722a5ae1691e3c72568c858dab7050e062d653938c3f005e0f701b796bfbc"
+    },
+    {
+      "path": "04_REPORTS/V1_1_0/CYCLE_03_CHANGE_REPORT.md",
+      "size": 919,
+      "sha256": "22ded317d072ba1583eb856490b7d425ee9d7392dddf1df4884b9db0f4eea85f"
+    },
+    {
+      "path": "04_REPORTS/V1_1_0/CYCLE_04_CHANGE_REPORT.md",
+      "size": 2351,
+      "sha256": "cc868aadc92e68b98c349fdc42a3278774cb5143c067421ce929dd8a33bb6097"
+    },
+    {
+      "path": "04_REPORTS/V1_1_0/CYCLE_05_CHANGE_REPORT.md",
+      "size": 1523,
+      "sha256": "412c24c4cadefe4a8c3243943035aa8ad6e88b74191cf15f12ea2f5b84bbb2b1"
+    },
+    {
+      "path": "04_REPORTS/V1_2_0/BUG_CORRECTION_LEDGER_V1_2.json",
+      "size": 2323,
+      "sha256": "c15dc4230f1f15661f41d86082278b3aa1585b5639923866661da5c19bfee8e9"
+    },
+    {
+      "path": "04_REPORTS/V1_2_0/COUNTRY_SCALE_DEEP_AUDIT_V1_2.json",
+      "size": 406,
+      "sha256": "6b08d20eb0a87b7415e464bf1a8717458dbfed45d0b551b4e0e5235d1d4c26d8"
+    },
+    {
+      "path": "04_REPORTS/V1_2_0/COUNTRY_SCALE_SIMULATION_V1_2.json",
+      "size": 77493,
+      "sha256": "7b289f1804656c408a3b718979cb506f70c20fca2fcee39896496e524015fe4d"
+    },
+    {
+      "path": "04_REPORTS/V1_2_0/COUNTRY_SCALE_STRESS_V1_2.json",
+      "size": 388,
+      "sha256": "1e73383549e24dde7ad83cdd4bb4e18381e1b98211879fc59ad81b2e55498b8e"
+    },
+    {
+      "path": "04_REPORTS/V1_2_0/COUNTRY_SCENE_STRESS_V1_2_1.json",
+      "size": 370,
+      "sha256": "48d8bbc7dddc2afd243f95a53c5d5bc2f7fc662c5b7348e325156b42a0a240b6"
+    },
+    {
+      "path": "04_REPORTS/V1_2_0/INTERACTION_STRESS_V1_2_1.json",
+      "size": 121,
+      "sha256": "1a2902ff94bd5a80532b6d337e6acadd1131c166c0164ce307a69d63442cf274"
+    },
+    {
+      "path": "04_REPORTS/V1_2_1/AUDIT_EVIDENCE_RECONCILIATION_V1_2_1.json",
+      "size": 821,
+      "sha256": "3513707f893ea9d56a88e25af1603a574a9b6ee53a1ee98764f2f94c603b8fab"
+    },
+    {
+      "path": "04_REPORTS/V1_2_1/BUG_CORRECTION_LEDGER_V1_2_1.json",
+      "size": 3909,
+      "sha256": "551807f0ba7f9597cb4f7147ff699e72c589b47d413451c3edd0a64dd9cf09aa"
+    },
+    {
+      "path": "04_REPORTS/V1_2_1/CONVERGENCE_REPORT_V1_2_1.md",
+      "size": 2794,
+      "sha256": "48619b6f605f043be8e408fd63af727a624c616e2d27286b4f96b0e5dd610078"
+    },
+    {
+      "path": "04_REPORTS/V1_2_1/COUNTRY_SCENE_DEEP_AUDIT_V1_2_1.json",
+      "size": 567,
+      "sha256": "ec7a9f5d11efd034e59d13ad06e31452e7ec47885baf12e4d7df4b42b183b3a0"
+    },
+    {
+      "path": "04_REPORTS/V1_2_1/COUNTRY_SCENE_FINAL_STRESS_V1_2_1.json",
+      "size": 441,
+      "sha256": "6b855d98497546a58d66cf1373f4b941b9bf58345f0fbfb9c25640acb9d548a3"
+    },
+    {
+      "path": "04_REPORTS/V1_2_1/COUNTRY_SCENE_INTERACTION_STRESS_V1_2_1.json",
+      "size": 593,
+      "sha256": "2c94e0e24c54b0cc65e8a390f1c916121a01ccce0be4b46eef90fe99f0959741"
+    },
+    {
+      "path": "04_REPORTS/V1_2_1/ISOLATED_REGRESSION_V1_2_1.json",
+      "size": 3416,
+      "sha256": "aff1df878cadd5852081162dbf8f55fbc4777234fdf3acdf4f3c4194b8c39664"
+    },
+    {
+      "path": "04_REPORTS/V1_2_1/STAGE13_STATIC_AUDIT_V1_2_1.json",
+      "size": 4653,
+      "sha256": "7376122b2bd0ddefa40b06d68c91a31cc0dd0cee8807084aed97f87dc26299f8"
+    },
+    {
+      "path": "04_REPORTS/V1_2_1/VALIDATION_SUMMARY_V1_2_1.json",
+      "size": 1519,
+      "sha256": "179831414061fa7b95415d8f22b521bb75122a8379cbdc19073be174d0bb2d8e"
+    },
+    {
+      "path": "04_REPORTS/V1_3_0/BUG_CORRECTION_LEDGER_V1_3_0.json",
+      "size": 6430,
+      "sha256": "629da9f8eab6e024057388d4a5beb455ebc65e43de8f0245aeb064c7f0caf2e9"
+    },
+    {
+      "path": "04_REPORTS/V1_3_0/COMBAT_DETERMINISM_REPEAT_V1_3_0.json",
+      "size": 660,
+      "sha256": "3f9c53c0637033dc46a6628510432427db6501258ea0b448e65d396bece09b28"
+    },
+    {
+      "path": "04_REPORTS/V1_3_0/CONVERGENCE_REPORT_V1_3_0.md",
+      "size": 1574,
+      "sha256": "57ab8d293c8c66013ab76074174422c4b387641e50792b51295a5e33cd0f9da3"
+    },
+    {
+      "path": "04_REPORTS/V1_3_0/COUNTRY_LIVING_BRIDGE_STRESS_V1_3.json",
+      "size": 357,
+      "sha256": "5047a91f50fe437e717de0ab08685cb43cbfbfae658be9ab62047a35ccba598a"
+    },
+    {
+      "path": "04_REPORTS/V1_3_0/ISOLATED_REGRESSION_V1_3_0.json",
+      "size": 3206,
+      "sha256": "e4e270446d106a3679b7d780c3f72b38b1c7dce434f38a7ba7a2052eec907900"
+    },
+    {
+      "path": "04_REPORTS/V1_3_0/STAGE14_RELEASE_READINESS_V1_3_0.json",
+      "size": 212,
+      "sha256": "6d73a0fdd1ba1f69a42475995892e73a7236c5818012dde1489414c35099bf72"
+    },
+    {
+      "path": "04_REPORTS/V1_3_0/V1_3_CATALOG_DISTRIBUTION_STRESS.json",
+      "size": 287,
+      "sha256": "7756fd173c084ece66c931635c4885cd4b0ea808f601ed88bded4254c357c402"
+    },
+    {
+      "path": "04_REPORTS/V1_3_0/V1_3_STATIC_AUDIT.json",
+      "size": 701,
+      "sha256": "d52b4f6a539e25d864a189ddc3afa3049edf70e508d1cf5af22bf82a81742d94"
+    },
+    {
+      "path": "04_REPORTS/V1_3_0/VALIDATION_SUMMARY_V1_3_0.json",
+      "size": 1752,
+      "sha256": "a5a8b47f9622f4e068304ff13b5c7ef30f486b1e7cc41e49a5ada177dcb69081"
+    },
+    {
+      "path": "04_REPORTS/V1_4_0/BASELINE_PRECHANGE_SIMULATION_V1_3.json",
+      "size": 5010,
+      "sha256": "43ee0ea3b932f441d872aa2407f8174bf897ce5f4f214705cbafbe0b5d578a44"
+    },
+    {
+      "path": "04_REPORTS/V1_4_0/BUG_CORRECTION_LEDGER_V1_4_0.json",
+      "size": 2415,
+      "sha256": "b675daa9784354fc5169006866a70aa9f8f15d6ec5112380e86826a5533b4bb2"
+    },
+    {
+      "path": "04_REPORTS/V1_4_0/HARNESS_CORRECTION_LEDGER_V1_4_0.json",
+      "size": 967,
+      "sha256": "5e134b0887c0b39cbf30386812a65184bf74ff4b2549e5759a4210b9ce617b9f"
+    },
+    {
+      "path": "04_REPORTS/V1_4_0/V14_LOD_CATALOG_STRESS.json",
+      "size": 402,
+      "sha256": "d89fc6121f923ac245f6525bfb5857a70aa360fee90aa6a0223294d1ada00852"
+    },
+    {
+      "path": "04_REPORTS/V1_4_0/V14_SPATIAL_DETERMINISM.json",
+      "size": 2339,
+      "sha256": "8fa36097e537e359cad8fcef56413ef49a2ecb1a05d91cd6299168871deb02ca"
+    },
+    {
+      "path": "04_REPORTS/V1_4_0/V14_SPATIAL_STREAM_STRESS.json",
+      "size": 430,
+      "sha256": "fd7371abfa5af987baf53eac5b85d5fdb26054807cc85ef7c564d18faf3cd57c"
+    },
+    {
+      "path": "04_REPORTS/V1_4_0/V14_STATIC_AUDIT.json",
+      "size": 3338,
+      "sha256": "80fcbf1b06dbea0da0ac157d497873eb052ceec69cb9938a4cdce5f38ec5d40b"
+    },
+    {
+      "path": "04_REPORTS/V1_5_0/BASELINE_SIMULATION_V1_4_BEFORE_V1_5.json",
+      "size": 1326,
+      "sha256": "8f85e1890dde20f83085f050116553ad2cd09fec4669272dbc12e472c9896d31"
+    },
+    {
+      "path": "04_REPORTS/V1_5_0/BUG_CORRECTION_LEDGER_V1_5_0.json",
+      "size": 1229,
+      "sha256": "3ef4f3e6c4e4d4fa9eb9c67021398a84bf2c23145f9116c39b02650e097236a0"
+    },
+    {
+      "path": "04_REPORTS/V1_5_0/CONVERGENCE_REPORT_V1_5_0.md",
+      "size": 1444,
+      "sha256": "9456e724fbeaa21dbaef1dc6825c22794ee41ef442dea6c2e28a92a10196c091"
+    },
+    {
+      "path": "04_REPORTS/V1_5_0/HARNESS_CORRECTION_LEDGER_V1_5_0.json",
+      "size": 397,
+      "sha256": "8babd931bf4faffce5a067265a1587ddc67973df93f679400de05aed7b40ced4"
+    },
+    {
+      "path": "04_REPORTS/V1_5_0/V15_DETERMINISM.json",
+      "size": 2370,
+      "sha256": "4852f31cd4c52265f2e5ebf721779646d59dcac1a3f43acf6f9c25450ebeafdf"
+    },
+    {
+      "path": "04_REPORTS/V1_5_0/V15_DETERMINISM_BATCH_00_03.json",
+      "size": 810,
+      "sha256": "07ed164fb67ef0bacd325b6e75e14d6525e9b3d87a2d866018e0d4a9f9781662"
+    },
+    {
+      "path": "04_REPORTS/V1_5_0/V15_DETERMINISM_BATCH_03_03.json",
+      "size": 810,
+      "sha256": "d5ce746e9a8d95b7d4ee63fc7902fb5d41b763bfd7b8b17f12818e911e0a8bb8"
+    },
+    {
+      "path": "04_REPORTS/V1_5_0/V15_DETERMINISM_BATCH_06_02.json",
+      "size": 588,
+      "sha256": "140cb1386b1ae74684280e8a8983c3d0696bd8811ec7cb28a0149dab2b141b1c"
+    },
+    {
+      "path": "04_REPORTS/V1_5_0/V15_DETERMINISM_BATCH_08_02.json",
+      "size": 588,
+      "sha256": "69928d7f723768e4c8ef4b353ee682bc6705b6be246e08d993276e42fc91333b"
+    },
+    {
+      "path": "04_REPORTS/V1_5_0/V15_HISTORICAL_REGRESSION.json",
+      "size": 5169,
+      "sha256": "3908f8c4febf232a8813f23117b0ae27c3ba43299903850c455dd9ecb6e90c6c"
+    },
+    {
+      "path": "04_REPORTS/V1_5_0/V15_HISTORICAL_REGRESSION_BATCH_00_08.json",
+      "size": 1386,
+      "sha256": "5d751fe48a48314c8cb8ca8a047e557ae0039221bfcd9fb9cdb0ff6e0d014eab"
+    },
+    {
+      "path": "04_REPORTS/V1_5_0/V15_HISTORICAL_REGRESSION_BATCH_08_04.json",
+      "size": 789,
+      "sha256": "b90c717ac5fa6e5c5c45e60b862a45e903625e232f6e79445b4b4d845d0e6905"
+    },
+    {
+      "path": "04_REPORTS/V1_5_0/V15_HISTORICAL_REGRESSION_BATCH_12_04.json",
+      "size": 781,
+      "sha256": "640cc4cacdaf9763a0ee1924585fdb389be03c5b262c22160306942064a5e467"
+    },
+    {
+      "path": "04_REPORTS/V1_5_0/V15_HISTORICAL_REGRESSION_BATCH_16_04.json",
+      "size": 796,
+      "sha256": "d6450fe5f5b982e62f777912ab940450aca4ee8ad6f5efe9658cb7faeb71d0d4"
+    },
+    {
+      "path": "04_REPORTS/V1_5_0/V15_HISTORICAL_REGRESSION_BATCH_20_02.json",
+      "size": 477,
+      "sha256": "c7955b3a7d3a7df2e817a93c1331c80d53236ba0ae28bebf6d5abc94d5866bb0"
+    },
+    {
+      "path": "04_REPORTS/V1_5_0/V15_HISTORICAL_REGRESSION_BATCH_22_02.json",
+      "size": 492,
+      "sha256": "5caaa216c70626b317c034875322945038a5186293c8809a7e3ff2150fcd148a"
+    },
+    {
+      "path": "04_REPORTS/V1_5_0/V15_HISTORICAL_REGRESSION_BATCH_24_04.json",
+      "size": 777,
+      "sha256": "e25a56c8fdb3bc0589396da12728e90394191d322b5f9e6bf2a29ce3a764f7bc"
+    },
+    {
+      "path": "04_REPORTS/V1_5_0/V15_HISTORICAL_REGRESSION_BATCH_28_01.json",
+      "size": 335,
+      "sha256": "5a2c5e39c82189b0ebdedce0685855357c8575f6667a2adb7b4d1afbe39a8e3d"
+    },
+    {
+      "path": "04_REPORTS/V1_5_0/V15_HISTORICAL_REGRESSION_BATCH_29_01.json",
+      "size": 341,
+      "sha256": "b80f39d043c3bbbc51e0403f0bc49e2fd7de1bfe218d679a9680d93f8bde972c"
+    },
+    {
+      "path": "04_REPORTS/V1_5_0/V15_HISTORICAL_REGRESSION_BATCH_30_01.json",
+      "size": 347,
+      "sha256": "fa273586409168a70df4bd6b0a80a9e859f917b6dec22b4d5826a63a48f9819d"
+    },
+    {
+      "path": "04_REPORTS/V1_5_0/V15_HISTORICAL_REGRESSION_BATCH_31_01.json",
+      "size": 343,
+      "sha256": "752255a6b32c1b87faf013f787f9f8da146e06e5e00ff1b5913abd2cb2d02b97"
+    },
+    {
+      "path": "04_REPORTS/V1_5_0/V15_HISTORICAL_REGRESSION_BATCH_32_01.json",
+      "size": 343,
+      "sha256": "35c312699f93b7ff3f4d7bbb7f9926a93385269dc970436135f240773ca1220c"
+    },
+    {
+      "path": "04_REPORTS/V1_5_0/V15_HISTORICAL_REGRESSION_BATCH_33_01.json",
+      "size": 339,
+      "sha256": "a5090b1ba34d256b4d33bbef942990cfd8b30c7b505da8927df7247a4846f0b5"
+    },
+    {
+      "path": "04_REPORTS/V1_5_0/V15_INTEGRATED_STRESS.json",
+      "size": 12275,
+      "sha256": "861347f50de0fd5517d61b3d060e7fe591d829879a8d6aa4308db324b6a2fe17"
+    },
+    {
+      "path": "04_REPORTS/V1_5_0/V15_INTEGRATED_STRESS_BATCH_00_05.json",
+      "size": 2154,
+      "sha256": "6cb098a8a374b1ad9f9277cc1718a474f40fcdcf719d44d3c8dc5304d72a841c"
+    },
+    {
+      "path": "04_REPORTS/V1_5_0/V15_INTEGRATED_STRESS_BATCH_05_05.json",
+      "size": 2155,
+      "sha256": "1fc32142bc5a42d6e841bc0f87b366f0c7f281cecea13aef4a9c6a17cceee671"
+    },
+    {
+      "path": "04_REPORTS/V1_5_0/V15_INTEGRATED_STRESS_BATCH_10_05.json",
+      "size": 2160,
+      "sha256": "9da02f183075da48fae5b278f58283f3a2674add90d1c9ff9019aa669e04cb89"
+    },
+    {
+      "path": "04_REPORTS/V1_5_0/V15_INTEGRATED_STRESS_BATCH_15_05.json",
+      "size": 2157,
+      "sha256": "039ff08adb888e6edc95b81001302c196da6b4345d3fd8ecab36848c8f710765"
+    },
+    {
+      "path": "04_REPORTS/V1_5_0/V15_INTEGRATED_STRESS_BATCH_20_05.json",
+      "size": 2156,
+      "sha256": "2ee9422ed9a86a9d52422b1154e8767646a58a1295ece2446e57b3a569bac849"
+    },
+    {
+      "path": "04_REPORTS/V1_5_0/V15_INTEGRATED_STRESS_BATCH_25_05.json",
+      "size": 2158,
+      "sha256": "4b1ceb569f0edf86ef77e4d259aec45f31f3a1ddf4a30733d4999fefaa294e10"
+    },
+    {
+      "path": "04_REPORTS/V1_5_0/V15_STATIC_AUDIT.json",
+      "size": 3201,
+      "sha256": "a22520269acf1419bfd932fd5bc209d554f4da397a7e0c669bbc62d1907cc4c3"
+    },
+    {
+      "path": "04_REPORTS/V1_5_0/VALIDATION_SUMMARY_V1_5_0.json",
+      "size": 1263,
+      "sha256": "e09ed8d01c821457f98310c48f1089a9b40cddaf95648f03e52410abfcb9a414"
+    },
+    {
+      "path": "05_DEMO/DEMO_RESULT_V1_0.json",
+      "size": 902,
+      "sha256": "35509a13eccba354cec1152bd36dcd458114e9f804454b4067fa193d9c5313d0"
+    },
+    {
+      "path": "05_DEMO/run_atlas_overlay_demo.mjs",
+      "size": 1016,
+      "sha256": "6532349bfcf98b2c6466a3d48205e26749b33fc09cfc2577e0ae98a21c157348"
+    },
+    {
+      "path": "05_DEMO/run_country_scale_simulation_v1_2.py",
+      "size": 7083,
+      "sha256": "484d0ca93dfb61365678298adeb5420feb73e61acbb8e91a9b1a3d162e127fae"
+    },
+    {
+      "path": "05_DEMO/run_demo.py",
+      "size": 4874,
+      "sha256": "99399a3080bebd4b1eb62a8121192536ea83af648434d696b1f5007f88b1393e"
+    },
+    {
+      "path": "05_DEMO/run_stage13_demo.py",
+      "size": 5626,
+      "sha256": "dfee440860faea3cb3dfcdc74e2f6322d7767bd7a547210cfff7219f5363c36b"
+    },
+    {
+      "path": "06_ATLAS_LIVING/ATLAS_LIVING_LAYER_REGISTRY_V1_0.json",
+      "size": 2516,
+      "sha256": "77c315bec6dd7f75bf3d2410cbfac0717ec9c79f18a8db86e67ca30cc1399cd1"
+    },
+    {
+      "path": "06_ATLAS_LIVING/CANONICAL_ATLAS_BASELINE_HASHES_V1_0.json",
+      "size": 1786,
+      "sha256": "e7265386b6896f4bbfaceaf212857070e88f1612ade1272c45e6fd268bb08a06"
+    },
+    {
+      "path": "06_ATLAS_LIVING/DEPENDENCIES_V1_0.json",
+      "size": 756,
+      "sha256": "61a225515326a3d7d838209eb9960c8904315fe30ccf32695eb090616cac11df"
+    },
+    {
+      "path": "06_ATLAS_LIVING/LIVING_ATLAS_PROJECTION_AFTER_DEMO.json",
+      "size": 145274,
+      "sha256": "bb97a9129cc37cb06a377d5cf26a3694dbf2d956cb5dac6a2ec347af6edd37d4"
+    },
+    {
+      "path": "06_ATLAS_LIVING/LIVING_ATLAS_PROJECTION_BEFORE_DEMO.json",
+      "size": 144446,
+      "sha256": "6cc3840f0262c520cc4122fa3fe9ffa205bf7c9e3aa8656038dac4476cbaef4a"
+    },
+    {
+      "path": "06_ATLAS_LIVING/UPSTREAM_BASELINE_HASHES_V1_0.json",
+      "size": 1809,
+      "sha256": "60339635fc64e286dae9acf637bb14f9239f2ddd27a17542df465829163628b7"
+    },
+    {
+      "path": "06_ATLAS_LIVING/UPSTREAM_BASELINE_HASHES_V1_1_SEALED.json",
+      "size": 1417,
+      "sha256": "68a7343524b5665019c62cb11c0bf7f15f8c3416f3c5d1ae26b8e3a2041af822"
+    },
+    {
+      "path": "06_ATLAS_LIVING/atlas-live-core.mjs",
+      "size": 2111,
+      "sha256": "017da35c840723d94471a2d1af300ba7c82414ea7a174a57d9e85a6a69f1f2bc"
+    },
+    {
+      "path": "06_GODOT_LIVING_V1_5/GodotRuntimeGate.gd",
+      "size": 2045,
+      "sha256": "a4272c45c2f8dfe5bc3a770c13c7e787ed8f53a4e0e3cae36b559db6117c8b52"
+    },
+    {
+      "path": "06_GODOT_LIVING_V1_5/LivingWorldClient.gd",
+      "size": 2967,
+      "sha256": "df0a1f7f62a6dac96a13125dca3adf41cf994b3eec496802addef9172e906bff"
+    },
+    {
+      "path": "06_GODOT_LIVING_V1_5/README_GODOT_ADAPTER_V1_5.md",
+      "size": 944,
+      "sha256": "59cb3b180bb526589dc7313a582dd25f320f367ac3be67e85a87eb1f98575228"
+    },
+    {
+      "path": "06_GODOT_LIVING_V1_5/project.godot",
+      "size": 213,
+      "sha256": "c77a6bf7ec210acfc71bf8ab9a0a2bf63b841db62ae430c61fa6552c11e760cb"
+    },
+    {
+      "path": "07_RELEASE_READINESS/ARPG_STAGE00/CHECKPOINT_ARPG_STAGE00_V0_1_0.json",
+      "size": 1642,
+      "sha256": "27c4448a6f179fbacc815164566da35d6d382a915f9b0fa892320bf39ce790dc"
+    },
+    {
+      "path": "07_RELEASE_READINESS/ARPG_STAGE10/CHECKPOINT_ARPG_STAGE10_V1_1_0.json",
+      "size": 1218,
+      "sha256": "a53f24a8d93eb529024d780995eef797ec7b0fd5881a6993c0596b1dd49bf77f"
+    },
+    {
+      "path": "07_RELEASE_READINESS/ARPG_STAGE11/CHECKPOINT_ARPG_STAGE11_V1_2_0.json",
+      "size": 1138,
+      "sha256": "89f5c90779b1ca1853845a27b749b9b9812f347a1d082e594856b0248838dced"
+    },
+    {
+      "path": "07_RELEASE_READINESS/ARPG_STAGE12/CHECKPOINT_ARPG_STAGE12_V1_3_0.json",
+      "size": 1568,
+      "sha256": "97dab3b5f014359cdcc319640495f3f83178325c0a1d92e07efe3a56d64b27da"
+    },
+    {
+      "path": "07_RELEASE_READINESS/ARPG_STAGE14/CHECKPOINT_ARPG_STAGE14_V1_5_0.json",
+      "size": 656,
+      "sha256": "a41261b5806899795b7aca57e94bf896e06c5485c1c80262d724cc628555375d"
+    },
+    {
+      "path": "07_RELEASE_READINESS/RELEASE_METADATA_V1_0_0.json",
+      "size": 946,
+      "sha256": "cd574ab811aa49f979c1bc480a48081292832d2dea65cc226ece991402d7c209"
+    },
+    {
+      "path": "07_RELEASE_READINESS/V1_1_0/CHANGELOG_V1_1_0.md",
+      "size": 2023,
+      "sha256": "ecbd069dc144509968bdaa5611aa2e94442187582c60a87fab2dfb0589203217"
+    },
+    {
+      "path": "07_RELEASE_READINESS/V1_1_0/CONTENT_CHECKPOINT_V1_1_0.json",
+      "size": 2096,
+      "sha256": "3a2fcfcafaf967a1fe5f56654dd5c0357fc555ee1c002d1b384ffda9a8877dd1"
+    },
+    {
+      "path": "07_RELEASE_READINESS/V1_1_0/IMPROVEMENT_RESOLUTION_MATRIX_V1_1_0.json",
+      "size": 7221,
+      "sha256": "588bf30a643e3a89df3a3a250d3c9ffed5d2c37ca453ab240c3eebeb7b5562f9"
+    },
+    {
+      "path": "07_RELEASE_READINESS/V1_1_0/RELEASE_AUDIT_V1_1_0.json",
+      "size": 2979,
+      "sha256": "23843dfd383bb1af6f92fe2a27eec9b541a7a81c658646560df31c162d0f00fc"
+    },
+    {
+      "path": "07_RELEASE_READINESS/V1_1_0/RELEASE_METADATA_V1_1_0.json",
+      "size": 1105,
+      "sha256": "0212562a424be09685b8121fa13beb38005175706b813f183a871506ecc96b39"
+    },
+    {
+      "path": "07_RELEASE_READINESS/V1_1_0/VALIDATION_SUMMARY_V1_1_0.json",
+      "size": 1384,
+      "sha256": "af55d7fcf4a705f1a4b364ed527ac13bd4b0a57991e3a63281f5879a447df9bd"
+    },
+    {
+      "path": "07_RELEASE_READINESS/V1_2_0_DEV/CHANGELOG_V1_2_0_DEV.md",
+      "size": 827,
+      "sha256": "633cd26695dad3fd6cc03510cc5d6caf87e26a1d7595d20d7c1cfd64a8b8ff31"
+    },
+    {
+      "path": "07_RELEASE_READINESS/V1_2_0_DEV/CHECKPOINT_COUNTRY_SCALE_V1_2_0_DEV.json",
+      "size": 863,
+      "sha256": "3bf2f300b561fdf0385e3906e2f96bb8a3dce4cdfcb5a0f40b5bc7bf5d4ba0a9"
+    },
+    {
+      "path": "07_RELEASE_READINESS/V1_2_0_DEV/VALIDATION_SUMMARY_V1_2_0_DEV.json",
+      "size": 1775,
+      "sha256": "a2954ed9bf0b53b0e3a00606b936b9b25326d0866170c0040e8659aeec04263f"
+    },
+    {
+      "path": "07_RELEASE_READINESS/V1_2_1_DEV/CHECKPOINT_COUNTRY_SCALE_V1_2_1_DEV.json",
+      "size": 3452,
+      "sha256": "9c1f467dbaafd94bcaacc669fb6ae1de07a6f1a1e5c2b17908cc9cbb8e6c9279"
+    },
+    {
+      "path": "07_RELEASE_READINESS/V1_2_1_DEV/DEV_MANIFEST_V1_2_1.json",
+      "size": 41390,
+      "sha256": "6471244b54015a57f90b1cb2dc5624573da46553a1d0804c5a6a256023e02b01"
+    },
+    {
+      "path": "07_RELEASE_READINESS/V1_2_1_DEV/DEV_READINESS_AUDIT_V1_2_1.json",
+      "size": 401,
+      "sha256": "cd916dc7a67980d83c54b217deeb2f79afa4bf23ccecf0f4db9fbe7f10b58c12"
+    },
+    {
+      "path": "07_RELEASE_READINESS/V1_2_1_DEV/DEV_SHA256SUMS_V1_2_1",
+      "size": 25920,
+      "sha256": "4deb55d3e481615f8f29b3ed7587ceb20739329816ab651b8a26b8d63a17859a"
+    },
+    {
+      "path": "07_RELEASE_READINESS/V1_3_0/CHECKPOINT_LIVING_V1_3_0_INTERNAL.json",
+      "size": 2258,
+      "sha256": "59f36eb7b340712d7781b62b06d5c9b9e5ba49ebf97a02530efd31457576f2a2"
+    },
+    {
+      "path": "07_RELEASE_READINESS/V1_4_0/CHECKPOINT_LIVING_V1_4_0_INTERNAL.json",
+      "size": 271,
+      "sha256": "82f35b3720a38f606e52a9797a1614d4f84d1fe56c178f7b67aa1a589e29a045"
+    },
+    {
+      "path": "07_RELEASE_READINESS/V1_4_0/RELEASE_METADATA_V1_4_0.json",
+      "size": 424,
+      "sha256": "bec756a10ca9cad7236eb6769f8c5502776a8ea2bd9f8b2ed4ee43820bda672d"
+    },
+    {
+      "path": "07_RELEASE_READINESS/V1_4_0/VALIDATION_SUMMARY_V1_4_0.json",
+      "size": 1604,
+      "sha256": "fd261515c3084811ef8467fa967665f18b7690b1ac39b8e536aab6ca81a7697a"
+    },
+    {
+      "path": "07_RELEASE_READINESS/V1_4_0_DEV/V14_RELEASE_READINESS.json",
+      "size": 3911,
+      "sha256": "24ff64887bd0100bf934518448b15ab364bfa5ee3e56a049006467e19de16bae"
+    },
+    {
+      "path": "07_RELEASE_READINESS/V1_5_0_DEV/CHECKPOINT_LIVING_V1_5_0_DEV.json",
+      "size": 939,
+      "sha256": "f21a18fbeb6b2de8e635fe84bc1a71b790683f9ddaa07dc05939ccdc530db74a"
+    },
+    {
+      "path": "07_RELEASE_READINESS/V1_5_0_DEV/DEV_MANIFEST_V1_5_0.json",
+      "size": 63110,
+      "sha256": "b6defeedf0c655469c3d99ddbf585e44834a5114d4275312cfe5697cda7aa1a3"
+    },
+    {
+      "path": "07_RELEASE_READINESS/V1_5_0_DEV/DEV_SHA256SUMS_V1_5_0",
+      "size": 39569,
+      "sha256": "a89c0decf4d79766123af6eee647d0ebb77201f1801db0ff49d82f47e636342d"
+    },
+    {
+      "path": "07_RELEASE_READINESS/V1_5_0_DEV/V15_DEV_READINESS.json",
+      "size": 3824,
+      "sha256": "fb2a8fe17f77e5da6a1069f91f5986107e95ba47011a6f4faba04c59fa7d8fd6"
+    },
+    {
+      "path": "08_HISTORY/QUARANTINED_V21_TESTS/STAGE14/run_stage14_release_readiness_v1_3.py",
+      "size": 4918,
+      "sha256": "2dce9696d1c85038c21f8e6cd10ca4226108d4be194149f4336726953caa98d7"
+    },
+    {
+      "path": "08_HISTORY/QUARANTINED_V21_TESTS/run_country_living_bridge_stress_v1_3.py",
+      "size": 4343,
+      "sha256": "54d6149b8fb04f2a7c3f35a43581be38196e45c305a2cbc1f2adc41085f9e021"
+    },
+    {
+      "path": "08_HISTORY/QUARANTINED_V21_TESTS/run_v13_static_audit.py",
+      "size": 5930,
+      "sha256": "7380c592bc459eb7994f2967cc0ed65426d694ff8ed86679b6ea3709231a7a34"
+    },
+    {
+      "path": "08_HISTORY/QUARANTINED_V21_TESTS/run_v14_lod_catalog_stress.py",
+      "size": 3057,
+      "sha256": "aa5d4ce8a6c414e0e326657465beb61d37b960a9980989916fd935b25fe9fa77"
+    },
+    {
+      "path": "08_HISTORY/QUARANTINED_V21_TESTS/run_v14_release_readiness.py",
+      "size": 6193,
+      "sha256": "83d7db6f2511ca4f2074e9884430abfd009507d489ec45ee3fdb01a8a4927fe2"
+    },
+    {
+      "path": "08_HISTORY/QUARANTINED_V21_TESTS/run_v14_spatial_determinism.py",
+      "size": 2572,
+      "sha256": "5005273c89f4de00656a165fd10c8cbb91a5578d68d1201e7109fad8c93ca9df"
+    },
+    {
+      "path": "08_HISTORY/QUARANTINED_V21_TESTS/run_v14_spatial_stream_stress.py",
+      "size": 3625,
+      "sha256": "a6f75696fbac17432d39f20943d48e41dab8d2569feba9504cd2601804da05ab"
+    },
+    {
+      "path": "08_HISTORY/QUARANTINED_V21_TESTS/run_v14_static_audit.py",
+      "size": 6772,
+      "sha256": "5778cf3f5164bbdcdbae2635dd3eb746935266b0d82a46f9193fca709cd5712a"
+    },
+    {
+      "path": "08_HISTORY/QUARANTINED_V21_TESTS/run_v15_dev_readiness.py",
+      "size": 5416,
+      "sha256": "abe5ff0c06e1b856253b594aae636641a7ec4e0af52faa3da5e916b03fc9c8d7"
+    },
+    {
+      "path": "08_HISTORY/QUARANTINED_V21_TESTS/run_v15_static_audit.py",
+      "size": 5435,
+      "sha256": "7bbcc76f0bd8588447d4c389ca4477001a4ce92a3b68612214c20318b7233702"
+    },
+    {
+      "path": "08_HISTORY/QUARANTINED_V21_TESTS/run_v1_3_catalog_distribution_stress.py",
+      "size": 2518,
+      "sha256": "1642c9af47e2a4ec4db8b0271a67f79f4d6d2b02bb3ad669535d1a483e25b3cb"
+    },
+    {
+      "path": "08_HISTORY/V1_0_0/CHECKPOINT_LIVING_SIM_ETAPA_14_V1_0.json",
+      "size": 985,
+      "sha256": "1927a409a763a4371d8353098cf2bfcfc2f2f187c2c409b65abc2c4bbe3644fc"
+    },
+    {
+      "path": "08_HISTORY/V1_0_0/ENGINE_MANIFEST_V1_0_0.json",
+      "size": 24504,
+      "sha256": "f08c71f58a46dae04b25bf5f3a7c751f5ba49e45b0a0b270efc67bccb6265ab1"
+    },
+    {
+      "path": "08_HISTORY/V1_0_0/ENGINE_SHA256SUMS",
+      "size": 15133,
+      "sha256": "5e3f97fa5adf75469b8c46671b0445e05e2ee68f813716958c40ce28d101f5b7"
+    },
+    {
+      "path": "08_HISTORY/V1_0_0/ETAPA_14_MANIFEST.json",
+      "size": 23837,
+      "sha256": "bfb2d8f04d93e479be81b2e83d47abf7b9ea90933dfb9103324bb14b39a2dfe0"
+    },
+    {
+      "path": "08_HISTORY/V1_0_0/README_RELEASE_V1_0_0.md",
+      "size": 681,
+      "sha256": "db8a88c4a439244b56088e54a7a43539cda9dcebb8493d7acee54c0f8c5152bd"
+    },
+    {
+      "path": "08_HISTORY/V1_2_1_AUDIT_RECONCILIATION/STAGE13_STATIC_AUDIT_V1_0_STALE_BASELINE_ACTIVE_RUN.json",
+      "size": 5524,
+      "sha256": "41a3e252af2fac76056b62e3cf89e5b617b642fa13f9577354162ba2596cefe5"
+    },
+    {
+      "path": "08_HISTORY/V1_2_1_AUDIT_RECONCILIATION/STAGE13_STATIC_AUDIT_V1_0_STALE_BASELINE_OBSERVED.json",
+      "size": 5524,
+      "sha256": "41a3e252af2fac76056b62e3cf89e5b617b642fa13f9577354162ba2596cefe5"
+    },
+    {
+      "path": "09_CODEX_EXPANSION/V1_2_0_DEV/AGENT_REGISTRY_V1_2.json",
+      "size": 2235,
+      "sha256": "f9107ece8495c3e66d2443971ca008f21de6e76331c0695918e24f3f0029e4a0"
+    },
+    {
+      "path": "09_CODEX_EXPANSION/V1_2_0_DEV/CODEX_COUNTRY_SCALE_CANON_RULES_V1_2.json",
+      "size": 2051,
+      "sha256": "9319bace6ea2fcbfca7cfea2cf48c42f5553a628f927cd8db6417482b8b7beb6"
+    },
+    {
+      "path": "09_CODEX_EXPANSION/V1_2_0_DEV/MAR_CANON_GAMEPLAY_STATS_V1_1.json",
+      "size": 26023,
+      "sha256": "39575ef871b552dd94694cd5044469d55b041c9344e13b5f6fc7b38825986633"
+    },
+    {
+      "path": "09_CODEX_EXPANSION/V1_2_0_DEV/TERRAS_LIVRES_COUNTRY_SCALE_SEED_1201_RUNTIME.json",
+      "size": 615929,
+      "sha256": "918647048c1667567a4a229916a23093b27dc0bf1afb975a261d79b45370c340"
+    },
+    {
+      "path": "09_CODEX_EXPANSION/V1_2_1_DEV/AGENT_REGISTRY_V1_2_1.json",
+      "size": 7462,
+      "sha256": "340f18ddf8a052fc6b5a4df08dfc4865ffadf9971a054d27f1958beba949ddee"
+    },
+    {
+      "path": "09_CODEX_EXPANSION/V1_2_1_DEV/CODEX_COUNTRY_SCALE_CANON_RULES_V1_2_1.json",
+      "size": 2684,
+      "sha256": "57774bf53ef5a1cc4f3f04cdac82af7a98caa92275f772343fb5aa2e00c88e6f"
+    },
+    {
+      "path": "09_CODEX_EXPANSION/V1_2_1_DEV/CONTENT_EXPANSION_V1_2_1.json",
+      "size": 7025,
+      "sha256": "18d3d7e921fe34d009a0cdededd2ed369923e8fe23d3cc279c53f491182180ce"
+    },
+    {
+      "path": "09_CODEX_EXPANSION/V1_2_1_DEV/NEXT_STAGE_PROPOSAL_MASTER_V2_1_COUNTRY_INTEGRATION.json",
+      "size": 3801,
+      "sha256": "987512ad60dcdda98f3d3a3eba11076544860f1e3a9e4adfd98a25c40a60ad97"
+    },
+    {
+      "path": "09_CODEX_EXPANSION/V1_2_1_DEV/SCENE_DUNGEON_INTERACTION_CONTRACT_V1_2_1.json",
+      "size": 1474,
+      "sha256": "df8a11587ba1c747ff961dd80cce1fc8b461392f04d1aa4438e231425bfbd628"
+    },
+    {
+      "path": "09_CODEX_EXPANSION/V1_2_1_DEV/TERRAS_LIVRES_COUNTRY_SCALE_SEED_1201_RUNTIME.json",
+      "size": 1151600,
+      "sha256": "3dc855848ac3c454cc02ad945b4d23cd8055dbde217758b03677c7e922c5603b"
+    },
+    {
+      "path": "09_CODEX_EXPANSION/V1_3_0/AGENT_REGISTRY_V1_3_0.json",
+      "size": 1722,
+      "sha256": "a13bd2be01d73f4ab0a745d365a9f8ee38b7815580160a41bb8857161f7dd958"
+    },
+    {
+      "path": "09_CODEX_EXPANSION/V1_3_0/COUNTRY_LIVING_DOMAIN_BRIDGE_CONTRACT_V1_3_0.json",
+      "size": 1254,
+      "sha256": "829b7d8b4be9f3e9c9f694bd9937c0a0443adeb3a09f268ea339a914c9d0506b"
+    },
+    {
+      "path": "09_CODEX_EXPANSION/V1_4_0/AGENT_REGISTRY_V1_4_0.json",
+      "size": 3207,
+      "sha256": "a7e52f3df7e799854a28e67c60e82526af538799937efb40d3caa1b5371ef24f"
+    },
+    {
+      "path": "09_CODEX_EXPANSION/V1_5_0_DEV/AGENT_REGISTRY_V1_5_0.json",
+      "size": 973,
+      "sha256": "ad66919ad10ecb6ee95223e0558c80a5b2a6a22f645bbee1e973da0b1d2f6614"
+    },
+    {
+      "path": "09_CODEX_EXPANSION/V1_5_0_DEV/FUTURE_COUNTRY_GATE_V1_5_0.json",
+      "size": 803,
+      "sha256": "cd4695bc53805a0d91b941e809cc95411f2a65441cd90a51e8d124c0109fbe6b"
+    },
+    {
+      "path": "09_CODEX_EXPANSION/V1_5_0_DEV/NEXT_GATE_PROPOSAL_GODOT_RUNTIME_V1_5_0.json",
+      "size": 953,
+      "sha256": "26f31d65420d1694221e19d588f0b7ab7288ce2834fc97d12321e0dc8dffc2cd"
+    },
+    {
+      "path": "10_ARPG/00_GOVERNANCE/ARPG_AUTHORIAL_DECISIONS_V0_1_0.json",
+      "size": 1551,
+      "sha256": "05b2ae6e272f693d6158b16f555d8b43185c6fbbd1e41133d1b99315b33fbe20"
+    },
+    {
+      "path": "10_ARPG/00_GOVERNANCE/ARPG_BASELINE_AUTHORITY_V0_1_0.json",
+      "size": 1417,
+      "sha256": "4a15395f6ea4b5f4f819c330c10b61c2857416f08990a40c07b3a9ab3205a4b0"
+    },
+    {
+      "path": "10_ARPG/00_GOVERNANCE/ARPG_GATHERING_WORK_AUTHORIAL_DIRECTIVE_V0_5_0.json",
+      "size": 845,
+      "sha256": "73a5bc7e21667dbf188a5178b777716a399143d3aa6da8c37b18a1263341a63e"
+    },
+    {
+      "path": "10_ARPG/00_GOVERNANCE/ARPG_RECONCILIATION_LEDGER_V0_1_0.json",
+      "size": 1959,
+      "sha256": "736c98110218b02248b2cca22fac6979e6eef2a317abbd230bdb1e804d2e3036"
+    },
+    {
+      "path": "10_ARPG/00_GOVERNANCE/ARPG_STAGE_PLAN_V0_1_0.json",
+      "size": 3470,
+      "sha256": "71c148a0c04d8f2ec515f9f3dfef8610138c8fa2e49697f3556097454ae02cb3"
+    },
+    {
+      "path": "10_ARPG/00_GOVERNANCE/ARPG_STAGE_PLAN_V0_2_0.json",
+      "size": 4044,
+      "sha256": "505c77133eac5aa4d0c7075a343c746f90356ca488bdb42ca91e7d74d6a621e0"
+    },
+    {
+      "path": "10_ARPG/00_GOVERNANCE/ARPG_STAGE_PLAN_V0_3_0.json",
+      "size": 5031,
+      "sha256": "d22200ec10482ea3d36c0b29dd97f71199ceeb7880319b0e5cca9d04db5262c2"
+    },
+    {
+      "path": "10_ARPG/00_GOVERNANCE/ARPG_STAGE_PLAN_V0_4_0.json",
+      "size": 5553,
+      "sha256": "b577b61427c8b885e54d90fb3d68a417875d78da10d3ac307cd715b9e4ac41e6"
+    },
+    {
+      "path": "10_ARPG/00_GOVERNANCE/ARPG_STAGE_PLAN_V0_5_0.json",
+      "size": 6233,
+      "sha256": "0e65ed4041812bb344e9ecfb8f0cb865f10fa97e13e8e0b9d53d47ac05ef39fe"
+    },
+    {
+      "path": "10_ARPG/00_GOVERNANCE/ARPG_STAGE_PLAN_V0_8_0.json",
+      "size": 7661,
+      "sha256": "a645fa6c0f93f2d7483ae04d1d10eb61922011e9b61be58057681dd46f234861"
+    },
+    {
+      "path": "10_ARPG/00_GOVERNANCE/ARPG_STAGE_PLAN_V0_9_0.json",
+      "size": 8166,
+      "sha256": "92a4a2a584cb036b9fa061aa2cd57bf5e09f3c0df09ed3694507c8ce5bdfd903"
+    },
+    {
+      "path": "10_ARPG/00_GOVERNANCE/ARPG_STAGE_PLAN_V1_0_0.json",
+      "size": 8643,
+      "sha256": "adb28c1b9561393f786059d861dd7a12c930fa1d117a49a4c2ec998657a123f1"
+    },
+    {
+      "path": "10_ARPG/00_GOVERNANCE/ARPG_STAGE_PLAN_V1_1_0.json",
+      "size": 9092,
+      "sha256": "72909ed39dec985c30deb2f7d8334d016f6df9d4a9639a3d8a9945e076ede127"
+    },
+    {
+      "path": "10_ARPG/00_GOVERNANCE/ARPG_STAGE_PLAN_V1_2_0.json",
+      "size": 9607,
+      "sha256": "68fc3c1a4946208a4c8e106114b94254ff531c089c8443446c180abdd1238f9e"
+    },
+    {
+      "path": "10_ARPG/01_GAME_CORE/ARPG_FOUNDATION_CONTRACT_V0_1_0.json",
+      "size": 902,
+      "sha256": "4d922e9bbaac68d916ce4924ee87f171fc0f5d39a8f169e4f9821c29aa40c7c5"
+    },
+    {
+      "path": "10_ARPG/02_CHARACTER/CHARACTER_SYSTEM_V0_3_0.json",
+      "size": 673,
+      "sha256": "7972faeed903fd8d97c7911cfbeaa332be248e11f9e73b35451c98164311efd8"
+    },
+    {
+      "path": "10_ARPG/03_COMBAT/ARPG_COMBAT_BALANCE_BASELINE_V0_4_0.json",
+      "size": 1045,
+      "sha256": "5fe936778555fdffcf8c94f90c7c696d0954359d77c7b900f324f4797b8c8de4"
+    },
+    {
+      "path": "10_ARPG/04_ATTRIBUTES_RESOURCES/ARPG_RESOURCE_BALANCE_BASELINE_V0_5_0.json",
+      "size": 753,
+      "sha256": "9228c0ddc4598ea518ceeac2df95f50cbc30965f7e594f2c21586e9ce46608da"
+    },
+    {
+      "path": "10_ARPG/18_VISUAL_PIPELINE/ROADMAP_RENUMBER_NOTICE_V0_2_0.json",
+      "size": 278,
+      "sha256": "10446000d6b579e4767a60ee0305ed8e2a959d6755f7cfc4d9e0ec3ab9471fcb"
+    },
+    {
+      "path": "10_ARPG/18_VISUAL_PIPELINE/VISUAL_PIPELINE_GATE_V0_1_0.json",
+      "size": 540,
+      "sha256": "abe33d535f94947737a317a7facf3b3ecf1bebef661e2590c7511686e5660bcb"
+    },
+    {
+      "path": "10_ARPG/19_VISUAL_PIPELINE/VISUAL_PIPELINE_GATE_V0_2_0.json",
+      "size": 353,
+      "sha256": "07ceabfbf64b3f900f4f54079a6a53f70a4ce85ae56f3ba9fdbc035a1566ea7d"
+    },
+    {
+      "path": "10_ARPG/22_VISUAL_PIPELINE/ROADMAP_RENUMBER_NOTICE_V0_5_0.json",
+      "size": 336,
+      "sha256": "6b848fde36133056862455ce872672cbda16e5b32fea0d0d8ea98acb367ef163"
+    },
+    {
+      "path": "10_ARPG/22_VISUAL_PIPELINE/VISUAL_PIPELINE_GATE_V0_5_0.json",
+      "size": 373,
+      "sha256": "9312ef0ee365b3df025c59fd2444bab19f02697e2d0d26b299eef9cdd506bda5"
+    },
+    {
+      "path": "10_ARPG/README_ARPG_FOUNDATION.md",
+      "size": 582,
+      "sha256": "fbfffb760412a3cc563602dffb9236c78129c1671aaf703eb5dda03d7250c58b"
+    },
+    {
+      "path": "10_ARPG/STAGE01/CHANGELOG_ARPG_STAGE01_V0_2_0.md",
+      "size": 974,
+      "sha256": "221f4790555561281b6596728472d4db8c76d37696ecdd8bfdefe307275e9ae3"
+    },
+    {
+      "path": "10_ARPG/STAGE01/CHECKPOINT_ARPG_STAGE01_V0_2_0.json",
+      "size": 488,
+      "sha256": "8498da661ad7984535fa4c6305a3d1eaf51f40055fd3ffb618291bef060baa54"
+    },
+    {
+      "path": "10_ARPG/STAGE01/README_ARPG_GAME_CORE_V0_2_0.md",
+      "size": 1260,
+      "sha256": "2b7fae0ee776fb81e6aab15a19172662b86c153add132553169fb86d50874c4c"
+    },
+    {
+      "path": "10_ARPG/STAGE02/CHECKPOINT_ARPG_STAGE02_V0_3_0.json",
+      "size": 661,
+      "sha256": "8dcbae54ec855db7dd4b049921d37c234163bbd4da4393cf166ff1b6409c6cec"
+    },
+    {
+      "path": "10_ARPG/STAGE02/README_ARPG_CHARACTER_CORE_V0_3_0.md",
+      "size": 773,
+      "sha256": "53f1c89b1fc24416ce5242d765968430c107e4f7c76d9eac53510283ebfcdf8a"
+    },
+    {
+      "path": "10_ARPG/STAGE03/CHECKPOINT_ARPG_STAGE03_V0_4_0.json",
+      "size": 806,
+      "sha256": "b071588b915f228f76336da7259ee0fb538ebc1ef714b6504a6ec648e01094f0"
+    },
+    {
+      "path": "10_ARPG/STAGE04/ARPG_STAGE04_TEST_BASELINE_V0_5_0.json",
+      "size": 691,
+      "sha256": "e4502067e49fc2b06c8c8a7d69abf6fc1773d6fdbad981557276588dcb08668b"
+    },
+    {
+      "path": "10_ARPG/STAGE04/CHANGELOG_ARPG_STAGE04_V0_5_0.md",
+      "size": 1046,
+      "sha256": "48934b0420a172e396559e0fe862c79e68d2be3170d1b10193d05f6436328fc9"
+    },
+    {
+      "path": "10_ARPG/STAGE04/CHECKPOINT_ARPG_STAGE04_V0_5_0.json",
+      "size": 899,
+      "sha256": "36a568231b4eb69d1ab29894cf18772f3a9eb1b0af280dfdde758424755bd711"
+    },
+    {
+      "path": "10_ARPG/STAGE04/README_ARPG_RESOURCES_V0_5_0.md",
+      "size": 848,
+      "sha256": "fc852c2a566216c69b8b27d03d4b25ea0911e5c68f5ee91ff0c054eefca089ca"
+    },
+    {
+      "path": "10_ARPG/STAGE05/ARPG_STAGE05_TEST_BASELINE_V0_6_0.json",
+      "size": 378,
+      "sha256": "2b093fe0551882b37f9aac33be316a5ef79653783ee1ae2f4e22bb2d2d128645"
+    },
+    {
+      "path": "10_ARPG/STAGE05/CHANGELOG_ARPG_STAGE05_V0_6_0.md",
+      "size": 988,
+      "sha256": "3075da4d1f444954dacc7de8a9e6c04e7d338eef8f6da9ad1dfbace1e6372d66"
+    },
+    {
+      "path": "10_ARPG/STAGE05/CHECKPOINT_ARPG_STAGE05_V0_6_0.json",
+      "size": 867,
+      "sha256": "b9a5828455e829d218a0996e5869d13545c534420eabed174bc3673370eac8bf"
+    },
+    {
+      "path": "10_ARPG/STAGE05/README_ARPG_ITEMIZATION_V0_6_0.md",
+      "size": 1090,
+      "sha256": "971b454eec2124de81294be3b128b9689a2b15b52ff99be9128a7cd586c911d5"
+    },
+    {
+      "path": "10_ARPG/STAGE06/CHANGELOG_ARPG_STAGE06_V0_7_0.md",
+      "size": 685,
+      "sha256": "e1944ddfc81636730b5be557406d6b007b3b7ffaed394d9d73d2a44a648317c0"
+    },
+    {
+      "path": "10_ARPG/STAGE06/CHECKPOINT_ARPG_STAGE06_V0_7_0.json",
+      "size": 2699,
+      "sha256": "fe5f0f385282d1fe92e3ca4feda1fb47f2aa345bfdebb0175964b4769006a0bd"
+    },
+    {
+      "path": "10_ARPG/STAGE06/README_ARPG_SKILLS_V0_7_0.md",
+      "size": 626,
+      "sha256": "58ace34bc4f3e4cfa0255cf64df46b09720a533e63c88364bbcda7ba95671553"
+    },
+    {
+      "path": "10_ARPG/STAGE07/ANDROMEDA_LORE_GAMEPLAY_COVERAGE_V0_1_0.json",
+      "size": 807227,
+      "sha256": "fd4f7b3ed5cc1b982efbf711f5b282d7f72bb3f5927939a59485ef1c3b79828d"
+    },
+    {
+      "path": "10_ARPG/STAGE07/ARPG_STAGE_PLAN_V0_5_0.json",
+      "size": 6233,
+      "sha256": "0e65ed4041812bb344e9ecfb8f0cb865f10fa97e13e8e0b9d53d47ac05ef39fe"
+    },
+    {
+      "path": "10_ARPG/STAGE07/CHANGELOG_ARPG_STAGE07_V0_8_0.md",
+      "size": 1048,
+      "sha256": "ee9da726c8f1c4ec0a6b124450edd80ad144d18d9c7145b89c817fe2b6e83555"
+    },
+    {
+      "path": "10_ARPG/STAGE07/CHECKPOINT_ARPG_STAGE07_V0_8_0.json",
+      "size": 3056,
+      "sha256": "e081923fa948c92b16edd02660768b6bd0f80a067b278a578a715d342a27ec5c"
+    },
+    {
+      "path": "10_ARPG/STAGE07/README_ARPG_ACTORS_V0_8_0.md",
+      "size": 584,
+      "sha256": "81f7b0c961611e171e14fe891d3fbabd72449bb984e7be8096376a3a6001bc5b"
+    },
+    {
+      "path": "10_ARPG/STAGE08/ARPG_STAGE_PLAN_V0_6_0.json",
+      "size": 6738,
+      "sha256": "a8bd456c9d9b2d7ea5ef8fd975dd75ddd1d48fea00dd347a255d5a4a4c8f2fc9"
+    },
+    {
+      "path": "10_ARPG/STAGE08/ARPG_WORLD_CANON_BINDING_V0_9_0.json",
+      "size": 924,
+      "sha256": "a20eb33e85e1a502a47e2c94896d7a68feefe659345922aba594a64b17b1924a"
+    },
+    {
+      "path": "10_ARPG/STAGE08/ARPG_WORLD_SYSTEM_CONTRACT_V0_9_0.json",
+      "size": 2969,
+      "sha256": "ef9f0ee06242d4339d23caee8f1938b731fc53ea73f2ceba9c128ab927b1b865"
+    },
+    {
+      "path": "10_ARPG/STAGE08/CHANGELOG_ARPG_STAGE08_V0_9_0.md",
+      "size": 686,
+      "sha256": "9f19dfc2460d1f9d328254608dad48e6f03e44df5986a6251d7227a251877c8e"
+    },
+    {
+      "path": "10_ARPG/STAGE08/CHECKPOINT_ARPG_STAGE08_V0_9_0.json",
+      "size": 1109,
+      "sha256": "259a70a863fd0266be8241868029b82a6bd0bc548c07a4ef744b08c6c549fd01"
+    },
+    {
+      "path": "10_ARPG/STAGE08/README_ARPG_WORLD_V0_9_0.md",
+      "size": 894,
+      "sha256": "90576e27b0d95c32effb3426b72e979e54dc05e87d3e47298018d536dcd3584b"
+    },
+    {
+      "path": "10_ARPG/STAGE09/ARPG_GATHERING_WORK_CONTRACT_V1_0_0.json",
+      "size": 4334,
+      "sha256": "88d18015f46b437f1bbddc48a8a26f624854291acfc29ec3c5925faf59e638dc"
+    },
+    {
+      "path": "10_ARPG/STAGE09/ARPG_STAGE_PLAN_V0_7_0.json",
+      "size": 7194,
+      "sha256": "addea2badca7b60b4939a8cc5bb5abcbfae4a50aa653fe31089eb6812d730284"
+    },
+    {
+      "path": "10_ARPG/STAGE09/CHANGELOG_ARPG_STAGE09_V1_0_0.md",
+      "size": 767,
+      "sha256": "3de0490972c0d27a5d8b1b191488e4ddf46b572b30d254ef19ed3750e77e69c3"
+    },
+    {
+      "path": "10_ARPG/STAGE09/CHECKPOINT_ARPG_STAGE09_V1_0_0.json",
+      "size": 1887,
+      "sha256": "1289910a80d102d2e86aa71b0842f858f9fb55ff77052a42875091bc8a195041"
+    },
+    {
+      "path": "10_ARPG/STAGE09/README_ARPG_GATHERING_WORK_V1_0_0.md",
+      "size": 749,
+      "sha256": "01f32688b14e18a06808d2458ef6e6d35936deb14bd5b24913658aef354b91ff"
+    },
+    {
+      "path": "10_ARPG/STAGE10/ARPG_MOBILITY_INFRASTRUCTURE_CONTRACT_V1_1_0.json",
+      "size": 1752,
+      "sha256": "1d0e537b8e2fbafe13139f04452ca4b321d02635341c1398b1179943bd24dd95"
+    },
+    {
+      "path": "10_ARPG/STAGE10/ARPG_STAGE10_CORRECTION_LEDGER_V1_1_0.json",
+      "size": 2226,
+      "sha256": "e53c6fd573590fe4dcc1a4502afa2ccc02a0adb4926ccac5f434f09f36cd2593"
+    },
+    {
+      "path": "10_ARPG/STAGE10/ARPG_STAGE_PLAN_V0_8_0.json",
+      "size": 7661,
+      "sha256": "a645fa6c0f93f2d7483ae04d1d10eb61922011e9b61be58057681dd46f234861"
+    },
+    {
+      "path": "10_ARPG/STAGE10/CHANGELOG_ARPG_STAGE10_V1_1_0.md",
+      "size": 582,
+      "sha256": "6e549a1553210236087ab057745086612db4fb150b8f011c300e57f7a99b6b35"
+    },
+    {
+      "path": "10_ARPG/STAGE10/CHECKPOINT_ARPG_STAGE10_V1_1_0.json",
+      "size": 1218,
+      "sha256": "a53f24a8d93eb529024d780995eef797ec7b0fd5881a6993c0596b1dd49bf77f"
+    },
+    {
+      "path": "10_ARPG/STAGE10/README_ARPG_MOBILITY_V1_1_0.md",
+      "size": 605,
+      "sha256": "12d49f8c7ddb57d594d034ec7719567d2255c031230d166253a1462b631764be"
+    },
+    {
+      "path": "10_ARPG/STAGE11/ARPG_STAGE11_CORRECTION_LEDGER_V1_2_0.json",
+      "size": 930,
+      "sha256": "824cec191810a5da1eecdc5bd3cd5fd26884e092c5b7f7cbe0507afb8af9f5a6"
+    },
+    {
+      "path": "10_ARPG/STAGE11/ARPG_STAGE_PLAN_V0_9_0.json",
+      "size": 8166,
+      "sha256": "92a4a2a584cb036b9fa061aa2cd57bf5e09f3c0df09ed3694507c8ce5bdfd903"
+    },
+    {
+      "path": "10_ARPG/STAGE11/ARPG_TECH_MACHINES_ROBOTICS_CONTRACT_V1_2_0.json",
+      "size": 2222,
+      "sha256": "e0ed5b069ca46f86a3b885b956670f06f2f96b0ed36a9e8dfffc19b111cb9a2d"
+    },
+    {
+      "path": "10_ARPG/STAGE11/CHECKPOINT_ARPG_STAGE11_V1_2_0.json",
+      "size": 1138,
+      "sha256": "89f5c90779b1ca1853845a27b749b9b9812f347a1d082e594856b0248838dced"
+    },
+    {
+      "path": "10_ARPG/STAGE12/ARPG_NARRATIVE_CULTURE_CONTRACT_V1_3_0.json",
+      "size": 1578,
+      "sha256": "a4e57f054dbc3055ab53fc67531c811a46bdb51bab6efd890799a324ec43bae5"
+    },
+    {
+      "path": "10_ARPG/STAGE12/ARPG_STAGE_PLAN_V1_0_0.json",
+      "size": 8643,
+      "sha256": "adb28c1b9561393f786059d861dd7a12c930fa1d117a49a4c2ec998657a123f1"
+    },
+    {
+      "path": "10_ARPG/STAGE12/CHANGELOG_ARPG_STAGE12_V1_3_0.md",
+      "size": 350,
+      "sha256": "141f8974f7ceb7e7ad126350d0237a0c420c9731ff4819dc905cb0deba520d18"
+    },
+    {
+      "path": "10_ARPG/STAGE12/CHECKPOINT_ARPG_STAGE12_V1_3_0.json",
+      "size": 1568,
+      "sha256": "97dab3b5f014359cdcc319640495f3f83178325c0a1d92e07efe3a56d64b27da"
+    },
+    {
+      "path": "10_ARPG/STAGE12/README_ARPG_NARRATIVE_V1_3_0.md",
+      "size": 660,
+      "sha256": "6c406f42407ffc3534a756c61008d1d7a6c18999bee23768b58e602f1453375f"
+    },
+    {
+      "path": "10_ARPG/STAGE13/ARPG_ECONOMY_CRAFTING_CONTRACT_V1_4_0.json",
+      "size": 1286,
+      "sha256": "be29ecc1e7e24fa9032616d4c49822de861c1bd11a256eef5ede4e38a49d6bb3"
+    },
+    {
+      "path": "10_ARPG/STAGE13/ARPG_STAGE13_CANDIDATE_RESTORE_PROOF_V1_4_0.json",
+      "size": 498,
+      "sha256": "ebeba998ebf1cc7f6a6ebdbf6194a1cab68726fde93db1dd82a0fb8fc795ac1e"
+    },
+    {
+      "path": "10_ARPG/STAGE13/ARPG_STAGE13_COMPLETION_REPORT_V1_4_0.json",
+      "size": 1700,
+      "sha256": "af40b8963a3a6d7b8ad009e8445ff88817637548d539c287bfb85ee889abbf3e"
+    },
+    {
+      "path": "10_ARPG/STAGE13/ARPG_STAGE13_CORRECTION_LEDGER_V1_4_0.json",
+      "size": 1477,
+      "sha256": "74b5d5e38afc6f275dd6460985b5f70aef65db5c1bb16e34afaa9d4314b3a4a5"
+    },
+    {
+      "path": "10_ARPG/STAGE13/ARPG_STAGE13_TEST_SUMMARY_V1_4_0.json",
+      "size": 890,
+      "sha256": "2ac94c77783b0bd72659ae6ce696292b50addc353010a8091c86011abec9ceef"
+    },
+    {
+      "path": "10_ARPG/STAGE13/CHECKPOINT_ARPG_STAGE13_V1_4_0.json",
+      "size": 434,
+      "sha256": "f2a339adf656d22985d3f98cc51a3657ee8c64985fdfb28633a13424fa865025"
+    },
+    {
+      "path": "10_ARPG/STAGE14/ARPG_LIVING_INTEGRATION_CONTRACT_V1_5_0.json",
+      "size": 2299,
+      "sha256": "263898fb06c76d52ad90740e413081e842cb71f48ddc08b41724514ed1180e4e"
+    },
+    {
+      "path": "10_ARPG/STAGE14/ARPG_STAGE14_CORRECTION_LEDGER_V1_5_0.json",
+      "size": 2420,
+      "sha256": "9e930d279cc43e088743950e21af802b53d5c1b886b206447b6377a76f4b8248"
+    },
+    {
+      "path": "10_ARPG/STAGE14/ARPG_STAGE_PLAN_V1_2_0.json",
+      "size": 9607,
+      "sha256": "68fc3c1a4946208a4c8e106114b94254ff531c089c8443446c180abdd1238f9e"
+    },
+    {
+      "path": "10_ARPG/STAGE14/CHECKPOINT_ARPG_STAGE14_V1_5_0.json",
+      "size": 656,
+      "sha256": "a41261b5806899795b7aca57e94bf896e06c5485c1c80262d724cc628555375d"
+    },
+    {
+      "path": "10_TOOLS/V1_5_0/run_v15_determinism.py",
+      "size": 2332,
+      "sha256": "08440a43ba688531c682028578365fdb16a02c66d532dd14f5bf0ece92bf718a"
+    },
+    {
+      "path": "10_TOOLS/V1_5_0/run_v15_historical_regression.py",
+      "size": 1719,
+      "sha256": "f6b4e9606beba893013c61184eed07535d324a0dea882bf2c689ed2b8d0ac8bc"
+    },
+    {
+      "path": "10_TOOLS/V1_5_0/run_v15_integrated_stress.py",
+      "size": 4028,
+      "sha256": "ffb173cec39293c9c7593213c95e6d60b28c6f894df6f4b23d5831f5bc6c222f"
+    },
+    {
+      "path": "11_ARPG_MANIFESTS/ARPG_FOUNDATION_MANIFEST_V0_1_0.json",
+      "size": 66895,
+      "sha256": "28e4b77e7cfc9a4bec3a180731ebec7ee80c892658cb5c50f3903ed6dfa95ea4"
+    },
+    {
+      "path": "11_ARPG_MANIFESTS/ARPG_FOUNDATION_SHA256SUMS_V0_1_0",
+      "size": 41901,
+      "sha256": "c485385ce82a2698e7d6c97cd58d175c697a7d40d3e386125aa74937d6666541"
+    },
+    {
+      "path": "11_ARPG_MANIFESTS/ARPG_STAGE01_MANIFEST_V0_2_0.json",
+      "size": 70148,
+      "sha256": "9fa7858ce1145884d8b9e1c5330e4ad8c45b8914e715687a195e2449309a9f02"
+    },
+    {
+      "path": "11_ARPG_MANIFESTS/ARPG_STAGE01_SHA256SUMS_V0_2_0",
+      "size": 44132,
+      "sha256": "5d89378bc1dc126d0d36559b73fd67c591b2417db11e6d2e2be039085f45bf48"
+    },
+    {
+      "path": "11_ARPG_MANIFESTS/ARPG_STAGE02_MANIFEST_V0_3_0.json",
+      "size": 73487,
+      "sha256": "1a060a8fe776462e190160b46ac9c559f910f780b29673a7e4acb77f4e3a8144"
+    },
+    {
+      "path": "11_ARPG_MANIFESTS/ARPG_STAGE02_SHA256SUMS_V0_3_0",
+      "size": 46269,
+      "sha256": "967e3281ff812690c3dcad79752109658c9fb7c27664119c0d25e83f2acc83d5"
+    },
+    {
+      "path": "11_ARPG_MANIFESTS/ARPG_STAGE03_MANIFEST_V0_4_0.json",
+      "size": 76855,
+      "sha256": "d5ee6cc81c4b368bfb4414134de052374d4f835ac8b6f354a9d229f3ec47f9dc"
+    },
+    {
+      "path": "11_ARPG_MANIFESTS/ARPG_STAGE03_SHA256SUMS_V0_4_0",
+      "size": 48431,
+      "sha256": "344b3b6140fca8b8a7f8f336e770da8658a7768092704af58940fab7e057b911"
+    },
+    {
+      "path": "11_ARPG_MANIFESTS/ARPG_STAGE04_MANIFEST_V0_5_0.json",
+      "size": 80014,
+      "sha256": "f0605dd573f4253c6148c6c638694769405273fbc5606c0de3d31400d05513e4"
+    },
+    {
+      "path": "11_ARPG_MANIFESTS/ARPG_STAGE04_SHA256SUMS_V0_5_0",
+      "size": 50455,
+      "sha256": "242048886ce50a176c5142560358462679b6ce62831da7a3843cfa8d5dc9395c"
+    },
+    {
+      "path": "11_ARPG_MANIFESTS/ARPG_STAGE05_MANIFEST_V0_6_0.json",
+      "size": 83916,
+      "sha256": "7ffaf017be49e3b2ca80c93da839df1ef26d3a78e1568e8f74a5d4c91e0131ab"
+    },
+    {
+      "path": "11_ARPG_MANIFESTS/ARPG_STAGE05_SHA256SUMS_V0_6_0",
+      "size": 52815,
+      "sha256": "d9f4cda26b7db4611ae6dcc4e7616205bf307360e8d9d0a58710bf534ed76366"
+    },
+    {
+      "path": "11_ARPG_MANIFESTS/ARPG_STAGE06_MANIFEST_V0_7_0.json",
+      "size": 87114,
+      "sha256": "3ae014ffa05b9f460c7dc4d14b9902663ab095af2b6ffc596fba3ac54c519010"
+    },
+    {
+      "path": "11_ARPG_MANIFESTS/ARPG_STAGE06_SHA256SUMS_V0_7_0",
+      "size": 54820,
+      "sha256": "6a9df166834e42331e9d13ad686beea2a189720816d516407aa9d46a2163583a"
+    },
+    {
+      "path": "11_ARPG_MANIFESTS/ARPG_STAGE07_MANIFEST_V0_8_0.json",
+      "size": 91194,
+      "sha256": "bded32f90d4e26f602b12206a00998f2b12e12d5fbcb79df2b4705f3489d0599"
+    },
+    {
+      "path": "11_ARPG_MANIFESTS/ARPG_STAGE07_SHA256SUMS_V0_8_0",
+      "size": 57426,
+      "sha256": "7f7519bf1806ae763c9b439bbf2406f3321831359bfa2ec41b77cdb128bc4d90"
+    },
+    {
+      "path": "11_ARPG_MANIFESTS/ARPG_STAGE08_MANIFEST_V0_9_0.json",
+      "size": 94833,
+      "sha256": "5f7552d6419662eab28c0864efcc8e2dc9726b422ccb711f30a05bfacc0c966f"
+    },
+    {
+      "path": "11_ARPG_MANIFESTS/ARPG_STAGE08_SHA256SUMS_V0_9_0",
+      "size": 59911,
+      "sha256": "cd7ceeb88b45001f6f582272caaf5347dfa8edd620b304afae37e71ba99f42ea"
+    },
+    {
+      "path": "11_ARPG_MANIFESTS/ARPG_STAGE09_MANIFEST_V1_0_0.json",
+      "size": 98375,
+      "sha256": "ab278550e1c1409df116810cf91bdf88addef9441732f69418f5f4f3cdcc45ab"
+    },
+    {
+      "path": "11_ARPG_MANIFESTS/ARPG_STAGE09_SHA256SUMS_V1_0_0",
+      "size": 62175,
+      "sha256": "93e197341a1e854dfcdd28a18428dbf8aee2b419782ebcd43a893e71bf9756e8"
+    },
+    {
+      "path": "11_ARPG_MANIFESTS/ARPG_STAGE10_MANIFEST_V1_1_0.json",
+      "size": 102874,
+      "sha256": "5092c298418b8be0d806230bd348e4ed717d7260fbdf58f98743075456de30d1"
+    },
+    {
+      "path": "11_ARPG_MANIFESTS/ARPG_STAGE10_SHA256SUMS_V1_1_0",
+      "size": 65096,
+      "sha256": "085a6b5a8c471a32ae958deede26891049e29192e12b13596d701770cd365b7e"
+    },
+    {
+      "path": "11_ARPG_MANIFESTS/ARPG_STAGE11_MANIFEST_V1_2_0.json",
+      "size": 106265,
+      "sha256": "f19ee35f051a281c854d184fb3d7849394df9730f9aeaec2eda0a9d5104d470b"
+    },
+    {
+      "path": "11_ARPG_MANIFESTS/ARPG_STAGE11_SHA256SUMS_V1_2_0",
+      "size": 67280,
+      "sha256": "ec5185e174db90cac3cfb72d4c155fb47278b36417c5e6dc21a90f32366a9db5"
+    },
+    {
+      "path": "11_ARPG_MANIFESTS/ARPG_STAGE12_MANIFEST_V1_3_0.json",
+      "size": 110429,
+      "sha256": "35e06cb3ca859db100172f5c5bd54babb5d6891eb66a272065bb381c5b64b932"
+    },
+    {
+      "path": "11_ARPG_MANIFESTS/ARPG_STAGE12_SHA256SUMS_V1_3_0",
+      "size": 70055,
+      "sha256": "ece7257eaee0f26455973802547bd1cf9f9cab5a7daea2e0d880f6b5ccbb24e3"
+    },
+    {
+      "path": "CHANGELOG_V1_3_0.md",
+      "size": 1242,
+      "sha256": "5a2931a517dd54dd12b53d65436270797e0fcabda853520883ad2e0b47907606"
+    },
+    {
+      "path": "CHANGELOG_V1_4_0.md",
+      "size": 666,
+      "sha256": "f0e2f3e1566f82dcf03240d2e0878ec171a64796d64a3920fad8d67145a4e035"
+    },
+    {
+      "path": "DEV_MANIFEST_V1_2_0.json",
+      "size": 35203,
+      "sha256": "c5804ffcddffbdd4b8f28e75b58fd3c803419607b52f9d517f20899d8b831abd"
+    },
+    {
+      "path": "ENGINE_MANIFEST_V1_1_0.json",
+      "size": 31855,
+      "sha256": "0148a04d71a526948c67b4d8d4b32f7877edda37884afb2db05367dc9760021e"
+    },
+    {
+      "path": "ENGINE_MANIFEST_V1_3_0.json",
+      "size": 45897,
+      "sha256": "ca5347c1575367d0c58fb7cb3a6e54048f03011b2a80c9541e5183be8d22dfb8"
+    },
+    {
+      "path": "ENGINE_MANIFEST_V1_4_0.json",
+      "size": 113247,
+      "sha256": "f794b1a05bdbae02fe9fefabdadae86c8267f375a908dcfd9de9596f6de2fcd3"
+    },
+    {
+      "path": "ENGINE_SHA256SUMS_V1_1_0",
+      "size": 19659,
+      "sha256": "dad029a58cd6fab3e22744e2069dc170f56e1ef24f708d9a23ccd269f23d01c8"
+    },
+    {
+      "path": "ENGINE_SHA256SUMS_V1_3_0",
+      "size": 28635,
+      "sha256": "9131e48ccc11936c970bb6f76c916286ff3a440213af2c2c9576b60cb863b207"
+    },
+    {
+      "path": "ENGINE_SHA256SUMS_V1_4_0",
+      "size": 71722,
+      "sha256": "04017917f76d382de74e84f823026256cc84eb5dda2ce8b9e6dbdc321861852d"
+    },
+    {
+      "path": "README_RELEASE_V1_1_0.md",
+      "size": 520,
+      "sha256": "6e22b7faa1cc13d9f748ede8729e0e91f447834cd74b06dcbc8eff7a6a241f3f"
+    },
+    {
+      "path": "README_RELEASE_V1_3_0.md",
+      "size": 351,
+      "sha256": "fc117339b66add9f0422c79d047d4f6505176fe43acef4bc40eb12cb450f8698"
+    },
+    {
+      "path": "README_RELEASE_V1_4_0.md",
+      "size": 339,
+      "sha256": "e0f99df0308282b83e6d0c56fb4c132ff818bd69c86a2d966ae6c47bf677381c"
+    }
+  ],
+  "status": "PASS"
+}

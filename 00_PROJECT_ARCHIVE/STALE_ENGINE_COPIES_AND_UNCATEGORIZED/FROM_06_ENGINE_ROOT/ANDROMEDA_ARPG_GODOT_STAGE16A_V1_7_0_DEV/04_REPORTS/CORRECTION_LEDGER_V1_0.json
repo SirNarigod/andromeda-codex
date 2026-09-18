@@ -1,0 +1,78 @@
+{
+  "record_id": "STAGE13-CORRECTION-LEDGER-V1.0",
+  "stage": "ETAPA_13",
+  "closed": [
+    {
+      "id": "ET13-FIX-001",
+      "type": "IMPLEMENTATION",
+      "severity": "HIGH",
+      "issue": "ADMIN LLM metrics assumed world_instance_id on llm_responses",
+      "fix": "Count responses through request_id join to llm_requests",
+      "status": "CLOSED"
+    },
+    {
+      "id": "ET13-FIX-002",
+      "type": "ARCHITECTURE",
+      "severity": "HIGH",
+      "issue": "Direct Atlas readers contended with authoritative SQLite writer under stress",
+      "fix": "Atomic backend-only SQLite snapshot publisher under Runtime write lock",
+      "status": "CLOSED"
+    },
+    {
+      "id": "ET13-FIX-003",
+      "type": "PERFORMANCE",
+      "severity": "MEDIUM",
+      "issue": "Each Atlas reader reparsed 5.4 MB canonical atlas-data.json",
+      "fix": "Process-level canonical Atlas cache after sealed Master SHA verification",
+      "status": "CLOSED"
+    },
+    {
+      "id": "ET13-FIX-004",
+      "type": "SECURITY",
+      "severity": "HIGH",
+      "issue": "Restricted IDs could leak inside nested event/social/causal payloads",
+      "fix": "Recursive canonical/runtime reference redaction",
+      "status": "CLOSED"
+    },
+    {
+      "id": "ET13-FIX-005",
+      "type": "INTEGRITY",
+      "severity": "HIGH",
+      "issue": "Projection initially trusted materialized state/social/ecology rows without rechecking row hashes",
+      "fix": "Fail-closed row hash verification plus Runtime core integrity gate before snapshot",
+      "status": "CLOSED"
+    },
+    {
+      "id": "ET13-FIX-006",
+      "type": "SECURITY",
+      "severity": "HIGH",
+      "issue": "Snapshot DB could be mistaken for client-deliverable artifact",
+      "fix": "Snapshot marked BACKEND_ONLY, chmod 0600, client contract JSON-only",
+      "status": "CLOSED"
+    }
+  ],
+  "harness_corrections": [
+    {
+      "id": "ET13-HARNESS-001",
+      "issue": "Social seed omitted required reason",
+      "status": "CLOSED"
+    },
+    {
+      "id": "ET13-HARNESS-002",
+      "issue": "Ecology seed omitted runtime species profile",
+      "status": "CLOSED"
+    },
+    {
+      "id": "ET13-HARNESS-003",
+      "issue": "Extended test treated absent raw_content_exposed key as exposed in worlds without LLM tables",
+      "status": "CLOSED"
+    },
+    {
+      "id": "ET13-HARNESS-004",
+      "issue": "Coverage source argument used file path rather than source directory",
+      "status": "CLOSED"
+    }
+  ],
+  "open": 0,
+  "status": "PASS"
+}

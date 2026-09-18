@@ -1,0 +1,148 @@
+{
+  "record_id": "R2_REBASE_LOT_008_VALIDATION_V1_0",
+  "generated_at": "2026-09-07T01:27:52.6668734-03:00",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "json:02_REGRAS/STELLAR_FOUNDATION/STELLAR_PLAYABLE_TAXONOMY_LAW_V1_0.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:02_REGRAS/STELLAR_FOUNDATION/STELLAR_CONTENT_ROUTING_CONSTITUTION_V1_2.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:02_REGRAS/STELLAR_FOUNDATION/STELLAR_LIVING_CONTENT_INTEGRATION_LAW_V1_2.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:04_MECANICAS/ECONOMIA_E_RECURSOS/STELLAR_RESOURCE_CATALOG_V1_0.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:04_MECANICAS/TRABALHO_E_PROFISSOES/STELLAR_PROFESSION_CATALOG_V1_0.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:04_MECANICAS/NPCS_E_INTERACOES/STELLAR_NPC_ROLE_CATALOG_V1_0.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:04_MECANICAS/NPCS_E_INTERACOES/STELLAR_R2_NAMED_APPEARANCE_GUARD_V1_0.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:04_MECANICAS/INIMIGOS_E_COMBATE/STELLAR_ENCOUNTER_CATALOG_V1_0.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:01_LORE/CONTENT_ROUTING_REGISTRY_V3.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:02_REGRAS/STELLAR_FOUNDATION/STELLAR_FOUNDATION_INDEX_V1_8.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:02_REGRAS/STELLAR_REBASE_R2/R2_REBASE_DECISION_LEDGER_V1_7.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:02_REGRAS/STELLAR_REBASE_R2/ANDROMEDA_AUTHORITY_MATRIX_V9_R2_REBASED.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:06_ENGINE/ACTIVE_CONTENT_ADAPTERS/LIVING_SIM_CONTENT_PROJECTION_V3.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:06_ENGINE/ACTIVE_CONTENT_ADAPTERS/LIVING_SCALE_CONTENT_PROJECTION_V3.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:07_AUTOMATION/EXPORTS/UE5/ANDROMEDA_UE5_CONTENT_MANIFEST_V3.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "catalog_counts",
+      "passed": true,
+      "detail": "Expected full qualitative catalog counts are present."
+    },
+    {
+      "name": "encounter_source_coverage",
+      "passed": true,
+      "detail": "All 13 R2 fauna records and COR-001 receive one encounter profile."
+    },
+    {
+      "name": "fauna_not_default_enemy",
+      "passed": true,
+      "detail": "No fauna profile uses default enemy classification."
+    },
+    {
+      "name": "root_authorial_gate",
+      "passed": true,
+      "detail": "Root profile is authorially gated."
+    },
+    {
+      "name": "named_r2_protected",
+      "passed": true,
+      "detail": "Named R2 persons, Kenua and the Episode 8 boundary are protected."
+    },
+    {
+      "name": "npc_job_references",
+      "passed": true,
+      "detail": "Every NPC role resolves to an existing profession."
+    },
+    {
+      "name": "routing_and_pending_niche",
+      "passed": true,
+      "detail": "All four playable niches are routed; only R2 subregions remain pending."
+    },
+    {
+      "name": "active_index_paths",
+      "passed": true,
+      "detail": "Every active contract resolves."
+    },
+    {
+      "name": "living_read_only",
+      "passed": true,
+      "detail": "Living projections remain read-only."
+    },
+    {
+      "name": "ue5_catalog_export",
+      "passed": true,
+      "detail": "UE5 manifest exposes all qualitative catalogs and blocks numeric canon."
+    },
+    {
+      "name": "source_hash:ANDROMEDA_CODEX_EVIDENCE/SOURCE_ARCHIVES/andromeda-argp.zip",
+      "passed": true,
+      "detail": "998a1940856943aa68043f749c1e615900681b3cde8346c568d25dd6c79f9ce1"
+    },
+    {
+      "name": "source_hash:ANDROMEDA_CODEX_EVIDENCE/SOURCE_ARCHIVES/Projeto Andromeda.zip",
+      "passed": true,
+      "detail": "257e456a5d0396310ec2355b3dfc0f11f4e0a5264cf6e764591c8760f5070cb0"
+    },
+    {
+      "name": "source_hash:ANDROMEDA_CODEX_EVIDENCE/SOURCE_ARCHIVES/ARPG CODEX.zip",
+      "passed": true,
+      "detail": "16d602f767ee178b5ca25dec9ad801065d95f09d074358632bf5ed5f0f25e9c8"
+    }
+  ],
+  "errors": []
+}

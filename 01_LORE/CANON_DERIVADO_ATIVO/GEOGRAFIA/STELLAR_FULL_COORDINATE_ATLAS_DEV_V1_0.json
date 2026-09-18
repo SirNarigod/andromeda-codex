@@ -1,0 +1,1824 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-FULL-COORDINATE-ATLAS-DEV-V1.0",
+  "title": "Atlas de Coordenadas Completo — Localidades, Paisagens, Pontes, Zonas Agrícolas e POIs",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "r2_guard": "Mesmo CRS sintético e mesmo método já usados desde a fase 37/STELLAR_LOCAL_CONSTRUCTION_COORDINATES (offset determinístico por hash do próprio ID a partir do centro da subregião/território-mãe já catalogado) — nenhuma geografia nova é inventada, nenhuma fronteira política é definida. altitude_m usa a tabela ALTITUDE_TIER_BY_TERRAIN (gameplay-derived/NOT_CANON), lida a partir do terrain_type já classificado (STELLAR_TERRAIN_TRAVEL_SYSTEM_DEV_V1_0.json), nunca um valor novo inventado por local.",
+  "altitude_tier_by_terrain": {
+    "SUBTERRANEO": -80.0,
+    "ABISSAL_SUBMERSO": -600.0,
+    "AQUATICO": -2.0,
+    "AEREO": 900.0,
+    "AEREO_ETEREO": 1400.0,
+    "MONTANHA_ROCHOSA": 350.0,
+    "GLACIAL": 120.0,
+    "VULCANICO": 250.0
+  },
+  "compass_rule_ref": "STELLAR_CARDINAL_ORIENTATION_SYSTEM_DEV_V1_0.json (fórmula reutilizável, nenhum dado novo por local necessário)",
+  "scale_ref": "STELLAR_MEASUREMENT_SCALE_SYSTEM_DEV_V1_0.json (conversão grau→km calibrada)",
+  "poi_unresolved_no_territory": [],
+  "poi_resolution_note_fase_60": "POI-051/052 resolvidos pelo import Master LOCAL (MASTER_LOCAL_POI_CATALOG_V2_0_0.json): POI-051 Complexo de Pesquisa Controlado (LOC-014, spoiler 3) e POI-052 Nucleo da Flor Fossil (LOC-015/FAC-005, spoiler 4). Ambos territory_ref null (locais especiais fora dos 13 territorios-base) — nao entram no mapa territorial deste atlas por guarda de spoiler; ver catalogo Master para detalhe.",
+  "localities": [
+    {
+      "loc_id": "LOC-017-001",
+      "name": "Doca Eterea",
+      "parent_subregion": "SUB-017-001",
+      "longitude": 39.418,
+      "latitude": -12.3343,
+      "altitude_m": 1286.94,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-017-002",
+      "name": "Posto das Correntes",
+      "parent_subregion": "SUB-017-002",
+      "longitude": 37.2994,
+      "latitude": -11.4454,
+      "altitude_m": 1361.67,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-017-003",
+      "name": "Refugio Errante",
+      "parent_subregion": "SUB-017-003",
+      "longitude": 35.1803,
+      "latitude": -12.3313,
+      "altitude_m": 1323.69,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-004-001",
+      "name": "Cais Principal",
+      "parent_subregion": "SUB-004-001",
+      "longitude": 6.9419,
+      "latitude": 41.8341,
+      "altitude_m": -1.69,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-004-002",
+      "name": "Vila dos Pescadores",
+      "parent_subregion": "SUB-004-002",
+      "longitude": 4.816,
+      "latitude": 42.703,
+      "altitude_m": -1.36,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-004-003",
+      "name": "Salão das Ondas",
+      "parent_subregion": "SUB-004-003",
+      "longitude": 2.7013,
+      "latitude": 41.8347,
+      "altitude_m": -1.61,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-014-001",
+      "name": "Poço da Fundição",
+      "parent_subregion": "SUB-014-001",
+      "longitude": 38.1635,
+      "latitude": -15.2318,
+      "altitude_m": 267.25,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-014-002",
+      "name": "Muralha Resfriada",
+      "parent_subregion": "SUB-014-002",
+      "longitude": 36.0384,
+      "latitude": -14.3576,
+      "altitude_m": 209.19,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-014-003",
+      "name": "Terraços de Cinza",
+      "parent_subregion": "SUB-014-003",
+      "longitude": 33.9233,
+      "latitude": -15.2286,
+      "altitude_m": 1.97,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-001-001",
+      "name": "Mercado Central",
+      "parent_subregion": "SUB-001-001",
+      "longitude": 42.1259,
+      "latitude": 2.1199,
+      "altitude_m": 1.63,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-001-002",
+      "name": "Posto de Caravana",
+      "parent_subregion": "SUB-001-002",
+      "longitude": 40.0032,
+      "latitude": 2.9948,
+      "altitude_m": -2.37,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-001-003",
+      "name": "Salão dos Mercadores",
+      "parent_subregion": "SUB-001-003",
+      "longitude": 37.8813,
+      "latitude": 2.1257,
+      "altitude_m": -2.69,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-016-001",
+      "name": "Posto da Geleira",
+      "parent_subregion": "SUB-016-001",
+      "longitude": 39.0716,
+      "latitude": -13.1871,
+      "altitude_m": 120.74,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-016-002",
+      "name": "Abrigo Central",
+      "parent_subregion": "SUB-016-002",
+      "longitude": 36.9528,
+      "latitude": -12.3115,
+      "altitude_m": 110.4,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-016-003",
+      "name": "Vigia da Fenda",
+      "parent_subregion": "SUB-016-003",
+      "longitude": 34.8294,
+      "latitude": -13.1863,
+      "altitude_m": 134.92,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-010-001",
+      "name": "Salão do Conselho",
+      "parent_subregion": "SUB-010-001",
+      "longitude": -12.0579,
+      "latitude": -35.2815,
+      "altitude_m": -2.5,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-010-002",
+      "name": "Academia da Vertente",
+      "parent_subregion": "SUB-010-002",
+      "longitude": -14.1784,
+      "latitude": -34.3967,
+      "altitude_m": 2.01,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-010-003",
+      "name": "Poço da Corrente",
+      "parent_subregion": "SUB-010-003",
+      "longitude": -16.3092,
+      "latitude": -35.2847,
+      "altitude_m": -2.05,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-013-001",
+      "name": "Portão Principal",
+      "parent_subregion": "SUB-013-001",
+      "longitude": 37.5434,
+      "latitude": -16.4671,
+      "altitude_m": -1.15,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-013-002",
+      "name": "Salão de Serverus",
+      "parent_subregion": "SUB-013-002",
+      "longitude": 35.4133,
+      "latitude": -15.5871,
+      "altitude_m": 1.06,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-013-003",
+      "name": "Passagem Oculta",
+      "parent_subregion": "SUB-013-003",
+      "longitude": 33.302,
+      "latitude": -16.4682,
+      "altitude_m": -2.07,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-018-001",
+      "name": "Cupula da Trincheira",
+      "parent_subregion": "SUB-018-001",
+      "longitude": 39.7066,
+      "latitude": -11.5569,
+      "altitude_m": -596.56,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-018-002",
+      "name": "Vila dos Recifes",
+      "parent_subregion": "SUB-018-002",
+      "longitude": 37.5866,
+      "latitude": -10.678,
+      "altitude_m": -718.3,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-018-003",
+      "name": "Estacao de Pressao",
+      "parent_subregion": "SUB-018-003",
+      "longitude": 35.4671,
+      "latitude": -11.5642,
+      "altitude_m": -691.48,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-009-001",
+      "name": "Câmara Central de Cristal",
+      "parent_subregion": "SUB-009-001",
+      "longitude": -27.8195,
+      "latitude": -24.403,
+      "altitude_m": -71.1,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-009-002",
+      "name": "Posto de Extração",
+      "parent_subregion": "SUB-009-002",
+      "longitude": -29.9396,
+      "latitude": -23.5241,
+      "altitude_m": -72.81,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-009-003",
+      "name": "Salão da Assembleia",
+      "parent_subregion": "SUB-009-003",
+      "longitude": -32.0567,
+      "latitude": -24.3991,
+      "altitude_m": -67.87,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-019-001",
+      "name": "Posto do Dossel",
+      "parent_subregion": "SUB-019-001",
+      "longitude": 39.9569,
+      "latitude": -10.8722,
+      "altitude_m": -0.5,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-019-002",
+      "name": "Sitio das Ruinas Cobertas",
+      "parent_subregion": "SUB-019-002",
+      "longitude": 37.8289,
+      "latitude": -9.9842,
+      "altitude_m": 1.67,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-019-003",
+      "name": "Vigia do Pantano",
+      "parent_subregion": "SUB-019-003",
+      "longitude": 35.7105,
+      "latitude": -10.8706,
+      "altitude_m": 2.0,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-005-001",
+      "name": "Oficina de Convergência",
+      "parent_subregion": "SUB-005-001",
+      "longitude": -12.0585,
+      "latitude": 39.5209,
+      "altitude_m": 1.83,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-005-002",
+      "name": "Laboratório Central",
+      "parent_subregion": "SUB-005-002",
+      "longitude": -14.1848,
+      "latitude": 40.3965,
+      "altitude_m": 0.89,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-005-003",
+      "name": "Salão do Principado",
+      "parent_subregion": "SUB-005-003",
+      "longitude": -16.3103,
+      "latitude": 39.5248,
+      "altitude_m": -2.46,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-006-001",
+      "name": "Plataforma Real",
+      "parent_subregion": "SUB-006-001",
+      "longitude": -27.8198,
+      "latitude": 28.6489,
+      "altitude_m": 839.87,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-006-002",
+      "name": "Doca Aérea",
+      "parent_subregion": "SUB-006-002",
+      "longitude": -29.9368,
+      "latitude": 29.521,
+      "altitude_m": 868.89,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-006-003",
+      "name": "Salão Eletivo",
+      "parent_subregion": "SUB-006-003",
+      "longitude": -32.0581,
+      "latitude": 28.6457,
+      "altitude_m": 982.5,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-002-001",
+      "name": "Forja Real de Kharveth",
+      "parent_subregion": "SUB-002-001",
+      "longitude": 37.5434,
+      "latitude": 20.712,
+      "altitude_m": 1.14,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-002-002",
+      "name": "Doca de Kharveth",
+      "parent_subregion": "SUB-002-002",
+      "longitude": 35.4228,
+      "latitude": 21.583,
+      "altitude_m": 0.84,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-002-003",
+      "name": "Posto dos Trilhos",
+      "parent_subregion": "SUB-002-003",
+      "longitude": 33.2955,
+      "latitude": 20.7088,
+      "altitude_m": -1.18,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-003-001",
+      "name": "Estação Central",
+      "parent_subregion": "SUB-003-001",
+      "longitude": 24.8404,
+      "latitude": 35.0376,
+      "altitude_m": -2.2,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-003-002",
+      "name": "Pátio de Manutenção",
+      "parent_subregion": "SUB-003-002",
+      "longitude": 22.7236,
+      "latitude": 35.9245,
+      "altitude_m": -1.18,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-003-003",
+      "name": "Câmara da Assembleia",
+      "parent_subregion": "SUB-003-003",
+      "longitude": 20.5972,
+      "latitude": 35.0376,
+      "altitude_m": -1.93,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-007-001",
+      "name": "Jardim Central",
+      "parent_subregion": "SUB-007-001",
+      "longitude": -36.7211,
+      "latitude": 11.6955,
+      "altitude_m": -1.23,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-007-002",
+      "name": "Casa de Cura Maior",
+      "parent_subregion": "SUB-007-002",
+      "longitude": -38.843,
+      "latitude": 12.573,
+      "altitude_m": -1.81,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-007-003",
+      "name": "Salão do Conselho de Saúde",
+      "parent_subregion": "SUB-007-003",
+      "longitude": -40.9597,
+      "latitude": 11.6903,
+      "altitude_m": -1.27,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-008-001",
+      "name": "Santuário das Copas",
+      "parent_subregion": "SUB-008-001",
+      "longitude": -36.7196,
+      "latitude": -7.4501,
+      "altitude_m": 1.96,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-008-002",
+      "name": "Templo das Raízes",
+      "parent_subregion": "SUB-008-002",
+      "longitude": -38.8363,
+      "latitude": -6.567,
+      "altitude_m": 0.18,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-008-003",
+      "name": "Círculo Ancião",
+      "parent_subregion": "SUB-008-003",
+      "longitude": -40.9598,
+      "latitude": -7.4565,
+      "altitude_m": 2.65,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-011-002",
+      "name": "Entroncamento Oriental",
+      "parent_subregion": "SUB-011-002",
+      "longitude": 4.8241,
+      "latitude": -36.7069,
+      "altitude_m": 2.83,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-011-003",
+      "name": "Curral de Luminal",
+      "parent_subregion": "SUB-011-003",
+      "longitude": 2.6965,
+      "latitude": -37.5904,
+      "altitude_m": -2.57,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-011-004",
+      "name": "Vau de Raizel",
+      "parent_subregion": "SUB-011-004",
+      "longitude": 1.8204,
+      "latitude": -39.7028,
+      "altitude_m": -0.42,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-011-005",
+      "name": "Oficina de Charneira",
+      "parent_subregion": "SUB-011-005",
+      "longitude": 2.6996,
+      "latitude": -41.8322,
+      "altitude_m": -2.3,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-011-006",
+      "name": "Abrigo das Fendas",
+      "parent_subregion": "SUB-011-006",
+      "longitude": 4.826,
+      "latitude": -42.7118,
+      "altitude_m": 358.16,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-015-001",
+      "name": "Acampamento das Dunas",
+      "parent_subregion": "SUB-015-001",
+      "longitude": 38.6656,
+      "latitude": -14.1447,
+      "altitude_m": 0.81,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-015-002",
+      "name": "Sítio das Ruínas",
+      "parent_subregion": "SUB-015-002",
+      "longitude": 36.5394,
+      "latitude": -13.2745,
+      "altitude_m": 0.13,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-015-003",
+      "name": "Poço Fundo",
+      "parent_subregion": "SUB-015-003",
+      "longitude": 34.4192,
+      "latitude": -14.1427,
+      "altitude_m": -0.79,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-012-001",
+      "name": "Posto de Perímetro",
+      "parent_subregion": "SUB-012-001",
+      "longitude": 24.845,
+      "latitude": -30.7932,
+      "altitude_m": -0.01,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-012-002",
+      "name": "Acampamento de Acolhimento",
+      "parent_subregion": "SUB-012-002",
+      "longitude": 22.7281,
+      "latitude": -29.9213,
+      "altitude_m": -2.72,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "loc_id": "LOC-012-003",
+      "name": "Quartel de Comando",
+      "parent_subregion": "SUB-012-003",
+      "longitude": 20.603,
+      "latitude": -30.7945,
+      "altitude_m": 0.67,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    }
+  ],
+  "landscapes": [
+    {
+      "feature_id": "PAI-001",
+      "name": "Planicie de Feira Central de Lúminor",
+      "subregion_id": "SUB-001-001",
+      "longitude": 42.1242,
+      "latitude": 2.1145,
+      "altitude_m": 0.14,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-002",
+      "name": "Planicie de Rota das Caravanas",
+      "subregion_id": "SUB-001-002",
+      "longitude": 40.005,
+      "latitude": 2.9994,
+      "altitude_m": 2.98,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-003",
+      "name": "Planicie de Câmara dos Mercadores",
+      "subregion_id": "SUB-001-003",
+      "longitude": 37.8836,
+      "latitude": 2.1182,
+      "altitude_m": 1.53,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-004",
+      "name": "Planicie de Cinturão das Forjas",
+      "subregion_id": "SUB-002-001",
+      "longitude": 37.5426,
+      "latitude": 20.7088,
+      "altitude_m": 0.0,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-005",
+      "name": "Planicie de Distrito Portuário de Kharveth",
+      "subregion_id": "SUB-002-002",
+      "longitude": 35.4144,
+      "latitude": 21.5868,
+      "altitude_m": 0.15,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-006",
+      "name": "Planicie de Trilhos do Minério",
+      "subregion_id": "SUB-002-003",
+      "longitude": 33.2925,
+      "latitude": 20.7178,
+      "altitude_m": -1.56,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-007",
+      "name": "Planicie de Nó Ferroviário Central",
+      "subregion_id": "SUB-003-001",
+      "longitude": 24.8453,
+      "latitude": 35.0392,
+      "altitude_m": 1.49,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-008",
+      "name": "Planicie de Distrito das Oficinas Ferroviárias",
+      "subregion_id": "SUB-003-002",
+      "longitude": 22.7304,
+      "latitude": 35.9134,
+      "altitude_m": -1.93,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-009",
+      "name": "Planicie de Assembleia de Ortheon",
+      "subregion_id": "SUB-003-003",
+      "longitude": 20.6022,
+      "latitude": 35.045,
+      "altitude_m": -1.96,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-010",
+      "name": "Baia de Porto Livre de Navyr",
+      "subregion_id": "SUB-004-001",
+      "longitude": 6.9391,
+      "latitude": 41.8285,
+      "altitude_m": -2.67,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-011",
+      "name": "Baia de Ilhas de Pesca",
+      "subregion_id": "SUB-004-002",
+      "longitude": 4.8153,
+      "latitude": 42.7011,
+      "altitude_m": -2.17,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-012",
+      "name": "Baia de Conselho das Ondas",
+      "subregion_id": "SUB-004-003",
+      "longitude": 2.7002,
+      "latitude": 41.8306,
+      "altitude_m": -1.92,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-013",
+      "name": "Planicie de Distrito Tecnomágico",
+      "subregion_id": "SUB-005-001",
+      "longitude": -12.0648,
+      "latitude": 39.5193,
+      "altitude_m": 0.16,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-014",
+      "name": "Planicie de Laboratórios de Convergência",
+      "subregion_id": "SUB-005-002",
+      "longitude": -14.1806,
+      "latitude": 40.3937,
+      "altitude_m": -1.05,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-015",
+      "name": "Planicie de Corte de Ithra",
+      "subregion_id": "SUB-005-003",
+      "longitude": -16.2995,
+      "latitude": 39.5213,
+      "altitude_m": -0.89,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-016",
+      "name": "Corrente Aerea de Plataformas Altas",
+      "subregion_id": "SUB-006-001",
+      "longitude": -27.812,
+      "latitude": 28.6518,
+      "altitude_m": 824.42,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-017",
+      "name": "Corrente Aerea de Ancoradouro de Naves",
+      "subregion_id": "SUB-006-002",
+      "longitude": -29.9406,
+      "latitude": 29.5272,
+      "altitude_m": 979.42,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-018",
+      "name": "Corrente Aerea de Câmara Eletiva",
+      "subregion_id": "SUB-006-003",
+      "longitude": -32.0538,
+      "latitude": 28.64,
+      "altitude_m": 918.15,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-019",
+      "name": "Planicie de Jardins Medicinais",
+      "subregion_id": "SUB-007-001",
+      "longitude": -36.7177,
+      "latitude": 11.6948,
+      "altitude_m": -0.74,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-020",
+      "name": "Planicie de Casas de Cura",
+      "subregion_id": "SUB-007-002",
+      "longitude": -38.8452,
+      "latitude": 12.5682,
+      "altitude_m": -0.25,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-021",
+      "name": "Planicie de Conselho de Saúde",
+      "subregion_id": "SUB-007-003",
+      "longitude": -40.9511,
+      "latitude": 11.701,
+      "altitude_m": -2.4,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-022",
+      "name": "Floresta de Copas Altas",
+      "subregion_id": "SUB-008-001",
+      "longitude": -36.7199,
+      "latitude": -7.4508,
+      "altitude_m": 2.73,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-023",
+      "name": "Floresta de Raízes Sagradas",
+      "subregion_id": "SUB-008-002",
+      "longitude": -38.8305,
+      "latitude": -6.574,
+      "altitude_m": 1.12,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-024",
+      "name": "Floresta de Círculo dos Anciãos",
+      "subregion_id": "SUB-008-003",
+      "longitude": -40.9659,
+      "latitude": -7.4503,
+      "altitude_m": 2.99,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-025",
+      "name": "Caverna de Câmaras de Cristal",
+      "subregion_id": "SUB-009-001",
+      "longitude": -27.819,
+      "latitude": -24.4039,
+      "altitude_m": -70.63,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-026",
+      "name": "Caverna de Túneis de Extração",
+      "subregion_id": "SUB-009-002",
+      "longitude": -29.9412,
+      "latitude": -23.5239,
+      "altitude_m": -92.43,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-027",
+      "name": "Caverna de Assembleia Subcristal",
+      "subregion_id": "SUB-009-003",
+      "longitude": -32.0661,
+      "latitude": -24.4026,
+      "altitude_m": -94.71,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-028",
+      "name": "Planicie de Anel do Conselho Enohariano",
+      "subregion_id": "SUB-010-001",
+      "longitude": -12.0587,
+      "latitude": -35.2745,
+      "altitude_m": 2.06,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-029",
+      "name": "Planicie de Vertente dos Aprendizes",
+      "subregion_id": "SUB-010-002",
+      "longitude": -14.1854,
+      "latitude": -34.3995,
+      "altitude_m": -2.79,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-030",
+      "name": "Planicie de Marcas da Corrente",
+      "subregion_id": "SUB-010-003",
+      "longitude": -16.3086,
+      "latitude": -35.287,
+      "altitude_m": 0.03,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-031",
+      "name": "Planicie de Fronteira de Varga",
+      "subregion_id": "SUB-011-001",
+      "longitude": 6.9435,
+      "latitude": -37.5877,
+      "altitude_m": 0.5,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-032",
+      "name": "Planicie de Corredor Oriental",
+      "subregion_id": "SUB-011-002",
+      "longitude": 4.8263,
+      "latitude": -36.7081,
+      "altitude_m": 0.69,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-033",
+      "name": "Planicie de Pastagens Luminais",
+      "subregion_id": "SUB-011-003",
+      "longitude": 2.7053,
+      "latitude": -37.5809,
+      "altitude_m": -2.63,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-034",
+      "name": "Sub-bosque de Baixios de Raizel",
+      "subregion_id": "SUB-011-004",
+      "longitude": 1.8261,
+      "latitude": -39.7054,
+      "altitude_m": -0.18,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-035",
+      "name": "Planicie de Charneira das Oficinas",
+      "subregion_id": "SUB-011-005",
+      "longitude": 2.7037,
+      "latitude": -41.8225,
+      "altitude_m": -2.91,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-036",
+      "name": "Monte de Fendas da Névoa",
+      "subregion_id": "SUB-011-006",
+      "longitude": 4.8196,
+      "latitude": -42.7087,
+      "altitude_m": 291.24,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-037",
+      "name": "Perimetro de Perímetro de Contenção Alfa",
+      "subregion_id": "SUB-012-001",
+      "longitude": 24.8386,
+      "latitude": -30.8055,
+      "altitude_m": 1.54,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-038",
+      "name": "Perimetro de Campo de Deslocados",
+      "subregion_id": "SUB-012-002",
+      "longitude": 22.7163,
+      "latitude": -29.921,
+      "altitude_m": 0.46,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-039",
+      "name": "Perimetro de Comando Emergencial",
+      "subregion_id": "SUB-012-003",
+      "longitude": 20.6042,
+      "latitude": -30.8022,
+      "altitude_m": 0.4,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-040",
+      "name": "Planicie de Muralhas do Trovão",
+      "subregion_id": "SUB-013-001",
+      "longitude": 37.5337,
+      "latitude": -16.4685,
+      "altitude_m": 0.71,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-041",
+      "name": "Planicie de Salão dos Contratados",
+      "subregion_id": "SUB-013-002",
+      "longitude": 35.4241,
+      "latitude": -15.5823,
+      "altitude_m": -2.24,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-042",
+      "name": "Planicie de Passagem Secreta",
+      "subregion_id": "SUB-013-003",
+      "longitude": 33.2895,
+      "latitude": -16.4727,
+      "altitude_m": -2.59,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-043",
+      "name": "Vulcao de Caldeira Ativa",
+      "subregion_id": "SUB-014-001",
+      "longitude": 38.1654,
+      "latitude": -15.2324,
+      "altitude_m": 267.03,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-044",
+      "name": "Vulcao de Assentamento da Cratera",
+      "subregion_id": "SUB-014-002",
+      "longitude": 36.0433,
+      "latitude": -14.3552,
+      "altitude_m": 217.53,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-045",
+      "name": "Planicie de Campos de Cinza",
+      "subregion_id": "SUB-014-003",
+      "longitude": 33.9145,
+      "latitude": -15.2324,
+      "altitude_m": 2.18,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-046",
+      "name": "Dunas de Dunas Ocultas",
+      "subregion_id": "SUB-015-001",
+      "longitude": 38.658,
+      "latitude": -14.149,
+      "altitude_m": -2.01,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-047",
+      "name": "Sitio de Ruinas de Antes-do-Pacto",
+      "subregion_id": "SUB-015-002",
+      "longitude": 36.5347,
+      "latitude": -13.2726,
+      "altitude_m": -0.86,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-048",
+      "name": "Oasis de Oasis do Poco Fundo",
+      "subregion_id": "SUB-015-003",
+      "longitude": 34.4162,
+      "latitude": -14.1519,
+      "altitude_m": -1.51,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-049",
+      "name": "Geleira de Geleira Perene",
+      "subregion_id": "SUB-016-001",
+      "longitude": 39.0731,
+      "latitude": -13.1909,
+      "altitude_m": 129.53,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-050",
+      "name": "Geleira de Abrigo sob o Gelo",
+      "subregion_id": "SUB-016-002",
+      "longitude": 36.9611,
+      "latitude": -12.3054,
+      "altitude_m": 112.57,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-051",
+      "name": "Geleira de Fenda Congelada",
+      "subregion_id": "SUB-016-003",
+      "longitude": 34.8319,
+      "latitude": -13.1858,
+      "altitude_m": 96.6,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-052",
+      "name": "Corrente Eterea de Ilha-Ancora",
+      "subregion_id": "SUB-017-001",
+      "longitude": 39.4246,
+      "latitude": -12.3236,
+      "altitude_m": 1282.9,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-053",
+      "name": "Corrente Eterea de Correntes de Eter",
+      "subregion_id": "SUB-017-002",
+      "longitude": 37.2965,
+      "latitude": -11.4549,
+      "altitude_m": 1265.76,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-054",
+      "name": "Corrente Eterea de Ilhas Errantes",
+      "subregion_id": "SUB-017-003",
+      "longitude": 35.1739,
+      "latitude": -12.3282,
+      "altitude_m": 1444.02,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-055",
+      "name": "Abismo de Trincheira Profunda",
+      "subregion_id": "SUB-018-001",
+      "longitude": 39.7082,
+      "latitude": -11.5528,
+      "altitude_m": -517.21,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-056",
+      "name": "Abismo de Recifes Luminosos",
+      "subregion_id": "SUB-018-002",
+      "longitude": 37.5866,
+      "latitude": -10.6746,
+      "altitude_m": -587.41,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-057",
+      "name": "Abismo de Camaras de Pressao",
+      "subregion_id": "SUB-018-003",
+      "longitude": 35.4631,
+      "latitude": -11.5539,
+      "altitude_m": -644.1,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-058",
+      "name": "Selva de Dossel Verde",
+      "subregion_id": "SUB-019-001",
+      "longitude": 39.962,
+      "latitude": -10.8637,
+      "altitude_m": 2.94,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-059",
+      "name": "Sitio de Ruinas Cobertas",
+      "subregion_id": "SUB-019-002",
+      "longitude": 37.8381,
+      "latitude": -9.9866,
+      "altitude_m": 0.53,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "feature_id": "PAI-060",
+      "name": "Pantano de Pantano da Serpente",
+      "subregion_id": "SUB-019-003",
+      "longitude": 35.7131,
+      "latitude": -10.8692,
+      "altitude_m": 0.14,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    }
+  ],
+  "bridges": [
+    {
+      "bridge_id": "PON-001",
+      "name": "Ponte das Ilhas de Navyr",
+      "landscape_ref": "PAI-011",
+      "anchor_method": "landscape_ref",
+      "longitude": 4.8131,
+      "latitude": 42.6986,
+      "altitude_m": -2.17,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "bridge_id": "PON-002",
+      "name": "Ponte dos Jardins de Rubra-Viva",
+      "landscape_ref": "PAI-020",
+      "anchor_method": "landscape_ref",
+      "longitude": -38.8466,
+      "latitude": 12.5665,
+      "altitude_m": -0.25,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "bridge_id": "PON-003",
+      "name": "Ponte do Pantano da Serpente",
+      "landscape_ref": "PAI-060",
+      "anchor_method": "landscape_ref",
+      "longitude": 35.7114,
+      "latitude": -10.8667,
+      "altitude_m": 0.14,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "bridge_id": "PON-004",
+      "name": "Ponte das Fendas da Nevoa",
+      "landscape_ref": "PAI-036",
+      "anchor_method": "landscape_ref",
+      "longitude": 4.8211,
+      "latitude": -42.7089,
+      "altitude_m": 291.24,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "bridge_id": "PON-005",
+      "name": "Ponte de Gelo da Fenda Congelada",
+      "landscape_ref": "PAI-051",
+      "anchor_method": "landscape_ref",
+      "longitude": 34.8332,
+      "latitude": -13.188,
+      "altitude_m": 96.6,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "bridge_id": "PON-006",
+      "name": "Ponte Eterea das Correntes",
+      "landscape_ref": "PAI-053",
+      "anchor_method": "landscape_ref",
+      "longitude": 37.296,
+      "latitude": -11.4554,
+      "altitude_m": 1265.76,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "bridge_id": "PON-007",
+      "name": "Ponte da Passagem Secreta",
+      "landscape_ref": "PAI-042",
+      "anchor_method": "landscape_ref",
+      "longitude": 33.2874,
+      "latitude": -16.4725,
+      "altitude_m": -2.59,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "bridge_id": "PON-008",
+      "name": "Ponte de Pedra dos Tuneis",
+      "landscape_ref": "PAI-026",
+      "anchor_method": "landscape_ref",
+      "longitude": -29.9403,
+      "latitude": -23.525,
+      "altitude_m": -92.43,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "bridge_id": "PON-009",
+      "name": "Grande Ponte Costeira de Luminor-Navyr",
+      "landscape_ref": null,
+      "anchor_method": "route_midpoint_from_to",
+      "longitude": 30.9419,
+      "latitude": 16.7459,
+      "altitude_m": -2.43,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "bridge_id": "PON-010",
+      "name": "Comporta Abissal de Navyr",
+      "landscape_ref": null,
+      "anchor_method": "route_midpoint_from_to",
+      "longitude": 26.7226,
+      "latitude": 4.4572,
+      "altitude_m": -523.19,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    }
+  ],
+  "agricultural_zones": [
+    {
+      "agz_id": "AGZ-090",
+      "name": "Pastagens Luminais",
+      "parent_subregion": "SUB-011-003",
+      "longitude": 2.6991,
+      "latitude": -37.5892,
+      "altitude_m": 0.05,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "agz_id": "AGZ-091",
+      "name": "Jardins Medicinais",
+      "parent_subregion": "SUB-007-001",
+      "longitude": -36.7159,
+      "latitude": 11.7005,
+      "altitude_m": -1.46,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "agz_id": "AGZ-092",
+      "name": "Pomares das Copas",
+      "parent_subregion": "SUB-008-001",
+      "longitude": -36.7216,
+      "latitude": -7.4534,
+      "altitude_m": -2.96,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "agz_id": "AGZ-093",
+      "name": "Fungicultura das Câmaras",
+      "parent_subregion": "SUB-009-001",
+      "longitude": -27.82,
+      "latitude": -24.4028,
+      "altitude_m": -81.35,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "agz_id": "AGZ-094",
+      "name": "Hortas do Acolhimento",
+      "parent_subregion": "SUB-012-002",
+      "longitude": 22.7294,
+      "latitude": -29.9126,
+      "altitude_m": -2.39,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "agz_id": "AGZ-095",
+      "name": "Maricultura das Ilhas",
+      "parent_subregion": "SUB-004-002",
+      "longitude": 4.8207,
+      "latitude": 42.7032,
+      "altitude_m": -2.58,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "agz_id": "AGZ-096",
+      "name": "Campos de Grão do Domínio",
+      "parent_subregion": "SUB-013-002",
+      "longitude": 35.413,
+      "latitude": -15.591,
+      "altitude_m": 2.33,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "agz_id": "AGZ-097",
+      "name": "Hidroponia das Plataformas",
+      "parent_subregion": "SUB-006-001",
+      "longitude": -27.8257,
+      "latitude": 28.6495,
+      "altitude_m": 985.38,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    }
+  ],
+  "master_v2_local_pois": [
+    {
+      "poi_id": "POI-001",
+      "name": "Pátio Ferroviário de Varga",
+      "poi_type": "estação",
+      "anchor_territory": "TER-011",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": -39.4653,
+      "latitude": -6.5716,
+      "altitude_m": 0.14,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-002",
+      "name": "Mercado Fronteiriço de Varga",
+      "poi_type": "mercado",
+      "anchor_territory": "TER-011",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": -39.4466,
+      "latitude": -6.5865,
+      "altitude_m": -1.82,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-003",
+      "name": "Oficina Arco Morto",
+      "poi_type": "oficina",
+      "anchor_territory": "TER-011",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": -39.4485,
+      "latitude": -6.5836,
+      "altitude_m": -1.99,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-004",
+      "name": "Centro de Mediação de Varga",
+      "poi_type": "instituição",
+      "anchor_territory": "TER-011",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": -39.4545,
+      "latitude": -6.5961,
+      "altitude_m": 1.81,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-005",
+      "name": "Núcleo Rural Veluriano",
+      "poi_type": "fazenda",
+      "anchor_territory": "TER-011",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": -39.4512,
+      "latitude": -6.5986,
+      "altitude_m": 1.7,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-006",
+      "name": "Armazém Rural da Fronteira",
+      "poi_type": "armazém",
+      "anchor_territory": "TER-011",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": -39.4544,
+      "latitude": -6.5763,
+      "altitude_m": -0.19,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-007",
+      "name": "Captação Varden",
+      "poi_type": "infraestrutura hídrica",
+      "anchor_territory": "TER-011",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": -39.4443,
+      "latitude": -6.5777,
+      "altitude_m": 2.86,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-046",
+      "name": "Ponte Varden",
+      "poi_type": "ponte",
+      "anchor_territory": "TER-011",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": -39.4537,
+      "latitude": -6.574,
+      "altitude_m": -2.71,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-008",
+      "name": "Terminal de Lúminor",
+      "poi_type": "terminal",
+      "anchor_territory": "TER-001",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": 40.0089,
+      "latitude": -0.0028,
+      "altitude_m": -0.15,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-009",
+      "name": "Mercado Fluvial Luminal",
+      "poi_type": "mercado",
+      "anchor_territory": "TER-001",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": 39.9931,
+      "latitude": -0.0037,
+      "altitude_m": -1.76,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-010",
+      "name": "Centro Administrativo de Lúminor",
+      "poi_type": "administração",
+      "anchor_territory": "TER-001",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": 39.993,
+      "latitude": -0.0126,
+      "altitude_m": 1.28,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-011",
+      "name": "Clínica Cívica de Lúminor",
+      "poi_type": "clínica",
+      "anchor_territory": "TER-001",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": 40.0017,
+      "latitude": 0.0096,
+      "altitude_m": -2.03,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-012",
+      "name": "Academia Técnica Luminal",
+      "poi_type": "educação",
+      "anchor_territory": "TER-001",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": 40.0104,
+      "latitude": -0.0048,
+      "altitude_m": 2.87,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-013",
+      "name": "Nó de Comunicação da Convergência",
+      "poi_type": "comunicação",
+      "anchor_territory": "TER-001",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": 40.0057,
+      "latitude": 0.0127,
+      "altitude_m": 1.91,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-014",
+      "name": "Plataforma Logística Luminal",
+      "poi_type": "logística",
+      "anchor_territory": "TER-001",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": 39.998,
+      "latitude": 0.0096,
+      "altitude_m": -2.43,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-015",
+      "name": "Oficina de Manutenção Luminal",
+      "poi_type": "oficina",
+      "anchor_territory": "TER-001",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": 39.9934,
+      "latitude": -0.0034,
+      "altitude_m": -1.32,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-047",
+      "name": "Ponte Ceral",
+      "poi_type": "ponte",
+      "anchor_territory": "TER-001",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": 39.9869,
+      "latitude": -0.0081,
+      "altitude_m": -0.92,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-049",
+      "name": "Ponte Lumen",
+      "poi_type": "ponte",
+      "anchor_territory": "TER-001",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": 40.0021,
+      "latitude": 0.0077,
+      "altitude_m": 1.81,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-021",
+      "name": "Fundição Ferral de Kharveth",
+      "poi_type": "fundição",
+      "anchor_territory": "TER-002",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": 37.8367,
+      "latitude": 12.9749,
+      "altitude_m": 2.51,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-022",
+      "name": "Pátio Mineral de Kharveth",
+      "poi_type": "terminal mineral",
+      "anchor_territory": "TER-002",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": 37.8281,
+      "latitude": 12.9971,
+      "altitude_m": 1.81,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-023",
+      "name": "Clínica Industrial de Kharveth",
+      "poi_type": "clínica",
+      "anchor_territory": "TER-002",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": 37.8254,
+      "latitude": 12.9899,
+      "altitude_m": 0.56,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-016",
+      "name": "Pátio de Intercâmbio de Ortheon",
+      "poi_type": "terminal",
+      "anchor_territory": "TER-003",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": 31.5719,
+      "latitude": 24.5682,
+      "altitude_m": 2.58,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-017",
+      "name": "Oficina Ferroviária de Ortheon",
+      "poi_type": "oficina",
+      "anchor_territory": "TER-003",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": 31.552,
+      "latitude": 24.5636,
+      "altitude_m": 2.36,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-018",
+      "name": "Academia de Redes de Ortheon",
+      "poi_type": "educação",
+      "anchor_territory": "TER-003",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": 31.574,
+      "latitude": 24.5824,
+      "altitude_m": 1.85,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-019",
+      "name": "Casa de Jurisdição de Ortheon",
+      "poi_type": "justiça",
+      "anchor_territory": "TER-003",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": 31.5697,
+      "latitude": 24.5707,
+      "altitude_m": -0.14,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-020",
+      "name": "Mercado de Conexões de Ortheon",
+      "poi_type": "mercado",
+      "anchor_territory": "TER-003",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": 31.5642,
+      "latitude": 24.5722,
+      "altitude_m": -1.0,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-048",
+      "name": "Ponte Nauris",
+      "poi_type": "ponte",
+      "anchor_territory": "TER-003",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": 31.5602,
+      "latitude": 24.5754,
+      "altitude_m": 1.26,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-030",
+      "name": "Estaleiro de Navyr",
+      "poi_type": "estaleiro",
+      "anchor_territory": "TER-004",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": 21.8755,
+      "latitude": 33.4971,
+      "altitude_m": -2.87,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-031",
+      "name": "Mercado Marítimo de Navyr",
+      "poi_type": "mercado",
+      "anchor_territory": "TER-004",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": 21.8855,
+      "latitude": 33.4743,
+      "altitude_m": -2.07,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-032",
+      "name": "Centro Marítimo de Navyr",
+      "poi_type": "instituição",
+      "anchor_territory": "TER-004",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": 21.8663,
+      "latitude": 33.4845,
+      "altitude_m": -2.15,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-033",
+      "name": "Clínica Portuária de Navyr",
+      "poi_type": "clínica",
+      "anchor_territory": "TER-004",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": 21.8717,
+      "latitude": 33.4824,
+      "altitude_m": -1.31,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-024",
+      "name": "Centro Técnico de Ithra",
+      "poi_type": "centro científico",
+      "anchor_territory": "TER-005",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": 9.8057,
+      "latitude": 38.778,
+      "altitude_m": 1.06,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-025",
+      "name": "Processamento de Encosta Ithra",
+      "poi_type": "processamento",
+      "anchor_territory": "TER-005",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": 9.8145,
+      "latitude": 38.7811,
+      "altitude_m": 1.27,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-026",
+      "name": "Oficina de Encosta Ithra",
+      "poi_type": "oficina",
+      "anchor_territory": "TER-005",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": 9.8279,
+      "latitude": 38.7636,
+      "altitude_m": 2.38,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-043",
+      "name": "Observatório de Altavela",
+      "poi_type": "observatório",
+      "anchor_territory": "TER-006",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": -3.3067,
+      "latitude": 39.8626,
+      "altitude_m": 974.52,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-044",
+      "name": "Observatório de Tempestade",
+      "poi_type": "observatório",
+      "anchor_territory": "TER-006",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": -3.3145,
+      "latitude": 39.8657,
+      "altitude_m": 751.54,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-045",
+      "name": "Posto de Passagem de Altavela",
+      "poi_type": "posto",
+      "anchor_territory": "TER-006",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": -3.3022,
+      "latitude": 39.8671,
+      "altitude_m": 844.52,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-034",
+      "name": "Herbário de Rubra-Viva",
+      "poi_type": "laboratório",
+      "anchor_territory": "TER-007",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": -16.0671,
+      "latitude": 36.6345,
+      "altitude_m": -0.54,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-035",
+      "name": "Mercado Medicinal Rubro",
+      "poi_type": "mercado",
+      "anchor_territory": "TER-007",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": -16.0693,
+      "latitude": 36.6216,
+      "altitude_m": 2.42,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-036",
+      "name": "Estação Hídrica Rubra",
+      "poi_type": "infraestrutura hídrica",
+      "anchor_territory": "TER-007",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": -16.0723,
+      "latitude": 36.6169,
+      "altitude_m": -0.14,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-037",
+      "name": "Laboratório de Materiais Rubros",
+      "poi_type": "laboratório",
+      "anchor_territory": "TER-007",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": -16.0827,
+      "latitude": 36.637,
+      "altitude_m": 1.03,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-040",
+      "name": "Estação Subcristal",
+      "poi_type": "estação",
+      "anchor_territory": "TER-009",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": -35.1642,
+      "latitude": 19.036,
+      "altitude_m": -73.25,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-041",
+      "name": "Oficina Subcristal",
+      "poi_type": "oficina",
+      "anchor_territory": "TER-009",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": -35.1712,
+      "latitude": 19.0434,
+      "altitude_m": -76.57,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-027",
+      "name": "Academia dos Reis Magos",
+      "poi_type": "educação",
+      "anchor_territory": "TER-010",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": -39.4662,
+      "latitude": 6.575,
+      "altitude_m": 0.21,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-028",
+      "name": "Câmara de Contratos do Domínio",
+      "poi_type": "instituição",
+      "anchor_territory": "TER-010",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": -39.4524,
+      "latitude": 6.5731,
+      "altitude_m": -1.64,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-029",
+      "name": "Relé Alto do Domínio",
+      "poi_type": "comunicação",
+      "anchor_territory": "TER-010",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": -39.4477,
+      "latitude": 6.5877,
+      "altitude_m": 2.93,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-038",
+      "name": "Posto de Contenção",
+      "poi_type": "posto",
+      "anchor_territory": "TER-011",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": -39.4391,
+      "latitude": -6.5939,
+      "altitude_m": -1.56,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-039",
+      "name": "Relé de Contenção",
+      "poi_type": "comunicação",
+      "anchor_territory": "TER-011",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": -39.4407,
+      "latitude": -6.5846,
+      "altitude_m": 0.06,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-042",
+      "name": "Posto de Passagem da Fortaleza",
+      "poi_type": "fortificação",
+      "anchor_territory": "TER-012",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": -35.1703,
+      "latitude": -19.0467,
+      "altitude_m": 0.06,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    },
+    {
+      "poi_id": "POI-050",
+      "name": "Porta de Pesquisa Controlada",
+      "poi_type": "acesso controlado",
+      "anchor_territory": "TER-013",
+      "anchor_precision": "TERRITORY_ONLY_NOT_SUBREGION",
+      "longitude": -27.0908,
+      "latitude": -29.4298,
+      "altitude_m": -1.15,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "record_id": "FLO-007", "record_kind": "DERIVED_CANONICAL_PROFILE", "authority": "CANON_DERIVADO_ATIVO",
+  "title": "Árvore-Coração", "subtitle": "Árvore gigante dos Santuários do Coração",
+  "summary": "Árvore de porte colossal que sustenta os assentamentos suspensos dos Povos das Copas; suas raízes marcam os locais de ritual e sepultamento.",
+  "facts": {"Habitat": "Copas Altas / Raízes Sagradas (SUB-008-001/002), Santuários do Coração", "Uso": "Estrutura habitacional suspensa, madeira ritual"},
+  "relations": [{"code": "SUB-008-001", "label": "Habitat — Copas Altas"}, {"code": "SUB-008-002", "label": "Habitat — Raízes Sagradas, local de ritual"}],
+  "r2_compatibility": "Formaliza como espécie a 'árvore gigante' já descrita em SUB-008-001/002 (fase 8); não altera nenhum fato R2.",
+  "safety": "FICTIONAL_LOCATION_ONLY"
+}

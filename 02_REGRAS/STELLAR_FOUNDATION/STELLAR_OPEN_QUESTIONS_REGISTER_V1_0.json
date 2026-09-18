@@ -1,0 +1,19 @@
+{
+  "record_id": "STELLAR-OPEN-QUESTIONS-REGISTER-V1.0",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.0",
+  "status": "PROTECTED_AUTHORIAL_UNKNOWNS",
+  "authority": {"scope": "MYSTERY_GOVERNANCE", "resolution": "AUTHORIAL_PROMOTION_ONLY"},
+  "dependencies": ["STELLAR_CANON_CONSTITUTION_V1_0.json", "STELLAR_INFORMATION_MEMORY_LAW_V1_0.json"],
+  "invariants": ["AN_OPEN_QUESTION_IS_NOT_A_MISSING_RULE", "EACH_QUESTION_MUST_SUPPORT_MULTIPLE_INTERPRETATIONS", "RESOLUTION_REQUIRES_STORY_COST_AND_PROMOTION"],
+  "prohibitions": ["NO_AUTOMATIC_RESOLUTION", "NO_OFFICIAL_RELIGION", "NO_OFFICIAL_LANGUAGE", "NO_KENUA_BINDING"],
+  "questions": [
+    {"id": "SQ-001", "question": "Qual forma de maturidade Stellar reconhece como suficiente?", "truth_status": "AUTHORIAL_WITHHELD", "story_use": "Conflitos entre continuidade, liberdade e sacrifício."},
+    {"id": "SQ-002", "question": "Quem fragmentou ou ocultou o conhecimento sobre Stellar?", "truth_status": "CONTESTED_IN_WORLD", "story_use": "Arquivos, instituições e heranças rivais."},
+    {"id": "SQ-003", "question": "Quando um eco de renascimento se torna prova de continuidade pessoal?", "truth_status": "UNRESOLVED_BY_DEFAULT", "story_use": "Linhagem, luto, identidade e manipulação."},
+    {"id": "SQ-004", "question": "Uma inteligência artificial pode recusar seu estatuto de instrumento?", "truth_status": "DISPUTED_SOCIAL_LAW", "story_use": "Responsabilidade, emancipação e medo."}
+  ],
+  "simulation_effects": ["Questions may be referenced by quests as contested goals; they never auto-resolve."],
+  "allowed_states": ["OPEN", "CONTESTED", "EVIDENCE_ACCUMULATING", "AUTHORIAL_RESOLUTION_PENDING"],
+  "story_generators": ["Uma resposta parcial resolve uma crise e aprofunda outra.", "Uma facção tenta transformar uma questão aberta em dogma político.", "Um personagem escolhe destruir a única prova capaz de encerrar um mistério." ]
+}

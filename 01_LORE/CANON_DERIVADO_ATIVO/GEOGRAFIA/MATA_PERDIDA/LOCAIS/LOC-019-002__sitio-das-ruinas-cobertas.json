@@ -1,0 +1,27 @@
+{
+  "loc_id": "LOC-019-002",
+  "record_id": "LOC-019-002",
+  "name": "Sítio das Ruínas Cobertas",
+  "parent_subregion": "SUB-019-002",
+  "function": "Área de escavação e estudo das ruínas tomadas pela vegetação.",
+  "notable_link": "TER-019 Mata Perdida (fase 52, território novo)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "settlement_tier": "COMPLEXO",
+  "history": "Ninguém sabe quem construiu as ruínas que raízes gigantes agora abraçam e rachiam lentamente — nenhum registro de nenhum território reivindica autoria, e as poucas inscrições encontradas usam um sistema de escrita que nenhum estudioso até agora conseguiu decifrar por completo. O sítio de escavação foi estabelecido há relativamente pouco tempo, atraindo pesquisadores curiosos o bastante pra arriscar a proximidade da selva densa em troca da chance de resolver o mistério.",
+  "sensory": "Blocos de pedra cinzenta emergem parcialmente do solo e da vegetação, alguns já completamente engolidos por raízes que se enroscam através de rachaduras antigas como se a própria mata estivesse lentamente puxando as ruínas de volta pra dentro de si. O trabalho de escavação é lento e cuidadoso, cada raiz cortada com hesitação visível — ninguém quer ser responsável por derrubar uma árvore que pode ter séculos só pra revelar uma parede a mais.",
+  "figures": [
+    {
+      "role": "Pesquisadora Principal",
+      "name": "Dra. Yolen Pedraescrita",
+      "note": "Dedica a carreira inteira a decifrar as inscrições encontradas ali, convencida de estar próxima de um avanço real depois de anos de progresso lento — guarda as próprias anotações com um sigilo que alguns colegas consideram excessivo e outros consideram justificado, dado o valor potencial da descoberta."
+    },
+    {
+      "role": "Guia local",
+      "name": "Bren Raizfunda",
+      "note": "Cresceu nas proximidades da Mata Perdida e conhece padrões de crescimento das raízes que os pesquisadores de fora não notam — já alertou Yolen duas vezes sobre áreas que ele considera instáveis demais pra escavar, avisos que ela levou a sério só depois que um deles se provou correto."
+    }
+  ],
+  "hook": "Yolen acredita ter finalmente decifrado o suficiente das inscrições pra saber que descrevem algo enterrado mais fundo, sob uma das raízes maiores do sítio — Bren adverte que aquela raiz específica sustenta parte da estrutura ao redor, e removê-la pode desmoronar tudo antes de qualquer descoberta valer a pena.",
+  "detail": "Toda inscrição fotografada ou copiada no sítio recebe um número de catálogo que só Yolen mantém completo — quando pesquisadores visitantes pedem acesso ao catálogo inteiro, ela sempre encontra um motivo pra adiar, algo que começa a gerar sussurros de desconfiança entre colegas acadêmicos.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION"]
+}

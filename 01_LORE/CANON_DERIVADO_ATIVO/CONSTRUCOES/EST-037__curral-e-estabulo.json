@@ -1,0 +1,38 @@
+{
+  "est_id": "EST-037",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Curral e Estábulo",
+  "building_type": "INDUSTRIAL",
+  "parent_locality": "LOC-011-003",
+  "parent_subregion": "SUB-011-003",
+  "parent_political_unit": "TER-011",
+  "function": "Estrutura de manejo das manadas de gado leiteiro das Pastagens Luminais.",
+  "economic_role": {
+    "is_vendor": false,
+    "sells": [],
+    "produces": [
+      "leite"
+    ],
+    "regulation_factor": 0.2
+  },
+  "capacity": {
+    "jobs": 8,
+    "residents": 0
+  },
+  "professions_linked": [
+    "pastor"
+  ],
+  "notable_link": "Velúrio (CRI-002), Brumante (CRI-003), Lúmara (CRI-004); Pastagem Luminal (FLO-001)",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "METAL_E_MADEIRA",
+    "flammability": "MEDIA_COM_RISCO_EXPLOSAO",
+    "recovery_days": 10
+  }
+}

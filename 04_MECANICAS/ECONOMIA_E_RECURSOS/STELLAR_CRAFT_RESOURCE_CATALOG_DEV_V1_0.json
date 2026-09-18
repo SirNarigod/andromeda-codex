@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-CRAFT-RESOURCE-CATALOG-DEV-V1.0",
+  "title": "Recursos orgânicos/artesanais de matéria-prima, ligados a território/subregião",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "canonical_status": "GAMEPLAY_DERIVED_DEV",
+  "supplements": [
+    "MINERAL_RESOURCE_LOCALITY_LINKS_DEV_V1_0.json"
+  ],
+  "r2_guard": "8 recursos novos de matéria-prima orgânica/artesanal, para criação e venda de itens. MAT-001 (Madeira) formaliza em lore o que o runtime já reconhece (FLR-HARDWOOD, atividade LOGGING) — não duplica nem contradiz. Os demais 7 são gameplay-derivado 100% novo. Nenhuma escrita em 01_LORE/CANON_R2/ nem no runtime.",
+  "resources": [
+    {
+      "resource_id": "MAT-001",
+      "resource_name": "Madeira de Copas",
+      "category": "ORGANIC_WOOD",
+      "primary_territory": "TER-008",
+      "primary_subregion": "SUB-008-001",
+      "rationale": "Madeira das árvores gigantes dos Santuários do Coração.",
+      "runtime_note": "Corresponde a FLR-HARDWOOD já existente em arpg_gathering_work_core.py (ativa a atividade LOGGING) — formalização em lore, não invenção.",
+      "currency_tags": [
+        "CUR-008",
+        "CUR-000"
+      ],
+      "weight_kg": 4.08,
+      "description": "Madeira das árvores gigantes dos Santuários do Coração."
+    },
+    {
+      "resource_id": "MAT-002",
+      "resource_name": "Borracha de Seiva",
+      "category": "ORGANIC_SAP",
+      "primary_territory": "TER-008",
+      "primary_subregion": "SUB-008-002",
+      "rationale": "Seiva extraída das raízes sagradas, coagulada em borracha bruta.",
+      "currency_tags": [
+        "CUR-008",
+        "CUR-000"
+      ],
+      "weight_kg": 0.46,
+      "description": "Seiva extraída das raízes sagradas, coagulada em borracha bruta."
+    },
+    {
+      "resource_id": "MAT-003",
+      "resource_name": "Couro de Manada",
+      "category": "ORGANIC_HIDE",
+      "primary_territory": "TER-011",
+      "primary_subregion": "SUB-011-003",
+      "rationale": "Subproduto do manejo de gado das Pastagens Luminais (Velúrio/Brumante/Lúmara, AGZ-090).",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 1.54,
+      "description": "Subproduto do manejo de gado das Pastagens Luminais (Velúrio/Brumante/Lúmara, AGZ-090)."
+    },
+    {
+      "resource_id": "MAT-004",
+      "resource_name": "Fibra de Véu",
+      "category": "ORGANIC_FIBER",
+      "primary_territory": "TER-011",
+      "primary_subregion": "SUB-011-001",
+      "rationale": "Extraída do arbusto Véu-de-Teia (FLO-005), já usado para criar Larva-de-Véu.",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 0.57,
+      "description": "Extraída do arbusto Véu-de-Teia (FLO-005), já usado para criar Larva-de-Véu."
+    },
+    {
+      "resource_id": "MAT-005",
+      "resource_name": "Resina Rúnica",
+      "category": "MAGIC_ORGANIC",
+      "primary_territory": "TER-005",
+      "primary_subregion": "SUB-005-001",
+      "rationale": "Resina usada como meio de fusão em itens que combinam runa e tecnologia.",
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ],
+      "weight_kg": 0.46,
+      "description": "Resina usada como meio de fusão em itens que combinam runa e tecnologia."
+    },
+    {
+      "resource_id": "MAT-006",
+      "resource_name": "Osso Rúnico",
+      "category": "ORGANIC_BONE",
+      "primary_territory": "TER-011",
+      "primary_subregion": "SUB-011-006",
+      "rationale": "Restos de predadores caçados nas Fendas da Névoa (Louva-Fenda CRI-012, Mandíbula-de-Névoa CRI-013).",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 1.04,
+      "description": "Restos de predadores caçados nas Fendas da Névoa (Louva-Fenda CRI-012, Mandíbula-de-Névoa CRI-013)."
+    },
+    {
+      "resource_id": "MAT-007",
+      "resource_name": "Carvão de Forja",
+      "category": "PROCESSED_FUEL",
+      "primary_territory": "TER-002",
+      "primary_subregion": "SUB-002-001",
+      "rationale": "Combustível processado que alimenta a Forja Real de Kharveth (EST-003).",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "weight_kg": 1.55,
+      "description": "Combustível processado que alimenta a Forja Real de Kharveth (EST-003)."
+    },
+    {
+      "resource_id": "MAT-008",
+      "resource_name": "Pergaminho de Fibra",
+      "category": "PROCESSED_MATERIAL",
+      "primary_territory": "TER-010",
+      "primary_subregion": "SUB-010-002",
+      "rationale": "Material de escrita usado pelos aprendizes da Academia da Vertente (EST-034).",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ],
+      "weight_kg": 0.46,
+      "description": "Material de escrita usado pelos aprendizes da Academia da Vertente (EST-034)."
+    }
+  ]
+}

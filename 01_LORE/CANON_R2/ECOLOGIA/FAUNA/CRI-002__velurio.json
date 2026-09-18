@@ -1,0 +1,58 @@
+{
+  "record_id": "CRI-002",
+  "record_kind": "R2_CANONICAL_ENTRY_MIRROR",
+  "authority": "CANON_R2_CONFIRMADO",
+  "canonical_home": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-002__velurio.json",
+  "source": {
+    "archive_sha256": "257e456a5d0396310ec2355b3dfc0f11f4e0a5264cf6e764591c8760f5070cb0",
+    "lineage": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json",
+    "document_sha256": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726"
+  },
+  "entry": {
+    "code": "CRI-002",
+    "slug": "velurio",
+    "title": "Velúrio",
+    "subtitle": "Herbívoro leiteiro das planícies",
+    "category": "CRI",
+    "secondaryCategories": [],
+    "canon": "Cânone consolidado",
+    "spoiler": 1,
+    "sealed": false,
+    "image": null,
+    "imageStatus": null,
+    "summary": "Animal gregário de dorso largo, criado em comunidades fronteiriças por seu leite proteico e resistente à fermentação.",
+    "facts": {
+      "Classe": "Animal leiteiro domesticável",
+      "Habitat": "Planícies Luminais e Terras Livres da Fronteira",
+      "Alimento": "Leite veluriano",
+      "Nutrientes dominantes": "Proteínas, cálcio, vitaminas B2 e B12",
+      "Risco": "Perde qualidade quando o rebanho é alimentado em solo contaminado"
+    },
+    "sections": [
+      {
+        "heading": "Uso alimentar",
+        "body": "O leite é consumido fresco, fermentado ou concentrado em barras de viagem. É uma fonte comum de recuperação após esforço, mas não substitui água, minerais e repouso."
+      }
+    ],
+    "relations": [
+      {
+        "slug": "planicies-luminais",
+        "label": "Habitat"
+      },
+      {
+        "slug": "fronteiricos",
+        "label": "Criação tradicional"
+      }
+    ],
+    "keywords": [
+      "Velúrio",
+      "leite",
+      "vitaminas",
+      "fronteira",
+      "nutrição"
+    ],
+    "sources": [
+      "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+    ]
+  }
+}

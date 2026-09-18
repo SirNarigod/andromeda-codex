@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-008-002",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Templo das Raízes",
+  "parent_subregion": "SUB-008-002",
+  "parent_political_unit": "TER-008",
+  "function": "Local de rituais sagrados na base das árvores gigantes.",
+  "notable_link": "Raízes Sagradas (SUB-008-002)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-008-002",
+  "settlement_tier": "COMPLEXO",
+  "history": "O Templo das Raízes guarda nomes de mortos em placas de madeira viva. A cerimônia de inscrição mantém alianças entre comunidades que raramente concordam sobre qualquer outra coisa.",
+  "sensory": "Resina quente escorre das colunas; vozes baixas parecem continuar mesmo quando o templo esvazia.",
+  "hook": "Uma placa nova traz o nome de alguém que desapareceu ontem.",
+  "secondary_hook": "A inscrição pode ser um aviso ou uma acusação.",
+  "detail": "Famílias pagam pelo espaço com sementes, não com Cred.",
+  "figures": [
+    {
+      "role": "Eru das Placas",
+      "name": "Eru das Placas",
+      "note": "escriba que teme esquecer um nome"
+    },
+    {
+      "role": "Vela-Seca",
+      "name": "Vela-Seca",
+      "note": "protetora que suspeita de falsificações"
+    }
+  ]
+}

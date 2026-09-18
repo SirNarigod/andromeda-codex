@@ -1,0 +1,35 @@
+{
+  "record_id": "LOC-001-003",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Salão dos Mercadores",
+  "parent_subregion": "SUB-001-003",
+  "parent_political_unit": "TER-001",
+  "function": "Câmara de deliberação das casas mercantis.",
+  "notable_link": "Elyra Vaelor (autoridade máxima)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-001-003",
+  "settlement_tier": "CIDADE",
+  "history": "O Salão foi construído sobre os alicerces de um antigo entreposto que já reunia as principais casas comerciais de Lúminor muito antes de a Confederação existir formalmente — Elyra Vaelor não fundou a instituição, mas foi quem consolidou o costume de que nenhuma decisão comercial de peso territorial pode ser tomada sem passar, ao menos formalmente, pelas paredes dele. As casas mais antigas guardam assentos hereditários; as mais novas precisam comprar entrada por um valor que sobe a cada geração que passa sem que ninguém questione por quê.",
+  "sensory": "O salão principal tem teto alto o bastante pra ecoar qualquer voz levantada, o que faz com que discussões acaloradas soem mais dramáticas do que talvez sejam. Bandeiras de família das casas mercantis mais antigas pendem das vigas, cada uma bordada à mão há gerações, algumas já desbotadas o bastante que só especialistas reconhecem o brasão original. O piso de mármore importado é polido diariamente por um pequeno exército de zeladores contratados — um luxo que as casas mais novas ressentem silenciosamente, considerando-o gasto desnecessário que só beneficia a aparência das casas antigas.",
+  "figures": [
+    {
+      "role": "Presidente do Salão",
+      "name": "Elyra Vaelor",
+      "note": "Governa por equilíbrio calculado entre casas antigas e novas, favorecendo nenhuma abertamente, mas todos suspeitam que ela tem preferências pessoais que disfarça bem. Vem de uma das casas mais antigas, o que alimenta a desconfiança constante das casas mais novas, mesmo sem nenhuma prova concreta de favoritismo."
+    },
+    {
+      "role": "Chefe de casa nova",
+      "name": "Doriel Ascensor",
+      "note": "Comprou entrada no Salão há cinco anos com fortuna feita no comércio de minério, e desde então pressiona por reforma no valor de entrada, que considera artificialmente inflado pelas casas antigas pra manter os recém-chegados sob controle."
+    },
+    {
+      "role": "Matriarca de casa antiga",
+      "name": "Vessandra Thallac",
+      "note": "Detém um dos assentos hereditários mais antigos do Salão e vê qualquer reforma proposta por Doriel como ataque direto à ordem que sustenta a própria riqueza de sua família há gerações. Nunca fala diretamente com Doriel, sempre por intermediário, mesmo estando na mesma sala."
+    }
+  ],
+  "hook": "Doriel conseguiu votos suficientes pra forçar uma votação sobre o valor de entrada pela primeira vez — Elyra precisa decidir se usa a própria influência pra bloquear a votação, arriscando parecer parcial pela primeira vez em anos de governo cuidadosamente neutro, ou deixa o Salão decidir e aceita o resultado, seja qual for.",
+  "detail": "Toda votação formal do Salão exige que cada casa vote em voz alta, na ordem inversa de antiguidade — as casas mais novas votam primeiro, o que na prática significa que elas nunca sabem como as antigas vão votar antes de se comprometer publicamente, uma regra que as casas antigas defendem como tradição e as novas veem como manipulação estrutural.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION"]
+}

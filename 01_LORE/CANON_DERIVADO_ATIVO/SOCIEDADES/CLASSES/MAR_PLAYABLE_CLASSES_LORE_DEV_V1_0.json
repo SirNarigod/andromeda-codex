@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "MAR-PLAYABLE-CLASSES-LORE-DEV-V1.0",
+  "title": "Lore das 4 classes jogáveis/NPC (Nativos, Soldados, Androids, Magos)",
+  "record_kind": "DERIVED_CANONICAL_PROFILE_SET",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "governance_reference": "04_MECANICAS/ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/10_ARPG/00_GOVERNANCE/ARPG_AUTHORIAL_DECISIONS_V0_2_0.json#class_system",
+  "r2_compatibility": "Nenhum fato de 01_LORE/CANON_R2/ é alterado. Cada classe abaixo referencia lore R2 já existente onde possível (CUL-/FAC-/MAG-); nenhuma referência implica que todo membro de uma cultura/facção pertence à classe, nem o inverso.",
+  "prohibitions": [
+    "NO_R2_EPISODE_MUTATION",
+    "NO_RUNTIME_CANON_PROMOTION",
+    "NO_CULTURE_TO_CLASS_FORCED_MAPPING"
+  ],
+  "classes": [
+    {
+      "class_name": "Nativos",
+      "armament_family": "Corpo-a-corpo",
+      "weapon_ids_reference": "MAR_CLASS_ARMAMENT_MATRIX_DEV_V1_0.json#Nativos",
+      "identity": "Arquétipo de combatente próximo, formado por quem vive fora dos grandes centros industriais e depende de lâminas e ferramentas adaptadas para sobreviver.",
+      "r2_anchor": {
+        "slug": "fronteiricos",
+        "code": "CUL-011",
+        "note": "Referência cultural, não obrigatoriedade — nem todo Fronteiriço é da classe Nativos, e a classe não é exclusiva dessa cultura."
+      },
+      "narrative_note": "Classe transversal: qualquer cultura ou origem pode formar um Nativo; CUL-011 é apenas o pano de fundo mais próximo do arquétipo."
+    },
+    {
+      "class_name": "Soldados",
+      "armament_family": "Armas de fogo e equipamento tático",
+      "weapon_ids_reference": "MAR_CLASS_ARMAMENT_MATRIX_DEV_V1_0.json#Soldados",
+      "identity": "Arquétipo de combatente organizado e equipado — guardas, mercenários e equipes de contenção que dependem do sistema de armamentos de Stellar (ART-004) para acesso a fuzis, explosivos e equipamento não letal.",
+      "r2_anchor": {
+        "slug": "deslocados-e-equipes-de-contencao",
+        "code": "CUL-012",
+        "note": "Referência cultural mais próxima; armerias rúnicas (ART-015) listam guardas e mercenários como clientes típicos desse arquétipo."
+      },
+      "narrative_note": "Classe transversal: qualquer facção com recursos pode empregar Soldados; não implica filiação a nenhuma instituição específica do cânone."
+    },
+    {
+      "class_name": "Androids",
+      "armament_family": "Tecnológica",
+      "weapon_ids_reference": "MAR_CLASS_ARMAMENT_MATRIX_DEV_V1_0.json#Androids",
+      "identity": "Corpos sintéticos autônomos, sem precedente de lore antes desta proposta — ver perfil completo de facção em FAC-090 (renumerado de FAC-011 após colisão com o código oficial do MASTER V2.0.1).",
+      "r2_anchor": {
+        "slug": "enclave-sintetico",
+        "code": "FAC-090",
+        "note": "Facção derivada ativa (não R2), criada especificamente para fundamentar esta classe."
+      },
+      "narrative_note": "ALERTA: conceito 100% novo no Codex. Requer revisão/aprovação do autor antes de qualquer promoção a cânone R2."
+    },
+    {
+      "class_name": "Magos",
+      "armament_family": "Mágica",
+      "weapon_ids_reference": "MAR_CLASS_ARMAMENT_MATRIX_DEV_V1_0.json#Magos",
+      "identity": "Arquétipo de combatente que canaliza a Corrente Planetária por método estruturado (fórmula, runa, vínculo ou instinto — MAG-001) para produzir efeitos de combate.",
+      "r2_anchor": {
+        "slug": "reis-magos",
+        "code": "FAC-002",
+        "mag_laws": [
+          "MAG-001",
+          "MAG-002",
+          "MAG-003"
+        ],
+        "note": "Referência institucional mais próxima, mas 'ser da classe Magos' no jogo NÃO implica pertencer aos Reis Magos — a instituição é apenas o exemplo mais visível de prática mágica organizada no cânone."
+      },
+      "narrative_note": "Classe transversal: qualquer personagem com acesso a método mágico pode ser Mago, dentro ou fora da instituição Reis Magos."
+    },
+    {
+      "class_name": "Corrompidos",
+      "armament_family": "Corrupcao controlada (Extensoes Radiculares + Projeteis de Esporo)",
+      "weapon_ids_reference": "MAR_CLASS_ARMAMENT_MATRIX_DEV_V1_0.json#Corrompidos",
+      "identity": "Especialistas da Vigilia Radicular (FAC-004) que passam por exposicao controlada e voluntaria a material da Raiz Profunda (COR-001, estudado sob contencao) para manejar armas e habilidades derivadas da corrupcao sem sucumbir a ela.",
+      "r2_anchor": {
+        "slug": "vigilia-radicular",
+        "code": "FAC-004",
+        "note": "Facção R2 confirmada, ja responsavel pela contencao de incidentes radiculares - base institucional natural da classe."
+      },
+      "narrative_note": "Distinto dos corrompidos involuntarios (NPCs ZUM-001..010, fase 59) e da simbiose unica de Kenua com o Espinho-Negro (STELLAR_SYMBIOSIS_LAW, exclusiva e nao reaproveitada aqui). 5a classe jogavel, criacao de gameplay 100% nova (fase 60) - nenhum fato de COR-001 e alterado."
+    }
+  ]
+}

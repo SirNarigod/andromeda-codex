@@ -1,0 +1,560 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-LANDSCAPE-FEATURES-INDEX-DEV-V1.0",
+  "title": "Paisagens - 1 acidente geografico nomeado por subregiao (65) + 3 travessias fluviais RIO (fase 61)",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "r2_guard": "Toda feature deriva do terrain_type ja atribuido (fases 36-37) - nenhum bioma/fato novo e inventado, so nomeado. Nenhuma coordenada/fronteira fisica exata e criada. PAI-066..068 (fase 61) sao travessias fluviais RIO - feicoes lineares que ATRAVESSAM a subregiao (nao contidas nela), cada uma ancorada em evidencia ja catalogada: vau (LOC-011-004 Vau de Raizel), ponte (PON-002 Ponte dos Jardins sobre ROT-013) e pantano (SUB-019-003). Nao alteram a regra 1-acidente-por-subregiao das 65 originais.",
+  "river_crossing_note_fase_61": "Rios registram travessia (ford/ponte/margem), nunca fronteira. PAI-066 cruza ROT-023/024 (Vau de Raizel); PAI-067 passa sob PON-002 (da o motivo da ponte existir); PAI-068 alimenta o Pantano da Serpente.",
+  "features": [
+    {
+      "feature_id": "PAI-001",
+      "subregion_id": "SUB-001-001",
+      "territory_id": "TER-001",
+      "feature_type": "PLANICIE",
+      "name": "Planicie de Feira Central de Lúminor",
+      "description": "Acidente geografico de Feira Central de Lúminor, coerente com o terreno ja classificado (URBANO_INSTITUCIONAL)."
+    },
+    {
+      "feature_id": "PAI-002",
+      "subregion_id": "SUB-001-002",
+      "territory_id": "TER-001",
+      "feature_type": "PLANICIE",
+      "name": "Planicie de Rota das Caravanas",
+      "description": "Acidente geografico de Rota das Caravanas, coerente com o terreno ja classificado (CORREDOR_TERRESTRE)."
+    },
+    {
+      "feature_id": "PAI-003",
+      "subregion_id": "SUB-001-003",
+      "territory_id": "TER-001",
+      "feature_type": "PLANICIE",
+      "name": "Planicie de Câmara dos Mercadores",
+      "description": "Acidente geografico de Câmara dos Mercadores, coerente com o terreno ja classificado (URBANO_INSTITUCIONAL)."
+    },
+    {
+      "feature_id": "PAI-004",
+      "subregion_id": "SUB-002-001",
+      "territory_id": "TER-002",
+      "feature_type": "PLANICIE",
+      "name": "Planicie de Cinturão das Forjas",
+      "description": "Acidente geografico de Cinturão das Forjas, coerente com o terreno ja classificado (INDUSTRIAL)."
+    },
+    {
+      "feature_id": "PAI-005",
+      "subregion_id": "SUB-002-002",
+      "territory_id": "TER-002",
+      "feature_type": "PLANICIE",
+      "name": "Planicie de Distrito Portuário de Kharveth",
+      "description": "Acidente geografico de Distrito Portuário de Kharveth, coerente com o terreno ja classificado (URBANO_INSTITUCIONAL)."
+    },
+    {
+      "feature_id": "PAI-006",
+      "subregion_id": "SUB-002-003",
+      "territory_id": "TER-002",
+      "feature_type": "PLANICIE",
+      "name": "Planicie de Trilhos do Minério",
+      "description": "Acidente geografico de Trilhos do Minério, coerente com o terreno ja classificado (CORREDOR_FERROVIARIO)."
+    },
+    {
+      "feature_id": "PAI-007",
+      "subregion_id": "SUB-003-001",
+      "territory_id": "TER-003",
+      "feature_type": "PLANICIE",
+      "name": "Planicie de Nó Ferroviário Central",
+      "description": "Acidente geografico de Nó Ferroviário Central, coerente com o terreno ja classificado (CORREDOR_FERROVIARIO)."
+    },
+    {
+      "feature_id": "PAI-008",
+      "subregion_id": "SUB-003-002",
+      "territory_id": "TER-003",
+      "feature_type": "PLANICIE",
+      "name": "Planicie de Distrito das Oficinas Ferroviárias",
+      "description": "Acidente geografico de Distrito das Oficinas Ferroviárias, coerente com o terreno ja classificado (CORREDOR_FERROVIARIO)."
+    },
+    {
+      "feature_id": "PAI-009",
+      "subregion_id": "SUB-003-003",
+      "territory_id": "TER-003",
+      "feature_type": "PLANICIE",
+      "name": "Planicie de Assembleia de Ortheon",
+      "description": "Acidente geografico de Assembleia de Ortheon, coerente com o terreno ja classificado (URBANO_INSTITUCIONAL)."
+    },
+    {
+      "feature_id": "PAI-010",
+      "subregion_id": "SUB-004-001",
+      "territory_id": "TER-004",
+      "feature_type": "LAGO_BAIA",
+      "name": "Baia de Porto Livre de Navyr",
+      "description": "Acidente geografico de Porto Livre de Navyr, coerente com o terreno ja classificado (AQUATICO)."
+    },
+    {
+      "feature_id": "PAI-011",
+      "subregion_id": "SUB-004-002",
+      "territory_id": "TER-004",
+      "feature_type": "LAGO_BAIA",
+      "name": "Baia de Ilhas de Pesca",
+      "description": "Acidente geografico de Ilhas de Pesca, coerente com o terreno ja classificado (AQUATICO)."
+    },
+    {
+      "feature_id": "PAI-012",
+      "subregion_id": "SUB-004-003",
+      "territory_id": "TER-004",
+      "feature_type": "LAGO_BAIA",
+      "name": "Baia de Conselho das Ondas",
+      "description": "Acidente geografico de Conselho das Ondas, coerente com o terreno ja classificado (AQUATICO)."
+    },
+    {
+      "feature_id": "PAI-013",
+      "subregion_id": "SUB-005-001",
+      "territory_id": "TER-005",
+      "feature_type": "PLANICIE",
+      "name": "Planicie de Distrito Tecnomágico",
+      "description": "Acidente geografico de Distrito Tecnomágico, coerente com o terreno ja classificado (URBANO_INSTITUCIONAL)."
+    },
+    {
+      "feature_id": "PAI-014",
+      "subregion_id": "SUB-005-002",
+      "territory_id": "TER-005",
+      "feature_type": "PLANICIE",
+      "name": "Planicie de Laboratórios de Convergência",
+      "description": "Acidente geografico de Laboratórios de Convergência, coerente com o terreno ja classificado (URBANO_INSTITUCIONAL)."
+    },
+    {
+      "feature_id": "PAI-015",
+      "subregion_id": "SUB-005-003",
+      "territory_id": "TER-005",
+      "feature_type": "PLANICIE",
+      "name": "Planicie de Corte de Ithra",
+      "description": "Acidente geografico de Corte de Ithra, coerente com o terreno ja classificado (URBANO_INSTITUCIONAL)."
+    },
+    {
+      "feature_id": "PAI-016",
+      "subregion_id": "SUB-006-001",
+      "territory_id": "TER-006",
+      "feature_type": "CORRENTE_AEREA",
+      "name": "Corrente Aerea de Plataformas Altas",
+      "description": "Acidente geografico de Plataformas Altas, coerente com o terreno ja classificado (AEREO)."
+    },
+    {
+      "feature_id": "PAI-017",
+      "subregion_id": "SUB-006-002",
+      "territory_id": "TER-006",
+      "feature_type": "CORRENTE_AEREA",
+      "name": "Corrente Aerea de Ancoradouro de Naves",
+      "description": "Acidente geografico de Ancoradouro de Naves, coerente com o terreno ja classificado (AEREO)."
+    },
+    {
+      "feature_id": "PAI-018",
+      "subregion_id": "SUB-006-003",
+      "territory_id": "TER-006",
+      "feature_type": "CORRENTE_AEREA",
+      "name": "Corrente Aerea de Câmara Eletiva",
+      "description": "Acidente geografico de Câmara Eletiva, coerente com o terreno ja classificado (AEREO)."
+    },
+    {
+      "feature_id": "PAI-019",
+      "subregion_id": "SUB-007-001",
+      "territory_id": "TER-007",
+      "feature_type": "PLANICIE",
+      "name": "Planicie de Jardins Medicinais",
+      "description": "Acidente geografico de Jardins Medicinais, coerente com o terreno ja classificado (CULTIVADO)."
+    },
+    {
+      "feature_id": "PAI-020",
+      "subregion_id": "SUB-007-002",
+      "territory_id": "TER-007",
+      "feature_type": "PLANICIE",
+      "name": "Planicie de Casas de Cura",
+      "description": "Acidente geografico de Casas de Cura, coerente com o terreno ja classificado (CULTIVADO)."
+    },
+    {
+      "feature_id": "PAI-021",
+      "subregion_id": "SUB-007-003",
+      "territory_id": "TER-007",
+      "feature_type": "PLANICIE",
+      "name": "Planicie de Conselho de Saúde",
+      "description": "Acidente geografico de Conselho de Saúde, coerente com o terreno ja classificado (URBANO_INSTITUCIONAL)."
+    },
+    {
+      "feature_id": "PAI-022",
+      "subregion_id": "SUB-008-001",
+      "territory_id": "TER-008",
+      "feature_type": "FLORESTA",
+      "name": "Floresta de Copas Altas",
+      "description": "Acidente geografico de Copas Altas, coerente com o terreno ja classificado (FLORESTA_DOSSEL)."
+    },
+    {
+      "feature_id": "PAI-023",
+      "subregion_id": "SUB-008-002",
+      "territory_id": "TER-008",
+      "feature_type": "FLORESTA",
+      "name": "Floresta de Raízes Sagradas",
+      "description": "Acidente geografico de Raízes Sagradas, coerente com o terreno ja classificado (FLORESTA_DOSSEL)."
+    },
+    {
+      "feature_id": "PAI-024",
+      "subregion_id": "SUB-008-003",
+      "territory_id": "TER-008",
+      "feature_type": "FLORESTA",
+      "name": "Floresta de Círculo dos Anciãos",
+      "description": "Acidente geografico de Círculo dos Anciãos, coerente com o terreno ja classificado (FLORESTA_DOSSEL)."
+    },
+    {
+      "feature_id": "PAI-025",
+      "subregion_id": "SUB-009-001",
+      "territory_id": "TER-009",
+      "feature_type": "CAVERNA",
+      "name": "Caverna de Câmaras de Cristal",
+      "description": "Acidente geografico de Câmaras de Cristal, coerente com o terreno ja classificado (SUBTERRANEO)."
+    },
+    {
+      "feature_id": "PAI-026",
+      "subregion_id": "SUB-009-002",
+      "territory_id": "TER-009",
+      "feature_type": "CAVERNA",
+      "name": "Caverna de Túneis de Extração",
+      "description": "Acidente geografico de Túneis de Extração, coerente com o terreno ja classificado (SUBTERRANEO)."
+    },
+    {
+      "feature_id": "PAI-027",
+      "subregion_id": "SUB-009-003",
+      "territory_id": "TER-009",
+      "feature_type": "CAVERNA",
+      "name": "Caverna de Assembleia Subcristal",
+      "description": "Acidente geografico de Assembleia Subcristal, coerente com o terreno ja classificado (SUBTERRANEO)."
+    },
+    {
+      "feature_id": "PAI-028",
+      "subregion_id": "SUB-010-001",
+      "territory_id": "TER-010",
+      "feature_type": "PLANICIE",
+      "name": "Planicie de Anel do Conselho Enohariano",
+      "description": "Acidente geografico de Anel do Conselho Enohariano, coerente com o terreno ja classificado (URBANO_INSTITUCIONAL)."
+    },
+    {
+      "feature_id": "PAI-029",
+      "subregion_id": "SUB-010-002",
+      "territory_id": "TER-010",
+      "feature_type": "PLANICIE",
+      "name": "Planicie de Vertente dos Aprendizes",
+      "description": "Acidente geografico de Vertente dos Aprendizes, coerente com o terreno ja classificado (URBANO_INSTITUCIONAL)."
+    },
+    {
+      "feature_id": "PAI-030",
+      "subregion_id": "SUB-010-003",
+      "territory_id": "TER-010",
+      "feature_type": "PLANICIE",
+      "name": "Planicie de Marcas da Corrente",
+      "description": "Acidente geografico de Marcas da Corrente, coerente com o terreno ja classificado (URBANO_INSTITUCIONAL)."
+    },
+    {
+      "feature_id": "PAI-031",
+      "subregion_id": "SUB-011-001",
+      "territory_id": "TER-011",
+      "feature_type": "PLANICIE",
+      "name": "Planicie de Fronteira de Varga",
+      "description": "Acidente geografico de Fronteira de Varga, coerente com o terreno ja classificado (CORREDOR_TERRESTRE)."
+    },
+    {
+      "feature_id": "PAI-032",
+      "subregion_id": "SUB-011-002",
+      "territory_id": "TER-011",
+      "feature_type": "PLANICIE",
+      "name": "Planicie de Corredor Oriental",
+      "description": "Acidente geografico de Corredor Oriental, coerente com o terreno ja classificado (CORREDOR_TERRESTRE)."
+    },
+    {
+      "feature_id": "PAI-033",
+      "subregion_id": "SUB-011-003",
+      "territory_id": "TER-011",
+      "feature_type": "PLANICIE",
+      "name": "Planicie de Pastagens Luminais",
+      "description": "Acidente geografico de Pastagens Luminais, coerente com o terreno ja classificado (PLANICIE)."
+    },
+    {
+      "feature_id": "PAI-034",
+      "subregion_id": "SUB-011-004",
+      "territory_id": "TER-011",
+      "feature_type": "FLORESTA",
+      "name": "Sub-bosque de Baixios de Raizel",
+      "description": "Acidente geografico de Baixios de Raizel, coerente com o terreno ja classificado (SUB_BOSQUE_UMIDO)."
+    },
+    {
+      "feature_id": "PAI-035",
+      "subregion_id": "SUB-011-005",
+      "territory_id": "TER-011",
+      "feature_type": "PLANICIE",
+      "name": "Planicie de Charneira das Oficinas",
+      "description": "Acidente geografico de Charneira das Oficinas, coerente com o terreno ja classificado (INDUSTRIAL)."
+    },
+    {
+      "feature_id": "PAI-036",
+      "subregion_id": "SUB-011-006",
+      "territory_id": "TER-011",
+      "feature_type": "MONTANHA",
+      "name": "Monte de Fendas da Névoa",
+      "description": "Acidente geografico de Fendas da Névoa, coerente com o terreno ja classificado (MONTANHA_ROCHOSA)."
+    },
+    {
+      "feature_id": "PAI-037",
+      "subregion_id": "SUB-012-001",
+      "territory_id": "TER-012",
+      "feature_type": "PLANICIE",
+      "name": "Perimetro de Perímetro de Contenção Alfa",
+      "description": "Acidente geografico de Perímetro de Contenção Alfa, coerente com o terreno ja classificado (ZONA_DE_CONTENCAO)."
+    },
+    {
+      "feature_id": "PAI-038",
+      "subregion_id": "SUB-012-002",
+      "territory_id": "TER-012",
+      "feature_type": "PLANICIE",
+      "name": "Perimetro de Campo de Deslocados",
+      "description": "Acidente geografico de Campo de Deslocados, coerente com o terreno ja classificado (ZONA_DE_CONTENCAO)."
+    },
+    {
+      "feature_id": "PAI-039",
+      "subregion_id": "SUB-012-003",
+      "territory_id": "TER-012",
+      "feature_type": "PLANICIE",
+      "name": "Perimetro de Comando Emergencial",
+      "description": "Acidente geografico de Comando Emergencial, coerente com o terreno ja classificado (ZONA_DE_CONTENCAO)."
+    },
+    {
+      "feature_id": "PAI-040",
+      "subregion_id": "SUB-013-001",
+      "territory_id": "TER-013",
+      "feature_type": "PLANICIE",
+      "name": "Planicie de Muralhas do Trovão",
+      "description": "Acidente geografico de Muralhas do Trovão, coerente com o terreno ja classificado (URBANO_INSTITUCIONAL)."
+    },
+    {
+      "feature_id": "PAI-041",
+      "subregion_id": "SUB-013-002",
+      "territory_id": "TER-013",
+      "feature_type": "PLANICIE",
+      "name": "Planicie de Salão dos Contratados",
+      "description": "Acidente geografico de Salão dos Contratados, coerente com o terreno ja classificado (URBANO_INSTITUCIONAL)."
+    },
+    {
+      "feature_id": "PAI-042",
+      "subregion_id": "SUB-013-003",
+      "territory_id": "TER-013",
+      "feature_type": "PLANICIE",
+      "name": "Planicie de Passagem Secreta",
+      "description": "Acidente geografico de Passagem Secreta, coerente com o terreno ja classificado (CORREDOR_TERRESTRE)."
+    },
+    {
+      "feature_id": "PAI-043",
+      "subregion_id": "SUB-014-001",
+      "territory_id": "TER-014",
+      "feature_type": "VULCAO",
+      "name": "Vulcao de Caldeira Ativa",
+      "description": "Acidente geografico de Caldeira Ativa, coerente com o terreno ja classificado (VULCANICO)."
+    },
+    {
+      "feature_id": "PAI-044",
+      "subregion_id": "SUB-014-002",
+      "territory_id": "TER-014",
+      "feature_type": "VULCAO",
+      "name": "Vulcao de Assentamento da Cratera",
+      "description": "Acidente geografico de Assentamento da Cratera, coerente com o terreno ja classificado (VULCANICO)."
+    },
+    {
+      "feature_id": "PAI-045",
+      "subregion_id": "SUB-014-003",
+      "territory_id": "TER-014",
+      "feature_type": "PLANICIE",
+      "name": "Planicie de Campos de Cinza",
+      "description": "Acidente geografico de Campos de Cinza, coerente com o terreno ja classificado (CULTIVADO)."
+    },
+    {
+      "feature_id": "PAI-046",
+      "subregion_id": "SUB-015-001",
+      "territory_id": "TER-015",
+      "feature_type": "DUNA",
+      "name": "Dunas de Dunas Ocultas",
+      "description": "Acidente geografico de Dunas Ocultas, coerente com o terreno ja classificado (DESERTICO)."
+    },
+    {
+      "feature_id": "PAI-047",
+      "subregion_id": "SUB-015-002",
+      "territory_id": "TER-015",
+      "feature_type": "SITIO_ARQUEOLOGICO",
+      "name": "Sitio de Ruinas de Antes-do-Pacto",
+      "description": "Acidente geografico de Ruinas de Antes-do-Pacto, coerente com o terreno ja classificado (RUINA)."
+    },
+    {
+      "feature_id": "PAI-048",
+      "subregion_id": "SUB-015-003",
+      "territory_id": "TER-015",
+      "feature_type": "OASIS",
+      "name": "Oasis de Oasis do Poco Fundo",
+      "description": "Acidente geografico de Oasis do Poco Fundo, coerente com o terreno ja classificado (OASIS)."
+    },
+    {
+      "feature_id": "PAI-049",
+      "subregion_id": "SUB-016-001",
+      "territory_id": "TER-016",
+      "feature_type": "GELEIRA",
+      "name": "Geleira de Geleira Perene",
+      "description": "Acidente geografico de Geleira Perene, coerente com o terreno ja classificado (GLACIAL)."
+    },
+    {
+      "feature_id": "PAI-050",
+      "subregion_id": "SUB-016-002",
+      "territory_id": "TER-016",
+      "feature_type": "GELEIRA",
+      "name": "Geleira de Abrigo sob o Gelo",
+      "description": "Acidente geografico de Abrigo sob o Gelo, coerente com o terreno ja classificado (GLACIAL)."
+    },
+    {
+      "feature_id": "PAI-051",
+      "subregion_id": "SUB-016-003",
+      "territory_id": "TER-016",
+      "feature_type": "GELEIRA",
+      "name": "Geleira de Fenda Congelada",
+      "description": "Acidente geografico de Fenda Congelada, coerente com o terreno ja classificado (GLACIAL)."
+    },
+    {
+      "feature_id": "PAI-052",
+      "subregion_id": "SUB-017-001",
+      "territory_id": "TER-017",
+      "feature_type": "CORRENTE_AEREA",
+      "name": "Corrente Eterea de Ilha-Ancora",
+      "description": "Acidente geografico de Ilha-Ancora, coerente com o terreno ja classificado (AEREO_ETEREO)."
+    },
+    {
+      "feature_id": "PAI-053",
+      "subregion_id": "SUB-017-002",
+      "territory_id": "TER-017",
+      "feature_type": "CORRENTE_AEREA",
+      "name": "Corrente Eterea de Correntes de Eter",
+      "description": "Acidente geografico de Correntes de Eter, coerente com o terreno ja classificado (AEREO_ETEREO)."
+    },
+    {
+      "feature_id": "PAI-054",
+      "subregion_id": "SUB-017-003",
+      "territory_id": "TER-017",
+      "feature_type": "CORRENTE_AEREA",
+      "name": "Corrente Eterea de Ilhas Errantes",
+      "description": "Acidente geografico de Ilhas Errantes, coerente com o terreno ja classificado (AEREO_ETEREO)."
+    },
+    {
+      "feature_id": "PAI-055",
+      "subregion_id": "SUB-018-001",
+      "territory_id": "TER-018",
+      "feature_type": "ABISMO",
+      "name": "Abismo de Trincheira Profunda",
+      "description": "Acidente geografico de Trincheira Profunda, coerente com o terreno ja classificado (ABISSAL_SUBMERSO)."
+    },
+    {
+      "feature_id": "PAI-056",
+      "subregion_id": "SUB-018-002",
+      "territory_id": "TER-018",
+      "feature_type": "ABISMO",
+      "name": "Abismo de Recifes Luminosos",
+      "description": "Acidente geografico de Recifes Luminosos, coerente com o terreno ja classificado (ABISSAL_SUBMERSO)."
+    },
+    {
+      "feature_id": "PAI-057",
+      "subregion_id": "SUB-018-003",
+      "territory_id": "TER-018",
+      "feature_type": "ABISMO",
+      "name": "Abismo de Camaras de Pressao",
+      "description": "Acidente geografico de Camaras de Pressao, coerente com o terreno ja classificado (ABISSAL_SUBMERSO)."
+    },
+    {
+      "feature_id": "PAI-058",
+      "subregion_id": "SUB-019-001",
+      "territory_id": "TER-019",
+      "feature_type": "FLORESTA",
+      "name": "Selva de Dossel Verde",
+      "description": "Acidente geografico de Dossel Verde, coerente com o terreno ja classificado (SELVA_TROPICAL)."
+    },
+    {
+      "feature_id": "PAI-059",
+      "subregion_id": "SUB-019-002",
+      "territory_id": "TER-019",
+      "feature_type": "SITIO_ARQUEOLOGICO",
+      "name": "Sitio de Ruinas Cobertas",
+      "description": "Acidente geografico de Ruinas Cobertas, coerente com o terreno ja classificado (RUINA)."
+    },
+    {
+      "feature_id": "PAI-060",
+      "subregion_id": "SUB-019-003",
+      "territory_id": "TER-019",
+      "feature_type": "PANTANO",
+      "name": "Pantano de Pantano da Serpente",
+      "description": "Acidente geografico de Pantano da Serpente, coerente com o terreno ja classificado (PANTANO)."
+    },
+    {
+      "feature_id": "PAI-061",
+      "subregion_id": "SUB-020-001",
+      "territory_id": "TER-020",
+      "feature_type": "URBANO_TECNOLOGICO",
+      "name": "Anel do Despertar",
+      "description": "Praças de memória cercadas por torres de energia."
+    },
+    {
+      "feature_id": "PAI-062",
+      "subregion_id": "SUB-020-002",
+      "territory_id": "TER-020",
+      "feature_type": "INDUSTRIAL",
+      "name": "Cinturão de Forjas",
+      "description": "Fornos rúnicos e linhas de fabricação de chassis."
+    },
+    {
+      "feature_id": "PAI-063",
+      "subregion_id": "SUB-020-003",
+      "territory_id": "TER-020",
+      "feature_type": "ESTUFA",
+      "name": "Jardins de Suporte Vital",
+      "description": "Estufas bioluminescentes alimentadas por condensadores."
+    },
+    {
+      "feature_id": "PAI-064",
+      "subregion_id": "SUB-020-004",
+      "territory_id": "TER-020",
+      "feature_type": "DISTRITO_CULTURAL",
+      "name": "Distrito das Memórias",
+      "description": "Parques de luz e galerias de vozes."
+    },
+    {
+      "feature_id": "PAI-065",
+      "subregion_id": "SUB-020-005",
+      "territory_id": "TER-020",
+      "feature_type": "PERIMETRO_DEFENSIVO",
+      "name": "Perímetro de Vigília",
+      "description": "Muralhas móveis e campos de sucata."
+    },
+    {
+      "feature_id": "PAI-066",
+      "subregion_id": "SUB-011-004",
+      "territory_id": "TER-011",
+      "feature_type": "RIO",
+      "name": "Rio Raizel",
+      "description": "Rio de sub-bosque umido que corta os Baixios de Raizel; o Vau de Raizel (LOC-011-004) e o ponto de travessia das rotas ROT-023/024. Coerente com SUB_BOSQUE_UMIDO ja classificado.",
+      "crossed_by": ["ROT-023", "ROT-024"],
+      "ford_ref": "LOC-011-004"
+    },
+    {
+      "feature_id": "PAI-067",
+      "subregion_id": "SUB-007-002",
+      "territory_id": "TER-007",
+      "feature_type": "RIO",
+      "name": "Rio Rubro",
+      "description": "Rio manso que desce dos Jardins Medicinais (SUB-007-001) as Casas de Cura (SUB-007-002); a PON-002 Ponte dos Jardins (ROT-013) o atravessa - e o motivo da ponte existir. Agua usada nas boticas.",
+      "crossed_by": ["ROT-013"],
+      "bridge_ref": "PON-002"
+    },
+    {
+      "feature_id": "PAI-068",
+      "subregion_id": "SUB-019-003",
+      "territory_id": "TER-019",
+      "feature_type": "RIO",
+      "name": "Rio da Serpente",
+      "description": "Rio lento de selva que alimenta o Pantano da Serpente; margens sao habitat de predadores de emboscada - travessia somente com guia.",
+      "crossed_by": [],
+      "safety": "FICTIONAL_LOCATION_ONLY"
+    }
+  ]
+}

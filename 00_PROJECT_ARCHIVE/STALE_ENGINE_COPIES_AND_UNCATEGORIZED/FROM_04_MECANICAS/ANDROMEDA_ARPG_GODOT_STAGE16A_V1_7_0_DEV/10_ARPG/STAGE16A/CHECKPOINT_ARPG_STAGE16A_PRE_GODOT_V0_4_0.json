@@ -1,0 +1,43 @@
+{
+  "record_id": "CHECKPOINT-ARPG-STAGE16A-PRE-GODOT-V0.4.0",
+  "project": "ANDRÔMEDA CÓDEX ARPG",
+  "stage": "16A/23",
+  "version": "V0.4.0-PRE-GODOT",
+  "status": "PASS_PARTIAL_PRE_GODOT",
+  "parent": "CHECKPOINT-ARPG-STAGE16A-PRE-GODOT-V0.3.0",
+  "completed_minor_blocks": [
+    "INTERACTION_INTENT_RESOLUTION",
+    "UNIVERSAL_GROUND_LOOT",
+    "TERRAIN_TRAVERSAL_AND_STREAMING_CONTRACT",
+    "REAL_TIME_DIALOGUE_PRESENTATION",
+    "MINIMAL_CONTEXTUAL_HUD",
+    "CAMERA_PRESENTATION_CONTRACT",
+    "GAME_FEEL_AND_CONTEXTUAL_FEEDBACK_CONTRACT"
+  ],
+  "tests": {
+    "stage16a": {
+      "checks": 114,
+      "passed": 114,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "stage03_combat": {
+      "checks": 14,
+      "passed": 14,
+      "status": "PASS"
+    },
+    "stage04_resources": {
+      "checks": 16,
+      "passed": 16,
+      "status": "PASS"
+    }
+  },
+  "godot_gate": "PENDING_PC_ON_AND_EDITOR_BRIDGE_AVAILABLE",
+  "stage16_final_pass_allowed": false,
+  "backup_authorized": false,
+  "canon_mutations": 0,
+  "open_blockers": [
+    "DIRECT_GODOT_RUNTIME_VALIDATION_REQUIRED_FOR_STAGE16B"
+  ],
+  "next_minor_block": "VERTICAL_SLICE_RUNTIME_ASSEMBLY_CONTRACT_OR_REMAINING_PRE_GODOT_GAPS"
+}

@@ -1,0 +1,44 @@
+{
+  "record_id": "R2_REBASE_DECISION_LEDGER_V1_9",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.9",
+  "status": "LOTS_001_TO_010_APPLIED",
+  "supersedes": "R2_REBASE_DECISION_LEDGER_V1_8",
+  "authority": {"r2": "IMMUTABLE_NARRATIVE_ORIGIN", "user_approval": "REQUIRED_FOR_DIVERGENCE_DISPOSITION"},
+  "invariants": ["NO_PHYSICAL_DELETION_WITHOUT_RECORDED_APPROVAL", "R2_WINS_NARRATIVE_CONFLICTS", "COMPATIBLE_EXPANSIONS_RETAIN_PROVENANCE"],
+  "prior_ledger": "R2_REBASE_DECISION_LEDGER_V1_8.json",
+  "entries": [
+    {
+      "decision_id": "R2-REBASE-LOT-010",
+      "date": "2026-09-07",
+      "status": "APPLIED",
+      "user_authorization": "Close causality and autonomy/responsibility laws before UE5 code. AI recognition is gradual, requiring evidence, conflict and auditable local decision.",
+      "approved_actions": [
+        "Promote STELLAR_CAUSALITY_LAW_V1_1 as the active bounded causal audit law.",
+        "Promote STELLAR_AUTONOMY_RESPONSIBILITY_LAW_V1_1 as the active gradual-recognition law.",
+        "Expose causal ledgers and autonomous-agent metadata as read-only interfaces for LivingSim, Living Scale and future UE5.",
+        "Preserve V1.0 laws, technical sources, R2 and all prior records without deletion."
+      ],
+      "new_active_records": [
+        "STELLAR_CAUSALITY_LAW_V1_1",
+        "STELLAR_AUTONOMY_RESPONSIBILITY_LAW_V1_1",
+        "STELLAR_FOUNDATION_INDEX_V1_10",
+        "LIVING_SIM_CONTENT_PROJECTION_V5",
+        "LIVING_SCALE_CONTENT_PROJECTION_V5",
+        "ANDROMEDA_UE5_CONTENT_MANIFEST_V5"
+      ],
+      "historical_records_preserved": [
+        "STELLAR_CAUSALITY_LAW_V1_0",
+        "STELLAR_AUTONOMY_RESPONSIBILITY_LAW_V1_0",
+        "STELLAR_FOUNDATION_INDEX_V1_9",
+        "R2_REBASE_DECISION_LEDGER_V1_8",
+        "LIVING_SIM_CONTENT_PROJECTION_V4",
+        "LIVING_SCALE_CONTENT_PROJECTION_V4",
+        "ANDROMEDA_UE5_CONTENT_MANIFEST_V4"
+      ],
+      "physical_deletion": false,
+      "reversible_action": "A later authorial ledger entry may supersede the derived laws or interfaces; R2, sources and historical versions remain intact."
+    }
+  ],
+  "next_batches": ["11_OTHER_TERRITORY_SUBREGIONS", "05_ENGINE_ARPG_RUNTIME_AFTER_UE5_SETUP"]
+}

@@ -1,0 +1,14 @@
+{
+  "record_id": "STELLAR-SOVEREIGNTY-TERRITORY-LAW-V1.0",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.0",
+  "status": "AUTHORIAL_WORLD_OVERLAY",
+  "authority": {"scope": "TERRITORY_AND_FACTION", "pilot_country": "TER-011_TERRAS_LIVRES", "master_geometry": "READ_ONLY"},
+  "dependencies": ["STELLAR_CANON_CONSTITUTION_V1_0.json", "../../01_LORE/ANDROMEDA_ARPG_STAGE17_PLAYABLE_VERTICAL_SLICE_V0_DEV/WORLD_CANON/ARPG_WORLD_CANON_BINDING_V0_9_0.json", "../ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/02_CONTRACTS/SYSTEMIC_ECONOMY_FACTIONS_POPULATION_CONTRACT_V1_0.json"],
+  "invariants": ["INFLUENCE_NEVER_EQUALS_SOVEREIGNTY", "TERRITORY_REQUIRES_PEOPLE_ROUTE_AND_RECOGNITION", "CANONICAL_GEOMETRY_NEVER_MUTATES_AT_RUNTIME", "SOVEREIGNTY_CHANGE_IS_AUDITED", "OFFLINE_SOVEREIGNTY_CHANGE_IS_PROHIBITED"],
+  "prohibitions": ["NO_FACTION_AUTO_ANNEXATION", "NO_ROUTE_ERASURE_BY_RUNTIME", "NO_PLANETARY_BORDER_CHANGE_WITHOUT_PROMOTION", "NO_EXCLUSIVE_CLAIM_OVER_STELLAR"],
+  "simulation_effects": ["Influence, service, security and recognition are separate runtime dimensions.", "Local control may shift through events, but borders remain claims until promoted.", "Routes carry material, people, rumor and obligations."],
+  "allowed_states": ["CANONICAL_TERRITORY", "CONTESTED_ROUTE", "LOCAL_ADMINISTRATION", "INFLUENCE_ZONE", "RECOGNITION_PENDING", "AUTHORIAL_PROMOTION_PENDING"],
+  "story_generators": ["Duas facções administram o mesmo posto por motivos diferentes e nenhuma possui soberania legítima.", "Uma rota abandonada torna-se a única prova de que uma fronteira nunca foi natural.", "Terras Livres precisa decidir se aceita proteção externa ao custo de uma obrigação política duradoura."],
+  "compatibility": {"one_country_runtime": "PRESERVED", "global_catalog": "READ_ONLY_INDEX_ONLY"}
+}

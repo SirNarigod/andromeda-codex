@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-006-001",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Plataforma Real",
+  "parent_subregion": "SUB-006-001",
+  "parent_political_unit": "TER-006",
+  "function": "Residência da monarca eletiva Vaelora Aereth.",
+  "notable_link": "Vaelora Aereth (autoridade máxima)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-006-001",
+  "settlement_tier": "COMPLEXO",
+  "history": "Altavela elege sua monarquia por período fixo, e a Plataforma Real passa fisicamente de mão em mão a cada eleição — não em decoração ou móveis, que permanecem, mas em pequenas modificações estruturais que cada monarca eleito faz por direito de mandato, deixando o próprio nome gravado numa viga específica reservada exatamente pra isso. Vaelora Aereth é a sétima a ocupar a plataforma desde que o sistema eletivo atual foi estabelecido, e sua viga já tem o nome gravado, embora o mandato ainda não tenha terminado.",
+  "sensory": "A plataforma flutua ancorada por cabos tensionados a torres de sustentação distantes, balançando de forma quase imperceptível com correntes de vento que moradores de Altavela aprenderam a ignorar desde criança. A vista se estende por quilômetros em todas as direções, sem obstrução alguma, e visitantes de territórios terrestres frequentemente relatam uma sensação de vertigem que passa em poucas horas. Bandeiras de cada monarca anterior tremulam ao longo da borda externa, uma fileira crescente que documenta visualmente a sucessão eletiva do reino.",
+  "figures": [
+    {
+      "role": "Monarca eletiva",
+      "name": "Vaelora Aereth",
+      "note": "Governa no meio do próprio mandato, ainda decidindo qual modificação estrutural deixará como marca pessoal na plataforma — hesita porque considera a decisão simbólica demais pra apressar, embora conselheiros insistam que o costume espera uma escolha nos primeiros meses de reinado."
+    },
+    {
+      "role": "Guardião das Bandeiras",
+      "name": "Orwin Sextovento",
+      "note": "Mantém as bandeiras dos monarcas anteriores em perfeito estado, incluindo uma que já está visivelmente desbotada além do reparo simples — precisa decidir se substitui o tecido original por uma réplica, quebrando tecnicamente a autenticidade histórica, ou deixa a bandeira mais antiga do reino se deteriorar até ficar irreconhecível."
+    }
+  ],
+  "hook": "Vaelora finalmente decidiu qual modificação deixará como marca — expandir a própria plataforma pra acomodar uma nova ala de recepção — mas isso exigiria realocar exatamente a bandeira mais desbotada que Orwin está tentando preservar, forçando os dois a resolver problemas completamente diferentes na mesma conversa.",
+  "detail": "Nenhum monarca eleito pode modificar a plataforma depois do primeiro ano de mandato — uma regra instituída justamente pra evitar que decisões tardias e possivelmente desesperadas de reeleição influenciem a estrutura permanente do reino.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION"]
+}

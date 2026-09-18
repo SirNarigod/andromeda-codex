@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#07131e" />
+    <title>Andrômeda Atlas Stellar</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#atlas-main">Pular para o Atlas</a>
+    <header class="topbar">
+      <div class="brand" aria-label="Andrômeda Atlas Stellar">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <div><strong>ANDRÔMEDA</strong><span>ATLAS STELLAR · PROJEÇÃO CANÔNICA</span></div>
+      </div>
+      <label class="global-search" for="search-input">
+        <span aria-hidden="true">⌕</span>
+        <input id="search-input" type="search" autocomplete="off" placeholder="Buscar nome, alias, ID ou relação…" />
+        <kbd>⌘K</kbd>
+      </label>
+      <div class="top-actions">
+        <button id="view-mode" class="ghost-button" type="button" aria-pressed="false">◐ Modo orbital</button>
+        <button id="reset-view" class="ghost-button" type="button">↺ Redefinir</button>
+      </div>
+    </header>
+
+    <main id="atlas-main" class="atlas-shell">
+      <aside class="left-panel" aria-label="Controles de consulta">
+        <section class="panel-section filter-section">
+          <div class="section-heading"><h2>Consulta</h2><button id="clear-filters" class="text-button" type="button">Limpar</button></div>
+          <label>Domínio<select id="domain-filter"><option value="">Todos</option></select></label>
+          <label>Território<select id="territory-filter"><option value="">Todos</option></select></label>
+          <label>Bioma<select id="biome-filter"><option value="">Todos</option></select></label>
+          <label>Conteúdo visível<select id="spoiler-filter"><option value="0">Público</option><option value="1">Contexto</option><option value="2">Narrativa</option><option value="3">Spoilers</option></select></label>
+          <p class="help-text">Nível 4 permanece oculto: é material autoral restrito.</p>
+        </section>
+        <section class="panel-section layers-section">
+          <div class="section-heading"><h2>Layers</h2><span id="layer-count" class="metric">—</span></div>
+          <div id="layer-list" class="layer-list" role="group" aria-label="Layers do Atlas"></div>
+        </section>
+        <section class="panel-section legend-section">
+          <h2>Legenda</h2>
+          <ul class="legend">
+            <li><i class="legend-dot city" aria-hidden="true"></i>Cidade / assentamento</li>
+            <li><i class="legend-dot poi" aria-hidden="true"></i>Ponto de interesse</li>
+            <li><i class="legend-line" aria-hidden="true"></i>Rota canônica</li>
+            <li><i class="legend-area" aria-hidden="true"></i>Envoltória de apresentação</li>
+          </ul>
+        </section>
+      </aside>
+
+      <section class="map-column" aria-label="Mapa interativo de Stellar">
+        <div class="map-toolbar">
+          <div class="statusline"><span class="status-dot"></span><span id="map-status">Carregando Atlas…</span></div>
+          <div class="map-controls" aria-label="Controles do mapa">
+            <button id="zoom-in" type="button" aria-label="Aproximar">+</button>
+            <button id="zoom-out" type="button" aria-label="Afastar">−</button>
+            <label id="rotation-control" class="rotation-control" hidden>Rotação <input id="rotation-slider" type="range" min="-180" max="180" value="0" /></label>
+          </div>
+        </div>
+        <div id="map-frame" class="map-frame" tabindex="0" aria-label="Mapa navegável. Use arrastar, botões de zoom ou seleção de marcador.">
+          <svg id="stellar-map" viewBox="0 0 1000 660" role="img" aria-label="Mapa de Stellar com pontos, rotas e envoltórias" preserveAspectRatio="xMidYMid meet"></svg>
+          <div id="map-tooltip" class="map-tooltip" role="status" aria-live="polite" hidden></div>
+          <div id="map-empty" class="map-empty" hidden>Nenhum elemento corresponde aos filtros atuais.</div>
+        </div>
+        <div class="map-footer">
+          <span>Arraste para pan · role para zoom · selecione um marcador</span>
+          <span id="map-coverage">—</span>
+        </div>
+      </section>
+
+      <aside class="right-panel" aria-label="Detalhes e relações">
+        <section id="entity-card" class="entity-card" aria-live="polite">
+          <div class="empty-card"><span class="empty-symbol">✦</span><h2>Selecione uma entidade</h2><p>Abra um marcador, resultado de busca, rota ou item da lista para consultar sua ficha canônica.</p></div>
+        </section>
+        <section class="panel-section relation-section">
+          <div class="section-heading"><h2>Relações</h2><span id="relation-count" class="metric">0</span></div>
+          <div id="relation-list" class="relation-list"><p class="muted">Selecione uma entidade para explorar vínculos.</p></div>
+        </section>
+      </aside>
+    </main>
+
+    <section class="bottom-dock" aria-label="Resultados de consulta">
+      <div class="dock-tabs" role="tablist" aria-label="Modos de consulta">
+        <button class="dock-tab active" data-tab="results" role="tab" aria-selected="true">Resultados <span id="result-count">0</span></button>
+        <button class="dock-tab" data-tab="timeline" role="tab" aria-selected="false">Timeline <span id="timeline-count">0</span></button>
+        <button class="dock-tab" data-tab="flows" role="tab" aria-selected="false">Fluxos <span id="flow-count">0</span></button>
+      </div>
+      <div id="dock-results" class="dock-content" role="tabpanel"></div>
+      <div id="dock-timeline" class="dock-content" role="tabpanel" hidden></div>
+      <div id="dock-flows" class="dock-content" role="tabpanel" hidden></div>
+    </section>
+
+    <template id="card-template">
+      <article class="card-content">
+        <div class="card-topline"><span class="entity-domain"></span><span class="entity-status"></span></div>
+        <h1 class="entity-name"></h1><p class="entity-id"></p>
+        <p class="entity-summary"></p>
+        <div class="asset-fallback"><span aria-hidden="true">◇</span><span>Asset visual: fallback neutro</span></div>
+        <dl class="entity-facts"></dl>
+        <div class="card-actions"><button class="codex-link" type="button">Abrir referência Códex</button><button class="copy-link" type="button">Copiar link Atlas</button></div>
+      </article>
+    </template>
+
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

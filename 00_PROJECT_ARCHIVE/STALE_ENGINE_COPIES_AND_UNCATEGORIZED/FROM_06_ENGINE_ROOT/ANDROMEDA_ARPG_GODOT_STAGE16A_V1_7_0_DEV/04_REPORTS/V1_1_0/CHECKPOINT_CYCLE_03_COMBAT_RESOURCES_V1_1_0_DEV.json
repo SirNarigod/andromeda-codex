@@ -1,0 +1,53 @@
+{
+  "record_id": "CHECKPOINT-LIVING-CYCLE-03-COMBAT-RESOURCES-V1.1.0-DEV",
+  "project": "ANDRÔMEDA CÓDEX",
+  "component": "Living Simulation Engine",
+  "working_version": "V1.1.0-DEV",
+  "baseline_version": "V1.0.0",
+  "cycle": "3/6",
+  "cycle_name": "COMBAT + RESOURCES",
+  "status": "PASS",
+  "master_dependency": {
+    "mode": "READ_ONLY",
+    "sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "mutations": 0
+  },
+  "changes": [
+    "Core consequence operation SPAWN for atomic event-sourced runtime entity creation",
+    "Replay understands dynamic SPAWN without treating dynamic entities as genesis bootstrap",
+    "CombatSystem bridges owned/equipped MAR weapon to abstract health/damage",
+    "Equipment condition/durability wear",
+    "Co-location guard for combat",
+    "Narrative death protection respected",
+    "Lethal combat atomically spawns CORPSE",
+    "Corpse harvest atomically spawns RESOURCE_BUNDLE",
+    "DomainIntegrationHub consumes COMBAT_RESOLVED for social witness and ecology aggregate death"
+  ],
+  "balance_policy": "NUMERIC_COMBAT_AND_YIELD_RUNTIME_ONLY_NOT_CANON",
+  "validation": {
+    "runtime_core_original": {
+      "passed": 59,
+      "failed": 0
+    },
+    "domain_commerce_combat_spawn": {
+      "passed": 27,
+      "failed": 0
+    },
+    "affected_scope_total": {
+      "passed": 86,
+      "failed": 0,
+      "status": "PASS"
+    }
+  },
+  "files": {
+    "01_RUNTIME/living_runtime.py": "9a8000a160f6de4f3aa3cebc9409fa3723e203929d1ad9c0bff77fc9a19d75a8",
+    "01_RUNTIME/combat_system.py": "c9d23ae1359a5afd4c662c80c48597e89e22d3a33422d5fad05e7d6fd13339c3",
+    "01_RUNTIME/commerce_system.py": "96ff174304c267174c457cfcd74927432a536464d2f7c7d3f8cd73eb7df7e5ec",
+    "01_RUNTIME/domain_integration.py": "ccab1839d24638799378d579d2273ece86a0e87246542a8b2b6a8ae86a07934f",
+    "03_TESTS/test_dynamic_spawn_v1_1.py": "ad64e2ade290d3631ef53de2731fc5481b360887005374f370548d3dd2e2d066",
+    "03_TESTS/test_combat_system_v1_1.py": "38b9aae1f0d7a515d0304e7c811cb174eba84597b5057740ed98421964a6c711"
+  },
+  "release_authorized": false,
+  "backup_authorized": false,
+  "next_cycle": "4/6 MOVEMENT + BIOLOGY + ENVIRONMENT"
+}

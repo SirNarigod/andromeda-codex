@@ -1,0 +1,87 @@
+{
+  "record_id": "CODEX-COUNTRY-SCALE-CANON-RULES-V1.2",
+  "project": "ANDRÔMEDA CÓDEX",
+  "status": "CÂNONE_AUTORIZADO_ESTRUTURAL",
+  "master_integration": "PENDING_NEXT_MASTER_CONSOLIDATION",
+  "source_authority": "Autor — mensagem de 2026-08-15",
+  "planet": "Stellar",
+  "game_target": "RPG_ISOMETRICO_INSPIRADO_EM_ALBION_ONLINE",
+  "scope": {
+    "current_focus": "ONE_COUNTRY_ONLY",
+    "pilot_source_territory_id": "TER-011",
+    "pilot_name": "Terras Livres",
+    "kenua_country_binding": "UNRESOLVED_NOT_PROMOTED"
+  },
+  "hierarchy": [
+    "PLANET",
+    "COUNTRY",
+    "STATE",
+    "REGION_BLOCK",
+    "SUBREGION",
+    "BIOME/CITY/POI",
+    "ENTITY"
+  ],
+  "state_archetypes": [
+    "TECHNOLOGY",
+    "ROBOTICS",
+    "MILITARY",
+    "MAGIC",
+    "NATURE"
+  ],
+  "max_blocks_per_state": 5,
+  "distribution_rules": [
+    "POSITION_CONSTRAINED",
+    "CLIMATE_CONSTRAINED",
+    "TEMPERATURE_RAIN_HUMIDITY",
+    "FLORA_FAUNA_ADAPTATION",
+    "RESOURCE_RICHNESS",
+    "MAGIC_INTENSITY",
+    "PURPOSEFUL_RANDOMNESS_WITH_SEED"
+  ],
+  "inventory_scopes": [
+    "COUNTRY",
+    "STATE",
+    "REGION_BLOCK",
+    "SUBREGION",
+    "CITY",
+    "SHOP",
+    "NPC",
+    "FAUNA",
+    "FLORA",
+    "INDUSTRY",
+    "BRIDGE",
+    "MAGIC_REALM"
+  ],
+  "classes": [
+    "BAIXO",
+    "MÉDIO",
+    "ALTO"
+  ],
+  "root_deep": {
+    "own_biome": true,
+    "predator_only": true,
+    "no_normal_city": true,
+    "no_normal_flora": true,
+    "predator_balance_dimensions": [
+      "size",
+      "damage",
+      "resistance",
+      "venom",
+      "corruption"
+    ]
+  },
+  "industry": {
+    "primary_focus": "MINERALS",
+    "distribution_by_state_blocks": true
+  },
+  "protected_population": {
+    "children": "SYSTEM_PROTECTED",
+    "workers": "SYSTEM_PROTECTED_FROM_HAZARDOUS_LABOR"
+  },
+  "mar": {
+    "gameplay_stats_canonical": true,
+    "scale": "0-100",
+    "canonical_file": "MAR_CANON_GAMEPLAY_STATS_V1_1.json"
+  },
+  "procedural_values_policy": "NUMERIC_COUNTS_EXACT_POSITIONS_STOCKS_AND_GENERATED_NAMES_REMAIN_RUNTIME_UNTIL_EXPLICIT_MASTER_CONSOLIDATION"
+}

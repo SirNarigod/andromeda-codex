@@ -1,0 +1,77 @@
+{
+  "record_id": "PROJECT_ARCHIVE_MANIFEST_V1_0",
+  "title": "Manifesto do arquivo histórico — reorganização de 2026-09-13",
+  "purpose": "Registra o que foi movido para 00_PROJECT_ARCHIVE durante a reorganização do projeto, de onde veio e por quê. Nada foi apagado — tudo aqui é cópia confirmada de conteúdo que já existe em outro lugar vivo do projeto, ou exaustão de build/histórico de pipeline sem consumidor vivo confirmado.",
+  "created": "2026-09-13",
+  "method": "Duas investigações somente-leitura (agentes Explore) confirmaram cada item via diff -rq contra a árvore viva e/ou grep de referências no projeto inteiro, antes de qualquer movimentação.",
+  "entries": [
+    {
+      "archived_path": "REBASE_AND_VALIDATION_HISTORY_2026_09/",
+      "original_location": "raiz de ANDROMEDA_CODEX_CLEAN",
+      "file_count": 37,
+      "contents": "22 arquivos R2_REBASE_LOT_001..011A (relatórios/validações/manifestos do pipeline de rebase de cânone), 8 arquivos STELLAR_FOUNDATION_* (change report, compatibility report, manifest, validation reports V1.0-V1.4), ANDROMEDA_REORGANIZATION_REPORT.md, ARCHIVE_VERIFICATION.json, extract.txt, ANDROMEDA_MANIFEST.json",
+      "reason": "Histórico de build/validação do pipeline de rebase de 6-7/set/2026. Nenhum script .py lê estes arquivos; ANDROMEDA_MANIFEST.json já estava desatualizado (apontava para CONTENT_ROUTING_REGISTRY_V4, quando V6 já existe)."
+    },
+    {
+      "archived_path": "STALE_ENGINE_COPIES_AND_UNCATEGORIZED/FROM_06_ENGINE_ROOT/",
+      "original_location": "06_ENGINE/ (raiz)",
+      "file_count": 922,
+      "contents": "ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/ (560 arquivos), ANDROMEDA_ARPG_STAGE17_PLAYABLE_VERTICAL_SLICE_V0_DEV/ (32 arquivos), LEGADO_TECNICO/ (237 arquivos), UNCATEGORIZED_SOURCE/ (93 arquivos)",
+      "reason": "Confirmado via diff -rq: subconjuntos estritos e obsoletos da árvore viva em 06_ENGINE/G/ACTIVE_STAGE17_WORKSPACE/ (0 arquivos com conteúdo divergente, só arquivos ausentes na cópia solta). LEGADO_TECNICO já se autodeclarava legado pelo nome."
+    },
+    {
+      "archived_path": "STALE_ENGINE_COPIES_AND_UNCATEGORIZED/FROM_01_LORE/",
+      "original_location": "01_LORE/",
+      "file_count": 9,
+      "contents": "UNCATEGORIZED_SOURCE/ (2 arquivos — scripts de teste Godot), ANDROMEDA_ARPG_STAGE17_PLAYABLE_VERTICAL_SLICE_V0_DEV/ (7 arquivos)",
+      "reason": "Confirmado arquivo-por-arquivo: todos os 9 são cópias byte-idênticas de conteúdo já existente na árvore viva do motor. Zero lore único."
+    },
+    {
+      "archived_path": "STALE_ENGINE_COPIES_AND_UNCATEGORIZED/FROM_02_REGRAS/",
+      "original_location": "02_REGRAS/",
+      "file_count": 92,
+      "contents": "UNCATEGORIZED_SOURCE/ (61 arquivos — scripts/cenas de gate de autoridade Godot e JSONs de auditoria AUTHORITY_*), ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/ (31 arquivos, só 02_CONTRACTS)",
+      "reason": "Confirmado: todos duplicados na árvore viva (06_ENGINE/G/ACTIVE_STAGE17_WORKSPACE/...), exceto 1 arquivo órfão de auditoria (checkpoint de restore de um .zip que não existe mais em lugar nenhum do projeto) — histórico de engenharia sem valor de lore, arquivado junto."
+    },
+    {
+      "archived_path": "STALE_ENGINE_COPIES_AND_UNCATEGORIZED/FROM_04_MECANICAS/",
+      "original_location": "04_MECANICAS/",
+      "file_count": 110,
+      "contents": "UNCATEGORIZED_SOURCE/ (1 arquivo — relatório de QA de armas), ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/ (109 arquivos restantes, após resgate)",
+      "reason": "ATENÇÃO — RESGATE FEITO ANTES DE ARQUIVAR: esta pasta continha as ÚNICAS cópias de ARPG_AUTHORIAL_DECISIONS_V0_2_0.json e V0_3_0.json (10_ARPG/00_GOVERNANCE/), referenciadas por 5 arquivos de lore/mecânica reais. Ambos foram copiados (SHA-256 verificado) para 06_ENGINE/G/ACTIVE_STAGE17_WORKSPACE/.../10_ARPG/00_GOVERNANCE/ (completando a linhagem V0_1_0→V0_3_0 no lugar canônico) ANTES desta pasta ser arquivada. O restante confirmado como cópia idêntica da árvore viva."
+    },
+    {
+      "archived_path": "STALE_ENGINE_COPIES_AND_UNCATEGORIZED/FROM_05_CRIACAO_PROCEDURAL/",
+      "original_location": "05_CRIACAO_PROCEDURAL/",
+      "file_count": 14,
+      "contents": "UNCATEGORIZED_SOURCE/ (MASTER_MANIFEST.json, MASTER_SEAL_V2_0_1.json, MASTER_RELEASE_REPORT_V2_0_1.json, .zip.sha256, Regra de continuidade.txt)",
+      "reason": "Registros históricos de selagem/release de um pacote Master V2.0.1 anterior — sem consumidor vivo confirmado."
+    }
+  ],
+  "rescued_before_archive": [
+    {
+      "file": "ARPG_AUTHORIAL_DECISIONS_V0_2_0.json",
+      "moved_to": "06_ENGINE/G/ACTIVE_STAGE17_WORKSPACE/ANDROMEDA_ARPG_STAGE17_PLAYABLE_VERTICAL_SLICE_V0_DEV/10_ARPG/00_GOVERNANCE/",
+      "sha256": "3b7fe95b17d4634bc93d6a80f7a7abdc6a82fdfc77c248fd58f850e8ed23149e"
+    },
+    {
+      "file": "ARPG_AUTHORIAL_DECISIONS_V0_3_0.json",
+      "moved_to": "06_ENGINE/G/ACTIVE_STAGE17_WORKSPACE/ANDROMEDA_ARPG_STAGE17_PLAYABLE_VERTICAL_SLICE_V0_DEV/10_ARPG/00_GOVERNANCE/",
+      "sha256": "aa908a8e2aaa76cc96aa4fe46ff229e9a43d369d08d4728a9fabf87581048089"
+    }
+  ],
+  "deliberately_not_archived": [
+    {
+      "item": "01_LORE/CONTENT_ROUTING_REGISTRY_V1.json..V5.json",
+      "reason": "Não são lixo — linhagem versionada ainda citada por caminho relativo em ~14 arquivos vivos (06_ENGINE/ACTIVE_CONTENT_ADAPTERS/, 07_AUTOMATION/EXPORTS/). Mexer exigiria atualizar todas as referências por um ganho estético pequeno. Sinalizado como limpeza futura opcional."
+    },
+    {
+      "item": "STELLAR_MASTER_INDEX_DEV_V1_0.md",
+      "reason": "Índice de navegação vivo, mais recentemente tocado (11/set), referenciado como mapa principal do novo README de raiz."
+    },
+    {
+      "item": "05_CRIACAO_PROCEDURAL/ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/ e /ANDROMEDA_ARPG_STAGE17_PLAYABLE_VERTICAL_SLICE_V0_DEV/",
+      "reason": "Confirmado que NÃO são cópias do motor — são uma fatia de conteúdo diferente (mapas, JSON de autoria de recursos, docs de atlas/codex-expansion), sem sobreposição de arquivos com as árvores de engine arquivadas."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "record_id": "LOC-004-003",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Salão das Ondas",
+  "parent_subregion": "SUB-004-003",
+  "parent_political_unit": "TER-004",
+  "function": "Câmara flutuante onde o Conselho das Ondas se reúne.",
+  "notable_link": "Nymara Vel-Thal (autoridade máxima)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-004-003",
+  "settlement_tier": "CIDADE",
+  "history": "O Salão nunca foi construído num local fixo — é, ele mesmo, uma plataforma flutuante ancorada por correntes longas o bastante pra deixá-lo balançar livremente com a maré, um símbolo deliberado de que nenhuma autoridade em Navyr governa a partir de terra firme sobre ninguém. Nymara Vel-Thal não foi a primeira a presidir o Conselho ali, mas foi quem consolidou a tradição de que qualquer decisão do Conselho só é válida se tomada com o Salão de fato flutuando — reuniões de emergência em terra firme, por mais urgentes, nunca tiveram força de lei plena.",
+  "sensory": "O chão do salão se move de forma quase imperceptível sob os pés, o suficiente pra visitantes de terra firme sentirem um leve desequilíbrio nas primeiras horas. As paredes são de madeira clara importada, entalhada com os símbolos de cada ilha que já enviou representante ao Conselho — um mural vivo que cresce a cada nova adesão e nunca é apagado, mesmo quando uma ilha se afasta politicamente. A luz entra por claraboias de vidro fosco, deliberadamente difusa, pra que nenhuma cadeira do Conselho fique mais iluminada que as outras.",
+  "figures": [
+    {
+      "role": "Presidente do Conselho",
+      "name": "Nymara Vel-Thal",
+      "note": "Governa por consenso construído, não por decreto — passa mais tempo ouvindo do que falando nas sessões, e é conhecida por deixar disputas se arrastarem por semanas até as próprias partes chegarem a um acordo, em vez de impor uma decisão de cima. Alguns conselheiros mais jovens veem isso como fraqueza; os mais velhos, como o único jeito de manter o arquipélago inteiro unido sem guerra."
+    },
+    {
+      "role": "Conselheira da ala mercante",
+      "name": "Sorrel Vantomar",
+      "note": "Representa os interesses do Cais Principal dentro do Conselho e pressiona há anos por uma taxa formal de porto, o que encontraria forte resistência das ilhas de pesca menores. Respeita Nymara, mas acha que a paciência dela está custando oportunidades econômicas reais."
+    },
+    {
+      "role": "Conselheiro das ilhas pequenas",
+      "name": "Danel Baixamar",
+      "note": "Fala pelas comunidades de pesca como a Vila dos Pescadores e é o principal opositor de qualquer taxação formal — teme que isso beneficie só quem já lucra com o comércio grande, deixando as vilas menores pra trás."
+    }
+  ],
+  "hook": "Sorrel Vantomar convocou uma votação sobre a taxa de porto pela quarta vez em dois anos, e desta vez tem apoio suficiente pra realmente passar — Nymara sabe que aprovar vai fraturar a confiança das ilhas pequenas, mas rejeitar de novo pode custar o apoio da ala mercante, que sustenta boa parte do comércio que mantém o arquipélago relevante.",
+  "detail": "Nenhuma decisão do Conselho é registrada por escrito enquanto está sendo debatida — só o resultado final é escrito, entalhado a mão numa das vigas do salão. Isso significa que a história completa de qualquer disputa só existe na memória de quem estava presente, e memórias divergem.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION"]
+}

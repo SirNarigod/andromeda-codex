@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "worlds": 300,
+  "failures": [],
+  "totals": {
+    "worlds": 300,
+    "blocks": 4485,
+    "roots": 771,
+    "dungeons": 3014,
+    "objects": 103819
+  },
+  "mins": {
+    "dungeons": 2,
+    "objects": 148,
+    "resources_per_block": 3
+  },
+  "maxs": {
+    "dungeons": 20,
+    "objects": 568,
+    "resources_per_block": 16
+  },
+  "seconds": 7.321
+}

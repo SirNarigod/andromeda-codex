@@ -1,0 +1,74 @@
+{
+  "record_id": "STAGE16B-B10-EDITOR-BRIDGE-DEBUGGER-V0.8.0",
+  "captured_at": "2026-08-21T20:16:54.5399532-03:00",
+  "godot_version": "4.7.1.stable.official.a13da4feb",
+  "project_path": "C:/Users/thall/Documents/andromeda-argp/ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/07_GODOT_ARPG_STAGE16B",
+  "bridge": "ANDROMEDA_EDITOR_BRIDGE_EXISTING_LOCAL_CONNECTION",
+  "renderer": "OpenGL 3.3 Compatibility",
+  "device": "NVIDIA GeForce GTX 1650",
+  "final_runs": [
+    {
+      "id": "B10_EDITOR_BRIDGE_FINAL_R2",
+      "scene": "res://tests/godot/B10RuntimeGate.tscn",
+      "result": "PASS",
+      "marker": "ANDROMEDA_STAGE16B_B10_GATE: PASS",
+      "checks": 453,
+      "passed": 453,
+      "failed": 0,
+      "debugger_errors": 0,
+      "debugger_warnings": 0,
+      "errors": [],
+      "controlled_stop": true,
+      "finalErrors": []
+    },
+    {
+      "id": "MAIN_EDITOR_BRIDGE_FINAL",
+      "scene": "res://scenes/Main.tscn",
+      "result": "PASS",
+      "observed_seconds": 6,
+      "debugger_errors": 0,
+      "debugger_warnings": 0,
+      "errors": [],
+      "controlled_stop": true,
+      "finalErrors": []
+    }
+  ],
+  "invalidated_runs": [
+    {
+      "id": "B10_EDITOR_BRIDGE_R1",
+      "counted": false,
+      "gate_marker": "ANDROMEDA_STAGE16B_B10_GATE: PASS",
+      "checks": 453,
+      "passed": 453,
+      "failed": 0,
+      "debugger_errors": 0,
+      "debugger_warnings": 9,
+      "warning_categories": [
+        "two local variables shadowed Node.owner",
+        "two local variables shadowed world_projection()",
+        "three unnecessary await expressions",
+        "one local variable shadowed Node.duplicate()",
+        "one nullable float ternary produced incompatible-type inference"
+      ],
+      "controlled_stop_final_errors_count": 9,
+      "reason_rejected": "Any warning invalidates acceptance."
+    }
+  ],
+  "corrections": [
+    "Renamed all shadowing local variables.",
+    "Removed unnecessary await expressions.",
+    "Assigned the nullable water TTL through an explicit Variant.",
+    "Repeated the complete B10 gate and Main scene through the real Editor Bridge."
+  ],
+  "final_debugger": {
+    "errors": 0,
+    "warnings": 0,
+    "finalErrors": []
+  },
+  "existing_user_editor": {
+    "pid": 10524,
+    "preserved": true
+  },
+  "status": "PASS"
+}
+

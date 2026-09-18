@@ -1,0 +1,43 @@
+{
+  "record_id": "ARPG-STAGE16A-WATER-BAG-HANDOFF-REPORT-V0.8.0",
+  "status": "PASS_PRE_GODOT",
+  "parent": "V0.7.0",
+  "canon_mutations": 0,
+  "runtime_changes": [
+    "WaterBagSurvivalCore added",
+    "Ground Loot gains water exposure/sink state",
+    "Bag and Ground Loot hold owners accepted by Stage05-derived owner routing",
+    "VerticalSliceAssembly routes pickups into equipped Bag and exposes water/bag APIs",
+    "Effective carry metrics include equipped Bag weight for terrain/water stamina",
+    "Stage16A vendor execution routes item transfer through effective Bag/base inventory while preserving profile wallet ownership"
+  ],
+  "authorial_decisions": [
+    "shallow river/current/under-bridge traversal with stamina effects for living actors and traction effects for vehicles",
+    "deep-water swim with higher stamina consumption and water-exhaustion defeat eligibility",
+    "real Bag container plus reduced base inventory without Bag",
+    "equipped weapons and equipped armor/clothes retained on death; quest/critical unique items protected",
+    "water Ground Loot recoverable for 15 minutes; water Bag floats for 30 minutes; land Bag persists indefinitely until recovery",
+    "player may recover NPC Bag while preserving ownership/reaction context; NPC auto-theft disabled"
+  ],
+  "final_counts": {
+    "stage16a_checks": 209,
+    "stress_checks": 20,
+    "godot_acceptance_gates": 28
+  },
+  "godot_required": true,
+  "backup_authorized": false,
+  "regressions": {
+    "stage05_item_core": "22/22 PASS",
+    "stage13_economy": "22/22 PASS (21 functional + 1 persistence isolated)",
+    "stage15_validation": "24/24 PASS",
+    "stage15_stress": "23/23 PASS; resume 1.283s"
+  },
+  "delta_from_v0_7_0": {
+    "baseline_files": 713,
+    "current_files": 724,
+    "modified_existing": 6,
+    "added": 11,
+    "removed": 0,
+    "transients": 0
+  }
+}

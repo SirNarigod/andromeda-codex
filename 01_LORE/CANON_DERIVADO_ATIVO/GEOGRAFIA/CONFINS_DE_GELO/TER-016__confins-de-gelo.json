@@ -1,0 +1,46 @@
+{
+  "record_id": "TER-016",
+  "record_kind": "DERIVED_TERRITORY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Confins de Gelo",
+  "subtitle": "Territorio glacial isolado e sobrevivencialista",
+  "provenance": {
+    "approval": "AUTHORIAL_DECISION_FASE_49",
+    "note": "16 territorio de Stellar, decisao explicita do autor - portao autoral de soberania, mesmo padrao de TER-014/015."
+  },
+  "leadership": {
+    "type": "CONSELHO_DERIVADO",
+    "name": "Conselho do Gelo",
+    "note": "Lideranca coletiva derivada, sem LID-XXX (categoria R2 fechada)."
+  },
+  "culture_note": "Sem CUL-XXX proprio (categoria R2 fechada) - comunidade isolada de sobrevivencia glacial descrita qualitativamente.",
+  "subregions": [
+    "SUB-016-001",
+    "SUB-016-002",
+    "SUB-016-003"
+  ],
+  "localities": [
+    "LOC-016-001",
+    "LOC-016-002",
+    "LOC-016-003"
+  ],
+  "terrain_type": "GLACIAL",
+  "primary_transport_mode": "TERRESTRE",
+  "prohibitions": [
+    "NO_R2_CATEGORY_EXPANSION",
+    "NO_NEW_LID_OR_CUL_CODE",
+    "NO_AUTOMATIC_KENUA_SCENE",
+    "NO_R2_EPISODE_REWRITE"
+  ],
+  "future_scope": "Perfil economico enriquecido na fase 56 (diretriz de riqueza do usuario) - ver economic_profile estruturado + STELLAR_REGIONAL_SPECIALTY_GOODS_DEV_V1_0.json. Personagens locais adicionais continuam abertos a rodadas futuras.",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "economic_profile": {
+    "primary_resource": "MIN-QUARTZ (fonte secundaria, SUB-016-001 Geleira Perene / EST-055 Posto da Geleira, extrator JOB-016) - veios sob o gelo",
+    "processed_good": "REG-003 Cristal de Gelo Puro (EST-055 Posto da Geleira)",
+    "agricultural_zone": "AGZ-100 Estufas do Abrigo (ESTUFA_GLACIAL, SUB-016-002 Abrigo sob o Gelo / EST-056 Abrigo Central, flora FLO-015)",
+    "agricultural_note": "Cultivo protegido em estufas geotermicas (SUB-016-002) formalizado como AGZ-100 (fase 56, AUTHORIAL_DECISION_FASE_56) — nao e campo aberto, preserva 'sem cultivo aberto' original; Liquen-de-Gelo (FLO-015) como emergencia + REG-003 na cadeia de frio; ver AGZ_EXTENSION_098_103_DEV_V1_0.json",
+    "trade_partners_hint": "Rota continental TER-016-TER-013 liga a Fortaleza do Trovao; cristal de gelo exportado para preservacao de alimentos em outros territorios",
+    "local_specialty": "REG-003 Cristal de Gelo Puro"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "record_id": "SUB-017-003",
+  "record_kind": "DERIVED_SUBREGION_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Ilhas Errantes",
+  "parent_political_unit": "TER-017",
+  "provenance": {
+    "approval": "AUTHORIAL_DECISION_FASE_50",
+    "r2_anchors": [],
+    "compatibility": "Territorio 100% novo por decisao explicita do autor (fase 50) - distinto de TER-006 Altavela (monarquia de plataformas fixas); aqui sao pequenas ilhas independentes sustentadas por eter, sem coroa."
+  },
+  "function": "Pequenas ilhas instaveis que se desprendem e vagam livremente, perigosas mas ricas em eter concentrado.",
+  "locality_references": [
+    "LOC-017-003"
+  ],
+  "permitted_catalog_links": {
+    "npc_roles": [],
+    "professions": [
+      "guarda de refugio"
+    ],
+    "encounters": [],
+    "resources": []
+  },
+  "local_conflicts": [
+    "risco de ilha errante colapsar versus valor do eter concentrado"
+  ],
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY_BEYOND_FASE_50_GATE",
+    "NO_AUTOMATIC_KENUA_SCENE",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_FIXED_BORDER_COORDINATE"
+  ],
+  "story_generators": [
+    "Uma crise em Ilhas Errantes testa a cooperacao entre ilheus independentes sem autoridade central forte."
+  ]
+}

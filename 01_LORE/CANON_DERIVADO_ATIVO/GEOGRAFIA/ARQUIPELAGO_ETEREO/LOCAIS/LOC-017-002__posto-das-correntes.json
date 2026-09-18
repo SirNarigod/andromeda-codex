@@ -1,0 +1,27 @@
+{
+  "loc_id": "LOC-017-002",
+  "record_id": "LOC-017-002",
+  "name": "Posto das Correntes",
+  "parent_subregion": "SUB-017-002",
+  "function": "Estação de navegação e colheita de éter bruto.",
+  "notable_link": "TER-017 Arquipélago Etéreo (fase 50, território novo)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "settlement_tier": "POSTO",
+  "history": "Instalado numa das poucas ilhas do arquipélago que deriva num padrão previsível, o posto foi erguido por colhedores independentes muito antes de qualquer autoridade territorial reconhecer oficialmente o arquipélago. Os fundadores morreram sem nunca ter registrado a técnica de colheita que desenvolveram — passaram tudo de boca a ouvido, geração após geração, e hoje ninguém no posto sabe dizer com certeza quanto do método original ainda é seguido e quanto foi improvisado por quem esqueceu um passo.",
+  "sensory": "Redes de fibra tensionada se estendem entre postes de metal fincados na rocha, cada uma pronta pra capturar éter bruto no instante em que uma bolsa de corrente passa perto o bastante. O ar tem um gosto metálico e ligeiramente doce, mais forte perto das redes cheias. À noite, o éter capturado brilha fraco dentro dos coletores de vidro, e os colhedores dormem por perto de propósito — dizem que o brilho espanta os predadores que se alimentam de éter disperso, embora ninguém tenha provado isso além de dúvida.",
+  "figures": [
+    {
+      "role": "Colhedora-chefe",
+      "name": "Tamsin Redevento",
+      "note": "Herdou a técnica de colheita da própria avó e é a única do posto que consegue prever, pelo cheiro do ar, quando uma bolsa de éter vai passar perto o bastante pra render uma colheita boa. Nunca ensinou o método completo a ninguém, nem ao próprio filho — teme que, ensinando cedo demais, ele pare de prestar atenção do jeito que ela precisou prestar."
+    },
+    {
+      "role": "Filho da colhedora-chefe",
+      "name": "Doran Redevento",
+      "note": "Trabalha ao lado da mãe há anos e desconfia que ela está guardando parte do método de propósito — não por desconfiança dele, mas porque acha que ela mesma não confia totalmente que já sabe tudo que deveria saber."
+    }
+  ],
+  "hook": "As redes voltaram vazias três colheitas seguidas, algo que nunca aconteceu na memória de Tamsin — ela suspeita que uma bolsa de éter maior está sendo desviada antes de chegar perto do posto, talvez por outra ilha derivando na frente da rota de sempre.",
+  "detail": "O posto não vende éter bruto diretamente — vende direito de compra futura, apostando que a próxima colheita vai render o prometido. Um colhedor que promete demais e entrega de menos perde o direito de vender ali por uma estação inteira, punição que ninguém jamais contestou em voz alta.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION"]
+}

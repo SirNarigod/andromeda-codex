@@ -1,0 +1,72 @@
+[
+ {
+  "id": "AGZ-090",
+  "t": "Pastagens Luminais",
+  "ter": "TER-011"
+ },
+ {
+  "id": "AGZ-091",
+  "t": "Jardins Medicinais",
+  "ter": "TER-007"
+ },
+ {
+  "id": "AGZ-092",
+  "t": "Pomares das Copas",
+  "ter": "TER-008"
+ },
+ {
+  "id": "AGZ-093",
+  "t": "Fungicultura das Câmaras",
+  "ter": "TER-009"
+ },
+ {
+  "id": "AGZ-094",
+  "t": "Hortas do Acolhimento",
+  "ter": "TER-012"
+ },
+ {
+  "id": "AGZ-095",
+  "t": "Maricultura das Ilhas",
+  "ter": "TER-004"
+ },
+ {
+  "id": "AGZ-096",
+  "t": "Campos de Grão do Domínio",
+  "ter": "TER-013"
+ },
+ {
+  "id": "AGZ-097",
+  "t": "Hidroponia das Plataformas",
+  "ter": "TER-006"
+ },
+ {
+  "id": "AGZ-098",
+  "t": "Terraços de Cinza",
+  "ter": "TER-014"
+ },
+ {
+  "id": "AGZ-099",
+  "t": "Oásis do Poço Fundo",
+  "ter": "TER-015"
+ },
+ {
+  "id": "AGZ-100",
+  "t": "Estufas do Abrigo",
+  "ter": "TER-016"
+ },
+ {
+  "id": "AGZ-101",
+  "t": "Jardins Suspensos de Éter",
+  "ter": "TER-017"
+ },
+ {
+  "id": "AGZ-102",
+  "t": "Recifes Luminosos",
+  "ter": "TER-018"
+ },
+ {
+  "id": "AGZ-103",
+  "t": "Clareiras da Mata",
+  "ter": "TER-019"
+ }
+]

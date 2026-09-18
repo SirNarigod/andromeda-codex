@@ -1,0 +1,504 @@
+[
+ {
+  "id": "AND-A-SOBRECARGA",
+  "name": "Sobrecarga de Impulso",
+  "kind": "ACTIVE",
+  "cls": "AND",
+  "cost": 20,
+  "cdr": 1,
+  "fx": {
+   "move": 4,
+   "buff": 0.3
+  },
+  "desc": "avança 4m, próximo golpe +30% dano"
+ },
+ {
+  "id": "AND-P-AUTORREPARO",
+  "name": "Autorreparo Modular",
+  "kind": "PASSIVE",
+  "cls": "AND",
+  "cost": null,
+  "cdr": null,
+  "fx": {
+   "regen_pct": 2,
+   "when": "hp<50"
+  },
+  "desc": "regenera 2% do HP máx/s enquanto abaixo de 50% HP"
+ },
+ {
+  "id": "AND-A-PICO",
+  "name": "Pico de Energia",
+  "kind": "ACTIVE",
+  "cls": "AND",
+  "cost": 30,
+  "cdr": 2,
+  "fx": {
+   "buff": 0.25
+  },
+  "desc": "+25% damage_mod por 5s"
+ },
+ {
+  "id": "AND-P-BLINDAGEM",
+  "name": "Blindagem Adaptativa",
+  "kind": "PASSIVE",
+  "cls": "AND",
+  "cost": null,
+  "cdr": null,
+  "fx": {
+   "dr": 0.2,
+   "when": "hp<30"
+  },
+  "desc": "+20% resistência a dano quando HP < 30%"
+ },
+ {
+  "id": "AND-A-REPARO",
+  "name": "Reparo Remoto",
+  "kind": "ACTIVE",
+  "cls": "AND",
+  "cost": 25,
+  "cdr": 2,
+  "fx": {
+   "heal_pct": 30,
+   "ally": true
+  },
+  "desc": "restaura HP de um aliado próximo"
+ },
+ {
+  "id": "AND-P-VENTILACAO",
+  "name": "Ventilação Eficiente",
+  "kind": "PASSIVE",
+  "cls": "AND",
+  "cost": null,
+  "cdr": null,
+  "fx": {
+   "sp_regen": 10
+  },
+  "desc": "+10% regeneração de energia fora de combate"
+ },
+ {
+  "id": "AND-A-SALTO",
+  "name": "Salto Propulsor",
+  "kind": "ACTIVE",
+  "cls": "AND",
+  "cost": 18,
+  "cdr": 2,
+  "fx": {
+   "move": 6,
+   "cleanse": [
+    "RAIZ"
+   ]
+  },
+  "desc": "desloca 6m e remove enraizamento"
+ },
+ {
+  "id": "AND-P-PLACAS",
+  "name": "Placas Reforçadas",
+  "kind": "PASSIVE",
+  "cls": "AND",
+  "cost": null,
+  "cdr": null,
+  "fx": {
+   "dr": 0.08
+  },
+  "desc": "-8% dano físico recebido (flat)"
+ },
+ {
+  "id": "COR-A-AVANCO_RADICULAR",
+  "name": "Avanco Radicular",
+  "kind": "ACTIVE",
+  "cls": "COR",
+  "cost": 20,
+  "cdr": 1,
+  "fx": {
+   "move": 4,
+   "buff": 0.3
+  },
+  "desc": "avanca 4m, proximo golpe +30% dano"
+ },
+ {
+  "id": "COR-P-CASCA_ESTAVEL",
+  "name": "Casca Estavel",
+  "kind": "PASSIVE",
+  "cls": "COR",
+  "cost": null,
+  "cdr": null,
+  "fx": {
+   "regen_pct": 2,
+   "when": "hp<50"
+  },
+  "desc": "regenera 2% do HP maximo/s enquanto abaixo de 50% HP"
+ },
+ {
+  "id": "COR-A-SURTO",
+  "name": "Surto de Corrupcao",
+  "kind": "ACTIVE",
+  "cls": "COR",
+  "cost": 30,
+  "cdr": 2,
+  "fx": {
+   "buff": 0.25
+  },
+  "desc": "+25% damage_mod por 5s"
+ },
+ {
+  "id": "COR-P-RESISTENCIA_VIVA",
+  "name": "Resistencia Viva",
+  "kind": "PASSIVE",
+  "cls": "COR",
+  "cost": null,
+  "cdr": null,
+  "fx": {
+   "dr": 0.2,
+   "when": "hp<30"
+  },
+  "desc": "+20% resistencia a dano quando HP < 30%"
+ },
+ {
+  "id": "COR-A-SEIVA_CURATIVA",
+  "name": "Seiva Curativa",
+  "kind": "ACTIVE",
+  "cls": "COR",
+  "cost": 25,
+  "cdr": 2,
+  "fx": {
+   "heal_pct": 30,
+   "ally": true
+  },
+  "desc": "restaura HP de um aliado proximo (aplicacao controlada de Seiva Corrompida)"
+ },
+ {
+  "id": "COR-P-VENTILACAO_CONTIDA",
+  "name": "Ventilacao Contida",
+  "kind": "PASSIVE",
+  "cls": "COR",
+  "cost": null,
+  "cdr": null,
+  "fx": {
+   "sp_regen": 10
+  },
+  "desc": "+10% regeneracao de vigor fora de combate"
+ },
+ {
+  "id": "COR-A-SALTO_RADICULAR",
+  "name": "Salto Radicular",
+  "kind": "ACTIVE",
+  "cls": "COR",
+  "cost": 18,
+  "cdr": 2,
+  "fx": {
+   "move": 6,
+   "cleanse": [
+    "RAIZ"
+   ]
+  },
+  "desc": "desloca 6m e remove enraizamento"
+ },
+ {
+  "id": "COR-P-PLACAS_RADICULARES",
+  "name": "Placas Radiculares",
+  "kind": "PASSIVE",
+  "cls": "COR",
+  "cost": null,
+  "cdr": null,
+  "fx": {
+   "dr": 0.08
+  },
+  "desc": "-8% dano fisico recebido (flat)"
+ },
+ {
+  "id": "MAG-A-IMPULSO",
+  "name": "Impulso da Corrente",
+  "kind": "ACTIVE",
+  "cls": "MAG",
+  "cost": 20,
+  "cdr": 1,
+  "fx": {
+   "move": 4,
+   "buff": 0.3
+  },
+  "desc": "avança 4m, próximo golpe +30% dano (MAG-003)"
+ },
+ {
+  "id": "MAG-P-FLUXO",
+  "name": "Fluxo Regenerativo",
+  "kind": "PASSIVE",
+  "cls": "MAG",
+  "cost": null,
+  "cdr": null,
+  "fx": {
+   "regen_pct": 2,
+   "when": "hp<50"
+  },
+  "desc": "regenera 2% do HP máx/s enquanto abaixo de 50% HP"
+ },
+ {
+  "id": "MAG-A-CONVERGENCIA",
+  "name": "Convergência Breve",
+  "kind": "ACTIVE",
+  "cls": "MAG",
+  "cost": 30,
+  "cdr": 2,
+  "fx": {
+   "buff": 0.25
+  },
+  "desc": "+25% damage_mod por 5s (MAG-003)"
+ },
+ {
+  "id": "MAG-P-RESILIENCIA",
+  "name": "Resiliência Elemental",
+  "kind": "PASSIVE",
+  "cls": "MAG",
+  "cost": null,
+  "cdr": null,
+  "fx": {
+   "dr": 0.2,
+   "when": "hp<30"
+  },
+  "desc": "+20% resistência a dano quando HP < 30%"
+ },
+ {
+  "id": "MAG-A-BENCAO",
+  "name": "Bênção de Restauração",
+  "kind": "ACTIVE",
+  "cls": "MAG",
+  "cost": 25,
+  "cdr": 2,
+  "fx": {
+   "heal_pct": 30,
+   "ally": true
+  },
+  "desc": "restaura HP de um aliado próximo (invoca RUNA-007/MED-004)"
+ },
+ {
+  "id": "MAG-P-CANAL",
+  "name": "Canal Aberto",
+  "kind": "PASSIVE",
+  "cls": "MAG",
+  "cost": null,
+  "cdr": null,
+  "fx": {
+   "sp_regen": 10
+  },
+  "desc": "+10% regeneração de fonte mágica fora de combate"
+ },
+ {
+  "id": "MAG-A-PASSO",
+  "name": "Passo Planar",
+  "kind": "ACTIVE",
+  "cls": "MAG",
+  "cost": 18,
+  "cdr": 2,
+  "fx": {
+   "move": 6,
+   "cleanse": [
+    "RAIZ"
+   ]
+  },
+  "desc": "desloca 6m e remove enraizamento (MAG-001, método de vínculo)"
+ },
+ {
+  "id": "MAG-P-PELE",
+  "name": "Pele de Corrente",
+  "kind": "PASSIVE",
+  "cls": "MAG",
+  "cost": null,
+  "cdr": null,
+  "fx": {
+   "dr": 0.08
+  },
+  "desc": "-8% dano físico recebido (flat)"
+ },
+ {
+  "id": "NAT-A-INVESTIDA",
+  "name": "Investida Selvagem",
+  "kind": "ACTIVE",
+  "cls": "NAT",
+  "cost": 20,
+  "cdr": 1,
+  "fx": {
+   "move": 4,
+   "buff": 0.3
+  },
+  "desc": "avança 4m, próximo golpe +30% dano"
+ },
+ {
+  "id": "NAT-P-COURACA",
+  "name": "Couraça de Fronteira",
+  "kind": "PASSIVE",
+  "cls": "NAT",
+  "cost": null,
+  "cdr": null,
+  "fx": {
+   "regen_pct": 2,
+   "when": "hp<50"
+  },
+  "desc": "regenera 2% do HP máx/s enquanto abaixo de 50% HP"
+ },
+ {
+  "id": "NAT-A-FURIA",
+  "name": "Fúria Contida",
+  "kind": "ACTIVE",
+  "cls": "NAT",
+  "cost": 30,
+  "cdr": 2,
+  "fx": {
+   "buff": 0.25
+  },
+  "desc": "+25% damage_mod por 5s"
+ },
+ {
+  "id": "NAT-P-INSTINTO",
+  "name": "Instinto de Sobrevivência",
+  "kind": "PASSIVE",
+  "cls": "NAT",
+  "cost": null,
+  "cdr": null,
+  "fx": {
+   "dr": 0.2,
+   "when": "hp<30"
+  },
+  "desc": "+20% resistência a dano quando HP < 30%"
+ },
+ {
+  "id": "NAT-A-CATAPLASMA",
+  "name": "Cataplasma de Campo",
+  "kind": "ACTIVE",
+  "cls": "NAT",
+  "cost": 25,
+  "cdr": 2,
+  "fx": {
+   "heal_pct": 30,
+   "ally": true
+  },
+  "desc": "restaura HP de um aliado próximo"
+ },
+ {
+  "id": "NAT-P-FOLEGO",
+  "name": "Fôlego de Caçador",
+  "kind": "PASSIVE",
+  "cls": "NAT",
+  "cost": null,
+  "cdr": null,
+  "fx": {
+   "sp_regen": 10
+  },
+  "desc": "+10% regeneração de vigor fora de combate"
+ },
+ {
+  "id": "NAT-A-SALTO",
+  "name": "Salto de Fronteira",
+  "kind": "ACTIVE",
+  "cls": "NAT",
+  "cost": 18,
+  "cdr": 2,
+  "fx": {
+   "move": 6,
+   "cleanse": [
+    "RAIZ"
+   ]
+  },
+  "desc": "desloca 6m e remove enraizamento"
+ },
+ {
+  "id": "NAT-P-PELE",
+  "name": "Pele Endurecida",
+  "kind": "PASSIVE",
+  "cls": "NAT",
+  "cost": null,
+  "cdr": null,
+  "fx": {
+   "dr": 0.08
+  },
+  "desc": "-8% dano físico recebido (flat)"
+ },
+ {
+  "id": "SOL-A-CURA",
+  "name": "Cura de Campo",
+  "kind": "ACTIVE",
+  "cls": "SOL",
+  "cost": 25,
+  "cdr": 2,
+  "fx": {
+   "heal_pct": 30,
+   "ally": true
+  },
+  "desc": "restaura HP de um aliado próximo"
+ },
+ {
+  "id": "SOL-P-FOLEGO",
+  "name": "Fôlego de Combate",
+  "kind": "PASSIVE",
+  "cls": "SOL",
+  "cost": null,
+  "cdr": null,
+  "fx": {
+   "sp_regen": 10
+  },
+  "desc": "+10% regeneração de resistência fora de combate"
+ },
+ {
+  "id": "SOL-A-AVANCO",
+  "name": "Avanço Coberto",
+  "kind": "ACTIVE",
+  "cls": "SOL",
+  "cost": 18,
+  "cdr": 2,
+  "fx": {
+   "move": 6,
+   "cleanse": [
+    "RAIZ"
+   ]
+  },
+  "desc": "desloca 6m e remove enraizamento"
+ },
+ {
+  "id": "SOL-A-REFORCO",
+  "name": "Reforço de Esquadrão",
+  "kind": "ACTIVE",
+  "cls": "SOL",
+  "cost": 20,
+  "cdr": 1,
+  "fx": {
+   "move": 4,
+   "buff": 0.3
+  },
+  "desc": "avança 4m, próximo golpe +30% dano"
+ },
+ {
+  "id": "SOL-P-COLETE",
+  "name": "Colete Reforçado",
+  "kind": "PASSIVE",
+  "cls": "SOL",
+  "cost": null,
+  "cdr": null,
+  "fx": {
+   "dr": 0.08
+  },
+  "desc": "-8% dano físico recebido (flat)"
+ },
+ {
+  "id": "SOL-A-RAJADA",
+  "name": "Rajada Focada",
+  "kind": "ACTIVE",
+  "cls": "SOL",
+  "cost": 30,
+  "cdr": 2,
+  "fx": {
+   "buff": 0.25
+  },
+  "desc": "+25% damage_mod por 5s"
+ },
+ {
+  "id": "SOL-P-MIRA",
+  "name": "Mira Calibrada",
+  "kind": "PASSIVE",
+  "cls": "SOL",
+  "cost": null,
+  "cdr": null,
+  "fx": {
+   "dr": 0.2,
+   "when": "hp<30"
+  },
+  "desc": "+20% resistência a dano quando HP < 30%"
+ }
+]

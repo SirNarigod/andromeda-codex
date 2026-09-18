@@ -1,0 +1,48 @@
+{
+  "record_id": "VALIDATION-SUMMARY-V1.5.0-DEV",
+  "version": "V1.5.0-DEV",
+  "master_dependency": {
+    "version": "V2.1.0",
+    "sha256": "9677b10890c24dfc04916178a2b9fd40a9ea131f2a13c1ec8255186ab203a98b",
+    "mode": "READ_ONLY"
+  },
+  "tests": {
+    "v15_directed": 24,
+    "historical_v14": 807,
+    "combined_unit": 831,
+    "integrated_worlds": 30,
+    "determinism_pairs": 10,
+    "stage13_extended": 1403,
+    "stage14_global": 43,
+    "stage14_multiworld": 37,
+    "corruption_cases_detected": 10,
+    "static_audit": 28,
+    "readiness_local": 24
+  },
+  "results": {
+    "directed": "PASS",
+    "historical": "PASS",
+    "integrated_stress": "PASS",
+    "determinism": "PASS",
+    "stage13": "PASS",
+    "stage14": "PASS",
+    "static": "PASS",
+    "local_readiness": "PASS"
+  },
+  "bugs": {
+    "closed": 15,
+    "open": 0
+  },
+  "countries": {
+    "active": 1,
+    "future_gate": "LOCKED"
+  },
+  "godot_runtime_gate": {
+    "godot_executable": null,
+    "runtime_execution": "PENDING",
+    "reason": "Godot 4 executable is not installed in this environment; GDScript/runtime scene execution cannot be truthfully claimed."
+  },
+  "release_authorized": false,
+  "backup_authorized": false,
+  "status": "PASS_SERVER_CONVERGED_EXTERNAL_GODOT_PENDING"
+}

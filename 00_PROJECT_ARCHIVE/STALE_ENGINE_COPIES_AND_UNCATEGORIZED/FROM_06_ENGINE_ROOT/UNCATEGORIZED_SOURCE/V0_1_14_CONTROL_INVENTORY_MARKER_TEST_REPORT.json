@@ -1,0 +1,30 @@
+{
+  "build": "V0.1.14 DEV",
+  "baseline": "V0.1.13 DEV FIX1 — runtime PASS informado pelo autor",
+  "checks": 19,
+  "passed": 19,
+  "failed": 0,
+  "details": {
+    "project_v0_1_14_dev": true,
+    "hud_v0_1_14_dev": true,
+    "attack_interval_2s": true,
+    "right_click_click_only_preserved": true,
+    "left_no_transition_interaction": true,
+    "left_world_point_resolver": true,
+    "left_nearest_open_fallback": true,
+    "hold_left_world_resolver": true,
+    "marker_radius_0_24": true,
+    "marker_emission_0_45": true,
+    "inventory_category_dictionary": true,
+    "inventory_section_armas": true,
+    "inventory_section_materiais": true,
+    "inventory_section_objetos": true,
+    "wildlife_loot_material": true,
+    "inventory_hidden_by_default": true,
+    "inventory_toggle_i": true,
+    "marker_runtime_fix_preserved": true,
+    "gate_v0_1_14": true
+  },
+  "runtime_status": "PENDING_USER_GODOT_4_7_1",
+  "status": "STATIC_PASS"
+}

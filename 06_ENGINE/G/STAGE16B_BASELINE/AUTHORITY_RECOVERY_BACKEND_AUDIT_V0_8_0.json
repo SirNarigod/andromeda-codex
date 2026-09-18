@@ -1,0 +1,144 @@
+{
+  "record_id": "ANDROMEDA-STAGE16B-AUTHORITY-BACKEND-AUDIT-V0.8.0",
+  "captured_at": "2026-08-21T22:30:45.3065332-03:00",
+  "search_result": "HISTORICAL_LIVING_V1_5_SERVER_FOUND_NOT_STAGE16B_AUTHORITY",
+  "search_scope": [
+    "C:/Users/thall/Documents/andromeda-argp",
+    "C:/Users/thall/Documents",
+    "C:/Users/thall/ANDROMEDA_PRODUCT",
+    "local launch scripts, shell history, archives, contracts and bridge configuration"
+  ],
+  "search_terms": [
+    "FastAPI", "FastAPI(", "Uvicorn", "uvicorn.run", "app = FastAPI",
+    "/snapshot", "/command", "/health", "127.0.0.1:8000",
+    "session_ref", "server_authoritative", "MOVE_TO_POINT", "MAIN_HAND"
+  ],
+  "server": {
+    "entrypoint": "C:/Users/thall/ANDROMEDA_PRODUCT/ANDROMEDA_LIVING_BRIDGE_DEV/living_api.py",
+    "entrypoint_sha256": "B65DB22471D31C2A436ACE5ECE9313F0564CD01263EA6F90B137FBF6A6AC11A6",
+    "working_directory": "C:/Users/thall/ANDROMEDA_PRODUCT/ANDROMEDA_LIVING_BRIDGE_DEV",
+    "python_executable": "C:/Users/thall/ANDROMEDA_PRODUCT/.venv/Scripts/python.exe",
+    "python_version": "3.14.6",
+    "fastapi_version": "0.141.1",
+    "uvicorn_version": "0.52.3",
+    "launch_command": "C:/Users/thall/ANDROMEDA_PRODUCT/.venv/Scripts/python.exe -m uvicorn living_api:app --host 127.0.0.1 --port 8000",
+    "listener_during_probe": {"address": "127.0.0.1", "port": 8000, "count": 1, "pid": 12096, "process": "python"},
+    "routes": [
+      {"method": "GET", "path": "/health"},
+      {"method": "GET", "path": "/snapshot"},
+      {"method": "POST", "path": "/command"}
+    ],
+    "health": {
+      "http_status": 200,
+      "status": "PASS",
+      "service": "ANDROMEDA_LIVING_BRIDGE",
+      "living_v15": "PASS"
+    },
+    "master_path": "C:/Users/thall/ANDROMEDA_PRODUCT/ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE.zip",
+    "master_sha256": "6D9AC3CCE7DCF6A65FDCF73859C332A0211C1AF52D149077BEEF554BF7BBD0B2",
+    "hard_coded_session_ref": "GODOT-FASTAPI-001"
+  },
+  "runtime_lineage": {
+    "runtime_root": "C:/Users/thall/ANDROMEDA_PRODUCT/LIVING_COUNTRY_SCALE_WORK/ANDROMEDA_LIVING_COUNTRY_SCALE_V1_5_0_DEV",
+    "integrated_engine": {
+      "path": "01_RUNTIME/integrated_engine_v15.py",
+      "sha256": "BD9B58E9360A4A1B357F6AE8D2E900DFE499316391A3DB0916271023218BDEFE",
+      "matches_stage16a_protected_copy": true
+    },
+    "godot_adapter": {
+      "path": "01_RUNTIME/godot_adapter_v15.py",
+      "sha256": "DA577183428969DFF69D41E739FA7D887EE2CFD14A8A84784FB086498A22D983",
+      "matches_stage16a_protected_copy": true
+    },
+    "living_runtime": {
+      "path": "01_RUNTIME/living_runtime.py",
+      "sha256": "831AB084F1457A0D00F442E8F0CA71D128982D2B5ADE42A95AC97A3F43ADF6C4",
+      "matches_stage16a_protected_copy": false,
+      "stage16a_protected_sha256": "DA1B086745C0C955A7DAAB762C4F4EB473FBDEBDE0D8F33D5B1AAD13E5F9D98E"
+    },
+    "stage16a_integrated_arpg_engine_v16a_loaded": false,
+    "stage16a_integrated_arpg_engine_v16a_sha256": "B520AC073BDFA7EFA8D74490DFD12B4BFB6D2C274795774DB7641181CD407A71"
+  },
+  "own_test_results": [
+    {
+      "command": "python -m unittest 03_TESTS.test_v15_core",
+      "result": "INVALID_FOR_APPROVAL",
+      "tests": 7,
+      "errors": 7,
+      "cause": "Hard-coded /mnt/data/ANDROMEDA_CODEX_MASTER_V2_1_0_RELEASE.zip does not exist on this Windows environment."
+    },
+    {
+      "command": "python 03_TESTS/run_v15_static_audit.py",
+      "result": "ERROR",
+      "cause": "Hard-coded missing Linux Master V2.1 path."
+    },
+    {
+      "command": "python 03_TESTS/run_v15_dev_readiness.py",
+      "result": "ERROR",
+      "cause": "Hard-coded missing Linux Master V2.1 path."
+    }
+  ],
+  "http_probe": {
+    "snapshot": {
+      "http_status": 200,
+      "server_authoritative": true,
+      "authority": "GODOT_CLIENT_ADAPTER_SERVER_AUTHORITATIVE",
+      "top_level_keys": ["status", "player_ref", "transform", "chunk", "environment", "authority", "server_authoritative"],
+      "session_ref": null,
+      "snapshot_id": null,
+      "snapshot_sequence": null
+    },
+    "move_to_point": {
+      "first": {"status": "REJECTED", "reason": "UNSUPPORTED_GODOT_COMMAND"},
+      "duplicate": {"status": "REJECTED", "reason": "UNSUPPORTED_GODOT_COMMAND"},
+      "stage16b_roundtrip": false
+    },
+    "move_vector": {
+      "first": {"status": "PASS", "moved_m": 0.5},
+      "identical_duplicate": {"status": "PASS", "moved_m": 0.5},
+      "duplicate_applied_twice": true,
+      "historical_v1_5_roundtrip_only": true
+    },
+    "wrong_session": {
+      "submitted_session_ref": "WRONG-SESSION-PROBE",
+      "status": "PASS",
+      "moved_m": 0.5,
+      "rejected": false
+    },
+    "forged_authority_fields": {
+      "submitted_player_ref": "FORGED-PLAYER",
+      "submitted_session_ref": "FORGED-SESSION",
+      "request_status": "PASS",
+      "strict_rejection": false,
+      "resolved_entity_ref": "NPC-01-01-01-017"
+    }
+  },
+  "compatibility_verdict": {
+    "health_endpoint_real": true,
+    "historical_backend_real": true,
+    "stage16b_backend_real": false,
+    "safe_to_connect_as_stage16b_authority": false,
+    "missing_or_incompatible": [
+      "MOVE_TO_POINT command",
+      "client session_ref validation/binding",
+      "snapshot session_ref",
+      "snapshot_id",
+      "snapshot sequence/version",
+      "duplicate/replay rejection",
+      "strict rejection of client-supplied authority fields",
+      "Stage16A ARPG authority composition",
+      "passing backend-owned validation suite"
+    ],
+    "godot_configuration_changed": false,
+    "godot_connected_to_historical_server": false,
+    "backend_substitute_created": false
+  },
+  "shutdown": {
+    "controlled_sigint": true,
+    "application_shutdown_complete": true,
+    "server_process_finished": true,
+    "final_listener_count": 0,
+    "final_process_alive": false,
+    "final_status": "NOT_AVAILABLE"
+  }
+}

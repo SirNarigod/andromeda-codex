@@ -1,0 +1,2902 @@
+{
+  "record_id": "RTE00-COUNTRY-SCALE-SIM-V1.2",
+  "status": "PASS",
+  "engine_version": "V1.2.0-DEV",
+  "world_instance_id": "rt:world:eb9ff301-6756-4327-8d81-a7e78b22ff33",
+  "country": {
+    "name": "Terras Livres",
+    "source_territory_id": "TER-011",
+    "area_km2_approx": 4774193.4,
+    "story_binding_note": "NOT_ASSIGNED_BY_MASTER"
+  },
+  "coordinate_scale": {
+    "country_area_km2_approx": 4774193.4,
+    "crs": "ACRS-STELLAR-GEODETIC-V1",
+    "state_center_distances": [
+      {
+        "state_id": "STA-01",
+        "center_distance_from_country_center_km": 879.7
+      },
+      {
+        "state_id": "STA-02",
+        "center_distance_from_country_center_km": 495.51
+      },
+      {
+        "state_id": "STA-03",
+        "center_distance_from_country_center_km": 119.89
+      },
+      {
+        "state_id": "STA-04",
+        "center_distance_from_country_center_km": 283.58
+      },
+      {
+        "state_id": "STA-05",
+        "center_distance_from_country_center_km": 666.08
+      }
+    ],
+    "unit_policy": {
+      "distance": "km",
+      "area": "km2",
+      "temperature": "C",
+      "rainfall": "mm/year",
+      "humidity": "percent",
+      "gameplay_stats": "0-100",
+      "inventory": "abstract units"
+    },
+    "status": "PASS"
+  },
+  "states": [
+    {
+      "id": "STA-01",
+      "archetype": "TECHNOLOGY",
+      "tier": "ALTO",
+      "blocks": 2,
+      "inventory": {
+        "resources": {
+          "MIN-IRON": 17262,
+          "MIN-COPPER": 15163,
+          "MIN-CRYSTAL": 18684,
+          "MIN-STONE": 12299,
+          "MIN-RARE": 17092
+        },
+        "flora": {
+          "FLR-RUNIC_MOSS": 6751,
+          "FLR-MEDICINAL": 6316,
+          "FLR-PASTURE": 5775,
+          "FLR-HARDWOOD": 7433
+        },
+        "fauna": {
+          "FAU-PREDATOR-M": 194,
+          "FAU-INSECT-POLL": 98,
+          "FAU-BROWSER": 104,
+          "FAU-PREDATOR-H": 79
+        },
+        "industries": 10,
+        "cities": 8,
+        "shops": 49,
+        "npcs": {
+          "MAGE": 10,
+          "ROBOT": 45,
+          "WORKER": 48,
+          "NATIVE": 14,
+          "MERCENARY": 10,
+          "WARRIOR": 22,
+          "CHILD": 16
+        },
+        "bridges": 0,
+        "shop_items": {
+          "ITEM-CIRCUIT": 853,
+          "ITEM-SENSOR": 509,
+          "ITEM-TOOL": 910,
+          "ITEM-FOOD": 373,
+          "ITEM-WATER": 973,
+          "ITEM-GRAIN": 263,
+          "ITEM-FRUIT": 394,
+          "ITEM-RUNE-DUST": 55,
+          "ITEM-MANA-CRYSTAL": 181,
+          "WPN-004": 182,
+          "MIN-IRON": 199,
+          "MIN-COPPER": 107,
+          "MIN-STONE": 206,
+          "WPN-001": 242,
+          "WPN-002": 352,
+          "WPN-003": 267,
+          "ITEM-SERVO": 182,
+          "ITEM-ACTUATOR": 197
+        },
+        "npc_items": {
+          "ITEM-MANA-CRYSTAL": 44,
+          "ITEM-RUNE-DUST": 40,
+          "ITEM-SERVO": 152,
+          "ITEM-ENERGY-CELL": 160,
+          "ITEM-TOOL": 210,
+          "ITEM-FOOD": 331,
+          "ITEM-HERB": 49,
+          "WPN-003": 39,
+          "ITEM-ARMOR": 143,
+          "WPN-001": 85,
+          "ITEM-PERSONAL": 61
+        },
+        "industry_stock": {
+          "MIN-IRON": 0,
+          "MIN-COPPER": 0,
+          "MIN-CRYSTAL": 0,
+          "MIN-STONE": 0,
+          "MIN-RARE": 0
+        },
+        "bridge_resources": {},
+        "kingdoms": 1,
+        "legendary_creatures": 3,
+        "mage_classes": {
+          "MÉDIO": 1
+        }
+      }
+    },
+    {
+      "id": "STA-02",
+      "archetype": "ROBOTICS",
+      "tier": "MÉDIO",
+      "blocks": 1,
+      "inventory": {
+        "resources": {
+          "MIN-IRON": 6920,
+          "MIN-COPPER": 7327,
+          "MIN-CRYSTAL": 5580,
+          "MIN-STONE": 6329,
+          "MIN-RARE": 7719
+        },
+        "flora": {
+          "FLR-HARDWOOD": 2753,
+          "FLR-RUNIC_MOSS": 3382,
+          "FLR-MEDICINAL": 3267,
+          "FLR-PASTURE": 3007
+        },
+        "fauna": {
+          "FAU-BROWSER": 166,
+          "FAU-GRAZER": 85,
+          "FAU-PREDATOR-H": 54,
+          "FAU-PREDATOR-M": 65
+        },
+        "industries": 5,
+        "cities": 2,
+        "shops": 9,
+        "npcs": {
+          "ROBOT": 12,
+          "CHILD": 7,
+          "WORKER": 8,
+          "WARRIOR": 2,
+          "NATIVE": 2,
+          "MERCENARY": 3,
+          "MAGE": 2
+        },
+        "bridges": 0,
+        "shop_items": {
+          "ITEM-SERVO": 152,
+          "ITEM-ACTUATOR": 88,
+          "ITEM-CIRCUIT": 205,
+          "ITEM-SENSOR": 14,
+          "ITEM-TOOL": 69,
+          "ITEM-RUNE-DUST": 120,
+          "ITEM-MANA-CRYSTAL": 262,
+          "WPN-004": 161,
+          "WPN-001": 58,
+          "WPN-002": 46,
+          "WPN-003": 69
+        },
+        "npc_items": {
+          "ITEM-SERVO": 32,
+          "ITEM-ENERGY-CELL": 52,
+          "ITEM-FOOD": 64,
+          "ITEM-PERSONAL": 31,
+          "ITEM-TOOL": 39,
+          "WPN-001": 12,
+          "ITEM-ARMOR": 15,
+          "ITEM-HERB": 6,
+          "WPN-003": 16,
+          "ITEM-MANA-CRYSTAL": 9,
+          "ITEM-RUNE-DUST": 5
+        },
+        "industry_stock": {
+          "MIN-IRON": 0,
+          "MIN-COPPER": 0,
+          "MIN-CRYSTAL": 0,
+          "MIN-STONE": 0,
+          "MIN-RARE": 0
+        },
+        "bridge_resources": {},
+        "kingdoms": 1,
+        "legendary_creatures": 2,
+        "mage_classes": {
+          "BAIXO": 1
+        }
+      }
+    },
+    {
+      "id": "STA-03",
+      "archetype": "MILITARY",
+      "tier": "MÉDIO",
+      "blocks": 1,
+      "inventory": {
+        "resources": {
+          "MIN-IRON": 7679,
+          "MIN-COPPER": 6471,
+          "MIN-CRYSTAL": 9273,
+          "MIN-STONE": 7377,
+          "MIN-RARE": 5082
+        },
+        "flora": {
+          "FLR-MEDICINAL": 1696,
+          "FLR-RUNIC_MOSS": 1488,
+          "FLR-HARDWOOD": 2366,
+          "FLR-PASTURE": 2868
+        },
+        "fauna": {
+          "FAU-PREDATOR-M": 36,
+          "FAU-GRAZER": 60,
+          "FAU-PREDATOR-H": 50,
+          "FAU-BROWSER": 93
+        },
+        "industries": 5,
+        "cities": 2,
+        "shops": 11,
+        "npcs": {
+          "MAGE": 6,
+          "NATIVE": 6,
+          "ROBOT": 5,
+          "WARRIOR": 9,
+          "MERCENARY": 13,
+          "CHILD": 3,
+          "WORKER": 2
+        },
+        "bridges": 1,
+        "shop_items": {
+          "WPN-001": 88,
+          "WPN-002": 64,
+          "WPN-003": 70,
+          "ITEM-FOOD": 109,
+          "ITEM-WATER": 141,
+          "ITEM-TOOL": 180,
+          "MIN-IRON": 60,
+          "MIN-COPPER": 41,
+          "MIN-STONE": 114,
+          "ITEM-RUNE-DUST": 79,
+          "ITEM-MANA-CRYSTAL": 62,
+          "WPN-004": 63,
+          "ITEM-CIRCUIT": 56,
+          "ITEM-SENSOR": 104,
+          "ITEM-GRAIN": 45,
+          "ITEM-FRUIT": 66
+        },
+        "npc_items": {
+          "ITEM-MANA-CRYSTAL": 23,
+          "ITEM-RUNE-DUST": 27,
+          "ITEM-FOOD": 48,
+          "ITEM-HERB": 20,
+          "ITEM-SERVO": 21,
+          "ITEM-ENERGY-CELL": 24,
+          "WPN-001": 26,
+          "ITEM-ARMOR": 80,
+          "WPN-003": 42,
+          "ITEM-PERSONAL": 16,
+          "ITEM-TOOL": 11
+        },
+        "industry_stock": {
+          "MIN-IRON": 0,
+          "MIN-COPPER": 0,
+          "MIN-CRYSTAL": 0,
+          "MIN-STONE": 0,
+          "MIN-RARE": 0
+        },
+        "bridge_resources": {
+          "MIN-STONE": 500,
+          "MIN-IRON": 300
+        },
+        "kingdoms": 0,
+        "legendary_creatures": 0,
+        "mage_classes": {}
+      }
+    },
+    {
+      "id": "STA-04",
+      "archetype": "MAGIC",
+      "tier": "MÉDIO",
+      "blocks": 3,
+      "inventory": {
+        "resources": {
+          "MIN-IRON": 14676,
+          "MIN-COPPER": 13752,
+          "MIN-CRYSTAL": 25888,
+          "MIN-STONE": 12104,
+          "MIN-RARE": 11907
+        },
+        "flora": {
+          "FLR-RUNIC_MOSS": 3091,
+          "FLR-HARDWOOD": 2772,
+          "FLR-PASTURE": 4743,
+          "FLR-MEDICINAL": 4226,
+          "FLR-GRAIN": 1481
+        },
+        "fauna": {
+          "FAU-GRAZER": 239,
+          "FAU-PREDATOR-M": 134,
+          "FAU-PREDATOR-H": 157,
+          "FAU-PREDATOR-L": 77,
+          "FAU-INSECT-POLL": 194,
+          "FAU-SCAVENGER": 87
+        },
+        "industries": 7,
+        "cities": 5,
+        "shops": 20,
+        "npcs": {
+          "MAGE": 31,
+          "WARRIOR": 8,
+          "CHILD": 11,
+          "NATIVE": 24,
+          "MERCENARY": 5,
+          "ROBOT": 7,
+          "WORKER": 8
+        },
+        "bridges": 0,
+        "shop_items": {
+          "ITEM-RUNE-DUST": 333,
+          "ITEM-MANA-CRYSTAL": 329,
+          "WPN-004": 269,
+          "ITEM-GRAIN": 224,
+          "ITEM-FRUIT": 248,
+          "ITEM-WATER": 225,
+          "ITEM-CIRCUIT": 283,
+          "ITEM-SENSOR": 134,
+          "ITEM-TOOL": 174,
+          "ITEM-SERVO": 153,
+          "ITEM-ACTUATOR": 109,
+          "MIN-IRON": 56,
+          "MIN-COPPER": 49,
+          "MIN-STONE": 60,
+          "ITEM-FOOD": 52,
+          "WPN-001": 57,
+          "WPN-002": 136,
+          "WPN-003": 107
+        },
+        "npc_items": {
+          "ITEM-MANA-CRYSTAL": 107,
+          "ITEM-RUNE-DUST": 107,
+          "WPN-001": 35,
+          "ITEM-ARMOR": 39,
+          "ITEM-FOOD": 154,
+          "ITEM-PERSONAL": 36,
+          "ITEM-HERB": 90,
+          "WPN-003": 18,
+          "ITEM-SERVO": 29,
+          "ITEM-ENERGY-CELL": 28,
+          "ITEM-TOOL": 30
+        },
+        "industry_stock": {
+          "MIN-IRON": 0,
+          "MIN-COPPER": 0,
+          "MIN-CRYSTAL": 0,
+          "MIN-STONE": 0
+        },
+        "bridge_resources": {},
+        "kingdoms": 1,
+        "legendary_creatures": 2,
+        "mage_classes": {
+          "ALTO": 1
+        }
+      }
+    },
+    {
+      "id": "STA-05",
+      "archetype": "NATURE",
+      "tier": "MÉDIO",
+      "blocks": 2,
+      "inventory": {
+        "resources": {
+          "MIN-IRON": 11646,
+          "MIN-COPPER": 7718,
+          "MIN-CRYSTAL": 14131,
+          "MIN-STONE": 9474,
+          "MIN-RARE": 10711
+        },
+        "flora": {
+          "FLR-HARDWOOD": 3986,
+          "FLR-PASTURE": 4235,
+          "FLR-MEDICINAL": 4623,
+          "FLR-RUNIC_MOSS": 5596
+        },
+        "fauna": {
+          "FAU-BROWSER": 249,
+          "FAU-PREDATOR-H": 197,
+          "FAU-GRAZER": 101,
+          "FAU-INSECT-POLL": 69
+        },
+        "industries": 10,
+        "cities": 6,
+        "shops": 31,
+        "npcs": {
+          "MAGE": 11,
+          "NATIVE": 35,
+          "WORKER": 27,
+          "WARRIOR": 8,
+          "ROBOT": 8,
+          "MERCENARY": 7,
+          "CHILD": 11
+        },
+        "bridges": 2,
+        "shop_items": {
+          "ITEM-GRAIN": 457,
+          "ITEM-FRUIT": 308,
+          "ITEM-WATER": 649,
+          "WPN-001": 119,
+          "WPN-002": 183,
+          "WPN-003": 98,
+          "ITEM-RUNE-DUST": 78,
+          "ITEM-MANA-CRYSTAL": 147,
+          "WPN-004": 152,
+          "MIN-IRON": 130,
+          "MIN-COPPER": 88,
+          "MIN-STONE": 110,
+          "ITEM-FOOD": 85,
+          "ITEM-TOOL": 349,
+          "ITEM-CIRCUIT": 369,
+          "ITEM-SENSOR": 230,
+          "ITEM-SERVO": 155,
+          "ITEM-ACTUATOR": 138
+        },
+        "npc_items": {
+          "ITEM-MANA-CRYSTAL": 45,
+          "ITEM-RUNE-DUST": 42,
+          "ITEM-FOOD": 257,
+          "ITEM-HERB": 119,
+          "ITEM-TOOL": 93,
+          "WPN-001": 28,
+          "ITEM-ARMOR": 60,
+          "ITEM-SERVO": 19,
+          "ITEM-ENERGY-CELL": 25,
+          "WPN-003": 35,
+          "ITEM-PERSONAL": 32
+        },
+        "industry_stock": {
+          "MIN-IRON": 0,
+          "MIN-COPPER": 0,
+          "MIN-CRYSTAL": 0,
+          "MIN-STONE": 0,
+          "MIN-RARE": 0
+        },
+        "bridge_resources": {
+          "MIN-STONE": 1000,
+          "MIN-IRON": 600
+        },
+        "kingdoms": 0,
+        "legendary_creatures": 0,
+        "mage_classes": {}
+      }
+    }
+  ],
+  "country_inventory": {
+    "resources": {
+      "MIN-IRON": 58160,
+      "MIN-COPPER": 50431,
+      "MIN-CRYSTAL": 73556,
+      "MIN-STONE": 47583,
+      "MIN-RARE": 52511
+    },
+    "flora": {
+      "FLR-RUNIC_MOSS": 20297,
+      "FLR-MEDICINAL": 20128,
+      "FLR-PASTURE": 20628,
+      "FLR-HARDWOOD": 19310,
+      "FLR-GRAIN": 1481
+    },
+    "fauna": {
+      "FAU-PREDATOR-M": 428,
+      "FAU-INSECT-POLL": 361,
+      "FAU-BROWSER": 612,
+      "FAU-PREDATOR-H": 537,
+      "FAU-GRAZER": 485,
+      "FAU-PREDATOR-L": 76,
+      "FAU-SCAVENGER": 87
+    },
+    "industries": 37,
+    "cities": 23,
+    "shops": 120,
+    "npcs": {
+      "MAGE": 60,
+      "ROBOT": 77,
+      "WORKER": 93,
+      "NATIVE": 81,
+      "MERCENARY": 38,
+      "WARRIOR": 49,
+      "CHILD": 48
+    },
+    "bridges": 3,
+    "shop_items": {
+      "ITEM-CIRCUIT": 1765,
+      "ITEM-SENSOR": 991,
+      "ITEM-TOOL": 1682,
+      "ITEM-FOOD": 619,
+      "ITEM-WATER": 1988,
+      "ITEM-GRAIN": 989,
+      "ITEM-FRUIT": 1016,
+      "ITEM-RUNE-DUST": 665,
+      "ITEM-MANA-CRYSTAL": 981,
+      "WPN-004": 827,
+      "MIN-IRON": 445,
+      "MIN-COPPER": 285,
+      "MIN-STONE": 490,
+      "WPN-001": 564,
+      "WPN-002": 781,
+      "WPN-003": 611,
+      "ITEM-SERVO": 642,
+      "ITEM-ACTUATOR": 532
+    },
+    "npc_items": {
+      "ITEM-MANA-CRYSTAL": 228,
+      "ITEM-RUNE-DUST": 221,
+      "ITEM-HARVEST-FLR-RUNIC_MOSS": 11,
+      "ITEM-FAUNA-RESOURCE": 2,
+      "ITEM-CIRCUIT": 1,
+      "ITEM-SERVO": 253,
+      "ITEM-ENERGY-CELL": 289,
+      "ITEM-TOOL": 383,
+      "ITEM-FOOD": 854,
+      "ITEM-HERB": 284,
+      "WPN-003": 150,
+      "ITEM-ARMOR": 337,
+      "WPN-001": 186,
+      "ITEM-PERSONAL": 176
+    },
+    "industry_stock": {
+      "MIN-IRON": 23,
+      "MIN-COPPER": 0,
+      "MIN-CRYSTAL": 0,
+      "MIN-STONE": 0,
+      "MIN-RARE": 0
+    },
+    "bridge_resources": {
+      "MIN-STONE": 1500,
+      "MIN-IRON": 900
+    },
+    "kingdoms": 3,
+    "legendary_creatures": 7,
+    "mage_classes": {
+      "MÉDIO": 1,
+      "BAIXO": 1,
+      "ALTO": 1
+    }
+  },
+  "root_deep": {
+    "block_id": "STA-04-BLK-02",
+    "biome": {
+      "id": "BIO-ROOT-DEEP",
+      "name": "Bioma da Raiz Profunda",
+      "class": "ROOT_DEEP",
+      "status": "ACTIVE",
+      "predator_only": true,
+      "tier": "ALTO"
+    },
+    "fauna": [
+      {
+        "id": "FAU-PREDATOR-L-04-02-01",
+        "species_ref": "FAU-PREDATOR-L",
+        "role": "PREDATOR",
+        "tier": "MÉDIO",
+        "count": 51,
+        "status": "ACTIVE",
+        "adapted_biome_class": "ROOT_DEEP",
+        "combat_profile": {
+          "size": 72,
+          "damage": 35,
+          "resistance": 54,
+          "venom": 8,
+          "corruption": 80,
+          "threat_score": 50.18,
+          "class": "MÉDIO",
+          "units": "GAMEPLAY_NORMALIZED_0_100"
+        }
+      },
+      {
+        "id": "FAU-PREDATOR-H-04-02-02",
+        "species_ref": "FAU-PREDATOR-H",
+        "role": "PREDATOR",
+        "tier": "MÉDIO",
+        "count": 42,
+        "status": "ACTIVE",
+        "adapted_biome_class": "ROOT_DEEP",
+        "combat_profile": {
+          "size": 70,
+          "damage": 22,
+          "resistance": 76,
+          "venom": 1,
+          "corruption": 85,
+          "threat_score": 51.16,
+          "class": "MÉDIO",
+          "units": "GAMEPLAY_NORMALIZED_0_100"
+        }
+      },
+      {
+        "id": "FAU-PREDATOR-H-04-02-03",
+        "species_ref": "FAU-PREDATOR-H",
+        "role": "PREDATOR",
+        "tier": "BAIXO",
+        "count": 29,
+        "status": "ACTIVE",
+        "adapted_biome_class": "ROOT_DEEP",
+        "combat_profile": {
+          "size": 92,
+          "damage": 20,
+          "resistance": 25,
+          "venom": 65,
+          "corruption": 58,
+          "threat_score": 45.64,
+          "class": "MÉDIO",
+          "units": "GAMEPLAY_NORMALIZED_0_100"
+        }
+      },
+      {
+        "id": "FAU-PREDATOR-H-04-02-04",
+        "species_ref": "FAU-PREDATOR-H",
+        "role": "PREDATOR",
+        "tier": "BAIXO",
+        "count": 32,
+        "status": "ACTIVE",
+        "adapted_biome_class": "ROOT_DEEP",
+        "combat_profile": {
+          "size": 28,
+          "damage": 60,
+          "resistance": 42,
+          "venom": 75,
+          "corruption": 57,
+          "threat_score": 51.24,
+          "class": "MÉDIO",
+          "units": "GAMEPLAY_NORMALIZED_0_100"
+        }
+      },
+      {
+        "id": "FAU-PREDATOR-L-04-02-05",
+        "species_ref": "FAU-PREDATOR-L",
+        "role": "PREDATOR",
+        "tier": "BAIXO",
+        "count": 25,
+        "status": "ACTIVE",
+        "adapted_biome_class": "ROOT_DEEP",
+        "combat_profile": {
+          "size": 52,
+          "damage": 73,
+          "resistance": 28,
+          "venom": 39,
+          "corruption": 56,
+          "threat_score": 51.62,
+          "class": "MÉDIO",
+          "units": "GAMEPLAY_NORMALIZED_0_100"
+        }
+      },
+      {
+        "id": "FAU-PREDATOR-M-04-02-06",
+        "species_ref": "FAU-PREDATOR-M",
+        "role": "PREDATOR",
+        "tier": "BAIXO",
+        "count": 26,
+        "status": "ACTIVE",
+        "adapted_biome_class": "ROOT_DEEP",
+        "combat_profile": {
+          "size": 87,
+          "damage": 85,
+          "resistance": 20,
+          "venom": 67,
+          "corruption": 74,
+          "threat_score": 65.84,
+          "class": "MÉDIO",
+          "units": "GAMEPLAY_NORMALIZED_0_100"
+        }
+      }
+    ],
+    "flora_count": 0,
+    "city_count": 0
+  },
+  "magic_realms": [
+    {
+      "state_id": "STA-01",
+      "block_id": "STA-01-BLK-01",
+      "realm": {
+        "id": "KDM-STA-01-01",
+        "name": "Reino Mágico Funcional STA-01.1",
+        "name_status": "FUNCTIONAL_LABEL_AUTHORIAL_NAME_PENDING",
+        "status": "ACTIVE",
+        "tier": "MÉDIO",
+        "mage_class": "MÉDIO",
+        "block_id": "STA-01-BLK-01",
+        "legendary_creatures": [
+          {
+            "id": "LEG-STA-01-01-01",
+            "class": "ALTO",
+            "status": "ACTIVE",
+            "stats": {
+              "size": 61,
+              "damage": 94,
+              "resistance": 80,
+              "magic": 80,
+              "threat_score": 81.35
+            },
+            "safety": "FICTIONAL_GAMEPLAY_STATS"
+          },
+          {
+            "id": "LEG-STA-01-01-02",
+            "class": "MÉDIO",
+            "status": "ACTIVE",
+            "stats": {
+              "size": 88,
+              "damage": 30,
+              "resistance": 59,
+              "magic": 95,
+              "threat_score": 65.45
+            },
+            "safety": "FICTIONAL_GAMEPLAY_STATS"
+          },
+          {
+            "id": "LEG-STA-01-01-03",
+            "class": "ALTO",
+            "status": "ACTIVE",
+            "stats": {
+              "size": 59,
+              "damage": 45,
+              "resistance": 97,
+              "magic": 93,
+              "threat_score": 74.5
+            },
+            "safety": "FICTIONAL_GAMEPLAY_STATS"
+          }
+        ],
+        "inventory": {
+          "ITEM-MANA-CRYSTAL": 312,
+          "ITEM-RUNE-DUST": 695,
+          "LEGENDARY_CREATURES": 3
+        }
+      }
+    },
+    {
+      "state_id": "STA-02",
+      "block_id": "STA-02-BLK-01",
+      "realm": {
+        "id": "KDM-STA-02-01",
+        "name": "Reino Mágico Funcional STA-02.1",
+        "name_status": "FUNCTIONAL_LABEL_AUTHORIAL_NAME_PENDING",
+        "status": "ACTIVE",
+        "tier": "BAIXO",
+        "mage_class": "BAIXO",
+        "block_id": "STA-02-BLK-01",
+        "legendary_creatures": [
+          {
+            "id": "LEG-STA-02-01-01",
+            "class": "ALTO",
+            "status": "ACTIVE",
+            "stats": {
+              "size": 81,
+              "damage": 79,
+              "resistance": 63,
+              "magic": 65,
+              "threat_score": 71.1
+            },
+            "safety": "FICTIONAL_GAMEPLAY_STATS"
+          },
+          {
+            "id": "LEG-STA-02-01-02",
+            "class": "MÉDIO",
+            "status": "ACTIVE",
+            "stats": {
+              "size": 53,
+              "damage": 58,
+              "resistance": 84,
+              "magic": 59,
+              "threat_score": 64.05
+            },
+            "safety": "FICTIONAL_GAMEPLAY_STATS"
+          }
+        ],
+        "inventory": {
+          "ITEM-MANA-CRYSTAL": 360,
+          "ITEM-RUNE-DUST": 442,
+          "LEGENDARY_CREATURES": 2
+        }
+      }
+    },
+    {
+      "state_id": "STA-04",
+      "block_id": "STA-04-BLK-03",
+      "realm": {
+        "id": "KDM-STA-04-01",
+        "name": "Reino Mágico Funcional STA-04.1",
+        "name_status": "FUNCTIONAL_LABEL_AUTHORIAL_NAME_PENDING",
+        "status": "ACTIVE",
+        "tier": "ALTO",
+        "mage_class": "ALTO",
+        "block_id": "STA-04-BLK-03",
+        "legendary_creatures": [
+          {
+            "id": "LEG-STA-04-01-01",
+            "class": "MÉDIO",
+            "status": "ACTIVE",
+            "stats": {
+              "size": 99,
+              "damage": 27,
+              "resistance": 47,
+              "magic": 81,
+              "threat_score": 59.0
+            },
+            "safety": "FICTIONAL_GAMEPLAY_STATS"
+          },
+          {
+            "id": "LEG-STA-04-01-02",
+            "class": "ALTO",
+            "status": "ACTIVE",
+            "stats": {
+              "size": 57,
+              "damage": 62,
+              "resistance": 94,
+              "magic": 99,
+              "threat_score": 80.35
+            },
+            "safety": "FICTIONAL_GAMEPLAY_STATS"
+          }
+        ],
+        "inventory": {
+          "ITEM-MANA-CRYSTAL": 128,
+          "ITEM-RUNE-DUST": 123,
+          "LEGENDARY_CREATURES": 2
+        }
+      }
+    }
+  ],
+  "npc_inventory_examples": {
+    "MAGE": {
+      "id": "NPC-01-01-01-001",
+      "tier": "MÉDIO",
+      "location": {
+        "state_id": "STA-01",
+        "block_id": "STA-01-BLK-01",
+        "city_id": "CITY-01-01-01"
+      },
+      "inventory": {
+        "ITEM-MANA-CRYSTAL": 4,
+        "ITEM-RUNE-DUST": 4,
+        "ITEM-HARVEST-FLR-RUNIC_MOSS": 11,
+        "ITEM-FAUNA-RESOURCE": 1,
+        "ITEM-CIRCUIT": 1
+      },
+      "protection": {
+        "protected": false,
+        "combat_targetable": true,
+        "hazardous_labor_allowed": true,
+        "exploitation_allowed": false
+      }
+    },
+    "NATIVE": {
+      "id": "NPC-01-01-01-005",
+      "tier": "BAIXO",
+      "location": {
+        "state_id": "STA-01",
+        "block_id": "STA-01-BLK-01",
+        "city_id": "CITY-01-01-01"
+      },
+      "inventory": {
+        "ITEM-FOOD": 3,
+        "ITEM-HERB": 1
+      },
+      "protection": {
+        "protected": false,
+        "combat_targetable": true,
+        "hazardous_labor_allowed": true,
+        "exploitation_allowed": false
+      }
+    },
+    "ROBOT": {
+      "id": "NPC-01-01-01-002",
+      "tier": "ALTO",
+      "location": {
+        "state_id": "STA-01",
+        "block_id": "STA-01-BLK-01",
+        "city_id": "CITY-01-01-01"
+      },
+      "inventory": {
+        "ITEM-SERVO": 6,
+        "ITEM-ENERGY-CELL": 3
+      },
+      "protection": {
+        "protected": false,
+        "combat_targetable": true,
+        "hazardous_labor_allowed": true,
+        "exploitation_allowed": false
+      }
+    },
+    "WARRIOR": {
+      "id": "NPC-01-01-01-011",
+      "tier": "BAIXO",
+      "location": {
+        "state_id": "STA-01",
+        "block_id": "STA-01-BLK-01",
+        "city_id": "CITY-01-01-01"
+      },
+      "inventory": {
+        "WPN-001": 3,
+        "ITEM-ARMOR": 1
+      },
+      "protection": {
+        "protected": false,
+        "combat_targetable": true,
+        "hazardous_labor_allowed": true,
+        "exploitation_allowed": false
+      }
+    },
+    "MERCENARY": {
+      "id": "NPC-01-01-01-008",
+      "tier": "BAIXO",
+      "location": {
+        "state_id": "STA-04",
+        "block_id": "STA-04-BLK-02",
+        "city_id": null
+      },
+      "inventory": {
+        "WPN-003": 1,
+        "ITEM-ARMOR": 1,
+        "ITEM-FAUNA-RESOURCE": 1
+      },
+      "protection": {
+        "protected": false,
+        "combat_targetable": true,
+        "hazardous_labor_allowed": true,
+        "exploitation_allowed": false
+      }
+    },
+    "WORKER": {
+      "id": "NPC-01-01-01-003",
+      "tier": "MÉDIO",
+      "location": {
+        "state_id": "STA-01",
+        "block_id": "STA-01-BLK-01",
+        "city_id": "CITY-01-01-01"
+      },
+      "inventory": {
+        "ITEM-TOOL": 6,
+        "ITEM-FOOD": 4
+      },
+      "protection": {
+        "protected": true,
+        "combat_targetable": true,
+        "hazardous_labor_allowed": false,
+        "exploitation_allowed": false
+      }
+    },
+    "CHILD": {
+      "id": "NPC-01-01-02-015",
+      "tier": "BAIXO",
+      "location": {
+        "state_id": "STA-01",
+        "block_id": "STA-01-BLK-01",
+        "city_id": "CITY-01-01-02"
+      },
+      "inventory": {
+        "ITEM-FOOD": 3,
+        "ITEM-PERSONAL": 2
+      },
+      "protection": {
+        "protected": true,
+        "combat_targetable": false,
+        "hazardous_labor_allowed": false,
+        "exploitation_allowed": false
+      }
+    }
+  },
+  "protection_tests": {
+    "child_target": {
+      "npc_id": "NPC-01-01-02-015",
+      "allowed": false,
+      "protected": true,
+      "reason": "PROTECTED_MINOR"
+    },
+    "child_hazardous_labor": {
+      "status": "REJECTED",
+      "npc_id": "NPC-01-01-02-015",
+      "reason": "PROTECTED_FROM_HAZARDOUS_LABOR"
+    },
+    "worker_hazardous_labor": {
+      "status": "REJECTED",
+      "npc_id": "NPC-01-01-01-003",
+      "reason": "PROTECTED_FROM_HAZARDOUS_LABOR"
+    },
+    "worker_safe_labor": {
+      "status": "PASS",
+      "npc_id": "NPC-01-01-01-003",
+      "hazardous": false
+    }
+  },
+  "interactions": {
+    "mining": {
+      "status": "PASS",
+      "block_id": "STA-01-BLK-01",
+      "resource_id": "MIN-IRON",
+      "extracted": 23,
+      "remaining": 9811,
+      "industry_stock": 23
+    },
+    "harvest": {
+      "status": "PASS",
+      "harvested": 11,
+      "flora_remaining": 3448,
+      "npc_item_total": 11,
+      "npc_id": "NPC-01-01-01-001",
+      "block_id": "STA-01-BLK-01"
+    },
+    "local_hunt": {
+      "status": "PASS",
+      "killed": 1,
+      "remaining": 65,
+      "loot_units": 1,
+      "root_predator": false,
+      "npc_id": "NPC-01-01-01-001",
+      "block_id": "STA-01-BLK-01"
+    },
+    "local_purchase": {
+      "status": "PASS",
+      "quantity": 1,
+      "shop_remaining": 73,
+      "npc_total": 1,
+      "shop_id": "SHP-01-01-01-01",
+      "npc_id": "NPC-01-01-01-001",
+      "item_ref": "ITEM-CIRCUIT"
+    },
+    "move_to_root": {
+      "status": "PASS",
+      "npc_id": "NPC-01-01-01-008",
+      "source_block_id": "STA-01-BLK-01",
+      "destination_block_id": "STA-04-BLK-02",
+      "destination_city_id": null,
+      "distance_km": 1316.81
+    },
+    "remote_purchase": {
+      "status": "REJECTED",
+      "reason": "ACTOR_NOT_IN_SHOP_CITY"
+    },
+    "root_hunt": {
+      "status": "PASS",
+      "killed": 1,
+      "remaining": 51,
+      "loot_units": 1,
+      "root_predator": true,
+      "npc_id": "NPC-01-01-01-008",
+      "block_id": "STA-04-BLK-02"
+    },
+    "bridge_before": 9282,
+    "bridge_damage": {
+      "status": "PASS",
+      "applied_damage": 1250,
+      "durability": 8032,
+      "bridge_status": "DAMAGED",
+      "block_id": "STA-03-BLK-01",
+      "bridge_id": "BRG-03-01-01"
+    },
+    "bridge_repair": {
+      "status": "PASS",
+      "restored": 500,
+      "durability": 8532,
+      "bridge_status": "DAMAGED",
+      "block_id": "STA-03-BLK-01",
+      "bridge_id": "BRG-03-01-01"
+    }
+  },
+  "before": {
+    "country_resources": {
+      "MIN-IRON": 58183,
+      "MIN-COPPER": 50431,
+      "MIN-CRYSTAL": 73556,
+      "MIN-STONE": 47583,
+      "MIN-RARE": 52511
+    },
+    "country_flora": {
+      "FLR-RUNIC_MOSS": 20308,
+      "FLR-MEDICINAL": 20128,
+      "FLR-PASTURE": 20628,
+      "FLR-HARDWOOD": 19310,
+      "FLR-GRAIN": 1481
+    },
+    "country_fauna": {
+      "FAU-PREDATOR-M": 429,
+      "FAU-INSECT-POLL": 361,
+      "FAU-BROWSER": 612,
+      "FAU-PREDATOR-H": 537,
+      "FAU-GRAZER": 485,
+      "FAU-PREDATOR-L": 77,
+      "FAU-SCAVENGER": 87
+    },
+    "country_shop_items": {
+      "ITEM-CIRCUIT": 1766,
+      "ITEM-SENSOR": 991,
+      "ITEM-TOOL": 1682,
+      "ITEM-FOOD": 619,
+      "ITEM-WATER": 1988,
+      "ITEM-GRAIN": 989,
+      "ITEM-FRUIT": 1016,
+      "ITEM-RUNE-DUST": 665,
+      "ITEM-MANA-CRYSTAL": 981,
+      "WPN-004": 827,
+      "MIN-IRON": 445,
+      "MIN-COPPER": 285,
+      "MIN-STONE": 490,
+      "WPN-001": 564,
+      "WPN-002": 781,
+      "WPN-003": 611,
+      "ITEM-SERVO": 642,
+      "ITEM-ACTUATOR": 532
+    },
+    "country_npc_items": {
+      "ITEM-MANA-CRYSTAL": 228,
+      "ITEM-RUNE-DUST": 221,
+      "ITEM-SERVO": 253,
+      "ITEM-ENERGY-CELL": 289,
+      "ITEM-TOOL": 383,
+      "ITEM-FOOD": 854,
+      "ITEM-HERB": 284,
+      "WPN-003": 150,
+      "ITEM-ARMOR": 337,
+      "WPN-001": 186,
+      "ITEM-PERSONAL": 176
+    },
+    "normal_block_inventory": {
+      "resources": {
+        "MIN-IRON": 9834,
+        "MIN-COPPER": 8523,
+        "MIN-CRYSTAL": 9577,
+        "MIN-STONE": 6281,
+        "MIN-RARE": 8764
+      },
+      "flora": {
+        "FLR-RUNIC_MOSS": 3459,
+        "FLR-MEDICINAL": 2932,
+        "FLR-PASTURE": 2628,
+        "FLR-HARDWOOD": 3567
+      },
+      "fauna": {
+        "FAU-PREDATOR-M": 136,
+        "FAU-INSECT-POLL": 98
+      },
+      "industries": 5,
+      "cities": 4,
+      "shops": 24,
+      "npcs": {
+        "MAGE": 3,
+        "ROBOT": 20,
+        "WORKER": 18,
+        "NATIVE": 6,
+        "MERCENARY": 9,
+        "WARRIOR": 11,
+        "CHILD": 7
+      },
+      "bridges": 0,
+      "shop_items": {
+        "ITEM-CIRCUIT": 435,
+        "ITEM-SENSOR": 289,
+        "ITEM-TOOL": 530,
+        "ITEM-FOOD": 219,
+        "ITEM-WATER": 589,
+        "ITEM-GRAIN": 144,
+        "ITEM-FRUIT": 237,
+        "ITEM-RUNE-DUST": 27,
+        "ITEM-MANA-CRYSTAL": 74,
+        "WPN-004": 105,
+        "MIN-IRON": 56,
+        "MIN-COPPER": 41,
+        "MIN-STONE": 44,
+        "WPN-001": 84,
+        "WPN-002": 120,
+        "WPN-003": 94,
+        "ITEM-SERVO": 46,
+        "ITEM-ACTUATOR": 10
+      },
+      "npc_items": {
+        "ITEM-MANA-CRYSTAL": 7,
+        "ITEM-RUNE-DUST": 7,
+        "ITEM-SERVO": 67,
+        "ITEM-ENERGY-CELL": 83,
+        "ITEM-TOOL": 69,
+        "ITEM-FOOD": 111,
+        "ITEM-HERB": 18,
+        "WPN-003": 36,
+        "ITEM-ARMOR": 91,
+        "WPN-001": 44,
+        "ITEM-PERSONAL": 31
+      },
+      "industry_stock": {
+        "MIN-IRON": 0,
+        "MIN-COPPER": 0,
+        "MIN-CRYSTAL": 0,
+        "MIN-STONE": 0,
+        "MIN-RARE": 0
+      },
+      "bridge_resources": {},
+      "kingdoms": 1,
+      "legendary_creatures": 3,
+      "mage_classes": {
+        "MÉDIO": 1
+      }
+    },
+    "normal_subregion_inventories": [
+      {
+        "resources": {
+          "MIN-IRON": 2144,
+          "MIN-COPPER": 1724,
+          "MIN-CRYSTAL": 3704,
+          "MIN-STONE": 1239,
+          "MIN-RARE": 2550
+        },
+        "flora": {
+          "FLR-RUNIC_MOSS": 1354,
+          "FLR-MEDICINAL": 1125,
+          "FLR-PASTURE": 1001,
+          "FLR-HARDWOOD": 1049
+        },
+        "fauna": {
+          "FAU-PREDATOR-M": 38,
+          "FAU-INSECT-POLL": 39
+        },
+        "industries": 0,
+        "cities": 1,
+        "shops": 6,
+        "npcs": {
+          "ROBOT": 8,
+          "CHILD": 2,
+          "WORKER": 5,
+          "MERCENARY": 3,
+          "WARRIOR": 4,
+          "NATIVE": 1
+        },
+        "bridges": 0,
+        "shop_items": {
+          "ITEM-CIRCUIT": 146,
+          "ITEM-SENSOR": 79,
+          "ITEM-TOOL": 126,
+          "ITEM-GRAIN": 30,
+          "ITEM-FRUIT": 28,
+          "ITEM-WATER": 36,
+          "ITEM-FOOD": 10,
+          "WPN-001": 84,
+          "WPN-002": 120,
+          "WPN-003": 94
+        },
+        "npc_items": {
+          "ITEM-SERVO": 24,
+          "ITEM-ENERGY-CELL": 31,
+          "ITEM-FOOD": 34,
+          "ITEM-PERSONAL": 11,
+          "ITEM-TOOL": 19,
+          "WPN-003": 13,
+          "ITEM-ARMOR": 34,
+          "WPN-001": 16,
+          "ITEM-HERB": 4
+        },
+        "industry_stock": {},
+        "bridge_resources": {},
+        "kingdoms": 0,
+        "legendary_creatures": 0,
+        "mage_classes": {}
+      },
+      {
+        "resources": {
+          "MIN-IRON": 5571,
+          "MIN-COPPER": 4677,
+          "MIN-CRYSTAL": 2405,
+          "MIN-STONE": 2535,
+          "MIN-RARE": 2919
+        },
+        "flora": {
+          "FLR-RUNIC_MOSS": 1179,
+          "FLR-MEDICINAL": 580,
+          "FLR-PASTURE": 1054,
+          "FLR-HARDWOOD": 753
+        },
+        "fauna": {
+          "FAU-PREDATOR-M": 57,
+          "FAU-INSECT-POLL": 25
+        },
+        "industries": 3,
+        "cities": 1,
+        "shops": 7,
+        "npcs": {
+          "MAGE": 1,
+          "ROBOT": 5,
+          "WORKER": 2,
+          "NATIVE": 2,
+          "MERCENARY": 2,
+          "WARRIOR": 1
+        },
+        "bridges": 0,
+        "shop_items": {
+          "ITEM-CIRCUIT": 126,
+          "ITEM-SENSOR": 64,
+          "ITEM-TOOL": 241,
+          "ITEM-FOOD": 98,
+          "ITEM-WATER": 319,
+          "ITEM-GRAIN": 44,
+          "ITEM-FRUIT": 71
+        },
+        "npc_items": {
+          "ITEM-MANA-CRYSTAL": 4,
+          "ITEM-RUNE-DUST": 4,
+          "ITEM-SERVO": 19,
+          "ITEM-ENERGY-CELL": 15,
+          "ITEM-TOOL": 9,
+          "ITEM-FOOD": 16,
+          "ITEM-HERB": 5,
+          "WPN-003": 7,
+          "ITEM-ARMOR": 11,
+          "WPN-001": 3
+        },
+        "industry_stock": {
+          "MIN-IRON": 0,
+          "MIN-STONE": 0,
+          "MIN-RARE": 0
+        },
+        "bridge_resources": {},
+        "kingdoms": 1,
+        "legendary_creatures": 3,
+        "mage_classes": {
+          "MÉDIO": 1
+        }
+      },
+      {
+        "resources": {
+          "MIN-IRON": 2119,
+          "MIN-COPPER": 2122,
+          "MIN-CRYSTAL": 3468,
+          "MIN-STONE": 2507,
+          "MIN-RARE": 3295
+        },
+        "flora": {
+          "FLR-RUNIC_MOSS": 926,
+          "FLR-MEDICINAL": 1227,
+          "FLR-PASTURE": 573,
+          "FLR-HARDWOOD": 1765
+        },
+        "fauna": {
+          "FAU-PREDATOR-M": 41,
+          "FAU-INSECT-POLL": 34
+        },
+        "industries": 2,
+        "cities": 2,
+        "shops": 11,
+        "npcs": {
+          "MERCENARY": 4,
+          "ROBOT": 7,
+          "WORKER": 11,
+          "WARRIOR": 6,
+          "NATIVE": 3,
+          "CHILD": 5,
+          "MAGE": 2
+        },
+        "bridges": 0,
+        "shop_items": {
+          "ITEM-CIRCUIT": 163,
+          "ITEM-SENSOR": 146,
+          "ITEM-TOOL": 163,
+          "ITEM-RUNE-DUST": 27,
+          "ITEM-MANA-CRYSTAL": 74,
+          "WPN-004": 105,
+          "ITEM-FOOD": 111,
+          "ITEM-WATER": 234,
+          "MIN-IRON": 56,
+          "MIN-COPPER": 41,
+          "MIN-STONE": 44,
+          "ITEM-GRAIN": 70,
+          "ITEM-FRUIT": 138,
+          "ITEM-SERVO": 46,
+          "ITEM-ACTUATOR": 10
+        },
+        "npc_items": {
+          "WPN-003": 16,
+          "ITEM-ARMOR": 46,
+          "ITEM-SERVO": 24,
+          "ITEM-ENERGY-CELL": 37,
+          "ITEM-TOOL": 41,
+          "ITEM-FOOD": 61,
+          "WPN-001": 25,
+          "ITEM-HERB": 9,
+          "ITEM-PERSONAL": 20,
+          "ITEM-MANA-CRYSTAL": 3,
+          "ITEM-RUNE-DUST": 3
+        },
+        "industry_stock": {
+          "MIN-COPPER": 0,
+          "MIN-CRYSTAL": 0
+        },
+        "bridge_resources": {},
+        "kingdoms": 0,
+        "legendary_creatures": 0,
+        "mage_classes": {}
+      }
+    ]
+  },
+  "after": {
+    "country_resources": {
+      "MIN-IRON": 58160,
+      "MIN-COPPER": 50431,
+      "MIN-CRYSTAL": 73556,
+      "MIN-STONE": 47583,
+      "MIN-RARE": 52511
+    },
+    "country_flora": {
+      "FLR-RUNIC_MOSS": 20297,
+      "FLR-MEDICINAL": 20128,
+      "FLR-PASTURE": 20628,
+      "FLR-HARDWOOD": 19310,
+      "FLR-GRAIN": 1481
+    },
+    "country_fauna": {
+      "FAU-PREDATOR-M": 428,
+      "FAU-INSECT-POLL": 361,
+      "FAU-BROWSER": 612,
+      "FAU-PREDATOR-H": 537,
+      "FAU-GRAZER": 485,
+      "FAU-PREDATOR-L": 76,
+      "FAU-SCAVENGER": 87
+    },
+    "country_shop_items": {
+      "ITEM-CIRCUIT": 1765,
+      "ITEM-SENSOR": 991,
+      "ITEM-TOOL": 1682,
+      "ITEM-FOOD": 619,
+      "ITEM-WATER": 1988,
+      "ITEM-GRAIN": 989,
+      "ITEM-FRUIT": 1016,
+      "ITEM-RUNE-DUST": 665,
+      "ITEM-MANA-CRYSTAL": 981,
+      "WPN-004": 827,
+      "MIN-IRON": 445,
+      "MIN-COPPER": 285,
+      "MIN-STONE": 490,
+      "WPN-001": 564,
+      "WPN-002": 781,
+      "WPN-003": 611,
+      "ITEM-SERVO": 642,
+      "ITEM-ACTUATOR": 532
+    },
+    "country_npc_items": {
+      "ITEM-MANA-CRYSTAL": 228,
+      "ITEM-RUNE-DUST": 221,
+      "ITEM-HARVEST-FLR-RUNIC_MOSS": 11,
+      "ITEM-FAUNA-RESOURCE": 2,
+      "ITEM-CIRCUIT": 1,
+      "ITEM-SERVO": 253,
+      "ITEM-ENERGY-CELL": 289,
+      "ITEM-TOOL": 383,
+      "ITEM-FOOD": 854,
+      "ITEM-HERB": 284,
+      "WPN-003": 150,
+      "ITEM-ARMOR": 337,
+      "WPN-001": 186,
+      "ITEM-PERSONAL": 176
+    },
+    "normal_block_inventory": {
+      "resources": {
+        "MIN-IRON": 9811,
+        "MIN-COPPER": 8523,
+        "MIN-CRYSTAL": 9577,
+        "MIN-STONE": 6281,
+        "MIN-RARE": 8764
+      },
+      "flora": {
+        "FLR-RUNIC_MOSS": 3448,
+        "FLR-MEDICINAL": 2932,
+        "FLR-PASTURE": 2628,
+        "FLR-HARDWOOD": 3567
+      },
+      "fauna": {
+        "FAU-PREDATOR-M": 135,
+        "FAU-INSECT-POLL": 98
+      },
+      "industries": 5,
+      "cities": 4,
+      "shops": 24,
+      "npcs": {
+        "MAGE": 3,
+        "ROBOT": 20,
+        "WORKER": 18,
+        "NATIVE": 6,
+        "MERCENARY": 9,
+        "WARRIOR": 11,
+        "CHILD": 7
+      },
+      "bridges": 0,
+      "shop_items": {
+        "ITEM-CIRCUIT": 434,
+        "ITEM-SENSOR": 289,
+        "ITEM-TOOL": 530,
+        "ITEM-FOOD": 219,
+        "ITEM-WATER": 589,
+        "ITEM-GRAIN": 144,
+        "ITEM-FRUIT": 237,
+        "ITEM-RUNE-DUST": 27,
+        "ITEM-MANA-CRYSTAL": 74,
+        "WPN-004": 105,
+        "MIN-IRON": 56,
+        "MIN-COPPER": 41,
+        "MIN-STONE": 44,
+        "WPN-001": 84,
+        "WPN-002": 120,
+        "WPN-003": 94,
+        "ITEM-SERVO": 46,
+        "ITEM-ACTUATOR": 10
+      },
+      "npc_items": {
+        "ITEM-MANA-CRYSTAL": 7,
+        "ITEM-RUNE-DUST": 7,
+        "ITEM-HARVEST-FLR-RUNIC_MOSS": 11,
+        "ITEM-FAUNA-RESOURCE": 2,
+        "ITEM-CIRCUIT": 1,
+        "ITEM-SERVO": 67,
+        "ITEM-ENERGY-CELL": 83,
+        "ITEM-TOOL": 69,
+        "ITEM-FOOD": 111,
+        "ITEM-HERB": 18,
+        "WPN-003": 36,
+        "ITEM-ARMOR": 91,
+        "WPN-001": 44,
+        "ITEM-PERSONAL": 31
+      },
+      "industry_stock": {
+        "MIN-IRON": 23,
+        "MIN-COPPER": 0,
+        "MIN-CRYSTAL": 0,
+        "MIN-STONE": 0,
+        "MIN-RARE": 0
+      },
+      "bridge_resources": {},
+      "kingdoms": 1,
+      "legendary_creatures": 3,
+      "mage_classes": {
+        "MÉDIO": 1
+      }
+    },
+    "normal_subregion_inventories": [
+      {
+        "resources": {
+          "MIN-IRON": 2138,
+          "MIN-COPPER": 1724,
+          "MIN-CRYSTAL": 3704,
+          "MIN-STONE": 1239,
+          "MIN-RARE": 2550
+        },
+        "flora": {
+          "FLR-RUNIC_MOSS": 1349,
+          "FLR-MEDICINAL": 1125,
+          "FLR-PASTURE": 1001,
+          "FLR-HARDWOOD": 1049
+        },
+        "fauna": {
+          "FAU-PREDATOR-M": 38,
+          "FAU-INSECT-POLL": 39
+        },
+        "industries": 0,
+        "cities": 1,
+        "shops": 6,
+        "npcs": {
+          "ROBOT": 8,
+          "CHILD": 2,
+          "WORKER": 5,
+          "MERCENARY": 3,
+          "WARRIOR": 4,
+          "NATIVE": 1
+        },
+        "bridges": 0,
+        "shop_items": {
+          "ITEM-CIRCUIT": 146,
+          "ITEM-SENSOR": 79,
+          "ITEM-TOOL": 126,
+          "ITEM-GRAIN": 30,
+          "ITEM-FRUIT": 28,
+          "ITEM-WATER": 36,
+          "ITEM-FOOD": 10,
+          "WPN-001": 84,
+          "WPN-002": 120,
+          "WPN-003": 94
+        },
+        "npc_items": {
+          "ITEM-SERVO": 24,
+          "ITEM-ENERGY-CELL": 31,
+          "ITEM-FOOD": 34,
+          "ITEM-PERSONAL": 11,
+          "ITEM-TOOL": 19,
+          "WPN-003": 13,
+          "ITEM-ARMOR": 34,
+          "WPN-001": 16,
+          "ITEM-HERB": 4
+        },
+        "industry_stock": {},
+        "bridge_resources": {},
+        "kingdoms": 0,
+        "legendary_creatures": 0,
+        "mage_classes": {}
+      },
+      {
+        "resources": {
+          "MIN-IRON": 5558,
+          "MIN-COPPER": 4677,
+          "MIN-CRYSTAL": 2405,
+          "MIN-STONE": 2535,
+          "MIN-RARE": 2919
+        },
+        "flora": {
+          "FLR-RUNIC_MOSS": 1175,
+          "FLR-MEDICINAL": 580,
+          "FLR-PASTURE": 1054,
+          "FLR-HARDWOOD": 753
+        },
+        "fauna": {
+          "FAU-PREDATOR-M": 57,
+          "FAU-INSECT-POLL": 25
+        },
+        "industries": 3,
+        "cities": 1,
+        "shops": 7,
+        "npcs": {
+          "MAGE": 1,
+          "ROBOT": 5,
+          "WORKER": 2,
+          "NATIVE": 2,
+          "MERCENARY": 2,
+          "WARRIOR": 1
+        },
+        "bridges": 0,
+        "shop_items": {
+          "ITEM-CIRCUIT": 125,
+          "ITEM-SENSOR": 64,
+          "ITEM-TOOL": 241,
+          "ITEM-FOOD": 98,
+          "ITEM-WATER": 319,
+          "ITEM-GRAIN": 44,
+          "ITEM-FRUIT": 71
+        },
+        "npc_items": {
+          "ITEM-MANA-CRYSTAL": 4,
+          "ITEM-RUNE-DUST": 4,
+          "ITEM-HARVEST-FLR-RUNIC_MOSS": 11,
+          "ITEM-FAUNA-RESOURCE": 2,
+          "ITEM-CIRCUIT": 1,
+          "ITEM-SERVO": 19,
+          "ITEM-ENERGY-CELL": 15,
+          "ITEM-TOOL": 9,
+          "ITEM-FOOD": 16,
+          "ITEM-HERB": 5,
+          "WPN-003": 7,
+          "ITEM-ARMOR": 11,
+          "WPN-001": 3
+        },
+        "industry_stock": {
+          "MIN-IRON": 23,
+          "MIN-STONE": 0,
+          "MIN-RARE": 0
+        },
+        "bridge_resources": {},
+        "kingdoms": 1,
+        "legendary_creatures": 3,
+        "mage_classes": {
+          "MÉDIO": 1
+        }
+      },
+      {
+        "resources": {
+          "MIN-IRON": 2115,
+          "MIN-COPPER": 2122,
+          "MIN-CRYSTAL": 3468,
+          "MIN-STONE": 2507,
+          "MIN-RARE": 3295
+        },
+        "flora": {
+          "FLR-RUNIC_MOSS": 924,
+          "FLR-MEDICINAL": 1227,
+          "FLR-PASTURE": 573,
+          "FLR-HARDWOOD": 1765
+        },
+        "fauna": {
+          "FAU-PREDATOR-M": 40,
+          "FAU-INSECT-POLL": 34
+        },
+        "industries": 2,
+        "cities": 2,
+        "shops": 11,
+        "npcs": {
+          "MERCENARY": 4,
+          "ROBOT": 7,
+          "WORKER": 11,
+          "WARRIOR": 6,
+          "NATIVE": 3,
+          "CHILD": 5,
+          "MAGE": 2
+        },
+        "bridges": 0,
+        "shop_items": {
+          "ITEM-CIRCUIT": 163,
+          "ITEM-SENSOR": 146,
+          "ITEM-TOOL": 163,
+          "ITEM-RUNE-DUST": 27,
+          "ITEM-MANA-CRYSTAL": 74,
+          "WPN-004": 105,
+          "ITEM-FOOD": 111,
+          "ITEM-WATER": 234,
+          "MIN-IRON": 56,
+          "MIN-COPPER": 41,
+          "MIN-STONE": 44,
+          "ITEM-GRAIN": 70,
+          "ITEM-FRUIT": 138,
+          "ITEM-SERVO": 46,
+          "ITEM-ACTUATOR": 10
+        },
+        "npc_items": {
+          "WPN-003": 16,
+          "ITEM-ARMOR": 46,
+          "ITEM-SERVO": 24,
+          "ITEM-ENERGY-CELL": 37,
+          "ITEM-TOOL": 41,
+          "ITEM-FOOD": 61,
+          "WPN-001": 25,
+          "ITEM-HERB": 9,
+          "ITEM-PERSONAL": 20,
+          "ITEM-MANA-CRYSTAL": 3,
+          "ITEM-RUNE-DUST": 3
+        },
+        "industry_stock": {
+          "MIN-COPPER": 0,
+          "MIN-CRYSTAL": 0
+        },
+        "bridge_resources": {},
+        "kingdoms": 0,
+        "legendary_creatures": 0,
+        "mage_classes": {}
+      }
+    ]
+  },
+  "mar": {
+    "schema_version": "1.1.0",
+    "record_id": "MAR-CANON-GAMEPLAY-STATS-V1.1",
+    "title": "MAR — Status canônicos balanceados para RPG isométrico",
+    "authority": "CÂNONE_AUTORIZADO_PELO_AUTOR_2026-08-15",
+    "canonical_status": "CÂNONE_AUTORIZADO",
+    "master_integration_status": "PENDING_NEXT_MASTER_CONSOLIDATION",
+    "source_master": "V2.0.1_READ_ONLY",
+    "weapons": [
+      {
+        "weapon_id": "WPN-001",
+        "name": "Bastão de Vigília",
+        "canonical_status": "CÂNONE_AUTORIZADO",
+        "source_weapon_status": "CÂNONE_ATIVO",
+        "gameplay_scale": "NORMALIZED_0_100",
+        "class": "BAIXO",
+        "relative_cost": "MÉDIO",
+        "cost_tier": 2,
+        "stats": {
+          "power": 51,
+          "defense": 50,
+          "utility": 46,
+          "handling": 44,
+          "durability": 50,
+          "reach": 55,
+          "magic_affinity": 66,
+          "tech_affinity": 70,
+          "overall": 54
+        },
+        "balance_role": {
+          "subtype": "controle",
+          "primary_strength": "tech_affinity",
+          "primary_weakness": "handling",
+          "advantage": "controle de perímetro",
+          "limitation": "fonte finita, treinamento e contexto regulamentado"
+        },
+        "safety": "FICTIONAL_GAME_STATS_ONLY"
+      },
+      {
+        "weapon_id": "WPN-002",
+        "name": "Escudo de Convergência",
+        "canonical_status": "CÂNONE_AUTORIZADO",
+        "source_weapon_status": "CÂNONE_ATIVO",
+        "gameplay_scale": "NORMALIZED_0_100",
+        "class": "MÉDIO",
+        "relative_cost": "ALTO",
+        "cost_tier": 3,
+        "stats": {
+          "power": 62,
+          "defense": 60,
+          "utility": 56,
+          "handling": 54,
+          "durability": 60,
+          "reach": 70,
+          "magic_affinity": 67,
+          "tech_affinity": 72,
+          "overall": 62
+        },
+        "balance_role": {
+          "subtype": "controle",
+          "primary_strength": "tech_affinity",
+          "primary_weakness": "handling",
+          "advantage": "proteção de equipe",
+          "limitation": "fonte finita, treinamento e contexto regulamentado"
+        },
+        "safety": "FICTIONAL_GAME_STATS_ONLY"
+      },
+      {
+        "weapon_id": "WPN-003",
+        "name": "Lâmina de Oficina",
+        "canonical_status": "CÂNONE_AUTORIZADO",
+        "source_weapon_status": "CÂNONE_ATIVO",
+        "gameplay_scale": "NORMALIZED_0_100",
+        "class": "ALTO",
+        "relative_cost": "BAIXO",
+        "cost_tier": 1,
+        "stats": {
+          "power": 64,
+          "defense": 70,
+          "utility": 66,
+          "handling": 64,
+          "durability": 70,
+          "reach": 35,
+          "magic_affinity": 68,
+          "tech_affinity": 75,
+          "overall": 68
+        },
+        "balance_role": {
+          "subtype": "controle",
+          "primary_strength": "tech_affinity",
+          "primary_weakness": "power",
+          "advantage": "trabalho de oficina",
+          "limitation": "fonte finita, treinamento e contexto regulamentado"
+        },
+        "safety": "FICTIONAL_GAME_STATS_ONLY"
+      },
+      {
+        "weapon_id": "WPN-004",
+        "name": "Cajado de Conduto",
+        "canonical_status": "CÂNONE_AUTORIZADO",
+        "source_weapon_status": "CÂNONE_ATIVO",
+        "gameplay_scale": "NORMALIZED_0_100",
+        "class": "MÉDIO",
+        "relative_cost": "MÉDIO",
+        "cost_tier": 2,
+        "stats": {
+          "power": 50,
+          "defense": 62,
+          "utility": 51,
+          "handling": 60,
+          "durability": 40,
+          "reach": 55,
+          "magic_affinity": 65,
+          "tech_affinity": 73,
+          "overall": 59
+        },
+        "balance_role": {
+          "subtype": "controle",
+          "primary_strength": "tech_affinity",
+          "primary_weakness": "power",
+          "advantage": "condução limitada",
+          "limitation": "fonte finita, treinamento e contexto regulamentado"
+        },
+        "safety": "FICTIONAL_GAME_STATS_ONLY"
+      },
+      {
+        "weapon_id": "WPN-005",
+        "name": "Prisma de Guarda",
+        "canonical_status": "CÂNONE_AUTORIZADO",
+        "source_weapon_status": "CÂNONE_ATIVO",
+        "gameplay_scale": "NORMALIZED_0_100",
+        "class": "BAIXO",
+        "relative_cost": "ALTO",
+        "cost_tier": 3,
+        "stats": {
+          "power": 52,
+          "defense": 44,
+          "utility": 42,
+          "handling": 37,
+          "durability": 50,
+          "reach": 70,
+          "magic_affinity": 66,
+          "tech_affinity": 69,
+          "overall": 51
+        },
+        "balance_role": {
+          "subtype": "controle",
+          "primary_strength": "tech_affinity",
+          "primary_weakness": "handling",
+          "advantage": "barreira visual",
+          "limitation": "fonte finita, treinamento e contexto regulamentado"
+        },
+        "safety": "FICTIONAL_GAME_STATS_ONLY"
+      },
+      {
+        "weapon_id": "WPN-006",
+        "name": "Rede de Captura",
+        "canonical_status": "CÂNONE_AUTORIZADO",
+        "source_weapon_status": "CÂNONE_ATIVO",
+        "gameplay_scale": "NORMALIZED_0_100",
+        "class": "MÉDIO",
+        "relative_cost": "BAIXO",
+        "cost_tier": 1,
+        "stats": {
+          "power": 54,
+          "defense": 54,
+          "utility": 52,
+          "handling": 47,
+          "durability": 60,
+          "reach": 35,
+          "magic_affinity": 67,
+          "tech_affinity": 71,
+          "overall": 57
+        },
+        "balance_role": {
+          "subtype": "controle",
+          "primary_strength": "tech_affinity",
+          "primary_weakness": "handling",
+          "advantage": "captura segura",
+          "limitation": "fonte finita, treinamento e contexto regulamentado"
+        },
+        "safety": "FICTIONAL_GAME_STATS_ONLY"
+      },
+      {
+        "weapon_id": "WPN-007",
+        "name": "Bastão de Trava",
+        "canonical_status": "CÂNONE_AUTORIZADO",
+        "source_weapon_status": "CÂNONE_ATIVO",
+        "gameplay_scale": "NORMALIZED_0_100",
+        "class": "MÉDIO",
+        "relative_cost": "MÉDIO",
+        "cost_tier": 2,
+        "stats": {
+          "power": 66,
+          "defense": 64,
+          "utility": 62,
+          "handling": 57,
+          "durability": 70,
+          "reach": 55,
+          "magic_affinity": 68,
+          "tech_affinity": 73,
+          "overall": 65
+        },
+        "balance_role": {
+          "subtype": "controle",
+          "primary_strength": "tech_affinity",
+          "primary_weakness": "handling",
+          "advantage": "intertravamento",
+          "limitation": "fonte finita, treinamento e contexto regulamentado"
+        },
+        "safety": "FICTIONAL_GAME_STATS_ONLY"
+      },
+      {
+        "weapon_id": "WPN-008",
+        "name": "Martelo de Ancoragem",
+        "canonical_status": "CÂNONE_AUTORIZADO",
+        "source_weapon_status": "CÂNONE_ATIVO",
+        "gameplay_scale": "NORMALIZED_0_100",
+        "class": "MÉDIO",
+        "relative_cost": "ALTO",
+        "cost_tier": 3,
+        "stats": {
+          "power": 51,
+          "defense": 56,
+          "utility": 48,
+          "handling": 53,
+          "durability": 40,
+          "reach": 70,
+          "magic_affinity": 65,
+          "tech_affinity": 72,
+          "overall": 57
+        },
+        "balance_role": {
+          "subtype": "controle",
+          "primary_strength": "tech_affinity",
+          "primary_weakness": "utility",
+          "advantage": "ancoragem",
+          "limitation": "fonte finita, treinamento e contexto regulamentado"
+        },
+        "safety": "FICTIONAL_GAME_STATS_ONLY"
+      },
+      {
+        "weapon_id": "WPN-009",
+        "name": "Corrente de Resgate",
+        "canonical_status": "CÂNONE_AUTORIZADO",
+        "source_weapon_status": "CÂNONE_ATIVO",
+        "gameplay_scale": "NORMALIZED_0_100",
+        "class": "MÉDIO",
+        "relative_cost": "BAIXO",
+        "cost_tier": 1,
+        "stats": {
+          "power": 53,
+          "defense": 66,
+          "utility": 58,
+          "handling": 63,
+          "durability": 50,
+          "reach": 35,
+          "magic_affinity": 66,
+          "tech_affinity": 74,
+          "overall": 62
+        },
+        "balance_role": {
+          "subtype": "controle",
+          "primary_strength": "tech_affinity",
+          "primary_weakness": "power",
+          "advantage": "resgate",
+          "limitation": "fonte finita, treinamento e contexto regulamentado"
+        },
+        "safety": "FICTIONAL_GAME_STATS_ONLY"
+      },
+      {
+        "weapon_id": "WPN-010",
+        "name": "Escudo Ferroviário",
+        "canonical_status": "CÂNONE_AUTORIZADO",
+        "source_weapon_status": "CÂNONE_ATIVO",
+        "gameplay_scale": "NORMALIZED_0_100",
+        "class": "MÉDIO",
+        "relative_cost": "MÉDIO",
+        "cost_tier": 2,
+        "stats": {
+          "power": 56,
+          "defense": 49,
+          "utility": 49,
+          "handling": 40,
+          "durability": 60,
+          "reach": 55,
+          "magic_affinity": 67,
+          "tech_affinity": 70,
+          "overall": 55
+        },
+        "balance_role": {
+          "subtype": "controle",
+          "primary_strength": "tech_affinity",
+          "primary_weakness": "handling",
+          "advantage": "proteção ferroviária",
+          "limitation": "fonte finita, treinamento e contexto regulamentado"
+        },
+        "safety": "FICTIONAL_GAME_STATS_ONLY"
+      },
+      {
+        "weapon_id": "WPN-011",
+        "name": "Lança de Trilha",
+        "canonical_status": "CÂNONE_AUTORIZADO",
+        "source_weapon_status": "CÂNONE_ATIVO",
+        "gameplay_scale": "NORMALIZED_0_100",
+        "class": "MÉDIO",
+        "relative_cost": "ALTO",
+        "cost_tier": 3,
+        "stats": {
+          "power": 64,
+          "defense": 70,
+          "utility": 56,
+          "handling": 50,
+          "durability": 70,
+          "reach": 70,
+          "magic_affinity": 68,
+          "tech_affinity": 72,
+          "overall": 63
+        },
+        "balance_role": {
+          "subtype": "proteção",
+          "primary_strength": "tech_affinity",
+          "primary_weakness": "handling",
+          "advantage": "controle de perímetro",
+          "limitation": "fonte finita, treinamento e contexto regulamentado"
+        },
+        "safety": "FICTIONAL_GAME_STATS_ONLY"
+      },
+      {
+        "weapon_id": "WPN-012",
+        "name": "Tridente de Navyr",
+        "canonical_status": "CÂNONE_AUTORIZADO",
+        "source_weapon_status": "CÂNONE_ATIVO",
+        "gameplay_scale": "NORMALIZED_0_100",
+        "class": "BAIXO",
+        "relative_cost": "BAIXO",
+        "cost_tier": 1,
+        "stats": {
+          "power": 45,
+          "defense": 56,
+          "utility": 48,
+          "handling": 46,
+          "durability": 40,
+          "reach": 35,
+          "magic_affinity": 65,
+          "tech_affinity": 70,
+          "overall": 54
+        },
+        "balance_role": {
+          "subtype": "proteção",
+          "primary_strength": "tech_affinity",
+          "primary_weakness": "power",
+          "advantage": "proteção de equipe",
+          "limitation": "fonte finita, treinamento e contexto regulamentado"
+        },
+        "safety": "FICTIONAL_GAME_STATS_ONLY"
+      },
+      {
+        "weapon_id": "WPN-013",
+        "name": "Varinha de Matrizes",
+        "canonical_status": "CÂNONE_AUTORIZADO",
+        "source_weapon_status": "CÂNONE_ATIVO",
+        "gameplay_scale": "NORMALIZED_0_100",
+        "class": "MÉDIO",
+        "relative_cost": "MÉDIO",
+        "cost_tier": 2,
+        "stats": {
+          "power": 57,
+          "defense": 66,
+          "utility": 58,
+          "handling": 56,
+          "durability": 50,
+          "reach": 55,
+          "magic_affinity": 66,
+          "tech_affinity": 73,
+          "overall": 62
+        },
+        "balance_role": {
+          "subtype": "proteção",
+          "primary_strength": "tech_affinity",
+          "primary_weakness": "handling",
+          "advantage": "trabalho de oficina",
+          "limitation": "fonte finita, treinamento e contexto regulamentado"
+        },
+        "safety": "FICTIONAL_GAME_STATS_ONLY"
+      },
+      {
+        "weapon_id": "WPN-014",
+        "name": "Disco de Sinal",
+        "canonical_status": "CÂNONE_AUTORIZADO",
+        "source_weapon_status": "CÂNONE_ATIVO",
+        "gameplay_scale": "NORMALIZED_0_100",
+        "class": "ALTO",
+        "relative_cost": "ALTO",
+        "cost_tier": 3,
+        "stats": {
+          "power": 67,
+          "defense": 76,
+          "utility": 68,
+          "handling": 66,
+          "durability": 60,
+          "reach": 70,
+          "magic_affinity": 67,
+          "tech_affinity": 75,
+          "overall": 70
+        },
+        "balance_role": {
+          "subtype": "proteção",
+          "primary_strength": "defense",
+          "primary_weakness": "handling",
+          "advantage": "condução limitada",
+          "limitation": "fonte finita, treinamento e contexto regulamentado"
+        },
+        "safety": "FICTIONAL_GAME_STATS_ONLY"
+      },
+      {
+        "weapon_id": "WPN-015",
+        "name": "Lâmina de Bruma",
+        "canonical_status": "CÂNONE_AUTORIZADO",
+        "source_weapon_status": "CÂNONE_ATIVO",
+        "gameplay_scale": "NORMALIZED_0_100",
+        "class": "MÉDIO",
+        "relative_cost": "BAIXO",
+        "cost_tier": 1,
+        "stats": {
+          "power": 56,
+          "defense": 67,
+          "utility": 51,
+          "handling": 44,
+          "durability": 70,
+          "reach": 35,
+          "magic_affinity": 68,
+          "tech_affinity": 71,
+          "overall": 59
+        },
+        "balance_role": {
+          "subtype": "proteção",
+          "primary_strength": "tech_affinity",
+          "primary_weakness": "handling",
+          "advantage": "barreira visual",
+          "limitation": "fonte finita, treinamento e contexto regulamentado"
+        },
+        "safety": "FICTIONAL_GAME_STATS_ONLY"
+      },
+      {
+        "weapon_id": "WPN-016",
+        "name": "Escudo de Rota",
+        "canonical_status": "CÂNONE_AUTORIZADO",
+        "source_weapon_status": "CÂNONE_ATIVO",
+        "gameplay_scale": "NORMALIZED_0_100",
+        "class": "BAIXO",
+        "relative_cost": "MÉDIO",
+        "cost_tier": 2,
+        "stats": {
+          "power": 45,
+          "defense": 52,
+          "utility": 43,
+          "handling": 40,
+          "durability": 40,
+          "reach": 55,
+          "magic_affinity": 65,
+          "tech_affinity": 69,
+          "overall": 51
+        },
+        "balance_role": {
+          "subtype": "proteção",
+          "primary_strength": "tech_affinity",
+          "primary_weakness": "handling",
+          "advantage": "captura segura",
+          "limitation": "fonte finita, treinamento e contexto regulamentado"
+        },
+        "safety": "FICTIONAL_GAME_STATS_ONLY"
+      },
+      {
+        "weapon_id": "WPN-017",
+        "name": "Bastão de Travessia",
+        "canonical_status": "CÂNONE_AUTORIZADO",
+        "source_weapon_status": "CÂNONE_ATIVO",
+        "gameplay_scale": "NORMALIZED_0_100",
+        "class": "MÉDIO",
+        "relative_cost": "ALTO",
+        "cost_tier": 3,
+        "stats": {
+          "power": 56,
+          "defense": 62,
+          "utility": 53,
+          "handling": 50,
+          "durability": 50,
+          "reach": 70,
+          "magic_affinity": 66,
+          "tech_affinity": 71,
+          "overall": 59
+        },
+        "balance_role": {
+          "subtype": "proteção",
+          "primary_strength": "tech_affinity",
+          "primary_weakness": "handling",
+          "advantage": "intertravamento",
+          "limitation": "fonte finita, treinamento e contexto regulamentado"
+        },
+        "safety": "FICTIONAL_GAME_STATS_ONLY"
+      },
+      {
+        "weapon_id": "WPN-018",
+        "name": "Gancho de Cabo",
+        "canonical_status": "CÂNONE_AUTORIZADO",
+        "source_weapon_status": "CÂNONE_ATIVO",
+        "gameplay_scale": "NORMALIZED_0_100",
+        "class": "ALTO",
+        "relative_cost": "BAIXO",
+        "cost_tier": 1,
+        "stats": {
+          "power": 60,
+          "defense": 72,
+          "utility": 63,
+          "handling": 60,
+          "durability": 60,
+          "reach": 35,
+          "magic_affinity": 67,
+          "tech_affinity": 74,
+          "overall": 66
+        },
+        "balance_role": {
+          "subtype": "proteção",
+          "primary_strength": "tech_affinity",
+          "primary_weakness": "power",
+          "advantage": "ancoragem",
+          "limitation": "fonte finita, treinamento e contexto regulamentado"
+        },
+        "safety": "FICTIONAL_GAME_STATS_ONLY"
+      },
+      {
+        "weapon_id": "WPN-019",
+        "name": "Martelo Ferral",
+        "canonical_status": "CÂNONE_AUTORIZADO",
+        "source_weapon_status": "CÂNONE_ATIVO",
+        "gameplay_scale": "NORMALIZED_0_100",
+        "class": "ALTO",
+        "relative_cost": "MÉDIO",
+        "cost_tier": 2,
+        "stats": {
+          "power": 71,
+          "defense": 82,
+          "utility": 73,
+          "handling": 70,
+          "durability": 70,
+          "reach": 55,
+          "magic_affinity": 68,
+          "tech_affinity": 76,
+          "overall": 73
+        },
+        "balance_role": {
+          "subtype": "proteção",
+          "primary_strength": "defense",
+          "primary_weakness": "magic_affinity",
+          "advantage": "resgate",
+          "limitation": "fonte finita, treinamento e contexto regulamentado"
+        },
+        "safety": "FICTIONAL_GAME_STATS_ONLY"
+      },
+      {
+        "weapon_id": "WPN-020",
+        "name": "Prisma de Vigília",
+        "canonical_status": "CÂNONE_AUTORIZADO",
+        "source_weapon_status": "CÂNONE_ATIVO",
+        "gameplay_scale": "NORMALIZED_0_100",
+        "class": "BAIXO",
+        "relative_cost": "ALTO",
+        "cost_tier": 3,
+        "stats": {
+          "power": 44,
+          "defense": 48,
+          "utility": 38,
+          "handling": 34,
+          "durability": 40,
+          "reach": 70,
+          "magic_affinity": 65,
+          "tech_affinity": 68,
+          "overall": 49
+        },
+        "balance_role": {
+          "subtype": "proteção",
+          "primary_strength": "tech_affinity",
+          "primary_weakness": "handling",
+          "advantage": "proteção ferroviária",
+          "limitation": "fonte finita, treinamento e contexto regulamentado"
+        },
+        "safety": "FICTIONAL_GAME_STATS_ONLY"
+      },
+      {
+        "weapon_id": "WPN-021",
+        "name": "Bastão de Estação",
+        "canonical_status": "CÂNONE_AUTORIZADO",
+        "source_weapon_status": "CÂNONE_ATIVO",
+        "gameplay_scale": "NORMALIZED_0_100",
+        "class": "BAIXO",
+        "relative_cost": "BAIXO",
+        "cost_tier": 1,
+        "stats": {
+          "power": 44,
+          "defense": 50,
+          "utility": 42,
+          "handling": 44,
+          "durability": 50,
+          "reach": 35,
+          "magic_affinity": 66,
+          "tech_affinity": 70,
+          "overall": 51
+        },
+        "balance_role": {
+          "subtype": "campo",
+          "primary_strength": "tech_affinity",
+          "primary_weakness": "utility",
+          "advantage": "controle de perímetro",
+          "limitation": "fonte finita, treinamento e contexto regulamentado"
+        },
+        "safety": "FICTIONAL_GAME_STATS_ONLY"
+      },
+      {
+        "weapon_id": "WPN-022",
+        "name": "Lâmina de Salvaguarda",
+        "canonical_status": "CÂNONE_AUTORIZADO",
+        "source_weapon_status": "CÂNONE_ATIVO",
+        "gameplay_scale": "NORMALIZED_0_100",
+        "class": "MÉDIO",
+        "relative_cost": "MÉDIO",
+        "cost_tier": 2,
+        "stats": {
+          "power": 56,
+          "defense": 60,
+          "utility": 54,
+          "handling": 54,
+          "durability": 60,
+          "reach": 55,
+          "magic_affinity": 67,
+          "tech_affinity": 72,
+          "overall": 60
+        },
+        "balance_role": {
+          "subtype": "campo",
+          "primary_strength": "tech_affinity",
+          "primary_weakness": "utility",
+          "advantage": "proteção de equipe",
+          "limitation": "fonte finita, treinamento e contexto regulamentado"
+        },
+        "safety": "FICTIONAL_GAME_STATS_ONLY"
+      },
+      {
+        "weapon_id": "WPN-023",
+        "name": "Bastão de Pântano",
+        "canonical_status": "CÂNONE_AUTORIZADO",
+        "source_weapon_status": "CÂNONE_ATIVO",
+        "gameplay_scale": "NORMALIZED_0_100",
+        "class": "ALTO",
+        "relative_cost": "ALTO",
+        "cost_tier": 3,
+        "stats": {
+          "power": 67,
+          "defense": 70,
+          "utility": 66,
+          "handling": 64,
+          "durability": 70,
+          "reach": 70,
+          "magic_affinity": 68,
+          "tech_affinity": 75,
+          "overall": 68
+        },
+        "balance_role": {
+          "subtype": "campo",
+          "primary_strength": "tech_affinity",
+          "primary_weakness": "handling",
+          "advantage": "trabalho de oficina",
+          "limitation": "fonte finita, treinamento e contexto regulamentado"
+        },
+        "safety": "FICTIONAL_GAME_STATS_ONLY"
+      },
+      {
+        "weapon_id": "WPN-024",
+        "name": "Arco de Luz",
+        "canonical_status": "CÂNONE_AUTORIZADO",
+        "source_weapon_status": "CÂNONE_ATIVO",
+        "gameplay_scale": "NORMALIZED_0_100",
+        "class": "MÉDIO",
+        "relative_cost": "BAIXO",
+        "cost_tier": 1,
+        "stats": {
+          "power": 54,
+          "defense": 59,
+          "utility": 52,
+          "handling": 60,
+          "durability": 40,
+          "reach": 35,
+          "magic_affinity": 65,
+          "tech_affinity": 73,
+          "overall": 60
+        },
+        "balance_role": {
+          "subtype": "campo",
+          "primary_strength": "tech_affinity",
+          "primary_weakness": "utility",
+          "advantage": "condução limitada",
+          "limitation": "fonte finita, treinamento e contexto regulamentado"
+        },
+        "safety": "FICTIONAL_GAME_STATS_ONLY"
+      },
+      {
+        "weapon_id": "WPN-025",
+        "name": "Bracelete de Ancoragem",
+        "canonical_status": "CÂNONE_AUTORIZADO",
+        "source_weapon_status": "CÂNONE_ATIVO",
+        "gameplay_scale": "NORMALIZED_0_100",
+        "class": "BAIXO",
+        "relative_cost": "MÉDIO",
+        "cost_tier": 2,
+        "stats": {
+          "power": 44,
+          "defense": 45,
+          "utility": 42,
+          "handling": 37,
+          "durability": 50,
+          "reach": 55,
+          "magic_affinity": 66,
+          "tech_affinity": 69,
+          "overall": 49
+        },
+        "balance_role": {
+          "subtype": "campo",
+          "primary_strength": "tech_affinity",
+          "primary_weakness": "handling",
+          "advantage": "barreira visual",
+          "limitation": "fonte finita, treinamento e contexto regulamentado"
+        },
+        "safety": "FICTIONAL_GAME_STATS_ONLY"
+      },
+      {
+        "weapon_id": "WPN-026",
+        "name": "Cetro de Medição",
+        "canonical_status": "CÂNONE_AUTORIZADO",
+        "source_weapon_status": "CÂNONE_ATIVO",
+        "gameplay_scale": "NORMALIZED_0_100",
+        "class": "MÉDIO",
+        "relative_cost": "ALTO",
+        "cost_tier": 3,
+        "stats": {
+          "power": 55,
+          "defense": 55,
+          "utility": 53,
+          "handling": 47,
+          "durability": 60,
+          "reach": 70,
+          "magic_affinity": 67,
+          "tech_affinity": 71,
+          "overall": 57
+        },
+        "balance_role": {
+          "subtype": "campo",
+          "primary_strength": "tech_affinity",
+          "primary_weakness": "handling",
+          "advantage": "captura segura",
+          "limitation": "fonte finita, treinamento e contexto regulamentado"
+        },
+        "safety": "FICTIONAL_GAME_STATS_ONLY"
+      },
+      {
+        "weapon_id": "WPN-027",
+        "name": "Bastão de Campo",
+        "canonical_status": "CÂNONE_AUTORIZADO",
+        "source_weapon_status": "CÂNONE_ATIVO",
+        "gameplay_scale": "NORMALIZED_0_100",
+        "class": "MÉDIO",
+        "relative_cost": "BAIXO",
+        "cost_tier": 1,
+        "stats": {
+          "power": 54,
+          "defense": 65,
+          "utility": 54,
+          "handling": 57,
+          "durability": 70,
+          "reach": 35,
+          "magic_affinity": 68,
+          "tech_affinity": 73,
+          "overall": 61
+        },
+        "balance_role": {
+          "subtype": "campo",
+          "primary_strength": "tech_affinity",
+          "primary_weakness": "power",
+          "advantage": "intertravamento",
+          "limitation": "fonte finita, treinamento e contexto regulamentado"
+        },
+        "safety": "FICTIONAL_GAME_STATS_ONLY"
+      },
+      {
+        "weapon_id": "WPN-028",
+        "name": "Escudo de Oficina",
+        "canonical_status": "CÂNONE_AUTORIZADO",
+        "source_weapon_status": "CÂNONE_ATIVO",
+        "gameplay_scale": "NORMALIZED_0_100",
+        "class": "MÉDIO",
+        "relative_cost": "MÉDIO",
+        "cost_tier": 2,
+        "stats": {
+          "power": 55,
+          "defense": 54,
+          "utility": 52,
+          "handling": 53,
+          "durability": 40,
+          "reach": 55,
+          "magic_affinity": 65,
+          "tech_affinity": 72,
+          "overall": 58
+        },
+        "balance_role": {
+          "subtype": "campo",
+          "primary_strength": "tech_affinity",
+          "primary_weakness": "utility",
+          "advantage": "ancoragem",
+          "limitation": "fonte finita, treinamento e contexto regulamentado"
+        },
+        "safety": "FICTIONAL_GAME_STATS_ONLY"
+      },
+      {
+        "weapon_id": "WPN-029",
+        "name": "Luminária de Alerta",
+        "canonical_status": "CÂNONE_AUTORIZADO",
+        "source_weapon_status": "CÂNONE_ATIVO",
+        "gameplay_scale": "NORMALIZED_0_100",
+        "class": "ALTO",
+        "relative_cost": "ALTO",
+        "cost_tier": 3,
+        "stats": {
+          "power": 66,
+          "defense": 64,
+          "utility": 63,
+          "handling": 63,
+          "durability": 50,
+          "reach": 70,
+          "magic_affinity": 66,
+          "tech_affinity": 74,
+          "overall": 66
+        },
+        "balance_role": {
+          "subtype": "campo",
+          "primary_strength": "tech_affinity",
+          "primary_weakness": "utility",
+          "advantage": "resgate",
+          "limitation": "fonte finita, treinamento e contexto regulamentado"
+        },
+        "safety": "FICTIONAL_GAME_STATS_ONLY"
+      },
+      {
+        "weapon_id": "WPN-030",
+        "name": "Marca de Guarda",
+        "canonical_status": "CÂNONE_AUTORIZADO",
+        "source_weapon_status": "CÂNONE_ATIVO",
+        "gameplay_scale": "NORMALIZED_0_100",
+        "class": "BAIXO",
+        "relative_cost": "BAIXO",
+        "cost_tier": 1,
+        "stats": {
+          "power": 42,
+          "defense": 50,
+          "utility": 42,
+          "handling": 40,
+          "durability": 60,
+          "reach": 35,
+          "magic_affinity": 67,
+          "tech_affinity": 70,
+          "overall": 51
+        },
+        "balance_role": {
+          "subtype": "campo",
+          "primary_strength": "tech_affinity",
+          "primary_weakness": "handling",
+          "advantage": "proteção ferroviária",
+          "limitation": "fonte finita, treinamento e contexto regulamentado"
+        },
+        "safety": "FICTIONAL_GAME_STATS_ONLY"
+      }
+    ],
+    "count": 30,
+    "validation": {
+      "status": "PASS",
+      "failures": [],
+      "count": 30,
+      "class_counts": {
+        "BAIXO": 8,
+        "MÉDIO": 16,
+        "ALTO": 6
+      }
+    }
+  },
+  "country_validation": {
+    "status": "PASS",
+    "failures": [],
+    "warnings": [],
+    "root_blocks": 1,
+    "states": 5,
+    "blocks": 9
+  },
+  "persistence": {
+    "status": "PASS",
+    "failures": [],
+    "events": 9
+  },
+  "health": {
+    "status": "PASS",
+    "failures": [],
+    "base": {
+      "status": "PASS",
+      "failures": [],
+      "warnings": [],
+      "metrics": {
+        "human_population": {
+          "settlements": 14,
+          "total": 14400
+        },
+        "economy": {
+          "flows": 7,
+          "mean_price": 25.4555,
+          "mean_shortage": 0.0
+        },
+        "factions": {
+          "count": 3
+        },
+        "ecology": {
+          "aggregates": 0,
+          "total": 0
+        },
+        "scheduler": {
+          "dead_enabled": 0
+        },
+        "labor": {
+          "active_contracts": 0,
+          "orphan_active_contracts": 0
+        },
+        "queues": {
+          "domain_queue": 0,
+          "mobility_queue": 0,
+          "society_queue": 0
+        }
+      },
+      "integrity": {
+        "runtime": {
+          "status": "PASS",
+          "checks": {
+            "event_chain": {
+              "events": 0,
+              "failures": [],
+              "status": "PASS"
+            },
+            "materialized_states": {
+              "states": 58,
+              "failures": [],
+              "status": "PASS"
+            },
+            "ledger": {
+              "entries": 0,
+              "failures": [],
+              "status": "PASS"
+            },
+            "replay": {
+              "entities": 58,
+              "failures": [],
+              "status": "PASS"
+            },
+            "clock_replay": {
+              "replayed": {
+                "day": 0,
+                "tick": 0
+              },
+              "materialized": {
+                "day": 0,
+                "tick": 0
+              },
+              "failures": [],
+              "status": "PASS"
+            }
+          }
+        },
+        "world_systems": {
+          "status": "PASS",
+          "failures": [],
+          "summary": {
+            "routes": 34,
+            "flows": 7,
+            "populations": 14,
+            "factions": 3,
+            "ticks": 0
+          }
+        },
+        "orchestrator": {
+          "status": "PASS",
+          "failures": [],
+          "run_chain": {
+            "status": "PASS",
+            "failures": [],
+            "runs": 0
+          },
+          "domain_integration": {
+            "status": "PASS",
+            "failures": [],
+            "queue": 0,
+            "effects": 0
+          }
+        },
+        "ecology": {
+          "status": "PASS",
+          "failures": []
+        },
+        "social": {
+          "status": "PASS",
+          "failures": []
+        },
+        "objects": {
+          "world_instance_id": "rt:world:eb9ff301-6756-4327-8d81-a7e78b22ff33",
+          "failures": [],
+          "status": "PASS"
+        },
+        "consequences": {
+          "status": "PASS",
+          "checks": {
+            "runtime_core": {
+              "status": "PASS",
+              "checks": {
+                "event_chain": {
+                  "events": 0,
+                  "failures": [],
+                  "status": "PASS"
+                },
+                "materialized_states": {
+                  "states": 58,
+                  "failures": [],
+                  "status": "PASS"
+                },
+                "ledger": {
+                  "entries": 0,
+                  "failures": [],
+                  "status": "PASS"
+                },
+                "replay": {
+                  "entities": 58,
+                  "failures": [],
+                  "status": "PASS"
+                },
+                "clock_replay": {
+                  "replayed": {
+                    "day": 0,
+                    "tick": 0
+                  },
+                  "materialized": {
+                    "day": 0,
+                    "tick": 0
+                  },
+                  "failures": [],
+                  "status": "PASS"
+                }
+              }
+            },
+            "relationships": {
+              "relations": 0,
+              "failures": [],
+              "status": "PASS"
+            },
+            "rules": {
+              "rules": 0,
+              "failures": [],
+              "status": "PASS"
+            },
+            "causal_graph": {
+              "runs": 0,
+              "expansions": 0,
+              "failures": [],
+              "status": "PASS"
+            }
+          }
+        },
+        "domain_integration": {
+          "status": "PASS",
+          "failures": [],
+          "queue": 0,
+          "effects": 0
+        },
+        "commerce": {
+          "status": "PASS",
+          "failures": [],
+          "catalog": 30,
+          "transactions": 0
+        },
+        "combat": {
+          "status": "PASS",
+          "failures": [],
+          "equipment": 0,
+          "corpses": 0,
+          "resources": 0,
+          "replay": {
+            "entities": 58,
+            "failures": [],
+            "status": "PASS"
+          }
+        },
+        "mobility": {
+          "status": "PASS",
+          "failures": [],
+          "replay": {
+            "entities": 58,
+            "failures": [],
+            "status": "PASS"
+          },
+          "authority": "MOBILITY_BIOLOGY_V1_1_RUNTIME_NOT_CANON"
+        },
+        "society": {
+          "status": "PASS",
+          "failures": [],
+          "replay": {
+            "entities": 58,
+            "failures": [],
+            "status": "PASS"
+          },
+          "authority": "SOCIETY_LABOR_V1_1_RUNTIME_NOT_CANON"
+        }
+      },
+      "authority": "SYSTEM_HEALTH_V1_1_RUNTIME_DIAGNOSTIC"
+    },
+    "country": {
+      "status": "PASS",
+      "failures": [],
+      "warnings": [],
+      "root_blocks": 1,
+      "states": 5,
+      "blocks": 9
+    },
+    "persistence": {
+      "status": "PASS",
+      "failures": [],
+      "events": 9
+    },
+    "mar": {
+      "status": "PASS",
+      "failures": [],
+      "count": 30,
+      "class_counts": {
+        "BAIXO": 8,
+        "MÉDIO": 16,
+        "ALTO": 6
+      }
+    }
+  }
+}

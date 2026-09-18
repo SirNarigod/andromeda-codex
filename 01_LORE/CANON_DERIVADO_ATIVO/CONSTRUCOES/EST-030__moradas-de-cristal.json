@@ -1,0 +1,34 @@
+{
+  "est_id": "EST-030",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Moradas de Cristal",
+  "building_type": "RESIDENCIAL",
+  "parent_locality": "LOC-009-001",
+  "parent_subregion": "SUB-009-001",
+  "parent_political_unit": "TER-009",
+  "function": "Habitações escavadas na maior câmara habitada da liga subterrânea.",
+  "economic_role": {
+    "is_vendor": false,
+    "sells": [],
+    "produces": [],
+    "regulation_factor": 0.2
+  },
+  "capacity": {
+    "jobs": 3,
+    "residents": 30
+  },
+  "professions_linked": [],
+  "notable_link": "Câmaras de Cristal (SUB-009-001)",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "MADEIRA_E_ALVENARIA",
+    "flammability": "ALTA",
+    "recovery_days": 7
+  }
+}

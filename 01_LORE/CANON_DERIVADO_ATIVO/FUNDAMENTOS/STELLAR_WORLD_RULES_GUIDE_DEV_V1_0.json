@@ -1,0 +1,172 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-WORLD-RULES-GUIDE-DEV-V1.0",
+  "title": "Como o mundo de Stellar funciona — guia de lore das 18 leis fundamentais",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "canonical_status": "ACTIVE_R2_COMPATIBLE",
+  "r2_guard": "Este arquivo é um RESUMO DE LEITURA, não uma nova autoridade. Nenhuma das 18 leis originais é editada, e nenhuma invariante/proibição nova é criada — só reorganizadas e traduzidas para linguagem de lore. Em qualquer conflito de interpretação, o arquivo de lei original em 02_REGRAS/STELLAR_FOUNDATION/ (citado em source_laws de cada bloco) prevalece.",
+  "blocks": [
+    {
+      "block": "2. Vida, Morte e Simbiose",
+      "summary": "O ciclo biológico de um personagem em Stellar: incapacitação é recuperável, morte é final, renascimento é sempre um corpo novo — e o caso especial de Kenua, cujo corpo hospeda o Espinho-Negro.",
+      "source_laws": [
+        {
+          "law": "Lei de Vida-Morte-Renascimento",
+          "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_LIFE_DEATH_REBIRTH_LAW_V1_1.json"
+        },
+        {
+          "law": "Lei da Simbiose",
+          "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_SYMBIOSIS_LAW_V1_0.json"
+        }
+      ],
+      "key_rules": [
+        "Incapacitação não é morte literal; morte encerra o ciclo daquele corpo; renascimento nunca restaura o corpo anterior.",
+        "Ecos de renascimento podem carregar afinidades/vínculos inacabados, mas não transferem memória factual, identidade, inventário, moeda ou reputação por padrão.",
+        "Offline nunca resolve morte nem atribui herança; proibido ressurreição grátis ou transferência automática de posses/reputação.",
+        "Kenua permanece pessoa com agência própria; o Espinho-Negro aprende linguagem e moralidade através dela, sem dominação imediata.",
+        "Toda forma simbiótica conserva matéria e energia (regeneração exige comida/água/minerais/vitaminas/reservas orgânicas) — nunca é 'mana' genérica.",
+        "Limiares de integração de R2: de 0-20% (Kenua dominante) até 100% (integração/substituição irreversível, que exige portão autoral); Temporada 1 nunca concede maestria total.",
+        "Nenhuma lei desta seção altera Kenua, Serlis, o Espinho-Negro ou eventos de morte já registrados em R2."
+      ],
+      "canon_terms_touched": [
+        "Kenua",
+        "Espinho-Negro",
+        "Serlis",
+        "Amadon (1º vínculo com Kenua só no episódio 8)"
+      ]
+    },
+    {
+      "block": "3. Magia, Tecnologia e Itens",
+      "summary": "Como magia, runas, tecnologia e equipamentos funcionam mecanicamente — magia sempre transforma energia existente, nunca cria do nada, e identidade de item de R2 nunca muda.",
+      "source_laws": [
+        {
+          "law": "Lei de Magia e Tecnologia",
+          "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_MAGIC_TECHNOLOGY_LAW_V1_1.json"
+        },
+        {
+          "law": "Lei de Skill e Itemização",
+          "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_SKILL_ITEMIZATION_LAW_V1_0.json"
+        }
+      ],
+      "key_rules": [
+        "Todo efeito mágico exige fonte, método, portador, objetivo, alvo, custo e consequência — nunca energia infinita nem criada do nada.",
+        "Runas exigem suporte físico, compatibilidade, dissipação e manutenção; alcance/duração/escala são sempre finitos.",
+        "Tecnologia continua necessária para repetibilidade, escala e durabilidade — magia não substitui engenharia.",
+        "Nome/identidade de item de R2 é imutável; item único exige definição autoral própria; raridade/status/peso/durabilidade são configuração de runtime, não cânone.",
+        "Nenhum rótulo de classe fixa define uma pessoa; maestria de habilidade sempre exige proveniência (uso, treino, mentoria).",
+        "Proibido: efeito de runa inventado sem base, mapeamento numérico de combate inferido livremente do texto de R2, loot promovendo item/skill a cânone, ressurreição verdadeira, viagem no tempo, teleporte planetário instantâneo, desbloqueio automático de magia de Kenua na Temporada 1."
+      ],
+      "canon_terms_touched": [
+        "Corrente Planetária (MAG-003)",
+        "Estase de Intervalo de Serlis (MAG-007)"
+      ]
+    },
+    {
+      "block": "4. Sociedade e Território",
+      "summary": "Stellar não tem governo planetário. Território, instituições e facções profissionais são sempre locais, revogáveis e sem soberania automática.",
+      "source_laws": [
+        {
+          "law": "Lei de Soberania e Território",
+          "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_SOVEREIGNTY_TERRITORY_LAW_V1_2.json"
+        },
+        {
+          "law": "Lei de Instituição e Cultura",
+          "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_INSTITUTION_CULTURE_LAW_V1_1.json"
+        },
+        {
+          "law": "Lei de Facções Profissionais",
+          "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_PROFESSIONAL_FACTIONS_LAW_V1_0.json"
+        },
+        {
+          "law": "Lei de População e Infraestrutura",
+          "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_POPULATION_INFRASTRUCTURE_LAW_V1_0.json"
+        }
+      ],
+      "key_rules": [
+        "O Conselho de Convergência negocia crises e rotas entre potências, mas não governa nenhum território; influência nunca equivale a soberania.",
+        "Território exige povo, rota, administração e reconhecimento; TER-011 Terras Livres permanece o país inicial jogável, geometria de 842 EC versionada e só-leitura em runtime.",
+        "Serviço institucional (carta local, licença) não é soberania — é presença revogável, nunca autoridade territorial.",
+        "Cultura é local e plural: nenhuma língua ou religião oficial é inferida para todo Stellar.",
+        "Cadeia de produção econômica sempre segue: recurso → espécie/material → manejo → armazenamento → rota → mercado.",
+        "FAC-009 (rede de ofício/segurança) e FAC-010 (rede de licenças/contratos) são organizações transregionais não-soberanas, sempre em parceria tensa entre si.",
+        "População/infraestrutura são agregadas por assentamento; número de população é só runtime, nunca cânone; nenhuma migração extraordinária ou colapso social acontece sem portão autoral.",
+        "Proibido: soberano global surgido de influência de facção, mutação de fronteira em runtime, apagamento da autonomia de Terras Livres, vínculo automático de qualquer facção a Kenua."
+      ],
+      "canon_terms_touched": [
+        "Árvores Anciãs, Reis Magos, Conselho de Convergência, Vigília Radicular, Círculo Arcano-Botânico (mantêm escopo de R2)",
+        "FAC-009/FAC-010",
+        "Raiz Profunda (território depende dela)"
+      ]
+    },
+    {
+      "block": "5. Economia, Ecologia e Tempo",
+      "summary": "Como mercado, fauna, clima e memória social evoluem — inclusive o que pode (e não pode) acontecer no mundo enquanto ninguém está jogando (offline).",
+      "source_laws": [
+        {
+          "law": "Lei de Economia-Ecologia-Tempo",
+          "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_ECONOMY_ECOLOGY_TIME_LAW_V1_1.json"
+        },
+        {
+          "law": "Lei de Rotina Ecológica-Temporal",
+          "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_ECOLOGY_TEMPORAL_ROUTINE_LAW_V1_0.json"
+        },
+        {
+          "law": "Lei de Informação e Memória",
+          "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_INFORMATION_MEMORY_LAW_V1_1.json"
+        }
+      ],
+      "key_rules": [
+        "Economia é regional e sistêmica: produção, estoque, consumo, capacidade de rota e manutenção são interdependentes; recursos e recuperação ecológica são finitos.",
+        "Preço, moeda, estoque de vendedor e inventário são só runtime — nunca viram cânone; nenhum evento econômico concede soberania.",
+        "Distribuição de fauna por território/bioma é baseada em fonte (R2); consumo ecológico é limitado e a recuperação exige tempo e recursos.",
+        "Rotina offline é limitada e idempotente: permite produção/consumo limitados, clima, recuperação ecológica e variação populacional agregada NA MESMA região — nunca migração extraordinária, cascata entre territórios, ou perda irreversível.",
+        "Memória não é prova; memória e eventos sociais são 'append-only' (nunca reescritos); só evidência independente verifica ou falsifica uma alegação.",
+        "Reputação é sempre contextual/escopada, nunca um placar global único; boato nunca vira evidência de promoção a cânone.",
+        "Proibido: recurso infinito, teletransporte de rota, transição de fase da Raiz Profunda offline, memória privada virando cânone público."
+      ],
+      "canon_terms_touched": [
+        "Raiz Profunda (proíbe transição de fase offline)",
+        "Simbiose (limites offline compartilhados)"
+      ]
+    },
+    {
+      "block": "6. Jogador e Progressão",
+      "summary": "Como o protagonista customizado do jogador existe dentro de Stellar sem jamais substituir Kenua ou reescrever a Temporada 1 — e o 'relógio planetário' da ameaça central do jogo.",
+      "source_laws": [
+        {
+          "law": "Lei de Taxonomia Jogável",
+          "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_PLAYABLE_TAXONOMY_LAW_V1_0.json"
+        },
+        {
+          "law": "Lei da Campanha do Jogador",
+          "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_PLAYER_CAMPAIGN_LAW_V1_0.json"
+        },
+        {
+          "law": "Lei de Progressão-Quest-Consequência",
+          "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_PROGRESSION_QUEST_CONSEQUENCE_LAW_V1_1.json"
+        },
+        {
+          "law": "Lei de Progressão da Raiz",
+          "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_ROOT_PROGRESSION_LAW_V1_0.json"
+        }
+      ],
+      "key_rules": [
+        "Recurso/profissão/papel de NPC/perfil de encontro são tipos de catálogo, não instâncias de runtime; profissão é prática social, nunca classe fixa de jogador.",
+        "Fauna não é automaticamente inimiga; ter stats de combate não confere hostilidade canônica.",
+        "Pessoa nomeada de R2 nunca é NPC repetível/spawnável; nenhum NPC substitui ou interage automaticamente com Kenua.",
+        "O protagonista customizado do jogador tem agência LOCAL, nunca a autoridade do protagonista de R2 (Kenua); cenas/decisões/revelações seladas de Kenua permanecem imutáveis.",
+        "Todo arco local deve criar custo, escolha, consequência ou mistério; identidade do jogador é estado de runtime, nunca um novo fato de R2.",
+        "Progressão não atribui identidade de classe fixa; maestria exige uso, treino, mentoria, consequência ou contexto real.",
+        "Resultado de quest é local, auditável e persistente — resolver uma quest nunca apaga sua consequência; reputação nunca é um único placar moral global.",
+        "A Raiz Profunda (organismo invasor implantado por Votakhel) tem 6 fases com pressão crescente: Implantação, Enraizamento, Alimentação Silenciosa, Corrupção, Emergência, Colheita — toda transição de fase exige portão autoral, especialmente a fase final.",
+        "Proibido: substituir Kenua, contato/identificação de Amadon antes do Episódio 8, reescrita de episódio de R2 por quest customizada, quest que conceda soberania, transição de fase da Raiz automática, vitória automática do Espinho-Negro."
+      ],
+      "canon_terms_touched": [
+        "Kenua (limite intransponível)",
+        "Amadon (pré-S01E08)",
+        "Raiz Profunda, Votakhel, Espinho-Negro (lei-mãe destes conceitos)"
+      ]
+    }
+  ],
+  "coverage_note": "18 leis-fonte cobertas em 6 blocos temáticos, cada lei aparecendo em exatamente 1 bloco: Autonomia/Responsabilidade, Constituição do Cânone, Causalidade (bloco 1); Vida-Morte-Renascimento, Simbiose (bloco 2); Magia-Tecnologia, Skill-Itemização (bloco 3); Soberania-Território, Instituição-Cultura, Facções Profissionais, População-Infraestrutura (bloco 4); Economia-Ecologia-Tempo, Rotina Ecológica-Temporal, Informação-Memória (bloco 5); Taxonomia Jogável, Campanha do Jogador, Progressão-Quest-Consequência, Progressão da Raiz (bloco 6)."
+}

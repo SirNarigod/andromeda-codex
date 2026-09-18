@@ -1,0 +1,42 @@
+{
+  "est_id": "EST-047",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Estaleiro de Navyr",
+  "building_type": "INDUSTRIAL",
+  "parent_locality": "LOC-004-001",
+  "parent_subregion": "SUB-004-001",
+  "parent_political_unit": "TER-004",
+  "function": "Construção e reparo de embarcações de superfície e veículos submersos usados pela confederação marítima.",
+  "economic_role": {
+    "is_vendor": false,
+    "sells": [],
+    "produces": [
+      "VEI-002 Caravela de Navyr",
+      "VEI-014 Sino de Mergulho de Navyr",
+      "VEI-015 Barril Selado de Pesca Profunda",
+      "VEI-016 Casco Rúnico de Contenção",
+      "VEI-017 Concha Encantada de Perolagem"
+    ],
+    "regulation_factor": 0.4
+  },
+  "capacity": {
+    "jobs": 10,
+    "residents": 5
+  },
+  "professions_linked": [
+    "JOB-006 Artesão e reparador de oficina"
+  ],
+  "notable_link": "SUB-004-001 Porto Livre de Navyr, EST-002 Entreposto da Doca (Kharveth, distinto)",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "METAL_E_MADEIRA",
+    "flammability": "MEDIA_COM_RISCO_EXPLOSAO",
+    "recovery_days": 10
+  }
+}

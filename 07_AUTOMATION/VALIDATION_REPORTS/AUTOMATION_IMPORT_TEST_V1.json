@@ -1,0 +1,14 @@
+{
+  "record_id": "AUTOMATION_IMPORT_TEST_V1",
+  "status": "PASS",
+  "scope": "LOCAL_STAGING_IMPORT",
+  "results": {
+    "valid_derived_manifest_staged": true,
+    "canon_write_manifest_rejected": true
+  },
+  "invariants_verified": [
+    "EXTERNAL_OUTPUT_STAGES_BEFORE_REVIEW",
+    "EXTERNAL_OUTPUT_CANNOT_DECLARE_CANON_AUTHORITY"
+  ],
+  "note": "The test used temporary local fixtures only; no R2 source, canon document or external application was modified."
+}

@@ -1,0 +1,83 @@
+{
+  "record_id": "VALIDATION-SUMMARY-V1.4.0",
+  "version": "V1.4.0",
+  "status": "PASS",
+  "unit_tests": {
+    "v1_4": {
+      "checks": 31,
+      "passed": 31,
+      "failed": 0
+    },
+    "historical_regression": {
+      "checks": 776,
+      "passed": 776,
+      "failed": 0
+    },
+    "total": {
+      "checks": 807,
+      "passed": 807,
+      "failed": 0
+    }
+  },
+  "stage13": {
+    "extended": {
+      "checks": 1403,
+      "passed": 1403,
+      "failed": 0
+    },
+    "fuzz_concurrency": "PASS"
+  },
+  "stage14": {
+    "global": {
+      "checks": 43,
+      "passed": 43,
+      "failed": 0
+    },
+    "multiworld": {
+      "checks": 37,
+      "passed": 37,
+      "failed": 0
+    },
+    "corruption": {
+      "cases": 10,
+      "detected": 10,
+      "missed": 0
+    }
+  },
+  "v14": {
+    "static_audit": {
+      "checks": 30,
+      "passed": 30,
+      "failed": 0
+    },
+    "readiness": {
+      "checks": 40,
+      "passed": 40,
+      "failed": 0
+    },
+    "spatial_stress": {
+      "worlds": 30,
+      "chunk_transitions": 4480,
+      "max_roundtrip_error_m": 4.197414120966556e-10
+    },
+    "lod_catalog_stress": {
+      "seeds": 300,
+      "blocks": 4446,
+      "subregions": 8953,
+      "cities": 9161,
+      "dungeons": 2979,
+      "rooms": 17906,
+      "scene_objects": 106286,
+      "npcs": 183215
+    },
+    "determinism_world_pairs": 10,
+    "process_resume": "PASS"
+  },
+  "master_dependency": {
+    "version": "V2.1.0",
+    "sha256": "9677b10890c24dfc04916178a2b9fd40a9ea131f2a13c1ec8255186ab203a98b",
+    "mode": "READ_ONLY"
+  },
+  "known_open_bugs": 0,
+  "known_open_blockers": 0
+}

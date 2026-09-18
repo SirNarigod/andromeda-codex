@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-CONSEQUENCE-ENGINE-REGISTRY-DEV-V1.0",
+  "title": "Sistema H - Motor de Consequencia Causal (instancia CONSEQUENCE_ENGINE_CONTRACT_V1_0 + AGENT_BRAIN_INTENT_VALIDATOR_CONTRACT_V1_0)",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "r2_guard": "Instancia pela primeira vez o registro de 'protecao narrativa' (plot armor) que o motor causal usa para decidir quando parar uma cascata de consequencias - ate agora so existia como categoria abstrata (DEATH/WORLD_MUTATION/RELATIONSHIP_CHANGE/PERMANENT_INJURY) sem lista real de quem/o que esta protegido. Os 11 PER-XXX + 8 LID-XXX (todos R2 confirmados) sao protegidos automaticamente por serem personagens centrais/lideres nomeados; NPCs gameplay-derived (CIV-/ZUM-/COR-N, todos desta sessao) NAO sao protegidos - podem ser afetados livremente pela simulacao.",
+  "engine_rules": {
+    "max_causal_depth": 8,
+    "global_budget": 64,
+    "stop_reasons": [
+      "AMBIGUOUS_CANONICAL_TARGET - a consequencia atingiria algo que poderia ser um fato R2 real, mas nao ha certeza suficiente",
+      "NARRATIVE_PROTECTION_DEATH - a cascata mataria uma entidade protegida",
+      "NARRATIVE_PROTECTION_WORLD_MUTATION - a cascata mudaria um fato de mundo protegido (ex. fase da Raiz Profunda, soberania territorial)",
+      "NARRATIVE_PROTECTION_RELATIONSHIP_CHANGE - a cascata alteraria um relacionamento R2 protegido (ex. vinculo Kenua-Serlis)",
+      "NARRATIVE_PROTECTION_PERMANENT_INJURY - a cascata causaria dano permanente a uma entidade protegida",
+      "BUDGET_EXHAUSTED - orcamento global de 64 esgotado antes de a cascata terminar naturalmente",
+      "DEPTH_EXCEEDED - profundidade de 8 elos atingida"
+    ]
+  },
+  "narrative_protection_registry": {
+    "fully_protected_special_cases": [
+      {
+        "entity": "Kenua Vaarn (PER-002)",
+        "categories": [
+          "DEATH",
+          "WORLD_MUTATION",
+          "RELATIONSHIP_CHANGE",
+          "PERMANENT_INJURY"
+        ],
+        "gate": "STORY_AUTHORITY_ONLY",
+        "note": "Protagonista de R2 - todas as 4 categorias bloqueadas, nenhuma simulacao pode altera-lo."
+      },
+      {
+        "entity": "Amadon (guardiao de Stellar)",
+        "categories": [
+          "WORLD_MUTATION"
+        ],
+        "gate": "BLOCKED_UNTIL_S01E08",
+        "note": "Identificacao/contato bloqueado ate o Episodio 8 da Temporada 1 (STELLAR_SYMBIOSIS_LAW)."
+      },
+      {
+        "entity": "COR-001 Raiz Profunda (fase da ameaca)",
+        "categories": [
+          "WORLD_MUTATION"
+        ],
+        "gate": "STORY_AUTHORITY_ONLY",
+        "note": "Transicao alem de Alimentacao Silenciosa->Corrupcao (fase 57) exige novo portao autoral - nenhuma cascata simulada pode empurrar a fase sozinha."
+      },
+      {
+        "entity": "Episodios selados da Temporada 1",
+        "categories": [
+          "WORLD_MUTATION",
+          "RELATIONSHIP_CHANGE"
+        ],
+        "gate": "BLOCKED",
+        "note": "Nenhuma consequencia simulada pode reescrever cena ja roteirizada."
+      }
+    ],
+    "death_protected_by_category": {
+      "PER (11 personagens R2)": [
+        "Aelyra Voss",
+        "Kenua Vaarn",
+        "Serlis Aftermoon",
+        "Genes Arvath",
+        "Serverus Vaelkor",
+        "Kaenna Vor",
+        "Ishara Veyn",
+        "Maelkar Enohar",
+        "Daren Vaarn",
+        "Meyra Vaarn",
+        "Ilyan Morveth"
+      ],
+      "LID (8 lideres R2)": [
+        "Elyra Vaelor",
+        "Odran Ferrak IV",
+        "Caelen Orthev",
+        "Nymara Vel-Thal",
+        "Saelyra Ithren",
+        "Vaelora Aereth",
+        "Maeryn Salvara",
+        "Torvhan Calther"
+      ]
+    },
+    "not_protected_note": "NPCs gameplay-derived (33 CIV-XXX, 10 ZUM-XXX, 8 COR-NXX, criaturas CRI-XXX) NAO estao nesta lista - podem morrer, mudar de relacao ou sofrer dano permanente livremente pela simulacao/jogador, sem exigir portao autoral."
+  },
+  "worked_example_chain": {
+    "premise": "Incendio hipotetico na Forja Real de Kharveth (EST-003, Sistema E) se espalha demais.",
+    "chain": [
+      {
+        "step": 1,
+        "event": "Incendio na Forja Real (EST-003) atinge intensidade maxima antes de ser contido.",
+        "budget_used": 32
+      },
+      {
+        "step": 2,
+        "event": "Producao de armas para por dias - Soldados da regiao ficam com suprimento reduzido.",
+        "budget_used": 12
+      },
+      {
+        "step": 3,
+        "event": "FAC-009/FAC-010 (Colegiado/Liga dos Oficios) entram em disputa sobre prioridade de reparo.",
+        "budget_used": 8
+      },
+      {
+        "step": 4,
+        "event": "Tensao economica sobe (shortage_pressure de TER-002 aumenta, Sistema D).",
+        "budget_used": 6
+      },
+      {
+        "step": 5,
+        "event": "Um mercador especula que 'alguem em Kharveth vai precisar de ajuda de fora' - cascata tenta avancar para envolver Kenua Vaarn (PER-002) numa missao de resgate.",
+        "budget_used": 4
+      }
+    ],
+    "stop_at_step": 6,
+    "stop_reason": "NARRATIVE_PROTECTION_RELATIONSHIP_CHANGE",
+    "stop_explanation": "O motor bloqueia o elo 6 antes que a cascata force uma interacao automatica com Kenua (PER-002, protegido) - qualquer envolvimento dela exigiria decisao autoral explicita, nao pode ser gerado so pela simulacao economica/ambiental. A cascata para em 5 elos, dentro do limite de 8, com orcamento residual de 64-62=2.",
+    "canon_note": "Cadeia hipotetica de demonstracao - nenhum evento aqui e narrativa real confirmada, so ilustra o motor de consequencia com entidades ja catalogadas (EST-003, FAC-009/010, TER-002, PER-002)."
+  },
+  "prohibitions": [
+    "NO_PROTECTED_ENTITY_ALTERATION_WITHOUT_AUTHORIAL_GATE",
+    "NO_CASCADE_BEYOND_DEPTH_8",
+    "NO_CASCADE_BEYOND_BUDGET_64"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "record_id": "LOC-004-001",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Cais Principal",
+  "parent_subregion": "SUB-004-001",
+  "parent_political_unit": "TER-004",
+  "function": "Principal ponto de atracação do porto franco.",
+  "notable_link": "Porto Livre de Navyr (SUB-004-001)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-004-001",
+  "settlement_tier": "COMPLEXO",
+  "history": "Navyr se tornou porto franco por acidente de geografia, não de decisão política: fica exatamente no ponto onde três rotas comerciais concorrentes se cruzam sem que nenhuma das potências que as controlam consiga alegar posse sobre a água em volta. O Cais Principal cresceu simplesmente absorvendo o tráfego que nenhum outro porto da região conseguia processar — hoje é maior do que qualquer planejamento original previu, remendado e ampliado tantas vezes que ninguém mais consegue apontar onde a estrutura original termina e as ampliações começam.",
+  "sensory": "Um labirinto de docas de madeira e metal se estende por uma extensão de água maior do que qualquer visitante espera na primeira vez — é possível caminhar meia hora pelo cais sem sair da mesma estrutura contínua. Bandeiras de dezenas de territórios diferentes tremulam lado a lado sobre os mastros atracados, e o som é uma mistura constante de línguas, moedas caindo em balcões de troca e o grito ritmado dos estivadores coordenando carga pesada. O cheiro varia conforme se caminha: sal e peixe perto da água, especiaria e resina perto dos armazéns, metal quente onde os ferreiros de porto reparam casco de emergência.",
+  "figures": [
+    {
+      "role": "Fiscal de Ancoragem",
+      "name": "Corren Maré-Baixa",
+      "note": "Responsável por decidir quem atraca onde — um poder que, em teoria, é puramente logístico, mas que na prática determina quem consegue vender primeiro e quem espera dias num cais secundário. Aceita subornos abertamente, ao ponto de ter uma tabela informal conhecida por todos os capitães regulares."
+    },
+    {
+      "role": "Chefe dos estivadores",
+      "name": "Bram Costaslargas",
+      "note": "Comanda a maior força de trabalho do cais e é o único que consegue, na prática, contestar as decisões de Corren — se os estivadores dele se recusam a descarregar uma nave, nenhum suborno resolve. Os dois mantêm uma rivalidade profissional que beira o respeito mútuo, nenhum admitindo isso em voz alta."
+    },
+    {
+      "role": "Cambista independente",
+      "name": "Ines Sete-Moedas",
+      "note": "Troca qualquer moeda de qualquer território sem fazer perguntas, o que a torna essencial pro comércio franco e suspeita aos olhos de qualquer autoridade fiscal visitante. Ninguém sabe onde ela guarda as reservas de troca, e ela cultiva esse mistério de propósito."
+    }
+  ],
+  "hook": "Uma nave chegou com carga declarada como têxtil, mas o cheiro que sai dos porões não bate com nada que Bram já viu em décadas de trabalho — ele suspeita de contrabando de algo vivo, mas Corren já aceitou o suborno de ancoragem e não quer reabrir a inspeção.",
+  "secondary_hook": "Ines Sete-Moedas recusou trocar uma quantia grande demais de Cred vindo de um território que está sob sanção comercial em outro lugar do mapa — quem tentou a troca não gostou da recusa e está espalhando pelo cais que ela está ficando velha demais pro ofício.",
+  "detail": "Não existe imposto formal no Cais Principal — existe uma \"taxa de boas-vindas\" informal que todo capitão paga a Corren, cujo valor nunca é o mesmo duas vezes e nunca é questionado abertamente, sob pena de a próxima atracação demorar convenientemente mais.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION"]
+}

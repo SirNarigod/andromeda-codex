@@ -1,0 +1,221 @@
+{
+ "generator": "tools/gen_web_data.py",
+ "sources": [
+  {
+   "path": "01_LORE/CANON_DERIVADO_ATIVO/GEOGRAFIA/STELLAR_TERRAIN_TRAVEL_SYSTEM_DEV_V1_0.json",
+   "sha16": "53a54df83cbc32e4"
+  },
+  {
+   "path": "01_LORE/CANON_DERIVADO_ATIVO/GEOGRAFIA/STELLAR_REGION_COORDINATE_INDEX_DEV_V1_0.json",
+   "sha16": "358e40390c5c9488"
+  },
+  {
+   "path": "01_LORE/CANON_DERIVADO_ATIVO/GEOGRAFIA/STELLAR_ROUTE_NETWORK_DEV_V1_0.json",
+   "sha16": "c575b5b575eef882"
+  },
+  {
+   "path": "01_LORE/CANON_DERIVADO_ATIVO/GEOGRAFIA/STELLAR_LANDSCAPE_FEATURES_INDEX_DEV_V1_0.json",
+   "sha16": "14afd93fbb7542c8"
+  },
+  {
+   "path": "04_MECANICAS/CRIATURAS/MAR_BESTIARY_GAMEPLAY_STATS_DEV_V1_0.json",
+   "sha16": "afc3cd3ebe3c6efe"
+  },
+  {
+   "path": "04_MECANICAS\\NPCS\\MAR_NPC_ROSTER_ANDROIDS_DEV_V1_0.json",
+   "sha16": "glob"
+  },
+  {
+   "path": "04_MECANICAS\\NPCS\\MAR_NPC_ROSTER_CORROMPIDOS_DEV_V1_0.json",
+   "sha16": "glob"
+  },
+  {
+   "path": "04_MECANICAS\\NPCS\\MAR_NPC_ROSTER_MAGOS_DEV_V1_0.json",
+   "sha16": "glob"
+  },
+  {
+   "path": "04_MECANICAS\\NPCS\\MAR_NPC_ROSTER_NATIVOS_DEV_V1_0.json",
+   "sha16": "glob"
+  },
+  {
+   "path": "04_MECANICAS\\NPCS\\MAR_NPC_ROSTER_SOLDADOS_DEV_V1_0.json",
+   "sha16": "glob"
+  },
+  {
+   "path": "04_MECANICAS/NPCS/MAR_CORRUPTED_NPC_ROSTER_DEV_V1_0.json",
+   "sha16": "8a8c041dae993b15"
+  },
+  {
+   "path": "04_MECANICAS/NPCS/STELLAR_MINOR_NPC_CATALOG_DEV_V1_0.json",
+   "sha16": "0381c38cbe2347ea"
+  },
+  {
+   "path": "01_LORE/CANON_DERIVADO_ATIVO/SOCIEDADES/CLASSES/MAR_PLAYABLE_CLASSES_LORE_DEV_V1_0.json",
+   "sha16": "51caa55b52efed35"
+  },
+  {
+   "path": "04_MECANICAS/ITENS_E_ARMAS/MAR_CLASS_ARMAMENT_MATRIX_DEV_V1_0.json",
+   "sha16": "61ab2209feb56c63"
+  },
+  {
+   "path": "04_MECANICAS/ITENS_E_ARMAS/MAR_CLASS_ARMAMENT_MATRIX_DEV_V1_0.json",
+   "sha16": "61ab2209feb56c63"
+  },
+  {
+   "path": "04_MECANICAS\\QUESTS_DINAMICAS\\QUEST_TER-001_V1_0.json",
+   "sha16": "glob"
+  },
+  {
+   "path": "04_MECANICAS\\QUESTS_DINAMICAS\\QUEST_TER-002_V1_0.json",
+   "sha16": "glob"
+  },
+  {
+   "path": "04_MECANICAS\\QUESTS_DINAMICAS\\QUEST_TER-003_V1_0.json",
+   "sha16": "glob"
+  },
+  {
+   "path": "04_MECANICAS\\QUESTS_DINAMICAS\\QUEST_TER-004_V1_0.json",
+   "sha16": "glob"
+  },
+  {
+   "path": "04_MECANICAS\\QUESTS_DINAMICAS\\QUEST_TER-005_V1_0.json",
+   "sha16": "glob"
+  },
+  {
+   "path": "04_MECANICAS\\QUESTS_DINAMICAS\\QUEST_TER-006_V1_0.json",
+   "sha16": "glob"
+  },
+  {
+   "path": "04_MECANICAS\\QUESTS_DINAMICAS\\QUEST_TER-007_V1_0.json",
+   "sha16": "glob"
+  },
+  {
+   "path": "04_MECANICAS\\QUESTS_DINAMICAS\\QUEST_TER-008_V1_0.json",
+   "sha16": "glob"
+  },
+  {
+   "path": "04_MECANICAS\\QUESTS_DINAMICAS\\QUEST_TER-009_V1_0.json",
+   "sha16": "glob"
+  },
+  {
+   "path": "04_MECANICAS\\QUESTS_DINAMICAS\\QUEST_TER-010_V1_0.json",
+   "sha16": "glob"
+  },
+  {
+   "path": "04_MECANICAS\\QUESTS_DINAMICAS\\QUEST_TER-011_V1_0.json",
+   "sha16": "glob"
+  },
+  {
+   "path": "04_MECANICAS\\QUESTS_DINAMICAS\\QUEST_TER-012_V1_0.json",
+   "sha16": "glob"
+  },
+  {
+   "path": "04_MECANICAS\\QUESTS_DINAMICAS\\QUEST_TER-013_V1_0.json",
+   "sha16": "glob"
+  },
+  {
+   "path": "04_MECANICAS\\QUESTS_DINAMICAS\\QUEST_TER-014_V1_0.json",
+   "sha16": "glob"
+  },
+  {
+   "path": "04_MECANICAS\\QUESTS_DINAMICAS\\QUEST_TER-015_V1_0.json",
+   "sha16": "glob"
+  },
+  {
+   "path": "04_MECANICAS\\QUESTS_DINAMICAS\\QUEST_TER-016_V1_0.json",
+   "sha16": "glob"
+  },
+  {
+   "path": "04_MECANICAS\\QUESTS_DINAMICAS\\QUEST_TER-017_V1_0.json",
+   "sha16": "glob"
+  },
+  {
+   "path": "04_MECANICAS\\QUESTS_DINAMICAS\\QUEST_TER-018_V1_0.json",
+   "sha16": "glob"
+  },
+  {
+   "path": "04_MECANICAS\\QUESTS_DINAMICAS\\QUEST_TER-019_V1_0.json",
+   "sha16": "glob"
+  },
+  {
+   "path": "04_MECANICAS\\QUESTS_DINAMICAS\\QUEST_TER-020_V1_0.json",
+   "sha16": "glob"
+  },
+  {
+   "path": "04_MECANICAS\\QUESTS_DINAMICAS\\VARGA_CONTRATO_DE_TRAVESSIA_V1.json",
+   "sha16": "glob"
+  },
+  {
+   "path": "01_LORE/CANON_DERIVADO_ATIVO/AGRICULTURA/AGZ_INDEX_DEV_V1_0.json",
+   "sha16": "f87dd6cba27ebd11"
+  },
+  {
+   "path": "01_LORE/CANON_DERIVADO_ATIVO/AGRICULTURA/AGZ_EXTENSION_098_103_DEV_V1_0.json",
+   "sha16": "6b53a2e47aa6997b"
+  },
+  {
+   "path": "04_MECANICAS/ECONOMIA_E_RECURSOS/MINERAL_RESOURCE_LOCALITY_LINKS_DEV_V1_0.json",
+   "sha16": "9c4bb26946aad051"
+  },
+  {
+   "path": "01_LORE/CANON_DERIVADO_ATIVO/GEOGRAFIA/TERRAS_LIVRES/SUBREGIOES/VARGA_VERTICAL_SLICE_MAP_V1.json",
+   "sha16": "4e43f813bbea7219"
+  },
+  {
+   "path": "04_MECANICAS/ECONOMIA_E_RECURSOS/STELLAR_MEDICINE_CATALOG_DEV_V1_0.json",
+   "sha16": "87f7e9f371d649a4"
+  },
+  {
+   "path": "04_MECANICAS/ECONOMIA_E_RECURSOS/STELLAR_SUPPORT_EQUIPMENT_DEV_V1_0.json",
+   "sha16": "ab0da890a1dc875b"
+  },
+  {
+   "path": "04_MECANICAS/ECONOMIA_E_RECURSOS/STELLAR_ARMOR_CATALOG_DEV_V1_0.json",
+   "sha16": "b556b20e7a26349d"
+  },
+  {
+   "path": "04_MECANICAS/ITENS_E_ARMAS/VARGA_STARTER_KIT_V1.json",
+   "sha16": "813b6c819a3f629e"
+  },
+  {
+   "path": "04_MECANICAS/ECONOMIA_E_RECURSOS/STELLAR_CURRENCY_SYSTEM_DEV_V1_0.json",
+   "sha16": "0ccdae4a27267ae8"
+  },
+  {
+   "path": "04_MECANICAS/ECONOMIA_E_RECURSOS/STELLAR_SYSTEMIC_ECONOMY_STATE_DEV_V1_0.json",
+   "sha16": "3658ad77cb78f337"
+  },
+  {
+   "path": "01_LORE/CANON_MASTER_V2/FAUNA/MASTER_FAUNA_DISTRIBUTION_V2_0_0.json",
+   "sha16": "d0b6d3d4e64f8af6"
+  },
+  {
+   "path": "04_MECANICAS/INIMIGOS_E_COMBATE/STELLAR_ENCOUNTER_CATALOG_V1_0.json",
+   "sha16": "282895592edf7a7b"
+  }
+ ],
+ "counts": {
+  "territories": 20,
+  "routes": 62,
+  "landscapes": 68,
+  "creatures": 32,
+  "npcs": 58,
+  "civilians": 33,
+  "classes": 5,
+  "packs": 3,
+  "skills": 39,
+  "quests": 21,
+  "est": 68,
+  "agz": 14,
+  "minerals": 16,
+  "bands": 5,
+  "weapons": 96,
+  "varga": 6,
+  "items": 32,
+  "currencies": 20,
+  "econ": 19,
+  "fauna": 13,
+  "enc_profiles": 14,
+  "conditions": 4
+ }
+}

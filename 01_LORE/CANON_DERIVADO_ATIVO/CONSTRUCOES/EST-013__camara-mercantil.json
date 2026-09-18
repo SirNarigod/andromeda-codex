@@ -1,0 +1,34 @@
+{
+  "est_id": "EST-013",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Câmara Mercantil",
+  "building_type": "INSTITUCIONAL",
+  "parent_locality": "LOC-001-003",
+  "parent_subregion": "SUB-001-003",
+  "parent_political_unit": "TER-001",
+  "function": "Sede de deliberação das casas mercantis da confederação.",
+  "economic_role": {
+    "is_vendor": false,
+    "sells": [],
+    "produces": [],
+    "regulation_factor": 0.5
+  },
+  "capacity": {
+    "jobs": 6,
+    "residents": 0
+  },
+  "professions_linked": [],
+  "notable_link": "Elyra Vaelor; Câmara dos Mercadores (SUB-001-003)",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "PEDRA_E_ALVENARIA",
+    "flammability": "BAIXA",
+    "recovery_days": 7
+  }
+}

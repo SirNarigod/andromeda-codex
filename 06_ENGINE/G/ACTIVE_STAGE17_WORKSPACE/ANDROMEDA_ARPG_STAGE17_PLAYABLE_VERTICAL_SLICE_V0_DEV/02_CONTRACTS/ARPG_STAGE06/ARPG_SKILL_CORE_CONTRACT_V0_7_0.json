@@ -1,0 +1,38 @@
+{
+  "record_id": "ARPG-SKILL-SYSTEM-CONTRACT-V0.7.0",
+  "stage": "06/20",
+  "version": "V0.7.0",
+  "status": "IMPLEMENTED_TEST_PENDING_FINAL_SEAL",
+  "authority": "ARPG_SKILLS_BUILD_PROGRESSION_GAMEPLAY_DERIVATION",
+  "class_model": "FIXED_5_CLASS_ARMAMENT_FAMILY",
+  "class_model_note": "Corrigido na auditoria de 13/09 - este contrato ainda citava a decisao V0_1_0 (EMERGENT_FROM_PLAYER_CHOICES), ja substituida por ARPG_AUTHORIAL_DECISIONS_V0_2_0 (4 classes fixas por familia de arma) e V0_3_0 (+Corrompidos, 5a classe). Ver 10_ARPG/00_GOVERNANCE/ e 04_MECANICAS/ITENS_E_ARMAS/MAR_CLASS_ARMAMENT_MATRIX_DEV_V1_0.json.",
+  "catalog": {
+    "canonical_magic_sources": 30,
+    "canonical_source_policy": "MASTER_READ_ONLY_NOT_AUTO_CASTABLE",
+    "gameplay_skill_prototypes": 6,
+    "prototype_policy": "GAMEPLAY_DERIVED_REPLACEABLE"
+  },
+  "loadout": {
+    "active_slots": 8,
+    "passive_slots": 4
+  },
+  "progression": {
+    "skill_ranks": "1_TO_10_BY_USE_MASTERY",
+    "mastery_per_successful_use": 10,
+    "passive_related_practice": 2,
+    "fixed_class": "Nativos | Soldados | Androids | Magos | Corrompidos (ver MAR_CLASS_ARMAMENT_MATRIX_DEV_V1_0.json)"
+  },
+  "integration": {
+    "character": "level/vitals authority remains CharacterCore",
+    "combat": "skill attacks use deterministic CombatCore extension",
+    "resources": "skill costs/cooldowns use ARPGResourceCore.reserve_action",
+    "items": "equipment modifiers remain additive and independent",
+    "godot": "13_GODOT_ARPG_STAGE17/scripts/interaction/skill_client.gd criado na integracao de 13/09 (projeta snapshot/prepara intent, mesmo padrao de inventory_client.gd). Fase 7.1 (14/09) ligou a metade servidor: andromeda_authority_adapter.py agora expoe 'skill_projection' no snapshot ({active_slots[8], passive_slots[4], skills{skill_ref:{rank,mastery_progress}}}, exatamente o formato ja esperado por skill_client.gd#_validate_snapshot_shape) e aceita o comando REQUEST_USE_SKILL, delegando 100% a ARPGSkillCore.use_skill() ja protegido (nenhuma logica de rank/custo/cooldown nova no adapter). Confirmado ao vivo: aprender+atribuir skill via engine, snapshot reflete o estado real, REQUEST_USE_SKILL sem alvo retorna SKILL_TARGET_REQUIRED (rejeicao real de negocio, nao stub). AINDA PENDENTE: apenas USO esta exposto como comando de jogador - aprender skill (learn_skill) e atribuir slots ativos/passivos (assign_active/activate_passive) continuam sem command_type proprio, porque skill_client.gd em si so implementa request_use_skill do lado cliente; expandir isso e trabalho futuro, nao fingido como pronto aqui."
+  },
+  "canon_guard": {
+    "MAG_records": "identity/effect text preserved from Master; no numeric combat mapping inferred",
+    "runes": "not auto-applied by Stage06",
+    "canonical_skill_runtime_mapping": "AUTHORIAL_OR_LATER_SYSTEM_MAPPING_REQUIRED"
+  },
+  "art_dependency": "NONE_PLACEHOLDER_READY"
+}

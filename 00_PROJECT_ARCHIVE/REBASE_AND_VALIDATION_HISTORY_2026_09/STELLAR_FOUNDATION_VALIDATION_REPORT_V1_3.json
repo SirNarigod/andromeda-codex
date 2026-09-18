@@ -1,0 +1,616 @@
+{
+  "record_id": "STELLAR-FOUNDATION-VALIDATION-REPORT-V1.3",
+  "generated_at": "2026-09-07T02:07:46.2005145Z",
+  "status": "PASS",
+  "foundation_root": "C:\\Users\\thall\\Documents\\ANDROMEDA CODEX\\ANDROMEDA_CODEX_CLEAN",
+  "checked_documents": 26,
+  "proposal_checked": false,
+  "checks": [
+    {
+      "name": "foundation_document_count",
+      "passed": true,
+      "detail": "Expected at least 13 versioned foundation JSON documents; found 26."
+    },
+    {
+      "name": "contract_shape_STELLAR_AUTONOMY_RESPONSIBILITY_LAW_V1_0.json",
+      "passed": true,
+      "detail": "Missing: "
+    },
+    {
+      "name": "version_STELLAR_AUTONOMY_RESPONSIBILITY_LAW_V1_0.json",
+      "passed": true,
+      "detail": "Version must be an approved V1.x version."
+    },
+    {
+      "name": "story_yield_STELLAR_AUTONOMY_RESPONSIBILITY_LAW_V1_0.json",
+      "passed": true,
+      "detail": "Each foundation document needs at least three story generators."
+    },
+    {
+      "name": "contract_shape_STELLAR_CANON_CONSTITUTION_V1_0.json",
+      "passed": true,
+      "detail": "Missing: "
+    },
+    {
+      "name": "version_STELLAR_CANON_CONSTITUTION_V1_0.json",
+      "passed": true,
+      "detail": "Version must be an approved V1.x version."
+    },
+    {
+      "name": "story_yield_STELLAR_CANON_CONSTITUTION_V1_0.json",
+      "passed": true,
+      "detail": "Each foundation document needs at least three story generators."
+    },
+    {
+      "name": "contract_shape_STELLAR_CANON_CONSTITUTION_V1_1.json",
+      "passed": true,
+      "detail": "Missing: "
+    },
+    {
+      "name": "version_STELLAR_CANON_CONSTITUTION_V1_1.json",
+      "passed": true,
+      "detail": "Version must be an approved V1.x version."
+    },
+    {
+      "name": "story_yield_STELLAR_CANON_CONSTITUTION_V1_1.json",
+      "passed": true,
+      "detail": "Each foundation document needs at least three story generators."
+    },
+    {
+      "name": "contract_shape_STELLAR_CAUSALITY_LAW_V1_0.json",
+      "passed": true,
+      "detail": "Missing: "
+    },
+    {
+      "name": "version_STELLAR_CAUSALITY_LAW_V1_0.json",
+      "passed": true,
+      "detail": "Version must be an approved V1.x version."
+    },
+    {
+      "name": "story_yield_STELLAR_CAUSALITY_LAW_V1_0.json",
+      "passed": true,
+      "detail": "Each foundation document needs at least three story generators."
+    },
+    {
+      "name": "contract_shape_STELLAR_ECONOMY_ECOLOGY_TIME_LAW_V1_0.json",
+      "passed": true,
+      "detail": "Missing: "
+    },
+    {
+      "name": "version_STELLAR_ECONOMY_ECOLOGY_TIME_LAW_V1_0.json",
+      "passed": true,
+      "detail": "Version must be an approved V1.x version."
+    },
+    {
+      "name": "story_yield_STELLAR_ECONOMY_ECOLOGY_TIME_LAW_V1_0.json",
+      "passed": true,
+      "detail": "Each foundation document needs at least three story generators."
+    },
+    {
+      "name": "contract_shape_STELLAR_FOUNDATION_INDEX_V1_0.json",
+      "passed": true,
+      "detail": "Missing: "
+    },
+    {
+      "name": "version_STELLAR_FOUNDATION_INDEX_V1_0.json",
+      "passed": true,
+      "detail": "Version must be an approved V1.x version."
+    },
+    {
+      "name": "story_yield_STELLAR_FOUNDATION_INDEX_V1_0.json",
+      "passed": true,
+      "detail": "Each foundation document needs at least three story generators."
+    },
+    {
+      "name": "contract_shape_STELLAR_FOUNDATION_INDEX_V1_1.json",
+      "passed": true,
+      "detail": "Missing: "
+    },
+    {
+      "name": "version_STELLAR_FOUNDATION_INDEX_V1_1.json",
+      "passed": true,
+      "detail": "Version must be an approved V1.x version."
+    },
+    {
+      "name": "story_yield_STELLAR_FOUNDATION_INDEX_V1_1.json",
+      "passed": true,
+      "detail": "Each foundation document needs at least three story generators."
+    },
+    {
+      "name": "contract_shape_STELLAR_FOUNDATION_INDEX_V1_2.json",
+      "passed": true,
+      "detail": "Missing: "
+    },
+    {
+      "name": "version_STELLAR_FOUNDATION_INDEX_V1_2.json",
+      "passed": true,
+      "detail": "Version must be an approved V1.x version."
+    },
+    {
+      "name": "story_yield_STELLAR_FOUNDATION_INDEX_V1_2.json",
+      "passed": true,
+      "detail": "Each foundation document needs at least three story generators."
+    },
+    {
+      "name": "contract_shape_STELLAR_FOUNDATION_INDEX_V1_3.json",
+      "passed": true,
+      "detail": "Missing: "
+    },
+    {
+      "name": "version_STELLAR_FOUNDATION_INDEX_V1_3.json",
+      "passed": true,
+      "detail": "Version must be an approved V1.x version."
+    },
+    {
+      "name": "story_yield_STELLAR_FOUNDATION_INDEX_V1_3.json",
+      "passed": true,
+      "detail": "Each foundation document needs at least three story generators."
+    },
+    {
+      "name": "contract_shape_STELLAR_INFORMATION_MEMORY_LAW_V1_0.json",
+      "passed": true,
+      "detail": "Missing: "
+    },
+    {
+      "name": "version_STELLAR_INFORMATION_MEMORY_LAW_V1_0.json",
+      "passed": true,
+      "detail": "Version must be an approved V1.x version."
+    },
+    {
+      "name": "story_yield_STELLAR_INFORMATION_MEMORY_LAW_V1_0.json",
+      "passed": true,
+      "detail": "Each foundation document needs at least three story generators."
+    },
+    {
+      "name": "contract_shape_STELLAR_INSTITUTION_CULTURE_LAW_V1_0.json",
+      "passed": true,
+      "detail": "Missing: "
+    },
+    {
+      "name": "version_STELLAR_INSTITUTION_CULTURE_LAW_V1_0.json",
+      "passed": true,
+      "detail": "Version must be an approved V1.x version."
+    },
+    {
+      "name": "story_yield_STELLAR_INSTITUTION_CULTURE_LAW_V1_0.json",
+      "passed": true,
+      "detail": "Each foundation document needs at least three story generators."
+    },
+    {
+      "name": "contract_shape_STELLAR_LIFE_DEATH_REBIRTH_LAW_V1_0.json",
+      "passed": true,
+      "detail": "Missing: "
+    },
+    {
+      "name": "version_STELLAR_LIFE_DEATH_REBIRTH_LAW_V1_0.json",
+      "passed": true,
+      "detail": "Version must be an approved V1.x version."
+    },
+    {
+      "name": "story_yield_STELLAR_LIFE_DEATH_REBIRTH_LAW_V1_0.json",
+      "passed": true,
+      "detail": "Each foundation document needs at least three story generators."
+    },
+    {
+      "name": "contract_shape_STELLAR_LORE_PROPOSAL_GUARD_V1_0.json",
+      "passed": true,
+      "detail": "Missing: "
+    },
+    {
+      "name": "version_STELLAR_LORE_PROPOSAL_GUARD_V1_0.json",
+      "passed": true,
+      "detail": "Version must be an approved V1.x version."
+    },
+    {
+      "name": "story_yield_STELLAR_LORE_PROPOSAL_GUARD_V1_0.json",
+      "passed": true,
+      "detail": "Each foundation document needs at least three story generators."
+    },
+    {
+      "name": "contract_shape_STELLAR_LORE_PROPOSAL_GUARD_V1_1.json",
+      "passed": true,
+      "detail": "Missing: "
+    },
+    {
+      "name": "version_STELLAR_LORE_PROPOSAL_GUARD_V1_1.json",
+      "passed": true,
+      "detail": "Version must be an approved V1.x version."
+    },
+    {
+      "name": "story_yield_STELLAR_LORE_PROPOSAL_GUARD_V1_1.json",
+      "passed": true,
+      "detail": "Each foundation document needs at least three story generators."
+    },
+    {
+      "name": "contract_shape_STELLAR_MAGIC_TECHNOLOGY_LAW_V1_0.json",
+      "passed": true,
+      "detail": "Missing: "
+    },
+    {
+      "name": "version_STELLAR_MAGIC_TECHNOLOGY_LAW_V1_0.json",
+      "passed": true,
+      "detail": "Version must be an approved V1.x version."
+    },
+    {
+      "name": "story_yield_STELLAR_MAGIC_TECHNOLOGY_LAW_V1_0.json",
+      "passed": true,
+      "detail": "Each foundation document needs at least three story generators."
+    },
+    {
+      "name": "contract_shape_STELLAR_MAGIC_TECHNOLOGY_LAW_V1_1.json",
+      "passed": true,
+      "detail": "Missing: "
+    },
+    {
+      "name": "version_STELLAR_MAGIC_TECHNOLOGY_LAW_V1_1.json",
+      "passed": true,
+      "detail": "Version must be an approved V1.x version."
+    },
+    {
+      "name": "story_yield_STELLAR_MAGIC_TECHNOLOGY_LAW_V1_1.json",
+      "passed": true,
+      "detail": "Each foundation document needs at least three story generators."
+    },
+    {
+      "name": "contract_shape_STELLAR_OPEN_QUESTIONS_REGISTER_V1_0.json",
+      "passed": true,
+      "detail": "Missing: "
+    },
+    {
+      "name": "version_STELLAR_OPEN_QUESTIONS_REGISTER_V1_0.json",
+      "passed": true,
+      "detail": "Version must be an approved V1.x version."
+    },
+    {
+      "name": "story_yield_STELLAR_OPEN_QUESTIONS_REGISTER_V1_0.json",
+      "passed": true,
+      "detail": "Each foundation document needs at least three story generators."
+    },
+    {
+      "name": "contract_shape_STELLAR_OPEN_QUESTIONS_REGISTER_V1_1.json",
+      "passed": true,
+      "detail": "Missing: "
+    },
+    {
+      "name": "version_STELLAR_OPEN_QUESTIONS_REGISTER_V1_1.json",
+      "passed": true,
+      "detail": "Version must be an approved V1.x version."
+    },
+    {
+      "name": "story_yield_STELLAR_OPEN_QUESTIONS_REGISTER_V1_1.json",
+      "passed": true,
+      "detail": "Each foundation document needs at least three story generators."
+    },
+    {
+      "name": "contract_shape_STELLAR_PROGRESSION_QUEST_CONSEQUENCE_LAW_V1_0.json",
+      "passed": true,
+      "detail": "Missing: "
+    },
+    {
+      "name": "version_STELLAR_PROGRESSION_QUEST_CONSEQUENCE_LAW_V1_0.json",
+      "passed": true,
+      "detail": "Version must be an approved V1.x version."
+    },
+    {
+      "name": "story_yield_STELLAR_PROGRESSION_QUEST_CONSEQUENCE_LAW_V1_0.json",
+      "passed": true,
+      "detail": "Each foundation document needs at least three story generators."
+    },
+    {
+      "name": "contract_shape_STELLAR_ROOT_PROGRESSION_LAW_V1_0.json",
+      "passed": true,
+      "detail": "Missing: "
+    },
+    {
+      "name": "version_STELLAR_ROOT_PROGRESSION_LAW_V1_0.json",
+      "passed": true,
+      "detail": "Version must be an approved V1.x version."
+    },
+    {
+      "name": "story_yield_STELLAR_ROOT_PROGRESSION_LAW_V1_0.json",
+      "passed": true,
+      "detail": "Each foundation document needs at least three story generators."
+    },
+    {
+      "name": "contract_shape_STELLAR_SOVEREIGNTY_TERRITORY_LAW_V1_0.json",
+      "passed": true,
+      "detail": "Missing: "
+    },
+    {
+      "name": "version_STELLAR_SOVEREIGNTY_TERRITORY_LAW_V1_0.json",
+      "passed": true,
+      "detail": "Version must be an approved V1.x version."
+    },
+    {
+      "name": "story_yield_STELLAR_SOVEREIGNTY_TERRITORY_LAW_V1_0.json",
+      "passed": true,
+      "detail": "Each foundation document needs at least three story generators."
+    },
+    {
+      "name": "contract_shape_STELLAR_SOVEREIGNTY_TERRITORY_LAW_V1_1.json",
+      "passed": true,
+      "detail": "Missing: "
+    },
+    {
+      "name": "version_STELLAR_SOVEREIGNTY_TERRITORY_LAW_V1_1.json",
+      "passed": true,
+      "detail": "Version must be an approved V1.x version."
+    },
+    {
+      "name": "story_yield_STELLAR_SOVEREIGNTY_TERRITORY_LAW_V1_1.json",
+      "passed": true,
+      "detail": "Each foundation document needs at least three story generators."
+    },
+    {
+      "name": "contract_shape_STELLAR_SYMBIOSIS_LAW_V1_0.json",
+      "passed": true,
+      "detail": "Missing: "
+    },
+    {
+      "name": "version_STELLAR_SYMBIOSIS_LAW_V1_0.json",
+      "passed": true,
+      "detail": "Version must be an approved V1.x version."
+    },
+    {
+      "name": "story_yield_STELLAR_SYMBIOSIS_LAW_V1_0.json",
+      "passed": true,
+      "detail": "Each foundation document needs at least three story generators."
+    },
+    {
+      "name": "contract_shape_STELLAR_COSMOLOGY_CANON_V1_0.json",
+      "passed": true,
+      "detail": "Missing: "
+    },
+    {
+      "name": "version_STELLAR_COSMOLOGY_CANON_V1_0.json",
+      "passed": true,
+      "detail": "Version must be an approved V1.x version."
+    },
+    {
+      "name": "story_yield_STELLAR_COSMOLOGY_CANON_V1_0.json",
+      "passed": true,
+      "detail": "Each foundation document needs at least three story generators."
+    },
+    {
+      "name": "contract_shape_STELLAR_COSMOLOGY_CANON_V1_1.json",
+      "passed": true,
+      "detail": "Missing: "
+    },
+    {
+      "name": "version_STELLAR_COSMOLOGY_CANON_V1_1.json",
+      "passed": true,
+      "detail": "Version must be an approved V1.x version."
+    },
+    {
+      "name": "story_yield_STELLAR_COSMOLOGY_CANON_V1_1.json",
+      "passed": true,
+      "detail": "Each foundation document needs at least three story generators."
+    },
+    {
+      "name": "contract_shape_STELLAR_COSMOLOGY_CANON_V1_2.json",
+      "passed": true,
+      "detail": "Missing: "
+    },
+    {
+      "name": "version_STELLAR_COSMOLOGY_CANON_V1_2.json",
+      "passed": true,
+      "detail": "Version must be an approved V1.x version."
+    },
+    {
+      "name": "story_yield_STELLAR_COSMOLOGY_CANON_V1_2.json",
+      "passed": true,
+      "detail": "Each foundation document needs at least three story generators."
+    },
+    {
+      "name": "foundation_index_exists",
+      "passed": true,
+      "detail": "Active STELLAR_FOUNDATION_INDEX_V1_3 is required."
+    },
+    {
+      "name": "indexed_path_STELLAR_COSMOLOGY_CANON_V1_2",
+      "passed": true,
+      "detail": "C:\\Users\\thall\\Documents\\ANDROMEDA CODEX\\ANDROMEDA_CODEX_CLEAN\\01_LORE\\STELLAR_FOUNDATION\\STELLAR_COSMOLOGY_CANON_V1_2.json"
+    },
+    {
+      "name": "indexed_path_STELLAR_CANON_CONSTITUTION_V1_1",
+      "passed": true,
+      "detail": "C:\\Users\\thall\\Documents\\ANDROMEDA CODEX\\ANDROMEDA_CODEX_CLEAN\\02_REGRAS\\STELLAR_FOUNDATION\\STELLAR_CANON_CONSTITUTION_V1_1.json"
+    },
+    {
+      "name": "indexed_path_STELLAR_MAGIC_TECHNOLOGY_LAW_V1_1",
+      "passed": true,
+      "detail": "C:\\Users\\thall\\Documents\\ANDROMEDA CODEX\\ANDROMEDA_CODEX_CLEAN\\02_REGRAS\\STELLAR_FOUNDATION\\STELLAR_MAGIC_TECHNOLOGY_LAW_V1_1.json"
+    },
+    {
+      "name": "indexed_path_STELLAR_SYMBIOSIS_LAW_V1_0",
+      "passed": true,
+      "detail": "C:\\Users\\thall\\Documents\\ANDROMEDA CODEX\\ANDROMEDA_CODEX_CLEAN\\02_REGRAS\\STELLAR_FOUNDATION\\STELLAR_SYMBIOSIS_LAW_V1_0.json"
+    },
+    {
+      "name": "indexed_path_STELLAR_ROOT_PROGRESSION_LAW_V1_0",
+      "passed": true,
+      "detail": "C:\\Users\\thall\\Documents\\ANDROMEDA CODEX\\ANDROMEDA_CODEX_CLEAN\\02_REGRAS\\STELLAR_FOUNDATION\\STELLAR_ROOT_PROGRESSION_LAW_V1_0.json"
+    },
+    {
+      "name": "indexed_path_STELLAR_SOVEREIGNTY_TERRITORY_LAW_V1_1",
+      "passed": true,
+      "detail": "C:\\Users\\thall\\Documents\\ANDROMEDA CODEX\\ANDROMEDA_CODEX_CLEAN\\02_REGRAS\\STELLAR_FOUNDATION\\STELLAR_SOVEREIGNTY_TERRITORY_LAW_V1_1.json"
+    },
+    {
+      "name": "indexed_path_STELLAR_INSTITUTION_CULTURE_LAW_V1_0",
+      "passed": true,
+      "detail": "C:\\Users\\thall\\Documents\\ANDROMEDA CODEX\\ANDROMEDA_CODEX_CLEAN\\02_REGRAS\\STELLAR_FOUNDATION\\STELLAR_INSTITUTION_CULTURE_LAW_V1_0.json"
+    },
+    {
+      "name": "indexed_path_STELLAR_OPEN_QUESTIONS_REGISTER_V1_1",
+      "passed": true,
+      "detail": "C:\\Users\\thall\\Documents\\ANDROMEDA CODEX\\ANDROMEDA_CODEX_CLEAN\\02_REGRAS\\STELLAR_FOUNDATION\\STELLAR_OPEN_QUESTIONS_REGISTER_V1_1.json"
+    },
+    {
+      "name": "indexed_path_STELLAR_LORE_PROPOSAL_GUARD_V1_1",
+      "passed": true,
+      "detail": "C:\\Users\\thall\\Documents\\ANDROMEDA CODEX\\ANDROMEDA_CODEX_CLEAN\\02_REGRAS\\STELLAR_FOUNDATION\\STELLAR_LORE_PROPOSAL_GUARD_V1_1.json"
+    },
+    {
+      "name": "protected_topic_NO_OFFICIAL_RELIGION",
+      "passed": true,
+      "detail": "Foundation must explicitly protect NO_OFFICIAL_RELIGION."
+    },
+    {
+      "name": "protected_topic_NO_OFFICIAL_LANGUAGE",
+      "passed": true,
+      "detail": "Foundation must explicitly protect NO_OFFICIAL_LANGUAGE."
+    },
+    {
+      "name": "kenua_binding_r2_protected",
+      "passed": true,
+      "detail": "Active foundation must protect R2 Kenua facts from unsourced retcons."
+    },
+    {
+      "name": "generic_kenua_binding_not_active",
+      "passed": true,
+      "detail": "The superseded generic Kenua-binding prohibition cannot be active."
+    },
+    {
+      "name": "r2_authority_index_present",
+      "passed": true,
+      "detail": "C:\\Users\\thall\\Documents\\ANDROMEDA CODEX\\ANDROMEDA_CODEX_CLEAN\\01_LORE\\STELLAR_REBASE_R2\\R2_SOURCE_AUTHORITY_INDEX_V1_0.json"
+    },
+    {
+      "name": "r2_rebase_ledger_present",
+      "passed": true,
+      "detail": "C:\\Users\\thall\\Documents\\ANDROMEDA CODEX\\ANDROMEDA_CODEX_CLEAN\\02_REGRAS\\STELLAR_REBASE_R2\\R2_REBASE_DECISION_LEDGER_V1_2.json"
+    },
+    {
+      "name": "r2_source_hash",
+      "passed": true,
+      "detail": "Projeto Andromeda.zip SHA-256: 257e456a5d0396310ec2355b3dfc0f11f4e0a5264cf6e764591c8760f5070cb0"
+    },
+    {
+      "name": "lot2_magic_law_present",
+      "passed": true,
+      "detail": "STELLAR_MAGIC_TECHNOLOGY_LAW_V1_1 is required."
+    },
+    {
+      "name": "lot2_symbiosis_law_present",
+      "passed": true,
+      "detail": "STELLAR_SYMBIOSIS_LAW_V1_0 is required."
+    },
+    {
+      "name": "lot2_root_law_present",
+      "passed": true,
+      "detail": "STELLAR_ROOT_PROGRESSION_LAW_V1_0 is required."
+    },
+    {
+      "name": "lot2_cosmology_present",
+      "passed": true,
+      "detail": "STELLAR_COSMOLOGY_CANON_V1_2 is required."
+    },
+    {
+      "name": "lot2_derived_magic_catalog",
+      "passed": true,
+      "detail": "MAG-008 through MAG-030 must contain 23 derived practices."
+    },
+    {
+      "name": "lot2_magic_finite",
+      "passed": true,
+      "detail": "Magic must transform existing energy."
+    },
+    {
+      "name": "lot2_kenua_no_auto_unlock",
+      "passed": true,
+      "detail": "Kenua cannot receive automatic Season 1 practices."
+    },
+    {
+      "name": "lot2_symbiosis_thresholds",
+      "passed": true,
+      "detail": "Six R2 symbiosis threshold bands are required."
+    },
+    {
+      "name": "lot2_symbiosis_agency",
+      "passed": true,
+      "detail": "Kenua agency must remain invariant."
+    },
+    {
+      "name": "lot2_material_traces",
+      "passed": true,
+      "detail": "Five material trace categories are required."
+    },
+    {
+      "name": "lot2_root_phases",
+      "passed": true,
+      "detail": "Six R2 Root phases are required."
+    },
+    {
+      "name": "lot2_root_harvest_gate",
+      "passed": true,
+      "detail": "Harvest must require authorial gate."
+    },
+    {
+      "name": "lot2_offline_irreversible_block",
+      "passed": true,
+      "detail": "Offline irreversible destruction must be blocked."
+    },
+    {
+      "name": "lot2_amadon_pre_e8_block",
+      "passed": true,
+      "detail": "Amadon must be blocked before Episode 8."
+    },
+    {
+      "name": "lot2_amadon_post_e8_counsellor",
+      "passed": true,
+      "detail": "Post-Episode-8 counsellor rule is required."
+    },
+    {
+      "name": "lot3_territory_law_present",
+      "passed": true,
+      "detail": "STELLAR_SOVEREIGNTY_TERRITORY_LAW_V1_1 is required."
+    },
+    {
+      "name": "lot3_institution_law_present",
+      "passed": true,
+      "detail": "STELLAR_INSTITUTION_CULTURE_LAW_V1_0 is required."
+    },
+    {
+      "name": "lot3_no_planetary_government",
+      "passed": true,
+      "detail": "Territory law must preserve no planetary government."
+    },
+    {
+      "name": "lot3_runtime_boundary_block",
+      "passed": true,
+      "detail": "Runtime boundary mutation must be blocked."
+    },
+    {
+      "name": "lot3_terras_livres",
+      "passed": true,
+      "detail": "Terras Livres must remain initial playable country."
+    },
+    {
+      "name": "lot3_faction_pending_block",
+      "passed": true,
+      "detail": "FAC-009 and FAC-010 must remain pending."
+    },
+    {
+      "name": "lot3_no_official_language",
+      "passed": true,
+      "detail": "Official language cannot be inferred."
+    },
+    {
+      "name": "lot3_no_network_sovereignty",
+      "passed": true,
+      "detail": "Institutional networks cannot become planetary government."
+    },
+    {
+      "name": "master_baseline_present",
+      "passed": true,
+      "detail": "Master V2.0.1 seal must remain present."
+    },
+    {
+      "name": "living_baseline_present",
+      "passed": true,
+      "detail": "Living Simulation Engine V1.0.0 release record must remain present."
+    }
+  ],
+  "errors": []
+}

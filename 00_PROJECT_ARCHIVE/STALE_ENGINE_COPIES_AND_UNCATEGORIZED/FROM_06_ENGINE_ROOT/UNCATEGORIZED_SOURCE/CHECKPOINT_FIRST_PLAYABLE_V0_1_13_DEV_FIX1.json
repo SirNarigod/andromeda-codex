@@ -1,0 +1,36 @@
+{
+  "checkpoint": "FIRST_PLAYABLE_V0_1_13_DEV_FIX1",
+  "parent_checkpoint": "FIRST_PLAYABLE_V0_1_13",
+  "status": "STATIC_VALIDATED_RUNTIME_RETEST_REQUIRED",
+  "reason": "Godot 4.7.1 runtime exposed repeated MoveTargetMarker SceneTree lifecycle errors during movement.",
+  "functional_change_scope": [
+    "Player.gd: MoveTargetMarker lifecycle only"
+  ],
+  "metadata_changes": [
+    "CHANGELOG_V0_1_13_DEV_FIX1.md",
+    "CHECKPOINT_FIRST_PLAYABLE_V0_1_13_DEV_FIX1.json",
+    "SHA256SUMS"
+  ],
+  "preserved_contracts": [
+    "left click short-click move",
+    "left hold follows cursor and release stops",
+    "right click only",
+    "right contextual interaction/attack",
+    "attack cooldown 2.0 s",
+    "inventory hidden by default and toggled with I",
+    "A* navigation",
+    "collisions"
+  ],
+  "static_checks": {
+    "project_still_v0_1_13": true,
+    "attack_interval_2s": true,
+    "inventory_toggle_key_i_contract_present": true,
+    "deferred_marker_add": true,
+    "marker_tree_guard_in_setter": true,
+    "target_action_tree_guard": true,
+    "pending_marker_flush": true,
+    "unsafe_parent_add_removed": true
+  },
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1_RETEST",
+  "promotion_to_v0_1_14": "BLOCKED_UNTIL_RUNTIME_PASS"
+}

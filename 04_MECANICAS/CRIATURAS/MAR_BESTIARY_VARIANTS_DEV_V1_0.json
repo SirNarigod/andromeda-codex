@@ -1,0 +1,465 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "MAR-BESTIARY-VARIANTS-DEV-V1.0",
+  "title": "Variantes de criatura (Normal/Mágica/Alpha) — as 4 criaturas hostis do bestiário",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "canonical_status": "GAMEPLAY_DERIVED_DEV",
+  "supplements": [
+    "MAR_BESTIARY_GAMEPLAY_STATS_DEV_V1_0.json"
+  ],
+  "r2_guard": "Variantes de gameplay das 4 criaturas hostis já catalogadas (CRI-010 a CRI-013). Não altera a ficha R2 de origem nem os stats base do bestiário. NORMAL reproduz os stats já publicados; MÁGICA e ALPHA são escalas de gameplay sobre esses mesmos stats, sem inventar efeito de runa isolado — a variante MÁGICA referencia MAG-003 (Corrente Planetária) apenas como fonte temática de afinidade mágica, e ALPHA usa o papel 'LEADER' já previsto em groups.roles do contrato comportamental.",
+  "scale_note": "MÁGICA ≈ +25% sobre power/threat + magic_affinity alto. ALPHA ≈ +60-70% sobre power/threat, papel de liderança de grupo (HERD/PACK/SWARM conforme ficha base), magic_affinity moderado.",
+  "corrupted_variant_reconciliation_note": "Auditoria de 13/09: existem 2 esquemas de 'criatura corrompida' distintos e não-conflitantes, reconciliados aqui pra evitar confusão futura - (1) a variante CORROMPIDA marcada em CRI-012/CRI-013 neste arquivo é uma ESCALA de uma criatura já existente (mesma base_creature_ref, mesmo padrão de NORMAL/MÁGICA/ALPHA, só que corrompida pela Raiz Profunda em vez de mágica); (2) CRI-020..026 (em MAR_BESTIARY_GAMEPLAY_STATS_DEV_V1_0.json#r2_guard) são 7 criaturas cuja identidade BASE já nasce corrompida, sem contraparte 'normal' — não são variantes de nada, são espécies próprias da Raiz Profunda (fase 58). Nenhum dos dois precisa de correção; só precisavam de referência cruzada explícita.",
+  "variants": [
+    {
+      "variant_id": "CRI-010-NORMAL",
+      "base_creature_ref": "CRI-010",
+      "variant_type": "NORMAL",
+      "stats": {
+        "hp": 15,
+        "defense": 10,
+        "speed": 55,
+        "threat": 50,
+        "magic_affinity": 5
+      },
+      "special_trait": "ferrão com toxina neuromuscular — paralisia curta",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "variant_id": "CRI-010-MAGICA",
+      "base_creature_ref": "CRI-010",
+      "variant_type": "MÁGICA",
+      "stats": {
+        "hp": 19,
+        "defense": 13,
+        "speed": 68,
+        "threat": 63,
+        "magic_affinity": 65
+      },
+      "special_trait": "veio de Corrente Planetária impregna o ferrão — paralisia mais longa",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "variant_id": "CRI-010-ALPHA",
+      "base_creature_ref": "CRI-010",
+      "variant_type": "ALPHA",
+      "stats": {
+        "hp": 26,
+        "defense": 17,
+        "speed": 80,
+        "threat": 85,
+        "magic_affinity": 20
+      },
+      "special_trait": "líder do enxame (papel LEADER); coordena ataques simultâneos de várias vespas",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "variant_id": "CRI-011-NORMAL",
+      "base_creature_ref": "CRI-011",
+      "variant_type": "NORMAL",
+      "stats": {
+        "hp": 20,
+        "defense": 35,
+        "speed": 15,
+        "threat": 35,
+        "magic_affinity": 5
+      },
+      "special_trait": "secreção rubra irritante ao ser esmagado ou ameaçado",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "variant_id": "CRI-011-MAGICA",
+      "base_creature_ref": "CRI-011",
+      "variant_type": "MÁGICA",
+      "stats": {
+        "hp": 25,
+        "defense": 44,
+        "speed": 19,
+        "threat": 44,
+        "magic_affinity": 62
+      },
+      "special_trait": "secreção carregada de Corrente Planetária, irritação mais intensa",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "variant_id": "CRI-011-ALPHA",
+      "base_creature_ref": "CRI-011",
+      "variant_type": "ALPHA",
+      "stats": {
+        "hp": 34,
+        "defense": 58,
+        "speed": 22,
+        "threat": 58,
+        "magic_affinity": 18
+      },
+      "special_trait": "casca reforçada, libera secreção em área maior quando ameaçado",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "variant_id": "CRI-012-NORMAL",
+      "base_creature_ref": "CRI-012",
+      "variant_type": "NORMAL",
+      "stats": {
+        "hp": 35,
+        "defense": 20,
+        "speed": 60,
+        "threat": 65,
+        "magic_affinity": 5
+      },
+      "special_trait": "emboscada camuflada em fendas de pedra",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "variant_id": "CRI-012-MAGICA",
+      "base_creature_ref": "CRI-012",
+      "variant_type": "MÁGICA",
+      "stats": {
+        "hp": 44,
+        "defense": 25,
+        "speed": 75,
+        "threat": 81,
+        "magic_affinity": 64
+      },
+      "special_trait": "camuflagem reforçada por Corrente Planetária, quase invisível em emboscada",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "variant_id": "CRI-012-ALPHA",
+      "base_creature_ref": "CRI-012",
+      "variant_type": "ALPHA",
+      "stats": {
+        "hp": 58,
+        "defense": 33,
+        "speed": 90,
+        "threat": 95,
+        "magic_affinity": 20
+      },
+      "special_trait": "papel LEADER (predador solitário de território expandido), patas dianteiras mais longas",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "variant_id": "CRI-013-NORMAL",
+      "base_creature_ref": "CRI-013",
+      "variant_type": "NORMAL",
+      "stats": {
+        "hp": 20,
+        "defense": 15,
+        "speed": 45,
+        "threat": 75,
+        "magic_affinity": 5
+      },
+      "special_trait": "caça em enxame coordenado por vibração e pressão",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "variant_id": "CRI-013-MAGICA",
+      "base_creature_ref": "CRI-013",
+      "variant_type": "MÁGICA",
+      "stats": {
+        "hp": 25,
+        "defense": 19,
+        "speed": 56,
+        "threat": 90,
+        "magic_affinity": 66
+      },
+      "special_trait": "coordenação de enxame amplificada por afinidade à Corrente Planetária",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "variant_id": "CRI-013-ALPHA",
+      "base_creature_ref": "CRI-013",
+      "variant_type": "ALPHA",
+      "stats": {
+        "hp": 33,
+        "defense": 25,
+        "speed": 68,
+        "threat": 99,
+        "magic_affinity": 20
+      },
+      "special_trait": "papel LEADER do enxame; comanda coordenação de múltiplos grupos simultaneamente",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "variant_id": "CRI-014-NORMAL",
+      "base_creature_ref": "CRI-014",
+      "variant_type": "NORMAL",
+      "stats": {
+        "hp": 25,
+        "defense": 30,
+        "speed": 20,
+        "threat": 40,
+        "magic_affinity": 5
+      },
+      "special_trait": "vapor abrasivo defensivo",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "variant_id": "CRI-014-MAGICA",
+      "base_creature_ref": "CRI-014",
+      "variant_type": "MÁGICA",
+      "stats": {
+        "hp": 31,
+        "defense": 38,
+        "speed": 25,
+        "threat": 50,
+        "magic_affinity": 60
+      },
+      "special_trait": "veio de Corrente Planetária intensifica o vapor — alcance maior",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "variant_id": "CRI-014-ALPHA",
+      "base_creature_ref": "CRI-014",
+      "variant_type": "ALPHA",
+      "stats": {
+        "hp": 42,
+        "defense": 48,
+        "speed": 28,
+        "threat": 68,
+        "magic_affinity": 20
+      },
+      "special_trait": "espécime maior, território de caldeira só seu",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "variant_id": "CRI-015-NORMAL",
+      "base_creature_ref": "CRI-015",
+      "variant_type": "NORMAL",
+      "stats": {
+        "hp": 20,
+        "defense": 25,
+        "speed": 35,
+        "threat": 45,
+        "magic_affinity": 5
+      },
+      "special_trait": "carapaca vitrea, ferrao perfurante",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "variant_id": "CRI-015-MAGICA",
+      "base_creature_ref": "CRI-015",
+      "variant_type": "MAGICA",
+      "stats": {
+        "hp": 25,
+        "defense": 31,
+        "speed": 44,
+        "threat": 56,
+        "magic_affinity": 60
+      },
+      "special_trait": "veio de Corrente Planetaria vitrifica ainda mais a carapaca",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "variant_id": "CRI-015-ALPHA",
+      "base_creature_ref": "CRI-015",
+      "variant_type": "ALPHA",
+      "stats": {
+        "hp": 34,
+        "defense": 40,
+        "speed": 50,
+        "threat": 76,
+        "magic_affinity": 20
+      },
+      "special_trait": "especime maior, domina territorio de caca nas dunas",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "variant_id": "CRI-016-NORMAL",
+      "base_creature_ref": "CRI-016",
+      "variant_type": "NORMAL",
+      "stats": {
+        "hp": 30,
+        "defense": 20,
+        "speed": 50,
+        "threat": 55,
+        "magic_affinity": 5
+      },
+      "special_trait": "caca em matilha coordenada",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "variant_id": "CRI-016-MAGICA",
+      "base_creature_ref": "CRI-016",
+      "variant_type": "MAGICA",
+      "stats": {
+        "hp": 38,
+        "defense": 25,
+        "speed": 63,
+        "threat": 69,
+        "magic_affinity": 60
+      },
+      "special_trait": "veio de Corrente Planetaria confere uivo que desorienta presas",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "variant_id": "CRI-016-ALPHA",
+      "base_creature_ref": "CRI-016",
+      "variant_type": "ALPHA",
+      "stats": {
+        "hp": 50,
+        "defense": 32,
+        "speed": 70,
+        "threat": 92,
+        "magic_affinity": 20
+      },
+      "special_trait": "lider da matilha (papel LEADER); coordena cercos em terreno gelado",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "variant_id": "CRI-017-NORMAL",
+      "base_creature_ref": "CRI-017",
+      "variant_type": "NORMAL",
+      "stats": {
+        "hp": 28,
+        "defense": 18,
+        "speed": 60,
+        "threat": 58,
+        "magic_affinity": 5
+      },
+      "special_trait": "desliza entre correntes de eter",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "variant_id": "CRI-017-MAGICA",
+      "base_creature_ref": "CRI-017",
+      "variant_type": "MAGICA",
+      "stats": {
+        "hp": 35,
+        "defense": 23,
+        "speed": 75,
+        "threat": 73,
+        "magic_affinity": 65
+      },
+      "special_trait": "veio de Corrente Planetaria intensifica a fusao com o eter, quase invisivel em voo",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "variant_id": "CRI-017-ALPHA",
+      "base_creature_ref": "CRI-017",
+      "variant_type": "ALPHA",
+      "stats": {
+        "hp": 47,
+        "defense": 29,
+        "speed": 84,
+        "threat": 96,
+        "magic_affinity": 20
+      },
+      "special_trait": "especime maior, domina uma ilha errante inteira como territorio de caca",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "variant_id": "CRI-018-NORMAL",
+      "base_creature_ref": "CRI-018",
+      "variant_type": "NORMAL",
+      "stats": {
+        "hp": 40,
+        "defense": 30,
+        "speed": 40,
+        "threat": 70,
+        "magic_affinity": 5
+      },
+      "special_trait": "predador de emboscada nas fendas escuras",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "variant_id": "CRI-018-MAGICA",
+      "base_creature_ref": "CRI-018",
+      "variant_type": "MAGICA",
+      "stats": {
+        "hp": 50,
+        "defense": 38,
+        "speed": 50,
+        "threat": 88,
+        "magic_affinity": 65
+      },
+      "special_trait": "veio de Corrente Planetaria intensifica bioluminescencia usada para atrair presas",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "variant_id": "CRI-018-ALPHA",
+      "base_creature_ref": "CRI-018",
+      "variant_type": "ALPHA",
+      "stats": {
+        "hp": 68,
+        "defense": 48,
+        "speed": 56,
+        "threat": 119,
+        "magic_affinity": 20
+      },
+      "special_trait": "especime maior, domina uma secao inteira da Trincheira Profunda",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "variant_id": "CRI-019-NORMAL",
+      "base_creature_ref": "CRI-019",
+      "variant_type": "NORMAL",
+      "stats": {
+        "hp": 32,
+        "defense": 22,
+        "speed": 45,
+        "threat": 60,
+        "magic_affinity": 5
+      },
+      "special_trait": "camuflagem perfeita no pantano",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "variant_id": "CRI-019-MAGICA",
+      "base_creature_ref": "CRI-019",
+      "variant_type": "MAGICA",
+      "stats": {
+        "hp": 40,
+        "defense": 28,
+        "speed": 56,
+        "threat": 75,
+        "magic_affinity": 60
+      },
+      "special_trait": "veio de Corrente Planetaria intensifica a camuflagem, quase invisivel",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "variant_id": "CRI-019-ALPHA",
+      "base_creature_ref": "CRI-019",
+      "variant_type": "ALPHA",
+      "stats": {
+        "hp": 54,
+        "defense": 36,
+        "speed": 63,
+        "threat": 102,
+        "magic_affinity": 20
+      },
+      "special_trait": "especime maior, domina uma secao inteira do Pantano da Serpente",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "variant_id": "CRI-012-CORROMPIDA",
+      "base_creature_ref": "CRI-012",
+      "variant_type": "CORROMPIDA",
+      "stats": {
+        "hp": 53,
+        "defense": 30,
+        "speed": 65,
+        "threat": 98,
+        "magic_affinity": 15
+      },
+      "special_trait": "especime de Fendas da Nevoa (SUB-011-006) tomado pela Raiz Profunda - camuflagem agora inclui filamentos radiculares, emboscada ainda mais letal.",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "official_name_master_v2": "Louva-Fenda Radicular"
+    },
+    {
+      "variant_id": "CRI-013-CORROMPIDA",
+      "base_creature_ref": "CRI-013",
+      "variant_type": "CORROMPIDA",
+      "stats": {
+        "hp": 30,
+        "defense": 22,
+        "speed": 55,
+        "threat": 92,
+        "magic_affinity": 15
+      },
+      "special_trait": "enxame de Fendas da Nevoa (SUB-011-006) corrompido - coordenacao por vibracao agora amplificada por filamentos da Raiz.",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "official_name_master_v2": "Mandíbula-de-Névoa Disrupta"
+    }
+  ]
+}

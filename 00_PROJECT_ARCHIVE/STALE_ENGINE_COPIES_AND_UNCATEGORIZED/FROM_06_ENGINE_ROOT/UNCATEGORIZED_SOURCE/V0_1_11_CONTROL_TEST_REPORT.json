@@ -1,0 +1,21 @@
+{
+  "build": "V0.1.11",
+  "attack_contract": {
+    "interval_s": 2.0,
+    "first_attack_t": 0.0,
+    "repeat_click_t": 0.05,
+    "repeat_click_can_damage": false,
+    "next_legal_attack_t": 2.0,
+    "cooldown_reset_on_target_click": false,
+    "cooldown_reset_on_cancel": false
+  },
+  "pointer_contract": {
+    "left_ground": "hold_move_stop_on_release",
+    "right_ground": "hold_move_stop_on_release",
+    "right_context": "persistent_context_action",
+    "left_transition": "persistent_area_transition",
+    "refresh_s": 0.12,
+    "min_world_delta_m": 0.65
+  },
+  "status": "PASS_STATIC_CONTRACT"
+}

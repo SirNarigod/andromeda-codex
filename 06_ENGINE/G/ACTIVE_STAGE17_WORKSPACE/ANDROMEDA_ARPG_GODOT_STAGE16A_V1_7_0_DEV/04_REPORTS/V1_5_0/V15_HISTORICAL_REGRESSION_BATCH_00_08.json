@@ -1,0 +1,68 @@
+{
+  "record_id": "V15-HISTORICAL-REGRESSION-BATCH",
+  "start": 0,
+  "file_count": 8,
+  "tests": 180,
+  "passed_files": 8,
+  "failed_files": 0,
+  "rows": [
+    {
+      "file": "test_agent_brain.py",
+      "tests": 90,
+      "returncode": 0,
+      "seconds": 5.23,
+      "status": "PASS"
+    },
+    {
+      "file": "test_atlas_access_guard_v1_4.py",
+      "tests": 4,
+      "returncode": 0,
+      "seconds": 1.644,
+      "status": "PASS"
+    },
+    {
+      "file": "test_atlas_living_bridge.py",
+      "tests": 61,
+      "returncode": 0,
+      "seconds": 5.527,
+      "status": "PASS"
+    },
+    {
+      "file": "test_atlas_route_authority_v1_4.py",
+      "tests": 1,
+      "returncode": 0,
+      "seconds": 1.508,
+      "status": "PASS"
+    },
+    {
+      "file": "test_atlas_streaming_invariants_v1_4.py",
+      "tests": 4,
+      "returncode": 0,
+      "seconds": 4.146,
+      "status": "PASS"
+    },
+    {
+      "file": "test_atlas_streaming_v1_4.py",
+      "tests": 7,
+      "returncode": 0,
+      "seconds": 7.776,
+      "status": "PASS"
+    },
+    {
+      "file": "test_combat_determinism_v1_3.py",
+      "tests": 1,
+      "returncode": 0,
+      "seconds": 1.068,
+      "status": "PASS"
+    },
+    {
+      "file": "test_combat_system_v1_1.py",
+      "tests": 12,
+      "returncode": 0,
+      "seconds": 4.444,
+      "status": "PASS"
+    }
+  ],
+  "failures": [],
+  "status": "PASS"
+}

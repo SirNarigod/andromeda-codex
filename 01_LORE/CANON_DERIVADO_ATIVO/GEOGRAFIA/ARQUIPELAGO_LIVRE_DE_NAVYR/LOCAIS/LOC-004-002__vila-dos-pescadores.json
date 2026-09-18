@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-004-002",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Vila dos Pescadores",
+  "parent_subregion": "SUB-004-002",
+  "parent_political_unit": "TER-004",
+  "function": "Comunidade pesqueira típica das ilhas menores.",
+  "notable_link": "Ilhas de Pesca (SUB-004-002)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-004-002",
+  "settlement_tier": "VILA",
+  "history": "A vila existe muito antes de Navyr virar porto franco reconhecido — as famílias de pesca chegaram gerações atrás, atraídas por um cardume que aparecia com regularidade quase absurda numa curva de corrente entre duas ilhas pequenas. O cardume ainda aparece, mas cada vez menos previsível, e os mais velhos discutem abertamente se isso é sinal de as águas estarem mudando ou apenas memória enfeitando o passado.",
+  "sensory": "Casas de madeira envelhecida pelo sal se apoiam umas nas outras sobre palafitas, ligadas por pontes estreitas que rangem sob o peso de qualquer um que não seja criança da vila. Redes secam penduradas entre os postes, e o cheiro de peixe salgado é tão constante que visitantes de fora demoram um dia inteiro pra parar de notar. Ao amanhecer, o som predominante é o bater rítmico de remos contra água — a frota inteira sai junto, uma tradição que ninguém precisa mais explicar aos filhos, só repetir.",
+  "figures": [
+    {
+      "role": "Matriarca da frota",
+      "name": "Ondina Redemalha",
+      "note": "Decide a rota de pesca do dia baseada em sinais que aprendeu da própria mãe — cor da água, comportamento das aves, cheiro do vento — e raramente erra. Está cada vez mais preocupada que nenhum dos netos mostrou interesse real em aprender a ler os mesmos sinais, preferindo trabalhar no Cais Principal por um salário mais previsível."
+    },
+    {
+      "role": "Jovem pescador",
+      "name": "Tavo Redemalha",
+      "note": "Neto de Ondina, é quem mais se aproxima de aprender os sinais dela, mas em segredo já negociou um lugar como estivador no Cais — não porque não ame o mar, mas porque viu a própria mãe passar fome num ano de cardume ruim e decidiu não repetir isso."
+    }
+  ],
+  "hook": "O cardume não apareceu na curva de sempre pela terceira semana seguida, e Ondina suspeita que outra frota, de uma ilha vizinha, começou a pescar rio acima do ponto certo — uma acusação que, se feita em público, pode virar disputa territorial entre vilas que sempre coexistiram em paz.",
+  "detail": "A divisão do pescado do dia segue uma regra antiga: primeiro as famílias sem barco próprio, depois quem tem barco, por último quem foi chefe da frota naquele dia — Ondina come por último todos os dias, e ninguém mais na vila lembra quando ou por que essa regra específica começou.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION"]
+}

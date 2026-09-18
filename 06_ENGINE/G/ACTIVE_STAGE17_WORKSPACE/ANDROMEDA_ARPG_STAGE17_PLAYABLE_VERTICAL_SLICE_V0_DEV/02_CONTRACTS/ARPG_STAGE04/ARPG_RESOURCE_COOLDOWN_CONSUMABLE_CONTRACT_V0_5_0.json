@@ -1,0 +1,26 @@
+{
+  "record_id": "ARPG-RESOURCE-COOLDOWN-CONSUMABLE-CONTRACT-V0.5.0",
+  "stage": "04/20",
+  "version": "V0.5.0",
+  "resource_model": "ADAPTIVE_BUILD_DERIVED",
+  "rules": {
+    "character_core_is_health_and_primary_pool_authority": true,
+    "no_fixed_mana_or_energy_class_assumption": true,
+    "primary_channel_begins_unspecialized": true,
+    "resource_costs_are_server_authoritative": true,
+    "cooldowns_are_deterministic_and_persistent": true,
+    "global_cooldown_is_opt_in_not_universal": true,
+    "interruption_lock_supported": true,
+    "consumables_are_placeholder_only_until_stage05": true,
+    "consumable_replay_must_not_duplicate_effect_or_quantity_loss": true,
+    "dead_character_cannot_use_consumables_or_reserve_actions": true,
+    "art_dependency": "NONE"
+  },
+  "future_bindings": {
+    "items": "STAGE05",
+    "skills": "STAGE06",
+    "gathering_work": "STAGE09",
+    "living": "STAGE12"
+  },
+  "authority": "GAMEPLAY_DERIVED_NOT_CANON"
+}

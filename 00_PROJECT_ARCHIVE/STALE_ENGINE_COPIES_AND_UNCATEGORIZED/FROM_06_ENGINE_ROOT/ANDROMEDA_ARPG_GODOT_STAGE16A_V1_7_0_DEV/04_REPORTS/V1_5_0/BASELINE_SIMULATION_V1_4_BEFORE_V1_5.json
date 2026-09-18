@@ -1,0 +1,47 @@
+{
+  "baseline": "V1.4.0",
+  "master": "V2.1.0",
+  "seed": 1201,
+  "health": "PASS",
+  "relocation_status": "PASS",
+  "relocation_coordinate_jump": {
+    "from": {
+      "longitude": -17.40317955,
+      "latitude": -1.46174924,
+      "altitude_m": 0.0,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+      "precision_class": "RUNTIME_ANCHOR"
+    },
+    "to": {
+      "longitude": -14.6,
+      "latitude": 6.5,
+      "altitude_m": 2234,
+      "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+    }
+  },
+  "dungeon_enter": {
+    "status": "PASS",
+    "npc_id": "NPC-01-01-01-007",
+    "dungeon_id": "DNG-STA-03-01-01",
+    "room_id": "DNG-STA-03-01-01-R01",
+    "ownership": {
+      "status": "PASS",
+      "entity_ref": "NPC-01-01-01-007",
+      "from_chunk": "CHK--000194--000223",
+      "to_chunk": "CHK--000042-+000048",
+      "identity_preserved": true
+    }
+  },
+  "observed_absences": {
+    "continuous_movement": true,
+    "navigation_pathfinding": true,
+    "collision_interaction": true,
+    "environment_simulation": true,
+    "player_discovery": true,
+    "godot_adapter_v15": true
+  },
+  "notes": [
+    "V1.4 supports aggregate relocation/travel but has no meter-by-meter movement API.",
+    "No dedicated pathfinding, collision, dynamic environment, player discovery, or bidirectional Godot traversal adapter module exists."
+  ]
+}

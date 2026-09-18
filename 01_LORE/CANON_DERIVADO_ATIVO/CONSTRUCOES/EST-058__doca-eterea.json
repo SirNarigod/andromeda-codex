@@ -1,0 +1,38 @@
+{
+  "est_id": "EST-058",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Doca Eterea",
+  "building_type": "COMERCIAL",
+  "parent_locality": "LOC-017-001",
+  "parent_subregion": "SUB-017-001",
+  "parent_political_unit": "TER-017",
+  "function": "Ponto de atracacao e comercio entre ilhas do arquipelago.",
+  "economic_role": {
+    "is_vendor": true,
+    "sells": [
+      "eter bruto colhido nas Correntes"
+    ],
+    "produces": [],
+    "regulation_factor": 0.3
+  },
+  "capacity": {
+    "jobs": 5,
+    "residents": 6
+  },
+  "professions_linked": [
+    "JOB-008 Agente de licencas e contratos"
+  ],
+  "notable_link": "TER-017 Arquipelago Etereo (fase 50)",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "MADEIRA_E_ALVENARIA",
+    "flammability": "ALTA",
+    "recovery_days": 7
+  }
+}

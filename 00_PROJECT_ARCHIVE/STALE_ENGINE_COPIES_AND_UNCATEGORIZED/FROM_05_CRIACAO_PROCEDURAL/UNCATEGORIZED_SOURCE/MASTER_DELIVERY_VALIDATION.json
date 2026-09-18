@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-08-04T20:16:05+00:00",
+  "product": "Andrômeda Codex V1.0.1",
+  "metadataRevision": "R2",
+  "valid": true,
+  "errorCount": 0,
+  "errors": [],
+  "activeArtifactCount": 12,
+  "activeExpectedCount": 12,
+  "activeFileSetExact": true,
+  "activeChecksums": {
+    "entries": 11,
+    "valid": true
+  },
+  "zipVerification": {
+    "ANDROMEDA_CODEX_V1_0_1_FINAL.zip": {
+      "crc": true,
+      "uniquePaths": true,
+      "safePaths": true,
+      "symlinks": [],
+      "encrypted": [],
+      "entries": 1435
+    },
+    "ANDROMEDA_CODEX_V1_0_1_FINAL_BACKUP.zip": {
+      "crc": true,
+      "uniquePaths": true,
+      "safePaths": true,
+      "symlinks": [],
+      "encrypted": [],
+      "entries": 1318
+    }
+  },
+  "backup": {
+    "backupId": "BKP-175AFE438F7E4C5F823CB1E9412249E8",
+    "sha256": "2638f26fe41c2c07a758928246d4ddfa93e644c5819dad0e35d3997e24adde12",
+    "bytes": 28453763,
+    "fileCount": 1317,
+    "directoryCount": 117,
+    "workspaceRootSha256": "165232e1d3f6b3beb33dc6c8462ac30cfb643e86e4498314be889c27bec8dcdf",
+    "internalManifestMatch": true,
+    "internalManifestPath": "ANDROMEDA_BACKUP/manifest.json"
+  },
+  "production": {
+    "sha256": "e93e55700a253f3f10798d98501a8a65adcd5b89b86fa4723b2e8e647b5d21ab",
+    "bytes": 28246364,
+    "manifestFileCount": 1315,
+    "manifestRootSha256": "079209741c5a306ee635f8da54118e42944399f42cdb2f04090b4b311ec825b9",
+    "internalManifestCopies": [
+      "ANDROMEDA_CODEX_V1_0_1/build/final-manifest.json",
+      "ANDROMEDA_CODEX_V1_0_1/codex/indexes/platform-files.json"
+    ]
+  },
+  "restoredTests": {
+    "valid": true,
+    "testsRun": 147,
+    "errors": [],
+    "failures": [],
+    "skipped": 0,
+    "expectedFailures": 0,
+    "unexpectedSuccesses": 0,
+    "normalTests": 145,
+    "isolatedCrashTests": 2,
+    "crashEvidence": [
+      {
+        "case": "create",
+        "path": "build/STAGE_045_CRASH_CREATE.json",
+        "passed": true
+      },
+      {
+        "case": "update",
+        "path": "build/STAGE_045_CRASH_UPDATE.json",
+        "passed": true
+      }
+    ]
+  },
+  "restoredAuditSummary": {
+    "result": "PASS",
+    "checkCount": 25,
+    "passedCount": 25,
+    "failedCount": 0,
+    "skippedCount": 0
+  },
+  "supersededMetadataCount": 4,
+  "nonBlockingFindings": [
+    {
+      "id": "validation-extra-rfc3339-validator",
+      "severity": "non-blocking",
+      "scope": "future-technical-correction",
+      "description": "A regressão oficial de schemas exige rfc3339-validator, mas a dependência não está explicitamente declarada no extra validation.",
+      "impact": "Não afeta a integridade, a restauração ou a aprovação do Backup Mestre V1.0.1."
+    }
+  ]
+}

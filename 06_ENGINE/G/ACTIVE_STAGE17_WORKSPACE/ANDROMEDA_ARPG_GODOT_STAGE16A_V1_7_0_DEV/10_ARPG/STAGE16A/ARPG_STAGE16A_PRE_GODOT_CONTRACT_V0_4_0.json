@@ -1,0 +1,292 @@
+{
+  "record_id": "ARPG-STAGE16A-PRE-GODOT-CONTRACT-V0.4.0",
+  "project": "ANDRÔMEDA CÓDEX ARPG",
+  "stage": "16A/16",
+  "status": "ACTIVE_PRE_GODOT",
+  "authority": "AUTHORIAL_DECISIONS_PLUS_GAMEPLAY_DERIVED_IMPLEMENTATION_GUARDS",
+  "godot_gate": "STAGE16_CANNOT_PASS_UNTIL_DIRECT_GODOT_RUNTIME_VALIDATION",
+  "ui": {
+    "philosophy": "MINIMAL_CONTEXTUAL_WORLD_FIRST",
+    "reference": "Breath of the Wild minimalism as design philosophy only; no asset/UI copying",
+    "hud": "SHOW_WHEN_RELEVANT_FADE_WHEN_IDLE",
+    "npc_name_visibility": "HOVER_ONLY",
+    "dialogue": {
+      "mode": "REAL_TIME_NO_NEXT_BUTTON",
+      "bubble_shape": "ROUNDED_RECTANGLE_WITH_SUBTLE_POINTER",
+      "bubble_background": "WHITE",
+      "normal_text": "MEDIUM_GREY",
+      "important_text": "SOFT_LIGHT_ORANGE_NOT_VIVID",
+      "important_accessibility_line": "BOTTOM_SCREEN_PLUS_WORLD_BUBBLE",
+      "multi_npc_conversation": true,
+      "same_conversation_turn_policy": "ONE_TURN_AT_A_TIME_AUTOMATIC_ALTERNATION",
+      "player_movement_locked": false,
+      "npc_movement_locked": false,
+      "world_pause_required": false,
+      "choice_ui": "SMALL_TEMPORARY_OPTIONS_NEAR_NPC",
+      "canon_guard": "PRESENTATION_ONLY_NEVER_PROMOTES_RUNTIME_COPY_TO_CANON_DIALOGUE",
+      "candidate_pre_godot": {
+        "normal_text_hex": "#6B6B6B",
+        "important_text_hex": "#D9A15F",
+        "bubble_background_hex": "#FFFFFF",
+        "corner_radius_px": 14,
+        "max_visible_bubbles": 3,
+        "full_visibility_distance_m": 8.0,
+        "fade_end_distance_m": 14.0,
+        "choice_range_m": 2.0,
+        "reading_chars_per_second": 15.0,
+        "min_bubble_seconds": 1.8,
+        "max_bubble_seconds": 8.0,
+        "inter_turn_pause_seconds": 0.35,
+        "status": "GAMEPLAY_PRESENTATION_DERIVED_REQUIRES_STAGE16B_VISUAL_VALIDATION"
+      },
+      "presentation_priority": [
+        "DIRECT_PLAYER",
+        "IMPORTANT_NARRATIVE",
+        "QUEST_CONTEXT",
+        "NEARBY_CONVERSATION",
+        "AMBIENT",
+        "DISTANT"
+      ]
+    },
+    "minimal_hud": {
+      "world_primary_visual_layer": true,
+      "idle": "PLAYER_VITALS_VERY_SUBTLE",
+      "combat": "REVEAL_RELEVANT_VITALS_TARGET_CHANNELS",
+      "stamina": "VISIBLE_WHEN_ACTIVE_OR_COMBAT",
+      "after_context": "FADE_BACK_TO_SUBTLE",
+      "permanent_large_panels": false,
+      "inventory_permanent_on_hud": false,
+      "npc_names": "HOVER_ONLY",
+      "important_dialogue": "WORLD_BUBBLE_PLUS_BOTTOM_ACCESSIBILITY_LINE",
+      "temporary_channels": [
+        "INTERACTION_HINT",
+        "LOOT_FEEDBACK",
+        "QUEST_UPDATE",
+        "AUTO_PICKUP_STATUS"
+      ],
+      "contextual_channels": [
+        "PLAYER_VITALS",
+        "STAMINA",
+        "PROTECTION",
+        "TARGET_INFO",
+        "BOSS_STATUS",
+        "CHOICE_OVERLAY",
+        "NPC_HOVER_NAME"
+      ],
+      "enemy_bar": "CONTEXTUAL_FIXED_STRAIGHT_ABOVE_HEAD_WHEN_ENGAGED; ALPHA_SUPPORTS_SHIELD_CHANNEL",
+      "accessibility": {
+        "font_scale_configurable": true,
+        "dialogue_duration_scale_configurable": true,
+        "color_not_only_signal": true,
+        "important_signal": [
+          "SOFT_LIGHT_ORANGE_TEXT",
+          "BOTTOM_ACCESSIBILITY_LINE"
+        ],
+        "contrast_validation": "PENDING_STAGE16B"
+      }
+    }
+  },
+  "terrain_traversal": {
+    "reference": "Death Stranding terrain relevance as systemic inspiration only; no mechanics/assets copied",
+    "body_balance_mechanic": false,
+    "subtle_relief": true,
+    "micro_imperfections": true,
+    "surface_layers": {
+      "visual": "DETAILED_RELIEF_ALLOWED",
+      "collision": "SIMPLIFIED_STABLE",
+      "traversal": "SLOPE_SURFACE_LOAD_COST"
+    },
+    "physics_guard": "VISUAL_DETAIL_MUST_NOT_FRAGMENT_COLLISION_OR_NAVIGATION",
+    "stamina_inputs": [
+      "surface",
+      "slope",
+      "carried_load",
+      "activity"
+    ],
+    "inventory_weight_authority": "STAGE05_UNIVERSAL_ITEM_CORE",
+    "candidate_pre_godot_thresholds": {
+      "max_walkable_slope_deg": 32.0,
+      "max_step_height_m": 0.35,
+      "micro_relief_collision_filter_m": 0.12,
+      "status": "GAMEPLAY_DERIVED_REQUIRES_STAGE16B_VALIDATION"
+    },
+    "slope_behavior": "UPHILL_MORE_EXPENSIVE_THAN_DOWNHILL_WITHOUT_BODY_BALANCE",
+    "road_behavior": "ROAD_CAN_BE_MORE_EFFICIENT_THAN_SHORTER_ROUGH_ROUTE",
+    "balance_authority": "STAGE17_FINAL_BALANCE"
+  },
+  "streaming": {
+    "existing_living_macro_chunk_size_m": 4096.0,
+    "macro_authority": "LIVING_ISOMETRIC_CHUNK_STREAMING_RUNTIME_PRESERVED",
+    "godot_scene_cells": "VARIABLE_SIZE_NESTED_UNDER_MACRO_STREAMING",
+    "map_hierarchy": [
+      "planet",
+      "country",
+      "state_or_large_territory",
+      "region",
+      "subregion",
+      "playable_zone",
+      "local_area"
+    ],
+    "variable_map_size": true,
+    "logical_area_scales": {
+      "INTERIOR": {
+        "logical_extent_m": 96.0,
+        "cell_size_m": 96.0
+      },
+      "POI": {
+        "logical_extent_m": 192.0,
+        "cell_size_m": 192.0
+      },
+      "SMALL_AREA": {
+        "logical_extent_m": 512.0,
+        "cell_size_m": 256.0
+      },
+      "SUBREGION": {
+        "logical_extent_m": 2048.0,
+        "cell_size_m": 256.0
+      },
+      "REGION": {
+        "logical_extent_m": 8192.0,
+        "cell_size_m": 512.0
+      },
+      "STATE_PHASE": {
+        "logical_extent_m": 32768.0,
+        "cell_size_m": 512.0
+      }
+    },
+    "phases": {
+      "ACTIVE": "FULL_GAMEPLAY_AND_VISUAL",
+      "PRELOAD": "COLLISION_NAV_AND_LOW_VISUAL",
+      "SYSTEMIC": "LIVING_ONLY_NO_GODOT_SCENE"
+    },
+    "rule": "LARGE_LOGICAL_AREA_PARTITIONED; ONLY_LOCAL_ACTIVE_AND_PRELOAD_CELLS_REQUIRE_GODOT_SCENES",
+    "unloaded_world": "CONTINUES_IN_LIVING_SIMULATION"
+  },
+  "ground_loot": {
+    "universal_sources": [
+      "enemy",
+      "tree",
+      "rock",
+      "ore",
+      "flora",
+      "agriculture",
+      "hunting",
+      "fishing",
+      "container",
+      "physical_production_when_applicable"
+    ],
+    "world_first": true,
+    "direct_to_inventory_from_physical_source": false,
+    "pickup_radius_m": 0.5,
+    "manual_click": "APPROACH_THEN_PICKUP",
+    "auto_pickup_toggle": true,
+    "auto_pickup_interrupts_actions": false,
+    "blocked_path_prevents_pickup": true,
+    "stack_drop_supported": true,
+    "safe_drop_point_required": true,
+    "icons": "BY_ITEM_TYPE_NOT_UNIQUE_ITEM_ID"
+  },
+  "pointer_interaction": {
+    "resolver": "INTENT_PLUS_POINTER_HIT_PLUS_BUTTON",
+    "hover_preview_required": true,
+    "blind_global_type_priority": false,
+    "tie_break": [
+      "screen_distance_px",
+      "frontmost_depth",
+      "semantic_tie_only",
+      "stable_ref"
+    ],
+    "left": {
+      "ground": "MOVE",
+      "ground_loot": "APPROACH_PICKUP_OR_PICKUP_AT_0_5M",
+      "actor_npc_animal_resource_object_vehicle": "SELECT_ONLY_NO_MOVEMENT_CHANGE"
+    },
+    "right": {
+      "ground": "MOVE",
+      "hostile_actor": "CHASE_ATTACK",
+      "neutral_actor_npc": "APPROACH_INTERACT",
+      "gather_node": "APPROACH_HARVEST",
+      "ground_loot": "APPROACH_PICKUP_OR_PICKUP_AT_0_5M",
+      "scene_object_vehicle": "APPROACH_INTERACT"
+    },
+    "existing_keyboard_contract": {
+      "space": "ATTACK_SELECTED_TARGET",
+      "E": "APPROACH_AND_INTERACT_WITH_SELECTED_NON_ENEMY"
+    }
+  },
+  "completed_minor_blocks": [
+    "INTERACTION_INTENT_RESOLUTION",
+    "UNIVERSAL_GROUND_LOOT",
+    "TERRAIN_TRAVERSAL_AND_STREAMING_CONTRACT",
+    "REAL_TIME_DIALOGUE_PRESENTATION",
+    "MINIMAL_CONTEXTUAL_HUD",
+    "CAMERA_PRESENTATION_CONTRACT",
+    "GAME_FEEL_AND_CONTEXTUAL_FEEDBACK_CONTRACT"
+  ],
+  "canon_mutations": 0,
+  "camera": {
+    "mode": "STABLE_ISOMETRIC_OBLIQUE",
+    "reference": "Diablo-like readable isometric framing as structural reference only; exact visual framing requires Stage16B approval",
+    "world_pause": false,
+    "free_orbit_default": false,
+    "manual_rotation": "UNRESOLVED_NOT_ENABLED_IN_FIRST_SLICE",
+    "terrain_follow": "SMOOTH_ANCHOR_NOT_RAW_MICRO_RELIEF",
+    "occlusion": "FADE_BLOCKING_WORLD_GEOMETRY_BEFORE_ABRUPT_CAMERA_REPOSITION",
+    "zoom": "PLAYER_CONTROLLED_CLAMPED_NO_FORCED_COMBAT_ZOOM",
+    "pointer_stability_guard": "VISUAL_CAMERA_IMPULSE_CANNOT_REWRITE_ALREADY_RESOLVED_CLICK_INTENT",
+    "candidate_pre_godot": {
+      "projection": "PERSPECTIVE_ISOMETRIC_OBLIQUE",
+      "yaw_deg": 45.0,
+      "pitch_deg": 55.0,
+      "default_distance_m": 14.0,
+      "min_distance_m": 11.0,
+      "max_distance_m": 18.0,
+      "height_follow_half_life_s": 0.18,
+      "micro_vertical_deadband_m": 0.12,
+      "occluder_fade_alpha": 0.2,
+      "status": "GAMEPLAY_PRESENTATION_DERIVED_REQUIRES_STAGE16B_VISUAL_PHYSICS_VALIDATION"
+    }
+  },
+  "game_feel_feedback": {
+    "presentation_only": true,
+    "may_change_gameplay_result": false,
+    "global_hitstop": false,
+    "local_animation_freeze_only": true,
+    "camera_impulse": "SUBTLE_OPTIONAL_REDUCED_MOTION_AWARE",
+    "damage_numbers": "NOT_REQUIRED_BY_CORE_OPTIONAL_LATER_PRESENTATION_SETTING",
+    "audio": "SEMANTIC_CUE_TOKENS_ONLY_NO_FINAL_ASSETS",
+    "click_feedback": "SMALL_TEMPORARY_WORLD_MARKER",
+    "blocked_interaction": "NON_BLOCKING_VISUAL_AND_AUDIO_REASON_FEEDBACK",
+    "priority": [
+      "PLAYER_CRITICAL_DAMAGE",
+      "PLAYER_DAMAGE",
+      "BOSS_DANGER",
+      "CRITICAL_HIT_CONFIRM",
+      "HIT_CONFIRM",
+      "BLOCKED_INTERACTION",
+      "QUEST_UPDATE",
+      "INTERACTION_CONFIRM",
+      "PICKUP",
+      "MOVE_CLICK",
+      "AMBIENT"
+    ],
+    "candidate_pre_godot": {
+      "move_click_marker_seconds": 0.35,
+      "interaction_marker_seconds": 0.55,
+      "pickup_pulse_seconds": 0.45,
+      "blocked_feedback_seconds": 0.7,
+      "normal_hit_local_freeze_ms": 28,
+      "strong_hit_local_freeze_ms": 42,
+      "critical_hit_local_freeze_ms": 58,
+      "max_camera_impulse": 0.18,
+      "max_visible_feedback_events": 3,
+      "duplicate_audio_debounce_ms": 70,
+      "status": "GAMEPLAY_PRESENTATION_DERIVED_REQUIRES_STAGE16B_FEEL_VALIDATION"
+    },
+    "accessibility": {
+      "reduced_motion_disables_camera_impulse": true,
+      "reduced_motion_disables_local_hit_freeze": true,
+      "feedback_not_color_only": true
+    }
+  }
+}

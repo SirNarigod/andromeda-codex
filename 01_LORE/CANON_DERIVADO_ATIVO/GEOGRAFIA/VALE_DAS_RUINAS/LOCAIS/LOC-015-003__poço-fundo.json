@@ -1,0 +1,27 @@
+{
+  "loc_id": "LOC-015-003",
+  "record_id": "LOC-015-003",
+  "name": "Poço Fundo",
+  "parent_subregion": "SUB-015-003",
+  "function": "Assentamento em torno da única fonte de água permanente do vale.",
+  "notable_link": "TER-015 Vale das Ruínas (fase 48, território novo)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "settlement_tier": "COMPLEXO",
+  "history": "O Poço Fundo é a única fonte confiável de água em muitas léguas. A vila ao redor mede riqueza pela profundidade que cada família pode descer sem ajuda.",
+  "sensory": "A corda canta no vazio; o ar frio do poço contrasta com o calor que racha a superfície.",
+  "hook": "O nível da água sobe, mas traz uma luz que ninguém consegue identificar.",
+  "secondary_hook": "Mira quer lacrar o poço; Nox pede uma descida antes que a luz desapareça.",
+  "detail": "Toda retirada exige devolver um balde limpo ao fundo.",
+  "figures": [
+    {
+      "role": "Mira Balde-Cego",
+      "name": "Mira Balde-Cego",
+      "note": "administradora que conhece cada dívida"
+    },
+    {
+      "role": "Nox",
+      "name": "Nox",
+      "note": "jovem que afirma ouvir água atrás da pedra"
+    }
+  ]
+}

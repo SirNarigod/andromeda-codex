@@ -1,0 +1,160 @@
+{
+  "record_id": "ARPG-STAGE12-STRESS-V1.3.0",
+  "profiles": 4,
+  "checks": 30,
+  "passed": 30,
+  "failed": 0,
+  "status": "PASS",
+  "results": [
+    {
+      "check": "orientation_0",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "orientation_replay_0",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "supply_0",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "supply_replay_0",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "context_rep_0",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "quest_count_0",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "orientation_1",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "orientation_replay_1",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "supply_1",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "supply_replay_1",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "context_rep_1",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "quest_count_1",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "orientation_2",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "orientation_replay_2",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "supply_2",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "supply_replay_2",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "context_rep_2",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "quest_count_2",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "orientation_3",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "orientation_replay_3",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "supply_3",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "supply_replay_3",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "context_rep_3",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "quest_count_3",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "culture_stable",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "factions_guarded",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "spoilers_guarded",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "health",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "same_seed_quest_templates",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "same_seed_culture",
+      "status": "PASS",
+      "detail": null
+    }
+  ]
+}

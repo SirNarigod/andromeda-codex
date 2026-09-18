@@ -1,0 +1,40 @@
+{
+  "est_id": "EST-046",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Oficina de Carruagens de Lúminor",
+  "building_type": "INDUSTRIAL",
+  "parent_locality": "LOC-001-002",
+  "parent_subregion": "SUB-001-002",
+  "parent_political_unit": "TER-001",
+  "function": "Fabricação de carroças, carruagens e balões de ar quente usados nas rotas mercantis da confederação.",
+  "economic_role": {
+    "is_vendor": false,
+    "sells": [],
+    "produces": [
+      "VEI-004 Carroça de Caravana",
+      "VEI-006 Carruagem de Vínculo Rúnico",
+      "VEI-009 Balão de Ar Quente de Lúminor"
+    ],
+    "regulation_factor": 0.4
+  },
+  "capacity": {
+    "jobs": 8,
+    "residents": 4
+  },
+  "professions_linked": [
+    "JOB-006 Artesão e reparador de oficina"
+  ],
+  "notable_link": "SUB-001-002 Rota das Caravanas, EST-007 Acampamento de Caravana",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "METAL_E_MADEIRA",
+    "flammability": "MEDIA_COM_RISCO_EXPLOSAO",
+    "recovery_days": 10
+  }
+}

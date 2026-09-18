@@ -1,0 +1,42 @@
+{
+  "checkpoint": "FIRST_PLAYABLE_V0_1_21_DEV",
+  "parent_checkpoint": "FIRST_PLAYABLE_V0_1_20_AUTHOR_APPROVED",
+  "status": "STATIC_VALIDATED_RUNTIME_PENDING",
+  "functional_scope": [
+    "generic_left_click_selection",
+    "selection_stops_player_without_destination",
+    "space_attack_only_for_hostile_selected_target"
+  ],
+  "control_contract": {
+    "left_empty_ground": "MOVE",
+    "left_selectable_object": "SELECT_AND_STOP_NO_MOVE",
+    "left_scene_transition": "APPROACH_AND_TRANSITION",
+    "space_hostile_selected": "ATTACK_SELECTED",
+    "space_non_hostile_selected": "NO_ATTACK_FEEDBACK",
+    "right_click": "CONTEXTUAL_ACTION"
+  },
+  "preserved_contracts": {
+    "global_attack_cooldown_s": 2.0,
+    "ranged_rule_v0_1_19": "CLOSED_UNCHANGED",
+    "enemy_tiers": [
+      "FRACO",
+      "MEDIO",
+      "FORTE",
+      "ALFA"
+    ],
+    "right_click_contextual": true,
+    "scene_transition_left_exception": true
+  },
+  "authority": {
+    "master_v2_0_1": "READ_ONLY_UNCHANGED",
+    "living_engine_v1_0_0": "READ_ONLY_UNCHANGED"
+  },
+  "static_checks": {
+    "checks": 27,
+    "passed": 27,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1",
+  "backup_authorized": false
+}

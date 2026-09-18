@@ -1,0 +1,83 @@
+{
+  "record_id": "R2_RESOURCE_SOURCE_REFERENCE_V1",
+  "scope": "REFERENCE_ONLY",
+  "canonical_references": [
+    {
+      "id": "BIO-001",
+      "path": "01_LORE/CANON_R2/GEOGRAFIA/BIOMAS/BIO-001__coracao-ancestral.json"
+    },
+    {
+      "id": "BIO-002",
+      "path": "01_LORE/CANON_R2/GEOGRAFIA/BIOMAS/BIO-002__planicies-luminais.json"
+    },
+    {
+      "id": "BIO-003",
+      "path": "01_LORE/CANON_R2/GEOGRAFIA/BIOMAS/BIO-003__oceanos-e-abissos.json"
+    },
+    {
+      "id": "BIO-004",
+      "path": "01_LORE/CANON_R2/GEOGRAFIA/BIOMAS/BIO-004__subsolo-cristalino.json"
+    },
+    {
+      "id": "BIO-005",
+      "path": "01_LORE/CANON_R2/GEOGRAFIA/BIOMAS/BIO-005__picos-de-tempestade.json"
+    },
+    {
+      "id": "BIO-006",
+      "path": "01_LORE/CANON_R2/GEOGRAFIA/BIOMAS/BIO-006__pantanos-rubros.json"
+    },
+    {
+      "id": "CRI-001",
+      "path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-001__cortassom.json"
+    },
+    {
+      "id": "CRI-002",
+      "path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-002__velurio.json"
+    },
+    {
+      "id": "CRI-003",
+      "path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-003__brumante.json"
+    },
+    {
+      "id": "CRI-004",
+      "path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-004__lumara.json"
+    },
+    {
+      "id": "CRI-005",
+      "path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-005__raizel-manso.json"
+    },
+    {
+      "id": "CRI-006",
+      "path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-006__luzipolen.json"
+    },
+    {
+      "id": "CRI-007",
+      "path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-007__fio-de-orvalho.json"
+    },
+    {
+      "id": "CRI-008",
+      "path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-008__grilo-cobre.json"
+    },
+    {
+      "id": "CRI-009",
+      "path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-009__larva-de-veu.json"
+    },
+    {
+      "id": "CRI-010",
+      "path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-010__vespa-de-vidro.json"
+    },
+    {
+      "id": "CRI-011",
+      "path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-011__besouro-rubro.json"
+    },
+    {
+      "id": "CRI-012",
+      "path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-012__louva-fenda.json"
+    },
+    {
+      "id": "CRI-013",
+      "path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-013__mandibula-de-nevoa.json"
+    }
+  ],
+  "rule": "Resource stocks, prices and instances remain runtime-only."
+}

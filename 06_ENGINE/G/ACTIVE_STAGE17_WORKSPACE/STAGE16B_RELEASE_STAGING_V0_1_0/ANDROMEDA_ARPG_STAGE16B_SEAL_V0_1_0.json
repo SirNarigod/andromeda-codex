@@ -1,0 +1,76 @@
+{
+  "record_id": "ANDROMEDA-ARPG-STAGE16B-SEAL-V0.1.0",
+  "created_at": "2026-08-27T15:31:49-03:00",
+  "project": "ANDRÔMEDA CÓDEX ARPG",
+  "component": "Stage16B Authority + Godot Runtime",
+  "version": "V0.1.0",
+  "stage16b_identity": "ANDROMEDA_ARPG_STAGE16B_AUTHORITY_GODOT_BACKUP_V0_1_0",
+  "checkpoint": {
+    "file": "ANDROMEDA_ARPG_STAGE16B_AUTHORITY_GODOT_CHECKPOINT_V0_1_0.zip",
+    "sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc",
+    "status": "VALIDATED"
+  },
+  "backup": {
+    "file": "ANDROMEDA_ARPG_STAGE16B_AUTHORITY_GODOT_BACKUP_V0_1_0.zip",
+    "sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc",
+    "byte_identical_to_checkpoint": true,
+    "status": "VALIDATED"
+  },
+  "restore_report": {
+    "file": "ANDROMEDA_ARPG_STAGE16B_AUTHORITY_GODOT_CHECKPOINT_V0_1_0_RESTORE_VALIDATED.json",
+    "sha256": "e04e5f6da207584be2d010ba8a81f435cef3df60a3ba7a0f3ace0dc0dc68bb5b",
+    "checkpoint_validated": true,
+    "restore_validated": true
+  },
+  "final_audit": {
+    "file": "AUTHORITY_STAGE16B_FINAL_AUDIT_EVIDENCE_CONSOLIDATION_V0_8_9.json",
+    "sha256": "baca0ffb592f99343fbea5ff4ef72ad573bf807cfead5c781efe6af365fd4353",
+    "status": "PASS"
+  },
+  "final_closure": {
+    "file": "AUTHORITY_STAGE16B_FINAL_CLOSURE_V0_9_0.json",
+    "sha256": "2aef56ba411b0373fe4a7a8cb2e6beeae39330aa03b30f4b7b7009606e24c0a5",
+    "status": "STAGE16B_CLOSED"
+  },
+  "manifest": {
+    "file": "ANDROMEDA_ARPG_STAGE16B_AUTHORITY_GODOT_BACKUP_MANIFEST_V0_1_0.json",
+    "sha256": "bb2609fc90227b0b7f793ebf6238973aa7026dc153372385e3ce68a876fdc76e"
+  },
+  "handoff": [
+    {
+      "file": "ANDROMEDA_ARPG_STAGE16B_RELEASE_HANDOFF_V0_1_0.json",
+      "sha256": "3b0568a544f5235301b2c6b0045994cae742d154e14bbffd00cf4d33e3a5380a"
+    },
+    {
+      "file": "ANDROMEDA_ARPG_STAGE16B_RELEASE_HANDOFF_V0_1_0.md",
+      "sha256": "372cafa3307e9d07604395b070b66b9a06eff99b732d4139fd57534c6af783ce"
+    }
+  ],
+  "release_report": {
+    "file": "ANDROMEDA_ARPG_STAGE16B_RELEASE_REPORT_V0_1_0.json",
+    "sha256": "60abd6b25907fda4c098bba7d33904179fd04900a347cca52089c7ac531fbb0b"
+  },
+  "ledger": {
+    "file": "ANDROMEDA_ARPG_STAGE16B_RELEASE_SHA256SUMS_V0_1_0",
+    "sha256": "c746d52bf9477ababf36493e4812673ff4c6db23a28505f5de1a8de36186d1cc",
+    "entries": 11,
+    "status": "PASS"
+  },
+  "functional_matrix": {
+    "pass": 28,
+    "partial_evidence": 0,
+    "total": 28
+  },
+  "protected_hashes": {
+    "stage16a_v0_8_1": "03bc6b621a5ae8e0bf6542803412611855b32503154221ec7ea1b7aaf28befc4",
+    "stage16a_v0_8_0": "21626a3152cb37e167eee24bff9d3142c5d389a8ca2827594b34211591525a6a",
+    "master_v2_0_1": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2"
+  },
+  "stage17": {
+    "ready_to_start": true,
+    "execution": "NOT_STARTED"
+  },
+  "detached_seal": true,
+  "detached_seal_reason": "The immutable backup hash and release-ledger hash cannot be embedded into the archive they seal without circular dependency.",
+  "status": "STAGE16B_BACKUP_SEALED"
+}

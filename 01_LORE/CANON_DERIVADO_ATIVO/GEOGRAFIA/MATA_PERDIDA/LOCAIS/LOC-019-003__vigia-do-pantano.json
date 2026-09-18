@@ -1,0 +1,27 @@
+{
+  "loc_id": "LOC-019-003",
+  "record_id": "LOC-019-003",
+  "name": "Vigia do Pantano",
+  "parent_subregion": "SUB-019-003",
+  "function": "Posto de vigilância contra predadores do Pantano da Serpente.",
+  "notable_link": "TER-019 Mata Perdida (fase 52, território novo)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "settlement_tier": "POSTO",
+  "history": "O Pantano da Serpente recebeu o nome não de uma única criatura, mas do próprio formato sinuoso dos canais de água que o cortam, embora moradores locais insistam que algo grande de fato vive nas partes mais fundas e raramente vistas. O posto de vigia existe pra alertar viajantes antes que se aproximem demais das margens instáveis, e mudou de local três vezes ao longo dos anos conforme o próprio pantano avançou lentamente sobre terreno que antes era firme.",
+  "sensory": "Palafitas de madeira tratada mantêm o posto acima do nível da água mais alta registrada, cercadas por vegetação que cresce rápido demais pra qualquer manutenção manter completamente sob controle. O ar é denso e úmido, carregado de um cheiro de vegetação em decomposição que nunca desaparece por completo, e o som de água se movendo entre os canais nunca para, criando um ruído de fundo constante que torna difícil distinguir passos reais de simples correnteza.",
+  "figures": [
+    {
+      "role": "Vigia Veterana",
+      "name": "Ossa Canalfundo",
+      "note": "Vive no posto há mais tempo que qualquer outro morador atual e desenvolveu instinto apurado pra distinguir o movimento normal da água de algo se deslocando por baixo dela — instinto que salvou vidas mais de uma vez, embora ela mesma admita não conseguir explicar exatamente como funciona."
+    },
+    {
+      "role": "Cartógrafo territorial",
+      "name": "Fenwick Margemreta",
+      "note": "Tenta, há meses, produzir um mapa atualizado e preciso do avanço do pantano, mas o terreno muda rápido demais pra qualquer versão impressa continuar exata por muito tempo — está cada vez mais frustrado, convencido de que precisa encontrar um método diferente de registro."
+    }
+  ],
+  "hook": "Ossa notou um padrão de movimento na água maior e mais regular que o normal nos últimos dias, perto de uma área que Fenwick acabou de marcar como segura no mapa mais recente — se ela estiver certa, o mapa dele já está desatualizado antes mesmo de terminar de ser distribuído, e alguém pode confiar nele por engano.",
+  "detail": "Todo vigia novo do posto passa a primeira semana inteira apenas observando os canais, sem tocar em arma nem soar alarme, até aprender a diferenciar o som normal da água do que realmente exige atenção — um treinamento que Ossa insiste ser mais importante que qualquer instrução formal de combate.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION"]
+}

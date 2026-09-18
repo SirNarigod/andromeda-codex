@@ -1,0 +1,97 @@
+[
+ {
+  "ter": "TER-001",
+  "food": "MEDIA",
+  "short": 45
+ },
+ {
+  "ter": "TER-002",
+  "food": "MEDIA",
+  "short": 45
+ },
+ {
+  "ter": "TER-003",
+  "food": "MEDIA",
+  "short": 45
+ },
+ {
+  "ter": "TER-004",
+  "food": "ALTA",
+  "short": 20
+ },
+ {
+  "ter": "TER-005",
+  "food": "MEDIA",
+  "short": 45
+ },
+ {
+  "ter": "TER-006",
+  "food": "ALTA",
+  "short": 20
+ },
+ {
+  "ter": "TER-007",
+  "food": "ALTA",
+  "short": 20
+ },
+ {
+  "ter": "TER-008",
+  "food": "ALTA",
+  "short": 35
+ },
+ {
+  "ter": "TER-009",
+  "food": "ALTA",
+  "short": 35
+ },
+ {
+  "ter": "TER-010",
+  "food": "MEDIA",
+  "short": 45
+ },
+ {
+  "ter": "TER-011",
+  "food": "ALTA",
+  "short": 35
+ },
+ {
+  "ter": "TER-012",
+  "food": "ALTA",
+  "short": 35
+ },
+ {
+  "ter": "TER-013",
+  "food": "ALTA",
+  "short": 35
+ },
+ {
+  "ter": "TER-014",
+  "food": "MEDIA",
+  "short": 45
+ },
+ {
+  "ter": "TER-015",
+  "food": "MEDIA",
+  "short": 60
+ },
+ {
+  "ter": "TER-016",
+  "food": "MEDIA",
+  "short": 60
+ },
+ {
+  "ter": "TER-017",
+  "food": "MEDIA",
+  "short": 45
+ },
+ {
+  "ter": "TER-018",
+  "food": "MEDIA",
+  "short": 45
+ },
+ {
+  "ter": "TER-019",
+  "food": "MEDIA",
+  "short": 60
+ }
+]

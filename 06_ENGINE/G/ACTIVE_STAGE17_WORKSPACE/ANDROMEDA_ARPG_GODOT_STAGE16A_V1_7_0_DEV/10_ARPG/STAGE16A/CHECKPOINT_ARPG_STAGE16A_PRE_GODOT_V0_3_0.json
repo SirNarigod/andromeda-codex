@@ -1,0 +1,43 @@
+{
+  "record_id": "CHECKPOINT-ARPG-STAGE16A-PRE-GODOT-V0.3.0",
+  "project": "ANDRÔMEDA CÓDEX ARPG",
+  "stage": "16A/16",
+  "version": "V1.7.0-DEV",
+  "status": "PASS_PARTIAL_PRE_GODOT",
+  "parent": "CHECKPOINT-ARPG-STAGE16A-PRE-GODOT-V0.2.0",
+  "completed_minor_blocks": [
+    "INTERACTION_INTENT_RESOLUTION",
+    "UNIVERSAL_GROUND_LOOT",
+    "TERRAIN_TRAVERSAL_AND_STREAMING_CONTRACT",
+    "REAL_TIME_DIALOGUE_PRESENTATION",
+    "MINIMAL_CONTEXTUAL_HUD"
+  ],
+  "stage16a_tests": {
+    "interaction": 14,
+    "ground_loot": 10,
+    "terrain_traversal_streaming": 18,
+    "realtime_dialogue": 18,
+    "minimal_hud": 18,
+    "checks": 78,
+    "passed": 78,
+    "failed": 0
+  },
+  "regression": {
+    "stage12_narrative": {
+      "checks": 21,
+      "passed": 21
+    },
+    "stage07_actor": {
+      "checks": 17,
+      "passed": 17
+    },
+    "status": "PASS"
+  },
+  "baseline_mutations": 0,
+  "canon_mutations": 0,
+  "backup_authorized": false,
+  "reason_no_backup": "STAGE16_NOT_100_PERCENT_FUNCTIONAL_UNTIL_GODOT_RUNTIME_VALIDATION",
+  "godot_gate": "PENDING_PC_ON_AND_EDITOR_BRIDGE_AVAILABLE",
+  "candidate_values_require_stage16b": true,
+  "next_minor_block": "CAMERA_GAME_FEEL_AND_CONTEXTUAL_FEEDBACK_CONTRACT"
+}

@@ -1,0 +1,561 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-LOCALITY-AREA-INDEX-DEV-V1.0",
+  "title": "Área Estimada por Localidade (m²) — footprint do assentamento inteiro, não só de 1 construção",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "r2_guard": "area_m2 = soma das construcoes (EST) ja vinculadas via parent_locality, vezes um multiplicador de espaco nao-construido (rua/praca/quintal) por escala de assentamento - nao mede prediso reais, e proporcao gameplay-derived documentada. Localidade sem construcao vinculada usa um valor-base por tier (CIDADE/VILA/POSTO/ACAMPAMENTO/COMPLEXO), nunca um numero solto.",
+  "multiplier_by_tier": {
+    "CIDADE": 8.0,
+    "VILA": 6.0,
+    "POSTO": 4.0,
+    "ACAMPAMENTO": 3.0,
+    "COMPLEXO": 2.0
+  },
+  "fallback_m2_by_tier": {
+    "CIDADE": 350000.0,
+    "VILA": 35000.0,
+    "POSTO": 9000.0,
+    "ACAMPAMENTO": 5000.0,
+    "COMPLEXO": 2000.0
+  },
+  "localities": [
+    {
+      "loc_id": "LOC-017-001",
+      "settlement_tier": "COMPLEXO",
+      "estimated_area_m2": 322.4,
+      "linked_constructions": [
+        "EST-058"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-017-002",
+      "settlement_tier": "POSTO",
+      "estimated_area_m2": 6970.0,
+      "linked_constructions": [
+        "EST-059"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-017-003",
+      "settlement_tier": "VILA",
+      "estimated_area_m2": 324.0,
+      "linked_constructions": [
+        "EST-060"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-004-001",
+      "settlement_tier": "COMPLEXO",
+      "estimated_area_m2": 3188.4,
+      "linked_constructions": [
+        "EST-017",
+        "EST-047"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-004-002",
+      "settlement_tier": "VILA",
+      "estimated_area_m2": 438.6,
+      "linked_constructions": [
+        "EST-006"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-004-003",
+      "settlement_tier": "CIDADE",
+      "estimated_area_m2": 7144.8,
+      "linked_constructions": [
+        "EST-018"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-014-001",
+      "settlement_tier": "COMPLEXO",
+      "estimated_area_m2": 2725.0,
+      "linked_constructions": [
+        "EST-049"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-014-002",
+      "settlement_tier": "POSTO",
+      "estimated_area_m2": 400.0,
+      "linked_constructions": [
+        "EST-050"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-014-003",
+      "settlement_tier": "VILA",
+      "estimated_area_m2": 1594.8,
+      "linked_constructions": [
+        "EST-051"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-001-001",
+      "settlement_tier": "COMPLEXO",
+      "estimated_area_m2": 564.8,
+      "linked_constructions": [
+        "EST-001"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-001-002",
+      "settlement_tier": "POSTO",
+      "estimated_area_m2": 2943.6,
+      "linked_constructions": [
+        "EST-007",
+        "EST-046"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-001-003",
+      "settlement_tier": "CIDADE",
+      "estimated_area_m2": 7166.4,
+      "linked_constructions": [
+        "EST-013"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-016-001",
+      "settlement_tier": "POSTO",
+      "estimated_area_m2": 2460.0,
+      "linked_constructions": [
+        "EST-055"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-016-002",
+      "settlement_tier": "CIDADE",
+      "estimated_area_m2": 880.0,
+      "linked_constructions": [
+        "EST-056"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-016-003",
+      "settlement_tier": "POSTO",
+      "estimated_area_m2": 2624.0,
+      "linked_constructions": [
+        "EST-057"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-010-001",
+      "settlement_tier": "CIDADE",
+      "estimated_area_m2": 4833.6,
+      "linked_constructions": [
+        "EST-033"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-010-002",
+      "settlement_tier": "COMPLEXO",
+      "estimated_area_m2": 3981.4,
+      "linked_constructions": [
+        "EST-034",
+        "EST-044"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-010-003",
+      "settlement_tier": "COMPLEXO",
+      "estimated_area_m2": 2325.0,
+      "linked_constructions": [
+        "EST-035"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-013-001",
+      "settlement_tier": "POSTO",
+      "estimated_area_m2": 1961.6,
+      "linked_constructions": [
+        "EST-010",
+        "EST-067"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-013-002",
+      "settlement_tier": "CIDADE",
+      "estimated_area_m2": 9463.2,
+      "linked_constructions": [
+        "EST-042"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-013-003",
+      "settlement_tier": "POSTO",
+      "estimated_area_m2": 2456.0,
+      "linked_constructions": [
+        "EST-043"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-018-001",
+      "settlement_tier": "CIDADE",
+      "estimated_area_m2": 20240.0,
+      "linked_constructions": [
+        "EST-061"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-018-002",
+      "settlement_tier": "VILA",
+      "estimated_area_m2": 775.2,
+      "linked_constructions": [
+        "EST-062"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-018-003",
+      "settlement_tier": "COMPLEXO",
+      "estimated_area_m2": 628.8,
+      "linked_constructions": [
+        "EST-063"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-009-001",
+      "settlement_tier": "CIDADE",
+      "estimated_area_m2": 640.0,
+      "linked_constructions": [
+        "EST-030"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-009-002",
+      "settlement_tier": "POSTO",
+      "estimated_area_m2": 7860.0,
+      "linked_constructions": [
+        "EST-031"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-009-003",
+      "settlement_tier": "COMPLEXO",
+      "estimated_area_m2": 1881.6,
+      "linked_constructions": [
+        "EST-032"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-019-001",
+      "settlement_tier": "POSTO",
+      "estimated_area_m2": 1099.2,
+      "linked_constructions": [
+        "EST-064"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-019-002",
+      "settlement_tier": "COMPLEXO",
+      "estimated_area_m2": 1644.0,
+      "linked_constructions": [
+        "EST-065"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-019-003",
+      "settlement_tier": "POSTO",
+      "estimated_area_m2": 1908.8,
+      "linked_constructions": [
+        "EST-066"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-005-001",
+      "settlement_tier": "COMPLEXO",
+      "estimated_area_m2": 5125.2,
+      "linked_constructions": [
+        "EST-019",
+        "EST-068"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-005-002",
+      "settlement_tier": "COMPLEXO",
+      "estimated_area_m2": 2148.0,
+      "linked_constructions": [
+        "EST-020"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-005-003",
+      "settlement_tier": "CIDADE",
+      "estimated_area_m2": 3681.6,
+      "linked_constructions": [
+        "EST-021"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-006-001",
+      "settlement_tier": "COMPLEXO",
+      "estimated_area_m2": 164.0,
+      "linked_constructions": [
+        "EST-022"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-006-002",
+      "settlement_tier": "COMPLEXO",
+      "estimated_area_m2": 5745.6,
+      "linked_constructions": [
+        "EST-023",
+        "EST-048"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-006-003",
+      "settlement_tier": "CIDADE",
+      "estimated_area_m2": 8570.4,
+      "linked_constructions": [
+        "EST-024"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-002-001",
+      "settlement_tier": "CIDADE",
+      "estimated_area_m2": 12314.4,
+      "linked_constructions": [
+        "EST-003",
+        "EST-011"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-002-002",
+      "settlement_tier": "COMPLEXO",
+      "estimated_area_m2": 390.8,
+      "linked_constructions": [
+        "EST-002"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-002-003",
+      "settlement_tier": "POSTO",
+      "estimated_area_m2": 176.8,
+      "linked_constructions": [
+        "EST-008"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-003-001",
+      "settlement_tier": "COMPLEXO",
+      "estimated_area_m2": 552.0,
+      "linked_constructions": [
+        "EST-014"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-003-002",
+      "settlement_tier": "COMPLEXO",
+      "estimated_area_m2": 3005.0,
+      "linked_constructions": [
+        "EST-015"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-003-003",
+      "settlement_tier": "CIDADE",
+      "estimated_area_m2": 4725.6,
+      "linked_constructions": [
+        "EST-016"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-007-001",
+      "settlement_tier": "COMPLEXO",
+      "estimated_area_m2": 195.8,
+      "linked_constructions": [
+        "EST-012"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-007-002",
+      "settlement_tier": "COMPLEXO",
+      "estimated_area_m2": 1685.4,
+      "linked_constructions": [
+        "EST-025"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-007-003",
+      "settlement_tier": "CIDADE",
+      "estimated_area_m2": 6640.8,
+      "linked_constructions": [
+        "EST-026"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-008-001",
+      "settlement_tier": "COMPLEXO",
+      "estimated_area_m2": 227.0,
+      "linked_constructions": [
+        "EST-027"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-008-002",
+      "settlement_tier": "COMPLEXO",
+      "estimated_area_m2": 2178.6,
+      "linked_constructions": [
+        "EST-028"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-008-003",
+      "settlement_tier": "CIDADE",
+      "estimated_area_m2": 4552.8,
+      "linked_constructions": [
+        "EST-029"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-011-002",
+      "settlement_tier": "POSTO",
+      "estimated_area_m2": 479.2,
+      "linked_constructions": [
+        "EST-036"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-011-003",
+      "settlement_tier": "COMPLEXO",
+      "estimated_area_m2": 3560.0,
+      "linked_constructions": [
+        "EST-037"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-011-004",
+      "settlement_tier": "COMPLEXO",
+      "estimated_area_m2": 75.2,
+      "linked_constructions": [
+        "EST-038"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-011-005",
+      "settlement_tier": "COMPLEXO",
+      "estimated_area_m2": 1080.0,
+      "linked_constructions": [
+        "EST-004"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-011-006",
+      "settlement_tier": "POSTO",
+      "estimated_area_m2": 2182.4,
+      "linked_constructions": [
+        "EST-039"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-015-001",
+      "settlement_tier": "ACAMPAMENTO",
+      "estimated_area_m2": 111.3,
+      "linked_constructions": [
+        "EST-052"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-015-002",
+      "settlement_tier": "COMPLEXO",
+      "estimated_area_m2": 1150.8,
+      "linked_constructions": [
+        "EST-053"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-015-003",
+      "settlement_tier": "COMPLEXO",
+      "estimated_area_m2": 296.8,
+      "linked_constructions": [
+        "EST-054"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-012-001",
+      "settlement_tier": "POSTO",
+      "estimated_area_m2": 2660.0,
+      "linked_constructions": [
+        "EST-040"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-012-002",
+      "settlement_tier": "ACAMPAMENTO",
+      "estimated_area_m2": 183.6,
+      "linked_constructions": [
+        "EST-041"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    },
+    {
+      "loc_id": "LOC-012-003",
+      "settlement_tier": "CIDADE",
+      "estimated_area_m2": 1897.6,
+      "linked_constructions": [
+        "EST-009"
+      ],
+      "method": "SUM_LINKED_CONSTRUCTIONS_TIMES_TIER_MULTIPLIER"
+    }
+  ]
+}

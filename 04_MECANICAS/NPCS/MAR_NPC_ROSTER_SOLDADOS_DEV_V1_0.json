@@ -1,0 +1,544 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "MAR-NPC-ROSTER-SOLDADOS-DEV-V1.0",
+  "title": "Roster de NPCs — Soldados (armas de fogo e equipamento tático)",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "canonical_status": "GAMEPLAY_DERIVED_DEV",
+  "balance_model": "Total Power Budget (TPB) fixo por tier: BAIXO=80, MÉDIO=100, ALTO=120, dividido entre hp+speed+damage_mod+armor. NPCs do mesmo tier têm poder total idêntico, perfis diferentes. Loadout por arquétipo (arma principal + equipamento tático), 4 arquétipos × 4 tiers de runificação (R0-R3) = 16 NPCs.",
+  "weapon_source_files": [
+    "MAR_FIREARMS_GAMEPLAY_STATS_DEV_V1_0.json",
+    "MAR_MELEE_AND_SPECIAL_GAMEPLAY_STATS_DEV_V1_0.json",
+    "MAR_ARSENAL_EXPANSION_DEV_V1_0.json"
+  ],
+  "npcs": [
+    {
+      "npc_id": "SOL-01",
+      "name": "Recruta de Linha",
+      "class_name": "Soldados",
+      "tier": "BAIXO",
+      "role": "MÉDICO",
+      "loadout_archetype": "Fuzileiro-Demolição",
+      "weapon_ids": [
+        "WPN-FUZ-003",
+        "WPN-EXP-003"
+      ],
+      "power_budget": {
+        "hp": 25,
+        "speed": 20,
+        "damage_mod": 20,
+        "armor": 15,
+        "total": 80
+      },
+      "passive_skill": {
+        "skill_id": "SOL-P-FOLEGO",
+        "skill_kind": "PASSIVE",
+        "name": "Fôlego de Combate",
+        "effect": "+10% regeneração de resistência fora de combate"
+      },
+      "active_skill": {
+        "skill_id": "SOL-A-CURA",
+        "skill_kind": "ACTIVE",
+        "name": "Cura de Campo",
+        "effect": "restaura HP de um aliado próximo",
+        "resource_cost": 25,
+        "cooldown_s": 10.0
+      }
+    },
+    {
+      "npc_id": "SOL-02",
+      "name": "Batedor de Fronteira",
+      "class_name": "Soldados",
+      "tier": "BAIXO",
+      "role": "FRANCO",
+      "loadout_archetype": "Batedor-Contenção",
+      "weapon_ids": [
+        "WPN-REV-001",
+        "WPN-FLA-001"
+      ],
+      "power_budget": {
+        "hp": 15,
+        "speed": 35,
+        "damage_mod": 20,
+        "armor": 10,
+        "total": 80
+      },
+      "passive_skill": {
+        "skill_id": "SOL-P-FOLEGO",
+        "skill_kind": "PASSIVE",
+        "name": "Fôlego de Combate",
+        "effect": "+10% regeneração de resistência fora de combate"
+      },
+      "active_skill": {
+        "skill_id": "SOL-A-AVANCO",
+        "skill_kind": "ACTIVE",
+        "name": "Avanço Coberto",
+        "effect": "desloca 6m e remove enraizamento",
+        "resource_cost": 18,
+        "cooldown_s": 9.0
+      }
+    },
+    {
+      "npc_id": "SOL-03",
+      "name": "Escudeiro de Contenção",
+      "class_name": "Soldados",
+      "tier": "BAIXO",
+      "role": "SUPORTE",
+      "loadout_archetype": "Choque-Bloqueio",
+      "weapon_ids": [
+        "WPN-ESP-003",
+        "WPN-CNT-003"
+      ],
+      "power_budget": {
+        "hp": 35,
+        "speed": 10,
+        "damage_mod": 20,
+        "armor": 15,
+        "total": 80
+      },
+      "passive_skill": {
+        "skill_id": "SOL-P-COLETE",
+        "skill_kind": "PASSIVE",
+        "name": "Colete Reforçado",
+        "effect": "-8% dano físico recebido (flat)"
+      },
+      "active_skill": {
+        "skill_id": "SOL-A-REFORCO",
+        "skill_kind": "ACTIVE",
+        "name": "Reforço de Esquadrão",
+        "effect": "avança 4m, próximo golpe +30% dano",
+        "resource_cost": 20,
+        "cooldown_s": 8.0
+      }
+    },
+    {
+      "npc_id": "SOL-04",
+      "name": "Atirador Novato",
+      "class_name": "Soldados",
+      "tier": "BAIXO",
+      "role": "ASSALTO",
+      "loadout_archetype": "Precisão-Suporte",
+      "weapon_ids": [
+        "WPN-PRE-003",
+        "WPN-ARR-001"
+      ],
+      "power_budget": {
+        "hp": 15,
+        "speed": 20,
+        "damage_mod": 35,
+        "armor": 10,
+        "total": 80
+      },
+      "passive_skill": {
+        "skill_id": "SOL-P-MIRA",
+        "skill_kind": "PASSIVE",
+        "name": "Mira Calibrada",
+        "effect": "+20% resistência a dano quando HP < 30%"
+      },
+      "active_skill": {
+        "skill_id": "SOL-A-RAJADA",
+        "skill_kind": "ACTIVE",
+        "name": "Rajada Focada",
+        "effect": "+25% damage_mod por 5s",
+        "resource_cost": 30,
+        "cooldown_s": 12.0
+      }
+    },
+    {
+      "npc_id": "SOL-05",
+      "name": "Fuzileiro Padrão",
+      "class_name": "Soldados",
+      "tier": "MÉDIO",
+      "role": "MÉDICO",
+      "loadout_archetype": "Fuzileiro-Demolição",
+      "weapon_ids": [
+        "WPN-FUZ-001",
+        "WPN-EXP-001"
+      ],
+      "power_budget": {
+        "hp": 30,
+        "speed": 25,
+        "damage_mod": 25,
+        "armor": 20,
+        "total": 100
+      },
+      "passive_skill": {
+        "skill_id": "SOL-P-FOLEGO",
+        "skill_kind": "PASSIVE",
+        "name": "Fôlego de Combate",
+        "effect": "+10% regeneração de resistência fora de combate"
+      },
+      "active_skill": {
+        "skill_id": "SOL-A-CURA",
+        "skill_kind": "ACTIVE",
+        "name": "Cura de Campo",
+        "effect": "restaura HP de um aliado próximo",
+        "resource_cost": 25,
+        "cooldown_s": 10.0
+      }
+    },
+    {
+      "npc_id": "SOL-06",
+      "name": "Batedor Armado",
+      "class_name": "Soldados",
+      "tier": "MÉDIO",
+      "role": "FRANCO",
+      "loadout_archetype": "Batedor-Contenção",
+      "weapon_ids": [
+        "WPN-REV-003",
+        "WPN-FLA-003"
+      ],
+      "power_budget": {
+        "hp": 25,
+        "speed": 40,
+        "damage_mod": 25,
+        "armor": 10,
+        "total": 100
+      },
+      "passive_skill": {
+        "skill_id": "SOL-P-FOLEGO",
+        "skill_kind": "PASSIVE",
+        "name": "Fôlego de Combate",
+        "effect": "+10% regeneração de resistência fora de combate"
+      },
+      "active_skill": {
+        "skill_id": "SOL-A-AVANCO",
+        "skill_kind": "ACTIVE",
+        "name": "Avanço Coberto",
+        "effect": "desloca 6m e remove enraizamento",
+        "resource_cost": 18,
+        "cooldown_s": 9.0
+      }
+    },
+    {
+      "npc_id": "SOL-07",
+      "name": "Guardião de Bloqueio",
+      "class_name": "Soldados",
+      "tier": "MÉDIO",
+      "role": "SUPORTE",
+      "loadout_archetype": "Choque-Bloqueio",
+      "weapon_ids": [
+        "WPN-ESP-001",
+        "WPN-CNT-001"
+      ],
+      "power_budget": {
+        "hp": 45,
+        "speed": 15,
+        "damage_mod": 20,
+        "armor": 20,
+        "total": 100
+      },
+      "passive_skill": {
+        "skill_id": "SOL-P-COLETE",
+        "skill_kind": "PASSIVE",
+        "name": "Colete Reforçado",
+        "effect": "-8% dano físico recebido (flat)"
+      },
+      "active_skill": {
+        "skill_id": "SOL-A-REFORCO",
+        "skill_kind": "ACTIVE",
+        "name": "Reforço de Esquadrão",
+        "effect": "avança 4m, próximo golpe +30% dano",
+        "resource_cost": 20,
+        "cooldown_s": 8.0
+      }
+    },
+    {
+      "npc_id": "SOL-08",
+      "name": "Atirador de Elite Jr.",
+      "class_name": "Soldados",
+      "tier": "MÉDIO",
+      "role": "ASSALTO",
+      "loadout_archetype": "Precisão-Suporte",
+      "weapon_ids": [
+        "WPN-PRE-001",
+        "WPN-ARR-003"
+      ],
+      "power_budget": {
+        "hp": 20,
+        "speed": 25,
+        "damage_mod": 45,
+        "armor": 10,
+        "total": 100
+      },
+      "passive_skill": {
+        "skill_id": "SOL-P-MIRA",
+        "skill_kind": "PASSIVE",
+        "name": "Mira Calibrada",
+        "effect": "+20% resistência a dano quando HP < 30%"
+      },
+      "active_skill": {
+        "skill_id": "SOL-A-RAJADA",
+        "skill_kind": "ACTIVE",
+        "name": "Rajada Focada",
+        "effect": "+25% damage_mod por 5s",
+        "resource_cost": 30,
+        "cooldown_s": 12.0
+      }
+    },
+    {
+      "npc_id": "SOL-09",
+      "name": "Fuzileiro de Assalto",
+      "class_name": "Soldados",
+      "tier": "MÉDIO",
+      "role": "ASSALTO",
+      "loadout_archetype": "Fuzileiro-Demolição",
+      "weapon_ids": [
+        "WPN-FUZ-002",
+        "WPN-EXP-002"
+      ],
+      "power_budget": {
+        "hp": 20,
+        "speed": 25,
+        "damage_mod": 45,
+        "armor": 10,
+        "total": 100
+      },
+      "passive_skill": {
+        "skill_id": "SOL-P-MIRA",
+        "skill_kind": "PASSIVE",
+        "name": "Mira Calibrada",
+        "effect": "+20% resistência a dano quando HP < 30%"
+      },
+      "active_skill": {
+        "skill_id": "SOL-A-RAJADA",
+        "skill_kind": "ACTIVE",
+        "name": "Rajada Focada",
+        "effect": "+25% damage_mod por 5s",
+        "resource_cost": 30,
+        "cooldown_s": 12.0
+      }
+    },
+    {
+      "npc_id": "SOL-10",
+      "name": "Batedor Selado",
+      "class_name": "Soldados",
+      "tier": "MÉDIO",
+      "role": "MÉDICO",
+      "loadout_archetype": "Batedor-Contenção",
+      "weapon_ids": [
+        "WPN-REV-002",
+        "WPN-FLA-002"
+      ],
+      "power_budget": {
+        "hp": 30,
+        "speed": 25,
+        "damage_mod": 25,
+        "armor": 20,
+        "total": 100
+      },
+      "passive_skill": {
+        "skill_id": "SOL-P-FOLEGO",
+        "skill_kind": "PASSIVE",
+        "name": "Fôlego de Combate",
+        "effect": "+10% regeneração de resistência fora de combate"
+      },
+      "active_skill": {
+        "skill_id": "SOL-A-CURA",
+        "skill_kind": "ACTIVE",
+        "name": "Cura de Campo",
+        "effect": "restaura HP de um aliado próximo",
+        "resource_cost": 25,
+        "cooldown_s": 10.0
+      }
+    },
+    {
+      "npc_id": "SOL-11",
+      "name": "Breacher Ágil",
+      "class_name": "Soldados",
+      "tier": "MÉDIO",
+      "role": "FRANCO",
+      "loadout_archetype": "Choque-Bloqueio",
+      "weapon_ids": [
+        "WPN-ESP-004",
+        "WPN-CNT-002"
+      ],
+      "power_budget": {
+        "hp": 25,
+        "speed": 40,
+        "damage_mod": 25,
+        "armor": 10,
+        "total": 100
+      },
+      "passive_skill": {
+        "skill_id": "SOL-P-FOLEGO",
+        "skill_kind": "PASSIVE",
+        "name": "Fôlego de Combate",
+        "effect": "+10% regeneração de resistência fora de combate"
+      },
+      "active_skill": {
+        "skill_id": "SOL-A-AVANCO",
+        "skill_kind": "ACTIVE",
+        "name": "Avanço Coberto",
+        "effect": "desloca 6m e remove enraizamento",
+        "resource_cost": 18,
+        "cooldown_s": 9.0
+      }
+    },
+    {
+      "npc_id": "SOL-12",
+      "name": "Atirador de Apoio",
+      "class_name": "Soldados",
+      "tier": "MÉDIO",
+      "role": "SUPORTE",
+      "loadout_archetype": "Precisão-Suporte",
+      "weapon_ids": [
+        "WPN-PRE-004",
+        "WPN-ARR-002"
+      ],
+      "power_budget": {
+        "hp": 45,
+        "speed": 15,
+        "damage_mod": 20,
+        "armor": 20,
+        "total": 100
+      },
+      "passive_skill": {
+        "skill_id": "SOL-P-COLETE",
+        "skill_kind": "PASSIVE",
+        "name": "Colete Reforçado",
+        "effect": "-8% dano físico recebido (flat)"
+      },
+      "active_skill": {
+        "skill_id": "SOL-A-REFORCO",
+        "skill_kind": "ACTIVE",
+        "name": "Reforço de Esquadrão",
+        "effect": "avança 4m, próximo golpe +30% dano",
+        "resource_cost": 20,
+        "cooldown_s": 8.0
+      }
+    },
+    {
+      "npc_id": "SOL-13",
+      "name": "Fuzileiro de Vanguarda",
+      "class_name": "Soldados",
+      "tier": "ALTO",
+      "role": "SUPORTE",
+      "loadout_archetype": "Fuzileiro-Demolição",
+      "weapon_ids": [
+        "WPN-FUZ-004",
+        "WPN-EXP-004"
+      ],
+      "power_budget": {
+        "hp": 60,
+        "speed": 15,
+        "damage_mod": 30,
+        "armor": 15,
+        "total": 120
+      },
+      "passive_skill": {
+        "skill_id": "SOL-P-COLETE",
+        "skill_kind": "PASSIVE",
+        "name": "Colete Reforçado",
+        "effect": "-8% dano físico recebido (flat)"
+      },
+      "active_skill": {
+        "skill_id": "SOL-A-REFORCO",
+        "skill_kind": "ACTIVE",
+        "name": "Reforço de Esquadrão",
+        "effect": "avança 4m, próximo golpe +30% dano",
+        "resource_cost": 20,
+        "cooldown_s": 8.0
+      }
+    },
+    {
+      "npc_id": "SOL-14",
+      "name": "Batedor de Elite",
+      "class_name": "Soldados",
+      "tier": "ALTO",
+      "role": "FRANCO",
+      "loadout_archetype": "Batedor-Contenção",
+      "weapon_ids": [
+        "WPN-REV-004",
+        "WPN-FLA-004"
+      ],
+      "power_budget": {
+        "hp": 35,
+        "speed": 45,
+        "damage_mod": 25,
+        "armor": 15,
+        "total": 120
+      },
+      "passive_skill": {
+        "skill_id": "SOL-P-FOLEGO",
+        "skill_kind": "PASSIVE",
+        "name": "Fôlego de Combate",
+        "effect": "+10% regeneração de resistência fora de combate"
+      },
+      "active_skill": {
+        "skill_id": "SOL-A-AVANCO",
+        "skill_kind": "ACTIVE",
+        "name": "Avanço Coberto",
+        "effect": "desloca 6m e remove enraizamento",
+        "resource_cost": 18,
+        "cooldown_s": 9.0
+      }
+    },
+    {
+      "npc_id": "SOL-15",
+      "name": "Breacher Pesado",
+      "class_name": "Soldados",
+      "tier": "ALTO",
+      "role": "SUPORTE",
+      "loadout_archetype": "Choque-Bloqueio",
+      "weapon_ids": [
+        "WPN-ESP-002",
+        "WPN-CNT-004"
+      ],
+      "power_budget": {
+        "hp": 50,
+        "speed": 15,
+        "damage_mod": 35,
+        "armor": 20,
+        "total": 120
+      },
+      "passive_skill": {
+        "skill_id": "SOL-P-COLETE",
+        "skill_kind": "PASSIVE",
+        "name": "Colete Reforçado",
+        "effect": "-8% dano físico recebido (flat)"
+      },
+      "active_skill": {
+        "skill_id": "SOL-A-REFORCO",
+        "skill_kind": "ACTIVE",
+        "name": "Reforço de Esquadrão",
+        "effect": "avança 4m, próximo golpe +30% dano",
+        "resource_cost": 20,
+        "cooldown_s": 8.0
+      }
+    },
+    {
+      "npc_id": "SOL-16",
+      "name": "Atirador Convergente",
+      "class_name": "Soldados",
+      "tier": "ALTO",
+      "role": "ASSALTO",
+      "loadout_archetype": "Precisão-Suporte",
+      "weapon_ids": [
+        "WPN-PRE-002",
+        "WPN-ARR-004"
+      ],
+      "power_budget": {
+        "hp": 30,
+        "speed": 20,
+        "damage_mod": 55,
+        "armor": 15,
+        "total": 120
+      },
+      "passive_skill": {
+        "skill_id": "SOL-P-MIRA",
+        "skill_kind": "PASSIVE",
+        "name": "Mira Calibrada",
+        "effect": "+20% resistência a dano quando HP < 30%"
+      },
+      "active_skill": {
+        "skill_id": "SOL-A-RAJADA",
+        "skill_kind": "ACTIVE",
+        "name": "Rajada Focada",
+        "effect": "+25% damage_mod por 5s",
+        "resource_cost": 30,
+        "cooldown_s": 12.0
+      }
+    }
+  ],
+  "role_system_note": "role reclassificado para o sistema de 4 funções Battlefield/PvZ GW (fase 27): SUPORTE/ASSALTO/MÉDICO/FRANCO. weapon_ids e power_budget não foram alterados."
+}

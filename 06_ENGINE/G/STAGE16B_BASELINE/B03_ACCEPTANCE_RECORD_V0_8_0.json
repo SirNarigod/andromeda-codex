@@ -1,0 +1,416 @@
+{
+  "record_id": "ARPG-STAGE16B-B03-ACCEPTANCE-RECORD-V0.8.0",
+  "project": "ANDROMEDA CODEX ARPG",
+  "stage": "16B/23",
+  "block": "B03_INTERACTION_TARGETS_NPC_ENEMY_RESOURCE_NODES",
+  "recorded_at": "2026-08-20T21:38:46.3319600-03:00",
+  "status": "B03_PASS_LOCAL_GODOT_WITH_LIVE_HTTP_BACKEND_NOT_AVAILABLE",
+  "block_closed": true,
+  "authority": {
+    "master": "ANDROMEDA_CODEX_MASTER_V2_0_1_READ_ONLY_UNCHANGED",
+    "stage16a": "V0.8.0_BASELINE_BYTE_IDENTICAL",
+    "living_godot_v15": "READ_ONLY_UNCHANGED",
+    "b01": "APPROVED_IMPLEMENTATION_PRESERVED_AND_REVALIDATED",
+    "b02": "APPROVED_BEHAVIOR_PRESERVED_REVALIDATED_WITH_STRICT_LAYER_CORRECTION",
+    "godot": "TARGET_DETECTION_HOVER_SELECTION_INTENT_PRESENTATION_ONLY",
+    "canon_mutations": 0,
+    "gameplay_authority_added_to_gdscript": false,
+    "commands_submitted_by_b03": 0
+  },
+  "environment": {
+    "godot_version": "4.7.1.stable.official.a13da4feb",
+    "godot_executable": "C:/Program Files/Godot/Godot.exe",
+    "python_version": "3.12.13",
+    "python_executable": "C:/Users/thall/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+    "stage16b_project": "C:/Users/thall/Documents/andromeda-argp/ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/07_GODOT_ARPG_STAGE16B"
+  },
+  "source_integrity": {
+    "checkpoint_sha256": "21626A3152CB37E167EEE24BFF9D3142C5D389A8CA2827594B34211591525A6A",
+    "master_v2_0_1_sha256": "6D9AC3CCE7DCF6A65FDCF73859C332A0211C1AF52D149077BEEF554BF7BBD0B2",
+    "checkpoint_files_verified": 724,
+    "post_b03_mismatches": 0,
+    "b01_implementation_files_rehashed": 4,
+    "b01_implementation_file_mismatches": 0,
+    "b02_immutable_script_gate_files_rehashed": 4,
+    "b02_immutable_script_gate_file_mismatches": 0,
+    "living_godot_v15_covered_by_checkpoint_comparison": true,
+    "status": "PASS",
+    "note": "All writes stayed inside 07_GODOT_ARPG_STAGE16B. project.godot, Main, InputRouter, Player scene, and camera scene evolved cumulatively for B03; B01 sources were not rewritten."
+  },
+  "existing_connections": {
+    "editor_bridge": {
+      "status": "PASS",
+      "connection": "EXISTING_LOCAL_ANDROMEDA_EDITOR_BRIDGE",
+      "capabilities_used": ["run_project", "get_debug_output", "stop_project"],
+      "b03_checks": 357,
+      "final_debugger_errors": 0,
+      "final_debugger_warnings": 0,
+      "controlled_stop_final_errors": 0,
+      "evidence": "B03_EDITOR_BRIDGE_DEBUGGER_V0_8_0.json"
+    },
+    "runtime_http_transport": {
+      "server_url": "http://127.0.0.1:8000",
+      "listener_count": 0,
+      "status": "NOT_AVAILABLE_NO_LISTENER",
+      "required_for_b03_local_detection_hover_intent_gate": false,
+      "required_for_authoritative_combat_cooldown_pickup_results": true,
+      "authoritative_roundtrip_executed": false,
+      "new_endpoint_created": false,
+      "counted_as_pass": false
+    }
+  },
+  "implementation": {
+    "main_scene": "res://scenes/Main.tscn",
+    "runtime_gate": "res://tests/godot/B03RuntimeGate.tscn",
+    "target_component": "res://scripts/interaction/interaction_target.gd",
+    "target_resolution_order": [
+      "SCREEN_DISTANCE_TO_CURSOR",
+      "VISUAL_DEPTH",
+      "SEMANTIC_TYPE_TIEBREAK_ONLY",
+      "TARGET_REF_DETERMINISTIC_FINAL_TIEBREAK"
+    ],
+    "target_scenes": [
+      "res://scenes/actors/NPC.tscn",
+      "res://scenes/actors/Enemy.tscn",
+      "res://scenes/actors/Animal.tscn",
+      "res://scenes/interaction/ResourceNode.tscn",
+      "res://scenes/interaction/InteractiveObject.tscn",
+      "res://scenes/interaction/Vehicle.tscn",
+      "res://scenes/interaction/GroundLoot.tscn"
+    ],
+    "resource_kinds_instanced": ["TREE", "ROCK", "ORE", "FLORA"],
+    "collision_layers": {
+      "WORLD_STATIC": 1,
+      "PLAYER": 2,
+      "ACTOR_BODY": 4,
+      "INTERACTABLE": 8,
+      "GROUND_LOOT": 16,
+      "RESOURCE_NODE": 32,
+      "VEHICLE": 64,
+      "NAV_BLOCKER": 128,
+      "CAMERA_OCCLUDER": 256,
+      "HIT_HURT_SENSOR": 512,
+      "WORLD_TRIGGER": 1024,
+      "WATER_VOLUME": 2048,
+      "DROPPED_BAG": 4096
+    },
+    "ground_loot_pickup_radius_m": 0.5,
+    "backend_substitute": false,
+    "final_art": false,
+    "ai_final": false,
+    "damage_final": false,
+    "loot_table_final": false,
+    "vendor_final": false,
+    "quest_final": false,
+    "gathering_result_final": false,
+    "auto_pickup_final": false
+  },
+  "tests": [
+    {
+      "id": "STAGE16B_B03_HEADLESS_RUNTIME_FINAL",
+      "result": "PASS",
+      "passed": 357,
+      "failed": 0,
+      "process_exit_code": 0,
+      "errors": 0,
+      "warnings": 0,
+      "evidence": "B03_GODOT_RUNTIME_CLEAN.log"
+    },
+    {
+      "id": "STAGE16B_B03_EDITOR_BRIDGE_DEBUGGER_FINAL",
+      "result": "PASS",
+      "passed": 357,
+      "failed": 0,
+      "debugger_errors": 0,
+      "debugger_warnings": 0,
+      "controlled_stop_final_errors": 0,
+      "evidence": "B03_EDITOR_BRIDGE_DEBUGGER_V0_8_0.json"
+    },
+    {
+      "id": "STAGE16B_B03_MAIN_DIRECT_EDITOR_BRIDGE_STARTUP",
+      "result": "PASS",
+      "debugger_errors": 0,
+      "debugger_warnings": 0,
+      "controlled_stop_final_errors": 0
+    },
+    {
+      "id": "STAGE16B_B01_HEADLESS_REGRESSION",
+      "result": "PASS",
+      "passed": 54,
+      "failed": 0,
+      "process_exit_code": 0,
+      "errors": 0,
+      "warnings": 0,
+      "evidence": "B03_GODOT_B01_REGRESSION.log"
+    },
+    {
+      "id": "STAGE16B_B01_EDITOR_BRIDGE_REGRESSION",
+      "result": "PASS",
+      "passed": 54,
+      "failed": 0,
+      "debugger_errors": 0,
+      "debugger_warnings": 0,
+      "controlled_stop_final_errors": 0
+    },
+    {
+      "id": "STAGE16B_B02_HEADLESS_REGRESSION",
+      "result": "PASS",
+      "passed": 90,
+      "failed": 0,
+      "process_exit_code": 0,
+      "errors": 0,
+      "warnings": 0,
+      "evidence": "B03_GODOT_B02_REGRESSION.log"
+    },
+    {
+      "id": "STAGE16B_B02_EDITOR_BRIDGE_REGRESSION",
+      "result": "PASS",
+      "passed": 90,
+      "failed": 0,
+      "debugger_errors": 0,
+      "debugger_warnings": 0,
+      "controlled_stop_final_errors": 0
+    },
+    {
+      "id": "STAGE16A_POST_B03_ACCUMULATED",
+      "result": "PASS",
+      "passed": 209,
+      "failed": 0,
+      "duration_s": 267.153,
+      "process_exit_code": 0,
+      "evidence": "B03_STAGE16A_REGRESSION_CLEAN.log"
+    },
+    {
+      "id": "STAGE16A_POST_B03_STRESS",
+      "result": "PASS",
+      "passed": 20,
+      "failed": 0,
+      "process_exit_code": 0,
+      "evidence": "B03_STAGE16A_STRESS.log"
+    },
+    {
+      "id": "STAGE16A_POST_B03_BYTE_INTEGRITY",
+      "result": "PASS",
+      "files_verified": 724,
+      "mismatches": 0
+    }
+  ],
+  "required_b03_scenarios": [
+    {"scenario": "HOVER_NPC", "status": "PASS"},
+    {"scenario": "NPC_NAME_VISIBLE_ONLY_WHILE_HOVERED", "status": "PASS"},
+    {"scenario": "HOVER_ENEMY", "status": "PASS"},
+    {"scenario": "HOVER_RESOURCE", "status": "PASS"},
+    {"scenario": "HOVER_GROUND_LOOT", "status": "PASS"},
+    {"scenario": "LEFT_CLICK_SELECT_TARGET", "status": "PASS"},
+    {"scenario": "LEFT_SELECTION_DOES_NOT_INTERRUPT_CURRENT_MOVEMENT", "status": "PASS"},
+    {"scenario": "LEFT_GROUND_LOOT_APPROACH_EXCEPTION", "status": "PASS"},
+    {"scenario": "RIGHT_CLICK_GROUND_MOVE", "status": "PASS"},
+    {"scenario": "RIGHT_CLICK_NPC_APPROACH_INTERACT_INTENT", "status": "PASS"},
+    {"scenario": "RIGHT_CLICK_ENEMY_CHASE_ATTACK_INTENT", "status": "PASS"},
+    {"scenario": "RIGHT_CLICK_ANIMAL_NEUTRAL_INTERACT_INTENT", "status": "PASS"},
+    {"scenario": "RIGHT_CLICK_TREE_ROCK_ORE_FLORA_HARVEST_INTENT", "status": "PASS"},
+    {"scenario": "RIGHT_CLICK_OBJECT_CONTEXT_INTENT", "status": "PASS"},
+    {"scenario": "RIGHT_CLICK_VEHICLE_CONTEXT_INTENT", "status": "PASS"},
+    {"scenario": "RIGHT_CLICK_GROUND_LOOT_APPROACH_PICKUP_INTENT", "status": "PASS"},
+    {"scenario": "TWO_PHYSICALLY_OVERLAPPED_TARGETS_CLICKED", "status": "PASS"},
+    {"scenario": "ACTUAL_CURSOR_TARGET_BEATS_BLIND_TYPE_PRIORITY", "status": "PASS"},
+    {"scenario": "VISUAL_DEPTH_BEATS_SEMANTIC_TYPE", "status": "PASS"},
+    {"scenario": "TYPE_USED_ONLY_AS_FINAL_TIEBREAK", "status": "PASS"},
+    {"scenario": "CLICK_RESOLVED_TARGET_STABLE_DURING_CAMERA_MOVEMENT", "status": "PASS"},
+    {"scenario": "HOVER_FEEDBACK_CANNOT_REWRITE_SELECTION", "status": "PASS"},
+    {"scenario": "GROUND_LOOT_PICKUP_RADIUS_INCLUSIVE_LE_0_5_M", "status": "PASS"},
+    {"scenario": "GROUND_LOOT_OVER_0_5_M_APPROACHES_INSTEAD_OF_REMOTE_PICKUP", "status": "PASS"},
+    {"scenario": "GROUND_LOOT_INVALID_PATH_REJECTED", "status": "PASS"},
+    {"scenario": "GROUND_LOOT_BEFORE_SETTLED_REJECTED", "status": "PASS"},
+    {"scenario": "RAYCAST_BLOCKER_PREVENTS_TARGET_BEHIND_COLLISION", "status": "PASS"},
+    {"scenario": "INACCESSIBLE_TARGET_NOT_TELEPORTED_OR_DELETED", "status": "PASS"},
+    {"scenario": "AUTO_PICKUP_NOT_IMPLEMENTED_AS_REMOTE_COLLECTION", "status": "PASS"},
+    {"scenario": "NPC_ENEMY_ANIMAL_IDENTITIES_REMAIN_DISTINCT", "status": "PASS"},
+    {"scenario": "RESOURCE_INTENT_DOES_NOT_TRANSFER_DIRECTLY_TO_INVENTORY", "status": "PASS"},
+    {"scenario": "DEBUGGER_NO_ERRORS_OR_WARNINGS", "status": "PASS"}
+  ],
+  "corrections": [
+    {
+      "finding": "B02 local constants 4 and 8 were described as pointer target and Ground Loot even though the V0.8.0 handoff assigns those bits to ACTOR_BODY and INTERACTABLE.",
+      "correction": "Name all 13 physics layers, move the B02 NPC placeholder to INTERACTABLE=8 and Ground Loot placeholder to GROUND_LOOT=16, update Player/camera masks, preserve paths/types, and rerun B02 in both modes.",
+      "verified": true
+    },
+    {
+      "finding": "First B03 import used an invalid static cast from AndromedaInteractionTarget to CollisionObject3D.",
+      "correction": "Read the root collision layer dynamically in the diagnostic snapshot and rerun editor import.",
+      "verified": true
+    },
+    {
+      "finding": "First Editor Bridge B03 run reported three unnecessary-await warnings despite 357/357 checks.",
+      "correction": "Invalidate the numerical PASS, remove the synchronous awaits, and restart headless plus Editor Bridge.",
+      "verified": true
+    },
+    {
+      "finding": "First Python regression launcher failed before tests because Start-Process received duplicate Windows Path/PATH keys.",
+      "correction": "Invalidate the attempt and rerun unittest directly with bundled Python, PYTHONDONTWRITEBYTECODE=1, and the verified Master V2.0.1 path.",
+      "verified": true
+    },
+    {
+      "finding": "The first direct unittest execution completed 209/209 with exit code 0, but PowerShell *> wrapped normal native stderr lines as NativeCommandError/RemoteException records in the evidence log.",
+      "correction": "Reject that log as final evidence and rerun all 209 tests through native cmd redirection; require a raw OK log with zero wrapper artifacts, traceback, or failure markers.",
+      "verified": true
+    }
+  ],
+  "invalid_attempts_not_counted": [
+    {
+      "attempt": "FIRST_B03_EDITOR_IMPORT",
+      "result": "FAIL",
+      "reason": "INVALID_STATIC_CAST_IN_INTERACTION_TARGET"
+    },
+    {
+      "attempt": "FIRST_B03_EDITOR_BRIDGE_NUMERICAL_PASS",
+      "result": "INVALIDATED_357_OF_357",
+      "reason": "THREE_UNNECESSARY_AWAIT_WARNINGS"
+    },
+    {
+      "attempt": "FIRST_STAGE16A_POST_B03_LAUNCHER",
+      "result": "NOT_EXECUTED_INVALID",
+      "reason": "WINDOWS_START_PROCESS_DUPLICATE_PATH_KEYS"
+    },
+    {
+      "attempt": "FIRST_STAGE16A_POST_B03_DIRECT_EVIDENCE",
+      "result": "INVALIDATED_DESPITE_209_OF_209_AND_EXIT_0",
+      "reason": "POWERSHELL_NATIVE_STDERR_WRAPPER_ARTIFACTS_IN_LOG"
+    }
+  ],
+  "modified_source_files": [
+    "project.godot",
+    "scripts/main.gd",
+    "scripts/input/input_router.gd",
+    "scenes/Main.tscn",
+    "scenes/actors/Player.tscn",
+    "scenes/camera/IsometricCameraRig.tscn"
+  ],
+  "created_source_files": [
+    "scripts/interaction/interaction_target.gd",
+    "scripts/interaction/interaction_target.gd.uid",
+    "scenes/actors/NPC.tscn",
+    "scenes/actors/Enemy.tscn",
+    "scenes/actors/Animal.tscn",
+    "scenes/interaction/ResourceNode.tscn",
+    "scenes/interaction/InteractiveObject.tscn",
+    "scenes/interaction/Vehicle.tscn",
+    "scenes/interaction/GroundLoot.tscn",
+    "tests/godot/B03RuntimeGate.tscn",
+    "tests/godot/b03_runtime_gate.gd",
+    "tests/godot/b03_runtime_gate.gd.uid"
+  ],
+  "created_final_evidence_files": [
+    "README_STAGE16B_B03.md",
+    "B03_GODOT_RUNTIME_CLEAN.log",
+    "B03_GODOT_RUNTIME_CLEAN.err",
+    "B03_GODOT_B01_REGRESSION.log",
+    "B03_GODOT_B01_REGRESSION.err",
+    "B03_GODOT_B02_REGRESSION.log",
+    "B03_GODOT_B02_REGRESSION.err",
+    "B03_STAGE16A_REGRESSION_CLEAN.log",
+    "B03_STAGE16A_STRESS.log",
+    "B03_EDITOR_BRIDGE_DEBUGGER_V0_8_0.json",
+    "B03_IMPLEMENTATION_LOG_V0_8_0.md",
+    "B03_ACCEPTANCE_RECORD_V0_8_0.json"
+  ],
+  "diagnostic_evidence_files": [
+    "B03_GODOT_IMPORT_DIAGNOSTIC.log",
+    "B03_GODOT_IMPORT_DIAGNOSTIC.err",
+    "B03_GODOT_IMPORT_DIAGNOSTIC_R2.log",
+    "B03_GODOT_IMPORT_DIAGNOSTIC_R2.err",
+    "B03_GODOT_IMPORT_DIAGNOSTIC_R3.log",
+    "B03_GODOT_IMPORT_DIAGNOSTIC_R3.err",
+    "B03_GODOT_GATE_R1.log",
+    "B03_GODOT_GATE_R1.err",
+    "B03_GODOT_RUNTIME.log",
+    "B03_GODOT_RUNTIME.err",
+    "B03_B02_REGRESSION_DIAGNOSTIC.log",
+    "B03_B02_REGRESSION_DIAGNOSTIC.err",
+    "B03_STAGE16A_REGRESSION.stdout.log",
+    "B03_STAGE16A_REGRESSION.stderr.log",
+    "B03_STAGE16A_REGRESSION.log"
+  ],
+  "code_sha256": {
+    "project.godot": "437EF4D1AA91A7F0F5504C218B44527BBB90F9A75DC53EBA6C9DE3B9966C5BAD",
+    "scripts/main.gd": "A3FCF9B4C3DE1C24B54D1F64828FFEF4A2756EF923848D2EDC6FFA6C6C5EA2BC",
+    "scripts/input/input_router.gd": "86046F9E4849542D85F8414EBA8AE4B45543A31F9E0A5140B54BC4C69A5D7CFB",
+    "scripts/interaction/interaction_target.gd": "F3A16879645B2E3E7333D456786F79148D7FE5905B79330263C05E9610AAEAFD",
+    "scripts/interaction/interaction_target.gd.uid": "7B630B10B939F0F582F8FC55E2D9FE0AB13A79BDA3B2301A48F0DD26CE94B05D",
+    "scenes/Main.tscn": "2B006B23C52093A30BE80783EC59B6039E9C5FD9ACCAB1C7D9A26430385DAC9B",
+    "scenes/actors/Player.tscn": "B2F5F00412BE8CB5121D7CED84633B6CC561D4AC3350BA1653929CC73D0CB5CC",
+    "scenes/camera/IsometricCameraRig.tscn": "F9ECD7094B803A1F9FDC2677AE87A68B5F8E3E412C48866949BD2FDD19AB0636",
+    "scenes/actors/NPC.tscn": "8164E116627FAAA74D1B03F42A4DDE3F35C1E7A4F31D3BE78728AEB48DBB4648",
+    "scenes/actors/Enemy.tscn": "A66C805E20F1DEEBE366957A4F3995619D5038394DC6E23213E69FE3013F13E2",
+    "scenes/actors/Animal.tscn": "F4C61876208DBB6CF057A82E13329BCCA7B2BACAB7B424DC0F73CB5D0320BF56",
+    "scenes/interaction/ResourceNode.tscn": "C9710457C298EE4E50DE24EDBBA9EF61301229BF4359DFE78049A2CEE4B627D3",
+    "scenes/interaction/InteractiveObject.tscn": "C2BADA4E423EF4C594FB35B0FC8DCBE2524EBA697C249EF40364909AF9FBE15D",
+    "scenes/interaction/Vehicle.tscn": "E1B33C1F1CA30ADF93706AB20F7496EAE4B0069B639F3112DF4CA8F7ED4F46CB",
+    "scenes/interaction/GroundLoot.tscn": "B30AEF1431EC0260F593EE060502E4518A49F4DD29544C2987E2C8A48967211E",
+    "tests/godot/B03RuntimeGate.tscn": "12CBE7F050FCCD400527894316E3358511C4998E485DECC980CC4B6F30C0AD60",
+    "tests/godot/b03_runtime_gate.gd": "780B2D5A7637ADE657A0790E547E6174A5091C886F010FF3BD23D891546DB22C",
+    "tests/godot/b03_runtime_gate.gd.uid": "F19FBCFD2F53CC4C917F8C6984AE5549D0821D33C83FF872A641404F498341C9"
+  },
+  "final_evidence_sha256": {
+    "B03_GODOT_RUNTIME_CLEAN.log": "22F9AE94ADEBD103FBDD1575E917D2FAB041C3284A355275294A8718026D4417",
+    "B03_GODOT_B01_REGRESSION.log": "A18BB042179F3604B2E732EB48CB4388D75B87E31A629ECEFC3E1478D07D6F52",
+    "B03_GODOT_B02_REGRESSION.log": "C3B6DF49C7F88DF7ADD1FF41F25F4EA1412FB9A983BFE7EF215C70C40FEAABA7",
+    "B03_STAGE16A_REGRESSION_CLEAN.log": "97095DACBD82F66A5038783365AE91433EC9999B91A1D72F3BF357B1B98769FA",
+    "B03_STAGE16A_STRESS.log": "E5DF03CF8058C181C2262C224B714060F8E913E5E8E15957C3A73A56CC28D8C4",
+    "B03_EDITOR_BRIDGE_DEBUGGER_V0_8_0.json": "C4766D503980545F0ECAEEA823865AF535942151AE11D4B5A5D605AEBCB2AF7E"
+  },
+  "b01_source_sha256_revalidated": {
+    "scripts/runtime/andromeda_bridge.gd": "50F4E167A51FF1FF112A5A47FA580995C4297ACC2F4D782A7F942AC99EA38FC0",
+    "scripts/runtime/client_session.gd": "220684033C72175C482622B7F6700CA1C8154426A32ABDAC9131B713CEEDCE54",
+    "tests/godot/B01RuntimeGate.tscn": "DE8DBCCFCCB8C49841C65075359B24E919736F2D2D20834B86F715D9287543A1",
+    "tests/godot/b01_runtime_gate.gd": "A573EC5DB3C3F94E33F990CD6E46334DE772754202C285781D3B479ADB02B8B5"
+  },
+  "b02_immutable_source_sha256_revalidated": {
+    "scripts/actors/player_controller.gd": "E4B49791EAB070B2EB7283C4C8865878AE2F48BB2A24351420BF13A3D33D825F",
+    "scripts/camera/isometric_camera_rig.gd": "02AD0E63A4A4EFC8CD9971A64D2FD06B5055A0A24A620C6CD44868E435A3D94C",
+    "tests/godot/B02RuntimeGate.tscn": "8F54DF442EABCF946EB6BCD400245843BCE2777773206735AC9C9F3DBAA82C19",
+    "tests/godot/b02_runtime_gate.gd": "E9CF8FC084FAD24AE7686F4F048AE6CE3E330882B93C8A6D8DAA1A06ECFCAD0C"
+  },
+  "acceptance_matrix": [
+    {"id": "G16B-01", "status": "PASS", "evidence": ["B01_54_OF_54_HEADLESS", "B01_54_OF_54_EDITOR_BRIDGE"]},
+    {"id": "G16B-02", "status": "PASS", "evidence": ["B02_90_OF_90_HEADLESS", "B02_90_OF_90_EDITOR_BRIDGE", "B03_LEFT_SELECTION_AND_LOOT_EXCEPTION"]},
+    {"id": "G16B-03", "status": "PARTIAL_EVIDENCE_B03_NOT_PASS", "evidence": ["RIGHT_CLICK_TARGET_DETECTION", "CHASE_ATTACK_INTENT_ENVELOPE", "NPC_ANIMAL_RESOURCE_OBJECT_VEHICLE_CONTEXT_INTENTS"], "missing": ["AUTHORITATIVE_CHASE_ATTACK_RESULT", "AUTHORITATIVE_COOLDOWN_ENFORCEMENT", "LIVE_BACKEND_ROUNDTRIP"]},
+    {"id": "G16B-04", "status": "PARTIAL_EVIDENCE_B03_NOT_PASS", "evidence": ["PICKUP_RADIUS_LE_0_5", "OVER_RADIUS_APPROACH", "INVALID_PATH_REJECTION", "BLOCKER_REJECTION", "UNSETTLED_REJECTION", "PHYSICAL_LOOT_NOT_REMOTE_COLLECTED"], "missing": ["AUTHORITATIVE_PICKUP_RESULT", "LIVE_BACKEND_SNAPSHOT_CONFIRMATION"]},
+    {"id": "G16B-05", "status": "NOT_RUN", "planned_block": "B07_B08", "note": "B03 exposes resource intent and DropAnchor only; no confirmed action creates Ground Loot."},
+    {"id": "G16B-06", "status": "NOT_RUN", "planned_block": "B07"},
+    {"id": "G16B-07", "status": "NOT_RUN", "planned_block": "B04"},
+    {"id": "G16B-08", "status": "NOT_RUN", "planned_block": "B04_B05"},
+    {"id": "G16B-09", "status": "NOT_RUN", "planned_block": "B04"},
+    {"id": "G16B-10", "status": "NOT_RUN", "planned_block": "B05"},
+    {"id": "G16B-11", "status": "PARTIAL_EVIDENCE_B03_NOT_PASS", "evidence": ["NPC_NAME_HIDDEN_BY_DEFAULT", "NPC_NAME_VISIBLE_ONLY_ON_HOVER", "NPC_NAME_HIDDEN_ON_HOVER_EXIT"], "missing": ["MULTIPLE_NPC_CONVERSATION_ALTERNATION", "BUBBLE_SPAM_CONTROL", "CHOICES_NEAR_NPC"]},
+    {"id": "G16B-12", "status": "NOT_RUN", "planned_block": "B05"},
+    {"id": "G16B-13", "status": "NOT_RUN", "planned_block": "B05_B06"},
+    {"id": "G16B-14", "status": "PARTIAL_EVIDENCE_B02_NOT_PASS", "evidence": ["CAMERA_STABILITY_SMOOTHING_ZOOM_MODIFIER_CLAMPS_NO_FREE_ORBIT_OCCLUSION_PROBE"], "missing": ["MATERIAL_OCCLUDER_FADE_EXECUTION"]},
+    {"id": "G16B-15", "status": "NOT_RUN", "planned_block": "B06"},
+    {"id": "G16B-16", "status": "NOT_RUN", "planned_block": "B09"},
+    {"id": "G16B-17", "status": "NOT_RUN", "planned_block": "B10"},
+    {"id": "G16B-18", "status": "NOT_RUN", "planned_block": "B10"},
+    {"id": "G16B-19", "status": "NOT_RUN", "planned_block": "B11"},
+    {"id": "G16B-20", "status": "PARTIAL_EVIDENCE_B03_NOT_FINAL", "evidence": ["STAGE16A_209_OF_209", "STAGE16A_STRESS_20_OF_20", "BASELINE_724_OF_724", "B01_B02_B03_BOTH_MODES", "MASTER_HASH_UNCHANGED"], "planned_final_block": "B11"},
+    {"id": "G16B-21", "status": "NOT_RUN", "note": "Current user-scoped B03 covers interaction targets only; loadout authority was not reimplemented in GDScript."},
+    {"id": "G16B-22", "status": "NOT_RUN", "note": "B02 wheel routing remains regressed but this full loadout gate was not executed by B03."},
+    {"id": "G16B-23", "status": "NOT_RUN", "planned_block": "B05"},
+    {"id": "G16B-24", "status": "NOT_RUN", "planned_block": "B04"},
+    {"id": "G16B-25", "status": "NOT_RUN", "planned_block": "B04_B10"},
+    {"id": "G16B-26", "status": "NOT_RUN", "planned_block": "B05_B09_B10"},
+    {"id": "G16B-27", "status": "NOT_RUN", "planned_block": "B07_B10"},
+    {"id": "G16B-28", "status": "NOT_RUN", "planned_block": "B10"}
+  ],
+  "watch_items": [
+    "Authoritative interaction, combat cooldown/chase/attack, and pickup results require the real 127.0.0.1:8000 backend; zero listeners were found and no substitute was created.",
+    "Resource nodes expose only detection, contextual intent, and DropAnchor. Ground Loot creation after authoritative gathering remains G16B-05 NOT_RUN.",
+    "NPC hover-name behavior passes, but realtime dialogue alternation, choices, and bubble rules remain for B05.",
+    "Camera occlusion layer/probe are prepared, but material fading is not implemented, so G16B-14 remains partial.",
+    "No B04 work was started."
+  ],
+  "stage16_complete": false,
+  "final_backup_authorized": false,
+  "final_backup_created": false,
+  "b04_started": false,
+  "next_block": "B04_NOT_STARTED_AWAITING_EXPLICIT_USER_DIRECTION"
+}

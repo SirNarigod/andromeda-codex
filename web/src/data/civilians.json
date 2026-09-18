@@ -1,0 +1,233 @@
+[
+ {
+  "id": "CIV-001",
+  "name": "Doran, o Criador",
+  "job": "JOB-001",
+  "est": "EST-037",
+  "tier": "OFICIAL"
+ },
+ {
+  "id": "CIV-002",
+  "name": "Yssa, a Boticária",
+  "job": "JOB-002",
+  "est": "EST-012",
+  "tier": "ESPECIALISTA"
+ },
+ {
+  "id": "CIV-003",
+  "name": "Corwin, o Guia",
+  "job": "JOB-003",
+  "est": "EST-007",
+  "tier": "OFICIAL"
+ },
+ {
+  "id": "CIV-004",
+  "name": "Petra, a Investigadora",
+  "job": "JOB-004",
+  "est": "EST-045",
+  "tier": "ESPECIALISTA"
+ },
+ {
+  "id": "CIV-005",
+  "name": "Renn, o Mediador",
+  "job": "JOB-005",
+  "est": "EST-013",
+  "tier": "OFICIAL"
+ },
+ {
+  "id": "CIV-006",
+  "name": "Talia, a Artesã",
+  "job": "JOB-006",
+  "est": "EST-004",
+  "tier": "ESPECIALISTA"
+ },
+ {
+  "id": "CIV-007",
+  "name": "Bram, o Instrutor",
+  "job": "JOB-007",
+  "est": "EST-004",
+  "tier": "MESTRE"
+ },
+ {
+  "id": "CIV-008",
+  "name": "Ovid, o Agente de Licenças",
+  "job": "JOB-008",
+  "est": "EST-002",
+  "tier": "OFICIAL"
+ },
+ {
+  "id": "CIV-009",
+  "name": "Nessa, a Coordenadora",
+  "job": "JOB-009",
+  "est": "EST-014",
+  "tier": "OFICIAL"
+ },
+ {
+  "id": "CIV-010",
+  "name": "Farin, o Técnico",
+  "job": "JOB-010",
+  "est": "EST-015",
+  "tier": "ESPECIALISTA"
+ },
+ {
+  "id": "CIV-011",
+  "name": "Ludo, o Curador",
+  "job": "JOB-011",
+  "est": "EST-025",
+  "tier": "ESPECIALISTA"
+ },
+ {
+  "id": "CIV-012",
+  "name": "Sera, a Especialista em Contenção",
+  "job": "JOB-012",
+  "est": "EST-009",
+  "tier": "MESTRE"
+ },
+ {
+  "id": "CIV-013",
+  "name": "Wren, o Pesquisador",
+  "job": "JOB-013",
+  "est": "EST-028",
+  "tier": "ESPECIALISTA"
+ },
+ {
+  "id": "CIV-014",
+  "name": "Halden, o Armeiro",
+  "job": "JOB-014",
+  "est": "EST-011",
+  "tier": "MESTRE"
+ },
+ {
+  "id": "CIV-015",
+  "name": "Ivo, o Guarda",
+  "job": "JOB-015",
+  "est": "EST-040",
+  "tier": "OFICIAL"
+ },
+ {
+  "id": "CIV-016",
+  "name": "Torvin, o Fundidor",
+  "job": "JOB-016",
+  "est": "EST-049",
+  "tier": "OFICIAL"
+ },
+ {
+  "id": "CIV-017",
+  "name": "Ashra, a Moradora",
+  "job": "JOB-016",
+  "est": "EST-050",
+  "tier": "APRENDIZ"
+ },
+ {
+  "id": "CIV-018",
+  "name": "Coalen, o Feirante",
+  "job": "JOB-002",
+  "est": "EST-051",
+  "tier": "OFICIAL"
+ },
+ {
+  "id": "CIV-019",
+  "name": "Sahra, a Guia",
+  "job": "JOB-003",
+  "est": "EST-052",
+  "tier": "OFICIAL"
+ },
+ {
+  "id": "CIV-020",
+  "name": "Delph, a Arqueologa",
+  "job": "JOB-004",
+  "est": "EST-053",
+  "tier": "ESPECIALISTA"
+ },
+ {
+  "id": "CIV-021",
+  "name": "Umar, o Guardiao do Poco",
+  "job": "JOB-001",
+  "est": "EST-054",
+  "tier": "OFICIAL"
+ },
+ {
+  "id": "CIV-022",
+  "name": "Vell, o Extrator",
+  "job": "JOB-016",
+  "est": "EST-055",
+  "tier": "OFICIAL"
+ },
+ {
+  "id": "CIV-023",
+  "name": "Isla, a Curadora do Abrigo",
+  "job": "JOB-011",
+  "est": "EST-056",
+  "tier": "ESPECIALISTA"
+ },
+ {
+  "id": "CIV-024",
+  "name": "Bron, o Vigia",
+  "job": "JOB-015",
+  "est": "EST-057",
+  "tier": "OFICIAL"
+ },
+ {
+  "id": "CIV-025",
+  "name": "Nyra, a Mercadora",
+  "job": "JOB-008",
+  "est": "EST-058",
+  "tier": "OFICIAL"
+ },
+ {
+  "id": "CIV-026",
+  "name": "Tavik, o Navegador",
+  "job": "JOB-016",
+  "est": "EST-059",
+  "tier": "ESPECIALISTA"
+ },
+ {
+  "id": "CIV-027",
+  "name": "Ossa, a Guarda do Refugio",
+  "job": "JOB-015",
+  "est": "EST-060",
+  "tier": "OFICIAL"
+ },
+ {
+  "id": "CIV-028",
+  "name": "Rho, o Extrator",
+  "job": "JOB-016",
+  "est": "EST-061",
+  "tier": "OFICIAL"
+ },
+ {
+  "id": "CIV-029",
+  "name": "Maren, a Moradora do Recife",
+  "job": "JOB-001",
+  "est": "EST-062",
+  "tier": "OFICIAL"
+ },
+ {
+  "id": "CIV-030",
+  "name": "Dex, o Engenheiro de Pressao",
+  "job": "JOB-015",
+  "est": "EST-063",
+  "tier": "ESPECIALISTA"
+ },
+ {
+  "id": "CIV-031",
+  "name": "Zeka, a Guia de Selva",
+  "job": "JOB-003",
+  "est": "EST-064",
+  "tier": "OFICIAL"
+ },
+ {
+  "id": "CIV-032",
+  "name": "Iris, a Arqueologa",
+  "job": "JOB-004",
+  "est": "EST-065",
+  "tier": "ESPECIALISTA"
+ },
+ {
+  "id": "CIV-033",
+  "name": "Toma, o Guarda do Pantano",
+  "job": "JOB-015",
+  "est": "EST-066",
+  "tier": "OFICIAL"
+ }
+]

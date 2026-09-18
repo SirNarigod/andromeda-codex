@@ -1,0 +1,240 @@
+[
+ {
+  "id": "ENCOUNTER-001",
+  "src": "CRI-001",
+  "title": "Cortassom deslocado",
+  "mode": "DISTRESSED_WILDLIFE",
+  "disp": "avoidance_or_defense",
+  "trig": [
+   "injury",
+   "mining displacement",
+   "cornering"
+  ],
+  "nonviol": [
+   "track",
+   "rescue",
+   "remove threat"
+  ],
+  "story": "A criatura ferida aponta para o dano ambiental, não para um alvo a eliminar."
+ },
+ {
+  "id": "ENCOUNTER-002",
+  "src": "CRI-002",
+  "title": "Rebanho de Velúrio",
+  "mode": "DOMESTIC_HERD",
+  "disp": "nonhostile",
+  "trig": [
+   "contaminated feed",
+   "panic",
+   "predator pressure"
+  ],
+  "nonviol": [
+   "herd",
+   "test feed",
+   "restore route"
+  ],
+  "story": "Proteger um rebanho exige resolver a causa de sua contaminação."
+ },
+ {
+  "id": "ENCOUNTER-003",
+  "src": "CRI-003",
+  "title": "Brumante de encosta",
+  "mode": "DOMESTIC_HERD",
+  "disp": "nonhostile",
+  "trig": [
+   "cold stress",
+   "forced handling"
+  ],
+  "nonviol": [
+   "shelter",
+   "ration control",
+   "guided passage"
+  ],
+  "story": "Um abrigo insuficiente pode transformar uma necessidade de inverno em crise."
+ },
+ {
+  "id": "ENCOUNTER-004",
+  "src": "CRI-004",
+  "title": "Lúmara de bosque aberto",
+  "mode": "SKITTISH_SEMIDOMESTIC",
+  "disp": "flight",
+  "trig": [
+   "loud machinery",
+   "prolonged confinement"
+  ],
+  "nonviol": [
+   "quiet approach",
+   "open-grove care",
+   "remove noise source"
+  ],
+  "story": "Uma expansão de oficina ameaça um modo de vida que depende de silêncio."
+ },
+ {
+  "id": "ENCOUNTER-005",
+  "src": "CRI-005",
+  "title": "Raizel manso",
+  "mode": "DOMESTIC_ECOLOGICAL",
+  "disp": "nonhostile",
+  "trig": [
+   "corruption exposure",
+   "habitat disruption"
+  ],
+  "nonviol": [
+   "screen habitat",
+   "restore subforest",
+   "quarantine"
+  ],
+  "story": "O animal que localiza alimento pode revelar uma corrupção antes que pessoas percebam."
+ },
+ {
+  "id": "ENCOUNTER-006",
+  "src": "CRI-006",
+  "title": "Luzipólen",
+  "mode": "PASSIVE_ECOSYSTEM_SERVICE",
+  "disp": "avoidance",
+  "trig": [
+   "night-habitat loss",
+   "large-body disturbance"
+  ],
+  "nonviol": [
+   "protect habitat",
+   "reduce disturbance"
+  ],
+  "story": "Uma mudança noturna aparentemente pequena pode interromper a polinização."
+ },
+ {
+  "id": "ENCOUNTER-007",
+  "src": "CRI-007",
+  "title": "Fio-de-Orvalho",
+  "mode": "PASSIVE_ECOSYSTEM_SERVICE",
+  "disp": "nonhostile",
+  "trig": [
+   "leaf-litter removal",
+   "fungal habitat loss"
+  ],
+  "nonviol": [
+   "restore litter",
+   "observe moisture cycle"
+  ],
+  "story": "A falta de água pode começar com a perda de um pequeno decompositor."
+ },
+ {
+  "id": "ENCOUNTER-008",
+  "src": "CRI-008",
+  "title": "Grilo-Cobre",
+  "mode": "FARMED_RESOURCE_FAUNA",
+  "disp": "nonhostile",
+  "trig": [
+   "soil metal contamination",
+   "handling failure"
+  ],
+  "nonviol": [
+   "test soil",
+   "safe preparation",
+   "protect colony"
+  ],
+  "story": "Um inseto alimentar se torna evidência de poluição."
+ },
+ {
+  "id": "ENCOUNTER-009",
+  "src": "CRI-009",
+  "title": "Larva-de-Véu",
+  "mode": "FARMED_RESOURCE_FAUNA",
+  "disp": "nonhostile",
+  "trig": [
+   "unclean fiber culture",
+   "incomplete preparation"
+  ],
+  "nonviol": [
+   "clean culture",
+   "safe cooking",
+   "trace source"
+  ],
+  "story": "Uma ração rápida cria uma investigação sanitária."
+ },
+ {
+  "id": "ENCOUNTER-010",
+  "src": "CRI-010",
+  "title": "Ninho de Vespa-de-Vidro",
+  "mode": "DEFENSIVE_HAZARD",
+  "disp": "defensive",
+  "trig": [
+   "nest proximity",
+   "disturbance"
+  ],
+  "nonviol": [
+   "avoid",
+   "contain",
+   "medical response"
+  ],
+  "story": "O dano temporário da vespa pode expor uma tentativa de imobilização deliberada."
+ },
+ {
+  "id": "ENCOUNTER-011",
+  "src": "CRI-011",
+  "title": "Besouro-Rubro",
+  "mode": "DEFENSIVE_CONTACT_HAZARD",
+  "disp": "defensive",
+  "trig": [
+   "crushing",
+   "threat"
+  ],
+  "nonviol": [
+   "avoid contact",
+   "contain exposure",
+   "treat inflammation"
+  ],
+  "story": "Uma queimadura nos pântanos deixa pistas ambíguas de acidente ou sabotagem."
+ },
+ {
+  "id": "ENCOUNTER-012",
+  "src": "CRI-012",
+  "title": "Louva-Fenda",
+  "mode": "SMALL_AMBUSH_PREDATOR",
+  "disp": "predatory_to_small_prey",
+  "trig": [
+   "fissure approach",
+   "colony proximity"
+  ],
+  "nonviol": [
+   "avoid fissures",
+   "redirect prey",
+   "secure camp"
+  ],
+  "story": "Um predador pequeno força viajantes a aprender a ler a pedra antes de atravessá-la."
+ },
+ {
+  "id": "ENCOUNTER-013",
+  "src": "CRI-013",
+  "title": "Mandíbula-de-Névoa",
+  "mode": "SWARM_PREDATOR",
+  "disp": "situational_threat",
+  "trig": [
+   "injured prey",
+   "stable vibration patterns"
+  ],
+  "nonviol": [
+   "break coordination",
+   "leave area",
+   "protect injured fauna"
+  ],
+  "story": "Ruído irregular pode salvar uma caravana, mas denunciar sua posição a outro perigo."
+ },
+ {
+  "id": "ENCOUNTER-014",
+  "src": "COR-001",
+  "title": "Pressão da Raiz Profunda",
+  "mode": "PLANETARY_CORRUPTION_HAZARD",
+  "disp": "authorial_gate_required",
+  "trig": [
+   "approved root phase",
+   "local corruption evidence"
+  ],
+  "nonviol": [
+   "contain",
+   "evacuate",
+   "gather evidence"
+  ],
+  "story": "A corrupção muda condições locais sem conceder uma vitória automática nem iniciar o fim do mundo."
+ }
+]

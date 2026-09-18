@@ -1,0 +1,124 @@
+{
+  "status": "PASS",
+  "checks": 23,
+  "passed": 23,
+  "failed": 0,
+  "resume_seconds": 1.178,
+  "results": [
+    {
+      "name": "three_profiles",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "save_a",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "save_b",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rotation_current",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rotation_previous",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "recover_0_0",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "replay_0_0",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "recover_0_1",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "replay_0_1",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "recover_1_0",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "replay_1_0",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "recover_1_1",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "replay_1_1",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "recover_2_0",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "replay_2_0",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "recover_2_1",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "replay_2_1",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "stress_corruption_detected",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "stress_rollback_valid",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "multi_profile_resume",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "multi_profile_resume_under_60s",
+      "status": "PASS",
+      "detail": 1.178
+    },
+    {
+      "name": "all_profiles_restored",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "health_final",
+      "status": "PASS",
+      "detail": null
+    }
+  ]
+}

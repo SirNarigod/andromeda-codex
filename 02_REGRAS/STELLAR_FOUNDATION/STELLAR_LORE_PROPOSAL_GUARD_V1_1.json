@@ -1,0 +1,16 @@
+{
+  "record_id": "STELLAR-LORE-PROPOSAL-GUARD-V1.1",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.1",
+  "status": "ACTIVE_R2_REBASED_VALIDATION_INTERFACE",
+  "supersedes": "STELLAR_LORE_PROPOSAL_GUARD_V1_0",
+  "authority": {"scope": "PROPOSAL_SCREENING", "r2": "REQUIRED_PRIMARY_EVIDENCE", "llm": "UNTRUSTED_CANDIDATE_ONLY", "final_authority": "USER_APPROVAL"},
+  "dependencies": ["STELLAR_CANON_CONSTITUTION_V1_1.json", "../../01_LORE/STELLAR_REBASE_R2/R2_SOURCE_AUTHORITY_INDEX_V1_0.json"],
+  "invariants": ["PROPOSALS_MUST_DECLARE_SCOPE", "PROPOSALS_MUST_CITE_R2_OR_DERIVATION_EVIDENCE", "PROPOSALS_MUST_DECLARE_NARRATIVE_YIELD", "R2_CONFLICTS_FAIL_CLOSED"],
+  "prohibitions": ["NO_UNSOURCED_KENUA_RETCON", "NO_AMADON_PRE_S01E08_REVEAL", "NO_R2_EPISODE_REWRITE", "NO_PLANETARY_CLAIM_WITHOUT_USER_APPROVAL", "NO_CANON_MUTATION_BY_LLM", "NO_PHYSICAL_DELETION_WITHOUT_USER_APPROVAL"],
+  "proposal_schema": {"required": ["proposal_id", "claim", "scope", "change_type", "r2_evidence_or_derivation", "story_generators"], "scope_values": ["LOCAL", "REGIONAL", "PLANETARY"], "change_type_values": ["ADDITION", "INTERPRETATION", "DERIVATION", "PROMOTION"], "planetary_extra_required": ["user_approval"]},
+  "rejection_codes": ["MISSING_REQUIRED_FIELD", "NO_STORY_YIELD", "UNSOURCED_R2_CONFLICT", "SPOILER_BOUNDARY_VIOLATION", "PLANETARY_APPROVAL_MISSING", "BASELINE_MUTATION_ATTEMPT", "UNRESOLVED_FORMAL_DIVERGENCE"],
+  "simulation_effects": ["A rejected proposal is frozen and reported; it changes neither canon nor runtime."],
+  "allowed_states": ["R2_COMPATIBLE_REVIEW", "DERIVED_ACTIVE", "FROZEN_CONFLICT", "PROMOTION_PENDING"],
+  "story_generators": ["Uma proposta congelada fornece a pista para uma expansão compatível.", "Uma revelação só pode ocorrer quando o episódio selado deixa de ser antecipado.", "A tentativa de retcon obriga personagens a confrontar evidências preservadas." ]
+}

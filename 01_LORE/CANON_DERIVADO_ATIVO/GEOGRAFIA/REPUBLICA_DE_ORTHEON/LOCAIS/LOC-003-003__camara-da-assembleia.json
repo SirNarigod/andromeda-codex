@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-003-003",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Câmara da Assembleia",
+  "parent_subregion": "SUB-003-003",
+  "parent_political_unit": "TER-003",
+  "function": "Recinto legislativo da república.",
+  "notable_link": "Caelen Orthev (autoridade máxima)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-003-003",
+  "settlement_tier": "CIDADE",
+  "history": "A Câmara da Assembleia mantém a promessa de que Ortheon é uma república, mas cada bancada guarda um mapa diferente da cidade que pretende representar.",
+  "sensory": "A madeira absorveu décadas de fumaça; copos de água tremem quando trens passam sob o prédio.",
+  "hook": "Uma votação sobre rotas foi registrada antes de acontecer.",
+  "secondary_hook": "A ata antecipada prevê um acidente no pátio.",
+  "detail": "Delegados entregam fichas de metal para solicitar palavra, e as fichas circulam como moeda.",
+  "figures": [
+    {
+      "role": "Ema Voto-Claro",
+      "name": "Ema Voto-Claro",
+      "note": "relatora que publica atas integrais"
+    },
+    {
+      "role": "Taur Nove",
+      "name": "Taur Nove",
+      "note": "delegado que compra apoio com promessas de trilho"
+    }
+  ]
+}

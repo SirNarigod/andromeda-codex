@@ -1,0 +1,66 @@
+{
+  "record_id": "PLA-001",
+  "record_kind": "R2_CANONICAL_ENTRY_MIRROR",
+  "authority": "CANON_R2_CONFIRMADO",
+  "canonical_home": "01_LORE/CANON_R2/COSMOLOGIA_E_PLANETA/PLANETAS/PLA-001__stellar.json",
+  "source": {
+    "archive_sha256": "257e456a5d0396310ec2355b3dfc0f11f4e0a5264cf6e764591c8760f5070cb0",
+    "lineage": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json",
+    "document_sha256": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726"
+  },
+  "entry": {
+    "code": "PLA-001",
+    "slug": "stellar",
+    "title": "Stellar",
+    "subtitle": "O planeta vivo",
+    "category": "PLA",
+    "secondaryCategories": [],
+    "canon": "Cânone original",
+    "spoiler": 0,
+    "sealed": false,
+    "image": "assets/images/stellar.png",
+    "imageStatus": "Arte conceitual aprovada para o MVP",
+    "summary": "Planeta vivo onde natureza, tecnologia, magia, sociedades e espíritos coexistem em equilíbrio instável.",
+    "facts": {
+      "Natureza": "Planeta vivo",
+      "Ano atual": "842 EC",
+      "Governo planetário": "Não existe",
+      "Grandes sistemas ecológicos": "6",
+      "Guardião": "Amadon"
+    },
+    "sections": [
+      {
+        "heading": "Estrutura viva",
+        "body": "Stellar reage a alterações ecológicas e mágicas como um organismo planetário. Seus sistemas naturais não esgotam toda a geografia conhecida."
+      },
+      {
+        "heading": "Equilíbrio político",
+        "body": "O Conselho de Convergência negocia crises e rotas, mas não governa os territórios."
+      }
+    ],
+    "relations": [
+      {
+        "slug": "amadon",
+        "label": "Guardião"
+      },
+      {
+        "slug": "raiz-profunda",
+        "label": "Organismo invasor"
+      },
+      {
+        "slug": "espinho-negro",
+        "label": "Defesa planetária"
+      }
+    ],
+    "keywords": [
+      "Stellar",
+      "planeta vivo",
+      "842 EC",
+      "Amadon"
+    ],
+    "sources": [
+      "RESUMO_MESTRE_CANONICO.md",
+      "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+    ]
+  }
+}

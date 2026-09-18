@@ -1,0 +1,17 @@
+{
+  "record_id": "ANDROMEDA_UE5_CONTENT_MANIFEST_V5",
+  "status": "IMPORT_READY_PENDING_UE5_PROJECT",
+  "supersedes": "ANDROMEDA_UE5_CONTENT_MANIFEST_V4",
+  "base_manifest": "ANDROMEDA_UE5_CONTENT_MANIFEST_V4.json",
+  "access": "READ_ONLY_CANON_AND_TECHNICAL_TUNING_IMPORT",
+  "routing_registry": "01_LORE/CONTENT_ROUTING_REGISTRY_V5.json",
+  "data_tables_added": [
+    {"id":"DT_CausalEventSchema","source":"02_REGRAS/STELLAR_FOUNDATION/STELLAR_CAUSALITY_LAW_V1_1.json","authority":"CANON_DERIVADO_ATIVO","fields":["event_id","parent_event_id_or_root_reason","actor_ref","scope","material_cost_or_risk","evidence_refs","allowed_effects","created_at"],"use":"RUNTIME_LEDGER_SCHEMA_ONLY"},
+    {"id":"DT_AutonomousAgentSchema","source":"02_REGRAS/STELLAR_FOUNDATION/STELLAR_AUTONOMY_RESPONSIBILITY_LAW_V1_1.json","authority":"CANON_DERIVADO_ATIVO","fields":["agent_ref","status","controller_or_custodian_ref","capability_boundaries","action_ledger_refs","evidence_refs","local_decision_ref"],"use":"RUNTIME_AGENT_METADATA_ONLY"},
+    {"id":"DT_AutonomyStatus","source":"02_REGRAS/STELLAR_FOUNDATION/STELLAR_AUTONOMY_RESPONSIBILITY_LAW_V1_1.json","authority":"CANON_DERIVADO_ATIVO","values":["OWNED_TOOL","DELEGATED_AGENT","CONSTRAINED","REFUSING","DISPUTED_RECOGNITION","RECOGNIZED_ENTITY"],"use":"UI_AND_VALIDATION_ONLY"}
+  ],
+  "living_sim": "06_ENGINE/ACTIVE_CONTENT_ADAPTERS/LIVING_SIM_CONTENT_PROJECTION_V5.json",
+  "living_scale": "06_ENGINE/ACTIVE_CONTENT_ADAPTERS/LIVING_SCALE_CONTENT_PROJECTION_V5.json",
+  "import_rule": "UE5 imports may create runtime ledger and agent metadata assets. They cannot award autonomy status automatically, alter canon, create sovereignty, alter Kenua or sealed episodes, trigger authorial deaths, advance the Root irreversibly, or promote runtime events to lore.",
+  "validation_gate": "Reject any imported causal event without parent/root reason, cost/risk, evidence and scope. Reject any autonomous-agent transition without auditable local decision and causal ledger."
+}

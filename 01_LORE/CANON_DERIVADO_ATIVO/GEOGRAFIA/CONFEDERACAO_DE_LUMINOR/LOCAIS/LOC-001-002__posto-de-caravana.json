@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-001-002",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Posto de Caravana",
+  "parent_subregion": "SUB-001-002",
+  "parent_political_unit": "TER-001",
+  "function": "Ponto de parada e reabastecimento na Rota das Caravanas.",
+  "notable_link": "Rota das Caravanas (SUB-001-002)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-001-002",
+  "settlement_tier": "POSTO",
+  "history": "O posto existe desde antes da própria Confederação de Lúminor se formalizar como está hoje — é um dos pontos de parada mais antigos da rota comercial que liga Lúminor ao interior, marcado originalmente só por um poço e uma sombra de rocha. Cresceu em etapas conforme o tráfego de caravanas aumentou, cada dono de estábulo acrescentando uma estrutura nova sem plano central algum, o que explica por que o posto tem um layout que qualquer engenheiro chamaria de irracional.",
+  "sensory": "Estábulos de madeira envelhecida se alinham em fileiras irregulares, cada um com seu próprio dono e sua própria tarifa, competindo abertamente por clientela visível a quem chega cansado da estrada. O poço original ainda funciona no centro do posto, agora cercado por uma estrutura de pedra construída décadas depois pra proteger a água da poeira que o tráfego constante de carroças levanta. Ao anoitecer, o cheiro de fogueiras de acampamento se mistura ao de animais de carga descansando, e o som de negociação de preço de estábulo nunca para completamente até tarde da noite.",
+  "figures": [
+    {
+      "role": "Dono do estábulo mais antigo",
+      "name": "Harek Ferradura-Velha",
+      "note": "Herdou o primeiro estábulo construído ali e usa isso como argumento de autoridade moral sobre os outros donos, mesmo sem ter cargo formal algum. Cobra o preço mais alto do posto, confiando que a reputação de antiguidade justifica o valor."
+    },
+    {
+      "role": "Dona de estábulo rival",
+      "name": "Yssa Trote-Rápido",
+      "note": "Construiu o estábulo mais novo e mais barato do posto, atraindo caravaneiros que Harek considera clientela dele por direito histórico. A rivalidade entre os dois é conhecida por todos que passam pelo posto com regularidade, e às vezes vira motivo de aposta entre viajantes sobre quem vai ceder primeiro numa disputa de preço."
+    }
+  ],
+  "hook": "Uma caravana chegou reportando bandidos na estrada logo depois do posto, na direção de Lúminor — Harek quer organizar uma escolta paga usando o próprio prestígio pra liderar, mas Yssa já está oferecendo o mesmo serviço por metade do preço, minando a autoridade dele publicamente pela primeira vez.",
+  "detail": "Existe uma regra não-escrita entre os donos de estábulo: ninguém rouba cliente de outro depois que a carroça já está parada na frente de um estábulo específico — só antes. Harek e Yssa respeitam isso rigidamente entre si, mesmo competindo ferozmente por qualquer caravana ainda em movimento.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION"]
+}

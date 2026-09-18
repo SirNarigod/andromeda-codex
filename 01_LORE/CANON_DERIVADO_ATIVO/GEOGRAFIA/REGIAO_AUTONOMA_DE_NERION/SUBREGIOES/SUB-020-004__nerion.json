@@ -1,0 +1,51 @@
+{
+  "record_id": "SUB-020-004",
+  "record_kind": "DERIVED_SUBREGION_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Distrito das Memórias",
+  "parent_political_unit": "TER-020",
+  "provenance": {
+    "approval": "AUTHORIAL_DECISION",
+    "compatibility": "Região derivada dos Androids Conscientes; não altera CANON_R2."
+  },
+  "function": "Lazer, arte, ensino e preservação de personalidades.",
+  "locality_references": [],
+  "permitted_catalog_links": {
+    "npc_roles": [
+      "MÉDICO",
+      "SUPORTE",
+      "TRABALHO",
+      "SOCIÁVEL",
+      "ASSALTO",
+      "FRANCO"
+    ],
+    "professions": [
+      "reparador",
+      "engenheiro de núcleo",
+      "curador de memória",
+      "técnico de estufa",
+      "mediador de autonomia"
+    ],
+    "encounters": [
+      "Android consciente",
+      "rotina treinada",
+      "agente de Serverus"
+    ],
+    "resources": [
+      "núcleos de energia",
+      "ligas de chassi",
+      "cristais de memória"
+    ]
+  },
+  "local_conflicts": [
+    "memória pública versus privacidade individual"
+  ],
+  "story_generators": [
+    "Uma simulação passa a criar lembranças de alguém que nunca esteve em Nérion."
+  ],
+  "prohibitions": [
+    "NO_R2_MUTATION",
+    "NO_NAME_FOR_MYSTERIOUS_MAGE_YET"
+  ]
+}

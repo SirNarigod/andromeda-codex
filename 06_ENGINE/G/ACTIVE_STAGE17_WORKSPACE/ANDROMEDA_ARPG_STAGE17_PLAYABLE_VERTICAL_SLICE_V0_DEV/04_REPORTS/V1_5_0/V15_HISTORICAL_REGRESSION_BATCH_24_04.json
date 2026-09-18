@@ -1,0 +1,40 @@
+{
+  "record_id": "V15-HISTORICAL-REGRESSION-BATCH",
+  "start": 24,
+  "file_count": 4,
+  "tests": 154,
+  "passed_files": 4,
+  "failed_files": 0,
+  "rows": [
+    {
+      "file": "test_runtime_core.py",
+      "tests": 59,
+      "returncode": 0,
+      "seconds": 5.882,
+      "status": "PASS"
+    },
+    {
+      "file": "test_scene_interaction_v1_2_1.py",
+      "tests": 10,
+      "returncode": 0,
+      "seconds": 1.046,
+      "status": "PASS"
+    },
+    {
+      "file": "test_social_memory.py",
+      "tests": 72,
+      "returncode": 0,
+      "seconds": 6.367,
+      "status": "PASS"
+    },
+    {
+      "file": "test_society_labor_v1_1.py",
+      "tests": 13,
+      "returncode": 0,
+      "seconds": 5.376,
+      "status": "PASS"
+    }
+  ],
+  "failures": [],
+  "status": "PASS"
+}

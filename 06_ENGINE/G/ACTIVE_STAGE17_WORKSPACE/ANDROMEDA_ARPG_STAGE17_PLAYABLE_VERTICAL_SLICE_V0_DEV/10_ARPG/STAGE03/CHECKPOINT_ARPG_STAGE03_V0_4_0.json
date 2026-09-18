@@ -1,0 +1,21 @@
+{
+  "record_id": "CHECKPOINT-ARPG-STAGE03-V0.4.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "process": "ARPG CONVERSION",
+  "stage": "03/18",
+  "stage_name": "COMBAT ARPG — HIT / DAMAGE / DEFENSE / RESISTANCE / STAGGER / STATUS",
+  "version": "V0.4.0",
+  "status": "PASS",
+  "result": "COMBAT_CORE_READY_FOR_RESOURCE_STAGE04",
+  "parent_checkpoint": "CHECKPOINT-ARPG-STAGE02-V0.3.0",
+  "parent_checkpoint_archive_sha256": "0739b0f7efcd0f6c1fad371e0429ed6251b748a885c12226b733beccbe769466",
+  "canon_mutations": 0,
+  "combat_numeric_authority": "GAMEPLAY_DERIVED_NOT_CANON",
+  "player_health_authority": "CHARACTER_CORE_ONLY",
+  "pvp_enabled": false,
+  "open_blockers": 0,
+  "open_corrections": 0,
+  "backup_authorized": true,
+  "art_pipeline": "LOCKED",
+  "next_stage": "04_RESOURCES_COOLDOWNS_CONSUMABLES"
+}

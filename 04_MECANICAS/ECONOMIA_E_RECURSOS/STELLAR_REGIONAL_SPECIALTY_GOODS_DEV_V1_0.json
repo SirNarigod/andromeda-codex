@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-REGIONAL-SPECIALTY-GOODS-DEV-V1.0",
+  "title": "Bens Regionais Especializados dos 6 territorios novos - riqueza economica alem do vinculo mineral minimo",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "r2_guard": "Cada bem transforma o mineral secundario ja atribuido (fase 55) num produto de valor comercial real, produzido numa construcao ja existente do proprio territorio. REG-006 (TER-019) inclui nota explicita de guarda contra qualquer escalada tematica com a Raiz Profunda (COR-001) - MIN-ROOT-SHARD ja era insumo legitimo desde a fase 14.",
+  "goods": [
+    {
+      "good_id": "REG-001",
+      "name": "Barra de Basalto Fundido",
+      "territory": "TER-014",
+      "inputs": [
+        {
+          "resource_id": "MIN-BASALT",
+          "resource_name": "Basalto Negro"
+        }
+      ],
+      "produced_at": "EST-049",
+      "produced_at_name": "Fundicao da Caldeira",
+      "trade_note": "Vendido a construtoras de outros territorios que precisam de material resistente ao calor.",
+      "price_tier": "MEDIO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "good_id": "REG-002",
+      "name": "Reliquia de Ouro Restaurada",
+      "territory": "TER-015",
+      "inputs": [
+        {
+          "resource_id": "MIN-GOLD",
+          "resource_name": "Aureo Solar"
+        }
+      ],
+      "produced_at": "EST-053",
+      "produced_at_name": "Sitio Arqueologico das Ruinas",
+      "trade_note": "Peca recuperada e catalogada, vendida a colecionadores e instituicoes de pesquisa - sem atribuicao de civilizacao historica confirmada (NO_NAMED_HISTORICAL_CIVILIZATION).",
+      "price_tier": "ALTO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "good_id": "REG-003",
+      "name": "Cristal de Gelo Puro",
+      "territory": "TER-016",
+      "inputs": [
+        {
+          "resource_id": "MIN-QUARTZ",
+          "resource_name": "Quartzo de Veio"
+        }
+      ],
+      "produced_at": "EST-055",
+      "produced_at_name": "Posto da Geleira",
+      "trade_note": "Usado como refrigerante natural e em rituais de preservacao em outros territorios.",
+      "price_tier": "MEDIO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "good_id": "REG-004",
+      "name": "Frasco de Eter Estabilizado",
+      "territory": "TER-017",
+      "inputs": [
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Ronico"
+        }
+      ],
+      "produced_at": "EST-059",
+      "produced_at_name": "Posto das Correntes",
+      "trade_note": "Insumo vendido a artesaos ronicos de outros territorios para trabalhos delicados de estabilizacao.",
+      "price_tier": "ALTO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "good_id": "REG-005",
+      "name": "Placa de Titanio Abissal",
+      "territory": "TER-018",
+      "inputs": [
+        {
+          "resource_id": "MIN-TITAN",
+          "resource_name": "Titanita Cinzenta"
+        }
+      ],
+      "produced_at": "EST-061",
+      "produced_at_name": "Cupula da Trincheira",
+      "trade_note": "Material leve e resistente exportado para a construcao de naves e trajes de pressao em outros territorios (ja usado no proprio TRJ-018).",
+      "price_tier": "ALTO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "good_id": "REG-006",
+      "name": "Extrato de Raiz Purificado",
+      "territory": "TER-019",
+      "inputs": [
+        {
+          "resource_id": "MIN-ROOT-SHARD",
+          "resource_name": "Fragmento Radicular"
+        }
+      ],
+      "produced_at": "EST-065",
+      "produced_at_name": "Sitio das Ruinas Cobertas",
+      "trade_note": "Processado e purificado industrialmente para uso em pesquisa botanica - sem qualquer vinculo com a Raiz Profunda (COR-001) ou fases de corrupcao (NO_ROOT_ESCALATION); MIN-ROOT-SHARD ja e insumo catalogado desde a fase 14, aqui apenas refinado.",
+      "price_tier": "MEDIO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    }
+  ]
+}

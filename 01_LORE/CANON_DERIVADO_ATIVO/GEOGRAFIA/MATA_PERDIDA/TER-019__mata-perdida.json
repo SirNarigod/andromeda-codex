@@ -1,0 +1,47 @@
+{
+  "record_id": "TER-019",
+  "record_kind": "DERIVED_TERRITORY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Mata Perdida",
+  "subtitle": "Selva tropical densa com ruinas cobertas por vegetacao",
+  "provenance": {
+    "approval": "AUTHORIAL_DECISION_FASE_52",
+    "note": "19o e ultimo territorio desta serie de Stellar, decisao explicita do autor - portao autoral de soberania. Distinto de TER-008 Santuarios do Coracao (territorio sagrado) e TER-015 Vale das Ruinas (deserto)."
+  },
+  "leadership": {
+    "type": "CONSELHO_DERIVADO",
+    "name": "Guardioes da Mata",
+    "note": "Lideranca coletiva derivada, sem LID-XXX (categoria R2 fechada)."
+  },
+  "culture_note": "Sem CUL-XXX proprio (categoria R2 fechada) - comunidade de guias e pesquisadores da selva descrita qualitativamente.",
+  "subregions": [
+    "SUB-019-001",
+    "SUB-019-002",
+    "SUB-019-003"
+  ],
+  "localities": [
+    "LOC-019-001",
+    "LOC-019-002",
+    "LOC-019-003"
+  ],
+  "terrain_type": "SELVA_TROPICAL",
+  "primary_transport_mode": "TERRESTRE",
+  "prohibitions": [
+    "NO_R2_CATEGORY_EXPANSION",
+    "NO_NEW_LID_OR_CUL_CODE",
+    "NO_AUTOMATIC_KENUA_SCENE",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_NAMED_HISTORICAL_CIVILIZATION"
+  ],
+  "future_scope": "Perfil economico enriquecido na fase 56 (diretriz de riqueza do usuario) - ver economic_profile estruturado + STELLAR_REGIONAL_SPECIALTY_GOODS_DEV_V1_0.json. Personagens locais adicionais continuam abertos a rodadas futuras.",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "economic_profile": {
+    "primary_resource": "MIN-ROOT-SHARD (fonte secundaria, SUB-019-002 Ruinas Cobertas / EST-065 Sitio das Ruinas Cobertas, extrator JOB-016, NO_ROOT_ESCALATION) - tema raiz/floresta",
+    "processed_good": "REG-006 Extrato de Raiz Purificado (EST-065 Sitio das Ruinas Cobertas)",
+    "agricultural_zone": "AGZ-103 Clareiras da Mata (AGROFLORESTA_TROPICAL, SUB-019-001 Dossel Verde / EST-064 Posto do Dossel, flora FLO-018)",
+    "agricultural_note": "Orquidea-Sombria (FLO-018) em clareiras manejadas formalizada como AGZ-103 (fase 56, AUTHORIAL_DECISION_FASE_56) — cota de coleta (toxica in natura), processamento em EST-065, sem vinculo com COR-001; ver AGZ_EXTENSION_098_103_DEV_V1_0.json",
+    "trade_partners_hint": "Rota continental TER-008-TER-019 liga aos Santuarios do Coracao; extrato purificado e orquidea escoam por essa rota",
+    "local_specialty": "REG-006 Extrato de Raiz Purificado"
+  }
+}

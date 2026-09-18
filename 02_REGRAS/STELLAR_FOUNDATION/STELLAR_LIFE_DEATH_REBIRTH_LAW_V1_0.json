@@ -1,0 +1,14 @@
+{
+  "record_id": "STELLAR-LIFE-DEATH-REBIRTH-LAW-V1.0",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.0",
+  "status": "AUTHORIAL_RUNTIME_OVERLAY",
+  "authority": {"scope": "LIFE_CYCLE", "body_death": "FINAL", "rebirth": "ECHO_BASED", "canon": "READ_ONLY"},
+  "dependencies": ["STELLAR_COSMOLOGY_CANON_V1_0.json", "STELLAR_CAUSALITY_LAW_V1_0.json", "../ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/02_CONTRACTS/CONSEQUENCE_ENGINE_CONTRACT_V1_0.json"],
+  "invariants": ["DEATH_ENDS_THE_BODY_LIFECYCLE", "REBIRTH_NEVER_RESTORES_AN_IDENTITY_BY_DEFAULT", "ECHOES_ARE_AFFINITIES_FEAR_TALENT_OR_UNFINISHED_BOND", "LITERAL_MEMORY_REQUIRES_EXCEPTIONAL_EVIDENCE_AND_COST", "OFFLINE_CANNOT_RESOLVE_DEATH"],
+  "prohibitions": ["NO_FREE_RESURRECTION", "NO_MEMORY_TRANSFER_AS_DEFAULT_REBIRTH", "NO_ERASURE_OF_DEATH_CONSEQUENCES", "NO_AUTOMATIC_CANONICAL_LINEAGE_CLAIM"],
+  "simulation_effects": ["Death produces immutable event, social memory and possible inheritance pressure.", "Rebirth candidates may receive tagged echoes with UNKNOWN truth status.", "Recovery mechanics may restore gameplay participation without claiming bodily continuity."],
+  "allowed_states": ["ALIVE", "AT_RISK", "DEAD", "MOURNED", "ECHO_DETECTED", "REBIRTH_CANDIDATE", "EXCEPTION_REVIEW"],
+  "story_generators": ["Uma pessoa renascida teme um lugar que jamais visitou, e o medo é útil mas não prova nada.", "Uma cidade disputa a herança de alguém morto enquanto um eco reaparece fora de sua linhagem esperada.", "Uma memória literal parece reaparecer; provar sua origem exige pagar um custo que pode ferir os vivos."],
+  "compatibility": {"existing_offline_policy": "PRESERVED", "death_recovery_implementation": "DEFERRED_TO_APPROVED_GAMEPLAY_CONTRACT"}
+}

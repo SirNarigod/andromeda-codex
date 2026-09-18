@@ -1,0 +1,43 @@
+{
+  "record_id": "ANDROMEDA-STAGE16B-B04-EDITOR-BRIDGE-DEBUGGER-V0.8.0",
+  "captured_at": "2026-08-20T22:43:44-03:00",
+  "godot": {
+    "version": "4.7.1.stable.official.a13da4feb",
+    "renderer": "OpenGL 3.3 Compatibility",
+    "device": "NVIDIA GeForce GTX 1650"
+  },
+  "project_path": "C:/Users/thall/Documents/andromeda-argp/ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/07_GODOT_ARPG_STAGE16B",
+  "bridge": "EXISTING_LOCAL_ANDROMEDA_EDITOR_BRIDGE",
+  "b04_gate": {
+    "scene": "res://tests/godot/B04RuntimeGate.tscn",
+    "status": "PASS",
+    "checks": 156,
+    "passed": 156,
+    "failed": 0,
+    "debugger_errors": 0,
+    "debugger_warnings": 0,
+    "controlled_stop_final_errors": 0
+  },
+  "main_direct": {
+    "scene": "res://scenes/Main.tscn",
+    "status": "PASS",
+    "debugger_errors": 0,
+    "debugger_warnings": 0,
+    "controlled_stop_final_errors": 0
+  },
+  "invalidated_attempt": {
+    "status": "INVALIDATED_NOT_PASS",
+    "functional_checks": "156/156",
+    "debugger_warnings": 2,
+    "findings": [
+      "water_volume.gd used an incompatible float/null ternary",
+      "water_world_item_presenter.gd used an incompatible null/string ternary"
+    ],
+    "correction": "Replaced both incompatible ternaries with explicitly typed Variant assignment paths, then reran headless and Editor Bridge from the beginning."
+  },
+  "final_debugger": {
+    "errors": 0,
+    "warnings": 0,
+    "status": "CLEAN"
+  }
+}

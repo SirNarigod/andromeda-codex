@@ -1,0 +1,212 @@
+{
+  "record_identity": "S17_C1B_C1_C2_ACCEPTANCE_RECORD_V0_1_0_DEV",
+  "created_at": "2026-08-29T07:45:00Z",
+  "stage": "STAGE17",
+  "process": "ETAPA_31_S17_C1B_C1_C2_RESOURCE_METRIC_PLACEMENT_AND_AUTHORITATIVE_GATHER",
+  "continuation_of": "session interrupted by Codex credit limit while the integrated G19 run was in flight",
+  "status": "PASS",
+  "classification": "S17_C1B_C1_C2_RESOURCE_AUTHORITY_COMPLETE",
+  "scope": {
+    "c1b_status": "PASS",
+    "c1_status": "PASS",
+    "c2_status": "PASS",
+    "resource_authority_spatial_binding_ready": true,
+    "s17_interaction_approach_authority_migration": "PARTIAL_TWO_CLASSES_READY",
+    "ready_classes": ["ENEMY", "RESOURCE"],
+    "backend_source_changed_this_continuation": false,
+    "godot_source_changed_this_continuation": false,
+    "stage16b_source_changed": false,
+    "protected_runtime_changed": false
+  },
+  "c1b_evidence": {
+    "module": "12_AUTHORITY_BACKEND_STAGE17/resource_metric_placement.py",
+    "schema_version": "S17_RESOURCE_METRIC_PLACEMENT_V1",
+    "physical_placement_identity": "placement_ref (deterministic sha256, primary key)",
+    "logical_gth_mapping": "logical_node_ref column, validated against arpg_gathering_nodes at materialization time",
+    "n1_ready": true,
+    "n1_evidence": "test_18_many_physical_placements_per_gth_are_permitted; no unique(logical_node_ref) constraint",
+    "metric_position": "iso_x_m/iso_y_m/altitude_m, finite-validated",
+    "placement_revision": "S17-RESOURCE-PLACEMENT-DEV-R0001",
+    "position_authority": "STAGE17_RESOURCE_METRIC_PLACEMENT_MATERIALIZED",
+    "reproducibility_proof": "byte-identical dict comparison of two independent bake runs (c1b_repro_final/run_1.json == run_2.json), confirmed this continuation",
+    "restart_persistence_proof": "test_10, test_16; also confirmed live: same placement_refs across 3 independent backend boots this continuation",
+    "idempotency_proof": "test_11_same_manifest_replay_creates_no_duplicates; live health showed inserted:0, replayed:2 on original boot",
+    "no_client_injection_proof": "test_16_gameplay_client_cannot_set_or_move_placement",
+    "backend_tests": {"module": "test_stage17_resource_metric_placement.py", "checks": 24, "passed": 24, "failed": 0, "run_fresh_this_continuation": true},
+    "world_binding_limitation": "canonical manifest is pinned to one world_instance_id by design (test_13_world_mismatch_rejected); a cold world reset requires a coordinated rebake, not a code defect"
+  },
+  "c1_evidence": {
+    "gate": "S17_C1_RESOURCE_AUTHORITY_POSITION_CONTRACT",
+    "scene": "13_GODOT_ARPG_STAGE17/tests/godot/S17C1ResourceAuthorityPositionGate.tscn",
+    "runs_this_continuation": 3,
+    "checks": 64,
+    "passed": 64,
+    "failed": 0,
+    "status": "PASS",
+    "consistent_across_runs": true,
+    "registry_binding": "InteractionSpatialBindingRegistry extended for RESOURCE, authority=STAGE17_INTERACTION_SPATIAL_BINDING_PRESENTATION_ONLY",
+    "runtime_godot_transform_is_authority": false,
+    "gameplay_authority_in_gdscript": false,
+    "logs": [
+      "STAGE17_RUNTIME_STATE/logs/c1_clean.log",
+      "STAGE17_RUNTIME_STATE/logs/c1_final_clean.log",
+      "STAGE17_RUNTIME_STATE/logs/c1_final_regression.log",
+      "STAGE17_RUNTIME_STATE/logs/clean_regression/C1_clean2.log"
+    ]
+  },
+  "c2_evidence": {
+    "gate": "S17_C2_RESOURCE_AUTHORITATIVE_APPROACH_GATHER",
+    "scene": "13_GODOT_ARPG_STAGE17/tests/godot/S17C2ResourceAuthoritativeApproachGatherGate.tscn",
+    "final_checks": 91,
+    "passed": 91,
+    "failed": 0,
+    "status": "PASS",
+    "runs_this_continuation": 1,
+    "consistent_with_pre_interruption_run": true,
+    "normal_input_path_executed": true,
+    "tree_end_to_end": {"status": "PASS", "logical_node_ref": "GTH-CA3D9A47934BD64A24B4", "placement_ref": "RESOURCE-PLACEMENT-S17-DCC60BB7E7C256C1BF9E", "server_distance_m": 1.08, "server_los_clear": true},
+    "ore_end_to_end": {"status": "PASS", "logical_node_ref": "GTH-34AC1BC54C33917F0553", "placement_ref": "RESOURCE-PLACEMENT-S17-3BDA3343A505268017CE", "server_distance_m": 1.08, "server_los_clear": true},
+    "range_1_5m": {
+      "boundary_distance_1_5_exact": "PASS (accepted)",
+      "outside_distance_1_50010": "REJECTED RESOURCE_GATHER_OUT_OF_RANGE, mutation_applied:false",
+      "server_range_m": 1.5
+    },
+    "blocker_los": {
+      "blocked_case": "REJECTED RESOURCE_GATHER_BLOCKED_LOS, blocked_by:[RESOURCE-LOS-BLOCKER-S17-001], mutation_applied:false",
+      "geometry_source": "OFFLINE_BAKED_MATERIALIZED_SERVER_CONSTRAINTS",
+      "client_raycast_used": false,
+      "server_blocker_los_executed": true
+    },
+    "identity_mismatch": "REJECTED RESOURCE_PLACEMENT_LOGICAL_REF_MISMATCH when placement_ref+target_ref pair disagree",
+    "no_placement": "REJECTED RESOURCE_PLACEMENT_REF_REQUIRED for a static resource without placement_ref",
+    "client_position_injection": "7x UNEXPECTED_COMMAND_PARAM rejections observed in the negative-authority evidence block",
+    "depletion_continuity": "GTH remaining_before/remaining_after decrement only on the logical node; no duplicate depletion on the physical placement",
+    "gameplay_authority_in_gdscript": false,
+    "log": "STAGE17_RUNTIME_STATE/logs/clean_regression/C2_clean2.log"
+  },
+  "backend_validation_subset": {
+    "modules": [
+      "test_stage17_resource_metric_placement (24 tests)",
+      "test_stage17_resource_metric_gather (19 tests)",
+      "test_stage16b_authority_gathering (11 tests)",
+      "test_stage16b_authority_ground_loot (10 tests)",
+      "test_stage16b_authority_adapter (28 tests)",
+      "test_stage16b_authority_traversal (12 tests)"
+    ],
+    "total_checks": 110,
+    "passed": 110,
+    "failed": 0,
+    "run_fresh_this_continuation": true,
+    "not_run_this_continuation": "full run_stage16b_authority_validation.py (~27-30 min heavy suite) — not required by this round's Section 30 scope, which asked for a targeted subset"
+  },
+  "regressions": {
+    "S17_00": "22/22 PASS (fresh, this continuation)",
+    "S17_A_LIVE": "17/17 PASS (fresh)",
+    "S17_A_FAILED_PATH": "9/9 PASS (fresh)",
+    "S17_A_TOTAL": "26/26 PASS",
+    "S17_B1": "36/36 PASS (fresh, clean world)",
+    "S17_B2": "73/73 PASS (fresh, clean world)",
+    "S17_C0": "75/75 PASS (pre-interruption run, uncontaminated — not rerun, no reason to distrust it)",
+    "B01": "54/54 PASS (fresh)",
+    "COMBAT": "91/91 PASS (fresh, restored original world, dev-bootstrap self-healed to a new pristine target)",
+    "GROUND_LOOT": {
+      "status": "FAIL",
+      "checks": 14,
+      "passed": 13,
+      "failed": 1,
+      "failure": "AUTHORITATIVE_SETTLE_PRECONDITIONS",
+      "reproduced_times": 3,
+      "classification": "PRE_EXISTING_HARNESS_FRAGILITY_NOT_A_C1B_C1_C2_REGRESSION",
+      "note": "The HUNTING-channel production fix made by the interrupted session is confirmed correct, preserved, and unrelated to this failure (the failure is in a settle-timing/geometry precondition, not in production authority). A real 53/53 PASS exists on record from before this continuation (STAGE17_RUNTIME_STATE/logs/ground_loot_after_metric_fix.log). Requires its own dedicated future round; not fixed here per this round's explicit scope limits."
+    },
+    "GATHERING_LEGACY_GATE": {
+      "status": "INCONCLUSIVE",
+      "note": "AuthorityGatheringRuntimeGate.tscn ran far longer than every other gate (>4 min, steady real HTTP traffic, not deadlocked) without producing a SUMMARY line; terminated manually. Does not block this round: the Stage17 gathering contract is already fully and redundantly proven by C1 (64/64), C2 (91/91), and the 110 fresh backend unit tests. Flagged for a dedicated follow-up, not fixed here."
+    },
+    "G19": {
+      "status": "FAIL",
+      "checks": 32,
+      "passed": 29,
+      "failed": 3,
+      "failures": ["G19_COMBAT_COMMAND_AUTHORITATIVE", "G19_ENEMY_VITALS_FROM_AUTHORITY", "G19_COMBAT_MUTATION_REAL:NO_DEFEAT_REACHED"],
+      "count_change_justification": "Historical Stage16B G19 total was 71; this Stage17 variant adds a new step 8 (GATHER, real REQUEST_GATHER via placement_ref with a metric_spatial_guard check) documented in authority_vertical_slice_runtime_gate.gd lines 311-375. The 32 shown here is NOT the gate's full possible total — it is the count of checks actually executed before the script early-returned at the COMBAT step (per its own _finish()-on-failure convention identical to every other gate in this codebase); a passing run would report a materially larger total including the new GATHER step.",
+      "root_cause": "PRE_EXISTING_ARCHITECTURAL_GAP_UNRELATED_TO_C1B_C1_C2",
+      "root_cause_detail": "main.combat_enemy_common ($ActorRoot/EnemyB03) carries a static @export var target_ref baked into Main.tscn (interaction_target.gd:12), fixed to NPC-01-01-01-009 since long before this round. The backend's own dev-bootstrap self-heal logic (andromeda_authority_adapter.py ~line 1090-1140) correctly detects a defeated/non-pristine stored target and rotates to a fresh, alive, full-health candidate (confirmed live: rotated 009->012 in s16b_bootstrap after the Combat gate defeated 009 earlier in this same persistent world) — but the Godot scene's static export never re-reads that rotation. G19's combat step therefore keeps attacking the old, already-DEFEATED npc. Confirmed by direct read-only SQLite inspection of arpg_enemy_combat_state both before and after: NPC-01-01-01-009 life_state=DEFEATED health=0.0 throughout; NPC-01-01-01-012 (the backend's new live COMMON candidate) was ALIVE at full health 95.0/95.0 and never targeted by the Godot client.",
+      "reproduced_times": 2,
+      "not_a_resource_or_gathering_regression": true,
+      "combat_gate_dedicated_result_unaffected": "91/91 PASS — the dedicated Combat gate uses its own scene/enemy-discovery path and is unaffected by this gap",
+      "recommendation_not_authorized_this_round": "G19's combat step should resolve its target from a live snapshot field (matching the backend's current combat_target_common_ref) rather than a static scene export; alternatively the shared dev world should get a coordinated reset+rebake between combat-mutating gates and G19. Not implemented here — outside this round's authorized scope (Sections 27/36)."
+    }
+  },
+  "changed_files_this_continuation": {
+    "created": [
+      "STAGE17_RECORDS/S17_C1B_RESOURCE_METRIC_PLACEMENT_AUTHORITY_V0_1_0_DEV.md",
+      "STAGE17_RECORDS/S17_C1B_C1_C2_IMPLEMENTATION_LOG_V0_1_0_DEV.md",
+      "STAGE17_RECORDS/S17_C1B_C1_C2_ACCEPTANCE_RECORD_V0_1_0_DEV.json",
+      "STAGE17_RECORDS/S17_C1B_C1_C2_INVALIDATED_RUNS_V0_1_0_DEV.json",
+      "STAGE17_RUNTIME_STATE/logs/clean_regression/* (fresh regression logs)"
+    ],
+    "modified": [],
+    "deleted": [],
+    "backend_source_files_modified": [],
+    "godot_source_files_modified": [],
+    "stage16b_files_modified": [],
+    "protected_runtime_files_modified": [],
+    "full_workspace_diff_since_creation": {
+      "tool": "STAGE17_TOOLS/stage17_source_diff.py",
+      "added_count": 167,
+      "modified_count": 17,
+      "deleted_count": 0,
+      "note": "cumulative since workspace creation (S17-00 through this round), not just this continuation; zero deletions, zero 01_RUNTIME/*.py changes, zero Stage16B files"
+    }
+  },
+  "read_only_baseline": {
+    "stage16b_status": "CLOSED_READ_ONLY",
+    "checkpoint_sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc",
+    "backup_sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc",
+    "checkpoint_size": 852793,
+    "backup_size": 852793,
+    "entry_count": 304,
+    "verified_this_continuation_via": "STAGE17_TOOLS/validate_s17_00_a.py fresh run, 22/22 PASS"
+  },
+  "status_flags": {
+    "S17_C1B_RESOURCE_METRIC_PLACEMENT_AUTHORITY": "PASS",
+    "S17_C1_RESOURCE_AUTHORITY_POSITION_CONTRACT": "PASS",
+    "RESOURCE_AUTHORITY_SPATIAL_BINDING_READY": true,
+    "S17_C2_RESOURCE_AUTHORITATIVE_APPROACH_GATHER": "PASS",
+    "S17_INTERACTION_APPROACH_AUTHORITY_MIGRATION": "PARTIAL_TWO_CLASSES_READY",
+    "ready_classes": ["ENEMY", "RESOURCE"],
+    "GROUND_LOOT_REACHABLE_AUTO_SETTLE_LIMITATION": "STILL_OPEN_NOT_ADDRESSED_THIS_ROUND",
+    "G19_COMBAT_TARGET_STATIC_BINDING_GAP": "CONFIRMED_NEW_FINDING_NOT_FIXED_THIS_ROUND"
+  },
+  "blockers": [],
+  "housekeeping": {
+    "backend": "OFF",
+    "listener_8000_count": 0,
+    "godot_editor_pid_11316_preserved": true,
+    "runtime_evidence_preserved": true,
+    "invalidated_runs_preserved": true,
+    "stage16b_checkpoint": "IMMUTABLE",
+    "stage16b_backup": "IMMUTABLE",
+    "development_checkpoint_created": false,
+    "backup_created": false,
+    "stage17_backup_or_release_created": false
+  },
+  "next_recommendation": {
+    "immediate_optional": "Investigate GROUND_LOOT settle-precondition fragility and the G19 static-target-binding gap as two small, independent, narrowly-scoped follow-up rounds",
+    "not_started_this_round": [
+      "Ground Loot auto-settle fix",
+      "NPC metric binding",
+      "dialogue->quest",
+      "Vendor binding",
+      "Bag",
+      "water",
+      "death/respawn",
+      "save UI",
+      "PlayableSubregion final",
+      "art/Blender production",
+      "Living expansion",
+      "Stage17 backup/release/seal"
+    ]
+  }
+}

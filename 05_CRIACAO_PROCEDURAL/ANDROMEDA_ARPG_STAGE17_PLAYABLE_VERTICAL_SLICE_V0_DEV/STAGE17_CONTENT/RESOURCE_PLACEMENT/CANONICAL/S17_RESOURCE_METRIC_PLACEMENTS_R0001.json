@@ -1,0 +1,151 @@
+{
+  "canonical_manifest": {
+    "constraints": [
+      {
+        "active": true,
+        "authoring_source": {
+          "node_path": "WorldStreamRoot/CollisionSurface/ResourceGatherLosBlocker",
+          "runtime_authority": false,
+          "scene_path": "13_GODOT_ARPG_STAGE17/scenes/Main.tscn",
+          "scene_sha256": "8691a691b89849307adb14e4e6e64b7b84a8d219dc8cfe872ebecf10e7476643",
+          "shape_child_path": "CollisionShape3D"
+        },
+        "block_ref": "STA-05-BLK-04",
+        "blocks_los": true,
+        "bounds": {
+          "max_altitude_m": 2.0,
+          "max_iso_x_m": 137103.506775035,
+          "max_iso_y_m": -1336965.35467694,
+          "min_altitude_m": 0.0,
+          "min_iso_x_m": 137103.306775035,
+          "min_iso_y_m": -1336966.5546769402
+        },
+        "constraint_kind": "AXIS_ALIGNED_SOLID_BLOCKER",
+        "constraint_ref": "RESOURCE-LOS-BLOCKER-S17-001",
+        "placement_revision": "S17-RESOURCE-PLACEMENT-DEV-R0001",
+        "source_authoring_hash": "1800c49ce18445a4ab056ba4a6db62def439a9d14390213bacda3fc90b2d8727",
+        "world_instance_id": "rt:world:bd0f78f5-7018-4cc6-8f47-34f8f2875e47",
+        "zone_ref": "ZONE-STA-05-BLK-04"
+      }
+    ],
+    "coordinate_contract": {
+      "altitude_source": "OFFLINE_AUTHORED_BAKE",
+      "local_anchor_node_path": "ActorRoot/Player",
+      "local_anchor_position": {
+        "x": -7.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "local_x_axis": "+ISO_X_M",
+      "local_z_axis": "+ISO_Y_M",
+      "mapping": "AUTHORITY_ORIGIN_PLUS_LOCAL_OFFSET_METRES",
+      "scale_m_per_local_unit": 1.0
+    },
+    "gather_policy": {
+      "blocker_geometry_authority": "OFFLINE_BAKED_RUNTIME_MATERIALIZED",
+      "blocker_los_required": true,
+      "client_position_accepted": false,
+      "distance_authority": "SERVER_MOVEMENT_STATE_TO_MATERIALIZED_RESOURCE_POSITION",
+      "metric_range_m": 1.5
+    },
+    "logical_identity_policy": {
+      "gth_owns_gathering_and_depletion": true,
+      "multiple_physical_placements_per_gth_supported": true,
+      "physical_placement_identity_is_separate": true
+    },
+    "placement_algorithm_version": "S17_EXPLICIT_AUTHORIAL_BAKE_V1",
+    "placement_authority": "STAGE17_RESOURCE_METRIC_PLACEMENT_AUTHORITY",
+    "placement_model": "HYBRID_PLACEMENT_OFFLINE_BAKED_RUNTIME_MATERIALIZED",
+    "placement_revision": "S17-RESOURCE-PLACEMENT-DEV-R0001",
+    "placements": [
+      {
+        "active": true,
+        "authoring_source": {
+          "node_path": "WorldStreamRoot/B03InteractionTargets/OreB03",
+          "object_ref": "ORE_PRIMARY",
+          "runtime_authority": false,
+          "scene_path": "13_GODOT_ARPG_STAGE17/scenes/Main.tscn",
+          "scene_sha256": "8691a691b89849307adb14e4e6e64b7b84a8d219dc8cfe872ebecf10e7476643"
+        },
+        "block_ref": "STA-05-BLK-04",
+        "logical_node_ref": "GTH-34AC1BC54C33917F0553",
+        "ordinal": 0,
+        "placement_mode": "EXPLICIT",
+        "placement_ref": "RESOURCE-PLACEMENT-S17-3BDA3343A505268017CE",
+        "placement_revision": "S17-RESOURCE-PLACEMENT-DEV-R0001",
+        "position": {
+          "altitude_m": 0.0,
+          "iso_x_m": 137111.156775035,
+          "iso_y_m": -1336966.95467694
+        },
+        "position_authority": "STAGE17_RESOURCE_METRIC_PLACEMENT_MATERIALIZED",
+        "resource_kind": "ORE",
+        "schema_version": "S17_RESOURCE_METRIC_PLACEMENT_V1",
+        "source_authoring_hash": "1800c49ce18445a4ab056ba4a6db62def439a9d14390213bacda3fc90b2d8727",
+        "source_kind": "MINERAL",
+        "source_ref": "MIN-MANA-ORE",
+        "world_instance_id": "rt:world:bd0f78f5-7018-4cc6-8f47-34f8f2875e47",
+        "zone_ref": "ZONE-STA-05-BLK-04"
+      },
+      {
+        "active": true,
+        "authoring_source": {
+          "node_path": "WorldStreamRoot/B03InteractionTargets/TreeB03",
+          "object_ref": "TREE_PRIMARY",
+          "runtime_authority": false,
+          "scene_path": "13_GODOT_ARPG_STAGE17/scenes/Main.tscn",
+          "scene_sha256": "8691a691b89849307adb14e4e6e64b7b84a8d219dc8cfe872ebecf10e7476643"
+        },
+        "block_ref": "STA-05-BLK-04",
+        "logical_node_ref": "GTH-CA3D9A47934BD64A24B4",
+        "ordinal": 0,
+        "placement_mode": "EXPLICIT",
+        "placement_ref": "RESOURCE-PLACEMENT-S17-DCC60BB7E7C256C1BF9E",
+        "placement_revision": "S17-RESOURCE-PLACEMENT-DEV-R0001",
+        "position": {
+          "altitude_m": 0.0,
+          "iso_x_m": 137104.156775035,
+          "iso_y_m": -1336965.95467694
+        },
+        "position_authority": "STAGE17_RESOURCE_METRIC_PLACEMENT_MATERIALIZED",
+        "resource_kind": "TREE",
+        "schema_version": "S17_RESOURCE_METRIC_PLACEMENT_V1",
+        "source_authoring_hash": "1800c49ce18445a4ab056ba4a6db62def439a9d14390213bacda3fc90b2d8727",
+        "source_kind": "FLORA",
+        "source_ref": "FLR-HARDWOOD-05-04-03",
+        "world_instance_id": "rt:world:bd0f78f5-7018-4cc6-8f47-34f8f2875e47",
+        "zone_ref": "ZONE-STA-05-BLK-04"
+      }
+    ],
+    "schema_version": "S17_RESOURCE_METRIC_PLACEMENT_V1",
+    "source": {
+      "authoring_path": "STAGE17_CONTENT/RESOURCE_PLACEMENT/S17_PLAYABLE_V0_RESOURCE_AUTHORING_V0_1_0_DEV.json",
+      "authoring_sha256": "1800c49ce18445a4ab056ba4a6db62def439a9d14390213bacda3fc90b2d8727",
+      "offline_bake": true,
+      "runtime_generation": false,
+      "scene_path": "13_GODOT_ARPG_STAGE17/scenes/Main.tscn",
+      "scene_sha256": "8691a691b89849307adb14e4e6e64b7b84a8d219dc8cfe872ebecf10e7476643"
+    },
+    "world_binding": {
+      "anchor_kind": "SERVER_AUTHORITATIVE_PLAYER_MOTION_SNAPSHOT_DEV_AUTHORING_ANCHOR",
+      "anchor_player_ref": "PLY-455FEDE6124F42819BDA63A8E82355F4",
+      "anchor_position": {
+        "altitude_m": 0.0,
+        "iso_x_m": 137108.156775035,
+        "iso_y_m": -1336956.95467694
+      },
+      "anchor_snapshot_hash": "ce89e6267b3a595226aac475b0f09cb60dc3c035b7f8a41c2c5982bce90c59d2",
+      "block_ref": "STA-05-BLK-04",
+      "coordinate_authority": "LIVING_CONTINUOUS_ISOMETRIC_MOVEMENT_RUNTIME",
+      "logical_zone_binding_authority": "PROTECTED_GTH_ZONE_BLOCK",
+      "metric_country_containment": "VALIDATED",
+      "metric_zone_containment": "NOT_ENFORCED_STAGE17_GREYBOX_PROFILE_MOTION_DIVERGENCE",
+      "owner_scope": "stage17:playable-v0-dev",
+      "world_instance_id": "rt:world:bd0f78f5-7018-4cc6-8f47-34f8f2875e47",
+      "world_seed": 160800,
+      "zone_ref": "ZONE-STA-05-BLK-04"
+    }
+  },
+  "canonical_manifest_hash": "f0c79305c4fe6adad277b4a026311124c5ce865db399e327750e55c2d660ec92",
+  "schema": "S17_RESOURCE_METRIC_PLACEMENT_MANIFEST_ENVELOPE_V1"
+}

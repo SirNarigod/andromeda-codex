@@ -1,0 +1,18 @@
+{
+  "record_id": "ANDROMEDA_UE5_CONTENT_MANIFEST_V6",
+  "status": "IMPORT_READY_PENDING_UE5_PROJECT",
+  "supersedes": "ANDROMEDA_UE5_CONTENT_MANIFEST_V5",
+  "base_manifest": "ANDROMEDA_UE5_CONTENT_MANIFEST_V5.json",
+  "staging_destination": "08_UE5_WORKSPACE/02_IMPORT_STAGING",
+  "vertical_slice_assets": [
+    {"id":"DA_VargaMap","source":"01_LORE/CANON_DERIVADO_ATIVO/GEOGRAFIA/TERRAS_LIVRES/SUBREGIOES/VARGA_VERTICAL_SLICE_MAP_V1.json","use":"LOCAL_POI_AND_VISUAL_REFERENCE_ONLY"},
+    {"id":"DA_VargaNPCProfiles","source":"01_LORE/CANON_DERIVADO_ATIVO/SOCIEDADES/PERSONAGENS_LOCAIS/VARGA_LOCAL_NPC_PROFILES_V1.json","use":"LOCAL_INTERACTION_CONTEXT_ONLY"},
+    {"id":"DA_DisplacedPlayerStart","source":"04_MECANICAS/JOGADOR_E_PROGRESSAO/VARGA_DISPLACED_PROTAGONIST_PROFILE_V1.json","use":"CUSTOM_PLAYER_START_CONTEXT"},
+    {"id":"DT_VargaStarterKit","source":"04_MECANICAS/ITENS_E_ARMAS/VARGA_STARTER_KIT_V1.json","use":"TECHNICAL_LOADOUT_ONLY"},
+    {"id":"DA_ContratoTravessia","source":"04_MECANICAS/QUESTS_DINAMICAS/VARGA_CONTRATO_DE_TRAVESSIA_V1.json","use":"LOCAL_QUEST_STATE_MACHINE"}
+  ],
+  "living_sim": "06_ENGINE/ACTIVE_CONTENT_ADAPTERS/LIVING_SIM_CONTENT_PROJECTION_V6.json",
+  "living_scale": "06_ENGINE/ACTIVE_CONTENT_ADAPTERS/LIVING_SCALE_CONTENT_PROJECTION_V6.json",
+  "import_rule": "UE5 imports may create local vertical-slice assets and runtime state. They cannot identify a culprit as canon, create loot from Vespa-de-Vidro, alter R2 people or episodes, change sovereignty, promote save data to lore, or bypass authorial gates.",
+  "validation_gate": "Reject a Varga import without provenance, local scope, spoiler guard and staging record."
+}

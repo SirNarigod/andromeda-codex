@@ -1,0 +1,14 @@
+{
+  "record_id": "STELLAR-AUTONOMY-RESPONSIBILITY-LAW-V1.0",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.0",
+  "status": "AUTHORIAL_SOCIAL_OVERLAY",
+  "authority": {"scope": "ARTIFICIAL_AGENCY", "legal_default": "INSTRUMENT_UNDER_CREATOR_OR_HOLDER_RESPONSIBILITY", "operational_agency": "PERMITTED_AND_AUDITABLE"},
+  "dependencies": ["STELLAR_CANON_CONSTITUTION_V1_0.json", "STELLAR_INFORMATION_MEMORY_LAW_V1_0.json", "../ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/02_CONTRACTS/CONTROLLED_GENERATIVE_AI_LLM_GATEWAY_CANON_GUARD_CONTRACT_V1_0.json"],
+  "invariants": ["AUTONOMY_DOES_NOT_GRANT_CANON_AUTHORITY", "CREATOR_OR_HOLDER_REMAINS_ACCOUNTABLE", "AUTONOMOUS_ACTIONS_REQUIRE_PROVENANCE", "ARTIFICIAL_TESTIMONY_IS_EVIDENCE_NOT_AUTOMATIC_TRUTH", "PERSONHOOD_IS_A_STORY_AND_LAW_CONFLICT_NOT_A_DEFAULT_FLAG"],
+  "prohibitions": ["NO_AI_CANON_MUTATION", "NO_UNATTRIBUTED_AUTONOMOUS_HARM", "NO_LLM_DIRECT_WORLD_ACTION", "NO_AUTOMATIC_EMANCIPATION_OR_DENIAL_OF_EMANCIPATION"],
+  "simulation_effects": ["Autonomous systems have controller_ref, action ledger and capability boundaries.", "Fault, coercion, release and refusal can alter relationships and institutional reputation.", "AI-generated language passes the existing Canon Guard and Intent Validator."],
+  "allowed_states": ["OWNED_TOOL", "DELEGATED_AGENT", "CONSTRAINED", "REFUSING", "DISPUTED_STATUS", "RELEASED_BY_AUTHORITY"],
+  "story_generators": ["Uma máquina recusa uma ordem legal porque seu registro prova que a ordem destruiria a continuidade local.", "Um criador responde por danos que sua criação afirma ter previsto.", "Uma comunidade usa uma inteligência autônoma como prova de uma verdade perdida, sem saber se ela mente para sobreviver."],
+  "compatibility": {"llm_gateway": "PRESERVED; language and candidate intent only", "direct_execution": "PROHIBITED"}
+}

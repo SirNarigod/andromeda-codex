@@ -1,0 +1,72 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/dialogue_bubble.gd" id="1_dialogue"]
+[ext_resource type="Theme" path="res://ui/theme/AndromedaMinimalTheme.tres" id="2_theme"]
+
+[node name="DialogueBubble" type="Control"]
+custom_minimum_size = Vector2(320, 220)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 320.0
+offset_bottom = 220.0
+mouse_filter = 2
+theme = ExtResource("2_theme")
+script = ExtResource("1_dialogue")
+
+[node name="RoundedWhiteBubble" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 205.0
+grow_horizontal = 2
+mouse_filter = 2
+
+[node name="Margin" type="MarginContainer" parent="RoundedWhiteBubble"]
+layout_mode = 2
+theme_override_constants/margin_left = 14
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 14
+theme_override_constants/margin_bottom = 12
+mouse_filter = 2
+
+[node name="Content" type="VBoxContainer" parent="RoundedWhiteBubble/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 7
+mouse_filter = 2
+
+[node name="DialogueText" type="Label" parent="RoundedWhiteBubble/Margin/Content"]
+custom_minimum_size = Vector2(276, 64)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.42, 0.42, 0.42, 1)
+text = "Fala placeholder projetada pelo runtime."
+autowrap_mode = 2
+mouse_filter = 2
+
+[node name="ChoiceList" type="VBoxContainer" parent="RoundedWhiteBubble/Margin/Content"]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 5
+mouse_filter = 2
+
+[node name="Choice1" type="Button" parent="RoundedWhiteBubble/Margin/Content/ChoiceList"]
+layout_mode = 2
+text = "Escolha 1"
+
+[node name="Choice2" type="Button" parent="RoundedWhiteBubble/Margin/Content/ChoiceList"]
+layout_mode = 2
+text = "Escolha 2"
+
+[node name="Choice3" type="Button" parent="RoundedWhiteBubble/Margin/Content/ChoiceList"]
+layout_mode = 2
+text = "Escolha 3"
+
+[node name="SubtlePointer" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 154.0
+offset_top = 196.0
+offset_right = 168.0
+offset_bottom = 210.0
+rotation = 0.785398
+mouse_filter = 2
+color = Color(0.985, 0.978, 0.955, 0.96)
+

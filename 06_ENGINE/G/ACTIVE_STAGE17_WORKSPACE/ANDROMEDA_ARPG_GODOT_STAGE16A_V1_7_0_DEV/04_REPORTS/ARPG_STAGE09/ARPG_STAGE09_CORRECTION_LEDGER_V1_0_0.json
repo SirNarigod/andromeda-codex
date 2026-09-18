@@ -1,0 +1,52 @@
+{
+  "entries": [
+    {
+      "fix": "Use the real Stage05 arpg_item_definitions columns/source_kind contract; Stage05 schema unchanged.",
+      "id": "S09-C01",
+      "issue": "Fishing extension initially targeted a non-existent item_kind column.",
+      "status": "PASS",
+      "type": "SCHEMA_COMPATIBILITY"
+    },
+    {
+      "fix": "Composite identity now includes world + block + activity + source kind + source ref.",
+      "id": "S09-C02",
+      "issue": "Resource uniqueness treated a material ref as world-global, colliding when the same mineral existed in multiple blocks.",
+      "status": "PASS",
+      "type": "SPATIAL_UNIQUENESS"
+    },
+    {
+      "fix": "Corrected placeholder/value count; schema unchanged.",
+      "id": "S09-C03",
+      "issue": "Work-order insert supplied 13 values for 12 columns.",
+      "status": "PASS",
+      "type": "SQL_ARITY"
+    },
+    {
+      "fix": "Verify base definitions separately and permit explicit STAGE09_* extensions; 84 base definitions remain invariant.",
+      "id": "S09-C04",
+      "issue": "Stage05 verify compared raw definition count (85 with fish extension) against 84-base commerce catalog.",
+      "status": "PASS",
+      "type": "EXTENSION_COMPATIBILITY"
+    },
+    {
+      "fix": "Node refs and success rolls derive only from world seed and stable gameplay context.",
+      "id": "S09-C05",
+      "issue": "Node IDs/outcomes could have depended on administrative runtime IDs.",
+      "status": "PASS",
+      "type": "DETERMINISM"
+    },
+    {
+      "fix": "Classify grouped runs as INCONCLUSIVE_TIMEOUT and rerun the affected cases/runners in isolation; no timeout counted as PASS.",
+      "id": "S09-C06",
+      "issue": "Grouped legacy/unit runners exceeded execution windows before later cases produced reports.",
+      "status": "PASS",
+      "type": "HARNESS"
+    }
+  ],
+  "generated_at": "2026-08-18T20:47:28.987657+00:00",
+  "open_corrections": 0,
+  "record_id": "ARPG-STAGE09-CORRECTION-LEDGER-V1.0.0",
+  "stage": "09/23",
+  "status": "CLOSED",
+  "version": "V1.0.0"
+}

@@ -1,0 +1,214 @@
+{
+  "record_id": "BASELINE-V1.3-SPATIAL-STREAMING-PROBE",
+  "master": "/mnt/data/ANDROMEDA_CODEX_MASTER_V2_1_0_RELEASE.zip",
+  "checks": [
+    {
+      "check": "identity_survives_cross_state_relocation",
+      "pass": true,
+      "detail": {
+        "before": {
+          "state_id": "STA-01",
+          "block_id": "STA-01-BLK-01",
+          "city_id": "CITY-01-01-01"
+        },
+        "move": {
+          "status": "PASS",
+          "npc_id": "NPC-01-01-01-001",
+          "source_block_id": "STA-01-BLK-01",
+          "destination_block_id": "STA-02-BLK-01",
+          "destination_city_id": null,
+          "distance_km": 731.01
+        },
+        "after": {
+          "state_id": "STA-02",
+          "block_id": "STA-02-BLK-01",
+          "city_id": null
+        }
+      }
+    },
+    {
+      "check": "cross_state_relocation_has_distance",
+      "pass": true,
+      "detail": {
+        "status": "PASS",
+        "npc_id": "NPC-01-01-01-001",
+        "source_block_id": "STA-01-BLK-01",
+        "destination_block_id": "STA-02-BLK-01",
+        "destination_city_id": null,
+        "distance_km": 731.01
+      }
+    },
+    {
+      "check": "country_snapshot_persistence_integrity",
+      "pass": true,
+      "detail": {
+        "status": "PASS",
+        "failures": [],
+        "events": 3
+      }
+    },
+    {
+      "check": "capability_atlas_lod",
+      "pass": false,
+      "detail": {
+        "available": false
+      }
+    },
+    {
+      "check": "capability_geodetic_to_isometric",
+      "pass": false,
+      "detail": {
+        "available": false
+      }
+    },
+    {
+      "check": "capability_chunk_streaming",
+      "pass": false,
+      "detail": {
+        "available": false
+      }
+    },
+    {
+      "check": "capability_entity_ownership_transfer",
+      "pass": false,
+      "detail": {
+        "available": false
+      }
+    },
+    {
+      "check": "capability_atlas_country_layers",
+      "pass": false,
+      "detail": {
+        "available": false
+      }
+    },
+    {
+      "check": "capability_dungeon_graph",
+      "pass": false,
+      "detail": {
+        "available": false
+      }
+    },
+    {
+      "check": "coordinate_report_has_country_km",
+      "pass": true,
+      "detail": {
+        "country_area_km2_approx": 4774193.4,
+        "crs": "ACRS-STELLAR-GEODETIC-V1",
+        "state_center_distances": [
+          {
+            "state_id": "STA-01",
+            "center_distance_from_country_center_km": 879.7
+          },
+          {
+            "state_id": "STA-02",
+            "center_distance_from_country_center_km": 495.51
+          },
+          {
+            "state_id": "STA-03",
+            "center_distance_from_country_center_km": 119.89
+          },
+          {
+            "state_id": "STA-04",
+            "center_distance_from_country_center_km": 283.58
+          },
+          {
+            "state_id": "STA-05",
+            "center_distance_from_country_center_km": 666.08
+          }
+        ],
+        "unit_policy": {
+          "distance": "km",
+          "area": "km2",
+          "temperature": "C",
+          "rainfall": "mm/year",
+          "humidity": "percent",
+          "gameplay_stats": "0-100",
+          "inventory": "abstract units"
+        },
+        "status": "PASS"
+      }
+    },
+    {
+      "check": "subregion_has_coordinate_center",
+      "pass": false,
+      "detail": {
+        "subregion_keys": [
+          "biome",
+          "bounding_region",
+          "climate",
+          "id",
+          "inventory",
+          "name",
+          "name_status",
+          "region_id",
+          "status"
+        ]
+      }
+    },
+    {
+      "check": "block_has_bounding_region",
+      "pass": true,
+      "detail": {
+        "block_keys": [
+          "biome",
+          "bounding_region",
+          "bridges",
+          "cities",
+          "climate",
+          "coordinate_center",
+          "dungeons",
+          "fauna",
+          "flora",
+          "id",
+          "industries",
+          "inventory",
+          "kingdoms",
+          "name",
+          "name_status",
+          "region_id",
+          "resources",
+          "root_deep",
+          "scene_objects",
+          "state_id",
+          "status",
+          "subregion_count",
+          "subregions"
+        ]
+      }
+    },
+    {
+      "check": "dungeon_has_room_graph",
+      "pass": false,
+      "detail": {
+        "dungeon_keys": [
+          "block_id",
+          "darkness_level",
+          "hazardous",
+          "id",
+          "name",
+          "name_status",
+          "objects",
+          "recommended_light",
+          "root_deep",
+          "state_id",
+          "status"
+        ]
+      }
+    }
+  ],
+  "observations": [
+    {
+      "world_id": "rt:world:79a79c75-622c-4afc-a370-2fb581d2929a",
+      "country": "Terras Livres",
+      "states": 5,
+      "blocks": 9,
+      "actor": "NPC-01-01-01-001",
+      "source_block": "STA-01-BLK-01",
+      "destination_block": "STA-02-BLK-01"
+    }
+  ],
+  "supported_checks": 5,
+  "missing_or_failed": 8,
+  "status": "BASELINE_CAPTURED"
+}

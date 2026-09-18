@@ -1,0 +1,379 @@
+{
+  "current_checkpoint": "STAGE16A_V0.4.0_PASS_PARTIAL_PRE_GODOT",
+  "current_stage": 16,
+  "godot_status": {
+    "connection": "USER_REPORTED_CONNECTED_WHEN_PC_ON",
+    "current_user_device": "MOBILE_PC_OFF",
+    "direct_use_policy": "Notify user before first necessary direct editor use; defer while user is mobile.",
+    "stage07_editor_required": false,
+    "stage08_editor_required": false,
+    "stage09_editor_required": false,
+    "stage10_editor_required": false,
+    "stage11_editor_required": false,
+    "stage12_editor_required": false,
+    "stage13_editor_required": false,
+    "stage14_editor_required": false,
+    "stage16_editor_required": true,
+    "stage16_editor_gate": "PENDING_PC_ON_AND_EDITOR_BRIDGE_AVAILABLE"
+  },
+  "lore_completeness_contract": {
+    "coverage_file": "10_ARPG/STAGE07/ANDROMEDA_LORE_GAMEPLAY_COVERAGE_V0_1_0.json",
+    "entity_unmapped": 0,
+    "master_entities": 1660,
+    "master_relationships": 9429,
+    "rule": "Canonical identity and relationships are READ_ONLY. Gameplay behavior/values may be derived in separate runtime namespaces. Any unsupported conversion stays guarded rather than invented as canon."
+  },
+  "next_stage_after_pass": 17,
+  "numbering": "00-22",
+  "record_id": "ARPG-STAGE-PLAN-V1.7.0-DEV",
+  "requested_capabilities": {
+    "biomes_complete_individual": 8,
+    "bridges": 10,
+    "fishing": 9,
+    "hunting": 9,
+    "machines": 11,
+    "mining": 9,
+    "professions_player_npc": 9,
+    "roads": 10,
+    "robots": 11,
+    "technology": 11,
+    "transport": 10,
+    "vehicles": 10,
+    "wood_flora": 9
+  },
+  "revision_reason": "User expanded completeness target to fishing, hunting, vehicles, roads, bridges, complete canonical biomes, technologies, machines, robots and all available Andrômeda lore as gameplay-bound content. Dedicated mobility, technology/robotics and lore-completeness gates added.",
+  "safe_batch_limit": {
+    "major_stages_per_cycle": 1,
+    "minor_stages_per_cycle": 2,
+    "rule": "Finish test/correction/regression/checkpoint before advancing."
+  },
+  "stage08_world_contract": {
+    "art_dependency": "NONE",
+    "canonical_biomes": [
+      "BIO-002",
+      "BIO-008"
+    ],
+    "canonical_climate": "CLM-002",
+    "hydrology": [
+      "BAS-001",
+      "RIV-VARDEN"
+    ],
+    "outbound_routes_locked": [
+      "RTE-001",
+      "RTE-003",
+      "RTE-013"
+    ],
+    "playable_country": "TER-011",
+    "root_deep_overlay_policy": "LOCAL_RUNTIME_OVERLAY_WITH_CANONICAL_UNDERLAY"
+  },
+  "stage09_gathering_work_contract": {
+    "activities": [
+      "MINING",
+      "LOGGING",
+      "FORAGING",
+      "AGRICULTURE",
+      "HUNTING",
+      "FISHING"
+    ],
+    "art_dependency": "NONE",
+    "fishing_spatial_rule": "RIV-VARDEN_INTERSECTION_ONLY",
+    "flora_master_spatialization": "BLOCKED_GUARDED",
+    "inventory_authority": "STAGE05_UNIVERSAL_ITEM_CORE",
+    "profession_snapshots": 91,
+    "shared_worker_contract": "PLAYER_AND_NPC"
+  },
+  "stage10_mobility_contract": {
+    "art_dependency": "NONE",
+    "boundary_routes_locked": [
+      "RTE-001",
+      "RTE-003",
+      "RTE-013"
+    ],
+    "canonical_anchors": [
+      "SYS-AUT-001",
+      "SRTE-001",
+      "POI-046"
+    ],
+    "cargo_inventory": "STAGE05_UNIVERSAL_ITEM_CORE",
+    "concrete_propulsion_technology": "DEFERRED_STAGE11",
+    "shared_driver_contract": "PLAYER_AND_NPC",
+    "vehicle_profiles": 3
+  },
+  "stage11_technology_contract": {
+    "art_dependency": "NONE",
+    "canonical_workshop": "POI-003",
+    "energy_contract": "TECH-ENERGY-BUFFER-STAGE11_GAMEPLAY_DERIVED_SOURCE_UNSPECIFIED",
+    "inventory_authority": "STAGE05_UNIVERSAL_ITEM_CORE",
+    "machine_profiles": 4,
+    "robot_legal_status": "TECH_ASSET_NOT_NPC",
+    "robot_profiles": 3,
+    "robotics_job_guard": "JOB-LOG-ROBOTICA-001 is TER-001, not TER-011",
+    "vehicle_binding": "STAGE10_MOBILITY"
+  },
+  "stage12_narrative_contract": {
+    "culture_identity": "SOC-PROP-FND-011",
+    "culture_practices": 26,
+    "dialogue_briefs": 3,
+    "factions_guarded": [
+      "FAC-009",
+      "FAC-010"
+    ],
+    "global_characters_auto_spatialized": false,
+    "official_language": "UNRESOLVED_DO_NOT_INVENT",
+    "official_religion": "UNRESOLVED_DO_NOT_INVENT",
+    "quest_templates": 5,
+    "reputation": "CONTEXTUAL",
+    "spoiler_guard": true
+  },
+  "stage13_economy_contract": {
+    "art_dependency": "NONE",
+    "canonical_anchors": [
+      "POI-002",
+      "POI-003",
+      "POI-006",
+      "INDN-008"
+    ],
+    "culinary_projections": 4,
+    "currency": "RUNTIME_ONLY_NOT_CANON",
+    "godot_required": false,
+    "inventory": "STAGE05_UNIVERSAL_ITEM_CORE",
+    "pricing": "SUPPLY_DEMAND_LOGISTICS_RUNTIME_ONLY",
+    "shared_economy": "PLAYER_AND_NPC"
+  },
+  "stage14_living_contract": {
+    "art_dependency": "NONE",
+    "dynamic_opportunities": "GAMEPLAY_DERIVED_NOT_CANON",
+    "faction_sovereignty_guard": true,
+    "feedback": "BOUNDED_CAUSAL_RUNTIME",
+    "godot_required": false,
+    "lawlessness_guard": true,
+    "living_bridges": [
+      "ConsequenceEngine",
+      "WorldSimulationOrchestrator",
+      "SocietyLaborSystem",
+      "EcologySystem",
+      "WorldSystems"
+    ],
+    "metrics": 10,
+    "population_guard": true
+  },
+  "stage15_save_contract": {
+    "art_dependency": "NONE",
+    "death_policy": "NO_PERMANENT_XP_OR_ITEM_LOSS_STAGE15",
+    "godot_required": false,
+    "health_recovery_ratio": 0.5,
+    "integrity": [
+      "SHA256",
+      "SQLITE_INTEGRITY_CHECK",
+      "FOREIGN_KEY_CHECK",
+      "CRITICAL_TABLE_FINGERPRINT",
+      "MASTER_BASELINE_BINDING"
+    ],
+    "offline_policy": "EXPLICIT_CATCHUP_ONLY_CAP_6H",
+    "resource_recovery_ratio": 0.35,
+    "respawn": "LAST_SAFE_WAYPOINT_OVERWORLD",
+    "resume_strategy": "LINEAR_REHYDRATION_SINGLE_GLOBAL_HEALTH",
+    "slot_generations": [
+      "current",
+      "previous"
+    ],
+    "snapshot_format": "FULL_SQLITE_TRANSACTIONAL_COPY",
+    "version": "V1.6.0"
+  },
+  "stage_count": 23,
+  "stages": [
+    {
+      "folder": "00_GOVERNANCE",
+      "index": 0,
+      "purpose": "Governança ARPG, baselines e Canon Guard",
+      "status": "PASS"
+    },
+    {
+      "folder": "01_GAME_CORE",
+      "index": 1,
+      "purpose": "Game loop, input autoritativo, perfis e comandos",
+      "status": "PASS"
+    },
+    {
+      "folder": "02_CHARACTER",
+      "index": 2,
+      "purpose": "Personagem, atributos, nível, XP e vitais",
+      "status": "PASS"
+    },
+    {
+      "folder": "03_COMBAT",
+      "index": 3,
+      "purpose": "Combate ARPG, dano, crítico, defesa e resistências",
+      "status": "PASS"
+    },
+    {
+      "folder": "04_ATTRIBUTES_RESOURCES",
+      "index": 4,
+      "purpose": "Recursos adaptativos, regeneração, consumíveis e cooldowns",
+      "status": "PASS"
+    },
+    {
+      "folder": "05_ITEMS",
+      "index": 5,
+      "purpose": "Itemização universal, equipamentos, materiais, raridade, qualidade, sockets e inventário player/NPC",
+      "status": "PASS"
+    },
+    {
+      "folder": "06_SKILLS",
+      "index": 6,
+      "purpose": "Habilidades ativas/passivas, maestria e build emergente",
+      "status": "PASS"
+    },
+    {
+      "folder": "07_ACTORS",
+      "index": 7,
+      "purpose": "Atores, hostilidade, PvE AI, elites, minibosses e bosses",
+      "status": "PASS"
+    },
+    {
+      "folder": "08_WORLD_BIOMES",
+      "index": 8,
+      "purpose": "Mundo ARPG, zonas, dungeons, encontros, waypoints, clima, hidrologia e biomas canônicos individualizados",
+      "status": "PASS"
+    },
+    {
+      "folder": "09_GATHERING_HUNTING_FISHING_WORK",
+      "index": 9,
+      "purpose": "Mineração, madeira, flora, agricultura, caça, pesca, recursos naturais, ferramentas, profissões e trabalho player/NPC",
+      "status": "PASS"
+    },
+    {
+      "folder": "10_MOBILITY_INFRASTRUCTURE",
+      "index": 10,
+      "purpose": "Automóveis/veículos, montarias quando aplicável, estradas, rotas, pontes, transporte e infraestrutura de travessia",
+      "status": "PASS"
+    },
+    {
+      "folder": "11_TECH_MACHINES_ROBOTICS",
+      "index": 11,
+      "purpose": "Tecnologias, máquinas, robôs, energia, automação, oficinas e sistemas industriais funcionais",
+      "status": "PASS"
+    },
+    {
+      "folder": "12_QUESTS_NARRATIVE_CULTURE",
+      "index": 12,
+      "purpose": "Quests, campanha, história, personagens, idiomas, crenças, cultura e narrativa jogável",
+      "status": "PASS"
+    },
+    {
+      "folder": "13_ECONOMY_CRAFTING",
+      "index": 13,
+      "purpose": "Vendors, stash, reparo, crafting, culinária, serviços, mercados e cadeias produtivas",
+      "status": "PASS"
+    },
+    {
+      "folder": "14_LIVING_INTEGRATION",
+      "index": 14,
+      "purpose": "Living x ARPG: facções, leis, população, ecologia, trabalho NPC, consequências e LOD sistêmico",
+      "status": "PASS"
+    },
+    {
+      "folder": "15_SAVE_PERSISTENCE",
+      "index": 15,
+      "purpose": "Save, persistência, morte, recuperação, respawn e continuidade",
+      "status": "PASS"
+    },
+    {
+      "folder": "16_GODOT_RUNTIME",
+      "index": 16,
+      "purpose": "Vertical slice integrado no Godot; Stage16A fecha contratos pré-Godot, Stage16B exige validação direta no editor bridge.",
+      "status": "ACTIVE_PRE_GODOT"
+    },
+    {
+      "folder": "17_BALANCE",
+      "index": 17,
+      "purpose": "Balanceamento global de progressão, combate, loot, trabalho, recursos, economia e dificuldade",
+      "status": "PLANNED"
+    },
+    {
+      "folder": "18_TESTS",
+      "index": 18,
+      "purpose": "Regressão, stress, determinismo, segurança, integridade e performance",
+      "status": "PLANNED"
+    },
+    {
+      "folder": "19_LORE_COMPLETENESS",
+      "index": 19,
+      "purpose": "Gate de cobertura: nenhuma entidade/rota/local/bioma/tecnologia/recurso relevante do Master fica sem binding ou guard explícito",
+      "status": "PLANNED"
+    },
+    {
+      "folder": "20_PLACEHOLDER_CONTENT",
+      "index": 20,
+      "purpose": "Todo conteúdo funcional com placeholders, sem depender de arte final",
+      "status": "PLANNED"
+    },
+    {
+      "folder": "21_PRE_ART",
+      "index": 21,
+      "purpose": "Gate final de jogabilidade e conteúdo pré-arte",
+      "status": "PLANNED"
+    },
+    {
+      "folder": "22_VISUAL_PIPELINE",
+      "index": 22,
+      "purpose": "Arte conceitual, modelos, animações, VFX, áudio e UI final",
+      "status": "BLOCKED_UNTIL_STAGE_21_PASS"
+    }
+  ],
+  "status": "ACTIVE_PRE_GODOT_STAGE16A",
+  "supersedes": "ARPG-STAGE-PLAN-V1.6.0-DEV",
+  "updated_at": "2026-08-19T11:20:00-03:00",
+  "version": "V1.7.0-DEV",
+  "stage16a_contract": {
+    "version": "V0.4.0",
+    "godot_available": false,
+    "stage16_pass_allowed_without_godot": false,
+    "completed_minor_blocks": [
+      "INTERACTION_INTENT_RESOLUTION",
+      "UNIVERSAL_GROUND_LOOT",
+      "TERRAIN_TRAVERSAL_AND_STREAMING_CONTRACT",
+      "REAL_TIME_DIALOGUE_PRESENTATION",
+      "MINIMAL_CONTEXTUAL_HUD",
+      "CAMERA_PRESENTATION_CONTRACT",
+      "GAME_FEEL_AND_CONTEXTUAL_FEEDBACK_CONTRACT"
+    ],
+    "tests": {
+      "interaction": 14,
+      "ground_loot": 10,
+      "terrain_traversal_streaming": 18,
+      "realtime_dialogue": 18,
+      "minimal_hud": 18,
+      "passed": 114,
+      "failed": 0,
+      "camera_presentation": 18,
+      "gamefeel_contextual_feedback": 18
+    },
+    "regression": {
+      "stage03_combat": 14,
+      "stage04_resources_stamina": 16,
+      "status": "PASS"
+    },
+    "authorial_rules": {
+      "dialogue": "REAL_TIME_WORLD_BUBBLES_NO_NEXT_BUTTON",
+      "dialogue_bubble": "ROUNDED_WHITE_MEDIUM_GREY_TEXT",
+      "important_dialogue": "SOFT_LIGHT_ORANGE_PLUS_BOTTOM_ACCESSIBILITY_LINE",
+      "npc_names": "HOVER_ONLY",
+      "multi_npc_conversation": true,
+      "choice_ui": "SMALL_NEAR_NPC",
+      "hud": "MINIMAL_CONTEXTUAL_WORLD_FIRST",
+      "terrain": "SUBTLE_RELIEF_LOAD_AND_STAMINA_RELEVANCE_NO_BODY_BALANCE",
+      "pickup_radius_m": 0.5,
+      "auto_pickup_toggle": true,
+      "ground_loot_universal": true,
+      "icons_by_type": true,
+      "variable_map_size": true,
+      "large_areas_partitioned": true,
+      "camera": "STABLE_ISOMETRIC_WORLD_FIRST_NO_FORCED_COMBAT_ZOOM",
+      "camera_micro_relief": "SMOOTH_ANCHOR_NOT_RAW_TERRAIN_BOB",
+      "gamefeel": "SUBTLE_NON_AUTHORITATIVE_PRESENTATION_ONLY",
+      "global_hitstop": false
+    },
+    "next_minor_block": "VERTICAL_SLICE_RUNTIME_ASSEMBLY_CONTRACT_OR_REMAINING_PRE_GODOT_GAPS"
+  }
+}

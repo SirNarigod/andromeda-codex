@@ -1,0 +1,161 @@
+{
+  "record_id": "V14-STATIC-AUDIT",
+  "version": "V1.4.0",
+  "checks": 30,
+  "passed": 30,
+  "failed": 0,
+  "status": "PASS",
+  "failures": [],
+  "checks_detail": [
+    {
+      "name": "MASTER_V2_1_HASH",
+      "status": "PASS",
+      "detail": "9677b10890c24dfc04916178a2b9fd40a9ea131f2a13c1ec8255186ab203a98b"
+    },
+    {
+      "name": "NO_INHERITED_RUNTIME_MISSING",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "RUNTIME_MODIFICATION_ALLOWLIST",
+      "status": "PASS",
+      "detail": "country_scale.py"
+    },
+    {
+      "name": "NEW_MODULE_spatial_coordinates.py",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "NEW_MODULE_streaming_system.py",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "NEW_MODULE_dungeon_graph_v2.py",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "NEW_MODULE_atlas_country_lod.py",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "NEW_MODULE_integrated_engine_v14.py",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "RUNTIME_SYNTAX_IN_MEMORY",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "NO_TRANSIENT_ARTIFACTS",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "CONTRACT_JSON",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "CONTRACT_VERSION",
+      "status": "PASS",
+      "detail": "1.4.0"
+    },
+    {
+      "name": "CONTRACT_CHUNK_4096",
+      "status": "PASS",
+      "detail": "4096"
+    },
+    {
+      "name": "HEALTH_V14",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "name": "STREAM_INTEGRITY",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "name": "DUNGEON_GRAPH_INTEGRITY",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "name": "ROUTES_PRESENT",
+      "status": "PASS",
+      "detail": "5"
+    },
+    {
+      "name": "ROUTES_CANONICAL_IDS",
+      "status": "PASS",
+      "detail": "['RTE-001', 'RTE-003', 'RTE-012', 'RTE-013', 'RTE-025']"
+    },
+    {
+      "name": "NO_DERIVED_ROUTE_IDS",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "ROUTE_AUTHORITY_CANON",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SPATIAL_SUBREGION_ALIGNMENT",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "name": "ALL_SPATIAL_OBJECTS_HAVE_COORDS",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "name": "ALL_CHUNK_IDS_PARSE",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "name": "GODOT_PAYLOAD_UNIQUE_REFS",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "name": "ATLAS_PROJECTION_READ_ONLY",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "COORDINATE_ROUNDTRIP_LT_1MM",
+      "status": "PASS",
+      "detail": "2.6031257322754127e-10"
+    },
+    {
+      "name": "PUBLIC_SENSITIVE_LAYERS_REDACTED",
+      "status": "PASS",
+      "detail": "['resources', 'commerce', 'population', 'root', 'threat']"
+    },
+    {
+      "name": "PUBLIC_DUNGEON_LOD_BLOCKED",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "ADMIN_FULL_LOD_ALLOWED",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "COUNTRY_SCHEMA_V14",
+      "status": "PASS",
+      "detail": "1.4.0"
+    }
+  ]
+}

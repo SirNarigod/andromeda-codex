@@ -1,0 +1,42 @@
+{
+  "record_id": "LID-001",
+  "record_kind": "R2_CANONICAL_ENTRY_MIRROR",
+  "authority": "CANON_R2_CONFIRMADO",
+  "canonical_home": "01_LORE/CANON_R2/SOCIEDADES/LIDERES/LID-001__elyra-vaelor.json",
+  "source": {
+    "archive_sha256": "257e456a5d0396310ec2355b3dfc0f11f4e0a5264cf6e764591c8760f5070cb0",
+    "lineage": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json",
+    "document_sha256": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726"
+  },
+  "entry": {
+    "code": "LID-001",
+    "slug": "elyra-vaelor",
+    "title": "Elyra Vaelor",
+    "subtitle": "Primeira Condutora",
+    "category": "LID",
+    "secondaryCategories": [],
+    "canon": "Cânone consolidado",
+    "spoiler": 2,
+    "sealed": true,
+    "image": null,
+    "imageStatus": null,
+    "summary": "Primeira Condutora e liderança canônica associada ao território correspondente.",
+    "facts": {
+      "Cargo": "Primeira Condutora"
+    },
+    "sections": [],
+    "relations": [
+      {
+        "slug": "confederacao-de-luminor",
+        "label": "Autoridade máxima"
+      }
+    ],
+    "keywords": [
+      "Elyra Vaelor",
+      "Primeira Condutora"
+    ],
+    "sources": [
+      "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+    ]
+  }
+}

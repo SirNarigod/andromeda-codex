@@ -1,0 +1,880 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "MAR-ARSENAL-EXPANSION-DEV-V1.0",
+  "title": "MAR — Suplemento: arsenal completo R0-R3 para as 10 subcategorias já cobertas",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "canonical_status": "GAMEPLAY_DERIVED_DEV",
+  "master_integration_status": "NOT_SUBMITTED",
+  "supplements": [
+    "MAR_FIREARMS_GAMEPLAY_STATS_DEV_V1_0.json",
+    "MAR_MELEE_AND_SPECIAL_GAMEPLAY_STATS_DEV_V1_0.json"
+  ],
+  "r2_guard": "Suplemento de gameplay que completa a progressão R0-R3 de cada subcategoria já catalogada. Não cria códigos ART novos, não edita 01_LORE/CANON_R2/, não inventa efeito numérico de runa isolado — apenas tipo de runa (já citado no ART de origem) e tier.",
+  "weapons": [
+    {
+      "weapon_id": "WPN-FUZ-003",
+      "name": "Fuzil Convencional",
+      "r2_source_category": "ART-006",
+      "runification_tier": "R0",
+      "runes_referenced": [],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 40,
+        "defense": 28,
+        "utility": 25,
+        "handling": 58,
+        "durability": 58,
+        "reach": 55,
+        "magic_affinity": 5,
+        "tech_affinity": 45,
+        "overall": 39
+      },
+      "balance_role": {
+        "subtype": "linha de base militar",
+        "primary_strength": "durability",
+        "primary_weakness": "magic_affinity",
+        "advantage": "nenhuma runa para falhar; manutenção trivial em qualquer guarnição",
+        "limitation": "sem qualquer estabilização, recuo em rajadas cai bastante"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "RETA",
+        "impact_type": "PERFURAÇÃO",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "point_blank_capable": true,
+      "point_blank_note": "Dentro de CLINCH/IN_FIGHTING (<=2,75m): impacto garantido, sem dispersao, bonus de dano por proximidade.",
+      "weight_kg": 1.5
+    },
+    {
+      "weapon_id": "WPN-FUZ-004",
+      "name": "Fuzil de Vínculo Sincronizado",
+      "r2_source_category": "ART-006",
+      "runification_tier": "R3",
+      "runes_referenced": [
+        "estabilização",
+        "aceleração",
+        "redução de recuo"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 78,
+        "defense": 45,
+        "utility": 68,
+        "handling": 46,
+        "durability": 42,
+        "reach": 80,
+        "magic_affinity": 72,
+        "tech_affinity": 78,
+        "overall": 64
+      },
+      "balance_role": {
+        "subtype": "supressão de elite",
+        "primary_strength": "reach",
+        "primary_weakness": "durability",
+        "advantage": "as três runas usuais da categoria operam em conjunto sincronizado",
+        "limitation": "vínculo especializado exige manutenção quase constante"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "RETA",
+        "impact_type": "PERFURAÇÃO",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "point_blank_capable": true,
+      "point_blank_note": "Dentro de CLINCH/IN_FIGHTING (<=2,75m): impacto garantido, sem dispersao, bonus de dano por proximidade.",
+      "weight_kg": 5.0
+    },
+    {
+      "weapon_id": "WPN-REV-003",
+      "name": "Revólver de Marcação Simples",
+      "r2_source_category": "ART-007",
+      "runification_tier": "R1",
+      "runes_referenced": [
+        "marcação"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "MÉDIO",
+      "cost_tier": 2,
+      "stats": {
+        "power": 46,
+        "defense": 27,
+        "utility": 42,
+        "handling": 66,
+        "durability": 56,
+        "reach": 36,
+        "magic_affinity": 28,
+        "tech_affinity": 46,
+        "overall": 43
+      },
+      "balance_role": {
+        "subtype": "identificação de alvo",
+        "primary_strength": "handling",
+        "primary_weakness": "defense",
+        "advantage": "uma única runa de marcação já ajuda equipes a identificar o alvo priorizado",
+        "limitation": "sem selamento de tambor, ainda vulnerável a falhas em combate prolongado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "RETA",
+        "impact_type": "PERFURAÇÃO",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "point_blank_capable": true,
+      "point_blank_note": "Dentro de CLINCH/IN_FIGHTING (<=2,75m): impacto garantido, sem dispersao, bonus de dano por proximidade.",
+      "weight_kg": 2.67
+    },
+    {
+      "weapon_id": "WPN-REV-004",
+      "name": "Revólver Selado de Vínculo",
+      "r2_source_category": "ART-007",
+      "runification_tier": "R3",
+      "runes_referenced": [
+        "marcação",
+        "impulso",
+        "selamento de tambor"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 62,
+        "defense": 36,
+        "utility": 74,
+        "handling": 48,
+        "durability": 44,
+        "reach": 46,
+        "magic_affinity": 70,
+        "tech_affinity": 68,
+        "overall": 56
+      },
+      "balance_role": {
+        "subtype": "controle tático de elite",
+        "primary_strength": "utility",
+        "primary_weakness": "defense",
+        "advantage": "marcação, impulso e selamento operando juntos elevam a confiabilidade em combate",
+        "limitation": "continua uma arma curta, com pouca capacidade mesmo runificada ao máximo"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "RETA",
+        "impact_type": "PERFURAÇÃO",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "point_blank_capable": true,
+      "point_blank_note": "Dentro de CLINCH/IN_FIGHTING (<=2,75m): impacto garantido, sem dispersao, bonus de dano por proximidade.",
+      "weight_kg": 5.0
+    },
+    {
+      "weapon_id": "WPN-ESP-003",
+      "name": "Espingarda de Caça Convencional",
+      "r2_source_category": "ART-008",
+      "runification_tier": "R0",
+      "runes_referenced": [],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 58,
+        "defense": 28,
+        "utility": 20,
+        "handling": 55,
+        "durability": 55,
+        "reach": 20,
+        "magic_affinity": 5,
+        "tech_affinity": 30,
+        "overall": 34
+      },
+      "balance_role": {
+        "subtype": "impacto rural",
+        "primary_strength": "power",
+        "primary_weakness": "magic_affinity",
+        "advantage": "barata, comum e fácil de reparar em qualquer oficina",
+        "limitation": "sem concentração rúnica, dispersão de tiro é irregular"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "RETA_CURTA_DISPERSA",
+        "impact_type": "PERFURAÇÃO_MÚLTIPLA",
+        "area_effect": "PEQUENA (leque curto)"
+      },
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "point_blank_capable": true,
+      "point_blank_note": "Dentro de CLINCH/IN_FIGHTING (<=2,75m): impacto garantido, sem dispersao, bonus de dano por proximidade.",
+      "weight_kg": 1.5
+    },
+    {
+      "weapon_id": "WPN-ESP-004",
+      "name": "Espingarda Rúnica de Concentração Dupla",
+      "r2_source_category": "ART-008",
+      "runification_tier": "R2",
+      "runes_referenced": [
+        "concentração",
+        "dispersão controlada"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 76,
+        "defense": 36,
+        "utility": 52,
+        "handling": 46,
+        "durability": 46,
+        "reach": 28,
+        "magic_affinity": 56,
+        "tech_affinity": 62,
+        "overall": 50
+      },
+      "balance_role": {
+        "subtype": "impacto controlado",
+        "primary_strength": "power",
+        "primary_weakness": "reach",
+        "advantage": "matriz coordenada permite alternar entre concentração total e dispersão controlada",
+        "limitation": "continua ineficiente além de curta distância"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "RETA_CURTA_DISPERSA",
+        "impact_type": "PERFURAÇÃO_MÚLTIPLA",
+        "area_effect": "PEQUENA (leque curto)"
+      },
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "point_blank_capable": true,
+      "point_blank_note": "Dentro de CLINCH/IN_FIGHTING (<=2,75m): impacto garantido, sem dispersao, bonus de dano por proximidade.",
+      "weight_kg": 3.83
+    },
+    {
+      "weapon_id": "WPN-PRE-003",
+      "name": "Fuzil de Longa Distância Convencional",
+      "r2_source_category": "ART-009",
+      "runification_tier": "R0",
+      "runes_referenced": [],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 50,
+        "defense": 18,
+        "utility": 35,
+        "handling": 45,
+        "durability": 50,
+        "reach": 70,
+        "magic_affinity": 5,
+        "tech_affinity": 45,
+        "overall": 40
+      },
+      "balance_role": {
+        "subtype": "observação básica",
+        "primary_strength": "reach",
+        "primary_weakness": "magic_affinity",
+        "advantage": "ótica mecânica convencional, sem dependência de runas ou manutenção especial",
+        "limitation": "identificação de alvo mais lenta sem auxílio rúnico"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "RETA_LONGA",
+        "impact_type": "PERFURAÇÃO",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "point_blank_capable": true,
+      "point_blank_note": "Dentro de CLINCH/IN_FIGHTING (<=2,75m): impacto garantido, sem dispersao, bonus de dano por proximidade.",
+      "weight_kg": 4.0
+    },
+    {
+      "weapon_id": "WPN-PRE-004",
+      "name": "Fuzil de Precisão com Ótica Rúnica Avançada",
+      "r2_source_category": "ART-009",
+      "runification_tier": "R2",
+      "runes_referenced": [
+        "ótica",
+        "estabilidade"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 68,
+        "defense": 30,
+        "utility": 56,
+        "handling": 35,
+        "durability": 42,
+        "reach": 85,
+        "magic_affinity": 58,
+        "tech_affinity": 68,
+        "overall": 55
+      },
+      "balance_role": {
+        "subtype": "vigilância avançada",
+        "primary_strength": "reach",
+        "primary_weakness": "defense",
+        "advantage": "ótica e estabilidade coordenadas reduzem drasticamente o erro a longa distância",
+        "limitation": "ainda exige boa posição e tempo de preparo para disparar"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "RETA_LONGA",
+        "impact_type": "PERFURAÇÃO",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "point_blank_capable": true,
+      "point_blank_note": "Dentro de CLINCH/IN_FIGHTING (<=2,75m): impacto garantido, sem dispersao, bonus de dano por proximidade.",
+      "weight_kg": 7.33
+    },
+    {
+      "weapon_id": "WPN-LAM-003",
+      "name": "Lâmina Comum de Ferreiro",
+      "r2_source_category": "ART-005",
+      "runification_tier": "R0",
+      "runes_referenced": [],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 45,
+        "defense": 28,
+        "utility": 20,
+        "handling": 60,
+        "durability": 55,
+        "reach": 25,
+        "magic_affinity": 5,
+        "tech_affinity": 20,
+        "overall": 32
+      },
+      "balance_role": {
+        "subtype": "corte comum",
+        "primary_strength": "handling",
+        "primary_weakness": "magic_affinity",
+        "advantage": "metal industrial simples, disponível a qualquer viajante ou guarda",
+        "limitation": "sem reforço, gume perde qualidade com uso intenso"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (corpo-a-corpo)",
+        "impact_type": "CORTE",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 0.8
+    },
+    {
+      "weapon_id": "WPN-LAM-004",
+      "name": "Lâmina de Vínculo Perpétuo",
+      "r2_source_category": "ART-005",
+      "runification_tier": "R3",
+      "runes_referenced": [
+        "reforço",
+        "vibração",
+        "calor",
+        "retorno"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 78,
+        "defense": 40,
+        "utility": 55,
+        "handling": 48,
+        "durability": 40,
+        "reach": 36,
+        "magic_affinity": 70,
+        "tech_affinity": 68,
+        "overall": 54
+      },
+      "balance_role": {
+        "subtype": "corte de elite",
+        "primary_strength": "power",
+        "primary_weakness": "durability",
+        "advantage": "quatro runas coordenadas cortam quase qualquer material e retornam à mão se soltas",
+        "limitation": "vínculo perpétuo consome carga constantemente e fratura se a fonte falhar"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (corpo-a-corpo)",
+        "impact_type": "CORTE",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 3.5
+    },
+    {
+      "weapon_id": "WPN-ARR-003",
+      "name": "Lança de Retorno Simples",
+      "r2_source_category": "ART-010",
+      "runification_tier": "R1",
+      "runes_referenced": [
+        "aderência"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "MÉDIO",
+      "cost_tier": 2,
+      "stats": {
+        "power": 44,
+        "defense": 22,
+        "utility": 42,
+        "handling": 58,
+        "durability": 48,
+        "reach": 50,
+        "magic_affinity": 25,
+        "tech_affinity": 38,
+        "overall": 41
+      },
+      "balance_role": {
+        "subtype": "projeção com aderência",
+        "primary_strength": "handling",
+        "primary_weakness": "defense",
+        "advantage": "runa de aderência melhora a fixação no alvo ou terreno",
+        "limitation": "sem correção de trajetória, ainda depende de boa mira"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "ARCO_BALÍSTICO",
+        "impact_type": "IMPACTO_OU_PERFURAÇÃO",
+        "area_effect": "PEQUENA"
+      },
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "weight_kg": 0.7
+    },
+    {
+      "weapon_id": "WPN-ARR-004",
+      "name": "Disco de Vínculo Adaptativo",
+      "r2_source_category": "ART-010",
+      "runification_tier": "R3",
+      "runes_referenced": [
+        "retorno",
+        "trajetória",
+        "aderência"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 58,
+        "defense": 26,
+        "utility": 72,
+        "handling": 48,
+        "durability": 36,
+        "reach": 62,
+        "magic_affinity": 72,
+        "tech_affinity": 70,
+        "overall": 56
+      },
+      "balance_role": {
+        "subtype": "projeção guiada de elite",
+        "primary_strength": "utility",
+        "primary_weakness": "durability",
+        "advantage": "combina retorno, trajetória e aderência num único disco adaptativo",
+        "limitation": "correção tripla consome carga rapidamente e não ignora obstáculos"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "ARCO_BALÍSTICO",
+        "impact_type": "IMPACTO_OU_PERFURAÇÃO",
+        "area_effect": "PEQUENA"
+      },
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "weight_kg": 1.5
+    },
+    {
+      "weapon_id": "WPN-EXP-003",
+      "name": "Carga Convencional de Mineração",
+      "r2_source_category": "ART-011",
+      "runification_tier": "R0",
+      "runes_referenced": [],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "MÉDIO",
+      "cost_tier": 2,
+      "stats": {
+        "power": 65,
+        "defense": 10,
+        "utility": 30,
+        "handling": 40,
+        "durability": 55,
+        "reach": 55,
+        "magic_affinity": 5,
+        "tech_affinity": 35,
+        "overall": 37
+      },
+      "balance_role": {
+        "subtype": "demolição bruta",
+        "primary_strength": "power",
+        "primary_weakness": "defense",
+        "advantage": "uso civil comum em mineração, sem regulação rúnica adicional",
+        "limitation": "sem runa de atraso, exige distância segura calculada manualmente"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "ARCO_BALÍSTICO",
+        "impact_type": "IMPACTO_E_ESTILHAÇO",
+        "area_effect": "GRANDE"
+      },
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "weight_kg": 0.5
+    },
+    {
+      "weapon_id": "WPN-EXP-004",
+      "name": "Carga de Vínculo Rúnico Total",
+      "r2_source_category": "ART-011",
+      "runification_tier": "R3",
+      "runes_referenced": [
+        "direção de onda",
+        "atraso",
+        "supressão"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 92,
+        "defense": 22,
+        "utility": 70,
+        "handling": 32,
+        "durability": 38,
+        "reach": 78,
+        "magic_affinity": 75,
+        "tech_affinity": 76,
+        "overall": 60
+      },
+      "balance_role": {
+        "subtype": "demolição de elite",
+        "primary_strength": "power",
+        "primary_weakness": "handling",
+        "advantage": "direção de onda, atraso e supressão combinados oferecem o maior controle de área do catálogo",
+        "limitation": "uso extremamente regulado; ainda não elimina estilhaço nem consumo de material"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "ARCO_BALÍSTICO",
+        "impact_type": "IMPACTO_E_ESTILHAÇO",
+        "area_effect": "GRANDE"
+      },
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "weight_kg": 2.5
+    },
+    {
+      "weapon_id": "WPN-CNT-003",
+      "name": "Rede Mecânica Comum",
+      "r2_source_category": "ART-012",
+      "runification_tier": "R0",
+      "runes_referenced": [],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 22,
+        "defense": 30,
+        "utility": 42,
+        "handling": 55,
+        "durability": 52,
+        "reach": 32,
+        "magic_affinity": 5,
+        "tech_affinity": 30,
+        "overall": 34
+      },
+      "balance_role": {
+        "subtype": "imobilização mecânica",
+        "primary_strength": "handling",
+        "primary_weakness": "magic_affinity",
+        "advantage": "rede simples, barata e sem dependência de fonte mágica",
+        "limitation": "alvos com força acima do comum rompem a rede sozinhos"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "ARCO_CURTO",
+        "impact_type": "IMPACTO_NÃO_LETAL",
+        "area_effect": "MÉDIA (campo de contenção)"
+      },
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "weight_kg": 0.3
+    },
+    {
+      "weapon_id": "WPN-CNT-004",
+      "name": "Prisão Rúnica de Vínculo Total",
+      "r2_source_category": "ART-012",
+      "runification_tier": "R3",
+      "runes_referenced": [
+        "laço",
+        "peso",
+        "silêncio gestual",
+        "barreira"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 42,
+        "defense": 58,
+        "utility": 82,
+        "handling": 36,
+        "durability": 40,
+        "reach": 62,
+        "magic_affinity": 78,
+        "tech_affinity": 72,
+        "overall": 59
+      },
+      "balance_role": {
+        "subtype": "isolamento total",
+        "primary_strength": "utility",
+        "primary_weakness": "handling",
+        "advantage": "laço, peso, silêncio gestual e barreira juntos neutralizam magos e alvos físicos fortes",
+        "limitation": "ainda exige múltiplas âncoras e grande energia contra alvos muito fortes"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "ARCO_CURTO",
+        "impact_type": "IMPACTO_NÃO_LETAL",
+        "area_effect": "MÉDIA (campo de contenção)"
+      },
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "weight_kg": 1.5
+    },
+    {
+      "weapon_id": "WPN-FLA-003",
+      "name": "Dispositivo de Clarão Aprimorado",
+      "r2_source_category": "ART-013",
+      "runification_tier": "R1",
+      "runes_referenced": [
+        "eco"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "MÉDIO",
+      "cost_tier": 2,
+      "stats": {
+        "power": 17,
+        "defense": 22,
+        "utility": 52,
+        "handling": 56,
+        "durability": 42,
+        "reach": 25,
+        "magic_affinity": 30,
+        "tech_affinity": 42,
+        "overall": 36
+      },
+      "balance_role": {
+        "subtype": "desorientação sonora",
+        "primary_strength": "handling",
+        "primary_weakness": "power",
+        "advantage": "runa de eco prolonga a confusão sonora além do clarão inicial",
+        "limitation": "ainda reduzido por qualquer proteção sensorial básica"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "ARCO_CURTO",
+        "impact_type": "SEM_IMPACTO_FÍSICO (luz/som)",
+        "area_effect": "MÉDIA (raio de ofuscamento)"
+      },
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "weight_kg": 0.7
+    },
+    {
+      "weapon_id": "WPN-FLA-004",
+      "name": "Prisma de Vínculo Sensorial Total",
+      "r2_source_category": "ART-013",
+      "runification_tier": "R3",
+      "runes_referenced": [
+        "foco luminoso",
+        "eco",
+        "interrupção visual"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 24,
+        "defense": 28,
+        "utility": 78,
+        "handling": 44,
+        "durability": 34,
+        "reach": 34,
+        "magic_affinity": 74,
+        "tech_affinity": 70,
+        "overall": 48
+      },
+      "balance_role": {
+        "subtype": "desorientação total",
+        "primary_strength": "utility",
+        "primary_weakness": "power",
+        "advantage": "as três runas usuais combinadas atingem visão, som e equilíbrio ao mesmo tempo",
+        "limitation": "uso excessivo pode ferir o alvo; proteção sensorial ainda reduz parte do efeito"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "ARCO_CURTO",
+        "impact_type": "SEM_IMPACTO_FÍSICO (luz/som)",
+        "area_effect": "MÉDIA (raio de ofuscamento)"
+      },
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "weight_kg": 1.5
+    },
+    {
+      "weapon_id": "WPN-IMP-003",
+      "name": "Ferramenta Adaptada com Matriz Reaproveitada",
+      "r2_source_category": "ART-014",
+      "runification_tier": "R2",
+      "runes_referenced": [
+        "reforço",
+        "vibração"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 50,
+        "defense": 24,
+        "utility": 36,
+        "handling": 36,
+        "durability": 24,
+        "reach": 26,
+        "magic_affinity": 40,
+        "tech_affinity": 36,
+        "overall": 34
+      },
+      "balance_role": {
+        "subtype": "improviso duplo",
+        "primary_strength": "power",
+        "primary_weakness": "durability",
+        "advantage": "duas runas recicladas de outros equipamentos aumentam bastante o impacto",
+        "limitation": "combinação de runas incompatíveis acelera desgaste da peça original"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (corpo-a-corpo)",
+        "impact_type": "IMPACTO_CONTUSO",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 2.6
+    },
+    {
+      "weapon_id": "WPN-IMP-004",
+      "name": "Peça de Máquina com Vínculo Instável",
+      "r2_source_category": "ART-014",
+      "runification_tier": "R3",
+      "runes_referenced": [
+        "reforço",
+        "vibração",
+        "calor"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 58,
+        "defense": 22,
+        "utility": 42,
+        "handling": 28,
+        "durability": 18,
+        "reach": 28,
+        "magic_affinity": 55,
+        "tech_affinity": 42,
+        "overall": 37
+      },
+      "balance_role": {
+        "subtype": "improviso extremo",
+        "primary_strength": "power",
+        "primary_weakness": "durability",
+        "advantage": "três runas emprestadas empilhadas num único item improvisado, poder muito acima do esperado para a categoria",
+        "limitation": "vínculo instável em material incompatível — risco real de fratura ou falha catastrófica no combate"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (corpo-a-corpo)",
+        "impact_type": "IMPACTO_CONTUSO",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 3.5
+    }
+  ]
+}

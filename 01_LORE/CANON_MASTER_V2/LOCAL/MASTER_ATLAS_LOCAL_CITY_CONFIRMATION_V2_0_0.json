@@ -1,0 +1,46 @@
+{
+  "record_id": "MASTER-ATLAS-LOCAL-CONFIRMATION-V2.0.0",
+  "title": "Confirmação geoespacial oficial das 2 cidades R2 (CIT-001/002)",
+  "provenance": {
+    "master_release": "ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE",
+    "master_release_zip_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "authority": "CANON_MASTER_V2_CONFIRMADO",
+    "source_files": [
+      "01_CANON/ANDROMEDA_CODEX_CANON_MASTER_V2_0_0.json (domain=Atlas/local)"
+    ],
+    "note": "CIT-001 Posto de Varga e CIT-002 Estação Oriental (ambos R2 confirmados, intocados) recebem coordenadas geodésicas oficiais exatas do Master (CRS ACRS-STELLAR-GEODETIC-V1) - mesmo sistema já usado em STELLAR_REGION_COORDINATE_INDEX_DEV_V1_0.json (fase 37), agora com valores oficiais em vez de sintéticos."
+  },
+  "count": 2,
+  "city_confirmations": [
+    {
+      "id": "CIT-001",
+      "name": "Posto de Varga",
+      "territory_refs": [
+        "TER-011"
+      ],
+      "geometry": {
+        "longitude": -3.62,
+        "latitude": 12.0,
+        "altitude_m": 430,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P3",
+        "authority": "EXACT"
+      }
+    },
+    {
+      "id": "CIT-002",
+      "name": "Estação Oriental",
+      "territory_refs": [
+        "TER-003"
+      ],
+      "geometry": {
+        "longitude": 5.0,
+        "latitude": 28.0,
+        "altitude_m": 590,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P3",
+        "authority": "EXACT"
+      }
+    }
+  ]
+}

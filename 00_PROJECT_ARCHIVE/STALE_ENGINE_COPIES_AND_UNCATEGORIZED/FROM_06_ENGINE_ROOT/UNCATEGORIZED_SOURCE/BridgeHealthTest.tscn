@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://djr4arxl5r4i4"]
+
+[ext_resource type="Script" uid="uid://l3jhwynqf68g" path="res://bridge_health_test.gd" id="1_h2b26"]
+
+[node name="BridgeHealthTest" type="Node" unique_id=2042912955]
+script = ExtResource("1_h2b26")

@@ -1,0 +1,31 @@
+{
+  "backup_authorized": true,
+  "candidate_restore": "PASS",
+  "canon_mutations": 0,
+  "checkpoint_authorized": true,
+  "closed_at": "2026-08-18T22:05:20.443578+00:00",
+  "final_restore": "PENDING_DETACHED_AFTER_ARCHIVE_HASH",
+  "generated_at": "2026-08-18T22:02:13.016529+00:00",
+  "master_release_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+  "next_stage": 12,
+  "open_blockers": 0,
+  "open_corrections": 0,
+  "parent_checkpoint_sha256": "db54a98618d1c22026ca14560c58da32bd39b2a44eee176aceb3bb40b7e6786a",
+  "project": "ANDRÔMEDA CÓDEX",
+  "record_id": "CHECKPOINT-ARPG-STAGE11-V1.2.0",
+  "release_authorized": false,
+  "result": "ARPG_STAGE11_TECHNOLOGY_MACHINES_ROBOTICS_PASS",
+  "stage": "11/23",
+  "stage_name": "TECHNOLOGY / MACHINES / ROBOTICS",
+  "status": "PASS",
+  "tests": {
+    "country_v15": "24/24 PASS",
+    "master": "393/393 PASS",
+    "stage05": "22/22 PASS",
+    "stage07": "17/17 PASS",
+    "stage09": "19/19 + persistence PASS",
+    "stage10": "18/18 + persistence PASS",
+    "stage11": "21/21 unit+persistence + 36/36 validation + 39/39 stress PASS"
+  },
+  "version": "V1.2.0"
+}

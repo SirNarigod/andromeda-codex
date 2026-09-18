@@ -1,0 +1,47 @@
+{
+  "record_id": "CRI-013",
+  "record_kind": "R2_CANONICAL_ENTRY_MIRROR",
+  "authority": "CANON_R2_CONFIRMADO",
+  "canonical_home": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-013__mandibula-de-nevoa.json",
+  "source": {
+    "archive_sha256": "257e456a5d0396310ec2355b3dfc0f11f4e0a5264cf6e764591c8760f5070cb0",
+    "lineage": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json",
+    "document_sha256": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726"
+  },
+  "entry": {
+    "code": "CRI-013",
+    "slug": "mandibula-de-nevoa",
+    "title": "Mandíbula-de-Névoa",
+    "subtitle": "Inseto predador de enxame",
+    "category": "CRI",
+    "secondaryCategories": [],
+    "canon": "Cânone consolidado",
+    "spoiler": 1,
+    "sealed": false,
+    "image": null,
+    "imageStatus": null,
+    "summary": "Inseto cinzento que caça em pequenos enxames coordenados por vibração e mudanças de pressão.",
+    "facts": {
+      "Classe": "Inseto predador",
+      "Presa principal": "Insetos menores e animais feridos",
+      "Perigo humano": "Moderado em enxames",
+      "Limite": "Perde coordenação em áreas de vibração irregular"
+    },
+    "sections": [],
+    "relations": [
+      {
+        "slug": "cortassom",
+        "label": "Vibrações interferem na coordenação"
+      }
+    ],
+    "keywords": [
+      "inseto",
+      "predador",
+      "enxame",
+      "névoa"
+    ],
+    "sources": [
+      "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+    ]
+  }
+}

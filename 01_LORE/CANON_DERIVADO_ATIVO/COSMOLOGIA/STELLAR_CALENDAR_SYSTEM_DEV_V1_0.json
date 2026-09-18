@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-CALENDAR-SYSTEM-DEV-V1.0",
+  "title": "Calendário de Stellar — estações, meses, dias da semana e períodos do dia",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "canonical_status": "ACTIVE_R2_COMPATIBLE",
+  "r2_guard": "Nenhuma data histórica (HIS-001..004) ou o 'ano atual' (842 EC, PLA-001/STELLAR_COSMOLOGY_CANON_V1_2) é alterada ou recalculada. O sistema de eras EC ('Era da Convergência', marco zero = Pacto de Convergência) e APC ('Antes do Pacto de Convergência') continua a única unidade usada para datar eventos de larga escala. Este arquivo só acrescenta a subdivisão do ano — estação/mês/semana/dia/período — que nunca existiu em nenhuma camada do repositório. Nenhum fato R2 é editado.",
+  "thematic_anchor": "As 4 estações seguem o ciclo da Corrente Planetária (MAG-003), a fonte de magia central já canônica, reforçando o tema de 'planeta vivo em equilíbrio instável' (PLA-001) em vez de um ciclo climático arbitrário. Meses e dias da semana ecoam setores já catalogados nesta sessão (agricultura, forja, contenção, flora) — nenhum termo novo desconectado do que já existe.",
+  "year_structure": {
+    "days_per_year": 336,
+    "seasons_per_year": 4,
+    "months_per_season": 3,
+    "days_per_month": 28,
+    "weeks_per_month": 4,
+    "days_per_week": 7,
+    "era_compatibility": "1 ano de calendário = 1 ano EC/APC; a contagem de era (ex. '842 EC') não muda, só passa a ser subdividida internamente por este calendário."
+  },
+  "seasons": [
+    {
+      "order": 1,
+      "name": "Ascensão",
+      "theme": "A Corrente Planetária cresce; brotam runas com mais força e começa o plantio.",
+      "months": [
+        "Broto",
+        "Semente",
+        "Floração"
+      ],
+      "gameplay_link": "AGZ-090..008 (plantio), FLO-001..006 (floração)"
+    },
+    {
+      "order": 2,
+      "name": "Zênite",
+      "theme": "Pico da energia mágica; colheitas fartas e maior atividade industrial/festiva.",
+      "months": [
+        "Colheita",
+        "Fogo-da-Forja",
+        "Convergência"
+      ],
+      "gameplay_link": "colheita agrícola, EST-003 Forja Real, eco do Pacto de Convergência (HIS-001)"
+    },
+    {
+      "order": 3,
+      "name": "Refluxo",
+      "theme": "A Corrente recua; magia menos previsível, última colheita antes do frio.",
+      "months": [
+        "Bruma",
+        "Queda",
+        "Recolhimento"
+      ],
+      "gameplay_link": "SUB-011-006 Fendas da Névoa (bruma), fim de ciclo agrícola"
+    },
+    {
+      "order": 4,
+      "name": "Silêncio",
+      "theme": "A Corrente fica quase dormente; período de manutenção, isolamento e vigilância redobrada.",
+      "months": [
+        "Gelo",
+        "Vigília",
+        "Renascença"
+      ],
+      "gameplay_link": "reparo/manutenção (EST-004/015), contenção (FAC-004/JOB-012/015), Renascença fecha o ciclo de volta a Broto"
+    }
+  ],
+  "weekdays": [
+    {
+      "order": 1,
+      "name": "Lavor",
+      "theme": "Dia de trabalho geral — ofícios, oficinas, produção.",
+      "gameplay_link": "JOB-006/007 Artesão/Instrutor de ofício"
+    },
+    {
+      "order": 2,
+      "name": "Mercado",
+      "theme": "Dia de maior movimento comercial.",
+      "gameplay_link": "JOB-008/009 licenças/abastecimento, construções COMERCIAL"
+    },
+    {
+      "order": 3,
+      "name": "Forja",
+      "theme": "Dia de maior produção industrial/armamentista.",
+      "gameplay_link": "EST-003 Forja Real, JOB-014 Armeiro"
+    },
+    {
+      "order": 4,
+      "name": "Runa",
+      "theme": "Dia associado a estudo e prática mágica.",
+      "gameplay_link": "EST-034 Academia da Vertente, EST-044 Ateliê de Encantamento"
+    },
+    {
+      "order": 5,
+      "name": "Colheita",
+      "theme": "Dia dedicado a atividades agrícolas/pecuárias.",
+      "gameplay_link": "AGZ-090..008, JOB-001/002"
+    },
+    {
+      "order": 6,
+      "name": "Vigília",
+      "theme": "Dia de reforço de segurança/contenção.",
+      "gameplay_link": "JOB-012/015, FAC-004 Vigília Radicular"
+    },
+    {
+      "order": 7,
+      "name": "Repouso",
+      "theme": "Dia de descanso comunitário — encerra a semana.",
+      "gameplay_link": "sem vínculo de produção; usado para eventos sociais/narrativos"
+    }
+  ],
+  "day_periods": [
+    {
+      "order": 1,
+      "name": "Alvor",
+      "theme": "Amanhecer — início das atividades.",
+      "hour_range": "05h-09h"
+    },
+    {
+      "order": 2,
+      "name": "Meridiano",
+      "theme": "Meio do dia — pico de atividade.",
+      "hour_range": "09h-17h"
+    },
+    {
+      "order": 3,
+      "name": "Poente",
+      "theme": "Entardecer — encerramento das atividades comerciais/industriais.",
+      "hour_range": "17h-21h"
+    },
+    {
+      "order": 4,
+      "name": "Vigília-Noturna",
+      "theme": "Noite — turno de guarda/contenção, menor movimento civil.",
+      "hour_range": "21h-05h"
+    }
+  ],
+  "usage_note": "Uso pretendido: rotinas de NPC (ex. CIV-XXX ativo em Alvor/Meridiano, guardas de JOB-012/015 reforçados em Vigília-Noturna), sazonalidade de produção agrícola (AGZ-XXX rende mais em Ascensão/Zênite), e ganchos narrativos por estação/dia — nenhuma mecânica de jogo (buffs numéricos, eventos automáticos) é definida aqui; isso fica para uma camada de engine futura, se desejado.",
+  "day_hour_system_note": "Aditivo (fase de sistemas ausentes): dia de Stellar dividido em 24h convencionais, distribuídas pelos 4 períodos já existentes - não redefine a duração do ano/mês já fixada."
+}

@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-007-003",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Salão do Conselho de Saúde",
+  "parent_subregion": "SUB-007-003",
+  "parent_political_unit": "TER-007",
+  "function": "Sede de Maeryn Salvara e do conselho.",
+  "notable_link": "Maeryn Salvara (autoridade máxima)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-007-003",
+  "settlement_tier": "CIDADE",
+  "history": "O Salão do Conselho de Saúde nasceu de uma disputa entre curandeiros e extratores: decidir quem controlaria a nascente significava decidir quem sobreviveria ao próximo inverno.",
+  "sensory": "Paredes revestidas de casca absorvem vozes; mapas de doenças pendem ao lado de tabelas de colheita.",
+  "hook": "A água de três vilas apresenta o mesmo resíduo brilhante.",
+  "secondary_hook": "O Conselho quer interditar a região antes de descobrir quem depende dela.",
+  "detail": "Decisões só entram em vigor depois que um curandeiro e um paciente assinam juntos.",
+  "figures": [
+    {
+      "role": "Maela Dosagem",
+      "name": "Maela Dosagem",
+      "note": "conselheira que mede tudo por risco"
+    },
+    {
+      "role": "Jorun Caule",
+      "name": "Jorun Caule",
+      "note": "líder comunitário que rejeita números sem testemunhas"
+    }
+  ]
+}

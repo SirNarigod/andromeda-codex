@@ -1,0 +1,57 @@
+{
+  "record_id": "STELLAR-CONSTRUCTION-TIME-INDEX-DEV-V1.0",
+  "title": "Tempo de Construção por Tipo de Edificação",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "r2_guard": "Não redefine nenhuma construção EST-XXX já existente (todas já estão prontas/habitadas) - fornece só a regra de quanto tempo LEVARIA para construir uma nova, para uso em gameplay/expansão futura.",
+  "by_building_type": [
+    {
+      "building_type": "ACAMPAMENTO",
+      "days": "1-3",
+      "note": "estrutura temporária/leve"
+    },
+    {
+      "building_type": "RESIDENCIAL",
+      "days": "10-20",
+      "note": "moradia comum"
+    },
+    {
+      "building_type": "COMERCIAL",
+      "days": "15-30",
+      "note": "loja/mercado"
+    },
+    {
+      "building_type": "LOJA",
+      "days": "10-20",
+      "note": "estabelecimento pequeno"
+    },
+    {
+      "building_type": "INSTITUCIONAL",
+      "days": "30-60",
+      "note": "sede administrativa/religiosa/educacional"
+    },
+    {
+      "building_type": "MILITAR",
+      "days": "20-40",
+      "note": "guarnição/fortificação leve"
+    },
+    {
+      "building_type": "INDUSTRIAL",
+      "days": "40-90",
+      "note": "fundição/oficina/fábrica, exige fundação reforçada"
+    }
+  ],
+  "modifiers": [
+    {
+      "condition": "tier rúnico/tecnológico avançado no projeto",
+      "effect": "+30-50% tempo (mão de obra especializada)"
+    },
+    {
+      "condition": "construção em bioma hostil (glacial, vulcânico, subterrâneo)",
+      "effect": "+20-40% tempo"
+    },
+    {
+      "condition": "uso de peças pré-fabricadas (STELLAR_BUILDING_PIECES_CATALOG)",
+      "effect": "-15-25% tempo"
+    }
+  ]
+}

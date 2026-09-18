@@ -1,0 +1,30 @@
+{
+  "loc_id": "LOC-020-001",
+  "record_id": "LOC-020-001",
+  "name": "Assembleia dos Despertos",
+  "parent_subregion": "SUB-020-001",
+  "function": "Sede do Conselho e do tribunal de autonomia.",
+  "notable_link": "TER-020 Nérion — Região Autônoma dos Despertos",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "settlement_tier": "COMPLEXO",
+  "history": "Foi montada com placas retiradas do primeiro laboratório, para que cada decisão política permanecesse literalmente apoiada pela origem do projeto.",
+  "figures": [
+    {
+      "name": "Iria-7",
+      "note": "porta-voz que teme uma guerra civil"
+    },
+    {
+      "name": "Tess-Prime",
+      "note": "rotina treinada que pede direito de voto"
+    }
+  ],
+  "hook": "O estatuto de autonomia será votado quando chega a ordem de recuperação de Serverus.",
+  "secondary_hook": "A disputa local revela uma escolha difícil entre autonomia, segurança e memória.",
+  "detail": "Votos são registrados como sequências de memória, não assinaturas.",
+  "prohibitions": [
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION",
+    "NO_NAME_FOR_MYSTERIOUS_MAGE_YET"
+  ],
+  "sensory": "Cabos luminosos vibram sob as vozes projetadas do Conselho."
+}

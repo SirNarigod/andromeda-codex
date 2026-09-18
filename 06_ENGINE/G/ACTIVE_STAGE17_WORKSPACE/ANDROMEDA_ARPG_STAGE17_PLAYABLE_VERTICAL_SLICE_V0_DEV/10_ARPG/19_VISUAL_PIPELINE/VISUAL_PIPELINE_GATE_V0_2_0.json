@@ -1,0 +1,9 @@
+{
+  "record_id": "VISUAL-PIPELINE-GATE-V0.2.0",
+  "status": "BLOCKED",
+  "supersedes": "VISUAL-PIPELINE-GATE-V0.1.0",
+  "roadmap_revision": "ARPG-STAGE-PLAN-V0.2.0",
+  "unlock_condition": "STAGE_18_PRE_ART_PASS",
+  "stage": "19/19",
+  "reason": "Authorial directive keeps concept art/final art last after all gameplay/content systems are functional."
+}

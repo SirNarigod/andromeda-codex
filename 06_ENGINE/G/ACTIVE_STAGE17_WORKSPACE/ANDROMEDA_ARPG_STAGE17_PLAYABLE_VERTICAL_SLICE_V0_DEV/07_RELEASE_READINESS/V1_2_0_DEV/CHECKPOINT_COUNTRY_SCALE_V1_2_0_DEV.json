@@ -1,0 +1,23 @@
+{
+  "record_id": "CHECKPOINT-LIVING-COUNTRY-SCALE-V1.2.0-DEV",
+  "process": "COUNTRY SCALE + INVENTORY + MAR EXPANSION",
+  "status": "PASS_NEW_SCOPE",
+  "cycle_closed": true,
+  "known_scope_bugs": 0,
+  "release_status": "DEV_VALIDATED_NOT_RELEASED",
+  "backup_authorized": false,
+  "reason_no_backup": "Full legacy regression rerun and next Master canonical consolidation are not complete.",
+  "canonical_changes_authorized": [
+    "country/state/block/subregion structural hierarchy",
+    "five state archetypes",
+    "max five blocks/state",
+    "Root Deep predator-only biome rule",
+    "MAR normalized gameplay stats"
+  ],
+  "not_promoted": [
+    "Kenua country binding",
+    "procedural exact state names",
+    "procedural exact inventories/positions/counts"
+  ],
+  "next_process": "MASTER V2.1 CONSOLIDATION + FULL REGRESSION + COUNTRY SCALE RELEASE GATE"
+}

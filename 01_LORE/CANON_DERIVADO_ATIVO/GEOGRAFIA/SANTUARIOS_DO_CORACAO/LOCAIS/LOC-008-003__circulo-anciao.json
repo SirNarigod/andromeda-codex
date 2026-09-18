@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-008-003",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Círculo Ancião",
+  "parent_subregion": "SUB-008-003",
+  "parent_political_unit": "TER-008",
+  "function": "Ponto de encontro do conselho de anciãos.",
+  "notable_link": "Genes Arvath (autoridade máxima)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-008-003",
+  "settlement_tier": "CIDADE",
+  "history": "O Círculo Ancião começou como uma roda de decisão sob uma árvore colossal. Nenhuma cadeira é fixa, para lembrar que autoridade deve circular.",
+  "sensory": "O chão é macio de folhas; cada pausa na conversa é preenchida por pássaros e água distante.",
+  "hook": "O Círculo precisa decidir se aceita refugiados armados de Serverus.",
+  "secondary_hook": "Recusar protege a floresta hoje e pode condená-la amanhã.",
+  "detail": "O voto de quem chegou por último pesa mais no primeiro turno.",
+  "figures": [
+    {
+      "role": "Avó Nima",
+      "name": "Avó Nima",
+      "note": "mediadora que nunca vota primeiro"
+    },
+    {
+      "role": "Rau Cedro",
+      "name": "Rau Cedro",
+      "note": "ancião que quer militarizar as trilhas"
+    }
+  ]
+}

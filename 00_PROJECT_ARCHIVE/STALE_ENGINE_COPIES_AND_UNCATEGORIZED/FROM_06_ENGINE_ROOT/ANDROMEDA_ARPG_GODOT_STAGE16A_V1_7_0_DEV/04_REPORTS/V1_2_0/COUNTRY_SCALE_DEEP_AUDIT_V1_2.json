@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "checks": 2655,
+  "failures": [],
+  "coverage": {
+    "npc_classes": [
+      "CHILD",
+      "MAGE",
+      "MERCENARY",
+      "NATIVE",
+      "ROBOT",
+      "WARRIOR",
+      "WORKER"
+    ],
+    "shop_kinds": [
+      "FOOD",
+      "GENERAL",
+      "MAGIC",
+      "MATERIALS",
+      "ROBOTICS",
+      "TECH",
+      "WEAPONS"
+    ],
+    "kingdoms": 3,
+    "legendary_creatures": 7
+  }
+}

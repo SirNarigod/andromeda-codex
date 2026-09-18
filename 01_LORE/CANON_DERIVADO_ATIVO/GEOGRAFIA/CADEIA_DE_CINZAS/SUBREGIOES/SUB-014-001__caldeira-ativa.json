@@ -1,0 +1,42 @@
+{
+  "record_id": "SUB-014-001",
+  "record_kind": "DERIVED_SUBREGION_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Caldeira Ativa",
+  "parent_political_unit": "TER-014",
+  "provenance": {
+    "approval": "AUTHORIAL_DECISION_FASE_44",
+    "r2_anchors": [],
+    "compatibility": "Território 100% novo por decisão explícita do autor (fase 44) — não é derivação de fato R2 existente, é a nova sovereignty gate registrada. Camada administrativa e narrativa local; não redefine nenhum território já existente."
+  },
+  "function": "Vulcão em atividade contínua, fonte de minério vulcânico extraído sob rígido controle de segurança.",
+  "locality_references": [
+    "LOC-014-001"
+  ],
+  "permitted_catalog_links": {
+    "npc_roles": [],
+    "professions": [
+      "mineiro",
+      "fundidor"
+    ],
+    "encounters": [],
+    "resources": [
+      "MIN-BASALT",
+      "FLO-013",
+      "EST-049"
+    ]
+  },
+  "local_conflicts": [
+    "queda de temperatura extrema versus necessidade de extração contínua"
+  ],
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY_BEYOND_FASE_44_GATE",
+    "NO_AUTOMATIC_KENUA_SCENE",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_FIXED_BORDER_COORDINATE"
+  ],
+  "story_generators": [
+    "Uma crise em Caldeira Ativa testa a capacidade da comunidade de equilibrar risco vulcânico e necessidade econômica."
+  ]
+}

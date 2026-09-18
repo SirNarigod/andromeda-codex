@@ -1,0 +1,53 @@
+{
+  "record_id": "ARPG-AUTHORIAL-DECISIONS-V0.3.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "branch": "ANDROMEDA_ARPG_FOUNDATION_V0_1_0_DEV",
+  "status": "AUTHOR_APPROVED",
+  "supersedes": "ARPG_AUTHORIAL_DECISIONS_V0_2_0.json",
+  "change_note": "Adiciona a 5ª classe fixa (Corrompidos, fase 60 — sistema da Raiz Profunda) à decisão class_system de V0_2_0. Demais decisões mantidas sem alteração e reproduzidas abaixo por completude.",
+  "decisions": {
+    "playable_character_model": {
+      "choice": "D",
+      "value": "PLAYER_CREATED_PLUS_CANONICAL_CHARACTERS",
+      "rule": "Custom player characters and canonical characters are supported; canon remains protected."
+    },
+    "class_system": {
+      "choice": "E",
+      "value": "FIXED_BATTLEFRONT_STYLE_CLASSES",
+      "rule": "Character build uses 5 fixed classes, each owning a dedicated armament family (Star Wars Battlefront-style class-locked loadout). V0_3_0 adds Corrompidos as 5th class to the 4 already fixed in V0_2_0.",
+      "superseded_decision": {
+        "choice": "D",
+        "value": "EMERGENT_FROM_PLAYER_CHOICES",
+        "superseded_by": "ARPG_AUTHORIAL_DECISIONS_V0_2_0.json#class_system"
+      },
+      "classes": [
+        {"class_name": "Nativos", "armament_family": "Corpo-a-corpo", "art_categories": ["ART-005", "ART-014"]},
+        {"class_name": "Soldados", "armament_family": "Armas de fogo e equipamento tático", "art_categories": ["ART-006", "ART-007", "ART-008", "ART-009", "ART-010", "ART-011", "ART-012", "ART-013"]},
+        {"class_name": "Androids", "armament_family": "Tecnológica", "art_categories": [], "note": "Família sem precedente de lore no Codex; criada como conteúdo de gameplay novo."},
+        {"class_name": "Magos", "armament_family": "Mágica", "art_categories": [], "note": "Sem código ART próprio; apoiada tematicamente em MAG-001, MAG-002 e MAG-003."},
+        {"class_name": "Corrompidos", "armament_family": "Corrupção controlada", "art_categories": [], "note": "5ª classe (V0_3_0, fase 60) — especialistas da Vigília Radicular (FAC-004) com exposição controlada a material da Raiz Profunda (COR-001); distinto da simbiose exclusiva de Kenua/Espinho-Negro (STELLAR_SYMBIOSIS_LAW não reaproveitada)."}
+      ],
+      "armament_index": "04_MECANICAS/ITENS_E_ARMAS/MAR_CLASS_ARMAMENT_MATRIX_DEV_V1_0.json"
+    },
+    "primary_control": {
+      "choice": "A",
+      "value": "MOUSE_DRIVEN_DIABLO_II_STYLE",
+      "rule": "Point-and-click / mouse-driven movement and combat interaction is the primary control contract."
+    },
+    "development_network_scope": {
+      "choice": "C",
+      "value": "SINGLE_PLAYER_FIRST_MULTIPLAYER_READY",
+      "rule": "First playable target is single-player; authority/state contracts must not block later multiplayer."
+    },
+    "itemization": {
+      "choice": "C",
+      "value": "ANDROMEDA_IDENTITY_ON_DIABLO_II_INSPIRED_MATH",
+      "rule": "Own rarity names, sockets and item rules; use genre-proven mathematical structure only as a reference."
+    },
+    "art_gate": {
+      "value": "ART_LAST",
+      "rule": "Concept art/final visual production remains blocked until Stage 17 pre-art gate passes."
+    }
+  },
+  "canon_mutation_authority": "NONE_IN_THIS_RECORD"
+}

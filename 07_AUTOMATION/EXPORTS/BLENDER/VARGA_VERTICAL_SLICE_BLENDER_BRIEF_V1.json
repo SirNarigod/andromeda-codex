@@ -1,0 +1,13 @@
+{
+  "record_id": "VARGA_VERTICAL_SLICE_BLENDER_BRIEF_V1",
+  "status": "READY_FOR_STAGING_PRODUCTION",
+  "authority": "CANON_DERIVADO_ATIVO_VISUAL_BRIEF",
+  "style": "stylized realism; practical frontier construction; luminous low vegetation; readable isometric silhouettes",
+  "asset_sets": [
+    {"id":"VARGA-BLD-001","category":"environment","deliverables":["arrival shelter","contract board","route stakes","safe-return marker","modular wood-metal barriers"],"constraints":["no new city identity","no R2 landmark duplication","modular and low-profile for isometric camera"]},
+    {"id":"VARGA-BLD-002","category":"nature_hazard","deliverables":["Vespa-de-Vidro nest","glasslike defensive insect","containment markers"],"constraints":["defensive not trophy-like","no loot anatomy","avoid graphic injury"]},
+    {"id":"VARGA-BLD-003","category":"characters","deliverables":["three local civilian silhouettes","custom displaced-player base outfit"],"constraints":["do not resemble Kenua or named R2 characters","practical travel and shelter wear","separate accessories for role readability"]},
+    {"id":"VARGA-BLD-004","category":"equipment","deliverables":["generic travel blade","generic compact sidearm","nonlethal containment kit"],"constraints":["no Espinho-Negro","no Kenua sword","no named R2 weapon silhouette","runtime stats not embedded in asset"]}
+  ],
+  "intake_rule": "All assets enter 08_UE5_WORKSPACE/02_IMPORT_STAGING with source, creator, license, hash and intended niche."
+}

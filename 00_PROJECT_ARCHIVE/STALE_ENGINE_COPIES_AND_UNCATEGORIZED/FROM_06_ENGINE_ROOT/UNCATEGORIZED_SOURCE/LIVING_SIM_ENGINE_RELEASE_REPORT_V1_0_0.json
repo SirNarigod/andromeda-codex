@@ -1,0 +1,53 @@
+{
+  "record_id": "LIVING-SIM-ENGINE-RELEASE-REPORT-V1.0.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "component": "Living Simulation Engine",
+  "version": "V1.0.0",
+  "release_type": "FIRST_FUNCTIONAL_ENGINE_RELEASE",
+  "release": {
+    "file": "ANDROMEDA_LIVING_SIM_ENGINE_V1_0_0_RELEASE.zip",
+    "sha256": "6f12c9db0976e234ef55cdfe23b998c07240fa8d80eb0d0c247d12bbd16ebabc",
+    "crc": "PASS"
+  },
+  "backup": {
+    "file": "ANDROMEDA_LIVING_SIM_ENGINE_V1_0_0_BACKUP.zip",
+    "sha256": "6f12c9db0976e234ef55cdfe23b998c07240fa8d80eb0d0c247d12bbd16ebabc",
+    "crc": "PASS",
+    "payload_identical_to_release": true
+  },
+  "manifest": {
+    "file": "ENGINE_MANIFEST_V1_0_0.json",
+    "sha256": "f08c71f58a46dae04b25bf5f3a7c751f5ba49e45b0a0b270efc67bccb6265ab1",
+    "entries": 137,
+    "status": "PASS"
+  },
+  "ledger": {
+    "file": "ENGINE_SHA256SUMS",
+    "sha256": "5e3f97fa5adf75469b8c46671b0445e05e2ee68f813716958c40ce28d101f5b7",
+    "status": "PASS"
+  },
+  "master_dependency": {
+    "file": "ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE.zip",
+    "sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "bundled": false,
+    "mode": "READ_ONLY"
+  },
+  "tests": {
+    "regression_python": 672,
+    "javascript": 7,
+    "atlas_extended": 1403,
+    "stage14_global": 43,
+    "stage14_multiworld": 37,
+    "corruption_cases": 10,
+    "release_audit": 58
+  },
+  "mutations": {
+    "canonical_master": 0,
+    "canonical_atlas": 0
+  },
+  "open_blockers": 0,
+  "open_corrections": 0,
+  "external_dependency_note": "Live external LLM provider/credentials are deployment-specific and not bundled/network-tested. Provider abstraction, Canon Guard and deterministic provider path are validated.",
+  "restore_report": "LIVING_SIM_ENGINE_RESTORE_REPORT_V1_0_0.json",
+  "status": "RELEASE VALIDATED — PASS"
+}

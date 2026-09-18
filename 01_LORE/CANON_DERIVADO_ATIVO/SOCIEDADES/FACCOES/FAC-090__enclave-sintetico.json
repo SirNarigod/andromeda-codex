@@ -1,0 +1,115 @@
+{
+  "record_id": "FAC-090",
+  "record_kind": "DERIVED_CANONICAL_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Enclave Sintético",
+  "scope": "REGIONAL_AUTONOMOUS",
+  "renumbering_note": "Renumerado de FAC-011 para FAC-090 nesta sessão: a importação do domínio Facções do MASTER V2.0.1 revelou que FAC-011 já é código oficial de 'Câmara das Armarias Rúnicas' no cânone verdadeiro. Nenhum fato sobre o Enclave Sintético foi alterado - só o código, para eliminar a colisão. FAC-090 fica fora do intervalo oficial do Master (FAC-001..046), reservado para facções gameplay-derived.",
+  "provenance": {
+    "approval": "GAMEPLAY_DERIVED_DEV_SOURCE (rascunho de desenvolvimento, ver MAR_PLAYABLE_CLASSES_LORE_DEV_V1_0.json)",
+    "derived_from": "ARPG_AUTHORIAL_DECISIONS_V0_2_0.json#class_system (classe Androids)",
+    "source_sha256": null,
+    "r2_compatibility": "Nenhum fato R2 é alterado. 'Androids' não existia como conceito no cânone antes desta proposta — é conteúdo de gameplay inteiramente novo, sinalizado explicitamente como tal, ainda sem aprovação de master consolidation."
+  },
+  "identity": {
+    "purpose": "Corpo autônomo sintético mantido por oficinas rúnico-industriais de Stellar; não é povo natural nem facção política, e sim uma linhagem de chassis fabricados e habitados por mentes transferidas ou por rotinas de conduta treinadas.",
+    "origin_hypothesis": "Surgiram do cruzamento entre o Sistema de armamentos de Stellar (ART-004, matrizes rúnicas coordenadas) e oficinas de manutenção mecânica avançada — corpos técnicos originalmente feitos para trabalho pesado ou combate de contenção, hoje também habitados por vontades próprias.",
+    "creation_site": {
+      "territory": "TER-005",
+      "territory_name": "Principado de Ithra",
+      "establishment": "EST-019 Oficina de Fusão Tecnomágica",
+      "founding_body": "Coletivo da Fusão (grupo anônimo de engenheiros-oficina, nunca formalizado como facção ou governo — o mesmo princípio de fundador coletivo/anônimo do Círculo Arcano-Botânico, FAC-005)",
+      "rationale": "Ithra é o único território com identidade explícita de fusão tecnomágica; a Oficina de Fusão Tecnomágica (EST-019) é a construção que fabrica as armas e as unidades civis do Enclave. Nenhum fundador nomeado é inventado — segue o mesmo padrão de autoria coletiva/anônima do Círculo Arcano-Botânico (FAC-005)."
+    },
+    "local_presence": "Nérion é o primeiro território próprio dos Androids Conscientes; células contratadas continuam existindo fora da região.",
+    "does_not_control": [
+      "Kenua",
+      "magic_law",
+      "R2_character_identity"
+    ],
+    "may_coordinate": [
+      "chassis maintenance",
+      "salvage recovery",
+      "contracted security",
+      "technical escort"
+    ],
+    "scope": "REGIONAL_AUTONOMOUS",
+    "territory_reference": "TER-020"
+  },
+  "chassis_lines": [
+    {
+      "line": "BATALHA",
+      "purpose": "Combate e contenção",
+      "gameplay_reference": "MAR_TECH_AND_MAGIC_GAMEPLAY_STATS_DEV_V1_0.json + expansões (16 WPN-TEC), MAR_NPC_ROSTER_ANDROIDS_DEV_V1_0.json (8 NPCs)"
+    },
+    {
+      "line": "MÉDICO",
+      "purpose": "Diagnóstico e preparo farmacêutico em enfermarias e boticas",
+      "gameplay_reference": "MAR_ANDROID_UNITS_CIVIS_DEV_V1_0.json"
+    },
+    {
+      "line": "SUPORTE",
+      "purpose": "Logística, carga e coordenação tática não-combatente",
+      "gameplay_reference": "MAR_ANDROID_UNITS_CIVIS_DEV_V1_0.json"
+    },
+    {
+      "line": "TRABALHO",
+      "purpose": "Reparo, manutenção e extração industrial pesada",
+      "gameplay_reference": "MAR_ANDROID_UNITS_CIVIS_DEV_V1_0.json"
+    },
+    {
+      "line": "SOCIÁVEL",
+      "purpose": "Interface, tradução e mediação comercial/social",
+      "gameplay_reference": "MAR_ANDROID_UNITS_CIVIS_DEV_V1_0.json"
+    }
+  ],
+  "relations": [
+    {
+      "target": "ART-004",
+      "type": "TECHNICAL_LINEAGE",
+      "note": "Compartilha a lógica de faixas de runificação (R0-R3) apenas como referência de escala de custo/potência; o Enclave Sintético usa tecnologia pura (tiers T0-T3), não runa."
+    },
+    {
+      "target": "FAC-009",
+      "type": "COMMERCIAL_CONTACT",
+      "shared_need": "Peças, manutenção de chassi e acesso a oficinas licenciadas.",
+      "legitimate_disputes": [
+        "custo de manutenção",
+        "prioridade de reparo em crise"
+      ]
+    },
+    {
+      "target": "TER-020",
+      "type": "TERRITORIAL_AUTONOMY",
+      "note": "Nérion é a região própria dos Androids Conscientes, com Conselho dos Despertos, economia, defesa e legislação derivadas."
+    }
+  ],
+  "simulation_permissions": {
+    "LivingSim": [
+      "contracted presence",
+      "maintenance demand",
+      "salvage activity"
+    ],
+    "LivingScale": [
+      "local contracted presence only"
+    ],
+    "UE5": [
+      "read-only faction catalog",
+      "class loadout data asset",
+      "quest hooks without canonical mutation"
+    ]
+  },
+  "prohibitions": [
+    "NO_AUTOMATIC_KENUA_LINK",
+    "NO_R2_EPISODE_MUTATION",
+    "NO_RUNTIME_CANON_PROMOTION",
+    "NO_MAGIC_LAW_REWRITE",
+    "NO_CLAIM_OF_R2_HISTORICAL_PRECEDENT"
+  ],
+  "story_generators": [
+    "Um chassi do Enclave busca uma oficina do FAC-009 para reparo urgente, mas o custo excede o contrato vigente.",
+    "Uma unidade sintética contratada para escolta técnica precisa decidir entre cumprir o contrato ou proteger civis fora do escopo pago.",
+    "Peças raras de um chassi antigo reaparecem no mercado, levantando dúvidas sobre a origem — fabricação nova ou recuperação de algo abandonado."
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "record_id": "CODEX-COUNTRY-SCALE-CANON-RULES-V1.2.1",
+  "project": "ANDRÔMEDA CÓDEX",
+  "status": "CÂNONE_AUTORIZADO_ESTRUTURAL_E_NOMENCLATURA_PENDING_MASTER",
+  "master_integration": "PENDING_MASTER_V2_1_CONSOLIDATION",
+  "source_authority": "Autor — mensagens de 2026-08-15 e 2026-08-16",
+  "planet": "Stellar",
+  "game_target": "RPG_ISOMETRICO_INSPIRADO_EM_ALBION_ONLINE",
+  "scope": {
+    "current_focus": "ONE_COUNTRY_ONLY",
+    "pilot_source_territory_id": "TER-011",
+    "pilot_name": "Terras Livres",
+    "kenua_country_binding": "UNRESOLVED_NOT_PROMOTED",
+    "other_countries": "DEFERRED_UNTIL_ONE_COUNTRY_STABLE"
+  },
+  "hierarchy": [
+    "PLANET",
+    "COUNTRY",
+    "STATE",
+    "REGION_BLOCK",
+    "SUBREGION",
+    "BIOME/CITY/POI",
+    "DUNGEON/SCENE",
+    "ENTITY/ITEM_INSTANCE"
+  ],
+  "state_archetypes": [
+    "TECHNOLOGY",
+    "ROBOTICS",
+    "MILITARY",
+    "MAGIC",
+    "NATURE"
+  ],
+  "max_blocks_per_state": 5,
+  "distribution_rules": [
+    "POSITION_CONSTRAINED",
+    "CLIMATE_CONSTRAINED",
+    "TEMPERATURE_RAIN_HUMIDITY",
+    "FLORA_FAUNA_ADAPTATION",
+    "RESOURCE_RICHNESS",
+    "MAGIC_INTENSITY",
+    "PURPOSEFUL_RANDOMNESS_WITH_SEED",
+    "ROOT_DEEP_RESOURCE_AND_PREDATOR_INVARIANTS"
+  ],
+  "inventory_scopes": [
+    "COUNTRY",
+    "STATE",
+    "REGION_BLOCK",
+    "SUBREGION",
+    "CITY",
+    "SHOP",
+    "NPC",
+    "FAUNA",
+    "FLORA",
+    "INDUSTRY",
+    "BRIDGE",
+    "MAGIC_REALM",
+    "DUNGEON",
+    "SCENE_OBJECT"
+  ],
+  "classes": [
+    "BAIXO",
+    "MÉDIO",
+    "ALTO"
+  ],
+  "root_deep": {
+    "own_biome": true,
+    "predator_only": true,
+    "no_normal_city": true,
+    "no_normal_flora": true,
+    "corrupted_resource_required": "MIN-ROOT-SHARD",
+    "predator_balance_dimensions": [
+      "size",
+      "damage",
+      "resistance",
+      "venom",
+      "corruption"
+    ]
+  },
+  "scene_interaction": {
+    "portable_light": true,
+    "locality_required": true,
+    "objects": [
+      "doors",
+      "trapdoors",
+      "chairs",
+      "books",
+      "torches",
+      "chests",
+      "levers",
+      "rune pedestals",
+      "consoles",
+      "ground weapons"
+    ],
+    "dungeon_weapon_families": [
+      "sword",
+      "crossbow",
+      "bow",
+      "whip"
+    ]
+  },
+  "protected_population": {
+    "children": "SYSTEM_PROTECTED",
+    "workers": "SYSTEM_PROTECTED_FROM_HAZARDOUS_LABOR"
+  },
+  "mar": {
+    "existing_30_weapon_gameplay_stats_authorized": true,
+    "scale": "0-100",
+    "dungeon_weapon_extension": "DEV_AUTHORIZED_PENDING_MASTER"
+  },
+  "procedural_values_policy": "EXACT_COUNTS_POSITIONS_STOCKS_PRICES_AND_INSTANCE_STATES_REMAIN_RUNTIME; authorized names/catalog definitions may be promoted in Master V2.1."
+}

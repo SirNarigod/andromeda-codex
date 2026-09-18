@@ -1,0 +1,141 @@
+{
+  "record_id": "ANDROMEDA-ARPG-STAGE16B-RELEASE-HANDOFF-V0.1.0",
+  "created_at": "2026-08-27T15:31:49-03:00",
+  "project": "ANDRÔMEDA CÓDEX ARPG",
+  "stage16b_baseline": {
+    "identity": "ANDROMEDA_ARPG_STAGE16B_AUTHORITY_GODOT_BACKUP_V0_1_0",
+    "status": "CLOSED",
+    "functional_matrix": "28 PASS / 0 PARTIAL_EVIDENCE",
+    "final_audit": "PASS",
+    "checkpoint_validated": true,
+    "restore_validated": true,
+    "backup_validated": true
+  },
+  "artifacts": {
+    "checkpoint": {
+      "file": "ANDROMEDA_ARPG_STAGE16B_AUTHORITY_GODOT_CHECKPOINT_V0_1_0.zip",
+      "sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc",
+      "size_bytes": 852793,
+      "entries": 304
+    },
+    "backup": {
+      "file": "ANDROMEDA_ARPG_STAGE16B_AUTHORITY_GODOT_BACKUP_V0_1_0.zip",
+      "path": "C:\\Users\\thall\\Documents\\Projeto Andromeda\\Andromeda Atlas\\Backups Andromeda\\ANDROMEDA_ARPG_STAGE16B_AUTHORITY_GODOT_BACKUP_V0_1_0.zip",
+      "sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc",
+      "byte_identical_to_checkpoint": true
+    },
+    "restore_report": "ANDROMEDA_ARPG_STAGE16B_AUTHORITY_GODOT_CHECKPOINT_V0_1_0_RESTORE_VALIDATED.json",
+    "final_audit": "AUTHORITY_STAGE16B_FINAL_AUDIT_EVIDENCE_CONSOLIDATION_V0_8_9.json",
+    "closure": "AUTHORITY_STAGE16B_FINAL_CLOSURE_V0_9_0.json",
+    "manifest": "ANDROMEDA_ARPG_STAGE16B_AUTHORITY_GODOT_BACKUP_MANIFEST_V0_1_0.json",
+    "release_report": "ANDROMEDA_ARPG_STAGE16B_RELEASE_REPORT_V0_1_0.json",
+    "seal": "ANDROMEDA_ARPG_STAGE16B_SEAL_V0_1_0.json",
+    "sha256sums": "ANDROMEDA_ARPG_STAGE16B_RELEASE_SHA256SUMS_V0_1_0"
+  },
+  "protected_baselines": {
+    "stage16a_v0_8_1_sha256": "03bc6b621a5ae8e0bf6542803412611855b32503154221ec7ea1b7aaf28befc4",
+    "stage16a_v0_8_0_sha256": "21626a3152cb37e167eee24bff9d3142c5d389a8ca2827594b34211591525a6a",
+    "master_v2_0_1_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "living_simulation_engine_v1_0_0_sha256": "6f12c9db0976e234ef55cdfe23b998c07240fa8d80eb0d0c247d12bbd16ebabc",
+    "stage16a_integrity": "724/724, 0 missing, 0 divergent"
+  },
+  "key_test_results": {
+    "godot": {
+      "dialogue": "30/30",
+      "g19_live_vertical_slice": "71/71 x2",
+      "g09_living_systemic": "51/51",
+      "g17_save_reload": "103/103",
+      "slot_guard": "32/32",
+      "save_death": "194/194",
+      "npc_ownership": "62/62",
+      "water_ttl": ["19/19", "26/26", "22/22", "30/30", "28/28"],
+      "combat": "91/91",
+      "ground_loot": "53/53",
+      "gathering": "77/77",
+      "b01": "54/54",
+      "b03": "357/357",
+      "b04": "156/156",
+      "b11_historical": "343/343",
+      "debugger": "0/0"
+    },
+    "backend": {
+      "full_validation": "PASS / 0 failures",
+      "dialogue": "36/36",
+      "g09": "26/26",
+      "stage16a_regression": "209/209"
+    }
+  },
+  "b08_disposition": {
+    "status": "HISTORICAL_PRESENTATION_REGRESSION_SUPERSEDED",
+    "acceptance_scope_pass": [],
+    "authoritative_roundtrip_executed": false,
+    "historical_failures_preserved": 8,
+    "superseded_by": "later live-authoritative gates"
+  },
+  "b11_disposition": {
+    "status": "HISTORICAL_PRESENTATION_REGRESSION",
+    "status_label": "SUPERSEDED_AS_G16B19_AUTHORITY_BY_G19_LIVE_GATE",
+    "historical_checks": "343/343",
+    "historical_internal_g16b19_status": "PARTIAL_EVIDENCE",
+    "final_authority": "authority_vertical_slice_runtime_gate 71/71 x2"
+  },
+  "limitations_non_blocking": [
+    "QUEST_PROGRESSION_TRANSPORT_GAP",
+    "DIALOGUE_METRIC_PROXIMITY_AUTHORITY_NOT_AVAILABLE",
+    "GAMEPLAY_PLACEHOLDER_COPY_NOT_CANON_DIALOGUE",
+    "NPC_CIT001_SPATIAL_BINDING_NOT_AUTHORITATIVE",
+    "CROSS_ZONE_PROMOTION_OBSERVATION_NOT_REQUIRED",
+    "NON_DEV_PROFILE_SNAPSHOT_LIMITATION",
+    "GROUND_LOOT_REACHABLE_AUTO_SETTLE_LIMITATION",
+    "OPERATIONAL_TEST_ENVIRONMENT_CONSTRAINT: do not run heavy backend validation simultaneously with timing-sensitive Godot gates"
+  ],
+  "resolved_issues": [
+    "SAVE_RELOAD_CLIENT_GLOBAL_SEQUENCE_GUARD",
+    "SAVE_RELOAD_CLIENT_REJECTION_STUCK_PENDING",
+    "BAG_RECOVERY_NONSPATIAL_INF_JSON",
+    "G16B_09_LIVING_SYSTEMIC_INTEGRATION_GAP",
+    "DIALOGUE_TRANSPORT_GAP",
+    "DIALOGUE_TARGET_IDENTITY_PROJECTION_GAP",
+    "G16B19_FIXTURE_ONLY_VERTICAL_SLICE"
+  ],
+  "command_surface": {
+    "enabled_commands_count": 27,
+    "production": ["REQUEST_NPC_DIALOGUE"],
+    "development_only": [
+      "ADVANCE_DEVELOPMENT_WATER_TIME",
+      "ATTEMPT_DEVELOPMENT_NPC_BAG_RECOVERY",
+      "ADVANCE_DEVELOPMENT_LIVING_SYSTEMIC",
+      "ATTEMPT_DEVELOPMENT_SYSTEMIC_ZONE_HUNT"
+    ],
+    "authoritative_source": "12_AUTHORITY_BACKEND/andromeda_authority_adapter.py::ENABLED_COMMANDS"
+  },
+  "critical_source_paths": {
+    "backend": [
+      "12_AUTHORITY_BACKEND/andromeda_authority_adapter.py",
+      "12_AUTHORITY_BACKEND/authority_npc_dialogue_content.py",
+      "12_AUTHORITY_BACKEND/tests/test_stage16b_authority_npc_dialogue.py",
+      "12_AUTHORITY_BACKEND/run_stage16b_authority_validation.py"
+    ],
+    "godot": [
+      "07_GODOT_ARPG_STAGE16B/scripts/interaction/npc_dialogue_client.gd",
+      "07_GODOT_ARPG_STAGE16B/scripts/world/streaming_manager.gd",
+      "07_GODOT_ARPG_STAGE16B/scripts/runtime/save_reload_client.gd",
+      "07_GODOT_ARPG_STAGE16B/tests/godot/authority_npc_dialogue_runtime_gate.gd",
+      "07_GODOT_ARPG_STAGE16B/tests/godot/authority_vertical_slice_runtime_gate.gd",
+      "07_GODOT_ARPG_STAGE16B/tests/godot/authority_living_systemic_runtime_gate.gd",
+      "07_GODOT_ARPG_STAGE16B/tests/godot/authority_save_reload_resync_runtime_gate.gd",
+      "07_GODOT_ARPG_STAGE16B/tests/godot/authority_save_reload_client_slot_guard_gate.gd"
+    ]
+  },
+  "operational_state": {
+    "backend": "OFF",
+    "listener_127_0_0_1_8000": "NONE",
+    "godot_editor_preexisting_pid": 9040,
+    "godot_editor": "PRESERVED"
+  },
+  "stage17": {
+    "ready_to_start": true,
+    "execution": "NOT_STARTED",
+    "next_authorized_process": "STAGE17 / ETAPA 31 — FOUNDATION TRANSITION + PLAYABLE VERTICAL SLICE PASS"
+  }
+}

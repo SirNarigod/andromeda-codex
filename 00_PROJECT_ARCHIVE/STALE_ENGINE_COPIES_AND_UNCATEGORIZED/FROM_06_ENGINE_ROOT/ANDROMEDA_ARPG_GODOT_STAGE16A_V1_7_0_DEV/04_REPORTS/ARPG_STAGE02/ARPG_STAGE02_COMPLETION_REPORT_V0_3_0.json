@@ -1,0 +1,32 @@
+{
+  "record_id": "ARPG-STAGE02-COMPLETION-REPORT-V0.3.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "stage": "02/18",
+  "version": "V0.3.0",
+  "parent_stage01_sha256": "ba1dce044532ba177b15524626dd56fd763ea32a6429f8cdfce560fc16954b10",
+  "implemented": {
+    "core_attributes": 6,
+    "level_cap": 100,
+    "attribute_points_per_level": 5,
+    "life_states": ["ALIVE", "DEAD"],
+    "progression_event_idempotency": true,
+    "stage01_save_upgrade": true,
+    "canonical_numeric_mutations": 0,
+    "art_dependency": "NONE_PLACEHOLDER_READY"
+  },
+  "tests": {
+    "stage02_unit": {"checks": 11, "passed": 11, "failed": 0, "status": "PASS"},
+    "stage02_validation": {"checks": 51, "passed": 51, "failed": 0, "status": "PASS"},
+    "stage02_stress": {"checks": 15, "passed": 15, "failed": 0, "status": "PASS"},
+    "stage01_regression": {"checks": 58, "passed": 58, "failed": 0, "status": "PASS"},
+    "stage00_regression": {"checks": 51, "passed": 51, "failed": 0, "status": "PASS"},
+    "master_regression": {"checks": 393, "passed": 393, "failed": 0, "status": "PASS"}
+  },
+  "known_external_limits": {
+    "godot_rendered_execution": "NOT_AVAILABLE_IN_CURRENT_VALIDATION_ENVIRONMENT",
+    "unity_connector": "NOT_INSTALLED",
+    "godot_connector": "NOT_INSTALLED"
+  },
+  "open_blockers": 0,
+  "status": "PASS"
+}

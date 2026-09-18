@@ -1,0 +1,12 @@
+{
+  "record_id": "ARPG-STAGE05-TEST-BASELINE-V0.6.0",
+  "version": "V0.6.0",
+  "expected_catalog_definitions": 84,
+  "expected_master_canonical_weapons": 30,
+  "expected_gameplay_derived_catalog_records": 54,
+  "expected_rarity_tiers": 5,
+  "expected_affix_pool": 11,
+  "expected_stage05_consumable_definitions": 5,
+  "canonical_mutations_allowed": 0,
+  "art_required": false
+}

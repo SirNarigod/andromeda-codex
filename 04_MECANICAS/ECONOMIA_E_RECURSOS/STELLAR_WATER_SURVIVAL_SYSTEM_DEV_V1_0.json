@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-WATER-SURVIVAL-SYSTEM-DEV-V1.0",
+  "title": "Sistema I - Sobrevivencia em Agua (instancia arpg_water_bag_survival_core.py)",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "r2_guard": "Instancia pela primeira vez a mecanica de travessia aquatica/exaustao/afogamento/perda de posses ja codificada no runtime (WaterBagSurvivalCore) sobre as paisagens aquaticas ja reais (fase 53: PAI-010/011/012 Baias de Navyr, PAI-060 Pantano da Serpente). Incapacitacao por afogamento segue STELLAR_LIFE_DEATH_REBIRTH_LAW (incapacitacao NAO e morte literal, sempre recuperavel).",
+  "crossing_tiers": [
+    {
+      "tier": "RASA",
+      "current": "NENHUMA",
+      "exhaustion_tick": "BAIXO (1 ponto/intervalo)",
+      "example_landscape": "PAI-010 Baia de Porto Livre de Navyr (perto da doca, aguas calmas)"
+    },
+    {
+      "tier": "MODERADA",
+      "current": "FRACA",
+      "exhaustion_tick": "MEDIO (2 pontos/intervalo)",
+      "example_landscape": "PAI-011 Baia de Ilhas de Pesca"
+    },
+    {
+      "tier": "PROFUNDA",
+      "current": "MODERADA",
+      "exhaustion_tick": "ALTO (3 pontos/intervalo)",
+      "example_landscape": "PAI-012 Baia de Conselho das Ondas"
+    },
+    {
+      "tier": "PANTANOSA",
+      "current": "ARRASTO_LODOSO",
+      "exhaustion_tick": "ALTO (3 pontos/intervalo) + risco de emboscada",
+      "example_landscape": "PAI-060 Pantano de Pantano da Serpente (SUB-019-003, habitat da Serpente Esmeralda CRI-019)"
+    }
+  ],
+  "exhaustion_rule": {
+    "scale": "0 (descansado) a 100 (exausto)",
+    "tick_rule": "Exaustao sobe por intervalo de travessia conforme o tier (ver crossing_tiers); nadar sem veiculo sempre acumula exaustao, usar um VEI-XXX de categoria SUBMERSO ou TERRESTRE (superficie aquatica) reduz o acumulo a quase zero.",
+    "vehicle_mitigation_example": "VEI-002 Caravela de Navyr (categoria TERRESTRE/superficie aquatica, ja catalogada) elimina o acumulo de exaustao em travessias de baia - contraste com atravessar a nado."
+  },
+  "drowning_rule": {
+    "rule": "Ao atingir 100 de exaustao em agua PROFUNDA ou PANTANOSA sem conseguir sair, o personagem e incapacitado (nao morre) - segue STELLAR_LIFE_DEATH_REBIRTH_LAW: incapacitacao e sempre recuperavel, nunca morte automatica.",
+    "bag_drop_rule": "Ao ser incapacitado em agua, os itens carregados (bag) caem no local exato da paisagem aquatica (ex. PAI-012). O item permanece recuperavel la ate ser resgatado, respeitando STELLAR_CAUSALITY_LAW (recuperacao preserva o historico do evento, nao apaga a perda).",
+    "recovery_note": "Recuperar a bag exige retornar ao local exato (mesma logica de 'evidencia rastreavel' ja usada em quests) - nao ha teletransporte de item perdido."
+  },
+  "worked_example": {
+    "scenario": "Um NPC (ou jogador) tenta atravessar a Baia de Conselho das Ondas (PAI-012, tier PROFUNDA) a nado, sem veiculo.",
+    "steps": [
+      "Intervalo 1: exaustao 0 -> 3 (tier PROFUNDA, tick ALTO)",
+      "Intervalo 2: exaustao 3 -> 6",
+      "... apos exaustao acumular ao longo de multiplos intervalos sem descanso, atinge 100",
+      "Personagem e incapacitado (nao morre) - bag cai em PAI-012",
+      "Resgate: outro personagem (ou o proprio, apos recuperar-se em terra) pode retornar a PAI-012 para recuperar a bag - item nao e perdido para sempre, so requer a viagem de volta."
+    ],
+    "alternative": "Se tivesse usado VEI-002 Caravela de Navyr (ja catalogada, produzida no Estaleiro de Navyr EST-047), a travessia nao acumularia exaustao significativa."
+  },
+  "prohibitions": [
+    "NO_INSTANT_DEATH_BY_DROWNING",
+    "NO_ITEM_TELEPORT_RECOVERY",
+    "NO_EXHAUSTION_BYPASS_WITHOUT_VEHICLE_OR_REST"
+  ]
+}

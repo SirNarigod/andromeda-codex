@@ -1,0 +1,27 @@
+{
+  "record_id": "STELLAR-PROFESSIONAL-FACTIONS-LAW-V1.0",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.0",
+  "status": "CANON_DERIVADO_ATIVO_R2_COMPATIBLE",
+  "authority": {"r2": "IMMUTABLE_ORIGIN", "derived": ["FAC-009", "FAC-010", "R2-REBASE-LOT-007"], "scope": "PROFESSIONAL_FACTIONS_AND_LOCAL_WORKSHOPS"},
+  "dependencies": ["STELLAR_SOVEREIGNTY_TERRITORY_LAW_V1_2.json", "STELLAR_INSTITUTION_CULTURE_LAW_V1_1.json", "STELLAR_ECONOMY_ECOLOGY_TIME_LAW_V1_1.json"],
+  "invariants": [
+    "PROFESSIONAL_ORGANIZATION_IS_NOT_GOVERNMENT",
+    "LOCAL_CHARTER_IS_REQUIRED_FOR_LOCAL_PRESENCE",
+    "CHARTERED_PRESENCE_IS_REVOCABLE_LOCAL_SERVICE_NOT_SOVEREIGNTY",
+    "FAC_009_AND_FAC_010_REMAIN_PARTNERS_IN_TENSION",
+    "WORKSHOP_AUTONOMY_REMAINS_LOCAL"
+  ],
+  "prohibitions": ["NO_TERRITORIAL_CONTROL", "NO_AUTOMATIC_KENUA_LINK", "NO_SEALED_EPISODE_INTERFERENCE", "NO_RUNTIME_CANON_WRITE", "NO_PLANETARY_GOVERNMENT_INFERENCE"],
+  "simulation_effects": [
+    "LivingSim may calculate local workshop capacity, labor availability, safety strain, supply dependency, contract pressure and maintenance backlog.",
+    "Living Scale may expose only local chapter presences; each requires a political-unit or place reference and recorded consent.",
+    "UE5 imports may create faction and local-chapter data assets with authority, provenance, spoiler and permission fields."
+  ],
+  "allowed_states": ["UNPRESENT", "CHARTER_PENDING", "LOCAL_CHAPTER", "COOPERATING", "DISPUTED", "CRISIS_RESPONSE", "SUSPENDED"],
+  "story_generators": [
+    "A repair guild becomes the only bridge between rival communities but must choose whom to serve first.",
+    "A disputed license turns an ordinary workshop into the center of a local investigation.",
+    "A crisis partnership solves an emergency while permanently changing who trusts whom in a town."
+  ]
+}

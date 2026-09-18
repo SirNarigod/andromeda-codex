@@ -1,0 +1,43 @@
+{
+  "record_id": "ARPG-STAGE08-CORRECTION-LEDGER-V0.9.0",
+  "status": "CLOSED",
+  "open_corrections": 0,
+  "generated_at": "2026-08-18T19:30:45.648266+00:00",
+  "corrections": [
+    {
+      "id": "S08-C01",
+      "kind": "CANONICAL_SPATIAL_RECONCILIATION",
+      "finding": "Country Scale procedural blocks exposed generic biome labels as if they could define ARPG world biome authority.",
+      "correction": "Bound every TER-011 zone to canonical BIO-008 primary + BIO-002 major overlay; retained procedural label only as legacy runtime classification.",
+      "retest": "PASS"
+    },
+    {
+      "id": "S08-C02",
+      "kind": "ONE_COUNTRY_SCOPE",
+      "finding": "Canonical routes from Varga lead to other territories.",
+      "correction": "Projected RTE-001/RTE-003/RTE-013 as locked boundary gates; no second country made playable.",
+      "retest": "PASS"
+    },
+    {
+      "id": "S08-C03",
+      "kind": "TEST_HARNESS",
+      "finding": "Validation JSON contained a Python set in detail and could not serialize final report.",
+      "correction": "Converted diagnostic country set to sorted list; reran full validation.",
+      "retest": "47/47 PASS"
+    },
+    {
+      "id": "S08-C04",
+      "kind": "CLIMATE_FIELD_ALIAS",
+      "finding": "Country Scale stores rainfall_mm_y and humidity_pct while initial World Core read older aliases, causing midpoint fallback.",
+      "correction": "Read current fields first with backward-compatible aliases and clamp values to CLM-002 canonical limits.",
+      "retest": "20/20 unit + 47/47 validation + 15/15 stress PASS"
+    },
+    {
+      "id": "S08-C05",
+      "kind": "ROOT_DEEP_OVERLAY",
+      "finding": "Uniform canonical biome binding could erase local Root Deep procedural anomaly semantics.",
+      "correction": "Preserved BIO-008/BIO-002 as canonical geography and added BIO-ROOT-DEEP local overlay with predator-only/no-normal-city/no-normal-flora invariants.",
+      "retest": "PASS"
+    }
+  ]
+}

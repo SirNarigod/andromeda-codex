@@ -1,0 +1,19 @@
+{
+  "record_id": "CHECKPOINT-ARPG-STAGE14-V1.5.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "process": "ARPG PLAYABLE SYSTEM",
+  "stage": "14/22",
+  "stage_name": "LIVING × ARPG INTEGRATION",
+  "version": "V1.5.0",
+  "parent_checkpoint": "STAGE13_V1.4.0",
+  "status": "PASS",
+  "result": "STAGE14_RELEASE_READY",
+  "master_mutations": 0,
+  "backup_authorized": true,
+  "release_authorized": true,
+  "restore_status": "PASS",
+  "next_stage": 15,
+  "created_at": "2026-08-18T20:49:08.386053-03:00",
+  "candidate_restore_evidence": "04_REPORTS/ARPG_STAGE14/ARPG_STAGE14_CANDIDATE_RESTORE_EVIDENCE_V1_5_0.json",
+  "updated_at": "2026-08-18T20:52:57.452501-03:00"
+}

@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-010-002",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Academia da Vertente",
+  "parent_subregion": "SUB-010-002",
+  "parent_political_unit": "TER-010",
+  "function": "Escola de formação de magos, ensina os métodos de MAG-001.",
+  "notable_link": "Classe jogável Magos",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-010-002",
+  "settlement_tier": "COMPLEXO",
+  "history": "A Academia se organiza numa encosta íngreme de propósito — a tradição enohariana sustenta que aprender a canalizar a Corrente Planetária exige primeiro aprender a manter o próprio equilíbrio físico, e gerações de aspirantes treinaram subindo e descendo os mesmos degraus de pedra irregular antes mesmo de tocar numa fórmula ou runa. Formou a maioria dos magos reconhecidos do Domínio, incluindo, segundo registros antigos, os próprios ancestrais de Maelkar Enohar.",
+  "sensory": "Terraços de pedra escalonados sobem a encosta, cada um dedicado a um método diferente de canalização — fórmula, runa, vínculo, instinto — com aspirantes praticando ao ar livre mesmo em clima adverso, parte deliberada da formação. O ar acima dos terraços mais altos parece ligeiramente mais denso, e instrutores experientes conseguem identificar um aspirante prestes a perder controle da própria canalização só pela distorção sutil do ar ao redor dele.",
+  "figures": [
+    {
+      "role": "Mestra dos Métodos",
+      "name": "Ilvana Correntefirme",
+      "note": "Ensina todos os quatro métodos reconhecidos de canalização com igual rigor, mas é conhecida por favorecer secretamente o método de instinto — o mais imprevisível e o que ela própria domina — apesar de reconhecer publicamente que é o mais perigoso de ensinar em massa."
+    },
+    {
+      "role": "Aspirante promissor",
+      "name": "Kael Ventoclaro",
+      "note": "Demonstra talento raro pra canalização por vínculo, método que a maioria dos aspirantes leva anos pra sequer começar a dominar — Ilvana já notou, mas hesita em acelerar o treinamento dele, temendo que o próprio talento precoce o torne descuidado."
+    }
+  ],
+  "hook": "Kael pediu formalmente pra pular etapas do currículo padrão, confiante no próprio talento, e Ilvana precisa decidir entre honrar um pedido razoável baseado em mérito real ou seguir o protocolo cauteloso que a Academia sustenta há gerações precisamente pra evitar acidentes de canalização prematura.",
+  "detail": "Todo aspirante que completa o treinamento nos quatro terraços recebe permissão pra escolher, sozinho e sem conselho de instrutor, qual método vai se dedicar a aprofundar pelo resto da formação — uma decisão que a Academia trata como rito de passagem tão importante quanto qualquer exame formal.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION", "NO_MAGIC_LAW_REWRITE"]
+}

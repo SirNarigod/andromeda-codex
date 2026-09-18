@@ -1,0 +1,16 @@
+{
+  "record_id": "CHECKPOINT-ARPG-STAGE13-V1.4.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "process": "ARPG PLAYABLE SYSTEM",
+  "stage": "13/22",
+  "stage_name": "ECONOMY / CRAFTING",
+  "version": "V1.4.0",
+  "parent_checkpoint": "STAGE12_V1.3.0",
+  "status": "PASS",
+  "result": "STAGE13_RELEASE_READY",
+  "master_mutations": 0,
+  "backup_authorized": true,
+  "release_authorized": true,
+  "restore_status": "PASS",
+  "next_stage": 14
+}

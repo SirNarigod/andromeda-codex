@@ -1,0 +1,36 @@
+{
+  "est_id": "EST-066",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Vigia do Pantano",
+  "building_type": "MILITAR",
+  "parent_locality": "LOC-019-003",
+  "parent_subregion": "SUB-019-003",
+  "parent_political_unit": "TER-019",
+  "function": "Posto de vigilancia contra predadores do Pantano da Serpente.",
+  "economic_role": {
+    "is_vendor": false,
+    "sells": [],
+    "produces": [],
+    "regulation_factor": 0.4
+  },
+  "capacity": {
+    "jobs": 4,
+    "residents": 2
+  },
+  "professions_linked": [
+    "JOB-015 Guarda e resposta a risco"
+  ],
+  "notable_link": "TER-019 Mata Perdida (fase 52)",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "PEDRA_REFORCADA",
+    "flammability": "BAIXA",
+    "recovery_days": 7
+  }
+}

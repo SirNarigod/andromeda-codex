@@ -1,0 +1,17 @@
+{
+  "record_id":"AGENT-REGISTRY-V1.5.0",
+  "single_source_of_truth":true,
+  "agents":[
+    {"id":"AG-MOV-05","scope":"continuous movement, stamina, clock integration"},
+    {"id":"AG-NAV-05","scope":"pathfinding, canonical routes, bridges"},
+    {"id":"AG-COL-05","scope":"collision, interaction range, dungeon boundaries"},
+    {"id":"AG-ENV-05","scope":"day-night, temperature, precipitation, wind, visibility"},
+    {"id":"AG-DIS-05","scope":"player discovery, fog-of-war, spoiler isolation"},
+    {"id":"AG-GDT-05","scope":"Godot protocol, session binding, authoritative snapshots"},
+    {"id":"AG-DNG-05","scope":"dungeon traversal and room ownership"},
+    {"id":"AG-SEC-05","scope":"client security, session isolation, hidden content"},
+    {"id":"AG-SIM-05","scope":"multi-seed simulation, stress, determinism"},
+    {"id":"AG-AUD-05","scope":"silent-error audit and authority drift"},
+    {"id":"AG-REL-05","scope":"readiness, restore and release evidence"}
+  ]
+}

@@ -1,0 +1,265 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/inventory_shell.gd" id="1_inventory"]
+[ext_resource type="Theme" path="res://ui/theme/AndromedaMinimalTheme.tres" id="2_theme"]
+
+[node name="InventoryPanel" type="Control"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = ExtResource("2_theme")
+script = ExtResource("1_inventory")
+
+[node name="Backdrop" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+color = Color(0.1, 0.11, 0.12, 0.26)
+
+[node name="RoundedWhitePanel" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -350.0
+offset_top = -230.0
+offset_right = 350.0
+offset_bottom = 230.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Margin" type="MarginContainer" parent="RoundedWhitePanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 22
+theme_override_constants/margin_top = 18
+theme_override_constants/margin_right = 22
+theme_override_constants/margin_bottom = 18
+
+[node name="Layout" type="VBoxContainer" parent="RoundedWhitePanel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Header" type="HBoxContainer" parent="RoundedWhitePanel/Margin/Layout"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="RoundedWhitePanel/Margin/Layout/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.42, 0.42, 0.42, 1)
+theme_override_font_sizes/font_size = 24
+text = "Inventário"
+
+[node name="CloseHint" type="Label" parent="RoundedWhitePanel/Margin/Layout/Header"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.541, 0.541, 0.541, 1)
+text = "I  fechar"
+
+[node name="HeaderSeparator" type="HSeparator" parent="RoundedWhitePanel/Margin/Layout"]
+layout_mode = 2
+
+[node name="MenuScroll" type="ScrollContainer" parent="RoundedWhitePanel/Margin/Layout"]
+custom_minimum_size = Vector2(0, 360)
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="Content" type="VBoxContainer" parent="RoundedWhitePanel/Margin/Layout/MenuScroll"]
+custom_minimum_size = Vector2(630, 820)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 14
+
+[node name="AuthorityNotice" type="Label" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.541, 0.541, 0.541, 1)
+text = "Shell de apresentação — conteúdo projetado por snapshot autoritativo"
+autowrap_mode = 2
+
+[node name="BaseInventory" type="VBoxContainer" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Heading" type="Label" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content/BaseInventory"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.851, 0.631, 0.373, 1)
+text = "Inventário-base reduzido"
+
+[node name="BaseInventoryGrid" type="GridContainer" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content/BaseInventory"]
+layout_mode = 2
+columns = 4
+theme_override_constants/h_separation = 8
+theme_override_constants/v_separation = 8
+
+[node name="BaseSlot01" type="PanelContainer" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content/BaseInventory/BaseInventoryGrid"]
+custom_minimum_size = Vector2(145, 56)
+layout_mode = 2
+[node name="Label" type="Label" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content/BaseInventory/BaseInventoryGrid/BaseSlot01"]
+layout_mode = 2
+text = "—"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BaseSlot02" type="PanelContainer" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content/BaseInventory/BaseInventoryGrid"]
+custom_minimum_size = Vector2(145, 56)
+layout_mode = 2
+[node name="Label" type="Label" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content/BaseInventory/BaseInventoryGrid/BaseSlot02"]
+layout_mode = 2
+text = "—"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BaseSlot03" type="PanelContainer" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content/BaseInventory/BaseInventoryGrid"]
+custom_minimum_size = Vector2(145, 56)
+layout_mode = 2
+[node name="Label" type="Label" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content/BaseInventory/BaseInventoryGrid/BaseSlot03"]
+layout_mode = 2
+text = "—"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BaseSlot04" type="PanelContainer" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content/BaseInventory/BaseInventoryGrid"]
+custom_minimum_size = Vector2(145, 56)
+layout_mode = 2
+[node name="Label" type="Label" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content/BaseInventory/BaseInventoryGrid/BaseSlot04"]
+layout_mode = 2
+text = "—"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BaseSlot05" type="PanelContainer" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content/BaseInventory/BaseInventoryGrid"]
+custom_minimum_size = Vector2(145, 56)
+layout_mode = 2
+[node name="Label" type="Label" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content/BaseInventory/BaseInventoryGrid/BaseSlot05"]
+layout_mode = 2
+text = "—"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BaseSlot06" type="PanelContainer" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content/BaseInventory/BaseInventoryGrid"]
+custom_minimum_size = Vector2(145, 56)
+layout_mode = 2
+[node name="Label" type="Label" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content/BaseInventory/BaseInventoryGrid/BaseSlot06"]
+layout_mode = 2
+text = "—"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BaseSlot07" type="PanelContainer" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content/BaseInventory/BaseInventoryGrid"]
+custom_minimum_size = Vector2(145, 56)
+layout_mode = 2
+[node name="Label" type="Label" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content/BaseInventory/BaseInventoryGrid/BaseSlot07"]
+layout_mode = 2
+text = "—"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BaseSlot08" type="PanelContainer" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content/BaseInventory/BaseInventoryGrid"]
+custom_minimum_size = Vector2(145, 56)
+layout_mode = 2
+[node name="Label" type="Label" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content/BaseInventory/BaseInventoryGrid/BaseSlot08"]
+layout_mode = 2
+text = "—"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BagSection" type="HBoxContainer" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="BAG_SLOT" type="PanelContainer" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content/BagSection"]
+custom_minimum_size = Vector2(190, 92)
+layout_mode = 2
+[node name="Label" type="Label" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content/BagSection/BAG_SLOT"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.851, 0.631, 0.373, 1)
+text = "BAG_SLOT\nBolsa não projetada"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BagContainer" type="PanelContainer" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content/BagSection"]
+custom_minimum_size = Vector2(430, 92)
+layout_mode = 2
+[node name="Label" type="Label" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content/BagSection/BagContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.541, 0.541, 0.541, 1)
+text = "Container da Bolsa\nconteúdo externo ao cliente"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="EquipmentArea" type="PanelContainer" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content"]
+custom_minimum_size = Vector2(0, 86)
+layout_mode = 2
+[node name="Label" type="Label" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content/EquipmentArea"]
+layout_mode = 2
+text = "Equipamento  ·  projeção autoritativa pendente"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CarryProjection" type="Label" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.541, 0.541, 0.541, 1)
+text = "Carga externa  ·  aguardando snapshot"
+
+[node name="RoutingProjection" type="Label" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.851, 0.631, 0.373, 1)
+text = "Destino efetivo externo  ·  aguardando snapshot"
+
+[node name="WeaponQuickSlotReference" type="HBoxContainer" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content"]
+layout_mode = 2
+theme_override_constants/separation = 8
+[node name="Slot1Reference" type="PanelContainer" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content/WeaponQuickSlotReference"]
+custom_minimum_size = Vector2(305, 58)
+layout_mode = 2
+[node name="Label" type="Label" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content/WeaponQuickSlotReference/Slot1Reference"]
+layout_mode = 2
+text = "Arma rápida 1 · MAIN_HAND quando ativa"
+horizontal_alignment = 1
+vertical_alignment = 1
+[node name="Slot2Reference" type="PanelContainer" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content/WeaponQuickSlotReference"]
+custom_minimum_size = Vector2(305, 58)
+layout_mode = 2
+[node name="Label" type="Label" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content/WeaponQuickSlotReference/Slot2Reference"]
+layout_mode = 2
+text = "Arma rápida 2 · MAIN_HAND quando ativa"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AutoPickupSection" type="VBoxContainer" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content"]
+layout_mode = 2
+theme_override_constants/separation = 5
+[node name="Heading" type="Label" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content/AutoPickupSection"]
+layout_mode = 2
+text = "Preferência de coleta"
+[node name="AutoPickupButton" type="Button" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content/AutoPickupSection"]
+layout_mode = 2
+text = "AUTO PICKUP  OFF"
+tooltip_text = "Controle visual. Não permite coleta remota."
+
+[node name="TooltipLayer" type="PanelContainer" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+[node name="Label" type="Label" parent="RoundedWhitePanel/Margin/Layout/MenuScroll/Content/TooltipLayer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.541, 0.541, 0.541, 1)
+text = "Tooltip compacto · ícones finais e conteúdo adiados"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Footer" type="Label" parent="RoundedWhitePanel/Margin/Layout"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.541, 0.541, 0.541, 1)
+theme_override_font_sizes/font_size = 13
+text = "Roda: scroll do menu · Shift + roda e troca de arma ficam bloqueados aqui"
+horizontal_alignment = 1

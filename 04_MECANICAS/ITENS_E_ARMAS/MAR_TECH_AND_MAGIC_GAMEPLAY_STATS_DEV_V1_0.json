@@ -1,0 +1,359 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "MAR-TECH-AND-MAGIC-GAMEPLAY-STATS-DEV-V1.0",
+  "title": "MAR — Famílias Tecnológica (Androids) e Mágica (Magos), stats de gameplay, rascunho de desenvolvimento",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "canonical_status": "GAMEPLAY_DERIVED_DEV",
+  "master_integration_status": "NOT_SUBMITTED",
+  "r2_guard": "Estas 2 famílias NÃO têm código ART correspondente no cânone R2 — são criação de gameplay nova para sustentar o novo sistema de classes fixas (ver ARPG_AUTHORIAL_DECISIONS_V0_2_0.json). A família Mágica se apoia tematicamente em MAG-001 (Leis da magia), MAG-002 (Runas como método) e MAG-003 (Corrente Planetária) sem alterar esses registros. A família Tecnológica (Androids) não tem NENHUM precedente de lore no Codex — é conteúdo inteiramente novo, sinalizado ao usuário como tal.",
+  "weapons": [
+    {
+      "weapon_id": "WPN-TEC-001",
+      "name": "Lâmina de Servo Básica",
+      "r2_source_category": null,
+      "family": "Tecnológica",
+      "owner_class": "Androids",
+      "runification_tier": "T0",
+      "runes_referenced": [],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 42,
+        "defense": 22,
+        "utility": 25,
+        "handling": 60,
+        "durability": 55,
+        "reach": 28,
+        "magic_affinity": 0,
+        "tech_affinity": 50,
+        "overall": 35
+      },
+      "balance_role": {
+        "subtype": "corte sintético básico",
+        "primary_strength": "handling",
+        "primary_weakness": "magic_affinity",
+        "advantage": "servo-motor de baixo custo, fácil manutenção em qualquer chassi",
+        "limitation": "nenhuma interface arcana — inútil contra proteções puramente mágicas"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (corpo-a-corpo/energia)",
+        "impact_type": "CORTE_OU_ENERGIA",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ],
+      "weight_kg": 2.0
+    },
+    {
+      "weapon_id": "WPN-TEC-002",
+      "name": "Emissor de Pulso Sináptico",
+      "r2_source_category": null,
+      "family": "Tecnológica",
+      "owner_class": "Androids",
+      "runification_tier": "T1",
+      "runes_referenced": [],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "MÉDIO",
+      "cost_tier": 2,
+      "stats": {
+        "power": 55,
+        "defense": 26,
+        "utility": 48,
+        "handling": 52,
+        "durability": 45,
+        "reach": 48,
+        "magic_affinity": 5,
+        "tech_affinity": 62,
+        "overall": 43
+      },
+      "balance_role": {
+        "subtype": "interferência de rede",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "magic_affinity",
+        "advantage": "pulso calibrado interrompe sistemas eletrônicos e sinapses de alvos orgânicos",
+        "limitation": "efeito mínimo contra construtos puramente arcanos"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "RETA_TECNOLÓGICA (sem queda)",
+        "impact_type": "CORTE_OU_ENERGIA",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ],
+      "point_blank_capable": true,
+      "point_blank_note": "Dentro de CLINCH/IN_FIGHTING (<=2,75m): impacto garantido, sem dispersao, bonus de dano por proximidade.",
+      "weight_kg": 3.33
+    },
+    {
+      "weapon_id": "WPN-TEC-003",
+      "name": "Rifle de Convergência Cinética",
+      "r2_source_category": null,
+      "family": "Tecnológica",
+      "owner_class": "Androids",
+      "runification_tier": "T2",
+      "runes_referenced": [],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 70,
+        "defense": 32,
+        "utility": 58,
+        "handling": 44,
+        "durability": 40,
+        "reach": 68,
+        "magic_affinity": 8,
+        "tech_affinity": 74,
+        "overall": 49
+      },
+      "balance_role": {
+        "subtype": "projeção cinética de precisão",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "magic_affinity",
+        "advantage": "converge múltiplos disparos num único ponto de impacto calculado",
+        "limitation": "consumo de energia elevado esgota reservas do chassi rapidamente"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "RETA_TECNOLÓGICA (sem queda)",
+        "impact_type": "CORTE_OU_ENERGIA",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ],
+      "point_blank_capable": true,
+      "point_blank_note": "Dentro de CLINCH/IN_FIGHTING (<=2,75m): impacto garantido, sem dispersao, bonus de dano por proximidade.",
+      "weight_kg": 4.67
+    },
+    {
+      "weapon_id": "WPN-TEC-004",
+      "name": "Núcleo de Sobrecarga Modular",
+      "r2_source_category": null,
+      "family": "Tecnológica",
+      "owner_class": "Androids",
+      "runification_tier": "T3",
+      "runes_referenced": [],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 88,
+        "defense": 38,
+        "utility": 66,
+        "handling": 30,
+        "durability": 28,
+        "reach": 60,
+        "magic_affinity": 12,
+        "tech_affinity": 85,
+        "overall": 51
+      },
+      "balance_role": {
+        "subtype": "sobrecarga de elite",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "magic_affinity",
+        "advantage": "módulo de pico entrega o maior dano tecnológico do catálogo",
+        "limitation": "risco real de superaquecimento do próprio chassi do android sob uso contínuo"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (equipamento passivo)",
+        "impact_type": "CORTE_OU_ENERGIA",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ],
+      "weight_kg": 6.0
+    },
+    {
+      "weapon_id": "WPN-MAG-001",
+      "name": "Foco de Corrente Planetária",
+      "r2_source_category": null,
+      "family": "Mágica",
+      "owner_class": "Magos",
+      "runification_tier": "R1",
+      "runes_referenced": [],
+      "mag_source_reference": "MAG-003",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "MÉDIO",
+      "cost_tier": 2,
+      "stats": {
+        "power": 48,
+        "defense": 30,
+        "utility": 50,
+        "handling": 45,
+        "durability": 40,
+        "reach": 55,
+        "magic_affinity": 65,
+        "tech_affinity": 20,
+        "overall": 44
+      },
+      "balance_role": {
+        "subtype": "canalização básica",
+        "primary_strength": "magic_affinity",
+        "primary_weakness": "tech_affinity",
+        "advantage": "capta a Corrente Planetária diretamente, sem precisar de fórmula falada",
+        "limitation": "fonte finita — exige proximidade de um ponto de corrente estável"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "RETA_MÁGICA (sem queda)",
+        "impact_type": "IMPACTO_MÁGICO",
+        "area_effect": "PEQUENA a MÉDIA (conforme runa)"
+      },
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ],
+      "point_blank_capable": true,
+      "point_blank_note": "Dentro de CLINCH/IN_FIGHTING (<=2,75m): impacto garantido, sem dispersao, bonus de dano por proximidade.",
+      "weight_kg": 3.33
+    },
+    {
+      "weapon_id": "WPN-MAG-002",
+      "name": "Cajado de Fórmula Falada",
+      "r2_source_category": null,
+      "family": "Mágica",
+      "owner_class": "Magos",
+      "runification_tier": "R1",
+      "runes_referenced": [],
+      "mag_source_reference": "MAG-001",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "MÉDIO",
+      "cost_tier": 2,
+      "stats": {
+        "power": 44,
+        "defense": 34,
+        "utility": 48,
+        "handling": 48,
+        "durability": 45,
+        "reach": 58,
+        "magic_affinity": 62,
+        "tech_affinity": 22,
+        "overall": 45
+      },
+      "balance_role": {
+        "subtype": "método falado",
+        "primary_strength": "magic_affinity",
+        "primary_weakness": "tech_affinity",
+        "advantage": "método de fórmula falada, mais lento para aprender mas mais estável em combate",
+        "limitation": "todo custo e consequência das Leis da magia (MAG-001) se aplicam sem atalho"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "RETA_MÁGICA (sem queda)",
+        "impact_type": "IMPACTO_MÁGICO",
+        "area_effect": "PEQUENA a MÉDIA (conforme runa)"
+      },
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ],
+      "point_blank_capable": true,
+      "point_blank_note": "Dentro de CLINCH/IN_FIGHTING (<=2,75m): impacto garantido, sem dispersao, bonus de dano por proximidade.",
+      "weight_kg": 3.33
+    },
+    {
+      "weapon_id": "WPN-MAG-003",
+      "name": "Grimório de Vínculo Ritual",
+      "r2_source_category": null,
+      "family": "Mágica",
+      "owner_class": "Magos",
+      "runification_tier": "R2",
+      "runes_referenced": [],
+      "mag_source_reference": "MAG-002",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 62,
+        "defense": 36,
+        "utility": 68,
+        "handling": 36,
+        "durability": 38,
+        "reach": 48,
+        "magic_affinity": 78,
+        "tech_affinity": 30,
+        "overall": 50
+      },
+      "balance_role": {
+        "subtype": "ritual coordenado",
+        "primary_strength": "magic_affinity",
+        "primary_weakness": "tech_affinity",
+        "advantage": "usa runas como método (MAG-002) para coordenar múltiplos efeitos por ritual",
+        "limitation": "ritual lento, vulnerável a interrupção durante a invocação"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (equipamento passivo)",
+        "impact_type": "IMPACTO_MÁGICO",
+        "area_effect": "PEQUENA a MÉDIA (conforme runa)"
+      },
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ],
+      "weight_kg": 4.67
+    },
+    {
+      "weapon_id": "WPN-MAG-004",
+      "name": "Relicário de Estase Convergente",
+      "r2_source_category": null,
+      "family": "Mágica",
+      "owner_class": "Magos",
+      "runification_tier": "R3",
+      "runes_referenced": [],
+      "mag_source_reference": "MAG-007",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "ALTO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 82,
+        "defense": 40,
+        "utility": 80,
+        "handling": 24,
+        "durability": 30,
+        "reach": 62,
+        "magic_affinity": 92,
+        "tech_affinity": 34,
+        "overall": 56
+      },
+      "balance_role": {
+        "subtype": "convergência de elite",
+        "primary_strength": "magic_affinity",
+        "primary_weakness": "handling",
+        "advantage": "relíquia ligada à Estase de Intervalo (MAG-007), maior poder mágico do catálogo",
+        "limitation": "custo e consequência elevados; qualquer erro de invocação é caro para o portador"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (equipamento passivo)",
+        "impact_type": "IMPACTO_MÁGICO",
+        "area_effect": "PEQUENA a MÉDIA (conforme runa)"
+      },
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ],
+      "weight_kg": 6.0
+    }
+  ]
+}

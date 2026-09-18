@@ -1,0 +1,20 @@
+{
+  "record_id": "ARPG-VISUAL-PIPELINE-GATE-V0.1.0",
+  "status": "LOCKED",
+  "unlock_condition": "STAGE_17_PRE_ART_STATUS_PASS",
+  "allowed_before_unlock": [
+    "NEUTRAL_PLACEHOLDERS",
+    "DEBUG_ICONS",
+    "COLLISION_SHAPES",
+    "TEMPORARY_UI_WIREFRAMES"
+  ],
+  "blocked_before_unlock": [
+    "FINAL_CONCEPT_ART",
+    "FINAL_CHARACTER_MODELS",
+    "FINAL_ENVIRONMENT_MODELS",
+    "FINAL_VFX",
+    "FINAL_UI_ART",
+    "FINAL_AUDIO_PRODUCTION"
+  ],
+  "reason": "Gameplay/content contracts must be runnable before final art production."
+}

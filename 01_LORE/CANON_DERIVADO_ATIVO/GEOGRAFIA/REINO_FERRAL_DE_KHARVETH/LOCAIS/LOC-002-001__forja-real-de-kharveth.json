@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-002-001",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Forja Real de Kharveth",
+  "parent_subregion": "SUB-002-001",
+  "parent_political_unit": "TER-002",
+  "function": "Maior instalação de fabricação e runificação de armas do reino, sob licença de Odran Ferrak IV.",
+  "notable_link": "ART-015 Armerias rúnicas; ART-004 Sistema de armamentos de Stellar",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-002-001",
+  "settlement_tier": "CIDADE",
+  "history": "A Forja Real existe sob licença direta da coroa há gerações, um monopólio que Odran Ferrak IV herdou junto com o trono e que sustenta boa parte da riqueza do reino — nenhuma outra oficina de Kharveth tem permissão pra runificar armas em escala comparável, uma restrição que gera ressentimento constante entre ferreiros independentes forçados a vender matéria-prima à Forja em vez de competir diretamente com ela.",
+  "sensory": "Fornalhas gigantescas mantêm o ar da Forja quente mesmo nos dias mais frios do reino, e o som de martelo mecânico contra metal em ritmo industrial ecoa por toda a estrutura, alto o bastante que trabalhadores se comunicam boa parte do tempo por sinais de mão em vez de voz. Fileiras de armas semi-acabadas aguardam runificação em bancadas específicas, cada uma marcada com o selo real que autentica origem legítima.",
+  "figures": [
+    {
+      "role": "Mestre Ferreiro Real",
+      "name": "Bram Aço-Ferral",
+      "note": "Comanda a produção da Forja há décadas e é publicamente leal à coroa, mas privadamente incomodado com o monopólio que considera prejudicial à qualidade geral do ofício no reino — acredita que competição real produziria armas melhores, opinião que jamais expressaria diante de Odran."
+    },
+    {
+      "role": "Ferreiro independente",
+      "name": "Halla Bigornaverde",
+      "note": "Opera uma oficina pequena fora da Forja, restrita a reparo simples sem runificação, e vem secretamente desenvolvendo técnica própria que contornaria a necessidade de licença real — um risco enorme se descoberto, mas ela considera o monopólio uma injustiça que vale desafiar."
+    }
+  ],
+  "hook": "Bram descobriu, por acaso, indícios da técnica que Halla vem desenvolvendo — ele precisa decidir entre reportar à coroa, cumprindo o próprio dever formal, ou ficar em silêncio, secretamente esperançoso de que ela tenha sucesso onde ele nunca ousou tentar.",
+  "detail": "Toda arma que sai da Forja Real carrega um número de série gravado junto ao selo real, registrado em livro que só Odran e Bram têm acesso completo — um sistema de rastreamento que, em teoria, impede falsificação, mas que também significa que a coroa sabe exatamente quantas armas legítimas existem em circulação a qualquer momento.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION"]
+}

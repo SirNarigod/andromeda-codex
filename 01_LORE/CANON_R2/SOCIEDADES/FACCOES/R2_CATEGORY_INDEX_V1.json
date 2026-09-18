@@ -1,0 +1,44 @@
+{
+  "record_id": "R2-FAC-CATEGORY-INDEX-V1",
+  "authority": "CANON_R2_CONFIRMADO",
+  "category": "FAC",
+  "category_name": "Facções",
+  "items": [
+    {
+      "id": "FAC-001",
+      "title": "Árvores Anciãs",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/FACCOES/FAC-001__arvores-ancias.json",
+      "spoiler": 1,
+      "sealed": false
+    },
+    {
+      "id": "FAC-002",
+      "title": "Reis Magos",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/FACCOES/FAC-002__reis-magos.json",
+      "spoiler": 2,
+      "sealed": true
+    },
+    {
+      "id": "FAC-003",
+      "title": "Conselho de Convergência",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/FACCOES/FAC-003__conselho-de-convergencia.json",
+      "spoiler": 1,
+      "sealed": false
+    },
+    {
+      "id": "FAC-004",
+      "title": "Vigília Radicular",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/FACCOES/FAC-004__vigilia-radicular.json",
+      "spoiler": 2,
+      "sealed": true
+    },
+    {
+      "id": "FAC-005",
+      "title": "Círculo Arcano-Botânico da Flor Fóssil",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/FACCOES/FAC-005__circulo-arcano-botanico.json",
+      "spoiler": 2,
+      "sealed": true
+    }
+  ],
+  "source": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json"
+}

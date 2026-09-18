@@ -1,0 +1,101 @@
+{
+  "record_id": "AGENT-BRAIN-INTENT-VALIDATOR-CONTRACT-V1.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "module": "LIVING SIMULATION ENGINE",
+  "stage": "ETAPA_05_AGENT_BRAIN_INTENT_VALIDATOR",
+  "version": "V1.0",
+  "baseline": {
+    "master_version": "V2.0.1",
+    "release": "ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE.zip",
+    "release_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "authority_mode": "READ_ONLY"
+  },
+  "authority_boundary": {
+    "agent_brain": "MAY_READ_AGENT_STATE_AND_PERCEPTIONS; MAY_SCORE_BEHAVIORS; MAY_CREATE_CANDIDATE_INTENT; MAY_NOT_MUTATE_WORLD_STATE",
+    "llm": "MAY_SUPPLY_LANGUAGE_AND_LLM_CANDIDATE_INTENT_FIELDS_ONLY; NEVER_ACTION_CONSEQUENCES_MUTATIONS_PRECONDITIONS_EXECUTION_CLASS_CAUSALITY_OR_WORLD_TRUTH",
+    "intent_validator": "ONLY_GATE_ALLOWED_TO_PROMOTE_CANDIDATE_INTENT_TO_VALIDATED_ACTION",
+    "action_executor": "LIVING_RUNTIME_APPLY_ACTION remains sole authoritative mutation executor for this stage"
+  },
+  "decision_pipeline": [
+    "AGENT_STATE",
+    "PERCEPTION_HISTORY",
+    "UTILITY_SCORING",
+    "CANDIDATE_INTENT",
+    "POLICY_RESOLUTION",
+    "TRUTH_VALIDATION",
+    "VALIDATED_ACTION",
+    "TRANSACTIONAL_EXECUTION",
+    "EVENT",
+    "CONSEQUENCE"
+  ],
+  "agent_brain": {
+    "agent_kind": "AGENT",
+    "required_runtime_decision_fields": ["data.needs"],
+    "need_range": [0, 100],
+    "risk_tolerance_range": [0, 100],
+    "goal_weight_range": [0, 100],
+    "target_strategies": ["NONE", "SELF", "PERCEPTION"],
+    "perception_sources": ["SENSORY", "MEMORY", "COMMUNICATION", "SYSTEM_OBSERVATION"],
+    "truth_rule": "PERCEPTION_IS_NON_AUTHORITATIVE; AgentBrain target selection never queries target truth to correct a belief",
+    "utility_formula": "base_priority + need_weight*(need/100) + goal_weight*(goal/100) + opportunity_bonus - max(0,risk_cost-risk_tolerance)*risk_penalty_weight",
+    "tie_break": "score DESC then behavior_key ASC",
+    "offline": "AUTONOMOUS_AGENT_DECISION_BLOCKED_IN_ROUTINE_OFFLINE",
+    "decision_intent_atomicity": "decision record and candidate intent commit together or neither exists"
+  },
+  "intent": {
+    "sources": ["AGENT_BRAIN", "PLAYER_INPUT", "LLM_CANDIDATE", "SYSTEM_ROUTINE", "SYSTEM_RECOVERY"],
+    "statuses": ["CANDIDATE", "VALIDATING", "VALIDATED", "REJECTED", "EXPIRED", "CONSUMED"],
+    "candidate_immutable": true,
+    "validation_immutable": true,
+    "execution_record_immutable": true,
+    "reserved_parameter_keys": [
+      "consequences", "mutations", "world_state", "execution_class", "precondition_snapshot",
+      "action_id", "event_id", "causality", "status", "world_instance_id", "timeline_id"
+    ]
+  },
+  "action_policy": {
+    "one_active_policy_per_action_type_per_world": true,
+    "allowed_sources_enforced": true,
+    "actor_kinds_enforced": true,
+    "target_required_and_target_kinds_enforced": true,
+    "parameter_schema_whitelist": true,
+    "actor_and_target_state_preconditions": true,
+    "actor_and_target_numeric_resource_guards": true,
+    "resource_amounts_may_be_parameter_derived": true,
+    "spatial_policies": ["NONE", "SAME_LOCATION"],
+    "offline_policies": ["ACTIVE_ONLY", "ROUTINE_SAFE"],
+    "offline_authorial_rule": "ROUTINE_OFFLINE accepts only SYSTEM_ROUTINE or SYSTEM_RECOVERY intents whose policy is ROUTINE_SAFE",
+    "cooldown": "stored as authoritative actor state in same action transaction",
+    "mutation_template_rule": "mutation targets and field paths are policy-authored fixed values; candidate intent cannot supply mutation field path or consequence target",
+    "protection_inference": {
+      "TARGET lifecycle DEAD": "DEATH impact inferred even if policy author omitted declaration",
+      "TARGET lifecycle DESTROYED": "WORLD_MUTATION impact inferred even if policy author omitted declaration"
+    }
+  },
+  "narrative_protection": {
+    "DEATH": "protection.death BLOCKED/STORY_AUTHORITY_ONLY rejects intent",
+    "WORLD_MUTATION": "protection.world_mutation_scope BLOCKED/STORY_AUTHORITY_ONLY rejects intent",
+    "RELATIONSHIP_CHANGE": "protection.relationship_change BLOCKED/STORY_AUTHORITY_ONLY rejects intent",
+    "PERMANENT_INJURY": "protection.permanent_injury BLOCKED/STORY_AUTHORITY_ONLY rejects intent"
+  },
+  "concurrency": {
+    "lock_order": "AgentBrain -> IntentValidator -> LivingRuntime for decision+intent atomic section",
+    "validated_action_preconditions": "actor and resolved target entity versions captured at validation",
+    "race_resolution": "stale competing execution fails transactionally by version precondition rather than overselling/overwriting",
+    "idempotency": "one runtime action id per successful validation; core idempotency key is intent:<intent_id>"
+  },
+  "integrity": {
+    "hashed_records": ["action policy", "intent candidate", "validation", "execution", "behavior", "perception", "decision"],
+    "immutable_records": ["intent candidate body", "validation", "execution", "perception", "decision"],
+    "fail_closed_guard": "corruption detected by integrity_guard changes world status to CORRUPT_BLOCKED",
+    "core_integrity_dependency": "validator guard also consumes LivingRuntime full_integrity_check"
+  },
+  "governance": {
+    "canon_mutations": 0,
+    "master_writes": 0,
+    "new_canonical_namespaces": 0,
+    "runtime_ids_only": true,
+    "backup_created": false
+  },
+  "next_stage": "ETAPA_06_MEMORY_KNOWLEDGE_RELATIONSHIP_OR_AUTHORIALLY_SELECTED_SEQUENCE"
+}

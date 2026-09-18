@@ -1,0 +1,42 @@
+{
+  "build": "V0.1.12",
+  "status": "PASS_STATIC_AND_MODEL",
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1",
+  "click_hold_threshold_s": 0.18,
+  "expected_behaviors": {
+    "left_short_click_ground": "route persists to clicked destination after release",
+    "left_hold_ground": "after threshold, destination follows cursor; release stops",
+    "right_short_click_ground": "route persists to clicked destination after release",
+    "right_hold_ground": "after threshold, destination follows cursor; release stops",
+    "right_context_target": "approach/action persists after release; no hold required",
+    "left_area_transition": "approach/transition persists after release",
+    "attack_interval_s": 2.0
+  },
+  "model_tests": [
+    {
+      "name": "MODEL_SHORT_CLICK_PERSISTS",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "MODEL_HOLD_ACTIVATES",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "MODEL_HOLD_RELEASE_STOPS",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "MODEL_CONTEXT_RELEASE_PERSISTS",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "MODEL_ATTACK_RELEASE_PERSISTS",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

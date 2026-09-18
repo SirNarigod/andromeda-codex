@@ -1,0 +1,173 @@
+{
+  "record_id": "OBJECT-ENVIRONMENT-REACTIVE-SYSTEM-REPORT-V1.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "stage": "ETAPA_08",
+  "status": "PASS",
+  "baseline": {
+    "version": "V2.0.1",
+    "release_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "mutation_policy": "READ_ONLY"
+  },
+  "implemented": [
+    "reactive runtime profiles",
+    "reactive object instances",
+    "environment zones",
+    "state-machine interactions",
+    "damage/repair/destruction",
+    "seven-day physical regeneration",
+    "fire/heat/water reactions",
+    "resource harvesting",
+    "environment membership links",
+    "bounded fire propagation",
+    "offline routine gating",
+    "append-only reaction ledger",
+    "hash integrity checks"
+  ],
+  "validation": {
+    "unit_regression": {
+      "record_id": "LIVING-SIM-ETAPA-08-UNIT-TEST-REPORT-V1.0",
+      "tests_run": 427,
+      "passed": 427,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "elapsed_seconds": 29.876,
+      "failure_details": [],
+      "error_details": [],
+      "status": "PASS"
+    },
+    "stage07_extended_regression": {
+      "checks": 2685,
+      "passed": 2685,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "stage07_stress_regression": {
+      "forage_attempts": 1920,
+      "population_delta_ops": 6000,
+      "predation_contenders": 48,
+      "birth_contenders": 64,
+      "status": "PASS"
+    },
+    "stage08_extended": {
+      "record_id": "LIVING-SIM-ETAPA-08-EXTENDED-VALIDATION-V1.0",
+      "checks": 2570,
+      "passed": 2570,
+      "failed": 0,
+      "elapsed_seconds": 31.417,
+      "scale": {
+        "door_cycles": 250,
+        "damage_repair_objects": 200,
+        "destroy_recover_objects": 120,
+        "environment_zones": 50,
+        "environment_members": 400,
+        "resource_nodes": 100,
+        "fire_fanout": 40,
+        "offline_fire_block_cases": 100,
+        "timelines": 7,
+        "record_counts": {
+          "reactive_profiles": 14,
+          "environment_links": 441,
+          "reaction_logs": 16150,
+          "environment_ticks": 51,
+          "propagation_runs_env": 1,
+          "entity_states": 1170,
+          "events": 16271,
+          "recoveries": 120
+        }
+      },
+      "failures": [],
+      "status": "PASS"
+    },
+    "stage08_stress": {
+      "record_id": "LIVING-SIM-ETAPA-08-FUZZ-STRESS-V1.0",
+      "status": "PASS",
+      "elapsed_seconds": 6.968,
+      "threads": 24,
+      "shared_harvest_attempts": 1200,
+      "shared_harvest_successes": 600,
+      "shared_harvest_rejections": 600,
+      "remaining_resource": 0.0,
+      "bridge_damage_attempts": 200,
+      "bridge_damage_successes": 100,
+      "bridge_damage_rejections": 100,
+      "distinct_object_operations": 2400,
+      "environment_members": 200,
+      "fire_propagation_callers": 32,
+      "fire_neighbors": 64,
+      "fire_ignited": 32,
+      "interaction_fuzz_cases": 3000,
+      "fuzz_accepted": 316,
+      "fuzz_rejected": 2684,
+      "offline_fire_block_cases": 100,
+      "integrity_before_reopen": "PASS",
+      "integrity_after_reopen": "PASS",
+      "core_before": "PASS",
+      "core_after": "PASS",
+      "sqlite_quick_check": "ok",
+      "sqlite_integrity_check_after": "ok",
+      "foreign_key_failures": 0,
+      "foreign_key_failures_after": 0,
+      "record_counts": {
+        "reaction_logs": 4050,
+        "environment_links": 265,
+        "environment_ticks": 2,
+        "propagation_runs_env": 1,
+        "entity_states": 511,
+        "events": 4050,
+        "recoveries": 2
+      },
+      "failures": []
+    },
+    "static_audit": {
+      "record_id": "LIVING-SIM-ETAPA-08-STATIC-AUDIT-V1.0",
+      "checks": 76,
+      "passed": 76,
+      "failed": 0,
+      "status": "PASS",
+      "failures": []
+    },
+    "coverage": {
+      "record_id": "LIVING-SIM-ETAPA-08-COVERAGE-V1.0",
+      "scope": "STAGE08_OBJECT_ENVIRONMENT_MODULE_WITH_73_STAGE08_TESTS",
+      "statements": 335,
+      "covered_lines": 322,
+      "missing_lines": 13,
+      "percent": 96.12,
+      "files": {
+        "01_RUNTIME/object_environment.py": {
+          "statements": 335,
+          "covered_lines": 322,
+          "missing_lines": 13,
+          "percent": 96.12
+        }
+      },
+      "inherited_stage07_global_coverage_percent": 88.62,
+      "full_stage08_global_coverage_recomputed": false,
+      "reason": "Full accumulated coverage instrumentation exceeded operational execution window; unit/regression validation executed separately without coverage instrumentation.",
+      "status": "PASS"
+    },
+    "demo_status": "PASS"
+  },
+  "corrections": {
+    "detected": 6,
+    "fixed": 6,
+    "open": 0
+  },
+  "governance": {
+    "canon_mutations": 0,
+    "baseline_mutations": 0,
+    "new_canonical_namespaces": 0,
+    "profiles_authority": "RUNTIME_REACTIVE_PROFILE_NOT_CANON",
+    "backup_created": false
+  },
+  "known_limits": [
+    "No general rigid-body physics solver.",
+    "No geometry/pathfinding/animation integration.",
+    "No full fluid dynamics; water_level/humidity are bounded state fields.",
+    "No thermodynamic simulation beyond deterministic reactive rules.",
+    "No real distributed shared-world environmental reconciliation.",
+    "Reactive material traits remain runtime-only until authorially canonized."
+  ],
+  "functional_release_ready": false
+}

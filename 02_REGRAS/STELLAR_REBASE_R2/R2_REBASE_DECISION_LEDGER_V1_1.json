@@ -1,0 +1,14 @@
+{
+  "record_id": "R2_REBASE_DECISION_LEDGER_V1_1",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.1",
+  "status": "LOTS_001_AND_002_APPLIED",
+  "supersedes": "R2_REBASE_DECISION_LEDGER_V1_0",
+  "authority": {"r2": "IMMUTABLE_NARRATIVE_ORIGIN", "user_approval": "REQUIRED_FOR_DIVERGENCE_DISPOSITION"},
+  "invariants": ["NO_PHYSICAL_DELETION_WITHOUT_RECORDED_APPROVAL", "R2_WINS_NARRATIVE_CONFLICTS", "COMPATIBLE_EXPANSIONS_RETAIN_PROVENANCE"],
+  "entries": [
+    {"decision_id": "R2-REBASE-LOT-001", "date": "2026-09-06", "status": "APPLIED", "reference": "R2_REBASE_DECISION_LEDGER_V1_0.json", "physical_deletion": false},
+    {"decision_id": "R2-REBASE-LOT-002", "date": "2026-09-06", "status": "APPLIED", "user_authorization": "Lote 2 — Magia, Simbiose, Espinho-Negro, Amadon e Raiz Profunda.", "sources": [{"record": "MAR_MAGIC_FUNCTIONAL_V1_0", "sha256": "1a9551a30d0ea6c235a7f16223a082be53cabb5cd0ca7664e43438123d6c24ea", "copies": 2}, {"record": "MAGIC_TECH_BALANCE_REPORT_V1_0", "sha256": "a8662f5abc8773f83a4b5f3bc75e57370e03e5f68df0efd55bc9b000c4a308c0", "copies": 2}], "approved_actions": ["Promote MAG-008 through MAG-030 as CANON_DERIVADO_ATIVO with local narrative access gates.", "Apply material traces to Espinho-Negro symbiosis and preserve Kenua's agency.", "Create a Root global clock with authorial phase gates.", "Allow Amadon to act as accessible counsellor only after the Season 1 Episode 8 gate."], "new_active_records": ["STELLAR_COSMOLOGY_CANON_V1_2", "STELLAR_MAGIC_TECHNOLOGY_LAW_V1_1", "STELLAR_SYMBIOSIS_LAW_V1_0", "STELLAR_ROOT_PROGRESSION_LAW_V1_0", "STELLAR_FOUNDATION_INDEX_V1_2"], "historical_records_preserved": ["STELLAR_COSMOLOGY_CANON_V1_1", "STELLAR_MAGIC_TECHNOLOGY_LAW_V1_0", "STELLAR_FOUNDATION_INDEX_V1_1", "R2_REBASE_DECISION_LEDGER_V1_0"], "physical_deletion": false, "reversible_action": "Promotion may be superseded only through a new authorial ledger entry; sources and historical contracts remain preserved."}
+  ],
+  "next_batches": ["02_TERRITORY_FACTIONS", "03_ECONOMY_ECOLOGY_TIME", "04_CHARACTER_PLAYER_SYSTEMS", "05_ENGINE_ARPG_RUNTIME"]
+}

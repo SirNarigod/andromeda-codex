@@ -1,0 +1,21 @@
+{
+  "record_id": "STELLAR-COSMOLOGY-CANON-V1.0",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.0",
+  "status": "AUTHORIAL_CANON_FOUNDATION",
+  "authority": {"scope": "AUTHORIAL_CANON", "master_v2_0_1": "READ_ONLY", "living_sim_engine_v1_0_0": "READ_ONLY"},
+  "dependencies": ["02_REGRAS/STELLAR_FOUNDATION/STELLAR_CANON_CONSTITUTION_V1_0.json"],
+  "cosmological_truth": {
+    "stellar": "Uma consciência ancestral, anterior às civilizações conhecidas, inerente ao planeta.",
+    "purpose": "Conduzir a vida à maturidade: sustentar diversidade, escolha e continuidade sem destruir a base que permite existir.",
+    "agency": "GUARDIA_SILENCIOSA",
+    "intervention": "Stellar não ordena, não escolhe heróis e não resolve conflitos; responde por padrões, limites, ressonâncias, recuperação e cicatrizes.",
+    "public_knowledge": "VERDADE_PERDIDA: fragmentos sobrevivem como arquivos, máquinas, tradições, sonhos e rumores contraditórios."
+  },
+  "invariants": ["STELLAR_NEVER_REMOVES_MEANINGFUL_CHOICE", "LIFE_CONTINUITY_DOES_NOT_REQUIRE_STAGNATION", "NO_FACTION_OWNS_STELLAR", "COSMOLOGICAL_TRUTH_REQUIRES_EVIDENCE_IN_WORLD"],
+  "prohibitions": ["NO_OFFICIAL_RELIGION_DEFINED", "NO_OFFICIAL_LANGUAGE_DEFINED", "NO_KENUA_BINDING_DEFINED", "NO_DIRECT_DIVINE_COMMAND_AS_CANON"],
+  "simulation_effects": ["Territorial imbalance may manifest residue, ecological stress or anomalous recovery.", "Planetary reactions are bounded events, never unreviewed global rewrites.", "Signs are evidence with provenance, not automatic verified truth."],
+  "allowed_states": ["DORMANT_SIGN", "SUBTLE_RESPONSE", "SCARRED_ZONE", "RECOVERY_PATTERN", "AWAKENED_ANOMALY"],
+  "story_generators": ["Um arquivo impossível descreve uma resposta de Stellar antes de seu suposto primeiro registro.", "Duas comunidades possuem fragmentos verdadeiros que se contradizem apenas porque observam escalas diferentes.", "Uma zona cicatrizada devolve vidas e recursos, mas cobra uma escolha coletiva de continuidade."],
+  "integration": {"pilot_country": "TER-011_TERRAS_LIVRES", "world_binding": "ARPG_WORLD_CANON_BINDING_V0_9_0", "scope_rule": "Local changes remain auditable; planetary facts require authorial promotion."}
+}

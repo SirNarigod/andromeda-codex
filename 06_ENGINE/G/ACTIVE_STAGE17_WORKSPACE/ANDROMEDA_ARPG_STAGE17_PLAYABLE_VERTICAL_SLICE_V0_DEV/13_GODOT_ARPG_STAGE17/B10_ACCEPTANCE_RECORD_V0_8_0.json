@@ -1,0 +1,388 @@
+{
+  "record_id": "STAGE16B-B10-ACCEPTANCE-RECORD-V0.8.0",
+  "stage": "16B/23",
+  "block": "B10_SAVE_DEATH_DROPPED_BAG_RECOVERY_RESPAWN_CONTINUITY",
+  "captured_at": "2026-08-21T20:16:54.5399532-03:00",
+  "status": "PASS_APPLICABLE_B10_SCOPE_WITH_PARTIAL_AUTHORITATIVE_EVIDENCE",
+  "b10_closed": true,
+  "b11_started": false,
+  "final_stage16_checkpoint_or_restore_executed": false,
+  "final_stage16_backup_created": false,
+  "authority": {
+    "godot_role": [
+      "presentation",
+      "input",
+      "physics_local",
+      "navigation",
+      "scene_and_ui",
+      "client_orchestration",
+      "external_snapshot_projection"
+    ],
+    "authoritative_outside_godot": [
+      "save_success_and_persistence",
+      "reload_result",
+      "death_and_defeat",
+      "item_retention_or_loss",
+      "bag_drop_contents_and_ownership",
+      "ground_loot_and_bag_ttl",
+      "sunk_and_expiry",
+      "recovery_result",
+      "respawn_point",
+      "inventory_economy_quest_xp_and_canon"
+    ],
+    "authoritative_roundtrip_executed": false,
+    "fixtures_are_external_projection_contract_tests_only": true,
+    "backend_substitute_created": false,
+    "endpoint_created": false,
+    "canonical_mutation": false
+  },
+  "environment": {
+    "godot": "4.7.1.stable.official.a13da4feb",
+    "godot_executable": "C:/Program Files/Godot/Godot.exe",
+    "renderer": "OpenGL 3.3 Compatibility",
+    "device": "NVIDIA GeForce GTX 1650",
+    "project": "07_GODOT_ARPG_STAGE16B",
+    "editor_bridge": "OPERATIONAL",
+    "backend_127_0_0_1_8000": "NOT_AVAILABLE",
+    "backend_listener_count": 0,
+    "existing_user_editor_pid": 10524,
+    "existing_user_editor_preserved": true
+  },
+  "architecture": {
+    "save_reload_client": {
+      "authority": "GODOT_SAVE_RELOAD_CLIENT_ORCHESTRATION_ONLY",
+      "commands": ["REQUEST_SAVE", "REQUEST_AUTOSAVE", "REQUEST_RELOAD_RESYNC"],
+      "states": ["READY", "SAVE_PENDING", "RELOAD_PENDING", "RESYNC_REQUIRED", "RESTORING"],
+      "local_persistence": false,
+      "ready_requires_valid_external_restore_after_reconnect": true
+    },
+    "death_respawn_client": {
+      "authority": "GODOT_DEATH_RESPAWN_CLIENT_PROJECTION_ONLY",
+      "states": ["ALIVE", "DEFEATED", "DEAD_AWAITING_RESPAWN", "RESPAWN_PENDING", "READY"],
+      "local_death_decision": false,
+      "local_respawn_point_decision": false,
+      "scene_tree_global_pause": false
+    },
+    "dropped_bag": {
+      "scene": "res://scenes/interaction/DroppedBag.tscn",
+      "root": "RigidBody3D:DroppedBag",
+      "semantic_identity": "DROPPED_BAG_CONTAINER_NOT_GROUND_LOOT",
+      "components": [
+        "CollisionShape3D",
+        "MeshInstance3D:PlaceholderVisual",
+        "Area3D:RecoverySensor",
+        "Marker3D:InteractionAnchor",
+        "Marker3D:FloatAnchor",
+        "Label3D:OptionalOwnerHint",
+        "Node:WaterWorldItemPresenter"
+      ],
+      "stable_fields": [
+        "bag_ref",
+        "target_ref",
+        "original_owner_ref",
+        "origin_context",
+        "position",
+        "environment",
+        "exposure_projection",
+        "recoverability",
+        "recovery_holder_state"
+      ],
+      "land_local_expiry_timer": false,
+      "water_local_authoritative_timer": false,
+      "water_ttl_contract_metadata_seconds": 1800
+    },
+    "ground_loot_water_continuity": {
+      "contract_metadata_seconds": 900,
+      "external_projection_only": true,
+      "reload_preserves_target_ref_exposure_and_sunk_state": true,
+      "local_authoritative_timer": false
+    },
+    "bag_recovery": {
+      "command": "REQUEST_BAG_RECOVERY",
+      "physical_range_candidate_m": 0.5,
+      "checks_distance_path_and_blocker": true,
+      "local_ownership_or_contents_mutation": false,
+      "foreign_npc_auto_theft": false
+    },
+    "restore_domains": [
+      "player",
+      "world_and_streaming",
+      "resource_nodes",
+      "ground_loot",
+      "auto_pickup_profile_preference",
+      "inventory_and_bag",
+      "economy_projection",
+      "quest_projection",
+      "dropped_bags",
+      "death_recovery_and_respawn"
+    ]
+  },
+  "tests": [
+    {
+      "id": "STAGE16B_B10_HEADLESS_FINAL_R5",
+      "result": "PASS",
+      "passed": 453,
+      "failed": 0,
+      "process_exit_code": 0,
+      "stderr_bytes": 0,
+      "duration_seconds": 3.05,
+      "gate_marker": "ANDROMEDA_STAGE16B_B10_GATE: PASS",
+      "evidence": "B10_GODOT_RUNTIME.log"
+    },
+    {
+      "id": "STAGE16B_B10_EDITOR_BRIDGE_FINAL_R2",
+      "result": "PASS",
+      "passed": 453,
+      "failed": 0,
+      "debugger_errors": 0,
+      "debugger_warnings": 0,
+      "controlled_stop_final_errors": 0,
+      "evidence": "B10_EDITOR_BRIDGE_DEBUGGER_V0_8_0.json"
+    },
+    {
+      "id": "STAGE16B_B10_MAIN_EDITOR_BRIDGE_FINAL",
+      "result": "PASS",
+      "observed_seconds": 6,
+      "debugger_errors": 0,
+      "debugger_warnings": 0,
+      "controlled_stop_final_errors": 0,
+      "evidence": "B10_EDITOR_BRIDGE_DEBUGGER_V0_8_0.json"
+    },
+    {"id": "STAGE16B_B01_HEADLESS_REGRESSION", "result": "PASS", "passed": 54, "failed": 0, "process_exit_code": 0, "stderr_bytes": 0},
+    {"id": "STAGE16B_B02_HEADLESS_REGRESSION", "result": "PASS", "passed": 90, "failed": 0, "process_exit_code": 0, "stderr_bytes": 0},
+    {"id": "STAGE16B_B03_HEADLESS_REGRESSION", "result": "PASS", "passed": 357, "failed": 0, "process_exit_code": 0, "stderr_bytes": 0},
+    {"id": "STAGE16B_B04_HEADLESS_REGRESSION", "result": "PASS", "passed": 156, "failed": 0, "process_exit_code": 0, "stderr_bytes": 0},
+    {"id": "STAGE16B_B05_HEADLESS_REGRESSION", "result": "PASS", "passed": 210, "failed": 0, "process_exit_code": 0, "stderr_bytes": 0},
+    {"id": "STAGE16B_B06_HEADLESS_REGRESSION", "result": "PASS", "passed": 265, "failed": 0, "process_exit_code": 0, "stderr_bytes": 0},
+    {"id": "STAGE16B_B07_HEADLESS_REGRESSION", "result": "PASS", "passed": 357, "failed": 0, "process_exit_code": 0, "stderr_bytes": 0},
+    {"id": "STAGE16B_B08_HEADLESS_REGRESSION", "result": "PASS", "passed": 475, "failed": 0, "process_exit_code": 0, "stderr_bytes": 0},
+    {"id": "STAGE16B_B09_HEADLESS_REGRESSION", "result": "PASS", "passed": 379, "failed": 0, "process_exit_code": 0, "stderr_bytes": 0},
+    {
+      "id": "STAGE16A_POST_B10_ACCUMULATED",
+      "result": "PASS",
+      "passed": 209,
+      "failed": 0,
+      "runner_summary": "Ran 209 tests in 253.877s",
+      "process_duration_seconds": 256.38,
+      "process_exit_code": 0,
+      "failure_marker": false,
+      "note": "The verbose unittest success stream is emitted on stderr by unittest; it ended with OK and contained no failure marker."
+    },
+    {
+      "id": "STAGE16A_POST_B10_STRESS_FINAL",
+      "result": "PASS",
+      "passed": 20,
+      "failed": 0,
+      "process_exit_code": 0,
+      "stderr_bytes": 0,
+      "process_duration_seconds": 44.245
+    },
+    {
+      "id": "GODOT_LIVING_V1_5_HISTORICAL_RUNTIME_GATE",
+      "result": "PASS",
+      "marker": "ANDROMEDA_GODOT_V1_5_RUNTIME_GATE: PASS",
+      "passed": 4,
+      "failed": 0,
+      "process_exit_code": 0,
+      "stderr_bytes": 0
+    },
+    {
+      "id": "STAGE16A_POST_B10_BYTE_INTEGRITY",
+      "result": "PASS",
+      "files_verified": 724,
+      "missing": 0,
+      "mismatches": 0,
+      "godot_living_v1_5_files_verified": 4,
+      "evidence": "B10_BASELINE_INTEGRITY.log"
+    }
+  ],
+  "b10_coverage": {
+    "save": [
+      "manual_save_intent",
+      "autosave_intent",
+      "no_local_success_fabrication",
+      "stale_duplicate_wrong_session_result",
+      "save_failure_projection",
+      "save_during_movement_ui_dialogue_loot_auto_pickup_quest_economy_bag_and_water_states"
+    ],
+    "reload": [
+      "restore_player_world_ground_loot_auto_pickup_quest_economy_inventory_bag_water_exposure_and_death_recovery",
+      "stale_wrong_session_duplicate_older_save_and_malformed_restore_rejection",
+      "resync_before_ready"
+    ],
+    "death": [
+      "death_with_and_without_bag",
+      "xp_two_quick_slots_armor_clothes_and_protected_item_retention_projection",
+      "common_bag_contents_in_one_dropped_bag",
+      "no_local_death_or_item_mutation"
+    ],
+    "land_bag": ["no_expiry_projection", "no_local_removal_timer", "reload_and_streaming_continuity"],
+    "water_bag": ["0_1_1799_1800_and_above_1800_projection", "corrected_exposure", "floating_and_sunk", "reload_and_resync_continuity"],
+    "ground_loot_water": ["899_900_and_sunk_projection", "target_ref_and_exposure_reload_continuity"],
+    "recovery": ["own_bag", "range_blocker_invalid_path_stale_duplicate_inflight", "accepted_and_rejected_external_projection"],
+    "npc_bag": ["original_owner_and_context_retained", "player_recovery_intent", "foreign_npc_no_auto_theft", "reload_and_resync_continuity"],
+    "respawn": ["external_respawn_position_only", "input_and_target_reset", "camera_stability", "retained_equipment_and_dropped_bag_presence"],
+    "streaming": ["active_systemic_active_identity", "no_duplicate", "ownership_recovery_and_exposure_preserved"],
+    "security": ["no_inventory_ownership_ttl_death_save_or_canonical_authority_in_gdscript"]
+  },
+  "invalidated_runs": [
+    {
+      "id": "B10_HEADLESS_R1",
+      "counted": false,
+      "result": "PARSER_ERROR",
+      "reason": "RigidBody3D properties were statically accessed through Node3D and the gate contained an impossible typed intersection assertion."
+    },
+    {
+      "id": "B10_HEADLESS_R2",
+      "counted": false,
+      "result": "211/252_WITH_41_CASCADES",
+      "reason": "Scene placeholder identity conflicted with the correctly immutable first external DroppedBag identity."
+    },
+    {
+      "id": "B10_HEADLESS_R3",
+      "counted": false,
+      "result": "452/453",
+      "reason": "Physics moved the tiny blocker test fixture before final contextual range evaluation."
+    },
+    {
+      "id": "B10_HEADLESS_R4",
+      "counted": false,
+      "result": "453/453_SUPERSEDED",
+      "reason": "Source changed after the first Editor Bridge run exposed warnings, so the complete headless gate was repeated."
+    },
+    {
+      "id": "B10_EDITOR_BRIDGE_R1",
+      "counted": false,
+      "result": "453/453_WITH_9_WARNINGS",
+      "reason": "Shadowing, unnecessary await and nullable type-inference warnings invalidate acceptance."
+    },
+    {
+      "id": "REGRESSION_ORCHESTRATOR_POLICY_REJECTION",
+      "counted": false,
+      "result": "NO_GODOT_PROCESS_STARTED",
+      "reason": "Shell safety rejected computed temp-file deletion; a fresh evidence directory without deletion was used."
+    }
+  ],
+  "corrections": [
+    "Use dynamic presentation property access and script-path contract assertion.",
+    "Leave scene identity blank until the first external projection establishes immutable identity.",
+    "Correct the blocker fixture position immediately before the measured evaluation without weakening runtime checks.",
+    "Rename warning-producing locals, remove unnecessary awaits, and explicitly type nullable TTL projection as Variant.",
+    "Repeat B10 headless, Editor Bridge, Main, affected regressions and all final protected regressions."
+  ],
+  "integrity": {
+    "checkpoint_files_verified": 724,
+    "checkpoint_missing": 0,
+    "checkpoint_mismatches": 0,
+    "checkpoint_sha256": "21626A3152CB37E167EEE24BFF9D3142C5D389A8CA2827594B34211591525A6A",
+    "master_v2_0_1_sha256": "6D9AC3CCE7DCF6A65FDCF73859C332A0211C1AF52D149077BEEF554BF7BBD0B2",
+    "source_acceptance_matrix_sha256": "9335E6C7A5FAA25F97991204787D2C77485592419AAA1F51641C01E31317454C",
+    "godot_living_v1_5_files_verified": 4,
+    "godot_living_v1_5_missing": 0,
+    "godot_living_v1_5_mismatches": 0,
+    "source_acceptance_matrix_modified": false,
+    "protected_or_canonical_content_writes_outside_stage16b": 0,
+    "stage16b_zip_count": 0
+  },
+  "files_modified": [
+    {"path": "project.godot", "sha256": "D35BC5755815DA07E07C088FCDEF7E0AF51D1AC42A3C58FC21DE637A40C9E8D9", "reason": "B10 label with existing main scene, bridge and input preserved."},
+    {"path": "scenes/interaction/DroppedBag.tscn", "sha256": "C83372815EEAD592100995E1AEA41717A273E2EBADDA2D04684723AC5AB9DCEF", "reason": "Complete the distinct DroppedBag presentation architecture."},
+    {"path": "scenes/Main.tscn", "sha256": "7EBB1FEC0F97469645EE4E91F03A11D54DDFA9D138B64D43D9845E6EB3943536", "reason": "Add B10 clients and land/water placeholder Bags."},
+    {"path": "scenes/ui/HUD.tscn", "sha256": "E5AE12A9429240595AA323CCEC7D81FE954C2967D3A45B0EF4A06DBBA1A85672", "reason": "Add B10 death/recovery overlay while preserving B05/B06 UI."},
+    {"path": "scripts/input/input_router.gd", "sha256": "8F3E5D4D08B19BBA1685C837C066D45CF1D7F7259481D75D5D2E56CEDCB29FA5", "reason": "Block world actions during external death/reload states."},
+    {"path": "scripts/interaction/interaction_target.gd", "sha256": "E35026453562D8E1F85D627AEAD892D503B7516251E4C0E63798C4C8C31A1797", "reason": "Support DROPPED_BAG target semantics."},
+    {"path": "scripts/main.gd", "sha256": "D343F7BCE1CD2591E50C2262E35AF269F699E0B3672BD6BFE04B0D63778F86CF", "reason": "B10 binding and client orchestration."},
+    {"path": "scripts/ui/hud_controller.gd", "sha256": "6219FDB309F794AEEEAC6032C0BC20B3DD15707B7544529F21434554CD6EFE53", "reason": "Project B10 state through the unified HUD."},
+    {"path": "tests/godot/b05_runtime_gate.gd", "sha256": "95424A0F477712F2F933E1183B47CDE09F8E357976F20AC1DEDAC1458164CFC5", "reason": "Additive B10 project-label compatibility."},
+    {"path": "tests/godot/b06_runtime_gate.gd", "sha256": "7610365BB5A84ABA87B68882C2AFF3F256AA30E5A0B8076F787D340B8240031D", "reason": "Additive B10 project-label compatibility."},
+    {"path": "tests/godot/b07_runtime_gate.gd", "sha256": "90E2D4DB178C7DA54C509B92D24B3ABFB7058C18EC14266170CB7141268E5265", "reason": "Additive B10 project-label compatibility."},
+    {"path": "tests/godot/b08_runtime_gate.gd", "sha256": "11CA939C25194B9C3DE8804C1D73B9F07EFD5AA176C6121D4EDEA0C8CF61CA57", "reason": "Additive B10 project-label compatibility."},
+    {"path": "tests/godot/b09_runtime_gate.gd", "sha256": "9AE39DE12BEE6731B5F16061E1600016EB12E7513EDCC420327A9F4AB4E5BBA3", "reason": "Conditional additive B10 compatibility while preserving 379 checks."}
+  ],
+  "files_created": [
+    {"path": "scripts/interaction/dropped_bag.gd", "sha256": "4FC1E840C891BC5D7671C5312F8E8DD55500BFBD3062551F5014636DECB3B606"},
+    {"path": "scripts/interaction/dropped_bag.gd.uid", "sha256": "AF7DB4A28F857370BB38D5C6B481A416DD4241EA82B479E464B26D37222389B8", "generated_by": "GODOT"},
+    {"path": "scripts/interaction/dropped_bag_client.gd", "sha256": "2B36F65AA6254155F90E3EB809010BE78657FB96472373768733CD42FF34893E"},
+    {"path": "scripts/interaction/dropped_bag_client.gd.uid", "sha256": "65FECA643190ED0541225A0E155D0AACEFEDE0AFD49F366DE3A1552E2BEB2C65", "generated_by": "GODOT"},
+    {"path": "scripts/runtime/death_respawn_client.gd", "sha256": "4FF8E34A5B68197096D7AB46C464C8836AABA7EB9D544AF4CA8A53B2ED4DD665"},
+    {"path": "scripts/runtime/death_respawn_client.gd.uid", "sha256": "92EDA9E88BBD616EA09319E2184953E54518DB38289054A26AC2A56D77B7E2A0", "generated_by": "GODOT"},
+    {"path": "scripts/runtime/save_reload_client.gd", "sha256": "41FA27C7982F0FEB8875C6F409C7ED853202A16BC0ABACFA97F2005D5D40A67A"},
+    {"path": "scripts/runtime/save_reload_client.gd.uid", "sha256": "048A1E6CB3DCADA26B72FEAB7BD7EEF325BAC616D3913EC9F7ADD060996CBC9C", "generated_by": "GODOT"},
+    {"path": "scripts/ui/death_recovery_overlay.gd", "sha256": "498CC1AA9A114799625A4374472CD94405CCAAD4EE13A4D41EAAD3F57E262A80"},
+    {"path": "scripts/ui/death_recovery_overlay.gd.uid", "sha256": "6705F591609B0A298CA29A4F98671677180EAE45F5A4736981D407566782319D", "generated_by": "GODOT"},
+    {"path": "scenes/ui/DeathRecoveryOverlay.tscn", "sha256": "D578B6E589A4D1C85EF1842B3B24EEFF034BC789EB5047A04F838B53910ED438"},
+    {"path": "tests/godot/B10RuntimeGate.tscn", "sha256": "18BFEC93283354992842381DDA31CE72EBA188A6D5518D434A7970824B1AFE92"},
+    {"path": "tests/godot/b10_runtime_gate.gd", "sha256": "8852113B548D32EC818D9C2A92506A972B4B35CE82281DA17E83D43C8F66548D"},
+    {"path": "B10_ACCEPTANCE_RECORD_V0_8_0.json", "reason": "This accumulated acceptance record."},
+    {"path": "B10_IMPLEMENTATION_LOG_V0_8_0.md", "reason": "Implementation, correction and regression ledger."},
+    {"path": "B10_EDITOR_BRIDGE_DEBUGGER_V0_8_0.json", "reason": "Editor Bridge/debugger evidence."},
+    {"path": "README_STAGE16B_B10.md", "reason": "B10 handoff summary."},
+    {"path": "B10_GODOT_RUNTIME.log", "reason": "Headless, Bridge and regression evidence."},
+    {"path": "B10_BASELINE_INTEGRITY.log", "reason": "Protected byte/hash audit."},
+    {"path": "B10_INVALIDATED_RUNS.log", "reason": "Rejected executions and corrections."}
+  ],
+  "acceptance_matrix_before_b10": {
+    "PASS": ["G16B-01", "G16B-02", "G16B-07", "G16B-10", "G16B-11", "G16B-12", "G16B-13", "G16B-15"],
+    "PARTIAL_EVIDENCE": ["G16B-03", "G16B-04", "G16B-05", "G16B-06", "G16B-08", "G16B-09", "G16B-14", "G16B-16", "G16B-20", "G16B-21", "G16B-22", "G16B-23", "G16B-24", "G16B-25", "G16B-26", "G16B-27"],
+    "NOT_EXECUTED": ["G16B-17", "G16B-18", "G16B-19", "G16B-28"]
+  },
+  "acceptance_matrix_after_b10_summary": {
+    "PASS": ["G16B-01", "G16B-02", "G16B-07", "G16B-10", "G16B-11", "G16B-12", "G16B-13", "G16B-15"],
+    "PARTIAL_EVIDENCE": ["G16B-03", "G16B-04", "G16B-05", "G16B-06", "G16B-08", "G16B-09", "G16B-14", "G16B-16", "G16B-17", "G16B-18", "G16B-20", "G16B-21", "G16B-22", "G16B-23", "G16B-24", "G16B-25", "G16B-26", "G16B-27", "G16B-28"],
+    "NOT_EXECUTED": ["G16B-19"]
+  },
+  "acceptance_matrix_status_changes": [
+    {"id": "G16B-17", "before": "NOT_EXECUTED", "after": "PARTIAL_EVIDENCE", "reason": "Complete client restore/resync semantics and cross-domain continuity were proven, but no live authoritative persistence round-trip exists."},
+    {"id": "G16B-18", "before": "NOT_EXECUTED", "after": "PARTIAL_EVIDENCE", "reason": "Death/retention/single-Bag/protected-item projection was proven, but no live authoritative death result exists."},
+    {"id": "G16B-28", "before": "NOT_EXECUTED", "after": "PARTIAL_EVIDENCE", "reason": "NPC-owned Bag recovery intent, original ownership/context and no foreign-NPC auto-theft were proven client-side, without live authoritative recovery."}
+  ],
+  "acceptance_matrix": [
+    {"id": "G16B-01", "status": "PASS", "evidence": ["B01_54_OF_54_POST_B10"]},
+    {"id": "G16B-02", "status": "PASS", "evidence": ["B02_90_OF_90_POST_B10"]},
+    {"id": "G16B-03", "status": "PARTIAL_EVIDENCE", "evidence": ["B03_B08_B09_B10_CONTEXTUAL_REGRESSIONS"], "missing": ["LIVE_AUTHORITATIVE_ACTION_RESULTS_AND_COOLDOWN_ROUNDTRIP"]},
+    {"id": "G16B-04", "status": "PARTIAL_EVIDENCE", "evidence": ["B07_357_OF_357_POST_B10", "B10_BAG_RANGE_BLOCKER_AND_PATH_RECOVERY_CHECKS"], "missing": ["LIVE_AUTHORITATIVE_PICKUP_AND_RECOVERY_RESULT_ROUNDTRIP"]},
+    {"id": "G16B-05", "status": "PARTIAL_EVIDENCE", "evidence": ["B08_475_OF_475_POST_B10"], "missing": ["LIVE_AUTHORITATIVE_ALL_SOURCE_OUTPUT_ROUNDTRIPS"]},
+    {"id": "G16B-06", "status": "PARTIAL_EVIDENCE", "evidence": ["B07_AUTO_PICKUP_CONTRACT", "B10_AUTO_PICKUP_RESTORE_PROJECTION"], "missing": ["LIVE_PROFILE_PREFERENCE_PERSISTENCE_ROUNDTRIP"]},
+    {"id": "G16B-07", "status": "PASS", "evidence": ["B04_156_OF_156_POST_B10"]},
+    {"id": "G16B-08", "status": "PARTIAL_EVIDENCE", "evidence": ["B04_B05_B08_B10_STAMINA_PROJECTION_REGRESSIONS"], "missing": ["LIVE_AUTHORITATIVE_STAMINA_ROUNDTRIP"]},
+    {"id": "G16B-09", "status": "PARTIAL_EVIDENCE", "evidence": ["B04_B08_AND_B10_STREAMING_IDENTITY_REGRESSIONS"], "missing": ["LIVE_LIVING_SYSTEMIC_SNAPSHOT"]},
+    {"id": "G16B-10", "status": "PASS", "evidence": ["B05_210_OF_210_POST_B10"]},
+    {"id": "G16B-11", "status": "PASS", "evidence": ["B03_B05_B09_TARGET_DIALOGUE_POST_B10"]},
+    {"id": "G16B-12", "status": "PASS", "evidence": ["B05_210_OF_210_POST_B10"]},
+    {"id": "G16B-13", "status": "PASS", "evidence": ["B06_265_OF_265_POST_B10"]},
+    {"id": "G16B-14", "status": "PARTIAL_EVIDENCE", "evidence": ["B02_B04_B05_B06_B10_CAMERA_REGRESSIONS"], "missing": ["REAL_OCCLUDER_MATERIAL_FADE"]},
+    {"id": "G16B-15", "status": "PASS", "evidence": ["B06_265_OF_265_POST_B10"]},
+    {"id": "G16B-16", "status": "PARTIAL_EVIDENCE", "evidence": ["B09_QUOTE_EXECUTE_SEPARATION_POST_B10", "B10_ECONOMY_RESTORE_PROJECTION"], "missing": ["LIVE_AUTHORITATIVE_VENDOR_ECONOMY_ROUNDTRIP"]},
+    {"id": "G16B-17", "status": "PARTIAL_EVIDENCE", "evidence": ["B10_SAVE_RELOAD_RESYNC_CROSS_DOMAIN_RECONSTRUCTION", "STAGE16A_209_OF_209"], "missing": ["LIVE_AUTHORITATIVE_SAVE_RELOAD_AND_PERSISTENCE_ROUNDTRIP"]},
+    {"id": "G16B-18", "status": "PARTIAL_EVIDENCE", "evidence": ["B10_DEATH_RETENTION_SINGLE_DROPPED_BAG_AND_PROTECTED_ITEM_PROJECTION", "STAGE15_AND_STAGE16A_BYTES_UNCHANGED"], "missing": ["LIVE_AUTHORITATIVE_DEATH_POLICY_ROUNDTRIP"]},
+    {"id": "G16B-19", "status": "NOT_EXECUTED"},
+    {"id": "G16B-20", "status": "PARTIAL_EVIDENCE", "evidence": ["B01_THROUGH_B10_REGRESSIONS", "STAGE16A_209_OF_209", "STRESS_20_OF_20", "BASELINE_724_OF_724", "LIVING_RUNTIME_GATE", "MASTER_CHECKPOINT_MATRIX_HASHES_UNCHANGED"], "missing": ["B11_FULL_VERTICAL_SLICE_AND_GLOBAL_28_GATE_EVALUATION"]},
+    {"id": "G16B-21", "status": "PARTIAL_EVIDENCE", "evidence": ["B05_QUICK_SLOTS", "B09_INVENTORY_EQUIPMENT", "B10_DEATH_RESPAWN_RETENTION_PROJECTION"], "missing": ["LIVE_MAIN_HAND_AND_EQUIP_AUTHORIZATION_ROUNDTRIP"]},
+    {"id": "G16B-22", "status": "PARTIAL_EVIDENCE", "evidence": ["B05_INPUT_ROUTING", "B09_MENU_WHEEL", "B10_INPUT_GATING_REGRESSION"], "missing": ["LIVE_AUTHORITATIVE_SLOT_ACTIVATION_ROUNDTRIP"]},
+    {"id": "G16B-23", "status": "PARTIAL_EVIDENCE", "evidence": ["B05_B06_B07_B09_UI_FAMILY", "B10_DEATH_RECOVERY_OVERLAY_UI_FAMILY"], "missing": ["FULL_CRAFTING_AND_SETTINGS_RUNTIME_UI_COVERAGE"]},
+    {"id": "G16B-24", "status": "PARTIAL_EVIDENCE", "evidence": ["B04_156_OF_156_POST_B10"], "missing": ["LIVE_AUTHORITATIVE_WATER_STAMINA_ROUNDTRIP"]},
+    {"id": "G16B-25", "status": "PARTIAL_EVIDENCE", "evidence": ["B04_AND_STAGE16A_EXHAUSTION_REGRESSIONS", "B10_EXTERNAL_EXHAUSTION_GRACE_DEATH_PROJECTION"], "missing": ["LIVE_GODOT_BACKEND_EXHAUSTION_DEFEAT_SNAPSHOT"]},
+    {"id": "G16B-26", "status": "PARTIAL_EVIDENCE", "evidence": ["B09_REAL_BAG_CONTAINER_PROJECTION", "B10_EQUIPMENT_RETENTION_PROTECTED_ITEMS_AND_SINGLE_DROPPED_BAG_PROJECTION"], "missing": ["LIVE_AUTHORITATIVE_BAG_DEATH_DROP_AND_RECOVERY_ROUNDTRIP"]},
+    {"id": "G16B-27", "status": "PARTIAL_EVIDENCE", "evidence": ["B07_GROUND_LOOT_WATER_PROJECTION", "B10_GROUND_LOOT_900_BAG_WATER_1800_LAND_NO_EXPIRY_AND_RELOAD_PROJECTION"], "missing": ["LIVE_AUTHORITATIVE_TTL_ADVANCE_AND_PERSISTENCE_ROUNDTRIP"]},
+    {"id": "G16B-28", "status": "PARTIAL_EVIDENCE", "evidence": ["B10_NPC_BAG_OWNER_CONTEXT_PLAYER_RECOVERY_INTENT_NO_FOREIGN_NPC_AUTO_THEFT_AND_RELOAD"], "missing": ["LIVE_AUTHORITATIVE_NPC_BAG_RECOVERY_AND_OWNERSHIP_ROUNDTRIP"]}
+  ],
+  "blockers": [],
+  "not_available": [
+    "LIVE_SAVE_RELOAD_PERSISTENCE_ROUNDTRIP",
+    "LIVE_DEATH_RETENTION_AND_BAG_DROP_ROUNDTRIP",
+    "LIVE_GROUND_LOOT_AND_BAG_TTL_PERSISTENCE",
+    "LIVE_BAG_OWNERSHIP_AND_RECOVERY_RESULT",
+    "LIVE_RESPAWN_POINT_AUTHORIZATION",
+    "LIVE_NPC_BAG_RECOVERY_CONTEXT_RESULT"
+  ],
+  "watch_items": [
+    "127.0.0.1:8000 remains NOT_AVAILABLE with zero listeners.",
+    "G16B-17, G16B-18 and G16B-28 require live authoritative evidence before PASS.",
+    "G16B-25, G16B-26 and G16B-27 remain partial despite stronger B10 client evidence.",
+    "G16B-19 and the full integrated vertical-slice playthrough remain B11 scope.",
+    "DroppedBag and B10 UI remain functional placeholders; no final art or audio was added."
+  ],
+  "source_acceptance_matrix_modified": false,
+  "backup_rule_respected": true
+}
+

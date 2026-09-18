@@ -1,0 +1,39 @@
+{
+  "record_id": "ARPG-STAGE16A-TEST-SUMMARY-V0.4.0",
+  "stage": "16A/23",
+  "status": "PASS_PARTIAL_PRE_GODOT",
+  "own_tests": {
+    "interaction_intent": 14,
+    "ground_loot": 10,
+    "terrain_traversal_streaming": 18,
+    "realtime_dialogue": 18,
+    "minimal_hud": 18,
+    "camera_presentation": 18,
+    "gamefeel_contextual_feedback": 18,
+    "total": 114,
+    "passed": 114,
+    "failed": 0
+  },
+  "regression": {
+    "stage03_combat": {
+      "checks": 14,
+      "passed": 14,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "stage04_resources_stamina": {
+      "checks": 16,
+      "passed": 16,
+      "failed": 0,
+      "status": "PASS"
+    }
+  },
+  "guards": {
+    "global_hitstop": false,
+    "feedback_changes_gameplay": false,
+    "camera_impulse_changes_click_target": false,
+    "godot_final_gate": "PENDING_PC_ON_AND_EDITOR_BRIDGE_AVAILABLE"
+  },
+  "canon_mutations": 0,
+  "backup_created": false
+}

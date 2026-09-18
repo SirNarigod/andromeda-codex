@@ -1,0 +1,44 @@
+{
+  "record_id": "FIRST-PLAYABLE-DEFENSE-BARS-V0.1.24-DEV",
+  "status": "DEV_BALANCE_TUNING_NOT_MASTER_CANON",
+  "player": {
+    "hp": 100,
+    "stamina": 100,
+    "protection": 60,
+    "protection_split": {
+      "protection_share": 0.65,
+      "hp_share_nominal": 0.35
+    },
+    "protection_regeneration": "NONE_IN_THIS_BUILD"
+  },
+  "alpha": {
+    "shield_rule": "max_shield ≈ 48% max_health and always < max_health",
+    "velurio_alpha_expected": {
+      "hp": 250,
+      "shield": 120
+    }
+  },
+  "weapon_vs_alpha_shield": {
+    "Espada de Oficina": {
+      "shield_damage_factor": 0.8,
+      "hp_through_shield_factor": 0.0
+    },
+    "Espada do Vigia Caído": {
+      "shield_damage_factor": 0.7,
+      "hp_through_shield_factor": 0.18
+    },
+    "Arco de Galho Negro": {
+      "shield_damage_factor": 0.42,
+      "hp_through_shield_factor": 0.28
+    },
+    "Besta de Ferrolho Antiga": {
+      "shield_damage_factor": 0.85,
+      "hp_through_shield_factor": 0.14
+    },
+    "Chicote de Corrente Velária": {
+      "shield_damage_factor": 0.6,
+      "hp_through_shield_factor": 0.0
+    }
+  },
+  "same_hit_rule": "If HP and Shield both decrease, the two applied damage values must never be equal."
+}

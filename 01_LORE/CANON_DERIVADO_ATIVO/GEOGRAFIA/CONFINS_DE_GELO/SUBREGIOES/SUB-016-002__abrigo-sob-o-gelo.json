@@ -1,0 +1,41 @@
+{
+  "record_id": "SUB-016-002",
+  "record_kind": "DERIVED_SUBREGION_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Abrigo sob o Gelo",
+  "parent_political_unit": "TER-016",
+  "provenance": {
+    "approval": "AUTHORIAL_DECISION_FASE_49",
+    "r2_anchors": [],
+    "compatibility": "Territorio 100% novo por decisao explicita do autor (fase 49)."
+  },
+  "function": "Assentamento escavado sob a superficie gelada, protegido do vento cortante da superficie.",
+  "locality_references": [
+    "LOC-016-002"
+  ],
+  "permitted_catalog_links": {
+    "npc_roles": [],
+    "professions": [
+      "guardiao de abrigo"
+    ],
+    "encounters": [],
+    "resources": [
+      "AGZ-100",
+      "FLO-015",
+      "EST-056"
+    ]
+  },
+  "local_conflicts": [
+    "aquecimento limitado versus numero de moradores"
+  ],
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY_BEYOND_FASE_49_GATE",
+    "NO_AUTOMATIC_KENUA_SCENE",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_FIXED_BORDER_COORDINATE"
+  ],
+  "story_generators": [
+    "Uma crise em Abrigo sob o Gelo testa a resistencia da comunidade ao isolamento glacial."
+  ]
+}

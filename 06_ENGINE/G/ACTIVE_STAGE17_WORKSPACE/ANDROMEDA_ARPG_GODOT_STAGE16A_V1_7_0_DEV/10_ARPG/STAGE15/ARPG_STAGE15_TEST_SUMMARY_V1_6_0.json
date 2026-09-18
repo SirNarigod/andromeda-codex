@@ -1,0 +1,54 @@
+{
+  "candidate_restore": {
+    "ledger_entries": 651,
+    "ledger_failures": 0,
+    "manifest_entries": 650,
+    "manifest_failures": 0,
+    "post_test_transients": 0,
+    "stress": "23/23 PASS",
+    "validation": "24/24 PASS"
+  },
+  "open_corrections": 0,
+  "record_id": "ARPG-STAGE15-TEST-SUMMARY-V1.6.0",
+  "regression": {
+    "master": {
+      "checks": 393,
+      "failed": 0,
+      "passed": 393,
+      "status": "PASS"
+    },
+    "stage09": {
+      "status": "PASS",
+      "tests": 20
+    },
+    "stage10": {
+      "status": "PASS",
+      "tests": 19
+    },
+    "stage13": {
+      "status": "PASS",
+      "tests": 22
+    },
+    "stage14": {
+      "status": "PASS",
+      "stress": 30,
+      "unit": 20,
+      "validation": 48
+    }
+  },
+  "stage": "15/23",
+  "stage15": {
+    "stress": {
+      "checks": 23,
+      "failed": 0,
+      "passed": 23
+    },
+    "validation": {
+      "checks": 24,
+      "failed": 0,
+      "passed": 24
+    }
+  },
+  "status": "PASS",
+  "version": "V1.6.0"
+}

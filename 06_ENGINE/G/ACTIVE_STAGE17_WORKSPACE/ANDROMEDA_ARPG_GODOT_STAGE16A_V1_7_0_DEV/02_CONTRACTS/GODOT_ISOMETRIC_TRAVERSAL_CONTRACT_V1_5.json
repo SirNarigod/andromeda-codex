@@ -1,0 +1,12 @@
+{
+  "record_id": "GODOT-ISOMETRIC-TRAVERSAL-CONTRACT-V1.5",
+  "version": "V1.5.0",
+  "authority": "SERVER_AUTHORITATIVE",
+  "client": "06_GODOT_LIVING_V1_5/LivingWorldClient.gd",
+  "session_rule": "client sends session_ref; server resolves player_ref",
+  "position_units": "meters",
+  "commands": ["MOVE_VECTOR", "INTERACT", "DISCOVER", "PATH_PLAN", "DUNGEON_MOVE"],
+  "forbidden_client_authority": ["canonical mutation", "direct player_ref selection", "direct inventory mutation", "direct chunk ownership mutation", "direct clock mutation"],
+  "fog_of_war": "dungeon/room payload is player-scoped and requires discovery",
+  "status": "DEV_CONTRACT"
+}

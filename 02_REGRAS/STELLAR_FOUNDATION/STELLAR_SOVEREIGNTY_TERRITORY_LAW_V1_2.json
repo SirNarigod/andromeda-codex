@@ -1,0 +1,44 @@
+{
+  "record_id": "STELLAR-SOVEREIGNTY-TERRITORY-LAW-V1.2",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.2",
+  "status": "CANON_DERIVADO_ATIVO_R2_COMPATIBLE",
+  "supersedes": "STELLAR_SOVEREIGNTY_TERRITORY_LAW_V1_1",
+  "authority": {
+    "r2": ["TER-001 through TER-013", "FAC-003", "PLA-001", "PER-002"],
+    "derived_sources": ["STELLAR_TERRITORIES_V1_0", "FAC-009", "FAC-010", "FAC-009-FAC-010-RELATIONSHIP-CHARTER-V1"],
+    "scope": "TERRITORY_SOVEREIGNTY_ROUTES_RECOGNITION_AND_LOCAL_CHARTERS"
+  },
+  "dependencies": ["STELLAR_COSMOLOGY_CANON_V1_2.json", "STELLAR_ROOT_PROGRESSION_LAW_V1_0.json", "STELLAR_INSTITUTION_CULTURE_LAW_V1_1.json", "../../01_LORE/STELLAR_REBASE_R2/R2_SOURCE_AUTHORITY_INDEX_V1_0.json"],
+  "invariants": [
+    "STELLAR_HAS_NO_PLANETARY_GOVERNMENT",
+    "COUNCIL_OF_CONVERGENCE_NEGOTIATES_CRISIS_AND_ROUTES_BUT_DOES_NOT_GOVERN_STELLAR",
+    "INFLUENCE_NEVER_EQUALS_SOVEREIGNTY",
+    "TERRITORY_REQUIRES_PEOPLE_ROUTE_ADMINISTRATION_AND_RECOGNITION",
+    "TER_011_TERRAS_LIVRES_REMAINS_INITIAL_PLAYABLE_COUNTRY",
+    "842_EC_GEOMETRY_IS_VERSIONED_AND_READ_ONLY_AT_RUNTIME",
+    "OFFLINE_SOVEREIGNTY_CHANGE_IS_PROHIBITED",
+    "LOCAL_CHARTER_PERMITS_SERVICE_PRESENCE_NOT_TERRITORIAL_AUTHORITY"
+  ],
+  "prohibitions": [
+    "NO_GLOBAL_SOVEREIGN_FROM_FACTION_INFLUENCE",
+    "NO_RUNTIME_BOUNDARY_MUTATION",
+    "NO_NEW_WAR_OR_ANNEXATION_INFERENCE",
+    "NO_ERASURE_OF_AUTONOMOUS_TERRAS_LIVRES",
+    "NO_PLANETARY_TERRITORIAL_RETCON_WITHOUT_AUTHORIAL_PROMOTION",
+    "NO_FACTION_CONTROL_FROM_LOCAL_CHARTER"
+  ],
+  "territory_states": ["CANONICAL_TERRITORY", "CONTESTED_ROUTE", "LOCAL_ADMINISTRATION", "INFLUENCE_ZONE", "LOCAL_CHARTERED_SERVICE", "RECOGNITION_PENDING", "AUTHORIAL_PROMOTION_PENDING"],
+  "transition_requirements": ["observable local event", "affected people or institution", "route or material basis", "recognition or explicit dispute record", "audit provenance"],
+  "simulation_effects": [
+    "Living Country may model local route access, administration, recognition, chartered service presence and contested influence as separate fields.",
+    "A runtime event may change local access, charter status or trust, but cannot redraw a canonical boundary, confer sovereignty or create a country.",
+    "A territorial claim becomes canon only after authorial promotion with R2 compatibility evidence."
+  ],
+  "allowed_states": ["STABLE", "LOCALLY_CONTESTED", "ROUTE_DISRUPTED", "ADMINISTERED", "CHARTERED_SERVICE", "RECOGNITION_PENDING", "AUTHORIAL_TRANSITION"],
+  "story_generators": [
+    "A route dispute forces Terras Livres to choose between autonomy and a powerful protector.",
+    "Two institutions administer the same emergency corridor without either gaining sovereignty.",
+    "A chartered workshop becomes essential to a border town but cannot claim the town as its own."
+  ]
+}

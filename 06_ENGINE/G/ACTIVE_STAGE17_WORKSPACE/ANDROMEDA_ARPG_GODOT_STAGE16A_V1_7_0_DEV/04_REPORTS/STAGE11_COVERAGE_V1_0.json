@@ -1,0 +1,9 @@
+{
+  "record_id": "STAGE11-COVERAGE-V1.0",
+  "module": "01_RUNTIME/long_horizon.py",
+  "percent_covered": 94.21,
+  "num_statements": 363,
+  "covered_lines": 342,
+  "missing_lines": 21,
+  "status": "PASS"
+}

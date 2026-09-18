@@ -1,0 +1,94 @@
+{
+  "record_id": "ATLAS-LIVING-LAYER-REGISTRY-V1.0",
+  "stage": "ETAPA_13",
+  "authority": "DERIVED_READ_ONLY_TIMELINE_PROJECTION",
+  "count": 12,
+  "layers": [
+    {
+      "id": "LIVE_ENTITY_STATE",
+      "category": "STATE",
+      "access": "PLAYER,ADMIN",
+      "description": "Current timeline entity overlays",
+      "write_authority": false
+    },
+    {
+      "id": "LIVE_ROUTES",
+      "category": "MOBILITY",
+      "access": "PLAYER,ADMIN",
+      "description": "Operational route state",
+      "write_authority": false
+    },
+    {
+      "id": "LIVE_ECONOMY",
+      "category": "ECONOMY",
+      "access": "PLAYER,ADMIN",
+      "description": "Runtime flows, stock, prices, shortage",
+      "write_authority": false
+    },
+    {
+      "id": "LIVE_POPULATION",
+      "category": "SOCIETY",
+      "access": "PLAYER,ADMIN",
+      "description": "Numeric runtime population aggregates",
+      "write_authority": false
+    },
+    {
+      "id": "LIVE_FACTIONS",
+      "category": "SOCIETY",
+      "access": "PLAYER,ADMIN",
+      "description": "Runtime influence/security/stability; not sovereignty",
+      "write_authority": false
+    },
+    {
+      "id": "LIVE_ENVIRONMENT",
+      "category": "ENVIRONMENT",
+      "access": "PLAYER,ADMIN",
+      "description": "Objects, structures and environment state",
+      "write_authority": false
+    },
+    {
+      "id": "LIVE_EVENTS",
+      "category": "TIME",
+      "access": "PLAYER,ADMIN",
+      "description": "Immutable timeline events",
+      "write_authority": false
+    },
+    {
+      "id": "LIVE_RECOVERY",
+      "category": "TIME",
+      "access": "PLAYER,ADMIN",
+      "description": "Seven-day recovery schedules",
+      "write_authority": false
+    },
+    {
+      "id": "LIVE_ECOLOGY",
+      "category": "ECOLOGY",
+      "access": "PLAYER,ADMIN",
+      "description": "Aggregate fauna population state",
+      "write_authority": false
+    },
+    {
+      "id": "LIVE_SOCIAL",
+      "category": "SOCIAL",
+      "access": "SCOPED_PLAYER,ADMIN",
+      "description": "Relationships/reputation with player scoping",
+      "write_authority": false
+    },
+    {
+      "id": "LIVE_CAUSAL",
+      "category": "AUDIT",
+      "access": "ADMIN",
+      "description": "Causal ledger view",
+      "write_authority": false
+    },
+    {
+      "id": "LLM_METRICS",
+      "category": "AUDIT",
+      "access": "ADMIN",
+      "description": "Counts only; raw content forbidden",
+      "write_authority": false
+    }
+  ],
+  "canonical_level_4_hidden": true,
+  "status": "PASS"
+}

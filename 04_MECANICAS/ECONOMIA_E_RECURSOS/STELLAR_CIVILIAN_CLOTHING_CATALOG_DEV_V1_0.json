@@ -1,0 +1,452 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-CIVILIAN-CLOTHING-CATALOG-DEV-V1.0",
+  "title": "Vestuário Civil — 1 traje por território (19)",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "canonical_status": "GAMEPLAY_DERIVED_DEV",
+  "r2_guard": "Vestuário CIVIL do dia a dia — sem stat de combate/armor, não sobrepõe VST-001..008 (armadura, fase 29). Prefixo TRJ- dedicado para não confundir categorias. Todo inputs usa recursos já catalogados (MAT-/MIN-/FLO-); todo produced_at é EST-XXX real ou nota honesta de lacuna (sem loja dedicada) onde nenhuma construção do território cobre vestuário — mesma disciplina já usada na fase 41 para extração.",
+  "clothing": [
+    {
+      "clothing_id": "TRJ-001",
+      "name": "Traje Mercantil de Lúminor",
+      "territory": "TER-001",
+      "culture_note": "Roupa formal de negociação, valoriza status entre casas mercantis.",
+      "inputs": [
+        {
+          "resource_id": "MAT-004",
+          "resource_name": "Fibra de Véu"
+        }
+      ],
+      "produced_at": "EST-001",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_CLOTHING_ONLY",
+      "currency_tags": [
+        "CUR-001",
+        "CUR-000"
+      ],
+      "wardrobe_type": "Mercantil",
+      "weight_kg": 0.87,
+      "description": "Roupa formal de negociação, valoriza status entre casas mercantis."
+    },
+    {
+      "clothing_id": "TRJ-002",
+      "name": "Traje Industrial de Couro de Kharveth",
+      "territory": "TER-002",
+      "culture_note": "Vestimenta resistente usada por trabalhadores da Forja Real.",
+      "inputs": [
+        {
+          "resource_id": "MAT-003",
+          "resource_name": "Couro de Manada"
+        }
+      ],
+      "produced_at": "EST-002",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_CLOTHING_ONLY",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "wardrobe_type": "Industrial",
+      "weight_kg": 0.87,
+      "description": "Vestimenta resistente usada por trabalhadores da Forja Real."
+    },
+    {
+      "clothing_id": "TRJ-003",
+      "name": "Uniforme Ferroviário de Ortheon",
+      "territory": "TER-003",
+      "culture_note": "Uniforme padrão dos técnicos e condutores da malha ferroviária.",
+      "inputs": [
+        {
+          "resource_id": "MAT-001",
+          "resource_name": "Madeira de Copas"
+        },
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto (fivelas/botões)"
+        }
+      ],
+      "produced_at": "EST-014",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_CLOTHING_ONLY",
+      "currency_tags": [
+        "CUR-003",
+        "CUR-000"
+      ],
+      "wardrobe_type": "Industrial",
+      "weight_kg": 0.87,
+      "description": "Uniforme padrão dos técnicos e condutores da malha ferroviária."
+    },
+    {
+      "clothing_id": "TRJ-004",
+      "name": "Traje Marítimo de Navyr",
+      "territory": "TER-004",
+      "culture_note": "Roupa impermeável usada por pescadores e marinheiros da confederação.",
+      "inputs": [
+        {
+          "resource_id": "MAT-003",
+          "resource_name": "Couro de Manada"
+        }
+      ],
+      "produced_at": "EST-017",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_CLOTHING_ONLY",
+      "currency_tags": [
+        "CUR-004",
+        "CUR-000"
+      ],
+      "wardrobe_type": "Utilitário",
+      "weight_kg": 0.87,
+      "description": "Roupa impermeável usada por pescadores e marinheiros da confederação."
+    },
+    {
+      "clothing_id": "TRJ-005",
+      "name": "Traje Tecnomágico de Ithra",
+      "territory": "TER-005",
+      "culture_note": "Vestimenta com reforços condutores, usada por artesãos do Distrito Tecnomágico.",
+      "inputs": [
+        {
+          "resource_id": "MAT-004",
+          "resource_name": "Fibra de Véu"
+        },
+        {
+          "resource_id": "MIN-COPPER",
+          "resource_name": "Cobrex Condutor"
+        }
+      ],
+      "produced_at": "SEM_LOJA_DEDICADA — produzido artesanalmente em SUB-005-001 Distrito Tecnomágico",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_CLOTHING_ONLY",
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ],
+      "wardrobe_type": "Industrial",
+      "weight_kg": 0.87,
+      "description": "Vestimenta com reforços condutores, usada por artesãos do Distrito Tecnomágico."
+    },
+    {
+      "clothing_id": "TRJ-006",
+      "name": "Traje Aristocrático Leve de Altavela",
+      "territory": "TER-006",
+      "culture_note": "Vestimenta leve para altitude, usada pela nobreza eletiva do reino aéreo.",
+      "inputs": [
+        {
+          "resource_id": "MAT-004",
+          "resource_name": "Fibra de Véu"
+        }
+      ],
+      "produced_at": "EST-023",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_CLOTHING_ONLY",
+      "currency_tags": [
+        "CUR-006",
+        "CUR-000"
+      ],
+      "wardrobe_type": "Aristocrático",
+      "weight_kg": 0.87,
+      "description": "Vestimenta leve para altitude, usada pela nobreza eletiva do reino aéreo."
+    },
+    {
+      "clothing_id": "TRJ-007",
+      "name": "Traje Medicinal de Rubra-Viva",
+      "territory": "TER-007",
+      "culture_note": "Vestimenta simples usada por curadores e cultivadores dos Jardins Medicinais.",
+      "inputs": [
+        {
+          "resource_id": "MAT-004",
+          "resource_name": "Fibra de Véu"
+        }
+      ],
+      "produced_at": "EST-012",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_CLOTHING_ONLY",
+      "currency_tags": [
+        "CUR-007",
+        "CUR-000"
+      ],
+      "wardrobe_type": "Utilitário",
+      "weight_kg": 0.87,
+      "description": "Vestimenta simples usada por curadores e cultivadores dos Jardins Medicinais."
+    },
+    {
+      "clothing_id": "TRJ-008",
+      "name": "Traje Arbóreo dos Povos das Copas",
+      "territory": "TER-008",
+      "culture_note": "Vestimenta leve adaptada à vida suspensa nas árvores gigantes.",
+      "inputs": [
+        {
+          "resource_id": "MAT-001",
+          "resource_name": "Madeira de Copas (fibra de casca)"
+        }
+      ],
+      "produced_at": "SEM_LOJA_DEDICADA — artesanato comunitário em SUB-008-001 Copas Altas",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_CLOTHING_ONLY",
+      "currency_tags": [
+        "CUR-008",
+        "CUR-000"
+      ],
+      "wardrobe_type": "Utilitário",
+      "weight_kg": 0.88,
+      "description": "Vestimenta leve adaptada à vida suspensa nas árvores gigantes."
+    },
+    {
+      "clothing_id": "TRJ-009",
+      "name": "Traje Subterrâneo da Liga Subcristal",
+      "territory": "TER-009",
+      "culture_note": "Vestimenta resistente à umidade e ao pó de cristal das cidades subterrâneas.",
+      "inputs": [
+        {
+          "resource_id": "MIN-QUARTZ",
+          "resource_name": "Quartzo de Veio (ornamentos)"
+        },
+        {
+          "resource_id": "MAT-004",
+          "resource_name": "Fibra de Véu"
+        }
+      ],
+      "produced_at": "SEM_LOJA_DEDICADA — artesanato local em SUB-009-001 Câmaras de Cristal",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_CLOTHING_ONLY",
+      "currency_tags": [
+        "CUR-009",
+        "CUR-000"
+      ],
+      "wardrobe_type": "Utilitário",
+      "weight_kg": 0.88,
+      "description": "Vestimenta resistente à umidade e ao pó de cristal das cidades subterrâneas."
+    },
+    {
+      "clothing_id": "TRJ-010",
+      "name": "Vestes de Aprendiz dos Reis Magos",
+      "territory": "TER-010",
+      "culture_note": "Vestes simples de aprendiz de magia, usadas na Vertente dos Aprendizes.",
+      "inputs": [
+        {
+          "resource_id": "MAT-008",
+          "resource_name": "Pergaminho de Fibra (ornamentos)"
+        },
+        {
+          "resource_id": "MAT-004",
+          "resource_name": "Fibra de Véu"
+        }
+      ],
+      "produced_at": "SEM_LOJA_DEDICADA — produzido em SUB-010-002 Vertente dos Aprendizes",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_CLOTHING_ONLY",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ],
+      "wardrobe_type": "Cerimonial",
+      "weight_kg": 0.9,
+      "description": "Vestes simples de aprendiz de magia, usadas na Vertente dos Aprendizes."
+    },
+    {
+      "clothing_id": "TRJ-011",
+      "name": "Traje de Fronteira de Terras Livres",
+      "territory": "TER-011",
+      "culture_note": "Vestimenta prática usada por viajantes e mediadores da fronteira.",
+      "inputs": [
+        {
+          "resource_id": "MAT-003",
+          "resource_name": "Couro de Manada"
+        }
+      ],
+      "produced_at": "EST-036",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_CLOTHING_ONLY",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "wardrobe_type": "Utilitário",
+      "weight_kg": 0.9,
+      "description": "Vestimenta prática usada por viajantes e mediadores da fronteira."
+    },
+    {
+      "clothing_id": "TRJ-012",
+      "name": "Uniforme de Acolhimento das Zonas de Contenção",
+      "territory": "TER-012",
+      "culture_note": "Vestimenta simples distribuída a pessoas deslocadas nas Tendas de Acolhimento.",
+      "inputs": [
+        {
+          "resource_id": "MAT-004",
+          "resource_name": "Fibra de Véu"
+        }
+      ],
+      "produced_at": "EST-041",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_CLOTHING_ONLY",
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ],
+      "wardrobe_type": "Militar",
+      "weight_kg": 0.9,
+      "description": "Vestimenta simples distribuída a pessoas deslocadas nas Tendas de Acolhimento."
+    },
+    {
+      "clothing_id": "TRJ-013",
+      "name": "Traje de Tempestade da Fortaleza do Trovão",
+      "territory": "TER-013",
+      "culture_note": "Vestimenta reforçada contra vento e chuva, usada no domínio pessoal de Serverus.",
+      "inputs": [
+        {
+          "resource_id": "FLO-009",
+          "resource_name": "Vinha do Temporal (fibra resistente)"
+        }
+      ],
+      "produced_at": "EST-042",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_CLOTHING_ONLY",
+      "currency_tags": [
+        "CUR-013",
+        "CUR-000"
+      ],
+      "wardrobe_type": "Utilitário",
+      "weight_kg": 0.9,
+      "description": "Vestimenta reforçada contra vento e chuva, usada no domínio pessoal de Serverus."
+    },
+    {
+      "clothing_id": "TRJ-014",
+      "name": "Traje de Mineiro da Cadeia de Cinzas",
+      "territory": "TER-014",
+      "culture_note": "Vestimenta de trabalho para extração próxima à Caldeira Ativa (uso diário, distinto do equipamento térmico de proteção EQP-009/010).",
+      "inputs": [
+        {
+          "resource_id": "MIN-BASALT",
+          "resource_name": "Basalto Negro (ornamentos)"
+        },
+        {
+          "resource_id": "MAT-003",
+          "resource_name": "Couro de Manada"
+        }
+      ],
+      "produced_at": "EST-051",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_CLOTHING_ONLY",
+      "currency_tags": [
+        "CUR-014",
+        "CUR-000"
+      ],
+      "wardrobe_type": "Industrial",
+      "weight_kg": 0.9,
+      "description": "Vestimenta de trabalho para extração próxima à Caldeira Ativa (uso diário, distinto do equipamento térmico de proteção EQP-009/010)."
+    },
+    {
+      "clothing_id": "TRJ-015",
+      "name": "Traje de Areia do Vale das Ruinas",
+      "territory": "TER-015",
+      "culture_note": "Vestimenta leve e envolvente usada por guias e arqueologos para protecao contra sol e areia.",
+      "inputs": [
+        {
+          "resource_id": "MAT-004",
+          "resource_name": "Fibra de Veu"
+        }
+      ],
+      "produced_at": "EST-052",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_CLOTHING_ONLY",
+      "currency_tags": [
+        "CUR-015",
+        "CUR-000"
+      ],
+      "wardrobe_type": "Utilitário",
+      "weight_kg": 0.9,
+      "description": "Vestimenta leve e envolvente usada por guias e arqueologos para protecao contra sol e areia."
+    },
+    {
+      "clothing_id": "TRJ-016",
+      "name": "Traje de Peles dos Confins de Gelo",
+      "territory": "TER-016",
+      "culture_note": "Vestimenta pesada de multiplas camadas usada por moradores do Abrigo Central contra o frio constante.",
+      "inputs": [
+        {
+          "resource_id": "MAT-003",
+          "resource_name": "Couro de Manada"
+        }
+      ],
+      "produced_at": "EST-056",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_CLOTHING_ONLY",
+      "currency_tags": [
+        "CUR-016",
+        "CUR-000"
+      ],
+      "wardrobe_type": "Utilitário",
+      "weight_kg": 0.9,
+      "description": "Vestimenta pesada de multiplas camadas usada por moradores do Abrigo Central contra o frio constante."
+    },
+    {
+      "clothing_id": "TRJ-017",
+      "name": "Traje de Ilheu Etereo",
+      "territory": "TER-017",
+      "culture_note": "Vestimenta leve e resistente ao vento, usada por navegadores que saltam entre ilhas suspensas.",
+      "inputs": [
+        {
+          "resource_id": "MAT-004",
+          "resource_name": "Fibra de Veu"
+        }
+      ],
+      "produced_at": "EST-058",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_CLOTHING_ONLY",
+      "currency_tags": [
+        "CUR-017",
+        "CUR-000"
+      ],
+      "wardrobe_type": "Utilitário",
+      "weight_kg": 0.91,
+      "description": "Vestimenta leve e resistente ao vento, usada por navegadores que saltam entre ilhas suspensas."
+    },
+    {
+      "clothing_id": "TRJ-018",
+      "name": "Traje de Pressao da Fossa Abissal",
+      "territory": "TER-018",
+      "culture_note": "Vestimenta selada usada por engenheiros e mergulhadores para suportar a pressao extrema do abismo.",
+      "inputs": [
+        {
+          "resource_id": "MAT-003",
+          "resource_name": "Couro de Manada"
+        },
+        {
+          "resource_id": "MIN-TITAN",
+          "resource_name": "Titanita Cinzenta"
+        }
+      ],
+      "produced_at": "EST-063",
+      "price_tier": "MEDIO",
+      "safety": "FICTIONAL_CLOTHING_ONLY",
+      "currency_tags": [
+        "CUR-018",
+        "CUR-000"
+      ],
+      "wardrobe_type": "Industrial",
+      "weight_kg": 0.91,
+      "description": "Vestimenta selada usada por engenheiros e mergulhadores para suportar a pressao extrema do abismo."
+    },
+    {
+      "clothing_id": "TRJ-019",
+      "name": "Traje de Selva da Mata Perdida",
+      "territory": "TER-019",
+      "culture_note": "Vestimenta leve e respiravel usada por guias e pesquisadores para travessia da selva umida.",
+      "inputs": [
+        {
+          "resource_id": "MAT-004",
+          "resource_name": "Fibra de Veu"
+        }
+      ],
+      "produced_at": "EST-064",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_CLOTHING_ONLY",
+      "currency_tags": [
+        "CUR-019",
+        "CUR-000"
+      ],
+      "wardrobe_type": "Utilitário",
+      "weight_kg": 0.91,
+      "description": "Vestimenta leve e respiravel usada por guias e pesquisadores para travessia da selva umida."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+[
+ {
+  "id": "Nativos",
+  "name": "Nativos",
+  "desc": "Arquétipo de combatente próximo, formado por quem vive fora dos grandes centros industriais e depende de lâminas e ferramentas adaptadas para sobreviver.",
+  "fam": "Corpo-a-corpo",
+  "pref": "NAT",
+  "attrs": {
+   "FOR": 54,
+   "AGI": 44,
+   "VIT": 33,
+   "TEC": 35,
+   "MAG": 32,
+   "DEF": 26
+  },
+  "hp": 28
+ },
+ {
+  "id": "Soldados",
+  "name": "Soldados",
+  "desc": "Arquétipo de combatente organizado e equipado — guardas, mercenários e equipes de contenção que dependem do sistema de armamentos de Stellar (ART-004) para acesso a fuzis, explosivos e equipamento não letal.",
+  "fam": "Armas de fogo e equipamento tático",
+  "pref": "SOL",
+  "attrs": {
+   "FOR": 54,
+   "AGI": 49,
+   "VIT": 46,
+   "TEC": 61,
+   "MAG": 49,
+   "DEF": 28
+  },
+  "hp": 30
+ },
+ {
+  "id": "Androids",
+  "name": "Androids",
+  "desc": "Corpos sintéticos autônomos, sem precedente de lore antes desta proposta — ver perfil completo de facção em FAC-090 (renumerado de FAC-011 após colisão com o código oficial do MASTER V2.0.1).",
+  "fam": "Tecnológica",
+  "pref": "AND",
+  "attrs": {
+   "FOR": 62,
+   "AGI": 45,
+   "VIT": 41,
+   "TEC": 66,
+   "MAG": 5,
+   "DEF": 32
+  },
+  "hp": 28
+ },
+ {
+  "id": "Magos",
+  "name": "Magos",
+  "desc": "Arquétipo de combatente que canaliza a Corrente Planetária por método estruturado (fórmula, runa, vínculo ou instinto — MAG-001) para produzir efeitos de combate.",
+  "fam": "Mágica",
+  "pref": "MAG",
+  "attrs": {
+   "FOR": 49,
+   "AGI": 42,
+   "VIT": 37,
+   "TEC": 22,
+   "MAG": 68,
+   "DEF": 33
+  },
+  "hp": 28
+ },
+ {
+  "id": "Corrompidos",
+  "name": "Corrompidos",
+  "desc": "Especialistas da Vigilia Radicular (FAC-004) que passam por exposicao controlada e voluntaria a material da Raiz Profunda (COR-001, estudado sob contencao) para manejar armas e habilidades derivadas da corrupcao sem sucu",
+  "fam": "Corrupcao controlada (Extensoes Radiculares + Projeteis de Esporo)",
+  "pref": "COR",
+  "attrs": {
+   "FOR": 52,
+   "AGI": 45,
+   "VIT": 42,
+   "TEC": 0,
+   "MAG": 5,
+   "DEF": 22
+  },
+  "hp": 28
+ }
+]

@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.11.0",
+  "record_id": "EST-INDEX-DEV-V1.11",
+  "title": "Índice de Construções/Estabelecimentos (cobertura total + indústrias de veículos)",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "r2_compatibility": "Categoria 100% nova (sem precedente R2). Cada EST-XXX referencia uma localidade (LOC-XXX/CIT-XXX) já existente; nenhuma localidade nova foi criada aqui.",
+  "note_incomplete": "43 de 43 localidades cobertas — cobertura total. CIT-002 Estação Oriental teve seu território-pai resolvido em CIT-002_TERRITORY_LINK_DEV_V1_0.json (fase 29) e recebeu EST-045. EST-046/047/048 (fase 39) são 2ª construção em localidades que já tinham EST — Lúminor/Navyr/Altavela ganharam indústria de veículos. EST-049 (fase 44) cobre a 1a localidade do novo TER-014 Cadeia de Cinzas. EST-050/051 (fase 45) cobrem as 3 localidades de TER-014. EST-052/053/054 (fase 48) cobrem as 3 localidades do novo TER-015 Vale das Ruinas. EST-055/056/057 (fase 49) cobrem as 3 localidades do novo TER-016 Confins de Gelo. EST-058/059/060 (fase 50) cobrem as 3 localidades do novo TER-017 Arquipelago Etereo. EST-061/062/063 (fase 51) cobrem as 3 localidades do novo TER-018 Fossa Abissal. EST-064/065/066 (fase 52) cobrem as 3 localidades do novo TER-019 Mata Perdida - ultimo territorio desta serie (19 no total). EST-067/EST-068 (fase 53) sao entrepostos de rota criados so onde nenhuma construcao comercial/loja existia no territorio (TER-013, TER-005).",
+  "building_types": [
+    "COMERCIAL",
+    "INDUSTRIAL",
+    "RESIDENCIAL",
+    "ACAMPAMENTO",
+    "MILITAR",
+    "LOJA",
+    "INSTITUCIONAL"
+  ],
+  "by_type": {
+    "COMERCIAL": [
+      "EST-001",
+      "EST-002",
+      "EST-014",
+      "EST-017",
+      "EST-023",
+      "EST-036",
+      "EST-051",
+      "EST-058",
+      "EST-064",
+      "EST-067",
+      "EST-068"
+    ],
+    "INDUSTRIAL": [
+      "EST-003",
+      "EST-004",
+      "EST-015",
+      "EST-019",
+      "EST-031",
+      "EST-035",
+      "EST-037",
+      "EST-044",
+      "EST-046",
+      "EST-047",
+      "EST-048",
+      "EST-049",
+      "EST-055",
+      "EST-059",
+      "EST-061"
+    ],
+    "RESIDENCIAL": [
+      "EST-005",
+      "EST-006",
+      "EST-022",
+      "EST-027",
+      "EST-030",
+      "EST-050",
+      "EST-054",
+      "EST-056",
+      "EST-062"
+    ],
+    "ACAMPAMENTO": [
+      "EST-007",
+      "EST-008",
+      "EST-038",
+      "EST-041",
+      "EST-052",
+      "EST-060"
+    ],
+    "MILITAR": [
+      "EST-009",
+      "EST-010",
+      "EST-039",
+      "EST-040",
+      "EST-043",
+      "EST-045",
+      "EST-057",
+      "EST-066"
+    ],
+    "LOJA": [
+      "EST-011",
+      "EST-012"
+    ],
+    "INSTITUCIONAL": [
+      "EST-013",
+      "EST-016",
+      "EST-018",
+      "EST-020",
+      "EST-021",
+      "EST-024",
+      "EST-025",
+      "EST-026",
+      "EST-028",
+      "EST-029",
+      "EST-032",
+      "EST-033",
+      "EST-034",
+      "EST-042",
+      "EST-053",
+      "EST-063",
+      "EST-065"
+    ]
+  },
+  "total_establishments": 68,
+  "coverage": {
+    "localities_total": 61,
+    "localities_covered": 61,
+    "pending": []
+  },
+  "runtime_field_mirroring_note": "economic_role{is_vendor,sells,produces,regulation_factor} ecoa os nomes de campo já usados em commerce_system.py (vendor.location_ref/name/regulation_factor) para facilitar integração futura — nenhuma integração real de runtime foi feita aqui."
+}

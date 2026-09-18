@@ -1,0 +1,10 @@
+{
+  "record_id": "VARGA-DISPLACED-PROTAGONIST-PROFILE-V1",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "CUSTOM_PLAYER_LOCAL_START",
+  "campaign_law": "STELLAR_PLAYER_CAMPAIGN_LAW_V1_0",
+  "identity": {"role":"displaced person seeking conditional shelter","named_identity":"PLAYER_CUSTOMIZABLE","r2_relation":"NO_PREEXISTING_R2_TIE","authority":"NONE"},
+  "starting_conditions": ["needs shelter", "accepts a short local contract", "earns trust through evidence and conduct", "cannot replace Kenua or alter Season 1"],
+  "allowed_growth": ["contextual reputation", "practical skill use", "incomplete local bonds", "recoverable incapacity"],
+  "prohibitions": ["NO_KENUA_IDENTITY", "NO_R2_ARTIFACT_OWNERSHIP", "NO_SEALED_EVENT_ACCESS", "NO_CANON_PROMOTION_FROM_PLAYER_STATE"]
+}

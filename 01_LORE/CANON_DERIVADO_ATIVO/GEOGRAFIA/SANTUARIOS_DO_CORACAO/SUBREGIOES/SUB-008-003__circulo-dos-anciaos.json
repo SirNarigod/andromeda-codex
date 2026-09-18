@@ -1,0 +1,11 @@
+{
+  "record_id": "SUB-008-003", "record_kind": "DERIVED_SUBREGION_PROFILE", "authority": "CANON_DERIVADO_ATIVO", "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Círculo dos Anciãos", "parent_political_unit": "TER-008",
+  "provenance": {"approval": "GAMEPLAY_DERIVED_DEV_SOURCE", "r2_anchors": ["TER-008", "genes-arvath"], "compatibility": "Camada administrativa e narrativa local; não cria fronteira, cidade, soberania ou nova autoridade."},
+  "function": "Conselho descentralizado de anciãos que coordena os santuários dispersos.",
+  "locality_references": ["LOC-008-003 Círculo Ancião"],
+  "permitted_catalog_links": {"npc_roles": [], "professions": [], "encounters": [], "resources": []},
+  "local_conflicts": ["consenso lento entre santuários distantes versus urgência de decisão coletiva"],
+  "prohibitions": ["NO_NEW_SOVEREIGNTY", "NO_AUTOMATIC_KENUA_SCENE", "NO_R2_EPISODE_REWRITE", "NO_FIXED_BORDER_COORDINATE"],
+  "story_generators": ["Um santuário distante age sozinho diante de uma ameaça antes que o círculo consiga deliberar."]
+}

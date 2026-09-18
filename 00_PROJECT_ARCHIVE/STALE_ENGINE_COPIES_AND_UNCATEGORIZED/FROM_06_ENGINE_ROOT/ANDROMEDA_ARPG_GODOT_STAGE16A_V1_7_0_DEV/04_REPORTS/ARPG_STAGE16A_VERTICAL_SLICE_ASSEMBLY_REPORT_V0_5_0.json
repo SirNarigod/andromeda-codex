@@ -1,0 +1,36 @@
+{
+  "record_id": "ARPG-STAGE16A-VERTICAL-SLICE-ASSEMBLY-REPORT-V0.5.0",
+  "stage": "16A/23",
+  "status": "PASS_PARTIAL_PRE_GODOT",
+  "block": "VERTICAL_SLICE_RUNTIME_ASSEMBLY",
+  "implemented": [
+    "IntegratedARPGEngineV16A",
+    "VerticalSliceAssemblyCore",
+    "persistent per-profile Auto Pickup preference",
+    "terrain/load traversal cost applied to existing Living movement stamina",
+    "Stage09 GROUND_LOOT delivery mode with legacy INVENTORY compatibility",
+    "enemy defeat to explicit physical drop channel",
+    "Ground Loot save/restore through Stage15 SQLite snapshot",
+    "realtime dialogue plus minimal HUD assembly",
+    "quest/economy/combat/death-recovery cycle integration"
+  ],
+  "own_tests": {"unit_and_integration":143,"stress":20,"status":"PASS"},
+  "regressions": {
+    "stage09_gathering":20,
+    "stage15_validation":24,
+    "stage15_stress":23,
+    "stage13_economy":22,
+    "stage12_narrative":21,
+    "stage03_combat":14,
+    "status":"PASS"
+  },
+  "corrections": [
+    "Stage09 physical production no longer needs direct inventory delivery in Stage16A",
+    "terrain/load traversal now reaches the existing runtime stamina authority",
+    "Auto Pickup preference is persistent per player profile",
+    "Ground Loot unit harness closes SQLite connections cleanly"
+  ],
+  "canon_mutations":0,
+  "backup_authorized":false,
+  "godot_gate":"PENDING_PC_ON_AND_EDITOR_BRIDGE_AVAILABLE"
+}

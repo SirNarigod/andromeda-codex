@@ -1,0 +1,38 @@
+{
+  "est_id": "EST-064",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Posto do Dossel",
+  "building_type": "COMERCIAL",
+  "parent_locality": "LOC-019-001",
+  "parent_subregion": "SUB-019-001",
+  "parent_political_unit": "TER-019",
+  "function": "Ponto de comercio e apoio para caravanas que atravessam o Dossel Verde.",
+  "economic_role": {
+    "is_vendor": true,
+    "sells": [
+      "suprimentos de travessia"
+    ],
+    "produces": [],
+    "regulation_factor": 0.3
+  },
+  "capacity": {
+    "jobs": 4,
+    "residents": 6
+  },
+  "professions_linked": [
+    "JOB-003 Guia, cacador e rastreador"
+  ],
+  "notable_link": "TER-019 Mata Perdida (fase 52)",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "MADEIRA_E_ALVENARIA",
+    "flammability": "ALTA",
+    "recovery_days": 7
+  }
+}

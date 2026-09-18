@@ -1,0 +1,5 @@
+[gd_scene format=3]
+
+[node name="root" type="Node3D" unique_id=508825542]
+
+[node name="TestBox" type="MeshInstance3D" parent="." unique_id=195435795]

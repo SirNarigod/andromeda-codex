@@ -1,0 +1,27 @@
+{
+  "loc_id": "LOC-019-001",
+  "record_id": "LOC-019-001",
+  "name": "Posto do Dossel",
+  "parent_subregion": "SUB-019-001",
+  "function": "Ponto de comércio e apoio para travessia da selva.",
+  "notable_link": "TER-019 Mata Perdida (fase 52, território novo)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "settlement_tier": "POSTO",
+  "history": "Construído literalmente entre os galhos superiores das árvores mais antigas da Mata Perdida, o posto começou como plataforma de observação usada por batedores tentando mapear a selva de cima antes de arriscar a travessia por baixo — o solo da mata é notoriamente traiçoeiro demais pra confiar sem primeiro estudar o terreno do alto. Cresceu conforme viajantes descobriram que descansar acima do dossel, longe do que se move no chão, era consideravelmente mais seguro que qualquer alternativa terrestre.",
+  "sensory": "Plataformas de madeira amarradas entre galhos grossos se conectam por pontes de corda que balançam a cada passo, altas o bastante que o chão da selva desaparece de vista sob uma camada espessa de folhagem. O som da mata sobe de baixo em camadas — insetos primeiro, depois chamados de aves, ocasionalmente algo maior que ninguém consegue identificar só pelo som. À noite, luzes de resina penduradas marcam o caminho entre plataformas, e cair de uma ponte no escuro é o medo mais comum entre viajantes de primeira viagem.",
+  "figures": [
+    {
+      "role": "Batedora de Copas",
+      "name": "Ilma Galhoalto",
+      "note": "Conhece cada plataforma e ponte do posto de memória, tendo ajudado a construir metade delas com as próprias mãos — orienta viajantes sobre rotas seguras de travessia terrestre baseada em observação constante do dossel, mas admite abertamente que a mata muda rápido demais pra qualquer mapa ficar atualizado por muito tempo."
+    },
+    {
+      "role": "Guia contratado",
+      "name": "Kester Trilhaperdida",
+      "note": "Vende serviço de guia terrestre pra quem insiste em atravessar por baixo, apesar dos avisos de Ilma — perdeu um cliente numa travessia recente, algo que nunca tinha acontecido antes, e vem escondendo isso do resto do posto por vergonha e medo de perder reputação."
+    }
+  ],
+  "hook": "Uma expedição maior que o normal está se preparando pra atravessar a mata por baixo, contratando Kester apesar do boato crescente sobre o cliente perdido — Ilma está tentando convencê-los a considerar uma rota alternativa pelo dossel, mas isso significaria contradizer publicamente o guia que a expedição já contratou.",
+  "detail": "Toda plataforma nova construída no posto passa por um teste simples antes de ser considerada segura: três pessoas pulando nela ao mesmo tempo, sem sinal de rachadura na madeira. Ilma insiste pessoalmente em cada teste, mesmo décadas depois de o método provar sua eficácia repetidamente.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION"]
+}

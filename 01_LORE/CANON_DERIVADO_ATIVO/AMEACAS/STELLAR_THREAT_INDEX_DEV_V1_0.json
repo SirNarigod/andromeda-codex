@@ -1,0 +1,164 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-THREAT-INDEX-DEV-V1.0",
+  "title": "Índice de Ameaças — consolida referências já existentes, sem criar cânone novo",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "r2_guard": "COR-001 Raiz Profunda é a ÚNICA ameaça R2 confirmada (categoria 'COR' do índice mestre CODEX_R2_CANONICAL.json) — nenhuma outra ameaça R2 existe. Este índice não cria nenhuma ameaça nova nem edita COR-001; só reúne, num único catálogo de gameplay, referências a conteúdo já catalogado (bestiário hostil, recursos perigosos, facção/território/construções/profissões de contenção). 01_LORE/CANON_R2/AMEACAS_E_INIMIGOS/ permanece vazia de propósito — não existe categoria R2 'AME', então nada foi criado lá.",
+  "master_threat": {
+    "ref": "COR-001",
+    "title": "Raiz Profunda",
+    "category": "COR (Corrompidos)",
+    "canonical_home": "01_LORE/CANON_R2/ECOLOGIA/CORROMPIDOS/COR-001__raiz-profunda.json",
+    "r2_note": "Cânone R2 imutável — organismo invasor implantado por Votakhel, escala de combate 6x planetário. Não editado nem expandido aqui."
+  },
+  "hostile_creatures": [
+    {
+      "creature_id": "CRI-010",
+      "name": "Vespa-de-Vidro",
+      "combat_tier": "BAIXO",
+      "source": "MAR_BESTIARY_GAMEPLAY_STATS_DEV_V1_0.json"
+    },
+    {
+      "creature_id": "CRI-011",
+      "name": "Besouro-Rubro",
+      "combat_tier": "BAIXO",
+      "source": "MAR_BESTIARY_GAMEPLAY_STATS_DEV_V1_0.json"
+    },
+    {
+      "creature_id": "CRI-012",
+      "name": "Louva-Fenda",
+      "combat_tier": "MÉDIO",
+      "source": "MAR_BESTIARY_GAMEPLAY_STATS_DEV_V1_0.json"
+    },
+    {
+      "creature_id": "CRI-013",
+      "name": "Mandíbula-de-Névoa",
+      "combat_tier": "ALTO",
+      "source": "MAR_BESTIARY_GAMEPLAY_STATS_DEV_V1_0.json"
+    },
+    {
+      "creature_id": "CRI-014",
+      "name": "Salamandra de Cinzas",
+      "combat_tier": "BAIXO",
+      "source": "MAR_BESTIARY_GAMEPLAY_STATS_DEV_V1_0.json (fase 46)"
+    },
+    {
+      "creature_id": "CRI-015",
+      "name": "Escorpiao de Vidro-de-Areia",
+      "combat_tier": "BAIXO",
+      "source": "MAR_BESTIARY_GAMEPLAY_STATS_DEV_V1_0.json (fase 48)"
+    },
+    {
+      "creature_id": "CRI-016",
+      "name": "Lobo de Gelo",
+      "combat_tier": "MEDIO",
+      "source": "MAR_BESTIARY_GAMEPLAY_STATS_DEV_V1_0.json (fase 49)"
+    },
+    {
+      "creature_id": "CRI-017",
+      "name": "Serpente de Nuvem",
+      "combat_tier": "MEDIO",
+      "source": "MAR_BESTIARY_GAMEPLAY_STATS_DEV_V1_0.json (fase 50)"
+    },
+    {
+      "creature_id": "CRI-018",
+      "name": "Devorador das Trincheiras",
+      "combat_tier": "ALTO",
+      "source": "MAR_BESTIARY_GAMEPLAY_STATS_DEV_V1_0.json (fase 51)"
+    },
+    {
+      "creature_id": "CRI-019",
+      "name": "Serpente Esmeralda",
+      "combat_tier": "MEDIO",
+      "source": "MAR_BESTIARY_GAMEPLAY_STATS_DEV_V1_0.json (fase 52)"
+    },
+    {
+      "creature_id": "CRI-020",
+      "name": "Enraizado de Contencao",
+      "combat_tier": "ALTO",
+      "source": "MAR_BESTIARY_GAMEPLAY_STATS_DEV_V1_0.json (fase 58, corrompida pela Raiz Profunda)"
+    },
+    {
+      "creature_id": "CRI-021",
+      "name": "Sombra-Raiz",
+      "combat_tier": "MEDIO",
+      "source": "MAR_BESTIARY_GAMEPLAY_STATS_DEV_V1_0.json (fase 58, corrompida pela Raiz Profunda)"
+    },
+    {
+      "creature_id": "CRI-022",
+      "name": "Guardiao de Galhos",
+      "combat_tier": "ALTO",
+      "source": "MAR_BESTIARY_GAMEPLAY_STATS_DEV_V1_0.json (fase 58, corrompida pela Raiz Profunda)"
+    },
+    {
+      "creature_id": "CRI-023",
+      "name": "Verme-Raiz",
+      "combat_tier": "MEDIO",
+      "source": "MAR_BESTIARY_GAMEPLAY_STATS_DEV_V1_0.json (fase 58, corrompida pela Raiz Profunda)"
+    },
+    {
+      "creature_id": "CRI-024",
+      "name": "Sentinela Espinhosa",
+      "combat_tier": "MEDIO",
+      "source": "MAR_BESTIARY_GAMEPLAY_STATS_DEV_V1_0.json (fase 58, corrompida pela Raiz Profunda)"
+    },
+    {
+      "creature_id": "CRI-025",
+      "name": "Espectro de Cinza-Raiz",
+      "combat_tier": "MEDIO",
+      "source": "MAR_BESTIARY_GAMEPLAY_STATS_DEV_V1_0.json (fase 58, corrompida pela Raiz Profunda)"
+    },
+    {
+      "creature_id": "CRI-026",
+      "name": "Raiz Gelida",
+      "combat_tier": "ALTO",
+      "source": "MAR_BESTIARY_GAMEPLAY_STATS_DEV_V1_0.json (fase 58, corrompida pela Raiz Profunda)"
+    }
+  ],
+  "biological_hazards": [
+    {
+      "resource_id": "RES-009",
+      "name": "Toxina de Vespa-de-Vidro",
+      "category": "BIOLOGICAL_HAZARD",
+      "legitimate_use": "insumo de MED-002 Antitóxico de Vidro (nunca loot direto)"
+    },
+    {
+      "resource_id": "RES-010",
+      "name": "Secreção de Besouro-Rubro",
+      "category": "BIOLOGICAL_HAZARD",
+      "legitimate_use": "insumo de MED-003 Cataplasma de Besouro (nunca loot direto)"
+    }
+  ],
+  "containment_faction": {
+    "ref": "FAC-004",
+    "title": "Vigília Radicular",
+    "note": "Organização de contenção R2 confirmada, comandada por Ishara Veyn; área de atuação já ligada a TER-012."
+  },
+  "containment_territory": {
+    "ref": "TER-012",
+    "title": "Zonas de Contenção"
+  },
+  "containment_establishments": [
+    {
+      "est_id": "EST-009",
+      "name": "Guarnição de Contenção"
+    },
+    {
+      "est_id": "EST-040",
+      "name": "Posto Avançado do Perímetro"
+    }
+  ],
+  "containment_professions": [
+    {
+      "job_ref": "JOB-012",
+      "title": "Especialista em contenção"
+    },
+    {
+      "job_ref": "JOB-015",
+      "title": "Guarda e resposta a risco"
+    }
+  ],
+  "root_corruption_gate_ref": "01_LORE/CANON_DERIVADO_ATIVO/CORRUPCAO/STELLAR_ROOT_CORRUPTION_GATE_DEV_V1_0.json (fase 57) - localizacao/escala oficial da corrupcao ativa de COR-001 em 842 EC (11/60 subregioes, fase Alimentacao Silenciosa->Corrupcao).",
+  "root_corrupted_variants_ref": "MAR_BESTIARY_VARIANTS_DEV_V1_0.json#CRI-012-CORROMPIDA,CRI-013-CORROMPIDA e FLORA_VARIANTS_DEV_V1_0.json#FLO-007/002/006-CORROMPIDA (fase 58)",
+  "root_unique_resources_ref": "STELLAR_CORRUPTED_RESOURCES_DEV_V1_0.json (fase 58) - 4 recursos unicos, nunca fora das 10 subregioes corrompidas."
+}

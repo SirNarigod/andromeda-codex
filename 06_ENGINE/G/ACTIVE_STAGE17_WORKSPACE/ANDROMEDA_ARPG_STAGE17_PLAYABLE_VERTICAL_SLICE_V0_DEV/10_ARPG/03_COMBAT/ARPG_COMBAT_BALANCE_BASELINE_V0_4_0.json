@@ -1,0 +1,39 @@
+{
+  "record_id": "ARPG-COMBAT-BALANCE-BASELINE-V0.4.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "stage": "03/18",
+  "version": "V0.4.0",
+  "authority": "GAMEPLAY_DERIVED_NOT_CANON",
+  "purpose": "Pre-item/pre-skill combat baseline; subject to Stage16 global balance.",
+  "damage_types": [
+    "PHYSICAL",
+    "FIRE",
+    "COLD",
+    "LIGHTNING",
+    "TOXIC",
+    "ARCANE"
+  ],
+  "basic_attack": {
+    "range_m": 2.75,
+    "style": "BASIC_ATTACK_PLACEHOLDER"
+  },
+  "caps": {
+    "resistance_max_pct": 75.0,
+    "resistance_min_pct": -50.0,
+    "armor_mitigation_max_pct": 75.0,
+    "hit_chance_min_pct": 20.0,
+    "hit_chance_max_pct": 98.0,
+    "crit_chance_max_pct": 50.0,
+    "status_duration_max_s": 60.0,
+    "status_dps_max": 10000.0
+  },
+  "features": {
+    "pvp_enabled": false,
+    "equipment_modifiers": "DEFERRED_STAGE05",
+    "skill_modifiers": "DEFERRED_STAGE07",
+    "hostility_classification": "DEFERRED_STAGE08",
+    "permanent_enemy_death": "DEFERRED_STAGE08_10",
+    "respawn": "DEFERRED_STAGE13"
+  },
+  "art_dependency": "NONE"
+}

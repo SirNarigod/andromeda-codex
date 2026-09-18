@@ -1,0 +1,74 @@
+{
+  "record_id": "MEMORY-KNOWLEDGE-RELATIONSHIP-REPUTATION-CONTRACT-V1.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "module": "LIVING SIMULATION ENGINE",
+  "stage": "ETAPA_06_MEMORY_KNOWLEDGE_RELATIONSHIP_REPUTATION",
+  "version": "V1.0",
+  "baseline": {
+    "master_version": "V2.0.1",
+    "release_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "authority_mode": "READ_ONLY"
+  },
+  "authority_boundary": {
+    "world_truth": "LivingRuntime remains sole authoritative world-state source",
+    "memory": "append-only subjective evidence; may be correct, false, incomplete or hearsay",
+    "knowledge": "agent-local materialized belief assembled from immutable claims",
+    "llm": "cannot mark claims VERIFIED_TRUE/VERIFIED_FALSE and cannot mutate world truth",
+    "social_state": "relationship/reputation changes are runtime social state, never canon writes"
+  },
+  "memory": {
+    "types": ["EVENT", "OBSERVATION", "INTERACTION", "RUMOR", "INFERENCE", "SYSTEM"],
+    "persistence": ["STANDARD", "IMPORTANT", "PERMANENT"],
+    "immutable": true,
+    "direct_event_idempotency": "one linked event memory per agent/world",
+    "recall": "ranked by salience, emotion, confidence and time decay; storage is not deleted by decay"
+  },
+  "knowledge": {
+    "truth_statuses": ["UNKNOWN", "VERIFIED_TRUE", "VERIFIED_FALSE", "CONTESTED"],
+    "verified_authority_sources": ["DIRECT_EVENT", "SYSTEM_VERIFICATION"],
+    "hearsay_rule": "COMMUNICATION never promotes truth to VERIFIED_TRUE",
+    "independent_evidence": "confidence combines by independent origin; same-origin echoes do not amplify",
+    "verified_truth_conflict": "fail closed",
+    "materialization": "knowledge_current replayable from immutable knowledge_claims"
+  },
+  "relationships": {
+    "directed": true,
+    "dimensions": ["trust", "affinity", "fear", "respect", "obligation"],
+    "ranges": {"trust": [-100,100], "affinity": [-100,100], "fear": [0,100], "respect": [-100,100], "obligation": [-100,100]},
+    "evidence": "append-only relationship_events",
+    "materialized_view": "relationships_current",
+    "narrative_protection": "holder protection.relationship_change BLOCKED/STORY_AUTHORITY_ONLY prevents mutation"
+  },
+  "reputation": {
+    "range": [-100,100],
+    "scopes": ["GLOBAL", "FACTION", "SETTLEMENT", "PROFESSION", "REGION", "INSTITUTION"],
+    "evidence": "append-only reputation_events",
+    "materialized_view": "reputation_current"
+  },
+  "rumors": {
+    "max_hops": 4,
+    "provenance_cycle_blocked": true,
+    "confidence": "source_confidence × listener_trust_factor × 0.85 per hop",
+    "truth_authority": "always UNKNOWN when received through COMMUNICATION unless later separately verified",
+    "offline": "blocked by default in ROUTINE_OFFLINE; only explicit routine_safe transmission may continue",
+    "echo_control": "origin_claim_id prevents same-origin confidence amplification"
+  },
+  "agent_brain_integration": {
+    "method": "project social state as MEMORY perception",
+    "facts": ["relationship", "reputation", "knowledge", "flags"],
+    "decision_rule": "AgentBrain may change behavior from projected social memory but still cannot mutate world directly"
+  },
+  "integrity": {
+    "append_only_hashes": true,
+    "materialized_replay": ["knowledge", "relationships", "reputation"],
+    "fail_closed": "social integrity failure can place world in CORRUPT_BLOCKED"
+  },
+  "governance": {
+    "canon_mutations": 0,
+    "master_writes": 0,
+    "new_canonical_namespaces": 0,
+    "runtime_ids_only": true,
+    "backup_created": false
+  },
+  "next_stage": "ETAPA_07_ANIMAL_CREATURE_BRAIN_AND_ECOLOGICAL_BEHAVIOR"
+}

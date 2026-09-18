@@ -1,0 +1,30 @@
+{
+  "loc_id": "LOC-020-005",
+  "record_id": "LOC-020-005",
+  "name": "Estufa da Continuidade",
+  "parent_subregion": "SUB-020-003",
+  "function": "Estufa de alimento, tecido médico e suporte vital.",
+  "notable_link": "TER-020 Nérion — Região Autônoma dos Despertos",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "settlement_tier": "COMPLEXO",
+  "history": "Foi criada para provar que Androids não precisavam abandonar o cuidado com organismos para construir a própria sociedade.",
+  "figures": [
+    {
+      "name": "M-04 Orvalho",
+      "note": "médica que trata qualquer consciência como paciente"
+    },
+    {
+      "name": "Juno-2",
+      "note": "técnica que raciona energia sem consenso"
+    }
+  ],
+  "hook": "Uma cultura de tecido nervoso reage a uma voz que nenhum sistema reconhece.",
+  "secondary_hook": "A disputa local revela uma escolha difícil entre autonomia, segurança e memória.",
+  "detail": "Água de suporte vital é distribuída por necessidade clínica, não por classe social.",
+  "prohibitions": [
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION",
+    "NO_NAME_FOR_MYSTERIOUS_MAGE_YET"
+  ],
+  "sensory": "Folhas translúcidas brilham sobre tubos de água e polinizadores mecânicos."
+}

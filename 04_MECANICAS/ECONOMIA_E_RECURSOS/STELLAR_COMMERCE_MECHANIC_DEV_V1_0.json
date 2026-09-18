@@ -1,0 +1,19 @@
+{
+  "record_id": "STELLAR-COMMERCE-MECHANIC-DEV-V1.0",
+  "title": "Mecânica de Compra e Venda — como o preço final é composto",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "r2_guard": "STELLAR_ECONOMY_ECOLOGY_TIME_LAW_V1_1.json declara explicitamente invariante 'PRICES_CURRENCY_STOCKS_AND_INVENTORIES_ARE_RUNTIME_ONLY' e proibição 'NO_CANONICAL_PRICE_OR_CURRENCY_INFERENCE' - ou seja, NENHUM preço numérico fixo ou nome de moeda pode ser tratado como fato canônico R2. Tudo neste arquivo é GAMEPLAY_DERIVED_DEV_SOURCE (mecânica de runtime/simulação), nunca cânone confirmado, e nenhum valor é um preço fixo - são tiers qualitativos e regras de cálculo, exatamente como já usado em 'price_tier' em toda a economia (comida, munição, runas, armadura etc.).",
+  "formula_qualitative": "O preço final de um item nunca é um número fixo - é o tier de preço base do item, ajustado para cima ou para baixo por três fatores: (1) o quão formal é o vendedor - um comércio institucional/tabelado quase não negocia, um comércio informal de fronteira barganha livremente; (2) a força da moeda local - em território de moeda fraca, o preço nominal tende a subir um tier; (3) a escassez do território - quando ela está alta, itens de comida e cura sobem um tier de preço. O resultado continua sendo um tier qualitativo (BAIXO/MÉDIO/ALTO/MUITO ALTO), nunca um preço numérico fixo.",
+  "barter_rule": "Em comércio bem informal - o caso mais comum na fronteira, onde não há tabelamento - a transação pode dispensar moeda inteiramente e virar troca direta (item por item), sem conversão de tier: decisão do vendedor, não uma regra fixa de preço.",
+  "interaction_link": "A ação de comprar/vender usa o verbo Usar sobre um balcão, em qualquer construção reconhecida como ponto de venda.",
+  "worked_example": {
+    "scenario": "Comprar 1 unidade de Antitóxico de Vidro (tier de preço base MÉDIO) na Enfermaria Principal, em Rubra-Viva",
+    "steps": [
+      "tier de preço base do Antitóxico de Vidro = MÉDIO",
+      "a Enfermaria é um comércio institucional e tabelado -> preço permanece fixo, sem desconto de barganha",
+      "a moeda local de Rubra-Viva, a Gota Selada, tem força mediana -> sem ajuste",
+      "a escassez de Rubra-Viva é baixa -> sem ajuste no preço de itens de cura",
+      "tier de preço final = MÉDIO, pago em Gota Selada (ou em Stavias, aceita em qualquer lugar), sem opção de troca direta"
+    ]
+  }
+}

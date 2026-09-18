@@ -1,0 +1,38 @@
+{
+  "canon_mutations": 0,
+  "generated_at": "2026-08-18T22:02:13.016529+00:00",
+  "harness_events": [
+    {
+      "classification": "HARNESS_TIMEOUT_RESOLVED",
+      "event": "Initial unit batch reached cross-world determinism test after 19 consecutive passes and exceeded cumulative execution limit.",
+      "functional_mutation": false,
+      "id": "S11-C01",
+      "resolution": "Determinism invariant kept but moved to stable-ref test excluding runtime UUID; complete unit suite reran 21/21 PASS in ~33s."
+    },
+    {
+      "classification": "GROUPED_RUNNER_TIMEOUT_RESOLVED",
+      "event": "Validation+stress chained invocation exceeded executor limit.",
+      "functional_mutation": false,
+      "id": "S11-C02",
+      "resolution": "Validation and stress rerun separately; 36/36 and 39/39 PASS."
+    }
+  ],
+  "open_failures": 0,
+  "record_id": "ARPG-STAGE11-TEST-SUMMARY-V1.2.0",
+  "regressions_current_tree": {
+    "country_v15": "24/24 PASS",
+    "master": "393/393 PASS",
+    "stage05": "22/22 PASS",
+    "stage07": "17/17 PASS",
+    "stage09": "19/19 functional + 1/1 persistence PASS",
+    "stage10": "18/18 functional + 1/1 persistence PASS"
+  },
+  "stage": "11/23",
+  "stage11": {
+    "stress": "39/39 PASS",
+    "unit_and_persistence": "21/21 PASS",
+    "validation": "36/36 PASS"
+  },
+  "status": "PASS",
+  "version": "V1.2.0"
+}

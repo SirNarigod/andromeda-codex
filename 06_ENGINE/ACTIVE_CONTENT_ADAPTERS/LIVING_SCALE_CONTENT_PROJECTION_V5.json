@@ -1,0 +1,18 @@
+{
+  "record_id": "LIVING_SCALE_CONTENT_PROJECTION_V5",
+  "status": "ACTIVE_ENGINE_NEUTRAL_READ_ONLY",
+  "supersedes": "LIVING_SCALE_CONTENT_PROJECTION_V4",
+  "base_projection": "LIVING_SCALE_CONTENT_PROJECTION_V4.json",
+  "routing_registry": "01_LORE/CONTENT_ROUTING_REGISTRY_V5.json",
+  "causality_overlay": {
+    "law": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_CAUSALITY_LAW_V1_1.json",
+    "aggregation": "PERMITTED_LOCAL_AND_REGIONAL_TRACES_ONLY",
+    "blocked": ["PLANETARY_OR_NARRATIVE_ESCALATION_WITHOUT_GATE", "SOVEREIGNTY_INFERENCE_FROM_INFLUENCE", "CANON_PROMOTION_FROM_RUNTIME"]
+  },
+  "autonomy_overlay": {
+    "law": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_AUTONOMY_RESPONSIBILITY_LAW_V1_1.json",
+    "binding": "AGENT_STATUS_MAY_BE_REGISTERED_AT_LOCAL_NODE_WITH_EVIDENCE_REFERENCE",
+    "blocked": ["POLITICAL_CONTROL_FROM_AGENT_STATUS", "AUTOMATIC_PERSONHOOD", "SOVEREIGNTY_OR_BORDER_MUTATION"]
+  },
+  "rules": ["All inherited geographic, R2 and derived bindings remain read-only.", "Recognition is local and auditable; it never creates a new political unit.", "Causal aggregates preserve their parent evidence and scope."]
+}

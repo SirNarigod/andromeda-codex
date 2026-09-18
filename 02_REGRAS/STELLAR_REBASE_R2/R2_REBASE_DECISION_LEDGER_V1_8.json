@@ -1,0 +1,181 @@
+{
+  "record_id": "R2_REBASE_DECISION_LEDGER_V1_8",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.8",
+  "status": "LOTS_001_TO_009_APPLIED",
+  "supersedes": "R2_REBASE_DECISION_LEDGER_V1_7",
+  "authority": {
+    "r2": "IMMUTABLE_NARRATIVE_ORIGIN",
+    "user_approval": "REQUIRED_FOR_DIVERGENCE_DISPOSITION"
+  },
+  "invariants": [
+    "NO_PHYSICAL_DELETION_WITHOUT_RECORDED_APPROVAL",
+    "R2_WINS_NARRATIVE_CONFLICTS",
+    "COMPATIBLE_EXPANSIONS_RETAIN_PROVENANCE"
+  ],
+  "entries": [
+    {
+      "decision_id": "R2-REBASE-LOT-001",
+      "status": "APPLIED",
+      "reference": "R2_REBASE_DECISION_LEDGER_V1_0.json",
+      "physical_deletion": false
+    },
+    {
+      "decision_id": "R2-REBASE-LOT-002",
+      "status": "APPLIED",
+      "reference": "R2_REBASE_DECISION_LEDGER_V1_1.json",
+      "physical_deletion": false
+    },
+    {
+      "decision_id": "R2-REBASE-LOT-003",
+      "status": "APPLIED",
+      "reference": "R2_REBASE_DECISION_LEDGER_V1_2.json",
+      "physical_deletion": false
+    },
+    {
+      "decision_id": "R2-REBASE-LOT-004",
+      "status": "APPLIED",
+      "reference": "R2_REBASE_DECISION_LEDGER_V1_3.json",
+      "physical_deletion": false
+    },
+    {
+      "decision_id": "R2-REBASE-LOT-005",
+      "date": "2026-09-07",
+      "status": "APPLIED",
+      "user_authorization": "Custom protagonist campaign parallel and protected from Kenua Season 1; literal death rebirth through echoes; talents and bonds persist without facts.",
+      "approved_actions": [
+        "Promote skill, itemization and memory/reputation contracts as compatible derived design sources.",
+        "Create active laws for custom player campaign, echo rebirth, emergent progression, skills/itemization and social information.",
+        "Classify Godot scripts, scenes, logs, prototype numbers and runtime artifacts as technical evidence only.",
+        "Block custom player crossovers, R2 episode changes and pre-Episode-8 Amadon contact unless authorially gated."
+      ],
+      "new_active_records": [
+        "STELLAR_PLAYER_CAMPAIGN_LAW_V1_0",
+        "STELLAR_LIFE_DEATH_REBIRTH_LAW_V1_1",
+        "STELLAR_PROGRESSION_QUEST_CONSEQUENCE_LAW_V1_1",
+        "STELLAR_SKILL_ITEMIZATION_LAW_V1_0",
+        "STELLAR_INFORMATION_MEMORY_LAW_V1_1",
+        "STELLAR_FOUNDATION_INDEX_V1_5"
+      ],
+      "historical_records_preserved": [
+        "STELLAR_LIFE_DEATH_REBIRTH_LAW_V1_0",
+        "STELLAR_PROGRESSION_QUEST_CONSEQUENCE_LAW_V1_0",
+        "STELLAR_INFORMATION_MEMORY_LAW_V1_0",
+        "STELLAR_FOUNDATION_INDEX_V1_4",
+        "R2_REBASE_DECISION_LEDGER_V1_3"
+      ],
+      "physical_deletion": false,
+      "reversible_action": "A later authorial ledger entry may supersede these laws; all source contracts, technical evidence and historical versions remain preserved."
+    },
+    {
+      "decision_id": "R2-REBASE-LOT-006",
+      "date": "2026-09-07",
+      "status": "APPLIED",
+      "user_authorization": "Organize all Andromeda content by niche; connect LivingSim/Living Scale and local automation packages; external imports authorized to staging.",
+      "approved_actions": [
+        "Create R2 editorial mirrors and routing registry.",
+        "Separate Season 1, characters, geography, arms, resources, NPCs and threats.",
+        "Create read-only LivingSim and Living Scale projections.",
+        "Create local tool exports and validated staging intake."
+      ],
+      "new_active_records": [
+        "STELLAR_CONTENT_ROUTING_CONSTITUTION_V1_0",
+        "STELLAR_LIVING_CONTENT_INTEGRATION_LAW_V1_0",
+        "STELLAR_FOUNDATION_INDEX_V1_6"
+      ],
+      "physical_deletion": false,
+      "reversible_action": "All R2 sources and technical artifacts remain preserved; derived routing and projections may be superseded only by later ledger entry."
+    },
+    {
+      "decision_id": "R2-REBASE-LOT-007",
+      "date": "2026-09-07",
+      "status": "APPLIED",
+      "user_authorization": "Promote FAC-009 and FAC-010 as transregional non-sovereign derived factions, partners in tension; update LivingSim, Living Scale and UE5 exports without modifying R2 or technical sources.",
+      "approved_actions": [
+        "Promote FAC-009 and FAC-010 as CANON_DERIVADO_ATIVO.",
+        "Define local charters as service permission without territorial authority.",
+        "Unfreeze only the compatible narrative layer of ARPG_NARRATIVE_CULTURE_CONTRACT_V1_3_0.",
+        "Expose read-only faction and local-chapter data to LivingSim, Living Scale and future UE5."
+      ],
+      "new_active_records": [
+        "FAC-009",
+        "FAC-010",
+        "FAC-009-FAC-010-RELATIONSHIP-CHARTER-V1",
+        "STELLAR_SOVEREIGNTY_TERRITORY_LAW_V1_2",
+        "STELLAR_INSTITUTION_CULTURE_LAW_V1_1",
+        "STELLAR_PROFESSIONAL_FACTIONS_LAW_V1_0",
+        "STELLAR_FOUNDATION_INDEX_V1_7"
+      ],
+      "historical_records_preserved": [
+        "STELLAR_SOVEREIGNTY_TERRITORY_LAW_V1_1",
+        "STELLAR_INSTITUTION_CULTURE_LAW_V1_0",
+        "STELLAR_CONTENT_ROUTING_CONSTITUTION_V1_0",
+        "STELLAR_LIVING_CONTENT_INTEGRATION_LAW_V1_0",
+        "R2_REBASE_DECISION_LEDGER_V1_5",
+        "ARPG_NARRATIVE_CULTURE_CONTRACT_V1_3_0"
+      ],
+      "physical_deletion": false,
+      "reversible_action": "A later authorial ledger entry may supersede these derived profiles or laws; R2, source contracts and historical records remain preserved."
+    },
+    {
+      "decision_id": "R2-REBASE-LOT-008",
+      "date": "2026-09-07",
+      "status": "APPLIED",
+      "user_authorization": "Create complete qualitative catalogs for resources, professions, generic NPC roles and encounter profiles; protect named R2 appearances; avoid numeric balance.",
+      "approved_actions": [
+        "Promote five qualitative playable-taxonomy catalogs as CANON_DERIVADO_ATIVO.",
+        "Keep named R2 persons behind authorial appearance gates.",
+        "Classify fauna by contextual encounter behavior rather than default enemy status.",
+        "Expose read-only catalog projections to LivingSim, Living Scale and future UE5."
+      ],
+      "new_active_records": [
+        "STELLAR_PLAYABLE_TAXONOMY_LAW_V1_0",
+        "STELLAR_CONTENT_ROUTING_CONSTITUTION_V1_2",
+        "STELLAR_LIVING_CONTENT_INTEGRATION_LAW_V1_2",
+        "STELLAR_FOUNDATION_INDEX_V1_8"
+      ],
+      "historical_records_preserved": [
+        "STELLAR_CONTENT_ROUTING_CONSTITUTION_V1_1",
+        "STELLAR_LIVING_CONTENT_INTEGRATION_LAW_V1_1",
+        "STELLAR_FOUNDATION_INDEX_V1_7",
+        "R2_REBASE_DECISION_LEDGER_V1_6"
+      ],
+      "physical_deletion": false,
+      "reversible_action": "A later authorial ledger entry may supersede any catalog or taxonomy law. R2 sources, technical evidence and prior records remain preserved."
+    },
+    {
+      "decision_id": "R2-REBASE-LOT-009",
+      "date": "2026-09-07",
+      "status": "APPLIED",
+      "user_authorization": "Create six derived Terras Livres subregions with names and local conflicts; create original UE5 technical balance values for HP, damage, defense, tiers and healing.",
+      "approved_actions": [
+        "Promote six non-sovereign Terras Livres subregions as CANON_DERIVADO_ATIVO.",
+        "Keep CIT-001 and CIT-002 as immutable R2 references.",
+        "Create STELLAR_UE5_BALANCE_BASELINE_V1_0 as TECHNICAL_TUNING_NOT_CANON.",
+        "Expose read-only subregion and tuning data to LivingSim, Living Scale and UE5."
+      ],
+      "new_active_records": [
+        "SUB-011-001 through SUB-011-006",
+        "STELLAR_TERRAS_LIVRES_SUBREGION_LAW_V1_0",
+        "STELLAR_UE5_BALANCE_BOUNDARY_LAW_V1_0",
+        "STELLAR_CONTENT_ROUTING_CONSTITUTION_V1_3",
+        "STELLAR_LIVING_CONTENT_INTEGRATION_LAW_V1_3",
+        "STELLAR_FOUNDATION_INDEX_V1_9"
+      ],
+      "historical_records_preserved": [
+        "STELLAR_CONTENT_ROUTING_CONSTITUTION_V1_2",
+        "STELLAR_LIVING_CONTENT_INTEGRATION_LAW_V1_2",
+        "STELLAR_FOUNDATION_INDEX_V1_8",
+        "R2_REBASE_DECISION_LEDGER_V1_7",
+        "Godot balance baselines"
+      ],
+      "physical_deletion": false,
+      "reversible_action": "Later authorial or technical revisions may supersede subregions or tuning independently. R2 sources, historical laws and prototype baselines remain preserved."
+    }
+  ],
+  "next_batches": [
+    "05_ENGINE_ARPG_RUNTIME",
+    "10_CAUSALITY_AND_AUTONOMY_REVIEW",
+    "11_OTHER_TERRITORY_SUBREGIONS"
+  ]
+}

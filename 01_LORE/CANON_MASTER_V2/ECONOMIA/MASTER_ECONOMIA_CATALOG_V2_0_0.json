@@ -1,0 +1,318 @@
+{
+  "record_id": "MASTER-ECONOMIA-CATALOG-V2.0.0",
+  "title": "Economia oficial do MASTER V2.0.1 - Indústria (bens/serviços) e Mercados",
+  "provenance": {
+    "master_release": "ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE",
+    "master_release_zip_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "source_files": [
+      "01_CANON/ANDROMEDA_CODEX_CANON_MASTER_V2_0_0.json (entities, domain=economia/indústria e economia/mercados)"
+    ],
+    "authority": "CANON_MASTER_V2_CONFIRMADO",
+    "namespace_check": "Prefixo ECO-GOOD-/ECO-MKT-/ECO-PROFILE-, sem colisão com nosso namespace.",
+    "structure_note": "economia/indústria (42, ECO-GOOD) é uma taxonomia PLANETÁRIA de bens/serviços (nao especifica de território - todas ancoradas genericamente em TER-001 no Master, artefato de indexação). Varios bens citam fauna/recursos que já catalogamos (leite veluriano/brumante/lúmara/âmbar-de-raizel = RES-001..004; Grilo-Cobre/Larva-de-Véu = CRI-008/009; Orvante/Torvaco/Brumápode/Viarim = espécies novas que acabamos de importar do dominio Fauna, FAD-001..004) - cross_refs preenchido automaticamente onde o nome bate.",
+    "mercados_honesty_note": "economia/mercados (21: 18 ECO-PROFILE + 3 ECO-MKT) SAO STUBS SEM CONTEUDO REAL no pacote-fonte - cada entrada tem name=summary=so o nome da facção/território/local, sem nenhuma descricao economica adicional (campo 'fallback' nao usado mas o padrao e identico aos stubs ORG-/EDU- ja encontrados). Documentado aqui como CONFIRMACAO (essas 18 facções/territorios + 3 locais tem perfil economico oficial reconhecido no Master), nao como conteudo descritivo - nada foi inventado para preencher a lacuna."
+  },
+  "count_goods": 42,
+  "count_market_stub_confirmations": 21,
+  "goods_and_services": [
+    {
+      "id": "ECO-GOOD-000001",
+      "name": "Leite veluriano",
+      "cross_refs": [
+        "RES-001"
+      ]
+    },
+    {
+      "id": "ECO-GOOD-000002",
+      "name": "Barra de viagem de leite veluriano",
+      "cross_refs": [
+        "RES-001"
+      ]
+    },
+    {
+      "id": "ECO-GOOD-000003",
+      "name": "Leite brumante",
+      "cross_refs": [
+        "RES-002",
+        "CRI-003"
+      ]
+    },
+    {
+      "id": "ECO-GOOD-000004",
+      "name": "Leite de lúmara",
+      "cross_refs": [
+        "RES-003",
+        "CRI-004"
+      ]
+    },
+    {
+      "id": "ECO-GOOD-000005",
+      "name": "Leite âmbar de raizel",
+      "cross_refs": [
+        "RES-004"
+      ]
+    },
+    {
+      "id": "ECO-GOOD-000006",
+      "name": "Grilo-Cobre — ingrediente comestível",
+      "cross_refs": [
+        "CRI-008"
+      ]
+    },
+    {
+      "id": "ECO-GOOD-000007",
+      "name": "Larva-de-Véu — ingrediente comestível",
+      "cross_refs": [
+        "CRI-009"
+      ]
+    },
+    {
+      "id": "ECO-GOOD-000008",
+      "name": "Farinha de campanha de Larva-de-Véu",
+      "cross_refs": [
+        "CRI-009"
+      ]
+    },
+    {
+      "id": "ECO-GOOD-000009",
+      "name": "Âmbar de tempestade"
+    },
+    {
+      "id": "ECO-GOOD-000010",
+      "name": "Núcleo de âmbar"
+    },
+    {
+      "id": "ECO-GOOD-000011",
+      "name": "Cargas rúnicas comercializadas em armerias"
+    },
+    {
+      "id": "ECO-GOOD-000012",
+      "name": "Selos comercializados em armerias"
+    },
+    {
+      "id": "ECO-GOOD-000013",
+      "name": "Munição convencional"
+    },
+    {
+      "id": "ECO-GOOD-000014",
+      "name": "Serviço de manutenção rúnica em armerias"
+    },
+    {
+      "id": "ECO-GOOD-000015",
+      "name": "Serviço de corte licenciado de âmbar de tempestade"
+    },
+    {
+      "id": "ECO-GOOD-000016",
+      "name": "Serviço/atividade de manutenção ferroviária"
+    },
+    {
+      "id": "ECO-GOOD-000017",
+      "name": "Grãos"
+    },
+    {
+      "id": "ECO-GOOD-000018",
+      "name": "Vegetais comuns"
+    },
+    {
+      "id": "ECO-GOOD-000019",
+      "name": "Frutos"
+    },
+    {
+      "id": "ECO-GOOD-000020",
+      "name": "Folhas autorizadas"
+    },
+    {
+      "id": "ECO-GOOD-000021",
+      "name": "Sementes alimentares — classe genérica"
+    },
+    {
+      "id": "ECO-GOOD-000022",
+      "name": "Fungos catalogados/seguros"
+    },
+    {
+      "id": "ECO-GOOD-000023",
+      "name": "Minerais nutricionais"
+    },
+    {
+      "id": "ECO-GOOD-000024",
+      "name": "Raízes autorizadas"
+    },
+    {
+      "id": "ECO-GOOD-000025",
+      "name": "Carnes — classe alimentar genérica"
+    },
+    {
+      "id": "ECO-GOOD-000026",
+      "name": "Farinha de Grilo-Cobre",
+      "cross_refs": [
+        "CRI-008"
+      ]
+    },
+    {
+      "id": "ECO-GOOD-000027",
+      "name": "Sais alimentares/nutricionais"
+    },
+    {
+      "id": "ECO-GOOD-000028",
+      "name": "Proteínas preservadas — classe de campanha"
+    },
+    {
+      "id": "ECO-GOOD-000029",
+      "name": "Fibra de Junco-de-Fio"
+    },
+    {
+      "id": "ECO-GOOD-000030",
+      "name": "Tecido de Junco-de-Fio"
+    },
+    {
+      "id": "ECO-GOOD-000031",
+      "name": "Corda de Junco-de-Fio"
+    },
+    {
+      "id": "ECO-GOOD-000032",
+      "name": "Reforços tratados de Junco-de-Fio"
+    },
+    {
+      "id": "ECO-GOOD-000033",
+      "name": "Pigmentos luminosos temporários de Folha-Prisma"
+    },
+    {
+      "id": "ECO-GOOD-000034",
+      "name": "Serviço de montaria/transporte por Orvante",
+      "cross_refs": [
+        "FAD-001"
+      ]
+    },
+    {
+      "id": "ECO-GOOD-000035",
+      "name": "Serviço de tração pesada/trabalho agrícola por Torvaco",
+      "cross_refs": [
+        "FAD-002"
+      ]
+    },
+    {
+      "id": "ECO-GOOD-000036",
+      "name": "Serviço de transporte semiaquático por Brumápode",
+      "cross_refs": [
+        "FAD-003"
+      ]
+    },
+    {
+      "id": "ECO-GOOD-000037",
+      "name": "Serviço de mensageria por Viarim",
+      "cross_refs": [
+        "FAD-004"
+      ]
+    },
+    {
+      "id": "ECO-GOOD-000038",
+      "name": "Serviço funcional de armazenamento"
+    },
+    {
+      "id": "ECO-GOOD-000039",
+      "name": "Serviço funcional de água, saneamento e resíduos"
+    },
+    {
+      "id": "ECO-GOOD-000040",
+      "name": "Serviço funcional de energia, comunicação, iluminação e monitoramento"
+    },
+    {
+      "id": "ECO-GOOD-000041",
+      "name": "Serviço funcional de utilidades e manutenção de infraestrutura"
+    },
+    {
+      "id": "ECO-GOOD-000042",
+      "name": "Refeição simples de Grilo-Cobre tostado e leite veluriano fermentado",
+      "cross_refs": [
+        "RES-001",
+        "CRI-008"
+      ]
+    }
+  ],
+  "market_profile_confirmations_stub_only": [
+    {
+      "id": "ECO-MKT-000001",
+      "name": "Armerias rúnicas / lojas de magos — binding econômico"
+    },
+    {
+      "id": "ECO-MKT-000002",
+      "name": "Posto de Varga — comércio/oficina"
+    },
+    {
+      "id": "ECO-MKT-000003",
+      "name": "Rede de depósitos da Fronteira — vendas/distribuição"
+    },
+    {
+      "id": "ECO-PROFILE-001",
+      "name": "Árvores Anciãs"
+    },
+    {
+      "id": "ECO-PROFILE-002",
+      "name": "Reis Magos"
+    },
+    {
+      "id": "ECO-PROFILE-003",
+      "name": "Conselho de Convergência"
+    },
+    {
+      "id": "ECO-PROFILE-004",
+      "name": "Vigília Radicular"
+    },
+    {
+      "id": "ECO-PROFILE-005",
+      "name": "Círculo Arcano-Botânico da Flor Fóssil"
+    },
+    {
+      "id": "ECO-PROFILE-006",
+      "name": "Confederação de Lúminor"
+    },
+    {
+      "id": "ECO-PROFILE-007",
+      "name": "Reino Ferral de Kharveth"
+    },
+    {
+      "id": "ECO-PROFILE-008",
+      "name": "República de Ortheon"
+    },
+    {
+      "id": "ECO-PROFILE-009",
+      "name": "Arquipélago Livre de Navyr"
+    },
+    {
+      "id": "ECO-PROFILE-010",
+      "name": "Principado de Ithra"
+    },
+    {
+      "id": "ECO-PROFILE-011",
+      "name": "Reino Aéreo de Altavela"
+    },
+    {
+      "id": "ECO-PROFILE-012",
+      "name": "Rubra-Viva"
+    },
+    {
+      "id": "ECO-PROFILE-013",
+      "name": "Santuários do Coração"
+    },
+    {
+      "id": "ECO-PROFILE-014",
+      "name": "Liga Subcristal"
+    },
+    {
+      "id": "ECO-PROFILE-015",
+      "name": "Domínio dos Reis Magos"
+    },
+    {
+      "id": "ECO-PROFILE-016",
+      "name": "Terras Livres"
+    },
+    {
+      "id": "ECO-PROFILE-017",
+      "name": "Zonas de Contenção"
+    },
+    {
+      "id": "ECO-PROFILE-018",
+      "name": "Fortaleza do Trovão"
+    }
+  ]
+}

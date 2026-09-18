@@ -1,0 +1,301 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-RUNE-CATALOG-DEV-V1.0",
+  "title": "Runas como componente vendável, uma por categoria canônica de MAG-002",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "canonical_status": "GAMEPLAY_DERIVED_DEV",
+  "source_reference": "01_LORE/CANON_R2/SISTEMAS/MAGIA/MAG-002__runas.json",
+  "r2_guard": "As 10 categorias batem exatamente com as já listadas em MAG-002 (condução, contenção, proteção, movimento, percepção, transformação, restauração, interrupção, vínculo, mental) — nenhuma categoria nova é inventada. Cada runa é um componente/matéria-prima de runificação, SEM efeito numérico isolado (NO_INVENTED_RUNE_EFFECT) — o efeito só se manifesta quando aplicada a uma arma/item já fabricado, seguindo a mesma disciplina usada nas 80 armas do MAR.",
+  "runes": [
+    {
+      "rune_id": "RUNA-001",
+      "name": "Runa de Aceleração",
+      "category": "Condução",
+      "runic_tier": "R1",
+      "inputs": [
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        },
+        {
+          "resource_id": "MAT-005",
+          "resource_name": "Resina Rúnica"
+        }
+      ],
+      "produced_at": "EST-044",
+      "sold_at": "EST-011",
+      "price_tier": "MÉDIO",
+      "effect_note": "sem efeito numérico isolado — só se manifesta aplicada a um item já fabricado",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-010",
+        "CUR-000"
+      ],
+      "category_effect_note": "guia ou acelera o fluxo de energia/movimento através do item onde é aplicada.",
+      "weight_kg": 0.13,
+      "description": "guia ou acelera o fluxo de energia/movimento através do item onde é aplicada."
+    },
+    {
+      "rune_id": "RUNA-002",
+      "name": "Runa de Contenção",
+      "category": "Contenção",
+      "runic_tier": "R1",
+      "inputs": [
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        },
+        {
+          "resource_id": "MAT-006",
+          "resource_name": "Osso Rúnico"
+        }
+      ],
+      "produced_at": "EST-044",
+      "sold_at": "EST-011",
+      "price_tier": "MÉDIO",
+      "effect_note": "sem efeito numérico isolado — só se manifesta aplicada a um item já fabricado",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-010",
+        "CUR-000"
+      ],
+      "category_effect_note": "retém, prende ou restringe algo dentro de um limite definido.",
+      "weight_kg": 0.13,
+      "description": "retém, prende ou restringe algo dentro de um limite definido."
+    },
+    {
+      "rune_id": "RUNA-003",
+      "name": "Runa de Proteção",
+      "category": "Proteção",
+      "runic_tier": "R2",
+      "inputs": [
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        },
+        {
+          "resource_id": "MIN-SILVER",
+          "resource_name": "Argêntea Pálida"
+        }
+      ],
+      "produced_at": "EST-044",
+      "sold_at": "EST-011",
+      "price_tier": "ALTO",
+      "effect_note": "sem efeito numérico isolado — só se manifesta aplicada a um item já fabricado",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-010",
+        "CUR-000"
+      ],
+      "category_effect_note": "reforça a resistência do item ou de quem o porta contra dano.",
+      "weight_kg": 0.13,
+      "description": "reforça a resistência do item ou de quem o porta contra dano."
+    },
+    {
+      "rune_id": "RUNA-004",
+      "name": "Runa de Retorno",
+      "category": "Movimento",
+      "runic_tier": "R1",
+      "inputs": [
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        },
+        {
+          "resource_id": "MAT-004",
+          "resource_name": "Fibra de Véu"
+        }
+      ],
+      "produced_at": "EST-044",
+      "sold_at": "EST-011",
+      "price_tier": "MÉDIO",
+      "effect_note": "sem efeito numérico isolado — só se manifesta aplicada a um item já fabricado",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-010",
+        "CUR-000"
+      ],
+      "category_effect_note": "favorece deslocamento, retorno ao portador ou agilidade de manuseio.",
+      "weight_kg": 0.13,
+      "description": "favorece deslocamento, retorno ao portador ou agilidade de manuseio."
+    },
+    {
+      "rune_id": "RUNA-005",
+      "name": "Runa de Ótica",
+      "category": "Percepção",
+      "runic_tier": "R1",
+      "inputs": [
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        },
+        {
+          "resource_id": "MIN-QUARTZ",
+          "resource_name": "Quartzo de Veio"
+        }
+      ],
+      "produced_at": "EST-044",
+      "sold_at": "EST-011",
+      "price_tier": "MÉDIO",
+      "effect_note": "sem efeito numérico isolado — só se manifesta aplicada a um item já fabricado",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-010",
+        "CUR-000"
+      ],
+      "category_effect_note": "amplia visão, detecção ou consciência do que está ao redor.",
+      "weight_kg": 0.13,
+      "description": "amplia visão, detecção ou consciência do que está ao redor."
+    },
+    {
+      "rune_id": "RUNA-006",
+      "name": "Runa de Transformação",
+      "category": "Transformação",
+      "runic_tier": "R2",
+      "inputs": [
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        },
+        {
+          "resource_id": "MIN-MANA-ORE",
+          "resource_name": "Manalita"
+        }
+      ],
+      "produced_at": "EST-044",
+      "sold_at": "EST-011",
+      "price_tier": "ALTO",
+      "effect_note": "sem efeito numérico isolado — só se manifesta aplicada a um item já fabricado",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-010",
+        "CUR-000"
+      ],
+      "category_effect_note": "altera a forma, o estado ou uma propriedade física de algo.",
+      "weight_kg": 0.13,
+      "description": "altera a forma, o estado ou uma propriedade física de algo."
+    },
+    {
+      "rune_id": "RUNA-007",
+      "name": "Runa de Restauração",
+      "category": "Restauração",
+      "runic_tier": "R2",
+      "inputs": [
+        {
+          "resource_id": "MIN-MANA-ORE",
+          "resource_name": "Manalita"
+        },
+        {
+          "resource_id": "MAT-008",
+          "resource_name": "Pergaminho de Fibra"
+        }
+      ],
+      "produced_at": "EST-044",
+      "sold_at": "EST-012",
+      "price_tier": "ALTO",
+      "effect_note": "sem efeito numérico isolado — só se manifesta aplicada a um item já fabricado",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-007",
+        "CUR-010",
+        "CUR-000"
+      ],
+      "category_effect_note": "auxilia na recuperação de vitalidade, integridade ou energia.",
+      "weight_kg": 0.13,
+      "description": "auxilia na recuperação de vitalidade, integridade ou energia."
+    },
+    {
+      "rune_id": "RUNA-008",
+      "name": "Runa de Interrupção",
+      "category": "Interrupção",
+      "runic_tier": "R2",
+      "inputs": [
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        },
+        {
+          "resource_id": "MIN-VOID-GLASS",
+          "resource_name": "Vidro Umbral"
+        }
+      ],
+      "produced_at": "EST-044",
+      "sold_at": "EST-011",
+      "price_tier": "ALTO",
+      "effect_note": "sem efeito numérico isolado — só se manifesta aplicada a um item já fabricado",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-010",
+        "CUR-000"
+      ],
+      "category_effect_note": "bloqueia, interrompe ou nega uma ação ou efeito em andamento.",
+      "weight_kg": 0.13,
+      "description": "bloqueia, interrompe ou nega uma ação ou efeito em andamento."
+    },
+    {
+      "rune_id": "RUNA-009",
+      "name": "Runa de Vínculo",
+      "category": "Vínculo",
+      "runic_tier": "R3",
+      "inputs": [
+        {
+          "resource_id": "MIN-MANA-ORE",
+          "resource_name": "Manalita"
+        },
+        {
+          "resource_id": "MIN-GOLD",
+          "resource_name": "Aúreo Solar"
+        }
+      ],
+      "produced_at": "EST-044",
+      "sold_at": "EST-011",
+      "price_tier": "ALTO",
+      "effect_note": "sem efeito numérico isolado — só se manifesta aplicada a um item já fabricado",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-010",
+        "CUR-000"
+      ],
+      "category_effect_note": "cria ligação, sincronização ou rastreamento entre itens ou pessoas.",
+      "weight_kg": 0.13,
+      "description": "cria ligação, sincronização ou rastreamento entre itens ou pessoas."
+    },
+    {
+      "rune_id": "RUNA-010",
+      "name": "Runa de Foco Mental",
+      "category": "Mental",
+      "runic_tier": "R2",
+      "inputs": [
+        {
+          "resource_id": "MIN-MANA-ORE",
+          "resource_name": "Manalita"
+        },
+        {
+          "resource_id": "MAT-008",
+          "resource_name": "Pergaminho de Fibra"
+        }
+      ],
+      "produced_at": "EST-044",
+      "sold_at": "EST-034",
+      "price_tier": "ALTO",
+      "effect_note": "sem efeito numérico isolado — só se manifesta aplicada a um item já fabricado",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ],
+      "category_effect_note": "afeta foco, clareza ou resistência psíquica de quem a usa.",
+      "weight_kg": 0.14,
+      "description": "afeta foco, clareza ou resistência psíquica de quem a usa."
+    }
+  ],
+  "category_effect_note_guard": "Explicação QUALITATIVA da categoria (o que ela representa tematicamente dentro do sistema MAG-002), nunca um efeito numérico isolado - respeita NO_INVENTED_RUNE_EFFECT já declarado em effect_note de cada runa. O efeito real só existe quando a runa está aplicada a um item já fabricado."
+}

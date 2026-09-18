@@ -1,0 +1,13 @@
+{
+  "record_id": "STELLAR-LIVING-CONTENT-INTEGRATION-LAW-V1.4",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.4",
+  "status": "ACTIVE_R2_COMPATIBLE_DERIVATION",
+  "supersedes": "STELLAR_LIVING_CONTENT_INTEGRATION_LAW_V1_3",
+  "authority": {"scope":"LIVING_SIM_LIVING_SCALE_READ_ONLY_INTEGRATION","r2":"READ_ONLY","runtime":"NO_CANON_AUTHORITY"},
+  "dependencies": ["STELLAR_CAUSALITY_LAW_V1_1.json", "STELLAR_VARGA_VERTICAL_SLICE_BOUNDARY_LAW_V1_0.json", "STELLAR_CONTENT_ROUTING_CONSTITUTION_V1_4.json"],
+  "invariants": ["SIMULATION_CONSUMES_PERMITTED_CONTENT_ONLY", "LOCAL_CONSEQUENCE_REMAINS_LOCAL", "ROUTE_AVAILABILITY_IS_NOT_SOVEREIGNTY", "SAVE_STATE_IS_NOT_CANON"],
+  "prohibitions": ["NO_R2_RETCON", "NO_KENUA_OR_SEALED_EPISODE_MUTATION", "NO_AMADON_PRE_S01E08", "NO_ROOT_IRREVERSIBILITY", "NO_OFFLINE_QUEST_RESOLUTION"],
+  "simulation_effects": ["LivingSim can register Varga route pressure, medical risk, trust and incomplete evidence.", "Living Scale can display local route status without new political geography.", "UE5 receives read-only assets through the V6 manifest and staging."],
+  "allowed_states": ["READ_ONLY_PROJECTED", "LOCAL_TRACE", "AWAITING_AUTHORIAL_GATE", "REJECTED"]
+}

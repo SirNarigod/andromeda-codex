@@ -1,0 +1,19 @@
+{
+  "record_id": "ARPG-STAGE04-TEST-BASELINE-V0.5.0",
+  "status": "PASS",
+  "tests": {
+    "stage04_unit": "16/16 PASS",
+    "stage04_validation": "53/53 PASS",
+    "stage04_stress": "24/24 PASS",
+    "stage03_unit_regression": "14/14 PASS",
+    "stage03_validation_regression": "67/67 PASS",
+    "stage02_unit_regression": "11/11 PASS",
+    "stage02_validation_regression": "51/51 PASS",
+    "stage01_validation_regression": "58/58 PASS",
+    "stage00_validation_regression": "51/51 PASS",
+    "country_v15_critical_regression": "24/24 PASS",
+    "master_regression": "393/393 PASS"
+  },
+  "external_godot_rendered_execution": "NOT_AVAILABLE_NOT_REQUIRED_STAGE04",
+  "canon_mutations": 0
+}

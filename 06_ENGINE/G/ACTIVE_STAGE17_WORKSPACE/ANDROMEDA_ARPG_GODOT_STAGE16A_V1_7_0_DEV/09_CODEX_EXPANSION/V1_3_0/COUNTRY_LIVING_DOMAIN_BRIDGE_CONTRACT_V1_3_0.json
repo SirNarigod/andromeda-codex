@@ -1,0 +1,39 @@
+{
+  "record_id": "COUNTRY-LIVING-DOMAIN-BRIDGE-CONTRACT-V1.3.0",
+  "version": "V1.3.0",
+  "master_required": "V2.1.0",
+  "authority": {
+    "spatial_aggregation": "COUNTRY_SCALE",
+    "commerce": "CommerceSystem",
+    "combat": "CombatSystem",
+    "social_memory": "SocialMemorySystem",
+    "canonical_truth": "MASTER_READ_ONLY"
+  },
+  "disabled_parallel_paths": [
+    "CountryScale._purchase_legacy when bridge attached",
+    "CountryScale._hunt_fauna_legacy when bridge attached"
+  ],
+  "projection_rules": [
+    "Living wallet -> Country NPC wallet",
+    "Living inventory + equipment -> Country NPC inventory",
+    "Living vendor cash/stock -> Country shop",
+    "Living combat death -> Country fauna aggregate decrement",
+    "Living corpse harvest -> Country NPC derived fauna item"
+  ],
+  "protection_rules": [
+    "CHILD cannot purchase WPN-*",
+    "CHILD cannot equip weapon",
+    "CHILD cannot initiate combat or hunt",
+    "CHILD remains protected as combat target by Country policy",
+    "WORKER hazardous labor protection preserved"
+  ],
+  "runtime_only": [
+    "numeric prices",
+    "wallet balances",
+    "stocks",
+    "equipment condition",
+    "individual combat state",
+    "procedural exact positions/counts"
+  ],
+  "status": "PASS"
+}

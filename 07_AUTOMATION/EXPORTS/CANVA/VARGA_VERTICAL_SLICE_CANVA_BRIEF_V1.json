@@ -1,0 +1,13 @@
+{
+  "record_id": "VARGA_VERTICAL_SLICE_CANVA_BRIEF_V1",
+  "status": "READY_FOR_STAGING_PRODUCTION",
+  "authority": "CANON_DERIVADO_ATIVO_VISUAL_BRIEF",
+  "style": "stylized realism; grounded communal frontier; vegetation carries restrained luminous accents",
+  "deliverables": [
+    {"id":"VARGA-CNV-001","type":"moodboard","subject":"arrival shelter, reused wood and metal, route signage, luminous vegetation","spoiler_rule":"no Kenua, Amadon, Espinho-Negro or sealed episode imagery"},
+    {"id":"VARGA-CNV-002","type":"local route diagram","subject":"six Varga points of interest and the blocked crossing","spoiler_rule":"present as local playable overlay, not canonical border map"},
+    {"id":"VARGA-CNV-003","type":"character cards","subject":"Nessa Ril, Dorian Kesh and Vara Teln","spoiler_rule":"mark as derived local characters; do not borrow R2 character imagery"},
+    {"id":"VARGA-CNV-004","type":"quest card","subject":"Contrato de Travessia and its three local resolutions","spoiler_rule":"evidence remains incomplete; no culprit claim"}
+  ],
+  "intake_rule": "Generated design output remains a pending derivation until staged, hashed and reviewed."
+}

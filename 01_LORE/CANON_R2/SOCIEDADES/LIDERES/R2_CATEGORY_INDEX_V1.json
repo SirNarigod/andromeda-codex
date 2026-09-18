@@ -1,0 +1,65 @@
+{
+  "record_id": "R2-LID-CATEGORY-INDEX-V1",
+  "authority": "CANON_R2_CONFIRMADO",
+  "category": "LID",
+  "category_name": "Líderes",
+  "items": [
+    {
+      "id": "LID-001",
+      "title": "Elyra Vaelor",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/LIDERES/LID-001__elyra-vaelor.json",
+      "spoiler": 2,
+      "sealed": true
+    },
+    {
+      "id": "LID-002",
+      "title": "Odran Ferrak IV",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/LIDERES/LID-002__odran-ferrak-iv.json",
+      "spoiler": 2,
+      "sealed": true
+    },
+    {
+      "id": "LID-003",
+      "title": "Caelen Orthev",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/LIDERES/LID-003__caelen-orthev.json",
+      "spoiler": 2,
+      "sealed": true
+    },
+    {
+      "id": "LID-004",
+      "title": "Nymara Vel-Thal",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/LIDERES/LID-004__nymara-vel-thal.json",
+      "spoiler": 2,
+      "sealed": true
+    },
+    {
+      "id": "LID-005",
+      "title": "Saelyra Ithren",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/LIDERES/LID-005__saelyra-ithren.json",
+      "spoiler": 2,
+      "sealed": true
+    },
+    {
+      "id": "LID-006",
+      "title": "Vaelora Aereth",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/LIDERES/LID-006__vaelora-aereth.json",
+      "spoiler": 2,
+      "sealed": true
+    },
+    {
+      "id": "LID-007",
+      "title": "Maeryn Salvara",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/LIDERES/LID-007__maeryn-salvara.json",
+      "spoiler": 2,
+      "sealed": true
+    },
+    {
+      "id": "LID-008",
+      "title": "Torvhan Calther",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/LIDERES/LID-008__torvhan-calther.json",
+      "spoiler": 2,
+      "sealed": true
+    }
+  ],
+  "source": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json"
+}

@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-009-003",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Salão da Assembleia",
+  "parent_subregion": "SUB-009-003",
+  "parent_political_unit": "TER-009",
+  "function": "Sede de Torvhan Calther e da liga.",
+  "notable_link": "Torvhan Calther (autoridade máxima)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-009-003",
+  "settlement_tier": "COMPLEXO",
+  "history": "O Salão foi construído dentro da maior formação cristalina jamais considerada segura pra escavação parcial — um símbolo deliberado de que a autoridade de Torvhan Calther deriva do mesmo respeito às formações naturais que rege toda a vida na Liga Subcristal. A decisão de escavar parcialmente essa formação específica, décadas atrás, ainda é debatida por historiadores locais como precedente perigoso ou como demonstração legítima de que até tradições rígidas admitem exceção justificada.",
+  "sensory": "Paredes de cristal parcialmente lapidado refletem a luz das lamparinas centrais em ângulos calculados, iluminando a sala inteira sem sombra dura em canto algum — um efeito que os primeiros arquitetos consideraram metáfora visual pra transparência de governo, embora nem todo morador concorde que a metáfora se sustenta na prática política real.",
+  "figures": [
+    {
+      "role": "Presidente da Liga",
+      "name": "Torvhan Calther",
+      "note": "Governa por consulta constante às diversas câmaras da Liga, evitando decisão unilateral sempre que possível — um estilo que conquistou respeito amplo, mas que críticos internos veem como lentidão perigosa em questões que exigiriam resposta mais rápida, como a disputa recente sobre reclassificação de formações."
+    },
+    {
+      "role": "Representante dos mineradores",
+      "name": "Grett Talharocha",
+      "note": "Trouxe formalmente ao Salão a disputa com a inspetora Aissa sobre reclassificação de formações, exigindo que Torvhan revise o critério oficial antes que mais mineradores se sintam pressionados a violar o próprio código pessoal de preservação."
+    }
+  ],
+  "hook": "Torvhan precisa decidir sobre o pedido de Grett antes que a tensão entre mineradores e a administração de reclassificação escale — qualquer decisão vai desagradar uma facção significativa da Liga, e ela sabe que o próprio precedente do Salão, construído sobre formação escavada por exceção, será citado por ambos os lados da disputa.",
+  "detail": "Nenhuma sessão formal do Salão começa sem que Torvhan toque pessoalmente a parede de cristal mais próxima da entrada — um gesto que ela mesma descreve como lembrete pessoal, não ritual religioso, de que governa sobre uma estrutura que exigiu concessão e cuidado pra existir.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION"]
+}

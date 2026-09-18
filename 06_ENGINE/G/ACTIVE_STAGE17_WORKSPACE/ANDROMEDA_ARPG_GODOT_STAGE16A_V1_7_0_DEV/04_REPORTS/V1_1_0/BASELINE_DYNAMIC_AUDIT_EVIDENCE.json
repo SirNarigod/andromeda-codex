@@ -1,0 +1,112 @@
+{
+  "world_system_seed_uniformity": {
+    "flow_vectors": [
+      [
+        100.0,
+        20.0,
+        15.0,
+        10.0
+      ]
+    ],
+    "population_counts": [
+      1000
+    ],
+    "faction_vectors": [
+      [
+        50.0,
+        1000.0,
+        50.0,
+        50.0
+      ]
+    ],
+    "route_fields_sample": [
+      "capacity_factor",
+      "operational",
+      "risk",
+      "route_ref",
+      "runtime_authority"
+    ],
+    "counts": {
+      "flows": 7,
+      "populations": 14,
+      "factions": 3,
+      "routes": 34
+    }
+  },
+  "ecology_individual_aggregate": {
+    "reproduction_selected": {
+      "intent_type": "ECO_REPRODUCE",
+      "score": 180.0,
+      "target_ref": "rt:animal:bcb7d8ec-0f3a-4ee2-b434-0bef8a6745ce",
+      "parameters": {},
+      "reason": "REPRODUCTION_DRIVE"
+    },
+    "birth_status": "BORN",
+    "unspecified_sex_pair_reproduced": true,
+    "children_materialized": 1,
+    "aggregate_TER011_after_birth": 12,
+    "migration_selected": {
+      "intent_type": "ECO_MIGRATE",
+      "score": 195.0,
+      "target_ref": null,
+      "parameters": {
+        "destination_ref": "TER-001"
+      },
+      "reason": "HABITAT_PRESSURE"
+    },
+    "individual_territory_after_migration": "TER-001",
+    "aggregate_source_after_individual_migration": 12,
+    "aggregate_destination_after_individual_migration": 3
+  },
+  "orchestrator_lifecycle": {
+    "clock_before": {
+      "day": 0,
+      "tick": 0
+    },
+    "clock_after_24": {
+      "clock_id": "rt:clock:d3c283cf-2a2f-4b46-9bf9-8c33787f18de",
+      "epoch_id": "STELLAR_RUNTIME_EPOCH",
+      "day": 1,
+      "tick": 0,
+      "ticks_per_day": 24,
+      "state": "RUNNING"
+    },
+    "age_days_before": 30,
+    "age_days_after_24": 30,
+    "hunger_before": 20.0,
+    "hunger_after_24": 20.0,
+    "thirst_before": 20.0,
+    "thirst_after_24": 20.0,
+    "energy_before": 80.0,
+    "energy_after_24": 30.0,
+    "dead_participant_phase_tick1": {
+      "budget": 96,
+      "selected": 1,
+      "results": [
+        {
+          "entity_ref": "rt:animal:5e98b595-396a-41b1-a09e-8c598f13c6d5",
+          "status": "REJECTED",
+          "reason": "ValidationError"
+        }
+      ]
+    },
+    "dead_participant_phase_tick2": {
+      "budget": 96,
+      "selected": 1,
+      "results": [
+        {
+          "entity_ref": "rt:animal:5e98b595-396a-41b1-a09e-8c598f13c6d5",
+          "status": "REJECTED",
+          "reason": "ValidationError"
+        }
+      ]
+    },
+    "participant_enabled_after_death": true
+  },
+  "social_automatic_witness": {
+    "event_id": "rt:event:cf194115-bbdd-4706-b1b5-7d0cec3eafd0",
+    "observer_same_location": true,
+    "memories_before": 0,
+    "memories_after_clock": 0
+  }
+}

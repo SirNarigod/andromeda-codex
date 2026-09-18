@@ -1,0 +1,142 @@
+[
+ {
+  "id": "CUR-000",
+  "name": "Stavias",
+  "ter": null,
+  "strength": "UNIVERSAL",
+  "mint": null
+ },
+ {
+  "id": "CUR-001",
+  "name": "Selo de Lúminor",
+  "ter": "TER-001",
+  "strength": "MEDIA",
+  "mint": "Câmara Mercantil (EST-013)"
+ },
+ {
+  "id": "CUR-002",
+  "name": "Barra de Ferral",
+  "ter": "TER-002",
+  "strength": "FRACA",
+  "mint": "Coroa de Kharveth"
+ },
+ {
+  "id": "CUR-003",
+  "name": "Ficha Ferroviária",
+  "ter": "TER-003",
+  "strength": "MEDIA",
+  "mint": "Assembleia de Ortheon"
+ },
+ {
+  "id": "CUR-004",
+  "name": "Pérola de Navyr",
+  "ter": "TER-004",
+  "strength": "FORTE",
+  "mint": "Conselho das Ondas"
+ },
+ {
+  "id": "CUR-005",
+  "name": "Núcleo de Ithra",
+  "ter": "TER-005",
+  "strength": "MEDIA",
+  "mint": "Corte de Ithra"
+ },
+ {
+  "id": "CUR-006",
+  "name": "Pena de Titanita",
+  "ter": "TER-006",
+  "strength": "FORTE",
+  "mint": "Câmara Eletiva"
+ },
+ {
+  "id": "CUR-007",
+  "name": "Gota Selada",
+  "ter": "TER-007",
+  "strength": "FORTE",
+  "mint": "Conselho de Saúde"
+ },
+ {
+  "id": "CUR-008",
+  "name": "Semente do Coração",
+  "ter": "TER-008",
+  "strength": "FORTE",
+  "mint": "Círculo dos Anciãos"
+ },
+ {
+  "id": "CUR-009",
+  "name": "Lasca de Subcristal",
+  "ter": "TER-009",
+  "strength": "MEDIA",
+  "mint": "Assembleia Subcristal"
+ },
+ {
+  "id": "CUR-010",
+  "name": "Marca da Corrente",
+  "ter": "TER-010",
+  "strength": "MEDIA",
+  "mint": "Conselho Enohariano"
+ },
+ {
+  "id": "CUR-011",
+  "name": "Selo de Fronteira",
+  "ter": "TER-011",
+  "strength": "MEDIA",
+  "mint": "sem autoridade central única"
+ },
+ {
+  "id": "CUR-012",
+  "name": "Ficha de Ração",
+  "ter": "TER-012",
+  "strength": "FRACA",
+  "mint": "Comando Emergencial"
+ },
+ {
+  "id": "CUR-013",
+  "name": "Marco de Serverus",
+  "ter": "TER-013",
+  "strength": "MEDIA",
+  "mint": "domínio pessoal de Serverus Vaelkor"
+ },
+ {
+  "id": "CUR-014",
+  "name": "Escória Selada",
+  "ter": "TER-014",
+  "strength": "MEDIA",
+  "mint": "Conselho de Fundidores"
+ },
+ {
+  "id": "CUR-015",
+  "name": "Relicário de Areia",
+  "ter": "TER-015",
+  "strength": "FRACA",
+  "mint": "Conselho de Guias"
+ },
+ {
+  "id": "CUR-016",
+  "name": "Cristal de Gelo Selado",
+  "ter": "TER-016",
+  "strength": "FRACA",
+  "mint": "Conselho do Gelo"
+ },
+ {
+  "id": "CUR-017",
+  "name": "Frasco de Éter",
+  "ter": "TER-017",
+  "strength": "FRACA",
+  "mint": "Círculo dos Ilhéus"
+ },
+ {
+  "id": "CUR-018",
+  "name": "Pérola Abissal",
+  "ter": "TER-018",
+  "strength": "MEDIA",
+  "mint": "Conselho das Profundezas"
+ },
+ {
+  "id": "CUR-019",
+  "name": "Selo de Orquídea",
+  "ter": "TER-019",
+  "strength": "FRACA",
+  "mint": "Guardiões da Mata"
+ }
+]

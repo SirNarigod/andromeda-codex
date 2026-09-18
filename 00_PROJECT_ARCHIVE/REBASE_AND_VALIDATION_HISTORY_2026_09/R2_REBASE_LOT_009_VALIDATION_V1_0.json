@@ -1,0 +1,143 @@
+{
+  "record_id": "R2_REBASE_LOT_009_VALIDATION_V1_0",
+  "generated_at": "2026-09-07T01:45:11.2494929-03:00",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "json:01_LORE/CANON_DERIVADO_ATIVO/GEOGRAFIA/TERRAS_LIVRES/TERRAS_LIVRES_SUBREGION_INDEX_V1_0.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:01_LORE/CANON_DERIVADO_ATIVO/GEOGRAFIA/TERRAS_LIVRES/STELLAR_TERRAS_LIVRES_SUBREGION_LAW_V1_0.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:02_REGRAS/STELLAR_FOUNDATION/STELLAR_UE5_BALANCE_BOUNDARY_LAW_V1_0.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:02_REGRAS/STELLAR_FOUNDATION/STELLAR_CONTENT_ROUTING_CONSTITUTION_V1_3.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:02_REGRAS/STELLAR_FOUNDATION/STELLAR_LIVING_CONTENT_INTEGRATION_LAW_V1_3.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:04_MECANICAS/BALANCEAMENTO_UE5/STELLAR_UE5_BALANCE_BASELINE_V1_0.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:01_LORE/CONTENT_ROUTING_REGISTRY_V4.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:02_REGRAS/STELLAR_FOUNDATION/STELLAR_FOUNDATION_INDEX_V1_9.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:02_REGRAS/STELLAR_REBASE_R2/R2_REBASE_DECISION_LEDGER_V1_8.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:02_REGRAS/STELLAR_REBASE_R2/ANDROMEDA_AUTHORITY_MATRIX_V10_R2_REBASED.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:06_ENGINE/ACTIVE_CONTENT_ADAPTERS/LIVING_SIM_CONTENT_PROJECTION_V4.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:06_ENGINE/ACTIVE_CONTENT_ADAPTERS/LIVING_SCALE_CONTENT_PROJECTION_V4.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:07_AUTOMATION/EXPORTS/UE5/ANDROMEDA_UE5_CONTENT_MANIFEST_V4.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "subregion_count_and_parent",
+      "passed": true,
+      "detail": "Six derived subregions are attached only to TER-011."
+    },
+    {
+      "name": "r2_locality_reference_only",
+      "passed": true,
+      "detail": "R2 localities are referenced without new sovereignty."
+    },
+    {
+      "name": "subregion_provenance",
+      "passed": true,
+      "detail": "Every subregion declares TER-011 as an R2 anchor."
+    },
+    {
+      "name": "player_baseline",
+      "passed": true,
+      "detail": "Player baseline is original and preserves recoverable incapacity."
+    },
+    {
+      "name": "tier_values_and_ttk",
+      "passed": true,
+      "detail": "All four tiers match the approved values and reference-action TTK targets."
+    },
+    {
+      "name": "defense_and_healing_limits",
+      "passed": true,
+      "detail": "Defense and healing caps match the approved technical baseline."
+    },
+    {
+      "name": "root_no_numeric_profile",
+      "passed": true,
+      "detail": "Root has no HP, damage or reward data."
+    },
+    {
+      "name": "routing_complete",
+      "passed": true,
+      "detail": "Subregions and tuning are routed; no editorial niches remain unresolved."
+    },
+    {
+      "name": "index_paths",
+      "passed": true,
+      "detail": "All active-contract paths resolve."
+    },
+    {
+      "name": "living_read_only",
+      "passed": true,
+      "detail": "Living adapters remain read-only."
+    },
+    {
+      "name": "ue5_export",
+      "passed": true,
+      "detail": "UE5 manifest exports geography and tuning with technical authority."
+    },
+    {
+      "name": "source_hash:ANDROMEDA_CODEX_EVIDENCE/SOURCE_ARCHIVES/andromeda-argp.zip",
+      "passed": true,
+      "detail": "998a1940856943aa68043f749c1e615900681b3cde8346c568d25dd6c79f9ce1"
+    },
+    {
+      "name": "source_hash:ANDROMEDA_CODEX_EVIDENCE/SOURCE_ARCHIVES/ARPG CODEX.zip",
+      "passed": true,
+      "detail": "16d602f767ee178b5ca25dec9ad801065d95f09d074358632bf5ed5f0f25e9c8"
+    },
+    {
+      "name": "source_hash:ANDROMEDA_CODEX_EVIDENCE/SOURCE_ARCHIVES/Projeto Andromeda.zip",
+      "passed": true,
+      "detail": "257e456a5d0396310ec2355b3dfc0f11f4e0a5264cf6e764591c8760f5070cb0"
+    }
+  ],
+  "errors": []
+}

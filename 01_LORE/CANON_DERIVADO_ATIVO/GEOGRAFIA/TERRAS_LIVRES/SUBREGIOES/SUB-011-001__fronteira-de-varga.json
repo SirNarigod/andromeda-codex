@@ -1,0 +1,15 @@
+{
+  "record_id": "SUB-011-001",
+  "record_kind": "DERIVED_SUBREGION_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Fronteira de Varga",
+  "parent_political_unit": "TER-011",
+  "provenance": {"approval":"R2-REBASE-LOT-009","r2_anchors":["TER-011","CIT-001","PER-006","CUL-011"],"compatibility":"Local administrative and narrative overlay; it creates no border, city, sovereignty or new authority."},
+  "function":"Travessia comunitária de contratos, mediação, orientação e resposta a incidentes de rota.",
+  "locality_references":["CIT-001 Posto de Varga"],
+  "permitted_catalog_links":{"npc_roles":["NPC-ROLE-001","NPC-ROLE-004","NPC-ROLE-005","NPC-ROLE-013"],"professions":["JOB-003","JOB-004","JOB-005","JOB-015"],"encounters":["ENCOUNTER-001","ENCOUNTER-010"],"resources":[]},
+  "local_conflicts":["autonomia comunitária versus exigências de passagem","contratos urgentes sem prova suficiente","segurança de viajantes versus acolhimento de deslocados"],
+  "prohibitions":["NO_NEW_SOVEREIGNTY","NO_AUTOMATIC_KENUA_SCENE","NO_R2_EPISODE_REWRITE","NO_FIXED_BORDER_COORDINATE"],
+  "story_generators":["Uma mediação de rota revela que duas comunidades usam a mesma passagem por acordos incompatíveis.","Um contrato legítimo exige um guia que ninguém confia plenamente.","Uma resposta a risco obriga Varga a escolher entre fechar a travessia ou receber pessoas em fuga."]
+}

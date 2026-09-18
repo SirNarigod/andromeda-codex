@@ -1,0 +1,41 @@
+{
+  "checkpoint": "FIRST_PLAYABLE_V0_1_20_DEV",
+  "parent_checkpoint": "FIRST_PLAYABLE_V0_1_19_AUTHOR_APPROVED",
+  "status": "STATIC_VALIDATED_RUNTIME_PENDING",
+  "functional_scope": [
+    "persistent_left_click_enemy_selection",
+    "enemy_selection_visual_marker",
+    "space_attack_selected_target"
+  ],
+  "control_contract": {
+    "left_ground": "MOVE",
+    "left_enemy": "SELECT_AND_MOVE_NO_ATTACK",
+    "left_scene_transition": "APPROACH_AND_TRANSITION",
+    "space": "ATTACK_SELECTED_TARGET",
+    "right_enemy": "DIRECT_CONTEXTUAL_ATTACK"
+  },
+  "preserved_contracts": {
+    "global_attack_cooldown_s": 2.0,
+    "ranged_rule_v0_1_19": "CLOSED_UNCHANGED",
+    "enemy_tiers": [
+      "FRACO",
+      "MEDIO",
+      "FORTE",
+      "ALFA"
+    ],
+    "damage_triggered_enemy_aggro": true,
+    "inventory_weapon_selection": true
+  },
+  "authority": {
+    "master_v2_0_1": "READ_ONLY_UNCHANGED",
+    "living_engine_v1_0_0": "READ_ONLY_UNCHANGED"
+  },
+  "static_checks": {
+    "checks": 25,
+    "passed": 25,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1",
+  "backup_authorized": false
+}

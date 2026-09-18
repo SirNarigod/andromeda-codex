@@ -1,0 +1,28 @@
+{
+  "record_id": "ANDROMEDA-STAGE17-S17-B1-B2-DEVELOPMENT-CHECKPOINT-V0.1.0-DEV",
+  "created_at": "2026-08-28T00:22:27.5521144-03:00",
+  "kind": "LOGICAL_DEVELOPMENT_CHECKPOINT",
+  "sealed_baseline": false,
+  "archive_or_backup_created": false,
+  "workspace": "ANDROMEDA_ARPG_STAGE17_PLAYABLE_VERTICAL_SLICE_V0_DEV",
+  "source_initial_manifest_hash": "7a03dc2cbf46b86a68de7beeb2a664cd0bf0e219a0adc45fb11a77d4b7f48059",
+  "statuses": {
+    "S17_00_PROTECTED_BASELINE_FORK": "PASS",
+    "S17_A_PLAYABLE_STARTUP": "PASS",
+    "S17_B1_AUTHORITY_SPACE_CONTRACT": "PASS",
+    "S17_B2_AUTHORITATIVE_CLICK_TO_MOVE": "PASS"
+  },
+  "stage16b": {
+    "status": "CLOSED_READ_ONLY",
+    "checkpoint_sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc",
+    "backup_sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc"
+  },
+  "runtime_housekeeping": {
+    "backend": "OFF",
+    "listener_8000": "NONE",
+    "godot_editor_preexisting": "PRESERVED",
+    "stage17_runtime_evidence": "PRESERVED"
+  },
+  "next_block": "STAGE17_AUTHORITATIVE_INTERACTION_SPATIAL_BINDING_CONTRACT",
+  "next_block_started": false
+}

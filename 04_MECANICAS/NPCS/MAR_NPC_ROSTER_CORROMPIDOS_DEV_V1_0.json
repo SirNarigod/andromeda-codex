@@ -1,0 +1,270 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "MAR-NPC-ROSTER-CORROMPIDOS-DEV-V1.0",
+  "title": "Roster de NPCs - Corrompidos (5a classe, especialistas de exposicao controlada da Vigilia Radicular)",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "balance_model": "Mesmo Total Power Budget (TPB) por tier ja usado nas outras 4 classes: BAIXO=80, MEDIO=100, ALTO=120.",
+  "weapon_source_files": [
+    "MAR_CORRUPTED_CLASS_GAMEPLAY_STATS_DEV_V1_0.json"
+  ],
+  "class_concept_note": "Corrompidos NAO sao os NPCs ZUM-001..010 (fase 59, corrupcao involuntaria). Sao especialistas da Vigilia Radicular (FAC-004) que passam por exposicao controlada e voluntaria a material da Raiz para manejar armas derivadas sem sucumbir - conceito distinto, STELLAR_SYMBIOSIS_LAW permanece exclusiva de Kenua/Espinho-Negro.",
+  "role_system_note": "Ja nasce no sistema de 4 funcoes Battlefield/PvZ GW (fase 27): MEDICO/SUPORTE/ASSALTO/FRANCO.",
+  "npcs": [
+    {
+      "npc_id": "COR-N01",
+      "name": "Vetora de Contencao Senior",
+      "class_name": "Corrompidos",
+      "tier": "ALTO",
+      "role": "SUPORTE",
+      "weapon_ids": [
+        "WPN-RAD-007",
+        "WPN-PRO-007"
+      ],
+      "power_budget": {
+        "hp": 60,
+        "speed": 15,
+        "damage_mod": 30,
+        "armor": 15,
+        "total": 120
+      },
+      "passive_skill": {
+        "skill_id": "COR-P-CASCA_ESTAVEL",
+        "skill_kind": "PASSIVE",
+        "name": "Casca Estavel",
+        "effect": "regenera 2% do HP maximo/s enquanto abaixo de 50% HP"
+      },
+      "active_skill": {
+        "skill_id": "COR-A-AVANCO_RADICULAR",
+        "skill_kind": "ACTIVE",
+        "name": "Avanco Radicular",
+        "effect": "avanca 4m, proximo golpe +30% dano",
+        "resource_cost": 20,
+        "cooldown_s": 8.0
+      }
+    },
+    {
+      "npc_id": "COR-N02",
+      "name": "Lamina de Sangue-de-Raiz",
+      "class_name": "Corrompidos",
+      "tier": "ALTO",
+      "role": "ASSALTO",
+      "weapon_ids": [
+        "WPN-RAD-008",
+        "WPN-PRO-008"
+      ],
+      "power_budget": {
+        "hp": 30,
+        "speed": 20,
+        "damage_mod": 55,
+        "armor": 15,
+        "total": 120
+      },
+      "passive_skill": {
+        "skill_id": "COR-P-RESISTENCIA_VIVA",
+        "skill_kind": "PASSIVE",
+        "name": "Resistencia Viva",
+        "effect": "+20% resistencia a dano quando HP < 30%"
+      },
+      "active_skill": {
+        "skill_id": "COR-A-SURTO",
+        "skill_kind": "ACTIVE",
+        "name": "Surto de Corrupcao",
+        "effect": "+25% damage_mod por 5s",
+        "resource_cost": 30,
+        "cooldown_s": 12.0
+      }
+    },
+    {
+      "npc_id": "COR-N03",
+      "name": "Curadora de Exposicao Controlada",
+      "class_name": "Corrompidos",
+      "tier": "MEDIO",
+      "role": "MEDICO",
+      "weapon_ids": [
+        "WPN-RAD-005",
+        "WPN-PRO-005"
+      ],
+      "power_budget": {
+        "hp": 30,
+        "speed": 25,
+        "damage_mod": 25,
+        "armor": 20,
+        "total": 100
+      },
+      "passive_skill": {
+        "skill_id": "COR-P-VENTILACAO_CONTIDA",
+        "skill_kind": "PASSIVE",
+        "name": "Ventilacao Contida",
+        "effect": "+10% regeneracao de vigor fora de combate"
+      },
+      "active_skill": {
+        "skill_id": "COR-A-SEIVA_CURATIVA",
+        "skill_kind": "ACTIVE",
+        "name": "Seiva Curativa",
+        "effect": "restaura HP de um aliado proximo (aplicacao controlada de Seiva Corrompida)",
+        "resource_cost": 25,
+        "cooldown_s": 10.0
+      }
+    },
+    {
+      "npc_id": "COR-N04",
+      "name": "Batedora de Esporos",
+      "class_name": "Corrompidos",
+      "tier": "MEDIO",
+      "role": "FRANCO",
+      "weapon_ids": [
+        "WPN-RAD-004",
+        "WPN-PRO-004"
+      ],
+      "power_budget": {
+        "hp": 25,
+        "speed": 40,
+        "damage_mod": 25,
+        "armor": 10,
+        "total": 100
+      },
+      "passive_skill": {
+        "skill_id": "COR-P-VENTILACAO_CONTIDA",
+        "skill_kind": "PASSIVE",
+        "name": "Ventilacao Contida",
+        "effect": "+10% regeneracao de vigor fora de combate"
+      },
+      "active_skill": {
+        "skill_id": "COR-A-SALTO_RADICULAR",
+        "skill_kind": "ACTIVE",
+        "name": "Salto Radicular",
+        "effect": "desloca 6m e remove enraizamento",
+        "resource_cost": 18,
+        "cooldown_s": 9.0
+      }
+    },
+    {
+      "npc_id": "COR-N05",
+      "name": "Guardia de Nucleo Vivo",
+      "class_name": "Corrompidos",
+      "tier": "MEDIO",
+      "role": "SUPORTE",
+      "weapon_ids": [
+        "WPN-RAD-003",
+        "WPN-PRO-003"
+      ],
+      "power_budget": {
+        "hp": 45,
+        "speed": 15,
+        "damage_mod": 20,
+        "armor": 20,
+        "total": 100
+      },
+      "passive_skill": {
+        "skill_id": "COR-P-PLACAS_RADICULARES",
+        "skill_kind": "PASSIVE",
+        "name": "Placas Radiculares",
+        "effect": "-8% dano fisico recebido (flat)"
+      },
+      "active_skill": {
+        "skill_id": "COR-A-AVANCO_RADICULAR",
+        "skill_kind": "ACTIVE",
+        "name": "Avanco Radicular",
+        "effect": "avanca 4m, proximo golpe +30% dano",
+        "resource_cost": 20,
+        "cooldown_s": 8.0
+      }
+    },
+    {
+      "npc_id": "COR-N06",
+      "name": "Ceifadora de Casca Negra",
+      "class_name": "Corrompidos",
+      "tier": "MEDIO",
+      "role": "ASSALTO",
+      "weapon_ids": [
+        "WPN-RAD-006",
+        "WPN-PRO-006"
+      ],
+      "power_budget": {
+        "hp": 20,
+        "speed": 25,
+        "damage_mod": 45,
+        "armor": 10,
+        "total": 100
+      },
+      "passive_skill": {
+        "skill_id": "COR-P-RESISTENCIA_VIVA",
+        "skill_kind": "PASSIVE",
+        "name": "Resistencia Viva",
+        "effect": "+20% resistencia a dano quando HP < 30%"
+      },
+      "active_skill": {
+        "skill_id": "COR-A-SURTO",
+        "skill_kind": "ACTIVE",
+        "name": "Surto de Corrupcao",
+        "effect": "+25% damage_mod por 5s",
+        "resource_cost": 30,
+        "cooldown_s": 12.0
+      }
+    },
+    {
+      "npc_id": "COR-N07",
+      "name": "Aprendiz de Contencao",
+      "class_name": "Corrompidos",
+      "tier": "BAIXO",
+      "role": "MEDICO",
+      "weapon_ids": [
+        "WPN-RAD-001",
+        "WPN-PRO-001"
+      ],
+      "power_budget": {
+        "hp": 25,
+        "speed": 20,
+        "damage_mod": 20,
+        "armor": 15,
+        "total": 80
+      },
+      "passive_skill": {
+        "skill_id": "COR-P-PLACAS_RADICULARES",
+        "skill_kind": "PASSIVE",
+        "name": "Placas Radiculares",
+        "effect": "-8% dano fisico recebido (flat)"
+      },
+      "active_skill": {
+        "skill_id": "COR-A-SEIVA_CURATIVA",
+        "skill_kind": "ACTIVE",
+        "name": "Seiva Curativa",
+        "effect": "restaura HP de um aliado proximo (aplicacao controlada de Seiva Corrompida)",
+        "resource_cost": 25,
+        "cooldown_s": 10.0
+      }
+    },
+    {
+      "npc_id": "COR-N08",
+      "name": "Batedor Novato",
+      "class_name": "Corrompidos",
+      "tier": "BAIXO",
+      "role": "FRANCO",
+      "weapon_ids": [
+        "WPN-RAD-002",
+        "WPN-PRO-002"
+      ],
+      "power_budget": {
+        "hp": 15,
+        "speed": 35,
+        "damage_mod": 20,
+        "armor": 10,
+        "total": 80
+      },
+      "passive_skill": {
+        "skill_id": "COR-P-VENTILACAO_CONTIDA",
+        "skill_kind": "PASSIVE",
+        "name": "Ventilacao Contida",
+        "effect": "+10% regeneracao de vigor fora de combate"
+      },
+      "active_skill": {
+        "skill_id": "COR-A-SALTO_RADICULAR",
+        "skill_kind": "ACTIVE",
+        "name": "Salto Radicular",
+        "effect": "desloca 6m e remove enraizamento",
+        "resource_cost": 18,
+        "cooldown_s": 9.0
+      }
+    }
+  ]
+}

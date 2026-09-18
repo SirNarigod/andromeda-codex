@@ -1,0 +1,22 @@
+{
+  "record_id": "R2_REBASE_LOT_010_VALIDATION_V1_0",
+  "generated_at": "2026-09-07",
+  "status": "PASS",
+  "checks": [
+    {"id":"JSON-001","result":"PASS","detail":"All 11 primary Lot 10 JSON records parse successfully; the package-validation record is validated separately."},
+    {"id":"R2-001","result":"PASS","detail":"R2 source archive hash is retained as 257e456a5d0396310ec2355b3dfc0f11f4e0a5264cf6e764591c8760f5070cb0."},
+    {"id":"HISTORY-001","result":"PASS","detail":"Both V1.0 laws and all superseded index and adapter records remain present."},
+    {"id":"CAUSE-001","result":"PASS","detail":"Causal event contract requires origin, actor, scope, cost or risk, evidence and allowed effects."},
+    {"id":"CAUSE-002","result":"PASS","detail":"Depth 8, global budget 64, offline-major-change block and authorial gates are explicit."},
+    {"id":"CAUSE-003","result":"PASS","detail":"Recovery is history-preserving and cannot erase harm."},
+    {"id":"AUTO-001","result":"PASS","detail":"Six gradual recognition statuses are defined; transition requires provenance, evidence, local decision and causal ledger."},
+    {"id":"AUTO-002","result":"PASS","detail":"No automatic personhood, sovereignty, territorial control, canon mutation or LLM direct world action is allowed."},
+    {"id":"GATE-001","result":"PASS","detail":"Kenua, sealed episodes, pre-S01E08 Amadon, authorial deaths and irreversible Root transitions remain protected."},
+    {"id":"SIM-001","result":"PASS","detail":"LivingSim V5 exposes bounded local causal and agent metadata only."},
+    {"id":"SCALE-001","result":"PASS","detail":"Living Scale V5 aggregates permitted traces without inferring sovereignty."},
+    {"id":"UE5-001","result":"PASS","detail":"UE5 V5 adds schemas only and rejects unaudited events or status transitions."},
+    {"id":"ROUTING-001","result":"PASS","detail":"Routing V5 gives each new law one canonical home and reference-only consumers."},
+    {"id":"INDEX-001","result":"PASS","detail":"Foundation index V1.10 activates both laws and clears the pending review list."}
+  ],
+  "errors": []
+}

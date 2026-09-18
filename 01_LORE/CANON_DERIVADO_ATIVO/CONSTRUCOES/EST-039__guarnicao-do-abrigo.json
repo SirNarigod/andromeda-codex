@@ -1,0 +1,34 @@
+{
+  "est_id": "EST-039",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Guarnição do Abrigo",
+  "building_type": "MILITAR",
+  "parent_locality": "LOC-011-006",
+  "parent_subregion": "SUB-011-006",
+  "parent_political_unit": "TER-011",
+  "function": "Posto defensivo que protege viajantes na perigosa área das Fendas da Névoa.",
+  "economic_role": {
+    "is_vendor": false,
+    "sells": [],
+    "produces": [],
+    "regulation_factor": 0.4
+  },
+  "capacity": {
+    "jobs": 6,
+    "residents": 6
+  },
+  "professions_linked": [],
+  "notable_link": "Louva-Fenda (CRI-012), Mandíbula-de-Névoa (CRI-013); classe Soldados",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "PEDRA_REFORCADA",
+    "flammability": "BAIXA",
+    "recovery_days": 7
+  }
+}

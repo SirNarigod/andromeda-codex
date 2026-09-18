@@ -1,0 +1,35 @@
+{
+  "est_id": "EST-020",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Ala de Pesquisa Central",
+  "building_type": "INSTITUCIONAL",
+  "parent_locality": "LOC-005-002",
+  "parent_subregion": "SUB-005-002",
+  "parent_political_unit": "TER-005",
+  "function": "Pesquisa avançada sobre interação entre método mágico e tecnologia.",
+  "economic_role": {
+    "is_vendor": false,
+    "sells": [],
+    "produces": [],
+    "regulation_factor": 0.6
+  },
+  "capacity": {
+    "jobs": 10,
+    "residents": 0
+  },
+  "professions_linked": [],
+  "notable_link": "Laboratórios de Convergência (SUB-005-002)",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION",
+    "NO_INVENTED_RUNE_EFFECT"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "PEDRA_E_ALVENARIA",
+    "flammability": "BAIXA",
+    "recovery_days": 7
+  }
+}

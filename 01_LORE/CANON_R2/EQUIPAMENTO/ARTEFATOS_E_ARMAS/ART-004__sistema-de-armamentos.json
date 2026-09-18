@@ -1,0 +1,65 @@
+{
+  "record_id": "ART-004",
+  "record_kind": "R2_CANONICAL_ENTRY_MIRROR",
+  "authority": "CANON_R2_CONFIRMADO",
+  "canonical_home": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-004__sistema-de-armamentos.json",
+  "source": {
+    "archive_sha256": "257e456a5d0396310ec2355b3dfc0f11f4e0a5264cf6e764591c8760f5070cb0",
+    "lineage": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json",
+    "document_sha256": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726"
+  },
+  "entry": {
+    "code": "ART-004",
+    "slug": "sistema-de-armamentos",
+    "title": "Sistema de armamentos de Stellar",
+    "subtitle": "Categorias, acesso e runificação",
+    "category": "ART",
+    "secondaryCategories": [],
+    "canon": "Cânone consolidado",
+    "spoiler": 1,
+    "sealed": false,
+    "image": null,
+    "imageStatus": null,
+    "summary": "Classificação de armas usada em Stellar, distinguindo ferramentas improvisadas, armamento mecânico e versões rúnicas de maior custo e potência.",
+    "facts": {
+      "Acesso sem magia": "Armas improvisadas, mecânicas e munição convencional",
+      "Acesso com recursos": "Armas rúnicas compradas em armerias ou lojas de magos",
+      "Regra central": "Runas ampliam ou direcionam energia existente; não criam potência infinita",
+      "Fatores de preço": "Material, complexidade rúnica, carga, licença e manutenção"
+    },
+    "sections": [
+      {
+        "heading": "Faixas de runificação",
+        "body": "R0: sem runas. R1: uma runa funcional. R2: matriz de runas coordenadas. R3: vínculo especializado com manutenção frequente. Quanto maior a faixa, maior o custo, a potência e o risco de falha."
+      },
+      {
+        "heading": "Desigualdade de acesso",
+        "body": "Pessoas sem magia ou poucos recursos adaptam ferramentas, peças ferroviárias e equipamento de trabalho. Quem possui dinheiro compra armas industriais ou rúnicas em lojas de magos, criando diferença real de poder."
+      }
+    ],
+    "relations": [
+      {
+        "slug": "runas",
+        "label": "Tecnologia mágica"
+      },
+      {
+        "slug": "armas-improvisadas",
+        "label": "Acesso popular"
+      },
+      {
+        "slug": "armerias-runicas",
+        "label": "Comércio especializado"
+      }
+    ],
+    "keywords": [
+      "armas",
+      "runas",
+      "categorias",
+      "lojas de magos",
+      "improvisadas"
+    ],
+    "sources": [
+      "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "record_id": "ARPG-STAGE06-COMPLETION-REPORT-V0.7.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "stage": "06/20",
+  "version": "V0.7.0",
+  "status": "PASS",
+  "implemented": {
+    "skill_core": true,
+    "hybrid_catalog": true,
+    "canonical_magic_read_only_sources": 30,
+    "gameplay_derived_skill_prototypes": 6,
+    "active_hotbar_slots": 8,
+    "passive_slots": 4,
+    "resource_cost_integration": true,
+    "cooldown_integration": true,
+    "combat_integration": true,
+    "passive_combat_modifiers": true,
+    "mastery_and_rank": true,
+    "emergent_build_evidence": true,
+    "fixed_class_assignment": false,
+    "deterministic_skill_events": true,
+    "idempotent_replay": true,
+    "persistence": true,
+    "client_snapshot": true
+  },
+  "canon_guard": {
+    "canonical_magic_auto_castable": false,
+    "canonical_magic_numeric_interpretation": "BLOCKED_UNTIL_AUTHORED_OR_MAPPED",
+    "canon_mutations": 0
+  },
+  "tests": {
+    "functional_unit": {
+      "checks": 16,
+      "passed": 16,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "persistence_unit": {
+      "checks": 1,
+      "passed": 1,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "validation": {
+      "checks": 33,
+      "passed": 33,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "stress": {
+      "checks": 33,
+      "passed": 33,
+      "failed": 0,
+      "status": "PASS",
+      "profiles": 2,
+      "successful_uses": 12,
+      "idempotent_replays": 12
+    }
+  },
+  "regressions": {
+    "stage05": "PASS",
+    "stage04": "PASS",
+    "stage03": "PASS",
+    "stage02": "PASS",
+    "stage01": "PASS",
+    "stage00": "PASS",
+    "country_v15": "PASS",
+    "master": "PASS"
+  },
+  "open_corrections": 0,
+  "art_dependency": "NONE",
+  "godot": {
+    "connection": "USER_REPORTED_CONNECTED",
+    "execution": "DEFERRED_USER_ON_MOBILE"
+  },
+  "next_stage": "07_ACTORS",
+  "generated_at": "2026-08-18T17:12:30.966775+00:00"
+}

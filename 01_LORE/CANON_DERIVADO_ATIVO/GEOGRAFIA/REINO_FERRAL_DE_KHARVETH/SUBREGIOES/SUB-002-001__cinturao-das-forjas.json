@@ -1,0 +1,18 @@
+{
+  "record_id": "SUB-002-001",
+  "record_kind": "DERIVED_SUBREGION_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Cinturão das Forjas",
+  "parent_political_unit": "TER-002",
+  "provenance": {"approval": "GAMEPLAY_DERIVED_DEV_SOURCE", "r2_anchors": ["TER-002", "ART-004", "ART-015"], "compatibility": "Camada administrativa e narrativa local; não cria fronteira, cidade, soberania ou nova autoridade."},
+  "function": "Núcleo industrial do reino — fabricação de armamentos convencionais e runificação sob licença real (ART-004).",
+  "locality_references": ["LOC-002-001 Forja Real de Kharveth"],
+  "permitted_catalog_links": {"npc_roles": ["classe:Soldados"], "professions": ["armeiro"], "encounters": [], "resources": []},
+  "local_conflicts": ["produção industrial em massa versus artesãos independentes", "licença real cara versus mercado paralelo de armas sem registro"],
+  "prohibitions": ["NO_NEW_SOVEREIGNTY", "NO_AUTOMATIC_KENUA_SCENE", "NO_R2_EPISODE_REWRITE", "NO_FIXED_BORDER_COORDINATE", "NO_INVENTED_RUNE_EFFECT"],
+  "story_generators": [
+    "Uma remessa de armas sai da forja sem o selo de inspeção de matriz e ninguém assume a responsabilidade.",
+    "Um artesão independente compete com a produção real e precisa decidir entre vender barato ou fechar."
+  ]
+}

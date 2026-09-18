@@ -1,0 +1,21 @@
+{
+  "record_id": "ARPG-CHARACTER-CORE-CONTRACT-V0.3.0",
+  "stage": "02/18",
+  "version": "V0.3.0",
+  "authority": "GAMEPLAY_DERIVED_NOT_CANON",
+  "depends_on": "ARPG_GAME_CORE_V0.2.0",
+  "player_models": ["CREATED", "CANONICAL"],
+  "canonical_character_numeric_policy": "DO_NOT_INVENT_CANONICAL_STATS; use shared gameplay-derived baseline unless an authorial gameplay profile is explicitly approved",
+  "core_attributes": ["POWER", "AGILITY", "VITALITY", "INTELLECT", "WILL", "PERCEPTION"],
+  "level": {"start": 1, "cap": 100, "attribute_points_per_level": 5},
+  "vitals": {"life_states": ["ALIVE", "DEAD"], "respawn": "DEFERRED_STAGE13"},
+  "progression_events": {"idempotent": true, "event_ref_unique_per_world": true},
+  "deferred": {
+    "combat_formulas": "STAGE03",
+    "equipment_modifiers": "STAGE05",
+    "skills_and_classification": "STAGE07",
+    "death_respawn_resolution": "STAGE13",
+    "art": "STAGE18_AFTER_PRE_ART_GATE"
+  },
+  "status": "ACTIVE_DEV"
+}

@@ -1,0 +1,58 @@
+{
+  "record_id": "STELLAR-PROGRESSION-QUEST-CONSEQUENCE-LAW-V1.1",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.1",
+  "status": "ACTIVE_R2_COMPATIBLE_DERIVATION",
+  "supersedes": "STELLAR_PROGRESSION_QUEST_CONSEQUENCE_LAW_V1_0",
+  "authority": {
+    "scope": "PLAYER_PROGRESSION_AND_LOCAL_QUESTS",
+    "progression": "EMERGENT_DERIVED_GAMEPLAY",
+    "quest_outcomes": "LOCAL_AUDITABLE_PERSISTENT"
+  },
+  "dependencies": [
+    "STELLAR_PLAYER_CAMPAIGN_LAW_V1_0.json",
+    "STELLAR_LIFE_DEATH_REBIRTH_LAW_V1_1.json",
+    "STELLAR_SOVEREIGNTY_TERRITORY_LAW_V1_1.json",
+    "STELLAR_ECOLOGY_TEMPORAL_ROUTINE_LAW_V1_0.json"
+  ],
+  "invariants": [
+    "PROGRESSION_DOES_NOT_ASSIGN_FIXED_CLASS_IDENTITY",
+    "MASTERY_REQUIRES_USE_TRAINING_MENTORSHIP_CONSEQUENCE_OR_CONTEXT",
+    "QUESTS_CHANGE_RELATIONSHIPS_CONDITIONS_ACCESS_OR_KNOWLEDGE",
+    "QUEST_OUTCOMES_ARE_LOCAL_AUDITABLE_AND_PERSISTENT",
+    "REPUTATION_IS_CONTEXTUAL_NOT_A_SINGLE_MORAL_SCORE",
+    "QUEST_RESOLUTION_NEVER_ERASES_CONSEQUENCE"
+  ],
+  "prohibitions": [
+    "NO_GLOBAL_REPUTATION_AS_SINGLE_MORAL_SCORE",
+    "NO_QUEST_AUTO_RESOLUTION_OFFLINE",
+    "NO_ITEM_OR_SKILL_CANON_PROMOTION_BY_LOOT",
+    "NO_PLANETARY_REWRITE_AS_REWARD",
+    "NO_QUEST_ALTERS_R2_SEALED_EVENT_WITHOUT_AUTHORIAL_GATE",
+    "NO_QUEST_GRANTS_SOVEREIGNTY_OR_IRREVERSIBLE_POPULATION_CHANGE"
+  ],
+  "simulation_effects": [
+    "Quest contracts expose stakes, participants, evidence, local scope, protected boundaries and persistent aftermath before resolution.",
+    "Progression records practice provenance and may be reduced, redirected or complicated by injury, loss, rebirth or changed relationships.",
+    "A completed quest can create new requests, rumors, access restrictions or resource strain without silently escalating world state."
+  ],
+  "allowed_states": [
+    "OFFERED",
+    "INVESTIGATING",
+    "COMMITTED",
+    "RESOLVED_WITH_COST",
+    "FAILED_WITH_CONSEQUENCE",
+    "DEFERRED",
+    "AUTHORIAL_GATE_REVIEW"
+  ],
+  "story_generators": [
+    "Um aprendiz domina uma técnica ao proteger uma oficina, mas a prática cria uma rivalidade com quem perdeu trabalho na crise.",
+    "Uma quest de abastecimento resolve a fome de um bairro e expõe que outra rota foi deliberadamente abandonada.",
+    "A repetição de uma habilidade revelada por ecos atrai uma mentora que exige provas antes de ensinar seu verdadeiro método."
+  ],
+  "compatibility": {
+    "v1_0": "Preserved as historical source; V1.1 makes local quest contracts and progression provenance operational.",
+    "runtime_numbers": "Levels, ranks, timers and reward quantities are revisable gameplay configuration, never canon.",
+    "unreal_engine_5": "Can implement objectives and progression adapters only after each adapter honors authorial gates."
+  }
+}

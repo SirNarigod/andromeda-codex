@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-008-001",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Santuário das Copas",
+  "parent_subregion": "SUB-008-001",
+  "parent_political_unit": "TER-008",
+  "function": "Assentamento suspenso típico dos Povos das Copas.",
+  "notable_link": "Copas Altas (SUB-008-001); classe Nativos",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-008-001",
+  "settlement_tier": "COMPLEXO",
+  "history": "O Santuário das Copas foi erguido onde as árvores formam um teto natural. Peregrinos vêm pedir abrigo, mas os anciãos também julgam quem corta madeira sem permissão.",
+  "sensory": "A luz chega em faixas verdes; raízes elevadas transformam o caminho em degraus vivos.",
+  "hook": "Uma copa inteira perde folhas depois que um viajante deixa uma moeda de metal.",
+  "secondary_hook": "O metal tem a mesma liga usada nas ferramentas de Serverus.",
+  "detail": "Visitantes deixam uma lembrança útil, nunca uma oferenda preciosa.",
+  "figures": [
+    {
+      "role": "Mãe Aruã",
+      "name": "Mãe Aruã",
+      "note": "guardiã que escuta a floresta"
+    },
+    {
+      "role": "Pek Ninho",
+      "name": "Pek Ninho",
+      "note": "jovem coletor acusado de profanar uma árvore"
+    }
+  ]
+}

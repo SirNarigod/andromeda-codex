@@ -1,0 +1,27 @@
+{
+  "build": "V0.1.22 DEV",
+  "baseline": "V0.1.21 DEV — runtime PASS informado pelo autor",
+  "status": "STATIC_PASS_RUNTIME_PENDING",
+  "checks": 23,
+  "passed": 23,
+  "failed": 0,
+  "interaction_coverage": {
+    "NPC": true,
+    "MERCHANT": true,
+    "PASSIVE_ANIMAL": true,
+    "TREE": true,
+    "ROCK": true,
+    "INTERACTABLE": true,
+    "HOVERABLE": true
+  },
+  "control_contract": {
+    "left_empty_ground": "MOVE",
+    "left_selectable": "SELECT_AND_STOP",
+    "left_scene_transition": "APPROACH_AND_TRANSITION",
+    "E_selected_non_enemy": "APPROACH_AND_CONTEXT_ACTION",
+    "E_selected_enemy": "NO_ATTACK_FEEDBACK",
+    "space_selected_enemy": "ATTACK",
+    "right_click": "DIRECT_CONTEXT_ACTION"
+  },
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1"
+}

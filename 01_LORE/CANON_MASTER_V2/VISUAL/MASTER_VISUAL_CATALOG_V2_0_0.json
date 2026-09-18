@@ -1,0 +1,1802 @@
+{
+  "record_id": "MASTER-VISUAL-CATALOG-V2.0.0",
+  "title": "Visual oficial do MASTER V2.0.1 (domínio visual/artefatos: 15 stubs + 90 briefs de design reais)",
+  "provenance": {
+    "master_release": "ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE",
+    "master_release_zip_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "source_files": [
+      "01_CANON/ANDROMEDA_CODEX_CANON_MASTER_V2_0_0.json (entities, domain=visual/artefatos)",
+      "06_VISUAL/MAR_VISUAL_BRIEFS_V1_0.json (90 briefs: WPN/RUN/MAG)"
+    ],
+    "authority": "CANON_MASTER_V2_CONFIRMADO",
+    "visual_artefatos_domain_note": "As 15 entradas do dominio 'visual/artefatos' sao apenas os mesmos ART-001..015 ja 100% conhecidos e catalogados desde o inicio desta sessao (Espinho-Negro, Espada de Kenua, Marcador de rota, Sistema de armamentos, e as 10 categorias de arma fisica + Armerias runicas) - stubs sem informacao visual nova alem do nome. NADA NOVO aqui.",
+    "real_content_found": "O conteudo visual real esta em 06_VISUAL/MAR_VISUAL_BRIEFS_V1_0.json: 90 briefs de design (silhueta, proporcoes, materiais, mecanismo visivel, estados, vistas) para as 30 armas canonicas (WPN-001..030, ja presentes em MAR_CANON_GAMEPLAY_STATS_V1_1.json), as 30 runas (RUN-001..030) e as 30 magias (MAG-001..030) - MAS as runas/magias referenciadas aqui (RUN-XXX, MAG-008..030) ainda NAO foram importadas como conteudo funcional - ver achado critico registrado em CORRECAO_MAR_RUNAS_MAGIAS abaixo.",
+    "asset_policy": "Briefs prontos; geracao de arte (imagem real) permanece etapa posterior, fora do escopo deste pacote."
+  },
+  "visual_artefatos_domain_stubs_no_new_info": [
+    {
+      "id": "ART-001",
+      "name": "Espinho-Negro"
+    },
+    {
+      "id": "ART-002",
+      "name": "Espada de Kenua"
+    },
+    {
+      "id": "ART-003",
+      "name": "Marcador de rota"
+    },
+    {
+      "id": "ART-004",
+      "name": "Sistema de armamentos de Stellar"
+    },
+    {
+      "id": "ART-005",
+      "name": "Lâminas"
+    },
+    {
+      "id": "ART-006",
+      "name": "Fuzis"
+    },
+    {
+      "id": "ART-007",
+      "name": "Revólveres"
+    },
+    {
+      "id": "ART-008",
+      "name": "Espingardas"
+    },
+    {
+      "id": "ART-009",
+      "name": "Fuzis de precisão"
+    },
+    {
+      "id": "ART-010",
+      "name": "Armas de arremesso"
+    },
+    {
+      "id": "ART-011",
+      "name": "Armas de explosão"
+    },
+    {
+      "id": "ART-012",
+      "name": "Armas de contenção"
+    },
+    {
+      "id": "ART-013",
+      "name": "Dispositivos de flash"
+    },
+    {
+      "id": "ART-014",
+      "name": "Armas improvisadas"
+    },
+    {
+      "id": "ART-015",
+      "name": "Armerias rúnicas"
+    }
+  ],
+  "count_visual_briefs": 90,
+  "weapon_visual_briefs": [
+    {
+      "id": "VIS-WPN-001",
+      "entity_id": "WPN-001",
+      "entity_type": "WEAPON",
+      "silhouette": "largo",
+      "proportions": "ferramenta portátil de proporção funcional",
+      "materials": [
+        "liga ferral",
+        "fibra luminal",
+        "cerâmica de condução"
+      ],
+      "visible_mechanism": "selo de registro e aro dissipador visíveis",
+      "rune_detail": "RUN-001",
+      "states": [
+        "inativa",
+        "em uso autorizado",
+        "em revisão"
+      ],
+      "views": [
+        "frontal",
+        "lateral",
+        "detalhe de empunhadura",
+        "detalhe de matriz"
+      ],
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-WPN-002",
+      "entity_id": "WPN-002",
+      "entity_type": "WEAPON",
+      "silhouette": "compacto",
+      "proportions": "ferramenta portátil de proporção funcional",
+      "materials": [
+        "liga ferral",
+        "fibra luminal",
+        "cerâmica de condução"
+      ],
+      "visible_mechanism": "selo de registro e aro dissipador visíveis",
+      "rune_detail": "RUN-002",
+      "states": [
+        "inativa",
+        "em uso autorizado",
+        "em revisão"
+      ],
+      "views": [
+        "frontal",
+        "lateral",
+        "detalhe de empunhadura",
+        "detalhe de matriz"
+      ],
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-WPN-003",
+      "entity_id": "WPN-003",
+      "entity_type": "WEAPON",
+      "silhouette": "vertical",
+      "proportions": "ferramenta portátil de proporção funcional",
+      "materials": [
+        "liga ferral",
+        "fibra luminal",
+        "cerâmica de condução"
+      ],
+      "visible_mechanism": "selo de registro e aro dissipador visíveis",
+      "rune_detail": "RUN-003",
+      "states": [
+        "inativa",
+        "em uso autorizado",
+        "em revisão"
+      ],
+      "views": [
+        "frontal",
+        "lateral",
+        "detalhe de empunhadura",
+        "detalhe de matriz"
+      ],
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-WPN-004",
+      "entity_id": "WPN-004",
+      "entity_type": "WEAPON",
+      "silhouette": "largo",
+      "proportions": "ferramenta portátil de proporção funcional",
+      "materials": [
+        "liga ferral",
+        "fibra luminal",
+        "cerâmica de condução"
+      ],
+      "visible_mechanism": "selo de registro e aro dissipador visíveis",
+      "rune_detail": "RUN-004",
+      "states": [
+        "inativa",
+        "em uso autorizado",
+        "em revisão"
+      ],
+      "views": [
+        "frontal",
+        "lateral",
+        "detalhe de empunhadura",
+        "detalhe de matriz"
+      ],
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-WPN-005",
+      "entity_id": "WPN-005",
+      "entity_type": "WEAPON",
+      "silhouette": "compacto",
+      "proportions": "ferramenta portátil de proporção funcional",
+      "materials": [
+        "liga ferral",
+        "fibra luminal",
+        "cerâmica de condução"
+      ],
+      "visible_mechanism": "selo de registro e aro dissipador visíveis",
+      "rune_detail": "RUN-005",
+      "states": [
+        "inativa",
+        "em uso autorizado",
+        "em revisão"
+      ],
+      "views": [
+        "frontal",
+        "lateral",
+        "detalhe de empunhadura",
+        "detalhe de matriz"
+      ],
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-WPN-006",
+      "entity_id": "WPN-006",
+      "entity_type": "WEAPON",
+      "silhouette": "vertical",
+      "proportions": "ferramenta portátil de proporção funcional",
+      "materials": [
+        "liga ferral",
+        "fibra luminal",
+        "cerâmica de condução"
+      ],
+      "visible_mechanism": "selo de registro e aro dissipador visíveis",
+      "rune_detail": "RUN-006",
+      "states": [
+        "inativa",
+        "em uso autorizado",
+        "em revisão"
+      ],
+      "views": [
+        "frontal",
+        "lateral",
+        "detalhe de empunhadura",
+        "detalhe de matriz"
+      ],
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-WPN-007",
+      "entity_id": "WPN-007",
+      "entity_type": "WEAPON",
+      "silhouette": "largo",
+      "proportions": "ferramenta portátil de proporção funcional",
+      "materials": [
+        "liga ferral",
+        "fibra luminal",
+        "cerâmica de condução"
+      ],
+      "visible_mechanism": "selo de registro e aro dissipador visíveis",
+      "rune_detail": "RUN-007",
+      "states": [
+        "inativa",
+        "em uso autorizado",
+        "em revisão"
+      ],
+      "views": [
+        "frontal",
+        "lateral",
+        "detalhe de empunhadura",
+        "detalhe de matriz"
+      ],
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-WPN-008",
+      "entity_id": "WPN-008",
+      "entity_type": "WEAPON",
+      "silhouette": "compacto",
+      "proportions": "ferramenta portátil de proporção funcional",
+      "materials": [
+        "liga ferral",
+        "fibra luminal",
+        "cerâmica de condução"
+      ],
+      "visible_mechanism": "selo de registro e aro dissipador visíveis",
+      "rune_detail": "RUN-008",
+      "states": [
+        "inativa",
+        "em uso autorizado",
+        "em revisão"
+      ],
+      "views": [
+        "frontal",
+        "lateral",
+        "detalhe de empunhadura",
+        "detalhe de matriz"
+      ],
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-WPN-009",
+      "entity_id": "WPN-009",
+      "entity_type": "WEAPON",
+      "silhouette": "vertical",
+      "proportions": "ferramenta portátil de proporção funcional",
+      "materials": [
+        "liga ferral",
+        "fibra luminal",
+        "cerâmica de condução"
+      ],
+      "visible_mechanism": "selo de registro e aro dissipador visíveis",
+      "rune_detail": "RUN-009",
+      "states": [
+        "inativa",
+        "em uso autorizado",
+        "em revisão"
+      ],
+      "views": [
+        "frontal",
+        "lateral",
+        "detalhe de empunhadura",
+        "detalhe de matriz"
+      ],
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-WPN-010",
+      "entity_id": "WPN-010",
+      "entity_type": "WEAPON",
+      "silhouette": "largo",
+      "proportions": "ferramenta portátil de proporção funcional",
+      "materials": [
+        "liga ferral",
+        "fibra luminal",
+        "cerâmica de condução"
+      ],
+      "visible_mechanism": "selo de registro e aro dissipador visíveis",
+      "rune_detail": "RUN-010",
+      "states": [
+        "inativa",
+        "em uso autorizado",
+        "em revisão"
+      ],
+      "views": [
+        "frontal",
+        "lateral",
+        "detalhe de empunhadura",
+        "detalhe de matriz"
+      ],
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-WPN-011",
+      "entity_id": "WPN-011",
+      "entity_type": "WEAPON",
+      "silhouette": "compacto",
+      "proportions": "ferramenta portátil de proporção funcional",
+      "materials": [
+        "liga ferral",
+        "fibra luminal",
+        "cerâmica de condução"
+      ],
+      "visible_mechanism": "selo de registro e aro dissipador visíveis",
+      "rune_detail": "RUN-011",
+      "states": [
+        "inativa",
+        "em uso autorizado",
+        "em revisão"
+      ],
+      "views": [
+        "frontal",
+        "lateral",
+        "detalhe de empunhadura",
+        "detalhe de matriz"
+      ],
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-WPN-012",
+      "entity_id": "WPN-012",
+      "entity_type": "WEAPON",
+      "silhouette": "vertical",
+      "proportions": "ferramenta portátil de proporção funcional",
+      "materials": [
+        "liga ferral",
+        "fibra luminal",
+        "cerâmica de condução"
+      ],
+      "visible_mechanism": "selo de registro e aro dissipador visíveis",
+      "rune_detail": "RUN-012",
+      "states": [
+        "inativa",
+        "em uso autorizado",
+        "em revisão"
+      ],
+      "views": [
+        "frontal",
+        "lateral",
+        "detalhe de empunhadura",
+        "detalhe de matriz"
+      ],
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-WPN-013",
+      "entity_id": "WPN-013",
+      "entity_type": "WEAPON",
+      "silhouette": "largo",
+      "proportions": "ferramenta portátil de proporção funcional",
+      "materials": [
+        "liga ferral",
+        "fibra luminal",
+        "cerâmica de condução"
+      ],
+      "visible_mechanism": "selo de registro e aro dissipador visíveis",
+      "rune_detail": "RUN-013",
+      "states": [
+        "inativa",
+        "em uso autorizado",
+        "em revisão"
+      ],
+      "views": [
+        "frontal",
+        "lateral",
+        "detalhe de empunhadura",
+        "detalhe de matriz"
+      ],
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-WPN-014",
+      "entity_id": "WPN-014",
+      "entity_type": "WEAPON",
+      "silhouette": "compacto",
+      "proportions": "ferramenta portátil de proporção funcional",
+      "materials": [
+        "liga ferral",
+        "fibra luminal",
+        "cerâmica de condução"
+      ],
+      "visible_mechanism": "selo de registro e aro dissipador visíveis",
+      "rune_detail": "RUN-014",
+      "states": [
+        "inativa",
+        "em uso autorizado",
+        "em revisão"
+      ],
+      "views": [
+        "frontal",
+        "lateral",
+        "detalhe de empunhadura",
+        "detalhe de matriz"
+      ],
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-WPN-015",
+      "entity_id": "WPN-015",
+      "entity_type": "WEAPON",
+      "silhouette": "vertical",
+      "proportions": "ferramenta portátil de proporção funcional",
+      "materials": [
+        "liga ferral",
+        "fibra luminal",
+        "cerâmica de condução"
+      ],
+      "visible_mechanism": "selo de registro e aro dissipador visíveis",
+      "rune_detail": "RUN-015",
+      "states": [
+        "inativa",
+        "em uso autorizado",
+        "em revisão"
+      ],
+      "views": [
+        "frontal",
+        "lateral",
+        "detalhe de empunhadura",
+        "detalhe de matriz"
+      ],
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-WPN-016",
+      "entity_id": "WPN-016",
+      "entity_type": "WEAPON",
+      "silhouette": "largo",
+      "proportions": "ferramenta portátil de proporção funcional",
+      "materials": [
+        "liga ferral",
+        "fibra luminal",
+        "cerâmica de condução"
+      ],
+      "visible_mechanism": "selo de registro e aro dissipador visíveis",
+      "rune_detail": "RUN-016",
+      "states": [
+        "inativa",
+        "em uso autorizado",
+        "em revisão"
+      ],
+      "views": [
+        "frontal",
+        "lateral",
+        "detalhe de empunhadura",
+        "detalhe de matriz"
+      ],
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-WPN-017",
+      "entity_id": "WPN-017",
+      "entity_type": "WEAPON",
+      "silhouette": "compacto",
+      "proportions": "ferramenta portátil de proporção funcional",
+      "materials": [
+        "liga ferral",
+        "fibra luminal",
+        "cerâmica de condução"
+      ],
+      "visible_mechanism": "selo de registro e aro dissipador visíveis",
+      "rune_detail": "RUN-017",
+      "states": [
+        "inativa",
+        "em uso autorizado",
+        "em revisão"
+      ],
+      "views": [
+        "frontal",
+        "lateral",
+        "detalhe de empunhadura",
+        "detalhe de matriz"
+      ],
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-WPN-018",
+      "entity_id": "WPN-018",
+      "entity_type": "WEAPON",
+      "silhouette": "vertical",
+      "proportions": "ferramenta portátil de proporção funcional",
+      "materials": [
+        "liga ferral",
+        "fibra luminal",
+        "cerâmica de condução"
+      ],
+      "visible_mechanism": "selo de registro e aro dissipador visíveis",
+      "rune_detail": "RUN-018",
+      "states": [
+        "inativa",
+        "em uso autorizado",
+        "em revisão"
+      ],
+      "views": [
+        "frontal",
+        "lateral",
+        "detalhe de empunhadura",
+        "detalhe de matriz"
+      ],
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-WPN-019",
+      "entity_id": "WPN-019",
+      "entity_type": "WEAPON",
+      "silhouette": "largo",
+      "proportions": "ferramenta portátil de proporção funcional",
+      "materials": [
+        "liga ferral",
+        "fibra luminal",
+        "cerâmica de condução"
+      ],
+      "visible_mechanism": "selo de registro e aro dissipador visíveis",
+      "rune_detail": "RUN-019",
+      "states": [
+        "inativa",
+        "em uso autorizado",
+        "em revisão"
+      ],
+      "views": [
+        "frontal",
+        "lateral",
+        "detalhe de empunhadura",
+        "detalhe de matriz"
+      ],
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-WPN-020",
+      "entity_id": "WPN-020",
+      "entity_type": "WEAPON",
+      "silhouette": "compacto",
+      "proportions": "ferramenta portátil de proporção funcional",
+      "materials": [
+        "liga ferral",
+        "fibra luminal",
+        "cerâmica de condução"
+      ],
+      "visible_mechanism": "selo de registro e aro dissipador visíveis",
+      "rune_detail": "RUN-020",
+      "states": [
+        "inativa",
+        "em uso autorizado",
+        "em revisão"
+      ],
+      "views": [
+        "frontal",
+        "lateral",
+        "detalhe de empunhadura",
+        "detalhe de matriz"
+      ],
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-WPN-021",
+      "entity_id": "WPN-021",
+      "entity_type": "WEAPON",
+      "silhouette": "vertical",
+      "proportions": "ferramenta portátil de proporção funcional",
+      "materials": [
+        "liga ferral",
+        "fibra luminal",
+        "cerâmica de condução"
+      ],
+      "visible_mechanism": "selo de registro e aro dissipador visíveis",
+      "rune_detail": "RUN-021",
+      "states": [
+        "inativa",
+        "em uso autorizado",
+        "em revisão"
+      ],
+      "views": [
+        "frontal",
+        "lateral",
+        "detalhe de empunhadura",
+        "detalhe de matriz"
+      ],
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-WPN-022",
+      "entity_id": "WPN-022",
+      "entity_type": "WEAPON",
+      "silhouette": "largo",
+      "proportions": "ferramenta portátil de proporção funcional",
+      "materials": [
+        "liga ferral",
+        "fibra luminal",
+        "cerâmica de condução"
+      ],
+      "visible_mechanism": "selo de registro e aro dissipador visíveis",
+      "rune_detail": "RUN-022",
+      "states": [
+        "inativa",
+        "em uso autorizado",
+        "em revisão"
+      ],
+      "views": [
+        "frontal",
+        "lateral",
+        "detalhe de empunhadura",
+        "detalhe de matriz"
+      ],
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-WPN-023",
+      "entity_id": "WPN-023",
+      "entity_type": "WEAPON",
+      "silhouette": "compacto",
+      "proportions": "ferramenta portátil de proporção funcional",
+      "materials": [
+        "liga ferral",
+        "fibra luminal",
+        "cerâmica de condução"
+      ],
+      "visible_mechanism": "selo de registro e aro dissipador visíveis",
+      "rune_detail": "RUN-023",
+      "states": [
+        "inativa",
+        "em uso autorizado",
+        "em revisão"
+      ],
+      "views": [
+        "frontal",
+        "lateral",
+        "detalhe de empunhadura",
+        "detalhe de matriz"
+      ],
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-WPN-024",
+      "entity_id": "WPN-024",
+      "entity_type": "WEAPON",
+      "silhouette": "vertical",
+      "proportions": "ferramenta portátil de proporção funcional",
+      "materials": [
+        "liga ferral",
+        "fibra luminal",
+        "cerâmica de condução"
+      ],
+      "visible_mechanism": "selo de registro e aro dissipador visíveis",
+      "rune_detail": "RUN-024",
+      "states": [
+        "inativa",
+        "em uso autorizado",
+        "em revisão"
+      ],
+      "views": [
+        "frontal",
+        "lateral",
+        "detalhe de empunhadura",
+        "detalhe de matriz"
+      ],
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-WPN-025",
+      "entity_id": "WPN-025",
+      "entity_type": "WEAPON",
+      "silhouette": "largo",
+      "proportions": "ferramenta portátil de proporção funcional",
+      "materials": [
+        "liga ferral",
+        "fibra luminal",
+        "cerâmica de condução"
+      ],
+      "visible_mechanism": "selo de registro e aro dissipador visíveis",
+      "rune_detail": "RUN-025",
+      "states": [
+        "inativa",
+        "em uso autorizado",
+        "em revisão"
+      ],
+      "views": [
+        "frontal",
+        "lateral",
+        "detalhe de empunhadura",
+        "detalhe de matriz"
+      ],
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-WPN-026",
+      "entity_id": "WPN-026",
+      "entity_type": "WEAPON",
+      "silhouette": "compacto",
+      "proportions": "ferramenta portátil de proporção funcional",
+      "materials": [
+        "liga ferral",
+        "fibra luminal",
+        "cerâmica de condução"
+      ],
+      "visible_mechanism": "selo de registro e aro dissipador visíveis",
+      "rune_detail": "RUN-026",
+      "states": [
+        "inativa",
+        "em uso autorizado",
+        "em revisão"
+      ],
+      "views": [
+        "frontal",
+        "lateral",
+        "detalhe de empunhadura",
+        "detalhe de matriz"
+      ],
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-WPN-027",
+      "entity_id": "WPN-027",
+      "entity_type": "WEAPON",
+      "silhouette": "vertical",
+      "proportions": "ferramenta portátil de proporção funcional",
+      "materials": [
+        "liga ferral",
+        "fibra luminal",
+        "cerâmica de condução"
+      ],
+      "visible_mechanism": "selo de registro e aro dissipador visíveis",
+      "rune_detail": "RUN-027",
+      "states": [
+        "inativa",
+        "em uso autorizado",
+        "em revisão"
+      ],
+      "views": [
+        "frontal",
+        "lateral",
+        "detalhe de empunhadura",
+        "detalhe de matriz"
+      ],
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-WPN-028",
+      "entity_id": "WPN-028",
+      "entity_type": "WEAPON",
+      "silhouette": "largo",
+      "proportions": "ferramenta portátil de proporção funcional",
+      "materials": [
+        "liga ferral",
+        "fibra luminal",
+        "cerâmica de condução"
+      ],
+      "visible_mechanism": "selo de registro e aro dissipador visíveis",
+      "rune_detail": "RUN-028",
+      "states": [
+        "inativa",
+        "em uso autorizado",
+        "em revisão"
+      ],
+      "views": [
+        "frontal",
+        "lateral",
+        "detalhe de empunhadura",
+        "detalhe de matriz"
+      ],
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-WPN-029",
+      "entity_id": "WPN-029",
+      "entity_type": "WEAPON",
+      "silhouette": "compacto",
+      "proportions": "ferramenta portátil de proporção funcional",
+      "materials": [
+        "liga ferral",
+        "fibra luminal",
+        "cerâmica de condução"
+      ],
+      "visible_mechanism": "selo de registro e aro dissipador visíveis",
+      "rune_detail": "RUN-029",
+      "states": [
+        "inativa",
+        "em uso autorizado",
+        "em revisão"
+      ],
+      "views": [
+        "frontal",
+        "lateral",
+        "detalhe de empunhadura",
+        "detalhe de matriz"
+      ],
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-WPN-030",
+      "entity_id": "WPN-030",
+      "entity_type": "WEAPON",
+      "silhouette": "vertical",
+      "proportions": "ferramenta portátil de proporção funcional",
+      "materials": [
+        "liga ferral",
+        "fibra luminal",
+        "cerâmica de condução"
+      ],
+      "visible_mechanism": "selo de registro e aro dissipador visíveis",
+      "rune_detail": "RUN-030",
+      "states": [
+        "inativa",
+        "em uso autorizado",
+        "em revisão"
+      ],
+      "views": [
+        "frontal",
+        "lateral",
+        "detalhe de empunhadura",
+        "detalhe de matriz"
+      ],
+      "priority": "ALTA"
+    }
+  ],
+  "rune_visual_briefs": [
+    {
+      "id": "VIS-RUN-001",
+      "entity_id": "RUN-001",
+      "entity_type": "RUNE",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": [
+        "inativa",
+        "registrada",
+        "ativa",
+        "em_dissipação"
+      ],
+      "views": null,
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-RUN-002",
+      "entity_id": "RUN-002",
+      "entity_type": "RUNE",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": [
+        "inativa",
+        "registrada",
+        "ativa",
+        "em_dissipação"
+      ],
+      "views": null,
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-RUN-003",
+      "entity_id": "RUN-003",
+      "entity_type": "RUNE",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": [
+        "inativa",
+        "registrada",
+        "ativa",
+        "em_dissipação"
+      ],
+      "views": null,
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-RUN-004",
+      "entity_id": "RUN-004",
+      "entity_type": "RUNE",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": [
+        "inativa",
+        "registrada",
+        "ativa",
+        "em_dissipação"
+      ],
+      "views": null,
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-RUN-005",
+      "entity_id": "RUN-005",
+      "entity_type": "RUNE",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": [
+        "inativa",
+        "registrada",
+        "ativa",
+        "em_dissipação"
+      ],
+      "views": null,
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-RUN-006",
+      "entity_id": "RUN-006",
+      "entity_type": "RUNE",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": [
+        "inativa",
+        "registrada",
+        "ativa",
+        "em_dissipação"
+      ],
+      "views": null,
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-RUN-007",
+      "entity_id": "RUN-007",
+      "entity_type": "RUNE",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": [
+        "inativa",
+        "registrada",
+        "ativa",
+        "em_dissipação"
+      ],
+      "views": null,
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-RUN-008",
+      "entity_id": "RUN-008",
+      "entity_type": "RUNE",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": [
+        "inativa",
+        "registrada",
+        "ativa",
+        "em_dissipação"
+      ],
+      "views": null,
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-RUN-009",
+      "entity_id": "RUN-009",
+      "entity_type": "RUNE",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": [
+        "inativa",
+        "registrada",
+        "ativa",
+        "em_dissipação"
+      ],
+      "views": null,
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-RUN-010",
+      "entity_id": "RUN-010",
+      "entity_type": "RUNE",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": [
+        "inativa",
+        "registrada",
+        "ativa",
+        "em_dissipação"
+      ],
+      "views": null,
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-RUN-011",
+      "entity_id": "RUN-011",
+      "entity_type": "RUNE",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": [
+        "inativa",
+        "registrada",
+        "ativa",
+        "em_dissipação"
+      ],
+      "views": null,
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-RUN-012",
+      "entity_id": "RUN-012",
+      "entity_type": "RUNE",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": [
+        "inativa",
+        "registrada",
+        "ativa",
+        "em_dissipação"
+      ],
+      "views": null,
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-RUN-013",
+      "entity_id": "RUN-013",
+      "entity_type": "RUNE",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": [
+        "inativa",
+        "registrada",
+        "ativa",
+        "em_dissipação"
+      ],
+      "views": null,
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-RUN-014",
+      "entity_id": "RUN-014",
+      "entity_type": "RUNE",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": [
+        "inativa",
+        "registrada",
+        "ativa",
+        "em_dissipação"
+      ],
+      "views": null,
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-RUN-015",
+      "entity_id": "RUN-015",
+      "entity_type": "RUNE",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": [
+        "inativa",
+        "registrada",
+        "ativa",
+        "em_dissipação"
+      ],
+      "views": null,
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-RUN-016",
+      "entity_id": "RUN-016",
+      "entity_type": "RUNE",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": [
+        "inativa",
+        "registrada",
+        "ativa",
+        "em_dissipação"
+      ],
+      "views": null,
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-RUN-017",
+      "entity_id": "RUN-017",
+      "entity_type": "RUNE",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": [
+        "inativa",
+        "registrada",
+        "ativa",
+        "em_dissipação"
+      ],
+      "views": null,
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-RUN-018",
+      "entity_id": "RUN-018",
+      "entity_type": "RUNE",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": [
+        "inativa",
+        "registrada",
+        "ativa",
+        "em_dissipação"
+      ],
+      "views": null,
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-RUN-019",
+      "entity_id": "RUN-019",
+      "entity_type": "RUNE",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": [
+        "inativa",
+        "registrada",
+        "ativa",
+        "em_dissipação"
+      ],
+      "views": null,
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-RUN-020",
+      "entity_id": "RUN-020",
+      "entity_type": "RUNE",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": [
+        "inativa",
+        "registrada",
+        "ativa",
+        "em_dissipação"
+      ],
+      "views": null,
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-RUN-021",
+      "entity_id": "RUN-021",
+      "entity_type": "RUNE",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": [
+        "inativa",
+        "registrada",
+        "ativa",
+        "em_dissipação"
+      ],
+      "views": null,
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-RUN-022",
+      "entity_id": "RUN-022",
+      "entity_type": "RUNE",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": [
+        "inativa",
+        "registrada",
+        "ativa",
+        "em_dissipação"
+      ],
+      "views": null,
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-RUN-023",
+      "entity_id": "RUN-023",
+      "entity_type": "RUNE",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": [
+        "inativa",
+        "registrada",
+        "ativa",
+        "em_dissipação"
+      ],
+      "views": null,
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-RUN-024",
+      "entity_id": "RUN-024",
+      "entity_type": "RUNE",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": [
+        "inativa",
+        "registrada",
+        "ativa",
+        "em_dissipação"
+      ],
+      "views": null,
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-RUN-025",
+      "entity_id": "RUN-025",
+      "entity_type": "RUNE",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": [
+        "inativa",
+        "registrada",
+        "ativa",
+        "em_dissipação"
+      ],
+      "views": null,
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-RUN-026",
+      "entity_id": "RUN-026",
+      "entity_type": "RUNE",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": [
+        "inativa",
+        "registrada",
+        "ativa",
+        "em_dissipação"
+      ],
+      "views": null,
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-RUN-027",
+      "entity_id": "RUN-027",
+      "entity_type": "RUNE",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": [
+        "inativa",
+        "registrada",
+        "ativa",
+        "em_dissipação"
+      ],
+      "views": null,
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-RUN-028",
+      "entity_id": "RUN-028",
+      "entity_type": "RUNE",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": [
+        "inativa",
+        "registrada",
+        "ativa",
+        "em_dissipação"
+      ],
+      "views": null,
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-RUN-029",
+      "entity_id": "RUN-029",
+      "entity_type": "RUNE",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": [
+        "inativa",
+        "registrada",
+        "ativa",
+        "em_dissipação"
+      ],
+      "views": null,
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-RUN-030",
+      "entity_id": "RUN-030",
+      "entity_type": "RUNE",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": [
+        "inativa",
+        "registrada",
+        "ativa",
+        "em_dissipação"
+      ],
+      "views": null,
+      "priority": "ALTA"
+    }
+  ],
+  "magic_visual_briefs": [
+    {
+      "id": "VIS-MAG-001",
+      "entity_id": "MAG-001",
+      "entity_type": "MAGIC",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": null,
+      "views": null,
+      "priority": "MÉDIA"
+    },
+    {
+      "id": "VIS-MAG-002",
+      "entity_id": "MAG-002",
+      "entity_type": "MAGIC",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": null,
+      "views": null,
+      "priority": "MÉDIA"
+    },
+    {
+      "id": "VIS-MAG-003",
+      "entity_id": "MAG-003",
+      "entity_type": "MAGIC",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": null,
+      "views": null,
+      "priority": "MÉDIA"
+    },
+    {
+      "id": "VIS-MAG-004",
+      "entity_id": "MAG-004",
+      "entity_type": "MAGIC",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": null,
+      "views": null,
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-MAG-005",
+      "entity_id": "MAG-005",
+      "entity_type": "MAGIC",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": null,
+      "views": null,
+      "priority": "MÉDIA"
+    },
+    {
+      "id": "VIS-MAG-006",
+      "entity_id": "MAG-006",
+      "entity_type": "MAGIC",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": null,
+      "views": null,
+      "priority": "MÉDIA"
+    },
+    {
+      "id": "VIS-MAG-007",
+      "entity_id": "MAG-007",
+      "entity_type": "MAGIC",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": null,
+      "views": null,
+      "priority": "ALTA"
+    },
+    {
+      "id": "VIS-MAG-008",
+      "entity_id": "MAG-008",
+      "entity_type": "MAGIC",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": null,
+      "views": null,
+      "priority": "MÉDIA"
+    },
+    {
+      "id": "VIS-MAG-009",
+      "entity_id": "MAG-009",
+      "entity_type": "MAGIC",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": null,
+      "views": null,
+      "priority": "MÉDIA"
+    },
+    {
+      "id": "VIS-MAG-010",
+      "entity_id": "MAG-010",
+      "entity_type": "MAGIC",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": null,
+      "views": null,
+      "priority": "MÉDIA"
+    },
+    {
+      "id": "VIS-MAG-011",
+      "entity_id": "MAG-011",
+      "entity_type": "MAGIC",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": null,
+      "views": null,
+      "priority": "MÉDIA"
+    },
+    {
+      "id": "VIS-MAG-012",
+      "entity_id": "MAG-012",
+      "entity_type": "MAGIC",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": null,
+      "views": null,
+      "priority": "MÉDIA"
+    },
+    {
+      "id": "VIS-MAG-013",
+      "entity_id": "MAG-013",
+      "entity_type": "MAGIC",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": null,
+      "views": null,
+      "priority": "MÉDIA"
+    },
+    {
+      "id": "VIS-MAG-014",
+      "entity_id": "MAG-014",
+      "entity_type": "MAGIC",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": null,
+      "views": null,
+      "priority": "MÉDIA"
+    },
+    {
+      "id": "VIS-MAG-015",
+      "entity_id": "MAG-015",
+      "entity_type": "MAGIC",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": null,
+      "views": null,
+      "priority": "MÉDIA"
+    },
+    {
+      "id": "VIS-MAG-016",
+      "entity_id": "MAG-016",
+      "entity_type": "MAGIC",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": null,
+      "views": null,
+      "priority": "MÉDIA"
+    },
+    {
+      "id": "VIS-MAG-017",
+      "entity_id": "MAG-017",
+      "entity_type": "MAGIC",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": null,
+      "views": null,
+      "priority": "MÉDIA"
+    },
+    {
+      "id": "VIS-MAG-018",
+      "entity_id": "MAG-018",
+      "entity_type": "MAGIC",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": null,
+      "views": null,
+      "priority": "MÉDIA"
+    },
+    {
+      "id": "VIS-MAG-019",
+      "entity_id": "MAG-019",
+      "entity_type": "MAGIC",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": null,
+      "views": null,
+      "priority": "MÉDIA"
+    },
+    {
+      "id": "VIS-MAG-020",
+      "entity_id": "MAG-020",
+      "entity_type": "MAGIC",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": null,
+      "views": null,
+      "priority": "MÉDIA"
+    },
+    {
+      "id": "VIS-MAG-021",
+      "entity_id": "MAG-021",
+      "entity_type": "MAGIC",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": null,
+      "views": null,
+      "priority": "MÉDIA"
+    },
+    {
+      "id": "VIS-MAG-022",
+      "entity_id": "MAG-022",
+      "entity_type": "MAGIC",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": null,
+      "views": null,
+      "priority": "MÉDIA"
+    },
+    {
+      "id": "VIS-MAG-023",
+      "entity_id": "MAG-023",
+      "entity_type": "MAGIC",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": null,
+      "views": null,
+      "priority": "MÉDIA"
+    },
+    {
+      "id": "VIS-MAG-024",
+      "entity_id": "MAG-024",
+      "entity_type": "MAGIC",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": null,
+      "views": null,
+      "priority": "MÉDIA"
+    },
+    {
+      "id": "VIS-MAG-025",
+      "entity_id": "MAG-025",
+      "entity_type": "MAGIC",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": null,
+      "views": null,
+      "priority": "MÉDIA"
+    },
+    {
+      "id": "VIS-MAG-026",
+      "entity_id": "MAG-026",
+      "entity_type": "MAGIC",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": null,
+      "views": null,
+      "priority": "MÉDIA"
+    },
+    {
+      "id": "VIS-MAG-027",
+      "entity_id": "MAG-027",
+      "entity_type": "MAGIC",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": null,
+      "views": null,
+      "priority": "MÉDIA"
+    },
+    {
+      "id": "VIS-MAG-028",
+      "entity_id": "MAG-028",
+      "entity_type": "MAGIC",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": null,
+      "views": null,
+      "priority": "MÉDIA"
+    },
+    {
+      "id": "VIS-MAG-029",
+      "entity_id": "MAG-029",
+      "entity_type": "MAGIC",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": null,
+      "views": null,
+      "priority": "MÉDIA"
+    },
+    {
+      "id": "VIS-MAG-030",
+      "entity_id": "MAG-030",
+      "entity_type": "MAGIC",
+      "silhouette": null,
+      "proportions": null,
+      "materials": null,
+      "visible_mechanism": null,
+      "rune_detail": null,
+      "states": null,
+      "views": null,
+      "priority": "MÉDIA"
+    }
+  ],
+  "CORRECAO_MAR_RUNAS_MAGIAS": {
+    "issue": "O indice do tier (MASTER_V2_TIER_INDEX_V1_0.json) registrou erroneamente 'MAR_ARMAS_RUNAS_MAGIAS: JA_PRESENTE_NO_REPO' assumindo que as 30 armas + 30 runas + 30 magias do Master ja existiam via MAR_CANON_GAMEPLAY_STATS_V1_1.json. Isso so era verdade para as 30 ARMAS. Ao abrir MAR_VISUAL_BRIEFS_V1_0.json para este import, descobri que:",
+    "weapons_wpn_001_030": "JA PRESENTE - MAR_CANON_GAMEPLAY_STATS_V1_1.json, sem mudanca necessaria.",
+    "magic_mag_001_030": "PARCIAL - MAG-001..007 ja sao nossos 7 arquivos de lei R2 existentes (Leis da magia, Runas, Corrente Planetaria, Marca inselavel de Serlis, Estados de controle da simbiose, Escala de combate, Estase de Intervalo) - confirmados batendo exatamente. MAS MAG-008..030 (23 entradas: Fio de Retorno, Pele de Guarda, Selo de Ancoragem, etc.) SAO CONTEUDO NOVO NUNCA IMPORTADO.",
+    "runes_run_001_030": "TOTALMENTE NOVO - RUN-001..030 (Fluxo Primario, Retorno Estavel, Filtro de Fluxo, Selo de Portal, Limite de Camara...) nunca foram importados. Sao DIFERENTES do nosso RUNA-001..010 (fase 23, prefixo RUNA nao RUN, deliberadamente sem efeito numerico por causa de NO_INVENTED_RUNE_EFFECT). As 30 RUN-XXX oficiais tem fichas MUITO ricas: efeito, ativacao, condicoes, alcance, duracao, limitacoes, risco, compatibilidade com armas/tecnologia/magia, cadeia de criacao/verificacao/manutencao por profissao, posicionamento espacial - MUITO mais detalhado que qualquer coisa que criamos.",
+    "recommendation": "Esta e uma lacuna real e valiosa (30 runas + 23 magias oficiais, muito ricas) - recomendo uma fase dedicada de import para MAR_RUNES_FUNCTIONAL_V1_0.json + MAR_MAGIC_FUNCTIONAL_V1_0.json, separada desta (Visual), dado o volume e riqueza de cada entrada."
+  }
+}

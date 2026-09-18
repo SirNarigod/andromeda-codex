@@ -1,0 +1,70 @@
+{
+  "record_id": "V15-DETERMINISM",
+  "pairs_expected": 10,
+  "pairs": 10,
+  "matched": 10,
+  "failed_seeds": [],
+  "status": "PASS",
+  "rows": [
+    {
+      "seed": 16000,
+      "hash_a": "ff9cc30c0da0fe68b75e9797adb12a07c0efb5f2ccfc8b92e7ccc67527bff133",
+      "hash_b": "ff9cc30c0da0fe68b75e9797adb12a07c0efb5f2ccfc8b92e7ccc67527bff133",
+      "match": true
+    },
+    {
+      "seed": 16001,
+      "hash_a": "d6f9c7fe650a838f0a63b09940bbc4265e27cad8dfb577893ff29e07e47a8cda",
+      "hash_b": "d6f9c7fe650a838f0a63b09940bbc4265e27cad8dfb577893ff29e07e47a8cda",
+      "match": true
+    },
+    {
+      "seed": 16002,
+      "hash_a": "e8710de41867ac6c5c372e0753f619ef93806e2207e635ec91020af916f79ca5",
+      "hash_b": "e8710de41867ac6c5c372e0753f619ef93806e2207e635ec91020af916f79ca5",
+      "match": true
+    },
+    {
+      "seed": 16003,
+      "hash_a": "77e14b14035cc8e4bda1cc01163fa1099eed8700a3b051273c3fe4076475b5c7",
+      "hash_b": "77e14b14035cc8e4bda1cc01163fa1099eed8700a3b051273c3fe4076475b5c7",
+      "match": true
+    },
+    {
+      "seed": 16004,
+      "hash_a": "9261b326db98febd6d66bdcafd8428e488ad4d0df33dd9a2218d192c4b84cb92",
+      "hash_b": "9261b326db98febd6d66bdcafd8428e488ad4d0df33dd9a2218d192c4b84cb92",
+      "match": true
+    },
+    {
+      "seed": 16005,
+      "hash_a": "dd181935f5e9a1a0727757dcd373cb83cd9c4d9dc41d0662ecf66aaf5ceb8964",
+      "hash_b": "dd181935f5e9a1a0727757dcd373cb83cd9c4d9dc41d0662ecf66aaf5ceb8964",
+      "match": true
+    },
+    {
+      "seed": 16006,
+      "hash_a": "a7d51079f9b1a58ec8b5e2a41aefd60ad3a64828b1dc421525593a454a49f7b5",
+      "hash_b": "a7d51079f9b1a58ec8b5e2a41aefd60ad3a64828b1dc421525593a454a49f7b5",
+      "match": true
+    },
+    {
+      "seed": 16007,
+      "hash_a": "4ed787aea3916558aae5413f6d612b3a3f71fb9c6d1cd48c04fa39415bcceeed",
+      "hash_b": "4ed787aea3916558aae5413f6d612b3a3f71fb9c6d1cd48c04fa39415bcceeed",
+      "match": true
+    },
+    {
+      "seed": 16008,
+      "hash_a": "b5963e23092a85cae4f18986e22ae981064772621203611350b7bbbe72aecf36",
+      "hash_b": "b5963e23092a85cae4f18986e22ae981064772621203611350b7bbbe72aecf36",
+      "match": true
+    },
+    {
+      "seed": 16009,
+      "hash_a": "af2f2532f1b6100d5da266655df6090b526f7c432889705e85cec2b3b6b5da9a",
+      "hash_b": "af2f2532f1b6100d5da266655df6090b526f7c432889705e85cec2b3b6b5da9a",
+      "match": true
+    }
+  ]
+}

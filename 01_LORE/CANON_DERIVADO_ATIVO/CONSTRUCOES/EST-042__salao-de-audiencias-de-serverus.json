@@ -1,0 +1,34 @@
+{
+  "est_id": "EST-042",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Salão de Audiências de Serverus",
+  "building_type": "INSTITUCIONAL",
+  "parent_locality": "LOC-013-002",
+  "parent_subregion": "SUB-013-002",
+  "parent_political_unit": "TER-013",
+  "function": "Câmara onde Serverus Vaelkor recebe contratados e emite mandados.",
+  "economic_role": {
+    "is_vendor": false,
+    "sells": [],
+    "produces": [],
+    "regulation_factor": 0.7
+  },
+  "capacity": {
+    "jobs": 8,
+    "residents": 0
+  },
+  "professions_linked": [],
+  "notable_link": "Serverus Vaelkor (autoridade máxima); mandado do Episódio 1",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "PEDRA_E_ALVENARIA",
+    "flammability": "BAIXA",
+    "recovery_days": 7
+  }
+}

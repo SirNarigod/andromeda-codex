@@ -1,0 +1,46 @@
+{
+  "record_id": "TER-018",
+  "record_kind": "DERIVED_TERRITORY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Fossa Abissal",
+  "subtitle": "Abismo oceanico de pressao extrema e bioluminescencia",
+  "provenance": {
+    "approval": "AUTHORIAL_DECISION_FASE_51",
+    "note": "18 territorio de Stellar, decisao explicita do autor - portao autoral de soberania. Distinto de TER-004 Navyr (confederacao maritima de superficie) e TER-009 Liga Subcristal (cavernas subterraneas de cristal)."
+  },
+  "leadership": {
+    "type": "CONSELHO_DERIVADO",
+    "name": "Conselho das Profundezas",
+    "note": "Lideranca coletiva derivada, sem LID-XXX (categoria R2 fechada)."
+  },
+  "culture_note": "Sem CUL-XXX proprio (categoria R2 fechada) - comunidade de engenheiros e mergulhadores adaptados a pressao extrema, descrita qualitativamente.",
+  "subregions": [
+    "SUB-018-001",
+    "SUB-018-002",
+    "SUB-018-003"
+  ],
+  "localities": [
+    "LOC-018-001",
+    "LOC-018-002",
+    "LOC-018-003"
+  ],
+  "terrain_type": "ABISSAL_SUBMERSO",
+  "primary_transport_mode": "SUBMERSA",
+  "prohibitions": [
+    "NO_R2_CATEGORY_EXPANSION",
+    "NO_NEW_LID_OR_CUL_CODE",
+    "NO_AUTOMATIC_KENUA_SCENE",
+    "NO_R2_EPISODE_REWRITE"
+  ],
+  "future_scope": "Perfil economico enriquecido na fase 56 (diretriz de riqueza do usuario) - ver economic_profile estruturado + STELLAR_REGIONAL_SPECIALTY_GOODS_DEV_V1_0.json. Personagens locais adicionais continuam abertos a rodadas futuras.",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "economic_profile": {
+    "primary_resource": "MIN-TITAN (fonte secundaria, SUB-018-001 Trincheira Profunda / EST-061 Cupula da Trincheira, extrator JOB-016) - ja usado em TRJ-018",
+    "processed_good": "REG-005 Placa de Titanio Abissal (EST-061 Cupula da Trincheira)",
+    "agricultural_zone": "AGZ-102 Recifes Luminosos (MARICULTURA_ABISSAL, SUB-018-002 / EST-062 Vila dos Recifes, flora FLO-017)",
+    "agricultural_note": "Cultivo de Coral Luminoso (FLO-017) nos Recifes Luminosos formalizado como AGZ-102 (fase 56, AUTHORIAL_DECISION_FASE_56) — parcelas rotativas, colheita que preserva saude do recife; ver AGZ_EXTENSION_098_103_DEV_V1_0.json",
+    "trade_partners_hint": "Rota continental TER-004-TER-018 liga a Navyr; titanio abissal exportado para construcao naval e de trajes de pressao",
+    "local_specialty": "REG-005 Placa de Titanio Abissal"
+  }
+}

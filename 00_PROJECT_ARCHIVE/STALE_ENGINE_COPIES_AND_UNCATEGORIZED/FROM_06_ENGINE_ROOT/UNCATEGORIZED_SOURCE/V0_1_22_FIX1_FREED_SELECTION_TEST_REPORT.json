@@ -1,0 +1,17 @@
+{
+  "build": "V0.1.22 DEV FIX1",
+  "parent": "V0.1.22 DEV",
+  "status": "STATIC_PASS_RUNTIME_PENDING",
+  "defect": "previously_freed_selected_target_rejected_by_typed_Node3D_helper",
+  "root_cause": "typed_argument_validation_occurs_before_is_instance_valid_inside_helper",
+  "fix": [
+    "prevalidate_selected_target_before_helper",
+    "untyped_internal_selection_helper_parameters",
+    "null_freed_guard_before_method_access",
+    "safe_hud_guard"
+  ],
+  "checks": 15,
+  "passed": 15,
+  "failed": 0,
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1"
+}

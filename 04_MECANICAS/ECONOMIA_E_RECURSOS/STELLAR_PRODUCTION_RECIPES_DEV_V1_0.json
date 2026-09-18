@@ -1,0 +1,1502 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-PRODUCTION-RECIPES-DEV-V1.0",
+  "title": "Cadeia de produção formal: recursos catalogados → armas do MAR, via construções industriais",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "canonical_status": "GAMEPLAY_DERIVED_DEV",
+  "supplements": [
+    "MINERAL_RESOURCE_LOCALITY_LINKS_DEV_V1_0.json",
+    "STELLAR_CRAFT_RESOURCE_CATALOG_DEV_V1_0.json"
+  ],
+  "r2_guard": "Toda receita liga um output_item_ref (arma real do MAR) a resource_id reais (MIN-/MAT-) e a uma construção (EST-XXX) já catalogada. Nenhum efeito de runa isolado é inventado — a Resina Rúnica é insumo material, sem mecânica própria. Não altera os arquivos de armas, recursos ou construções já existentes.",
+  "recipes": [
+    {
+      "recipe_id": "RCP-001",
+      "output_item_ref": "WPN-FUZ-001",
+      "output_name": "Fuzil de Patrulha",
+      "produced_at": "EST-003",
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        },
+        {
+          "resource_id": "MAT-007",
+          "resource_name": "Carvão de Forja"
+        },
+        {
+          "resource_id": "MAT-001",
+          "resource_name": "Madeira de Copas"
+        }
+      ],
+      "labor_role": "armeiro",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-002",
+      "output_item_ref": "WPN-FUZ-004",
+      "output_name": "Fuzil de Vínculo Sincronizado",
+      "produced_at": "EST-003",
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        },
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        },
+        {
+          "resource_id": "MAT-007",
+          "resource_name": "Carvão de Forja"
+        }
+      ],
+      "labor_role": "armeiro",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-003",
+      "output_item_ref": "WPN-REV-001",
+      "output_name": "Revólver de Fronteira",
+      "produced_at": "EST-003",
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        },
+        {
+          "resource_id": "MIN-TIN",
+          "resource_name": "Estanho Nimbo"
+        },
+        {
+          "resource_id": "MAT-003",
+          "resource_name": "Couro de Manada"
+        }
+      ],
+      "labor_role": "armeiro",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-004",
+      "output_item_ref": "WPN-ESP-001",
+      "output_name": "Espingarda de Guarda",
+      "produced_at": "EST-003",
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        },
+        {
+          "resource_id": "MAT-001",
+          "resource_name": "Madeira de Copas"
+        }
+      ],
+      "labor_role": "armeiro",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-005",
+      "output_item_ref": "WPN-LAM-001",
+      "output_name": "Facão de Oficina",
+      "produced_at": "EST-004",
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        },
+        {
+          "resource_id": "MAT-001",
+          "resource_name": "Madeira de Copas"
+        }
+      ],
+      "labor_role": "artesão",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-006",
+      "output_item_ref": "WPN-IMP-001",
+      "output_name": "Gancho de Ferragem",
+      "produced_at": "EST-004",
+      "inputs": [
+        {
+          "resource_id": "MAT-006",
+          "resource_name": "Osso Rúnico"
+        },
+        {
+          "resource_id": "SUCATA",
+          "resource_name": "Sucata reaproveitada (sem catálogo formal, coerente com ART-014 Improvisadas)"
+        }
+      ],
+      "labor_role": "artesão",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-007",
+      "output_item_ref": "WPN-TEC-001",
+      "output_name": "Lâmina de Servo Básica",
+      "produced_at": "EST-019",
+      "inputs": [
+        {
+          "resource_id": "MIN-ROBOTIUM",
+          "resource_name": "Robotita Azul"
+        },
+        {
+          "resource_id": "MAT-002",
+          "resource_name": "Borracha de Seiva"
+        }
+      ],
+      "labor_role": "armeiro",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-008",
+      "output_item_ref": "WPN-TEC-004",
+      "output_name": "Núcleo de Sobrecarga Modular",
+      "produced_at": "EST-019",
+      "inputs": [
+        {
+          "resource_id": "MIN-ROBOTIUM",
+          "resource_name": "Robotita Azul"
+        },
+        {
+          "resource_id": "MIN-MAGNETITE",
+          "resource_name": "Magnetita de Pulso"
+        },
+        {
+          "resource_id": "MAT-005",
+          "resource_name": "Resina Rúnica"
+        }
+      ],
+      "labor_role": "armeiro",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-009",
+      "output_item_ref": "WPN-MAG-001",
+      "output_name": "Foco de Corrente Planetária",
+      "produced_at": "EST-044",
+      "inputs": [
+        {
+          "resource_id": "MIN-MANA-ORE",
+          "resource_name": "Manalita"
+        },
+        {
+          "resource_id": "MAT-008",
+          "resource_name": "Pergaminho de Fibra"
+        }
+      ],
+      "labor_role": "armeiro rúnico",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-010",
+      "output_item_ref": "WPN-MAG-004",
+      "output_name": "Relicário de Estase Convergente",
+      "produced_at": "EST-044",
+      "inputs": [
+        {
+          "resource_id": "MIN-MANA-ORE",
+          "resource_name": "Manalita"
+        },
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        },
+        {
+          "resource_id": "MIN-GOLD",
+          "resource_name": "Aúreo Solar"
+        }
+      ],
+      "labor_role": "armeiro rúnico",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-011",
+      "output_item_ref": "WPN-ARR-001",
+      "output_name": "Faca de Arremesso Simples",
+      "produced_at": "EST-003",
+      "inputs": [
+        {
+          "resource_id": "MAT-001",
+          "resource_name": "Madeira de Copas"
+        }
+      ],
+      "labor_role": "artesão",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-012",
+      "output_item_ref": "WPN-ARR-002",
+      "output_name": "Disco Rúnico de Trajetória",
+      "produced_at": "EST-003",
+      "inputs": [
+        {
+          "resource_id": "MAT-001",
+          "resource_name": "Madeira de Copas"
+        },
+        {
+          "resource_id": "MAT-004",
+          "resource_name": "Fibra de Véu"
+        }
+      ],
+      "labor_role": "artesão",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-013",
+      "output_item_ref": "WPN-ARR-003",
+      "output_name": "Lança de Retorno Simples",
+      "produced_at": "EST-003",
+      "inputs": [
+        {
+          "resource_id": "MAT-001",
+          "resource_name": "Madeira de Copas"
+        },
+        {
+          "resource_id": "MIN-TIN",
+          "resource_name": "Estanho Nimbo"
+        }
+      ],
+      "labor_role": "artesão",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-014",
+      "output_item_ref": "WPN-ARR-004",
+      "output_name": "Disco de Vínculo Adaptativo",
+      "produced_at": "EST-003",
+      "inputs": [
+        {
+          "resource_id": "MAT-004",
+          "resource_name": "Fibra de Véu"
+        },
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        }
+      ],
+      "labor_role": "artesão",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-015",
+      "output_item_ref": "WPN-CNT-001",
+      "output_name": "Rede de Ancoragem",
+      "produced_at": "EST-003",
+      "inputs": [
+        {
+          "resource_id": "MAT-003",
+          "resource_name": "Couro de Manada"
+        },
+        {
+          "resource_id": "MIN-TIN",
+          "resource_name": "Estanho Nimbo"
+        }
+      ],
+      "labor_role": "artesão",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-016",
+      "output_item_ref": "WPN-CNT-002",
+      "output_name": "Campo Rúnico de Barreira",
+      "produced_at": "EST-003",
+      "inputs": [
+        {
+          "resource_id": "MAT-003",
+          "resource_name": "Couro de Manada"
+        },
+        {
+          "resource_id": "MAT-004",
+          "resource_name": "Fibra de Véu"
+        }
+      ],
+      "labor_role": "artesão",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-017",
+      "output_item_ref": "WPN-CNT-003",
+      "output_name": "Rede Mecânica Comum",
+      "produced_at": "EST-003",
+      "inputs": [
+        {
+          "resource_id": "MAT-003",
+          "resource_name": "Couro de Manada"
+        }
+      ],
+      "labor_role": "artesão",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-018",
+      "output_item_ref": "WPN-CNT-004",
+      "output_name": "Prisão Rúnica de Vínculo Total",
+      "produced_at": "EST-003",
+      "inputs": [
+        {
+          "resource_id": "MAT-004",
+          "resource_name": "Fibra de Véu"
+        },
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        }
+      ],
+      "labor_role": "artesão",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-019",
+      "output_item_ref": "WPN-ESP-002",
+      "output_name": "Espingarda Rúnica de Ruptura",
+      "produced_at": "EST-003",
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        },
+        {
+          "resource_id": "MIN-COPPER",
+          "resource_name": "Cobrex Condutor"
+        },
+        {
+          "resource_id": "MIN-BASALT",
+          "resource_name": "Basalto Negro"
+        }
+      ],
+      "labor_role": "armeiro",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-020",
+      "output_item_ref": "WPN-ESP-003",
+      "output_name": "Espingarda de Caça Convencional",
+      "produced_at": "EST-003",
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        }
+      ],
+      "labor_role": "armeiro",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-021",
+      "output_item_ref": "WPN-ESP-004",
+      "output_name": "Espingarda Rúnica de Concentração Dupla",
+      "produced_at": "EST-003",
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        },
+        {
+          "resource_id": "MIN-COPPER",
+          "resource_name": "Cobrex Condutor"
+        }
+      ],
+      "labor_role": "armeiro",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-022",
+      "output_item_ref": "WPN-EXP-001",
+      "output_name": "Carga de Demolição",
+      "produced_at": "EST-003",
+      "inputs": [
+        {
+          "resource_id": "MAT-007",
+          "resource_name": "Carvão de Forja"
+        },
+        {
+          "resource_id": "MIN-STONE",
+          "resource_name": "Rocha Estrutural"
+        }
+      ],
+      "labor_role": "artesão",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-023",
+      "output_item_ref": "WPN-EXP-002",
+      "output_name": "Granada Rúnica de Onda Dirigida",
+      "produced_at": "EST-003",
+      "inputs": [
+        {
+          "resource_id": "MAT-007",
+          "resource_name": "Carvão de Forja"
+        },
+        {
+          "resource_id": "MIN-BASALT",
+          "resource_name": "Basalto Negro"
+        }
+      ],
+      "labor_role": "artesão",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-024",
+      "output_item_ref": "WPN-EXP-003",
+      "output_name": "Carga Convencional de Mineração",
+      "produced_at": "EST-003",
+      "inputs": [
+        {
+          "resource_id": "MAT-007",
+          "resource_name": "Carvão de Forja"
+        },
+        {
+          "resource_id": "MIN-STONE",
+          "resource_name": "Rocha Estrutural"
+        }
+      ],
+      "labor_role": "artesão",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-025",
+      "output_item_ref": "WPN-EXP-004",
+      "output_name": "Carga de Vínculo Rúnico Total",
+      "produced_at": "EST-003",
+      "inputs": [
+        {
+          "resource_id": "MAT-007",
+          "resource_name": "Carvão de Forja"
+        },
+        {
+          "resource_id": "MIN-BASALT",
+          "resource_name": "Basalto Negro"
+        },
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        }
+      ],
+      "labor_role": "artesão",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-026",
+      "output_item_ref": "WPN-FLA-001",
+      "output_name": "Dispositivo de Clarão Simples",
+      "produced_at": "EST-003",
+      "inputs": [
+        {
+          "resource_id": "MIN-COPPER",
+          "resource_name": "Cobrex Condutor"
+        }
+      ],
+      "labor_role": "artesão",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-027",
+      "output_item_ref": "WPN-FLA-002",
+      "output_name": "Prisma Rúnico de Interrupção",
+      "produced_at": "EST-003",
+      "inputs": [
+        {
+          "resource_id": "MIN-COPPER",
+          "resource_name": "Cobrex Condutor"
+        },
+        {
+          "resource_id": "MIN-QUARTZ",
+          "resource_name": "Quartzo de Veio"
+        },
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        }
+      ],
+      "labor_role": "artesão",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-028",
+      "output_item_ref": "WPN-FLA-003",
+      "output_name": "Dispositivo de Clarão Aprimorado",
+      "produced_at": "EST-003",
+      "inputs": [
+        {
+          "resource_id": "MIN-COPPER",
+          "resource_name": "Cobrex Condutor"
+        },
+        {
+          "resource_id": "MIN-QUARTZ",
+          "resource_name": "Quartzo de Veio"
+        }
+      ],
+      "labor_role": "artesão",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-029",
+      "output_item_ref": "WPN-FLA-004",
+      "output_name": "Prisma de Vínculo Sensorial Total",
+      "produced_at": "EST-003",
+      "inputs": [
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        },
+        {
+          "resource_id": "MIN-QUARTZ",
+          "resource_name": "Quartzo de Veio"
+        },
+        {
+          "resource_id": "MAT-005",
+          "resource_name": "Resina Rúnica"
+        }
+      ],
+      "labor_role": "artesão",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-030",
+      "output_item_ref": "WPN-FUZ-002",
+      "output_name": "Fuzil Rúnico de Vanguarda",
+      "produced_at": "EST-003",
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        },
+        {
+          "resource_id": "MAT-007",
+          "resource_name": "Carvão de Forja"
+        },
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        }
+      ],
+      "labor_role": "armeiro",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-031",
+      "output_item_ref": "WPN-FUZ-003",
+      "output_name": "Fuzil Convencional",
+      "produced_at": "EST-003",
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        }
+      ],
+      "labor_role": "armeiro",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-032",
+      "output_item_ref": "WPN-IMP-002",
+      "output_name": "Barra Reforçada com Runa Emprestada",
+      "produced_at": "EST-004",
+      "inputs": [
+        {
+          "resource_id": "SUCATA",
+          "resource_name": "Sucata reaproveitada (sem catálogo formal, coerente com ART-014 Improvisadas)"
+        },
+        {
+          "resource_id": "MAT-006",
+          "resource_name": "Osso Rúnico"
+        }
+      ],
+      "labor_role": "artesão",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-033",
+      "output_item_ref": "WPN-IMP-003",
+      "output_name": "Ferramenta Adaptada com Matriz Reaproveitada",
+      "produced_at": "EST-004",
+      "inputs": [
+        {
+          "resource_id": "SUCATA",
+          "resource_name": "Sucata reaproveitada (sem catálogo formal, coerente com ART-014 Improvisadas)"
+        },
+        {
+          "resource_id": "MAT-006",
+          "resource_name": "Osso Rúnico"
+        },
+        {
+          "resource_id": "MIN-COPPER",
+          "resource_name": "Cobrex Condutor"
+        }
+      ],
+      "labor_role": "artesão",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-034",
+      "output_item_ref": "WPN-IMP-004",
+      "output_name": "Peça de Máquina com Vínculo Instável",
+      "produced_at": "EST-004",
+      "inputs": [
+        {
+          "resource_id": "SUCATA",
+          "resource_name": "Sucata reaproveitada (sem catálogo formal, coerente com ART-014 Improvisadas)"
+        },
+        {
+          "resource_id": "MAT-006",
+          "resource_name": "Osso Rúnico"
+        },
+        {
+          "resource_id": "MIN-ROOT-SHARD",
+          "resource_name": "Fragmento Radicular"
+        }
+      ],
+      "labor_role": "artesão",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-035",
+      "output_item_ref": "WPN-IMP-005",
+      "output_name": "Corrente de Ferragem",
+      "produced_at": "EST-004",
+      "inputs": [
+        {
+          "resource_id": "SUCATA",
+          "resource_name": "Sucata reaproveitada (sem catálogo formal, coerente com ART-014 Improvisadas)"
+        }
+      ],
+      "labor_role": "artesão",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-036",
+      "output_item_ref": "WPN-IMP-006",
+      "output_name": "Cano Reforçado com Runa Emprestada",
+      "produced_at": "EST-004",
+      "inputs": [
+        {
+          "resource_id": "SUCATA",
+          "resource_name": "Sucata reaproveitada (sem catálogo formal, coerente com ART-014 Improvisadas)"
+        },
+        {
+          "resource_id": "MAT-006",
+          "resource_name": "Osso Rúnico"
+        }
+      ],
+      "labor_role": "artesão",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-037",
+      "output_item_ref": "WPN-IMP-007",
+      "output_name": "Machadinha com Matriz Dupla Reaproveitada",
+      "produced_at": "EST-004",
+      "inputs": [
+        {
+          "resource_id": "SUCATA",
+          "resource_name": "Sucata reaproveitada (sem catálogo formal, coerente com ART-014 Improvisadas)"
+        },
+        {
+          "resource_id": "MAT-006",
+          "resource_name": "Osso Rúnico"
+        },
+        {
+          "resource_id": "MIN-COPPER",
+          "resource_name": "Cobrex Condutor"
+        }
+      ],
+      "labor_role": "artesão",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-038",
+      "output_item_ref": "WPN-IMP-008",
+      "output_name": "Ferramenta de Vínculo Triplo Instável",
+      "produced_at": "EST-004",
+      "inputs": [
+        {
+          "resource_id": "SUCATA",
+          "resource_name": "Sucata reaproveitada (sem catálogo formal, coerente com ART-014 Improvisadas)"
+        },
+        {
+          "resource_id": "MAT-006",
+          "resource_name": "Osso Rúnico"
+        },
+        {
+          "resource_id": "MIN-ROOT-SHARD",
+          "resource_name": "Fragmento Radicular"
+        }
+      ],
+      "labor_role": "artesão",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-039",
+      "output_item_ref": "WPN-LAM-002",
+      "output_name": "Lâmina Rúnica Vibrante",
+      "produced_at": "EST-004",
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        },
+        {
+          "resource_id": "MAT-005",
+          "resource_name": "Resina Rúnica"
+        }
+      ],
+      "labor_role": "artesão",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-040",
+      "output_item_ref": "WPN-LAM-003",
+      "output_name": "Lâmina Comum de Ferreiro",
+      "produced_at": "EST-004",
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        }
+      ],
+      "labor_role": "artesão",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-041",
+      "output_item_ref": "WPN-LAM-004",
+      "output_name": "Lâmina de Vínculo Perpétuo",
+      "produced_at": "EST-004",
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        },
+        {
+          "resource_id": "MAT-005",
+          "resource_name": "Resina Rúnica"
+        },
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        }
+      ],
+      "labor_role": "artesão",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-042",
+      "output_item_ref": "WPN-LAM-005",
+      "output_name": "Punhal Comum de Viajante",
+      "produced_at": "EST-004",
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        }
+      ],
+      "labor_role": "artesão",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-043",
+      "output_item_ref": "WPN-LAM-006",
+      "output_name": "Machado de Reforço Simples",
+      "produced_at": "EST-004",
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        },
+        {
+          "resource_id": "MAT-001",
+          "resource_name": "Madeira de Copas"
+        }
+      ],
+      "labor_role": "artesão",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-044",
+      "output_item_ref": "WPN-LAM-007",
+      "output_name": "Espada Rúnica de Retorno",
+      "produced_at": "EST-004",
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        },
+        {
+          "resource_id": "MAT-005",
+          "resource_name": "Resina Rúnica"
+        }
+      ],
+      "labor_role": "artesão",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-045",
+      "output_item_ref": "WPN-LAM-008",
+      "output_name": "Lança-Lâmina de Vínculo Total",
+      "produced_at": "EST-004",
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        },
+        {
+          "resource_id": "MAT-005",
+          "resource_name": "Resina Rúnica"
+        },
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        }
+      ],
+      "labor_role": "artesão",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-046",
+      "output_item_ref": "WPN-MAG-002",
+      "output_name": "Cajado de Fórmula Falada",
+      "produced_at": "EST-044",
+      "inputs": [
+        {
+          "resource_id": "MIN-MANA-ORE",
+          "resource_name": "Manalita"
+        },
+        {
+          "resource_id": "MAT-008",
+          "resource_name": "Pergaminho de Fibra"
+        }
+      ],
+      "labor_role": "armeiro rúnico",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-047",
+      "output_item_ref": "WPN-MAG-003",
+      "output_name": "Grimório de Vínculo Ritual",
+      "produced_at": "EST-044",
+      "inputs": [
+        {
+          "resource_id": "MIN-MANA-ORE",
+          "resource_name": "Manalita"
+        },
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        }
+      ],
+      "labor_role": "armeiro rúnico",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-048",
+      "output_item_ref": "WPN-MAG-005",
+      "output_name": "Amuleto de Corrente Bruta",
+      "produced_at": "EST-044",
+      "inputs": [
+        {
+          "resource_id": "MIN-MANA-ORE",
+          "resource_name": "Manalita"
+        }
+      ],
+      "labor_role": "armeiro rúnico",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-049",
+      "output_item_ref": "WPN-MAG-006",
+      "output_name": "Anel de Vínculo Simples",
+      "produced_at": "EST-044",
+      "inputs": [
+        {
+          "resource_id": "MIN-MANA-ORE",
+          "resource_name": "Manalita"
+        },
+        {
+          "resource_id": "MAT-008",
+          "resource_name": "Pergaminho de Fibra"
+        }
+      ],
+      "labor_role": "armeiro rúnico",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-050",
+      "output_item_ref": "WPN-MAG-007",
+      "output_name": "Espelho Rúnico de Duplo Foco",
+      "produced_at": "EST-044",
+      "inputs": [
+        {
+          "resource_id": "MIN-MANA-ORE",
+          "resource_name": "Manalita"
+        },
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        }
+      ],
+      "labor_role": "armeiro rúnico",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-051",
+      "output_item_ref": "WPN-MAG-008",
+      "output_name": "Coroa de Convergência Planetária",
+      "produced_at": "EST-044",
+      "inputs": [
+        {
+          "resource_id": "MIN-MANA-ORE",
+          "resource_name": "Manalita"
+        },
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        },
+        {
+          "resource_id": "MIN-GOLD",
+          "resource_name": "Aúreo Solar"
+        }
+      ],
+      "labor_role": "armeiro rúnico",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-052",
+      "output_item_ref": "WPN-MAG-009",
+      "output_name": "Talismã de Fluxo Instável",
+      "produced_at": "EST-044",
+      "inputs": [
+        {
+          "resource_id": "MIN-MANA-ORE",
+          "resource_name": "Manalita"
+        }
+      ],
+      "labor_role": "armeiro rúnico",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-053",
+      "output_item_ref": "WPN-MAG-010",
+      "output_name": "Bastão de Ecoação",
+      "produced_at": "EST-044",
+      "inputs": [
+        {
+          "resource_id": "MIN-MANA-ORE",
+          "resource_name": "Manalita"
+        },
+        {
+          "resource_id": "MAT-008",
+          "resource_name": "Pergaminho de Fibra"
+        }
+      ],
+      "labor_role": "armeiro rúnico",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-054",
+      "output_item_ref": "WPN-MAG-011",
+      "output_name": "Círculo Rúnico de Convergência Dupla",
+      "produced_at": "EST-044",
+      "inputs": [
+        {
+          "resource_id": "MIN-MANA-ORE",
+          "resource_name": "Manalita"
+        },
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        }
+      ],
+      "labor_role": "armeiro rúnico",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-055",
+      "output_item_ref": "WPN-MAG-012",
+      "output_name": "Cetro da Última Maré Planetária",
+      "produced_at": "EST-044",
+      "inputs": [
+        {
+          "resource_id": "MIN-MANA-ORE",
+          "resource_name": "Manalita"
+        },
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        },
+        {
+          "resource_id": "MIN-GOLD",
+          "resource_name": "Aúreo Solar"
+        }
+      ],
+      "labor_role": "armeiro rúnico",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-056",
+      "output_item_ref": "WPN-MAG-013",
+      "output_name": "Pingente de Corrente Latente",
+      "produced_at": "EST-044",
+      "inputs": [
+        {
+          "resource_id": "MIN-MANA-ORE",
+          "resource_name": "Manalita"
+        }
+      ],
+      "labor_role": "armeiro rúnico",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-057",
+      "output_item_ref": "WPN-MAG-014",
+      "output_name": "Manopla de Gesto Ritual",
+      "produced_at": "EST-044",
+      "inputs": [
+        {
+          "resource_id": "MIN-MANA-ORE",
+          "resource_name": "Manalita"
+        },
+        {
+          "resource_id": "MAT-008",
+          "resource_name": "Pergaminho de Fibra"
+        }
+      ],
+      "labor_role": "armeiro rúnico",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-058",
+      "output_item_ref": "WPN-MAG-015",
+      "output_name": "Véu Rúnico de Interrupção Arcana",
+      "produced_at": "EST-044",
+      "inputs": [
+        {
+          "resource_id": "MIN-MANA-ORE",
+          "resource_name": "Manalita"
+        },
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        }
+      ],
+      "labor_role": "armeiro rúnico",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-059",
+      "output_item_ref": "WPN-MAG-016",
+      "output_name": "Trono Portátil de Convergência",
+      "produced_at": "EST-044",
+      "inputs": [
+        {
+          "resource_id": "MIN-MANA-ORE",
+          "resource_name": "Manalita"
+        },
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        },
+        {
+          "resource_id": "MIN-GOLD",
+          "resource_name": "Aúreo Solar"
+        }
+      ],
+      "labor_role": "armeiro rúnico",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-060",
+      "output_item_ref": "WPN-PRE-001",
+      "output_name": "Fuzil de Observação",
+      "produced_at": "EST-003",
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        },
+        {
+          "resource_id": "MIN-QUARTZ",
+          "resource_name": "Quartzo de Veio"
+        }
+      ],
+      "labor_role": "armeiro",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-061",
+      "output_item_ref": "WPN-PRE-002",
+      "output_name": "Fuzil de Precisão Convergente",
+      "produced_at": "EST-003",
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        },
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        },
+        {
+          "resource_id": "MIN-TITAN",
+          "resource_name": "Titanita Cinzenta"
+        }
+      ],
+      "labor_role": "armeiro",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-062",
+      "output_item_ref": "WPN-PRE-003",
+      "output_name": "Fuzil de Longa Distância Convencional",
+      "produced_at": "EST-003",
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        },
+        {
+          "resource_id": "MIN-QUARTZ",
+          "resource_name": "Quartzo de Veio"
+        }
+      ],
+      "labor_role": "armeiro",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-063",
+      "output_item_ref": "WPN-PRE-004",
+      "output_name": "Fuzil de Precisão com Ótica Rúnica Avançada",
+      "produced_at": "EST-003",
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        },
+        {
+          "resource_id": "MIN-QUARTZ",
+          "resource_name": "Quartzo de Veio"
+        },
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        }
+      ],
+      "labor_role": "armeiro",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-064",
+      "output_item_ref": "WPN-REV-002",
+      "output_name": "Revólver Selado de Marcação",
+      "produced_at": "EST-003",
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        },
+        {
+          "resource_id": "MIN-TIN",
+          "resource_name": "Estanho Nimbo"
+        },
+        {
+          "resource_id": "MIN-SILVER",
+          "resource_name": "Argêntea Pálida"
+        }
+      ],
+      "labor_role": "armeiro",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-065",
+      "output_item_ref": "WPN-REV-003",
+      "output_name": "Revólver de Marcação Simples",
+      "produced_at": "EST-003",
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        },
+        {
+          "resource_id": "MAT-003",
+          "resource_name": "Couro de Manada"
+        }
+      ],
+      "labor_role": "armeiro",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-066",
+      "output_item_ref": "WPN-REV-004",
+      "output_name": "Revólver Selado de Vínculo",
+      "produced_at": "EST-003",
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        },
+        {
+          "resource_id": "MIN-SILVER",
+          "resource_name": "Argêntea Pálida"
+        },
+        {
+          "resource_id": "MAT-003",
+          "resource_name": "Couro de Manada"
+        }
+      ],
+      "labor_role": "armeiro",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-067",
+      "output_item_ref": "WPN-TEC-002",
+      "output_name": "Emissor de Pulso Sináptico",
+      "produced_at": "EST-019",
+      "inputs": [
+        {
+          "resource_id": "MIN-ROBOTIUM",
+          "resource_name": "Robotita Azul"
+        },
+        {
+          "resource_id": "MAT-002",
+          "resource_name": "Borracha de Seiva"
+        }
+      ],
+      "labor_role": "armeiro",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-068",
+      "output_item_ref": "WPN-TEC-003",
+      "output_name": "Rifle de Convergência Cinética",
+      "produced_at": "EST-019",
+      "inputs": [
+        {
+          "resource_id": "MIN-ROBOTIUM",
+          "resource_name": "Robotita Azul"
+        },
+        {
+          "resource_id": "MIN-MAGNETITE",
+          "resource_name": "Magnetita de Pulso"
+        }
+      ],
+      "labor_role": "armeiro",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-069",
+      "output_item_ref": "WPN-TEC-005",
+      "output_name": "Garra Retrátil Padrão",
+      "produced_at": "EST-019",
+      "inputs": [
+        {
+          "resource_id": "MIN-ROBOTIUM",
+          "resource_name": "Robotita Azul"
+        }
+      ],
+      "labor_role": "armeiro",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-070",
+      "output_item_ref": "WPN-TEC-006",
+      "output_name": "Disruptor de Curto Alcance",
+      "produced_at": "EST-019",
+      "inputs": [
+        {
+          "resource_id": "MIN-ROBOTIUM",
+          "resource_name": "Robotita Azul"
+        },
+        {
+          "resource_id": "MAT-002",
+          "resource_name": "Borracha de Seiva"
+        }
+      ],
+      "labor_role": "armeiro",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-071",
+      "output_item_ref": "WPN-TEC-007",
+      "output_name": "Canhão de Trilho Portátil",
+      "produced_at": "EST-019",
+      "inputs": [
+        {
+          "resource_id": "MIN-ROBOTIUM",
+          "resource_name": "Robotita Azul"
+        },
+        {
+          "resource_id": "MIN-MAGNETITE",
+          "resource_name": "Magnetita de Pulso"
+        }
+      ],
+      "labor_role": "armeiro",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-072",
+      "output_item_ref": "WPN-TEC-008",
+      "output_name": "Enxame de Nanolâminas",
+      "produced_at": "EST-019",
+      "inputs": [
+        {
+          "resource_id": "MIN-ROBOTIUM",
+          "resource_name": "Robotita Azul"
+        },
+        {
+          "resource_id": "MIN-MAGNETITE",
+          "resource_name": "Magnetita de Pulso"
+        },
+        {
+          "resource_id": "MAT-005",
+          "resource_name": "Resina Rúnica"
+        }
+      ],
+      "labor_role": "armeiro",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-073",
+      "output_item_ref": "WPN-TEC-009",
+      "output_name": "Escudo Reativo Compacto",
+      "produced_at": "EST-019",
+      "inputs": [
+        {
+          "resource_id": "MIN-ROBOTIUM",
+          "resource_name": "Robotita Azul"
+        }
+      ],
+      "labor_role": "armeiro",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-074",
+      "output_item_ref": "WPN-TEC-010",
+      "output_name": "Lançador de Fragmentos Sintéticos",
+      "produced_at": "EST-019",
+      "inputs": [
+        {
+          "resource_id": "MIN-ROBOTIUM",
+          "resource_name": "Robotita Azul"
+        },
+        {
+          "resource_id": "MAT-002",
+          "resource_name": "Borracha de Seiva"
+        }
+      ],
+      "labor_role": "armeiro",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-075",
+      "output_item_ref": "WPN-TEC-011",
+      "output_name": "Torreta Portátil de Convergência",
+      "produced_at": "EST-019",
+      "inputs": [
+        {
+          "resource_id": "MIN-ROBOTIUM",
+          "resource_name": "Robotita Azul"
+        },
+        {
+          "resource_id": "MIN-MAGNETITE",
+          "resource_name": "Magnetita de Pulso"
+        }
+      ],
+      "labor_role": "armeiro",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-076",
+      "output_item_ref": "WPN-TEC-012",
+      "output_name": "Exoesqueleto de Assalto",
+      "produced_at": "EST-019",
+      "inputs": [
+        {
+          "resource_id": "MIN-ROBOTIUM",
+          "resource_name": "Robotita Azul"
+        },
+        {
+          "resource_id": "MIN-MAGNETITE",
+          "resource_name": "Magnetita de Pulso"
+        },
+        {
+          "resource_id": "MAT-005",
+          "resource_name": "Resina Rúnica"
+        }
+      ],
+      "labor_role": "armeiro",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-077",
+      "output_item_ref": "WPN-TEC-013",
+      "output_name": "Faca Vibracional Padrão",
+      "produced_at": "EST-019",
+      "inputs": [
+        {
+          "resource_id": "MIN-ROBOTIUM",
+          "resource_name": "Robotita Azul"
+        }
+      ],
+      "labor_role": "armeiro",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-078",
+      "output_item_ref": "WPN-TEC-014",
+      "output_name": "Escudo de Choque Sináptico",
+      "produced_at": "EST-019",
+      "inputs": [
+        {
+          "resource_id": "MIN-ROBOTIUM",
+          "resource_name": "Robotita Azul"
+        },
+        {
+          "resource_id": "MAT-002",
+          "resource_name": "Borracha de Seiva"
+        }
+      ],
+      "labor_role": "armeiro",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-079",
+      "output_item_ref": "WPN-TEC-015",
+      "output_name": "Lâmina de Plasma Contida",
+      "produced_at": "EST-019",
+      "inputs": [
+        {
+          "resource_id": "MIN-ROBOTIUM",
+          "resource_name": "Robotita Azul"
+        },
+        {
+          "resource_id": "MIN-MAGNETITE",
+          "resource_name": "Magnetita de Pulso"
+        }
+      ],
+      "labor_role": "armeiro",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "recipe_id": "RCP-080",
+      "output_item_ref": "WPN-TEC-016",
+      "output_name": "Núcleo Gêmeo de Sobrecarga",
+      "produced_at": "EST-019",
+      "inputs": [
+        {
+          "resource_id": "MIN-ROBOTIUM",
+          "resource_name": "Robotita Azul"
+        },
+        {
+          "resource_id": "MIN-MAGNETITE",
+          "resource_name": "Magnetita de Pulso"
+        },
+        {
+          "resource_id": "MAT-005",
+          "resource_name": "Resina Rúnica"
+        }
+      ],
+      "labor_role": "armeiro",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    }
+  ]
+}

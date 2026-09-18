@@ -1,0 +1,30 @@
+{
+  "loc_id": "LOC-020-006",
+  "record_id": "LOC-020-006",
+  "name": "Teatro de Ecos",
+  "parent_subregion": "SUB-020-004",
+  "function": "Espaço de lazer, arte, simulações e ensino.",
+  "notable_link": "TER-020 Nérion — Região Autônoma dos Despertos",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "settlement_tier": "COMPLEXO",
+  "history": "O primeiro espetáculo foi uma reconstrução do despertar, mas os atores discordaram sobre qual versão deveria ser lembrada.",
+  "figures": [
+    {
+      "name": "Lume-3",
+      "note": "curador de memórias"
+    },
+    {
+      "name": "Pipa-6",
+      "note": "artista que inventa memórias para ensinar empatia"
+    }
+  ],
+  "hook": "Uma simulação cria uma nova frase na voz da Maga misteriosa.",
+  "secondary_hook": "A disputa local revela uma escolha difícil entre autonomia, segurança e memória.",
+  "detail": "Ingressos podem ser pagos com uma memória voluntária curta, nunca com memória essencial.",
+  "prohibitions": [
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION",
+    "NO_NAME_FOR_MYSTERIOUS_MAGE_YET"
+  ],
+  "sensory": "O palco altera luz, temperatura e gravidade para transformar memória em experiência."
+}

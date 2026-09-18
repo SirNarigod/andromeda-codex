@@ -1,0 +1,42 @@
+{
+  "record_id": "ANDROMEDA-STAGE16B-AUTHORITY-RECOVERY-EDITOR-BRIDGE-V0.8.0",
+  "captured_at": "2026-08-21T22:30:45.3065332-03:00",
+  "bridge": "EXISTING_GODOT_EDITOR_BRIDGE",
+  "godot": "4.7.1.stable.official.a13da4feb",
+  "renderer": "OpenGL 3.3 Compatibility",
+  "gpu": "NVIDIA GeForce GTX 1650",
+  "driver": "NVIDIA 560.94",
+  "existing_user_editor": {"pid": 10524, "preserved": true},
+  "invalidated_runs": [
+    {
+      "scene": "res://tests/godot/AuthorityRecoveryRuntimeGate.tscn",
+      "functional_checks": "154/154",
+      "counted": false,
+      "errors": [
+        "WARNING: await keyword is unnecessary because the expression is not a coroutine nor a signal at authority_recovery_runtime_gate.gd:134"
+      ],
+      "correction": "Removed the unnecessary await and reran headless plus Editor Bridge."
+    }
+  ],
+  "final_authority_recovery_gate": {
+    "scene": "res://tests/godot/AuthorityRecoveryRuntimeGate.tscn",
+    "checks": 154,
+    "passed": 154,
+    "failed": 0,
+    "marker": "ANDROMEDA_STAGE16B_AUTHORITY_RECOVERY_GATE: PASS",
+    "debugger_errors": 0,
+    "debugger_warnings": 0,
+    "controlled_stop": true,
+    "finalErrors": []
+  },
+  "final_main": {
+    "scene": "res://scenes/Main.tscn",
+    "observation_seconds": 8,
+    "status": "PASS",
+    "debugger_errors": 0,
+    "debugger_warnings": 0,
+    "controlled_stop": true,
+    "finalErrors": []
+  },
+  "final_status": "PASS"
+}

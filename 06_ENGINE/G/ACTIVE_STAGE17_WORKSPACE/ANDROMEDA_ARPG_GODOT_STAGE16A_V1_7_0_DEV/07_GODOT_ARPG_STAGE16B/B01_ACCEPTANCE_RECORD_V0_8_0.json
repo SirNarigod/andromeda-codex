@@ -1,0 +1,210 @@
+{
+  "record_id": "ARPG-STAGE16B-B01-ACCEPTANCE-RECORD-V0.8.0",
+  "project": "ANDROMEDA CODEX ARPG",
+  "stage": "16B/23",
+  "block": "B01_BRIDGE_SESSION_SNAPSHOT_GODOT_RUNTIME_GATE",
+  "recorded_at": "2026-08-20T19:27:02.3949360-03:00",
+  "status": "B01_PASS_WITH_LIVE_HTTP_BACKEND_NOT_AVAILABLE",
+  "authority": {
+    "master": "ANDROMEDA_CODEX_MASTER_V2_0_1_READ_ONLY_UNCHANGED",
+    "stage16a": "V0.8.0_BASELINE_BYTE_IDENTICAL",
+    "living_godot_v15": "HISTORICAL_READ_ONLY_REFERENCE_UNCHANGED",
+    "godot": "CLIENT_TRANSPORT_SESSION_SNAPSHOT_PRESENTATION_ONLY",
+    "canon_mutations": 0
+  },
+  "environment": {
+    "godot_version": "4.7.1.stable.official.a13da4feb",
+    "godot_executable": "C:/Program Files/Godot/Godot.exe",
+    "python_version": "3.12.13",
+    "python_executable": "C:/Users/thall/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+    "workspace_project": "C:/Users/thall/Documents/andromeda-argp",
+    "stage16b_project": "C:/Users/thall/Documents/andromeda-argp/ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/07_GODOT_ARPG_STAGE16B"
+  },
+  "source_integrity": {
+    "checkpoint_sha256": "21626A3152CB37E167EEE24BFF9D3142C5D389A8CA2827594B34211591525A6A",
+    "start_here_sha256": "FC757F86A9B10158528311FBE27EDE894D855AB00B5AEE3C24689F8BC13ABB61",
+    "extracted_files_verified": 724,
+    "post_b01_mismatches": 0,
+    "status": "PASS"
+  },
+  "existing_connections": {
+    "editor_bridge": {
+      "status": "PASS",
+      "capabilities_tested": [
+        "get_godot_version",
+        "get_project_info",
+        "run_project",
+        "get_debug_output",
+        "stop_project"
+      ],
+      "debugger_errors": 0
+    },
+    "runtime_http_transport": {
+      "server_url": "http://127.0.0.1:8000",
+      "snapshot_path": "/snapshot",
+      "command_path": "/command",
+      "status": "NOT_AVAILABLE",
+      "probe_result": "REMOTE_CONNECTION_FAILED_NO_LISTENER",
+      "server_source_found_in_checkpoint": false,
+      "new_endpoint_created": false,
+      "counted_as_pass": false
+    }
+  },
+  "tests": [
+    {
+      "id": "BASELINE_GODOT_V15_GATE",
+      "result": "PASS",
+      "marker": "ANDROMEDA_GODOT_V1_5_RUNTIME_GATE: PASS",
+      "errors": 0,
+      "warnings": 0,
+      "evidence": "B01_GODOT_V15_HISTORICAL_GATE.log"
+    },
+    {
+      "id": "STAGE16A_PRE_MUTATION_ACCUMULATED",
+      "result": "PASS",
+      "passed": 209,
+      "failed": 0,
+      "duration_s": 256.494
+    },
+    {
+      "id": "STAGE16A_PRE_MUTATION_STRESS",
+      "result": "PASS",
+      "passed": 20,
+      "failed": 0
+    },
+    {
+      "id": "STAGE16B_B01_HEADLESS_RUNTIME",
+      "result": "PASS",
+      "passed": 54,
+      "failed": 0,
+      "process_exit_code": 0,
+      "errors": 0,
+      "warnings": 0,
+      "evidence": "B01_GODOT_RUNTIME.log"
+    },
+    {
+      "id": "STAGE16B_B01_EDITOR_BRIDGE_DEBUGGER",
+      "result": "PASS",
+      "passed": 54,
+      "failed": 0,
+      "debugger_errors": 0,
+      "evidence": "B01_EDITOR_BRIDGE_DEBUGGER_V0_8_0.json"
+    },
+    {
+      "id": "STAGE16A_POST_B01_ACCUMULATED",
+      "result": "PASS",
+      "passed": 209,
+      "failed": 0,
+      "duration_s": 249.208
+    },
+    {
+      "id": "STAGE16A_POST_B01_STRESS",
+      "result": "PASS",
+      "passed": 20,
+      "failed": 0
+    },
+    {
+      "id": "STAGE16A_POST_B01_BYTE_INTEGRITY",
+      "result": "PASS",
+      "files_verified": 724,
+      "mismatches": 0
+    }
+  ],
+  "invalid_attempts_not_counted": [
+    {
+      "attempt": "SANDBOXED_GODOT_V15_GATE",
+      "reason": "ROOT_CERTIFICATE_STORE_ERROR",
+      "correction": "RERUN_WITH_NORMAL_WINDOWS_CERTIFICATE_ACCESS"
+    },
+    {
+      "attempt": "WINDOWS_STORE_PYTHON_ALIAS",
+      "reason": "ALIAS_NOT_EXECUTABLE_IN_ENVIRONMENT",
+      "correction": "USE_BUNDLED_PYTHON_3_12_13"
+    },
+    {
+      "attempt": "FIRST_ARCHIVE_HASH_SCRIPT",
+      "reason": "CONVERT_TOHEXSTRING_NOT_AVAILABLE",
+      "correction": "BITCONVERTER_SHA256_AND_FULL_724_FILE_RERUN"
+    },
+    {
+      "attempt": "FIRST_EDITOR_BRIDGE_DEBUG_ATTACH",
+      "reason": "GATE_EXITED_BEFORE_DELAYED_DEBUGGER_QUERY",
+      "correction": "CONFIGURABLE_GATE_LINGER_AND_CONTROLLED_STOP"
+    },
+    {
+      "attempt": "FIRST_ATTACHED_DEBUGGER_RUN",
+      "reason": "TWO_GDSCRIPT_SHADOWING_WARNINGS",
+      "correction": "RENAME_NAME_PARAMETERS_TO_CHECK_ID_AND_RERUN_BOTH_MODES"
+    },
+    {
+      "attempt": "EDITOR_IMPORT_DIAGNOSTIC",
+      "reason": "EDITOR_DEBUG_SOCKET_ALREADY_OWNED_BY_USER_EDITOR_AND_GUI_EXE_HAS_NO_LASTEXITCODE",
+      "correction": "DO_NOT_STOP_USER_EDITOR; USE_RUNTIME_HEADLESS_WITH_START_PROCESS_WAIT_PASSTHRU"
+    }
+  ],
+  "changed_files": [
+    ".gitignore",
+    "project.godot",
+    "README_STAGE16B_B01.md",
+    "scripts/runtime/client_session.gd",
+    "scripts/runtime/client_session.gd.uid",
+    "scripts/runtime/andromeda_bridge.gd",
+    "scripts/runtime/andromeda_bridge.gd.uid",
+    "tests/godot/B01RuntimeGate.tscn",
+    "tests/godot/b01_runtime_gate.gd",
+    "tests/godot/b01_runtime_gate.gd.uid",
+    "B01_GODOT_RUNTIME.log",
+    "B01_GODOT_V15_HISTORICAL_GATE.log",
+    "B01_GODOT_IMPORT.log",
+    "B01_GODOT_IMPORT_DIAGNOSTIC.log",
+    "B01_EDITOR_BRIDGE_DEBUGGER_V0_8_0.json",
+    "B01_ACCEPTANCE_RECORD_V0_8_0.json",
+    "B01_IMPLEMENTATION_LOG_V0_8_0.md"
+  ],
+  "code_sha256": {
+    "project.godot": "6FDB7438C8723B93178EF8354BE194F79141B673D53CF8A6E87F85BE23DDBBCA",
+    "README_STAGE16B_B01.md": "DA0E4A35718C25EB74DF9C069D323B8AA50E189B9651436CAA7C8B3845AF6396",
+    "scripts/runtime/andromeda_bridge.gd": "50F4E167A51FF1FF112A5A47FA580995C4297ACC2F4D782A7F942AC99EA38FC0",
+    "scripts/runtime/client_session.gd": "220684033C72175C482622B7F6700CA1C8154426A32ABDAC9131B713CEEDCE54",
+    "tests/godot/B01RuntimeGate.tscn": "DE8DBCCFCCB8C49841C65075359B24E919736F2D2D20834B86F715D9287543A1",
+    "tests/godot/b01_runtime_gate.gd": "A573EC5DB3C3F94E33F990CD6E46334DE772754202C285781D3B479ADB02B8B5"
+  },
+  "acceptance_matrix": [
+    {"id": "G16B-01", "status": "PASS", "evidence": ["BASELINE_GODOT_V15_GATE", "STAGE16B_B01_HEADLESS_RUNTIME", "STAGE16B_B01_EDITOR_BRIDGE_DEBUGGER"]},
+    {"id": "G16B-02", "status": "NOT_RUN", "planned_block": "B02"},
+    {"id": "G16B-03", "status": "NOT_RUN", "planned_block": "B03"},
+    {"id": "G16B-04", "status": "NOT_RUN", "planned_block": "B07"},
+    {"id": "G16B-05", "status": "NOT_RUN", "planned_block": "B07_B08"},
+    {"id": "G16B-06", "status": "NOT_RUN", "planned_block": "B07"},
+    {"id": "G16B-07", "status": "NOT_RUN", "planned_block": "B04"},
+    {"id": "G16B-08", "status": "NOT_RUN", "planned_block": "B04_B05"},
+    {"id": "G16B-09", "status": "NOT_RUN", "planned_block": "B04"},
+    {"id": "G16B-10", "status": "NOT_RUN", "planned_block": "B05"},
+    {"id": "G16B-11", "status": "NOT_RUN", "planned_block": "B05"},
+    {"id": "G16B-12", "status": "NOT_RUN", "planned_block": "B05"},
+    {"id": "G16B-13", "status": "NOT_RUN", "planned_block": "B05_B06"},
+    {"id": "G16B-14", "status": "NOT_RUN", "planned_block": "B02"},
+    {"id": "G16B-15", "status": "NOT_RUN", "planned_block": "B06"},
+    {"id": "G16B-16", "status": "NOT_RUN", "planned_block": "B09"},
+    {"id": "G16B-17", "status": "NOT_RUN", "planned_block": "B10"},
+    {"id": "G16B-18", "status": "NOT_RUN", "planned_block": "B10"},
+    {"id": "G16B-19", "status": "NOT_RUN", "planned_block": "B11"},
+    {"id": "G16B-20", "status": "PARTIAL_EVIDENCE_B01_NOT_FINAL", "planned_block": "B11", "b01_regression": "209_209_PLUS_20_20_PASS"},
+    {"id": "G16B-21", "status": "NOT_RUN", "planned_block": "B03"},
+    {"id": "G16B-22", "status": "NOT_RUN", "planned_block": "B03"},
+    {"id": "G16B-23", "status": "NOT_RUN", "planned_block": "B05"},
+    {"id": "G16B-24", "status": "NOT_RUN", "planned_block": "B04"},
+    {"id": "G16B-25", "status": "NOT_RUN", "planned_block": "B04_B10"},
+    {"id": "G16B-26", "status": "NOT_RUN", "planned_block": "B05_B09_B10"},
+    {"id": "G16B-27", "status": "NOT_RUN", "planned_block": "B07_B10"},
+    {"id": "G16B-28", "status": "NOT_RUN", "planned_block": "B10"}
+  ],
+  "stage16_complete": false,
+  "final_backup_authorized": false,
+  "next_block": "B02_MAIN_PLAYER_CAMERA_CLICK_TO_MOVE",
+  "notes": [
+    "G16B-01 is the only acceptance gate marked PASS in B01.",
+    "The live HTTP backend probe is explicitly not a PASS and no replacement endpoint was created.",
+    "No final Stage16 backup was created."
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "record_id": "STELLAR-SKILL-ITEMIZATION-LAW-V1.0",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.0",
+  "status": "ACTIVE_R2_COMPATIBLE_DERIVATION",
+  "authority": {
+    "scope": "SKILLS_ITEMS_AND_EQUIPMENT",
+    "canon_identity": "R2_READ_ONLY_WHERE_DEFINED",
+    "numeric_gameplay": "DERIVED_REVISABLE"
+  },
+  "dependencies": [
+    "STELLAR_MAGIC_TECHNOLOGY_LAW_V1_1.json",
+    "STELLAR_SYMBIOSIS_LAW_V1_0.json",
+    "STELLAR_PROGRESSION_QUEST_CONSEQUENCE_LAW_V1_1.json",
+    "../ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/02_CONTRACTS/ARPG_STAGE06/ARPG_SKILL_CORE_CONTRACT_V0_7_0.json",
+    "../ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/02_CONTRACTS/ARPG_STAGE05/ARPG_ITEMIZATION_CONTRACT_V0_6_0.json"
+  ],
+  "invariants": [
+    "SKILLS_REQUIRE_SOURCE_METHOD_BEARER_OBJECTIVE_TARGET_COST_AND_CONSEQUENCE_WHERE_APPLICABLE",
+    "NO_FIXED_CLASS_LABEL_DEFINES_A_PERSON",
+    "SKILL_MASTERY_REQUIRES_PROVENANCE",
+    "R2_ITEM_NAME_AND_IDENTITY_ARE_IMMUTABLE",
+    "UNIQUE_ITEMS_REQUIRE_AUTHORED_DEFINITION",
+    "RUNES_REQUIRE_SUPPORT_WEAR_AND_DISSIPATION",
+    "RARITY_STATS_WEIGHT_DURABILITY_SLOTS_AND_LOADOUTS_ARE_RUNTIME_CONFIGURATION"
+  ],
+  "prohibitions": [
+    "NO_AUTOMATIC_KENUA_SPELL_UNLOCK_IN_SEASON_1",
+    "NO_INVENTED_RUNE_EFFECT",
+    "NO_NUMERIC_COMBAT_MAPPING_INFERRED_FROM_R2_TEXT",
+    "NO_LOOT_PROMOTES_ITEM_OR_SKILL_TO_CANON",
+    "NO_UNAUTHORED_SINGULAR_ITEM",
+    "NO_TECHNOLOGY_OR_MAGIC_NEGATES_LIVING_LAWS"
+  ],
+  "simulation_effects": [
+    "A skill action checks its source, method, available material or energy, cost, risk, target and consequence before execution.",
+    "Equipment may change tactical options, but broken, absent or unsuitable equipment cannot silently retain its effect.",
+    "Runtime loadout size, ranks, cooldowns, affixes and numeric values may change during UE5 balancing without a canon migration.",
+    "Symbiotic effects remain subject to Kenua-specific R2 boundaries and never become a generic player entitlement."
+  ],
+  "allowed_states": [
+    "UNTRAINED",
+    "PRACTICING",
+    "CONTEXTUAL_USE",
+    "MASTERED_IN_PART",
+    "EQUIPPED",
+    "BROKEN_OR_UNSUITABLE",
+    "AUTHORIAL_ITEM_REVIEW"
+  ],
+  "story_generators": [
+    "Uma arma sintonizada com um mineral escasso obriga seu portador a escolher entre vencer uma luta e privar uma aldeia de tratamento.",
+    "Uma runa antiga funciona por segundos, mas o suporte começa a se desfazer e revela o nome de quem a construiu.",
+    "Dois jogadores aprendem a mesma técnica por caminhos opostos; seus custos sociais tornam os resultados irreconciliáveis."
+  ],
+  "compatibility": {
+    "source_contracts": "Skill, itemization and related implementation contracts are derived design sources, not lore authorities.",
+    "godot": "No code, scene, hotbar count or prototype number is ported automatically.",
+    "unreal_engine_5": "Future adapters consume the engine-neutral checks and preserve R2 identifiers."
+  }
+}

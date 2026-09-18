@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-OFFLINE-WORLD-JOURNAL-SYSTEM-DEV-V1.0",
+  "title": "Sistema F - Mundo Vivo Offline (instancia LONG_HORIZON_OFFLINE_RECONCILIATION_CONTRACT_V1_0)",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "r2_guard": "Instancia pela primeira vez a regra 'o mundo respira sem o jogador' com um formato concreto de 'jornal do que mudou' - ate agora so existia como guard-rail tecnico (teto de mudanca), sem consequencia narrativa legivel. Usa os sistemas ja existentes (calendario, economia sistemica Sistema D, ambiente reativo Sistema E) como fonte dos eventos do jornal - nenhum evento novo e inventado fora dessas fontes.",
+  "offline_rules": {
+    "routine_safe_processes": [
+      "producao_continua (STELLAR_PRODUCTION_RECIPES/REGIONAL_SPECIALTY_GOODS)",
+      "consumo_regional",
+      "clima_local (STELLAR_CALENDAR_SYSTEM)",
+      "recuperacao_ecologica_na_mesma_regiao"
+    ],
+    "frozen_processes": [
+      "decisoes individuais de NPC nomeado (CIV-XXX/ZUM-XXX/COR-NXX)",
+      "decisoes individuais de criatura (CRI-XXX)",
+      "qualquer transicao de fase da Raiz Profunda (fase 57, so por novo portao autoral)"
+    ],
+    "population_change_cap": "10% por 30 dias-jogo (ver STELLAR_CALENDAR_SYSTEM: 30 dias = pouco mais de 1 mes do calendario de 12 meses/336 dias)",
+    "ecological_change_cap": "15% por 30 dias-jogo (recursos/flora/fauna dentro da mesma regiao)"
+  },
+  "journal_entry_format": {
+    "fields": [
+      "territory_id",
+      "days_elapsed",
+      "season_context (do STELLAR_CALENDAR_SYSTEM)",
+      "routine_events (lista curta)",
+      "population_delta (dentro do teto 10%)",
+      "ecological_delta (dentro do teto 15%)",
+      "frozen_note"
+    ],
+    "rule": "Cada entrada cobre 1 territorio por um periodo de ausencia - eventos vem so de sistemas ja existentes (producao continua, clima do calendario, recuperacao ecologica), nunca de decisao individual de NPC."
+  },
+  "worked_example_journal": {
+    "territory_id": "TER-014",
+    "territory_title": "Cadeia de Cinzas",
+    "days_elapsed": 30,
+    "season_context": "Transicao de Ascensao para Zenite (STELLAR_CALENDAR_SYSTEM) - meses Floracao para Colheita",
+    "routine_events": [
+      "Fundicao da Caldeira (EST-049) produziu Barra de Basalto Fundido (REG-001) continuamente durante os 30 dias - producao rotineira, sem evento excepcional.",
+      "Campos de Cinza (SUB-014-003) tiveram pequena colheita adicional coerente com a transicao de estacao para Zenite (pico agricola).",
+      "shortage_pressure de TER-014 permaneceu estavel (45, MEDIA food_security) - nenhuma crise registrada."
+    ],
+    "population_delta": "+4% no Casario da Cratera (EST-050) - dentro do teto de 10%, atribuido a chegada normal de trabalhadores atraidos pela mineracao, nao a decisao individual nomeada.",
+    "ecological_delta": "-6% na disponibilidade de Basalto Negro superficial na Caldeira Ativa (SUB-014-001) - dentro do teto de 15%, recuperacao ecologica natural continua no proximo periodo.",
+    "frozen_note": "Nenhuma decisao individual de Torvin (CIV-016) ou de qualquer NPC nomeado foi processada offline - eles retomam exatamente de onde o jogador os deixou, sem historia individual inventada durante a ausencia.",
+    "canon_note": "Exemplo hipotetico do formato do sistema - nao um evento de jogo real, so demonstra a mecanica de journal usando dados ja catalogados (fases 45/56/D/calendario)."
+  },
+  "prohibitions": [
+    "NO_INDIVIDUAL_NPC_DECISION_OFFLINE",
+    "NO_CHANGE_BEYOND_10_15_PERCENT_CAP",
+    "NO_ROOT_PHASE_TRANSITION_OFFLINE",
+    "NO_JOURNAL_ENTRY_WITHOUT_ROUTINE_SAFE_SOURCE"
+  ]
+}

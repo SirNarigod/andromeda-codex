@@ -1,0 +1,59 @@
+{
+  "record_id": "ARPG-STAGE16B-B02-EDITOR-BRIDGE-DEBUGGER-V0.8.0",
+  "recorded_at": "2026-08-20T20:11:44.0474320-03:00",
+  "status": "PASS",
+  "godot_version": "4.7.1.stable.official.a13da4feb",
+  "renderer": "OpenGL 3.3 Compatibility",
+  "device": "NVIDIA GeForce GTX 1650",
+  "project_path": "C:/Users/thall/Documents/andromeda-argp/ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/07_GODOT_ARPG_STAGE16B",
+  "connection": "EXISTING_LOCAL_ANDROMEDA_EDITOR_BRIDGE",
+  "runs": [
+    {
+      "scene": "res://tests/godot/B02RuntimeGate.tscn",
+      "result": "PASS",
+      "checks": 90,
+      "passed": 90,
+      "failed": 0,
+      "marker": "ANDROMEDA_STAGE16B_B02_GATE: PASS",
+      "debug_output_errors": [],
+      "debugger_error_count": 0,
+      "debugger_warning_count": 0,
+      "controlled_stop": true,
+      "final_errors": []
+    },
+    {
+      "scene": "res://scenes/Main.tscn",
+      "result": "PASS",
+      "purpose": "DIRECT_MAIN_ENTRY_POINT_STARTUP",
+      "debug_output_errors": [],
+      "debugger_error_count": 0,
+      "debugger_warning_count": 0,
+      "controlled_stop": true,
+      "final_errors": []
+    },
+    {
+      "scene": "res://tests/godot/B01RuntimeGate.tscn",
+      "result": "PASS",
+      "checks": 54,
+      "passed": 54,
+      "failed": 0,
+      "marker": "ANDROMEDA_STAGE16B_B01_GATE: PASS",
+      "debug_output_errors": [],
+      "debugger_error_count": 0,
+      "debugger_warning_count": 0,
+      "controlled_stop": true,
+      "final_errors": []
+    }
+  ],
+  "invalid_attempts_not_counted": [
+    {
+      "scene": "res://tests/godot/B02RuntimeGate.tscn",
+      "functional_checks": "82/82",
+      "result": "INVALIDATED",
+      "reason": "GDSCRIPT_ENUM_TYPING_WARNING_AT_B02_RUNTIME_GATE_LINE_405",
+      "correction": "EXPLICIT_MOUSEBUTTON_ENUM_CAST_AND_FULL_HEADLESS_EDITOR_BRIDGE_RERUN"
+    }
+  ],
+  "backend_roundtrip_executed": false,
+  "backend_substitute_created": false
+}

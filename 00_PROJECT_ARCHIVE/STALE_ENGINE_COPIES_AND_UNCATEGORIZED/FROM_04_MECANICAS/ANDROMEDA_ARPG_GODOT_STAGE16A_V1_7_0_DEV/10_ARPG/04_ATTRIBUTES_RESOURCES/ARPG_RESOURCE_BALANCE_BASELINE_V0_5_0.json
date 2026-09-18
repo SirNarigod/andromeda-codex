@@ -1,0 +1,15 @@
+{
+  "record_id": "ARPG-RESOURCE-BALANCE-BASELINE-V0.5.0",
+  "status": "GAMEPLAY_DERIVED_REBALANCEABLE",
+  "version": "V0.5.0",
+  "resource_model": "ADAPTIVE_BUILD_DERIVED",
+  "primary_channel": "PRIMARY",
+  "global_cooldown_policy": "OPT_IN_PER_ACTION_NOT_UNIVERSAL",
+  "placeholder_consumables": {
+    "PLACEHOLDER_HEALTH_RESTORE": {"health_restore":120.0,"shared_cooldown_s":0.75,"starting_quantity":3},
+    "PLACEHOLDER_RESOURCE_RESTORE": {"resource_restore":90.0,"shared_cooldown_s":0.75,"starting_quantity":3},
+    "PLACEHOLDER_HYBRID_RESTORE": {"health_restore":70.0,"resource_restore":55.0,"shared_cooldown_s":1.0,"starting_quantity":1}
+  },
+  "canon_status": "NOT_CANON_ITEMS; PLACEHOLDERS_FOR_SYSTEM_TESTING_ONLY",
+  "art_dependency": "NONE"
+}

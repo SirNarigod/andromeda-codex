@@ -1,0 +1,285 @@
+{
+  "record_id": "ANDROMEDA-ARPG-STAGE16B-B05-ACCEPTANCE-V0.8.0",
+  "stage": "16B/23",
+  "block": "B05_HUD_WORLD_UI_DIALOGUE_STAMINA_WEAPON_SLOTS",
+  "captured_at": "2026-08-21T03:27:56-03:00",
+  "status": "PASS_APPLICABLE_B05_SCOPE_WITH_PARTIAL_AUTHORITATIVE_EVIDENCE",
+  "b05_closed": true,
+  "b06_started": false,
+  "final_stage16_backup_created": false,
+  "authority": {
+    "master_v2_0_1": "READ_ONLY",
+    "stage16a_v0_8_0": "READ_ONLY_BASELINE",
+    "godot_living_v1_5": "READ_ONLY",
+    "godot_role": "HUD_WORLD_UI_INPUT_AND_SNAPSHOT_PRESENTATION_ONLY",
+    "gameplay_authority_in_gdscript": false,
+    "backend_substitute_created": false,
+    "command_transport_submitted_by_b05": false
+  },
+  "environment": {
+    "godot_version": "4.7.1.stable.official.a13da4feb",
+    "project_path": "C:/Users/thall/Documents/andromeda-argp/ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/07_GODOT_ARPG_STAGE16B",
+    "main_scene": "res://scenes/Main.tscn",
+    "editor_bridge": "EXISTING_LOCAL_ANDROMEDA_EDITOR_BRIDGE_OPERATIONAL",
+    "backend_127_0_0_1_8000": {
+      "status": "NOT_AVAILABLE",
+      "listener_count": 0
+    }
+  },
+  "architecture": {
+    "ui_theme": {
+      "background": "OFF_WHITE_WHITE",
+      "corner_radius_px_candidate": 14,
+      "primary_text": "#6B6B6B",
+      "secondary_text": "#8A8A8A",
+      "important_text": "#D9A15F",
+      "font": "ROUNDED_SYSTEM_CANDIDATES_WITH_FALLBACK_FINAL_ASSET_DEFERRED",
+      "copied_assets": false,
+      "final_art": false
+    },
+    "stamina": {
+      "presentation": "PLAYER_ADJACENT_SCREEN_SPACE_RADIAL_CIRCLE",
+      "color": "SOFT_YELLOW",
+      "states_executed": ["CONSUMING", "REGENERATING", "INACTIVE"],
+      "hide_full_inactive": true,
+      "permanent_numbers": false,
+      "horizontal_bar": false,
+      "authoritative_stamina_mutated": false
+    },
+    "weapon_quick_slots": {
+      "visible_slot_count": 2,
+      "simultaneously_active_visual_slots": 1,
+      "inputs_executed": ["KEY_1", "KEY_2", "UNMODIFIED_WHEEL", "MODIFIER_PLUS_WHEEL", "MENU_WHEEL"],
+      "intent_envelopes_built": true,
+      "transport_submitted": false,
+      "authoritative_main_hand_mutated": false
+    },
+    "dialogue": {
+      "mode": "REAL_TIME_NO_NEXT_NO_PAUSE",
+      "bubble_pool_capacity": 3,
+      "same_conversation_turn_gating": true,
+      "normal_text": "#6B6B6B",
+      "important_text": "#D9A15F",
+      "important_bottom_accessibility_line": true,
+      "npc_name_hover_only": true,
+      "choices_near_npc": true,
+      "narrative_content": "PLACEHOLDER_EXTERNAL_AUTHORITY_REQUIRED"
+    },
+    "inventory_shell": {
+      "toggle_key": "I",
+      "base_slot_placeholder_count": 8,
+      "bag_slot": true,
+      "bag_container": true,
+      "equipment_area": true,
+      "weapon_slot_references": [1, 2],
+      "auto_pickup_visual_control": true,
+      "remote_pickup_enabled": false,
+      "authoritative_contents": false
+    }
+  },
+  "tests": [
+    {
+      "id": "STAGE16B_B05_HEADLESS_FINAL",
+      "result": "PASS",
+      "passed": 210,
+      "failed": 0,
+      "process_exit_code": 0,
+      "errors": 0,
+      "warnings": 0,
+      "evidence": "B05_GODOT_RUNTIME.log"
+    },
+    {
+      "id": "STAGE16B_B05_EDITOR_BRIDGE_FINAL",
+      "result": "PASS",
+      "passed": 210,
+      "failed": 0,
+      "debugger_errors": 0,
+      "debugger_warnings": 0,
+      "controlled_stop_final_errors": 0,
+      "evidence": "B05_EDITOR_BRIDGE_DEBUGGER_V0_8_0.json"
+    },
+    {
+      "id": "STAGE16B_B05_MAIN_DIRECT_EDITOR_BRIDGE",
+      "result": "PASS",
+      "debugger_errors": 0,
+      "debugger_warnings": 0,
+      "controlled_stop_final_errors": 0
+    },
+    {
+      "id": "STAGE16B_B01_HEADLESS_REGRESSION",
+      "result": "PASS",
+      "passed": 54,
+      "failed": 0,
+      "process_exit_code": 0,
+      "evidence": "B05_GODOT_B01_REGRESSION.log"
+    },
+    {
+      "id": "STAGE16B_B02_HEADLESS_REGRESSION",
+      "result": "PASS",
+      "passed": 90,
+      "failed": 0,
+      "process_exit_code": 0,
+      "evidence": "B05_GODOT_B02_REGRESSION.log"
+    },
+    {
+      "id": "STAGE16B_B03_HEADLESS_REGRESSION",
+      "result": "PASS",
+      "passed": 357,
+      "failed": 0,
+      "process_exit_code": 0,
+      "evidence": "B05_GODOT_B03_REGRESSION.log"
+    },
+    {
+      "id": "STAGE16B_B04_HEADLESS_REGRESSION",
+      "result": "PASS",
+      "passed": 156,
+      "failed": 0,
+      "process_exit_code": 0,
+      "evidence": "B05_GODOT_B04_REGRESSION.log"
+    },
+    {
+      "id": "STAGE16A_POST_B05_ACCUMULATED",
+      "result": "PASS",
+      "passed": 209,
+      "failed": 0,
+      "duration_s": 275.151,
+      "process_exit_code": 0,
+      "evidence": "B05_STAGE16A_REGRESSION.log"
+    },
+    {
+      "id": "STAGE16A_POST_B05_STRESS",
+      "result": "PASS",
+      "passed": 20,
+      "failed": 0,
+      "process_exit_code": 0,
+      "evidence": "B05_STAGE16A_STRESS.log"
+    },
+    {
+      "id": "STAGE16A_POST_B05_BYTE_INTEGRITY",
+      "result": "PASS",
+      "files_verified": 724,
+      "missing": 0,
+      "mismatches": 0,
+      "godot_living_v1_5_files_verified": 4
+    }
+  ],
+  "integrity": {
+    "checkpoint_files_verified": 724,
+    "checkpoint_mismatches": 0,
+    "checkpoint_sha256": "21626A3152CB37E167EEE24BFF9D3142C5D389A8CA2827594B34211591525A6A",
+    "master_v2_0_1_sha256": "6D9AC3CCE7DCF6A65FDCF73859C332A0211C1AF52D149077BEEF554BF7BBD0B2",
+    "godot_living_v1_5_files_verified": 4,
+    "godot_living_v1_5_mismatches": 0,
+    "writes_outside_stage16b": 0
+  },
+  "files_modified": [
+    {"path": "project.godot", "sha256": "75239AAADBB331D6293569D0F327BCB5B463FDE14769CD1FEBB71386FA343966"},
+    {"path": "scenes/Main.tscn", "sha256": "0FBE18D2CF6318766232337D448A178FDA38BB1FC38F08492ADFD94742E022C1"},
+    {"path": "scripts/main.gd", "sha256": "9C21673122EF8FDDD3F07CF5894658DE8D373A3E8C3E079F2334E071688C38A9"},
+    {"path": "scripts/input/input_router.gd", "sha256": "990EA7871F043AD46A5B904872B1CA232ABD39CB06A07573A4E16D992520EF2C"}
+  ],
+  "files_created": [
+    "ui/theme/AndromedaMinimalTheme.tres",
+    "scenes/ui/HUD.tscn",
+    "scenes/ui/StaminaWorldRing.tscn",
+    "scenes/ui/WeaponQuickSlots.tscn",
+    "scenes/ui/DialogueBubble.tscn",
+    "scenes/ui/Inventory.tscn",
+    "scripts/ui/hud_controller.gd",
+    "scripts/ui/stamina_world_ring.gd",
+    "scripts/ui/weapon_quick_slots.gd",
+    "scripts/ui/dialogue_bubble.gd",
+    "scripts/ui/inventory_shell.gd",
+    "tests/godot/b05_runtime_gate.gd",
+    "tests/godot/B05RuntimeGate.tscn",
+    "README_STAGE16B_B05.md",
+    "B05_IMPLEMENTATION_LOG_V0_8_0.md",
+    "B05_EDITOR_BRIDGE_DEBUGGER_V0_8_0.json",
+    "B05_ACCEPTANCE_RECORD_V0_8_0.json"
+  ],
+  "generated_uid_sidecars": [
+    "scripts/ui/hud_controller.gd.uid",
+    "scripts/ui/stamina_world_ring.gd.uid",
+    "scripts/ui/weapon_quick_slots.gd.uid",
+    "scripts/ui/dialogue_bubble.gd.uid",
+    "scripts/ui/inventory_shell.gd.uid"
+  ],
+  "evidence_artifacts": [
+    "B05_GODOT_RUNTIME.log",
+    "B05_GODOT_B01_REGRESSION.log",
+    "B05_GODOT_B02_REGRESSION.log",
+    "B05_GODOT_B03_REGRESSION.log",
+    "B05_GODOT_B04_REGRESSION.log",
+    "B05_GODOT_B04_REGRESSION_DIAGNOSTIC_R1.log",
+    "B05_STAGE16A_REGRESSION.log",
+    "B05_STAGE16A_STRESS.log"
+  ],
+  "corrections": [
+    {
+      "finding": "The inherited B03 NPC was outside the dialogue visual range from spawn, so screen clamping invalidated the first proximity fixture.",
+      "correction": "The gate temporarily positions both NPC placeholders within dialogue range and restores them after the test.",
+      "final_result": "PASS_210_OF_210"
+    },
+    {
+      "finding": "The first Editor Bridge run exposed four GDScript warnings although all 210 functional checks passed.",
+      "correction": "The run was invalidated; two unnecessary awaits were removed and Key/MouseButton casts were made explicit before full reruns.",
+      "final_result": "PASS_DEBUGGER_0_ERRORS_0_WARNINGS"
+    },
+    {
+      "finding": "The new B05 dialogue peer occupied the exact B04 small-step test spawn and physically blocked arrival, causing 155/156.",
+      "correction": "The B05-only peer moved from (11,0,8) to (12,0,-14), outside approved traversal routes; B04 and B05 were fully restarted.",
+      "final_result": "B04_156_OF_156_AND_B05_210_OF_210"
+    },
+    {
+      "finding": "A direct PowerShell invocation returned before the GUI-subsystem Godot process completed.",
+      "correction": "The exact test process was stopped and every final headless run used Start-Process -Wait with exit-code and stderr validation; the user's editor process was preserved.",
+      "final_result": "ALL_FINAL_RUNS_COMPLETE_EXIT_0"
+    }
+  ],
+  "acceptance_matrix": [
+    {"id": "G16B-01", "status": "PASS", "evidence": ["B01_54_OF_54_POST_B05"]},
+    {"id": "G16B-02", "status": "PASS", "evidence": ["B02_90_OF_90_POST_B05"]},
+    {"id": "G16B-03", "status": "PARTIAL_EVIDENCE", "evidence": ["B03_LOCAL_INTENTS_PRESERVED"]},
+    {"id": "G16B-04", "status": "PARTIAL_EVIDENCE", "evidence": ["B03_PICKUP_GUARDS", "B04_PHYSICAL_SETTLING"], "missing": ["AUTHORITATIVE_PICKUP_ROUNDTRIP"]},
+    {"id": "G16B-05", "status": "NOT_EXECUTED"},
+    {"id": "G16B-06", "status": "PARTIAL_EVIDENCE", "evidence": ["B05_AUTO_PICKUP_ON_OFF_VISUAL_NO_REMOTE_COLLECTION"], "missing": ["PROFILE_PERSISTENCE", "AUTHORITATIVE_AUTO_PICKUP"]},
+    {"id": "G16B-07", "status": "PASS", "evidence": ["B04_156_OF_156_POST_B05"]},
+    {"id": "G16B-08", "status": "PARTIAL_EVIDENCE", "evidence": ["B04_SURFACE_SLOPE_LOAD_INPUTS", "B05_YELLOW_RADIAL_STAMINA_UI", "STAGE16A_AUTHORITY_REGRESSION"], "missing": ["LIVE_AUTHORITATIVE_STAMINA_ROUNDTRIP"]},
+    {"id": "G16B-09", "status": "PARTIAL_EVIDENCE", "evidence": ["B04_ACTIVE_PRELOAD_SYSTEMIC_REFERENCE_STREAMING"], "missing": ["LIVE_LIVING_SYSTEMIC_SNAPSHOT"]},
+    {"id": "G16B-10", "status": "PASS", "evidence": ["B05_REALTIME_WHITE_ROUNDED_DIALOGUE_NO_NEXT_NO_PAUSE"]},
+    {"id": "G16B-11", "status": "PASS", "evidence": ["B03_NPC_HOVER_NAME_ONLY", "B05_TURN_GATED_POOL_AND_NEAR_NPC_CHOICES"]},
+    {"id": "G16B-12", "status": "PASS", "evidence": ["B05_IMPORTANT_WORLD_BUBBLE_PLUS_BOTTOM_LINE"]},
+    {"id": "G16B-13", "status": "PARTIAL_EVIDENCE", "evidence": ["B05_MINIMAL_HUD_INVENTORY_I_UNIFIED_UI"], "missing": ["B06_ENEMY_HP_SHIELD_BARS"]},
+    {"id": "G16B-14", "status": "PARTIAL_EVIDENCE", "evidence": ["B02_CAMERA", "B04_MICRO_RELIEF_STABILITY", "B05_EXACT_WHEEL_ZOOM_MENU_ISOLATION"], "missing": ["REAL_OCCLUDER_MATERIAL_FADE"]},
+    {"id": "G16B-15", "status": "NOT_EXECUTED"},
+    {"id": "G16B-16", "status": "NOT_EXECUTED"},
+    {"id": "G16B-17", "status": "NOT_EXECUTED"},
+    {"id": "G16B-18", "status": "NOT_EXECUTED"},
+    {"id": "G16B-19", "status": "NOT_EXECUTED"},
+    {"id": "G16B-20", "status": "PARTIAL_EVIDENCE", "evidence": ["B01_B02_B03_B04_B05_REGRESSIONS", "STAGE16A_209_OF_209", "STRESS_20_OF_20", "BASELINE_724_OF_724", "MASTER_HASH_UNCHANGED"]},
+    {"id": "G16B-21", "status": "PARTIAL_EVIDENCE", "evidence": ["B05_EXACTLY_TWO_SLOTS_ONE_VISUAL_ACTIVE", "STAGE16A_MAIN_HAND_AND_MODIFIER_AUTHORITY_TESTS"], "missing": ["LIVE_MAIN_HAND_SNAPSHOT_ROUNDTRIP"]},
+    {"id": "G16B-22", "status": "PARTIAL_EVIDENCE", "evidence": ["B05_KEYS_1_2_WHEEL_ZOOM_MENU_INPUT_ROUTING"], "missing": ["LIVE_AUTHORITATIVE_SLOT_ACTIVATION_ROUNDTRIP"]},
+    {"id": "G16B-23", "status": "PARTIAL_EVIDENCE", "evidence": ["B05_DIALOGUE_HUD_INVENTORY_TOOLTIP_CHOICE_UI_FAMILY"], "missing": ["VENDOR_UI", "CRAFTING_UI", "SETTINGS_UI"]},
+    {"id": "G16B-24", "status": "PARTIAL_EVIDENCE", "evidence": ["B04_SHALLOW_WATER_NAV_UNDER_BRIDGE_CURRENT_VEHICLE", "STAGE16A_WATER_AUTHORITY_TESTS"], "missing": ["LIVE_AUTHORITATIVE_STAMINA_ROUNDTRIP"]},
+    {"id": "G16B-25", "status": "PARTIAL_EVIDENCE", "evidence": ["B04_DEEP_SWIM_NAV_AND_VEHICLE_BLOCK", "STAGE16A_EXHAUSTION_TESTS"], "missing": ["LIVE_GODOT_BACKEND_EXHAUSTION_DEFEAT_SNAPSHOT"]},
+    {"id": "G16B-26", "status": "PARTIAL_EVIDENCE", "evidence": ["B05_REDUCED_BASE_INVENTORY_BAG_SLOT_CONTAINER_SHELL", "STAGE16A_BAG_DEATH_AUTHORITY_TESTS"], "missing": ["LIVE_INVENTORY_BAG_DEATH_SNAPSHOT_ROUNDTRIP"]},
+    {"id": "G16B-27", "status": "PARTIAL_EVIDENCE", "evidence": ["B04_LOOT_BAG_WATER_PRESENTATION", "STAGE16A_TTL_AUTHORITY_TESTS"], "missing": ["LIVE_TTL_ADVANCE_SAVE_RELOAD_SNAPSHOT"]},
+    {"id": "G16B-28", "status": "NOT_EXECUTED"}
+  ],
+  "blockers": [],
+  "not_available": [
+    "Live authoritative stamina and MAIN_HAND roundtrips: no listener at 127.0.0.1:8000.",
+    "Authoritative Auto Pickup persistence and inventory/Bag contents: no live backend endpoint available."
+  ],
+  "watch_items": [
+    "Final rounded font asset and final icons remain deferred; current SystemFont candidates are placeholders.",
+    "Enemy HP/shield presentation remains B06 scope.",
+    "Vendor/crafting/settings family validation remains future scope.",
+    "Real occluder material fade remains pending from G16B-14.",
+    "Dialogue text is placeholder projection only; no canonical narrative was authored.",
+    "Auto Pickup control is visual only and never performs remote collection."
+  ],
+  "source_acceptance_matrix_modified": false,
+  "backup_rule_respected": true
+}
+

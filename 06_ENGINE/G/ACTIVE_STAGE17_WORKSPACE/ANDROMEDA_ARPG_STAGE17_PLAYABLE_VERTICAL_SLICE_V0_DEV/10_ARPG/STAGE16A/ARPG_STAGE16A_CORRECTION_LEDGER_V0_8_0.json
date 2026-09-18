@@ -1,0 +1,36 @@
+{
+  "record_id": "ARPG-STAGE16A-CORRECTION-LEDGER-V0.8.0",
+  "status": "PASS",
+  "open_corrections": 0,
+  "corrections": [
+    {
+      "id": "S16A-V08-C01",
+      "issue": "Water/Bag test harness sliced Country NPC generator directly.",
+      "classification": "TEST_HARNESS",
+      "fix": "Materialized generator with list() before slicing; reran full V0.8 suite.",
+      "result": "24/24 PASS"
+    },
+    {
+      "id": "S16A-V08-C02",
+      "issue": "Stage15 historical death policy conflicted with new authorial Bag drop semantics.",
+      "classification": "VERSIONED_POLICY_RECONCILIATION",
+      "fix": "Preserved sealed Stage15 unchanged and added Stage16A derivative authority for Bag/death behavior.",
+      "result": "NO_BASELINE_MUTATION"
+    },
+    {
+      "id": "S16A-V08-C03",
+      "issue": "Equipped Bag content was routed correctly but its weight was not included in traversal/water load metrics.",
+      "classification": "RUNTIME_INTEGRATION",
+      "fix": "Added carry_metrics() combining base inventory and equipped Bag weight; VerticalSliceAssembly now uses effective carry metrics for terrain/water stamina.",
+      "result": "24/24 WATER_BAG + 29/29 ASSEMBLY PASS"
+    },
+    {
+      "id": "S16A-V08-C04",
+      "issue": "Stage13 vendor execution targeted the profile inventory directly, allowing purchases to bypass an equipped Bag.",
+      "classification": "RUNTIME_INTEGRATION_BACKWARD_COMPATIBLE",
+      "fix": "Added optional inventory_owner_ref to Stage13 execute_trade() and Stage16A execute_trade_carried(); wallet ownership remains the profile while item transfer uses the effective Bag/base inventory owner.",
+      "result": "21/21 STAGE13 FUNCTIONAL + 1/1 PERSISTENCE PASS"
+    }
+  ],
+  "canon_mutations": 0
+}

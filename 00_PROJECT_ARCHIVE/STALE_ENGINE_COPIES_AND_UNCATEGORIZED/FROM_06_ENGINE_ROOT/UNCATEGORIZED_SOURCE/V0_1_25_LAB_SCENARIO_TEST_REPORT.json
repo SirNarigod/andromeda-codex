@@ -1,0 +1,39 @@
+{
+  "build": "V0.1.25 DEV",
+  "baseline": "V0.1.24 DEV",
+  "status": "STATIC_PASS_RUNTIME_PENDING",
+  "functional_stages": 3,
+  "checks": 39,
+  "passed": 39,
+  "failed": 0,
+  "stage_1": {
+    "compact_hud": true,
+    "screen_projected_enemy_bars": true,
+    "weapon_stamina_cost": {
+      "Espada de Oficina": 12,
+      "Espada do Vigia Caído": 16,
+      "Arco de Galho Negro": 9,
+      "Besta de Ferrolho Antiga": 18,
+      "Chicote de Corrente Velária": 11
+    }
+  },
+  "stage_2": {
+    "shops": [
+      "WEAPONS",
+      "ARMOR",
+      "COSMETICS"
+    ],
+    "purchase": "SELECT_INFO_COMPRAR",
+    "auto_purchase": false
+  },
+  "stage_3": {
+    "normal_ranged_enemies": 3,
+    "one_shot_enemies": 1,
+    "alpha_final": 1,
+    "predator_seed": 12425
+  },
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1",
+  "laboratory_start_coins": 600,
+  "ranged_perception": "range + 3m, or damage-triggered aggro",
+  "post_build_balance_review": "PASS"
+}

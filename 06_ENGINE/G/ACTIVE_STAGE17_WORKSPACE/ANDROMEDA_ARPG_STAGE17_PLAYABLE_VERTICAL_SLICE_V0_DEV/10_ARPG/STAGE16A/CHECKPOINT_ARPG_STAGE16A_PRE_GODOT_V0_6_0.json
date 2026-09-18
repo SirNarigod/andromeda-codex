@@ -1,0 +1,21 @@
+{
+  "record_id": "CHECKPOINT-ARPG-STAGE16A-PRE-GODOT-V0.6.0",
+  "project": "ANDROMEDA CODEX",
+  "stage": "16A/23",
+  "stage_name": "PRE-GODOT SPECIFICATION + CODEX HANDOFF",
+  "status": "PASS_PRE_GODOT_READY_FOR_STAGE16B",
+  "result": "STAGE16A_CLOSED_PRE_GODOT",
+  "parent_checkpoint": "V0.5.0",
+  "accumulated_tests": 143,
+  "stress_checks": 20,
+  "handoff_validator": "20/20 PASS",
+  "open_corrections": 0,
+  "canon_mutations": 0,
+  "backup_authorized": false,
+  "stage16_complete": false,
+  "next": "STAGE16B_CODEX_GODOT_RUNTIME",
+  "godot_required": true,
+  "accumulated_tests_before_handoff": 143,
+  "handoff_validator_checks": 20,
+  "accumulated_tests_total": 163
+}

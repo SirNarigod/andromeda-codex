@@ -1,0 +1,11 @@
+{
+  "record_id": "SUB-005-002", "record_kind": "DERIVED_SUBREGION_PROFILE", "authority": "CANON_DERIVADO_ATIVO", "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Laboratórios de Convergência", "parent_political_unit": "TER-005",
+  "provenance": {"approval": "GAMEPLAY_DERIVED_DEV_SOURCE", "r2_anchors": ["TER-005"], "compatibility": "Camada administrativa e narrativa local; não cria fronteira, cidade, soberania ou nova autoridade."},
+  "function": "Pesquisa avançada sobre a interação entre método mágico e tecnologia.",
+  "locality_references": ["LOC-005-002 Laboratório Central"],
+  "permitted_catalog_links": {"npc_roles": [], "professions": [], "encounters": [], "resources": []},
+  "local_conflicts": ["financiamento estatal versus liberdade de pesquisa"],
+  "prohibitions": ["NO_NEW_SOVEREIGNTY", "NO_AUTOMATIC_KENUA_SCENE", "NO_R2_EPISODE_REWRITE", "NO_FIXED_BORDER_COORDINATE", "NO_INVENTED_RUNE_EFFECT"],
+  "story_generators": ["Um pesquisador é acusado de esconder um resultado perigoso para manter financiamento."]
+}

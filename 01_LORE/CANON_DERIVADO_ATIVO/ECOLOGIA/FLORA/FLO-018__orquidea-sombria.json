@@ -1,0 +1,20 @@
+{
+  "record_id": "FLO-018",
+  "record_kind": "DERIVED_CANONICAL_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "title": "Orquidea-Sombria",
+  "subtitle": "Flor toxica e medicinal do Dossel Verde",
+  "summary": "Orquidea de petalas escuras que cresce na sombra profunda do dossel, cujo nectar e toxico em doses altas mas medicinal quando diluido.",
+  "facts": {
+    "Habitat": "Dossel Verde (SUB-019-001), Mata Perdida",
+    "Uso": "Insumo medicinal diluido, perigosa in natura"
+  },
+  "relations": [
+    {
+      "code": "SUB-019-001",
+      "label": "Habitat - Dossel Verde"
+    }
+  ],
+  "r2_compatibility": "Especie nova, sem precedente R2; ancorada em TER-019 (territorio derivado, fase 52).",
+  "safety": "FICTIONAL_LOCATION_ONLY"
+}

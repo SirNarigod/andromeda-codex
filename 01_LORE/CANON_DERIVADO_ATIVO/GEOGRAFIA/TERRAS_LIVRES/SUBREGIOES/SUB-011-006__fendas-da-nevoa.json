@@ -1,0 +1,57 @@
+{
+  "record_id": "SUB-011-006",
+  "record_kind": "DERIVED_SUBREGION_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Fendas da Névoa",
+  "parent_political_unit": "TER-011",
+  "provenance": {
+    "approval": "R2-REBASE-LOT-009",
+    "r2_anchors": [
+      "TER-011",
+      "CRI-012",
+      "CRI-013"
+    ],
+    "compatibility": "A local rocky-traversal overlay derived from R2 predator behavior; it introduces no fixed coordinates or new political geography."
+  },
+  "function": "Travessias de pedra, acampamentos temporários, resgate e leitura de vibração diante de predadores menores.",
+  "locality_references": [],
+  "permitted_catalog_links": {
+    "npc_roles": [
+      "NPC-ROLE-001",
+      "NPC-ROLE-004",
+      "NPC-ROLE-013"
+    ],
+    "professions": [
+      "JOB-003",
+      "JOB-004",
+      "JOB-015"
+    ],
+    "encounters": [
+      "ENCOUNTER-012",
+      "ENCOUNTER-013"
+    ],
+    "resources": []
+  },
+  "local_conflicts": [
+    "velocidade de travessia versus segurança de acampamento",
+    "resgate de feridos versus atração de enxame",
+    "uso de ruído defensivo versus exposição da rota"
+  ],
+  "prohibitions": [
+    "NO_DEFAULT_HOSTILE_BIOME",
+    "NO_FIXED_SPAWN_POINT",
+    "NO_NEW_BORDER",
+    "NO_PERMANENT_ENEMY_DEATH_FACT"
+  ],
+  "story_generators": [
+    "Uma vibração irregular salva viajantes de um enxame, mas apaga o sinal que guiava uma equipe perdida.",
+    "Um acampamento seguro para pessoas se torna armadilha para a fauna menor.",
+    "Um guia precisa escolher entre uma rota curta e uma rota que não deixa feridos para trás."
+  ],
+  "root_corruption": {
+    "status": "CORROMPIDA",
+    "intensity": "BAIXA",
+    "since_note": "Aplicado pelo portao autoral fase 57 (STELLAR_ROOT_CORRUPTION_GATE_DEV_V1_0.json) - fato do mundo em 842 EC, fase Alimentacao Silenciosa->Corrupcao da Raiz Profunda (COR-001)."
+  }
+}

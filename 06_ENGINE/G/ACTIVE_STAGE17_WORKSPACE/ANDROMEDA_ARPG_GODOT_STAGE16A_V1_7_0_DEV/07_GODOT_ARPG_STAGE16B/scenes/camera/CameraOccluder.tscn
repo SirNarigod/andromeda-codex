@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/camera/camera_occluder.gd" id="1_occluder"]
+
+[sub_resource type="BoxShape3D" id="Shape_occluder"]
+size = Vector3(1, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="Material_occluder"]
+resource_local_to_scene = true
+albedo_color = Color(0.64, 0.67, 0.63, 1)
+roughness = 0.86
+
+[sub_resource type="BoxMesh" id="Mesh_occluder"]
+material = SubResource("Material_occluder")
+size = Vector3(1, 1, 1)
+
+[node name="CameraOccluder" type="StaticBody3D"]
+collision_layer = 256
+collision_mask = 0
+script = ExtResource("1_occluder")
+metadata/placeholder_only = true
+metadata/final_art = false
+metadata/presentation_only = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("Shape_occluder")
+
+[node name="VisualRoot" type="Node3D" parent="."]
+
+[node name="PlaceholderVisual" type="MeshInstance3D" parent="VisualRoot"]
+mesh = SubResource("Mesh_occluder")

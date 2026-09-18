@@ -1,0 +1,46 @@
+{
+  "record_id": "TER-014",
+  "record_kind": "DERIVED_TERRITORY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Cadeia de Cinzas",
+  "subtitle": "Território vulcânico de mineração extrema",
+  "provenance": {
+    "approval": "AUTHORIAL_DECISION_FASE_44",
+    "note": "14º território de Stellar, criado por decisão explícita do autor do projeto — não é derivação emergente de fato R2 existente. Esta ficha É o portão autoral (sovereignty gate) que a Lei de Causalidade e a Lei de Soberania e Território exigem para qualquer mudança de soberania planetária."
+  },
+  "leadership": {
+    "type": "CONSELHO_DERIVADO",
+    "name": "Conselho de Fundidores",
+    "note": "Liderança coletiva derivada (CANON_DERIVADO_ATIVO), mesmo nível já usado para FAC-009/010/011. Nenhum LID-XXX (categoria R2 fechada com 8 líderes fixos) foi criado ou reaproveitado."
+  },
+  "culture_note": "Sem CUL-XXX próprio nesta fase (categoria R2 fechada, 13 culturas fixas) — população descrita qualitativamente como comunidade de mineradores/fundidores adaptados ao risco vulcânico, sem nova cultura R2 inferida.",
+  "subregions": [
+    "SUB-014-001",
+    "SUB-014-002",
+    "SUB-014-003"
+  ],
+  "localities": [
+    "LOC-014-001",
+    "LOC-014-002",
+    "LOC-014-003"
+  ],
+  "terrain_type": "VULCANICO",
+  "primary_transport_mode": "TERRESTRE",
+  "prohibitions": [
+    "NO_R2_CATEGORY_EXPANSION",
+    "NO_NEW_LID_OR_CUL_CODE",
+    "NO_AUTOMATIC_KENUA_SCENE",
+    "NO_R2_EPISODE_REWRITE"
+  ],
+  "future_scope": "Perfil economico enriquecido na fase 56 (diretriz de riqueza do usuario) - ver economic_profile estruturado + STELLAR_REGIONAL_SPECIALTY_GOODS_DEV_V1_0.json. Personagens locais adicionais continuam abertos a rodadas futuras.",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "economic_profile": {
+    "primary_resource": "MIN-BASALT (fonte secundaria, SUB-014-001 Caldeira Ativa / EST-049 Fundicao da Caldeira, extrator CIV-016 Torvin) - mineracao vulcanica",
+    "processed_good": "REG-001 Barra de Basalto Fundido (EST-049 Fundicao da Caldeira)",
+    "agricultural_zone": "AGZ-098 Terracos de Cinza (CINZA_CULTURA, SUB-014-003 Campos de Cinza / EST-051 Mercado dos Terracos, flora FLO-013)",
+    "agricultural_note": "Cultivo pos-vulcanico nos Campos de Cinza (SUB-014-003) formalizado como AGZ-098 (fase 56, AUTHORIAL_DECISION_FASE_56) — tuberculo de ciclo curto + Musgo-de-Enxofre (FLO-013) como indicador; ver AGZ_EXTENSION_098_103_DEV_V1_0.json",
+    "trade_partners_hint": "Rota continental TER-013-TER-014 ja liga a Fortaleza do Trovao; Barra de Basalto Fundido escoa por essa rota",
+    "local_specialty": "REG-001 Barra de Basalto Fundido"
+  }
+}

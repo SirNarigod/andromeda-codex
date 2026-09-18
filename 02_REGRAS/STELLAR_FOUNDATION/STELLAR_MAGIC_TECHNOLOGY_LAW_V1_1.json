@@ -1,0 +1,17 @@
+{
+  "record_id": "STELLAR-MAGIC-TECHNOLOGY-LAW-V1.1",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.1",
+  "status": "CANON_DERIVADO_ATIVO_R2_COMPATIBLE",
+  "supersedes": "STELLAR_MAGIC_TECHNOLOGY_LAW_V1_0",
+  "authority": {"r2": "MAGIA_ARMAS_E_COMBATE.md", "derived_sources": ["MAR_MAGIC_FUNCTIONAL_V1_0", "MAGIC_TECH_BALANCE_REPORT_V1_0"], "scope": "FINITE_MAGIC_RUNES_TECHNOLOGY"},
+  "dependencies": ["../../01_LORE/STELLAR_REBASE_R2/R2_SOURCE_AUTHORITY_INDEX_V1_0.json", "STELLAR_COSMOLOGY_CANON_V1_2.json", "STELLAR_SYMBIOSIS_LAW_V1_0.json"],
+  "invariants": ["MAGIC_TRANSFORMS_EXISTING_ENERGY", "MAGIC_REQUIRES_SOURCE_METHOD_BEARER_OBJECTIVE_TARGET_COST_AND_CONSEQUENCE", "RUNES_REQUIRE_SUPPORT_COMPATIBILITY_DISSIPATION_AND_MAINTENANCE", "TECHNOLOGY_REMAINS_NECESSARY_FOR_REPEATABILITY_SCALE_AND_DURABILITY", "MAGIC_RANGE_DURATION_AND_SCALE_ARE_FINITE", "NO_FIXED_PLAYER_CLASS_IS_CREATED"],
+  "prohibitions": ["NO_INFINITE_ENERGY", "NO_TRUE_RESURRECTION", "NO_TIME_TRAVEL", "NO_PLANETARY_INSTANT_TELEPORT", "NO_AUTOMATIC_KENUA_SPELL_UNLOCK_IN_SEASON_1", "NO_TECHNOLOGICAL_ERASURE_OF_LIVING_OR_CAUSAL_LIMITS", "NO_NEW_MAGIC_ORIGIN_WITHOUT_PROMOTION"],
+  "r2_confirmed_references": ["MAG-001 through MAG-007 are constrained references to R2 facts, including runes, Corrente Planetária, Serlis's Estase de Intervalo, combat scale and symbiosis limits."],
+  "derived_practice_catalog": {"status": "CANON_DERIVADO_ATIVO", "source_sha256": "1a9551a30d0ea6c235a7f16223a082be53cabb5cd0ca7664e43438123d6c24ea", "practice_ids": ["MAG-008", "MAG-009", "MAG-010", "MAG-011", "MAG-012", "MAG-013", "MAG-014", "MAG-015", "MAG-016", "MAG-017", "MAG-018", "MAG-019", "MAG-020", "MAG-021", "MAG-022", "MAG-023", "MAG-024", "MAG-025", "MAG-026", "MAG-027", "MAG-028", "MAG-029", "MAG-030"], "access_rule": "Each practice requires an eligible bearer, finite source, method, local condition and narrative acquisition; existence does not grant a practice to Kenua or any actor."},
+  "technology_balance": {"status": "CANON_DERIVADO_ATIVO", "source_sha256": "a8662f5abc8773f83a4b5f3bc75e57370e03e5f68df0efd55bc9b000c4a308c0", "rules": ["Magic can fail and requires user, cost and preparation or condition.", "Runes wear down and require material support and certification.", "Technology requires material chains, energy and maintenance.", "Interference requires isolation and specialist certification."]},
+  "simulation_effects": ["Every magical activation records source class, cost, condition, range, duration and residual consequence.", "A derived practice is unavailable until its access conditions are satisfied.", "Technology can measure, redirect or contain effects, but cannot nullify the living world or erase its causal record."],
+  "allowed_states": ["LATENT", "PREPARED", "ACTIVE_FINITE", "DISSIPATING", "FAILED_SAFE", "OVERDRAWN", "CONTAINED"],
+  "story_generators": ["A needed derived practice exists, but its local source is controlled by a faction with a competing need.", "A rune begins to fail from ordinary wear, turning maintenance into an urgent moral choice.", "A technical solution saves a settlement while revealing the ecological cost it transfers elsewhere."]
+}

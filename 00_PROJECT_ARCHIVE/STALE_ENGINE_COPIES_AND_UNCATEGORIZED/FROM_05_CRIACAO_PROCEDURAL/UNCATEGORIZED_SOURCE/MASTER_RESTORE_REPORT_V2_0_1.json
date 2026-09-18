@@ -1,0 +1,121 @@
+{
+  "record_id": "MASTER-RESTORE-REPORT-V2.0.1",
+  "version": "V2.0.1",
+  "source": "ANDROMEDA_CODEX_MASTER_V2_0_1_BACKUP.zip",
+  "source_sha256": "f59971064a684e3fd50395fe1168df29fe0854af9fa0fa12f6f07f4dbe01d8ca",
+  "restore_environment": "ANDROMEDA_CODEX_MASTER_V2_0_1_WORK/RESTORE_TEST_ENVIRONMENT_V2_0_1_REVERIFY",
+  "restored_exclusively_from_backup": true,
+  "structural_validation": "PASS",
+  "schemas": "PASS",
+  "ids": "PASS",
+  "references": "PASS",
+  "bindings": "PASS",
+  "namespaces": {
+    "checks": 12,
+    "passed": 12,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "continuity": "PASS",
+  "spoilers": "PASS",
+  "master_regression": {
+    "suites": 29,
+    "checks": 393,
+    "passed": 393,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "atlas_runtime": {
+    "suites": 1,
+    "checks": 21,
+    "passed": 21,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "MAR": {
+    "weapons": 30,
+    "runes": 30,
+    "magics": 30,
+    "status": "PASS"
+  },
+  "professions": {
+    "count": 91,
+    "status": "PASS"
+  },
+  "manifest_and_hashes": {
+    "manifest_entries": 172,
+    "manifest_failures": [],
+    "ledger_entries": 173,
+    "ledger_failures": [],
+    "manifest_sha256": "6ebd1f4b6491997718f3c2aff8820e49158740806880053afcacae3605739e67",
+    "ledger_sha256": "6fb8edbe73cf96addab8b71700972f161f16f87c549c04ed6cda7c047a9d577e",
+    "status": "PASS"
+  },
+  "protected_payloads": {
+    "sections": [
+      {
+        "left_files": 2,
+        "right_files": 2,
+        "missing": [],
+        "extra": [],
+        "mismatched": [],
+        "status": "PASS",
+        "path": "01_CANON"
+      },
+      {
+        "left_files": 6,
+        "right_files": 6,
+        "missing": [],
+        "extra": [],
+        "mismatched": [],
+        "status": "PASS",
+        "path": "02_ATLAS/runtime"
+      },
+      {
+        "left_files": 40,
+        "right_files": 40,
+        "missing": [],
+        "extra": [],
+        "mismatched": [],
+        "status": "PASS",
+        "path": "03_DOMAINS"
+      },
+      {
+        "left_files": 8,
+        "right_files": 8,
+        "missing": [],
+        "extra": [],
+        "mismatched": [],
+        "status": "PASS",
+        "path": "04_NARRATIVE"
+      },
+      {
+        "left_files": 15,
+        "right_files": 15,
+        "missing": [],
+        "extra": [],
+        "mismatched": [],
+        "status": "PASS",
+        "path": "05_MAR"
+      },
+      {
+        "left_files": 2,
+        "right_files": 2,
+        "missing": [],
+        "extra": [],
+        "mismatched": [],
+        "status": "PASS",
+        "path": "08_SCHEMAS"
+      }
+    ],
+    "protected_mutations": 0,
+    "canon_mutations": 0,
+    "atlas_functional_mutations": 0,
+    "mar_functional_mutations": 0,
+    "profession_functional_mutations": 0,
+    "schema_breaking_changes": 0,
+    "status": "PASS"
+  },
+  "post_restore_not_inferior": true,
+  "status": "PASS"
+}

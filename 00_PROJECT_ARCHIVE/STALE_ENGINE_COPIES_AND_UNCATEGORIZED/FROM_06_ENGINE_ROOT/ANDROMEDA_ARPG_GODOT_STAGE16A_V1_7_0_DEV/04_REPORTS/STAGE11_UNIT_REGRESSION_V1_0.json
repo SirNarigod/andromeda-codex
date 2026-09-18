@@ -1,0 +1,56 @@
+{
+  "record_id": "STAGE11-UNIT-REGRESSION-V1.0",
+  "tests": 576,
+  "passed": 576,
+  "failed": 0,
+  "errors": 0,
+  "status": "PASS",
+  "modules": [
+    {
+      "module": "test_runtime_core",
+      "tests": 59,
+      "status": "PASS"
+    },
+    {
+      "module": "test_consequence_engine",
+      "tests": 56,
+      "status": "PASS"
+    },
+    {
+      "module": "test_agent_brain",
+      "tests": 90,
+      "status": "PASS"
+    },
+    {
+      "module": "test_social_memory",
+      "tests": 72,
+      "status": "PASS"
+    },
+    {
+      "module": "test_ecology_brain",
+      "tests": 77,
+      "status": "PASS"
+    },
+    {
+      "module": "test_object_environment",
+      "tests": 73,
+      "status": "PASS"
+    },
+    {
+      "module": "test_world_orchestrator",
+      "tests": 54,
+      "status": "PASS"
+    },
+    {
+      "module": "test_world_systems",
+      "tests": 51,
+      "status": "PASS"
+    },
+    {
+      "module": "test_long_horizon",
+      "tests": 44,
+      "status": "PASS"
+    }
+  ],
+  "execution_note": "Modules were executed in separate batches because monolithic aggregation exceeded the tool execution window; every listed module completed PASS."
+}

@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-012-001",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Posto de Perímetro",
+  "parent_subregion": "SUB-012-001",
+  "parent_political_unit": "TER-012",
+  "function": "Posto avançado da linha de contenção.",
+  "notable_link": "ART-012 Armas de contenção; classe Soldados",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-012-001",
+  "settlement_tier": "POSTO",
+  "history": "O Posto de Perímetro existe para impedir que a contenção se torne fronteira permanente. Guardas registram pessoas, cargas e sintomas, mas quase nunca concordam sobre o que é perigo.",
+  "sensory": "Torres de madeira rangem sob vento ácido; água fervida esfria em bacias de pedra.",
+  "hook": "Um viajante passa todos os testes, mas sua sombra não coincide com seus movimentos.",
+  "secondary_hook": "S-19 quer deter a pessoa; Olma quer descobrir se o fenômeno é contagioso.",
+  "detail": "A taxa de entrada é uma hora de observação voluntária.",
+  "figures": [
+    {
+      "role": "Capitã Olma",
+      "name": "Capitã Olma",
+      "note": "soldada que separa medo de evidência"
+    },
+    {
+      "role": "S-19",
+      "name": "S-19",
+      "note": "Android de triagem com ordens antigas"
+    }
+  ]
+}

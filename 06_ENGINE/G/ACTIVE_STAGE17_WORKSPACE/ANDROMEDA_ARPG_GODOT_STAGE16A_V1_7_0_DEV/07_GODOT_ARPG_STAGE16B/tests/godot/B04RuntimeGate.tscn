@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://tests/godot/b04_runtime_gate.gd" id="1_gate"]
+[ext_resource type="PackedScene" path="res://scenes/Main.tscn" id="2_main"]
+
+[node name="B04RuntimeGate" type="Node"]
+script = ExtResource("1_gate")
+
+[node name="AndromedaARPG" parent="." instance=ExtResource("2_main")]

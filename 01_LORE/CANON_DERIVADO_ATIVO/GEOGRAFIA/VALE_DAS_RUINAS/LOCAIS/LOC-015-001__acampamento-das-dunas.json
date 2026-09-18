@@ -1,0 +1,27 @@
+{
+  "loc_id": "LOC-015-001",
+  "record_id": "LOC-015-001",
+  "name": "Acampamento das Dunas",
+  "parent_subregion": "SUB-015-001",
+  "function": "Ponto de pouso e reabastecimento para travessia das dunas.",
+  "notable_link": "TER-015 Vale das Ruínas (fase 48, território novo)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "settlement_tier": "ACAMPAMENTO",
+  "history": "O Acampamento das Dunas se move alguns metros por semana para não ser enterrado. Seus habitantes desmontam tudo com uma precisão que transformou sobrevivência em profissão.",
+  "sensory": "Lonas estalam no vento; areia fina entra em cada engrenagem e range entre os dentes.",
+  "hook": "A porta subterrânea abre apenas quando o acampamento muda de posição.",
+  "secondary_hook": "Sali teme que a descoberta torne o povo sedentário e vulnerável.",
+  "detail": "Água é medida por sombra: cada cantil recebe um tempo de abrigo.",
+  "figures": [
+    {
+      "role": "Sali Vento-Curto",
+      "name": "Sali Vento-Curto",
+      "note": "chefe de montagem"
+    },
+    {
+      "role": "Uro",
+      "name": "Uro",
+      "note": "catador que encontrou uma porta sob a duna"
+    }
+  ]
+}

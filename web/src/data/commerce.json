@@ -1,0 +1,15 @@
+{
+ "tiers": [
+  "BAIXO",
+  "MÉDIO",
+  "ALTO",
+  "MUITO_ALTO"
+ ],
+ "runtime_prices": {
+  "BAIXO": 10,
+  "MÉDIO": 25,
+  "ALTO": 60,
+  "MUITO_ALTO": 150
+ },
+ "note": "RUNTIME_ONLY (lei: PRICES_CURRENCY_STOCKS_AND_INVENTORIES_ARE_RUNTIME_ONLY). Tiers do repo; números editáveis pelo mestre."
+}

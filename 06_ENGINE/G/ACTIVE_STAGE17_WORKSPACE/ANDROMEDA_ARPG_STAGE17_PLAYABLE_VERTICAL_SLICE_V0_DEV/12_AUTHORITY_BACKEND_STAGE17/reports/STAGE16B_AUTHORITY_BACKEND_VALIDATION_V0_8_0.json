@@ -1,0 +1,237 @@
+{
+  "record_id": "ANDROMEDA-STAGE16B-AUTHORITY-BACKEND-VALIDATION-V0.8.0",
+  "captured_at": "2026-08-24T18:16:06-0300",
+  "status": "PASS",
+  "python": "3.14.6",
+  "python_executable": "C:\\Users\\thall\\ANDROMEDA_PRODUCT\\.venv\\Scripts\\python.exe",
+  "master_version": "V2.0.1",
+  "master_promotion_to_v2_1_0": false,
+  "protected_checkpoint_bytes_changed": 0,
+  "backend_suites_registered": 9,
+  "python_tests_total": 371,
+  "failures": [],
+  "steps": [
+    {
+      "step": "master_v2_0_1_integrity",
+      "status": "PASS",
+      "master_path": "C:\\Users\\thall\\ANDROMEDA_PRODUCT\\ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE.zip",
+      "sha256": "6D9AC3CCE7DCF6A65FDCF73859C332A0211C1AF52D149077BEEF554BF7BBD0B2",
+      "expected_sha256": "6D9AC3CCE7DCF6A65FDCF73859C332A0211C1AF52D149077BEEF554BF7BBD0B2",
+      "forbidden_tokens_in_path": [],
+      "read_only": true
+    },
+    {
+      "step": "stage16a_protected_checkpoint",
+      "status": "PASS",
+      "entries": 724,
+      "verified": 724,
+      "missing": [],
+      "mismatch": [],
+      "protected_bytes_changed": 0
+    },
+    {
+      "step": "backend_suite_coverage",
+      "status": "PASS",
+      "suites_on_disk": 9,
+      "suites_registered": 9,
+      "unregistered_suites": [],
+      "registered_but_missing": []
+    },
+    {
+      "step": "test_stage16b_authority_adapter_suite",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 35,
+      "seconds": 66.447,
+      "tail": [
+        "test_72_snapshot_projection_shape_matches_b01 (tests.test_stage16b_authority_adapter.Stage16BAuthorityAdapterTests.test_72_snapshot_projection_shape_matches_b01) ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 35 tests in 66.064s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "test_stage16b_authority_http_suite",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 17,
+      "seconds": 31.828,
+      "tail": [
+        "test_90_server_restart_preserves_authority_state (tests.test_stage16b_authority_http.Stage16BAuthorityHttpTests.test_90_server_restart_preserves_authority_state) ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 17 tests in 31.500s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "test_stage16b_authority_profile_loadout_suite",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 11,
+      "seconds": 45.152,
+      "tail": [
+        "G16B-06 'never interrupts attack': the toggle must not refresh cooldown. ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 11 tests in 44.825s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "test_stage16b_authority_traversal_suite",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 11,
+      "seconds": 37.814,
+      "tail": [
+        "Recovery is a consequence of an authoritative step, never a client request. ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 11 tests in 37.522s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "test_stage16b_authority_ground_loot_suite",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 10,
+      "seconds": 37.101,
+      "tail": [
+        "test_10_collected_drop_leaves_active_snapshot_and_active_drop_remains (tests.test_stage16b_authority_ground_loot.Stage16BAuthorityGroundLootTests.test_10_collected_drop_leaves_active_snapshot_and_active_drop_remains) ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 10 tests in 36.796s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "test_stage16b_authority_gathering_suite",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 11,
+      "seconds": 84.088,
+      "tail": [
+        "test_11_hunting_depletion_survives_real_engine_restart (tests.test_stage16b_authority_gathering.Stage16BGatheringRestartContinuityTests.test_11_hunting_depletion_survives_real_engine_restart) ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 11 tests in 83.710s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "test_stage16b_authority_combat_suite",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 23,
+      "seconds": 331.867,
+      "tail": [
+        "test_01_bind_never_provisions_a_combat_encounter_outside_dev_profile (tests.test_stage16b_authority_combat.Stage16BNonDevelopmentBindGuardTests.test_01_bind_never_provisions_a_combat_encounter_outside_dev_profile) ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 23 tests in 331.521s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "test_stage16b_authority_economy_inventory_quest_suite",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 21,
+      "seconds": 109.962,
+      "tail": [
+        "F: REQUEST_EQUIP_ITEM must not have altered ACTIVATE_WEAPON_SLOT, ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 21 tests in 109.624s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "test_stage16b_authority_save_death_water_suite",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 23,
+      "seconds": 118.708,
+      "tail": [
+        "test_01_stronger_current_costs_more_real_avatar_stamina (tests.test_stage16b_authority_save_death_water.Stage16BWaterCurrentStaminaMutationTests.test_01_stronger_current_costs_more_real_avatar_stamina) ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 23 tests in 118.370s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "stage16a_regression",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 209,
+      "seconds": 251.614,
+      "tail": [
+        ".................................................................................................................................................................................................................",
+        "----------------------------------------------------------------------",
+        "Ran 209 tests in 251.038s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "stage16a_vertical_slice_stress",
+      "status": "PASS",
+      "exit_code": 0,
+      "report": {
+        "status": "PASS",
+        "checks": 20,
+        "passed": 20,
+        "failed": 0
+      },
+      "seconds": 41.195,
+      "tail": [
+        "{\"status\": \"PASS\", \"checks\": 20, \"passed\": 20, \"failed\": 0}"
+      ]
+    },
+    {
+      "step": "stage15_validation",
+      "status": "PASS",
+      "exit_code": 0,
+      "report": {
+        "status": "PASS",
+        "checks": 24,
+        "passed": 24,
+        "failed": 0
+      },
+      "seconds": 43.496,
+      "tail": [
+        "{\"status\": \"PASS\", \"checks\": 24, \"passed\": 24, \"failed\": 0}"
+      ]
+    },
+    {
+      "step": "stage15_stress",
+      "status": "PASS",
+      "exit_code": 0,
+      "report": {
+        "status": "PASS",
+        "checks": 23,
+        "passed": 23,
+        "failed": 0,
+        "resume_seconds": 4.358
+      },
+      "seconds": 42.9,
+      "tail": [
+        "{\"status\": \"PASS\", \"checks\": 23, \"passed\": 23, \"failed\": 0, \"resume_seconds\": 4.358}"
+      ]
+    }
+  ],
+  "seconds": 1242.525
+}

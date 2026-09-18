@@ -1,0 +1,66 @@
+{
+  "record_id": "ATLAS-UI-CONFIG-ETP08-V1.0",
+  "title": "ATLAS_UI_CONFIG",
+  "version": "V1.0",
+  "generated_at": "2026-08-14T03:35:23Z",
+  "default_view": {
+    "mode": "map2d",
+    "zoom": 1,
+    "center": "auto",
+    "visible_layers": [
+      "BASE_GEOGRAPHY",
+      "TERRITORIES",
+      "REGIONS",
+      "CITIES",
+      "POI",
+      "ROUTES",
+      "TRANSPORT"
+    ],
+    "spoiler_max": 0
+  },
+  "map": {
+    "pan": true,
+    "zoom": true,
+    "hover": true,
+    "clusters": true,
+    "route_selection": true,
+    "fallback_geometry": "territory presentation envelopes only; never canonical boundaries"
+  },
+  "query": {
+    "search_fields": [
+      "name",
+      "alias",
+      "id",
+      "category",
+      "territory",
+      "related entity"
+    ],
+    "filter_fields": [
+      "domain",
+      "territory",
+      "biome",
+      "layer",
+      "spoiler"
+    ],
+    "max_graph_depth": 2
+  },
+  "persistence": {
+    "url_query": [
+      "entity",
+      "layers",
+      "spoiler"
+    ],
+    "local_storage": [
+      "zoom",
+      "pan",
+      "layers",
+      "spoiler"
+    ]
+  },
+  "accessibility": {
+    "keyboard": true,
+    "contrast": "AA-oriented",
+    "non_color_legends": true,
+    "reduced_motion": true
+  }
+}

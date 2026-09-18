@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import {assertReadOnlyProjection,layer,decorateCanonicalEntity,runtimeBadges,eventTimeline,accessSummary} from '../06_ATLAS_LIVING/atlas-live-core.mjs';
+const p={projection_authority:'READ_ONLY_DERIVED_VIEW',access:{runtime_write_authority:false,canonical_level_4_hidden:true,role:'PLAYER',spoiler_max:1},runtime_access:'PLAYER_SAFE',world:{timeline_id:'TL'},layers:{LIVE_ENTITY_STATE:[{canonical_ref:'X',entity_runtime_id:'R',lifecycle:'DESTROYED',entity_kind:'STRUCTURE',version:2,data:{burning:true,operational:false,shortage_pressure:4},authority:'TIMELINE_RUNTIME_STATE_NOT_CANON'}],LIVE_EVENTS:[{event_type:'A'},{event_type:'B'}]}};
+assert.equal(assertReadOnlyProjection(p),true);
+assert.equal(layer(p,'LIVE_ENTITY_STATE').length,1);
+assert.equal(decorateCanonicalEntity({id:'X',name:'Canon'},p).runtime.states.length,1);
+assert.deepEqual(runtimeBadges(p.layers.LIVE_ENTITY_STATE[0]),['DESTROYED','BURNING','ROUTE_BLOCKED','SHORTAGE']);
+assert.equal(eventTimeline(p,{type:'A'}).length,1);
+assert.equal(accessSummary(p).runtime_access,'PLAYER_SAFE');
+assert.throws(()=>assertReadOnlyProjection({...p,access:{...p.access,runtime_write_authority:true}}));
+console.log(JSON.stringify({status:'PASS',checks:7}));

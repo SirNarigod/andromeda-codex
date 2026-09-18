@@ -1,0 +1,54 @@
+{
+  "record_id": "ARPG-STAGE16B-B11-EDITOR-BRIDGE-DEBUGGER-V0.8.0",
+  "captured_at": "2026-08-21T21:35:05.0625097-03:00",
+  "bridge": "EXISTING_ANDROMEDA_EDITOR_BRIDGE",
+  "godot": "4.7.1.stable.official.a13da4feb",
+  "renderer": "OpenGL API 3.3.0 Compatibility",
+  "gpu": "NVIDIA GeForce GTX 1650",
+  "driver": "NVIDIA 560.94",
+  "invalidated_runs": [
+    {
+      "id": "B11_EDITOR_BRIDGE_R1",
+      "result": "INVALIDATED",
+      "gate_marker": "ANDROMEDA_STAGE16B_B11_GATE: PASS",
+      "debugger_errors": 0,
+      "debugger_warnings": 1,
+      "warning": "Values of the ternary operator are not mutually compatible.",
+      "source": "res://scripts/runtime/vertical_slice_client_harness.gd:1060",
+      "controlled_stop_final_errors": ["WARNING: Values of the ternary operator are not mutually compatible."],
+      "reason": "A warning invalidates the run even though checks passed."
+    }
+  ],
+  "b11_final": {
+    "id": "B11_EDITOR_BRIDGE_FINAL_R2",
+    "scene": "res://tests/godot/B11RuntimeGate.tscn",
+    "result": "PASS",
+    "checks": 343,
+    "passed": 343,
+    "failed": 0,
+    "gate_marker": "ANDROMEDA_STAGE16B_B11_GATE: PASS",
+    "integrated_client_flow_completed": true,
+    "g16b19_status": "PARTIAL_EVIDENCE",
+    "debugger_errors": 0,
+    "debugger_warnings": 0,
+    "controlled_stop": true,
+    "finalErrors": []
+  },
+  "main_final": {
+    "id": "B11_MAIN_EDITOR_BRIDGE_FINAL",
+    "scene": "res://scenes/Main.tscn",
+    "result": "PASS",
+    "observed_seconds": 8,
+    "debugger_errors": 0,
+    "debugger_warnings": 0,
+    "controlled_stop": true,
+    "finalErrors": []
+  },
+  "partial_attach_counted": false,
+  "residual_test_processes": 0,
+  "existing_user_editor": {
+    "pid": 10524,
+    "preserved": true
+  },
+  "final_status": "PASS"
+}

@@ -1,0 +1,34 @@
+{
+  "est_id": "EST-040",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Posto Avançado do Perímetro",
+  "building_type": "MILITAR",
+  "parent_locality": "LOC-012-001",
+  "parent_subregion": "SUB-012-001",
+  "parent_political_unit": "TER-012",
+  "function": "Posto avançado da linha de contenção, equipado com ART-012.",
+  "economic_role": {
+    "is_vendor": false,
+    "sells": [],
+    "produces": [],
+    "regulation_factor": 0.8
+  },
+  "capacity": {
+    "jobs": 10,
+    "residents": 10
+  },
+  "professions_linked": [],
+  "notable_link": "ART-012 Armas de contenção; classe Soldados",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "PEDRA_REFORCADA",
+    "flammability": "BAIXA",
+    "recovery_days": 7
+  }
+}

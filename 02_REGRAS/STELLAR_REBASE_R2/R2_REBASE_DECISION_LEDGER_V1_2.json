@@ -1,0 +1,15 @@
+{
+  "record_id": "R2_REBASE_DECISION_LEDGER_V1_2",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.2",
+  "status": "LOTS_001_TO_003_APPLIED",
+  "supersedes": "R2_REBASE_DECISION_LEDGER_V1_1",
+  "authority": {"r2": "IMMUTABLE_NARRATIVE_ORIGIN", "user_approval": "REQUIRED_FOR_DIVERGENCE_DISPOSITION"},
+  "invariants": ["NO_PHYSICAL_DELETION_WITHOUT_RECORDED_APPROVAL", "R2_WINS_NARRATIVE_CONFLICTS", "COMPATIBLE_EXPANSIONS_RETAIN_PROVENANCE"],
+  "entries": [
+    {"decision_id": "R2-REBASE-LOT-001", "status": "APPLIED", "reference": "R2_REBASE_DECISION_LEDGER_V1_0.json", "physical_deletion": false},
+    {"decision_id": "R2-REBASE-LOT-002", "status": "APPLIED", "reference": "R2_REBASE_DECISION_LEDGER_V1_1.json", "physical_deletion": false},
+    {"decision_id": "R2-REBASE-LOT-003", "date": "2026-09-06", "status": "APPLIED", "user_authorization": "Continue closing lore without UE5 installation; preserve baselines and use UE5 as future active target.", "approved_actions": ["Promote the verified territory, institution-network and agricultural-zone extensions as CANON_DERIVADO_ATIVO.", "Supersede territorial law V1.0 with R2-compatible V1.1.", "Freeze ARPG_NARRATIVE_CULTURE_CONTRACT_V1_3_0 pending review of FAC-009 and FAC-010.", "Reserve Living Country and LivingSim implementation for active engine-agnostic/UE5 layers; do not alter sealed baselines."], "new_active_records": ["STELLAR_SOVEREIGNTY_TERRITORY_LAW_V1_1", "STELLAR_INSTITUTION_CULTURE_LAW_V1_0", "STELLAR_FOUNDATION_INDEX_V1_3"], "historical_records_preserved": ["STELLAR_SOVEREIGNTY_TERRITORY_LAW_V1_0", "STELLAR_FOUNDATION_INDEX_V1_2", "R2_REBASE_DECISION_LEDGER_V1_1"], "physical_deletion": false, "reversible_action": "Any territorial, institutional or cultural promotion may only be superseded through a new authorial ledger entry; source and historical records remain preserved."}
+  ],
+  "next_batches": ["03_ECONOMY_ECOLOGY_TIME", "04_CHARACTER_PLAYER_SYSTEMS", "05_ENGINE_ARPG_RUNTIME"]
+}

@@ -1,0 +1,10 @@
+{
+  "record_id": "STAGE10-COVERAGE-V1.0",
+  "status": "PASS",
+  "module": "world_systems.py",
+  "statements": 201,
+  "covered": 195,
+  "missing": 6,
+  "percent_covered": 97.01,
+  "basis": "51 stage10 unit tests"
+}

@@ -1,0 +1,5054 @@
+{
+  "schema_version": "1.0.0",
+  "projection_authority": "READ_ONLY_DERIVED_VIEW",
+  "master_release_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+  "atlas": {
+    "record_id": "ANDROMEDA-CODEX-CANON-MASTER-V2.0.0",
+    "project": "ANDRÔMEDA CÓDEX",
+    "stage": "ETAPA_10_MASTER_FINAL",
+    "version": "V2.0.0",
+    "projection_authority": "READ_ONLY_ATLAS_PROJECTION"
+  },
+  "access": {
+    "role": "PLAYER",
+    "spoiler_max": 0,
+    "canonical_level_4_hidden": true,
+    "runtime_write_authority": false
+  },
+  "world": {
+    "world_instance_id": "rt:world:7d020d0e-c0d5-4fb1-b900-67270500c87c",
+    "timeline_id": "rt:timeline:20a8e4d9-4df5-4f2a-bd46-494612a425d3",
+    "mode": "PRIVATE",
+    "simulation_mode": "FULL",
+    "status": "ACTIVE",
+    "clock": {
+      "day": 0,
+      "tick": 0,
+      "ticks_per_day": 24
+    }
+  },
+  "runtime_access": "PLAYER_SAFE",
+  "layers": {
+    "LIVE_ENTITY_STATE": [
+      {
+        "entity_runtime_id": "rt:agent:755c241f-5508-4a89-a142-fbfa245fd17c",
+        "canonical_ref": null,
+        "entity_kind": "AGENT",
+        "origin": "RUNTIME_BORN",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "atlas_exposure": "PLAYER_VISIBLE",
+          "location_ref": "CIT-001",
+          "name": "Jogador Demo"
+        },
+        "canonical": null,
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:economic_flow:24012e43-2941-4c97-b01c-3553117d85e7",
+        "canonical_ref": "FLOW-002",
+        "entity_kind": "ECONOMIC_FLOW",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "base_price": 10.0,
+          "consumption_rate": 15.0,
+          "destination_id": "INDN-002",
+          "flow_ref": "FLOW-002",
+          "last_throughput": 0.0,
+          "origin_id": "RSZ-001",
+          "price": 10.0,
+          "processing_id": "INDN-001",
+          "product": "material ferral",
+          "production_rate": 20.0,
+          "route_ids": [
+            "SRTE-004",
+            "RTE-006"
+          ],
+          "shortage_pressure": 0.0,
+          "stock": 100.0
+        },
+        "canonical": {
+          "id": "FLOW-002",
+          "name": "material ferral",
+          "domain": "Economia",
+          "type": "ECONOMIC_FLOW",
+          "spoiler_level": 0,
+          "atlas_visibility": "TERRITORIAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [
+            "SRTE-004",
+            "RTE-006"
+          ],
+          "layer_refs": [
+            "ECONOMY",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:economic_flow:28d141b5-9bf7-404f-a232-f1d6152f4300",
+        "canonical_ref": "FLOW-003",
+        "entity_kind": "ECONOMIC_FLOW",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "base_price": 10.0,
+          "consumption_rate": 15.0,
+          "destination_id": "POI-014",
+          "flow_ref": "FLOW-003",
+          "last_throughput": 0.0,
+          "origin_id": "INDN-002",
+          "price": 10.0,
+          "processing_id": "INDN-002",
+          "product": "componentes de rede",
+          "production_rate": 20.0,
+          "route_ids": [
+            "RTE-004",
+            "RTE-005"
+          ],
+          "shortage_pressure": 0.0,
+          "stock": 100.0
+        },
+        "canonical": {
+          "id": "FLOW-003",
+          "name": "componentes de rede",
+          "domain": "Economia",
+          "type": "ECONOMIC_FLOW",
+          "spoiler_level": 0,
+          "atlas_visibility": "TERRITORIAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [
+            "RTE-004",
+            "RTE-005"
+          ],
+          "layer_refs": [
+            "ECONOMY",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:economic_flow:2f62651b-e213-4c53-a105-9be50ebe0611",
+        "canonical_ref": "FLOW-005",
+        "entity_kind": "ECONOMIC_FLOW",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "base_price": 10.0,
+          "consumption_rate": 15.0,
+          "destination_id": "POI-011",
+          "flow_ref": "FLOW-005",
+          "last_throughput": 0.0,
+          "origin_id": "RSZ-004",
+          "price": 10.0,
+          "processing_id": "INDN-005",
+          "product": "insumos medicinais",
+          "production_rate": 20.0,
+          "route_ids": [
+            "SRTE-007",
+            "RTE-012"
+          ],
+          "shortage_pressure": 0.0,
+          "stock": 100.0
+        },
+        "canonical": {
+          "id": "FLOW-005",
+          "name": "insumos medicinais",
+          "domain": "Economia",
+          "type": "ECONOMIC_FLOW",
+          "spoiler_level": 0,
+          "atlas_visibility": "TERRITORIAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [
+            "SRTE-007",
+            "RTE-012"
+          ],
+          "layer_refs": [
+            "ECONOMY",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:economic_flow:8ee91c0c-6f21-4662-a8f9-825df9db30cb",
+        "canonical_ref": "FLOW-006",
+        "entity_kind": "ECONOMIC_FLOW",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "base_price": 10.0,
+          "consumption_rate": 15.0,
+          "destination_id": "POI-015",
+          "flow_ref": "FLOW-006",
+          "last_throughput": 0.0,
+          "origin_id": "RSZ-002",
+          "price": 10.0,
+          "processing_id": "INDN-006",
+          "product": "componentes cristalinos",
+          "production_rate": 20.0,
+          "route_ids": [
+            "SRTE-008",
+            "RTE-017",
+            "RTE-016"
+          ],
+          "shortage_pressure": 0.0,
+          "stock": 100.0
+        },
+        "canonical": {
+          "id": "FLOW-006",
+          "name": "componentes cristalinos",
+          "domain": "Economia",
+          "type": "ECONOMIC_FLOW",
+          "spoiler_level": 0,
+          "atlas_visibility": "TERRITORIAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [
+            "SRTE-008",
+            "RTE-017",
+            "RTE-016"
+          ],
+          "layer_refs": [
+            "ECONOMY",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:economic_flow:c2196490-f9e8-4911-ab95-65047cb8a383",
+        "canonical_ref": "FLOW-007",
+        "entity_kind": "ECONOMIC_FLOW",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "base_price": 10.0,
+          "consumption_rate": 15.0,
+          "destination_id": "POI-031",
+          "flow_ref": "FLOW-007",
+          "last_throughput": 0.0,
+          "origin_id": "RSZ-005",
+          "price": 10.0,
+          "processing_id": "INDN-003",
+          "product": "recursos marítimos",
+          "production_rate": 20.0,
+          "route_ids": [
+            "SRTE-006",
+            "RTE-011"
+          ],
+          "shortage_pressure": 0.0,
+          "stock": 100.0
+        },
+        "canonical": {
+          "id": "FLOW-007",
+          "name": "recursos marítimos",
+          "domain": "Economia",
+          "type": "ECONOMIC_FLOW",
+          "spoiler_level": 0,
+          "atlas_visibility": "TERRITORIAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [
+            "SRTE-006",
+            "RTE-011"
+          ],
+          "layer_refs": [
+            "ECONOMY",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:economic_flow:d18139f0-d75f-42c5-8e72-b59bf17a999e",
+        "canonical_ref": "FLOW-004",
+        "entity_kind": "ECONOMIC_FLOW",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "base_price": 10.0,
+          "consumption_rate": 15.0,
+          "destination_id": "POI-009",
+          "flow_ref": "FLOW-004",
+          "last_throughput": 0.0,
+          "origin_id": "AGZ-004",
+          "price": 10.0,
+          "processing_id": "INDN-004",
+          "product": "produtos de encosta",
+          "production_rate": 20.0,
+          "route_ids": [
+            "SRTE-005",
+            "RTE-009",
+            "RTE-010"
+          ],
+          "shortage_pressure": 0.0,
+          "stock": 100.0
+        },
+        "canonical": {
+          "id": "FLOW-004",
+          "name": "produtos de encosta",
+          "domain": "Economia",
+          "type": "ECONOMIC_FLOW",
+          "spoiler_level": 0,
+          "atlas_visibility": "TERRITORIAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [
+            "SRTE-005",
+            "RTE-009",
+            "RTE-010"
+          ],
+          "layer_refs": [
+            "ECONOMY",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:economic_flow:d6785b06-7b57-40a7-8050-4cadbb7872f5",
+        "canonical_ref": "FLOW-001",
+        "entity_kind": "ECONOMIC_FLOW",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "base_price": 10.0,
+          "consumption_rate": 15.0,
+          "destination_id": "POI-002",
+          "flow_ref": "FLOW-001",
+          "last_throughput": 0.0,
+          "origin_id": "AGZ-001",
+          "price": 10.0,
+          "processing_id": "INDN-008",
+          "product": "produção rural",
+          "production_rate": 20.0,
+          "route_ids": [
+            "SRTE-001",
+            "RTE-001"
+          ],
+          "shortage_pressure": 0.0,
+          "stock": 100.0
+        },
+        "canonical": {
+          "id": "FLOW-001",
+          "name": "produção rural",
+          "domain": "Economia",
+          "type": "ECONOMIC_FLOW",
+          "spoiler_level": 0,
+          "atlas_visibility": "TERRITORIAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [
+            "SRTE-001",
+            "RTE-001"
+          ],
+          "layer_refs": [
+            "ECONOMY",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:faction_runtime:2213e439-a438-4c6d-9702-c1a88d835bc5",
+        "canonical_ref": "FAC-003",
+        "entity_kind": "FACTION_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "faction_ref": "FAC-003",
+          "influence": 50.0,
+          "influence_not_sovereignty": true,
+          "security": 50.0,
+          "stability": 50.0,
+          "territory_ref": "TER-010",
+          "treasury": 1000.0
+        },
+        "canonical": {
+          "id": "FAC-003",
+          "name": "Conselho de Convergência",
+          "domain": "facções",
+          "type": "OPERATIONAL_NODE",
+          "spoiler_level": 0,
+          "atlas_visibility": "LOCAL",
+          "location_refs": [
+            "LOC-001"
+          ],
+          "territory_refs": [
+            "TER-001"
+          ],
+          "biome_refs": [
+            "BIO-002",
+            "BIO-007",
+            "BIO-010"
+          ],
+          "route_refs": [
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "layer_refs": [
+            "FACTIONS"
+          ],
+          "geometry": {
+            "longitude": 0.0,
+            "latitude": 12.05,
+            "altitude_m": 540,
+            "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+            "precision_class": "P4",
+            "authority": "EXACT"
+          }
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:faction_runtime:22e5b355-32eb-4cb2-a0e3-e01f44383868",
+        "canonical_ref": "FAC-001",
+        "entity_kind": "FACTION_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "faction_ref": "FAC-001",
+          "influence": 50.0,
+          "influence_not_sovereignty": true,
+          "security": 50.0,
+          "stability": 50.0,
+          "territory_ref": "TER-001",
+          "treasury": 1000.0
+        },
+        "canonical": {
+          "id": "FAC-001",
+          "name": "Árvores Anciãs",
+          "domain": "facções",
+          "type": "OPERATIONAL_NODE",
+          "spoiler_level": 0,
+          "atlas_visibility": "LOCAL",
+          "location_refs": [
+            "LOC-001"
+          ],
+          "territory_refs": [
+            "TER-001"
+          ],
+          "biome_refs": [
+            "BIO-002",
+            "BIO-007",
+            "BIO-010"
+          ],
+          "route_refs": [
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "layer_refs": [
+            "FACTIONS"
+          ],
+          "geometry": {
+            "longitude": 0.0,
+            "latitude": 12.05,
+            "altitude_m": 540,
+            "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+            "precision_class": "P4",
+            "authority": "EXACT"
+          }
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:faction_runtime:dda8cfbf-1d7d-4423-84aa-3566b3bcb489",
+        "canonical_ref": "FAC-002",
+        "entity_kind": "FACTION_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "faction_ref": "FAC-002",
+          "influence": 50.0,
+          "influence_not_sovereignty": true,
+          "security": 50.0,
+          "stability": 50.0,
+          "territory_ref": "TER-003",
+          "treasury": 1000.0
+        },
+        "canonical": {
+          "id": "FAC-002",
+          "name": "Reis Magos",
+          "domain": "facções",
+          "type": "OPERATIONAL_NODE",
+          "spoiler_level": 0,
+          "atlas_visibility": "LOCAL",
+          "location_refs": [
+            "LOC-001"
+          ],
+          "territory_refs": [
+            "TER-001"
+          ],
+          "biome_refs": [
+            "BIO-002",
+            "BIO-007",
+            "BIO-010"
+          ],
+          "route_refs": [
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "layer_refs": [
+            "FACTIONS"
+          ],
+          "geometry": {
+            "longitude": 0.0,
+            "latitude": 12.05,
+            "altitude_m": 540,
+            "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+            "precision_class": "P4",
+            "authority": "EXACT"
+          }
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:population_aggregate:18cd52e9-4cfe-4cff-a9ba-6130ae52d041",
+        "canonical_ref": "LOC-006",
+        "entity_kind": "POPULATION_AGGREGATE",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "count": 1000,
+          "employed": 500,
+          "food_security": 75.0,
+          "labor_force": 550,
+          "settlement_ref": "LOC-006",
+          "territory_ref": "TER-006",
+          "unemployed": 50,
+          "welfare_index": 70.0
+        },
+        "canonical": {
+          "id": "LOC-006",
+          "name": "LOC-006",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "CITIES"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:population_aggregate:3b265686-c416-4b94-881f-6d039cba8898",
+        "canonical_ref": "CIT-001",
+        "entity_kind": "POPULATION_AGGREGATE",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "count": 1000,
+          "employed": 500,
+          "food_security": 75.0,
+          "labor_force": 550,
+          "settlement_ref": "CIT-001",
+          "territory_ref": "TER-011",
+          "unemployed": 50,
+          "welfare_index": 70.0
+        },
+        "canonical": {
+          "id": "CIT-001",
+          "name": "Posto de Varga",
+          "domain": "Atlas/local",
+          "type": "POINT",
+          "spoiler_level": 0,
+          "atlas_visibility": "LOCAL",
+          "location_refs": [
+            "CIT-001"
+          ],
+          "territory_refs": [
+            "TER-011"
+          ],
+          "biome_refs": [
+            "BIO-008",
+            "BIO-002"
+          ],
+          "route_refs": [
+            "RTE-001",
+            "RTE-003",
+            "RTE-013"
+          ],
+          "layer_refs": [
+            "ATLAS",
+            "CITIES"
+          ],
+          "geometry": {
+            "longitude": -3.62,
+            "latitude": 12.0,
+            "altitude_m": 430,
+            "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+            "precision_class": "P3",
+            "authority": "EXACT"
+          }
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:population_aggregate:4f2298ea-253e-4b86-bce8-39f46ae49ea2",
+        "canonical_ref": "LOC-003",
+        "entity_kind": "POPULATION_AGGREGATE",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "count": 1000,
+          "employed": 500,
+          "food_security": 75.0,
+          "labor_force": 550,
+          "settlement_ref": "LOC-003",
+          "territory_ref": "TER-003",
+          "unemployed": 50,
+          "welfare_index": 70.0
+        },
+        "canonical": {
+          "id": "LOC-003",
+          "name": "LOC-003",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "CITIES"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:population_aggregate:54d718fb-5f79-485f-85f5-b0c5e0f75aef",
+        "canonical_ref": "CIT-002",
+        "entity_kind": "POPULATION_AGGREGATE",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "count": 1000,
+          "employed": 500,
+          "food_security": 75.0,
+          "labor_force": 550,
+          "settlement_ref": "CIT-002",
+          "territory_ref": "TER-003",
+          "unemployed": 50,
+          "welfare_index": 70.0
+        },
+        "canonical": {
+          "id": "CIT-002",
+          "name": "Estação Oriental",
+          "domain": "Atlas/local",
+          "type": "POINT",
+          "spoiler_level": 0,
+          "atlas_visibility": "LOCAL",
+          "location_refs": [
+            "CIT-002"
+          ],
+          "territory_refs": [
+            "TER-003"
+          ],
+          "biome_refs": [
+            "BIO-002",
+            "BIO-007"
+          ],
+          "route_refs": [
+            "RTE-003",
+            "RTE-004",
+            "RTE-005",
+            "RTE-006",
+            "RTE-024"
+          ],
+          "layer_refs": [
+            "ATLAS",
+            "CITIES"
+          ],
+          "geometry": {
+            "longitude": 5.0,
+            "latitude": 28.0,
+            "altitude_m": 590,
+            "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+            "precision_class": "P3",
+            "authority": "EXACT"
+          }
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:population_aggregate:585896c3-e7d3-42f4-b91b-5598b5bbc28b",
+        "canonical_ref": "LOC-012",
+        "entity_kind": "POPULATION_AGGREGATE",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "count": 1000,
+          "employed": 500,
+          "food_security": 75.0,
+          "labor_force": 550,
+          "settlement_ref": "LOC-012",
+          "territory_ref": "TER-013",
+          "unemployed": 50,
+          "welfare_index": 70.0
+        },
+        "canonical": {
+          "id": "LOC-012",
+          "name": "LOC-012",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "CITIES"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:population_aggregate:68ccca87-6b48-4cc3-aacd-16357d4e30e4",
+        "canonical_ref": "LOC-001",
+        "entity_kind": "POPULATION_AGGREGATE",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "count": 1000,
+          "employed": 500,
+          "food_security": 75.0,
+          "labor_force": 550,
+          "settlement_ref": "LOC-001",
+          "territory_ref": "TER-001",
+          "unemployed": 50,
+          "welfare_index": 70.0
+        },
+        "canonical": {
+          "id": "LOC-001",
+          "name": "LOC-001",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "CITIES"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:population_aggregate:6a5b29d1-8625-4cf8-8f91-bf63aa9713f9",
+        "canonical_ref": "LOC-004",
+        "entity_kind": "POPULATION_AGGREGATE",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "count": 1000,
+          "employed": 500,
+          "food_security": 75.0,
+          "labor_force": 550,
+          "settlement_ref": "LOC-004",
+          "territory_ref": "TER-004",
+          "unemployed": 50,
+          "welfare_index": 70.0
+        },
+        "canonical": {
+          "id": "LOC-004",
+          "name": "LOC-004",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "CITIES"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:population_aggregate:779dc4f5-1827-4e52-aa28-be8e7aebc3f1",
+        "canonical_ref": "LOC-010",
+        "entity_kind": "POPULATION_AGGREGATE",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "count": 1000,
+          "employed": 500,
+          "food_security": 75.0,
+          "labor_force": 550,
+          "settlement_ref": "LOC-010",
+          "territory_ref": "TER-010",
+          "unemployed": 50,
+          "welfare_index": 70.0
+        },
+        "canonical": {
+          "id": "LOC-010",
+          "name": "LOC-010",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "CITIES"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:population_aggregate:80d57104-af6d-4101-8f30-6d590a36d6b2",
+        "canonical_ref": "LOC-008",
+        "entity_kind": "POPULATION_AGGREGATE",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "count": 1000,
+          "employed": 500,
+          "food_security": 75.0,
+          "labor_force": 550,
+          "settlement_ref": "LOC-008",
+          "territory_ref": "TER-008",
+          "unemployed": 50,
+          "welfare_index": 70.0
+        },
+        "canonical": {
+          "id": "LOC-008",
+          "name": "LOC-008",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "CITIES"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:population_aggregate:9eed9d4d-b2d9-4938-98ac-907248107372",
+        "canonical_ref": "LOC-002",
+        "entity_kind": "POPULATION_AGGREGATE",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "count": 1000,
+          "employed": 500,
+          "food_security": 75.0,
+          "labor_force": 550,
+          "settlement_ref": "LOC-002",
+          "territory_ref": "TER-002",
+          "unemployed": 50,
+          "welfare_index": 70.0
+        },
+        "canonical": {
+          "id": "LOC-002",
+          "name": "LOC-002",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "CITIES"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:population_aggregate:a17df647-a6f5-4a35-9e05-9fb64dad94e7",
+        "canonical_ref": "LOC-005",
+        "entity_kind": "POPULATION_AGGREGATE",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "count": 1000,
+          "employed": 500,
+          "food_security": 75.0,
+          "labor_force": 550,
+          "settlement_ref": "LOC-005",
+          "territory_ref": "TER-005",
+          "unemployed": 50,
+          "welfare_index": 70.0
+        },
+        "canonical": {
+          "id": "LOC-005",
+          "name": "LOC-005",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "CITIES"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:population_aggregate:a2272878-e080-4f40-a7a5-d7bb9e168f51",
+        "canonical_ref": "LOC-009",
+        "entity_kind": "POPULATION_AGGREGATE",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "count": 1000,
+          "employed": 500,
+          "food_security": 75.0,
+          "labor_force": 550,
+          "settlement_ref": "LOC-009",
+          "territory_ref": "TER-009",
+          "unemployed": 50,
+          "welfare_index": 70.0
+        },
+        "canonical": {
+          "id": "LOC-009",
+          "name": "LOC-009",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "CITIES"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:population_aggregate:a7558c4c-59f0-4d9d-96f2-7c4ed90ddd10",
+        "canonical_ref": "LOC-007",
+        "entity_kind": "POPULATION_AGGREGATE",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "count": 1000,
+          "employed": 500,
+          "food_security": 75.0,
+          "labor_force": 550,
+          "settlement_ref": "LOC-007",
+          "territory_ref": "TER-007",
+          "unemployed": 50,
+          "welfare_index": 70.0
+        },
+        "canonical": {
+          "id": "LOC-007",
+          "name": "LOC-007",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "CITIES"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:0ff0603c-eaed-469a-833c-9f89bdb84459",
+        "canonical_ref": "RTE-024",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-024"
+        },
+        "canonical": {
+          "id": "RTE-024",
+          "name": "RTE-024",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:13e39b2d-da3a-46a7-894f-f1b04fbb5210",
+        "canonical_ref": "RTE-022",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-022"
+        },
+        "canonical": {
+          "id": "RTE-022",
+          "name": "RTE-022",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:14f3d6de-477f-4592-a737-d7a0d1214ba7",
+        "canonical_ref": "RTE-019",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-019"
+        },
+        "canonical": {
+          "id": "RTE-019",
+          "name": "RTE-019",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:1d0f002e-2adc-40b6-bc1d-244010b66585",
+        "canonical_ref": "SRTE-006",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "SRTE-006"
+        },
+        "canonical": {
+          "id": "SRTE-006",
+          "name": "Ligação portuária de Navyr",
+          "domain": "Transporte",
+          "type": "via portuária",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [
+            "TER-004"
+          ],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": {
+            "origin": {
+              "longitude": 57.0,
+              "latitude": -5.0,
+              "altitude_m": null,
+              "precision_class": "PRESENTATION_DERIVED"
+            },
+            "destination": {
+              "longitude": 57.03,
+              "latitude": -4.99,
+              "altitude_m": 35,
+              "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+              "precision_class": "P4",
+              "authority": "CANON_DERIVED"
+            }
+          }
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:1f57ca2f-9961-4576-ae14-1e869fdd0fb8",
+        "canonical_ref": "SRTE-003",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "SRTE-003"
+        },
+        "canonical": {
+          "id": "SRTE-003",
+          "name": "Circuito institucional de Ortheon",
+          "domain": "Transporte",
+          "type": "via urbana",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [
+            "TER-003"
+          ],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": {
+            "origin": {
+              "longitude": 6.99333,
+              "latitude": 29.99667,
+              "altitude_m": null,
+              "precision_class": "PRESENTATION_DERIVED"
+            },
+            "destination": {
+              "longitude": 7.03,
+              "latitude": 29.98,
+              "altitude_m": 644,
+              "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+              "precision_class": "P4",
+              "authority": "CANON_DERIVED"
+            }
+          }
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:20507ed5-c084-4d84-b13b-9855c3efd682",
+        "canonical_ref": "SRTE-008",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "SRTE-008"
+        },
+        "canonical": {
+          "id": "SRTE-008",
+          "name": "Ramal de oficina Subcristal",
+          "domain": "Transporte",
+          "type": "passagem subterrânea",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [
+            "TER-009"
+          ],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": {
+            "origin": {
+              "longitude": 6.0,
+              "latitude": 7.515,
+              "altitude_m": null,
+              "precision_class": "PRESENTATION_DERIVED"
+            },
+            "destination": {
+              "longitude": 5.99,
+              "latitude": 7.52,
+              "altitude_m": -648,
+              "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+              "precision_class": "P4",
+              "authority": "CANON_DERIVED"
+            }
+          }
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:2542608c-e6ab-47af-8623-e42b05f3013b",
+        "canonical_ref": "RTE-018",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-018"
+        },
+        "canonical": {
+          "id": "RTE-018",
+          "name": "RTE-018",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:2728652a-1606-4fee-b131-92eca4dea897",
+        "canonical_ref": "RTE-012",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-012"
+        },
+        "canonical": {
+          "id": "RTE-012",
+          "name": "RTE-012",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:2e7a7e44-f790-4e54-ad36-a4894e655164",
+        "canonical_ref": "RTE-009",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-009"
+        },
+        "canonical": {
+          "id": "RTE-009",
+          "name": "RTE-009",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:3020439b-8ba7-4c58-9505-fc127e67f1ea",
+        "canonical_ref": "SRTE-001",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "SRTE-001"
+        },
+        "canonical": {
+          "id": "SRTE-001",
+          "name": "Anel rural de Varga",
+          "domain": "Transporte",
+          "type": "estrada rural",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [
+            "TER-011"
+          ],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": {
+            "origin": {
+              "longitude": -3.62125,
+              "latitude": 11.995,
+              "altitude_m": null,
+              "precision_class": "PRESENTATION_DERIVED"
+            },
+            "destination": {
+              "longitude": -3.67,
+              "latitude": 12.03,
+              "altitude_m": 426,
+              "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+              "precision_class": "P4",
+              "authority": "CANON_DERIVED"
+            }
+          }
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:32ef1d03-d52b-440e-b7af-0f2a3c9f2b2d",
+        "canonical_ref": "RTE-021",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-021"
+        },
+        "canonical": {
+          "id": "RTE-021",
+          "name": "RTE-021",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:3fe162de-35e8-46da-8617-dd5b7d4e8e94",
+        "canonical_ref": "SRTE-004",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "SRTE-004"
+        },
+        "canonical": {
+          "id": "SRTE-004",
+          "name": "Ramal mineral de Kharveth",
+          "domain": "Transporte",
+          "type": "ramal industrial",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [
+            "TER-002"
+          ],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": {
+            "origin": {
+              "longitude": 24.00333,
+              "latitude": 27.01333,
+              "altitude_m": null,
+              "precision_class": "PRESENTATION_DERIVED"
+            },
+            "destination": {
+              "longitude": 23.97,
+              "latitude": 27.02,
+              "altitude_m": 978,
+              "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+              "precision_class": "P4",
+              "authority": "CANON_DERIVED"
+            }
+          }
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:4cea83e6-3dca-49f6-a1cf-c7fbb454f61f",
+        "canonical_ref": "RTE-025",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-025"
+        },
+        "canonical": {
+          "id": "RTE-025",
+          "name": "RTE-025",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:51efd044-6657-416e-9717-d656124640a3",
+        "canonical_ref": "SRTE-002",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "SRTE-002"
+        },
+        "canonical": {
+          "id": "SRTE-002",
+          "name": "Ligação logística de Lúminor",
+          "domain": "Transporte",
+          "type": "via urbana",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [
+            "TER-001"
+          ],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": {
+            "origin": {
+              "longitude": 0.0,
+              "latitude": 12.051,
+              "altitude_m": null,
+              "precision_class": "PRESENTATION_DERIVED"
+            },
+            "destination": {
+              "longitude": 0.01,
+              "latitude": 12.01,
+              "altitude_m": 540,
+              "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+              "precision_class": "P4",
+              "authority": "CANON_DERIVED"
+            }
+          }
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:5a27a59b-3800-48db-a64d-a42f609700e1",
+        "canonical_ref": "SRTE-007",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "SRTE-007"
+        },
+        "canonical": {
+          "id": "SRTE-007",
+          "name": "Corredor medicinal rubro",
+          "domain": "Transporte",
+          "type": "passagem controlada",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [
+            "TER-007"
+          ],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": {
+            "origin": {
+              "longitude": -6.0,
+              "latitude": -24.0,
+              "altitude_m": null,
+              "precision_class": "PRESENTATION_DERIVED"
+            },
+            "destination": {
+              "longitude": -5.98,
+              "latitude": -23.99,
+              "altitude_m": 142,
+              "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+              "precision_class": "P4",
+              "authority": "CANON_DERIVED"
+            }
+          }
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:61edac5f-e63d-4645-8711-9030c1037ac5",
+        "canonical_ref": "RTE-001",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 2,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 0.0,
+          "operational": false,
+          "route_ref": "RTE-001"
+        },
+        "canonical": {
+          "id": "RTE-001",
+          "name": "RTE-001",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:6c42d068-bc39-4973-9a9b-0ccb45e43821",
+        "canonical_ref": "SRTE-005",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "SRTE-005"
+        },
+        "canonical": {
+          "id": "SRTE-005",
+          "name": "Circuito técnico de Ithra",
+          "domain": "Transporte",
+          "type": "via de encosta",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [
+            "TER-005"
+          ],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": {
+            "origin": {
+              "longitude": 21.01,
+              "latitude": 2.99,
+              "altitude_m": null,
+              "precision_class": "PRESENTATION_DERIVED"
+            },
+            "destination": {
+              "longitude": 21.02,
+              "latitude": 3.01,
+              "altitude_m": 1054,
+              "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+              "precision_class": "P4",
+              "authority": "CANON_DERIVED"
+            }
+          }
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:6c665124-f822-487a-a1d1-5504e484e5d5",
+        "canonical_ref": "RTE-010",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-010"
+        },
+        "canonical": {
+          "id": "RTE-010",
+          "name": "RTE-010",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:6e10e766-ec66-43f4-8705-b661c150b4b2",
+        "canonical_ref": "SRTE-009",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "SRTE-009"
+        },
+        "canonical": {
+          "id": "SRTE-009",
+          "name": "Circuito de resposta de Contenção",
+          "domain": "Transporte",
+          "type": "passagem controlada",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [
+            "TER-012"
+          ],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": {
+            "origin": {
+              "longitude": 6.0,
+              "latitude": 7.5,
+              "altitude_m": null,
+              "precision_class": "PRESENTATION_DERIVED"
+            },
+            "destination": {
+              "longitude": 6.01,
+              "latitude": 7.51,
+              "altitude_m": 521,
+              "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+              "precision_class": "P4",
+              "authority": "CANON_DERIVED"
+            }
+          }
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:7b812995-42cb-4f9c-8063-06c3ae18cd1d",
+        "canonical_ref": "RTE-003",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-003"
+        },
+        "canonical": {
+          "id": "RTE-003",
+          "name": "RTE-003",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:871aa3d6-bf4f-4d1e-aee7-eb719af3d27a",
+        "canonical_ref": "RTE-011",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-011"
+        },
+        "canonical": {
+          "id": "RTE-011",
+          "name": "RTE-011",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:8c8b3b7e-767f-4430-a6e1-0c559faa35cd",
+        "canonical_ref": "RTE-006",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-006"
+        },
+        "canonical": {
+          "id": "RTE-006",
+          "name": "RTE-006",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:8f082ea0-3afa-4c8e-b776-1fee199db081",
+        "canonical_ref": "RTE-023",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-023"
+        },
+        "canonical": {
+          "id": "RTE-023",
+          "name": "RTE-023",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:a6a90065-f8db-4f91-a97e-7b0bf963aa18",
+        "canonical_ref": "RTE-004",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-004"
+        },
+        "canonical": {
+          "id": "RTE-004",
+          "name": "RTE-004",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:b6e2b9d9-66a9-44ad-a6fb-6601cfefc3bc",
+        "canonical_ref": "RTE-013",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-013"
+        },
+        "canonical": {
+          "id": "RTE-013",
+          "name": "RTE-013",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:c346b359-84ae-4446-9854-1defb1cbd6f1",
+        "canonical_ref": "RTE-007",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-007"
+        },
+        "canonical": {
+          "id": "RTE-007",
+          "name": "RTE-007",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:c7dbd152-05c6-4a0a-bf4e-791283acd9d1",
+        "canonical_ref": "RTE-008",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-008"
+        },
+        "canonical": {
+          "id": "RTE-008",
+          "name": "RTE-008",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:cc38d46c-f2c5-4e6e-9600-8416aac8a326",
+        "canonical_ref": "RTE-020",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-020"
+        },
+        "canonical": {
+          "id": "RTE-020",
+          "name": "RTE-020",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:cd0ff726-0a8c-4d95-b764-171712ce0344",
+        "canonical_ref": "RTE-016",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-016"
+        },
+        "canonical": {
+          "id": "RTE-016",
+          "name": "RTE-016",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:d3de8bbd-16bb-47c1-b618-6a07c7acbfda",
+        "canonical_ref": "RTE-002",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-002"
+        },
+        "canonical": {
+          "id": "RTE-002",
+          "name": "RTE-002",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:e3832262-869b-4591-9ee2-9103279125fe",
+        "canonical_ref": "RTE-005",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-005"
+        },
+        "canonical": {
+          "id": "RTE-005",
+          "name": "RTE-005",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:e7d8ce05-e7f3-4726-9ea5-fbaa651dfbda",
+        "canonical_ref": "RTE-017",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-017"
+        },
+        "canonical": {
+          "id": "RTE-017",
+          "name": "RTE-017",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:f116d14a-9c34-4858-92b2-12f26c87b868",
+        "canonical_ref": "RTE-015",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-015"
+        },
+        "canonical": {
+          "id": "RTE-015",
+          "name": "RTE-015",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:f864648b-6caf-4630-80fc-c34269d4c6ad",
+        "canonical_ref": "RTE-014",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-014"
+        },
+        "canonical": {
+          "id": "RTE-014",
+          "name": "RTE-014",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:structure:488239bb-32f1-4bfb-88b3-b5824a0612c5",
+        "canonical_ref": null,
+        "entity_kind": "STRUCTURE",
+        "origin": "RUNTIME_BORN",
+        "lifecycle": "DESTROYED",
+        "version": 6,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "active": false,
+          "atlas_exposure": "PLAYER_VISIBLE",
+          "burning": false,
+          "fire_intensity": 0.0,
+          "functional": false,
+          "integrity": 0.0,
+          "location_ref": "CIT-001",
+          "locked": false,
+          "name": "Ponte da Timeline",
+          "open": false,
+          "temperature": 20.0,
+          "wetness": 0.0,
+          "zone_ref": null
+        },
+        "canonical": null,
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      }
+    ],
+    "LIVE_ROUTES": [
+      {
+        "entity_runtime_id": "rt:route_runtime:0ff0603c-eaed-469a-833c-9f89bdb84459",
+        "canonical_ref": "RTE-024",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-024"
+        },
+        "canonical": {
+          "id": "RTE-024",
+          "name": "RTE-024",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:13e39b2d-da3a-46a7-894f-f1b04fbb5210",
+        "canonical_ref": "RTE-022",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-022"
+        },
+        "canonical": {
+          "id": "RTE-022",
+          "name": "RTE-022",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:14f3d6de-477f-4592-a737-d7a0d1214ba7",
+        "canonical_ref": "RTE-019",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-019"
+        },
+        "canonical": {
+          "id": "RTE-019",
+          "name": "RTE-019",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:1d0f002e-2adc-40b6-bc1d-244010b66585",
+        "canonical_ref": "SRTE-006",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "SRTE-006"
+        },
+        "canonical": {
+          "id": "SRTE-006",
+          "name": "Ligação portuária de Navyr",
+          "domain": "Transporte",
+          "type": "via portuária",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [
+            "TER-004"
+          ],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": {
+            "origin": {
+              "longitude": 57.0,
+              "latitude": -5.0,
+              "altitude_m": null,
+              "precision_class": "PRESENTATION_DERIVED"
+            },
+            "destination": {
+              "longitude": 57.03,
+              "latitude": -4.99,
+              "altitude_m": 35,
+              "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+              "precision_class": "P4",
+              "authority": "CANON_DERIVED"
+            }
+          }
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:1f57ca2f-9961-4576-ae14-1e869fdd0fb8",
+        "canonical_ref": "SRTE-003",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "SRTE-003"
+        },
+        "canonical": {
+          "id": "SRTE-003",
+          "name": "Circuito institucional de Ortheon",
+          "domain": "Transporte",
+          "type": "via urbana",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [
+            "TER-003"
+          ],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": {
+            "origin": {
+              "longitude": 6.99333,
+              "latitude": 29.99667,
+              "altitude_m": null,
+              "precision_class": "PRESENTATION_DERIVED"
+            },
+            "destination": {
+              "longitude": 7.03,
+              "latitude": 29.98,
+              "altitude_m": 644,
+              "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+              "precision_class": "P4",
+              "authority": "CANON_DERIVED"
+            }
+          }
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:20507ed5-c084-4d84-b13b-9855c3efd682",
+        "canonical_ref": "SRTE-008",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "SRTE-008"
+        },
+        "canonical": {
+          "id": "SRTE-008",
+          "name": "Ramal de oficina Subcristal",
+          "domain": "Transporte",
+          "type": "passagem subterrânea",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [
+            "TER-009"
+          ],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": {
+            "origin": {
+              "longitude": 6.0,
+              "latitude": 7.515,
+              "altitude_m": null,
+              "precision_class": "PRESENTATION_DERIVED"
+            },
+            "destination": {
+              "longitude": 5.99,
+              "latitude": 7.52,
+              "altitude_m": -648,
+              "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+              "precision_class": "P4",
+              "authority": "CANON_DERIVED"
+            }
+          }
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:2542608c-e6ab-47af-8623-e42b05f3013b",
+        "canonical_ref": "RTE-018",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-018"
+        },
+        "canonical": {
+          "id": "RTE-018",
+          "name": "RTE-018",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:2728652a-1606-4fee-b131-92eca4dea897",
+        "canonical_ref": "RTE-012",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-012"
+        },
+        "canonical": {
+          "id": "RTE-012",
+          "name": "RTE-012",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:2e7a7e44-f790-4e54-ad36-a4894e655164",
+        "canonical_ref": "RTE-009",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-009"
+        },
+        "canonical": {
+          "id": "RTE-009",
+          "name": "RTE-009",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:3020439b-8ba7-4c58-9505-fc127e67f1ea",
+        "canonical_ref": "SRTE-001",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "SRTE-001"
+        },
+        "canonical": {
+          "id": "SRTE-001",
+          "name": "Anel rural de Varga",
+          "domain": "Transporte",
+          "type": "estrada rural",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [
+            "TER-011"
+          ],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": {
+            "origin": {
+              "longitude": -3.62125,
+              "latitude": 11.995,
+              "altitude_m": null,
+              "precision_class": "PRESENTATION_DERIVED"
+            },
+            "destination": {
+              "longitude": -3.67,
+              "latitude": 12.03,
+              "altitude_m": 426,
+              "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+              "precision_class": "P4",
+              "authority": "CANON_DERIVED"
+            }
+          }
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:32ef1d03-d52b-440e-b7af-0f2a3c9f2b2d",
+        "canonical_ref": "RTE-021",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-021"
+        },
+        "canonical": {
+          "id": "RTE-021",
+          "name": "RTE-021",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:3fe162de-35e8-46da-8617-dd5b7d4e8e94",
+        "canonical_ref": "SRTE-004",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "SRTE-004"
+        },
+        "canonical": {
+          "id": "SRTE-004",
+          "name": "Ramal mineral de Kharveth",
+          "domain": "Transporte",
+          "type": "ramal industrial",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [
+            "TER-002"
+          ],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": {
+            "origin": {
+              "longitude": 24.00333,
+              "latitude": 27.01333,
+              "altitude_m": null,
+              "precision_class": "PRESENTATION_DERIVED"
+            },
+            "destination": {
+              "longitude": 23.97,
+              "latitude": 27.02,
+              "altitude_m": 978,
+              "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+              "precision_class": "P4",
+              "authority": "CANON_DERIVED"
+            }
+          }
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:4cea83e6-3dca-49f6-a1cf-c7fbb454f61f",
+        "canonical_ref": "RTE-025",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-025"
+        },
+        "canonical": {
+          "id": "RTE-025",
+          "name": "RTE-025",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:51efd044-6657-416e-9717-d656124640a3",
+        "canonical_ref": "SRTE-002",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "SRTE-002"
+        },
+        "canonical": {
+          "id": "SRTE-002",
+          "name": "Ligação logística de Lúminor",
+          "domain": "Transporte",
+          "type": "via urbana",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [
+            "TER-001"
+          ],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": {
+            "origin": {
+              "longitude": 0.0,
+              "latitude": 12.051,
+              "altitude_m": null,
+              "precision_class": "PRESENTATION_DERIVED"
+            },
+            "destination": {
+              "longitude": 0.01,
+              "latitude": 12.01,
+              "altitude_m": 540,
+              "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+              "precision_class": "P4",
+              "authority": "CANON_DERIVED"
+            }
+          }
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:5a27a59b-3800-48db-a64d-a42f609700e1",
+        "canonical_ref": "SRTE-007",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "SRTE-007"
+        },
+        "canonical": {
+          "id": "SRTE-007",
+          "name": "Corredor medicinal rubro",
+          "domain": "Transporte",
+          "type": "passagem controlada",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [
+            "TER-007"
+          ],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": {
+            "origin": {
+              "longitude": -6.0,
+              "latitude": -24.0,
+              "altitude_m": null,
+              "precision_class": "PRESENTATION_DERIVED"
+            },
+            "destination": {
+              "longitude": -5.98,
+              "latitude": -23.99,
+              "altitude_m": 142,
+              "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+              "precision_class": "P4",
+              "authority": "CANON_DERIVED"
+            }
+          }
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:61edac5f-e63d-4645-8711-9030c1037ac5",
+        "canonical_ref": "RTE-001",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 2,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 0.0,
+          "operational": false,
+          "route_ref": "RTE-001"
+        },
+        "canonical": {
+          "id": "RTE-001",
+          "name": "RTE-001",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:6c42d068-bc39-4973-9a9b-0ccb45e43821",
+        "canonical_ref": "SRTE-005",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "SRTE-005"
+        },
+        "canonical": {
+          "id": "SRTE-005",
+          "name": "Circuito técnico de Ithra",
+          "domain": "Transporte",
+          "type": "via de encosta",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [
+            "TER-005"
+          ],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": {
+            "origin": {
+              "longitude": 21.01,
+              "latitude": 2.99,
+              "altitude_m": null,
+              "precision_class": "PRESENTATION_DERIVED"
+            },
+            "destination": {
+              "longitude": 21.02,
+              "latitude": 3.01,
+              "altitude_m": 1054,
+              "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+              "precision_class": "P4",
+              "authority": "CANON_DERIVED"
+            }
+          }
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:6c665124-f822-487a-a1d1-5504e484e5d5",
+        "canonical_ref": "RTE-010",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-010"
+        },
+        "canonical": {
+          "id": "RTE-010",
+          "name": "RTE-010",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:6e10e766-ec66-43f4-8705-b661c150b4b2",
+        "canonical_ref": "SRTE-009",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "SRTE-009"
+        },
+        "canonical": {
+          "id": "SRTE-009",
+          "name": "Circuito de resposta de Contenção",
+          "domain": "Transporte",
+          "type": "passagem controlada",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [
+            "TER-012"
+          ],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": {
+            "origin": {
+              "longitude": 6.0,
+              "latitude": 7.5,
+              "altitude_m": null,
+              "precision_class": "PRESENTATION_DERIVED"
+            },
+            "destination": {
+              "longitude": 6.01,
+              "latitude": 7.51,
+              "altitude_m": 521,
+              "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+              "precision_class": "P4",
+              "authority": "CANON_DERIVED"
+            }
+          }
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:7b812995-42cb-4f9c-8063-06c3ae18cd1d",
+        "canonical_ref": "RTE-003",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-003"
+        },
+        "canonical": {
+          "id": "RTE-003",
+          "name": "RTE-003",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:871aa3d6-bf4f-4d1e-aee7-eb719af3d27a",
+        "canonical_ref": "RTE-011",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-011"
+        },
+        "canonical": {
+          "id": "RTE-011",
+          "name": "RTE-011",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:8c8b3b7e-767f-4430-a6e1-0c559faa35cd",
+        "canonical_ref": "RTE-006",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-006"
+        },
+        "canonical": {
+          "id": "RTE-006",
+          "name": "RTE-006",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:8f082ea0-3afa-4c8e-b776-1fee199db081",
+        "canonical_ref": "RTE-023",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-023"
+        },
+        "canonical": {
+          "id": "RTE-023",
+          "name": "RTE-023",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:a6a90065-f8db-4f91-a97e-7b0bf963aa18",
+        "canonical_ref": "RTE-004",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-004"
+        },
+        "canonical": {
+          "id": "RTE-004",
+          "name": "RTE-004",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:b6e2b9d9-66a9-44ad-a6fb-6601cfefc3bc",
+        "canonical_ref": "RTE-013",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-013"
+        },
+        "canonical": {
+          "id": "RTE-013",
+          "name": "RTE-013",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:c346b359-84ae-4446-9854-1defb1cbd6f1",
+        "canonical_ref": "RTE-007",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-007"
+        },
+        "canonical": {
+          "id": "RTE-007",
+          "name": "RTE-007",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:c7dbd152-05c6-4a0a-bf4e-791283acd9d1",
+        "canonical_ref": "RTE-008",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-008"
+        },
+        "canonical": {
+          "id": "RTE-008",
+          "name": "RTE-008",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:cc38d46c-f2c5-4e6e-9600-8416aac8a326",
+        "canonical_ref": "RTE-020",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-020"
+        },
+        "canonical": {
+          "id": "RTE-020",
+          "name": "RTE-020",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:cd0ff726-0a8c-4d95-b764-171712ce0344",
+        "canonical_ref": "RTE-016",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-016"
+        },
+        "canonical": {
+          "id": "RTE-016",
+          "name": "RTE-016",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:d3de8bbd-16bb-47c1-b618-6a07c7acbfda",
+        "canonical_ref": "RTE-002",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-002"
+        },
+        "canonical": {
+          "id": "RTE-002",
+          "name": "RTE-002",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:e3832262-869b-4591-9ee2-9103279125fe",
+        "canonical_ref": "RTE-005",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-005"
+        },
+        "canonical": {
+          "id": "RTE-005",
+          "name": "RTE-005",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:e7d8ce05-e7f3-4726-9ea5-fbaa651dfbda",
+        "canonical_ref": "RTE-017",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-017"
+        },
+        "canonical": {
+          "id": "RTE-017",
+          "name": "RTE-017",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:f116d14a-9c34-4858-92b2-12f26c87b868",
+        "canonical_ref": "RTE-015",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-015"
+        },
+        "canonical": {
+          "id": "RTE-015",
+          "name": "RTE-015",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:route_runtime:f864648b-6caf-4630-80fc-c34269d4c6ad",
+        "canonical_ref": "RTE-014",
+        "entity_kind": "ROUTE_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "capacity_factor": 1.0,
+          "operational": true,
+          "route_ref": "RTE-014"
+        },
+        "canonical": {
+          "id": "RTE-014",
+          "name": "RTE-014",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "ROUTES",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      }
+    ],
+    "LIVE_ECONOMY": [
+      {
+        "entity_runtime_id": "rt:economic_flow:24012e43-2941-4c97-b01c-3553117d85e7",
+        "canonical_ref": "FLOW-002",
+        "entity_kind": "ECONOMIC_FLOW",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "base_price": 10.0,
+          "consumption_rate": 15.0,
+          "destination_id": "INDN-002",
+          "flow_ref": "FLOW-002",
+          "last_throughput": 0.0,
+          "origin_id": "RSZ-001",
+          "price": 10.0,
+          "processing_id": "INDN-001",
+          "product": "material ferral",
+          "production_rate": 20.0,
+          "route_ids": [
+            "SRTE-004",
+            "RTE-006"
+          ],
+          "shortage_pressure": 0.0,
+          "stock": 100.0
+        },
+        "canonical": {
+          "id": "FLOW-002",
+          "name": "material ferral",
+          "domain": "Economia",
+          "type": "ECONOMIC_FLOW",
+          "spoiler_level": 0,
+          "atlas_visibility": "TERRITORIAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [
+            "SRTE-004",
+            "RTE-006"
+          ],
+          "layer_refs": [
+            "ECONOMY",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:economic_flow:28d141b5-9bf7-404f-a232-f1d6152f4300",
+        "canonical_ref": "FLOW-003",
+        "entity_kind": "ECONOMIC_FLOW",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "base_price": 10.0,
+          "consumption_rate": 15.0,
+          "destination_id": "POI-014",
+          "flow_ref": "FLOW-003",
+          "last_throughput": 0.0,
+          "origin_id": "INDN-002",
+          "price": 10.0,
+          "processing_id": "INDN-002",
+          "product": "componentes de rede",
+          "production_rate": 20.0,
+          "route_ids": [
+            "RTE-004",
+            "RTE-005"
+          ],
+          "shortage_pressure": 0.0,
+          "stock": 100.0
+        },
+        "canonical": {
+          "id": "FLOW-003",
+          "name": "componentes de rede",
+          "domain": "Economia",
+          "type": "ECONOMIC_FLOW",
+          "spoiler_level": 0,
+          "atlas_visibility": "TERRITORIAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [
+            "RTE-004",
+            "RTE-005"
+          ],
+          "layer_refs": [
+            "ECONOMY",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:economic_flow:2f62651b-e213-4c53-a105-9be50ebe0611",
+        "canonical_ref": "FLOW-005",
+        "entity_kind": "ECONOMIC_FLOW",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "base_price": 10.0,
+          "consumption_rate": 15.0,
+          "destination_id": "POI-011",
+          "flow_ref": "FLOW-005",
+          "last_throughput": 0.0,
+          "origin_id": "RSZ-004",
+          "price": 10.0,
+          "processing_id": "INDN-005",
+          "product": "insumos medicinais",
+          "production_rate": 20.0,
+          "route_ids": [
+            "SRTE-007",
+            "RTE-012"
+          ],
+          "shortage_pressure": 0.0,
+          "stock": 100.0
+        },
+        "canonical": {
+          "id": "FLOW-005",
+          "name": "insumos medicinais",
+          "domain": "Economia",
+          "type": "ECONOMIC_FLOW",
+          "spoiler_level": 0,
+          "atlas_visibility": "TERRITORIAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [
+            "SRTE-007",
+            "RTE-012"
+          ],
+          "layer_refs": [
+            "ECONOMY",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:economic_flow:8ee91c0c-6f21-4662-a8f9-825df9db30cb",
+        "canonical_ref": "FLOW-006",
+        "entity_kind": "ECONOMIC_FLOW",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "base_price": 10.0,
+          "consumption_rate": 15.0,
+          "destination_id": "POI-015",
+          "flow_ref": "FLOW-006",
+          "last_throughput": 0.0,
+          "origin_id": "RSZ-002",
+          "price": 10.0,
+          "processing_id": "INDN-006",
+          "product": "componentes cristalinos",
+          "production_rate": 20.0,
+          "route_ids": [
+            "SRTE-008",
+            "RTE-017",
+            "RTE-016"
+          ],
+          "shortage_pressure": 0.0,
+          "stock": 100.0
+        },
+        "canonical": {
+          "id": "FLOW-006",
+          "name": "componentes cristalinos",
+          "domain": "Economia",
+          "type": "ECONOMIC_FLOW",
+          "spoiler_level": 0,
+          "atlas_visibility": "TERRITORIAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [
+            "SRTE-008",
+            "RTE-017",
+            "RTE-016"
+          ],
+          "layer_refs": [
+            "ECONOMY",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:economic_flow:c2196490-f9e8-4911-ab95-65047cb8a383",
+        "canonical_ref": "FLOW-007",
+        "entity_kind": "ECONOMIC_FLOW",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "base_price": 10.0,
+          "consumption_rate": 15.0,
+          "destination_id": "POI-031",
+          "flow_ref": "FLOW-007",
+          "last_throughput": 0.0,
+          "origin_id": "RSZ-005",
+          "price": 10.0,
+          "processing_id": "INDN-003",
+          "product": "recursos marítimos",
+          "production_rate": 20.0,
+          "route_ids": [
+            "SRTE-006",
+            "RTE-011"
+          ],
+          "shortage_pressure": 0.0,
+          "stock": 100.0
+        },
+        "canonical": {
+          "id": "FLOW-007",
+          "name": "recursos marítimos",
+          "domain": "Economia",
+          "type": "ECONOMIC_FLOW",
+          "spoiler_level": 0,
+          "atlas_visibility": "TERRITORIAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [
+            "SRTE-006",
+            "RTE-011"
+          ],
+          "layer_refs": [
+            "ECONOMY",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:economic_flow:d18139f0-d75f-42c5-8e72-b59bf17a999e",
+        "canonical_ref": "FLOW-004",
+        "entity_kind": "ECONOMIC_FLOW",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "base_price": 10.0,
+          "consumption_rate": 15.0,
+          "destination_id": "POI-009",
+          "flow_ref": "FLOW-004",
+          "last_throughput": 0.0,
+          "origin_id": "AGZ-004",
+          "price": 10.0,
+          "processing_id": "INDN-004",
+          "product": "produtos de encosta",
+          "production_rate": 20.0,
+          "route_ids": [
+            "SRTE-005",
+            "RTE-009",
+            "RTE-010"
+          ],
+          "shortage_pressure": 0.0,
+          "stock": 100.0
+        },
+        "canonical": {
+          "id": "FLOW-004",
+          "name": "produtos de encosta",
+          "domain": "Economia",
+          "type": "ECONOMIC_FLOW",
+          "spoiler_level": 0,
+          "atlas_visibility": "TERRITORIAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [
+            "SRTE-005",
+            "RTE-009",
+            "RTE-010"
+          ],
+          "layer_refs": [
+            "ECONOMY",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:economic_flow:d6785b06-7b57-40a7-8050-4cadbb7872f5",
+        "canonical_ref": "FLOW-001",
+        "entity_kind": "ECONOMIC_FLOW",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "base_price": 10.0,
+          "consumption_rate": 15.0,
+          "destination_id": "POI-002",
+          "flow_ref": "FLOW-001",
+          "last_throughput": 0.0,
+          "origin_id": "AGZ-001",
+          "price": 10.0,
+          "processing_id": "INDN-008",
+          "product": "produção rural",
+          "production_rate": 20.0,
+          "route_ids": [
+            "SRTE-001",
+            "RTE-001"
+          ],
+          "shortage_pressure": 0.0,
+          "stock": 100.0
+        },
+        "canonical": {
+          "id": "FLOW-001",
+          "name": "produção rural",
+          "domain": "Economia",
+          "type": "ECONOMIC_FLOW",
+          "spoiler_level": 0,
+          "atlas_visibility": "TERRITORIAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [
+            "SRTE-001",
+            "RTE-001"
+          ],
+          "layer_refs": [
+            "ECONOMY",
+            "TRANSPORT"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      }
+    ],
+    "LIVE_POPULATION": [
+      {
+        "entity_runtime_id": "rt:population_aggregate:18cd52e9-4cfe-4cff-a9ba-6130ae52d041",
+        "canonical_ref": "LOC-006",
+        "entity_kind": "POPULATION_AGGREGATE",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "count": 1000,
+          "employed": 500,
+          "food_security": 75.0,
+          "labor_force": 550,
+          "settlement_ref": "LOC-006",
+          "territory_ref": "TER-006",
+          "unemployed": 50,
+          "welfare_index": 70.0
+        },
+        "canonical": {
+          "id": "LOC-006",
+          "name": "LOC-006",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "CITIES"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:population_aggregate:3b265686-c416-4b94-881f-6d039cba8898",
+        "canonical_ref": "CIT-001",
+        "entity_kind": "POPULATION_AGGREGATE",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "count": 1000,
+          "employed": 500,
+          "food_security": 75.0,
+          "labor_force": 550,
+          "settlement_ref": "CIT-001",
+          "territory_ref": "TER-011",
+          "unemployed": 50,
+          "welfare_index": 70.0
+        },
+        "canonical": {
+          "id": "CIT-001",
+          "name": "Posto de Varga",
+          "domain": "Atlas/local",
+          "type": "POINT",
+          "spoiler_level": 0,
+          "atlas_visibility": "LOCAL",
+          "location_refs": [
+            "CIT-001"
+          ],
+          "territory_refs": [
+            "TER-011"
+          ],
+          "biome_refs": [
+            "BIO-008",
+            "BIO-002"
+          ],
+          "route_refs": [
+            "RTE-001",
+            "RTE-003",
+            "RTE-013"
+          ],
+          "layer_refs": [
+            "ATLAS",
+            "CITIES"
+          ],
+          "geometry": {
+            "longitude": -3.62,
+            "latitude": 12.0,
+            "altitude_m": 430,
+            "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+            "precision_class": "P3",
+            "authority": "EXACT"
+          }
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:population_aggregate:4f2298ea-253e-4b86-bce8-39f46ae49ea2",
+        "canonical_ref": "LOC-003",
+        "entity_kind": "POPULATION_AGGREGATE",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "count": 1000,
+          "employed": 500,
+          "food_security": 75.0,
+          "labor_force": 550,
+          "settlement_ref": "LOC-003",
+          "territory_ref": "TER-003",
+          "unemployed": 50,
+          "welfare_index": 70.0
+        },
+        "canonical": {
+          "id": "LOC-003",
+          "name": "LOC-003",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "CITIES"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:population_aggregate:54d718fb-5f79-485f-85f5-b0c5e0f75aef",
+        "canonical_ref": "CIT-002",
+        "entity_kind": "POPULATION_AGGREGATE",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "count": 1000,
+          "employed": 500,
+          "food_security": 75.0,
+          "labor_force": 550,
+          "settlement_ref": "CIT-002",
+          "territory_ref": "TER-003",
+          "unemployed": 50,
+          "welfare_index": 70.0
+        },
+        "canonical": {
+          "id": "CIT-002",
+          "name": "Estação Oriental",
+          "domain": "Atlas/local",
+          "type": "POINT",
+          "spoiler_level": 0,
+          "atlas_visibility": "LOCAL",
+          "location_refs": [
+            "CIT-002"
+          ],
+          "territory_refs": [
+            "TER-003"
+          ],
+          "biome_refs": [
+            "BIO-002",
+            "BIO-007"
+          ],
+          "route_refs": [
+            "RTE-003",
+            "RTE-004",
+            "RTE-005",
+            "RTE-006",
+            "RTE-024"
+          ],
+          "layer_refs": [
+            "ATLAS",
+            "CITIES"
+          ],
+          "geometry": {
+            "longitude": 5.0,
+            "latitude": 28.0,
+            "altitude_m": 590,
+            "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+            "precision_class": "P3",
+            "authority": "EXACT"
+          }
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:population_aggregate:585896c3-e7d3-42f4-b91b-5598b5bbc28b",
+        "canonical_ref": "LOC-012",
+        "entity_kind": "POPULATION_AGGREGATE",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "count": 1000,
+          "employed": 500,
+          "food_security": 75.0,
+          "labor_force": 550,
+          "settlement_ref": "LOC-012",
+          "territory_ref": "TER-013",
+          "unemployed": 50,
+          "welfare_index": 70.0
+        },
+        "canonical": {
+          "id": "LOC-012",
+          "name": "LOC-012",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "CITIES"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:population_aggregate:68ccca87-6b48-4cc3-aacd-16357d4e30e4",
+        "canonical_ref": "LOC-001",
+        "entity_kind": "POPULATION_AGGREGATE",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "count": 1000,
+          "employed": 500,
+          "food_security": 75.0,
+          "labor_force": 550,
+          "settlement_ref": "LOC-001",
+          "territory_ref": "TER-001",
+          "unemployed": 50,
+          "welfare_index": 70.0
+        },
+        "canonical": {
+          "id": "LOC-001",
+          "name": "LOC-001",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "CITIES"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:population_aggregate:6a5b29d1-8625-4cf8-8f91-bf63aa9713f9",
+        "canonical_ref": "LOC-004",
+        "entity_kind": "POPULATION_AGGREGATE",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "count": 1000,
+          "employed": 500,
+          "food_security": 75.0,
+          "labor_force": 550,
+          "settlement_ref": "LOC-004",
+          "territory_ref": "TER-004",
+          "unemployed": 50,
+          "welfare_index": 70.0
+        },
+        "canonical": {
+          "id": "LOC-004",
+          "name": "LOC-004",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "CITIES"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:population_aggregate:779dc4f5-1827-4e52-aa28-be8e7aebc3f1",
+        "canonical_ref": "LOC-010",
+        "entity_kind": "POPULATION_AGGREGATE",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "count": 1000,
+          "employed": 500,
+          "food_security": 75.0,
+          "labor_force": 550,
+          "settlement_ref": "LOC-010",
+          "territory_ref": "TER-010",
+          "unemployed": 50,
+          "welfare_index": 70.0
+        },
+        "canonical": {
+          "id": "LOC-010",
+          "name": "LOC-010",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "CITIES"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:population_aggregate:80d57104-af6d-4101-8f30-6d590a36d6b2",
+        "canonical_ref": "LOC-008",
+        "entity_kind": "POPULATION_AGGREGATE",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "count": 1000,
+          "employed": 500,
+          "food_security": 75.0,
+          "labor_force": 550,
+          "settlement_ref": "LOC-008",
+          "territory_ref": "TER-008",
+          "unemployed": 50,
+          "welfare_index": 70.0
+        },
+        "canonical": {
+          "id": "LOC-008",
+          "name": "LOC-008",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "CITIES"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:population_aggregate:9eed9d4d-b2d9-4938-98ac-907248107372",
+        "canonical_ref": "LOC-002",
+        "entity_kind": "POPULATION_AGGREGATE",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "count": 1000,
+          "employed": 500,
+          "food_security": 75.0,
+          "labor_force": 550,
+          "settlement_ref": "LOC-002",
+          "territory_ref": "TER-002",
+          "unemployed": 50,
+          "welfare_index": 70.0
+        },
+        "canonical": {
+          "id": "LOC-002",
+          "name": "LOC-002",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "CITIES"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:population_aggregate:a17df647-a6f5-4a35-9e05-9fb64dad94e7",
+        "canonical_ref": "LOC-005",
+        "entity_kind": "POPULATION_AGGREGATE",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "count": 1000,
+          "employed": 500,
+          "food_security": 75.0,
+          "labor_force": 550,
+          "settlement_ref": "LOC-005",
+          "territory_ref": "TER-005",
+          "unemployed": 50,
+          "welfare_index": 70.0
+        },
+        "canonical": {
+          "id": "LOC-005",
+          "name": "LOC-005",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "CITIES"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:population_aggregate:a2272878-e080-4f40-a7a5-d7bb9e168f51",
+        "canonical_ref": "LOC-009",
+        "entity_kind": "POPULATION_AGGREGATE",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "count": 1000,
+          "employed": 500,
+          "food_security": 75.0,
+          "labor_force": 550,
+          "settlement_ref": "LOC-009",
+          "territory_ref": "TER-009",
+          "unemployed": 50,
+          "welfare_index": 70.0
+        },
+        "canonical": {
+          "id": "LOC-009",
+          "name": "LOC-009",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "CITIES"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:population_aggregate:a7558c4c-59f0-4d9d-96f2-7c4ed90ddd10",
+        "canonical_ref": "LOC-007",
+        "entity_kind": "POPULATION_AGGREGATE",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "count": 1000,
+          "employed": 500,
+          "food_security": 75.0,
+          "labor_force": 550,
+          "settlement_ref": "LOC-007",
+          "territory_ref": "TER-007",
+          "unemployed": 50,
+          "welfare_index": 70.0
+        },
+        "canonical": {
+          "id": "LOC-007",
+          "name": "LOC-007",
+          "domain": "Referência canônica",
+          "type": "REFERENCE",
+          "spoiler_level": 0,
+          "atlas_visibility": "GLOBAL",
+          "location_refs": [],
+          "territory_refs": [],
+          "biome_refs": [],
+          "route_refs": [],
+          "layer_refs": [
+            "CITIES"
+          ],
+          "geometry": null
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      }
+    ],
+    "LIVE_FACTIONS": [
+      {
+        "entity_runtime_id": "rt:faction_runtime:2213e439-a438-4c6d-9702-c1a88d835bc5",
+        "canonical_ref": "FAC-003",
+        "entity_kind": "FACTION_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "faction_ref": "FAC-003",
+          "influence": 50.0,
+          "influence_not_sovereignty": true,
+          "security": 50.0,
+          "stability": 50.0,
+          "territory_ref": "TER-010",
+          "treasury": 1000.0
+        },
+        "canonical": {
+          "id": "FAC-003",
+          "name": "Conselho de Convergência",
+          "domain": "facções",
+          "type": "OPERATIONAL_NODE",
+          "spoiler_level": 0,
+          "atlas_visibility": "LOCAL",
+          "location_refs": [
+            "LOC-001"
+          ],
+          "territory_refs": [
+            "TER-001"
+          ],
+          "biome_refs": [
+            "BIO-002",
+            "BIO-007",
+            "BIO-010"
+          ],
+          "route_refs": [
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "layer_refs": [
+            "FACTIONS"
+          ],
+          "geometry": {
+            "longitude": 0.0,
+            "latitude": 12.05,
+            "altitude_m": 540,
+            "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+            "precision_class": "P4",
+            "authority": "EXACT"
+          }
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:faction_runtime:22e5b355-32eb-4cb2-a0e3-e01f44383868",
+        "canonical_ref": "FAC-001",
+        "entity_kind": "FACTION_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "faction_ref": "FAC-001",
+          "influence": 50.0,
+          "influence_not_sovereignty": true,
+          "security": 50.0,
+          "stability": 50.0,
+          "territory_ref": "TER-001",
+          "treasury": 1000.0
+        },
+        "canonical": {
+          "id": "FAC-001",
+          "name": "Árvores Anciãs",
+          "domain": "facções",
+          "type": "OPERATIONAL_NODE",
+          "spoiler_level": 0,
+          "atlas_visibility": "LOCAL",
+          "location_refs": [
+            "LOC-001"
+          ],
+          "territory_refs": [
+            "TER-001"
+          ],
+          "biome_refs": [
+            "BIO-002",
+            "BIO-007",
+            "BIO-010"
+          ],
+          "route_refs": [
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "layer_refs": [
+            "FACTIONS"
+          ],
+          "geometry": {
+            "longitude": 0.0,
+            "latitude": 12.05,
+            "altitude_m": 540,
+            "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+            "precision_class": "P4",
+            "authority": "EXACT"
+          }
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      },
+      {
+        "entity_runtime_id": "rt:faction_runtime:dda8cfbf-1d7d-4423-84aa-3566b3bcb489",
+        "canonical_ref": "FAC-002",
+        "entity_kind": "FACTION_RUNTIME",
+        "origin": "CANONICAL_BACKED",
+        "lifecycle": "ACTIVE",
+        "version": 0,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "faction_ref": "FAC-002",
+          "influence": 50.0,
+          "influence_not_sovereignty": true,
+          "security": 50.0,
+          "stability": 50.0,
+          "territory_ref": "TER-003",
+          "treasury": 1000.0
+        },
+        "canonical": {
+          "id": "FAC-002",
+          "name": "Reis Magos",
+          "domain": "facções",
+          "type": "OPERATIONAL_NODE",
+          "spoiler_level": 0,
+          "atlas_visibility": "LOCAL",
+          "location_refs": [
+            "LOC-001"
+          ],
+          "territory_refs": [
+            "TER-001"
+          ],
+          "biome_refs": [
+            "BIO-002",
+            "BIO-007",
+            "BIO-010"
+          ],
+          "route_refs": [
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "layer_refs": [
+            "FACTIONS"
+          ],
+          "geometry": {
+            "longitude": 0.0,
+            "latitude": 12.05,
+            "altitude_m": 540,
+            "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+            "precision_class": "P4",
+            "authority": "EXACT"
+          }
+        },
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      }
+    ],
+    "LIVE_ENVIRONMENT": [
+      {
+        "entity_runtime_id": "rt:structure:488239bb-32f1-4bfb-88b3-b5824a0612c5",
+        "canonical_ref": null,
+        "entity_kind": "STRUCTURE",
+        "origin": "RUNTIME_BORN",
+        "lifecycle": "DESTROYED",
+        "version": 6,
+        "updated_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "data": {
+          "active": false,
+          "atlas_exposure": "PLAYER_VISIBLE",
+          "burning": false,
+          "fire_intensity": 0.0,
+          "functional": false,
+          "integrity": 0.0,
+          "location_ref": "CIT-001",
+          "locked": false,
+          "name": "Ponte da Timeline",
+          "open": false,
+          "temperature": 20.0,
+          "wetness": 0.0,
+          "zone_ref": null
+        },
+        "canonical": null,
+        "authority": "TIMELINE_RUNTIME_STATE_NOT_CANON"
+      }
+    ],
+    "LIVE_EVENTS": [
+      {
+        "sequence": 2,
+        "event_id": "rt:event:7a812dd6-ff5e-45d7-ab41-7cadaa598535",
+        "event_type": "ROUTE_OPERATION_CHANGED",
+        "occurred_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "subjects": [
+          "rt:route_runtime:61edac5f-e63d-4645-8711-9030c1037ac5"
+        ],
+        "source": "SYSTEM_RECONCILIATION",
+        "authority": "IMMUTABLE_RUNTIME_EVENT"
+      },
+      {
+        "sequence": 1,
+        "event_id": "rt:event:1b0fd616-3f84-4ffb-86d6-1df372d356d3",
+        "event_type": "OBJECT_DAMAGE",
+        "occurred_at": {
+          "day": 0,
+          "tick": 0
+        },
+        "subjects": [
+          "rt:agent:755c241f-5508-4a89-a142-fbfa245fd17c",
+          "rt:structure:488239bb-32f1-4bfb-88b3-b5824a0612c5"
+        ],
+        "source": "ACTION",
+        "authority": "IMMUTABLE_RUNTIME_EVENT"
+      }
+    ],
+    "LIVE_RECOVERY": [
+      {
+        "recovery_id": "rt:recovery:bb712be4-2312-4e04-adea-3fe406db4876",
+        "target_ref": "rt:structure:488239bb-32f1-4bfb-88b3-b5824a0612c5",
+        "destroyed_at_day": 0,
+        "due_at_day": 7,
+        "status": "SCHEDULED",
+        "policy": "REGENERATE_7_UNIVERSE_DAYS",
+        "authority": "RUNTIME_RECOVERY_POLICY"
+      }
+    ],
+    "LIVE_ECOLOGY": [],
+    "LIVE_SOCIAL": {
+      "relationships": [],
+      "reputation": []
+    },
+    "LIVE_CAUSAL": [],
+    "LLM_METRICS": {
+      "visible": false
+    }
+  },
+  "security": {
+    "raw_llm_content_exposed": false,
+    "private_memory_exposed": false,
+    "hidden_canonical_overlays_removed": true,
+    "runtime_born_default_hidden_for_player": true
+  },
+  "projection_hash": "2dc3c3a820234f3651b3fcce47bd98e98191695b3991cf5dd05964aa6c395ad0"
+}

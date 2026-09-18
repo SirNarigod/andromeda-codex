@@ -1,0 +1,57 @@
+{
+  "record_id": "QUEST-TER-019-V1.0",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "LOCAL_AUDITABLE_QUEST_TEMPLATE",
+  "title": "Raizes que Engolem",
+  "locality": "SUB-019-002",
+  "anchor_reference": "EST-065 Sitio das Ruinas Cobertas, JOB-004 Investigador de campo",
+  "premise": "Raizes de crescimento anormalmente rapido ameacam colapsar uma secao recem-descoberta das Ruinas Cobertas.",
+  "phases": [
+    {
+      "id": "WELCOME",
+      "objective": "Aceitar a tarefa local e receber o briefing no Sitio das Ruinas Cobertas."
+    },
+    {
+      "id": "EVIDENCE",
+      "objective": "Investigar o crescimento das raizes e riscos estruturais."
+    },
+    {
+      "id": "DECISION",
+      "objective": "Escolher uma resposta local com custo documentado."
+    },
+    {
+      "id": "REPORT",
+      "objective": "Reportar a resolucao aos Guardioes da Mata."
+    }
+  ],
+  "resolutions": [
+    {
+      "id": "AVOID",
+      "title": "Isolamento da Area",
+      "effect": "A secao e isolada ate nova avaliacao.",
+      "local_consequence": "Risco cai, mas a descoberta fica sem estudo."
+    },
+    {
+      "id": "REPAIR",
+      "title": "Contencao de Raizes",
+      "effect": "Poda controlada permite exploracao segura.",
+      "local_consequence": "Consome recursos/tempo, mas resolve a causa."
+    },
+    {
+      "id": "ESCALATE_REPORT",
+      "title": "Escalonamento Formal",
+      "effect": "O caso e reportado aos Guardioes da Mata para decisao institucional.",
+      "local_consequence": "Resolucao mais lenta, mas gera registro formal."
+    }
+  ],
+  "evidence_rule": "Evidencia sustenta apenas relatorio local e reputacao contextual - nao identifica a civilizacao das ruinas como fato canonico sem portao autoral.",
+  "rewards": "reputacao contextual de runtime, acesso temporario e progressao pratica; nenhum item, titulo, territorio ou fato canonico.",
+  "prohibitions": [
+    "NO_OFFLINE_RESOLUTION",
+    "NO_CANON_PROMOTION",
+    "NO_NAMED_R2_APPEARANCE",
+    "NO_AUTHORIAL_DEATH",
+    "NO_ROOT_ESCALATION",
+    "NO_NAMED_HISTORICAL_CIVILIZATION"
+  ]
+}

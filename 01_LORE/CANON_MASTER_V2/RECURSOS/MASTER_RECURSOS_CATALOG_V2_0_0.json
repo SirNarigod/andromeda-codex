@@ -1,0 +1,96 @@
+{
+  "record_id": "MASTER-RECURSOS-CATALOG-V2.0.0",
+  "title": "Zonas de recurso oficiais do MASTER V2.0.1 (6 entradas)",
+  "provenance": {
+    "master_release": "ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE",
+    "master_release_zip_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "authority": "CANON_MASTER_V2_CONFIRMADO",
+    "source_files": [
+      "01_CANON/ANDROMEDA_CODEX_CANON_MASTER_V2_0_0.json (domain=Recursos)"
+    ],
+    "namespace_check": "Prefixo RSZ-XXX, sem colisão com MIN-/MAT-/RES- (já catalogados por nós).",
+    "note": "6 zonas de matéria-prima, cada uma alimentando um nó industrial real via industry_targets (ex. RSZ-001 Sistema Ferral de Kharveth -> POI-021/INDN-001 Fundição Ferral; RSZ-005 Recursos Marítimos de Navyr -> POI-030/INDN-003 Estaleiro de Navyr, que já confirmamos como EST-047)."
+  },
+  "count": 6,
+  "resource_zones": [
+    {
+      "id": "RSZ-001",
+      "name": "Sistema Ferral de Kharveth",
+      "resource": "material ferral",
+      "territory_refs": [
+        "TER-002"
+      ],
+      "anchor_poi": "POI-022",
+      "industry_targets": [
+        "POI-021"
+      ],
+      "access": "rota de montanha"
+    },
+    {
+      "id": "RSZ-002",
+      "name": "Sistema Subcristal",
+      "resource": "cristais e materiais subterrâneos",
+      "territory_refs": [
+        "TER-009"
+      ],
+      "anchor_poi": "POI-040",
+      "industry_targets": [
+        "POI-041"
+      ],
+      "access": "rota subterrânea controlada"
+    },
+    {
+      "id": "RSZ-003",
+      "name": "Solos Luminais de Produção",
+      "resource": "solos produtivos",
+      "territory_refs": [
+        "TER-011"
+      ],
+      "anchor_poi": "POI-005",
+      "industry_targets": [
+        "POI-006"
+      ],
+      "access": "rede rural"
+    },
+    {
+      "id": "RSZ-004",
+      "name": "Recursos Medicinais Rubros",
+      "resource": "insumos de pesquisa e medicina",
+      "territory_refs": [
+        "TER-007"
+      ],
+      "anchor_poi": "POI-034",
+      "industry_targets": [
+        "POI-037"
+      ],
+      "access": "corredor de pântano controlado"
+    },
+    {
+      "id": "RSZ-005",
+      "name": "Recursos Marítimos de Navyr",
+      "resource": "recursos marítimos",
+      "territory_refs": [
+        "TER-004"
+      ],
+      "anchor_poi": "POI-030",
+      "industry_targets": [
+        "POI-030"
+      ],
+      "access": "porto canônico"
+    },
+    {
+      "id": "RSZ-006",
+      "name": "Água de Convergência Luminal",
+      "resource": "água de bacia",
+      "territory_refs": [
+        "TER-001",
+        "TER-011"
+      ],
+      "anchor_poi": "POI-007",
+      "industry_targets": [
+        "POI-014"
+      ],
+      "access": "infraestrutura hídrica"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-010-003",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Poço da Corrente",
+  "parent_subregion": "SUB-010-003",
+  "parent_political_unit": "TER-010",
+  "function": "Ponto de afloramento intenso da Corrente Planetária, monitorado pelo Domínio.",
+  "notable_link": "MAG-003 Corrente Planetária",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-010-003",
+  "settlement_tier": "COMPLEXO",
+  "history": "O Poço recebeu esse nome porque a Corrente aflora ali com intensidade que os fundadores do Domínio compararam, na época, a olhar pra dentro de um poço sem fundo visível — um ponto de energia bruta forte demais pra ser canalizada com segurança por qualquer método ensinado na Academia da Vertente. O Domínio mantém vigilância constante ali há gerações, não pra explorar a energia, mas pra garantir que ninguém tente fazer isso de forma descontrolada.",
+  "sensory": "O chão ao redor do afloramento parece vibrar de forma quase visível, distorcendo levemente a imagem de qualquer coisa vista através dele, como calor subindo de pedra ao sol — só que o Poço fica permanentemente frio ao toque. Instrumentos de monitoramento rúnico ficam dispostos em círculo a uma distância segura, cada um registrando picos de intensidade que os guardiões comparam contra registros históricos guardados por gerações.",
+  "figures": [
+    {
+      "role": "Guardiã do Poço",
+      "name": "Sena Correntevigia",
+      "note": "Passou a vida adulta inteira monitorando o afloramento e é a maior autoridade viva sobre seus padrões de intensidade — reconhece, num vislumbre, quando algo está diferente do normal, embora nem sempre consiga explicar exatamente o que mudou."
+    },
+    {
+      "role": "Pesquisador visitante",
+      "name": "Othmar Vessendine",
+      "note": "Veio da Academia da Vertente com autorização formal pra estudar o afloramento de perto, convencido de que existe um quinto método de canalização, ainda não catalogado, capaz de lidar com a intensidade do Poço com segurança. Sena desconfia profundamente da ambição dele."
+    }
+  ],
+  "hook": "Othmar pediu autorização pra um experimento que exigiria se aproximar do Poço mais do que qualquer protocolo já permitiu — Sena registrou um pico de intensidade incomum na semana passada e não sabe se isso torna o experimento mais perigoso ainda ou se é justamente a oportunidade única que ele está esperando há meses.",
+  "detail": "Ninguém entra na área monitorada do Poço sem antes tocar uma pequena pedra rúnica fixada na entrada, que registra silenciosamente a presença de qualquer visitante — um sistema de segurança que o próprio Domínio instalou depois de um incidente nunca completamente explicado, décadas atrás, que os registros oficiais tratam com deliberada vagueza.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION", "NO_MAGIC_LAW_REWRITE"]
+}

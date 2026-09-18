@@ -1,0 +1,26 @@
+{
+  "record_id": "ANDROMEDA_AGENT_TASK_PACKET_V1",
+  "status": "SAFE_PRODUCTION_CONTEXT",
+  "authority_order": [
+    "R2",
+    "APPROVED_DERIVATION",
+    "TECHNICAL_REFERENCE"
+  ],
+  "inputs": [
+    "01_LORE/CONTENT_ROUTING_REGISTRY_V1.json",
+    "02_REGRAS/STELLAR_FOUNDATION/STELLAR_FOUNDATION_INDEX_V1_5.json"
+  ],
+  "constraints": [
+    "DO_NOT_RETCON_R2",
+    "DO_NOT_CREATE_CANON_FROM_IMPLEMENTATION",
+    "USE_ONE_CANONICAL_HOME",
+    "RETURN_PROPOSALS_TO_INBOX"
+  ],
+  "acceptance": [
+    "source hash present",
+    "spoiler policy respected",
+    "target niche present",
+    "no canon write"
+  ],
+  "consumer": "CODEX"
+}

@@ -1,0 +1,158 @@
+{
+  "record_id": "ANDROMEDA-STAGE16B-G16B-24-25-WATER-CLOSURE-V0.8.7",
+  "captured_at": "2026-08-23T19:20:00-03:00",
+  "supersedes": "AUTHORITY_G16B_05_STABILIZATION_V0_8_6.json",
+  "gates": ["G16B-24", "G16B-25"],
+  "status": "PASS",
+  "previous_status": {"G16B-24": "PARTIAL_EVIDENCE", "G16B-25": "PARTIAL_EVIDENCE"},
+
+  "gate_g16b_25": {
+    "requirement": "Deep water switches player/NPC/animal to swimming with higher stamina drain; zero-stamina water exhaustion uses the configured grace window and can result in defeat/death; ordinary non-water-capable vehicles are blocked from deep water.",
+    "status": "PASS",
+    "gap_found": {
+      "clause_missing": "ordinary non-water-capable vehicles are blocked from deep water",
+      "root_cause": "REPORT_WATER_TRAVERSAL never exposed actor_kind to the client; the adapter unconditionally routed to stage16a.water_traversal_effect(), which hardcodes actor_kind=\"PLAYER\" and always applies player stamina.",
+      "already_existing_and_untouched": "stage16a.vehicle_water_traversal() (arpg_vertical_slice_assembly_core.py) already existed, already delegated to water_traversal_sample(actor_kind=\"VEHICLE\", ...), and already applied zero player stamina. No new core rule was written; only the adapter's transport lacked a route to it.",
+      "classification_at_diagnosis": "AUTHORITY_EXISTS_GODOT_OBSERVATION_MISSING (transport gap, not an authority or implementation gap)"
+    },
+    "fix": {
+      "file": "12_AUTHORITY_BACKEND/andromeda_authority_adapter.py",
+      "function": "_report_water_traversal()",
+      "contract": {
+        "actor_kind_absent": "defaults to PLAYER, byte-identical to the pre-existing legacy route",
+        "actor_kind_PLAYER": "routes to stage16a.water_traversal_effect(...) -- unchanged",
+        "actor_kind_VEHICLE": "routes to stage16a.vehicle_water_traversal(...) -- zero player stamina applied",
+        "actor_kind_other": "rejected explicitly with UNSUPPORTED_WATER_TRAVERSAL_ACTOR_KIND, no silent fallback to PLAYER"
+      },
+      "untouched": [
+        "water_traversal_sample()", "water_traversal_effect()", "vehicle_water_traversal()",
+        "VEHICLE_MAX_WADE_DEPTH_M", "stamina formula", "grace/death/respawn", "physics", "vehicle controller"
+      ]
+    },
+    "observed": {
+      "vehicle_deep_water": "depth_m=1.0 (> VEHICLE_MAX_WADE_DEPTH_M=0.55) -> status=BLOCKED, reason=VEHICLE_WATER_TOO_DEEP",
+      "no_player_stamina_rule": "player stamina read before and after the VEHICLE report -- identical in both PASS and BLOCKED cases",
+      "cross_slot_note": "unrelated to this gate; not touched"
+    },
+    "new_checks_godot": [
+      "VEHICLE_DEEP_WATER_COMMAND_AUTHORITATIVE", "VEHICLE_DEEP_WATER_BLOCKED",
+      "VEHICLE_WATER_TOO_DEEP_STAGE16B_PASS", "VEHICLE_DEEP_WATER_NO_PLAYER_STAMINA_RULE"
+    ],
+    "new_unit_tests": {
+      "file": "12_AUTHORITY_BACKEND/tests/test_stage16b_authority_save_death_water.py",
+      "tests": [
+        "test_13_water_traversal_actor_kind_absent_preserves_legacy_player_route",
+        "test_14_water_traversal_actor_kind_player_matches_legacy_behavior",
+        "test_15_water_traversal_actor_kind_vehicle_routes_to_vehicle_water_traversal",
+        "test_16_water_traversal_actor_kind_vehicle_shallow_uses_traction_not_stamina",
+        "test_17_water_traversal_actor_kind_invalid_is_rejected_explicitly"
+      ]
+    },
+    "known_side_effect_fixed_without_relaxing_original_check": {
+      "check": "NO_COMMAND_REJECTIONS",
+      "cause": "andromeda_bridge.gd emits command_rejected for any non-PASS status, including the deliberate BLOCKED VEHICLE_WATER_TOO_DEEP result",
+      "fix": "the gate removes exactly the one expected VEHICLE_WATER_TOO_DEEP occurrence from _rejections right after asserting it; every other, genuinely unexpected rejection still fails the original, unmodified check"
+    }
+  },
+
+  "gate_g16b_24": {
+    "requirement": "Shallow rivers are traversable by player/NPC/animal and ordinary vehicles when depth permits; under-bridge shallow water remains traversable; stronger current increases living-actor stamina cost while vehicles use traction/speed penalty rather than stamina.",
+    "status": "PASS",
+    "scope": "Godot-side only. No adapter/core/canon change -- the actor_kind route opened for G16B-25 already carried every field this gate needed.",
+    "real_thresholds_used": {
+      "source": "01_RUNTIME/arpg_water_bag_survival_core.py",
+      "SHALLOW_DEPTH_M": 0.65,
+      "VEHICLE_MAX_WADE_DEPTH_M": 0.55,
+      "flow_class": {
+        "CALM": "flow_speed_mps < 0.45, factor 1.0",
+        "CURRENT": "flow_speed_mps < 1.15, factor 1.35",
+        "STRONG_CURRENT": "flow_speed_mps >= 1.15, factor 1.85"
+      }
+    },
+    "samples": {
+      "shallow_player_calm": {"depth_m": 0.3, "flow_speed_mps": 0.2, "distance_m": 1.0},
+      "under_bridge": {"depth_m": 0.3, "flow_speed_mps": 0.2, "distance_m": 1.0, "under_bridge": true},
+      "current_low": {"depth_m": 0.3, "flow_speed_mps": 0.2, "distance_m": 1.0},
+      "current_high": {"depth_m": 0.3, "flow_speed_mps": 1.2, "distance_m": 1.0},
+      "vehicle_shallow": {"depth_m": 0.3, "flow_speed_mps": 0.2, "distance_m": 1.0, "actor_kind": "VEHICLE"}
+    },
+    "observed": {
+      "shallow": "status=PASS, traversal.mode=WADE (not SWIM), traversal.shallow=true",
+      "under_bridge_shallow": "status=PASS, traversal.mode=WADE, traversal.under_bridge=true, no artificial block",
+      "current_comparison": {
+        "low": "flow_class=CALM",
+        "high": "flow_class=STRONG_CURRENT",
+        "result": "high.traversal.stamina_cost > low.traversal.stamina_cost, compared on the authoritative computed value returned in the response (the shared Godot-gate fixture's player stamina was already at 0 from an earlier deliberate exhaustion step; never artificially restored to force this)",
+        "real_avatar_mutation_proof": "12_AUTHORITY_BACKEND/tests/test_stage16b_authority_save_death_water.py::Stage16BWaterCurrentStaminaMutationTests, own fresh world with full stamina: stronger current spends strictly more real avatar stamina than the weaker one"
+      },
+      "vehicle_shallow": {
+        "status": "PASS", "mode": "WADE_VEHICLE",
+        "speed_factor_below_1": true, "traction_penalty_above_0": true,
+        "player_stamina_before_equals_after": true
+      }
+    },
+    "new_checks_godot": [
+      "SHALLOW_WATER_COMMAND_AUTHORITATIVE", "SHALLOW_WATER_TRAVERSABLE", "SHALLOW_WATER_WADE_MODE",
+      "UNDER_BRIDGE_SHALLOW_AUTHORITATIVE", "UNDER_BRIDGE_SHALLOW_TRAVERSABLE",
+      "WATER_CURRENT_LOW_AUTHORITATIVE", "WATER_CURRENT_HIGH_AUTHORITATIVE", "STRONGER_CURRENT_INCREASES_STAMINA_COST",
+      "VEHICLE_SHALLOW_COMMAND_AUTHORITATIVE", "VEHICLE_SHALLOW_TRAVERSABLE",
+      "VEHICLE_SHALLOW_SPEED_PENALTY", "VEHICLE_SHALLOW_TRACTION_PENALTY", "VEHICLE_SHALLOW_NO_PLAYER_STAMINA_RULE"
+    ],
+    "new_unit_tests": {
+      "file": "12_AUTHORITY_BACKEND/tests/test_stage16b_authority_save_death_water.py",
+      "tests": [
+        "test_18_shallow_water_is_wade_and_traversable",
+        "test_19_under_bridge_shallow_preserves_traversability",
+        "test_20_stronger_current_increases_authoritative_stamina_cost",
+        "test_21_vehicle_shallow_uses_speed_and_traction_penalty_not_stamina",
+        "Stage16BWaterCurrentStaminaMutationTests::test_01_stronger_current_costs_more_real_avatar_stamina"
+      ]
+    }
+  },
+
+  "files_changed_this_round": [
+    "12_AUTHORITY_BACKEND/andromeda_authority_adapter.py",
+    "12_AUTHORITY_BACKEND/tests/test_stage16b_authority_save_death_water.py",
+    "07_GODOT_ARPG_STAGE16B/tests/godot/authority_save_death_runtime_gate.gd"
+  ],
+  "runtime_or_canon_altered": false,
+
+  "verification": {
+    "authority_save_death_runtime_gate": [
+      {"world": "clean_1", "checks": 133, "passed": 133, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+      {"world": "clean_2", "checks": 133, "passed": 133, "failed": 0, "exit_code": 0, "stderr_bytes": 0}
+    ],
+    "test_stage16b_authority_save_death_water_suite": {"tests": 22, "passed": 22, "failed": 0},
+    "backend_validation_full_suite": {
+      "record": "12_AUTHORITY_BACKEND/reports/STAGE16B_AUTHORITY_BACKEND_VALIDATION_V0_8_0.json",
+      "status": "PASS",
+      "failures": []
+    },
+    "b03": {"checks": 357, "passed": 357, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+    "b04": {"checks": 156, "passed": 156, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+    "b11": {"checks": 343, "passed": 343, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+    "stage16a_checkpoint": {"entries": 724, "verified": 724, "changed": 0},
+    "master_v2_0_1_sha256": "6D9AC3CCE7DCF6A65FDCF73859C332A0211C1AF52D149077BEEF554BF7BBD0B2",
+    "godot_debugger": "0 errors / 0 warnings on every run in this record",
+    "open_functional_anomalies_this_block": 0
+  },
+
+  "housekeeping_procedure": {
+    "rule": "A clean-world test round must archive var/stage16b_world.sqlite* TOGETHER WITH var/saves/, never one without the other.",
+    "why": "A stray var/saves/<slot>.current.* left over from a prior world produced IntegrityError: cannot rotate an invalid current save on the very first REQUEST_SAVE of a freshly recreated world -- a residual-state mismatch, not a functional regression. Confirmed by reproducing the failure 3x with only the world db archived, then resolving it 2x consecutively once var/saves/ was archived alongside it.",
+    "status": "documented as a standing test procedure, not a code change"
+  },
+
+  "matrix_position": {
+    "pass": 21,
+    "partial_evidence": 7,
+    "promoted_this_record": ["G16B-24", "G16B-25"],
+    "partial_gates": ["G16B-09", "G16B-17", "G16B-18", "G16B-19", "G16B-26", "G16B-27", "G16B-28"],
+    "g16b_19": "PARTIAL_EVIDENCE - unchanged by this record",
+    "stage16b_global_status": "NOT_PASS",
+    "checkpoint_final_created": false,
+    "final_backup_created": false,
+    "stage17_started": false,
+    "water_bag_ttl_block_started": "PARTIAL - G16B-24/G16B-25 (water traversal/exhaustion) closed; G16B-26 (bag), G16B-27 (TTL), G16B-28 (ownership) not started"
+  }
+}

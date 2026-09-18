@@ -1,0 +1,73 @@
+{
+  "art_dependency": "NONE_PLACEHOLDER_READY",
+  "authority": "ANDROMEDA_ARPG_STAGE11_TECHNOLOGY_MACHINES_ROBOTICS",
+  "canon_mutations": 0,
+  "canonical_anchors": {
+    "automotive": "SYS-AUT-001",
+    "local_professions": [
+      "JOB-TEC-OFICINA-001",
+      "JOB-MAN-AGENTE-001",
+      "JOB-MFG-FAB-001",
+      "JOB-MFG-REPARO-001",
+      "JOB-MNT-CAMPO-001",
+      "JOB-TEC-RESFRIAMENTO-001",
+      "JOB-TEC-OFI-RESP-001",
+      "JOB-TEC-OFI-AUX-001"
+    ],
+    "robotics_governance_reference": "JOB-LOG-ROBOTICA-001",
+    "workshop": "POI-003"
+  },
+  "country_ref": "TER-011",
+  "determinism": "WORLD_SEED + STABLE_INPUTS; runtime UUID excluded from machine bootstrap identity",
+  "energy": {
+    "canon_guard": "Does not canonize fuel, battery chemistry, magic source or grid technology.",
+    "carrier_item_ref": "ITEM-ENERGY-CELL",
+    "contract_ref": "TECH-ENERGY-BUFFER-STAGE11",
+    "physical_source": "UNSPECIFIED_BY_TER_011_CANON"
+  },
+  "generated_at": "2026-08-18T22:02:13.016529+00:00",
+  "godot_required": false,
+  "machines": {
+    "bootstrap_workshop_machines": 3,
+    "energy": true,
+    "inventory_authority": "STAGE05_UNIVERSAL_ITEM_CORE",
+    "maintenance": true,
+    "profiles": 4,
+    "wear": true
+  },
+  "mobility_integration": {
+    "stage10_legacy_propulsion_marker_preserved": true,
+    "vehicle_energy_binding": true
+  },
+  "production": {
+    "outputs": [
+      "ITEM-CIRCUIT",
+      "ITEM-SERVO",
+      "ITEM-ACTUATOR",
+      "ITEM-ENERGY-CELL"
+    ],
+    "recipe_authority": "GAMEPLAY_DERIVED_REBALANCEABLE_NOT_CANON",
+    "recipes": 4
+  },
+  "project": "ANDRÔMEDA CÓDEX",
+  "record_id": "ARPG-TECH-MACHINES-ROBOTICS-CONTRACT-V1.2.0",
+  "robot_guard": {
+    "canonical_robotics_operator_distribution": [
+      "TER-001"
+    ],
+    "legal_status": "TECHNOLOGICAL_ASSET_NOT_NPC_NOT_LEGAL_WORKER",
+    "terras_livres_policy": "GAMEPLAY_DERIVED_SUPERVISION; no false canonical profession binding"
+  },
+  "robots": {
+    "actor_projection": "ROBOT / TECH_ASSET",
+    "inventory_authority": "STAGE05_UNIVERSAL_ITEM_CORE",
+    "profiles": 3,
+    "supervision_required": true,
+    "tasks": [
+      "LOGISTICS_TRANSFER"
+    ]
+  },
+  "stage": "11/23",
+  "status": "PASS",
+  "version": "V1.2.0"
+}

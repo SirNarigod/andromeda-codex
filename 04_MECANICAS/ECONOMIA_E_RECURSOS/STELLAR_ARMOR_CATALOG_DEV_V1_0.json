@@ -1,0 +1,215 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-ARMOR-CATALOG-DEV-V1.0",
+  "title": "Vestuário/Armaduras — catálogo compacto (1 peça por classe por tier extremo)",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "canonical_status": "GAMEPLAY_DERIVED_DEV",
+  "r2_guard": "Categoria 100% nova, sem precedente R2 (nenhum ART- cobre vestuário/armadura). Escopo deliberadamente compacto — 1 item por classe por tier BAIXO/ALTO (8 no total) — para não replicar o tamanho do catálogo de armas MAR. armor_bonus é um número simples de gameplay que soma ao eixo 'armor' já usado em power_budget/utility_budget; nenhum efeito de runa isolado é inventado.",
+  "prefix_note": "Prefixo VST- não colide com WPN-/RCP-/EQP-/MED-/AMMO-/RUNA- já usados no MAR/economia.",
+  "armors": [
+    {
+      "armor_id": "VST-001",
+      "name": "Couraça de Fronteira (leve)",
+      "class_name": "Nativos",
+      "tier": "BAIXO",
+      "armor_bonus": 10,
+      "inputs": [
+        {
+          "resource_id": "MAT-003",
+          "resource_name": "Couro de Manada"
+        }
+      ],
+      "produced_at": "EST-004",
+      "produced_at_name": "Oficina de Charneira",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 5.6,
+      "description": "Armadura baixa da classe Nativos, feita de Couro de Manada — concede +10 de bônus de armadura."
+    },
+    {
+      "armor_id": "VST-002",
+      "name": "Couraça de Fronteira (reforçada)",
+      "class_name": "Nativos",
+      "tier": "ALTO",
+      "armor_bonus": 20,
+      "inputs": [
+        {
+          "resource_id": "MAT-003",
+          "resource_name": "Couro de Manada"
+        },
+        {
+          "resource_id": "MAT-006",
+          "resource_name": "Osso Rúnico"
+        }
+      ],
+      "produced_at": "EST-004",
+      "produced_at_name": "Oficina de Charneira",
+      "price_tier": "ALTO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 14.0,
+      "description": "Armadura alta da classe Nativos, feita de Couro de Manada, Osso Rúnico — concede +20 de bônus de armadura."
+    },
+    {
+      "armor_id": "VST-003",
+      "name": "Uniforme de Guarnição",
+      "class_name": "Soldados",
+      "tier": "BAIXO",
+      "armor_bonus": 10,
+      "inputs": [
+        {
+          "resource_id": "MAT-001",
+          "resource_name": "Madeira de Copas"
+        },
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        }
+      ],
+      "produced_at": "EST-003",
+      "produced_at_name": "Forja Real de Kharveth",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "weight_kg": 6.8,
+      "description": "Armadura baixa da classe Soldados, feita de Madeira de Copas, Ferral Bruto — concede +10 de bônus de armadura."
+    },
+    {
+      "armor_id": "VST-004",
+      "name": "Blindagem de Guarnição",
+      "class_name": "Soldados",
+      "tier": "ALTO",
+      "armor_bonus": 20,
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        },
+        {
+          "resource_id": "MIN-TITAN",
+          "resource_name": "Titanita Cinzenta"
+        }
+      ],
+      "produced_at": "EST-003",
+      "produced_at_name": "Forja Real de Kharveth",
+      "price_tier": "ALTO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "weight_kg": 15.2,
+      "description": "Armadura alta da classe Soldados, feita de Ferral Bruto, Titanita Cinzenta — concede +20 de bônus de armadura."
+    },
+    {
+      "armor_id": "VST-005",
+      "name": "Chassi de Placa Leve",
+      "class_name": "Androids",
+      "tier": "BAIXO",
+      "armor_bonus": 10,
+      "inputs": [
+        {
+          "resource_id": "MIN-ROBOTIUM",
+          "resource_name": "Robotita Azul"
+        }
+      ],
+      "produced_at": "EST-019",
+      "produced_at_name": "Oficina de Fusão Tecnomágica",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ],
+      "weight_kg": 6.2,
+      "description": "Armadura baixa da classe Androids, feita de Robotita Azul — concede +10 de bônus de armadura."
+    },
+    {
+      "armor_id": "VST-006",
+      "name": "Chassi de Placa Reforçada",
+      "class_name": "Androids",
+      "tier": "ALTO",
+      "armor_bonus": 20,
+      "inputs": [
+        {
+          "resource_id": "MIN-ROBOTIUM",
+          "resource_name": "Robotita Azul"
+        },
+        {
+          "resource_id": "MIN-TITAN",
+          "resource_name": "Titanita Cinzenta"
+        }
+      ],
+      "produced_at": "EST-019",
+      "produced_at_name": "Oficina de Fusão Tecnomágica",
+      "price_tier": "ALTO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ],
+      "weight_kg": 14.6,
+      "description": "Armadura alta da classe Androids, feita de Robotita Azul, Titanita Cinzenta — concede +20 de bônus de armadura."
+    },
+    {
+      "armor_id": "VST-007",
+      "name": "Manto de Aprendiz",
+      "class_name": "Magos",
+      "tier": "BAIXO",
+      "armor_bonus": 10,
+      "inputs": [
+        {
+          "resource_id": "MAT-008",
+          "resource_name": "Pergaminho de Fibra"
+        }
+      ],
+      "produced_at": "EST-034",
+      "produced_at_name": "Academia da Vertente",
+      "price_tier": "BAIXO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ],
+      "weight_kg": 4.8,
+      "description": "Armadura baixa da classe Magos, feita de Pergaminho de Fibra — concede +10 de bônus de armadura."
+    },
+    {
+      "armor_id": "VST-008",
+      "name": "Manto Rúnico de Convergência",
+      "class_name": "Magos",
+      "tier": "ALTO",
+      "armor_bonus": 20,
+      "inputs": [
+        {
+          "resource_id": "MAT-008",
+          "resource_name": "Pergaminho de Fibra"
+        },
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        }
+      ],
+      "produced_at": "EST-044",
+      "produced_at_name": "Ateliê de Encantamento da Vertente",
+      "price_tier": "ALTO",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ],
+      "weight_kg": 13.2,
+      "description": "Armadura alta da classe Magos, feita de Pergaminho de Fibra, Cristal Rúnico — concede +20 de bônus de armadura."
+    }
+  ]
+}

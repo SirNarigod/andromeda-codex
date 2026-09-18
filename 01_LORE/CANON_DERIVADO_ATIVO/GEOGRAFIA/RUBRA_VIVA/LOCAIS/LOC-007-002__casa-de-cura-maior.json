@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-007-002",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Casa de Cura Maior",
+  "parent_subregion": "SUB-007-002",
+  "parent_political_unit": "TER-007",
+  "function": "Maior instalação de tratamento da confederação.",
+  "notable_link": "Casas de Cura (SUB-007-002)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-007-002",
+  "settlement_tier": "COMPLEXO",
+  "history": "A Casa de Cura Maior atende viajantes, trabalhadores e criaturas feridas. Sua fama vem de curar sem perguntar origem, mas a dívida acumulada ameaça fechar suas portas.",
+  "sensory": "Vapor de ervas cobre corredores; sinos pequenos avisam quando uma vida estabiliza.",
+  "hook": "Um paciente chega com marcas que parecem doença e runa ao mesmo tempo.",
+  "secondary_hook": "O tratamento pode salvar muitos, mas ainda não foi testado.",
+  "detail": "Quem não pode pagar oferece uma noite de trabalho ou uma história verdadeira.",
+  "figures": [
+    {
+      "role": "Doutora Selka",
+      "name": "Doutora Selka",
+      "note": "médica que recusa pacientes prioritários"
+    },
+    {
+      "role": "Timo Raiz",
+      "name": "Timo Raiz",
+      "note": "aprendiz que esconde um tratamento experimental"
+    }
+  ]
+}

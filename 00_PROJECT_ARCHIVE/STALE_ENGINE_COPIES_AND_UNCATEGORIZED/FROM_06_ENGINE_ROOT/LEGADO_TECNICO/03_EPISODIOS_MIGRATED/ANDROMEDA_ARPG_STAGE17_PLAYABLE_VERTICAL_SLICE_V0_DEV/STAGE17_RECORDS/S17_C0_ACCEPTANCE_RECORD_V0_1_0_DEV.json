@@ -1,0 +1,248 @@
+{
+  "record_identity": "S17_C0_ACCEPTANCE_RECORD_V0_1_0_DEV",
+  "created_at": "2026-08-28T17:30:18.5786038Z",
+  "stage": "STAGE17",
+  "process": "ETAPA_31_S17_C0_AUTHORITATIVE_INTERACTION_SPATIAL_BINDING_CONTRACT",
+  "status": "PASS",
+  "classification": "S17_C0_INTERACTION_SPATIAL_BINDING_CONTRACT_PASS",
+  "scope": {
+    "representative_target_class": "ENEMY",
+    "target_kind": "ACTOR",
+    "backend_source_changed": false,
+    "stage16b_source_changed": false,
+    "gameplay_authority_added_to_gdscript": false,
+    "c1_or_c2_started": false
+  },
+  "target_class_audit": [
+    {
+      "target_class": "RESOURCE",
+      "auth_ref": "GTH-*",
+      "auth_position": "NOT_PROJECTED_AS_METRIC_INTERACTION_POSITION",
+      "projection": "position_authority=GODOT_LOCAL_PLACEHOLDER_ONLY",
+      "godot_node": "ResourceNode",
+      "current_binding": "PRESENTATION_ONLY",
+      "suitable_for_c0": false,
+      "reason": "A real registry identity exists, but the client projection explicitly disclaims the Node position as authority."
+    },
+    {
+      "target_class": "NPC",
+      "auth_ref": "NPC-*",
+      "auth_position": "NO_INDIVIDUAL_METRIC_INTERACTION_POSITION_PROJECTED",
+      "projection": "Dialogue projection carries identity/content, not per-NPC territorial coordinates",
+      "godot_node": "InteractionTarget placeholder",
+      "current_binding": "REF_ONLY_PRESENTATION",
+      "suitable_for_c0": false,
+      "reason": "Country/city/block coordinates are not proven as an individual NPC interaction point."
+    },
+    {
+      "target_class": "ENEMY",
+      "auth_ref": "NPC-* hostile actor",
+      "auth_position": "movement.state(target_ref): iso_x_m/iso_y_m/altitude_m",
+      "projection": "snapshot.combat_targets[].position",
+      "godot_node": "CommonEnemy/AlphaEnemy greybox actors",
+      "current_binding": "INTERACTION_SPATIAL_BINDING_REGISTRY",
+      "suitable_for_c0": true,
+      "position_authority": "LIVING_CONTINUOUS_ISOMETRIC_MOVEMENT_RUNTIME"
+    },
+    {
+      "target_class": "GROUND_LOOT",
+      "auth_ref": "ground_loot_ref",
+      "auth_position": "Candidate/settled authority position exists when a live drop exists",
+      "projection": "Ground Loot snapshots/results",
+      "godot_node": "GroundLoot",
+      "current_binding": "B07 client projection",
+      "suitable_for_c0": false,
+      "reason": "No clean initial representative drop was guaranteed and the reachable auto-settle limitation is explicitly out of C0 scope."
+    },
+    {
+      "target_class": "DROPPED_BAG",
+      "auth_ref": "bag_ref",
+      "auth_position": "Death/recovery state position when a DroppedBag exists",
+      "projection": "B10 death/recovery snapshot",
+      "godot_node": "DroppedBag",
+      "current_binding": "STATE_DEPENDENT_PRESENTATION",
+      "suitable_for_c0": false,
+      "reason": "Requires an active death state, which is outside this process."
+    },
+    {
+      "target_class": "VENDOR",
+      "auth_ref": "vendor_ref",
+      "auth_position": "NO_INDIVIDUAL_METRIC_POSITION_PROJECTED",
+      "projection": "Vendor/economy state without a territorial interaction point",
+      "godot_node": "Vendor placeholder",
+      "current_binding": "LOCAL_PRESENTATION_ONLY",
+      "suitable_for_c0": false
+    },
+    {
+      "target_class": "INTERACTIVE_OBJECT",
+      "auth_ref": "target_ref",
+      "auth_position": "NO_METRIC_POSITION_PROJECTION_FOUND",
+      "projection": "None suitable for authoritative approach",
+      "godot_node": "InteractiveObject placeholder",
+      "current_binding": "LOCAL_PRESENTATION_ONLY",
+      "suitable_for_c0": false
+    }
+  ],
+  "binding_contract": {
+    "identity_source": "SERVER_AUTHORITATIVE_PROJECTION",
+    "position_source": "SERVER_AUTHORITATIVE_PROJECTION",
+    "required_fields": [
+      "target_ref",
+      "target_kind",
+      "position.iso_x_m",
+      "position.iso_y_m",
+      "position.altitude_m",
+      "identity.world_instance_id",
+      "position_authority"
+    ],
+    "coordinate_frame": "GLOBAL_TERRITORIAL_ISOMETRIC_METERS_SHARED_WITH_PLAYER_MOVEMENT_STATE",
+    "mapper": "AndromedaAuthoritySpaceMapper.authority_to_local",
+    "presentation_node_is_authority_source": false,
+    "gameplay_distance_authority": false,
+    "world_scoped": true,
+    "session_scoped": true,
+    "stale_policy": "snapshot_sequence <= last_sequence_for_ref is rejected",
+    "world_change_policy": "invalidate all bindings and wait for a fresh mapper anchor/projection",
+    "session_reconnect_policy": "invalidate on revoke/disconnect/reconnect-wait; rebuild only from a fresh snapshot",
+    "despawn_policy": "invalidate binding, hide/disable Node, cancel pending approach"
+  },
+  "live_evidence": {
+    "headless": {
+      "checks": 75,
+      "passed": 75,
+      "failed": 0,
+      "exit_code": 0,
+      "marker": "ANDROMEDA_STAGE17_C0_GATE: PASS",
+      "session_ref": "GODOT-STAGE17-C0-ENEMY-V010",
+      "world_instance_id": "rt:world:bd0f78f5-7018-4cc6-8f47-34f8f2875e47",
+      "target_ref": "NPC-01-01-01-003",
+      "target_ref_selection": "DISCOVERED_FROM_LIVE_SNAPSHOT_NOT_HARDCODED",
+      "target_authority_position": {
+        "iso_x_m": 137106.001094855,
+        "iso_y_m": -1336956.95467693,
+        "altitude_m": 0.0
+      },
+      "player_authority_p0": {
+        "iso_x_m": 137110.245095,
+        "iso_y_m": -1336956.954677,
+        "altitude_m": 0.0
+      },
+      "player_authority_p1": {
+        "iso_x_m": 137108.156776,
+        "iso_y_m": -1336956.954677,
+        "altitude_m": 0.0
+      },
+      "backend_distance_m": 2.155681,
+      "backend_range_m": 2.994,
+      "representative_action": "REQUEST_ATTACK",
+      "approach_requests": 1,
+      "approach_movement_commands": 1,
+      "per_frame_command_spam": false,
+      "projection_updates": 22,
+      "stale_projections_ignored": 1,
+      "reconciliations": 13,
+      "movement_rejections": 0,
+      "log": "STAGE17_RUNTIME_STATE/logs/S17_C0_HEADLESS_FINAL3.log",
+      "external_platform_diagnostic": "Godot headless on this Windows host prints 'Failed to read the root certificate store'; this is not a project/debugger finding and the gate completed with exit 0."
+    },
+    "editor_bridge": {
+      "checks": 75,
+      "passed": 75,
+      "failed": 0,
+      "target_ref": "NPC-01-01-01-007",
+      "target_ref_selection": "DISCOVERED_FROM_LIVE_SNAPSHOT_NOT_HARDCODED",
+      "backend_distance_m": 2.15568,
+      "backend_range_m": 2.994,
+      "approach_requests": 1,
+      "approach_movement_commands": 1,
+      "debugger_errors": 0,
+      "debugger_warnings": 0,
+      "controlled_stop_final_errors": [],
+      "renderer": "OpenGL 3.3 Compatibility",
+      "gpu": "NVIDIA GeForce GTX 1650"
+    },
+    "main_tscn": {
+      "status": "PASS",
+      "session_bind_http_status": 200,
+      "snapshot_http_status": 200,
+      "session_ref": "GODOT-STAGE17-PLAYABLE-V0-DEV-001",
+      "debugger_errors": 0,
+      "debugger_warnings": 0,
+      "controlled_stop_final_errors": []
+    }
+  },
+  "regressions": {
+    "S17_00": "22/22 PASS",
+    "S17_A_LIVE": "17/17 PASS",
+    "S17_A_FAILED_PATH": "9/9 PASS",
+    "S17_A_TOTAL": "26/26 PASS",
+    "S17_B1": "36/36 PASS",
+    "S17_B2": "73/73 PASS",
+    "B01": "54/54 PASS",
+    "G19": "71/71 PASS",
+    "COMBAT": "91/91 PASS",
+    "GROUND_LOOT": "NOT_REQUIRED_NOT_SHARED_PATH_CHANGED",
+    "GATHERING": "NOT_REQUIRED_NOT_SHARED_PATH_CHANGED"
+  },
+  "changed_files": {
+    "created": [
+      "13_GODOT_ARPG_STAGE17/scripts/interaction/interaction_spatial_binding_registry.gd",
+      "13_GODOT_ARPG_STAGE17/tests/godot/S17C0InteractionSpatialBindingGate.tscn",
+      "13_GODOT_ARPG_STAGE17/tests/godot/s17c0_interaction_spatial_binding_gate.gd"
+    ],
+    "modified": [
+      "13_GODOT_ARPG_STAGE17/scenes/Main.tscn",
+      "13_GODOT_ARPG_STAGE17/scripts/main.gd",
+      "13_GODOT_ARPG_STAGE17/scripts/interaction/combat_authority_client.gd",
+      "13_GODOT_ARPG_STAGE17/tests/godot/authority_combat_runtime_gate.gd",
+      "13_GODOT_ARPG_STAGE17/tests/godot/s17b2_movement_authority_gate.gd"
+    ],
+    "backend_files_modified": [],
+    "stage16b_files_modified": []
+  },
+  "read_only_baseline": {
+    "stage16b_status": "CLOSED_READ_ONLY",
+    "checkpoint_sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc",
+    "backup_sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc",
+    "checkpoint_size": 852793,
+    "backup_size": 852793,
+    "entry_count": 304,
+    "testzip": "CLEAN"
+  },
+  "status_flags": {
+    "S17_C0_INTERACTION_SPATIAL_BINDING_CONTRACT": "PASS",
+    "ENEMY_AUTHORITY_SPATIAL_BINDING_READY": true,
+    "S17_INTERACTION_APPROACH_AUTHORITY_MIGRATION": "PARTIAL_ONE_CLASS_ONLY",
+    "S17_COMBAT_CHASE_AUTHORITY_MIGRATION": "PENDING"
+  },
+  "pending_target_classes": [
+    "RESOURCE",
+    "NPC",
+    "GROUND_LOOT",
+    "DROPPED_BAG",
+    "VENDOR",
+    "INTERACTIVE_OBJECT"
+  ],
+  "blockers": [],
+  "housekeeping": {
+    "backend": "OFF",
+    "owned_backend_pid": 12384,
+    "shutdown_reason": "CONTROLLED_OWNER_PID_STOP",
+    "listener_8000_count": 0,
+    "godot_editor_pid_11316_preserved": true,
+    "stage17_runtime_state": "PRESERVED_IDENTIFIED",
+    "stage16b_checkpoint": "IMMUTABLE",
+    "stage16b_backup": "IMMUTABLE"
+  },
+  "watch_items": [
+    "Continuous moving-target combat chase is intentionally still pending.",
+    "Resource identity exists but its current client spatial projection remains GODOT_LOCAL_PLACEHOLDER_ONLY.",
+    "NPC per-actor metric spatial binding remains unavailable.",
+    "The Windows headless CA-store console diagnostic remains external to the clean Editor debugger."
+  ],
+  "next_recommendation": {
+    "process": "S17-C1_RESOURCE_AUTHORITY_POSITION_SOURCE_AND_PROJECTION_CONTRACT",
+    "then": "S17-C2_RESOURCE_AUTHORITATIVE_APPROACH_AND_REQUEST_GATHER",
+    "constraint": "Do not infer resource authority position from its Godot Node; expose/reuse only a real backend territorial projection."
+  }
+}

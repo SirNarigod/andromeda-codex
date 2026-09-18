@@ -1,0 +1,361 @@
+{
+  "record_id": "ARPG-STAGE08-VALIDATION-V0.9.0",
+  "checks": 47,
+  "passed": 47,
+  "failed": 0,
+  "status": "PASS",
+  "results": [
+    {
+      "name": "world_verify",
+      "status": "PASS",
+      "detail": {
+        "status": "PASS",
+        "failures": [],
+        "zones": 21,
+        "dungeons": 18,
+        "waypoints": 6,
+        "boundary_gates": 3,
+        "canonical_catalog_counts": {
+          "biomes": 10,
+          "climate_zones": 8,
+          "basins": 6,
+          "rivers": 7,
+          "water_bodies": 8,
+          "aquifers": 4,
+          "regions": 8,
+          "locations": 18,
+          "routes": 25,
+          "territories": 13
+        },
+        "playable_country_count": 1,
+        "authority": "ARPG_WORLD_BIOMES_GAMEPLAY_DERIVATION"
+      }
+    },
+    {
+      "name": "canon_count_biomes",
+      "status": "PASS",
+      "detail": 10
+    },
+    {
+      "name": "canon_count_climate_zones",
+      "status": "PASS",
+      "detail": 8
+    },
+    {
+      "name": "canon_count_basins",
+      "status": "PASS",
+      "detail": 6
+    },
+    {
+      "name": "canon_count_rivers",
+      "status": "PASS",
+      "detail": 7
+    },
+    {
+      "name": "canon_count_water_bodies",
+      "status": "PASS",
+      "detail": 8
+    },
+    {
+      "name": "canon_count_aquifers",
+      "status": "PASS",
+      "detail": 4
+    },
+    {
+      "name": "canon_count_regions",
+      "status": "PASS",
+      "detail": 8
+    },
+    {
+      "name": "canon_count_locations",
+      "status": "PASS",
+      "detail": 18
+    },
+    {
+      "name": "canon_count_routes",
+      "status": "PASS",
+      "detail": 25
+    },
+    {
+      "name": "canon_count_territories",
+      "status": "PASS",
+      "detail": 13
+    },
+    {
+      "name": "zones_exist",
+      "status": "PASS",
+      "detail": 21
+    },
+    {
+      "name": "one_country",
+      "status": "PASS",
+      "detail": [
+        "TER-011"
+      ]
+    },
+    {
+      "name": "country_is_ter011",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "primary_biome_all",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "major_biome_all",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "climate_all",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "hydrology_all",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "root_deep_present",
+      "status": "PASS",
+      "detail": 7
+    },
+    {
+      "name": "root_deep_overlay",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "root_deep_no_normal_city_flora",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "climate_alias_clamp",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "boundary_RTE-001",
+      "status": "PASS",
+      "detail": {
+        "boundary_locked": true,
+        "destination_id": "LOC-001",
+        "lock_reason": "ONE_COUNTRY_SCOPE_OTHER_COUNTRY_DEFERRED",
+        "name": "Eixo Ferroviário Varga–Lúminor",
+        "origin_id": "CIT-001",
+        "playability": "BOUNDARY_GATE_ONLY",
+        "route_ref": "RTE-001",
+        "source_authority": "MASTER_ROUTE_READ_ONLY",
+        "transport_modes": [
+          "rail_passenger",
+          "rail_mixed",
+          "rail_freight"
+        ],
+        "type": "rail"
+      }
+    },
+    {
+      "name": "boundary_RTE-003",
+      "status": "PASS",
+      "detail": {
+        "boundary_locked": true,
+        "destination_id": "CIT-002",
+        "lock_reason": "ONE_COUNTRY_SCOPE_OTHER_COUNTRY_DEFERRED",
+        "name": "Rota Fronteiriça Varga–Estação Oriental",
+        "origin_id": "CIT-001",
+        "playability": "BOUNDARY_GATE_ONLY",
+        "route_ref": "RTE-003",
+        "source_authority": "MASTER_ROUTE_READ_ONLY",
+        "transport_modes": [
+          "rail_mixed",
+          "road_wheeled"
+        ],
+        "type": "mixed_land_corridor"
+      }
+    },
+    {
+      "name": "boundary_RTE-013",
+      "status": "PASS",
+      "detail": {
+        "boundary_locked": true,
+        "destination_id": "LOC-007",
+        "lock_reason": "ONE_COUNTRY_SCOPE_OTHER_COUNTRY_DEFERRED",
+        "name": "Corredor Varga–Rubra-Viva",
+        "origin_id": "CIT-001",
+        "playability": "BOUNDARY_GATE_ONLY",
+        "route_ref": "RTE-013",
+        "source_authority": "MASTER_ROUTE_READ_ONLY",
+        "transport_modes": [
+          "road_wheeled",
+          "pack_or_caravan"
+        ],
+        "type": "frontier_road"
+      }
+    },
+    {
+      "name": "start_country",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "start_waypoint",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "overworld_start",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "temperature_bounds",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "precip_bounds",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "weather_deterministic",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "encounter_anchors",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "actor_authority",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "resource_stage09_gate",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "mobility_stage10_gate",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "dungeons_present",
+      "status": "PASS",
+      "detail": 18
+    },
+    {
+      "name": "waypoints_present",
+      "status": "PASS",
+      "detail": 6
+    },
+    {
+      "name": "undiscovered_reject",
+      "status": "PASS",
+      "detail": {
+        "status": "REJECTED",
+        "reason": "WAYPOINT_NOT_DISCOVERED",
+        "world_server_sequence": 1
+      }
+    },
+    {
+      "name": "discover_wp",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "fast_travel",
+      "status": "PASS",
+      "detail": {
+        "status": "PASS",
+        "profile_ref": "rt:player_profile:f9656c16-aed1-4e46-a254-914fd2922907",
+        "waypoint_ref": "WP-RUNTIME-STA-01",
+        "zone_ref": "ZONE-STA-01-BLK-02",
+        "coordinate": {
+          "altitude_m": 1728,
+          "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+          "latitude": 6.5,
+          "longitude": -18.2
+        },
+        "world_server_sequence": 3
+      }
+    },
+    {
+      "name": "travel_replay",
+      "status": "PASS",
+      "detail": {
+        "coordinate": {
+          "altitude_m": 1728,
+          "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+          "latitude": 6.5,
+          "longitude": -18.2
+        },
+        "profile_ref": "rt:player_profile:f9656c16-aed1-4e46-a254-914fd2922907",
+        "status": "PASS",
+        "waypoint_ref": "WP-RUNTIME-STA-01",
+        "zone_ref": "ZONE-STA-01-BLK-02",
+        "idempotent_replay": true,
+        "world_server_sequence": 3
+      }
+    },
+    {
+      "name": "dungeon_enter",
+      "status": "PASS",
+      "detail": {
+        "status": "PASS",
+        "profile_ref": "rt:player_profile:f9656c16-aed1-4e46-a254-914fd2922907",
+        "dungeon_ref": "DNG-STA-01-01-01",
+        "zone_ref": "ZONE-STA-01-BLK-01",
+        "dungeon": {
+          "darkness_level": 66,
+          "dungeon_ref": "DNG-STA-01-01-01",
+          "entrance_room_id": "DNG-STA-01-01-01-R01",
+          "final_room_id": "DNG-STA-01-01-01-R07",
+          "name": "Subestação Perdida 11",
+          "recommended_light": true,
+          "room_count": 7,
+          "root_deep": false,
+          "source_authority": "COUNTRY_SCALE_RUNTIME_DERIVED"
+        },
+        "world_server_sequence": 4
+      }
+    },
+    {
+      "name": "dungeon_exit",
+      "status": "PASS",
+      "detail": {
+        "status": "PASS",
+        "profile_ref": "rt:player_profile:f9656c16-aed1-4e46-a254-914fd2922907",
+        "zone_ref": "ZONE-STA-01-BLK-01",
+        "world_server_sequence": 5
+      }
+    },
+    {
+      "name": "snapshot_world",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "no_art_required",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "resume_state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "resume_health",
+      "status": "PASS",
+      "detail": null
+    }
+  ]
+}

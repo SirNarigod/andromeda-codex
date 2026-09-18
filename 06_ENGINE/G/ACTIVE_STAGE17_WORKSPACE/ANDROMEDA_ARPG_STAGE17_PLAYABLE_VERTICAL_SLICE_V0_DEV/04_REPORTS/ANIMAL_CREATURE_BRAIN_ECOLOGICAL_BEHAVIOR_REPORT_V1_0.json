@@ -1,0 +1,188 @@
+{
+  "record_id": "LIVING-SIM-ETAPA-07-ANIMAL-CREATURE-BRAIN-ECOLOGICAL-BEHAVIOR-REPORT-V1.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "process": "LIVING SIMULATION ENGINE",
+  "stage": "ETAPA_07_ANIMAL_CREATURE_BRAIN_AND_ECOLOGICAL_BEHAVIOR",
+  "version": "V1.0",
+  "baseline": {
+    "master_version": "V2.0.1",
+    "release": "ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE.zip",
+    "release_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "mutation_policy": "READ_ONLY_BASELINE"
+  },
+  "parent_checkpoint": {
+    "stage": "ETAPA_06",
+    "sha256": "81ef5a1cd28f7e6e7938400f7e25495dab1f7bdb4dd5bcdcb6d47727ccb79f76"
+  },
+  "canon_boundary": {
+    "fauna_snapshots_loaded": 64,
+    "canonical_fields_used": [
+      "species_ref",
+      "name",
+      "territory_ref",
+      "biome_refs",
+      "route/provenance references"
+    ],
+    "runtime_only_profile_fields": [
+      "diet",
+      "social_model",
+      "cognition_class",
+      "activity_cycle",
+      "need_thresholds",
+      "growth_rate",
+      "carrying_capacity",
+      "predation_rate",
+      "reproduction thresholds",
+      "range_excursion_allowed"
+    ],
+    "runtime_profiles_are_canon": false,
+    "canon_mutations": 0
+  },
+  "implemented": {
+    "individual_brain": [
+      "hunger",
+      "thirst",
+      "energy",
+      "threat",
+      "maturity",
+      "reproduction_drive",
+      "territory",
+      "biome",
+      "prey/resource opportunity"
+    ],
+    "actions": [
+      "ECO_FORAGE",
+      "ECO_DRINK",
+      "ECO_REST",
+      "ECO_FLEE",
+      "ECO_MIGRATE",
+      "ECO_HUNT",
+      "ECO_REPRODUCE",
+      "ECO_PATROL"
+    ],
+    "groups_and_hierarchy": true,
+    "territorial_memory": true,
+    "food_web_population_model": true,
+    "bounded_offline_ecology": true,
+    "extraordinary_offline_migration_blocked": true,
+    "birth_idempotency": true,
+    "protected_target_death_guard": true,
+    "nonnegative_biological_state_guards": true,
+    "fail_closed_integrity": true
+  },
+  "validation": {
+    "unit_regression": {
+      "tests": 354,
+      "passed": 354,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "stage06_extended_regression": {
+      "checks": 937,
+      "passed": 937,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "stage06_social_stress_regression": {
+      "threads": 16,
+      "operations": 12800,
+      "rumor_cases": 800,
+      "status": "PASS"
+    },
+    "stage07_extended": {
+      "checks": 2685,
+      "passed": 2685,
+      "failed": 0,
+      "scale": {
+        "species_profiles": 64,
+        "individuals_seeded": 256,
+        "groups": 43,
+        "food_web_links": 8,
+        "routine_ticks": 21,
+        "forage_cycles": 120,
+        "predation_cycles": 60,
+        "reproduction_cycles": 50,
+        "migration_cycles": 50,
+        "protected_predation_cases": 30,
+        "record_counts": {
+          "fauna_snapshots": 64,
+          "ecology_species_profiles": 64,
+          "ecology_observations": 310,
+          "territory_memories": 306,
+          "animal_groups": 43,
+          "animal_group_members": 129,
+          "ecology_decisions": 310,
+          "ecology_births": 50,
+          "ecology_populations_current": 64,
+          "ecology_population_deltas": 1239,
+          "food_web_links": 8,
+          "ecology_routine_ticks": 21
+        }
+      },
+      "status": "PASS"
+    },
+    "stage07_stress": {
+      "threads": 24,
+      "forage_attempts": 1920,
+      "forage_successes": 960,
+      "forage_rejections": 607,
+      "forage_version_conflicts": 353,
+      "forage_errors": 0,
+      "remaining_resource": 0.0,
+      "population_delta_ops": 6000,
+      "population_final": 6100,
+      "predation_contenders": 48,
+      "predation_successes": 1,
+      "predation_rejections": 46,
+      "predation_version_conflicts": 1,
+      "predation_errors": 0,
+      "birth_contenders": 64,
+      "unique_children": 1,
+      "birth_errors": 0,
+      "observation_fuzz_cases": 2000,
+      "fuzz_accepted": 442,
+      "fuzz_rejected": 1558,
+      "integrity_before_reopen": "PASS",
+      "integrity_after_reopen": "PASS",
+      "status": "PASS"
+    },
+    "static_audit": {
+      "checks": 107,
+      "passed": 107,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "coverage": {
+      "statements": 3119,
+      "covered_lines": 2764,
+      "percent": 88.62,
+      "ecology_brain_percent": 95.57,
+      "status": "PASS"
+    },
+    "demo": {
+      "scenario": "PREY_PRESSURE_TO_PREDATOR_MIGRATION_TO_SETTLEMENT_RESPONSE",
+      "status": "PASS"
+    }
+  },
+  "corrections": {
+    "detected": 6,
+    "fixed": 6,
+    "open": 0,
+    "ledger": "04_REPORTS/CORRECTION_LEDGER_V1_0.json"
+  },
+  "governance": {
+    "baseline_file_mutations": 0,
+    "new_canonical_namespaces": 0,
+    "backup_created": false,
+    "working_package_only": true
+  },
+  "scope_limits": [
+    "Behavioral ecology traits remain runtime-only until explicitly authored/canonized.",
+    "No full climate/weather simulation producer yet; climate enters only through supplied runtime factors.",
+    "No geometry/pathfinding/animation/physics engine integration yet.",
+    "No real-time distributed shared-world ecology reconciliation yet.",
+    "No object/environment reactive system yet."
+  ],
+  "stage_status": "ANIMAL_CREATURE_BRAIN_ECOLOGICAL_BEHAVIOR_FUNCTIONAL_AND_VALIDATED",
+  "status": "PASS"
+}

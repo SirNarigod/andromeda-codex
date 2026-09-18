@@ -1,0 +1,59 @@
+{
+  "record_id": "STELLAR-CAUSALITY-LAW-V1.1",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.1",
+  "status": "ACTIVE_R2_COMPATIBLE_DERIVATION",
+  "supersedes": "STELLAR_CAUSALITY_LAW_V1_0",
+  "authority": {
+    "scope": "CAUSAL_INTERPRETATION_AND_RUNTIME_AUDIT",
+    "r2": "READ_ONLY_NARRATIVE_ORIGIN",
+    "runtime": "BOUNDED_DETERMINISTIC_AUDITABLE",
+    "canon": "READ_ONLY"
+  },
+  "dependencies": [
+    "STELLAR_CANON_CONSTITUTION_V1_1.json",
+    "STELLAR_LIFE_DEATH_REBIRTH_LAW_V1_1.json",
+    "STELLAR_ROOT_PROGRESSION_LAW_V1_0.json",
+    "STELLAR_ECONOMY_ECOLOGY_TIME_LAW_V1_1.json",
+    "STELLAR_PROGRESSION_QUEST_CONSEQUENCE_LAW_V1_1.json",
+    "STELLAR_INFORMATION_MEMORY_LAW_V1_1.json",
+    "STELLAR_LIVING_CONTENT_INTEGRATION_LAW_V1_3.json",
+    "STELLAR_UE5_BALANCE_BOUNDARY_LAW_V1_0.json"
+  ],
+  "event_contract": {
+    "required_fields": ["event_id", "parent_event_id_or_root_reason", "actor_ref", "scope", "material_cost_or_risk", "evidence_refs", "allowed_effects", "created_at"],
+    "scope_order": ["INDIVIDUAL", "LOCAL", "REGIONAL", "PLANETARY", "NARRATIVE_SEALED"],
+    "authorial_gate_required_for": ["IRREVERSIBLE_EFFECT", "REGIONAL_OR_PLANETARY_ESCALATION", "SOVEREIGNTY_CHANGE", "AUTHORIAL_DEATH", "SEALED_EPISODE_EFFECT", "ROOT_PHASE_TRANSITION", "CANON_PROMOTION"],
+    "bounded_runtime": {"causal_depth_max": 8, "global_derived_budget_max": 64, "offline_major_change": "BLOCKED"}
+  },
+  "invariants": [
+    "EVERY_MATERIAL_CHANGE_HAS_A_TRACEABLE_ORIGIN",
+    "EVERY_MATERIAL_CHANGE_HAS_COST_RISK_OR_OPPORTUNITY",
+    "EVIDENCE_AND_SCOPE_TRAVEL_WITH_THE_EVENT",
+    "SUCCESS_NEVER_HIDES_MATERIAL_COSTS",
+    "RECOVERY_PRESERVES_HISTORY_AND_DOES_NOT_ERASE_HARM",
+    "NARRATIVE_PROTECTION_OVERRIDES_AUTOMATION",
+    "R2_AND_AUTHORIAL_GATES_OVERRIDE_RUNTIME"
+  ],
+  "prohibitions": [
+    "NO_EFFECT_WITHOUT_PARENT_EVENT_OR_ROOT_REASON",
+    "NO_UNAUDITED_GLOBAL_CHANGE_FROM_LOCAL_EVENT",
+    "NO_OFFLINE_DEATH_OR_MAJOR_ESCALATION",
+    "NO_AUTOMATIC_SOVEREIGNTY_OR_CANON_CHANGE",
+    "NO_PRE_S01E08_AMADON_CONTACT",
+    "NO_UNGATED_ROOT_IRREVERSIBILITY",
+    "NO_LLM_CAUSAL_AUTHORITY"
+  ],
+  "simulation_effects": [
+    "LivingSim may emit local causal ledgers for ecology, economy, relations, resources and quests.",
+    "Living Scale may aggregate permitted local traces without converting influence into sovereignty.",
+    "UE5 may persist event metadata and surface consequences, but imported runtime state remains non-canonical.",
+    "Recoverable destruction may schedule recovery only when the relevant ecology and territory rules allow it."
+  ],
+  "allowed_states": ["ROOT_EVENT", "DERIVED_EVENT", "DEFERRED", "RECOVERY_SCHEDULED", "NARRATIVE_PROTECTED", "AWAITING_AUTHORIAL_GATE", "REJECTED"],
+  "story_generators": [
+    "Uma rota reparada redistribui trabalho e rumor, revelando que a comunidade dependia de um contrato injusto.",
+    "Uma solução rápida salva uma oficina, mas deixa um resíduo material que transforma a próxima escolha em dilema.",
+    "A recuperação de um lugar devolve sua função, não a confiança de quem sobreviveu à perda."
+  ]
+}

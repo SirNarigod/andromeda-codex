@@ -1,0 +1,29 @@
+{
+  "record_identity": "S17_C3R5_INVALIDATED_RUNS_V0_1_0_DEV",
+  "created_at_utc": "2026-08-29T15:58:58.7670295Z",
+  "invalidated_runs": [
+    {
+      "run": "S17_B1_COORDINATE_MAPPING_SANDBOXED",
+      "observed_gate_result": "36/36 PASS",
+      "invalidated": true,
+      "reason": "Godot could not read the Windows root certificate store inside the sandbox and emitted an engine ERROR.",
+      "evidence": "STAGE17_RUNTIME_STATE/evidence/S17_C3R5_B1_GODOT.log",
+      "corrective_action": "Reran the same gate outside the sandbox with no source or runtime repair.",
+      "replacement_run": "STAGE17_RUNTIME_STATE/evidence/S17_C3R5_B1_GODOT_CLEAN.log",
+      "replacement_result": "36/36 PASS; exit 0; no error/warning"
+    }
+  ],
+  "failed_but_not_invalidated_runs": [
+    {
+      "run": "S17_C2_RESOURCE_AUTHORITATIVE_APPROACH_GATHER",
+      "result": "86/91 FAIL",
+      "evidence": "STAGE17_RUNTIME_STATE/evidence/S17_C3R5_C2_GODOT_CLEAN.log",
+      "classification": "VALID_FAILURE_EVIDENCE",
+      "reason": "The blocker setup destination was rejected by local NavigationAgent before authority movement submission; fixing it requires a prohibited source change.",
+      "automatic_retry": false
+    }
+  ],
+  "apply_attempts": 1,
+  "apply_invalidated": false,
+  "apply_result": "RECOVERY_APPLIED"
+}

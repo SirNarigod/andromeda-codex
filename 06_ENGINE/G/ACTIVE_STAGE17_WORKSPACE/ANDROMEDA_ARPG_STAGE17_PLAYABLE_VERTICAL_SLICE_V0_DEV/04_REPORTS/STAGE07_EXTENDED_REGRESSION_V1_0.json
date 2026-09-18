@@ -1,0 +1,35 @@
+{
+  "record_id": "LIVING-SIM-ETAPA-07-EXTENDED-VALIDATION-V1.0",
+  "checks": 2685,
+  "passed": 2685,
+  "failed": 0,
+  "elapsed_seconds": 2.517,
+  "scale": {
+    "species_profiles": 64,
+    "individuals_seeded": 256,
+    "groups": 43,
+    "food_web_links": 8,
+    "routine_ticks": 21,
+    "forage_cycles": 120,
+    "predation_cycles": 60,
+    "reproduction_cycles": 50,
+    "migration_cycles": 50,
+    "protected_predation_cases": 30,
+    "record_counts": {
+      "fauna_snapshots": 64,
+      "ecology_species_profiles": 64,
+      "ecology_observations": 310,
+      "territory_memories": 306,
+      "animal_groups": 43,
+      "animal_group_members": 129,
+      "ecology_decisions": 310,
+      "ecology_births": 50,
+      "ecology_populations_current": 64,
+      "ecology_population_deltas": 1239,
+      "food_web_links": 8,
+      "ecology_routine_ticks": 21
+    }
+  },
+  "failures": [],
+  "status": "PASS"
+}

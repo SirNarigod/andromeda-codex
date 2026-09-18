@@ -1,0 +1,38 @@
+{
+  "record_id": "ARPG-AUTHORIAL-DECISIONS-V0.1.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "branch": "ANDROMEDA_ARPG_FOUNDATION_V0_1_0_DEV",
+  "status": "AUTHOR_APPROVED",
+  "decisions": {
+    "playable_character_model": {
+      "choice": "D",
+      "value": "PLAYER_CREATED_PLUS_CANONICAL_CHARACTERS",
+      "rule": "Custom player characters and canonical characters are supported; canon remains protected."
+    },
+    "class_system": {
+      "choice": "D",
+      "value": "EMERGENT_FROM_PLAYER_CHOICES",
+      "rule": "No mandatory fixed traditional class at character creation; build identity emerges from equipment, skills, progression and choices."
+    },
+    "primary_control": {
+      "choice": "A",
+      "value": "MOUSE_DRIVEN_DIABLO_II_STYLE",
+      "rule": "Point-and-click / mouse-driven movement and combat interaction is the primary control contract."
+    },
+    "development_network_scope": {
+      "choice": "C",
+      "value": "SINGLE_PLAYER_FIRST_MULTIPLAYER_READY",
+      "rule": "First playable target is single-player; authority/state contracts must not block later multiplayer."
+    },
+    "itemization": {
+      "choice": "C",
+      "value": "ANDROMEDA_IDENTITY_ON_DIABLO_II_INSPIRED_MATH",
+      "rule": "Own rarity names, sockets and item rules; use genre-proven mathematical structure only as a reference."
+    },
+    "art_gate": {
+      "value": "ART_LAST",
+      "rule": "Concept art/final visual production remains blocked until Stage 17 pre-art gate passes."
+    }
+  },
+  "canon_mutation_authority": "NONE_IN_THIS_RECORD"
+}

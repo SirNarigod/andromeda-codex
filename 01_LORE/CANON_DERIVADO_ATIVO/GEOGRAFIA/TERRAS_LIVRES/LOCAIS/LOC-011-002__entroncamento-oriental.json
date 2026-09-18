@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-011-002",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Entroncamento Oriental",
+  "parent_subregion": "SUB-011-002",
+  "parent_political_unit": "TER-011",
+  "function": "Ponto de encontro de rotas comerciais que cruzam o Corredor Oriental.",
+  "notable_link": "Corredor Oriental (SUB-011-002)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-011-002",
+  "settlement_tier": "POSTO",
+  "history": "O Entroncamento Oriental nasceu de uma ponte improvisada sobre três rotas de caravana. Seu mercado muda de lugar conforme as chuvas e ninguém reconhece um comerciante pelo mesmo nome por duas estações.",
+  "sensory": "Rodas rangem na lama; bandeiras remendadas marcam poços e perigos que não aparecem em mapas.",
+  "hook": "Uma caravana desaparecida deixou pegadas que terminam no meio da estrada.",
+  "secondary_hook": "Cira identifica o símbolo de uma rota que deveria estar fechada.",
+  "detail": "A taxa de passagem é uma ferramenta compartilhada com o próximo viajante.",
+  "figures": [
+    {
+      "role": "Cira Três-Rotas",
+      "name": "Cira Três-Rotas",
+      "note": "guia que vende caminhos honestos"
+    },
+    {
+      "role": "Meco",
+      "name": "Meco",
+      "note": "negociante que compra promessas futuras"
+    }
+  ]
+}

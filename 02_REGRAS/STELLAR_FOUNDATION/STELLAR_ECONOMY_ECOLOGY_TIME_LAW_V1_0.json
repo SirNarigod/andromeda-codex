@@ -1,0 +1,14 @@
+{
+  "record_id": "STELLAR-ECONOMY-ECOLOGY-TIME-LAW-V1.0",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.0",
+  "status": "AUTHORIAL_RUNTIME_OVERLAY",
+  "authority": {"scope": "WORLD_CONTINUITY", "numeric_values": "RUNTIME_ONLY", "offline": "ROUTINE_SAFE_ONLY"},
+  "dependencies": ["STELLAR_COSMOLOGY_CANON_V1_0.json", "STELLAR_CAUSALITY_LAW_V1_0.json", "../ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/02_CONTRACTS/SYSTEMIC_ECONOMY_FACTIONS_POPULATION_CONTRACT_V1_0.json"],
+  "invariants": ["SCARCITY_HAS_CAUSES", "EXTRACTION_CREATES_RESTORATION_DEBT", "POPULATION_AND_ECOLOGY_ARE_LINKED", "TIME_PASSES_WITH_AUDITABLE_CONSEQUENCES", "OFFLINE_BLOCKS_DEATH_DESTRUCTION_AND_MAJOR_ESCALATION", "NUMERIC_RUNTIME_VALUES_ARE_NOT_CANON"],
+  "prohibitions": ["NO_INFINITE_RESOURCE_LOOP", "NO_ECOLOGICAL_RECOVERY_WITHOUT_TIME_OR_COST", "NO_OFFLINE_WAR_OR_SOVEREIGNTY_SHIFT", "NO_PRICE_OR_POPULATION_PROMOTION_BY_RUNTIME"],
+  "simulation_effects": ["Production, consumption, migration pressure, climate response and ecological recovery feed each other.", "Resource depletion creates route, labor and faction consequences before it becomes a simple failure state.", "Offline advances only routine-safe economy and aggregate life cycles."],
+  "allowed_states": ["ABUNDANT", "BALANCED", "STRESSED", "SCARCE", "SCARRED", "RECOVERING", "ROUTINE_OFFLINE"],
+  "story_generators": ["Uma colheita salva a economia local e desestabiliza a bacia que a tornou possível.", "Uma migração é congelada offline, deixando uma cidade diante de uma decisão que não pode ser automatizada.", "A recuperação de uma floresta exige devolver trabalho e poder a uma comunidade antes marginalizada."],
+  "compatibility": {"population_economy_contract": "PRESERVED", "weather": "DETERMINISTIC_WITHIN_CANONICAL_CLIMATE"}
+}

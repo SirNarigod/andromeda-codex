@@ -1,0 +1,40 @@
+{
+  "version": "V0.1.8",
+  "status": "PASS_STATIC_AND_PERFORMANCE_MODEL",
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1",
+  "tests": {
+    "velurio_repath_throttle": {
+      "status": "PASS",
+      "result": "repath only when path missing/target moved enough and cooldown elapsed"
+    },
+    "floor_collision_storm_removed": {
+      "status": "PASS",
+      "result": "floor/slide collision no longer resets repath cooldown per frame"
+    },
+    "stall_recovery": {
+      "status": "PASS",
+      "result": "confirmed horizontal stall clears path after 0.55s while remaining rate-limited"
+    },
+    "wildlife_astar_cost": {
+      "status": "PASS",
+      "result": "wildlife approach candidates reduced 72 -> 24 per request"
+    },
+    "stationary_target_model": {
+      "status": "PASS",
+      "result": "approx 1656 -> 24 candidate searches over 10s stationary chase"
+    },
+    "left_click_area_transition": {
+      "status": "PASS",
+      "result": "left click on dungeon enter/exit walks to transition and auto-uses it"
+    },
+    "right_click_contract": {
+      "status": "PASS",
+      "result": "right click remains move on empty ground + contextual interaction/attack"
+    },
+    "regression_contracts": {
+      "status": "PASS",
+      "result": "door/chair toggle, hover, river/bridge, 2s auto-attack preserved"
+    }
+  },
+  "note": "Final visual/performance validation must run in user Godot 4.7.1."
+}

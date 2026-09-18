@@ -1,0 +1,14 @@
+{
+  "record_id": "STELLAR-CONTENT-ROUTING-CONSTITUTION-V1.2",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.2",
+  "status": "ACTIVE_R2_COMPATIBLE_DERIVATION",
+  "supersedes": "STELLAR_CONTENT_ROUTING_CONSTITUTION_V1_1",
+  "authority": {"scope": "CONTENT_ORGANIZATION", "r2": "READ_ONLY_ORIGIN"},
+  "dependencies": ["STELLAR_CANON_CONSTITUTION_V1_1.json", "STELLAR_FOUNDATION_INDEX_V1_8.json", "../../01_LORE/CONTENT_ROUTING_REGISTRY_V3.json"],
+  "invariants": ["ONE_CANONICAL_HOME_PER_CONTENT_ITEM", "ROUTING_REQUIRES_AUTHORITY_AND_PROVENANCE", "SIMULATION_READS_BUT_NEVER_WRITES_CANON", "EXTERNAL_TOOL_OUTPUT_IS_PENDING_DERIVATION", "PLAYABLE_TAXONOMY_IS_QUALITATIVE_UNTIL_BALANCE_APPROVAL"],
+  "prohibitions": ["NO_DUPLICATE_CANONICAL_COPY", "NO_RUNTIME_CANON_PROMOTION", "NO_EXTERNAL_IMPORT_CANON_WRITE", "NO_SEALED_CONTENT_EXPORT_BY_DEFAULT", "NO_NAMED_R2_PERSON_AS_DEFAULT_NPC"],
+  "simulation_effects": ["LivingSim and Living Scale read catalog references and filtered projections.", "Tool exports consume only permitted authority and spoiler scopes.", "Resource, profession, NPC and encounter catalogs resolve through one canonical document per catalog."],
+  "allowed_states": ["CANON_R2_CONFIRMADO", "CANON_DERIVADO_ATIVO", "PENDING_DERIVATION", "EVIDENCIA_TECNICA_NAO_CANONICA"],
+  "story_generators": ["Um recurso liga ecologia e trabalho sem virar um preço canônico.", "Um papel de NPC existe em muitas cenas sem copiar uma personagem R2.", "Um encontro cria risco local sem tornar fauna em inimigo por padrão."]
+}

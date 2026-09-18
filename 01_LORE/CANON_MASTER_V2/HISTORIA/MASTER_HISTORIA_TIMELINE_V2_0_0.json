@@ -1,0 +1,285 @@
+{
+  "record_id": "MASTER-HISTORIA-TIMELINE-V2.0.0",
+  "title": "Linha do tempo mestra oficial do MASTER V2.0.1 (32 eventos, TIM-001..032)",
+  "provenance": {
+    "master_release": "ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE",
+    "master_release_zip_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "source_files": [
+      "01_CANON/ANDROMEDA_CODEX_CANON_MASTER_V2_0_0.json (timeline[], TIM-001..032)"
+    ],
+    "authority": "CANON_MASTER_V2_CONFIRMADO",
+    "namespace_check": "Prefixo TIM-XXX, sem colisão com nosso namespace.",
+    "structure_note": "Linha do tempo mestra completa de Stellar, 32 eventos em ordem cronológica de codigo (nao necessariamente ordem temporal explicita - so 2 tem data exata: TIM-004=1732 APC, TIM-011=684 APC, ja confirmados na auditoria de seguranca). 4 eventos ja eram cobertos integralmente por nossos HIS-001..004 (R2) - cross-referenciados, nao duplicados. 8 nascimentos de personagens (TIM-014..021) cross-referenciados aos PER-XXX ja existentes; TIM-022/023 resolvem parcialmente o status PENDING de PER-009/010 (Daren e Meyra Vaarn) com um fato minimo (desaparecimento/morte), sem biografia extra inventada.",
+    "sensitive_content_guard": "TIM-030/031 (Amadon cria o Espinho-Negro / percebe a anomalia) e TIM-032 (Votakhel implanta a Raiz Profunda) sao FATOS CANONICOS DE FUNDO do proprio Master (spoiler_level=0 no pacote-fonte) - importados aqui como registro de linha do tempo, NAO como autorizacao para revelar/contatar Amadon em gameplay antes do Episodio 8 da Temporada 1. A restricao de timing de revelacao (BLOCKED_UNTIL_S01E08) ja registrada em 01_LORE/CANON_DERIVADO_ATIVO/FUNDAMENTOS/STELLAR_CONSEQUENCE_ENGINE_REGISTRY_DEV_V1_0.json permanece em vigor, intocada."
+  },
+  "count_total": 32,
+  "timeline": [
+    {
+      "id": "TIM-001",
+      "name": "Pacto de Convergência e início do calendário comum",
+      "date": null,
+      "date_status": "SEM_DATA_EXPLÍCITA_NO_BINDING",
+      "spoiler_level": 0,
+      "existing_his_ref": "HIS-001",
+      "note": "Pacto de Convergência - já coberto integralmente por HIS-001 (R2)."
+    },
+    {
+      "id": "TIM-002",
+      "name": "Formação da Confederação de Lúminor",
+      "date": null,
+      "date_status": "SEM_DATA_EXPLÍCITA_NO_BINDING",
+      "spoiler_level": 0,
+      "faction_or_territory_ref": "TER-001"
+    },
+    {
+      "id": "TIM-003",
+      "name": "Formação de Altavela",
+      "date": null,
+      "date_status": "SEM_DATA_EXPLÍCITA_NO_BINDING",
+      "spoiler_level": 0,
+      "faction_or_territory_ref": "TER-006"
+    },
+    {
+      "id": "TIM-004",
+      "name": "Fundação das Árvores Anciãs",
+      "date": "1732 APC",
+      "date_status": "DIRECT_CANON",
+      "spoiler_level": 0,
+      "faction_or_territory_ref": "FAC-001",
+      "date_confirmed": "1732 APC"
+    },
+    {
+      "id": "TIM-005",
+      "name": "Formação de Ortheon",
+      "date": null,
+      "date_status": "SEM_DATA_EXPLÍCITA_NO_BINDING",
+      "spoiler_level": 0,
+      "faction_or_territory_ref": "TER-003"
+    },
+    {
+      "id": "TIM-006",
+      "name": "Formação da Liga Subcristal",
+      "date": null,
+      "date_status": "SEM_DATA_EXPLÍCITA_NO_BINDING",
+      "spoiler_level": 0,
+      "faction_or_territory_ref": "TER-009"
+    },
+    {
+      "id": "TIM-007",
+      "name": "Formação de Rubra-Viva",
+      "date": null,
+      "date_status": "SEM_DATA_EXPLÍCITA_NO_BINDING",
+      "spoiler_level": 0,
+      "faction_or_territory_ref": "TER-007"
+    },
+    {
+      "id": "TIM-008",
+      "name": "Formação do Conselho de Convergência",
+      "date": null,
+      "date_status": "SEM_DATA_EXPLÍCITA_NO_BINDING",
+      "spoiler_level": 0,
+      "faction_or_territory_ref": "FAC-003"
+    },
+    {
+      "id": "TIM-009",
+      "name": "Guerra dos Veios Partidos",
+      "date": null,
+      "date_status": "SEM_DATA_EXPLÍCITA_NO_BINDING",
+      "spoiler_level": 0,
+      "existing_his_ref": "HIS-002",
+      "note": "Guerra dos Veios Partidos - já coberta integralmente por HIS-002 (R2)."
+    },
+    {
+      "id": "TIM-010",
+      "name": "Aceleração da atividade da Raiz Profunda",
+      "date": null,
+      "date_status": "SEM_DATA_EXPLÍCITA_NO_BINDING",
+      "spoiler_level": 0,
+      "note": "Relaciona-se ao nosso STELLAR_ROOT_CORRUPTION_GATE_DEV_V1_0.json (fase 57) - fato de fundo, não contradiz o portão autoral já registrado."
+    },
+    {
+      "id": "TIM-011",
+      "name": "Fundação dos Reis Magos",
+      "date": "684 APC",
+      "date_status": "DIRECT_CANON",
+      "spoiler_level": 0,
+      "faction_or_territory_ref": "FAC-002",
+      "date_confirmed": "684 APC"
+    },
+    {
+      "id": "TIM-012",
+      "name": "Primeira Zona Silenciosa moderna confirmada",
+      "date": null,
+      "date_status": "SEM_DATA_EXPLÍCITA_NO_BINDING",
+      "spoiler_level": 0
+    },
+    {
+      "id": "TIM-013",
+      "name": "Formação da Vigília Radicular",
+      "date": null,
+      "date_status": "SEM_DATA_EXPLÍCITA_NO_BINDING",
+      "spoiler_level": 0,
+      "faction_or_territory_ref": "FAC-004"
+    },
+    {
+      "id": "TIM-014",
+      "name": "Nascimento de Maelkar Enohar",
+      "date": null,
+      "date_status": "SEM_DATA_EXPLÍCITA_NO_BINDING",
+      "spoiler_level": 0,
+      "character_ref": "PER-008"
+    },
+    {
+      "id": "TIM-015",
+      "name": "Nascimento de Genes Arvath",
+      "date": null,
+      "date_status": "SEM_DATA_EXPLÍCITA_NO_BINDING",
+      "spoiler_level": 0,
+      "character_ref": "PER-004"
+    },
+    {
+      "id": "TIM-016",
+      "name": "Nascimento de Serverus Vaelkor",
+      "date": null,
+      "date_status": "SEM_DATA_EXPLÍCITA_NO_BINDING",
+      "spoiler_level": 0,
+      "character_ref": "PER-005"
+    },
+    {
+      "id": "TIM-017",
+      "name": "Nascimento de Ishara Veyn",
+      "date": null,
+      "date_status": "SEM_DATA_EXPLÍCITA_NO_BINDING",
+      "spoiler_level": 0,
+      "character_ref": "PER-007"
+    },
+    {
+      "id": "TIM-018",
+      "name": "Nascimento de Kaenna Vor",
+      "date": null,
+      "date_status": "SEM_DATA_EXPLÍCITA_NO_BINDING",
+      "spoiler_level": 0,
+      "character_ref": "PER-006"
+    },
+    {
+      "id": "TIM-019",
+      "name": "Nascimento de Kenua Vaarn",
+      "date": null,
+      "date_status": "SEM_DATA_EXPLÍCITA_NO_BINDING",
+      "spoiler_level": 0,
+      "character_ref": "PER-002"
+    },
+    {
+      "id": "TIM-020",
+      "name": "Serlis é encontrado ainda criança",
+      "date": null,
+      "date_status": "SEM_DATA_EXPLÍCITA_NO_BINDING",
+      "spoiler_level": 0,
+      "character_ref": "PER-003"
+    },
+    {
+      "id": "TIM-021",
+      "name": "Nascimento de Aelyra Voss",
+      "date": null,
+      "date_status": "SEM_DATA_EXPLÍCITA_NO_BINDING",
+      "spoiler_level": 0,
+      "character_ref": "PER-001"
+    },
+    {
+      "id": "TIM-022",
+      "name": "Desaparecimento de Daren Vaarn",
+      "date": null,
+      "date_status": "SEM_DATA_EXPLÍCITA_NO_BINDING",
+      "spoiler_level": 0,
+      "character_ref": "PER-009",
+      "note": "Daren Vaarn - PENDING no R2_ROLE_SOURCE_REFERENCE."
+    },
+    {
+      "id": "TIM-023",
+      "name": "Morte de Meyra Vaarn",
+      "date": null,
+      "date_status": "SEM_DATA_EXPLÍCITA_NO_BINDING",
+      "spoiler_level": 0,
+      "character_ref": "PER-010",
+      "note": "Meyra Vaarn - PENDING no R2_ROLE_SOURCE_REFERENCE."
+    },
+    {
+      "id": "TIM-024",
+      "name": "Serlis conhece Aelyra",
+      "date": null,
+      "date_status": "SEM_DATA_EXPLÍCITA_NO_BINDING",
+      "spoiler_level": 0,
+      "character_ref": "PER-001,PER-003"
+    },
+    {
+      "id": "TIM-025",
+      "name": "Redescoberta moderna do Espinho-Negro",
+      "date": null,
+      "date_status": "SEM_DATA_EXPLÍCITA_NO_BINDING",
+      "spoiler_level": 0,
+      "existing_his_ref": "HIS-004",
+      "note": "Redescoberta do Espinho-Negro - já coberta integralmente por HIS-004 (R2)."
+    },
+    {
+      "id": "TIM-026",
+      "name": "Aelyra torna-se hospedeira",
+      "date": null,
+      "date_status": "SEM_DATA_EXPLÍCITA_NO_BINDING",
+      "spoiler_level": 0,
+      "character_ref": "PER-001"
+    },
+    {
+      "id": "TIM-027",
+      "name": "Aelyra morre; Serlis foge",
+      "date": null,
+      "date_status": "SEM_DATA_EXPLÍCITA_NO_BINDING",
+      "spoiler_level": 0,
+      "existing_his_ref": "HIS-003",
+      "character_ref": "PER-001,PER-003",
+      "note": "Caso Aelyra - já coberto integralmente por HIS-003 (R2)."
+    },
+    {
+      "id": "TIM-028",
+      "name": "Após a morte de Aelyra, Serlis aplica a Estase de Intervalo em Ilyan Morveth para impedir novos testes com a flor e abandona as Árvores Anciãs",
+      "date": null,
+      "date_status": "SEM_DATA_EXPLÍCITA_NO_BINDING",
+      "spoiler_level": 0,
+      "existing_his_ref": "HIS-003",
+      "character_ref": "PER-003,PER-011"
+    },
+    {
+      "id": "TIM-029",
+      "name": "Serverus contrata Kenua; começa O Hospedeiro",
+      "date": null,
+      "date_status": "SEM_DATA_EXPLÍCITA_NO_BINDING",
+      "spoiler_level": 0,
+      "character_ref": "PER-005,PER-002",
+      "note": "Início do arco 'O Hospedeiro' (Episódio 1)."
+    },
+    {
+      "id": "TIM-030",
+      "name": "Amadon cria o Espinho-Negro",
+      "date": null,
+      "date_status": "SEM_DATA_EXPLÍCITA_NO_BINDING",
+      "spoiler_level": 0,
+      "note": "Amadon/Espinho-Negro - fato canônico de fundo. NÃO autoriza revelação/contato com Amadon em gameplay antes de S01E08 (regra já registrada em STELLAR_CONSEQUENCE_ENGINE_REGISTRY_DEV_V1_0.json, fase Sistema H)."
+    },
+    {
+      "id": "TIM-031",
+      "name": "Amadon percebe a anomalia",
+      "date": null,
+      "date_status": "SEM_DATA_EXPLÍCITA_NO_BINDING",
+      "spoiler_level": 0,
+      "note": "Amadon/anomalia - mesma restrição de TIM-030."
+    },
+    {
+      "id": "TIM-032",
+      "name": "Votakhel implanta a Raiz Profunda em Stellar",
+      "date": null,
+      "date_status": "SEM_DATA_EXPLÍCITA_NO_BINDING",
+      "spoiler_level": 0,
+      "existing_ref": "COR-001 Raiz Profunda",
+      "note": "Votakhel implanta a Raiz Profunda - já é o fato-base de COR-001 (R2) e do nosso portão autoral (fase 57)."
+    }
+  ]
+}

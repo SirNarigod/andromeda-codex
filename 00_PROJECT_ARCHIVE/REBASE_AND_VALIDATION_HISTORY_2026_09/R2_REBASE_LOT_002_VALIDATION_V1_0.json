@@ -1,0 +1,182 @@
+{
+  "record_id": "R2_REBASE_LOT_002_VALIDATION_V1_0",
+  "generated_at": "2026-09-07T01:24:54.654330+00:00",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "rebase_json_parse_coverage",
+      "passed": true,
+      "detail": "All R2 rebase and foundation JSON files parse."
+    },
+    {
+      "name": "required:R2_SOURCE_AUTHORITY_INDEX_V1_0.json",
+      "passed": true,
+      "detail": "present and parseable"
+    },
+    {
+      "name": "required:R2_REBASE_DECISION_LEDGER_V1_1.json",
+      "passed": true,
+      "detail": "present and parseable"
+    },
+    {
+      "name": "required:R2_REBASE_CLASSIFICATION_V1_0.json",
+      "passed": true,
+      "detail": "present and parseable"
+    },
+    {
+      "name": "required:R2_REBASE_DECISION_QUEUE_V1_0.json",
+      "passed": true,
+      "detail": "present and parseable"
+    },
+    {
+      "name": "required:STELLAR_FOUNDATION_INDEX_V1_2.json",
+      "passed": true,
+      "detail": "present and parseable"
+    },
+    {
+      "name": "required:STELLAR_COSMOLOGY_CANON_V1_2.json",
+      "passed": true,
+      "detail": "present and parseable"
+    },
+    {
+      "name": "required:STELLAR_CANON_CONSTITUTION_V1_1.json",
+      "passed": true,
+      "detail": "present and parseable"
+    },
+    {
+      "name": "required:STELLAR_MAGIC_TECHNOLOGY_LAW_V1_1.json",
+      "passed": true,
+      "detail": "present and parseable"
+    },
+    {
+      "name": "required:STELLAR_SYMBIOSIS_LAW_V1_0.json",
+      "passed": true,
+      "detail": "present and parseable"
+    },
+    {
+      "name": "required:STELLAR_ROOT_PROGRESSION_LAW_V1_0.json",
+      "passed": true,
+      "detail": "present and parseable"
+    },
+    {
+      "name": "r2_source_hash",
+      "passed": true,
+      "detail": "257e456a5d0396310ec2355b3dfc0f11f4e0a5264cf6e764591c8760f5070cb0"
+    },
+    {
+      "name": "active_contract:STELLAR_COSMOLOGY_CANON_V1_2",
+      "passed": true,
+      "detail": "01_LORE\\STELLAR_FOUNDATION\\STELLAR_COSMOLOGY_CANON_V1_2.json"
+    },
+    {
+      "name": "active_contract:STELLAR_CANON_CONSTITUTION_V1_1",
+      "passed": true,
+      "detail": "02_REGRAS\\STELLAR_FOUNDATION\\STELLAR_CANON_CONSTITUTION_V1_1.json"
+    },
+    {
+      "name": "active_contract:STELLAR_MAGIC_TECHNOLOGY_LAW_V1_1",
+      "passed": true,
+      "detail": "02_REGRAS\\STELLAR_FOUNDATION\\STELLAR_MAGIC_TECHNOLOGY_LAW_V1_1.json"
+    },
+    {
+      "name": "active_contract:STELLAR_SYMBIOSIS_LAW_V1_0",
+      "passed": true,
+      "detail": "02_REGRAS\\STELLAR_FOUNDATION\\STELLAR_SYMBIOSIS_LAW_V1_0.json"
+    },
+    {
+      "name": "active_contract:STELLAR_ROOT_PROGRESSION_LAW_V1_0",
+      "passed": true,
+      "detail": "02_REGRAS\\STELLAR_FOUNDATION\\STELLAR_ROOT_PROGRESSION_LAW_V1_0.json"
+    },
+    {
+      "name": "active_contract:STELLAR_OPEN_QUESTIONS_REGISTER_V1_1",
+      "passed": true,
+      "detail": "02_REGRAS\\STELLAR_FOUNDATION\\STELLAR_OPEN_QUESTIONS_REGISTER_V1_1.json"
+    },
+    {
+      "name": "active_contract:STELLAR_LORE_PROPOSAL_GUARD_V1_1",
+      "passed": true,
+      "detail": "02_REGRAS\\STELLAR_FOUNDATION\\STELLAR_LORE_PROPOSAL_GUARD_V1_1.json"
+    },
+    {
+      "name": "r2_stellar_living",
+      "passed": true,
+      "detail": "Living planet where nature, technology, magic, societies and spirits coexist in unstable balance."
+    },
+    {
+      "name": "r2_amadon_boundary",
+      "passed": true,
+      "detail": "Kenua cannot hear, see or identify Amadon before Episode 8 of Season 1."
+    },
+    {
+      "name": "no_generic_kenua_ban_active",
+      "passed": true,
+      "detail": "NO_SILENT_CANON_PROMOTION, NO_RETCON_BY_RUNTIME, NO_UNSOURCED_GLOBAL_FACT, NO_UNSOURCED_KENUA_RETCON, NO_AMADON_PRE_S01E08_REVEAL, NO_PHYSICAL_DELETION_WITHOUT_APPROVAL"
+    },
+    {
+      "name": "amadon_pre_e8_fail_closed",
+      "passed": true,
+      "detail": "NO_UNSOURCED_KENUA_RETCON, NO_AMADON_CONTACT_OR_IDENTIFICATION_BEFORE_S01E08, NO_DIRECT_DIVINE_COMMAND_AS_CANON, NO_GUARANTEED_AMADON_SOLUTION, NO_SEALED_FACT_DISCLOSURE_BY_ADVICE, NO_R2_EPISODE_RETCON"
+    },
+    {
+      "name": "amadon_post_e8_counsellor",
+      "passed": true,
+      "detail": "After Episode 8, Amadon may be an accessible counsellor speaking for Stellar without issuing divine orders, guaranteeing solutions or exposing sealed facts."
+    },
+    {
+      "name": "derived_magic_count",
+      "passed": true,
+      "detail": "['MAG-008', 'MAG-009', 'MAG-010', 'MAG-011', 'MAG-012', 'MAG-013', 'MAG-014', 'MAG-015', 'MAG-016', 'MAG-017', 'MAG-018', 'MAG-019', 'MAG-020', 'MAG-021', 'MAG-022', 'MAG-023', 'MAG-024', 'MAG-025', 'MAG-026', 'MAG-027', 'MAG-028', 'MAG-029', 'MAG-030']"
+    },
+    {
+      "name": "finite_magic_rule",
+      "passed": true,
+      "detail": "['MAGIC_TRANSFORMS_EXISTING_ENERGY', 'MAGIC_REQUIRES_SOURCE_METHOD_BEARER_OBJECTIVE_TARGET_COST_AND_CONSEQUENCE', 'RUNES_REQUIRE_SUPPORT_COMPATIBILITY_DISSIPATION_AND_MAINTENANCE', 'TECHNOLOGY_REMAINS_NECESSARY_FOR_REPEATABILITY_SCALE_AND_DURABILITY', 'MAGIC_RANGE_DURATION_AND_SCALE_ARE_FINITE', 'NO_FIXED_PLAYER_CLASS_IS_CREATED']"
+    },
+    {
+      "name": "symbiosis_threshold_count",
+      "passed": true,
+      "detail": "[{'range': '0-20', 'state': 'KENUA_DOMINANT'}, {'range': '20-40', 'state': 'AUTOMATIC_REACTIONS'}, {'range': '40-60', 'state': 'MIXED_DECISIONS'}, {'range': '60-80', 'state': 'IMPORTANT_FUNCTIONS_ASSUMED'}, {'range': '80-99', 'state': 'SURVIVAL_MOTOR_CONTROL'}, {'range': '100', 'state': 'UNSTABLE_IRREVERSIBLE_INTEGRATION_OR_SUBSTITUTION', 'requires': 'AUTHORIAL_GATE'}]"
+    },
+    {
+      "name": "symbiosis_agency",
+      "passed": true,
+      "detail": "['KENUA_REMAINS_A_PERSON_WITH_AGENCY', 'ESPINHO_NEGRO_LEARNS_LANGUAGE_AND_MORALITY_THROUGH_THE_HOST', 'ALL_FORMS_CONSERVE_MATTER_AND_ENERGY', 'REGENERATION_REQUIRES_FOOD_WATER_MINERALS_VITAMINS_AND_ORGANIC_RESERVES', 'SERLIS_SUPPORTS_GRADUAL_CONTROL_NOT_IMMEDIATE_DOMINATION', 'SEASON_1_NEVER_GRANTS_FULL_MASTERY']"
+    },
+    {
+      "name": "root_phase_count",
+      "passed": true,
+      "detail": "[{'phase': 1, 'id': 'IMPLANTATION', 'global_pressure': 'LOW', 'local_signs': ['anomalous substrate', 'isolated record gaps']}, {'phase': 2, 'id': 'ROOTING', 'global_pressure': 'RISING', 'local_signs': ['altered roots', 'waterway disturbance']}, {'phase': 3, 'id': 'SILENT_FEEDING', 'global_pressure': 'PERSISTENT', 'local_signs': ['resource depletion', 'unexplained biological hunger']}, {'phase': 4, 'id': 'CORRUPTION', 'global_pressure': 'SEVERE', 'local_signs': ['ecological distortion', 'contested containment']}, {'phase': 5, 'id': 'EMERGENCE', 'global_pressure': 'CRITICAL', 'local_signs': ['visible outbreaks', 'route failure', 'mass displacement']}, {'phase': 6, 'id': 'HARVEST', 'global_pressure': 'EXISTENTIAL', 'local_signs': ['planetary-scale consequence'], 'requires': 'AUTHORIAL_GATE'}]"
+    },
+    {
+      "name": "root_irreversible_gate",
+      "passed": true,
+      "detail": "{'phase': 6, 'id': 'HARVEST', 'global_pressure': 'EXISTENTIAL', 'local_signs': ['planetary-scale consequence'], 'requires': 'AUTHORIAL_GATE'}"
+    },
+    {
+      "name": "lots_no_deletion",
+      "passed": true,
+      "detail": "[False, False]"
+    },
+    {
+      "name": "classification_coverage",
+      "passed": true,
+      "detail": "{'EVIDENCIA_TECNICA_NAO_CANONICA': 4674, 'DIVERGENCIA_FORMAL_AGUARDANDO_DECISAO': 4044, 'CANON_DERIVADO_ATIVO': 4, 'CANON_R2_CONFIRMADO': 5316}"
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    {
+      "path": "05_CRIACAO_PROCEDURAL/ANDROMEDA_ARPG_STAGE17_PLAYABLE_VERTICAL_SLICE_V0_DEV/09_CODEX_EXPANSION/V1_2_1_DEV/TERRAS_LIVRES_COUNTRY_SCALE_SEED_1201_RUNTIME.json",
+      "issue": "Expecting ',' delimiter: line 5820 column 36 (char 229362)",
+      "classification": "PREEXISTING_TECHNICAL_OR_RUNTIME_ARTIFACT"
+    },
+    {
+      "path": "06_ENGINE/G/ACTIVE_STAGE17_WORKSPACE/ANDROMEDA_ARPG_STAGE17_PLAYABLE_VERTICAL_SLICE_V0_DEV/09_CODEX_EXPANSION/V1_2_1_DEV/TERRAS_LIVRES_COUNTRY_SCALE_SEED_1201_RUNTIME.json",
+      "issue": "Expecting ',' delimiter: line 5820 column 36 (char 229362)",
+      "classification": "PREEXISTING_TECHNICAL_OR_RUNTIME_ARTIFACT"
+    }
+  ],
+  "global_json_files": 1678,
+  "globally_parseable_json_files": 1676
+}

@@ -1,0 +1,57 @@
+{
+  "record_id": "MAG-007",
+  "record_kind": "R2_CANONICAL_ENTRY_MIRROR",
+  "authority": "CANON_R2_CONFIRMADO",
+  "canonical_home": "01_LORE/CANON_R2/SISTEMAS/MAGIA/MAG-007__estase-de-intervalo.json",
+  "source": {
+    "archive_sha256": "257e456a5d0396310ec2355b3dfc0f11f4e0a5264cf6e764591c8760f5070cb0",
+    "lineage": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json",
+    "document_sha256": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726"
+  },
+  "entry": {
+    "code": "MAG-007",
+    "slug": "estase-de-intervalo",
+    "title": "Estase de Intervalo",
+    "subtitle": "Paralisia mágica exclusiva de Serlis",
+    "category": "MAG",
+    "secondaryCategories": [],
+    "canon": "Cânone consolidado",
+    "spoiler": 2,
+    "sealed": true,
+    "image": null,
+    "imageStatus": null,
+    "summary": "Técnica de contenção que ancora o intervalo entre impulso nervoso, intenção mágica e movimento, paralisando o alvo sem interromper funções vitais.",
+    "facts": {
+      "Criador conhecido": "Serlis Aftermoon",
+      "Conhecimento completo": "Exclusivo de Serlis",
+      "Não é": "Parada do tempo",
+      "Custo": "Concentração contínua, âncoras rúnicas e alto desgaste neural",
+      "Limite": "Risco crescente de dano se mantida por tempo excessivo"
+    },
+    "sections": [
+      {
+        "heading": "Uso no Caso Aelyra",
+        "body": "Serlis aplicou a técnica em Ilyan Morveth para impedir nova exposição à flor. A estase preserva vida, mas exige monitoramento e não é uma solução permanente."
+      }
+    ],
+    "relations": [
+      {
+        "slug": "serlis-aftermoon",
+        "label": "Único usuário completo"
+      },
+      {
+        "slug": "ilyan-morveth",
+        "label": "Alvo conhecido"
+      }
+    ],
+    "keywords": [
+      "estase",
+      "paralisia",
+      "Serlis",
+      "contenção"
+    ],
+    "sources": [
+      "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+    ]
+  }
+}

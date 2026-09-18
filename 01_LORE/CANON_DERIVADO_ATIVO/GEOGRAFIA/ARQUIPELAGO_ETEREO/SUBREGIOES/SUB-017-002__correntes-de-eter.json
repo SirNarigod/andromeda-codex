@@ -1,0 +1,41 @@
+{
+  "record_id": "SUB-017-002",
+  "record_kind": "DERIVED_SUBREGION_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Correntes de Eter",
+  "parent_political_unit": "TER-017",
+  "provenance": {
+    "approval": "AUTHORIAL_DECISION_FASE_50",
+    "r2_anchors": [],
+    "compatibility": "Territorio 100% novo por decisao explicita do autor (fase 50) - distinto de TER-006 Altavela (monarquia de plataformas fixas); aqui sao pequenas ilhas independentes sustentadas por eter, sem coroa."
+  },
+  "function": "Fluxos de energia etérea entre ilhas, usados para navegacao e colheita de eter bruto.",
+  "locality_references": [
+    "LOC-017-002"
+  ],
+  "permitted_catalog_links": {
+    "npc_roles": [],
+    "professions": [
+      "navegador de correntes"
+    ],
+    "encounters": [],
+    "resources": [
+      "MIN-CRYSTAL",
+      "EST-059",
+      "REG-004"
+    ]
+  },
+  "local_conflicts": [
+    "colheita de eter versus estabilidade das correntes de navegacao"
+  ],
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY_BEYOND_FASE_50_GATE",
+    "NO_AUTOMATIC_KENUA_SCENE",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_FIXED_BORDER_COORDINATE"
+  ],
+  "story_generators": [
+    "Uma crise em Correntes de Eter testa a cooperacao entre ilheus independentes sem autoridade central forte."
+  ]
+}

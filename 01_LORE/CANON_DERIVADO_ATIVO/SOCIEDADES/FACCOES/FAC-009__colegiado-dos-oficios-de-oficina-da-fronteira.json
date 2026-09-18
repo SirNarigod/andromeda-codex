@@ -1,0 +1,45 @@
+{
+  "record_id": "FAC-009",
+  "record_kind": "DERIVED_CANONICAL_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Colegiado dos Ofícios de Oficina da Fronteira",
+  "scope": "TRANSREGIONAL_NON_SOVEREIGN",
+  "provenance": {
+    "approval": "R2-REBASE-LOT-007",
+    "derived_from": "ARPG_NARRATIVE_CULTURE_CONTRACT_V1_3_0",
+    "source_sha256": "a4e57f054dbc3055ab53fc67531c811a46bdb51bab6efd890799a324ec43bae5",
+    "r2_compatibility": "No R2 faction, territory, character or episode fact is changed."
+  },
+  "identity": {
+    "purpose": "Protege pessoas de ofício, preserva técnicas verificáveis e mantém padrões de formação e segurança de oficina.",
+    "local_presence": "Núcleos existem apenas por carta local, convite comunitário ou acordo de oficina.",
+    "does_not_control": ["territory", "borders", "sovereignty", "government", "Kenua"],
+    "may_coordinate": ["apprenticeship", "safety review", "repair response", "worker mutual aid"]
+  },
+  "relations": [
+    {
+      "target": "FAC-010",
+      "type": "PARTNERS_IN_TENSION",
+      "shared_need": "Continuidade segura de oficinas e rotas de manutenção.",
+      "legitimate_disputes": ["licensing cost", "contract terms", "workshop autonomy", "minimum safety standard"]
+    }
+  ],
+  "simulation_permissions": {
+    "LivingSim": ["local workshop capacity", "apprenticeship availability", "safety strain", "mutual-aid response"],
+    "LivingScale": ["local chartered presence only"],
+    "UE5": ["read-only faction catalog", "local chapter data asset", "quest hooks without canonical mutation"]
+  },
+  "prohibitions": [
+    "NO_TERRITORIAL_CONTROL",
+    "NO_AUTOMATIC_KENUA_LINK",
+    "NO_R2_EPISODE_MUTATION",
+    "NO_RUNTIME_CANON_PROMOTION",
+    "NO_PLANETARY_GOVERNMENT_INFERENCE"
+  ],
+  "story_generators": [
+    "Uma oficina aceita inspeção do Colegiado para manter aprendizes seguros, mas perde um contrato urgente da Liga.",
+    "Um reparo crítico só pode ser concluído quando mestres e trabalhadores discordantes compartilham uma técnica preservada.",
+    "Uma carta local desaparece e transforma a autoria de uma oficina em disputa comunitária."
+  ]
+}

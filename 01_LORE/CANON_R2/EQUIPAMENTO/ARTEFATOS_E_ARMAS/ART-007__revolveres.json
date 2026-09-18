@@ -1,0 +1,46 @@
+{
+  "record_id": "ART-007",
+  "record_kind": "R2_CANONICAL_ENTRY_MIRROR",
+  "authority": "CANON_R2_CONFIRMADO",
+  "canonical_home": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-007__revolveres.json",
+  "source": {
+    "archive_sha256": "257e456a5d0396310ec2355b3dfc0f11f4e0a5264cf6e764591c8760f5070cb0",
+    "lineage": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json",
+    "document_sha256": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726"
+  },
+  "entry": {
+    "code": "ART-007",
+    "slug": "revolveres",
+    "title": "Revólveres",
+    "subtitle": "Armas curtas de repetição",
+    "category": "ART",
+    "secondaryCategories": [],
+    "canon": "Cânone consolidado",
+    "spoiler": 1,
+    "sealed": false,
+    "image": null,
+    "imageStatus": null,
+    "summary": "Armas curtas valorizadas por confiabilidade e transporte discreto.",
+    "facts": {
+      "Alcance": "Curto a médio",
+      "Vantagem": "Mecanismo robusto",
+      "Runas usuais": "Marcação, impulso e selamento de tambor",
+      "Limite": "Pouca capacidade e recarga rúnica cara"
+    },
+    "sections": [],
+    "relations": [
+      {
+        "slug": "sistema-de-armamentos",
+        "label": "Categoria"
+      }
+    ],
+    "keywords": [
+      "revólver",
+      "arma curta",
+      "runa"
+    ],
+    "sources": [
+      "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+    ]
+  }
+}

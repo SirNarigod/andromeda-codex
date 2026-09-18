@@ -1,0 +1,13 @@
+{
+  "record_id": "VARGA-LOCAL-NPC-PROFILES-V1",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "LOCAL_PLAYABLE_SUPPORTING_CAST",
+  "parent": "SUB-011-001",
+  "r2_protection": "These are new local characters. They do not replace, repeat, impersonate, or decide for R2 characters.",
+  "profiles": [
+    {"id":"VARGA-NPC-001","name":"Nessa Ril","role_ref":"NPC-ROLE-001","title":"Guia de travessia","function":"Offers orientation and route warnings.","tension":"Wants to shelter displaced people but fears opening an unsafe passage.","knowledge_boundary":"Knows local traffic and observed signs; cannot confirm R2 facts or sealed events.","story_hook":"Her safe detour can become a lifeline or an excuse to abandon the blocked route."},
+    {"id":"VARGA-NPC-002","name":"Dorian Kesh","role_ref":"NPC-ROLE-004","title":"Investigador de campo","function":"Collects and compares physical evidence near the nest.","tension":"Suspects deliberate provocation but lacks proof strong enough to accuse anyone.","knowledge_boundary":"May present evidence and uncertainty; cannot resolve a sealed case.","story_hook":"A correct precaution may look like cowardice while a wrong accusation can divide Varga."},
+    {"id":"VARGA-NPC-003","name":"Vara Teln","role_ref":"NPC-ROLE-013","title":"Respondente de risco","function":"Briefs travelers and authorizes local containment procedure.","tension":"Prioritizes closing the route until it is safe, even when the delay harms the displaced.","knowledge_boundary":"Can coordinate evacuation and nonlethal containment; cannot make authorial death decisions.","story_hook":"Her procedure protects bodies but makes every delay politically visible."}
+  ],
+  "prohibitions": ["NO_REPEATABLE_NAMED_R2_PERSON", "NO_AUTOMATIC_KENUA_INTERACTION", "NO_SEALED_EPISODE_DIALOGUE", "NO_RUNTIME_CANON_WRITE"]
+}

@@ -1,0 +1,42 @@
+{
+  "record_id": "TEC-002",
+  "record_kind": "R2_CANONICAL_ENTRY_MIRROR",
+  "authority": "CANON_R2_CONFIRMADO",
+  "canonical_home": "01_LORE/CANON_R2/SISTEMAS/TECNOLOGIA/TEC-002__tecnomagia-de-ithra.json",
+  "source": {
+    "archive_sha256": "257e456a5d0396310ec2355b3dfc0f11f4e0a5264cf6e764591c8760f5070cb0",
+    "lineage": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json",
+    "document_sha256": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726"
+  },
+  "entry": {
+    "code": "TEC-002",
+    "slug": "tecnomagia-de-ithra",
+    "title": "Tecnomagia de Ithra",
+    "subtitle": "Base tecnológica do principado",
+    "category": "TEC",
+    "secondaryCategories": [],
+    "canon": "Cânone consolidado",
+    "spoiler": 2,
+    "sealed": true,
+    "image": null,
+    "imageStatus": null,
+    "summary": "Tecnologia e magia integradas na estrutura do Principado de Ithra.",
+    "facts": {
+      "Território associado": "Principado de Ithra"
+    },
+    "sections": [],
+    "relations": [
+      {
+        "slug": "principado-de-ithra",
+        "label": "Origem territorial"
+      }
+    ],
+    "keywords": [
+      "Ithra",
+      "tecnomagia"
+    ],
+    "sources": [
+      "ATLAS_POLITICO_LIDERES_E_CULTURAS.md"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "record_id": "STELLAR-CAUSALITY-LAW-V1.0",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.0",
+  "status": "AUTHORIAL_RUNTIME_OVERLAY",
+  "authority": {"scope": "CAUSAL_INTERPRETATION", "runtime": "BOUNDED_DETERMINISTIC_AUDITABLE", "canon": "READ_ONLY"},
+  "dependencies": ["STELLAR_CANON_CONSTITUTION_V1_0.json", "../ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/02_CONTRACTS/CONSEQUENCE_ENGINE_CONTRACT_V1_0.json"],
+  "invariants": ["EVERY_MATERIAL_CHANGE_HAS_TRACE", "COSTS_CANNOT_BE_HIDDEN_BY_SUCCESS", "CAUSAL_DEPTH_MAX_8", "GLOBAL_DERIVED_BUDGET_MAX_64", "NARRATIVE_PROTECTION_OVERRIDES_AUTOMATION", "RECOVERY_PRESERVES_HISTORY"],
+  "prohibitions": ["NO_EFFECT_WITHOUT_PARENT_EVENT", "NO_OFFLINE_DEATH_OR_MAJOR_ESCALATION", "NO_GLOBAL_CHANGE_FROM_UNAUDITED_LOCAL_EVENT", "NO_LLM_CAUSAL_AUTHORITY"],
+  "simulation_effects": ["Causal events attach ecological, social, informational or material traces.", "A resolved quest can create downstream opportunities rather than erase its pressures.", "Destroyed regenerable entities schedule recovery at +7 universe days without deleting history."],
+  "allowed_states": ["ROOT_EVENT", "DERIVED_EVENT", "DEFERRED", "RECOVERY_SCHEDULED", "NARRATIVE_PROTECTED", "REJECTED"],
+  "story_generators": ["Uma ponte reparada desloca comércio, tensão política e uma rota de rumor.", "A recuperação de um lugar destruído devolve o recurso, mas preserva a memória da perda.", "O custo oculto de uma solução rápida torna-se a causa auditável de uma crise posterior."],
+  "compatibility": {"existing_limits_preserved": ["max_depth_8", "budget_64", "offline_major_change_blocked"], "implementation_mode": "RULE_METADATA_OVERLAY"}
+}

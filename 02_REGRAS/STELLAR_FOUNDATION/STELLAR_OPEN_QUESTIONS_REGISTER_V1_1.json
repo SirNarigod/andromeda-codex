@@ -1,0 +1,20 @@
+{
+  "record_id": "STELLAR-OPEN-QUESTIONS-REGISTER-V1.1",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.1",
+  "status": "ACTIVE_R2_REBASED_OPEN_QUESTIONS",
+  "supersedes": "STELLAR_OPEN_QUESTIONS_REGISTER_V1_0",
+  "authority": {"scope": "MYSTERY_GOVERNANCE", "resolution": "R2_OR_AUTHORIAL_APPROVAL_ONLY"},
+  "dependencies": ["STELLAR_CANON_CONSTITUTION_V1_1.json", "../../01_LORE/STELLAR_FOUNDATION/STELLAR_COSMOLOGY_CANON_V1_1.json"],
+  "invariants": ["AN_OPEN_QUESTION_IS_NOT_A_MISSING_RULE", "R2_SEALED_FACTS_ARE_NOT_OPEN_QUESTIONS", "EACH_QUESTION_MUST_SUPPORT_MULTIPLE_INTERPRETATIONS", "RESOLUTION_REQUIRES_STORY_COST_AND_APPROVAL"],
+  "prohibitions": ["NO_AUTOMATIC_RESOLUTION", "NO_R2_CHARACTER_RETCON", "NO_AMADON_PRE_S01E08_REVEAL", "NO_UNSOURCED_KENUA_RETCON"],
+  "questions": [
+    {"id": "SQ-001", "question": "Quais consequências novas a Corrente Planetária pode produzir sem antecipar Amadon?", "truth_status": "DERIVATION_REVIEW", "story_use": "Sinais planetários, ecologia e investigação."},
+    {"id": "SQ-002", "question": "Como o Espinho-Negro aprende limite, linguagem e moralidade após a Temporada 1?", "truth_status": "R2_COMPATIBLE_EXPANSION", "story_use": "Simbiose gradual e agência corporal."},
+    {"id": "SQ-003", "question": "Quais territórios e instituições reagem ao pacto de Kenua sem alterar episódios selados?", "truth_status": "DERIVATION_REVIEW", "story_use": "Conflito político e consequências sociais."},
+    {"id": "SQ-004", "question": "Como uma inteligência artificial pode recusar seu estatuto de instrumento dentro das leis de Stellar?", "truth_status": "DERIVATION_REVIEW", "story_use": "Responsabilidade, autonomia e medo."}
+  ],
+  "simulation_effects": ["Open questions can seed quests only after their spoiler boundary and authority scope are checked."],
+  "allowed_states": ["OPEN", "R2_BOUND", "EVIDENCE_ACCUMULATING", "AUTHORIAL_RESOLUTION_PENDING"],
+  "story_generators": ["Uma resposta parcial protege Kenua, mas amplia a suspeita sobre a Corrente.", "O Espinho-Negro aprende uma recusa que salva alguém e compromete uma missão.", "Uma instituição usa o medo de Amadon para justificar poder que nunca recebeu." ]
+}

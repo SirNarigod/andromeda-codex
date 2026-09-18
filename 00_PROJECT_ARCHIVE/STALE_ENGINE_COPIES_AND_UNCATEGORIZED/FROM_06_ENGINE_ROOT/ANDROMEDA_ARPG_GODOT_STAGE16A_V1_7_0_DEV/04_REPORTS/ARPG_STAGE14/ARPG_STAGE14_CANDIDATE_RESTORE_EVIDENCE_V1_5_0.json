@@ -1,0 +1,35 @@
+{
+  "record_id": "ARPG-STAGE14-CANDIDATE-RESTORE-EVIDENCE-V1.5.0",
+  "status": "PASS",
+  "candidate_manifest": {
+    "entries": 634,
+    "status": "PASS"
+  },
+  "candidate_ledger": {
+    "entries": 635,
+    "status": "PASS"
+  },
+  "tests": {
+    "functional": {
+      "passed": 19,
+      "failed": 0
+    },
+    "persistence": {
+      "passed": 1,
+      "failed": 0
+    },
+    "validation": {
+      "passed": 48,
+      "failed": 0
+    },
+    "stress": {
+      "passed": 30,
+      "failed": 0,
+      "cycles": 12,
+      "replays": 12
+    }
+  },
+  "post_test_integrity": "PASS",
+  "transients": 0,
+  "generated_at": "2026-08-18T20:52:57.452501-03:00"
+}

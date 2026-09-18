@@ -1,0 +1,39 @@
+{
+  "record_id": "ARPG-BASELINE-AUTHORITY-V0.1.0",
+  "status": "ACTIVE",
+  "authority_order": [
+    {
+      "component": "Andrômeda Códex Master",
+      "version": "V2.0.1",
+      "sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+      "mode": "READ_ONLY",
+      "sealed": true
+    },
+    {
+      "component": "Living Simulation Engine",
+      "version": "V1.0.0",
+      "sha256": "6f12c9db0976e234ef55cdfe23b998c07240fa8d80eb0d0c247d12bbd16ebabc",
+      "mode": "SEALED_BASELINE_READ_ONLY_DEPENDENCY",
+      "sealed": true
+    },
+    {
+      "component": "Country Scale",
+      "version": "V1.5.0-DEV source",
+      "sha256": "1f49dfa4102c290a4fea67ec6e9f66b31dc1ebcacae1e8b2660a61a6c4ad4444",
+      "mode": "DERIVATIVE_SOURCE_ONLY",
+      "sealed": false
+    },
+    {
+      "component": "ARPG Foundation",
+      "version": "V0.1.0-DEV",
+      "mode": "MUTABLE_DERIVED_GAMEPLAY_BRANCH",
+      "sealed": false
+    }
+  ],
+  "reconciliation": {
+    "problem": "Country Scale V1.3-V1.5 embedded a dependency on an unavailable/unapproved Master V2.1.0.",
+    "resolution": "ARPG branch is pinned to the supplied sealed Master V2.0.1. V2.1.0 is not accepted as authority. Gameplay-only records needed by Country Scale are explicitly DERIVED_GAMEPLAY_NOT_CANON.",
+    "phantom_master_policy": "REJECT_UNAVAILABLE_OR_UNSEALED_MASTER_AS_AUTHORITY",
+    "master_write_policy": "PROHIBITED"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "record_identity": "S17_C3R2_GATHERING_NODE_DEFINITION_DRIFT_RECORD_V0_1_0_DEV",
+  "created_at": "2026-08-29T09:35:00Z",
+  "stage": "STAGE17",
+  "process": "ETAPA_31_S17_C3R2_GATHERING_NODE_DRIFT_ROOT_CAUSE_PREFLIGHT",
+  "read_only": true,
+  "engine_constructed": false,
+  "resume_world_called": false,
+  "backend_started": false,
+  "source_modified": false,
+  "db_modified": false,
+  "hash_proof": {
+    "before_main_sha256": "c84d1bdaaf6de4cf3e47c3f12c4fce0e217090ebe1d15a759bc09f89b68921c6",
+    "before_size": 15060992,
+    "after_main_sha256": "c84d1bdaaf6de4cf3e47c3f12c4fce0e217090ebe1d15a759bc09f89b68921c6",
+    "after_size": 15060992,
+    "identical": true,
+    "wal_present_before": false,
+    "wal_present_after": false,
+    "shm_present_before": false,
+    "shm_present_after": false
+  },
+  "problem_node": {
+    "node_ref": "GTH-1D268772796B25C4CC6B",
+    "world_instance_id": "rt:world:bd0f78f5-7018-4cc6-8f47-34f8f2875e47",
+    "zone_ref": "ZONE-STA-05-BLK-04",
+    "block_ref": "STA-05-BLK-04",
+    "activity_type": "HUNTING",
+    "source_kind": "FAUNA",
+    "source_ref": "FAU-BROWSER-05-04-01",
+    "output_item_ref": "ITEM-FAUNA-FAU-BROWSER",
+    "persisted_definition_hash": "be85ac2aca9662c93b5d2d72c914c78fad28e3d54028749325db58fb2f3badd5",
+    "persisted_row_self_consistent": true,
+    "persisted_capacity_units": 86,
+    "current_authoritative_country_scale_count": 58,
+    "field_drift": {
+      "field": "capacity_units",
+      "persisted": 86,
+      "expected_now": 58,
+      "classification": "VALUE_DRIFT"
+    },
+    "all_other_fields": "IDENTICAL"
+  },
+  "root_cause": {
+    "mechanism": "arpg_gathering_work_core.py::_consume_source() line 421: elif node['source_kind']=='FAUNA': src['count']=current-taken, followed by self.country._persist_state() -- every successful HUNTING gather directly and correctly decrements the live country-scale fauna.count for this source_ref.",
+    "collision": "arpg_gathering_work_core.py::_insert_node() line 210-216 recomputes the node definition (including capacity_units, sourced from that same mutable country.fauna.count) on every engine boot via _bootstrap_nodes(), and raises IntegrityError if the recomputed hash differs from the one persisted at first bootstrap. capacity_units was never designed to be re-synced after the initial insert.",
+    "classification": "B_CURRENT_SOURCE_DEFINITION_CHANGED",
+    "is_corruption": false,
+    "is_wal_checkpoint_artifact": false,
+    "is_hash_schema_change": false,
+    "is_orphaned_node": false,
+    "node_lifecycle_status": "ACTIVE",
+    "generalizable": true,
+    "note": "Any FAUNA/FLORA/FISHING-sourced gathering node (renewability=LIVING_ECOLOGY_STAGE14) will eventually hit the same collision once enough of its capacity has been legitimately consumed via real gameplay. Not unique to this node_ref."
+  },
+  "numeric_evidence": {
+    "consumed_units": 28,
+    "plausibility": "consistent with the volume of HUNTING-channel REQUEST_GATHER calls made this session (C3A diag_groundloot.py script plus multiple AuthorityGroundLootRuntimeGate runs, each creating 3 drops via this same node)"
+  },
+  "timeline_correction": {
+    "initial_hypothesis_error": "Early comparison against _archive_pre_COMBAT_20260829T071705Z_authority and sibling archives appeared to show capacity_units=86 'before' the drift.",
+    "correction": "Those archives hold DIFFERENT world_instance_id values (015a9bde-..., 13c00f76-..., c622140b-..., etc.) -- the broken cold-boot worlds from an earlier documented methodology mistake, not the real bd0f78f5 world. They coincidentally show count=86 only because seed 160800 deterministically generates the same genesis population for any fresh world instance. Verified by reading worlds.world_instance_id directly from each file.",
+    "genuine_bd0f78f5_backups_available": [
+      {"label": "pre_wal_discard_repair_0530", "path": "_archive_pre_wal_discard_repair_20260829T0900Z_authority", "count": 58, "already_drifted": true}
+    ],
+    "conclusion": "No pre-drift backup of the real bd0f78f5 world exists. The drift was already latent and undetected in the only real backup available, and in the current live file, before the first C3R1 dry-run ever ran."
+  },
+  "first_c3r1_dry_run_effect": {
+    "physical_sqlite_change": "main file hash and size changed (WAL merged/checkpointed into main file, -wal/-shm removed)",
+    "semantic_game_state_change": "NONE -- the capacity_units=58 vs 86 mismatch already existed in the 05:30 backup, made before that dry-run ever ran",
+    "conclusion": "the WAL checkpoint exposed a pre-existing drift by finally re-triggering resume_world()'s bootstrap check; it did not cause the drift itself"
+  },
+  "c1b_c1_c2_relationship": {
+    "problem_node_is_tree_or_ore": false,
+    "tree_gth": "GTH-CA3D9A47934BD64A24B4",
+    "ore_gth": "GTH-34AC1BC54C33917F0553",
+    "same_block_as_problem_node": true,
+    "bootstrap_iteration_order_evidence": "resources (MINING) and flora (LOGGING/AGRICULTURE/FORAGING) for a block are iterated before fauna (HUNTING) within _bootstrap_nodes(); the exception fired on a fauna entry in this block, suggesting (not formally proven) that this block's mineral/flora nodes were successfully re-validated in the same failed boot attempt before the fauna check failed",
+    "c1b_c1_c2_validity_impact": "NONE -- their PASS evidence comes from real HTTP roundtrip gate runs captured before this drift was ever detected, not from a clean resume_world(); no direct proof found that the drift invalidates any of it",
+    "c1b_status_preserved": "PASS",
+    "c1_status_preserved": "PASS",
+    "c2_status_preserved": "PASS"
+  },
+  "recovery_options": {
+    "option_a_backup_restore": {
+      "viable": false,
+      "reason": "the only genuine bd0f78f5 backup already contains the identical drift; restoring does not avoid it and would also require re-solving player position/ownership separately"
+    },
+    "option_b_dev_world_recreate": {
+      "viable": true,
+      "cost": "requires re-baking the resource placement manifest for a new world_instance_id (new placement_refs), full re-verification of C1B/C1/C2 against the new world, and would eventually hit the identical drift again after enough HUNTING",
+      "recommended": false
+    },
+    "option_c_formal_migration": {
+      "viable": true,
+      "recommended": true,
+      "variant_c1_architectural": "modify 01_RUNTIME/arpg_gathering_work_core.py::_insert_node() to treat capacity_units as mutable (not hash-locked) for renewability==LIVING_ECOLOGY_STAGE14 sources; fixes the root cause generically; requires explicit future authorization to touch 01_RUNTIME",
+      "variant_c2_data_only": "re-sync only GTH-1D268772796B25C4CC6B's stored definition_json/definition_hash to the current, verified-authoritative capacity_units=58 using the exact existing canonical hashing logic; unblocks resume_world() now but is an interim fix, not a root-cause fix, since the same collision will recur once this node is used further",
+      "state_loss_if_applied": "none -- a targeted re-sync of one stale snapshot field, not a restore"
+    }
+  },
+  "player_recovery_still_required": true,
+  "recommended_order": [
+    "1. Resolve the gathering node drift (option C1 preferred, C2 as interim) under a dedicated, explicitly authorized future round.",
+    "2. Confirm resume_world() succeeds cleanly.",
+    "3. Take a fresh backup of the now-resumable world (backend OFF).",
+    "4. Run repair_stage17_player_position.py --apply.",
+    "5. Validate per the plan already recorded in S17_C3R1_PLAYER_RECOVERY_TOOL_AUDIT_V0_1_0_DEV.json.",
+    "6. Resolve S17_G19_COMMON_TARGET_UNBOUNDED_SELECTION_GAP before attempting a full G19 re-run."
+  ],
+  "preserved_status_flags": {
+    "S17_G19_COMMON_TARGET_UNBOUNDED_SELECTION_GAP": "CONFIRMED_NOT_FIXED",
+    "GroundLoot_current": "51/53",
+    "GROUND_LOOT_REACHABLE_AUTO_SETTLE_LIMITATION": "OPEN_NOT_TOUCHED",
+    "C1B": "PASS",
+    "C1": "PASS",
+    "C2": "PASS",
+    "player_recovery_tool_hardening": "PASS"
+  },
+  "stage16b_integrity": {
+    "status": "CLOSED_READ_ONLY",
+    "checkpoint_sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc",
+    "backup_sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc"
+  },
+  "files_created": [
+    "STAGE17_RECORDS/S17_C3R2_GATHERING_NODE_DEFINITION_DRIFT_ANALYSIS_V0_1_0_DEV.md",
+    "STAGE17_RECORDS/S17_C3R2_GATHERING_NODE_DEFINITION_DRIFT_RECORD_V0_1_0_DEV.json"
+  ],
+  "files_modified": [],
+  "final_classification": "C_FORMAL_GATHERING_NODE_MIGRATION_REQUIRED"
+}

@@ -1,0 +1,63 @@
+{
+  "record_id": "CONTROLLED-GENERATIVE-AI-LLM-GATEWAY-CANON-GUARD-CONTRACT-V1.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "stage": "ETAPA_12",
+  "status": "PROPOSAL_RUNTIME_CONTRACT_VALIDATED",
+  "authority_model": {
+    "llm": [
+      "LANGUAGE",
+      "CANDIDATE_INTENT"
+    ],
+    "forbidden": [
+      "WORLD_TRUTH",
+      "CANON_MUTATION",
+      "DIRECT_STATE_MUTATION",
+      "ACTION_EXECUTION",
+      "MEMORY_TRUTH_PROMOTION",
+      "REPUTATION_DIRECT_WRITE",
+      "RELATIONSHIP_DIRECT_WRITE"
+    ]
+  },
+  "pipeline": [
+    "AUTHORITATIVE_CONTEXT_BUILD",
+    "PROVIDER_GENERATION_UNTRUSTED",
+    "CANON_GUARD",
+    "INTENT_VALIDATOR",
+    "OPTIONAL_EXTERNAL_CONTROLLER_EXECUTION"
+  ],
+  "context_labels": {
+    "authoritative": [
+      "world",
+      "actor",
+      "counterpart"
+    ],
+    "subjective": [
+      "memories"
+    ],
+    "untrusted": [
+      "user_text"
+    ]
+  },
+  "safe_context_paths": [
+    "entity_kind",
+    "lifecycle",
+    "canonical_ref",
+    "data.name",
+    "data.role",
+    "data.location_ref",
+    "data.needs",
+    "data.goals",
+    "data.money",
+    "data.energy"
+  ],
+  "offline_policy": "BLOCK_ALL_LLM_DIALOGUE_IN_ROUTINE_OFFLINE",
+  "conversation_memory": {
+    "type": "INTERACTION",
+    "source": "COMMUNICATION",
+    "truth_status": "UNKNOWN"
+  },
+  "idempotency": "request_key bound to world+agent+counterpart+user_text; conflicting reuse rejected",
+  "provider_binding": "runtime-only handler binding; persisted profile references provider_id; restart requires rebind",
+  "live_provider_status": "NOT_BOUND_OR_NETWORK_VALIDATED_IN_THIS_STAGE",
+  "canon_mutations": 0
+}

@@ -1,0 +1,49 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/death_recovery_overlay.gd" id="1_overlay"]
+
+[sub_resource type="StyleBoxFlat" id="Style_overlay"]
+bg_color = Color(0.965, 0.95, 0.91, 0.96)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.84, 0.82, 0.78, 0.9)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.16)
+shadow_size = 6
+
+[node name="DeathRecoveryOverlay" type="PanelContainer"]
+visible = false
+custom_minimum_size = Vector2(260, 70)
+offset_left = 350.0
+offset_top = 24.0
+offset_right = 610.0
+offset_bottom = 94.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("Style_overlay")
+script = ExtResource("1_overlay")
+
+[node name="Margin" type="MarginContainer" parent="."]
+theme_override_constants/margin_left = 18
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 18
+theme_override_constants/margin_bottom = 10
+
+[node name="Layout" type="VBoxContainer" parent="Margin"]
+theme_override_constants/separation = 3
+
+[node name="State" type="Label" parent="Margin/Layout"]
+theme_override_colors/font_color = Color(0.42, 0.42, 0.42, 1)
+theme_override_font_sizes/font_size = 16
+text = "Estado"
+horizontal_alignment = 1
+
+[node name="Detail" type="Label" parent="Margin/Layout"]
+theme_override_colors/font_color = Color(0.5, 0.5, 0.5, 1)
+theme_override_font_sizes/font_size = 13
+text = "Projeção externa"
+horizontal_alignment = 1

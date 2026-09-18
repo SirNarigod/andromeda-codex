@@ -1,0 +1,130 @@
+{
+  "record_id": "ARPG-STAGE-PLAN-V0.1.0",
+  "status": "ACTIVE",
+  "stage_count": 19,
+  "numbering": "00-18",
+  "correction_note": "Previous textual statement said 18 stages while numbering 00-18. Correct total is 19; no stage removed.",
+  "safe_batch_limit": {
+    "major_stages_per_cycle": 1,
+    "minor_stages_per_cycle": 2,
+    "rule": "Always finish test/correction/regression/checkpoint before advancing."
+  },
+  "stages": [
+    {
+      "index": 0,
+      "folder": "00_GOVERNANCE",
+      "purpose": "Governança ARPG e reconciliação de baselines",
+      "status": "PASS"
+    },
+    {
+      "index": 1,
+      "folder": "01_GAME_CORE",
+      "purpose": "Game loop, runtime e contratos fundamentais",
+      "status": "READY_NEXT"
+    },
+    {
+      "index": 2,
+      "folder": "02_CHARACTER",
+      "purpose": "Personagem, atributos, nível, XP e movimento",
+      "status": "PLANNED"
+    },
+    {
+      "index": 3,
+      "folder": "03_COMBAT",
+      "purpose": "Combate ARPG, dano, crítico, defesa e resistências",
+      "status": "PLANNED"
+    },
+    {
+      "index": 4,
+      "folder": "04_ATTRIBUTES_RESOURCES",
+      "purpose": "Recursos, regeneração, poções e cooldowns",
+      "status": "PLANNED"
+    },
+    {
+      "index": 5,
+      "folder": "05_ITEMS",
+      "purpose": "Itemização, slots, raridades, qualidade e sockets",
+      "status": "PLANNED"
+    },
+    {
+      "index": 6,
+      "folder": "06_SKILLS",
+      "purpose": "Habilidades ativas, passivas e progressão emergente",
+      "status": "PLANNED"
+    },
+    {
+      "index": 7,
+      "folder": "07_ACTORS",
+      "purpose": "Player, NPC, inimigos, elites e bosses",
+      "status": "PLANNED"
+    },
+    {
+      "index": 8,
+      "folder": "08_WORLD",
+      "purpose": "Zonas, dungeons, encontros e waypoints",
+      "status": "PLANNED"
+    },
+    {
+      "index": 9,
+      "folder": "09_QUESTS",
+      "purpose": "Quests, eventos e campanha jogável",
+      "status": "PLANNED"
+    },
+    {
+      "index": 10,
+      "folder": "10_ECONOMY",
+      "purpose": "Vendors, stash, reparo, crafting e serviços",
+      "status": "PLANNED"
+    },
+    {
+      "index": 11,
+      "folder": "11_LIVING_INTEGRATION",
+      "purpose": "Integração Living x ARPG com LOD sistêmico",
+      "status": "PLANNED"
+    },
+    {
+      "index": 12,
+      "folder": "12_SAVE_PERSISTENCE",
+      "purpose": "Save, persistência, morte e recuperação",
+      "status": "PLANNED"
+    },
+    {
+      "index": 13,
+      "folder": "13_GODOT_RUNTIME",
+      "purpose": "Vertical slice integrado no Godot",
+      "status": "PLANNED"
+    },
+    {
+      "index": 14,
+      "folder": "14_BALANCE",
+      "purpose": "Balanceamento global e progressão matemática",
+      "status": "PLANNED"
+    },
+    {
+      "index": 15,
+      "folder": "15_TESTS",
+      "purpose": "Regressão, stress, determinismo e integridade",
+      "status": "PLANNED"
+    },
+    {
+      "index": 16,
+      "folder": "16_PLACEHOLDERS",
+      "purpose": "Conteúdo funcional sem arte final",
+      "status": "PLANNED"
+    },
+    {
+      "index": 17,
+      "folder": "17_PRE_ART",
+      "purpose": "Gate final de conteúdo e jogabilidade pré-arte",
+      "status": "PLANNED"
+    },
+    {
+      "index": 18,
+      "folder": "18_VISUAL_PIPELINE",
+      "purpose": "Arte conceitual, modelos, animação, VFX, áudio e UI final",
+      "status": "BLOCKED_UNTIL_STAGE_17_PASS"
+    }
+  ],
+  "current_checkpoint": "STAGE_00_PASS",
+  "next_stage": 1
+}

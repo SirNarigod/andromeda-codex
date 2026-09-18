@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "MINERAL-RESOURCE-LOCALITY-LINKS-DEV-V1.0",
+  "title": "Vínculo entre os 16 minerais já catalogados no runtime (RESOURCE_CATALOG) e território/subregião",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "canonical_status": "GAMEPLAY_DERIVED_DEV",
+  "source_reference": "06_ENGINE/ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/01_RUNTIME/content_catalog.py — RESOURCE_CATALOG",
+  "r2_guard": "Nenhum ID de mineral novo foi criado — os 16 IDs, nomes e categorias vêm literalmente de RESOURCE_CATALOG já existente no runtime. Este arquivo apenas atribui um território/subregião-âncora a cada um, por eco temático de nome ou função já catalogada. Não edita o runtime nem 01_LORE/CANON_R2/. Não sincroniza o campo resources[] dentro dos arquivos SUB-XXX existentes (fica pendente para rodada futura, se desejado).",
+  "resources": [
+    {
+      "resource_id": "MIN-IRON",
+      "resource_name": "Ferral Bruto",
+      "category": "METAL",
+      "primary_territory": "TER-002",
+      "primary_subregion": "SUB-002-001",
+      "rationale": "Eco direto do nome 'Ferral' (Reino Ferral de Kharveth); insumo primário da Forja Real (EST-003).",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "weight_kg": 2.37,
+      "description": "Eco direto do nome 'Ferral' (Reino Ferral de Kharveth); insumo primário da Forja Real (EST-003)."
+    },
+    {
+      "resource_id": "MIN-COPPER",
+      "resource_name": "Cobrex Condutor",
+      "category": "METAL",
+      "primary_territory": "TER-005",
+      "primary_subregion": "SUB-005-001",
+      "rationale": "Metal condutor, insumo natural do Distrito Tecnomágico (fusão runa+tecnologia).",
+      "secondary_territories": [
+        "TER-007"
+      ],
+      "secondary_note": "TER-007: Condutividade do cobre aplicada a instrumentos medicos das Casas de Cura de Rubra-Viva.",
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ],
+      "weight_kg": 3.35,
+      "description": "Metal condutor, insumo natural do Distrito Tecnomágico (fusão runa+tecnologia)."
+    },
+    {
+      "resource_id": "MIN-TIN",
+      "resource_name": "Estanho Nimbo",
+      "category": "METAL",
+      "primary_territory": "TER-002",
+      "primary_subregion": "SUB-002-001",
+      "rationale": "Liga complementar ao ferro na produção de armas da Forja Real.",
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "weight_kg": 2.04,
+      "description": "Liga complementar ao ferro na produção de armas da Forja Real."
+    },
+    {
+      "resource_id": "MIN-SILVER",
+      "resource_name": "Argêntea Pálida",
+      "category": "PRECIOUS_METAL",
+      "primary_territory": "TER-001",
+      "primary_subregion": "SUB-001-001",
+      "rationale": "Metal precioso de comércio, natural da confederação mercantil de Lúminor.",
+      "secondary_territories": [
+        "TER-004"
+      ],
+      "secondary_note": "TER-004: Comercio maritimo da confederacao de Navyr usa prata como moeda de troca valorizada.",
+      "currency_tags": [
+        "CUR-001",
+        "CUR-000"
+      ],
+      "weight_kg": 2.35,
+      "description": "Metal precioso de comércio, natural da confederação mercantil de Lúminor."
+    },
+    {
+      "resource_id": "MIN-GOLD",
+      "resource_name": "Aúreo Solar",
+      "category": "PRECIOUS_METAL",
+      "primary_territory": "TER-010",
+      "primary_subregion": "SUB-010-001",
+      "rationale": "Riqueza associada à magocracia aristocrática dos Reis Magos.",
+      "secondary_territories": [
+        "TER-015"
+      ],
+      "secondary_note": "TER-015: Artefatos de ouro antigo encontrados nas Ruinas de Antes-do-Pacto (SUB-015-002) do Vale das Ruinas, processados em EST-053 Sitio Arqueologico (fase 56).",
+      "secondary_extraction": {"subregion": "SUB-015-002", "est": "EST-053", "extractor": "JOB-016", "method": "PENEIRA/CATA + RESTAURO", "guard": "NO_NAMED_HISTORICAL_CIVILIZATION"},
+      "secondary_agz": "AGZ-099",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ],
+      "weight_kg": 2.43,
+      "description": "Riqueza associada à magocracia aristocrática dos Reis Magos."
+    },
+    {
+      "resource_id": "MIN-CRYSTAL",
+      "resource_name": "Cristal Rúnico",
+      "category": "MAGIC_MINERAL",
+      "primary_territory": "TER-009",
+      "primary_subregion": "SUB-009-001",
+      "rationale": "Eco direto do nome (Liga Subcristal); já é a base das câmaras habitadas.",
+      "secondary_territories": [
+        "TER-017"
+      ],
+      "secondary_note": "TER-017: Cristal ronico usado em rituais de estabilizacao das ilhas do Arquipelago Etereo (SUB-017-002 Correntes de Eter, EST-059 Posto das Correntes, fase 56 — coleta estabilizada, sem minerar estrutura).",
+      "secondary_extraction": {"subregion": "SUB-017-002", "est": "EST-059", "extractor": "JOB-016", "method": "COLETA_ESTABILIZADA"},
+      "secondary_agz": "AGZ-101",
+      "currency_tags": [
+        "CUR-009",
+        "CUR-000"
+      ],
+      "weight_kg": 1.46,
+      "description": "Eco direto do nome (Liga Subcristal); já é a base das câmaras habitadas."
+    },
+    {
+      "resource_id": "MIN-MANA-ORE",
+      "resource_name": "Manalita",
+      "category": "MAGIC_MINERAL",
+      "primary_territory": "TER-010",
+      "primary_subregion": "SUB-010-003",
+      "rationale": "Minério mágico junto ao afloramento da Corrente Planetária (Marcas da Corrente, MAG-003).",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ],
+      "weight_kg": 1.04,
+      "description": "Minério mágico junto ao afloramento da Corrente Planetária (Marcas da Corrente, MAG-003)."
+    },
+    {
+      "resource_id": "MIN-VOID-GLASS",
+      "resource_name": "Vidro Umbral",
+      "category": "MAGIC_MINERAL",
+      "primary_territory": "TER-011",
+      "primary_subregion": "SUB-011-006",
+      "rationale": "Mineral sombrio/etéreo, coerente com as Fendas da Névoa e seus predadores (CRI-012/013).",
+      "secondary_territories": [
+        "TER-012"
+      ],
+      "secondary_note": "TER-012: Material sombrio/etereo usado em equipamento de contencao nas Zonas de Contencao.",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 0.67,
+      "description": "Mineral sombrio/etéreo, coerente com as Fendas da Névoa e seus predadores (CRI-012/013)."
+    },
+    {
+      "resource_id": "MIN-STONE",
+      "resource_name": "Rocha Estrutural",
+      "category": "STONE",
+      "primary_territory": "TER-003",
+      "primary_subregion": "SUB-003-002",
+      "rationale": "Material de construção/infraestrutura para o Distrito das Oficinas Ferroviárias.",
+      "currency_tags": [
+        "CUR-003",
+        "CUR-000"
+      ],
+      "weight_kg": 2.94,
+      "description": "Material de construção/infraestrutura para o Distrito das Oficinas Ferroviárias."
+    },
+    {
+      "resource_id": "MIN-BASALT",
+      "resource_name": "Basalto Negro",
+      "category": "STONE",
+      "primary_territory": "TER-013",
+      "primary_subregion": "SUB-013-001",
+      "rationale": "Rocha vulcânica/de tempestade, coerente com a Fortaleza do Trovão.",
+      "secondary_territories": [
+        "TER-014"
+      ],
+      "secondary_note": "TER-014 Cadeia de Cinzas (fase 45, detalhado fase 56: SUB-014-001 Caldeira Ativa / EST-049 Fundicao da Caldeira, extrator CIV-016 Torvin) é fonte secundária de mineração vulcânica — primary_territory (TER-013) não é alterado.",
+      "secondary_extraction": {"subregion": "SUB-014-001", "est": "EST-049", "extractor": "CIV-016", "method": "FERRAMENTA"},
+      "secondary_agz": "AGZ-098",
+      "currency_tags": [
+        "CUR-013",
+        "CUR-000"
+      ],
+      "weight_kg": 2.11,
+      "description": "Rocha vulcânica/de tempestade, coerente com a Fortaleza do Trovão."
+    },
+    {
+      "resource_id": "MIN-QUARTZ",
+      "resource_name": "Quartzo de Veio",
+      "category": "STONE",
+      "primary_territory": "TER-009",
+      "primary_subregion": "SUB-009-002",
+      "rationale": "Extraído junto ao cristal nos Túneis de Extração.",
+      "secondary_territories": [
+        "TER-016"
+      ],
+      "secondary_note": "TER-016: Veios de quartzo claro encontrados sob o gelo dos Confins de Gelo (SUB-016-001 Geleira Perene / EST-055 Posto da Geleira, fase 56), analogos ao cristal.",
+      "secondary_extraction": {"subregion": "SUB-016-001", "est": "EST-055", "extractor": "JOB-016", "method": "CORTE_GELO + BROCA"},
+      "secondary_agz": "AGZ-100",
+      "currency_tags": [
+        "CUR-009",
+        "CUR-000"
+      ],
+      "weight_kg": 2.17,
+      "description": "Extraído junto ao cristal nos Túneis de Extração."
+    },
+    {
+      "resource_id": "MIN-RARE",
+      "resource_name": "Liga-Núcleo Bruta",
+      "category": "RARE_MINERAL",
+      "primary_territory": "TER-005",
+      "primary_subregion": "SUB-005-002",
+      "rationale": "Material raro estudado nos Laboratórios de Convergência tecnomágica.",
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ],
+      "weight_kg": 0.55,
+      "description": "Material raro estudado nos Laboratórios de Convergência tecnomágica."
+    },
+    {
+      "resource_id": "MIN-TITAN",
+      "resource_name": "Titanita Cinzenta",
+      "category": "RARE_MINERAL",
+      "primary_territory": "TER-006",
+      "primary_subregion": "SUB-006-002",
+      "rationale": "Metal leve e resistente, natural para naves do Ancoradouro Aéreo.",
+      "secondary_territories": [
+        "TER-018"
+      ],
+      "secondary_note": "TER-018: Ja usado no Traje de Pressao (TRJ-018) da Fossa Abissal (SUB-018-001 Trincheira Profunda / EST-061 Cupula da Trincheira, fase 56) - titanita leve e resistente para equipamento de profundidade.",
+      "secondary_extraction": {"subregion": "SUB-018-001", "est": "EST-061", "extractor": "JOB-016", "method": "DRAGAGEM_PRESSAO + FORJA"},
+      "secondary_agz": "AGZ-102",
+      "currency_tags": [
+        "CUR-006",
+        "CUR-000"
+      ],
+      "weight_kg": 0.69,
+      "description": "Metal leve e resistente, natural para naves do Ancoradouro Aéreo."
+    },
+    {
+      "resource_id": "MIN-ROBOTIUM",
+      "resource_name": "Robotita Azul",
+      "category": "TECH_MINERAL",
+      "primary_territory": "TER-003",
+      "primary_subregion": "SUB-003-002",
+      "rationale": "Mineral tecnológico usado nas oficinas ferroviárias onde Androids também trabalham.",
+      "currency_tags": [
+        "CUR-003",
+        "CUR-000"
+      ],
+      "weight_kg": 1.92,
+      "description": "Mineral tecnológico usado nas oficinas ferroviárias onde Androids também trabalham."
+    },
+    {
+      "resource_id": "MIN-MAGNETITE",
+      "resource_name": "Magnetita de Pulso",
+      "category": "TECH_MINERAL",
+      "primary_territory": "TER-003",
+      "primary_subregion": "SUB-003-001",
+      "rationale": "Propriedade magnética aplicada ao Nó Ferroviário Central.",
+      "currency_tags": [
+        "CUR-003",
+        "CUR-000"
+      ],
+      "weight_kg": 1.13,
+      "description": "Propriedade magnética aplicada ao Nó Ferroviário Central."
+    },
+    {
+      "resource_id": "MIN-ROOT-SHARD",
+      "resource_name": "Fragmento Radicular",
+      "category": "CORRUPTED_MINERAL",
+      "primary_territory": "TER-008",
+      "primary_subregion": "SUB-008-002",
+      "rationale": "Mineral corrompido ligado às Raízes Sagradas e ao tema do Espinho-Negro (ART-001, BIO-001).",
+      "secondary_territories": [
+        "TER-019"
+      ],
+      "secondary_note": "TER-019: Fragmentos radiculares encontrados perto das raizes que tomam as Ruinas Cobertas (SUB-019-002 / EST-065 Sitio das Ruinas Cobertas, fase 56) - mesma familia da Raiz Profunda, conecta-se a rota existente TER-008-TER-019. Guarda NO_ROOT_ESCALATION.",
+      "secondary_extraction": {"subregion": "SUB-019-002", "est": "EST-065", "extractor": "JOB-016", "method": "COLETA_SUPERFICIAL + PURIFICACAO", "guard": "NO_ROOT_ESCALATION"},
+      "secondary_agz": "AGZ-103",
+      "currency_tags": [
+        "CUR-008",
+        "CUR-000"
+      ],
+      "weight_kg": 0.76,
+      "description": "Mineral corrompido ligado às Raízes Sagradas e ao tema do Espinho-Negro (ART-001, BIO-001)."
+    }
+  ],
+  "coverage_update_fase_55": "Todos os 19 territorios agora tem pelo menos 1 vinculo mineral (primario ou secundario) - fecha a lacuna de cobertura mineral incompleta identificada apos a expansao territorial."
+}

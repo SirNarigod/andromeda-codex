@@ -1,0 +1,56 @@
+{
+  "record_id": "QUEST-TER-016-V1.0",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "LOCAL_AUDITABLE_QUEST_TEMPLATE",
+  "title": "Rangido sob o Gelo",
+  "locality": "SUB-016-003",
+  "anchor_reference": "EST-057 Vigia da Fenda, JOB-015 Guarda e resposta a risco",
+  "premise": "Sons de rangido na Fenda Congelada sugerem que a rota mais curta entre assentamentos pode estar prestes a ceder.",
+  "phases": [
+    {
+      "id": "WELCOME",
+      "objective": "Aceitar a tarefa local e receber o briefing na Vigia da Fenda."
+    },
+    {
+      "id": "EVIDENCE",
+      "objective": "Investigar rachaduras, temperatura e movimento do gelo."
+    },
+    {
+      "id": "DECISION",
+      "objective": "Escolher uma resposta local com custo documentado."
+    },
+    {
+      "id": "REPORT",
+      "objective": "Reportar a resolucao ao Conselho do Gelo."
+    }
+  ],
+  "resolutions": [
+    {
+      "id": "AVOID",
+      "title": "Fechamento da Rota",
+      "effect": "A rota da fenda e fechada ate nova avaliacao.",
+      "local_consequence": "Risco cai, mas viagens ficam mais longas."
+    },
+    {
+      "id": "REPAIR",
+      "title": "Reforco da Passagem",
+      "effect": "Suportes reforcam a passagem, permitindo uso controlado.",
+      "local_consequence": "Consome recursos/tempo, mas resolve a causa."
+    },
+    {
+      "id": "ESCALATE_REPORT",
+      "title": "Escalonamento Formal",
+      "effect": "O caso e reportado ao Conselho do Gelo para decisao institucional.",
+      "local_consequence": "Resolucao mais lenta, mas gera registro formal."
+    }
+  ],
+  "evidence_rule": "Evidencia sustenta apenas relatorio local e reputacao contextual - nao identifica culpado como fato canonico sem portao autoral.",
+  "rewards": "reputacao contextual de runtime, acesso temporario e progressao pratica; nenhum item, titulo, territorio ou fato canonico.",
+  "prohibitions": [
+    "NO_OFFLINE_RESOLUTION",
+    "NO_CANON_PROMOTION",
+    "NO_NAMED_R2_APPEARANCE",
+    "NO_AUTHORIAL_DEATH",
+    "NO_ROOT_ESCALATION"
+  ]
+}

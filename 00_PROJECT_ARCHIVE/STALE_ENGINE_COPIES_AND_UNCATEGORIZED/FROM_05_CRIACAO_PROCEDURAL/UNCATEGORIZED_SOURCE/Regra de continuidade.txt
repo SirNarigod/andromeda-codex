@@ -1,0 +1,1 @@
+“Consulte as Fontes do Projeto. Master V2.0.1 é a autoridade canônica READ_ONLY e Living Simulation Engine V1.0.0 é a baseline selada. Não use Working Packages antigos como autoridade.”

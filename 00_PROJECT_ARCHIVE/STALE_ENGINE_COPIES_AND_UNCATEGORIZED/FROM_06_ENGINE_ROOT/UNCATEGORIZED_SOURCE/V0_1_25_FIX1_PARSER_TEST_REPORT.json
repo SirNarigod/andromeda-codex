@@ -1,0 +1,26 @@
+{
+  "build": "V0.1.25 DEV FIX1",
+  "parent": "V0.1.25 DEV",
+  "status": "STATIC_VALIDATED_RUNTIME_PENDING",
+  "runtime_defect": {
+    "file": "Wildlife.gd",
+    "line_reported": 258,
+    "error": "Cannot infer the type of end_pos variable because the value doesn't have a set type."
+  },
+  "root_cause": "untyped target parameter used for target.global_position in a := inference expression",
+  "fix": {
+    "fire_target_type": "Node3D",
+    "start_pos_type": "Vector3",
+    "end_pos_type": "Vector3",
+    "travel_time_type": "float",
+    "tween_type": "Tween"
+  },
+  "functional_changes": "NONE",
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1",
+  "static_checks": {
+    "checks": 13,
+    "passed": 13,
+    "failed": 0,
+    "status": "PASS"
+  }
+}

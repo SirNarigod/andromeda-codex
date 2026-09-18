@@ -1,0 +1,158 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-PROFESSION-LOCATION-INDEX-DEV-V1.0",
+  "title": "Vínculo das 15 profissões (STELLAR_PROFESSION_CATALOG_V1_0) a construções reais (EST-XXX)",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "canonical_status": "GAMEPLAY_DERIVED_DEV",
+  "r2_guard": "Nenhum PER-XXX (personagem R2) recebe profissão formal aqui — respeita formal_job_system_state:'PENDING' de R2_ROLE_SOURCE_REFERENCE_V1.json. Este arquivo só liga cada JOB-XXX (já catalogado) a uma construção (EST-XXX, camada de gameplay já existente), pelo mesmo domains/sources já descritos no catálogo — nenhum fato novo é inventado.",
+  "method_note": "Um EST-XXX pode receber mais de uma profissão quando faz sentido (ex. EST-004, sede de FAC-009/FAC-010, recebe artesão e instrutor).",
+  "placements": [
+    {
+      "job_ref": "JOB-001",
+      "job_title": "Criador e cuidador de fauna",
+      "assigned_est": "EST-037",
+      "est_name": "Curral e Estábulo",
+      "rationale": "Fauna leiteira (CRI-002/003/004, sources do próprio JOB-001) já criada nesta construção."
+    },
+    {
+      "job_ref": "JOB-002",
+      "job_title": "Preparador e conservador de alimento",
+      "assigned_est": "EST-012",
+      "est_name": "Botica do Jardim Central",
+      "rationale": "Preparo/conservação de ervas e alimento já é função desta loja (domains food+health do JOB-002)."
+    },
+    {
+      "job_ref": "JOB-003",
+      "job_title": "Guia, caçador e rastreador",
+      "assigned_est": "EST-007",
+      "est_name": "Acampamento de Caravana",
+      "rationale": "Hub de rota comercial (domain travel do JOB-003)."
+    },
+    {
+      "job_ref": "JOB-004",
+      "job_title": "Investigador de campo",
+      "assigned_est": "EST-045",
+      "est_name": "Posto de Vigia da Estação Oriental",
+      "rationale": "CIT-002 tem tema R2 explícito de investigação/desaparecimentos (domain evidence/hazards do JOB-004)."
+    },
+    {
+      "job_ref": "JOB-005",
+      "job_title": "Mediador comunitário",
+      "assigned_est": "EST-013",
+      "est_name": "Câmara Mercantil",
+      "rationale": "Construção institucional de negociação (domain social/contracts do JOB-005)."
+    },
+    {
+      "job_ref": "JOB-006",
+      "job_title": "Artesão e reparador de oficina",
+      "assigned_est": "EST-004",
+      "est_name": "Oficina de Charneira",
+      "rationale": "Sede de FAC-009/FAC-010 (Colegiado/Liga dos Ofícios), sources diretas do JOB-006."
+    },
+    {
+      "job_ref": "JOB-007",
+      "job_title": "Instrutor de ofício e segurança",
+      "assigned_est": "EST-004",
+      "est_name": "Oficina de Charneira",
+      "rationale": "Mesmo hub de FAC-009, que já coordena 'apprenticeship'/'safety review' (source do JOB-007)."
+    },
+    {
+      "job_ref": "JOB-008",
+      "job_title": "Agente de licenças e contratos",
+      "assigned_est": "EST-002",
+      "est_name": "Entreposto da Doca",
+      "rationale": "Construção comercial portuária, coerente com FAC-010 (licenças/rotas, source do JOB-008)."
+    },
+    {
+      "job_ref": "JOB-009",
+      "job_title": "Coordenador de abastecimento",
+      "assigned_est": "EST-014",
+      "est_name": "Bilheteria e Armazém da Estação",
+      "rationale": "Armazém ferroviário — logística de abastecimento (domain economy/logistics do JOB-009)."
+    },
+    {
+      "job_ref": "JOB-010",
+      "job_title": "Técnico ferroviário e de rota",
+      "assigned_est": "EST-015",
+      "est_name": "Galpão de Manutenção Ferroviária",
+      "rationale": "Manutenção de trilhos é a function literal desta construção (domain infrastructure do JOB-010)."
+    },
+    {
+      "job_ref": "JOB-011",
+      "job_title": "Curador de campo",
+      "assigned_est": "EST-025",
+      "est_name": "Enfermaria Principal",
+      "rationale": "Construção de saúde/cuidado (domain health/care do JOB-011)."
+    },
+    {
+      "job_ref": "JOB-012",
+      "job_title": "Especialista em contenção",
+      "assigned_est": "EST-009",
+      "est_name": "Guarnição de Contenção",
+      "rationale": "Nome e function já são de contenção (domain magic/hazards do JOB-012, sources FAC-001/FAC-004)."
+    },
+    {
+      "job_ref": "JOB-013",
+      "job_title": "Pesquisador arcano-botânico",
+      "assigned_est": "EST-028",
+      "est_name": "Templo Sagrado das Raízes",
+      "rationale": "Construção institucional botânica em Santuários do Coração (TER-008), território de FAC-001/FAC-005 (sources do JOB-013)."
+    },
+    {
+      "job_ref": "JOB-014",
+      "job_title": "Armeiro rúnico e mantenedor",
+      "assigned_est": "EST-011",
+      "est_name": "Armeria Rúnica da Forja Real",
+      "rationale": "Loja de manutenção de armas rúnicas — match direto com ART-004..015/MAG-002 (sources do JOB-014)."
+    },
+    {
+      "job_ref": "JOB-015",
+      "job_title": "Guarda e resposta a risco",
+      "assigned_est": "EST-040",
+      "est_name": "Posto Avançado do Perímetro",
+      "rationale": "Construção militar em Zonas de Contenção (TER-012), coerente com ART-012/013 e FAC-004 (sources do JOB-015)."
+    },
+    {
+      "job_ref": "JOB-016",
+      "job_title": "Extrator de recursos (mineração e coleta)",
+      "assigned_est": "EST-049",
+      "est_name": "Fundição da Caldeira",
+      "rationale": "Profissão criada na fase 41 (extração de minério/flora); primeiro placement formal, em TER-014 (fase 45), onde a extração vulcânica é a atividade central."
+    },
+    {
+      "job_ref": "JOB-004",
+      "job_title": "Investigador de campo",
+      "assigned_est": "EST-053",
+      "est_name": "Sitio Arqueologico das Ruinas",
+      "rationale": "2o placement de JOB-004 (fase 48) - investigacao arqueologica em TER-015, mesmo domain evidence/hazards do JOB-004."
+    },
+    {
+      "job_ref": "JOB-016",
+      "job_title": "Extrator de recursos (mineracao e coleta)",
+      "assigned_est": "EST-055",
+      "est_name": "Posto da Geleira",
+      "rationale": "2o placement de JOB-016 (fase 49) - extracao de gelo puro em TER-016."
+    },
+    {
+      "job_ref": "JOB-016",
+      "job_title": "Extrator de recursos (mineracao e coleta)",
+      "assigned_est": "EST-059",
+      "est_name": "Posto das Correntes",
+      "rationale": "3o placement de JOB-016 (fase 50) - colheita de eter bruto em TER-017."
+    },
+    {
+      "job_ref": "JOB-016",
+      "job_title": "Extrator de recursos (mineracao e coleta)",
+      "assigned_est": "EST-061",
+      "est_name": "Cupula da Trincheira",
+      "rationale": "4o placement de JOB-016 (fase 51) - extracao mineral na Trincheira Profunda de TER-018."
+    },
+    {
+      "job_ref": "JOB-004",
+      "job_title": "Investigador de campo",
+      "assigned_est": "EST-065",
+      "est_name": "Sitio das Ruinas Cobertas",
+      "rationale": "3o placement de JOB-004 (fase 52) - investigacao arqueologica em TER-019, mesmo domain evidence/hazards do JOB-004."
+    }
+  ]
+}

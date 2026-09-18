@@ -1,0 +1,18 @@
+{
+  "record_id": "R2_SOURCE_AUTHORITY_INDEX_V1_0",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.0",
+  "status": "IMMUTABLE_NARRATIVE_SOURCE",
+  "authority": {"role": "ORIGEM_DE_LORE_PERSONAGENS_EPISODIOS_E_COSMOLOGIA", "precedence": 1, "mutable": false},
+  "source_archive": {"path": "ANDROMEDA_CODEX_EVIDENCE/SOURCE_ARCHIVES/Projeto Andromeda.zip", "sha256": "257e456a5d0396310ec2355b3dfc0f11f4e0a5264cf6e764591c8760f5070cb0", "nested_delivery": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1"},
+  "invariants": ["R2_FACTS_ARE_NOT_RETCONNED_BY_DERIVED_CONTENT", "SEALED_EPISODE_REVELATIONS_ARE_PRESERVED", "R2_CHARACTER_AGENCY_IS_PRESERVED"],
+  "confirmed_records": [
+    {"id": "PLA-001", "claim": "Stellar é planeta vivo em equilíbrio instável entre natureza, tecnologia, magia, sociedades e espíritos; ano corrente 842 EC; não há governo planetário.", "source": "codex/canonical/codex.json"},
+    {"id": "COS-002", "claim": "Amadon é guardião conectado a Stellar pela Corrente Planetária e criador conhecido do Espinho-Negro; sua identificação por Kenua ocorre somente no Episódio 8 da Temporada 1.", "source": "codex/canonical/codex.json"},
+    {"id": "PER-002", "claim": "Kenua Vaarn é das Terras Livres da Fronteira e hospedeira do Espinho-Negro, sem perda automática de agência corporal.", "source": "codex/canonical/codex.json"},
+    {"id": "ART-001", "claim": "Espinho-Negro é planta fóssil inteligente criada contra a Raiz Profunda; a simbiose é gradual, perigosa e materialmente limitada.", "source": "codex/canonical/codex.json"},
+    {"id": "COR-001", "claim": "Raiz Profunda é organismo invasivo plantado por Votakhel.", "source": "codex/canonical/codex.json"}
+  ],
+  "prohibitions": ["NO_UNSOURCED_KENUA_RETCON", "NO_AMADON_PRE_S01E08_IDENTIFICATION", "NO_R2_EPISODE_RETCON", "NO_R2_SOURCE_MUTATION"],
+  "story_generators": ["Fragmentos da Corrente Planetária permitem investigação sem antecipar Amadon.", "A simbiose de Kenua cria escolhas com custo e preserva sua agência.", "A ausência de governo planetário torna cada crise uma disputa local de legitimidade."]
+}

@@ -1,0 +1,52 @@
+{
+  "corrections": [
+    {
+      "classification": "GAMEPLAY_BALANCE",
+      "fix": "Reduced abstract propulsion-per-km coefficients; distances were not changed.",
+      "id": "S10-C01",
+      "issue": "Initial propulsion cost made a ~512 km internal connector exceed light-vehicle capacity.",
+      "retest": "PASS"
+    },
+    {
+      "classification": "HARNESS",
+      "fix": "Corrected test path; runtime unchanged.",
+      "id": "S10-C02",
+      "issue": "Determinism unit test read vehicle_ref at the wrong response nesting level.",
+      "retest": "PASS"
+    },
+    {
+      "classification": "INCONCLUSIVE_TIMEOUT_NOT_FUNCTIONAL_FAIL",
+      "fix": "Instrumented create/travel/close/reopen/resume and reran persistence isolated.",
+      "id": "S10-C03",
+      "issue": "Grouped persistence run exceeded executor limit after prior cases completed.",
+      "retest": "1/1 PASS ~24s"
+    },
+    {
+      "classification": "FUNCTIONAL_COMPLETENESS",
+      "fix": "Ponte Varden inoperable state now blocks the local Varga road attachment; repaired state restores traversal.",
+      "id": "S10-C04",
+      "issue": "Bridge condition existed but was not yet enforced in route traversal.",
+      "retest": "29/29 validation PASS"
+    },
+    {
+      "classification": "GAMEPLAY_COMPLETENESS",
+      "fix": "Off-road profile receives reduced anomaly-terrain penalty; values remain gameplay-derived.",
+      "id": "S10-C05",
+      "issue": "Root Deep terrain penalty did not distinguish off-road-capable vehicles.",
+      "retest": "18/18 unit + 31/31 stress PASS"
+    },
+    {
+      "classification": "RESTORE_HARNESS_OUTPUT_PATH",
+      "fix": "Re-extracted candidate and routed validation/stress outputs outside restored tree using supported environment variables.",
+      "id": "S10-C06",
+      "issue": "Restore validation/stress default outputs overwrote two manifest-protected report files in the extracted tree.",
+      "retest": "561/561 manifest + 562/562 ledger + zero transients PASS after full restore tests"
+    }
+  ],
+  "generated_at": "2026-08-18T21:32:34.321206+00:00",
+  "open_corrections": 0,
+  "record_id": "ARPG-STAGE10-CORRECTION-LEDGER-V1.1.0",
+  "stage": "10/23",
+  "status": "PASS",
+  "version": "V1.1.0"
+}

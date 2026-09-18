@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "CIT-002-TERRITORY-LINK-DEV-V1.0",
+  "title": "Vínculo territorial derivado de CIT-002 Estação Oriental",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "r2_compatibility": "Nenhum fato de CIT-001 ou CIT-002 é alterado. Este arquivo só formaliza um vínculo territorial já implícito num fato R2 existente — mesmo padrão de BIOMA_TERRITORIO_LINKS_DEV_V1_0.json.",
+  "cit_ref": "CIT-002",
+  "cit_title": "Estação Oriental",
+  "parent_political_unit": "TER-011",
+  "parent_political_unit_title": "Terras Livres",
+  "parent_subregion": "SUB-011-002",
+  "parent_subregion_title": "Corredor Oriental",
+  "rationale": "CIT-002 (R2 confirmado) já cita, em sua própria relation, 'posto-de-varga' com label 'Rota fronteiriça' — ligando-a diretamente a CIT-001 Posto de Varga. CIT-001 tem facts.Território='Terras Livres' (TER-011) como fato R2 explícito. Logo, o território-pai de CIT-002 é derivável do próprio fato R2 (rota fronteiriça a um local cujo território já é conhecido), não inventado. A subregião SUB-011-002 'Corredor Oriental' foi escolhida por eco direto do nome ('Oriental') dentro de TER-011.",
+  "prohibitions": ["NO_R2_ENTRY_MUTATION", "NO_NEW_SOVEREIGNTY", "NO_FIXED_BORDER_COORDINATE"],
+  "safety": "FICTIONAL_LOCATION_ONLY"
+}

@@ -1,0 +1,404 @@
+{
+  "record_id": "MASTER-ARQUITETURA-CATALOG-V2.0.0",
+  "title": "Tipologia arquitetônica oficial do MASTER V2.0.1 (47 entradas: 11 programas + 36 propriedades construídas)",
+  "provenance": {
+    "master_release": "ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE",
+    "master_release_zip_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "source_files": [
+      "01_CANON/ANDROMEDA_CODEX_CANON_MASTER_V2_0_0.json (entities, domain=arquitetura)"
+    ],
+    "authority": "CANON_MASTER_V2_CONFIRMADO",
+    "namespace_check": "Prefixo ARQ-PGM-/ARQ-PRP-, sem colisão com nosso EST- (construções derivadas, fase 12+).",
+    "structure_note": "47 entradas = tipologia arquitetônica oficial de Stellar, em 2 camadas: ARQ-PGM (11, 'programas' - o PROPÓSITO funcional de um edifício: centro administrativo, clínica, mercado, escola, 4 tipos de moradia, armazém, oficina) e ARQ-PRP (36, 'propriedades' - o ATIVO CONSTRUÍDO físico correspondente, incluindo a contraparte arquitetônica dos sistemas técnicos já importados no domínio Tecnologia: água, energia, saneamento, comunicação, transporte). Complementa (não substitui) nosso catálogo de 68 EST-XXX (construções específicas e nomeadas) - isto é a TIPOLOGIA genérica por trás delas.",
+    "category_label_note": "Rótulo inferido a partir do padrão de texto das próprias entradas - o pacote-fonte não documenta o significado oficial da sigla."
+  },
+  "count_total": 47,
+  "programs": [
+    {
+      "category_code": "ADM",
+      "category_label_inferred": "Administração",
+      "count": 1,
+      "items": [
+        {
+          "id": "ARQ-PGM-ADM-001",
+          "name": "Programa funcional de centro administrativo local"
+        }
+      ]
+    },
+    {
+      "category_code": "CLN",
+      "category_label_inferred": "Clínica/saúde",
+      "count": 1,
+      "items": [
+        {
+          "id": "ARQ-PGM-CLN-001",
+          "name": "Programa funcional de atendimento e estabilização"
+        }
+      ]
+    },
+    {
+      "category_code": "COM",
+      "category_label_inferred": "Comércio/mercado",
+      "count": 1,
+      "items": [
+        {
+          "id": "ARQ-PGM-COM-001",
+          "name": "Programa funcional de mercado/entreposto"
+        }
+      ]
+    },
+    {
+      "category_code": "EDU",
+      "category_label_inferred": "Educação",
+      "count": 1,
+      "items": [
+        {
+          "id": "ARQ-PGM-EDU-001",
+          "name": "Programa funcional de centro local de ensino"
+        }
+      ]
+    },
+    {
+      "category_code": "HAB",
+      "category_label_inferred": "Habitação",
+      "count": 4,
+      "items": [
+        {
+          "id": "ARQ-PGM-HAB-001",
+          "name": "Moradia familiar adaptável — perfil urbano"
+        },
+        {
+          "id": "ARQ-PGM-HAB-002",
+          "name": "Moradia familiar adaptável — perfil trabalho-moradia condicional"
+        },
+        {
+          "id": "ARQ-PGM-HAB-003",
+          "name": "Moradia rural autônoma — perfil de serviços essenciais"
+        },
+        {
+          "id": "ARQ-PGM-HAB-004",
+          "name": "Habitação coletiva de serviço — perfil funcional"
+        }
+      ]
+    },
+    {
+      "category_code": "STO",
+      "category_label_inferred": "Armazenamento",
+      "count": 1,
+      "items": [
+        {
+          "id": "ARQ-PGM-STO-001",
+          "name": "Programa funcional de armazém comunitário"
+        }
+      ]
+    },
+    {
+      "category_code": "UTL",
+      "category_label_inferred": "Utilidades",
+      "count": 1,
+      "items": [
+        {
+          "id": "ARQ-PGM-UTL-001",
+          "name": "Programa funcional de base de utilidades e manutenção"
+        }
+      ]
+    },
+    {
+      "category_code": "WRK",
+      "category_label_inferred": "Oficina civil",
+      "count": 1,
+      "items": [
+        {
+          "id": "ARQ-PGM-WRK-001",
+          "name": "Programa funcional de oficina civil"
+        }
+      ]
+    }
+  ],
+  "built_properties": [
+    {
+      "category_code": "ADM",
+      "category_label_inferred": "Administração",
+      "count": 1,
+      "items": [
+        {
+          "id": "ARQ-PRP-ADM-001",
+          "name": "Centro administrativo local"
+        }
+      ]
+    },
+    {
+      "category_code": "AGU",
+      "category_label_inferred": "Água/hidráulica",
+      "count": 2,
+      "items": [
+        {
+          "id": "ARQ-PRP-AGU-001",
+          "name": "Nó construído de entrada e controle de água"
+        },
+        {
+          "id": "ARQ-PRP-AGU-002",
+          "name": "Núcleo construído de reserva e setorização hídrica"
+        }
+      ]
+    },
+    {
+      "category_code": "CLN",
+      "category_label_inferred": "Clínica/saúde",
+      "count": 1,
+      "items": [
+        {
+          "id": "ARQ-PRP-CLN-001",
+          "name": "Centro local de atendimento"
+        }
+      ]
+    },
+    {
+      "category_code": "CMN",
+      "category_label_inferred": "Comunicação",
+      "count": 2,
+      "items": [
+        {
+          "id": "ARQ-PRP-CMN-001",
+          "name": "Núcleo construído de comunicação local"
+        },
+        {
+          "id": "ARQ-PRP-CMN-002",
+          "name": "Ponto construído de retransmissão e continuidade de sinal"
+        }
+      ]
+    },
+    {
+      "category_code": "COM",
+      "category_label_inferred": "Comércio/mercado",
+      "count": 1,
+      "items": [
+        {
+          "id": "ARQ-PRP-COM-001",
+          "name": "Mercado/entreposto local"
+        }
+      ]
+    },
+    {
+      "category_code": "EDU",
+      "category_label_inferred": "Educação",
+      "count": 1,
+      "items": [
+        {
+          "id": "ARQ-PRP-EDU-001",
+          "name": "Centro local de ensino"
+        }
+      ]
+    },
+    {
+      "category_code": "EMR",
+      "category_label_inferred": "Emergência",
+      "count": 1,
+      "items": [
+        {
+          "id": "ARQ-PRP-EMR-001",
+          "name": "Ponto local construído de resposta emergencial"
+        }
+      ]
+    },
+    {
+      "category_code": "ENE",
+      "category_label_inferred": "Energia",
+      "count": 2,
+      "items": [
+        {
+          "id": "ARQ-PRP-ENE-001",
+          "name": "Núcleo construído de distribuição energética local"
+        },
+        {
+          "id": "ARQ-PRP-ENE-002",
+          "name": "Setor construído de cargas críticas e transferência segura"
+        }
+      ]
+    },
+    {
+      "category_code": "EVC",
+      "category_label_inferred": "Evacuação/reunião",
+      "count": 1,
+      "items": [
+        {
+          "id": "ARQ-PRP-EVC-001",
+          "name": "Ponto de reunião e evacuação — condicional"
+        }
+      ]
+    },
+    {
+      "category_code": "HAB",
+      "category_label_inferred": "Habitação",
+      "count": 3,
+      "items": [
+        {
+          "id": "ARQ-PRP-HAB-001",
+          "name": "Moradia familiar adaptável"
+        },
+        {
+          "id": "ARQ-PRP-HAB-002",
+          "name": "Moradia rural autônoma"
+        },
+        {
+          "id": "ARQ-PRP-HAB-003",
+          "name": "Habitação coletiva de serviço"
+        }
+      ]
+    },
+    {
+      "category_code": "LUZ",
+      "category_label_inferred": "Iluminação",
+      "count": 1,
+      "items": [
+        {
+          "id": "ARQ-PRP-LUZ-001",
+          "name": "Infraestrutura construída de iluminação civil e operacional"
+        }
+      ]
+    },
+    {
+      "category_code": "MNT",
+      "category_label_inferred": "Manutenção",
+      "count": 4,
+      "items": [
+        {
+          "id": "ARQ-PRP-MNT-001",
+          "name": "Baia funcional de inspeção e manutenção"
+        },
+        {
+          "id": "ARQ-PRP-MNT-002",
+          "name": "Depósito funcional de peças, consumíveis e sobressalentes"
+        },
+        {
+          "id": "ARQ-PRP-MNT-003",
+          "name": "Área funcional de recuperação e retorno ao serviço"
+        },
+        {
+          "id": "ARQ-PRP-MNT-004",
+          "name": "Ponto construído de apoio à oficina móvel"
+        }
+      ]
+    },
+    {
+      "category_code": "PUB",
+      "category_label_inferred": "Espaço público",
+      "count": 1,
+      "items": [
+        {
+          "id": "ARQ-PRP-PUB-001",
+          "name": "Espaço público multifuncional local"
+        }
+      ]
+    },
+    {
+      "category_code": "SAN",
+      "category_label_inferred": "Saneamento",
+      "count": 3,
+      "items": [
+        {
+          "id": "ARQ-PRP-SAN-001",
+          "name": "Nó construído de coleta e encaminhamento de efluentes"
+        },
+        {
+          "id": "ARQ-PRP-SAN-002",
+          "name": "Núcleo construído de triagem de resíduos sólidos"
+        },
+        {
+          "id": "ARQ-PRP-SAN-003",
+          "name": "Área construída de isolamento de resíduos técnicos e perigosos"
+        }
+      ]
+    },
+    {
+      "category_code": "SEC",
+      "category_label_inferred": "Segurança/controle de acesso",
+      "count": 1,
+      "items": [
+        {
+          "id": "ARQ-PRP-SEC-001",
+          "name": "Ponto construído de controle de acesso a infraestrutura crítica"
+        }
+      ]
+    },
+    {
+      "category_code": "SEN",
+      "category_label_inferred": "Sensoriamento/monitoramento",
+      "count": 1,
+      "items": [
+        {
+          "id": "ARQ-PRP-SEN-001",
+          "name": "Posto construído de monitoramento de condição de infraestrutura"
+        }
+      ]
+    },
+    {
+      "category_code": "STO",
+      "category_label_inferred": "Armazenamento",
+      "count": 1,
+      "items": [
+        {
+          "id": "ARQ-PRP-STO-001",
+          "name": "Armazém comunitário"
+        }
+      ]
+    },
+    {
+      "category_code": "TRN",
+      "category_label_inferred": "Transporte",
+      "count": 6,
+      "items": [
+        {
+          "id": "ARQ-PRP-TRN-001",
+          "name": "Interface construída ferroviária de passageiros e carga"
+        },
+        {
+          "id": "ARQ-PRP-TRN-002",
+          "name": "Apoio construído de pátio e manobra ferroviária"
+        },
+        {
+          "id": "ARQ-PRP-TRN-003",
+          "name": "Garagem e ponto construído de operação automotiva"
+        },
+        {
+          "id": "ARQ-PRP-TRN-004",
+          "name": "Terminal aquático funcional construído — condicional"
+        },
+        {
+          "id": "ARQ-PRP-TRN-005",
+          "name": "Apoio terrestre construído a operações aéreas — condicional"
+        },
+        {
+          "id": "ARQ-PRP-TRN-006",
+          "name": "Núcleo construído de transferência intermodal — condicional"
+        }
+      ]
+    },
+    {
+      "category_code": "UTL",
+      "category_label_inferred": "Utilidades",
+      "count": 2,
+      "items": [
+        {
+          "id": "ARQ-PRP-UTL-001",
+          "name": "Base local de utilidades e manutenção"
+        },
+        {
+          "id": "ARQ-PRP-UTL-002",
+          "name": "Nó de inspeção e manutenção de utilidades"
+        }
+      ]
+    },
+    {
+      "category_code": "WRK",
+      "category_label_inferred": "Oficina civil",
+      "count": 1,
+      "items": [
+        {
+          "id": "ARQ-PRP-WRK-001",
+          "name": "Oficina civil modular"
+        }
+      ]
+    }
+  ]
+}

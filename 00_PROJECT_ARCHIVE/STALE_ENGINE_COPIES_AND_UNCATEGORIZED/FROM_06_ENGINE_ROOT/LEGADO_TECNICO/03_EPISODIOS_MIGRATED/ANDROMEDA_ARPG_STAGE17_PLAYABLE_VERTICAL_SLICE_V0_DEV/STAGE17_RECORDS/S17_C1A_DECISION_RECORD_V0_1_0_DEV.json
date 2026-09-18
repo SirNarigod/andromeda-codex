@@ -1,0 +1,409 @@
+{
+  "record_identity": "S17_C1A_DECISION_RECORD_V0_1_0_DEV",
+  "created_at": "2026-08-28T22:07:48.8652050Z",
+  "stage": "STAGE17",
+  "process": "ETAPA_31_S17_C1A_RESOURCE_METRIC_PLACEMENT_AUTHORITY_DESIGN",
+  "record_type": "ARCHITECTURE_AND_AUTHORIAL_POLICY_DECISION",
+  "status": "AWAITING_AUTHOR_DECISION",
+  "implementation_status": "NOT_STARTED",
+  "scope_guards": {
+    "backend_modified": false,
+    "godot_modified": false,
+    "protected_runtime_modified": false,
+    "stage16b_modified": false,
+    "gate_created": false,
+    "checkpoint_created": false,
+    "backup_created": false,
+    "database_migrated": false
+  },
+  "entry_state": {
+    "stage16b": "CLOSED_READ_ONLY",
+    "S17_00": "PASS",
+    "S17_A": "PASS",
+    "S17_B1": "PASS_36_OF_36",
+    "S17_B2": "PASS_73_OF_73",
+    "S17_C0": "PASS",
+    "S17_C1_RESOURCE_POSITION_AUTHORITY_GAP": "CONFIRMED",
+    "S17_C1_RESOURCE_AUTHORITY_POSITION_CONTRACT": "BLOCKED",
+    "S17_C2": "NOT_STARTED",
+    "ENEMY_AUTHORITY_SPATIAL_BINDING_READY": true,
+    "RESOURCE_AUTHORITY_SPATIAL_BINDING_READY": false
+  },
+  "audit_conclusion": {
+    "resource_identity_exists": true,
+    "resource_identity_format": "GTH-*",
+    "resource_metric_position_exists": false,
+    "resource_metric_range_exists": false,
+    "resource_los_authority_exists": false,
+    "historical_gather_location_rule": "PLAYER_BLOCK_REF_EQUALS_RESOURCE_BLOCK_REF",
+    "current_projection_authority": "GODOT_LOCAL_PLACEHOLDER_ONLY",
+    "gap_class": "STRUCTURAL_AUTHORITY_SOURCE_GAP",
+    "reason_c1_blocked": "Current GTH nodes are logical gathering/depletion pools scoped to zone/block and have no individual territorial position."
+  },
+  "existing_spatial_patterns": [
+    {
+      "pattern": "GEODETIC_TO_ISOMETRIC_METRIC_FRAME",
+      "source": "01_RUNTIME/spatial_coordinates.py",
+      "reuse": "CRS, units, conversion and derived chunk lookup",
+      "limit": "Does not place Resources"
+    },
+    {
+      "pattern": "DETERMINISTIC_SEED_TAG_ANCHORS",
+      "source": "01_RUNTIME/spatial_coordinates.py::_point_for_bbox/_point_near",
+      "reuse": "Stable input plus hash principle",
+      "limit": "No resource identity, placement revision, terrain or exclusion validation"
+    },
+    {
+      "pattern": "DETERMINISTIC_ENCOUNTER_SLOTS",
+      "source": "01_RUNTIME/arpg_world_core.py::_bootstrap_zones",
+      "reuse": "world seed plus zone plus ordinal",
+      "limit": "Encounter slots use placeholder altitude and are not Resource placements"
+    },
+    {
+      "pattern": "PERSISTED_METRIC_MOVEMENT_STATE",
+      "source": "01_RUNTIME/continuous_movement.py",
+      "reuse": "Position frame, finite validation, world scope and hashing",
+      "limit": "Dynamic actor table must not be reused for static Resources"
+    },
+    {
+      "pattern": "PERSISTED_WORLD_OBJECT_POSITION",
+      "source": "01_RUNTIME/arpg_ground_loot_core.py and arpg_water_bag_survival_core.py",
+      "reuse": "Per-ref position payload and persistence model",
+      "limit": "Drop/Bag semantics cannot establish Resource origin"
+    },
+    {
+      "pattern": "ZONE_BLOCK_BOUNDS_AND_LAYERS",
+      "source": "01_RUNTIME/country_scale.py and arpg_world_core.py",
+      "reuse": "Containment, indexing and context",
+      "limit": "Block/subregion centers are not individual placement"
+    },
+    {
+      "pattern": "LOD_AND_STREAM_PROJECTION",
+      "source": "01_RUNTIME/atlas_country_lod.py, streaming_system.py and arpg_terrain_traversal_streaming_core.py",
+      "reuse": "ACTIVE/PRELOAD/SYSTEMIC projection policy",
+      "limit": "Current Resource layer is block-level and CELL-S16A is not persistent content authority"
+    },
+    {
+      "pattern": "SERVER_SIDE_SCENE_OBJECT_DISTANCE_AND_BLOCKING",
+      "source": "01_RUNTIME/collision_interaction.py",
+      "reuse": "Authority reads object coordinates and movement position",
+      "limit": "No Resource LOS/blocker contract or complete obstacle map"
+    },
+    {
+      "pattern": "LIVING_AGGREGATE_RESOURCE_METRICS",
+      "source": "01_RUNTIME/arpg_living_integration_core.py",
+      "reuse": "Keep systemic availability/depletion aggregated",
+      "limit": "Living does not require individual Resource positions"
+    }
+  ],
+  "resource_identity_analysis": {
+    "node_ref_derivation": "sha256(world_seed|activity|block_ref|source_kind|source_ref)",
+    "current_semantics": "LOGICAL_GATHERING_AND_DEPLETION_POOL",
+    "country_resource_semantics": "AGGREGATE_MINERAL_FLORA_FAUNA_RECORD",
+    "physical_instance_semantics_defined": false,
+    "cardinality_decision_required": true,
+    "supported_designs": [
+      "ONE_GTH_TO_ONE_PHYSICAL_PLACEMENT",
+      "ONE_GTH_LOGICAL_POOL_TO_MANY_STABLE_PHYSICAL_PLACEMENTS"
+    ],
+    "technical_preference": "PRESERVE_GTH_AS_LOGICAL_AUTHORITY_AND_ADD_STABLE_PHYSICAL_IDENTITY_ONLY_WHEN_N_TO_1_IS_REQUIRED",
+    "playable_v0_low_risk_path": "ONE_EXPLICIT_PLACEMENT_FOR_EACH_SELECTED_TREE_AND_ORE_GTH"
+  },
+  "options": {
+    "A_AUTHORIAL": {
+      "summary": "Every Resource placement is explicitly authored, validated and materialized per world.",
+      "authoring_source": "Blender/Godot/Kits export through an offline validator and canonical manifest",
+      "runtime_authority": "Stage17 backend materialized placement registry",
+      "persistence": [
+        "position",
+        "placement_revision",
+        "source_manifest_hash",
+        "world identity",
+        "removed/override state",
+        "existing GTH depletion remains separate"
+      ],
+      "advantages": [
+        "Maximum author control",
+        "Excellent tutorial and landmark composition",
+        "Simple debugging",
+        "Strong save stability",
+        "Natural Kit workflow"
+      ],
+      "disadvantages": [
+        "High authoring cost",
+        "Poor manual scale for dense populations",
+        "Requires validators to prevent overlap and invalid terrain"
+      ]
+    },
+    "B_PROCEDURAL": {
+      "summary": "Placements derive from stable seed, region, identity/ordinal, algorithm version and constraint hash.",
+      "required_inputs": [
+        "world_seed",
+        "placement_region_ref",
+        "resource/source identity",
+        "stable ordinal",
+        "placement_algorithm_version",
+        "constraint_set_hash"
+      ],
+      "runtime_policy": "Bake and materialize results; do not regenerate positions on each reload.",
+      "persistence": [
+        "seed",
+        "algorithm version",
+        "content and constraint hashes",
+        "materialized positions",
+        "removed/override/depletion mapping"
+      ],
+      "advantages": [
+        "High scale",
+        "Low manual population cost",
+        "Repeatable with frozen inputs",
+        "Suitable for new-world generation"
+      ],
+      "disadvantages": [
+        "Lower author control",
+        "Terrain/exclusion/overlap complexity",
+        "Harder debugging",
+        "High migration risk when algorithm changes"
+      ]
+    },
+    "C_HYBRID": {
+      "summary": "Explicit hero placements plus deterministic common placements inside authored regions and exclusions, baked and materialized before gameplay.",
+      "persistence": [
+        "explicit and generated positions",
+        "placement schema and revision",
+        "algorithm version for generated population",
+        "source/terrain/constraint hashes",
+        "world identity",
+        "overrides and removal state",
+        "GTH depletion mapping"
+      ],
+      "advantages": [
+        "Author control where it matters",
+        "Scalable common population",
+        "Best Kit/Blender/Godot compatibility",
+        "Terrain constraints can be authored",
+        "Simple runtime because placements are materialized"
+      ],
+      "disadvantages": [
+        "More complex build pipeline",
+        "Requires precedence rules",
+        "Requires explicit cardinality and migration policy"
+      ],
+      "technical_recommendation": true
+    }
+  },
+  "formal_comparison": [
+    {"criterion":"authority_clarity","authorial":"VERY_HIGH","procedural":"HIGH_IF_FROZEN","hybrid":"VERY_HIGH_AFTER_BAKE"},
+    {"criterion":"author_control","authorial":"MAXIMUM","procedural":"LOW_TO_MEDIUM","hybrid":"HIGH"},
+    {"criterion":"world_building","authorial":"EXCELLENT","procedural":"GOOD_FOR_POPULATION","hybrid":"EXCELLENT"},
+    {"criterion":"repeatability","authorial":"HIGH","procedural":"HIGH_WITH_VERSIONING","hybrid":"HIGH"},
+    {"criterion":"scale","authorial":"LOW_TO_MEDIUM","procedural":"VERY_HIGH","hybrid":"HIGH"},
+    {"criterion":"runtime_performance","authorial":"HIGH_MATERIALIZED","procedural":"HIGH_MATERIALIZED","hybrid":"HIGH_MATERIALIZED"},
+    {"criterion":"save_compatibility","authorial":"SIMPLE_WITH_STABLE_IDS","procedural":"RISKY_WITHOUT_MATERIALIZATION","hybrid":"GOOD_WITH_FROZEN_REVISION"},
+    {"criterion":"kit_workflow","authorial":"EXCELLENT","procedural":"INDIRECT","hybrid":"EXCELLENT"},
+    {"criterion":"blender_workflow","authorial":"EXCELLENT","procedural":"REGIONS_AND_EXCLUSIONS","hybrid":"EXCELLENT"},
+    {"criterion":"godot_workflow","authorial":"EXCELLENT_AS_AUTHORING","procedural":"PREVIEW_AND_REGIONS","hybrid":"EXCELLENT"},
+    {"criterion":"debugging","authorial":"SIMPLE","procedural":"DIFFICULT","hybrid":"MODERATE"},
+    {"criterion":"migration","authorial":"LOCALIZED","procedural":"DIFFICULT_AT_SCALE","hybrid":"CONTROLLED_BY_REVISION"},
+    {"criterion":"terrain_compatibility","authorial":"GOOD_WITH_BAKE","procedural":"COMPLEX","hybrid":"BEST_BALANCE"},
+    {"criterion":"streaming","authorial":"DIRECT","procedural":"DIRECT_AFTER_MATERIALIZATION","hybrid":"DIRECT"},
+    {"criterion":"complexity","authorial":"LOW_TO_MEDIUM","procedural":"HIGH","hybrid":"HIGH_BUT_MODULAR"},
+    {"criterion":"primary_risk","authorial":"AUTHORING_COST","procedural":"DRIFT_OR_INVALID_PLACEMENT","hybrid":"IDENTITY_CARDINALITY_POLICY"}
+  ],
+  "technical_recommendation": {
+    "name": "HYBRID_PLACEMENT_OFFLINE_BAKED_RUNTIME_MATERIALIZED",
+    "authoring_artifact": "CANONICAL_TOOL_NEUTRAL_JSON_MANIFEST",
+    "authoring_components": [
+      "explicit placements",
+      "placement regions",
+      "allowed kinds and densities",
+      "water/building/road/bridge/cliff exclusion volumes",
+      "authorial overrides"
+    ],
+    "build_pipeline": [
+      "Blender/Godot/Kits authoring",
+      "offline export",
+      "coordinate/identity/terrain/overlap validator",
+      "deterministic procedural bake where applicable",
+      "canonical ordering and manifest hashing",
+      "Stage17 backend import/materialization",
+      "area-scoped snapshot projection",
+      "Godot presentation binding"
+    ],
+    "runtime_service_concept": "ResourceMetricPlacementRegistry",
+    "service_location": "STAGE17_WORLD_SPATIAL_SERVICE_ADJACENT_TO_GATHERING",
+    "must_not_live_in": [
+      "Godot runtime authority",
+      "protected Stage16A gathering core",
+      "Living aggregate simulation",
+      "actor movement table"
+    ],
+    "separation": {
+      "placement_service": "position, world/zone/block/revision, spatial projection and metric precondition",
+      "gathering_core": "yield, tool, work order, depletion and mastery",
+      "living": "aggregate availability and systemic consequences",
+      "godot": "authoring aid, presentation, navigation and input"
+    }
+  },
+  "coordinate_and_terrain_policy": {
+    "authoritative_hierarchy": [
+      "world_instance_id",
+      "zone_ref",
+      "block_ref",
+      "metric_position"
+    ],
+    "subregion_or_placement_region": "OPTIONAL_REFINEMENT_WHEN_STABLE",
+    "cell_policy": "DERIVED_STREAMING_INDEX_NOT_IDENTITY_OR_POSITION_SOURCE",
+    "iso_x_m_required": true,
+    "iso_y_m_required": true,
+    "altitude_policy": "AUTHORED_OR_OFFLINE_BAKED_FROM_VERSIONED_TERRAIN_ARTIFACT",
+    "altitude_zero_fallback_allowed": false,
+    "altitude_unbound_behavior": "NOT_ACTIVE_INTERACTIVE",
+    "terrain_authority_gap": "NO_DETAILED_BACKEND_HEIGHTFIELD_CURRENTLY_EXISTS",
+    "godot_conform_policy": "PRESENTATION_ONLY_NO_RUNTIME_AUTHORITY_WRITEBACK"
+  },
+  "walkability_policy": {
+    "validation_layers": [
+      "offline finite and world/zone/block containment",
+      "terrain/water/building/road/bridge/cliff exclusion validation",
+      "deterministic overlap resolution",
+      "backend manifest hash and registry integrity",
+      "Godot presentation diagnostics without authority mutation"
+    ],
+    "backend_runtime_position_creation": false,
+    "godot_runtime_position_creation": false,
+    "pathfinding_authority": "GODOT_PRESENTATION_ORCHESTRATION_ONLY"
+  },
+  "gather_policy": {
+    "metric_range_contract_found": false,
+    "camera_distances_misidentified_as_gather_range": [11.0, 14.0, 18.0],
+    "metric_range_status": "RESOURCE_GATHER_METRIC_RANGE_POLICY_REQUIRES_AUTHOR_DECISION",
+    "existing_los_rule": false,
+    "existing_resource_blocker_rule": false,
+    "los_blocker_status": "AUTHOR_DECISION_REQUIRED",
+    "client_position_fields_forbidden": true,
+    "future_request_shape": "TARGET_IDENTITY_AND_INTENT_ONLY"
+  },
+  "persistence_and_versioning": {
+    "required_versions": [
+      "resource_placement_schema_version",
+      "resource_placement_revision",
+      "placement_algorithm_version_when_procedural",
+      "source_manifest_hash",
+      "terrain_constraint_hash",
+      "migration_id_when_applicable"
+    ],
+    "reproducibility_equation": "same world seed + manifest hash + schema/revision + algorithm version + constraint hash => same canonical sorted placement hash",
+    "release_world_policy": "FREEZE_PLACEMENT_REVISION_NO_SILENT_MOVEMENT",
+    "development_world_policy": "EXPLICIT_RECREATE_OR_AUDITED_MIGRATION",
+    "new_world_policy": "USE_CURRENT_APPROVED_PLACEMENT_REVISION",
+    "depletion_policy": "PRESERVE_EXISTING_GTH_STATE",
+    "move_between_builds": "REQUIRES_EXPLICIT_MIGRATION"
+  },
+  "current_gth_migration_concept": {
+    "execute_now": false,
+    "steps_if_authorized": [
+      "Assign explicit placements to representative TREE and ORE GTH nodes",
+      "Preserve node_ref/source/capacity/depletion",
+      "Record revision and provenance",
+      "Do not regenerate GTH identity",
+      "Do not infer any position from Godot Node",
+      "If N-to-1 is approved, create stable physical placement identities mapped to GTH"
+    ]
+  },
+  "living_impact": {
+    "individual_positions_required_by_living_now": false,
+    "recommended_scope": "KEEP_LIVING_AT_COUNTRY_ZONE_BLOCK_AGGREGATE_SCALE",
+    "active_detail_owner": "STAGE17_ARPG_SPATIAL_PLACEMENT_LAYER",
+    "systemic_projection": "DEPLETION_AND_AVAILABILITY_ONLY_UNLESS_FUTURE_RULE_REQUIRES_MORE"
+  },
+  "scale_and_streaming": {
+    "storage": "MATERIALIZED_PLACEMENTS_INDEXED_BY_WORLD_ZONE_BLOCK_AND_OPTIONAL_DERIVED_CHUNK",
+    "snapshot": {
+      "ACTIVE": "FULL_RESOURCE_IDENTITY_POSITION_AND_INTERACTION_STATE",
+      "PRELOAD": "MINIMUM_IDENTITY_POSITION_AND_MATERIALIZATION_METADATA",
+      "SYSTEMIC": "NO_DETAILED_GODOT_RESOURCE_MATERIALIZATION"
+    },
+    "planet_wide_snapshot_forbidden": true,
+    "spatial_index_policy": "ADD_ONLY_WHEN_DENSITY_JUSTIFIES_WITHOUT_CHANGING_IDENTITY_CONTRACT"
+  },
+  "security_authority": {
+    "gameplay_client_may_send_resource_position": false,
+    "gameplay_client_may_send_distance_override": false,
+    "gameplay_client_may_create_or_move_placement": false,
+    "authoring_input_mode": "OFFLINE_BUILD_TIME_ONLY",
+    "authoring_validation_required": true,
+    "runtime_projection_requires": [
+      "world identity",
+      "sequence",
+      "authority label",
+      "server_authoritative=true"
+    ]
+  },
+  "future_gate_strategy": [
+    "PLACEMENT_CONTRACT_AND_HASH",
+    "GTH_AND_PHYSICAL_IDENTITY_PRESERVATION",
+    "DETERMINISTIC_REPRODUCIBILITY",
+    "PERSISTENCE_RESTART_RELOAD",
+    "WORLD_ZONE_BLOCK_CONTAINMENT",
+    "FINITE_POSITION_AND_ALTITUDE_BINDING",
+    "WALKABILITY_AND_EXCLUSIONS",
+    "NO_DETERMINISTIC_OVERLAP",
+    "ACTIVE_PRELOAD_SYSTEMIC_PROJECTION",
+    "STALE_SESSION_WORLD_REJECTION",
+    "NO_CLIENT_POSITION_INJECTION",
+    "METRIC_GATHER_RANGE",
+    "OPTIONAL_LOS_BLOCKER_PER_AUTHOR_DECISION",
+    "DEPLETION_CONTINUITY",
+    "SAVE_MIGRATION",
+    "NO_DUPLICATE_AFTER_STREAMING",
+    "NO_PROTECTED_BASELINE_MUTATION"
+  ],
+  "risks": [
+    "One-to-one versus many-to-one GTH/physical placement cardinality is unresolved.",
+    "No detailed authoritative terrain heightfield currently provides per-placement altitude.",
+    "Metric gather range is not defined by protected contracts.",
+    "Gather LOS/blocker authority is not defined.",
+    "Placement revision changes can break saves without explicit migration.",
+    "Incorrect authoring exporter axes or scale can offset an entire subregion.",
+    "Procedural placement without authored exclusions can intersect water, roads or buildings.",
+    "Unbounded snapshots can scale poorly without ACTIVE/PRELOAD/SYSTEMIC filtering."
+  ],
+  "author_questions": [
+    {
+      "id": "PLACEMENT_POLICY",
+      "question": "Aprovar o modelo híbrido: placements manuais para Resources importantes e geração determinística limitada por regiões/exclusions autorais para população comum?",
+      "technical_recommendation": "YES_HYBRID"
+    },
+    {
+      "id": "GTH_PHYSICAL_CARDINALITY",
+      "question": "Cada árvore/rocha/minério visível terá um GTH/depletion próprio, ou vários placements físicos poderão compartilhar um GTH como pool lógico?",
+      "technical_recommendation": "KEEP_GTH_AS_LOGICAL_POOL_AND_ADD_STABLE_PHYSICAL_IDENTITY_WHEN_MANY_TO_ONE_IS_REQUIRED"
+    },
+    {
+      "id": "PLACEMENT_STABILITY",
+      "question": "Aprovar que worlds de release congelem a placement revision e só mudem por migration explícita, enquanto worlds DEV possam ser recriados ou migrados com record auditável?",
+      "technical_recommendation": "YES"
+    }
+  ],
+  "files_created": [
+    "STAGE17_RECORDS/S17_C1A_RESOURCE_METRIC_PLACEMENT_DESIGN_V0_1_0_DEV.md",
+    "STAGE17_RECORDS/S17_C1A_DECISION_RECORD_V0_1_0_DEV.json"
+  ],
+  "stage16b_integrity": {
+    "status": "CLOSED_READ_ONLY",
+    "expected_checkpoint_sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc",
+    "actual_checkpoint_sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc",
+    "checkpoint_match": true,
+    "expected_backup_sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc",
+    "actual_backup_sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc",
+    "backup_match": true
+  },
+  "status_flags": {
+    "S17_C1A_RESOURCE_METRIC_PLACEMENT_DESIGN": "COMPLETE",
+    "S17_C1A_IMPLEMENTATION": "NOT_STARTED",
+    "AWAITING_AUTHOR_DECISION": true,
+    "S17_C1_RESOURCE_AUTHORITY_POSITION_CONTRACT": "BLOCKED",
+    "S17_C2_RESOURCE_AUTHORITATIVE_APPROACH_GATHER": "NOT_STARTED"
+  }
+}

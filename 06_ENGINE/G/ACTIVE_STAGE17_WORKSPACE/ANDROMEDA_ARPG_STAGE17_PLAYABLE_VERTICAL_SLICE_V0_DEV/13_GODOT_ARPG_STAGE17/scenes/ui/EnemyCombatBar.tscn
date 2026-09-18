@@ -1,0 +1,64 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/enemy_combat_bar.gd" id="1_bar"]
+
+[sub_resource type="StyleBoxFlat" id="Style_track"]
+bg_color = Color(0.79, 0.78, 0.75, 0.88)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="Style_hp"]
+bg_color = Color(0.83, 0.35, 0.26, 0.98)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="Style_shield"]
+bg_color = Color(0.91, 0.7, 0.32, 0.98)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[node name="EnemyCombatBar" type="Control"]
+custom_minimum_size = Vector2(112, 18)
+layout_mode = 0
+offset_right = 112.0
+offset_bottom = 18.0
+mouse_filter = 2
+script = ExtResource("1_bar")
+
+[node name="HPBar" type="ProgressBar" parent="."]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 1.0
+offset_right = 108.0
+offset_bottom = 10.0
+theme_override_styles/background = SubResource("Style_track")
+theme_override_styles/fill = SubResource("Style_hp")
+value = 100.0
+show_percentage = false
+mouse_filter = 2
+
+[node name="ShieldBar" type="ProgressBar" parent="."]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 12.0
+offset_right = 108.0
+offset_bottom = 16.0
+theme_override_styles/background = SubResource("Style_track")
+theme_override_styles/fill = SubResource("Style_shield")
+show_percentage = false
+mouse_filter = 2
+
+[node name="AlphaAccent" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 12.0
+offset_right = 10.0
+offset_bottom = 16.0
+color = Color(0.91, 0.7, 0.32, 0.96)
+mouse_filter = 2

@@ -1,0 +1,16 @@
+{
+  "record_id": "ANDROMEDA_AUTHORITY_MATRIX_V5_R2_REBASED",
+  "project": "ANDROMEDA CODEX",
+  "version": "V5",
+  "status": "ACTIVE_AFTER_R2_REBASE_LOT_004",
+  "supersedes": "ANDROMEDA_AUTHORITY_MATRIX_V4_R2_REBASED",
+  "decision_rule": "R2 is immutable. Approved spatial economy, ecology, climate and population anchors may inform active simulation only through versioned engine-neutral contracts; runtime numbers, Godot code and future UE5 state never become canon automatically.",
+  "layers": [
+    {"rank": 1, "source": "ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2", "authority": "IMMUTABLE_ORIGIN", "classification_default": "CANON_R2_CONFIRMADO"},
+    {"rank": 2, "source": "USER_APPROVED_R2_COMPATIBLE_DERIVATION", "authority": "ACTIVE_WITH_PROVENANCE", "classification_default": "CANON_DERIVADO_ATIVO", "lot_004": ["economic flows", "qualitative population", "climate zones", "atlas economic and ecological bindings"]},
+    {"rank": 3, "source": "MASTER_V2_0_1_AND_LIVING_SIM_ENGINE_V1_0_0", "authority": "READ_ONLY_TECHNICAL_EXTENSION", "classification_default": "EVIDENCIA_TECNICA_NAO_CANONICA_UNLESS_PROMOTED"},
+    {"rank": 4, "source": "GODOT_STAGE16_STAGE17_AND_FUTURE_UE5_RUNTIME", "authority": "IMPLEMENTATION_ONLY", "classification_default": "EVIDENCIA_TECNICA_NAO_CANONICA"},
+    {"rank": 5, "source": "LLM_PLAYER_OR_UNAPPROVED_PROPOSAL", "authority": "NO_CANON_AUTHORITY", "classification_default": "DIVERGENCIA_FORMAL_AGUARDANDO_DECISAO"}
+  ],
+  "story_generators": ["A scarcity signal exposes a route dependency without declaring a canonical price.", "Climate pressure changes a settlement's choices without rewriting its population history.", "A future UE5 simulation proposes a gate instead of silently creating a disaster."]
+}

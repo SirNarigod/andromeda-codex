@@ -1,0 +1,39 @@
+{
+  "est_id": "EST-014",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Bilheteria e Armazém da Estação",
+  "building_type": "COMERCIAL",
+  "parent_locality": "LOC-003-001",
+  "parent_subregion": "SUB-003-001",
+  "parent_political_unit": "TER-003",
+  "function": "Venda de passagens e armazenamento de carga da Estação Central.",
+  "economic_role": {
+    "is_vendor": true,
+    "sells": [
+      "passagens",
+      "frete"
+    ],
+    "produces": [],
+    "regulation_factor": 0.6
+  },
+  "capacity": {
+    "jobs": 8,
+    "residents": 0
+  },
+  "professions_linked": [
+    "ferroviário"
+  ],
+  "notable_link": "Nó Ferroviário Central (SUB-003-001)",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "MADEIRA_E_ALVENARIA",
+    "flammability": "ALTA",
+    "recovery_days": 7
+  }
+}

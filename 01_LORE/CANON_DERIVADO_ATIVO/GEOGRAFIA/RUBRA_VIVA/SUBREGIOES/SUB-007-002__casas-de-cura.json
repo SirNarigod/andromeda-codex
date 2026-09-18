@@ -1,0 +1,11 @@
+{
+  "record_id": "SUB-007-002", "record_kind": "DERIVED_SUBREGION_PROFILE", "authority": "CANON_DERIVADO_ATIVO", "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Casas de Cura", "parent_political_unit": "TER-007",
+  "provenance": {"approval": "GAMEPLAY_DERIVED_DEV_SOURCE", "r2_anchors": ["TER-007"], "compatibility": "Camada administrativa e narrativa local; não cria fronteira, cidade, soberania ou nova autoridade."},
+  "function": "Rede de casas de tratamento espalhadas pela confederação medicinal.",
+  "locality_references": ["LOC-007-002 Casa de Cura Maior"],
+  "permitted_catalog_links": {"npc_roles": [], "professions": ["curandeiro"], "encounters": [], "resources": ["PAI-067", "CRI-031", "PON-002"]},
+  "local_conflicts": ["tratamento gratuito para deslocados versus capacidade limitada de leitos"],
+  "prohibitions": ["NO_NEW_SOVEREIGNTY", "NO_AUTOMATIC_KENUA_SCENE", "NO_R2_EPISODE_REWRITE", "NO_FIXED_BORDER_COORDINATE"],
+  "story_generators": ["Uma epidemia sobrecarrega as casas de cura e força triagem difícil de pacientes."]
+}

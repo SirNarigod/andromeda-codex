@@ -1,0 +1,358 @@
+{
+  "record_id": "ANDROMEDA-ARPG-STAGE16B-B06-ACCEPTANCE-V0.8.0",
+  "stage": "16B/23",
+  "block": "B06_COMBAT_PRESENTATION_HP_SHIELD_ENEMY_BARS_GAME_FEEL",
+  "captured_at": "2026-08-21T07:15:08-03:00",
+  "status": "PASS_APPLICABLE_B06_SCOPE_WITH_PARTIAL_AUTHORITATIVE_EVIDENCE",
+  "b06_closed": true,
+  "b07_started": false,
+  "final_stage16_backup_created": false,
+  "authority": {
+    "master_v2_0_1": "READ_ONLY",
+    "stage16a_v0_8_0": "READ_ONLY_BASELINE",
+    "godot_living_v1_5": "READ_ONLY",
+    "godot_role": "COMBAT_HUD_WORLD_UI_CAMERA_AND_CONFIRMED_FEEDBACK_PRESENTATION_ONLY",
+    "gameplay_authority_in_gdscript": false,
+    "damage_decided_in_gdscript": false,
+    "hit_miss_decided_in_gdscript": false,
+    "critical_decided_in_gdscript": false,
+    "death_decided_in_gdscript": false,
+    "cooldown_decided_in_gdscript": false,
+    "hp_or_protection_mutated_by_feedback": false,
+    "backend_substitute_created": false
+  },
+  "environment": {
+    "godot_version": "4.7.1.stable.official.a13da4feb",
+    "project_path": "C:/Users/thall/Documents/andromeda-argp/ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/07_GODOT_ARPG_STAGE16B",
+    "main_scene": "res://scenes/Main.tscn",
+    "editor_bridge": "EXISTING_LOCAL_ANDROMEDA_EDITOR_BRIDGE_OPERATIONAL",
+    "user_editor_pid_preserved": 10524,
+    "backend_127_0_0_1_8000": {
+      "status": "NOT_AVAILABLE",
+      "listener_count": 0
+    }
+  },
+  "architecture": {
+    "player_combat_hud": {
+      "layout": "SMALL_CONTEXTUAL_ROUNDED",
+      "idle_alpha": 0.22,
+      "active_alpha": 0.92,
+      "channels": ["HP", "PROTECTION"],
+      "stamina_ring_b05_preserved": true,
+      "permanent_large_bar": false,
+      "source": "ABSOLUTE_PROJECTED_FRACTIONS_ONLY"
+    },
+    "enemy_bars": {
+      "binding": "IMMUTABLE_TARGET_REF",
+      "projection": "CAMERA_SCREEN_SPACE_HEALTH_BAR_ANCHOR",
+      "screen_aligned": true,
+      "inherits_actor_rotation": false,
+      "common": ["HP"],
+      "alpha": ["HP", "SHIELD_PROTECTION_SMALLER_THAN_HP"],
+      "hidden_when_not_engaged": true,
+      "black_failure_state": false,
+      "overlap_bar_swap": false
+    },
+    "game_feel": {
+      "normal_local_freeze_ms_candidate": 28,
+      "strong_local_freeze_ms_candidate": 42,
+      "critical_local_freeze_ms_candidate": 58,
+      "camera_impulse_max_candidate_m": 0.18,
+      "global_world_pause": false,
+      "local_visual_root_only": true,
+      "semantic_tokens": [
+        "COMBAT_HIT",
+        "COMBAT_CRITICAL_HIT",
+        "PLAYER_HURT",
+        "PLAYER_SHIELD_HIT",
+        "TARGET_DEFEATED",
+        "INTERACTION_BLOCKED"
+      ],
+      "final_audio_assets": false
+    },
+    "reduced_motion": {
+      "camera_impulse_m": 0.0,
+      "local_visual_freeze_ms": 0,
+      "semantic_information_preserved": true
+    },
+    "feedback_priority": {
+      "PLAYER_CRITICAL_DAMAGE": 100,
+      "PLAYER_DAMAGE": 95,
+      "BOSS_DANGER": 90,
+      "CRITICAL_HIT_CONFIRM": 85,
+      "HIT_CONFIRM": 80,
+      "BLOCKED_INTERACTION": 72,
+      "QUEST_UPDATE": 68,
+      "INTERACTION_CONFIRM": 60,
+      "PICKUP": 50,
+      "MOVE_CLICK": 20,
+      "AMBIENT": 10
+    },
+    "placeholders": [
+      "ENEMY_COMMON_AND_ALPHA_MESHES",
+      "LOCAL_GATE_ABSOLUTE_SNAPSHOT_VALUES",
+      "LOCAL_GATE_EXTERNALLY_CONFIRMED_EVENTS",
+      "FINAL_COMBAT_ANIMATIONS",
+      "FINAL_AUDIO",
+      "FINAL_ART"
+    ]
+  },
+  "tests": [
+    {
+      "id": "STAGE16B_B06_HEADLESS_FINAL",
+      "result": "PASS",
+      "passed": 265,
+      "failed": 0,
+      "process_exit_code": 0,
+      "stderr_chars": 0,
+      "errors": 0,
+      "warnings": 0,
+      "evidence": "B06_GODOT_RUNTIME.log"
+    },
+    {
+      "id": "STAGE16B_B06_EDITOR_BRIDGE_FINAL",
+      "result": "PASS",
+      "passed": 265,
+      "failed": 0,
+      "debugger_errors": 0,
+      "debugger_warnings": 0,
+      "controlled_stop_final_errors": 0,
+      "evidence": "B06_EDITOR_BRIDGE_DEBUGGER_V0_8_0.json"
+    },
+    {
+      "id": "STAGE16B_B06_MAIN_DIRECT_EDITOR_BRIDGE",
+      "result": "PASS",
+      "debugger_errors": 0,
+      "debugger_warnings": 0,
+      "controlled_stop_final_errors": 0
+    },
+    {
+      "id": "STAGE16B_B01_HEADLESS_REGRESSION",
+      "result": "PASS",
+      "passed": 54,
+      "failed": 0,
+      "process_exit_code": 0,
+      "stderr_chars": 0,
+      "evidence": "B06_GODOT_B01_REGRESSION.log"
+    },
+    {
+      "id": "STAGE16B_B02_HEADLESS_REGRESSION",
+      "result": "PASS",
+      "passed": 90,
+      "failed": 0,
+      "process_exit_code": 0,
+      "stderr_chars": 0,
+      "evidence": "B06_GODOT_B02_REGRESSION.log"
+    },
+    {
+      "id": "STAGE16B_B03_HEADLESS_REGRESSION",
+      "result": "PASS",
+      "passed": 357,
+      "failed": 0,
+      "process_exit_code": 0,
+      "stderr_chars": 0,
+      "evidence": "B06_GODOT_B03_REGRESSION.log"
+    },
+    {
+      "id": "STAGE16B_B04_HEADLESS_REGRESSION",
+      "result": "PASS",
+      "passed": 156,
+      "failed": 0,
+      "process_exit_code": 0,
+      "stderr_chars": 0,
+      "evidence": "B06_GODOT_B04_REGRESSION.log"
+    },
+    {
+      "id": "STAGE16B_B05_HEADLESS_REGRESSION",
+      "result": "PASS",
+      "passed": 210,
+      "failed": 0,
+      "process_exit_code": 0,
+      "stderr_chars": 0,
+      "evidence": "B06_GODOT_B05_REGRESSION.log"
+    },
+    {
+      "id": "STAGE16A_POST_B06_ACCUMULATED",
+      "result": "PASS",
+      "passed": 209,
+      "failed": 0,
+      "duration_s": 254.359,
+      "process_exit_code": 0,
+      "evidence": "B06_STAGE16A_REGRESSION.stderr.log",
+      "note": "Python unittest writes its verbose runner stream, including the final OK summary, to stderr by design."
+    },
+    {
+      "id": "STAGE16A_POST_B06_STRESS_FINAL",
+      "result": "PASS",
+      "passed": 20,
+      "failed": 0,
+      "process_exit_code": 0,
+      "stderr_chars": 0,
+      "evidence": "B06_STAGE16A_STRESS.log"
+    },
+    {
+      "id": "STAGE16A_POST_B06_BYTE_INTEGRITY",
+      "result": "PASS",
+      "files_verified": 724,
+      "missing": 0,
+      "mismatches": 0,
+      "godot_living_v1_5_files_verified": 4,
+      "evidence": "B06_BASELINE_INTEGRITY.log"
+    }
+  ],
+  "required_b06_scenarios": [
+    {"scenario": "PLAYER_HP_PROJECTED", "status": "PASS"},
+    {"scenario": "PLAYER_PROTECTION_PROJECTED", "status": "PASS"},
+    {"scenario": "B05_STAMINA_RING_PRESERVED", "status": "PASS"},
+    {"scenario": "COMMON_ENEMY_HP", "status": "PASS"},
+    {"scenario": "ALPHA_HP_AND_SHIELD", "status": "PASS"},
+    {"scenario": "ALPHA_SHIELD_SMALLER_THAN_HP", "status": "PASS"},
+    {"scenario": "BAR_STABLE_STRAIGHT_SCREEN_ALIGNED", "status": "PASS"},
+    {"scenario": "BAR_FOLLOWS_MOVING_TARGET", "status": "PASS"},
+    {"scenario": "BAR_NEVER_BLACK", "status": "PASS"},
+    {"scenario": "HP_AND_SHIELD_PROJECT_SEPARATELY", "status": "PASS"},
+    {"scenario": "ENGAGEMENT_VISIBILITY", "status": "PASS"},
+    {"scenario": "NORMAL_STRONG_CRITICAL", "status": "PASS"},
+    {"scenario": "PLAYER_HURT_AND_SHIELD_HIT", "status": "PASS"},
+    {"scenario": "CONFIRMED_DEFEAT_PRESENTATION", "status": "PASS"},
+    {"scenario": "LOCAL_HITSTOP_ONLY_WORLD_CONTINUES", "status": "PASS"},
+    {"scenario": "CAMERA_IMPULSE_CAPPED", "status": "PASS"},
+    {"scenario": "REDUCED_MOTION_ZEROES_MOTION", "status": "PASS"},
+    {"scenario": "FEEDBACK_PRIORITY", "status": "PASS"},
+    {"scenario": "TARGET_REF_STABLE_WITH_OVERLAP_AND_CAMERA_FEEDBACK", "status": "PASS"},
+    {"scenario": "CLICK_TO_MOVE_DURING_FEEDBACK", "status": "PASS"},
+    {"scenario": "UNCONFIRMED_OR_MUTATING_EVENT_REJECTED", "status": "PASS"},
+    {"scenario": "DEBUGGER_ZERO_ERRORS_WARNINGS", "status": "PASS"}
+  ],
+  "integrity": {
+    "checkpoint_files_verified": 724,
+    "checkpoint_missing": 0,
+    "checkpoint_mismatches": 0,
+    "checkpoint_sha256": "21626A3152CB37E167EEE24BFF9D3142C5D389A8CA2827594B34211591525A6A",
+    "master_v2_0_1_sha256": "6D9AC3CCE7DCF6A65FDCF73859C332A0211C1AF52D149077BEEF554BF7BBD0B2",
+    "godot_living_v1_5_files_verified": 4,
+    "godot_living_v1_5_mismatches": 0,
+    "source_acceptance_matrix_modified": false,
+    "writes_outside_stage16b": 0
+  },
+  "files_modified": [
+    {"path": "project.godot", "sha256": "282FFD04BD49C3E752D9AD3F1F268DCE3A37613D41EF7D33E6BA15B267938C37"},
+    {"path": "scenes/Main.tscn", "sha256": "1F14128E880E2D50B6F4046DAB40FA5A2EFDC47B7D0E312C86545A973647E38B"},
+    {"path": "scenes/ui/HUD.tscn", "sha256": "575E6C6B03B2C783AEBFF988208A58644D9C7E562C1E19E7826BEE9E317AC5AC"},
+    {"path": "scripts/main.gd", "sha256": "94E4305F4AE9016DE9E7D37A2C1527B0C4D62F9FA9C271F8F16A0B894048A415"},
+    {"path": "scripts/camera/isometric_camera_rig.gd", "sha256": "B86931D90FF7EB6024D695BC78EF5D9D4DBCD9B4A1F85D0A01DB9149F20231EF"},
+    {"path": "scripts/ui/hud_controller.gd", "sha256": "16CA8F8469AC14C9F6F7733FA1A4856D7207E18AEE334E221B037BD2F8A2B8FB"},
+    {"path": "tests/godot/b05_runtime_gate.gd", "sha256": "2D2D2C3F586EA1A2CCB68B9DEA50D42CB7186EB7B6F457AA4239017F46BB15AF", "reason": "Regression label compatibility limited to approved B05 and current B06 labels."}
+  ],
+  "files_created": [
+    "scenes/ui/PlayerCombatVitals.tscn",
+    "scenes/ui/EnemyCombatBar.tscn",
+    "scenes/presentation/CombatFeedbackPresenter.tscn",
+    "scripts/ui/player_combat_vitals.gd",
+    "scripts/ui/enemy_combat_bar.gd",
+    "scripts/presentation/combat_feedback_presenter.gd",
+    "tests/godot/B06RuntimeGate.tscn",
+    "tests/godot/b06_runtime_gate.gd",
+    "README_STAGE16B_B06.md",
+    "B06_IMPLEMENTATION_LOG_V0_8_0.md",
+    "B06_EDITOR_BRIDGE_DEBUGGER_V0_8_0.json",
+    "B06_ACCEPTANCE_RECORD_V0_8_0.json"
+  ],
+  "created_code_hashes": [
+    {"path": "scenes/ui/PlayerCombatVitals.tscn", "sha256": "0A79AE34B9C16F6EF96B3C0EAE46501A640410CB550CB3F8EB77DBAD4A9A3B09"},
+    {"path": "scenes/ui/EnemyCombatBar.tscn", "sha256": "53E3F0A2DD4EB14A81277CDE290A984EACBA10EF71899E093DBE6E3431621473"},
+    {"path": "scenes/presentation/CombatFeedbackPresenter.tscn", "sha256": "B2BF642831EC42DA7C284936DFC60EF56AF4D1583F8028544B45069D194C6DF2"},
+    {"path": "scripts/ui/player_combat_vitals.gd", "sha256": "84D9BE604E3DE067A306D5A94B0E553B0F42DAD20D400F178AF9F39ED778C799"},
+    {"path": "scripts/ui/enemy_combat_bar.gd", "sha256": "D542E3EE210E514B77C0709B54979E8333BFC85F8E7B10534B1CE28856CB84B2"},
+    {"path": "scripts/presentation/combat_feedback_presenter.gd", "sha256": "5817E13BD1DB484F1C1AA83282E120829750EA0AE625AE55202C38F916119E15"},
+    {"path": "tests/godot/B06RuntimeGate.tscn", "sha256": "0902A75CCB907C14998459BB4F1E34DC23DF36E1393C49EF1146494CCB245E37"},
+    {"path": "tests/godot/b06_runtime_gate.gd", "sha256": "E3DDB90A67651694064892329E45F8CA3BA10CE14201A1F23B2F485D3E397B45"}
+  ],
+  "generated_uid_sidecars": [
+    "scripts/ui/player_combat_vitals.gd.uid",
+    "scripts/ui/enemy_combat_bar.gd.uid",
+    "scripts/presentation/combat_feedback_presenter.gd.uid",
+    "tests/godot/b06_runtime_gate.gd.uid"
+  ],
+  "evidence_artifacts": [
+    "B06_GODOT_RUNTIME.log",
+    "B06_GODOT_B01_REGRESSION.log",
+    "B06_GODOT_B02_REGRESSION.log",
+    "B06_GODOT_B03_REGRESSION.log",
+    "B06_GODOT_B04_REGRESSION.log",
+    "B06_GODOT_B05_REGRESSION.log",
+    "B06_STAGE16A_REGRESSION.stderr.log",
+    "B06_STAGE16A_STRESS.log",
+    "B06_BASELINE_INTEGRITY.log",
+    "B06_EDITOR_BRIDGE_DEBUGGER_V0_8_0.json",
+    "B06_GODOT_RUNTIME_R1.stdout.log",
+    "B06_GODOT_RUNTIME_R2.stdout.log",
+    "B06_GODOT_B05_REGRESSION_R1.stdout.log"
+  ],
+  "corrections": [
+    {
+      "finding": "The approved B05 gate froze the application label to B05 and therefore reported 209/210 after the legitimate B06 label change.",
+      "correction": "Limit the regression assertion to the exact B05/B06 labels and rerun B01 through B05.",
+      "final_result": "B05_210_OF_210_AND_ALL_PRIOR_GATES_PASS"
+    },
+    {
+      "finding": "The first real Editor Bridge run exposed seven GDScript warnings and a callback-order-dependent physics probe; 264/265 passed.",
+      "correction": "Rename shadowing parameters, restore explicit ProcessMode casting, replace the probe with Engine.get_physics_frames(), then restart headless, Bridge and regressions.",
+      "final_result": "B06_265_OF_265_DEBUGGER_0_ERRORS_0_WARNINGS"
+    },
+    {
+      "finding": "The first Stage16A command omitted ANDROMEDA_MASTER_RELEASE and fell back to a non-existent Linux path, stopping at 147 tests with seven setup errors.",
+      "correction": "Invalidate the run, point the environment to the local READ_ONLY Master and restart all 209 tests.",
+      "final_result": "STAGE16A_209_OF_209_EXIT_0"
+    },
+    {
+      "finding": "The first stress invocation returned 20/20 but did not preserve its shell exit-code handle.",
+      "correction": "Do not count it; restart the complete stress run with retained process handle and stderr capture.",
+      "final_result": "STRESS_20_OF_20_EXIT_0_STDERR_EMPTY"
+    }
+  ],
+  "acceptance_matrix": [
+    {"id": "G16B-01", "status": "PASS", "evidence": ["B01_54_OF_54_POST_B06"]},
+    {"id": "G16B-02", "status": "PASS", "evidence": ["B02_90_OF_90_POST_B06"]},
+    {"id": "G16B-03", "status": "PARTIAL_EVIDENCE", "evidence": ["B03_LOCAL_INTENTS_PRESERVED", "B06_CONFIRMED_COMBAT_PRESENTATION"], "missing": ["AUTHORITATIVE_COOLDOWN_AND_ATTACK_ROUNDTRIP"]},
+    {"id": "G16B-04", "status": "PARTIAL_EVIDENCE", "evidence": ["B03_PICKUP_GUARDS", "B04_PHYSICAL_SETTLING"], "missing": ["AUTHORITATIVE_PICKUP_ROUNDTRIP"]},
+    {"id": "G16B-05", "status": "NOT_EXECUTED"},
+    {"id": "G16B-06", "status": "PARTIAL_EVIDENCE", "evidence": ["B05_AUTO_PICKUP_ON_OFF_VISUAL_NO_REMOTE_COLLECTION"], "missing": ["PROFILE_PERSISTENCE", "AUTHORITATIVE_AUTO_PICKUP"]},
+    {"id": "G16B-07", "status": "PASS", "evidence": ["B04_156_OF_156_POST_B06"]},
+    {"id": "G16B-08", "status": "PARTIAL_EVIDENCE", "evidence": ["B04_SURFACE_SLOPE_LOAD_INPUTS", "B05_YELLOW_RADIAL_STAMINA_UI", "B06_STAMINA_REGRESSION", "STAGE16A_AUTHORITY_REGRESSION"], "missing": ["LIVE_AUTHORITATIVE_STAMINA_ROUNDTRIP"]},
+    {"id": "G16B-09", "status": "PARTIAL_EVIDENCE", "evidence": ["B04_ACTIVE_PRELOAD_SYSTEMIC_REFERENCE_STREAMING"], "missing": ["LIVE_LIVING_SYSTEMIC_SNAPSHOT"]},
+    {"id": "G16B-10", "status": "PASS", "evidence": ["B05_REALTIME_WHITE_ROUNDED_DIALOGUE_NO_NEXT_NO_PAUSE", "B05_210_OF_210_POST_B06"]},
+    {"id": "G16B-11", "status": "PASS", "evidence": ["B03_NPC_HOVER_NAME_ONLY", "B05_TURN_GATED_POOL_AND_NEAR_NPC_CHOICES"]},
+    {"id": "G16B-12", "status": "PASS", "evidence": ["B05_IMPORTANT_WORLD_BUBBLE_PLUS_BOTTOM_LINE"]},
+    {"id": "G16B-13", "status": "PASS", "evidence": ["B05_MINIMAL_HUD_INVENTORY_I_UNIFIED_UI", "B06_COMMON_ENEMY_HP_BAR", "B06_ALPHA_HP_SHIELD_BAR", "B06_SCREEN_ALIGNED_STABLE_NONBLACK_BARS"]},
+    {"id": "G16B-14", "status": "PARTIAL_EVIDENCE", "evidence": ["B02_CAMERA", "B04_MICRO_RELIEF_STABILITY", "B05_EXACT_WHEEL_ZOOM_MENU_ISOLATION", "B06_BOUNDED_IMPULSE_NO_FORCED_ZOOM_OR_TARGET_REWRITE"], "missing": ["REAL_OCCLUDER_MATERIAL_FADE"]},
+    {"id": "G16B-15", "status": "PASS", "evidence": ["B06_CONFIRMED_PRESENTATION_DOES_NOT_CHANGE_GAMEPLAY", "B06_LOCAL_VISUAL_FREEZE_ONLY_WORLD_CONTINUES", "B06_REDUCED_MOTION_ZERO_FREEZE_IMPULSE"]},
+    {"id": "G16B-16", "status": "NOT_EXECUTED"},
+    {"id": "G16B-17", "status": "NOT_EXECUTED"},
+    {"id": "G16B-18", "status": "NOT_EXECUTED"},
+    {"id": "G16B-19", "status": "NOT_EXECUTED"},
+    {"id": "G16B-20", "status": "PARTIAL_EVIDENCE", "evidence": ["B01_B02_B03_B04_B05_B06_REGRESSIONS", "STAGE16A_209_OF_209", "STRESS_20_OF_20", "BASELINE_724_OF_724", "MASTER_HASH_UNCHANGED"]},
+    {"id": "G16B-21", "status": "PARTIAL_EVIDENCE", "evidence": ["B05_EXACTLY_TWO_SLOTS_ONE_VISUAL_ACTIVE", "STAGE16A_MAIN_HAND_AND_MODIFIER_AUTHORITY_TESTS"], "missing": ["LIVE_MAIN_HAND_SNAPSHOT_ROUNDTRIP"]},
+    {"id": "G16B-22", "status": "PARTIAL_EVIDENCE", "evidence": ["B05_KEYS_1_2_WHEEL_ZOOM_MENU_INPUT_ROUTING"], "missing": ["LIVE_AUTHORITATIVE_SLOT_ACTIVATION_ROUNDTRIP"]},
+    {"id": "G16B-23", "status": "PARTIAL_EVIDENCE", "evidence": ["B05_DIALOGUE_HUD_INVENTORY_TOOLTIP_CHOICE_UI_FAMILY", "B06_COMBAT_HUD_AND_BARS_UNIFIED_UI_FAMILY"], "missing": ["VENDOR_UI", "CRAFTING_UI", "SETTINGS_UI"]},
+    {"id": "G16B-24", "status": "PARTIAL_EVIDENCE", "evidence": ["B04_SHALLOW_WATER_NAV_UNDER_BRIDGE_CURRENT_VEHICLE", "STAGE16A_WATER_AUTHORITY_TESTS"], "missing": ["LIVE_AUTHORITATIVE_STAMINA_ROUNDTRIP"]},
+    {"id": "G16B-25", "status": "PARTIAL_EVIDENCE", "evidence": ["B04_DEEP_SWIM_NAV_AND_VEHICLE_BLOCK", "STAGE16A_EXHAUSTION_TESTS"], "missing": ["LIVE_GODOT_BACKEND_EXHAUSTION_DEFEAT_SNAPSHOT"]},
+    {"id": "G16B-26", "status": "PARTIAL_EVIDENCE", "evidence": ["B05_REDUCED_BASE_INVENTORY_BAG_SLOT_CONTAINER_SHELL", "STAGE16A_BAG_DEATH_AUTHORITY_TESTS"], "missing": ["LIVE_INVENTORY_BAG_DEATH_SNAPSHOT_ROUNDTRIP"]},
+    {"id": "G16B-27", "status": "PARTIAL_EVIDENCE", "evidence": ["B04_LOOT_BAG_WATER_PRESENTATION", "STAGE16A_TTL_AUTHORITY_TESTS"], "missing": ["LIVE_TTL_ADVANCE_SAVE_RELOAD_SNAPSHOT"]},
+    {"id": "G16B-28", "status": "NOT_EXECUTED"}
+  ],
+  "blockers": [],
+  "not_available": [
+    "Live authoritative HP/protection/hit/critical/defeat roundtrip: no listener at 127.0.0.1:8000.",
+    "Authoritative attack cooldown validation in Godot: no live backend endpoint available."
+  ],
+  "watch_items": [
+    "Projected combat values and confirmed events used by B06 are local gate placeholders; live snapshot sources remain unavailable.",
+    "Final combat animations, audio, icons and art remain deferred.",
+    "Real occluder material fade remains pending from G16B-14.",
+    "TARGET_DEFEATED presentation never removes the actor; authoritative defeat lifecycle remains external.",
+    "B07 universal Ground Loot has not started."
+  ],
+  "source_acceptance_matrix_modified": false,
+  "backup_rule_respected": true
+}

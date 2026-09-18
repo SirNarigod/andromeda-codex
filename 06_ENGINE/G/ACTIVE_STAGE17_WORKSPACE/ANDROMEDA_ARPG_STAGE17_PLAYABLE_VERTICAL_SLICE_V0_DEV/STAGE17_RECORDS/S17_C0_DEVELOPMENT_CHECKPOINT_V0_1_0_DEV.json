@@ -1,0 +1,19 @@
+{
+  "checkpoint_identity": "S17_C0_DEVELOPMENT_CHECKPOINT_V0_1_0_DEV",
+  "created_at": "2026-08-28T17:30:18.5786038Z",
+  "kind": "LOGICAL_DEVELOPMENT_CHECKPOINT_ONLY",
+  "zip_created": false,
+  "backup_created": false,
+  "status": "PASS",
+  "stage17_status": "S17_C0_COMPLETE",
+  "accepted_contract": "ENEMY_AUTHORITY_SPATIAL_BINDING_READY",
+  "acceptance_record": "S17_C0_ACCEPTANCE_RECORD_V0_1_0_DEV.json",
+  "implementation_log": "S17_C0_INTERACTION_SPATIAL_BINDING_CONTRACT_V0_1_0_DEV.md",
+  "invalidated_runs_record": "S17_C0_INVALIDATED_RUNS_V0_1_0_DEV.json",
+  "stage16b_baseline": {
+    "status": "CLOSED_READ_ONLY",
+    "checkpoint_sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc",
+    "backup_sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc"
+  },
+  "next_authorized_process": "S17-C1_RESOURCE_AUTHORITY_POSITION_SOURCE_AND_PROJECTION_CONTRACT"
+}

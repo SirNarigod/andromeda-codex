@@ -1,0 +1,171 @@
+{
+  "record_id": "LIVING-SIM-IMPROVEMENT-RESOLUTION-MATRIX-V1.1.0",
+  "version": "V1.1.0",
+  "source_audit": "ANDROMEDA_LIVING_IMPROVEMENT_AUDIT_V1_0",
+  "generated_at": "2026-08-16T00:57:19.196688+00:00",
+  "summary": {
+    "closed": 14,
+    "closed_core": 5,
+    "partial_non_blocking": 1,
+    "authorial_spec_required": 1,
+    "author_review": 1,
+    "open_p0_p1": 0
+  },
+  "findings": [
+    {
+      "id": "IMP-001",
+      "priority": "P0",
+      "title": "Eventos não fecham cadeias causais entre módulos",
+      "resolution_status": "CLOSED",
+      "resolution": "DomainIntegrationHub persistente/idempotente fecha eventos entre domínios."
+    },
+    {
+      "id": "IMP-002",
+      "priority": "P0",
+      "title": "Não existe ciclo nativo dinheiro → vendedor → item → inventário",
+      "resolution_status": "CLOSED",
+      "resolution": "Carteira, inventário, vendor, estoque e transação atômica implementados."
+    },
+    {
+      "id": "IMP-003",
+      "priority": "P0",
+      "title": "Custo relativo não é convertido em preço local auditável",
+      "resolution_status": "CLOSED",
+      "resolution": "PriceResolver runtime deriva preço local de faixa relativa + mercado/logística/regulação/condição/relação."
+    },
+    {
+      "id": "IMP-004",
+      "priority": "P0",
+      "title": "MAR não está ligado a combate, dano ou saúde",
+      "resolution_status": "CLOSED",
+      "resolution": "CombatSystem liga MAR a equipamento, acerto, dano, vida, morte e proteção narrativa."
+    },
+    {
+      "id": "IMP-005",
+      "priority": "P0",
+      "title": "Indivíduos e população agregada divergem",
+      "resolution_status": "CLOSED",
+      "resolution": "Nascimento, morte e migração reconciliam indivíduos e agregados automaticamente."
+    },
+    {
+      "id": "IMP-006",
+      "priority": "P0",
+      "title": "Demanda econômica não encontra população local",
+      "resolution_status": "CLOSED",
+      "resolution": "Destino econômico resolve POI/nó → território → população atendida."
+    },
+    {
+      "id": "IMP-007",
+      "priority": "P0",
+      "title": "Escassez não distingue alimento de outros produtos nem localidade",
+      "resolution_status": "CLOSED",
+      "resolution": "Produtos categorizados; segurança alimentar usa somente escassez FOOD local."
+    },
+    {
+      "id": "IMP-008",
+      "priority": "P0",
+      "title": "Fuga/patrulha e viagens não possuem deslocamento espacial completo",
+      "resolution_status": "CLOSED",
+      "resolution": "Mobilidade usa viagem em trânsito, rotas, duração, acesso; fuga/patrulha alteram espaço runtime."
+    },
+    {
+      "id": "IMP-009",
+      "priority": "P1",
+      "title": "Modelo rico de rotas é reduzido a operacional/capacidade",
+      "resolution_status": "CLOSED_CORE",
+      "resolution": "Rotas runtime agora consomem distância, bandas de velocidade, acesso e risco; operação/capacidade continuam dinâmicos. Degradação física detalhada pode evoluir depois."
+    },
+    {
+      "id": "IMP-010",
+      "priority": "P1",
+      "title": "Animais não envelhecem nem acumulam fome/sede com o tempo",
+      "resolution_status": "CLOSED",
+      "resolution": "Relógio biológico atualiza idade, fome, sede, energia/estresse e morte biológica."
+    },
+    {
+      "id": "IMP-011",
+      "priority": "P1",
+      "title": "Entidade morta continua sendo agendada",
+      "resolution_status": "CLOSED",
+      "resolution": "Entidades mortas são desabilitadas do scheduler pelo Integration Hub."
+    },
+    {
+      "id": "IMP-012",
+      "priority": "P1",
+      "title": "Testemunhar eventos não é automático",
+      "resolution_status": "CLOSED_CORE",
+      "resolution": "Testemunhas co-localizadas recebem memória automática; LOS/audição avançados ficam como refinamento futuro."
+    },
+    {
+      "id": "IMP-013",
+      "priority": "P1",
+      "title": "Relações de facção existem no banco mas são sistemicamente inertes",
+      "resolution_status": "CLOSED",
+      "resolution": "Tick de facção usa economia/desemprego locais e postura diplomática runtime; influência não implica soberania."
+    },
+    {
+      "id": "IMP-014",
+      "priority": "P1",
+      "title": "Morte e colheita não fecham cadeia de recursos",
+      "resolution_status": "CLOSED_CORE",
+      "resolution": "Morte cria cadáver; colheita cria RESOURCE_BUNDLE possuído pelo coletor, com rendimento runtime não canônico."
+    },
+    {
+      "id": "IMP-015",
+      "priority": "P1",
+      "title": "Motores de consequência e memória não vêm com política de integração de domínio",
+      "resolution_status": "CLOSED",
+      "resolution": "DomainIntegrationHub fornece política default versionada, persistente e idempotente para integrações de domínio."
+    },
+    {
+      "id": "IMP-016",
+      "priority": "P1",
+      "title": "Seeds universais tornam territórios economicamente/faccionalmente parecidos",
+      "resolution_status": "CLOSED",
+      "resolution": "Bootstrap contextual V1.1 substitui seeds universais por seeds runtime derivados de contexto canônico."
+    },
+    {
+      "id": "IMP-017",
+      "priority": "P1",
+      "title": "Dados MAR de manutenção não geram desgaste/condição",
+      "resolution_status": "CLOSED",
+      "resolution": "Equipamento sofre desgaste/condição e agora pode ser reparado no maintenance_location_id canônico com custo runtime auditável."
+    },
+    {
+      "id": "IMP-018",
+      "priority": "P1",
+      "title": "Ações violentas não chegam a lei, reputação ou permissões",
+      "resolution_status": "CLOSED_CORE",
+      "resolution": "Lei runtime, evidência/testemunhas, reputação, multa, facção e permissões/mobilidade estão conectadas; legislação canônica continua autoral."
+    },
+    {
+      "id": "IMP-019",
+      "priority": "P2",
+      "title": "Reprodução genérica ignora compatibilidade biológica",
+      "resolution_status": "AUTHORIAL_SPEC_REQUIRED",
+      "resolution": "Motor não deve inventar sexo/modo reprodutivo/compatibilidade por espécie. Requer regra biológica autoral ou dados canônicos."
+    },
+    {
+      "id": "IMP-020",
+      "priority": "P2",
+      "title": "91 profissões canônicas quase não participam do runtime econômico",
+      "resolution_status": "CLOSED_CORE",
+      "resolution": "91 profissões carregadas read-only; ofertas, emprego, salários e produtividade econômica por categoria/território implementados."
+    },
+    {
+      "id": "IMP-021",
+      "priority": "P2",
+      "title": "Ambiente reativo não forma ainda um sistema ambiental mundial",
+      "resolution_status": "PARTIAL_NON_BLOCKING",
+      "resolution": "Ambiente já influencia metabolismo/mobilidade local, mas clima planetário contínuo, doença e epidemias permanecem expansão P2."
+    },
+    {
+      "id": "IMP-022",
+      "priority": "AUTHOR_REVIEW",
+      "title": "Recuperação universal de 7 dias pode reduzir diferenciação ecológica",
+      "resolution_status": "AUTHOR_REVIEW",
+      "resolution": "Regra protegida de recuperação universal em 7 dias não foi alterada. Mudança exige decisão autoral explícita."
+    }
+  ],
+  "release_gate": "PASS"
+}

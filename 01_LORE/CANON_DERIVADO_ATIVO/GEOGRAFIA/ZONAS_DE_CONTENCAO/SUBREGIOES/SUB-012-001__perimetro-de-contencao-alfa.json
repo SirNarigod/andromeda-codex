@@ -1,0 +1,47 @@
+{
+  "record_id": "SUB-012-001",
+  "record_kind": "DERIVED_SUBREGION_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Perímetro de Contenção Alfa",
+  "parent_political_unit": "TER-012",
+  "provenance": {
+    "approval": "GAMEPLAY_DERIVED_DEV_SOURCE",
+    "r2_anchors": [
+      "TER-012",
+      "ishara-veyn",
+      "ART-012"
+    ],
+    "compatibility": "Camada administrativa e narrativa local; não cria fronteira, cidade, soberania ou nova autoridade."
+  },
+  "function": "Linha de contenção mantida por equipes especializadas usando equipamento não letal (ART-012).",
+  "locality_references": [
+    "LOC-012-001 Posto de Perímetro"
+  ],
+  "permitted_catalog_links": {
+    "npc_roles": [
+      "classe:Soldados"
+    ],
+    "professions": [],
+    "encounters": [],
+    "resources": []
+  },
+  "local_conflicts": [
+    "contenção rígida versus liberação controlada de deslocados",
+    "recursos limitados versus fluxo crescente de incidentes"
+  ],
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_AUTOMATIC_KENUA_SCENE",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_FIXED_BORDER_COORDINATE"
+  ],
+  "story_generators": [
+    "Uma falha no perímetro obriga a equipe a decidir entre reforçar a linha ou evacuar civis."
+  ],
+  "root_corruption": {
+    "status": "CORROMPIDA",
+    "intensity": "ALTA",
+    "since_note": "Aplicado pelo portao autoral fase 57 (STELLAR_ROOT_CORRUPTION_GATE_DEV_V1_0.json) - fato do mundo em 842 EC, fase Alimentacao Silenciosa->Corrupcao da Raiz Profunda (COR-001)."
+  }
+}

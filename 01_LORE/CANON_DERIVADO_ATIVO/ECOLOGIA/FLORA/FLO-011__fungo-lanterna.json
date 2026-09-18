@@ -1,0 +1,9 @@
+{
+  "record_id": "FLO-011", "record_kind": "DERIVED_CANONICAL_PROFILE", "authority": "CANON_DERIVADO_ATIVO",
+  "title": "Fungo-Lanterna", "subtitle": "Fungo bioluminescente das cidades subterrâneas",
+  "summary": "Fungo que cresce em colônias nas paredes de cristal, emitindo luz suave que substitui a luz solar nas Câmaras de Cristal.",
+  "facts": {"Habitat": "Câmaras de Cristal (SUB-009-001), Liga Subcristal", "Uso": "Iluminação natural das cidades subterrâneas"},
+  "relations": [{"code": "SUB-009-001", "label": "Habitat — Câmaras de Cristal"}, {"code": "BIO-004", "label": "Bioma — Subsolo Cristalino"}],
+  "r2_compatibility": "Espécie nova, sem precedente R2; ancorada no bioma BIO-004 já vinculado a TER-009 (fase 10).",
+  "safety": "FICTIONAL_LOCATION_ONLY"
+}

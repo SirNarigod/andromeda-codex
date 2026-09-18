@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/camera/isometric_camera_rig.gd" id="1_camera"]
+
+[node name="IsometricCameraRig" type="Node3D"]
+script = ExtResource("1_camera")
+
+[node name="SmoothHeightAnchor" type="Node3D" parent="."]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+current = true
+fov = 42.0
+near = 0.1
+far = 250.0
+
+[node name="OcclusionProbe" type="RayCast3D" parent="."]
+enabled = true
+collision_mask = 256
+hit_from_inside = true

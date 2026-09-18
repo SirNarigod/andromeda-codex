@@ -1,0 +1,30 @@
+{
+  "record_id": "LIVING-SIM-ETAPA-08-EXTENDED-VALIDATION-V1.0",
+  "checks": 2570,
+  "passed": 2570,
+  "failed": 0,
+  "elapsed_seconds": 31.417,
+  "scale": {
+    "door_cycles": 250,
+    "damage_repair_objects": 200,
+    "destroy_recover_objects": 120,
+    "environment_zones": 50,
+    "environment_members": 400,
+    "resource_nodes": 100,
+    "fire_fanout": 40,
+    "offline_fire_block_cases": 100,
+    "timelines": 7,
+    "record_counts": {
+      "reactive_profiles": 14,
+      "environment_links": 441,
+      "reaction_logs": 16150,
+      "environment_ticks": 51,
+      "propagation_runs_env": 1,
+      "entity_states": 1170,
+      "events": 16271,
+      "recoveries": 120
+    }
+  },
+  "failures": [],
+  "status": "PASS"
+}

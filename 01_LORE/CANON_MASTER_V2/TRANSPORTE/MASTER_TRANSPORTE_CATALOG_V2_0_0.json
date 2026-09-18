@@ -1,0 +1,134 @@
+{
+  "record_id": "MASTER-TRANSPORTE-CATALOG-V2.0.0",
+  "title": "Rotas locais oficiais do MASTER V2.0.1 - SRTE-001..009 (9 entradas)",
+  "provenance": {
+    "master_release": "ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE",
+    "master_release_zip_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "authority": "CANON_MASTER_V2_CONFIRMADO",
+    "source_files": [
+      "01_CANON/ANDROMEDA_CODEX_CANON_MASTER_V2_0_0.json (domain=Transporte)"
+    ],
+    "namespace_check": "Prefixo SRTE-XXX, sem colisão com nosso ROT-/rede de rotas (fase 53, nomes diferentes).",
+    "note": "9 rotas locais com distância em km e nível de risco, conectando POI/LOC/CIT reais dentro de cada território - complementa (não substitui) a rede continental de 59 rotas que já construímos na fase 53."
+  },
+  "count": 9,
+  "local_routes": [
+    {
+      "id": "SRTE-001",
+      "name": "Anel rural de Varga",
+      "type": "estrada rural",
+      "territory_refs": [
+        "TER-011"
+      ],
+      "origin_id": "CIT-001",
+      "destination_id": "POI-005",
+      "distance_km": 6.18,
+      "risk": "BAIXO",
+      "function": "abastecimento"
+    },
+    {
+      "id": "SRTE-002",
+      "name": "Ligação logística de Lúminor",
+      "type": "via urbana",
+      "territory_refs": [
+        "TER-001"
+      ],
+      "origin_id": "LOC-001",
+      "destination_id": "POI-014",
+      "distance_km": 4.44,
+      "risk": "BAIXO",
+      "function": "logística"
+    },
+    {
+      "id": "SRTE-003",
+      "name": "Circuito institucional de Ortheon",
+      "type": "via urbana",
+      "territory_refs": [
+        "TER-003"
+      ],
+      "origin_id": "LOC-003",
+      "destination_id": "POI-018",
+      "distance_km": 3.53,
+      "risk": "BAIXO",
+      "function": "formação e serviço"
+    },
+    {
+      "id": "SRTE-004",
+      "name": "Ramal mineral de Kharveth",
+      "type": "ramal industrial",
+      "territory_refs": [
+        "TER-002"
+      ],
+      "origin_id": "LOC-002",
+      "destination_id": "POI-022",
+      "distance_km": 3.6,
+      "risk": "MÉDIO",
+      "function": "extração"
+    },
+    {
+      "id": "SRTE-005",
+      "name": "Circuito técnico de Ithra",
+      "type": "via de encosta",
+      "territory_refs": [
+        "TER-005"
+      ],
+      "origin_id": "LOC-005",
+      "destination_id": "POI-024",
+      "distance_km": 2.41,
+      "risk": "MÉDIO",
+      "function": "ciência e processamento"
+    },
+    {
+      "id": "SRTE-006",
+      "name": "Ligação portuária de Navyr",
+      "type": "via portuária",
+      "territory_refs": [
+        "TER-004"
+      ],
+      "origin_id": "LOC-004",
+      "destination_id": "POI-030",
+      "distance_km": 3.4,
+      "risk": "BAIXO",
+      "function": "indústria marítima"
+    },
+    {
+      "id": "SRTE-007",
+      "name": "Corredor medicinal rubro",
+      "type": "passagem controlada",
+      "territory_refs": [
+        "TER-007"
+      ],
+      "origin_id": "LOC-007",
+      "destination_id": "POI-034",
+      "distance_km": 2.24,
+      "risk": "MÉDIO",
+      "function": "pesquisa e medicina"
+    },
+    {
+      "id": "SRTE-008",
+      "name": "Ramal de oficina Subcristal",
+      "type": "passagem subterrânea",
+      "territory_refs": [
+        "TER-009"
+      ],
+      "origin_id": "LOC-009",
+      "destination_id": "POI-041",
+      "distance_km": 2.4,
+      "risk": "MÉDIO",
+      "function": "manutenção"
+    },
+    {
+      "id": "SRTE-009",
+      "name": "Circuito de resposta de Contenção",
+      "type": "passagem controlada",
+      "territory_refs": [
+        "TER-012"
+      ],
+      "origin_id": "LOC-011",
+      "destination_id": "POI-038",
+      "distance_km": 1.52,
+      "risk": "ALTO",
+      "function": "resposta institucional"
+    }
+  ]
+}

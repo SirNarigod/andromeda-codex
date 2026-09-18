@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://tests/godot/b01_runtime_gate.gd" id="1_b01"]
+
+[node name="B01RuntimeGate" type="Node"]
+script = ExtResource("1_b01")
+

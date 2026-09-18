@@ -1,0 +1,710 @@
+{
+  "record_id": "STELLAR-LOCALITY-ACCESS-POINTS-DEV-V1.0",
+  "title": "Entradas e Saídas das Localidades (grounded na rede de rotas real)",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "r2_guard": "Não inventa geometria/coordenada nova - deriva entrada/saída de cada localidade das rotas já reais (STELLAR_ROUTE_NETWORK_DEV_V1_0.json, fase 53) que conectam sua subregião-mãe ao resto do mundo.",
+  "count": 61,
+  "access_points": [
+    {
+      "locality_id": "CIT-001",
+      "parent_subregion": "SUB-011-001",
+      "access_routes": [
+        "ROT-021"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-005"
+      ]
+    },
+    {
+      "locality_id": "CIT-002",
+      "parent_subregion": "SUB-011-002",
+      "access_routes": [
+        "ROT-021",
+        "ROT-022"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-045"
+      ]
+    },
+    {
+      "locality_id": "LOC-001-001",
+      "parent_subregion": "SUB-001-001",
+      "access_routes": [
+        "ROT-001"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-001"
+      ]
+    },
+    {
+      "locality_id": "LOC-001-002",
+      "parent_subregion": "SUB-001-002",
+      "access_routes": [
+        "ROT-001",
+        "ROT-002"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-007",
+        "EST-046"
+      ]
+    },
+    {
+      "locality_id": "LOC-001-003",
+      "parent_subregion": "SUB-001-003",
+      "access_routes": [
+        "ROT-002"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-013"
+      ]
+    },
+    {
+      "locality_id": "LOC-002-001",
+      "parent_subregion": "SUB-002-001",
+      "access_routes": [
+        "ROT-003"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-003",
+        "EST-011"
+      ]
+    },
+    {
+      "locality_id": "LOC-002-002",
+      "parent_subregion": "SUB-002-002",
+      "access_routes": [
+        "ROT-003",
+        "ROT-004"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-002"
+      ]
+    },
+    {
+      "locality_id": "LOC-002-003",
+      "parent_subregion": "SUB-002-003",
+      "access_routes": [
+        "ROT-004"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-008"
+      ]
+    },
+    {
+      "locality_id": "LOC-003-001",
+      "parent_subregion": "SUB-003-001",
+      "access_routes": [
+        "ROT-005"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-014"
+      ]
+    },
+    {
+      "locality_id": "LOC-003-002",
+      "parent_subregion": "SUB-003-002",
+      "access_routes": [
+        "ROT-005",
+        "ROT-006"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-015"
+      ]
+    },
+    {
+      "locality_id": "LOC-003-003",
+      "parent_subregion": "SUB-003-003",
+      "access_routes": [
+        "ROT-006"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-016"
+      ]
+    },
+    {
+      "locality_id": "LOC-004-001",
+      "parent_subregion": "SUB-004-001",
+      "access_routes": [
+        "ROT-007"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-017",
+        "EST-047"
+      ]
+    },
+    {
+      "locality_id": "LOC-004-002",
+      "parent_subregion": "SUB-004-002",
+      "access_routes": [
+        "ROT-007",
+        "ROT-008"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-006"
+      ]
+    },
+    {
+      "locality_id": "LOC-004-003",
+      "parent_subregion": "SUB-004-003",
+      "access_routes": [
+        "ROT-008"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-018"
+      ]
+    },
+    {
+      "locality_id": "LOC-005-001",
+      "parent_subregion": "SUB-005-001",
+      "access_routes": [
+        "ROT-009"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-019",
+        "EST-068"
+      ]
+    },
+    {
+      "locality_id": "LOC-005-002",
+      "parent_subregion": "SUB-005-002",
+      "access_routes": [
+        "ROT-009",
+        "ROT-010"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-020"
+      ]
+    },
+    {
+      "locality_id": "LOC-005-003",
+      "parent_subregion": "SUB-005-003",
+      "access_routes": [
+        "ROT-010"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-021"
+      ]
+    },
+    {
+      "locality_id": "LOC-006-001",
+      "parent_subregion": "SUB-006-001",
+      "access_routes": [
+        "ROT-011"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-022"
+      ]
+    },
+    {
+      "locality_id": "LOC-006-002",
+      "parent_subregion": "SUB-006-002",
+      "access_routes": [
+        "ROT-011",
+        "ROT-012"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-023",
+        "EST-048"
+      ]
+    },
+    {
+      "locality_id": "LOC-006-003",
+      "parent_subregion": "SUB-006-003",
+      "access_routes": [
+        "ROT-012"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-024"
+      ]
+    },
+    {
+      "locality_id": "LOC-007-001",
+      "parent_subregion": "SUB-007-001",
+      "access_routes": [
+        "ROT-013"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-012"
+      ]
+    },
+    {
+      "locality_id": "LOC-007-002",
+      "parent_subregion": "SUB-007-002",
+      "access_routes": [
+        "ROT-013",
+        "ROT-014"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-025"
+      ]
+    },
+    {
+      "locality_id": "LOC-007-003",
+      "parent_subregion": "SUB-007-003",
+      "access_routes": [
+        "ROT-014"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-026"
+      ]
+    },
+    {
+      "locality_id": "LOC-008-001",
+      "parent_subregion": "SUB-008-001",
+      "access_routes": [
+        "ROT-015"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-027"
+      ]
+    },
+    {
+      "locality_id": "LOC-008-002",
+      "parent_subregion": "SUB-008-002",
+      "access_routes": [
+        "ROT-015",
+        "ROT-016"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-028"
+      ]
+    },
+    {
+      "locality_id": "LOC-008-003",
+      "parent_subregion": "SUB-008-003",
+      "access_routes": [
+        "ROT-016"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-029"
+      ]
+    },
+    {
+      "locality_id": "LOC-009-001",
+      "parent_subregion": "SUB-009-001",
+      "access_routes": [
+        "ROT-017"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-030"
+      ]
+    },
+    {
+      "locality_id": "LOC-009-002",
+      "parent_subregion": "SUB-009-002",
+      "access_routes": [
+        "ROT-017",
+        "ROT-018"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-031"
+      ]
+    },
+    {
+      "locality_id": "LOC-009-003",
+      "parent_subregion": "SUB-009-003",
+      "access_routes": [
+        "ROT-018"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-032"
+      ]
+    },
+    {
+      "locality_id": "LOC-010-001",
+      "parent_subregion": "SUB-010-001",
+      "access_routes": [
+        "ROT-019"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-033"
+      ]
+    },
+    {
+      "locality_id": "LOC-010-002",
+      "parent_subregion": "SUB-010-002",
+      "access_routes": [
+        "ROT-019",
+        "ROT-020"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-034",
+        "EST-044"
+      ]
+    },
+    {
+      "locality_id": "LOC-010-003",
+      "parent_subregion": "SUB-010-003",
+      "access_routes": [
+        "ROT-020"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-035"
+      ]
+    },
+    {
+      "locality_id": "LOC-011-002",
+      "parent_subregion": "SUB-011-002",
+      "access_routes": [
+        "ROT-021",
+        "ROT-022"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-036"
+      ]
+    },
+    {
+      "locality_id": "LOC-011-003",
+      "parent_subregion": "SUB-011-003",
+      "access_routes": [
+        "ROT-022",
+        "ROT-023"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-037"
+      ]
+    },
+    {
+      "locality_id": "LOC-011-004",
+      "parent_subregion": "SUB-011-004",
+      "access_routes": [
+        "ROT-023",
+        "ROT-024"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-038"
+      ]
+    },
+    {
+      "locality_id": "LOC-011-005",
+      "parent_subregion": "SUB-011-005",
+      "access_routes": [
+        "ROT-024",
+        "ROT-025"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-004"
+      ]
+    },
+    {
+      "locality_id": "LOC-011-006",
+      "parent_subregion": "SUB-011-006",
+      "access_routes": [
+        "ROT-025"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-039"
+      ]
+    },
+    {
+      "locality_id": "LOC-012-001",
+      "parent_subregion": "SUB-012-001",
+      "access_routes": [
+        "ROT-026"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-040"
+      ]
+    },
+    {
+      "locality_id": "LOC-012-002",
+      "parent_subregion": "SUB-012-002",
+      "access_routes": [
+        "ROT-026",
+        "ROT-027"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-041"
+      ]
+    },
+    {
+      "locality_id": "LOC-012-003",
+      "parent_subregion": "SUB-012-003",
+      "access_routes": [
+        "ROT-027"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-009"
+      ]
+    },
+    {
+      "locality_id": "LOC-013-001",
+      "parent_subregion": "SUB-013-001",
+      "access_routes": [
+        "ROT-028"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-010",
+        "EST-067"
+      ]
+    },
+    {
+      "locality_id": "LOC-013-002",
+      "parent_subregion": "SUB-013-002",
+      "access_routes": [
+        "ROT-028",
+        "ROT-029"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-042"
+      ]
+    },
+    {
+      "locality_id": "LOC-013-003",
+      "parent_subregion": "SUB-013-003",
+      "access_routes": [
+        "ROT-029"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-043"
+      ]
+    },
+    {
+      "locality_id": "LOC-014-001",
+      "parent_subregion": "SUB-014-001",
+      "access_routes": [
+        "ROT-030"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-049"
+      ]
+    },
+    {
+      "locality_id": "LOC-014-002",
+      "parent_subregion": "SUB-014-002",
+      "access_routes": [
+        "ROT-030",
+        "ROT-031"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-050"
+      ]
+    },
+    {
+      "locality_id": "LOC-014-003",
+      "parent_subregion": "SUB-014-003",
+      "access_routes": [
+        "ROT-031"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-051"
+      ]
+    },
+    {
+      "locality_id": "LOC-015-001",
+      "parent_subregion": "SUB-015-001",
+      "access_routes": [
+        "ROT-032"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-052"
+      ]
+    },
+    {
+      "locality_id": "LOC-015-002",
+      "parent_subregion": "SUB-015-002",
+      "access_routes": [
+        "ROT-032",
+        "ROT-033"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-053"
+      ]
+    },
+    {
+      "locality_id": "LOC-015-003",
+      "parent_subregion": "SUB-015-003",
+      "access_routes": [
+        "ROT-033"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-054"
+      ]
+    },
+    {
+      "locality_id": "LOC-016-001",
+      "parent_subregion": "SUB-016-001",
+      "access_routes": [
+        "ROT-034"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-055"
+      ]
+    },
+    {
+      "locality_id": "LOC-016-002",
+      "parent_subregion": "SUB-016-002",
+      "access_routes": [
+        "ROT-034",
+        "ROT-035"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-056"
+      ]
+    },
+    {
+      "locality_id": "LOC-016-003",
+      "parent_subregion": "SUB-016-003",
+      "access_routes": [
+        "ROT-035"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-057"
+      ]
+    },
+    {
+      "locality_id": "LOC-017-001",
+      "parent_subregion": "SUB-017-001",
+      "access_routes": [
+        "ROT-036"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-058"
+      ]
+    },
+    {
+      "locality_id": "LOC-017-002",
+      "parent_subregion": "SUB-017-002",
+      "access_routes": [
+        "ROT-036",
+        "ROT-037"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-059"
+      ]
+    },
+    {
+      "locality_id": "LOC-017-003",
+      "parent_subregion": "SUB-017-003",
+      "access_routes": [
+        "ROT-037"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-060"
+      ]
+    },
+    {
+      "locality_id": "LOC-018-001",
+      "parent_subregion": "SUB-018-001",
+      "access_routes": [
+        "ROT-038"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-061"
+      ]
+    },
+    {
+      "locality_id": "LOC-018-002",
+      "parent_subregion": "SUB-018-002",
+      "access_routes": [
+        "ROT-038",
+        "ROT-039"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-062"
+      ]
+    },
+    {
+      "locality_id": "LOC-018-003",
+      "parent_subregion": "SUB-018-003",
+      "access_routes": [
+        "ROT-039"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-063"
+      ]
+    },
+    {
+      "locality_id": "LOC-019-001",
+      "parent_subregion": "SUB-019-001",
+      "access_routes": [
+        "ROT-040"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-064"
+      ]
+    },
+    {
+      "locality_id": "LOC-019-002",
+      "parent_subregion": "SUB-019-002",
+      "access_routes": [
+        "ROT-040",
+        "ROT-041"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-065"
+      ]
+    },
+    {
+      "locality_id": "LOC-019-003",
+      "parent_subregion": "SUB-019-003",
+      "access_routes": [
+        "ROT-041"
+      ],
+      "access_note": "Entrada/saída da localidade se dá pelas rotas já catalogadas da subregião-mãe (STELLAR_ROUTE_NETWORK_DEV_V1_0.json) - deslocamento entre localidades da mesma subregião é curto/local (ver STELLAR_TERRAIN_TRAVEL_SYSTEM: SAME_TERRITORY).",
+      "constructions_inside": [
+        "EST-066"
+      ]
+    }
+  ]
+}

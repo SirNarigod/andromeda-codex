@@ -1,0 +1,33 @@
+{
+  "checkpoint": "FIRST_PLAYABLE_V0_1_16_DEV",
+  "parent_checkpoint": "FIRST_PLAYABLE_V0_1_15_DEV",
+  "status": "STATIC_VALIDATED_RUNTIME_PENDING",
+  "functional_scope": [
+    "damage_triggered_aggro_and_retaliation",
+    "expanded_surface_play_area",
+    "increased_enemy_population",
+    "additional_npcs",
+    "sword_and_bow_merchant_npcs"
+  ],
+  "preserved_contracts": {
+    "left_common_world_target": "movement_only",
+    "left_scene_transition": "approach_and_transition",
+    "right_click": "contextual_click_only",
+    "global_attack_cooldown_s": 2.0,
+    "inventory_weapon_selection": true,
+    "ranged_projectile_damage_on_impact": true
+  },
+  "authority": {
+    "master_v2_0_1": "READ_ONLY_UNCHANGED",
+    "living_engine_v1_0_0": "READ_ONLY_UNCHANGED",
+    "new_map_population": "DEV_TEST_CONTENT"
+  },
+  "static_checks": {
+    "checks": 26,
+    "passed": 26,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1",
+  "backup_authorized": false
+}

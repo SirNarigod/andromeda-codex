@@ -1,0 +1,101 @@
+{
+  "record_id": "CHECKPOINT-LIVING-CYCLE-05-SOCIETY-LABOR-V1.1.0-DEV",
+  "project": "ANDRÔMEDA CÓDEX",
+  "component": "Living Simulation Engine",
+  "development_version": "V1.1.0-DEV",
+  "cycle": "5/6",
+  "cycle_name": "SOCIAL + FACTION + LAW + LABOR",
+  "status": "PASS",
+  "baseline": {
+    "living_version": "V1.0.0",
+    "living_release": "ANDROMEDA_LIVING_SIM_ENGINE_V1_0_0_RELEASE(1).zip",
+    "living_sha256": "6f12c9db0976e234ef55cdfe23b998c07240fa8d80eb0d0c247d12bbd16ebabc",
+    "master_version": "V2.0.1",
+    "master_release": "ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE.zip",
+    "master_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "master_mode": "READ_ONLY"
+  },
+  "changes": [
+    "Runtime jurisdiction/law profiles with no-law=no-fabricated-crime behavior",
+    "Witness/evidence-gated legal incidents using existing social memory",
+    "Faction-scoped reputation and legal pressure integration",
+    "Fine payment transaction from offender wallet to faction treasury",
+    "Read-only catalog of 91 canonical professions",
+    "Runtime employers, job offers, employment contracts and wage transfers",
+    "Employment acceptance now guarantees worker wallet before paid work",
+    "Labor factor feeds local economic production while preserving legacy default=1.0",
+    "Faction tick consumes runtime legal_pressure while preserving default=0.0"
+  ],
+  "governance": {
+    "canonical_mutations": 0,
+    "master_mutations": 0,
+    "runtime_policy_only": [
+      "law rules",
+      "fine amounts",
+      "wage amounts",
+      "legal pressure coefficients"
+    ],
+    "authorial_promotions": 0,
+    "backup_authorized": false,
+    "release_authorized": false
+  },
+  "validation": {
+    "society_labor_new": {
+      "tests": 11,
+      "passed": 11,
+      "failed": 0
+    },
+    "social_memory_commerce_domain": {
+      "tests": 88,
+      "passed": 88,
+      "failed": 0
+    },
+    "world_systems": {
+      "tests": 51,
+      "passed": 51,
+      "failed": 0
+    },
+    "runtime_core_nonstress": {
+      "tests": 57,
+      "passed": 57,
+      "failed": 0
+    },
+    "runtime_core_stress": {
+      "tests": 2,
+      "passed": 2,
+      "failed": 0
+    },
+    "world_orchestrator": {
+      "tests": 54,
+      "passed": 54,
+      "failed": 0
+    },
+    "total_verified": {
+      "tests": 263,
+      "passed": 263,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "timeout_note": "A combined invocation timed out during runtime stress and was not counted as PASS; affected suites were rerun separately and passed."
+  },
+  "files": [
+    {
+      "path": "01_RUNTIME/world_systems.py",
+      "size": 39052,
+      "sha256": "2525a288c9a305888bd9a4b21bad0a7c3e67d200ca4a5b4248c4121e2d9b4e27"
+    },
+    {
+      "path": "01_RUNTIME/society_labor.py",
+      "size": 42415,
+      "sha256": "30eea42cbf06e6d2dab4dd24a840c27e42d47fac639e5c0cdac7aa2399a7001a"
+    },
+    {
+      "path": "03_TESTS/test_society_labor_v1_1.py",
+      "size": 10323,
+      "sha256": "565941fc75515fd0a768527d68e31da97671f0751dff0548460c880dfc1c6b19"
+    }
+  ],
+  "known_open_blockers": 0,
+  "next_cycle": "CYCLE 6 — BALANCE + LONG HORIZON + INTEGRATED RELEASE",
+  "generated_at": "2026-08-16T00:29:53.133605+00:00"
+}

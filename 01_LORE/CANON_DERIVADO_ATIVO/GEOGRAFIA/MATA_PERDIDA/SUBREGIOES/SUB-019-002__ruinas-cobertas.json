@@ -1,0 +1,47 @@
+{
+  "record_id": "SUB-019-002",
+  "record_kind": "DERIVED_SUBREGION_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Ruinas Cobertas",
+  "parent_political_unit": "TER-019",
+  "provenance": {
+    "approval": "AUTHORIAL_DECISION_FASE_52",
+    "r2_anchors": [],
+    "compatibility": "Territorio 100% novo por decisao explicita do autor (fase 52) - distinto de TER-008 Santuarios do Coracao (territorio sagrado dos Povos das Copas) e TER-015 Vale das Ruinas (ruinas em deserto); ruina aqui e anonima, sem civilizacao historica confirmada."
+  },
+  "function": "Estruturas anonimas tomadas pela vegetacao ao longo de seculos, sem civilizacao historica confirmada.",
+  "locality_references": [
+    "LOC-019-002"
+  ],
+  "permitted_catalog_links": {
+    "npc_roles": [],
+    "professions": [
+      "arqueologa"
+    ],
+    "encounters": [],
+    "resources": [
+      "MIN-ROOT-SHARD",
+      "EST-065",
+      "REG-006"
+    ]
+  },
+  "local_conflicts": [
+    "valor de pesquisa versus fragilidade das estruturas cobertas por raizes"
+  ],
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY_BEYOND_FASE_52_GATE",
+    "NO_AUTOMATIC_KENUA_SCENE",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_FIXED_BORDER_COORDINATE",
+    "NO_NAMED_HISTORICAL_CIVILIZATION"
+  ],
+  "story_generators": [
+    "Uma descoberta em Ruinas Cobertas testa o equilibrio entre curiosidade e respeito pela selva."
+  ],
+  "root_corruption": {
+    "status": "CORROMPIDA",
+    "intensity": "MEDIA",
+    "since_note": "Aplicado pelo portao autoral fase 57 (STELLAR_ROOT_CORRUPTION_GATE_DEV_V1_0.json) - fato do mundo em 842 EC, fase Alimentacao Silenciosa->Corrupcao da Raiz Profunda (COR-001)."
+  }
+}

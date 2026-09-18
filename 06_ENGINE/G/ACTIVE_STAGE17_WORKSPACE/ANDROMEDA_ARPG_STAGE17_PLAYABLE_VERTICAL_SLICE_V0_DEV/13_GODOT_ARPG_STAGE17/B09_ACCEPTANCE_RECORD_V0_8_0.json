@@ -1,0 +1,432 @@
+{
+  "record_id": "ANDROMEDA-ARPG-STAGE16B-B09-ACCEPTANCE-V0.8.0",
+  "stage": "16B/23",
+  "block": "B09_VENDOR_INVENTORY_BAG_CONTAINER_QUEST_LOOP",
+  "captured_at": "2026-08-21T18:55:56.0006967-03:00",
+  "status": "PASS_APPLICABLE_B09_SCOPE_WITH_PARTIAL_AUTHORITATIVE_EVIDENCE",
+  "b09_closed": true,
+  "b10_started": false,
+  "b11_started": false,
+  "final_stage16_backup_created": false,
+  "authority": {
+    "master_v2_0_1": "READ_ONLY",
+    "living_simulation_engine": "READ_ONLY_BASELINE",
+    "stage15_history": "READ_ONLY_HISTORY",
+    "stage16a_v0_8_0": "READ_ONLY_BASELINE",
+    "godot_living_v1_5": "READ_ONLY_HISTORY",
+    "godot_role": "VENDOR_INVENTORY_BAG_QUEST_PRESENTATION_INPUT_EXTERNAL_PROJECTION_AND_CLIENT_ORCHESTRATION_ONLY",
+    "price_or_currency_authority_in_gdscript": false,
+    "inventory_grant_remove_or_stack_authority_in_gdscript": false,
+    "ownership_or_capacity_authority_in_gdscript": false,
+    "bag_contents_or_effective_owner_authority_in_gdscript": false,
+    "equip_authorization_in_gdscript": false,
+    "quest_completion_objective_reward_or_xp_authority_in_gdscript": false,
+    "economy_or_canonical_mutation_in_gdscript": false,
+    "backend_substitute_created": false,
+    "http_endpoint_created": false,
+    "canonical_mutation_detected": false,
+    "b10_death_save_or_dropped_bag_logic_created": false
+  },
+  "environment": {
+    "godot_version": "4.7.1.stable.official.a13da4feb",
+    "project_path": "C:/Users/thall/Documents/andromeda-argp/ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/07_GODOT_ARPG_STAGE16B",
+    "main_scene": "res://scenes/Main.tscn",
+    "editor_bridge": "EXISTING_LOCAL_ANDROMEDA_EDITOR_BRIDGE_OPERATIONAL",
+    "user_editor_pid": 10524,
+    "user_editor_pid_preserved": true,
+    "backend_127_0_0_1_8000": {
+      "status": "NOT_AVAILABLE",
+      "listener_count": 0
+    }
+  },
+  "architecture": {
+    "vendor": {
+      "scene": "scenes/actors/VendorNPC.tscn",
+      "target_role": "NPC_INTERACTABLE_VENDOR_PRESENTATION",
+      "service_ref": "SHOP-S13-91CDF9F934810A65B2",
+      "location_ref": "POI-002",
+      "merchant_identity_invented": false,
+      "physical_approach_required": true,
+      "click_or_approach_auto_purchases": false,
+      "ui_open_auto_purchases": false,
+      "quote_auto_executes": false,
+      "flow": [
+        "SELECT_VENDOR",
+        "PHYSICAL_APPROACH",
+        "OPEN_VENDOR_UI",
+        "REQUEST_QUOTE",
+        "PROJECT_EXTERNAL_QUOTE",
+        "EXPLICIT_USER_CONFIRMATION",
+        "EXECUTE_TRADE_INTENT",
+        "PROJECT_EXTERNAL_RESULT"
+      ],
+      "operations": ["BUY", "SELL"],
+      "identity_guards": [
+        "SESSION_REF",
+        "VENDOR_REF",
+        "ITEM_REF",
+        "OPERATION",
+        "QUANTITY",
+        "QUOTE_REF",
+        "SEQUENCE"
+      ],
+      "local_price_calculation": false,
+      "local_wallet_mutation": false,
+      "local_inventory_mutation": false
+    },
+    "inventory": {
+      "open_action": "I",
+      "permanent_hud": false,
+      "external_projections": [
+        "BASE_INVENTORY",
+        "BAG_CONTAINER",
+        "EQUIPMENT",
+        "TWO_WEAPON_QUICK_SLOTS",
+        "ONE_ACTIVE_WEAPON",
+        "ITEM_STACKS",
+        "PROTECTED_CRITICAL_STATUS",
+        "CAPACITY_AND_LOAD",
+        "EFFECTIVE_CARRY_ROUTING"
+      ],
+      "menu_wheel": "UI_SCROLL_ONLY",
+      "menu_wheel_swaps_weapon": false,
+      "menu_wheel_zooms": false,
+      "local_capacity_calculation": false,
+      "local_item_transfer": false
+    },
+    "bag": {
+      "life_states": ["NO_BAG", "BAG_EQUIPPED"],
+      "base_reduced_policy_is_external_projection": true,
+      "bag_contents_are_external_projection": true,
+      "effective_owner_routing_is_external_projection": true,
+      "equip_intent_only": true,
+      "unequip_when_not_contracted": "NOT_CONTRACTED",
+      "death_drop_created": false,
+      "dropped_bag_created": false,
+      "water_ttl_created": false,
+      "recovery_created": false,
+      "save_reload_created": false
+    },
+    "quest": {
+      "allowed_existing_refs": [
+        "QST-S12-VARGA-MEDIATION",
+        "QST-S12-BRIDGE-CONTINUITY",
+        "QST-S12-WORKSHOP-CIRCUIT",
+        "QST-S12-FRONTIER-SUPPLY",
+        "QST-S12-VARGA-ORIENTATION"
+      ],
+      "external_projections": [
+        "QUEST_OFFER",
+        "QUEST_STATE",
+        "OBJECTIVES",
+        "OBJECTIVE_UPDATE",
+        "CHOICE_STATE",
+        "COMPLETION",
+        "REWARD"
+      ],
+      "client_intents": ["QUEST_ACCEPT", "QUEST_INTERACTION", "QUEST_CHOICE"],
+      "decline_when_not_contracted": "NOT_CONTRACTED",
+      "local_kill_or_pickup_counting": false,
+      "local_completion": false,
+      "local_reward_or_xp": false,
+      "new_narrative_or_canon": false
+    },
+    "ui": {
+      "family": ["WHITE_OFF_WHITE", "ROUNDED_CORNERS", "LEGIBLE_GRAY", "LIGHT_ORANGE_IMPORTANT"],
+      "world_first": true,
+      "scene_tree_global_pause": false,
+      "world_click_behind_modal": false,
+      "world_space_or_e_leak_behind_modal": false,
+      "maximum_simultaneous_feedbacks": 3,
+      "feedback_priority_preserved": true
+    },
+    "interop": {
+      "b03_deterministic_target_ref_preserved": true,
+      "b05_dialogue_and_exactly_two_quick_slots_preserved": true,
+      "b06_combat_feedback_target_stability_preserved": true,
+      "b07_ground_loot_and_auto_pickup_preserved": true,
+      "b08_gathering_to_ground_loot_preserved": true,
+      "direct_physical_output_to_inventory_path_created": false
+    },
+    "placeholders": [
+      "VENDOR_NPC_VISUAL",
+      "EXTERNAL_VENDOR_STOCK_QUOTE_AND_TRADE_RESULT_FIXTURES",
+      "EXTERNAL_INVENTORY_AND_BAG_SNAPSHOTS",
+      "EXTERNAL_QUEST_OFFERS_STATES_EVENTS_AND_REWARDS",
+      "FINAL_ART",
+      "FINAL_ANIMATION",
+      "FINAL_AUDIO"
+    ]
+  },
+  "tests": [
+    {
+      "id": "STAGE16B_B09_HEADLESS_FINAL",
+      "result": "PASS",
+      "passed": 379,
+      "failed": 0,
+      "process_exit_code": 0,
+      "stderr_bytes": 0,
+      "errors": 0,
+      "warnings": 0,
+      "gate_marker": "ANDROMEDA_STAGE16B_B09_GATE: PASS",
+      "evidence": "B09_GODOT_RUNTIME.log"
+    },
+    {
+      "id": "STAGE16B_B09_EDITOR_BRIDGE_FINAL",
+      "result": "PASS",
+      "passed": 379,
+      "failed": 0,
+      "debugger_errors": 0,
+      "debugger_warnings": 0,
+      "controlled_stop_final_errors": 0,
+      "evidence": "B09_EDITOR_BRIDGE_DEBUGGER_V0_8_0.json"
+    },
+    {
+      "id": "STAGE16B_B09_MAIN_EDITOR_BRIDGE_FINAL",
+      "result": "PASS",
+      "observed_seconds": 3,
+      "debugger_errors": 0,
+      "debugger_warnings": 0,
+      "controlled_stop_final_errors": 0,
+      "evidence": "B09_EDITOR_BRIDGE_DEBUGGER_V0_8_0.json"
+    },
+    {"id": "STAGE16B_B01_HEADLESS_REGRESSION", "result": "PASS", "passed": 54, "failed": 0, "process_exit_code": 0, "stderr_bytes": 0},
+    {"id": "STAGE16B_B02_HEADLESS_REGRESSION", "result": "PASS", "passed": 90, "failed": 0, "process_exit_code": 0, "stderr_bytes": 0},
+    {"id": "STAGE16B_B03_HEADLESS_REGRESSION", "result": "PASS", "passed": 357, "failed": 0, "process_exit_code": 0, "stderr_bytes": 0},
+    {"id": "STAGE16B_B04_HEADLESS_REGRESSION", "result": "PASS", "passed": 156, "failed": 0, "process_exit_code": 0, "stderr_bytes": 0},
+    {"id": "STAGE16B_B05_HEADLESS_REGRESSION", "result": "PASS", "passed": 210, "failed": 0, "process_exit_code": 0, "stderr_bytes": 0},
+    {"id": "STAGE16B_B06_HEADLESS_REGRESSION", "result": "PASS", "passed": 265, "failed": 0, "process_exit_code": 0, "stderr_bytes": 0},
+    {"id": "STAGE16B_B07_HEADLESS_REGRESSION", "result": "PASS", "passed": 357, "failed": 0, "process_exit_code": 0, "stderr_bytes": 0},
+    {"id": "STAGE16B_B08_HEADLESS_REGRESSION", "result": "PASS", "passed": 475, "failed": 0, "process_exit_code": 0, "stderr_bytes": 0},
+    {
+      "id": "STAGE16A_POST_B09_ACCUMULATED",
+      "result": "PASS",
+      "passed": 209,
+      "failed": 0,
+      "runner_summary": "Ran 209 tests in 264.638s",
+      "process_exit_code": 0,
+      "note": "Python unittest reports its verbose successful runner output through its standard test stream; the run ends in OK with no failed test."
+    },
+    {"id": "STAGE16A_POST_B09_STRESS_FINAL", "result": "PASS", "passed": 20, "failed": 0, "process_exit_code": 0, "stderr_bytes": 0},
+    {"id": "GODOT_LIVING_V1_5_HISTORICAL_RUNTIME_GATE", "result": "PASS", "marker": "ANDROMEDA_GODOT_V1_5_RUNTIME_GATE: PASS", "passed": 4, "failed": 0, "process_exit_code": 0, "stderr_bytes": 0},
+    {"id": "STAGE16A_POST_B09_BYTE_INTEGRITY", "result": "PASS", "files_verified": 724, "missing": 0, "mismatches": 0, "godot_living_v1_5_files_verified": 4, "evidence": "B09_BASELINE_INTEGRITY.log"}
+  ],
+  "required_b09_scenarios": [
+    {"scenario": "VENDOR_SELECTION_PHYSICAL_APPROACH_RIGHT_CLICK_AND_E", "status": "PASS"},
+    {"scenario": "CLICK_APPROACH_OPEN_SELECT_AND_QUOTE_NEVER_AUTO_PURCHASE", "status": "PASS"},
+    {"scenario": "REQUEST_QUOTE_AND_EXPLICIT_EXECUTE_ARE_DISTINCT", "status": "PASS"},
+    {"scenario": "BUY_AND_SELL_ENVELOPES", "status": "PASS_CLIENT_ENVELOPE"},
+    {"scenario": "QUOTE_SESSION_VENDOR_ITEM_OPERATION_QUANTITY_REFERENCE_SEQUENCE_GUARDS", "status": "PASS_CLIENT_PROJECTION"},
+    {"scenario": "STALE_DUPLICATE_WRONG_SESSION_VENDOR_ITEM_OPERATION_AND_REPLACED_QUOTE_REJECTION", "status": "PASS_CLIENT_PROJECTION"},
+    {"scenario": "EXECUTE_WITHOUT_OR_WITH_INVALID_QUOTE_REJECTION", "status": "PASS"},
+    {"scenario": "EXPLICIT_EXECUTE_ONLY_AND_SAFE_DUPLICATE_RETRY", "status": "PASS_CLIENT_ENVELOPE"},
+    {"scenario": "INSUFFICIENT_FUNDS_INVENTORY_FULL_AND_ITEM_UNAVAILABLE_PROJECTION", "status": "PASS_CLIENT_PROJECTION"},
+    {"scenario": "NO_LOCAL_WALLET_INVENTORY_OWNERSHIP_OR_STACK_MUTATION", "status": "PASS"},
+    {"scenario": "BUY_WITH_AND_WITHOUT_BAG_AND_SELL_FROM_BAG_OR_BASE_ROUTING_PROJECTION", "status": "PASS_CLIENT_PROJECTION"},
+    {"scenario": "INVENTORY_I_TOGGLE_AND_MODAL_SCROLL", "status": "PASS"},
+    {"scenario": "NO_WEAPON_SWAP_OR_ZOOM_WHILE_MENU_CONSUMES_WHEEL", "status": "PASS"},
+    {"scenario": "BASE_BAG_EQUIPMENT_STACK_CAPACITY_LOAD_AND_PROTECTED_STATE_PROJECTION", "status": "PASS_CLIENT_PROJECTION"},
+    {"scenario": "EXACTLY_TWO_QUICK_SLOTS_AND_ONE_ACTIVE_WEAPON", "status": "PASS"},
+    {"scenario": "NO_BAG_AND_BAG_EQUIPPED_LIVING_STATE", "status": "PASS_CLIENT_PROJECTION"},
+    {"scenario": "NO_LOCAL_AUTHORITATIVE_CONTAINER_TRANSFER", "status": "PASS"},
+    {"scenario": "NO_DEATH_DROP_RECOVERY_RESPAWN_TIMER_OR_SAVE_LOGIC", "status": "PASS"},
+    {"scenario": "QUEST_OFFER_ACCEPT_CHOICE_ACTIVE_AND_OBJECTIVE_PROJECTION", "status": "PASS_CLIENT_PROJECTION"},
+    {"scenario": "QUEST_COMPLETION_REWARD_AND_XP_EXTERNAL_ONLY", "status": "PASS"},
+    {"scenario": "QUEST_DUPLICATE_STALE_OUT_OF_ORDER_WRONG_SESSION_GUARDS", "status": "PASS_CLIENT_PROJECTION"},
+    {"scenario": "NO_LOCAL_KILL_PICKUP_GATHER_OR_VENDOR_OBJECTIVE_COMPLETION", "status": "PASS"},
+    {"scenario": "DIALOGUE_GROUND_LOOT_GATHERING_AUTO_PICKUP_AND_COMBAT_TARGET_REGRESSIONS", "status": "PASS"},
+    {"scenario": "MODAL_WORLD_INPUT_BLOCKING_WITHOUT_GLOBAL_SCENETREE_PAUSE", "status": "PASS"},
+    {"scenario": "UNIFIED_OFF_WHITE_ROUNDED_GRAY_LIGHT_ORANGE_UI", "status": "PASS_B09_SCOPE"},
+    {"scenario": "NO_GAMEPLAY_AUTHORITY_IN_GDSCRIPT", "status": "PASS"},
+    {"scenario": "DEBUGGER_ZERO_ERRORS_ZERO_WARNINGS", "status": "PASS"}
+  ],
+  "invalidated_runs": [
+    {
+      "id": "POST_B09_B08_REGRESSION_R1",
+      "counted": false,
+      "result": "PARSER_TYPE_ERROR_WITH_HISTORICAL_GATE_CASCADE",
+      "reason": "Static custom-script cast to CollisionObject3D in quest target RID handling was invalid."
+    },
+    {
+      "id": "B09_GATE_R1",
+      "counted": false,
+      "result": "377/379",
+      "reason": "Reconnect stock reconstruction lost the typed Array[Dictionary], and two stamina assertions referenced obsolete labels rather than the B05 contract constants."
+    },
+    {
+      "id": "B02_B04_COMBINED_CAPTURE",
+      "counted": false,
+      "result": "INCOMPLETE_CAPTURE_WITHOUT_INDEPENDENT_EXIT_EVIDENCE",
+      "reason": "The combined capture exceeded the available capture window."
+    },
+    {
+      "id": "B09_INTEGRITY_R1",
+      "counted": false,
+      "result": "UNUSABLE_HASH_OUTPUT",
+      "reason": "Convert.ToHexString was unavailable in Windows PowerShell."
+    },
+    {
+      "id": "DIRECT_GODOT_GUI_LAUNCH",
+      "counted": false,
+      "result": "NO_RETAINED_PROCESS_OR_EXIT_EVIDENCE",
+      "reason": "The Windows GUI launcher returned before usable evidence was retained."
+    },
+    {
+      "id": "B09_RECAPTURE_ARGUMENTLIST_NULL",
+      "counted": false,
+      "result": "NO_VALID_GATE_STARTED_EXIT_1",
+      "reason": "ProcessStartInfo.ArgumentList was unavailable and Godot received incomplete arguments."
+    },
+    {
+      "id": "B09_RECAPTURE_WRONG_SCENE_SWITCH",
+      "counted": false,
+      "result": "INCOMPLETE_PROCESS",
+      "reason": "A non-contract --scene switch did not select the positional gate scene; the exact spawned process was stopped and discarded."
+    },
+    {
+      "id": "B09_RECAPTURE_DEFAULT_EDITOR_LINGER",
+      "counted": false,
+      "result": "379/379_MARKER_WITHOUT_EXIT_IN_CAPTURE_WINDOW",
+      "reason": "The intended 240-second Editor Bridge observation linger remained active in a headless recapture."
+    },
+    {
+      "id": "B09_FINAL_MATRIX_HASH_WRONG_PATH",
+      "counted": false,
+      "result": "NO_MATRIX_HASH_PRODUCED",
+      "reason": "The first final recheck targeted a nonexistent 01_CONTRACTS path; it was discarded and rerun against 02_CONTRACTS/ARPG_STAGE16A with terminating error handling."
+    }
+  ],
+  "corrections": [
+    "Changed quest target RID access to dynamic capability checks and restarted the affected B08/B09 tests.",
+    "Reconstructed reconnect stock as a typed Array[Dictionary] and used the real B05 CIRCLE_RADIAL and SOFT_YELLOW contracts, then restarted B09.",
+    "Reran B02, B03 and B04 independently with complete process exit evidence.",
+    "Reran integrity with BitConverter formatting, literal paths and terminating error handling.",
+    "Located the protected source Acceptance Matrix under 02_CONTRACTS/ARPG_STAGE16A after discarding a wrong-path recheck, then confirmed the expected SHA-256.",
+    "Used the positional Godot scene argument and the headless --gate-success-linger=0 user argument for the accepted recapture.",
+    "Preserved the existing editor PID 10524 while stopping only invalid child processes created by recapture attempts."
+  ],
+  "integrity": {
+    "checkpoint_files_verified": 724,
+    "checkpoint_missing": 0,
+    "checkpoint_mismatches": 0,
+    "checkpoint_sha256": "21626A3152CB37E167EEE24BFF9D3142C5D389A8CA2827594B34211591525A6A",
+    "master_v2_0_1_sha256": "6D9AC3CCE7DCF6A65FDCF73859C332A0211C1AF52D149077BEEF554BF7BBD0B2",
+    "source_acceptance_matrix_sha256": "9335E6C7A5FAA25F97991204787D2C77485592419AAA1F51641C01E31317454C",
+    "godot_living_v1_5_files_verified": 4,
+    "godot_living_v1_5_mismatches": 0,
+    "source_acceptance_matrix_modified": false,
+    "protected_or_canonical_content_writes_outside_stage16b": 0,
+    "runtime_cache_note": "Authorized Python tests may refresh __pycache__ timestamps; protected/source bytes are unchanged.",
+    "stage16b_zip_count": 0
+  },
+  "files_modified": [
+    {"path": "project.godot", "sha256": "8371836A099D3B87AB06530F8D5E1F0F7058FF64A108FDC1EE113FDC35BC53BB", "reason": "B09 project label while preserving main scene, bridge endpoint, input and runtime settings."},
+    {"path": "scenes/Main.tscn", "sha256": "0A5369C5A881314230F557A3449B33E6F13AF620067FD9FADFC1F084C0D8A8C0", "reason": "Additive VendorClient, InventoryClient, QuestClient and vendor placeholder integration."},
+    {"path": "scripts/main.gd", "sha256": "B34C279029F06A3EB296F756398A1374EAF7FACDCC476302883A9DD1E48253DD", "reason": "B09 binding and physical/contextual client orchestration without gameplay authority."},
+    {"path": "scripts/input/input_router.gd", "sha256": "EF653CFD4224B6BAE360818822F8BA4C928071B4B37186329CF426CD483556BA", "reason": "Vendor/inventory/quest modal input consumption and no world leakage."},
+    {"path": "scenes/ui/Inventory.tscn", "sha256": "DCDB9DC21BF34BF3017D35B741EA4DBA3F66E1447834640CFF23573C81342A25", "reason": "External base/Bag/equipment/stack projection shell in the existing visual family."},
+    {"path": "scripts/ui/inventory_shell.gd", "sha256": "7B568DD9F8284360022F0E4C5CB882B7F974CBE1D9FCCF94BD71E7E1860B64ED", "reason": "Render external inventory/Bag state and menu-only scrolling without local transfer."},
+    {"path": "scenes/ui/HUD.tscn", "sha256": "97AD994CF1B0D7AC39B9E17B45ABAD25090800B35F9B20F134948546792582DC", "reason": "Vendor and quest panels integrated additively with the B05/B06 HUD."},
+    {"path": "scripts/ui/hud_controller.gd", "sha256": "5B3141A74584983A20F1B05C1AAB21D7F51AC119C45EAEE32E92E143B82A3A59", "reason": "Panel orchestration, input modality and priority-limited external feedback."},
+    {"path": "tests/godot/b05_runtime_gate.gd", "sha256": "020749069CB5BCC3377E96BBCDCB791F23108BB04048F52C25BB606C3BA38885", "reason": "Exact B09 project-label compatibility for the historical B05 regression."},
+    {"path": "tests/godot/b06_runtime_gate.gd", "sha256": "D2665D7F17AD1AEC7C252B2462533C9B34726DDEBD62C7B39AA0C8491BA6653F", "reason": "Exact B09 project-label compatibility for the historical B06 regression."},
+    {"path": "tests/godot/b07_runtime_gate.gd", "sha256": "FF4D739C25E685811DA32470C8C1C79A70C222B436C272AFB557F900454561A4", "reason": "Exact B09 project-label compatibility for the historical B07 regression."},
+    {"path": "tests/godot/b08_runtime_gate.gd", "sha256": "C75811914E927246FBD35E8983BC1D94499DDA004EC96050FE5740F7718E0EA3", "reason": "Exact B09 project-label compatibility for the historical B08 regression."}
+  ],
+  "files_created": [
+    {"path": "scripts/interaction/vendor_target.gd", "sha256": "C978ED1D9608B588D5FB7503A215A4DCAA621B1AE2ABACC5F6F074AE42B5FC6F"},
+    {"path": "scripts/interaction/vendor_target.gd.uid", "sha256": "189C13BD8CFCBA91EC60ED18C5A6593363B917086289B705B31404CDB1A043F1", "generated_by": "GODOT"},
+    {"path": "scripts/interaction/vendor_client.gd", "sha256": "67051F9F11591AD583C68CC516DEEE1DF45995A11A0DDA6082B9F7145BBCE9FB"},
+    {"path": "scripts/interaction/vendor_client.gd.uid", "sha256": "8C3A85AFF737A7067DD8EA62CE3176D239E9059F6DA8B23A6915455D664B98C9", "generated_by": "GODOT"},
+    {"path": "scripts/inventory/inventory_client.gd", "sha256": "81353DF510D48FF32A2266BA32326134C81B447A683F1B387AE0BFA4ABD64A14"},
+    {"path": "scripts/inventory/inventory_client.gd.uid", "sha256": "E46E01DD26FCC9D9B52194C7E937D60F95EF895C8286BAFFAB5ABC38EE25DB33", "generated_by": "GODOT"},
+    {"path": "scripts/quest/quest_client.gd", "sha256": "72E7DC90BA66C3CC915C5AFD9538E479B919696738E9F6AB1E247B398D831AAB"},
+    {"path": "scripts/quest/quest_client.gd.uid", "sha256": "3E2ABF911E4905B3626CF181F0743B8191EE94B8DE7DE1F5C771353A97108BA7", "generated_by": "GODOT"},
+    {"path": "scripts/ui/vendor_panel.gd", "sha256": "AA6D4E453D2C52AD6800C68070619C15258D986016C17C640B4322BF09AFA7C8"},
+    {"path": "scripts/ui/vendor_panel.gd.uid", "sha256": "DD4984F267D340A5509BA1CEB31A10DEBBB69A04953F47AE8C42D3A1FF63A2F0", "generated_by": "GODOT"},
+    {"path": "scripts/ui/quest_panel.gd", "sha256": "789B4BCE143EC289B7C529F6565D1E0C4BFA27F4A51CD13591FD965A4BE16566"},
+    {"path": "scripts/ui/quest_panel.gd.uid", "sha256": "3051C7CB2445B7C19FA5939C7C046FF38DDB37269EA673F0E752140C95FD5552", "generated_by": "GODOT"},
+    {"path": "scenes/actors/VendorNPC.tscn", "sha256": "3EB0877B2F7D0B4F57C15836446360244546C814F16C5033FF24BA4828C142C0"},
+    {"path": "scenes/ui/Vendor.tscn", "sha256": "65B12726ACDE5684E18A8315DAFB775E363E0191FFB63EBAB4990F5B6BBC03D1"},
+    {"path": "scenes/ui/QuestPanel.tscn", "sha256": "102815A1EA107CEA4867AEA218165C316E7D249EBD5DAC83A115378F7D2D4EFA"},
+    {"path": "tests/godot/B09RuntimeGate.tscn", "sha256": "956D7907D8AC736B62BEA20F1EE54F671FA12C328492897EF5C435E7937FC899"},
+    {"path": "tests/godot/b09_runtime_gate.gd", "sha256": "08D6122B6083C58AC72D92407C2E27395D8CC28946154365F0FDEAB42D7B18FC"},
+    {"path": "B09_GODOT_RUNTIME.log"},
+    {"path": "B09_INVALIDATED_RUNS.log"},
+    {"path": "B09_BASELINE_INTEGRITY.log"},
+    {"path": "B09_EDITOR_BRIDGE_DEBUGGER_V0_8_0.json"},
+    {"path": "B09_IMPLEMENTATION_LOG_V0_8_0.md"},
+    {"path": "README_STAGE16B_B09.md"},
+    {"path": "B09_ACCEPTANCE_RECORD_V0_8_0.json"}
+  ],
+  "acceptance_matrix_before_b09": {
+    "PASS": ["G16B-01", "G16B-02", "G16B-07", "G16B-10", "G16B-11", "G16B-12", "G16B-13", "G16B-15"],
+    "PARTIAL_EVIDENCE": ["G16B-03", "G16B-04", "G16B-05", "G16B-06", "G16B-08", "G16B-09", "G16B-14", "G16B-20", "G16B-21", "G16B-22", "G16B-23", "G16B-24", "G16B-25", "G16B-26", "G16B-27"],
+    "NOT_EXECUTED": ["G16B-16", "G16B-17", "G16B-18", "G16B-19", "G16B-28"]
+  },
+  "acceptance_matrix_after_b09_summary": {
+    "PASS": ["G16B-01", "G16B-02", "G16B-07", "G16B-10", "G16B-11", "G16B-12", "G16B-13", "G16B-15"],
+    "PARTIAL_EVIDENCE": ["G16B-03", "G16B-04", "G16B-05", "G16B-06", "G16B-08", "G16B-09", "G16B-14", "G16B-16", "G16B-20", "G16B-21", "G16B-22", "G16B-23", "G16B-24", "G16B-25", "G16B-26", "G16B-27"],
+    "NOT_EXECUTED": ["G16B-17", "G16B-18", "G16B-19", "G16B-28"]
+  },
+  "acceptance_matrix_status_changes": [
+    {
+      "id": "G16B-16",
+      "before": "NOT_EXECUTED",
+      "after": "PARTIAL_EVIDENCE",
+      "evidence": [
+        "B09_REAL_GODOT_QUOTE_AND_EXECUTE_PHASE_SEPARATION",
+        "B09_NO_CLICK_APPROACH_OPEN_OR_QUOTE_AUTO_PURCHASE",
+        "B09_EXPLICIT_EXECUTE_CONFIRMATION",
+        "B09_NO_LOCAL_WALLET_OR_INVENTORY_MUTATION",
+        "B09_SESSION_STALE_DUPLICATE_AND_IDENTITY_GUARDS"
+      ],
+      "missing": ["LIVE_AUTHORITATIVE_VENDOR_ECONOMY_QUOTE_AND_TRADE_RESULT_ROUNDTRIP"]
+    }
+  ],
+  "acceptance_matrix": [
+    {"id": "G16B-01", "status": "PASS", "evidence": ["B01_54_OF_54_POST_B09"]},
+    {"id": "G16B-02", "status": "PASS", "evidence": ["B02_90_OF_90_POST_B09"]},
+    {"id": "G16B-03", "status": "PARTIAL_EVIDENCE", "evidence": ["B03_AND_B08_CONTEXTUAL_INTENTS_POST_B09", "B09_VENDOR_RIGHT_CLICK_AND_E_APPROACH"], "missing": ["LIVE_AUTHORITATIVE_ACTION_RESULTS_AND_COOLDOWN_ROUNDTRIP"]},
+    {"id": "G16B-04", "status": "PARTIAL_EVIDENCE", "evidence": ["B07_357_OF_357_POST_B09"], "missing": ["LIVE_AUTHORITATIVE_PICKUP_RESULT_ROUNDTRIP"]},
+    {"id": "G16B-05", "status": "PARTIAL_EVIDENCE", "evidence": ["B08_475_OF_475_POST_B09"], "missing": ["LIVE_AUTHORITATIVE_ALL_SOURCE_OUTPUT_ROUNDTRIPS"]},
+    {"id": "G16B-06", "status": "PARTIAL_EVIDENCE", "evidence": ["B07_AUTO_PICKUP_CONTRACT", "B08_GATHERING_NON_INTERRUPTION", "B09_MODAL_VENDOR_INVENTORY_QUEST_NON_INTERRUPTION"], "missing": ["LIVE_PROFILE_PREFERENCE_PERSISTENCE_ROUNDTRIP"]},
+    {"id": "G16B-07", "status": "PASS", "evidence": ["B04_156_OF_156_POST_B09"]},
+    {"id": "G16B-08", "status": "PARTIAL_EVIDENCE", "evidence": ["B04_B05_B08_POST_B09_REGRESSIONS"], "missing": ["LIVE_AUTHORITATIVE_STAMINA_ROUNDTRIP"]},
+    {"id": "G16B-09", "status": "PARTIAL_EVIDENCE", "evidence": ["B04_AND_B08_STREAMING_POST_B09"], "missing": ["LIVE_LIVING_SYSTEMIC_SNAPSHOT"]},
+    {"id": "G16B-10", "status": "PASS", "evidence": ["B05_210_OF_210_POST_B09"]},
+    {"id": "G16B-11", "status": "PASS", "evidence": ["B03_B05_B09_TARGET_AND_DIALOGUE_REGRESSIONS"]},
+    {"id": "G16B-12", "status": "PASS", "evidence": ["B05_210_OF_210_POST_B09"]},
+    {"id": "G16B-13", "status": "PASS", "evidence": ["B06_265_OF_265_POST_B09"]},
+    {"id": "G16B-14", "status": "PARTIAL_EVIDENCE", "evidence": ["B02_B04_B05_B06_POST_B09_REGRESSIONS"], "missing": ["REAL_OCCLUDER_MATERIAL_FADE"]},
+    {"id": "G16B-15", "status": "PASS", "evidence": ["B06_265_OF_265_POST_B09"]},
+    {"id": "G16B-16", "status": "PARTIAL_EVIDENCE", "evidence": ["B09_QUOTE_EXECUTE_SEPARATION_AND_EXPLICIT_CONFIRMATION", "B09_NO_AUTOPURCHASE", "B09_NO_LOCAL_ECONOMY_OR_INVENTORY_MUTATION"], "missing": ["LIVE_AUTHORITATIVE_VENDOR_ECONOMY_ROUNDTRIP"]},
+    {"id": "G16B-17", "status": "NOT_EXECUTED"},
+    {"id": "G16B-18", "status": "NOT_EXECUTED"},
+    {"id": "G16B-19", "status": "NOT_EXECUTED"},
+    {"id": "G16B-20", "status": "PARTIAL_EVIDENCE", "evidence": ["B01_THROUGH_B09_REGRESSIONS", "STAGE16A_209_OF_209", "STRESS_20_OF_20", "BASELINE_724_OF_724", "LIVING_RUNTIME_GATE", "MASTER_CHECKPOINT_MATRIX_HASHES_UNCHANGED"], "missing": ["REMAINING_STAGE16B_GATES_AND_FULL_VERTICAL_SLICE"]},
+    {"id": "G16B-21", "status": "PARTIAL_EVIDENCE", "evidence": ["B05_QUICK_SLOTS", "B09_INVENTORY_EQUIPMENT_AND_TWO_SLOT_PROJECTION"], "missing": ["LIVE_MAIN_HAND_AND_EQUIP_AUTHORIZATION_ROUNDTRIP"]},
+    {"id": "G16B-22", "status": "PARTIAL_EVIDENCE", "evidence": ["B05_INPUT_ROUTING", "B09_MENU_WHEEL_SCROLL_WITHOUT_SWAP_OR_ZOOM"], "missing": ["LIVE_AUTHORITATIVE_SLOT_ACTIVATION_ROUNDTRIP"]},
+    {"id": "G16B-23", "status": "PARTIAL_EVIDENCE", "evidence": ["B05_B06_B07_UI_FAMILY", "B09_VENDOR_INVENTORY_BAG_AND_QUEST_UI_FAMILY"], "missing": ["FULL_CRAFTING_AND_SETTINGS_RUNTIME_UI_COVERAGE"]},
+    {"id": "G16B-24", "status": "PARTIAL_EVIDENCE", "evidence": ["B04_156_OF_156_POST_B09"], "missing": ["LIVE_AUTHORITATIVE_WATER_STAMINA_ROUNDTRIP"]},
+    {"id": "G16B-25", "status": "PARTIAL_EVIDENCE", "evidence": ["B04_AND_STAGE16A_EXHAUSTION_REGRESSIONS"], "missing": ["LIVE_GODOT_BACKEND_EXHAUSTION_DEFEAT_SNAPSHOT"]},
+    {"id": "G16B-26", "status": "PARTIAL_EVIDENCE", "evidence": ["B09_NO_BAG_BAG_EQUIPPED_REDUCED_BASE_CONTENTS_CAPACITY_AND_ROUTING_PROJECTION", "B09_EQUIPMENT_AND_QUICK_SLOT_SEPARATION"], "missing": ["B10_DEATH_DROP_RECOVERY_AND_LIVE_AUTHORITATIVE_BAG_ROUNDTRIP"]},
+    {"id": "G16B-27", "status": "PARTIAL_EVIDENCE", "evidence": ["B07_WATER_EXPOSURE_PROJECTION_POST_B09"], "missing": ["LIVE_AUTHORITATIVE_TTL", "B10_BAG_30_MINUTES", "LAND_BAG_NO_EXPIRY", "TIMER_SAVE_RELOAD"]},
+    {"id": "G16B-28", "status": "NOT_EXECUTED"}
+  ],
+  "blockers": [],
+  "not_available": [
+    "Live authoritative vendor stock, quote, execute-trade and economy result round-trip: no listener at 127.0.0.1:8000.",
+    "Live authoritative inventory, Bag container, effective-owner routing and equip result round-trip: backend unavailable.",
+    "Live authoritative quest offer, objective, completion, reward and XP round-trip: backend unavailable."
+  ],
+  "watch_items": [
+    "G16B-16 remains PARTIAL_EVIDENCE: explicit quote/execute and non-mutation are proven in real Godot, but external authority was represented by contract fixtures rather than a live round-trip.",
+    "G16B-23 remains PARTIAL_EVIDENCE: B09 extends the unified visual family to vendor/inventory/Bag/quest, while complete matrix-wide crafting/settings coverage is still absent.",
+    "G16B-26 remains PARTIAL_EVIDENCE: living NO_BAG/BAG_EQUIPPED behavior is projected, but death/drop/recovery clauses belong to B10.",
+    "Quest, vendor, stock, quote, trade, inventory and Bag fixtures are explicitly non-authoritative external projections.",
+    "Vendor model, item art, quest art, animation and audio remain placeholders/deferred."
+  ],
+  "source_acceptance_matrix_modified": false,
+  "backup_rule_respected": true
+}

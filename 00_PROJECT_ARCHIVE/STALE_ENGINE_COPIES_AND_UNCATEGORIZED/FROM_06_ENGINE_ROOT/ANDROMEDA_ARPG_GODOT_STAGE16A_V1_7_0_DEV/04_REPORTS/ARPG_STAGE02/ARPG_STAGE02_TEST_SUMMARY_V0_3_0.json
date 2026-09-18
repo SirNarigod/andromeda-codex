@@ -1,0 +1,15 @@
+{
+  "record_id": "ARPG-STAGE02-TEST-SUMMARY-V0.3.0",
+  "stage": "02/18",
+  "stage02": {
+    "unit": {"checks": 11, "passed": 11, "failed": 0, "status": "PASS"},
+    "validation": {"checks": 51, "passed": 51, "failed": 0, "status": "PASS"},
+    "stress": {"checks": 15, "passed": 15, "failed": 0, "status": "PASS"}
+  },
+  "regression": {
+    "stage01": {"checks": 58, "passed": 58, "failed": 0, "status": "PASS"},
+    "stage00": {"checks": 51, "passed": 51, "failed": 0, "status": "PASS"},
+    "master": {"checks": 393, "passed": 393, "failed": 0, "status": "PASS"}
+  },
+  "status": "PASS"
+}

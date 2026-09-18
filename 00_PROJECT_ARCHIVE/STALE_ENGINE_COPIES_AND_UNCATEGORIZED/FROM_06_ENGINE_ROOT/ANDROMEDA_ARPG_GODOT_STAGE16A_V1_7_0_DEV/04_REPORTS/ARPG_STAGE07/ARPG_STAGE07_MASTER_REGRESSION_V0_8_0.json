@@ -1,0 +1,12 @@
+{
+  "record_id": "ARPG-STAGE07-MASTER-REGRESSION-V0.8.0",
+  "stage": "07/23",
+  "status": "PASS",
+  "master_version": "V2.0.1",
+  "suites": 29,
+  "checks": 393,
+  "passed": 393,
+  "failed": 0,
+  "canon_mutations": 0,
+  "generated_at": "2026-08-18T18:13:27.653626+00:00"
+}

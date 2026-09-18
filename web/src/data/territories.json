@@ -1,0 +1,202 @@
+[
+ {
+  "id": "TER-001",
+  "name": "Confederação de Lúminor",
+  "terrain": "PLANICIE_COMERCIAL",
+  "transport": "TERRESTRE",
+  "xy": [
+   40.0,
+   0.0
+  ]
+ },
+ {
+  "id": "TER-002",
+  "name": "Reino Ferral de Kharveth",
+  "terrain": "INDUSTRIAL_FERROVIARIO",
+  "transport": "FERROVIARIA",
+  "xy": [
+   37.833,
+   12.988
+  ]
+ },
+ {
+  "id": "TER-003",
+  "name": "República de Ortheon",
+  "terrain": "NO_FERROVIARIO",
+  "transport": "FERROVIARIA",
+  "xy": [
+   31.566,
+   24.569
+  ]
+ },
+ {
+  "id": "TER-004",
+  "name": "Arquipélago Livre de Navyr",
+  "terrain": "AQUATICO",
+  "transport": "NAVAL",
+  "xy": [
+   21.878,
+   33.487
+  ]
+ },
+ {
+  "id": "TER-005",
+  "name": "Principado de Ithra",
+  "terrain": "URBANO_TECNOMAGICO",
+  "transport": "TERRESTRE",
+  "xy": [
+   9.819,
+   38.776
+  ]
+ },
+ {
+  "id": "TER-006",
+  "name": "Reino Aéreo de Altavela",
+  "terrain": "AEREO",
+  "transport": "AEREA",
+  "xy": [
+   -3.303,
+   39.863
+  ]
+ },
+ {
+  "id": "TER-007",
+  "name": "Rubra-Viva",
+  "terrain": "PANTANO_CULTIVADO",
+  "transport": "TERRESTRE",
+  "xy": [
+   -16.068,
+   36.631
+  ]
+ },
+ {
+  "id": "TER-008",
+  "name": "Santuários do Coração",
+  "terrain": "FLORESTA_DOSSEL",
+  "transport": "TERRESTRE",
+  "xy": [
+   -27.091,
+   29.429
+  ]
+ },
+ {
+  "id": "TER-009",
+  "name": "Liga Subcristal",
+  "terrain": "SUBTERRANEO",
+  "transport": "SUBTERRANEA",
+  "xy": [
+   -35.179,
+   19.038
+  ]
+ },
+ {
+  "id": "TER-010",
+  "name": "Domínio dos Reis Magos",
+  "terrain": "URBANO_MAGICO",
+  "transport": "TERRESTRE",
+  "xy": [
+   -39.454,
+   6.584
+  ]
+ },
+ {
+  "id": "TER-011",
+  "name": "Terras Livres",
+  "terrain": "FRONTEIRA_MISTA",
+  "transport": "TERRESTRE_FERROVIARIA",
+  "xy": [
+   -39.454,
+   -6.584
+  ]
+ },
+ {
+  "id": "TER-012",
+  "name": "Zonas de Contenção",
+  "terrain": "ZONA_DE_CONTENCAO",
+  "transport": "TERRESTRE_RESTRITA",
+  "xy": [
+   -35.179,
+   -19.038
+  ]
+ },
+ {
+  "id": "TER-013",
+  "name": "Fortaleza do Trovão",
+  "terrain": "MONTANHA_TEMPESTADE",
+  "transport": "TERRESTRE",
+  "xy": [
+   -27.091,
+   -29.429
+  ]
+ },
+ {
+  "id": "TER-014",
+  "name": "Cadeia de Cinzas",
+  "terrain": "VULCANICO",
+  "transport": "TERRESTRE",
+  "xy": [
+   -16.068,
+   -36.631
+  ]
+ },
+ {
+  "id": "TER-015",
+  "name": "Vale das Ruinas",
+  "terrain": "DESERTICO",
+  "transport": "TERRESTRE",
+  "xy": [
+   -3.303,
+   -39.863
+  ]
+ },
+ {
+  "id": "TER-016",
+  "name": "Confins de Gelo",
+  "terrain": "GLACIAL",
+  "transport": "TERRESTRE",
+  "xy": [
+   9.819,
+   -38.776
+  ]
+ },
+ {
+  "id": "TER-017",
+  "name": "Arquipelago Etereo",
+  "terrain": "AEREO_ETEREO",
+  "transport": "AEREA",
+  "xy": [
+   21.878,
+   -33.487
+  ]
+ },
+ {
+  "id": "TER-018",
+  "name": "Fossa Abissal",
+  "terrain": "ABISSAL_SUBMERSO",
+  "transport": "SUBMERSA",
+  "xy": [
+   31.566,
+   -24.569
+  ]
+ },
+ {
+  "id": "TER-019",
+  "name": "Mata Perdida",
+  "terrain": "SELVA_TROPICAL",
+  "transport": "TERRESTRE",
+  "xy": [
+   37.833,
+   -12.988
+  ]
+ },
+ {
+  "id": "TER-020",
+  "name": "Região Autônoma de Nérion",
+  "terrain": "URBANO_TECNOLOGICO",
+  "transport": "TERRESTRE",
+  "xy": [
+   0,
+   0
+  ]
+ }
+]

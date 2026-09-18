@@ -1,0 +1,478 @@
+[
+ {
+  "id": "PAI-001",
+  "name": "Planicie de Feira Central de Lúminor",
+  "type": "PLANICIE",
+  "sub": "SUB-001-001",
+  "ter": "TER-001"
+ },
+ {
+  "id": "PAI-002",
+  "name": "Planicie de Rota das Caravanas",
+  "type": "PLANICIE",
+  "sub": "SUB-001-002",
+  "ter": "TER-001"
+ },
+ {
+  "id": "PAI-003",
+  "name": "Planicie de Câmara dos Mercadores",
+  "type": "PLANICIE",
+  "sub": "SUB-001-003",
+  "ter": "TER-001"
+ },
+ {
+  "id": "PAI-004",
+  "name": "Planicie de Cinturão das Forjas",
+  "type": "PLANICIE",
+  "sub": "SUB-002-001",
+  "ter": "TER-002"
+ },
+ {
+  "id": "PAI-005",
+  "name": "Planicie de Distrito Portuário de Kharveth",
+  "type": "PLANICIE",
+  "sub": "SUB-002-002",
+  "ter": "TER-002"
+ },
+ {
+  "id": "PAI-006",
+  "name": "Planicie de Trilhos do Minério",
+  "type": "PLANICIE",
+  "sub": "SUB-002-003",
+  "ter": "TER-002"
+ },
+ {
+  "id": "PAI-007",
+  "name": "Planicie de Nó Ferroviário Central",
+  "type": "PLANICIE",
+  "sub": "SUB-003-001",
+  "ter": "TER-003"
+ },
+ {
+  "id": "PAI-008",
+  "name": "Planicie de Distrito das Oficinas Ferroviárias",
+  "type": "PLANICIE",
+  "sub": "SUB-003-002",
+  "ter": "TER-003"
+ },
+ {
+  "id": "PAI-009",
+  "name": "Planicie de Assembleia de Ortheon",
+  "type": "PLANICIE",
+  "sub": "SUB-003-003",
+  "ter": "TER-003"
+ },
+ {
+  "id": "PAI-010",
+  "name": "Baia de Porto Livre de Navyr",
+  "type": "LAGO_BAIA",
+  "sub": "SUB-004-001",
+  "ter": "TER-004"
+ },
+ {
+  "id": "PAI-011",
+  "name": "Baia de Ilhas de Pesca",
+  "type": "LAGO_BAIA",
+  "sub": "SUB-004-002",
+  "ter": "TER-004"
+ },
+ {
+  "id": "PAI-012",
+  "name": "Baia de Conselho das Ondas",
+  "type": "LAGO_BAIA",
+  "sub": "SUB-004-003",
+  "ter": "TER-004"
+ },
+ {
+  "id": "PAI-013",
+  "name": "Planicie de Distrito Tecnomágico",
+  "type": "PLANICIE",
+  "sub": "SUB-005-001",
+  "ter": "TER-005"
+ },
+ {
+  "id": "PAI-014",
+  "name": "Planicie de Laboratórios de Convergência",
+  "type": "PLANICIE",
+  "sub": "SUB-005-002",
+  "ter": "TER-005"
+ },
+ {
+  "id": "PAI-015",
+  "name": "Planicie de Corte de Ithra",
+  "type": "PLANICIE",
+  "sub": "SUB-005-003",
+  "ter": "TER-005"
+ },
+ {
+  "id": "PAI-016",
+  "name": "Corrente Aerea de Plataformas Altas",
+  "type": "CORRENTE_AEREA",
+  "sub": "SUB-006-001",
+  "ter": "TER-006"
+ },
+ {
+  "id": "PAI-017",
+  "name": "Corrente Aerea de Ancoradouro de Naves",
+  "type": "CORRENTE_AEREA",
+  "sub": "SUB-006-002",
+  "ter": "TER-006"
+ },
+ {
+  "id": "PAI-018",
+  "name": "Corrente Aerea de Câmara Eletiva",
+  "type": "CORRENTE_AEREA",
+  "sub": "SUB-006-003",
+  "ter": "TER-006"
+ },
+ {
+  "id": "PAI-019",
+  "name": "Planicie de Jardins Medicinais",
+  "type": "PLANICIE",
+  "sub": "SUB-007-001",
+  "ter": "TER-007"
+ },
+ {
+  "id": "PAI-020",
+  "name": "Planicie de Casas de Cura",
+  "type": "PLANICIE",
+  "sub": "SUB-007-002",
+  "ter": "TER-007"
+ },
+ {
+  "id": "PAI-021",
+  "name": "Planicie de Conselho de Saúde",
+  "type": "PLANICIE",
+  "sub": "SUB-007-003",
+  "ter": "TER-007"
+ },
+ {
+  "id": "PAI-022",
+  "name": "Floresta de Copas Altas",
+  "type": "FLORESTA",
+  "sub": "SUB-008-001",
+  "ter": "TER-008"
+ },
+ {
+  "id": "PAI-023",
+  "name": "Floresta de Raízes Sagradas",
+  "type": "FLORESTA",
+  "sub": "SUB-008-002",
+  "ter": "TER-008"
+ },
+ {
+  "id": "PAI-024",
+  "name": "Floresta de Círculo dos Anciãos",
+  "type": "FLORESTA",
+  "sub": "SUB-008-003",
+  "ter": "TER-008"
+ },
+ {
+  "id": "PAI-025",
+  "name": "Caverna de Câmaras de Cristal",
+  "type": "CAVERNA",
+  "sub": "SUB-009-001",
+  "ter": "TER-009"
+ },
+ {
+  "id": "PAI-026",
+  "name": "Caverna de Túneis de Extração",
+  "type": "CAVERNA",
+  "sub": "SUB-009-002",
+  "ter": "TER-009"
+ },
+ {
+  "id": "PAI-027",
+  "name": "Caverna de Assembleia Subcristal",
+  "type": "CAVERNA",
+  "sub": "SUB-009-003",
+  "ter": "TER-009"
+ },
+ {
+  "id": "PAI-028",
+  "name": "Planicie de Anel do Conselho Enohariano",
+  "type": "PLANICIE",
+  "sub": "SUB-010-001",
+  "ter": "TER-010"
+ },
+ {
+  "id": "PAI-029",
+  "name": "Planicie de Vertente dos Aprendizes",
+  "type": "PLANICIE",
+  "sub": "SUB-010-002",
+  "ter": "TER-010"
+ },
+ {
+  "id": "PAI-030",
+  "name": "Planicie de Marcas da Corrente",
+  "type": "PLANICIE",
+  "sub": "SUB-010-003",
+  "ter": "TER-010"
+ },
+ {
+  "id": "PAI-031",
+  "name": "Planicie de Fronteira de Varga",
+  "type": "PLANICIE",
+  "sub": "SUB-011-001",
+  "ter": "TER-011"
+ },
+ {
+  "id": "PAI-032",
+  "name": "Planicie de Corredor Oriental",
+  "type": "PLANICIE",
+  "sub": "SUB-011-002",
+  "ter": "TER-011"
+ },
+ {
+  "id": "PAI-033",
+  "name": "Planicie de Pastagens Luminais",
+  "type": "PLANICIE",
+  "sub": "SUB-011-003",
+  "ter": "TER-011"
+ },
+ {
+  "id": "PAI-034",
+  "name": "Sub-bosque de Baixios de Raizel",
+  "type": "FLORESTA",
+  "sub": "SUB-011-004",
+  "ter": "TER-011"
+ },
+ {
+  "id": "PAI-035",
+  "name": "Planicie de Charneira das Oficinas",
+  "type": "PLANICIE",
+  "sub": "SUB-011-005",
+  "ter": "TER-011"
+ },
+ {
+  "id": "PAI-036",
+  "name": "Monte de Fendas da Névoa",
+  "type": "MONTANHA",
+  "sub": "SUB-011-006",
+  "ter": "TER-011"
+ },
+ {
+  "id": "PAI-037",
+  "name": "Perimetro de Perímetro de Contenção Alfa",
+  "type": "PLANICIE",
+  "sub": "SUB-012-001",
+  "ter": "TER-012"
+ },
+ {
+  "id": "PAI-038",
+  "name": "Perimetro de Campo de Deslocados",
+  "type": "PLANICIE",
+  "sub": "SUB-012-002",
+  "ter": "TER-012"
+ },
+ {
+  "id": "PAI-039",
+  "name": "Perimetro de Comando Emergencial",
+  "type": "PLANICIE",
+  "sub": "SUB-012-003",
+  "ter": "TER-012"
+ },
+ {
+  "id": "PAI-040",
+  "name": "Planicie de Muralhas do Trovão",
+  "type": "PLANICIE",
+  "sub": "SUB-013-001",
+  "ter": "TER-013"
+ },
+ {
+  "id": "PAI-041",
+  "name": "Planicie de Salão dos Contratados",
+  "type": "PLANICIE",
+  "sub": "SUB-013-002",
+  "ter": "TER-013"
+ },
+ {
+  "id": "PAI-042",
+  "name": "Planicie de Passagem Secreta",
+  "type": "PLANICIE",
+  "sub": "SUB-013-003",
+  "ter": "TER-013"
+ },
+ {
+  "id": "PAI-043",
+  "name": "Vulcao de Caldeira Ativa",
+  "type": "VULCAO",
+  "sub": "SUB-014-001",
+  "ter": "TER-014"
+ },
+ {
+  "id": "PAI-044",
+  "name": "Vulcao de Assentamento da Cratera",
+  "type": "VULCAO",
+  "sub": "SUB-014-002",
+  "ter": "TER-014"
+ },
+ {
+  "id": "PAI-045",
+  "name": "Planicie de Campos de Cinza",
+  "type": "PLANICIE",
+  "sub": "SUB-014-003",
+  "ter": "TER-014"
+ },
+ {
+  "id": "PAI-046",
+  "name": "Dunas de Dunas Ocultas",
+  "type": "DUNA",
+  "sub": "SUB-015-001",
+  "ter": "TER-015"
+ },
+ {
+  "id": "PAI-047",
+  "name": "Sitio de Ruinas de Antes-do-Pacto",
+  "type": "SITIO_ARQUEOLOGICO",
+  "sub": "SUB-015-002",
+  "ter": "TER-015"
+ },
+ {
+  "id": "PAI-048",
+  "name": "Oasis de Oasis do Poco Fundo",
+  "type": "OASIS",
+  "sub": "SUB-015-003",
+  "ter": "TER-015"
+ },
+ {
+  "id": "PAI-049",
+  "name": "Geleira de Geleira Perene",
+  "type": "GELEIRA",
+  "sub": "SUB-016-001",
+  "ter": "TER-016"
+ },
+ {
+  "id": "PAI-050",
+  "name": "Geleira de Abrigo sob o Gelo",
+  "type": "GELEIRA",
+  "sub": "SUB-016-002",
+  "ter": "TER-016"
+ },
+ {
+  "id": "PAI-051",
+  "name": "Geleira de Fenda Congelada",
+  "type": "GELEIRA",
+  "sub": "SUB-016-003",
+  "ter": "TER-016"
+ },
+ {
+  "id": "PAI-052",
+  "name": "Corrente Eterea de Ilha-Ancora",
+  "type": "CORRENTE_AEREA",
+  "sub": "SUB-017-001",
+  "ter": "TER-017"
+ },
+ {
+  "id": "PAI-053",
+  "name": "Corrente Eterea de Correntes de Eter",
+  "type": "CORRENTE_AEREA",
+  "sub": "SUB-017-002",
+  "ter": "TER-017"
+ },
+ {
+  "id": "PAI-054",
+  "name": "Corrente Eterea de Ilhas Errantes",
+  "type": "CORRENTE_AEREA",
+  "sub": "SUB-017-003",
+  "ter": "TER-017"
+ },
+ {
+  "id": "PAI-055",
+  "name": "Abismo de Trincheira Profunda",
+  "type": "ABISMO",
+  "sub": "SUB-018-001",
+  "ter": "TER-018"
+ },
+ {
+  "id": "PAI-056",
+  "name": "Abismo de Recifes Luminosos",
+  "type": "ABISMO",
+  "sub": "SUB-018-002",
+  "ter": "TER-018"
+ },
+ {
+  "id": "PAI-057",
+  "name": "Abismo de Camaras de Pressao",
+  "type": "ABISMO",
+  "sub": "SUB-018-003",
+  "ter": "TER-018"
+ },
+ {
+  "id": "PAI-058",
+  "name": "Selva de Dossel Verde",
+  "type": "FLORESTA",
+  "sub": "SUB-019-001",
+  "ter": "TER-019"
+ },
+ {
+  "id": "PAI-059",
+  "name": "Sitio de Ruinas Cobertas",
+  "type": "SITIO_ARQUEOLOGICO",
+  "sub": "SUB-019-002",
+  "ter": "TER-019"
+ },
+ {
+  "id": "PAI-060",
+  "name": "Pantano de Pantano da Serpente",
+  "type": "PANTANO",
+  "sub": "SUB-019-003",
+  "ter": "TER-019"
+ },
+ {
+  "id": "PAI-061",
+  "name": "Anel do Despertar",
+  "type": "URBANO_TECNOLOGICO",
+  "sub": "SUB-020-001",
+  "ter": "TER-020"
+ },
+ {
+  "id": "PAI-062",
+  "name": "Cinturão de Forjas",
+  "type": "INDUSTRIAL",
+  "sub": "SUB-020-002",
+  "ter": "TER-020"
+ },
+ {
+  "id": "PAI-063",
+  "name": "Jardins de Suporte Vital",
+  "type": "ESTUFA",
+  "sub": "SUB-020-003",
+  "ter": "TER-020"
+ },
+ {
+  "id": "PAI-064",
+  "name": "Distrito das Memórias",
+  "type": "DISTRITO_CULTURAL",
+  "sub": "SUB-020-004",
+  "ter": "TER-020"
+ },
+ {
+  "id": "PAI-065",
+  "name": "Perímetro de Vigília",
+  "type": "PERIMETRO_DEFENSIVO",
+  "sub": "SUB-020-005",
+  "ter": "TER-020"
+ },
+ {
+  "id": "PAI-066",
+  "name": "Rio Raizel",
+  "type": "RIO",
+  "sub": "SUB-011-004",
+  "ter": "TER-011"
+ },
+ {
+  "id": "PAI-067",
+  "name": "Rio Rubro",
+  "type": "RIO",
+  "sub": "SUB-007-002",
+  "ter": "TER-007"
+ },
+ {
+  "id": "PAI-068",
+  "name": "Rio da Serpente",
+  "type": "RIO",
+  "sub": "SUB-019-003",
+  "ter": "TER-019"
+ }
+]

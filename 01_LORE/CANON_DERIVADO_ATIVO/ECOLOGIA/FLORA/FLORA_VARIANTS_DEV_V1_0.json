@@ -1,0 +1,282 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "FLORA-VARIANTS-DEV-V1.0",
+  "title": "Variantes de Flora (Comum/Rara) — 12 espécies",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "r2_guard": "Mesmo espírito das variantes de bestiário (fases 8/11): a variante Rara só altera rendimento/porte, nunca o habitat, uso ou fato já escrito na ficha FLO-XXX base. Nenhum efeito de runa ou mecânica nova é inventado.",
+  "variants": [
+    {
+      "variant_id": "FLO-001-COMUM",
+      "base_flora_ref": "FLO-001",
+      "base_flora_name": "Pastagem Luminal",
+      "variant_type": "COMUM",
+      "trait_note": "Espécime padrão, rendimento normal de recurso — mesma descrição já catalogada na ficha base."
+    },
+    {
+      "variant_id": "FLO-001-RARA",
+      "base_flora_ref": "FLO-001",
+      "base_flora_name": "Pastagem Luminal",
+      "variant_type": "RARA",
+      "trait_note": "Espécime raro (maior porte/concentração), rendimento de recurso ~50% maior; não altera o uso/habitat já descrito na ficha base."
+    },
+    {
+      "variant_id": "FLO-002-COMUM",
+      "base_flora_ref": "FLO-002",
+      "base_flora_name": "Raiz-de-Névoa",
+      "variant_type": "COMUM",
+      "trait_note": "Espécime padrão, rendimento normal de recurso — mesma descrição já catalogada na ficha base."
+    },
+    {
+      "variant_id": "FLO-002-RARA",
+      "base_flora_ref": "FLO-002",
+      "base_flora_name": "Raiz-de-Névoa",
+      "variant_type": "RARA",
+      "trait_note": "Espécime raro (maior porte/concentração), rendimento de recurso ~50% maior; não altera o uso/habitat já descrito na ficha base."
+    },
+    {
+      "variant_id": "FLO-003-COMUM",
+      "base_flora_ref": "FLO-003",
+      "base_flora_name": "Flor-de-Orvalho",
+      "variant_type": "COMUM",
+      "trait_note": "Espécime padrão, rendimento normal de recurso — mesma descrição já catalogada na ficha base."
+    },
+    {
+      "variant_id": "FLO-003-RARA",
+      "base_flora_ref": "FLO-003",
+      "base_flora_name": "Flor-de-Orvalho",
+      "variant_type": "RARA",
+      "trait_note": "Espécime raro (maior porte/concentração), rendimento de recurso ~50% maior; não altera o uso/habitat já descrito na ficha base."
+    },
+    {
+      "variant_id": "FLO-004-COMUM",
+      "base_flora_ref": "FLO-004",
+      "base_flora_name": "Junco-Cobre",
+      "variant_type": "COMUM",
+      "trait_note": "Espécime padrão, rendimento normal de recurso — mesma descrição já catalogada na ficha base."
+    },
+    {
+      "variant_id": "FLO-004-RARA",
+      "base_flora_ref": "FLO-004",
+      "base_flora_name": "Junco-Cobre",
+      "variant_type": "RARA",
+      "trait_note": "Espécime raro (maior porte/concentração), rendimento de recurso ~50% maior; não altera o uso/habitat já descrito na ficha base."
+    },
+    {
+      "variant_id": "FLO-005-COMUM",
+      "base_flora_ref": "FLO-005",
+      "base_flora_name": "Véu-de-Teia",
+      "variant_type": "COMUM",
+      "trait_note": "Espécime padrão, rendimento normal de recurso — mesma descrição já catalogada na ficha base."
+    },
+    {
+      "variant_id": "FLO-005-RARA",
+      "base_flora_ref": "FLO-005",
+      "base_flora_name": "Véu-de-Teia",
+      "variant_type": "RARA",
+      "trait_note": "Espécime raro (maior porte/concentração), rendimento de recurso ~50% maior; não altera o uso/habitat já descrito na ficha base."
+    },
+    {
+      "variant_id": "FLO-006-COMUM",
+      "base_flora_ref": "FLO-006",
+      "base_flora_name": "Espinho de Vidro",
+      "variant_type": "COMUM",
+      "trait_note": "Espécime padrão, rendimento normal de recurso — mesma descrição já catalogada na ficha base."
+    },
+    {
+      "variant_id": "FLO-006-RARA",
+      "base_flora_ref": "FLO-006",
+      "base_flora_name": "Espinho de Vidro",
+      "variant_type": "RARA",
+      "trait_note": "Espécime raro (maior porte/concentração), rendimento de recurso ~50% maior; não altera o uso/habitat já descrito na ficha base."
+    },
+    {
+      "variant_id": "FLO-007-COMUM",
+      "base_flora_ref": "FLO-007",
+      "base_flora_name": "Árvore-Coração",
+      "variant_type": "COMUM",
+      "trait_note": "Espécime padrão, rendimento normal de recurso — mesma descrição já catalogada na ficha base."
+    },
+    {
+      "variant_id": "FLO-007-RARA",
+      "base_flora_ref": "FLO-007",
+      "base_flora_name": "Árvore-Coração",
+      "variant_type": "RARA",
+      "trait_note": "Espécime raro (maior porte/concentração), rendimento de recurso ~50% maior; não altera o uso/habitat já descrito na ficha base."
+    },
+    {
+      "variant_id": "FLO-008-COMUM",
+      "base_flora_ref": "FLO-008",
+      "base_flora_name": "Erva-Rubra",
+      "variant_type": "COMUM",
+      "trait_note": "Espécime padrão, rendimento normal de recurso — mesma descrição já catalogada na ficha base."
+    },
+    {
+      "variant_id": "FLO-008-RARA",
+      "base_flora_ref": "FLO-008",
+      "base_flora_name": "Erva-Rubra",
+      "variant_type": "RARA",
+      "trait_note": "Espécime raro (maior porte/concentração), rendimento de recurso ~50% maior; não altera o uso/habitat já descrito na ficha base."
+    },
+    {
+      "variant_id": "FLO-009-COMUM",
+      "base_flora_ref": "FLO-009",
+      "base_flora_name": "Vinha do Temporal",
+      "variant_type": "COMUM",
+      "trait_note": "Espécime padrão, rendimento normal de recurso — mesma descrição já catalogada na ficha base."
+    },
+    {
+      "variant_id": "FLO-009-RARA",
+      "base_flora_ref": "FLO-009",
+      "base_flora_name": "Vinha do Temporal",
+      "variant_type": "RARA",
+      "trait_note": "Espécime raro (maior porte/concentração), rendimento de recurso ~50% maior; não altera o uso/habitat já descrito na ficha base."
+    },
+    {
+      "variant_id": "FLO-010-COMUM",
+      "base_flora_ref": "FLO-010",
+      "base_flora_name": "Erva de Trilho",
+      "variant_type": "COMUM",
+      "trait_note": "Espécime padrão, rendimento normal de recurso — mesma descrição já catalogada na ficha base."
+    },
+    {
+      "variant_id": "FLO-010-RARA",
+      "base_flora_ref": "FLO-010",
+      "base_flora_name": "Erva de Trilho",
+      "variant_type": "RARA",
+      "trait_note": "Espécime raro (maior porte/concentração), rendimento de recurso ~50% maior; não altera o uso/habitat já descrito na ficha base."
+    },
+    {
+      "variant_id": "FLO-011-COMUM",
+      "base_flora_ref": "FLO-011",
+      "base_flora_name": "Fungo-Lanterna",
+      "variant_type": "COMUM",
+      "trait_note": "Espécime padrão, rendimento normal de recurso — mesma descrição já catalogada na ficha base."
+    },
+    {
+      "variant_id": "FLO-011-RARA",
+      "base_flora_ref": "FLO-011",
+      "base_flora_name": "Fungo-Lanterna",
+      "variant_type": "RARA",
+      "trait_note": "Espécime raro (maior porte/concentração), rendimento de recurso ~50% maior; não altera o uso/habitat já descrito na ficha base."
+    },
+    {
+      "variant_id": "FLO-012-COMUM",
+      "base_flora_ref": "FLO-012",
+      "base_flora_name": "Trepadeira Suspensa",
+      "variant_type": "COMUM",
+      "trait_note": "Espécime padrão, rendimento normal de recurso — mesma descrição já catalogada na ficha base."
+    },
+    {
+      "variant_id": "FLO-012-RARA",
+      "base_flora_ref": "FLO-012",
+      "base_flora_name": "Trepadeira Suspensa",
+      "variant_type": "RARA",
+      "trait_note": "Espécime raro (maior porte/concentração), rendimento de recurso ~50% maior; não altera o uso/habitat já descrito na ficha base."
+    },
+    {
+      "variant_id": "FLO-013-COMUM",
+      "base_flora_ref": "FLO-013",
+      "base_flora_name": "Musgo de Enxofre",
+      "variant_type": "COMUM",
+      "trait_note": "Espécime padrão, rendimento normal de recurso — mesma descrição já catalogada na ficha base."
+    },
+    {
+      "variant_id": "FLO-013-RARA",
+      "base_flora_ref": "FLO-013",
+      "base_flora_name": "Musgo de Enxofre",
+      "variant_type": "RARA",
+      "trait_note": "Espécime raro (maior porte/concentração), rendimento de recurso ~50% maior; não altera o uso/habitat já descrito na ficha base."
+    },
+    {
+      "variant_id": "FLO-014-COMUM",
+      "base_flora_ref": "FLO-014",
+      "base_flora_name": "Flor-de-Areia",
+      "variant_type": "COMUM",
+      "trait_note": "Especime padrao, rendimento normal de recurso."
+    },
+    {
+      "variant_id": "FLO-014-RARA",
+      "base_flora_ref": "FLO-014",
+      "base_flora_name": "Flor-de-Areia",
+      "variant_type": "RARA",
+      "trait_note": "Especime raro, rendimento de recurso ~50% maior."
+    },
+    {
+      "variant_id": "FLO-015-COMUM",
+      "base_flora_ref": "FLO-015",
+      "base_flora_name": "Liquen de Gelo",
+      "variant_type": "COMUM",
+      "trait_note": "Especime padrao, rendimento normal de recurso."
+    },
+    {
+      "variant_id": "FLO-015-RARA",
+      "base_flora_ref": "FLO-015",
+      "base_flora_name": "Liquen de Gelo",
+      "variant_type": "RARA",
+      "trait_note": "Especime raro, rendimento de recurso ~50% maior."
+    },
+    {
+      "variant_id": "FLO-016-COMUM",
+      "base_flora_ref": "FLO-016",
+      "base_flora_name": "Musgo Suspenso",
+      "variant_type": "COMUM",
+      "trait_note": "Especime padrao, rendimento normal de recurso."
+    },
+    {
+      "variant_id": "FLO-016-RARA",
+      "base_flora_ref": "FLO-016",
+      "base_flora_name": "Musgo Suspenso",
+      "variant_type": "RARA",
+      "trait_note": "Especime raro, rendimento de recurso ~50% maior."
+    },
+    {
+      "variant_id": "FLO-017-COMUM",
+      "base_flora_ref": "FLO-017",
+      "base_flora_name": "Coral Luminoso",
+      "variant_type": "COMUM",
+      "trait_note": "Especime padrao, rendimento normal de recurso."
+    },
+    {
+      "variant_id": "FLO-017-RARA",
+      "base_flora_ref": "FLO-017",
+      "base_flora_name": "Coral Luminoso",
+      "variant_type": "RARA",
+      "trait_note": "Especime raro, rendimento de recurso ~50% maior."
+    },
+    {
+      "variant_id": "FLO-018-COMUM",
+      "base_flora_ref": "FLO-018",
+      "base_flora_name": "Orquidea-Sombria",
+      "variant_type": "COMUM",
+      "trait_note": "Especime padrao, rendimento normal de recurso."
+    },
+    {
+      "variant_id": "FLO-018-RARA",
+      "base_flora_ref": "FLO-018",
+      "base_flora_name": "Orquidea-Sombria",
+      "variant_type": "RARA",
+      "trait_note": "Especime raro, rendimento de recurso ~50% maior."
+    },
+    {
+      "variant_id": "FLO-007-CORROMPIDA",
+      "base_flora_ref": "FLO-007",
+      "base_flora_name": "Arvore-Coracao",
+      "variant_type": "CORROMPIDA",
+      "trait_note": "Especime tomado pela Raiz Profunda em SUB-008-002 (fase 57/58) - casca enegrecida, seiva escura; rendimento normal de recurso mas perigosa de colher sem protecao (ver STELLAR_CORRUPTED_RESOURCES_DEV_V1_0.json)."
+    },
+    {
+      "variant_id": "FLO-002-CORROMPIDA",
+      "base_flora_ref": "FLO-002",
+      "base_flora_name": "Raiz-de-Nevoa",
+      "variant_type": "CORROMPIDA",
+      "trait_note": "Especime corrompido em SUB-011-006 (fase 57/58) - raiz espessa agora pulsa levemente, indicador de proximidade da Raiz Profunda."
+    },
+    {
+      "variant_id": "FLO-006-CORROMPIDA",
+      "base_flora_ref": "FLO-006",
+      "base_flora_name": "Espinho de Vidro",
+      "variant_type": "CORROMPIDA",
+      "trait_note": "Especime corrompido em SUB-011-006 (fase 57/58) - espinhos translucidos ganham veios escuros, ainda mais afiados."
+    }
+  ]
+}

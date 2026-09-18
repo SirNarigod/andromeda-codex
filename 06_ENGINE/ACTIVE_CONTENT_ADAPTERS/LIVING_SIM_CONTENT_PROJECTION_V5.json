@@ -1,0 +1,21 @@
+{
+  "record_id": "LIVING_SIM_CONTENT_PROJECTION_V5",
+  "status": "ACTIVE_ENGINE_NEUTRAL_READ_ONLY",
+  "supersedes": "LIVING_SIM_CONTENT_PROJECTION_V4",
+  "base_projection": "LIVING_SIM_CONTENT_PROJECTION_V4.json",
+  "authority": "R2_AND_APPROVED_DERIVED_CONTENT_READ_ONLY",
+  "routing_registry": "01_LORE/CONTENT_ROUTING_REGISTRY_V5.json",
+  "causality_overlay": {
+    "law": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_CAUSALITY_LAW_V1_1.json",
+    "event_ledger": {"required_fields":["event_id","parent_event_id_or_root_reason","actor_ref","scope","material_cost_or_risk","evidence_refs","allowed_effects","created_at"],"max_depth":8,"global_derived_budget_max":64},
+    "permissions": ["EMIT_LOCAL_AUDITABLE_EVENT", "SCHEDULE_PERMITTED_RECOVERY", "SURFACE_LOCAL_CONSEQUENCE"],
+    "blocked": ["OFFLINE_DEATH", "MAJOR_ESCALATION", "SOVEREIGNTY_CHANGE", "CANON_PROMOTION", "SEALED_EPISODE_MUTATION", "UNGATED_ROOT_PHASE_TRANSITION"]
+  },
+  "autonomy_overlay": {
+    "law": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_AUTONOMY_RESPONSIBILITY_LAW_V1_1.json",
+    "agent_record": {"required_fields":["agent_ref","status","controller_or_custodian_ref","capability_boundaries","action_ledger_refs","evidence_refs"],"allowed_statuses":["OWNED_TOOL","DELEGATED_AGENT","CONSTRAINED","REFUSING","DISPUTED_RECOGNITION","RECOGNIZED_ENTITY"]},
+    "permissions": ["SIMULATE_BOUNDED_DELEGATED_WORK", "RECORD_REFUSAL_OR_FAULT", "SUBMIT_RECOGNITION_CASE"],
+    "blocked": ["AUTOMATIC_STATUS_TRANSITION", "UNATTRIBUTED_HARM", "TERRITORY_CONTROL", "CANON_MUTATION", "LLM_DIRECT_WORLD_ACTION"]
+  },
+  "prohibitions": ["READ_ONLY_CONTENT_PROJECTION", "NO_R2_RETCON", "NO_KENUA_OR_SEALED_EPISODE_MUTATION", "NO_AMADON_CONTACT_BEFORE_S01E08", "NO_AUTHORIAL_GATE_BYPASS"]
+}

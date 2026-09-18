@@ -1,0 +1,46 @@
+{
+  "record_id": "TER-017",
+  "record_kind": "DERIVED_TERRITORY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Arquipelago Etereo",
+  "subtitle": "Ilhas flutuantes magicas, independentes e nomades",
+  "provenance": {
+    "approval": "AUTHORIAL_DECISION_FASE_50",
+    "note": "17 territorio de Stellar, decisao explicita do autor - portao autoral de soberania. Distinto de TER-006 Reino Aereo de Altavela (monarquia eletiva de plataformas fixas) - aqui sao pequenas ilhas independentes sem coroa, sustentadas por eter em vez de estrutura de reino."
+  },
+  "leadership": {
+    "type": "CONSELHO_DERIVADO",
+    "name": "Circulo dos Ilheus",
+    "note": "Lideranca coletiva descentralizada, sem LID-XXX (categoria R2 fechada) - cada ilha mantem autonomia local."
+  },
+  "culture_note": "Sem CUL-XXX proprio (categoria R2 fechada) - comunidade nomade de navegadores de eter descrita qualitativamente.",
+  "subregions": [
+    "SUB-017-001",
+    "SUB-017-002",
+    "SUB-017-003"
+  ],
+  "localities": [
+    "LOC-017-001",
+    "LOC-017-002",
+    "LOC-017-003"
+  ],
+  "terrain_type": "AEREO_ETEREO",
+  "primary_transport_mode": "AEREA",
+  "prohibitions": [
+    "NO_R2_CATEGORY_EXPANSION",
+    "NO_NEW_LID_OR_CUL_CODE",
+    "NO_AUTOMATIC_KENUA_SCENE",
+    "NO_R2_EPISODE_REWRITE"
+  ],
+  "future_scope": "Perfil economico enriquecido na fase 56 (diretriz de riqueza do usuario) - ver economic_profile estruturado + STELLAR_REGIONAL_SPECIALTY_GOODS_DEV_V1_0.json. Personagens locais adicionais continuam abertos a rodadas futuras.",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "economic_profile": {
+    "primary_resource": "MIN-CRYSTAL (fonte secundaria, SUB-017-002 Correntes de Eter / EST-059 Posto das Correntes, extrator JOB-016) - estabilizacao de ilha",
+    "processed_good": "REG-004 Frasco de Eter Estabilizado (EST-059 Posto das Correntes)",
+    "agricultural_zone": "AGZ-101 Jardins Suspensos de Eter (AEROPONIA_ETEREA, SUB-017-001 Ilha-Ancora / EST-058 Doca Eterea, flora FLO-016)",
+    "agricultural_note": "Ervas leves aeroponicas (SUB-017-001) formalizadas como AGZ-101 (fase 56, AUTHORIAL_DECISION_FASE_56) — sem peso estrutural, Musgo Suspenso (FLO-016) como indicador de eter; ver AGZ_EXTENSION_098_103_DEV_V1_0.json",
+    "trade_partners_hint": "Rota continental TER-017-TER-006 liga a Altavela; eter estabilizado vendido a artesaos ronicos de outros territorios",
+    "local_specialty": "REG-004 Frasco de Eter Estabilizado"
+  }
+}

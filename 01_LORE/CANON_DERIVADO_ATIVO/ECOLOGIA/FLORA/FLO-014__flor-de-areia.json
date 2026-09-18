@@ -1,0 +1,20 @@
+{
+  "record_id": "FLO-014",
+  "record_kind": "DERIVED_CANONICAL_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "title": "Flor-de-Areia",
+  "subtitle": "Planta de oasis resistente a seca",
+  "summary": "Flor de raizes profundas que floresce apenas proxima a fontes de agua subterranea, marcando a presenca de oasis no deserto.",
+  "facts": {
+    "Habitat": "Oasis do Poco Fundo (SUB-015-003), Vale das Ruinas",
+    "Uso": "Indicador de agua subterranea, ornamental"
+  },
+  "relations": [
+    {
+      "code": "SUB-015-003",
+      "label": "Habitat - Oasis do Poco Fundo"
+    }
+  ],
+  "r2_compatibility": "Especie nova, sem precedente R2; ancorada em TER-015 (territorio derivado, fase 48).",
+  "safety": "FICTIONAL_LOCATION_ONLY"
+}

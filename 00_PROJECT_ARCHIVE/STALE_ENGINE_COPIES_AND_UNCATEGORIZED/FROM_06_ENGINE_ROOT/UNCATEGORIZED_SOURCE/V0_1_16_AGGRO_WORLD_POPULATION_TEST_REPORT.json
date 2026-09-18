@@ -1,0 +1,60 @@
+{
+  "build": "V0.1.16 DEV",
+  "baseline": "V0.1.15 DEV FINAL",
+  "status": "STATIC_PASS_RUNTIME_PENDING",
+  "checks": 26,
+  "passed": 26,
+  "failed": 0,
+  "details": {
+    "project_v0_1_16": true,
+    "hud_v0_1_16": true,
+    "aggro_state": true,
+    "aggro_target": true,
+    "damage_triggers_aggro": true,
+    "aggro_ignores_proximity_after_hit": true,
+    "aggro_path_reset": true,
+    "ranged_impact_preserved": true,
+    "global_cooldown_2s": true,
+    "surface_90x80": true,
+    "nav_x_expanded": true,
+    "nav_z_expanded": true,
+    "surface_hostiles_6plus": true,
+    "dungeon_hostiles_3": true,
+    "extra_npcs": true,
+    "shop_npc_kind": true,
+    "sword_vendor": true,
+    "bow_vendor": true,
+    "right_click_shop_contract": true,
+    "left_transition_contract_preserved": true,
+    "inventory_weapon_selection_preserved": true,
+    "gate_v0_1_16": true
+  },
+  "population": {
+    "surface_wildlife_total": 8,
+    "surface_hostile": 6,
+    "dungeon_hostile": 3,
+    "additional_regular_npcs": 4,
+    "merchant_npcs": 2
+  },
+  "world": {
+    "surface_visual_size_m_approx": [
+      90,
+      80
+    ],
+    "nav_x": [
+      -45,
+      45
+    ],
+    "nav_z": [
+      -45,
+      95
+    ]
+  },
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1",
+  "gate_sanity_checks": {
+    "no_get_tree_in_scenetree_gate": true,
+    "vendor_checks_use_scene": true,
+    "no_duplicate_expanded_wildlife_var": true,
+    "gate_version": true
+  }
+}

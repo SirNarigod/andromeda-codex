@@ -1,0 +1,246 @@
+{
+  "record_id": "STELLAR-CURRENCY-SYSTEM-DEV-V1.0",
+  "title": "Sistema Monetário de Stellar",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "r2_guard": "STELLAR_ECONOMY_ECOLOGY_TIME_LAW_V1_1.json declara explicitamente invariante 'PRICES_CURRENCY_STOCKS_AND_INVENTORIES_ARE_RUNTIME_ONLY' e proibição 'NO_CANONICAL_PRICE_OR_CURRENCY_INFERENCE' - ou seja, NENHUM preço numérico fixo ou nome de moeda pode ser tratado como fato canônico R2. Tudo neste arquivo é GAMEPLAY_DERIVED_DEV_SOURCE (mecânica de runtime/simulação), nunca cânone confirmado, e nenhum valor é um preço fixo - são tiers qualitativos e regras de cálculo, exatamente como já usado em 'price_tier' em toda a economia (comida, munição, runas, armadura etc.).",
+  "governance_finding": "Não existe (e não pode existir como fato canônico) uma moeda planetária imposta por decreto: não há governo planetário em Stellar. Em vez disso, cada um dos 19 territórios cunha sua própria moeda, refletindo sua cultura e recurso-âncora já estabelecidos - e a moeda universal Stavias circula por cima delas, sustentada pela confiança no material, não pela autoridade de um estado único.",
+  "universal_currency": {
+    "currency_id": "CUR-000",
+    "name": "Stavias",
+    "type": "MOEDA_UNIVERSAL",
+    "identity": "Único meio de troca aceito em qualquer um dos 19 territórios sem desconto ou desconfiança - não por decreto de um governo (que não existe em escala planetária), mas porque sua liga metálica é rara, difícil de falsificar e reconhecível por qualquer negociante experiente.",
+    "composition": [
+      {
+        "resource_id": "MIN-GOLD",
+        "role": "núcleo de valor - o metal precioso que dá o peso e o brilho reconhecíveis da moeda"
+      },
+      {
+        "resource_id": "MIN-CRYSTAL",
+        "role": "selo de autenticidade - uma lasca embutida que reage a um toque de runa simples, expondo falsificações na hora"
+      },
+      {
+        "resource_id": "MIN-TITAN",
+        "role": "anel de borda - liga leve e resistente que impede desgaste do selo com o manuseio"
+      }
+    ],
+    "minting_authority": [
+      "FAC-009",
+      "FAC-010"
+    ],
+    "minting_note": "Cunhada sob acordo conjunto do Colegiado dos Ofícios de Oficina da Fronteira e da Liga de Oficinas Licenciadas da Fronteira - facções de ofício transregionais e não-soberanas, não um governo - em oficinas licenciadas espalhadas pelos principais postos de comércio da rede de rotas.",
+    "obtained_via": "Qualquer uma das 19 moedas territoriais pode ser fundida e recunhada em Stavias num posto de troca reconhecido pelas guildas - a moeda local funciona como matéria-prima de conversão, avaliada pelo metal/mineral que já a compõe.",
+    "folk_name": "Entre caravaneiros mais antigos, ainda é comum chamar um punhado de Stavias de 'peso de troca', do tempo em que a comparação entre moedas locais era feita por peso, não por cunhagem única."
+  },
+  "count": 19,
+  "territorial_currencies": [
+    {
+      "currency_id": "CUR-001",
+      "territory_id": "TER-001",
+      "territory_name": "Confederação de Lúminor",
+      "unit_name": "Selo de Lúminor",
+      "mint_authority": "Câmara Mercantil (EST-013)",
+      "backed_by": "selo de metal comum cunhado pelos mercadores, valor ligado ao volume de comércio da Feira Central",
+      "strength_tier": "MEDIA",
+      "strength_rationale": "Moeda de força mediana: a economia do território é estável, nem escassa nem excepcionalmente farta, e a moeda circula normalmente dentro dele.",
+      "feeds_universal_currency": "CUR-000"
+    },
+    {
+      "currency_id": "CUR-002",
+      "territory_id": "TER-002",
+      "territory_name": "Reino Ferral de Kharveth",
+      "unit_name": "Barra de Ferral",
+      "mint_authority": "Coroa de Kharveth",
+      "backed_by": "lingote padronizado de Ferral Bruto (MIN-IRON), moeda-metal direta da indústria local",
+      "strength_tier": "FRACA",
+      "strength_rationale": "Moeda fraca e muito negociável: a escassez local torna o valor da moeda instável, e comerciantes de fora costumam exigir mais unidades ou preferir troca direta.",
+      "feeds_universal_currency": "CUR-000"
+    },
+    {
+      "currency_id": "CUR-003",
+      "territory_id": "TER-003",
+      "territory_name": "República de Ortheon",
+      "unit_name": "Ficha Ferroviária",
+      "mint_authority": "Assembleia de Ortheon",
+      "backed_by": "ficha de acesso à malha ferroviária (TEC-001), aceita como meio de troca em toda a república",
+      "strength_tier": "MEDIA",
+      "strength_rationale": "Moeda de força mediana: a economia do território é estável, nem escassa nem excepcionalmente farta, e a moeda circula normalmente dentro dele.",
+      "feeds_universal_currency": "CUR-000"
+    },
+    {
+      "currency_id": "CUR-004",
+      "territory_id": "TER-004",
+      "territory_name": "Arquipélago Livre de Navyr",
+      "unit_name": "Pérola de Navyr",
+      "mint_authority": "Conselho das Ondas",
+      "backed_by": "pérola calibrada da perlagem marítima local, valor por tamanho/lustro",
+      "strength_tier": "FORTE",
+      "strength_rationale": "Moeda forte: o território é próspero e bem abastecido, então a moeda local compra bastante e é aceita com confiança fora de sua terra de origem.",
+      "feeds_universal_currency": "CUR-000"
+    },
+    {
+      "currency_id": "CUR-005",
+      "territory_id": "TER-005",
+      "territory_name": "Principado de Ithra",
+      "unit_name": "Núcleo de Ithra",
+      "mint_authority": "Corte de Ithra",
+      "backed_by": "pequeno núcleo de Cobrex Condutor (MIN-COPPER) selado, usado como token tecnomágico",
+      "strength_tier": "MEDIA",
+      "strength_rationale": "Moeda de força mediana: a economia do território é estável, nem escassa nem excepcionalmente farta, e a moeda circula normalmente dentro dele.",
+      "feeds_universal_currency": "CUR-000"
+    },
+    {
+      "currency_id": "CUR-006",
+      "territory_id": "TER-006",
+      "territory_name": "Reino Aéreo de Altavela",
+      "unit_name": "Pena de Titanita",
+      "mint_authority": "Câmara Eletiva",
+      "backed_by": "disco leve de Titanita Cinzenta (MIN-TITAN), moeda deliberadamente leve para uso em altitude",
+      "strength_tier": "FORTE",
+      "strength_rationale": "Moeda forte: o território é próspero e bem abastecido, então a moeda local compra bastante e é aceita com confiança fora de sua terra de origem.",
+      "feeds_universal_currency": "CUR-000"
+    },
+    {
+      "currency_id": "CUR-007",
+      "territory_id": "TER-007",
+      "territory_name": "Rubra-Viva",
+      "unit_name": "Gota Selada",
+      "mint_authority": "Conselho de Saúde",
+      "backed_by": "frasco selado padronizado de essência medicinal, moeda-remédio de circulação restrita",
+      "strength_tier": "FORTE",
+      "strength_rationale": "Moeda forte: o território é próspero e bem abastecido, então a moeda local compra bastante e é aceita com confiança fora de sua terra de origem.",
+      "feeds_universal_currency": "CUR-000"
+    },
+    {
+      "currency_id": "CUR-008",
+      "territory_id": "TER-008",
+      "territory_name": "Santuários do Coração",
+      "unit_name": "Semente do Coração",
+      "mint_authority": "Círculo dos Anciãos",
+      "backed_by": "semente tratada das Árvores Anciãs, moeda orgânica sem lastro metálico (cultura não-monetária tradicional)",
+      "strength_tier": "FORTE",
+      "strength_rationale": "Moeda forte: o território é próspero e bem abastecido, então a moeda local compra bastante e é aceita com confiança fora de sua terra de origem.",
+      "feeds_universal_currency": "CUR-000"
+    },
+    {
+      "currency_id": "CUR-009",
+      "territory_id": "TER-009",
+      "territory_name": "Liga Subcristal",
+      "unit_name": "Lasca de Subcristal",
+      "mint_authority": "Assembleia Subcristal",
+      "backed_by": "lasca padronizada de Cristal Rúnico (MIN-CRYSTAL), moeda-mineral do subsolo",
+      "strength_tier": "MEDIA",
+      "strength_rationale": "Moeda de força mediana: a economia do território é estável, nem escassa nem excepcionalmente farta, e a moeda circula normalmente dentro dele.",
+      "feeds_universal_currency": "CUR-000"
+    },
+    {
+      "currency_id": "CUR-010",
+      "territory_id": "TER-010",
+      "territory_name": "Domínio dos Reis Magos",
+      "unit_name": "Marca da Corrente",
+      "mint_authority": "Conselho Enohariano",
+      "backed_by": "disco de Manalita (MIN-MANA-ORE) marcado com runa simples, eco direto de MAG-003 Corrente Planetária",
+      "strength_tier": "MEDIA",
+      "strength_rationale": "Moeda de força mediana: a economia do território é estável, nem escassa nem excepcionalmente farta, e a moeda circula normalmente dentro dele.",
+      "feeds_universal_currency": "CUR-000"
+    },
+    {
+      "currency_id": "CUR-011",
+      "territory_id": "TER-011",
+      "territory_name": "Terras Livres",
+      "unit_name": "Selo de Fronteira",
+      "mint_authority": "sem autoridade central única",
+      "backed_by": "token informal de couro/metal reconhecido por convenção entre caravanas — a moeda mais fraca e mais negociável do continente, coerente com a ausência de governo forte",
+      "strength_tier": "MEDIA",
+      "strength_rationale": "Moeda de força mediana: a economia do território é estável, nem escassa nem excepcionalmente farta, e a moeda circula normalmente dentro dele.",
+      "feeds_universal_currency": "CUR-000"
+    },
+    {
+      "currency_id": "CUR-012",
+      "territory_id": "TER-012",
+      "territory_name": "Zonas de Contenção",
+      "unit_name": "Ficha de Ração",
+      "mint_authority": "Comando Emergencial",
+      "backed_by": "ficha de racionamento emitida pela autoridade de contenção — não é mercado livre, é distribuição controlada",
+      "strength_tier": "FRACA",
+      "strength_rationale": "Moeda fraca e muito negociável: a escassez local torna o valor da moeda instável, e comerciantes de fora costumam exigir mais unidades ou preferir troca direta.",
+      "feeds_universal_currency": "CUR-000"
+    },
+    {
+      "currency_id": "CUR-013",
+      "territory_id": "TER-013",
+      "territory_name": "Fortaleza do Trovão",
+      "unit_name": "Marco de Serverus",
+      "mint_authority": "domínio pessoal de Serverus Vaelkor",
+      "backed_by": "moeda-selo pessoal do domínio, cunhada sob autoridade única de Serverus",
+      "strength_tier": "MEDIA",
+      "strength_rationale": "Moeda de força mediana: a economia do território é estável, nem escassa nem excepcionalmente farta, e a moeda circula normalmente dentro dele.",
+      "feeds_universal_currency": "CUR-000"
+    },
+    {
+      "currency_id": "CUR-014",
+      "territory_id": "TER-014",
+      "territory_name": "Cadeia de Cinzas",
+      "unit_name": "Escória Selada",
+      "mint_authority": "Conselho de Fundidores",
+      "backed_by": "escória vulcânica processada e selada, subproduto valorizado da fundição de Basalto (MIN-BASALT)",
+      "strength_tier": "MEDIA",
+      "strength_rationale": "Moeda de força mediana: a economia do território é estável, nem escassa nem excepcionalmente farta, e a moeda circula normalmente dentro dele.",
+      "feeds_universal_currency": "CUR-000"
+    },
+    {
+      "currency_id": "CUR-015",
+      "territory_id": "TER-015",
+      "territory_name": "Vale das Ruínas",
+      "unit_name": "Relicário de Areia",
+      "mint_authority": "Conselho de Guias",
+      "backed_by": "pequeno relicário recuperado das ruínas, reaproveitado como token de troca pelos guias",
+      "strength_tier": "FRACA",
+      "strength_rationale": "Moeda fraca e muito negociável: a escassez local torna o valor da moeda instável, e comerciantes de fora costumam exigir mais unidades ou preferir troca direta.",
+      "feeds_universal_currency": "CUR-000"
+    },
+    {
+      "currency_id": "CUR-016",
+      "territory_id": "TER-016",
+      "territory_name": "Confins de Gelo",
+      "unit_name": "Cristal de Gelo Selado",
+      "mint_authority": "Conselho do Gelo",
+      "backed_by": "fragmento de Cristal de Gelo Puro (REG-003) selado contra derretimento, moeda perecível se mal guardada",
+      "strength_tier": "FRACA",
+      "strength_rationale": "Moeda fraca e muito negociável: a escassez local torna o valor da moeda instável, e comerciantes de fora costumam exigir mais unidades ou preferir troca direta.",
+      "feeds_universal_currency": "CUR-000"
+    },
+    {
+      "currency_id": "CUR-017",
+      "territory_id": "TER-017",
+      "territory_name": "Arquipélago Etéreo",
+      "unit_name": "Frasco de Éter",
+      "mint_authority": "Círculo dos Ilhéus",
+      "backed_by": "frasco padronizado de Éter Estabilizado (REG-004), moeda não-agrária, eco direto da economia local",
+      "strength_tier": "FRACA",
+      "strength_rationale": "Moeda fraca e muito negociável: a escassez local torna o valor da moeda instável, e comerciantes de fora costumam exigir mais unidades ou preferir troca direta.",
+      "feeds_universal_currency": "CUR-000"
+    },
+    {
+      "currency_id": "CUR-018",
+      "territory_id": "TER-018",
+      "territory_name": "Fossa Abissal",
+      "unit_name": "Pérola Abissal",
+      "mint_authority": "Conselho das Profundezas",
+      "backed_by": "pérola bioluminescente dos Recifes Luminosos, brilho como marca de autenticidade",
+      "strength_tier": "MEDIA",
+      "strength_rationale": "Moeda de força mediana: a economia do território é estável, nem escassa nem excepcionalmente farta, e a moeda circula normalmente dentro dele.",
+      "feeds_universal_currency": "CUR-000"
+    },
+    {
+      "currency_id": "CUR-019",
+      "territory_id": "TER-019",
+      "territory_name": "Mata Perdida",
+      "unit_name": "Selo de Orquídea",
+      "mint_authority": "Guardiões da Mata",
+      "backed_by": "selo de resina extraída da Orquídea-Sombria, moeda orgânica de circulação local",
+      "strength_tier": "FRACA",
+      "strength_rationale": "Moeda fraca e muito negociável: a escassez local torna o valor da moeda instável, e comerciantes de fora costumam exigir mais unidades ou preferir troca direta.",
+      "feeds_universal_currency": "CUR-000"
+    }
+  ]
+}

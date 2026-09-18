@@ -1,0 +1,31 @@
+{
+  "record_id": "LIVING-SIM-ETAPA-06-SOCIAL-FUZZ-STRESS-V1.0",
+  "threads": 16,
+  "loops_per_thread": 200,
+  "concurrent_iterations": 3200,
+  "concurrent_social_operations": 12800,
+  "rumor_cases": 800,
+  "rumor_ok": 800,
+  "rumor_failures": 0,
+  "thread_failures": [],
+  "expected_shared_delta": 32.0,
+  "pre_reopen": {
+    "relationship_trust": 32.0,
+    "reputation_score": 32.0,
+    "social_integrity": "PASS",
+    "sqlite_quick": "ok",
+    "foreign_key_failures": 0,
+    "counts": {
+      "social_memories": 4000,
+      "knowledge_claims": 4800,
+      "knowledge_current": 4800,
+      "relationship_events": 3280,
+      "reputation_events": 3200,
+      "rumor_transmissions": 800
+    }
+  },
+  "post_reopen_social_integrity": "PASS",
+  "post_reopen_sqlite_integrity": "ok",
+  "elapsed_seconds": 14.053,
+  "status": "PASS"
+}

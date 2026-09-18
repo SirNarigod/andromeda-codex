@@ -1,0 +1,55 @@
+{
+  "record_id": "STAGE10-REGRESSION-EVIDENCE-V1.0",
+  "status": "PASS",
+  "tests_total": 532,
+  "passed": 532,
+  "failed": 0,
+  "modules": {
+    "test_runtime_core.py": 59,
+    "test_consequence_engine.py": 56,
+    "test_agent_brain.py": 90,
+    "test_social_memory.py": 72,
+    "test_ecology_brain.py": 77,
+    "test_object_environment.py": 73,
+    "test_world_orchestrator.py": 54,
+    "test_world_systems.py": 51
+  },
+  "execution_note": "All eight unit-test modules were executed successfully; the monolithic discovery runner exceeded the environment command window, so modules were executed separately.",
+  "upstream_hashes": {
+    "living_runtime.py": {
+      "stage10": "1b1dfb052bf679af8a7820805fda88590dd4b56bb41b58d8b1d46b8239eadf72",
+      "stage9": "1b1dfb052bf679af8a7820805fda88590dd4b56bb41b58d8b1d46b8239eadf72",
+      "identical": true
+    },
+    "consequence_engine.py": {
+      "stage10": "6924d3d43e16a94b4318a7ad41bf4acb27f5069e78abdda8f2824148fd95d6ea",
+      "stage9": "6924d3d43e16a94b4318a7ad41bf4acb27f5069e78abdda8f2824148fd95d6ea",
+      "identical": true
+    },
+    "agent_brain.py": {
+      "stage10": "2fb42c08b16abcda52927c0cdc8c7daa28d69895c80f6c94fd2eb374c72e6b02",
+      "stage9": "2fb42c08b16abcda52927c0cdc8c7daa28d69895c80f6c94fd2eb374c72e6b02",
+      "identical": true
+    },
+    "social_memory.py": {
+      "stage10": "b290ad3f0f51edfa263e7595bf2646a2823250281649f5f6aa625eeb062996e2",
+      "stage9": "b290ad3f0f51edfa263e7595bf2646a2823250281649f5f6aa625eeb062996e2",
+      "identical": true
+    },
+    "ecology_brain.py": {
+      "stage10": "22caf44e94cf17d67caf1628d863ad0556de9844b0277cb0eb6ca516a9622a72",
+      "stage9": "22caf44e94cf17d67caf1628d863ad0556de9844b0277cb0eb6ca516a9622a72",
+      "identical": true
+    },
+    "object_environment.py": {
+      "stage10": "2a5720cd9583f46c87750e6016dcef67f3f7e3d9b3a47ab725df5e97dc10b170",
+      "stage9": "2a5720cd9583f46c87750e6016dcef67f3f7e3d9b3a47ab725df5e97dc10b170",
+      "identical": true
+    },
+    "world_orchestrator.py": {
+      "stage10": "ab4f15913df2c09e95f82dfd80f08e635b327661975c38e424e6a6e930744cee",
+      "stage9": "ab4f15913df2c09e95f82dfd80f08e635b327661975c38e424e6a6e930744cee",
+      "identical": true
+    }
+  }
+}

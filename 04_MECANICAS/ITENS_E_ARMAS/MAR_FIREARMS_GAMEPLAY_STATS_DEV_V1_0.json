@@ -1,0 +1,392 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "MAR-FIREARMS-GAMEPLAY-STATS-DEV-V1.0",
+  "title": "MAR — Armas de fogo concretas (stats de gameplay, rascunho de desenvolvimento)",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "canonical_status": "GAMEPLAY_DERIVED_DEV",
+  "master_integration_status": "NOT_SUBMITTED",
+  "gameplay_scale_reference": "Modelo de stats espelha MAR_CANON_GAMEPLAY_STATS_V1_1.json (05_CRIACAO_PROCEDURAL/.../09_CODEX_EXPANSION/V1_2_0_DEV/), porém com autoridade de rascunho de desenvolvimento, não cânone autorizado.",
+  "r2_guard": "Categorias de origem (ART-006 Fuzis, ART-007 Revólveres, ART-008 Espingardas, ART-009 Fuzis de precisão) permanecem cânone R2 imutável em 01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/. Estas 8 armas concretas e seus stats são derivação de gameplay; não substituem, não expandem e não reescrevem o registro R2. Nenhum efeito numérico de runa isolado foi inventado — apenas o tipo de runa (já citado no ART de origem) e o tier de runificação (R0–R3, ver ART-004) são referenciados.",
+  "runification_scale_reference": "ART-004 Sistema de armamentos de Stellar: R0 sem runas, R1 uma runa funcional, R2 matriz de runas coordenadas, R3 vínculo especializado com manutenção frequente.",
+  "weapons": [
+    {
+      "weapon_id": "WPN-FUZ-001",
+      "name": "Fuzil de Patrulha",
+      "r2_source_category": "ART-006",
+      "r2_source_title": "Fuzis",
+      "canonical_status": "GAMEPLAY_DERIVED_DEV",
+      "source_weapon_status": "PROPOSTA_DEV_NAO_SUBMETIDA",
+      "runification_tier": "R1",
+      "runes_referenced": [
+        "estabilização"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 48,
+        "defense": 34,
+        "utility": 40,
+        "handling": 62,
+        "durability": 55,
+        "reach": 60,
+        "magic_affinity": 32,
+        "tech_affinity": 55,
+        "overall": 48
+      },
+      "balance_role": {
+        "subtype": "supressão de patrulha",
+        "primary_strength": "handling",
+        "primary_weakness": "magic_affinity",
+        "advantage": "mecânica confiável, ampla disponibilidade e manutenção barata para forças organizadas e caravanas",
+        "limitation": "uma única runa de estabilização não corrige aceleração nem recuo em rajadas longas"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "RETA",
+        "impact_type": "PERFURAÇÃO",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "point_blank_capable": true,
+      "point_blank_note": "Dentro de CLINCH/IN_FIGHTING (<=2,75m): impacto garantido, sem dispersao, bonus de dano por proximidade.",
+      "weight_kg": 2.67
+    },
+    {
+      "weapon_id": "WPN-FUZ-002",
+      "name": "Fuzil Rúnico de Vanguarda",
+      "r2_source_category": "ART-006",
+      "r2_source_title": "Fuzis",
+      "canonical_status": "GAMEPLAY_DERIVED_DEV",
+      "source_weapon_status": "PROPOSTA_DEV_NAO_SUBMETIDA",
+      "runification_tier": "R2",
+      "runes_referenced": [
+        "aceleração",
+        "redução de recuo"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 68,
+        "defense": 52,
+        "utility": 58,
+        "handling": 54,
+        "durability": 50,
+        "reach": 72,
+        "magic_affinity": 58,
+        "tech_affinity": 70,
+        "overall": 60
+      },
+      "balance_role": {
+        "subtype": "supressão avançada",
+        "primary_strength": "reach",
+        "primary_weakness": "durability",
+        "advantage": "matriz coordenada sustenta cadência de tiro com recuo administrado a longa distância",
+        "limitation": "matriz rúnica superaquece sob uso contínuo e perde precisão, exigindo manutenção frequente"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "RETA",
+        "impact_type": "PERFURAÇÃO",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "point_blank_capable": true,
+      "point_blank_note": "Dentro de CLINCH/IN_FIGHTING (<=2,75m): impacto garantido, sem dispersao, bonus de dano por proximidade.",
+      "weight_kg": 3.83
+    },
+    {
+      "weapon_id": "WPN-REV-001",
+      "name": "Revólver de Fronteira",
+      "r2_source_category": "ART-007",
+      "r2_source_title": "Revólveres",
+      "canonical_status": "GAMEPLAY_DERIVED_DEV",
+      "source_weapon_status": "PROPOSTA_DEV_NAO_SUBMETIDA",
+      "runification_tier": "R0",
+      "runes_referenced": [],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 42,
+        "defense": 25,
+        "utility": 30,
+        "handling": 70,
+        "durability": 60,
+        "reach": 35,
+        "magic_affinity": 10,
+        "tech_affinity": 40,
+        "overall": 39
+      },
+      "balance_role": {
+        "subtype": "defesa pessoal",
+        "primary_strength": "handling",
+        "primary_weakness": "magic_affinity",
+        "advantage": "mecanismo robusto, transporte discreto e acesso sem depender de magia ou licença",
+        "limitation": "sem qualquer runa, fica limitado a capacidade e alcance convencionais"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "RETA",
+        "impact_type": "PERFURAÇÃO",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "point_blank_capable": true,
+      "point_blank_note": "Dentro de CLINCH/IN_FIGHTING (<=2,75m): impacto garantido, sem dispersao, bonus de dano por proximidade.",
+      "weight_kg": 1.5
+    },
+    {
+      "weapon_id": "WPN-REV-002",
+      "name": "Revólver Selado de Marcação",
+      "r2_source_category": "ART-007",
+      "r2_source_title": "Revólveres",
+      "canonical_status": "GAMEPLAY_DERIVED_DEV",
+      "source_weapon_status": "PROPOSTA_DEV_NAO_SUBMETIDA",
+      "runification_tier": "R2",
+      "runes_referenced": [
+        "marcação",
+        "selamento de tambor"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 55,
+        "defense": 44,
+        "utility": 66,
+        "handling": 58,
+        "durability": 52,
+        "reach": 42,
+        "magic_affinity": 60,
+        "tech_affinity": 62,
+        "overall": 55
+      },
+      "balance_role": {
+        "subtype": "controle tático",
+        "primary_strength": "utility",
+        "primary_weakness": "reach",
+        "advantage": "marca alvos à distância de disparo e sela o tambor contra falhas em combate prolongado",
+        "limitation": "permanece arma curta: pouca capacidade e recarga rúnica cara não compensam o alcance limitado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "RETA",
+        "impact_type": "PERFURAÇÃO",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "point_blank_capable": true,
+      "point_blank_note": "Dentro de CLINCH/IN_FIGHTING (<=2,75m): impacto garantido, sem dispersao, bonus de dano por proximidade.",
+      "weight_kg": 3.83
+    },
+    {
+      "weapon_id": "WPN-ESP-001",
+      "name": "Espingarda de Guarda",
+      "r2_source_category": "ART-008",
+      "r2_source_title": "Espingardas",
+      "canonical_status": "GAMEPLAY_DERIVED_DEV",
+      "source_weapon_status": "PROPOSTA_DEV_NAO_SUBMETIDA",
+      "runification_tier": "R1",
+      "runes_referenced": [
+        "concentração"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 70,
+        "defense": 35,
+        "utility": 35,
+        "handling": 50,
+        "durability": 58,
+        "reach": 25,
+        "magic_affinity": 27,
+        "tech_affinity": 45,
+        "overall": 43
+      },
+      "balance_role": {
+        "subtype": "impacto próximo",
+        "primary_strength": "power",
+        "primary_weakness": "reach",
+        "advantage": "concentração de disparo aumenta impacto na defesa de propriedade e ruptura de obstáculos",
+        "limitation": "baixa eficiência além de curta distância, como toda a categoria"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "RETA_CURTA_DISPERSA",
+        "impact_type": "PERFURAÇÃO_MÚLTIPLA",
+        "area_effect": "PEQUENA (leque curto)"
+      },
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "point_blank_capable": true,
+      "point_blank_note": "Dentro de CLINCH/IN_FIGHTING (<=2,75m): impacto garantido, sem dispersao, bonus de dano por proximidade.",
+      "weight_kg": 2.67
+    },
+    {
+      "weapon_id": "WPN-ESP-002",
+      "name": "Espingarda Rúnica de Ruptura",
+      "r2_source_category": "ART-008",
+      "r2_source_title": "Espingardas",
+      "canonical_status": "GAMEPLAY_DERIVED_DEV",
+      "source_weapon_status": "PROPOSTA_DEV_NAO_SUBMETIDA",
+      "runification_tier": "R3",
+      "runes_referenced": [
+        "repulsão",
+        "concentração"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 82,
+        "defense": 38,
+        "utility": 60,
+        "handling": 42,
+        "durability": 48,
+        "reach": 32,
+        "magic_affinity": 64,
+        "tech_affinity": 68,
+        "overall": 54
+      },
+      "balance_role": {
+        "subtype": "demolição tática",
+        "primary_strength": "power",
+        "primary_weakness": "reach",
+        "advantage": "repulsão e concentração combinadas produzem o maior impacto de curta distância do catálogo",
+        "limitation": "vínculo especializado exige manutenção frequente; não elimina estilhaços, calor ou consumo de material"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "RETA_CURTA_DISPERSA",
+        "impact_type": "PERFURAÇÃO_MÚLTIPLA",
+        "area_effect": "PEQUENA (leque curto)"
+      },
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "point_blank_capable": true,
+      "point_blank_note": "Dentro de CLINCH/IN_FIGHTING (<=2,75m): impacto garantido, sem dispersao, bonus de dano por proximidade.",
+      "weight_kg": 5.0
+    },
+    {
+      "weapon_id": "WPN-PRE-001",
+      "name": "Fuzil de Observação",
+      "r2_source_category": "ART-009",
+      "r2_source_title": "Fuzis de precisão",
+      "canonical_status": "GAMEPLAY_DERIVED_DEV",
+      "source_weapon_status": "PROPOSTA_DEV_NAO_SUBMETIDA",
+      "runification_tier": "R1",
+      "runes_referenced": [
+        "ótica"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "MÉDIO",
+      "cost_tier": 2,
+      "stats": {
+        "power": 58,
+        "defense": 44,
+        "utility": 50,
+        "handling": 40,
+        "durability": 45,
+        "reach": 78,
+        "magic_affinity": 42,
+        "tech_affinity": 60,
+        "overall": 52
+      },
+      "balance_role": {
+        "subtype": "vigilância e observação",
+        "primary_strength": "reach",
+        "primary_weakness": "handling",
+        "advantage": "ótica rúnica melhora identificação e neutralização seletiva a longa distância",
+        "limitation": "exige treinamento, cálculo e boa posição de disparo; pouco ágil em combate próximo"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "RETA_LONGA",
+        "impact_type": "PERFURAÇÃO",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "point_blank_capable": true,
+      "point_blank_note": "Dentro de CLINCH/IN_FIGHTING (<=2,75m): impacto garantido, sem dispersao, bonus de dano por proximidade.",
+      "weight_kg": 5.67
+    },
+    {
+      "weapon_id": "WPN-PRE-002",
+      "name": "Fuzil de Precisão Convergente",
+      "r2_source_category": "ART-009",
+      "r2_source_title": "Fuzis de precisão",
+      "canonical_status": "GAMEPLAY_DERIVED_DEV",
+      "source_weapon_status": "PROPOSTA_DEV_NAO_SUBMETIDA",
+      "runification_tier": "R3",
+      "runes_referenced": [
+        "correção de vento",
+        "estabilidade",
+        "ótica"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 78,
+        "defense": 35,
+        "utility": 62,
+        "handling": 30,
+        "durability": 40,
+        "reach": 92,
+        "magic_affinity": 70,
+        "tech_affinity": 75,
+        "overall": 60
+      },
+      "balance_role": {
+        "subtype": "neutralização seletiva",
+        "primary_strength": "reach",
+        "primary_weakness": "handling",
+        "advantage": "correção de vento e estabilidade convergem para o maior alcance efetivo do catálogo",
+        "limitation": "custo altíssimo de manutenção e assinatura rúnica detectável tornam o portador rastreável"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "RETA_LONGA",
+        "impact_type": "PERFURAÇÃO",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "point_blank_capable": true,
+      "point_blank_note": "Dentro de CLINCH/IN_FIGHTING (<=2,75m): impacto garantido, sem dispersao, bonus de dano por proximidade.",
+      "weight_kg": 9.0
+    }
+  ]
+}

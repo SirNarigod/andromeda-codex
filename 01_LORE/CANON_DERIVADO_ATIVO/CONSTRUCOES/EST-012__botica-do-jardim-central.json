@@ -1,0 +1,39 @@
+{
+  "est_id": "EST-012",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Botica do Jardim Central",
+  "building_type": "LOJA",
+  "parent_locality": "LOC-007-001",
+  "parent_subregion": "SUB-007-001",
+  "parent_political_unit": "TER-007",
+  "function": "Loja de ervas e remédios preparados a partir do cultivo dos Jardins Medicinais.",
+  "economic_role": {
+    "is_vendor": true,
+    "sells": [
+      "ervas medicinais",
+      "remédios preparados"
+    ],
+    "produces": [],
+    "regulation_factor": 0.4
+  },
+  "capacity": {
+    "jobs": 5,
+    "residents": 0
+  },
+  "professions_linked": [
+    "herbalista"
+  ],
+  "notable_link": "Jardim Central (LOC-007-001); Maeryn Salvara",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "MADEIRA_E_ALVENARIA",
+    "flammability": "ALTA",
+    "recovery_days": 7
+  }
+}

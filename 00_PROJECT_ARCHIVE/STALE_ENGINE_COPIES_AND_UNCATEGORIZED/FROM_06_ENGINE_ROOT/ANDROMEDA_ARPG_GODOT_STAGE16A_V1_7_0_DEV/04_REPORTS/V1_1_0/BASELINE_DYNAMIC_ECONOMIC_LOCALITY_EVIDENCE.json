@@ -1,0 +1,61 @@
+{
+  "population_factor_by_flow_destination": {
+    "FLOW-001": 1.0,
+    "FLOW-002": 1.0,
+    "FLOW-003": 1.0,
+    "FLOW-004": 1.0,
+    "FLOW-005": 1.0,
+    "FLOW-006": 1.0,
+    "FLOW-007": 1.0
+  },
+  "all_population_factors_are_default_one": true,
+  "non_food_shortage_test": {
+    "flow": "FLOW-003",
+    "product": "componentes de rede",
+    "shortage_pressure": 100,
+    "unique_food_security_after": [
+      85.7143
+    ],
+    "all_14_settlements_same_food_security": true,
+    "sample_before_after": [
+      [
+        [
+          "CIT-001",
+          75.0
+        ],
+        [
+          "CIT-001",
+          85.7143
+        ]
+      ],
+      [
+        [
+          "CIT-002",
+          75.0
+        ],
+        [
+          "CIT-002",
+          85.7143
+        ]
+      ],
+      [
+        [
+          "GEO-MRK-001",
+          75.0
+        ],
+        [
+          "GEO-MRK-001",
+          85.7143
+        ]
+      ]
+    ]
+  },
+  "population_tick": {
+    "settlements": 14,
+    "births": 0,
+    "deaths": 0,
+    "migration": 0,
+    "population_before": 14000,
+    "population_after": 14000
+  }
+}

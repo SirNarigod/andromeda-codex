@@ -1,0 +1,15 @@
+{
+  "build": "V0.1.23 DEV",
+  "baseline": "V0.1.22 DEV FIX1 — runtime PASS informado pelo autor",
+  "status": "STATIC_PASS_RUNTIME_PENDING",
+  "checks": 19,
+  "passed": 19,
+  "failed": 0,
+  "selection_movement_contract": {
+    "left_ground": "SET_OR_REPLACE_MOVE_DESTINATION",
+    "left_selectable_while_moving": "SELECT_ONLY_PRESERVE_EXISTING_MOVE_DESTINATION",
+    "left_selectable_while_idle": "SELECT_ONLY_REMAIN_IDLE",
+    "left_scene_transition": "APPROACH_AND_TRANSITION"
+  },
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1"
+}

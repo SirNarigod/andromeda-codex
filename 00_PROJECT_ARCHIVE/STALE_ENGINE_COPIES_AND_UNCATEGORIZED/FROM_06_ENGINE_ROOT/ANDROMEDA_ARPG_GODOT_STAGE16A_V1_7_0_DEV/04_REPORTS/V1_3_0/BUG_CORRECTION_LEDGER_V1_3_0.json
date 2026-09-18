@@ -1,0 +1,130 @@
+{
+  "record_id": "BUG-CORRECTION-LEDGER-V1.3.0",
+  "version": "V1.3.0",
+  "loop_policy": "TEST -> ERROR -> CORRECT -> INVALIDATE PASS -> RESTART",
+  "findings": [
+    {
+      "id": "V13-001",
+      "category": "AUDITOR_COMPAT",
+      "finding": "Legacy Master validator assumed exactly 42 active authority modules; V2.1 legitimately has 46.",
+      "correction": "Created V2.1 validator with 46-module contract plus Country/MAR/Kenua guards.",
+      "restart": "MASTER_GATE_RESTARTED",
+      "status": "CLOSED"
+    },
+    {
+      "id": "V13-002",
+      "category": "API_CONTRACT",
+      "finding": "Bridge treated SocialMemorySystem.recall_memories() as a mapping instead of the list returned by the API.",
+      "correction": "Use list directly and count returned memories.",
+      "restart": "BRIDGE_TESTS_RESTARTED",
+      "status": "CLOSED"
+    },
+    {
+      "id": "V13-003",
+      "category": "DATA_SHAPE",
+      "finding": "Witness selection treated _all_npc_records() values as tuples although it yields NPC dictionaries.",
+      "correction": "Iterate NPC dictionaries directly.",
+      "restart": "BRIDGE_TESTS_RESTARTED",
+      "status": "CLOSED"
+    },
+    {
+      "id": "V13-004",
+      "category": "BASELINE_AUTHORITY",
+      "finding": "Ecology, Consequence and Atlas bridge retained hard-coded V2.0.1 hash checks and rejected verified Master V2.1.",
+      "correction": "LivingRuntime is the supported-baseline authority; dependent modules re-check the runtime-verified hash. Atlas bridge uses the shared supported-baseline registry.",
+      "restart": "BOOTSTRAP_RESTARTED",
+      "status": "CLOSED"
+    },
+    {
+      "id": "V13-005",
+      "category": "WORLD_CONTRACT",
+      "finding": "V1.3 health gate read Master identity from top-level world fields instead of world.baseline.",
+      "correction": "Read baseline.master_version and baseline.release_sha256.",
+      "restart": "BOOTSTRAP_RESTARTED",
+      "status": "CLOSED"
+    },
+    {
+      "id": "V13-006",
+      "category": "TEST_HARNESS",
+      "finding": "New tests called non-existent LivingRuntime.list_events().",
+      "correction": "Tests query the immutable event ledger contract directly.",
+      "restart": "TARGETED_TESTS_RESTARTED",
+      "status": "CLOSED"
+    },
+    {
+      "id": "V13-007",
+      "category": "PROTECTION_POLICY",
+      "finding": "A CHILD could buy a WPN item, equip it and initiate NPC combat although child hunting was already blocked.",
+      "correction": "Bridge blocks child weapon purchase, weapon equip and initiated combat before mutable domain actions.",
+      "restart": "FULL_V13_REGRESSION_RESTARTED",
+      "status": "CLOSED"
+    },
+    {
+      "id": "V13-008",
+      "category": "AUDITOR_SCHEMA",
+      "finding": "V1.3 static auditor initially read wrong keys in Master V2.1 Country/MAR contracts.",
+      "correction": "Auditor now validates actual hierarchy, narrative_safety and weapons/count fields.",
+      "restart": "STATIC_AUDIT_RESTARTED",
+      "status": "CLOSED"
+    },
+    {
+      "id": "V13-009",
+      "category": "ARTIFACT_HYGIENE",
+      "finding": "Test execution creates __pycache__ artifacts that must not ship.",
+      "correction": "Release pipeline cleans caches before the no-pycache gate and packaging.",
+      "restart": "HYGIENE_GATE_RESTARTED",
+      "status": "CLOSED"
+    },
+    {
+      "id": "V13-010",
+      "category": "TESTABILITY",
+      "finding": "Monolithic regression command can exceed executor window and obscure module-level progress.",
+      "correction": "Final regression is executed per test module in isolated processes/batches; consolidated evidence records 23/23 modules.",
+      "restart": "REGRESSION_EXECUTION_RESTARTED_ISOLATED",
+      "status": "CLOSED"
+    },
+    {
+      "id": "V13-011",
+      "category": "DETERMINISM",
+      "finding": "Seeded combat roll included fresh runtime UUIDs, so the same logical seeded scenario could diverge after clean restore/re-execution (observed bridge-stress witness-memory aggregate 161 vs 152).",
+      "correction": "Combat RNG now hashes world seed + deterministic event ordinal + logical entity identities + weapon ref + state versions; runtime UUIDs are excluded from the roll key. Added cross-instance determinism regression.",
+      "restart": "FULL_RELEASE_AND_RESTORE_LOOP_RESTARTED",
+      "status": "CLOSED"
+    },
+    {
+      "id": "V13-012",
+      "category": "TEST_HARNESS",
+      "finding": "New determinism regression initially queried a non-public/non-existent commerce.catalog attribute after the scenario had completed.",
+      "correction": "Determinism test now reads catalog count from CommerceSystem.full_integrity_check(), the supported integrity API.",
+      "restart": "DETERMINISM_TEST_RESTARTED",
+      "status": "CLOSED"
+    },
+    {
+      "id": "V13-013",
+      "category": "TEST_HARNESS",
+      "finding": "Rebuilt catalog/distribution stress initially instantiated CountryScale without SceneInteractionSystem, yielding a misleading 0 dungeon/scene-object coverage.",
+      "correction": "Stress harness now bootstraps SceneInteractionSystem before catalog/distribution inspection so dungeon and scene item references are actually covered.",
+      "restart": "CATALOG_DISTRIBUTION_STRESS_RESTARTED",
+      "status": "CLOSED"
+    },
+    {
+      "id": "V13-014",
+      "category": "AUDITOR_COMPAT",
+      "finding": "Historical Stage14 release-readiness auditor compared V1.3/V1.1-evolved runtime modules against Stage13 V1.0 baseline hashes and reported five obsolete baseline mismatches despite clean functional Stage14 gates.",
+      "correction": "Historical auditor is preserved as evidence; new V1.3 release-readiness auditor validates Master V2.1 dependency, V1.3 mutation allowlist/static audit, deterministic combat evidence, current regression/stress reports, safety/hygiene and Stage13/14 reports.",
+      "restart": "V1_3_RELEASE_READINESS_RESTARTED",
+      "status": "CLOSED"
+    },
+    {
+      "id": "V13-015",
+      "category": "TEST_HARNESS",
+      "finding": "New V1.3 readiness auditor initially expected Stage13 reports under a STAGE13 subdirectory, while the established Stage13 runners write them at 04_REPORTS root.",
+      "correction": "Readiness auditor now follows the actual Stage13 report paths and was restarted.",
+      "restart": "V1_3_RELEASE_READINESS_RESTARTED",
+      "status": "CLOSED"
+    }
+  ],
+  "closed": 10,
+  "open": 0,
+  "status": "PASS"
+}

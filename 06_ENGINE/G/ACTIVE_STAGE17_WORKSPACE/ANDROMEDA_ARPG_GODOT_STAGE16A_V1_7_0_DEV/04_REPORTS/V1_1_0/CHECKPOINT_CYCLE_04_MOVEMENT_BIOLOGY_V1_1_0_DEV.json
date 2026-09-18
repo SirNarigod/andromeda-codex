@@ -1,0 +1,78 @@
+{
+  "record_id": "CHECKPOINT-LIVING-V1.1.0-DEV-CYCLE-04",
+  "project": "ANDRÔMEDA CÓDEX",
+  "component": "Living Simulation Engine",
+  "version": "V1.1.0-DEV",
+  "cycle": "4/6",
+  "cycle_name": "MOVEMENT + BIOLOGY + ENVIRONMENT",
+  "status": "PASS",
+  "baseline_living": "V1.0.0",
+  "master_dependency": "V2.0.1",
+  "master_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+  "master_mutations": 0,
+  "canon_mutations": 0,
+  "changes": [
+    "route-backed travel",
+    "non-teleport transit lifecycle",
+    "route closure/access enforcement",
+    "ecological flee/patrol movement",
+    "biological clock/metabolism",
+    "environmental modifiers",
+    "biological-death ecology reconciliation",
+    "trade/combat transit guards"
+  ],
+  "tests": {
+    "new_mobility_biology": {
+      "passed": 12,
+      "failed": 0
+    },
+    "ecology_plus_runtime_core": {
+      "passed": 136,
+      "failed": 0
+    },
+    "commerce_combat_domain_locality": {
+      "passed": 31,
+      "failed": 0
+    },
+    "world_systems": {
+      "passed": 51,
+      "failed": 0
+    },
+    "object_environment": {
+      "passed": 73,
+      "failed": 0
+    },
+    "verified_total": {
+      "passed": 303,
+      "failed": 0
+    }
+  },
+  "corrected_during_cycle": [
+    "mobility_effects SQL placeholder count mismatch corrected before checkpoint"
+  ],
+  "artifacts": [
+    {
+      "path": "01_RUNTIME/mobility_biology.py",
+      "sha256": "becba970a3c758c164d9f07bfffe1a734d407151adef8efce1a806f41d4bd53d",
+      "size": 35246
+    },
+    {
+      "path": "01_RUNTIME/commerce_system.py",
+      "sha256": "3f2fe6a1181399878edccb759c732137d5e3f51bc71ad84126b0f033e71960a9",
+      "size": 29782
+    },
+    {
+      "path": "01_RUNTIME/combat_system.py",
+      "sha256": "3755874afc9684fef201107150d2d3d6d146ba625e0a431cf36e0d6378e78377",
+      "size": 17365
+    },
+    {
+      "path": "03_TESTS/test_mobility_biology_v1_1.py",
+      "sha256": "a3fe4a88473970dfaa4f3491e1dd4f3fc3febf63f530ad7df38608e91aaf784e",
+      "size": 9268
+    }
+  ],
+  "backup_authorized": false,
+  "release_authorized": false,
+  "next_cycle": "5/6 SOCIAL + FACTION + LAW + LABOR"
+}

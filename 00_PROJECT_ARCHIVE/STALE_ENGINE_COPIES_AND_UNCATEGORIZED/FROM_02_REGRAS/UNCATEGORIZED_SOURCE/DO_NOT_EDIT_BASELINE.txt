@@ -1,0 +1,5 @@
+ATENCAO — BASELINE PROTEGIDA
+
+Esta pasta contem uma baseline/release de autoridade do Andromeda Codex.
+Nao edite esta copia como workspace de desenvolvimento.
+Use-a para referencia, validacao, restauracao e derivacao controlada.

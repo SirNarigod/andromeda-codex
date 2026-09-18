@@ -1,0 +1,169 @@
+{
+  "record_id": "ARPG-STAGE-PLAN-V0.4.0",
+  "status": "ACTIVE",
+  "supersedes": "ARPG-STAGE-PLAN-V0.3.0",
+  "stage_count": 20,
+  "numbering": "00-19",
+  "revision_reason": "Stage06 skills/build progression implemented; canonical MAG sources imported READ_ONLY; Godot connection user-reported available but editor use deferred while user is mobile.",
+  "safe_batch_limit": {
+    "major_stages_per_cycle": 1,
+    "minor_stages_per_cycle": 2,
+    "rule": "Always finish test/correction/regression/checkpoint before advancing."
+  },
+  "stages": [
+    {
+      "index": 0,
+      "folder": "00_GOVERNANCE",
+      "purpose": "Governança ARPG e reconciliação de baselines",
+      "status": "PASS"
+    },
+    {
+      "index": 1,
+      "folder": "01_GAME_CORE",
+      "purpose": "Game loop, runtime e contratos fundamentais",
+      "status": "PASS"
+    },
+    {
+      "index": 2,
+      "folder": "02_CHARACTER",
+      "purpose": "Personagem, atributos, nível, XP e movimento",
+      "status": "PASS"
+    },
+    {
+      "index": 3,
+      "folder": "03_COMBAT",
+      "purpose": "Combate ARPG, dano, crítico, defesa e resistências",
+      "status": "PASS"
+    },
+    {
+      "index": 4,
+      "folder": "04_ATTRIBUTES_RESOURCES",
+      "purpose": "Recursos adaptativos, regeneração, consumíveis, custos e cooldowns",
+      "status": "PASS"
+    },
+    {
+      "index": 5,
+      "folder": "05_ITEMS",
+      "purpose": "Itemização, slots, raridades, qualidade, sockets e consumíveis canônicos/derivados",
+      "status": "PASS"
+    },
+    {
+      "index": 6,
+      "folder": "06_SKILLS",
+      "purpose": "Habilidades ativas, passivas, custos e progressão emergente",
+      "status": "PASS"
+    },
+    {
+      "index": 7,
+      "folder": "07_ACTORS",
+      "purpose": "Player, NPC, inimigos, elites, bosses, hostilidade e IA",
+      "status": "PLANNED"
+    },
+    {
+      "index": 8,
+      "folder": "08_WORLD",
+      "purpose": "Zonas, dungeons, encontros, waypoints e superfície de recursos",
+      "status": "PLANNED"
+    },
+    {
+      "index": 9,
+      "folder": "09_GATHERING_WORK",
+      "purpose": "Recursos do mapa, mineração, madeira, flora, colheita, extração, ferramentas, trabalho e profissões para player e NPCs",
+      "status": "PLANNED"
+    },
+    {
+      "index": 10,
+      "folder": "10_QUESTS",
+      "purpose": "Quests, eventos e campanha jogável",
+      "status": "PLANNED"
+    },
+    {
+      "index": 11,
+      "folder": "11_ECONOMY",
+      "purpose": "Vendors, stash, reparo, crafting, serviços e cadeias produtivas",
+      "status": "PLANNED"
+    },
+    {
+      "index": 12,
+      "folder": "12_LIVING_INTEGRATION",
+      "purpose": "Integração Living x ARPG com LOD sistêmico, trabalho NPC e economia viva",
+      "status": "PLANNED"
+    },
+    {
+      "index": 13,
+      "folder": "13_SAVE_PERSISTENCE",
+      "purpose": "Save, persistência, morte e recuperação",
+      "status": "PLANNED"
+    },
+    {
+      "index": 14,
+      "folder": "14_GODOT_RUNTIME",
+      "purpose": "Vertical slice integrado no Godot e Editor Bridge se necessário",
+      "status": "PLANNED"
+    },
+    {
+      "index": 15,
+      "folder": "15_BALANCE",
+      "purpose": "Balanceamento global, progressão matemática e rendimento de trabalho/recursos",
+      "status": "PLANNED"
+    },
+    {
+      "index": 16,
+      "folder": "16_TESTS",
+      "purpose": "Regressão, stress, determinismo e integridade",
+      "status": "PLANNED"
+    },
+    {
+      "index": 17,
+      "folder": "17_PLACEHOLDERS",
+      "purpose": "Conteúdo funcional sem arte final",
+      "status": "PLANNED"
+    },
+    {
+      "index": 18,
+      "folder": "18_PRE_ART",
+      "purpose": "Gate final de conteúdo e jogabilidade pré-arte",
+      "status": "PLANNED"
+    },
+    {
+      "index": 19,
+      "folder": "19_VISUAL_PIPELINE",
+      "purpose": "Arte conceitual, modelos, animação, VFX, áudio e UI final",
+      "status": "BLOCKED_UNTIL_STAGE_18_PASS"
+    }
+  ],
+  "gathering_work_authority": {
+    "canon_source_policy": "READ_ONLY_MASTER_BINDINGS_FIRST",
+    "resource_zone_source": "03_DOMAINS/SPATIALIZATION/02_DISTRIBUICOES/STELLAR_RESOURCE_ZONES_V1_0.json",
+    "profession_source": "03_DOMAINS/PROFESSIONS/02_PROFISSOES/PROFESSIONS_FUNCTIONAL_MASTER_V1_0.json",
+    "production_chain_source": "05_MAR/FUNCTIONAL/01_MAR/MAR_PRODUCTION_CHAINS_V1_0.json",
+    "flora_source": "03_DOMAINS/SPATIALIZATION/02_DISTRIBUICOES/STELLAR_FLORA_DISTRIBUTION_V1_0.json",
+    "flora_guard": "MASTER_FLORA_DISTRIBUTION_IS_BLOCKED_BY_SOL; DO_NOT_SPATIALIZE_OR_INVENT_CANONICAL_FLORA_SILENTLY",
+    "player_and_npc_shared_job_contract": true
+  },
+  "current_checkpoint": "STAGE_06_PASS",
+  "next_stage": 7,
+  "itemization_authority": {
+    "catalog_definitions": 84,
+    "canonical_master_weapons": 30,
+    "gameplay_derived_records": 54,
+    "player_npc_shared_inventory_contract": true,
+    "rarity_quality_affixes": "GAMEPLAY_DERIVED_NOT_CANON",
+    "singular_items": "REQUIRE_AUTHORED_UNIQUE_DEFINITION",
+    "gathering_consumes_item_contract": "STAGE09"
+  },
+  "skill_authority": {
+    "definitions": 36,
+    "canonical_magic_sources": 30,
+    "gameplay_prototypes": 6,
+    "fixed_class": null,
+    "build_model": "EMERGENT_FROM_PLAYER_CHOICES",
+    "canonical_magic_runtime": "NOT_AUTO_CASTABLE"
+  },
+  "godot_status": {
+    "connection": "USER_REPORTED_CONNECTED",
+    "stage06_editor_execution": "DEFERRED_USER_ON_MOBILE",
+    "next_direct_use": "WHEN_USER_IS_ON_PC_AND_RUNTIME_VALIDATION_BENEFITS"
+  },
+  "updated_at": "2026-08-18T17:12:30.966775+00:00"
+}

@@ -1,0 +1,55 @@
+{
+  "record_id": "STELLAR-PLAYER-CAMPAIGN-LAW-V1.0",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.0",
+  "status": "ACTIVE_R2_COMPATIBLE_DERIVATION",
+  "authority": {
+    "scope": "CUSTOM_PLAYER_CAMPAIGN",
+    "r2_relation": "PARALLEL_PROTECTED",
+    "season": "SEASON_1",
+    "engine": "ENGINE_AGNOSTIC"
+  },
+  "dependencies": [
+    "../../01_LORE/STELLAR_REBASE_R2/R2_SOURCE_AUTHORITY_INDEX_V1_0.json",
+    "STELLAR_CANON_CONSTITUTION_V1_1.json",
+    "STELLAR_COSMOLOGY_CANON_V1_2.json",
+    "STELLAR_SOVEREIGNTY_TERRITORY_LAW_V1_1.json"
+  ],
+  "invariants": [
+    "CUSTOM_PROTAGONIST_CAMPAIGN_RUNS_PARALLEL_TO_R2_SEASON_1",
+    "CUSTOM_PROTAGONIST_HAS_LOCAL_AGENCY_NOT_R2_PROTAGONIST_AUTHORITY",
+    "KENUA_SEALED_SCENES_DECISIONS_AND_REVELATIONS_REMAIN_IMMUTABLE",
+    "LOCAL_ARCS_MUST_CREATE_COST_CHOICE_CONSEQUENCE_OR_MYSTERY",
+    "PLAYER_IDENTITY_IS_RUNTIME_STATE_NOT_A_NEW_R2_FACT"
+  ],
+  "prohibitions": [
+    "NO_PLAYER_REPLACEMENT_OF_KENUA",
+    "NO_UNGATED_CROSSOVER_WITH_R2_SEALED_CHARACTER_OR_EVENT",
+    "NO_AMADON_CONTACT_OR_IDENTIFICATION_BEFORE_S01E08",
+    "NO_CUSTOM_PLAYER_QUEST_REWRITES_R2_EPISODE",
+    "NO_RUNTIME_PLAYER_PROFILE_PROMOTION_TO_CANON"
+  ],
+  "simulation_effects": [
+    "Campaign seeds select a local settlement, route, profession and immediate pressure without changing territorial sovereignty.",
+    "A crossover request is blocked unless an authorial gate records the R2 reference, timing, scope, spoiler boundary and reversible gameplay effect.",
+    "Local outcomes may change relationships, access, resource conditions and rumor networks inside their permitted scope."
+  ],
+  "allowed_states": [
+    "LOCAL_ARC_ACTIVE",
+    "LOCAL_ARC_RESOLVED",
+    "R2_ADJACENT_OBSERVATION",
+    "CROSSOVER_GATE_REVIEW",
+    "CROSSOVER_AUTHORIZED",
+    "CANON_PROMOTION_REJECTED"
+  ],
+  "story_generators": [
+    "Um viajante descobre que a rota que sustenta sua vila passa por um presságio ligado à crise de Kenua, mas só pode agir sobre a própria comunidade.",
+    "Um personagem oferece uma versão contraditória de um fato da Temporada 1; investigar a mentira abre um arco local sem entrar na cena selada.",
+    "Uma ajuda indireta chega tarde demais para mudar o destino de Kenua, mas salva uma família e cria uma dívida que atravessa gerações."
+  ],
+  "compatibility": {
+    "r2": "R2 remains the only authority for Kenua, episode events, Amadon revelation and sealed cosmology.",
+    "living_country_livingsim": "May simulate local pressures only within existing territory, time and offline gates.",
+    "unreal_engine_5": "May implement player profiles and campaign seeds without granting lore authority."
+  }
+}

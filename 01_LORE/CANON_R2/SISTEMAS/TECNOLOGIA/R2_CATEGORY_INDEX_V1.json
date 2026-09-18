@@ -1,0 +1,30 @@
+{
+  "record_id": "R2-TEC-CATEGORY-INDEX-V1",
+  "authority": "CANON_R2_CONFIRMADO",
+  "category": "TEC",
+  "category_name": "Tecnologia",
+  "items": [
+    {
+      "id": "TEC-001",
+      "title": "Rede ferroviária de Ortheon",
+      "path": "01_LORE/CANON_R2/SISTEMAS/TECNOLOGIA/TEC-001__rede-ferroviaria-de-ortheon.json",
+      "spoiler": 1,
+      "sealed": false
+    },
+    {
+      "id": "TEC-002",
+      "title": "Tecnomagia de Ithra",
+      "path": "01_LORE/CANON_R2/SISTEMAS/TECNOLOGIA/TEC-002__tecnomagia-de-ithra.json",
+      "spoiler": 2,
+      "sealed": true
+    },
+    {
+      "id": "TEC-003",
+      "title": "Indústria ferral",
+      "path": "01_LORE/CANON_R2/SISTEMAS/TECNOLOGIA/TEC-003__industria-ferral.json",
+      "spoiler": 2,
+      "sealed": true
+    }
+  ],
+  "source": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json"
+}

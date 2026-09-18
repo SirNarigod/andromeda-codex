@@ -1,0 +1,41 @@
+{
+  "record_id": "SUB-016-001",
+  "record_kind": "DERIVED_SUBREGION_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Geleira Perene",
+  "parent_political_unit": "TER-016",
+  "provenance": {
+    "approval": "AUTHORIAL_DECISION_FASE_49",
+    "r2_anchors": [],
+    "compatibility": "Territorio 100% novo por decisao explicita do autor (fase 49)."
+  },
+  "function": "Extensa geleira permanente, fonte de gelo puro e minerais preservados sob a superficie.",
+  "locality_references": [
+    "LOC-016-001"
+  ],
+  "permitted_catalog_links": {
+    "npc_roles": [],
+    "professions": [
+      "extrator de gelo"
+    ],
+    "encounters": [],
+    "resources": [
+      "MIN-QUARTZ",
+      "FLO-015",
+      "EST-055"
+    ]
+  },
+  "local_conflicts": [
+    "extracao versus estabilidade da geleira"
+  ],
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY_BEYOND_FASE_49_GATE",
+    "NO_AUTOMATIC_KENUA_SCENE",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_FIXED_BORDER_COORDINATE"
+  ],
+  "story_generators": [
+    "Uma crise em Geleira Perene testa a resistencia da comunidade ao isolamento glacial."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "record_id": "STELLAR-COSMOLOGY-CANON-V1.2",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.2",
+  "status": "ACTIVE_R2_REBASED_AUTHORIAL_CANON",
+  "supersedes": "STELLAR_COSMOLOGY_CANON_V1_1",
+  "authority": {"primary_source": "ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2", "scope": "LORE_CHARACTERS_EPISODES_COSMOLOGY", "master_v2_0_1": "TECHNICAL_EXTENSION_ONLY", "living_sim_engine_v1_0_0": "TECHNICAL_EXTENSION_ONLY"},
+  "dependencies": ["../STELLAR_REBASE_R2/R2_SOURCE_AUTHORITY_INDEX_V1_0.json", "../../02_REGRAS/STELLAR_FOUNDATION/STELLAR_CANON_CONSTITUTION_V1_1.json", "../../02_REGRAS/STELLAR_FOUNDATION/STELLAR_SYMBIOSIS_LAW_V1_0.json", "../../02_REGRAS/STELLAR_FOUNDATION/STELLAR_ROOT_PROGRESSION_LAW_V1_0.json"],
+  "r2_facts": {"stellar": "Living planet where nature, technology, magic, societies and spirits coexist in unstable balance.", "amadon": "Stellar's guardian consciousness linked through the Corrente Planetária and known creator of Espinho-Negro.", "espinho_negro": "Intelligent fossil plant created to locate and destroy Raiz Profunda.", "raiz_profunda": "Planetary invasive organism implanted by Votakhel.", "revelation_boundary": "Kenua cannot hear, see or identify Amadon before Episode 8 of Season 1.", "post_revelation": "After Episode 8, Amadon may be an accessible counsellor speaking for Stellar without issuing divine orders, guaranteeing solutions or exposing sealed facts.", "current_year": "842 EC", "planetary_government": "None."},
+  "invariants": ["R2_LORE_FACTS_ARE_IMMUTABLE", "STELLAR_IS_A_LIVING_PLANET", "AMADON_IS_STELLAR_GUARDIAN_INTERFACE", "AMADON_COMMUNICATION_REQUIRES_S01E08_GATE", "NO_FACTION_OWNS_STELLAR"],
+  "prohibitions": ["NO_UNSOURCED_KENUA_RETCON", "NO_AMADON_CONTACT_OR_IDENTIFICATION_BEFORE_S01E08", "NO_DIRECT_DIVINE_COMMAND_AS_CANON", "NO_GUARANTEED_AMADON_SOLUTION", "NO_SEALED_FACT_DISCLOSURE_BY_ADVICE", "NO_R2_EPISODE_RETCON"],
+  "simulation_effects": ["Before the gate, Amadon-contact requests fail closed and may expose only ambiguous flower, Corrente or incomplete-memory signals.", "After the gate, Amadon may provide context, risk and alternatives, with provenance and without changing outcomes or authorizing canon promotion.", "Planetary responses remain event-sourced and subject to R2 revelation boundaries."],
+  "allowed_states": ["PRE_REVELATION", "POST_S01E08_COUNSELLOR", "SILENT_RESPONSE", "SEALED"],
+  "story_generators": ["Amadon offers two costly routes, leaving Kenua to decide which community bears the consequence.", "An accessible answer reveals a new question without exposing a sealed fact.", "A planetary response clarifies that advice from a guardian is not control over Stellar."]
+}

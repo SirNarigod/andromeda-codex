@@ -1,0 +1,128 @@
+{
+  "record_id": "STELLAR-TERRITORY-AREA-ESTIMATE-DEV-V1.0",
+  "title": "Área Territorial Estimada (km²) — derivada das rotas locais reais, não do layout macro esquemático",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "method_correction_note": "Tentativa inicial usou o fator grau→km calibrado nas rotas locais (105 km/grau) aplicado ao layout circular MACRO de territórios (fase 37) - isso gerou territórios de ~1,5 milhão km² cada, o que CONTRADIZ a regra já existente STELLAR_TERRAIN_TRAVEL_SYSTEM_DEV_V1_0.json#SAME_TERRITORY='CURTA (horas)'. Corrigido: o layout macro da fase 37 é explicitamente 'simbólico', nunca calibrado a distância real - só as 9 rotas LOCAIS (SRTE) têm calibração real E estão na escala certa (dentro de um território). Reaplicado corretamente.",
+  "method": "distância média real por 'salto' local = 3.42 km (média das 8 rotas SRTE válidas). Território típico tem 3 subregiões (contagem modal) → diâmetro estimado = 3 × salto médio ≈ 10.2 km → raio 5.1 km → área ≈ π×raio² ≈ 81.7 km². Consistente com 'SAME_TERRITORY = horas de viagem' (≈10.2km a pé/carroça em poucas horas).",
+  "avg_local_hop_km": 3.42,
+  "modal_subregions_per_territory": 3,
+  "count": 19,
+  "territories": [
+    {
+      "territory_id": "TER-001",
+      "estimated_radius_km": 5.13,
+      "estimated_area_km2": 82.68,
+      "subregion_count_real": 3
+    },
+    {
+      "territory_id": "TER-002",
+      "estimated_radius_km": 5.13,
+      "estimated_area_km2": 82.68,
+      "subregion_count_real": 3
+    },
+    {
+      "territory_id": "TER-003",
+      "estimated_radius_km": 5.13,
+      "estimated_area_km2": 82.68,
+      "subregion_count_real": 3
+    },
+    {
+      "territory_id": "TER-004",
+      "estimated_radius_km": 5.13,
+      "estimated_area_km2": 82.68,
+      "subregion_count_real": 3
+    },
+    {
+      "territory_id": "TER-005",
+      "estimated_radius_km": 5.13,
+      "estimated_area_km2": 82.68,
+      "subregion_count_real": 3
+    },
+    {
+      "territory_id": "TER-006",
+      "estimated_radius_km": 5.13,
+      "estimated_area_km2": 82.68,
+      "subregion_count_real": 3
+    },
+    {
+      "territory_id": "TER-007",
+      "estimated_radius_km": 5.13,
+      "estimated_area_km2": 82.68,
+      "subregion_count_real": 3
+    },
+    {
+      "territory_id": "TER-008",
+      "estimated_radius_km": 5.13,
+      "estimated_area_km2": 82.68,
+      "subregion_count_real": 3
+    },
+    {
+      "territory_id": "TER-009",
+      "estimated_radius_km": 5.13,
+      "estimated_area_km2": 82.68,
+      "subregion_count_real": 3
+    },
+    {
+      "territory_id": "TER-010",
+      "estimated_radius_km": 5.13,
+      "estimated_area_km2": 82.68,
+      "subregion_count_real": 3
+    },
+    {
+      "territory_id": "TER-011",
+      "estimated_radius_km": 10.26,
+      "estimated_area_km2": 330.71,
+      "subregion_count_real": 6
+    },
+    {
+      "territory_id": "TER-012",
+      "estimated_radius_km": 5.13,
+      "estimated_area_km2": 82.68,
+      "subregion_count_real": 3
+    },
+    {
+      "territory_id": "TER-013",
+      "estimated_radius_km": 5.13,
+      "estimated_area_km2": 82.68,
+      "subregion_count_real": 3
+    },
+    {
+      "territory_id": "TER-014",
+      "estimated_radius_km": 5.13,
+      "estimated_area_km2": 82.68,
+      "subregion_count_real": 3
+    },
+    {
+      "territory_id": "TER-015",
+      "estimated_radius_km": 5.13,
+      "estimated_area_km2": 82.68,
+      "subregion_count_real": 3
+    },
+    {
+      "territory_id": "TER-016",
+      "estimated_radius_km": 5.13,
+      "estimated_area_km2": 82.68,
+      "subregion_count_real": 3
+    },
+    {
+      "territory_id": "TER-017",
+      "estimated_radius_km": 5.13,
+      "estimated_area_km2": 82.68,
+      "subregion_count_real": 3
+    },
+    {
+      "territory_id": "TER-018",
+      "estimated_radius_km": 5.13,
+      "estimated_area_km2": 82.68,
+      "subregion_count_real": 3
+    },
+    {
+      "territory_id": "TER-019",
+      "estimated_radius_km": 5.13,
+      "estimated_area_km2": 82.68,
+      "subregion_count_real": 3
+    }
+  ],
+  "note_uniform_estimate": "Valor único aplicado a todos os 19 territórios (mesma ordem de grandeza) - territórios com mais/menos subregiões que a moda podem ser ajustados proporcionalmente no futuro, mas não há evidência para diferenciar mais que isso agora.",
+  "method_v1_1_note": "V1.1 (etapa 5 do Atlas, mesma sessao): a contagem de subregioes deixa de ser a MODA assumida igual pra todos (3) e passa a ser a contagem REAL por territorio (dado ja existente em STELLAR_REGION_COORDINATE_INDEX) - so TER-011 (Terras Livres) tem 6 subregioes, os outros 18 continuam com 3, entao so TER-011 muda de valor (fica ~4x maior, area proporcional ao diametro dobrado - consistente com seu papel narrativo de territorio de fronteira mais extenso)."
+}

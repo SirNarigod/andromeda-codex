@@ -1,0 +1,27 @@
+{
+ "fase": "web-m1",
+ "counts": {
+  "territories": 20,
+  "routes": 62,
+  "landscapes": 68,
+  "creatures": 32,
+  "npcs": 58,
+  "civilians": 33,
+  "classes": 5,
+  "packs": 3,
+  "skills": 39,
+  "quests": 21,
+  "est": 68,
+  "agz": 14,
+  "minerals": 16,
+  "bands": 5,
+  "weapons": 96,
+  "varga": 6,
+  "items": 32,
+  "currencies": 20,
+  "econ": 19,
+  "fauna": 13,
+  "enc_profiles": 14,
+  "conditions": 4
+ }
+}

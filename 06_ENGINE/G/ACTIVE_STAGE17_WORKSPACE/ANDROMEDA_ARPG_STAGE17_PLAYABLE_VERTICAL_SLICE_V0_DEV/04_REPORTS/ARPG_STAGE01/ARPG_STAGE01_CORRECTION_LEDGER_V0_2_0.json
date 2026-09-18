@@ -1,0 +1,65 @@
+{
+  "record_id": "ARPG-STAGE01-CORRECTION-LEDGER-V0.2.0",
+  "stage": "01/18",
+  "status": "CLOSED",
+  "corrections": [
+    {
+      "id": "ARPG-01-001",
+      "issue": "No first-class Player Character layer; controllable actors were effectively Living NPCs.",
+      "correction": "Added persistent player profiles and separate runtime-derived PLAYER_AVATAR records supporting CREATED and CANONICAL modes.",
+      "canon_mutation": false,
+      "status": "PASS"
+    },
+    {
+      "id": "ARPG-01-002",
+      "issue": "No deterministic player command stream suitable for authoritative execution.",
+      "correction": "Added ownership-scoped client sequence validation, server command ordering, conflict rejection and idempotent replay.",
+      "canon_mutation": false,
+      "status": "PASS"
+    },
+    {
+      "id": "ARPG-01-003",
+      "issue": "Mouse backend exposed vector movement but not ARPG click-to-move intent.",
+      "correction": "Added local pointer destinations, persistent movement intent, tick-driven arrival, collision blocking and pointer primary routing.",
+      "canon_mutation": false,
+      "status": "PASS"
+    },
+    {
+      "id": "ARPG-01-004",
+      "issue": "Initial active-profile logic was global and would prevent future simultaneous multiplayer controllers.",
+      "correction": "Changed activation rule to one active profile per controller_scope while preserving single-player behavior.",
+      "canon_mutation": false,
+      "status": "PASS"
+    },
+    {
+      "id": "ARPG-01-005",
+      "issue": "Multiple profiles could represent the same canonical character identity in one world.",
+      "correction": "Canonical character profiles now require a Master character ref, preserve Master name, and reject duplicate canonical identity profiles.",
+      "canon_mutation": false,
+      "status": "PASS"
+    },
+    {
+      "id": "ARPG-01-006",
+      "issue": "Country inventory reconciliation repeatedly rescanned all NPCs for every city/block, producing excessive profile-creation cost.",
+      "correction": "Added one-pass NPC locality indexes and reused block-local lists during subregion reconciliation.",
+      "canon_mutation": false,
+      "status": "PASS"
+    },
+    {
+      "id": "ARPG-01-007",
+      "issue": "Optimized shared-world unit harness initially submitted obsolete controller_scope values.",
+      "correction": "Kept runtime ownership enforcement intact and fixed the tests to submit the profile's actual controller_scope.",
+      "runtime_relaxed": false,
+      "status": "PASS"
+    },
+    {
+      "id": "ARPG-01-008",
+      "issue": "First JSON unit-report runner attempted to import directory 03_TESTS as a Python package.",
+      "correction": "Changed report runner to import the test file explicitly with importlib; regenerated report at 12/12 PASS.",
+      "runtime_mutation": false,
+      "status": "PASS"
+    }
+  ],
+  "open_corrections": 0,
+  "canon_mutations": 0
+}

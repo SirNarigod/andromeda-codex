@@ -1,0 +1,34 @@
+{
+  "est_id": "EST-050",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Casario da Cratera",
+  "building_type": "RESIDENCIAL",
+  "parent_locality": "LOC-014-002",
+  "parent_subregion": "SUB-014-002",
+  "parent_political_unit": "TER-014",
+  "function": "Moradia principal da comunidade abrigada na cratera extinta.",
+  "economic_role": {
+    "is_vendor": false,
+    "sells": [],
+    "produces": [],
+    "regulation_factor": 0.3
+  },
+  "capacity": {
+    "jobs": 2,
+    "residents": 12
+  },
+  "professions_linked": [],
+  "notable_link": "TER-014 Cadeia de Cinzas (fase 44/45)",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "MADEIRA_E_ALVENARIA",
+    "flammability": "ALTA",
+    "recovery_days": 7
+  }
+}

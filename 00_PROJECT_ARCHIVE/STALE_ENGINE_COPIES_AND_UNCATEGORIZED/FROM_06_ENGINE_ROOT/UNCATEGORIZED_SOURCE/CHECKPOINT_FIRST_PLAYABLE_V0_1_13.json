@@ -1,0 +1,22 @@
+{
+  "checkpoint": "FIRST_PLAYABLE_V0_1_13",
+  "parent_baseline": "V0.1.12",
+  "status": "STATIC_VALIDATED_RUNTIME_PENDING",
+  "changes": [
+    "right mouse hold-to-move disabled; right mouse is click-only",
+    "left mouse short-click + hold-to-move preserved",
+    "right contextual click still approaches and interacts/attacks",
+    "inventory removed from permanent HUD",
+    "I toggles dedicated inventory panel, hidden by default"
+  ],
+  "preserved_contracts": [
+    "attack cooldown 2.0 s",
+    "A* navigation",
+    "collisions",
+    "door/chair toggle",
+    "hover contextual",
+    "dungeon transitions",
+    "torch behavior"
+  ],
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1"
+}

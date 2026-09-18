@@ -1,0 +1,61 @@
+{
+  "record_id": "ANDROMEDA-ARPG-STAGE16B-B06-EDITOR-BRIDGE-DEBUGGER-V0.8.0",
+  "captured_at": "2026-08-21T07:15:08-03:00",
+  "godot_version": "4.7.1.stable.official.a13da4feb",
+  "project_path": "C:/Users/thall/Documents/andromeda-argp/ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/07_GODOT_ARPG_STAGE16B",
+  "bridge": "EXISTING_LOCAL_ANDROMEDA_EDITOR_BRIDGE",
+  "runs": [
+    {
+      "id": "B06_EDITOR_BRIDGE_ATTACH_R0_INVALIDATED",
+      "scene_argument": "res://tests/godot/B06RuntimeGate.tscn",
+      "result": "INVALIDATED_NO_ACTIVE_PROCESS_AT_QUERY",
+      "counted": false,
+      "correction": "Use the bridge-relative scene argument and wait for process startup before reading debugger output."
+    },
+    {
+      "id": "B06_EDITOR_BRIDGE_R1_INVALIDATED",
+      "scene": "tests/godot/B06RuntimeGate.tscn",
+      "functional_checks": "264/265",
+      "result": "INVALIDATED_WARNING_AND_FIXTURE_FAILURE",
+      "warnings": 7,
+      "errors": 1,
+      "warning_details": [
+        "Six method-name shadowing warnings across enemy/player vitals parameters",
+        "One missing explicit ProcessMode enum cast"
+      ],
+      "failed_check": "WORLD_PHYSICS_CONTINUES_DURING_LOCAL_FREEZE",
+      "failure_cause": "Node callback ordering made the local probe sample the same physics tick.",
+      "correction": "Rename parameters, restore the explicit enum cast, and measure global physics continuity with Engine.get_physics_frames()."
+    },
+    {
+      "id": "B06_EDITOR_BRIDGE_FINAL",
+      "scene": "tests/godot/B06RuntimeGate.tscn",
+      "result": "PASS",
+      "passed": 265,
+      "failed": 0,
+      "debugger_errors": 0,
+      "debugger_warnings": 0,
+      "controlled_stop_final_errors": 0
+    },
+    {
+      "id": "B06_MAIN_DIRECT_EDITOR_BRIDGE_FINAL",
+      "scene": "scenes/Main.tscn",
+      "result": "PASS",
+      "debugger_errors": 0,
+      "debugger_warnings": 0,
+      "controlled_stop_final_errors": 0
+    }
+  ],
+  "final_debugger": {
+    "errors": 0,
+    "warnings": 0,
+    "timeouts": 0,
+    "incomplete_runs": 0,
+    "status": "PASS"
+  },
+  "user_editor_preserved": {
+    "pid": 10524,
+    "main_window_title": "Andromeda ARGP - Godot Engine",
+    "terminated_by_b06": false
+  }
+}

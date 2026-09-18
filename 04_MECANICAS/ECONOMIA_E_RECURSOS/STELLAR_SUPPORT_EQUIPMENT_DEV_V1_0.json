@@ -1,0 +1,260 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-SUPPORT-EQUIPMENT-DEV-V1.0",
+  "title": "Equipamentos de suporte (não-armamento) para NPCs, androids civis e construções já catalogados",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "canonical_status": "GAMEPLAY_DERIVED_DEV",
+  "r2_guard": "Só recursos/construções já catalogados (MIN-/MAT-/EST-XXX). Lanterna Rúnica é item de luz sem mecânica de combate — nenhum efeito de runa isolado inventado.",
+  "equipment": [
+    {
+      "equip_id": "EQP-001",
+      "name": "Kit de Primeiros Socorros",
+      "category": "Médico",
+      "inputs": [
+        {
+          "resource_id": "MAT-004",
+          "resource_name": "Fibra de Véu"
+        },
+        {
+          "resource_id": "MIN-COPPER",
+          "resource_name": "Cobrex Condutor"
+        }
+      ],
+      "produced_at": "EST-025",
+      "price_tier": "MÉDIO",
+      "notable_link": "AND-CIV-001/002 (Médico)",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-007",
+        "CUR-000"
+      ],
+      "weight_kg": 0.3,
+      "description": "Equipamento médico, AND-CIV-001/002 (Médico)."
+    },
+    {
+      "equip_id": "EQP-002",
+      "name": "Mochila de Carga",
+      "category": "Logística",
+      "inputs": [
+        {
+          "resource_id": "MAT-003",
+          "resource_name": "Couro de Manada"
+        },
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        }
+      ],
+      "produced_at": "EST-004",
+      "price_tier": "BAIXO",
+      "notable_link": "AND-CIV-003 (Suporte)",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 1.53,
+      "description": "Equipamento de logística, AND-CIV-003 (Suporte)."
+    },
+    {
+      "equip_id": "EQP-003",
+      "name": "Rádio de Campo",
+      "category": "Comunicação",
+      "inputs": [
+        {
+          "resource_id": "MIN-COPPER",
+          "resource_name": "Cobrex Condutor"
+        },
+        {
+          "resource_id": "MIN-MAGNETITE",
+          "resource_name": "Magnetita de Pulso"
+        }
+      ],
+      "produced_at": "EST-019",
+      "price_tier": "ALTO",
+      "notable_link": "AND-CIV-004 (Suporte)",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ],
+      "weight_kg": 0.41,
+      "description": "Equipamento de comunicação, AND-CIV-004 (Suporte)."
+    },
+    {
+      "equip_id": "EQP-004",
+      "name": "Corda de Escalada",
+      "category": "Logística",
+      "inputs": [
+        {
+          "resource_id": "MAT-004",
+          "resource_name": "Fibra de Véu"
+        },
+        {
+          "resource_id": "MAT-001",
+          "resource_name": "Madeira de Copas"
+        }
+      ],
+      "produced_at": "EST-004",
+      "price_tier": "BAIXO",
+      "notable_link": "uso geral em terreno acidentado (ex. Fendas da Névoa)",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 1.53,
+      "description": "Equipamento de logística, uso geral em terreno acidentado (ex. Fendas da Névoa)."
+    },
+    {
+      "equip_id": "EQP-005",
+      "name": "Barraca de Campanha",
+      "category": "Abrigo",
+      "inputs": [
+        {
+          "resource_id": "MAT-001",
+          "resource_name": "Madeira de Copas"
+        },
+        {
+          "resource_id": "MAT-003",
+          "resource_name": "Couro de Manada"
+        }
+      ],
+      "produced_at": "EST-004",
+      "price_tier": "BAIXO",
+      "notable_link": "construções ACAMPAMENTO já catalogadas (EST-007/008/038/041)",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 2.02,
+      "description": "Equipamento de abrigo, construções ACAMPAMENTO já catalogadas (EST-007/008/038/041)."
+    },
+    {
+      "equip_id": "EQP-006",
+      "name": "Kit de Reparo",
+      "category": "Manutenção",
+      "inputs": [
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        },
+        {
+          "resource_id": "MAT-002",
+          "resource_name": "Borracha de Seiva"
+        }
+      ],
+      "produced_at": "EST-004",
+      "price_tier": "MÉDIO",
+      "notable_link": "AND-CIV-005/006 (Trabalho)",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 1.02,
+      "description": "Equipamento de manutenção, AND-CIV-005/006 (Trabalho)."
+    },
+    {
+      "equip_id": "EQP-007",
+      "name": "Lanterna Rúnica",
+      "category": "Percepção",
+      "inputs": [
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        },
+        {
+          "resource_id": "MIN-COPPER",
+          "resource_name": "Cobrex Condutor"
+        }
+      ],
+      "produced_at": "EST-044",
+      "price_tier": "MÉDIO",
+      "notable_link": "uso geral em áreas escuras/subterrâneas (Liga Subcristal, Fendas da Névoa)",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ],
+      "weight_kg": 0.31,
+      "description": "Equipamento de percepção, uso geral em áreas escuras/subterrâneas (Liga Subcristal, Fendas da Névoa)."
+    },
+    {
+      "equip_id": "EQP-008",
+      "name": "Máscara de Filtragem",
+      "category": "Proteção",
+      "inputs": [
+        {
+          "resource_id": "MAT-004",
+          "resource_name": "Fibra de Véu"
+        },
+        {
+          "resource_id": "MIN-QUARTZ",
+          "resource_name": "Quartzo de Veio"
+        }
+      ],
+      "produced_at": "EST-004",
+      "price_tier": "MÉDIO",
+      "notable_link": "proteção em zonas de risco biológico (Vespa-de-Vidro CRI-010, Besouro-Rubro CRI-011)",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 0.31,
+      "description": "Equipamento de proteção, proteção em zonas de risco biológico (Vespa-de-Vidro CRI-010, Besouro-Rubro CRI-011)."
+    },
+    {
+      "equip_id": "EQP-009",
+      "name": "Máscara de Fumaça",
+      "category": "Proteção",
+      "inputs": [
+        {
+          "resource_id": "MIN-QUARTZ",
+          "resource_name": "Quartzo de Veio"
+        },
+        {
+          "resource_id": "MAT-004",
+          "resource_name": "Fibra de Véu"
+        }
+      ],
+      "produced_at": "EST-049",
+      "price_tier": "MÉDIO",
+      "notable_link": "CIV-016 (Torvin, EST-049), risco térmico/vapor de TER-014",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-014",
+        "CUR-000"
+      ],
+      "weight_kg": 0.31,
+      "description": "Equipamento de proteção, CIV-016 (Torvin, EST-049), risco térmico/vapor de TER-014."
+    },
+    {
+      "equip_id": "EQP-010",
+      "name": "Manto Refratário",
+      "category": "Proteção",
+      "inputs": [
+        {
+          "resource_id": "MIN-BASALT",
+          "resource_name": "Basalto Negro"
+        },
+        {
+          "resource_id": "MAT-003",
+          "resource_name": "Couro de Manada"
+        }
+      ],
+      "produced_at": "EST-049",
+      "price_tier": "ALTO",
+      "notable_link": "Proteção térmica para extração na Caldeira Ativa (SUB-014-001)",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-014",
+        "CUR-000"
+      ],
+      "weight_kg": 0.32,
+      "description": "Equipamento de proteção, Proteção térmica para extração na Caldeira Ativa (SUB-014-001)."
+    }
+  ]
+}

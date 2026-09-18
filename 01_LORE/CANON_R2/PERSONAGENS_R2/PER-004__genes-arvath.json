@@ -1,0 +1,79 @@
+{
+  "record_id": "PER-004",
+  "record_kind": "R2_CANONICAL_ENTRY_MIRROR",
+  "authority": "CANON_R2_CONFIRMADO",
+  "canonical_home": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-004__genes-arvath.json",
+  "source": {
+    "archive_sha256": "257e456a5d0396310ec2355b3dfc0f11f4e0a5264cf6e764591c8760f5070cb0",
+    "lineage": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json",
+    "document_sha256": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726"
+  },
+  "entry": {
+    "code": "PER-004",
+    "slug": "genes-arvath",
+    "title": "Genes Arvath",
+    "subtitle": "Supremo Mago das Árvores Anciãs",
+    "category": "PER",
+    "secondaryCategories": [],
+    "canon": "Cânone original",
+    "spoiler": 2,
+    "sealed": true,
+    "image": null,
+    "imageStatus": null,
+    "summary": "Supremo Mago das Árvores Anciãs, defensor de preservação e contenção. Ama Serlis como um filho e deseja trazê-lo de volta à ordem, mesmo que para isso precise enviar discípulos atrás dele.",
+    "facts": {
+      "Gênero": "Masculino",
+      "Idade": "72 anos",
+      "Cargo": "Supremo Mago das Árvores Anciãs",
+      "Escala em território preparado": "Até grau 5"
+    },
+    "sections": [
+      {
+        "heading": "Serlis",
+        "body": "Genes não considera Serlis apenas um antigo discípulo. Participou de sua criação e o protegeu como filho. A fuga foi recebida como ruptura institucional e perda familiar."
+      },
+      {
+        "heading": "Ordem de retorno",
+        "body": "Genes determina que Serlis seja encontrado vivo. Discípulos das Árvores Anciãs serão enviados gradualmente, criando pressão, confronto e tentativas de reconciliação ao longo da história."
+      },
+      {
+        "heading": "Decisão institucional",
+        "body": "Ocultou registros de hospedeiros anteriores para impedir pânico e exploração, mas sua proteção pode transformar responsabilidade em controle."
+      }
+    ],
+    "relations": [
+      {
+        "slug": "serlis-aftermoon",
+        "label": "Antigo discípulo"
+      },
+      {
+        "slug": "arvores-ancias",
+        "label": "Liderança"
+      },
+      {
+        "slug": "santuarios-do-coracao",
+        "label": "Autoridade territorial"
+      },
+      {
+        "slug": "circulo-arcano-botanico",
+        "label": "Autoridade institucional"
+      }
+    ],
+    "keywords": [
+      "Genes",
+      "Supremo Mago",
+      "Árvores Anciãs",
+      "contenção"
+    ],
+    "sources": [
+      "BIBLIA_PERSONAGENS_VOLUME_1.md"
+    ]
+  },
+  "biography": {
+    "status": "R2_SOURCE_EXTRACT",
+    "source_document": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/legacy/v110/docs/canon/01_CANON_ATUAL/BIBLIA_PERSONAGENS_VOLUME_1.md",
+    "source_sha256": "a7d133276930bffbe429d029c8cc97f377b9bed2c90f30f8e44c76d46c61b8be",
+    "text": "Homem, 72 anos. Supremo Mago das Árvores Anciãs. Criou e protegeu Serlis como filho. Deseja trazê-lo de volta vivo e enviará discípulos gradualmente. Não é maligno, mas pode transformar afeto, responsabilidade e preservação em controle institucional.",
+    "no_unverified_additions": true
+  }
+}

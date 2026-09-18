@@ -1,0 +1,57 @@
+{
+  "record_identity": "S17_C3R5_CLOSURE_SPRINT_REGRESSION_V0_1_0_DEV",
+  "created_at": "2026-08-29T19:45:00Z",
+  "stage": "STAGE17",
+  "process": "ETAPA_31_S17_C3R5_CLOSURE_SPRINT",
+  "purpose": "Structured, per-gate before/after evidence for every regression run this round, referenced by the final report's points 3, 5, 6 and 7.",
+  "gates": {
+    "S17_C2_RESOURCE_AUTHORITATIVE_APPROACH_GATHER": {
+      "before_this_round": "failing on BLOCKED scenario (hardcoded destination unreachable after session-anchor drift); later also failed on TREE_NORMAL approach for the same drift reason",
+      "intermediate": "51/92 (after the arrival-distance-snap fix, but before the anchor-drift root cause was understood and countered)",
+      "final_this_round": "92/92 PASS, 0 script errors",
+      "scenarios_covered": ["TREE_NORMAL", "ORE_NORMAL", "BLOCKED_SETUP/approach-from-blocked-side"],
+      "verified_immediately_after": "s17c3r5_return_to_canonical_anchor.gd run (mandatory pre-step established this round)"
+    },
+    "S17_G19_COMMON_TARGET_COMBAT": {
+      "before_this_round_historical": "29/32, NO_DEFEAT_REACHED (older baseline referenced in prior rounds)",
+      "before_this_round_current_symptom": "COMMON/ALPHA selection resolving to NPCs ~80km / ~2195km away -- S17_G19_COMMON_TARGET_UNBOUNDED_SELECTION_GAP",
+      "final_this_round": "69/74 PASS",
+      "residual_failures": 5,
+      "residual_failures_root_cause": "BACKLOG-08 -- enemy-corpse loot pickup approach sometimes settles ~9.4m outside the required 0.5m range; same approach/NavMesh family as the C2 fix, not replicated here because it does not block any step of the mandatory manual flow",
+      "not_a_regression": true
+    },
+    "S17_COMBAT_RUNTIME": {
+      "before_this_round": "41/77, cascading NO_POINTER_HIT failures traced to the same unbounded COMMON/ALPHA selection gap",
+      "final_this_round": "86/91 PASS",
+      "residual_failures": 5,
+      "residual_failures_root_cause": "identical to G19's residual: BACKLOG-08 enemy-corpse loot pickup range",
+      "core_loop_status": "select -> attack -> defeat proven end-to-end"
+    },
+    "AUTHORITY_GROUND_LOOT_RUNTIME": {
+      "before_this_round_historical": "51/53 -- known gap GROUND_LOOT_REACHABLE_AUTO_SETTLE_LIMITATION (client-claimed reachable forwarded without server re-verification)",
+      "final_this_round": "53/53 PASS, 0 errors",
+      "note": "fixed as a direct consequence of Bloqueio 3 (_verify_drop_reachable), not a separately-targeted change"
+    },
+    "BACKEND_PYTHON_GROUND_LOOT_TEST_SUITE": {
+      "final_this_round": "10/10 PASS",
+      "purpose": "confirms _verify_drop_reachable's backward compatibility -- worlds/tests with no resource_placement_registry configured gracefully degrade to prior client-trust behavior instead of breaking"
+    },
+    "S17_C3R4A_C3R4B_GATHERING_CAPACITY_CONTRACT_SUITE": {
+      "final_this_round": "38/38 PASS (unchanged; not a target of this round, re-confirmed only as part of not-touching prerequisite work)"
+    }
+  },
+  "boot_regression": {
+    "as_of_round_end": "FAILING -- Stage16BAuthorityAdapter() raises AuthorityBootError: NO_VALID_COMMON_TARGET_IN_ACTIVE_AREA",
+    "unrelated_issue_found_and_fixed_along_the_way": "MOTION_OWNER_DIVERGENCE for the player, left over from G19's own real exploration this round; fixed via a single legitimate ChunkStreamingSystem.transfer() call after ContinuousMovementSystem.verify() -- no change to the player's real position",
+    "current_blocking_issue": "see S17_C3R5_CLOSURE_SPRINT_ACCEPTANCE_V0_1_0_DEV.json -> real_unresolved_blocker_at_round_end for full detail"
+  },
+  "debugger_summary": {
+    "script_errors_in_final_passing_gate_runs": 0,
+    "unhandled_exceptions_in_final_passing_gate_runs": 0,
+    "engine_errors_found_and_fixed_this_round": [
+      "Godot ERROR: The InputMap action \"respawn_request\" doesn't exist -- raised on every keypress through handle_action_event because is_action_pressed() was called against an undefined InputMap action; fixed by removing the is_action_pressed OR-branch and keeping only the raw KEY_R keycode check",
+      "same class of error for \"manual_save_request\" against KEY_F5 -- same fix pattern"
+    ],
+    "AuthorityBootError_on_NO_VALID_COMMON_TARGET_IN_ACTIVE_AREA_classification": "expected, handled Python exception from the adapter's own validation logic (working as specified) -- not a script error or crash"
+  }
+}

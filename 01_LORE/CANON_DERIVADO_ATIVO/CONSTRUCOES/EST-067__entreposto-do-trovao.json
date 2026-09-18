@@ -1,0 +1,38 @@
+{
+  "est_id": "EST-067",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Entreposto do Trovao",
+  "building_type": "COMERCIAL",
+  "parent_locality": "LOC-013-001",
+  "parent_subregion": "SUB-013-001",
+  "parent_political_unit": "TER-013",
+  "function": "Entreposto de comercio de rota, criado para servir a espinha dorsal continental (fase 53) onde nenhuma construcao comercial existia.",
+  "economic_role": {
+    "is_vendor": true,
+    "sells": [
+      "suprimentos de viagem"
+    ],
+    "produces": [],
+    "regulation_factor": 0.3
+  },
+  "capacity": {
+    "jobs": 3,
+    "residents": 2
+  },
+  "professions_linked": [
+    "JOB-008 Agente de licencas e contratos"
+  ],
+  "notable_link": "STELLAR_ROUTE_NETWORK_DEV_V1_0.json (fase 53)",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "MADEIRA_E_ALVENARIA",
+    "flammability": "ALTA",
+    "recovery_days": 7
+  }
+}

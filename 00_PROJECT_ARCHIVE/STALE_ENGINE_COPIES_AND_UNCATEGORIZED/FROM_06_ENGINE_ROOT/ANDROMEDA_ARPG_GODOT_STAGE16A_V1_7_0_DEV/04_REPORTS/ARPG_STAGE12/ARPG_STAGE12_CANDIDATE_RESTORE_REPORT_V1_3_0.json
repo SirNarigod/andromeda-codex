@@ -1,0 +1,22 @@
+{
+  "record_id": "ARPG-STAGE12-CANDIDATE-RESTORE-V1.3.0",
+  "source": "ANDROMEDA_ARPG_NARRATIVE_STAGE12_V1_3_0_CANDIDATE.zip",
+  "integrity_before": {
+    "manifest": "601/601",
+    "ledger": "602/602",
+    "status": "PASS"
+  },
+  "tests": {
+    "functional": "20/20 PASS",
+    "persistence": "1/1 PASS",
+    "validation": "45/45 PASS",
+    "stress": "30/30 PASS"
+  },
+  "integrity_after": {
+    "manifest": "601/601",
+    "ledger": "602/602",
+    "transients": 0,
+    "status": "PASS"
+  },
+  "status": "PASS"
+}

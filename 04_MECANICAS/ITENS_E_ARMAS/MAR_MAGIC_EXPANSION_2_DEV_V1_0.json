@@ -1,0 +1,363 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "MAR-MAGIC-EXPANSION-2-DEV-V1.0",
+  "title": "MAR — 3ª e 4ª opção por tier em Mágica (completa 16 armas para Magos)",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "canonical_status": "GAMEPLAY_DERIVED_DEV",
+  "master_integration_status": "NOT_SUBMITTED",
+  "supplements": [
+    "MAR_TECH_AND_MAGIC_GAMEPLAY_STATS_DEV_V1_0.json",
+    "MAR_TECH_AND_MAGIC_EXPANSION_DEV_V1_0.json"
+  ],
+  "r2_guard": "Ancorada em MAG-001/002/003 sem alterar esses registros. Completa o pool de armas necessário para formar 8 NPCs Magos (2 armas cada).",
+  "weapons": [
+    {
+      "weapon_id": "WPN-MAG-009",
+      "name": "Talismã de Fluxo Instável",
+      "r2_source_category": null,
+      "family": "Mágica",
+      "owner_class": "Magos",
+      "runification_tier": "R0",
+      "runes_referenced": [],
+      "mag_source_reference": "MAG-001",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 26,
+        "defense": 20,
+        "utility": 26,
+        "handling": 48,
+        "durability": 34,
+        "reach": 36,
+        "magic_affinity": 40,
+        "tech_affinity": 4,
+        "overall": 29
+      },
+      "balance_role": {
+        "subtype": "canalização instável",
+        "primary_strength": "magic_affinity",
+        "primary_weakness": "tech_affinity",
+        "advantage": "barato e fácil de carregar, capta qualquer resquício de Corrente Planetária próxima",
+        "limitation": "fluxo instável — resultado varia a cada uso"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (equipamento passivo)",
+        "impact_type": "IMPACTO_MÁGICO",
+        "area_effect": "PEQUENA a MÉDIA (conforme runa)"
+      },
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ],
+      "weight_kg": 2.0
+    },
+    {
+      "weapon_id": "WPN-MAG-010",
+      "name": "Bastão de Ecoação",
+      "r2_source_category": null,
+      "family": "Mágica",
+      "owner_class": "Magos",
+      "runification_tier": "R1",
+      "runes_referenced": [],
+      "mag_source_reference": "MAG-001",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "MÉDIO",
+      "cost_tier": 2,
+      "stats": {
+        "power": 42,
+        "defense": 26,
+        "utility": 44,
+        "handling": 48,
+        "durability": 40,
+        "reach": 48,
+        "magic_affinity": 56,
+        "tech_affinity": 16,
+        "overall": 40
+      },
+      "balance_role": {
+        "subtype": "canalização por eco de fórmula",
+        "primary_strength": "magic_affinity",
+        "primary_weakness": "tech_affinity",
+        "advantage": "repete parte de uma fórmula falada anterior, economizando tempo de invocação",
+        "limitation": "eco perde força a cada repetição na mesma sessão de combate"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "RETA_MÁGICA (sem queda)",
+        "impact_type": "IMPACTO_MÁGICO",
+        "area_effect": "PEQUENA a MÉDIA (conforme runa)"
+      },
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ],
+      "point_blank_capable": true,
+      "point_blank_note": "Dentro de CLINCH/IN_FIGHTING (<=2,75m): impacto garantido, sem dispersao, bonus de dano por proximidade.",
+      "weight_kg": 3.33
+    },
+    {
+      "weapon_id": "WPN-MAG-011",
+      "name": "Círculo Rúnico de Convergência Dupla",
+      "r2_source_category": null,
+      "family": "Mágica",
+      "owner_class": "Magos",
+      "runification_tier": "R2",
+      "runes_referenced": [],
+      "mag_source_reference": "MAG-002",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 56,
+        "defense": 32,
+        "utility": 62,
+        "handling": 36,
+        "durability": 34,
+        "reach": 46,
+        "magic_affinity": 72,
+        "tech_affinity": 24,
+        "overall": 45
+      },
+      "balance_role": {
+        "subtype": "canalização por círculo coordenado",
+        "primary_strength": "magic_affinity",
+        "primary_weakness": "tech_affinity",
+        "advantage": "duas runas de foco desenhadas no chão convergem efeito num único ponto",
+        "limitation": "exige preparar o círculo antes do combate — vulnerável durante a montagem"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (equipamento passivo)",
+        "impact_type": "IMPACTO_MÁGICO",
+        "area_effect": "PEQUENA a MÉDIA (conforme runa)"
+      },
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ],
+      "weight_kg": 4.67
+    },
+    {
+      "weapon_id": "WPN-MAG-012",
+      "name": "Cetro da Última Maré Planetária",
+      "r2_source_category": null,
+      "family": "Mágica",
+      "owner_class": "Magos",
+      "runification_tier": "R3",
+      "runes_referenced": [],
+      "mag_source_reference": "MAG-003",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 78,
+        "defense": 40,
+        "utility": 76,
+        "handling": 20,
+        "durability": 26,
+        "reach": 56,
+        "magic_affinity": 88,
+        "tech_affinity": 30,
+        "overall": 52
+      },
+      "balance_role": {
+        "subtype": "canalização de elite",
+        "primary_strength": "magic_affinity",
+        "primary_weakness": "handling",
+        "advantage": "canaliza diretamente um pico da Corrente Planetária (MAG-003)",
+        "limitation": "peso ritual do cetro deixa o portador quase estático durante o efeito"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "RETA_MÁGICA (sem queda)",
+        "impact_type": "IMPACTO_MÁGICO",
+        "area_effect": "PEQUENA a MÉDIA (conforme runa)"
+      },
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ],
+      "point_blank_capable": true,
+      "point_blank_note": "Dentro de CLINCH/IN_FIGHTING (<=2,75m): impacto garantido, sem dispersao, bonus de dano por proximidade.",
+      "weight_kg": 6.0
+    },
+    {
+      "weapon_id": "WPN-MAG-013",
+      "name": "Pingente de Corrente Latente",
+      "r2_source_category": null,
+      "family": "Mágica",
+      "owner_class": "Magos",
+      "runification_tier": "R0",
+      "runes_referenced": [],
+      "mag_source_reference": "MAG-003",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 24,
+        "defense": 24,
+        "utility": 28,
+        "handling": 50,
+        "durability": 36,
+        "reach": 38,
+        "magic_affinity": 42,
+        "tech_affinity": 6,
+        "overall": 31
+      },
+      "balance_role": {
+        "subtype": "canalização passiva",
+        "primary_strength": "magic_affinity",
+        "primary_weakness": "tech_affinity",
+        "advantage": "acumula um pouco de Corrente Planetária mesmo fora de combate",
+        "limitation": "reserva pequena, esgota rápido em uso contínuo"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (equipamento passivo)",
+        "impact_type": "IMPACTO_MÁGICO",
+        "area_effect": "PEQUENA a MÉDIA (conforme runa)"
+      },
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ],
+      "weight_kg": 2.0
+    },
+    {
+      "weapon_id": "WPN-MAG-014",
+      "name": "Manopla de Gesto Ritual",
+      "r2_source_category": null,
+      "family": "Mágica",
+      "owner_class": "Magos",
+      "runification_tier": "R1",
+      "runes_referenced": [],
+      "mag_source_reference": "MAG-001",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "MÉDIO",
+      "cost_tier": 2,
+      "stats": {
+        "power": 44,
+        "defense": 30,
+        "utility": 46,
+        "handling": 46,
+        "durability": 44,
+        "reach": 42,
+        "magic_affinity": 60,
+        "tech_affinity": 18,
+        "overall": 41
+      },
+      "balance_role": {
+        "subtype": "canalização por gesto",
+        "primary_strength": "magic_affinity",
+        "primary_weakness": "tech_affinity",
+        "advantage": "método de gesto (MAG-001) permite invocar em silêncio",
+        "limitation": "exige as duas mãos livres, sem escudo ou arma secundária simultânea"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (corpo-a-corpo mágico)",
+        "impact_type": "IMPACTO_MÁGICO",
+        "area_effect": "PEQUENA a MÉDIA (conforme runa)"
+      },
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ],
+      "weight_kg": 3.33
+    },
+    {
+      "weapon_id": "WPN-MAG-015",
+      "name": "Véu Rúnico de Interrupção Arcana",
+      "r2_source_category": null,
+      "family": "Mágica",
+      "owner_class": "Magos",
+      "runification_tier": "R2",
+      "runes_referenced": [],
+      "mag_source_reference": "MAG-002",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 50,
+        "defense": 36,
+        "utility": 66,
+        "handling": 40,
+        "durability": 38,
+        "reach": 44,
+        "magic_affinity": 76,
+        "tech_affinity": 22,
+        "overall": 47
+      },
+      "balance_role": {
+        "subtype": "canalização de controle",
+        "primary_strength": "magic_affinity",
+        "primary_weakness": "tech_affinity",
+        "advantage": "véu rúnico interrompe invocações alheias próximas",
+        "limitation": "não distingue aliado de inimigo dentro da área de interrupção"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (equipamento passivo)",
+        "impact_type": "IMPACTO_MÁGICO",
+        "area_effect": "PEQUENA a MÉDIA (conforme runa)"
+      },
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ],
+      "weight_kg": 4.67
+    },
+    {
+      "weapon_id": "WPN-MAG-016",
+      "name": "Trono Portátil de Convergência",
+      "r2_source_category": null,
+      "family": "Mágica",
+      "owner_class": "Magos",
+      "runification_tier": "R3",
+      "runes_referenced": [],
+      "mag_source_reference": "MAG-003",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 82,
+        "defense": 44,
+        "utility": 80,
+        "handling": 18,
+        "durability": 24,
+        "reach": 60,
+        "magic_affinity": 92,
+        "tech_affinity": 28,
+        "overall": 54
+      },
+      "balance_role": {
+        "subtype": "convergência máxima",
+        "primary_strength": "magic_affinity",
+        "primary_weakness": "handling",
+        "advantage": "maior afinidade mágica de todo o catálogo MAR, convergência total da Corrente Planetária",
+        "limitation": "estrutura do trono precisa ser montada antes do combate, imóvel durante o uso"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (equipamento passivo)",
+        "impact_type": "IMPACTO_MÁGICO",
+        "area_effect": "PEQUENA a MÉDIA (conforme runa)"
+      },
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ],
+      "weight_kg": 6.0
+    }
+  ]
+}

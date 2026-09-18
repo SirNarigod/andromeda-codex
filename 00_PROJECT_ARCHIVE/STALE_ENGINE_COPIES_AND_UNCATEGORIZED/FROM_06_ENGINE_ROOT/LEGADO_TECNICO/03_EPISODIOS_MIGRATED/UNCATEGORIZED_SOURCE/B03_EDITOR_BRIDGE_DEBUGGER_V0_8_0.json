@@ -1,0 +1,51 @@
+{
+  "record_id": "ARPG-STAGE16B-B03-EDITOR-BRIDGE-DEBUGGER-V0.8.0",
+  "recorded_at": "2026-08-20T21:38:46.3319600-03:00",
+  "bridge": "EXISTING_LOCAL_ANDROMEDA_EDITOR_BRIDGE",
+  "godot_version": "4.7.1.stable.official.a13da4feb",
+  "b03_gate": {
+    "scene": "res://tests/godot/B03RuntimeGate.tscn",
+    "marker": "ANDROMEDA_STAGE16B_B03_GATE: PASS",
+    "checks": 357,
+    "passed": 357,
+    "failed": 0,
+    "debug_output_errors": [],
+    "controlled_stop_final_errors": [],
+    "result": "PASS"
+  },
+  "main_direct": {
+    "scene": "res://scenes/Main.tscn",
+    "debug_output_errors": [],
+    "controlled_stop_final_errors": [],
+    "result": "PASS"
+  },
+  "b01_regression": {
+    "scene": "res://tests/godot/B01RuntimeGate.tscn",
+    "checks": 54,
+    "passed": 54,
+    "failed": 0,
+    "debug_output_errors": [],
+    "controlled_stop_final_errors": [],
+    "result": "PASS"
+  },
+  "b02_regression": {
+    "scene": "res://tests/godot/B02RuntimeGate.tscn",
+    "checks": 90,
+    "passed": 90,
+    "failed": 0,
+    "debug_output_errors": [],
+    "controlled_stop_final_errors": [],
+    "result": "PASS"
+  },
+  "invalidated_attempt": {
+    "result": "INVALIDATED_DESPITE_357_OF_357",
+    "reason": "THREE_UNNECESSARY_AWAIT_WARNINGS_IN_B03_GATE",
+    "correction": "REMOVE_SYNCHRONOUS_AWAITS_AND_RERUN_HEADLESS_PLUS_EDITOR_BRIDGE",
+    "counted_as_pass": false
+  },
+  "final_debugger": {
+    "errors": 0,
+    "warnings": 0,
+    "status": "CLEAN"
+  }
+}

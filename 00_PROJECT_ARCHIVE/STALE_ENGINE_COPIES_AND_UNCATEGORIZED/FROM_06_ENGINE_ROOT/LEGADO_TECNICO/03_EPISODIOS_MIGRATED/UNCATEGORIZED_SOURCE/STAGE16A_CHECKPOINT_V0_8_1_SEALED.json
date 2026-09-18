@@ -1,0 +1,83 @@
+{
+  "record_id": "STAGE16A-CHECKPOINT-V0.8.1-SEALED",
+  "predecessor": {
+    "record_id": "ANDROMEDA_ARPG_STAGE16A_PRE_GODOT_V1_8_0_DEV_CHECKPOINT_V0_8_0",
+    "checkpoint_zip": "ANDROMEDA_ARPG_STAGE16A_PRE_GODOT_V1_8_0_DEV_CHECKPOINT_V0_8_0.zip",
+    "checkpoint_zip_sha256": "21626a3152cb37e167eee24bff9d3142c5d389a8ca2827594b34211591525a6a",
+    "entries": 724,
+    "status": "UNCHANGED_INTACT_RESTORABLE",
+    "note": "Predecessor zip was never opened for write, never overwritten, never deleted during this revision. Its own SHA-256 was recomputed at the start and again at the end of this revision and matched both times."
+  },
+  "successor": {
+    "checkpoint_zip": "ANDROMEDA_ARPG_STAGE16A_PRE_GODOT_V1_8_0_DEV_CHECKPOINT_V0_8_1.zip",
+    "checkpoint_zip_sha256": "03bc6b621a5ae8e0bf6542803412611855b32503154221ec7ea1b7aaf28befc4",
+    "sha256sums_file": "ANDROMEDA_ARPG_STAGE16A_PRE_GODOT_V1_8_0_DEV_CHECKPOINT_SHA256SUMS_V0_8_1",
+    "entries": 724,
+    "functional_stage_version": "V1_8_0",
+    "checkpoint_revision": "V0_8_1"
+  },
+  "policy": "V0.8.1 inherits all 724 files of V0.8.0 byte-for-byte, except the one file explicitly listed below. No schema change, no data migration, no other 01_RUNTIME file touched. Master V2.0.1 and Stage15 were not modified. V0.8.0 remains the sealed, restorable predecessor baseline; V0.8.1 does not replace or delete it.",
+  "changed_files": [
+    {
+      "path": "ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/01_RUNTIME/arpg_item_core.py",
+      "function_changed": "ARPGItemCore.verify()",
+      "reason": "Replaced the source_kind prefix allowlist (STAGE09_/STAGE13_) and pure-count comparison (len(base_defs) != commerce_count) with a real set-membership check: missing_catalog_refs = {commerce_catalog_snapshots.item_ref} - {arpg_item_definitions.item_ref}, failing only when a real commerce-catalog ref has no matching definition row. Extra, independently-owned provider definitions (Stage09, Stage13, and any future provider, honestly labeled) are never a failure by design -- this was already true in practice for Stage09/Stage13, now generalized without a hardcoded provider list. All other verify() checks (payload hash, payload.item_ref==row.item_ref, stack_max>=1) are untouched and still apply to every row including provider extras.",
+      "old_sha256": "71b7ceb8b2c8fb65df4e7d155abf2a618761d86df022982e712d2ceb0fd253b5",
+      "new_sha256": "a9f97a8302146cce2df3786dc54723db3c1ea18f7200d0c982b8520383d8a382",
+      "old_failure_code_removed": "ITEM_DEFINITION_CATALOG_COUNT_MISMATCH",
+      "new_failure_code": "ITEM_DEFINITION_CATALOG_REF_MISSING:<item_ref>[,<item_ref>...]"
+    }
+  ],
+  "other_files_touched_outside_stage16a_scope": [
+    {
+      "path": "12_AUTHORITY_BACKEND/tests/test_stage16a_item_definitions_verify_contract.py",
+      "kind": "NEW_FILE",
+      "note": "Stage16B mutable test suite (not part of the 724-file Stage16A checkpoint). 9 tests proving the new verify() contract in isolation."
+    },
+    {
+      "path": "12_AUTHORITY_BACKEND/run_stage16b_authority_validation.py",
+      "kind": "MODIFIED",
+      "note": "Stage16B mutable validation runner (not part of the 724-file Stage16A checkpoint). Registered the new test suite in BACKEND_SUITES so backend_suite_coverage does not flag it as unregistered."
+    }
+  ],
+  "master_v2_0_1_sha256_unchanged": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+  "stage15_touched": false,
+  "clothes_implemented": false,
+  "regressions_run": {
+    "stage16a_regression_03_TESTS_STAGE16A": {"tests": 209, "passed": 209, "failed": 0},
+    "backend_suites_12_AUTHORITY_BACKEND": {
+      "test_stage16b_authority_adapter": {"tests": 35, "passed": 34, "failed": 1, "failure_reason": "test_05_protected_checkpoint_unchanged -- expected: this suite's own hardcoded reference is still V0_8_0, and arpg_item_core.py is the one authorized, intentional divergence for this revision"},
+      "test_stage16b_authority_http": {"tests": 17, "passed": 17, "failed": 0},
+      "test_stage16b_authority_profile_loadout": {"tests": 11, "passed": 11, "failed": 0},
+      "test_stage16b_authority_traversal": {"tests": 11, "passed": 11, "failed": 0},
+      "test_stage16b_authority_ground_loot": {"tests": 10, "passed": 10, "failed": 0},
+      "test_stage16b_authority_gathering": {"tests": 11, "passed": 11, "failed": 0},
+      "test_stage16b_authority_combat": {"tests": 23, "passed": 23, "failed": 0},
+      "test_stage16b_authority_economy_inventory_quest": {"tests": 21, "passed": 21, "failed": 0},
+      "test_stage16b_authority_save_death_water": {"tests": 24, "passed": 24, "failed": 0},
+      "test_stage16a_item_definitions_verify_contract": {"tests": 9, "passed": 9, "failed": 0}
+    },
+    "stage16a_vertical_slice_stress": {"checks": 20, "passed": 20, "failed": 0},
+    "stage15_validation": {"checks": 24, "passed": 24, "failed": 0},
+    "stage15_stress": {"checks": 23, "passed": 23, "failed": 0},
+    "godot_gates": {
+      "authority_save_death_runtime_gate_clean_world_round_1": {"checks": 178, "passed": 178, "failed": 0},
+      "authority_save_death_runtime_gate_clean_world_round_2": {"checks": 178, "passed": 178, "failed": 0, "debugger_errors": 0, "debugger_warnings": 0},
+      "authority_combat_runtime_gate": {"checks": 91, "passed": 91, "failed": 0},
+      "authority_ground_loot_runtime_gate": {"checks": 53, "passed": 53, "failed": 0},
+      "authority_gathering_runtime_gate": {"checks": 77, "passed": 77, "failed": 0},
+      "b03_runtime_gate": {"checks": 357, "passed": 357, "failed": 0},
+      "b04_runtime_gate": {"checks": 156, "passed": 156, "failed": 0},
+      "b11_runtime_gate": {"checks": 343, "passed": 343, "failed": 0}
+    }
+  },
+  "checkpoint_expected_divergence_from_v0_8_0_hardcoded_references": [
+    "run_stage16b_authority_validation.py::step_checkpoint (hardcoded CHECKPOINT_ZIP = V0_8_0.zip)",
+    "tests/test_stage16b_authority_adapter.py::test_05_protected_checkpoint_unchanged (same hardcoded reference)"
+  ],
+  "restore_test": {
+    "performed": true,
+    "procedure": "Extracted ANDROMEDA_ARPG_STAGE16A_PRE_GODOT_V1_8_0_DEV_CHECKPOINT_V0_8_1.zip to a fresh temp directory; byte-compared all 724 entries against the live tree (0 changed, 0 missing); constructed a fresh isolated world purely from the restored tree's arpg_item_core.py and confirmed verify()/resume_world() still PASS."
+  },
+  "status": "SEALED"
+}

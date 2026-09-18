@@ -1,0 +1,48 @@
+{
+  "record_id": "ARPG-COMBAT-CORE-CONTRACT-V0.4.0",
+  "stage": "03/18",
+  "version": "V0.4.0",
+  "authority": "GAMEPLAY_DERIVED_NOT_CANON",
+  "depends_on": "ARPG_CHARACTER_CORE_V0.3.0",
+  "server_authoritative": true,
+  "deterministic_rng": true,
+  "pvp_enabled": false,
+  "damage_types": [
+    "PHYSICAL",
+    "FIRE",
+    "COLD",
+    "LIGHTNING",
+    "TOXIC",
+    "ARCANE"
+  ],
+  "combat": {
+    "basic_attack_range_m": 2.75,
+    "hit_formula": "accuracy_vs_evasion_clamped_20_98",
+    "physical_mitigation": "armor/(armor+100+attacker_level*10), cap 75%",
+    "elemental_resistance_cap_pct": 75,
+    "negative_resistance_floor_pct": -50,
+    "critical_hit": "deterministic_roll; player derived from PERCEPTION+AGILITY",
+    "stagger": "damage-threshold hit recovery overlay",
+    "attack_cadence": "player cooldown enforced; enemy scheduler deferred to Stage08 AI"
+  },
+  "player_health_authority": "CHARACTER_CORE_ONLY",
+  "enemy_health_authority": "STAGE03_GAMEPLAY_OVERLAY",
+  "canon_guard": "protected NPC identities cannot be permanently killed in Stage03; Country/Master identity records are not mutated",
+  "npc_hostility": "explicit combat_intent required until Stage08 hostility/AI classification",
+  "status_effect_core": {
+    "generic_timed_effects": true,
+    "dot_supported": true,
+    "max_duration_s": 60
+  },
+  "xp_on_defeat": "CHARACTER_CORE_IDEMPOTENT_EVENT",
+  "deferred": {
+    "equipment_modifiers": "STAGE05",
+    "loot": "STAGE06",
+    "skills": "STAGE07",
+    "enemy_ai_and_hostility": "STAGE08",
+    "permanent_spawn_despawn": "STAGE08_10",
+    "respawn": "STAGE13",
+    "art": "STAGE18_AFTER_PRE_ART_GATE"
+  },
+  "status": "ACTIVE_DEV"
+}

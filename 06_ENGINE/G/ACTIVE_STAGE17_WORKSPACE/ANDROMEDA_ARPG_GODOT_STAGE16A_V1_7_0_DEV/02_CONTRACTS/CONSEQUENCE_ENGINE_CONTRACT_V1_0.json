@@ -1,0 +1,163 @@
+{
+  "record_id": "LIVING-SIM-CONSEQUENCE-ENGINE-CONTRACT-V1.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "module": "LIVING SIMULATION ENGINE",
+  "stage": "ETAPA_04_CONSEQUENCE_ENGINE_CAUSAL_PROPAGATION",
+  "version": "V1.0",
+  "status": "IMPLEMENTED_VALIDATED_WORKING",
+  "baseline": {
+    "master_version": "V2.0.1",
+    "release": "ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE.zip",
+    "release_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "authority_mode": "READ_ONLY"
+  },
+  "parent": {
+    "stage": "ETAPA_03",
+    "checkpoint": "CHECKPOINT_LIVING_SIM_ETAPA_03_V1_0.json",
+    "runtime_model": "SQLite event-sourced core"
+  },
+  "purpose": "Convert authoritative root events into bounded, deterministic, auditable derived consequences through explicit causal rules and relationship edges.",
+  "invariants": [
+    "CANON_IS_READ_ONLY",
+    "CANONICAL_RELATIONSHIPS_ARE_IMPORTED_ONLY_AS_IMMUTABLE_RUNTIME_SNAPSHOTS",
+    "CANONICAL_RELATION_ENDPOINTS_NEVER_MUTATE_DIRECTLY; ONLY_MATERIALIZED_RUNTIME_STATE_CAN_CHANGE",
+    "DERIVED_EVENTS_REQUIRE_EXISTING_PARENT_EVENT_AND_MATCHING_ROOT",
+    "DERIVED_DEPTH_EQUALS_PARENT_DEPTH_PLUS_ONE",
+    "CHILD_BUDGET_MUST_BE_DECREMENTED_FROM_PARENT",
+    "GLOBAL_DERIVED_EVENT_BUDGET_DEFAULT_64",
+    "GLOBAL_CAUSAL_DEPTH_MAX_8",
+    "DUPLICATE_RULE_RELATION_TARGET_EXPANSION_IS_IDEMPOTENT_PER_ROOT",
+    "RULESET_IS_FROZEN_FOR_EACH_RUNNING_PROPAGATION",
+    "OFFLINE_MODE_EXECUTES_ONLY_ROUTINE_SAFE_CAUSAL_RULES",
+    "OFFLINE_DEATH_DESTRUCTION_MAJOR_CONFLICT_WAR_ESCALATION_ARE_BLOCKED",
+    "NARRATIVE_PROTECTION_OVERRIDES_CAUSAL_RULES",
+    "REGENERABLE_DESTRUCTION_ALWAYS_SCHEDULES_RECOVERY_AT_PLUS_7_UNIVERSE_DAYS",
+    "RECOVERY_DOES_NOT_ERASE_EVENTS_CAUSAL_HISTORY_OR_OTHER_PERSISTENT_CONSEQUENCES",
+    "FAILED_DERIVED_ACTIONS_DO_NOT_PARTIALLY_MUTATE_AUTHORITATIVE_STATE",
+    "CAUSAL_GRAPH_IS_REPLAYABLE_AND_AUDITABLE"
+  ],
+  "records": {
+    "CAUSAL_RELATION": {
+      "origins": [
+        "RUNTIME",
+        "CANONICAL_SNAPSHOT"
+      ],
+      "fields": [
+        "relation_id",
+        "source_ref",
+        "target_ref",
+        "relation_type",
+        "active",
+        "metadata",
+        "relation_hash"
+      ]
+    },
+    "CAUSAL_RULE": {
+      "directions": [
+        "OUTGOING",
+        "INCOMING",
+        "BOTH"
+      ],
+      "status": [
+        "ACTIVE",
+        "DISABLED"
+      ],
+      "offline_policy": [
+        "ACTIVE_ONLY",
+        "ROUTINE_SAFE"
+      ],
+      "template_operations": [
+        "SET",
+        "TRANSITION",
+        "INCREMENT",
+        "DECREMENT",
+        "SCHEDULE_RECOVERY"
+      ]
+    },
+    "PROPAGATION_RUN": {
+      "status": [
+        "RUNNING",
+        "COMPLETED",
+        "BUDGET_EXHAUSTED",
+        "FAILED"
+      ],
+      "default_budget": 64,
+      "max_budget": 64
+    },
+    "CAUSAL_SCAN": {
+      "status": [
+        "PENDING",
+        "SCANNED",
+        "SKIPPED_BUDGET",
+        "FAILED"
+      ]
+    },
+    "CAUSAL_EXPANSION": {
+      "status": [
+        "RESERVED",
+        "APPLIED",
+        "FAILED"
+      ],
+      "idempotency": "signature + stored action_id/intent_id"
+    },
+    "CAUSAL_STOP": {
+      "examples": [
+        "MAX_DEPTH_REACHED",
+        "RULE_MAX_DEPTH",
+        "CASCADE_BUDGET_EXHAUSTED",
+        "TARGET_NOT_MATERIALIZED",
+        "AMBIGUOUS_CANONICAL_TARGET",
+        "NARRATIVE_PROTECTION_DEATH",
+        "OFFLINE_MAJOR_LIFECYCLE_MUTATION_BLOCKED",
+        "DERIVED_ACTION_FAILED"
+      ]
+    }
+  },
+  "canonical_graph": {
+    "source": "07_RELATIONSHIPS/MASTER_RELATIONSHIP_REGISTRY_V2_0_0.json",
+    "expected_count": 9429,
+    "load_policy": "verified Master SHA-256 then snapshot into world-local relation graph",
+    "auto_materialization": "PROHIBITED"
+  },
+  "causal_algorithm": {
+    "ordering": [
+      "event sequence",
+      "rule priority",
+      "rule_id",
+      "relation_id"
+    ],
+    "target_resolution": [
+      "runtime id exact",
+      "canonical alias to exactly one materialized canonical-backed runtime entity",
+      "zero targets -> stop",
+      "multiple targets -> fail closed as ambiguous"
+    ],
+    "cycle_controls": [
+      "max depth 8",
+      "global budget 64",
+      "per-root expansion signature deduplication"
+    ],
+    "crash_recovery": "RESERVED expansion stores action_id and intent_id; ActionExecutor idempotency allows safe retry after interruption."
+  },
+  "authorial_recovery_hardening": {
+    "applies_to": [
+      "STRUCTURE",
+      "OBJECT",
+      "FLORA_INSTANCE",
+      "RESOURCE_NODE"
+    ],
+    "trigger": "authoritative lifecycle -> DESTROYED",
+    "schedule": "destroyed_day + 7",
+    "automatic": true,
+    "duplicate_schedule_prevention": true
+  },
+  "llm_authority": "NONE; no LLM integration exists in this stage. LLM remains candidate-intent/language only.",
+  "governance": {
+    "canon_mutations": 0,
+    "master_writes": 0,
+    "new_canonical_namespaces": 0,
+    "runtime_ids_only": true,
+    "backup_created": false
+  },
+  "next_stage": "ETAPA_05_AGENT_BRAIN_INTENT_VALIDATOR_OR equivalent authorial sequence after checkpoint approval"
+}

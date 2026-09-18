@@ -1,0 +1,23 @@
+{
+  "name": "andromeda-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Andromeda RPG web jogavel (M1 vertical slice). Regras em src/core (zero DOM); dados gerados de fontes canonicas, nunca editados a mao.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "gen:data": "python3 ../tools/gen_web_data.py"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "~5.6.3",
+    "vite": "^6.0.0",
+    "vitest": "^2.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "record_id": "LOC-011-005",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Oficina de Charneira",
+  "parent_subregion": "SUB-011-005",
+  "parent_political_unit": "TER-011",
+  "function": "Oficina comunitária de reparo e ofício, ligada ao Colegiado dos Ofícios.",
+  "notable_link": "FAC-009 Colegiado dos Ofícios de Oficina da Fronteira",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-011-005",
+  "settlement_tier": "COMPLEXO"
+}

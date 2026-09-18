@@ -1,0 +1,38 @@
+{
+  "record_id": "LOC-001-001",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Mercado Central",
+  "parent_subregion": "SUB-001-001",
+  "parent_political_unit": "TER-001",
+  "function": "Praça de comércio principal da confederação.",
+  "notable_link": "Feira Central de Lúminor (SUB-001-001)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-001-001",
+  "settlement_tier": "COMPLEXO",
+  "history": "Antes de virar mercado, a praça era o pátio de armas da antiga guarnição de Lúminor — a cisterna de pedra seca no centro é tudo que sobrou do poço da guarnição, e ainda hoje ninguém consegue explicar por que ela nunca foi demolida junto com o resto. Quando a Confederação se formou, os primeiros mercadores se instalaram ali porque a água era garantida e as muralhas baixas ainda protegiam do vento; ninguém decidiu formalmente que aquilo viraria o coração comercial do território, simplesmente nunca mais saiu dali. Há dezoito anos, um incêndio no anel do meio destruiu quarenta e três tendas numa única noite — a reconstrução foi paga em partes iguais pelas três facções mais ricas do anel interno, e desde então elas cobram, discretamente, o direito de ter a primeira palavra em qualquer disputa comercial séria.",
+  "sensory": "Três anéis concêntricos de tendas de lona reforçada em volta da cisterna seca, cada um com um ritmo próprio. O anel externo é ruidoso desde antes do sol nascer — crianças correndo entre as pernas dos fregueses, vendedores gritando preço em cima de preço, o clangor da forja de reparo trabalhando sem parar. O anel do meio é mais comedido: bancos de espera de madeira gasta, o cheiro seco de tecido empilhado, o som abafado de negociação de contrato de trabalho sazonal. O anel interno é outra coisa inteiramente — silencioso o bastante pra se ouvir o zumbido baixo de uma arma rúnica ativa, iluminado por lamparinas de resina em vez de luz crua do dia, o ar carregado de ozônio fraco e do perfume caro que os corretores usam pra disfarçar o próprio nervosismo. Ao entardecer, quando as sombras dos três anéis se alongam e se cruzam, é possível ver de longe onde um anel termina e o outro começa só pela mudança na qualidade da luz.",
+  "figures": [
+    {
+      "role": "Corretora do Anel Interno",
+      "name": "Senhora Ilyet Corvane",
+      "note": "Não vende nada — cobra uma taxa fixa por garantir que uma arma rúnica vendida ali tem procedência limpa. Trabalha pra Câmara das Armarias Rúnicas há vinte e tantos anos e conhece a proveniência de metade das armas em circulação em Lúminor só de olhar o desgaste do cabo. Perdeu um irmão mais novo pra uma arma rúnica instável comprada sem fiscalização, décadas atrás — é o motivo real, nunca dito em voz alta, de tanto rigor. Ninguém barganha com ela duas vezes sem aprender a lição."
+    },
+    {
+      "role": "Chefe do Anel Externo",
+      "name": "Bartho Kess",
+      "note": "Organiza os vendedores de comida e ferramenta informalmente — não tem cargo oficial, mas resolve brigas de espaço antes que virem caso pra guarda. Detesta a Corvane; acha que o anel interno suga toda a atenção da guarda territorial, deixando o resto do mercado exposto a furto. Foi ele quem organizou a reconstrução depois do incêndio, trabalho que nunca recebeu reconhecimento formal — carrega isso como uma mágoa silenciosa que só aparece quando bebe."
+    },
+    {
+      "role": "Aprendiz de corretor",
+      "name": "Finn Adair",
+      "note": "Tem catorze anos e trabalha pra Corvane há oito meses, oficialmente como mensageiro, mas já aprendeu a reconhecer procedência falsa quase tão bem quanto ela. Não sabe ainda que a Corvane pretende torná-lo o próximo fiscal do anel interno — uma decisão que vai colocá-lo, um dia, direto no meio da rivalidade com Kess."
+    }
+  ],
+  "rivalries": "A tensão entre Corvane e Kess não é sobre dinheiro — é sobre quem o mercado protege primeiro quando algo dá errado. Os dois evitam se falar diretamente há anos, resolvendo tudo por intermediários, o que faz qualquer disputa levar o dobro do tempo pra se resolver e deixa margem pra terceiros explorarem o atrito.",
+  "hook": "Uma arma do sistema ART-004 apareceu no anel interno com o selo da Câmara falsificado — quem a trouxe não sabe (ou finge não saber) que carregar isso sem licença é crime capital em três territórios. Corvane já percebeu a falsificação, mas ainda não decidiu se reporta à Câmara ou se tenta descobrir sozinha de onde veio, antes que isso vire um escândalo que manche a própria reputação dela como fiscal.",
+  "secondary_hook": "Bartho Kess está convencido de que uma série recente de furtos no anel externo é obra de alguém do anel interno tentando desviar a atenção da guarda pra longe das armas rúnicas — ele não tem prova, só ressentimento antigo, mas está prestes a acusar publicamente, o que forçaria Corvane a se defender em público pela primeira vez em anos.",
+  "rumor": "Dizem que a cisterna seca no centro da praça não está realmente vazia — que a antiga guarnição escondeu algo lá embaixo antes de abandonar o posto, e que o incêndio de dezoito anos atrás começou porque alguém tentou escavar de noite e não conseguiu apagar as próprias tochas a tempo.",
+  "detail": "Preço não se paga em Cred puro no anel interno: metade é sempre paga em favor registrado — um débito social que a Câmara rastreia e pode cobrar de volta em qualquer outro território onde ela tenha influência. Isso significa que uma arma comprada em Lúminor pode gerar uma dívida que só vence anos depois, num território completamente diferente, e que o comprador nem sempre lembra ter contraído.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION"]
+}

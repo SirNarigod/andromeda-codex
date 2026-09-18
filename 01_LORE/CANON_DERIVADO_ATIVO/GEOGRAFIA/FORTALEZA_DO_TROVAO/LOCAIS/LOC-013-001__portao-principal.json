@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-013-001",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Portão Principal",
+  "parent_subregion": "SUB-013-001",
+  "parent_political_unit": "TER-013",
+  "function": "Entrada fortificada do domínio de Serverus Vaelkor.",
+  "notable_link": "Muralhas do Trovão (SUB-013-001)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-013-001",
+  "settlement_tier": "POSTO",
+  "history": "O Portão recebeu o nome da Fortaleza inteira por causa do estrondo grave que ecoa toda vez que os dois batentes de metal reforçado se fecham — um som deliberadamente amplificado por câmaras acústicas escondidas na própria estrutura, projetado pelos primeiros engenheiros de Serverus Vaelkor como demonstração de poder pra qualquer visitante que chegasse pela primeira vez. Nenhum registro indica que o portão já tenha sido forçado com sucesso desde sua construção.",
+  "sensory": "Duas torres gêmeas ladeiam batentes de metal escurecido, altos o bastante pra fazer qualquer visitante se sentir pequeno antes mesmo de cruzar a soleira. O som do trovão artificial ao fechar reverbera por quase um minuto inteiro, sentido tanto quanto ouvido através da pedra sob os pés. Guardas em uniforme cinza-ferro observam de posições fixas nas ameias, imóveis o bastante que visitantes às vezes duvidam se são pessoas de verdade até verem um piscar.",
+  "figures": [
+    {
+      "role": "Capitão do Portão",
+      "name": "Rennick Ferroestrondo",
+      "note": "Serve Serverus Vaelkor há duas décadas e trata a segurança do Portão como extensão da própria honra pessoal — nunca deixou um visitante não autorizado passar, e planeja manter esse recorde até se aposentar ou morrer no cargo, o que vier primeiro."
+    },
+    {
+      "role": "Emissário estrangeiro",
+      "name": "Vell Cortesano",
+      "note": "Chegou reivindicando credenciais de um território distante, pedindo audiência urgente com Serverus, mas os selos que apresenta são de um formato que Rennick nunca viu antes — genuíno ou falsificado, ele ainda não decidiu qual é mais provável."
+    }
+  ],
+  "hook": "Vell insiste que o atraso na audiência vai custar caro a uma negociação urgente envolvendo o próprio território de Serverus, mas Rennick não confia em selos desconhecidos e não tem autoridade pra decidir sozinho se arrisca abrir o Portão pra alguém potencialmente ilegítimo.",
+  "detail": "Nenhum guarda do Portão trabalha sozinho — o protocolo exige sempre dupla presença em cada posto de vigia, uma regra instituída pessoalmente por Serverus depois de um incidente antigo que nenhum registro oficial detalha além de mencionar que \"não deve se repetir\".",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION"]
+}

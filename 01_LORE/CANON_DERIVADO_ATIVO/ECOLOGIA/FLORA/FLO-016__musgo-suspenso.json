@@ -1,0 +1,20 @@
+{
+  "record_id": "FLO-016",
+  "record_kind": "DERIVED_CANONICAL_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "title": "Musgo Suspenso",
+  "subtitle": "Musgo que cresce nas rochas flutuantes do arquipelago",
+  "summary": "Musgo leve que se prende as rochas suspensas do Arquipelago Etereo, absorvendo eter ambiente e contribuindo levemente para a flutuacao das pequenas ilhas.",
+  "facts": {
+    "Habitat": "Ilha-Ancora (SUB-017-001), Arquipelago Etereo",
+    "Uso": "Indicador de concentracao de eter, insumo ritual"
+  },
+  "relations": [
+    {
+      "code": "SUB-017-001",
+      "label": "Habitat - Ilha-Ancora"
+    }
+  ],
+  "r2_compatibility": "Especie nova, sem precedente R2; ancorada em TER-017 (territorio derivado, fase 50).",
+  "safety": "FICTIONAL_LOCATION_ONLY"
+}

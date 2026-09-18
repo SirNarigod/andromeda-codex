@@ -1,0 +1,70 @@
+{
+  "record_id": "VALIDATION-SUMMARY-V1.2.1-DEV",
+  "status": "PASS_ZERO_KNOWN_ACTIVE_FAILURES",
+  "master_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+  "compileall": "PASS",
+  "isolated_regression": {
+    "files": 22,
+    "tests": 764,
+    "failed_files": 0,
+    "status": "PASS"
+  },
+  "country_scene_deep_audit": {
+    "checks": 3827,
+    "failures": 0,
+    "status": "PASS"
+  },
+  "country_scene_stress": {
+    "seeds": 300,
+    "blocks": 4485,
+    "dungeons": 3014,
+    "scene_objects": 103819,
+    "status": "PASS"
+  },
+  "interaction_stress": {
+    "seeds": 100,
+    "operations": 1700,
+    "status": "PASS"
+  },
+  "stage13_extended": {
+    "checks": 1403,
+    "passed": 1403,
+    "status": "PASS"
+  },
+  "stage13_static_v121": {
+    "checks": 41,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "stage13_fuzz": {
+    "reader_threads": 8,
+    "player_projections": 120,
+    "admin_projections": 120,
+    "writer_cycles": 60,
+    "status": "PASS"
+  },
+  "stage14_global": {
+    "checks": 43,
+    "passed": 43,
+    "status": "PASS"
+  },
+  "stage14_multiworld": {
+    "checks": 37,
+    "passed": 37,
+    "status": "PASS"
+  },
+  "corruption_matrix": {
+    "cases": 10,
+    "detected": 10,
+    "status": "PASS"
+  },
+  "known_active_failures": 0,
+  "release_gate": "DEV_FUNCTIONAL_PASS; MASTER_V2_1_CONSOLIDATION_PENDING; NO_PRODUCTION_BACKUP_CREATED",
+  "dev_readiness": {
+    "checks": 57,
+    "passed": 57,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "corrected_findings_total": 14
+}

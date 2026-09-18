@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-013-003",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Passagem Oculta",
+  "parent_subregion": "SUB-013-003",
+  "parent_political_unit": "TER-013",
+  "function": "Rota secreta de acesso ao domínio.",
+  "notable_link": "Passagem Secreta (SUB-013-003)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-013-003",
+  "settlement_tier": "POSTO",
+  "history": "Poucos sabem da existência da Passagem, e menos ainda sabem que ela foi construída pelo próprio avô de Serverus Vaelkor como rota de fuga em caso de cerco prolongado — nunca usada pra esse propósito original, mas mantida em segredo e funcional por três gerações, atualizada discretamente a cada reforma da Fortaleza principal sem que o resto da administração soubesse dos trabalhos.",
+  "sensory": "A entrada real fica disfarçada atrás do que parece ser rocha sólida numa encosta afastada, um mecanismo de pedra giratória tão bem ajustado que nem sequer range ao se mover. O túnel interno é estreito o bastante pra exigir andar de lado em alguns trechos, iluminado apenas pelas lamparinas que quem o usa precisa carregar consigo — não existe iluminação fixa, decisão deliberada pra que ninguém de fora perceba luz vazando de dentro da encosta.",
+  "figures": [
+    {
+      "role": "Guardião do Segredo",
+      "name": "Osric Sombraveiga",
+      "note": "É, junto com Serverus, uma das únicas duas pessoas vivas que conhecem a localização exata e o mecanismo de abertura da Passagem — herdou a responsabilidade do próprio pai, que a herdou do avô, numa linha de guardiões escolhidos a dedo, nunca por sangue."
+    },
+    {
+      "role": "Batedor curioso",
+      "name": "Nyra Trilhafina",
+      "note": "Notou padrões estranhos de pegadas numa área da encosta que, oficialmente, ninguém tem motivo pra visitar — não sabe que existe uma passagem ali, só que algo não bate com o mapa oficial que ela carrega."
+    }
+  ],
+  "hook": "Nyra está determinada a investigar as pegadas estranhas por conta própria, sem reportar a ninguém ainda, exatamente na semana em que Osric precisa usar a Passagem pra uma missão discreta a mando de Serverus — um encontro acidental entre os dois exigiria de Osric decidir entre comprometer o segredo geracional ou lidar com Nyra de um jeito que ele nunca teve que considerar antes.",
+  "detail": "O mecanismo de abertura da Passagem exige pressionar três pontos específicos da rocha na ordem certa — errar a ordem uma vez trava o mecanismo por um dia inteiro antes de resetar sozinho, uma característica de segurança deliberada contra qualquer um que descubra a localização, mas não a sequência exata.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION"]
+}

@@ -1,0 +1,11 @@
+{
+  "record_id": "SUB-001-001", "record_kind": "DERIVED_SUBREGION_PROFILE", "authority": "CANON_DERIVADO_ATIVO", "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Feira Central de Lúminor", "parent_political_unit": "TER-001",
+  "provenance": {"approval": "GAMEPLAY_DERIVED_DEV_SOURCE", "r2_anchors": ["TER-001", "elyra-vaelor"], "compatibility": "Camada administrativa e narrativa local; não cria fronteira, cidade, soberania ou nova autoridade."},
+  "function": "Núcleo comercial da confederação, onde mercadores de todo Stellar negociam sob regras compartilhadas.",
+  "locality_references": ["LOC-001-001 Mercado Central"],
+  "permitted_catalog_links": {"npc_roles": [], "professions": ["mercador"], "encounters": [], "resources": []},
+  "local_conflicts": ["taxas compartilhadas versus interesse individual de cada casa mercantil", "disputa de espaço entre mercadores locais e forasteiros"],
+  "prohibitions": ["NO_NEW_SOVEREIGNTY", "NO_AUTOMATIC_KENUA_SCENE", "NO_R2_EPISODE_REWRITE", "NO_FIXED_BORDER_COORDINATE"],
+  "story_generators": ["Uma disputa de preço entre duas casas mercantis ameaça romper o acordo da confederação.", "Um mercador forasteiro é acusado de burlar as taxas compartilhadas."]
+}

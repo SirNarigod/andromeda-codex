@@ -1,0 +1,306 @@
+{
+  "record_id": "ARPG-STAGE16B-B02-ACCEPTANCE-RECORD-V0.8.0",
+  "project": "ANDROMEDA CODEX ARPG",
+  "stage": "16B/23",
+  "block": "B02_MAIN_PLAYER_CAMERA_CLICK_TO_MOVE_NAVIGATION",
+  "recorded_at": "2026-08-20T20:11:44.0474320-03:00",
+  "status": "B02_PASS_LOCAL_GODOT_WITH_LIVE_HTTP_BACKEND_NOT_AVAILABLE",
+  "block_closed": true,
+  "authority": {
+    "master": "ANDROMEDA_CODEX_MASTER_V2_0_1_READ_ONLY_UNCHANGED",
+    "stage16a": "V0.8.0_BASELINE_BYTE_IDENTICAL",
+    "living_godot_v15": "READ_ONLY_UNCHANGED",
+    "b01": "APPROVED_IMPLEMENTATION_PRESERVED_AND_REVALIDATED",
+    "godot": "INPUT_SCENES_PHYSICS_NAVIGATION_CAMERA_PRESENTATION_ONLY",
+    "canon_mutations": 0,
+    "gameplay_authority_added_to_gdscript": false
+  },
+  "environment": {
+    "godot_version": "4.7.1.stable.official.a13da4feb",
+    "godot_executable": "C:/Program Files/Godot/Godot.exe",
+    "python_version": "3.12.13",
+    "python_executable": "C:/Users/thall/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+    "stage16b_project": "C:/Users/thall/Documents/andromeda-argp/ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/07_GODOT_ARPG_STAGE16B"
+  },
+  "source_integrity": {
+    "checkpoint_sha256": "21626A3152CB37E167EEE24BFF9D3142C5D389A8CA2827594B34211591525A6A",
+    "master_v2_0_1_sha256": "6D9AC3CCE7DCF6A65FDCF73859C332A0211C1AF52D149077BEEF554BF7BBD0B2",
+    "checkpoint_files_verified": 724,
+    "post_b02_mismatches": 0,
+    "b01_implementation_files_rehashed": 4,
+    "b01_implementation_file_mismatches": 0,
+    "note": "project.godot evolved cumulatively for B02; the B01 acceptance record and B01 scripts/scenes were not rewritten.",
+    "status": "PASS"
+  },
+  "existing_connections": {
+    "editor_bridge": {
+      "status": "PASS",
+      "connection": "EXISTING_LOCAL_ANDROMEDA_EDITOR_BRIDGE",
+      "capabilities_used": ["run_project", "get_debug_output", "stop_project"],
+      "final_debugger_errors": 0,
+      "final_debugger_warnings": 0
+    },
+    "runtime_http_transport": {
+      "server_url": "http://127.0.0.1:8000",
+      "status": "NOT_AVAILABLE_NO_LISTENER",
+      "required_for_b02_local_input_physics_navigation_camera_gate": false,
+      "authoritative_roundtrip_executed": false,
+      "new_endpoint_created": false,
+      "counted_as_pass": false
+    }
+  },
+  "implementation": {
+    "main_scene": "res://scenes/Main.tscn",
+    "player_scene": "res://scenes/actors/Player.tscn",
+    "camera_scene": "res://scenes/camera/IsometricCameraRig.tscn",
+    "runtime_gate": "res://tests/godot/B02RuntimeGate.tscn",
+    "navigation": {
+      "server": "NavigationServer3D",
+      "region": "NavigationRegion3D",
+      "agent": "NavigationAgent3D",
+      "walkable_cells": 8,
+      "unreachable_destination_projection_limit_m": 0.75,
+      "placeholder_only": true
+    },
+    "camera": {
+      "yaw_deg": 45.0,
+      "pitch_deg": 55.0,
+      "distance_m": 14.0,
+      "minimum_distance_m": 11.0,
+      "maximum_distance_m": 18.0,
+      "follow_half_life_s": 0.18,
+      "micro_height_deadband_m": 0.12,
+      "free_orbit": false,
+      "occlusion_probe_prepared": true,
+      "material_fade_applied": false
+    },
+    "backend_substitute": false,
+    "final_art": false
+  },
+  "tests": [
+    {
+      "id": "STAGE16B_B02_HEADLESS_RUNTIME_FINAL",
+      "result": "PASS",
+      "passed": 90,
+      "failed": 0,
+      "process_exit_code": 0,
+      "errors": 0,
+      "warnings": 0,
+      "evidence": "B02_GODOT_RUNTIME.log"
+    },
+    {
+      "id": "STAGE16B_B02_EDITOR_BRIDGE_DEBUGGER_FINAL",
+      "result": "PASS",
+      "passed": 90,
+      "failed": 0,
+      "debugger_errors": 0,
+      "debugger_warnings": 0,
+      "controlled_stop_final_errors": 0,
+      "evidence": "B02_EDITOR_BRIDGE_DEBUGGER_V0_8_0.json"
+    },
+    {
+      "id": "STAGE16B_B02_MAIN_DIRECT_EDITOR_BRIDGE_STARTUP",
+      "result": "PASS",
+      "debugger_errors": 0,
+      "debugger_warnings": 0,
+      "controlled_stop_final_errors": 0
+    },
+    {
+      "id": "STAGE16B_B01_HEADLESS_REGRESSION",
+      "result": "PASS",
+      "passed": 54,
+      "failed": 0,
+      "process_exit_code": 0,
+      "errors": 0,
+      "warnings": 0,
+      "evidence": "B02_GODOT_B01_REGRESSION.log"
+    },
+    {
+      "id": "STAGE16B_B01_EDITOR_BRIDGE_REGRESSION",
+      "result": "PASS",
+      "passed": 54,
+      "failed": 0,
+      "debugger_errors": 0,
+      "debugger_warnings": 0
+    },
+    {
+      "id": "STAGE16A_POST_B02_ACCUMULATED",
+      "result": "PASS",
+      "passed": 209,
+      "failed": 0,
+      "duration_s": 260.760
+    },
+    {
+      "id": "STAGE16A_POST_B02_STRESS",
+      "result": "PASS",
+      "passed": 20,
+      "failed": 0
+    },
+    {
+      "id": "STAGE16A_POST_B02_BYTE_INTEGRITY",
+      "result": "PASS",
+      "files_verified": 724,
+      "mismatches": 0
+    }
+  ],
+  "required_b02_scenarios": [
+    {"scenario": "PLAYER_SPAWN", "status": "PASS"},
+    {"scenario": "LEFT_CLICK_GROUND_MOVE_RAYCAST", "status": "PASS"},
+    {"scenario": "RIGHT_CLICK_GROUND_MOVE_RAYCAST", "status": "PASS"},
+    {"scenario": "LEFT_CLICK_TARGET_NO_MOVEMENT_CHANGE", "status": "PASS"},
+    {"scenario": "GROUND_LOOT_PHYSICAL_CLICK_APPROACH_EXCEPTION", "status": "PASS"},
+    {"scenario": "GROUND_LOOT_DIRECT_PICKUP_RADIUS_LE_0_5_M", "status": "PASS"},
+    {"scenario": "MULTIPLE_CONSECUTIVE_DESTINATIONS", "status": "PASS"},
+    {"scenario": "RAPID_CLICK_NO_LOCK", "status": "PASS"},
+    {"scenario": "IMPOSSIBLE_DESTINATION_REJECTED", "status": "PASS"},
+    {"scenario": "COLLISION_SURFACE_PRESENT_AND_NOT_CROSSED", "status": "PASS"},
+    {"scenario": "NAVIGATION_PATH_VALID_AND_DETOURS_BLOCKER", "status": "PASS"},
+    {"scenario": "ARRIVAL_AND_STOP", "status": "PASS"},
+    {"scenario": "POST_ARRIVAL_NO_JITTER", "status": "PASS"},
+    {"scenario": "CAMERA_FOLLOWS_PLAYER", "status": "PASS"},
+    {"scenario": "CAMERA_SMOOTHING", "status": "PASS"},
+    {"scenario": "CAMERA_ZOOM_MODIFIER_AND_CLAMPS", "status": "PASS"},
+    {"scenario": "CAMERA_STABLE_OVER_MICRO_HEIGHT", "status": "PASS"},
+    {"scenario": "CAMERA_MOTION_DOES_NOT_REQUERY_TARGET", "status": "PASS"},
+    {"scenario": "DEBUGGER_NO_ERRORS_OR_WARNINGS", "status": "PASS"}
+  ],
+  "corrections": [
+    {
+      "finding": "Main extended Node and called get_world_3d directly, producing a parser error.",
+      "correction": "Read World3D through the Player node and rerun import from scratch.",
+      "verified": true
+    },
+    {
+      "finding": "The Player origin was 0.9 m above the NavigationMesh, so NavigationAgent3D remained on its first path point and jittered.",
+      "correction": "Use a feet-level CharacterBody3D origin and offset the capsule/visual locally.",
+      "verified": true
+    },
+    {
+      "finding": "NavigationServer3D exposed a nonzero iteration id before closest-point queries returned populated polygons.",
+      "correction": "Require a real closest-point probe on the spawn cell before accepting the map as ready.",
+      "verified": true
+    },
+    {
+      "finding": "The first Editor Bridge functional PASS emitted an integer-to-MouseButton enum warning.",
+      "correction": "Apply an explicit MouseButton cast and rerun headless plus Editor Bridge.",
+      "verified": true
+    },
+    {
+      "finding": "The initial B02 InputMap used local aliases pointer_primary/pointer_context instead of the handoff names pointer_left/pointer_right.",
+      "correction": "Align action names to the V0.8.0 handoff, add entry-point/InputMap gate checks, and rerun B02, Main, and B01 in both applicable modes.",
+      "verified": true
+    }
+  ],
+  "invalid_attempts_not_counted": [
+    {
+      "attempt": "FIRST_EDITOR_IMPORT",
+      "reason": "MAIN_NODE_GET_WORLD_3D_PARSE_ERROR",
+      "result": "FAIL"
+    },
+    {
+      "attempt": "FIRST_B02_HEADLESS_GATE",
+      "result": "FAIL_69_OF_80",
+      "reason": "PLAYER_NAVIGATION_AGENT_HEIGHT_ORIGIN_MISMATCH"
+    },
+    {
+      "attempt": "SECOND_B02_HEADLESS_GATE",
+      "result": "FAIL_75_OF_82",
+      "reason": "NAVIGATION_SERVER_MAP_SYNC_ACCEPTED_TOO_EARLY"
+    },
+    {
+      "attempt": "FIRST_B02_EDITOR_BRIDGE_FUNCTIONAL_PASS",
+      "result": "INVALIDATED_DESPITE_82_OF_82",
+      "reason": "DEBUGGER_ENUM_WARNING"
+    },
+    {
+      "attempt": "FIRST_STAGE16A_REGRESSION_INVOCATION",
+      "result": "INVALIDATED_147_TESTS_7_SETUP_ERRORS",
+      "reason": "CHECKPOINT_ZIP_WAS_INCORRECTLY_PASSED_AS_MASTER_RELEASE",
+      "correction": "VERIFY_AND_USE_READ_ONLY_MASTER_V2_0_1_HASH_6D9AC3_AND_RERUN_ALL_209"
+    }
+  ],
+  "changed_files": [
+    "project.godot",
+    "scenes/Main.tscn",
+    "scenes/actors/Player.tscn",
+    "scenes/camera/IsometricCameraRig.tscn",
+    "scripts/main.gd",
+    "scripts/main.gd.uid",
+    "scripts/actors/player_controller.gd",
+    "scripts/actors/player_controller.gd.uid",
+    "scripts/camera/isometric_camera_rig.gd",
+    "scripts/camera/isometric_camera_rig.gd.uid",
+    "scripts/input/input_router.gd",
+    "scripts/input/input_router.gd.uid",
+    "tests/godot/B02RuntimeGate.tscn",
+    "tests/godot/b02_runtime_gate.gd",
+    "tests/godot/b02_runtime_gate.gd.uid",
+    "README_STAGE16B_B02.md",
+    "B02_GODOT_RUNTIME.log",
+    "B02_GODOT_B01_REGRESSION.log",
+    "B02_EDITOR_BRIDGE_DEBUGGER_V0_8_0.json",
+    "B02_ACCEPTANCE_RECORD_V0_8_0.json",
+    "B02_IMPLEMENTATION_LOG_V0_8_0.md"
+  ],
+  "code_sha256": {
+    "project.godot": "1DBAB572BD3513FA1CA91ABBA33D7D386E46A5FBDD06D39165837B18DBECB4AF",
+    "scenes/Main.tscn": "99FD2E198C94D955A930F6A8E17B418707C705901D180723BAA22214FD5A6396",
+    "scenes/actors/Player.tscn": "0FFD924AC1715399798BEFF216692A955260B8A6957EB2E9708462C1BD356B61",
+    "scenes/camera/IsometricCameraRig.tscn": "192D430EC8E5B2A8287563BB88F93B923C44E449B97C1F55D07D4B413F0AB0C8",
+    "scripts/main.gd": "356B5655C4E8CBA53298532FB00722651E18AC9D012543A43D75CC833E8268B8",
+    "scripts/actors/player_controller.gd": "E4B49791EAB070B2EB7283C4C8865878AE2F48BB2A24351420BF13A3D33D825F",
+    "scripts/camera/isometric_camera_rig.gd": "02AD0E63A4A4EFC8CD9971A64D2FD06B5055A0A24A620C6CD44868E435A3D94C",
+    "scripts/input/input_router.gd": "BD460C32BC14E31B4EFACA927CFB4F8AE7EDB3E21ECB2EE1D75369B771F0251D",
+    "tests/godot/B02RuntimeGate.tscn": "8F54DF442EABCF946EB6BCD400245843BCE2777773206735AC9C9F3DBAA82C19",
+    "tests/godot/b02_runtime_gate.gd": "E9CF8FC084FAD24AE7686F4F048AE6CE3E330882B93C8A6D8DAA1A06ECFCAD0C",
+    "B02_GODOT_RUNTIME.log": "A2B7F0525755C790A427AF43CD1D9048801392B398AD978842458FBD3980B040",
+    "B02_GODOT_B01_REGRESSION.log": "4119CC0AE1FEC99733652702A7153B0BF0D2FCF107A5DD7875DA6B89775CB253"
+  },
+  "b01_source_sha256_revalidated": {
+    "scripts/runtime/andromeda_bridge.gd": "50F4E167A51FF1FF112A5A47FA580995C4297ACC2F4D782A7F942AC99EA38FC0",
+    "scripts/runtime/client_session.gd": "220684033C72175C482622B7F6700CA1C8154426A32ABDAC9131B713CEEDCE54",
+    "tests/godot/B01RuntimeGate.tscn": "DE8DBCCFCCB8C49841C65075359B24E919736F2D2D20834B86F715D9287543A1",
+    "tests/godot/b01_runtime_gate.gd": "A573EC5DB3C3F94E33F990CD6E46334DE772754202C285781D3B479ADB02B8B5"
+  },
+  "acceptance_matrix": [
+    {"id": "G16B-01", "status": "PASS", "evidence": ["STAGE16B_B01_HEADLESS_REGRESSION", "STAGE16B_B01_EDITOR_BRIDGE_REGRESSION"]},
+    {"id": "G16B-02", "status": "PASS", "evidence": ["STAGE16B_B02_HEADLESS_RUNTIME_FINAL", "STAGE16B_B02_EDITOR_BRIDGE_DEBUGGER_FINAL"]},
+    {"id": "G16B-03", "status": "NOT_RUN", "planned_block": "B03", "note": "B02 preserves routing labels only; chase, attack, interaction, and cooldown were not implemented or accepted."},
+    {"id": "G16B-04", "status": "NOT_RUN", "planned_block": "B07"},
+    {"id": "G16B-05", "status": "NOT_RUN", "planned_block": "B07_B08"},
+    {"id": "G16B-06", "status": "NOT_RUN", "planned_block": "B07"},
+    {"id": "G16B-07", "status": "NOT_RUN", "planned_block": "B04"},
+    {"id": "G16B-08", "status": "NOT_RUN", "planned_block": "B04_B05"},
+    {"id": "G16B-09", "status": "NOT_RUN", "planned_block": "B04"},
+    {"id": "G16B-10", "status": "NOT_RUN", "planned_block": "B05"},
+    {"id": "G16B-11", "status": "NOT_RUN", "planned_block": "B05"},
+    {"id": "G16B-12", "status": "NOT_RUN", "planned_block": "B05"},
+    {"id": "G16B-13", "status": "NOT_RUN", "planned_block": "B05_B06"},
+    {"id": "G16B-14", "status": "PARTIAL_EVIDENCE_B02_NOT_PASS", "evidence": ["CAMERA_STABILITY_SMOOTHING_ZOOM_MODIFIER_CLAMPS_NO_FREE_ORBIT_OCCLUSION_PROBE"], "missing": ["MATERIAL_OCCLUDER_FADE_EXECUTION"]},
+    {"id": "G16B-15", "status": "NOT_RUN", "planned_block": "B06"},
+    {"id": "G16B-16", "status": "NOT_RUN", "planned_block": "B09"},
+    {"id": "G16B-17", "status": "NOT_RUN", "planned_block": "B10"},
+    {"id": "G16B-18", "status": "NOT_RUN", "planned_block": "B10"},
+    {"id": "G16B-19", "status": "NOT_RUN", "planned_block": "B11"},
+    {"id": "G16B-20", "status": "PARTIAL_EVIDENCE_B02_NOT_FINAL", "evidence": ["STAGE16A_209_OF_209", "STAGE16A_STRESS_20_OF_20", "BASELINE_724_OF_724", "B01_54_OF_54_BOTH_MODES"], "planned_final_block": "B11"},
+    {"id": "G16B-21", "status": "NOT_RUN", "planned_block": "B03"},
+    {"id": "G16B-22", "status": "NOT_RUN", "planned_block": "B03"},
+    {"id": "G16B-23", "status": "NOT_RUN", "planned_block": "B05"},
+    {"id": "G16B-24", "status": "NOT_RUN", "planned_block": "B04"},
+    {"id": "G16B-25", "status": "NOT_RUN", "planned_block": "B04_B10"},
+    {"id": "G16B-26", "status": "NOT_RUN", "planned_block": "B05_B09_B10"},
+    {"id": "G16B-27", "status": "NOT_RUN", "planned_block": "B07_B10"},
+    {"id": "G16B-28", "status": "NOT_RUN", "planned_block": "B10"}
+  ],
+  "watch_items": [
+    "Authoritative MOVE_TO_POINT roundtrip and reconciliation require the real 127.0.0.1:8000 backend; no substitute was created.",
+    "OcclusionProbe and fade alpha contract are prepared, but obstacle material fading is not implemented, so G16B-14 is not PASS.",
+    "The B02 navigation surface is a deterministic placeholder and must be replaced/integrated with B04 terrain traversal without moving gameplay authority into GDScript.",
+    "Right-click hostile/context actions are routed as future intents only; G16B-03 remains NOT_RUN."
+  ],
+  "stage16_complete": false,
+  "final_backup_authorized": false,
+  "final_backup_created": false,
+  "b03_started": false,
+  "next_block": "B03_NOT_STARTED_AWAITING_USER_DIRECTION"
+}

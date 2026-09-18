@@ -1,0 +1,35 @@
+{
+  "est_id": "EST-034",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Academia de Formação Mágica",
+  "building_type": "INSTITUCIONAL",
+  "parent_locality": "LOC-010-002",
+  "parent_subregion": "SUB-010-002",
+  "parent_political_unit": "TER-010",
+  "function": "Escola de treino dos métodos de MAG-001 (fórmula, runa, vínculo, instinto).",
+  "economic_role": {
+    "is_vendor": false,
+    "sells": [],
+    "produces": [],
+    "regulation_factor": 0.5
+  },
+  "capacity": {
+    "jobs": 12,
+    "residents": 40
+  },
+  "professions_linked": [],
+  "notable_link": "Academia da Vertente (LOC-010-002); classe Magos",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION",
+    "NO_INVENTED_RUNE_EFFECT"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "PEDRA_E_ALVENARIA",
+    "flammability": "BAIXA",
+    "recovery_days": 7
+  }
+}

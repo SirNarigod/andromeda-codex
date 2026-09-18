@@ -1,0 +1,14 @@
+{
+  "record_id": "VARGA-STARTER-KIT-V1",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "TECHNICAL_GAMEPLAY_LOADOUT",
+  "owner_scope": "CUSTOM_PLAYER_ONLY",
+  "items": [
+    {"id":"VARGA-ITEM-001","title":"Lâmina de travessia comum","type":"MELEE_TOOL","identity":"derived generic equipment","use":"close-range defense and route work","r2_guard":"not ART-002 or any named R2 weapon"},
+    {"id":"VARGA-ITEM-002","title":"Arma curta de serviço","type":"RANGED_TOOL","identity":"derived generic equipment","use":"situational defense and interruption","r2_guard":"not a named R2 firearm"},
+    {"id":"VARGA-ITEM-003","title":"Kit de contenção de campo","type":"NONLETHAL_TOOL","identity":"derived generic equipment","use":"marking, distance control and nest containment","r2_guard":"does not invent rune effects or a canonical artifact"}
+  ],
+  "technical_bindings": {"balance":"STELLAR_UE5_BALANCE_BASELINE_V1_0", "literal_death":"STELLAR_LIFE_DEATH_REBIRTH_LAW_V1_1", "item_identity":"STELLAR_SKILL_ITEMIZATION_LAW_V1_0"},
+  "runtime_only_fields": ["damage", "ammo", "durability", "weight", "rarity", "mods", "inventory_slot"],
+  "prohibitions": ["NO_R2_ARTIFACT_DUPLICATION", "NO_AUTOMATIC_LOOT_CANON", "NO_INVENTED_RUNE_EFFECT"]
+}

@@ -1,0 +1,27 @@
+{
+  "loc_id": "LOC-015-002",
+  "record_id": "LOC-015-002",
+  "name": "Sítio das Ruínas",
+  "parent_subregion": "SUB-015-002",
+  "function": "Área de escavação e estudo das ruínas anônimas.",
+  "notable_link": "TER-015 Vale das Ruínas (fase 48, território novo)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "settlement_tier": "COMPLEXO",
+  "history": "O Sítio das Ruínas nunca foi catalogado como cidade porque cada escavação revela uma construção de época diferente. Exploradores disputam não tesouros, mas a interpretação do que foi destruído.",
+  "sensory": "Pedras quentes estalam ao anoitecer; tecidos de sinalização tremulam onde não há vento.",
+  "hook": "Uma parede recém-exposta mostra o símbolo de uma tecnologia ainda em uso.",
+  "secondary_hook": "Dena quer preservar o local; Rik quer vender a localização antes que cheguem tropas.",
+  "detail": "Achados são trocados por água e tempo de proteção, não por Cred.",
+  "figures": [
+    {
+      "role": "Dena Pó-de-Osso",
+      "name": "Dena Pó-de-Osso",
+      "note": "arqueóloga que evita retirar objetos"
+    },
+    {
+      "role": "Rik",
+      "name": "Rik",
+      "note": "guia que vende versões conflitantes da história"
+    }
+  ]
+}

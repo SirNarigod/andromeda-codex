@@ -1,0 +1,530 @@
+[
+ {
+  "id": "QUEST-TER-001-V1.0",
+  "title": "Taxa de Lúminor",
+  "loc": "SUB-001-001",
+  "premise": "Uma disputa de preço entre casas mercantis na Feira Central ameaça romper o acordo compartilhado da confederação.",
+  "phases": [
+   "WELCOME",
+   "EVIDENCE",
+   "DECISION",
+   "REPORT"
+  ],
+  "res": [
+   {
+    "id": "AVOID",
+    "t": "Contenção Mínima"
+   },
+   {
+    "id": "REPAIR",
+    "t": "Reparo Direto"
+   },
+   {
+    "id": "ESCALATE_REPORT",
+    "t": "Escalonamento Formal"
+   }
+  ]
+ },
+ {
+  "id": "QUEST-TER-002-V1.0",
+  "title": "Atraso na Forja",
+  "loc": "SUB-002-001",
+  "premise": "Um atraso de produção na Forja Real de Kharveth ameaça um contrato urgente de fornecimento de armas.",
+  "phases": [
+   "WELCOME",
+   "EVIDENCE",
+   "DECISION",
+   "REPORT"
+  ],
+  "res": [
+   {
+    "id": "AVOID",
+    "t": "Contenção Mínima"
+   },
+   {
+    "id": "REPAIR",
+    "t": "Reparo Direto"
+   },
+   {
+    "id": "ESCALATE_REPORT",
+    "t": "Escalonamento Formal"
+   }
+  ]
+ },
+ {
+  "id": "QUEST-TER-003-V1.0",
+  "title": "Falha na Malha",
+  "loc": "SUB-003-001",
+  "premise": "Uma falha técnica no Nó Ferroviário Central interrompe a malha ferroviária de Ortheon.",
+  "phases": [
+   "WELCOME",
+   "EVIDENCE",
+   "DECISION",
+   "REPORT"
+  ],
+  "res": [
+   {
+    "id": "AVOID",
+    "t": "Contenção Mínima"
+   },
+   {
+    "id": "REPAIR",
+    "t": "Reparo Direto"
+   },
+   {
+    "id": "ESCALATE_REPORT",
+    "t": "Escalonamento Formal"
+   }
+  ]
+ },
+ {
+  "id": "QUEST-TER-004-V1.0",
+  "title": "Acidente no Estaleiro",
+  "loc": "SUB-004-001",
+  "premise": "Um acidente durante a construção de uma embarcação no Estaleiro de Navyr gera disputa sobre a rota marítima afetada.",
+  "phases": [
+   "WELCOME",
+   "EVIDENCE",
+   "DECISION",
+   "REPORT"
+  ],
+  "res": [
+   {
+    "id": "AVOID",
+    "t": "Contenção Mínima"
+   },
+   {
+    "id": "REPAIR",
+    "t": "Reparo Direto"
+   },
+   {
+    "id": "ESCALATE_REPORT",
+    "t": "Escalonamento Formal"
+   }
+  ]
+ },
+ {
+  "id": "QUEST-TER-005-V1.0",
+  "title": "Vazamento Tecnomágico",
+  "loc": "SUB-005-002",
+  "premise": "Um vazamento controlado nos Laboratórios de Convergência exige contenção antes que a pesquisa seja comprometida.",
+  "phases": [
+   "WELCOME",
+   "EVIDENCE",
+   "DECISION",
+   "REPORT"
+  ],
+  "res": [
+   {
+    "id": "AVOID",
+    "t": "Contenção Mínima"
+   },
+   {
+    "id": "REPAIR",
+    "t": "Reparo Direto"
+   },
+   {
+    "id": "ESCALATE_REPORT",
+    "t": "Escalonamento Formal"
+   }
+  ]
+ },
+ {
+  "id": "QUEST-TER-006-V1.0",
+  "title": "Falha no Hangar",
+  "loc": "SUB-006-002",
+  "premise": "Um acidente no Hangar de Naves de Altavela ameaça a rota aérea que liga o reino a outros territórios.",
+  "phases": [
+   "WELCOME",
+   "EVIDENCE",
+   "DECISION",
+   "REPORT"
+  ],
+  "res": [
+   {
+    "id": "AVOID",
+    "t": "Contenção Mínima"
+   },
+   {
+    "id": "REPAIR",
+    "t": "Reparo Direto"
+   },
+   {
+    "id": "ESCALATE_REPORT",
+    "t": "Escalonamento Formal"
+   }
+  ]
+ },
+ {
+  "id": "QUEST-TER-007-V1.0",
+  "title": "Escassez de Erva-Rubra",
+  "loc": "SUB-007-001",
+  "premise": "A escassez de Erva-Rubra nos Jardins Medicinais ameaça o abastecimento das Casas de Cura da confederação.",
+  "phases": [
+   "WELCOME",
+   "EVIDENCE",
+   "DECISION",
+   "REPORT"
+  ],
+  "res": [
+   {
+    "id": "AVOID",
+    "t": "Contenção Mínima"
+   },
+   {
+    "id": "REPAIR",
+    "t": "Reparo Direto"
+   },
+   {
+    "id": "ESCALATE_REPORT",
+    "t": "Escalonamento Formal"
+   }
+  ]
+ },
+ {
+  "id": "QUEST-TER-008-V1.0",
+  "title": "Disputa Ritual",
+  "loc": "SUB-008-002",
+  "premise": "Uma disputa sobre o uso das Raízes Sagradas divide o Círculo dos Anciãos dos Povos das Copas.",
+  "phases": [
+   "WELCOME",
+   "EVIDENCE",
+   "DECISION",
+   "REPORT"
+  ],
+  "res": [
+   {
+    "id": "AVOID",
+    "t": "Contenção Mínima"
+   },
+   {
+    "id": "REPAIR",
+    "t": "Reparo Direto"
+   },
+   {
+    "id": "ESCALATE_REPORT",
+    "t": "Escalonamento Formal"
+   }
+  ]
+ },
+ {
+  "id": "QUEST-TER-009-V1.0",
+  "title": "Colapso nos Túneis",
+  "loc": "SUB-009-002",
+  "premise": "Um colapso parcial nos Túneis de Extração interrompe o fornecimento de Cristal Rúnico à liga subterrânea.",
+  "phases": [
+   "WELCOME",
+   "EVIDENCE",
+   "DECISION",
+   "REPORT"
+  ],
+  "res": [
+   {
+    "id": "AVOID",
+    "t": "Contenção Mínima"
+   },
+   {
+    "id": "REPAIR",
+    "t": "Reparo Direto"
+   },
+   {
+    "id": "ESCALATE_REPORT",
+    "t": "Escalonamento Formal"
+   }
+  ]
+ },
+ {
+  "id": "QUEST-TER-010-V1.0",
+  "title": "Instabilidade na Corrente",
+  "loc": "SUB-010-003",
+  "premise": "Uma instabilidade nas Marcas da Corrente Planetária exige resposta da Estação de Captação antes de afetar a magocracia.",
+  "phases": [
+   "WELCOME",
+   "EVIDENCE",
+   "DECISION",
+   "REPORT"
+  ],
+  "res": [
+   {
+    "id": "AVOID",
+    "t": "Contenção Mínima"
+   },
+   {
+    "id": "REPAIR",
+    "t": "Reparo Direto"
+   },
+   {
+    "id": "ESCALATE_REPORT",
+    "t": "Escalonamento Formal"
+   }
+  ]
+ },
+ {
+  "id": "QUEST-TER-011-V1.0",
+  "title": "Pressão sobre as Pastagens",
+  "loc": "SUB-011-003",
+  "premise": "Predadores vindos das Fendas da Névoa (SUB-011-006) pressionam o rebanho das Pastagens Luminais e o Curral e Estábulo precisa de resposta antes da próxima lua cheia.",
+  "phases": [
+   "WELCOME",
+   "EVIDENCE",
+   "DECISION",
+   "REPORT"
+  ],
+  "res": [
+   {
+    "id": "AVOID",
+    "t": "Recuo Protegido"
+   },
+   {
+    "id": "REPAIR",
+    "t": "Cercas e Vigias"
+   },
+   {
+    "id": "ESCALATE_REPORT",
+    "t": "Escalonamento Formal"
+   }
+  ]
+ },
+ {
+  "id": "QUEST-TER-012-V1.0",
+  "title": "Vazamento no Perímetro",
+  "loc": "SUB-012-001",
+  "premise": "Um vazamento de contenção no Perímetro Alfa exige resposta rápida da Vigília Radicular.",
+  "phases": [
+   "WELCOME",
+   "EVIDENCE",
+   "DECISION",
+   "REPORT"
+  ],
+  "res": [
+   {
+    "id": "AVOID",
+    "t": "Contenção Mínima"
+   },
+   {
+    "id": "REPAIR",
+    "t": "Reparo Direto"
+   },
+   {
+    "id": "ESCALATE_REPORT",
+    "t": "Escalonamento Formal"
+   }
+  ]
+ },
+ {
+  "id": "QUEST-TER-013-V1.0",
+  "title": "Tempestade nas Muralhas",
+  "loc": "SUB-013-001",
+  "premise": "Uma tempestade severa danifica as Muralhas do Trovão, ameaçando o domínio pessoal de Serverus Vaelkor.",
+  "phases": [
+   "WELCOME",
+   "EVIDENCE",
+   "DECISION",
+   "REPORT"
+  ],
+  "res": [
+   {
+    "id": "AVOID",
+    "t": "Contenção Mínima"
+   },
+   {
+    "id": "REPAIR",
+    "t": "Reparo Direto"
+   },
+   {
+    "id": "ESCALATE_REPORT",
+    "t": "Escalonamento Formal"
+   }
+  ]
+ },
+ {
+  "id": "QUEST-TER-014-V1.0",
+  "title": "Fumaça na Caldeira",
+  "loc": "SUB-014-001",
+  "premise": "Uma mudança repentina na fumaça da Caldeira Ativa levanta dúvida sobre a segurança da extração de minério vulcânico em curso.",
+  "phases": [
+   "WELCOME",
+   "EVIDENCE",
+   "DECISION",
+   "REPORT"
+  ],
+  "res": [
+   {
+    "id": "AVOID",
+    "t": "Evacuação Preventiva"
+   },
+   {
+    "id": "REPAIR",
+    "t": "Reforço de Contenção Térmica"
+   },
+   {
+    "id": "ESCALATE_REPORT",
+    "t": "Escalonamento Formal"
+   }
+  ]
+ },
+ {
+  "id": "QUEST-TER-015-V1.0",
+  "title": "Segredo sob a Areia",
+  "loc": "SUB-015-002",
+  "premise": "Uma nova camara e descoberta nas Ruinas de Antes-do-Pacto, mas sua estrutura e instavel e seu proposito, desconhecido.",
+  "phases": [
+   "WELCOME",
+   "EVIDENCE",
+   "DECISION",
+   "REPORT"
+  ],
+  "res": [
+   {
+    "id": "AVOID",
+    "t": "Selamento Preventivo"
+   },
+   {
+    "id": "REPAIR",
+    "t": "Escavacao Segura"
+   },
+   {
+    "id": "ESCALATE_REPORT",
+    "t": "Escalonamento Formal"
+   }
+  ]
+ },
+ {
+  "id": "QUEST-TER-016-V1.0",
+  "title": "Rangido sob o Gelo",
+  "loc": "SUB-016-003",
+  "premise": "Sons de rangido na Fenda Congelada sugerem que a rota mais curta entre assentamentos pode estar prestes a ceder.",
+  "phases": [
+   "WELCOME",
+   "EVIDENCE",
+   "DECISION",
+   "REPORT"
+  ],
+  "res": [
+   {
+    "id": "AVOID",
+    "t": "Fechamento da Rota"
+   },
+   {
+    "id": "REPAIR",
+    "t": "Reforco da Passagem"
+   },
+   {
+    "id": "ESCALATE_REPORT",
+    "t": "Escalonamento Formal"
+   }
+  ]
+ },
+ {
+  "id": "QUEST-TER-017-V1.0",
+  "title": "Deriva das Ilhas",
+  "loc": "SUB-017-003",
+  "premise": "Uma ilha errante comeca a se desprender mais rapido que o normal, ameacando navegadores que dependem dela como ponto de passagem.",
+  "phases": [
+   "WELCOME",
+   "EVIDENCE",
+   "DECISION",
+   "REPORT"
+  ],
+  "res": [
+   {
+    "id": "AVOID",
+    "t": "Rota Alternativa"
+   },
+   {
+    "id": "REPAIR",
+    "t": "Estabilizacao de Eter"
+   },
+   {
+    "id": "ESCALATE_REPORT",
+    "t": "Escalonamento Formal"
+   }
+  ]
+ },
+ {
+  "id": "QUEST-TER-018-V1.0",
+  "title": "Silencio na Trincheira",
+  "loc": "SUB-018-001",
+  "premise": "As transmissoes de uma equipe de extracao na Trincheira Profunda cessaram sem explicacao.",
+  "phases": [
+   "WELCOME",
+   "EVIDENCE",
+   "DECISION",
+   "REPORT"
+  ],
+  "res": [
+   {
+    "id": "AVOID",
+    "t": "Recuo Preventivo"
+   },
+   {
+    "id": "REPAIR",
+    "t": "Resgate Equipado"
+   },
+   {
+    "id": "ESCALATE_REPORT",
+    "t": "Escalonamento Formal"
+   }
+  ]
+ },
+ {
+  "id": "QUEST-TER-019-V1.0",
+  "title": "Raizes que Engolem",
+  "loc": "SUB-019-002",
+  "premise": "Raizes de crescimento anormalmente rapido ameacam colapsar uma secao recem-descoberta das Ruinas Cobertas.",
+  "phases": [
+   "WELCOME",
+   "EVIDENCE",
+   "DECISION",
+   "REPORT"
+  ],
+  "res": [
+   {
+    "id": "AVOID",
+    "t": "Isolamento da Area"
+   },
+   {
+    "id": "REPAIR",
+    "t": "Contencao de Raizes"
+   },
+   {
+    "id": "ESCALATE_REPORT",
+    "t": "Escalonamento Formal"
+   }
+  ]
+ },
+ {
+  "id": null,
+  "title": "Quests de Nérion — Região Autônoma dos Despertos",
+  "loc": null,
+  "premise": "",
+  "phases": [],
+  "res": []
+ },
+ {
+  "id": "VARGA-CONTRATO-DE-TRAVESSIA-V1",
+  "title": null,
+  "loc": "SUB-011-001",
+  "premise": "A Ninho de Vespa-de-Vidro blocks the Passagem das Estacas. Signs suggest that its disturbance may have been deliberate, but the evidence is incomplete.",
+  "phases": [
+   "WELCOME",
+   "EVIDENCE",
+   "DECISION",
+   "REPORT"
+  ],
+  "res": [
+   {
+    "id": "AVOID",
+    "t": "Desvio Luminal"
+   },
+   {
+    "id": "CONTAIN",
+    "t": "Contenção do Barranco"
+   },
+   {
+    "id": "DEFEND_AND_OPEN",
+    "t": "Abertura Defensiva"
+   }
+  ]
+ }
+]

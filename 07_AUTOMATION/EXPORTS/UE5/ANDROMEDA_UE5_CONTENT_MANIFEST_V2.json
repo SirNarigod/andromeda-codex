@@ -1,0 +1,383 @@
+{
+  "record_id": "ANDROMEDA_UE5_CONTENT_MANIFEST_V2",
+  "status": "IMPORT_READY_PENDING_UE5_PROJECT",
+  "access": "SAFE_PRODUCTION",
+  "data_tables": {
+    "PLA": [
+      {
+        "id": "PLA-001",
+        "title": "Stellar",
+        "canonical_path": "01_LORE/CANON_R2/COSMOLOGIA_E_PLANETA/PLANETAS/PLA-001__stellar.json",
+        "summary": "Planeta vivo onde natureza, tecnologia, magia, sociedades e espíritos coexistem em equilíbrio instável."
+      }
+    ],
+    "BIO": [
+      {
+        "id": "BIO-001",
+        "title": "Coração Ancestral",
+        "canonical_path": "01_LORE/CANON_R2/GEOGRAFIA/BIOMAS/BIO-001__coracao-ancestral.json",
+        "summary": "Floresta viva conectada à memória planetária, às Árvores Anciãs e às manifestações de Amadon."
+      }
+    ],
+    "TER": [
+      {
+        "id": "TER-011",
+        "title": "Terras Livres",
+        "canonical_path": "01_LORE/CANON_R2/GEOGRAFIA/UNIDADES_POLITICAS/TER-011__terras-livres.json",
+        "summary": "Território de Stellar organizado como comunidades autônomas."
+      },
+      {
+        "id": "TER-013",
+        "title": "Fortaleza do Trovão",
+        "canonical_path": "01_LORE/CANON_R2/GEOGRAFIA/UNIDADES_POLITICAS/TER-013__fortaleza-do-trovao.json",
+        "summary": "Território de Stellar organizado como domínio pessoal."
+      }
+    ],
+    "CIT": [
+      {
+        "id": "CIT-001",
+        "title": "Posto de Varga",
+        "canonical_path": "01_LORE/CANON_R2/GEOGRAFIA/SUBREGIOES_CIDADES_E_LOCAIS/CIT-001__posto-de-varga.json",
+        "summary": "Posto fronteiriço onde Kenua cobra um contrato, conversa com Kaenna e recebe o mandado de Serverus."
+      },
+      {
+        "id": "CIT-002",
+        "title": "Estação Oriental",
+        "canonical_path": "01_LORE/CANON_R2/GEOGRAFIA/SUBREGIOES_CIDADES_E_LOCAIS/CIT-002__estacao-oriental.json",
+        "summary": "Estação ligada a desaparecimentos e à rota investigada por Kenua no início de O Hospedeiro."
+      }
+    ],
+    "PER": [
+      {
+        "id": "PER-002",
+        "title": "Kenua Vaarn",
+        "canonical_path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-002__kenua-vaarn.json",
+        "summary": "Caçador, rastreador, investigador e mercenário das Terras Livres da Fronteira. Hospedeiro do Espinho-Negro."
+      },
+      {
+        "id": "PER-003",
+        "title": "Serlis Aftermoon",
+        "canonical_path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-003__serlis-aftermoon.json",
+        "summary": "Mago de alta hierarquia das Árvores Anciãs, especialista em contenção, runas, anatomia mágica e simbiose; fugitivo após o Caso Aelyra e portador de uma marca inselável."
+      },
+      {
+        "id": "PER-005",
+        "title": "Serverus Vaelkor",
+        "canonical_path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-005__serverus-vaelkor.json",
+        "summary": "Rei Mago paciente, persuasivo e controlador que manipula o encontro entre Kenua, Serlis e o Espinho-Negro."
+      },
+      {
+        "id": "PER-006",
+        "title": "Kaenna Vor",
+        "canonical_path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-006__kaenna-vor.json",
+        "summary": "Caçadora, mediadora e líder das Terras Livres; aliada antiga de Kenua e portadora de uma prótese mecânica no braço direito."
+      }
+    ],
+    "CUL": [
+      {
+        "id": "CUL-011",
+        "title": "Fronteiriços",
+        "canonical_path": "01_LORE/CANON_R2/SOCIEDADES/CULTURAS/CUL-011__fronteiricos.json",
+        "summary": "Identidade coletiva associada ao território Terras Livres."
+      }
+    ],
+    "FAC": [
+      {
+        "id": "FAC-001",
+        "title": "Árvores Anciãs",
+        "canonical_path": "01_LORE/CANON_R2/SOCIEDADES/FACCOES/FAC-001__arvores-ancias.json",
+        "summary": "Instituição dedicada à preservação do Coração Ancestral, ao registro da magia e à contenção de ameaças biológicas."
+      },
+      {
+        "id": "FAC-003",
+        "title": "Conselho de Convergência",
+        "canonical_path": "01_LORE/CANON_R2/SOCIEDADES/FACCOES/FAC-003__conselho-de-convergencia.json",
+        "summary": "Instituição que negocia crises e rotas entre potências, sem governar Stellar."
+      },
+      {
+        "id": "FAC-009",
+        "title": "Colegiado dos Ofícios de Oficina da Fronteira",
+        "authority": "CANON_DERIVADO_ATIVO",
+        "canonical_path": "01_LORE/CANON_DERIVADO_ATIVO/SOCIEDADES/FACCOES/FAC-009__colegiado-dos-oficios-de-oficina-da-fronteira.json",
+        "scope": "TRANSREGIONAL_NON_SOVEREIGN",
+        "spoiler": 0,
+        "permissions": [
+          "READ_ONLY_CATALOG",
+          "LOCAL_CHAPTER_DATA_ASSET",
+          "QUEST_HOOK_NO_CANON_WRITE"
+        ],
+        "summary": "Rede profissional de formação, segurança, preservação de técnicas e defesa de trabalhadores; presença somente por carta local."
+      },
+      {
+        "id": "FAC-010",
+        "title": "Liga de Oficinas Licenciadas da Fronteira",
+        "authority": "CANON_DERIVADO_ATIVO",
+        "canonical_path": "01_LORE/CANON_DERIVADO_ATIVO/SOCIEDADES/FACCOES/FAC-010__liga-de-oficinas-licenciadas-da-fronteira.json",
+        "scope": "TRANSREGIONAL_NON_SOVEREIGN",
+        "spoiler": 0,
+        "permissions": [
+          "READ_ONLY_CATALOG",
+          "LOCAL_CHAPTER_DATA_ASSET",
+          "QUEST_HOOK_NO_CANON_WRITE"
+        ],
+        "summary": "Rede voluntária de licenças, contratos e abastecimento; presença somente por carta local."
+      }
+    ],
+    "CRI": [
+      {
+        "id": "CRI-001",
+        "title": "Cortassom",
+        "canonical_path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-001__cortassom.json",
+        "summary": "Criatura deslocada e ferida por mineração ilegal, investigada por Kenua no início de A Recompensa."
+      },
+      {
+        "id": "CRI-002",
+        "title": "Velúrio",
+        "canonical_path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-002__velurio.json",
+        "summary": "Animal gregário de dorso largo, criado em comunidades fronteiriças por seu leite proteico e resistente à fermentação."
+      },
+      {
+        "id": "CRI-003",
+        "title": "Brumante",
+        "canonical_path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-003__brumante.json",
+        "summary": "Herbívoro de seis membros adaptado ao frio, valorizado pelo leite denso usado em rações de inverno e recuperação muscular."
+      },
+      {
+        "id": "CRI-004",
+        "title": "Lúmara",
+        "canonical_path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-004__lumara.json",
+        "summary": "Herbívoro de marcas bioluminescentes, criado em bosques abertos por seu leite claro e rico em micronutrientes."
+      },
+      {
+        "id": "CRI-005",
+        "title": "Raizel manso",
+        "canonical_path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-005__raizel-manso.json",
+        "summary": "Animal baixo e robusto que encontra tubérculos sem danificar raízes vitais. Seu leite âmbar é usado em rações de emergência."
+      },
+      {
+        "id": "CRI-006",
+        "title": "Luzipólen",
+        "canonical_path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-006__luzipolen.json",
+        "summary": "Pequeno polinizador luminoso que transporta pólen entre flores noturnas e evita seres de grande porte."
+      },
+      {
+        "id": "CRI-007",
+        "title": "Fio-de-Orvalho",
+        "canonical_path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-007__fio-de-orvalho.json",
+        "summary": "Inseto de pernas finas que recolhe umidade em fios orgânicos e acelera a decomposição de folhas mortas."
+      },
+      {
+        "id": "CRI-008",
+        "title": "Grilo-Cobre",
+        "canonical_path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-008__grilo-cobre.json",
+        "summary": "Inseto de carapaça acobreada criado em caixas de argila e consumido torrado ou moído."
+      },
+      {
+        "id": "CRI-009",
+        "title": "Larva-de-Véu",
+        "canonical_path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-009__larva-de-veu.json",
+        "summary": "Larva criada em fibras vegetais limpas, usada em caldos densos e farinha de campanha."
+      },
+      {
+        "id": "CRI-010",
+        "title": "Vespa-de-Vidro",
+        "canonical_path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-010__vespa-de-vidro.json",
+        "summary": "Vespa translúcida cujo ferrão libera toxina neuromuscular capaz de interromper movimentos por poucos minutos."
+      },
+      {
+        "id": "CRI-011",
+        "title": "Besouro-Rubro",
+        "canonical_path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-011__besouro-rubro.json",
+        "summary": "Besouro que libera uma secreção rubra irritante quando esmagado ou ameaçado."
+      },
+      {
+        "id": "CRI-012",
+        "title": "Louva-Fenda",
+        "canonical_path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-012__louva-fenda.json",
+        "summary": "Predador do tamanho de um antebraço que se camufla em fendas de pedra e captura pequenos animais por projeção das patas dianteiras."
+      },
+      {
+        "id": "CRI-013",
+        "title": "Mandíbula-de-Névoa",
+        "canonical_path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-013__mandibula-de-nevoa.json",
+        "summary": "Inseto cinzento que caça em pequenos enxames coordenados por vibração e mudanças de pressão."
+      }
+    ],
+    "MAG": [
+      {
+        "id": "MAG-001",
+        "title": "Leis da magia",
+        "canonical_path": "01_LORE/CANON_R2/SISTEMAS/MAGIA/MAG-001__leis-da-magia.json",
+        "summary": "Toda magia exige fonte, método, portador, objetivo, alvo, custo e consequência; ela transforma energia existente e não cria energia infinita."
+      },
+      {
+        "id": "MAG-002",
+        "title": "Runas",
+        "canonical_path": "01_LORE/CANON_R2/SISTEMAS/MAGIA/MAG-002__runas.json",
+        "summary": "Sistema mágico estruturado em núcleo, direção, limite, condição e dissipador."
+      }
+    ],
+    "TEC": [
+      {
+        "id": "TEC-001",
+        "title": "Rede ferroviária de Ortheon",
+        "canonical_path": "01_LORE/CANON_R2/SISTEMAS/TECNOLOGIA/TEC-001__rede-ferroviaria-de-ortheon.json",
+        "summary": "Rede ferroviária associada à República de Ortheon e às rotas utilizadas na primeira temporada."
+      }
+    ],
+    "ART": [
+      {
+        "id": "ART-001",
+        "title": "Espinho-Negro",
+        "canonical_path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-001__espinho-negro.json",
+        "summary": "Planta fóssil inteligente criada para localizar e combater uma corrupção radicular; sua origem consciente permanece selada até o final da Temporada 1."
+      },
+      {
+        "id": "ART-003",
+        "title": "Marcador de rota",
+        "canonical_path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-003__marcador-de-rota.json",
+        "summary": "Marcador entregue a Kenua por Serverus e utilizado como parte da manipulação do contrato."
+      },
+      {
+        "id": "ART-004",
+        "title": "Sistema de armamentos de Stellar",
+        "canonical_path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-004__sistema-de-armamentos.json",
+        "summary": "Classificação de armas usada em Stellar, distinguindo ferramentas improvisadas, armamento mecânico e versões rúnicas de maior custo e potência."
+      },
+      {
+        "id": "ART-005",
+        "title": "Lâminas",
+        "canonical_path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-005__laminas.json",
+        "summary": "Categoria de armas de corte e impacto próximo, comum entre viajantes, guardas e caçadores."
+      },
+      {
+        "id": "ART-006",
+        "title": "Fuzis",
+        "canonical_path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-006__fuzis.json",
+        "summary": "Armas de longo alcance usadas por forças organizadas, caravanas ricas e caçadores licenciados."
+      },
+      {
+        "id": "ART-007",
+        "title": "Revólveres",
+        "canonical_path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-007__revolveres.json",
+        "summary": "Armas curtas valorizadas por confiabilidade e transporte discreto."
+      },
+      {
+        "id": "ART-008",
+        "title": "Espingardas",
+        "canonical_path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-008__espingardas.json",
+        "summary": "Armas de grande impacto próximo, usadas em defesa de propriedade, caça pesada e ruptura de obstáculos."
+      },
+      {
+        "id": "ART-009",
+        "title": "Fuzis de precisão",
+        "canonical_path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-009__fuzis-de-precisao.json",
+        "summary": "Categoria especializada para disparos longos, vigilância e neutralização seletiva."
+      },
+      {
+        "id": "ART-010",
+        "title": "Armas de arremesso",
+        "canonical_path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-010__armas-de-arremesso.json",
+        "summary": "Armas projetadas manualmente, de ferramentas simples a discos rúnicos de trajetória corrigida."
+      },
+      {
+        "id": "ART-011",
+        "title": "Armas de explosão",
+        "canonical_path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-011__armas-de-explosao.json",
+        "summary": "Categoria de energia expansiva, altamente regulada por seu risco coletivo."
+      },
+      {
+        "id": "ART-012",
+        "title": "Armas de contenção",
+        "canonical_path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-012__armas-de-contencao.json",
+        "summary": "Ferramentas destinadas a interromper movimento, magia ou fuga sem exigir morte do alvo."
+      },
+      {
+        "id": "ART-013",
+        "title": "Dispositivos de flash",
+        "canonical_path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-013__dispositivos-de-flash.json",
+        "summary": "Dispositivos não letais que produzem clarão, pulso sonoro ou interferência sensorial."
+      },
+      {
+        "id": "ART-014",
+        "title": "Armas improvisadas",
+        "canonical_path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-014__armas-improvisadas.json",
+        "summary": "Categoria utilizada por pessoas sem magia ou recursos: ganchos, barras, correntes, ferramentas e peças de máquinas adaptadas."
+      },
+      {
+        "id": "ART-015",
+        "title": "Armerias rúnicas",
+        "canonical_path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-015__armerias-runicas.json",
+        "summary": "Estabelecimentos licenciados onde magos e artesãos vendem, carregam e mantêm armamentos rúnicos."
+      }
+    ],
+    "HIS": [
+      {
+        "id": "HIS-001",
+        "title": "Pacto de Convergência",
+        "canonical_path": "01_LORE/CANON_R2/HISTORIA/HIS-001__pacto-de-convergencia.json",
+        "summary": "Evento de 0 EC que inicia o calendário comum de Stellar."
+      }
+    ],
+    "EPI": [
+      {
+        "id": "EPI-001",
+        "title": "Temporada 1 — O Hospedeiro",
+        "canonical_path": "03_EPISODIOS/SEASON_01_KENUA_R2/00_SEASON_LOCK/SEASON_01_KENUA_R2_INDEX_V1.json",
+        "summary": "Oito episódios centrados em Kenua, Serlis, Espinho-Negro, Serverus, Genes e Raiz Profunda. O Episódio 1 está aprovado e integrado ao leitor do Codex."
+      },
+      {
+        "id": "EPI-002",
+        "title": "Episódio 1 — A Recompensa",
+        "canonical_path": "03_EPISODIOS/SEASON_01_KENUA_R2/01_A_RECOMPENSA/EPISODIO_1_A_RECOMPENSA_ROTEIRO_COMPLETO_V3.md",
+        "summary": "Kenua aceita uma captura que o conduz a Serlis, ao Caso Aelyra e à primeira resposta de uma flor que permanece fechada. A V3 auditada é o episódio canônico vigente."
+      },
+      {
+        "id": "EPI-003",
+        "title": "Episódio 2 — A Flor Fechada",
+        "canonical_path": "03_EPISODIOS/SEASON_01_KENUA_R2/02_A_FLOR_FECHADA/EPISODIO_2_A_FLOR_FECHADA_ROTEIRO_COMPLETO_V1.md",
+        "summary": "A segunda etapa de Serverus pressiona a contenção; a flor seleciona Kenua sem abrir, e Serlis interrompe a integração completa sem remover a simbiose involuntária."
+      },
+      {
+        "id": "EPI-004",
+        "title": "Episódio 3 — Corpo Estranho",
+        "canonical_path": "03_EPISODIOS/SEASON_01_KENUA_R2/03_CORPO_ESTRANHO/EPISODIO_3_CORPO_ESTRANHO_ROTEIRO_COMPLETO_V1.md",
+        "summary": "A fome impossível obriga Kenua e Serlis a medir sem provocar, construir contenção móvel e iniciar o retorno à Fronteira após confirmação codificada de Kaenna."
+      },
+      {
+        "id": "EPI-005",
+        "title": "Episódio 4 — Raízes na Carne",
+        "canonical_path": "03_EPISODIOS/SEASON_01_KENUA_R2/04_RAIZES_NA_CARNE/EPISODIO_4_RAIZES_NA_CARNE_ROTEIRO_COMPLETO_V1.md",
+        "summary": "Kenua retorna à Fronteira sob proteção de Kaenna; a fome extrema pressiona os recursos e a primeira manifestação defensiva externa torna o segredo impossível de tratar como hipótese abstrata."
+      },
+      {
+        "id": "EPI-006",
+        "title": "Episódio 5 — A Hospedeira Anterior",
+        "canonical_path": "03_EPISODIOS/SEASON_01_KENUA_R2/05_A_HOSPEDEIRA_ANTERIOR/EPISODIO_5_A_HOSPEDEIRA_ANTERIOR_ROTEIRO_COMPLETO_V1.md",
+        "summary": "Kenua abre o Caso Aelyra por fontes separadas, confirma a retirada de consentimento, confronta Serlis e reescreve a governança do bracelete enquanto uma autenticação antiga alcança o Ramo Interno."
+      },
+      {
+        "id": "EPI-007",
+        "title": "Episódio 6 — O Supremo Mago",
+        "canonical_path": "03_EPISODIOS/SEASON_01_KENUA_R2/06_O_SUPREMO_MAGO/EPISODIO_6_O_SUPREMO_MAGO_ROTEIRO_COMPLETO_V1.md",
+        "summary": "Genes envia discípulos para recuperar Serlis; uma audiência remota expõe julgamento, afeto paternal e arquivos ocultos antes que uma célula interna ataque e roube telemetria de Kenua."
+      },
+      {
+        "id": "EPI-008",
+        "title": "Episódio 7 — Oitenta por Cento",
+        "canonical_path": "03_EPISODIOS/SEASON_01_KENUA_R2/07_OITENTA_POR_CENTO/EPISODIO_7_OITENTA_POR_CENTO_ROTEIRO_COMPLETO_V1.md",
+        "summary": "Um experimento força a flor a assumir a maior parte do corpo de Kenua para preservar o hospedeiro."
+      },
+      {
+        "id": "EPI-009",
+        "title": "Episódio 8 — O Hospedeiro",
+        "canonical_path": "03_EPISODIOS/SEASON_01_KENUA_R2/08_O_HOSPEDEIRO/EPISODIO_8_O_HOSPEDEIRO_ROTEIRO_COMPLETO_V1.md",
+        "summary": "Kenua firma o primeiro pacto consciente e percebe pela primeira vez uma presença guardiã ligada à flor."
+      }
+    ]
+  },
+  "living_sim": "06_ENGINE/ACTIVE_CONTENT_ADAPTERS/LIVING_SIM_CONTENT_PROJECTION_V2.json",
+  "living_scale": "06_ENGINE/ACTIVE_CONTENT_ADAPTERS/LIVING_SCALE_CONTENT_PROJECTION_V2.json",
+  "import_rule": "UE5 imports may create read-only data assets and local chapter overlays only; they cannot alter canon, routing, sovereignty, Kenua or sealed episodes.",
+  "supersedes": "ANDROMEDA_UE5_CONTENT_MANIFEST_V1"
+}

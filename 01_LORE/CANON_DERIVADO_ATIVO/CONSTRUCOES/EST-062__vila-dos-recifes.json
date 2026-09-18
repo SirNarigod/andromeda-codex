@@ -1,0 +1,36 @@
+{
+  "est_id": "EST-062",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Vila dos Recifes",
+  "building_type": "RESIDENCIAL",
+  "parent_locality": "LOC-018-002",
+  "parent_subregion": "SUB-018-002",
+  "parent_political_unit": "TER-018",
+  "function": "Assentamento principal junto aos Recifes Luminosos.",
+  "economic_role": {
+    "is_vendor": false,
+    "sells": [],
+    "produces": [],
+    "regulation_factor": 0.3
+  },
+  "capacity": {
+    "jobs": 3,
+    "residents": 16
+  },
+  "professions_linked": [
+    "JOB-001 Criador e cuidador de fauna"
+  ],
+  "notable_link": "TER-018 Fossa Abissal (fase 51)",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "MADEIRA_E_ALVENARIA",
+    "flammability": "ALTA",
+    "recovery_days": 7
+  }
+}

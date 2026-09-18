@@ -1,0 +1,27 @@
+{
+  "loc_id": "LOC-014-001",
+  "name": "Poço da Fundição",
+  "parent_subregion": "SUB-014-001",
+  "function": "Ponto de extração e fundição primária de minério vulcânico.",
+  "notable_link": "TER-014 Cadeia de Cinzas (fase 44, território novo)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "record_id": "LOC-014-001",
+  "settlement_tier": "COMPLEXO",
+  "history": "O poço foi cavado onde o calor residual de uma câmara de magma antiga ainda aquece a rocha o bastante pra facilitar a fundição sem precisar de forno externo — os primeiros fundidores descobriram isso por acidente, quando uma escavação de teste encontrou rocha macia demais pra ser natural em qualquer outro lugar da cadeia. Nos primeiros anos, três equipes morreram tentando cavar fundo demais, buscando calor ainda mais intenso; hoje existe uma profundidade máxima marcada com estacas vermelhas que ninguém ousa ultrapassar, por mais tentador que seja o minério mais puro logo abaixo dela.",
+  "sensory": "O ar treme visivelmente acima das bocas de fundição, distorcendo a silhueta de quem trabalha do outro lado. O calor não vem de fogo visível na maior parte do poço — sobe direto da rocha, seco e constante, e os trabalhadores aprenderam a reconhecer, pelo próprio suor, quando é hora de subir pra respirar ar mais fresco antes de desidratar. O som é de martelo contra minério em ritmo quase musical, coordenado entre equipes que trabalham em turnos sobrepostos pra nunca deixar a fundição esfriar.",
+  "figures": [
+    {
+      "role": "Mestre Fundidor",
+      "name": "Gorrec Cinzavermelha",
+      "note": "Único sobrevivente da equipe original que cavou fundo demais e perdeu dois companheiros pra uma bolsa de gás que ninguém viu vir. Marcou as estacas vermelhas com as próprias mãos e reage com fúria a qualquer sugestão de movê-las mais fundo, mesmo décadas depois."
+    },
+    {
+      "role": "Jovem prospectora",
+      "name": "Ilsa Marteloclaro",
+      "note": "Convencida de que o minério logo abaixo da marca vermelha é puro o bastante pra financiar a própria família por gerações — vem calculando, em segredo, uma forma de escavar um túnel lateral que tecnicamente não ultrapassa a marca em profundidade direta, só em ângulo."
+    }
+  ],
+  "hook": "Ilsa já convenceu duas outras equipes menores a ajudá-la no túnel lateral, e o som de escavação fora do padrão já chegou aos ouvidos de Gorrec — ele ainda não sabe de onde vem exatamente, mas sabe reconhecer o ritmo errado quando ouve.",
+  "detail": "Todo fundidor novo passa por um rito simples antes do primeiro turno: colocar a mão espalmada na rocha próxima à marca vermelha e contar até dez sem soltar. Quem não aguenta o calor até o fim não trabalha fundo o bastante pra ser útil — e ninguém jamais dispensou alguém por falhar nisso, só remaneja pra funções mais próximas da superfície sem dizer o motivo real.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION"]
+}

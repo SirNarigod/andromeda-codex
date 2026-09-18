@@ -1,0 +1,14 @@
+{
+  "record_id": "LIVING_SIM_CONTENT_PROJECTION_V6",
+  "status": "ACTIVE_ENGINE_NEUTRAL_READ_ONLY",
+  "supersedes": "LIVING_SIM_CONTENT_PROJECTION_V5",
+  "base_projection": "LIVING_SIM_CONTENT_PROJECTION_V5.json",
+  "varga_vertical_slice_overlay": {
+    "boundary_law": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_VARGA_VERTICAL_SLICE_BOUNDARY_LAW_V1_0.json",
+    "scenario": "04_MECANICAS/QUESTS_DINAMICAS/VARGA_CONTRATO_DE_TRAVESSIA_V1.json",
+    "permitted_traces": ["local_route_pressure", "medical_risk", "contextual_trust", "evidence_incomplete", "temporary_route_access"],
+    "forbidden_traces": ["culprit_as_canon_fact", "territory_change", "R2_character_state", "root_escalation", "offline_resolution", "fauna_loot_farm"],
+    "resolution_states": ["ROUTE_AVOIDED", "ROUTE_CONTAINED", "ROUTE_OPENED_TEMPORARILY"]
+  },
+  "prohibitions": ["READ_ONLY_CONTENT_PROJECTION", "NO_R2_RETCON", "NO_KENUA_OR_SEALED_EPISODE_MUTATION", "NO_AMADON_CONTACT_BEFORE_S01E08", "NO_AUTHORIAL_GATE_BYPASS"]
+}

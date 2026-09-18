@@ -1,0 +1,47 @@
+{
+  "record_id": "CRI-011",
+  "record_kind": "R2_CANONICAL_ENTRY_MIRROR",
+  "authority": "CANON_R2_CONFIRMADO",
+  "canonical_home": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-011__besouro-rubro.json",
+  "source": {
+    "archive_sha256": "257e456a5d0396310ec2355b3dfc0f11f4e0a5264cf6e764591c8760f5070cb0",
+    "lineage": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json",
+    "document_sha256": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726"
+  },
+  "entry": {
+    "code": "CRI-011",
+    "slug": "besouro-rubro",
+    "title": "Besouro-Rubro",
+    "subtitle": "Inseto venenoso de defesa química",
+    "category": "CRI",
+    "secondaryCategories": [],
+    "canon": "Cânone consolidado",
+    "spoiler": 1,
+    "sealed": false,
+    "image": null,
+    "imageStatus": null,
+    "summary": "Besouro que libera uma secreção rubra irritante quando esmagado ou ameaçado.",
+    "facts": {
+      "Classe": "Inseto venenoso",
+      "Efeito": "Queimadura química, febre e inflamação",
+      "Comportamento": "Não persegue; defesa por contato",
+      "Habitat": "Pântanos Rubros"
+    },
+    "sections": [],
+    "relations": [
+      {
+        "slug": "pantanos-rubros",
+        "label": "Habitat"
+      }
+    ],
+    "keywords": [
+      "inseto",
+      "venenoso",
+      "besouro",
+      "pântano"
+    ],
+    "sources": [
+      "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+    ]
+  }
+}

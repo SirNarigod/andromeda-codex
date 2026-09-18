@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-REPUTATION-RELATIONSHIP-SYSTEM-DEV-V1.0",
+  "title": "Sistema B - Reputacao, Boato e Relacionamento (instancia MEMORY_KNOWLEDGE_RELATIONSHIP_REPUTATION_CONTRACT_V1_0)",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "r2_guard": "Instancia pela primeira vez o contrato de reputacao/boato/relacionamento (02_REGRAS/.../MEMORY_KNOWLEDGE_RELATIONSHIP_REPUTATION_CONTRACT_V1_0), ate agora so regra abstrata sem conteudo. Respeita STELLAR_INFORMATION_MEMORY_LAW: reputacao e sempre contextual/escopada, NUNCA um unico placar moral global unico - o escopo GLOBAL abaixo e so mais uma trilha paralela (renome amplo), nunca a definicao exclusiva do jogador. Boato nunca prova identidade nem fato historico.",
+  "reputation_scopes": [
+    {
+      "scope": "GLOBAL",
+      "definition": "Renome amplo do jogador em Stellar - qualitativo, nunca a unica medida (ex. 'Herói de Kharveth' vs 'Fugitivo Procurado'), sempre coexistindo com os outros 5 escopos.",
+      "example_entity": "Jogador (protagonista customizado, STELLAR_PLAYER_CAMPAIGN_LAW)"
+    },
+    {
+      "scope": "FACTION",
+      "definition": "Reputacao com uma facção especifica - sobe/desce por acoes que afetam os interesses dela.",
+      "example_entity": "FAC-004 Vigilia Radicular (relevante para a classe Corrompidos, fase 60)"
+    },
+    {
+      "scope": "SETTLEMENT",
+      "definition": "Reputacao numa localidade/construcao especifica - efeito local, nao se espalha automaticamente.",
+      "example_entity": "EST-005 Casario de Varga"
+    },
+    {
+      "scope": "PROFESSION",
+      "definition": "Reputacao dentro de uma rede profissional - afeta acesso a contratos/informacao da categoria.",
+      "example_entity": "JOB-016 Extrator de recursos (rede de mineradores entre territorios)"
+    },
+    {
+      "scope": "REGION",
+      "definition": "Reputacao num territorio inteiro - mais amplo que settlement, mais estreito que global.",
+      "example_entity": "TER-012 Zonas de Contencao"
+    },
+    {
+      "scope": "INSTITUTION",
+      "definition": "Reputacao com uma instituicao formal (nao apenas uma faccao de pessoas) - regras/protocolos proprios.",
+      "example_entity": "FAC-009 Colegiado dos Oficios de Oficina da Fronteira"
+    }
+  ],
+  "rumor_propagation_rule": {
+    "max_hops": 4,
+    "trust_decay_per_hop": 0.85,
+    "rule_summary": "Um boato perde 15% de confiabilidade a cada 'salto' entre pessoas (max 4 saltos antes de se tornar irrelevante). Nunca e tratado como fato confirmado - so evidencia independente verifica ou falsifica uma alegacao (STELLAR_INFORMATION_MEMORY_LAW).",
+    "worked_example": {
+      "origin": "ZUM-004 (fase 59) e avistado por um viajante nas Raizes Sagradas (SUB-008-002), murmurando fragmentos sobre 'guardiao ainda protegendo'.",
+      "hop_1": "Viajante conta a um mercador em EST-001 Mercado Central de Luminor (confianca 100% -> 85%).",
+      "hop_2": "Mercador conta a Renn (CIV-005, Mediador em EST-013) - 85% -> 72%.",
+      "hop_3": "Renn menciona em negociacao com outro territorio - 72% -> 61%.",
+      "hop_4": "Ultimo salto antes de irrelevancia - 61% -> 52%, quase nao rastreavel a fonte original.",
+      "canon_note": "Em nenhum ponto isso confirma a existencia/identidade de ZUM-004 como fato de mundo - e so um boato circulando, coerente com NO_ROOT_ESCALATION e NO_R2_EPISODE_REWRITE."
+    }
+  },
+  "relationship_dimensions": {
+    "scale": "-100 a 100 por dimensao",
+    "dimensions": [
+      "trust (confianca)",
+      "affinity (afinidade/simpatia)",
+      "fear (medo)",
+      "respect (respeito)",
+      "obligation (obrigacao/divida)"
+    ],
+    "example_relationships": [
+      {
+        "npc_a": "CIV-006 Talia, a Artesa",
+        "npc_b": "CIV-007 Bram, o Instrutor",
+        "context": "colegas na Oficina de Charneira (EST-004)",
+        "trust": 60,
+        "affinity": 50,
+        "fear": 0,
+        "respect": 70,
+        "obligation": 20,
+        "note": "Relacao de trabalho solida - confianca e respeito profissional altos, sem divida grande pendente."
+      },
+      {
+        "npc_a": "CIV-012 Sera, a Especialista em Contencao",
+        "npc_b": "CIV-030 Dex, o Engenheiro de Pressao",
+        "context": "ambos lidam com risco de contencao em territorios distintos (TER-012 e TER-018), nunca se encontraram pessoalmente",
+        "trust": 10,
+        "affinity": 5,
+        "fear": 0,
+        "respect": 40,
+        "obligation": 0,
+        "note": "Respeito profissional a distancia (reputacao de escopo PROFESSION), sem relacao pessoal direta - exemplo de como reputacao de rede profissional gera respeito sem vinculo direto."
+      },
+      {
+        "npc_a": "Jogador (generico)",
+        "npc_b": "FAC-004 Vigilia Radicular",
+        "context": "primeira interacao possivel na classe Corrompidos (fase 60) ou em quests de contencao",
+        "trust": 0,
+        "affinity": 0,
+        "fear": 0,
+        "respect": 0,
+        "obligation": 0,
+        "note": "Estado inicial neutro em todas as dimensoes - toda relacao comeca em 0 e muda por acao documentada, nunca por suposicao (STELLAR_CAUSALITY_LAW: toda mudanca exige origem rastreavel)."
+      }
+    ]
+  },
+  "prohibitions": [
+    "NO_SINGLE_GLOBAL_MORAL_SCORE",
+    "NO_RUMOR_AS_CONFIRMED_FACT",
+    "NO_REPUTATION_CHANGE_WITHOUT_TRACEABLE_ORIGIN"
+  ]
+}

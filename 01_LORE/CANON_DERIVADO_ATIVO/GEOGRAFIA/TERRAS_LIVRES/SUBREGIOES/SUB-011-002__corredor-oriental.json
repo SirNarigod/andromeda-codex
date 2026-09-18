@@ -1,0 +1,15 @@
+{
+  "record_id": "SUB-011-002",
+  "record_kind": "DERIVED_SUBREGION_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Corredor Oriental",
+  "parent_political_unit": "TER-011",
+  "provenance": {"approval":"R2-REBASE-LOT-009","r2_anchors":["TER-011","CIT-002","TEC-001"],"compatibility":"Route-maintenance overlay around an existing R2 station; it does not disclose or resolve the sealed investigation."},
+  "function":"Eixo de manutenção, transbordo, investigação local e pressão logística associada à Estação Oriental.",
+  "locality_references":["CIT-002 Estação Oriental"],
+  "permitted_catalog_links":{"npc_roles":["NPC-ROLE-004","NPC-ROLE-006","NPC-ROLE-009","NPC-ROLE-013"],"professions":["JOB-004","JOB-006","JOB-009","JOB-010"],"encounters":["ENCOUNTER-010","ENCOUNTER-013"],"resources":[]},
+  "local_conflicts":["manutenção preventiva versus carga urgente","evidência de desaparecimento versus rumor","continuidade ferroviária versus segurança de trabalhadores"],
+  "prohibitions":["NO_SEALED_INVESTIGATION_RESOLUTION","NO_AUTOMATIC_KENUA_PRESENCE","NO_NEW_RAIL_TERRITORY","NO_RUNTIME_ROUTE_BECOMES_CANON"],
+  "story_generators":["Uma falha de sinal revela que a rota foi alterada sem registro de manutenção.","Um técnico encontra uma prova que é valiosa demais para entregar a uma só facção.","O atraso de uma carga faz comunidades disputarem quem tem direito à próxima partida."]
+}

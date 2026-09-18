@@ -1,0 +1,21 @@
+{
+  "record_id": "ARPG-CHARACTER-SYSTEM-V0.3.0",
+  "stage": "02/18",
+  "version": "V0.3.0",
+  "parent_stage01_sha256": "ba1dce044532ba177b15524626dd56fd763ea32a6429f8cdfce560fc16954b10",
+  "systems": [
+    "CORE_ATTRIBUTES",
+    "DERIVED_STATS",
+    "HEALTH_RESOURCE_VITALS",
+    "XP_LEVELS",
+    "ATTRIBUTE_POINT_ALLOCATION",
+    "IDEMPOTENT_PROGRESSION_EVENTS",
+    "BUILD_EVIDENCE_FOUNDATION",
+    "SAVE_UPGRADE_STAGE01_TO_STAGE02"
+  ],
+  "canonical_numeric_policy": "GAMEPLAY_DERIVED_NOT_CANON",
+  "emergent_class": "DEFERRED_UNTIL_SKILLS_EQUIPMENT_PLAYSTYLE_SIGNALS",
+  "respawn": "DEFERRED_STAGE13",
+  "art_dependency": "NONE_PLACEHOLDER_READY",
+  "status": "PASS"
+}

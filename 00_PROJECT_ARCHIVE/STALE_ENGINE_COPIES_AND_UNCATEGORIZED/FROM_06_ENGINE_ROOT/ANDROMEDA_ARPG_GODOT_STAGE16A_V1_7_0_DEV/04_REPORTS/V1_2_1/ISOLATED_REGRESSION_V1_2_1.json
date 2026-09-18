@@ -1,0 +1,164 @@
+{
+  "record_id": "ISOLATED-REGRESSION-V1.2.1",
+  "status": "PASS",
+  "files": 22,
+  "tests_total": 764,
+  "failed_files": 0,
+  "rows": [
+    {
+      "file": "test_agent_brain.py",
+      "status": "PASS",
+      "tests": 90,
+      "seconds": 6,
+      "returncode": 0
+    },
+    {
+      "file": "test_atlas_living_bridge.py",
+      "status": "PASS",
+      "tests": 61,
+      "seconds": 3,
+      "returncode": 0
+    },
+    {
+      "file": "test_combat_system_v1_1.py",
+      "status": "PASS",
+      "tests": 12,
+      "seconds": 4,
+      "returncode": 0
+    },
+    {
+      "file": "test_commerce_system_v1_1.py",
+      "status": "PASS",
+      "tests": 10,
+      "seconds": 4,
+      "returncode": 0
+    },
+    {
+      "file": "test_consequence_engine.py",
+      "status": "PASS",
+      "tests": 56,
+      "seconds": 3,
+      "returncode": 0
+    },
+    {
+      "file": "test_country_scale_v1_2.py",
+      "status": "PASS",
+      "tests": 9,
+      "seconds": 1,
+      "returncode": 0
+    },
+    {
+      "file": "test_domain_integration.py",
+      "status": "PASS",
+      "tests": 6,
+      "seconds": 2,
+      "returncode": 0
+    },
+    {
+      "file": "test_dynamic_spawn_v1_1.py",
+      "status": "PASS",
+      "tests": 2,
+      "seconds": 0,
+      "returncode": 0
+    },
+    {
+      "file": "test_ecology_brain.py",
+      "status": "PASS",
+      "tests": 77,
+      "seconds": 6,
+      "returncode": 0
+    },
+    {
+      "file": "test_economic_locality_v1_1.py",
+      "status": "PASS",
+      "tests": 6,
+      "seconds": 2,
+      "returncode": 0
+    },
+    {
+      "file": "test_faction_integration_v1_1.py",
+      "status": "PASS",
+      "tests": 3,
+      "seconds": 1,
+      "returncode": 0
+    },
+    {
+      "file": "test_integrated_engine_v1_1.py",
+      "status": "PASS",
+      "tests": 9,
+      "seconds": 7,
+      "returncode": 0
+    },
+    {
+      "file": "test_llm_gateway.py",
+      "status": "PASS",
+      "tests": 35,
+      "seconds": 3,
+      "returncode": 0
+    },
+    {
+      "file": "test_long_horizon.py",
+      "status": "PASS",
+      "tests": 44,
+      "seconds": 18,
+      "returncode": 0
+    },
+    {
+      "file": "test_mobility_biology_v1_1.py",
+      "status": "PASS",
+      "tests": 12,
+      "seconds": 4,
+      "returncode": 0
+    },
+    {
+      "file": "test_object_environment.py",
+      "status": "PASS",
+      "tests": 73,
+      "seconds": 4,
+      "returncode": 0
+    },
+    {
+      "file": "test_runtime_core.py",
+      "status": "PASS",
+      "tests": 59,
+      "seconds": 6,
+      "returncode": 0
+    },
+    {
+      "file": "test_scene_interaction_v1_2_1.py",
+      "status": "PASS",
+      "tests": 10,
+      "seconds": 1,
+      "returncode": 0
+    },
+    {
+      "file": "test_social_memory.py",
+      "status": "PASS",
+      "tests": 72,
+      "seconds": 6,
+      "returncode": 0
+    },
+    {
+      "file": "test_society_labor_v1_1.py",
+      "status": "PASS",
+      "tests": 13,
+      "seconds": 5,
+      "returncode": 0
+    },
+    {
+      "file": "test_world_orchestrator.py",
+      "status": "PASS",
+      "tests": 54,
+      "seconds": 10,
+      "returncode": 0
+    },
+    {
+      "file": "test_world_systems.py",
+      "status": "PASS",
+      "tests": 51,
+      "seconds": 20,
+      "returncode": 0
+    }
+  ],
+  "policy": "Each test module executed in a fresh process with individual timeout; batches were deliberately small because monolithic runner exceeded executor window."
+}

@@ -1,0 +1,11 @@
+{
+  "record_id": "SUB-006-002", "record_kind": "DERIVED_SUBREGION_PROFILE", "authority": "CANON_DERIVADO_ATIVO", "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Ancoradouro de Naves", "parent_political_unit": "TER-006",
+  "provenance": {"approval": "GAMEPLAY_DERIVED_DEV_SOURCE", "r2_anchors": ["TER-006"], "compatibility": "Camada administrativa e narrativa local; não cria fronteira, cidade, soberania ou nova autoridade."},
+  "function": "Ponto de ancoragem para naves aéreas que chegam de outros territórios de Stellar.",
+  "locality_references": ["LOC-006-002 Doca Aérea"],
+  "permitted_catalog_links": {"npc_roles": ["classe:Soldados"], "professions": [], "encounters": [], "resources": []},
+  "local_conflicts": ["controle de tráfego aéreo versus liberdade de rota das naves independentes"],
+  "prohibitions": ["NO_NEW_SOVEREIGNTY", "NO_AUTOMATIC_KENUA_SCENE", "NO_R2_EPISODE_REWRITE", "NO_FIXED_BORDER_COORDINATE"],
+  "story_generators": ["Uma nave não identificada pede pouso de emergência durante uma tempestade."]
+}

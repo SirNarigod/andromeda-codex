@@ -1,0 +1,102 @@
+{
+  "record_id": "MASTER-CULINARIA-CATALOG-V2.0.0",
+  "title": "Culinária oficial do MASTER V2.0.1 (17 entradas)",
+  "provenance": {
+    "master_release": "ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE",
+    "master_release_zip_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "source_files": [
+      "01_CANON/ANDROMEDA_CODEX_CANON_MASTER_V2_0_0.json (entities, domain=culinária)"
+    ],
+    "authority": "CANON_MASTER_V2_CONFIRMADO",
+    "namespace_check": "Prefixos CUL-DER-/CUL-ING-/CUL-PREP-/CUL-PROP-, todos compostos - nenhum colide com nosso CUL-001..013 (13 culturas, formato bare de 3 digitos, intocado).",
+    "structure_note": "17 entradas: CUL-DER + CUL-ING (10, duplicados entre si) sao os recursos crus - todos ja catalogados por nos (leites = RES-001..004, Grilo-Cobre/Larva-de-Veu = ja usados em nossos pratos). CUL-PREP (6) sao pratos preparados especificos de TER-011 e TER-012, e CUL-PROP-MEAL (1) e uma refeicao completa combinando 2 pratos - varios tem equivalente muito proximo (as vezes so a grafia difere, ex. 'tostado' vs nosso 'Torrado') no nosso STELLAR_PREPARED_FOOD_DEV_V1_0.json (fase 16), sinalizado como cross_ref_similar_dish quando o nome bate exatamente."
+  },
+  "count_total": 17,
+  "raw_food_resources": [
+    {
+      "id": "CUL-DER-canonical_food_resources-001",
+      "name": "Leite veluriano",
+      "cross_ref": "RES-001"
+    },
+    {
+      "id": "CUL-DER-canonical_food_resources-002",
+      "name": "Leite brumante",
+      "cross_ref": "RES-002"
+    },
+    {
+      "id": "CUL-DER-canonical_food_resources-003",
+      "name": "Leite de lúmara",
+      "cross_ref": "RES-003"
+    },
+    {
+      "id": "CUL-DER-canonical_food_resources-004",
+      "name": "Leite âmbar de raizel",
+      "cross_ref": "RES-004"
+    },
+    {
+      "id": "CUL-DER-canonical_food_resources-005",
+      "name": "Grilo-Cobre comestível"
+    },
+    {
+      "id": "CUL-DER-canonical_food_resources-006",
+      "name": "Larva-de-Véu comestível"
+    },
+    {
+      "id": "CUL-ING-001",
+      "name": "Leite veluriano",
+      "cross_ref": "RES-001"
+    },
+    {
+      "id": "CUL-ING-002",
+      "name": "Leite brumante",
+      "cross_ref": "RES-002"
+    },
+    {
+      "id": "CUL-ING-003",
+      "name": "Leite de lúmara",
+      "cross_ref": "RES-003"
+    },
+    {
+      "id": "CUL-ING-004",
+      "name": "Leite âmbar de raizel",
+      "cross_ref": "RES-004"
+    }
+  ],
+  "prepared_dishes": [
+    {
+      "id": "CUL-PREP-NORM-TER011-001",
+      "name": "Grilo-Cobre tostado",
+      "territory_ref": "TER-011"
+    },
+    {
+      "id": "CUL-PREP-NORM-TER011-002",
+      "name": "Grilo-Cobre moído",
+      "territory_ref": "TER-011"
+    },
+    {
+      "id": "CUL-PREP-NORM-TER011-003",
+      "name": "Leite veluriano fermentado",
+      "territory_ref": "TER-011"
+    },
+    {
+      "id": "CUL-PREP-NORM-TER011-004",
+      "name": "Barra de viagem de leite veluriano concentrado",
+      "territory_ref": "TER-011"
+    },
+    {
+      "id": "CUL-PREP-NORM-TER012-001",
+      "name": "Farinha de campanha de Larva-de-Véu",
+      "territory_ref": "TER-012"
+    },
+    {
+      "id": "CUL-PREP-NORM-TER012-002",
+      "name": "Caldo denso de Larva-de-Véu",
+      "territory_ref": "TER-012"
+    },
+    {
+      "id": "CUL-PROP-MEAL-TER011-001",
+      "name": "Refeição simples de Grilo-Cobre tostado e leite veluriano fermentado",
+      "territory_ref": "TER-011"
+    }
+  ]
+}

@@ -1,0 +1,3249 @@
+{
+  "_import_provenance": {
+    "master_release": "ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE",
+    "master_release_zip_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "source_file": "03_DOMAINS/SPATIALIZATION/02_DISTRIBUICOES/STELLAR_FAUNA_DISTRIBUTION_V1_0.json",
+    "authority": "CANON_MASTER_V2_CONFIRMADO",
+    "note": "Conteudo verbatim do pacote; este wrapper so adiciona proveniencia. Fecha note_incomplete_source do bestiario (fase 62)."
+  },
+  "data": {
+    "schema_version": "1.0.0",
+    "record_id": "STELLAR-FAUNA-DISTRIBUTION-V1.0",
+    "title": "Distribuição de fauna",
+    "stage": "ETAPA_05",
+    "version": "V1.0",
+    "generated_at": "2026-08-14T00:00:00Z",
+    "authority": "TERRA MAX — executor geoespacial; macrogeografia Sol Etapa 4 preservada",
+    "coordinate_authority": "ACRS-STELLAR-GEODETIC-V1",
+    "canonical_policy": "Nenhuma macrogeografia foi redesenhada; vínculos novos são derivados ou criados sob a governança da Etapa 1.",
+    "distributions": [
+      {
+        "id": "DIST-FAU-CRI-001",
+        "entity_id": "CRI-001",
+        "name": "CRI-001",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-001",
+          "region_id": "REG-001",
+          "territory_id": "TER-011",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-008",
+            "BIO-002"
+          ],
+          "route_ids": [
+            "RTE-001",
+            "RTE-003",
+            "RTE-013"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-008"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-011",
+              "BIO-008"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-CRI-002",
+        "entity_id": "CRI-002",
+        "name": "CRI-002",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-001",
+          "region_id": "REG-001",
+          "territory_id": "TER-011",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-002",
+            "BIO-008"
+          ],
+          "route_ids": [
+            "RTE-001",
+            "RTE-003",
+            "RTE-013"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-002",
+          "BIO-008"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-011",
+              "BIO-002",
+              "BIO-008"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-CRI-003",
+        "entity_id": "CRI-003",
+        "name": "CRI-003",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-002",
+          "region_id": "REG-004",
+          "territory_id": "TER-002",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-005"
+          ],
+          "route_ids": [
+            "RTE-006",
+            "RTE-007",
+            "RTE-008",
+            "RTE-009"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-005"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-002",
+              "BIO-005"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-CRI-004",
+        "entity_id": "CRI-004",
+        "name": "CRI-004",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-001",
+          "region_id": "REG-002",
+          "territory_id": "TER-008",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-001",
+            "BIO-007"
+          ],
+          "route_ids": [
+            "RTE-014",
+            "RTE-015"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-001",
+          "BIO-007"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-008",
+              "BIO-001",
+              "BIO-007"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-CRI-005",
+        "entity_id": "CRI-005",
+        "name": "CRI-005",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-003",
+          "region_id": "REG-005",
+          "territory_id": "TER-005",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-007",
+            "BIO-009"
+          ],
+          "route_ids": [
+            "RTE-009",
+            "RTE-010",
+            "RTE-012",
+            "RTE-017"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-007",
+          "BIO-009"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-005",
+              "BIO-007",
+              "BIO-009"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-CRI-006",
+        "entity_id": "CRI-006",
+        "name": "CRI-006",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-001",
+          "region_id": "REG-002",
+          "territory_id": "TER-008",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-007",
+            "BIO-001"
+          ],
+          "route_ids": [
+            "RTE-014",
+            "RTE-015"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-007"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-008",
+              "BIO-007"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-CRI-007",
+        "entity_id": "CRI-007",
+        "name": "CRI-007",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-004",
+          "region_id": "REG-006",
+          "territory_id": "TER-007",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-006",
+            "BIO-010",
+            "BIO-009"
+          ],
+          "route_ids": [
+            "RTE-012",
+            "RTE-013",
+            "RTE-025"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-006",
+          "BIO-010"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-007",
+              "BIO-006",
+              "BIO-010"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-CRI-008",
+        "entity_id": "CRI-008",
+        "name": "CRI-008",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-001",
+          "region_id": "REG-001",
+          "territory_id": "TER-011",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-008",
+            "BIO-002"
+          ],
+          "route_ids": [
+            "RTE-001",
+            "RTE-003",
+            "RTE-013"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-008"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-011",
+              "BIO-008"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-CRI-009",
+        "entity_id": "CRI-009",
+        "name": "CRI-009",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-001",
+          "region_id": "REG-001",
+          "territory_id": "TER-011",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-008",
+            "BIO-002"
+          ],
+          "route_ids": [
+            "RTE-001",
+            "RTE-003",
+            "RTE-013"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-008"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-011",
+              "BIO-008"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-CRI-010",
+        "entity_id": "CRI-010",
+        "name": "CRI-010",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-001",
+          "region_id": "REG-002",
+          "territory_id": "TER-001",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-007",
+            "BIO-002",
+            "BIO-010"
+          ],
+          "route_ids": [
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-021",
+            "RTE-022",
+            "RTE-023"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-007"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-001",
+              "BIO-007"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-CRI-011",
+        "entity_id": "CRI-011",
+        "name": "CRI-011",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-004",
+          "region_id": "REG-006",
+          "territory_id": "TER-007",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-006",
+            "BIO-009"
+          ],
+          "route_ids": [
+            "RTE-012",
+            "RTE-013",
+            "RTE-025"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-006"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-007",
+              "BIO-006"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-CRI-012",
+        "entity_id": "CRI-012",
+        "name": "CRI-012",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-002",
+          "region_id": "REG-004",
+          "territory_id": "TER-002",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-005"
+          ],
+          "route_ids": [
+            "RTE-006",
+            "RTE-007",
+            "RTE-008",
+            "RTE-009"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-005"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-002",
+              "BIO-005"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-CRI-013",
+        "entity_id": "CRI-013",
+        "name": "CRI-013",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-003",
+          "region_id": "REG-005",
+          "territory_id": "TER-005",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-009",
+            "BIO-007"
+          ],
+          "route_ids": [
+            "RTE-009",
+            "RTE-010",
+            "RTE-012",
+            "RTE-017"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-009"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-005",
+              "BIO-009"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FAD-001",
+        "entity_id": "FAD-001",
+        "name": "FAD-001",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-001",
+          "region_id": "REG-001",
+          "territory_id": "TER-011",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-008",
+            "BIO-002"
+          ],
+          "route_ids": [
+            "RTE-001",
+            "RTE-003",
+            "RTE-013"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-008"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-011",
+              "BIO-008"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FAD-002",
+        "entity_id": "FAD-002",
+        "name": "FAD-002",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-001",
+          "region_id": "REG-001",
+          "territory_id": "TER-011",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-008",
+            "BIO-002"
+          ],
+          "route_ids": [
+            "RTE-001",
+            "RTE-003",
+            "RTE-013"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-008"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-011",
+              "BIO-008"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FAD-003",
+        "entity_id": "FAD-003",
+        "name": "FAD-003",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-004",
+          "region_id": "REG-006",
+          "territory_id": "TER-007",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-006",
+            "BIO-009"
+          ],
+          "route_ids": [
+            "RTE-012",
+            "RTE-013",
+            "RTE-025"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-006"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-007",
+              "BIO-006"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FAD-004",
+        "entity_id": "FAD-004",
+        "name": "FAD-004",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-001",
+          "region_id": "REG-002",
+          "territory_id": "TER-001",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-002",
+            "BIO-007",
+            "BIO-010"
+          ],
+          "route_ids": [
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-021",
+            "RTE-022",
+            "RTE-023"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-002",
+          "BIO-007"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-001",
+              "BIO-002",
+              "BIO-007"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FAS-001",
+        "entity_id": "FAS-001",
+        "name": "FAS-001",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-001",
+          "region_id": "REG-001",
+          "territory_id": "TER-011",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-008",
+            "BIO-002"
+          ],
+          "route_ids": [
+            "RTE-001",
+            "RTE-003",
+            "RTE-013"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-008"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-011",
+              "BIO-008"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FAS-002",
+        "entity_id": "FAS-002",
+        "name": "FAS-002",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-001",
+          "region_id": "REG-002",
+          "territory_id": "TER-008",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-007",
+            "BIO-001"
+          ],
+          "route_ids": [
+            "RTE-014",
+            "RTE-015"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-007"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-008",
+              "BIO-007"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FAS-003",
+        "entity_id": "FAS-003",
+        "name": "FAS-003",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-004",
+          "region_id": "REG-006",
+          "territory_id": "TER-007",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-006",
+            "BIO-010",
+            "BIO-009"
+          ],
+          "route_ids": [
+            "RTE-012",
+            "RTE-013",
+            "RTE-025"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-006",
+          "BIO-010"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-007",
+              "BIO-006",
+              "BIO-010"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FAS-004",
+        "entity_id": "FAS-004",
+        "name": "FAS-004",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-006",
+          "region_id": "REG-008",
+          "territory_id": "TER-009",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-004"
+          ],
+          "route_ids": [
+            "RTE-016",
+            "RTE-017"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-004"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-009",
+              "BIO-004"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P001",
+        "entity_id": "FPN-P001",
+        "name": "FPN-P001",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-001",
+          "region_id": "REG-001",
+          "territory_id": "TER-011",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-008",
+            "BIO-002"
+          ],
+          "route_ids": [
+            "RTE-001",
+            "RTE-003",
+            "RTE-013"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-008"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-011",
+              "BIO-008"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P002",
+        "entity_id": "FPN-P002",
+        "name": "FPN-P002",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-001",
+          "region_id": "REG-002",
+          "territory_id": "TER-001",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-002",
+            "BIO-007",
+            "BIO-010"
+          ],
+          "route_ids": [
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-021",
+            "RTE-022",
+            "RTE-023"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-002",
+          "BIO-007"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-001",
+              "BIO-002",
+              "BIO-007"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P003",
+        "entity_id": "FPN-P003",
+        "name": "FPN-P003",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-004",
+          "region_id": "REG-006",
+          "territory_id": "TER-007",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-006",
+            "BIO-009"
+          ],
+          "route_ids": [
+            "RTE-012",
+            "RTE-013",
+            "RTE-025"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-006",
+          "BIO-009"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-007",
+              "BIO-006",
+              "BIO-009"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P004",
+        "entity_id": "FPN-P004",
+        "name": "FPN-P004",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-003",
+          "region_id": "REG-005",
+          "territory_id": "TER-005",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-007",
+            "BIO-009"
+          ],
+          "route_ids": [
+            "RTE-009",
+            "RTE-010",
+            "RTE-012",
+            "RTE-017"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-007",
+          "BIO-009"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-005",
+              "BIO-007",
+              "BIO-009"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P005",
+        "entity_id": "FPN-P005",
+        "name": "FPN-P005",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-002",
+          "region_id": "REG-004",
+          "territory_id": "TER-002",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-005"
+          ],
+          "route_ids": [
+            "RTE-006",
+            "RTE-007",
+            "RTE-008",
+            "RTE-009"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-005"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-002",
+              "BIO-005"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P006",
+        "entity_id": "FPN-P006",
+        "name": "FPN-P006",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-005",
+          "region_id": "REG-007",
+          "territory_id": "TER-004",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-003"
+          ],
+          "route_ids": [
+            "RTE-011",
+            "RTE-018",
+            "RTE-023",
+            "RTE-025"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-003"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-004",
+              "BIO-003"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P007",
+        "entity_id": "FPN-P007",
+        "name": "FPN-P007",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-006",
+          "region_id": "REG-008",
+          "territory_id": "TER-009",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-004"
+          ],
+          "route_ids": [
+            "RTE-016",
+            "RTE-017"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-004"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-009",
+              "BIO-004"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P008",
+        "entity_id": "FPN-P008",
+        "name": "FPN-P008",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-001",
+          "region_id": "REG-001",
+          "territory_id": "TER-011",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-008",
+            "BIO-002"
+          ],
+          "route_ids": [
+            "RTE-001",
+            "RTE-003",
+            "RTE-013"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-008"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-011",
+              "BIO-008"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P009",
+        "entity_id": "FPN-P009",
+        "name": "FPN-P009",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-001",
+          "region_id": "REG-002",
+          "territory_id": "TER-001",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-002",
+            "BIO-007",
+            "BIO-010"
+          ],
+          "route_ids": [
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-021",
+            "RTE-022",
+            "RTE-023"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-002",
+          "BIO-007"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-001",
+              "BIO-002",
+              "BIO-007"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P010",
+        "entity_id": "FPN-P010",
+        "name": "FPN-P010",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-004",
+          "region_id": "REG-006",
+          "territory_id": "TER-007",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-006",
+            "BIO-009"
+          ],
+          "route_ids": [
+            "RTE-012",
+            "RTE-013",
+            "RTE-025"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-006",
+          "BIO-009"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-007",
+              "BIO-006",
+              "BIO-009"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P011",
+        "entity_id": "FPN-P011",
+        "name": "FPN-P011",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-003",
+          "region_id": "REG-005",
+          "territory_id": "TER-005",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-007",
+            "BIO-009"
+          ],
+          "route_ids": [
+            "RTE-009",
+            "RTE-010",
+            "RTE-012",
+            "RTE-017"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-007",
+          "BIO-009"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-005",
+              "BIO-007",
+              "BIO-009"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P012",
+        "entity_id": "FPN-P012",
+        "name": "FPN-P012",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-002",
+          "region_id": "REG-004",
+          "territory_id": "TER-002",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-005"
+          ],
+          "route_ids": [
+            "RTE-006",
+            "RTE-007",
+            "RTE-008",
+            "RTE-009"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-005"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-002",
+              "BIO-005"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P013",
+        "entity_id": "FPN-P013",
+        "name": "FPN-P013",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-005",
+          "region_id": "REG-007",
+          "territory_id": "TER-004",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-003"
+          ],
+          "route_ids": [
+            "RTE-011",
+            "RTE-018",
+            "RTE-023",
+            "RTE-025"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-003"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-004",
+              "BIO-003"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P014",
+        "entity_id": "FPN-P014",
+        "name": "FPN-P014",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-006",
+          "region_id": "REG-008",
+          "territory_id": "TER-009",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-004"
+          ],
+          "route_ids": [
+            "RTE-016",
+            "RTE-017"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-004"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-009",
+              "BIO-004"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P015",
+        "entity_id": "FPN-P015",
+        "name": "FPN-P015",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-001",
+          "region_id": "REG-001",
+          "territory_id": "TER-011",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-008",
+            "BIO-002"
+          ],
+          "route_ids": [
+            "RTE-001",
+            "RTE-003",
+            "RTE-013"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-008"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-011",
+              "BIO-008"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P016",
+        "entity_id": "FPN-P016",
+        "name": "FPN-P016",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-001",
+          "region_id": "REG-002",
+          "territory_id": "TER-001",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-002",
+            "BIO-007",
+            "BIO-010"
+          ],
+          "route_ids": [
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-021",
+            "RTE-022",
+            "RTE-023"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-002",
+          "BIO-007"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-001",
+              "BIO-002",
+              "BIO-007"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P017",
+        "entity_id": "FPN-P017",
+        "name": "FPN-P017",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-004",
+          "region_id": "REG-006",
+          "territory_id": "TER-007",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-006",
+            "BIO-009"
+          ],
+          "route_ids": [
+            "RTE-012",
+            "RTE-013",
+            "RTE-025"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-006",
+          "BIO-009"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-007",
+              "BIO-006",
+              "BIO-009"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P018",
+        "entity_id": "FPN-P018",
+        "name": "FPN-P018",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-003",
+          "region_id": "REG-005",
+          "territory_id": "TER-005",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-007",
+            "BIO-009"
+          ],
+          "route_ids": [
+            "RTE-009",
+            "RTE-010",
+            "RTE-012",
+            "RTE-017"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-007",
+          "BIO-009"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-005",
+              "BIO-007",
+              "BIO-009"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P019",
+        "entity_id": "FPN-P019",
+        "name": "FPN-P019",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-002",
+          "region_id": "REG-004",
+          "territory_id": "TER-002",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-005"
+          ],
+          "route_ids": [
+            "RTE-006",
+            "RTE-007",
+            "RTE-008",
+            "RTE-009"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-005"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-002",
+              "BIO-005"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P020",
+        "entity_id": "FPN-P020",
+        "name": "FPN-P020",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-005",
+          "region_id": "REG-007",
+          "territory_id": "TER-004",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-003"
+          ],
+          "route_ids": [
+            "RTE-011",
+            "RTE-018",
+            "RTE-023",
+            "RTE-025"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-003"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-004",
+              "BIO-003"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P021",
+        "entity_id": "FPN-P021",
+        "name": "FPN-P021",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-006",
+          "region_id": "REG-008",
+          "territory_id": "TER-009",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-004"
+          ],
+          "route_ids": [
+            "RTE-016",
+            "RTE-017"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-004"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-009",
+              "BIO-004"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P022",
+        "entity_id": "FPN-P022",
+        "name": "FPN-P022",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-001",
+          "region_id": "REG-001",
+          "territory_id": "TER-011",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-008",
+            "BIO-002"
+          ],
+          "route_ids": [
+            "RTE-001",
+            "RTE-003",
+            "RTE-013"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-008"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-011",
+              "BIO-008"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P023",
+        "entity_id": "FPN-P023",
+        "name": "FPN-P023",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-001",
+          "region_id": "REG-002",
+          "territory_id": "TER-001",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-002",
+            "BIO-007",
+            "BIO-010"
+          ],
+          "route_ids": [
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-021",
+            "RTE-022",
+            "RTE-023"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-002",
+          "BIO-007"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-001",
+              "BIO-002",
+              "BIO-007"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P024",
+        "entity_id": "FPN-P024",
+        "name": "FPN-P024",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-004",
+          "region_id": "REG-006",
+          "territory_id": "TER-007",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-006",
+            "BIO-009"
+          ],
+          "route_ids": [
+            "RTE-012",
+            "RTE-013",
+            "RTE-025"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-006",
+          "BIO-009"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-007",
+              "BIO-006",
+              "BIO-009"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P025",
+        "entity_id": "FPN-P025",
+        "name": "FPN-P025",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-003",
+          "region_id": "REG-005",
+          "territory_id": "TER-005",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-007",
+            "BIO-009"
+          ],
+          "route_ids": [
+            "RTE-009",
+            "RTE-010",
+            "RTE-012",
+            "RTE-017"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-007",
+          "BIO-009"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-005",
+              "BIO-007",
+              "BIO-009"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P026",
+        "entity_id": "FPN-P026",
+        "name": "FPN-P026",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-002",
+          "region_id": "REG-004",
+          "territory_id": "TER-002",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-005"
+          ],
+          "route_ids": [
+            "RTE-006",
+            "RTE-007",
+            "RTE-008",
+            "RTE-009"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-005"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-002",
+              "BIO-005"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P027",
+        "entity_id": "FPN-P027",
+        "name": "FPN-P027",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-005",
+          "region_id": "REG-007",
+          "territory_id": "TER-004",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-003"
+          ],
+          "route_ids": [
+            "RTE-011",
+            "RTE-018",
+            "RTE-023",
+            "RTE-025"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-003"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-004",
+              "BIO-003"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P028",
+        "entity_id": "FPN-P028",
+        "name": "FPN-P028",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-006",
+          "region_id": "REG-008",
+          "territory_id": "TER-009",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-004"
+          ],
+          "route_ids": [
+            "RTE-016",
+            "RTE-017"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-004"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-009",
+              "BIO-004"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P029",
+        "entity_id": "FPN-P029",
+        "name": "FPN-P029",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-001",
+          "region_id": "REG-001",
+          "territory_id": "TER-011",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-008",
+            "BIO-002"
+          ],
+          "route_ids": [
+            "RTE-001",
+            "RTE-003",
+            "RTE-013"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-008"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-011",
+              "BIO-008"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P030",
+        "entity_id": "FPN-P030",
+        "name": "FPN-P030",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-001",
+          "region_id": "REG-002",
+          "territory_id": "TER-001",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-002",
+            "BIO-007",
+            "BIO-010"
+          ],
+          "route_ids": [
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-021",
+            "RTE-022",
+            "RTE-023"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-002",
+          "BIO-007"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-001",
+              "BIO-002",
+              "BIO-007"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P031",
+        "entity_id": "FPN-P031",
+        "name": "FPN-P031",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-004",
+          "region_id": "REG-006",
+          "territory_id": "TER-007",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-006",
+            "BIO-009"
+          ],
+          "route_ids": [
+            "RTE-012",
+            "RTE-013",
+            "RTE-025"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-006",
+          "BIO-009"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-007",
+              "BIO-006",
+              "BIO-009"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P032",
+        "entity_id": "FPN-P032",
+        "name": "FPN-P032",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-003",
+          "region_id": "REG-005",
+          "territory_id": "TER-005",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-007",
+            "BIO-009"
+          ],
+          "route_ids": [
+            "RTE-009",
+            "RTE-010",
+            "RTE-012",
+            "RTE-017"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-007",
+          "BIO-009"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-005",
+              "BIO-007",
+              "BIO-009"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P033",
+        "entity_id": "FPN-P033",
+        "name": "FPN-P033",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-002",
+          "region_id": "REG-004",
+          "territory_id": "TER-002",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-005"
+          ],
+          "route_ids": [
+            "RTE-006",
+            "RTE-007",
+            "RTE-008",
+            "RTE-009"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-005"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-002",
+              "BIO-005"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P034",
+        "entity_id": "FPN-P034",
+        "name": "FPN-P034",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-005",
+          "region_id": "REG-007",
+          "territory_id": "TER-004",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-003"
+          ],
+          "route_ids": [
+            "RTE-011",
+            "RTE-018",
+            "RTE-023",
+            "RTE-025"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-003"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-004",
+              "BIO-003"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P035",
+        "entity_id": "FPN-P035",
+        "name": "FPN-P035",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-006",
+          "region_id": "REG-008",
+          "territory_id": "TER-009",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-004"
+          ],
+          "route_ids": [
+            "RTE-016",
+            "RTE-017"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-004"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-009",
+              "BIO-004"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P036",
+        "entity_id": "FPN-P036",
+        "name": "FPN-P036",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-001",
+          "region_id": "REG-001",
+          "territory_id": "TER-011",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-008",
+            "BIO-002"
+          ],
+          "route_ids": [
+            "RTE-001",
+            "RTE-003",
+            "RTE-013"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-008"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-011",
+              "BIO-008"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P037",
+        "entity_id": "FPN-P037",
+        "name": "FPN-P037",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-001",
+          "region_id": "REG-002",
+          "territory_id": "TER-001",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-002",
+            "BIO-007",
+            "BIO-010"
+          ],
+          "route_ids": [
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-021",
+            "RTE-022",
+            "RTE-023"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-002",
+          "BIO-007"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-001",
+              "BIO-002",
+              "BIO-007"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P038",
+        "entity_id": "FPN-P038",
+        "name": "FPN-P038",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-004",
+          "region_id": "REG-006",
+          "territory_id": "TER-007",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-006",
+            "BIO-009"
+          ],
+          "route_ids": [
+            "RTE-012",
+            "RTE-013",
+            "RTE-025"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-006",
+          "BIO-009"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-007",
+              "BIO-006",
+              "BIO-009"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P039",
+        "entity_id": "FPN-P039",
+        "name": "FPN-P039",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-003",
+          "region_id": "REG-005",
+          "territory_id": "TER-005",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-007",
+            "BIO-009"
+          ],
+          "route_ids": [
+            "RTE-009",
+            "RTE-010",
+            "RTE-012",
+            "RTE-017"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-007",
+          "BIO-009"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-005",
+              "BIO-007",
+              "BIO-009"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P040",
+        "entity_id": "FPN-P040",
+        "name": "FPN-P040",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-002",
+          "region_id": "REG-004",
+          "territory_id": "TER-002",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-005"
+          ],
+          "route_ids": [
+            "RTE-006",
+            "RTE-007",
+            "RTE-008",
+            "RTE-009"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-005"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-002",
+              "BIO-005"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P041",
+        "entity_id": "FPN-P041",
+        "name": "FPN-P041",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-005",
+          "region_id": "REG-007",
+          "territory_id": "TER-004",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-003"
+          ],
+          "route_ids": [
+            "RTE-011",
+            "RTE-018",
+            "RTE-023",
+            "RTE-025"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-003"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-004",
+              "BIO-003"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P042",
+        "entity_id": "FPN-P042",
+        "name": "FPN-P042",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-006",
+          "region_id": "REG-008",
+          "territory_id": "TER-009",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-004"
+          ],
+          "route_ids": [
+            "RTE-016",
+            "RTE-017"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-004"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-009",
+              "BIO-004"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      },
+      {
+        "id": "DIST-FAU-FPN-P043",
+        "entity_id": "FPN-P043",
+        "name": "FPN-P043",
+        "representation_type": "DISTRIBUTION_MASK",
+        "distribution_primary": {
+          "planet_id": "PLA-001",
+          "macroregion_id": "MAC-001",
+          "region_id": "REG-001",
+          "territory_id": "TER-011",
+          "local_id": null,
+          "biome_ids": [
+            "BIO-008",
+            "BIO-002"
+          ],
+          "route_ids": [
+            "RTE-001",
+            "RTE-003",
+            "RTE-013"
+          ]
+        },
+        "distribution_secondary_territory_ids": [],
+        "biome_ids": [
+          "BIO-008"
+        ],
+        "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+        "ecological_basis": [
+          "habitat da ficha funcional",
+          "clima/bioma da Etapa 4",
+          "água e cadeia ecológica compatíveis"
+        ],
+        "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+        "atlas_visibility": "REGIONAL",
+        "spoiler_level": 0,
+        "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+        "confidence": "CANON_DERIVED",
+        "provenance": [
+          {
+            "source": "extracted_sources/04/ANDROMEDA_FAUNA_PLANETARIA_AGENT_V1_0_FUNCIONAL_FINAL/data/FAUNA_MASTER_CATALOG_64_V1_0.json",
+            "spatialization_method": "HABITAT_TO_BIOME_DERIVATION",
+            "derived_from": [
+              "TER-011",
+              "BIO-008"
+            ],
+            "timestamp": "2026-08-14T00:00:00Z",
+            "authority": "TERRA MAX"
+          }
+        ]
+      }
+    ],
+    "count": 64,
+    "ecological_rule": "Cada espécie usa máscara territorial/bioma; não há ponto único arbitrário."
+  }
+}

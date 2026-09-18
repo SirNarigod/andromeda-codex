@@ -1,0 +1,14 @@
+{
+  "record_id":"STELLAR-CONTENT-ROUTING-CONSTITUTION-V1.3",
+  "project":"ANDROMEDA CODEX",
+  "version":"V1.3",
+  "status":"ACTIVE_R2_COMPATIBLE_DERIVATION",
+  "supersedes":"STELLAR_CONTENT_ROUTING_CONSTITUTION_V1_2",
+  "authority":{"scope":"CONTENT_ORGANIZATION","r2":"READ_ONLY_ORIGIN"},
+  "dependencies":["STELLAR_CANON_CONSTITUTION_V1_1.json","STELLAR_FOUNDATION_INDEX_V1_9.json","../../01_LORE/CONTENT_ROUTING_REGISTRY_V4.json"],
+  "invariants":["ONE_CANONICAL_HOME_PER_CONTENT_ITEM","ROUTING_REQUIRES_AUTHORITY_AND_PROVENANCE","SIMULATION_READS_BUT_NEVER_WRITES_CANON","EXTERNAL_TOOL_OUTPUT_IS_PENDING_DERIVATION","PLAYABLE_TAXONOMY_IS_QUALITATIVE_UNTIL_BALANCE_APPROVAL","SUBREGION_DOES_NOT_DUPLICATE_R2_LOCALITY"],
+  "prohibitions":["NO_DUPLICATE_CANONICAL_COPY","NO_RUNTIME_CANON_PROMOTION","NO_EXTERNAL_IMPORT_CANON_WRITE","NO_SEALED_CONTENT_EXPORT_BY_DEFAULT","NO_NAMED_R2_PERSON_AS_DEFAULT_NPC","NO_NUMERIC_BALANCE_AS_LORE"],
+  "simulation_effects":["LivingSim and Living Scale resolve subregions, catalogs and tuning through filtered references.","UE5 exports distinguish derived geography from technical balance rows.","Varga and Estação Oriental remain R2 homes referenced by subregions, never copied."],
+  "allowed_states":["CANON_R2_CONFIRMADO","CANON_DERIVADO_ATIVO","PENDING_DERIVATION","EVIDENCIA_TECNICA_NAO_CANONICA"],
+  "story_generators":["Uma sub-região conecta conteúdo local sem criar uma cidade paralela.","Um número de balanceamento melhora uma luta sem definir valor de uma vida no canon.","Uma nova expansão usa o mesmo esquema sem alterar a fonte R2."]
+}

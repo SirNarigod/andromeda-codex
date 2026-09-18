@@ -1,0 +1,8 @@
+{
+  "record_id": "ARPG-HISTORICAL-V21-SUPERSESSION-NOTICE-V0.1.0",
+  "status": "ACTIVE",
+  "superseded_authority": "All Country Scale V1.3-V1.5 reports/readiness metadata that claim Master V2.1.0 are historical evidence only in this ARPG branch.",
+  "active_authority": "Master V2.0.1 + Living Simulation Engine V1.0.0 + ARPG Foundation V0.1.0 DEV derived gameplay layer.",
+  "quarantined_test_runners": 11,
+  "policy": "Historical evidence is preserved, but cannot override the active baseline or be counted as current PASS evidence."
+}

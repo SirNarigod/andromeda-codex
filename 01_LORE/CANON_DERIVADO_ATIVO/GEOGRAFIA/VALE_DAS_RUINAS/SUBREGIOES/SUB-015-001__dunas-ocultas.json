@@ -1,0 +1,38 @@
+{
+  "record_id": "SUB-015-001",
+  "record_kind": "DERIVED_SUBREGION_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Dunas Ocultas",
+  "parent_political_unit": "TER-015",
+  "provenance": {
+    "approval": "AUTHORIAL_DECISION_FASE_48",
+    "r2_anchors": [],
+    "compatibility": "Território 100% novo por decisão explícita do autor (fase 48) — a ruína é anônima, sem nome de civilização histórica confirmada, para não inventar fato HIS-XXX novo."
+  },
+  "function": "Extenso mar de dunas móveis, atravessado por rotas conhecidas apenas por guias experientes.",
+  "locality_references": [
+    "LOC-015-001"
+  ],
+  "permitted_catalog_links": {
+    "npc_roles": [],
+    "professions": [
+      "guia nômade"
+    ],
+    "encounters": [],
+    "resources": []
+  },
+  "local_conflicts": [
+    "conhecimento de rota versus imprevisibilidade das tempestades de areia"
+  ],
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY_BEYOND_FASE_48_GATE",
+    "NO_AUTOMATIC_KENUA_SCENE",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_FIXED_BORDER_COORDINATE",
+    "NO_NAMED_HISTORICAL_CIVILIZATION"
+  ],
+  "story_generators": [
+    "Uma descoberta em Dunas Ocultas levanta perguntas sobre o passado do vale sem respostas definitivas."
+  ]
+}

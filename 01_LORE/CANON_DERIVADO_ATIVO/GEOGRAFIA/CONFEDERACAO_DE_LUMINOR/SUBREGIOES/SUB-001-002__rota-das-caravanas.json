@@ -1,0 +1,11 @@
+{
+  "record_id": "SUB-001-002", "record_kind": "DERIVED_SUBREGION_PROFILE", "authority": "CANON_DERIVADO_ATIVO", "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Rota das Caravanas", "parent_political_unit": "TER-001",
+  "provenance": {"approval": "GAMEPLAY_DERIVED_DEV_SOURCE", "r2_anchors": ["TER-001"], "compatibility": "Camada administrativa e narrativa local; não cria fronteira, cidade, soberania ou nova autoridade."},
+  "function": "Corredor terrestre que liga Lúminor a territórios vizinhos, usado por caravanas mercantis.",
+  "locality_references": ["LOC-001-002 Posto de Caravana"],
+  "permitted_catalog_links": {"npc_roles": ["classe:Soldados"], "professions": ["guia", "guarda de caravana"], "encounters": [], "resources": []},
+  "local_conflicts": ["proteção paga versus assalto de rota", "prioridade de passagem entre caravanas rivais"],
+  "prohibitions": ["NO_NEW_SOVEREIGNTY", "NO_AUTOMATIC_KENUA_SCENE", "NO_R2_EPISODE_REWRITE", "NO_FIXED_BORDER_COORDINATE"],
+  "story_generators": ["Uma caravana é atacada e a escolta precisa decidir entre perseguir os assaltantes ou proteger a carga restante.", "Duas caravanas disputam a mesma janela de passagem segura."]
+}

@@ -1,0 +1,24 @@
+{
+  "checkpoint": "FIRST_PLAYABLE_V0_1_22_DEV_FIX1",
+  "parent_checkpoint": "FIRST_PLAYABLE_V0_1_22_DEV",
+  "status": "STATIC_VALIDATED_RUNTIME_PENDING",
+  "runtime_defect_fixed": "freed_selected_target_type_error",
+  "functional_changes": "NONE",
+  "preserved_contracts": {
+    "left_ground": "MOVE",
+    "left_selectable": "SELECT_AND_STOP",
+    "E_non_enemy": "APPROACH_AND_CONTEXT_ACTION",
+    "space_enemy": "ATTACK_SELECTED",
+    "right_click": "DIRECT_CONTEXT_ACTION",
+    "global_attack_cooldown_s": 2.0,
+    "ranged_rule_v0_1_19": "CLOSED_UNCHANGED"
+  },
+  "static_checks": {
+    "checks": 15,
+    "passed": 15,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1",
+  "backup_authorized": false
+}

@@ -1,0 +1,185 @@
+{
+  "record_id": "ARPG-STAGE-PLAN-V0.5.0",
+  "status": "ACTIVE",
+  "supersedes": "ARPG-STAGE-PLAN-V0.4.0",
+  "stage_count": 23,
+  "numbering": "00-22",
+  "revision_reason": "User expanded completeness target to fishing, hunting, vehicles, roads, bridges, complete canonical biomes, technologies, machines, robots and all available Andrômeda lore as gameplay-bound content. Dedicated mobility, technology/robotics and lore-completeness gates added.",
+  "safe_batch_limit": {
+    "major_stages_per_cycle": 1,
+    "minor_stages_per_cycle": 2,
+    "rule": "Finish test/correction/regression/checkpoint before advancing."
+  },
+  "stages": [
+    {
+      "index": 0,
+      "folder": "00_GOVERNANCE",
+      "purpose": "Governança ARPG, baselines e Canon Guard",
+      "status": "PASS"
+    },
+    {
+      "index": 1,
+      "folder": "01_GAME_CORE",
+      "purpose": "Game loop, input autoritativo, perfis e comandos",
+      "status": "PASS"
+    },
+    {
+      "index": 2,
+      "folder": "02_CHARACTER",
+      "purpose": "Personagem, atributos, nível, XP e vitais",
+      "status": "PASS"
+    },
+    {
+      "index": 3,
+      "folder": "03_COMBAT",
+      "purpose": "Combate ARPG, dano, crítico, defesa e resistências",
+      "status": "PASS"
+    },
+    {
+      "index": 4,
+      "folder": "04_ATTRIBUTES_RESOURCES",
+      "purpose": "Recursos adaptativos, regeneração, consumíveis e cooldowns",
+      "status": "PASS"
+    },
+    {
+      "index": 5,
+      "folder": "05_ITEMS",
+      "purpose": "Itemização universal, equipamentos, materiais, raridade, qualidade, sockets e inventário player/NPC",
+      "status": "PASS"
+    },
+    {
+      "index": 6,
+      "folder": "06_SKILLS",
+      "purpose": "Habilidades ativas/passivas, maestria e build emergente",
+      "status": "PASS"
+    },
+    {
+      "index": 7,
+      "folder": "07_ACTORS",
+      "purpose": "Atores, hostilidade, PvE AI, elites, minibosses e bosses",
+      "status": "PASS"
+    },
+    {
+      "index": 8,
+      "folder": "08_WORLD_BIOMES",
+      "purpose": "Mundo ARPG, zonas, dungeons, encontros, waypoints, clima, hidrologia e biomas canônicos individualizados",
+      "status": "PLANNED"
+    },
+    {
+      "index": 9,
+      "folder": "09_GATHERING_HUNTING_FISHING_WORK",
+      "purpose": "Mineração, madeira, flora, agricultura, caça, pesca, recursos naturais, ferramentas, profissões e trabalho player/NPC",
+      "status": "PLANNED"
+    },
+    {
+      "index": 10,
+      "folder": "10_MOBILITY_INFRASTRUCTURE",
+      "purpose": "Automóveis/veículos, montarias quando aplicável, estradas, rotas, pontes, transporte e infraestrutura de travessia",
+      "status": "PLANNED"
+    },
+    {
+      "index": 11,
+      "folder": "11_TECH_MACHINES_ROBOTICS",
+      "purpose": "Tecnologias, máquinas, robôs, energia, automação, oficinas e sistemas industriais funcionais",
+      "status": "PLANNED"
+    },
+    {
+      "index": 12,
+      "folder": "12_QUESTS_NARRATIVE_CULTURE",
+      "purpose": "Quests, campanha, história, personagens, idiomas, crenças, cultura e narrativa jogável",
+      "status": "PLANNED"
+    },
+    {
+      "index": 13,
+      "folder": "13_ECONOMY_CRAFTING",
+      "purpose": "Vendors, stash, reparo, crafting, culinária, serviços, mercados e cadeias produtivas",
+      "status": "PLANNED"
+    },
+    {
+      "index": 14,
+      "folder": "14_LIVING_INTEGRATION",
+      "purpose": "Living x ARPG: facções, leis, população, ecologia, trabalho NPC, consequências e LOD sistêmico",
+      "status": "PLANNED"
+    },
+    {
+      "index": 15,
+      "folder": "15_SAVE_PERSISTENCE",
+      "purpose": "Save, persistência, morte, recuperação, respawn e continuidade",
+      "status": "PLANNED"
+    },
+    {
+      "index": 16,
+      "folder": "16_GODOT_RUNTIME",
+      "purpose": "Vertical slice integrado no Godot; conexão direta/editor bridge usada quando usuário estiver no PC",
+      "status": "PLANNED"
+    },
+    {
+      "index": 17,
+      "folder": "17_BALANCE",
+      "purpose": "Balanceamento global de progressão, combate, loot, trabalho, recursos, economia e dificuldade",
+      "status": "PLANNED"
+    },
+    {
+      "index": 18,
+      "folder": "18_TESTS",
+      "purpose": "Regressão, stress, determinismo, segurança, integridade e performance",
+      "status": "PLANNED"
+    },
+    {
+      "index": 19,
+      "folder": "19_LORE_COMPLETENESS",
+      "purpose": "Gate de cobertura: nenhuma entidade/rota/local/bioma/tecnologia/recurso relevante do Master fica sem binding ou guard explícito",
+      "status": "PLANNED"
+    },
+    {
+      "index": 20,
+      "folder": "20_PLACEHOLDER_CONTENT",
+      "purpose": "Todo conteúdo funcional com placeholders, sem depender de arte final",
+      "status": "PLANNED"
+    },
+    {
+      "index": 21,
+      "folder": "21_PRE_ART",
+      "purpose": "Gate final de jogabilidade e conteúdo pré-arte",
+      "status": "PLANNED"
+    },
+    {
+      "index": 22,
+      "folder": "22_VISUAL_PIPELINE",
+      "purpose": "Arte conceitual, modelos, animações, VFX, áudio e UI final",
+      "status": "BLOCKED_UNTIL_STAGE_21_PASS"
+    }
+  ],
+  "lore_completeness_contract": {
+    "coverage_file": "10_ARPG/STAGE07/ANDROMEDA_LORE_GAMEPLAY_COVERAGE_V0_1_0.json",
+    "master_entities": 1660,
+    "master_relationships": 9429,
+    "entity_unmapped": 0,
+    "rule": "Canonical identity and relationships are READ_ONLY. Gameplay behavior/values may be derived in separate runtime namespaces. Any unsupported conversion stays guarded rather than invented as canon."
+  },
+  "requested_capabilities": {
+    "fishing": 9,
+    "hunting": 9,
+    "mining": 9,
+    "wood_flora": 9,
+    "professions_player_npc": 9,
+    "vehicles": 10,
+    "roads": 10,
+    "bridges": 10,
+    "transport": 10,
+    "biomes_complete_individual": 8,
+    "technology": 11,
+    "machines": 11,
+    "robots": 11
+  },
+  "godot_status": {
+    "connection": "USER_REPORTED_CONNECTED",
+    "current_user_device": "MOBILE",
+    "stage07_editor_required": false,
+    "direct_use_policy": "Notify user before first necessary direct editor use; defer while user is mobile."
+  },
+  "current_checkpoint": "STAGE_07_PASS",
+  "current_stage": 8,
+  "next_stage_after_pass": 9,
+  "updated_at": "2026-08-18T18:10:22.226727+00:00"
+}

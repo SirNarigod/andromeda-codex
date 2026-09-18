@@ -1,0 +1,555 @@
+{
+  "record_id": "V15-INTEGRATED-STRESS",
+  "worlds_expected": 30,
+  "worlds_completed": 30,
+  "passed": 30,
+  "failed": 0,
+  "max_transform_delta_m": 4.578295920509845e-05,
+  "total_known_features": 279,
+  "move_passes": 90,
+  "collision_blocks": 0,
+  "status": "PASS",
+  "rows": [
+    {
+      "seed": 15000,
+      "npc": "NPC-01-01-01-002",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 9,
+      "health": "PASS",
+      "transform_delta_max_m": 3.087182994931936e-05,
+      "environment": {
+        "temp": 16.63,
+        "rain": true,
+        "daylight": 0.0
+      }
+    },
+    {
+      "seed": 15001,
+      "npc": "NPC-01-01-02-001",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 10,
+      "health": "PASS",
+      "transform_delta_max_m": 4.578295920509845e-05,
+      "environment": {
+        "temp": 15.01,
+        "rain": false,
+        "daylight": 0.0
+      }
+    },
+    {
+      "seed": 15002,
+      "npc": "NPC-01-01-01-017",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 9,
+      "health": "PASS",
+      "transform_delta_max_m": 3.178420593030751e-05,
+      "environment": {
+        "temp": 19.8,
+        "rain": false,
+        "daylight": 0.0
+      }
+    },
+    {
+      "seed": 15003,
+      "npc": "NPC-01-01-01-006",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 9,
+      "health": "PASS",
+      "transform_delta_max_m": 2.2807158529758453e-05,
+      "environment": {
+        "temp": 19.71,
+        "rain": true,
+        "daylight": 0.0
+      }
+    },
+    {
+      "seed": 15004,
+      "npc": "NPC-01-01-01-011",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 9,
+      "health": "PASS",
+      "transform_delta_max_m": 4.307134076952934e-05,
+      "environment": {
+        "temp": 19.35,
+        "rain": true,
+        "daylight": 0.0
+      }
+    },
+    {
+      "seed": 15005,
+      "npc": "NPC-01-01-01-009",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 9,
+      "health": "PASS",
+      "transform_delta_max_m": 4.457344766706228e-05,
+      "environment": {
+        "temp": 22.37,
+        "rain": true,
+        "daylight": 0.0
+      }
+    },
+    {
+      "seed": 15006,
+      "npc": "NPC-01-01-01-001",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 9,
+      "health": "PASS",
+      "transform_delta_max_m": 4.3319305405020714e-05,
+      "environment": {
+        "temp": 21.64,
+        "rain": false,
+        "daylight": 0.0
+      }
+    },
+    {
+      "seed": 15007,
+      "npc": "NPC-01-01-01-005",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 10,
+      "health": "PASS",
+      "transform_delta_max_m": 1.715321559458971e-05,
+      "environment": {
+        "temp": 16.32,
+        "rain": false,
+        "daylight": 0.0
+      }
+    },
+    {
+      "seed": 15008,
+      "npc": "NPC-01-01-01-012",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 9,
+      "health": "PASS",
+      "transform_delta_max_m": 4.57335845567286e-05,
+      "environment": {
+        "temp": 22.41,
+        "rain": true,
+        "daylight": 0.0
+      }
+    },
+    {
+      "seed": 15009,
+      "npc": "NPC-01-01-02-006",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 9,
+      "health": "PASS",
+      "transform_delta_max_m": 3.428023774176836e-05,
+      "environment": {
+        "temp": 11.54,
+        "rain": false,
+        "daylight": 0.0
+      }
+    },
+    {
+      "seed": 15010,
+      "npc": "NPC-01-02-01-007",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 9,
+      "health": "PASS",
+      "transform_delta_max_m": 3.7083489587530494e-05,
+      "environment": {
+        "temp": 22.75,
+        "rain": true,
+        "daylight": 0.0
+      }
+    },
+    {
+      "seed": 15011,
+      "npc": "NPC-01-01-01-002",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 10,
+      "health": "PASS",
+      "transform_delta_max_m": 1.3092285371385515e-05,
+      "environment": {
+        "temp": 13.23,
+        "rain": false,
+        "daylight": 0.0
+      }
+    },
+    {
+      "seed": 15012,
+      "npc": "NPC-01-01-01-007",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 9,
+      "health": "PASS",
+      "transform_delta_max_m": 2.2466294467449188e-05,
+      "environment": {
+        "temp": 16.08,
+        "rain": true,
+        "daylight": 0.0
+      }
+    },
+    {
+      "seed": 15013,
+      "npc": "NPC-01-01-02-003",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 10,
+      "health": "PASS",
+      "transform_delta_max_m": 3.3208634704351425e-05,
+      "environment": {
+        "temp": 10.47,
+        "rain": false,
+        "daylight": 0.0
+      }
+    },
+    {
+      "seed": 15014,
+      "npc": "NPC-01-01-01-016",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 9,
+      "health": "PASS",
+      "transform_delta_max_m": 3.9508082409156486e-05,
+      "environment": {
+        "temp": 19.4,
+        "rain": true,
+        "daylight": 0.0
+      }
+    },
+    {
+      "seed": 15015,
+      "npc": "NPC-01-01-01-008",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 9,
+      "health": "PASS",
+      "transform_delta_max_m": 1.1376738257240504e-05,
+      "environment": {
+        "temp": 11.29,
+        "rain": true,
+        "daylight": 0.0
+      }
+    },
+    {
+      "seed": 15016,
+      "npc": "NPC-01-01-01-006",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 9,
+      "health": "PASS",
+      "transform_delta_max_m": 2.9291841201484203e-05,
+      "environment": {
+        "temp": 20.61,
+        "rain": true,
+        "daylight": 0.0
+      }
+    },
+    {
+      "seed": 15017,
+      "npc": "NPC-01-01-01-013",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 10,
+      "health": "PASS",
+      "transform_delta_max_m": 2.5345012545585632e-05,
+      "environment": {
+        "temp": 9.03,
+        "rain": true,
+        "daylight": 0.0
+      }
+    },
+    {
+      "seed": 15018,
+      "npc": "NPC-01-01-01-008",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 9,
+      "health": "PASS",
+      "transform_delta_max_m": 3.551645204424858e-05,
+      "environment": {
+        "temp": 18.49,
+        "rain": true,
+        "daylight": 0.0
+      }
+    },
+    {
+      "seed": 15019,
+      "npc": "NPC-01-01-02-002",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 9,
+      "health": "PASS",
+      "transform_delta_max_m": 4.3366686441004276e-05,
+      "environment": {
+        "temp": 13.84,
+        "rain": false,
+        "daylight": 0.0
+      }
+    },
+    {
+      "seed": 15020,
+      "npc": "NPC-01-01-01-006",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 10,
+      "health": "PASS",
+      "transform_delta_max_m": 4.47368947789073e-05,
+      "environment": {
+        "temp": 10.5,
+        "rain": true,
+        "daylight": 0.0
+      }
+    },
+    {
+      "seed": 15021,
+      "npc": "NPC-01-01-01-026",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 9,
+      "health": "PASS",
+      "transform_delta_max_m": 1.5102617908269167e-05,
+      "environment": {
+        "temp": 11.56,
+        "rain": false,
+        "daylight": 0.0
+      }
+    },
+    {
+      "seed": 15022,
+      "npc": "NPC-01-01-01-009",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 9,
+      "health": "PASS",
+      "transform_delta_max_m": 2.2516818717122078e-05,
+      "environment": {
+        "temp": 20.49,
+        "rain": false,
+        "daylight": 0.0
+      }
+    },
+    {
+      "seed": 15023,
+      "npc": "NPC-01-02-01-014",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 9,
+      "health": "PASS",
+      "transform_delta_max_m": 3.679981455206871e-05,
+      "environment": {
+        "temp": 8.42,
+        "rain": true,
+        "daylight": 0.0
+      }
+    },
+    {
+      "seed": 15024,
+      "npc": "NPC-01-01-01-003",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 10,
+      "health": "PASS",
+      "transform_delta_max_m": 3.0469265766441822e-05,
+      "environment": {
+        "temp": 25.16,
+        "rain": true,
+        "daylight": 0.0
+      }
+    },
+    {
+      "seed": 15025,
+      "npc": "NPC-01-01-01-002",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 9,
+      "health": "PASS",
+      "transform_delta_max_m": 4.0713814087212086e-05,
+      "environment": {
+        "temp": 19.03,
+        "rain": true,
+        "daylight": 0.0
+      }
+    },
+    {
+      "seed": 15026,
+      "npc": "NPC-01-02-01-008",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 9,
+      "health": "PASS",
+      "transform_delta_max_m": 1.6662779671605676e-05,
+      "environment": {
+        "temp": 13.34,
+        "rain": true,
+        "daylight": 0.0
+      }
+    },
+    {
+      "seed": 15027,
+      "npc": "NPC-01-01-03-006",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 9,
+      "health": "PASS",
+      "transform_delta_max_m": 2.485059667378664e-05,
+      "environment": {
+        "temp": 13.8,
+        "rain": true,
+        "daylight": 0.0
+      }
+    },
+    {
+      "seed": 15028,
+      "npc": "NPC-01-01-01-004",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 10,
+      "health": "PASS",
+      "transform_delta_max_m": 4.365493077784777e-05,
+      "environment": {
+        "temp": 12.15,
+        "rain": false,
+        "daylight": 0.0
+      }
+    },
+    {
+      "seed": 15029,
+      "npc": "NPC-01-01-01-017",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 10,
+      "health": "PASS",
+      "transform_delta_max_m": 3.7483987398445606e-05,
+      "environment": {
+        "temp": 21.19,
+        "rain": false,
+        "daylight": 0.0
+      }
+    }
+  ],
+  "failures": []
+}

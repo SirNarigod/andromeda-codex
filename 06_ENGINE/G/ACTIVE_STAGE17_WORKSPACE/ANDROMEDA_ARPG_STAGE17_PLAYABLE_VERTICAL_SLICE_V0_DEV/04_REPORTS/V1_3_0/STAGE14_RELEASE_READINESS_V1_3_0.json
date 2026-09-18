@@ -1,0 +1,9 @@
+{
+  "record_id": "STAGE14-RELEASE-READINESS-V1.3.0",
+  "status": "PASS",
+  "checks": 67,
+  "passed": 67,
+  "failed": 0,
+  "failures": [],
+  "historical_v1_0_readiness": "SUPERSEDED_FOR_V1_3_BASELINE_AUTHORITY"
+}

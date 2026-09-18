@@ -1,0 +1,52 @@
+{
+  "record_id": "ARPG-ECONOMY-CRAFTING-CONTRACT-V1.4.0",
+  "version": "V1.4.0",
+  "stage": 13,
+  "authority": "ANDROMEDA_ARPG_STAGE13_ECONOMY_CRAFTING",
+  "country_ref": "TER-011",
+  "canon_policy": {
+    "master": "V2.0.1_READ_ONLY",
+    "canonical_mutations": 0,
+    "numeric_prices": "RUNTIME_ONLY_NOT_CANON",
+    "currency": "CREDIT_RUNTIME_NOT_CANON",
+    "merchant_identity": "NO_CANONICAL_NPC_INVENTED",
+    "recipe_quantities": "GAMEPLAY_DERIVED",
+    "culinary_output_identities": "MASTER_READ_ONLY_PROJECTION"
+  },
+  "canonical_anchors": [
+    "POI-002",
+    "POI-003",
+    "POI-006",
+    "INDN-008"
+  ],
+  "culinary_refs": [
+    "CUL-PREP-NORM-TER011-001",
+    "CUL-PREP-NORM-TER011-002",
+    "CUL-PREP-NORM-TER011-003",
+    "CUL-PREP-NORM-TER011-004"
+  ],
+  "systems": [
+    "WALLETS",
+    "EXPLICIT_QUOTES",
+    "BUY_SELL",
+    "SUPPLY_DEMAND",
+    "LOGISTICS_PRICE_FACTOR",
+    "VENDOR_STOCK",
+    "STASH",
+    "CRAFTING",
+    "CULINARY",
+    "TECH_RECIPE_DISPATCH",
+    "REPAIR_SERVICE",
+    "PLAYER_NPC_SHARED_ECONOMY"
+  ],
+  "integrations": [
+    "STAGE05_ITEM_CORE",
+    "STAGE09_WORK_GATHERING",
+    "STAGE10_MOBILITY_INFRASTRUCTURE",
+    "STAGE11_TECHNOLOGY",
+    "STAGE12_NARRATIVE"
+  ],
+  "art_dependency": "NONE",
+  "godot_required": false,
+  "status": "PASS"
+}

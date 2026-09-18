@@ -1,0 +1,185 @@
+{
+  "record_id": "ANDROMEDA-STAGE16B-AUTHORITY-BACKEND-ACCEPTANCE-V0.8.0",
+  "captured_at": "2026-08-21T23:30:00-03:00",
+  "round_scope": "BACKEND_ONLY_NO_GODOT_INTEGRATION",
+  "readiness": "READY_FOR_CODEX_GODOT_ROUNDTRIP_AFTER_TWO_CLIENT_SIDE_CHANGES",
+  "readiness_note": "Backend authority is real, tested and persistent. The B01 client still needs to send session_ref on GET /snapshot and a command_ref on POST /command; neither was changed this round because the Godot project was out of scope.",
+
+  "authority": {
+    "engine_class": "IntegratedARPGEngineV16A",
+    "engine_version": "ARPG-V1.8.0-DEV-PRE-GODOT",
+    "engine_authority": "ANDROMEDA_ARPG_STAGE16A_VERTICAL_SLICE_PRE_GODOT",
+    "stage16a_integrated_arpg_engine_v16a_loaded": true,
+    "master_version": "V2.0.1",
+    "master_release_path": "C:/Users/thall/ANDROMEDA_PRODUCT/ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE.zip",
+    "master_release_sha256": "6D9AC3CCE7DCF6A65FDCF73859C332A0211C1AF52D149077BEEF554BF7BBD0B2",
+    "master_read_only": true,
+    "master_mutation_detected": false,
+    "master_v2_1_0_promoted": false,
+    "canonical_mutation_detected": false,
+    "gameplay_rules_duplicated_in_fastapi": false,
+    "second_gameplay_implementation_created": false
+  },
+
+  "baseline_integrity": {
+    "stage16a_checkpoint": "C:/Users/thall/Documents/ARPG CODEX/ANDROMEDA_ARPG_STAGE16A_PRE_GODOT_V1_8_0_DEV_CHECKPOINT_V0_8_0.zip",
+    "checkpoint_entries": 724,
+    "verified": 724,
+    "missing": 0,
+    "mismatch": 0,
+    "protected_checkpoint_bytes_changed": 0,
+    "living_v1_5_historical_tree_modified": false,
+    "godot_project_modified": false,
+    "historical_living_api_modified": false,
+    "historical_server_connected_to_godot": false,
+    "work_mode": "ADDITIVE_ONLY_NEW_DIRECTORY_12_AUTHORITY_BACKEND"
+  },
+
+  "runtime": {
+    "python": "3.14.6",
+    "python_executable": "C:/Users/thall/ANDROMEDA_PRODUCT/.venv/Scripts/python.exe",
+    "venv": "C:/Users/thall/ANDROMEDA_PRODUCT/.venv",
+    "fastapi": "0.141.1",
+    "uvicorn": "0.52.3",
+    "new_dependencies_installed": [],
+    "launch_command": "C:/Users/thall/ANDROMEDA_PRODUCT/.venv/Scripts/python.exe -m uvicorn stage16b_authority_api:app --host 127.0.0.1 --port 8000 --workers 1",
+    "working_directory": "C:/Users/thall/Documents/andromeda-argp/ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/12_AUTHORITY_BACKEND",
+    "cold_bootstrap_seconds": 20.2,
+    "warm_resume_seconds": 5.3,
+    "workers_required": 1,
+    "final_listener_on_8000": 0
+  },
+
+  "endpoints": [
+    {"method": "GET", "path": "/health", "adapter": "health()"},
+    {"method": "POST", "path": "/session/bind", "adapter": "bind_session()"},
+    {"method": "POST", "path": "/session/revoke", "adapter": "revoke_session()"},
+    {"method": "GET", "path": "/snapshot", "adapter": "snapshot()", "session_carrier": "query session_ref or header X-Andromeda-Session"},
+    {"method": "POST", "path": "/session/resync", "adapter": "resync()"},
+    {"method": "POST", "path": "/command", "adapter": "command()"}
+  ],
+  "http_status_policy": "DOMAIN_REJECTIONS_RETURN_HTTP_200_WITH_STATUS_REJECTED",
+  "enabled_commands": ["MOVE_TO_POINT"],
+  "disabled_commands_this_round": ["MOVE_VECTOR", "INTERACT", "DISCOVER", "DUNGEON_MOVE", "PATH_PLAN"],
+
+  "audit_gaps_closed": [
+    {"gap": "MOVE_TO_POINT command", "status": "CLOSED", "how": "Adapter translates the absolute target into the core MOVE_VECTOR authority (collision gate + step_vector). No movement rule reimplemented."},
+    {"gap": "client session_ref validation/binding", "status": "CLOSED", "how": "Every route resolves the actor from the core v15_godot_sessions row. A client-supplied session that is unknown/revoked is rejected and inert."},
+    {"gap": "snapshot session_ref", "status": "CLOSED"},
+    {"gap": "snapshot_id", "status": "CLOSED", "format": "S16B-<12-digit sequence>-<16 hex projection digest>"},
+    {"gap": "snapshot sequence/version", "status": "CLOSED", "how": "Persisted monotonic integer per session in s16b_snapshot_cursor; survives process restart."},
+    {"gap": "duplicate/replay rejection", "status": "CLOSED", "how": "command_ref idempotency key journalled in s16b_command_journal; replays are answered from the journal and never reapplied."},
+    {"gap": "strict rejection of client-supplied authority fields", "status": "CLOSED", "how": "Recursive server-side scan of the whole envelope; mirrors and extends the andromeda_bridge.gd guard."},
+    {"gap": "Stage16A ARPG authority composition", "status": "CLOSED", "how": "IntegratedARPGEngineV16A with Stage16A health gate PASS at boot."},
+    {"gap": "passing backend-owned validation suite", "status": "CLOSED", "evidence": "reports/STAGE16B_AUTHORITY_BACKEND_VALIDATION_V0_8_0.json"}
+  ],
+
+  "test_results": {
+    "runner": "run_stage16b_authority_validation.py",
+    "status": "PASS",
+    "seconds": 461.892,
+    "steps": [
+      {"step": "master_v2_0_1_integrity", "status": "PASS"},
+      {"step": "stage16a_protected_checkpoint", "status": "PASS", "entries": 724, "verified": 724, "protected_bytes_changed": 0},
+      {"step": "stage16b_authority_adapter_suite", "status": "PASS", "tests": 35},
+      {"step": "stage16b_authority_http_suite", "status": "PASS", "tests": 16},
+      {"step": "stage16a_regression", "status": "PASS", "tests": 209},
+      {"step": "stage16a_vertical_slice_stress", "status": "PASS", "checks": 20, "failed": 0},
+      {"step": "stage15_validation", "status": "PASS", "checks": 24, "failed": 0},
+      {"step": "stage15_stress", "status": "PASS", "checks": 23, "failed": 0}
+    ],
+    "python_tests_total": 260,
+    "stress_and_validation_checks_total": 67,
+    "warnings_promoted_to_pass": 0,
+    "skipped_tests": 0
+  },
+
+  "phase3_matrix": {
+    "valid_session": "PASS",
+    "wrong_session": "PASS_REJECTED_AND_INERT",
+    "forged_player_ref": "PASS_REJECTED",
+    "forged_authority_fields": "PASS_REJECTED",
+    "valid_command": "PASS",
+    "duplicate_command": "PASS_REPLAY_SUPPRESSED_WORLD_DID_NOT_ADVANCE",
+    "snapshot_1": "PASS_SEQUENCE_0",
+    "snapshot_2": "PASS_SEQUENCE_1",
+    "stale_snapshot": "PASS_STALE_OR_DUPLICATE_DETECTED",
+    "reconnect": "PASS",
+    "resync": "PASS",
+    "persistence": "PASS",
+    "server_restart": "PASS_WORLD_SESSION_MOTION_CURSOR_AND_JOURNAL_PRESERVED"
+  },
+
+  "corrections_found": [
+    {
+      "finding": "The historical living_api.py ignores the client session_ref and substitutes the hard-coded GODOT-FASTAPI-001, which is why wrong-session probes passed. The core GodotIsometricAdapterV15 already rejects unknown sessions correctly.",
+      "resolution": "Session validation is delegated to the existing core instead of being reinvented."
+    },
+    {
+      "finding": "ContinuousMovementSystem.step_vector has no event_ref and no idempotency, unlike every ARPG core. Two identical MOVE_VECTOR calls apply twice.",
+      "resolution": "Replay suppression owned by the transport layer via command_ref journal; core idempotency is preserved where it exists (future commands pass command_ref through as the core event_ref)."
+    },
+    {
+      "finding": "godot_adapter_v15.py cannot receive MOVE_TO_POINT: it is inside the 724-entry protected Stage16A checkpoint, verified byte-identical.",
+      "resolution": "MOVE_TO_POINT implemented in the new adapter as parameter translation over MOVE_VECTOR. Zero protected bytes changed."
+    },
+    {
+      "finding": "Stage15/Stage16A runners default to /mnt/data Linux master paths and 03_TESTS runners do not put 01_RUNTIME on sys.path.",
+      "resolution": "Normalised at the configuration layer (ANDROMEDA_MASTER_RELEASE + PYTHONPATH set by run_stage16b_authority_validation.py) rather than by editing protected test files."
+    },
+    {
+      "finding": "The phantom Master V2.1.0 paths live in the protected historical Living V1.5 tree (LIVING_COUNTRY_SCALE_WORK/.../03_TESTS), not in the Stage16A project.",
+      "resolution": "Not edited. The Stage16B authority path refuses any V2.1.0 token or hash at configuration time; living_runtime SUPPORTED_MASTER_RELEASES already accepts V2.0.1 only."
+    }
+  ],
+
+  "risks": [
+    "Single-process authority: the SQLite world requires --workers 1. A second worker would corrupt session/cursor ordering.",
+    "Cold bootstrap costs ~20 s; any client health poll must tolerate that window.",
+    "The MOVE_TO_POINT step duration is sized using a mirror of the core env-factor clamp (0.25..1.25) and duration band (0, 10]. Test test_37 pins those bands against the live core so drift fails loudly.",
+    "The adapter var/ directory holds a real persistent world; deleting it silently creates a new world_instance_id on next boot.",
+    "No authentication on the HTTP surface. It binds 127.0.0.1 only and must not be exposed beyond loopback."
+  ],
+
+  "blockers": [
+    {
+      "id": "GODOT-B01-SNAPSHOT-SESSION",
+      "owner": "CODEX_GODOT",
+      "summary": "andromeda_bridge.gd request_snapshot() issues GET /snapshot with no session_ref, so the server cannot validate the session.",
+      "fix": "Append ?session_ref=<session.session_ref()> or send the X-Andromeda-Session header."
+    },
+    {
+      "id": "GODOT-B01-COMMAND-REF",
+      "owner": "CODEX_GODOT",
+      "summary": "The command envelope carries no idempotency key, so a transport retry is indistinguishable from a legitimate repeat.",
+      "fix": "Add a stable command_ref per intent, reused across retries of the same envelope."
+    },
+    {
+      "id": "GODOT-B01-SESSION-BIND",
+      "owner": "CODEX_GODOT",
+      "summary": "ClientSession.bind_session only sets a local cursor; nothing calls the server to open the session.",
+      "fix": "POST /session/bind with the chosen session_ref before the first snapshot."
+    }
+  ],
+
+  "not_done_this_round": [
+    "No Godot project file was created, edited or launched.",
+    "No Godot-to-backend connection was established.",
+    "Combat, economy, loot, gathering, survival, quest and death commands were not enabled.",
+    "No Stage16 final checkpoint, restore or backup was created.",
+    "Stage17 / B12 were not started."
+  ],
+
+  "artifacts": [
+    "12_AUTHORITY_BACKEND/STAGE16B_AUTHORITY_ADAPTER_MAP_V0_8_0.md",
+    "12_AUTHORITY_BACKEND/README_STAGE16B_AUTHORITY_BACKEND.md",
+    "12_AUTHORITY_BACKEND/authority_config.py",
+    "12_AUTHORITY_BACKEND/andromeda_authority_adapter.py",
+    "12_AUTHORITY_BACKEND/stage16b_authority_api.py",
+    "12_AUTHORITY_BACKEND/run_stage16b_authority_validation.py",
+    "12_AUTHORITY_BACKEND/tests/test_stage16b_authority_adapter.py",
+    "12_AUTHORITY_BACKEND/tests/test_stage16b_authority_http.py",
+    "12_AUTHORITY_BACKEND/reports/STAGE16B_AUTHORITY_BACKEND_VALIDATION_V0_8_0.json",
+    "12_AUTHORITY_BACKEND/STAGE16B_AUTHORITY_BACKEND_ACCEPTANCE_V0_8_0.json"
+  ]
+}

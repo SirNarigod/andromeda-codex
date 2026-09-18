@@ -1,0 +1,154 @@
+{
+  "record_identity": "S17_C1_C2_ACCEPTANCE_RECORD_V0_1_0_DEV",
+  "created_at": "2026-08-28T18:01:03.8582017Z",
+  "stage": "STAGE17",
+  "process": "ETAPA_31_S17_C1_RESOURCE_AUTHORITY_POSITION_SOURCE_AND_CONDITIONAL_C2",
+  "status": "STOPPED_BY_CONTRACT",
+  "gap_id": "S17_C1_RESOURCE_POSITION_AUTHORITY_GAP",
+  "c1": {
+    "status": "BLOCKED",
+    "gate_created": false,
+    "gate_executed": false,
+    "checks": 0,
+    "reason": "No individual metric territorial position exists for Resource Nodes in the authoritative backend."
+  },
+  "c2": {
+    "status": "NOT_STARTED",
+    "gate_created": false,
+    "gate_executed": false,
+    "checks": 0,
+    "reason": "C2 was conditional on C1 closing without a structural gap."
+  },
+  "authority_audit": {
+    "resource_identity": {
+      "exists": true,
+      "format": "GTH-*",
+      "persistence": "arpg_gathering_nodes",
+      "derivation": "sha256(world_seed|activity|block_ref|source_kind|source_ref)"
+    },
+    "resource_metric_position": {
+      "exists": false,
+      "persisted": false,
+      "deterministic_derivation_exists": false,
+      "projected": false,
+      "current_projection_label": "GODOT_LOCAL_PLACEHOLDER_ONLY"
+    },
+    "gather_location_rule": {
+      "player_source": "world.profile_state(profile_ref).zone_ref -> zone.block_ref",
+      "resource_source": "arpg_gathering_nodes.block_ref",
+      "validation": "worker_block_ref == node_block_ref",
+      "metric_distance_calculation": false,
+      "allowed_range_m": null,
+      "line_of_sight_check": false,
+      "blocker_check": false,
+      "rejection_reasons": [
+        "WORKER_NOT_AT_RESOURCE_NODE",
+        "WORKER_MOVED_AWAY_FROM_RESOURCE_NODE"
+      ]
+    },
+    "resource_kinds": {
+      "TREE": "LOGGING/FLORA; identity and block only",
+      "ROCK": "MINING/MINERAL kind=STONE; identity and block only",
+      "ORE": "MINING/MINERAL kind!=STONE; identity and block only",
+      "FLORA": "FORAGING/FLORA; identity and block only",
+      "AGRICULTURE": "AGRICULTURE/FLORA; identity and block only"
+    },
+    "ground_loot_candidate_position": {
+      "source": "movement.state(profile.avatar_ref)",
+      "meaning": "authoritative Player position at delivery time",
+      "resource_position_proof": false
+    }
+  },
+  "runtime_evidence": {
+    "world_instance_id": "rt:world:bd0f78f5-7018-4cc6-8f47-34f8f2875e47",
+    "zone_ref": "ZONE-STA-05-BLK-04",
+    "tree_example_ref": "GTH-CA3D9A47934BD64A24B4",
+    "ore_example_ref": "GTH-34AC1BC54C33917F0553",
+    "examples_are_hardcoded_in_source": false,
+    "sqlite_open_mode": "READ_ONLY",
+    "gathering_node_columns": [
+      "node_ref",
+      "world_instance_id",
+      "zone_ref",
+      "block_ref",
+      "activity_type",
+      "source_kind",
+      "source_ref",
+      "output_item_ref",
+      "definition_json",
+      "definition_hash"
+    ],
+    "metric_position_columns": []
+  },
+  "source_changes": {
+    "backend_stage17": [],
+    "godot_stage17": [],
+    "protected_runtime": [],
+    "stage16b": []
+  },
+  "regressions": {
+    "executed_this_process": [],
+    "reason_not_executed": "The stop rule fired before any implementation/source change.",
+    "entry_state_preserved": {
+      "S17_00": "22/22 PASS",
+      "S17_A": "26/26 PASS",
+      "S17_B1": "36/36 PASS",
+      "S17_B2": "73/73 PASS",
+      "S17_C0": "75/75 PASS",
+      "B01": "54/54 PASS",
+      "G19": "71/71 PASS",
+      "Gathering": "77/77 PASS",
+      "GroundLoot": "53/53 PASS",
+      "Combat": "91/91 PASS"
+    },
+    "entry_results_claimed_as_new_runs": false
+  },
+  "minimum_correct_change": {
+    "location": "Stage17 backend fork only",
+    "protected_core_change_required": false,
+    "new_authority_decision_required": true,
+    "requirements": [
+      "Explicit per-node metric placement policy",
+      "Stable world_instance_id+node_ref identity",
+      "iso_x_m/iso_y_m/altitude_m in movement-state frame",
+      "Walkable/traversal-valid placement",
+      "Persistence or immutable versioned reproducible derivation",
+      "Server-side metric gather range validation",
+      "Projection with world/session/sequence/authority label",
+      "Client forbidden from supplying resource coordinates"
+    ],
+    "do_not_use": [
+      "Godot Node transform",
+      "Block center treated as node position",
+      "Player position",
+      "Ground Loot output position",
+      "Uncontracted random offset or seed"
+    ]
+  },
+  "risk": [
+    "Existing worlds need stable placement migration without changing GTH refs or depletion state.",
+    "Placement must not materialize nodes inside blockers or invalid water/traversal surfaces.",
+    "Changing placement formulas between versions would break reload continuity.",
+    "Block-level historical gather acceptance is substantially coarser than metric interaction authority.",
+    "LOS/blocker authority is also absent and needs an explicit contract if required server-side."
+  ],
+  "stage16b_integrity": {
+    "status": "CLOSED_READ_ONLY",
+    "checkpoint_sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc",
+    "backup_sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc"
+  },
+  "housekeeping": {
+    "backend": "OFF",
+    "listener_8000_count": 0,
+    "development_checkpoint_created": false,
+    "zip_created": false,
+    "backup_created": false
+  },
+  "status_flags": {
+    "ENEMY_AUTHORITY_SPATIAL_BINDING_READY": true,
+    "RESOURCE_AUTHORITY_SPATIAL_BINDING_READY": false,
+    "S17_INTERACTION_APPROACH_AUTHORITY_MIGRATION": "PARTIAL_ONE_CLASS_ONLY",
+    "S17_COMBAT_CHASE_AUTHORITY_MIGRATION": "PENDING"
+  },
+  "next_recommendation": "S17-C1A_RESOURCE_METRIC_PLACEMENT_AUTHORITY_DESIGN_AND_AUTHORIAL_PLACEMENT_POLICY"
+}

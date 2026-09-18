@@ -1,0 +1,57 @@
+{
+  "record_id": "STELLAR-INSTITUTION-CULTURE-LAW-V1.1",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.1",
+  "status": "CANON_DERIVADO_ATIVO_R2_COMPATIBLE",
+  "supersedes": "STELLAR_INSTITUTION_CULTURE_LAW_V1_0",
+  "authority": {
+    "r2": ["FAC-001", "FAC-002", "FAC-003", "FAC-004", "FAC-005", "TER-011"],
+    "derived_sources": ["STELLAR_INSTITUTION_NETWORK_V1_0", "STELLAR_AGRICULTURAL_ZONES_V1_0", "FAC-009", "FAC-010"],
+    "scope": "INSTITUTIONS_CULTURE_LOCAL_PRODUCTION_AND_PROFESSIONAL_NETWORKS"
+  },
+  "dependencies": ["STELLAR_SOVEREIGNTY_TERRITORY_LAW_V1_2.json", "STELLAR_MAGIC_TECHNOLOGY_LAW_V1_1.json", "../../01_LORE/STELLAR_REBASE_R2/R2_SOURCE_AUTHORITY_INDEX_V1_0.json"],
+  "invariants": [
+    "INSTITUTIONAL_SERVICE_IS_NOT_SOVEREIGNTY",
+    "CULTURE_IS_LOCAL_AND_PLURAL",
+    "NO_OFFICIAL_LANGUAGE_IS_INFERRED",
+    "NO_OFFICIAL_RELIGION_IS_INFERRED",
+    "PRODUCTION_CHAINS_REMAIN_RESOURCE_TO_SPECIES_TO_MANAGEMENT_TO_STORAGE_TO_ROUTE_TO_MARKET",
+    "R2_INSTITUTIONS_KEEP_THEIR_DEFINED_SCOPE",
+    "FAC_009_AND_FAC_010_ARE_TRANSREGIONAL_NON_SOVEREIGN_PROFESSIONAL_ORGANIZATIONS",
+    "LOCAL_CHARTER_DOES_NOT_OVERRIDE_COMMUNITY_OR_POLITICAL_AUTHORITY"
+  ],
+  "prohibitions": [
+    "NO_CULTURE_STEREOTYPE_AS_CANON",
+    "NO_INSTITUTIONAL_NETWORK_AS_PLANETARY_GOVERNMENT",
+    "NO_AUTOMATIC_TERRITORIAL_CONTROL_FROM_SERVICE_COVERAGE",
+    "NO_UNSOURCED_NEW_FACTION_PROMOTION",
+    "NO_FACTION_PRESENCE_AS_KENUA_CONNECTION",
+    "NO_RUNTIME_LICENSE_OR_CONTRACT_PROMOTION_TO_CANON"
+  ],
+  "r2_institutional_anchors": [
+    {"id": "FAC-001", "role": "Árvores Anciãs: preservação do Coração Ancestral, registro de magia e contenção biológica."},
+    {"id": "FAC-002", "role": "Reis Magos: instituição ligada ao Domínio dos Reis Magos."},
+    {"id": "FAC-003", "role": "Conselho de Convergência: negociação de crises e rotas sem governo planetário."},
+    {"id": "FAC-004", "role": "Vigília Radicular: resposta e contenção radicular."},
+    {"id": "FAC-005", "role": "Círculo Arcano-Botânico: estudo multidisciplinar da flor fóssil."}
+  ],
+  "derived_networks": [
+    "health network",
+    "education and science network",
+    "justice and administration network",
+    "eight agricultural and livestock zones",
+    "FAC-009: worker skill, safety and workshop preservation network",
+    "FAC-010: voluntary license, contract and supply network"
+  ],
+  "simulation_effects": [
+    "LivingSim may represent a local charter, workshop capacity, safety strain, contract pressure and maintenance backlog without assigning sovereign control.",
+    "Living Scale may show a local presence only when a chapter has location reference, scope, provenance and charter or community consent.",
+    "FAC-009 and FAC-010 may cooperate under crisis and disagree over licenses, costs, contracts, standards and workshop autonomy."
+  ],
+  "allowed_states": ["LOCAL_SERVICE", "LOCAL_CHARTER", "REGIONAL_NETWORK", "STRAINED", "DISPUTED", "DISRUPTED", "RECOVERING", "RECOGNITION_PENDING"],
+  "story_generators": [
+    "A safety inspection prevents a collapse but threatens a town's only income before winter.",
+    "A licensed route is interrupted, forcing the League and Collegiate to negotiate the cost of emergency repairs.",
+    "An independent workshop invokes local autonomy against both organizations while its apprentices demand protection."
+  ]
+}

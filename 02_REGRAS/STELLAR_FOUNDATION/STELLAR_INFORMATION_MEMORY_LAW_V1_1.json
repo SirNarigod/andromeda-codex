@@ -1,0 +1,62 @@
+{
+  "record_id": "STELLAR-INFORMATION-MEMORY-LAW-V1.1",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.1",
+  "status": "ACTIVE_R2_COMPATIBLE_DERIVATION",
+  "supersedes": "STELLAR_INFORMATION_MEMORY_LAW_V1_0",
+  "authority": {
+    "scope": "MEMORY_KNOWLEDGE_RELATIONSHIP_REPUTATION_RUMOR",
+    "memory": "SUBJECTIVE_APPEND_ONLY",
+    "truth": "EVIDENCE_GOVERNED",
+    "runtime": "ENGINE_AGNOSTIC"
+  },
+  "dependencies": [
+    "STELLAR_COSMOLOGY_CANON_V1_2.json",
+    "STELLAR_PLAYER_CAMPAIGN_LAW_V1_0.json",
+    "STELLAR_LIFE_DEATH_REBIRTH_LAW_V1_1.json",
+    "../ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/02_CONTRACTS/MEMORY_KNOWLEDGE_RELATIONSHIP_REPUTATION_CONTRACT_V1_0.json"
+  ],
+  "invariants": [
+    "MEMORY_IS_NOT_PROOF",
+    "MEMORY_AND_SOCIAL_EVENTS_ARE_APPEND_ONLY",
+    "COMMUNICATION_DOES_NOT_VERIFY_TRUTH",
+    "INDEPENDENT_EVIDENCE_MAY_VERIFY_OR_FALSIFY_A_CLAIM",
+    "SAME_ORIGIN_DOES_NOT_AMPLIFY_CONFIDENCE",
+    "RELATIONSHIPS_ARE_DIRECTED_AND_CONTEXTUAL",
+    "REPUTATION_IS_SCOPED_NOT_GLOBAL",
+    "LOST_TRUTH_REMAINS_RECONSTRUCTIBLE_BY_INDEPENDENT_EVIDENCE"
+  ],
+  "prohibitions": [
+    "NO_LLM_TRUTH_PROMOTION",
+    "NO_FORCED_RECONCILIATION_OF_CONTESTED_MEMORY",
+    "NO_RUMOR_AS_PLANETARY_PROMOTION_EVIDENCE",
+    "NO_PRIVATE_MEMORY_AS_PUBLIC_CANON",
+    "NO_ECHO_MEMORY_TREATED_AS_VERIFIED_FACT",
+    "NO_RUNTIME_REPUTATION_SCORE_PROMOTED_TO_CANON"
+  ],
+  "simulation_effects": [
+    "Rumors retain origin, path, confidence and scope; hop limits and decay rates are engine-tunable safeguards rather than canonical constants.",
+    "Knowledge claims transition among UNKNOWN, CONTESTED, VERIFIED_TRUE and VERIFIED_FALSE only through direct or independently verified evidence.",
+    "Relationships and reputations replay from immutable events, allowing a local consequence to be audited after a death, quest or rebirth.",
+    "Rebirth echoes enter as subjective claims and cannot prove identity, historical fact or legal inheritance by themselves."
+  ],
+  "allowed_states": [
+    "UNKNOWN",
+    "CONTESTED",
+    "VERIFIED_TRUE",
+    "VERIFIED_FALSE",
+    "SEALED_PRIVATE",
+    "LOST_FRAGMENT",
+    "ECHO_CLAIM"
+  ],
+  "story_generators": [
+    "Uma cidade transforma um rumor sobre o renascido em reputação hostil, embora a única testemunha direta o defenda.",
+    "Dois fragmentos independentes revelam que uma lembrança de eco era verdadeira, mas a verdade fere uma aliança local.",
+    "Uma relação de confiança sobrevive como sensação depois da morte, enquanto a pessoa reencontrada não reconhece o novo corpo."
+  ],
+  "compatibility": {
+    "v1_0": "Preserved as historical source; V1.1 removes prototype tuning values from canon while retaining provenance and evidence rules.",
+    "memory_contract": "The Stage16 contract is a compatible derived source only; its code and storage design are not UE5 requirements.",
+    "r2": "No rumor, private memory or runtime evidence can rewrite a sealed R2 fact."
+  }
+}

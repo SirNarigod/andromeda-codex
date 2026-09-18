@@ -1,0 +1,13 @@
+{
+  "record_id": "STELLAR-VARGA-VERTICAL-SLICE-BOUNDARY-LAW-V1.0",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.0",
+  "status": "ACTIVE_R2_COMPATIBLE_DERIVATION",
+  "authority": {"scope":"VARGA_VERTICAL_SLICE_BOUNDARIES","r2":"READ_ONLY","runtime":"LOCAL_AUDITABLE_ONLY"},
+  "dependencies": ["STELLAR_PLAYER_CAMPAIGN_LAW_V1_0.json", "STELLAR_CAUSALITY_LAW_V1_1.json", "STELLAR_INFORMATION_MEMORY_LAW_V1_1.json", "STELLAR_SOVEREIGNTY_TERRITORY_LAW_V1_2.json", "STELLAR_UE5_BALANCE_BOUNDARY_LAW_V1_0.json"],
+  "invariants": ["CUSTOM_PLAYER_IS_NOT_KENUA", "POSTO_DE_VARGA_REMAINS_R2_REFERENCE", "QUEST_OUTCOMES_ARE_LOCAL_AND_AUDITABLE", "NUMERIC_TUNING_REMAINS_TECHNICAL", "FAUNA_IS_CONTEXTUAL_NOT_DEFAULT_LOOT"],
+  "prohibitions": ["NO_KENUA_OR_R2_NAMED_APPEARANCE", "NO_AMADON_PRE_S01E08", "NO_SEALED_EPISODE_MUTATION", "NO_SOVEREIGNTY_OR_BORDER_CHANGE", "NO_AUTHORIAL_DEATH", "NO_IRREVERSIBLE_ROOT_CHANGE", "NO_RUNTIME_CANON_PROMOTION"],
+  "allowed_states": ["LOCAL_CONTRACT_AVAILABLE", "EVIDENCE_INCOMPLETE", "ROUTE_AVOIDED", "ROUTE_CONTAINED", "ROUTE_OPENED_TEMPORARILY", "REPORT_RECORDED"],
+  "simulation_effects": ["LivingSim may record a local route pressure, medical risk or trust trace.", "Living Scale may display local route availability without changing territorial control.", "UE5 may use the scenario as a technical vertical slice but cannot use save state as canon."],
+  "story_generators": ["A safe detour can become evidence that a community abandons its most vulnerable travelers.", "Containment protects a nest while exposing an urgent contract built on weak proof.", "A brief defensive opening saves a group and leaves the community to debate its cost."]
+}

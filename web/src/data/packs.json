@@ -1,0 +1,33 @@
+[
+ {
+  "id": "EQP-002",
+  "slots": 20,
+  "derived": false
+ },
+ {
+  "id": "MOCHILA-MEDIA",
+  "name": "Mochila de Viagem",
+  "slots": 35,
+  "price": "MÉDIO",
+  "cat": "EQUIP/Logística",
+  "wt": 1.1,
+  "desc": "Mochila ampliada de couro e armação leve.",
+  "fx": {
+   "pack": 35
+  },
+  "derived": true
+ },
+ {
+  "id": "MOCHILA-GRANDE",
+  "name": "Mochila de Expedição",
+  "slots": 50,
+  "price": "ALTO",
+  "cat": "EQUIP/Logística",
+  "wt": 1.9,
+  "desc": "Mochila de expedição com armação reforçada.",
+  "fx": {
+   "pack": 50
+  },
+  "derived": true
+ }
+]

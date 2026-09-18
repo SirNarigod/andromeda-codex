@@ -1,0 +1,45 @@
+{
+  "record_id": "R2_REBASE_DECISION_LEDGER_V1_4",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.4",
+  "status": "LOTS_001_TO_005_APPLIED",
+  "supersedes": "R2_REBASE_DECISION_LEDGER_V1_3",
+  "authority": {"r2": "IMMUTABLE_NARRATIVE_ORIGIN", "user_approval": "REQUIRED_FOR_DIVERGENCE_DISPOSITION"},
+  "invariants": ["NO_PHYSICAL_DELETION_WITHOUT_RECORDED_APPROVAL", "R2_WINS_NARRATIVE_CONFLICTS", "COMPATIBLE_EXPANSIONS_RETAIN_PROVENANCE"],
+  "entries": [
+    {"decision_id": "R2-REBASE-LOT-001", "status": "APPLIED", "reference": "R2_REBASE_DECISION_LEDGER_V1_0.json", "physical_deletion": false},
+    {"decision_id": "R2-REBASE-LOT-002", "status": "APPLIED", "reference": "R2_REBASE_DECISION_LEDGER_V1_1.json", "physical_deletion": false},
+    {"decision_id": "R2-REBASE-LOT-003", "status": "APPLIED", "reference": "R2_REBASE_DECISION_LEDGER_V1_2.json", "physical_deletion": false},
+    {"decision_id": "R2-REBASE-LOT-004", "status": "APPLIED", "reference": "R2_REBASE_DECISION_LEDGER_V1_3.json", "physical_deletion": false},
+    {
+      "decision_id": "R2-REBASE-LOT-005",
+      "date": "2026-09-07",
+      "status": "APPLIED",
+      "user_authorization": "Custom protagonist campaign parallel and protected from Kenua Season 1; literal death rebirth through echoes; talents and bonds persist without facts.",
+      "approved_actions": [
+        "Promote skill, itemization and memory/reputation contracts as compatible derived design sources.",
+        "Create active laws for custom player campaign, echo rebirth, emergent progression, skills/itemization and social information.",
+        "Classify Godot scripts, scenes, logs, prototype numbers and runtime artifacts as technical evidence only.",
+        "Block custom player crossovers, R2 episode changes and pre-Episode-8 Amadon contact unless authorially gated."
+      ],
+      "new_active_records": [
+        "STELLAR_PLAYER_CAMPAIGN_LAW_V1_0",
+        "STELLAR_LIFE_DEATH_REBIRTH_LAW_V1_1",
+        "STELLAR_PROGRESSION_QUEST_CONSEQUENCE_LAW_V1_1",
+        "STELLAR_SKILL_ITEMIZATION_LAW_V1_0",
+        "STELLAR_INFORMATION_MEMORY_LAW_V1_1",
+        "STELLAR_FOUNDATION_INDEX_V1_5"
+      ],
+      "historical_records_preserved": [
+        "STELLAR_LIFE_DEATH_REBIRTH_LAW_V1_0",
+        "STELLAR_PROGRESSION_QUEST_CONSEQUENCE_LAW_V1_0",
+        "STELLAR_INFORMATION_MEMORY_LAW_V1_0",
+        "STELLAR_FOUNDATION_INDEX_V1_4",
+        "R2_REBASE_DECISION_LEDGER_V1_3"
+      ],
+      "physical_deletion": false,
+      "reversible_action": "A later authorial ledger entry may supersede these laws; all source contracts, technical evidence and historical versions remain preserved."
+    }
+  ],
+  "next_batches": ["05_ENGINE_ARPG_RUNTIME"]
+}

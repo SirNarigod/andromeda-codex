@@ -1,0 +1,35 @@
+{
+  "checkpoint": "FIRST_PLAYABLE_V0_1_23_DEV",
+  "parent_checkpoint": "FIRST_PLAYABLE_V0_1_22_FIX1_RUNTIME_PASS",
+  "status": "STATIC_VALIDATED_RUNTIME_PENDING",
+  "functional_scope": [
+    "selection_does_not_interrupt_active_movement",
+    "selection_does_not_create_movement_when_idle"
+  ],
+  "control_contract": {
+    "left_ground": "SET_OR_REPLACE_MOVE_DESTINATION",
+    "left_selectable_while_moving": "SELECT_ONLY_PRESERVE_EXISTING_MOVE_DESTINATION",
+    "left_selectable_while_idle": "SELECT_ONLY_REMAIN_IDLE",
+    "left_scene_transition": "APPROACH_AND_TRANSITION"
+  },
+  "preserved_contracts": {
+    "E_selected_non_enemy": "APPROACH_AND_CONTEXT_ACTION",
+    "space_selected_enemy": "ATTACK_SELECTED",
+    "right_click": "DIRECT_CONTEXT_ACTION",
+    "global_attack_cooldown_s": 2.0,
+    "ranged_rule_v0_1_19": "CLOSED_UNCHANGED",
+    "freed_selected_target_fix": "PRESERVED"
+  },
+  "authority": {
+    "master_v2_0_1": "READ_ONLY_UNCHANGED",
+    "living_engine_v1_0_0": "READ_ONLY_UNCHANGED"
+  },
+  "static_checks": {
+    "checks": 19,
+    "passed": 19,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1",
+  "backup_authorized": false
+}

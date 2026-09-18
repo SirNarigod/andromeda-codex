@@ -1,0 +1,38 @@
+{
+  "record_id": "LOC-011-006",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Abrigo das Fendas",
+  "parent_subregion": "SUB-011-006",
+  "parent_political_unit": "TER-011",
+  "function": "Refúgio de viajantes nas Fendas da Névoa, área de risco elevado.",
+  "notable_link": "Habitat de Louva-Fenda (CRI-012) e Mandíbula-de-Névoa (CRI-013)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-011-006",
+  "settlement_tier": "POSTO",
+  "history": "O abrigo começou como um simples empilhado de pedra que caravaneiros usavam pra passar a noite antes de atravessar as Fendas — ninguém o fundou de propósito. Virou posto permanente depois que a Caravana da Colheita Tardia, doze pessoas e quatro carroças, entrou na névoa numa noite de travessia e nunca mais foi vista — nem corpo, nem carroça, nem rastro. Os sobreviventes de caravanas seguintes começaram a preferir gastar uma noite extra ali a arriscar a mesma travessia sem luz do dia. Hoje é o único ponto habitado numa distância de dois dias em qualquer direção, e o desaparecimento da Colheita Tardia continua sendo a história que todo recém-chegado ouve na primeira noite, contada de um jeito ligeiramente diferente por cada morador.",
+  "sensory": "Um punhado de cabanas de pedra empilhada ao redor de uma fenda que nunca fecha de todo — a névoa sobe dela mesmo em dias secos, carregando o cheiro doce e errado que os moradores aprenderam a reconhecer como aviso antes de qualquer instrumento conseguir medir. Ninguém dorme perto da fenda sem uma lâmpada de resina acesa a noite toda; o brilho baixo e constante das lamparinas espalhadas pelas cabanas é a primeira coisa que um viajante vê ao se aproximar de longe, muito antes de distinguir qualquer construção. O som predominante não é vento nem voz — é o clique seco e irregular dos Louva-Fenda se movendo nas rochas ao redor, um som que os moradores aprenderam a ignorar e que deixa qualquer recém-chegado sem dormir na primeira noite. Em noites de névoa alta, dizem que o clique muda de ritmo, fica quase regular, quase intencional — ninguém confirma isso em voz alta, mas todo mundo escuta pra ter certeza.",
+  "daily_life": "Ninguém sai sozinho depois que a névoa começa a subir, o que costuma acontecer pouco antes do anoitecer. Existe um turno de vigia rotativo entre todos os adultos do posto — não é um cargo, é uma obrigação que cai sobre todo mundo por igual, mesmo viajantes de passagem que ficam mais de uma noite. Antes de cada turno, quem vai vigiar toca a própria lâmpada três vezes contra a pedra da cabana mais próxima — ninguém lembra por que o gesto começou, só que quem esquece de fazê-lo costuma ter uma noite ruim.",
+  "figures": [
+    {
+      "role": "Guarda-Névoa",
+      "name": "Tocho",
+      "note": "Ex-caçador que perdeu dois dedos pra um Louva-Fenda e agora só cobra passagem em informação: quem chegou, quem partiu, o que viu na névoa. Guarda um caderno com décadas de anotações sobre o comportamento da fenda que ele mesmo não sabe interpretar direito, mas se recusa a mostrar pra qualquer um que não tenha provado ser confiável primeiro. Foi criança quando a Colheita Tardia desapareceu — lembra do som das carroças partindo, nunca do silêncio que veio depois, porque estava dormindo."
+    },
+    {
+      "role": "Curandeira do posto",
+      "name": "Mãe Ressa",
+      "note": "Trata os poucos que sobrevivem a um encontro próximo com a névoa — e é a única pessoa no posto que defende abertamente que a Vigília Radicular (FAC-004) deveria assumir o controle do lugar. Tocho discorda: acha que isso tiraria a independência do posto e atrairia atenção demais de fora. Ressa nunca disse a ninguém, nem a Tocho, que reconhece um dos nomes gravados na pedra memorial da Colheita Tardia — o próprio nome de solteira, que ela abandonou décadas atrás por razões que só ela conhece."
+    },
+    {
+      "role": "Filho de caravaneiro",
+      "name": "Ren Dvalek",
+      "note": "Tem vinte e poucos anos e nasceu no posto — o pai dele foi o único que se recusou a fazer a travessia com a Colheita Tardia, uma decisão que salvou a própria vida e o isolou dos outros sobreviventes pelo resto dela. Ren cresceu ouvindo isso ser chamado de covardia por uns e de sorte por outros, e nunca decidiu em qual dos dois acredita."
+    }
+  ],
+  "unsolved_question": "Ninguém nunca encontrou nem um fragmento de carroça da Colheita Tardia — nem na névoa, nem nas rochas ao redor, nem nos anos de buscas que se seguiram. As Mandíbula-de-Névoa não deixam esse tipo de rastro limpo; algo mais levou tudo, ou nada aconteceu do jeito que a história conta.",
+  "hook": "A névoa da fenda está subindo mais alto que o normal há três noites — a Vigília Radicular mandaria alguém investigar se soubesse, mas o posto está fora do alcance de patrulha regular e ninguém quer ser quem avisa. Mãe Ressa já decidiu mandar um mensageiro; Tocho acha que isso é assinar a sentença de morte de quem for mandado, já que a névoa alta costuma vir acompanhada de Mandíbula-de-Névoa mais agressivas que o normal.",
+  "secondary_hook": "O caderno de Tocho tem um padrão que ele nunca notou: a névoa sobe mais alto exatamente nos mesmos intervalos que os relatos de corrupção em outras Fendas do território — um pesquisador da Vigília pagaria bem por esse caderno, mas Tocho não confia em ninguém de fora o bastante pra vender, e Ren Dvalek é a única pessoa que já leu o caderno inteiro sem que Tocho soubesse.",
+  "detail": "O abrigo tem uma regra não-escrita: quem entra bebe água da própria cantil, não da cisterna comum — ninguém sabe ao certo se a névoa contamina a água coletada, só que dois postos vizinhos fecharam depois de parar de seguir essa regra. Quebrar a regra na frente dos moradores é motivo suficiente pra ser expulso do abrigo, mesmo em plena noite com a névoa subindo.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION", "NO_CORRUPTION_GATE_PHASE_OVERRIDE"]
+}

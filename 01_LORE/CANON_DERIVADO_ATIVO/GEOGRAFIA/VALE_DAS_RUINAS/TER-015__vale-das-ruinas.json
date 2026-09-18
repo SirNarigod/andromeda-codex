@@ -1,0 +1,47 @@
+{
+  "record_id": "TER-015",
+  "record_kind": "DERIVED_TERRITORY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Vale das Ruínas",
+  "subtitle": "Território desértico de ruínas anônimas",
+  "provenance": {
+    "approval": "AUTHORIAL_DECISION_FASE_48",
+    "note": "15º território de Stellar, decisão explícita do autor — portão autoral de soberania, mesmo padrão de TER-014 (fase 44)."
+  },
+  "leadership": {
+    "type": "CONSELHO_DERIVADO",
+    "name": "Conselho de Guias",
+    "note": "Liderança coletiva derivada, sem LID-XXX (categoria R2 fechada)."
+  },
+  "culture_note": "Sem CUL-XXX próprio (categoria R2 fechada) — comunidade nômade/de guias descrita qualitativamente.",
+  "subregions": [
+    "SUB-015-001",
+    "SUB-015-002",
+    "SUB-015-003"
+  ],
+  "localities": [
+    "LOC-015-001",
+    "LOC-015-002",
+    "LOC-015-003"
+  ],
+  "terrain_type": "DESERTICO",
+  "primary_transport_mode": "TERRESTRE",
+  "prohibitions": [
+    "NO_R2_CATEGORY_EXPANSION",
+    "NO_NEW_LID_OR_CUL_CODE",
+    "NO_AUTOMATIC_KENUA_SCENE",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_NAMED_HISTORICAL_CIVILIZATION"
+  ],
+  "future_scope": "Perfil economico enriquecido na fase 56 (diretriz de riqueza do usuario) - ver economic_profile estruturado + STELLAR_REGIONAL_SPECIALTY_GOODS_DEV_V1_0.json. Personagens locais adicionais continuam abertos a rodadas futuras.",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "economic_profile": {
+    "primary_resource": "MIN-GOLD (fonte secundaria, SUB-015-002 Ruinas de Antes-do-Pacto / EST-053 Sitio Arqueologico, extrator JOB-016) - artefatos de ruina",
+    "processed_good": "REG-002 Reliquia de Ouro Restaurada (EST-053 Sitio Arqueologico)",
+    "agricultural_zone": "AGZ-099 Oasis do Poco Fundo (OASIS_SUBSISTENCIA, SUB-015-003 / EST-054 Poco Fundo, flora FLO-014)",
+    "agricultural_note": "Subsistencia no Oasis do Poco Fundo (SUB-015-003) formalizada como AGZ-099 (fase 56, AUTHORIAL_DECISION_FASE_56) — tamaras + hortas irrigadas + Flor-de-Areia (FLO-014) como indicador de agua; ver AGZ_EXTENSION_098_103_DEV_V1_0.json",
+    "trade_partners_hint": "Rota continental TER-007-TER-015 ja liga a Rubra-Viva; artefatos escoam por essa rota ate colecionadores",
+    "local_specialty": "REG-002 Reliquia de Ouro Restaurada"
+  }
+}

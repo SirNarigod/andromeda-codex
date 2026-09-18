@@ -1,0 +1,27 @@
+{
+  "record_id": "ARPG-STAGE03-UNIT-REPORT-V0.4.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "stage": "03/18",
+  "version": "V0.4.0",
+  "checks": 14,
+  "passed": 14,
+  "failed": 0,
+  "status": "PASS",
+  "executed_at": "2026-08-18T11:31:05-03:00",
+  "scope": [
+    "deterministic hit/evasion",
+    "critical hits",
+    "armor/resistance mitigation",
+    "range",
+    "attack cooldown",
+    "stagger",
+    "status/DOT",
+    "player-health CharacterCore authority",
+    "enemy gameplay overlay",
+    "protected identity guard",
+    "XP award",
+    "event replay/idempotency",
+    "event conflict",
+    "PVP disabled"
+  ]
+}

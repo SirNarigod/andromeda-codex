@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-08-04T20:16:05+00:00",
+  "product": "Andrômeda Codex V1.0.1",
+  "metadataRevision": "R2",
+  "primary": {
+    "filename": "ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip",
+    "bytes": 55604985,
+    "sha256": "376505d31b6bddae82f30bc698ac308db735fa48b4cebe2cbd142d0762cfbb1e"
+  },
+  "secondaryCopy": {
+    "filename": "ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2_COPY.zip",
+    "bytes": 55604985,
+    "sha256": "376505d31b6bddae82f30bc698ac308db735fa48b4cebe2cbd142d0762cfbb1e"
+  },
+  "byteIdentical": true,
+  "note": "As duas cópias estão no mesmo ambiente. Redundância física real exige armazenamento em locais independentes."
+}

@@ -1,0 +1,8 @@
+{
+  "record_id": "ARPG-STAGE13-VALIDATION-V1.4.0",
+  "checks": 35,
+  "passed": 35,
+  "failed": 0,
+  "status": "PASS",
+  "failures": []
+}

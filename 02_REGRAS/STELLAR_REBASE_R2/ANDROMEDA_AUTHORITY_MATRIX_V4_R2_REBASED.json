@@ -1,0 +1,16 @@
+{
+  "record_id": "ANDROMEDA_AUTHORITY_MATRIX_V4_R2_REBASED",
+  "project": "ANDROMEDA CODEX",
+  "version": "V4",
+  "status": "ACTIVE_AFTER_R2_REBASE_LOT_003",
+  "supersedes": "ANDROMEDA_AUTHORITY_MATRIX_V3_R2_REBASED",
+  "decision_rule": "R2 remains immutable. Approved derived territory, institution and agricultural data may create local stories but cannot confer planet-wide sovereignty, retcon 842 EC facts or override future UE5 canon gates.",
+  "layers": [
+    {"rank": 1, "source": "ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2", "authority": "IMMUTABLE_ORIGIN", "classification_default": "CANON_R2_CONFIRMADO"},
+    {"rank": 2, "source": "USER_APPROVED_R2_COMPATIBLE_DERIVATION", "authority": "ACTIVE_WITH_PROVENANCE", "classification_default": "CANON_DERIVADO_ATIVO", "lot_003": ["842 EC territory geometry", "institutional networks", "agricultural zones"]},
+    {"rank": 3, "source": "MASTER_V2_0_1_AND_LIVING_SIM_ENGINE_V1_0_0", "authority": "READ_ONLY_TECHNICAL_EXTENSION", "classification_default": "EVIDENCIA_TECNICA_NAO_CANONICA_UNLESS_PROMOTED"},
+    {"rank": 4, "source": "GODOT_STAGE16_STAGE17_AND_FUTURE_UE5_RUNTIME", "authority": "IMPLEMENTATION_ONLY", "classification_default": "EVIDENCIA_TECNICA_NAO_CANONICA"},
+    {"rank": 5, "source": "LLM_PLAYER_OR_UNAPPROVED_PROPOSAL", "authority": "NO_CANON_AUTHORITY", "classification_default": "DIVERGENCIA_FORMAL_AGUARDANDO_DECISAO"}
+  ],
+  "story_generators": ["A canonical route becomes contested through observable local events rather than a retcon.", "An agricultural network forces trade, cooperation and ecological compromise.", "A future UE5 interaction can surface a cultural conflict without declaring new canon."]
+}

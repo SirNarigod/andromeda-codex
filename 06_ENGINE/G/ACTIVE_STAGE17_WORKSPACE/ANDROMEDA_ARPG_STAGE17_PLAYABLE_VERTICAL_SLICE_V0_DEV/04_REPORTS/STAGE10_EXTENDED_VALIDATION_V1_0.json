@@ -1,0 +1,23 @@
+{
+  "record_id": "STAGE10-EXTENDED-VALIDATION-V1.0",
+  "status": "PASS",
+  "checks": 74,
+  "passed": 74,
+  "failed": 0,
+  "failures": [],
+  "worlds": 4,
+  "master_snapshots": 58,
+  "main_routes": 25,
+  "secondary_routes": 9,
+  "flows": 7,
+  "population_distributions": 14,
+  "faction_influences": 3,
+  "shock": {
+    "base_price": 10.0,
+    "shortage_pressure": 100,
+    "restored_shortage": 0,
+    "base_security": 59.1927
+  },
+  "sqlite_integrity": "ok",
+  "foreign_key_failures": 0
+}

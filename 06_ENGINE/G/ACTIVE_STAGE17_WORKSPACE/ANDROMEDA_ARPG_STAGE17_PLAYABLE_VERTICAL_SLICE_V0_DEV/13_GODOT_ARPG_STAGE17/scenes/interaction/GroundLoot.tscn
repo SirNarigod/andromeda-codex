@@ -1,0 +1,92 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://scripts/interaction/ground_loot.gd" id="1_target"]
+[ext_resource type="Script" path="res://scripts/world/water_world_item_presenter.gd" id="2_water_item"]
+
+[sub_resource type="SphereShape3D" id="Shape_body"]
+radius = 0.28
+
+[sub_resource type="SphereShape3D" id="Shape_sensor"]
+radius = 0.36
+
+[sub_resource type="StandardMaterial3D" id="Material_body"]
+albedo_color = Color(0.96, 0.78, 0.29, 1)
+roughness = 0.72
+
+[sub_resource type="SphereMesh" id="Mesh_body"]
+material = SubResource("Material_body")
+radius = 0.24
+height = 0.48
+
+[sub_resource type="StandardMaterial3D" id="Material_selection"]
+albedo_color = Color(1, 0.72, 0.35, 0.65)
+transparency = 1
+shading_mode = 0
+
+[sub_resource type="CylinderMesh" id="Mesh_selection"]
+material = SubResource("Material_selection")
+top_radius = 0.45
+bottom_radius = 0.45
+height = 0.02
+
+[node name="GroundLoot" type="RigidBody3D"]
+collision_layer = 16
+collision_mask = 2177
+mass = 0.2
+freeze = true
+continuous_cd = 1
+linear_damp = 4.0
+angular_damp = 8.0
+script = ExtResource("1_target")
+target_ref = "LOOT-B03-PLACEHOLDER"
+target_kind = "GROUND_LOOT"
+display_name = "Loot Placeholder"
+pointer_aim_offset = Vector3(0, 0.28, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+position = Vector3(0, 0.28, 0)
+shape = SubResource("Shape_body")
+
+[node name="PlaceholderVisual" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.28, 0)
+mesh = SubResource("Mesh_body")
+
+[node name="PickupSensor" type="Area3D" parent="."]
+position = Vector3(0, 0.28, 0)
+collision_layer = 16
+collision_mask = 0
+monitoring = false
+monitorable = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PickupSensor"]
+shape = SubResource("Shape_sensor")
+
+[node name="OptionalMinimalLabel" type="Label3D" parent="."]
+visible = false
+position = Vector3(0, 0.8, 0)
+modulate = Color(0.75, 0.75, 0.73, 1)
+text = "Category"
+font_size = 20
+billboard = 1
+no_depth_test = true
+
+[node name="HoverFeedback" type="Node3D" parent="."]
+
+[node name="HoverHint" type="Label3D" parent="HoverFeedback"]
+visible = false
+position = Vector3(0, 0.9, 0)
+modulate = Color(1, 0.72, 0.35, 1)
+text = "PICKUP"
+font_size = 24
+outline_size = 8
+billboard = 1
+no_depth_test = true
+
+[node name="SelectionIndicator" type="MeshInstance3D" parent="HoverFeedback"]
+visible = false
+position = Vector3(0, 0.02, 0)
+mesh = SubResource("Mesh_selection")
+
+[node name="WaterWorldItemPresenter" type="Node" parent="."]
+script = ExtResource("2_water_item")
+item_kind = "INDIVIDUAL_LOOT"

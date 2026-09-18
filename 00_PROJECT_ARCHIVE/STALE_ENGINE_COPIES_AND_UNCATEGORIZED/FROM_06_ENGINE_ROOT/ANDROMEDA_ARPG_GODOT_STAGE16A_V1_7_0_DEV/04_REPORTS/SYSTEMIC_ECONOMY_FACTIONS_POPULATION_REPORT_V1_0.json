@@ -1,0 +1,92 @@
+{
+  "record_id": "SYSTEMIC-ECONOMY-FACTIONS-POPULATION-REPORT-V1.0",
+  "stage": "ETAPA_10",
+  "status": "PASS",
+  "result": "SYSTEMIC_ECONOMY_FACTIONS_POPULATION_FUNCTIONAL_AND_VALIDATED",
+  "baseline": {
+    "master": "ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE.zip",
+    "sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "mutations": 0
+  },
+  "master_inputs": {
+    "economic_flows": 7,
+    "faction_influence_records": 3,
+    "population_distribution_records": 14,
+    "primary_routes": 25,
+    "secondary_routes": 9,
+    "snapshots_total": 58
+  },
+  "runtime_projection": {
+    "routes": 34,
+    "flows": 7,
+    "population_aggregates": 14,
+    "faction_states": 3,
+    "numeric_authority": "RUNTIME_ONLY_NOT_CANON"
+  },
+  "validation": {
+    "unit_regression": {
+      "tests": 532,
+      "passed": 532,
+      "failed": 0
+    },
+    "extended": {
+      "checks": 74,
+      "passed": 74,
+      "failed": 0
+    },
+    "stress": {
+      "record_id": "STAGE10-FUZZ-STRESS-V1.0",
+      "status": "PASS",
+      "errors": [],
+      "worlds": 6,
+      "same_tick_callers": 32,
+      "same_tick_unique_runs": 1,
+      "same_tick_idempotent_replays": 31,
+      "unique_tick_requests": 120,
+      "route_toggle_calls": 160,
+      "route_toggle_success": 160,
+      "faction_relation_fuzz": 600,
+      "offline_ticks": 24,
+      "offline_influence_frozen": true,
+      "offline_migration_frozen": true,
+      "invariant_checks": 36,
+      "invariants_passed": 36,
+      "completed_runs": 145,
+      "world_system_tick_logs": 435,
+      "events": 740,
+      "sqlite_before": "ok",
+      "sqlite_after": "ok",
+      "foreign_keys_before": 0,
+      "foreign_keys_after": 0,
+      "reopen_integrity": true
+    },
+    "static_audit": {
+      "checks": 45,
+      "passed": 45,
+      "failed": 0
+    },
+    "coverage": {
+      "record_id": "STAGE10-COVERAGE-V1.0",
+      "status": "PASS",
+      "module": "world_systems.py",
+      "statements": 201,
+      "covered": 195,
+      "missing": 6,
+      "percent_covered": 97.01,
+      "basis": "51 stage10 unit tests"
+    },
+    "demo_status": "PASS"
+  },
+  "offline": {
+    "economy_routine": true,
+    "aggregate_demography": true,
+    "migration_frozen": true,
+    "faction_influence_frozen": true,
+    "sovereignty_change": false
+  },
+  "corrections": {
+    "closed": 7,
+    "open": 0
+  },
+  "package_class": "WORKING_PACKAGE"
+}

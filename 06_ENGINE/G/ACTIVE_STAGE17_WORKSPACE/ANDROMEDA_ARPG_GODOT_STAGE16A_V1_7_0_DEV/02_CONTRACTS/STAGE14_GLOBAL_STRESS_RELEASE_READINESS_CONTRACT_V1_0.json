@@ -1,0 +1,33 @@
+{
+  "record_id": "GLOBAL-STRESS-FINAL-INTEGRATION-RELEASE-READINESS-CONTRACT-V1.0",
+  "stage": "14/14",
+  "authority": "RUNTIME_RELEASE_GOVERNANCE_NOT_CANON",
+  "gates": [
+    "UPSTREAM_REGRESSION",
+    "GLOBAL_INTEGRATION",
+    "MULTIWORLD_CONCURRENCY",
+    "CORRUPTION_DETECTION",
+    "ATLAS_READ_ONLY",
+    "LONG_HORIZON",
+    "LLM_CANON_GUARD",
+    "STATIC_RELEASE_AUDIT",
+    "PACKAGE_RESTORE"
+  ],
+  "release_blockers": [
+    "ANY_FAILED_GATE",
+    "MASTER_HASH_MISMATCH",
+    "OPEN_RUNTIME_CORRECTION",
+    "CANON_MUTATION",
+    "ATLAS_WRITE_PATH",
+    "RESTORE_FAILURE"
+  ],
+  "external_dependencies": {
+    "canonical_master": "ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE.zip",
+    "master_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "live_llm_provider": "EXTERNAL_BINDING_OPTIONAL_AT_PACKAGE_BUILD; required for live generative dialogue, not bundled with credentials"
+  },
+  "offline_authorial_rule": "ONLY_ROUTINE_SAFE_CONTINUES",
+  "destruction_recovery_rule": "7_UNIVERSE_DAYS",
+  "llm_authority": "LANGUAGE_AND_CANDIDATE_INTENT_ONLY",
+  "status": "PASS"
+}

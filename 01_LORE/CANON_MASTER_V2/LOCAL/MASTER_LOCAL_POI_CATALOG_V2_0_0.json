@@ -1,0 +1,546 @@
+{
+  "record_id": "MASTER-LOCAL-POI-CATALOG-V2.0.0",
+  "title": "Pontos de Interesse (POIs) oficiais do MASTER V2.0.1 (52 entradas)",
+  "provenance": {
+    "master_release": "ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE",
+    "master_release_zip_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "source_files": [
+      "01_CANON/ANDROMEDA_CODEX_CANON_MASTER_V2_0_0.json (entities, domain=Local)"
+    ],
+    "authority": "CANON_MASTER_V2_CONFIRMADO",
+    "namespace_check": "Prefixo POI-XXX (novo, sem colisao) ancorado em LOC-XXX de 2 partes (1 por territorio, LOC-001..013) ou CIT-001 - formato DIFERENTE do nosso LOC-XXX-YYY de 3 partes (localidades dentro de subregiao). Nenhuma colisao de ID confirmada por grep.",
+    "special_locations_note": "LOC-014 e LOC-015 sao locais especiais fora dos 13 territorios-base - LOC-015 ancora POI-052 'Nucleo da Flor Fossil', ligado tematicamente a FAC-005 Circulo Arcano-Botanico da Flor Fossil (ja em CANON_R2). Marcados com maior spoiler_level.",
+    "import_note": "52 POIs (pontos de interesse) oficiais do Master V2.0.1, organizados por territorio/local-pai (mercados, oficinas, pontes, clinicas, academias, portos, observatorios, postos etc.). 1 tem nome identico a uma construcao EST-XXX ja catalogada nesta sessao (mesma identidade, sem contradicao, arquivo EST nao alterado) - resto sao POIs oficiais novos, complementares aos nossos EST-XXX."
+  },
+  "count_total": 52,
+  "count_parent_locations": 15,
+  "count_confirmed_est_matches": 1,
+  "confirmed_est_matches": [
+    "POI-030"
+  ],
+  "by_parent_location": [
+    {
+      "parent_id": "CIT-001",
+      "parent_name": "Posto de Varga (R2 confirmado, Terras Livres)",
+      "territory_ref": null,
+      "pois": [
+        {
+          "id": "POI-001",
+          "name": "Pátio Ferroviário de Varga",
+          "poi_type": "estação",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-002",
+          "name": "Mercado Fronteiriço de Varga",
+          "poi_type": "mercado",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-003",
+          "name": "Oficina Arco Morto",
+          "poi_type": "oficina",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-004",
+          "name": "Centro de Mediação de Varga",
+          "poi_type": "instituição",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-005",
+          "name": "Núcleo Rural Veluriano",
+          "poi_type": "fazenda",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-006",
+          "name": "Armazém Rural da Fronteira",
+          "poi_type": "armazém",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-007",
+          "name": "Captação Varden",
+          "poi_type": "infraestrutura hídrica",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-046",
+          "name": "Ponte Varden",
+          "poi_type": "ponte",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        }
+      ]
+    },
+    {
+      "parent_id": "LOC-001",
+      "parent_name": "Confederação de Lúminor",
+      "territory_ref": "TER-001",
+      "pois": [
+        {
+          "id": "POI-008",
+          "name": "Terminal de Lúminor",
+          "poi_type": "terminal",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-009",
+          "name": "Mercado Fluvial Luminal",
+          "poi_type": "mercado",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-010",
+          "name": "Centro Administrativo de Lúminor",
+          "poi_type": "administração",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-011",
+          "name": "Clínica Cívica de Lúminor",
+          "poi_type": "clínica",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-012",
+          "name": "Academia Técnica Luminal",
+          "poi_type": "educação",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-013",
+          "name": "Nó de Comunicação da Convergência",
+          "poi_type": "comunicação",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-014",
+          "name": "Plataforma Logística Luminal",
+          "poi_type": "logística",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-015",
+          "name": "Oficina de Manutenção Luminal",
+          "poi_type": "oficina",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-047",
+          "name": "Ponte Ceral",
+          "poi_type": "ponte",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-049",
+          "name": "Ponte Lumen",
+          "poi_type": "ponte",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        }
+      ]
+    },
+    {
+      "parent_id": "LOC-002",
+      "parent_name": "Reino Ferral de Kharveth",
+      "territory_ref": "TER-002",
+      "pois": [
+        {
+          "id": "POI-021",
+          "name": "Fundição Ferral de Kharveth",
+          "poi_type": "fundição",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-022",
+          "name": "Pátio Mineral de Kharveth",
+          "poi_type": "terminal mineral",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-023",
+          "name": "Clínica Industrial de Kharveth",
+          "poi_type": "clínica",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        }
+      ]
+    },
+    {
+      "parent_id": "LOC-003",
+      "parent_name": "República de Ortheon",
+      "territory_ref": "TER-003",
+      "pois": [
+        {
+          "id": "POI-016",
+          "name": "Pátio de Intercâmbio de Ortheon",
+          "poi_type": "terminal",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-017",
+          "name": "Oficina Ferroviária de Ortheon",
+          "poi_type": "oficina",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-018",
+          "name": "Academia de Redes de Ortheon",
+          "poi_type": "educação",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-019",
+          "name": "Casa de Jurisdição de Ortheon",
+          "poi_type": "justiça",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-020",
+          "name": "Mercado de Conexões de Ortheon",
+          "poi_type": "mercado",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-048",
+          "name": "Ponte Nauris",
+          "poi_type": "ponte",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        }
+      ]
+    },
+    {
+      "parent_id": "LOC-004",
+      "parent_name": "Arquipélago Livre de Navyr",
+      "territory_ref": "TER-004",
+      "pois": [
+        {
+          "id": "POI-030",
+          "name": "Estaleiro de Navyr",
+          "poi_type": "estaleiro",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO",
+          "existing_est_match": "EST-047",
+          "cross_check_note": "Nome identico a construcao ja catalogada - mesmo local, sem contradicao."
+        },
+        {
+          "id": "POI-031",
+          "name": "Mercado Marítimo de Navyr",
+          "poi_type": "mercado",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-032",
+          "name": "Centro Marítimo de Navyr",
+          "poi_type": "instituição",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-033",
+          "name": "Clínica Portuária de Navyr",
+          "poi_type": "clínica",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        }
+      ]
+    },
+    {
+      "parent_id": "LOC-005",
+      "parent_name": "Principado de Ithra",
+      "territory_ref": "TER-005",
+      "pois": [
+        {
+          "id": "POI-024",
+          "name": "Centro Técnico de Ithra",
+          "poi_type": "centro científico",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-025",
+          "name": "Processamento de Encosta Ithra",
+          "poi_type": "processamento",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-026",
+          "name": "Oficina de Encosta Ithra",
+          "poi_type": "oficina",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        }
+      ]
+    },
+    {
+      "parent_id": "LOC-006",
+      "parent_name": "Reino Aéreo de Altavela",
+      "territory_ref": "TER-006",
+      "pois": [
+        {
+          "id": "POI-043",
+          "name": "Observatório de Altavela",
+          "poi_type": "observatório",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-044",
+          "name": "Observatório de Tempestade",
+          "poi_type": "observatório",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-045",
+          "name": "Posto de Passagem de Altavela",
+          "poi_type": "posto",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        }
+      ]
+    },
+    {
+      "parent_id": "LOC-007",
+      "parent_name": "Rubra-Viva",
+      "territory_ref": "TER-007",
+      "pois": [
+        {
+          "id": "POI-034",
+          "name": "Herbário de Rubra-Viva",
+          "poi_type": "laboratório",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-035",
+          "name": "Mercado Medicinal Rubro",
+          "poi_type": "mercado",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-036",
+          "name": "Estação Hídrica Rubra",
+          "poi_type": "infraestrutura hídrica",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-037",
+          "name": "Laboratório de Materiais Rubros",
+          "poi_type": "laboratório",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        }
+      ]
+    },
+    {
+      "parent_id": "LOC-009",
+      "parent_name": "Liga Subcristal",
+      "territory_ref": "TER-009",
+      "pois": [
+        {
+          "id": "POI-040",
+          "name": "Estação Subcristal",
+          "poi_type": "estação",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-041",
+          "name": "Oficina Subcristal",
+          "poi_type": "oficina",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        }
+      ]
+    },
+    {
+      "parent_id": "LOC-010",
+      "parent_name": "Domínio dos Reis Magos",
+      "territory_ref": "TER-010",
+      "pois": [
+        {
+          "id": "POI-027",
+          "name": "Academia dos Reis Magos",
+          "poi_type": "educação",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-028",
+          "name": "Câmara de Contratos do Domínio",
+          "poi_type": "instituição",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-029",
+          "name": "Relé Alto do Domínio",
+          "poi_type": "comunicação",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        }
+      ]
+    },
+    {
+      "parent_id": "LOC-011",
+      "parent_name": "Terras Livres",
+      "territory_ref": "TER-011",
+      "pois": [
+        {
+          "id": "POI-038",
+          "name": "Posto de Contenção",
+          "poi_type": "posto",
+          "atlas_visibility": "POI",
+          "spoiler_level": 3,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        },
+        {
+          "id": "POI-039",
+          "name": "Relé de Contenção",
+          "poi_type": "comunicação",
+          "atlas_visibility": "POI",
+          "spoiler_level": 3,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        }
+      ]
+    },
+    {
+      "parent_id": "LOC-012",
+      "parent_name": "Zonas de Contenção",
+      "territory_ref": "TER-012",
+      "pois": [
+        {
+          "id": "POI-042",
+          "name": "Posto de Passagem da Fortaleza",
+          "poi_type": "fortificação",
+          "atlas_visibility": "POI",
+          "spoiler_level": 0,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        }
+      ]
+    },
+    {
+      "parent_id": "LOC-013",
+      "parent_name": "Fortaleza do Trovão",
+      "territory_ref": "TER-013",
+      "pois": [
+        {
+          "id": "POI-050",
+          "name": "Porta de Pesquisa Controlada",
+          "poi_type": "acesso controlado",
+          "atlas_visibility": "SPOILER",
+          "spoiler_level": 3,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        }
+      ]
+    },
+    {
+      "parent_id": "LOC-014",
+      "parent_name": "Local especial/restrito (fora dos 13 territórios-base)",
+      "territory_ref": null,
+      "pois": [
+        {
+          "id": "POI-051",
+          "name": "Complexo de Pesquisa Controlado",
+          "poi_type": "complexo",
+          "atlas_visibility": "SPOILER",
+          "spoiler_level": 3,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        }
+      ]
+    },
+    {
+      "parent_id": "LOC-015",
+      "parent_name": "Local especial/restrito (fora dos 13 territórios-base) - Núcleo da Flor Fóssil, ligado a FAC-005",
+      "territory_ref": null,
+      "pois": [
+        {
+          "id": "POI-052",
+          "name": "Núcleo da Flor Fóssil",
+          "poi_type": "local restrito",
+          "atlas_visibility": "SPOILER",
+          "spoiler_level": 4,
+          "canonical_status": "CÂNONE_EM_DESENVOLVIMENTO"
+        }
+      ]
+    }
+  ]
+}

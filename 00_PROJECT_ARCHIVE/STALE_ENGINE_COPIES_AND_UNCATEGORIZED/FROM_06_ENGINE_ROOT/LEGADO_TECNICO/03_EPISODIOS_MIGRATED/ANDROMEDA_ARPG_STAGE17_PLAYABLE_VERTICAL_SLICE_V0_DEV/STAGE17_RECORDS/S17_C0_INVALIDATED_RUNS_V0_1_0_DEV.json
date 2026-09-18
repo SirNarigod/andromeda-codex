@@ -1,0 +1,77 @@
+{
+  "record_identity": "S17_C0_INVALIDATED_RUNS_V0_1_0_DEV",
+  "created_at": "2026-08-28T17:30:18.5786038Z",
+  "status": "AUDIT_COMPLETE",
+  "runs": [
+    {
+      "run": "S17_00_INITIAL_INVOCATION",
+      "result": "INVALIDATED",
+      "cause": "Required checkpoint and backup CLI arguments were omitted; runner exited with usage error.",
+      "correction": "Repeated with explicit workspace, checkpoint and backup paths.",
+      "final": "22/22 PASS"
+    },
+    {
+      "run": "S17_A_OFFLINE_INITIAL_INVOCATION",
+      "result": "INVALIDATED",
+      "cause": "Wrong flag --expect-backend=failed selected live mode and produced 8/17.",
+      "correction": "Repeated with the contracted --expect-authority-failure flag.",
+      "final": "9/9 PASS"
+    },
+    {
+      "run": "C0_INITIAL_PARSE",
+      "result": "INVALIDATED",
+      "cause": "New class cache had not yet been imported by Godot, producing a parse/class-resolution failure.",
+      "correction": "Performed an isolated Editor import, then reran the full gate.",
+      "final": "75/75 PASS"
+    },
+    {
+      "run": "C0_FRESH_WORLD_GEOMETRY_SETUP",
+      "result": "INVALIDATED",
+      "cause": "The first deterministic out-of-range test setup selected a route that did not converge in the fresh runtime; 65/75 completed.",
+      "correction": "Made the test-only setup try bounded nav-valid directions and accept only authority/presentation-converged placement.",
+      "final": "75/75 PASS"
+    },
+    {
+      "run": "C0_EDITOR_BRIDGE_AWAIT_WARNINGS",
+      "result": "INVALIDATED",
+      "cause": "Six unnecessary-await GDScript warnings made the Editor debugger non-clean.",
+      "correction": "Removed non-coroutine awaits and added a real Timer-based success linger for Editor evidence capture.",
+      "final": "75/75 PASS, debugger 0/0, finalErrors []"
+    },
+    {
+      "run": "C0_EDITOR_BRIDGE_TOO_FAST_CAPTURE",
+      "result": "INVALIDATED",
+      "cause": "After warning removal the gate exited before the bridge could capture complete output.",
+      "correction": "Kept headless linger at zero while Editor Bridge defaults to an 8-second real Timer linger.",
+      "final": "Complete 75/75 marker captured"
+    },
+    {
+      "run": "B2_AFTER_C0_FIRST",
+      "result": "INVALIDATED",
+      "cause": "67/73: newly authority-projected actor colliders occupied routes that the historical B2 harness assumed were empty.",
+      "correction": "Adjusted only the Stage17 B2 harness to choose deterministic nav-valid paths with presentation clearance from active actor bindings.",
+      "final": "73/73 PASS"
+    },
+    {
+      "run": "COMBAT_AFTER_C0_SERIES",
+      "result": "INVALIDATED",
+      "cause": "Historical harness moved target Nodes as if their transforms were spatial authority, then additional retries encountered consumed/stale targets and an insufficient Ground Loot approach step (88/91 and 86/91 among the discarded runs).",
+      "correction": "Migrated the harness to real Player MOVE_TO_POINT, discovered the actual front-most live target, used isolated runtime state, and used the existing explicit-destination movement budget for the post-defeat approach.",
+      "final": "91/91 PASS"
+    },
+    {
+      "run": "G19_AFTER_COMBAT_STATE",
+      "result": "INVALIDATED",
+      "cause": "The prior combat run had consumed the encounter target; G19 stopped after 29/32 early checks.",
+      "correction": "Archived the contaminated Stage17 runtime state without deleting it, booted a fresh isolated Stage17 world, and repeated G19.",
+      "final": "71/71 PASS"
+    }
+  ],
+  "runtime_archives_preserved": [
+    "STAGE17_RUNTIME_STATE/_archive_s17c0_invalidated_runtime_20260828T140500Z_authority/saves",
+    "STAGE17_RUNTIME_STATE/_archive_s17c0_pre_g19_invalidated_20260828T142000Z_authority/saves",
+    "STAGE17_RUNTIME_STATE/_archive_s17c0_g19_pass_20260828T143000Z_authority/saves"
+  ],
+  "history_deleted": false,
+  "broad_destructive_operation_used": false
+}

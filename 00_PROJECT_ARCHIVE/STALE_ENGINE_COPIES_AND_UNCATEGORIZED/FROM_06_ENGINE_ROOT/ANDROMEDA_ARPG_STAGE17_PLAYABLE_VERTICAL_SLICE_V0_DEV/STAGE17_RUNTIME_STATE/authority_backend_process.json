@@ -1,0 +1,32 @@
+﻿{
+    "stdout":  "C:\\Users\\thall\\Documents\\andromeda-argp\\ANDROMEDA_ARPG_STAGE17_PLAYABLE_VERTICAL_SLICE_V0_DEV\\STAGE17_RUNTIME_STATE\\logs\\authority_stdout.log",
+    "requested_at":  "2026-08-29T18:57:39.7511553Z",
+    "stderr":  "C:\\Users\\thall\\Documents\\andromeda-argp\\ANDROMEDA_ARPG_STAGE17_PLAYABLE_VERTICAL_SLICE_V0_DEV\\STAGE17_RUNTIME_STATE\\logs\\authority_stderr.log",
+    "failure":  "HEALTH_TIMEOUT_AFTER_SECONDS: 90",
+    "command":  "-m uvicorn stage16b_authority_api:app --host 127.0.0.1 --port 8000 --workers 1",
+    "workers":  1,
+    "workspace":  "C:\\Users\\thall\\Documents\\andromeda-argp\\ANDROMEDA_ARPG_STAGE17_PLAYABLE_VERTICAL_SLICE_V0_DEV",
+    "host":  "127.0.0.1",
+    "runtime_state":  "C:\\Users\\thall\\Documents\\andromeda-argp\\ANDROMEDA_ARPG_STAGE17_PLAYABLE_VERTICAL_SLICE_V0_DEV\\STAGE17_RUNTIME_STATE",
+    "schema":  "ANDROMEDA_STAGE17_AUTHORITY_PROCESS_V0_1_0_DEV",
+    "backend_path":  "C:\\Users\\thall\\Documents\\andromeda-argp\\ANDROMEDA_ARPG_STAGE17_PLAYABLE_VERTICAL_SLICE_V0_DEV\\12_AUTHORITY_BACKEND_STAGE17",
+    "failed_at":  "2026-08-29T18:59:13.4102634Z",
+    "launcher_start_time_utc":  "2026-08-29T18:57:42.6653306Z",
+    "requested_python_path":  "C:\\Users\\thall\\ANDROMEDA_PRODUCT\\.venv\\Scripts\\python.exe",
+    "state":  "FAILED",
+    "health_uri":  "http://127.0.0.1:8000/health",
+    "python_path":  "C:\\Users\\thall\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "runtime_environment":  {
+                                "ANDROMEDA_S16B_SEED":  "160800",
+                                "ANDROMEDA_S16B_DEV_PROFILE_BOOTSTRAP":  "1",
+                                "ANDROMEDA_MASTER_RELEASE":  "C:\\Users\\thall\\ANDROMEDA_PRODUCT\\ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE.zip",
+                                "ANDROMEDA_S16B_VAR":  "C:\\Users\\thall\\Documents\\andromeda-argp\\ANDROMEDA_ARPG_STAGE17_PLAYABLE_VERTICAL_SLICE_V0_DEV\\STAGE17_RUNTIME_STATE\\authority",
+                                "ANDROMEDA_S16B_SAVE_ROOT":  "C:\\Users\\thall\\Documents\\andromeda-argp\\ANDROMEDA_ARPG_STAGE17_PLAYABLE_VERTICAL_SLICE_V0_DEV\\STAGE17_RUNTIME_STATE\\saves",
+                                "ANDROMEDA_S17_RESOURCE_PLACEMENT_MANIFEST":  "C:\\Users\\thall\\Documents\\andromeda-argp\\ANDROMEDA_ARPG_STAGE17_PLAYABLE_VERTICAL_SLICE_V0_DEV\\STAGE17_CONTENT\\RESOURCE_PLACEMENT\\CANONICAL\\S17_RESOURCE_METRIC_PLACEMENTS_R0001.json",
+                                "ANDROMEDA_S16B_OWNER_SCOPE":  "stage17:playable-v0-dev",
+                                "ANDROMEDA_S16B_DB":  "C:\\Users\\thall\\Documents\\andromeda-argp\\ANDROMEDA_ARPG_STAGE17_PLAYABLE_VERTICAL_SLICE_V0_DEV\\STAGE17_RUNTIME_STATE\\authority\\stage17_world.sqlite",
+                                "PYTHONDONTWRITEBYTECODE":  "1"
+                            },
+    "port":  8000,
+    "launcher_pid":  13372
+}

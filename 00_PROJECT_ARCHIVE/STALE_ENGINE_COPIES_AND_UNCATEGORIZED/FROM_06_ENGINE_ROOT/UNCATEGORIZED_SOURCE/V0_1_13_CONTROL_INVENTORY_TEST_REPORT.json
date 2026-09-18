@@ -1,0 +1,50 @@
+{
+  "build": "V0.1.13",
+  "status": "PASS_STATIC_AND_MODEL",
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1",
+  "expected_behaviors": {
+    "left_short_click_ground": "route persists to clicked destination after release",
+    "left_hold_ground": "after 0.18 s, destination follows cursor; release stops",
+    "right_click_ground": "route persists to clicked destination; hold mode disabled",
+    "right_context_target": "approach/action persists after click; hold not required",
+    "inventory": "hidden by default; I toggles open/closed",
+    "attack_interval_s": 2.0
+  },
+  "model_tests": [
+    {
+      "name": "MODEL_LEFT_SHORT_CLICK_PERSISTS",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "MODEL_LEFT_HOLD_RELEASE_STOPS",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "MODEL_RIGHT_CLICK_PERSISTS",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "MODEL_RIGHT_HOLD_DISABLED",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "MODEL_RIGHT_CONTEXT_PERSISTS",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "MODEL_INVENTORY_I_OPENS",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "MODEL_INVENTORY_I_CLOSES",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

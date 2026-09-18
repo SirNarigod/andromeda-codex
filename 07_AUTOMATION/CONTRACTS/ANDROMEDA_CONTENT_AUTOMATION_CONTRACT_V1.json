@@ -1,0 +1,22 @@
+{
+  "record_id": "ANDROMEDA_CONTENT_AUTOMATION_CONTRACT_V1",
+  "status": "ACTIVE_LOCAL_VERSIONED_AUTOMATION",
+  "source_of_truth": "01_LORE/CONTENT_ROUTING_REGISTRY_V1.json",
+  "authority": "READ_ONLY_CANON_INPUT; EXTERNAL_OUTPUT_PENDING_DERIVATION",
+  "import_policy": {
+    "inbox": "07_AUTOMATION/INBOX",
+    "staging": "07_AUTOMATION/STAGING",
+    "auto_import": "VALIDATED_MANIFESTS_ONLY",
+    "canon_promotion": "AUTHORIAL_GATE_REQUIRED"
+  },
+  "tool_policies": {
+    "UE5": "DATA_ONLY_NO_CANON_WRITE",
+    "CURSOR_CODEX_CLAUDE": "TASK_PACKETS_ONLY",
+    "BLENDER": "ASSET_BRIEF_ONLY",
+    "CANVA": "VISUAL_BRIEF_ONLY"
+  },
+  "spoiler_policy": {
+    "external_default": "NONSEALED_SPOILER_LE_1",
+    "sealed_content": "EXCLUDED_UNLESS_AUTHORIAL_PACKAGE"
+  }
+}

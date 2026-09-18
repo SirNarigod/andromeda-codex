@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-003-002",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Pátio de Manutenção",
+  "parent_subregion": "SUB-003-002",
+  "parent_political_unit": "TER-003",
+  "function": "Oficina de reparo de locomotivas e vagões.",
+  "notable_link": "Distrito das Oficinas Ferroviárias (SUB-003-002)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-003-002",
+  "settlement_tier": "COMPLEXO",
+  "history": "O Pátio de Manutenção nasceu quando os primeiros vagões quebraram longe da estação. Hoje seus técnicos mantêm a República em movimento e decidem quais comunidades ficam isoladas.",
+  "sensory": "Martelos marcam um ritmo irregular; poças de óleo refletem faíscas azuis de solda.",
+  "hook": "Uma peça essencial foi substituída por uma cópia quase perfeita.",
+  "secondary_hook": "A cópia funciona, mas foi marcada para falhar durante uma viagem.",
+  "detail": "Peças recuperadas recebem um segundo nome e nunca são vendidas pelo preço original.",
+  "figures": [
+    {
+      "role": "Dara Eixo",
+      "name": "Dara Eixo",
+      "note": "engenheira que prioriza aldeias pequenas"
+    },
+    {
+      "role": "Rusk",
+      "name": "Rusk",
+      "note": "supervisor que lucra com atrasos calculados"
+    }
+  ]
+}

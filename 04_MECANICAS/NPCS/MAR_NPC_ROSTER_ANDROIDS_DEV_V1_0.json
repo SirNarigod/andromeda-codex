@@ -1,0 +1,272 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "MAR-NPC-ROSTER-ANDROIDS-DEV-V1.0",
+  "title": "Roster de NPCs — Androids (tecnológica)",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "canonical_status": "GAMEPLAY_DERIVED_DEV",
+  "balance_model": "Total Power Budget (TPB) fixo por tier: BAIXO=80, MÉDIO=100, ALTO=120, dividido entre hp+speed+damage_mod+armor. NPCs do mesmo tier têm poder total idêntico, perfis diferentes.",
+  "weapon_source_files": [
+    "MAR_TECH_AND_MAGIC_GAMEPLAY_STATS_DEV_V1_0.json",
+    "MAR_TECH_AND_MAGIC_EXPANSION_DEV_V1_0.json",
+    "MAR_TECH_EXPANSION_2_DEV_V1_0.json"
+  ],
+  "npcs": [
+    {
+      "npc_id": "AND-01",
+      "name": "Sentinela de Núcleo Duplo",
+      "class_name": "Androids",
+      "tier": "ALTO",
+      "role": "SUPORTE",
+      "weapon_ids": [
+        "WPN-TEC-004",
+        "WPN-TEC-008"
+      ],
+      "power_budget": {
+        "hp": 60,
+        "speed": 15,
+        "damage_mod": 30,
+        "armor": 15,
+        "total": 120
+      },
+      "passive_skill": {
+        "skill_id": "AND-P-AUTORREPARO",
+        "skill_kind": "PASSIVE",
+        "name": "Autorreparo Modular",
+        "effect": "regenera 2% do HP máx/s enquanto abaixo de 50% HP"
+      },
+      "active_skill": {
+        "skill_id": "AND-A-SOBRECARGA",
+        "skill_kind": "ACTIVE",
+        "name": "Sobrecarga de Impulso",
+        "effect": "avança 4m, próximo golpe +30% dano",
+        "resource_cost": 20,
+        "cooldown_s": 8.0
+      }
+    },
+    {
+      "npc_id": "AND-02",
+      "name": "Unidade de Ruptura Gêmea",
+      "class_name": "Androids",
+      "tier": "ALTO",
+      "role": "ASSALTO",
+      "weapon_ids": [
+        "WPN-TEC-012",
+        "WPN-TEC-016"
+      ],
+      "power_budget": {
+        "hp": 30,
+        "speed": 20,
+        "damage_mod": 55,
+        "armor": 15,
+        "total": 120
+      },
+      "passive_skill": {
+        "skill_id": "AND-P-BLINDAGEM",
+        "skill_kind": "PASSIVE",
+        "name": "Blindagem Adaptativa",
+        "effect": "+20% resistência a dano quando HP < 30%"
+      },
+      "active_skill": {
+        "skill_id": "AND-A-PICO",
+        "skill_kind": "ACTIVE",
+        "name": "Pico de Energia",
+        "effect": "+25% damage_mod por 5s",
+        "resource_cost": 30,
+        "cooldown_s": 12.0
+      }
+    },
+    {
+      "npc_id": "AND-03",
+      "name": "Unidade de Convergência",
+      "class_name": "Androids",
+      "tier": "MÉDIO",
+      "role": "MÉDICO",
+      "weapon_ids": [
+        "WPN-TEC-003",
+        "WPN-TEC-007"
+      ],
+      "power_budget": {
+        "hp": 30,
+        "speed": 25,
+        "damage_mod": 25,
+        "armor": 20,
+        "total": 100
+      },
+      "passive_skill": {
+        "skill_id": "AND-P-VENTILACAO",
+        "skill_kind": "PASSIVE",
+        "name": "Ventilação Eficiente",
+        "effect": "+10% regeneração de energia fora de combate"
+      },
+      "active_skill": {
+        "skill_id": "AND-A-REPARO",
+        "skill_kind": "ACTIVE",
+        "name": "Reparo Remoto",
+        "effect": "restaura HP de um aliado próximo",
+        "resource_cost": 25,
+        "cooldown_s": 10.0
+      }
+    },
+    {
+      "npc_id": "AND-04",
+      "name": "Chassi de Convergência Leve",
+      "class_name": "Androids",
+      "tier": "MÉDIO",
+      "role": "FRANCO",
+      "weapon_ids": [
+        "WPN-TEC-011",
+        "WPN-TEC-015"
+      ],
+      "power_budget": {
+        "hp": 25,
+        "speed": 40,
+        "damage_mod": 25,
+        "armor": 10,
+        "total": 100
+      },
+      "passive_skill": {
+        "skill_id": "AND-P-VENTILACAO",
+        "skill_kind": "PASSIVE",
+        "name": "Ventilação Eficiente",
+        "effect": "+10% regeneração de energia fora de combate"
+      },
+      "active_skill": {
+        "skill_id": "AND-A-SALTO",
+        "skill_kind": "ACTIVE",
+        "name": "Salto Propulsor",
+        "effect": "desloca 6m e remove enraizamento",
+        "resource_cost": 18,
+        "cooldown_s": 9.0
+      }
+    },
+    {
+      "npc_id": "AND-05",
+      "name": "Guardião de Chassi Reforçado",
+      "class_name": "Androids",
+      "tier": "MÉDIO",
+      "role": "SUPORTE",
+      "weapon_ids": [
+        "WPN-TEC-002",
+        "WPN-TEC-006"
+      ],
+      "power_budget": {
+        "hp": 45,
+        "speed": 15,
+        "damage_mod": 20,
+        "armor": 20,
+        "total": 100
+      },
+      "passive_skill": {
+        "skill_id": "AND-P-PLACAS",
+        "skill_kind": "PASSIVE",
+        "name": "Placas Reforçadas",
+        "effect": "-8% dano físico recebido (flat)"
+      },
+      "active_skill": {
+        "skill_id": "AND-A-SOBRECARGA",
+        "skill_kind": "ACTIVE",
+        "name": "Sobrecarga de Impulso",
+        "effect": "avança 4m, próximo golpe +30% dano",
+        "resource_cost": 20,
+        "cooldown_s": 8.0
+      }
+    },
+    {
+      "npc_id": "AND-06",
+      "name": "Unidade de Disrupção Leve",
+      "class_name": "Androids",
+      "tier": "MÉDIO",
+      "role": "ASSALTO",
+      "weapon_ids": [
+        "WPN-TEC-010",
+        "WPN-TEC-014"
+      ],
+      "power_budget": {
+        "hp": 20,
+        "speed": 25,
+        "damage_mod": 45,
+        "armor": 10,
+        "total": 100
+      },
+      "passive_skill": {
+        "skill_id": "AND-P-BLINDAGEM",
+        "skill_kind": "PASSIVE",
+        "name": "Blindagem Adaptativa",
+        "effect": "+20% resistência a dano quando HP < 30%"
+      },
+      "active_skill": {
+        "skill_id": "AND-A-PICO",
+        "skill_kind": "ACTIVE",
+        "name": "Pico de Energia",
+        "effect": "+25% damage_mod por 5s",
+        "resource_cost": 30,
+        "cooldown_s": 12.0
+      }
+    },
+    {
+      "npc_id": "AND-07",
+      "name": "Unidade de Linha Básica",
+      "class_name": "Androids",
+      "tier": "BAIXO",
+      "role": "MÉDICO",
+      "weapon_ids": [
+        "WPN-TEC-001",
+        "WPN-TEC-005"
+      ],
+      "power_budget": {
+        "hp": 25,
+        "speed": 20,
+        "damage_mod": 20,
+        "armor": 15,
+        "total": 80
+      },
+      "passive_skill": {
+        "skill_id": "AND-P-PLACAS",
+        "skill_kind": "PASSIVE",
+        "name": "Placas Reforçadas",
+        "effect": "-8% dano físico recebido (flat)"
+      },
+      "active_skill": {
+        "skill_id": "AND-A-REPARO",
+        "skill_kind": "ACTIVE",
+        "name": "Reparo Remoto",
+        "effect": "restaura HP de um aliado próximo",
+        "resource_cost": 25,
+        "cooldown_s": 10.0
+      }
+    },
+    {
+      "npc_id": "AND-08",
+      "name": "Chassi de Reconhecimento",
+      "class_name": "Androids",
+      "tier": "BAIXO",
+      "role": "FRANCO",
+      "weapon_ids": [
+        "WPN-TEC-009",
+        "WPN-TEC-013"
+      ],
+      "power_budget": {
+        "hp": 15,
+        "speed": 35,
+        "damage_mod": 20,
+        "armor": 10,
+        "total": 80
+      },
+      "passive_skill": {
+        "skill_id": "AND-P-VENTILACAO",
+        "skill_kind": "PASSIVE",
+        "name": "Ventilação Eficiente",
+        "effect": "+10% regeneração de energia fora de combate"
+      },
+      "active_skill": {
+        "skill_id": "AND-A-SALTO",
+        "skill_kind": "ACTIVE",
+        "name": "Salto Propulsor",
+        "effect": "desloca 6m e remove enraizamento",
+        "resource_cost": 18,
+        "cooldown_s": 9.0
+      }
+    }
+  ],
+  "role_system_note": "role reclassificado para o sistema de 4 funções Battlefield/PvZ GW (fase 27): SUPORTE/ASSALTO/MÉDICO/FRANCO. weapon_ids e power_budget não foram alterados."
+}

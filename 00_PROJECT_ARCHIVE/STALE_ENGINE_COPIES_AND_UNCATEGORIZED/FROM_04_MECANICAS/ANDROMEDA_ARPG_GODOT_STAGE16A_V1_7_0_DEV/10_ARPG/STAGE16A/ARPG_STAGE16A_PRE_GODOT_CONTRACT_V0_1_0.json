@@ -1,0 +1,71 @@
+{
+  "record_id": "ARPG-STAGE16A-PRE-GODOT-CONTRACT-V0.1.0",
+  "project": "ANDRÔMEDA CÓDEX ARPG",
+  "stage": "16A/16",
+  "status": "ACTIVE_PRE_GODOT",
+  "authority": "AUTHORIAL_DECISIONS_PLUS_GAMEPLAY_DERIVED_IMPLEMENTATION_GUARDS",
+  "godot_gate": "STAGE16_CANNOT_PASS_UNTIL_DIRECT_GODOT_RUNTIME_VALIDATION",
+  "ui": {
+    "philosophy": "MINIMAL_CONTEXTUAL_WORLD_FIRST",
+    "reference": "Breath of the Wild minimalism as design philosophy only; no asset/UI copying",
+    "hud": "SHOW_WHEN_RELEVANT_FADE_WHEN_IDLE",
+    "npc_name_visibility": "HOVER_ONLY",
+    "dialogue": {
+      "mode": "REAL_TIME_NO_NEXT_BUTTON",
+      "bubble": "ROUNDED_WHITE_MEDIUM_GREY_ROUNDED_TEXT",
+      "important_text": "SOFT_LIGHT_ORANGE_NOT_VIVID",
+      "important_accessibility_line": "BOTTOM_SCREEN_PLUS_WORLD_BUBBLE",
+      "multi_npc_conversation": true,
+      "player_movement_locked": false,
+      "choice_ui": "SMALL_TEMPORARY_OPTIONS_NEAR_NPC"
+    }
+  },
+  "terrain_traversal": {
+    "reference": "Death Stranding terrain relevance as systemic inspiration only",
+    "body_balance_mechanic": false,
+    "subtle_relief": true,
+    "micro_imperfections": true,
+    "physics_guard": "VISUAL_DETAIL_MUST_NOT_FRAGMENT_COLLISION_OR_NAVIGATION",
+    "stamina_inputs": ["surface", "slope", "carried_load", "activity"],
+    "map_hierarchy": ["planet", "country", "state_or_large_territory", "region", "subregion", "playable_zone", "local_area"],
+    "variable_map_size": true,
+    "streaming_rule": "ACTIVE_DETAIL_NEAR_PRELOAD_DISTANT_LIVING_ONLY"
+  },
+  "ground_loot": {
+    "universal_sources": ["enemy", "tree", "rock", "ore", "flora", "agriculture", "hunting", "fishing", "container", "physical_production_when_applicable"],
+    "world_first": true,
+    "direct_to_inventory_from_physical_source": false,
+    "pickup_radius_m": 0.5,
+    "manual_click": "APPROACH_THEN_PICKUP",
+    "auto_pickup_toggle": true,
+    "auto_pickup_interrupts_actions": false,
+    "blocked_path_prevents_pickup": true,
+    "stack_drop_supported": true,
+    "safe_drop_point_required": true,
+    "icons": "BY_ITEM_TYPE_NOT_UNIQUE_ITEM_ID"
+  },
+  "pointer_interaction": {
+    "resolver": "INTENT_PLUS_POINTER_HIT_PLUS_BUTTON",
+    "hover_preview_required": true,
+    "blind_global_type_priority": false,
+    "tie_break": ["screen_distance_px", "frontmost_depth", "semantic_tie_only", "stable_ref"],
+    "left": {
+      "ground": "MOVE",
+      "ground_loot": "APPROACH_PICKUP_OR_PICKUP_AT_0_5M",
+      "actor_npc_animal_resource_object_vehicle": "SELECT_ONLY_NO_MOVEMENT_CHANGE"
+    },
+    "right": {
+      "ground": "MOVE",
+      "hostile_actor": "CHASE_ATTACK",
+      "neutral_actor_npc": "APPROACH_INTERACT",
+      "gather_node": "APPROACH_HARVEST",
+      "ground_loot": "APPROACH_PICKUP_OR_PICKUP_AT_0_5M",
+      "scene_object_vehicle": "APPROACH_INTERACT"
+    },
+    "existing_keyboard_contract": {
+      "space": "ATTACK_SELECTED_TARGET",
+      "E": "APPROACH_AND_INTERACT_WITH_SELECTED_NON_ENEMY"
+    }
+  },
+  "canon_mutations": 0
+}

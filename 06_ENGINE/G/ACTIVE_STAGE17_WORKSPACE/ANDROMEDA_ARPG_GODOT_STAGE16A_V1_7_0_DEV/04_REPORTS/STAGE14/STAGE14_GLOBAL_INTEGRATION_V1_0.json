@@ -1,0 +1,28 @@
+{
+  "record_id": "STAGE14-GLOBAL-INTEGRATION-V1.0",
+  "status": "PASS",
+  "checks": 43,
+  "passed": 43,
+  "failed": 0,
+  "world_instance_id": "rt:world:7833f3b2-0796-4d2d-8d88-d1ae71e7ac18",
+  "clock": {
+    "clock_id": "rt:clock:90af15f4-b8df-40a3-aeb9-bd055cf90757",
+    "epoch_id": "STELLAR_RUNTIME_EPOCH",
+    "day": 30,
+    "tick": 1,
+    "ticks_per_day": 24,
+    "state": "RUNNING"
+  },
+  "events": 43,
+  "failures": [],
+  "metrics": {
+    "world_system_summary": {
+      "routes": 34,
+      "flows": 7,
+      "populations": 14,
+      "factions": 3,
+      "ticks": 25
+    },
+    "memories": 2
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "record_id": "FLO-015",
+  "record_kind": "DERIVED_CANONICAL_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "title": "Liquen de Gelo",
+  "subtitle": "Liquen resistente ao frio extremo dos Confins de Gelo",
+  "summary": "Liquen de crescimento lento que cobre rochas expostas na geleira, uma das poucas formas de vida vegetal capazes de sobreviver ao frio constante.",
+  "facts": {
+    "Habitat": "Geleira Perene (SUB-016-001), Confins de Gelo",
+    "Uso": "Indicador de estabilidade do gelo, alimento de emergencia"
+  },
+  "relations": [
+    {
+      "code": "SUB-016-001",
+      "label": "Habitat - Geleira Perene"
+    }
+  ],
+  "r2_compatibility": "Especie nova, sem precedente R2; ancorada em TER-016 (territorio derivado, fase 49).",
+  "safety": "FICTIONAL_LOCATION_ONLY"
+}

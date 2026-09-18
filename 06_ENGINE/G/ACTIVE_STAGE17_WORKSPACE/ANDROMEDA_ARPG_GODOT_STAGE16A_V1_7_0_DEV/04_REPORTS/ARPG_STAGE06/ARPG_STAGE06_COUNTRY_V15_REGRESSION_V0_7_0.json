@@ -1,0 +1,35 @@
+{
+  "record_id": "ARPG-STAGE06-COUNTRY-V15-REGRESSION-V0.7.0",
+  "groups": {
+    "core": {
+      "checks": 7,
+      "passed": 7,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "gameplay": {
+      "checks": 6,
+      "passed": 6,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "integration": {
+      "checks": 5,
+      "passed": 5,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "security_persistence": {
+      "checks": 6,
+      "passed": 6,
+      "failed": 0,
+      "status": "PASS"
+    }
+  },
+  "checks": 24,
+  "passed": 24,
+  "failed": 0,
+  "status": "PASS",
+  "execution_note": "Slow grouped legacy runners were executed as isolated conclusive cases; grouped timeout was not counted as PASS.",
+  "generated_at": "2026-08-18T17:12:30.966775+00:00"
+}

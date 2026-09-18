@@ -1,0 +1,13 @@
+{
+  "record_id": "LIVING_SCALE_CONTENT_PROJECTION_V6",
+  "status": "ACTIVE_ENGINE_NEUTRAL_READ_ONLY",
+  "supersedes": "LIVING_SCALE_CONTENT_PROJECTION_V5",
+  "base_projection": "LIVING_SCALE_CONTENT_PROJECTION_V5.json",
+  "varga_vertical_slice_overlay": {
+    "subregion": "SUB-011-001",
+    "locality_reference": "CIT-001",
+    "displayable_state": ["route_blocked", "route_avoided", "route_conditionally_available", "report_recorded"],
+    "forbidden_inference": ["new_city", "border", "sovereignty", "political_control", "canonical_culprit", "global_ecology_change"]
+  },
+  "rules": ["Inherited R2 and derived geography remains read-only.", "The scenario remains a local playable overlay.", "Local route availability never changes territorial control."]
+}

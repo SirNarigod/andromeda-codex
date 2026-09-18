@@ -1,0 +1,102 @@
+{
+  "record_id": "AGENT-REGISTRY-V1.4.0",
+  "version": "V1.4.0",
+  "single_source_of_truth": true,
+  "agents": [
+    {
+      "id": "AG-ATL-04",
+      "name": "Atlas Country LOD",
+      "responsibility": "hierarquia LOD, projeções read-only e features Atlas",
+      "write_scope": [
+        "01_RUNTIME/atlas_country_lod.py"
+      ],
+      "exit_gate": "LOD 0..6 + projections PASS"
+    },
+    {
+      "id": "AG-CRD-04",
+      "name": "Coordenadas e Medidas",
+      "responsibility": "geodésica↔local↔isométrica, chunks e membership",
+      "write_scope": [
+        "01_RUNTIME/spatial_coordinates.py"
+      ],
+      "exit_gate": "round-trip <1mm + signed chunks PASS"
+    },
+    {
+      "id": "AG-STR-04",
+      "name": "Streaming e Persistência",
+      "responsibility": "load/unload/prune, ownership, travel e resume",
+      "write_scope": [
+        "01_RUNTIME/streaming_system.py",
+        "01_RUNTIME/integrated_engine_v14.py"
+      ],
+      "exit_gate": "ownership + process resume PASS"
+    },
+    {
+      "id": "AG-LYR-04",
+      "name": "Layers Atlas",
+      "responsibility": "clima, recursos, indústria, magia, Raiz, ameaça, população, comércio, fauna, flora, rotas",
+      "write_scope": [
+        "01_RUNTIME/atlas_country_lod.py"
+      ],
+      "exit_gate": "canonical route authority + layer integrity PASS"
+    },
+    {
+      "id": "AG-GDT-04",
+      "name": "Godot Isometric Contract",
+      "responsibility": "payload de chunk e contrato de handoff Godot",
+      "write_scope": [
+        "02_CONTRACTS/GODOT_ISOMETRIC_STREAMING_CONTRACT_V1_4.json"
+      ],
+      "exit_gate": "unique refs + meter units PASS"
+    },
+    {
+      "id": "AG-DNG-04",
+      "name": "Dungeon Graph V2",
+      "responsibility": "salas, arestas, chaves, segredos, níveis e posição de sala",
+      "write_scope": [
+        "01_RUNTIME/dungeon_graph_v2.py"
+      ],
+      "exit_gate": "connected graph + room ownership PASS"
+    },
+    {
+      "id": "AG-SEC-04",
+      "name": "Atlas Security/Spoiler",
+      "responsibility": "PUBLIC/PLAYER_RUNTIME/ADMIN projection policy",
+      "write_scope": [
+        "01_RUNTIME/atlas_country_lod.py",
+        "02_CONTRACTS/GODOT_ISOMETRIC_STREAMING_CONTRACT_V1_4.json"
+      ],
+      "exit_gate": "public redaction + admin full PASS"
+    },
+    {
+      "id": "AG-SIM-04",
+      "name": "Spatial Simulation",
+      "responsibility": "simulação base, stress multi-seed, determinismo e travessias",
+      "write_scope": [
+        "03_TESTS/",
+        "04_REPORTS/V1_4_0/"
+      ],
+      "exit_gate": "stress + determinism PASS"
+    },
+    {
+      "id": "AG-AUD-04",
+      "name": "Silent Error Auditor",
+      "responsibility": "erros silenciosos, allowlist, hygiene, autoridade e divergências",
+      "write_scope": [
+        "03_TESTS/run_v14_static_audit.py",
+        "04_REPORTS/V1_4_0/"
+      ],
+      "exit_gate": "static audit 0 FAIL"
+    },
+    {
+      "id": "AG-REL-04",
+      "name": "Release/Restore",
+      "responsibility": "manifest, hashes, release, backup, restore e checkpoint",
+      "write_scope": [
+        "07_RELEASE_READINESS/V1_4_0/"
+      ],
+      "exit_gate": "clean restore repeats critical gates"
+    }
+  ],
+  "status": "PASS"
+}

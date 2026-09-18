@@ -1,0 +1,24 @@
+{
+  "entries": [
+    {
+      "classification": "HARNESS_TIMEOUT_RESOLVED",
+      "event": "Initial unit batch reached cross-world determinism test after 19 consecutive passes and exceeded cumulative execution limit.",
+      "functional_mutation": false,
+      "id": "S11-C01",
+      "resolution": "Determinism invariant kept but moved to stable-ref test excluding runtime UUID; complete unit suite reran 21/21 PASS in ~33s."
+    },
+    {
+      "classification": "GROUPED_RUNNER_TIMEOUT_RESOLVED",
+      "event": "Validation+stress chained invocation exceeded executor limit.",
+      "functional_mutation": false,
+      "id": "S11-C02",
+      "resolution": "Validation and stress rerun separately; 36/36 and 39/39 PASS."
+    }
+  ],
+  "generated_at": "2026-08-18T22:02:13.016529+00:00",
+  "open_corrections": 0,
+  "record_id": "ARPG-STAGE11-CORRECTION-LEDGER-V1.2.0",
+  "stage": "11/23",
+  "status": "PASS",
+  "version": "V1.2.0"
+}

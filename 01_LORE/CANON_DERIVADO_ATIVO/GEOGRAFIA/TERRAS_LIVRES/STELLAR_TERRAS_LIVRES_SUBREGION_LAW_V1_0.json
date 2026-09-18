@@ -1,0 +1,11 @@
+{
+  "record_id":"STELLAR-TERRAS-LIVRES-SUBREGION-LAW-V1.0",
+  "project":"ANDROMEDA CODEX",
+  "version":"V1.0",
+  "status":"CANON_DERIVADO_ATIVO_R2_COMPATIBLE",
+  "authority":{"r2":["TER-011","CIT-001","CIT-002"],"derived":"R2-REBASE-LOT-009","scope":"TERRAS_LIVRES_LOCAL_SUBREGIONS"},
+  "invariants":["TER_011_REMAINS_AUTONOMOUS_COMMUNITIES","KAENNA_VOR_REMAINS_R2_MAXIMUM_AUTHORITY","SUBREGION_DOES_NOT_CREATE_NEW_SOVEREIGNTY","CIT_001_AND_CIT_002_REMAIN_R2_RECORDS","SUBREGION_BOUNDARIES_ARE_NOT_FIXED_CANON"],
+  "prohibitions":["NO_NEW_COUNTRY","NO_NEW_CAPITAL","NO_AUTOMATIC_KENUA_SCENE","NO_SEALED_EPISODE_RESOLUTION","NO_RUNTIME_BORDER_MUTATION"],
+  "simulation_effects":["LivingSim may attach local pressure, resource conditions, professions and encounter contexts.","Living Scale may place subregions beneath TER-011 without treating them as political units.","UE5 may use subregion tags to select contextual content, never to rewrite R2 geography."],
+  "story_generators":["Uma sub-região tem um problema próprio, mas precisa negociar com outra sem perder autonomia.","Uma rota liga ecologias distintas e revela que solução local pode criar custo vizinho.","Uma aparição R2 só atravessa uma sub-região por gate autoral, deixando a campanha do jogador viver suas próprias histórias."]
+}

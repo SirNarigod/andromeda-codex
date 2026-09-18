@@ -1,0 +1,110 @@
+{
+  "record_id": "PER-003",
+  "record_kind": "R2_CANONICAL_ENTRY_MIRROR",
+  "authority": "CANON_R2_CONFIRMADO",
+  "canonical_home": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-003__serlis-aftermoon.json",
+  "source": {
+    "archive_sha256": "257e456a5d0396310ec2355b3dfc0f11f4e0a5264cf6e764591c8760f5070cb0",
+    "lineage": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json",
+    "document_sha256": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726"
+  },
+  "entry": {
+    "code": "PER-003",
+    "slug": "serlis-aftermoon",
+    "title": "Serlis Aftermoon",
+    "subtitle": "Mestre de contenção das Árvores Anciãs",
+    "category": "PER",
+    "secondaryCategories": [],
+    "canon": "Cânone original",
+    "spoiler": 1,
+    "sealed": false,
+    "image": null,
+    "imageStatus": null,
+    "summary": "Mago de alta hierarquia das Árvores Anciãs, especialista em contenção, runas, anatomia mágica e simbiose; fugitivo após o Caso Aelyra e portador de uma marca inselável.",
+    "facts": {
+      "Gênero": "Masculino",
+      "Idade": "29 anos",
+      "Especialidades": "Contenção, runas, anatomia mágica e simbiose",
+      "Condição": "Fugitivo das Árvores Anciãs",
+      "Mentor institucional": "Genes Arvath",
+      "Escala sem preparação": "Grau 3",
+      "Hierarquia anterior": "Mestre de Contenção do Ramo Interno",
+      "Vínculo de pesquisa": "Visitante e fiscal do Círculo Arcano-Botânico da Flor Fóssil",
+      "Relação com Genes": "Discípulo criado e protegido como filho"
+    },
+    "sections": [
+      {
+        "heading": "Origem e posição",
+        "body": "Encontrado ainda criança próximo a uma Árvore de Memória, Serlis foi criado pelas Árvores Anciãs e ascendeu a uma posição respeitada na hierarquia. Como Mestre de Contenção do Ramo Interno, tinha autorização para inspecionar zonas de pesquisa restritas."
+      },
+      {
+        "heading": "Aelyra e o núcleo de pesquisa",
+        "body": "Aelyra integrava um grupo de pesquisa e magia dedicado à flor fóssil. Serlis visitava a área por dever institucional e por seu vínculo afetivo com ela. Após a morte de Aelyra, recusou permitir novas exposições humanas."
+      },
+      {
+        "heading": "O pesquisador paralisado",
+        "body": "Para impedir que o pesquisador-mor Ilyan Morveth conduzisse outra tentativa, Serlis aplicou a Estase de Intervalo, uma paralisia mágica cuja fórmula completa apenas ele conhece. O objetivo foi impedir novas mortes, não executar o pesquisador."
+      },
+      {
+        "heading": "Conflito",
+        "body": "Carrega culpa por prolongar a tentativa de sobrevivência de Aelyra. Deseja salvar Kenua, mas precisa aprender a respeitar as decisões dele e a desenvolver o vínculo com a flor ao longo de várias temporadas, sem domínio imediato."
+      },
+      {
+        "heading": "Marca inselável",
+        "body": "Sua marca reage à corrupção e não foi criada pelas Árvores Anciãs."
+      }
+    ],
+    "relations": [
+      {
+        "slug": "kenua-vaarn",
+        "label": "Responsável pela contenção"
+      },
+      {
+        "slug": "genes-arvath",
+        "label": "Antigo discípulo"
+      },
+      {
+        "slug": "aelyra-voss",
+        "label": "Antigo companheiro"
+      },
+      {
+        "slug": "arvores-ancias",
+        "label": "Instituição de origem"
+      },
+      {
+        "slug": "circulo-arcano-botanico",
+        "label": "Fiscal e visitante autorizado"
+      },
+      {
+        "slug": "ilyan-morveth",
+        "label": "Responsável pela estase"
+      },
+      {
+        "slug": "estase-de-intervalo",
+        "label": "Único conhecedor completo"
+      }
+    ],
+    "keywords": [
+      "Aelyra",
+      "Estase de Intervalo",
+      "Mestre de Contenção",
+      "Ramo Interno",
+      "Serlis",
+      "contenção",
+      "mago",
+      "marca inselável",
+      "Árvores Anciãs"
+    ],
+    "sources": [
+      "BIBLIA_PERSONAGENS_VOLUME_1.md",
+      "CORRECOES_CANONICAS_OBRIGATORIAS.md"
+    ]
+  },
+  "biography": {
+    "status": "R2_SOURCE_EXTRACT",
+    "source_document": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/legacy/v110/docs/canon/01_CANON_ATUAL/BIBLIA_PERSONAGENS_VOLUME_1.md",
+    "source_sha256": "a7d133276930bffbe429d029c8cc97f377b9bed2c90f30f8e44c76d46c61b8be",
+    "text": "Homem, 29 anos. Encontrado criança próximo a uma Árvore de Memória e criado pelas Árvores Anciãs. Ascendeu a **Mestre de Contenção do Ramo Interno**, posição respeitada na hierarquia. É especialista em contenção, runas, anatomia mágica e simbiose.\n\nSerlis visitava a área da flor como fiscal autorizado e porque Aelyra trabalhava no Círculo Arcano-Botânico. Após a morte dela, paralisou Ilyan Morveth com a **Estase de Intervalo**, técnica cuja fórmula completa apenas ele conhece, para impedir novos testes humanos. Deseja impedir que Kenua repita o destino de Aelyra e precisa aprender a não transformar proteção em controle.",
+    "no_unverified_additions": true
+  }
+}

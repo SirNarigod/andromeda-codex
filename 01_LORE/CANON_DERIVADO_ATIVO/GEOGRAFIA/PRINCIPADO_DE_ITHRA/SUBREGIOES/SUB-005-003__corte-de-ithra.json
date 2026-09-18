@@ -1,0 +1,11 @@
+{
+  "record_id": "SUB-005-003", "record_kind": "DERIVED_SUBREGION_PROFILE", "authority": "CANON_DERIVADO_ATIVO", "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Corte de Ithra", "parent_political_unit": "TER-005",
+  "provenance": {"approval": "GAMEPLAY_DERIVED_DEV_SOURCE", "r2_anchors": ["TER-005", "saelyra-ithren"], "compatibility": "Camada administrativa e narrativa local; não cria fronteira, cidade, soberania ou nova autoridade."},
+  "function": "Sede da corte principesca, regula licenças de pesquisa tecnomágica.",
+  "locality_references": ["LOC-005-003 Salão do Principado"],
+  "permitted_catalog_links": {"npc_roles": [], "professions": [], "encounters": [], "resources": []},
+  "local_conflicts": ["licenciamento restrito versus pressão popular por acesso à tecnomagia"],
+  "prohibitions": ["NO_NEW_SOVEREIGNTY", "NO_AUTOMATIC_KENUA_SCENE", "NO_R2_EPISODE_REWRITE", "NO_FIXED_BORDER_COORDINATE"],
+  "story_generators": ["A princesa precisa decidir se libera uma tecnologia híbrida sensível para uso comercial."]
+}

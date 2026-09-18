@@ -1,0 +1,30 @@
+{
+  "loc_id": "LOC-020-007",
+  "record_id": "LOC-020-007",
+  "name": "Portão de Vigília",
+  "parent_subregion": "SUB-020-005",
+  "function": "Entrada fortificada, posto de patrulha e corredor de evacuação.",
+  "notable_link": "TER-020 Nérion — Região Autônoma dos Despertos",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "settlement_tier": "COMPLEXO",
+  "history": "O portão era uma doca industrial; Vektor-09 o transformou em defesa quando o primeiro comboio de Serverus chegou.",
+  "figures": [
+    {
+      "name": "Vektor-09",
+      "note": "comandante partidário da dissuasão"
+    },
+    {
+      "name": "Ena-4",
+      "note": "guia de refugiados que esconde rotas civis"
+    }
+  ],
+  "hook": "Uma tropa de recuperação exige os Androids de teste usando uma ordem ainda válida.",
+  "secondary_hook": "A disputa local revela uma escolha difícil entre autonomia, segurança e memória.",
+  "detail": "Toda patrulha deixa uma cópia criptografada do próprio trajeto para evitar desaparecimentos.",
+  "prohibitions": [
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION",
+    "NO_NAME_FOR_MYSTERIOUS_MAGE_YET"
+  ],
+  "sensory": "Muralhas móveis rangem enquanto holofotes varrem cada assinatura energética."
+}

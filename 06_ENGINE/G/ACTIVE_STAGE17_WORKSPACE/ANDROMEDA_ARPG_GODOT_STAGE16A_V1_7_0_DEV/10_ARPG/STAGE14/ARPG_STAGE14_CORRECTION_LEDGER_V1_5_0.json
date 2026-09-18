@@ -1,0 +1,52 @@
+{
+  "record_id": "ARPG-STAGE14-CORRECTION-LEDGER-V1.5.0",
+  "stage": 14,
+  "version": "V1.5.0",
+  "status": "PASS",
+  "open_corrections": 0,
+  "corrections": [
+    {
+      "id": "S14-C01",
+      "type": "LAZY_STATE_INTERPRETATION",
+      "issue": "Initial resource metric joined Stage09 runtime-state rows and therefore observed only fishing, the only activity with separately materialized runtime state at bootstrap.",
+      "fix": "Resource/ecology metrics now consume the public Stage09 node projection, preserving all six activities and lazy-state semantics.",
+      "retested": true
+    },
+    {
+      "id": "S14-C02",
+      "type": "MARKET_LOCALITY",
+      "issue": "Initial market metric sampled representative goods only at POI-002, making healthy workshop/warehouse stock look absent.",
+      "fix": "Metric now selects the strongest valid stock node among Stage13 vendors while preserving each local market row.",
+      "retested": true
+    },
+    {
+      "id": "S14-C03",
+      "type": "HARNESS_ASSERTION",
+      "issue": "Replay test compared demand before the first causal application with demand after replay.",
+      "fix": "Test now compares state immediately after first application against replay state; runtime idempotency rule was not weakened.",
+      "retested": true
+    },
+    {
+      "id": "S14-C04",
+      "type": "HARNESS_DETERMINISM",
+      "issue": "Determinism test compared a mutated world against a fresh world with the same seed.",
+      "fix": "Equivalent fresh baselines are compared; deterministic metrics/details pass.",
+      "retested": true
+    },
+    {
+      "id": "S14-C05",
+      "type": "COVERAGE_GAP",
+      "issue": "First causal bridge exposed infrastructure/resources/production/market/labor/ecology/security but population, factions and legal governance were only indirect.",
+      "fix": "Added explicit population_welfare, faction_stability and governance_stability metrics with no-sovereignty/no-lawlessness guards.",
+      "retested": true
+    },
+    {
+      "id": "S14-C06",
+      "type": "HARNESS_TIMEOUT",
+      "issue": "Persistence and some Country regressions can exceed the executor limit when chained after other expensive country bootstraps.",
+      "fix": "Affected tests were executed in isolated processes; completed suites passed. Timeouts were not counted as PASS.",
+      "retested": true
+    }
+  ],
+  "updated_at": "2026-08-18T20:49:08.386053-03:00"
+}

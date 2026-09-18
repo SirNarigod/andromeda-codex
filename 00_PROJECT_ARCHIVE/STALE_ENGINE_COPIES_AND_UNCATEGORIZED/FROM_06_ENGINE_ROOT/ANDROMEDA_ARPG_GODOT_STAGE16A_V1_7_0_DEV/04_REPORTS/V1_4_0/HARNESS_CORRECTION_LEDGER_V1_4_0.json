@@ -1,0 +1,32 @@
+{
+  "record_id": "HARNESS-CORRECTION-LEDGER-V1.4.0",
+  "classification": "TEST_INFRASTRUCTURE_NOT_WORLD_BUG",
+  "items": [
+    {
+      "issue": "static auditor initially read contract fields from wrong paths",
+      "status": "CLOSED"
+    },
+    {
+      "issue": "static auditor called a non-existent parse_chunk_id helper instead of the signed-id validator path",
+      "status": "CLOSED"
+    },
+    {
+      "issue": "static auditor counted graph object references as physical instances",
+      "status": "CLOSED"
+    },
+    {
+      "issue": "auditor import recreated __pycache__ until bytecode writes were disabled",
+      "status": "CLOSED"
+    },
+    {
+      "issue": "determinism harness initially used wrong layer/room/route field names",
+      "status": "CLOSED"
+    },
+    {
+      "issue": "300-seed harness initially bootstrapped Spatial before Scene and then used len() on a generator",
+      "status": "CLOSED"
+    }
+  ],
+  "open": 0,
+  "status": "PASS"
+}

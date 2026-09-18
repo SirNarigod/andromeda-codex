@@ -1,0 +1,34 @@
+{
+  "est_id": "EST-043",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Posto da Passagem Oculta",
+  "building_type": "MILITAR",
+  "parent_locality": "LOC-013-003",
+  "parent_subregion": "SUB-013-003",
+  "parent_political_unit": "TER-013",
+  "function": "Guarda discreta que protege a rota secreta de acesso ao domínio.",
+  "economic_role": {
+    "is_vendor": false,
+    "sells": [],
+    "produces": [],
+    "regulation_factor": 0.6
+  },
+  "capacity": {
+    "jobs": 4,
+    "residents": 4
+  },
+  "professions_linked": [],
+  "notable_link": "Passagem Secreta (SUB-013-003)",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "PEDRA_REFORCADA",
+    "flammability": "BAIXA",
+    "recovery_days": 7
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "record_id": "ART-015",
+  "record_kind": "R2_CANONICAL_ENTRY_MIRROR",
+  "authority": "CANON_R2_CONFIRMADO",
+  "canonical_home": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-015__armerias-runicas.json",
+  "source": {
+    "archive_sha256": "257e456a5d0396310ec2355b3dfc0f11f4e0a5264cf6e764591c8760f5070cb0",
+    "lineage": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json",
+    "document_sha256": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726"
+  },
+  "entry": {
+    "code": "ART-015",
+    "slug": "armerias-runicas",
+    "title": "Armerias rúnicas",
+    "subtitle": "Lojas de magos e armamento encantado",
+    "category": "ART",
+    "secondaryCategories": [],
+    "canon": "Cânone consolidado",
+    "spoiler": 1,
+    "sealed": false,
+    "image": null,
+    "imageStatus": null,
+    "summary": "Estabelecimentos licenciados onde magos e artesãos vendem, carregam e mantêm armamentos rúnicos.",
+    "facts": {
+      "Produtos": "Armas R1 a R3, selos, cargas e manutenção",
+      "Clientes": "Guardas, mercenários, nobres e equipes de contenção",
+      "Preço": "Muito superior ao armamento comum",
+      "Controle": "Licenças, assinatura do comprador e inspeção de matriz"
+    },
+    "sections": [
+      {
+        "heading": "Mercado paralelo",
+        "body": "Armas sem registro existem, mas matrizes instáveis podem falhar, drenar o portador ou explodir. A qualidade da runa importa tanto quanto a arma."
+      }
+    ],
+    "relations": [
+      {
+        "slug": "runas",
+        "label": "Base técnica"
+      },
+      {
+        "slug": "sistema-de-armamentos",
+        "label": "Mercado"
+      }
+    ],
+    "keywords": [
+      "loja de magos",
+      "armeria",
+      "armas rúnicas",
+      "comércio"
+    ],
+    "sources": [
+      "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+    ]
+  }
+}

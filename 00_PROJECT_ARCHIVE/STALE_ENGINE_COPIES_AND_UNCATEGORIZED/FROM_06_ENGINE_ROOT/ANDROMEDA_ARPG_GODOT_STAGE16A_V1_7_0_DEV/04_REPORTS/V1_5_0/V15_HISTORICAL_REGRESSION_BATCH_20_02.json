@@ -1,0 +1,26 @@
+{
+  "record_id": "V15-HISTORICAL-REGRESSION-BATCH",
+  "start": 20,
+  "file_count": 2,
+  "tests": 79,
+  "passed_files": 2,
+  "failed_files": 0,
+  "rows": [
+    {
+      "file": "test_llm_gateway.py",
+      "tests": 35,
+      "returncode": 0,
+      "seconds": 3.609,
+      "status": "PASS"
+    },
+    {
+      "file": "test_long_horizon.py",
+      "tests": 44,
+      "returncode": 0,
+      "seconds": 19.539,
+      "status": "PASS"
+    }
+  ],
+  "failures": [],
+  "status": "PASS"
+}

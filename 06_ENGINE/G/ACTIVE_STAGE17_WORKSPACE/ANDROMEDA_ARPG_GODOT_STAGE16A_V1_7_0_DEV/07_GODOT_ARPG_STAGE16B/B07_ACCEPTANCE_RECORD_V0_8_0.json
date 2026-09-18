@@ -1,0 +1,442 @@
+{
+  "record_id": "ANDROMEDA-ARPG-STAGE16B-B07-ACCEPTANCE-V0.8.0",
+  "stage": "16B/23",
+  "block": "B07_UNIVERSAL_GROUND_LOOT_PICKUP_AUTO_PICKUP_WATER_EXPOSURE",
+  "captured_at": "2026-08-21T13:39:02.8679129-03:00",
+  "status": "PASS_APPLICABLE_B07_SCOPE_WITH_PARTIAL_AUTHORITATIVE_EVIDENCE",
+  "b07_closed": true,
+  "b08_started": false,
+  "final_stage16_backup_created": false,
+  "authority": {
+    "master_v2_0_1": "READ_ONLY",
+    "living_simulation_engine": "READ_ONLY_BASELINE",
+    "stage16a_v0_8_0": "READ_ONLY_BASELINE",
+    "godot_living_v1_5": "READ_ONLY_HISTORY",
+    "godot_role": "GROUND_LOOT_PHYSICS_PRESENTATION_INPUT_NAVIGATION_UI_AND_CLIENT_ORCHESTRATION_ONLY",
+    "item_grant_authority_in_gdscript": false,
+    "pickup_result_authority_in_gdscript": false,
+    "quantity_authority_in_gdscript": false,
+    "ownership_authority_in_gdscript": false,
+    "inventory_or_currency_authority_in_gdscript": false,
+    "loot_roll_authority_in_gdscript": false,
+    "profile_persistence_authority_in_gdscript": false,
+    "ttl_authority_in_gdscript": false,
+    "backend_substitute_created": false,
+    "http_endpoint_created": false,
+    "canonical_mutation_detected": false
+  },
+  "environment": {
+    "godot_version": "4.7.1.stable.official.a13da4feb",
+    "project_path": "C:/Users/thall/Documents/andromeda-argp/ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/07_GODOT_ARPG_STAGE16B",
+    "main_scene": "res://scenes/Main.tscn",
+    "editor_bridge": "EXISTING_LOCAL_ANDROMEDA_EDITOR_BRIDGE_OPERATIONAL",
+    "user_editor_pid": 10524,
+    "user_editor_pid_preserved": true,
+    "backend_127_0_0_1_8000": {
+      "status": "NOT_AVAILABLE",
+      "listener_count": 0
+    }
+  },
+  "architecture": {
+    "ground_loot_scene": {
+      "root": "RigidBody3D:GroundLoot",
+      "components": [
+        "CollisionShape3D",
+        "MeshInstance3D:PlaceholderVisual",
+        "Area3D:PickupSensor",
+        "Label3D:OptionalMinimalLabel",
+        "Node3D:HoverFeedback",
+        "Node:WaterWorldItemPresenter"
+      ],
+      "collision_layer": 16,
+      "continuous_collision_detection": true,
+      "settling": "LOCAL_DETERMINISTIC_PHYSICS_PRESENTATION_ONLY",
+      "settled_behavior": "SLEEP_OR_FREEZE_WHILE_REMAINING_INTERACTIVE"
+    },
+    "universal_source_kinds": [
+      "ENEMY",
+      "TREE",
+      "ROCK",
+      "ORE",
+      "FLORA",
+      "AGRICULTURE",
+      "HUNTING",
+      "FISHING",
+      "CONTAINER",
+      "PHYSICAL_PRODUCTION",
+      "PLAYER_DROP"
+    ],
+    "manual_pickup": {
+      "physical_radius_m": 0.5,
+      "inclusive_boundary": true,
+      "greater_than_boundary_rejected": true,
+      "approach_before_request": true,
+      "requires_valid_path": true,
+      "requires_clear_blocker_probe": true,
+      "requires_settled_active_drop": true,
+      "local_grant": false
+    },
+    "auto_pickup": {
+      "profile_value": "EXTERNALLY_PROJECTED_ON_OFF",
+      "passive": true,
+      "same_physical_radius_m": 0.5,
+      "preserves_movement": true,
+      "preserves_attack": true,
+      "preserves_interaction": true,
+      "preserves_chase": true,
+      "preserves_target": true,
+      "per_target_inflight_deduplication": true,
+      "authoritative_persistence_confirmed": false
+    },
+    "identity_and_snapshots": {
+      "stable_target_ref": true,
+      "session_ref_guard": true,
+      "ordered_sequence_guard": true,
+      "duplicate_event_guard": true,
+      "removed_target_tombstone": true,
+      "presentation_feedback_can_retarget": false
+    },
+    "stack_and_icons": {
+      "quantity_is_projected": true,
+      "invalid_quantity_rejected": true,
+      "icons_by_category_not_individual_item": true,
+      "final_art": false
+    },
+    "water": {
+      "individual_loot_exposure_contract_s": 900,
+      "states_projected": ["ACTIVE", "RECOVERABLE_IN_WATER", "SUNK"],
+      "client_advances_authoritative_ttl": false,
+      "client_sinks_on_local_timer": false,
+      "sunk_pickup_blocked": true,
+      "bag_30_minute_scope_implemented": false,
+      "timer_save_reload_implemented": false
+    },
+    "placeholders": [
+      "GROUND_LOOT_MESHES",
+      "CATEGORY_COLORS_AND_LABELS",
+      "LOCAL_GATE_AUTHORITATIVE_SNAPSHOT_PROJECTIONS",
+      "FINAL_ART",
+      "FINAL_AUDIO",
+      "B08_GATHERING_SOURCE_LOOPS",
+      "B10_BAG_AND_TIMER_PERSISTENCE"
+    ]
+  },
+  "tests": [
+    {
+      "id": "STAGE16B_B07_HEADLESS_FINAL",
+      "result": "PASS",
+      "passed": 357,
+      "failed": 0,
+      "process_exit_code": 0,
+      "stderr_chars": 0,
+      "errors": 0,
+      "warnings": 0,
+      "evidence": "B07_GODOT_RUNTIME.log"
+    },
+    {
+      "id": "STAGE16B_B07_EDITOR_BRIDGE_FINAL",
+      "result": "PASS",
+      "passed": 357,
+      "failed": 0,
+      "debugger_errors": 0,
+      "debugger_warnings": 0,
+      "controlled_stop_final_errors": 0,
+      "evidence": "B07_EDITOR_BRIDGE_DEBUGGER_V0_8_0.json"
+    },
+    {
+      "id": "STAGE16B_B07_MAIN_DIRECT_EDITOR_BRIDGE",
+      "result": "PASS",
+      "debugger_errors": 0,
+      "debugger_warnings": 0,
+      "controlled_stop_final_errors": 0,
+      "evidence": "B07_EDITOR_BRIDGE_DEBUGGER_V0_8_0.json"
+    },
+    {
+      "id": "STAGE16B_B01_HEADLESS_REGRESSION",
+      "result": "PASS",
+      "passed": 54,
+      "failed": 0,
+      "process_exit_code": 0,
+      "stderr_chars": 0,
+      "evidence": "B07_GODOT_B01_REGRESSION.log"
+    },
+    {
+      "id": "STAGE16B_B02_HEADLESS_REGRESSION",
+      "result": "PASS",
+      "passed": 90,
+      "failed": 0,
+      "process_exit_code": 0,
+      "stderr_chars": 0,
+      "evidence": "B07_GODOT_B02_REGRESSION.log"
+    },
+    {
+      "id": "STAGE16B_B03_HEADLESS_REGRESSION",
+      "result": "PASS",
+      "passed": 357,
+      "failed": 0,
+      "process_exit_code": 0,
+      "stderr_chars": 0,
+      "evidence": "B07_GODOT_B03_REGRESSION.log"
+    },
+    {
+      "id": "STAGE16B_B04_HEADLESS_REGRESSION",
+      "result": "PASS",
+      "passed": 156,
+      "failed": 0,
+      "process_exit_code": 0,
+      "stderr_chars": 0,
+      "evidence": "B07_GODOT_B04_REGRESSION.log"
+    },
+    {
+      "id": "STAGE16B_B05_HEADLESS_REGRESSION",
+      "result": "PASS",
+      "passed": 210,
+      "failed": 0,
+      "process_exit_code": 0,
+      "stderr_chars": 0,
+      "evidence": "B07_GODOT_B05_REGRESSION.log"
+    },
+    {
+      "id": "STAGE16B_B06_HEADLESS_REGRESSION",
+      "result": "PASS",
+      "passed": 265,
+      "failed": 0,
+      "process_exit_code": 0,
+      "stderr_chars": 0,
+      "evidence": "B07_GODOT_B06_REGRESSION.log"
+    },
+    {
+      "id": "STAGE16A_POST_B07_ACCUMULATED",
+      "result": "PASS",
+      "passed": 209,
+      "failed": 0,
+      "runner_summary": "Ran 209 tests in 261.634s",
+      "process_exit_code": 0,
+      "evidence": "B07_STAGE16A_REGRESSION.stderr.log",
+      "note": "Python unittest writes its verbose runner output to stderr by design."
+    },
+    {
+      "id": "STAGE16A_POST_B07_STRESS_FINAL",
+      "result": "PASS",
+      "passed": 20,
+      "failed": 0,
+      "process_exit_code": 0,
+      "stderr_chars": 0,
+      "evidence": "B07_STAGE16A_STRESS.log"
+    },
+    {
+      "id": "GODOT_LIVING_V1_5_HISTORICAL_RUNTIME_GATE",
+      "result": "PASS",
+      "marker": "ANDROMEDA_GODOT_V1_5_RUNTIME_GATE: PASS",
+      "process_exit_code": 0,
+      "stderr_chars": 0,
+      "evidence": "B07_GODOT_V15_RUNTIME_GATE.log"
+    },
+    {
+      "id": "STAGE16A_POST_B07_BYTE_INTEGRITY",
+      "result": "PASS",
+      "files_verified": 724,
+      "missing": 0,
+      "mismatches": 0,
+      "godot_living_v1_5_files_verified": 4,
+      "evidence": "B07_BASELINE_INTEGRITY.log"
+    }
+  ],
+  "required_b07_scenarios": [
+    {"scenario": "SPAWN_AND_UNIQUE_TARGET_REF", "status": "PASS"},
+    {"scenario": "ALL_UNIVERSAL_SOURCE_KINDS_ACCEPTED", "status": "PASS"},
+    {"scenario": "PHYSICAL_SETTLING_SLEEP_FREEZE_NO_JITTER_OR_PENETRATION", "status": "PASS"},
+    {"scenario": "UNSETTLED_PICKUP_BLOCKED", "status": "PASS"},
+    {"scenario": "MANUAL_APPROACH_ABOVE_0_5_M", "status": "PASS"},
+    {"scenario": "PICKUP_REQUEST_EXACTLY_0_5_M", "status": "PASS"},
+    {"scenario": "PICKUP_REJECTED_AT_0_5001_M", "status": "PASS"},
+    {"scenario": "BLOCKER_AND_INVALID_PATH_REJECTED", "status": "PASS"},
+    {"scenario": "LEFT_AND_RIGHT_CLICK_CONTRACT", "status": "PASS"},
+    {"scenario": "OVERLAPPING_LOOTS_CURSOR_DEPTH_RESOLUTION", "status": "PASS"},
+    {"scenario": "STALE_WRONG_REMOVED_OTHER_SESSION_TARGET_REJECTED", "status": "PASS"},
+    {"scenario": "CLICK_SPAM_AND_DUPLICATE_EVENT_DEDUPLICATED", "status": "PASS"},
+    {"scenario": "INVENTORY_FULL_LEAVES_LOOT_ACTIVE", "status": "PASS"},
+    {"scenario": "AUTO_PICKUP_OFF_NEVER_PROXIMITY_COLLECTS", "status": "PASS"},
+    {"scenario": "AUTO_PICKUP_ON_ONLY_WITHIN_VALID_GUARDS", "status": "PASS"},
+    {"scenario": "AUTO_PICKUP_PRESERVES_MOVEMENT_ATTACK_INTERACTION_CHASE_TARGET", "status": "PASS"},
+    {"scenario": "AUTO_PICKUP_MULTIPLE_LOOT_NO_REQUEST_SPAM", "status": "PASS"},
+    {"scenario": "PREFERENCE_ON_OFF_UI_REOPEN_EXTERNAL_STALE_RESYNC_PROJECTION", "status": "PASS"},
+    {"scenario": "STACK_QUANTITY_1_AND_GREATER_EXTERNAL_UPDATE_INVALID_STALE", "status": "PASS"},
+    {"scenario": "CATEGORY_ICON_PLACEHOLDERS_NOT_PER_ITEM", "status": "PASS"},
+    {"scenario": "WATER_EXPOSURE_0_1_899_900_AND_ABOVE_900_PROJECTION", "status": "PASS"},
+    {"scenario": "WATER_EXPOSURE_CORRECTION_RECONNECT_AND_RESYNC", "status": "PASS"},
+    {"scenario": "ACTIVE_TO_SUNK_AND_DIRECT_SUNK_PICKUP_BLOCKED", "status": "PASS"},
+    {"scenario": "NO_LOCAL_TTL_ADVANCE_OR_SINK_AUTHORITY", "status": "PASS"},
+    {"scenario": "B01_TO_B06_TARGET_CAMERA_HUD_COMBAT_FEEDBACK_PRESERVED", "status": "PASS"},
+    {"scenario": "DEBUGGER_ZERO_ERRORS_ZERO_WARNINGS", "status": "PASS"},
+    {"scenario": "NO_GAMEPLAY_AUTHORITY_IN_GDSCRIPT", "status": "PASS"}
+  ],
+  "invalidated_runs": [
+    {
+      "id": "B07_PRECHECK_B03",
+      "counted": false,
+      "result": "294/299",
+      "reason": "Duplicate inherited constant and invalid static RigidBody casts caused compile/runtime cascades."
+    },
+    {
+      "id": "B07_GODOT_GATE_R1",
+      "counted": false,
+      "result": "345/353",
+      "reason": "Pre-tree global transforms, freed-reference tests and initial overlap/blocker/water fixtures produced errors/failures."
+    },
+    {
+      "id": "B03_AFTER_CURSOR_FIX",
+      "counted": false,
+      "result": "351/357",
+      "reason": "Subpixel tie logic used a physics-hit point that selected an unintended nearby object."
+    },
+    {
+      "id": "B07_R2",
+      "counted": false,
+      "result": "350/353",
+      "reason": "Blocker, water and duplicate-snapshot fixtures did not isolate their contract conditions."
+    },
+    {
+      "id": "B03_AFTER_ANCHOR_FIX",
+      "counted": false,
+      "result": "354/357",
+      "reason": "Root-origin anchor regressed the approved B03 physical-overlap selection."
+    },
+    {
+      "id": "B07_R3",
+      "counted": false,
+      "result": "354/357",
+      "reason": "Overlap fixture and water-local-settle assertion sampled the wrong anchor/timing."
+    },
+    {
+      "id": "B07_EDITOR_BRIDGE_R1",
+      "counted": false,
+      "result": "357/357_FUNCTIONAL_WITH_4_WARNINGS",
+      "reason": "Any debugger warning invalidates the run."
+    },
+    {
+      "id": "B07_STAGE16A_STRESS_INITIAL_INVOCATION",
+      "counted": false,
+      "result": "20/20_OUTPUT_ONLY",
+      "reason": "The orchestration call did not return a usable retained process exit code."
+    }
+  ],
+  "corrections": [
+    "Renamed the B07 authority constant and used runtime RigidBody properties without invalid custom-script casts.",
+    "Set spawn position before tree insertion and validated instances before type checks.",
+    "Resolved overlap by stable pointer_world_position anchors with a 0.25 px depth tie tolerance.",
+    "Corrected blocker, water and duplicate-sequence fixtures without weakening runtime guards.",
+    "Waited for deterministic physics frames before testing water settling.",
+    "Removed two incompatible ternaries and two redundant awaits found by the real Editor Bridge.",
+    "Repeated all affected headless/Bridge/regression runs and repeated stress with a retained process handle."
+  ],
+  "integrity": {
+    "checkpoint_files_verified": 724,
+    "checkpoint_missing": 0,
+    "checkpoint_mismatches": 0,
+    "checkpoint_sha256": "21626A3152CB37E167EEE24BFF9D3142C5D389A8CA2827594B34211591525A6A",
+    "master_v2_0_1_sha256": "6D9AC3CCE7DCF6A65FDCF73859C332A0211C1AF52D149077BEEF554BF7BBD0B2",
+    "source_acceptance_matrix_sha256": "9335E6C7A5FAA25F97991204787D2C77485592419AAA1F51641C01E31317454C",
+    "godot_living_v1_5_files_verified": 4,
+    "godot_living_v1_5_mismatches": 0,
+    "source_acceptance_matrix_modified": false,
+    "writes_outside_stage16b": 0
+  },
+  "files_modified": [
+    {"path": "project.godot", "sha256": "035902AEC618DA9B237A62AEE6B752879E43DD4940A5CF3B7111330953408CE9", "reason": "B07 application label only."},
+    {"path": "scenes/Main.tscn", "sha256": "B500BDEC9B21F8060ACC9A0CA0B4F31F8293E307457CE1D6AA369040684F2383", "reason": "GroundLootPickupClient scene integration."},
+    {"path": "scenes/interaction/GroundLoot.tscn", "sha256": "1AD8E913481EAE34DC5923FA1743BA2518E4E0686268412947079DE6627D1676", "reason": "Required physical GroundLoot architecture and safe settling presentation."},
+    {"path": "scripts/main.gd", "sha256": "28AABA11E9A287A400F1977D8E4FCE04FF87C75B9C29FEB9203C594F631A322B", "reason": "Manual Ground Loot intent orchestration and authority flags."},
+    {"path": "scripts/input/input_router.gd", "sha256": "E29CA0ECA2E934BDF10307BF5AA5558126B1F42A1323C4FCE0F268DBEDE37F4D", "reason": "Deterministic cursor/depth resolution from authored target anchors."},
+    {"path": "tests/godot/b05_runtime_gate.gd", "sha256": "D55560072B240A413D2173A6058A97C7C2787C29F39D185699C145F136DB3C1E", "reason": "Exact B05/B06/B07 label compatibility for historical regression."},
+    {"path": "tests/godot/b06_runtime_gate.gd", "sha256": "7D4FC35CC1FEA77F2F3D407C28EAA2EC04AEDD6E35584D9A83BB314DEE126F73", "reason": "Exact B06/B07 label compatibility for historical regression."}
+  ],
+  "files_created": [
+    {"path": "scripts/interaction/ground_loot.gd", "sha256": "080EC5D09A4B163F234E6DE46AD7FF2D06A8E9428F64F2DF356D10C8F96E603C"},
+    {"path": "scripts/interaction/ground_loot_pickup_client.gd", "sha256": "2FBE0430B96340D2C51890A8B69D59149A1A35E596BC9C21641D9FEBBE71E418"},
+    {"path": "tests/godot/B07RuntimeGate.tscn", "sha256": "B06199B4C8C954AE697902B742B6058E4E149A9C8871D9D9CF8C3E43A19FB379"},
+    {"path": "tests/godot/b07_runtime_gate.gd", "sha256": "8465913FB2F93D7CDACF4736933FD6EAD6EBEF0A1849385F554EFC8BE7145A28"},
+    {"path": "scripts/interaction/ground_loot.gd.uid", "sha256": "CC764F7627B48527D7BD65B26B0018F9A5B4CC5275EB6AF8574EABD361029C85", "generated_by": "GODOT"},
+    {"path": "scripts/interaction/ground_loot_pickup_client.gd.uid", "sha256": "19BA6750F1C2F014A3D5F9A3B70CF03901BA3AA085EE4A68D109EF9B2250975F", "generated_by": "GODOT"},
+    {"path": "README_STAGE16B_B07.md"},
+    {"path": "B07_IMPLEMENTATION_LOG_V0_8_0.md"},
+    {"path": "B07_EDITOR_BRIDGE_DEBUGGER_V0_8_0.json"},
+    {"path": "B07_ACCEPTANCE_RECORD_V0_8_0.json"},
+    {"path": "B07_BASELINE_INTEGRITY.log"}
+  ],
+  "evidence_artifacts": [
+    "B07_GODOT_RUNTIME.log",
+    "B07_GODOT_RUNTIME.stderr.log",
+    "B07_GODOT_B01_REGRESSION.log",
+    "B07_GODOT_B02_REGRESSION.log",
+    "B07_GODOT_B03_REGRESSION.log",
+    "B07_GODOT_B04_REGRESSION.log",
+    "B07_GODOT_B05_REGRESSION.log",
+    "B07_GODOT_B06_REGRESSION.log",
+    "B07_STAGE16A_REGRESSION.stderr.log",
+    "B07_STAGE16A_STRESS.log",
+    "B07_GODOT_V15_RUNTIME_GATE.log",
+    "B07_BASELINE_INTEGRITY.log",
+    "B07_EDITOR_BRIDGE_DEBUGGER_V0_8_0.json",
+    "B07_GODOT_GATE_R1.stdout.log",
+    "B07_GODOT_GATE_R1.stderr.log",
+    "B07_R2.stdout.log",
+    "B07_R3.stdout.log",
+    "B07_R4.stdout.log"
+  ],
+  "acceptance_matrix_before_b07": {
+    "PASS": ["G16B-01", "G16B-02", "G16B-07", "G16B-10", "G16B-11", "G16B-12", "G16B-13", "G16B-15"],
+    "PARTIAL_EVIDENCE": ["G16B-03", "G16B-04", "G16B-06", "G16B-08", "G16B-09", "G16B-14", "G16B-20", "G16B-21", "G16B-22", "G16B-23", "G16B-24", "G16B-25", "G16B-26", "G16B-27"],
+    "NOT_EXECUTED": ["G16B-05", "G16B-16", "G16B-17", "G16B-18", "G16B-19", "G16B-28"]
+  },
+  "acceptance_matrix_after_b07_summary": {
+    "PASS": ["G16B-01", "G16B-02", "G16B-07", "G16B-10", "G16B-11", "G16B-12", "G16B-13", "G16B-15"],
+    "PARTIAL_EVIDENCE": ["G16B-03", "G16B-04", "G16B-05", "G16B-06", "G16B-08", "G16B-09", "G16B-14", "G16B-20", "G16B-21", "G16B-22", "G16B-23", "G16B-24", "G16B-25", "G16B-26", "G16B-27"],
+    "NOT_EXECUTED": ["G16B-16", "G16B-17", "G16B-18", "G16B-19", "G16B-28"]
+  },
+  "acceptance_matrix": [
+    {"id": "G16B-01", "status": "PASS", "evidence": ["B01_54_OF_54_POST_B07"]},
+    {"id": "G16B-02", "status": "PASS", "evidence": ["B02_90_OF_90_POST_B07"]},
+    {"id": "G16B-03", "status": "PARTIAL_EVIDENCE", "evidence": ["B03_LOCAL_INTENTS_PRESERVED", "B06_CONFIRMED_COMBAT_PRESENTATION", "B07_PICKUP_INTENT_INTEGRATION"], "missing": ["AUTHORITATIVE_COOLDOWN_AND_ATTACK_ROUNDTRIP"]},
+    {"id": "G16B-04", "status": "PARTIAL_EVIDENCE", "evidence": ["B07_EXACT_0_5_M_AND_0_5001_M", "B07_BLOCKER_PATH_SETTLING_AND_REMOTE_PICKUP_GUARDS", "B07_REAL_GODOT_PHYSICS_AND_NAVIGATION"], "missing": ["LIVE_AUTHORITATIVE_PICKUP_RESULT_ROUNDTRIP"]},
+    {"id": "G16B-05", "status": "PARTIAL_EVIDENCE", "evidence": ["B07_UNIVERSAL_SOURCE_KIND_CONTRACT", "B07_PHYSICAL_GROUND_LOOT_BEFORE_ANY_CLIENT_GRANT"], "missing": ["B08_ACTUAL_TREE_ROCK_ORE_FLORA_AGRICULTURE_HUNT_FISH_ENEMY_SOURCE_LOOPS"]},
+    {"id": "G16B-06", "status": "PARTIAL_EVIDENCE", "evidence": ["B07_AUTO_PICKUP_ON_OFF_RANGE_BLOCKER_SETTLING_ANTI_SPAM", "B07_MOVEMENT_ATTACK_INTERACTION_CHASE_TARGET_PRESERVATION", "B07_EXTERNAL_PREFERENCE_STALE_AND_RESYNC_PROJECTION"], "missing": ["LIVE_PROFILE_PREFERENCE_PERSISTENCE_ROUNDTRIP"]},
+    {"id": "G16B-07", "status": "PASS", "evidence": ["B04_156_OF_156_POST_B07"]},
+    {"id": "G16B-08", "status": "PARTIAL_EVIDENCE", "evidence": ["B04_SURFACE_SLOPE_LOAD_INPUTS", "B05_YELLOW_RADIAL_STAMINA_UI", "B06_STAMINA_REGRESSION", "STAGE16A_AUTHORITY_REGRESSION"], "missing": ["LIVE_AUTHORITATIVE_STAMINA_ROUNDTRIP"]},
+    {"id": "G16B-09", "status": "PARTIAL_EVIDENCE", "evidence": ["B04_ACTIVE_PRELOAD_SYSTEMIC_REFERENCE_STREAMING"], "missing": ["LIVE_LIVING_SYSTEMIC_SNAPSHOT"]},
+    {"id": "G16B-10", "status": "PASS", "evidence": ["B05_REALTIME_WHITE_ROUNDED_DIALOGUE_NO_NEXT_NO_PAUSE", "B05_210_OF_210_POST_B07"]},
+    {"id": "G16B-11", "status": "PASS", "evidence": ["B03_NPC_HOVER_NAME_ONLY", "B05_TURN_GATED_POOL_AND_NEAR_NPC_CHOICES"]},
+    {"id": "G16B-12", "status": "PASS", "evidence": ["B05_IMPORTANT_WORLD_BUBBLE_PLUS_BOTTOM_LINE"]},
+    {"id": "G16B-13", "status": "PASS", "evidence": ["B05_MINIMAL_HUD_INVENTORY_I_UNIFIED_UI", "B06_COMMON_AND_ALPHA_BARS"]},
+    {"id": "G16B-14", "status": "PARTIAL_EVIDENCE", "evidence": ["B02_CAMERA", "B04_MICRO_RELIEF_STABILITY", "B05_WHEEL_ZOOM_MENU_ISOLATION", "B06_BOUNDED_IMPULSE", "B07_POINTER_TARGET_STABILITY"], "missing": ["REAL_OCCLUDER_MATERIAL_FADE"]},
+    {"id": "G16B-15", "status": "PASS", "evidence": ["B06_CONFIRMED_PRESENTATION_DOES_NOT_CHANGE_GAMEPLAY", "B06_LOCAL_VISUAL_FREEZE_ONLY", "B06_REDUCED_MOTION"]},
+    {"id": "G16B-16", "status": "NOT_EXECUTED"},
+    {"id": "G16B-17", "status": "NOT_EXECUTED"},
+    {"id": "G16B-18", "status": "NOT_EXECUTED"},
+    {"id": "G16B-19", "status": "NOT_EXECUTED"},
+    {"id": "G16B-20", "status": "PARTIAL_EVIDENCE", "evidence": ["B01_THROUGH_B07_REGRESSIONS", "STAGE16A_209_OF_209", "STRESS_20_OF_20", "BASELINE_724_OF_724", "MASTER_CHECKPOINT_MATRIX_HASHES_UNCHANGED"]},
+    {"id": "G16B-21", "status": "PARTIAL_EVIDENCE", "evidence": ["B05_EXACTLY_TWO_SLOTS_ONE_VISUAL_ACTIVE", "STAGE16A_MAIN_HAND_AND_MODIFIER_AUTHORITY_TESTS"], "missing": ["LIVE_MAIN_HAND_SNAPSHOT_ROUNDTRIP"]},
+    {"id": "G16B-22", "status": "PARTIAL_EVIDENCE", "evidence": ["B05_KEYS_1_2_WHEEL_ZOOM_MENU_INPUT_ROUTING"], "missing": ["LIVE_AUTHORITATIVE_SLOT_ACTIVATION_ROUNDTRIP"]},
+    {"id": "G16B-23", "status": "PARTIAL_EVIDENCE", "evidence": ["B05_DIALOGUE_HUD_INVENTORY_TOOLTIP_CHOICE_UI_FAMILY", "B06_COMBAT_HUD_AND_BARS_UNIFIED_UI_FAMILY", "B07_DISCRETE_CATEGORY_LOOT_PRESENTATION"], "missing": ["VENDOR_UI", "CRAFTING_UI", "SETTINGS_UI"]},
+    {"id": "G16B-24", "status": "PARTIAL_EVIDENCE", "evidence": ["B04_SHALLOW_WATER_NAV_UNDER_BRIDGE_CURRENT_VEHICLE", "STAGE16A_WATER_AUTHORITY_TESTS"], "missing": ["LIVE_AUTHORITATIVE_STAMINA_ROUNDTRIP"]},
+    {"id": "G16B-25", "status": "PARTIAL_EVIDENCE", "evidence": ["B04_DEEP_SWIM_NAV_AND_VEHICLE_BLOCK", "STAGE16A_EXHAUSTION_TESTS"], "missing": ["LIVE_GODOT_BACKEND_EXHAUSTION_DEFEAT_SNAPSHOT"]},
+    {"id": "G16B-26", "status": "PARTIAL_EVIDENCE", "evidence": ["B05_REDUCED_BASE_INVENTORY_BAG_SLOT_CONTAINER_SHELL", "STAGE16A_BAG_DEATH_AUTHORITY_TESTS"], "missing": ["LIVE_INVENTORY_BAG_DEATH_SNAPSHOT_ROUNDTRIP"]},
+    {"id": "G16B-27", "status": "PARTIAL_EVIDENCE", "evidence": ["B07_INDIVIDUAL_LOOT_WATER_EXPOSURE_0_1_899_900_PLUS", "B07_EXTERNAL_ACTIVE_TO_SUNK_AND_DIRECT_SUNK_PROJECTION", "B07_NO_LOCAL_TTL_AUTHORITY"], "missing": ["LIVE_AUTHORITATIVE_TTL_ADVANCE", "BAG_30_MINUTE_WATER_RULE", "LAND_BAG_NO_EXPIRY", "TIMER_SAVE_RELOAD"]},
+    {"id": "G16B-28", "status": "NOT_EXECUTED"}
+  ],
+  "blockers": [],
+  "not_available": [
+    "Live pickup authorization/result roundtrip: no listener at 127.0.0.1:8000.",
+    "Live profile preference persistence roundtrip: no listener at 127.0.0.1:8000.",
+    "Authoritative water exposure advance and timer save/reload: backend unavailable and B10 not started."
+  ],
+  "watch_items": [
+    "G16B-04 remains PARTIAL_EVIDENCE until authoritative pickup authorization/result is observed live.",
+    "G16B-06 remains PARTIAL_EVIDENCE until Auto Pickup profile preference persistence survives a live roundtrip.",
+    "G16B-05 remains PARTIAL_EVIDENCE until B08 proves actual physical outputs for every required source loop.",
+    "G16B-27 remains PARTIAL_EVIDENCE until authoritative 900-second progression, Bag rules and save/reload are covered.",
+    "Final Ground Loot meshes, category icons and audio remain placeholders/deferred."
+  ],
+  "source_acceptance_matrix_modified": false,
+  "backup_rule_respected": true
+}

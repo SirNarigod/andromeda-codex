@@ -1,0 +1,58 @@
+{
+  "art_dependency": "NONE",
+  "boundary_routes_locked": [
+    "RTE-001",
+    "RTE-003",
+    "RTE-013"
+  ],
+  "bridge_condition_authoritative": true,
+  "candidate_restore": "PASS",
+  "canon_mutations": 0,
+  "canonical_anchors": [
+    "SYS-AUT-001",
+    "SRTE-001",
+    "POI-046"
+  ],
+  "cargo_stage05": true,
+  "generated_at": "2026-08-18T21:32:34.321206+00:00",
+  "godot_required": false,
+  "open_blockers": 0,
+  "open_corrections": 0,
+  "player_npc_shared_transport": true,
+  "project": "ANDRÔMEDA CÓDEX",
+  "record_id": "ARPG-STAGE10-COMPLETION-REPORT-V1.1.0",
+  "result": "MOBILITY_INFRASTRUCTURE_FUNCTIONAL_CANDIDATE_RESTORE_PASS",
+  "stage": "10/23",
+  "status": "PASS",
+  "tests": {
+    "canon_mutations": 0,
+    "generated_at": "2026-08-18T21:26:48.175587+00:00",
+    "harness_events": [
+      {
+        "classification": "INCONCLUSIVE_TIMEOUT_NOT_FUNCTIONAL_FAIL",
+        "event": "Some grouped runners exceeded execution limit after earlier suites had completed.",
+        "resolution": "Affected suites were rerun isolated; only conclusive isolated results are counted."
+      }
+    ],
+    "open_failures": 0,
+    "record_id": "ARPG-STAGE10-TEST-SUMMARY-V1.1.0",
+    "regressions_current_tree": {
+      "country_v15": "24/24 PASS",
+      "master": "393/393 PASS",
+      "stage05": "21/21 functional + 1/1 persistence + 68/68 validation + 62/62 stress PASS",
+      "stage08": "20/20 unit + 47/47 validation + 15/15 stress PASS",
+      "stage09": "19/19 functional + 1/1 persistence + 40/40 validation + 59/59 stress PASS"
+    },
+    "stage": "10/23",
+    "stage10": {
+      "functional": "18/18 PASS",
+      "persistence": "1/1 PASS",
+      "stress": "31/31 PASS",
+      "validation": "29/29 PASS"
+    },
+    "status": "PASS",
+    "version": "V1.1.0"
+  },
+  "vehicle_profiles": 3,
+  "version": "V1.1.0"
+}

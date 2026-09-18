@@ -1,0 +1,100 @@
+{
+  "record_id": "R2-CRI-CATEGORY-INDEX-V1",
+  "authority": "CANON_R2_CONFIRMADO",
+  "category": "CRI",
+  "category_name": "Fauna",
+  "items": [
+    {
+      "id": "CRI-001",
+      "title": "Cortassom",
+      "path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-001__cortassom.json",
+      "spoiler": 1,
+      "sealed": false
+    },
+    {
+      "id": "CRI-002",
+      "title": "Velúrio",
+      "path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-002__velurio.json",
+      "spoiler": 1,
+      "sealed": false
+    },
+    {
+      "id": "CRI-003",
+      "title": "Brumante",
+      "path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-003__brumante.json",
+      "spoiler": 1,
+      "sealed": false
+    },
+    {
+      "id": "CRI-004",
+      "title": "Lúmara",
+      "path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-004__lumara.json",
+      "spoiler": 1,
+      "sealed": false
+    },
+    {
+      "id": "CRI-005",
+      "title": "Raizel manso",
+      "path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-005__raizel-manso.json",
+      "spoiler": 1,
+      "sealed": false
+    },
+    {
+      "id": "CRI-006",
+      "title": "Luzipólen",
+      "path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-006__luzipolen.json",
+      "spoiler": 1,
+      "sealed": false
+    },
+    {
+      "id": "CRI-007",
+      "title": "Fio-de-Orvalho",
+      "path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-007__fio-de-orvalho.json",
+      "spoiler": 1,
+      "sealed": false
+    },
+    {
+      "id": "CRI-008",
+      "title": "Grilo-Cobre",
+      "path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-008__grilo-cobre.json",
+      "spoiler": 1,
+      "sealed": false
+    },
+    {
+      "id": "CRI-009",
+      "title": "Larva-de-Véu",
+      "path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-009__larva-de-veu.json",
+      "spoiler": 1,
+      "sealed": false
+    },
+    {
+      "id": "CRI-010",
+      "title": "Vespa-de-Vidro",
+      "path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-010__vespa-de-vidro.json",
+      "spoiler": 1,
+      "sealed": false
+    },
+    {
+      "id": "CRI-011",
+      "title": "Besouro-Rubro",
+      "path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-011__besouro-rubro.json",
+      "spoiler": 1,
+      "sealed": false
+    },
+    {
+      "id": "CRI-012",
+      "title": "Louva-Fenda",
+      "path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-012__louva-fenda.json",
+      "spoiler": 1,
+      "sealed": false
+    },
+    {
+      "id": "CRI-013",
+      "title": "Mandíbula-de-Névoa",
+      "path": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-013__mandibula-de-nevoa.json",
+      "spoiler": 1,
+      "sealed": false
+    }
+  ],
+  "source": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json"
+}

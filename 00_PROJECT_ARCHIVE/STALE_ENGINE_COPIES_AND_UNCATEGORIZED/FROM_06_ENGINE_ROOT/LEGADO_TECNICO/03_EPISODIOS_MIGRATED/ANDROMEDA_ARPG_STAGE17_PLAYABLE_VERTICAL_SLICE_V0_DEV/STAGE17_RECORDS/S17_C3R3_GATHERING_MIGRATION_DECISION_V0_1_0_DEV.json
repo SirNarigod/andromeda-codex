@@ -1,0 +1,198 @@
+{
+  "record_identity": "S17_C3R3_GATHERING_MIGRATION_DECISION_V0_1_0_DEV",
+  "created_at": "2026-08-29T10:10:00Z",
+  "stage": "STAGE17",
+  "process": "ETAPA_31_S17_C3R3_GATHERING_MUTABLE_CAPACITY_CONTRACT_AND_FORMAL_MIGRATION_ARCHITECTURE",
+  "read_only": true,
+  "engine_constructed": false,
+  "resume_world_called": false,
+  "backend_started": false,
+  "source_modified": false,
+  "db_modified": false,
+  "migration_executed": false,
+  "player_recovery_executed": false,
+  "hash_proof": {
+    "before_main_sha256": "c84d1bdaaf6de4cf3e47c3f12c4fce0e217090ebe1d15a759bc09f89b68921c6",
+    "before_size": 15060992,
+    "after_main_sha256": "c84d1bdaaf6de4cf3e47c3f12c4fce0e217090ebe1d15a759bc09f89b68921c6",
+    "after_size": 15060992,
+    "identical": true,
+    "wal_present_before": false,
+    "wal_present_after": false,
+    "shm_present_before": false,
+    "shm_present_after": false
+  },
+  "full_world_scan": {
+    "method": "sqlite3 mode=ro&immutable=1, standalone reimplementation of _node_definition + canonical_json + sha256_text, verified line-by-line against 01_RUNTIME/arpg_gathering_work_core.py and 01_RUNTIME/country_scale.py read in full this round",
+    "total_nodes": 312,
+    "matching": 311,
+    "drifted_count": 1,
+    "source_missing_count": 0,
+    "drift_by_activity": {
+      "MINING": {"total": 166, "drifted": 0},
+      "LOGGING": {"total": 14, "drifted": 0},
+      "AGRICULTURE": {"total": 14, "drifted": 0},
+      "FORAGING": {"total": 28, "drifted": 0},
+      "FISHING": {"total": 3, "drifted": 0},
+      "HUNTING": {"total": 87, "drifted": 1}
+    },
+    "drift_by_source_kind": {
+      "MINERAL": {"total": 166, "drifted": 0},
+      "FLORA": {"total": 56, "drifted": 0},
+      "FISHING": {"total": 3, "drifted": 0},
+      "FAUNA": {"total": 87, "drifted": 1}
+    },
+    "drifted_nodes": [
+      {
+        "node_ref": "GTH-1D268772796B25C4CC6B",
+        "activity_type": "HUNTING",
+        "source_kind": "FAUNA",
+        "source_ref": "FAU-BROWSER-05-04-01",
+        "persisted_capacity_units": 86,
+        "expected_capacity_units": 58,
+        "only_field_diff": "capacity_units",
+        "persisted_row_self_consistent": true
+      }
+    ],
+    "country_scale_state_self_consistent": true
+  },
+  "structural_finding": {
+    "summary": "Drift risk is NOT uniform across gathering source classes -- it is structurally confined to FAUNA/HUNTING only.",
+    "mineral_flora": "country_scale.py maintains capacity_units (fixed, set once at genesis, never mutated afterward) as a field distinct from remaining_units (mutated by every extract/harvest). arpg_gathering_work_core.py._node_definition() correctly reads the stable capacity_units field for MINERAL and FLORA. Genesis provenance (density/abundance) is also persisted for both, giving stable reconstructibility.",
+    "fauna": "country_scale.py has no separate max/current split for fauna populations -- only a single field, count, which is both the value _node_definition() reads as 'capacity' AND the exact value hunting gameplay legitimately decrements. Genesis provenance (abundance, climate_factor) is NOT persisted, so there is no independently stable reference for an 'original' fauna capacity today.",
+    "fishing": "capacity_units for FISHING nodes is a deterministic formula of (seed, zone_ref) with zero dependency on any live country-scale source field -- structurally immune to this class of drift.",
+    "code_citations": [
+      "01_RUNTIME/arpg_gathering_work_core.py:231 (MINERAL reads capacity_units)",
+      "01_RUNTIME/arpg_gathering_work_core.py:239 (FLORA reads capacity_units)",
+      "01_RUNTIME/arpg_gathering_work_core.py:243 (FAUNA reads count)",
+      "01_RUNTIME/arpg_gathering_work_core.py:246 (FISHING synthetic formula)",
+      "01_RUNTIME/arpg_gathering_work_core.py:420-421 (_consume_source mutation targets)",
+      "01_RUNTIME/country_scale.py:682-687 (resource extraction mutates remaining_units only)",
+      "01_RUNTIME/country_scale.py:697-701 (flora harvest mutates remaining_units only)",
+      "01_RUNTIME/country_scale.py:716-720 (fauna hunt mutates count -- the same and only field)",
+      "01_RUNTIME/country_scale.py:426-428 (flora genesis persists abundance + capacity_units/remaining_units split)",
+      "01_RUNTIME/country_scale.py:439-445 (fauna genesis computes count from abundance/climate_factor, persists neither input)"
+    ]
+  },
+  "capacity_units_semantic": {
+    "determined_contract": "D_SNAPSHOT_OF_SOURCE_QUANTITY_AT_NODE_CREATION",
+    "proof": "_node_definition always reads the CURRENT value of the source field at bootstrap time; there is no dedicated original/maximum field consulted, and no later re-sync call exists outside bootstrap.",
+    "why_it_only_breaks_for_fauna": "For MINERAL/FLORA the snapshotted field (capacity_units) happens to be architecturally stable forever. For FAUNA the snapshotted field (count) is the same field gameplay legitimately mutates, so the D contract collides with normal gameplay for that source_kind only.",
+    "recommended_source_of_truth_after_fix": "country_scale_state remains sole authority for fauna.count (Living Ecology, unchanged). Gathering must treat its capacity_units snapshot for LIVING_ECOLOGY_STAGE14 sources as a re-syncable derived observation, not a hash-locked identity field."
+  },
+  "living_relation": {
+    "requires_living_change": false,
+    "explanation": "country_scale.py (LIVING_ECOLOGY_STAGE14) is already and remains the sole authority for aggregate fauna population count. The gap is entirely on the consuming side (arpg_gathering_work_core.py treating an observed value as its own frozen identity). node() already re-reads the live source for remaining_units at every call and never consults the hash-locked value for that purpose -- only the bootstrap integrity check is affected."
+  },
+  "architecture_options": {
+    "option_a_subclass_wrapper": {
+      "description": "New Stage17-only module (e.g. 12_AUTHORITY_BACKEND_STAGE17/stage17_gathering_capacity_contract.py) subclassing ARPGGatheringWorkCore, overriding only _insert_node() to conditionally re-derive+re-persist instead of raising, restricted to diff=={capacity_units} AND renewability==LIVING_ECOLOGY_STAGE14 AND live source resolvable.",
+      "touches_01_runtime": false,
+      "recurrence_prevented": true,
+      "integrity_guard_preserved": true,
+      "recommended": true
+    },
+    "option_b_full_fork": {
+      "description": "Full duplicate (~535 lines) of the protected module under a new Stage17 name with the fix inlined.",
+      "touches_01_runtime": false,
+      "recurrence_prevented": true,
+      "integrity_guard_preserved": true,
+      "recommended": false,
+      "reason_not_recommended": "Duplicates the entire class permanently instead of a single surgical method override; higher long-term maintenance/double-authority risk than option A for an equivalent outcome."
+    },
+    "option_c_pre_bootstrap_normalization": {
+      "description": "One-shot Stage17 pre-pass that re-syncs already-drifted rows before ARPGGatheringWorkCore() is constructed.",
+      "touches_01_runtime": false,
+      "recurrence_prevented": false,
+      "integrity_guard_preserved": true,
+      "recommended": false,
+      "reason_not_recommended": "Fixes only past drift; the very next legitimate hunt reproduces the identical collision on the next boot unless re-run every boot, which would just become option A in disguise. Retained as the shape of the one-time backfill migration, combined with option A."
+    },
+    "option_d_schema_version_plus_adapter": {
+      "description": "Formal schema/version tag plus a parallel Stage17 read-model table for live capacity, separate from the hash-locked definition.",
+      "touches_01_runtime": false,
+      "recurrence_prevented": "only_combined_with_a_or_c",
+      "integrity_guard_preserved": true,
+      "recommended": "as_a_refinement_of_a_not_standalone",
+      "reason": "Does not by itself stop _insert_node from raising IntegrityError on boot; needs A or C as the actual stop mechanism. Its versioning spirit is folded into the recommended contract name (S17_GATHERING_NODE_DEFINITION_SCHEMA_V2)."
+    },
+    "recommended_contract": "OPTION_A_SUBCLASS_WRAPPER_PLUS_ONE_TIME_FORMAL_MIGRATION_TAGGED_SCHEMA_V2"
+  },
+  "migration_design": {
+    "migration_id": "S17_GATHERING_NODE_MUTABLE_CAPACITY_MIGRATION_V1",
+    "schema_target": "S17_GATHERING_NODE_DEFINITION_SCHEMA_V2",
+    "previous_schema_label": "V1_LEGACY_UNVERSIONED",
+    "generic_no_hardcoded_values": true,
+    "scope_rule": "Every arpg_gathering_nodes row for the active world_instance_id whose recomputed-vs-persisted diff is exactly {capacity_units} AND renewability==LIVING_ECOLOGY_STAGE14. Currently resolves to exactly 1 row (GTH-1D268772796B25C4CC6B) out of 312 scanned, but the rule applies uniformly to all 87 FAUNA, 56 FLORA and 3 FISHING rows without any node_ref-specific branch.",
+    "abort_condition": "Any row whose diff touches a field outside the {capacity_units} allow-list aborts the entire migration with zero writes.",
+    "preserves": ["node_ref", "source_ref", "zone_ref", "block_ref", "arpg_gathering_runtime_state (untouched, separate table)", "country_scale_state (untouched -- source, not target)"],
+    "storage": {
+      "mechanism": "NEW_DEDICATED_STAGE17_TABLE",
+      "table_name": "stage17_gathering_migrations",
+      "schema": "CREATE TABLE IF NOT EXISTS stage17_gathering_migrations(migration_id TEXT NOT NULL, world_instance_id TEXT NOT NULL, schema_target TEXT NOT NULL, applied_at_utc TEXT NOT NULL, node_refs_json TEXT NOT NULL, before_definition_json TEXT NOT NULL, after_definition_json TEXT NOT NULL, audit_record_path TEXT NOT NULL, PRIMARY KEY(world_instance_id, migration_id))",
+      "no_existing_migration_table_found": true,
+      "tables_scanned": 172,
+      "idempotency_enforcement": "DB-level PRIMARY KEY(world_instance_id, migration_id) prevents silent double-application; recomputation-based no-op is a secondary, independent safeguard"
+    },
+    "sql_policy": {
+      "public_api_available_for_this_operation": false,
+      "reason": "_insert_node only inserts-or-validates an existing row; no public method exists to update an existing gathering node definition",
+      "classification": "FORMAL_VERSIONED_MIGRATION_SQL_ACCEPTABLE_NOT_AD_HOC",
+      "required_safeguards": ["known schema", "explicit transaction", "preconditions (world guard, backup)", "mandatory fresh backup before write", "post-migration full re-scan (this round's method) confirming DRIFTED:0", "audit record", "targeted rollback via before_definition_json"]
+    },
+    "rollback": "Restore before_definition_json/definition_hash for exactly the node_refs listed in node_refs_json -- no full-DB restore required.",
+    "not_executed_this_round": true
+  },
+  "required_future_gates": [
+    "A: legacy V1 bootstrap -> apply migration V1 -> reboot with Stage17 subclass -> verify() PASS",
+    "B: list_nodes() full 312-node enumeration, no exceptions, remaining_units>=0 everywhere",
+    "C: real HUNTING gather reduces live fauna count",
+    "D-I: shutdown/restart cycle repeated twice with a real gather interleaved, verify() PASS both times",
+    "J: negative test -- artificial structural mutation (source_ref/activity_type) in an isolated test fixture, never the real world, MUST still raise IntegrityError"
+  ],
+  "current_world_vs_new_world_comparison": {
+    "root_cause_safety": "EQUAL -- both require option A to prevent recurrence",
+    "implementation_complexity": {"migrate_current": "LOW", "new_world": "HIGH"},
+    "risk": {"migrate_current": "LOW (blast radius measured at 1/312)", "new_world": "MEDIUM (repeats documented cold-boot incident surface)"},
+    "auditability": {"migrate_current": "HIGH", "new_world": "HIGH_BUT_FROM_ZERO"},
+    "c1b_c1_c2_preservation": {"migrate_current": "PROVEN_UNAFFECTED_BY_FULL_SCAN (0/166 MINERAL, 0/56 FLORA drifted)", "new_world": "REQUIRES_FULL_REVERIFICATION"},
+    "player_recovery_need": {"migrate_current": "YES_TOOL_ALREADY_HARDENED_PASS", "new_world": "NOT_REQUIRED_FOR_NEW_WORLD_PATH"},
+    "common_target_contamination": {"migrate_current": "PERSISTS_SEPARATE_GAP", "new_world": "PERSISTS_SEPARATE_GAP_SAME_ADAPTER_LOGIC"},
+    "resource_placement": {"migrate_current": "EXISTING_CANONICAL_MANIFEST_REMAINS_VALID", "new_world": "REQUIRES_FULL_MANIFEST_REBAKE_NEW_WORLD_INSTANCE_ID"},
+    "test_reproducibility": {"migrate_current": "HIGH_SAME_WORLD_ALREADY_EXERCISED", "new_world": "ZERO_STARTS_OVER"},
+    "future_stage17_development": {"migrate_current": "CONTINUOUS", "new_world": "RESTARTS_EVIDENCE_HISTORY"},
+    "time_cost": {"migrate_current": "LOW", "new_world": "HIGH"}
+  },
+  "recommended_strategy": "A_STAGE17_VERSIONED_GATHERING_CONTRACT_PLUS_MIGRATE_CURRENT_WORLD",
+  "recommendation_reason": "Full read-only scan of all 312 gathering nodes proves the drift blast radius is exactly 1 node and structurally confined to FAUNA; MINERAL (166) and FLORA (56) -- the classes underlying C1B/C1/C2's TREE/ORE placements -- show zero drift, empirically confirming they are unaffected. A new world would not resolve player displacement, COMMON-target exhaustion, or ownership-repair history (independent, already-tracked gaps), would require a full canonical manifest rebake and complete C1B/C1/C2/GroundLoot/G19 re-verification, and would still need the identical contract fix (Option A) to avoid the same drift recurring after enough future HUNTING. Migrating the current world is strictly cheaper, equally safe, and better evidenced.",
+  "preserved_status_flags": {
+    "S17_G19_COMMON_TARGET_UNBOUNDED_SELECTION_GAP": "CONFIRMED_NOT_FIXED_PRESERVED",
+    "GroundLoot_current": "51/53_PRESERVED",
+    "GROUND_LOOT_REACHABLE_AUTO_SETTLE_LIMITATION": "OPEN_NOT_TOUCHED",
+    "C1B": "PASS",
+    "C1": "PASS",
+    "C2": "PASS",
+    "player_recovery_tool_hardening": "PASS",
+    "player_recovery_apply_status": "NOT_EXECUTED_STILL_BLOCKED_ON_DRIFT_UNTIL_MIGRATION_APPLIED"
+  },
+  "stage16b_integrity": {
+    "status": "CLOSED_READ_ONLY",
+    "checkpoint_sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc",
+    "backup_sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc"
+  },
+  "protected_integrity": {
+    "01_RUNTIME_stage17": "READ_ONLY_THIS_ROUND_UNCHANGED",
+    "stage16a": "UNCHANGED",
+    "stage16b": "CLOSED_READ_ONLY_UNCHANGED",
+    "master_living_baseline": "UNCHANGED"
+  },
+  "files_created": [
+    "STAGE17_RECORDS/S17_C3R3_GATHERING_MUTABLE_CAPACITY_CONTRACT_DESIGN_V0_1_0_DEV.md",
+    "STAGE17_RECORDS/S17_C3R3_GATHERING_MIGRATION_DECISION_V0_1_0_DEV.json"
+  ],
+  "files_modified": [],
+  "status": {
+    "S17_C3R3_GATHERING_MUTABLE_CAPACITY_CONTRACT_DESIGN": "COMPLETE",
+    "S17_C3R3_IMPLEMENTATION": "NOT_STARTED"
+  }
+}

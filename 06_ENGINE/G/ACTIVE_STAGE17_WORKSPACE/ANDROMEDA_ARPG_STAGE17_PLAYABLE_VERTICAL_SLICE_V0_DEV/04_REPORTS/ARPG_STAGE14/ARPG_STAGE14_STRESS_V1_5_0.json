@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "checks": 30,
+  "passed": 30,
+  "failed": 0,
+  "failures": [],
+  "cycles": 12,
+  "replays": 12,
+  "authority": "ANDROMEDA_ARPG_STAGE14_LIVING_INTEGRATION"
+}

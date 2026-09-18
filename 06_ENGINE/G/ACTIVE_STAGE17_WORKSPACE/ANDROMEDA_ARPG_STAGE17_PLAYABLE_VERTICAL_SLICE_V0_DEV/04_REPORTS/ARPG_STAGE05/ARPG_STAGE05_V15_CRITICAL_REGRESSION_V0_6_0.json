@@ -1,0 +1,43 @@
+{
+  "record_id": "ARPG-STAGE05-V15-CRITICAL-REGRESSION-V0.6.0",
+  "stage": "05/20",
+  "version": "V0.6.0",
+  "execution_policy": "Grouped legacy timeout is INCONCLUSIVE; critical cases were rerun individually.",
+  "suites": [
+    {
+      "file": "test_v15_core.py",
+      "checks": 7,
+      "passed": 7,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "file": "test_v15_gameplay.py",
+      "checks": 6,
+      "passed": 6,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "file": "test_v15_integration.py",
+      "checks": 5,
+      "passed": 5,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "file": "test_v15_security_persistence.py",
+      "checks": 6,
+      "passed": 6,
+      "failed": 0,
+      "status": "PASS"
+    }
+  ],
+  "summary": {
+    "checks": 24,
+    "passed": 24,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "status": "PASS"
+}

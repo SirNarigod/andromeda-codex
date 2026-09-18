@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-009-001",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Câmara Central de Cristal",
+  "parent_subregion": "SUB-009-001",
+  "parent_political_unit": "TER-009",
+  "function": "Maior câmara habitada da liga subterrânea.",
+  "notable_link": "Câmaras de Cristal (SUB-009-001)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-009-001",
+  "settlement_tier": "CIDADE",
+  "history": "A câmara não foi escavada — foi encontrada já formada, uma cavidade natural gigantesca revestida de formações cristalinas que crescem lentamente há mais tempo do que qualquer registro histórico da Liga consegue datar. Os primeiros exploradores subterrâneos que a encontraram decidiram construir sobre as próprias formações em vez de removê-las, técnica que se tornou identidade arquitetônica da Liga inteira — nenhuma estrutura ali é feita sem incorporar cristal natural na própria construção.",
+  "sensory": "Luz refratada pelos cristais gigantes se espalha pela câmara em padrões que mudam sutilmente conforme quem observa se move, criando uma iluminação natural que nenhuma lamparina artificial consegue replicar. O ar é fresco e ligeiramente úmido, carregando um zumbido quase inaudível que moradores atribuem à própria estrutura cristalina vibrando com o movimento de água subterrânea nas profundezas. Construções de pedra clara se erguem entre e ao redor dos cristais maiores, algumas literalmente esculpidas dentro deles.",
+  "figures": [
+    {
+      "role": "Arquiteta-Chefe",
+      "name": "Wenna Cristalclaro",
+      "note": "Responsável por aprovar qualquer nova construção que pretenda incorporar formação cristalina — recusa projetos que ela considera desrespeitosos ao crescimento natural das formações, mesmo quando isso atrasa expansão urgente da câmara."
+    },
+    {
+      "role": "Mercador de espaço",
+      "name": "Torn Vãocheio",
+      "note": "Compra e revende direitos de construção em espaços ainda não ocupados da câmara, cada vez mais escassos conforme a população cresce — pressiona Wenna constantemente por aprovações mais rápidas, considerando o processo dela excessivamente artístico pra uma questão de habitação real."
+    }
+  ],
+  "hook": "Uma formação cristalina há muito considerada estável começou a rachar de forma lenta mas visível, exatamente numa área que Torn já vendeu direito de construção pra três famílias diferentes — Wenna precisa decidir se bloqueia a construção e enfrenta a fúria de Torn e dos compradores, ou arrisca segurança por pressão comercial.",
+  "detail": "Toda construção aprovada por Wenna recebe uma pequena marca gravada discretamente na base, indicando a data de aprovação e o nome dela — um costume que começou como simples registro administrativo e se tornou, ao longo dos anos, símbolo de status: quanto mais antiga a marca, mais valorizada a propriedade.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION"]
+}

@@ -1,0 +1,117 @@
+{
+  "record_id": "STAGE14-GLOBAL-STRESS-FINAL-INTEGRATION-REPORT-V1.0",
+  "project": "ANDRÔMEDA CÓDEX — LIVING SIMULATION ENGINE",
+  "stage": "14/14",
+  "status": "PASS",
+  "result": "ENGINE_CORE_RELEASE_READY",
+  "master_mutations": 0,
+  "canonical_atlas_mutations": 0,
+  "open_corrections": 0,
+  "regression": {
+    "record_id": "STAGE14-REGRESSION-EVIDENCE-V1.0",
+    "python_tests": 672,
+    "passed": 672,
+    "failed": 0,
+    "modules": [
+      {
+        "module": "runtime_core",
+        "tests": 59,
+        "status": "PASS"
+      },
+      {
+        "module": "consequence_engine",
+        "tests": 56,
+        "status": "PASS"
+      },
+      {
+        "module": "agent_brain",
+        "tests": 90,
+        "status": "PASS"
+      },
+      {
+        "module": "social_memory",
+        "tests": 72,
+        "status": "PASS"
+      },
+      {
+        "module": "ecology_brain",
+        "tests": 77,
+        "status": "PASS"
+      },
+      {
+        "module": "object_environment",
+        "tests": 73,
+        "status": "PASS"
+      },
+      {
+        "module": "world_orchestrator",
+        "tests": 54,
+        "status": "PASS"
+      },
+      {
+        "module": "world_systems",
+        "tests": 51,
+        "status": "PASS"
+      },
+      {
+        "module": "long_horizon",
+        "tests": 44,
+        "status": "PASS"
+      },
+      {
+        "module": "llm_gateway",
+        "tests": 35,
+        "status": "PASS"
+      },
+      {
+        "module": "atlas_living_bridge",
+        "tests": 61,
+        "status": "PASS"
+      }
+    ],
+    "javascript_checks": 7,
+    "javascript_status": "PASS",
+    "status": "PASS"
+  },
+  "stage14_checks": {
+    "STAGE14_GLOBAL_INTEGRATION_V1_0.json": {
+      "status": "PASS",
+      "checks": 43,
+      "passed": 43
+    },
+    "STAGE14_MULTIWORLD_SOAK_V1_0.json": {
+      "status": "PASS",
+      "checks": 37,
+      "passed": 37
+    },
+    "STAGE14_CORRUPTION_MATRIX_V1_0.json": {
+      "status": "PASS",
+      "checks": 10,
+      "passed": 10
+    },
+    "STAGE14_RELEASE_READINESS_AUDIT_V1_0.json": {
+      "status": "PASS",
+      "checks": 58,
+      "passed": 58
+    }
+  },
+  "stage13_extended_reexecuted": {
+    "checks": 1403,
+    "passed": 1403,
+    "status": "PASS"
+  },
+  "stage13_concurrency_reexecuted": {
+    "player_projections": 120,
+    "admin_projections": 120,
+    "writer_cycles": 60,
+    "atomic_snapshots": 17,
+    "status": "PASS"
+  },
+  "release_conditions": {
+    "all_gates_pass": true,
+    "backup_allowed": true,
+    "release_allowed": true
+  },
+  "external_live_llm_note": "Provider abstraction and Canon Guard are release-ready. A live external provider requires a separately configured runtime binding/credentials and was not network-tested or bundled.",
+  "status_detail": "All engine components within packaged scope are functional and validated."
+}

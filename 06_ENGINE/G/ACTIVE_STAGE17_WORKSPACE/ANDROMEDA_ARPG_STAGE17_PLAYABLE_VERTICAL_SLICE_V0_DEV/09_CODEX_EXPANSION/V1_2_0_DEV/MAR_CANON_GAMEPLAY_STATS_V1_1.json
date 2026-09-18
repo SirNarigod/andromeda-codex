@@ -1,0 +1,892 @@
+{
+  "schema_version": "1.1.0",
+  "record_id": "MAR-CANON-GAMEPLAY-STATS-V1.1",
+  "title": "MAR — Status canônicos balanceados para RPG isométrico",
+  "authority": "CÂNONE_AUTORIZADO_PELO_AUTOR_2026-08-15",
+  "canonical_status": "CÂNONE_AUTORIZADO",
+  "master_integration_status": "PENDING_NEXT_MASTER_CONSOLIDATION",
+  "source_master": "V2.0.1_READ_ONLY",
+  "weapons": [
+    {
+      "weapon_id": "WPN-001",
+      "name": "Bastão de Vigília",
+      "canonical_status": "CÂNONE_AUTORIZADO",
+      "source_weapon_status": "CÂNONE_ATIVO",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "MÉDIO",
+      "cost_tier": 2,
+      "stats": {
+        "power": 51,
+        "defense": 50,
+        "utility": 46,
+        "handling": 44,
+        "durability": 50,
+        "reach": 55,
+        "magic_affinity": 66,
+        "tech_affinity": 70,
+        "overall": 54
+      },
+      "balance_role": {
+        "subtype": "controle",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "handling",
+        "advantage": "controle de perímetro",
+        "limitation": "fonte finita, treinamento e contexto regulamentado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "weapon_id": "WPN-002",
+      "name": "Escudo de Convergência",
+      "canonical_status": "CÂNONE_AUTORIZADO",
+      "source_weapon_status": "CÂNONE_ATIVO",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 62,
+        "defense": 60,
+        "utility": 56,
+        "handling": 54,
+        "durability": 60,
+        "reach": 70,
+        "magic_affinity": 67,
+        "tech_affinity": 72,
+        "overall": 62
+      },
+      "balance_role": {
+        "subtype": "controle",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "handling",
+        "advantage": "proteção de equipe",
+        "limitation": "fonte finita, treinamento e contexto regulamentado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "weapon_id": "WPN-003",
+      "name": "Lâmina de Oficina",
+      "canonical_status": "CÂNONE_AUTORIZADO",
+      "source_weapon_status": "CÂNONE_ATIVO",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "ALTO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 64,
+        "defense": 70,
+        "utility": 66,
+        "handling": 64,
+        "durability": 70,
+        "reach": 35,
+        "magic_affinity": 68,
+        "tech_affinity": 75,
+        "overall": 68
+      },
+      "balance_role": {
+        "subtype": "controle",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "power",
+        "advantage": "trabalho de oficina",
+        "limitation": "fonte finita, treinamento e contexto regulamentado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "weapon_id": "WPN-004",
+      "name": "Cajado de Conduto",
+      "canonical_status": "CÂNONE_AUTORIZADO",
+      "source_weapon_status": "CÂNONE_ATIVO",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "MÉDIO",
+      "cost_tier": 2,
+      "stats": {
+        "power": 50,
+        "defense": 62,
+        "utility": 51,
+        "handling": 60,
+        "durability": 40,
+        "reach": 55,
+        "magic_affinity": 65,
+        "tech_affinity": 73,
+        "overall": 59
+      },
+      "balance_role": {
+        "subtype": "controle",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "power",
+        "advantage": "condução limitada",
+        "limitation": "fonte finita, treinamento e contexto regulamentado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "weapon_id": "WPN-005",
+      "name": "Prisma de Guarda",
+      "canonical_status": "CÂNONE_AUTORIZADO",
+      "source_weapon_status": "CÂNONE_ATIVO",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 52,
+        "defense": 44,
+        "utility": 42,
+        "handling": 37,
+        "durability": 50,
+        "reach": 70,
+        "magic_affinity": 66,
+        "tech_affinity": 69,
+        "overall": 51
+      },
+      "balance_role": {
+        "subtype": "controle",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "handling",
+        "advantage": "barreira visual",
+        "limitation": "fonte finita, treinamento e contexto regulamentado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "weapon_id": "WPN-006",
+      "name": "Rede de Captura",
+      "canonical_status": "CÂNONE_AUTORIZADO",
+      "source_weapon_status": "CÂNONE_ATIVO",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 54,
+        "defense": 54,
+        "utility": 52,
+        "handling": 47,
+        "durability": 60,
+        "reach": 35,
+        "magic_affinity": 67,
+        "tech_affinity": 71,
+        "overall": 57
+      },
+      "balance_role": {
+        "subtype": "controle",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "handling",
+        "advantage": "captura segura",
+        "limitation": "fonte finita, treinamento e contexto regulamentado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "weapon_id": "WPN-007",
+      "name": "Bastão de Trava",
+      "canonical_status": "CÂNONE_AUTORIZADO",
+      "source_weapon_status": "CÂNONE_ATIVO",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "MÉDIO",
+      "cost_tier": 2,
+      "stats": {
+        "power": 66,
+        "defense": 64,
+        "utility": 62,
+        "handling": 57,
+        "durability": 70,
+        "reach": 55,
+        "magic_affinity": 68,
+        "tech_affinity": 73,
+        "overall": 65
+      },
+      "balance_role": {
+        "subtype": "controle",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "handling",
+        "advantage": "intertravamento",
+        "limitation": "fonte finita, treinamento e contexto regulamentado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "weapon_id": "WPN-008",
+      "name": "Martelo de Ancoragem",
+      "canonical_status": "CÂNONE_AUTORIZADO",
+      "source_weapon_status": "CÂNONE_ATIVO",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 51,
+        "defense": 56,
+        "utility": 48,
+        "handling": 53,
+        "durability": 40,
+        "reach": 70,
+        "magic_affinity": 65,
+        "tech_affinity": 72,
+        "overall": 57
+      },
+      "balance_role": {
+        "subtype": "controle",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "utility",
+        "advantage": "ancoragem",
+        "limitation": "fonte finita, treinamento e contexto regulamentado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "weapon_id": "WPN-009",
+      "name": "Corrente de Resgate",
+      "canonical_status": "CÂNONE_AUTORIZADO",
+      "source_weapon_status": "CÂNONE_ATIVO",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 53,
+        "defense": 66,
+        "utility": 58,
+        "handling": 63,
+        "durability": 50,
+        "reach": 35,
+        "magic_affinity": 66,
+        "tech_affinity": 74,
+        "overall": 62
+      },
+      "balance_role": {
+        "subtype": "controle",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "power",
+        "advantage": "resgate",
+        "limitation": "fonte finita, treinamento e contexto regulamentado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "weapon_id": "WPN-010",
+      "name": "Escudo Ferroviário",
+      "canonical_status": "CÂNONE_AUTORIZADO",
+      "source_weapon_status": "CÂNONE_ATIVO",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "MÉDIO",
+      "cost_tier": 2,
+      "stats": {
+        "power": 56,
+        "defense": 49,
+        "utility": 49,
+        "handling": 40,
+        "durability": 60,
+        "reach": 55,
+        "magic_affinity": 67,
+        "tech_affinity": 70,
+        "overall": 55
+      },
+      "balance_role": {
+        "subtype": "controle",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "handling",
+        "advantage": "proteção ferroviária",
+        "limitation": "fonte finita, treinamento e contexto regulamentado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "weapon_id": "WPN-011",
+      "name": "Lança de Trilha",
+      "canonical_status": "CÂNONE_AUTORIZADO",
+      "source_weapon_status": "CÂNONE_ATIVO",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 64,
+        "defense": 70,
+        "utility": 56,
+        "handling": 50,
+        "durability": 70,
+        "reach": 70,
+        "magic_affinity": 68,
+        "tech_affinity": 72,
+        "overall": 63
+      },
+      "balance_role": {
+        "subtype": "proteção",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "handling",
+        "advantage": "controle de perímetro",
+        "limitation": "fonte finita, treinamento e contexto regulamentado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "weapon_id": "WPN-012",
+      "name": "Tridente de Navyr",
+      "canonical_status": "CÂNONE_AUTORIZADO",
+      "source_weapon_status": "CÂNONE_ATIVO",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 45,
+        "defense": 56,
+        "utility": 48,
+        "handling": 46,
+        "durability": 40,
+        "reach": 35,
+        "magic_affinity": 65,
+        "tech_affinity": 70,
+        "overall": 54
+      },
+      "balance_role": {
+        "subtype": "proteção",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "power",
+        "advantage": "proteção de equipe",
+        "limitation": "fonte finita, treinamento e contexto regulamentado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "weapon_id": "WPN-013",
+      "name": "Varinha de Matrizes",
+      "canonical_status": "CÂNONE_AUTORIZADO",
+      "source_weapon_status": "CÂNONE_ATIVO",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "MÉDIO",
+      "cost_tier": 2,
+      "stats": {
+        "power": 57,
+        "defense": 66,
+        "utility": 58,
+        "handling": 56,
+        "durability": 50,
+        "reach": 55,
+        "magic_affinity": 66,
+        "tech_affinity": 73,
+        "overall": 62
+      },
+      "balance_role": {
+        "subtype": "proteção",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "handling",
+        "advantage": "trabalho de oficina",
+        "limitation": "fonte finita, treinamento e contexto regulamentado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "weapon_id": "WPN-014",
+      "name": "Disco de Sinal",
+      "canonical_status": "CÂNONE_AUTORIZADO",
+      "source_weapon_status": "CÂNONE_ATIVO",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "ALTO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 67,
+        "defense": 76,
+        "utility": 68,
+        "handling": 66,
+        "durability": 60,
+        "reach": 70,
+        "magic_affinity": 67,
+        "tech_affinity": 75,
+        "overall": 70
+      },
+      "balance_role": {
+        "subtype": "proteção",
+        "primary_strength": "defense",
+        "primary_weakness": "handling",
+        "advantage": "condução limitada",
+        "limitation": "fonte finita, treinamento e contexto regulamentado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "weapon_id": "WPN-015",
+      "name": "Lâmina de Bruma",
+      "canonical_status": "CÂNONE_AUTORIZADO",
+      "source_weapon_status": "CÂNONE_ATIVO",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 56,
+        "defense": 67,
+        "utility": 51,
+        "handling": 44,
+        "durability": 70,
+        "reach": 35,
+        "magic_affinity": 68,
+        "tech_affinity": 71,
+        "overall": 59
+      },
+      "balance_role": {
+        "subtype": "proteção",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "handling",
+        "advantage": "barreira visual",
+        "limitation": "fonte finita, treinamento e contexto regulamentado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "weapon_id": "WPN-016",
+      "name": "Escudo de Rota",
+      "canonical_status": "CÂNONE_AUTORIZADO",
+      "source_weapon_status": "CÂNONE_ATIVO",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "MÉDIO",
+      "cost_tier": 2,
+      "stats": {
+        "power": 45,
+        "defense": 52,
+        "utility": 43,
+        "handling": 40,
+        "durability": 40,
+        "reach": 55,
+        "magic_affinity": 65,
+        "tech_affinity": 69,
+        "overall": 51
+      },
+      "balance_role": {
+        "subtype": "proteção",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "handling",
+        "advantage": "captura segura",
+        "limitation": "fonte finita, treinamento e contexto regulamentado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "weapon_id": "WPN-017",
+      "name": "Bastão de Travessia",
+      "canonical_status": "CÂNONE_AUTORIZADO",
+      "source_weapon_status": "CÂNONE_ATIVO",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 56,
+        "defense": 62,
+        "utility": 53,
+        "handling": 50,
+        "durability": 50,
+        "reach": 70,
+        "magic_affinity": 66,
+        "tech_affinity": 71,
+        "overall": 59
+      },
+      "balance_role": {
+        "subtype": "proteção",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "handling",
+        "advantage": "intertravamento",
+        "limitation": "fonte finita, treinamento e contexto regulamentado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "weapon_id": "WPN-018",
+      "name": "Gancho de Cabo",
+      "canonical_status": "CÂNONE_AUTORIZADO",
+      "source_weapon_status": "CÂNONE_ATIVO",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "ALTO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 60,
+        "defense": 72,
+        "utility": 63,
+        "handling": 60,
+        "durability": 60,
+        "reach": 35,
+        "magic_affinity": 67,
+        "tech_affinity": 74,
+        "overall": 66
+      },
+      "balance_role": {
+        "subtype": "proteção",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "power",
+        "advantage": "ancoragem",
+        "limitation": "fonte finita, treinamento e contexto regulamentado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "weapon_id": "WPN-019",
+      "name": "Martelo Ferral",
+      "canonical_status": "CÂNONE_AUTORIZADO",
+      "source_weapon_status": "CÂNONE_ATIVO",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "ALTO",
+      "relative_cost": "MÉDIO",
+      "cost_tier": 2,
+      "stats": {
+        "power": 71,
+        "defense": 82,
+        "utility": 73,
+        "handling": 70,
+        "durability": 70,
+        "reach": 55,
+        "magic_affinity": 68,
+        "tech_affinity": 76,
+        "overall": 73
+      },
+      "balance_role": {
+        "subtype": "proteção",
+        "primary_strength": "defense",
+        "primary_weakness": "magic_affinity",
+        "advantage": "resgate",
+        "limitation": "fonte finita, treinamento e contexto regulamentado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "weapon_id": "WPN-020",
+      "name": "Prisma de Vigília",
+      "canonical_status": "CÂNONE_AUTORIZADO",
+      "source_weapon_status": "CÂNONE_ATIVO",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 44,
+        "defense": 48,
+        "utility": 38,
+        "handling": 34,
+        "durability": 40,
+        "reach": 70,
+        "magic_affinity": 65,
+        "tech_affinity": 68,
+        "overall": 49
+      },
+      "balance_role": {
+        "subtype": "proteção",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "handling",
+        "advantage": "proteção ferroviária",
+        "limitation": "fonte finita, treinamento e contexto regulamentado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "weapon_id": "WPN-021",
+      "name": "Bastão de Estação",
+      "canonical_status": "CÂNONE_AUTORIZADO",
+      "source_weapon_status": "CÂNONE_ATIVO",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 44,
+        "defense": 50,
+        "utility": 42,
+        "handling": 44,
+        "durability": 50,
+        "reach": 35,
+        "magic_affinity": 66,
+        "tech_affinity": 70,
+        "overall": 51
+      },
+      "balance_role": {
+        "subtype": "campo",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "utility",
+        "advantage": "controle de perímetro",
+        "limitation": "fonte finita, treinamento e contexto regulamentado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "weapon_id": "WPN-022",
+      "name": "Lâmina de Salvaguarda",
+      "canonical_status": "CÂNONE_AUTORIZADO",
+      "source_weapon_status": "CÂNONE_ATIVO",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "MÉDIO",
+      "cost_tier": 2,
+      "stats": {
+        "power": 56,
+        "defense": 60,
+        "utility": 54,
+        "handling": 54,
+        "durability": 60,
+        "reach": 55,
+        "magic_affinity": 67,
+        "tech_affinity": 72,
+        "overall": 60
+      },
+      "balance_role": {
+        "subtype": "campo",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "utility",
+        "advantage": "proteção de equipe",
+        "limitation": "fonte finita, treinamento e contexto regulamentado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "weapon_id": "WPN-023",
+      "name": "Bastão de Pântano",
+      "canonical_status": "CÂNONE_AUTORIZADO",
+      "source_weapon_status": "CÂNONE_ATIVO",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "ALTO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 67,
+        "defense": 70,
+        "utility": 66,
+        "handling": 64,
+        "durability": 70,
+        "reach": 70,
+        "magic_affinity": 68,
+        "tech_affinity": 75,
+        "overall": 68
+      },
+      "balance_role": {
+        "subtype": "campo",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "handling",
+        "advantage": "trabalho de oficina",
+        "limitation": "fonte finita, treinamento e contexto regulamentado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "weapon_id": "WPN-024",
+      "name": "Arco de Luz",
+      "canonical_status": "CÂNONE_AUTORIZADO",
+      "source_weapon_status": "CÂNONE_ATIVO",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 54,
+        "defense": 59,
+        "utility": 52,
+        "handling": 60,
+        "durability": 40,
+        "reach": 35,
+        "magic_affinity": 65,
+        "tech_affinity": 73,
+        "overall": 60
+      },
+      "balance_role": {
+        "subtype": "campo",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "utility",
+        "advantage": "condução limitada",
+        "limitation": "fonte finita, treinamento e contexto regulamentado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "weapon_id": "WPN-025",
+      "name": "Bracelete de Ancoragem",
+      "canonical_status": "CÂNONE_AUTORIZADO",
+      "source_weapon_status": "CÂNONE_ATIVO",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "MÉDIO",
+      "cost_tier": 2,
+      "stats": {
+        "power": 44,
+        "defense": 45,
+        "utility": 42,
+        "handling": 37,
+        "durability": 50,
+        "reach": 55,
+        "magic_affinity": 66,
+        "tech_affinity": 69,
+        "overall": 49
+      },
+      "balance_role": {
+        "subtype": "campo",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "handling",
+        "advantage": "barreira visual",
+        "limitation": "fonte finita, treinamento e contexto regulamentado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "weapon_id": "WPN-026",
+      "name": "Cetro de Medição",
+      "canonical_status": "CÂNONE_AUTORIZADO",
+      "source_weapon_status": "CÂNONE_ATIVO",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 55,
+        "defense": 55,
+        "utility": 53,
+        "handling": 47,
+        "durability": 60,
+        "reach": 70,
+        "magic_affinity": 67,
+        "tech_affinity": 71,
+        "overall": 57
+      },
+      "balance_role": {
+        "subtype": "campo",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "handling",
+        "advantage": "captura segura",
+        "limitation": "fonte finita, treinamento e contexto regulamentado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "weapon_id": "WPN-027",
+      "name": "Bastão de Campo",
+      "canonical_status": "CÂNONE_AUTORIZADO",
+      "source_weapon_status": "CÂNONE_ATIVO",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 54,
+        "defense": 65,
+        "utility": 54,
+        "handling": 57,
+        "durability": 70,
+        "reach": 35,
+        "magic_affinity": 68,
+        "tech_affinity": 73,
+        "overall": 61
+      },
+      "balance_role": {
+        "subtype": "campo",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "power",
+        "advantage": "intertravamento",
+        "limitation": "fonte finita, treinamento e contexto regulamentado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "weapon_id": "WPN-028",
+      "name": "Escudo de Oficina",
+      "canonical_status": "CÂNONE_AUTORIZADO",
+      "source_weapon_status": "CÂNONE_ATIVO",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "MÉDIO",
+      "cost_tier": 2,
+      "stats": {
+        "power": 55,
+        "defense": 54,
+        "utility": 52,
+        "handling": 53,
+        "durability": 40,
+        "reach": 55,
+        "magic_affinity": 65,
+        "tech_affinity": 72,
+        "overall": 58
+      },
+      "balance_role": {
+        "subtype": "campo",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "utility",
+        "advantage": "ancoragem",
+        "limitation": "fonte finita, treinamento e contexto regulamentado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "weapon_id": "WPN-029",
+      "name": "Luminária de Alerta",
+      "canonical_status": "CÂNONE_AUTORIZADO",
+      "source_weapon_status": "CÂNONE_ATIVO",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "ALTO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 66,
+        "defense": 64,
+        "utility": 63,
+        "handling": 63,
+        "durability": 50,
+        "reach": 70,
+        "magic_affinity": 66,
+        "tech_affinity": 74,
+        "overall": 66
+      },
+      "balance_role": {
+        "subtype": "campo",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "utility",
+        "advantage": "resgate",
+        "limitation": "fonte finita, treinamento e contexto regulamentado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "weapon_id": "WPN-030",
+      "name": "Marca de Guarda",
+      "canonical_status": "CÂNONE_AUTORIZADO",
+      "source_weapon_status": "CÂNONE_ATIVO",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 42,
+        "defense": 50,
+        "utility": 42,
+        "handling": 40,
+        "durability": 60,
+        "reach": 35,
+        "magic_affinity": 67,
+        "tech_affinity": 70,
+        "overall": 51
+      },
+      "balance_role": {
+        "subtype": "campo",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "handling",
+        "advantage": "proteção ferroviária",
+        "limitation": "fonte finita, treinamento e contexto regulamentado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    }
+  ],
+  "count": 30,
+  "validation": {
+    "status": "PASS",
+    "failures": [],
+    "count": 30,
+    "class_counts": {
+      "BAIXO": 8,
+      "MÉDIO": 16,
+      "ALTO": 6
+    }
+  }
+}

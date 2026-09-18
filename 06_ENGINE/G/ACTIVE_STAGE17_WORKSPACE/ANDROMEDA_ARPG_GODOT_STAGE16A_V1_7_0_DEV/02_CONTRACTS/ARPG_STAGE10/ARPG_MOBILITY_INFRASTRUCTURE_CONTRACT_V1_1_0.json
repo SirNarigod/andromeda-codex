@@ -1,0 +1,48 @@
+{
+  "art_dependency": "NONE_PLACEHOLDER_READY",
+  "authority": "ANDROMEDA_ARPG_STAGE10_MOBILITY_INFRASTRUCTURE",
+  "canonical_sources": {
+    "automotive_framework": "SYS-AUT-001",
+    "boundary_routes": [
+      "RTE-001",
+      "RTE-003",
+      "RTE-013"
+    ],
+    "bridge": "POI-046",
+    "local_road": "SRTE-001",
+    "policy": "Canonical identity/geometry/route facts are READ_ONLY from Master V2.0.1."
+  },
+  "country_ref": "TER-011",
+  "functional_contract": {
+    "boundary_country_gate": true,
+    "bridge_condition_blocks_travel": true,
+    "cargo_inventory": "STAGE05_UNIVERSAL_ITEM_CORE",
+    "deterministic_infrastructure_by_world_seed": true,
+    "idempotent_events": true,
+    "mechanical_integrity": true,
+    "npc_driver": true,
+    "passengers": true,
+    "persistence": true,
+    "player_driver": true,
+    "propulsion_budget": true,
+    "road_traversal": true
+  },
+  "gameplay_derived": {
+    "bridge_attachment": "Ponte Varden attachment to local Varga traversal is gameplay-derived proximity, not a new canonical route fact.",
+    "local_connectors": "DERIVED_LOCAL_CONNECTOR_NOT_CANON",
+    "propulsion": "ABSTRACT_PROPULSION_RESOURCE_STAGE10; concrete fuel/energy specialization deferred to Stage11",
+    "terrain_policy": "Root Deep applies movement penalty; off-road profile reduces penalty without changing canonical terrain.",
+    "vehicle_numeric_stats": "REBALANCEABLE_NOT_CANON",
+    "vehicle_profiles": [
+      "VEH-PROFILE-SERVICE-LIGHT",
+      "VEH-PROFILE-UTILITY-CARGO",
+      "VEH-PROFILE-SCOUT"
+    ]
+  },
+  "generated_at": "2026-08-18T21:26:48.175587+00:00",
+  "godot_required": false,
+  "record_id": "ARPG-MOBILITY-INFRASTRUCTURE-CONTRACT-V1.1.0",
+  "stage": "10/23",
+  "status": "PASS",
+  "version": "V1.1.0"
+}

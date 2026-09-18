@@ -1,0 +1,13 @@
+{
+  "record_id": "ARPG-STAGE12-MASTER-REGRESSION-V1.3.0",
+  "summary": {
+    "suites": 29,
+    "checks": 393,
+    "passed": 393,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "failed_checks": [],
+  "canonical_mutations": 0,
+  "status": "PASS"
+}

@@ -1,0 +1,14 @@
+{
+  "record_id": "STELLAR-PROGRESSION-QUEST-CONSEQUENCE-LAW-V1.0",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.0",
+  "status": "AUTHORIAL_GAMEPLAY_OVERLAY",
+  "authority": {"scope": "PLAYER_AND_NARRATIVE_EXPERIENCE", "progression": "DERIVED_GAMEPLAY", "quest_outcomes": "LOCAL_AUDITABLE"},
+  "dependencies": ["STELLAR_CANON_CONSTITUTION_V1_0.json", "STELLAR_CAUSALITY_LAW_V1_0.json", "STELLAR_SOVEREIGNTY_TERRITORY_LAW_V1_0.json", "STELLAR_INFORMATION_MEMORY_LAW_V1_0.json"],
+  "invariants": ["PROGRESSION_DOES_NOT_ASSIGN_FIXED_CLASS_IDENTITY", "SKILL_GROWTH_REQUIRES_USE_OR_MASTERY", "QUESTS_CHANGE_RELATIONSHIPS_CONDITIONS_OR_KNOWLEDGE", "REPUTATION_IS_CONTEXTUAL_NOT_ABSOLUTE", "QUEST_RESOLUTION_NEVER_ERASES_CONSEQUENCE"],
+  "prohibitions": ["NO_GLOBAL_REPUTATION_AS_SINGLE_MORAL_SCORE", "NO_QUEST_AUTO_RESOLUTION_OFFLINE", "NO_ITEM_OR_SKILL_CANON_PROMOTION_BY_LOOT", "NO_PLANETARY_REWRITE_AS_REWARD"],
+  "simulation_effects": ["Quest state records affected actors, location, evidence, cost and deferred consequences.", "Skill and item mechanics remain owned by their existing contracts.", "A local outcome may become promotion candidate only through the Constitution process."],
+  "allowed_states": ["OFFERED", "INVESTIGATING", "COMMITTED", "RESOLVED_LOCAL", "DEFERRED_CONSEQUENCE", "CONTESTED_OUTCOME", "PROMOTION_CANDIDATE"],
+  "story_generators": ["Resolver uma disputa em Varga conquista confiança local e cria um inimigo em uma rota secundária.", "Um item raro revela um eco de memória, mas seu uso altera a reputação de quem o carrega.", "Uma quest fracassada melhora uma skill e abre uma solução que não existia no início."],
+  "compatibility": {"character_core": "PRESERVED", "skills": "PRESERVED", "itemization": "PRESERVED", "narrative_culture": "PRESERVED"}
+}

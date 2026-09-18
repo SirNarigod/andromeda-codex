@@ -1,0 +1,11 @@
+{
+  "record_id": "SUB-007-003", "record_kind": "DERIVED_SUBREGION_PROFILE", "authority": "CANON_DERIVADO_ATIVO", "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Conselho de Saúde", "parent_political_unit": "TER-007",
+  "provenance": {"approval": "GAMEPLAY_DERIVED_DEV_SOURCE", "r2_anchors": ["TER-007", "maeryn-salvara"], "compatibility": "Camada administrativa e narrativa local; não cria fronteira, cidade, soberania ou nova autoridade."},
+  "function": "Sede de governança da confederação medicinal, define protocolos de tratamento.",
+  "locality_references": ["LOC-007-003 Salão do Conselho de Saúde"],
+  "permitted_catalog_links": {"npc_roles": [], "professions": [], "encounters": [], "resources": []},
+  "local_conflicts": ["protocolo tradicional versus método experimental"],
+  "prohibitions": ["NO_NEW_SOVEREIGNTY", "NO_AUTOMATIC_KENUA_SCENE", "NO_R2_EPISODE_REWRITE", "NO_FIXED_BORDER_COORDINATE"],
+  "story_generators": ["Um método experimental promissor é bloqueado por curandeiros tradicionais."]
+}

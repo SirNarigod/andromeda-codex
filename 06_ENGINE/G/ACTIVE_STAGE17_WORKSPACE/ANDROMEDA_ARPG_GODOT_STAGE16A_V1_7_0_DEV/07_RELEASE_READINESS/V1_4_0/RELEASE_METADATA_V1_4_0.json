@@ -1,0 +1,13 @@
+{
+  "record_id": "RELEASE-METADATA-V1.4.0",
+  "component": "Living Simulation Engine",
+  "version": "V1.4.0",
+  "release_type": "ATLAS_COUNTRY_LOD_ISOMETRIC_STREAMING_FOUNDATION",
+  "predecessor": "V1.3.0",
+  "master_dependency": {
+    "version": "V2.1.0",
+    "sha256": "9677b10890c24dfc04916178a2b9fd40a9ea131f2a13c1ec8255186ab203a98b",
+    "mode": "READ_ONLY"
+  },
+  "status": "RELEASE_CANDIDATE_PENDING_CLEAN_RESTORE"
+}

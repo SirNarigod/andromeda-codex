@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "modules": [
+    {
+      "module": "living_runtime.py",
+      "stage08_sha256": "1b1dfb052bf679af8a7820805fda88590dd4b56bb41b58d8b1d46b8239eadf72",
+      "stage09_sha256": "1b1dfb052bf679af8a7820805fda88590dd4b56bb41b58d8b1d46b8239eadf72",
+      "identical": true
+    },
+    {
+      "module": "consequence_engine.py",
+      "stage08_sha256": "6924d3d43e16a94b4318a7ad41bf4acb27f5069e78abdda8f2824148fd95d6ea",
+      "stage09_sha256": "6924d3d43e16a94b4318a7ad41bf4acb27f5069e78abdda8f2824148fd95d6ea",
+      "identical": true
+    },
+    {
+      "module": "agent_brain.py",
+      "stage08_sha256": "2fb42c08b16abcda52927c0cdc8c7daa28d69895c80f6c94fd2eb374c72e6b02",
+      "stage09_sha256": "2fb42c08b16abcda52927c0cdc8c7daa28d69895c80f6c94fd2eb374c72e6b02",
+      "identical": true
+    },
+    {
+      "module": "social_memory.py",
+      "stage08_sha256": "b290ad3f0f51edfa263e7595bf2646a2823250281649f5f6aa625eeb062996e2",
+      "stage09_sha256": "b290ad3f0f51edfa263e7595bf2646a2823250281649f5f6aa625eeb062996e2",
+      "identical": true
+    },
+    {
+      "module": "ecology_brain.py",
+      "stage08_sha256": "22caf44e94cf17d67caf1628d863ad0556de9844b0277cb0eb6ca516a9622a72",
+      "stage09_sha256": "22caf44e94cf17d67caf1628d863ad0556de9844b0277cb0eb6ca516a9622a72",
+      "identical": true
+    },
+    {
+      "module": "object_environment.py",
+      "stage08_sha256": "2a5720cd9583f46c87750e6016dcef67f3f7e3d9b3a47ab725df5e97dc10b170",
+      "stage09_sha256": "2a5720cd9583f46c87750e6016dcef67f3f7e3d9b3a47ab725df5e97dc10b170",
+      "identical": true
+    }
+  ]
+}

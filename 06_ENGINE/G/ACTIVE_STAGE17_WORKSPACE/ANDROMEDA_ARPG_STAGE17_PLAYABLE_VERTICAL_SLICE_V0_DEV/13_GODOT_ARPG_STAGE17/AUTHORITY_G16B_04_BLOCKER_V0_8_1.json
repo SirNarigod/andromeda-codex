@@ -1,0 +1,88 @@
+{
+  "record_id": "ANDROMEDA-STAGE16B-G16B-04-CLIENT-BLOCKER-V0.8.1",
+  "captured_at": "2026-08-22T13:10:00-03:00",
+  "gate": "G16B-04",
+  "requirement": "Pickup impossible above 0.5m, through blocker, or before drop settles.",
+  "status": "PARTIAL_EVIDENCE",
+  "promoted": false,
+  "reason_not_promoted": "The Godot runtime gate is not reproducible. It passed three consecutive runs and then failed, and the cause is a client behaviour the gate cannot control, not a test defect.",
+
+  "blocker": {
+    "id": "CLIENT_OVERWRITES_AUTHORITATIVE_REACHABILITY",
+    "summary": "ground_loot_pickup_client submits its own CONFIRM_DROP_SETTLED from local physics, including its own reachability observation, which overwrites the authoritative reachable flag. In headless that observation is almost always false.",
+    "source": "07_GODOT_ARPG_STAGE16B/scripts/interaction/ground_loot_pickup_client.gd:752",
+    "measured_on_live_world": {
+      "confirm_drop_settled_total": 140,
+      "submitted_by_client": 106,
+      "submitted_by_gate": 34,
+      "client_reported_reachable_false": 95,
+      "client_reported_reachable_true": 11,
+      "active_drops_in_snapshot": 45,
+      "active_drops_reachable_false": 28
+    },
+    "consequence": "A gate precondition of reachable=true survives only when the client happens to agree. Three green runs were that coincidence; the fourth timed out on SETTLED_PROJECTION_TIMEOUT.",
+    "not_a_test_defect": "The same three assertions pass deterministically against the identical Stage16A core when no Godot client is attached.",
+    "open_design_question": "Should the client be able to declare a drop unreachable at all, or should it report geometry only and leave reachability to the authority? That is a client-contract decision, not a gate decision."
+  },
+
+  "clause_coverage": {
+    "above_0_5_m": {
+      "authority_proof": "tests/test_stage16b_authority_ground_loot.py::test_05_distance_0_5001_is_rejected_from_server_positions",
+      "live_transport_proof": "PICKUP_DISTANCE_EXCEEDED observed over HTTP in the Godot gate run (FAR_SERVER_REJECTED)",
+      "real_godot_proof": "PRESENT_BUT_NOT_REPRODUCIBLE"
+    },
+    "through_blocker": {
+      "authority_proof": "tests/test_stage16b_authority_ground_loot.py::test_07_unreachable_drop_is_rejected",
+      "live_transport_proof": "tests/test_stage16b_authority_http.py::test_40_pickup_through_a_blocker_is_rejected_over_the_wire (GROUND_LOOT_UNREACHABLE, reachable_evaluated_server_side)",
+      "real_godot_proof": "NOT_POSSIBLE_WHILE_CLIENT_OVERWRITES_REACHABILITY"
+    },
+    "before_drop_settles": {
+      "authority_proof": "tests/test_stage16b_authority_ground_loot.py::test_04_unsettled_drop_is_rejected_by_core",
+      "client_guard_proof": "Godot gate UNSETTLED_LOCAL_GUARD_REJECTS via begin_local_physical_settle()",
+      "real_godot_proof": "CLIENT_GUARD_ONLY"
+    }
+  },
+
+  "gate_rework_delivered": {
+    "file": "tests/godot/authority_ground_loot_runtime_gate.gd",
+    "preconditions": "SELF_ESTABLISHED_THROUGH_AUTHORITY_NO_SEEDED_WORLD",
+    "seeder_dependency_removed": true,
+    "best_result": "53/53 PASS, stderr 0 bytes, exit 0, three consecutive runs",
+    "subsequent_result": "FAIL SETTLED_PROJECTION_TIMEOUT on the fourth run",
+    "fixes_that_hold": [
+      "Command results matched by command_ref instead of arrival index. The bridge queues commands, the ground-loot client submits its own settles and every completed command triggers a snapshot, so index matching silently paired a check with another command's result.",
+      "Drop distances built by moving the player between gathers. ground_loot_pickup_client anchors its iso->Godot mapping on the first snapshot and never re-anchors, and the player node follows client locomotion rather than the authoritative transform, so presentation distance is |drop_iso - anchor_iso|.",
+      "Auto Pickup turned off through the authority instead of asserted as a world precondition.",
+      "Inventory counted through inventory_projection.routing, because an equipped Bag becomes the effective inventory owner and the base inventory never changes.",
+      "Snapshot reads taken after the authoritative result instead of by arrival index."
+    ]
+  },
+
+  "environment_findings": [
+    "Gates linger 240 s on PASS (andromeda/gate/success_linger_s). Headless runs should pass -- --gate-success-linger=0.",
+    "The persisted development world accumulates Ground Loot, Auto Pickup state and combat damage across runs. Evidence runs need an archived var/ and a fresh world."
+  ],
+
+  "regression_state": {
+    "record": "12_AUTHORITY_BACKEND/reports/STAGE16B_AUTHORITY_BACKEND_VALIDATION_V0_8_1.json",
+    "status": "PASS",
+    "steps": 16,
+    "python_tests": 332,
+    "failures": 0,
+    "master_v2_0_1_sha256_verified": true,
+    "stage16a_checkpoint_bytes_changed": 0
+  },
+
+  "matrix_position": {
+    "sustained_promotions_this_round": ["G16B-03", "G16B-16", "G16B-22"],
+    "pass_count_if_accepted": 14,
+    "partial_evidence_count_if_accepted": 14,
+    "g16b_04": "PARTIAL_EVIDENCE",
+    "stage16b_global_status": "NOT_PASS",
+    "checkpoint_final_created": false,
+    "final_backup_created": false,
+    "stage17_started": false
+  },
+
+  "next_action_required": "Decide the client reachability contract. Until ground_loot_pickup_client stops overwriting authoritative reachability with a headless-unreliable observation, G16B-04 cannot have reproducible real-Godot evidence."
+}

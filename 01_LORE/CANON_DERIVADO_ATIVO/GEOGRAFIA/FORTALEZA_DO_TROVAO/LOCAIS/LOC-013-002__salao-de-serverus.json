@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-013-002",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Salão de Serverus",
+  "parent_subregion": "SUB-013-002",
+  "parent_political_unit": "TER-013",
+  "function": "Câmara pessoal de Serverus Vaelkor, de onde emite mandados (ex.: o mandado recebido por Kenua no Episódio 1).",
+  "notable_link": "Serverus Vaelkor (autoridade máxima); CIT-001 Posto de Varga (Episódio 1)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-013-002",
+  "settlement_tier": "CIDADE",
+  "history": "Este é o mesmo salão de onde partiu o mandado que Kenua recebeu no Episódio 1, em Posto de Varga — este registro trata isso como fato R2 estabelecido, sem alterar nem expandir o episódio em si. O que segue é contexto derivado sobre o próprio espaço físico onde essa decisão foi tomada, nunca uma reescrita do que já aconteceu ali.",
+  "sensory": "O salão é deliberadamente mais austero do que o Portão Principal faz esperar — pedra nua, poucas tapeçarias, uma única mesa longa de madeira escura onde Serverus recebe petições e emite mandados sentado numa cadeira que não é maior nem mais ornamentada que as demais, escolha pessoal dele que intriga visitantes acostumados a tronos mais óbvios em outros territórios. A luz entra por janelas altas e estreitas, projetando faixas retas no chão que se movem lentamente ao longo do dia, e escribas trabalham em silêncio nas bordas da sala, registrando cada mandado emitido em duplicata.",
+  "figures": [
+    {
+      "role": "Senhor da Fortaleza",
+      "name": "Serverus Vaelkor",
+      "note": "Emite mandados com a mesma frieza processual de quem assina qualquer documento administrativo, raramente revelando emoção sobre o conteúdo do que despacha — um traço que faz alguns o considerarem justo e outros, perigosamente desconectado das consequências humanas das próprias decisões."
+    },
+    {
+      "role": "Escriba-chefe",
+      "name": "Aldric Penaclara",
+      "note": "Registra cada mandado emitido por Serverus há mais de uma década e é, na prática, quem mantém a memória institucional completa da Fortaleza — sabe de mandados antigos que o próprio Serverus talvez já tenha esquecido, incluindo alguns cujo desfecho nunca foi formalmente registrado de volta."
+    }
+  ],
+  "hook": "Aldric encontrou, revisando registros antigos, um mandado emitido anos atrás cujo cumprimento nunca foi confirmado por escrito — nem sucesso, nem fracasso, nem cancelamento. Ele não sabe se leva isso a Serverus, arriscando reabrir algo deliberadamente deixado em aberto, ou se guarda a descoberta pra si.",
+  "detail": "Todo mandado emitido do Salão carrega o selo pessoal de Serverus, mas apenas Aldric sabe a sequência exata de registro que permite verificar se um selo é genuíno — um sistema de verificação que existe precisamente para casos como o de credenciais duvidosas apresentadas em outros pontos do domínio.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION"]
+}

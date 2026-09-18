@@ -1,0 +1,607 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-TERRAIN-TRAVEL-SYSTEM-DEV-V1.0",
+  "title": "Terreno e Distâncias — sistema qualitativo de viagem entre territórios",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "canonical_status": "ACTIVE_R2_COMPATIBLE",
+  "r2_guard": "Nenhuma coordenada numérica (lat/long, X/Y, km) é usada AQUI — respeita as guardas NO_FIXED_BORDER_COORDINATE (toda ficha de subregião) e NO_FIXED_COORDINATES_OR_POPULATION (todo índice de território). Distância continua qualitativa (tempo relativo + dificuldade), seguindo o precedente já existente no roteiro do Episódio 7 ('seis horas por estrada direta, oito pela rota de sal, dez evitando torres de condensação'). Compatível com a variável route_capacity (0-1) de STELLAR_ECONOMY_ECOLOGY_TIME_LAW_V1_1.json sem redefini-la. Nenhum território/subregião/rota nova é criada — só classificação sobre o que já existe.",
+  "update_note_fase_37": "Por decisão explícita do autor do projeto (fase 37), as guardas de coordenada citadas acima foram SUPERSEDIDAS para permitir um ponto-centro de referência por região — ver STELLAR_REGION_COORDINATE_INDEX_DEV_V1_0.json (mesma pasta). Este arquivo (terreno/viagem qualitativa) permanece válido e inalterado; a mudança de política afeta só a existência de coordenadas de referência, não o modelo de tempo/dificuldade aqui definido.",
+  "territory_terrain_profile": [
+    {
+      "territory_id": "TER-001",
+      "title": "Confederação de Lúminor",
+      "terrain_type": "PLANICIE_COMERCIAL",
+      "primary_transport_mode": "TERRESTRE",
+      "rationale": "confederação mercantil, Feira Central + Rota das Caravanas já catalogadas"
+    },
+    {
+      "territory_id": "TER-002",
+      "title": "Reino Ferral de Kharveth",
+      "terrain_type": "INDUSTRIAL_FERROVIARIO",
+      "primary_transport_mode": "FERROVIARIA",
+      "rationale": "Cinturão das Forjas + Trilhos do Minério já ligam o reino à malha ferroviária"
+    },
+    {
+      "territory_id": "TER-003",
+      "title": "República de Ortheon",
+      "terrain_type": "NO_FERROVIARIO",
+      "primary_transport_mode": "FERROVIARIA",
+      "rationale": "Nó Ferroviário Central já descrito como 'ponto de convergência de todas as linhas férreas'"
+    },
+    {
+      "territory_id": "TER-004",
+      "title": "Arquipélago Livre de Navyr",
+      "terrain_type": "AQUATICO",
+      "primary_transport_mode": "NAVAL",
+      "rationale": "confederação marítima, Porto Livre + Ilhas de Pesca + Conselho das Ondas (BIO-003 Oceanos e Abissos)"
+    },
+    {
+      "territory_id": "TER-005",
+      "title": "Principado de Ithra",
+      "terrain_type": "URBANO_TECNOMAGICO",
+      "primary_transport_mode": "TERRESTRE",
+      "rationale": "Distrito Tecnomágico, terreno urbano-industrial de pesquisa"
+    },
+    {
+      "territory_id": "TER-006",
+      "title": "Reino Aéreo de Altavela",
+      "terrain_type": "AEREO",
+      "primary_transport_mode": "AEREA",
+      "rationale": "reino de plataformas suspensas, Ancoradouro de Naves aéreas"
+    },
+    {
+      "territory_id": "TER-007",
+      "title": "Rubra-Viva",
+      "terrain_type": "PANTANO_CULTIVADO",
+      "primary_transport_mode": "TERRESTRE",
+      "rationale": "confederação medicinal (BIO-006 Pântanos Rubros), Jardins Medicinais"
+    },
+    {
+      "territory_id": "TER-008",
+      "title": "Santuários do Coração",
+      "terrain_type": "FLORESTA_DOSSEL",
+      "primary_transport_mode": "TERRESTRE",
+      "rationale": "Povos das Copas, assentamentos suspensos nas árvores gigantes (BIO-001 Coração Ancestral)"
+    },
+    {
+      "territory_id": "TER-009",
+      "title": "Liga Subcristal",
+      "terrain_type": "SUBTERRANEO",
+      "primary_transport_mode": "SUBTERRANEA",
+      "rationale": "cidades subterrâneas escavadas em cristal (BIO-004 Subsolo Cristalino)"
+    },
+    {
+      "territory_id": "TER-010",
+      "title": "Domínio dos Reis Magos",
+      "terrain_type": "URBANO_MAGICO",
+      "primary_transport_mode": "TERRESTRE",
+      "rationale": "magocracia, Marcas da Corrente Planetária aflorando localmente"
+    },
+    {
+      "territory_id": "TER-011",
+      "title": "Terras Livres",
+      "terrain_type": "FRONTEIRA_MISTA",
+      "primary_transport_mode": "TERRESTRE_FERROVIARIA",
+      "rationale": "fronteira heterogênea (planície/montanha/sub-bosque já mapeados); conectada à malha ferroviária via CIT-002 Estação Oriental (fase 29)"
+    },
+    {
+      "territory_id": "TER-012",
+      "title": "Zonas de Contenção",
+      "terrain_type": "ZONA_DE_CONTENCAO",
+      "primary_transport_mode": "TERRESTRE_RESTRITA",
+      "rationale": "perímetros de contenção mantidos por equipes especializadas (Vigília Radicular)"
+    },
+    {
+      "territory_id": "TER-013",
+      "title": "Fortaleza do Trovão",
+      "terrain_type": "MONTANHA_TEMPESTADE",
+      "primary_transport_mode": "TERRESTRE",
+      "rationale": "domínio pessoal fortificado (BIO-005 Picos de Tempestade)"
+    },
+    {
+      "territory_id": "TER-014",
+      "title": "Cadeia de Cinzas",
+      "terrain_type": "VULCANICO",
+      "primary_transport_mode": "TERRESTRE",
+      "rationale": "Território vulcânico novo (fase 44, decisão autoral) — mineração extrema, sem malha de transporte compartilhada ainda estabelecida."
+    },
+    {
+      "territory_id": "TER-015",
+      "title": "Vale das Ruinas",
+      "terrain_type": "DESERTICO",
+      "primary_transport_mode": "TERRESTRE",
+      "rationale": "Territorio desertico novo (fase 48, decisao autoral) - dunas e ruinas anonimas, sem malha de transporte compartilhada."
+    },
+    {
+      "territory_id": "TER-016",
+      "title": "Confins de Gelo",
+      "terrain_type": "GLACIAL",
+      "primary_transport_mode": "TERRESTRE",
+      "rationale": "Territorio glacial novo (fase 49, decisao autoral) - isolado, sobrevivencialista, sem malha de transporte compartilhada."
+    },
+    {
+      "territory_id": "TER-017",
+      "title": "Arquipelago Etereo",
+      "terrain_type": "AEREO_ETEREO",
+      "primary_transport_mode": "AEREA",
+      "rationale": "Territorio de ilhas flutuantes novo (fase 50, decisao autoral) - distinto de TER-006 Altavela; requer transporte aereo, sem malha compartilhada ainda estabelecida."
+    },
+    {
+      "territory_id": "TER-018",
+      "title": "Fossa Abissal",
+      "terrain_type": "ABISSAL_SUBMERSO",
+      "primary_transport_mode": "SUBMERSA",
+      "rationale": "Territorio abissal novo (fase 51, decisao autoral) - pressao extrema, requer veiculo submerso; sem malha compartilhada ainda estabelecida."
+    },
+    {
+      "territory_id": "TER-019",
+      "title": "Mata Perdida",
+      "terrain_type": "SELVA_TROPICAL",
+      "primary_transport_mode": "TERRESTRE",
+      "rationale": "Territorio de selva tropical novo (fase 52, decisao autoral, ultimo desta serie) - denso, ruinas cobertas, sem malha de transporte compartilhada."
+    }
+  ],
+  "travel_network": {
+    "rule_note": "Regras por RELAÇÃO de rede de transporte, aplicáveis a qualquer par de territórios/subregiões — não uma tabela fixa de 78 pares.",
+    "relations": [
+      {
+        "relation": "SAME_TERRITORY",
+        "tempo": "CURTA (horas)",
+        "dificuldade": "FÁCIL",
+        "exemplo": "entre subregiões do mesmo território, ex. SUB-011-001 → SUB-011-003"
+      },
+      {
+        "relation": "SAME_TRANSPORT_NETWORK",
+        "tempo": "MÉDIA (1-2 dias)",
+        "dificuldade": "MODERADA",
+        "exemplo": "TER-002 Kharveth / TER-003 Ortheon / TER-011 Terras Livres, todos na mesma malha ferroviária (Trilhos do Minério + Nó Ferroviário Central + CIT-002 Estação Oriental)"
+      },
+      {
+        "relation": "DIFFERENT_NETWORK_COMPATIBLE",
+        "tempo": "LONGA (vários dias)",
+        "dificuldade": "DIFÍCIL",
+        "nota": "requer troca de modal — ex. trem até um porto, depois navio até TER-004 Navyr"
+      },
+      {
+        "relation": "SPECIAL_TRANSPORT_REQUIRED",
+        "tempo": "VARIÁVEL",
+        "dificuldade": "PERIGOSA",
+        "exemplo": "acesso a TER-006 Altavela (exige nave aérea) ou TER-009 Liga Subcristal (exige guia/rota subterrânea) sem o modal certo"
+      }
+    ],
+    "route_trade_off_note": "Padrão narrativo a seguir em quests futuras (precedente do Episódio 7, sem inventar rota nova além das já citadas 'Rota das Caravanas' e 'Rota de Sal'): toda rota direta mais rápida tem uma alternativa mais longa e mais seguraa/discreta — a escolha é sempre risco vs. tempo, nunca uma distância fixa."
+  },
+  "subregion_terrain_tags": [
+    {
+      "subregion_id": "SUB-004-001",
+      "title": "Porto Livre de Navyr",
+      "parent_territory": "TER-004",
+      "terrain_type": "AQUATICO",
+      "surface_texture": "NATURAL_AQUATICO"
+    },
+    {
+      "subregion_id": "SUB-004-002",
+      "title": "Ilhas de Pesca",
+      "parent_territory": "TER-004",
+      "terrain_type": "AQUATICO",
+      "surface_texture": "NATURAL_AQUATICO"
+    },
+    {
+      "subregion_id": "SUB-004-003",
+      "title": "Conselho das Ondas",
+      "parent_territory": "TER-004",
+      "terrain_type": "AQUATICO",
+      "surface_texture": "NATURAL_AQUATICO"
+    },
+    {
+      "subregion_id": "SUB-001-001",
+      "title": "Feira Central de Lúminor",
+      "parent_territory": "TER-001",
+      "terrain_type": "URBANO_INSTITUCIONAL",
+      "surface_texture": "NATURAL_MISTO"
+    },
+    {
+      "subregion_id": "SUB-001-002",
+      "title": "Rota das Caravanas",
+      "parent_territory": "TER-001",
+      "terrain_type": "CORREDOR_TERRESTRE",
+      "surface_texture": "NATURAL_MISTO"
+    },
+    {
+      "subregion_id": "SUB-001-003",
+      "title": "Câmara dos Mercadores",
+      "parent_territory": "TER-001",
+      "terrain_type": "URBANO_INSTITUCIONAL",
+      "surface_texture": "NATURAL_MISTO"
+    },
+    {
+      "subregion_id": "SUB-010-001",
+      "title": "Anel do Conselho Enohariano",
+      "parent_territory": "TER-010",
+      "terrain_type": "URBANO_INSTITUCIONAL",
+      "surface_texture": "NATURAL_MISTO"
+    },
+    {
+      "subregion_id": "SUB-010-002",
+      "title": "Vertente dos Aprendizes",
+      "parent_territory": "TER-010",
+      "terrain_type": "URBANO_INSTITUCIONAL",
+      "surface_texture": "NATURAL_MISTO"
+    },
+    {
+      "subregion_id": "SUB-010-003",
+      "title": "Marcas da Corrente",
+      "parent_territory": "TER-010",
+      "terrain_type": "URBANO_INSTITUCIONAL",
+      "surface_texture": "NATURAL_MISTO"
+    },
+    {
+      "subregion_id": "SUB-013-001",
+      "title": "Muralhas do Trovão",
+      "parent_territory": "TER-013",
+      "terrain_type": "URBANO_INSTITUCIONAL",
+      "surface_texture": "NATURAL_MISTO"
+    },
+    {
+      "subregion_id": "SUB-013-002",
+      "title": "Salão dos Contratados",
+      "parent_territory": "TER-013",
+      "terrain_type": "URBANO_INSTITUCIONAL",
+      "surface_texture": "NATURAL_MISTO"
+    },
+    {
+      "subregion_id": "SUB-013-003",
+      "title": "Passagem Secreta",
+      "parent_territory": "TER-013",
+      "terrain_type": "CORREDOR_TERRESTRE",
+      "surface_texture": "MAGICO_CORROMPIDO"
+    },
+    {
+      "subregion_id": "SUB-009-001",
+      "title": "Câmaras de Cristal",
+      "parent_territory": "TER-009",
+      "terrain_type": "SUBTERRANEO",
+      "surface_texture": "NATURAL_ROCHOSO"
+    },
+    {
+      "subregion_id": "SUB-009-002",
+      "title": "Túneis de Extração",
+      "parent_territory": "TER-009",
+      "terrain_type": "SUBTERRANEO",
+      "surface_texture": "MAGICO_CORROMPIDO"
+    },
+    {
+      "subregion_id": "SUB-009-003",
+      "title": "Assembleia Subcristal",
+      "parent_territory": "TER-009",
+      "terrain_type": "SUBTERRANEO",
+      "surface_texture": "NATURAL_ROCHOSO"
+    },
+    {
+      "subregion_id": "SUB-005-001",
+      "title": "Distrito Tecnomágico",
+      "parent_territory": "TER-005",
+      "terrain_type": "URBANO_INSTITUCIONAL",
+      "surface_texture": "NATURAL_MISTO"
+    },
+    {
+      "subregion_id": "SUB-005-002",
+      "title": "Laboratórios de Convergência",
+      "parent_territory": "TER-005",
+      "terrain_type": "URBANO_INSTITUCIONAL",
+      "surface_texture": "NATURAL_MISTO"
+    },
+    {
+      "subregion_id": "SUB-005-003",
+      "title": "Corte de Ithra",
+      "parent_territory": "TER-005",
+      "terrain_type": "URBANO_INSTITUCIONAL",
+      "surface_texture": "NATURAL_MISTO"
+    },
+    {
+      "subregion_id": "SUB-006-001",
+      "title": "Plataformas Altas",
+      "parent_territory": "TER-006",
+      "terrain_type": "AEREO",
+      "surface_texture": "SEM_PISO_FÍSICO"
+    },
+    {
+      "subregion_id": "SUB-006-002",
+      "title": "Ancoradouro de Naves",
+      "parent_territory": "TER-006",
+      "terrain_type": "AEREO",
+      "surface_texture": "SEM_PISO_FÍSICO"
+    },
+    {
+      "subregion_id": "SUB-006-003",
+      "title": "Câmara Eletiva",
+      "parent_territory": "TER-006",
+      "terrain_type": "AEREO",
+      "surface_texture": "SEM_PISO_FÍSICO"
+    },
+    {
+      "subregion_id": "SUB-002-001",
+      "title": "Cinturão das Forjas",
+      "parent_territory": "TER-002",
+      "terrain_type": "INDUSTRIAL",
+      "surface_texture": "CIMENTADO_INDUSTRIAL"
+    },
+    {
+      "subregion_id": "SUB-002-002",
+      "title": "Distrito Portuário de Kharveth",
+      "parent_territory": "TER-002",
+      "terrain_type": "URBANO_INSTITUCIONAL",
+      "surface_texture": "NATURAL_MISTO"
+    },
+    {
+      "subregion_id": "SUB-002-003",
+      "title": "Trilhos do Minério",
+      "parent_territory": "TER-002",
+      "terrain_type": "CORREDOR_FERROVIARIO",
+      "surface_texture": "CIMENTADO"
+    },
+    {
+      "subregion_id": "SUB-003-001",
+      "title": "Nó Ferroviário Central",
+      "parent_territory": "TER-003",
+      "terrain_type": "CORREDOR_FERROVIARIO",
+      "surface_texture": "CIMENTADO"
+    },
+    {
+      "subregion_id": "SUB-003-002",
+      "title": "Distrito das Oficinas Ferroviárias",
+      "parent_territory": "TER-003",
+      "terrain_type": "CORREDOR_FERROVIARIO",
+      "surface_texture": "CIMENTADO"
+    },
+    {
+      "subregion_id": "SUB-003-003",
+      "title": "Assembleia de Ortheon",
+      "parent_territory": "TER-003",
+      "terrain_type": "URBANO_INSTITUCIONAL",
+      "surface_texture": "NATURAL_MISTO"
+    },
+    {
+      "subregion_id": "SUB-007-001",
+      "title": "Jardins Medicinais",
+      "parent_territory": "TER-007",
+      "terrain_type": "CULTIVADO",
+      "surface_texture": "NATURAL_CULTIVADO"
+    },
+    {
+      "subregion_id": "SUB-007-002",
+      "title": "Casas de Cura",
+      "parent_territory": "TER-007",
+      "terrain_type": "CULTIVADO",
+      "surface_texture": "NATURAL_CULTIVADO"
+    },
+    {
+      "subregion_id": "SUB-007-003",
+      "title": "Conselho de Saúde",
+      "parent_territory": "TER-007",
+      "terrain_type": "URBANO_INSTITUCIONAL",
+      "surface_texture": "NATURAL_MISTO"
+    },
+    {
+      "subregion_id": "SUB-008-001",
+      "title": "Copas Altas",
+      "parent_territory": "TER-008",
+      "terrain_type": "FLORESTA_DOSSEL",
+      "surface_texture": "NATURAL_ORGANICO"
+    },
+    {
+      "subregion_id": "SUB-008-002",
+      "title": "Raízes Sagradas",
+      "parent_territory": "TER-008",
+      "terrain_type": "FLORESTA_DOSSEL",
+      "surface_texture": "MAGICO_CORROMPIDO"
+    },
+    {
+      "subregion_id": "SUB-008-003",
+      "title": "Círculo dos Anciãos",
+      "parent_territory": "TER-008",
+      "terrain_type": "FLORESTA_DOSSEL",
+      "surface_texture": "NATURAL_ORGANICO"
+    },
+    {
+      "subregion_id": "SUB-011-001",
+      "title": "Fronteira de Varga",
+      "parent_territory": "TER-011",
+      "terrain_type": "CORREDOR_TERRESTRE",
+      "surface_texture": "NATURAL_MISTO"
+    },
+    {
+      "subregion_id": "SUB-011-002",
+      "title": "Corredor Oriental",
+      "parent_territory": "TER-011",
+      "terrain_type": "CORREDOR_TERRESTRE",
+      "surface_texture": "NATURAL_MISTO"
+    },
+    {
+      "subregion_id": "SUB-011-003",
+      "title": "Pastagens Luminais",
+      "parent_territory": "TER-011",
+      "terrain_type": "PLANICIE",
+      "surface_texture": "NATURAL_GRAMADO"
+    },
+    {
+      "subregion_id": "SUB-011-004",
+      "title": "Baixios de Raizel",
+      "parent_territory": "TER-011",
+      "terrain_type": "SUB_BOSQUE_UMIDO",
+      "surface_texture": "NATURAL_MISTO"
+    },
+    {
+      "subregion_id": "SUB-011-005",
+      "title": "Charneira das Oficinas",
+      "parent_territory": "TER-011",
+      "terrain_type": "INDUSTRIAL",
+      "surface_texture": "CIMENTADO_INDUSTRIAL"
+    },
+    {
+      "subregion_id": "SUB-011-006",
+      "title": "Fendas da Névoa",
+      "parent_territory": "TER-011",
+      "terrain_type": "MONTANHA_ROCHOSA",
+      "surface_texture": "MAGICO_CORROMPIDO"
+    },
+    {
+      "subregion_id": "SUB-012-001",
+      "title": "Perímetro de Contenção Alfa",
+      "parent_territory": "TER-012",
+      "terrain_type": "ZONA_DE_CONTENCAO",
+      "surface_texture": "MAGICO_CORROMPIDO"
+    },
+    {
+      "subregion_id": "SUB-012-002",
+      "title": "Campo de Deslocados",
+      "parent_territory": "TER-012",
+      "terrain_type": "ZONA_DE_CONTENCAO",
+      "surface_texture": "MAGICO_CORROMPIDO"
+    },
+    {
+      "subregion_id": "SUB-012-003",
+      "title": "Comando Emergencial",
+      "parent_territory": "TER-012",
+      "terrain_type": "ZONA_DE_CONTENCAO",
+      "surface_texture": "MAGICO_CORROMPIDO"
+    },
+    {
+      "subregion_id": "SUB-014-001",
+      "name": "Caldeira Ativa",
+      "parent_territory": "TER-014",
+      "terrain_type": "VULCANICO",
+      "title": "Caldeira Ativa",
+      "surface_texture": "NATURAL_QUEIMADO"
+    },
+    {
+      "subregion_id": "SUB-014-002",
+      "name": "Assentamento da Cratera",
+      "parent_territory": "TER-014",
+      "terrain_type": "VULCANICO",
+      "title": "Assentamento da Cratera",
+      "surface_texture": "NATURAL_QUEIMADO"
+    },
+    {
+      "subregion_id": "SUB-014-003",
+      "name": "Campos de Cinza",
+      "parent_territory": "TER-014",
+      "terrain_type": "CULTIVADO",
+      "title": "Campos de Cinza",
+      "surface_texture": "NATURAL_CULTIVADO"
+    },
+    {
+      "subregion_id": "SUB-015-001",
+      "title": "Dunas Ocultas",
+      "parent_territory": "TER-015",
+      "terrain_type": "DESERTICO",
+      "surface_texture": "NATURAL_ARENOSO"
+    },
+    {
+      "subregion_id": "SUB-015-002",
+      "title": "Ruinas de Antes-do-Pacto",
+      "parent_territory": "TER-015",
+      "terrain_type": "RUINA",
+      "surface_texture": "MAGICO_CORROMPIDO"
+    },
+    {
+      "subregion_id": "SUB-015-003",
+      "title": "Oasis do Poco Fundo",
+      "parent_territory": "TER-015",
+      "terrain_type": "OASIS",
+      "surface_texture": "NATURAL_ORGANICO"
+    },
+    {
+      "subregion_id": "SUB-016-001",
+      "title": "Geleira Perene",
+      "parent_territory": "TER-016",
+      "terrain_type": "GLACIAL",
+      "surface_texture": "NATURAL_GELADO"
+    },
+    {
+      "subregion_id": "SUB-016-002",
+      "title": "Abrigo sob o Gelo",
+      "parent_territory": "TER-016",
+      "terrain_type": "GLACIAL",
+      "surface_texture": "NATURAL_GELADO"
+    },
+    {
+      "subregion_id": "SUB-016-003",
+      "title": "Fenda Congelada",
+      "parent_territory": "TER-016",
+      "terrain_type": "GLACIAL",
+      "surface_texture": "MAGICO_CORROMPIDO"
+    },
+    {
+      "subregion_id": "SUB-017-001",
+      "title": "Ilha-Ancora",
+      "parent_territory": "TER-017",
+      "terrain_type": "AEREO_ETEREO",
+      "surface_texture": "SEM_PISO_FÍSICO"
+    },
+    {
+      "subregion_id": "SUB-017-002",
+      "title": "Correntes de Eter",
+      "parent_territory": "TER-017",
+      "terrain_type": "AEREO_ETEREO",
+      "surface_texture": "SEM_PISO_FÍSICO"
+    },
+    {
+      "subregion_id": "SUB-017-003",
+      "title": "Ilhas Errantes",
+      "parent_territory": "TER-017",
+      "terrain_type": "AEREO_ETEREO",
+      "surface_texture": "SEM_PISO_FÍSICO"
+    },
+    {
+      "subregion_id": "SUB-018-001",
+      "title": "Trincheira Profunda",
+      "parent_territory": "TER-018",
+      "terrain_type": "ABISSAL_SUBMERSO",
+      "surface_texture": "NATURAL_AQUATICO_PROFUNDO"
+    },
+    {
+      "subregion_id": "SUB-018-002",
+      "title": "Recifes Luminosos",
+      "parent_territory": "TER-018",
+      "terrain_type": "ABISSAL_SUBMERSO",
+      "surface_texture": "NATURAL_AQUATICO_PROFUNDO"
+    },
+    {
+      "subregion_id": "SUB-018-003",
+      "title": "Camaras de Pressao",
+      "parent_territory": "TER-018",
+      "terrain_type": "ABISSAL_SUBMERSO",
+      "surface_texture": "NATURAL_AQUATICO_PROFUNDO"
+    },
+    {
+      "subregion_id": "SUB-019-001",
+      "title": "Dossel Verde",
+      "parent_territory": "TER-019",
+      "terrain_type": "SELVA_TROPICAL",
+      "surface_texture": "NATURAL_ORGANICO"
+    },
+    {
+      "subregion_id": "SUB-019-002",
+      "title": "Ruinas Cobertas",
+      "parent_territory": "TER-019",
+      "terrain_type": "RUINA",
+      "surface_texture": "MAGICO_CORROMPIDO"
+    },
+    {
+      "subregion_id": "SUB-019-003",
+      "title": "Pantano da Serpente",
+      "parent_territory": "TER-019",
+      "terrain_type": "PANTANO",
+      "surface_texture": "NATURAL_LAMACENTO"
+    }
+  ],
+  "update_note_fase_44": "TER-014 Cadeia de Cinzas (novo território, fase 44) adicionado ao perfil de terreno e às tags de subregião.",
+  "update_note_fase_48": "TER-015 Vale das Ruinas (novo territorio, fase 48) adicionado ao perfil de terreno e as tags de subregiao.",
+  "update_note_fase_49": "TER-016 Confins de Gelo (novo territorio, fase 49) adicionado ao perfil de terreno e as tags de subregiao.",
+  "update_note_fase_50": "TER-017 Arquipelago Etereo (novo territorio, fase 50) adicionado ao perfil de terreno e as tags de subregiao.",
+  "update_note_fase_51": "TER-018 Fossa Abissal (novo territorio, fase 51) adicionado ao perfil de terreno e as tags de subregiao.",
+  "update_note_fase_52": "TER-019 Mata Perdida (novo territorio, fase 52) adicionado - ultimo territorio desta serie (19 no total).",
+  "update_note_fase_57": "Fase 57: 11 subregioes (~18%) marcadas com root_corruption (portao autoral, ver 01_LORE/CANON_DERIVADO_ATIVO/CORRUPCAO/STELLAR_ROOT_CORRUPTION_GATE_DEV_V1_0.json). Rotas que cruzam essas subregioes carregam risco adicional de exposicao a Raiz Profunda - nota qualitativa, sem alterar tempo/dificuldade ja definidos.",
+  "surface_texture_note": "Campo aditivo (fase de física): textura de piso derivada do terrain_type já atribuído a cada subregião - MÁGICO reservado a zonas de corrupção da Raiz Profunda (ver override abaixo), não inventado por padrão."
+}

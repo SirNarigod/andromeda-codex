@@ -1,0 +1,8 @@
+{
+  "record_id": "ARPG-VISUAL-PIPELINE-GATE-V0.5.0",
+  "stage": 22,
+  "status": "BLOCKED",
+  "unlock_condition": "STAGE_21_PRE_ART_PASS",
+  "rule": "Concept art, final models, animation, VFX, audio and final UI remain deferred until gameplay/content pre-art gate passes.",
+  "supersedes_active_numbering": "Previous visual-pipeline stage numbers remain historical only."
+}

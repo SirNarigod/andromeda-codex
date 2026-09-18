@@ -1,0 +1,11 @@
+{
+  "record_id": "SUB-006-001", "record_kind": "DERIVED_SUBREGION_PROFILE", "authority": "CANON_DERIVADO_ATIVO", "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Plataformas Altas", "parent_political_unit": "TER-006",
+  "provenance": {"approval": "GAMEPLAY_DERIVED_DEV_SOURCE", "r2_anchors": ["TER-006", "vaelora-aereth"], "compatibility": "Camada administrativa e narrativa local; não cria fronteira, cidade, soberania ou nova autoridade."},
+  "function": "Plataformas suspensas onde vive a nobreza eletiva do reino aéreo.",
+  "locality_references": ["LOC-006-001 Plataforma Real"],
+  "permitted_catalog_links": {"npc_roles": [], "professions": [], "encounters": [], "resources": []},
+  "local_conflicts": ["prestígio de altitude versus acesso igualitário às plataformas mais altas"],
+  "prohibitions": ["NO_NEW_SOVEREIGNTY", "NO_AUTOMATIC_KENUA_SCENE", "NO_R2_EPISODE_REWRITE", "NO_FIXED_BORDER_COORDINATE"],
+  "story_generators": ["Uma falha estrutural numa plataforma alta expõe a desigualdade de manutenção entre bairros."]
+}

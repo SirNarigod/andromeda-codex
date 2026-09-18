@@ -1,0 +1,154 @@
+{
+  "record_id": "ISOLATED-REGRESSION-V1.3.0",
+  "status": "PASS",
+  "files": 24,
+  "tests_total": 776,
+  "failed_files": 0,
+  "rows": [
+    {
+      "file": "test_agent_brain.py",
+      "tests": 90,
+      "status": "PASS",
+      "seconds": 5.699
+    },
+    {
+      "file": "test_atlas_living_bridge.py",
+      "tests": 61,
+      "status": "PASS",
+      "seconds": 4.378
+    },
+    {
+      "file": "test_combat_determinism_v1_3.py",
+      "tests": 1,
+      "status": "PASS",
+      "seconds": 0.826
+    },
+    {
+      "file": "test_combat_system_v1_1.py",
+      "tests": 12,
+      "status": "PASS",
+      "seconds": 4.09
+    },
+    {
+      "file": "test_commerce_system_v1_1.py",
+      "tests": 10,
+      "status": "PASS",
+      "seconds": 2.871
+    },
+    {
+      "file": "test_consequence_engine.py",
+      "tests": 56,
+      "status": "PASS",
+      "seconds": 3.115
+    },
+    {
+      "file": "test_country_living_bridge_v1_3.py",
+      "tests": 11,
+      "status": "PASS",
+      "seconds": 4.939
+    },
+    {
+      "file": "test_country_scale_v1_2.py",
+      "tests": 9,
+      "status": "PASS",
+      "seconds": 0.798
+    },
+    {
+      "file": "test_domain_integration.py",
+      "tests": 6,
+      "status": "PASS",
+      "seconds": 1.42
+    },
+    {
+      "file": "test_dynamic_spawn_v1_1.py",
+      "tests": 2,
+      "status": "PASS",
+      "seconds": 0.571
+    },
+    {
+      "file": "test_ecology_brain.py",
+      "tests": 77,
+      "status": "PASS",
+      "seconds": 7.085
+    },
+    {
+      "file": "test_economic_locality_v1_1.py",
+      "tests": 6,
+      "status": "PASS",
+      "seconds": 1.893
+    },
+    {
+      "file": "test_faction_integration_v1_1.py",
+      "tests": 3,
+      "status": "PASS",
+      "seconds": 1.311
+    },
+    {
+      "file": "test_integrated_engine_v1_1.py",
+      "tests": 9,
+      "status": "PASS",
+      "seconds": 7.114
+    },
+    {
+      "file": "test_llm_gateway.py",
+      "tests": 35,
+      "status": "PASS",
+      "seconds": 3.929
+    },
+    {
+      "file": "test_long_horizon.py",
+      "tests": 44,
+      "status": "PASS",
+      "seconds": 16.66
+    },
+    {
+      "file": "test_mobility_biology_v1_1.py",
+      "tests": 12,
+      "status": "PASS",
+      "seconds": 4.653
+    },
+    {
+      "file": "test_object_environment.py",
+      "tests": 73,
+      "status": "PASS",
+      "seconds": 4.011
+    },
+    {
+      "file": "test_runtime_core.py",
+      "tests": 59,
+      "status": "PASS",
+      "seconds": 6.483
+    },
+    {
+      "file": "test_scene_interaction_v1_2_1.py",
+      "tests": 10,
+      "status": "PASS",
+      "seconds": 0.967
+    },
+    {
+      "file": "test_social_memory.py",
+      "tests": 72,
+      "status": "PASS",
+      "seconds": 5.263
+    },
+    {
+      "file": "test_society_labor_v1_1.py",
+      "tests": 13,
+      "status": "PASS",
+      "seconds": 5.39
+    },
+    {
+      "file": "test_world_orchestrator.py",
+      "tests": 54,
+      "status": "PASS",
+      "seconds": 8.661
+    },
+    {
+      "file": "test_world_systems.py",
+      "tests": 51,
+      "status": "PASS",
+      "seconds": 17.408
+    }
+  ],
+  "note": "Consolidated from the post-determinism-fix isolated execution. No interrupted or monolithic batch is counted."
+}

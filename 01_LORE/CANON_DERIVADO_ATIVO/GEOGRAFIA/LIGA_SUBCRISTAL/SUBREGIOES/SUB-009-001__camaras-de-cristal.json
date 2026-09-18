@@ -1,0 +1,11 @@
+{
+  "record_id": "SUB-009-001", "record_kind": "DERIVED_SUBREGION_PROFILE", "authority": "CANON_DERIVADO_ATIVO", "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Câmaras de Cristal", "parent_political_unit": "TER-009",
+  "provenance": {"approval": "GAMEPLAY_DERIVED_DEV_SOURCE", "r2_anchors": ["TER-009", "torvhan-calther"], "compatibility": "Camada administrativa e narrativa local; não cria fronteira, cidade, soberania ou nova autoridade."},
+  "function": "Cidades subterrâneas escavadas em formações de cristal natural.",
+  "locality_references": ["LOC-009-001 Câmara Central de Cristal"],
+  "permitted_catalog_links": {"npc_roles": [], "professions": [], "encounters": [], "resources": ["cristal"]},
+  "local_conflicts": ["exploração de cristal versus preservação das câmaras habitadas"],
+  "prohibitions": ["NO_NEW_SOVEREIGNTY", "NO_AUTOMATIC_KENUA_SCENE", "NO_R2_EPISODE_REWRITE", "NO_FIXED_BORDER_COORDINATE"],
+  "story_generators": ["Uma câmara habitada é ameaçada por escavação de cristal numa cidade vizinha da liga."]
+}

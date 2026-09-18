@@ -1,0 +1,3779 @@
+{
+  "record_id": "STELLAR-INTERIOR-FLOOR-PLANS-DEV-V1.0",
+  "title": "Plantas Baixas das 68 Construções Já Catalogadas",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "r2_guard": "Camada aditiva sobre STELLAR_CONSTRUCTION_AREA_INDEX_DEV_V1_0.json (área real já calibrada) - não redefine area_m2/building_type de nenhuma construção, apenas subdivide a área existente em cômodos por um template determinístico e fixo por tipo de construção (7 templates, um por building_type já existente).",
+  "method": "Cada building_type tem um template fixo de cômodos com percentual de área; a área de cada cômodo é total_area_m2 x area_pct (determinístico, não aleatório). A primeira sala do template é sempre a entrada.",
+  "room_templates": {
+    "ACAMPAMENTO": [
+      {
+        "room_type": "PATIO_DE_ENTRADA",
+        "area_pct": 0.3,
+        "function": "Ponto de chegada, fogueira comum.",
+        "furniture": [
+          "FUR-008",
+          "FUR-004"
+        ]
+      },
+      {
+        "room_type": "AREA_COMUM",
+        "area_pct": 0.4,
+        "function": "Convivência e descanso coletivo.",
+        "furniture": [
+          "FUR-004",
+          "FUR-005"
+        ]
+      },
+      {
+        "room_type": "DEPOSITO",
+        "area_pct": 0.3,
+        "function": "Suprimentos e equipamento de viagem.",
+        "furniture": [
+          "FUR-006"
+        ]
+      }
+    ],
+    "RESIDENCIAL": [
+      {
+        "room_type": "ENTRADA",
+        "area_pct": 0.1,
+        "function": "Recebimento, porta principal.",
+        "furniture": [
+          "FUR-001"
+        ]
+      },
+      {
+        "room_type": "SALA",
+        "area_pct": 0.3,
+        "function": "Convivência familiar.",
+        "furniture": [
+          "FUR-003",
+          "FUR-004",
+          "FUR-002"
+        ]
+      },
+      {
+        "room_type": "QUARTO",
+        "area_pct": 0.35,
+        "function": "Descanso.",
+        "furniture": [
+          "FUR-005",
+          "FUR-006",
+          "FUR-002"
+        ]
+      },
+      {
+        "room_type": "COZINHA",
+        "area_pct": 0.25,
+        "function": "Preparo de alimentos.",
+        "furniture": [
+          "FUR-008",
+          "FUR-003",
+          "FUR-012"
+        ]
+      }
+    ],
+    "COMERCIAL": [
+      {
+        "room_type": "ENTRADA_E_BALCAO",
+        "area_pct": 0.25,
+        "function": "Recepção e ponto de venda.",
+        "furniture": [
+          "FUR-001",
+          "FUR-009"
+        ]
+      },
+      {
+        "room_type": "AREA_DE_VENDA",
+        "area_pct": 0.5,
+        "function": "Exposição de mercadoria.",
+        "furniture": [
+          "FUR-007",
+          "FUR-003"
+        ]
+      },
+      {
+        "room_type": "DEPOSITO",
+        "area_pct": 0.25,
+        "function": "Estoque não exposto.",
+        "furniture": [
+          "FUR-006"
+        ]
+      }
+    ],
+    "LOJA": [
+      {
+        "room_type": "BALCAO",
+        "area_pct": 0.35,
+        "function": "Atendimento e cobrança.",
+        "furniture": [
+          "FUR-001",
+          "FUR-009"
+        ]
+      },
+      {
+        "room_type": "VITRINE",
+        "area_pct": 0.4,
+        "function": "Exposição especializada.",
+        "furniture": [
+          "FUR-007"
+        ]
+      },
+      {
+        "room_type": "DEPOSITO",
+        "area_pct": 0.25,
+        "function": "Reposição.",
+        "furniture": [
+          "FUR-006"
+        ]
+      }
+    ],
+    "INSTITUCIONAL": [
+      {
+        "room_type": "RECEPCAO",
+        "area_pct": 0.15,
+        "function": "Atendimento inicial.",
+        "furniture": [
+          "FUR-001",
+          "FUR-004"
+        ]
+      },
+      {
+        "room_type": "SALAO_PRINCIPAL",
+        "area_pct": 0.45,
+        "function": "Função central da instituição (audiência/culto/estudo).",
+        "furniture": [
+          "FUR-003",
+          "FUR-004"
+        ]
+      },
+      {
+        "room_type": "SALA_ADMINISTRATIVA",
+        "area_pct": 0.2,
+        "function": "Gestão e registros.",
+        "furniture": [
+          "FUR-003",
+          "FUR-015"
+        ]
+      },
+      {
+        "room_type": "ARQUIVO",
+        "area_pct": 0.2,
+        "function": "Guarda de documentos/relíquias.",
+        "furniture": [
+          "FUR-015",
+          "FUR-006"
+        ]
+      }
+    ],
+    "MILITAR": [
+      {
+        "room_type": "POSTO_DE_GUARDA",
+        "area_pct": 0.2,
+        "function": "Vigilância da entrada.",
+        "furniture": [
+          "FUR-001",
+          "FUR-013"
+        ]
+      },
+      {
+        "room_type": "DORMITORIO",
+        "area_pct": 0.3,
+        "function": "Descanso da guarnição.",
+        "furniture": [
+          "FUR-005"
+        ]
+      },
+      {
+        "room_type": "ARSENAL",
+        "area_pct": 0.25,
+        "function": "Armazenamento de armamento.",
+        "furniture": [
+          "FUR-014"
+        ]
+      },
+      {
+        "room_type": "SALA_DE_COMANDO",
+        "area_pct": 0.25,
+        "function": "Planejamento e ordens.",
+        "furniture": [
+          "FUR-003",
+          "FUR-015"
+        ]
+      }
+    ],
+    "INDUSTRIAL": [
+      {
+        "room_type": "RECEPCAO",
+        "area_pct": 0.1,
+        "function": "Entrada de pessoal/insumos.",
+        "furniture": [
+          "FUR-001"
+        ]
+      },
+      {
+        "room_type": "AREA_DE_PRODUCAO",
+        "area_pct": 0.55,
+        "function": "Manufatura principal.",
+        "furniture": [
+          "FUR-010"
+        ]
+      },
+      {
+        "room_type": "DEPOSITO_DE_INSUMOS",
+        "area_pct": 0.2,
+        "function": "Matéria-prima e produto acabado.",
+        "furniture": [
+          "FUR-006"
+        ]
+      },
+      {
+        "room_type": "CONTROLE",
+        "area_pct": 0.15,
+        "function": "Supervisão da produção.",
+        "furniture": [
+          "FUR-003",
+          "FUR-015"
+        ]
+      }
+    ]
+  },
+  "count": 68,
+  "floor_plans": [
+    {
+      "est_id": "EST-001",
+      "name": "Mercado Central de Lúminor",
+      "building_type": "COMERCIAL",
+      "total_area_m2": 282.4,
+      "room_count": 3,
+      "rooms": [
+        {
+          "room_id": "EST-001-R01",
+          "room_type": "ENTRADA_E_BALCAO",
+          "area_m2": 70.6,
+          "function": "Recepção e ponto de venda.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-009"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-001-R02",
+          "room_type": "AREA_DE_VENDA",
+          "area_m2": 141.2,
+          "function": "Exposição de mercadoria.",
+          "furniture_refs": [
+            "FUR-007",
+            "FUR-003"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-001-R03",
+          "room_type": "DEPOSITO",
+          "area_m2": 70.6,
+          "function": "Estoque não exposto.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 1,
+      "exit_note": "1 porta principal serve como entrada e saída"
+    },
+    {
+      "est_id": "EST-002",
+      "name": "Entreposto da Doca",
+      "building_type": "COMERCIAL",
+      "total_area_m2": 195.4,
+      "room_count": 3,
+      "rooms": [
+        {
+          "room_id": "EST-002-R01",
+          "room_type": "ENTRADA_E_BALCAO",
+          "area_m2": 48.9,
+          "function": "Recepção e ponto de venda.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-009"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-002-R02",
+          "room_type": "AREA_DE_VENDA",
+          "area_m2": 97.7,
+          "function": "Exposição de mercadoria.",
+          "furniture_refs": [
+            "FUR-007",
+            "FUR-003"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-002-R03",
+          "room_type": "DEPOSITO",
+          "area_m2": 48.9,
+          "function": "Estoque não exposto.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 1,
+      "exit_note": "1 porta principal serve como entrada e saída"
+    },
+    {
+      "est_id": "EST-003",
+      "name": "Forja Real de Kharveth (edifício)",
+      "building_type": "INDUSTRIAL",
+      "total_area_m2": 1460.0,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-003-R01",
+          "room_type": "RECEPCAO",
+          "area_m2": 146.0,
+          "function": "Entrada de pessoal/insumos.",
+          "furniture_refs": [
+            "FUR-001"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-003-R02",
+          "room_type": "AREA_DE_PRODUCAO",
+          "area_m2": 803.0,
+          "function": "Manufatura principal.",
+          "furniture_refs": [
+            "FUR-010"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-003-R03",
+          "room_type": "DEPOSITO_DE_INSUMOS",
+          "area_m2": 292.0,
+          "function": "Matéria-prima e produto acabado.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-003-R04",
+          "room_type": "CONTROLE",
+          "area_m2": 219.0,
+          "function": "Supervisão da produção.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-004",
+      "name": "Oficina de Charneira (edifício)",
+      "building_type": "INDUSTRIAL",
+      "total_area_m2": 540.0,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-004-R01",
+          "room_type": "RECEPCAO",
+          "area_m2": 54.0,
+          "function": "Entrada de pessoal/insumos.",
+          "furniture_refs": [
+            "FUR-001"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-004-R02",
+          "room_type": "AREA_DE_PRODUCAO",
+          "area_m2": 297.0,
+          "function": "Manufatura principal.",
+          "furniture_refs": [
+            "FUR-010"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-004-R03",
+          "room_type": "DEPOSITO_DE_INSUMOS",
+          "area_m2": 108.0,
+          "function": "Matéria-prima e produto acabado.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-004-R04",
+          "room_type": "CONTROLE",
+          "area_m2": 81.0,
+          "function": "Supervisão da produção.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-005",
+      "name": "Casario de Varga",
+      "building_type": "RESIDENCIAL",
+      "total_area_m2": 117.4,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-005-R01",
+          "room_type": "ENTRADA",
+          "area_m2": 11.7,
+          "function": "Recebimento, porta principal.",
+          "furniture_refs": [
+            "FUR-001"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-005-R02",
+          "room_type": "SALA",
+          "area_m2": 35.2,
+          "function": "Convivência familiar.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-004",
+            "FUR-002"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-005-R03",
+          "room_type": "QUARTO",
+          "area_m2": 41.1,
+          "function": "Descanso.",
+          "furniture_refs": [
+            "FUR-005",
+            "FUR-006",
+            "FUR-002"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-005-R04",
+          "room_type": "COZINHA",
+          "area_m2": 29.4,
+          "function": "Preparo de alimentos.",
+          "furniture_refs": [
+            "FUR-008",
+            "FUR-003",
+            "FUR-012"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 1,
+      "exit_note": "1 porta principal serve como entrada e saída"
+    },
+    {
+      "est_id": "EST-006",
+      "name": "Casario da Vila dos Pescadores",
+      "building_type": "RESIDENCIAL",
+      "total_area_m2": 73.1,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-006-R01",
+          "room_type": "ENTRADA",
+          "area_m2": 7.3,
+          "function": "Recebimento, porta principal.",
+          "furniture_refs": [
+            "FUR-001"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-006-R02",
+          "room_type": "SALA",
+          "area_m2": 21.9,
+          "function": "Convivência familiar.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-004",
+            "FUR-002"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-006-R03",
+          "room_type": "QUARTO",
+          "area_m2": 25.6,
+          "function": "Descanso.",
+          "furniture_refs": [
+            "FUR-005",
+            "FUR-006",
+            "FUR-002"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-006-R04",
+          "room_type": "COZINHA",
+          "area_m2": 18.3,
+          "function": "Preparo de alimentos.",
+          "furniture_refs": [
+            "FUR-008",
+            "FUR-003",
+            "FUR-012"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 1,
+      "exit_note": "1 porta principal serve como entrada e saída"
+    },
+    {
+      "est_id": "EST-007",
+      "name": "Acampamento de Caravana",
+      "building_type": "ACAMPAMENTO",
+      "total_area_m2": 55.9,
+      "room_count": 3,
+      "rooms": [
+        {
+          "room_id": "EST-007-R01",
+          "room_type": "PATIO_DE_ENTRADA",
+          "area_m2": 16.8,
+          "function": "Ponto de chegada, fogueira comum.",
+          "furniture_refs": [
+            "FUR-008",
+            "FUR-004"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-007-R02",
+          "room_type": "AREA_COMUM",
+          "area_m2": 22.4,
+          "function": "Convivência e descanso coletivo.",
+          "furniture_refs": [
+            "FUR-004",
+            "FUR-005"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-007-R03",
+          "room_type": "DEPOSITO",
+          "area_m2": 16.8,
+          "function": "Suprimentos e equipamento de viagem.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 1,
+      "exit_note": "1 porta principal serve como entrada e saída"
+    },
+    {
+      "est_id": "EST-008",
+      "name": "Acampamento dos Trilhos",
+      "building_type": "ACAMPAMENTO",
+      "total_area_m2": 44.2,
+      "room_count": 3,
+      "rooms": [
+        {
+          "room_id": "EST-008-R01",
+          "room_type": "PATIO_DE_ENTRADA",
+          "area_m2": 13.3,
+          "function": "Ponto de chegada, fogueira comum.",
+          "furniture_refs": [
+            "FUR-008",
+            "FUR-004"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-008-R02",
+          "room_type": "AREA_COMUM",
+          "area_m2": 17.7,
+          "function": "Convivência e descanso coletivo.",
+          "furniture_refs": [
+            "FUR-004",
+            "FUR-005"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-008-R03",
+          "room_type": "DEPOSITO",
+          "area_m2": 13.3,
+          "function": "Suprimentos e equipamento de viagem.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 1,
+      "exit_note": "1 porta principal serve como entrada e saída"
+    },
+    {
+      "est_id": "EST-009",
+      "name": "Guarnição de Contenção",
+      "building_type": "MILITAR",
+      "total_area_m2": 237.2,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-009-R01",
+          "room_type": "POSTO_DE_GUARDA",
+          "area_m2": 47.4,
+          "function": "Vigilância da entrada.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-013"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-009-R02",
+          "room_type": "DORMITORIO",
+          "area_m2": 71.2,
+          "function": "Descanso da guarnição.",
+          "furniture_refs": [
+            "FUR-005"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-009-R03",
+          "room_type": "ARSENAL",
+          "area_m2": 59.3,
+          "function": "Armazenamento de armamento.",
+          "furniture_refs": [
+            "FUR-014"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-009-R04",
+          "room_type": "SALA_DE_COMANDO",
+          "area_m2": 59.3,
+          "function": "Planejamento e ordens.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-010",
+      "name": "Guarda da Fortaleza",
+      "building_type": "MILITAR",
+      "total_area_m2": 311.6,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-010-R01",
+          "room_type": "POSTO_DE_GUARDA",
+          "area_m2": 62.3,
+          "function": "Vigilância da entrada.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-013"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-010-R02",
+          "room_type": "DORMITORIO",
+          "area_m2": 93.5,
+          "function": "Descanso da guarnição.",
+          "furniture_refs": [
+            "FUR-005"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-010-R03",
+          "room_type": "ARSENAL",
+          "area_m2": 77.9,
+          "function": "Armazenamento de armamento.",
+          "furniture_refs": [
+            "FUR-014"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-010-R04",
+          "room_type": "SALA_DE_COMANDO",
+          "area_m2": 77.9,
+          "function": "Planejamento e ordens.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-011",
+      "name": "Armeria Rúnica da Forja Real",
+      "building_type": "LOJA",
+      "total_area_m2": 79.3,
+      "room_count": 3,
+      "rooms": [
+        {
+          "room_id": "EST-011-R01",
+          "room_type": "BALCAO",
+          "area_m2": 27.8,
+          "function": "Atendimento e cobrança.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-009"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-011-R02",
+          "room_type": "VITRINE",
+          "area_m2": 31.7,
+          "function": "Exposição especializada.",
+          "furniture_refs": [
+            "FUR-007"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-011-R03",
+          "room_type": "DEPOSITO",
+          "area_m2": 19.8,
+          "function": "Reposição.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 1,
+      "exit_note": "1 porta principal serve como entrada e saída"
+    },
+    {
+      "est_id": "EST-012",
+      "name": "Botica do Jardim Central",
+      "building_type": "LOJA",
+      "total_area_m2": 97.9,
+      "room_count": 3,
+      "rooms": [
+        {
+          "room_id": "EST-012-R01",
+          "room_type": "BALCAO",
+          "area_m2": 34.3,
+          "function": "Atendimento e cobrança.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-009"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-012-R02",
+          "room_type": "VITRINE",
+          "area_m2": 39.2,
+          "function": "Exposição especializada.",
+          "furniture_refs": [
+            "FUR-007"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-012-R03",
+          "room_type": "DEPOSITO",
+          "area_m2": 24.5,
+          "function": "Reposição.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 1,
+      "exit_note": "1 porta principal serve como entrada e saída"
+    },
+    {
+      "est_id": "EST-013",
+      "name": "Câmara Mercantil",
+      "building_type": "INSTITUCIONAL",
+      "total_area_m2": 895.8,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-013-R01",
+          "room_type": "RECEPCAO",
+          "area_m2": 134.4,
+          "function": "Atendimento inicial.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-004"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-013-R02",
+          "room_type": "SALAO_PRINCIPAL",
+          "area_m2": 403.1,
+          "function": "Função central da instituição (audiência/culto/estudo).",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-004"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-013-R03",
+          "room_type": "SALA_ADMINISTRATIVA",
+          "area_m2": 179.2,
+          "function": "Gestão e registros.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-013-R04",
+          "room_type": "ARQUIVO",
+          "area_m2": 179.2,
+          "function": "Guarda de documentos/relíquias.",
+          "furniture_refs": [
+            "FUR-015",
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-014",
+      "name": "Bilheteria e Armazém da Estação",
+      "building_type": "COMERCIAL",
+      "total_area_m2": 276.0,
+      "room_count": 3,
+      "rooms": [
+        {
+          "room_id": "EST-014-R01",
+          "room_type": "ENTRADA_E_BALCAO",
+          "area_m2": 69.0,
+          "function": "Recepção e ponto de venda.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-009"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-014-R02",
+          "room_type": "AREA_DE_VENDA",
+          "area_m2": 138.0,
+          "function": "Exposição de mercadoria.",
+          "furniture_refs": [
+            "FUR-007",
+            "FUR-003"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-014-R03",
+          "room_type": "DEPOSITO",
+          "area_m2": 69.0,
+          "function": "Estoque não exposto.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 1,
+      "exit_note": "1 porta principal serve como entrada e saída"
+    },
+    {
+      "est_id": "EST-015",
+      "name": "Galpão de Manutenção Ferroviária",
+      "building_type": "INDUSTRIAL",
+      "total_area_m2": 1502.5,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-015-R01",
+          "room_type": "RECEPCAO",
+          "area_m2": 150.2,
+          "function": "Entrada de pessoal/insumos.",
+          "furniture_refs": [
+            "FUR-001"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-015-R02",
+          "room_type": "AREA_DE_PRODUCAO",
+          "area_m2": 826.4,
+          "function": "Manufatura principal.",
+          "furniture_refs": [
+            "FUR-010"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-015-R03",
+          "room_type": "DEPOSITO_DE_INSUMOS",
+          "area_m2": 300.5,
+          "function": "Matéria-prima e produto acabado.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-015-R04",
+          "room_type": "CONTROLE",
+          "area_m2": 225.4,
+          "function": "Supervisão da produção.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-016",
+      "name": "Plenário da Assembleia",
+      "building_type": "INSTITUCIONAL",
+      "total_area_m2": 590.7,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-016-R01",
+          "room_type": "RECEPCAO",
+          "area_m2": 88.6,
+          "function": "Atendimento inicial.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-004"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-016-R02",
+          "room_type": "SALAO_PRINCIPAL",
+          "area_m2": 265.8,
+          "function": "Função central da instituição (audiência/culto/estudo).",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-004"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-016-R03",
+          "room_type": "SALA_ADMINISTRATIVA",
+          "area_m2": 118.1,
+          "function": "Gestão e registros.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-016-R04",
+          "room_type": "ARQUIVO",
+          "area_m2": 118.1,
+          "function": "Guarda de documentos/relíquias.",
+          "furniture_refs": [
+            "FUR-015",
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-017",
+      "name": "Armazém do Cais",
+      "building_type": "COMERCIAL",
+      "total_area_m2": 204.2,
+      "room_count": 3,
+      "rooms": [
+        {
+          "room_id": "EST-017-R01",
+          "room_type": "ENTRADA_E_BALCAO",
+          "area_m2": 51.0,
+          "function": "Recepção e ponto de venda.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-009"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-017-R02",
+          "room_type": "AREA_DE_VENDA",
+          "area_m2": 102.1,
+          "function": "Exposição de mercadoria.",
+          "furniture_refs": [
+            "FUR-007",
+            "FUR-003"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-017-R03",
+          "room_type": "DEPOSITO",
+          "area_m2": 51.0,
+          "function": "Estoque não exposto.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 1,
+      "exit_note": "1 porta principal serve como entrada e saída"
+    },
+    {
+      "est_id": "EST-018",
+      "name": "Câmara do Conselho das Ondas",
+      "building_type": "INSTITUCIONAL",
+      "total_area_m2": 893.1,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-018-R01",
+          "room_type": "RECEPCAO",
+          "area_m2": 134.0,
+          "function": "Atendimento inicial.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-004"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-018-R02",
+          "room_type": "SALAO_PRINCIPAL",
+          "area_m2": 401.9,
+          "function": "Função central da instituição (audiência/culto/estudo).",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-004"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-018-R03",
+          "room_type": "SALA_ADMINISTRATIVA",
+          "area_m2": 178.6,
+          "function": "Gestão e registros.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-018-R04",
+          "room_type": "ARQUIVO",
+          "area_m2": 178.6,
+          "function": "Guarda de documentos/relíquias.",
+          "furniture_refs": [
+            "FUR-015",
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-019",
+      "name": "Oficina de Fusão Tecnomágica",
+      "building_type": "INDUSTRIAL",
+      "total_area_m2": 2385.0,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-019-R01",
+          "room_type": "RECEPCAO",
+          "area_m2": 238.5,
+          "function": "Entrada de pessoal/insumos.",
+          "furniture_refs": [
+            "FUR-001"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-019-R02",
+          "room_type": "AREA_DE_PRODUCAO",
+          "area_m2": 1311.8,
+          "function": "Manufatura principal.",
+          "furniture_refs": [
+            "FUR-010"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-019-R03",
+          "room_type": "DEPOSITO_DE_INSUMOS",
+          "area_m2": 477.0,
+          "function": "Matéria-prima e produto acabado.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-019-R04",
+          "room_type": "CONTROLE",
+          "area_m2": 357.8,
+          "function": "Supervisão da produção.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-020",
+      "name": "Ala de Pesquisa Central",
+      "building_type": "INSTITUCIONAL",
+      "total_area_m2": 1074.0,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-020-R01",
+          "room_type": "RECEPCAO",
+          "area_m2": 161.1,
+          "function": "Atendimento inicial.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-004"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-020-R02",
+          "room_type": "SALAO_PRINCIPAL",
+          "area_m2": 483.3,
+          "function": "Função central da instituição (audiência/culto/estudo).",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-004"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-020-R03",
+          "room_type": "SALA_ADMINISTRATIVA",
+          "area_m2": 214.8,
+          "function": "Gestão e registros.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-020-R04",
+          "room_type": "ARQUIVO",
+          "area_m2": 214.8,
+          "function": "Guarda de documentos/relíquias.",
+          "furniture_refs": [
+            "FUR-015",
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-021",
+      "name": "Corte Principesca",
+      "building_type": "INSTITUCIONAL",
+      "total_area_m2": 460.2,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-021-R01",
+          "room_type": "RECEPCAO",
+          "area_m2": 69.0,
+          "function": "Atendimento inicial.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-004"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-021-R02",
+          "room_type": "SALAO_PRINCIPAL",
+          "area_m2": 207.1,
+          "function": "Função central da instituição (audiência/culto/estudo).",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-004"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-021-R03",
+          "room_type": "SALA_ADMINISTRATIVA",
+          "area_m2": 92.0,
+          "function": "Gestão e registros.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-021-R04",
+          "room_type": "ARQUIVO",
+          "area_m2": 92.0,
+          "function": "Guarda de documentos/relíquias.",
+          "furniture_refs": [
+            "FUR-015",
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-022",
+      "name": "Residência Real Suspensa",
+      "building_type": "RESIDENCIAL",
+      "total_area_m2": 82.0,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-022-R01",
+          "room_type": "ENTRADA",
+          "area_m2": 8.2,
+          "function": "Recebimento, porta principal.",
+          "furniture_refs": [
+            "FUR-001"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-022-R02",
+          "room_type": "SALA",
+          "area_m2": 24.6,
+          "function": "Convivência familiar.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-004",
+            "FUR-002"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-022-R03",
+          "room_type": "QUARTO",
+          "area_m2": 28.7,
+          "function": "Descanso.",
+          "furniture_refs": [
+            "FUR-005",
+            "FUR-006",
+            "FUR-002"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-022-R04",
+          "room_type": "COZINHA",
+          "area_m2": 20.5,
+          "function": "Preparo de alimentos.",
+          "furniture_refs": [
+            "FUR-008",
+            "FUR-003",
+            "FUR-012"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 1,
+      "exit_note": "1 porta principal serve como entrada e saída"
+    },
+    {
+      "est_id": "EST-023",
+      "name": "Terminal de Carga Aérea",
+      "building_type": "COMERCIAL",
+      "total_area_m2": 137.8,
+      "room_count": 3,
+      "rooms": [
+        {
+          "room_id": "EST-023-R01",
+          "room_type": "ENTRADA_E_BALCAO",
+          "area_m2": 34.5,
+          "function": "Recepção e ponto de venda.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-009"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-023-R02",
+          "room_type": "AREA_DE_VENDA",
+          "area_m2": 68.9,
+          "function": "Exposição de mercadoria.",
+          "furniture_refs": [
+            "FUR-007",
+            "FUR-003"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-023-R03",
+          "room_type": "DEPOSITO",
+          "area_m2": 34.5,
+          "function": "Estoque não exposto.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 1,
+      "exit_note": "1 porta principal serve como entrada e saída"
+    },
+    {
+      "est_id": "EST-024",
+      "name": "Câmara Eletiva (edifício)",
+      "building_type": "INSTITUCIONAL",
+      "total_area_m2": 1071.3,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-024-R01",
+          "room_type": "RECEPCAO",
+          "area_m2": 160.7,
+          "function": "Atendimento inicial.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-004"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-024-R02",
+          "room_type": "SALAO_PRINCIPAL",
+          "area_m2": 482.1,
+          "function": "Função central da instituição (audiência/culto/estudo).",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-004"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-024-R03",
+          "room_type": "SALA_ADMINISTRATIVA",
+          "area_m2": 214.3,
+          "function": "Gestão e registros.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-024-R04",
+          "room_type": "ARQUIVO",
+          "area_m2": 214.3,
+          "function": "Guarda de documentos/relíquias.",
+          "furniture_refs": [
+            "FUR-015",
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-025",
+      "name": "Enfermaria Principal",
+      "building_type": "INSTITUCIONAL",
+      "total_area_m2": 842.7,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-025-R01",
+          "room_type": "RECEPCAO",
+          "area_m2": 126.4,
+          "function": "Atendimento inicial.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-004"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-025-R02",
+          "room_type": "SALAO_PRINCIPAL",
+          "area_m2": 379.2,
+          "function": "Função central da instituição (audiência/culto/estudo).",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-004"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-025-R03",
+          "room_type": "SALA_ADMINISTRATIVA",
+          "area_m2": 168.5,
+          "function": "Gestão e registros.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-025-R04",
+          "room_type": "ARQUIVO",
+          "area_m2": 168.5,
+          "function": "Guarda de documentos/relíquias.",
+          "furniture_refs": [
+            "FUR-015",
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-026",
+      "name": "Sede do Conselho de Saúde",
+      "building_type": "INSTITUCIONAL",
+      "total_area_m2": 830.1,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-026-R01",
+          "room_type": "RECEPCAO",
+          "area_m2": 124.5,
+          "function": "Atendimento inicial.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-004"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-026-R02",
+          "room_type": "SALAO_PRINCIPAL",
+          "area_m2": 373.5,
+          "function": "Função central da instituição (audiência/culto/estudo).",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-004"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-026-R03",
+          "room_type": "SALA_ADMINISTRATIVA",
+          "area_m2": 166.0,
+          "function": "Gestão e registros.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-026-R04",
+          "room_type": "ARQUIVO",
+          "area_m2": 166.0,
+          "function": "Guarda de documentos/relíquias.",
+          "furniture_refs": [
+            "FUR-015",
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-027",
+      "name": "Moradas das Copas",
+      "building_type": "RESIDENCIAL",
+      "total_area_m2": 113.5,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-027-R01",
+          "room_type": "ENTRADA",
+          "area_m2": 11.4,
+          "function": "Recebimento, porta principal.",
+          "furniture_refs": [
+            "FUR-001"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-027-R02",
+          "room_type": "SALA",
+          "area_m2": 34.0,
+          "function": "Convivência familiar.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-004",
+            "FUR-002"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-027-R03",
+          "room_type": "QUARTO",
+          "area_m2": 39.7,
+          "function": "Descanso.",
+          "furniture_refs": [
+            "FUR-005",
+            "FUR-006",
+            "FUR-002"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-027-R04",
+          "room_type": "COZINHA",
+          "area_m2": 28.4,
+          "function": "Preparo de alimentos.",
+          "furniture_refs": [
+            "FUR-008",
+            "FUR-003",
+            "FUR-012"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 1,
+      "exit_note": "1 porta principal serve como entrada e saída"
+    },
+    {
+      "est_id": "EST-028",
+      "name": "Templo Sagrado das Raízes",
+      "building_type": "INSTITUCIONAL",
+      "total_area_m2": 1089.3,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-028-R01",
+          "room_type": "RECEPCAO",
+          "area_m2": 163.4,
+          "function": "Atendimento inicial.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-004"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-028-R02",
+          "room_type": "SALAO_PRINCIPAL",
+          "area_m2": 490.2,
+          "function": "Função central da instituição (audiência/culto/estudo).",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-004"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-028-R03",
+          "room_type": "SALA_ADMINISTRATIVA",
+          "area_m2": 217.9,
+          "function": "Gestão e registros.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-028-R04",
+          "room_type": "ARQUIVO",
+          "area_m2": 217.9,
+          "function": "Guarda de documentos/relíquias.",
+          "furniture_refs": [
+            "FUR-015",
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-029",
+      "name": "Círculo de Conselho dos Anciãos",
+      "building_type": "INSTITUCIONAL",
+      "total_area_m2": 569.1,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-029-R01",
+          "room_type": "RECEPCAO",
+          "area_m2": 85.4,
+          "function": "Atendimento inicial.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-004"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-029-R02",
+          "room_type": "SALAO_PRINCIPAL",
+          "area_m2": 256.1,
+          "function": "Função central da instituição (audiência/culto/estudo).",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-004"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-029-R03",
+          "room_type": "SALA_ADMINISTRATIVA",
+          "area_m2": 113.8,
+          "function": "Gestão e registros.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-029-R04",
+          "room_type": "ARQUIVO",
+          "area_m2": 113.8,
+          "function": "Guarda de documentos/relíquias.",
+          "furniture_refs": [
+            "FUR-015",
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-030",
+      "name": "Moradas de Cristal",
+      "building_type": "RESIDENCIAL",
+      "total_area_m2": 80.0,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-030-R01",
+          "room_type": "ENTRADA",
+          "area_m2": 8.0,
+          "function": "Recebimento, porta principal.",
+          "furniture_refs": [
+            "FUR-001"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-030-R02",
+          "room_type": "SALA",
+          "area_m2": 24.0,
+          "function": "Convivência familiar.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-004",
+            "FUR-002"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-030-R03",
+          "room_type": "QUARTO",
+          "area_m2": 28.0,
+          "function": "Descanso.",
+          "furniture_refs": [
+            "FUR-005",
+            "FUR-006",
+            "FUR-002"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-030-R04",
+          "room_type": "COZINHA",
+          "area_m2": 20.0,
+          "function": "Preparo de alimentos.",
+          "furniture_refs": [
+            "FUR-008",
+            "FUR-003",
+            "FUR-012"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 1,
+      "exit_note": "1 porta principal serve como entrada e saída"
+    },
+    {
+      "est_id": "EST-031",
+      "name": "Galeria de Extração",
+      "building_type": "INDUSTRIAL",
+      "total_area_m2": 1965.0,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-031-R01",
+          "room_type": "RECEPCAO",
+          "area_m2": 196.5,
+          "function": "Entrada de pessoal/insumos.",
+          "furniture_refs": [
+            "FUR-001"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-031-R02",
+          "room_type": "AREA_DE_PRODUCAO",
+          "area_m2": 1080.8,
+          "function": "Manufatura principal.",
+          "furniture_refs": [
+            "FUR-010"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-031-R03",
+          "room_type": "DEPOSITO_DE_INSUMOS",
+          "area_m2": 393.0,
+          "function": "Matéria-prima e produto acabado.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-031-R04",
+          "room_type": "CONTROLE",
+          "area_m2": 294.8,
+          "function": "Supervisão da produção.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-032",
+      "name": "Plenário Subcristal",
+      "building_type": "INSTITUCIONAL",
+      "total_area_m2": 940.8,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-032-R01",
+          "room_type": "RECEPCAO",
+          "area_m2": 141.1,
+          "function": "Atendimento inicial.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-004"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-032-R02",
+          "room_type": "SALAO_PRINCIPAL",
+          "area_m2": 423.4,
+          "function": "Função central da instituição (audiência/culto/estudo).",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-004"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-032-R03",
+          "room_type": "SALA_ADMINISTRATIVA",
+          "area_m2": 188.2,
+          "function": "Gestão e registros.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-032-R04",
+          "room_type": "ARQUIVO",
+          "area_m2": 188.2,
+          "function": "Guarda de documentos/relíquias.",
+          "furniture_refs": [
+            "FUR-015",
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-033",
+      "name": "Câmara do Conselho Enohariano",
+      "building_type": "INSTITUCIONAL",
+      "total_area_m2": 604.2,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-033-R01",
+          "room_type": "RECEPCAO",
+          "area_m2": 90.6,
+          "function": "Atendimento inicial.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-004"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-033-R02",
+          "room_type": "SALAO_PRINCIPAL",
+          "area_m2": 271.9,
+          "function": "Função central da instituição (audiência/culto/estudo).",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-004"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-033-R03",
+          "room_type": "SALA_ADMINISTRATIVA",
+          "area_m2": 120.8,
+          "function": "Gestão e registros.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-033-R04",
+          "room_type": "ARQUIVO",
+          "area_m2": 120.8,
+          "function": "Guarda de documentos/relíquias.",
+          "furniture_refs": [
+            "FUR-015",
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-034",
+      "name": "Academia de Formação Mágica",
+      "building_type": "INSTITUCIONAL",
+      "total_area_m2": 793.2,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-034-R01",
+          "room_type": "RECEPCAO",
+          "area_m2": 119.0,
+          "function": "Atendimento inicial.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-004"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-034-R02",
+          "room_type": "SALAO_PRINCIPAL",
+          "area_m2": 356.9,
+          "function": "Função central da instituição (audiência/culto/estudo).",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-004"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-034-R03",
+          "room_type": "SALA_ADMINISTRATIVA",
+          "area_m2": 158.6,
+          "function": "Gestão e registros.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-034-R04",
+          "room_type": "ARQUIVO",
+          "area_m2": 158.6,
+          "function": "Guarda de documentos/relíquias.",
+          "furniture_refs": [
+            "FUR-015",
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-035",
+      "name": "Estação de Captação da Corrente",
+      "building_type": "INDUSTRIAL",
+      "total_area_m2": 1162.5,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-035-R01",
+          "room_type": "RECEPCAO",
+          "area_m2": 116.2,
+          "function": "Entrada de pessoal/insumos.",
+          "furniture_refs": [
+            "FUR-001"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-035-R02",
+          "room_type": "AREA_DE_PRODUCAO",
+          "area_m2": 639.4,
+          "function": "Manufatura principal.",
+          "furniture_refs": [
+            "FUR-010"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-035-R03",
+          "room_type": "DEPOSITO_DE_INSUMOS",
+          "area_m2": 232.5,
+          "function": "Matéria-prima e produto acabado.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-035-R04",
+          "room_type": "CONTROLE",
+          "area_m2": 174.4,
+          "function": "Supervisão da produção.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-036",
+      "name": "Entreposto do Entroncamento",
+      "building_type": "COMERCIAL",
+      "total_area_m2": 119.8,
+      "room_count": 3,
+      "rooms": [
+        {
+          "room_id": "EST-036-R01",
+          "room_type": "ENTRADA_E_BALCAO",
+          "area_m2": 29.9,
+          "function": "Recepção e ponto de venda.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-009"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-036-R02",
+          "room_type": "AREA_DE_VENDA",
+          "area_m2": 59.9,
+          "function": "Exposição de mercadoria.",
+          "furniture_refs": [
+            "FUR-007",
+            "FUR-003"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-036-R03",
+          "room_type": "DEPOSITO",
+          "area_m2": 29.9,
+          "function": "Estoque não exposto.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 1,
+      "exit_note": "1 porta principal serve como entrada e saída"
+    },
+    {
+      "est_id": "EST-037",
+      "name": "Curral e Estábulo",
+      "building_type": "INDUSTRIAL",
+      "total_area_m2": 1780.0,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-037-R01",
+          "room_type": "RECEPCAO",
+          "area_m2": 178.0,
+          "function": "Entrada de pessoal/insumos.",
+          "furniture_refs": [
+            "FUR-001"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-037-R02",
+          "room_type": "AREA_DE_PRODUCAO",
+          "area_m2": 979.0,
+          "function": "Manufatura principal.",
+          "furniture_refs": [
+            "FUR-010"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-037-R03",
+          "room_type": "DEPOSITO_DE_INSUMOS",
+          "area_m2": 356.0,
+          "function": "Matéria-prima e produto acabado.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-037-R04",
+          "room_type": "CONTROLE",
+          "area_m2": 267.0,
+          "function": "Supervisão da produção.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-038",
+      "name": "Acampamento do Vau",
+      "building_type": "ACAMPAMENTO",
+      "total_area_m2": 37.6,
+      "room_count": 3,
+      "rooms": [
+        {
+          "room_id": "EST-038-R01",
+          "room_type": "PATIO_DE_ENTRADA",
+          "area_m2": 11.3,
+          "function": "Ponto de chegada, fogueira comum.",
+          "furniture_refs": [
+            "FUR-008",
+            "FUR-004"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-038-R02",
+          "room_type": "AREA_COMUM",
+          "area_m2": 15.0,
+          "function": "Convivência e descanso coletivo.",
+          "furniture_refs": [
+            "FUR-004",
+            "FUR-005"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-038-R03",
+          "room_type": "DEPOSITO",
+          "area_m2": 11.3,
+          "function": "Suprimentos e equipamento de viagem.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 1,
+      "exit_note": "1 porta principal serve como entrada e saída"
+    },
+    {
+      "est_id": "EST-039",
+      "name": "Guarnição do Abrigo",
+      "building_type": "MILITAR",
+      "total_area_m2": 545.6,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-039-R01",
+          "room_type": "POSTO_DE_GUARDA",
+          "area_m2": 109.1,
+          "function": "Vigilância da entrada.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-013"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-039-R02",
+          "room_type": "DORMITORIO",
+          "area_m2": 163.7,
+          "function": "Descanso da guarnição.",
+          "furniture_refs": [
+            "FUR-005"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-039-R03",
+          "room_type": "ARSENAL",
+          "area_m2": 136.4,
+          "function": "Armazenamento de armamento.",
+          "furniture_refs": [
+            "FUR-014"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-039-R04",
+          "room_type": "SALA_DE_COMANDO",
+          "area_m2": 136.4,
+          "function": "Planejamento e ordens.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-040",
+      "name": "Posto Avançado do Perímetro",
+      "building_type": "MILITAR",
+      "total_area_m2": 665.0,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-040-R01",
+          "room_type": "POSTO_DE_GUARDA",
+          "area_m2": 133.0,
+          "function": "Vigilância da entrada.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-013"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-040-R02",
+          "room_type": "DORMITORIO",
+          "area_m2": 199.5,
+          "function": "Descanso da guarnição.",
+          "furniture_refs": [
+            "FUR-005"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-040-R03",
+          "room_type": "ARSENAL",
+          "area_m2": 166.2,
+          "function": "Armazenamento de armamento.",
+          "furniture_refs": [
+            "FUR-014"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-040-R04",
+          "room_type": "SALA_DE_COMANDO",
+          "area_m2": 166.2,
+          "function": "Planejamento e ordens.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-041",
+      "name": "Tendas de Acolhimento",
+      "building_type": "ACAMPAMENTO",
+      "total_area_m2": 61.2,
+      "room_count": 3,
+      "rooms": [
+        {
+          "room_id": "EST-041-R01",
+          "room_type": "PATIO_DE_ENTRADA",
+          "area_m2": 18.4,
+          "function": "Ponto de chegada, fogueira comum.",
+          "furniture_refs": [
+            "FUR-008",
+            "FUR-004"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-041-R02",
+          "room_type": "AREA_COMUM",
+          "area_m2": 24.5,
+          "function": "Convivência e descanso coletivo.",
+          "furniture_refs": [
+            "FUR-004",
+            "FUR-005"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-041-R03",
+          "room_type": "DEPOSITO",
+          "area_m2": 18.4,
+          "function": "Suprimentos e equipamento de viagem.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 1,
+      "exit_note": "1 porta principal serve como entrada e saída"
+    },
+    {
+      "est_id": "EST-042",
+      "name": "Salão de Audiências de Serverus",
+      "building_type": "INSTITUCIONAL",
+      "total_area_m2": 1182.9,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-042-R01",
+          "room_type": "RECEPCAO",
+          "area_m2": 177.4,
+          "function": "Atendimento inicial.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-004"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-042-R02",
+          "room_type": "SALAO_PRINCIPAL",
+          "area_m2": 532.3,
+          "function": "Função central da instituição (audiência/culto/estudo).",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-004"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-042-R03",
+          "room_type": "SALA_ADMINISTRATIVA",
+          "area_m2": 236.6,
+          "function": "Gestão e registros.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-042-R04",
+          "room_type": "ARQUIVO",
+          "area_m2": 236.6,
+          "function": "Guarda de documentos/relíquias.",
+          "furniture_refs": [
+            "FUR-015",
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-043",
+      "name": "Posto da Passagem Oculta",
+      "building_type": "MILITAR",
+      "total_area_m2": 614.0,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-043-R01",
+          "room_type": "POSTO_DE_GUARDA",
+          "area_m2": 122.8,
+          "function": "Vigilância da entrada.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-013"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-043-R02",
+          "room_type": "DORMITORIO",
+          "area_m2": 184.2,
+          "function": "Descanso da guarnição.",
+          "furniture_refs": [
+            "FUR-005"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-043-R03",
+          "room_type": "ARSENAL",
+          "area_m2": 153.5,
+          "function": "Armazenamento de armamento.",
+          "furniture_refs": [
+            "FUR-014"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-043-R04",
+          "room_type": "SALA_DE_COMANDO",
+          "area_m2": 153.5,
+          "function": "Planejamento e ordens.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-044",
+      "name": "Ateliê de Encantamento da Vertente",
+      "building_type": "INDUSTRIAL",
+      "total_area_m2": 1197.5,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-044-R01",
+          "room_type": "RECEPCAO",
+          "area_m2": 119.8,
+          "function": "Entrada de pessoal/insumos.",
+          "furniture_refs": [
+            "FUR-001"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-044-R02",
+          "room_type": "AREA_DE_PRODUCAO",
+          "area_m2": 658.6,
+          "function": "Manufatura principal.",
+          "furniture_refs": [
+            "FUR-010"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-044-R03",
+          "room_type": "DEPOSITO_DE_INSUMOS",
+          "area_m2": 239.5,
+          "function": "Matéria-prima e produto acabado.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-044-R04",
+          "room_type": "CONTROLE",
+          "area_m2": 179.6,
+          "function": "Supervisão da produção.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-045",
+      "name": "Posto de Vigia da Estação Oriental",
+      "building_type": "MILITAR",
+      "total_area_m2": 393.2,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-045-R01",
+          "room_type": "POSTO_DE_GUARDA",
+          "area_m2": 78.6,
+          "function": "Vigilância da entrada.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-013"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-045-R02",
+          "room_type": "DORMITORIO",
+          "area_m2": 118.0,
+          "function": "Descanso da guarnição.",
+          "furniture_refs": [
+            "FUR-005"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-045-R03",
+          "room_type": "ARSENAL",
+          "area_m2": 98.3,
+          "function": "Armazenamento de armamento.",
+          "furniture_refs": [
+            "FUR-014"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-045-R04",
+          "room_type": "SALA_DE_COMANDO",
+          "area_m2": 98.3,
+          "function": "Planejamento e ordens.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-046",
+      "name": "Oficina de Carruagens de Lúminor",
+      "building_type": "INDUSTRIAL",
+      "total_area_m2": 680.0,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-046-R01",
+          "room_type": "RECEPCAO",
+          "area_m2": 68.0,
+          "function": "Entrada de pessoal/insumos.",
+          "furniture_refs": [
+            "FUR-001"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-046-R02",
+          "room_type": "AREA_DE_PRODUCAO",
+          "area_m2": 374.0,
+          "function": "Manufatura principal.",
+          "furniture_refs": [
+            "FUR-010"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-046-R03",
+          "room_type": "DEPOSITO_DE_INSUMOS",
+          "area_m2": 136.0,
+          "function": "Matéria-prima e produto acabado.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-046-R04",
+          "room_type": "CONTROLE",
+          "area_m2": 102.0,
+          "function": "Supervisão da produção.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-047",
+      "name": "Estaleiro de Navyr",
+      "building_type": "INDUSTRIAL",
+      "total_area_m2": 1390.0,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-047-R01",
+          "room_type": "RECEPCAO",
+          "area_m2": 139.0,
+          "function": "Entrada de pessoal/insumos.",
+          "furniture_refs": [
+            "FUR-001"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-047-R02",
+          "room_type": "AREA_DE_PRODUCAO",
+          "area_m2": 764.5,
+          "function": "Manufatura principal.",
+          "furniture_refs": [
+            "FUR-010"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-047-R03",
+          "room_type": "DEPOSITO_DE_INSUMOS",
+          "area_m2": 278.0,
+          "function": "Matéria-prima e produto acabado.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-047-R04",
+          "room_type": "CONTROLE",
+          "area_m2": 208.5,
+          "function": "Supervisão da produção.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-048",
+      "name": "Hangar de Naves de Altavela",
+      "building_type": "INDUSTRIAL",
+      "total_area_m2": 2735.0,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-048-R01",
+          "room_type": "RECEPCAO",
+          "area_m2": 273.5,
+          "function": "Entrada de pessoal/insumos.",
+          "furniture_refs": [
+            "FUR-001"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-048-R02",
+          "room_type": "AREA_DE_PRODUCAO",
+          "area_m2": 1504.3,
+          "function": "Manufatura principal.",
+          "furniture_refs": [
+            "FUR-010"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-048-R03",
+          "room_type": "DEPOSITO_DE_INSUMOS",
+          "area_m2": 547.0,
+          "function": "Matéria-prima e produto acabado.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-048-R04",
+          "room_type": "CONTROLE",
+          "area_m2": 410.2,
+          "function": "Supervisão da produção.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-049",
+      "name": "Fundição da Caldeira",
+      "building_type": "INDUSTRIAL",
+      "total_area_m2": 1362.5,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-049-R01",
+          "room_type": "RECEPCAO",
+          "area_m2": 136.2,
+          "function": "Entrada de pessoal/insumos.",
+          "furniture_refs": [
+            "FUR-001"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-049-R02",
+          "room_type": "AREA_DE_PRODUCAO",
+          "area_m2": 749.4,
+          "function": "Manufatura principal.",
+          "furniture_refs": [
+            "FUR-010"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-049-R03",
+          "room_type": "DEPOSITO_DE_INSUMOS",
+          "area_m2": 272.5,
+          "function": "Matéria-prima e produto acabado.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-049-R04",
+          "room_type": "CONTROLE",
+          "area_m2": 204.4,
+          "function": "Supervisão da produção.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-050",
+      "name": "Casario da Cratera",
+      "building_type": "RESIDENCIAL",
+      "total_area_m2": 100.0,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-050-R01",
+          "room_type": "ENTRADA",
+          "area_m2": 10.0,
+          "function": "Recebimento, porta principal.",
+          "furniture_refs": [
+            "FUR-001"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-050-R02",
+          "room_type": "SALA",
+          "area_m2": 30.0,
+          "function": "Convivência familiar.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-004",
+            "FUR-002"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-050-R03",
+          "room_type": "QUARTO",
+          "area_m2": 35.0,
+          "function": "Descanso.",
+          "furniture_refs": [
+            "FUR-005",
+            "FUR-006",
+            "FUR-002"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-050-R04",
+          "room_type": "COZINHA",
+          "area_m2": 25.0,
+          "function": "Preparo de alimentos.",
+          "furniture_refs": [
+            "FUR-008",
+            "FUR-003",
+            "FUR-012"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 1,
+      "exit_note": "1 porta principal serve como entrada e saída"
+    },
+    {
+      "est_id": "EST-051",
+      "name": "Mercado dos Terraços",
+      "building_type": "COMERCIAL",
+      "total_area_m2": 265.8,
+      "room_count": 3,
+      "rooms": [
+        {
+          "room_id": "EST-051-R01",
+          "room_type": "ENTRADA_E_BALCAO",
+          "area_m2": 66.5,
+          "function": "Recepção e ponto de venda.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-009"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-051-R02",
+          "room_type": "AREA_DE_VENDA",
+          "area_m2": 132.9,
+          "function": "Exposição de mercadoria.",
+          "furniture_refs": [
+            "FUR-007",
+            "FUR-003"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-051-R03",
+          "room_type": "DEPOSITO",
+          "area_m2": 66.5,
+          "function": "Estoque não exposto.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 1,
+      "exit_note": "1 porta principal serve como entrada e saída"
+    },
+    {
+      "est_id": "EST-052",
+      "name": "Acampamento das Dunas",
+      "building_type": "ACAMPAMENTO",
+      "total_area_m2": 37.1,
+      "room_count": 3,
+      "rooms": [
+        {
+          "room_id": "EST-052-R01",
+          "room_type": "PATIO_DE_ENTRADA",
+          "area_m2": 11.1,
+          "function": "Ponto de chegada, fogueira comum.",
+          "furniture_refs": [
+            "FUR-008",
+            "FUR-004"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-052-R02",
+          "room_type": "AREA_COMUM",
+          "area_m2": 14.8,
+          "function": "Convivência e descanso coletivo.",
+          "furniture_refs": [
+            "FUR-004",
+            "FUR-005"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-052-R03",
+          "room_type": "DEPOSITO",
+          "area_m2": 11.1,
+          "function": "Suprimentos e equipamento de viagem.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 1,
+      "exit_note": "1 porta principal serve como entrada e saída"
+    },
+    {
+      "est_id": "EST-053",
+      "name": "Sitio Arqueologico das Ruinas",
+      "building_type": "INSTITUCIONAL",
+      "total_area_m2": 575.4,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-053-R01",
+          "room_type": "RECEPCAO",
+          "area_m2": 86.3,
+          "function": "Atendimento inicial.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-004"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-053-R02",
+          "room_type": "SALAO_PRINCIPAL",
+          "area_m2": 258.9,
+          "function": "Função central da instituição (audiência/culto/estudo).",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-004"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-053-R03",
+          "room_type": "SALA_ADMINISTRATIVA",
+          "area_m2": 115.1,
+          "function": "Gestão e registros.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-053-R04",
+          "room_type": "ARQUIVO",
+          "area_m2": 115.1,
+          "function": "Guarda de documentos/relíquias.",
+          "furniture_refs": [
+            "FUR-015",
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-054",
+      "name": "Poco Fundo",
+      "building_type": "RESIDENCIAL",
+      "total_area_m2": 148.4,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-054-R01",
+          "room_type": "ENTRADA",
+          "area_m2": 14.8,
+          "function": "Recebimento, porta principal.",
+          "furniture_refs": [
+            "FUR-001"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-054-R02",
+          "room_type": "SALA",
+          "area_m2": 44.5,
+          "function": "Convivência familiar.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-004",
+            "FUR-002"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-054-R03",
+          "room_type": "QUARTO",
+          "area_m2": 51.9,
+          "function": "Descanso.",
+          "furniture_refs": [
+            "FUR-005",
+            "FUR-006",
+            "FUR-002"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-054-R04",
+          "room_type": "COZINHA",
+          "area_m2": 37.1,
+          "function": "Preparo de alimentos.",
+          "furniture_refs": [
+            "FUR-008",
+            "FUR-003",
+            "FUR-012"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 1,
+      "exit_note": "1 porta principal serve como entrada e saída"
+    },
+    {
+      "est_id": "EST-055",
+      "name": "Posto da Geleira",
+      "building_type": "INDUSTRIAL",
+      "total_area_m2": 615.0,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-055-R01",
+          "room_type": "RECEPCAO",
+          "area_m2": 61.5,
+          "function": "Entrada de pessoal/insumos.",
+          "furniture_refs": [
+            "FUR-001"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-055-R02",
+          "room_type": "AREA_DE_PRODUCAO",
+          "area_m2": 338.2,
+          "function": "Manufatura principal.",
+          "furniture_refs": [
+            "FUR-010"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-055-R03",
+          "room_type": "DEPOSITO_DE_INSUMOS",
+          "area_m2": 123.0,
+          "function": "Matéria-prima e produto acabado.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-055-R04",
+          "room_type": "CONTROLE",
+          "area_m2": 92.2,
+          "function": "Supervisão da produção.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-056",
+      "name": "Abrigo Central",
+      "building_type": "RESIDENCIAL",
+      "total_area_m2": 110.0,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-056-R01",
+          "room_type": "ENTRADA",
+          "area_m2": 11.0,
+          "function": "Recebimento, porta principal.",
+          "furniture_refs": [
+            "FUR-001"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-056-R02",
+          "room_type": "SALA",
+          "area_m2": 33.0,
+          "function": "Convivência familiar.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-004",
+            "FUR-002"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-056-R03",
+          "room_type": "QUARTO",
+          "area_m2": 38.5,
+          "function": "Descanso.",
+          "furniture_refs": [
+            "FUR-005",
+            "FUR-006",
+            "FUR-002"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-056-R04",
+          "room_type": "COZINHA",
+          "area_m2": 27.5,
+          "function": "Preparo de alimentos.",
+          "furniture_refs": [
+            "FUR-008",
+            "FUR-003",
+            "FUR-012"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 1,
+      "exit_note": "1 porta principal serve como entrada e saída"
+    },
+    {
+      "est_id": "EST-057",
+      "name": "Vigia da Fenda",
+      "building_type": "MILITAR",
+      "total_area_m2": 656.0,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-057-R01",
+          "room_type": "POSTO_DE_GUARDA",
+          "area_m2": 131.2,
+          "function": "Vigilância da entrada.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-013"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-057-R02",
+          "room_type": "DORMITORIO",
+          "area_m2": 196.8,
+          "function": "Descanso da guarnição.",
+          "furniture_refs": [
+            "FUR-005"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-057-R03",
+          "room_type": "ARSENAL",
+          "area_m2": 164.0,
+          "function": "Armazenamento de armamento.",
+          "furniture_refs": [
+            "FUR-014"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-057-R04",
+          "room_type": "SALA_DE_COMANDO",
+          "area_m2": 164.0,
+          "function": "Planejamento e ordens.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-058",
+      "name": "Doca Eterea",
+      "building_type": "COMERCIAL",
+      "total_area_m2": 161.2,
+      "room_count": 3,
+      "rooms": [
+        {
+          "room_id": "EST-058-R01",
+          "room_type": "ENTRADA_E_BALCAO",
+          "area_m2": 40.3,
+          "function": "Recepção e ponto de venda.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-009"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-058-R02",
+          "room_type": "AREA_DE_VENDA",
+          "area_m2": 80.6,
+          "function": "Exposição de mercadoria.",
+          "furniture_refs": [
+            "FUR-007",
+            "FUR-003"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-058-R03",
+          "room_type": "DEPOSITO",
+          "area_m2": 40.3,
+          "function": "Estoque não exposto.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 1,
+      "exit_note": "1 porta principal serve como entrada e saída"
+    },
+    {
+      "est_id": "EST-059",
+      "name": "Posto das Correntes",
+      "building_type": "INDUSTRIAL",
+      "total_area_m2": 1742.5,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-059-R01",
+          "room_type": "RECEPCAO",
+          "area_m2": 174.2,
+          "function": "Entrada de pessoal/insumos.",
+          "furniture_refs": [
+            "FUR-001"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-059-R02",
+          "room_type": "AREA_DE_PRODUCAO",
+          "area_m2": 958.4,
+          "function": "Manufatura principal.",
+          "furniture_refs": [
+            "FUR-010"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-059-R03",
+          "room_type": "DEPOSITO_DE_INSUMOS",
+          "area_m2": 348.5,
+          "function": "Matéria-prima e produto acabado.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-059-R04",
+          "room_type": "CONTROLE",
+          "area_m2": 261.4,
+          "function": "Supervisão da produção.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-060",
+      "name": "Refugio Errante",
+      "building_type": "ACAMPAMENTO",
+      "total_area_m2": 54.0,
+      "room_count": 3,
+      "rooms": [
+        {
+          "room_id": "EST-060-R01",
+          "room_type": "PATIO_DE_ENTRADA",
+          "area_m2": 16.2,
+          "function": "Ponto de chegada, fogueira comum.",
+          "furniture_refs": [
+            "FUR-008",
+            "FUR-004"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-060-R02",
+          "room_type": "AREA_COMUM",
+          "area_m2": 21.6,
+          "function": "Convivência e descanso coletivo.",
+          "furniture_refs": [
+            "FUR-004",
+            "FUR-005"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-060-R03",
+          "room_type": "DEPOSITO",
+          "area_m2": 16.2,
+          "function": "Suprimentos e equipamento de viagem.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 1,
+      "exit_note": "1 porta principal serve como entrada e saída"
+    },
+    {
+      "est_id": "EST-061",
+      "name": "Cupula da Trincheira",
+      "building_type": "INDUSTRIAL",
+      "total_area_m2": 2530.0,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-061-R01",
+          "room_type": "RECEPCAO",
+          "area_m2": 253.0,
+          "function": "Entrada de pessoal/insumos.",
+          "furniture_refs": [
+            "FUR-001"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-061-R02",
+          "room_type": "AREA_DE_PRODUCAO",
+          "area_m2": 1391.5,
+          "function": "Manufatura principal.",
+          "furniture_refs": [
+            "FUR-010"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-061-R03",
+          "room_type": "DEPOSITO_DE_INSUMOS",
+          "area_m2": 506.0,
+          "function": "Matéria-prima e produto acabado.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-061-R04",
+          "room_type": "CONTROLE",
+          "area_m2": 379.5,
+          "function": "Supervisão da produção.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-062",
+      "name": "Vila dos Recifes",
+      "building_type": "RESIDENCIAL",
+      "total_area_m2": 129.2,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-062-R01",
+          "room_type": "ENTRADA",
+          "area_m2": 12.9,
+          "function": "Recebimento, porta principal.",
+          "furniture_refs": [
+            "FUR-001"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-062-R02",
+          "room_type": "SALA",
+          "area_m2": 38.8,
+          "function": "Convivência familiar.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-004",
+            "FUR-002"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-062-R03",
+          "room_type": "QUARTO",
+          "area_m2": 45.2,
+          "function": "Descanso.",
+          "furniture_refs": [
+            "FUR-005",
+            "FUR-006",
+            "FUR-002"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-062-R04",
+          "room_type": "COZINHA",
+          "area_m2": 32.3,
+          "function": "Preparo de alimentos.",
+          "furniture_refs": [
+            "FUR-008",
+            "FUR-003",
+            "FUR-012"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 1,
+      "exit_note": "1 porta principal serve como entrada e saída"
+    },
+    {
+      "est_id": "EST-063",
+      "name": "Estacao de Pressao",
+      "building_type": "INSTITUCIONAL",
+      "total_area_m2": 314.4,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-063-R01",
+          "room_type": "RECEPCAO",
+          "area_m2": 47.2,
+          "function": "Atendimento inicial.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-004"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-063-R02",
+          "room_type": "SALAO_PRINCIPAL",
+          "area_m2": 141.5,
+          "function": "Função central da instituição (audiência/culto/estudo).",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-004"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-063-R03",
+          "room_type": "SALA_ADMINISTRATIVA",
+          "area_m2": 62.9,
+          "function": "Gestão e registros.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-063-R04",
+          "room_type": "ARQUIVO",
+          "area_m2": 62.9,
+          "function": "Guarda de documentos/relíquias.",
+          "furniture_refs": [
+            "FUR-015",
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-064",
+      "name": "Posto do Dossel",
+      "building_type": "COMERCIAL",
+      "total_area_m2": 274.8,
+      "room_count": 3,
+      "rooms": [
+        {
+          "room_id": "EST-064-R01",
+          "room_type": "ENTRADA_E_BALCAO",
+          "area_m2": 68.7,
+          "function": "Recepção e ponto de venda.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-009"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-064-R02",
+          "room_type": "AREA_DE_VENDA",
+          "area_m2": 137.4,
+          "function": "Exposição de mercadoria.",
+          "furniture_refs": [
+            "FUR-007",
+            "FUR-003"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-064-R03",
+          "room_type": "DEPOSITO",
+          "area_m2": 68.7,
+          "function": "Estoque não exposto.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 1,
+      "exit_note": "1 porta principal serve como entrada e saída"
+    },
+    {
+      "est_id": "EST-065",
+      "name": "Sitio das Ruinas Cobertas",
+      "building_type": "INSTITUCIONAL",
+      "total_area_m2": 822.0,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-065-R01",
+          "room_type": "RECEPCAO",
+          "area_m2": 123.3,
+          "function": "Atendimento inicial.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-004"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-065-R02",
+          "room_type": "SALAO_PRINCIPAL",
+          "area_m2": 369.9,
+          "function": "Função central da instituição (audiência/culto/estudo).",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-004"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-065-R03",
+          "room_type": "SALA_ADMINISTRATIVA",
+          "area_m2": 164.4,
+          "function": "Gestão e registros.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-065-R04",
+          "room_type": "ARQUIVO",
+          "area_m2": 164.4,
+          "function": "Guarda de documentos/relíquias.",
+          "furniture_refs": [
+            "FUR-015",
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-066",
+      "name": "Vigia do Pantano",
+      "building_type": "MILITAR",
+      "total_area_m2": 477.2,
+      "room_count": 4,
+      "rooms": [
+        {
+          "room_id": "EST-066-R01",
+          "room_type": "POSTO_DE_GUARDA",
+          "area_m2": 95.4,
+          "function": "Vigilância da entrada.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-013"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-066-R02",
+          "room_type": "DORMITORIO",
+          "area_m2": 143.2,
+          "function": "Descanso da guarnição.",
+          "furniture_refs": [
+            "FUR-005"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-066-R03",
+          "room_type": "ARSENAL",
+          "area_m2": 119.3,
+          "function": "Armazenamento de armamento.",
+          "furniture_refs": [
+            "FUR-014"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-066-R04",
+          "room_type": "SALA_DE_COMANDO",
+          "area_m2": 119.3,
+          "function": "Planejamento e ordens.",
+          "furniture_refs": [
+            "FUR-003",
+            "FUR-015"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 2,
+      "exit_note": "2ª saída de emergência presente (mesma porta padrão BLD-PORTA)"
+    },
+    {
+      "est_id": "EST-067",
+      "name": "Entreposto do Trovao",
+      "building_type": "COMERCIAL",
+      "total_area_m2": 178.8,
+      "room_count": 3,
+      "rooms": [
+        {
+          "room_id": "EST-067-R01",
+          "room_type": "ENTRADA_E_BALCAO",
+          "area_m2": 44.7,
+          "function": "Recepção e ponto de venda.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-009"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-067-R02",
+          "room_type": "AREA_DE_VENDA",
+          "area_m2": 89.4,
+          "function": "Exposição de mercadoria.",
+          "furniture_refs": [
+            "FUR-007",
+            "FUR-003"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-067-R03",
+          "room_type": "DEPOSITO",
+          "area_m2": 44.7,
+          "function": "Estoque não exposto.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 1,
+      "exit_note": "1 porta principal serve como entrada e saída"
+    },
+    {
+      "est_id": "EST-068",
+      "name": "Entreposto de Ithra",
+      "building_type": "COMERCIAL",
+      "total_area_m2": 177.6,
+      "room_count": 3,
+      "rooms": [
+        {
+          "room_id": "EST-068-R01",
+          "room_type": "ENTRADA_E_BALCAO",
+          "area_m2": 44.4,
+          "function": "Recepção e ponto de venda.",
+          "furniture_refs": [
+            "FUR-001",
+            "FUR-009"
+          ],
+          "is_entrance": true
+        },
+        {
+          "room_id": "EST-068-R02",
+          "room_type": "AREA_DE_VENDA",
+          "area_m2": 88.8,
+          "function": "Exposição de mercadoria.",
+          "furniture_refs": [
+            "FUR-007",
+            "FUR-003"
+          ],
+          "is_entrance": false
+        },
+        {
+          "room_id": "EST-068-R03",
+          "room_type": "DEPOSITO",
+          "area_m2": 44.4,
+          "function": "Estoque não exposto.",
+          "furniture_refs": [
+            "FUR-006"
+          ],
+          "is_entrance": false
+        }
+      ],
+      "entrance_count": 1,
+      "exit_count": 1,
+      "exit_note": "1 porta principal serve como entrada e saída"
+    }
+  ]
+}

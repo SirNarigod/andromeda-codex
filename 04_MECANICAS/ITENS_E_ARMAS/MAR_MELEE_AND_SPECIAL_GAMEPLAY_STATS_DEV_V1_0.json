@@ -1,0 +1,552 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "MAR-MELEE-AND-SPECIAL-GAMEPLAY-STATS-DEV-V1.0",
+  "title": "MAR — Lâminas, arremesso, explosão, contenção, flash e improvisadas (stats de gameplay, rascunho de desenvolvimento)",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "canonical_status": "GAMEPLAY_DERIVED_DEV",
+  "master_integration_status": "NOT_SUBMITTED",
+  "gameplay_scale_reference": "Modelo de stats espelha MAR_CANON_GAMEPLAY_STATS_V1_1.json e MAR_FIREARMS_GAMEPLAY_STATS_DEV_V1_0.json, com autoridade de rascunho de desenvolvimento, não cânone autorizado.",
+  "r2_guard": "Categorias de origem (ART-005, ART-010, ART-011, ART-012, ART-013, ART-014) permanecem cânone R2 imutável em 01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/. Estas 12 armas concretas e seus stats são derivação de gameplay; não substituem, não expandem e não reescrevem o registro R2. Nenhum efeito numérico de runa isolado foi inventado — apenas o tipo de runa (já citado no ART de origem) e o tier de runificação (R0–R3, ver ART-004) são referenciados.",
+  "runification_scale_reference": "ART-004 Sistema de armamentos de Stellar: R0 sem runas, R1 uma runa funcional, R2 matriz de runas coordenadas, R3 vínculo especializado com manutenção frequente.",
+  "weapons": [
+    {
+      "weapon_id": "WPN-LAM-001",
+      "name": "Facão de Oficina",
+      "r2_source_category": "ART-005",
+      "r2_source_title": "Lâminas",
+      "canonical_status": "GAMEPLAY_DERIVED_DEV",
+      "source_weapon_status": "PROPOSTA_DEV_NAO_SUBMETIDA",
+      "runification_tier": "R1",
+      "runes_referenced": [
+        "reforço"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 55,
+        "defense": 30,
+        "utility": 28,
+        "handling": 65,
+        "durability": 60,
+        "reach": 28,
+        "magic_affinity": 20,
+        "tech_affinity": 38,
+        "overall": 41
+      },
+      "balance_role": {
+        "subtype": "corte de proximidade",
+        "primary_strength": "handling",
+        "primary_weakness": "magic_affinity",
+        "advantage": "metal industrial reforçado por uma única runa, ágil e fácil de manter",
+        "limitation": "runa de reforço exige carga e pode fraturar em material incompatível"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (corpo-a-corpo)",
+        "impact_type": "CORTE",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 1.7
+    },
+    {
+      "weapon_id": "WPN-LAM-002",
+      "name": "Lâmina Rúnica Vibrante",
+      "r2_source_category": "ART-005",
+      "r2_source_title": "Lâminas",
+      "canonical_status": "GAMEPLAY_DERIVED_DEV",
+      "source_weapon_status": "PROPOSTA_DEV_NAO_SUBMETIDA",
+      "runification_tier": "R2",
+      "runes_referenced": [
+        "vibração",
+        "calor"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 68,
+        "defense": 34,
+        "utility": 50,
+        "handling": 56,
+        "durability": 46,
+        "reach": 32,
+        "magic_affinity": 58,
+        "tech_affinity": 64,
+        "overall": 51
+      },
+      "balance_role": {
+        "subtype": "corte amplificado",
+        "primary_strength": "power",
+        "primary_weakness": "reach",
+        "advantage": "vibração e calor coordenados cortam materiais duros sem esforço extra",
+        "limitation": "continua uma arma de alcance curto mesmo com a matriz rúnica ativa"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (corpo-a-corpo)",
+        "impact_type": "CORTE",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 2.6
+    },
+    {
+      "weapon_id": "WPN-ARR-001",
+      "name": "Faca de Arremesso Simples",
+      "r2_source_category": "ART-010",
+      "r2_source_title": "Armas de arremesso",
+      "canonical_status": "GAMEPLAY_DERIVED_DEV",
+      "source_weapon_status": "PROPOSTA_DEV_NAO_SUBMETIDA",
+      "runification_tier": "R0",
+      "runes_referenced": [],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 40,
+        "defense": 20,
+        "utility": 35,
+        "handling": 60,
+        "durability": 45,
+        "reach": 45,
+        "magic_affinity": 8,
+        "tech_affinity": 30,
+        "overall": 35
+      },
+      "balance_role": {
+        "subtype": "projeção leve",
+        "primary_strength": "handling",
+        "primary_weakness": "magic_affinity",
+        "advantage": "ferramenta simples, barata e fácil de repor em qualquer região",
+        "limitation": "sem runa de trajetória, depende inteiramente da pontaria do usuário"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "ARCO_BALÍSTICO",
+        "impact_type": "IMPACTO_OU_PERFURAÇÃO",
+        "area_effect": "PEQUENA"
+      },
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "weight_kg": 0.3
+    },
+    {
+      "weapon_id": "WPN-ARR-002",
+      "name": "Disco Rúnico de Trajetória",
+      "r2_source_category": "ART-010",
+      "r2_source_title": "Armas de arremesso",
+      "canonical_status": "GAMEPLAY_DERIVED_DEV",
+      "source_weapon_status": "PROPOSTA_DEV_NAO_SUBMETIDA",
+      "runification_tier": "R2",
+      "runes_referenced": [
+        "trajetória",
+        "retorno"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 52,
+        "defense": 24,
+        "utility": 64,
+        "handling": 54,
+        "durability": 42,
+        "reach": 58,
+        "magic_affinity": 60,
+        "tech_affinity": 62,
+        "overall": 52
+      },
+      "balance_role": {
+        "subtype": "projeção guiada",
+        "primary_strength": "utility",
+        "primary_weakness": "defense",
+        "advantage": "corrige trajetória em pleno voo e retorna à mão do portador",
+        "limitation": "correção consome carga e não ignora obstáculos no caminho"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "ARCO_BALÍSTICO",
+        "impact_type": "IMPACTO_OU_PERFURAÇÃO",
+        "area_effect": "PEQUENA"
+      },
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "weight_kg": 1.1
+    },
+    {
+      "weapon_id": "WPN-EXP-001",
+      "name": "Carga de Demolição",
+      "r2_source_category": "ART-011",
+      "r2_source_title": "Armas de explosão",
+      "canonical_status": "GAMEPLAY_DERIVED_DEV",
+      "source_weapon_status": "PROPOSTA_DEV_NAO_SUBMETIDA",
+      "runification_tier": "R1",
+      "runes_referenced": [
+        "atraso"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "MÉDIO",
+      "cost_tier": 2,
+      "stats": {
+        "power": 75,
+        "defense": 15,
+        "utility": 40,
+        "handling": 35,
+        "durability": 50,
+        "reach": 60,
+        "magic_affinity": 20,
+        "tech_affinity": 42,
+        "overall": 42
+      },
+      "balance_role": {
+        "subtype": "demolição de área",
+        "primary_strength": "power",
+        "primary_weakness": "defense",
+        "advantage": "runa de atraso permite posicionamento e retirada antes da detonação",
+        "limitation": "não elimina estilhaços, calor ou consumo de material — risco alto para quem manuseia"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "ARCO_BALÍSTICO",
+        "impact_type": "IMPACTO_E_ESTILHAÇO",
+        "area_effect": "GRANDE"
+      },
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "weight_kg": 1.17
+    },
+    {
+      "weapon_id": "WPN-EXP-002",
+      "name": "Granada Rúnica de Onda Dirigida",
+      "r2_source_category": "ART-011",
+      "r2_source_title": "Armas de explosão",
+      "canonical_status": "GAMEPLAY_DERIVED_DEV",
+      "source_weapon_status": "PROPOSTA_DEV_NAO_SUBMETIDA",
+      "runification_tier": "R2",
+      "runes_referenced": [
+        "direção de onda",
+        "supressão"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 85,
+        "defense": 20,
+        "utility": 62,
+        "handling": 38,
+        "durability": 44,
+        "reach": 70,
+        "magic_affinity": 66,
+        "tech_affinity": 70,
+        "overall": 57
+      },
+      "balance_role": {
+        "subtype": "demolição controlada",
+        "primary_strength": "power",
+        "primary_weakness": "defense",
+        "advantage": "direciona a onda de choque e suprime parte do estrondo, poupando aliados próximos",
+        "limitation": "uso altamente regulado; matriz rúnica não remove todo o risco de estilhaço"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "ARCO_BALÍSTICO",
+        "impact_type": "IMPACTO_E_ESTILHAÇO",
+        "area_effect": "GRANDE"
+      },
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "weight_kg": 1.83
+    },
+    {
+      "weapon_id": "WPN-CNT-001",
+      "name": "Rede de Ancoragem",
+      "r2_source_category": "ART-012",
+      "r2_source_title": "Armas de contenção",
+      "canonical_status": "GAMEPLAY_DERIVED_DEV",
+      "source_weapon_status": "PROPOSTA_DEV_NAO_SUBMETIDA",
+      "runification_tier": "R1",
+      "runes_referenced": [
+        "laço"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 30,
+        "defense": 35,
+        "utility": 55,
+        "handling": 50,
+        "durability": 48,
+        "reach": 40,
+        "magic_affinity": 24,
+        "tech_affinity": 36,
+        "overall": 40
+      },
+      "balance_role": {
+        "subtype": "imobilização não letal",
+        "primary_strength": "utility",
+        "primary_weakness": "power",
+        "advantage": "prende e ancora um alvo sem exigir sua morte",
+        "limitation": "alvos fortes rompem a runa de laço sozinha, exigindo apoio adicional"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "ARCO_CURTO",
+        "impact_type": "IMPACTO_NÃO_LETAL",
+        "area_effect": "MÉDIA (campo de contenção)"
+      },
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "weight_kg": 0.7
+    },
+    {
+      "weapon_id": "WPN-CNT-002",
+      "name": "Campo Rúnico de Barreira",
+      "r2_source_category": "ART-012",
+      "r2_source_title": "Armas de contenção",
+      "canonical_status": "GAMEPLAY_DERIVED_DEV",
+      "source_weapon_status": "PROPOSTA_DEV_NAO_SUBMETIDA",
+      "runification_tier": "R2",
+      "runes_referenced": [
+        "barreira",
+        "peso"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 38,
+        "defense": 50,
+        "utility": 72,
+        "handling": 42,
+        "durability": 46,
+        "reach": 55,
+        "magic_affinity": 68,
+        "tech_affinity": 66,
+        "overall": 55
+      },
+      "balance_role": {
+        "subtype": "isolamento de área",
+        "primary_strength": "utility",
+        "primary_weakness": "power",
+        "advantage": "combina barreira e peso para isolar ou ancorar múltiplos alvos por área",
+        "limitation": "alvos fortes ainda exigem múltiplas âncoras e grande energia sustentada"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "ARCO_CURTO",
+        "impact_type": "IMPACTO_NÃO_LETAL",
+        "area_effect": "MÉDIA (campo de contenção)"
+      },
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "weight_kg": 1.1
+    },
+    {
+      "weapon_id": "WPN-FLA-001",
+      "name": "Dispositivo de Clarão Simples",
+      "r2_source_category": "ART-013",
+      "r2_source_title": "Dispositivos de flash",
+      "canonical_status": "GAMEPLAY_DERIVED_DEV",
+      "source_weapon_status": "PROPOSTA_DEV_NAO_SUBMETIDA",
+      "runification_tier": "R0",
+      "runes_referenced": [],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 15,
+        "defense": 20,
+        "utility": 45,
+        "handling": 60,
+        "durability": 40,
+        "reach": 22,
+        "magic_affinity": 16,
+        "tech_affinity": 34,
+        "overall": 32
+      },
+      "balance_role": {
+        "subtype": "desorientação básica",
+        "primary_strength": "handling",
+        "primary_weakness": "power",
+        "advantage": "clarão e pulso sonoro mecânicos, baratos e fáceis de carregar em quantidade",
+        "limitation": "proteção sensorial do alvo reduz o efeito quase por completo"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "ARCO_CURTO",
+        "impact_type": "SEM_IMPACTO_FÍSICO (luz/som)",
+        "area_effect": "MÉDIA (raio de ofuscamento)"
+      },
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "weight_kg": 0.3
+    },
+    {
+      "weapon_id": "WPN-FLA-002",
+      "name": "Prisma Rúnico de Interrupção",
+      "r2_source_category": "ART-013",
+      "r2_source_title": "Dispositivos de flash",
+      "canonical_status": "GAMEPLAY_DERIVED_DEV",
+      "source_weapon_status": "PROPOSTA_DEV_NAO_SUBMETIDA",
+      "runification_tier": "R2",
+      "runes_referenced": [
+        "foco luminoso",
+        "interrupção visual"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "MÉDIO",
+      "cost_tier": 2,
+      "stats": {
+        "power": 20,
+        "defense": 24,
+        "utility": 68,
+        "handling": 52,
+        "durability": 38,
+        "reach": 28,
+        "magic_affinity": 60,
+        "tech_affinity": 62,
+        "overall": 44
+      },
+      "balance_role": {
+        "subtype": "desorientação sustentada",
+        "primary_strength": "utility",
+        "primary_weakness": "power",
+        "advantage": "foco luminoso e interrupção visual coordenados prolongam a desorientação do grupo alvo",
+        "limitation": "uso excessivo pode ferir; proteção sensorial ainda reduz o efeito"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "ARCO_CURTO",
+        "impact_type": "SEM_IMPACTO_FÍSICO (luz/som)",
+        "area_effect": "MÉDIA (raio de ofuscamento)"
+      },
+      "currency_tags": [
+        "CUR-002",
+        "CUR-000"
+      ],
+      "weight_kg": 1.1
+    },
+    {
+      "weapon_id": "WPN-IMP-001",
+      "name": "Gancho de Ferragem",
+      "r2_source_category": "ART-014",
+      "r2_source_title": "Armas improvisadas",
+      "canonical_status": "GAMEPLAY_DERIVED_DEV",
+      "source_weapon_status": "PROPOSTA_DEV_NAO_SUBMETIDA",
+      "runification_tier": "R0",
+      "runes_referenced": [],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 35,
+        "defense": 18,
+        "utility": 25,
+        "handling": 45,
+        "durability": 30,
+        "reach": 22,
+        "magic_affinity": 5,
+        "tech_affinity": 20,
+        "overall": 25
+      },
+      "balance_role": {
+        "subtype": "improviso de fronteira",
+        "primary_strength": "handling",
+        "primary_weakness": "magic_affinity",
+        "advantage": "alta disponibilidade e imprevisibilidade — qualquer ferragem serve",
+        "limitation": "menor durabilidade, precisão e proteção ao usuário do que armas dedicadas"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (corpo-a-corpo)",
+        "impact_type": "IMPACTO_CONTUSO",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 0.8
+    },
+    {
+      "weapon_id": "WPN-IMP-002",
+      "name": "Barra Reforçada com Runa Emprestada",
+      "r2_source_category": "ART-014",
+      "r2_source_title": "Armas improvisadas",
+      "canonical_status": "GAMEPLAY_DERIVED_DEV",
+      "source_weapon_status": "PROPOSTA_DEV_NAO_SUBMETIDA",
+      "runification_tier": "R1",
+      "runes_referenced": [
+        "reforço"
+      ],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 44,
+        "defense": 27,
+        "utility": 30,
+        "handling": 40,
+        "durability": 26,
+        "reach": 24,
+        "magic_affinity": 24,
+        "tech_affinity": 28,
+        "overall": 30
+      },
+      "balance_role": {
+        "subtype": "improviso reforçado",
+        "primary_strength": "power",
+        "primary_weakness": "durability",
+        "advantage": "uma runa de reforço reaproveitada de outro equipamento aumenta o impacto sem custo de loja",
+        "limitation": "runa incompatível com o material original acelera a fratura da peça"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (corpo-a-corpo)",
+        "impact_type": "IMPACTO_CONTUSO",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-011",
+        "CUR-000"
+      ],
+      "weight_kg": 1.7
+    }
+  ]
+}

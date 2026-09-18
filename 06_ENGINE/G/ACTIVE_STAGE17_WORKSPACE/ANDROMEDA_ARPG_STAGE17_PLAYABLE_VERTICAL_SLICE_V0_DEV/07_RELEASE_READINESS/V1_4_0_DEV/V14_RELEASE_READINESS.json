@@ -1,0 +1,211 @@
+{
+  "record_id": "V14-RELEASE-READINESS",
+  "version": "V1.4.0",
+  "checks": 40,
+  "passed": 40,
+  "failed": 0,
+  "status": "PASS",
+  "failures": [],
+  "checks_detail": [
+    {
+      "name": "MASTER_HASH",
+      "status": "PASS",
+      "detail": "9677b10890c24dfc04916178a2b9fd40a9ea131f2a13c1ec8255186ab203a98b"
+    },
+    {
+      "name": "CONTRACT_VERSION",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "CONTRACT_STATUS",
+      "status": "PASS",
+      "detail": "RELEASE_CONTRACT"
+    },
+    {
+      "name": "CHUNK_SIZE",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "PROCESS_RESUME_CONTRACT",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "ACCESS_CONTRACT",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "AGENTS_10",
+      "status": "PASS",
+      "detail": "10"
+    },
+    {
+      "name": "SINGLE_SOURCE_AGENT_POLICY",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "BUG_LEDGER_16_CLOSED",
+      "status": "PASS",
+      "detail": "(16, 0)"
+    },
+    {
+      "name": "HARNESS_OPEN_0",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SPATIAL_STRESS",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "name": "DETERMINISM",
+      "status": "PASS",
+      "detail": "None"
+    },
+    {
+      "name": "LOD_300",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "name": "STATIC",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "name": "STAGE13_1403",
+      "status": "PASS",
+      "detail": "1403"
+    },
+    {
+      "name": "STAGE13_FUZZ",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "STAGE14_GLOBAL_43",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "STAGE14_MULTI_37",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "CORRUPTION_10",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "COUNTRY_VERSION",
+      "status": "PASS",
+      "detail": "V1.4.0"
+    },
+    {
+      "name": "NO_TRANSIENT_FILES",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LIVE_HEALTH",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "COUNTRY_SCHEMA",
+      "status": "PASS",
+      "detail": "1.4.0"
+    },
+    {
+      "name": "LOD_VERIFY",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LOD_LEVELS_7",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "LAYERS_11",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "STREAM_INTEGRITY",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "DUNGEON_GRAPH",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "PUBLIC_REDACTIONS_5",
+      "status": "PASS",
+      "detail": "['resources', 'root', 'threat', 'population', 'commerce']"
+    },
+    {
+      "name": "PUBLIC_LOD5_BLOCK",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "ADMIN_LOD6",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "CANON_ROUTES_ONLY",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "NO_RTR_DERIVED",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SIGNED_CHUNK_VALID",
+      "status": "PASS",
+      "detail": "CHK--000215--000165"
+    },
+    {
+      "name": "ROUNDTRIP_LT_1MM",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "GODOT_UNIQUE_REFS",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "GODOT_READ_ONLY_AUTH",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "PROCESS_RESUME",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "PROCESS_RESUME_CLOCK",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "PROCESS_RESUME_HEALTH",
+      "status": "PASS",
+      "detail": ""
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "record_id": "ARPG-WATER-SURVIVAL-CONTRACT-V0.8.0",
+  "gap_closed_by_audit": "Auditoria de 13/09 encontrou arpg_water_bag_survival_core.py (WaterBagSurvivalCore, VERSION=V0.8.0-PRE-GODOT) real, implementado e testado (24 testes em 03_TESTS/STAGE16A/test_stage16a_water_bag_survival_v08.py), mas as regras de agua/sobrevivencia so existiam dispersas dentro do bloco WATER_TRAVERSAL_BAG_SURVIVAL de ARPG_STAGE16A_PRE_GODOT_CONTRACT_V0_8_0.json (um contrato guarda-chuva com 11 blocos nao relacionados: HUD, dialogo, camera, loot etc.). Este arquivo extrai e formaliza so a parte de agua/sobrevivencia num contrato dedicado, no mesmo nivel de granularidade dos demais sistemas (World/Combat/Mobility/etc.) - nenhuma regra nova e inventada, tudo abaixo ja estava aprovado em authorial_rules do V0_8_0.",
+  "authority": "ARPG_STAGE16A_WATER_BAG_SURVIVAL_RUNTIME_NOT_CANON",
+  "core_module": "01_RUNTIME/arpg_water_bag_survival_core.py",
+  "core_class": "WaterBagSurvivalCore",
+  "core_version": "V0.8.0-PRE-GODOT",
+  "sealed_death_policy_note": "Stage15 sealed no-loss death policy permanece inalterado - agua/sobrevivencia nunca sobrescreve a politica de morte ja selada, so adiciona causas de exaustao/afogamento sobre ela.",
+  "sql_tables": [
+    "arpg_stage16a_bags",
+    "arpg_stage16a_carry_profiles",
+    "arpg_stage16a_water_bag_events",
+    "arpg_stage16a_water_exhaustion"
+  ],
+  "traversal_rules": {
+    "shallow_water": "Rios rasos podem ser atravessados a pe por jogador/NPC/animal e por veiculos quando a profundidade permitir; correnteza mais forte custa mais stamina para seres vivos.",
+    "deep_water": "Agua profunda exige natacao para jogador/NPC/animal, com dreno de stamina maior; stamina zero na agua pode causar derrota apos uma janela de graca curta (gameplay-derived).",
+    "vehicles": "Veiculos comuns sofrem penalidade de tracao/velocidade em agua rasa e sao bloqueados de agua profunda, a menos que regras futuras de veiculo aquatico existam (ver VEHICLE SYSTEM na arquitetura unificada)."
+  },
+  "bag_container_rules": {
+    "without_bag": "Sem Bag a mochila base e menor.",
+    "equipped_bag": "Bag equipada e um container real que guarda itens carregados.",
+    "carry_routing": "Carga efetiva carregada = mochila base + Bag equipada; stamina de terreno/agua usa esse peso combinado."
+  },
+  "death_drop_rules": {
+    "protected_on_death": "Armas equipadas nos quick-slots + armadura/roupa equipada permanecem com o dono na morte; itens de quest/unicos criticos sao protegidos de perda permanente.",
+    "loot_ttl": "Ground Loot individual na agua dura 15 minutos; Bag derrubada flutua por 30 minutos; Bag em terra persiste ate ser recuperada.",
+    "recovery": "Jogador pode recuperar a Bag de um NPC mantendo a propriedade original; roubo automatico de NPC fica desativado."
+  },
+  "economy_routing_note": "Compra/venda no vendor transfere itens atraves do dono efetivo (Bag/mochila base), enquanto a carteira de moeda permanece ligada ao perfil do ator.",
+  "test_coverage": "03_TESTS/STAGE16A/test_stage16a_water_bag_survival_v08.py (24 casos)",
+  "superseded_reference": "Regras espelhadas a partir de ARPG_STAGE16A_PRE_GODOT_CONTRACT_V0_8_0.json#authorial_rules e #blocks[WATER_TRAVERSAL_BAG_SURVIVAL] - aquele arquivo continua a fonte de aprovacao autoral original, este e a extracao dedicada pra consulta/integracao mais facil."
+}

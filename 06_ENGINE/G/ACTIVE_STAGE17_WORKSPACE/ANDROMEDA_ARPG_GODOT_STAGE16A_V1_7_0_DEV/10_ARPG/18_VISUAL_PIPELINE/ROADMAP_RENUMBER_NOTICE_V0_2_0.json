@@ -1,0 +1,8 @@
+{
+  "record_id": "ARPG-ROADMAP-RENUMBER-NOTICE-V0.2.0",
+  "status": "HISTORICAL_PATH_PRESERVED",
+  "old_visual_stage": 18,
+  "new_visual_stage": 19,
+  "reason": "Stage09 GATHERING_WORK inserted by author before unimplemented downstream stages.",
+  "canonical_mutation": false
+}

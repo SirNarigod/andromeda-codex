@@ -1,0 +1,38 @@
+{
+  "est_id": "EST-059",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Posto das Correntes",
+  "building_type": "INDUSTRIAL",
+  "parent_locality": "LOC-017-002",
+  "parent_subregion": "SUB-017-002",
+  "parent_political_unit": "TER-017",
+  "function": "Navegacao e colheita controlada de eter bruto nas Correntes de Eter.",
+  "economic_role": {
+    "is_vendor": false,
+    "sells": [],
+    "produces": [
+      "eter bruto"
+    ],
+    "regulation_factor": 0.4
+  },
+  "capacity": {
+    "jobs": 6,
+    "residents": 3
+  },
+  "professions_linked": [
+    "JOB-016 Extrator de recursos (mineracao e coleta)"
+  ],
+  "notable_link": "TER-017 Arquipelago Etereo (fase 50)",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "METAL_E_MADEIRA",
+    "flammability": "MEDIA_COM_RISCO_EXPLOSAO",
+    "recovery_days": 10
+  }
+}

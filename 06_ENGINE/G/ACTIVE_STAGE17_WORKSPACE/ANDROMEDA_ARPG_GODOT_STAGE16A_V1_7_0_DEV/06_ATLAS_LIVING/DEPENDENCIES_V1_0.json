@@ -1,0 +1,31 @@
+{
+  "record_id": "STAGE13-DEPENDENCIES-V1.0",
+  "required": [
+    {
+      "name": "ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE.zip",
+      "sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+      "purpose": "Canonical Códex/Atlas source and canonical reference resolver",
+      "bundled": false
+    },
+    {
+      "name": "Python",
+      "minimum": "3.11",
+      "tested": "3.13.5",
+      "bundled": false
+    },
+    {
+      "name": "SQLite",
+      "purpose": "Runtime/snapshot storage",
+      "bundled": false
+    }
+  ],
+  "optional": [
+    {
+      "name": "Node.js",
+      "tested": "22.16.0",
+      "purpose": "atlas-live-core.mjs tests/browser integration"
+    }
+  ],
+  "runtime_external_dependency_count": 1,
+  "status": "PASS"
+}

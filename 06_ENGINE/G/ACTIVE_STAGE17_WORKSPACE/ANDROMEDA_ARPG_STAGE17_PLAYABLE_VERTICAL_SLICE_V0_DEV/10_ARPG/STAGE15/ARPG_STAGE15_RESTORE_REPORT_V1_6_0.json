@@ -1,0 +1,21 @@
+{
+  "ledger": {
+    "entries": 651,
+    "failures": 0
+  },
+  "manifest": {
+    "entries": 650,
+    "failures": 0
+  },
+  "note": "Candidate restore proof incorporated before final package rebuild.",
+  "post_test_integrity": "PASS",
+  "record_id": "ARPG-STAGE15-RESTORE-REPORT-V1.6.0",
+  "source": "ANDROMEDA_ARPG_SAVE_STAGE15_V1_6_0_CANDIDATE.zip",
+  "status": "PASS",
+  "tests": {
+    "stress": "23/23 PASS",
+    "validation": "24/24 PASS"
+  },
+  "transients": 0,
+  "version": "V1.6.0"
+}

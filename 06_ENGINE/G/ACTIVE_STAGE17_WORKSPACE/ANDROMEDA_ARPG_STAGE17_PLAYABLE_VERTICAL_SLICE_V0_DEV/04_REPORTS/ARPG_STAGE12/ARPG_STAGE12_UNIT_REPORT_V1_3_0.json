@@ -1,0 +1,10 @@
+{
+  "record_id": "ARPG-STAGE12-UNIT-REPORT-V1.3.0",
+  "functional_tests": 20,
+  "functional_passed": 20,
+  "persistence_tests": 1,
+  "persistence_passed": 1,
+  "failed": 0,
+  "status": "PASS",
+  "note": "Persistence isolated after accumulated-suite timeout; isolated run completed in ~26s."
+}

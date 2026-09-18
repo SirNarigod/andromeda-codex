@@ -1,0 +1,614 @@
+[
+ {
+  "id": "EST-001",
+  "name": "Mercado Central de Lúminor",
+  "type": "COMERCIAL",
+  "loc": "LOC-001-001",
+  "sub": "SUB-001-001",
+  "ter": "TER-001",
+  "fn": "Praça coberta de comércio geral, ponto de troca entre casas mercantis e viajantes."
+ },
+ {
+  "id": "EST-002",
+  "name": "Entreposto da Doca",
+  "type": "COMERCIAL",
+  "loc": "LOC-002-002",
+  "sub": "SUB-002-002",
+  "ter": "TER-002",
+  "fn": "Armazém e balcão de negociação de cargas que chegam e saem pelo porto de Kharveth."
+ },
+ {
+  "id": "EST-003",
+  "name": "Forja Real de Kharveth (edifício)",
+  "type": "INDUSTRIAL",
+  "loc": "LOC-002-001",
+  "sub": "SUB-002-001",
+  "ter": "TER-002",
+  "fn": "Instalação fabril onde armas convencionais e componentes de runificação são produzidos sob licença real."
+ },
+ {
+  "id": "EST-004",
+  "name": "Oficina de Charneira (edifício)",
+  "type": "INDUSTRIAL",
+  "loc": "LOC-011-005",
+  "sub": "SUB-011-005",
+  "ter": "TER-011",
+  "fn": "Oficina comunitária de reparo, forjaria leve e formação de aprendizes sob o Colegiado dos Ofícios."
+ },
+ {
+  "id": "EST-005",
+  "name": "Casario de Varga",
+  "type": "RESIDENCIAL",
+  "loc": "CIT-001",
+  "sub": "SUB-011-001",
+  "ter": "TER-011",
+  "fn": "Conjunto de moradias simples do Posto de Varga, abriga residentes fixos e viajantes de passagem."
+ },
+ {
+  "id": "EST-006",
+  "name": "Casario da Vila dos Pescadores",
+  "type": "RESIDENCIAL",
+  "loc": "LOC-004-002",
+  "sub": "SUB-004-002",
+  "ter": "TER-004",
+  "fn": "Moradias de famílias pescadoras, construídas sobre palafitas nas Ilhas de Pesca."
+ },
+ {
+  "id": "EST-007",
+  "name": "Acampamento de Caravana",
+  "type": "ACAMPAMENTO",
+  "loc": "LOC-001-002",
+  "sub": "SUB-001-002",
+  "ter": "TER-001",
+  "fn": "Pouso temporário de tendas e currais para caravanas em trânsito pela Rota das Caravanas."
+ },
+ {
+  "id": "EST-008",
+  "name": "Acampamento dos Trilhos",
+  "type": "ACAMPAMENTO",
+  "loc": "LOC-002-003",
+  "sub": "SUB-002-003",
+  "ter": "TER-002",
+  "fn": "Alojamento móvel de trabalhadores ferroviários e equipes de segurança dos Trilhos do Minério."
+ },
+ {
+  "id": "EST-009",
+  "name": "Guarnição de Contenção",
+  "type": "MILITAR",
+  "loc": "LOC-012-003",
+  "sub": "SUB-012-003",
+  "ter": "TER-012",
+  "fn": "Quartel operacional de onde equipes de contenção são despachadas para o perímetro."
+ },
+ {
+  "id": "EST-010",
+  "name": "Guarda da Fortaleza",
+  "type": "MILITAR",
+  "loc": "LOC-013-001",
+  "sub": "SUB-013-001",
+  "ter": "TER-013",
+  "fn": "Posto de guarda fortificado que controla o acesso ao domínio pessoal de Serverus Vaelkor."
+ },
+ {
+  "id": "EST-011",
+  "name": "Armeria Rúnica da Forja Real",
+  "type": "LOJA",
+  "loc": "LOC-002-001",
+  "sub": "SUB-002-001",
+  "ter": "TER-002",
+  "fn": "Balcão de venda licenciado de armas R1-R3 produzidas na Forja Real — distinto do galpão de produção (EST-003)."
+ },
+ {
+  "id": "EST-012",
+  "name": "Botica do Jardim Central",
+  "type": "LOJA",
+  "loc": "LOC-007-001",
+  "sub": "SUB-007-001",
+  "ter": "TER-007",
+  "fn": "Loja de ervas e remédios preparados a partir do cultivo dos Jardins Medicinais."
+ },
+ {
+  "id": "EST-013",
+  "name": "Câmara Mercantil",
+  "type": "INSTITUCIONAL",
+  "loc": "LOC-001-003",
+  "sub": "SUB-001-003",
+  "ter": "TER-001",
+  "fn": "Sede de deliberação das casas mercantis da confederação."
+ },
+ {
+  "id": "EST-014",
+  "name": "Bilheteria e Armazém da Estação",
+  "type": "COMERCIAL",
+  "loc": "LOC-003-001",
+  "sub": "SUB-003-001",
+  "ter": "TER-003",
+  "fn": "Venda de passagens e armazenamento de carga da Estação Central."
+ },
+ {
+  "id": "EST-015",
+  "name": "Galpão de Manutenção Ferroviária",
+  "type": "INDUSTRIAL",
+  "loc": "LOC-003-002",
+  "sub": "SUB-003-002",
+  "ter": "TER-003",
+  "fn": "Reparo e construção de locomotivas e vagões."
+ },
+ {
+  "id": "EST-016",
+  "name": "Plenário da Assembleia",
+  "type": "INSTITUCIONAL",
+  "loc": "LOC-003-003",
+  "sub": "SUB-003-003",
+  "ter": "TER-003",
+  "fn": "Recinto legislativo onde representantes eleitos deliberam."
+ },
+ {
+  "id": "EST-017",
+  "name": "Armazém do Cais",
+  "type": "COMERCIAL",
+  "loc": "LOC-004-001",
+  "sub": "SUB-004-001",
+  "ter": "TER-004",
+  "fn": "Armazenamento e troca de mercadorias do porto franco."
+ },
+ {
+  "id": "EST-018",
+  "name": "Câmara do Conselho das Ondas",
+  "type": "INSTITUCIONAL",
+  "loc": "LOC-004-003",
+  "sub": "SUB-004-003",
+  "ter": "TER-004",
+  "fn": "Assembleia itinerante de capitãs e capitães que governa a confederação marítima."
+ },
+ {
+  "id": "EST-019",
+  "name": "Oficina de Fusão Tecnomágica",
+  "type": "INDUSTRIAL",
+  "loc": "LOC-005-001",
+  "sub": "SUB-005-001",
+  "ter": "TER-005",
+  "fn": "Produção de itens que combinam runa e tecnologia sob licença."
+ },
+ {
+  "id": "EST-020",
+  "name": "Ala de Pesquisa Central",
+  "type": "INSTITUCIONAL",
+  "loc": "LOC-005-002",
+  "sub": "SUB-005-002",
+  "ter": "TER-005",
+  "fn": "Pesquisa avançada sobre interação entre método mágico e tecnologia."
+ },
+ {
+  "id": "EST-021",
+  "name": "Corte Principesca",
+  "type": "INSTITUCIONAL",
+  "loc": "LOC-005-003",
+  "sub": "SUB-005-003",
+  "ter": "TER-005",
+  "fn": "Sede da corte que regula licenças de pesquisa tecnomágica."
+ },
+ {
+  "id": "EST-022",
+  "name": "Residência Real Suspensa",
+  "type": "RESIDENCIAL",
+  "loc": "LOC-006-001",
+  "sub": "SUB-006-001",
+  "ter": "TER-006",
+  "fn": "Moradia da monarca eletiva nas Plataformas Altas."
+ },
+ {
+  "id": "EST-023",
+  "name": "Terminal de Carga Aérea",
+  "type": "COMERCIAL",
+  "loc": "LOC-006-002",
+  "sub": "SUB-006-002",
+  "ter": "TER-006",
+  "fn": "Recepção e despacho de carga transportada por naves aéreas."
+ },
+ {
+  "id": "EST-024",
+  "name": "Câmara Eletiva (edifício)",
+  "type": "INSTITUCIONAL",
+  "loc": "LOC-006-003",
+  "sub": "SUB-006-003",
+  "ter": "TER-006",
+  "fn": "Recinto onde ocorrem as eleições da monarquia eletiva."
+ },
+ {
+  "id": "EST-025",
+  "name": "Enfermaria Principal",
+  "type": "INSTITUCIONAL",
+  "loc": "LOC-007-002",
+  "sub": "SUB-007-002",
+  "ter": "TER-007",
+  "fn": "Maior instalação de tratamento da confederação medicinal."
+ },
+ {
+  "id": "EST-026",
+  "name": "Sede do Conselho de Saúde",
+  "type": "INSTITUCIONAL",
+  "loc": "LOC-007-003",
+  "sub": "SUB-007-003",
+  "ter": "TER-007",
+  "fn": "Governo da confederação medicinal, define protocolos de tratamento."
+ },
+ {
+  "id": "EST-027",
+  "name": "Moradas das Copas",
+  "type": "RESIDENCIAL",
+  "loc": "LOC-008-001",
+  "sub": "SUB-008-001",
+  "ter": "TER-008",
+  "fn": "Assentamento suspenso típico dos Povos das Copas."
+ },
+ {
+  "id": "EST-028",
+  "name": "Templo Sagrado das Raízes",
+  "type": "INSTITUCIONAL",
+  "loc": "LOC-008-002",
+  "sub": "SUB-008-002",
+  "ter": "TER-008",
+  "fn": "Local de rituais e sepultamentos sagrados na base das árvores gigantes."
+ },
+ {
+  "id": "EST-029",
+  "name": "Círculo de Conselho dos Anciãos",
+  "type": "INSTITUCIONAL",
+  "loc": "LOC-008-003",
+  "sub": "SUB-008-003",
+  "ter": "TER-008",
+  "fn": "Ponto de encontro do conselho descentralizado de anciãos."
+ },
+ {
+  "id": "EST-030",
+  "name": "Moradas de Cristal",
+  "type": "RESIDENCIAL",
+  "loc": "LOC-009-001",
+  "sub": "SUB-009-001",
+  "ter": "TER-009",
+  "fn": "Habitações escavadas na maior câmara habitada da liga subterrânea."
+ },
+ {
+  "id": "EST-031",
+  "name": "Galeria de Extração",
+  "type": "INDUSTRIAL",
+  "loc": "LOC-009-002",
+  "sub": "SUB-009-002",
+  "ter": "TER-009",
+  "fn": "Base de operações de mineração de cristal."
+ },
+ {
+  "id": "EST-032",
+  "name": "Plenário Subcristal",
+  "type": "INSTITUCIONAL",
+  "loc": "LOC-009-003",
+  "sub": "SUB-009-003",
+  "ter": "TER-009",
+  "fn": "Governo da liga de cidades subterrâneas."
+ },
+ {
+  "id": "EST-033",
+  "name": "Câmara do Conselho Enohariano",
+  "type": "INSTITUCIONAL",
+  "loc": "LOC-010-001",
+  "sub": "SUB-010-001",
+  "ter": "TER-010",
+  "fn": "Câmara onde o conselho enohariano se reúne e delibera sobre licenças mágicas."
+ },
+ {
+  "id": "EST-034",
+  "name": "Academia de Formação Mágica",
+  "type": "INSTITUCIONAL",
+  "loc": "LOC-010-002",
+  "sub": "SUB-010-002",
+  "ter": "TER-010",
+  "fn": "Escola de treino dos métodos de MAG-001 (fórmula, runa, vínculo, instinto)."
+ },
+ {
+  "id": "EST-035",
+  "name": "Estação de Captação da Corrente",
+  "type": "INDUSTRIAL",
+  "loc": "LOC-010-003",
+  "sub": "SUB-010-003",
+  "ter": "TER-010",
+  "fn": "Instalação que monitora e regula o afloramento intenso da Corrente Planetária."
+ },
+ {
+  "id": "EST-036",
+  "name": "Entreposto do Entroncamento",
+  "type": "COMERCIAL",
+  "loc": "LOC-011-002",
+  "sub": "SUB-011-002",
+  "ter": "TER-011",
+  "fn": "Ponto de troca de mercadorias no cruzamento de rotas do Corredor Oriental."
+ },
+ {
+  "id": "EST-037",
+  "name": "Curral e Estábulo",
+  "type": "INDUSTRIAL",
+  "loc": "LOC-011-003",
+  "sub": "SUB-011-003",
+  "ter": "TER-011",
+  "fn": "Estrutura de manejo das manadas de gado leiteiro das Pastagens Luminais."
+ },
+ {
+  "id": "EST-038",
+  "name": "Acampamento do Vau",
+  "type": "ACAMPAMENTO",
+  "loc": "LOC-011-004",
+  "sub": "SUB-011-004",
+  "ter": "TER-011",
+  "fn": "Pouso de viajantes que atravessam o Vau de Raizel."
+ },
+ {
+  "id": "EST-039",
+  "name": "Guarnição do Abrigo",
+  "type": "MILITAR",
+  "loc": "LOC-011-006",
+  "sub": "SUB-011-006",
+  "ter": "TER-011",
+  "fn": "Posto defensivo que protege viajantes na perigosa área das Fendas da Névoa."
+ },
+ {
+  "id": "EST-040",
+  "name": "Posto Avançado do Perímetro",
+  "type": "MILITAR",
+  "loc": "LOC-012-001",
+  "sub": "SUB-012-001",
+  "ter": "TER-012",
+  "fn": "Posto avançado da linha de contenção, equipado com ART-012."
+ },
+ {
+  "id": "EST-041",
+  "name": "Tendas de Acolhimento",
+  "type": "ACAMPAMENTO",
+  "loc": "LOC-012-002",
+  "sub": "SUB-012-002",
+  "ter": "TER-012",
+  "fn": "Abrigo temporário para pessoas deslocadas por incidentes."
+ },
+ {
+  "id": "EST-042",
+  "name": "Salão de Audiências de Serverus",
+  "type": "INSTITUCIONAL",
+  "loc": "LOC-013-002",
+  "sub": "SUB-013-002",
+  "ter": "TER-013",
+  "fn": "Câmara onde Serverus Vaelkor recebe contratados e emite mandados."
+ },
+ {
+  "id": "EST-043",
+  "name": "Posto da Passagem Oculta",
+  "type": "MILITAR",
+  "loc": "LOC-013-003",
+  "sub": "SUB-013-003",
+  "ter": "TER-013",
+  "fn": "Guarda discreta que protege a rota secreta de acesso ao domínio."
+ },
+ {
+  "id": "EST-044",
+  "name": "Ateliê de Encantamento da Vertente",
+  "type": "INDUSTRIAL",
+  "loc": "LOC-010-002",
+  "sub": "SUB-010-002",
+  "ter": "TER-010",
+  "fn": "Oficina de produção de armas mágicas, operada por mestres formados na própria Academia da Vertente."
+ },
+ {
+  "id": "EST-045",
+  "name": "Posto de Vigia da Estação Oriental",
+  "type": "MILITAR",
+  "loc": "CIT-002",
+  "sub": "SUB-011-002",
+  "ter": "TER-011",
+  "fn": "Posto de vigilância montado junto ao nó ferroviário após os desaparecimentos investigados na rota — reforço de segurança, não presença milit"
+ },
+ {
+  "id": "EST-046",
+  "name": "Oficina de Carruagens de Lúminor",
+  "type": "INDUSTRIAL",
+  "loc": "LOC-001-002",
+  "sub": "SUB-001-002",
+  "ter": "TER-001",
+  "fn": "Fabricação de carroças, carruagens e balões de ar quente usados nas rotas mercantis da confederação."
+ },
+ {
+  "id": "EST-047",
+  "name": "Estaleiro de Navyr",
+  "type": "INDUSTRIAL",
+  "loc": "LOC-004-001",
+  "sub": "SUB-004-001",
+  "ter": "TER-004",
+  "fn": "Construção e reparo de embarcações de superfície e veículos submersos usados pela confederação marítima."
+ },
+ {
+  "id": "EST-048",
+  "name": "Hangar de Naves de Altavela",
+  "type": "INDUSTRIAL",
+  "loc": "LOC-006-002",
+  "sub": "SUB-006-002",
+  "ter": "TER-006",
+  "fn": "Construção e manutenção de naves aéreas do reino, ao lado do Terminal de Carga Aérea."
+ },
+ {
+  "id": "EST-049",
+  "name": "Fundição da Caldeira",
+  "type": "INDUSTRIAL",
+  "loc": "LOC-014-001",
+  "sub": "SUB-014-001",
+  "ter": "TER-014",
+  "fn": "Extração e fundição de minério vulcânico bruto, sob rígido controle de segurança térmica."
+ },
+ {
+  "id": "EST-050",
+  "name": "Casario da Cratera",
+  "type": "RESIDENCIAL",
+  "loc": "LOC-014-002",
+  "sub": "SUB-014-002",
+  "ter": "TER-014",
+  "fn": "Moradia principal da comunidade abrigada na cratera extinta."
+ },
+ {
+  "id": "EST-051",
+  "name": "Mercado dos Terraços",
+  "type": "COMERCIAL",
+  "loc": "LOC-014-003",
+  "sub": "SUB-014-003",
+  "ter": "TER-014",
+  "fn": "Venda da produção agrícola cultivada nos terraços de cinza vulcânica."
+ },
+ {
+  "id": "EST-052",
+  "name": "Acampamento das Dunas",
+  "type": "ACAMPAMENTO",
+  "loc": "LOC-015-001",
+  "sub": "SUB-015-001",
+  "ter": "TER-015",
+  "fn": "Ponto de pouso e reabastecimento para caravanas que atravessam as Dunas Ocultas."
+ },
+ {
+  "id": "EST-053",
+  "name": "Sitio Arqueologico das Ruinas",
+  "type": "INSTITUCIONAL",
+  "loc": "LOC-015-002",
+  "sub": "SUB-015-002",
+  "ter": "TER-015",
+  "fn": "Escavacao e estudo das ruinas anonimas anteriores ao Pacto de Convergencia."
+ },
+ {
+  "id": "EST-054",
+  "name": "Poco Fundo",
+  "type": "RESIDENCIAL",
+  "loc": "LOC-015-003",
+  "sub": "SUB-015-003",
+  "ter": "TER-015",
+  "fn": "Assentamento comunitario em torno da unica fonte de agua permanente do vale."
+ },
+ {
+  "id": "EST-055",
+  "name": "Posto da Geleira",
+  "type": "INDUSTRIAL",
+  "loc": "LOC-016-001",
+  "sub": "SUB-016-001",
+  "ter": "TER-016",
+  "fn": "Extracao e processamento de gelo puro da Geleira Perene."
+ },
+ {
+  "id": "EST-056",
+  "name": "Abrigo Central",
+  "type": "RESIDENCIAL",
+  "loc": "LOC-016-002",
+  "sub": "SUB-016-002",
+  "ter": "TER-016",
+  "fn": "Assentamento principal escavado sob o gelo, protegido do vento de superficie."
+ },
+ {
+  "id": "EST-057",
+  "name": "Vigia da Fenda",
+  "type": "MILITAR",
+  "loc": "LOC-016-003",
+  "sub": "SUB-016-003",
+  "ter": "TER-016",
+  "fn": "Posto de observacao e resgate na rota perigosa da Fenda Congelada."
+ },
+ {
+  "id": "EST-058",
+  "name": "Doca Eterea",
+  "type": "COMERCIAL",
+  "loc": "LOC-017-001",
+  "sub": "SUB-017-001",
+  "ter": "TER-017",
+  "fn": "Ponto de atracacao e comercio entre ilhas do arquipelago."
+ },
+ {
+  "id": "EST-059",
+  "name": "Posto das Correntes",
+  "type": "INDUSTRIAL",
+  "loc": "LOC-017-002",
+  "sub": "SUB-017-002",
+  "ter": "TER-017",
+  "fn": "Navegacao e colheita controlada de eter bruto nas Correntes de Eter."
+ },
+ {
+  "id": "EST-060",
+  "name": "Refugio Errante",
+  "type": "ACAMPAMENTO",
+  "loc": "LOC-017-003",
+  "sub": "SUB-017-003",
+  "ter": "TER-017",
+  "fn": "Abrigo movel para navegadores que se aventuram entre as Ilhas Errantes."
+ },
+ {
+  "id": "EST-061",
+  "name": "Cupula da Trincheira",
+  "type": "INDUSTRIAL",
+  "loc": "LOC-018-001",
+  "sub": "SUB-018-001",
+  "ter": "TER-018",
+  "fn": "Exploracao e extracao mineral na Trincheira Profunda, sob pressao extrema controlada."
+ },
+ {
+  "id": "EST-062",
+  "name": "Vila dos Recifes",
+  "type": "RESIDENCIAL",
+  "loc": "LOC-018-002",
+  "sub": "SUB-018-002",
+  "ter": "TER-018",
+  "fn": "Assentamento principal junto aos Recifes Luminosos."
+ },
+ {
+  "id": "EST-063",
+  "name": "Estacao de Pressao",
+  "type": "INSTITUCIONAL",
+  "loc": "LOC-018-003",
+  "sub": "SUB-018-003",
+  "ter": "TER-018",
+  "fn": "Manutencao e pesquisa das camaras de pressao que sustentam a habitacao humana no abismo."
+ },
+ {
+  "id": "EST-064",
+  "name": "Posto do Dossel",
+  "type": "COMERCIAL",
+  "loc": "LOC-019-001",
+  "sub": "SUB-019-001",
+  "ter": "TER-019",
+  "fn": "Ponto de comercio e apoio para caravanas que atravessam o Dossel Verde."
+ },
+ {
+  "id": "EST-065",
+  "name": "Sitio das Ruinas Cobertas",
+  "type": "INSTITUCIONAL",
+  "loc": "LOC-019-002",
+  "sub": "SUB-019-002",
+  "ter": "TER-019",
+  "fn": "Escavacao e estudo das ruinas anonimas tomadas pela vegetacao."
+ },
+ {
+  "id": "EST-066",
+  "name": "Vigia do Pantano",
+  "type": "MILITAR",
+  "loc": "LOC-019-003",
+  "sub": "SUB-019-003",
+  "ter": "TER-019",
+  "fn": "Posto de vigilancia contra predadores do Pantano da Serpente."
+ },
+ {
+  "id": "EST-067",
+  "name": "Entreposto do Trovao",
+  "type": "COMERCIAL",
+  "loc": "LOC-013-001",
+  "sub": "SUB-013-001",
+  "ter": "TER-013",
+  "fn": "Entreposto de comercio de rota, criado para servir a espinha dorsal continental (fase 53) onde nenhuma construcao comercial existia."
+ },
+ {
+  "id": "EST-068",
+  "name": "Entreposto de Ithra",
+  "type": "COMERCIAL",
+  "loc": "LOC-005-001",
+  "sub": "SUB-005-001",
+  "ter": "TER-005",
+  "fn": "Entreposto de comercio de rota, criado para servir a espinha dorsal continental (fase 53) onde nenhuma construcao comercial existia."
+ }
+]

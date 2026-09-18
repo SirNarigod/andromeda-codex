@@ -1,0 +1,18 @@
+{
+  "record_id":"R2_REBASE_LOT_011A_VALIDATION_V1_0",
+  "generated_at":"2026-09-07",
+  "status":"PASS",
+  "checks":[
+    {"id":"JSON-001","result":"PASS","detail":"All 17 primary Lot 11A JSON records parse successfully."},
+    {"id":"MAP-001","result":"PASS","detail":"Six Varga POIs are local, derived and anchored to SUB-011-001 and CIT-001."},
+    {"id":"NPC-001","result":"PASS","detail":"Nessa Ril, Dorian Kesh and Vara Teln do not occur in R2 mirrors."},
+    {"id":"QUEST-001","result":"PASS","detail":"The route contract supports Avoid, Contain and Defend-and-Open only."},
+    {"id":"QUEST-002","result":"PASS","detail":"The incident retains incomplete evidence and forbids automatic fauna loot or offline resolution."},
+    {"id":"GATE-001","result":"PASS","detail":"Kenua, named R2 people, Amadon before S01E08, authorial death, sovereignty and Root escalation remain blocked."},
+    {"id":"ROUTING-001","result":"PASS","detail":"Six new routed content records have unique identifiers and single homes."},
+    {"id":"LIVING-001","result":"PASS","detail":"LivingSim and Living Scale consume local route traces only."},
+    {"id":"UE5-001","result":"PASS","detail":"UE5 manifest V6 requires staging and rejects canonical promotion from the slice."},
+    {"id":"SOURCE-001","result":"PASS","detail":"The R2 archive retains SHA-256 257e456a5d0396310ec2355b3dfc0f11f4e0a5264cf6e764591c8760f5070cb0."}
+  ],
+  "errors":[]
+}

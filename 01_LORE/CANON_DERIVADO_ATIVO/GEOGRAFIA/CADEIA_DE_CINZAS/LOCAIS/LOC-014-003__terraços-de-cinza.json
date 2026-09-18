@@ -1,0 +1,27 @@
+{
+  "loc_id": "LOC-014-003",
+  "name": "Terraços de Cinza",
+  "parent_subregion": "SUB-014-003",
+  "function": "Terraços agrícolas em solo vulcânico fértil.",
+  "notable_link": "TER-014 Cadeia de Cinzas (fase 44, território novo)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "record_id": "LOC-014-003",
+  "settlement_tier": "VILA",
+  "history": "A cinza vulcânica que torna boa parte da Cadeia inóspita é, paradoxalmente, o motivo de os Terraços produzirem colheitas mais ricas que qualquer solo comum — os primeiros agricultores descobriram isso após anos de tentativa e erro, terraceando encostas que ninguém mais queria cultivar. A técnica de terraceamento foi refinada ao longo de três gerações da mesma família, que hoje ainda supervisiona informalmente a manutenção dos degraus mais antigos.",
+  "sensory": "Degraus de terra escura sobem a encosta em curvas suaves, cada nível um pouco mais alto que o anterior, plantados com fileiras retas de raízes e tubérculos resistentes ao clima instável. A cinza fina que cai ocasionalmente do céu se mistura ao solo já revolvido sem que ninguém precise limpar — os agricultores aprenderam a ler a cor da terra pra saber quando uma nova camada de cinza enriqueceu o solo o bastante pra plantar de novo. O cheiro é de terra molhada e mineral, mais forte depois de chuva leve.",
+  "figures": [
+    {
+      "role": "Guardiã dos Terraços",
+      "name": "Vessa Degraufundo",
+      "note": "Terceira geração da família que refinou a técnica de terraceamento, supervisiona a manutenção dos degraus mais antigos e decide quando um novo nível pode ser aberto encosta acima. Tem orgulho quase teimoso do próprio conhecimento e resiste a qualquer sugestão de método vindo de fora, mesmo quando comprovadamente eficaz em outros lugares."
+    },
+    {
+      "role": "Agricultor recém-chegado",
+      "name": "Corym Vale-Novo",
+      "note": "Veio de outra região da Cadeia com uma técnica de irrigação diferente que poderia economizar trabalho considerável — mas enfrenta resistência silenciosa de Vessa, que vê a sugestão como insulto indireto ao método da própria família."
+    }
+  ],
+  "hook": "Uma seca incomum ameaça a colheita do ano justamente quando a técnica de irrigação de Corym poderia fazer a diferença — Vessa precisa decidir entre orgulho e necessidade prática antes que os terraços mais altos, os mais dependentes de chuva regular, comecem a falhar de vez.",
+  "detail": "A cada nova camada de cinza que cai, os agricultores locais fazem uma pequena oferenda de semente na base do terraço mais antigo antes de plantar qualquer coisa nova — um costume que começou como agradecimento supersticioso e hoje é seguido até por quem não acredita em nada além da própria observação de que funciona.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION"]
+}

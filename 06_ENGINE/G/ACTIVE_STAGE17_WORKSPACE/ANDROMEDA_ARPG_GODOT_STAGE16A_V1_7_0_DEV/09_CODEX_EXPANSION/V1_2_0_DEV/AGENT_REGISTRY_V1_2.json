@@ -1,0 +1,102 @@
+{
+  "record_id": "ANDROMEDA-AGENT-REGISTRY-V1.2",
+  "status": "ACTIVE_DEV",
+  "shared_source_of_truth": true,
+  "agents": [
+    {
+      "id": "AG-GEO-01",
+      "name": "Cartógrafo Planetário",
+      "scope": [
+        "country",
+        "state",
+        "block",
+        "subregion",
+        "coordinates",
+        "climate"
+      ],
+      "exit_gate": "hierarchy+coordinates+climate PASS"
+    },
+    {
+      "id": "AG-ECO-01",
+      "name": "Ecologia e Raiz",
+      "scope": [
+        "biomes",
+        "flora",
+        "fauna",
+        "insects",
+        "root_deep",
+        "predator_balance"
+      ],
+      "exit_gate": "adaptation+root invariants PASS"
+    },
+    {
+      "id": "AG-RES-01",
+      "name": "Recursos e Indústria",
+      "scope": [
+        "minerals",
+        "resource classes",
+        "mining industry",
+        "depletion"
+      ],
+      "exit_gate": "resource reconciliation PASS"
+    },
+    {
+      "id": "AG-SOC-01",
+      "name": "Sociedade e Proteção",
+      "scope": [
+        "mages",
+        "natives",
+        "robots",
+        "warriors",
+        "mercenaries",
+        "workers",
+        "children"
+      ],
+      "exit_gate": "protection+location+inventory PASS"
+    },
+    {
+      "id": "AG-ECOCOM-01",
+      "name": "Economia e Lojas",
+      "scope": [
+        "shops",
+        "stock",
+        "inventory propagation",
+        "locality"
+      ],
+      "exit_gate": "transaction locality+hierarchy PASS"
+    },
+    {
+      "id": "AG-MAR-01",
+      "name": "MAR e Balanceamento",
+      "scope": [
+        "30 weapons",
+        "normalized gameplay stats",
+        "low-medium-high classes"
+      ],
+      "exit_gate": "MAR balance PASS"
+    },
+    {
+      "id": "AG-SIM-01",
+      "name": "Simulador Integrado",
+      "scope": [
+        "interactions",
+        "persistence",
+        "cross-domain effects",
+        "stress seeds"
+      ],
+      "exit_gate": "simulation+stress PASS"
+    },
+    {
+      "id": "AG-AUD-01",
+      "name": "Auditor de Erros Silenciosos",
+      "scope": [
+        "hashes",
+        "negative inventories",
+        "orphan locations",
+        "missing categories",
+        "incompatible biome content"
+      ],
+      "exit_gate": "zero known failures"
+    }
+  ]
+}

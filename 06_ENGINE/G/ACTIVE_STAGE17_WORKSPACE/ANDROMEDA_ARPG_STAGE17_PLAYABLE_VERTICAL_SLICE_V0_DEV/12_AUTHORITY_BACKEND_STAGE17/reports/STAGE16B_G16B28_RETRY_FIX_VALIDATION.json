@@ -1,0 +1,327 @@
+{
+  "record_id": "ANDROMEDA-STAGE16B-AUTHORITY-BACKEND-VALIDATION-V0.8.0",
+  "captured_at": "2026-08-25T21:37:22-0300",
+  "status": "PASS",
+  "python": "3.14.6",
+  "python_executable": "C:\\Users\\thall\\ANDROMEDA_PRODUCT\\.venv\\Scripts\\python.exe",
+  "master_version": "V2.0.1",
+  "master_promotion_to_v2_1_0": false,
+  "protected_checkpoint_bytes_changed": 0,
+  "backend_suites_registered": 15,
+  "python_tests_total": 432,
+  "failures": [],
+  "steps": [
+    {
+      "step": "master_v2_0_1_integrity",
+      "status": "PASS",
+      "master_path": "C:\\Users\\thall\\ANDROMEDA_PRODUCT\\ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE.zip",
+      "sha256": "6D9AC3CCE7DCF6A65FDCF73859C332A0211C1AF52D149077BEEF554BF7BBD0B2",
+      "expected_sha256": "6D9AC3CCE7DCF6A65FDCF73859C332A0211C1AF52D149077BEEF554BF7BBD0B2",
+      "forbidden_tokens_in_path": [],
+      "read_only": true
+    },
+    {
+      "step": "stage16a_protected_checkpoint",
+      "status": "PASS",
+      "entries": 724,
+      "verified": 724,
+      "missing": [],
+      "mismatch": [],
+      "protected_bytes_changed": 0
+    },
+    {
+      "step": "backend_suite_coverage",
+      "status": "PASS",
+      "suites_on_disk": 15,
+      "suites_registered": 15,
+      "unregistered_suites": [],
+      "registered_but_missing": []
+    },
+    {
+      "step": "test_stage16b_authority_adapter_suite",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 35,
+      "seconds": 58.295,
+      "tail": [
+        "test_72_snapshot_projection_shape_matches_b01 (tests.test_stage16b_authority_adapter.Stage16BAuthorityAdapterTests.test_72_snapshot_projection_shape_matches_b01) ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 35 tests in 57.909s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "test_stage16b_authority_http_suite",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 17,
+      "seconds": 25.26,
+      "tail": [
+        "test_90_server_restart_preserves_authority_state (tests.test_stage16b_authority_http.Stage16BAuthorityHttpTests.test_90_server_restart_preserves_authority_state) ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 17 tests in 24.922s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "test_stage16b_authority_profile_loadout_suite",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 11,
+      "seconds": 32.265,
+      "tail": [
+        "G16B-06 'never interrupts attack': the toggle must not refresh cooldown. ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 11 tests in 31.933s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "test_stage16b_authority_traversal_suite",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 11,
+      "seconds": 26.544,
+      "tail": [
+        "Recovery is a consequence of an authoritative step, never a client request. ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 11 tests in 26.242s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "test_stage16b_authority_ground_loot_suite",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 10,
+      "seconds": 23.25,
+      "tail": [
+        "test_10_collected_drop_leaves_active_snapshot_and_active_drop_remains (tests.test_stage16b_authority_ground_loot.Stage16BAuthorityGroundLootTests.test_10_collected_drop_leaves_active_snapshot_and_active_drop_remains) ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 10 tests in 22.937s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "test_stage16b_authority_gathering_suite",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 11,
+      "seconds": 66.716,
+      "tail": [
+        "test_11_hunting_depletion_survives_real_engine_restart (tests.test_stage16b_authority_gathering.Stage16BGatheringRestartContinuityTests.test_11_hunting_depletion_survives_real_engine_restart) ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 11 tests in 66.332s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "test_stage16b_authority_combat_suite",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 23,
+      "seconds": 308.098,
+      "tail": [
+        "test_01_bind_never_provisions_a_combat_encounter_outside_dev_profile (tests.test_stage16b_authority_combat.Stage16BNonDevelopmentBindGuardTests.test_01_bind_never_provisions_a_combat_encounter_outside_dev_profile) ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 23 tests in 307.753s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "test_stage16b_authority_economy_inventory_quest_suite",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 21,
+      "seconds": 128.753,
+      "tail": [
+        "F: REQUEST_EQUIP_ITEM must not have altered ACTIVATE_WEAPON_SLOT, ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 21 tests in 128.411s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "test_stage16b_authority_save_death_water_suite",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 24,
+      "seconds": 172.676,
+      "tail": [
+        "test_01_stronger_current_costs_more_real_avatar_stamina (tests.test_stage16b_authority_save_death_water.Stage16BWaterCurrentStaminaMutationTests.test_01_stronger_current_costs_more_real_avatar_stamina) ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 24 tests in 172.276s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "test_stage16a_item_definitions_verify_contract_suite",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 9,
+      "seconds": 48.019,
+      "tail": [
+        "test_H_stack_max_below_one_still_fails (tests.test_stage16a_item_definitions_verify_contract.Stage16AItemDefinitionsVerifyContractTests.test_H_stack_max_below_one_still_fails) ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 9 tests in 47.642s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "test_stage16a_checkpoint_governance_suite",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 8,
+      "seconds": 0.724,
+      "tail": [
+        "test_v0_8_1_sha_matches_seal (tests.test_stage16a_checkpoint_governance.Stage16ACheckpointGovernanceTests.test_v0_8_1_sha_matches_seal) ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 8 tests in 0.448s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "test_stage16b_authority_clothes_suite",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 13,
+      "seconds": 167.582,
+      "tail": [
+        "test_06_save_reload_preserves_same_instance (tests.test_stage16b_authority_clothes.Stage16BClothesProvisioningTests.test_06_save_reload_preserves_same_instance) ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 13 tests in 167.041s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "test_stage16b_authority_dev_water_time_suite",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 13,
+      "seconds": 54.08,
+      "tail": [
+        "test_09_replay_same_command_ref_no_second_advance (tests.test_stage16b_authority_dev_water_time.Stage16BDevWaterTimeTransportTests.test_09_replay_same_command_ref_no_second_advance) ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 13 tests in 53.595s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "test_stage16b_authority_dev_npc_bag_recovery_suite",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 12,
+      "seconds": 72.365,
+      "tail": [
+        "test_07_unexpected_param_is_rejected (tests.test_stage16b_authority_dev_npc_bag_recovery.Stage16BDevNpcBagRecoveryTransportTests.test_07_unexpected_param_is_rejected) ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 12 tests in 71.984s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "test_stage16b_authority_bag_recovery_spatial_retry_suite",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 5,
+      "seconds": 31.205,
+      "tail": [
+        "test_05_dropped_bag_close_still_recoverable (tests.test_stage16b_authority_bag_recovery_spatial_retry.Stage16BBagRecoverySpatialRetryTests.test_05_dropped_bag_close_still_recoverable) ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 5 tests in 30.761s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "stage16a_regression",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 209,
+      "seconds": 230.365,
+      "tail": [
+        ".................................................................................................................................................................................................................",
+        "----------------------------------------------------------------------",
+        "Ran 209 tests in 229.796s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "stage16a_vertical_slice_stress",
+      "status": "PASS",
+      "exit_code": 0,
+      "report": {
+        "status": "PASS",
+        "checks": 20,
+        "passed": 20,
+        "failed": 0
+      },
+      "seconds": 38.415,
+      "tail": [
+        "{\"status\": \"PASS\", \"checks\": 20, \"passed\": 20, \"failed\": 0}"
+      ]
+    },
+    {
+      "step": "stage15_validation",
+      "status": "PASS",
+      "exit_code": 0,
+      "report": {
+        "status": "PASS",
+        "checks": 24,
+        "passed": 24,
+        "failed": 0
+      },
+      "seconds": 33.077,
+      "tail": [
+        "{\"status\": \"PASS\", \"checks\": 24, \"passed\": 24, \"failed\": 0}"
+      ]
+    },
+    {
+      "step": "stage15_stress",
+      "status": "PASS",
+      "exit_code": 0,
+      "report": {
+        "status": "PASS",
+        "checks": 23,
+        "passed": 23,
+        "failed": 0,
+        "resume_seconds": 4.639
+      },
+      "seconds": 40.933,
+      "tail": [
+        "{\"status\": \"PASS\", \"checks\": 23, \"passed\": 23, \"failed\": 0, \"resume_seconds\": 4.639}"
+      ]
+    }
+  ],
+  "seconds": 1558.972
+}

@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-011-004",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Vau de Raizel",
+  "parent_subregion": "SUB-011-004",
+  "parent_political_unit": "TER-011",
+  "function": "Passagem rasa dos Baixios de Raizel, usada por viajantes e forrageadores.",
+  "notable_link": "Habitat do Raizel manso (CRI-005)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-011-004",
+  "settlement_tier": "COMPLEXO",
+  "history": "O Vau de Raizel é uma travessia rasa que só existe durante parte do ano. Quem conhece o fundo cobra pouco pelo caminho e muito pela informação sobre quem atravessou antes.",
+  "sensory": "Água escura corre entre raízes; sinos amarrados a galhos avisam quando a corrente muda.",
+  "hook": "Uma passagem seca aparece depois de anos de cheia.",
+  "secondary_hook": "No centro do vau há marcas de rodas antigas apontando contra a corrente.",
+  "detail": "A travessia é paga deixando uma corda melhor do que a encontrada.",
+  "figures": [
+    {
+      "role": "Raizel",
+      "name": "Raizel",
+      "note": "barqueira sem barco que lê o leito"
+    },
+    {
+      "role": "Tomé Fenda",
+      "name": "Tomé Fenda",
+      "note": "batedor que procura sinais de uma caravana perdida"
+    }
+  ]
+}

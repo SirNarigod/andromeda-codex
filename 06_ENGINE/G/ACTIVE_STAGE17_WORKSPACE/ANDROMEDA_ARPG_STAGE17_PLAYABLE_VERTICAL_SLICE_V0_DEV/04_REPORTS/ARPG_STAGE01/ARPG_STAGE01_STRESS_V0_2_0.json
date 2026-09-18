@@ -1,0 +1,15 @@
+{
+  "record_id": "ARPG-STAGE01-STRESS-V0.2.0",
+  "stage": "01/18",
+  "checks": 35,
+  "passed": 35,
+  "failed": 0,
+  "status": "PASS",
+  "metrics": {
+    "profiles": 12,
+    "commands": 120,
+    "frames": 120,
+    "blocked_frames": 0
+  },
+  "failures": []
+}

@@ -1,0 +1,20 @@
+{
+  "record_id": "STAGE09-FUZZ-STRESS-V1.0",
+  "status": "PASS",
+  "failures": [],
+  "stats": {
+    "same_key_callers": 64,
+    "unique_concurrent_ticks": 192,
+    "multiworld_worlds": 8,
+    "multiworld_ticks": 512,
+    "lod_fuzz_ticks": 240,
+    "world_a_completed_runs": 194,
+    "world_a_failed_runs": 0,
+    "total_completed_runs": 946,
+    "total_phase_logs": 10406,
+    "seconds": 15.31
+  },
+  "sqlite_integrity": "ok",
+  "foreign_key_failures": 0,
+  "restart_guard": "PASS"
+}

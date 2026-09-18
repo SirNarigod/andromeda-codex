@@ -1,0 +1,18 @@
+{
+  "record_id": "SUB-010-003",
+  "record_kind": "DERIVED_SUBREGION_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Marcas da Corrente",
+  "parent_political_unit": "TER-010",
+  "provenance": {"approval": "GAMEPLAY_DERIVED_DEV_SOURCE", "r2_anchors": ["TER-010", "MAG-003"], "compatibility": "Camada administrativa e narrativa local; não cria fronteira, cidade, soberania ou nova autoridade."},
+  "function": "Zona onde a Corrente Planetária aflora com mais intensidade — monitorada e regulada pelo Domínio.",
+  "locality_references": ["LOC-010-003 Poço da Corrente"],
+  "permitted_catalog_links": {"npc_roles": [], "professions": [], "encounters": [], "resources": []},
+  "local_conflicts": ["exploração controlada da Corrente versus uso não autorizado por forasteiros", "risco de exaustão da fonte local versus demanda do conselho"],
+  "prohibitions": ["NO_NEW_SOVEREIGNTY", "NO_AUTOMATIC_KENUA_SCENE", "NO_R2_EPISODE_REWRITE", "NO_FIXED_BORDER_COORDINATE"],
+  "story_generators": [
+    "Um forasteiro é flagrado captando Corrente sem licença e o conselho decide entre punição exemplar e cooptação.",
+    "Sinais de exaustão da fonte local ameaçam o abastecimento de magos da região."
+  ]
+}

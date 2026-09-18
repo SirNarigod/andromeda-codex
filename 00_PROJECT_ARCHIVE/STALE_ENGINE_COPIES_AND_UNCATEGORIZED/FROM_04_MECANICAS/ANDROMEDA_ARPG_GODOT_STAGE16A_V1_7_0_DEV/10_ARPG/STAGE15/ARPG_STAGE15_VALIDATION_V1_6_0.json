@@ -1,0 +1,140 @@
+{
+  "status": "PASS",
+  "checks": 24,
+  "passed": 24,
+  "failed": 0,
+  "results": [
+    {
+      "name": "bootstrap_health",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "profile_created",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "recovery_profile_default",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "inventory_not_materialized_initially",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "death_reached",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "death_recovery_pass",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "xp_preserved_on_death",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "empty_inventory_preserved",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "respawn_varga",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "death_replay_idempotent",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "materialized_inventory_preserved",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "snapshot_current_created",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "snapshot_current_valid",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "snapshot_rotation_created",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "previous_generation_valid",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rotation_paths_distinct",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "corruption_detected",
+      "status": "PASS",
+      "detail": {
+        "status": "FAIL",
+        "failures": [
+          "SHA256_MISMATCH",
+          "SQLITE_INTEGRITY_FAIL"
+        ],
+        "slot_ref": "slot1",
+        "generation": "current",
+        "sha256": "df7d0e5a9fc0048cbbdb768acfaf4e251f6cfe1b6a1e89225c27eac6f578295b"
+      }
+    },
+    {
+      "name": "previous_survives_corruption",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rollback_promotes_previous",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "rollback_current_valid",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "linear_resume_health",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "resume_under_60s",
+      "status": "PASS",
+      "detail": 1.085
+    },
+    {
+      "name": "rollback_restored_older_xp",
+      "status": "PASS",
+      "detail": [
+        0,
+        250
+      ]
+    },
+    {
+      "name": "restored_world_integrity",
+      "status": "PASS",
+      "detail": null
+    }
+  ]
+}

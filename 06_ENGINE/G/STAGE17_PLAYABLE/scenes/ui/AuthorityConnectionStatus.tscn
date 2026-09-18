@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/authority_connection_status.gd" id="1_status"]
+
+[sub_resource type="StyleBoxFlat" id="Style_status"]
+bg_color = Color(0.965, 0.957, 0.925, 0.94)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.78, 0.76, 0.7, 0.7)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+shadow_color = Color(0, 0, 0, 0.12)
+shadow_size = 4
+
+[node name="AuthorityConnectionStatus" type="PanelContainer"]
+offset_left = 688.0
+offset_top = 16.0
+offset_right = 944.0
+offset_bottom = 58.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("Style_status")
+script = ExtResource("1_status")
+
+[node name="Margin" type="MarginContainer" parent="."]
+theme_override_constants/margin_left = 14
+theme_override_constants/margin_top = 9
+theme_override_constants/margin_right = 14
+theme_override_constants/margin_bottom = 9
+
+[node name="StatusLabel" type="Label" parent="Margin"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.38, 0.38, 0.36, 1)
+theme_override_font_sizes/font_size = 13
+text = "AUTORIDADE · CONECTANDO"
+horizontal_alignment = 1
+

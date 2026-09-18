@@ -1,0 +1,20 @@
+{
+  "checkpoint_id": "ANDROMEDA-STAGE17-S17-00-A-DEVELOPMENT-CHECKPOINT-V0.1.0-DEV",
+  "created_at": "2026-08-27T19:03:30-03:00",
+  "kind": "LOGICAL_DEVELOPMENT_CHECKPOINT_RECORD",
+  "archive": null,
+  "sealed_baseline": false,
+  "status": "PASS",
+  "milestones": {
+    "S17_00_PROTECTED_BASELINE_FORK": "PASS",
+    "S17_A_PLAYABLE_STARTUP": "PASS"
+  },
+  "stage17_playable_startup_ready": true,
+  "baseline_provenance": "../STAGE16B_BASELINE_PROVENANCE.json",
+  "initial_manifest": "../STAGE17_INITIAL_SOURCE_MANIFEST_V0_1_0_DEV.json",
+  "acceptance_record": "S17_00_A_ACCEPTANCE_RECORD_V0_1_0_DEV.json",
+  "source_stage16b_sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc",
+  "stage16b_read_only": true,
+  "runtime_state_included": false,
+  "next_process": "S17_B1_B2_MOVEMENT_AUTHORITY"
+}

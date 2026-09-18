@@ -1,0 +1,36 @@
+{
+  "est_id": "EST-063",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Estacao de Pressao",
+  "building_type": "INSTITUCIONAL",
+  "parent_locality": "LOC-018-003",
+  "parent_subregion": "SUB-018-003",
+  "parent_political_unit": "TER-018",
+  "function": "Manutencao e pesquisa das camaras de pressao que sustentam a habitacao humana no abismo.",
+  "economic_role": {
+    "is_vendor": false,
+    "sells": [],
+    "produces": [],
+    "regulation_factor": 0.4
+  },
+  "capacity": {
+    "jobs": 5,
+    "residents": 2
+  },
+  "professions_linked": [
+    "JOB-015 Guarda e resposta a risco"
+  ],
+  "notable_link": "TER-018 Fossa Abissal (fase 51)",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "PEDRA_E_ALVENARIA",
+    "flammability": "BAIXA",
+    "recovery_days": 7
+  }
+}

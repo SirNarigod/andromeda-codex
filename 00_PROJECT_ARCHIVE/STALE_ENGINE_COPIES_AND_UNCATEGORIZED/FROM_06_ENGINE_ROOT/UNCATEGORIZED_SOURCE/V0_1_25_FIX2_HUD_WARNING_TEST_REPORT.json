@@ -1,0 +1,17 @@
+{
+  "build": "V0.1.25 DEV FIX2",
+  "parent": "V0.1.25 DEV FIX1",
+  "status": "STATIC_VALIDATED_RUNTIME_PENDING",
+  "issues_fixed": [
+    "unused local variable torch_state",
+    "unused local variable action_state"
+  ],
+  "functional_changes": "NONE",
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1",
+  "static_checks": {
+    "checks": 13,
+    "passed": 13,
+    "failed": 0,
+    "status": "PASS"
+  }
+}

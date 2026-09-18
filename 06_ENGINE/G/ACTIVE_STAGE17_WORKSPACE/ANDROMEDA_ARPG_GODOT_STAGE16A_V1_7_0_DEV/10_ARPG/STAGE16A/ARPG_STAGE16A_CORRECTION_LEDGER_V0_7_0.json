@@ -1,0 +1,31 @@
+{
+  "record_id": "ARPG-STAGE16A-CORRECTION-LEDGER-V0.7.0",
+  "status": "CLOSED",
+  "entries": [
+    {
+      "id": "S16A-V07-C01",
+      "finding": "Two-weapon requirement was presentation-only in prior handoff and Stage05 MAIN_HAND had no two-slot quick-loadout semantics.",
+      "resolution": "Added Stage16A persisted 2-slot loadout; only active slot maps to MAIN_HAND.",
+      "status": "CLOSED"
+    },
+    {
+      "id": "S16A-V07-C02",
+      "finding": "Prior HUD showed stamina during combat even if full/inactive.",
+      "resolution": "Stamina ring now renders only when active or below full; fully hidden at 100% inactive.",
+      "status": "CLOSED"
+    },
+    {
+      "id": "S16A-V07-C03",
+      "finding": "Mouse wheel was previously bound directly to camera zoom, conflicting with weapon switching.",
+      "resolution": "Unmodified wheel switches weapons; held configurable zoom modifier + wheel zooms; menus consume wheel for scroll.",
+      "status": "CLOSED"
+    },
+    {
+      "id": "S16A-V07-C04",
+      "finding": "HUD/inventory visual language was not explicit across all UI surfaces.",
+      "resolution": "Added unified white rounded clean-console UI theme contract with legible gray rounded type direction and soft-orange important text.",
+      "status": "CLOSED"
+    }
+  ],
+  "open": 0
+}

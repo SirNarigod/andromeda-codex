@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-MASTERY-PROGRESSION-SYSTEM-DEV-V1.0",
+  "title": "Sistema C - Trabalho e Maestria (instancia ARPG_GATHERING_WORK_CONTRACT_V1_0_0)",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "r2_guard": "Instancia pela primeira vez mastery.rank_range [1,20] e o pipeline de ordem de trabalho do contrato ARPG_GATHERING_WORK_CONTRACT_V1_0_0 (Stage09), compartilhado por jogador e NPC. Aplicado aos 33 NPCs civis ja existentes (STELLAR_MINOR_NPC_CATALOG_DEV_V1_0.json, campo mastery_rank/mastery_tier) e as 8 zonas agricolas (AGZ-090..008) e 16 profissoes (JOB-001..016) ja catalogadas - nenhuma zona/profissao nova e criada.",
+  "mastery_scale": {
+    "range": "1 a 20, compartilhado entre jogador e NPC",
+    "tiers": [
+      {
+        "tier": "APRENDIZ",
+        "range": "1-5",
+        "note": "Aprendendo o oficio, erros frequentes, supervisao esperada."
+      },
+      {
+        "tier": "OFICIAL",
+        "range": "6-10",
+        "note": "Trabalha sem supervisao direta na maior parte das tarefas."
+      },
+      {
+        "tier": "ESPECIALISTA",
+        "range": "11-15",
+        "note": "Referencia local, treina outros, acesso a tarefas complexas."
+      },
+      {
+        "tier": "MESTRE",
+        "range": "16-20",
+        "note": "Autoridade reconhecida na profissao, raro - poucos NPCs no jogo todo chegam aqui."
+      }
+    ]
+  },
+  "work_order_pipeline": {
+    "stages": [
+      "CREATE_ORDER",
+      "VALIDATE_WORKER_ROLE",
+      "VALIDATE_LOCATION",
+      "EXECUTE",
+      "GRANT_MASTERY",
+      "PERSIST"
+    ],
+    "stage_notes": {
+      "CREATE_ORDER": "Uma tarefa e formalmente aberta (ex. 'extrair Basalto Negro na Fundicao da Caldeira').",
+      "VALIDATE_WORKER_ROLE": "Confirma que o executor (jogador ou NPC) tem o JOB-XXX correto para a tarefa.",
+      "VALIDATE_LOCATION": "Confirma que a execucao ocorre na construcao/subregiao certa (ex. EST-049, nao em qualquer lugar).",
+      "EXECUTE": "A tarefa e realizada - resultado depende do mastery_rank atual do executor.",
+      "GRANT_MASTERY": "Sucesso concede progresso de mastery_rank (ganho maior em tarefas dificeis/novas).",
+      "PERSIST": "O novo estado (recurso produzido + mastery_rank atualizado) e salvo de forma auditavel (STELLAR_CAUSALITY_LAW: toda mudanca tem origem rastreavel)."
+    },
+    "worked_example": {
+      "worker": "CIV-016 Torvin, o Fundidor (JOB-016, mastery_rank 8, OFICIAL)",
+      "order": "Fundir Barra de Basalto Fundido (REG-001) na Fundicao da Caldeira (EST-049)",
+      "trace": [
+        "CREATE_ORDER: pedido de 3 barras aberto pelo Conselho de Fundidores",
+        "VALIDATE_WORKER_ROLE: Torvin tem JOB-016, aprovado",
+        "VALIDATE_LOCATION: execucao confirmada em EST-049 (nao em outro local)",
+        "EXECUTE: 3 barras produzidas com qualidade OFICIAL (nao MESTRE - leva mais tempo, sem defeito grave)",
+        "GRANT_MASTERY: +1 de progresso parcial (nao sobe de rank imediatamente, exige repeticao)",
+        "PERSIST: producao registrada em STELLAR_REGIONAL_SPECIALTY_GOODS_DEV_V1_0.json, mastery_rank de Torvin mantido em 8 ate acumular progresso suficiente"
+      ]
+    }
+  },
+  "fishing_node_note": {
+    "origin_contract": "ARPG_GATHERING_WORK_CONTRACT_V1_0_0#fishing_guard",
+    "rule": "No de pesca exige intersecao fisica com um rio - saida generica ITEM-FISH-CATCH ate haver mapeamento de especie.",
+    "status_pendente": "Fechamento total fase 61: 3 rios mapeados (PAI-066 Rio Raizel/SUB-011-004, PAI-067 Rio Rubro/SUB-007-002 sob PON-002, PAI-068 Rio da Serpente/SUB-019-003) + 3 peixes de rio (CRI-030/031/032, variantes + extracao PESCA via JOB-003). Catalogo de peixes: 6 especies (027..032). O no de pesca opera onde ha PAI RIO/PAI LAGO_BAIA/SUB costeiro mapeado; saida generica ITEM-FISH-CATCH permanece so para aguas nao mapeadas."
+  },
+  "prohibitions": [
+    "NO_MASTERY_WITHOUT_TRACEABLE_WORK_ORDER",
+    "NO_NEW_AGZ_CODE",
+    "NO_NEW_JOB_CODE"
+  ]
+}

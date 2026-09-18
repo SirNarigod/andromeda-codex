@@ -1,0 +1,177 @@
+{
+  "record_id": "ANDROMEDA-STAGE16B-FINAL-AUDIT-EVIDENCE-CONSOLIDATION-V0.8.9",
+  "created_at": "2026-08-27T00:00:00-03:00",
+  "stage": "STAGE16B",
+  "supersedes": "AUTHORITY_G16B_18_26_RETENTION_CLOTHES_CLOSURE_V0_8_8.json",
+  "consolidates": [
+    "AUTHORITY_BACKEND_VALIDATION_G16B27_DEV_WATER_TIME.json",
+    "AUTHORITY_BACKEND_VALIDATION_G16B27_GODOT_CLOSURE.json",
+    "AUTHORITY_BACKEND_VALIDATION_G16B28_DEV_NPC_BAG_RECOVERY.json",
+    "AUTHORITY_BACKEND_VALIDATION_G16B28_GODOT_CLOSURE.json",
+    "STAGE16B_G16B28_RETRY_FIX_VALIDATION.json",
+    "STAGE16B_RELOAD_PENDING_REJECTION_FIX_VALIDATION.json",
+    "STAGE16B_SAVE_RELOAD_CLIENT_SLOT_GUARD_VALIDATION.json",
+    "STAGE16B_G16B17_CLOSURE_VALIDATION.json",
+    "STAGE16B_G16B09B_LIVING_SYSTEMIC_BACKEND_VALIDATION.json",
+    "STAGE16B_G16B09B2_ZONE_HUNT_BACKEND_VALIDATION.json",
+    "STAGE16B_G16B09C_GODOT_CLOSURE_VALIDATION.json",
+    "STAGE16B_G16B19_VERTICAL_SLICE_BACKEND_VALIDATION.json",
+    "STAGE16B_G16B19B_NPC_DIALOGUE_BACKEND_VALIDATION.json",
+    "STAGE16B_G16B19C1_DIALOGUE_PROJECTION_BACKEND_VALIDATION.json",
+    "STAGE16B_G16B19C2_GODOT_DIALOGUE_INTEGRATION_BACKEND_VALIDATION.json"
+  ],
+
+  "functional_matrix": {
+    "pass": 28,
+    "partial_evidence": 0,
+    "total_gates": 28,
+    "pass_rule": "ALL_G16B_01_TO_28_MUST_PASS_ON_REAL_GODOT_WITH_CLEAN_DEBUGGER_AND_PYTHON_REGRESSIONS",
+    "closure_chain": [
+      {"record": "V0_8_5", "pass": 19, "promoted": ["G16B-05"]},
+      {"record": "V0_8_7", "pass": 21, "promoted": ["G16B-24", "G16B-25"]},
+      {"record": "V0_8_8", "pass": 23, "promoted": ["G16B-18", "G16B-26"]},
+      {"record": "post-V0_8_8 (G16B27 closure)", "pass": 24, "promoted": ["G16B-27"]},
+      {"record": "post-V0_8_8 (G16B28 closure + retry fix)", "pass": 25, "promoted": ["G16B-28"]},
+      {"record": "save_reload per-slot + rejection-pending fixes (G16B-17)", "pass": 26, "promoted": ["G16B-17"]},
+      {"record": "G16B-09B/B2/C (Living SYSTEMIC + zone streaming)", "pass": 27, "promoted": ["G16B-09"]},
+      {"record": "G16B-19B/C1/C2 (dialogue backend + projection + Godot integration)", "pass": 28, "promoted": ["G16B-19"]}
+    ],
+    "g16b_19_final_authority": {
+      "gate": "authority_vertical_slice_runtime_gate",
+      "checks": 71,
+      "worlds": 2,
+      "dialogue_gate": {"gate": "authority_npc_dialogue_runtime_gate", "checks": 30},
+      "backend_dialogue_suite": {"suite": "test_stage16b_authority_npc_dialogue", "tests": 36}
+    }
+  },
+
+  "protected_integrity": {
+    "stage16a_v0_8_1": {
+      "sha256": "03bc6b621a5ae8e0bf6542803412611855b32503154221ec7ea1b7aaf28befc4",
+      "status": "ACTIVE_PROTECTED_STAGE16A_BASELINE",
+      "checkpoint": {"entries": 724, "verified": 724, "altered": 0, "missing": 0, "recomputed_directly_this_audit": true}
+    },
+    "stage16a_v0_8_0": {
+      "sha256": "21626a3152cb37e167eee24bff9d3142c5d389a8ca2827594b34211591525a6a",
+      "status": "SEALED_HISTORICAL_PREDECESSOR_INTACT_RESTORABLE"
+    },
+    "master_v2_0_1_sha256": "6D9AC3CCE7DCF6A65FDCF73859C332A0211C1AF52D149077BEEF554BF7BBD0B2",
+    "master_recomputed_directly_this_audit": true,
+    "living_simulation_engine": "SEALED_WITHIN_01_RUNTIME_CHECKPOINT_COVERAGE",
+    "runtime_or_canon_altered_this_audit": false
+  },
+
+  "gate_results": {
+    "dialogue_gate_authority_npc_dialogue_runtime_gate": {"checks": 30, "passed": 30, "failed": 0},
+    "g19_authority_vertical_slice_runtime_gate": [
+      {"world": "clean_1", "checks": 71, "passed": 71, "failed": 0},
+      {"world": "clean_2", "checks": 71, "passed": 71, "failed": 0}
+    ],
+    "g09_authority_living_systemic_runtime_gate": {"checks": 51, "passed": 51, "failed": 0},
+    "g17_authority_save_reload_resync_runtime_gate": {"checks": 103, "passed": 103, "failed": 0},
+    "save_reload_client_slot_guard_gate": {"checks": 32, "passed": 32, "failed": 0},
+    "authority_save_death_runtime_gate": {"checks": 194, "passed": 194, "failed": 0},
+    "authority_npc_bag_ownership_runtime_gate": {"checks": 62, "passed": 62, "failed": 0},
+    "authority_water_ttl_runtime_gate": {
+      "A": {"checks": 19, "passed": 19, "failed": 0},
+      "B": {"checks": 26, "passed": 26, "failed": 0},
+      "C": {"checks": 22, "passed": 22, "failed": 0},
+      "D": {"checks": 30, "passed": 30, "failed": 0},
+      "E": {"checks": 28, "passed": 28, "failed": 0}
+    },
+    "authority_combat_runtime_gate": {"checks": 91, "passed": 91, "failed": 0},
+    "authority_ground_loot_runtime_gate": {"checks": 53, "passed": 53, "failed": 0},
+    "authority_gathering_runtime_gate": {"checks": 77, "passed": 77, "failed": 0},
+    "b01_runtime_gate": {"checks": 54, "passed": 54, "failed": 0},
+    "b03_runtime_gate": {"checks": 357, "passed": 357, "failed": 0},
+    "b04_runtime_gate": {"checks": 156, "passed": 156, "failed": 0},
+    "b11_runtime_gate": {"checks": 343, "passed": 343, "failed": 0, "note": "historical presentation regression, see b11_disposition"},
+    "b08_runtime_gate": {"checks": 475, "passed": 467, "failed": 8, "note": "see b08_disposition -- non-blocking"},
+    "godot_debugger": "0 errors / 0 warnings on every applicable run this audit and its immediately preceding closure round (G16B-19C2)",
+    "regression_source": "full matrix executed fresh in the immediately preceding G16B-19C2 closure round (zero source changes since); B08 and direct hash/checkpoint recomputation executed fresh in this audit round"
+  },
+
+  "backend_results": {
+    "full_authority_validation": {"status": "PASS", "failures": [], "record": "STAGE16B_G16B19C2_GODOT_DIALOGUE_INTEGRATION_BACKEND_VALIDATION.json"},
+    "dialogue_suite": {"tests": 36, "passed": 36, "failed": 0},
+    "living_systemic_suite": {"tests": 26, "passed": 26, "failed": 0},
+    "stage16a_regression": {"tests": 209, "passed": 209, "failed": 0},
+    "verify_contract_suite": {"tests": 9, "passed": 9, "failed": 0},
+    "checkpoint_governance_suite": {"tests": 8, "passed": 8, "failed": 0},
+    "save_death_water_suite": {"tests": 24, "passed": 24, "failed": 0},
+    "dev_water_time_suite": {"tests": 13, "passed": 13, "failed": 0},
+    "dev_npc_bag_recovery_suite": {"tests": 12, "passed": 12, "failed": 0},
+    "bag_recovery_spatial_retry_suite": {"tests": 5, "passed": 5, "failed": 0},
+    "clothes_suite": {"tests": 13, "passed": 13, "failed": 0}
+  },
+
+  "b08_disposition": {
+    "classification": "C_HISTORICAL_PRESENTATION_REGRESSION_SUPERSEDED",
+    "gate_file": "07_GODOT_ARPG_STAGE16B/tests/godot/b08_runtime_gate.gd",
+    "self_declared_scope": {
+      "acceptance_scope_pass": [],
+      "partial_evidence_only": ["G16B-03", "G16B-04", "G16B-05", "G16B-06", "G16B-08", "G16B-09", "G16B-20"],
+      "authoritative_roundtrip_executed": false,
+      "authority": "GODOT_GATHERING_CLIENT_ORCHESTRATION_ONLY"
+    },
+    "reproduced_this_audit": {"checks": 475, "passed": 467, "failed": 8},
+    "failing_checks": [
+      "OUTPUT_TREE_DROP_ANCHOR_USED", "OUTPUT_ROCK_DROP_ANCHOR_USED", "OUTPUT_ORE_DROP_ANCHOR_USED",
+      "OUTPUT_FLORA_DROP_ANCHOR_USED", "OUTPUT_AGRICULTURE_DROP_ANCHOR_USED",
+      "OUTPUT_HUNTING_AUTHORIZED_POSITION_USED", "OUTPUT_FISHING_AUTHORIZED_POSITION_USED",
+      "OUTPUT_ENEMY_AUTHORIZED_POSITION_USED"
+    ],
+    "root_cause": "All 8 failures are the same local-fixture geometric snap assertion (b08_runtime_gate.gd:532) -- distance between a gate-fabricated ground-loot node and its resource's drop_anchor_world_position(), tolerance 0.02m. Presentation-only; zero backend involvement (authoritative_roundtrip_executed=false). Predates this entire audit window; previously reproduced with G16B-09 changes reverted, confirming it is not a regression of any Stage16B authority-backend work.",
+    "superseding_evidence": {
+      "G16B-05": {"record": "AUTHORITY_G16B_05_CLOSURE_V0_8_5.json", "gates": ["authority_combat_runtime_gate (ENEMY)", "authority_gathering_runtime_gate (TREE/ROCK/ORE/FLORA/AGRICULTURE/HUNTING/FISHING)"], "eight_sources_valid_table_present": true},
+      "G16B-04": "authority_ground_loot_runtime_gate (53/53)",
+      "G16B-08": "authority_traversal_runtime_gate (part of G17/G19 live flows)",
+      "G16B-20": "stage16a_regression 209/209 + stress 20/20, this audit"
+    },
+    "blocks_release": false,
+    "corrected_this_round": false,
+    "preserved_as_historical": true
+  },
+
+  "b11_disposition": {
+    "classification": "HISTORICAL_PRESENTATION_REGRESSION",
+    "status_label": "SUPERSEDED_AS_G16B19_AUTHORITY_BY_G19_LIVE_GATE",
+    "checks": {"total": 343, "passed": 343, "failed": 0},
+    "own_internal_label_unchanged": "g16b19_status: PARTIAL_EVIDENCE (fixture harness self-label, vertical_slice_client_harness.gd not edited)",
+    "actual_g16b19_authority": "authority_vertical_slice_runtime_gate, 71/71 x2, real backend round-trips throughout",
+    "note_for_future_audits": "Do not read B11's internal g16b19_status field as current Stage16B state. It reflects only its own historical fixture-based harness, frozen at its last edit."
+  },
+
+  "known_anomalies": {
+    "A_quest_progression_transport_gap": {"status": "KNOWN_LIMITATION", "blocks_release": false},
+    "B_dialogue_metric_proximity_authority_not_available": {"status": "KNOWN_LIMITATION", "blocks_release": false},
+    "C_dialogue_content_placeholder_copy": {"status": "KNOWN_LIMITATION", "blocks_release": false},
+    "D_npc_cit001_no_spatial_binding": {"status": "KNOWN_LIMITATION", "blocks_release": false},
+    "E_cross_zone_promotion_not_required": {"status": "NON_BLOCKING_GAP", "blocks_release": false},
+    "F_non_dev_snapshot_keyerror": {"status": "KNOWN_LIMITATION", "blocks_release": false},
+    "G_ground_loot_reachable_false_autosettle": {"status": "KNOWN_LIMITATION", "reproducible": true, "blocks_release": false},
+    "H_b11_historical_fixture_status": {"status": "HISTORICAL_ARTIFACT", "blocks_release": false},
+    "I_b08": {"status": "HISTORICAL_ARTIFACT", "blocks_release": false},
+    "J_parallel_validation_timing_flakiness": {"status": "OPERATIONAL_RULE_NOT_A_BUG", "blocks_release": false},
+    "K_save_reload_client_bugs": {"status": "RESOLVED_BUG"},
+    "L_bag_recovery_inf_json_bug": {"status": "RESOLVED_BUG"}
+  },
+
+  "command_surface_audit": {
+    "enabled_commands_count": 27,
+    "orphan_handlers": 0,
+    "unhandled_enabled_commands": 0,
+    "dev_gated_commands": 4,
+    "dev_gated_commands_list": ["ADVANCE_DEVELOPMENT_WATER_TIME", "ATTEMPT_DEVELOPMENT_NPC_BAG_RECOVERY", "ADVANCE_DEVELOPMENT_LIVING_SYSTEMIC", "ATTEMPT_DEVELOPMENT_SYSTEMIC_ZONE_HUNT"],
+    "production_command_confirmed_not_dev_gated": "REQUEST_NPC_DIALOGUE"
+  },
+
+  "checkpoint_ready": true,
+  "backup_ready": false,
+  "stage17_status": "NOT_STARTED",
+  "final_stage16b_backup_created": false,
+  "checkpoint_final_created": false,
+
+  "decision": "STAGE16B_FINAL_AUDIT_PASS",
+  "next_stage": "STAGE16B_FINAL_CHECKPOINT_BUILD_AND_RESTORE_TEST"
+}

@@ -1,0 +1,12 @@
+{
+  "record_id": "STAGE13-COVERAGE-V1.0",
+  "module": "01_RUNTIME/atlas_living_bridge.py",
+  "tests": "61 Python unit tests",
+  "covered_lines": 205,
+  "num_statements": 207,
+  "missing_lines": 2,
+  "line_plus_branch_percent": 95.04643962848297,
+  "statement_percent": 99.03381642512078,
+  "branch_percent": 87.93103448275862,
+  "status": "PASS"
+}

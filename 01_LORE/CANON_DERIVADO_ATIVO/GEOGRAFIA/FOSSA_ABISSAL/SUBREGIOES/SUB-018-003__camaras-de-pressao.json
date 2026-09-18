@@ -1,0 +1,37 @@
+{
+  "record_id": "SUB-018-003",
+  "record_kind": "DERIVED_SUBREGION_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Camaras de Pressao",
+  "parent_political_unit": "TER-018",
+  "provenance": {
+    "approval": "AUTHORIAL_DECISION_FASE_51",
+    "r2_anchors": [],
+    "compatibility": "Territorio 100% novo por decisao explicita do autor (fase 51) - distinto de TER-004 Navyr (confederacao maritima de superficie) e TER-009 Liga Subcristal (cavernas subterraneas de cristal); aqui e abismo oceanico de pressao extrema."
+  },
+  "function": "Estruturas seladas que permitem habitacao humana em profundidade, dependentes de manutencao constante.",
+  "locality_references": [
+    "LOC-018-003"
+  ],
+  "permitted_catalog_links": {
+    "npc_roles": [],
+    "professions": [
+      "engenheiro de pressao"
+    ],
+    "encounters": [],
+    "resources": []
+  },
+  "local_conflicts": [
+    "manutencao continua versus escassez de pecas de reposicao"
+  ],
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY_BEYOND_FASE_51_GATE",
+    "NO_AUTOMATIC_KENUA_SCENE",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_FIXED_BORDER_COORDINATE"
+  ],
+  "story_generators": [
+    "Uma crise em Camaras de Pressao testa a resistencia da comunidade a pressao e ao isolamento das profundezas."
+  ]
+}

@@ -1,0 +1,104 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/player_combat_vitals.gd" id="1_vitals"]
+
+[sub_resource type="StyleBoxFlat" id="Style_track"]
+bg_color = Color(0.82, 0.81, 0.78, 0.68)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="Style_hp"]
+bg_color = Color(0.82, 0.38, 0.28, 0.96)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="Style_protection"]
+bg_color = Color(0.91, 0.7, 0.32, 0.96)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxEmpty" id="Style_empty"]
+
+[node name="PlayerCombatVitals" type="PanelContainer"]
+anchors_preset = 0
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 238.0
+offset_bottom = 92.0
+mouse_filter = 2
+script = ExtResource("1_vitals")
+
+[node name="Margin" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 8
+mouse_filter = 2
+
+[node name="Layout" type="VBoxContainer" parent="Margin"]
+layout_mode = 2
+theme_override_constants/separation = 3
+mouse_filter = 2
+
+[node name="StateLabel" type="Label" parent="Margin/Layout"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.54, 0.54, 0.54, 1)
+theme_override_font_sizes/font_size = 11
+text = "ESTADO"
+mouse_filter = 2
+
+[node name="HPRow" type="HBoxContainer" parent="Margin/Layout"]
+layout_mode = 2
+theme_override_constants/separation = 8
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="Margin/Layout/HPRow"]
+custom_minimum_size = Vector2(34, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.42, 0.42, 0.42, 1)
+theme_override_font_sizes/font_size = 12
+text = "HP"
+mouse_filter = 2
+
+[node name="HPBar" type="ProgressBar" parent="Margin/Layout/HPRow"]
+custom_minimum_size = Vector2(136, 8)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+theme_override_styles/background = SubResource("Style_track")
+theme_override_styles/fill = SubResource("Style_hp")
+theme_override_styles/foreground = SubResource("Style_empty")
+value = 100.0
+show_percentage = false
+mouse_filter = 2
+
+[node name="ProtectionRow" type="HBoxContainer" parent="Margin/Layout"]
+layout_mode = 2
+theme_override_constants/separation = 8
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="Margin/Layout/ProtectionRow"]
+custom_minimum_size = Vector2(34, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.54, 0.54, 0.54, 1)
+theme_override_font_sizes/font_size = 10
+text = "PROT"
+mouse_filter = 2
+
+[node name="ProtectionBar" type="ProgressBar" parent="Margin/Layout/ProtectionRow"]
+custom_minimum_size = Vector2(136, 5)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+theme_override_styles/background = SubResource("Style_track")
+theme_override_styles/fill = SubResource("Style_protection")
+theme_override_styles/foreground = SubResource("Style_empty")
+show_percentage = false
+mouse_filter = 2

@@ -1,0 +1,60 @@
+{
+  "art_dependency": "NONE",
+  "backup_authorized": true,
+  "candidate_restore": {
+    "ledger_entries": 651,
+    "ledger_failures": 0,
+    "manifest_entries": 650,
+    "manifest_failures": 0,
+    "post_test_transients": 0,
+    "stress": "23/23 PASS",
+    "validation": "24/24 PASS"
+  },
+  "canon_mutations": 0,
+  "godot_required": false,
+  "master": "V2.0.1 READ_ONLY",
+  "parent": "CHECKPOINT-ARPG-STAGE14-V1.5.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "record_id": "CHECKPOINT-ARPG-STAGE15-V1.6.0",
+  "restore_final": "CANDIDATE_RESTORE_PASS",
+  "result": "STAGE15_SAVE_PERSISTENCE_RECOVERY_VALIDATED",
+  "stage": "15/23",
+  "stage_name": "SAVE / PERSISTENCE / DEATH / RECOVERY",
+  "status": "PASS",
+  "tests": {
+    "master": {
+      "checks": 393,
+      "passed": 393,
+      "status": "PASS"
+    },
+    "stage09": {
+      "status": "PASS",
+      "tests": 20
+    },
+    "stage10": {
+      "status": "PASS",
+      "tests": 19
+    },
+    "stage13": {
+      "status": "PASS",
+      "tests": 22
+    },
+    "stage14": {
+      "status": "PASS",
+      "stress": 30,
+      "unit": 20,
+      "validation": 48
+    },
+    "stress": {
+      "checks": 23,
+      "passed": 23,
+      "status": "PASS"
+    },
+    "validation": {
+      "checks": 24,
+      "passed": 24,
+      "status": "PASS"
+    }
+  },
+  "version": "V1.6.0"
+}

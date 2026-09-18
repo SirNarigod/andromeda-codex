@@ -1,0 +1,41 @@
+{
+  "est_id": "EST-003",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Forja Real de Kharveth (edifício)",
+  "building_type": "INDUSTRIAL",
+  "parent_locality": "LOC-002-001",
+  "parent_subregion": "SUB-002-001",
+  "parent_political_unit": "TER-002",
+  "function": "Instalação fabril onde armas convencionais e componentes de runificação são produzidos sob licença real.",
+  "economic_role": {
+    "is_vendor": false,
+    "sells": [],
+    "produces": [
+      "armas de fogo (ART-006..009)",
+      "componentes de runificação (ART-004)"
+    ],
+    "regulation_factor": 0.9
+  },
+  "capacity": {
+    "jobs": 40,
+    "residents": 0
+  },
+  "professions_linked": [
+    "armeiro",
+    "ferreiro"
+  ],
+  "notable_link": "ART-004 Sistema de armamentos de Stellar; ART-015 Armerias rúnicas; classe Soldados",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION",
+    "NO_INVENTED_RUNE_EFFECT"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "METAL_E_MADEIRA",
+    "flammability": "MEDIA_COM_RISCO_EXPLOSAO",
+    "recovery_days": 10
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "record_id":"LIVING_SIM_CONTENT_PROJECTION_V4",
+  "status":"ACTIVE_ENGINE_NEUTRAL_READ_ONLY",
+  "supersedes":"LIVING_SIM_CONTENT_PROJECTION_V3",
+  "authority":"R2_AND_APPROVED_DERIVATION_READ_ONLY",
+  "routing_registry":"01_LORE/CONTENT_ROUTING_REGISTRY_V4.json",
+  "layers":{"LIVE_ENTITY_STATE":["PER","LID"],"LIVE_ROUTES":["TER","CIT","SUB"],"LIVE_ECONOMY":["BIO","CRI","FLO","TEC","RESOURCE_CATALOG"],"LIVE_POPULATION":["TER","CIT","SUB","PROFESSION_CATALOG"],"LIVE_FACTIONS":["FAC","CUL","TER","SUB"],"LIVE_ENVIRONMENT":["BIO","CIT","SUB","ART","ENCOUNTER_CATALOG"],"LIVE_EVENTS":["HIS","EPI"],"LIVE_ECOLOGY":["BIO","CRI","FLO","COR"],"LIVE_SOCIAL":["PER","LID","FAC","NPC_ROLE_CATALOG"],"LIVE_CAUSAL":["HIS","EPI"],"LIVE_WORKSHOPS":["FAC-009","FAC-010"],"LIVE_TUNING":["UE5_BALANCE_BASELINE"]},
+  "subregion_overlay":{"parent":"TER-011","records":["SUB-011-001","SUB-011-002","SUB-011-003","SUB-011-004","SUB-011-005","SUB-011-006"],"permitted_runtime_fields":["route_pressure","workload","contamination_risk","encounter_context","local_trust","maintenance_backlog"],"blocked_outcomes":["sovereignty","canonical_border","new_city","R2_episode_mutation"]},
+  "tuning_overlay":{"authority":"TECHNICAL_TUNING_NOT_CANON","permitted_runtime_fields":["health","damage","stamina","guard","resistance","cooldown","ttk"],"blocked_outcomes":["canonical_power_level","literal_death_override","root_numeric_profile","loot_canon"]},
+  "prohibitions":["NO_CANON_WRITE","NO_R2_EPISODE_MUTATION","NO_SOVEREIGNTY_MUTATION","NO_AUTHORIAL_DEATH_RESOLUTION","NO_AMADON_PRE_S01E08","NO_IRREVERSIBLE_ROOT_TRANSITION"]
+}

@@ -1,0 +1,41 @@
+{
+  "record_id": "SUB-017-001",
+  "record_kind": "DERIVED_SUBREGION_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Ilha-Ancora",
+  "parent_political_unit": "TER-017",
+  "provenance": {
+    "approval": "AUTHORIAL_DECISION_FASE_50",
+    "r2_anchors": [],
+    "compatibility": "Territorio 100% novo por decisao explicita do autor (fase 50) - distinto de TER-006 Altavela (monarquia de plataformas fixas); aqui sao pequenas ilhas independentes sustentadas por eter, sem coroa."
+  },
+  "function": "Maior ilha suspensa do arquipelago, ponto fixo em torno do qual as demais ilhas orbitam lentamente.",
+  "locality_references": [
+    "LOC-017-001"
+  ],
+  "permitted_catalog_links": {
+    "npc_roles": [],
+    "professions": [
+      "mercador etereo"
+    ],
+    "encounters": [],
+    "resources": [
+      "AGZ-101",
+      "FLO-016",
+      "EST-058"
+    ]
+  },
+  "local_conflicts": [
+    "comercio aberto versus controle de quem pode atracar"
+  ],
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY_BEYOND_FASE_50_GATE",
+    "NO_AUTOMATIC_KENUA_SCENE",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_FIXED_BORDER_COORDINATE"
+  ],
+  "story_generators": [
+    "Uma crise em Ilha-Ancora testa a cooperacao entre ilheus independentes sem autoridade central forte."
+  ]
+}

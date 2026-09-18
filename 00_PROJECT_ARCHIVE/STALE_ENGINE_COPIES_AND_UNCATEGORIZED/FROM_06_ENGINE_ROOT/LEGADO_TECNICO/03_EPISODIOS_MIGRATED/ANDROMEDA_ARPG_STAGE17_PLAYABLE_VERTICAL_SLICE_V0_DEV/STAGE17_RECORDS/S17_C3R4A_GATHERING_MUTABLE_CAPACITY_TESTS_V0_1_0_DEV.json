@@ -1,0 +1,72 @@
+{
+  "record_identity": "S17_C3R4A_GATHERING_MUTABLE_CAPACITY_TESTS_V0_1_0_DEV",
+  "created_at": "2026-08-29T15:20:00Z",
+  "stage": "STAGE17",
+  "process": "ETAPA_31_S17_C3R4A_GATHERING_MUTABLE_CAPACITY_CONTRACT_IMPLEMENTATION",
+  "real_db_touched_during_r4a": false,
+  "real_db_hash_stable_across_full_suite": true,
+  "test_files": [
+    "STAGE17_TOOLS/tests/test_stage17_gathering_capacity_contract.py",
+    "STAGE17_TOOLS/tests/test_migrate_stage17_gathering_mutable_capacity_v1.py"
+  ],
+  "total_tests": 38,
+  "passed": 38,
+  "failed": 0,
+  "tiers": {
+    "pure_classifier": {"count": 12, "file": "test_stage17_gathering_capacity_contract.py", "range": "test_01-test_12"},
+    "install_uninstall_and_patched_behavior": {"count": 4, "file": "test_stage17_gathering_capacity_contract.py", "range": "test_13-test_16"},
+    "contract_source_integrity": {"count": 3, "file": "test_stage17_gathering_capacity_contract.py", "range": "test_17-test_19"},
+    "synthetic_migration_scan_and_transaction": {"count": 10, "file": "test_migrate_stage17_gathering_mutable_capacity_v1.py", "range": "test_20-test_29"},
+    "migration_tool_source_integrity": {"count": 3, "file": "test_migrate_stage17_gathering_mutable_capacity_v1.py", "range": "test_30-test_32"},
+    "real_copy_integration": {"count": 5, "file": "test_migrate_stage17_gathering_mutable_capacity_v1.py", "range": "test_33-test_37"},
+    "regression_checkpoint_visibility_bug": {"count": 1, "file": "test_migrate_stage17_gathering_mutable_capacity_v1.py", "range": "test_38"}
+  },
+  "required_scenario_coverage": {
+    "1_v1_node_detection": "test_20 (MATCH classification of an untouched MINERAL row)",
+    "2_mutable_capacity_diff_detection": "test_02, test_20",
+    "3_allowed_fauna_drift": "test_02, test_15, test_23, test_33, test_34",
+    "4_structural_drift_rejection": "test_03-06, test_11-12, test_16, test_21, test_27",
+    "5_source_ref_drift_rejection": "test_03, test_16",
+    "6_output_drift_rejection": "test_04",
+    "7_block_drift_rejection": "test_05",
+    "8_schema_v2_creation": "S17_C3R4A_GATHERING_MUTABLE_CAPACITY_IMPLEMENTATION (contract naming), test_24 (marker row target_schema)",
+    "9_v2_structural_hash_deterministic": "test_01, test_15 (self._payload reused verbatim, canonical_json+sha256 unchanged)",
+    "10_mutable_capacity_no_structural_hash_recurrence": "test_35 (two full hunt/restart cycles, real engine, real data)",
+    "11_first_migration": "test_23, test_34",
+    "12_second_migration_idempotent": "test_25, test_33/34/35/36 (against already-migrated real DB)",
+    "13_migration_marker": "test_24",
+    "14_transaction_rollback": "test_29 (injected mid-transaction failure)",
+    "15_all_node_scan": "test_20, test_33 (312-node real scan)",
+    "16_unaffected_node_preservation": "test_23 (MINERAL row untouched), test_37",
+    "17_runtime_state_preservation": "migration tool never references arpg_gathering_runtime_state (test_31 static check) + real apply left it untouched (not in migration's table scope)",
+    "18_country_state_preservation": "migration tool never writes country_scale_state (test_31 static check: no engine/country import at all)",
+    "19_first_hunt": "test_35",
+    "20_restart": "test_35",
+    "21_verify_pass": "test_34, test_35",
+    "22_second_hunt": "test_35",
+    "23_second_restart": "test_35",
+    "24_verify_pass_again": "test_35",
+    "25_artificial_structural_drift_still_fail": "test_16, test_36",
+    "26_mineral_not_bypassed": "test_07, test_37",
+    "27_flora_not_bypassed": "test_08 (eligible in principle) + test_10 (non-capacity diff still rejected) + test_37 (0 real FLORA touched)",
+    "28_fishing_not_bypassed": "test_09 (eligible in principle, no real FISHING node ever qualifies)"
+  },
+  "real_copy_tests_detail": {
+    "test_33": {"name": "dry_run_against_real_copy_finds_exactly_one_allowed_drift", "result": "PASS", "note": "re-run after the real DB was migrated correctly reports ALREADY_APPLIED; both are zero-mutation outcomes"},
+    "test_34": {"name": "apply_against_real_copy_then_real_engine_verify_pass", "result": "PASS", "evidence": "resume_world() on a migrated copy no longer raises IntegrityError; gathering.verify() status PASS, nodes 312"},
+    "test_35": {"name": "recurrence_two_hunt_restart_cycles", "result": "PASS", "evidence": "core._consume_source() called twice (legitimate authority mutation path), engine closed+reopened twice via resume_world(), verify() PASS both times, remaining_units decremented exactly as expected, zero IntegrityError, zero repeated offline migration needed"},
+    "test_36": {"name": "artificial_structural_drift_after_migration_still_fails", "result": "PASS", "evidence": "hand-mutating a FAUNA source's tier field in country_scale_state (raw SQL, test-copy only) makes the next resume_world() raise IntegrityError even with the V2 contract installed"},
+    "test_37": {"name": "mineral_and_flora_untouched_by_real_migration", "result": "PASS", "evidence": "affected_node_refs from a real apply contain zero MINERAL entries"}
+  },
+  "regression_test_38": {
+    "bug_found": "post-commit verification (hash_after, post_migration_scan) used mode=ro&immutable=1 immediately after COMMIT without a WAL checkpoint, so it observed stale pre-commit bytes even though the transaction had genuinely committed",
+    "discovered_during": "the real S17-C3R4B --apply run against the production DB",
+    "data_integrity_impact": "NONE -- independently re-verified the actual committed data was correct throughout; only the tool's own immediate self-report was wrong",
+    "fix": "PRAGMA wal_checkpoint(FULL) added immediately after COMMIT, before any post-verification read",
+    "regression_test_added": true,
+    "regression_test_result": "PASS"
+  },
+  "s17_c1b_c1_c2_mutation_surface": "NONE -- neither the contract module nor the migration tool import resource_metric_placement.py or andromeda_authority_adapter.py (static tests 18/31); confirmed empirically test_37",
+  "protected_source_touched": false,
+  "final_r4a_status": "PASS"
+}

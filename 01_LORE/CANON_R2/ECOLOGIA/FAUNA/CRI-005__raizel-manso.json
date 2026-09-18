@@ -1,0 +1,54 @@
+{
+  "record_id": "CRI-005",
+  "record_kind": "R2_CANONICAL_ENTRY_MIRROR",
+  "authority": "CANON_R2_CONFIRMADO",
+  "canonical_home": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-005__raizel-manso.json",
+  "source": {
+    "archive_sha256": "257e456a5d0396310ec2355b3dfc0f11f4e0a5264cf6e764591c8760f5070cb0",
+    "lineage": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json",
+    "document_sha256": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726"
+  },
+  "entry": {
+    "code": "CRI-005",
+    "slug": "raizel-manso",
+    "title": "Raizel manso",
+    "subtitle": "Navegador herbívoro do sub-bosque",
+    "category": "CRI",
+    "secondaryCategories": [],
+    "canon": "Cânone consolidado",
+    "spoiler": 1,
+    "sealed": false,
+    "image": null,
+    "imageStatus": null,
+    "summary": "Animal baixo e robusto que encontra tubérculos sem danificar raízes vitais. Seu leite âmbar é usado em rações de emergência.",
+    "facts": {
+      "Classe": "Animal leiteiro domesticável",
+      "Habitat": "Sub-bosques úmidos",
+      "Alimento": "Leite âmbar de raizel",
+      "Nutrientes dominantes": "Ferro biodisponível, vitamina B9, proteína e sais",
+      "Risco": "Acumula toxinas se criado próximo a zonas corrompidas"
+    },
+    "sections": [
+      {
+        "heading": "Relação com a simbiose",
+        "body": "Dietas com leite de raizel podem ajudar a repor nutrientes consumidos por processos regenerativos, mas não eliminam a fome da flor nem garantem controle."
+      }
+    ],
+    "relations": [
+      {
+        "slug": "espinho-negro",
+        "label": "Possível recurso nutricional"
+      }
+    ],
+    "keywords": [
+      "Raizel",
+      "leite âmbar",
+      "ferro",
+      "simbiose",
+      "nutrição"
+    ],
+    "sources": [
+      "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+    ]
+  }
+}

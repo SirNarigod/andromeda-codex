@@ -1,0 +1,39 @@
+{
+  "est_id": "EST-007",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Acampamento de Caravana",
+  "building_type": "ACAMPAMENTO",
+  "parent_locality": "LOC-001-002",
+  "parent_subregion": "SUB-001-002",
+  "parent_political_unit": "TER-001",
+  "function": "Pouso temporário de tendas e currais para caravanas em trânsito pela Rota das Caravanas.",
+  "economic_role": {
+    "is_vendor": true,
+    "sells": [
+      "reabastecimento básico"
+    ],
+    "produces": [],
+    "regulation_factor": 0.2
+  },
+  "capacity": {
+    "jobs": 4,
+    "residents": 20
+  },
+  "professions_linked": [
+    "guia",
+    "guarda de caravana"
+  ],
+  "notable_link": "Rota das Caravanas (SUB-001-002)",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "TECIDO_MADEIRA_LEVE",
+    "flammability": "ALTISSIMA",
+    "recovery_days": 3
+  }
+}

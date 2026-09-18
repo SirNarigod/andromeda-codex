@@ -1,0 +1,417 @@
+{
+  "record_id": "STELLAR-CONSTRUCTION-AREA-INDEX-DEV-V1.0",
+  "title": "Área Construída (m²) de cada Estabelecimento",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "method": "Valor determinístico (hash do próprio EST-XXX, não aleatório) dentro da faixa real de m² do tipo de construção (ver STELLAR_MEASUREMENT_SCALE_SYSTEM_DEV_V1_0.json#building_area_m2_by_type).",
+  "count": 68,
+  "constructions": [
+    {
+      "est_id": "EST-001",
+      "name": "Mercado Central de Lúminor",
+      "building_type": "COMERCIAL",
+      "area_m2": 282.4
+    },
+    {
+      "est_id": "EST-002",
+      "name": "Entreposto da Doca",
+      "building_type": "COMERCIAL",
+      "area_m2": 195.4
+    },
+    {
+      "est_id": "EST-003",
+      "name": "Forja Real de Kharveth (edifício)",
+      "building_type": "INDUSTRIAL",
+      "area_m2": 1460.0
+    },
+    {
+      "est_id": "EST-004",
+      "name": "Oficina de Charneira (edifício)",
+      "building_type": "INDUSTRIAL",
+      "area_m2": 540.0
+    },
+    {
+      "est_id": "EST-005",
+      "name": "Casario de Varga",
+      "building_type": "RESIDENCIAL",
+      "area_m2": 117.4
+    },
+    {
+      "est_id": "EST-006",
+      "name": "Casario da Vila dos Pescadores",
+      "building_type": "RESIDENCIAL",
+      "area_m2": 73.1
+    },
+    {
+      "est_id": "EST-007",
+      "name": "Acampamento de Caravana",
+      "building_type": "ACAMPAMENTO",
+      "area_m2": 55.9
+    },
+    {
+      "est_id": "EST-008",
+      "name": "Acampamento dos Trilhos",
+      "building_type": "ACAMPAMENTO",
+      "area_m2": 44.2
+    },
+    {
+      "est_id": "EST-009",
+      "name": "Guarnição de Contenção",
+      "building_type": "MILITAR",
+      "area_m2": 237.2
+    },
+    {
+      "est_id": "EST-010",
+      "name": "Guarda da Fortaleza",
+      "building_type": "MILITAR",
+      "area_m2": 311.6
+    },
+    {
+      "est_id": "EST-011",
+      "name": "Armeria Rúnica da Forja Real",
+      "building_type": "LOJA",
+      "area_m2": 79.3
+    },
+    {
+      "est_id": "EST-012",
+      "name": "Botica do Jardim Central",
+      "building_type": "LOJA",
+      "area_m2": 97.9
+    },
+    {
+      "est_id": "EST-013",
+      "name": "Câmara Mercantil",
+      "building_type": "INSTITUCIONAL",
+      "area_m2": 895.8
+    },
+    {
+      "est_id": "EST-014",
+      "name": "Bilheteria e Armazém da Estação",
+      "building_type": "COMERCIAL",
+      "area_m2": 276.0
+    },
+    {
+      "est_id": "EST-015",
+      "name": "Galpão de Manutenção Ferroviária",
+      "building_type": "INDUSTRIAL",
+      "area_m2": 1502.5
+    },
+    {
+      "est_id": "EST-016",
+      "name": "Plenário da Assembleia",
+      "building_type": "INSTITUCIONAL",
+      "area_m2": 590.7
+    },
+    {
+      "est_id": "EST-017",
+      "name": "Armazém do Cais",
+      "building_type": "COMERCIAL",
+      "area_m2": 204.2
+    },
+    {
+      "est_id": "EST-018",
+      "name": "Câmara do Conselho das Ondas",
+      "building_type": "INSTITUCIONAL",
+      "area_m2": 893.1
+    },
+    {
+      "est_id": "EST-019",
+      "name": "Oficina de Fusão Tecnomágica",
+      "building_type": "INDUSTRIAL",
+      "area_m2": 2385.0
+    },
+    {
+      "est_id": "EST-020",
+      "name": "Ala de Pesquisa Central",
+      "building_type": "INSTITUCIONAL",
+      "area_m2": 1074.0
+    },
+    {
+      "est_id": "EST-021",
+      "name": "Corte Principesca",
+      "building_type": "INSTITUCIONAL",
+      "area_m2": 460.2
+    },
+    {
+      "est_id": "EST-022",
+      "name": "Residência Real Suspensa",
+      "building_type": "RESIDENCIAL",
+      "area_m2": 82.0
+    },
+    {
+      "est_id": "EST-023",
+      "name": "Terminal de Carga Aérea",
+      "building_type": "COMERCIAL",
+      "area_m2": 137.8
+    },
+    {
+      "est_id": "EST-024",
+      "name": "Câmara Eletiva (edifício)",
+      "building_type": "INSTITUCIONAL",
+      "area_m2": 1071.3
+    },
+    {
+      "est_id": "EST-025",
+      "name": "Enfermaria Principal",
+      "building_type": "INSTITUCIONAL",
+      "area_m2": 842.7
+    },
+    {
+      "est_id": "EST-026",
+      "name": "Sede do Conselho de Saúde",
+      "building_type": "INSTITUCIONAL",
+      "area_m2": 830.1
+    },
+    {
+      "est_id": "EST-027",
+      "name": "Moradas das Copas",
+      "building_type": "RESIDENCIAL",
+      "area_m2": 113.5
+    },
+    {
+      "est_id": "EST-028",
+      "name": "Templo Sagrado das Raízes",
+      "building_type": "INSTITUCIONAL",
+      "area_m2": 1089.3
+    },
+    {
+      "est_id": "EST-029",
+      "name": "Círculo de Conselho dos Anciãos",
+      "building_type": "INSTITUCIONAL",
+      "area_m2": 569.1
+    },
+    {
+      "est_id": "EST-030",
+      "name": "Moradas de Cristal",
+      "building_type": "RESIDENCIAL",
+      "area_m2": 80.0
+    },
+    {
+      "est_id": "EST-031",
+      "name": "Galeria de Extração",
+      "building_type": "INDUSTRIAL",
+      "area_m2": 1965.0
+    },
+    {
+      "est_id": "EST-032",
+      "name": "Plenário Subcristal",
+      "building_type": "INSTITUCIONAL",
+      "area_m2": 940.8
+    },
+    {
+      "est_id": "EST-033",
+      "name": "Câmara do Conselho Enohariano",
+      "building_type": "INSTITUCIONAL",
+      "area_m2": 604.2
+    },
+    {
+      "est_id": "EST-034",
+      "name": "Academia de Formação Mágica",
+      "building_type": "INSTITUCIONAL",
+      "area_m2": 793.2
+    },
+    {
+      "est_id": "EST-035",
+      "name": "Estação de Captação da Corrente",
+      "building_type": "INDUSTRIAL",
+      "area_m2": 1162.5
+    },
+    {
+      "est_id": "EST-036",
+      "name": "Entreposto do Entroncamento",
+      "building_type": "COMERCIAL",
+      "area_m2": 119.8
+    },
+    {
+      "est_id": "EST-037",
+      "name": "Curral e Estábulo",
+      "building_type": "INDUSTRIAL",
+      "area_m2": 1780.0
+    },
+    {
+      "est_id": "EST-038",
+      "name": "Acampamento do Vau",
+      "building_type": "ACAMPAMENTO",
+      "area_m2": 37.6
+    },
+    {
+      "est_id": "EST-039",
+      "name": "Guarnição do Abrigo",
+      "building_type": "MILITAR",
+      "area_m2": 545.6
+    },
+    {
+      "est_id": "EST-040",
+      "name": "Posto Avançado do Perímetro",
+      "building_type": "MILITAR",
+      "area_m2": 665.0
+    },
+    {
+      "est_id": "EST-041",
+      "name": "Tendas de Acolhimento",
+      "building_type": "ACAMPAMENTO",
+      "area_m2": 61.2
+    },
+    {
+      "est_id": "EST-042",
+      "name": "Salão de Audiências de Serverus",
+      "building_type": "INSTITUCIONAL",
+      "area_m2": 1182.9
+    },
+    {
+      "est_id": "EST-043",
+      "name": "Posto da Passagem Oculta",
+      "building_type": "MILITAR",
+      "area_m2": 614.0
+    },
+    {
+      "est_id": "EST-044",
+      "name": "Ateliê de Encantamento da Vertente",
+      "building_type": "INDUSTRIAL",
+      "area_m2": 1197.5
+    },
+    {
+      "est_id": "EST-045",
+      "name": "Posto de Vigia da Estação Oriental",
+      "building_type": "MILITAR",
+      "area_m2": 393.2
+    },
+    {
+      "est_id": "EST-046",
+      "name": "Oficina de Carruagens de Lúminor",
+      "building_type": "INDUSTRIAL",
+      "area_m2": 680.0
+    },
+    {
+      "est_id": "EST-047",
+      "name": "Estaleiro de Navyr",
+      "building_type": "INDUSTRIAL",
+      "area_m2": 1390.0
+    },
+    {
+      "est_id": "EST-048",
+      "name": "Hangar de Naves de Altavela",
+      "building_type": "INDUSTRIAL",
+      "area_m2": 2735.0
+    },
+    {
+      "est_id": "EST-049",
+      "name": "Fundição da Caldeira",
+      "building_type": "INDUSTRIAL",
+      "area_m2": 1362.5
+    },
+    {
+      "est_id": "EST-050",
+      "name": "Casario da Cratera",
+      "building_type": "RESIDENCIAL",
+      "area_m2": 100.0
+    },
+    {
+      "est_id": "EST-051",
+      "name": "Mercado dos Terraços",
+      "building_type": "COMERCIAL",
+      "area_m2": 265.8
+    },
+    {
+      "est_id": "EST-052",
+      "name": "Acampamento das Dunas",
+      "building_type": "ACAMPAMENTO",
+      "area_m2": 37.1
+    },
+    {
+      "est_id": "EST-053",
+      "name": "Sitio Arqueologico das Ruinas",
+      "building_type": "INSTITUCIONAL",
+      "area_m2": 575.4
+    },
+    {
+      "est_id": "EST-054",
+      "name": "Poco Fundo",
+      "building_type": "RESIDENCIAL",
+      "area_m2": 148.4
+    },
+    {
+      "est_id": "EST-055",
+      "name": "Posto da Geleira",
+      "building_type": "INDUSTRIAL",
+      "area_m2": 615.0
+    },
+    {
+      "est_id": "EST-056",
+      "name": "Abrigo Central",
+      "building_type": "RESIDENCIAL",
+      "area_m2": 110.0
+    },
+    {
+      "est_id": "EST-057",
+      "name": "Vigia da Fenda",
+      "building_type": "MILITAR",
+      "area_m2": 656.0
+    },
+    {
+      "est_id": "EST-058",
+      "name": "Doca Eterea",
+      "building_type": "COMERCIAL",
+      "area_m2": 161.2
+    },
+    {
+      "est_id": "EST-059",
+      "name": "Posto das Correntes",
+      "building_type": "INDUSTRIAL",
+      "area_m2": 1742.5
+    },
+    {
+      "est_id": "EST-060",
+      "name": "Refugio Errante",
+      "building_type": "ACAMPAMENTO",
+      "area_m2": 54.0
+    },
+    {
+      "est_id": "EST-061",
+      "name": "Cupula da Trincheira",
+      "building_type": "INDUSTRIAL",
+      "area_m2": 2530.0
+    },
+    {
+      "est_id": "EST-062",
+      "name": "Vila dos Recifes",
+      "building_type": "RESIDENCIAL",
+      "area_m2": 129.2
+    },
+    {
+      "est_id": "EST-063",
+      "name": "Estacao de Pressao",
+      "building_type": "INSTITUCIONAL",
+      "area_m2": 314.4
+    },
+    {
+      "est_id": "EST-064",
+      "name": "Posto do Dossel",
+      "building_type": "COMERCIAL",
+      "area_m2": 274.8
+    },
+    {
+      "est_id": "EST-065",
+      "name": "Sitio das Ruinas Cobertas",
+      "building_type": "INSTITUCIONAL",
+      "area_m2": 822.0
+    },
+    {
+      "est_id": "EST-066",
+      "name": "Vigia do Pantano",
+      "building_type": "MILITAR",
+      "area_m2": 477.2
+    },
+    {
+      "est_id": "EST-067",
+      "name": "Entreposto do Trovao",
+      "building_type": "COMERCIAL",
+      "area_m2": 178.8
+    },
+    {
+      "est_id": "EST-068",
+      "name": "Entreposto de Ithra",
+      "building_type": "COMERCIAL",
+      "area_m2": 177.6
+    }
+  ]
+}

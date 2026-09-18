@@ -1,0 +1,56 @@
+{
+  "record_id": "ARPG-STAGE08-CANDIDATE-RESTORE-REPORT-V0.9.0",
+  "status": "PASS",
+  "generated_at": "2026-08-18T19:34:05.624845+00:00",
+  "source": "ANDROMEDA_ARPG_WORLD_STAGE08_V0_9_0_CANDIDATE.zip",
+  "source_sha256": "9072c695500ae52133e1b061adb1b848b29feb6f8617edce548039810af82830",
+  "restored_exclusively_from_candidate": true,
+  "pre_execution_integrity": {
+    "manifest": {
+      "entries": 518,
+      "passed": 518,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "ledger": {
+      "entries": 519,
+      "passed": 519,
+      "failed": 0,
+      "status": "PASS"
+    }
+  },
+  "tests": {
+    "unit": {
+      "passed": 20,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "validation": {
+      "passed": 47,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "stress": {
+      "passed": 15,
+      "failed": 0,
+      "status": "PASS"
+    }
+  },
+  "post_execution_integrity": {
+    "manifest": {
+      "entries": 518,
+      "passed": 518,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "ledger": {
+      "entries": 519,
+      "passed": 519,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "transients": 0,
+    "status": "PASS"
+  },
+  "note": "Candidate restore authorizes final checkpoint sealing; final archive is rebuilt after adding this evidence and is independently restored again."
+}

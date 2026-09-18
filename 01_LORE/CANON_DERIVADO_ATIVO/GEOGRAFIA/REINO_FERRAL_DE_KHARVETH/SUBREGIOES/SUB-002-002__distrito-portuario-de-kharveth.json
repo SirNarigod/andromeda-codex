@@ -1,0 +1,18 @@
+{
+  "record_id": "SUB-002-002",
+  "record_kind": "DERIVED_SUBREGION_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Distrito Portuário de Kharveth",
+  "parent_political_unit": "TER-002",
+  "provenance": {"approval": "GAMEPLAY_DERIVED_DEV_SOURCE", "r2_anchors": ["TER-002"], "compatibility": "Camada administrativa e narrativa local; não cria fronteira, cidade, soberania ou nova autoridade."},
+  "function": "Escoamento comercial do reino — trocas com outros territórios de Stellar, alfândega e contratos de frete.",
+  "locality_references": ["LOC-002-002 Doca de Kharveth"],
+  "permitted_catalog_links": {"npc_roles": [], "professions": [], "encounters": [], "resources": []},
+  "local_conflicts": ["taxas alfandegárias altas versus contrabando", "prioridade de frete real versus contratos privados"],
+  "prohibitions": ["NO_NEW_SOVEREIGNTY", "NO_AUTOMATIC_KENUA_SCENE", "NO_R2_EPISODE_REWRITE", "NO_FIXED_BORDER_COORDINATE"],
+  "story_generators": [
+    "Uma carga declarada como ferramentas esconde peças de armamento não licenciado.",
+    "Um contrato de frete urgente exige furar a fila de inspeção alfandegária."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "record_id":"HARNESS-CORRECTION-LEDGER-V1.5.0",
+  "open":0,
+  "corrections":[
+    "invalid 25-second movement fixture replaced by contract-valid steps",
+    "stamina-exhausting fixture shortened",
+    "monolithic stress split into deterministic batches",
+    "determinism CLI variable shadowing fixed",
+    "historical regression split into isolated per-file batches"
+  ],
+  "status":"PASS"
+}

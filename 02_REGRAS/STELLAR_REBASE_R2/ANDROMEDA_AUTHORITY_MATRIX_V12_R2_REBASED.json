@@ -1,0 +1,17 @@
+{
+  "record_id":"ANDROMEDA_AUTHORITY_MATRIX_V12_R2_REBASED",
+  "project":"ANDROMEDA CODEX",
+  "version":"V12",
+  "status":"ACTIVE_AFTER_R2_REBASE_LOT_011A",
+  "supersedes":"ANDROMEDA_AUTHORITY_MATRIX_V11_R2_REBASED",
+  "decision_rule":"R2 decides lore. User-approved compatible laws may expand local gameplay and stories. Technical implementation, player state and unapproved proposals cannot promote canon.",
+  "layers":[
+    {"rank":1,"source":"ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2","authority":"IMMUTABLE_ORIGIN","classification_default":"CANON_R2_CONFIRMADO"},
+    {"rank":2,"source":"USER_APPROVED_R2_COMPATIBLE_DERIVATION","authority":"ACTIVE_WITH_PROVENANCE","classification_default":"CANON_DERIVADO_ATIVO","lot_011A":["Fronteira de Varga local playable overlay","three non-R2 local NPCs","displaced custom player start","Vespa-de-Vidro route contract","read-only UE5 and Living projections"]},
+    {"rank":3,"source":"MASTER_V2_0_1_AND_LIVING_SIM_ENGINE_V1_0_0","authority":"READ_ONLY_TECHNICAL_EXTENSION","classification_default":"EVIDENCIA_TECNICA_NAO_CANONICA_UNLESS_PROMOTED"},
+    {"rank":4,"source":"GODOT_STAGE16_STAGE17_AND_FUTURE_UE5_RUNTIME","authority":"IMPLEMENTATION_ONLY","classification_default":"EVIDENCIA_TECNICA_NAO_CANONICA"},
+    {"rank":5,"source":"LLM_PLAYER_OR_UNAPPROVED_PROPOSAL","authority":"NO_CANON_AUTHORITY","classification_default":"DIVERGENCIA_FORMAL_AGUARDANDO_DECISAO"}
+  ],
+  "lot_011A_boundaries":["The Varga map is a compact local overlay, not a new city or border.","The protagonist and local NPCs have no preexisting R2 authority or identity.","The Vespa incident remains incomplete evidence and a local runtime consequence.","Visual assets require staging and never canonize themselves."],
+  "story_generators":["A shelter that accepts a displaced traveler conditionally makes compassion measurable.","A route can reopen without proving who created the danger.","A defensive hazard becomes a test of trust rather than a source of trophies."]
+}

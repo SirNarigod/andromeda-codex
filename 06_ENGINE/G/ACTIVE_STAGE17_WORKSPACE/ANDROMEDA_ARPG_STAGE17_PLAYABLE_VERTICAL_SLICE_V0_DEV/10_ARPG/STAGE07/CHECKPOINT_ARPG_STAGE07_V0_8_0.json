@@ -1,0 +1,135 @@
+{
+  "record_id": "CHECKPOINT-ARPG-STAGE07-V0.8.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "stage": "07/23",
+  "stage_name": "ACTORS / HOSTILITY / PVE AI",
+  "version": "V0.8.0",
+  "status": "PASS",
+  "result": "ARPG_ACTOR_HOSTILITY_AI_READY",
+  "parent_checkpoint": "CHECKPOINT-ARPG-STAGE06-V0.7.0",
+  "parent_checkpoint_sha256": "7e6b8c980537d267b201a577dfc3de012e40ba766499ed80227c383344a9b600",
+  "master_dependency_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+  "tests": {
+    "functional_unit": {
+      "checks": 16,
+      "passed": 16,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "persistence_unit": {
+      "checks": 1,
+      "passed": 1,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "validation": {
+      "checks": 30,
+      "passed": 30,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "stress": {
+      "checks": 31,
+      "passed": 31,
+      "failed": 0,
+      "status": "PASS",
+      "frames": 3,
+      "ai_ticks": 24,
+      "hostile_actors": 8
+    },
+    "lore_coverage": {
+      "checks": 25,
+      "passed": 25,
+      "failed": 0,
+      "status": "PASS",
+      "master_entities": 1660,
+      "master_relationships": 9429,
+      "entity_unmapped": 0
+    },
+    "stage06": {
+      "unit": 17,
+      "validation": 33,
+      "stress": 33,
+      "status": "PASS"
+    },
+    "stage05": {
+      "unit": 22,
+      "validation": 68,
+      "stress": 62,
+      "status": "PASS"
+    },
+    "stage04": {
+      "unit": 16,
+      "validation": 53,
+      "stress": 24,
+      "status": "PASS"
+    },
+    "stage03": {
+      "unit": 14,
+      "validation": 67,
+      "stress": 17,
+      "status": "PASS"
+    },
+    "stage02": {
+      "unit": 11,
+      "validation": 51,
+      "stress": 15,
+      "status": "PASS"
+    },
+    "stage01": {
+      "unit": 12,
+      "validation": 58,
+      "stress": 35,
+      "status": "PASS"
+    },
+    "stage00": {
+      "validation": 51,
+      "stress_worlds": 20,
+      "determinism_pairs": 10,
+      "status": "PASS"
+    },
+    "country_v15": {
+      "checks": 24,
+      "passed": 24,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "master": {
+      "suites": 29,
+      "checks": 393,
+      "passed": 393,
+      "failed": 0,
+      "status": "PASS"
+    }
+  },
+  "actor_model": {
+    "authority": "ARPG_ACTOR_CORE",
+    "materialization": "LAZY_ACTIVE_SET",
+    "roles": 12,
+    "dispositions": 5,
+    "combat_ranks": 6,
+    "ai_states": 9
+  },
+  "lore_coverage": {
+    "entities": 1660,
+    "relationships": 9429,
+    "unmapped": 0,
+    "roadmap_stage_count": 23
+  },
+  "canon_mutations": 0,
+  "open_corrections": 0,
+  "art_dependency": "NONE",
+  "godot": {
+    "connection": "USER_REPORTED_CONNECTED",
+    "editor_execution": "NOT_REQUIRED_STAGE07_USER_ON_MOBILE"
+  },
+  "next_stage": "08_WORLD_BIOMES",
+  "generated_at": "2026-08-18T18:32:18.747667+00:00",
+  "determinism": {
+    "combat_roll_seed_policy": "WORLD_SEED_EVENT_REF_CHANNEL",
+    "fresh_world_same_seed_verified": true,
+    "independent_runs": 2,
+    "metrics_identical": true,
+    "status": "PASS"
+  }
+}

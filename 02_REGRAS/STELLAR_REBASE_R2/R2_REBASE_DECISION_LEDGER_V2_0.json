@@ -1,0 +1,24 @@
+{
+  "record_id": "R2_REBASE_DECISION_LEDGER_V2_0",
+  "project": "ANDROMEDA CODEX",
+  "version": "V2.0",
+  "status": "LOTS_001_TO_011A_APPLIED",
+  "supersedes": "R2_REBASE_DECISION_LEDGER_V1_9",
+  "authority": {"r2":"IMMUTABLE_NARRATIVE_ORIGIN","user_approval":"REQUIRED_FOR_DIVERGENCE_DISPOSITION"},
+  "invariants": ["NO_PHYSICAL_DELETION_WITHOUT_RECORDED_APPROVAL", "R2_WINS_NARRATIVE_CONFLICTS", "COMPATIBLE_EXPANSIONS_RETAIN_PROVENANCE"],
+  "prior_ledger": "R2_REBASE_DECISION_LEDGER_V1_9.json",
+  "entries": [
+    {
+      "decision_id":"R2-REBASE-LOT-011A",
+      "date":"2026-09-07",
+      "status":"APPLIED",
+      "user_authorization":"Close the Fronteira de Varga playable package: displaced custom protagonist, Vespa-de-Vidro route incident, stylized realism and local-only outcomes.",
+      "approved_actions":["Create a local Varga map overlay, three derived non-R2 NPCs, custom player start, generic starter kit and Contrato de Travessia.","Create Blender and Canva production briefs plus UE5 V6 staging manifest.","Allow LivingSim and Living Scale to read only permitted local route traces.","Preserve R2, all sources and historical versions without deletion."],
+      "new_active_records":["STELLAR_VARGA_VERTICAL_SLICE_BOUNDARY_LAW_V1_0","STELLAR_CONTENT_ROUTING_CONSTITUTION_V1_4","STELLAR_LIVING_CONTENT_INTEGRATION_LAW_V1_4","STELLAR_FOUNDATION_INDEX_V1_11","LIVING_SIM_CONTENT_PROJECTION_V6","LIVING_SCALE_CONTENT_PROJECTION_V6","ANDROMEDA_UE5_CONTENT_MANIFEST_V6"],
+      "historical_records_preserved":["STELLAR_CONTENT_ROUTING_CONSTITUTION_V1_3","STELLAR_LIVING_CONTENT_INTEGRATION_LAW_V1_3","STELLAR_FOUNDATION_INDEX_V1_10","R2_REBASE_DECISION_LEDGER_V1_9","LIVING_SIM_CONTENT_PROJECTION_V5","LIVING_SCALE_CONTENT_PROJECTION_V5","ANDROMEDA_UE5_CONTENT_MANIFEST_V5"],
+      "physical_deletion":false,
+      "reversible_action":"A later authorial decision may supersede this local derived package; R2, prior records and sources remain intact."
+    }
+  ],
+  "next_batches":["05_ENGINE_ARPG_RUNTIME_AFTER_UE5_SETUP","11_OTHER_TERRITORY_SUBREGIONS"]
+}

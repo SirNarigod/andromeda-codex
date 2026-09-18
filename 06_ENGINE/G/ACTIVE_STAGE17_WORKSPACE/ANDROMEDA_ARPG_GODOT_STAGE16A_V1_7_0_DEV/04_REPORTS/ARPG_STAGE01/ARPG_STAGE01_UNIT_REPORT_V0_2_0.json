@@ -1,0 +1,11 @@
+{
+  "record_id": "ARPG-STAGE01-UNIT-REPORT-V0.2.0",
+  "stage": "01/18",
+  "tests": 12,
+  "passed": 12,
+  "failed": 0,
+  "errors": 0,
+  "status": "PASS",
+  "failures": [],
+  "errors_detail": []
+}

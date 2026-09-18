@@ -1,0 +1,40 @@
+{
+  "record_id": "V15-HISTORICAL-REGRESSION-BATCH",
+  "start": 12,
+  "file_count": 4,
+  "tests": 86,
+  "passed_files": 4,
+  "failed_files": 0,
+  "rows": [
+    {
+      "file": "test_domain_integration.py",
+      "tests": 6,
+      "returncode": 0,
+      "seconds": 1.371,
+      "status": "PASS"
+    },
+    {
+      "file": "test_dungeon_room_position_v1_4.py",
+      "tests": 1,
+      "returncode": 0,
+      "seconds": 1.677,
+      "status": "PASS"
+    },
+    {
+      "file": "test_dynamic_spawn_v1_1.py",
+      "tests": 2,
+      "returncode": 0,
+      "seconds": 0.739,
+      "status": "PASS"
+    },
+    {
+      "file": "test_ecology_brain.py",
+      "tests": 77,
+      "returncode": 0,
+      "seconds": 5.954,
+      "status": "PASS"
+    }
+  ],
+  "failures": [],
+  "status": "PASS"
+}

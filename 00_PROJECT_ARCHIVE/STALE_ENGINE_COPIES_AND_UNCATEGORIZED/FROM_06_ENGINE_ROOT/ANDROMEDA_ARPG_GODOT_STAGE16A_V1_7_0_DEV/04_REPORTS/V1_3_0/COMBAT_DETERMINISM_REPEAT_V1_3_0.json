@@ -1,0 +1,28 @@
+{
+  "record_id": "COMBAT-DETERMINISM-REPEAT-V1.3.0",
+  "status": "PASS",
+  "same_seed_range": "3100..3149",
+  "run_1_stats": {
+    "worlds": 50,
+    "purchases": 50,
+    "hunts": 50,
+    "kills": 50,
+    "memories": 155,
+    "scene_weapon_equips": 20,
+    "child_weapon_rejections": 50,
+    "health_pass": 50
+  },
+  "run_2_stats": {
+    "worlds": 50,
+    "purchases": 50,
+    "hunts": 50,
+    "kills": 50,
+    "memories": 155,
+    "scene_weapon_equips": 20,
+    "child_weapon_rejections": 50,
+    "health_pass": 50
+  },
+  "stats_identical": true,
+  "uuid_policy": "Fresh runtime UUIDs are excluded from deterministic combat roll keys.",
+  "failure_count": 0
+}

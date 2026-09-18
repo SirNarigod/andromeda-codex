@@ -1,0 +1,91 @@
+{
+  "record_id": "ARPG-STAGE03-COMPLETION-REPORT-V0.4.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "stage": "03/18",
+  "version": "V0.4.0",
+  "parent_stage02_sha256": "0739b0f7efcd0f6c1fad371e0429ed6251b748a885c12226b733beccbe769466",
+  "implemented": {
+    "combat_authority": "SERVER_AUTHORITATIVE_DETERMINISTIC_CORE",
+    "damage_types": 6,
+    "pvp_enabled": false,
+    "hit_evasion": true,
+    "critical_hits": true,
+    "armor_mitigation": true,
+    "resistances": true,
+    "range_gate": true,
+    "attack_speed_cooldown": true,
+    "stagger_hit_recovery": true,
+    "generic_status_effects": true,
+    "damage_over_time": true,
+    "xp_on_defeat": true,
+    "combat_event_idempotency": true,
+    "combat_event_conflict_detection": true,
+    "player_health_authority": "CHARACTER_CORE_ONLY",
+    "enemy_health_authority": "GAMEPLAY_DERIVED_OVERLAY_NOT_CANON",
+    "protected_identity_permanent_death": "BLOCKED_STAGE03",
+    "npc_combat_activation": "EXPLICIT_COMBAT_INTENT_UNTIL_STAGE08_HOSTILITY",
+    "item_modifiers": "DEFERRED_STAGE05",
+    "skill_modifiers": "DEFERRED_STAGE07",
+    "art_dependency": "NONE_PLACEHOLDER_READY"
+  },
+  "tests": {
+    "stage03_unit": {
+      "checks": 14,
+      "passed": 14,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "stage03_validation": {
+      "checks": 67,
+      "passed": 67,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "stage03_stress": {
+      "checks": 17,
+      "passed": 17,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "stage02_regression": {
+      "checks": 51,
+      "passed": 51,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "stage01_regression": {
+      "checks": 58,
+      "passed": 58,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "stage00_regression": {
+      "checks": 51,
+      "passed": 51,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "v15_critical_regression": {
+      "checks": 24,
+      "passed": 24,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "master_regression": {
+      "suites": 29,
+      "checks": 393,
+      "passed": 393,
+      "failed": 0,
+      "status": "PASS"
+    }
+  },
+  "known_external_limits": {
+    "godot_rendered_execution": "NOT_AVAILABLE_IN_CURRENT_VALIDATION_ENVIRONMENT",
+    "andromeda_editor_bridge": "DEFERRED_UNTIL_RUNTIME_EDITOR_INTEGRATION_IS_NEEDED"
+  },
+  "canon_mutations": 0,
+  "open_blockers": 0,
+  "open_corrections": 0,
+  "art_pipeline": "LOCKED",
+  "status": "PASS"
+}

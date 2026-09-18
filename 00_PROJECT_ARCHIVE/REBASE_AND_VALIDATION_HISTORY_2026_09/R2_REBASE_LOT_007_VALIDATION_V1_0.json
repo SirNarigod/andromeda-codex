@@ -1,0 +1,148 @@
+{
+  "record_id": "R2_REBASE_LOT_007_VALIDATION_V1_0",
+  "generated_at": "2026-09-07T01:10:18.4437132-03:00",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "json:01_LORE/CANON_DERIVADO_ATIVO/SOCIEDADES/FACCOES/FAC-009__colegiado-dos-oficios-de-oficina-da-fronteira.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:01_LORE/CANON_DERIVADO_ATIVO/SOCIEDADES/FACCOES/FAC-010__liga-de-oficinas-licenciadas-da-fronteira.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:01_LORE/CANON_DERIVADO_ATIVO/SOCIEDADES/FACCOES/FAC-009_FAC-010__RELATIONSHIP_CHARTER_V1.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:02_REGRAS/STELLAR_FOUNDATION/STELLAR_SOVEREIGNTY_TERRITORY_LAW_V1_2.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:02_REGRAS/STELLAR_FOUNDATION/STELLAR_INSTITUTION_CULTURE_LAW_V1_1.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:02_REGRAS/STELLAR_FOUNDATION/STELLAR_PROFESSIONAL_FACTIONS_LAW_V1_0.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:02_REGRAS/STELLAR_FOUNDATION/STELLAR_CONTENT_ROUTING_CONSTITUTION_V1_1.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:02_REGRAS/STELLAR_FOUNDATION/STELLAR_LIVING_CONTENT_INTEGRATION_LAW_V1_1.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:02_REGRAS/STELLAR_FOUNDATION/STELLAR_FOUNDATION_INDEX_V1_7.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:02_REGRAS/STELLAR_REBASE_R2/R2_REBASE_DECISION_LEDGER_V1_6.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:02_REGRAS/STELLAR_REBASE_R2/ANDROMEDA_AUTHORITY_MATRIX_V8_R2_REBASED.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:01_LORE/CONTENT_ROUTING_REGISTRY_V2.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:06_ENGINE/ACTIVE_CONTENT_ADAPTERS/LIVING_SIM_CONTENT_PROJECTION_V2.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:06_ENGINE/ACTIVE_CONTENT_ADAPTERS/LIVING_SCALE_CONTENT_PROJECTION_V2.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:07_AUTOMATION/EXPORTS/UE5/ANDROMEDA_UE5_CONTENT_MANIFEST_V2.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "json:04_MECANICAS/FACTIONS_AND_INSTITUTIONS/ARPG_NARRATIVE_CULTURE_COMPATIBILITY_LAYER_V1_0.json",
+      "passed": true,
+      "detail": "parseable"
+    },
+    {
+      "name": "derived_authority",
+      "passed": true,
+      "detail": "Both profiles are active derivation."
+    },
+    {
+      "name": "non_sovereignty",
+      "passed": true,
+      "detail": "Both prohibit territorial control."
+    },
+    {
+      "name": "no_kenua_link",
+      "passed": true,
+      "detail": "Neither profile creates a Kenua link."
+    },
+    {
+      "name": "single_canonical_home",
+      "passed": true,
+      "detail": "Each new faction has exactly one routed canonical home."
+    },
+    {
+      "name": "r2_immutability",
+      "passed": true,
+      "detail": "R2 faction mirrors remain FAC-001 through FAC-005; FAC-009/FAC-010 stay outside R2."
+    },
+    {
+      "name": "living_read_only",
+      "passed": true,
+      "detail": "Both projections are read-only."
+    },
+    {
+      "name": "living_no_sovereignty",
+      "passed": true,
+      "detail": "Adapters model local presence only."
+    },
+    {
+      "name": "ue5_catalog_fields",
+      "passed": true,
+      "detail": "UE5 records include authority, scope and permissions."
+    },
+    {
+      "name": "index_cross_references",
+      "passed": true,
+      "detail": "All active index paths resolve."
+    },
+    {
+      "name": "source_hash:ANDROMEDA_CODEX_EVIDENCE/SOURCE_ARCHIVES/Projeto Andromeda.zip",
+      "passed": true,
+      "detail": "257e456a5d0396310ec2355b3dfc0f11f4e0a5264cf6e764591c8760f5070cb0"
+    },
+    {
+      "name": "source_hash:ANDROMEDA_CODEX_EVIDENCE/SOURCE_ARCHIVES/ARPG CODEX.zip",
+      "passed": true,
+      "detail": "16d602f767ee178b5ca25dec9ad801065d95f09d074358632bf5ed5f0f25e9c8"
+    },
+    {
+      "name": "source_hash:ANDROMEDA_CODEX_EVIDENCE/SOURCE_ARCHIVES/andromeda-argp.zip",
+      "passed": true,
+      "detail": "998a1940856943aa68043f749c1e615900681b3cde8346c568d25dd6c79f9ce1"
+    }
+  ],
+  "errors": []
+}

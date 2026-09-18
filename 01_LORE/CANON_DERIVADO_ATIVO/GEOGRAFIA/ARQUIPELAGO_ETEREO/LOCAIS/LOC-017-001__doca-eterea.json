@@ -1,0 +1,28 @@
+{
+  "loc_id": "LOC-017-001",
+  "record_id": "LOC-017-001",
+  "name": "Doca Etérea",
+  "parent_subregion": "SUB-017-001",
+  "function": "Ponto de atracação e comércio da Ilha-Âncora.",
+  "notable_link": "TER-017 Arquipélago Etéreo (fase 50, território novo)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "settlement_tier": "COMPLEXO",
+  "history": "A Ilha-Âncora recebeu o nome porque é a única rocha do arquipélago pesada o bastante pra não derivar com as correntes de éter — todas as outras ilhas do território se movem, ano após ano, e só voltam a passar perto umas das outras em ciclos que ninguém consegue prever com exatidão. A doca foi construída em torno dessa imobilidade: se todo o resto se move, e a Âncora não, então a Âncora é onde tudo eventualmente precisa atracar pra se reabastecer, trocar rota ou simplesmente esperar a maré etérea virar a favor de novo.",
+  "sensory": "Correntes de vapor prateado sobem das fendas na rocha e se dissipam antes de chegar à altura das docas — éter bruto, dizem os locais, escapando de bolsões presos fundo demais pra extrair. As naves atracadas balançam levemente mesmo sem vento, presas por cabos de fibra tensionada que cantam um zumbido baixo quando o fluxo de éter muda de direção. Mercadores gritam preço em pelo menos quatro sotaques diferentes ao mesmo tempo, cada um vindo de uma ilha que só passa por ali uma vez a cada tantos meses — e cada um tentando fechar negócio antes que a própria ilha de origem se afaste de novo.",
+  "figures": [
+    {
+      "role": "Mestra de Amarração",
+      "name": "Yeva Corrente-Funda",
+      "note": "Decide em que ordem as naves atracam, o que na prática significa decidir quem consegue vender primeiro e a que preço. Não aceita suborno em Cred — só em informação sobre pra onde uma ilha específica vai derivar em seguida, dado que ninguém mais no arquipélago consegue prever isso com tanta precisão quanto ela."
+    },
+    {
+      "role": "Navegador itinerante",
+      "name": "Oss Vantalen",
+      "note": "Passa mais tempo atracado ali do que em qualquer ilha que chame de lar — na verdade não tem uma. Vende mapas de corrente etérea que atualiza a cada visita, mas há rumores de que guarda a versão mais precisa só pra si, vendendo cópias deliberadamente imperfeitas."
+    }
+  ],
+  "hook": "Uma ilha que nunca foi catalogada apareceu no horizonte pela primeira vez em memória viva, seguindo uma corrente que Yeva jura nunca ter visto antes — ela não sabe se avisa a Câmara territorial ou tenta chegar lá primeiro, sozinha, antes que vire disputa de vários mercadores ao mesmo tempo.",
+  "secondary_hook": "Oss Vantalen vendeu, sem saber, um mapa desatualizado pra um capitão que confiou nele demais — a nave está atrasada há dias e ninguém sabe se derivou pro lugar errado ou se está simplesmente presa numa bolsa de calmaria etérea que o mapa não mostrava.",
+  "detail": "Ninguém na Doca Etérea paga passagem em Cred fixo — o preço de atracar varia hora a hora, seguindo a intensidade da corrente que passa embaixo da doca naquele momento, e só a própria Yeva sabe calcular a tabela de cabeça.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION"]
+}

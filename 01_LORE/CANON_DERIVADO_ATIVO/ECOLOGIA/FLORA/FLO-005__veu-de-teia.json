@@ -1,0 +1,9 @@
+{
+  "record_id": "FLO-005", "record_kind": "DERIVED_CANONICAL_PROFILE", "authority": "CANON_DERIVADO_ATIVO",
+  "title": "Véu-de-Teia", "subtitle": "Planta de fibras finas entrelaçadas",
+  "summary": "Arbusto de fibras vegetais limpas e resistentes, cultivado para criação controlada de larvas comestíveis.",
+  "facts": {"Habitat": "Terras Livres, áreas cultivadas", "Uso": "Substrato de criação de larvas, fibra têxtil básica"},
+  "relations": [{"code": "CRI-009", "label": "Substrato de criação da Larva-de-Véu"}],
+  "r2_compatibility": "Espécie nova, sem precedente no cânone R2; não altera nenhum registro existente.",
+  "safety": "FICTIONAL_LOCATION_ONLY"
+}

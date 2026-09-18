@@ -1,0 +1,151 @@
+{
+  "record_id": "V15-STATIC-AUDIT",
+  "version": "V1.5.0-DEV",
+  "checks": 28,
+  "passed": 28,
+  "failed": 0,
+  "status": "PASS",
+  "failures": [],
+  "checks_detail": [
+    {
+      "name": "MASTER_V2_1_HASH",
+      "status": "PASS",
+      "detail": "9677b10890c24dfc04916178a2b9fd40a9ea131f2a13c1ec8255186ab203a98b"
+    },
+    {
+      "name": "NO_INHERITED_RUNTIME_MISSING",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "RUNTIME_MODIFICATION_ALLOWLIST",
+      "status": "PASS",
+      "detail": "dungeon_graph_v2.py,streaming_system.py"
+    },
+    {
+      "name": "NEW_RUNTIME_MODULES_EXACT",
+      "status": "PASS",
+      "detail": "collision_interaction.py,continuous_movement.py,environment_simulation.py,godot_adapter_v15.py,integrated_engine_v15.py,navigation_pathfinding.py,player_discovery.py"
+    },
+    {
+      "name": "RUNTIME_SYNTAX",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "GODOT_CLIENT_SCRIPT_PRESENT",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "GODOT_COMMAND_MOVE_VECTOR",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "GODOT_COMMAND_INTERACT",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "GODOT_COMMAND_DISCOVER",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "GODOT_COMMAND_PATH_PLAN",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "GODOT_COMMAND_DUNGEON_MOVE",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "GODOT_CLIENT_NO_PLAYER_REF_FIELD",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "GODOT_RUNTIME_GATE_SCRIPT_PRESENT",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "GODOT_PROJECT_PRESENT",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "GODOT_RUNTIME_GATE_MARKER",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "ONE_COUNTRY_ONLY",
+      "status": "PASS",
+      "detail": "1"
+    },
+    {
+      "name": "FUTURE_COUNTRIES_LOCKED",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "NO_TRANSIENT_ARTIFACTS",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "HEALTH_V15",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "name": "COUNTRY_SINGLE_REF",
+      "status": "PASS",
+      "detail": "{'id': 'CTR-PILOT-001', 'source_territory_id': 'TER-011', 'kenua_story_binding': 'NOT_ASSIGNED_BY_MASTER'}"
+    },
+    {
+      "name": "SESSION_BIND",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "CLIENT_SNAPSHOT",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "MOTION_VERIFY",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "NAV_VERIFY",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "ENV_VERIFY",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "DISCOVERY_VERIFY",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "SESSION_VERIFY",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "UNDISCOVERED_DUNGEON_REDACTED",
+      "status": "PASS",
+      "detail": ""
+    }
+  ]
+}

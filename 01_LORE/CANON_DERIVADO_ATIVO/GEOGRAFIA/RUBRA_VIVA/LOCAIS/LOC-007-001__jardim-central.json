@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-007-001",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Jardim Central",
+  "parent_subregion": "SUB-007-001",
+  "parent_political_unit": "TER-007",
+  "function": "Maior área de cultivo de plantas medicinais da confederação.",
+  "notable_link": "Jardins Medicinais (SUB-007-001)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-007-001",
+  "settlement_tier": "COMPLEXO",
+  "history": "O Jardim Central foi criado sobre uma nascente medicinal e se tornou o coração de Rubra-Viva. Famílias guardam sementes como herança, enquanto boticários disputam a água subterrânea.",
+  "sensory": "Folhas úmidas rangem sob os pés; o ar alterna entre perfume doce e o cheiro metálico da lama.",
+  "hook": "Uma flor que só deveria abrir durante eclipses floresce em plena manhã.",
+  "secondary_hook": "Lia teme que a água tenha sido alterada por um agente externo.",
+  "detail": "Sementes são trocadas em pares: uma para plantar e outra para devolver ao jardim.",
+  "figures": [
+    {
+      "role": "Lia Verde-Mansa",
+      "name": "Lia Verde-Mansa",
+      "note": "jardineira que protege sementes nativas"
+    },
+    {
+      "role": "Coro Pálido",
+      "name": "Coro Pálido",
+      "note": "comerciante que patenteia extratos"
+    }
+  ]
+}

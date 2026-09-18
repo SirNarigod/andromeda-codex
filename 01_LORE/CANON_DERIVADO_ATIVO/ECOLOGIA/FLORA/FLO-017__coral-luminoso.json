@@ -1,0 +1,20 @@
+{
+  "record_id": "FLO-017",
+  "record_kind": "DERIVED_CANONICAL_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "title": "Coral Luminoso",
+  "subtitle": "Coral bioluminescente dos Recifes Luminosos",
+  "summary": "Coral que emite luz propria constante, sustentando toda a cadeia de vida visivel nos Recifes Luminosos da Fossa Abissal.",
+  "facts": {
+    "Habitat": "Recifes Luminosos (SUB-018-002), Fossa Abissal",
+    "Uso": "Fonte de luz natural, indicador de saude do recife"
+  },
+  "relations": [
+    {
+      "code": "SUB-018-002",
+      "label": "Habitat - Recifes Luminosos"
+    }
+  ],
+  "r2_compatibility": "Especie nova, sem precedente R2; ancorada em TER-018 (territorio derivado, fase 51).",
+  "safety": "FICTIONAL_LOCATION_ONLY"
+}

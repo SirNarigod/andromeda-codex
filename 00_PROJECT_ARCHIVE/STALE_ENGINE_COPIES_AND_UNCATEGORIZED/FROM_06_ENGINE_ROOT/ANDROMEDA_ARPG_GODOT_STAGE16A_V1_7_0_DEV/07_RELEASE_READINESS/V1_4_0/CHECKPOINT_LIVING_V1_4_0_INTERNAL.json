@@ -1,0 +1,12 @@
+{
+  "record_id": "CHECKPOINT-LIVING-V1.4.0-INTERNAL",
+  "version": "V1.4.0",
+  "stage": "PRE_PACKAGE",
+  "status": "PASS",
+  "bugs_closed": 16,
+  "open_bugs": 0,
+  "open_blockers": 0,
+  "backup_authorized": true,
+  "release_authorized": true,
+  "restore_pending": true
+}

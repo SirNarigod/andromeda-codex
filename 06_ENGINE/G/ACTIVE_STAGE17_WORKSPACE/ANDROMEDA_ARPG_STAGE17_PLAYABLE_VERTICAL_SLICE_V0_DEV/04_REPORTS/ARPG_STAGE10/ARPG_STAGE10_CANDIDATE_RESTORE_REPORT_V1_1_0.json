@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-08-18T21:32:34.321206+00:00",
+  "output_policy": "VALIDATION_AND_STRESS_REPORTS_REDIRECTED_OUTSIDE_RESTORE_TREE",
+  "post_test_integrity": {
+    "ledger": "562/562 PASS",
+    "manifest": "561/561 PASS",
+    "transients": 0
+  },
+  "pre_test_integrity": {
+    "ledger": "562/562 PASS",
+    "manifest": "561/561 PASS"
+  },
+  "record_id": "ARPG-STAGE10-CANDIDATE-RESTORE-REPORT-V1.1.0",
+  "source": "ANDROMEDA_ARPG_MOBILITY_STAGE10_V1_1_0_CANDIDATE.zip",
+  "source_sha256": "a8756d7d9947b0f24ce9ad43f649f4c541de7d4210873ec9ec80d11ec1aecbbb",
+  "stage": "10/23",
+  "status": "PASS",
+  "tests": {
+    "functional": "18/18 PASS",
+    "persistence": "1/1 PASS",
+    "stress": "31/31 PASS",
+    "validation": "29/29 PASS"
+  },
+  "version": "V1.1.0"
+}

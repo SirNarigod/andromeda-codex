@@ -1,0 +1,11 @@
+{
+  "record_id": "SUB-005-001", "record_kind": "DERIVED_SUBREGION_PROFILE", "authority": "CANON_DERIVADO_ATIVO", "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Distrito Tecnomágico", "parent_political_unit": "TER-005",
+  "provenance": {"approval": "GAMEPLAY_DERIVED_DEV_SOURCE", "r2_anchors": ["TER-005", "MAG-002", "ART-004"], "compatibility": "Camada administrativa e narrativa local; não cria fronteira, cidade, soberania ou nova autoridade."},
+  "function": "Distrito onde artesãos combinam runa e tecnologia sob supervisão do principado.",
+  "locality_references": ["LOC-005-001 Oficina de Convergência"],
+  "permitted_catalog_links": {"npc_roles": ["classe:Androids", "classe:Magos"], "professions": ["armeiro"], "encounters": [], "resources": []},
+  "local_conflicts": ["pureza de método (só runa ou só tecnologia) versus fusão híbrida", "regulação de segurança versus experimentação livre"],
+  "prohibitions": ["NO_NEW_SOVEREIGNTY", "NO_AUTOMATIC_KENUA_SCENE", "NO_R2_EPISODE_REWRITE", "NO_FIXED_BORDER_COORDINATE", "NO_INVENTED_RUNE_EFFECT"],
+  "story_generators": ["Um experimento híbrido de runa e tecnologia sai do controle e ameaça o distrito.", "Um purista de método denuncia uma oficina por misturar runa e mecanismo sem licença."]
+}

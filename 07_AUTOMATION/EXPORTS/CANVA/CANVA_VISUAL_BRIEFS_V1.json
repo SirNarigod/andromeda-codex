@@ -1,0 +1,51 @@
+{
+  "record_id": "CANVA_VISUAL_BRIEFS_V1",
+  "status": "SAFE_PRODUCTION",
+  "cards": [
+    {
+      "id": "PER-002",
+      "title": "Kenua Vaarn",
+      "canonical_path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-002__kenua-vaarn.json",
+      "summary": "Caçador, rastreador, investigador e mercenário das Terras Livres da Fronteira. Hospedeiro do Espinho-Negro."
+    },
+    {
+      "id": "PER-003",
+      "title": "Serlis Aftermoon",
+      "canonical_path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-003__serlis-aftermoon.json",
+      "summary": "Mago de alta hierarquia das Árvores Anciãs, especialista em contenção, runas, anatomia mágica e simbiose; fugitivo após o Caso Aelyra e portador de uma marca inselável."
+    },
+    {
+      "id": "PER-005",
+      "title": "Serverus Vaelkor",
+      "canonical_path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-005__serverus-vaelkor.json",
+      "summary": "Rei Mago paciente, persuasivo e controlador que manipula o encontro entre Kenua, Serlis e o Espinho-Negro."
+    },
+    {
+      "id": "PER-006",
+      "title": "Kaenna Vor",
+      "canonical_path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-006__kaenna-vor.json",
+      "summary": "Caçadora, mediadora e líder das Terras Livres; aliada antiga de Kenua e portadora de uma prótese mecânica no braço direito."
+    }
+  ],
+  "maps": [
+    {
+      "id": "TER-011",
+      "title": "Terras Livres",
+      "canonical_path": "01_LORE/CANON_R2/GEOGRAFIA/UNIDADES_POLITICAS/TER-011__terras-livres.json",
+      "summary": "Território de Stellar organizado como comunidades autônomas."
+    },
+    {
+      "id": "TER-013",
+      "title": "Fortaleza do Trovão",
+      "canonical_path": "01_LORE/CANON_R2/GEOGRAFIA/UNIDADES_POLITICAS/TER-013__fortaleza-do-trovao.json",
+      "summary": "Território de Stellar organizado como domínio pessoal."
+    },
+    {
+      "id": "BIO-001",
+      "title": "Coração Ancestral",
+      "canonical_path": "01_LORE/CANON_R2/GEOGRAFIA/BIOMAS/BIO-001__coracao-ancestral.json",
+      "summary": "Floresta viva conectada à memória planetária, às Árvores Anciãs e às manifestações de Amadon."
+    }
+  ],
+  "constraint": "No sealed character, mystery, cosmology or episode content is exported."
+}

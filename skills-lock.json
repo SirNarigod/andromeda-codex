@@ -1,0 +1,185 @@
+{
+  "version": 1,
+  "skills": {
+    "ai-image-generation": {
+      "source": "prime-skills/runcomfy-agent-skills",
+      "sourceType": "github",
+      "skillPath": "ai-image-generation/SKILL.md",
+      "computedHash": "06f41b40b32a080bc38536156b80a7d4a3175e1b1eeece55fc125e54bee467f3"
+    },
+    "babysit-pr": {
+      "source": "openai/codex",
+      "sourceType": "github",
+      "skillPath": ".codex/skills/babysit-pr/SKILL.md",
+      "computedHash": "19d4523e45305676fc7861d702d4b4766a7b7edbe4af9f01b7197d9e76d86b82"
+    },
+    "caveman": {
+      "source": "juliusbrussee/caveman",
+      "sourceType": "github",
+      "skillPath": "skills/caveman/SKILL.md",
+      "computedHash": "43ab924e4422a09c24d16dc81349771513bc801c1be21077c252952fe753e6b6"
+    },
+    "code-breaking-changes": {
+      "source": "openai/codex",
+      "sourceType": "github",
+      "skillPath": ".codex/skills/code-review-breaking-changes/SKILL.md",
+      "computedHash": "01767baa7690c886cad10078c49063847dbf84bdda12febae903d6dd0fe17fd8"
+    },
+    "code-review": {
+      "source": "openai/codex",
+      "sourceType": "github",
+      "skillPath": ".codex/skills/code-review/SKILL.md",
+      "computedHash": "992227cceb18444dc3d66d4b637d86fdbc7874723c4653cb853897311fdfea76"
+    },
+    "code-review-change-size": {
+      "source": "openai/codex",
+      "sourceType": "github",
+      "skillPath": ".codex/skills/code-review-change-size/SKILL.md",
+      "computedHash": "a0684890dcf190bd626bc662df9ee9cc25c155ac2f7285c87973160446dc3370"
+    },
+    "code-review-context": {
+      "source": "openai/codex",
+      "sourceType": "github",
+      "skillPath": ".codex/skills/code-review-context/SKILL.md",
+      "computedHash": "b12e6bb888925d4f21b43baead061c623c3a2163ce9a067363cfa1b38788389f"
+    },
+    "code-review-testing": {
+      "source": "openai/codex",
+      "sourceType": "github",
+      "skillPath": ".codex/skills/code-review-testing/SKILL.md",
+      "computedHash": "a56ec27977ec246ea1df843c0ed18ad73d6ebb16dc862718449bff1dc027da66"
+    },
+    "codex-pr-body": {
+      "source": "openai/codex",
+      "sourceType": "github",
+      "skillPath": ".codex/skills/codex-pr-body/SKILL.md",
+      "computedHash": "d368598bdff980068cd7bce6739d26318f4d06df4a3a814b518059fe16b7b16c"
+    },
+    "design-taste-frontend": {
+      "source": "leonxlnx/taste-skill",
+      "sourceType": "github",
+      "skillPath": "skills/taste-skill/SKILL.md",
+      "computedHash": "899b84384f74f540ea5284d9b2e9234e050998b42eacc805410b518d4226c0b3"
+    },
+    "domain-modeling": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/domain-modeling/SKILL.md",
+      "computedHash": "336547f3ff285e822fc70b69b170dc58bceef9c8ed5fad18de0046287d6be837"
+    },
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "computedHash": "b146008599c31057cef1c145774cea5d5afb30e8f43fa802e47a4b461419aaaf"
+    },
+    "firecrawl": {
+      "source": "firecrawl/cli",
+      "sourceType": "github",
+      "skillPath": "skills/firecrawl/SKILL.md",
+      "computedHash": "c3086c55441701fa41b2925f0dd9a8e4b8eef291f28ec06d72bdb739054d283a"
+    },
+    "frontend-design": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "skillPath": "skills/frontend-design/SKILL.md",
+      "computedHash": "106acf230014cbb43ca34e6410371321b56ca742f9ee0442e8ec05bf02eb0384"
+    },
+    "game-engine": {
+      "source": "github/awesome-copilot",
+      "sourceType": "github",
+      "skillPath": "skills/game-engine/SKILL.md",
+      "computedHash": "20057f62cf7a8b2d9f940b3de0b18e5426e8f4bb50e236d36b1033aa0d42c4d8"
+    },
+    "grill-me": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/productivity/grill-me/SKILL.md",
+      "computedHash": "5e0c683385eafd83f106ac6c9d67dfbbfe5aa4b3fe65aad114eb1055a99c818f"
+    },
+    "high-end-visual-design": {
+      "source": "leonxlnx/taste-skill",
+      "sourceType": "github",
+      "skillPath": "skills/soft-skill/SKILL.md",
+      "computedHash": "f730e4132775f13eea19e3dc39afc6bb453cfc0498872b127ad8f0d47cfd802d"
+    },
+    "hyperframes-animation": {
+      "source": "heygen-com/hyperframes",
+      "sourceType": "github",
+      "skillPath": "skills/hyperframes-animation/SKILL.md",
+      "computedHash": "4dd03f4780065fc90dd73760cc686c264ef6bf2b82b1e7ebe6d49e55d92fcac1"
+    },
+    "kling-3-0": {
+      "source": "prime-skills/runcomfy-agent-skills",
+      "sourceType": "github",
+      "skillPath": "kling-3-0/SKILL.md",
+      "computedHash": "7945e3ee487f995d78765dfdd2e0a6b579fb86e8fbe7c1029a00d85bf208da19"
+    },
+    "minimalist-ui": {
+      "source": "leonxlnx/taste-skill",
+      "sourceType": "github",
+      "skillPath": "skills/minimalist-skill/SKILL.md",
+      "computedHash": "7e88897e0371184e97a82b8d9ef080323c13f21eb067b58ef71eb05173a08ac2"
+    },
+    "path-types": {
+      "source": "openai/codex",
+      "sourceType": "github",
+      "skillPath": ".codex/skills/path-types/SKILL.md",
+      "computedHash": "81061dd0a98861c637fd5aa9bf26cfeb74a5b90c92ab51d1374bb9f8fe40403b"
+    },
+    "planning-with-files": {
+      "source": "othmanadi/planning-with-files",
+      "sourceType": "github",
+      "skillPath": "skills/planning-with-files/SKILL.md",
+      "computedHash": "fb6782e6fd0440ae284b09f6828a7e67075ca360bd33199ef5594419a3f81670"
+    },
+    "remote-tests": {
+      "source": "openai/codex",
+      "sourceType": "github",
+      "skillPath": ".codex/skills/remote-tests/SKILL.md",
+      "computedHash": "cd3fc90432fe89f33f8ae16ab4d3033529e54873f5a5e265dff46eb3cdeeebc1"
+    },
+    "systematic-debugging": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "skillPath": "skills/systematic-debugging/SKILL.md",
+      "computedHash": "a2750dfbaed1690da73b120254892c4f926b4576cb82eb16fc877783941fe39b"
+    },
+    "test-playable-web-games": {
+      "source": "mengto/skills",
+      "sourceType": "github",
+      "skillPath": "agent-skills/game-development/test-playable-web-games/SKILL.md",
+      "computedHash": "62b3f5c2fc8de3cdf0f1b9f1aec38f0d07fbadf70ca974543a6719ecd02c2da8"
+    },
+    "test-tui": {
+      "source": "openai/codex",
+      "sourceType": "github",
+      "skillPath": ".codex/skills/test-tui/SKILL.md",
+      "computedHash": "193e90b4fe453f6a137de775db9eed63691de9f8ee46d58db06ce8764594ecbf"
+    },
+    "ue-serialization-savegames": {
+      "source": "quodsoler/unreal-engine-skills",
+      "sourceType": "github",
+      "skillPath": "skills/ue-serialization-savegames/SKILL.md",
+      "computedHash": "a41f8397e24a26edf51d9d4cf80a8baa6223dbf08e8171f0160f74a4c3cede65"
+    },
+    "understand": {
+      "source": "egonex-ai/understand-anything",
+      "sourceType": "github",
+      "skillPath": "understand-anything-plugin/skills/understand/SKILL.md",
+      "computedHash": "854cdf8b2dd0e2f92f5df805df15492512324b6df99ca5f16e3e0317a7767e4e"
+    },
+    "update-v8-version": {
+      "source": "openai/codex",
+      "sourceType": "github",
+      "skillPath": ".codex/skills/update-v8-version/SKILL.md",
+      "computedHash": "7d1867b6b3f08bbf8c087bea3c1e9875c207f4987a68739b43af3a784cf48e81"
+    },
+    "web-design-guidelines": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/web-design-guidelines/SKILL.md",
+      "computedHash": "d8e7d3afe37dcc8a97b99ffb5afdb4d0919ae0092ea8b68f44eb201f035e33ac"
+    }
+  }
+}

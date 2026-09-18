@@ -1,0 +1,41 @@
+{
+  "record_id": "STAGE11-FUZZ-STRESS-V1.0",
+  "status": "PASS",
+  "failures": [],
+  "metrics": {
+    "same_request_callers": 32,
+    "same_request_successes": 32,
+    "same_request_replays": 31,
+    "same_request_errors": [],
+    "same_request_day": 30,
+    "restart_final_day": 365,
+    "restart_replay": true,
+    "restart_integrity": "PASS",
+    "restart_reconciled": "PASS",
+    "multiworld_worlds": 6,
+    "multiworld_errors": [],
+    "multiworld_days": {
+      "rt:world:131b427e-0e0c-451f-aaca-b20d25c0a21d": 30,
+      "rt:world:93898b7c-1274-4f09-96cc-a01e8c337de4": 180,
+      "rt:world:d4603be2-6b45-4703-b4d4-532253871415": 365,
+      "rt:world:f749426f-3a24-444e-8afa-269a5146c66e": 730,
+      "rt:world:03fd9858-3912-4ad3-a1df-cd60bf2a37e1": 1095,
+      "rt:world:ca349c75-9064-48b6-9be8-229fe76bae0d": 3650
+    },
+    "multiworld_integrity": {
+      "rt:world:131b427e-0e0c-451f-aaca-b20d25c0a21d": "PASS",
+      "rt:world:93898b7c-1274-4f09-96cc-a01e8c337de4": "PASS",
+      "rt:world:d4603be2-6b45-4703-b4d4-532253871415": "PASS",
+      "rt:world:f749426f-3a24-444e-8afa-269a5146c66e": "PASS",
+      "rt:world:03fd9858-3912-4ad3-a1df-cd60bf2a37e1": "PASS",
+      "rt:world:ca349c75-9064-48b6-9be8-229fe76bae0d": "PASS"
+    },
+    "fuzz_sessions": 25,
+    "fuzz_expected_day": 644,
+    "fuzz_actual_day": 644,
+    "fuzz_integrity": "PASS",
+    "sqlite_integrity": "ok",
+    "foreign_key_failures": 0
+  },
+  "seconds": 31.539
+}

@@ -1,0 +1,18 @@
+{
+  "checkpoint": "FIRST_PLAYABLE_V0_1_25_DEV_FIX2",
+  "parent_checkpoint": "FIRST_PLAYABLE_V0_1_25_DEV_FIX1",
+  "status": "STATIC_VALIDATED_RUNTIME_PENDING",
+  "fix_scope": [
+    "remove obsolete torch_state local",
+    "remove obsolete action_state local"
+  ],
+  "functional_changes": "NONE",
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1",
+  "backup_authorized": false,
+  "static_checks": {
+    "checks": 13,
+    "passed": 13,
+    "failed": 0,
+    "status": "PASS"
+  }
+}

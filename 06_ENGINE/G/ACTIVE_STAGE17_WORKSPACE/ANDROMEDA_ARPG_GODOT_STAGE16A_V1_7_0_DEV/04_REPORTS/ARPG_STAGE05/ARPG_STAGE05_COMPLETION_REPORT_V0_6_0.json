@@ -1,0 +1,52 @@
+{
+  "record_id": "ARPG-STAGE05-COMPLETION-REPORT-V0.6.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "stage": "05/20",
+  "stage_name": "ITEMIZATION",
+  "version": "V0.6.0",
+  "status": "PASS_PRESEAL",
+  "parent_checkpoint": "CHECKPOINT-ARPG-STAGE04-V0.5.0",
+  "parent_checkpoint_archive_sha256": "52d8dcc6ba2cae63f47797729900d4d04669b0b1a1eb7c16c46667858330f6e6",
+  "implemented": {
+    "universal_definitions": 84,
+    "canonical_identity_records": 30,
+    "gameplay_derived_source_records": 54,
+    "rarity_tiers": 5,
+    "affix_pool": 11,
+    "stage05_consumables": 5,
+    "stack_inventory": true,
+    "unique_instances": true,
+    "quality": true,
+    "durability": true,
+    "empty_socket_framework": true,
+    "equipment_slots": true,
+    "weight_and_slot_capacity": true,
+    "player_npc_shared_inventory_contract": true,
+    "combat_equipment_modifiers": true,
+    "deterministic_item_events": true,
+    "transfers": true,
+    "save_resume": true
+  },
+  "resource_work_readiness": {
+    "materials_use_same_item_contract": true,
+    "tools_use_same_item_contract": true,
+    "npc_inventory_uses_same_contract": true,
+    "stage09_binding": "09_GATHERING_WORK",
+    "parallel_gathering_inventory_forbidden": true
+  },
+  "guards": {
+    "master_read_only": true,
+    "singular_auto_generation_blocked": true,
+    "rune_application_deferred": true,
+    "legacy_stage04_consumables_preserved": true,
+    "legacy_commerce_inventory_preserved": true,
+    "art_locked": true
+  },
+  "tests_ref": "04_REPORTS/ARPG_STAGE05/ARPG_STAGE05_TEST_SUMMARY_V0_6_0.json",
+  "corrections_ref": "04_REPORTS/ARPG_STAGE05/ARPG_STAGE05_CORRECTION_LEDGER_V0_6_0.json",
+  "canon_mutations": 0,
+  "open_blockers": 0,
+  "open_corrections": 0,
+  "next_stage": "06_SKILLS",
+  "restore_gate": "PENDING_PACKAGING"
+}

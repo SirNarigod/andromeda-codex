@@ -1,0 +1,135 @@
+{
+  "record_id": "ANDROMEDA-STAGE17-S17-B1-B2-ACCEPTANCE-V0.1.0-DEV",
+  "created_at": "2026-08-28T00:22:27.5521144-03:00",
+  "workspace": "ANDROMEDA_ARPG_STAGE17_PLAYABLE_VERTICAL_SLICE_V0_DEV",
+  "status": "PASS",
+  "b1": {
+    "status": "PASS",
+    "marker": "S17_B1_AUTHORITY_SPACE_CONTRACT",
+    "headless": {"passed": 36, "checks": 36, "failed": 0, "exit_code": 0},
+    "coordinate_semantics": {
+      "authority": "GLOBAL_TERRITORIAL_ISOMETRIC_METRES",
+      "godot": "LOCAL_SCENE_PRESENTATION_METRES",
+      "anchor": "FIRST_REAL_SERVER_AUTHORITATIVE_SNAPSHOT_PLUS_ACTUAL_PLAYER_NODE",
+      "axis_mapping": {"local_x": "+iso_x_m", "local_z": "+iso_y_m", "local_y": "+altitude_m_projection"},
+      "scale_m_per_local_unit": 1.0,
+      "numeric_roundtrip_tolerance_m": 0.00001,
+      "max_local_roundtrip_error_m": 0.0,
+      "max_authority_roundtrip_error_m": 0.0,
+      "hardcoded_spawn_or_origin": false
+    }
+  },
+  "b2": {
+    "status": "PASS",
+    "marker": "S17_B2_AUTHORITATIVE_CLICK_TO_MOVE",
+    "headless": {"passed": 73, "checks": 73, "failed": 0, "exit_code": 0},
+    "editor_bridge": {
+      "passed": 73,
+      "checks": 73,
+      "failed": 0,
+      "complete": true,
+      "renderer": "OpenGL 3.3 Compatibility",
+      "gpu": "NVIDIA GeForce GTX 1650",
+      "debugger_errors": 0,
+      "debugger_warnings": 0,
+      "process_residual": false
+    },
+    "main_smoke": {
+      "status": "PASS",
+      "authority_ready": true,
+      "session_bound": true,
+      "snapshot_applied": true,
+      "normal_ground_route_integrated": true,
+      "camera_follow_preserved": true,
+      "controlled_stop_final_errors": []
+    },
+    "submission": {
+      "cadence": "ONE_MOVE_TO_POINT_PER_EXPLICIT_GROUND_DESTINATION",
+      "fresh_command_ref_per_destination": true,
+      "same_ref_same_payload_replay_suppressed": true,
+      "per_frame_command_spam": false
+    },
+    "policies": {
+      "stale_result": "IGNORE_RESULT_OLDER_THAN_CURRENT_SUBMISSION_SERIAL",
+      "rejection": "CANCEL_LOCAL_TARGET_AND_RECONCILE_TO_LAST_AUTHORITATIVE_POSITION",
+      "reconnect": "STOP_LOCAL_MOVEMENT_CLEAR_ACTIVE_INTENT_WAIT_FRESH_SNAPSHOT_RECONCILE",
+      "snapshot": "PROJECT_REAL_AUTHORITY_POSITION_THROUGH_MAPPER_AND_SMOOTH_NAVIGATION",
+      "presentation_reconciliation_tolerance_m": 0.16,
+      "teleport_reconciliation": false
+    },
+    "final_metrics": {
+      "submitted": 6,
+      "accepted_result_signals": 4,
+      "rejected": 1,
+      "stale_results_ignored": 1,
+      "reconnects": 1,
+      "pending": 0
+    }
+  },
+  "performance_smoke": {
+    "status": "PASS",
+    "passed": 12,
+    "checks": 12,
+    "duration_s": 60.001659,
+    "frame_count": 8693,
+    "observed_fps": 144.87932741993,
+    "average_frame_time_ms": 6.90229494995977,
+    "p95_frame_time_ms": 7.274,
+    "max_frame_time_ms": 22.265,
+    "move_to_point_count": 6,
+    "reconciliation_count": 31,
+    "max_reconciliation_error_m": 1.16042637825012,
+    "node_count_start": 804,
+    "node_count_end": 804,
+    "threshold_invented": false
+  },
+  "regressions": {
+    "s17_00": {"passed": 22, "checks": 22, "status": "PASS"},
+    "s17_a_live": {"passed": 17, "checks": 17, "status": "PASS"},
+    "s17_a_offline": {"passed": 9, "checks": 9, "status": "PASS"},
+    "s17_a_accumulated": {"passed": 26, "checks": 26, "status": "PASS"},
+    "b01": {"passed": 54, "checks": 54, "status": "PASS"},
+    "g19": {"passed": 71, "checks": 71, "status": "PASS"},
+    "combat": {"passed": 91, "checks": 91, "status": "PASS"},
+    "ground_loot": {"passed": 53, "checks": 53, "status": "PASS"},
+    "gathering": {"passed": 77, "checks": 77, "status": "PASS"}
+  },
+  "approach_migration": {
+    "normal_ground_click": "AUTHORITATIVE",
+    "interaction_approach": "PRESENTATION_ONLY_PENDING_AUTHORITATIVE_SPATIAL_BINDING",
+    "interaction_gap_id": "S17_INTERACTION_APPROACH_AUTHORITY_MIGRATION_PENDING",
+    "combat_chase_gap_id": "S17_COMBAT_CHASE_AUTHORITY_MIGRATION_PENDING",
+    "priority": "P1"
+  },
+  "operational_evidence": {
+    "headless_windows_ca_store_message_preserved": true,
+    "headless_windows_ca_store_message_is_external_platform_condition": true,
+    "real_editor_bridge_debugger_clean": true,
+    "backend_owned_pid": 15032,
+    "backend_shutdown_controlled": true,
+    "listener_8000_after_shutdown": "NONE",
+    "preexisting_godot_editor_pid": 11316,
+    "preexisting_godot_editor_preserved": true
+  },
+  "protected_baseline": {
+    "stage16b_status": "CLOSED_READ_ONLY",
+    "checkpoint_sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc",
+    "backup_sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc",
+    "modified": false
+  },
+  "source_diff_from_stage17_initial_manifest": {
+    "baseline_manifest_hash": "7a03dc2cbf46b86a68de7beeb2a664cd0bf0e219a0adc45fb11a77d4b7f48059",
+    "deleted_count": 0,
+    "note": "Added and modified entries include prior S17-A source, B1/B2 source, logs, UIDs and Godot editor cache; all are contained in the Stage17 workspace."
+  },
+  "authority_boundaries": {
+    "gameplay_authority_in_gdscript": false,
+    "navigation_is_authority": false,
+    "raw_local_coordinate_sent_as_territorial": false,
+    "backend_modified": false,
+    "stage16b_modified": false
+  },
+  "backup_created": false,
+  "next_recommendation": "Define authoritative spatial bindings for one interaction target class, then migrate one representative approach path without opening water/dialogue/loot/save/death."
+}
+

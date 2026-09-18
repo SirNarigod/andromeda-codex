@@ -1,0 +1,23 @@
+{
+  "record_id": "R2-CIT-CATEGORY-INDEX-V1",
+  "authority": "CANON_R2_CONFIRMADO",
+  "category": "CIT",
+  "category_name": "Cidades e locais",
+  "items": [
+    {
+      "id": "CIT-001",
+      "title": "Posto de Varga",
+      "path": "01_LORE/CANON_R2/GEOGRAFIA/SUBREGIOES_CIDADES_E_LOCAIS/CIT-001__posto-de-varga.json",
+      "spoiler": 1,
+      "sealed": false
+    },
+    {
+      "id": "CIT-002",
+      "title": "Estação Oriental",
+      "path": "01_LORE/CANON_R2/GEOGRAFIA/SUBREGIOES_CIDADES_E_LOCAIS/CIT-002__estacao-oriental.json",
+      "spoiler": 1,
+      "sealed": false
+    }
+  ],
+  "source": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json"
+}

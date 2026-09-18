@@ -1,0 +1,14 @@
+{
+  "record_id": "STELLAR-POPULATION-INFRASTRUCTURE-LAW-V1.0",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.0",
+  "status": "CANON_DERIVADO_ATIVO_R2_COMPATIBLE",
+  "authority": {"r2": ["TER-001 through TER-013", "PLA-001"], "derived_sources": ["STELLAR_POPULATION_DISTRIBUTION_V1_0", "STELLAR_ECONOMIC_FLOWS_V1_0"], "scope": "AGGREGATE_POPULATION_AND_INFRASTRUCTURE"},
+  "dependencies": ["STELLAR_ECONOMY_ECOLOGY_TIME_LAW_V1_1.json", "STELLAR_SOVEREIGNTY_TERRITORY_LAW_V1_1.json", "../../01_LORE/STELLAR_REBASE_R2/R2_SOURCE_AUTHORITY_INDEX_V1_0.json"],
+  "invariants": ["FOURTEEN_QUALITATIVE_SETTLEMENTS_ARE_DERIVED_SPATIAL_ANCHORS", "POPULATION_NUMBERS_ARE_RUNTIME_ONLY", "POPULATION_IS_AGGREGATED_BY_SETTLEMENT", "LABOR_FOOD_WELFARE_AND_ROUTE_ACCESS_AFFECT_LOCAL_CONDITIONS", "INFLUENCE_NEVER_IMPLIES_SOVEREIGNTY", "INFRASTRUCTURE_IS_MATERIAL_AND_MAINTAINED"],
+  "prohibitions": ["NO_RUNTIME_POPULATION_COUNT_AS_CANON", "NO_EXTRAORDINARY_MIGRATION_WITHOUT_AUTHORIAL_GATE", "NO_SOVEREIGNTY_CHANGE_FROM_POPULATION_OR_ROUTE_STATE", "NO_AUTOMATIC_SOCIAL_COLLAPSE", "NO_NAMED_CITIZEN_INVENTION_FROM_AGGREGATE_STATE"],
+  "aggregate_model": {"tracked": ["population", "births", "deaths", "labor_force", "employment", "food_security", "welfare", "route_access"], "bounds": ["population >= 0", "labor_force <= population", "employed + unemployed = labor_force"], "qualitative_output": ["stable", "strained", "food_insecure", "route_isolated", "recovering"]},
+  "simulation_effects": ["Routine local birth, death, work and consumption may alter noncanonical aggregate state.", "Infrastructure capacity changes logistics and welfare locally, while canonical roads, bridges and territory remain source-backed.", "Migration, settlement founding, displacement and enduring demographic change require an authorial event record."],
+  "allowed_states": ["STABLE", "WORK_CONSTRAINED", "FOOD_INSECURE", "SERVICE_STRAINED", "ROUTE_ISOLATED", "RECOVERING", "AUTHORIAL_DEMOGRAPHIC_EVENT"],
+  "story_generators": ["A prosperous workshop lacks food security when its supply route closes.", "A population strain makes a town request aid that threatens its autonomy.", "Maintenance work becomes the difference between a seasonal hardship and permanent displacement."]
+}

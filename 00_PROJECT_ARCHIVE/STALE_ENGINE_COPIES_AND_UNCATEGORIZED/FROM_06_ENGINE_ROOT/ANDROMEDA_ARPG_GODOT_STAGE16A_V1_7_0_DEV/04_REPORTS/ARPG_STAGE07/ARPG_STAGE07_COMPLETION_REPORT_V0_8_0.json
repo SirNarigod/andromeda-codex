@@ -1,0 +1,118 @@
+{
+  "record_id": "ARPG-STAGE07-COMPLETION-REPORT-V0.8.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "stage": "07/23",
+  "version": "V0.8.0",
+  "status": "PASS",
+  "implemented": {
+    "actor_core": true,
+    "authoritative_hostility": true,
+    "pve_ai": true,
+    "actor_roles": 12,
+    "dispositions": 5,
+    "combat_ranks": 6,
+    "ai_states": 9,
+    "aggro_chase_attack_return": true,
+    "elite_miniboss_boss_scaling": true,
+    "combat_core_authority_preserved": true,
+    "character_core_player_hp_authority_preserved": true,
+    "protected_identity_guard": true,
+    "children_noncombatant_guard": true,
+    "lazy_active_set_lod": true,
+    "country_source_actor_count_observed": 491,
+    "client_snapshot": true,
+    "persistence": true,
+    "deterministic_combat_roll_seed_policy": "WORLD_SEED_EVENT_REF_CHANNEL"
+  },
+  "lore_to_gameplay": {
+    "coverage_registry": "10_ARPG/STAGE07/ANDROMEDA_LORE_GAMEPLAY_COVERAGE_V0_1_0.json",
+    "canonical_entities": 1660,
+    "relationships": 9429,
+    "unmapped_entities": 0,
+    "requested_systems_bound_to_roadmap": [
+      "fishing",
+      "hunting",
+      "mining",
+      "wood_flora",
+      "professions_player_npc",
+      "vehicles",
+      "roads",
+      "bridges",
+      "transport",
+      "biomes",
+      "technology",
+      "machines",
+      "robots"
+    ],
+    "fishing_note": "Gameplay mechanic supported by canonical TER-004 economic role; no standalone fishing institution/entity invented as canon."
+  },
+  "canon_guard": {
+    "canon_mutations": 0,
+    "hostility_does_not_rewrite_canonical_identity": true,
+    "protected_runtime_promotion_blocked": true
+  },
+  "tests": {
+    "functional_unit": {
+      "checks": 16,
+      "passed": 16,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "persistence_unit": {
+      "checks": 1,
+      "passed": 1,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "validation": {
+      "checks": 30,
+      "passed": 30,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "stress": {
+      "checks": 31,
+      "passed": 31,
+      "failed": 0,
+      "status": "PASS",
+      "frames": 3,
+      "ai_ticks": 24,
+      "hostile_actors": 8
+    },
+    "lore_coverage": {
+      "checks": 25,
+      "passed": 25,
+      "failed": 0,
+      "status": "PASS",
+      "master_entities": 1660,
+      "master_relationships": 9429,
+      "entity_unmapped": 0
+    }
+  },
+  "regressions": {
+    "stage06": "PASS",
+    "stage05": "PASS",
+    "stage04": "PASS",
+    "stage03": "PASS",
+    "stage02": "PASS",
+    "stage01": "PASS",
+    "stage00": "PASS",
+    "country_v15": "PASS",
+    "master": "PASS"
+  },
+  "open_corrections": 0,
+  "art_dependency": "NONE",
+  "godot": {
+    "connection": "USER_REPORTED_CONNECTED",
+    "editor_required_stage07": false,
+    "execution": "DEFERRED_USER_ON_MOBILE"
+  },
+  "next_stage": "08_WORLD_BIOMES",
+  "generated_at": "2026-08-18T18:32:18.747667+00:00",
+  "determinism": {
+    "fresh_world_same_seed_consistent": true,
+    "verified_independent_runs": 2,
+    "metrics": "3 frames / 24 AI ticks / 8 hostiles",
+    "status": "PASS"
+  }
+}

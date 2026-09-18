@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "MAR-COMBAT-ROLES-DEV-V1.0",
+  "title": "Sistema de 4 funções de combate estilo Battlefield/PvZ Garden Warfare, aplicado às 4 classes",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "canonical_status": "GAMEPLAY_DERIVED_DEV",
+  "r2_guard": "Substitui o antigo rótulo de papel (tanque/ágil/ofensivo/equilibrado) dos 40 NPCs do MAR por 4 funções fixas. weapon_ids e power_budget de cada NPC NÃO foram alterados — só role e passive_skill/active_skill.",
+  "role_mapping_from_legacy": {"tank": "SUPORTE", "tanky": "SUPORTE", "glass_cannon": "ASSALTO", "balanced": "MÉDICO", "fast": "FRANCO"},
+  "roles": [
+    {"role": "MÉDICO", "archetype": "versátil, mantém o grupo vivo", "signature_active": "cura de aliado próximo (nome varia por classe, mesmo efeito)", "class_flavor": {"Nativos": "Cataplasma de Campo", "Soldados": "Cura de Campo", "Androids": "Reparo Remoto", "Magos": "Bênção de Restauração (cita RUNA-007/MED-004)"}},
+    {"role": "SUPORTE", "archetype": "resistente, sustenta o grupo", "signature_active": "avanço/reforço de curto alcance (habilidade já existente, só re-rotulada)"},
+    {"role": "ASSALTO", "archetype": "dano alto, avança e ataca", "signature_active": "explosão de dano temporária (habilidade já existente, só re-rotulada)"},
+    {"role": "FRANCO", "archetype": "mobilidade/posicionamento, ataca de longe", "signature_active": "deslocamento/reposicionamento (habilidade já existente, só re-rotulada)"}
+  ],
+  "roster_files": [
+    "MAR_NPC_ROSTER_NATIVOS_DEV_V1_0.json",
+    "MAR_NPC_ROSTER_SOLDADOS_DEV_V1_0.json",
+    "MAR_NPC_ROSTER_ANDROIDS_DEV_V1_0.json",
+    "MAR_NPC_ROSTER_MAGOS_DEV_V1_0.json"
+  ]
+}

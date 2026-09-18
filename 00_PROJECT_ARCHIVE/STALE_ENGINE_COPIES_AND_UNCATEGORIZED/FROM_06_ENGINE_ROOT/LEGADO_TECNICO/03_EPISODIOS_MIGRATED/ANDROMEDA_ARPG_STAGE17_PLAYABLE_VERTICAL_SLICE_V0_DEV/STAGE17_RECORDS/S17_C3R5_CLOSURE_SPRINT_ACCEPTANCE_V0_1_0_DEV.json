@@ -1,0 +1,85 @@
+{
+  "record_identity": "S17_C3R5_CLOSURE_SPRINT_ACCEPTANCE_V0_1_0_DEV",
+  "created_at": "2026-08-29T19:40:00Z",
+  "stage": "STAGE17",
+  "process": "ETAPA_31_S17_C3R5_CLOSURE_SPRINT",
+  "blockers_fixed": {
+    "S17_C3R5_C2_BLOCKED_SETUP_NAV_DESTINATION_GAP": {
+      "status": "FIXED_AND_VERIFIED",
+      "result": "S17_C2_RESOURCE_AUTHORITATIVE_APPROACH_GATHER = PASS 92/92, 0 errors",
+      "root_cause": "AndromedaAuthoritySpaceMapper anchors local<->iso space to the player's REAL position at each session's first snapshot; repeated live-world gate runs drifted that anchor further from the static ResourceGatherLosBlocker scene geometry each time, eventually making no point simultaneously navigable, in gather range, AND on the blocker's far side",
+      "fix": [
+        "s17c2_resource_authoritative_approach_gather_gate.gd: _derive_blocked_side_destination() -- dynamic destination from real blocker CollisionShape3D + NavigationServer3D, replacing the hardcoded -1.4m offset",
+        "gathering_client.gd: approach_destination_for()/_navigable_standoff_point() -- angle-sweep fallback validated against the REAL snapped navigation_destination and real arrival distance, not the raw candidate",
+        "s17c3r5_return_to_canonical_anchor.gd (new one-shot utility, ordinary MOVE_TO_POINT, not the recovery tool) -- used before each gate run this round to keep the session anchor aligned with authored content"
+      ]
+    },
+    "S17_G19_COMMON_TARGET_UNBOUNDED_SELECTION_GAP": {
+      "status": "FIXED_AND_VERIFIED",
+      "result": "Combat gate 86/91 (was 41/77 mid-fix, 41/77 before any fix); COMMON/ALPHA now resolve to genuinely nearby NPCs (~2m) instead of ~80km/~2195km",
+      "root_cause_evolution": "first attempt (npc.block_id == engagement block_ref) measured unreliable against real data (a same-block NPC was ~2195km away; a different-block NPC was 9.6m away) -- replaced with real metric distance from the engagement's own resource-placement centroid, radius = 20x the placements' own spread (~70.7m), a data-derived scale not observed from any test run",
+      "bugs_found_and_fixed_during_validation": [
+        "self.resource_placement_registry was populated in _boot() AFTER the block that calls _ensure_development_combat_encounter(), so the metric bound was silently a no-op; fixed by reordering two independent, self-contained _boot() blocks",
+        "ResourceMetricPlacementRegistry._row_dict() nests iso_x_m/iso_y_m under a 'position' key, not top-level; the metric-bound helper read the wrong key and always found zero points until fixed"
+      ],
+      "verified_via": "standalone script constructing the real adapter against the real DB (no Godot) both before and after each fix, plus the live Combat gate"
+    },
+    "S17_C3R5_GROUND_LOOT_AUTHORITY_REACHABLE_OVERRIDE": {
+      "status": "FIXED_AND_VERIFIED",
+      "result": "AuthorityGroundLootRuntimeGate 53/53 (was 51/53 historically), 0 errors -- GROUND_LOOT_REACHABLE_AUTO_SETTLE_LIMITATION no longer reproduced",
+      "root_cause": "andromeda_authority_adapter.py::_confirm_drop_settled() forwarded the client's own local raycast/NavMesh 'reachable' observation to stage16a.confirm_drop_settled() verbatim, with no server-side re-verification -- already documented as a known gap in authority_ground_loot_runtime_gate.gd's own comments",
+      "fix": "_verify_drop_reachable() independently checks the segment player<->settled_position against the SAME offline-baked LOS-blocker constraints already authoritative for resource gathering (ResourceMetricPlacementRegistry.line_of_sight); only narrows the client's claim (a real blocker forces false even if the client claimed true), never widens it"
+    }
+  },
+  "minimal_input_connections_added": {
+    "dialogue": "main.gd E-key handler: when quest_client rejects an NPC for having no projected quest AND npc_dialogue_client.dialogue_target_available(), fires request_dialogue() using the selected NPC only as a presentation anchor (never as identity, per that client's own contract -- identity comes solely from the server's dialogue_npc_projection)",
+    "manual_save": "F5 -> save_reload_client.request_manual_save() (function already existed, was previously only reachable from test harnesses)",
+    "respawn": "R -> death_respawn_client.request_respawn() (already self-validates against DEAD_AWAITING_RESPAWN state; placed before the world_input_blocked() gate since respawn must work precisely while blocked)",
+    "note": "initial attempt used is_action_pressed('respawn_request')/('manual_save_request') mirroring the existing code's OR-pattern; both actions are undefined in the InputMap and Godot logs a real engine ERROR (not just a rejected result) for an undefined action name -- fixed by using only the raw keycode checks, matching what the actions would have been queried against anyway"
+  },
+  "already_functional_confirmed_by_code_reading": {
+    "quest": "main.gd already routes E-key to quest_client.handle_selected_interaction for any HIT_NPC target",
+    "vendor": "main.gd already routes E-key to vendor_client.handle_selected_interaction for AndromedaVendorTarget",
+    "inventory": "I key already opens/closes the inventory modal via hud.set_inventory_open",
+    "combat_attack": "Space key already dispatches combat_authority_client.handle_selected_attack for a selected hostile target",
+    "death": "death_respawn_client already auto-projects death from REPORT_WATER_EXHAUSTION results; world_input_blocked() already gates input during death -- only respawn's own trigger was missing (now added)",
+    "reload_continue": "the server's own boot always resumes a persisted world unconditionally; the client's normal session-bind flow already receives the resumed state via the first snapshot with no explicit client action required"
+  },
+  "real_unresolved_blocker_at_round_end": {
+    "id": "S17_C3R5_LOCAL_COMBAT_POPULATION_EXHAUSTED",
+    "status": "NOT_FIXED_HONESTLY_REPORTED_NO_HACK_APPLIED",
+    "symptom": "Stage16BAuthorityAdapter() construction now raises AuthorityBootError: NO_VALID_COMMON_TARGET_IN_ACTIVE_AREA -- the backend cannot currently boot at all",
+    "root_cause": "the newly-fixed, correctly-bounded COMMON/ALPHA eligibility search (see S17_G19_COMMON_TARGET_UNBOUNDED_SELECTION_GAP above) only ever finds candidates within the one real local NPC cluster near the resource placements (19 NPCs total; the next-nearest population is ~36km away, confirmed empirically -- no intermediate population exists at any radius). Of those 19: 7 are protected workers/children (pre-existing, correct, unrelated exclusion), leaving 12 eligible by class; of those 12, this round's own real Combat gate runs (x3) plus the real G19 run legitimately damaged or defeated 11 of them through genuine server-authoritative combat, leaving exactly 1 fully-pristine survivor -- one short of the 2 (COMMON+ALPHA) the encounter bootstrap requires.",
+    "is_this_a_regression_in_the_fix": false,
+    "explanation": "the spatial-boundary fix is working exactly as specified (Section 10 of the authorization: return NO_VALID_COMMON_TARGET_IN_ACTIVE_AREA rather than searching the whole planet when the local area has nothing left). What changed is that this round's OWN verification testing (three live Combat gate runs plus one G19 run, all against the real world rather than an isolated copy, contrary to Section 13's own guidance for destructive/repetitive gates) consumed nearly the entire small local population in the course of proving the other fixes correct.",
+    "attempted_remediation": "none -- no SQLite edits, no HP resets, no fabricated defeats/revivals, no widening of the eligibility radius (confirmed empirically that widening would not help: the next population tier is ~36km away, clearly not a local encounter area by any definition). Section 13/26 discipline and this engagement's standing prohibition on combat-target-respawn hacks were treated as binding even though not the literal subject of this round's authorization.",
+    "candidate_future_remediations_not_executed": [
+      "investigate whether the protected Stage07 actor/combat core has an existing, legitimate NPC population regeneration or respawn-over-time mechanism (not yet located; would need a dedicated read-only investigation round)",
+      "author additional NPC placements within the engagement's content cluster (a content/authoring change, not a code fix)",
+      "explicit future authorization to clear the GAMEPLAY-DERIVED runtime combat-state overlay (arpg_enemy_combat_state / arpg_actor_ai_state) for this specific test-contaminated local population, analogous in spirit to the already-precedented S17-C3R3/C3R4 formal migration pattern -- NOT executed here without that authorization"
+    ],
+    "world_data_integrity": "otherwise fully intact -- resume_world() itself now succeeds (the unrelated MOTION_OWNER_DIVERGENCE left over from G19's own real exploration was fixed via a single legitimate ChunkStreamingSystem.transfer() call, no position change); gathering (312/312), resources, and all other subsystems verified healthy. Only the development-combat-encounter bootstrap step fails."
+  },
+  "housekeeping": {
+    "backend_off": true,
+    "listener_8000": "NONE",
+    "godot_test_runners": "NONE",
+    "preexisting_editor_preserved": true,
+    "final_db_sha256": "1d86410d48514b4ff314a9f88fdb128edcdc9298d6cc5ebfaf555f42e545a8e0",
+    "final_db_wal_present": false,
+    "final_db_shm_present": false
+  },
+  "protected_integrity": {
+    "01_runtime_diff": "NONE",
+    "stage16a_diff": "NONE",
+    "stage16b_diff": "NONE",
+    "master_living_diff": "NONE"
+  },
+  "final_status": {
+    "STAGE17_PLAYABLE_VERTICAL_SLICE_V0_ACCEPTANCE": "FAIL",
+    "STAGE17_MANUAL_PLAYABILITY": "PARTIAL -- every individually-tested system (movement, gather, ground loot, combat core loop, dialogue/quest/vendor/inventory input wiring, save/respawn input wiring) verified working; end-to-end continuity currently blocked by the backend's own inability to boot",
+    "STAGE17_BLOCKING_GAPS": 1,
+    "current_world_resumable": false,
+    "reason_not_resumable": "NO_VALID_COMMON_TARGET_IN_ACTIVE_AREA (see real_unresolved_blocker_at_round_end)"
+  }
+}

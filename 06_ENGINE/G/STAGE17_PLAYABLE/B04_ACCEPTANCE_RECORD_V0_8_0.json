@@ -1,0 +1,290 @@
+{
+  "record_id": "ANDROMEDA-ARPG-STAGE16B-B04-ACCEPTANCE-V0.8.0",
+  "stage": "16B/23",
+  "block": "B04_TERRAIN_TRAVERSAL_WATER_STREAMING_FOUNDATION",
+  "captured_at": "2026-08-20T22:43:44-03:00",
+  "status": "PASS_APPLICABLE_B04_SCOPE_WITH_PARTIAL_AUTHORITATIVE_EVIDENCE",
+  "b04_closed": true,
+  "b05_started": false,
+  "final_stage16_backup_created": false,
+  "authority": {
+    "master_v2_0_1": "READ_ONLY",
+    "stage16a_v0_8_0": "READ_ONLY_BASELINE",
+    "godot_living_v1_5": "READ_ONLY",
+    "godot_role": "SCENE_INPUT_PHYSICS_NAVIGATION_PRESENTATION_ONLY",
+    "gameplay_authority_in_gdscript": false,
+    "backend_substitute_created": false
+  },
+  "environment": {
+    "godot_version": "4.7.1.stable.official.a13da4feb",
+    "project_path": "C:/Users/thall/Documents/andromeda-argp/ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/07_GODOT_ARPG_STAGE16B",
+    "main_scene": "res://scenes/Main.tscn",
+    "editor_bridge": "EXISTING_LOCAL_ANDROMEDA_EDITOR_BRIDGE_OPERATIONAL",
+    "backend_127_0_0_1_8000": {
+      "status": "NOT_AVAILABLE",
+      "listener_count": 0
+    }
+  },
+  "architecture": {
+    "terrain_surfaces": [
+      "VISUAL_SURFACE",
+      "COLLISION_SURFACE",
+      "TRAVERSAL_SURFACE"
+    ],
+    "candidate_thresholds": {
+      "max_walkable_slope_deg": 32.0,
+      "max_step_height_m": 0.35,
+      "micro_relief_collision_filter_m": 0.12,
+      "implemented_small_step_m": 0.30
+    },
+    "surface_kinds_executed": [
+      "ROAD_GOOD",
+      "GRASS_FIELD",
+      "ROCKY_GROUND",
+      "MUD",
+      "FIRM_GROUND",
+      "WATER_SHALLOW",
+      "WATER_DEEP"
+    ],
+    "navigation_layers": {
+      "land_and_shallow_water": 1,
+      "deep_swim": 2,
+      "bridge": 4
+    },
+    "streaming_prototype": {
+      "logical_cells": 25,
+      "active_cells": 1,
+      "preload_cells_center_plan": 8,
+      "systemic_unloaded_cells_center_plan": 16,
+      "cell_size_m": 256.0,
+      "living_parallel_created": false,
+      "systemic_state": "EXTERNAL_LIVING_REFERENCE_ONLY"
+    },
+    "water": {
+      "shallow_wade": ["PLAYER", "NPC", "ANIMAL", "VEHICLE_WHEN_DEPTH_PERMITS"],
+      "deep_swim_presentation": ["PLAYER", "NPC", "ANIMAL"],
+      "deep_ordinary_vehicle": "BLOCKED",
+      "under_bridge_shallow": "TRAVERSABLE",
+      "current_displacement_cap_m_per_tick": 0.08,
+      "authoritative_stamina_mutation": false,
+      "authoritative_death_mutation": false
+    },
+    "world_items": {
+      "ground_loot_land_settling": "PASS",
+      "ground_loot_water_state": "RECOVERABLE_IN_WATER_PRESENTATION",
+      "bag_land_state": "NO_EXPIRY_CONTRACT_ONLY",
+      "bag_water_state": "FLOATING_PRESENTATION",
+      "individual_water_ttl_s_contract": 900.0,
+      "bag_water_ttl_s_contract": 1800.0,
+      "authoritative_ttl_advanced_locally": false
+    }
+  },
+  "tests": [
+    {
+      "id": "STAGE16B_B04_HEADLESS_FINAL",
+      "result": "PASS",
+      "passed": 156,
+      "failed": 0,
+      "process_exit_code": 0,
+      "errors": 0,
+      "warnings": 0,
+      "evidence": "B04_GODOT_RUNTIME.log"
+    },
+    {
+      "id": "STAGE16B_B04_EDITOR_BRIDGE_FINAL",
+      "result": "PASS",
+      "passed": 156,
+      "failed": 0,
+      "debugger_errors": 0,
+      "debugger_warnings": 0,
+      "controlled_stop_final_errors": 0,
+      "evidence": "B04_EDITOR_BRIDGE_DEBUGGER_V0_8_0.json"
+    },
+    {
+      "id": "STAGE16B_B04_MAIN_DIRECT_EDITOR_BRIDGE",
+      "result": "PASS",
+      "debugger_errors": 0,
+      "debugger_warnings": 0,
+      "controlled_stop_final_errors": 0
+    },
+    {
+      "id": "STAGE16B_B01_HEADLESS_REGRESSION",
+      "result": "PASS",
+      "passed": 54,
+      "failed": 0,
+      "process_exit_code": 0,
+      "evidence": "B04_GODOT_B01_REGRESSION.log"
+    },
+    {
+      "id": "STAGE16B_B02_HEADLESS_REGRESSION",
+      "result": "PASS",
+      "passed": 90,
+      "failed": 0,
+      "process_exit_code": 0,
+      "evidence": "B04_GODOT_B02_REGRESSION.log"
+    },
+    {
+      "id": "STAGE16B_B03_HEADLESS_REGRESSION",
+      "result": "PASS",
+      "passed": 357,
+      "failed": 0,
+      "process_exit_code": 0,
+      "evidence": "B04_GODOT_B03_REGRESSION.log"
+    },
+    {
+      "id": "STAGE16A_POST_B04_ACCUMULATED",
+      "result": "PASS",
+      "passed": 209,
+      "failed": 0,
+      "duration_s": 257.260,
+      "process_exit_code": 0,
+      "evidence": "B04_STAGE16A_REGRESSION.log"
+    },
+    {
+      "id": "STAGE16A_POST_B04_STRESS",
+      "result": "PASS",
+      "passed": 20,
+      "failed": 0,
+      "process_exit_code": 0,
+      "evidence": "B04_STAGE16A_STRESS.log"
+    },
+    {
+      "id": "STAGE16A_POST_B04_BYTE_INTEGRITY",
+      "result": "PASS",
+      "files_verified": 724,
+      "missing": 0,
+      "mismatches": 0,
+      "godot_living_v1_5_files_verified": 4
+    }
+  ],
+  "integrity": {
+    "checkpoint_files_verified": 724,
+    "checkpoint_mismatches": 0,
+    "checkpoint_sha256": "21626A3152CB37E167EEE24BFF9D3142C5D389A8CA2827594B34211591525A6A",
+    "master_v2_0_1_sha256": "6D9AC3CCE7DCF6A65FDCF73859C332A0211C1AF52D149077BEEF554BF7BBD0B2",
+    "godot_living_v1_5_files_verified": 4,
+    "godot_living_v1_5_mismatches": 0,
+    "writes_outside_stage16b": 0
+  },
+  "files_modified": [
+    {
+      "path": "scenes/Main.tscn",
+      "sha256": "C5DFFAB90F37E7E6563418F38E856CE19B867FA9FCC4E1301DE2845CA1000282"
+    },
+    {
+      "path": "scripts/main.gd",
+      "sha256": "430F52E309BADE7CA38CE02C8BEBFDD746BEF204AFB7CFA5F3F834B129A16C15"
+    },
+    {
+      "path": "scenes/interaction/GroundLoot.tscn",
+      "sha256": "8AE6C56E287B912560F39E3973A00FB35EC2F4709E9146B8067516692998121D"
+    }
+  ],
+  "files_created": [
+    "scenes/interaction/DroppedBag.tscn",
+    "scenes/world/TerrainFoundation.tscn",
+    "scenes/world/WaterVolume.tscn",
+    "scenes/world/StreamingCell.tscn",
+    "scripts/world/terrain_foundation.gd",
+    "scripts/world/water_volume.gd",
+    "scripts/world/water_world_item_presenter.gd",
+    "scripts/world/streaming_cell.gd",
+    "scripts/world/streaming_manager.gd",
+    "tests/godot/b04_runtime_gate.gd",
+    "tests/godot/B04RuntimeGate.tscn",
+    "README_STAGE16B_B04.md",
+    "B04_IMPLEMENTATION_LOG_V0_8_0.md",
+    "B04_EDITOR_BRIDGE_DEBUGGER_V0_8_0.json",
+    "B04_ACCEPTANCE_RECORD_V0_8_0.json"
+  ],
+  "generated_uid_sidecars": [
+    "scripts/world/terrain_foundation.gd.uid",
+    "scripts/world/water_volume.gd.uid",
+    "scripts/world/water_world_item_presenter.gd.uid",
+    "scripts/world/streaming_cell.gd.uid",
+    "scripts/world/streaming_manager.gd.uid"
+  ],
+  "evidence_artifacts": [
+    "B04_GODOT_RUNTIME.log",
+    "B04_GODOT_B01_REGRESSION.log",
+    "B04_GODOT_B02_REGRESSION.log",
+    "B04_GODOT_B03_REGRESSION.log",
+    "B04_STAGE16A_REGRESSION.log",
+    "B04_STAGE16A_STRESS.log",
+    "B04_GODOT_GATE_R1.log",
+    "B04_GODOT_GATE_R2.log",
+    "B04_GODOT_GATE_R3.log",
+    "B04_GODOT_GATE_R4.log",
+    "B04_GODOT_GATE_R5.log",
+    "B04_GODOT_GATE_R6.log",
+    "B04_GODOT_GATE_R7.log"
+  ],
+  "corrections": [
+    {
+      "finding": "Initial gate had float(null), a too-tight RigidBody contact tolerance, a stale camera key and a reversed zoom assertion.",
+      "correction": "Removed invalid conversion, calibrated contact tolerance to actual Godot contact margin, used follow_half_life_s and asserted the correct zoom direction.",
+      "final_result": "PASS"
+    },
+    {
+      "finding": "Frozen bodies teleported already inside Area3D were not a reliable model of entering water after a long physics run.",
+      "correction": "Water-item tests and presentation now use an active physical drop crossing the water surface; Ground Loot and Bag masks include WATER_VOLUME while retaining separate layers.",
+      "final_result": "PASS"
+    },
+    {
+      "finding": "The floating Bag root was placed outside the Area3D and could oscillate between enter and exit.",
+      "correction": "The physical root remains 0.04 m inside the volume while the placeholder visual remains above the water line.",
+      "final_result": "PASS"
+    },
+    {
+      "finding": "First Editor Bridge run reported two incompatible-ternary warnings despite 156 functional checks passing.",
+      "correction": "Invalidated the run, replaced ternaries with explicit Variant assignments, and reran headless plus Editor Bridge with zero warnings/errors.",
+      "final_result": "PASS"
+    },
+    {
+      "finding": "First integrity audit used Convert.ToHexString, unavailable in Windows PowerShell 5.1.",
+      "correction": "Invalidated the audit and reran all 724 comparisons with BitConverter and stop-on-error semantics.",
+      "final_result": "PASS_724_OF_724"
+    }
+  ],
+  "acceptance_matrix": [
+    {"id": "G16B-01", "status": "PASS", "evidence": ["B01_54_OF_54_POST_B04"]},
+    {"id": "G16B-02", "status": "PASS", "evidence": ["B02_90_OF_90_POST_B04"]},
+    {"id": "G16B-03", "status": "PARTIAL_EVIDENCE", "evidence": ["B03_LOCAL_INTENTS_PRESERVED"]},
+    {"id": "G16B-04", "status": "PARTIAL_EVIDENCE", "evidence": ["B03_PICKUP_GUARDS", "B04_PHYSICAL_SETTLING"], "missing": ["AUTHORITATIVE_PICKUP_ROUNDTRIP"]},
+    {"id": "G16B-05", "status": "NOT_EXECUTED"},
+    {"id": "G16B-06", "status": "NOT_EXECUTED"},
+    {"id": "G16B-07", "status": "PASS", "evidence": ["B04_REAL_GODOT_TERRAIN_RELIEF_COLLISION_NAV_CAMERA_156_OF_156"]},
+    {"id": "G16B-08", "status": "PARTIAL_EVIDENCE", "evidence": ["B04_SURFACE_SLOPE_LOAD_INPUTS", "STAGE16A_AUTHORITY_REGRESSION"], "missing": ["LIVE_AUTHORITATIVE_STAMINA_ROUNDTRIP", "YELLOW_RADIAL_STAMINA_UI"]},
+    {"id": "G16B-09", "status": "PARTIAL_EVIDENCE", "evidence": ["B04_ACTIVE_PRELOAD_SYSTEMIC_REFERENCE_STREAMING"], "missing": ["LIVE_LIVING_SYSTEMIC_SNAPSHOT"]},
+    {"id": "G16B-10", "status": "NOT_EXECUTED"},
+    {"id": "G16B-11", "status": "PARTIAL_EVIDENCE", "evidence": ["B03_NPC_HOVER_NAME_ONLY"]},
+    {"id": "G16B-12", "status": "NOT_EXECUTED"},
+    {"id": "G16B-13", "status": "NOT_EXECUTED"},
+    {"id": "G16B-14", "status": "PARTIAL_EVIDENCE", "evidence": ["B02_CAMERA", "B04_MICRO_RELIEF_STABILITY"], "missing": ["REAL_OCCLUDER_MATERIAL_FADE"]},
+    {"id": "G16B-15", "status": "NOT_EXECUTED"},
+    {"id": "G16B-16", "status": "NOT_EXECUTED"},
+    {"id": "G16B-17", "status": "NOT_EXECUTED"},
+    {"id": "G16B-18", "status": "NOT_EXECUTED"},
+    {"id": "G16B-19", "status": "NOT_EXECUTED"},
+    {"id": "G16B-20", "status": "PARTIAL_EVIDENCE", "evidence": ["B01_B02_B03_B04_REGRESSIONS", "STAGE16A_209_OF_209", "STRESS_20_OF_20", "BASELINE_724_OF_724", "MASTER_HASH_UNCHANGED"]},
+    {"id": "G16B-21", "status": "NOT_EXECUTED"},
+    {"id": "G16B-22", "status": "NOT_EXECUTED"},
+    {"id": "G16B-23", "status": "NOT_EXECUTED"},
+    {"id": "G16B-24", "status": "PARTIAL_EVIDENCE", "evidence": ["B04_SHALLOW_WATER_NAV_UNDER_BRIDGE_CURRENT_VEHICLE", "STAGE16A_WATER_AUTHORITY_TESTS"], "missing": ["LIVE_AUTHORITATIVE_STAMINA_ROUNDTRIP"]},
+    {"id": "G16B-25", "status": "PARTIAL_EVIDENCE", "evidence": ["B04_DEEP_SWIM_NAV_AND_VEHICLE_BLOCK", "STAGE16A_EXHAUSTION_TESTS"], "missing": ["LIVE_GODOT_BACKEND_EXHAUSTION_DEFEAT_SNAPSHOT"]},
+    {"id": "G16B-26", "status": "NOT_EXECUTED"},
+    {"id": "G16B-27", "status": "PARTIAL_EVIDENCE", "evidence": ["B04_LOOT_BAG_WATER_PRESENTATION", "STAGE16A_TTL_AUTHORITY_TESTS"], "missing": ["LIVE_TTL_ADVANCE_SAVE_RELOAD_SNAPSHOT"]},
+    {"id": "G16B-28", "status": "NOT_EXECUTED"}
+  ],
+  "blockers": [
+    "No listener at 127.0.0.1:8000; live authoritative stamina, exhaustion/death, TTL/save-reload and Living snapshot checks are NOT_AVAILABLE."
+  ],
+  "watch_items": [
+    "Real occluder material fade remains outside B04.",
+    "Final swim animation/controller and controllable vehicle remain placeholders.",
+    "Streaming SYSTEMIC state is preserved by external reference only until a live Living snapshot is available.",
+    "project.godot config/name still carries the B03 cosmetic label because that file was not in the declared B04 edit set; run/main_scene is correct."
+  ],
+  "source_acceptance_matrix_modified": false,
+  "backup_rule_respected": true
+}

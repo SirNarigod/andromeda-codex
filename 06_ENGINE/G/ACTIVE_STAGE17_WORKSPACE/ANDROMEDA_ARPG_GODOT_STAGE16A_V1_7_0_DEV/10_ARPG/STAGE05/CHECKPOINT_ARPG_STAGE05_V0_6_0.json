@@ -1,0 +1,23 @@
+{
+  "record_id": "CHECKPOINT-ARPG-STAGE05-V0.6.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "process": "ARPG CONVERSION",
+  "stage": "05/20",
+  "stage_name": "ITEMIZATION",
+  "version": "V0.6.0",
+  "status": "PASS_PRESEAL",
+  "result": "UNIVERSAL_ITEM_CORE_READY_FOR_SKILLS_ACTORS_WORLD_AND_GATHERING",
+  "parent_checkpoint": "CHECKPOINT-ARPG-STAGE04-V0.5.0",
+  "parent_checkpoint_archive_sha256": "52d8dcc6ba2cae63f47797729900d4d04669b0b1a1eb7c16c46667858330f6e6",
+  "item_definitions": 84,
+  "canonical_item_identities": 30,
+  "gameplay_derived_item_sources": 54,
+  "player_npc_shared_inventory_contract": true,
+  "gathering_work_binding_stage": "09_GATHERING_WORK",
+  "canon_mutations": 0,
+  "open_blockers": 0,
+  "open_corrections": 0,
+  "backup_authorized": "PENDING_RESTORE_GATE",
+  "art_pipeline": "LOCKED_UNTIL_STAGE18_PRE_ART_PASS",
+  "next_stage": "06_SKILLS"
+}

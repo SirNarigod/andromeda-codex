@@ -1,0 +1,20 @@
+{
+  "record_id": "V14-SPATIAL-STREAM-STRESS",
+  "status": "PASS",
+  "stats": {
+    "worlds": 30,
+    "states": 150,
+    "blocks": 437,
+    "subregions": 887,
+    "dungeons": 266,
+    "rooms": 1552,
+    "travels": 30,
+    "chunk_transitions": 4480,
+    "godot_payload_entities": 644,
+    "max_roundtrip_error_m": 4.197414120966556e-10,
+    "max_loaded_chunks": 62
+  },
+  "failure_count": 0,
+  "failures": [],
+  "seconds": 15.801
+}

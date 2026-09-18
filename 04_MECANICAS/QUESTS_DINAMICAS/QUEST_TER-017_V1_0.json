@@ -1,0 +1,56 @@
+{
+  "record_id": "QUEST-TER-017-V1.0",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "LOCAL_AUDITABLE_QUEST_TEMPLATE",
+  "title": "Deriva das Ilhas",
+  "locality": "SUB-017-003",
+  "anchor_reference": "EST-060 Refugio Errante, JOB-015 Guarda e resposta a risco",
+  "premise": "Uma ilha errante comeca a se desprender mais rapido que o normal, ameacando navegadores que dependem dela como ponto de passagem.",
+  "phases": [
+    {
+      "id": "WELCOME",
+      "objective": "Aceitar a tarefa local e receber o briefing no Refugio Errante."
+    },
+    {
+      "id": "EVIDENCE",
+      "objective": "Investigar a concentracao de eter e o padrao de deriva da ilha."
+    },
+    {
+      "id": "DECISION",
+      "objective": "Escolher uma resposta local com custo documentado."
+    },
+    {
+      "id": "REPORT",
+      "objective": "Reportar a resolucao ao Circulo dos Ilheus."
+    }
+  ],
+  "resolutions": [
+    {
+      "id": "AVOID",
+      "title": "Rota Alternativa",
+      "effect": "Navegadores evitam a ilha ate nova avaliacao.",
+      "local_consequence": "Risco cai, mas rotas ficam mais longas."
+    },
+    {
+      "id": "REPAIR",
+      "title": "Estabilizacao de Eter",
+      "effect": "Ajuste no fluxo de eter estabiliza a ilha temporariamente.",
+      "local_consequence": "Consome recursos/tempo, mas resolve a causa."
+    },
+    {
+      "id": "ESCALATE_REPORT",
+      "title": "Escalonamento Formal",
+      "effect": "O caso e reportado ao Circulo dos Ilheus para decisao institucional.",
+      "local_consequence": "Resolucao mais lenta, mas gera registro formal."
+    }
+  ],
+  "evidence_rule": "Evidencia sustenta apenas relatorio local e reputacao contextual - nao identifica culpado como fato canonico sem portao autoral.",
+  "rewards": "reputacao contextual de runtime, acesso temporario e progressao pratica; nenhum item, titulo, territorio ou fato canonico.",
+  "prohibitions": [
+    "NO_OFFLINE_RESOLUTION",
+    "NO_CANON_PROMOTION",
+    "NO_NAMED_R2_APPEARANCE",
+    "NO_AUTHORIAL_DEATH",
+    "NO_ROOT_ESCALATION"
+  ]
+}

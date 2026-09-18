@@ -1,0 +1,491 @@
+{
+  "record_id": "ANDROMEDA-ARPG-STAGE16B-B08-ACCEPTANCE-V0.8.0",
+  "stage": "16B/23",
+  "block": "B08_RESOURCE_NODES_GATHERING_TO_GROUND_LOOT",
+  "captured_at": "2026-08-21T17:51:19.1506356-03:00",
+  "status": "PASS_APPLICABLE_B08_SCOPE_WITH_PARTIAL_AUTHORITATIVE_EVIDENCE",
+  "b08_closed": true,
+  "b09_started": false,
+  "final_stage16_backup_created": false,
+  "authority": {
+    "master_v2_0_1": "READ_ONLY",
+    "living_simulation_engine": "READ_ONLY_BASELINE",
+    "stage16a_v0_8_0": "READ_ONLY_BASELINE",
+    "godot_living_v1_5": "READ_ONLY_HISTORY",
+    "godot_role": "RESOURCE_PRESENTATION_INPUT_NAVIGATION_FEEDBACK_EXTERNAL_PROJECTION_AND_CLIENT_ORCHESTRATION_ONLY",
+    "yield_authority_in_gdscript": false,
+    "quantity_or_rarity_authority_in_gdscript": false,
+    "loot_table_authority_in_gdscript": false,
+    "tool_rule_authority_in_gdscript": false,
+    "stamina_authority_in_gdscript": false,
+    "depletion_or_respawn_authority_in_gdscript": false,
+    "ownership_or_inventory_authority_in_gdscript": false,
+    "xp_or_profession_authority_in_gdscript": false,
+    "economy_or_grant_authority_in_gdscript": false,
+    "backend_substitute_created": false,
+    "http_endpoint_created": false,
+    "living_parallel_implementation_created": false,
+    "canonical_mutation_detected": false
+  },
+  "environment": {
+    "godot_version": "4.7.1.stable.official.a13da4feb",
+    "project_path": "C:/Users/thall/Documents/andromeda-argp/ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/07_GODOT_ARPG_STAGE16B",
+    "main_scene": "res://scenes/Main.tscn",
+    "editor_bridge": "EXISTING_LOCAL_ANDROMEDA_EDITOR_BRIDGE_OPERATIONAL",
+    "user_editor_pid": 10524,
+    "user_editor_pid_preserved": true,
+    "backend_127_0_0_1_8000": {
+      "status": "NOT_AVAILABLE",
+      "listener_count": 0
+    }
+  },
+  "architecture": {
+    "resource_node_scene": {
+      "root": "StaticBody3D:ResourceNode",
+      "components": [
+        "CollisionShape3D",
+        "Node3D:VisualRoot",
+        "Area3D:InteractionSensor",
+        "Marker3D:DropAnchor"
+      ],
+      "resource_collision_layer": 32,
+      "interaction_sensor_layer": 8,
+      "resource_kinds": ["TREE", "ROCK", "ORE", "FLORA", "AGRICULTURE"],
+      "stable_target_ref": true,
+      "final_art": false
+    },
+    "projected_resource_state": {
+      "states": ["AVAILABLE", "IN_PROGRESS", "UNAVAILABLE", "REMOVED"],
+      "aliases": ["ACTIVE", "BUSY", "DEPLETED"],
+      "external_confirmation_required": true,
+      "session_ref_guard": true,
+      "ordered_sequence_guard": true,
+      "duplicate_event_guard": true,
+      "removed_target_tombstone": true,
+      "local_respawn_timer": false
+    },
+    "gathering_flow": [
+      "SELECT_RESOURCE",
+      "APPROACH",
+      "REQUEST_GATHER",
+      "WAIT_EXTERNAL_RESULT",
+      "PROJECT_EXTERNAL_OUTPUT",
+      "GROUND_LOOT_B07"
+    ],
+    "client_input": {
+      "left_click_resource": "SELECT_ONLY_NO_MOVEMENT_CHANGE",
+      "right_click_resource": "CLICK_ONLY_APPROACH_ACTION",
+      "context_key": "E",
+      "hold_action_created": false,
+      "physical_range_used": true,
+      "screen_distance_used_as_gameplay_distance": false,
+      "teleport_used": false
+    },
+    "output_pipeline": {
+      "source_kinds": [
+        "TREE",
+        "ROCK",
+        "ORE",
+        "FLORA",
+        "AGRICULTURE",
+        "HUNTING",
+        "FISHING",
+        "ENEMY"
+      ],
+      "resource_node_sources_use_drop_anchor": true,
+      "actor_sources_use_externally_authorized_position": true,
+      "ground_loot_b07_only": true,
+      "direct_inventory_delivery": false,
+      "quantity_is_externally_supplied": true,
+      "hunting_fishing_enemy_retyped_as_resource_node": false,
+      "authoritative_roundtrip_executed": false
+    },
+    "streaming": {
+      "states": ["ACTIVE", "PRELOAD", "SYSTEMIC"],
+      "active_detailed": true,
+      "preload_reduced_and_noninteractive": true,
+      "systemic_reference_only": true,
+      "living_macro_ref_preserved": true,
+      "duplicate_resource_on_reload": false,
+      "duplicate_ground_loot_on_reload": false
+    },
+    "interop": {
+      "b03_selection_and_target_ref_preserved": true,
+      "b04_navigation_and_streaming_preserved": true,
+      "b05_existing_radial_stamina_only": true,
+      "b06_feedback_can_retarget": false,
+      "b07_pickup_radius_m": 0.5,
+      "b07_settling_preserved": true,
+      "auto_pickup_interrupts_gathering": false
+    },
+    "placeholders": [
+      "TREE_ROCK_ORE_FLORA_AGRICULTURE_TEST_VISUALS",
+      "EXTERNAL_RESOURCE_STATE_FIXTURES",
+      "EXTERNAL_GATHERING_RESULT_FIXTURES",
+      "EXTERNAL_PHYSICAL_OUTPUT_FIXTURES",
+      "FINAL_ART",
+      "FINAL_ANIMATION",
+      "FINAL_AUDIO"
+    ]
+  },
+  "tests": [
+    {
+      "id": "STAGE16B_B08_HEADLESS_FINAL",
+      "result": "PASS",
+      "passed": 475,
+      "failed": 0,
+      "process_exit_code": 0,
+      "stderr_bytes": 0,
+      "errors": 0,
+      "warnings": 0,
+      "gate_marker": "ANDROMEDA_STAGE16B_B08_GATE: PASS",
+      "evidence": "B08_GODOT_RUNTIME.log"
+    },
+    {
+      "id": "STAGE16B_B08_EDITOR_BRIDGE_FINAL",
+      "result": "PASS",
+      "passed": 475,
+      "failed": 0,
+      "debugger_errors": 0,
+      "debugger_warnings": 0,
+      "controlled_stop_final_errors": 0,
+      "evidence": "B08_EDITOR_BRIDGE_DEBUGGER_V0_8_0.json"
+    },
+    {
+      "id": "STAGE16B_B08_MAIN_EDITOR_BRIDGE_FINAL",
+      "result": "PASS",
+      "observed_seconds": 10,
+      "debugger_errors": 0,
+      "debugger_warnings": 0,
+      "controlled_stop_final_errors": 0,
+      "evidence": "B08_EDITOR_BRIDGE_DEBUGGER_V0_8_0.json"
+    },
+    {
+      "id": "STAGE16B_B01_HEADLESS_REGRESSION",
+      "result": "PASS",
+      "passed": 54,
+      "failed": 0,
+      "process_exit_code": 0,
+      "stderr_bytes": 0,
+      "evidence": "B08_GODOT_B01_REGRESSION.log"
+    },
+    {
+      "id": "STAGE16B_B02_HEADLESS_REGRESSION",
+      "result": "PASS",
+      "passed": 90,
+      "failed": 0,
+      "process_exit_code": 0,
+      "stderr_bytes": 0,
+      "evidence": "B08_GODOT_B02_REGRESSION.log"
+    },
+    {
+      "id": "STAGE16B_B03_HEADLESS_REGRESSION",
+      "result": "PASS",
+      "passed": 357,
+      "failed": 0,
+      "process_exit_code": 0,
+      "stderr_bytes": 0,
+      "evidence": "B08_GODOT_B03_REGRESSION.log"
+    },
+    {
+      "id": "STAGE16B_B04_HEADLESS_REGRESSION",
+      "result": "PASS",
+      "passed": 156,
+      "failed": 0,
+      "process_exit_code": 0,
+      "stderr_bytes": 0,
+      "evidence": "B08_GODOT_B04_REGRESSION.log"
+    },
+    {
+      "id": "STAGE16B_B05_HEADLESS_REGRESSION",
+      "result": "PASS",
+      "passed": 210,
+      "failed": 0,
+      "process_exit_code": 0,
+      "stderr_bytes": 0,
+      "evidence": "B08_GODOT_B05_REGRESSION.log"
+    },
+    {
+      "id": "STAGE16B_B06_HEADLESS_REGRESSION",
+      "result": "PASS",
+      "passed": 265,
+      "failed": 0,
+      "process_exit_code": 0,
+      "stderr_bytes": 0,
+      "evidence": "B08_GODOT_B06_REGRESSION.log"
+    },
+    {
+      "id": "STAGE16B_B07_HEADLESS_REGRESSION",
+      "result": "PASS",
+      "passed": 357,
+      "failed": 0,
+      "process_exit_code": 0,
+      "stderr_bytes": 0,
+      "evidence": "B08_GODOT_B07_REGRESSION.log"
+    },
+    {
+      "id": "STAGE16A_POST_B08_ACCUMULATED",
+      "result": "PASS",
+      "passed": 209,
+      "failed": 0,
+      "runner_summary": "Ran 209 tests in 283.049s",
+      "process_exit_code": 0,
+      "evidence": "B08_STAGE16A_REGRESSION.stderr.log",
+      "note": "Python unittest writes its verbose successful runner output to stderr by design; the output ends in OK and contains no test warning/error."
+    },
+    {
+      "id": "STAGE16A_POST_B08_STRESS_FINAL",
+      "result": "PASS",
+      "passed": 20,
+      "failed": 0,
+      "process_exit_code": 0,
+      "stderr_bytes": 0,
+      "evidence": "B08_STAGE16A_STRESS.log"
+    },
+    {
+      "id": "GODOT_LIVING_V1_5_HISTORICAL_RUNTIME_GATE",
+      "result": "PASS",
+      "marker": "ANDROMEDA_GODOT_V1_5_RUNTIME_GATE: PASS",
+      "process_exit_code": 0,
+      "stderr_bytes": 0,
+      "evidence": "B08_GODOT_V15_RUNTIME_GATE.log"
+    },
+    {
+      "id": "STAGE16A_POST_B08_BYTE_INTEGRITY",
+      "result": "PASS",
+      "files_verified": 724,
+      "missing": 0,
+      "mismatches": 0,
+      "godot_living_v1_5_files_verified": 4,
+      "evidence": "B08_BASELINE_INTEGRITY.log"
+    }
+  ],
+  "required_b08_scenarios": [
+    {"scenario": "RESOURCE_NODE_MANIFEST_STRUCTURE_AND_LAYERS", "status": "PASS"},
+    {"scenario": "TREE_ROCK_ORE_FLORA_AGRICULTURE_STABLE_UNIQUE_IDENTITY", "status": "PASS"},
+    {"scenario": "LEFT_SELECTION_RIGHT_CLICK_ONLY_AND_E_CONTEXT", "status": "PASS"},
+    {"scenario": "NEAR_FAR_EXACT_RANGE_AND_JUST_OUTSIDE_RANGE", "status": "PASS"},
+    {"scenario": "PHYSICAL_APPROACH_WITHOUT_TELEPORT_OR_SCREEN_DISTANCE", "status": "PASS"},
+    {"scenario": "BLOCKER_INVALID_PATH_OBSTACLE_AND_REPLANNING", "status": "PASS"},
+    {"scenario": "STALE_REMOVED_WRONG_SESSION_AND_WRONG_TARGET_REJECTED", "status": "PASS"},
+    {"scenario": "ACTIVE_BUSY_DEPLETED_UNAVAILABLE_AND_EXTERNAL_REPLENISHMENT", "status": "PASS"},
+    {"scenario": "DUPLICATE_STALE_OUT_OF_ORDER_SNAPSHOT_EVENT_GUARDS", "status": "PASS"},
+    {"scenario": "NO_LOCAL_AUTHORITATIVE_RESPAWN_DEPLETION_TOOL_OR_YIELD", "status": "PASS"},
+    {"scenario": "REQUEST_GATHER_ENVELOPE_WITHOUT_PLAYER_REF_OR_GRANT_FIELDS", "status": "PASS"},
+    {"scenario": "TREE_OUTPUT_TO_B07_GROUND_LOOT", "status": "PASS_CLIENT_PROJECTION"},
+    {"scenario": "ROCK_OUTPUT_TO_B07_GROUND_LOOT", "status": "PASS_CLIENT_PROJECTION"},
+    {"scenario": "ORE_OUTPUT_TO_B07_GROUND_LOOT", "status": "PASS_CLIENT_PROJECTION"},
+    {"scenario": "FLORA_OUTPUT_TO_B07_GROUND_LOOT", "status": "PASS_CLIENT_PROJECTION"},
+    {"scenario": "AGRICULTURE_OUTPUT_TO_B07_GROUND_LOOT", "status": "PASS_CLIENT_PROJECTION"},
+    {"scenario": "HUNTING_OUTPUT_TO_B07_GROUND_LOOT_WITHOUT_RESOURCENODE_RETYPE", "status": "PASS_CLIENT_PROJECTION"},
+    {"scenario": "FISHING_OUTPUT_TO_B07_GROUND_LOOT_WITHOUT_RESOURCENODE_RETYPE", "status": "PASS_CLIENT_PROJECTION"},
+    {"scenario": "ENEMY_OUTPUT_TO_B07_GROUND_LOOT_WITHOUT_RESOURCENODE_RETYPE", "status": "PASS_CLIENT_PROJECTION"},
+    {"scenario": "SOURCE_CONTEXT_EXTERNAL_QUANTITY_CATEGORY_AND_DROP_ANCHOR", "status": "PASS"},
+    {"scenario": "ZERO_INVALID_DUPLICATE_STALE_WRONG_SESSION_REMOVED_SOURCE_OUTPUT", "status": "PASS"},
+    {"scenario": "SIMULTANEOUS_OUTPUT_STACK_AND_NO_DIRECT_INVENTORY", "status": "PASS"},
+    {"scenario": "GROUND_LOOT_SETTLING_TERRAIN_WATER_PRESENTER_AND_PICKUP_0_5_M", "status": "PASS"},
+    {"scenario": "ACTIVE_PRELOAD_SYSTEMIC_TRANSITIONS_NO_DUPLICATES", "status": "PASS"},
+    {"scenario": "AUTO_PICKUP_DOES_NOT_INTERRUPT_GATHERING_MOVEMENT_ATTACK_OR_TARGET", "status": "PASS"},
+    {"scenario": "COMBAT_FEEDBACK_DOES_NOT_RETARGET_OR_REWRITE_DISTANCE", "status": "PASS"},
+    {"scenario": "EXTERNAL_STAMINA_PROJECTION_USES_EXISTING_B05_RING_ONLY", "status": "PASS_CLIENT_PROJECTION"},
+    {"scenario": "NO_GAMEPLAY_AUTHORITY_IN_GDSCRIPT", "status": "PASS"},
+    {"scenario": "DEBUGGER_ZERO_ERRORS_ZERO_WARNINGS", "status": "PASS"}
+  ],
+  "invalidated_runs": [
+    {
+      "id": "B08_DIRECT_GUI_LAUNCH_WITHOUT_RETAINED_PROCESS",
+      "counted": false,
+      "result": "NO_USABLE_RUNTIME_OUTPUT_OR_EXIT_EVIDENCE",
+      "reason": "PowerShell returned the GUI launcher rather than retaining the Godot process."
+    },
+    {
+      "id": "B08_PRECHECK_B03_R1",
+      "counted": false,
+      "result": "153/165_WITH_RUNTIME_CASCADES",
+      "reason": "Duplicate inherited constant and invalid custom-script cast prevented specialized targets from loading."
+    },
+    {
+      "id": "B08_PRECHECK_B03_R2",
+      "counted": false,
+      "result": "353/357",
+      "reason": "A B08 unavailable-state result incorrectly replaced the already valid B03 right-click intent result."
+    },
+    {
+      "id": "B08_GATE_ATTEMPT_01",
+      "counted": false,
+      "result": "PARSER_ERROR_NO_COMPLETE_GATE",
+      "reason": "Reserved keyword preload was used as a local variable name."
+    },
+    {
+      "id": "B08_GATE_ATTEMPT_02",
+      "counted": false,
+      "result": "454/460_WITH_RUNTIME_ERRORS",
+      "reason": "Click-only metadata, route/event fixture isolation, pre-tree blocker placement, and two nonexistent presentation helper calls required correction."
+    },
+    {
+      "id": "B08_GATE_ATTEMPT_03",
+      "counted": false,
+      "result": "471/474",
+      "reason": "Three assertions sampled obsolete or non-contract B02/B05 presentation fields."
+    },
+    {
+      "id": "B08_EDITOR_BRIDGE_R1",
+      "counted": false,
+      "result": "475/475_FUNCTIONAL_WITH_2_WARNINGS",
+      "reason": "An unnecessary await and a local name shadowing Node.duplicate invalidated the debugger run."
+    },
+    {
+      "id": "B08_STAGE16A_INITIAL_WRONG_FALLBACK",
+      "counted": false,
+      "result": "INCOMPLETE_AFTER_147_TESTS_EXIT_1",
+      "reason": "The protected Master environment variable was missing and the runner fell back to a nonexistent /mnt/data path."
+    },
+    {
+      "id": "B08_STAGE16A_STRESS_INITIAL_WRONG_FALLBACK",
+      "counted": false,
+      "result": "EXIT_1",
+      "reason": "The same missing protected Master environment variable invalidated the stress invocation."
+    },
+    {
+      "id": "B08_INTEGRITY_WRONG_MATRIX_PATH",
+      "counted": false,
+      "result": "ABORTED_BEFORE_EVIDENCE",
+      "reason": "The first audit looked for the source Acceptance Matrix at the checkpoint root rather than its protected contracts path."
+    }
+  ],
+  "corrections": [
+    "Removed the duplicate inherited constant and invalid custom-script cast, then reran B03.",
+    "Preserved the approved B03 input-intent result while attaching B08 gathering orchestration separately.",
+    "Renamed the reserved gate variable and corrected click-only metadata, path/event fixtures, blocker setup, and real API assertions.",
+    "Removed the unnecessary await and renamed the shadowing local variable discovered by the Editor Bridge.",
+    "Restarted all affected headless and Editor Bridge tests after each correction.",
+    "Reran Stage16A and stress with ANDROMEDA_MASTER_RELEASE bound to the protected Master archive.",
+    "Reran integrity against the real protected Acceptance Matrix path."
+  ],
+  "integrity": {
+    "checkpoint_files_verified": 724,
+    "checkpoint_missing": 0,
+    "checkpoint_mismatches": 0,
+    "checkpoint_sha256": "21626A3152CB37E167EEE24BFF9D3142C5D389A8CA2827594B34211591525A6A",
+    "master_v2_0_1_sha256": "6D9AC3CCE7DCF6A65FDCF73859C332A0211C1AF52D149077BEEF554BF7BBD0B2",
+    "source_acceptance_matrix_sha256": "9335E6C7A5FAA25F97991204787D2C77485592419AAA1F51641C01E31317454C",
+    "godot_living_v1_5_files_verified": 4,
+    "godot_living_v1_5_mismatches": 0,
+    "source_acceptance_matrix_modified": false,
+    "writes_outside_stage16b": 0,
+    "stage16b_zip_count": 0
+  },
+  "files_modified": [
+    {"path": "project.godot", "sha256": "AA1DA20063074CAD2B7CA4D195DA9DDBC64B6E0975A442AA6D5E73D708A48D86", "reason": "B08 project label and context_interact E action."},
+    {"path": "scenes/Main.tscn", "sha256": "D2771E38E869B897D261C28DA0F5AEBFC51ADC0C87A28335FF5FE2A603B033DF", "reason": "GatheringClient integration and AGRICULTURE placeholder."},
+    {"path": "scenes/interaction/ResourceNode.tscn", "sha256": "EC32A9527E8F8D6BD83E1811A1B6985344DD82B9C3F8564B5F2BEC3807EDB08D", "reason": "Specialized additive ResourceNode component while preserving manifest structure/layers."},
+    {"path": "scripts/main.gd", "sha256": "9359DEC62724C205374F12B07C7149778B34B6648ACCB70953E1C2C46938B2C0", "reason": "B08 runtime binding, E/right-click orchestration, stale selection cleanup, and authority flags."},
+    {"path": "scripts/input/input_router.gd", "sha256": "FD9FCB91E8CD006E8905012408A2CF24B84F91F12FA3D3F85E18E6B577789B61", "reason": "Explicit click-only contextual intent metadata."},
+    {"path": "tests/godot/b05_runtime_gate.gd", "sha256": "AA4EBF02D33527A65A9A25C0F8F4BB228ABCBA52B5206A0536D24BC86FE36E0C", "reason": "Exact B08 label compatibility for historical B05 regression."},
+    {"path": "tests/godot/b06_runtime_gate.gd", "sha256": "E2D08285675522B18B6D340C2433AF784BDBC32A7E375399EA961D1DCDFAEE73", "reason": "Exact B08 label compatibility for historical B06 regression."},
+    {"path": "tests/godot/b07_runtime_gate.gd", "sha256": "CE7FFE6A533E9FCB637FEFCD5DA000AF1E8B0E287CC6393DDBA6D897157A9F96", "reason": "Exact B08 label compatibility for historical B07 regression."}
+  ],
+  "files_created": [
+    {"path": "scripts/interaction/resource_node.gd", "sha256": "E8F664DCE577CD9F2AA05189715F39C3666DB8E846F2E814C230A8A77DABBBD6"},
+    {"path": "scripts/interaction/resource_node.gd.uid", "sha256": "1D7EC3EF226CF0FEFDC444843DC91C7422ABC6B3139255298C1C5BD336C44FDF", "generated_by": "GODOT"},
+    {"path": "scripts/interaction/gathering_client.gd", "sha256": "33D5A22D11748CA743BAEE097625BA6A94CEA274FA3C43132EAC6A6E90975466"},
+    {"path": "scripts/interaction/gathering_client.gd.uid", "sha256": "2082D8175B672A9245629D3716A6E10643A94B96C1F61A3EB44F7363A5D75D73", "generated_by": "GODOT"},
+    {"path": "tests/godot/B08RuntimeGate.tscn", "sha256": "BE7A1E828B3BF4C84F553544417554911F256DE9AC825463DF0A63CA5BB82DAB"},
+    {"path": "tests/godot/b08_runtime_gate.gd", "sha256": "17B08AE10D0275EDE41B8298740C131A9F4708126B265E5FE219FD2E7A71709A"},
+    {"path": "B08_GODOT_RUNTIME.log"},
+    {"path": "B08_BASELINE_INTEGRITY.log"},
+    {"path": "B08_EDITOR_BRIDGE_DEBUGGER_V0_8_0.json"},
+    {"path": "B08_IMPLEMENTATION_LOG_V0_8_0.md"},
+    {"path": "README_STAGE16B_B08.md"},
+    {"path": "B08_ACCEPTANCE_RECORD_V0_8_0.json"}
+  ],
+  "evidence_artifacts": [
+    "B08_GODOT_RUNTIME.log",
+    "B08_GODOT_RUNTIME.stderr.log",
+    "B08_GODOT_B01_REGRESSION.log",
+    "B08_GODOT_B02_REGRESSION.log",
+    "B08_GODOT_B03_REGRESSION.log",
+    "B08_GODOT_B04_REGRESSION.log",
+    "B08_GODOT_B05_REGRESSION.log",
+    "B08_GODOT_B06_REGRESSION.log",
+    "B08_GODOT_B07_REGRESSION.log",
+    "B08_STAGE16A_REGRESSION.stderr.log",
+    "B08_STAGE16A_STRESS.log",
+    "B08_GODOT_V15_RUNTIME_GATE.log",
+    "B08_BASELINE_INTEGRITY.log",
+    "B08_EDITOR_BRIDGE_DEBUGGER_V0_8_0.json",
+    ".godot/b08_preflight_b03.stdout.log",
+    ".godot/b08_preflight_b03.stderr.log",
+    ".godot/b08_preflight_b03_retry.stdout.log",
+    ".godot/b08_preflight_b03_retry.stderr.log",
+    ".godot/b08_preflight_b03_retry2.stdout.log",
+    ".godot/b08_preflight_b03_retry2.stderr.log",
+    ".godot/b08_gate_attempt01.stdout.log",
+    ".godot/b08_gate_attempt01.stderr.log",
+    ".godot/b08_gate_attempt02.stdout.log",
+    ".godot/b08_gate_attempt02.stderr.log",
+    ".godot/b08_gate_attempt03.stdout.log",
+    ".godot/b08_gate_attempt03.stderr.log",
+    ".godot/b08_gate_attempt04.stdout.log",
+    ".godot/b08_gate_attempt04.stderr.log",
+    ".godot/b08_gate_attempt05.stdout.log",
+    ".godot/b08_gate_attempt05.stderr.log"
+  ],
+  "acceptance_matrix_before_b08": {
+    "PASS": ["G16B-01", "G16B-02", "G16B-07", "G16B-10", "G16B-11", "G16B-12", "G16B-13", "G16B-15"],
+    "PARTIAL_EVIDENCE": ["G16B-03", "G16B-04", "G16B-05", "G16B-06", "G16B-08", "G16B-09", "G16B-14", "G16B-20", "G16B-21", "G16B-22", "G16B-23", "G16B-24", "G16B-25", "G16B-26", "G16B-27"],
+    "NOT_EXECUTED": ["G16B-16", "G16B-17", "G16B-18", "G16B-19", "G16B-28"]
+  },
+  "acceptance_matrix_after_b08_summary": {
+    "PASS": ["G16B-01", "G16B-02", "G16B-07", "G16B-10", "G16B-11", "G16B-12", "G16B-13", "G16B-15"],
+    "PARTIAL_EVIDENCE": ["G16B-03", "G16B-04", "G16B-05", "G16B-06", "G16B-08", "G16B-09", "G16B-14", "G16B-20", "G16B-21", "G16B-22", "G16B-23", "G16B-24", "G16B-25", "G16B-26", "G16B-27"],
+    "NOT_EXECUTED": ["G16B-16", "G16B-17", "G16B-18", "G16B-19", "G16B-28"]
+  },
+  "acceptance_matrix_status_changed": false,
+  "acceptance_matrix": [
+    {"id": "G16B-01", "status": "PASS", "evidence": ["B01_54_OF_54_POST_B08"]},
+    {"id": "G16B-02", "status": "PASS", "evidence": ["B02_90_OF_90_POST_B08"]},
+    {"id": "G16B-03", "status": "PARTIAL_EVIDENCE", "evidence": ["B03_LOCAL_INTENTS_PRESERVED", "B08_RIGHT_CLICK_AND_E_CONTEXTUAL_APPROACH_ENVELOPE"], "missing": ["LIVE_AUTHORITATIVE_GATHER_RESULT_AND_COOLDOWN_ROUNDTRIP"]},
+    {"id": "G16B-04", "status": "PARTIAL_EVIDENCE", "evidence": ["B07_PHYSICAL_0_5_M_BLOCKER_PATH_SETTLING_GUARDS", "B08_OUTPUT_RETURNS_TO_B07_PIPELINE"], "missing": ["LIVE_AUTHORITATIVE_PICKUP_RESULT_ROUNDTRIP"]},
+    {"id": "G16B-05", "status": "PARTIAL_EVIDENCE", "evidence": ["B08_TREE_ROCK_ORE_FLORA_AGRICULTURE_EXTERNAL_OUTPUT_PROJECTION", "B08_HUNTING_FISHING_ENEMY_EXTERNAL_OUTPUT_PROJECTION", "B08_B07_PHYSICAL_GROUND_LOOT_BEFORE_ANY_INVENTORY_PATH", "B08_SOURCE_CONTEXT_QUANTITY_DROP_ANCHOR_SETTLING"], "missing": ["LIVE_AUTHORITATIVE_GATHERING_AND_ALL_SOURCE_OUTPUT_ROUNDTRIPS"]},
+    {"id": "G16B-06", "status": "PARTIAL_EVIDENCE", "evidence": ["B07_AUTO_PICKUP_LOCAL_CONTRACT", "B08_AUTO_PICKUP_DOES_NOT_INTERRUPT_GATHERING_MOVEMENT_ATTACK_OR_TARGET"], "missing": ["LIVE_PROFILE_PREFERENCE_PERSISTENCE_ROUNDTRIP"]},
+    {"id": "G16B-07", "status": "PASS", "evidence": ["B04_156_OF_156_POST_B08"]},
+    {"id": "G16B-08", "status": "PARTIAL_EVIDENCE", "evidence": ["B08_EXTERNAL_GATHERING_STAMINA_PROJECTION_TO_EXISTING_B05_RING", "B04_SURFACE_SLOPE_LOAD_INPUTS", "STAGE16A_AUTHORITY_REGRESSION"], "missing": ["LIVE_AUTHORITATIVE_STAMINA_ROUNDTRIP"]},
+    {"id": "G16B-09", "status": "PARTIAL_EVIDENCE", "evidence": ["B04_CELL_STREAMING", "B08_RESOURCE_ACTIVE_PRELOAD_SYSTEMIC_IDENTITY_AND_NO_DUPLICATE_PROJECTION"], "missing": ["LIVE_LIVING_SYSTEMIC_SNAPSHOT"]},
+    {"id": "G16B-10", "status": "PASS", "evidence": ["B05_210_OF_210_POST_B08"]},
+    {"id": "G16B-11", "status": "PASS", "evidence": ["B03_AND_B05_POST_B08_REGRESSIONS"]},
+    {"id": "G16B-12", "status": "PASS", "evidence": ["B05_210_OF_210_POST_B08"]},
+    {"id": "G16B-13", "status": "PASS", "evidence": ["B05_AND_B06_POST_B08_REGRESSIONS"]},
+    {"id": "G16B-14", "status": "PARTIAL_EVIDENCE", "evidence": ["B02_B04_B05_B06_B07_POST_B08_REGRESSIONS", "B08_COMBAT_FEEDBACK_CAMERA_TARGET_STABILITY"], "missing": ["REAL_OCCLUDER_MATERIAL_FADE"]},
+    {"id": "G16B-15", "status": "PASS", "evidence": ["B06_265_OF_265_POST_B08"]},
+    {"id": "G16B-16", "status": "NOT_EXECUTED"},
+    {"id": "G16B-17", "status": "NOT_EXECUTED"},
+    {"id": "G16B-18", "status": "NOT_EXECUTED"},
+    {"id": "G16B-19", "status": "NOT_EXECUTED"},
+    {"id": "G16B-20", "status": "PARTIAL_EVIDENCE", "evidence": ["B01_THROUGH_B08_REGRESSIONS", "STAGE16A_209_OF_209", "STRESS_20_OF_20", "BASELINE_724_OF_724", "LIVING_RUNTIME_GATE", "MASTER_CHECKPOINT_MATRIX_HASHES_UNCHANGED"], "missing": ["REMAINING_STAGE16B_GATES_AND_FULL_VERTICAL_SLICE"]},
+    {"id": "G16B-21", "status": "PARTIAL_EVIDENCE", "evidence": ["B05_AND_STAGE16A_REGRESSIONS_POST_B08"], "missing": ["LIVE_MAIN_HAND_SNAPSHOT_ROUNDTRIP"]},
+    {"id": "G16B-22", "status": "PARTIAL_EVIDENCE", "evidence": ["B05_INPUT_ROUTING_POST_B08"], "missing": ["LIVE_AUTHORITATIVE_SLOT_ACTIVATION_ROUNDTRIP"]},
+    {"id": "G16B-23", "status": "PARTIAL_EVIDENCE", "evidence": ["B05_B06_B07_UI_FAMILY_POST_B08"], "missing": ["VENDOR_UI", "CRAFTING_UI", "SETTINGS_UI"]},
+    {"id": "G16B-24", "status": "PARTIAL_EVIDENCE", "evidence": ["B04_156_OF_156_POST_B08", "STAGE16A_WATER_AUTHORITY_TESTS"], "missing": ["LIVE_AUTHORITATIVE_STAMINA_ROUNDTRIP"]},
+    {"id": "G16B-25", "status": "PARTIAL_EVIDENCE", "evidence": ["B04_156_OF_156_POST_B08", "STAGE16A_EXHAUSTION_TESTS"], "missing": ["LIVE_GODOT_BACKEND_EXHAUSTION_DEFEAT_SNAPSHOT"]},
+    {"id": "G16B-26", "status": "PARTIAL_EVIDENCE", "evidence": ["B05_INVENTORY_BAG_SHELL_POST_B08", "STAGE16A_BAG_DEATH_AUTHORITY_TESTS"], "missing": ["LIVE_INVENTORY_BAG_DEATH_SNAPSHOT_ROUNDTRIP"]},
+    {"id": "G16B-27", "status": "PARTIAL_EVIDENCE", "evidence": ["B07_WATER_EXPOSURE_PROJECTION_POST_B08"], "missing": ["LIVE_AUTHORITATIVE_TTL_ADVANCE", "BAG_30_MINUTE_WATER_RULE", "LAND_BAG_NO_EXPIRY", "TIMER_SAVE_RELOAD"]},
+    {"id": "G16B-28", "status": "NOT_EXECUTED"}
+  ],
+  "blockers": [],
+  "not_available": [
+    "Live authoritative gathering intent/result and physical-output round-trip: no listener at 127.0.0.1:8000.",
+    "Live tool validation, yield, stamina cost, depletion/replenishment, and respawn projection: backend unavailable.",
+    "Live Living SYSTEMIC resource snapshot materialization: backend/Living bridge source unavailable."
+  ],
+  "watch_items": [
+    "G16B-05 remains PARTIAL_EVIDENCE: all eight source projections use B07 Ground Loot, but fixtures are not live authoritative source-loop evidence.",
+    "G16B-03 remains PARTIAL_EVIDENCE until authoritative gathering result/cooldown is observed live.",
+    "G16B-06 remains PARTIAL_EVIDENCE until profile preference persistence is observed live.",
+    "G16B-08 remains PARTIAL_EVIDENCE until authoritative gathering stamina round-trip is observed live.",
+    "G16B-09 remains PARTIAL_EVIDENCE until a live Living SYSTEMIC snapshot is observed.",
+    "Resource meshes, animation, feedback art, and audio remain placeholders/deferred."
+  ],
+  "source_acceptance_matrix_modified": false,
+  "backup_rule_respected": true
+}

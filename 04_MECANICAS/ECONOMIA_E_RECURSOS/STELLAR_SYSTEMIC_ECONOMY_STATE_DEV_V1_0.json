@@ -1,0 +1,231 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-SYSTEMIC-ECONOMY-STATE-DEV-V1.0",
+  "title": "Sistema D - Economia Sistemica Viva (instancia SYSTEMIC_ECONOMY_FACTIONS_POPULATION_CONTRACT_V1_0)",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "r2_guard": "Instancia pela primeira vez shortage_pressure/food_security/welfare (Stage10) para os 19 territorios, calculados por regra deterministica e auditavel sobre dados ja reais (zonas AGZ, rede de rotas fase 53, contagem real de construcoes RESIDENCIAL/INSTITUCIONAL, subregioes corrompidas fase 57). Sao rotulos qualitativos de gameplay, nunca fato de simulacao numerica real; 'influencia de faccao nunca implica soberania' (regra original do contrato) permanece respeitada - nada aqui muda controle territorial.",
+  "calculation_rule": {
+    "food_security": "ALTA se o territorio tem zona AGZ propria; MEDIA se conectado por rota continental (fase 53) a um territorio com AGZ; BAIXA nos demais.",
+    "shortage_pressure": "Base inversa a food_security (ALTA=20, MEDIA=45, BAIXA=65) + 15 se o territorio tem subregiao corrompida (fase 57).",
+    "welfare": "ALTO com 3+ construcoes RESIDENCIAL/INSTITUCIONAL no territorio, MEDIO com 1-2, BAIXO com 0."
+  },
+  "territory_states": [
+    {
+      "territory_id": "TER-001",
+      "food_security": "MEDIA",
+      "shortage_pressure": 45,
+      "welfare": "MEDIO",
+      "welfare_construction_count": 1,
+      "has_agz": false,
+      "root_corrupted": false,
+      "rule_trace": "food_security=MEDIA (conectado a territorio com AGZ); shortage_pressure=45 (base por food_security ); welfare=MEDIO (1 construcoes RESIDENCIAL/INSTITUCIONAL)"
+    },
+    {
+      "territory_id": "TER-002",
+      "food_security": "MEDIA",
+      "shortage_pressure": 45,
+      "welfare": "BAIXO",
+      "welfare_construction_count": 0,
+      "has_agz": false,
+      "root_corrupted": false,
+      "rule_trace": "food_security=MEDIA (conectado a territorio com AGZ); shortage_pressure=45 (base por food_security ); welfare=BAIXO (0 construcoes RESIDENCIAL/INSTITUCIONAL)"
+    },
+    {
+      "territory_id": "TER-003",
+      "food_security": "MEDIA",
+      "shortage_pressure": 45,
+      "welfare": "MEDIO",
+      "welfare_construction_count": 1,
+      "has_agz": false,
+      "root_corrupted": false,
+      "rule_trace": "food_security=MEDIA (conectado a territorio com AGZ); shortage_pressure=45 (base por food_security ); welfare=MEDIO (1 construcoes RESIDENCIAL/INSTITUCIONAL)"
+    },
+    {
+      "territory_id": "TER-004",
+      "food_security": "ALTA",
+      "shortage_pressure": 20,
+      "welfare": "MEDIO",
+      "welfare_construction_count": 2,
+      "has_agz": true,
+      "root_corrupted": false,
+      "rule_trace": "food_security=ALTA (AGZ propria); shortage_pressure=20 (base por food_security ); welfare=MEDIO (2 construcoes RESIDENCIAL/INSTITUCIONAL)"
+    },
+    {
+      "territory_id": "TER-005",
+      "food_security": "MEDIA",
+      "shortage_pressure": 45,
+      "welfare": "MEDIO",
+      "welfare_construction_count": 2,
+      "has_agz": false,
+      "root_corrupted": false,
+      "rule_trace": "food_security=MEDIA (conectado a territorio com AGZ); shortage_pressure=45 (base por food_security ); welfare=MEDIO (2 construcoes RESIDENCIAL/INSTITUCIONAL)"
+    },
+    {
+      "territory_id": "TER-006",
+      "food_security": "ALTA",
+      "shortage_pressure": 20,
+      "welfare": "MEDIO",
+      "welfare_construction_count": 2,
+      "has_agz": true,
+      "root_corrupted": false,
+      "rule_trace": "food_security=ALTA (AGZ propria); shortage_pressure=20 (base por food_security ); welfare=MEDIO (2 construcoes RESIDENCIAL/INSTITUCIONAL)"
+    },
+    {
+      "territory_id": "TER-007",
+      "food_security": "ALTA",
+      "shortage_pressure": 20,
+      "welfare": "MEDIO",
+      "welfare_construction_count": 2,
+      "has_agz": true,
+      "root_corrupted": false,
+      "rule_trace": "food_security=ALTA (AGZ propria); shortage_pressure=20 (base por food_security ); welfare=MEDIO (2 construcoes RESIDENCIAL/INSTITUCIONAL)"
+    },
+    {
+      "territory_id": "TER-008",
+      "food_security": "ALTA",
+      "shortage_pressure": 35,
+      "welfare": "ALTO",
+      "welfare_construction_count": 3,
+      "has_agz": true,
+      "root_corrupted": true,
+      "rule_trace": "food_security=ALTA (AGZ propria); shortage_pressure=35 (base por food_security +15 corrupcao); welfare=ALTO (3 construcoes RESIDENCIAL/INSTITUCIONAL)"
+    },
+    {
+      "territory_id": "TER-009",
+      "food_security": "ALTA",
+      "shortage_pressure": 35,
+      "welfare": "MEDIO",
+      "welfare_construction_count": 2,
+      "has_agz": true,
+      "root_corrupted": true,
+      "rule_trace": "food_security=ALTA (AGZ propria); shortage_pressure=35 (base por food_security +15 corrupcao); welfare=MEDIO (2 construcoes RESIDENCIAL/INSTITUCIONAL)"
+    },
+    {
+      "territory_id": "TER-010",
+      "food_security": "MEDIA",
+      "shortage_pressure": 45,
+      "welfare": "MEDIO",
+      "welfare_construction_count": 2,
+      "has_agz": false,
+      "root_corrupted": false,
+      "rule_trace": "food_security=MEDIA (conectado a territorio com AGZ); shortage_pressure=45 (base por food_security ); welfare=MEDIO (2 construcoes RESIDENCIAL/INSTITUCIONAL)"
+    },
+    {
+      "territory_id": "TER-011",
+      "food_security": "ALTA",
+      "shortage_pressure": 35,
+      "welfare": "MEDIO",
+      "welfare_construction_count": 1,
+      "has_agz": true,
+      "root_corrupted": true,
+      "rule_trace": "food_security=ALTA (AGZ propria); shortage_pressure=35 (base por food_security +15 corrupcao); welfare=MEDIO (1 construcoes RESIDENCIAL/INSTITUCIONAL)"
+    },
+    {
+      "territory_id": "TER-012",
+      "food_security": "ALTA",
+      "shortage_pressure": 35,
+      "welfare": "BAIXO",
+      "welfare_construction_count": 0,
+      "has_agz": true,
+      "root_corrupted": true,
+      "rule_trace": "food_security=ALTA (AGZ propria); shortage_pressure=35 (base por food_security +15 corrupcao); welfare=BAIXO (0 construcoes RESIDENCIAL/INSTITUCIONAL)"
+    },
+    {
+      "territory_id": "TER-013",
+      "food_security": "ALTA",
+      "shortage_pressure": 35,
+      "welfare": "MEDIO",
+      "welfare_construction_count": 1,
+      "has_agz": true,
+      "root_corrupted": true,
+      "rule_trace": "food_security=ALTA (AGZ propria); shortage_pressure=35 (base por food_security +15 corrupcao); welfare=MEDIO (1 construcoes RESIDENCIAL/INSTITUCIONAL)"
+    },
+    {
+      "territory_id": "TER-014",
+      "food_security": "MEDIA",
+      "shortage_pressure": 45,
+      "welfare": "MEDIO",
+      "welfare_construction_count": 1,
+      "has_agz": false,
+      "root_corrupted": false,
+      "rule_trace": "food_security=MEDIA (conectado a territorio com AGZ); shortage_pressure=45 (base por food_security ); welfare=MEDIO (1 construcoes RESIDENCIAL/INSTITUCIONAL)"
+    },
+    {
+      "territory_id": "TER-015",
+      "food_security": "MEDIA",
+      "shortage_pressure": 60,
+      "welfare": "MEDIO",
+      "welfare_construction_count": 2,
+      "has_agz": false,
+      "root_corrupted": true,
+      "rule_trace": "food_security=MEDIA (conectado a territorio com AGZ); shortage_pressure=60 (base por food_security +15 corrupcao); welfare=MEDIO (2 construcoes RESIDENCIAL/INSTITUCIONAL)"
+    },
+    {
+      "territory_id": "TER-016",
+      "food_security": "MEDIA",
+      "shortage_pressure": 60,
+      "welfare": "MEDIO",
+      "welfare_construction_count": 1,
+      "has_agz": false,
+      "root_corrupted": true,
+      "rule_trace": "food_security=MEDIA (conectado a territorio com AGZ); shortage_pressure=60 (base por food_security +15 corrupcao); welfare=MEDIO (1 construcoes RESIDENCIAL/INSTITUCIONAL)"
+    },
+    {
+      "territory_id": "TER-017",
+      "food_security": "MEDIA",
+      "shortage_pressure": 45,
+      "welfare": "BAIXO",
+      "welfare_construction_count": 0,
+      "has_agz": false,
+      "root_corrupted": false,
+      "rule_trace": "food_security=MEDIA (conectado a territorio com AGZ); shortage_pressure=45 (base por food_security ); welfare=BAIXO (0 construcoes RESIDENCIAL/INSTITUCIONAL)"
+    },
+    {
+      "territory_id": "TER-018",
+      "food_security": "MEDIA",
+      "shortage_pressure": 45,
+      "welfare": "MEDIO",
+      "welfare_construction_count": 2,
+      "has_agz": false,
+      "root_corrupted": false,
+      "rule_trace": "food_security=MEDIA (conectado a territorio com AGZ); shortage_pressure=45 (base por food_security ); welfare=MEDIO (2 construcoes RESIDENCIAL/INSTITUCIONAL)"
+    },
+    {
+      "territory_id": "TER-019",
+      "food_security": "MEDIA",
+      "shortage_pressure": 60,
+      "welfare": "MEDIO",
+      "welfare_construction_count": 1,
+      "has_agz": false,
+      "root_corrupted": true,
+      "rule_trace": "food_security=MEDIA (conectado a territorio com AGZ); shortage_pressure=60 (base por food_security +15 corrupcao); welfare=MEDIO (1 construcoes RESIDENCIAL/INSTITUCIONAL)"
+    }
+  ],
+  "worked_causal_example": {
+    "contract_reference": "CONSEQUENCE_ENGINE_CONTRACT_V1_0 (max_depth=8, budget=64) - exemplo usa so 4 elos, dentro do limite.",
+    "chain": [
+      {
+        "step": 1,
+        "event": "Corrupcao da Raiz Profunda se instala em SUB-012-001 Perimetro de Contencao Alfa (fase 57, portao autoral)."
+      },
+      {
+        "step": 2,
+        "event": "shortage_pressure de TER-012 sobe (BAIXA food_security + corrupcao = pressao alta), ja refletido neste arquivo."
+      },
+      {
+        "step": 3,
+        "event": "Populacao desloca-se para SUB-012-002 Campo de Deslocados (ja existente na lore desde a fase 44 - 'abriga deslocados por incidentes em outros territorios')."
+      },
+      {
+        "step": 4,
+        "event": "Demanda por JOB-015 Guarda e resposta a risco e JOB-012 Especialista em contencao aumenta em TER-012 (ja refletido nos placements de profissao existentes, EST-009/EST-040)."
+      }
+    ],
+    "canon_note": "Cadeia so formaliza causalidade entre fatos ja escritos em fases anteriores - nenhum evento novo e inventado, nenhuma soberania muda."
+  },
+  "prohibitions": [
+    "NO_FACTION_INFLUENCE_AS_SOVEREIGNTY",
+    "NO_NEW_AGZ_OR_TERRITORY",
+    "NO_NUMERIC_STATE_AS_CANON_FACT"
+  ]
+}

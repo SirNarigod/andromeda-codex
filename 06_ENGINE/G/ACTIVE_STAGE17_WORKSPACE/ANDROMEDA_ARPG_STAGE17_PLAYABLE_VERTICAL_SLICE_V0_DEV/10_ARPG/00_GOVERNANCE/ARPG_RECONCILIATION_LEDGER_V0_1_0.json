@@ -1,0 +1,52 @@
+{
+  "record_id": "ARPG-RECONCILIATION-LEDGER-V0.1.0",
+  "status": "PASS",
+  "corrections": [
+    {
+      "id": "ARPG-0001",
+      "issue": "V1.3-V1.5 required Master V2.1.0 not present in sealed authority set",
+      "action": "Pin active runtime to Master V2.0.1 and remove active V2.1 acceptance",
+      "state": "APPLIED"
+    },
+    {
+      "id": "ARPG-0002",
+      "issue": "Country Scale runtime authority string claimed Master V2.1",
+      "action": "Relabel active derived authority to Master V2.0.1 derivation",
+      "state": "APPLIED"
+    },
+    {
+      "id": "ARPG-0003",
+      "issue": "Commerce expected optional V2.1 country item catalog",
+      "action": "Replace with 54 explicitly gameplay-derived DEV catalog records while preserving 30 canonical Master weapons",
+      "state": "APPLIED"
+    },
+    {
+      "id": "ARPG-0004",
+      "issue": "Stage count stated 18 while numbered 00-18",
+      "action": "Correct total to 19 stages",
+      "state": "APPLIED"
+    },
+    {
+      "id": "ARPG-0005",
+      "issue": "Initial derived catalog injection changed legacy V1.1 catalog count from 30 to 84",
+      "action": "Make gameplay-derived catalog opt-in only for Country/ARPG V1.3+; legacy V1.1/V1.2 remain canonical-only",
+      "state": "APPLIED"
+    },
+    {
+      "id": "ARPG-0006",
+      "issue": "Transient __pycache__ artifacts caused hygiene validation failure",
+      "action": "Remove transient artifacts, disable bytecode generation in validation, rerun full Stage00 validation",
+      "state": "APPLIED"
+    },
+    {
+      "id": "ARPG-0007",
+      "issue": "Active historical test runners still referenced unavailable Master V2.1.0",
+      "action": "Move 11 obsolete runners to 08_HISTORY/QUARANTINED_V21_TESTS",
+      "state": "APPLIED"
+    }
+  ],
+  "historical_v21_reports_policy": "PRESERVED_AS_HISTORY_BUT_NOT_ACTIVE_AUTHORITY",
+  "pending": [],
+  "stage00_result": "RECONCILED_AND_VALIDATED",
+  "next_stage": "01_GAME_CORE"
+}

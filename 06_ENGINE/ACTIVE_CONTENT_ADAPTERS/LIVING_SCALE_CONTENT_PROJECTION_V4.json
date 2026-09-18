@@ -1,0 +1,11 @@
+{
+  "record_id":"LIVING_SCALE_CONTENT_PROJECTION_V4",
+  "status":"ACTIVE_ENGINE_NEUTRAL_READ_ONLY",
+  "supersedes":"LIVING_SCALE_CONTENT_PROJECTION_V3",
+  "routing_registry":"01_LORE/CONTENT_ROUTING_REGISTRY_V4.json",
+  "hierarchy":["PLANET","COUNTRY","POLITICAL_UNIT","REGION","SUBREGION","BIOME_CITY_POI","SCENE","ENTITY_ITEM_INSTANCE"],
+  "r2_bindings":{"PLANET":["PLA-001"],"POLITICAL_UNIT":["TER-001","TER-002","TER-003","TER-004","TER-005","TER-006","TER-007","TER-008","TER-009","TER-010","TER-011","TER-012","TER-013"],"BIOME":["BIO-001","BIO-002","BIO-003","BIO-004","BIO-005","BIO-006"],"CITY_POI":["CIT-001","CIT-002"]},
+  "derived_subregion_bindings":{"parent":"TER-011","records":["SUB-011-001","SUB-011-002","SUB-011-003","SUB-011-004","SUB-011-005","SUB-011-006"],"rule":"Derived subregions are non-sovereign local overlays. They reference R2 cities and POIs but never duplicate or replace them."},
+  "catalog_overlays":{"resource_and_profession":"May attach only to existing political units, biomes, cities, POIs or approved local overlays.","npc_role":"May attach only as a generic scene role; named R2 appearance requires an authorial gate.","encounter":"May attach as contextual behavior; exact positions and spawn counts are runtime-only.","balance":"May select technical tuning tier, never canonical difficulty or power level.","no_geography_creation":true},
+  "rules":["STATE_MEANS_POLITICAL_UNIT","UNDEFINED_REGIONS_REMAIN_PENDING","EXACT_COUNTS_POSITIONS_STOCKS_PRICES_AND_INSTANCE_STATE_ARE_RUNTIME_ONLY","DERIVED_SUBREGION_REQUIRES_PROVENANCE","NO_CANON_WRITE"]
+}

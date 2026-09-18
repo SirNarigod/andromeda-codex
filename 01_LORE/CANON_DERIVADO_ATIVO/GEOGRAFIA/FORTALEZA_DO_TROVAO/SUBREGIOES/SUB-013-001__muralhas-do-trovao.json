@@ -1,0 +1,11 @@
+{
+  "record_id": "SUB-013-001", "record_kind": "DERIVED_SUBREGION_PROFILE", "authority": "CANON_DERIVADO_ATIVO", "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Muralhas do Trovão", "parent_political_unit": "TER-013",
+  "provenance": {"approval": "GAMEPLAY_DERIVED_DEV_SOURCE", "r2_anchors": ["TER-013", "serverus-vaelkor"], "compatibility": "Camada administrativa e narrativa local; não cria fronteira, cidade, soberania ou nova autoridade."},
+  "function": "Defesas externas do domínio pessoal de Serverus Vaelkor.",
+  "locality_references": ["LOC-013-001 Portão Principal"],
+  "permitted_catalog_links": {"npc_roles": ["classe:Soldados"], "professions": [], "encounters": [], "resources": []},
+  "local_conflicts": ["lealdade contratada versus convicção pessoal dos guardas"],
+  "prohibitions": ["NO_NEW_SOVEREIGNTY", "NO_AUTOMATIC_KENUA_SCENE", "NO_R2_EPISODE_REWRITE", "NO_FIXED_BORDER_COORDINATE"],
+  "story_generators": ["Um mandado de Serverus chega às muralhas exigindo passagem imediata, testando a lealdade dos guardas."]
+}

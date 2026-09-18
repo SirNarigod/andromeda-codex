@@ -1,0 +1,134 @@
+{
+  "record_id": "ANDROMEDA-STAGE16B-G16B-04-ROOT-CAUSE-V0.8.3",
+  "captured_at": "2026-08-23T09:20:00-03:00",
+  "supersedes": "AUTHORITY_G16B_04_BLOCKER_V0_8_1.json",
+  "gate": "G16B-04",
+  "status": "PASS",
+  "previous_status": "PARTIAL_EVIDENCE",
+
+  "requirement_analysis": {
+    "acceptance_matrix_text": "Pickup impossible above 0.5m, through blocker, or before drop settles.",
+    "source": "02_CONTRACTS/ARPG_STAGE16A/ARPG_STAGE16B_GODOT_ACCEPTANCE_MATRIX_V0_8_0.json",
+    "supporting_contract": {
+      "file": "02_CONTRACTS/ARPG_STAGE16A/ARPG_GODOT_HANDOFF_MANIFEST_V0_8_0.json#ground_loot",
+      "pickup_radius_m": 0.5,
+      "manual_pickup": "click=>path=>pickup only at <=0.5m",
+      "blocked_path": "no pickup",
+      "settling": "physical drop settles safely, then freezes/sleeps; prevent endless rolling/terrain penetration"
+    },
+    "absolute_ground_loot_world_position_required": false,
+    "test_added_assumptions_reviewed": [
+      {
+        "check": "EXACT_0_5_PRESENTATION_DISTANCE",
+        "origin": "Pre-existing, authored before this round; not written by the current investigation.",
+        "contract_derivation": "The client decides whether to submit a pickup from the presented distance. If presentation and authority disagree, the client refuses pickups the authority considers in range, which violates manual_pickup 'pickup only at <=0.5m'. The check guards that contract clause; it does not assert an absolute world position.",
+        "kept": true,
+        "reason_kept": "It passes after the root-cause fix and it is the only client-side guard against the defect returning. Removing it would hide a real functional failure."
+      },
+      {
+        "check": "AUTHORITY_TO_PRESENTATION_COORDINATE_ANCHOR",
+        "contract_derivation": "Same clause as above; asserts the presentation anchor has not gone stale.",
+        "kept": true
+      }
+    ],
+    "checks_removed_to_obtain_pass": []
+  },
+
+  "root_cause": {
+    "summary": "The iso->Godot presentation anchor was captured once and never refreshed, while the Godot player node never follows the authoritative transform. Every authoritative player move therefore added its full displacement to the presented Ground Loot distance.",
+    "file": "07_GODOT_ARPG_STAGE16B/scripts/interaction/ground_loot_pickup_client.gd",
+    "function": "_update_authority_projection_anchor",
+    "defect": "The function returned early forever after the first snapshot (`if _authority_origin_known or _player == null: return`). The mapping is presentation = _presentation_origin + (iso - authority_origin_iso), anchored on the pair (authoritative player position, player node position) captured at that first snapshot.",
+    "why_it_varied": "It is not a fixed offset. The error equals the authoritative player displacement accumulated since the anchor, so it grows with the run and its sign depends on the direction of travel. The two earlier observations (-0.089 m, +0.41 m) were two points on that accumulation.",
+    "dual_position_authority_confirmed": true,
+    "which_authority_was_wrong": "The presentation layer. The backend was exact in every sample."
+  },
+
+  "hypotheses_disproved": [
+    {
+      "hypothesis": "Client physics keeps simulating the drop after settled=true, creating a second logical position (Test A).",
+      "verdict": "DISPROVED",
+      "evidence": "In all 30 samples the body reported freeze=true, sleeping state stable and linear_velocity length exactly 0.000000000 while the divergence was present. Zero local physics, divergence unchanged."
+    },
+    {
+      "hypothesis": "The test compares different geometric references: root origin vs collider centre vs mesh origin (Test B).",
+      "verdict": "DISPROVED",
+      "evidence": "Maximum distance from the RigidBody3D root to CollisionShape3D and PlaceholderVisual is 0.000000000 m. The only non-zero value, 0.28 m, is the PickupSensor Area3D, which the pickup path does not use."
+    },
+    {
+      "hypothesis": "Temporal desynchronisation: snapshot N compared against visual frame N+1/N+2 (Test C).",
+      "verdict": "DISPROVED",
+      "evidence": "Every measurement was taken only after the authoritative snapshot reported settled=true, the body was frozen, speed was below 0.001 m/s and two physics frames had completed. The divergence persisted unchanged."
+    }
+  ],
+
+  "measurements": {
+    "method": "tests/godot/g16b04_position_divergence_diagnostic.gd, 30 drops in one clean-world run. Per-drop repetition was used instead of 30 process launches because the variance source is per-drop authoritative displacement, not per-process state; the accumulation is visible within a single run and each sample is independently anchored.",
+    "same_target_ref_for_all_paired_readings": true,
+    "before_fix": {
+      "authority_distance_m": {"min": 0.5, "max": 0.5, "mean": 0.5, "stdev": 0.0},
+      "presentation_distance_m": {"min": 1.899498, "max": 14.623888, "mean": 7.673312, "stdev": 4.002505},
+      "delta_m": {"min": 1.399498, "max": 14.123888, "mean": 7.173312, "median": 6.994972, "stdev": 4.002505},
+      "delta_sign": {"negative": 0, "zero": 0, "positive": 30},
+      "player_node_drift_m": 0.0,
+      "player_authority_drift_m": 15.0,
+      "interpretation": "delta tracks authoritative player displacement one-to-one while the player node never moves."
+    },
+    "after_fix": {
+      "authority_distance_m": {"min": 0.5, "max": 0.5},
+      "delta_m": {"min": 0.0, "max": 0.0, "mean": 0.0, "median": 0.0, "stdev": 0.0},
+      "samples_within_1e-5": "30/30"
+    }
+  },
+
+  "fix": {
+    "file": "07_GODOT_ARPG_STAGE16B/scripts/interaction/ground_loot_pickup_client.gd",
+    "change": "_update_authority_projection_anchor now refreshes the anchor pair on every snapshot instead of only the first. Tombstones are still cleared only on the first anchor, preserving the original semantics.",
+    "layer": "PRESENTATION_ONLY",
+    "backend_touched": false,
+    "pickup_rule_touched": false,
+    "item_core_touched": false,
+    "bag_touched": false,
+    "tolerance_changed": false,
+    "architectural_rule_restored": "The backend stays the authority over existence, ownership, logical position and pickup. Godot presents settling. After the authoritative settled state the client no longer maintains a second, divergent logical position."
+  },
+
+  "verification": {
+    "g16b_04_gate_isolated": [
+      {"run": 1, "checks": 53, "passed": 53, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+      {"run": 2, "checks": 53, "passed": 53, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+      {"run": 3, "checks": 53, "passed": 53, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+      {"run": "final", "checks": 53, "passed": 53, "failed": 0, "exit_code": 0, "stderr_bytes": 0}
+    ],
+    "b03": {"checks": 357, "passed": 357, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+    "b04": {"checks": 156, "passed": 156, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+    "b11": {"checks": 343, "passed": 343, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+    "authority_backend_validation": {
+      "record": "12_AUTHORITY_BACKEND/reports/STAGE16B_AUTHORITY_BACKEND_VALIDATION_V0_8_3.json",
+      "status": "PASS",
+      "steps": 16,
+      "python_tests": 341,
+      "failures": 0
+    },
+    "godot_debugger": "0 errors / 0 warnings on every run: stderr 0 bytes and exit 0 for the gate, B03, B04 and B11."
+  },
+
+  "g16b_04_clause_coverage_final": {
+    "above_0_5_m": "Gate FAR_SERVER_REJECTED (PICKUP_DISTANCE_EXCEEDED, live round-trip) + FAR_LOCAL_GUARD_REJECTS + backend test_05",
+    "through_blocker": "Live HTTP round-trip test_stage16b_authority_http.py::test_40 (GROUND_LOOT_UNREACHABLE, reachable_evaluated_server_side) + adapter test_07. Not probed from Godot because the ground-loot client re-confirms settle with its own reachability observation.",
+    "before_drop_settles": "Gate UNSETTLED_LOCAL_GUARD_REJECTS (client refuses to submit) + backend test_04 (authority rejects DROP_NOT_SETTLED)",
+    "positive_path": "Gate PICKUP_CORE_PASS at exactly 0.5 m server-evaluated, INVENTORY_CHANGED_ONLY_AFTER_AUTHORITY, PICKUP_REPLAY_SUPPRESSED, PICKUP_REPLAY_NO_SECOND_GRANT, REJECTED_DROPS_NOT_REMOVED"
+  },
+
+  "matrix_position": {
+    "pass": 18,
+    "partial_evidence": 10,
+    "promoted_this_record": ["G16B-04"],
+    "previously_accepted": ["G16B-03", "G16B-06", "G16B-08", "G16B-16", "G16B-21", "G16B-22"],
+    "stage16b_global_status": "NOT_PASS",
+    "checkpoint_final_created": false,
+    "final_backup_created": false,
+    "stage17_started": false,
+    "water_bag_ttl_block_started": false
+  }
+}

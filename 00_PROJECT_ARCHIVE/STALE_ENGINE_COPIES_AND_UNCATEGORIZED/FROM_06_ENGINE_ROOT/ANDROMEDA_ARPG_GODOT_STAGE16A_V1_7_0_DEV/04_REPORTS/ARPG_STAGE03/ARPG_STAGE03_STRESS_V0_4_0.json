@@ -1,0 +1,18 @@
+{
+  "record_id": "ARPG-STAGE03-STRESS-V0.4.0",
+  "stage": "03/18",
+  "checks": 17,
+  "passed": 17,
+  "failed": 0,
+  "status": "PASS",
+  "metrics": {
+    "profiles": 4,
+    "targets": 8,
+    "attack_attempts": 48,
+    "attack_passes": 48,
+    "idempotent_replays": 8,
+    "status_ticks": 8,
+    "combat_events": 52
+  },
+  "failures": []
+}

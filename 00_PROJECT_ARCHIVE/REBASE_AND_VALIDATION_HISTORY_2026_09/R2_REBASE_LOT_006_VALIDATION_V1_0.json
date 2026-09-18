@@ -1,0 +1,80 @@
+{
+  "record_id": "R2_REBASE_LOT_006_VALIDATION_V1_0",
+  "generated_at": "2026-09-07T03:46:31.090890+00:00",
+  "status": "PASS",
+  "r2_codex_sha256": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+  "biography_sha256": "a7d133276930bffbe429d029c8cc97f377b9bed2c90f30f8e44c76d46c61b8be",
+  "checks": [
+    {
+      "name": "source_hash",
+      "passed": true,
+      "detail": "Projeto Andromeda.zip remains sealed"
+    },
+    {
+      "name": "r2_entry_count",
+      "passed": true,
+      "detail": "routing 116 / R2 116"
+    },
+    {
+      "name": "one_canonical_home",
+      "passed": true,
+      "detail": "no duplicate canonical home"
+    },
+    {
+      "name": "season_episode_count",
+      "passed": true,
+      "detail": "eight canonical episode mirrors"
+    },
+    {
+      "name": "season_closure",
+      "passed": true,
+      "detail": "C:\\Users\\thall\\Documents\\ANDROMEDA CODEX\\ANDROMEDA_CODEX_CLEAN\\03_EPISODIOS\\SEASON_01_KENUA_R2\\00_SEASON_LOCK\\ENCERRAMENTO_CANONICO_TEMPORADA_1.md"
+    },
+    {
+      "name": "character_profile_count",
+      "passed": true,
+      "detail": "expected 11"
+    },
+    {
+      "name": "technical_migration",
+      "passed": true,
+      "detail": "technical folders migrated from episodes"
+    },
+    {
+      "name": "automation:ANDROMEDA_UE5_CONTENT_MANIFEST_V1.json",
+      "passed": true,
+      "detail": "C:\\Users\\thall\\Documents\\ANDROMEDA CODEX\\ANDROMEDA_CODEX_CLEAN\\07_AUTOMATION\\EXPORTS\\UE5\\ANDROMEDA_UE5_CONTENT_MANIFEST_V1.json"
+    },
+    {
+      "name": "automation:BLENDER_ASSET_BRIEFS_V1.json",
+      "passed": true,
+      "detail": "C:\\Users\\thall\\Documents\\ANDROMEDA CODEX\\ANDROMEDA_CODEX_CLEAN\\07_AUTOMATION\\EXPORTS\\BLENDER\\BLENDER_ASSET_BRIEFS_V1.json"
+    },
+    {
+      "name": "automation:CANVA_VISUAL_BRIEFS_V1.json",
+      "passed": true,
+      "detail": "C:\\Users\\thall\\Documents\\ANDROMEDA CODEX\\ANDROMEDA_CODEX_CLEAN\\07_AUTOMATION\\EXPORTS\\CANVA\\CANVA_VISUAL_BRIEFS_V1.json"
+    },
+    {
+      "name": "automation:ANDROMEDA_CONTENT_AUTOMATION_CONTRACT_V1.json",
+      "passed": true,
+      "detail": "C:\\Users\\thall\\Documents\\ANDROMEDA CODEX\\ANDROMEDA_CODEX_CLEAN\\07_AUTOMATION\\CONTRACTS\\ANDROMEDA_CONTENT_AUTOMATION_CONTRACT_V1.json"
+    },
+    {
+      "name": "safe_exports_no_sealed",
+      "passed": true,
+      "detail": "sealed/high spoiler records excluded"
+    },
+    {
+      "name": "adapter:LIVING_SIM_CONTENT_PROJECTION_V1.json",
+      "passed": true,
+      "detail": "C:\\Users\\thall\\Documents\\ANDROMEDA CODEX\\ANDROMEDA_CODEX_CLEAN\\06_ENGINE\\ACTIVE_CONTENT_ADAPTERS\\LIVING_SIM_CONTENT_PROJECTION_V1.json"
+    },
+    {
+      "name": "adapter:LIVING_SCALE_CONTENT_PROJECTION_V1.json",
+      "passed": true,
+      "detail": "C:\\Users\\thall\\Documents\\ANDROMEDA CODEX\\ANDROMEDA_CODEX_CLEAN\\06_ENGINE\\ACTIVE_CONTENT_ADAPTERS\\LIVING_SCALE_CONTENT_PROJECTION_V1.json"
+    }
+  ],
+  "errors": []
+}

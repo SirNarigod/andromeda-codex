@@ -1,0 +1,84 @@
+{
+  "record_id": "ANDROMEDA-STAGE16B-AUTHORITY-GATE-PROMOTIONS-V0.8.2",
+  "captured_at": "2026-08-22T14:40:00-03:00",
+  "world": "FRESH_WORLD_CREATED_FOR_THIS_EVIDENCE_RUN",
+  "previous_world": "archived under 12_AUTHORITY_BACKEND/var_archive_* (not deleted)",
+  "gate_invocation": "Godot.exe --headless --path . res://tests/godot/<Gate>.tscn -- --gate-success-linger=0",
+
+  "gates_executed_on_clean_world": [
+    {"gate": "AuthorityProfileRuntimeGate", "checks": 53, "passed": 53, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+    {"gate": "AuthorityTraversalRuntimeGate", "checks": 40, "passed": 40, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+    {"gate": "AuthorityGroundLootRuntimeGate", "checks": 33, "passed": 26, "failed": 7, "exit_code": 1, "blocked_by": "AUTHORITY_G16B_04_BLOCKER_V0_8_1.json"}
+  ],
+
+  "promotions_proposed": [
+    {
+      "gate": "G16B-06",
+      "requirement": "Auto Pickup ON/OFF works, persists, and never interrupts attack/movement.",
+      "clause_evidence": {
+        "works": "AuthorityProfileRuntimeGate AUTO_PICKUP_CORE_PASS / AUTO_PICKUP_SNAPSHOT_CHANGED / AUTO_PICKUP_HUD_CORRECTED_BY_SNAPSHOT (live round-trip)",
+        "persists": "AuthoritySaveDeathRuntimeGate FIRST_RESTORE_PREFERENCE_CONTINUITY (authoritative reload) + tests/test_stage16b_authority_profile_loadout.py::test_06 (adapter restart)",
+        "never_interrupts_attack": "tests/test_stage16b_authority_profile_loadout.py::test_31 - the toggle does not clear or restart the authoritative ATTACK_COOLDOWN",
+        "never_interrupts_movement": "tests/test_stage16b_authority_profile_loadout.py::test_30 - motion state (position, stamina, mode, heading, elapsed) is byte-identical across the toggle"
+      }
+    },
+    {
+      "gate": "G16B-08",
+      "requirement": "Slope+surface+load affect authoritative stamina; yellow radial player-adjacent stamina circle depletes/refills and disappears completely at 100% when inactive.",
+      "clause_evidence": {
+        "slope_surface_load": "AuthorityTraversalRuntimeGate TRAVERSAL_STAGE16A_SLOPE / TRAVERSAL_STAGE16A_SURFACE / TRAVERSAL_LOAD_FROM_INVENTORY_CORE / ROAD_ADVANTAGE_AUTHORITATIVE / MUD_SPEED_PENALTY_AUTHORITATIVE / MODERATE_SLOPE_COST_ABOVE_FLAT_ROAD",
+        "depletes": "AuthorityTraversalRuntimeGate STAMINA_DECREASED_IN_AUTHORITY + STAMINA_RING_VISIBLE_AFTER_COST",
+        "refills": "AuthorityTraversalRuntimeGate STAMINA_RING_REFILLS_FROM_AUTHORITY + REFILL_MATCHES_AUTHORITATIVE_SNAPSHOT; adapter-level tests/test_stage16b_authority_traversal.py::test_10 and ::test_11",
+        "hidden_at_full_when_inactive": "B05/B06 runtime gate B05_STAMINA_FULL_IDLE_HIDDEN (client presentation)",
+        "client_cannot_forge_refill": "tests/test_stage16b_authority_traversal.py::test_12 - a client-supplied stamina field is rejected and the authoritative value is unchanged"
+      }
+    },
+    {
+      "gate": "G16B-21",
+      "requirement": "Player quick loadout exposes exactly 2 weapon slots; inventory may contain more weapons; only one slot is active/equipped in MAIN_HAND at a time and inactive weapon modifiers do not stack.",
+      "clause_evidence": {
+        "exactly_two_slots": "AuthorityProfileRuntimeGate QUICK_LOADOUT_EXPOSES_EXACTLY_TWO_SLOTS / EXACTLY_TWO_AUTHORITY_QUICKSLOTS",
+        "inventory_may_contain_more": "AuthorityProfileRuntimeGate INVENTORY_MAY_CARRY_MORE_WEAPONS_THAN_SLOTS + tests/test_stage16b_authority_profile_loadout.py::test_20",
+        "one_main_hand_at_a_time": "AuthorityProfileRuntimeGate ONE_AUTHORITY_ACTIVE_SLOT / MAIN_HAND_MATCHES_ACTIVE_QUICKSLOT / CYCLE_ONLY_ONE_MAIN_HAND",
+        "inactive_modifiers_do_not_stack": "AuthorityProfileRuntimeGate ONLY_ONE_MAIN_HAND_MODIFIER_APPLIED / ACTIVATE_NO_INACTIVE_MODIFIER_STACK + tests/test_stage16b_authority_profile_loadout.py::test_21 and ::test_22 (the spare weapon never applies modifiers, before or after a slot swap)"
+      }
+    }
+  ],
+
+  "backend_changes": [
+    {
+      "change": "_ensure_spare_weapon in the development profile bootstrap",
+      "why": "G16B-21 states the inventory may hold more weapons than the two quick slots. With exactly two weapons in the world that distinction was assumed, never observed.",
+      "authority": "Granted by the protected Stage05 item core. The adapter chooses nothing about the weapon beyond taking the last catalog definition.",
+      "idempotency": "Each attempt uses its own event_ref and is verified against the live inventory, because the item core replays a stored grant and would otherwise report PASS while granting nothing."
+    }
+  ],
+
+  "gate_defects_fixed": [
+    {
+      "file": "tests/godot/authority_profile_runtime_gate.gd",
+      "defect": "Command results were read by arrival index (_commands[0..2]). With Auto Pickup on, the ground-loot client injects its own REQUEST_PICKUP into the same stream and the checks read another command's result.",
+      "fix": "_result_for_command() matches by command name; snapshots are read as the latest after the awaited result."
+    },
+    {
+      "file": "tests/godot/authority_traversal_runtime_gate.gd",
+      "defect": "MOVE_TO_POINT results were never collected: the gate filters command results to REPORT_TRAVERSAL_SAMPLE only.",
+      "fix": "Dedicated _move_results collector for the refill steps."
+    }
+  ],
+
+  "not_promoted": {
+    "G16B-04": "PARTIAL_EVIDENCE. See AUTHORITY_G16B_04_BLOCKER_V0_8_1.json. The clean-world run reproduces the client/authority presentation divergence with a different magnitude (+0.41 m here, -0.089 m previously), confirming it is a client characteristic and not a tuning value."
+  },
+
+  "matrix_position": {
+    "sustained_before_this_round": ["G16B-03", "G16B-16", "G16B-22"],
+    "proposed_this_round": ["G16B-06", "G16B-08", "G16B-21"],
+    "pass_count_if_accepted": 17,
+    "partial_evidence_count_if_accepted": 11,
+    "stage16b_global_status": "NOT_PASS",
+    "checkpoint_final_created": false,
+    "final_backup_created": false,
+    "stage17_started": false
+  }
+}

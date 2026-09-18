@@ -1,0 +1,11 @@
+{
+  "record_id": "SUB-004-001", "record_kind": "DERIVED_SUBREGION_PROFILE", "authority": "CANON_DERIVADO_ATIVO", "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Porto Livre de Navyr", "parent_political_unit": "TER-004",
+  "provenance": {"approval": "GAMEPLAY_DERIVED_DEV_SOURCE", "r2_anchors": ["TER-004", "nymara-vel-thal"], "compatibility": "Camada administrativa e narrativa local; não cria fronteira, cidade, soberania ou nova autoridade."},
+  "function": "Porto franco central do arquipélago, ponto de encontro de todas as ilhas da confederação.",
+  "locality_references": ["LOC-004-001 Cais Principal"],
+  "permitted_catalog_links": {"npc_roles": [], "professions": ["marinheiro"], "encounters": [], "resources": []},
+  "local_conflicts": ["liberdade portuária versus regulação de tráfego marítimo", "disputa entre ilhas por prioridade de atracação"],
+  "prohibitions": ["NO_NEW_SOVEREIGNTY", "NO_AUTOMATIC_KENUA_SCENE", "NO_R2_EPISODE_REWRITE", "NO_FIXED_BORDER_COORDINATE"],
+  "story_generators": ["Uma tempestade força dezenas de navios a disputar o mesmo cais em poucas horas.", "Uma ilha membro ameaça deixar a confederação por taxas portuárias desiguais."]
+}

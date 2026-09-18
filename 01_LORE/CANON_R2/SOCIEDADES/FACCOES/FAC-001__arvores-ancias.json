@@ -1,0 +1,66 @@
+{
+  "record_id": "FAC-001",
+  "record_kind": "R2_CANONICAL_ENTRY_MIRROR",
+  "authority": "CANON_R2_CONFIRMADO",
+  "canonical_home": "01_LORE/CANON_R2/SOCIEDADES/FACCOES/FAC-001__arvores-ancias.json",
+  "source": {
+    "archive_sha256": "257e456a5d0396310ec2355b3dfc0f11f4e0a5264cf6e764591c8760f5070cb0",
+    "lineage": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json",
+    "document_sha256": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726"
+  },
+  "entry": {
+    "code": "FAC-001",
+    "slug": "arvores-ancias",
+    "title": "Árvores Anciãs",
+    "subtitle": "Instituição de preservação e magia",
+    "category": "FAC",
+    "secondaryCategories": [],
+    "canon": "Cânone consolidado",
+    "spoiler": 1,
+    "sealed": false,
+    "image": null,
+    "imageStatus": null,
+    "summary": "Instituição dedicada à preservação do Coração Ancestral, ao registro da magia e à contenção de ameaças biológicas.",
+    "facts": {
+      "Fundação": "1732 APC",
+      "Liderança atual": "Genes Arvath",
+      "Especialidades": "Contenção, cura, memória e magia vegetal",
+      "Estrutura": "Ordem hierárquica também chamada de culto por observadores externos",
+      "Ramo de Serlis": "Ramo Interno de Contenção"
+    },
+    "sections": [
+      {
+        "heading": "Hierarquia",
+        "body": "A instituição organiza magos por ramos de memória, cura, pesquisa e contenção. Serlis ocupava uma posição respeitada como Mestre de Contenção do Ramo Interno."
+      },
+      {
+        "heading": "Busca por Serlis",
+        "body": "Sob ordem de Genes, discípulos serão enviados para localizar e trazer Serlis de volta vivo. A perseguição será explorada progressivamente, sem concentrar toda a revelação no primeiro episódio."
+      }
+    ],
+    "relations": [
+      {
+        "slug": "genes-arvath",
+        "label": "Liderança"
+      },
+      {
+        "slug": "serlis-aftermoon",
+        "label": "Antigo membro"
+      },
+      {
+        "slug": "coracao-ancestral",
+        "label": "Santuário principal"
+      }
+    ],
+    "keywords": [
+      "Árvores Anciãs",
+      "Genes",
+      "magia",
+      "contenção"
+    ],
+    "sources": [
+      "CRONOLOGIA_842_EC.md",
+      "RESUMO_MESTRE_CANONICO.md"
+    ]
+  }
+}

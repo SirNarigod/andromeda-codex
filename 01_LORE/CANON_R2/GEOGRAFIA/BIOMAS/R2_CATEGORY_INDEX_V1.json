@@ -1,0 +1,51 @@
+{
+  "record_id": "R2-BIO-CATEGORY-INDEX-V1",
+  "authority": "CANON_R2_CONFIRMADO",
+  "category": "BIO",
+  "category_name": "Biomas",
+  "items": [
+    {
+      "id": "BIO-001",
+      "title": "Coração Ancestral",
+      "path": "01_LORE/CANON_R2/GEOGRAFIA/BIOMAS/BIO-001__coracao-ancestral.json",
+      "spoiler": 0,
+      "sealed": false
+    },
+    {
+      "id": "BIO-002",
+      "title": "Planícies Luminais",
+      "path": "01_LORE/CANON_R2/GEOGRAFIA/BIOMAS/BIO-002__planicies-luminais.json",
+      "spoiler": 2,
+      "sealed": false
+    },
+    {
+      "id": "BIO-003",
+      "title": "Oceanos e Abissos",
+      "path": "01_LORE/CANON_R2/GEOGRAFIA/BIOMAS/BIO-003__oceanos-e-abissos.json",
+      "spoiler": 2,
+      "sealed": false
+    },
+    {
+      "id": "BIO-004",
+      "title": "Subsolo Cristalino",
+      "path": "01_LORE/CANON_R2/GEOGRAFIA/BIOMAS/BIO-004__subsolo-cristalino.json",
+      "spoiler": 2,
+      "sealed": false
+    },
+    {
+      "id": "BIO-005",
+      "title": "Picos de Tempestade",
+      "path": "01_LORE/CANON_R2/GEOGRAFIA/BIOMAS/BIO-005__picos-de-tempestade.json",
+      "spoiler": 2,
+      "sealed": false
+    },
+    {
+      "id": "BIO-006",
+      "title": "Pântanos Rubros",
+      "path": "01_LORE/CANON_R2/GEOGRAFIA/BIOMAS/BIO-006__pantanos-rubros.json",
+      "spoiler": 2,
+      "sealed": false
+    }
+  ],
+  "source": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json"
+}

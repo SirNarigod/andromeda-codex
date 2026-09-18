@@ -1,0 +1,1625 @@
+{
+  "record_id": "MASTER-FAUNA-CATALOG-V2.0.0",
+  "title": "Fauna oficial do MASTER V2.0.1 (64 especies)",
+  "provenance": {
+    "master_release": "ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE",
+    "master_release_zip_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "source_files": [
+      "01_CANON/ANDROMEDA_CODEX_CANON_MASTER_V2_0_0.json (entities, domain=Fauna)",
+      "03_DOMAINS/SPATIALIZATION/02_DISTRIBUICOES/STELLAR_FAUNA_DISTRIBUTION_V1_0.json"
+    ],
+    "authority": "CANON_MASTER_V2_CONFIRMADO",
+    "import_note": "64 especies de fauna oficiais do Master V2.0.1. 13 delas (CRI-001..013) ja existiam integralmente como arquivos R2 confirmados em 01_LORE/CANON_R2/ECOLOGIA/FAUNA/ - o Master so confirma territorio/bioma, sem contradicao, e esses 13 arquivos R2 NAO foram alterados. As outras 51 (prefixos FAD-/FAS-/FPN-P) sao especies oficiais novas, nao catalogadas antes neste projeto - o pacote-fonte da fauna funcional completa (FAUNA_MASTER_CATALOG_64_V1_0.json, citado em provenance) nao esta incluido neste release - por isso essas 51 tem so nome + posicionamento territorial/biomas/rotas oficiais, sem descricao comportamental/stats de jogo ainda (gap real, nao preenchido por invencao).",
+    "prefix_meaning_note": "Significado exato dos prefixos FAD-/FAS-/FPN-P nao esta documentado em nenhum arquivo do pacote-fonte - mantidos como codigo oficial, sem inferir categoria nao confirmada."
+  },
+  "count_total": 64,
+  "count_existing_confirmed": 13,
+  "count_new_species": 51,
+  "existing_species_confirmed": [
+    {
+      "id": "CRI-001",
+      "name": "Cortassom",
+      "territory_id": "TER-011",
+      "biome_ids": [
+        "BIO-008",
+        "BIO-002"
+      ],
+      "route_ids": [
+        "RTE-001",
+        "RTE-003",
+        "RTE-013"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO",
+      "existing_canon_r2_file": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-001__cortassom.json",
+      "cross_check_note": "Territorio/bioma do Master confere com o habitat ja descrito no arquivo R2 existente - sem contradicao."
+    },
+    {
+      "id": "CRI-002",
+      "name": "Velúrio",
+      "territory_id": "TER-011",
+      "biome_ids": [
+        "BIO-002",
+        "BIO-008"
+      ],
+      "route_ids": [
+        "RTE-001",
+        "RTE-003",
+        "RTE-013"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO",
+      "existing_canon_r2_file": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-002__velurio.json",
+      "cross_check_note": "Territorio/bioma do Master confere com o habitat ja descrito no arquivo R2 existente - sem contradicao."
+    },
+    {
+      "id": "CRI-003",
+      "name": "Brumante",
+      "territory_id": "TER-002",
+      "biome_ids": [
+        "BIO-005"
+      ],
+      "route_ids": [
+        "RTE-006",
+        "RTE-007",
+        "RTE-008",
+        "RTE-009"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO",
+      "existing_canon_r2_file": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-003__brumante.json",
+      "cross_check_note": "Territorio/bioma do Master confere com o habitat ja descrito no arquivo R2 existente - sem contradicao."
+    },
+    {
+      "id": "CRI-004",
+      "name": "Lúmara",
+      "territory_id": "TER-008",
+      "biome_ids": [
+        "BIO-001",
+        "BIO-007"
+      ],
+      "route_ids": [
+        "RTE-014",
+        "RTE-015"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO",
+      "existing_canon_r2_file": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-004__lumara.json",
+      "cross_check_note": "Territorio/bioma do Master confere com o habitat ja descrito no arquivo R2 existente - sem contradicao."
+    },
+    {
+      "id": "CRI-005",
+      "name": "Raizel manso",
+      "territory_id": "TER-005",
+      "biome_ids": [
+        "BIO-007",
+        "BIO-009"
+      ],
+      "route_ids": [
+        "RTE-009",
+        "RTE-010",
+        "RTE-012",
+        "RTE-017"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO",
+      "existing_canon_r2_file": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-005__raizel-manso.json",
+      "cross_check_note": "Territorio/bioma do Master confere com o habitat ja descrito no arquivo R2 existente - sem contradicao."
+    },
+    {
+      "id": "CRI-006",
+      "name": "Luzipólen",
+      "territory_id": "TER-008",
+      "biome_ids": [
+        "BIO-007",
+        "BIO-001"
+      ],
+      "route_ids": [
+        "RTE-014",
+        "RTE-015"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO",
+      "existing_canon_r2_file": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-006__luzipolen.json",
+      "cross_check_note": "Territorio/bioma do Master confere com o habitat ja descrito no arquivo R2 existente - sem contradicao."
+    },
+    {
+      "id": "CRI-007",
+      "name": "Fio-de-Orvalho",
+      "territory_id": "TER-007",
+      "biome_ids": [
+        "BIO-006",
+        "BIO-010",
+        "BIO-009"
+      ],
+      "route_ids": [
+        "RTE-012",
+        "RTE-013",
+        "RTE-025"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO",
+      "existing_canon_r2_file": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-007__fio-de-orvalho.json",
+      "cross_check_note": "Territorio/bioma do Master confere com o habitat ja descrito no arquivo R2 existente - sem contradicao."
+    },
+    {
+      "id": "CRI-008",
+      "name": "Grilo-Cobre",
+      "territory_id": "TER-011",
+      "biome_ids": [
+        "BIO-008",
+        "BIO-002"
+      ],
+      "route_ids": [
+        "RTE-001",
+        "RTE-003",
+        "RTE-013"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO",
+      "existing_canon_r2_file": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-008__grilo-cobre.json",
+      "cross_check_note": "Territorio/bioma do Master confere com o habitat ja descrito no arquivo R2 existente - sem contradicao."
+    },
+    {
+      "id": "CRI-009",
+      "name": "Larva-de-Véu",
+      "territory_id": "TER-011",
+      "biome_ids": [
+        "BIO-008",
+        "BIO-002"
+      ],
+      "route_ids": [
+        "RTE-001",
+        "RTE-003",
+        "RTE-013"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO",
+      "existing_canon_r2_file": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-009__larva-de-veu.json",
+      "cross_check_note": "Territorio/bioma do Master confere com o habitat ja descrito no arquivo R2 existente - sem contradicao."
+    },
+    {
+      "id": "CRI-010",
+      "name": "Vespa-de-Vidro",
+      "territory_id": "TER-001",
+      "biome_ids": [
+        "BIO-007",
+        "BIO-002",
+        "BIO-010"
+      ],
+      "route_ids": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-021",
+        "RTE-022",
+        "RTE-023"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO",
+      "existing_canon_r2_file": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-010__vespa-de-vidro.json",
+      "cross_check_note": "Territorio/bioma do Master confere com o habitat ja descrito no arquivo R2 existente - sem contradicao."
+    },
+    {
+      "id": "CRI-011",
+      "name": "Besouro-Rubro",
+      "territory_id": "TER-007",
+      "biome_ids": [
+        "BIO-006",
+        "BIO-009"
+      ],
+      "route_ids": [
+        "RTE-012",
+        "RTE-013",
+        "RTE-025"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO",
+      "existing_canon_r2_file": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-011__besouro-rubro.json",
+      "cross_check_note": "Territorio/bioma do Master confere com o habitat ja descrito no arquivo R2 existente - sem contradicao."
+    },
+    {
+      "id": "CRI-012",
+      "name": "Louva-Fenda",
+      "territory_id": "TER-002",
+      "biome_ids": [
+        "BIO-005"
+      ],
+      "route_ids": [
+        "RTE-006",
+        "RTE-007",
+        "RTE-008",
+        "RTE-009"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO",
+      "existing_canon_r2_file": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-012__louva-fenda.json",
+      "cross_check_note": "Territorio/bioma do Master confere com o habitat ja descrito no arquivo R2 existente - sem contradicao."
+    },
+    {
+      "id": "CRI-013",
+      "name": "Mandíbula-de-Névoa",
+      "territory_id": "TER-005",
+      "biome_ids": [
+        "BIO-009",
+        "BIO-007"
+      ],
+      "route_ids": [
+        "RTE-009",
+        "RTE-010",
+        "RTE-012",
+        "RTE-017"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO",
+      "existing_canon_r2_file": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-013__mandibula-de-nevoa.json",
+      "cross_check_note": "Territorio/bioma do Master confere com o habitat ja descrito no arquivo R2 existente - sem contradicao."
+    }
+  ],
+  "new_species": [
+    {
+      "id": "FAD-001",
+      "name": "Orvante",
+      "territory_id": "TER-011",
+      "biome_ids": [
+        "BIO-008",
+        "BIO-002"
+      ],
+      "route_ids": [
+        "RTE-001",
+        "RTE-003",
+        "RTE-013"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FAD-002",
+      "name": "Torvaco",
+      "territory_id": "TER-011",
+      "biome_ids": [
+        "BIO-008",
+        "BIO-002"
+      ],
+      "route_ids": [
+        "RTE-001",
+        "RTE-003",
+        "RTE-013"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FAD-003",
+      "name": "Brumápode",
+      "territory_id": "TER-007",
+      "biome_ids": [
+        "BIO-006",
+        "BIO-009"
+      ],
+      "route_ids": [
+        "RTE-012",
+        "RTE-013",
+        "RTE-025"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FAD-004",
+      "name": "Viarim",
+      "territory_id": "TER-001",
+      "biome_ids": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_ids": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-021",
+        "RTE-022",
+        "RTE-023"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FAS-001",
+      "name": "Varrisco",
+      "territory_id": "TER-011",
+      "biome_ids": [
+        "BIO-008",
+        "BIO-002"
+      ],
+      "route_ids": [
+        "RTE-001",
+        "RTE-003",
+        "RTE-013"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FAS-002",
+      "name": "Fanalume",
+      "territory_id": "TER-008",
+      "biome_ids": [
+        "BIO-007",
+        "BIO-001"
+      ],
+      "route_ids": [
+        "RTE-014",
+        "RTE-015"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FAS-003",
+      "name": "Gorjabruma",
+      "territory_id": "TER-007",
+      "biome_ids": [
+        "BIO-006",
+        "BIO-010",
+        "BIO-009"
+      ],
+      "route_ids": [
+        "RTE-012",
+        "RTE-013",
+        "RTE-025"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FAS-004",
+      "name": "Radicorno",
+      "territory_id": "TER-009",
+      "biome_ids": [
+        "BIO-004"
+      ],
+      "route_ids": [
+        "RTE-016",
+        "RTE-017"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P001",
+      "name": "Casquilho-de-Lodo",
+      "territory_id": "TER-011",
+      "biome_ids": [
+        "BIO-008",
+        "BIO-002"
+      ],
+      "route_ids": [
+        "RTE-001",
+        "RTE-003",
+        "RTE-013"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P002",
+      "name": "Riscorrio",
+      "territory_id": "TER-001",
+      "biome_ids": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_ids": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-021",
+        "RTE-022",
+        "RTE-023"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P003",
+      "name": "Salta-Bruma",
+      "territory_id": "TER-007",
+      "biome_ids": [
+        "BIO-006",
+        "BIO-009"
+      ],
+      "route_ids": [
+        "RTE-012",
+        "RTE-013",
+        "RTE-025"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P004",
+      "name": "Concha-Sopro",
+      "territory_id": "TER-005",
+      "biome_ids": [
+        "BIO-007",
+        "BIO-009"
+      ],
+      "route_ids": [
+        "RTE-009",
+        "RTE-010",
+        "RTE-012",
+        "RTE-017"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P005",
+      "name": "Rasteja-Sal",
+      "territory_id": "TER-002",
+      "biome_ids": [
+        "BIO-005"
+      ],
+      "route_ids": [
+        "RTE-006",
+        "RTE-007",
+        "RTE-008",
+        "RTE-009"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P006",
+      "name": "Prata-Véu",
+      "territory_id": "TER-004",
+      "biome_ids": [
+        "BIO-003"
+      ],
+      "route_ids": [
+        "RTE-011",
+        "RTE-018",
+        "RTE-023",
+        "RTE-025"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P007",
+      "name": "Talha-Maré",
+      "territory_id": "TER-009",
+      "biome_ids": [
+        "BIO-004"
+      ],
+      "route_ids": [
+        "RTE-016",
+        "RTE-017"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P008",
+      "name": "Trama-Cristal",
+      "territory_id": "TER-011",
+      "biome_ids": [
+        "BIO-008",
+        "BIO-002"
+      ],
+      "route_ids": [
+        "RTE-001",
+        "RTE-003",
+        "RTE-013"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P009",
+      "name": "Asa-de-Maré",
+      "territory_id": "TER-001",
+      "biome_ids": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_ids": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-021",
+        "RTE-022",
+        "RTE-023"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P010",
+      "name": "Asa-Semente",
+      "territory_id": "TER-007",
+      "biome_ids": [
+        "BIO-006",
+        "BIO-009"
+      ],
+      "route_ids": [
+        "RTE-012",
+        "RTE-013",
+        "RTE-025"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P011",
+      "name": "Pé-de-Lume",
+      "territory_id": "TER-005",
+      "biome_ids": [
+        "BIO-007",
+        "BIO-009"
+      ],
+      "route_ids": [
+        "RTE-009",
+        "RTE-010",
+        "RTE-012",
+        "RTE-017"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P012",
+      "name": "Escamafria",
+      "territory_id": "TER-002",
+      "biome_ids": [
+        "BIO-005"
+      ],
+      "route_ids": [
+        "RTE-006",
+        "RTE-007",
+        "RTE-008",
+        "RTE-009"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P013",
+      "name": "Rubracasco",
+      "territory_id": "TER-004",
+      "biome_ids": [
+        "BIO-003"
+      ],
+      "route_ids": [
+        "RTE-011",
+        "RTE-018",
+        "RTE-023",
+        "RTE-025"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P014",
+      "name": "Véu-Néctar",
+      "territory_id": "TER-009",
+      "biome_ids": [
+        "BIO-004"
+      ],
+      "route_ids": [
+        "RTE-016",
+        "RTE-017"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P015",
+      "name": "Fio-Rubro",
+      "territory_id": "TER-011",
+      "biome_ids": [
+        "BIO-008",
+        "BIO-002"
+      ],
+      "route_ids": [
+        "RTE-001",
+        "RTE-003",
+        "RTE-013"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P016",
+      "name": "Trinca-Casca",
+      "territory_id": "TER-001",
+      "biome_ids": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_ids": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-021",
+        "RTE-022",
+        "RTE-023"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P017",
+      "name": "Orvalume",
+      "territory_id": "TER-007",
+      "biome_ids": [
+        "BIO-006",
+        "BIO-009"
+      ],
+      "route_ids": [
+        "RTE-012",
+        "RTE-013",
+        "RTE-025"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P018",
+      "name": "Longapasso",
+      "territory_id": "TER-005",
+      "biome_ids": [
+        "BIO-007",
+        "BIO-009"
+      ],
+      "route_ids": [
+        "RTE-009",
+        "RTE-010",
+        "RTE-012",
+        "RTE-017"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P019",
+      "name": "Pedrafenda",
+      "territory_id": "TER-002",
+      "biome_ids": [
+        "BIO-005"
+      ],
+      "route_ids": [
+        "RTE-006",
+        "RTE-007",
+        "RTE-008",
+        "RTE-009"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P020",
+      "name": "Sussurrim",
+      "territory_id": "TER-004",
+      "biome_ids": [
+        "BIO-003"
+      ],
+      "route_ids": [
+        "RTE-011",
+        "RTE-018",
+        "RTE-023",
+        "RTE-025"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P021",
+      "name": "Casca-Fenda",
+      "territory_id": "TER-009",
+      "biome_ids": [
+        "BIO-004"
+      ],
+      "route_ids": [
+        "RTE-016",
+        "RTE-017"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P022",
+      "name": "Riscapedra",
+      "territory_id": "TER-011",
+      "biome_ids": [
+        "BIO-008",
+        "BIO-002"
+      ],
+      "route_ids": [
+        "RTE-001",
+        "RTE-003",
+        "RTE-013"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P023",
+      "name": "Bico-Bruma",
+      "territory_id": "TER-001",
+      "biome_ids": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_ids": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-021",
+        "RTE-022",
+        "RTE-023"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P024",
+      "name": "Gume-Céu",
+      "territory_id": "TER-007",
+      "biome_ids": [
+        "BIO-006",
+        "BIO-009"
+      ],
+      "route_ids": [
+        "RTE-012",
+        "RTE-013",
+        "RTE-025"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P025",
+      "name": "Véu-Filtro",
+      "territory_id": "TER-005",
+      "biome_ids": [
+        "BIO-007",
+        "BIO-009"
+      ],
+      "route_ids": [
+        "RTE-009",
+        "RTE-010",
+        "RTE-012",
+        "RTE-017"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P026",
+      "name": "Dente-Corrente",
+      "territory_id": "TER-002",
+      "biome_ids": [
+        "BIO-005"
+      ],
+      "route_ids": [
+        "RTE-006",
+        "RTE-007",
+        "RTE-008",
+        "RTE-009"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P027",
+      "name": "Manto-Mar",
+      "territory_id": "TER-004",
+      "biome_ids": [
+        "BIO-003"
+      ],
+      "route_ids": [
+        "RTE-011",
+        "RTE-018",
+        "RTE-023",
+        "RTE-025"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P028",
+      "name": "Fauce-de-Sal",
+      "territory_id": "TER-009",
+      "biome_ids": [
+        "BIO-004"
+      ],
+      "route_ids": [
+        "RTE-016",
+        "RTE-017"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P029",
+      "name": "Pente-Lume",
+      "territory_id": "TER-011",
+      "biome_ids": [
+        "BIO-008",
+        "BIO-002"
+      ],
+      "route_ids": [
+        "RTE-001",
+        "RTE-003",
+        "RTE-013"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P030",
+      "name": "Rastro-Manso",
+      "territory_id": "TER-001",
+      "biome_ids": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_ids": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-021",
+        "RTE-022",
+        "RTE-023"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P031",
+      "name": "Pulso-Rio",
+      "territory_id": "TER-007",
+      "biome_ids": [
+        "BIO-006",
+        "BIO-009"
+      ],
+      "route_ids": [
+        "RTE-012",
+        "RTE-013",
+        "RTE-025"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P032",
+      "name": "Ninfa-Véu",
+      "territory_id": "TER-005",
+      "biome_ids": [
+        "BIO-007",
+        "BIO-009"
+      ],
+      "route_ids": [
+        "RTE-009",
+        "RTE-010",
+        "RTE-012",
+        "RTE-017"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P033",
+      "name": "Raspa-Claro",
+      "territory_id": "TER-002",
+      "biome_ids": [
+        "BIO-005"
+      ],
+      "route_ids": [
+        "RTE-006",
+        "RTE-007",
+        "RTE-008",
+        "RTE-009"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P034",
+      "name": "Fio-Lama",
+      "territory_id": "TER-004",
+      "biome_ids": [
+        "BIO-003"
+      ],
+      "route_ids": [
+        "RTE-011",
+        "RTE-018",
+        "RTE-023",
+        "RTE-025"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P035",
+      "name": "Poeira-Mar",
+      "territory_id": "TER-009",
+      "biome_ids": [
+        "BIO-004"
+      ],
+      "route_ids": [
+        "RTE-016",
+        "RTE-017"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P036",
+      "name": "Raspa-Sal",
+      "territory_id": "TER-011",
+      "biome_ids": [
+        "BIO-008",
+        "BIO-002"
+      ],
+      "route_ids": [
+        "RTE-001",
+        "RTE-003",
+        "RTE-013"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P037",
+      "name": "Braço-de-Véu",
+      "territory_id": "TER-001",
+      "biome_ids": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_ids": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-021",
+        "RTE-022",
+        "RTE-023"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P038",
+      "name": "Estrela-Fosca",
+      "territory_id": "TER-007",
+      "biome_ids": [
+        "BIO-006",
+        "BIO-009"
+      ],
+      "route_ids": [
+        "RTE-012",
+        "RTE-013",
+        "RTE-025"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P039",
+      "name": "Vela-Cinza",
+      "territory_id": "TER-005",
+      "biome_ids": [
+        "BIO-007",
+        "BIO-009"
+      ],
+      "route_ids": [
+        "RTE-009",
+        "RTE-010",
+        "RTE-012",
+        "RTE-017"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P040",
+      "name": "Casco-Fosco",
+      "territory_id": "TER-002",
+      "biome_ids": [
+        "BIO-005"
+      ],
+      "route_ids": [
+        "RTE-006",
+        "RTE-007",
+        "RTE-008",
+        "RTE-009"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P041",
+      "name": "Fita-Oca",
+      "territory_id": "TER-004",
+      "biome_ids": [
+        "BIO-003"
+      ],
+      "route_ids": [
+        "RTE-011",
+        "RTE-018",
+        "RTE-023",
+        "RTE-025"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P042",
+      "name": "Asa-Dourada",
+      "territory_id": "TER-009",
+      "biome_ids": [
+        "BIO-004"
+      ],
+      "route_ids": [
+        "RTE-016",
+        "RTE-017"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    },
+    {
+      "id": "FPN-P043",
+      "name": "Poeira-Casca",
+      "territory_id": "TER-011",
+      "biome_ids": [
+        "BIO-008",
+        "BIO-002"
+      ],
+      "route_ids": [
+        "RTE-001",
+        "RTE-003",
+        "RTE-013"
+      ],
+      "altitude_rule": "derivada do bioma e do relevo da Etapa 4",
+      "ecological_basis": [
+        "habitat da ficha funcional",
+        "clima/bioma da Etapa 4",
+        "água e cadeia ecológica compatíveis"
+      ],
+      "domestication_or_use_scope": "registrado apenas se constar da ficha funcional",
+      "atlas_visibility": "REGIONAL",
+      "spoiler_level": 0,
+      "canonical_status": "CÂNONE_ATIVO"
+    }
+  ]
+}

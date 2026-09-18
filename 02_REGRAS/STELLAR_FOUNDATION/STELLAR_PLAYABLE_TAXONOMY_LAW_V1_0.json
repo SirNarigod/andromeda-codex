@@ -1,0 +1,40 @@
+{
+  "record_id": "STELLAR-PLAYABLE-TAXONOMY-LAW-V1.0",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.0",
+  "status": "CANON_DERIVADO_ATIVO_R2_COMPATIBLE",
+  "authority": {
+    "r2": ["BIO-001 through BIO-006", "CRI-001 through CRI-013", "COR-001", "PER-001 through PER-011", "LID-001 through LID-008", "TEC-001 through TEC-003", "ART-004 through ART-015"],
+    "derived": "R2-REBASE-LOT-008",
+    "scope": "RESOURCES_PROFESSIONS_NPC_ROLES_AND_ENCOUNTER_PROFILES"
+  },
+  "dependencies": ["STELLAR_ECONOMY_ECOLOGY_TIME_LAW_V1_1.json", "STELLAR_PLAYER_CAMPAIGN_LAW_V1_0.json", "STELLAR_PROGRESSION_QUEST_CONSEQUENCE_LAW_V1_1.json", "STELLAR_LIVING_CONTENT_INTEGRATION_LAW_V1_1.json"],
+  "invariants": [
+    "CATALOGS_DESCRIBE_EVIDENCED_TYPES_NOT_RUNTIME_INSTANCES",
+    "RESOURCE_STOCK_PRICE_RARITY_AND_LOOT_ARE_RUNTIME_ONLY",
+    "PROFESSION_IS_SOCIAL_PRACTICE_NOT_FIXED_PLAYER_CLASS",
+    "NAMED_R2_PERSON_IS_NOT_REPEATABLE_NPC",
+    "FAUNA_IS_NOT_AUTOMATICALLY_AN_ENEMY",
+    "COMBAT_PROFILE_DOES_NOT_GRANT_CANONICAL_HOSTILITY",
+    "ALL_EXPORTS_DECLARE_AUTHORITY_PROVENANCE_SCOPE_AND_SPOILER"
+  ],
+  "prohibitions": [
+    "NO_NUMERIC_BALANCE_AS_CANON",
+    "NO_NAMED_R2_NPC_SPAWN_BY_DEFAULT",
+    "NO_KENUA_REPLACEMENT_OR_AUTOMATIC_INTERACTION",
+    "NO_SEALED_EPISODE_DISCLOSURE",
+    "NO_RUNTIME_CANON_WRITE",
+    "NO_ROOT_FINAL_ENCOUNTER_WITHOUT_AUTHORIAL_GATE"
+  ],
+  "simulation_effects": [
+    "LivingSim may read resource categories, professions, generic NPC roles and encounter behavior contexts.",
+    "Living Scale may attach catalog entries only to existing R2 geography or approved local overlays.",
+    "UE5 may create DataTables and data assets from qualitative fields; numerical balance remains a later technical layer."
+  ],
+  "allowed_states": ["REFERENCE", "QUALITATIVE_PROFILE", "RUNTIME_OVERLAY", "AUTHORIAL_APPEARANCE_GATE", "PENDING_BALANCE"],
+  "story_generators": [
+    "Uma fonte de alimento segura exige uma profissão que a mantenha livre de contaminação.",
+    "Um NPC genérico conhece uma rota, mas uma figura R2 só pode aparecer quando a história permite.",
+    "Um predador defensivo vira encontro de sobrevivência sem ser reduzido a saque ou inimigo padrão."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "record_id": "STELLAR-LIVING-CONTENT-INTEGRATION-LAW-V1.1",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.1",
+  "status": "ACTIVE_R2_COMPATIBLE_DERIVATION",
+  "supersedes": "STELLAR_LIVING_CONTENT_INTEGRATION_LAW_V1_0",
+  "authority": {"scope": "LIVING_SIM_LIVING_SCALE_AND_APPROVED_DERIVATIONS", "write_authority": "NONE"},
+  "dependencies": ["STELLAR_CONTENT_ROUTING_CONSTITUTION_V1_1.json", "STELLAR_PROFESSIONAL_FACTIONS_LAW_V1_0.json", "STELLAR_ECONOMY_ECOLOGY_TIME_LAW_V1_1.json", "STELLAR_ECOLOGY_TEMPORAL_ROUTINE_LAW_V1_0.json"],
+  "invariants": ["LIVING_SIM_READS_CANON_THROUGH_VERSIONED_PROJECTIONS", "LIVING_SCALE_USES_R2_GEOGRAPHY_WITHOUT_INVENTING_LEVELS", "STATE_MEANS_POLITICAL_UNIT", "RUNTIME_VALUES_REMAIN_NONCANONICAL", "LOCAL_CHARTERED_SERVICE_IS_NOT_TERRITORY"],
+  "prohibitions": ["NO_SIMULATION_EPISODE_RETCON", "NO_SIMULATION_SOVEREIGNTY_CHANGE", "NO_SIMULATION_AUTHORIAL_DEATH_RESOLUTION", "NO_AMADON_PRE_S01E08", "NO_IRREVERSIBLE_ROOT_TRANSITION", "NO_SIMULATED_FACTION_CANON_WRITE"],
+  "simulation_effects": ["LivingSim receives read-only faction profiles and may calculate local workshop conditions.", "Living Scale records FAC-009 and FAC-010 only as local chartered service overlays.", "Future UE5 adapters may import profiles and local chapter data assets but cannot promote them or infer territory."],
+  "allowed_states": ["READ_ONLY_PROJECTION", "RUNTIME_OVERLAY", "PENDING_AUTHORIAL_GATE", "BLOCKED"],
+  "story_generators": ["A maintenance backlog creates a local emergency without changing who owns the city.", "Two service networks disagree over a contract but must cooperate during a route failure.", "A chapter's withdrawal creates a story opportunity, not a new canon border."]
+}

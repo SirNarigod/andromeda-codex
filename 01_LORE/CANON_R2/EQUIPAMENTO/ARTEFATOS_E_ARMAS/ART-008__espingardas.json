@@ -1,0 +1,46 @@
+{
+  "record_id": "ART-008",
+  "record_kind": "R2_CANONICAL_ENTRY_MIRROR",
+  "authority": "CANON_R2_CONFIRMADO",
+  "canonical_home": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-008__espingardas.json",
+  "source": {
+    "archive_sha256": "257e456a5d0396310ec2355b3dfc0f11f4e0a5264cf6e764591c8760f5070cb0",
+    "lineage": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json",
+    "document_sha256": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726"
+  },
+  "entry": {
+    "code": "ART-008",
+    "slug": "espingardas",
+    "title": "Espingardas",
+    "subtitle": "Dispersão e impacto em curta distância",
+    "category": "ART",
+    "secondaryCategories": [],
+    "canon": "Cânone consolidado",
+    "spoiler": 1,
+    "sealed": false,
+    "image": null,
+    "imageStatus": null,
+    "summary": "Armas de grande impacto próximo, usadas em defesa de propriedade, caça pesada e ruptura de obstáculos.",
+    "facts": {
+      "Alcance": "Curto",
+      "Efeito": "Dispersão, impacto ou carga especializada",
+      "Runas usuais": "Concentração, dispersão controlada e repulsão",
+      "Limite": "Baixa eficiência a longa distância"
+    },
+    "sections": [],
+    "relations": [
+      {
+        "slug": "sistema-de-armamentos",
+        "label": "Categoria"
+      }
+    ],
+    "keywords": [
+      "espingarda",
+      "impacto",
+      "dispersão"
+    ],
+    "sources": [
+      "FAUNA_NUTRICAO_INSETOS_E_ARMAMENTOS_V1.md"
+    ]
+  }
+}

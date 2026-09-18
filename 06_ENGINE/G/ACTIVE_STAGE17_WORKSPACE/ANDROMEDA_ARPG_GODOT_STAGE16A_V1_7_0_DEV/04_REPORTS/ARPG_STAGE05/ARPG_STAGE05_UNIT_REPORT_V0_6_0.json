@@ -1,0 +1,12 @@
+{
+  "record_id": "ARPG-STAGE05-UNIT-REPORT-V0.6.0",
+  "stage": "05/20",
+  "version": "V0.6.0",
+  "tests": 22,
+  "passed": 22,
+  "failed": 0,
+  "status": "PASS",
+  "execution": "ISOLATED_SUBPROCESS",
+  "expected_tests": 22,
+  "returncode": 0
+}

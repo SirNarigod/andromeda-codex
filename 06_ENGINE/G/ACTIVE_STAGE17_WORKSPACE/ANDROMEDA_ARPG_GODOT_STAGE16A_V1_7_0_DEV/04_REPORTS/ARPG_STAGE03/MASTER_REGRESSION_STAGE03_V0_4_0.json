@@ -1,0 +1,3278 @@
+{
+  "record_id": "MASTER-TEST-RESULTS-V2.0.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "version": "V2.0.0",
+  "authority": "SOL MAX — AGENTE 30",
+  "root": "/mnt/data/_audit_master/ANDROMEDA_CODEX_MASTER",
+  "summary": {
+    "suites": 29,
+    "checks": 393,
+    "passed": 393,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "suites": [
+    {
+      "suite": "AGRICULTURE",
+      "checks": 1,
+      "passed": 1,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "suite": "ATLAS",
+      "checks": 11,
+      "passed": 11,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "suite": "ATLAS_RUNTIME",
+      "checks": 22,
+      "passed": 22,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "suite": "AUTHORIAL_DECISIONS",
+      "checks": 22,
+      "passed": 22,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "suite": "AUTHORITY",
+      "checks": 3,
+      "passed": 3,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "suite": "CANON",
+      "checks": 8,
+      "passed": 8,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "suite": "DEPENDENCIES",
+      "checks": 1,
+      "passed": 1,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "suite": "ECOLOGY",
+      "checks": 1,
+      "passed": 1,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "suite": "ECONOMY",
+      "checks": 1,
+      "passed": 1,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "suite": "GEOSPATIAL",
+      "checks": 11,
+      "passed": 11,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "suite": "IDS",
+      "checks": 9,
+      "passed": 9,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "suite": "INDUSTRY",
+      "checks": 1,
+      "passed": 1,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "suite": "JSON",
+      "checks": 166,
+      "passed": 166,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "suite": "MAR",
+      "checks": 39,
+      "passed": 39,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "suite": "MAR_AUDIT",
+      "checks": 1,
+      "passed": 1,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "suite": "NARRATIVE",
+      "checks": 1,
+      "passed": 1,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "suite": "PERFORMANCE",
+      "checks": 1,
+      "passed": 1,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "suite": "PLANETARY",
+      "checks": 6,
+      "passed": 6,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "suite": "POPULATION",
+      "checks": 1,
+      "passed": 1,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "suite": "PROFESSIONS",
+      "checks": 28,
+      "passed": 28,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "suite": "PROFESSIONS_AUDIT",
+      "checks": 1,
+      "passed": 1,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "suite": "REFERENCES",
+      "checks": 8,
+      "passed": 8,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "suite": "REGRESSION",
+      "checks": 5,
+      "passed": 5,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "suite": "RESPONSIVE",
+      "checks": 1,
+      "passed": 1,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "suite": "SCHEMAS",
+      "checks": 4,
+      "passed": 4,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "suite": "SPOILERS",
+      "checks": 1,
+      "passed": 1,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "suite": "STRUCTURE",
+      "checks": 37,
+      "passed": 37,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "suite": "TECHNOLOGY",
+      "checks": 1,
+      "passed": 1,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "suite": "TRANSPORT",
+      "checks": 1,
+      "passed": 1,
+      "failed": 0,
+      "status": "PASS"
+    }
+  ],
+  "checks": [
+    {
+      "suite": "STRUCTURE",
+      "check_id": "DIR_00_GOVERNANCE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "00_GOVERNANCE"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "DIR_01_CANON",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "01_CANON"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "DIR_02_ATLAS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "02_ATLAS"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "DIR_03_DOMAINS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "03_DOMAINS"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "DIR_04_NARRATIVE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "04_NARRATIVE"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "DIR_05_MAR",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "05_MAR"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "DIR_06_VISUAL",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "06_VISUAL"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "DIR_07_RELATIONSHIPS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "07_RELATIONSHIPS"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "DIR_08_SCHEMAS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "08_SCHEMAS"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "DIR_09_TESTS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "09_TESTS"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "DIR_10_TOOLS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "10_TOOLS"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "DIR_11_REPORTS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "11_REPORTS"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "DIR_12_MANIFESTS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "12_MANIFESTS"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "DIR_13_HISTORY",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "13_HISTORY"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "FILE_README_MASTER.md",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "README_MASTER.md"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "FILE_MASTER_CHANGELOG.md",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "MASTER_CHANGELOG.md"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "FILE_RELEASE_METADATA.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "RELEASE_METADATA.json"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "FILE_00_GOVERNANCE_MASTER_AUTHORIAL_DECISIONS_V2_0_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "00_GOVERNANCE/MASTER_AUTHORIAL_DECISIONS_V2_0_0.json"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "FILE_00_GOVERNANCE_MASTER_AUTHORITY_MATRIX.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "00_GOVERNANCE/MASTER_AUTHORITY_MATRIX.json"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "FILE_01_CANON_ANDROMEDA_CODEX_CANON_MASTER_V2_0_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "01_CANON/ANDROMEDA_CODEX_CANON_MASTER_V2_0_0.json"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "FILE_01_CANON_MASTER_CANON_MATRIX.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "01_CANON/MASTER_CANON_MATRIX.json"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "FILE_02_ATLAS_ANDROMEDA_ATLAS_FINAL.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "02_ATLAS/ANDROMEDA_ATLAS_FINAL.json"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "FILE_02_ATLAS_runtime_index.html",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "02_ATLAS/runtime/index.html"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "FILE_02_ATLAS_runtime_app.js",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "02_ATLAS/runtime/app.js"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "FILE_02_ATLAS_runtime_atlas-core.mjs",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "02_ATLAS/runtime/atlas-core.mjs"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "FILE_02_ATLAS_runtime_styles.css",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "02_ATLAS/runtime/styles.css"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "FILE_02_ATLAS_runtime_data_atlas-data.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "02_ATLAS/runtime/data/atlas-data.json"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "FILE_07_RELATIONSHIPS_MASTER_RELATIONSHIP_REGISTRY_V2_0_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "07_RELATIONSHIPS/MASTER_RELATIONSHIP_REGISTRY_V2_0_0.json"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "FILE_08_SCHEMAS_MASTER_DATA_CONTRACT_V2_0_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "08_SCHEMAS/MASTER_DATA_CONTRACT_V2_0_0.json"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "FILE_11_REPORTS_MASTER_FINAL_INVENTORY.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "11_REPORTS/MASTER_FINAL_INVENTORY.json"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "FILE_11_REPORTS_MASTER_INTEGRATION_LEDGER.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "11_REPORTS/MASTER_INTEGRATION_LEDGER.json"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "FILE_11_REPORTS_MASTER_COMPLETENESS_REPORT.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "11_REPORTS/MASTER_COMPLETENESS_REPORT.json"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "FILE_11_REPORTS_MASTER_PENDING_MATRIX.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "11_REPORTS/MASTER_PENDING_MATRIX.json"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "FILE_13_HISTORY_ETAPA_09_CHECKPOINT_ETAPA_09_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "13_HISTORY/ETAPA_09/CHECKPOINT_ETAPA_09_V1_0.json"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "FILE_13_HISTORY_ETAPA_09_FINAL_TEST_RESULTS_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "13_HISTORY/ETAPA_09/FINAL_TEST_RESULTS_V1_0.json"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "FILE_13_HISTORY_ETAPA_09_RESTORE_REPORT_ETAPA_09_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "13_HISTORY/ETAPA_09/RESTORE_REPORT_ETAPA_09_V1_0.json"
+    },
+    {
+      "suite": "STRUCTURE",
+      "check_id": "NO_CACHE_OR_LOG_FILES",
+      "status": "PASS",
+      "critical": true,
+      "evidence": []
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_00_GOVERNANCE/MASTER_AUTHORIAL_DECISIONS_V2_0_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_00_GOVERNANCE/MASTER_AUTHORITY_MATRIX.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_00_GOVERNANCE/MASTER_VERSIONING_DECISION_V2_0_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_00_GOVERNANCE/PATCH_V2_0_1/LEGACY_NAMESPACE_COMPATIBILITY_REGISTRY_V2_0_1.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_00_GOVERNANCE/PATCH_V2_0_1/MASTER_AUTHORITY_METADATA_V2_0_1.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_00_GOVERNANCE/PATCH_V2_0_1/MASTER_NAMESPACE_POLICY_V2_0_1.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_01_CANON/ANDROMEDA_CODEX_CANON_MASTER_V2_0_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_01_CANON/MASTER_CANON_MATRIX.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_02_ATLAS/ANDROMEDA_ATLAS_FINAL.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_02_ATLAS/AUDIT/FINAL_ATLAS_AUDIT_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_02_ATLAS/AUDIT/FINAL_SPOILER_AUDIT_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_02_ATLAS/STAGE_08_REFERENCE/01_DATA/ATLAS_ASSET_REGISTRY_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_02_ATLAS/STAGE_08_REFERENCE/01_DATA/ATLAS_DATA_MASTER_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_02_ATLAS/STAGE_08_REFERENCE/01_DATA/ATLAS_ENTITY_INDEX_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_02_ATLAS/STAGE_08_REFERENCE/01_DATA/ATLAS_INTERACTIVE_BUILD_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_02_ATLAS/STAGE_08_REFERENCE/01_DATA/ATLAS_LAYER_REGISTRY_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_02_ATLAS/STAGE_08_REFERENCE/01_DATA/ATLAS_LOCATION_INDEX_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_02_ATLAS/STAGE_08_REFERENCE/01_DATA/ATLAS_RELATIONSHIP_INDEX_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_02_ATLAS/STAGE_08_REFERENCE/01_DATA/ATLAS_ROUTE_INDEX_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_02_ATLAS/STAGE_08_REFERENCE/01_DATA/ATLAS_SEARCH_INDEX_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_02_ATLAS/STAGE_08_REFERENCE/01_DATA/ATLAS_SPOILER_SYSTEM_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_02_ATLAS/STAGE_08_REFERENCE/01_DATA/ATLAS_TIMELINE_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_02_ATLAS/STAGE_08_REFERENCE/02_BINDINGS/ATLAS_CODEX_BINDINGS_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_02_ATLAS/STAGE_08_REFERENCE/02_BINDINGS/ATLAS_ECOLOGY_BINDINGS_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_02_ATLAS/STAGE_08_REFERENCE/02_BINDINGS/ATLAS_ECONOMIC_BINDINGS_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_02_ATLAS/STAGE_08_REFERENCE/02_BINDINGS/ATLAS_FACTION_BINDINGS_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_02_ATLAS/STAGE_08_REFERENCE/02_BINDINGS/ATLAS_MAR_BINDINGS_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_02_ATLAS/STAGE_08_REFERENCE/02_BINDINGS/ATLAS_NARRATIVE_BINDINGS_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_02_ATLAS/STAGE_08_REFERENCE/02_BINDINGS/ATLAS_PROFESSION_BINDINGS_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_02_ATLAS/STAGE_08_REFERENCE/02_BINDINGS/ATLAS_ROOT_BINDINGS_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_02_ATLAS/STAGE_08_REFERENCE/03_INTERFACE/ATLAS_LOD_CONFIG_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_02_ATLAS/STAGE_08_REFERENCE/03_INTERFACE/ATLAS_UI_CONFIG_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_02_ATLAS/STAGE_08_REFERENCE/04_QUALIDADE/ATLAS_ACCESSIBILITY_REPORT_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_02_ATLAS/STAGE_08_REFERENCE/04_QUALIDADE/ATLAS_DATA_VALIDATION_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_02_ATLAS/STAGE_08_REFERENCE/04_QUALIDADE/ATLAS_DOMAIN_COVERAGE_REPORT_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_02_ATLAS/STAGE_08_REFERENCE/04_QUALIDADE/ATLAS_FUNCTIONAL_TESTS_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_02_ATLAS/STAGE_08_REFERENCE/04_QUALIDADE/ATLAS_PERFORMANCE_REPORT_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_02_ATLAS/STAGE_08_REFERENCE/04_QUALIDADE/ATLAS_REGRESSION_TESTS_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_02_ATLAS/STAGE_08_REFERENCE/04_QUALIDADE/ATLAS_RESPONSIVE_REPORT_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_02_ATLAS/runtime/data/atlas-data.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_02_ATLAS/runtime/data/atlas-ui-config.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/GEOSPATIAL/00_CONTROLE/CHECKPOINT_ETAPA_04_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/GEOSPATIAL/01_MODELO/STELLAR_COORDINATE_SYSTEM_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/GEOSPATIAL/01_MODELO/STELLAR_GEOSPATIAL_HIERARCHY_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/GEOSPATIAL/01_MODELO/STELLAR_PLANETARY_MODEL_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/GEOSPATIAL/01_MODELO/STELLAR_SCALE_MODEL_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/GEOSPATIAL/02_GEOGRAFIA/STELLAR_BIOME_MODEL_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/GEOSPATIAL/02_GEOGRAFIA/STELLAR_CLIMATE_SPATIAL_MODEL_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/GEOSPATIAL/02_GEOGRAFIA/STELLAR_DISTANCE_MATRIX_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/GEOSPATIAL/02_GEOGRAFIA/STELLAR_HYDROLOGY_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/GEOSPATIAL/02_GEOGRAFIA/STELLAR_MAJOR_LOCATIONS_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/GEOSPATIAL/02_GEOGRAFIA/STELLAR_REGIONS_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/GEOSPATIAL/02_GEOGRAFIA/STELLAR_RELIEF_MODEL_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/GEOSPATIAL/02_GEOGRAFIA/STELLAR_ROUTE_SKELETON_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/GEOSPATIAL/02_GEOGRAFIA/STELLAR_TERRITORIES_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/GEOSPATIAL/03_ATLAS/STELLAR_ATLAS_SCHEMA_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/GEOSPATIAL/05_VALIDACAO/RESULTADO_TESTES_GEOESPACIAIS_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/PROFESSIONS/02_PROFISSOES/CHARACTER_PROFESSION_BINDINGS_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/PROFESSIONS/02_PROFISSOES/PROFESSIONS_FUNCTIONAL_MASTER_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/PROFESSIONS/02_PROFISSOES/PROFESSION_ECONOMIC_BINDINGS_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/PROFESSIONS/02_PROFISSOES/PROFESSION_EDUCATION_BINDINGS_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/PROFESSIONS/02_PROFISSOES/PROFESSION_INSTITUTION_BINDINGS_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/PROFESSIONS/02_PROFISSOES/PROFESSION_SPATIAL_BINDINGS_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/SPATIALIZATION/01_ENTIDADES/STELLAR_ENTITY_LOCATION_BINDINGS_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/SPATIALIZATION/01_ENTIDADES/STELLAR_SPATIALIZED_ENTITIES_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/SPATIALIZATION/02_DISTRIBUICOES/STELLAR_AGRICULTURAL_ZONES_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/SPATIALIZATION/02_DISTRIBUICOES/STELLAR_FAUNA_DISTRIBUTION_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/SPATIALIZATION/02_DISTRIBUICOES/STELLAR_FLORA_DISTRIBUTION_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/SPATIALIZATION/02_DISTRIBUICOES/STELLAR_POPULATION_DISTRIBUTION_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/SPATIALIZATION/02_DISTRIBUICOES/STELLAR_RESOURCE_ZONES_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/SPATIALIZATION/03_REDES/STELLAR_COMMUNICATION_NETWORK_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/SPATIALIZATION/03_REDES/STELLAR_DEFENSE_NETWORK_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/SPATIALIZATION/03_REDES/STELLAR_ECONOMIC_FLOWS_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/SPATIALIZATION/03_REDES/STELLAR_FACTION_INFLUENCE_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/SPATIALIZATION/03_REDES/STELLAR_INDUSTRIAL_NODES_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/SPATIALIZATION/03_REDES/STELLAR_INSTITUTION_NETWORK_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/SPATIALIZATION/03_REDES/STELLAR_SECONDARY_ROUTE_REGISTRY_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/SPATIALIZATION/05_ATLAS/STELLAR_DISTANCE_MATRIX_EXPANDED_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/SPATIALIZATION/05_ATLAS/STELLAR_LAYER_BINDINGS_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/SPATIALIZATION/05_ATLAS/STELLAR_POI_REGISTRY_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_03_DOMAINS/SPATIALIZATION/05_ATLAS/STELLAR_SPOILER_MATRIX_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_04_NARRATIVE/SPATIAL/04_NARRATIVA/STELLAR_HISTORICAL_GEOREFERENCE_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_04_NARRATIVE/SPATIAL/04_NARRATIVA/STELLAR_MAR_SPATIAL_BINDINGS_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_04_NARRATIVE/SPATIAL/04_NARRATIVA/STELLAR_NARRATIVE_ROUTES_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_04_NARRATIVE/SPATIAL/04_NARRATIVA/STELLAR_ROOT_SPATIAL_BINDINGS_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_04_NARRATIVE/VALIDATION/ATLAS_CODEX_BINDING_VALIDATION_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_04_NARRATIVE/VALIDATION/ATLAS_SPOILER_VALIDATION_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_04_NARRATIVE/VALIDATION/NARRATIVE_MAR_VALIDATION_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_04_NARRATIVE/VALIDATION/NARRATIVE_SPATIAL_VALIDATION_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_05_MAR/FUNCTIONAL/01_MAR/MAR_COMPATIBILITY_MATRIX_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_05_MAR/FUNCTIONAL/01_MAR/MAR_FUNCTIONAL_MASTER_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_05_MAR/FUNCTIONAL/01_MAR/MAR_MAGIC_FUNCTIONAL_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_05_MAR/FUNCTIONAL/01_MAR/MAR_MAINTENANCE_MATRIX_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_05_MAR/FUNCTIONAL/01_MAR/MAR_NARRATIVE_BINDINGS_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_05_MAR/FUNCTIONAL/01_MAR/MAR_PRODUCTION_CHAINS_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_05_MAR/FUNCTIONAL/01_MAR/MAR_RUNES_FUNCTIONAL_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_05_MAR/FUNCTIONAL/01_MAR/MAR_SPATIAL_BINDINGS_FINAL_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_05_MAR/FUNCTIONAL/01_MAR/MAR_USER_BINDINGS_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_05_MAR/FUNCTIONAL/01_MAR/MAR_VISUAL_BRIEFS_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_05_MAR/FUNCTIONAL/01_MAR/MAR_WEAPONS_FUNCTIONAL_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_05_MAR/INTEGRATION/MAGIC_TECH_BALANCE_REPORT_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_05_MAR/INTEGRATION/MAR_BALANCE_MATRIX_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_05_MAR/INTEGRATION/MAR_SYSTEM_INTEGRATION_REPORT_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_05_MAR/INTEGRATION/RUNE_TECH_COMPATIBILITY_FINAL_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_06_VISUAL/ATLAS_ASSET_REGISTRY_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_06_VISUAL/MAR_VISUAL_BRIEFS_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_06_VISUAL/VISUAL_FALLBACK_POLICY_V2_0_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_07_RELATIONSHIPS/MASTER_RELATIONSHIP_REGISTRY_V2_0_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_07_RELATIONSHIPS/STAGE_06/03_BINDINGS/AUXILIARY_ENTITIES_ETAPA_06_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_07_RELATIONSHIPS/STAGE_06/03_BINDINGS/DEPENDENCY_TYPE_CATALOG_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_07_RELATIONSHIPS/STAGE_06/03_BINDINGS/GLOBAL_BINDING_REGISTRY_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_08_SCHEMAS/MASTER_DATA_CONTRACT_V2_0_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_08_SCHEMAS/STELLAR_ATLAS_SCHEMA_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_09_TESTS/MASTER_ATLAS_TESTS.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_09_TESTS/MASTER_GEOSPATIAL_TESTS.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_09_TESTS/MASTER_MAR_TESTS.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_09_TESTS/MASTER_PROFESSION_TESTS.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_09_TESTS/MASTER_REGRESSION_TESTS.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_09_TESTS/MASTER_TEST_RESULTS.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_09_TESTS/RESULTADO_TESTES_FINAL_V2_0_1.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_11_REPORTS/MASTER_COMPLETENESS_REPORT.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_11_REPORTS/MASTER_FINAL_INVENTORY.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_11_REPORTS/MASTER_INTEGRATION_LEDGER.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_11_REPORTS/MASTER_PATCH_REGRESSION_REPORT.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_11_REPORTS/MASTER_PENDING_MATRIX.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_11_REPORTS/MASTER_PROVENANCE_CONTINUITY_MATRIX_V2_0_1.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_11_REPORTS/V2_0_0_TO_V2_0_1_FINAL_DELTA_REPORT.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_12_MANIFESTS/MASTER_MANIFEST.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/CICLO_CURTO_GOVERNANCA_RELEASE/ETAPA_02/CHECKPOINT_RECONCILIACAO_ETAPA_02_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/CICLO_CURTO_GOVERNANCA_RELEASE/ETAPA_02/ETAPA_02_CORRECTION_LEDGER_V2_0_1.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/CICLO_CURTO_GOVERNANCA_RELEASE/ETAPA_02/HISTORICAL_CHECKPOINT_CONTINUITY_LEDGER_V2_0_1.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/CICLO_CURTO_GOVERNANCA_RELEASE/ETAPA_02/PATCH_RELEASE_INPUT_MATRIX_V2_0_1.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/CICLO_CURTO_GOVERNANCA_RELEASE/ETAPA_02/V2_0_0_TO_V2_0_1_DELTA_MANIFEST.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/ETAPA_09/01_MASTER/FINAL_GLOBAL_AUDIT_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/ETAPA_09/01_MASTER/MASTER_READINESS_REPORT_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/ETAPA_09/02_INVENTARIO/FINAL_CANON_MATRIX_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/ETAPA_09/02_INVENTARIO/FINAL_COMPLETENESS_MATRIX_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/ETAPA_09/02_INVENTARIO/FINAL_PENDING_MATRIX_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/ETAPA_09/02_INVENTARIO/GLOBAL_FINAL_INVENTORY_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_AGRICULTURE_AUDIT_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_ASSET_AUDIT_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_ATLAS_AUDIT_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_DEPENDENCY_AUDIT_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_ECOLOGY_AUDIT_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_ECONOMY_AUDIT_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_GEOSPATIAL_AUDIT_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_ID_AUDIT_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_INDUSTRY_AUDIT_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_MAR_AUDIT_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_NARRATIVE_AUDIT_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_PERFORMANCE_AUDIT_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_POPULATION_AUDIT_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_PROFESSIONS_AUDIT_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_REFERENCE_AUDIT_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_REGRESSION_AUDIT_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_RESPONSIVE_AUDIT_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_SPOILER_AUDIT_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_TECHNOLOGY_AUDIT_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/ETAPA_09/03_AUDITORIAS/FINAL_TRANSPORT_AUDIT_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/ETAPA_09/CHECKPOINT_ETAPA_09_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/ETAPA_09/FINAL_TEST_RESULTS_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/ETAPA_09/MASTER_ENTRY_MANIFEST_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/ETAPA_09/RESTORE_REPORT_ETAPA_09_V1_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_13_HISTORY/SOURCE_MODULE_REGISTRY_V2_0_0.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "PARSE_RELEASE_METADATA.json",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "JSON",
+      "check_id": "JSON_FILE_FLOOR",
+      "status": "PASS",
+      "critical": true,
+      "evidence": 165
+    },
+    {
+      "suite": "CANON",
+      "check_id": "MASTER_VERSION",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "V2.0.0"
+    },
+    {
+      "suite": "CANON",
+      "check_id": "ENTITY_COUNT",
+      "status": "PASS",
+      "critical": true,
+      "evidence": 1660
+    },
+    {
+      "suite": "CANON",
+      "check_id": "RELATION_COUNT",
+      "status": "PASS",
+      "critical": true,
+      "evidence": 9429
+    },
+    {
+      "suite": "CANON",
+      "check_id": "LOCATION_COUNT",
+      "status": "PASS",
+      "critical": true,
+      "evidence": 52
+    },
+    {
+      "suite": "CANON",
+      "check_id": "ROUTE_COUNT",
+      "status": "PASS",
+      "critical": true,
+      "evidence": 9
+    },
+    {
+      "suite": "CANON",
+      "check_id": "LAYER_COUNT",
+      "status": "PASS",
+      "critical": true,
+      "evidence": 44
+    },
+    {
+      "suite": "CANON",
+      "check_id": "NO_UNPROCESSED_PROPOSAL",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "CANON",
+      "check_id": "SINGLE_SOURCE_DECLARED",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "01_CANON/ANDROMEDA_CODEX_CANON_MASTER_V2_0_0.json"
+    },
+    {
+      "suite": "AUTHORIAL_DECISIONS",
+      "check_id": "D01_EVENT_NAME",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "Fundação das Árvores Anciãs"
+    },
+    {
+      "suite": "AUTHORIAL_DECISIONS",
+      "check_id": "D01_EVENT_DATE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "1732 APC"
+    },
+    {
+      "suite": "AUTHORIAL_DECISIONS",
+      "check_id": "D02_EVENT_NAME",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "Fundação dos Reis Magos"
+    },
+    {
+      "suite": "AUTHORIAL_DECISIONS",
+      "check_id": "D02_EVENT_DATE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "684 APC"
+    },
+    {
+      "suite": "AUTHORIAL_DECISIONS",
+      "check_id": "TIMELINE_TIM-004",
+      "status": "PASS",
+      "critical": true,
+      "evidence": [
+        {
+          "id": "TIM-004",
+          "name": "Fundação das Árvores Anciãs",
+          "kind": "HISTORICAL_EVENT",
+          "date": "1732 APC",
+          "date_status": "DIRECT_CANON",
+          "territory_id": null,
+          "location_type": "NARRATIVE_SCOPE",
+          "source_binding_id": "BIND-0842",
+          "spoiler_level": 0,
+          "date_authority": "AUTH-DEC-001"
+        },
+        {
+          "id": "NAR-TIM-004",
+          "entity_id": "TIM-004",
+          "name": "Fundação das Árvores Anciãs",
+          "kind": "NARRATIVE_SCOPE",
+          "date": "1732 APC",
+          "date_status": "DIRECT_CANON",
+          "territory_id": null,
+          "route_ids": [],
+          "spoiler_level": 1,
+          "date_authority": "AUTH-DEC-001"
+        }
+      ]
+    },
+    {
+      "suite": "AUTHORIAL_DECISIONS",
+      "check_id": "TIMELINE_TIM-011",
+      "status": "PASS",
+      "critical": true,
+      "evidence": [
+        {
+          "id": "TIM-011",
+          "name": "Fundação dos Reis Magos",
+          "kind": "HISTORICAL_EVENT",
+          "date": "684 APC",
+          "date_status": "DIRECT_CANON",
+          "territory_id": null,
+          "location_type": "NARRATIVE_SCOPE",
+          "source_binding_id": "BIND-0849",
+          "spoiler_level": 0,
+          "date_authority": "AUTH-DEC-002"
+        },
+        {
+          "id": "NAR-TIM-011",
+          "entity_id": "TIM-011",
+          "name": "Fundação dos Reis Magos",
+          "kind": "NARRATIVE_SCOPE",
+          "date": "684 APC",
+          "date_status": "DIRECT_CANON",
+          "territory_id": null,
+          "route_ids": [],
+          "spoiler_level": 1,
+          "date_authority": "AUTH-DEC-002"
+        }
+      ]
+    },
+    {
+      "suite": "AUTHORIAL_DECISIONS",
+      "check_id": "D03_OPERATIONAL_839",
+      "status": "PASS",
+      "critical": true,
+      "evidence": {
+        "by": "839 EC",
+        "status": "OPERACIONAL"
+      }
+    },
+    {
+      "suite": "AUTHORIAL_DECISIONS",
+      "check_id": "D03_UNKNOWN_FOUNDATION",
+      "status": "PASS",
+      "critical": true,
+      "evidence": [
+        "foundation_date",
+        "founders",
+        "formal_foundation_act"
+      ]
+    },
+    {
+      "suite": "AUTHORIAL_DECISIONS",
+      "check_id": "D04_CODEX_MAIN",
+      "status": "PASS",
+      "critical": true,
+      "evidence": {
+        "principal": "ANDRÔMEDA CÓDEX",
+        "complementary": "Temporada 1 Reestruturada V0.3"
+      }
+    },
+    {
+      "suite": "AUTHORIAL_DECISIONS",
+      "check_id": "D04_SEASON_COMPLEMENTARY",
+      "status": "PASS",
+      "critical": true,
+      "evidence": {
+        "edition": "Temporada 1 Reestruturada V0.3",
+        "tier": "CÂNONE_COMPLEMENTAR"
+      }
+    },
+    {
+      "suite": "AUTHORIAL_DECISIONS",
+      "check_id": "D05_ALIAS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": {
+        "name": "Serlis Aftermoon",
+        "aliases": [
+          "Serlis Veyr"
+        ]
+      }
+    },
+    {
+      "suite": "AUTHORIAL_DECISIONS",
+      "check_id": "D05_NO_DUPLICATE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "AUTHORIAL_DECISIONS",
+      "check_id": "D06_INDEPENDENT_FUNCTION",
+      "status": "PASS",
+      "critical": true,
+      "evidence": [
+        "Comissária de Incidentes Rúnicos e Ferroviários"
+      ]
+    },
+    {
+      "suite": "AUTHORIAL_DECISIONS",
+      "check_id": "D06_NO_AUTOMATIC_ORGAN_BINDING",
+      "status": "PASS",
+      "critical": true,
+      "evidence": []
+    },
+    {
+      "suite": "AUTHORIAL_DECISIONS",
+      "check_id": "D07_NAMES",
+      "status": "PASS",
+      "critical": true,
+      "evidence": {
+        "CUL-ING-001": "Leite veluriano",
+        "CRI-002": "Velúrio"
+      }
+    },
+    {
+      "suite": "AUTHORIAL_DECISIONS",
+      "check_id": "D07_BINDING",
+      "status": "PASS",
+      "critical": true,
+      "evidence": [
+        {
+          "id": "MASTER-REL-AUTH-001",
+          "source_id": "CUL-ING-001",
+          "target_id": "CRI-002",
+          "type": "derivado_de",
+          "confidence": "DIRECT_CANON",
+          "source": "MASTER_AUTHORIAL_DECISIONS_V2_0_0",
+          "metadata": {
+            "decision_id": "AUTH-DEC-007",
+            "authority": "AUTOR — decisão explícita Etapa 10",
+            "binding_method": "DIRECT_AUTHORIAL_BINDING",
+            "version": "V2.0.0",
+            "timestamp": "2026-08-14T12:00:00-03:00"
+          }
+        }
+      ]
+    },
+    {
+      "suite": "AUTHORIAL_DECISIONS",
+      "check_id": "D08_NAMES",
+      "status": "PASS",
+      "critical": true,
+      "evidence": {
+        "CUL-ING-002": "Leite brumante",
+        "CRI-003": "Brumante"
+      }
+    },
+    {
+      "suite": "AUTHORIAL_DECISIONS",
+      "check_id": "D08_BINDING",
+      "status": "PASS",
+      "critical": true,
+      "evidence": [
+        {
+          "id": "MASTER-REL-AUTH-002",
+          "source_id": "CUL-ING-002",
+          "target_id": "CRI-003",
+          "type": "derivado_de",
+          "confidence": "DIRECT_CANON",
+          "source": "MASTER_AUTHORIAL_DECISIONS_V2_0_0",
+          "metadata": {
+            "decision_id": "AUTH-DEC-008",
+            "authority": "AUTOR — decisão explícita Etapa 10",
+            "binding_method": "DIRECT_AUTHORIAL_BINDING",
+            "version": "V2.0.0",
+            "timestamp": "2026-08-14T12:00:00-03:00"
+          }
+        }
+      ]
+    },
+    {
+      "suite": "AUTHORIAL_DECISIONS",
+      "check_id": "D09_NAMES",
+      "status": "PASS",
+      "critical": true,
+      "evidence": {
+        "CUL-ING-003": "Leite de lúmara",
+        "CRI-004": "Lúmara"
+      }
+    },
+    {
+      "suite": "AUTHORIAL_DECISIONS",
+      "check_id": "D09_BINDING",
+      "status": "PASS",
+      "critical": true,
+      "evidence": [
+        {
+          "id": "MASTER-REL-AUTH-003",
+          "source_id": "CUL-ING-003",
+          "target_id": "CRI-004",
+          "type": "derivado_de",
+          "confidence": "DIRECT_CANON",
+          "source": "MASTER_AUTHORIAL_DECISIONS_V2_0_0",
+          "metadata": {
+            "decision_id": "AUTH-DEC-009",
+            "authority": "AUTOR — decisão explícita Etapa 10",
+            "binding_method": "DIRECT_AUTHORIAL_BINDING",
+            "version": "V2.0.0",
+            "timestamp": "2026-08-14T12:00:00-03:00"
+          }
+        }
+      ]
+    },
+    {
+      "suite": "AUTHORIAL_DECISIONS",
+      "check_id": "D10_NAMES",
+      "status": "PASS",
+      "critical": true,
+      "evidence": {
+        "CUL-ING-004": "Leite âmbar de raizel",
+        "CRI-005": "Raizel manso"
+      }
+    },
+    {
+      "suite": "AUTHORIAL_DECISIONS",
+      "check_id": "D10_BINDING",
+      "status": "PASS",
+      "critical": true,
+      "evidence": [
+        {
+          "id": "MASTER-REL-AUTH-004",
+          "source_id": "CUL-ING-004",
+          "target_id": "CRI-005",
+          "type": "derivado_de",
+          "confidence": "DIRECT_CANON",
+          "source": "MASTER_AUTHORIAL_DECISIONS_V2_0_0",
+          "metadata": {
+            "decision_id": "AUTH-DEC-010",
+            "authority": "AUTOR — decisão explícita Etapa 10",
+            "binding_method": "DIRECT_AUTHORIAL_BINDING",
+            "version": "V2.0.0",
+            "timestamp": "2026-08-14T12:00:00-03:00"
+          }
+        }
+      ]
+    },
+    {
+      "suite": "IDS",
+      "check_id": "ENTITY_IDS_UNIQUE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": 1660
+    },
+    {
+      "suite": "IDS",
+      "check_id": "RELATION_IDS_UNIQUE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": 9429
+    },
+    {
+      "suite": "IDS",
+      "check_id": "LOCATION_IDS_UNIQUE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": 52
+    },
+    {
+      "suite": "IDS",
+      "check_id": "ROUTE_IDS_UNIQUE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": 9
+    },
+    {
+      "suite": "IDS",
+      "check_id": "LAYER_IDS_UNIQUE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": 44
+    },
+    {
+      "suite": "IDS",
+      "check_id": "ASSET_IDS_UNIQUE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": 90
+    },
+    {
+      "suite": "IDS",
+      "check_id": "IDS_NONEMPTY",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "IDS",
+      "check_id": "STANDARD_NAMESPACE_COUNT",
+      "status": "PASS",
+      "critical": true,
+      "evidence": {
+        "standard": 1562,
+        "legacy": 98
+      }
+    },
+    {
+      "suite": "IDS",
+      "check_id": "LEGACY_IDS_DOCUMENTED_NONBLOCKING",
+      "status": "PASS",
+      "critical": true,
+      "evidence": [
+        "ANDROMEDA-EDUCIENCIA-ACESSIBILIDADE-ETAPA-003-V0_1",
+        "ANDROMEDA-EDUCIENCIA-ALFABETIZACAO-ETAPA-003-V0_1",
+        "ancient-trees-heart",
+        "ANDROMEDA-EDUCIENCIA-APRENDIZAGEM-PROFISSIONAL-ETAPA-005-V0_1",
+        "ANDROMEDA-EDUCIENCIA-ARQUIVOS-BIBLIOTECAS-ETAPA-008-V0_1",
+        "ANDROMEDA-EDUCIENCIA-AUDITORIA-FONTES-ETAPA-008-V0_1",
+        "AUDITORIA-FONTES-ETAPA-009-V0_1",
+        "ANDROMEDA-EDUCIENCIA-AUTORIDADES-DOMINIO-ETAPA-006-V0_1",
+        "ACCESSORY_INVENTORY-004",
+        "ACCESSORY_INVENTORY-009",
+        "ACCESSORY_INVENTORY-002",
+        "ACCESSORY_INVENTORY-010",
+        "ACCESSORY_INVENTORY-006",
+        "ACCESSORY_INVENTORY-011",
+        "ACCESSORY_INVENTORY-005",
+        "ANDROMEDA-EDUCIENCIA-CENTROS-REDES-PESQUISA-ETAPA-007-V0_1",
+        "ANDROMEDA-EDUCIENCIA-CICLO-DOCUMENTAL-ACESSO-PRESERVACAO-ETAPA-008-V0_1",
+        "ANDROMEDA-EDUCIENCIA-CIENCIA-METODO-FORMACAO-ETAPA-007-V0_1",
+        "componentes cristalinos",
+        "componentes de rede"
+      ]
+    },
+    {
+      "suite": "REFERENCES",
+      "check_id": "RELATION_ENDPOINTS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": []
+    },
+    {
+      "suite": "REFERENCES",
+      "check_id": "ENTITY_LAYER_REFS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": []
+    },
+    {
+      "suite": "REFERENCES",
+      "check_id": "ENTITY_LOCATION_REFS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": []
+    },
+    {
+      "suite": "REFERENCES",
+      "check_id": "ENTITY_ROUTE_REFS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": []
+    },
+    {
+      "suite": "REFERENCES",
+      "check_id": "ASSET_ENTITY_REFS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": []
+    },
+    {
+      "suite": "REFERENCES",
+      "check_id": "ROUTE_ENDPOINTS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": []
+    },
+    {
+      "suite": "REFERENCES",
+      "check_id": "BROKEN_CRITICAL_REFERENCES_ZERO",
+      "status": "PASS",
+      "critical": true,
+      "evidence": {
+        "relations": 0,
+        "layers": 0,
+        "locations": 0,
+        "routes": 0,
+        "assets": 0,
+        "route_endpoints": 0
+      }
+    },
+    {
+      "suite": "GEOSPATIAL",
+      "check_id": "COORDINATE_BOUNDS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": []
+    },
+    {
+      "suite": "GEOSPATIAL",
+      "check_id": "COORDINATE_COVERAGE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": 52
+    },
+    {
+      "suite": "GEOSPATIAL",
+      "check_id": "TERRITORY_COUNT",
+      "status": "PASS",
+      "critical": true,
+      "evidence": 13
+    },
+    {
+      "suite": "GEOSPATIAL",
+      "check_id": "ROUTES_CALCULABLE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": [
+        {
+          "id": "SRTE-001",
+          "distance": 6.18
+        },
+        {
+          "id": "SRTE-002",
+          "distance": 4.44
+        },
+        {
+          "id": "SRTE-003",
+          "distance": 3.53
+        },
+        {
+          "id": "SRTE-004",
+          "distance": 3.6
+        },
+        {
+          "id": "SRTE-005",
+          "distance": 2.41
+        },
+        {
+          "id": "SRTE-006",
+          "distance": 3.4
+        },
+        {
+          "id": "SRTE-007",
+          "distance": 2.24
+        },
+        {
+          "id": "SRTE-008",
+          "distance": 2.4
+        },
+        {
+          "id": "SRTE-009",
+          "distance": 1.52
+        }
+      ]
+    },
+    {
+      "suite": "GEOSPATIAL",
+      "check_id": "AUDIT_PLANETARY_MODEL",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "PASS"
+    },
+    {
+      "suite": "GEOSPATIAL",
+      "check_id": "AUDIT_COORDINATE_SYSTEM",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "PASS"
+    },
+    {
+      "suite": "GEOSPATIAL",
+      "check_id": "AUDIT_STAGE_4_TEST_STATUS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "PASS"
+    },
+    {
+      "suite": "GEOSPATIAL",
+      "check_id": "ZERO_COORDINATE_FAILURES",
+      "status": "PASS",
+      "critical": true,
+      "evidence": []
+    },
+    {
+      "suite": "GEOSPATIAL",
+      "check_id": "ZERO_ROUTE_ENDPOINT_FAILURES",
+      "status": "PASS",
+      "critical": true,
+      "evidence": []
+    },
+    {
+      "suite": "GEOSPATIAL",
+      "check_id": "ZERO_GEOJSON_FAILURES",
+      "status": "PASS",
+      "critical": true,
+      "evidence": []
+    },
+    {
+      "suite": "GEOSPATIAL",
+      "check_id": "ZERO_HYDROLOGY_FAILURES",
+      "status": "PASS",
+      "critical": true,
+      "evidence": []
+    },
+    {
+      "suite": "SCHEMAS",
+      "check_id": "DRAFT_2020_12",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "suite": "SCHEMAS",
+      "check_id": "REQUIRED_MASTER_FIELDS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": [
+        "record_id",
+        "project",
+        "stage",
+        "version",
+        "metadata",
+        "entities",
+        "locations",
+        "routes",
+        "layers",
+        "relationships",
+        "timeline",
+        "spoiler_policy"
+      ]
+    },
+    {
+      "suite": "SCHEMAS",
+      "check_id": "VERSION_CONST",
+      "status": "PASS",
+      "critical": true,
+      "evidence": {
+        "const": "V2.0.0"
+      }
+    },
+    {
+      "suite": "SCHEMAS",
+      "check_id": "STAGE4_SCHEMA_PRESENT",
+      "status": "PASS",
+      "critical": true,
+      "evidence": [
+        "schema_version",
+        "record_id",
+        "title",
+        "generated_at",
+        "authority",
+        "$schema",
+        "$id",
+        "stellar_crs",
+        "$defs",
+        "atlas_contract"
+      ]
+    },
+    {
+      "suite": "ATLAS",
+      "check_id": "PROJECTION_DECLARED",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "READ_ONLY_ATLAS_PROJECTION"
+    },
+    {
+      "suite": "ATLAS",
+      "check_id": "PROJECTION_SOURCE_HASH",
+      "status": "PASS",
+      "critical": true,
+      "evidence": {
+        "path": "../../../01_CANON/ANDROMEDA_CODEX_CANON_MASTER_V2_0_0.json",
+        "sha256": "6dea942542360124afd61f36207b51e3a1f47f53f12116c43f5bff261eb391fe"
+      }
+    },
+    {
+      "suite": "ATLAS",
+      "check_id": "PROJECTION_PARITY_ENTITIES",
+      "status": "PASS",
+      "critical": true,
+      "evidence": {
+        "canonical": 1660,
+        "projection": 1660
+      }
+    },
+    {
+      "suite": "ATLAS",
+      "check_id": "PROJECTION_PARITY_LOCATIONS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": {
+        "canonical": 52,
+        "projection": 52
+      }
+    },
+    {
+      "suite": "ATLAS",
+      "check_id": "PROJECTION_PARITY_ROUTES",
+      "status": "PASS",
+      "critical": true,
+      "evidence": {
+        "canonical": 9,
+        "projection": 9
+      }
+    },
+    {
+      "suite": "ATLAS",
+      "check_id": "PROJECTION_PARITY_LAYERS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": {
+        "canonical": 44,
+        "projection": 44
+      }
+    },
+    {
+      "suite": "ATLAS",
+      "check_id": "PROJECTION_PARITY_RELATIONSHIPS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": {
+        "canonical": 9429,
+        "projection": 9429
+      }
+    },
+    {
+      "suite": "ATLAS",
+      "check_id": "PROJECTION_PARITY_TIMELINE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": {
+        "canonical": 93,
+        "projection": 93
+      }
+    },
+    {
+      "suite": "ATLAS",
+      "check_id": "PROJECTION_PARITY_ASSETS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": {
+        "canonical": 90,
+        "projection": 90
+      }
+    },
+    {
+      "suite": "ATLAS",
+      "check_id": "PROJECTION_PARITY_SPOILER_POLICY",
+      "status": "PASS",
+      "critical": true,
+      "evidence": {
+        "canonical": "object",
+        "projection": "object"
+      }
+    },
+    {
+      "suite": "ATLAS",
+      "check_id": "ATLAS_DESCRIPTOR",
+      "status": "PASS",
+      "critical": true,
+      "evidence": {
+        "record_id": "ANDROMEDA-ATLAS-FINAL-V2.0.0",
+        "version": "V2.0.0",
+        "status": "BUILD_READY_FOR_FINAL_VALIDATION",
+        "runtime": "runtime/index.html",
+        "canonical_source": "../01_CANON/ANDROMEDA_CODEX_CANON_MASTER_V2_0_0.json",
+        "runtime_projection": "runtime/data/atlas-data.json",
+        "canonical_source_sha256": "6dea942542360124afd61f36207b51e3a1f47f53f12116c43f5bff261eb391fe",
+        "entities": 1660,
+        "locations": 52,
+        "territories": 13,
+        "routes": 9,
+        "layers": 44,
+        "relationships": 9429,
+        "spoiler_public_max": 0,
+        "read_only_projection": true
+      }
+    },
+    {
+      "suite": "ATLAS_RUNTIME",
+      "check_id": "NODE_RUNTIME_EXIT",
+      "status": "PASS",
+      "critical": true,
+      "evidence": {
+        "returncode": 0,
+        "stderr": ""
+      }
+    },
+    {
+      "suite": "ATLAS_RUNTIME",
+      "check_id": "ENTITY_IDS_UNIQUE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": {
+        "entities": 1660,
+        "unique": 1660
+      }
+    },
+    {
+      "suite": "ATLAS_RUNTIME",
+      "check_id": "RELATION_ENDPOINTS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": {
+        "relationships": 9429
+      }
+    },
+    {
+      "suite": "ATLAS_RUNTIME",
+      "check_id": "AUTHORIAL_RELATION_COUNT",
+      "status": "PASS",
+      "critical": true,
+      "evidence": {
+        "relationships": 9429
+      }
+    },
+    {
+      "suite": "ATLAS_RUNTIME",
+      "check_id": "LAYER_REFERENCES",
+      "status": "PASS",
+      "critical": true,
+      "evidence": {
+        "layers": 44
+      }
+    },
+    {
+      "suite": "ATLAS_RUNTIME",
+      "check_id": "REQUIRED_LAYER_FLOOR",
+      "status": "PASS",
+      "critical": true,
+      "evidence": {
+        "layers": 44
+      }
+    },
+    {
+      "suite": "ATLAS_RUNTIME",
+      "check_id": "SAFE_LAYER_PATCH",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "13 definições auxiliares"
+    },
+    {
+      "suite": "ATLAS_RUNTIME",
+      "check_id": "INVALID_SELF_RELATIONS_REMOVED",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "ciclos técnicos"
+    },
+    {
+      "suite": "ATLAS_RUNTIME",
+      "check_id": "SEARCH_ID",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "WPN-001"
+    },
+    {
+      "suite": "ATLAS_RUNTIME",
+      "check_id": "SEARCH_ALIAS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "PER-003"
+    },
+    {
+      "suite": "ATLAS_RUNTIME",
+      "check_id": "SEARCH_CANON_DATE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "TIM-004"
+    },
+    {
+      "suite": "ATLAS_RUNTIME",
+      "check_id": "FILTER_COMBINED",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "TER-002 + Indústria"
+    },
+    {
+      "suite": "ATLAS_RUNTIME",
+      "check_id": "FILTER_EMPTY",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "resultado vazio estável"
+    },
+    {
+      "suite": "ATLAS_RUNTIME",
+      "check_id": "SPOILER_LEVEL_4",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "nível 4 oculto"
+    },
+    {
+      "suite": "ATLAS_RUNTIME",
+      "check_id": "MAP_PROJECTION",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "projeção 2D"
+    },
+    {
+      "suite": "ATLAS_RUNTIME",
+      "check_id": "MAP_CONTROLS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "pan/zoom/modo"
+    },
+    {
+      "suite": "ATLAS_RUNTIME",
+      "check_id": "QUERY_CONTROLS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "busca/filtros/cards/relações"
+    },
+    {
+      "suite": "ATLAS_RUNTIME",
+      "check_id": "RESPONSIVE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "desktop/notebook/tablet/mobile"
+    },
+    {
+      "suite": "ATLAS_RUNTIME",
+      "check_id": "ACCESSIBILITY",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "foco/teclado/redução de movimento"
+    },
+    {
+      "suite": "ATLAS_RUNTIME",
+      "check_id": "ERROR_FALLBACK",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "tratamento de erro"
+    },
+    {
+      "suite": "ATLAS_RUNTIME",
+      "check_id": "STATE_PERSISTENCE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "estado navegável"
+    },
+    {
+      "suite": "ATLAS_RUNTIME",
+      "check_id": "CANON_PROJECTION_DECLARED",
+      "status": "PASS",
+      "critical": true,
+      "evidence": {
+        "path": "../../../01_CANON/ANDROMEDA_CODEX_CANON_MASTER_V2_0_0.json",
+        "sha256": "6dea942542360124afd61f36207b51e3a1f47f53f12116c43f5bff261eb391fe"
+      }
+    },
+    {
+      "suite": "MAR",
+      "check_id": "WEAPONS_COUNT",
+      "status": "PASS",
+      "critical": true,
+      "evidence": 30
+    },
+    {
+      "suite": "MAR",
+      "check_id": "WEAPONS_IDS_UNIQUE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": 30
+    },
+    {
+      "suite": "MAR",
+      "check_id": "WEAPONS_CANON_ACTIVE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "MAR",
+      "check_id": "WEAPONS_FIELD_FUNCTION",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "function"
+    },
+    {
+      "suite": "MAR",
+      "check_id": "WEAPONS_FIELD_CONSTRUCTION",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "construction"
+    },
+    {
+      "suite": "MAR",
+      "check_id": "WEAPONS_FIELD_OPERATION",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "operation"
+    },
+    {
+      "suite": "MAR",
+      "check_id": "WEAPONS_FIELD_SUPPLY",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "supply"
+    },
+    {
+      "suite": "MAR",
+      "check_id": "WEAPONS_FIELD_PERFORMANCE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "performance"
+    },
+    {
+      "suite": "MAR",
+      "check_id": "WEAPONS_FIELD_BALANCE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "balance"
+    },
+    {
+      "suite": "MAR",
+      "check_id": "WEAPONS_FIELD_DISTRIBUTION",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "distribution"
+    },
+    {
+      "suite": "MAR",
+      "check_id": "WEAPONS_FIELD_SPATIAL",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "spatial"
+    },
+    {
+      "suite": "MAR",
+      "check_id": "WEAPONS_FIELD_VISUAL",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "visual"
+    },
+    {
+      "suite": "MAR",
+      "check_id": "WEAPONS_FIELD_PROVENANCE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "provenance"
+    },
+    {
+      "suite": "MAR",
+      "check_id": "WEAPONS_VISUAL_BRIEF",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "MAR",
+      "check_id": "RUNES_COUNT",
+      "status": "PASS",
+      "critical": true,
+      "evidence": 30
+    },
+    {
+      "suite": "MAR",
+      "check_id": "RUNES_IDS_UNIQUE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": 30
+    },
+    {
+      "suite": "MAR",
+      "check_id": "RUNES_CANON_ACTIVE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "MAR",
+      "check_id": "RUNES_FIELD_FUNCTION",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "function"
+    },
+    {
+      "suite": "MAR",
+      "check_id": "RUNES_FIELD_SUPPORT",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "support"
+    },
+    {
+      "suite": "MAR",
+      "check_id": "RUNES_FIELD_CREATION_APPLICATION",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "creation_application"
+    },
+    {
+      "suite": "MAR",
+      "check_id": "RUNES_FIELD_COMPATIBILITY",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "compatibility"
+    },
+    {
+      "suite": "MAR",
+      "check_id": "RUNES_FIELD_SPATIAL",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "spatial"
+    },
+    {
+      "suite": "MAR",
+      "check_id": "RUNES_FIELD_VISUAL",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "visual"
+    },
+    {
+      "suite": "MAR",
+      "check_id": "RUNES_FIELD_PROVENANCE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "provenance"
+    },
+    {
+      "suite": "MAR",
+      "check_id": "RUNES_VISUAL_BRIEF",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "MAR",
+      "check_id": "MAGIC_COUNT",
+      "status": "PASS",
+      "critical": true,
+      "evidence": 30
+    },
+    {
+      "suite": "MAR",
+      "check_id": "MAGIC_IDS_UNIQUE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": 30
+    },
+    {
+      "suite": "MAR",
+      "check_id": "MAGIC_CANON_ACTIVE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "MAR",
+      "check_id": "MAGIC_FIELD_EXECUTION",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "execution"
+    },
+    {
+      "suite": "MAR",
+      "check_id": "MAGIC_FIELD_LIMITATIONS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "limitations"
+    },
+    {
+      "suite": "MAR",
+      "check_id": "MAGIC_FIELD_INTEROPERABILITY",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "interoperability"
+    },
+    {
+      "suite": "MAR",
+      "check_id": "MAGIC_FIELD_OPERATOR_JOB_IDS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "operator_job_ids"
+    },
+    {
+      "suite": "MAR",
+      "check_id": "MAGIC_FIELD_TRAINING_REF",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "training_ref"
+    },
+    {
+      "suite": "MAR",
+      "check_id": "MAGIC_FIELD_SPATIAL",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "spatial"
+    },
+    {
+      "suite": "MAR",
+      "check_id": "MAGIC_FIELD_VISUAL",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "visual"
+    },
+    {
+      "suite": "MAR",
+      "check_id": "MAGIC_FIELD_PROVENANCE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "provenance"
+    },
+    {
+      "suite": "MAR",
+      "check_id": "MAGIC_VISUAL_BRIEF",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "MAR",
+      "check_id": "MAR_30_30_30",
+      "status": "PASS",
+      "critical": true,
+      "evidence": 90
+    },
+    {
+      "suite": "MAR",
+      "check_id": "COMPATIBILITY_MATRIX_PRESENT",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "05_MAR/FUNCTIONAL/01_MAR/MAR_COMPATIBILITY_MATRIX_V1_0.json"
+    },
+    {
+      "suite": "PROFESSIONS",
+      "check_id": "COUNT_91",
+      "status": "PASS",
+      "critical": true,
+      "evidence": 91
+    },
+    {
+      "suite": "PROFESSIONS",
+      "check_id": "IDS_UNIQUE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": 91
+    },
+    {
+      "suite": "PROFESSIONS",
+      "check_id": "FIELD_NAME",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "name"
+    },
+    {
+      "suite": "PROFESSIONS",
+      "check_id": "FIELD_CATEGORY",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "category"
+    },
+    {
+      "suite": "PROFESSIONS",
+      "check_id": "FIELD_SECTOR",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "sector"
+    },
+    {
+      "suite": "PROFESSIONS",
+      "check_id": "FIELD_DESCRIPTION",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "description"
+    },
+    {
+      "suite": "PROFESSIONS",
+      "check_id": "FIELD_FUNCTION",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "function"
+    },
+    {
+      "suite": "PROFESSIONS",
+      "check_id": "FIELD_RESPONSIBILITIES",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "responsibilities"
+    },
+    {
+      "suite": "PROFESSIONS",
+      "check_id": "FIELD_COMPETENCIES",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "competencies"
+    },
+    {
+      "suite": "PROFESSIONS",
+      "check_id": "FIELD_FORMATION",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "formation"
+    },
+    {
+      "suite": "PROFESSIONS",
+      "check_id": "FIELD_TOOLS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "tools"
+    },
+    {
+      "suite": "PROFESSIONS",
+      "check_id": "FIELD_TECHNOLOGIES",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "technologies"
+    },
+    {
+      "suite": "PROFESSIONS",
+      "check_id": "FIELD_WORK_ENVIRONMENT",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "work_environment"
+    },
+    {
+      "suite": "PROFESSIONS",
+      "check_id": "FIELD_INSTITUTION_ID",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "institution_id"
+    },
+    {
+      "suite": "PROFESSIONS",
+      "check_id": "FIELD_TERRITORY_DISTRIBUTION",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "territory_distribution"
+    },
+    {
+      "suite": "PROFESSIONS",
+      "check_id": "FIELD_RISKS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "risks"
+    },
+    {
+      "suite": "PROFESSIONS",
+      "check_id": "FIELD_PROGRESSION",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "progression"
+    },
+    {
+      "suite": "PROFESSIONS",
+      "check_id": "FIELD_DEPENDENCIES",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "dependencies"
+    },
+    {
+      "suite": "PROFESSIONS",
+      "check_id": "FIELD_PRODUCTS_SERVICES",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "products_services"
+    },
+    {
+      "suite": "PROFESSIONS",
+      "check_id": "FIELD_ECONOMIC_ROLE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "economic_role"
+    },
+    {
+      "suite": "PROFESSIONS",
+      "check_id": "FIELD_SOCIAL_ROLE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "social_role"
+    },
+    {
+      "suite": "PROFESSIONS",
+      "check_id": "FIELD_ATLAS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "atlas"
+    },
+    {
+      "suite": "PROFESSIONS",
+      "check_id": "FIELD_PROVENANCE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "provenance"
+    },
+    {
+      "suite": "PROFESSIONS",
+      "check_id": "CANON_ACTIVE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "PROFESSIONS",
+      "check_id": "NO_PROPOSAL_REVERSION",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "PROFESSIONS",
+      "check_id": "EDUCATION_PATHS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "PROFESSIONS",
+      "check_id": "SPATIAL_BINDINGS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "PROFESSIONS",
+      "check_id": "ECONOMIC_BINDINGS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "ECOLOGY",
+      "check_id": "ETAPA_09_AUDIT_PASS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "PASS"
+    },
+    {
+      "suite": "POPULATION",
+      "check_id": "ETAPA_09_AUDIT_PASS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "PASS"
+    },
+    {
+      "suite": "AGRICULTURE",
+      "check_id": "ETAPA_09_AUDIT_PASS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "PASS"
+    },
+    {
+      "suite": "ECONOMY",
+      "check_id": "ETAPA_09_AUDIT_PASS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "PASS"
+    },
+    {
+      "suite": "INDUSTRY",
+      "check_id": "ETAPA_09_AUDIT_PASS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "PASS"
+    },
+    {
+      "suite": "TECHNOLOGY",
+      "check_id": "ETAPA_09_AUDIT_PASS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "PASS"
+    },
+    {
+      "suite": "TRANSPORT",
+      "check_id": "ETAPA_09_AUDIT_PASS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "PASS"
+    },
+    {
+      "suite": "NARRATIVE",
+      "check_id": "ETAPA_09_AUDIT_PASS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "PASS"
+    },
+    {
+      "suite": "SPOILERS",
+      "check_id": "ETAPA_09_AUDIT_PASS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "PASS"
+    },
+    {
+      "suite": "RESPONSIVE",
+      "check_id": "ETAPA_09_AUDIT_PASS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "PASS"
+    },
+    {
+      "suite": "PERFORMANCE",
+      "check_id": "ETAPA_09_AUDIT_PASS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "PASS"
+    },
+    {
+      "suite": "REGRESSION",
+      "check_id": "ETAPA_09_AUDIT_PASS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "PASS"
+    },
+    {
+      "suite": "DEPENDENCIES",
+      "check_id": "ETAPA_09_AUDIT_PASS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "PASS"
+    },
+    {
+      "suite": "REFERENCES",
+      "check_id": "ETAPA_09_AUDIT_PASS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "PASS"
+    },
+    {
+      "suite": "MAR_AUDIT",
+      "check_id": "ETAPA_09_AUDIT_PASS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "PASS"
+    },
+    {
+      "suite": "PROFESSIONS_AUDIT",
+      "check_id": "ETAPA_09_AUDIT_PASS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "PASS"
+    },
+    {
+      "suite": "REGRESSION",
+      "check_id": "STAGE9_GATE_PASS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "PASS"
+    },
+    {
+      "suite": "REGRESSION",
+      "check_id": "STAGE9_READY_MASTER",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "SIM"
+    },
+    {
+      "suite": "REGRESSION",
+      "check_id": "STAGE9_176_CHECKS_PASS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": {
+        "suites": 30,
+        "checks": 176,
+        "passed": 176,
+        "failed": 0
+      }
+    },
+    {
+      "suite": "REGRESSION",
+      "check_id": "STAGE9_RESTORE_PASS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "PASS"
+    },
+    {
+      "suite": "AUTHORITY",
+      "check_id": "ACTIVE_MODULE_COUNT_42",
+      "status": "PASS",
+      "critical": true,
+      "evidence": 42
+    },
+    {
+      "suite": "AUTHORITY",
+      "check_id": "MATRIX_PASS",
+      "status": "PASS",
+      "critical": true,
+      "evidence": "PASS"
+    },
+    {
+      "suite": "AUTHORITY",
+      "check_id": "ALL_ACTIVE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": 42
+    },
+    {
+      "suite": "PLANETARY",
+      "check_id": "POPULATION_WATER_FOOD",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "PLANETARY",
+      "check_id": "RESOURCE_INDUSTRY_ECONOMY",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "PLANETARY",
+      "check_id": "TECH_ENERGY_MAINTENANCE",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "PLANETARY",
+      "check_id": "PROFESSION_EDUCATION_EMPLOYMENT",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "PLANETARY",
+      "check_id": "MAR_INDUSTRY_USER",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    },
+    {
+      "suite": "PLANETARY",
+      "check_id": "NARRATIVE_TIME_GEOGRAPHY",
+      "status": "PASS",
+      "critical": true,
+      "evidence": null
+    }
+  ],
+  "failed_checks": []
+}

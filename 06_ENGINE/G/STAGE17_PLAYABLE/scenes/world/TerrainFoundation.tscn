@@ -1,0 +1,72 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/terrain_foundation.gd" id="1_terrain"]
+[ext_resource type="PackedScene" path="res://scenes/world/WaterVolume.tscn" id="2_water"]
+[ext_resource type="Script" path="res://scripts/world/streaming_manager.gd" id="3_streaming"]
+[ext_resource type="PackedScene" path="res://scenes/world/StreamingCell.tscn" id="4_cell"]
+
+[node name="TerrainFoundation" type="Node3D"]
+script = ExtResource("1_terrain")
+
+[node name="VISUAL_SURFACE" type="Node3D" parent="."]
+metadata/role = "DETAILED_RELIEF_PLACEHOLDER"
+
+[node name="COLLISION_SURFACE" type="Node3D" parent="."]
+metadata/role = "SIMPLIFIED_STABLE_LOCOMOTION_COLLISION"
+
+[node name="TRAVERSAL_SURFACE" type="Node3D" parent="."]
+metadata/role = "SURFACE_SLOPE_FLAGS_AND_NAVIGATION"
+
+[node name="NavigationRegions" type="Node3D" parent="TRAVERSAL_SURFACE"]
+
+[node name="SurfaceZones" type="Node3D" parent="TRAVERSAL_SURFACE"]
+
+[node name="WATER_FOUNDATION" type="Node3D" parent="."]
+
+[node name="ShallowCalm" parent="WATER_FOUNDATION" instance=ExtResource("2_water")]
+position = Vector3(32, 0, -10)
+volume_ref = "WATER-B04-SHALLOW-CALM"
+depth_m = 0.4
+current_speed_mps = 0.1
+current_direction = Vector3(1, 0, 0)
+
+[node name="ShallowWeakCurrent" parent="WATER_FOUNDATION" instance=ExtResource("2_water")]
+position = Vector3(40, 0, -10)
+volume_ref = "WATER-B04-SHALLOW-WEAK"
+depth_m = 0.45
+current_speed_mps = 0.7
+current_direction = Vector3(1, 0, 0.25)
+
+[node name="ShallowStrongCurrent" parent="WATER_FOUNDATION" instance=ExtResource("2_water")]
+position = Vector3(48, 0, -10)
+volume_ref = "WATER-B04-SHALLOW-STRONG"
+depth_m = 0.5
+current_speed_mps = 1.4
+current_direction = Vector3(1, 0, 0.15)
+
+[node name="DeepSwimmable" parent="WATER_FOUNDATION" instance=ExtResource("2_water")]
+position = Vector3(56, 0, -10)
+volume_ref = "WATER-B04-DEEP-SWIMMABLE"
+volume_size = Vector3(6, 3.6, 4)
+depth_m = 1.8
+current_speed_mps = 0.55
+current_direction = Vector3(0.8, 0, 0.2)
+ordinary_vehicle_allowed = false
+
+[node name="ShallowUnderBridge" parent="WATER_FOUNDATION" instance=ExtResource("2_water")]
+position = Vector3(38, 0, 10)
+volume_ref = "WATER-B04-SHALLOW-UNDER-BRIDGE"
+volume_size = Vector3(12, 0.8, 4)
+depth_m = 0.45
+current_speed_mps = 0.6
+current_direction = Vector3(1, 0, 0)
+under_bridge = true
+
+[node name="CELL_STREAMING" type="Node3D" parent="."]
+script = ExtResource("3_streaming")
+cell_scene = ExtResource("4_cell")
+area_ref = "SUBREGION-B04-FOUNDATION"
+living_macro_ref = "LIVING-MACRO-4096-B04-REFERENCE"
+cell_size_m = 256.0
+logical_radius_cells = 2
+preload_ring = 1

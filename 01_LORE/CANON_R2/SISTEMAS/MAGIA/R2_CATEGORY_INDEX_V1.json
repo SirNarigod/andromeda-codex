@@ -1,0 +1,58 @@
+{
+  "record_id": "R2-MAG-CATEGORY-INDEX-V1",
+  "authority": "CANON_R2_CONFIRMADO",
+  "category": "MAG",
+  "category_name": "Magia",
+  "items": [
+    {
+      "id": "MAG-001",
+      "title": "Leis da magia",
+      "path": "01_LORE/CANON_R2/SISTEMAS/MAGIA/MAG-001__leis-da-magia.json",
+      "spoiler": 1,
+      "sealed": false
+    },
+    {
+      "id": "MAG-002",
+      "title": "Runas",
+      "path": "01_LORE/CANON_R2/SISTEMAS/MAGIA/MAG-002__runas.json",
+      "spoiler": 1,
+      "sealed": false
+    },
+    {
+      "id": "MAG-003",
+      "title": "Corrente Planetária",
+      "path": "01_LORE/CANON_R2/SISTEMAS/MAGIA/MAG-003__corrente-planetaria.json",
+      "spoiler": 3,
+      "sealed": true
+    },
+    {
+      "id": "MAG-004",
+      "title": "Marca inselável de Serlis",
+      "path": "01_LORE/CANON_R2/SISTEMAS/MAGIA/MAG-004__marca-inselavel.json",
+      "spoiler": 2,
+      "sealed": true
+    },
+    {
+      "id": "MAG-005",
+      "title": "Estados de controle da simbiose",
+      "path": "01_LORE/CANON_R2/SISTEMAS/MAGIA/MAG-005__estados-de-controle-da-simbiose.json",
+      "spoiler": 2,
+      "sealed": true
+    },
+    {
+      "id": "MAG-006",
+      "title": "Escala de combate",
+      "path": "01_LORE/CANON_R2/SISTEMAS/MAGIA/MAG-006__escala-de-combate.json",
+      "spoiler": 2,
+      "sealed": true
+    },
+    {
+      "id": "MAG-007",
+      "title": "Estase de Intervalo",
+      "path": "01_LORE/CANON_R2/SISTEMAS/MAGIA/MAG-007__estase-de-intervalo.json",
+      "spoiler": 2,
+      "sealed": true
+    }
+  ],
+  "source": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json"
+}

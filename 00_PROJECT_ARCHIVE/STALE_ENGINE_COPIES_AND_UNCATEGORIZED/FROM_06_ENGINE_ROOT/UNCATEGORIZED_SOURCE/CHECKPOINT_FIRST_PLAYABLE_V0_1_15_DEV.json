@@ -1,0 +1,28 @@
+{
+  "checkpoint": "FIRST_PLAYABLE_V0_1_15_DEV",
+  "parent_checkpoint": "FIRST_PLAYABLE_V0_1_14_DEV",
+  "status": "STATIC_VALIDATED_RUNTIME_PENDING",
+  "functional_scope": [
+    "left_mouse_scene_transition_exception",
+    "clickable_inventory_weapon_selection",
+    "weapon_damage_range_durability_stats",
+    "ranged_combat_distance_and_projectile",
+    "ranged_damage_on_projectile_impact"
+  ],
+  "preserved_contracts": {
+    "left_common_world_target": "movement_only",
+    "left_scene_transition": "approach_and_transition",
+    "right_click": "contextual_click_only",
+    "global_attack_cooldown_s": 2.0,
+    "inventory_key": "I",
+    "inventory_hidden_by_default": true
+  },
+  "static_checks": {
+    "checks": 24,
+    "passed": 24,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1",
+  "backup_authorized": false
+}

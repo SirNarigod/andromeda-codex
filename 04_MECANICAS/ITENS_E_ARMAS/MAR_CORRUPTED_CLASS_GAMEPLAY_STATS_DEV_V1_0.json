@@ -1,0 +1,537 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "MAR-CORRUPTED-CLASS-GAMEPLAY-STATS-DEV-V1.0",
+  "title": "MAR - Armas da classe Corrompidos (fase 60): Extensoes Radiculares + Projeteis de Esporo",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "r2_guard": "Categoria 100% nova de gameplay, tema corrupcao controlada da Raiz Profunda (COR-001). Tiers C0-C3 (Corrupcao 0-3) sao uma escala paralela a R0-R3/T0-T3 ja usada em Nativos/Soldados/Androids/Magos - nao runica, nao tecnologica, organica-corrompida. Insumos citam apenas COR-RES-001..004 (fase 58, ja catalogados, uso legitimo sob supervisao da Vigilia Radicular) e recursos MIN-/MAT- ja reais. Producao centralizada em EST-009 Guarnicao de Contencao (ja ligada a FAC-004/JOB-012) - nenhuma construcao nova.",
+  "weapons": [
+    {
+      "weapon_id": "WPN-RAD-001",
+      "name": "Garra Enraizada Bruta",
+      "class_name": "Corrompidos",
+      "family": "Extensoes Radiculares (corpo-a-corpo)",
+      "runification_tier": "C0",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "stats": {
+        "power": 30,
+        "defense": 20,
+        "utility": 15,
+        "handling": 55,
+        "durability": 35,
+        "reach": 15,
+        "magic_affinity": 5,
+        "tech_affinity": 0,
+        "corruption_affinity": 30,
+        "overall": 28
+      },
+      "inputs_note": "insumo cru, extraido sem risco maior",
+      "produced_at": "EST-009",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (corpo-a-corpo)",
+        "impact_type": "PERFURAÇÃO_RADICULAR",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ],
+      "weight_kg": 1.7
+    },
+    {
+      "weapon_id": "WPN-RAD-002",
+      "name": "Chicote de Raiz Fresca",
+      "class_name": "Corrompidos",
+      "family": "Extensoes Radiculares (corpo-a-corpo)",
+      "runification_tier": "C0",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "stats": {
+        "power": 28,
+        "defense": 15,
+        "utility": 20,
+        "handling": 50,
+        "durability": 30,
+        "reach": 35,
+        "magic_affinity": 5,
+        "tech_affinity": 0,
+        "corruption_affinity": 28,
+        "overall": 26
+      },
+      "inputs_note": "flexivel, baixo custo de contencao",
+      "produced_at": "EST-009",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (corpo-a-corpo)",
+        "impact_type": "PERFURAÇÃO_RADICULAR",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ],
+      "weight_kg": 1.7
+    },
+    {
+      "weapon_id": "WPN-RAD-003",
+      "name": "Lamina de Espinho Corrompido",
+      "class_name": "Corrompidos",
+      "family": "Extensoes Radiculares (corpo-a-corpo)",
+      "runification_tier": "C1",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "stats": {
+        "power": 45,
+        "defense": 25,
+        "utility": 20,
+        "handling": 50,
+        "durability": 40,
+        "reach": 20,
+        "magic_affinity": 5,
+        "tech_affinity": 0,
+        "corruption_affinity": 45,
+        "overall": 35
+      },
+      "inputs_note": "requer Seiva Corrompida estabilizada",
+      "produced_at": "EST-009",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (corpo-a-corpo)",
+        "impact_type": "PERFURAÇÃO_RADICULAR",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ],
+      "weight_kg": 1.7
+    },
+    {
+      "weapon_id": "WPN-RAD-004",
+      "name": "Maca de No Radicular",
+      "class_name": "Corrompidos",
+      "family": "Extensoes Radiculares (corpo-a-corpo)",
+      "runification_tier": "C1",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "stats": {
+        "power": 48,
+        "defense": 30,
+        "utility": 15,
+        "handling": 40,
+        "durability": 50,
+        "reach": 15,
+        "magic_affinity": 5,
+        "tech_affinity": 0,
+        "corruption_affinity": 48,
+        "overall": 35
+      },
+      "inputs_note": "peso extra por nos radiculares endurecidos",
+      "produced_at": "EST-009",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (corpo-a-corpo)",
+        "impact_type": "PERFURAÇÃO_RADICULAR",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ],
+      "weight_kg": 1.7
+    },
+    {
+      "weapon_id": "WPN-RAD-005",
+      "name": "Lanca de Raiz Cristalizada",
+      "class_name": "Corrompidos",
+      "family": "Extensoes Radiculares (corpo-a-corpo)",
+      "runification_tier": "C2",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "stats": {
+        "power": 58,
+        "defense": 30,
+        "utility": 25,
+        "handling": 45,
+        "durability": 45,
+        "reach": 45,
+        "magic_affinity": 5,
+        "tech_affinity": 0,
+        "corruption_affinity": 58,
+        "overall": 41
+      },
+      "inputs_note": "cristalizacao parcial exige Nucleo de Enraizamento",
+      "produced_at": "EST-009",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (corpo-a-corpo)",
+        "impact_type": "PERFURAÇÃO_RADICULAR",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ],
+      "weight_kg": 2.6
+    },
+    {
+      "weapon_id": "WPN-RAD-006",
+      "name": "Foice de Casca Negra",
+      "class_name": "Corrompidos",
+      "family": "Extensoes Radiculares (corpo-a-corpo)",
+      "runification_tier": "C2",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "stats": {
+        "power": 60,
+        "defense": 25,
+        "utility": 30,
+        "handling": 45,
+        "durability": 40,
+        "reach": 30,
+        "magic_affinity": 5,
+        "tech_affinity": 0,
+        "corruption_affinity": 60,
+        "overall": 42
+      },
+      "inputs_note": "casca endurecida corta tecido vivo e morto",
+      "produced_at": "EST-009",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (corpo-a-corpo)",
+        "impact_type": "PERFURAÇÃO_RADICULAR",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ],
+      "weight_kg": 2.6
+    },
+    {
+      "weapon_id": "WPN-RAD-007",
+      "name": "Espada de Nucleo Vivo",
+      "class_name": "Corrompidos",
+      "family": "Extensoes Radiculares (corpo-a-corpo)",
+      "runification_tier": "C3",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "stats": {
+        "power": 75,
+        "defense": 35,
+        "utility": 30,
+        "handling": 45,
+        "durability": 55,
+        "reach": 25,
+        "magic_affinity": 5,
+        "tech_affinity": 0,
+        "corruption_affinity": 75,
+        "overall": 51
+      },
+      "inputs_note": "requer Nucleo de Enraizamento + supervisao da Vigilia Radicular",
+      "produced_at": "EST-009",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (corpo-a-corpo)",
+        "impact_type": "PERFURAÇÃO_RADICULAR",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ],
+      "weight_kg": 2.6
+    },
+    {
+      "weapon_id": "WPN-RAD-008",
+      "name": "Punhos de Sangue de Raiz",
+      "class_name": "Corrompidos",
+      "family": "Extensoes Radiculares (corpo-a-corpo)",
+      "runification_tier": "C3",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "stats": {
+        "power": 78,
+        "defense": 40,
+        "utility": 20,
+        "handling": 55,
+        "durability": 60,
+        "reach": 10,
+        "magic_affinity": 5,
+        "tech_affinity": 0,
+        "corruption_affinity": 78,
+        "overall": 51
+      },
+      "inputs_note": "Sangue de Raiz aplicado diretamente - risco fatal sem protocolo",
+      "produced_at": "EST-009",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (corpo-a-corpo)",
+        "impact_type": "PERFURAÇÃO_RADICULAR",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ],
+      "weight_kg": 2.6
+    },
+    {
+      "weapon_id": "WPN-PRO-001",
+      "name": "Lancador de Esporos Simples",
+      "class_name": "Corrompidos",
+      "family": "Projeteis de Esporo (a distancia)",
+      "runification_tier": "C0",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "stats": {
+        "power": 25,
+        "defense": 10,
+        "utility": 25,
+        "handling": 45,
+        "durability": 30,
+        "reach": 55,
+        "magic_affinity": 5,
+        "tech_affinity": 0,
+        "corruption_affinity": 25,
+        "overall": 32
+      },
+      "inputs_note": "esporos comuns, baixo risco de manuseio",
+      "produced_at": "EST-009",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "ARCO_BALÍSTICO",
+        "impact_type": "PERFURAÇÃO_E_CONTAMINAÇÃO",
+        "area_effect": "PEQUENA (nuvem de esporos)"
+      },
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ],
+      "weight_kg": 0.7
+    },
+    {
+      "weapon_id": "WPN-PRO-002",
+      "name": "Funda de Sementes Endurecidas",
+      "class_name": "Corrompidos",
+      "family": "Projeteis de Esporo (a distancia)",
+      "runification_tier": "C0",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "stats": {
+        "power": 22,
+        "defense": 10,
+        "utility": 20,
+        "handling": 55,
+        "durability": 35,
+        "reach": 50,
+        "magic_affinity": 5,
+        "tech_affinity": 0,
+        "corruption_affinity": 22,
+        "overall": 32
+      },
+      "inputs_note": "sementes de flora corrompida comum",
+      "produced_at": "EST-009",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "ARCO_BALÍSTICO",
+        "impact_type": "PERFURAÇÃO_E_CONTAMINAÇÃO",
+        "area_effect": "PEQUENA (nuvem de esporos)"
+      },
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ],
+      "weight_kg": 0.7
+    },
+    {
+      "weapon_id": "WPN-PRO-003",
+      "name": "Cajado Cuspidor de Seiva",
+      "class_name": "Corrompidos",
+      "family": "Projeteis de Esporo (a distancia)",
+      "runification_tier": "C1",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "stats": {
+        "power": 38,
+        "defense": 15,
+        "utility": 25,
+        "handling": 45,
+        "durability": 35,
+        "reach": 60,
+        "magic_affinity": 5,
+        "tech_affinity": 0,
+        "corruption_affinity": 38,
+        "overall": 36
+      },
+      "inputs_note": "Seiva Corrompida em reservatorio selado",
+      "produced_at": "EST-009",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "ARCO_BALÍSTICO",
+        "impact_type": "PERFURAÇÃO_E_CONTAMINAÇÃO",
+        "area_effect": "PEQUENA (nuvem de esporos)"
+      },
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ],
+      "weight_kg": 0.7
+    },
+    {
+      "weapon_id": "WPN-PRO-004",
+      "name": "Arco de Fibra Radicular",
+      "class_name": "Corrompidos",
+      "family": "Projeteis de Esporo (a distancia)",
+      "runification_tier": "C1",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "stats": {
+        "power": 40,
+        "defense": 15,
+        "utility": 20,
+        "handling": 50,
+        "durability": 40,
+        "reach": 65,
+        "magic_affinity": 5,
+        "tech_affinity": 0,
+        "corruption_affinity": 40,
+        "overall": 38
+      },
+      "inputs_note": "fibra tensionada de raiz seca",
+      "produced_at": "EST-009",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "ARCO_BALÍSTICO",
+        "impact_type": "PERFURAÇÃO_E_CONTAMINAÇÃO",
+        "area_effect": "PEQUENA (nuvem de esporos)"
+      },
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ],
+      "weight_kg": 0.7
+    },
+    {
+      "weapon_id": "WPN-PRO-005",
+      "name": "Canhao de Esporos Concentrados",
+      "class_name": "Corrompidos",
+      "family": "Projeteis de Esporo (a distancia)",
+      "runification_tier": "C2",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "stats": {
+        "power": 55,
+        "defense": 20,
+        "utility": 30,
+        "handling": 35,
+        "durability": 45,
+        "reach": 70,
+        "magic_affinity": 5,
+        "tech_affinity": 0,
+        "corruption_affinity": 55,
+        "overall": 42
+      },
+      "inputs_note": "requer Cinza Viva selada para propulsao",
+      "produced_at": "EST-009",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "ARCO_BALÍSTICO",
+        "impact_type": "PERFURAÇÃO_E_CONTAMINAÇÃO",
+        "area_effect": "PEQUENA (nuvem de esporos)"
+      },
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ],
+      "weight_kg": 1.1
+    },
+    {
+      "weapon_id": "WPN-PRO-006",
+      "name": "Lancador de Espinhos Cristalizados",
+      "class_name": "Corrompidos",
+      "family": "Projeteis de Esporo (a distancia)",
+      "runification_tier": "C2",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "stats": {
+        "power": 58,
+        "defense": 20,
+        "utility": 25,
+        "handling": 40,
+        "durability": 45,
+        "reach": 68,
+        "magic_affinity": 5,
+        "tech_affinity": 0,
+        "corruption_affinity": 58,
+        "overall": 42
+      },
+      "inputs_note": "espinhos de flora corrompida cristalizada",
+      "produced_at": "EST-009",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "ARCO_BALÍSTICO",
+        "impact_type": "PERFURAÇÃO_E_CONTAMINAÇÃO",
+        "area_effect": "PEQUENA (nuvem de esporos)"
+      },
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ],
+      "weight_kg": 1.1
+    },
+    {
+      "weapon_id": "WPN-PRO-007",
+      "name": "Nucleo Disparador de Sangue de Raiz",
+      "class_name": "Corrompidos",
+      "family": "Projeteis de Esporo (a distancia)",
+      "runification_tier": "C3",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "stats": {
+        "power": 72,
+        "defense": 25,
+        "utility": 35,
+        "handling": 30,
+        "durability": 50,
+        "reach": 75,
+        "magic_affinity": 5,
+        "tech_affinity": 0,
+        "corruption_affinity": 72,
+        "overall": 48
+      },
+      "inputs_note": "Sangue de Raiz como propelente - altissimo risco de contaminacao",
+      "produced_at": "EST-009",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "ARCO_BALÍSTICO",
+        "impact_type": "PERFURAÇÃO_E_CONTAMINAÇÃO",
+        "area_effect": "PEQUENA (nuvem de esporos)"
+      },
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ],
+      "weight_kg": 1.1
+    },
+    {
+      "weapon_id": "WPN-PRO-008",
+      "name": "Chicote-Canhao de Cinza Viva",
+      "class_name": "Corrompidos",
+      "family": "Projeteis de Esporo (a distancia)",
+      "runification_tier": "C3",
+      "gameplay_scale": "NORMALIZED_0_100",
+      "stats": {
+        "power": 70,
+        "defense": 25,
+        "utility": 30,
+        "handling": 35,
+        "durability": 50,
+        "reach": 72,
+        "magic_affinity": 5,
+        "tech_affinity": 0,
+        "corruption_affinity": 70,
+        "overall": 47
+      },
+      "inputs_note": "Cinza Viva ainda em movimento na descarga",
+      "produced_at": "EST-009",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "ARCO_BALÍSTICO",
+        "impact_type": "PERFURAÇÃO_E_CONTAMINAÇÃO",
+        "area_effect": "PEQUENA (nuvem de esporos)"
+      },
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ],
+      "weight_kg": 1.1
+    }
+  ]
+}

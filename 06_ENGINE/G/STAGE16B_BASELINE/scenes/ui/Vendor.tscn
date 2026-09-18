@@ -1,0 +1,131 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/vendor_panel.gd" id="1_vendor_ui"]
+[ext_resource type="Theme" path="res://ui/theme/AndromedaMinimalTheme.tres" id="2_theme"]
+
+[node name="VendorPanel" type="Control"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = ExtResource("2_theme")
+script = ExtResource("1_vendor_ui")
+
+[node name="Backdrop" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+color = Color(0.1, 0.11, 0.12, 0.26)
+
+[node name="RoundedWhitePanel" type="PanelContainer" parent="Backdrop"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -330.0
+offset_top = -210.0
+offset_right = 330.0
+offset_bottom = 210.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Margin" type="MarginContainer" parent="Backdrop/RoundedWhitePanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 22
+theme_override_constants/margin_top = 18
+theme_override_constants/margin_right = 22
+theme_override_constants/margin_bottom = 18
+
+[node name="Layout" type="VBoxContainer" parent="Backdrop/RoundedWhitePanel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Header" type="HBoxContainer" parent="Backdrop/RoundedWhitePanel/Margin/Layout"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="Backdrop/RoundedWhitePanel/Margin/Layout/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.42, 0.42, 0.42, 1)
+theme_override_font_sizes/font_size = 24
+text = "Comércio"
+
+[node name="Close" type="Button" parent="Backdrop/RoundedWhitePanel/Margin/Layout/Header"]
+layout_mode = 2
+text = "Esc  fechar"
+
+[node name="VendorIdentity" type="Label" parent="Backdrop/RoundedWhitePanel/Margin/Layout"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.541, 0.541, 0.541, 1)
+text = "Serviço comercial"
+
+[node name="BodyScroll" type="ScrollContainer" parent="Backdrop/RoundedWhitePanel/Margin/Layout"]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="Content" type="VBoxContainer" parent="Backdrop/RoundedWhitePanel/Margin/Layout/BodyScroll"]
+custom_minimum_size = Vector2(590, 520)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 12
+
+[node name="AuthorityNotice" type="Label" parent="Backdrop/RoundedWhitePanel/Margin/Layout/BodyScroll/Content"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.541, 0.541, 0.541, 1)
+text = "Stock, preço e resultado são projeções externas."
+
+[node name="QuoteBuilder" type="VBoxContainer" parent="Backdrop/RoundedWhitePanel/Margin/Layout/BodyScroll/Content"]
+layout_mode = 2
+theme_override_constants/separation = 7
+
+[node name="ItemSelector" type="OptionButton" parent="Backdrop/RoundedWhitePanel/Margin/Layout/BodyScroll/Content/QuoteBuilder"]
+layout_mode = 2
+
+[node name="OperationSelector" type="OptionButton" parent="Backdrop/RoundedWhitePanel/Margin/Layout/BodyScroll/Content/QuoteBuilder"]
+layout_mode = 2
+
+[node name="Quantity" type="SpinBox" parent="Backdrop/RoundedWhitePanel/Margin/Layout/BodyScroll/Content/QuoteBuilder"]
+layout_mode = 2
+min_value = 1.0
+max_value = 999.0
+value = 1.0
+allow_greater = false
+allow_lesser = false
+
+[node name="RequestQuote" type="Button" parent="Backdrop/RoundedWhitePanel/Margin/Layout/BodyScroll/Content/QuoteBuilder"]
+layout_mode = 2
+text = "Solicitar cotação"
+
+[node name="QuoteProjection" type="Label" parent="Backdrop/RoundedWhitePanel/Margin/Layout/BodyScroll/Content"]
+custom_minimum_size = Vector2(0, 74)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.851, 0.631, 0.373, 1)
+text = "Solicite uma cotação explícita."
+autowrap_mode = 2
+
+[node name="ExecuteTrade" type="Button" parent="Backdrop/RoundedWhitePanel/Margin/Layout/BodyScroll/Content"]
+layout_mode = 2
+text = "Confirmar e executar operação"
+
+[node name="TradeResult" type="Label" parent="Backdrop/RoundedWhitePanel/Margin/Layout/BodyScroll/Content"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.541, 0.541, 0.541, 1)
+text = "Nenhuma operação executada."
+
+[node name="Footer" type="Label" parent="Backdrop/RoundedWhitePanel/Margin/Layout"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.541, 0.541, 0.541, 1)
+text = "Roda: scroll · sem compra automática · mundo continua ativo"
+horizontal_alignment = 1

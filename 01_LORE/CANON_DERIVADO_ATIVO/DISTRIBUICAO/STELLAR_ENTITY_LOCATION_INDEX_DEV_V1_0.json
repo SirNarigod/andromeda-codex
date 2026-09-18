@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-ENTITY-LOCATION-INDEX-DEV-V1.0",
+  "title": "Distribuição de NPCs, Fauna, Flora e Facções em locais/territórios específicos",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "canonical_status": "GAMEPLAY_DERIVED_DEV",
+  "r2_guard": "Nenhum NPC/criatura/flora/facção já catalogado é alterado — este arquivo só acrescenta um vínculo de local a cada um, usando exclusivamente EST-XXX/SUB-XXX/TER-XXX/BIO-XXX já existentes. Nenhum código novo de local é criado aqui.",
+  "method_note": "Distribuição de primeira passada: regra sistemática por seção (round-robin dentro das construções/habitats já ligados a cada classe/bioma), não uma escolha narrativa única por entidade. Ajustável depois, item a item, se desejado.",
+
+  "npc_placements": [
+    {"npc_id": "NAT-01", "class_name": "Nativos", "role": "SUPORTE", "assigned_est": "EST-039", "est_name": "Guarnição do Abrigo"},
+    {"npc_id": "NAT-02", "class_name": "Nativos", "role": "ASSALTO", "assigned_est": "EST-039", "est_name": "Guarnição do Abrigo"},
+    {"npc_id": "NAT-03", "class_name": "Nativos", "role": "MÉDICO", "assigned_est": "EST-005", "est_name": "Casario de Varga"},
+    {"npc_id": "NAT-04", "class_name": "Nativos", "role": "FRANCO", "assigned_est": "EST-004", "est_name": "Oficina de Charneira"},
+    {"npc_id": "NAT-05", "class_name": "Nativos", "role": "SUPORTE", "assigned_est": "EST-039", "est_name": "Guarnição do Abrigo"},
+    {"npc_id": "NAT-06", "class_name": "Nativos", "role": "ASSALTO", "assigned_est": "EST-039", "est_name": "Guarnição do Abrigo"},
+    {"npc_id": "NAT-07", "class_name": "Nativos", "role": "MÉDICO", "assigned_est": "EST-005", "est_name": "Casario de Varga"},
+    {"npc_id": "NAT-08", "class_name": "Nativos", "role": "FRANCO", "assigned_est": "EST-004", "est_name": "Oficina de Charneira"},
+
+    {"npc_id": "SOL-01", "class_name": "Soldados", "assigned_est": "EST-007", "est_name": "Acampamento de Caravana"},
+    {"npc_id": "SOL-02", "class_name": "Soldados", "assigned_est": "EST-007", "est_name": "Acampamento de Caravana"},
+    {"npc_id": "SOL-03", "class_name": "Soldados", "assigned_est": "EST-008", "est_name": "Acampamento dos Trilhos"},
+    {"npc_id": "SOL-04", "class_name": "Soldados", "assigned_est": "EST-008", "est_name": "Acampamento dos Trilhos"},
+    {"npc_id": "SOL-05", "class_name": "Soldados", "assigned_est": "EST-009", "est_name": "Guarnição de Contenção"},
+    {"npc_id": "SOL-06", "class_name": "Soldados", "assigned_est": "EST-009", "est_name": "Guarnição de Contenção"},
+    {"npc_id": "SOL-07", "class_name": "Soldados", "assigned_est": "EST-010", "est_name": "Guarda da Fortaleza"},
+    {"npc_id": "SOL-08", "class_name": "Soldados", "assigned_est": "EST-010", "est_name": "Guarda da Fortaleza"},
+    {"npc_id": "SOL-09", "class_name": "Soldados", "assigned_est": "EST-038", "est_name": "Acampamento do Vau"},
+    {"npc_id": "SOL-10", "class_name": "Soldados", "assigned_est": "EST-038", "est_name": "Acampamento do Vau"},
+    {"npc_id": "SOL-11", "class_name": "Soldados", "assigned_est": "EST-040", "est_name": "Posto Avançado do Perímetro"},
+    {"npc_id": "SOL-12", "class_name": "Soldados", "assigned_est": "EST-040", "est_name": "Posto Avançado do Perímetro"},
+    {"npc_id": "SOL-13", "class_name": "Soldados", "assigned_est": "EST-041", "est_name": "Tendas de Acolhimento"},
+    {"npc_id": "SOL-14", "class_name": "Soldados", "assigned_est": "EST-041", "est_name": "Tendas de Acolhimento"},
+    {"npc_id": "SOL-15", "class_name": "Soldados", "assigned_est": "EST-043", "est_name": "Posto da Passagem Oculta"},
+    {"npc_id": "SOL-16", "class_name": "Soldados", "assigned_est": "EST-043", "est_name": "Posto da Passagem Oculta"},
+
+    {"npc_id": "AND-01", "class_name": "Androids", "assigned_est": "EST-019", "est_name": "Oficina de Fusão Tecnomágica"},
+    {"npc_id": "AND-02", "class_name": "Androids", "assigned_est": "EST-019", "est_name": "Oficina de Fusão Tecnomágica"},
+    {"npc_id": "AND-03", "class_name": "Androids", "assigned_est": "EST-019", "est_name": "Oficina de Fusão Tecnomágica"},
+    {"npc_id": "AND-04", "class_name": "Androids", "assigned_est": "EST-019", "est_name": "Oficina de Fusão Tecnomágica"},
+    {"npc_id": "AND-05", "class_name": "Androids", "assigned_est": "EST-003", "est_name": "Forja Real de Kharveth"},
+    {"npc_id": "AND-06", "class_name": "Androids", "assigned_est": "EST-003", "est_name": "Forja Real de Kharveth"},
+    {"npc_id": "AND-07", "class_name": "Androids", "assigned_est": "EST-003", "est_name": "Forja Real de Kharveth"},
+    {"npc_id": "AND-08", "class_name": "Androids", "assigned_est": "EST-003", "est_name": "Forja Real de Kharveth"},
+
+    {"npc_id": "MAG-N01", "class_name": "Magos", "assigned_est": "EST-034", "est_name": "Academia da Vertente"},
+    {"npc_id": "MAG-N02", "class_name": "Magos", "assigned_est": "EST-034", "est_name": "Academia da Vertente"},
+    {"npc_id": "MAG-N03", "class_name": "Magos", "assigned_est": "EST-034", "est_name": "Academia da Vertente"},
+    {"npc_id": "MAG-N04", "class_name": "Magos", "assigned_est": "EST-034", "est_name": "Academia da Vertente"},
+    {"npc_id": "MAG-N05", "class_name": "Magos", "assigned_est": "EST-044", "est_name": "Ateliê de Encantamento da Vertente"},
+    {"npc_id": "MAG-N06", "class_name": "Magos", "assigned_est": "EST-044", "est_name": "Ateliê de Encantamento da Vertente"},
+    {"npc_id": "MAG-N07", "class_name": "Magos", "assigned_est": "EST-044", "est_name": "Ateliê de Encantamento da Vertente"},
+    {"npc_id": "MAG-N08", "class_name": "Magos", "assigned_est": "EST-044", "est_name": "Ateliê de Encantamento da Vertente"}
+  ],
+  "npc_placements_note": "As 8 unidades civis AND-CIV-001..008 já têm 'assigned_est' próprio em MAR_ANDROID_UNITS_CIVIS_DEV_V1_0.json (fase 19) — não duplicadas aqui.",
+
+  "fauna_habitats": [
+    {"creature_id": "CRI-001", "name": "Cortassom", "habitat_subregion": "SUB-011-001", "habitat_territory": "TER-011", "habitat_bioma": "BIO-002"},
+    {"creature_id": "CRI-002", "name": "Velúrio", "habitat_subregion": "SUB-011-003", "habitat_territory": "TER-011", "habitat_bioma": "BIO-002"},
+    {"creature_id": "CRI-003", "name": "Brumante", "habitat_subregion": "SUB-011-003", "habitat_territory": "TER-011", "habitat_bioma": "BIO-002"},
+    {"creature_id": "CRI-004", "name": "Lúmara", "habitat_subregion": "SUB-011-003", "habitat_territory": "TER-011", "habitat_bioma": "BIO-002"},
+    {"creature_id": "CRI-005", "name": "Raizel manso", "habitat_subregion": "SUB-011-004", "habitat_territory": "TER-011", "habitat_bioma": "BIO-002"},
+    {"creature_id": "CRI-006", "name": "Luzipólen", "habitat_subregion": "SUB-011-005", "habitat_territory": "TER-011", "habitat_bioma": "BIO-002"},
+    {"creature_id": "CRI-007", "name": "Fio-de-Orvalho", "habitat_subregion": "SUB-011-001", "habitat_territory": "TER-011", "habitat_bioma": "BIO-002"},
+    {"creature_id": "CRI-008", "name": "Grilo-Cobre", "habitat_subregion": "SUB-011-002", "habitat_territory": "TER-011", "habitat_bioma": "BIO-002"},
+    {"creature_id": "CRI-009", "name": "Larva-de-Véu", "habitat_subregion": "SUB-011-001", "habitat_territory": "TER-011", "habitat_bioma": "BIO-002"},
+    {"creature_id": "CRI-010", "name": "Vespa-de-Vidro", "habitat_subregion": "SUB-011-006", "habitat_territory": "TER-011", "habitat_bioma": "BIO-002"},
+    {"creature_id": "CRI-011", "name": "Besouro-Rubro", "habitat_subregion": "SUB-011-006", "habitat_territory": "TER-011", "habitat_bioma": "BIO-002"},
+    {"creature_id": "CRI-012", "name": "Louva-Fenda", "habitat_subregion": "SUB-011-006", "habitat_territory": "TER-011", "habitat_bioma": "BIO-002"},
+    {"creature_id": "CRI-013", "name": "Mandíbula-de-Névoa", "habitat_subregion": "SUB-011-006", "habitat_territory": "TER-011", "habitat_bioma": "BIO-002"}
+  ],
+  "fauna_habitats_note": "Todas as 13 criaturas do bestiário são de Terras Livres (TER-011) — a única fauna concretamente catalogada até agora. habitat_bioma segue o vínculo já formalizado (BIOMA_TERRITORIO_LINKS_DEV_V1_0.json): BIO-002 Planícies Luminais ⟷ TER-011.",
+
+  "flora_habitats": [
+    {"flora_id": "FLO-001", "name": "Pastagem Luminal", "habitat_subregion": "SUB-011-003", "habitat_territory": "TER-011", "habitat_bioma": "BIO-002"},
+    {"flora_id": "FLO-002", "name": "Raiz-de-Névoa", "habitat_subregion": "SUB-011-006", "habitat_territory": "TER-011", "habitat_bioma": "BIO-002"},
+    {"flora_id": "FLO-003", "name": "Flor-de-Orvalho", "habitat_subregion": "SUB-011-005", "habitat_territory": "TER-011", "habitat_bioma": "BIO-002"},
+    {"flora_id": "FLO-004", "name": "Junco-Cobre", "habitat_subregion": "SUB-011-002", "habitat_territory": "TER-011", "habitat_bioma": "BIO-002"},
+    {"flora_id": "FLO-005", "name": "Véu-de-Teia", "habitat_subregion": "SUB-011-001", "habitat_territory": "TER-011", "habitat_bioma": "BIO-002"},
+    {"flora_id": "FLO-006", "name": "Espinho de Vidro", "habitat_subregion": "SUB-011-006", "habitat_territory": "TER-011", "habitat_bioma": "BIO-002"}
+  ],
+  "flora_habitats_note": "FLO-001 e FLO-002 já citavam subregião exata no campo facts.Habitat; as demais (003-006) citavam só 'Terras Livres' de forma genérica — aqui formalizadas na subregião coerente com a fauna/uso já relacionado (ex.: FLO-004 Junco-Cobre → SUB-011-002, mesma zona seca do Grilo-Cobre que abriga).",
+
+  "faction_territories": [
+    {"fac_id": "FAC-001", "name": "Árvores Anciãs", "territory_ref": "TER-008", "scope": "TERRITORIAL", "rationale": "Via BIO-001 Coração Ancestral ⟷ TER-008 (BIOMA_TERRITORIO_LINKS): santuário do Coração Ancestral é a base R2 da instituição."},
+    {"fac_id": "FAC-002", "name": "Reis Magos", "territory_ref": "TER-010", "scope": "TERRITORIAL", "rationale": "Vínculo R2 direto e explícito: relations cita 'dominio-dos-reis-magos' como domínio político."},
+    {"fac_id": "FAC-003", "name": "Conselho de Convergência", "territory_ref": null, "scope": "PLANETARY_NON_TERRITORIAL", "rationale": "R2 explícito: 'Negociação, não governo planetário' — fórum entre potências, sem sede territorial única."},
+    {"fac_id": "FAC-004", "name": "Vigília Radicular", "territory_ref": "TER-012", "scope": "TERRITORIAL", "rationale": "R2 explícito: relations cita 'zonas-de-contencao' como área de atuação — corresponde a TER-012 Zonas de Contenção."},
+    {"fac_id": "FAC-005", "name": "Círculo Arcano-Botânico da Flor Fóssil", "territory_ref": "TER-008", "scope": "TERRITORIAL_SUBORDINATE", "rationale": "R2 explícito: relations cita FAC-001 (Árvores Anciãs) como 'instituição superior' — herda o mesmo território, TER-008."},
+    {"fac_id": "FAC-009", "name": "Colegiado dos Ofícios de Oficina da Fronteira", "territory_ref": null, "scope": "TRANSREGIONAL_NON_SOVEREIGN", "operational_hub_territory": "TER-011", "rationale": "scope já declarado como TRANSREGIONAL_NON_SOVEREIGN (does_not_control: territory); hub operacional em EST-004 Oficina de Charneira, Terras Livres."},
+    {"fac_id": "FAC-010", "name": "Liga de Oficinas Licenciadas da Fronteira", "territory_ref": null, "scope": "TRANSREGIONAL_NON_SOVEREIGN", "operational_hub_territory": "TER-011", "rationale": "Mesmo hub de FAC-009 (parceira/rival em tensão, mesma rede de oficinas de Terras Livres)."},
+    {"fac_id": "FAC-090", "name": "Enclave Sintético", "territory_ref": null, "scope": "TRANSREGIONAL_NON_SOVEREIGN", "operational_hub_territory": "TER-002", "rationale": "scope já declarado TRANSREGIONAL_NON_SOVEREIGN; hub operacional principal em EST-003 Forja Real de Kharveth (linhagem BATALHA) e EST-019 Oficina de Fusão Tecnomágica em TER-005 (manutenção/reparo). (renumerado de FAC-011 nesta sessão - colisão com codigo oficial do MASTER V2.0.1)"}
+  ],
+  "faction_territories_note": "5 facções R2 (FAC-001..005) e 3 derivadas (FAC-009/010/011) cobertas — as 5 culturas/facções restantes do R2 que não aparecem aqui (se houver) não têm ficha própria carregada nesta rodada; FAC-003/009/010/011 permanecem sem território único por natureza já declarada no próprio registro (não é uma lacuna, é um fato de design)."
+}

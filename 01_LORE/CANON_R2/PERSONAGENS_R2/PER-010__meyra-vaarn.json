@@ -1,0 +1,53 @@
+{
+  "record_id": "PER-010",
+  "record_kind": "R2_CANONICAL_ENTRY_MIRROR",
+  "authority": "CANON_R2_CONFIRMADO",
+  "canonical_home": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-010__meyra-vaarn.json",
+  "source": {
+    "archive_sha256": "257e456a5d0396310ec2355b3dfc0f11f4e0a5264cf6e764591c8760f5070cb0",
+    "lineage": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json",
+    "document_sha256": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726"
+  },
+  "entry": {
+    "code": "PER-010",
+    "slug": "meyra-vaarn",
+    "title": "Meyra Vaarn",
+    "subtitle": "Mãe de Kenua",
+    "category": "PER",
+    "secondaryCategories": [],
+    "canon": "Cânone original",
+    "spoiler": 2,
+    "sealed": true,
+    "image": null,
+    "imageStatus": null,
+    "summary": "Mãe de Kenua, falecida em 832 EC durante uma epidemia agravada pelo atraso de medicamentos.",
+    "facts": {
+      "Condição": "Falecida",
+      "Ano da morte": "832 EC",
+      "Filho": "Kenua Vaarn"
+    },
+    "sections": [],
+    "relations": [
+      {
+        "slug": "kenua-vaarn",
+        "label": "Mãe"
+      }
+    ],
+    "keywords": [
+      "Meyra",
+      "Kenua",
+      "epidemia",
+      "832 EC"
+    ],
+    "sources": [
+      "BIBLIA_PERSONAGENS_VOLUME_1.md"
+    ]
+  },
+  "biography": {
+    "status": "R2_SUMMARY_ONLY",
+    "source_document": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/legacy/v110/docs/canon/01_CANON_ATUAL/BIBLIA_PERSONAGENS_VOLUME_1.md",
+    "source_sha256": "a7d133276930bffbe429d029c8cc97f377b9bed2c90f30f8e44c76d46c61b8be",
+    "text": "Mãe de Kenua, falecida em 832 EC durante uma epidemia agravada pelo atraso de medicamentos.",
+    "no_unverified_additions": true
+  }
+}

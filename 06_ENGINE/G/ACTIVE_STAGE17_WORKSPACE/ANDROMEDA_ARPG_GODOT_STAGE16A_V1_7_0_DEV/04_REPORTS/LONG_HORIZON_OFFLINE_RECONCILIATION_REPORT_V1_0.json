@@ -1,0 +1,168 @@
+{
+  "record_id": "LONG-HORIZON-OFFLINE-RECONCILIATION-REPORT-V1.0",
+  "stage": "ETAPA_11",
+  "status": "LONG_HORIZON_OFFLINE_RECONCILIATION_FUNCTIONAL_AND_VALIDATED",
+  "baseline_mutations": 0,
+  "unit_regression": {
+    "record_id": "STAGE11-UNIT-REGRESSION-V1.0",
+    "tests": 576,
+    "passed": 576,
+    "failed": 0,
+    "errors": 0,
+    "status": "PASS",
+    "modules": [
+      {
+        "module": "test_runtime_core",
+        "tests": 59,
+        "status": "PASS"
+      },
+      {
+        "module": "test_consequence_engine",
+        "tests": 56,
+        "status": "PASS"
+      },
+      {
+        "module": "test_agent_brain",
+        "tests": 90,
+        "status": "PASS"
+      },
+      {
+        "module": "test_social_memory",
+        "tests": 72,
+        "status": "PASS"
+      },
+      {
+        "module": "test_ecology_brain",
+        "tests": 77,
+        "status": "PASS"
+      },
+      {
+        "module": "test_object_environment",
+        "tests": 73,
+        "status": "PASS"
+      },
+      {
+        "module": "test_world_orchestrator",
+        "tests": 54,
+        "status": "PASS"
+      },
+      {
+        "module": "test_world_systems",
+        "tests": 51,
+        "status": "PASS"
+      },
+      {
+        "module": "test_long_horizon",
+        "tests": 44,
+        "status": "PASS"
+      }
+    ],
+    "execution_note": "Modules were executed in separate batches because monolithic aggregation exceeded the tool execution window; every listed module completed PASS."
+  },
+  "extended": {
+    "record_id": "STAGE11-EXTENDED-VALIDATION-V1.0",
+    "checks": 170,
+    "passed": 170,
+    "failed": 0,
+    "status": "PASS",
+    "seconds": 16.808,
+    "failures": []
+  },
+  "stress": {
+    "record_id": "STAGE11-FUZZ-STRESS-V1.0",
+    "status": "PASS",
+    "failures": [],
+    "metrics": {
+      "same_request_callers": 32,
+      "same_request_successes": 32,
+      "same_request_replays": 31,
+      "same_request_errors": [],
+      "same_request_day": 30,
+      "restart_final_day": 365,
+      "restart_replay": true,
+      "restart_integrity": "PASS",
+      "restart_reconciled": "PASS",
+      "multiworld_worlds": 6,
+      "multiworld_errors": [],
+      "multiworld_days": {
+        "rt:world:131b427e-0e0c-451f-aaca-b20d25c0a21d": 30,
+        "rt:world:93898b7c-1274-4f09-96cc-a01e8c337de4": 180,
+        "rt:world:d4603be2-6b45-4703-b4d4-532253871415": 365,
+        "rt:world:f749426f-3a24-444e-8afa-269a5146c66e": 730,
+        "rt:world:03fd9858-3912-4ad3-a1df-cd60bf2a37e1": 1095,
+        "rt:world:ca349c75-9064-48b6-9be8-229fe76bae0d": 3650
+      },
+      "multiworld_integrity": {
+        "rt:world:131b427e-0e0c-451f-aaca-b20d25c0a21d": "PASS",
+        "rt:world:93898b7c-1274-4f09-96cc-a01e8c337de4": "PASS",
+        "rt:world:d4603be2-6b45-4703-b4d4-532253871415": "PASS",
+        "rt:world:f749426f-3a24-444e-8afa-269a5146c66e": "PASS",
+        "rt:world:03fd9858-3912-4ad3-a1df-cd60bf2a37e1": "PASS",
+        "rt:world:ca349c75-9064-48b6-9be8-229fe76bae0d": "PASS"
+      },
+      "fuzz_sessions": 25,
+      "fuzz_expected_day": 644,
+      "fuzz_actual_day": 644,
+      "fuzz_integrity": "PASS",
+      "sqlite_integrity": "ok",
+      "foreign_key_failures": 0
+    },
+    "seconds": 31.539
+  },
+  "static_audit": {
+    "record_id": "STAGE11-STATIC-AUDIT-V1.0",
+    "checks": 88,
+    "passed": 88,
+    "failed": 0,
+    "status": "PASS",
+    "failures": []
+  },
+  "coverage": {
+    "record_id": "STAGE11-COVERAGE-V1.0",
+    "module": "01_RUNTIME/long_horizon.py",
+    "percent_covered": 94.21,
+    "num_statements": 363,
+    "covered_lines": 342,
+    "missing_lines": 21,
+    "status": "PASS"
+  },
+  "demo": {
+    "status": "PASS",
+    "catchup": {
+      "days": 365,
+      "segments": 14,
+      "snapshots": 14,
+      "decision_counts": {
+        "npc": 0,
+        "ecology_individual": 0
+      },
+      "day7_boundary": 1
+    },
+    "final": {
+      "clock": {
+        "clock_id": "rt:clock:165397d0-6151-42ba-b519-395789572924",
+        "epoch_id": "STELLAR_RUNTIME_EPOCH",
+        "day": 365,
+        "tick": 0,
+        "ticks_per_day": 24,
+        "state": "RUNNING"
+      },
+      "bridge_lifecycle": "ACTIVE",
+      "bridge_integrity": 100.0,
+      "route_operational": true,
+      "price": 10.0,
+      "shortage": 0,
+      "resume_mode": "FULL"
+    },
+    "history": {
+      "events": 32,
+      "segments": 14,
+      "snapshots": 14
+    }
+  },
+  "corrections": {
+    "closed": 6,
+    "open": 0
+  },
+  "package_class": "WORKING_PACKAGE"
+}

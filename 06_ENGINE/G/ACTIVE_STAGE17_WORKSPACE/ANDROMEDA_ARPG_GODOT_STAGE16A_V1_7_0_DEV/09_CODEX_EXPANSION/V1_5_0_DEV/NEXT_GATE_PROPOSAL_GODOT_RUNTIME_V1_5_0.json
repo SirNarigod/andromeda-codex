@@ -1,0 +1,20 @@
+{
+  "record_id": "NEXT-GATE-PROPOSAL-V1.5.0",
+  "title": "Godot 4 Runtime Execution + V1.5 Release Closure",
+  "changes_before_release": [
+    "Execute GodotRuntimeGate.gd in Godot 4",
+    "Connect a real Godot client transport to session_ref API",
+    "Validate spawn/movement/chunk crossing/dungeon transition in rendered client",
+    "Run unload/reload/reconnect with authoritative snapshots",
+    "Repeat 831 tests + stress + Stage13/14 + static/readiness",
+    "Only then promote V1.5.0 to RELEASE and create BACKUP"
+  ],
+  "must_not_change": [
+    "Master V2.1.0",
+    "second-country lock",
+    "Kenua country binding",
+    "canonical data without separate author decision"
+  ],
+  "after_release_candidate_next_stage": "First-country gameplay completion: environmental consequences, path-grid/terrain collision, gathering/crafting/equipment UI and isometric combat integration before any second country.",
+  "future_countries": "REMAIN_LOCKED"
+}

@@ -1,0 +1,27 @@
+{
+  "checkpoint": "FIRST_PLAYABLE_V0_1_14_DEV",
+  "parent_checkpoint": "FIRST_PLAYABLE_V0_1_13_DEV_FIX1_RUNTIME_PASS",
+  "status": "STATIC_VALIDATED_RUNTIME_PENDING",
+  "functional_scope": [
+    "subtle_move_target_marker",
+    "categorized_inventory",
+    "left_mouse_movement_over_world_objects"
+  ],
+  "preserved_contracts": {
+    "left_short_click": "move",
+    "left_hold": "follow_cursor_release_stops",
+    "left_world_objects": "movement_only_no_interaction",
+    "right_click": "click_only_contextual",
+    "attack_global_cooldown_s": 2.0,
+    "inventory_key": "I",
+    "inventory_hidden_by_default": true
+  },
+  "static_checks": {
+    "checks": 19,
+    "passed": 19,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1",
+  "backup_authorized": false
+}

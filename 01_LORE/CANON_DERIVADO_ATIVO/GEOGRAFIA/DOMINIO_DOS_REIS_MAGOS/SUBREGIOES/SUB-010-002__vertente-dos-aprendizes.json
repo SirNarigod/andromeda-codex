@@ -1,0 +1,18 @@
+{
+  "record_id": "SUB-010-002",
+  "record_kind": "DERIVED_SUBREGION_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Vertente dos Aprendizes",
+  "parent_political_unit": "TER-010",
+  "provenance": {"approval": "GAMEPLAY_DERIVED_DEV_SOURCE", "r2_anchors": ["TER-010", "MAG-001", "MAG-002"], "compatibility": "Camada administrativa e narrativa local; não cria fronteira, cidade, soberania ou nova autoridade."},
+  "function": "Formação de novos magos — treino de método (fórmula, runa, vínculo, instinto conforme MAG-001) sob supervisão.",
+  "locality_references": ["LOC-010-002 Academia da Vertente"],
+  "permitted_catalog_links": {"npc_roles": ["classe:Magos"], "professions": [], "encounters": [], "resources": []},
+  "local_conflicts": ["disciplina de método versus talento instintivo não regulado", "custo de formação versus acesso popular à magia"],
+  "prohibitions": ["NO_NEW_SOVEREIGNTY", "NO_AUTOMATIC_KENUA_SCENE", "NO_R2_EPISODE_REWRITE", "NO_FIXED_BORDER_COORDINATE", "NO_INVENTED_RUNE_EFFECT"],
+  "story_generators": [
+    "Um aprendiz demonstra talento de instinto mágico não regulado e o conselho debate se deve ser contido ou aproveitado.",
+    "Uma turma de fórmula falada compete por vagas limitadas de mentoria com uma turma de runa."
+  ]
+}

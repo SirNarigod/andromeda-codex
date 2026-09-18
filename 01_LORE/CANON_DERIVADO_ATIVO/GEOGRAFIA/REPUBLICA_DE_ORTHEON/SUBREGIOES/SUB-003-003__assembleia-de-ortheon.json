@@ -1,0 +1,11 @@
+{
+  "record_id": "SUB-003-003", "record_kind": "DERIVED_SUBREGION_PROFILE", "authority": "CANON_DERIVADO_ATIVO", "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Assembleia de Ortheon", "parent_political_unit": "TER-003",
+  "provenance": {"approval": "GAMEPLAY_DERIVED_DEV_SOURCE", "r2_anchors": ["TER-003", "caelen-orthev"], "compatibility": "Camada administrativa e narrativa local; não cria fronteira, cidade, soberania ou nova autoridade."},
+  "function": "Sede legislativa da república, onde representantes eleitos deliberam.",
+  "locality_references": ["LOC-003-003 Câmara da Assembleia"],
+  "permitted_catalog_links": {"npc_roles": [], "professions": [], "encounters": [], "resources": []},
+  "local_conflicts": ["representação por distrito ferroviário versus representação populacional direta"],
+  "prohibitions": ["NO_NEW_SOVEREIGNTY", "NO_AUTOMATIC_KENUA_SCENE", "NO_R2_EPISODE_REWRITE", "NO_FIXED_BORDER_COORDINATE"],
+  "story_generators": ["Uma reforma de representação divide a assembleia entre distritos antigos e novos bairros ferroviários."]
+}

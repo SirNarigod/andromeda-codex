@@ -1,0 +1,62 @@
+{
+  "record_id": "COS-002",
+  "record_kind": "R2_CANONICAL_ENTRY_MIRROR",
+  "authority": "CANON_R2_CONFIRMADO",
+  "canonical_home": "01_LORE/CANON_R2/COSMOLOGIA_E_PLANETA/COSMOLOGIA/COS-002__amadon.json",
+  "source": {
+    "archive_sha256": "257e456a5d0396310ec2355b3dfc0f11f4e0a5264cf6e764591c8760f5070cb0",
+    "lineage": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json",
+    "document_sha256": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726"
+  },
+  "entry": {
+    "code": "COS-002",
+    "slug": "amadon",
+    "title": "Amadon",
+    "subtitle": "Guardião de Stellar",
+    "category": "COS",
+    "secondaryCategories": [],
+    "canon": "Cânone consolidado",
+    "spoiler": 4,
+    "sealed": true,
+    "image": null,
+    "imageStatus": null,
+    "summary": "Consciência guardiã conectada a Stellar. Sua existência é descoberta por Kenua somente no Episódio 8 da Temporada 1.",
+    "facts": {
+      "Função": "Guardião de Stellar",
+      "Vínculo": "Corrente Planetária",
+      "Criação conhecida": "Espinho-Negro",
+      "Escala de combate": "6 — planetário",
+      "Primeira conexão com Kenua": "Episódio 8 — O Hospedeiro"
+    },
+    "sections": [
+      {
+        "heading": "Política de revelação",
+        "body": "Kenua não ouve, vê ou identifica Amadon antes do último episódio da Temporada 1. Sinais anteriores pertencem à flor, à Corrente Planetária ou a memórias incompletas, nunca a uma conversa direta com o guardião."
+      }
+    ],
+    "relations": [
+      {
+        "slug": "stellar",
+        "label": "Guardião"
+      },
+      {
+        "slug": "espinho-negro",
+        "label": "Criador"
+      },
+      {
+        "slug": "raiz-profunda",
+        "label": "Oposição"
+      }
+    ],
+    "keywords": [
+      "Amadon",
+      "guardião",
+      "Corrente Planetária",
+      "Espinho-Negro"
+    ],
+    "sources": [
+      "RESUMO_MESTRE_CANONICO.md",
+      "MAGIA_ARMAS_E_COMBATE.md"
+    ]
+  }
+}

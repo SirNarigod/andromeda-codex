@@ -1,0 +1,115 @@
+{
+  "record_id": "ANDROMEDA-STAGE16B-FINAL-CLOSURE-V0.9.0",
+  "created_at": "2026-08-27T15:31:49-03:00",
+  "stage": "STAGE16B",
+  "record_class": "POST_AUDIT_POST_RESTORE_POST_BACKUP_CLOSURE",
+  "predecessor": "AUTHORITY_STAGE16B_FINAL_AUDIT_EVIDENCE_CONSOLIDATION_V0_8_9.json",
+  "stage16b": {
+    "status": "CLOSED",
+    "functional_matrix": {
+      "pass": 28,
+      "partial_evidence": 0,
+      "fail": 0,
+      "blocked": 0,
+      "total": 28
+    },
+    "final_audit": "PASS",
+    "checkpoint": "VALIDATED",
+    "restore": "VALIDATED",
+    "backup": {
+      "status": "VALIDATED",
+      "byte_identical_to_checkpoint": true,
+      "sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc"
+    }
+  },
+  "b08_disposition": {
+    "status": "HISTORICAL_PRESENTATION_REGRESSION_SUPERSEDED",
+    "acceptance_scope_pass": [],
+    "authority": "GODOT_GATHERING_CLIENT_ORCHESTRATION_ONLY",
+    "authoritative_roundtrip_executed": false,
+    "historical_geometric_snap_failures": 8,
+    "reason": "Presentation/client orchestration only; eight local fixture geometric snap checks were superseded by later live-authoritative gates. The historical file and results remain unchanged."
+  },
+  "b11_disposition": {
+    "status": "HISTORICAL_PRESENTATION_REGRESSION",
+    "status_label": "SUPERSEDED_AS_G16B19_AUTHORITY_BY_G19_LIVE_GATE",
+    "checks": {
+      "passed": 343,
+      "total": 343
+    },
+    "historical_internal_label_preserved": "g16b19_status = PARTIAL_EVIDENCE",
+    "final_g16b19_authority": "authority_vertical_slice_runtime_gate 71/71 x2"
+  },
+  "non_blocking_limitations": [
+    "QUEST_PROGRESSION_TRANSPORT_GAP",
+    "DIALOGUE_METRIC_PROXIMITY_AUTHORITY_NOT_AVAILABLE",
+    "GAMEPLAY_PLACEHOLDER_COPY_NOT_CANON_DIALOGUE",
+    "NPC_CIT001_SPATIAL_BINDING_NOT_AUTHORITATIVE",
+    "CROSS_ZONE_PROMOTION_OBSERVATION_NOT_REQUIRED",
+    "NON_DEV_PROFILE_SNAPSHOT_LIMITATION",
+    "GROUND_LOOT_REACHABLE_AUTO_SETTLE_LIMITATION",
+    "OPERATIONAL_TEST_ENVIRONMENT_CONSTRAINT: do not run heavy backend validation simultaneously with timing-sensitive Godot gates"
+  ],
+  "resolved_issues": {
+    "SAVE_RELOAD_CLIENT_GLOBAL_SEQUENCE_GUARD": "RESOLVED",
+    "SAVE_RELOAD_CLIENT_REJECTION_STUCK_PENDING": "RESOLVED",
+    "BAG_RECOVERY_NONSPATIAL_INF_JSON": "RESOLVED",
+    "G16B_09_LIVING_SYSTEMIC_INTEGRATION_GAP": "RESOLVED",
+    "DIALOGUE_TRANSPORT_GAP": "RESOLVED",
+    "DIALOGUE_TARGET_IDENTITY_PROJECTION_GAP": "RESOLVED",
+    "G16B19_FIXTURE_ONLY_VERTICAL_SLICE": "RESOLVED_BY_LIVE_AUTHORITY_GATE"
+  },
+  "key_results": {
+    "godot": {
+      "dialogue": "30/30",
+      "g19": "71/71 x2",
+      "g09": "51/51",
+      "g17": "103/103",
+      "slot_guard": "32/32",
+      "save_death": "194/194",
+      "npc_ownership": "62/62",
+      "water_ttl": ["19/19", "26/26", "22/22", "30/30", "28/28"],
+      "combat": "91/91",
+      "ground_loot": "53/53",
+      "gathering": "77/77",
+      "b01": "54/54",
+      "b03": "357/357",
+      "b04": "156/156",
+      "b11": "343/343 historical presentation regression",
+      "debugger": "0 errors / 0 warnings"
+    },
+    "backend": {
+      "full_validation": "PASS / 0 failures",
+      "dialogue": "36/36",
+      "g09": "26/26",
+      "stage16a_regression": "209/209",
+      "stage16a_checkpoint": "724/724 / 0 missing / 0 divergent"
+    }
+  },
+  "command_surface": {
+    "enabled_commands_count": 27,
+    "production_confirmed": ["REQUEST_NPC_DIALOGUE"],
+    "development_only": [
+      "ADVANCE_DEVELOPMENT_WATER_TIME",
+      "ATTEMPT_DEVELOPMENT_NPC_BAG_RECOVERY",
+      "ADVANCE_DEVELOPMENT_LIVING_SYSTEMIC",
+      "ATTEMPT_DEVELOPMENT_SYSTEMIC_ZONE_HUNT"
+    ],
+    "source": "12_AUTHORITY_BACKEND/andromeda_authority_adapter.py::ENABLED_COMMANDS"
+  },
+  "protected_integrity": {
+    "stage16a_v0_8_1_sha256": "03bc6b621a5ae8e0bf6542803412611855b32503154221ec7ea1b7aaf28befc4",
+    "stage16a_v0_8_0_sha256": "21626a3152cb37e167eee24bff9d3142c5d389a8ca2827594b34211591525a6a",
+    "master_v2_0_1_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "stage16a_entries": 724,
+    "stage16a_missing": 0,
+    "stage16a_divergent": 0,
+    "source_or_gameplay_modified_by_closure": false
+  },
+  "stage17": {
+    "ready_to_start": true,
+    "execution": "NOT_STARTED",
+    "recommended_next_process": "STAGE17 / ETAPA 31 — FOUNDATION TRANSITION + PLAYABLE VERTICAL SLICE PASS"
+  },
+  "decision": "STAGE16B_CLOSED"
+}

@@ -1,0 +1,80 @@
+{
+  "record_id": "STELLAR-DISEASE-CATALOG-DEV-V1.0",
+  "title": "Catálogo de Doenças de Stellar",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "r2_guard": "Toda doença deriva de uma causa já catalogada (RES-009/010 biological hazard, clima de território real, ocupação industrial real, Raiz Profunda já confirmada) - nenhuma doença nova inventa fato de mundo, só formaliza consequências de exposição já implícitas.",
+  "diseases": [
+    {
+      "disease_id": "DOE-001",
+      "name": "Febre de Solo Contaminado",
+      "cause": "Exposição a pasto/solo contaminado (mesmo risco já citado em RES-001 Leite veluriano)",
+      "transmission": "Ambiental (não contagiosa entre pessoas)",
+      "symptoms": "Febre, fadiga, redução de apetite",
+      "cure_ref": "MED-006 Analgésico de Jardim + repouso",
+      "territories_common": [
+        "TER-011"
+      ]
+    },
+    {
+      "disease_id": "DOE-002",
+      "name": "Toxemia de Vidro",
+      "cause": "Picada não tratada de Vespa-de-Vidro (RES-009)",
+      "transmission": "Não contagiosa",
+      "symptoms": "Paralisia parcial temporária, dor articular",
+      "cure_ref": "MED-002 Antitóxico de Vidro",
+      "territories_common": [
+        "TER-001"
+      ]
+    },
+    {
+      "disease_id": "DOE-003",
+      "name": "Queimadura Rubra",
+      "cause": "Contato com secreção de Besouro-Rubro (RES-010)",
+      "transmission": "Não contagiosa",
+      "symptoms": "Queimadura química de pele, inflamação",
+      "cure_ref": "MED-003 Cataplasma de Besouro",
+      "territories_common": [
+        "TER-007"
+      ]
+    },
+    {
+      "disease_id": "DOE-004",
+      "name": "Mal da Fenda Congelada",
+      "cause": "Exposição prolongada ao frio extremo (TER-016)",
+      "transmission": "Não contagiosa (ambiental)",
+      "symptoms": "Hipotermia, dormência de extremidades",
+      "cure_ref": "MED-007 Soro Reidratante + aquecimento",
+      "territories_common": [
+        "TER-016"
+      ]
+    },
+    {
+      "disease_id": "DOE-005",
+      "name": "Contaminação Radicular",
+      "cause": "Exposição a fauna/flora/ambiente corrompido pela Raiz Profunda (RP-PROP, MIN-ROOT-SHARD)",
+      "transmission": "Contato direto com tecido corrompido - risco de progressão para corrupção total sem tratamento",
+      "symptoms": "Necrose localizada, filamentos radiculares sob a pele",
+      "cure_ref": "Sem cura formal catalogada - contenção pela Vigília Radicular (FAC-004) é a única resposta conhecida",
+      "territories_common": [
+        "TER-012"
+      ],
+      "severity_note": "Mais grave que as demais - liga-se diretamente à Raiz Profunda (COR-001), não tratar como doença comum."
+    },
+    {
+      "disease_id": "DOE-006",
+      "name": "Pneumonia Industrial",
+      "cause": "Inalação prolongada de fumaça/poeira mineral em fundições (ex. EST-003, EST-049)",
+      "transmission": "Não contagiosa (ocupacional)",
+      "symptoms": "Tosse crônica, falta de ar",
+      "cure_ref": "EQP-008 Máscara de Filtragem (prevenção) + MED-007",
+      "territories_common": [
+        "TER-002",
+        "TER-014"
+      ]
+    }
+  ],
+  "prohibitions": [
+    "NO_HAZARD_AS_DEFAULT_LOOT",
+    "NO_ROOT_ESCALATION_WITHOUT_GATE"
+  ]
+}

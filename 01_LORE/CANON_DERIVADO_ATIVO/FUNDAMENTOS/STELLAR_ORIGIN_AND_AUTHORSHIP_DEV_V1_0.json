@@ -1,0 +1,262 @@
+{
+  "record_id": "STELLAR-ORIGIN-AND-AUTHORSHIP-FINDINGS-DEV-V1.0",
+  "title": "Autoria e Origem — Runas, Androids, Tecnologia e o Achado de Governança sobre Votakhel",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "r2_guard": "Todo achado abaixo respeita a hierarquia R2 > derivado: nada aqui contradiz ou reescreve um fato R2 confirmado; onde o cânone R2 deliberadamente sela uma origem (Votakhel), isso é documentado como achado de governança, não preenchido.",
+  "votakhel_governance_finding": {
+    "verdict": "NÃO PREENCHÍVEL — mistério intencional do cânone, não uma lacuna",
+    "evidence": "COS-003__votakhel.json (CANON_R2_CONFIRMADO) tem 'sealed': true e 'spoiler': 4 (o nível mais alto usado no cânone) — o mesmo mecanismo de proteção usado para revelações tardias (ex. Amadon, protegido até S01E08). 'Manifestação na Temporada 1: Somente voz' confirma que a identidade/origem física de Votakhel é deliberadamente reservada para além da Temporada 1.",
+    "conclusion": "Perguntar 'quem é Votakhel e qual sua origem' não revela uma lacuna de conteúdo ausente — revela uma reserva narrativa proposital. Inventar uma origem aqui violaria a proteção sealed/spoiler-4 do próprio cânone R2. O que já é conhecido e não-selado (ação: implantou a Raiz Profunda; escala de combate 7 — cósmico; relação de 'ameaça cósmica' com Stellar) permanece a única informação legítima até uma decisão autoral explícita do usuário liberar mais."
+  },
+  "rune_origin_finding": {
+    "verdict": "LACUNA REAL — preenchida abaixo",
+    "evidence": "MAG-002__runas.json (R2 confirmado, sealed:false) não tem nenhum campo de criador/origem; MASTER_RUNAS_MAGIAS_FUNCTIONAL_V2_0_0.json (30 runas + 23 magias novas do Master V2) também não define origem — confirmado por varredura de texto.",
+    "origin_lore": "As runas não têm um inventor único — são uma técnica descoberta, não criada: fragmentos de estrutura de contenção de energia observados em afloramentos naturais da Corrente Planetária (MAG-003), muito antes de qualquer sistematização formal. O Domínio dos Reis Magos (TER-010, FAC-002) foi quem primeiro sistematizou o conhecimento disperso num método replicável (núcleo/direção/limite/condição/dissipador, os 5 componentes já canônicos de MAG-002) — mas mesmo essa sistematização é creditada à magocracia como instituição, não a uma pessoa nomeada, para não contradizer 'Serlis Aftermoon' (PER-003) que a própria MAG-002 já lista apenas como 'especialista', nunca como criadora.",
+    "creator_model": "Descoberta natural + sistematização institucional coletiva (FAC-002 Reis Magos) — sem inventor individual nomeado, mesmo princípio de autoria coletiva usado no restante deste documento.",
+    "compatibility_note": "Não contradiz nenhuma relation existente de MAG-002 (leis-da-magia/método mágico; serlis-aftermoon/especialista; sistema-de-armamentos/aplicação)."
+  },
+  "android_origin_finding": {
+    "verdict": "LACUNA REAL — preenchida (edição aditiva em FAC-090__enclave-sintetico.json)",
+    "summary": "Origem concreta atribuída: TER-005 Principado de Ithra, EST-019 Oficina de Fusão Tecnomágica, fundação coletiva/anônima ('Coletivo da Fusão'), mesmo princípio de autoria coletiva usado em FAC-005 (AUTH-DEC-003 do Master V2.0.1: fundadores do Círculo Arcano-Botânico permanecem desconhecidos, intencionalmente).",
+    "detail_file": "01_LORE/CANON_DERIVADO_ATIVO/SOCIEDADES/FACCOES/FAC-090__enclave-sintetico.json#identity.creation_site"
+  },
+  "technology_authorship_finding": {
+    "verdict": "LACUNA REAL — preenchida no nível de categoria (não item a item, respeitando o honest-stub principle: os 83 itens de MASTER_TECNOLOGIA_CATALOG_V2_0_0.json são majoritariamente stubs id+name sem conteúdo real; atribuir um 'criador' individual a cada um fabricaria fato sobre um stub vazio)",
+    "method": "Cada uma das 29 categorias de tecnologia já reais é atribuída à indústria/território que já tem identidade estabelecida e coerente com aquele domínio técnico (ex. RAL/Ferroviário -> Ortheon, já dono de TEC-001 R2; MED -> Rubra-Viva, já território medicinal) — nenhuma atribuição é arbitrária, todas citam uma construção/território já real.",
+    "count_categories": 29,
+    "categories": [
+      {
+        "category_code": "AGR",
+        "category_label": "Tecnologia agrícola",
+        "item_count": 3,
+        "origin_territory_or_network": "Rede das 8 zonas agrícolas (AGZ-090..097)",
+        "origin_note": "diversas — tecnologia agrícola é distribuída, não centralizada",
+        "creator_model": "Indústria/instituição coletiva já estabelecida (nenhum inventor individual nomeado) — mesmo princípio de autoria coletiva/anônima usado em FAC-005 e no Enclave Sintético."
+      },
+      {
+        "category_code": "AGU",
+        "category_label": "Água/hidráulica",
+        "item_count": 3,
+        "origin_territory_or_network": "TER-004",
+        "origin_note": "Arquipélago Livre de Navyr — infraestrutura hídrica/portuária",
+        "creator_model": "Indústria/instituição coletiva já estabelecida (nenhum inventor individual nomeado) — mesmo princípio de autoria coletiva/anônima usado em FAC-005 e no Enclave Sintético."
+      },
+      {
+        "category_code": "ARMZ",
+        "category_label": "Armazenamento",
+        "item_count": 1,
+        "origin_territory_or_network": "TER-003",
+        "origin_note": "República de Ortheon — armazéns da malha ferroviária (EST-014)",
+        "creator_model": "Indústria/instituição coletiva já estabelecida (nenhum inventor individual nomeado) — mesmo princípio de autoria coletiva/anônima usado em FAC-005 e no Enclave Sintético."
+      },
+      {
+        "category_code": "COM",
+        "category_label": "Comunicação",
+        "item_count": 5,
+        "origin_territory_or_network": "TER-005",
+        "origin_note": "Principado de Ithra — comunicação tecnomágica",
+        "creator_model": "Indústria/instituição coletiva já estabelecida (nenhum inventor individual nomeado) — mesmo princípio de autoria coletiva/anônima usado em FAC-005 e no Enclave Sintético."
+      },
+      {
+        "category_code": "CON",
+        "category_label": "Construção/montagem",
+        "item_count": 2,
+        "origin_territory_or_network": "TER-002",
+        "origin_note": "Reino Ferral de Kharveth — Forja Real (EST-003)",
+        "creator_model": "Indústria/instituição coletiva já estabelecida (nenhum inventor individual nomeado) — mesmo princípio de autoria coletiva/anônima usado em FAC-005 e no Enclave Sintético."
+      },
+      {
+        "category_code": "EMR",
+        "category_label": "Emergência/proteção civil",
+        "item_count": 2,
+        "origin_territory_or_network": "TER-012",
+        "origin_note": "Zonas de Contenção — protocolos de emergência (FAC-004 Vigília Radicular)",
+        "creator_model": "Indústria/instituição coletiva já estabelecida (nenhum inventor individual nomeado) — mesmo princípio de autoria coletiva/anônima usado em FAC-005 e no Enclave Sintético."
+      },
+      {
+        "category_code": "ENE",
+        "category_label": "Energia",
+        "item_count": 6,
+        "origin_territory_or_network": "TER-010",
+        "origin_note": "Domínio dos Reis Magos — captação da Corrente Planetária (EST-035, MAG-003)",
+        "creator_model": "Indústria/instituição coletiva já estabelecida (nenhum inventor individual nomeado) — mesmo princípio de autoria coletiva/anônima usado em FAC-005 e no Enclave Sintético."
+      },
+      {
+        "category_code": "FER",
+        "category_label": "Ferramentas técnicas",
+        "item_count": 3,
+        "origin_territory_or_network": "TER-011",
+        "origin_note": "Terras Livres — Oficina de Charneira (EST-004, Colegiado dos Ofícios)",
+        "creator_model": "Indústria/instituição coletiva já estabelecida (nenhum inventor individual nomeado) — mesmo princípio de autoria coletiva/anônima usado em FAC-005 e no Enclave Sintético."
+      },
+      {
+        "category_code": "GRD",
+        "category_label": "Garagem/veicular terrestre",
+        "item_count": 5,
+        "origin_territory_or_network": "TER-001",
+        "origin_note": "Confederação de Lúminor — Oficina de Carruagens (EST-046)",
+        "creator_model": "Indústria/instituição coletiva já estabelecida (nenhum inventor individual nomeado) — mesmo princípio de autoria coletiva/anônima usado em FAC-005 e no Enclave Sintético."
+      },
+      {
+        "category_code": "HYB",
+        "category_label": "Integração tecnomágica/híbrida",
+        "item_count": 1,
+        "origin_territory_or_network": "TER-005",
+        "origin_note": "Principado de Ithra — fusão tecnomágica (EST-019), berço do Enclave Sintético",
+        "creator_model": "Indústria/instituição coletiva já estabelecida (nenhum inventor individual nomeado) — mesmo princípio de autoria coletiva/anônima usado em FAC-005 e no Enclave Sintético."
+      },
+      {
+        "category_code": "IDN",
+        "category_label": "Identidade/rastreabilidade de dispositivo",
+        "item_count": 2,
+        "origin_territory_or_network": "TER-003",
+        "origin_note": "República de Ortheon — rastreabilidade ferroviária",
+        "creator_model": "Indústria/instituição coletiva já estabelecida (nenhum inventor individual nomeado) — mesmo princípio de autoria coletiva/anônima usado em FAC-005 e no Enclave Sintético."
+      },
+      {
+        "category_code": "IND",
+        "category_label": "Indústria",
+        "item_count": 3,
+        "origin_territory_or_network": "TER-002",
+        "origin_note": "Reino Ferral de Kharveth — Forja Real (EST-003)",
+        "creator_model": "Indústria/instituição coletiva já estabelecida (nenhum inventor individual nomeado) — mesmo princípio de autoria coletiva/anônima usado em FAC-005 e no Enclave Sintético."
+      },
+      {
+        "category_code": "INS",
+        "category_label": "Inspeção/segurança de equipamento",
+        "item_count": 2,
+        "origin_territory_or_network": "TER-002",
+        "origin_note": "Reino Ferral de Kharveth — inspeção de armamento/maquinário",
+        "creator_model": "Indústria/instituição coletiva já estabelecida (nenhum inventor individual nomeado) — mesmo princípio de autoria coletiva/anônima usado em FAC-005 e no Enclave Sintético."
+      },
+      {
+        "category_code": "INTG",
+        "category_label": "Integração técnica",
+        "item_count": 1,
+        "origin_territory_or_network": "TER-005",
+        "origin_note": "Principado de Ithra — integração técnica geral",
+        "creator_model": "Indústria/instituição coletiva já estabelecida (nenhum inventor individual nomeado) — mesmo princípio de autoria coletiva/anônima usado em FAC-005 e no Enclave Sintético."
+      },
+      {
+        "category_code": "LOG",
+        "category_label": "Logística de peças",
+        "item_count": 2,
+        "origin_territory_or_network": "TER-003",
+        "origin_note": "República de Ortheon — logística ferroviária (EST-014/015)",
+        "creator_model": "Indústria/instituição coletiva já estabelecida (nenhum inventor individual nomeado) — mesmo princípio de autoria coletiva/anônima usado em FAC-005 e no Enclave Sintético."
+      },
+      {
+        "category_code": "LUZ",
+        "category_label": "Iluminação",
+        "item_count": 2,
+        "origin_territory_or_network": "TER-009",
+        "origin_note": "Liga Subcristal — iluminação de cavernas (Cristal Rúnico, Fungo-Lanterna)",
+        "creator_model": "Indústria/instituição coletiva já estabelecida (nenhum inventor individual nomeado) — mesmo princípio de autoria coletiva/anônima usado em FAC-005 e no Enclave Sintético."
+      },
+      {
+        "category_code": "MED",
+        "category_label": "Tecnologia médica",
+        "item_count": 4,
+        "origin_territory_or_network": "TER-007",
+        "origin_note": "Rubra-Viva — tecnologia médica (Enfermaria Principal, EST-025)",
+        "creator_model": "Indústria/instituição coletiva já estabelecida (nenhum inventor individual nomeado) — mesmo princípio de autoria coletiva/anônima usado em FAC-005 e no Enclave Sintético."
+      },
+      {
+        "category_code": "MFG",
+        "category_label": "Manufatura",
+        "item_count": 2,
+        "origin_territory_or_network": "TER-002",
+        "origin_note": "Reino Ferral de Kharveth — manufatura industrial",
+        "creator_model": "Indústria/instituição coletiva já estabelecida (nenhum inventor individual nomeado) — mesmo princípio de autoria coletiva/anônima usado em FAC-005 e no Enclave Sintético."
+      },
+      {
+        "category_code": "MIN",
+        "category_label": "Mineração",
+        "item_count": 2,
+        "origin_territory_or_network": "TER-009",
+        "origin_note": "Liga Subcristal — Galeria de Extração (EST-031)",
+        "creator_model": "Indústria/instituição coletiva já estabelecida (nenhum inventor individual nomeado) — mesmo princípio de autoria coletiva/anônima usado em FAC-005 e no Enclave Sintético."
+      },
+      {
+        "category_code": "MNT",
+        "category_label": "Manutenção",
+        "item_count": 3,
+        "origin_territory_or_network": "TER-003",
+        "origin_note": "República de Ortheon — Galpão de Manutenção Ferroviária (EST-015)",
+        "creator_model": "Indústria/instituição coletiva já estabelecida (nenhum inventor individual nomeado) — mesmo princípio de autoria coletiva/anônima usado em FAC-005 e no Enclave Sintético."
+      },
+      {
+        "category_code": "OFI",
+        "category_label": "Oficina técnica",
+        "item_count": 2,
+        "origin_territory_or_network": "TER-011",
+        "origin_note": "Terras Livres — Oficina de Charneira (EST-004)",
+        "creator_model": "Indústria/instituição coletiva já estabelecida (nenhum inventor individual nomeado) — mesmo princípio de autoria coletiva/anônima usado em FAC-005 e no Enclave Sintético."
+      },
+      {
+        "category_code": "RAL",
+        "category_label": "Ferroviário",
+        "item_count": 5,
+        "origin_territory_or_network": "TER-003",
+        "origin_note": "República de Ortheon — Rede Ferroviária (TEC-001, R2 confirmado)",
+        "creator_model": "Indústria/instituição coletiva já estabelecida (nenhum inventor individual nomeado) — mesmo princípio de autoria coletiva/anônima usado em FAC-005 e no Enclave Sintético."
+      },
+      {
+        "category_code": "ROD",
+        "category_label": "Rodoviário",
+        "item_count": 2,
+        "origin_territory_or_network": "TER-001",
+        "origin_note": "Confederação de Lúminor — Rota das Caravanas",
+        "creator_model": "Indústria/instituição coletiva já estabelecida (nenhum inventor individual nomeado) — mesmo princípio de autoria coletiva/anônima usado em FAC-005 e no Enclave Sintético."
+      },
+      {
+        "category_code": "RUR",
+        "category_label": "Serviços rurais",
+        "item_count": 1,
+        "origin_territory_or_network": "Rede das 8 zonas agrícolas (AGZ-090..097)",
+        "origin_note": "diversas",
+        "creator_model": "Indústria/instituição coletiva já estabelecida (nenhum inventor individual nomeado) — mesmo princípio de autoria coletiva/anônima usado em FAC-005 e no Enclave Sintético."
+      },
+      {
+        "category_code": "SAN",
+        "category_label": "Saneamento",
+        "item_count": 4,
+        "origin_territory_or_network": "TER-007",
+        "origin_note": "Rubra-Viva — saneamento ligado à rede medicinal",
+        "creator_model": "Indústria/instituição coletiva já estabelecida (nenhum inventor individual nomeado) — mesmo princípio de autoria coletiva/anônima usado em FAC-005 e no Enclave Sintético."
+      },
+      {
+        "category_code": "SEG",
+        "category_label": "Segurança de infraestrutura",
+        "item_count": 2,
+        "origin_territory_or_network": "TER-012",
+        "origin_note": "Zonas de Contenção — segurança de infraestrutura crítica",
+        "creator_model": "Indústria/instituição coletiva já estabelecida (nenhum inventor individual nomeado) — mesmo princípio de autoria coletiva/anônima usado em FAC-005 e no Enclave Sintético."
+      },
+      {
+        "category_code": "SEN",
+        "category_label": "Sensoriamento/diagnóstico",
+        "item_count": 2,
+        "origin_territory_or_network": "TER-005",
+        "origin_note": "Principado de Ithra — sensoriamento tecnomágico",
+        "creator_model": "Indústria/instituição coletiva já estabelecida (nenhum inventor individual nomeado) — mesmo princípio de autoria coletiva/anônima usado em FAC-005 e no Enclave Sintético."
+      },
+      {
+        "category_code": "SRV",
+        "category_label": "Serviço técnico de campo",
+        "item_count": 2,
+        "origin_territory_or_network": "TER-011",
+        "origin_note": "Terras Livres — serviço técnico itinerante de fronteira",
+        "creator_model": "Indústria/instituição coletiva já estabelecida (nenhum inventor individual nomeado) — mesmo princípio de autoria coletiva/anônima usado em FAC-005 e no Enclave Sintético."
+      },
+      {
+        "category_code": "TRN",
+        "category_label": "Transporte (aéreo/aquático/carga/intermodal)",
+        "item_count": 9,
+        "origin_territory_or_network": "Multi-território",
+        "origin_note": "Ortheon(ferroviário)/Navyr(naval)/Altavela(aéreo)/Liga Subcristal(subterrâneo) — transporte é sempre modal-específico, ver STELLAR_TRANSPORT_VEHICLES_CATALOG_DEV_V1_1.json",
+        "creator_model": "Indústria/instituição coletiva já estabelecida (nenhum inventor individual nomeado) — mesmo princípio de autoria coletiva/anônima usado em FAC-005 e no Enclave Sintético."
+      }
+    ]
+  }
+}

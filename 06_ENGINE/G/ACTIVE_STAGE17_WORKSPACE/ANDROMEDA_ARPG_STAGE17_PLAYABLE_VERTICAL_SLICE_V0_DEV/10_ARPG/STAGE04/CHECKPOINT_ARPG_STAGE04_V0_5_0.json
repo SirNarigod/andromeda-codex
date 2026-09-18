@@ -1,0 +1,23 @@
+{
+  "record_id": "CHECKPOINT-ARPG-STAGE04-V0.5.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "process": "ARPG CONVERSION",
+  "stage": "04/20",
+  "stage_name": "RESOURCES / COOLDOWNS / CONSUMABLES",
+  "version": "V0.5.0",
+  "status": "PASS",
+  "result": "RESOURCE_CORE_READY_FOR_ITEMIZATION_STAGE05",
+  "parent_checkpoint": "CHECKPOINT-ARPG-STAGE03-V0.4.0",
+  "parent_checkpoint_archive_sha256": "0db562897970fbbf9dd5c85bf9d7a018ffd65e502037af9ae70981af710f0d49",
+  "resource_model": "ADAPTIVE_BUILD_DERIVED",
+  "primary_resource_numeric_authority": "CHARACTER_CORE_ONLY",
+  "placeholder_consumables_are_canon": false,
+  "gathering_work_stage_added": "09_GATHERING_WORK",
+  "player_npc_shared_job_contract_planned": true,
+  "canon_mutations": 0,
+  "open_blockers": 0,
+  "open_corrections": 0,
+  "backup_authorized": true,
+  "art_pipeline": "LOCKED_UNTIL_STAGE18_PRE_ART_PASS",
+  "next_stage": "05_ITEMS"
+}

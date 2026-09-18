@@ -1,0 +1,494 @@
+{
+  "record_id": "MASTER-LEIS-JUSTICA-SEGURANCA-DEFESA-CATALOG-V2.0.0",
+  "title": "Sistema legal oficial do MASTER V2.0.1 (103 entradas, 9 categorias)",
+  "provenance": {
+    "master_release": "ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE",
+    "master_release_zip_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "source_files": [
+      "01_CANON/ANDROMEDA_CODEX_CANON_MASTER_V2_0_0.json (entities, domain=leis/justiça/segurança/defesa)"
+    ],
+    "authority": "CANON_MASTER_V2_CONFIRMADO",
+    "namespace_check": "Prefixo LJS-PROP-E0XX-NNN e LJS-CRIM-PROP-E007-NNN, sem colisão com nosso namespace.",
+    "structure_note": "103 entradas = o sistema legal oficial completo de Stellar, em 9 grupos temáticos (jurisdição, direitos civis, propriedade, comercial, doutrina criminal, código penal - 28 tipos de crime -, investigação, julgamento, policiamento). Todas ancoradas genericamente em POI-019 Casa de Jurisdição de Ortheon (já importado no domínio Local) - artefato de indexação espacial, não significa que a lei é exclusiva de Ortheon.",
+    "category_label_note": "Rótulo inferido a partir do conteúdo real das entradas de cada grupo - o código numérico E00X em si não é documentado no pacote-fonte, mas o agrupamento temático é evidente."
+  },
+  "count_total": 103,
+  "count_categories": 9,
+  "categories": [
+    {
+      "category_code": "E002",
+      "category_label_inferred": "Jurisdição e competência (regras de qual autoridade se aplica)",
+      "count": 5,
+      "items": [
+        {
+          "id": "LJS-PROP-E002-001",
+          "name": "Regra de aplicação por matéria antes da autoridade"
+        },
+        {
+          "id": "LJS-PROP-E002-002",
+          "name": "Regra de não-preempção territorial automática"
+        },
+        {
+          "id": "LJS-PROP-E002-003",
+          "name": "Regra de cláusula contratual não constitutiva de poder público"
+        },
+        {
+          "id": "LJS-PROP-E002-004",
+          "name": "Registro padronizado de conflito de competência"
+        },
+        {
+          "id": "LJS-PROP-E002-005",
+          "name": "Regra de precedência protetiva mínima"
+        }
+      ]
+    },
+    {
+      "category_code": "E003",
+      "category_label_inferred": "Identidade e direitos civis básicos (consentimento, custódia, não-discriminação)",
+      "count": 10,
+      "items": [
+        {
+          "id": "LJS-PROP-E003-001",
+          "name": "Garantia de continuidade de identidade e direitos básicos"
+        },
+        {
+          "id": "LJS-PROP-E003-002",
+          "name": "Procedimento de retificação e contestação de identidade"
+        },
+        {
+          "id": "LJS-PROP-E003-003",
+          "name": "Regra de minimização e compartimentação de dados sensíveis"
+        },
+        {
+          "id": "LJS-PROP-E003-004",
+          "name": "Presunção de autonomia e capacidade específica ao ato"
+        },
+        {
+          "id": "LJS-PROP-E003-005",
+          "name": "Regra de consentimento específico, informado e revogável"
+        },
+        {
+          "id": "LJS-PROP-E003-006",
+          "name": "Registro mínimo de custódia e garantia de integridade da pessoa detida"
+        },
+        {
+          "id": "LJS-PROP-E003-007",
+          "name": "Regra de intrusão mínima e finalidade específica"
+        },
+        {
+          "id": "LJS-PROP-E003-008",
+          "name": "Regra de neutralidade de status na avaliação de ameaça e culpa"
+        },
+        {
+          "id": "LJS-PROP-E003-009",
+          "name": "Dever reforçado de registro, justificativa e revisão de restrições"
+        },
+        {
+          "id": "LJS-PROP-E003-010",
+          "name": "Garantia de comunicação acessível em atos jurídicos"
+        }
+      ]
+    },
+    {
+      "category_code": "E004",
+      "category_label_inferred": "Direito civil e propriedade (posse, locação, tutela, herança)",
+      "count": 10,
+      "items": [
+        {
+          "id": "LJS-PROP-E004-001",
+          "name": "Classificação civil de vínculos sobre bens e imóveis"
+        },
+        {
+          "id": "LJS-PROP-E004-002",
+          "name": "Registro mínimo de transferência patrimonial"
+        },
+        {
+          "id": "LJS-PROP-E004-003",
+          "name": "Proteção possessória e contenção de autotutela violenta"
+        },
+        {
+          "id": "LJS-PROP-E004-004",
+          "name": "Regra de copropriedade e uso comunitário"
+        },
+        {
+          "id": "LJS-PROP-E004-005",
+          "name": "Inventário de entrada, manutenção e garantia na locação"
+        },
+        {
+          "id": "LJS-PROP-E004-006",
+          "name": "Separação entre despejo civil e evacuação emergencial"
+        },
+        {
+          "id": "LJS-PROP-E004-007",
+          "name": "Escopo, duração e revisão obrigatória da tutela"
+        },
+        {
+          "id": "LJS-PROP-E004-008",
+          "name": "Separação patrimonial e prestação de contas na tutela"
+        },
+        {
+          "id": "LJS-PROP-E004-009",
+          "name": "Inventário sucessório e limites do espólio"
+        },
+        {
+          "id": "LJS-PROP-E004-010",
+          "name": "Preservação patrimonial de pessoa desaparecida e reversibilidade"
+        }
+      ]
+    },
+    {
+      "category_code": "E005",
+      "category_label_inferred": "Direito comercial e proteção ao consumidor",
+      "count": 10,
+      "items": [
+        {
+          "id": "LJS-PROP-E005-001",
+          "name": "Sequência mínima de formação e prova do contrato comercial"
+        },
+        {
+          "id": "LJS-PROP-E005-002",
+          "name": "Dever de informação comercial e alteração transparente de custo"
+        },
+        {
+          "id": "LJS-PROP-E005-003",
+          "name": "Procedimento de defeito, garantia, recolhimento e remédio ao consumidor"
+        },
+        {
+          "id": "LJS-PROP-E005-004",
+          "name": "Registro e contestação de crédito comercial e garantias"
+        },
+        {
+          "id": "LJS-PROP-E005-005",
+          "name": "Verificação de licença, credencial e escopo de autorização"
+        },
+        {
+          "id": "LJS-PROP-E005-006",
+          "name": "Dossiê mínimo de integridade de contrato público"
+        },
+        {
+          "id": "LJS-PROP-E005-007",
+          "name": "Inspeção aduaneira, retenção e contestação proporcional de cargas"
+        },
+        {
+          "id": "LJS-PROP-E005-008",
+          "name": "Rastreabilidade de medida, selo, documento e autenticidade comercial"
+        },
+        {
+          "id": "LJS-PROP-E005-009",
+          "name": "Comércio e serviço de alto risco com informação reforçada"
+        },
+        {
+          "id": "LJS-PROP-E005-010",
+          "name": "Fluxo de contestação e remédios em disputa comercial"
+        }
+      ]
+    },
+    {
+      "category_code": "E006",
+      "category_label_inferred": "Doutrina de responsabilidade criminal (intenção, nexo causal)",
+      "count": 10,
+      "items": [
+        {
+          "id": "LJS-PROP-E006-001",
+          "name": "Elementos mínimos para atribuição de responsabilidade criminal"
+        },
+        {
+          "id": "LJS-PROP-E006-002",
+          "name": "Matriz de intenção, conhecimento e criação de risco"
+        },
+        {
+          "id": "LJS-PROP-E006-003",
+          "name": "Nexo causal e contribuição concorrente"
+        },
+        {
+          "id": "LJS-PROP-E006-004",
+          "name": "Tentativa, preparação e desistência"
+        },
+        {
+          "id": "LJS-PROP-E006-005",
+          "name": "Autoria, participação, financiamento e facilitação"
+        },
+        {
+          "id": "LJS-PROP-E006-006",
+          "name": "Responsabilidade de comando e responsabilidade institucional separadas"
+        },
+        {
+          "id": "LJS-PROP-E006-007",
+          "name": "Causas contextuais de exclusão ou limitação de responsabilidade"
+        },
+        {
+          "id": "LJS-PROP-E006-008",
+          "name": "Ordens superiores, delegação e ilegalidade manifesta"
+        },
+        {
+          "id": "LJS-PROP-E006-009",
+          "name": "Bloqueio de inferência sobre responsabilidade penal de menores e capacidade"
+        },
+        {
+          "id": "LJS-PROP-E006-010",
+          "name": "Matriz qualitativa de gravidade e individualização"
+        }
+      ]
+    },
+    {
+      "category_code": "E007",
+      "category_label_inferred": "Código penal (tipificação de crimes)",
+      "count": 28,
+      "items": [
+        {
+          "id": "LJS-CRIM-PROP-E007-001",
+          "name": "Homicídio contextualizado"
+        },
+        {
+          "id": "LJS-CRIM-PROP-E007-002",
+          "name": "Sequestro e privação ilegal de liberdade"
+        },
+        {
+          "id": "LJS-CRIM-PROP-E007-003",
+          "name": "Captura ou detenção ilegal e abuso de custódia"
+        },
+        {
+          "id": "LJS-CRIM-PROP-E007-004",
+          "name": "Tortura e mutilação deliberada"
+        },
+        {
+          "id": "LJS-CRIM-PROP-E007-005",
+          "name": "Escravidão, servidão coercitiva e trabalho compulsório por dívida"
+        },
+        {
+          "id": "LJS-CRIM-PROP-E007-006",
+          "name": "Violação grave de autonomia corporal, mental ou identidade"
+        },
+        {
+          "id": "LJS-CRIM-PROP-E007-007",
+          "name": "Subtração, apropriação ou retenção patrimonial ilícita"
+        },
+        {
+          "id": "LJS-CRIM-PROP-E007-008",
+          "name": "Dano patrimonial e sabotagem de infraestrutura"
+        },
+        {
+          "id": "LJS-CRIM-PROP-E007-009",
+          "name": "Apropriação, venda ou uso ilícito de bem apreendido"
+        },
+        {
+          "id": "LJS-CRIM-PROP-E007-010",
+          "name": "Fraude comercial, metrológica e de publicidade"
+        },
+        {
+          "id": "LJS-CRIM-PROP-E007-011",
+          "name": "Corrupção, pagamento clandestino e favorecimento ilícito"
+        },
+        {
+          "id": "LJS-CRIM-PROP-E007-012",
+          "name": "Desvio, superfaturamento, contrato fictício e manipulação de risco público"
+        },
+        {
+          "id": "LJS-CRIM-PROP-E007-013",
+          "name": "Contrabando de carga regulada, restrita ou proibida"
+        },
+        {
+          "id": "LJS-CRIM-PROP-E007-014",
+          "name": "Fraude de manifesto, origem, licença ou selo aduaneiro"
+        },
+        {
+          "id": "LJS-CRIM-PROP-E007-015",
+          "name": "Evasão deliberada de retenção, quarentena ou controle de carga de risco"
+        },
+        {
+          "id": "LJS-CRIM-PROP-E007-016",
+          "name": "Dano ambiental deliberado ou operação dolosa fora de limites de proteção"
+        },
+        {
+          "id": "LJS-CRIM-PROP-E007-017",
+          "name": "Experimentação involuntária e coleta coercitiva de pessoa"
+        },
+        {
+          "id": "LJS-CRIM-PROP-E007-018",
+          "name": "Fraude científica, ocultação de risco ou encobrimento de incidente"
+        },
+        {
+          "id": "LJS-CRIM-PROP-E007-019",
+          "name": "Violação grave de biossegurança e transferência irregular de material de alto risco"
+        },
+        {
+          "id": "LJS-CRIM-PROP-E007-020",
+          "name": "Vigilância, interceptação ou acesso privado ilícito"
+        },
+        {
+          "id": "LJS-CRIM-PROP-E007-021",
+          "name": "Sabotagem cibernética, de automação ou sistema autônomo"
+        },
+        {
+          "id": "LJS-CRIM-PROP-E007-022",
+          "name": "Falsificação ou manipulação de logs, biometria e credenciais digitais"
+        },
+        {
+          "id": "LJS-CRIM-PROP-E007-023",
+          "name": "Uso mágico ou rúnico coercitivo contra pessoa"
+        },
+        {
+          "id": "LJS-CRIM-PROP-E007-024",
+          "name": "Sabotagem ou ativação rúnica não autorizada com risco relevante"
+        },
+        {
+          "id": "LJS-CRIM-PROP-E007-025",
+          "name": "Falsificação de selo, assinatura ou evidência arcana"
+        },
+        {
+          "id": "LJS-CRIM-PROP-E007-026",
+          "name": "Exposição deliberada de pessoa ou população à corrupção"
+        },
+        {
+          "id": "LJS-CRIM-PROP-E007-027",
+          "name": "Manuseio ou transferência não autorizada de material ativo da Raiz Profunda"
+        },
+        {
+          "id": "LJS-CRIM-PROP-E007-028",
+          "name": "Sabotagem ou ocultação deliberada de contenção/incidente da Raiz Profunda"
+        }
+      ]
+    },
+    {
+      "category_code": "E008",
+      "category_label_inferred": "Procedimento de investigação criminal",
+      "count": 10,
+      "items": [
+        {
+          "id": "LJS-PROP-E008-001",
+          "name": "Abertura, competência e hipótese investigativa"
+        },
+        {
+          "id": "LJS-PROP-E008-002",
+          "name": "Mandado específico e exceção emergencial"
+        },
+        {
+          "id": "LJS-PROP-E008-003",
+          "name": "Preservação de cena com prioridade de vida"
+        },
+        {
+          "id": "LJS-PROP-E008-004",
+          "name": "Busca, apreensão, inventário, lacre e restituição"
+        },
+        {
+          "id": "LJS-PROP-E008-005",
+          "name": "Cadeia de custódia multiclasse"
+        },
+        {
+          "id": "LJS-PROP-E008-006",
+          "name": "Entrevista, testemunho e interrogatório com voluntariedade e capacidade"
+        },
+        {
+          "id": "LJS-PROP-E008-007",
+          "name": "Inteligência, informantes e conversão em prova verificável"
+        },
+        {
+          "id": "LJS-PROP-E008-008",
+          "name": "Laudo pericial, incerteza, revisão e contraditório técnico"
+        },
+        {
+          "id": "LJS-PROP-E008-009",
+          "name": "Autenticidade multimodal, digital e rúnica sem indicador único"
+        },
+        {
+          "id": "LJS-PROP-E008-010",
+          "name": "Transferência interjurisdicional, custódia neutra e integridade de handoff"
+        }
+      ]
+    },
+    {
+      "category_code": "E009",
+      "category_label_inferred": "Devido processo e julgamento",
+      "count": 10,
+      "items": [
+        {
+          "id": "LJS-PROP-E009-001",
+          "name": "Acusação formal, delimitada e notificável"
+        },
+        {
+          "id": "LJS-PROP-E009-002",
+          "name": "Acesso à acusação, prova e defesa efetiva"
+        },
+        {
+          "id": "LJS-PROP-E009-003",
+          "name": "Julgamento, registro e decisão fundamentada"
+        },
+        {
+          "id": "LJS-PROP-E009-004",
+          "name": "Recurso e revisão registrável"
+        },
+        {
+          "id": "LJS-PROP-E009-005",
+          "name": "Separação funcional entre detenção, prisão preventiva, pena e contenção especial"
+        },
+        {
+          "id": "LJS-PROP-E009-006",
+          "name": "Prisão preventiva excepcional, necessária e revisável"
+        },
+        {
+          "id": "LJS-PROP-E009-007",
+          "name": "Seleção proporcional e individualizada de sanções"
+        },
+        {
+          "id": "LJS-PROP-E009-008",
+          "name": "Garantias mínimas durante perda de liberdade"
+        },
+        {
+          "id": "LJS-PROP-E009-009",
+          "name": "Tratamento, contenção clínica e reabilitação não equivalem a punição automática"
+        },
+        {
+          "id": "LJS-PROP-E009-010",
+          "name": "Execução, reparação, liberação e encerramento da consequência"
+        }
+      ]
+    },
+    {
+      "category_code": "E010",
+      "category_label_inferred": "Operações policiais e segurança pública",
+      "count": 10,
+      "items": [
+        {
+          "id": "LJS-PROP-E010-001",
+          "name": "Planejamento de patrulhamento urbano, rural e remoto por risco e jurisdição"
+        },
+        {
+          "id": "LJS-PROP-E010-002",
+          "name": "Registro de ronda, incidente e transferência operacional"
+        },
+        {
+          "id": "LJS-PROP-E010-003",
+          "name": "Resposta emergencial com prioridade de vida, contenção mínima e transição de comando"
+        },
+        {
+          "id": "LJS-PROP-E010-004",
+          "name": "Proteção proporcional de infraestrutura e serviços essenciais"
+        },
+        {
+          "id": "LJS-PROP-E010-005",
+          "name": "Segurança de mercados, feiras e operações comerciais"
+        },
+        {
+          "id": "LJS-PROP-E010-006",
+          "name": "Separação entre fiscalização administrativa e investigação criminal"
+        },
+        {
+          "id": "LJS-PROP-E010-007",
+          "name": "Controle de fronteiras, manifestos e contrabando com competência limitada"
+        },
+        {
+          "id": "LJS-PROP-E010-008",
+          "name": "Resposta especializada a incidentes rúnicos, mágicos, biológicos e da Raiz Profunda"
+        },
+        {
+          "id": "LJS-PROP-E010-009",
+          "name": "Coordenação contra redes criminosas sem criação de facção canônica"
+        },
+        {
+          "id": "LJS-PROP-E010-010",
+          "name": "Responsabilização, auditoria e revisão do uso da força e de poderes de segurança"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "record_id": "CHECKPOINT-ARPG-STAGE16A-PRE-GODOT-V0.7.0",
+  "stage": "16A/23",
+  "version": "V0.7.0",
+  "status": "PASS_PRE_GODOT_READY_FOR_CODEX_HANDOFF",
+  "parent_checkpoint": "V0.6.0",
+  "scope": "AUTHORIAL_UI_STAMINA_TWO_WEAPON_LOADOUT_CONTEXTUAL_WHEEL_HANDOFF_REVISION",
+  "tests": {
+    "stage16a_total": 180,
+    "stage16a_passed": 180,
+    "stage16a_failed": 0,
+    "stress": 20,
+    "stress_passed": 20,
+    "stage05_item_core": 22,
+    "stage05_passed": 22,
+    "stage15_validation": 24,
+    "stage15_passed": 24
+  },
+  "authorial_additions": [
+    "stamina radial soft-yellow circle adjacent to player; hidden completely when full/inactive",
+    "exactly two quick weapon slots; one active weapon contributes MAIN_HAND modifiers at a time",
+    "weapon switching by keys 1/2 and unmodified mouse wheel",
+    "camera zoom by held configurable modifier + mouse wheel",
+    "menu wheel consumes scroll and suppresses weapon swap/zoom",
+    "unified white rounded clean-console UI family across dialogue/HUD/inventory/vendor/crafting/tooltips/choices"
+  ],
+  "godot_gate": "PENDING_STAGE16B_CODEX_LOCAL_GODOT",
+  "stage16_complete": false,
+  "backup_authorized": false,
+  "canon_mutations": 0,
+  "open_corrections": 0
+}

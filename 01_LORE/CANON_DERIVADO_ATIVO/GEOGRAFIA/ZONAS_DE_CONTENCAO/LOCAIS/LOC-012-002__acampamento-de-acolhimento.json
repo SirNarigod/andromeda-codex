@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-012-002",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Acampamento de Acolhimento",
+  "parent_subregion": "SUB-012-002",
+  "parent_political_unit": "TER-012",
+  "function": "Estrutura de acolhimento temporário de deslocados.",
+  "notable_link": "Campo de Deslocados (SUB-012-002)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-012-002",
+  "settlement_tier": "ACAMPAMENTO",
+  "history": "O Acampamento de Acolhimento começou como fileiras de tendas e virou uma cidade provisória. Seus moradores recusam o nome de refugiados porque muitos já construíram ali uma vida inteira.",
+  "sensory": "Fumaça de cozinhas cobre lonas coloridas; crianças desenham mapas de lugares que nunca viram.",
+  "hook": "Suprimentos somem sempre antes de chegar às famílias mais antigas.",
+  "secondary_hook": "A investigação aponta para uma regra de prioridade escrita pelos próprios moradores.",
+  "detail": "Cada família mantém uma caixa de emergência para a próxima família que chegar.",
+  "figures": [
+    {
+      "role": "Nara Dois-Invernos",
+      "name": "Nara Dois-Invernos",
+      "note": "organizadora de distribuição"
+    },
+    {
+      "role": "Galo",
+      "name": "Galo",
+      "note": "ex-soldado que vigia sem uniforme"
+    }
+  ]
+}

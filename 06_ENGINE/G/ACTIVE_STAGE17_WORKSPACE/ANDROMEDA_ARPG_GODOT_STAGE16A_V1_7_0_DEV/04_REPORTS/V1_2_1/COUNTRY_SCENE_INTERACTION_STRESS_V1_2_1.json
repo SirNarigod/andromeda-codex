@@ -1,0 +1,27 @@
+{
+  "record_id": "COUNTRY-SCENE-INTERACTION-STRESS-V1.2.1",
+  "status": "PASS",
+  "seeds_target": 100,
+  "operations": 1700,
+  "operation_classes": {
+    "quote": 100,
+    "purchase": 100,
+    "mine": 100,
+    "relocate_resource": 100,
+    "harvest": 100,
+    "hunt": 100,
+    "bridge_damage": 100,
+    "bridge_repair": 100,
+    "relocate_dungeon": 100,
+    "enter_dungeon": 100,
+    "take_torch": 100,
+    "light_torch": 100,
+    "read_book": 100,
+    "take_weapon": 100,
+    "equip_weapon": 100,
+    "unequip_weapon": 100,
+    "leave_dungeon": 100
+  },
+  "failures": [],
+  "seconds": 13.05
+}

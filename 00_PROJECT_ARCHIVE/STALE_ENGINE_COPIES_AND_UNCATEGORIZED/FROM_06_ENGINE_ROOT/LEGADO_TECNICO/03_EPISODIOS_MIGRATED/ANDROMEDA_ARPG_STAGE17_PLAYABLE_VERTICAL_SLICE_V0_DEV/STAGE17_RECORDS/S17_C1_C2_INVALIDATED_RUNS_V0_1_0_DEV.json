@@ -1,0 +1,21 @@
+{
+  "record_identity": "S17_C1_C2_INVALIDATED_RUNS_V0_1_0_DEV",
+  "created_at": "2026-08-28T18:01:03.8582017Z",
+  "status": "NO_ACCEPTANCE_RUNS_INVALIDATED",
+  "acceptance_runs": [],
+  "audit_query_corrections": [
+    {
+      "kind": "READ_ONLY_DIAGNOSTIC",
+      "cause": "Initial PowerShell quoting rejected the inline SQLite query before execution.",
+      "effect": "No database access and no state change.",
+      "correction": "Repeated with parameterized Python sqlite3 code and mode=ro."
+    },
+    {
+      "kind": "READ_ONLY_DIAGNOSTIC",
+      "cause": "The first profile query assumed zone_ref was a table column rather than a payload_json field.",
+      "effect": "SQLite returned no-such-column; no state change.",
+      "correction": "Read payload_json, parsed zone_ref, and repeated the query in mode=ro."
+    }
+  ],
+  "source_mutation_from_diagnostics": false
+}

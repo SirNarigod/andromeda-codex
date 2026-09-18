@@ -1,0 +1,36 @@
+{
+  "est_id": "EST-060",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Refugio Errante",
+  "building_type": "ACAMPAMENTO",
+  "parent_locality": "LOC-017-003",
+  "parent_subregion": "SUB-017-003",
+  "parent_political_unit": "TER-017",
+  "function": "Abrigo movel para navegadores que se aventuram entre as Ilhas Errantes.",
+  "economic_role": {
+    "is_vendor": false,
+    "sells": [],
+    "produces": [],
+    "regulation_factor": 0.4
+  },
+  "capacity": {
+    "jobs": 3,
+    "residents": 5
+  },
+  "professions_linked": [
+    "JOB-015 Guarda e resposta a risco"
+  ],
+  "notable_link": "TER-017 Arquipelago Etereo (fase 50)",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "TECIDO_MADEIRA_LEVE",
+    "flammability": "ALTISSIMA",
+    "recovery_days": 3
+  }
+}

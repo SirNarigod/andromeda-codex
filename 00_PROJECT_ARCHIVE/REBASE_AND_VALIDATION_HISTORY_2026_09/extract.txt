@@ -1,0 +1,1801 @@
+=== page 1 ===
+ANDRÔMEDA CÓDEX
+ SISTEMA MAR — MAGIA, ARMAS E RUNAS
+ Catálogo de Classes: Armas, NPCs e Habilidades
+ 80 armas catalogadas · 40 NPCs · 4 classes
+Rascunho de desenvolvimento (GAMEPLAY_DERIVED_DEV_SOURCE) — v1.0
+
+=== page 2 ===
+Como ler este catálogo
+Escala de estatísticas de arma (0-100): power, defense, utility, handling, durability, reach, magic_affinity,
+tech_affinity e overall (média dos demais). Valores maiores = melhor naquele eixo.
+Tier de runificação (armas físicas/mágicas): R0 = sem runa · R1 = uma runa funcional · R2 = matriz de runas
+coordenadas · R3 = vínculo especializado (mais caro, mais forte, mais arriscado). Androids usam a escala
+equivalente T0-T3 (tecnologia pura, sem runa).
+Modelo de equilíbrio dos NPCs (Total Power Budget — TPB): cada NPC distribui um orçamento fixo de pontos
+entre 4 eixos — hp, speed, damage_mod (multiplicador de dano sobre as armas), armor. O TPB é o mesmo para
+todo NPC do mesmo tier (BAIXO=80, MÉDIO=100, ALTO=120), garantindo que nenhum NPC tenha vantagem de
+poder total sobre outro do mesmo tier — apenas perfis diferentes (tanque, ágil, ofensivo, equilibrado).
+Habilidades: cada NPC tem 1 passiva (efeito constante) e 1 ativa (custo de recurso + tempo de recarga em
+segundos), mecânica de personagem — não são efeitos de runa de item.
+
+=== page 3 ===
+CLASSE: NATIVOS
+Armamento: Corpo-a-corpo · 16 armas · 8 NPCs
+Identidade: Arquétipo de combatente próximo, formado por quem vive fora dos grandes centros industriais e depende
+de lâminas e ferramentas adaptadas para sobreviver.
+Classe transversal: qualquer cultura ou origem pode formar um Nativo; CUL-011 é apenas o pano de fundo mais próximo do arquétipo.
+Roster de NPCs
+ ID
+Nome
+Tier
+Papel
+Armas
+NAT-01
+Guarda de Espinho
+ALTO
+tank
+Lança-Lâmina de Vínculo Total + Peça de Máquina com
+Vínculo Instável
+NAT-02
+Fera de Vanguarda
+ALTO
+glass_cannon
+Lâmina de Vínculo Perpétuo + Ferramenta de Vínculo Triplo
+Instável
+NAT-03
+Caçador Equilibrado
+MÉDIO
+balanced
+Lâmina Rúnica Vibrante + Ferramenta Adaptada com Matriz
+Reaproveitada
+NAT-04
+Corredor de Trilha
+MÉDIO
+fast
+Espada Rúnica de Retorno + Machadinha com Matriz Dupla
+Reaproveitada
+NAT-05
+Sentinela Rústica
+MÉDIO
+tanky
+Facão de Oficina + Barra Reforçada com Runa Emprestada
+NAT-06
+Fúria de Fronteira
+MÉDIO
+glass_cannon
+Machado de Reforço Simples + Cano Reforçado com Runa
+Emprestada
+NAT-07
+Recruta de Vila
+BAIXO
+balanced
+Lâmina Comum de Ferreiro + Gancho de Ferragem
+NAT-08
+Batedor Ligeiro
+BAIXO
+fast
+Punhal Comum de Viajante + Corrente de Ferragem
+
+=== page 4 ===
+NPCs de Nativos — detalhe
+Guarda de Espinho (NAT-01) — Tier ALTO · Papel: tank
+Armas: Lança-Lâmina de Vínculo Total [WPN-LAM-008] · Peça de Máquina com Vínculo Instável [WPN-IMP-004]
+ HP 60
+Velocidade 15
+Mod. Dano 30
+Armadura 15
+Passiva — Couraça de Fronteira: regenera 2% do HP máx/s enquanto abaixo de 50% HP
+Ativa — Investida Selvagem: avança 4m, próximo golpe +30% dano (custo 20, recarga 8.0s)
+Fera de Vanguarda (NAT-02) — Tier ALTO · Papel: glass_cannon
+Armas: Lâmina de Vínculo Perpétuo [WPN-LAM-004] · Ferramenta de Vínculo Triplo Instável [WPN-IMP-008]
+ HP 30
+Velocidade 20
+Mod. Dano 55
+Armadura 15
+Passiva — Instinto de Sobrevivência: +20% resistência a dano quando HP < 30%
+Ativa — Fúria Contida: +25% damage_mod por 5s (custo 30, recarga 12.0s)
+Caçador Equilibrado (NAT-03) — Tier MÉDIO · Papel: balanced
+Armas: Lâmina Rúnica Vibrante [WPN-LAM-002] · Ferramenta Adaptada com Matriz Reaproveitada [WPN-IMP-003]
+ HP 30
+Velocidade 25
+Mod. Dano 25
+Armadura 20
+Passiva — Fôlego de Caçador: +10% regeneração de vigor fora de combate
+Ativa — Golpe Final: dano dobrado contra alvo abaixo de 25% HP (custo 25, recarga 10.0s)
+Corredor de Trilha (NAT-04) — Tier MÉDIO · Papel: fast
+Armas: Espada Rúnica de Retorno [WPN-LAM-007] · Machadinha com Matriz Dupla Reaproveitada [WPN-IMP-007]
+ HP 25
+Velocidade 40
+Mod. Dano 25
+Armadura 10
+Passiva — Fôlego de Caçador: +10% regeneração de vigor fora de combate
+Ativa — Salto de Fronteira: desloca 6m e remove enraizamento (custo 18, recarga 9.0s)
+Sentinela Rústica (NAT-05) — Tier MÉDIO · Papel: tanky
+Armas: Facão de Oficina [WPN-LAM-001] · Barra Reforçada com Runa Emprestada [WPN-IMP-002]
+ HP 45
+Velocidade 15
+Mod. Dano 20
+Armadura 20
+Passiva — Pele Endurecida: -8% dano físico recebido (flat)
+Ativa — Investida Selvagem: avança 4m, próximo golpe +30% dano (custo 20, recarga 8.0s)
+Fúria de Fronteira (NAT-06) — Tier MÉDIO · Papel: glass_cannon
+Armas: Machado de Reforço Simples [WPN-LAM-006] · Cano Reforçado com Runa Emprestada [WPN-IMP-006]
+ HP 20
+Velocidade 25
+Mod. Dano 45
+Armadura 10
+Passiva — Instinto de Sobrevivência: +20% resistência a dano quando HP < 30%
+Ativa — Fúria Contida: +25% damage_mod por 5s (custo 30, recarga 12.0s)
+Recruta de Vila (NAT-07) — Tier BAIXO · Papel: balanced
+Armas: Lâmina Comum de Ferreiro [WPN-LAM-003] · Gancho de Ferragem [WPN-IMP-001]
+ HP 25
+Velocidade 20
+Mod. Dano 20
+Armadura 15
+Passiva — Pele Endurecida: -8% dano físico recebido (flat)
+Ativa — Golpe Final: dano dobrado contra alvo abaixo de 25% HP (custo 25, recarga 10.0s)
+Batedor Ligeiro (NAT-08) — Tier BAIXO · Papel: fast
+Armas: Punhal Comum de Viajante [WPN-LAM-005] · Corrente de Ferragem [WPN-IMP-005]
+ HP 15
+Velocidade 35
+Mod. Dano 20
+Armadura 10
+Passiva — Fôlego de Caçador: +10% regeneração de vigor fora de combate
+Ativa — Salto de Fronteira: desloca 6m e remove enraizamento (custo 18, recarga 9.0s)
+
+=== page 5 ===
+Armas de Nativos — catálogo completo
+Facão de Oficina (WPN-LAM-001) — Tier R1 · Classe BAIXO · Custo BAIXO
+Origem: ART-005
+ Power 55
+Defense 30
+Utility 28
+Handling 65
+Durability 60
+Reach 28
+Magia 20
+Tecnologia 38
+Overall: 41/100
+corte de proximidade — pontos fortes: handling · fraqueza: magic_affinity
+Vantagem: metal industrial reforçado por uma única runa, ágil e fácil de manter
+Limitação: runa de reforço exige carga e pode fraturar em material incompatível
+Lâmina Rúnica Vibrante (WPN-LAM-002) — Tier R2 · Classe MÉDIO · Custo ALTO
+Origem: ART-005
+ Power 68
+Defense 34
+Utility 50
+Handling 56
+Durability 46
+Reach 32
+Magia 58
+Tecnologia 64
+Overall: 51/100
+corte amplificado — pontos fortes: power · fraqueza: reach
+Vantagem: vibração e calor coordenados cortam materiais duros sem esforço extra
+Limitação: continua uma arma de alcance curto mesmo com a matriz rúnica ativa
+Lâmina Comum de Ferreiro (WPN-LAM-003) — Tier R0 · Classe BAIXO · Custo BAIXO
+Origem: ART-005
+ Power 45
+Defense 28
+Utility 20
+Handling 60
+Durability 55
+Reach 25
+Magia 5
+Tecnologia 20
+Overall: 32/100
+corte comum — pontos fortes: handling · fraqueza: magic_affinity
+Vantagem: metal industrial simples, disponível a qualquer viajante ou guarda
+Limitação: sem reforço, gume perde qualidade com uso intenso
+Lâmina de Vínculo Perpétuo (WPN-LAM-004) — Tier R3 · Classe MÉDIO · Custo ALTO
+Origem: ART-005
+ Power 78
+Defense 40
+Utility 55
+Handling 48
+Durability 40
+Reach 36
+Magia 70
+Tecnologia 68
+Overall: 54/100
+corte de elite — pontos fortes: power · fraqueza: durability
+Vantagem: quatro runas coordenadas cortam quase qualquer material e retornam à mão se soltas
+Limitação: vínculo perpétuo consome carga constantemente e fratura se a fonte falhar
+Punhal Comum de Viajante (WPN-LAM-005) — Tier R0 · Classe BAIXO · Custo BAIXO
+Origem: ART-005
+ Power 42
+Defense 30
+Utility 18
+Handling 58
+Durability 52
+Reach 22
+Magia 4
+Tecnologia 18
+Overall: 31/100
+corte discreto — pontos fortes: handling · fraqueza: magic_affinity
+Vantagem: leve, fácil de esconder e reparar em qualquer vila
+Limitação: alcance mínimo, exige combate muito próximo
+Machado de Reforço Simples (WPN-LAM-006) — Tier R1 · Classe BAIXO · Custo MÉDIO
+Origem: ART-005
+ Power 58
+Defense 24
+Utility 25
+Handling 48
+Durability 58
+Reach 28
+Magia 24
+Tecnologia 30
+Overall: 37/100
+impacto de corte — pontos fortes: durability · fraqueza: defense
+Vantagem: runa de reforço permite golpes pesados sem fraturar o cabo
+Limitação: peso reduz a agilidade em combate rápido
+
+=== page 6 ===
+Espada Rúnica de Retorno (WPN-LAM-007) — Tier R2 · Classe MÉDIO · Custo ALTO
+Origem: ART-005
+ Power 60
+Defense 32
+Utility 58
+Handling 50
+Durability 44
+Reach 34
+Magia 60
+Tecnologia 58
+Overall: 50/100
+duelo tático — pontos fortes: utility · fraqueza: defense
+Vantagem: retorno à bainha se solta, contenção reduz sangramento acidental do próprio portador
+Limitação: matriz dupla exige recarga entre combates
+Lança-Lâmina de Vínculo Total (WPN-LAM-008) — Tier R3 · Classe MÉDIO · Custo ALTO
+Origem: ART-005
+ Power 74
+Defense 38
+Utility 60
+Handling 40
+Durability 36
+Reach 48
+Magia 74
+Tecnologia 66
+Overall: 55/100
+corte de elite com alcance estendido — pontos fortes: power · fraqueza: durability
+Vantagem: todas as runas usuais da categoria operando juntas — maior alcance de lâmina do catálogo
+Limitação: vínculo de cinco runas simultâneas é caríssimo e frágil sob falha de qualquer uma delas
+Gancho de Ferragem (WPN-IMP-001) — Tier R0 · Classe BAIXO · Custo BAIXO
+Origem: ART-014
+ Power 35
+Defense 18
+Utility 25
+Handling 45
+Durability 30
+Reach 22
+Magia 5
+Tecnologia 20
+Overall: 25/100
+improviso de fronteira — pontos fortes: handling · fraqueza: magic_affinity
+Vantagem: alta disponibilidade e imprevisibilidade — qualquer ferragem serve
+Limitação: menor durabilidade, precisão e proteção ao usuário do que armas dedicadas
+Barra Reforçada com Runa Emprestada (WPN-IMP-002) — Tier R1 · Classe BAIXO · Custo
+BAIXO
+Origem: ART-014
+ Power 44
+Defense 27
+Utility 30
+Handling 40
+Durability 26
+Reach 24
+Magia 24
+Tecnologia 28
+Overall: 30/100
+improviso reforçado — pontos fortes: power · fraqueza: durability
+Vantagem: uma runa de reforço reaproveitada de outro equipamento aumenta o impacto sem custo de loja
+Limitação: runa incompatível com o material original acelera a fratura da peça
+Ferramenta Adaptada com Matriz Reaproveitada (WPN-IMP-003) — Tier R2 · Classe
+BAIXO · Custo BAIXO
+Origem: ART-014
+ Power 50
+Defense 24
+Utility 36
+Handling 36
+Durability 24
+Reach 26
+Magia 40
+Tecnologia 36
+Overall: 34/100
+improviso duplo — pontos fortes: power · fraqueza: durability
+Vantagem: duas runas recicladas de outros equipamentos aumentam bastante o impacto
+Limitação: combinação de runas incompatíveis acelera desgaste da peça original
+Peça de Máquina com Vínculo Instável (WPN-IMP-004) — Tier R3 · Classe BAIXO · Custo
+BAIXO
+Origem: ART-014
+ Power 58
+Defense 22
+Utility 42
+Handling 28
+Durability 18
+Reach 28
+Magia 55
+Tecnologia 42
+Overall: 37/100
+improviso extremo — pontos fortes: power · fraqueza: durability
+Vantagem: três runas emprestadas empilhadas num único item improvisado, poder muito acima do esperado para a categoria
+Limitação: vínculo instável em material incompatível — risco real de fratura ou falha catastrófica no combate
+
+=== page 7 ===
+Corrente de Ferragem (WPN-IMP-005) — Tier R0 · Classe BAIXO · Custo BAIXO
+Origem: ART-014
+ Power 30
+Defense 16
+Utility 22
+Handling 42
+Durability 28
+Reach 26
+Magia 4
+Tecnologia 16
+Overall: 23/100
+improviso flexível — pontos fortes: handling · fraqueza: magic_affinity
+Vantagem: alcance imprevisível para o oponente, disponível em qualquer oficina
+Limitação: pouco dano direto e nenhuma proteção ao usuário
+Cano Reforçado com Runa Emprestada (WPN-IMP-006) — Tier R1 · Classe BAIXO · Custo
+BAIXO
+Origem: ART-014
+ Power 48
+Defense 20
+Utility 26
+Handling 36
+Durability 22
+Reach 26
+Magia 22
+Tecnologia 26
+Overall: 28/100
+improviso de impacto — pontos fortes: power · fraqueza: durability
+Vantagem: cano de tubulação com uma runa reaproveitada, impacto surpreendente para o custo
+Limitação: material incompatível com a runa reduz a vida útil da peça
+Machadinha com Matriz Dupla Reaproveitada (WPN-IMP-007) — Tier R2 · Classe BAIXO ·
+Custo BAIXO
+Origem: ART-014
+ Power 54
+Defense 22
+Utility 34
+Handling 32
+Durability 20
+Reach 24
+Magia 42
+Tecnologia 34
+Overall: 33/100
+improviso duplo de corte — pontos fortes: power · fraqueza: durability
+Vantagem: ferramenta de oficina com duas runas recicladas — corte muito acima do esperado para a categoria
+Limitação: combinação de runas incompatíveis acelera bastante o desgaste
+Ferramenta de Vínculo Triplo Instável (WPN-IMP-008) — Tier R3 · Classe BAIXO · Custo
+BAIXO
+Origem: ART-014
+ Power 62
+Defense 20
+Utility 40
+Handling 24
+Durability 14
+Reach 26
+Magia 58
+Tecnologia 40
+Overall: 36/100
+improviso extremo — pontos fortes: power · fraqueza: durability
+Vantagem: três runas emprestadas empilhadas numa ferramenta comum — maior poder improvisado do catálogo
+Limitação: risco real de fratura ou falha catastrófica a qualquer momento de uso
+
+=== page 8 ===
+CLASSE: SOLDADOS
+Armamento: Armas de fogo e equipamento tático · 32 armas · 16 NPCs
+Identidade: Arquétipo de combatente organizado e equipado — guardas, mercenários e equipes de contenção que
+dependem do sistema de armamentos de Stellar (ART-004) para acesso a fuzis, explosivos e equipamento não letal.
+Classe transversal: qualquer facção com recursos pode empregar Soldados; não implica filiação a nenhuma instituição específica do
+cânone.
+Roster de NPCs
+ ID
+Nome
+Tier
+Papel
+Armas
+SOL-01
+Recruta de Linha
+BAIXO
+balanced
+Fuzil Convencional + Carga Convencional de Mineração
+SOL-02
+Batedor de Fronteira
+BAIXO
+fast
+Revólver de Fronteira + Dispositivo de Clarão Simples
+SOL-03
+Escudeiro de Contenção
+BAIXO
+tanky
+Espingarda de Caça Convencional + Rede Mecânica
+Comum
+SOL-04
+Atirador Novato
+BAIXO
+glass_cannon
+Fuzil de Longa Distância Convencional + Faca de
+Arremesso Simples
+SOL-05
+Fuzileiro Padrão
+MÉDIO
+balanced
+Fuzil de Patrulha + Carga de Demolição
+SOL-06
+Batedor Armado
+MÉDIO
+fast
+Revólver de Marcação Simples + Dispositivo de Clarão
+Aprimorado
+SOL-07
+Guardião de Bloqueio
+MÉDIO
+tanky
+Espingarda de Guarda + Rede de Ancoragem
+SOL-08
+Atirador de Elite Jr.
+MÉDIO
+glass_cannon
+Fuzil de Observação + Lança de Retorno Simples
+SOL-09
+Fuzileiro de Assalto
+MÉDIO
+glass_cannon
+Fuzil Rúnico de Vanguarda + Granada Rúnica de Onda
+Dirigida
+SOL-10
+Batedor Selado
+MÉDIO
+balanced
+Revólver Selado de Marcação + Prisma Rúnico de
+Interrupção
+SOL-11
+Breacher Ágil
+MÉDIO
+fast
+Espingarda Rúnica de Concentração Dupla + Campo
+Rúnico de Barreira
+SOL-12
+Atirador de Apoio
+MÉDIO
+tanky
+Fuzil de Precisão com Ótica Rúnica Avançada + Disco
+Rúnico de Trajetória
+SOL-13
+Fuzileiro de Vanguarda
+ALTO
+tank
+Fuzil de Vínculo Sincronizado + Carga de Vínculo Rúnico
+Total
+SOL-14
+Batedor de Elite
+ALTO
+fast
+Revólver Selado de Vínculo + Prisma de Vínculo Sensorial
+Total
+SOL-15
+Breacher Pesado
+ALTO
+tanky
+Espingarda Rúnica de Ruptura + Prisão Rúnica de Vínculo
+Total
+SOL-16
+Atirador Convergente
+ALTO
+glass_cannon
+Fuzil de Precisão Convergente + Disco de Vínculo
+Adaptativo
+
+=== page 9 ===
+NPCs de Soldados — detalhe
+Recruta de Linha (SOL-01) — Tier BAIXO · Papel: balanced
+Armas: Fuzil Convencional [WPN-FUZ-003] · Carga Convencional de Mineração [WPN-EXP-003]
+ HP 25
+Velocidade 20
+Mod. Dano 20
+Armadura 15
+Passiva — Fôlego de Combate: +10% regeneração de resistência fora de combate
+Ativa — Granada Tática: dano em área, dobrado contra alvo abaixo de 25% HP (custo 25, recarga 10.0s)
+Batedor de Fronteira (SOL-02) — Tier BAIXO · Papel: fast
+Armas: Revólver de Fronteira [WPN-REV-001] · Dispositivo de Clarão Simples [WPN-FLA-001]
+ HP 15
+Velocidade 35
+Mod. Dano 20
+Armadura 10
+Passiva — Fôlego de Combate: +10% regeneração de resistência fora de combate
+Ativa — Avanço Coberto: desloca 6m e remove enraizamento (custo 18, recarga 9.0s)
+Escudeiro de Contenção (SOL-03) — Tier BAIXO · Papel: tanky
+Armas: Espingarda de Caça Convencional [WPN-ESP-003] · Rede Mecânica Comum [WPN-CNT-003]
+ HP 35
+Velocidade 10
+Mod. Dano 20
+Armadura 15
+Passiva — Colete Reforçado: -8% dano físico recebido (flat)
+Ativa — Reforço de Esquadrão: avança 4m, próximo golpe +30% dano (custo 20, recarga 8.0s)
+Atirador Novato (SOL-04) — Tier BAIXO · Papel: glass_cannon
+Armas: Fuzil de Longa Distância Convencional [WPN-PRE-003] · Faca de Arremesso Simples [WPN-ARR-001]
+ HP 15
+Velocidade 20
+Mod. Dano 35
+Armadura 10
+Passiva — Mira Calibrada: +20% resistência a dano quando HP < 30%
+Ativa — Rajada Focada: +25% damage_mod por 5s (custo 30, recarga 12.0s)
+Fuzileiro Padrão (SOL-05) — Tier MÉDIO · Papel: balanced
+Armas: Fuzil de Patrulha [WPN-FUZ-001] · Carga de Demolição [WPN-EXP-001]
+ HP 30
+Velocidade 25
+Mod. Dano 25
+Armadura 20
+Passiva — Fôlego de Combate: +10% regeneração de resistência fora de combate
+Ativa — Granada Tática: dano em área, dobrado contra alvo abaixo de 25% HP (custo 25, recarga 10.0s)
+Batedor Armado (SOL-06) — Tier MÉDIO · Papel: fast
+Armas: Revólver de Marcação Simples [WPN-REV-003] · Dispositivo de Clarão Aprimorado [WPN-FLA-003]
+ HP 25
+Velocidade 40
+Mod. Dano 25
+Armadura 10
+Passiva — Fôlego de Combate: +10% regeneração de resistência fora de combate
+Ativa — Avanço Coberto: desloca 6m e remove enraizamento (custo 18, recarga 9.0s)
+Guardião de Bloqueio (SOL-07) — Tier MÉDIO · Papel: tanky
+Armas: Espingarda de Guarda [WPN-ESP-001] · Rede de Ancoragem [WPN-CNT-001]
+ HP 45
+Velocidade 15
+Mod. Dano 20
+Armadura 20
+Passiva — Colete Reforçado: -8% dano físico recebido (flat)
+Ativa — Reforço de Esquadrão: avança 4m, próximo golpe +30% dano (custo 20, recarga 8.0s)
+Atirador de Elite Jr. (SOL-08) — Tier MÉDIO · Papel: glass_cannon
+Armas: Fuzil de Observação [WPN-PRE-001] · Lança de Retorno Simples [WPN-ARR-003]
+ HP 20
+Velocidade 25
+Mod. Dano 45
+Armadura 10
+Passiva — Mira Calibrada: +20% resistência a dano quando HP < 30%
+Ativa — Rajada Focada: +25% damage_mod por 5s (custo 30, recarga 12.0s)
+Fuzileiro de Assalto (SOL-09) — Tier MÉDIO · Papel: glass_cannon
+Armas: Fuzil Rúnico de Vanguarda [WPN-FUZ-002] · Granada Rúnica de Onda Dirigida [WPN-EXP-002]
+ HP 20
+Velocidade 25
+Mod. Dano 45
+Armadura 10
+Passiva — Mira Calibrada: +20% resistência a dano quando HP < 30%
+Ativa — Rajada Focada: +25% damage_mod por 5s (custo 30, recarga 12.0s)
+
+=== page 10 ===
+Batedor Selado (SOL-10) — Tier MÉDIO · Papel: balanced
+Armas: Revólver Selado de Marcação [WPN-REV-002] · Prisma Rúnico de Interrupção [WPN-FLA-002]
+ HP 30
+Velocidade 25
+Mod. Dano 25
+Armadura 20
+Passiva — Fôlego de Combate: +10% regeneração de resistência fora de combate
+Ativa — Granada Tática: dano em área, dobrado contra alvo abaixo de 25% HP (custo 25, recarga 10.0s)
+Breacher Ágil (SOL-11) — Tier MÉDIO · Papel: fast
+Armas: Espingarda Rúnica de Concentração Dupla [WPN-ESP-004] · Campo Rúnico de Barreira [WPN-CNT-002]
+ HP 25
+Velocidade 40
+Mod. Dano 25
+Armadura 10
+Passiva — Fôlego de Combate: +10% regeneração de resistência fora de combate
+Ativa — Avanço Coberto: desloca 6m e remove enraizamento (custo 18, recarga 9.0s)
+Atirador de Apoio (SOL-12) — Tier MÉDIO · Papel: tanky
+Armas: Fuzil de Precisão com Ótica Rúnica Avançada [WPN-PRE-004] · Disco Rúnico de Trajetória [WPN-ARR-002]
+ HP 45
+Velocidade 15
+Mod. Dano 20
+Armadura 20
+Passiva — Colete Reforçado: -8% dano físico recebido (flat)
+Ativa — Reforço de Esquadrão: avança 4m, próximo golpe +30% dano (custo 20, recarga 8.0s)
+Fuzileiro de Vanguarda (SOL-13) — Tier ALTO · Papel: tank
+Armas: Fuzil de Vínculo Sincronizado [WPN-FUZ-004] · Carga de Vínculo Rúnico Total [WPN-EXP-004]
+ HP 60
+Velocidade 15
+Mod. Dano 30
+Armadura 15
+Passiva — Colete Reforçado: -8% dano físico recebido (flat)
+Ativa — Reforço de Esquadrão: avança 4m, próximo golpe +30% dano (custo 20, recarga 8.0s)
+Batedor de Elite (SOL-14) — Tier ALTO · Papel: fast
+Armas: Revólver Selado de Vínculo [WPN-REV-004] · Prisma de Vínculo Sensorial Total [WPN-FLA-004]
+ HP 35
+Velocidade 45
+Mod. Dano 25
+Armadura 15
+Passiva — Fôlego de Combate: +10% regeneração de resistência fora de combate
+Ativa — Avanço Coberto: desloca 6m e remove enraizamento (custo 18, recarga 9.0s)
+Breacher Pesado (SOL-15) — Tier ALTO · Papel: tanky
+Armas: Espingarda Rúnica de Ruptura [WPN-ESP-002] · Prisão Rúnica de Vínculo Total [WPN-CNT-004]
+ HP 50
+Velocidade 15
+Mod. Dano 35
+Armadura 20
+Passiva — Colete Reforçado: -8% dano físico recebido (flat)
+Ativa — Reforço de Esquadrão: avança 4m, próximo golpe +30% dano (custo 20, recarga 8.0s)
+Atirador Convergente (SOL-16) — Tier ALTO · Papel: glass_cannon
+Armas: Fuzil de Precisão Convergente [WPN-PRE-002] · Disco de Vínculo Adaptativo [WPN-ARR-004]
+ HP 30
+Velocidade 20
+Mod. Dano 55
+Armadura 15
+Passiva — Mira Calibrada: +20% resistência a dano quando HP < 30%
+Ativa — Rajada Focada: +25% damage_mod por 5s (custo 30, recarga 12.0s)
+
+=== page 11 ===
+Armas de Soldados — catálogo completo
+Fuzil de Patrulha (WPN-FUZ-001) — Tier R1 · Classe BAIXO · Custo BAIXO
+Origem: ART-006
+ Power 48
+Defense 34
+Utility 40
+Handling 62
+Durability 55
+Reach 60
+Magia 32
+Tecnologia 55
+Overall: 48/100
+supressão de patrulha — pontos fortes: handling · fraqueza: magic_affinity
+Vantagem: mecânica confiável, ampla disponibilidade e manutenção barata para forças organizadas e caravanas
+Limitação: uma única runa de estabilização não corrige aceleração nem recuo em rajadas longas
+Fuzil Rúnico de Vanguarda (WPN-FUZ-002) — Tier R2 · Classe MÉDIO · Custo ALTO
+Origem: ART-006
+ Power 68
+Defense 52
+Utility 58
+Handling 54
+Durability 50
+Reach 72
+Magia 58
+Tecnologia 70
+Overall: 60/100
+supressão avançada — pontos fortes: reach · fraqueza: durability
+Vantagem: matriz coordenada sustenta cadência de tiro com recuo administrado a longa distância
+Limitação: matriz rúnica superaquece sob uso contínuo e perde precisão, exigindo manutenção frequente
+Fuzil Convencional (WPN-FUZ-003) — Tier R0 · Classe BAIXO · Custo BAIXO
+Origem: ART-006
+ Power 40
+Defense 28
+Utility 25
+Handling 58
+Durability 58
+Reach 55
+Magia 5
+Tecnologia 45
+Overall: 39/100
+linha de base militar — pontos fortes: durability · fraqueza: magic_affinity
+Vantagem: nenhuma runa para falhar; manutenção trivial em qualquer guarnição
+Limitação: sem qualquer estabilização, recuo em rajadas cai bastante
+Fuzil de Vínculo Sincronizado (WPN-FUZ-004) — Tier R3 · Classe MÉDIO · Custo ALTO
+Origem: ART-006
+ Power 78
+Defense 45
+Utility 68
+Handling 46
+Durability 42
+Reach 80
+Magia 72
+Tecnologia 78
+Overall: 64/100
+supressão de elite — pontos fortes: reach · fraqueza: durability
+Vantagem: as três runas usuais da categoria operam em conjunto sincronizado
+Limitação: vínculo especializado exige manutenção quase constante
+Revólver de Fronteira (WPN-REV-001) — Tier R0 · Classe BAIXO · Custo BAIXO
+Origem: ART-007
+ Power 42
+Defense 25
+Utility 30
+Handling 70
+Durability 60
+Reach 35
+Magia 10
+Tecnologia 40
+Overall: 39/100
+defesa pessoal — pontos fortes: handling · fraqueza: magic_affinity
+Vantagem: mecanismo robusto, transporte discreto e acesso sem depender de magia ou licença
+Limitação: sem qualquer runa, fica limitado a capacidade e alcance convencionais
+Revólver Selado de Marcação (WPN-REV-002) — Tier R2 · Classe MÉDIO · Custo ALTO
+Origem: ART-007
+ Power 55
+Defense 44
+Utility 66
+Handling 58
+Durability 52
+Reach 42
+Magia 60
+Tecnologia 62
+Overall: 55/100
+controle tático — pontos fortes: utility · fraqueza: reach
+Vantagem: marca alvos à distância de disparo e sela o tambor contra falhas em combate prolongado
+Limitação: permanece arma curta: pouca capacidade e recarga rúnica cara não compensam o alcance limitado
+
+=== page 12 ===
+Revólver de Marcação Simples (WPN-REV-003) — Tier R1 · Classe BAIXO · Custo MÉDIO
+Origem: ART-007
+ Power 46
+Defense 27
+Utility 42
+Handling 66
+Durability 56
+Reach 36
+Magia 28
+Tecnologia 46
+Overall: 43/100
+identificação de alvo — pontos fortes: handling · fraqueza: defense
+Vantagem: uma única runa de marcação já ajuda equipes a identificar o alvo priorizado
+Limitação: sem selamento de tambor, ainda vulnerável a falhas em combate prolongado
+Revólver Selado de Vínculo (WPN-REV-004) — Tier R3 · Classe MÉDIO · Custo ALTO
+Origem: ART-007
+ Power 62
+Defense 36
+Utility 74
+Handling 48
+Durability 44
+Reach 46
+Magia 70
+Tecnologia 68
+Overall: 56/100
+controle tático de elite — pontos fortes: utility · fraqueza: defense
+Vantagem: marcação, impulso e selamento operando juntos elevam a confiabilidade em combate
+Limitação: continua uma arma curta, com pouca capacidade mesmo runificada ao máximo
+Espingarda de Guarda (WPN-ESP-001) — Tier R1 · Classe BAIXO · Custo BAIXO
+Origem: ART-008
+ Power 70
+Defense 35
+Utility 35
+Handling 50
+Durability 58
+Reach 25
+Magia 27
+Tecnologia 45
+Overall: 43/100
+impacto próximo — pontos fortes: power · fraqueza: reach
+Vantagem: concentração de disparo aumenta impacto na defesa de propriedade e ruptura de obstáculos
+Limitação: baixa eficiência além de curta distância, como toda a categoria
+Espingarda Rúnica de Ruptura (WPN-ESP-002) — Tier R3 · Classe MÉDIO · Custo ALTO
+Origem: ART-008
+ Power 82
+Defense 38
+Utility 60
+Handling 42
+Durability 48
+Reach 32
+Magia 64
+Tecnologia 68
+Overall: 54/100
+demolição tática — pontos fortes: power · fraqueza: reach
+Vantagem: repulsão e concentração combinadas produzem o maior impacto de curta distância do catálogo
+Limitação: vínculo especializado exige manutenção frequente; não elimina estilhaços, calor ou consumo de material
+Espingarda de Caça Convencional (WPN-ESP-003) — Tier R0 · Classe BAIXO · Custo
+BAIXO
+Origem: ART-008
+ Power 58
+Defense 28
+Utility 20
+Handling 55
+Durability 55
+Reach 20
+Magia 5
+Tecnologia 30
+Overall: 34/100
+impacto rural — pontos fortes: power · fraqueza: magic_affinity
+Vantagem: barata, comum e fácil de reparar em qualquer oficina
+Limitação: sem concentração rúnica, dispersão de tiro é irregular
+Espingarda Rúnica de Concentração Dupla (WPN-ESP-004) — Tier R2 · Classe MÉDIO ·
+Custo ALTO
+Origem: ART-008
+ Power 76
+Defense 36
+Utility 52
+Handling 46
+Durability 46
+Reach 28
+Magia 56
+Tecnologia 62
+Overall: 50/100
+impacto controlado — pontos fortes: power · fraqueza: reach
+Vantagem: matriz coordenada permite alternar entre concentração total e dispersão controlada
+Limitação: continua ineficiente além de curta distância
+
+=== page 13 ===
+Fuzil de Observação (WPN-PRE-001) — Tier R1 · Classe MÉDIO · Custo MÉDIO
+Origem: ART-009
+ Power 58
+Defense 44
+Utility 50
+Handling 40
+Durability 45
+Reach 78
+Magia 42
+Tecnologia 60
+Overall: 52/100
+vigilância e observação — pontos fortes: reach · fraqueza: handling
+Vantagem: ótica rúnica melhora identificação e neutralização seletiva a longa distância
+Limitação: exige treinamento, cálculo e boa posição de disparo; pouco ágil em combate próximo
+Fuzil de Precisão Convergente (WPN-PRE-002) — Tier R3 · Classe MÉDIO · Custo ALTO
+Origem: ART-009
+ Power 78
+Defense 35
+Utility 62
+Handling 30
+Durability 40
+Reach 92
+Magia 70
+Tecnologia 75
+Overall: 60/100
+neutralização seletiva — pontos fortes: reach · fraqueza: handling
+Vantagem: correção de vento e estabilidade convergem para o maior alcance efetivo do catálogo
+Limitação: custo altíssimo de manutenção e assinatura rúnica detectável tornam o portador rastreável
+Fuzil de Longa Distância Convencional (WPN-PRE-003) — Tier R0 · Classe BAIXO · Custo
+BAIXO
+Origem: ART-009
+ Power 50
+Defense 18
+Utility 35
+Handling 45
+Durability 50
+Reach 70
+Magia 5
+Tecnologia 45
+Overall: 40/100
+observação básica — pontos fortes: reach · fraqueza: magic_affinity
+Vantagem: ótica mecânica convencional, sem dependência de runas ou manutenção especial
+Limitação: identificação de alvo mais lenta sem auxílio rúnico
+Fuzil de Precisão com Ótica Rúnica Avançada (WPN-PRE-004) — Tier R2 · Classe MÉDIO
+· Custo ALTO
+Origem: ART-009
+ Power 68
+Defense 30
+Utility 56
+Handling 35
+Durability 42
+Reach 85
+Magia 58
+Tecnologia 68
+Overall: 55/100
+vigilância avançada — pontos fortes: reach · fraqueza: defense
+Vantagem: ótica e estabilidade coordenadas reduzem drasticamente o erro a longa distância
+Limitação: ainda exige boa posição e tempo de preparo para disparar
+Faca de Arremesso Simples (WPN-ARR-001) — Tier R0 · Classe BAIXO · Custo BAIXO
+Origem: ART-010
+ Power 40
+Defense 20
+Utility 35
+Handling 60
+Durability 45
+Reach 45
+Magia 8
+Tecnologia 30
+Overall: 35/100
+projeção leve — pontos fortes: handling · fraqueza: magic_affinity
+Vantagem: ferramenta simples, barata e fácil de repor em qualquer região
+Limitação: sem runa de trajetória, depende inteiramente da pontaria do usuário
+Disco Rúnico de Trajetória (WPN-ARR-002) — Tier R2 · Classe MÉDIO · Custo ALTO
+Origem: ART-010
+ Power 52
+Defense 24
+Utility 64
+Handling 54
+Durability 42
+Reach 58
+Magia 60
+Tecnologia 62
+Overall: 52/100
+projeção guiada — pontos fortes: utility · fraqueza: defense
+Vantagem: corrige trajetória em pleno voo e retorna à mão do portador
+Limitação: correção consome carga e não ignora obstáculos no caminho
+
+=== page 14 ===
+Lança de Retorno Simples (WPN-ARR-003) — Tier R1 · Classe BAIXO · Custo MÉDIO
+Origem: ART-010
+ Power 44
+Defense 22
+Utility 42
+Handling 58
+Durability 48
+Reach 50
+Magia 25
+Tecnologia 38
+Overall: 41/100
+projeção com aderência — pontos fortes: handling · fraqueza: defense
+Vantagem: runa de aderência melhora a fixação no alvo ou terreno
+Limitação: sem correção de trajetória, ainda depende de boa mira
+Disco de Vínculo Adaptativo (WPN-ARR-004) — Tier R3 · Classe MÉDIO · Custo ALTO
+Origem: ART-010
+ Power 58
+Defense 26
+Utility 72
+Handling 48
+Durability 36
+Reach 62
+Magia 72
+Tecnologia 70
+Overall: 56/100
+projeção guiada de elite — pontos fortes: utility · fraqueza: durability
+Vantagem: combina retorno, trajetória e aderência num único disco adaptativo
+Limitação: correção tripla consome carga rapidamente e não ignora obstáculos
+Carga de Demolição (WPN-EXP-001) — Tier R1 · Classe BAIXO · Custo MÉDIO
+Origem: ART-011
+ Power 75
+Defense 15
+Utility 40
+Handling 35
+Durability 50
+Reach 60
+Magia 20
+Tecnologia 42
+Overall: 42/100
+demolição de área — pontos fortes: power · fraqueza: defense
+Vantagem: runa de atraso permite posicionamento e retirada antes da detonação
+Limitação: não elimina estilhaços, calor ou consumo de material — risco alto para quem manuseia
+Granada Rúnica de Onda Dirigida (WPN-EXP-002) — Tier R2 · Classe MÉDIO · Custo
+ALTO
+Origem: ART-011
+ Power 85
+Defense 20
+Utility 62
+Handling 38
+Durability 44
+Reach 70
+Magia 66
+Tecnologia 70
+Overall: 57/100
+demolição controlada — pontos fortes: power · fraqueza: defense
+Vantagem: direciona a onda de choque e suprime parte do estrondo, poupando aliados próximos
+Limitação: uso altamente regulado; matriz rúnica não remove todo o risco de estilhaço
+Carga Convencional de Mineração (WPN-EXP-003) — Tier R0 · Classe BAIXO · Custo
+MÉDIO
+Origem: ART-011
+ Power 65
+Defense 10
+Utility 30
+Handling 40
+Durability 55
+Reach 55
+Magia 5
+Tecnologia 35
+Overall: 37/100
+demolição bruta — pontos fortes: power · fraqueza: defense
+Vantagem: uso civil comum em mineração, sem regulação rúnica adicional
+Limitação: sem runa de atraso, exige distância segura calculada manualmente
+Carga de Vínculo Rúnico Total (WPN-EXP-004) — Tier R3 · Classe MÉDIO · Custo ALTO
+Origem: ART-011
+ Power 92
+Defense 22
+Utility 70
+Handling 32
+Durability 38
+Reach 78
+Magia 75
+Tecnologia 76
+Overall: 60/100
+demolição de elite — pontos fortes: power · fraqueza: handling
+Vantagem: direção de onda, atraso e supressão combinados oferecem o maior controle de área do catálogo
+Limitação: uso extremamente regulado; ainda não elimina estilhaço nem consumo de material
+
+=== page 15 ===
+Rede de Ancoragem (WPN-CNT-001) — Tier R1 · Classe BAIXO · Custo BAIXO
+Origem: ART-012
+ Power 30
+Defense 35
+Utility 55
+Handling 50
+Durability 48
+Reach 40
+Magia 24
+Tecnologia 36
+Overall: 40/100
+imobilização não letal — pontos fortes: utility · fraqueza: power
+Vantagem: prende e ancora um alvo sem exigir sua morte
+Limitação: alvos fortes rompem a runa de laço sozinha, exigindo apoio adicional
+Campo Rúnico de Barreira (WPN-CNT-002) — Tier R2 · Classe MÉDIO · Custo ALTO
+Origem: ART-012
+ Power 38
+Defense 50
+Utility 72
+Handling 42
+Durability 46
+Reach 55
+Magia 68
+Tecnologia 66
+Overall: 55/100
+isolamento de área — pontos fortes: utility · fraqueza: power
+Vantagem: combina barreira e peso para isolar ou ancorar múltiplos alvos por área
+Limitação: alvos fortes ainda exigem múltiplas âncoras e grande energia sustentada
+Rede Mecânica Comum (WPN-CNT-003) — Tier R0 · Classe BAIXO · Custo BAIXO
+Origem: ART-012
+ Power 22
+Defense 30
+Utility 42
+Handling 55
+Durability 52
+Reach 32
+Magia 5
+Tecnologia 30
+Overall: 34/100
+imobilização mecânica — pontos fortes: handling · fraqueza: magic_affinity
+Vantagem: rede simples, barata e sem dependência de fonte mágica
+Limitação: alvos com força acima do comum rompem a rede sozinhos
+Prisão Rúnica de Vínculo Total (WPN-CNT-004) — Tier R3 · Classe MÉDIO · Custo ALTO
+Origem: ART-012
+ Power 42
+Defense 58
+Utility 82
+Handling 36
+Durability 40
+Reach 62
+Magia 78
+Tecnologia 72
+Overall: 59/100
+isolamento total — pontos fortes: utility · fraqueza: handling
+Vantagem: laço, peso, silêncio gestual e barreira juntos neutralizam magos e alvos físicos fortes
+Limitação: ainda exige múltiplas âncoras e grande energia contra alvos muito fortes
+Dispositivo de Clarão Simples (WPN-FLA-001) — Tier R0 · Classe BAIXO · Custo BAIXO
+Origem: ART-013
+ Power 15
+Defense 20
+Utility 45
+Handling 60
+Durability 40
+Reach 22
+Magia 16
+Tecnologia 34
+Overall: 32/100
+desorientação básica — pontos fortes: handling · fraqueza: power
+Vantagem: clarão e pulso sonoro mecânicos, baratos e fáceis de carregar em quantidade
+Limitação: proteção sensorial do alvo reduz o efeito quase por completo
+Prisma Rúnico de Interrupção (WPN-FLA-002) — Tier R2 · Classe BAIXO · Custo MÉDIO
+Origem: ART-013
+ Power 20
+Defense 24
+Utility 68
+Handling 52
+Durability 38
+Reach 28
+Magia 60
+Tecnologia 62
+Overall: 44/100
+desorientação sustentada — pontos fortes: utility · fraqueza: power
+Vantagem: foco luminoso e interrupção visual coordenados prolongam a desorientação do grupo alvo
+Limitação: uso excessivo pode ferir; proteção sensorial ainda reduz o efeito
+
+=== page 16 ===
+Dispositivo de Clarão Aprimorado (WPN-FLA-003) — Tier R1 · Classe BAIXO · Custo
+MÉDIO
+Origem: ART-013
+ Power 17
+Defense 22
+Utility 52
+Handling 56
+Durability 42
+Reach 25
+Magia 30
+Tecnologia 42
+Overall: 36/100
+desorientação sonora — pontos fortes: handling · fraqueza: power
+Vantagem: runa de eco prolonga a confusão sonora além do clarão inicial
+Limitação: ainda reduzido por qualquer proteção sensorial básica
+Prisma de Vínculo Sensorial Total (WPN-FLA-004) — Tier R3 · Classe BAIXO · Custo ALTO
+Origem: ART-013
+ Power 24
+Defense 28
+Utility 78
+Handling 44
+Durability 34
+Reach 34
+Magia 74
+Tecnologia 70
+Overall: 48/100
+desorientação total — pontos fortes: utility · fraqueza: power
+Vantagem: as três runas usuais combinadas atingem visão, som e equilíbrio ao mesmo tempo
+Limitação: uso excessivo pode ferir o alvo; proteção sensorial ainda reduz parte do efeito
+
+=== page 17 ===
+CLASSE: ANDROIDS
+Armamento: Tecnológica · 16 armas · 8 NPCs
+Identidade: Corpos sintéticos autônomos, sem precedente de lore antes desta proposta — ver perfil completo de facção
+em FAC-011.
+ALERTA: conceito 100% novo no Codex. Requer revisão/aprovação do autor antes de qualquer promoção a cânone R2.
+Roster de NPCs
+ ID
+Nome
+Tier
+Papel
+Armas
+AND-01
+Sentinela de Núcleo Duplo
+ALTO
+tank
+Núcleo de Sobrecarga Modular + Enxame de Nanolâminas
+AND-02
+Unidade de Ruptura Gêmea
+ALTO
+glass_cannon
+Exoesqueleto de Assalto + Núcleo Gêmeo de Sobrecarga
+AND-03
+Unidade de Convergência
+MÉDIO
+balanced
+Rifle de Convergência Cinética + Canhão de Trilho Portátil
+AND-04
+Chassi de Convergência Leve
+MÉDIO
+fast
+Torreta Portátil de Convergência + Lâmina de Plasma
+Contida
+AND-05
+Guardião de Chassi Reforçado
+MÉDIO
+tanky
+Emissor de Pulso Sináptico + Disruptor de Curto Alcance
+AND-06
+Unidade de Disrupção Leve
+MÉDIO
+glass_cannon
+Lançador de Fragmentos Sintéticos + Escudo de Choque
+Sináptico
+AND-07
+Unidade de Linha Básica
+BAIXO
+balanced
+Lâmina de Servo Básica + Garra Retrátil Padrão
+AND-08
+Chassi de Reconhecimento
+BAIXO
+fast
+Escudo Reativo Compacto + Faca Vibracional Padrão
+
+=== page 18 ===
+NPCs de Androids — detalhe
+Sentinela de Núcleo Duplo (AND-01) — Tier ALTO · Papel: tank
+Armas: Núcleo de Sobrecarga Modular [WPN-TEC-004] · Enxame de Nanolâminas [WPN-TEC-008]
+ HP 60
+Velocidade 15
+Mod. Dano 30
+Armadura 15
+Passiva — Autorreparo Modular: regenera 2% do HP máx/s enquanto abaixo de 50% HP
+Ativa — Sobrecarga de Impulso: avança 4m, próximo golpe +30% dano (custo 20, recarga 8.0s)
+Unidade de Ruptura Gêmea (AND-02) — Tier ALTO · Papel: glass_cannon
+Armas: Exoesqueleto de Assalto [WPN-TEC-012] · Núcleo Gêmeo de Sobrecarga [WPN-TEC-016]
+ HP 30
+Velocidade 20
+Mod. Dano 55
+Armadura 15
+Passiva — Blindagem Adaptativa: +20% resistência a dano quando HP < 30%
+Ativa — Pico de Energia: +25% damage_mod por 5s (custo 30, recarga 12.0s)
+Unidade de Convergência (AND-03) — Tier MÉDIO · Papel: balanced
+Armas: Rifle de Convergência Cinética [WPN-TEC-003] · Canhão de Trilho Portátil [WPN-TEC-007]
+ HP 30
+Velocidade 25
+Mod. Dano 25
+Armadura 20
+Passiva — Ventilação Eficiente: +10% regeneração de energia fora de combate
+Ativa — Protocolo de Eliminação: dano dobrado contra alvo abaixo de 25% HP (custo 25, recarga 10.0s)
+Chassi de Convergência Leve (AND-04) — Tier MÉDIO · Papel: fast
+Armas: Torreta Portátil de Convergência [WPN-TEC-011] · Lâmina de Plasma Contida [WPN-TEC-015]
+ HP 25
+Velocidade 40
+Mod. Dano 25
+Armadura 10
+Passiva — Ventilação Eficiente: +10% regeneração de energia fora de combate
+Ativa — Salto Propulsor: desloca 6m e remove enraizamento (custo 18, recarga 9.0s)
+Guardião de Chassi Reforçado (AND-05) — Tier MÉDIO · Papel: tanky
+Armas: Emissor de Pulso Sináptico [WPN-TEC-002] · Disruptor de Curto Alcance [WPN-TEC-006]
+ HP 45
+Velocidade 15
+Mod. Dano 20
+Armadura 20
+Passiva — Placas Reforçadas: -8% dano físico recebido (flat)
+Ativa — Sobrecarga de Impulso: avança 4m, próximo golpe +30% dano (custo 20, recarga 8.0s)
+Unidade de Disrupção Leve (AND-06) — Tier MÉDIO · Papel: glass_cannon
+Armas: Lançador de Fragmentos Sintéticos [WPN-TEC-010] · Escudo de Choque Sináptico [WPN-TEC-014]
+ HP 20
+Velocidade 25
+Mod. Dano 45
+Armadura 10
+Passiva — Blindagem Adaptativa: +20% resistência a dano quando HP < 30%
+Ativa — Pico de Energia: +25% damage_mod por 5s (custo 30, recarga 12.0s)
+Unidade de Linha Básica (AND-07) — Tier BAIXO · Papel: balanced
+Armas: Lâmina de Servo Básica [WPN-TEC-001] · Garra Retrátil Padrão [WPN-TEC-005]
+ HP 25
+Velocidade 20
+Mod. Dano 20
+Armadura 15
+Passiva — Placas Reforçadas: -8% dano físico recebido (flat)
+Ativa — Protocolo de Eliminação: dano dobrado contra alvo abaixo de 25% HP (custo 25, recarga 10.0s)
+Chassi de Reconhecimento (AND-08) — Tier BAIXO · Papel: fast
+Armas: Escudo Reativo Compacto [WPN-TEC-009] · Faca Vibracional Padrão [WPN-TEC-013]
+ HP 15
+Velocidade 35
+Mod. Dano 20
+Armadura 10
+Passiva — Ventilação Eficiente: +10% regeneração de energia fora de combate
+Ativa — Salto Propulsor: desloca 6m e remove enraizamento (custo 18, recarga 9.0s)
+
+=== page 19 ===
+Armas de Androids — catálogo completo
+Lâmina de Servo Básica (WPN-TEC-001) — Tier T0 · Classe BAIXO · Custo BAIXO
+Origem: —
+ Power 42
+Defense 22
+Utility 25
+Handling 60
+Durability 55
+Reach 28
+Magia 0
+Tecnologia 50
+Overall: 35/100
+corte sintético básico — pontos fortes: handling · fraqueza: magic_affinity
+Vantagem: servo-motor de baixo custo, fácil manutenção em qualquer chassi
+Limitação: nenhuma interface arcana — inútil contra proteções puramente mágicas
+Emissor de Pulso Sináptico (WPN-TEC-002) — Tier T1 · Classe BAIXO · Custo MÉDIO
+Origem: —
+ Power 55
+Defense 26
+Utility 48
+Handling 52
+Durability 45
+Reach 48
+Magia 5
+Tecnologia 62
+Overall: 43/100
+interferência de rede — pontos fortes: tech_affinity · fraqueza: magic_affinity
+Vantagem: pulso calibrado interrompe sistemas eletrônicos e sinapses de alvos orgânicos
+Limitação: efeito mínimo contra construtos puramente arcanos
+Rifle de Convergência Cinética (WPN-TEC-003) — Tier T2 · Classe MÉDIO · Custo ALTO
+Origem: —
+ Power 70
+Defense 32
+Utility 58
+Handling 44
+Durability 40
+Reach 68
+Magia 8
+Tecnologia 74
+Overall: 49/100
+projeção cinética de precisão — pontos fortes: tech_affinity · fraqueza: magic_affinity
+Vantagem: converge múltiplos disparos num único ponto de impacto calculado
+Limitação: consumo de energia elevado esgota reservas do chassi rapidamente
+Núcleo de Sobrecarga Modular (WPN-TEC-004) — Tier T3 · Classe MÉDIO · Custo ALTO
+Origem: —
+ Power 88
+Defense 38
+Utility 66
+Handling 30
+Durability 28
+Reach 60
+Magia 12
+Tecnologia 85
+Overall: 51/100
+sobrecarga de elite — pontos fortes: tech_affinity · fraqueza: magic_affinity
+Vantagem: módulo de pico entrega o maior dano tecnológico do catálogo
+Limitação: risco real de superaquecimento do próprio chassi do android sob uso contínuo
+Garra Retrátil Padrão (WPN-TEC-005) — Tier T0 · Classe BAIXO · Custo BAIXO
+Origem: —
+ Power 38
+Defense 24
+Utility 22
+Handling 58
+Durability 52
+Reach 24
+Magia 0
+Tecnologia 46
+Overall: 33/100
+corte sintético leve — pontos fortes: handling · fraqueza: magic_affinity
+Vantagem: módulo de fábrica barato, retrátil e discreto
+Limitação: potência mínima contra blindagem reforçada
+Disruptor de Curto Alcance (WPN-TEC-006) — Tier T1 · Classe BAIXO · Custo MÉDIO
+Origem: —
+ Power 50
+Defense 28
+Utility 44
+Handling 50
+Durability 42
+Reach 40
+Magia 4
+Tecnologia 58
+Overall: 40/100
+interferência tática — pontos fortes: tech_affinity · fraqueza: magic_affinity
+Vantagem: desestabiliza sistemas próximos sem gastar carga de longo alcance
+Limitação: perde efeito rapidamente com a distância
+
+=== page 20 ===
+Canhão de Trilho Portátil (WPN-TEC-007) — Tier T2 · Classe MÉDIO · Custo ALTO
+Origem: —
+ Power 74
+Defense 30
+Utility 52
+Handling 38
+Durability 36
+Reach 72
+Magia 6
+Tecnologia 76
+Overall: 48/100
+artilharia sintética — pontos fortes: tech_affinity · fraqueza: magic_affinity
+Vantagem: maior alcance tecnológico do catálogo, acelera projétil por trilho eletromagnético
+Limitação: recuo severo desestabiliza o próprio chassi do android
+Enxame de Nanolâminas (WPN-TEC-008) — Tier T3 · Classe MÉDIO · Custo ALTO
+Origem: —
+ Power 84
+Defense 34
+Utility 70
+Handling 34
+Durability 26
+Reach 50
+Magia 10
+Tecnologia 88
+Overall: 50/100
+enxame de elite — pontos fortes: tech_affinity · fraqueza: magic_affinity
+Vantagem: maior afinidade tecnológica do catálogo, nuvem de nanolâminas ataca múltiplos pontos
+Limitação: consumo de energia altíssimo esgota o núcleo do android em poucos minutos
+Escudo Reativo Compacto (WPN-TEC-009) — Tier T0 · Classe BAIXO · Custo BAIXO
+Origem: —
+ Power 20
+Defense 50
+Utility 30
+Handling 55
+Durability 50
+Reach 18
+Magia 0
+Tecnologia 42
+Overall: 33/100
+defesa sintética leve — pontos fortes: defense · fraqueza: magic_affinity
+Vantagem: campo reativo compacto absorve impacto físico a curta distância
+Limitação: quase nenhum poder ofensivo próprio
+Lançador de Fragmentos Sintéticos (WPN-TEC-010) — Tier T1 · Classe BAIXO · Custo
+MÉDIO
+Origem: —
+ Power 52
+Defense 26
+Utility 40
+Handling 48
+Durability 40
+Reach 44
+Magia 3
+Tecnologia 56
+Overall: 39/100
+saturação de área leve — pontos fortes: tech_affinity · fraqueza: magic_affinity
+Vantagem: fragmentos sintéticos cobrem área média sem gasto alto de energia
+Limitação: dano disperso, fraco contra alvo único blindado
+Torreta Portátil de Convergência (WPN-TEC-011) — Tier T2 · Classe MÉDIO · Custo ALTO
+Origem: —
+ Power 72
+Defense 34
+Utility 50
+Handling 30
+Durability 44
+Reach 66
+Magia 5
+Tecnologia 72
+Overall: 47/100
+artilharia estacionária — pontos fortes: tech_affinity · fraqueza: magic_affinity
+Vantagem: converge múltiplos disparos numa torre destacável do próprio chassi
+Limitação: exige tempo de instalação, vulnerável enquanto se desdobra
+Exoesqueleto de Assalto (WPN-TEC-012) — Tier T3 · Classe MÉDIO · Custo ALTO
+Origem: —
+ Power 86
+Defense 48
+Utility 60
+Handling 36
+Durability 34
+Reach 42
+Magia 8
+Tecnologia 80
+Overall: 49/100
+assalto blindado de elite — pontos fortes: power · fraqueza: magic_affinity
+Vantagem: reforço estrutural total do chassi, maior poder de impacto do catálogo tecnológico
+Limitação: consumo de energia elevadíssimo limita duração de combate
+
+=== page 21 ===
+Faca Vibracional Padrão (WPN-TEC-013) — Tier T0 · Classe BAIXO · Custo BAIXO
+Origem: —
+ Power 44
+Defense 22
+Utility 20
+Handling 56
+Durability 48
+Reach 22
+Magia 0
+Tecnologia 44
+Overall: 32/100
+corte sintético vibracional — pontos fortes: handling · fraqueza: magic_affinity
+Vantagem: lâmina vibra em alta frequência, corta com pouco esforço mecânico
+Limitação: componente frágil, perde eficiência com uso contínuo
+Escudo de Choque Sináptico (WPN-TEC-014) — Tier T1 · Classe BAIXO · Custo MÉDIO
+Origem: —
+ Power 46
+Defense 40
+Utility 42
+Handling 46
+Durability 44
+Reach 30
+Magia 4
+Tecnologia 54
+Overall: 38/100
+defesa com contra-ataque — pontos fortes: tech_affinity · fraqueza: magic_affinity
+Vantagem: bloqueia e devolve choque sináptico ao atacante
+Limitação: alcance curto exige combate próximo
+Lâmina de Plasma Contida (WPN-TEC-015) — Tier T2 · Classe BAIXO · Custo ALTO
+Origem: —
+ Power 70
+Defense 32
+Utility 46
+Handling 40
+Durability 38
+Reach 36
+Magia 7
+Tecnologia 70
+Overall: 42/100
+corte de alta energia — pontos fortes: tech_affinity · fraqueza: magic_affinity
+Vantagem: campo de contenção mantém o plasma estável na lâmina
+Limitação: falha de contenção sob dano acumulado é perigosa para o próprio portador
+Núcleo Gêmeo de Sobrecarga (WPN-TEC-016) — Tier T3 · Classe MÉDIO · Custo ALTO
+Origem: —
+ Power 90
+Defense 36
+Utility 64
+Handling 28
+Durability 30
+Reach 56
+Magia 10
+Tecnologia 84
+Overall: 50/100
+sobrecarga dupla de elite — pontos fortes: power · fraqueza: magic_affinity
+Vantagem: dois núcleos entregam o maior dano tecnológico do catálogo
+Limitação: risco crítico de falha simultânea dos dois núcleos sob dano pesado
+
+=== page 22 ===
+CLASSE: MAGOS
+Armamento: Mágica · 16 armas · 8 NPCs
+Identidade: Arquétipo de combatente que canaliza a Corrente Planetária por método estruturado (fórmula, runa, vínculo
+ou instinto — MAG-001) para produzir efeitos de combate.
+Classe transversal: qualquer personagem com acesso a método mágico pode ser Mago, dentro ou fora da instituição Reis Magos.
+Roster de NPCs
+ ID
+Nome
+Tier
+Papel
+Armas
+MAG-N01
+Arauto da Convergência
+ALTO
+tank
+Relicário de Estase Convergente + Coroa de Convergência
+Planetária
+MAG-N02
+Portador do Trono Duplo
+ALTO
+glass_cannon
+Trono Portátil de Convergência + Cetro da Última Maré
+Planetária
+MAG-N03
+Guardiã do Círculo
+MÉDIO
+balanced
+Grimório de Vínculo Ritual + Espelho Rúnico de Duplo Foco
+MAG-N04
+Andarilha do Véu
+MÉDIO
+fast
+Véu Rúnico de Interrupção Arcana + Cajado de Fórmula
+Falada
+MAG-N05
+Guardião de Pedra Rúnica
+MÉDIO
+tanky
+Círculo Rúnico de Convergência Dupla + Foco de Corrente
+Planetária
+MAG-N06
+Ritualista Instável
+MÉDIO
+glass_cannon
+Anel de Vínculo Simples + Manopla de Gesto Ritual
+MAG-N07
+Aprendiz de Bastão
+BAIXO
+balanced
+Bastão de Ecoação + Amuleto de Corrente Bruta
+MAG-N08
+Iniciada de Talismã
+BAIXO
+fast
+Pingente de Corrente Latente + Talismã de Fluxo Instável
+
+=== page 23 ===
+NPCs de Magos — detalhe
+Arauto da Convergência (MAG-N01) — Tier ALTO · Papel: tank
+Armas: Relicário de Estase Convergente [WPN-MAG-004] · Coroa de Convergência Planetária [WPN-MAG-008]
+ HP 60
+Velocidade 15
+Mod. Dano 30
+Armadura 15
+Passiva — Fluxo Regenerativo: regenera 2% do HP máx/s enquanto abaixo de 50% HP
+Ativa — Impulso da Corrente: avança 4m, próximo golpe +30% dano (MAG-003) (custo 20, recarga 8.0s)
+Portador do Trono Duplo (MAG-N02) — Tier ALTO · Papel: glass_cannon
+Armas: Trono Portátil de Convergência [WPN-MAG-016] · Cetro da Última Maré Planetária [WPN-MAG-012]
+ HP 30
+Velocidade 20
+Mod. Dano 55
+Armadura 15
+Passiva — Resiliência Elemental: +20% resistência a dano quando HP < 30%
+Ativa — Convergência Breve: +25% damage_mod por 5s (MAG-003) (custo 30, recarga 12.0s)
+Guardiã do Círculo (MAG-N03) — Tier MÉDIO · Papel: balanced
+Armas: Grimório de Vínculo Ritual [WPN-MAG-003] · Espelho Rúnico de Duplo Foco [WPN-MAG-007]
+ HP 30
+Velocidade 25
+Mod. Dano 25
+Armadura 20
+Passiva — Canal Aberto: +10% regeneração de fonte mágica fora de combate
+Ativa — Selo Final: dano dobrado contra alvo abaixo de 25% HP (MAG-002) (custo 25, recarga 10.0s)
+Andarilha do Véu (MAG-N04) — Tier MÉDIO · Papel: fast
+Armas: Véu Rúnico de Interrupção Arcana [WPN-MAG-015] · Cajado de Fórmula Falada [WPN-MAG-002]
+ HP 25
+Velocidade 40
+Mod. Dano 25
+Armadura 10
+Passiva — Canal Aberto: +10% regeneração de fonte mágica fora de combate
+Ativa — Passo Planar: desloca 6m e remove enraizamento (MAG-001, método de vínculo) (custo 18, recarga 9.0s)
+Guardião de Pedra Rúnica (MAG-N05) — Tier MÉDIO · Papel: tanky
+Armas: Círculo Rúnico de Convergência Dupla [WPN-MAG-011] · Foco de Corrente Planetária [WPN-MAG-001]
+ HP 45
+Velocidade 15
+Mod. Dano 20
+Armadura 20
+Passiva — Pele de Corrente: -8% dano físico recebido (flat)
+Ativa — Impulso da Corrente: avança 4m, próximo golpe +30% dano (MAG-003) (custo 20, recarga 8.0s)
+Ritualista Instável (MAG-N06) — Tier MÉDIO · Papel: glass_cannon
+Armas: Anel de Vínculo Simples [WPN-MAG-006] · Manopla de Gesto Ritual [WPN-MAG-014]
+ HP 20
+Velocidade 25
+Mod. Dano 45
+Armadura 10
+Passiva — Resiliência Elemental: +20% resistência a dano quando HP < 30%
+Ativa — Convergência Breve: +25% damage_mod por 5s (MAG-003) (custo 30, recarga 12.0s)
+Aprendiz de Bastão (MAG-N07) — Tier BAIXO · Papel: balanced
+Armas: Bastão de Ecoação [WPN-MAG-010] · Amuleto de Corrente Bruta [WPN-MAG-005]
+ HP 25
+Velocidade 20
+Mod. Dano 20
+Armadura 15
+Passiva — Pele de Corrente: -8% dano físico recebido (flat)
+Ativa — Selo Final: dano dobrado contra alvo abaixo de 25% HP (MAG-002) (custo 25, recarga 10.0s)
+Iniciada de Talismã (MAG-N08) — Tier BAIXO · Papel: fast
+Armas: Pingente de Corrente Latente [WPN-MAG-013] · Talismã de Fluxo Instável [WPN-MAG-009]
+ HP 15
+Velocidade 35
+Mod. Dano 20
+Armadura 10
+Passiva — Canal Aberto: +10% regeneração de fonte mágica fora de combate
+Ativa — Passo Planar: desloca 6m e remove enraizamento (MAG-001, método de vínculo) (custo 18, recarga 9.0s)
+
+=== page 24 ===
+Armas de Magos — catálogo completo
+Foco de Corrente Planetária (WPN-MAG-001) — Tier R1 · Classe BAIXO · Custo MÉDIO
+Origem: MAG-003
+ Power 48
+Defense 30
+Utility 50
+Handling 45
+Durability 40
+Reach 55
+Magia 65
+Tecnologia 20
+Overall: 44/100
+canalização básica — pontos fortes: magic_affinity · fraqueza: tech_affinity
+Vantagem: capta a Corrente Planetária diretamente, sem precisar de fórmula falada
+Limitação: fonte finita — exige proximidade de um ponto de corrente estável
+Cajado de Fórmula Falada (WPN-MAG-002) — Tier R1 · Classe BAIXO · Custo MÉDIO
+Origem: MAG-001
+ Power 44
+Defense 34
+Utility 48
+Handling 48
+Durability 45
+Reach 58
+Magia 62
+Tecnologia 22
+Overall: 45/100
+método falado — pontos fortes: magic_affinity · fraqueza: tech_affinity
+Vantagem: método de fórmula falada, mais lento para aprender mas mais estável em combate
+Limitação: todo custo e consequência das Leis da magia (MAG-001) se aplicam sem atalho
+Grimório de Vínculo Ritual (WPN-MAG-003) — Tier R2 · Classe MÉDIO · Custo ALTO
+Origem: MAG-002
+ Power 62
+Defense 36
+Utility 68
+Handling 36
+Durability 38
+Reach 48
+Magia 78
+Tecnologia 30
+Overall: 50/100
+ritual coordenado — pontos fortes: magic_affinity · fraqueza: tech_affinity
+Vantagem: usa runas como método (MAG-002) para coordenar múltiplos efeitos por ritual
+Limitação: ritual lento, vulnerável a interrupção durante a invocação
+Relicário de Estase Convergente (WPN-MAG-004) — Tier R3 · Classe ALTO · Custo ALTO
+Origem: MAG-007
+ Power 82
+Defense 40
+Utility 80
+Handling 24
+Durability 30
+Reach 62
+Magia 92
+Tecnologia 34
+Overall: 56/100
+convergência de elite — pontos fortes: magic_affinity · fraqueza: handling
+Vantagem: relíquia ligada à Estase de Intervalo (MAG-007), maior poder mágico do catálogo
+Limitação: custo e consequência elevados; qualquer erro de invocação é caro para o portador
+Amuleto de Corrente Bruta (WPN-MAG-005) — Tier R0 · Classe BAIXO · Custo BAIXO
+Origem: MAG-001
+ Power 30
+Defense 22
+Utility 30
+Handling 50
+Durability 38
+Reach 40
+Magia 45
+Tecnologia 5
+Overall: 33/100
+canalização por instinto — pontos fortes: magic_affinity · fraqueza: tech_affinity
+Vantagem: usa o método de 'instinto mágico' (MAG-001), sem exigir treinamento formal
+Limitação: sem método estruturado, resultado é imprevisível e mais arriscado
+Anel de Vínculo Simples (WPN-MAG-006) — Tier R1 · Classe BAIXO · Custo MÉDIO
+Origem: MAG-001
+ Power 40
+Defense 28
+Utility 46
+Handling 50
+Durability 42
+Reach 46
+Magia 58
+Tecnologia 18
+Overall: 41/100
+canalização por vínculo — pontos fortes: magic_affinity · fraqueza: tech_affinity
+Vantagem: método de vínculo (MAG-001) mantém canal aberto sem fórmula repetida
+Limitação: vínculo constante desgasta o portador ao longo do dia
+
+=== page 25 ===
+Espelho Rúnico de Duplo Foco (WPN-MAG-007) — Tier R2 · Classe MÉDIO · Custo ALTO
+Origem: MAG-002
+ Power 58
+Defense 34
+Utility 64
+Handling 38
+Durability 36
+Reach 50
+Magia 74
+Tecnologia 26
+Overall: 48/100
+canalização espelhada — pontos fortes: magic_affinity · fraqueza: tech_affinity
+Vantagem: duas runas de foco coordenadas (MAG-002) dividem o efeito entre dois alvos
+Limitação: dividir o foco reduz a intensidade em cada alvo individual
+Coroa de Convergência Planetária (WPN-MAG-008) — Tier R3 · Classe MÉDIO · Custo
+ALTO
+Origem: MAG-003
+ Power 80
+Defense 42
+Utility 78
+Handling 22
+Durability 28
+Reach 58
+Magia 90
+Tecnologia 32
+Overall: 54/100
+convergência de elite — pontos fortes: magic_affinity · fraqueza: handling
+Vantagem: canaliza a Corrente Planetária (MAG-003) diretamente, maior afinidade mágica do catálogo
+Limitação: peso ritual da coroa deixa o portador quase imóvel durante o uso
+Talismã de Fluxo Instável (WPN-MAG-009) — Tier R0 · Classe BAIXO · Custo BAIXO
+Origem: MAG-001
+ Power 26
+Defense 20
+Utility 26
+Handling 48
+Durability 34
+Reach 36
+Magia 40
+Tecnologia 4
+Overall: 29/100
+canalização instável — pontos fortes: magic_affinity · fraqueza: tech_affinity
+Vantagem: barato e fácil de carregar, capta qualquer resquício de Corrente Planetária próxima
+Limitação: fluxo instável — resultado varia a cada uso
+Bastão de Ecoação (WPN-MAG-010) — Tier R1 · Classe BAIXO · Custo MÉDIO
+Origem: MAG-001
+ Power 42
+Defense 26
+Utility 44
+Handling 48
+Durability 40
+Reach 48
+Magia 56
+Tecnologia 16
+Overall: 40/100
+canalização por eco de fórmula — pontos fortes: magic_affinity · fraqueza: tech_affinity
+Vantagem: repete parte de uma fórmula falada anterior, economizando tempo de invocação
+Limitação: eco perde força a cada repetição na mesma sessão de combate
+Círculo Rúnico de Convergência Dupla (WPN-MAG-011) — Tier R2 · Classe BAIXO · Custo
+ALTO
+Origem: MAG-002
+ Power 56
+Defense 32
+Utility 62
+Handling 36
+Durability 34
+Reach 46
+Magia 72
+Tecnologia 24
+Overall: 45/100
+canalização por círculo coordenado — pontos fortes: magic_affinity · fraqueza: tech_affinity
+Vantagem: duas runas de foco desenhadas no chão convergem efeito num único ponto
+Limitação: exige preparar o círculo antes do combate — vulnerável durante a montagem
+Cetro da Última Maré Planetária (WPN-MAG-012) — Tier R3 · Classe MÉDIO · Custo ALTO
+Origem: MAG-003
+ Power 78
+Defense 40
+Utility 76
+Handling 20
+Durability 26
+Reach 56
+Magia 88
+Tecnologia 30
+Overall: 52/100
+canalização de elite — pontos fortes: magic_affinity · fraqueza: handling
+Vantagem: canaliza diretamente um pico da Corrente Planetária (MAG-003)
+Limitação: peso ritual do cetro deixa o portador quase estático durante o efeito
+
+=== page 26 ===
+Pingente de Corrente Latente (WPN-MAG-013) — Tier R0 · Classe BAIXO · Custo BAIXO
+Origem: MAG-003
+ Power 24
+Defense 24
+Utility 28
+Handling 50
+Durability 36
+Reach 38
+Magia 42
+Tecnologia 6
+Overall: 31/100
+canalização passiva — pontos fortes: magic_affinity · fraqueza: tech_affinity
+Vantagem: acumula um pouco de Corrente Planetária mesmo fora de combate
+Limitação: reserva pequena, esgota rápido em uso contínuo
+Manopla de Gesto Ritual (WPN-MAG-014) — Tier R1 · Classe BAIXO · Custo MÉDIO
+Origem: MAG-001
+ Power 44
+Defense 30
+Utility 46
+Handling 46
+Durability 44
+Reach 42
+Magia 60
+Tecnologia 18
+Overall: 41/100
+canalização por gesto — pontos fortes: magic_affinity · fraqueza: tech_affinity
+Vantagem: método de gesto (MAG-001) permite invocar em silêncio
+Limitação: exige as duas mãos livres, sem escudo ou arma secundária simultânea
+Véu Rúnico de Interrupção Arcana (WPN-MAG-015) — Tier R2 · Classe BAIXO · Custo
+ALTO
+Origem: MAG-002
+ Power 50
+Defense 36
+Utility 66
+Handling 40
+Durability 38
+Reach 44
+Magia 76
+Tecnologia 22
+Overall: 47/100
+canalização de controle — pontos fortes: magic_affinity · fraqueza: tech_affinity
+Vantagem: véu rúnico interrompe invocações alheias próximas
+Limitação: não distingue aliado de inimigo dentro da área de interrupção
+Trono Portátil de Convergência (WPN-MAG-016) — Tier R3 · Classe MÉDIO · Custo ALTO
+Origem: MAG-003
+ Power 82
+Defense 44
+Utility 80
+Handling 18
+Durability 24
+Reach 60
+Magia 92
+Tecnologia 28
+Overall: 54/100
+convergência máxima — pontos fortes: magic_affinity · fraqueza: handling
+Vantagem: maior afinidade mágica de todo o catálogo MAR, convergência total da Corrente Planetária
+Limitação: estrutura do trono precisa ser montada antes do combate, imóvel durante o uso
+

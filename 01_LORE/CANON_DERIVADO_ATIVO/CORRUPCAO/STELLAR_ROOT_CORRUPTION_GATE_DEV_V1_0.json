@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-ROOT-CORRUPTION-GATE-DEV-V1.0",
+  "title": "Portão Autoral — Escala e Localização da Corrupção da Raiz Profunda em Stellar (842 EC)",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "AUTHORIAL_GATE_APPROVED",
+  "master_v2_reconciliation_note": "Importação do domínio MAR/Raiz Profunda do MASTER V2.0.1 (mesma sessão) mostrou 20 entradas de fauna/flora/ambiente corrompidos, todas com territory_refs=[TER-012] mas parent_id=LOC-011 (Terras Livres) — ou seja, o local físico real é a fronteira de Terras Livres, TER-012 é só a jurisdição administrativa da Vigília Radicular. Isso bate diretamente com nossa SUB-011-006 Fendas da Névoa (TER-011), já presente nesta lista. Usuário confirmou explicitamente (após revisão lado a lado): MANTER as 10 subregiões como estão — nenhuma removida. As outras 6 (TER-008/009/013/015/016/019) permanecem como extensão autoral desta sessão, nem confirmadas nem contraditas pelo Master nesta amostra. Ver 01_LORE/CANON_MASTER_V2/MAR_RAIZ_PROFUNDA/MASTER_RAIZ_PROFUNDA_CATALOG_V2_0_0.json para a fonte completa.",
+  "governance_finding": "COR-001 Raiz Profunda é a única ameaça R2 confirmada (categoria COR, ver 01_LORE/CANON_R2/ECOLOGIA/CORROMPIDOS/COR-001__raiz-profunda.json). STELLAR_ROOT_PROGRESSION_LAW exige portão autoral para toda transição de fase da Raiz. STELLAR_CAUSALITY_LAW e STELLAR_CANON_CONSTITUTION exigem portão autoral para qualquer mudança de escala planetária/global. Declarar que a corrupção já ocupa uma fração mensurável do território de Stellar em 842 EC é exatamente esse tipo de mudança — portanto ESTE DOCUMENTO É O PORTÃO AUTORAL exigido, registrado como decisão direta e explícita do autor do projeto (mesmo nível de autoridade já usado para as coordenadas de região, fase 37, e a criação dos territórios TER-014..019, fases 44-52).",
+  "authorial_decision": {
+    "current_root_phase": "ALIMENTACAO_SILENCIOSA_PARA_CORRUPCAO",
+    "phase_note": "Entre a 3ª fase (Alimentação Silenciosa) e a 4ª fase (Corrupção) das 6 fases já descritas em COR-001/STELLAR_ROOT_PROGRESSION_LAW (Implantação, Enraizamento, Alimentação Silenciosa, Corrupção, Emergência, Colheita). Deliberadamente NÃO chega a Emergência/Colheita — respeita o compromisso já estabelecido de que a Temporada 1 nunca atinge o desfecho apocalíptico da Raiz.",
+    "spread_percentage": "~17% das subregioes de Stellar (10 de 60) - dentro da faixa 10-30% pedida pelo autor. (Corrigido de 11 para 10: SUB-019-003 removida para respeitar o principio de contencao - TER-019 nao pode ter mais da metade de suas subregioes corrompidas.)",
+    "containment_principle": "Nenhum território tem mais da metade de suas subregiões corrompidas — a corrupção nunca 'toma completamente' um local. TER-012 é a única exceção proposital (é literalmente a Zona de Contenção já existente no cânone derivado, seu propósito inteiro é conter incidentes como este)."
+  },
+  "corrupted_subregions": [
+    {
+      "subregion_id": "SUB-012-001",
+      "title": "Perímetro de Contenção Alfa",
+      "territory_id": "TER-012",
+      "intensity": "ALTA",
+      "rationale": "Já é a linha de contenção ativa das Zonas de Contenção — encaixe direto, sem inventar propósito novo."
+    },
+    {
+      "subregion_id": "SUB-012-002",
+      "title": "Campo de Deslocados",
+      "territory_id": "TER-012",
+      "intensity": "MEDIA",
+      "rationale": "Já abriga deslocados por 'incidentes em outros territórios' — a Raiz é a causa desses incidentes."
+    },
+    {
+      "subregion_id": "SUB-012-003",
+      "title": "Comando Emergencial",
+      "territory_id": "TER-012",
+      "intensity": "BAIXA",
+      "rationale": "Sede de coordenação de Ishara Veyn — permanece o ponto mais seguro do território, coordenando a resposta."
+    },
+    {
+      "subregion_id": "SUB-008-002",
+      "title": "Raízes Sagradas",
+      "territory_id": "TER-008",
+      "intensity": "MEDIA",
+      "rationale": "Já ancora MIN-ROOT-SHARD, descrito desde a fase 14 como 'mineral corrompido ligado às Raízes Sagradas e ao tema do Espinho-Negro' — corrupção já estava tematicamente implícita aqui."
+    },
+    {
+      "subregion_id": "SUB-019-002",
+      "title": "Ruínas Cobertas",
+      "territory_id": "TER-019",
+      "intensity": "MEDIA",
+      "rationale": "Já usa MIN-ROOT-SHARD como fonte secundária (fase 55) e é tematicamente uma ruína tomada pela vegetação — extensão natural para raiz corrompida."
+    },
+    {
+      "subregion_id": "SUB-011-006",
+      "title": "Fendas da Névoa",
+      "territory_id": "TER-011",
+      "intensity": "BAIXA",
+      "rationale": "Zona mais hostil já catalogada em Terras Livres, geograficamente distante de SUB-011-001 Fronteira de Varga — não interfere na trama de Kenua."
+    },
+    {
+      "subregion_id": "SUB-009-002",
+      "title": "Túneis de Extração",
+      "territory_id": "TER-009",
+      "intensity": "BAIXA",
+      "rationale": "Isolamento subterrâneo natural, contenção facilitada pela geografia."
+    },
+    {
+      "subregion_id": "SUB-013-003",
+      "title": "Passagem Secreta",
+      "territory_id": "TER-013",
+      "intensity": "BAIXA",
+      "rationale": "Rota oculta já discreta, coerente com um foco de corrupção não detectado publicamente."
+    },
+    {
+      "subregion_id": "SUB-015-002",
+      "title": "Ruínas de Antes-do-Pacto",
+      "territory_id": "TER-015",
+      "intensity": "BAIXA",
+      "rationale": "Tema de ruína anônima já estabelecido (fase 48), sem nomear civilização histórica — corrupção reforça o mistério sem contradizer NO_NAMED_HISTORICAL_CIVILIZATION."
+    },
+    {
+      "subregion_id": "SUB-016-003",
+      "title": "Fenda Congelada",
+      "territory_id": "TER-016",
+      "intensity": "BAIXA",
+      "rationale": "Isolamento glacial natural, já perigoso (VEI-005-adjacent lore de guarda)."
+    }
+  ],
+  "prohibitions": [
+    "NO_ROOT_PHASE_BEYOND_ALIMENTACAO_CORRUPCAO_WITHOUT_NEW_GATE",
+    "NO_AUTOMATIC_KENUA_SCENE",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_AMADON_CONTACT_OR_IDENTIFICATION_BEFORE_S01E08",
+    "NO_TERRITORY_FULLY_CORRUPTED",
+    "NO_NAMED_HISTORICAL_CIVILIZATION"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY"
+}

@@ -1,0 +1,34 @@
+{
+  "est_id": "EST-045",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Posto de Vigia da Estação Oriental",
+  "building_type": "MILITAR",
+  "parent_locality": "CIT-002",
+  "parent_subregion": "SUB-011-002",
+  "parent_political_unit": "TER-011",
+  "function": "Posto de vigilância montado junto ao nó ferroviário após os desaparecimentos investigados na rota — reforço de segurança, não presença militar permanente.",
+  "economic_role": {
+    "is_vendor": false,
+    "sells": [],
+    "produces": [],
+    "regulation_factor": 0.5
+  },
+  "capacity": {
+    "jobs": 4,
+    "residents": 2
+  },
+  "professions_linked": [],
+  "notable_link": "CIT-002 Estação Oriental (R2), rota fronteiriça com CIT-001 Posto de Varga, investigação de Episódio 1 — A Recompensa",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "PEDRA_REFORCADA",
+    "flammability": "BAIXA",
+    "recovery_days": 7
+  }
+}

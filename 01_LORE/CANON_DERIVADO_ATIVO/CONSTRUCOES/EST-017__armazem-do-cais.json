@@ -1,0 +1,38 @@
+{
+  "est_id": "EST-017",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Armazém do Cais",
+  "building_type": "COMERCIAL",
+  "parent_locality": "LOC-004-001",
+  "parent_subregion": "SUB-004-001",
+  "parent_political_unit": "TER-004",
+  "function": "Armazenamento e troca de mercadorias do porto franco.",
+  "economic_role": {
+    "is_vendor": true,
+    "sells": [
+      "mercadorias diversas"
+    ],
+    "produces": [],
+    "regulation_factor": 0.5
+  },
+  "capacity": {
+    "jobs": 10,
+    "residents": 0
+  },
+  "professions_linked": [
+    "marinheiro"
+  ],
+  "notable_link": "Porto Livre de Navyr (SUB-004-001)",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "MADEIRA_E_ALVENARIA",
+    "flammability": "ALTA",
+    "recovery_days": 7
+  }
+}

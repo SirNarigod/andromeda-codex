@@ -1,0 +1,69 @@
+{
+  "record_id": "ARPG-ACTOR-AI-CONTRACT-V0.8.0",
+  "stage": "07/23",
+  "status": "ACTIVE_GAMEPLAY_DERIVATION",
+  "authority": "ARPG_ACTORS_HOSTILITY_AI_GAMEPLAY_DERIVATION",
+  "principles": [
+    "Actor gameplay role never rewrites canonical identity, profession, species, faction or narrative state.",
+    "Hostility is explicit runtime state; NPC class alone never makes an actor hostile.",
+    "Protected identities cannot be auto-aggressors.",
+    "Player primary-click attacks a target automatically only when Stage07 hostility resolves HOSTILE; neutral actors remain contextual interactions.",
+    "Detailed actor state uses lazy active-set materialization for country-scale performance.",
+    "Combat rank is GAMEPLAY_DERIVED and scales combat overlays without canon mutation."
+  ],
+  "actor_roles": [
+    "PLAYER",
+    "CIVILIAN",
+    "WORKER",
+    "MERCHANT",
+    "GUARD",
+    "ALLY",
+    "NEUTRAL",
+    "HOSTILE",
+    "ANIMAL",
+    "CREATURE",
+    "ROBOT",
+    "BOSS"
+  ],
+  "dispositions": [
+    "ALLIED",
+    "FRIENDLY",
+    "NEUTRAL",
+    "WARY",
+    "HOSTILE"
+  ],
+  "combat_ranks": [
+    "NONCOMBATANT",
+    "COMMON",
+    "CHAMPION",
+    "ELITE",
+    "MINIBOSS",
+    "BOSS"
+  ],
+  "ai_states": [
+    "DISABLED",
+    "IDLE",
+    "PATROL",
+    "ALERT",
+    "CHASE",
+    "ATTACK",
+    "RETURN",
+    "FLEE",
+    "DEFEATED"
+  ],
+  "lod_policy": "COUNTRY_SOURCE_LAZY_ACTIVE_SET",
+  "player_npc_worker_future_compatibility": {
+    "workers_share_actor_contract": true,
+    "work_ai_is_not_combat_ai": true,
+    "work_scheduler_target_stage": 9,
+    "robots_may_reuse_actor_contract": true,
+    "robot_functional_system_target_stage": 11
+  },
+  "godot_dependency": "NONE_FOR_STAGE07_CORE; direct editor validation deferred until user is on PC",
+  "combat_roll_seed_policy": {
+    "policy": "WORLD_SEED_EVENT_REF_CHANNEL",
+    "reason": "Runtime UUID is identity metadata and must not alter gameplay outcomes.",
+    "authority": "GAMEPLAY_DERIVED_DETERMINISM_CONTRACT"
+  },
+  "updated_at": "2026-08-18T18:32:18.747667+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "record_id": "ANDROMEDA_AUTHORITY_MATRIX_V11_R2_REBASED",
+  "project": "ANDROMEDA CODEX",
+  "version": "V11",
+  "status": "ACTIVE_AFTER_R2_REBASE_LOT_010",
+  "supersedes": "ANDROMEDA_AUTHORITY_MATRIX_V10_R2_REBASED",
+  "decision_rule": "R2 decides lore. User-approved compatible laws may expand local gameplay and stories. Technical implementation, player state and unapproved proposals cannot promote canon.",
+  "layers": [
+    {"rank":1,"source":"ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2","authority":"IMMUTABLE_ORIGIN","classification_default":"CANON_R2_CONFIRMADO"},
+    {"rank":2,"source":"USER_APPROVED_R2_COMPATIBLE_DERIVATION","authority":"ACTIVE_WITH_PROVENANCE","classification_default":"CANON_DERIVADO_ATIVO","lot_010":["bounded causal evidence and scope ledger","gradual local recognition of artificial agency","read-only causal and autonomy interfaces for LivingSim, Living Scale and UE5"]},
+    {"rank":3,"source":"MASTER_V2_0_1_AND_LIVING_SIM_ENGINE_V1_0_0","authority":"READ_ONLY_TECHNICAL_EXTENSION","classification_default":"EVIDENCIA_TECNICA_NAO_CANONICA_UNLESS_PROMOTED"},
+    {"rank":4,"source":"GODOT_STAGE16_STAGE17_AND_FUTURE_UE5_RUNTIME","authority":"IMPLEMENTATION_ONLY","classification_default":"EVIDENCIA_TECNICA_NAO_CANONICA"},
+    {"rank":5,"source":"LLM_PLAYER_OR_UNAPPROVED_PROPOSAL","authority":"NO_CANON_AUTHORITY","classification_default":"DIVERGENCIA_FORMAL_AGUARDANDO_DECISAO"}
+  ],
+  "lot_010_boundaries": ["No causal trace can promote canon without an authorial gate.", "No autonomous entity receives sovereignty, territory, episode authority or R2 override.", "Recognition status is local, auditable and reversible by later lawful decision; it is never a global fact by default."],
+  "story_generators": ["Uma máquina recusa uma ordem e obriga a oficina a provar que responsabilidade e propriedade são a mesma coisa.", "A cadeia de causas de uma rota recuperada expõe quem lucrou com o seu abandono.", "O pedido de reconhecimento de uma entidade vira uma disputa local sem decidir o destino político de Stellar."]
+}

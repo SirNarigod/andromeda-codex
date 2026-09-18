@@ -1,0 +1,1006 @@
+[
+ {
+  "id": "AND-01",
+  "name": "Sentinela de Núcleo Duplo",
+  "cls": "Androids",
+  "tier": "ALTO",
+  "role": "SUPORTE",
+  "hp": 60,
+  "sp": 15,
+  "dg": 30,
+  "ar": 15,
+  "wp": [
+   "WPN-TEC-004",
+   "WPN-TEC-008"
+  ],
+  "ps": "Autorreparo Modular",
+  "as": "Sobrecarga de Impulso",
+  "sub": null
+ },
+ {
+  "id": "AND-02",
+  "name": "Unidade de Ruptura Gêmea",
+  "cls": "Androids",
+  "tier": "ALTO",
+  "role": "ASSALTO",
+  "hp": 30,
+  "sp": 20,
+  "dg": 55,
+  "ar": 15,
+  "wp": [
+   "WPN-TEC-012",
+   "WPN-TEC-016"
+  ],
+  "ps": "Blindagem Adaptativa",
+  "as": "Pico de Energia",
+  "sub": null
+ },
+ {
+  "id": "AND-03",
+  "name": "Unidade de Convergência",
+  "cls": "Androids",
+  "tier": "MÉDIO",
+  "role": "MÉDICO",
+  "hp": 30,
+  "sp": 25,
+  "dg": 25,
+  "ar": 20,
+  "wp": [
+   "WPN-TEC-003",
+   "WPN-TEC-007"
+  ],
+  "ps": "Ventilação Eficiente",
+  "as": "Reparo Remoto",
+  "sub": null
+ },
+ {
+  "id": "AND-04",
+  "name": "Chassi de Convergência Leve",
+  "cls": "Androids",
+  "tier": "MÉDIO",
+  "role": "FRANCO",
+  "hp": 25,
+  "sp": 40,
+  "dg": 25,
+  "ar": 10,
+  "wp": [
+   "WPN-TEC-011",
+   "WPN-TEC-015"
+  ],
+  "ps": "Ventilação Eficiente",
+  "as": "Salto Propulsor",
+  "sub": null
+ },
+ {
+  "id": "AND-05",
+  "name": "Guardião de Chassi Reforçado",
+  "cls": "Androids",
+  "tier": "MÉDIO",
+  "role": "SUPORTE",
+  "hp": 45,
+  "sp": 15,
+  "dg": 20,
+  "ar": 20,
+  "wp": [
+   "WPN-TEC-002",
+   "WPN-TEC-006"
+  ],
+  "ps": "Placas Reforçadas",
+  "as": "Sobrecarga de Impulso",
+  "sub": null
+ },
+ {
+  "id": "AND-06",
+  "name": "Unidade de Disrupção Leve",
+  "cls": "Androids",
+  "tier": "MÉDIO",
+  "role": "ASSALTO",
+  "hp": 20,
+  "sp": 25,
+  "dg": 45,
+  "ar": 10,
+  "wp": [
+   "WPN-TEC-010",
+   "WPN-TEC-014"
+  ],
+  "ps": "Blindagem Adaptativa",
+  "as": "Pico de Energia",
+  "sub": null
+ },
+ {
+  "id": "AND-07",
+  "name": "Unidade de Linha Básica",
+  "cls": "Androids",
+  "tier": "BAIXO",
+  "role": "MÉDICO",
+  "hp": 25,
+  "sp": 20,
+  "dg": 20,
+  "ar": 15,
+  "wp": [
+   "WPN-TEC-001",
+   "WPN-TEC-005"
+  ],
+  "ps": "Placas Reforçadas",
+  "as": "Reparo Remoto",
+  "sub": null
+ },
+ {
+  "id": "AND-08",
+  "name": "Chassi de Reconhecimento",
+  "cls": "Androids",
+  "tier": "BAIXO",
+  "role": "FRANCO",
+  "hp": 15,
+  "sp": 35,
+  "dg": 20,
+  "ar": 10,
+  "wp": [
+   "WPN-TEC-009",
+   "WPN-TEC-013"
+  ],
+  "ps": "Ventilação Eficiente",
+  "as": "Salto Propulsor",
+  "sub": null
+ },
+ {
+  "id": "COR-N01",
+  "name": "Vetora de Contencao Senior",
+  "cls": "Corrompidos",
+  "tier": "ALTO",
+  "role": "SUPORTE",
+  "hp": 60,
+  "sp": 15,
+  "dg": 30,
+  "ar": 15,
+  "wp": [
+   "WPN-RAD-007",
+   "WPN-PRO-007"
+  ],
+  "ps": "Casca Estavel",
+  "as": "Avanco Radicular",
+  "sub": null
+ },
+ {
+  "id": "COR-N02",
+  "name": "Lamina de Sangue-de-Raiz",
+  "cls": "Corrompidos",
+  "tier": "ALTO",
+  "role": "ASSALTO",
+  "hp": 30,
+  "sp": 20,
+  "dg": 55,
+  "ar": 15,
+  "wp": [
+   "WPN-RAD-008",
+   "WPN-PRO-008"
+  ],
+  "ps": "Resistencia Viva",
+  "as": "Surto de Corrupcao",
+  "sub": null
+ },
+ {
+  "id": "COR-N03",
+  "name": "Curadora de Exposicao Controlada",
+  "cls": "Corrompidos",
+  "tier": "MEDIO",
+  "role": "MEDICO",
+  "hp": 30,
+  "sp": 25,
+  "dg": 25,
+  "ar": 20,
+  "wp": [
+   "WPN-RAD-005",
+   "WPN-PRO-005"
+  ],
+  "ps": "Ventilacao Contida",
+  "as": "Seiva Curativa",
+  "sub": null
+ },
+ {
+  "id": "COR-N04",
+  "name": "Batedora de Esporos",
+  "cls": "Corrompidos",
+  "tier": "MEDIO",
+  "role": "FRANCO",
+  "hp": 25,
+  "sp": 40,
+  "dg": 25,
+  "ar": 10,
+  "wp": [
+   "WPN-RAD-004",
+   "WPN-PRO-004"
+  ],
+  "ps": "Ventilacao Contida",
+  "as": "Salto Radicular",
+  "sub": null
+ },
+ {
+  "id": "COR-N05",
+  "name": "Guardia de Nucleo Vivo",
+  "cls": "Corrompidos",
+  "tier": "MEDIO",
+  "role": "SUPORTE",
+  "hp": 45,
+  "sp": 15,
+  "dg": 20,
+  "ar": 20,
+  "wp": [
+   "WPN-RAD-003",
+   "WPN-PRO-003"
+  ],
+  "ps": "Placas Radiculares",
+  "as": "Avanco Radicular",
+  "sub": null
+ },
+ {
+  "id": "COR-N06",
+  "name": "Ceifadora de Casca Negra",
+  "cls": "Corrompidos",
+  "tier": "MEDIO",
+  "role": "ASSALTO",
+  "hp": 20,
+  "sp": 25,
+  "dg": 45,
+  "ar": 10,
+  "wp": [
+   "WPN-RAD-006",
+   "WPN-PRO-006"
+  ],
+  "ps": "Resistencia Viva",
+  "as": "Surto de Corrupcao",
+  "sub": null
+ },
+ {
+  "id": "COR-N07",
+  "name": "Aprendiz de Contencao",
+  "cls": "Corrompidos",
+  "tier": "BAIXO",
+  "role": "MEDICO",
+  "hp": 25,
+  "sp": 20,
+  "dg": 20,
+  "ar": 15,
+  "wp": [
+   "WPN-RAD-001",
+   "WPN-PRO-001"
+  ],
+  "ps": "Placas Radiculares",
+  "as": "Seiva Curativa",
+  "sub": null
+ },
+ {
+  "id": "COR-N08",
+  "name": "Batedor Novato",
+  "cls": "Corrompidos",
+  "tier": "BAIXO",
+  "role": "FRANCO",
+  "hp": 15,
+  "sp": 35,
+  "dg": 20,
+  "ar": 10,
+  "wp": [
+   "WPN-RAD-002",
+   "WPN-PRO-002"
+  ],
+  "ps": "Ventilacao Contida",
+  "as": "Salto Radicular",
+  "sub": null
+ },
+ {
+  "id": "MAG-N01",
+  "name": "Arauto da Convergência",
+  "cls": "Magos",
+  "tier": "ALTO",
+  "role": "SUPORTE",
+  "hp": 60,
+  "sp": 15,
+  "dg": 30,
+  "ar": 15,
+  "wp": [
+   "WPN-MAG-004",
+   "WPN-MAG-008"
+  ],
+  "ps": "Fluxo Regenerativo",
+  "as": "Impulso da Corrente",
+  "sub": null
+ },
+ {
+  "id": "MAG-N02",
+  "name": "Portador do Trono Duplo",
+  "cls": "Magos",
+  "tier": "ALTO",
+  "role": "ASSALTO",
+  "hp": 30,
+  "sp": 20,
+  "dg": 55,
+  "ar": 15,
+  "wp": [
+   "WPN-MAG-016",
+   "WPN-MAG-012"
+  ],
+  "ps": "Resiliência Elemental",
+  "as": "Convergência Breve",
+  "sub": null
+ },
+ {
+  "id": "MAG-N03",
+  "name": "Guardiã do Círculo",
+  "cls": "Magos",
+  "tier": "MÉDIO",
+  "role": "MÉDICO",
+  "hp": 30,
+  "sp": 25,
+  "dg": 25,
+  "ar": 20,
+  "wp": [
+   "WPN-MAG-003",
+   "WPN-MAG-007"
+  ],
+  "ps": "Canal Aberto",
+  "as": "Bênção de Restauração",
+  "sub": null
+ },
+ {
+  "id": "MAG-N04",
+  "name": "Andarilha do Véu",
+  "cls": "Magos",
+  "tier": "MÉDIO",
+  "role": "FRANCO",
+  "hp": 25,
+  "sp": 40,
+  "dg": 25,
+  "ar": 10,
+  "wp": [
+   "WPN-MAG-015",
+   "WPN-MAG-002"
+  ],
+  "ps": "Canal Aberto",
+  "as": "Passo Planar",
+  "sub": null
+ },
+ {
+  "id": "MAG-N05",
+  "name": "Guardião de Pedra Rúnica",
+  "cls": "Magos",
+  "tier": "MÉDIO",
+  "role": "SUPORTE",
+  "hp": 45,
+  "sp": 15,
+  "dg": 20,
+  "ar": 20,
+  "wp": [
+   "WPN-MAG-011",
+   "WPN-MAG-001"
+  ],
+  "ps": "Pele de Corrente",
+  "as": "Impulso da Corrente",
+  "sub": null
+ },
+ {
+  "id": "MAG-N06",
+  "name": "Ritualista Instável",
+  "cls": "Magos",
+  "tier": "MÉDIO",
+  "role": "ASSALTO",
+  "hp": 20,
+  "sp": 25,
+  "dg": 45,
+  "ar": 10,
+  "wp": [
+   "WPN-MAG-006",
+   "WPN-MAG-014"
+  ],
+  "ps": "Resiliência Elemental",
+  "as": "Convergência Breve",
+  "sub": null
+ },
+ {
+  "id": "MAG-N07",
+  "name": "Aprendiz de Bastão",
+  "cls": "Magos",
+  "tier": "BAIXO",
+  "role": "MÉDICO",
+  "hp": 25,
+  "sp": 20,
+  "dg": 20,
+  "ar": 15,
+  "wp": [
+   "WPN-MAG-010",
+   "WPN-MAG-005"
+  ],
+  "ps": "Pele de Corrente",
+  "as": "Bênção de Restauração",
+  "sub": null
+ },
+ {
+  "id": "MAG-N08",
+  "name": "Iniciada de Talismã",
+  "cls": "Magos",
+  "tier": "BAIXO",
+  "role": "FRANCO",
+  "hp": 15,
+  "sp": 35,
+  "dg": 20,
+  "ar": 10,
+  "wp": [
+   "WPN-MAG-013",
+   "WPN-MAG-009"
+  ],
+  "ps": "Canal Aberto",
+  "as": "Passo Planar",
+  "sub": null
+ },
+ {
+  "id": "NAT-01",
+  "name": "Guarda de Espinho",
+  "cls": "Nativos",
+  "tier": "ALTO",
+  "role": "SUPORTE",
+  "hp": 60,
+  "sp": 15,
+  "dg": 30,
+  "ar": 15,
+  "wp": [
+   "WPN-LAM-008",
+   "WPN-IMP-004"
+  ],
+  "ps": "Couraça de Fronteira",
+  "as": "Investida Selvagem",
+  "sub": null
+ },
+ {
+  "id": "NAT-02",
+  "name": "Fera de Vanguarda",
+  "cls": "Nativos",
+  "tier": "ALTO",
+  "role": "ASSALTO",
+  "hp": 30,
+  "sp": 20,
+  "dg": 55,
+  "ar": 15,
+  "wp": [
+   "WPN-LAM-004",
+   "WPN-IMP-008"
+  ],
+  "ps": "Instinto de Sobrevivência",
+  "as": "Fúria Contida",
+  "sub": null
+ },
+ {
+  "id": "NAT-03",
+  "name": "Caçador Equilibrado",
+  "cls": "Nativos",
+  "tier": "MÉDIO",
+  "role": "MÉDICO",
+  "hp": 30,
+  "sp": 25,
+  "dg": 25,
+  "ar": 20,
+  "wp": [
+   "WPN-LAM-002",
+   "WPN-IMP-003"
+  ],
+  "ps": "Fôlego de Caçador",
+  "as": "Cataplasma de Campo",
+  "sub": null
+ },
+ {
+  "id": "NAT-04",
+  "name": "Corredor de Trilha",
+  "cls": "Nativos",
+  "tier": "MÉDIO",
+  "role": "FRANCO",
+  "hp": 25,
+  "sp": 40,
+  "dg": 25,
+  "ar": 10,
+  "wp": [
+   "WPN-LAM-007",
+   "WPN-IMP-007"
+  ],
+  "ps": "Fôlego de Caçador",
+  "as": "Salto de Fronteira",
+  "sub": null
+ },
+ {
+  "id": "NAT-05",
+  "name": "Sentinela Rústica",
+  "cls": "Nativos",
+  "tier": "MÉDIO",
+  "role": "SUPORTE",
+  "hp": 45,
+  "sp": 15,
+  "dg": 20,
+  "ar": 20,
+  "wp": [
+   "WPN-LAM-001",
+   "WPN-IMP-002"
+  ],
+  "ps": "Pele Endurecida",
+  "as": "Investida Selvagem",
+  "sub": null
+ },
+ {
+  "id": "NAT-06",
+  "name": "Fúria de Fronteira",
+  "cls": "Nativos",
+  "tier": "MÉDIO",
+  "role": "ASSALTO",
+  "hp": 20,
+  "sp": 25,
+  "dg": 45,
+  "ar": 10,
+  "wp": [
+   "WPN-LAM-006",
+   "WPN-IMP-006"
+  ],
+  "ps": "Instinto de Sobrevivência",
+  "as": "Fúria Contida",
+  "sub": null
+ },
+ {
+  "id": "NAT-07",
+  "name": "Recruta de Vila",
+  "cls": "Nativos",
+  "tier": "BAIXO",
+  "role": "MÉDICO",
+  "hp": 25,
+  "sp": 20,
+  "dg": 20,
+  "ar": 15,
+  "wp": [
+   "WPN-LAM-003",
+   "WPN-IMP-001"
+  ],
+  "ps": "Pele Endurecida",
+  "as": "Cataplasma de Campo",
+  "sub": null
+ },
+ {
+  "id": "NAT-08",
+  "name": "Batedor Ligeiro",
+  "cls": "Nativos",
+  "tier": "BAIXO",
+  "role": "FRANCO",
+  "hp": 15,
+  "sp": 35,
+  "dg": 20,
+  "ar": 10,
+  "wp": [
+   "WPN-LAM-005",
+   "WPN-IMP-005"
+  ],
+  "ps": "Fôlego de Caçador",
+  "as": "Salto de Fronteira",
+  "sub": null
+ },
+ {
+  "id": "SOL-01",
+  "name": "Recruta de Linha",
+  "cls": "Soldados",
+  "tier": "BAIXO",
+  "role": "MÉDICO",
+  "hp": 25,
+  "sp": 20,
+  "dg": 20,
+  "ar": 15,
+  "wp": [
+   "WPN-FUZ-003",
+   "WPN-EXP-003"
+  ],
+  "ps": "Fôlego de Combate",
+  "as": "Cura de Campo",
+  "sub": null
+ },
+ {
+  "id": "SOL-02",
+  "name": "Batedor de Fronteira",
+  "cls": "Soldados",
+  "tier": "BAIXO",
+  "role": "FRANCO",
+  "hp": 15,
+  "sp": 35,
+  "dg": 20,
+  "ar": 10,
+  "wp": [
+   "WPN-REV-001",
+   "WPN-FLA-001"
+  ],
+  "ps": "Fôlego de Combate",
+  "as": "Avanço Coberto",
+  "sub": null
+ },
+ {
+  "id": "SOL-03",
+  "name": "Escudeiro de Contenção",
+  "cls": "Soldados",
+  "tier": "BAIXO",
+  "role": "SUPORTE",
+  "hp": 35,
+  "sp": 10,
+  "dg": 20,
+  "ar": 15,
+  "wp": [
+   "WPN-ESP-003",
+   "WPN-CNT-003"
+  ],
+  "ps": "Colete Reforçado",
+  "as": "Reforço de Esquadrão",
+  "sub": null
+ },
+ {
+  "id": "SOL-04",
+  "name": "Atirador Novato",
+  "cls": "Soldados",
+  "tier": "BAIXO",
+  "role": "ASSALTO",
+  "hp": 15,
+  "sp": 20,
+  "dg": 35,
+  "ar": 10,
+  "wp": [
+   "WPN-PRE-003",
+   "WPN-ARR-001"
+  ],
+  "ps": "Mira Calibrada",
+  "as": "Rajada Focada",
+  "sub": null
+ },
+ {
+  "id": "SOL-05",
+  "name": "Fuzileiro Padrão",
+  "cls": "Soldados",
+  "tier": "MÉDIO",
+  "role": "MÉDICO",
+  "hp": 30,
+  "sp": 25,
+  "dg": 25,
+  "ar": 20,
+  "wp": [
+   "WPN-FUZ-001",
+   "WPN-EXP-001"
+  ],
+  "ps": "Fôlego de Combate",
+  "as": "Cura de Campo",
+  "sub": null
+ },
+ {
+  "id": "SOL-06",
+  "name": "Batedor Armado",
+  "cls": "Soldados",
+  "tier": "MÉDIO",
+  "role": "FRANCO",
+  "hp": 25,
+  "sp": 40,
+  "dg": 25,
+  "ar": 10,
+  "wp": [
+   "WPN-REV-003",
+   "WPN-FLA-003"
+  ],
+  "ps": "Fôlego de Combate",
+  "as": "Avanço Coberto",
+  "sub": null
+ },
+ {
+  "id": "SOL-07",
+  "name": "Guardião de Bloqueio",
+  "cls": "Soldados",
+  "tier": "MÉDIO",
+  "role": "SUPORTE",
+  "hp": 45,
+  "sp": 15,
+  "dg": 20,
+  "ar": 20,
+  "wp": [
+   "WPN-ESP-001",
+   "WPN-CNT-001"
+  ],
+  "ps": "Colete Reforçado",
+  "as": "Reforço de Esquadrão",
+  "sub": null
+ },
+ {
+  "id": "SOL-08",
+  "name": "Atirador de Elite Jr.",
+  "cls": "Soldados",
+  "tier": "MÉDIO",
+  "role": "ASSALTO",
+  "hp": 20,
+  "sp": 25,
+  "dg": 45,
+  "ar": 10,
+  "wp": [
+   "WPN-PRE-001",
+   "WPN-ARR-003"
+  ],
+  "ps": "Mira Calibrada",
+  "as": "Rajada Focada",
+  "sub": null
+ },
+ {
+  "id": "SOL-09",
+  "name": "Fuzileiro de Assalto",
+  "cls": "Soldados",
+  "tier": "MÉDIO",
+  "role": "ASSALTO",
+  "hp": 20,
+  "sp": 25,
+  "dg": 45,
+  "ar": 10,
+  "wp": [
+   "WPN-FUZ-002",
+   "WPN-EXP-002"
+  ],
+  "ps": "Mira Calibrada",
+  "as": "Rajada Focada",
+  "sub": null
+ },
+ {
+  "id": "SOL-10",
+  "name": "Batedor Selado",
+  "cls": "Soldados",
+  "tier": "MÉDIO",
+  "role": "MÉDICO",
+  "hp": 30,
+  "sp": 25,
+  "dg": 25,
+  "ar": 20,
+  "wp": [
+   "WPN-REV-002",
+   "WPN-FLA-002"
+  ],
+  "ps": "Fôlego de Combate",
+  "as": "Cura de Campo",
+  "sub": null
+ },
+ {
+  "id": "SOL-11",
+  "name": "Breacher Ágil",
+  "cls": "Soldados",
+  "tier": "MÉDIO",
+  "role": "FRANCO",
+  "hp": 25,
+  "sp": 40,
+  "dg": 25,
+  "ar": 10,
+  "wp": [
+   "WPN-ESP-004",
+   "WPN-CNT-002"
+  ],
+  "ps": "Fôlego de Combate",
+  "as": "Avanço Coberto",
+  "sub": null
+ },
+ {
+  "id": "SOL-12",
+  "name": "Atirador de Apoio",
+  "cls": "Soldados",
+  "tier": "MÉDIO",
+  "role": "SUPORTE",
+  "hp": 45,
+  "sp": 15,
+  "dg": 20,
+  "ar": 20,
+  "wp": [
+   "WPN-PRE-004",
+   "WPN-ARR-002"
+  ],
+  "ps": "Colete Reforçado",
+  "as": "Reforço de Esquadrão",
+  "sub": null
+ },
+ {
+  "id": "SOL-13",
+  "name": "Fuzileiro de Vanguarda",
+  "cls": "Soldados",
+  "tier": "ALTO",
+  "role": "SUPORTE",
+  "hp": 60,
+  "sp": 15,
+  "dg": 30,
+  "ar": 15,
+  "wp": [
+   "WPN-FUZ-004",
+   "WPN-EXP-004"
+  ],
+  "ps": "Colete Reforçado",
+  "as": "Reforço de Esquadrão",
+  "sub": null
+ },
+ {
+  "id": "SOL-14",
+  "name": "Batedor de Elite",
+  "cls": "Soldados",
+  "tier": "ALTO",
+  "role": "FRANCO",
+  "hp": 35,
+  "sp": 45,
+  "dg": 25,
+  "ar": 15,
+  "wp": [
+   "WPN-REV-004",
+   "WPN-FLA-004"
+  ],
+  "ps": "Fôlego de Combate",
+  "as": "Avanço Coberto",
+  "sub": null
+ },
+ {
+  "id": "SOL-15",
+  "name": "Breacher Pesado",
+  "cls": "Soldados",
+  "tier": "ALTO",
+  "role": "SUPORTE",
+  "hp": 50,
+  "sp": 15,
+  "dg": 35,
+  "ar": 20,
+  "wp": [
+   "WPN-ESP-002",
+   "WPN-CNT-004"
+  ],
+  "ps": "Colete Reforçado",
+  "as": "Reforço de Esquadrão",
+  "sub": null
+ },
+ {
+  "id": "SOL-16",
+  "name": "Atirador Convergente",
+  "cls": "Soldados",
+  "tier": "ALTO",
+  "role": "ASSALTO",
+  "hp": 30,
+  "sp": 20,
+  "dg": 55,
+  "ar": 15,
+  "wp": [
+   "WPN-PRE-002",
+   "WPN-ARR-004"
+  ],
+  "ps": "Mira Calibrada",
+  "as": "Rajada Focada",
+  "sub": null
+ },
+ {
+  "id": "ZUM-001",
+  "name": "Corrompido do Perimetro",
+  "cls": "Corrompidos(ZUM)",
+  "tier": "ALTO",
+  "role": "ASSALTO",
+  "hp": 50,
+  "sp": 15,
+  "dg": 40,
+  "ar": 15,
+  "ps": "Casca Radicular",
+  "as": "Agarre de Raiz",
+  "sub": "SUB-012-001"
+ },
+ {
+  "id": "ZUM-002",
+  "name": "Corrompido do Campo",
+  "cls": "Corrompidos(ZUM)",
+  "tier": "MEDIO",
+  "role": "ASSALTO",
+  "hp": 30,
+  "sp": 30,
+  "dg": 25,
+  "ar": 15,
+  "ps": "Casca Radicular",
+  "as": "Uivo Fragmentado",
+  "sub": "SUB-012-002"
+ },
+ {
+  "id": "ZUM-003",
+  "name": "Corrompido do Comando",
+  "cls": "Corrompidos(ZUM)",
+  "tier": "BAIXO",
+  "role": "ASSALTO",
+  "hp": 20,
+  "sp": 25,
+  "dg": 20,
+  "ar": 15,
+  "ps": "Casca Radicular",
+  "as": "Agarre de Raiz",
+  "sub": "SUB-012-003"
+ },
+ {
+  "id": "ZUM-004",
+  "name": "Corrompido das Raizes",
+  "cls": "Corrompidos(ZUM)",
+  "tier": "ALTO",
+  "role": "ASSALTO",
+  "hp": 55,
+  "sp": 10,
+  "dg": 35,
+  "ar": 20,
+  "ps": "Raiz Funda",
+  "as": "Agarre de Raiz",
+  "sub": "SUB-008-002"
+ },
+ {
+  "id": "ZUM-005",
+  "name": "Corrompido das Ruinas Cobertas",
+  "cls": "Corrompidos(ZUM)",
+  "tier": "MEDIO",
+  "role": "ASSALTO",
+  "hp": 25,
+  "sp": 35,
+  "dg": 25,
+  "ar": 15,
+  "ps": "Casca Radicular",
+  "as": "Uivo Fragmentado",
+  "sub": "SUB-019-002"
+ },
+ {
+  "id": "ZUM-006",
+  "name": "Corrompido das Fendas",
+  "cls": "Corrompidos(ZUM)",
+  "tier": "MEDIO",
+  "role": "ASSALTO",
+  "hp": 20,
+  "sp": 40,
+  "dg": 25,
+  "ar": 15,
+  "ps": "Casca Radicular",
+  "as": "Agarre de Raiz",
+  "sub": "SUB-011-006"
+ },
+ {
+  "id": "ZUM-007",
+  "name": "Corrompido dos Tuneis",
+  "cls": "Corrompidos(ZUM)",
+  "tier": "BAIXO",
+  "role": "ASSALTO",
+  "hp": 25,
+  "sp": 15,
+  "dg": 25,
+  "ar": 15,
+  "ps": "Raiz Funda",
+  "as": "Uivo Fragmentado",
+  "sub": "SUB-009-002"
+ },
+ {
+  "id": "ZUM-008",
+  "name": "Corrompido da Passagem",
+  "cls": "Corrompidos(ZUM)",
+  "tier": "MEDIO",
+  "role": "ASSALTO",
+  "hp": 30,
+  "sp": 20,
+  "dg": 30,
+  "ar": 20,
+  "ps": "Casca Radicular",
+  "as": "Agarre de Raiz",
+  "sub": "SUB-013-003"
+ },
+ {
+  "id": "ZUM-009",
+  "name": "Corrompido das Ruinas Antigas",
+  "cls": "Corrompidos(ZUM)",
+  "tier": "MEDIO",
+  "role": "ASSALTO",
+  "hp": 20,
+  "sp": 35,
+  "dg": 30,
+  "ar": 15,
+  "ps": "Casca Radicular",
+  "as": "Uivo Fragmentado",
+  "sub": "SUB-015-002"
+ },
+ {
+  "id": "ZUM-010",
+  "name": "Corrompido da Fenda Gelada",
+  "cls": "Corrompidos(ZUM)",
+  "tier": "ALTO",
+  "role": "ASSALTO",
+  "hp": 50,
+  "sp": 10,
+  "dg": 30,
+  "ar": 30,
+  "ps": "Raiz Funda",
+  "as": "Agarre de Raiz",
+  "sub": "SUB-016-003"
+ }
+]

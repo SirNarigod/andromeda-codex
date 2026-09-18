@@ -1,0 +1,14 @@
+{
+  "record_id": "STELLAR-CONTENT-ROUTING-CONSTITUTION-V1.1",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.1",
+  "status": "ACTIVE_R2_COMPATIBLE_DERIVATION",
+  "supersedes": "STELLAR_CONTENT_ROUTING_CONSTITUTION_V1_0",
+  "authority": {"scope": "CONTENT_ORGANIZATION", "r2": "READ_ONLY_ORIGIN"},
+  "dependencies": ["STELLAR_CANON_CONSTITUTION_V1_1.json", "STELLAR_FOUNDATION_INDEX_V1_7.json", "../../01_LORE/CONTENT_ROUTING_REGISTRY_V2.json"],
+  "invariants": ["ONE_CANONICAL_HOME_PER_CONTENT_ITEM", "ROUTING_REQUIRES_AUTHORITY_AND_PROVENANCE", "SIMULATION_READS_BUT_NEVER_WRITES_CANON", "EXTERNAL_TOOL_OUTPUT_IS_PENDING_DERIVATION"],
+  "prohibitions": ["NO_DUPLICATE_CANONICAL_COPY", "NO_RUNTIME_CANON_PROMOTION", "NO_EXTERNAL_IMPORT_CANON_WRITE", "NO_SEALED_CONTENT_EXPORT_BY_DEFAULT"],
+  "simulation_effects": ["LivingSim and Living Scale read routing references and filtered projections.", "Tool exports consume only permitted authority and spoiler scopes.", "FAC-009 and FAC-010 resolve only through their derived canonical homes and local-presence overlays."],
+  "allowed_states": ["CANON_R2_CONFIRMADO", "CANON_DERIVADO_ATIVO", "PENDING_DERIVATION", "EVIDENCIA_TECNICA_NAO_CANONICA"],
+  "story_generators": ["A workshop record connects labor, routes and a local conflict without duplicating its canon.", "A local chapter becomes playable only after consent and provenance are recorded.", "A simulation result becomes a proposal, never a silently promoted faction fact."]
+}

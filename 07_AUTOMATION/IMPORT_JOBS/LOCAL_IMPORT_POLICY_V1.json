@@ -1,0 +1,17 @@
+{
+  "record_id": "LOCAL_IMPORT_POLICY_V1",
+  "status": "ACTIVE",
+  "automatic_action": "MOVE_VALIDATED_MANIFEST_AND_DECLARED_FILES_TO_STAGING",
+  "reject_if": [
+    "missing_source_hash",
+    "unknown_niche",
+    "spoiler_violation",
+    "canon_write_attempt",
+    "missing_provenance"
+  ],
+  "external_destinations": {
+    "UE5": "PENDING_PROJECT_CONFIGURATION",
+    "BLENDER": "PENDING_PROJECT_CONFIGURATION",
+    "CANVA": "PENDING_CONNECTION_CONFIGURATION"
+  }
+}

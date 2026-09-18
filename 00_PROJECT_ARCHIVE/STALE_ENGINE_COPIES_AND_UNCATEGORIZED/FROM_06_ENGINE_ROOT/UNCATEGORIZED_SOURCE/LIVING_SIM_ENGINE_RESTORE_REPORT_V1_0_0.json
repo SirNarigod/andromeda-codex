@@ -1,0 +1,73 @@
+{
+  "record_id": "LIVING-SIM-ENGINE-RESTORE-REPORT-V1.0.0",
+  "version": "V1.0.0",
+  "source": "ANDROMEDA_LIVING_SIM_ENGINE_V1_0_0_BACKUP.zip",
+  "source_sha256": "6f12c9db0976e234ef55cdfe23b998c07240fa8d80eb0d0c247d12bbd16ebabc",
+  "restored_exclusively_from_backup": true,
+  "clean_restore_path": "LIVING_SIM_RESTORE_FINAL_V1_0_0",
+  "archive_crc": "PASS",
+  "manifest": {
+    "entries": 137,
+    "failures": [],
+    "sha256": "f08c71f58a46dae04b25bf5f3a7c751f5ba49e45b0a0b270efc67bccb6265ab1",
+    "status": "PASS"
+  },
+  "ledger": {
+    "failures": [],
+    "sha256": "5e3f97fa5adf75469b8c46671b0445e05e2ee68f813716958c40ce28d101f5b7",
+    "status": "PASS"
+  },
+  "regression": {
+    "python_tests": 672,
+    "passed": 672,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "javascript": {
+    "checks": 7,
+    "passed": 7,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "stage13_extended": {
+    "checks": 1403,
+    "passed": 1403,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "stage13_concurrency": {
+    "player_projections": 120,
+    "admin_projections": 120,
+    "writer_cycles": 60,
+    "atomic_snapshots": 17,
+    "errors": 0,
+    "status": "PASS"
+  },
+  "stage14_global": {
+    "checks": 43,
+    "passed": 43,
+    "status": "PASS"
+  },
+  "stage14_multiworld": {
+    "checks": 37,
+    "passed": 37,
+    "status": "PASS"
+  },
+  "corruption_matrix": {
+    "cases": 10,
+    "detected": 10,
+    "missed": 0,
+    "status": "PASS"
+  },
+  "release_audit": {
+    "checks": 58,
+    "passed": 58,
+    "status": "PASS"
+  },
+  "master_dependency": {
+    "sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "expected": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "status": "PASS"
+  },
+  "status": "PASS"
+}

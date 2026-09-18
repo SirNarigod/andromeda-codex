@@ -1,0 +1,17 @@
+{
+  "record_id": "R2_REBASE_LOT_010_PACKAGE_VALIDATION_V1_0",
+  "status": "PASS",
+  "package": "ANDROMEDA_CODEX_CLEAN.zip",
+  "validation_method": "ZipArchive opened every entry and read every non-empty stream; required Lot 10 paths were located.",
+  "checks": [
+    {"id":"ZIP-OPEN-001","result":"PASS","detail":"The clean delivery ZIP opens successfully."},
+    {"id":"ZIP-READ-001","result":"PASS","detail":"Every non-empty archive stream was read without error."},
+    {"id":"ZIP-CONTENT-001","result":"PASS","detail":"Both V1.1 laws, index V1.10, V5 projections, UE5 V5 manifest and Lot 10 validation are present."},
+    {"id":"ZIP-BACKUP-001","result":"PASS","detail":"Pre-Lot-10 clean ZIP is preserved at ANDROMEDA_CODEX_EVIDENCE/DELIVERY_HISTORY/ANDROMEDA_CODEX_CLEAN_PRE_LOT_010.zip."}
+  ],
+  "source_hashes": {
+    "andromeda_argp_zip": "998a1940856943aa68043f749c1e615900681b3cde8346c568d25dd6c79f9ce1",
+    "arpg_codex_zip": "16d602f767ee178b5ca25dec9ad801065d95f09d074358632bf5ed5f0f25e9c8",
+    "projeto_andromeda_r2_zip": "257e456a5d0396310ec2355b3dfc0f11f4e0a5264cf6e764591c8760f5070cb0"
+  }
+}

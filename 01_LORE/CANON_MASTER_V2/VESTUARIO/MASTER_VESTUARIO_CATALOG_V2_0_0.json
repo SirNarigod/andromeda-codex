@@ -1,0 +1,511 @@
+{
+  "record_id": "MASTER-VESTUARIO-CATALOG-V2.0.0",
+  "title": "Vestuário oficial do MASTER V2.0.1 (117 entradas, 5 sub-domínios)",
+  "provenance": {
+    "master_release": "ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE",
+    "master_release_zip_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "source_files": [
+      "01_CANON/ANDROMEDA_CODEX_CANON_MASTER_V2_0_0.json (entities, domain=vestuário/*, 5 sub-domínios)"
+    ],
+    "authority": "CANON_MASTER_V2_CONFIRMADO",
+    "namespace_check": "Todos os IDs sao compostos (VST-WEAR-FAC-, VST-WEAR-CUL-, VST-MAT-, VST-PROP-ACC-, VST-PROP-PROT-, VST-PROP-UNIF-, VST-REG-, VST-SPC-, ACCESSORY_INVENTORY-) - nenhum colide com nosso VST-001..008 (armadura, fase 29, formato bare de 3 digitos) nem com TRJ-001..014 (vestuario civil, fase 47).",
+    "stub_honesty_note": "VST-WEAR-FAC (46) e VST-WEAR-CUL (13) sao STUBS (name=summary=so o nome da facção/cultura) - confirmam que cada facção/cultura tem uma entrada de vestuario oficial, sem descricao adicional de peca. VST-REG (5) e VST-SPC (3) sao stubs vazios (name=proprio ID) sem nenhum conteudo. Nada foi inventado para preencher essas lacunas.",
+    "notable_finding": "ACCESSORY_INVENTORY (18) contem itens pessoais REAIS e especificos de personagens - objetos de Kenua Vaarn (PER-002: manga cortada em combate, bolsa, bainha de espada, casaco), de Serlis Aftermoon (PER-003: insignias de Mestre de Contencao) e de Kaenna Vor (PER-006: bracelete de contencao movel ligado a sua protese mecanica ja conhecida, lamina curta na cintura). Dois nomes NAO confirmados em nossos 11 PER-XXX aparecem: 'Ivara' (lamina de identificacao no peito) e 'Orun' (fio de orientacao na manga) - documentados aqui como achado honesto, sem inventar identidade ou biografia para eles."
+  },
+  "count_total": 117,
+  "faction_clothing_stub_confirmations": [
+    {
+      "id": "VST-WEAR-FAC-001",
+      "name": "Árvores Anciãs"
+    },
+    {
+      "id": "VST-WEAR-FAC-002",
+      "name": "Reis Magos"
+    },
+    {
+      "id": "VST-WEAR-FAC-003",
+      "name": "Conselho de Convergência"
+    },
+    {
+      "id": "VST-WEAR-FAC-004",
+      "name": "Vigília Radicular"
+    },
+    {
+      "id": "VST-WEAR-FAC-005",
+      "name": "Círculo Arcano-Botânico da Flor Fóssil"
+    },
+    {
+      "id": "VST-WEAR-FAC-006",
+      "name": "Guarda Ferroviária de Ortheon"
+    },
+    {
+      "id": "VST-WEAR-FAC-007",
+      "name": "Rede de Ofícios do Registro de Identidade da Convergência"
+    },
+    {
+      "id": "VST-WEAR-FAC-008",
+      "name": "Associação Ferroviária de Ortheon"
+    },
+    {
+      "id": "VST-WEAR-FAC-009",
+      "name": "Colegiado dos Ofícios de Oficina da Fronteira"
+    },
+    {
+      "id": "VST-WEAR-FAC-010",
+      "name": "Liga de Oficinas Licenciadas da Fronteira"
+    },
+    {
+      "id": "VST-WEAR-FAC-011",
+      "name": "Câmara das Armarias Rúnicas"
+    },
+    {
+      "id": "VST-WEAR-FAC-012",
+      "name": "Conselho Independente de Ética e Integridade de Pesquisa"
+    },
+    {
+      "id": "VST-WEAR-FAC-013",
+      "name": "Rede de Revisão e Replicação Científica"
+    },
+    {
+      "id": "VST-WEAR-FAC-014",
+      "name": "Rede Interterritorial de Coordenação de Emergências"
+    },
+    {
+      "id": "VST-WEAR-FAC-015",
+      "name": "Câmara Técnica de Operadores de Serviços Essenciais"
+    },
+    {
+      "id": "VST-WEAR-FAC-016",
+      "name": "Companhia de Manutenção de Redes Civis"
+    },
+    {
+      "id": "VST-WEAR-FAC-017",
+      "name": "Autoridade Operacional Ferroviária de Ortheon"
+    },
+    {
+      "id": "VST-WEAR-FAC-018",
+      "name": "Câmara de Custódia e Transferência de Cargas"
+    },
+    {
+      "id": "VST-WEAR-FAC-019",
+      "name": "Academia Técnica de Infraestrutura e Manutenção"
+    },
+    {
+      "id": "VST-WEAR-FAC-020",
+      "name": "Conselho de Credenciamento de Ofícios Críticos"
+    },
+    {
+      "id": "VST-WEAR-FAC-021",
+      "name": "Rede de Observatórios Ecológicos Civis"
+    },
+    {
+      "id": "VST-WEAR-FAC-022",
+      "name": "Câmara Ferral de Segurança Industrial"
+    },
+    {
+      "id": "VST-WEAR-FAC-023",
+      "name": "Junta de Segurança de Obras e Escavações"
+    },
+    {
+      "id": "VST-WEAR-FAC-024",
+      "name": "Rede de Armazéns e Suprimentos Registrados"
+    },
+    {
+      "id": "VST-WEAR-FAC-025",
+      "name": "Consórcio Civil de Retransmissão e Sinais"
+    },
+    {
+      "id": "VST-WEAR-FAC-026",
+      "name": "Conselho de Continuidade de Infraestrutura Crítica"
+    },
+    {
+      "id": "VST-WEAR-FAC-027",
+      "name": "Câmara de Auditoria e Integridade Pública"
+    },
+    {
+      "id": "VST-WEAR-FAC-028",
+      "name": "Rede de Perícia e Cadeia de Custódia"
+    },
+    {
+      "id": "VST-WEAR-FAC-029",
+      "name": "Rede Interterritorial de Arquivos e Bibliotecas"
+    },
+    {
+      "id": "VST-WEAR-FAC-030",
+      "name": "Liga de Imprensa e Publicadores Independentes"
+    },
+    {
+      "id": "VST-WEAR-FAC-031",
+      "name": "Rede Interterritorial de Referência Médica e Triagem"
+    },
+    {
+      "id": "VST-WEAR-FAC-032",
+      "name": "Rede de Vigilância Sanitária e Saúde Única"
+    },
+    {
+      "id": "VST-WEAR-FAC-033",
+      "name": "Colégio Veterinário de Saúde Interespecífica"
+    },
+    {
+      "id": "VST-WEAR-FAC-034",
+      "name": "Rede Interterritorial de Manifestos e Cooperação Aduaneira"
+    },
+    {
+      "id": "VST-WEAR-FAC-035",
+      "name": "Conselho de Operação e Ciclo de Vida de Edificações"
+    },
+    {
+      "id": "VST-WEAR-FAC-036",
+      "name": "Sindicato dos Ofícios de Manutenção e Utilidades"
+    },
+    {
+      "id": "VST-WEAR-FAC-037",
+      "name": "Câmara de Abastecimento e Entrepostos Alimentares"
+    },
+    {
+      "id": "VST-WEAR-FAC-038",
+      "name": "Colegiado de Operadores de Cozinhas e Hospitalidade"
+    },
+    {
+      "id": "VST-WEAR-FAC-039",
+      "name": "Câmara de Crédito Comercial e Garantias"
+    },
+    {
+      "id": "VST-WEAR-FAC-040",
+      "name": "Mutual de Riscos de Cargas e Serviços"
+    },
+    {
+      "id": "VST-WEAR-FAC-041",
+      "name": "Câmara de Operadores de Água e Saneamento"
+    },
+    {
+      "id": "VST-WEAR-FAC-042",
+      "name": "Rede de Cooperativas Produtivas Rurais Registradas"
+    },
+    {
+      "id": "VST-WEAR-FAC-043",
+      "name": "Câmara de Operadores de Mineração e Extração"
+    },
+    {
+      "id": "VST-WEAR-FAC-044",
+      "name": "Liga de Navegação Comercial e Operadores Marítimos"
+    },
+    {
+      "id": "VST-WEAR-FAC-045",
+      "name": "Guilda de Recuperadores e Desmontadores Registrados"
+    },
+    {
+      "id": "VST-WEAR-FAC-046",
+      "name": "Fórum Cívico de Usuários de Serviços Essenciais"
+    }
+  ],
+  "culture_clothing_stub_confirmations": [
+    {
+      "id": "VST-WEAR-CUL-001",
+      "name": "Luminari"
+    },
+    {
+      "id": "VST-WEAR-CUL-002",
+      "name": "Ferralinos"
+    },
+    {
+      "id": "VST-WEAR-CUL-003",
+      "name": "Ortheanos"
+    },
+    {
+      "id": "VST-WEAR-CUL-004",
+      "name": "Navyrianos"
+    },
+    {
+      "id": "VST-WEAR-CUL-005",
+      "name": "Ithrianos"
+    },
+    {
+      "id": "VST-WEAR-CUL-006",
+      "name": "Altavelanos"
+    },
+    {
+      "id": "VST-WEAR-CUL-007",
+      "name": "Rubravivos"
+    },
+    {
+      "id": "VST-WEAR-CUL-008",
+      "name": "Povos das Copas"
+    },
+    {
+      "id": "VST-WEAR-CUL-009",
+      "name": "Subcristalinos"
+    },
+    {
+      "id": "VST-WEAR-CUL-010",
+      "name": "Enoharianos"
+    },
+    {
+      "id": "VST-WEAR-CUL-011",
+      "name": "Fronteiriços"
+    },
+    {
+      "id": "VST-WEAR-CUL-012",
+      "name": "Deslocados e equipes de contenção"
+    },
+    {
+      "id": "VST-WEAR-CUL-013",
+      "name": "Seguidores e contratados"
+    }
+  ],
+  "regional_stubs_no_content": [
+    {
+      "id": "VST-REG-001",
+      "name": "VST-REG-001"
+    },
+    {
+      "id": "VST-REG-002",
+      "name": "VST-REG-002"
+    },
+    {
+      "id": "VST-REG-003",
+      "name": "VST-REG-003"
+    },
+    {
+      "id": "VST-REG-004",
+      "name": "VST-REG-004"
+    },
+    {
+      "id": "VST-REG-005",
+      "name": "VST-REG-005"
+    }
+  ],
+  "special_stubs_no_content": [
+    {
+      "id": "VST-SPC-009-001",
+      "name": "VST-SPC-009-001"
+    },
+    {
+      "id": "VST-SPC-009-004",
+      "name": "VST-SPC-009-004"
+    },
+    {
+      "id": "VST-SPC-009-005",
+      "name": "VST-SPC-009-005"
+    }
+  ],
+  "character_accessory_inventory": [
+    {
+      "id": "ACCESSORY_INVENTORY-001",
+      "name": "Manga/tecido de Kenua cortado em combate",
+      "character_ref": "PER-002"
+    },
+    {
+      "id": "ACCESSORY_INVENTORY-002",
+      "name": "Bolsa de Kenua",
+      "character_ref": "PER-002"
+    },
+    {
+      "id": "ACCESSORY_INVENTORY-003",
+      "name": "Insígnias de Mestre de Contenção de Serlis",
+      "character_ref": "PER-003"
+    },
+    {
+      "id": "ACCESSORY_INVENTORY-004",
+      "name": "Bainha da espada de Kenua",
+      "character_ref": "PER-002"
+    },
+    {
+      "id": "ACCESSORY_INVENTORY-005",
+      "name": "Casaco de Kenua",
+      "character_ref": "PER-002"
+    },
+    {
+      "id": "ACCESSORY_INVENTORY-006",
+      "name": "Bracelete de contenção móvel — construção vestível"
+    },
+    {
+      "id": "ACCESSORY_INVENTORY-007",
+      "name": "Fecho e placa de cerâmica do bracelete"
+    },
+    {
+      "id": "ACCESSORY_INVENTORY-008",
+      "name": "Tira de couro de bolsa antiga usada no bracelete"
+    },
+    {
+      "id": "ACCESSORY_INVENTORY-009",
+      "name": "Bainha reforçada com couro"
+    },
+    {
+      "id": "ACCESSORY_INVENTORY-010",
+      "name": "Bolsa impermeável de registro de campo"
+    },
+    {
+      "id": "ACCESSORY_INVENTORY-011",
+      "name": "Bracelete preso ao antebraço direito"
+    },
+    {
+      "id": "ACCESSORY_INVENTORY-012",
+      "name": "Lâmina curta presa à cintura de Kaenna",
+      "character_ref": "PER-006"
+    },
+    {
+      "id": "ACCESSORY_INVENTORY-013",
+      "name": "Faixa do bracelete de Kenua",
+      "character_ref": "PER-002"
+    },
+    {
+      "id": "ACCESSORY_INVENTORY-014",
+      "name": "Lâmina de identificação pendurada no peito de Ivara",
+      "unconfirmed_name_note": "Nome 'Ivara' nao consta nos 11 PER-XXX ja confirmados - possivel personagem secundario do canone completo, nao fabricado por nos."
+    },
+    {
+      "id": "ACCESSORY_INVENTORY-015",
+      "name": "Fio de orientação preso à manga de Orun",
+      "unconfirmed_name_note": "Nome 'Orun' nao consta nos 11 PER-XXX ja confirmados - possivel personagem secundario do canone completo, nao fabricado por nos."
+    },
+    {
+      "id": "ACCESSORY_INVENTORY-016",
+      "name": "Máscaras de fibra dos quatro invasores"
+    },
+    {
+      "id": "ACCESSORY_INVENTORY-017",
+      "name": "Padrão de máscara de antiga unidade de recuperação"
+    },
+    {
+      "id": "ACCESSORY_INVENTORY-018",
+      "name": "Manga cobrindo símbolo parcial de duas raízes enxertadas"
+    }
+  ],
+  "materials": [
+    {
+      "id": "VST-MAT-001",
+      "name": "Fibras vegetais"
+    },
+    {
+      "id": "VST-MAT-002",
+      "name": "Couro legal"
+    },
+    {
+      "id": "VST-MAT-003",
+      "name": "Materiais animais"
+    },
+    {
+      "id": "VST-MAT-004",
+      "name": "Tecidos industriais"
+    },
+    {
+      "id": "VST-MAT-005",
+      "name": "Metais"
+    },
+    {
+      "id": "VST-MAT-006",
+      "name": "Componentes rúnicos"
+    },
+    {
+      "id": "VST-MAT-007",
+      "name": "Tecidos rúnicos"
+    },
+    {
+      "id": "VST-MAT-008",
+      "name": "Junco-de-Fio"
+    }
+  ],
+  "wearable_accessory_systems": [
+    {
+      "id": "VST-PROP-ACC-001",
+      "name": "Interface de identificação vestível verificável"
+    },
+    {
+      "id": "VST-PROP-ACC-002",
+      "name": "Sistema de bolsas e transporte vestível"
+    },
+    {
+      "id": "VST-PROP-ACC-003",
+      "name": "Sistema de porte de armas e bainhas"
+    },
+    {
+      "id": "VST-PROP-ACC-004",
+      "name": "Sistema removível de orientação e evacuação"
+    },
+    {
+      "id": "VST-PROP-ACC-005",
+      "name": "Integração vestível do bracelete de contenção móvel"
+    },
+    {
+      "id": "VST-PROP-ACC-006",
+      "name": "Gramática de fixação, liberação e reparo vestível"
+    },
+    {
+      "id": "VST-PROP-ACC-007",
+      "name": "Leitura de identidade por padrão sem atribuição automática"
+    }
+  ],
+  "protective_gear_systems": [
+    {
+      "id": "VST-PROP-PROT-001",
+      "name": "Sistema de armadura/proteção corporal limitada"
+    },
+    {
+      "id": "VST-PROP-PROT-002",
+      "name": "Proteção de cabeça para contexto de Domínios"
+    },
+    {
+      "id": "VST-PROP-PROT-003",
+      "name": "Sistema respiratório e de barreira condicionado ao risco"
+    },
+    {
+      "id": "VST-PROP-PROT-004",
+      "name": "Proteção condicional de mãos"
+    },
+    {
+      "id": "VST-PROP-PROT-005",
+      "name": "Sistema de calçado funcional e de abandono seguro condicionado"
+    },
+    {
+      "id": "VST-PROP-PROT-006",
+      "name": "Vestuário de Bruma para umidade e secagem"
+    },
+    {
+      "id": "VST-PROP-PROT-007",
+      "name": "Proteção contra perda de calor por umidade/frio"
+    },
+    {
+      "id": "VST-PROP-PROT-008",
+      "name": "Proteção móvel de campo contra vento/poeira e baixa reflexão"
+    },
+    {
+      "id": "VST-PROP-PROT-009",
+      "name": "Sistema integrado de segurança para Domínios"
+    },
+    {
+      "id": "VST-PROP-PROT-010",
+      "name": "Proteção médica temporária e curativos vestíveis"
+    },
+    {
+      "id": "VST-PROP-PROT-011",
+      "name": "Proteção auditiva narrativa não universal"
+    }
+  ],
+  "professional_uniform_systems": [
+    {
+      "id": "VST-PROP-UNIF-001",
+      "name": "Sistema profissional ferroviário"
+    },
+    {
+      "id": "VST-PROP-UNIF-002",
+      "name": "Sistema profissional de rastreamento"
+    },
+    {
+      "id": "VST-PROP-UNIF-003",
+      "name": "Sistema profissional de investigação"
+    },
+    {
+      "id": "VST-PROP-UNIF-004",
+      "name": "Sistema profissional de runas"
+    },
+    {
+      "id": "VST-PROP-UNIF-005",
+      "name": "Sistema profissional de medicina e cuidado"
+    },
+    {
+      "id": "VST-PROP-UNIF-006",
+      "name": "Sistema profissional de pesquisa"
+    }
+  ]
+}

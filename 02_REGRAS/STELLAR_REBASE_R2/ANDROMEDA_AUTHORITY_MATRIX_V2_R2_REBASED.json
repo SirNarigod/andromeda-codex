@@ -1,0 +1,17 @@
+{
+  "record_id": "ANDROMEDA_AUTHORITY_MATRIX_V2_R2_REBASED",
+  "project": "ANDROMEDA CODEX",
+  "version": "V2",
+  "status": "ACTIVE_AFTER_R2_REBASE_LOT_001",
+  "decision_rule": "A lower-ranked source may expand the universe only when R2 compatibility, provenance and narrative yield are recorded. It may never silently retcon an R2 fact.",
+  "layers": [
+    {"rank": 1, "source": "ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2", "scope": ["lore", "characters", "episodes", "cosmology"], "authority": "IMMUTABLE_ORIGIN", "classification_default": "CANON_R2_CONFIRMADO"},
+    {"rank": 2, "source": "USER_APPROVED_R2_COMPATIBLE_DERIVATION", "scope": ["new stories", "interpretive rules", "localized expansion"], "authority": "ACTIVE_WITH_PROVENANCE", "classification_default": "CANON_DERIVADO_ATIVO"},
+    {"rank": 3, "source": "MASTER_V2_0_1_AND_LIVING_SIM_ENGINE_V1_0_0", "scope": ["technical contracts", "simulation compatibility"], "authority": "READ_ONLY_TECHNICAL_EXTENSION", "classification_default": "EVIDENCIA_TECNICA_NAO_CANONICA_UNLESS_PROMOTED"},
+    {"rank": 4, "source": "STAGE16_STAGE17_ARPG_RUNTIME_PROTOTYPES", "scope": ["implementation", "tests", "prototype state"], "authority": "DERIVED_EVIDENCE_ONLY", "classification_default": "EVIDENCIA_TECNICA_NAO_CANONICA"},
+    {"rank": 5, "source": "LLM_PLAYER_OR_UNAPPROVED_PROPOSAL", "scope": ["proposal"], "authority": "NO_CANON_AUTHORITY", "classification_default": "DIVERGENCIA_FORMAL_AGUARDANDO_DECISAO"}
+  ],
+  "lot_001": {"approved": true, "replaced_active_layers": ["Generic Kenua-binding prohibition", "Stellar model without R2 Amadon/Corrente Planetária facts"], "preserved_historical_versions": true, "physical_deletion": false},
+  "conflict_handling": {"r2_conflict": "CONFLITO_COM_R2_CONGELADO", "formal_rule_divergence": "DIVERGENCIA_FORMAL_AGUARDANDO_DECISAO", "technical_variant": "EVIDENCIA_TECNICA_NAO_CANONICA"},
+  "story_generators": ["Uma expansão local legítima cria novas histórias sem alterar episódios selados.", "Uma variante técnica revela uma hipótese, mas precisa de promoção para virar verdade do mundo.", "Um conflito congelado preserva o vestígio de uma visão rival para investigação futura."]
+}

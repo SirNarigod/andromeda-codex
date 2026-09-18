@@ -1,0 +1,133 @@
+{
+  "record_id": "ARPG-STAGE08-STRESS-V0.9.0",
+  "checks": 15,
+  "passed": 15,
+  "failed": 0,
+  "status": "PASS",
+  "metrics": {
+    "profiles": 4,
+    "zones": 13,
+    "weather_samples": 312,
+    "events": 44,
+    "runtime_waypoints": 5
+  },
+  "results": [
+    {
+      "name": "profiles",
+      "status": "PASS",
+      "detail": 4
+    },
+    {
+      "name": "zones",
+      "status": "PASS",
+      "detail": 13
+    },
+    {
+      "name": "weather_samples",
+      "status": "PASS",
+      "detail": 312
+    },
+    {
+      "name": "travel_0",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "travel_1",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "travel_2",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "travel_3",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "event_count",
+      "status": "PASS",
+      "detail": 44
+    },
+    {
+      "name": "boundary_routes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "verify_before",
+      "status": "PASS",
+      "detail": {
+        "status": "PASS",
+        "failures": [],
+        "zones": 13,
+        "dungeons": 9,
+        "waypoints": 6,
+        "boundary_gates": 3,
+        "canonical_catalog_counts": {
+          "biomes": 10,
+          "climate_zones": 8,
+          "basins": 6,
+          "rivers": 7,
+          "water_bodies": 8,
+          "aquifers": 4,
+          "regions": 8,
+          "locations": 18,
+          "routes": 25,
+          "territories": 13
+        },
+        "playable_country_count": 1,
+        "authority": "ARPG_WORLD_BIOMES_GAMEPLAY_DERIVATION"
+      }
+    },
+    {
+      "name": "verify_after",
+      "status": "PASS",
+      "detail": {
+        "status": "PASS",
+        "failures": [],
+        "zones": 13,
+        "dungeons": 9,
+        "waypoints": 6,
+        "boundary_gates": 3,
+        "canonical_catalog_counts": {
+          "biomes": 10,
+          "climate_zones": 8,
+          "basins": 6,
+          "rivers": 7,
+          "water_bodies": 8,
+          "aquifers": 4,
+          "regions": 8,
+          "locations": 18,
+          "routes": 25,
+          "territories": 13
+        },
+        "playable_country_count": 1,
+        "authority": "ARPG_WORLD_BIOMES_GAMEPLAY_DERIVATION"
+      }
+    },
+    {
+      "name": "restore_rt:player_profile:78c7262a-eb6c-483a-98d4-b4dac4ba4132",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "restore_rt:player_profile:cfbc503d-10ec-4ca2-bc97-d7ff0f5a8d0e",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "restore_rt:player_profile:1e242f6f-5b83-4176-808a-1f83fb8ee145",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "restore_rt:player_profile:bc3c138f-b1c2-41f7-9d53-7b2236c83dfe",
+      "status": "PASS",
+      "detail": null
+    }
+  ]
+}

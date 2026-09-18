@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-CORRUPTED-RESOURCES-DEV-V1.0",
+  "title": "Recursos Unicos da Corrupcao - taxa de morte e corrupcao (fase 58)",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "r2_guard": "Todos os 4 recursos sao unicos as 10 subregioes corrompidas (fase 57, portao autoral) - nunca aparecem fora delas. Respeitam NO_HAZARD_AS_DEFAULT_LOOT: nenhum e loot automatico/passivo, todos exigem risco real (equipamento, combate ou tempo). Nenhum revela fato historico selado sobre a Raiz Profunda alem do ja publico em COR-001.",
+  "resources": [
+    {
+      "resource_id": "COR-RES-001",
+      "name": "Seiva Corrompida",
+      "category": "CORRUPTED_HAZARD",
+      "source_note": "Extraida de flora corrompida (FLO-007-CORROMPIDA, FLO-002-CORROMPIDA, FLO-006-CORROMPIDA)",
+      "extraction_risk": "Exposicao prolongada causa contaminacao progressiva - extracao exige equipamento de protecao (EQP-009/010 ja catalogados) e nunca e loot automatico de flora comum (NO_HAZARD_AS_DEFAULT_LOOT).",
+      "price_tier": "MUITO_ALTO",
+      "use_hint": "Insumo de altissimo valor para a futura classe jogavel Corrompidos (fase 60) e para pesquisa de contencao.",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-012"
+      ],
+      "currency_note": "Troca restrita sob contenção - não circula como Stavias nem em mercado aberto."
+    },
+    {
+      "resource_id": "COR-RES-002",
+      "name": "Nucleo de Enraizamento",
+      "category": "CORRUPTED_HAZARD",
+      "source_note": "Raro, obtido apenas ao enfrentar uma das 7 criaturas corrompidas (CRI-020..026) - nunca dropado por flora ou fauna comum.",
+      "extraction_risk": "Requer derrotar a criatura hospedeira - risco de combate real, nao coleta passiva.",
+      "price_tier": "ALTO",
+      "use_hint": "Componente de pesquisa da Vigilia Radicular (FAC-004) e possivel insumo de habilidade da futura classe Corrompidos.",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-012"
+      ],
+      "currency_note": "Troca restrita sob contenção - não circula como Stavias nem em mercado aberto."
+    },
+    {
+      "resource_id": "COR-RES-003",
+      "name": "Cinza Viva",
+      "category": "CORRUPTED_HAZARD",
+      "source_note": "Encontrada perto de ruinas corrompidas (SUB-015-002 Ruinas de Antes-do-Pacto, SUB-019-002 Ruinas Cobertas).",
+      "extraction_risk": "Continua a se mover por horas apos a coleta - deve ser selada rapidamente ou se dissipa sem valor.",
+      "price_tier": "ALTO",
+      "use_hint": "Usada em pesquisa arqueologica sobre a natureza da corrupcao, sem revelar fato historico selado (NO_NAMED_HISTORICAL_CIVILIZATION).",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-012"
+      ],
+      "currency_note": "Troca restrita sob contenção - não circula como Stavias nem em mercado aberto."
+    },
+    {
+      "resource_id": "COR-RES-004",
+      "name": "Sangue de Raiz",
+      "category": "CORRUPTED_HAZARD",
+      "source_note": "Fonte mais concentrada e perigosa, associada apenas ao Perimetro de Contencao Alfa (SUB-012-001), o ponto de maior intensidade de corrupcao (ALTA).",
+      "extraction_risk": "Taxa de morte e corrupcao mais alta do jogo - extracao sem supervisao da Vigilia Radicular (FAC-004) e considerada de altissimo risco fatal.",
+      "price_tier": "MUITO_ALTO",
+      "use_hint": "Insumo central da futura classe jogavel Corrompidos (fase 60) - nao disponivel para uso civil comum.",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-012"
+      ],
+      "currency_note": "Troca restrita sob contenção - não circula como Stavias nem em mercado aberto."
+    }
+  ]
+}

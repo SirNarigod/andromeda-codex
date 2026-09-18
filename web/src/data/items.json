@@ -1,0 +1,445 @@
+[
+ {
+  "id": "MED-001",
+  "name": "Pomada de Ervas",
+  "cat": "MEDICAMENTO/CURATIVO",
+  "wt": 0.18,
+  "price": "BAIXO",
+  "prod": "EST-012",
+  "desc": "Curativo — AND-CIV-002 (Sintetizador Farmacêutico).",
+  "link": "AND-CIV-002 (Sintetizador Farmacêutico)",
+  "fx": {
+   "heal_pct": 30
+  }
+ },
+ {
+  "id": "MED-002",
+  "name": "Antitóxico de Vidro",
+  "cat": "MEDICAMENTO/ANTITOXINA",
+  "wt": 0.27,
+  "price": "ALTO",
+  "prod": "EST-025",
+  "desc": "Antitoxina — trata a paralisia da toxina de Vespa-de-Vidro (CRI-010).",
+  "link": "trata a paralisia da toxina de Vespa-de-Vidro (CRI-010)",
+  "fx": {
+   "cure": [
+    "ESPORO"
+   ]
+  }
+ },
+ {
+  "id": "MED-003",
+  "name": "Cataplasma de Besouro",
+  "cat": "MEDICAMENTO/ANTITOXINA",
+  "wt": 0.27,
+  "price": "MÉDIO",
+  "prod": "EST-025",
+  "desc": "Antitoxina — trata a queimadura da secreção de Besouro-Rubro (CRI-011).",
+  "link": "trata a queimadura da secreção de Besouro-Rubro (CRI-011)",
+  "fx": {
+   "cure": [
+    "ESPORO"
+   ]
+  }
+ },
+ {
+  "id": "MED-004",
+  "name": "Elixir de Restauração",
+  "cat": "MEDICAMENTO/CURATIVO",
+  "wt": 0.18,
+  "price": "ALTO",
+  "prod": "EST-044",
+  "desc": "Curativo — classe Magos; Ateliê de Encantamento.",
+  "link": "classe Magos; Ateliê de Encantamento",
+  "fx": {
+   "heal_pct": 30
+  }
+ },
+ {
+  "id": "MED-005",
+  "name": "Tônico de Raizel",
+  "cat": "MEDICAMENTO/TÔNICO",
+  "wt": 0.36,
+  "price": "BAIXO",
+  "prod": "EST-041",
+  "desc": "Tônico — distribuído a deslocados nas Tendas de Acolhimento.",
+  "link": "distribuído a deslocados nas Tendas de Acolhimento",
+  "fx": {
+   "none": true
+  }
+ },
+ {
+  "id": "MED-006",
+  "name": "Analgésico de Jardim",
+  "cat": "MEDICAMENTO/CURATIVO",
+  "wt": 0.18,
+  "price": "BAIXO",
+  "prod": "EST-012",
+  "desc": "Curativo — AND-CIV-001/002 (Médico).",
+  "link": "AND-CIV-001/002 (Médico)",
+  "fx": {
+   "heal_pct": 30
+  }
+ },
+ {
+  "id": "MED-007",
+  "name": "Soro Reidratante",
+  "cat": "MEDICAMENTO/TÔNICO",
+  "wt": 0.36,
+  "price": "BAIXO",
+  "prod": "EST-025",
+  "desc": "Tônico — uso geral em enfermaria.",
+  "link": "uso geral em enfermaria",
+  "fx": {
+   "none": true
+  }
+ },
+ {
+  "id": "MED-008",
+  "name": "Kit de Sutura Sintética",
+  "cat": "MEDICAMENTO/CIRÚRGICO",
+  "wt": 0.46,
+  "price": "MÉDIO",
+  "prod": "EST-025",
+  "desc": "Cirúrgico — AND-CIV-001 (Assistente Diagnóstico).",
+  "link": "AND-CIV-001 (Assistente Diagnóstico)",
+  "fx": {
+   "none": true
+  }
+ },
+ {
+  "id": "EQP-001",
+  "name": "Kit de Primeiros Socorros",
+  "cat": "EQUIP/Médico",
+  "wt": 0.3,
+  "price": "MÉDIO",
+  "prod": "EST-025",
+  "desc": "Equipamento médico, AND-CIV-001/002 (Médico).",
+  "link": "AND-CIV-001/002 (Médico)",
+  "fx": {
+   "heal_pct": 30,
+   "cure": [
+    "ESPORO"
+   ]
+  }
+ },
+ {
+  "id": "EQP-002",
+  "name": "Mochila de Carga",
+  "cat": "EQUIP/Logística",
+  "wt": 1.53,
+  "price": "BAIXO",
+  "prod": "EST-004",
+  "desc": "Equipamento de logística, AND-CIV-003 (Suporte).",
+  "link": "AND-CIV-003 (Suporte)",
+  "fx": {
+   "pack": 20
+  }
+ },
+ {
+  "id": "EQP-003",
+  "name": "Rádio de Campo",
+  "cat": "EQUIP/Comunicação",
+  "wt": 0.41,
+  "price": "ALTO",
+  "prod": "EST-019",
+  "desc": "Equipamento de comunicação, AND-CIV-004 (Suporte).",
+  "link": "AND-CIV-004 (Suporte)",
+  "fx": {
+   "none": true
+  }
+ },
+ {
+  "id": "EQP-004",
+  "name": "Corda de Escalada",
+  "cat": "EQUIP/Logística",
+  "wt": 1.53,
+  "price": "BAIXO",
+  "prod": "EST-004",
+  "desc": "Equipamento de logística, uso geral em terreno acidentado (ex. Fendas da Névoa).",
+  "link": "uso geral em terreno acidentado (ex. Fendas da Névoa)",
+  "fx": {
+   "none": true
+  }
+ },
+ {
+  "id": "EQP-005",
+  "name": "Barraca de Campanha",
+  "cat": "EQUIP/Abrigo",
+  "wt": 2.02,
+  "price": "BAIXO",
+  "prod": "EST-004",
+  "desc": "Equipamento de abrigo, construções ACAMPAMENTO já catalogadas (EST-007/008/038/041).",
+  "link": "construções ACAMPAMENTO já catalogadas (EST-007/008/038/041)",
+  "fx": {
+   "none": true
+  }
+ },
+ {
+  "id": "EQP-006",
+  "name": "Kit de Reparo",
+  "cat": "EQUIP/Manutenção",
+  "wt": 1.02,
+  "price": "MÉDIO",
+  "prod": "EST-004",
+  "desc": "Equipamento de manutenção, AND-CIV-005/006 (Trabalho).",
+  "link": "AND-CIV-005/006 (Trabalho)",
+  "fx": {
+   "none": true
+  }
+ },
+ {
+  "id": "EQP-007",
+  "name": "Lanterna Rúnica",
+  "cat": "EQUIP/Percepção",
+  "wt": 0.31,
+  "price": "MÉDIO",
+  "prod": "EST-044",
+  "desc": "Equipamento de percepção, uso geral em áreas escuras/subterrâneas (Liga Subcristal, Fendas da Névoa).",
+  "link": "uso geral em áreas escuras/subterrâneas (Liga Subcristal, Fendas da Névoa)",
+  "fx": {
+   "none": true
+  }
+ },
+ {
+  "id": "EQP-008",
+  "name": "Máscara de Filtragem",
+  "cat": "EQUIP/Proteção",
+  "wt": 0.31,
+  "price": "MÉDIO",
+  "prod": "EST-004",
+  "desc": "Equipamento de proteção, proteção em zonas de risco biológico (Vespa-de-Vidro CRI-010, Besouro-Rubro CRI-011).",
+  "link": "proteção em zonas de risco biológico (Vespa-de-Vidro CRI-010, Besouro-Rubro CRI-011)",
+  "fx": {
+   "none": true
+  }
+ },
+ {
+  "id": "EQP-009",
+  "name": "Máscara de Fumaça",
+  "cat": "EQUIP/Proteção",
+  "wt": 0.31,
+  "price": "MÉDIO",
+  "prod": "EST-049",
+  "desc": "Equipamento de proteção, CIV-016 (Torvin, EST-049), risco térmico/vapor de TER-014.",
+  "link": "CIV-016 (Torvin, EST-049), risco térmico/vapor de TER-014",
+  "fx": {
+   "none": true
+  }
+ },
+ {
+  "id": "EQP-010",
+  "name": "Manto Refratário",
+  "cat": "EQUIP/Proteção",
+  "wt": 0.32,
+  "price": "ALTO",
+  "prod": "EST-049",
+  "desc": "Equipamento de proteção, Proteção térmica para extração na Caldeira Ativa (SUB-014-001).",
+  "link": "Proteção térmica para extração na Caldeira Ativa (SUB-014-001)",
+  "fx": {
+   "none": true
+  }
+ },
+ {
+  "id": "VST-001",
+  "name": "Couraça de Fronteira (leve)",
+  "cat": "ARMADURA/Nativos",
+  "wt": 5.6,
+  "price": "BAIXO",
+  "prod": "Oficina de Charneira",
+  "desc": "Armadura baixa da classe Nativos, feita de Couro de Manada — concede +10 de bônus de armadura.",
+  "link": "Oficina de Charneira",
+  "fx": {
+   "armor": 10,
+   "cls": "Nativos",
+   "tier": "BAIXO"
+  }
+ },
+ {
+  "id": "VST-002",
+  "name": "Couraça de Fronteira (reforçada)",
+  "cat": "ARMADURA/Nativos",
+  "wt": 14.0,
+  "price": "ALTO",
+  "prod": "Oficina de Charneira",
+  "desc": "Armadura alta da classe Nativos, feita de Couro de Manada, Osso Rúnico — concede +20 de bônus de armadura.",
+  "link": "Oficina de Charneira",
+  "fx": {
+   "armor": 20,
+   "cls": "Nativos",
+   "tier": "ALTO"
+  }
+ },
+ {
+  "id": "VST-003",
+  "name": "Uniforme de Guarnição",
+  "cat": "ARMADURA/Soldados",
+  "wt": 6.8,
+  "price": "BAIXO",
+  "prod": "Forja Real de Kharveth",
+  "desc": "Armadura baixa da classe Soldados, feita de Madeira de Copas, Ferral Bruto — concede +10 de bônus de armadura.",
+  "link": "Forja Real de Kharveth",
+  "fx": {
+   "armor": 10,
+   "cls": "Soldados",
+   "tier": "BAIXO"
+  }
+ },
+ {
+  "id": "VST-004",
+  "name": "Blindagem de Guarnição",
+  "cat": "ARMADURA/Soldados",
+  "wt": 15.2,
+  "price": "ALTO",
+  "prod": "Forja Real de Kharveth",
+  "desc": "Armadura alta da classe Soldados, feita de Ferral Bruto, Titanita Cinzenta — concede +20 de bônus de armadura.",
+  "link": "Forja Real de Kharveth",
+  "fx": {
+   "armor": 20,
+   "cls": "Soldados",
+   "tier": "ALTO"
+  }
+ },
+ {
+  "id": "VST-005",
+  "name": "Chassi de Placa Leve",
+  "cat": "ARMADURA/Androids",
+  "wt": 6.2,
+  "price": "BAIXO",
+  "prod": "Oficina de Fusão Tecnomágica",
+  "desc": "Armadura baixa da classe Androids, feita de Robotita Azul — concede +10 de bônus de armadura.",
+  "link": "Oficina de Fusão Tecnomágica",
+  "fx": {
+   "armor": 10,
+   "cls": "Androids",
+   "tier": "BAIXO"
+  }
+ },
+ {
+  "id": "VST-006",
+  "name": "Chassi de Placa Reforçada",
+  "cat": "ARMADURA/Androids",
+  "wt": 14.6,
+  "price": "ALTO",
+  "prod": "Oficina de Fusão Tecnomágica",
+  "desc": "Armadura alta da classe Androids, feita de Robotita Azul, Titanita Cinzenta — concede +20 de bônus de armadura.",
+  "link": "Oficina de Fusão Tecnomágica",
+  "fx": {
+   "armor": 20,
+   "cls": "Androids",
+   "tier": "ALTO"
+  }
+ },
+ {
+  "id": "VST-007",
+  "name": "Manto de Aprendiz",
+  "cat": "ARMADURA/Magos",
+  "wt": 4.8,
+  "price": "BAIXO",
+  "prod": "Academia da Vertente",
+  "desc": "Armadura baixa da classe Magos, feita de Pergaminho de Fibra — concede +10 de bônus de armadura.",
+  "link": "Academia da Vertente",
+  "fx": {
+   "armor": 10,
+   "cls": "Magos",
+   "tier": "BAIXO"
+  }
+ },
+ {
+  "id": "VST-008",
+  "name": "Manto Rúnico de Convergência",
+  "cat": "ARMADURA/Magos",
+  "wt": 13.2,
+  "price": "ALTO",
+  "prod": "Ateliê de Encantamento da Vertente",
+  "desc": "Armadura alta da classe Magos, feita de Pergaminho de Fibra, Cristal Rúnico — concede +20 de bônus de armadura.",
+  "link": "Ateliê de Encantamento da Vertente",
+  "fx": {
+   "armor": 20,
+   "cls": "Magos",
+   "tier": "ALTO"
+  }
+ },
+ {
+  "id": "VARGA-ITEM-001",
+  "name": "Lâmina de travessia comum",
+  "cat": "KIT_VARGA/MELEE_TOOL",
+  "wt": null,
+  "price": null,
+  "prod": null,
+  "desc": "close-range defense and route work",
+  "link": null,
+  "fx": {
+   "none": true
+  }
+ },
+ {
+  "id": "VARGA-ITEM-002",
+  "name": "Arma curta de serviço",
+  "cat": "KIT_VARGA/RANGED_TOOL",
+  "wt": null,
+  "price": null,
+  "prod": null,
+  "desc": "situational defense and interruption",
+  "link": null,
+  "fx": {
+   "none": true
+  }
+ },
+ {
+  "id": "VARGA-ITEM-003",
+  "name": "Kit de contenção de campo",
+  "cat": "KIT_VARGA/NONLETHAL_TOOL",
+  "wt": null,
+  "price": null,
+  "prod": null,
+  "desc": "marking, distance control and nest containment",
+  "link": null,
+  "fx": {
+   "none": true
+  }
+ },
+ {
+  "id": "MOCHILA-MEDIA",
+  "name": "Mochila de Viagem",
+  "cat": "EQUIP/Logística",
+  "wt": 1.1,
+  "price": "MÉDIO",
+  "prod": null,
+  "desc": "Mochila ampliada de couro e armação leve.",
+  "link": null,
+  "fx": {
+   "pack": 35
+  }
+ },
+ {
+  "id": "MOCHILA-GRANDE",
+  "name": "Mochila de Expedição",
+  "cat": "EQUIP/Logística",
+  "wt": 1.9,
+  "price": "ALTO",
+  "prod": null,
+  "desc": "Mochila de expedição com armação reforçada.",
+  "link": null,
+  "fx": {
+   "pack": 50
+  }
+ },
+ {
+  "id": "KIT-VARGA",
+  "name": "Kit de Varga (bundle)",
+  "cat": "KIT_VARGA/BUNDLE",
+  "wt": 1.0,
+  "price": "MÉDIO",
+  "prod": null,
+  "desc": "Lâmina de travessia + arma curta de serviço + kit de contenção de campo.",
+  "link": null,
+  "fx": {
+   "kit": [
+    "VARGA-ITEM-001",
+    "VARGA-ITEM-002",
+    "VARGA-ITEM-003"
+   ]
+  }
+ }
+]

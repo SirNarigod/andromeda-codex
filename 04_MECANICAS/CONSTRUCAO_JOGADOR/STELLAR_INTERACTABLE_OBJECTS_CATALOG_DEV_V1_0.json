@@ -1,0 +1,150 @@
+{
+  "record_id": "STELLAR-INTERACTABLE-OBJECTS-CATALOG-DEV-V1.0",
+  "title": "Objetos Interativos e Verbos de Interação (interior das construções)",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "r2_guard": "Camada aditiva de design de interação, referenciando construções (EST-XXX), peças de construção (BLD-PORTA/JANELA) e catálogos de itens já existentes (PRT-/FOOD-/WPN-) - nenhum item novo é inventado fora do vocabulário de mobília abaixo.",
+  "interaction_verbs": [
+    "ABRIR",
+    "FECHAR",
+    "SENTAR",
+    "LEVANTAR",
+    "PEGAR",
+    "SOLTAR",
+    "COMER",
+    "BEBER",
+    "DORMIR",
+    "USAR"
+  ],
+  "furniture_catalog": [
+    {
+      "furniture_id": "FUR-001",
+      "name": "Porta",
+      "interaction_verbs": [
+        "ABRIR",
+        "FECHAR"
+      ],
+      "notable_link": "BLD-PORTA-T1/T2/T3 (STELLAR_BUILDING_PIECES_CATALOG_DEV_V1_0.json)"
+    },
+    {
+      "furniture_id": "FUR-002",
+      "name": "Janela",
+      "interaction_verbs": [
+        "ABRIR",
+        "FECHAR"
+      ],
+      "notable_link": "BLD-JANELA-T1/T2/T3 (STELLAR_BUILDING_PIECES_CATALOG_DEV_V1_0.json)"
+    },
+    {
+      "furniture_id": "FUR-003",
+      "name": "Mesa",
+      "interaction_verbs": [
+        "USAR"
+      ],
+      "notable_link": "superfície para depositar/organizar itens"
+    },
+    {
+      "furniture_id": "FUR-004",
+      "name": "Cadeira/Banco",
+      "interaction_verbs": [
+        "SENTAR",
+        "LEVANTAR"
+      ],
+      "notable_link": null
+    },
+    {
+      "furniture_id": "FUR-005",
+      "name": "Cama/Beliche",
+      "interaction_verbs": [
+        "DORMIR",
+        "LEVANTAR"
+      ],
+      "notable_link": null
+    },
+    {
+      "furniture_id": "FUR-006",
+      "name": "Baú/Armário",
+      "interaction_verbs": [
+        "ABRIR",
+        "FECHAR",
+        "PEGAR"
+      ],
+      "notable_link": "armazena itens do inventário do local"
+    },
+    {
+      "furniture_id": "FUR-007",
+      "name": "Prateleira",
+      "interaction_verbs": [
+        "PEGAR"
+      ],
+      "notable_link": "exposição de itens à venda (construções COMERCIAL/LOJA)"
+    },
+    {
+      "furniture_id": "FUR-008",
+      "name": "Fogão/Fogueira",
+      "interaction_verbs": [
+        "USAR"
+      ],
+      "notable_link": "preparo de pratos (STELLAR_PREPARED_FOOD_DEV_V1_0.json / STELLAR_DERIVED_FOOD_DEV_V1_0.json)"
+    },
+    {
+      "furniture_id": "FUR-009",
+      "name": "Balcão",
+      "interaction_verbs": [
+        "USAR"
+      ],
+      "notable_link": "compra/venda — reflete economic_role.is_vendor da construção"
+    },
+    {
+      "furniture_id": "FUR-010",
+      "name": "Bancada de Trabalho",
+      "interaction_verbs": [
+        "USAR"
+      ],
+      "notable_link": "produção — reflete STELLAR_PRODUCTION_RECIPES_DEV_V1_0.json"
+    },
+    {
+      "furniture_id": "FUR-011",
+      "name": "Prato Servido",
+      "interaction_verbs": [
+        "COMER",
+        "PEGAR"
+      ],
+      "notable_link": "PRT-XXX/FOOD-XXX (alimento preparado real)"
+    },
+    {
+      "furniture_id": "FUR-012",
+      "name": "Jarro/Copo",
+      "interaction_verbs": [
+        "BEBER",
+        "PEGAR"
+      ],
+      "notable_link": "FOOD-005/006/007 (bebidas já catalogadas)"
+    },
+    {
+      "furniture_id": "FUR-013",
+      "name": "Tocha/Lanterna",
+      "interaction_verbs": [
+        "USAR"
+      ],
+      "notable_link": null
+    },
+    {
+      "furniture_id": "FUR-014",
+      "name": "Suporte de Armas/Arsenal",
+      "interaction_verbs": [
+        "ABRIR",
+        "PEGAR"
+      ],
+      "notable_link": "WPN-XXX (construções MILITAR)"
+    },
+    {
+      "furniture_id": "FUR-015",
+      "name": "Arquivo/Estante de Documentos",
+      "interaction_verbs": [
+        "ABRIR",
+        "PEGAR"
+      ],
+      "notable_link": "construções INSTITUCIONAL"
+    }
+  ]
+}

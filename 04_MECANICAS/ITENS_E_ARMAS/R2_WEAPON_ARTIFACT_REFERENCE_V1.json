@@ -1,0 +1,68 @@
+{
+  "record_id": "R2_WEAPON_ARTIFACT_REFERENCE_V1",
+  "scope": "REFERENCE_ONLY",
+  "source_category": "ART",
+  "canonical_references": [
+    {
+      "id": "ART-001",
+      "path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-001__espinho-negro.json"
+    },
+    {
+      "id": "ART-002",
+      "path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-002__espada-de-kenua.json"
+    },
+    {
+      "id": "ART-003",
+      "path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-003__marcador-de-rota.json"
+    },
+    {
+      "id": "ART-004",
+      "path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-004__sistema-de-armamentos.json"
+    },
+    {
+      "id": "ART-005",
+      "path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-005__laminas.json"
+    },
+    {
+      "id": "ART-006",
+      "path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-006__fuzis.json"
+    },
+    {
+      "id": "ART-007",
+      "path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-007__revolveres.json"
+    },
+    {
+      "id": "ART-008",
+      "path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-008__espingardas.json"
+    },
+    {
+      "id": "ART-009",
+      "path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-009__fuzis-de-precisao.json"
+    },
+    {
+      "id": "ART-010",
+      "path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-010__armas-de-arremesso.json"
+    },
+    {
+      "id": "ART-011",
+      "path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-011__armas-de-explosao.json"
+    },
+    {
+      "id": "ART-012",
+      "path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-012__armas-de-contencao.json"
+    },
+    {
+      "id": "ART-013",
+      "path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-013__dispositivos-de-flash.json"
+    },
+    {
+      "id": "ART-014",
+      "path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-014__armas-improvisadas.json"
+    },
+    {
+      "id": "ART-015",
+      "path": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-015__armerias-runicas.json"
+    }
+  ],
+  "rule": "Weapon gameplay values are runtime-only; canonical identity remains in Lore."
+}

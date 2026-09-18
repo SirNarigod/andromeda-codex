@@ -1,0 +1,42 @@
+{
+  "record_id": "SUB-019-001",
+  "record_kind": "DERIVED_SUBREGION_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Dossel Verde",
+  "parent_political_unit": "TER-019",
+  "provenance": {
+    "approval": "AUTHORIAL_DECISION_FASE_52",
+    "r2_anchors": [],
+    "compatibility": "Territorio 100% novo por decisao explicita do autor (fase 52) - distinto de TER-008 Santuarios do Coracao (territorio sagrado dos Povos das Copas) e TER-015 Vale das Ruinas (ruinas em deserto); ruina aqui e anonima, sem civilizacao historica confirmada."
+  },
+  "function": "Copa densa e continua da selva, trilhas conhecidas apenas por guias experientes.",
+  "locality_references": [
+    "LOC-019-001"
+  ],
+  "permitted_catalog_links": {
+    "npc_roles": [],
+    "professions": [
+      "guia de selva"
+    ],
+    "encounters": [],
+    "resources": [
+      "AGZ-103",
+      "FLO-018",
+      "EST-064"
+    ]
+  },
+  "local_conflicts": [
+    "conhecimento de trilha versus imprevisibilidade da vida selvagem"
+  ],
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY_BEYOND_FASE_52_GATE",
+    "NO_AUTOMATIC_KENUA_SCENE",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_FIXED_BORDER_COORDINATE",
+    "NO_NAMED_HISTORICAL_CIVILIZATION"
+  ],
+  "story_generators": [
+    "Uma descoberta em Dossel Verde testa o equilibrio entre curiosidade e respeito pela selva."
+  ]
+}

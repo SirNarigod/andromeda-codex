@@ -1,0 +1,32 @@
+{
+  "record_id": "ARPG-VERTICAL-SLICE-ASSEMBLY-CONTRACT-V0.5.0",
+  "stage": "16A/23",
+  "status": "PRE_GODOT",
+  "authority": "ANDROMEDA_ARPG_STAGE16A_VERTICAL_SLICE_ASSEMBLY_PRE_GODOT",
+  "flow": [
+    "SPAWN",
+    "EXPLORE_TERRAIN_STAMINA_LOAD",
+    "NPC_REALTIME_DIALOGUE",
+    "QUEST_OBJECTIVE",
+    "COMBAT",
+    "ENEMY_GROUND_LOOT",
+    "PICKUP_TO_INVENTORY",
+    "GATHERING_TO_GROUND_LOOT",
+    "VENDOR_INTERACTION",
+    "SAVE",
+    "PLAYER_DEATH",
+    "RESPAWN"
+  ],
+  "physical_resource_rule": "PHYSICAL_WORLD_SOURCE_MUST_GROUND_LOOT_BEFORE_INVENTORY",
+  "gathering_stage16a_delivery": "GROUND_LOOT",
+  "gathering_legacy_delivery": "INVENTORY_BACKWARD_COMPATIBILITY_ONLY",
+  "pickup_radius_m": 0.5,
+  "auto_pickup_preference": "PERSISTENT_PER_PROFILE",
+  "terrain_stamina_authority": "LIVING_CONTINUOUS_MOVEMENT_STAMINA_WITH_STAGE16A_EXTERNAL_COST_BRIDGE",
+  "inventory_weight_authority": "STAGE05_UNIVERSAL_ITEM_CORE",
+  "dialogue": "REAL_TIME_NO_NEXT_BUTTON_WORLD_CONTINUES",
+  "vendor": "QUOTE_THEN_EXPLICIT_EXECUTION_NO_AUTO_PURCHASE",
+  "save": "STAGE15_FULL_SQLITE_SNAPSHOT_INCLUDES_STAGE16A_TABLES",
+  "canon_mutations": 0,
+  "godot_gate": "PENDING_PC_ON_AND_EDITOR_BRIDGE_AVAILABLE"
+}

@@ -1,0 +1,34 @@
+{
+  "est_id": "EST-041",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Tendas de Acolhimento",
+  "building_type": "ACAMPAMENTO",
+  "parent_locality": "LOC-012-002",
+  "parent_subregion": "SUB-012-002",
+  "parent_political_unit": "TER-012",
+  "function": "Abrigo temporário para pessoas deslocadas por incidentes.",
+  "economic_role": {
+    "is_vendor": false,
+    "sells": [],
+    "produces": [],
+    "regulation_factor": 0.3
+  },
+  "capacity": {
+    "jobs": 4,
+    "residents": 60
+  },
+  "professions_linked": [],
+  "notable_link": "Campo de Deslocados (SUB-012-002)",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "TECIDO_MADEIRA_LEVE",
+    "flammability": "ALTISSIMA",
+    "recovery_days": 3
+  }
+}

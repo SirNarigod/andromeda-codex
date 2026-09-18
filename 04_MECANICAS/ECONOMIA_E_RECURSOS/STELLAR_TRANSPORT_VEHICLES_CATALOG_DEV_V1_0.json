@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-TRANSPORT-VEHICLES-CATALOG-DEV-V1.0",
+  "title": "Meios de Transporte — 1 veículo por modal já usado no sistema de terreno/viagem",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "canonical_status": "GAMEPLAY_DERIVED_DEV",
+  "r2_guard": "VEI-001 referencia TEC-001 (Rede Ferroviária de Ortheon, R2 confirmado) só como infraestrutura de apoio — não reescreve nem expande o texto de TEC-001. Os demais 4 veículos são gameplay 100% novo (nenhum tinha ficha própria em nenhum lugar do repositório, confirmado por busca exaustiva) — preenchem a lacuna real de 'infraestrutura existe, veículo nunca foi definido como objeto'. Toda base_infrastructure_ref é uma construção/subregião já catalogada.",
+  "vehicles": [
+    {"vehicle_id": "VEI-001", "name": "Locomotiva de Ortheon", "transport_mode": "FERROVIARIA", "base_infrastructure_ref": "TEC-001 (R2) + EST-015 Galpão de Manutenção Ferroviária", "capacity_note": "Transporte de carga e passageiros em maior volume; opera na malha já existente (Trilhos do Minério, Nó Ferroviário Central).", "safety": "FICTIONAL_VEHICLE_ONLY"},
+    {"vehicle_id": "VEI-002", "name": "Caravela de Navyr", "transport_mode": "NAVAL", "base_infrastructure_ref": "EST-002 Entreposto da Doca + SUB-004-001 Porto Livre de Navyr", "capacity_note": "Embarcação de comércio/pesca da confederação marítima; viagem entre ilhas e portos costeiros.", "safety": "FICTIONAL_VEHICLE_ONLY"},
+    {"vehicle_id": "VEI-003", "name": "Nave de Altavela", "transport_mode": "AEREA", "base_infrastructure_ref": "EST-023 Terminal de Carga Aérea + SUB-006-002 Ancoradouro de Naves", "capacity_note": "Nave suspensa que liga o Reino Aéreo a outros territórios; único modal viável de acesso direto a Altavela.", "safety": "FICTIONAL_VEHICLE_ONLY"},
+    {"vehicle_id": "VEI-004", "name": "Carroça de Caravana", "transport_mode": "TERRESTRE", "base_infrastructure_ref": "SUB-001-002 Rota das Caravanas + EST-007 Acampamento de Caravana", "capacity_note": "Transporte terrestre comum de mercadorias e viajantes entre territórios conectados por estrada.", "safety": "FICTIONAL_VEHICLE_ONLY"},
+    {"vehicle_id": "VEI-005", "name": "Carro de Mina Subcristal", "transport_mode": "SUBTERRANEA", "base_infrastructure_ref": "SUB-009-002 Túneis de Extração + EST-031 Galeria de Extração", "capacity_note": "Vagonete de trilho estreito usado nos túneis da Liga Subcristal; transporte de minério e acesso interno entre cidades subterrâneas.", "safety": "FICTIONAL_VEHICLE_ONLY"}
+  ]
+}

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Andromeda Mesa — RPG de mesa digital (Full Stellar)</title>
+<script src="mesa-data.js"></script>
+<style>
+:root{--bg:#E7E3D8;--ink:#2F3437;--mut:#75726A;--sh-d:#C3BEAD;--sh-l:#FCFBF7;--line:#D4CFBF;--acc:#1F6C9F;--accbg:#DFEBF4;--ok:#346538;--okbg:#E4EFE3;--bad:#9F2F2D;--badbg:#F7E7E6;--mono:'Cascadia Mono',Consolas,'SF Mono',monospace;--serif:Georgia,'Times New Roman',serif}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 system-ui,'Segoe UI','Helvetica Neue',Arial,sans-serif}
+::selection{background:#D3E4F2}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:12px 20px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+header h1{font-family:var(--serif);font-size:21px;letter-spacing:-.01em;margin:0 6px 0 0;line-height:1.15}
+header h1 small{display:block;font-family:system-ui,'Segoe UI',Arial,sans-serif;font-size:11px;color:var(--mut);font-weight:400}
+button{background:var(--bg);color:var(--ink);border:none;border-radius:10px;padding:8px 14px;cursor:pointer;font-size:13.5px;box-shadow:3px 3px 7px var(--sh-d),-3px -3px 7px var(--sh-l);transition:box-shadow .15s ease,transform .05s ease}
+button:hover{box-shadow:4px 4px 10px var(--sh-d),-4px -4px 10px var(--sh-l)}
+button:active{transform:scale(.98)}
+button.on{box-shadow:inset 3px 3px 7px var(--sh-d),inset -3px -3px 7px var(--sh-l);font-weight:600}
+button.pri{background:#2F3437;color:#F7F6F3}
+button.pri:hover{background:#1D2023}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+main{padding:20px 24px 90px;max-width:1080px;margin:auto}.tab{display:none}.tab.on{display:block;animation:tabin .38s cubic-bezier(.16,1,.3,1)}
+@keyframes tabin{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+h2{font-family:var(--serif);font-size:25px;letter-spacing:-.02em;margin:20px 0 2px;line-height:1.2}
+.lede{color:var(--mut);margin:0 0 18px;max-width:72ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
+.card{background:var(--bg);border:none;border-radius:16px;padding:18px 20px;box-shadow:7px 7px 15px var(--sh-d),-7px -7px 15px var(--sh-l)}
+.card h3{margin:0 0 8px;font-size:15px}
+.kv{display:flex;justify-content:space-between;gap:8px;font-size:13px;padding:3px 0;border-bottom:1px solid var(--line)}
+.kv:last-child{border-bottom:none}.kv span{color:var(--mut)}.kv b{text-align:right;font-weight:600}
+input,select,textarea{background:var(--bg);border:none;color:var(--ink);border-radius:10px;padding:8px 12px;font-size:13.5px;box-shadow:inset 3px 3px 6px var(--sh-d),inset -3px -3px 6px var(--sh-l);max-width:100%}
+#map{display:flex;gap:20px;flex-wrap:wrap}#terlist{flex:2;min-width:280px;display:flex;flex-direction:column;gap:8px;max-height:460px;overflow:auto;padding:4px}#terlist button{text-align:left}#side{flex:1;min-width:280px;display:flex;flex-direction:column;gap:18px}
+#tools{display:flex;gap:16px;flex-wrap:wrap;margin:12px 0;align-items:center}
+.tok{font:700 11px system-ui;text-anchor:middle;pointer-events:none}
+#log,#shlog{background:var(--bg);border:none;border-radius:12px;box-shadow:inset 4px 4px 9px var(--sh-d),inset -4px -4px 9px var(--sh-l);padding:12px 14px;font-family:var(--mono);font-size:12px}
+#log{height:120px;overflow:auto;margin-top:10px}
+#shlog{min-height:60px;max-height:160px;overflow:auto;margin-top:10px}
+.tag{display:inline-block;font-size:11px;border:1px solid var(--line);border-radius:999px;padding:1px 10px;margin:1px;color:var(--mut)}
+.tag.ok{background:var(--okbg);border-color:var(--okbg);color:var(--ok)}
+.tag.bad{background:var(--badbg);border-color:var(--badbg);color:var(--bad)}
+details{margin:6px 0}summary{cursor:pointer;color:var(--acc)}
+table{border-collapse:collapse;width:100%;font-size:13px}td,th{border-bottom:1px solid var(--line);padding:6px 10px;text-align:left}th{font-size:12px;color:var(--mut);font-weight:600}
+.warn{background:var(--accbg);color:#174E73;border:none;border-radius:12px;padding:12px 16px;font-size:13.5px;margin:12px 0}
+.hero h2{font-size:34px;margin-top:6px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin:16px 0}
+.step{background:var(--bg);border-radius:16px;padding:20px 22px;box-shadow:7px 7px 15px var(--sh-d),-7px -7px 15px var(--sh-l)}
+.step .n{font-family:var(--mono);font-size:12px;color:var(--mut)}
+.step h3{margin:4px 0 6px;font-size:16px}.step p{margin:0;font-size:13.5px;color:var(--mut)}
+.gloss{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:4px 24px}
+.gloss div{padding:8px 0;border-bottom:1px solid var(--line);font-size:13.5px}
+.gloss b{display:block;font-size:13px}
+.gloss span{color:var(--mut)}
+@media (max-width:900px){#map{flex-direction:column}#terlist{min-width:0}main{padding:14px 14px 70px}}
+.slots{display:grid;grid-template-columns:repeat(6,72px);gap:10px;margin:10px 0}
+.slot{width:72px;height:72px;border-radius:14px;background:var(--bg);box-shadow:5px 5px 10px var(--sh-d),-5px -5px 10px var(--sh-l);position:relative;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.slot .t{font-family:var(--mono);font-size:13px;font-weight:700}
+.slot .q{position:absolute;bottom:3px;right:7px;font-family:var(--mono);font-size:11px;color:var(--mut)}
+.slot .ar{position:absolute;top:3px;left:7px;font-size:10px;color:var(--ok)}
+.slot.empty{box-shadow:inset 3px 3px 7px var(--sh-d),inset -3px -3px 7px var(--sh-l);cursor:default}
+.slot.sel{box-shadow:0 0 0 2px #B98A1C,5px 5px 10px var(--sh-d),-5px -5px 10px var(--sh-l)}
+.slotbar{margin:4px 0 10px;font-size:13.5px}
+.medal{width:72px;height:92px;border-radius:50%;background:var(--bg);box-shadow:inset 4px 4px 9px var(--sh-d),inset -4px -4px 9px var(--sh-l);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:34px;color:var(--mut);flex:none}
+.attr{display:flex;gap:10px;align-items:center;margin:5px 0;font-size:13px}
+.attr>span{width:36px;color:var(--mut);font-family:var(--mono);font-size:12px}
+.abar{flex:1;height:10px;border-radius:6px;box-shadow:inset 2px 2px 5px var(--sh-d),inset -2px -2px 5px var(--sh-l)}
+.abar>div{height:10px;border-radius:6px;background:#5B4A68}
+.attr>b{width:30px;text-align:right;font-family:var(--mono);font-size:12px}
+.journey{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0}
+.jcard{background:var(--bg);border:none;border-radius:16px;padding:18px 20px;box-shadow:6px 6px 13px var(--sh-d),-6px -6px 13px var(--sh-l);cursor:pointer;text-align:left;animation:rise .55s cubic-bezier(.16,1,.3,1) both;color:var(--ink)}
+.jcard:nth-child(2){animation-delay:.06s}.jcard:nth-child(3){animation-delay:.12s}.jcard:nth-child(4){animation-delay:.18s}.jcard:nth-child(5){animation-delay:.24s}
+.jcard:hover{transform:translateY(-2px)}
+.jcard.hero{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.jcard h3{margin:0 0 2px;font-size:16px}.jcard p{margin:0;font-size:13px;color:var(--mut)}
+.jcard .go{font-family:var(--mono);font-size:12px;color:var(--acc);white-space:nowrap}
+.fold{margin:10px 0}
+.foldh{width:100%;text-align:left;display:flex;justify-content:space-between;align-items:center;font-size:15px;font-weight:600}
+.foldh small{font-weight:400;color:var(--mut);font-size:12px}
+.fold .foldb{display:grid;grid-template-rows:1fr;transition:grid-template-rows .32s cubic-bezier(.16,1,.3,1),opacity .3s;opacity:1}
+.fold.closed .foldb{grid-template-rows:0fr;opacity:0}
+.foldb>div{overflow:hidden;min-height:0}
+.chev{display:inline-block;transition:transform .3s}.fold.closed .chev{transform:rotate(-90deg)}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.panein{animation:tabin .3s cubic-bezier(.16,1,.3,1)}
+details.msec{margin:8px 0}
+details.msec>summary{list-style:none;cursor:pointer;font-family:var(--serif);font-size:19px;padding:8px 2px;border-bottom:1px solid var(--line)}
+details.msec>summary::-webkit-details-marker{display:none}
+details.msec>summary::after{content:'▾';float:right;color:var(--mut)}
+details.msec:not([open])>summary::after{content:'▸'}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style></head><body>
+<header><h1>Andromeda Mesa<small>RPG de mesa no mundo de Stellar</small></h1>
+<button data-t="inicio" class="on">Início</button><button data-t="ficha">Ficha</button><button data-t="mapa">Mapa</button><button data-t="shop">Loja</button><button data-t="npcs">NPCs</button><button data-t="mestre">Mestre</button>
+<span style="margin-left:auto;color:var(--mut);font-size:12px" id="counts"></span></header>
+<main>
+<section id="t-inicio" class="tab on">
+<div class="hero"><h2>Uma mesa pronta para jogar em Stellar</h2>
+<p class="lede">Ficha, loja, mapa e acervo do projeto. Escolha um cartão para começar.</p></div>
+<div class="journey">
+<button class="jcard hero" data-goto="ficha"><span><h3>Ficha do personagem</h3><p>Nome, classe, armas, mochila e combate.</p></span><span class="go">Abrir →</span></button>
+<button class="jcard" data-goto="shop"><h3>Loja</h3><p>Armas, kits e mochilas.</p></button>
+<button class="jcard" data-goto="mapa"><h3>Mapa</h3><p>Os 20 territórios.</p></button>
+<button class="jcard" data-goto="npcs"><h3>NPCs</h3><p>Aliados e criaturas.</p></button>
+<button class="jcard" data-goto="mestre"><h3>Mestre</h3><p>Missões e referência.</p></button>
+</div>
+<h2>Sessão atual</h2><div class="card"><div id="homeinfo">—</div></div>
+</section>
+<section id="t-mapa" class="tab">
+<h2>Mapa</h2><p class="lede">Os 20 territórios em lista. Toque para ver paisagens, construções e missões.</p>
+<div id="map"><div id="terlist"></div><div id="side"><div class="card"><h3>Território</h3><div id="tinfo">Toque num nome da lista.</div></div>
+<div class="card"><h3>Contrato de Travessia</h3><div id="varga"></div></div></div></div>
+</section>
+<section id="t-ficha" class="tab">
+<h2>Ficha</h2><p class="lede">Crie seu personagem: nome e classe primeiro — o resto se adapta.</p>
+<div id="ficha"></div>
+</section>
+<section id="t-shop" class="tab">
+<h2>Loja</h2><p class="lede">Estoque do território, em stavias. Valores de referência para a mesa — o projeto não fixa preço canônico.</p>
+<div class="warn">Preço final = tier base do item +1 (moeda local fraca) +1 (cura em escassez alta). Tabela de referência: BAIXO 10 · MÉDIO 25 · ALTO 60 · MUITO ALTO 150 stavias. Barganha (−20%) e escambo (mesmo tier) só no balcão de fronteira.</div>
+<div id="tools">Território <select id="shter"></select> Balcão <select id="shvend"><option value="formal">institucional (tabelado)</option><option value="informal">fronteira (barganha+escambo)</option></select> <button id="barg">Barganhar (d20, CD 12)</button> <span id="shw"></span> <button id="grant">+10 stavias (mestre)</button> <button id="shref">Atualizar</button></div>
+<div id="sheco" style="color:var(--mut);font-size:12.5px;margin-bottom:8px"></div>
+<div class="pills"><button data-sh="stock" class="on">Estoque</button><button data-sh="weap">Armas</button><button data-sh="sell">Vender e trocar</button></div>
+<div id="pane-stock" class="panein"><div id="shstock"></div></div>
+<div id="pane-weap" style="display:none"><div id="shweap"></div></div>
+<div id="pane-sell" style="display:none"><div id="shsell"></div></div>
+<div id="shlog"></div>
+</section>
+<section id="t-npcs" class="tab"><h2>NPCs</h2><p class="lede">Aliados e criaturas do projeto para consulta.</p><input id="bq" placeholder="Buscar por nome ou ID..." style="width:100%;margin-bottom:10px"><div class="pills"><button data-bc="all" class="on">Todos</button><button data-bc="NPC">Aliados</button><button data-bc="CRI">Criaturas</button></div><div class="grid" id="blist"></div></section>
+<section id="t-mestre" class="tab">
+<h2>Mestre</h2><p class="lede">Referência da sessão: missões, distâncias, viagem e moedas.</p>
+<label><input type="checkbox" id="spoiler"> Mostrar conteúdo restrito (corrompidos e pontos selados)</label>
+<details class="msec" open><summary>Missões</summary><div id="quests"></div></details>
+<details class="msec"><summary>Distâncias</summary><div id="bands"></div></details>
+<details class="msec"><summary>Viagem</summary><div id="spd"></div></details>
+<details class="msec"><summary>Moedas</summary><div class="card">Stavias vale nos 20 territórios; cada um tem sua moeda. Preço = tier + vendedor + moeda + escassez. Sem valor fixo canônico.</div></details>
+</section></main>
+<script>
+const M=window.MESA, $=id=>document.getElementById(id);
+const log=m=>{$('log').innerHTML+=`<div>${m}</div>`;$('log').scrollTop=1e6};
+$('counts').textContent=`${M.meta.counts.territories} TER · ${M.meta.counts.creatures} CRI · ${M.meta.counts.npcs} NPCs · ${M.meta.counts.quests} quests`;
+// abas
+document.querySelectorAll('header button[data-t]').forEach(b=>b.onclick=()=>{document.querySelectorAll('header button[data-t]').forEach(x=>x.classList.remove('on'));b.classList.add('on');document.querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));$('t-'+b.dataset.t).classList.add('on')});
+document.querySelectorAll('[data-goto]').forEach(b=>b.onclick=()=>{const t=document.querySelector(`header button[data-t="${b.dataset.goto}"]`);if(t)t.click()});
+// ---- MAPA ----
+(()=>{
+$('terlist').innerHTML=M.territories.map(t=>`<button data-ter="${t.id}">${t.id} — ${t.name}</button>`).join('');
+document.querySelectorAll('#terlist button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#terlist button').forEach(x=>x.classList.remove('on'));b.classList.add('on');const t=M.territories.find(x=>x.id===b.dataset.ter);
+const lz=M.landscapes.filter(l=>l.ter===t.id),qs=M.quests.filter(q=>q.loc?.includes(t.id.slice(4,7))||q.id?.includes(t.id.slice(4,7))),es=M.est.filter(e=>e.ter===t.id);
+$('tinfo').innerHTML=`<h3>${t.id} — ${t.name}</h3><div class="kv"><span>Terreno</span><b>${t.terrain}</b></div><div class="kv"><span>Transporte</span><b>${t.transport}</b></div><div class="kv"><span>Paisagens</span><b>${lz.length}</b></div><div class="kv"><span>Construções</span><b>${es.length}</b></div><div class="kv"><span>Quests</span><b>${qs.map(q=>q.id).join(', ')||'—'}</b></div>${lz.slice(0,6).map(l=>`<span class="tag">${l.id} ${l.name}</span>`).join('')}`;const ti=$('tinfo');ti.style.animation='none';void ti.offsetWidth;ti.style.animation=''});
+$('varga').innerHTML=M.varga.map(p=>`<div><b>${p.id}</b> — ${p.title}<br><span style="color:var(--mut)">${p.function}</span></div>`).join('');
+})();
+// ---- FICHA ----
+const MCOND=Object.fromEntries(M.conditions.map(c=>[c.id,c]));
+function rmCond(t,c){t.cond=(t.cond||[]).filter(x=>x!==c)}
+const pc0={nome:'',especie:'Humano',classe:'Nativos',hp:28,mhp:28,sp:100,notas:'',inv:{},arms:[],weap:null,armor:null,stav:60,slots:12,cond:[]};
+function pcget(){return Object.assign(JSON.parse(JSON.stringify(pc0)),JSON.parse(localStorage.getItem('pc')||'{}'))}
+function pceit(id){return M.items.find(i=>i.id===id)}
+function pcweight(p){return Object.entries(p.inv||{}).reduce((s,[id,q])=>{const it=pceit(id);return s+(it?.wt||0)*q},0)}
+function pcClass(nm){return M.classes.find(c=>c.name===nm)||M.classes[0]}
+function clsSkills(cls){const SKC={Nativos:'NAT',Soldados:'SOL',Androids:'AND',Magos:'MAG',Corrompidos:'COR'};return M.skills.filter(s=>s.cls===SKC[cls])}
+function wprice(w){const o=w.ovr??50;if(o<=40)return{free:true,p:0,tier:'Comum'};if(o<=48)return{p:25,tier:'MÉDIO'};if(o<=56)return{p:60,tier:'ALTO'};return{p:150,tier:'MUITO_ALTO'}}
+function classArms(cls){const e=(M.arsenal&&M.arsenal.by_class||[]).find(x=>x.class_name===cls);return (e?e.weapon_ids:[]).map(id=>M.weapons.find(w=>w.id===id)).filter(Boolean)}
+function armorBonus(p){return p.armor?(pceit(p.armor)?.fx?.armor||0):0}
+function fnot(m){const e=document.getElementById('fnote');if(e)e.innerHTML=m||''}
+let PCSLOT=null;
+let FOPEN={attrs:false,comb:true,equip:false,trac:false,moch:false,notas:false};
+window.fToggle=k=>{FOPEN[k]=!FOPEN[k];frender()};
+const fold=(k,title,sub,body)=>`<div class="card fold${FOPEN[k]?'':' closed'}"><button class="foldh" onclick="fToggle('${k}')"><span>${title} <small>${sub}</small></span><span class="chev">▾</span></button><div class="foldb"><div>${body}</div></div></div>`;
+function slotTag(it){return (it.cat||'???').split('/')[0].slice(0,3)}
+function frender(){const p=pcget(),C=pcClass(p.classe),AT=C.attrs||{},ca=10+armorBonus(p);
+const SK=clsSkills(p.classe),ACT=SK.filter(s=>s.kind==='ACTIVE'),PAS=SK.find(s=>s.kind==='PASSIVE');
+const tree={};classArms(p.classe).forEach(w=>{(tree[w.fam||'Outras']=tree[w.fam||'Outras']||[]).push(w)});
+Object.values(tree).forEach(l=>l.sort((a,b)=>(a.ovr||0)-(b.ovr||0)));
+const owned=Object.entries(p.inv||{}).filter(([id,q])=>q>0&&pceit(id));
+const NSLOT=p.slots||12;
+let slots=owned.map(([id,q])=>{const it=pceit(id);return `<div class="slot${PCSLOT===id?' sel':''}" title="${it.name}" onclick="pcslot('${id}')"><span class="t">${slotTag(it)}</span>${it.fx.armor?`<span class="ar">+${it.fx.armor}</span>`:''}${it.fx.pack?`<span class="ar">${it.fx.pack}sl</span>`:''}<span class="q">×${q}</span></div>`}).join('');
+for(let i=owned.length;i<NSLOT;i++)slots+=`<div class="slot empty"></div>`;
+let bar='<div style="color:var(--mut)">Toque num item da mochila.</div>';
+const sit=PCSLOT&&pceit(PCSLOT);
+if(sit&&(p.inv[PCSLOT]>0)){const fx=sit.fx||{},canUse=fx.heal_pct||fx.cure||fx.pack||fx.kit;
+bar=`<div class="slotbar"><b>${sit.name}</b> ×${p.inv[PCSLOT]} <span class="tag">${sit.cat}</span>${fx.armor?` <span class="tag">+${fx.armor}AR</span>`:''}${fx.pack?` <span class="tag">${fx.pack} slots</span>`:''}<br>${sit.desc||''}`
++(canUse?` <button onclick="pcuse('${PCSLOT}')">Usar</button>`:'')
++(fx.armor?` <button onclick="pceqarm('${PCSLOT}')">${p.armor===PCSLOT?'Equipada':'Equipar'}</button>`:'')
++` <button onclick="pcrm('${PCSLOT}')">Descartar</button></div>`}
+const medal=(p.nome||'?').trim().charAt(0).toUpperCase()||'?';
+$('ficha').innerHTML=`
+<div class="card"><h3>Topo — quem é você</h3><div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+<div class="medal">${medal}</div><div>
+Nome <input id="pn" value="${p.nome}" placeholder="Nome do personagem"><br>
+Espécie <input id="psp" value="${p.especie||'Humano'}" style="width:140px"> Classe <select id="pc2">${M.classes.map(c=>`<option ${c.name===p.classe?'selected':''}>${c.name}</option>`).join('')}</select><br>
+<span style="color:var(--mut);font-size:12.5px">${C.desc||''}</span></div></div></div>`
++fold('attrs','Atributos',C.name,Object.entries(AT).map(([k,v])=>`<div class="attr"><span>${k}</span><div class="abar"><div style="width:${v}%"></div></div><b>${v}</b></div>`).join(''))
++fold('comb','Combate',`PV ${p.hp}/${p.mhp} · CA ${ca}`,`
+<div class="kv"><span>PV</span><b><input id="ph" type="number" value="${p.hp}" style="width:64px"> / <input id="pm" type="number" value="${p.mhp}" style="width:64px"></b></div>
+<div class="kv"><span>CA (10 + armadura)</span><b>${ca}</b></div>
+<div class="kv"><span>Vigor (SP)</span><b>${p.sp??100}</b></div>
+<div class="kv"><span>Condições</span><b>${(p.cond||[]).length?p.cond.map(c=>(MCOND[c]?.icon||'')+' '+c).join(' · '):'nenhuma'}</b></div>
+<div class="kv"><span>Stavias</span><b><input id="pstav" type="number" value="${p.stav??60}" style="width:80px"></b></div>
+<button onclick="frest()">Descansar (cura 30%, limpa cansaço, SP cheio)</button> <span id="fnote" style="color:var(--mut);font-size:12.5px"></span>`
+)
++fold('equip','Equipamento',`${C.fam||''} · ${p.arms.length} na bainha`,`
+<div class="kv"><span>Empunhada</span><b><select id="pweap"><option value="">(escolher)</option>${p.arms.map(w=>{const W=M.weapons.find(x=>x.id===w);return W?`<option value="${w}" ${p.weap===w?'selected':''}>${w} ${W.name}</option>`:''}).join('')}</select></b></div>
+<div class="kv"><span>Armadura</span><b>${p.armor?(pceit(p.armor)?.name||p.armor)+' (+'+armorBonus(p)+' CA)':'nenhuma — compre na Loja'}</b></div>
+${Object.entries(tree).map(([fam,l])=>`<details open><summary><b>${fam}</b> (${l.length})</summary>${l.map(w=>{const pr=wprice(w),has=p.arms.includes(w.id);
+return `<div>• <b>${w.name}</b> <span class="tag">${w.id}</span> <span class="tag">overall ${w.ovr}</span> — ${pr.free?'<b>Comum: grátis</b>':`<b>${pr.p}</b> st (${pr.tier})`} ${p.weap===w.id?'<span class="tag ok">empunhada</span>':has?`<button onclick="fweap('${w.id}')">Empunhar</button>`:`<button onclick="fbuyarm('${w.id}')">${pr.free?'Pegar grátis':'Comprar'}</button>`}</div>`}).join('')}</details>`).join('')}`
+)
++fold('trac','Traços',`${ACT.length} ativas`,`
+${ACT.map(s=>`<div>• <b>${s.name}</b> <span class="tag">${s.cost} SP</span><br><span style="color:var(--mut)">${s.desc}</span>${s.fx.heal_pct?` <button onclick="fskill('${s.id}')">Usar (cura)</button>`:''}</div>`).join('')}
+${PAS?`<div>• <b>${PAS.name}</b> <span class="tag">passiva</span><br><span style="color:var(--mut)">${PAS.desc}</span></div>`:''}`
+)
++fold('moch','Mochila',`${owned.length}/${NSLOT} slots`,`
+<div class="slots">${slots}</div>${bar}
+<div style="color:var(--mut);font-size:12.5px">Mochilas compradas: use para ampliar (só vale a maior). Armas e kits à venda na Loja.</div>`
+)
++fold('notas','Notas','anotações',`
+<textarea id="pnt" rows="2" style="width:100%">${p.notas||''}</textarea><br><br>
+<button onclick="pcsave()" class="pri">Salvar ficha</button> <button onclick="pcwipe()">Apagar personagem</button>`)}
+function fsync(){const p=pcget();p.nome=$('pn').value;p.especie=$('psp').value||'Humano';
+if(p.classe!==$('pc2').value){p.classe=$('pc2').value;const C=pcClass(p.classe);p.mhp=C.hp||28;p.hp=p.mhp;fnot('Classe aplicada: PV base '+p.mhp+'.')}
+p.hp=+$('ph').value;p.mhp=+$('pm').value;p.notas=$('pnt').value;p.weap=$('pweap').value||null;p.stav=+$('pstav').value||0;
+localStorage.setItem('pc',JSON.stringify(p));return p}
+window.pcsave=()=>{fsync();fnot('Ficha salva.');frender()};
+window.pcslot=id=>{PCSLOT=PCSLOT===id?null:id;frender()};
+window.pcwipe=()=>{if(confirm('Apagar o personagem e a mochila?')){localStorage.removeItem('pc');PCSLOT=null;frender()}};
+window.pcrm=id=>{const p=pcget();if(p.inv[id]>1)p.inv[id]--;else delete p.inv[id];if(p.armor===id)p.armor=null;localStorage.setItem('pc',JSON.stringify(p));frender()};
+window.pceqarm=id=>{const p=pcget();p.armor=p.armor===id?null:id;localStorage.setItem('pc',JSON.stringify(p));frender()};
+window.pcuse=id=>{const p=pcget(),it=pceit(id);if(!it||!(p.inv[id]>0)){fnot('Sem item.');return}
+const fx=it.fx||{};const take=()=>{p.inv[id]--;if(p.inv[id]<=0)delete p.inv[id];localStorage.setItem('pc',JSON.stringify(p))};
+if(fx.pack){if(fx.pack>(p.slots||12)){p.slots=fx.pack;take();fnot(`Mochila usada: agora <b>${p.slots} slots</b>.`)}else fnot(`Sem efeito: você já tem ${p.slots||12} slots (mochila de ${fx.pack}).`);frender();return}
+if(fx.kit){fx.kit.forEach(k=>p.inv[k]=(p.inv[k]||0)+1);take();fnot('Kit desmontado na mochila.');frender();return}
+if(fx.armor){fnot('Armadura: use o botão Equipar.');return}
+let done='';
+if(fx.heal_pct&&p.hp<p.mhp){const amt=Math.round(p.mhp*fx.heal_pct/100);p.hp=Math.min(p.mhp,p.hp+amt);done+=`+${amt} PV `}
+if(fx.cure){const had=(p.cond||[]).filter(c=>fx.cure.includes(c));had.forEach(c=>rmCond(p,c));if(had.length)done+=`cura ${had.join('+')} `}
+if(!done){fnot(`${it.name} sem efeito agora.`);return}
+take();localStorage.setItem('pc',JSON.stringify(p));fnot(`${it.name}: <b>${done}</b>`);frender()};
+window.fweap=id=>{const p=pcget();if(!p.arms.includes(id))return;p.weap=id;localStorage.setItem('pc',JSON.stringify(p));frender()};
+window.fbuyarm=id=>{const p=pcget(),W=M.weapons.find(w=>w.id===id);if(!W)return;const pr=wprice(W);
+if(p.arms.includes(id)){p.weap=id;localStorage.setItem('pc',JSON.stringify(p));fnot('Empunhada.');frender();return}
+if(pr.free){p.arms.push(id);p.weap=id;localStorage.setItem('pc',JSON.stringify(p));fnot(`${W.name} na bainha (grátis).`);frender();return}
+if((p.stav??60)<pr.p){fnot(`Sem stavias: ${W.name} custa ${pr.p} (tem ${p.stav??60}).`);return}
+p.stav-=pr.p;p.arms.push(id);p.weap=id;localStorage.setItem('pc',JSON.stringify(p));fnot(`Comprou ${W.name} por ${pr.p} st.`);frender()};
+window.fskill=sid=>{const p=pcget(),S=M.skills.find(s=>s.id===sid);if(!S||!S.fx.heal_pct)return;
+if((p.sp??100)<(S.cost||0)){fnot('Sem vigor (SP). Descanse.');return}
+const amt=Math.round(p.mhp*S.fx.heal_pct/100);p.hp=Math.min(p.mhp,p.hp+amt);p.sp-=S.cost;
+localStorage.setItem('pc',JSON.stringify(p));fnot(`${S.name}: <b>+${amt} PV</b> (−${S.cost} SP).`);frender()};
+window.frest=()=>{const p=pcget(),amt=Math.round(p.mhp*30/100);p.hp=Math.min(p.mhp,p.hp+amt);
+rmCond(p,'OFUSCADO');rmCond(p,'CONTENCAO');p.sp=100;localStorage.setItem('pc',JSON.stringify(p));
+fnot(`Descansou: +${amt} PV, SP cheio.`);frender()};
+document.querySelector('button[data-t="ficha"]').addEventListener('click',()=>setTimeout(frender,0));frender();
+// ---- BESTIARIO ----
+let BCAT='all';
+function blist(f='',cat){const q=f.toLowerCase(),c=cat||BCAT;const all=[...M.creatures.map(c=>({id:c.id,t:`${c.name} · ${c.tier} · HP${c.hp}/DF${c.df}/SP${c.sp}/TH${c.th} · ${c.grp} · yield:${c.yield||'—'} · ${c.trait}`,s:'CRI'})),...M.npcs.map(n=>({id:n.id,t:`${n.name} · ${n.cls} ${n.tier}/${n.role} · HP${n.hp} SP${n.sp} DG${n.dg} AR${n.ar} · ${n.ps||''} / ${n.as||''}`,s:'NPC'}))].filter(x=>(c==='all'||x.s===c)&&(x.id+x.t).toLowerCase().includes(q)&&($('spoiler').checked||!x.id.startsWith('ZUM')));
+$('blist').innerHTML=all.slice(0,120).map(x=>`<div class="card"><h3>${x.id} <span class="tag">${x.s}</span></h3><div style="font-size:12.5px">${x.t}</div></div>`).join('')}
+$('bq').oninput=e=>blist(e.target.value);$('spoiler').onchange=()=>blist($('bq').value);
+document.querySelectorAll('[data-bc]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-bc]').forEach(x=>x.classList.remove('on'));b.classList.add('on');BCAT=b.dataset.bc;blist($('bq').value)});blist();
+// ---- MESTRE ----
+$('quests').innerHTML=M.quests.map(q=>`<details class="card"><summary><b>${q.id}</b> — ${q.title} <span class="tag">${q.loc}</span></summary><div>${q.premise}</div><div>Fases: ${q.phases.join(' → ')}</div>${q.res.map(r=>`<div>• <b>${r.id}</b> ${r.t}</div>`).join('')}</details>`).join('');
+$('bands').innerHTML=`<table><tr><th>Banda</th><th>até (m)</th><th>Melee</th><th>Tiro</th><th>Evasão</th></tr>${M.bands.map(b=>`<tr><td>${b.n}</td><td>${b.m>900?'20+':b.m}</td><td>${b.melee===0?'—':'×'+b.melee}</td><td>${b.ranged===0?'PROIBIDO':'×'+b.ranged}</td><td>×${b.evm}</td></tr>`).join('')}</table>`;
+$('spd').innerHTML=`<div class="card">A pé ${M.speeds.pe} · Carroça ${M.speeds.carroca} · Trem ${M.speeds.trem} · Nave ${M.speeds.nave} km/h. Território típico Ø ~10 km.</div>`;
+// ---- LOJA (mecânica de comércio + moedas + escassez; preços RUNTIME_ONLY) ----
+let bargainFlag=false;
+const shlog=m=>{$('shlog').innerHTML+=`<div>${m}</div>`;$('shlog').scrollTop=1e6};
+function shopCtx(){return {ter:$('shter').value||'TER-011',formal:$('shvend').value==='formal'}}
+function finalTier(it,ctx){const T=M.commerce.tiers;let i=Math.max(0,T.indexOf(it.price||'MÉDIO'));const why=[];
+const cur=M.currencies.find(c=>c.ter===ctx.ter),eco=M.econ.find(e=>e.ter===ctx.ter);
+if(cur&&cur.strength==='FRACA'){i=Math.min(3,i+1);why.push('moeda fraca +1')}
+if(it.cat.startsWith('MEDICAMENTO')&&eco&&eco.food==='BAIXA'){i=Math.min(3,i+1);why.push('escassez +1')}
+return {tier:T[i],why,cur,eco}}
+function priceOf(it,ctx){const ft=finalTier(it,ctx);let p=M.commerce.runtime_prices[ft.tier];if(bargainFlag&&!ctx.formal)p=Math.ceil(p*0.8);return {p,ft}}
+function shopStock(ctx){const ests=M.est.filter(e=>e.ter===ctx.ter).map(e=>e.id);return M.items.filter(i=>!i.prod||ests.includes(i.prod))}
+function shoprender(){const p=pcget(),ctx=shopCtx();
+if(!$('shter').innerHTML)$('shter').innerHTML=M.territories.map(t=>{const c=M.currencies.find(x=>x.ter===t.id);return `<option value="${t.id}">${t.id} ${t.name} (${c?c.name:'stavias'})</option>`}).join('');
+const ft0=finalTier({price:'MÉDIO',cat:'MEDICAMENTO/X'},ctx);
+$('sheco').innerHTML=`Moeda: <b>${ft0.cur?ft0.cur.name+' ('+ft0.cur.strength+')':'Stavias (universal)'}</b> · Segurança alimentar: <b>${ft0.eco?ft0.eco.food:'—'}</b> (pressão ${ft0.eco?ft0.eco.short:'—'}) · Balcão: <b>${ctx.formal?'institucional (sem barganha/escambo)':'fronteira (barganha+escambo)'}</b>${bargainFlag?' · 🤝 desconto −20% ATIVO':''}`;
+$('shw').innerHTML=`💰 <b>${p.stav??60}</b> stavias`;
+$('shstock').innerHTML=shopStock(ctx).map(it=>{const {p:pr,ft}=priceOf(it,ctx);const prod=it.prod?` <span class="tag">${it.prod}</span>`:' <span class="tag">ambulante</span>';
+return `<div>• <b>${it.name}</b> <span class="tag">${it.cat}</span>${prod}<br><span style="color:var(--mut)">tier ${it.price||'MÉDIO'}${ft.why.length?' → <b>'+ft.tier+'</b> ('+ft.why.join(', ')+')':''} = <b>${pr}</b> st</span> <button onclick="shopbuy('${it.id}')">Comprar</button></div>`}).join('')||'<div style="color:var(--mut)">sem estoque</div>';
+$('shweap').innerHTML=classArms(p.classe).map(w=>{const pr=wprice(w),has=(p.arms||[]).includes(w.id);
+return `<div>• <b>${w.name}</b> <span class="tag">${w.id}</span> <span class="tag">${w.fam||''}</span> <span class="tag">overall ${w.ovr}</span> — ${pr.free?'<b>Comum: grátis</b>':`<b>${pr.p}</b> st`}${has?' <span class="tag ok">na bainha</span>':` <button onclick="shbuyarm('${w.id}')">Comprar</button>`}</div>`}).join('')||'<div style="color:var(--mut)">sem armas para esta classe</div>';
+$('shsell').innerHTML=Object.entries(p.inv||{}).map(([id,q])=>{const it=pceit(id);if(!it||!q)return'';const base=Math.floor(M.commerce.runtime_prices[it.price||'MÉDIO']/2);const sv=(bargainFlag&&!ctx.formal)?Math.ceil(base*1.2):base;
+return `<div>• <b>${it.name}</b> ×${q} — vende por <b>${sv}</b> st <button onclick="shopsell('${id}')">Vender</button></div>`}).join('')||'<div style="color:var(--mut)">mochila vazia</div>'
++`<div style="margin-top:6px">🔄 Escambo: meu <select id="shmine">${Object.keys(p.inv||{}).map(id=>{const it=pceit(id);return it?`<option value="${id}">${it.name} (${it.price||'MÉDIO'})</option>`:''}).join('')}</select> por <select id="shwant">${shopStock(ctx).map(it=>`<option value="${it.id}">${it.name} (${it.price||'MÉDIO'})</option>`).join('')}</select> <button onclick="shbarter()">Trocar</button></div>`}
+window.shopbuy=id=>{const p=pcget(),it=pceit(id),ctx=shopCtx();if(!it)return;const {p:pr,ft}=priceOf(it,ctx);
+if((p.stav??60)<pr){shlog(`⛔ sem fundos: ${it.name} custa ${pr} st (tem ${p.stav??60})`);return}
+p.stav=(p.stav??60)-pr;p.inv[id]=(p.inv[id]||0)+1;if(bargainFlag&&!ctx.formal){bargainFlag=false;shlog('🤝 desconto de barganha aplicado e consumido')}
+localStorage.setItem('pc',JSON.stringify(p));shlog(`🪙 comprou <b>${it.name}</b> por ${pr} st (tier ${ft.tier})`);shoprender();frender()};
+window.shbuyarm=id=>{const p=pcget(),W=M.weapons.find(w=>w.id===id);if(!W)return;const pr=wprice(W);
+if((p.arms||[]).includes(id)){shlog('Já está na bainha.');return}
+if(pr.free){p.arms.push(id);localStorage.setItem('pc',JSON.stringify(p));shlog(`🗡 ${W.name} na bainha (comum, grátis).`);shoprender();frender();return}
+if((p.stav??60)<pr.p){shlog(`⛔ sem fundos: ${W.name} custa ${pr.p} st (tem ${p.stav??60})`);return}
+p.stav-=pr.p;p.arms.push(id);localStorage.setItem('pc',JSON.stringify(p));shlog(`🗡 comprou <b>${W.name}</b> por ${pr.p} st.`);shoprender();frender()};
+window.shopsell=id=>{const p=pcget(),it=pceit(id),ctx=shopCtx();if(!it||!(p.inv[id]>0))return;
+const base=Math.floor(M.commerce.runtime_prices[it.price||'MÉDIO']/2);const sv=(bargainFlag&&!ctx.formal)?Math.ceil(base*1.2):base;
+p.inv[id]--;if(p.inv[id]<=0)delete p.inv[id];if(p.armor===id)p.armor=null;p.stav=(p.stav??60)+sv;if(bargainFlag&&!ctx.formal)bargainFlag=false;
+localStorage.setItem('pc',JSON.stringify(p));shlog(`🪙 vendeu <b>${it.name}</b> por ${sv} st`);shoprender();frender()};
+window.shbarter=()=>{const p=pcget(),ctx=shopCtx();if(ctx.formal){shlog('⛔ escambo só no balcão informal (regra)');return}
+const mine=pceit($('shmine').value),want=pceit($('shwant').value);if(!mine||!want||!(p.inv[mine.id]>0)){shlog('⛔ item inválido');return}
+if((mine.price||'MÉDIO')!==(want.price||'MÉDIO')){shlog(`⛔ vendedor recusou: tiers diferentes (${mine.price||'MÉDIO'} ≠ ${want.price||'MÉDIO'}) — sem conversão de tier`);return}
+p.inv[mine.id]--;if(p.inv[mine.id]<=0)delete p.inv[mine.id];if(p.armor===mine.id)p.armor=null;p.inv[want.id]=(p.inv[want.id]||0)+1;
+localStorage.setItem('pc',JSON.stringify(p));shlog(`🔄 escambo: ${mine.name} ⇄ <b>${want.name}</b> (mesmo tier, sem moeda)`);shoprender();frender()};
+$('barg').onclick=()=>{const ctx=shopCtx();if(ctx.formal){shlog('⛔ balcão institucional não barganha (tabelado)');return}
+const r=1+Math.floor(Math.random()*20);if(r>=12){bargainFlag=true;shlog(`🤝 barganha <b>${r} ≥ 12</b>: −20% na próxima compra / +20% na próxima venda`)}else shlog(`🤝 barganha ${r} < 12: vendedor irredutível`);shoprender()};
+$('grant').onclick=()=>{const p=pcget();p.stav=(p.stav??60)+10;localStorage.setItem('pc',JSON.stringify(p));shlog('💰 +10 stavias (mestre)');shoprender();frender()};
+$('shter').onchange=shoprender;$('shvend').onchange=shoprender;$('shref').onclick=shoprender;
+document.querySelectorAll('[data-sh]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-sh]').forEach(x=>x.classList.remove('on'));b.classList.add('on');['stock','weap','sell'].forEach(k=>{const p=$('pane-'+k);p.style.display=k===b.dataset.sh?'':'none';p.classList.remove('panein');void p.offsetWidth;p.classList.add('panein')})});
+document.querySelector('button[data-t="shop"]').addEventListener('click',()=>setTimeout(shoprender,0));
+// ---- INÍCIO (resumo da sessão) ----
+function homeRender(){let p=null;try{p=JSON.parse(localStorage.getItem('pc')||'null')}catch(e){}
+$('homeinfo').innerHTML=`<div class="kv"><span>Personagem</span><b>${p&&p.nome?p.nome+' ('+(p.especie||'Humano')+' · '+p.classe+')':'nenhum — abra Ficha'}</b></div><div class="kv"><span>PV / CA / Stavias</span><b>${p&&p.nome?(p.hp+'/'+p.mhp+' · '+(10+((p.armor&&pceit(p.armor)?.fx?.armor)||0))+' · '+(p.stav??60)+' st'):'—'}</b></div><div class="kv"><span>Mochila</span><b>${p&&p.nome?(Object.keys(p.inv||{}).length+' itens · '+(p.slots||12)+' slots'):'—'}</b></div><div class="kv"><span>Acervo</span><b>${M.meta.counts.territories} territórios · ${M.meta.counts.creatures} criaturas · ${M.meta.counts.npcs} aliados · ${M.meta.counts.quests} missões</b></div>`}
+document.querySelector('button[data-t="inicio"]').addEventListener('click',()=>setTimeout(homeRender,0));homeRender();
+</script></body></html>

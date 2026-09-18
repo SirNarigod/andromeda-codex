@@ -1,0 +1,23 @@
+{
+  "version": "V0.1.9",
+  "status": "PASS_STATIC",
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1",
+  "interaction_pipeline": [
+    "click/action target",
+    "walk to range",
+    "clear action state",
+    "queue deferred interaction",
+    "validate target",
+    "execute interact",
+    "emit Living envelope"
+  ],
+  "regressions_preserved": [
+    "left click movement + area transitions",
+    "right click hybrid movement/action",
+    "door toggle",
+    "chair toggle",
+    "collectibles",
+    "shop/book/lever",
+    "2-second auto-attack"
+  ]
+}

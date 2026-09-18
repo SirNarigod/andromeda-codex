@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-009-002",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Posto de Extração",
+  "parent_subregion": "SUB-009-002",
+  "parent_political_unit": "TER-009",
+  "function": "Base de operações de mineração de cristal.",
+  "notable_link": "Túneis de Extração (SUB-009-002)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-009-002",
+  "settlement_tier": "POSTO",
+  "history": "Diferente da Câmara Central, onde construir sobre cristal é tradição respeitada, os Túneis de Extração existem justamente pra remover cristal de formações consideradas excedentes ou instáveis demais pra habitação segura — uma distinção que gera desconforto moral constante entre os próprios mineradores, muitos dos quais cresceram ouvindo histórias sobre o respeito devido às formações naturais.",
+  "sensory": "Túneis estreitos se ramificam a partir do posto central, iluminados por lamparinas fixas que criam sombras alongadas e móveis conforme mineradores passam carregando ferramentas. O som de picareta contra cristal tem um timbre agudo característico, diferente de qualquer outro tipo de mineração, e trabalhadores experientes conseguem identificar pela vibração da própria ferramenta quando uma formação está prestes a ceder de forma útil ou perigosa.",
+  "figures": [
+    {
+      "role": "Chefe de Extração",
+      "name": "Grett Talharocha",
+      "note": "Trabalha extração há vinte anos e desenvolveu um código pessoal rígido sobre quais formações são realmente excedentes e quais deveriam ser preservadas — código que nem sempre bate com o que a administração da Liga classifica oficialmente como disponível pra extração."
+    },
+    {
+      "role": "Inspetora da Liga",
+      "name": "Aissa Registronovo",
+      "note": "Chegou recentemente com autoridade formal pra reclassificar formações, e já discordou publicamente de Grett duas vezes sobre o status de túneis específicos — ele a considera burocrata sem experiência real de campo; ela o considera sentimental demais pra decisões práticas."
+    }
+  ],
+  "hook": "Aissa reclassificou uma formação que Grett considera claramente digna de preservação, alegando necessidade urgente de cristal pra um projeto de construção na Câmara Central — Grett está considerando, pela primeira vez na carreira, simplesmente ignorar uma ordem oficial que ele julga moralmente errada.",
+  "detail": "Todo minerador novo passa o primeiro dia inteiro apenas observando formações sem tocar em nenhuma — um treinamento informal que Grett insiste em manter, mesmo sob pressão pra acelerar a integração de mão de obra nova, convencido de que aprender a olhar antes de cortar evita erros que picaretas apressadas cometem.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION"]
+}

@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-ENVIRONMENTAL-REACTIVITY-DEV-V1.0",
+  "title": "Sistema E - Ambiente Reativo (instancia OBJECT_ENVIRONMENT_REACTIVE_SYSTEM_CONTRACT_V1_0)",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "r2_guard": "Instancia pela primeira vez o contrato de ambiente reativo (propagacao de incendio, zonas de temperatura/umidade/fumaca/contaminacao, recuperacao estrutural) para as construcoes ja reais. environmental_material_profile foi adicionado como campo aditivo em todas as 68 construcoes (EST-XXX), classificado por building_type - nenhum dado ja existente foi alterado.",
+  "material_classification_rule": {
+    "rule": "Material/inflamabilidade/tempo de recuperacao atribuidos deterministicamente por building_type (ver campo environmental_material_profile em cada arquivo EST-XXX).",
+    "categories": {
+      "ACAMPAMENTO": {
+        "material": "TECIDO_MADEIRA_LEVE",
+        "flammability": "ALTISSIMA",
+        "recovery_days": 3
+      },
+      "RESIDENCIAL": {
+        "material": "MADEIRA_E_ALVENARIA",
+        "flammability": "ALTA",
+        "recovery_days": 7
+      },
+      "COMERCIAL": {
+        "material": "MADEIRA_E_ALVENARIA",
+        "flammability": "ALTA",
+        "recovery_days": 7
+      },
+      "LOJA": {
+        "material": "MADEIRA_E_ALVENARIA",
+        "flammability": "ALTA",
+        "recovery_days": 7
+      },
+      "INDUSTRIAL": {
+        "material": "METAL_E_MADEIRA",
+        "flammability": "MEDIA_COM_RISCO_EXPLOSAO",
+        "recovery_days": 10
+      },
+      "INSTITUCIONAL": {
+        "material": "PEDRA_E_ALVENARIA",
+        "flammability": "BAIXA",
+        "recovery_days": 7
+      },
+      "MILITAR": {
+        "material": "PEDRA_REFORCADA",
+        "flammability": "BAIXA",
+        "recovery_days": 7
+      }
+    }
+  },
+  "fire_propagation_rule": {
+    "max_depth": 4,
+    "budget": 32,
+    "rule_summary": "Um incendio se propaga no maximo 4 saltos entre estruturas conectadas fisicamente (mesma localidade ou rota local direta), com orcamento total de 32 unidades de intensidade distribuidas pela cadeia - impede que um unico incendio consuma o mapa inteiro.",
+    "worked_example": {
+      "origin": "EST-003 Forja Real de Kharveth (INDUSTRIAL, METAL_E_MADEIRA, risco de explosao) sofre superaquecimento durante producao.",
+      "hop_1": "Fogo se espalha para EST-011 Armeria Runica da Forja Real (LOJA, mesma localidade LOC-002-001) - intensidade 32 -> 22.",
+      "hop_2": "Fumaca/calor atinge construcoes vizinhas via rota local (ROT-XXX de TER-002) - intensidade 22 -> 14, mas nenhuma nova estrutura pega fogo (abaixo do limiar).",
+      "stop_condition": "Orcamento restante insuficiente para propagar alem do hop 2 - incendio contido.",
+      "canon_note": "Exemplo hipotetico de mecanica, nao um evento narrativo confirmado - nenhuma construcao real foi destruida por este documento."
+    }
+  },
+  "environmental_zone_fields": [
+    "temperature",
+    "humidity",
+    "fire_intensity",
+    "smoke",
+    "water_level",
+    "contamination"
+  ],
+  "zone_examples": [
+    {
+      "est_id": "EST-014",
+      "note": "TER-014 Cadeia de Cinzas (vulcanico) - temperature ALTA permanente, contamination BAIXA-MEDIA por cinza vulcanica (nao confundir com corrupcao da Raiz)."
+    },
+    {
+      "subregion_id": "SUB-012-001",
+      "note": "Perimetro de Contencao Alfa - contamination ALTA por corrupcao da Raiz Profunda (fase 57), distinto de contaminacao ambiental comum."
+    }
+  ],
+  "recovery_rule": {
+    "base_recovery_days": 7,
+    "material_override": "Ver recovery_days em environmental_material_profile de cada construcao (varia de 3 a 10 dias conforme material).",
+    "rule_summary": "Recuperacao estrutural preserva o historico do dano (STELLAR_CAUSALITY_LAW: recuperacao nunca apaga o dano, so o repara) - uma construcao reconstruida carrega a marca de ja ter sido danificada, mesmo apos o periodo de recuperacao."
+  },
+  "prohibitions": [
+    "NO_MAP_WIDE_FIRE_WITHOUT_AUTHORIAL_GATE",
+    "NO_DAMAGE_HISTORY_ERASURE",
+    "NO_CONFLATION_WITH_ROOT_CORRUPTION"
+  ]
+}

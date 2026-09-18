@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-010-001",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Salão do Conselho",
+  "parent_subregion": "SUB-010-001",
+  "parent_political_unit": "TER-010",
+  "function": "Câmara onde o conselho enohariano se reúne e delibera.",
+  "notable_link": "Maelkar Enohar (autoridade máxima)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-010-001",
+  "settlement_tier": "CIDADE",
+  "history": "O Salão foi erguido sobre um dos pontos de maior afloramento natural da Corrente Planetária conhecidos no território, escolhido de propósito pelos fundadores do Domínio como forma de garantir que qualquer decisão tomada ali carregasse peso simbólico além do político. Maelkar Enohar é o herdeiro mais recente de uma linhagem que governa a partir desse mesmo salão há gerações — não por eleição, mas por descendência direta de quem primeiro aprendeu a canalizar a Corrente ali de forma estável o bastante pra fundar uma instituição em torno dela.",
+  "sensory": "O ar dentro do Salão tem uma vibração quase imperceptível, um zumbido baixo que só quem passa tempo suficiente ali aprende a sentir contra a pele — a Corrente aflorando por baixo da pedra do próprio piso. As colunas que sustentam o teto alto são entalhadas com runas que brilham fracamente ao anoitecer, alimentadas pela mesma energia, e conselheiros mais antigos afirmam conseguir prever mudanças de humor coletivo na sala só pela intensidade daquele brilho.",
+  "figures": [
+    {
+      "role": "Enoharca reinante",
+      "name": "Maelkar Enohar",
+      "note": "Governa com autoridade que poucos ousam questionar abertamente, não por medo de retaliação, mas por respeito genuíno construído ao longo de décadas de decisões cautelosas. Sente, em segredo, que a própria conexão com a Corrente está enfraquecendo com a idade, algo que nunca admitiu nem ao conselho mais próximo."
+    },
+    {
+      "role": "Conselheira mais jovem",
+      "name": "Yssandra Vethral",
+      "note": "A mais recente a ingressar no conselho, formada na Academia da Vertente com talento reconhecido para canalização — alguns veteranos já sussurram que ela poderia ser a sucessora natural de Maelkar, um rumor que ela mesma nem confirma nem nega publicamente."
+    }
+  ],
+  "hook": "Maelkar convocou uma sessão fechada do conselho sem explicar o motivo, algo raro o bastante pra gerar especulação generalizada — Yssandra suspeita que tem relação com a própria condição enfraquecida dele, mas não tem coragem de perguntar diretamente antes da sessão acontecer.",
+  "detail": "Nenhuma decisão do Salão é considerada válida sem que ao menos três conselheiros presentes consigam sentir o brilho das runas se intensificar durante o debate — um critério subjetivo que, na prática, dá margem pra disputas sobre se uma decisão realmente teve o \"aval da Corrente\" ou não.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION", "NO_MAGIC_LAW_REWRITE"]
+}

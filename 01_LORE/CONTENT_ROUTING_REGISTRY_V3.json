@@ -1,0 +1,1022 @@
+{
+  "record_id": "CONTENT_ROUTING_REGISTRY_V3",
+  "status": "ACTIVE_R2_LIBRARY_ROUTING_WITH_LOT_008_PLAYABLE_TAXONOMY",
+  "rule": "ONE_CANONICAL_HOME; secondary domains store references only.",
+  "source_archive_sha256": "257e456a5d0396310ec2355b3dfc0f11f4e0a5264cf6e764591c8760f5070cb0",
+  "entries": [
+    {
+      "content_id": "COS-001",
+      "kind": "COS",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/COSMOLOGIA_E_PLANETA/COSMOLOGIA/COS-001__yah-hi.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "COS-002",
+      "kind": "COS",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/COSMOLOGIA_E_PLANETA/COSMOLOGIA/COS-002__amadon.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "COS-003",
+      "kind": "COS",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/COSMOLOGIA_E_PLANETA/COSMOLOGIA/COS-003__votakhel.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "PLA-001",
+      "kind": "PLA",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/COSMOLOGIA_E_PLANETA/PLANETAS/PLA-001__stellar.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "BIO-001",
+      "kind": "BIO",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/GEOGRAFIA/BIOMAS/BIO-001__coracao-ancestral.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "BIO-002",
+      "kind": "BIO",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/GEOGRAFIA/BIOMAS/BIO-002__planicies-luminais.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "BIO-003",
+      "kind": "BIO",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/GEOGRAFIA/BIOMAS/BIO-003__oceanos-e-abissos.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "BIO-004",
+      "kind": "BIO",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/GEOGRAFIA/BIOMAS/BIO-004__subsolo-cristalino.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "BIO-005",
+      "kind": "BIO",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/GEOGRAFIA/BIOMAS/BIO-005__picos-de-tempestade.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "BIO-006",
+      "kind": "BIO",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/GEOGRAFIA/BIOMAS/BIO-006__pantanos-rubros.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "TER-001",
+      "kind": "TER",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/GEOGRAFIA/UNIDADES_POLITICAS/TER-001__confederacao-de-luminor.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "TER-002",
+      "kind": "TER",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/GEOGRAFIA/UNIDADES_POLITICAS/TER-002__reino-ferral-de-kharveth.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "TER-003",
+      "kind": "TER",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/GEOGRAFIA/UNIDADES_POLITICAS/TER-003__republica-de-ortheon.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "TER-004",
+      "kind": "TER",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/GEOGRAFIA/UNIDADES_POLITICAS/TER-004__arquipelago-livre-de-navyr.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "TER-005",
+      "kind": "TER",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/GEOGRAFIA/UNIDADES_POLITICAS/TER-005__principado-de-ithra.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "TER-006",
+      "kind": "TER",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/GEOGRAFIA/UNIDADES_POLITICAS/TER-006__reino-aereo-de-altavela.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "TER-007",
+      "kind": "TER",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/GEOGRAFIA/UNIDADES_POLITICAS/TER-007__rubra-viva.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "TER-008",
+      "kind": "TER",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/GEOGRAFIA/UNIDADES_POLITICAS/TER-008__santuarios-do-coracao.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "TER-009",
+      "kind": "TER",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/GEOGRAFIA/UNIDADES_POLITICAS/TER-009__liga-subcristal.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "TER-010",
+      "kind": "TER",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/GEOGRAFIA/UNIDADES_POLITICAS/TER-010__dominio-dos-reis-magos.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "TER-011",
+      "kind": "TER",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/GEOGRAFIA/UNIDADES_POLITICAS/TER-011__terras-livres.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "TER-012",
+      "kind": "TER",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/GEOGRAFIA/UNIDADES_POLITICAS/TER-012__zonas-de-contencao.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "TER-013",
+      "kind": "TER",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/GEOGRAFIA/UNIDADES_POLITICAS/TER-013__fortaleza-do-trovao.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "CIT-001",
+      "kind": "CIT",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/GEOGRAFIA/SUBREGIOES_CIDADES_E_LOCAIS/CIT-001__posto-de-varga.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "CIT-002",
+      "kind": "CIT",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/GEOGRAFIA/SUBREGIOES_CIDADES_E_LOCAIS/CIT-002__estacao-oriental.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "LID-001",
+      "kind": "LID",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SOCIEDADES/LIDERES/LID-001__elyra-vaelor.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "LID-002",
+      "kind": "LID",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SOCIEDADES/LIDERES/LID-002__odran-ferrak-iv.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "LID-003",
+      "kind": "LID",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SOCIEDADES/LIDERES/LID-003__caelen-orthev.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "LID-004",
+      "kind": "LID",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SOCIEDADES/LIDERES/LID-004__nymara-vel-thal.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "LID-005",
+      "kind": "LID",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SOCIEDADES/LIDERES/LID-005__saelyra-ithren.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "LID-006",
+      "kind": "LID",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SOCIEDADES/LIDERES/LID-006__vaelora-aereth.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "LID-007",
+      "kind": "LID",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SOCIEDADES/LIDERES/LID-007__maeryn-salvara.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "LID-008",
+      "kind": "LID",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SOCIEDADES/LIDERES/LID-008__torvhan-calther.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "PER-001",
+      "kind": "PER",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-001__aelyra-voss.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "PER-002",
+      "kind": "PER",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-002__kenua-vaarn.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "PER-003",
+      "kind": "PER",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-003__serlis-aftermoon.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "PER-004",
+      "kind": "PER",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-004__genes-arvath.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "PER-005",
+      "kind": "PER",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-005__serverus-vaelkor.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "PER-006",
+      "kind": "PER",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-006__kaenna-vor.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "PER-007",
+      "kind": "PER",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-007__ishara-veyn.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "PER-008",
+      "kind": "PER",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-008__maelkar-enohar.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "PER-009",
+      "kind": "PER",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-009__daren-vaarn.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "PER-010",
+      "kind": "PER",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-010__meyra-vaarn.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "PER-011",
+      "kind": "PER",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-011__ilyan-morveth.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "CUL-001",
+      "kind": "CUL",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SOCIEDADES/CULTURAS/CUL-001__luminari.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "CUL-002",
+      "kind": "CUL",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SOCIEDADES/CULTURAS/CUL-002__ferralinos.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "CUL-003",
+      "kind": "CUL",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SOCIEDADES/CULTURAS/CUL-003__ortheanos.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "CUL-004",
+      "kind": "CUL",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SOCIEDADES/CULTURAS/CUL-004__navyrianos.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "CUL-005",
+      "kind": "CUL",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SOCIEDADES/CULTURAS/CUL-005__ithrianos.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "CUL-006",
+      "kind": "CUL",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SOCIEDADES/CULTURAS/CUL-006__altavelanos.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "CUL-007",
+      "kind": "CUL",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SOCIEDADES/CULTURAS/CUL-007__rubravivos.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "CUL-008",
+      "kind": "CUL",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SOCIEDADES/CULTURAS/CUL-008__povos-das-copas.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "CUL-009",
+      "kind": "CUL",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SOCIEDADES/CULTURAS/CUL-009__subcristalinos.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "CUL-010",
+      "kind": "CUL",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SOCIEDADES/CULTURAS/CUL-010__enoharianos.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "CUL-011",
+      "kind": "CUL",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SOCIEDADES/CULTURAS/CUL-011__fronteiricos.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "CUL-012",
+      "kind": "CUL",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SOCIEDADES/CULTURAS/CUL-012__deslocados-e-equipes-de-contencao.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "CUL-013",
+      "kind": "CUL",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SOCIEDADES/CULTURAS/CUL-013__seguidores-e-contratados.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "FAC-001",
+      "kind": "FAC",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SOCIEDADES/FACCOES/FAC-001__arvores-ancias.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "FAC-002",
+      "kind": "FAC",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SOCIEDADES/FACCOES/FAC-002__reis-magos.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "FAC-003",
+      "kind": "FAC",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SOCIEDADES/FACCOES/FAC-003__conselho-de-convergencia.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "FAC-004",
+      "kind": "FAC",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SOCIEDADES/FACCOES/FAC-004__vigilia-radicular.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "FAC-005",
+      "kind": "FAC",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SOCIEDADES/FACCOES/FAC-005__circulo-arcano-botanico.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "CRI-001",
+      "kind": "CRI",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-001__cortassom.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "CRI-002",
+      "kind": "CRI",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-002__velurio.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "CRI-003",
+      "kind": "CRI",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-003__brumante.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "CRI-004",
+      "kind": "CRI",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-004__lumara.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "CRI-005",
+      "kind": "CRI",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-005__raizel-manso.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "CRI-006",
+      "kind": "CRI",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-006__luzipolen.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "CRI-007",
+      "kind": "CRI",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-007__fio-de-orvalho.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "CRI-008",
+      "kind": "CRI",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-008__grilo-cobre.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "CRI-009",
+      "kind": "CRI",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-009__larva-de-veu.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "CRI-010",
+      "kind": "CRI",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-010__vespa-de-vidro.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "CRI-011",
+      "kind": "CRI",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-011__besouro-rubro.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "CRI-012",
+      "kind": "CRI",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-012__louva-fenda.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "CRI-013",
+      "kind": "CRI",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/ECOLOGIA/FAUNA/CRI-013__mandibula-de-nevoa.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "COR-001",
+      "kind": "COR",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/ECOLOGIA/CORROMPIDOS/COR-001__raiz-profunda.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "MAG-001",
+      "kind": "MAG",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SISTEMAS/MAGIA/MAG-001__leis-da-magia.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "MAG-002",
+      "kind": "MAG",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SISTEMAS/MAGIA/MAG-002__runas.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "MAG-003",
+      "kind": "MAG",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SISTEMAS/MAGIA/MAG-003__corrente-planetaria.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "MAG-004",
+      "kind": "MAG",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SISTEMAS/MAGIA/MAG-004__marca-inselavel.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "MAG-005",
+      "kind": "MAG",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SISTEMAS/MAGIA/MAG-005__estados-de-controle-da-simbiose.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "MAG-006",
+      "kind": "MAG",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SISTEMAS/MAGIA/MAG-006__escala-de-combate.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "MAG-007",
+      "kind": "MAG",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SISTEMAS/MAGIA/MAG-007__estase-de-intervalo.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "TEC-001",
+      "kind": "TEC",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SISTEMAS/TECNOLOGIA/TEC-001__rede-ferroviaria-de-ortheon.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "TEC-002",
+      "kind": "TEC",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SISTEMAS/TECNOLOGIA/TEC-002__tecnomagia-de-ithra.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "TEC-003",
+      "kind": "TEC",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/SISTEMAS/TECNOLOGIA/TEC-003__industria-ferral.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "ART-001",
+      "kind": "ART",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-001__espinho-negro.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "ART-002",
+      "kind": "ART",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-002__espada-de-kenua.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "ART-003",
+      "kind": "ART",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-003__marcador-de-rota.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "ART-004",
+      "kind": "ART",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-004__sistema-de-armamentos.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "ART-005",
+      "kind": "ART",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-005__laminas.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "ART-006",
+      "kind": "ART",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-006__fuzis.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "ART-007",
+      "kind": "ART",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-007__revolveres.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "ART-008",
+      "kind": "ART",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-008__espingardas.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "ART-009",
+      "kind": "ART",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-009__fuzis-de-precisao.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "ART-010",
+      "kind": "ART",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-010__armas-de-arremesso.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "ART-011",
+      "kind": "ART",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-011__armas-de-explosao.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "ART-012",
+      "kind": "ART",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-012__armas-de-contencao.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "ART-013",
+      "kind": "ART",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-013__dispositivos-de-flash.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "ART-014",
+      "kind": "ART",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-014__armas-improvisadas.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "ART-015",
+      "kind": "ART",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/EQUIPAMENTO/ARTEFATOS_E_ARMAS/ART-015__armerias-runicas.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "HIS-001",
+      "kind": "HIS",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/HISTORIA/HIS-001__pacto-de-convergencia.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "HIS-002",
+      "kind": "HIS",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/HISTORIA/HIS-002__guerra-dos-veios-partidos.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "HIS-003",
+      "kind": "HIS",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/HISTORIA/HIS-003__caso-aelyra.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "HIS-004",
+      "kind": "HIS",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/HISTORIA/HIS-004__redescoberta-do-espinho-negro.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "MYS-001",
+      "kind": "MYS",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/MISTERIOS/MYS-001__voz-alem-da-planta.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "MYS-002",
+      "kind": "MYS",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "01_LORE/CANON_R2/MISTERIOS/MYS-002__segunda-etapa-de-serverus.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": []
+    },
+    {
+      "content_id": "EPI-002",
+      "kind": "EPI",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "03_EPISODIOS/SEASON_01_KENUA_R2/01_A_RECOMPENSA/EPISODIO_1_A_RECOMPENSA_ROTEIRO_COMPLETO_V3.md",
+      "source_hash": "e534bc1a36e6661a3a32330e7bbe28ce351f0f982f4376541a1a9776148bf017",
+      "references": []
+    },
+    {
+      "content_id": "EPI-003",
+      "kind": "EPI",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "03_EPISODIOS/SEASON_01_KENUA_R2/02_A_FLOR_FECHADA/EPISODIO_2_A_FLOR_FECHADA_ROTEIRO_COMPLETO_V1.md",
+      "source_hash": "46b65c83cc9fe53f83fe3c578b11851929ff96d72104ff6fd1dea43d1f6710aa",
+      "references": []
+    },
+    {
+      "content_id": "EPI-004",
+      "kind": "EPI",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "03_EPISODIOS/SEASON_01_KENUA_R2/03_CORPO_ESTRANHO/EPISODIO_3_CORPO_ESTRANHO_ROTEIRO_COMPLETO_V1.md",
+      "source_hash": "8c32489268c02ad7ed80d1e569d7e41d674111329e16900dd15e84795c4ee5e0",
+      "references": []
+    },
+    {
+      "content_id": "EPI-005",
+      "kind": "EPI",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "03_EPISODIOS/SEASON_01_KENUA_R2/04_RAIZES_NA_CARNE/EPISODIO_4_RAIZES_NA_CARNE_ROTEIRO_COMPLETO_V1.md",
+      "source_hash": "23da2918d4f6b6e5efc4e616e64124e01a2bf90f785e2dac408a17ab9133312a",
+      "references": []
+    },
+    {
+      "content_id": "EPI-006",
+      "kind": "EPI",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "03_EPISODIOS/SEASON_01_KENUA_R2/05_A_HOSPEDEIRA_ANTERIOR/EPISODIO_5_A_HOSPEDEIRA_ANTERIOR_ROTEIRO_COMPLETO_V1.md",
+      "source_hash": "fe317f39c9214f04a8676aa9ea49cba109553ee04c2ba844661bb26bc59ca733",
+      "references": []
+    },
+    {
+      "content_id": "EPI-007",
+      "kind": "EPI",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "03_EPISODIOS/SEASON_01_KENUA_R2/06_O_SUPREMO_MAGO/EPISODIO_6_O_SUPREMO_MAGO_ROTEIRO_COMPLETO_V1.md",
+      "source_hash": "b411fe56c0dd3c7a751381c2891390c047d98e32c80894d3ab5c34e72cdee702",
+      "references": []
+    },
+    {
+      "content_id": "EPI-008",
+      "kind": "EPI",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "03_EPISODIOS/SEASON_01_KENUA_R2/07_OITENTA_POR_CENTO/EPISODIO_7_OITENTA_POR_CENTO_ROTEIRO_COMPLETO_V1.md",
+      "source_hash": "38e98cf76a8933e4ff92fa89f50232a46995cff95c720e3cbeb2f742ce926a81",
+      "references": []
+    },
+    {
+      "content_id": "EPI-009",
+      "kind": "EPI",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "03_EPISODIOS/SEASON_01_KENUA_R2/08_O_HOSPEDEIRO/EPISODIO_8_O_HOSPEDEIRO_ROTEIRO_COMPLETO_V1.md",
+      "source_hash": "f27e0baeecceff87c3251b67b1e69e9207f3adf83c0278452cbf6e8f941e599d",
+      "references": []
+    },
+    {
+      "content_id": "EPI-001",
+      "kind": "EPI",
+      "authority": "CANON_R2_CONFIRMADO",
+      "canonical_home": "03_EPISODIOS/SEASON_01_KENUA_R2/00_SEASON_LOCK/SEASON_01_KENUA_R2_INDEX_V1.json",
+      "source_hash": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726",
+      "references": [
+        "03_EPISODIOS/SEASON_01_KENUA_R2/00_SEASON_LOCK/ENCERRAMENTO_CANONICO_TEMPORADA_1.md"
+      ]
+    },
+    {
+      "content_id": "FAC-009",
+      "kind": "FAC",
+      "authority": "CANON_DERIVADO_ATIVO",
+      "canonical_home": "01_LORE/CANON_DERIVADO_ATIVO/SOCIEDADES/FACCOES/FAC-009__colegiado-dos-oficios-de-oficina-da-fronteira.json",
+      "source_hash": "897b7c7dccd66cdc0d4e208480139e975772fe564768586a12dd91640c3781ed",
+      "references": [
+        "04_MECANICAS/FACTIONS_AND_INSTITUTIONS/ARPG_NARRATIVE_CULTURE_COMPATIBILITY_LAYER_V1_0.json",
+        "01_LORE/CANON_DERIVADO_ATIVO/SOCIEDADES/FACCOES/FAC-009_FAC-010__RELATIONSHIP_CHARTER_V1.json"
+      ]
+    },
+    {
+      "content_id": "FAC-010",
+      "kind": "FAC",
+      "authority": "CANON_DERIVADO_ATIVO",
+      "canonical_home": "01_LORE/CANON_DERIVADO_ATIVO/SOCIEDADES/FACCOES/FAC-010__liga-de-oficinas-licenciadas-da-fronteira.json",
+      "source_hash": "df8b004b1b407bd5a1e71ad71d753f460c5c932957dd360e044d6074f394cdd6",
+      "references": [
+        "04_MECANICAS/FACTIONS_AND_INSTITUTIONS/ARPG_NARRATIVE_CULTURE_COMPATIBILITY_LAYER_V1_0.json",
+        "01_LORE/CANON_DERIVADO_ATIVO/SOCIEDADES/FACCOES/FAC-009_FAC-010__RELATIONSHIP_CHARTER_V1.json"
+      ]
+    },
+    {
+      "content_id": "CAT-RESOURCES",
+      "kind": "CATALOG",
+      "authority": "CANON_DERIVADO_ATIVO",
+      "canonical_home": "04_MECANICAS/ECONOMIA_E_RECURSOS/STELLAR_RESOURCE_CATALOG_V1_0.json",
+      "source_hash": "3d35615a0523908fcbf48f4f11e9497578ab4ec6840da73494196378a60cd40b",
+      "references": [
+        "BIO",
+        "CRI"
+      ]
+    },
+    {
+      "content_id": "CAT-PROFESSIONS",
+      "kind": "CATALOG",
+      "authority": "CANON_DERIVADO_ATIVO",
+      "canonical_home": "04_MECANICAS/TRABALHO_E_PROFISSOES/STELLAR_PROFESSION_CATALOG_V1_0.json",
+      "source_hash": "c448e53f705a69fc4417343d9fdc909681f2102780c44c214ca0ec67be3d73e2",
+      "references": [
+        "PER",
+        "FAC",
+        "TEC",
+        "ART"
+      ]
+    },
+    {
+      "content_id": "CAT-NPC-ROLES",
+      "kind": "CATALOG",
+      "authority": "CANON_DERIVADO_ATIVO",
+      "canonical_home": "04_MECANICAS/NPCS_E_INTERACOES/STELLAR_NPC_ROLE_CATALOG_V1_0.json",
+      "source_hash": "4e87d82770d73036416a14d48d8f1ae3f7c4adc7b350ec5a4243397c535328e4",
+      "references": [
+        "JOB",
+        "PER",
+        "LID"
+      ]
+    },
+    {
+      "content_id": "CAT-R2-APPEARANCE-GUARD",
+      "kind": "CATALOG",
+      "authority": "CANON_DERIVADO_ATIVO",
+      "canonical_home": "04_MECANICAS/NPCS_E_INTERACOES/STELLAR_R2_NAMED_APPEARANCE_GUARD_V1_0.json",
+      "source_hash": "502a2e3ad0a6c12512b319a4db6f98076a696721f393d6fd0459d056f14e084d",
+      "references": [
+        "PER",
+        "LID",
+        "EPI"
+      ]
+    },
+    {
+      "content_id": "CAT-ENCOUNTERS",
+      "kind": "CATALOG",
+      "authority": "CANON_DERIVADO_ATIVO",
+      "canonical_home": "04_MECANICAS/INIMIGOS_E_COMBATE/STELLAR_ENCOUNTER_CATALOG_V1_0.json",
+      "source_hash": "282895592edf7a7b7adf7b044f93c58610e9ec78ca8ce92599d8292ee5dc0897",
+      "references": [
+        "CRI",
+        "COR"
+      ]
+    }
+  ],
+  "unresolved_niches": [
+    "R2_SUBREGION_RECORDS_NOT_YET_DEFINED"
+  ]
+}

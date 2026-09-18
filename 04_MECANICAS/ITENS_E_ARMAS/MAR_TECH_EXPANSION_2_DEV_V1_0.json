@@ -1,0 +1,353 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "MAR-TECH-EXPANSION-2-DEV-V1.0",
+  "title": "MAR — 3ª e 4ª opção por tier em Tecnológica (completa 16 armas para Androids)",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "canonical_status": "GAMEPLAY_DERIVED_DEV",
+  "master_integration_status": "NOT_SUBMITTED",
+  "supplements": [
+    "MAR_TECH_AND_MAGIC_GAMEPLAY_STATS_DEV_V1_0.json",
+    "MAR_TECH_AND_MAGIC_EXPANSION_DEV_V1_0.json"
+  ],
+  "r2_guard": "Sem base R2 (mesma nota de lore inédita do arquivo original, ver FAC-090, renumerado de FAC-011). Completa o pool de armas necessário para formar 8 NPCs Androids (2 armas cada).",
+  "weapons": [
+    {
+      "weapon_id": "WPN-TEC-009",
+      "name": "Escudo Reativo Compacto",
+      "r2_source_category": null,
+      "family": "Tecnológica",
+      "owner_class": "Androids",
+      "runification_tier": "T0",
+      "runes_referenced": [],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 20,
+        "defense": 50,
+        "utility": 30,
+        "handling": 55,
+        "durability": 50,
+        "reach": 18,
+        "magic_affinity": 0,
+        "tech_affinity": 42,
+        "overall": 33
+      },
+      "balance_role": {
+        "subtype": "defesa sintética leve",
+        "primary_strength": "defense",
+        "primary_weakness": "magic_affinity",
+        "advantage": "campo reativo compacto absorve impacto físico a curta distância",
+        "limitation": "quase nenhum poder ofensivo próprio"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (equipamento passivo)",
+        "impact_type": "CORTE_OU_ENERGIA",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ],
+      "weight_kg": 2.0
+    },
+    {
+      "weapon_id": "WPN-TEC-010",
+      "name": "Lançador de Fragmentos Sintéticos",
+      "r2_source_category": null,
+      "family": "Tecnológica",
+      "owner_class": "Androids",
+      "runification_tier": "T1",
+      "runes_referenced": [],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "MÉDIO",
+      "cost_tier": 2,
+      "stats": {
+        "power": 52,
+        "defense": 26,
+        "utility": 40,
+        "handling": 48,
+        "durability": 40,
+        "reach": 44,
+        "magic_affinity": 3,
+        "tech_affinity": 56,
+        "overall": 39
+      },
+      "balance_role": {
+        "subtype": "saturação de área leve",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "magic_affinity",
+        "advantage": "fragmentos sintéticos cobrem área média sem gasto alto de energia",
+        "limitation": "dano disperso, fraco contra alvo único blindado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "ARCO_BALÍSTICO",
+        "impact_type": "CORTE_OU_ENERGIA",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ],
+      "weight_kg": 3.33
+    },
+    {
+      "weapon_id": "WPN-TEC-011",
+      "name": "Torreta Portátil de Convergência",
+      "r2_source_category": null,
+      "family": "Tecnológica",
+      "owner_class": "Androids",
+      "runification_tier": "T2",
+      "runes_referenced": [],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 72,
+        "defense": 34,
+        "utility": 50,
+        "handling": 30,
+        "durability": 44,
+        "reach": 66,
+        "magic_affinity": 5,
+        "tech_affinity": 72,
+        "overall": 47
+      },
+      "balance_role": {
+        "subtype": "artilharia estacionária",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "magic_affinity",
+        "advantage": "converge múltiplos disparos numa torre destacável do próprio chassi",
+        "limitation": "exige tempo de instalação, vulnerável enquanto se desdobra"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "RETA_TECNOLÓGICA (sem queda)",
+        "impact_type": "CORTE_OU_ENERGIA",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ],
+      "point_blank_capable": true,
+      "point_blank_note": "Dentro de CLINCH/IN_FIGHTING (<=2,75m): impacto garantido, sem dispersao, bonus de dano por proximidade.",
+      "weight_kg": 4.67
+    },
+    {
+      "weapon_id": "WPN-TEC-012",
+      "name": "Exoesqueleto de Assalto",
+      "r2_source_category": null,
+      "family": "Tecnológica",
+      "owner_class": "Androids",
+      "runification_tier": "T3",
+      "runes_referenced": [],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 86,
+        "defense": 48,
+        "utility": 60,
+        "handling": 36,
+        "durability": 34,
+        "reach": 42,
+        "magic_affinity": 8,
+        "tech_affinity": 80,
+        "overall": 49
+      },
+      "balance_role": {
+        "subtype": "assalto blindado de elite",
+        "primary_strength": "power",
+        "primary_weakness": "magic_affinity",
+        "advantage": "reforço estrutural total do chassi, maior poder de impacto do catálogo tecnológico",
+        "limitation": "consumo de energia elevadíssimo limita duração de combate"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (equipamento passivo)",
+        "impact_type": "CORTE_OU_ENERGIA",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ],
+      "weight_kg": 6.0
+    },
+    {
+      "weapon_id": "WPN-TEC-013",
+      "name": "Faca Vibracional Padrão",
+      "r2_source_category": null,
+      "family": "Tecnológica",
+      "owner_class": "Androids",
+      "runification_tier": "T0",
+      "runes_referenced": [],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "BAIXO",
+      "cost_tier": 1,
+      "stats": {
+        "power": 44,
+        "defense": 22,
+        "utility": 20,
+        "handling": 56,
+        "durability": 48,
+        "reach": 22,
+        "magic_affinity": 0,
+        "tech_affinity": 44,
+        "overall": 32
+      },
+      "balance_role": {
+        "subtype": "corte sintético vibracional",
+        "primary_strength": "handling",
+        "primary_weakness": "magic_affinity",
+        "advantage": "lâmina vibra em alta frequência, corta com pouco esforço mecânico",
+        "limitation": "componente frágil, perde eficiência com uso contínuo"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (corpo-a-corpo/energia)",
+        "impact_type": "CORTE_OU_ENERGIA",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ],
+      "weight_kg": 2.0
+    },
+    {
+      "weapon_id": "WPN-TEC-014",
+      "name": "Escudo de Choque Sináptico",
+      "r2_source_category": null,
+      "family": "Tecnológica",
+      "owner_class": "Androids",
+      "runification_tier": "T1",
+      "runes_referenced": [],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "MÉDIO",
+      "cost_tier": 2,
+      "stats": {
+        "power": 46,
+        "defense": 40,
+        "utility": 42,
+        "handling": 46,
+        "durability": 44,
+        "reach": 30,
+        "magic_affinity": 4,
+        "tech_affinity": 54,
+        "overall": 38
+      },
+      "balance_role": {
+        "subtype": "defesa com contra-ataque",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "magic_affinity",
+        "advantage": "bloqueia e devolve choque sináptico ao atacante",
+        "limitation": "alcance curto exige combate próximo"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (equipamento passivo)",
+        "impact_type": "CORTE_OU_ENERGIA",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ],
+      "weight_kg": 3.33
+    },
+    {
+      "weapon_id": "WPN-TEC-015",
+      "name": "Lâmina de Plasma Contida",
+      "r2_source_category": null,
+      "family": "Tecnológica",
+      "owner_class": "Androids",
+      "runification_tier": "T2",
+      "runes_referenced": [],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "BAIXO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 70,
+        "defense": 32,
+        "utility": 46,
+        "handling": 40,
+        "durability": 38,
+        "reach": 36,
+        "magic_affinity": 7,
+        "tech_affinity": 70,
+        "overall": 42
+      },
+      "balance_role": {
+        "subtype": "corte de alta energia",
+        "primary_strength": "tech_affinity",
+        "primary_weakness": "magic_affinity",
+        "advantage": "campo de contenção mantém o plasma estável na lâmina",
+        "limitation": "falha de contenção sob dano acumulado é perigosa para o próprio portador"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (corpo-a-corpo/energia)",
+        "impact_type": "CORTE_OU_ENERGIA",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ],
+      "weight_kg": 4.67
+    },
+    {
+      "weapon_id": "WPN-TEC-016",
+      "name": "Núcleo Gêmeo de Sobrecarga",
+      "r2_source_category": null,
+      "family": "Tecnológica",
+      "owner_class": "Androids",
+      "runification_tier": "T3",
+      "runes_referenced": [],
+      "gameplay_scale": "NORMALIZED_0_100",
+      "class": "MÉDIO",
+      "relative_cost": "ALTO",
+      "cost_tier": 3,
+      "stats": {
+        "power": 90,
+        "defense": 36,
+        "utility": 64,
+        "handling": 28,
+        "durability": 30,
+        "reach": 56,
+        "magic_affinity": 10,
+        "tech_affinity": 84,
+        "overall": 50
+      },
+      "balance_role": {
+        "subtype": "sobrecarga dupla de elite",
+        "primary_strength": "power",
+        "primary_weakness": "magic_affinity",
+        "advantage": "dois núcleos entregam o maior dano tecnológico do catálogo",
+        "limitation": "risco crítico de falha simultânea dos dois núcleos sob dano pesado"
+      },
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "physics": {
+        "trajectory_type": "N/A (equipamento passivo)",
+        "impact_type": "CORTE_OU_ENERGIA",
+        "area_effect": "PONTUAL"
+      },
+      "currency_tags": [
+        "CUR-005",
+        "CUR-000"
+      ],
+      "weight_kg": 6.0
+    }
+  ]
+}

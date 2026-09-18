@@ -1,0 +1,88 @@
+{
+  "record_id": "ARPG-WORLD-SYSTEM-CONTRACT-V0.9.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "component": "ARPG World / Biomes",
+  "version": "V0.9.0",
+  "stage": "08/23",
+  "status": "PASS",
+  "authority": "ARPG_WORLD_BIOMES_GAMEPLAY_DERIVATION",
+  "master_dependency": {
+    "version": "V2.0.1",
+    "sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "mode": "READ_ONLY"
+  },
+  "parent_checkpoint": {
+    "stage": "07",
+    "sha256": "17279cd15edcd94fb0f383d7c39fb518ad26b939c804cef67c479e4016d154d2"
+  },
+  "playable_scope": {
+    "country_count": 1,
+    "territory_id": "TER-011",
+    "name": "Terras Livres",
+    "other_territories": "INDEXED_READ_ONLY_NOT_PLAYABLE"
+  },
+  "canonical_bindings": {
+    "primary_biome": {
+      "id": "BIO-008",
+      "name": "Campos da Fronteira",
+      "basis": "geometry exactly matches TER-011"
+    },
+    "major_biome": {
+      "id": "BIO-002",
+      "name": "Planícies Luminais",
+      "role": "major system overlay"
+    },
+    "climate": {
+      "id": "CLM-002",
+      "name": "Continental dos Campos",
+      "temperature_c_typical": [
+        2,
+        33
+      ],
+      "annual_precipitation_mm": [
+        420,
+        950
+      ]
+    },
+    "hydrology": [
+      "BAS-001",
+      "RIV-VARDEN"
+    ],
+    "canonical_start_location": {
+      "id": "CIT-001",
+      "name": "Posto de Varga"
+    },
+    "outbound_routes": [
+      "RTE-001",
+      "RTE-003",
+      "RTE-013"
+    ]
+  },
+  "root_deep_policy": {
+    "canonical_underlay": "BIO-008/BIO-002",
+    "local_overlay": "BIO-ROOT-DEEP",
+    "overlay_authority": "COUNTRY_SCALE_STRUCTURAL_AUTHORIZATION_PENDING_MASTER_CONSOLIDATION",
+    "predator_only": true,
+    "normal_city_allowed": false,
+    "normal_flora_allowed": false
+  },
+  "world_rules": [
+    "Country procedural blocks become ARPG zones but cannot override canonical territory/biome/climate authority.",
+    "Zone count is seed-dependent; canonical biome/climate/hydrology bindings are invariant.",
+    "All cross-country routes remain boundary gates until the one-country system is declared stable.",
+    "Dynamic weather is gameplay-derived and deterministic by WORLD_SEED+ZONE_REF+STEP inside canonical climate bounds.",
+    "Existing Country Scale dungeons are projected as runtime-derived dungeons; their names/instances are not silently promoted to Master canon.",
+    "Encounter anchors are deterministic spawn slots; Actor Core Stage07 remains actor/hostility authority.",
+    "Gathering/resource behavior is gated to Stage09; vehicles/roads/bridges traversal behavior is gated to Stage10."
+  ],
+  "waypoints": {
+    "canonical": "CIT-001 start waypoint",
+    "runtime": "one replaceable travel anchor per procedural state",
+    "discovery_required": true,
+    "idempotent_events": true
+  },
+  "art_dependency": "NONE_PLACEHOLDER_READY",
+  "godot_required_for_stage08": false,
+  "generated_at": "2026-08-18T19:30:45.648266+00:00",
+  "candidate_restore_status": "PASS"
+}

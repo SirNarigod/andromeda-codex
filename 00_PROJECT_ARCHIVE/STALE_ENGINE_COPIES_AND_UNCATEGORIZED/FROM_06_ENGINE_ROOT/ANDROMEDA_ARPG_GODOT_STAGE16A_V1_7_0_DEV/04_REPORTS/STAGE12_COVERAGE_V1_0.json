@@ -1,0 +1,9 @@
+{
+  "record_id": "STAGE12-COVERAGE-V1.0",
+  "status": "PASS",
+  "module": "01_RUNTIME/llm_gateway.py",
+  "percent_covered": 93.78,
+  "num_statements": 209,
+  "covered_lines": 196,
+  "missing_lines": 13
+}

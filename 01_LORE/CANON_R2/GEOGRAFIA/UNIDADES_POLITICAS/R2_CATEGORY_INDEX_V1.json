@@ -1,0 +1,100 @@
+{
+  "record_id": "R2-TER-CATEGORY-INDEX-V1",
+  "authority": "CANON_R2_CONFIRMADO",
+  "category": "TER",
+  "category_name": "Territórios",
+  "items": [
+    {
+      "id": "TER-001",
+      "title": "Confederação de Lúminor",
+      "path": "01_LORE/CANON_R2/GEOGRAFIA/UNIDADES_POLITICAS/TER-001__confederacao-de-luminor.json",
+      "spoiler": 2,
+      "sealed": false
+    },
+    {
+      "id": "TER-002",
+      "title": "Reino Ferral de Kharveth",
+      "path": "01_LORE/CANON_R2/GEOGRAFIA/UNIDADES_POLITICAS/TER-002__reino-ferral-de-kharveth.json",
+      "spoiler": 2,
+      "sealed": false
+    },
+    {
+      "id": "TER-003",
+      "title": "República de Ortheon",
+      "path": "01_LORE/CANON_R2/GEOGRAFIA/UNIDADES_POLITICAS/TER-003__republica-de-ortheon.json",
+      "spoiler": 2,
+      "sealed": false
+    },
+    {
+      "id": "TER-004",
+      "title": "Arquipélago Livre de Navyr",
+      "path": "01_LORE/CANON_R2/GEOGRAFIA/UNIDADES_POLITICAS/TER-004__arquipelago-livre-de-navyr.json",
+      "spoiler": 2,
+      "sealed": false
+    },
+    {
+      "id": "TER-005",
+      "title": "Principado de Ithra",
+      "path": "01_LORE/CANON_R2/GEOGRAFIA/UNIDADES_POLITICAS/TER-005__principado-de-ithra.json",
+      "spoiler": 2,
+      "sealed": false
+    },
+    {
+      "id": "TER-006",
+      "title": "Reino Aéreo de Altavela",
+      "path": "01_LORE/CANON_R2/GEOGRAFIA/UNIDADES_POLITICAS/TER-006__reino-aereo-de-altavela.json",
+      "spoiler": 2,
+      "sealed": false
+    },
+    {
+      "id": "TER-007",
+      "title": "Rubra-Viva",
+      "path": "01_LORE/CANON_R2/GEOGRAFIA/UNIDADES_POLITICAS/TER-007__rubra-viva.json",
+      "spoiler": 2,
+      "sealed": false
+    },
+    {
+      "id": "TER-008",
+      "title": "Santuários do Coração",
+      "path": "01_LORE/CANON_R2/GEOGRAFIA/UNIDADES_POLITICAS/TER-008__santuarios-do-coracao.json",
+      "spoiler": 2,
+      "sealed": false
+    },
+    {
+      "id": "TER-009",
+      "title": "Liga Subcristal",
+      "path": "01_LORE/CANON_R2/GEOGRAFIA/UNIDADES_POLITICAS/TER-009__liga-subcristal.json",
+      "spoiler": 2,
+      "sealed": false
+    },
+    {
+      "id": "TER-010",
+      "title": "Domínio dos Reis Magos",
+      "path": "01_LORE/CANON_R2/GEOGRAFIA/UNIDADES_POLITICAS/TER-010__dominio-dos-reis-magos.json",
+      "spoiler": 2,
+      "sealed": false
+    },
+    {
+      "id": "TER-011",
+      "title": "Terras Livres",
+      "path": "01_LORE/CANON_R2/GEOGRAFIA/UNIDADES_POLITICAS/TER-011__terras-livres.json",
+      "spoiler": 1,
+      "sealed": false
+    },
+    {
+      "id": "TER-012",
+      "title": "Zonas de Contenção",
+      "path": "01_LORE/CANON_R2/GEOGRAFIA/UNIDADES_POLITICAS/TER-012__zonas-de-contencao.json",
+      "spoiler": 2,
+      "sealed": false
+    },
+    {
+      "id": "TER-013",
+      "title": "Fortaleza do Trovão",
+      "path": "01_LORE/CANON_R2/GEOGRAFIA/UNIDADES_POLITICAS/TER-013__fortaleza-do-trovao.json",
+      "spoiler": 1,
+      "sealed": false
+    }
+  ],
+  "source": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json"
+}

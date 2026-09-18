@@ -1,0 +1,50 @@
+{
+  "record_id": "ARPG-STAGE06-CORRECTION-LEDGER-V0.7.0",
+  "stage": "06/20",
+  "status": "CLOSED",
+  "corrections": [
+    {
+      "id": "S06-C01",
+      "type": "HARNESS",
+      "issue": "Mastery test advanced 1.0s against a 1.2s cooldown.",
+      "resolution": "Advance cooldown by 1.5s; runtime rule unchanged.",
+      "status": "FIXED"
+    },
+    {
+      "id": "S06-C02",
+      "type": "HARNESS_PERFORMANCE",
+      "issue": "Initial stress batch exceeded execution window.",
+      "resolution": "Reduced redundant repetitions while preserving multiple profiles, alternating skills, passive, replay and restore invariants.",
+      "status": "FIXED"
+    },
+    {
+      "id": "S06-C03",
+      "type": "HARNESS",
+      "issue": "Stress restore closed database inside first profile loop.",
+      "resolution": "Moved close after all restored profiles are verified.",
+      "status": "FIXED"
+    },
+    {
+      "id": "S06-C04",
+      "type": "BACKWARD_COMPATIBILITY",
+      "issue": "Stage03 expected legacy skill marker DEFERRED_STAGE07 when no SkillCore is attached.",
+      "resolution": "Restore legacy marker for old engines; Stage06 still returns real skill modifier object.",
+      "status": "FIXED"
+    },
+    {
+      "id": "S06-C05",
+      "type": "TRANSIENT_ARTIFACT",
+      "issue": "Manual py_compile generated __pycache__/.pyc files.",
+      "resolution": "Deleted transient bytecode and enforced PYTHONDONTWRITEBYTECODE=1 for final runs.",
+      "status": "FIXED"
+    },
+    {
+      "id": "S06-C06",
+      "type": "HARNESS",
+      "issue": "Some chained legacy runners exceeded time window before subsequent suites started.",
+      "resolution": "Execute affected suites independently and record only conclusive results.",
+      "status": "FIXED"
+    }
+  ],
+  "open_corrections": 0
+}

@@ -1,0 +1,155 @@
+{
+  "generated_at": "2026-09-06T21:54:32.805724+00:00",
+  "archives_checked": 21,
+  "crc_failures": 0,
+  "results": [
+    {
+      "archive": "andromeda-argp.zip",
+      "depth": 0,
+      "entries": 6406,
+      "crc": "PASS",
+      "bad_member": null
+    },
+    {
+      "archive": "ARPG CODEX.zip",
+      "depth": 0,
+      "entries": 16,
+      "crc": "PASS",
+      "bad_member": null
+    },
+    {
+      "archive": "ARPG CODEX.zip!/ARPG CODEX/ANDROMEDA_ARPG_STAGE16A_PRE_GODOT_V1_8_0_DEV_CHECKPOINT_V0_8_0.zip",
+      "depth": 1,
+      "entries": 724,
+      "crc": "PASS",
+      "bad_member": null
+    },
+    {
+      "archive": "ARPG CODEX.zip!/ARPG CODEX/ANDROMEDA_ARPG_STAGE16A_PRE_GODOT_V1_8_0_DEV_CHECKPOINT_V0_8_1.zip",
+      "depth": 1,
+      "entries": 724,
+      "crc": "PASS",
+      "bad_member": null
+    },
+    {
+      "archive": "ARPG CODEX.zip!/ARPG CODEX/ANDROMEDA_ARPG_STAGE16B_AUTHORITY_GODOT_CHECKPOINT_V0_1_0.zip",
+      "depth": 1,
+      "entries": 304,
+      "crc": "PASS",
+      "bad_member": null
+    },
+    {
+      "archive": "Projeto Andromeda.zip",
+      "depth": 0,
+      "entries": 245,
+      "crc": "PASS",
+      "bad_member": null
+    },
+    {
+      "archive": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Andromeda_Codex/ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE.zip",
+      "depth": 1,
+      "entries": 174,
+      "crc": "PASS",
+      "bad_member": null
+    },
+    {
+      "archive": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Backups Andromeda/ANDROMEDA_ARPG_STAGE16B_AUTHORITY_GODOT_BACKUP_V0_1_0.zip",
+      "depth": 1,
+      "entries": 304,
+      "crc": "PASS",
+      "bad_member": null
+    },
+    {
+      "archive": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Backups Andromeda/ANDROMEDA_CODEX_MASTER_V2_0_1_BACKUP.zip",
+      "depth": 1,
+      "entries": 174,
+      "crc": "PASS",
+      "bad_member": null
+    },
+    {
+      "archive": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Backups Andromeda/ANDROMEDA_LIVING_SIM_ENGINE_V1_0_0_BACKUP.zip",
+      "depth": 1,
+      "entries": 149,
+      "crc": "PASS",
+      "bad_member": null
+    },
+    {
+      "archive": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Copia secundaria - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2_COPY.zip",
+      "depth": 1,
+      "entries": 25,
+      "crc": "PASS",
+      "bad_member": null
+    },
+    {
+      "archive": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Copia secundaria - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2_COPY.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip",
+      "depth": 2,
+      "entries": 1435,
+      "crc": "PASS",
+      "bad_member": null
+    },
+    {
+      "archive": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Copia secundaria - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2_COPY.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL_BACKUP.zip",
+      "depth": 2,
+      "entries": 1318,
+      "crc": "PASS",
+      "bad_member": null
+    },
+    {
+      "archive": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip",
+      "depth": 1,
+      "entries": 25,
+      "crc": "PASS",
+      "bad_member": null
+    },
+    {
+      "archive": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip",
+      "depth": 2,
+      "entries": 1435,
+      "crc": "PASS",
+      "bad_member": null
+    },
+    {
+      "archive": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL_BACKUP.zip",
+      "depth": 2,
+      "entries": 1318,
+      "crc": "PASS",
+      "bad_member": null
+    },
+    {
+      "archive": "Projeto Andromeda.zip!/Projeto Andromeda/ANDROMEDA_FIRST_PLAYABLE_GODOT_V0_1_22_DEV_FIX1.zip",
+      "depth": 1,
+      "entries": 88,
+      "crc": "PASS",
+      "bad_member": null
+    },
+    {
+      "archive": "Projeto Andromeda.zip!/Projeto Andromeda/ANDROMEDA_LIVING_COUNTRY_SCALE_V1_5_0_DEV.zip",
+      "depth": 1,
+      "entries": 352,
+      "crc": "PASS",
+      "bad_member": null
+    },
+    {
+      "archive": "Projeto Andromeda.zip!/Projeto Andromeda/ANDROMEDA_LIVING_COUNTRY_SCALE_V1_5_0_EVIDENCE_FINAL.zip",
+      "depth": 1,
+      "entries": 56,
+      "crc": "PASS",
+      "bad_member": null
+    },
+    {
+      "archive": "Projeto Andromeda.zip!/Projeto Andromeda/ANDROMEDA_LIVING_SIM_ENGINE_V1_0_0_RELEASE.zip",
+      "depth": 1,
+      "entries": 149,
+      "crc": "PASS",
+      "bad_member": null
+    },
+    {
+      "archive": "Projeto Andromeda.zip!/Projeto Andromeda/ANDROMEDA_LIVING_V1_4_0_RELEASE_EVIDENCE.zip",
+      "depth": 1,
+      "entries": 16,
+      "crc": "PASS",
+      "bad_member": null
+    }
+  ],
+  "note": "Verification reads ZIP streams directly and avoids temporary extraction paths. Earlier extraction warnings were Windows path-length issues, not CRC evidence."
+}

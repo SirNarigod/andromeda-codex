@@ -1,0 +1,20 @@
+{
+  "record_id": "V1.2.1-UPSTREAM-BASELINE-HASHES-V1.1-SEALED",
+  "source_release": "ANDROMEDA_LIVING_SIM_ENGINE_V1_1_0_RELEASE.zip",
+  "source_release_sha256": "b26035cb0ae54cb722353e822756d1c12b7c22ac71fbbb474d225473c311a24f",
+  "master_release_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+  "runtime_modules": {
+    "living_runtime.py": "9a8000a160f6de4f3aa3cebc9409fa3723e203929d1ad9c0bff77fc9a19d75a8",
+    "consequence_engine.py": "6924d3d43e16a94b4318a7ad41bf4acb27f5069e78abdda8f2824148fd95d6ea",
+    "agent_brain.py": "2fb42c08b16abcda52927c0cdc8c7daa28d69895c80f6c94fd2eb374c72e6b02",
+    "social_memory.py": "b290ad3f0f51edfa263e7595bf2646a2823250281649f5f6aa625eeb062996e2",
+    "ecology_brain.py": "22caf44e94cf17d67caf1628d863ad0556de9844b0277cb0eb6ca516a9622a72",
+    "object_environment.py": "2a5720cd9583f46c87750e6016dcef67f3f7e3d9b3a47ab725df5e97dc10b170",
+    "world_orchestrator.py": "869bee446b1e49a9d16a23a0d40e5813128e6b8448207b7f4fe14d776754259a",
+    "world_systems.py": "9882b3aa52914c3f65e8216efdc4b5a8bef529f565fbbb57439c0854c007d2a1",
+    "long_horizon.py": "148fcce347e93c61c0cd4af2c4e64e64dadad665e709bbe42d97deba5cde74ee",
+    "llm_gateway.py": "15dfe9ef9f7672e1d81bf3bf507a9d2fbfbaa36df7944a9976ef69f1f5ecd681"
+  },
+  "policy": "V1.2.1 inherits these V1.1 sealed modules byte-for-byte; V1.2.1 additions live in separate modules.",
+  "status": "PASS"
+}

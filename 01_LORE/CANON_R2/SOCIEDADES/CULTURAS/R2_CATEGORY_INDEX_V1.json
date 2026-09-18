@@ -1,0 +1,100 @@
+{
+  "record_id": "R2-CUL-CATEGORY-INDEX-V1",
+  "authority": "CANON_R2_CONFIRMADO",
+  "category": "CUL",
+  "category_name": "Povos e culturas",
+  "items": [
+    {
+      "id": "CUL-001",
+      "title": "Luminari",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/CULTURAS/CUL-001__luminari.json",
+      "spoiler": 2,
+      "sealed": true
+    },
+    {
+      "id": "CUL-002",
+      "title": "Ferralinos",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/CULTURAS/CUL-002__ferralinos.json",
+      "spoiler": 2,
+      "sealed": true
+    },
+    {
+      "id": "CUL-003",
+      "title": "Ortheanos",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/CULTURAS/CUL-003__ortheanos.json",
+      "spoiler": 2,
+      "sealed": true
+    },
+    {
+      "id": "CUL-004",
+      "title": "Navyrianos",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/CULTURAS/CUL-004__navyrianos.json",
+      "spoiler": 2,
+      "sealed": true
+    },
+    {
+      "id": "CUL-005",
+      "title": "Ithrianos",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/CULTURAS/CUL-005__ithrianos.json",
+      "spoiler": 2,
+      "sealed": true
+    },
+    {
+      "id": "CUL-006",
+      "title": "Altavelanos",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/CULTURAS/CUL-006__altavelanos.json",
+      "spoiler": 2,
+      "sealed": true
+    },
+    {
+      "id": "CUL-007",
+      "title": "Rubravivos",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/CULTURAS/CUL-007__rubravivos.json",
+      "spoiler": 2,
+      "sealed": true
+    },
+    {
+      "id": "CUL-008",
+      "title": "Povos das Copas",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/CULTURAS/CUL-008__povos-das-copas.json",
+      "spoiler": 2,
+      "sealed": true
+    },
+    {
+      "id": "CUL-009",
+      "title": "Subcristalinos",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/CULTURAS/CUL-009__subcristalinos.json",
+      "spoiler": 2,
+      "sealed": true
+    },
+    {
+      "id": "CUL-010",
+      "title": "Enoharianos",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/CULTURAS/CUL-010__enoharianos.json",
+      "spoiler": 2,
+      "sealed": true
+    },
+    {
+      "id": "CUL-011",
+      "title": "Fronteiriços",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/CULTURAS/CUL-011__fronteiricos.json",
+      "spoiler": 1,
+      "sealed": false
+    },
+    {
+      "id": "CUL-012",
+      "title": "Deslocados e equipes de contenção",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/CULTURAS/CUL-012__deslocados-e-equipes-de-contencao.json",
+      "spoiler": 2,
+      "sealed": true
+    },
+    {
+      "id": "CUL-013",
+      "title": "Seguidores e contratados",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/CULTURAS/CUL-013__seguidores-e-contratados.json",
+      "spoiler": 2,
+      "sealed": true
+    }
+  ],
+  "source": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json"
+}

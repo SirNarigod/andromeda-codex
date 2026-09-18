@@ -1,0 +1,119 @@
+{
+  "record_id": "STELLAR-COMBAT-PHYSICS-SYSTEM-DEV-V1.0",
+  "title": "Física de Combate — Trajetória, Impacto e Área de Efeito",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "r2_guard": "Camada qualitativa aditiva sobre os stats já existentes das 96 armas - não redefine power/reach/etc., só classifica COMO o dano se manifesta fisicamente (trajetória, tipo de impacto, raio de efeito). Nenhuma física real-time (colisão de malha, queda balística numérica) é implementada aqui - isso é responsabilidade do motor (06_ENGINE), fora do escopo de conteúdo/lore.",
+  "trajectory_types": [
+    "RETA (hitscan-like, sem queda perceptível em alcance de combate)",
+    "RETA_LONGA (fuzil de precisão)",
+    "RETA_CURTA_DISPERSA (espingarda, múltiplos projéteis)",
+    "RETA_TECNOLÓGICA (sem queda) (energia/cinética portátil de longo alcance - rifle/canhão de trilho/torreta/emissor/disruptor da família WPN-TEC)",
+    "ARCO_BALÍSTICO (arremesso/explosão/projétil de esporo, sofre queda)",
+    "ARCO_CURTO (contenção/flash, curto alcance)",
+    "PONTO_EXTREMO (Point Blank — qualquer arma RETA/RETA_LONGA/RETA_CURTA_DISPERSA/RETA_MÁGICA disparada com o alvo dentro das bandas CLINCH/IN_FIGHTING já definidas em combat_distance_states.py: tempo de voo desprezível, sem dispersão, impacto garantido, bônus de dano por proximidade)",
+    "N/A (corpo-a-corpo, sem trajetória)",
+    "N/A (corpo-a-corpo mágico) (achado do usuário: nem toda arma WPN-MAG é à distância — algumas, como a Manopla de Gesto Ritual, são golpe mágico corpo-a-corpo, mesmo espírito de N/A (corpo-a-corpo, sem trajetória) mas mantendo o rótulo de origem mágica)",
+    "N/A (equipamento passivo) (achado do usuário: itens vestíveis/carregados sem ataque direto — anel, amuleto, coroa, pingente, trono, grimório, relicário, talismã, véu, círculo ritual em WPN-MAG; núcleo, escudo, exoesqueleto em WPN-TEC — não são corpo-a-corpo nem à distância, só concedem efeito passivo enquanto equipados)"
+  ],
+  "point_blank_rule": {
+    "applies_to_trajectory_types": ["RETA", "RETA_LONGA", "RETA_CURTA_DISPERSA", "RETA_MÁGICA (sem queda)", "RETA_TECNOLÓGICA (sem queda)"],
+    "trigger": "distância alvo-atirador dentro de CLINCH (≤1.0m) ou IN_FIGHTING (≤2.75m), mesmas bandas de combat_distance_states.py — não é uma arma nova, é um estado de qualquer arma de trajetória reta quando disparada bem de perto",
+    "effect_qualitative": "impacto instantâneo (sem tempo de voo perceptível), sem dispersão/queda, bônus de dano por proximidade — mesmo espírito dos modificadores de banda já definidos em combat_distance_states.py#combat_modifiers_for_state (CLINCH/IN_FIGHTING já têm melee_damage_mult >1.0 e ranged_damage_mult reduzido — Point Blank estende essa mesma lógica pra armas de trajetória reta)",
+    "not_applicable_to": ["ARCO_BALÍSTICO", "ARCO_CURTO", "N/A (corpo-a-corpo)", "N/A (corpo-a-corpo mágico)", "N/A (equipamento passivo)"] ,
+    "safety": "FICTIONAL_GAME_STATS_ONLY"
+  },
+  "impact_types": [
+    "PERFURAÇÃO",
+    "PERFURAÇÃO_MÚLTIPLA",
+    "IMPACTO_E_ESTILHAÇO",
+    "IMPACTO_NÃO_LETAL",
+    "CORTE",
+    "IMPACTO_CONTUSO",
+    "CORTE_OU_ENERGIA",
+    "IMPACTO_MÁGICO",
+    "PERFURAÇÃO_RADICULAR",
+    "PERFURAÇÃO_E_CONTAMINAÇÃO",
+    "SEM_IMPACTO_FÍSICO"
+  ],
+  "area_effect_scale": [
+    "PONTUAL (alvo único)",
+    "PEQUENA (poucos metros)",
+    "MÉDIA (dezenas de metros/campo)",
+    "GRANDE (área ampla, explosão)"
+  ],
+  "family_defaults": {
+    "WPN-FUZ": {
+      "trajectory_type": "RETA",
+      "impact_type": "PERFURAÇÃO",
+      "area_effect": "PONTUAL"
+    },
+    "WPN-REV": {
+      "trajectory_type": "RETA",
+      "impact_type": "PERFURAÇÃO",
+      "area_effect": "PONTUAL"
+    },
+    "WPN-ESP": {
+      "trajectory_type": "RETA_CURTA_DISPERSA",
+      "impact_type": "PERFURAÇÃO_MÚLTIPLA",
+      "area_effect": "PEQUENA (leque curto)"
+    },
+    "WPN-PRE": {
+      "trajectory_type": "RETA_LONGA",
+      "impact_type": "PERFURAÇÃO",
+      "area_effect": "PONTUAL"
+    },
+    "WPN-ARR": {
+      "trajectory_type": "ARCO_BALÍSTICO",
+      "impact_type": "IMPACTO_OU_PERFURAÇÃO",
+      "area_effect": "PEQUENA"
+    },
+    "WPN-EXP": {
+      "trajectory_type": "ARCO_BALÍSTICO",
+      "impact_type": "IMPACTO_E_ESTILHAÇO",
+      "area_effect": "GRANDE"
+    },
+    "WPN-CNT": {
+      "trajectory_type": "ARCO_CURTO",
+      "impact_type": "IMPACTO_NÃO_LETAL",
+      "area_effect": "MÉDIA (campo de contenção)"
+    },
+    "WPN-FLA": {
+      "trajectory_type": "ARCO_CURTO",
+      "impact_type": "SEM_IMPACTO_FÍSICO (luz/som)",
+      "area_effect": "MÉDIA (raio de ofuscamento)"
+    },
+    "WPN-LAM": {
+      "trajectory_type": "N/A (corpo-a-corpo)",
+      "impact_type": "CORTE",
+      "area_effect": "PONTUAL"
+    },
+    "WPN-IMP": {
+      "trajectory_type": "N/A (corpo-a-corpo)",
+      "impact_type": "IMPACTO_CONTUSO",
+      "area_effect": "PONTUAL"
+    },
+    "WPN-TEC": {
+      "trajectory_type": "N/A (corpo-a-corpo/energia)",
+      "impact_type": "CORTE_OU_ENERGIA",
+      "area_effect": "PONTUAL",
+      "note_mixed_family": "WPN-TEC mistura corpo-a-corpo (garra/faca/lâmina de servo/lâmina de plasma) com ranged de verdade (rifle/canhão de trilho/torreta/emissor/disruptor/enxame) e equipamento vestível passivo (núcleo/escudo/exoesqueleto) - o default acima só vale pras 4 realmente corpo-a-corpo (TEC-001/005/013/015); 6 armas (TEC-002/003/006/007/008/011) foram reclassificadas pra RETA_TECNOLÓGICA, 1 (TEC-010, lançador de fragmentos) pra ARCO_BALÍSTICO, e 5 (TEC-004/009/012/014/016, núcleo/escudo/exoesqueleto) pra 'N/A (equipamento passivo)' - achado do usuário corrigido em 2 rodadas desta sessão."
+    },
+    "WPN-MAG": {
+      "trajectory_type": "RETA_MÁGICA (sem queda)",
+      "impact_type": "IMPACTO_MÁGICO",
+      "area_effect": "PEQUENA a MÉDIA (conforme runa)",
+      "note_mixed_family": "WPN-MAG mistura foco/cajado/cetro/bastão/espelho realmente à distância com itens vestíveis/carregados passivos (anel/amuleto/coroa/pingente/trono/grimório/relicário/talismã/véu/círculo ritual) e 1 arma corpo-a-corpo (Manopla de Gesto Ritual) - o default acima só vale pras 5 realmente à distância (MAG-001/002/007/010/012); 10 foram reclassificadas individualmente pra 'N/A (equipamento passivo)' e 1 (MAG-014) pra 'N/A (corpo-a-corpo mágico)', mesmo achado do usuário já corrigido para WPN-TEC nesta sessão, agora estendido à magia."
+    },
+    "WPN-RAD": {
+      "trajectory_type": "N/A (corpo-a-corpo)",
+      "impact_type": "PERFURAÇÃO_RADICULAR",
+      "area_effect": "PONTUAL"
+    },
+    "WPN-PRO": {
+      "trajectory_type": "ARCO_BALÍSTICO",
+      "impact_type": "PERFURAÇÃO_E_CONTAMINAÇÃO",
+      "area_effect": "PEQUENA (nuvem de esporos)"
+    }
+  },
+  "canonical_weapon_rule": "Para as 30 armas canônicas (WPN-001..030, sem família), a classificação usa palavras-chave do nome (lâmina/espada/faca→CORTE; bastão/cajado/escudo→IMPACTO_CONTUSO; demais→IMPACTO_MÁGICO)."
+}

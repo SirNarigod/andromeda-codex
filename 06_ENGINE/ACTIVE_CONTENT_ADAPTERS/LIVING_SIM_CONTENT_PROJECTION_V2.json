@@ -1,0 +1,26 @@
+{
+  "record_id": "LIVING_SIM_CONTENT_PROJECTION_V2",
+  "status": "ACTIVE_ENGINE_NEUTRAL_READ_ONLY",
+  "supersedes": "LIVING_SIM_CONTENT_PROJECTION_V1",
+  "authority": "R2_AND_APPROVED_DERIVATION_READ_ONLY",
+  "routing_registry": "01_LORE/CONTENT_ROUTING_REGISTRY_V2.json",
+  "layers": {
+    "LIVE_ENTITY_STATE": ["PER", "LID"],
+    "LIVE_ROUTES": ["TER", "CIT"],
+    "LIVE_ECONOMY": ["BIO", "CRI", "FLO", "TEC"],
+    "LIVE_POPULATION": ["TER", "CIT"],
+    "LIVE_FACTIONS": ["FAC", "CUL", "TER"],
+    "LIVE_ENVIRONMENT": ["BIO", "CIT", "ART"],
+    "LIVE_EVENTS": ["HIS", "EPI"],
+    "LIVE_ECOLOGY": ["BIO", "CRI", "FLO", "COR"],
+    "LIVE_SOCIAL": ["PER", "LID", "FAC"],
+    "LIVE_CAUSAL": ["HIS", "EPI"],
+    "LIVE_WORKSHOPS": ["FAC-009", "FAC-010"]
+  },
+  "professional_faction_overlay": {
+    "permitted_runtime_fields": ["local_chapter_status", "workshop_capacity", "labor_availability", "safety_strain", "contract_pressure", "supply_dependency", "maintenance_backlog", "local_trust"],
+    "required_local_provenance": ["location_reference", "charter_or_community_consent", "scope", "source"],
+    "blocked_outcomes": ["sovereignty", "boundary_change", "canonical_faction_change", "Kenua_link", "episode_mutation"]
+  },
+  "prohibitions": ["NO_CANON_WRITE", "NO_R2_EPISODE_MUTATION", "NO_SOVEREIGNTY_MUTATION", "NO_AUTHORIAL_DEATH_RESOLUTION", "NO_AMADON_PRE_S01E08", "NO_IRREVERSIBLE_ROOT_TRANSITION"]
+}

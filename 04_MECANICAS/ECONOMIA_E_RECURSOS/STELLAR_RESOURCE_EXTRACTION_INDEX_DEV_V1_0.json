@@ -1,0 +1,441 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-RESOURCE-EXTRACTION-INDEX-DEV-V1.0",
+  "title": "Extração por NPC — quem e onde extrai cada mineral/flora já catalogado",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "r2_guard": "Nenhum recurso/construção/NPC novo é inventado além de JOB-016 (profissão nova, aditiva ao catálogo já existente) — todo MIN-XXX/FLO-XXX/EST-XXX/SUB-XXX/CIV-XXX referenciado já existe. Onde nenhuma construção industrial cobre o território do recurso, o campo extracted_at aponta a subregião diretamente e o extrator é JOB-016 genérico (gap sinalizado, não fabricado).",
+  "extraction": [
+    {
+      "resource_id": "MIN-IRON",
+      "resource_name": "Ferral Bruto",
+      "resource_kind": "MINERAL",
+      "extracted_at": "EST-003 Forja Real de Kharveth",
+      "extractor_ref": "JOB-016",
+      "extraction_method": "FERRAMENTA",
+      "tool_used": "picareta/broca de mineração (oficina de extração)"
+    },
+    {
+      "resource_id": "MIN-COPPER",
+      "resource_name": "Cobrex Condutor",
+      "resource_kind": "MINERAL",
+      "extracted_at": "EST-019 Oficina de Fusão Tecnomágica",
+      "extractor_ref": "JOB-016",
+      "extraction_method": "FERRAMENTA",
+      "tool_used": "picareta/broca de mineração (oficina de extração)"
+    },
+    {
+      "resource_id": "MIN-TIN",
+      "resource_name": "Estanho Nimbo",
+      "resource_kind": "MINERAL",
+      "extracted_at": "EST-003 Forja Real de Kharveth",
+      "extractor_ref": "JOB-016",
+      "extraction_method": "FERRAMENTA",
+      "tool_used": "picareta/broca de mineração (oficina de extração)"
+    },
+    {
+      "resource_id": "MIN-SILVER",
+      "resource_name": "Argêntea Pálida",
+      "resource_kind": "MINERAL",
+      "extracted_at": "SUB-001-001 Feira Central de Lúminor (sem construção industrial dedicada)",
+      "extractor_ref": "JOB-016",
+      "extraction_method": "FERRAMENTA",
+      "tool_used": "picareta/broca de mineração (oficina de extração)"
+    },
+    {
+      "resource_id": "MIN-GOLD",
+      "resource_name": "Aúreo Solar",
+      "resource_kind": "MINERAL",
+      "extracted_at": "SUB-010-001 Anel do Conselho Enohariano (sem construção industrial dedicada)",
+      "extractor_ref": "JOB-016",
+      "extraction_method": "FERRAMENTA",
+      "tool_used": "picareta/broca de mineração (oficina de extração)"
+    },
+    {
+      "resource_id": "MIN-CRYSTAL",
+      "resource_name": "Cristal Rúnico",
+      "resource_kind": "MINERAL",
+      "extracted_at": "EST-031 Galeria de Extração",
+      "extractor_ref": "JOB-016",
+      "extraction_method": "FERRAMENTA",
+      "tool_used": "picareta/broca de mineração (oficina de extração)"
+    },
+    {
+      "resource_id": "MIN-MANA-ORE",
+      "resource_name": "Manalita",
+      "resource_kind": "MINERAL",
+      "extracted_at": "EST-035 Estação de Captação da Corrente",
+      "extractor_ref": "JOB-016",
+      "extraction_method": "FERRAMENTA",
+      "tool_used": "picareta/broca de mineração (oficina de extração)"
+    },
+    {
+      "resource_id": "MIN-VOID-GLASS",
+      "resource_name": "Vidro Umbral",
+      "resource_kind": "MINERAL",
+      "extracted_at": "EST-004 Oficina de Charneira",
+      "extractor_ref": "CIV-006 (Talia, já em EST-004)",
+      "extraction_method": "FERRAMENTA",
+      "tool_used": "picareta/broca de mineração (oficina de extração)"
+    },
+    {
+      "resource_id": "MIN-STONE",
+      "resource_name": "Rocha Estrutural",
+      "resource_kind": "MINERAL",
+      "extracted_at": "EST-015 Galpão de Manutenção Ferroviária",
+      "extractor_ref": "CIV-010 (Farin, já em EST-015)",
+      "extraction_method": "FERRAMENTA",
+      "tool_used": "picareta/broca de mineração (oficina de extração)"
+    },
+    {
+      "resource_id": "MIN-BASALT",
+      "resource_name": "Basalto Negro",
+      "resource_kind": "MINERAL",
+      "extracted_at": "SUB-013-001 Muralhas do Trovão (sem construção industrial dedicada)",
+      "extractor_ref": "JOB-016",
+      "extraction_method": "FERRAMENTA",
+      "tool_used": "picareta/broca de mineração (oficina de extração)"
+    },
+    {
+      "resource_id": "MIN-QUARTZ",
+      "resource_name": "Quartzo de Veio",
+      "resource_kind": "MINERAL",
+      "extracted_at": "EST-031 Galeria de Extração",
+      "extractor_ref": "JOB-016",
+      "extraction_method": "FERRAMENTA",
+      "tool_used": "picareta/broca de mineração (oficina de extração)"
+    },
+    {
+      "resource_id": "MIN-RARE",
+      "resource_name": "Liga-Núcleo Bruta",
+      "resource_kind": "MINERAL",
+      "extracted_at": "EST-019 Oficina de Fusão Tecnomágica",
+      "extractor_ref": "JOB-016",
+      "extraction_method": "FERRAMENTA",
+      "tool_used": "picareta/broca de mineração (oficina de extração)"
+    },
+    {
+      "resource_id": "MIN-TITAN",
+      "resource_name": "Titanita Cinzenta",
+      "resource_kind": "MINERAL",
+      "extracted_at": "EST-048 Hangar de Naves de Altavela",
+      "extractor_ref": "JOB-016",
+      "extraction_method": "FERRAMENTA",
+      "tool_used": "picareta/broca de mineração (oficina de extração)"
+    },
+    {
+      "resource_id": "MIN-ROBOTIUM",
+      "resource_name": "Robotita Azul",
+      "resource_kind": "MINERAL",
+      "extracted_at": "EST-015 Galpão de Manutenção Ferroviária",
+      "extractor_ref": "CIV-010 (Farin, já em EST-015)",
+      "extraction_method": "FERRAMENTA",
+      "tool_used": "picareta/broca de mineração (oficina de extração)"
+    },
+    {
+      "resource_id": "MIN-MAGNETITE",
+      "resource_name": "Magnetita de Pulso",
+      "resource_kind": "MINERAL",
+      "extracted_at": "EST-015 Galpão de Manutenção Ferroviária",
+      "extractor_ref": "CIV-010 (Farin, já em EST-015)",
+      "extraction_method": "FERRAMENTA",
+      "tool_used": "picareta/broca de mineração (oficina de extração)"
+    },
+    {
+      "resource_id": "MIN-ROOT-SHARD",
+      "resource_name": "Fragmento Radicular",
+      "resource_kind": "MINERAL",
+      "extracted_at": "SUB-008-002 Raízes Sagradas (sem construção industrial dedicada)",
+      "extractor_ref": "JOB-016",
+      "extraction_method": "FERRAMENTA",
+      "tool_used": "picareta/broca de mineração (oficina de extração)"
+    },
+    {
+      "resource_id": "FLO-001",
+      "resource_name": "Pastagem Luminal",
+      "resource_kind": "FLORA",
+      "extracted_at": "EST-037 Curral e Estábulo",
+      "extractor_ref": "CIV-001 (Doran, já em EST-037)",
+      "extraction_method": "MAO",
+      "tool_used": "coleta manual (cesto/faca simples quando aplicável)"
+    },
+    {
+      "resource_id": "FLO-002",
+      "resource_name": "Raiz-de-Névoa",
+      "resource_kind": "FLORA",
+      "extracted_at": "SUB-011-006 Fendas da Névoa (sem construção industrial dedicada)",
+      "extractor_ref": "JOB-016",
+      "extraction_method": "MAO",
+      "tool_used": "coleta manual (cesto/faca simples quando aplicável)"
+    },
+    {
+      "resource_id": "FLO-003",
+      "resource_name": "Flor-de-Orvalho",
+      "resource_kind": "FLORA",
+      "extracted_at": "SUB-011-005 Charneira das Oficinas (sem construção industrial dedicada)",
+      "extractor_ref": "JOB-016",
+      "extraction_method": "MAO",
+      "tool_used": "coleta manual (cesto/faca simples quando aplicável)"
+    },
+    {
+      "resource_id": "FLO-004",
+      "resource_name": "Junco-Cobre",
+      "resource_kind": "FLORA",
+      "extracted_at": "SUB-011-002 Corredor Oriental (sem construção industrial dedicada)",
+      "extractor_ref": "JOB-016",
+      "extraction_method": "MAO",
+      "tool_used": "coleta manual (cesto/faca simples quando aplicável)"
+    },
+    {
+      "resource_id": "FLO-005",
+      "resource_name": "Véu-de-Teia",
+      "resource_kind": "FLORA",
+      "extracted_at": "SUB-011-001 Fronteira de Varga (sem construção industrial dedicada)",
+      "extractor_ref": "JOB-016",
+      "extraction_method": "MAO",
+      "tool_used": "coleta manual (cesto/faca simples quando aplicável)"
+    },
+    {
+      "resource_id": "FLO-006",
+      "resource_name": "Espinho de Vidro",
+      "resource_kind": "FLORA",
+      "extracted_at": "SUB-011-006 Fendas da Névoa (sem construção industrial dedicada)",
+      "extractor_ref": "JOB-016",
+      "extraction_method": "MAO",
+      "tool_used": "coleta manual (cesto/faca simples quando aplicável)"
+    },
+    {
+      "resource_id": "FLO-007",
+      "resource_name": "Árvore-Coração",
+      "resource_kind": "FLORA",
+      "extracted_at": "SUB-008-001 Copas Altas (sem construção industrial dedicada)",
+      "extractor_ref": "JOB-016",
+      "extraction_method": "MAO",
+      "tool_used": "coleta manual (cesto/faca simples quando aplicável)"
+    },
+    {
+      "resource_id": "FLO-008",
+      "resource_name": "Erva-Rubra",
+      "resource_kind": "FLORA",
+      "extracted_at": "EST-012 Botica do Jardim Central",
+      "extractor_ref": "CIV-002 (Yssa, JOB-002, já em EST-012)",
+      "extraction_method": "MAO",
+      "tool_used": "coleta manual (cesto/faca simples quando aplicável)"
+    },
+    {
+      "resource_id": "FLO-009",
+      "resource_name": "Vinha do Temporal",
+      "resource_kind": "FLORA",
+      "extracted_at": "SUB-013-001 Muralhas do Trovão (sem construção industrial dedicada)",
+      "extractor_ref": "JOB-016",
+      "extraction_method": "MAO",
+      "tool_used": "coleta manual (cesto/faca simples quando aplicável)"
+    },
+    {
+      "resource_id": "FLO-010",
+      "resource_name": "Erva de Trilho",
+      "resource_kind": "FLORA",
+      "extracted_at": "EST-015 Galpão de Manutenção Ferroviária",
+      "extractor_ref": "CIV-010 (Farin, já em EST-015)",
+      "extraction_method": "MAO",
+      "tool_used": "coleta manual (cesto/faca simples quando aplicável)"
+    },
+    {
+      "resource_id": "FLO-011",
+      "resource_name": "Fungo-Lanterna",
+      "resource_kind": "FLORA",
+      "extracted_at": "EST-031 Galeria de Extração",
+      "extractor_ref": "JOB-016",
+      "extraction_method": "MAO",
+      "tool_used": "coleta manual (cesto/faca simples quando aplicável)"
+    },
+    {
+      "resource_id": "FLO-012",
+      "resource_name": "Trepadeira Suspensa",
+      "resource_kind": "FLORA",
+      "extracted_at": "SUB-006-001 Plataformas Altas (sem construção industrial dedicada)",
+      "extractor_ref": "JOB-016",
+      "extraction_method": "MAO",
+      "tool_used": "coleta manual (cesto/faca simples quando aplicável)"
+    },
+    {
+      "resource_id": "MIN-BASALT",
+      "resource_name": "Basalto Negro (fonte secundária)",
+      "resource_kind": "MINERAL",
+      "extracted_at": "EST-049 Fundição da Caldeira",
+      "extractor_ref": "CIV-016 (Torvin, já em EST-049)",
+      "extraction_method": "FERRAMENTA",
+      "tool_used": "picareta/broca de mineração (oficina de extração)"
+    },
+    {
+      "resource_id": "FLO-013",
+      "resource_name": "Musgo de Enxofre",
+      "resource_kind": "FLORA",
+      "extracted_at": "SUB-014-001 Caldeira Ativa",
+      "extractor_ref": "CIV-017 (Ashra, já em TER-014)",
+      "extraction_method": "MAO",
+      "tool_used": "coleta manual (cesto/faca simples quando aplicável)"
+    },
+    {
+      "resource_id": "MIN-GOLD",
+      "resource_name": "Aúreo Solar (fonte secundária)",
+      "resource_kind": "MINERAL",
+      "extracted_at": "EST-053 Sitio Arqueologico das Ruinas",
+      "extractor_ref": "JOB-016",
+      "extraction_method": "FERRAMENTA",
+      "tool_used": "peneira/cata + restauro (oficina de extração)",
+      "guard": "NO_NAMED_HISTORICAL_CIVILIZATION",
+      "agz_link": "AGZ-099"
+    },
+    {
+      "resource_id": "MIN-QUARTZ",
+      "resource_name": "Quartzo de Veio (fonte secundária)",
+      "resource_kind": "MINERAL",
+      "extracted_at": "EST-055 Posto da Geleira",
+      "extractor_ref": "JOB-016",
+      "extraction_method": "FERRAMENTA",
+      "tool_used": "corte de gelo + broca de mineração (oficina de extração)",
+      "agz_link": "AGZ-100"
+    },
+    {
+      "resource_id": "MIN-CRYSTAL",
+      "resource_name": "Cristal Rúnico (fonte secundária)",
+      "resource_kind": "MINERAL",
+      "extracted_at": "EST-059 Posto das Correntes",
+      "extractor_ref": "JOB-016",
+      "extraction_method": "FERRAMENTA",
+      "tool_used": "coleta estabilizada (sem minerar estrutura da ilha)",
+      "agz_link": "AGZ-101"
+    },
+    {
+      "resource_id": "MIN-TITAN",
+      "resource_name": "Titanita Cinzenta (fonte secundária)",
+      "resource_kind": "MINERAL",
+      "extracted_at": "EST-061 Cupula da Trincheira",
+      "extractor_ref": "JOB-016",
+      "extraction_method": "FERRAMENTA",
+      "tool_used": "dragagem de pressão + forja (oficina de extração)",
+      "agz_link": "AGZ-102"
+    },
+    {
+      "resource_id": "MIN-ROOT-SHARD",
+      "resource_name": "Fragmento Radicular (fonte secundária)",
+      "resource_kind": "MINERAL",
+      "extracted_at": "EST-065 Sitio das Ruinas Cobertas",
+      "extractor_ref": "JOB-016",
+      "extraction_method": "FERRAMENTA",
+      "tool_used": "coleta superficial + purificação (oficina de extração)",
+      "guard": "NO_ROOT_ESCALATION",
+      "agz_link": "AGZ-103"
+    },
+    {
+      "resource_id": "FLO-014",
+      "resource_name": "Flor-de-Areia",
+      "resource_kind": "FLORA",
+      "extracted_at": "EST-054 Poco Fundo",
+      "extractor_ref": "JOB-016",
+      "extraction_method": "MAO",
+      "tool_used": "coleta manual (cesto/faca simples quando aplicável)",
+      "agz_link": "AGZ-099"
+    },
+    {
+      "resource_id": "FLO-015",
+      "resource_name": "Liquen de Gelo",
+      "resource_kind": "FLORA",
+      "extracted_at": "EST-056 Abrigo Central",
+      "extractor_ref": "JOB-016",
+      "extraction_method": "MAO",
+      "tool_used": "coleta manual (cesto/faca simples quando aplicável)",
+      "agz_link": "AGZ-100"
+    },
+    {
+      "resource_id": "FLO-016",
+      "resource_name": "Musgo Suspenso",
+      "resource_kind": "FLORA",
+      "extracted_at": "EST-058 Doca Eterea",
+      "extractor_ref": "JOB-016",
+      "extraction_method": "MAO",
+      "tool_used": "coleta manual (cesto/faca simples quando aplicável)",
+      "agz_link": "AGZ-101"
+    },
+    {
+      "resource_id": "FLO-017",
+      "resource_name": "Coral Luminoso",
+      "resource_kind": "FLORA",
+      "extracted_at": "EST-062 Vila dos Recifes",
+      "extractor_ref": "JOB-016",
+      "extraction_method": "MAO",
+      "tool_used": "coleta manual rotativa (preserva saude do recife)",
+      "agz_link": "AGZ-102"
+    },
+    {
+      "resource_id": "FLO-018",
+      "resource_name": "Orquidea-Sombria",
+      "resource_kind": "FLORA",
+      "extracted_at": "EST-064 Posto do Dossel",
+      "extractor_ref": "JOB-016",
+      "extraction_method": "MAO",
+      "tool_used": "coleta manual com cota (toxica in natura, medicinal diluida)",
+      "agz_link": "AGZ-103"
+    },
+    {
+      "resource_id": "CRI-027",
+      "resource_name": "Peixe-Vela de Navyr",
+      "resource_kind": "FAUNA",
+      "extracted_at": "SUB-004-002 Ilhas de Pesca (sem construção industrial dedicada)",
+      "extractor_ref": "JOB-003",
+      "extraction_method": "PESCA",
+      "tool_used": "rede/linha de pesca artesanal"
+    },
+    {
+      "resource_id": "CRI-028",
+      "resource_name": "Peixe-Lanterna do Recife",
+      "resource_kind": "FAUNA",
+      "extracted_at": "SUB-018-002 Recifes Luminosos (sem construção industrial dedicada)",
+      "extractor_ref": "JOB-003",
+      "extraction_method": "PESCA",
+      "tool_used": "armadilha luminosa (pesca artesanal abissal)"
+    },
+    {
+      "resource_id": "CRI-029",
+      "resource_name": "Peixe do Poco",
+      "resource_kind": "FAUNA",
+      "extracted_at": "SUB-015-003 Oasis do Poco Fundo (sem construção industrial dedicada)",
+      "extractor_ref": "JOB-003",
+      "extraction_method": "PESCA",
+      "tool_used": "rede fina de oásis com cota (preserva pureza da água)",
+      "agz_link": "AGZ-099"
+    },
+    {
+      "resource_id": "CRI-030",
+      "resource_name": "Peixe do Raizel",
+      "resource_kind": "FAUNA",
+      "extracted_at": "LOC-011-004 Vau de Raizel (SUB-011-004, sem construção industrial dedicada)",
+      "extractor_ref": "JOB-003",
+      "extraction_method": "PESCA",
+      "tool_used": "rede de correnteza no vau (pesca artesanal)",
+      "landscape_ref": "PAI-066"
+    },
+    {
+      "resource_id": "CRI-031",
+      "resource_name": "Peixe Rubro",
+      "resource_kind": "FAUNA",
+      "extracted_at": "SUB-007-002 Casas de Cura (sem construção industrial dedicada)",
+      "extractor_ref": "JOB-003",
+      "extraction_method": "PESCA",
+      "tool_used": "linha sob a Ponte dos Jardins (pesca artesanal)",
+      "landscape_ref": "PAI-067"
+    },
+    {
+      "resource_id": "CRI-032",
+      "resource_name": "Traira da Serpente",
+      "resource_kind": "FAUNA",
+      "extracted_at": "SUB-019-003 Pantano da Serpente (sem construção industrial dedicada)",
+      "extractor_ref": "JOB-003",
+      "extraction_method": "PESCA",
+      "tool_used": "espinhel de fundo com guia e cota (pesca artesanal de risco)",
+      "landscape_ref": "PAI-068"
+    }
+  ],
+  "extraction_method_note": "Campo aditivo (fase de sistemas ausentes): MINERAL sempre por FERRAMENTA (picareta/broca); FLO/demais recursos orgânicos por MAO (coleta manual); FAUNA aquática (CRI-027..032, fases 60/61) por PESCA (rede/linha/armadilha artesanal).",
+  "by_design_resolution_fase_63": "As 15 entradas com extracted_at direto em SUB-XXX (sem construção industrial dedicada) + extrator JOB-016 generico NAO sao lacuna: cobertura EST e total (68/68 localidades, EST_INDEX) mas industria dedicada nao e exigida em toda subregiao por design. Apontar a SUB + JOB-016 (Extrator, profissao generica oficial) e o fallback pretendido, nao conteudo faltante. VEI-005 fora da grade 3x3, Asa de Copas sem industria formal e stubs ORG/EDU/ECO/VST seguem a mesma disciplina (documentado onde ocorre, nada inventado)."
+}

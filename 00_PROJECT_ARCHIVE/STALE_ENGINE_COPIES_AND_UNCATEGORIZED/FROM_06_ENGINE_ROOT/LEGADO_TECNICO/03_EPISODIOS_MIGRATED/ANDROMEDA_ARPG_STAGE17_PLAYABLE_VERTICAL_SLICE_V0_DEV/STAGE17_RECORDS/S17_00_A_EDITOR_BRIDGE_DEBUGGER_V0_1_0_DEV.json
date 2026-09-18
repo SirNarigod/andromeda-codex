@@ -1,0 +1,28 @@
+{
+  "record_id": "ANDROMEDA-STAGE17-S17-00-A-EDITOR-BRIDGE-DEBUGGER-V0.1.0-DEV",
+  "created_at": "2026-08-27T19:03:30-03:00",
+  "project": "13_GODOT_ARPG_STAGE17",
+  "scene": "res://scenes/Main.tscn",
+  "godot_version": "4.7.1.stable.official.a13da4feb",
+  "renderer": "OpenGL API 3.3 Compatibility",
+  "gpu": "NVIDIA GeForce GTX 1650",
+  "execution": "COMPLETE",
+  "debugger": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "controlled_stop": {
+    "status": "PASS",
+    "finalErrors": []
+  },
+  "authority_evidence": {
+    "source": "S17AStartupRuntimeGate live run instantiating the same Main.tscn",
+    "bind": "PASS",
+    "snapshot": "PASS",
+    "ready_after_snapshot": true,
+    "checks": 17,
+    "passed": 17,
+    "failed": 0
+  },
+  "status": "PASS"
+}

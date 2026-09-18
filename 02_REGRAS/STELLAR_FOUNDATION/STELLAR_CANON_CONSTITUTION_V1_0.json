@@ -1,0 +1,16 @@
+{
+  "record_id": "STELLAR-CANON-CONSTITUTION-V1.0",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.0",
+  "status": "AUTHORIAL_GOVERNANCE_CONTRACT",
+  "authority": {"scope": "INTERPRETIVE_CANON_LAYER", "master_v2_0_1": "READ_ONLY_SUPREME_BASELINE", "living_sim_engine_v1_0_0": "READ_ONLY_RUNTIME_BASELINE", "runtime": "DERIVED_ONLY"},
+  "dependencies": ["../ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/02_CONTRACTS/CONSEQUENCE_ENGINE_CONTRACT_V1_0.json", "../../01_LORE/ANDROMEDA_ARPG_STAGE17_PLAYABLE_VERTICAL_SLICE_V0_DEV/WORLD_CANON/ARPG_WORLD_CANON_BINDING_V0_9_0.json"],
+  "precedence": ["MASTER_V2_0_1", "AUTHORIAL_PROMOTION_RECORD", "STELLAR_FOUNDATION", "APPROVED_RUNTIME_CONTRACT", "RUNTIME_STATE", "LLM_OR_PLAYER_PROPOSAL"],
+  "invariants": ["MASTER_AND_LIVING_BASELINES_ARE_NEVER_EDITED", "RUNTIME_STATE_IS_NOT_CANON", "LOCAL_CHANGE_REQUIRES_EVENT_PROVENANCE", "PLANETARY_CHANGE_REQUIRES_EXPLICIT_AUTHORIAL_PROMOTION", "CONFLICTS_FAIL_CLOSED"],
+  "prohibitions": ["NO_SILENT_CANON_PROMOTION", "NO_RETCON_BY_RUNTIME", "NO_UNSOURCED_GLOBAL_FACT", "NO_OFFICIAL_RELIGION_OR_LANGUAGE", "NO_KENUA_BINDING"],
+  "promotion_record": {"required_fields": ["proposal_id", "claim", "scope", "evidence_refs", "narrative_yield", "conflict_review", "authorial_approval", "effective_version"], "scopes": ["LOCAL", "REGIONAL", "PLANETARY"], "planetary_rule": "Requires authorial_approval=true; no automatic promotion."},
+  "simulation_effects": ["Events carry canon_scope and provenance.", "Runtime may materialize approved local consequences but cannot amend source canon.", "Unresolved conflicts are stored as contested claims."],
+  "allowed_states": ["DRAFT", "AUDITED_LOCAL", "CONTESTED", "PROMOTION_PENDING", "AUTHORIAL_CANON", "REJECTED"],
+  "story_generators": ["Uma vitória local cria provas suficientes para promoção, mas expõe que os vencedores esconderam o custo.", "Dois relatos auditados tornam-se incompatíveis e forçam uma investigação em vez de um retcon.", "Uma mudança planetária é necessária para salvar uma região, mas o processo de promoção altera quem pode decidir o futuro."],
+  "guard_interface": {"proposal_schema": "STELLAR_LORE_PROPOSAL_V1", "minimum_story_generators": 1, "failure_mode": "REJECT_AND_REPORT"}
+}

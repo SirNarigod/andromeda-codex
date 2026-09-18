@@ -1,0 +1,46 @@
+{
+  "corrections": [
+    {
+      "fix": "linear Living rehydrate + ordered ARPG core attach + one global health",
+      "id": "S15-C01",
+      "issue": "recursive resume health amplification across Stage01-14",
+      "status": "PASS"
+    },
+    {
+      "fix": "explicit distinct filenames slot.current.sqlite / slot.previous.sqlite",
+      "id": "S15-C02",
+      "issue": "previous save path constructed with suffix replacement causing current/previous collision",
+      "status": "PASS"
+    },
+    {
+      "fix": "all verification connections closed explicitly",
+      "id": "S15-C03",
+      "issue": "SQLite verification handles could emit ResourceWarning",
+      "status": "PASS"
+    },
+    {
+      "fix": "non-materialized inventory treated as valid empty state",
+      "id": "S15-C04",
+      "issue": "death before inventory materialization raised KeyError in preservation check",
+      "status": "PASS"
+    },
+    {
+      "fix": "full-file SHA remains total authority; auxiliary count fingerprint limited to continuity-critical tables",
+      "id": "S15-C05",
+      "issue": "validation fingerprint scanned every table repeatedly",
+      "status": "PASS"
+    },
+    {
+      "fix": "explicit runner cleanup after output; runtime unchanged",
+      "id": "S15-C06",
+      "issue": "stress runner hung during temporary-directory finalization after checks completed",
+      "status": "PASS"
+    }
+  ],
+  "invalid_artifacts_promoted": 0,
+  "open_corrections": 0,
+  "record_id": "ARPG-STAGE15-CORRECTION-LEDGER-V1.6.0",
+  "stage": "15/23",
+  "status": "PASS",
+  "version": "V1.6.0"
+}

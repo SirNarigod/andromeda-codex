@@ -1,0 +1,17 @@
+{
+  "record_id": "ARPG-GATHERING-WORK-AUTHORIAL-DIRECTIVE-V0.5.0",
+  "status": "AUTHORIAL_DIRECTIVE_REGISTERED",
+  "scope": "GAMEPLAY_INTEGRATION_NOT_CANON_MUTATION",
+  "directive": {
+    "explore_mining": true,
+    "map_resources": ["wood_from_trees", "flora_resources", "minerals_and_ores", "other_lore_supported_resources"],
+    "use_andromeda_lore_as_authority": true,
+    "labor_system_player": true,
+    "labor_system_npc": true,
+    "shared_profession_contract": true
+  },
+  "implementation_stage": "09_GATHERING_WORK",
+  "dependencies": ["08_WORLD", "05_ITEMS"],
+  "downstream_bindings": ["11_ECONOMY", "12_LIVING_INTEGRATION", "15_BALANCE"],
+  "canon_guard": "Existing Master entities and blocked domains remain read-only. Missing canonical flora/resources require authorial decision or explicit GAMEPLAY_DERIVED placeholder status."
+}

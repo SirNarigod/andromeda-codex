@@ -1,0 +1,38 @@
+{
+  "record_id": "FIRST-PLAYABLE-ENEMY-TIERS-V0.1.17-DEV",
+  "status": "DEV_BALANCE_PROFILE",
+  "categories": {
+    "FRACO": {
+      "speed_m_s": 2.0,
+      "attack_damage": 8,
+      "health_multiplier": 0.85,
+      "attack_interval_s": 1.9,
+      "visual_scale": 0.92
+    },
+    "MEDIO": {
+      "display": "MÉDIO",
+      "speed_m_s": 2.3,
+      "attack_damage": 11,
+      "health_multiplier": 1.0,
+      "attack_interval_s": 1.7,
+      "visual_scale": 1.0
+    },
+    "FORTE": {
+      "speed_m_s": 2.6,
+      "attack_damage": 16,
+      "health_multiplier": 1.35,
+      "attack_interval_s": 1.55,
+      "visual_scale": 1.1
+    },
+    "ALFA": {
+      "speed_m_s": 2.9,
+      "attack_damage": 23,
+      "health_multiplier": 1.85,
+      "attack_interval_s": 1.35,
+      "visual_scale": 1.25
+    }
+  },
+  "player_walk_speed_m_s": 5.0,
+  "design_intent": "Ranged combat must be punishable: fire, retreat, stop, fire. Enemy tiers progressively close distance faster and hit harder.",
+  "authority": "FIRST_PLAYABLE_DEV_TUNING_NOT_MASTER_CANON"
+}

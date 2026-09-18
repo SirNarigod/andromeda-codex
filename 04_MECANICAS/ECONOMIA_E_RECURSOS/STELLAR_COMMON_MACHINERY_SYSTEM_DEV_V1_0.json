@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-COMMON-MACHINERY-SYSTEM-DEV-V1.0",
+  "title": "Sistema G - Maquinas Comuns (instancia ARPG_TECH_MACHINES_ROBOTICS_CONTRACT_V1_2_0)",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "r2_guard": "Instancia pela primeira vez o 'outro polo' da tecnologia de Stellar: maquinas comuns como propriedade (status legal TECHNOLOGICAL_ASSET_NOT_NPC_NOT_LEGAL_WORKER), distintas dos Androids do Enclave Sintetico (FAC-090, renumerado de FAC-011), que sao seres sinteticos com agencia propria. Nenhuma maquina aqui tem vontade ou dialogo - todas exigem supervisao de um JOB-XXX ja catalogado para operar.",
+  "wear_maintenance_rule": {
+    "wear_scale": "0 (nova) a 100 (inoperante)",
+    "rule": "wear_level sobe com uso continuo; ao atingir maintenance_interval_days sem manutencao (executada por JOB-006 Artesao e reparador de oficina, ja catalogado), a maquina para de funcionar ate ser reparada.",
+    "worked_example": "MAQ-003 (Extrator Automatizado, EST-049) tem intervalo de 7 dias por causa do calor vulcanico - se Torvin (CIV-016) nao fizer manutencao a tempo, a extracao de minerio para ate o reparo."
+  },
+  "machines": [
+    {
+      "machine_id": "MAQ-001",
+      "name": "Talha Mecanica de Charneira",
+      "assigned_est": "EST-004",
+      "est_name": "Oficina de Charneira",
+      "function": "Icamento de pecas pesadas na oficina de reparo dos Nativos.",
+      "legal_status": "TECHNOLOGICAL_ASSET_NOT_NPC_NOT_LEGAL_WORKER",
+      "requires_supervision_job": "JOB-006",
+      "wear_level": 15,
+      "maintenance_interval_days": 14,
+      "distinction_note": "Maquina comum - propriedade tecnologica, NAO um ser sintetico com agencia. Distinta dos Androids (FAC-090 Enclave Sintetico, renumerado de FAC-011), que sao NPCs com vontade propria. Exige supervisao humana constante (operator_job) e nao tem status legal de trabalhador.",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "fixed_installation": true,
+      "description": "Icamento de pecas pesadas na oficina de reparo dos Nativos. Maquina comum - propriedade tecnologica, NAO um ser sintetico com agencia. Distinta dos Androids (FAC-090 Enclave Sintetico, renumerado de FAC-011), que sao NPCs com vontade propria. Exige supervisao humana constante (operator_job) e nao tem status legal de trabalhador."
+    },
+    {
+      "machine_id": "MAQ-002",
+      "name": "Prensa a Vapor",
+      "assigned_est": "EST-003",
+      "est_name": "Forja Real de Kharveth",
+      "function": "Prensagem de pecas metalicas na producao de armas de fogo.",
+      "legal_status": "TECHNOLOGICAL_ASSET_NOT_NPC_NOT_LEGAL_WORKER",
+      "requires_supervision_job": "JOB-006",
+      "wear_level": 25,
+      "maintenance_interval_days": 10,
+      "distinction_note": "Maquina comum - propriedade tecnologica, NAO um ser sintetico com agencia. Distinta dos Androids (FAC-090 Enclave Sintetico, renumerado de FAC-011), que sao NPCs com vontade propria. Exige supervisao humana constante (operator_job) e nao tem status legal de trabalhador.",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "fixed_installation": true,
+      "description": "Prensagem de pecas metalicas na producao de armas de fogo. Maquina comum - propriedade tecnologica, NAO um ser sintetico com agencia. Distinta dos Androids (FAC-090 Enclave Sintetico, renumerado de FAC-011), que sao NPCs com vontade propria. Exige supervisao humana constante (operator_job) e nao tem status legal de trabalhador."
+    },
+    {
+      "machine_id": "MAQ-003",
+      "name": "Extrator Automatizado",
+      "assigned_est": "EST-049",
+      "est_name": "Fundicao da Caldeira",
+      "function": "Auxilio mecanico na extracao de minerio vulcanico bruto.",
+      "legal_status": "TECHNOLOGICAL_ASSET_NOT_NPC_NOT_LEGAL_WORKER",
+      "requires_supervision_job": "JOB-016",
+      "wear_level": 30,
+      "maintenance_interval_days": 7,
+      "distinction_note": "Maquina comum - propriedade tecnologica, NAO um ser sintetico com agencia. Distinta dos Androids (FAC-090 Enclave Sintetico, renumerado de FAC-011), que sao NPCs com vontade propria. Exige supervisao humana constante (operator_job) e nao tem status legal de trabalhador. Exposicao a calor vulcanico acelera desgaste - intervalo de manutencao mais curto que a media.",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "fixed_installation": true,
+      "description": "Auxilio mecanico na extracao de minerio vulcanico bruto. Maquina comum - propriedade tecnologica, NAO um ser sintetico com agencia. Distinta dos Androids (FAC-090 Enclave Sintetico, renumerado de FAC-011), que sao NPCs com vontade propria. Exige supervisao humana constante (operator_job) e nao tem status legal de trabalhador. Exposicao a calor vulcanico acelera desgaste - intervalo de manutencao mais curto que a media."
+    },
+    {
+      "machine_id": "MAQ-004",
+      "name": "Tear Mecanico",
+      "assigned_est": "EST-046",
+      "est_name": "Oficina de Carruagens de Luminor",
+      "function": "Tecelagem assistida de fibra de veu para revestimento de carruagens.",
+      "legal_status": "TECHNOLOGICAL_ASSET_NOT_NPC_NOT_LEGAL_WORKER",
+      "requires_supervision_job": "JOB-006",
+      "wear_level": 10,
+      "maintenance_interval_days": 20,
+      "distinction_note": "Maquina comum - propriedade tecnologica, NAO um ser sintetico com agencia. Distinta dos Androids (FAC-090 Enclave Sintetico, renumerado de FAC-011), que sao NPCs com vontade propria. Exige supervisao humana constante (operator_job) e nao tem status legal de trabalhador.",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "fixed_installation": true,
+      "description": "Tecelagem assistida de fibra de veu para revestimento de carruagens. Maquina comum - propriedade tecnologica, NAO um ser sintetico com agencia. Distinta dos Androids (FAC-090 Enclave Sintetico, renumerado de FAC-011), que sao NPCs com vontade propria. Exige supervisao humana constante (operator_job) e nao tem status legal de trabalhador."
+    },
+    {
+      "machine_id": "MAQ-005",
+      "name": "Bomba de Drenagem",
+      "assigned_est": "EST-047",
+      "est_name": "Estaleiro de Navyr",
+      "function": "Drenagem de agua do estaleiro durante construcao de embarcacoes.",
+      "legal_status": "TECHNOLOGICAL_ASSET_NOT_NPC_NOT_LEGAL_WORKER",
+      "requires_supervision_job": "JOB-006",
+      "wear_level": 20,
+      "maintenance_interval_days": 15,
+      "distinction_note": "Maquina comum - propriedade tecnologica, NAO um ser sintetico com agencia. Distinta dos Androids (FAC-090 Enclave Sintetico, renumerado de FAC-011), que sao NPCs com vontade propria. Exige supervisao humana constante (operator_job) e nao tem status legal de trabalhador.",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "fixed_installation": true,
+      "description": "Drenagem de agua do estaleiro durante construcao de embarcacoes. Maquina comum - propriedade tecnologica, NAO um ser sintetico com agencia. Distinta dos Androids (FAC-090 Enclave Sintetico, renumerado de FAC-011), que sao NPCs com vontade propria. Exige supervisao humana constante (operator_job) e nao tem status legal de trabalhador."
+    }
+  ],
+  "prohibitions": [
+    "NO_MACHINE_AS_LEGAL_WORKER",
+    "NO_MACHINE_AGENCY_OR_DIALOGUE",
+    "NO_CONFLATION_WITH_FAC_090_ANDROIDS"
+  ]
+}

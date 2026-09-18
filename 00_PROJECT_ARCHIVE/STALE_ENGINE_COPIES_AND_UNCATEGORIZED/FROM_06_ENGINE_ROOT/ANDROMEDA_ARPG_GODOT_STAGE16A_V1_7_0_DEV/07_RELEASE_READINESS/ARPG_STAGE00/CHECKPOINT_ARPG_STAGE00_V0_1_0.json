@@ -1,0 +1,62 @@
+{
+  "record_id": "CHECKPOINT-ARPG-STAGE00-V0.1.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "branch": "ANDROMEDA_ARPG_FOUNDATION_V0_1_0_DEV",
+  "stage_index": 0,
+  "stage_range": "00-18",
+  "stage_count": 19,
+  "stage_name": "RECONCILIATION_AND_ARPG_FOUNDATION",
+  "status": "PASS",
+  "cycle_closed": true,
+  "authorial_decisions": {
+    "character": "D",
+    "classes": "D",
+    "control": "A",
+    "network": "C",
+    "itemization": "C",
+    "art": "LAST"
+  },
+  "baseline": {
+    "master": "V2.0.1",
+    "master_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "living": "V1.0.0",
+    "living_sha256": "6f12c9db0976e234ef55cdfe23b998c07240fa8d80eb0d0c247d12bbd16ebabc"
+  },
+  "reconciliation": {
+    "v21_active_authority": false,
+    "gameplay_derived_items": 54,
+    "canonical_master_weapons": 30,
+    "legacy_v11_catalog": 30,
+    "country_arpg_catalog": 84,
+    "quarantined_v21_test_runners": 11
+  },
+  "tests": {
+    "stage00_validation": {
+      "checks": 51,
+      "passed": 51,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "stress": {
+      "integrated_worlds": 20,
+      "health_pass": 20,
+      "movement_checks": 5,
+      "vendor_checks": 5,
+      "determinism_pairs": 10,
+      "determinism_pass": 10
+    },
+    "master_regression": {
+      "suites": 29,
+      "checks": 393,
+      "passed": 393,
+      "failed": 0,
+      "status": "PASS"
+    }
+  },
+  "godot_rendered_runtime": "NOT_CLAIMED_STAGE00_ENVIRONMENT_UNAVAILABLE",
+  "canon_mutations": 0,
+  "art_pipeline": "LOCKED_UNTIL_STAGE_17_PASS",
+  "backup_authorized": true,
+  "release_authorized": false,
+  "next_stage": "01_GAME_CORE"
+}

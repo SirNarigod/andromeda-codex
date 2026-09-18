@@ -1,0 +1,102 @@
+{
+  "record_id": "R2_NPC_REFERENCE_V1",
+  "scope": "REFERENCE_ONLY",
+  "canonical_references": [
+    {
+      "id": "PER-001",
+      "path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-001__aelyra-voss.json",
+      "runtime_role": "UNASSIGNED"
+    },
+    {
+      "id": "PER-002",
+      "path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-002__kenua-vaarn.json",
+      "runtime_role": "UNASSIGNED"
+    },
+    {
+      "id": "PER-003",
+      "path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-003__serlis-aftermoon.json",
+      "runtime_role": "UNASSIGNED"
+    },
+    {
+      "id": "PER-004",
+      "path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-004__genes-arvath.json",
+      "runtime_role": "UNASSIGNED"
+    },
+    {
+      "id": "PER-005",
+      "path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-005__serverus-vaelkor.json",
+      "runtime_role": "UNASSIGNED"
+    },
+    {
+      "id": "PER-006",
+      "path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-006__kaenna-vor.json",
+      "runtime_role": "UNASSIGNED"
+    },
+    {
+      "id": "PER-007",
+      "path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-007__ishara-veyn.json",
+      "runtime_role": "UNASSIGNED"
+    },
+    {
+      "id": "PER-008",
+      "path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-008__maelkar-enohar.json",
+      "runtime_role": "UNASSIGNED"
+    },
+    {
+      "id": "PER-009",
+      "path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-009__daren-vaarn.json",
+      "runtime_role": "UNASSIGNED"
+    },
+    {
+      "id": "PER-010",
+      "path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-010__meyra-vaarn.json",
+      "runtime_role": "UNASSIGNED"
+    },
+    {
+      "id": "PER-011",
+      "path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-011__ilyan-morveth.json",
+      "runtime_role": "UNASSIGNED"
+    },
+    {
+      "id": "LID-001",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/LIDERES/LID-001__elyra-vaelor.json",
+      "runtime_role": "UNASSIGNED"
+    },
+    {
+      "id": "LID-002",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/LIDERES/LID-002__odran-ferrak-iv.json",
+      "runtime_role": "UNASSIGNED"
+    },
+    {
+      "id": "LID-003",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/LIDERES/LID-003__caelen-orthev.json",
+      "runtime_role": "UNASSIGNED"
+    },
+    {
+      "id": "LID-004",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/LIDERES/LID-004__nymara-vel-thal.json",
+      "runtime_role": "UNASSIGNED"
+    },
+    {
+      "id": "LID-005",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/LIDERES/LID-005__saelyra-ithren.json",
+      "runtime_role": "UNASSIGNED"
+    },
+    {
+      "id": "LID-006",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/LIDERES/LID-006__vaelora-aereth.json",
+      "runtime_role": "UNASSIGNED"
+    },
+    {
+      "id": "LID-007",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/LIDERES/LID-007__maeryn-salvara.json",
+      "runtime_role": "UNASSIGNED"
+    },
+    {
+      "id": "LID-008",
+      "path": "01_LORE/CANON_R2/SOCIEDADES/LIDERES/LID-008__torvhan-calther.json",
+      "runtime_role": "UNASSIGNED"
+    }
+  ],
+  "rule": "Named R2 persons retain their Lore home. NPC is an implementation role, not a second identity."
+}

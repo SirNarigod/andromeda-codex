@@ -1,0 +1,66 @@
+{
+  "art_dependency": "NONE",
+  "candidate_restore": "PASS",
+  "canon_mutations": 0,
+  "canonical_anchors": [
+    "POI-003",
+    "SYS-AUT-001",
+    "JOB-LOG-ROBOTICA-001"
+  ],
+  "energy_source_canonized": false,
+  "generated_at": "2026-08-18T22:05:20.443578+00:00",
+  "godot_required": false,
+  "local_professions": 8,
+  "machine_profiles": 4,
+  "open_blockers": 0,
+  "open_corrections": 0,
+  "project": "ANDRÔMEDA CÓDEX",
+  "recipes": 4,
+  "record_id": "ARPG-STAGE11-COMPLETION-REPORT-V1.2.0",
+  "result": "TECHNOLOGY_MACHINES_ROBOTICS_FUNCTIONAL_CANDIDATE_RESTORE_PASS",
+  "robot_legal_guard": true,
+  "robot_profiles": 3,
+  "shared_inventory_stage05": true,
+  "stage": "11/23",
+  "status": "PASS",
+  "tests": {
+    "canon_mutations": 0,
+    "generated_at": "2026-08-18T22:02:13.016529+00:00",
+    "harness_events": [
+      {
+        "classification": "HARNESS_TIMEOUT_RESOLVED",
+        "event": "Initial unit batch reached cross-world determinism test after 19 consecutive passes and exceeded cumulative execution limit.",
+        "functional_mutation": false,
+        "id": "S11-C01",
+        "resolution": "Determinism invariant kept but moved to stable-ref test excluding runtime UUID; complete unit suite reran 21/21 PASS in ~33s."
+      },
+      {
+        "classification": "GROUPED_RUNNER_TIMEOUT_RESOLVED",
+        "event": "Validation+stress chained invocation exceeded executor limit.",
+        "functional_mutation": false,
+        "id": "S11-C02",
+        "resolution": "Validation and stress rerun separately; 36/36 and 39/39 PASS."
+      }
+    ],
+    "open_failures": 0,
+    "record_id": "ARPG-STAGE11-TEST-SUMMARY-V1.2.0",
+    "regressions_current_tree": {
+      "country_v15": "24/24 PASS",
+      "master": "393/393 PASS",
+      "stage05": "22/22 PASS",
+      "stage07": "17/17 PASS",
+      "stage09": "19/19 functional + 1/1 persistence PASS",
+      "stage10": "18/18 functional + 1/1 persistence PASS"
+    },
+    "stage": "11/23",
+    "stage11": {
+      "stress": "39/39 PASS",
+      "unit_and_persistence": "21/21 PASS",
+      "validation": "36/36 PASS"
+    },
+    "status": "PASS",
+    "version": "V1.2.0"
+  },
+  "vehicle_energy_binding_stage10": true,
+  "version": "V1.2.0"
+}

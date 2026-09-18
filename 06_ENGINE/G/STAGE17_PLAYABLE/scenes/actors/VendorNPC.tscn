@@ -1,0 +1,92 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/interaction/vendor_target.gd" id="1_vendor"]
+
+[sub_resource type="CapsuleShape3D" id="Shape_body"]
+radius = 0.4
+height = 1.8
+
+[sub_resource type="CapsuleShape3D" id="Shape_sensor"]
+radius = 0.48
+height = 1.95
+
+[sub_resource type="StandardMaterial3D" id="Material_body"]
+albedo_color = Color(0.91, 0.82, 0.68, 1)
+roughness = 0.9
+
+[sub_resource type="CapsuleMesh" id="Mesh_body"]
+material = SubResource("Material_body")
+radius = 0.4
+height = 1.8
+
+[sub_resource type="StandardMaterial3D" id="Material_selection"]
+albedo_color = Color(1, 0.72, 0.35, 0.7)
+transparency = 1
+shading_mode = 0
+
+[sub_resource type="CylinderMesh" id="Mesh_selection"]
+material = SubResource("Material_selection")
+top_radius = 0.6
+bottom_radius = 0.6
+height = 0.025
+
+[node name="VendorNPC" type="CharacterBody3D"]
+collision_layer = 4
+collision_mask = 135
+script = ExtResource("1_vendor")
+target_ref = "NPC-S13-VENDOR-SERVICE-POI-002"
+target_kind = "NPC"
+display_name = "Serviço comercial"
+pointer_aim_offset = Vector3(0, 1, 0)
+vendor_ref = "SHOP-S13-91CDF9F934810A65B2"
+location_ref = "POI-002"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+position = Vector3(0, 0.9, 0)
+shape = SubResource("Shape_body")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+radius = 0.4
+height = 1.8
+
+[node name="VisualRoot" type="Node3D" parent="."]
+position = Vector3(0, 0.9, 0)
+
+[node name="PlaceholderMesh" type="MeshInstance3D" parent="VisualRoot"]
+mesh = SubResource("Mesh_body")
+
+[node name="InteractionSensor" type="Area3D" parent="."]
+position = Vector3(0, 0.9, 0)
+collision_layer = 8
+collision_mask = 0
+monitoring = false
+monitorable = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="InteractionSensor"]
+shape = SubResource("Shape_sensor")
+
+[node name="InteractionAnchor" type="Marker3D" parent="."]
+position = Vector3(0, 0, 0)
+
+[node name="DialogueAnchor" type="Marker3D" parent="."]
+position = Vector3(0, 2.2, 0)
+
+[node name="HealthBarAnchor" type="Marker3D" parent="."]
+position = Vector3(0, 2, 0)
+
+[node name="HoverFeedback" type="Node3D" parent="."]
+
+[node name="HoverName" type="Label3D" parent="HoverFeedback"]
+visible = false
+position = Vector3(0, 2.35, 0)
+modulate = Color(0.72, 0.72, 0.72, 1)
+text = "Serviço comercial"
+font_size = 34
+outline_size = 8
+billboard = 1
+no_depth_test = true
+
+[node name="SelectionIndicator" type="MeshInstance3D" parent="HoverFeedback"]
+visible = false
+position = Vector3(0, 0.025, 0)
+mesh = SubResource("Mesh_selection")

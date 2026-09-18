@@ -1,0 +1,751 @@
+{
+  "provenance": {
+    "master_release": "ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE",
+    "master_release_zip_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "master_single_source_of_truth": "01_CANON/ANDROMEDA_CODEX_CANON_MASTER_V2_0_0.json (dentro do zip acima)",
+    "import_note": "Mirror fiel do conteudo funcional do pacote MASTER V2.0.1 (fonte canonica unica declarada pelo proprio pacote), auditado previamente contra as 10 decisoes autorais vinculantes (MASTER_AUTHORIAL_DECISIONS_V2_0_0) sem nenhuma violacao encontrada. Este tier (CANON_MASTER_V2) tem autoridade maior que CANON_DERIVADO_ATIVO e coexiste com CANON_R2 (que deriva da baseline anterior V1.0.1) sem contradicao identificada.",
+    "authority": "CANON_MASTER_V2_CONFIRMADO"
+  },
+  "schema_version": "1.0.0",
+  "record_id": "PROFESSION-INSTITUTION-BINDINGS-V1.0",
+  "title": "Bindings profissão-instituição",
+  "project": "ANDRÔMEDA CÓDEX — TERRA MAX",
+  "stage": "ETAPA_06",
+  "version": "V1.0",
+  "generated_at": "2026-08-14T01:00:00Z",
+  "authority": "TERRA MAX — fechamento sistêmico autorizado",
+  "parent_checkpoint": "CHECKPOINT-ETAPA-05-V1.0",
+  "spatial_reference": "ACRS-STELLAR-GEODETIC-V1",
+  "safety_scope": "Dados ficcionais de universo; não descrevem instruções reais de fabricação, emprego ou dano.",
+  "records": [
+    {
+      "id": "PB-INS-JOB-ADM-ASSIST-001",
+      "profession_id": "JOB-ADM-ASSIST-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-010",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-ANL-ANALISTA-001",
+      "profession_id": "JOB-ANL-ANALISTA-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-010",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-ARQ-ARQUIVISTA-001",
+      "profession_id": "JOB-ARQ-ARQUIVISTA-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-010",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-ARQ-CADEIA-001",
+      "profession_id": "JOB-ARQ-CADEIA-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-010",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-ART-LIC-001",
+      "profession_id": "JOB-ART-LIC-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-010",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-CIE-AMOSTRA-001",
+      "profession_id": "JOB-CIE-AMOSTRA-001",
+      "institution_id": "ORG-MAR-004",
+      "poi_id": "POI-024",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-CIE-BOT-001",
+      "profession_id": "JOB-CIE-BOT-001",
+      "institution_id": "ORG-MAR-004",
+      "poi_id": "POI-024",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-CIE-CAMPO-001",
+      "profession_id": "JOB-CIE-CAMPO-001",
+      "institution_id": "ORG-MAR-004",
+      "poi_id": "POI-024",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-CIE-EXPBOT-001",
+      "profession_id": "JOB-CIE-EXPBOT-001",
+      "institution_id": "ORG-MAR-004",
+      "poi_id": "POI-024",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-CIE-PESQ-001",
+      "profession_id": "JOB-CIE-PESQ-001",
+      "institution_id": "ORG-MAR-004",
+      "poi_id": "POI-024",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-CIE-PESQMOR-001",
+      "profession_id": "JOB-CIE-PESQMOR-001",
+      "institution_id": "ORG-MAR-004",
+      "poi_id": "POI-024",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-COM-ATEND-001",
+      "profession_id": "JOB-COM-ATEND-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-010",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-COM-CONFERENTE-001",
+      "profession_id": "JOB-COM-CONFERENTE-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-010",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-COM-ESTOQUE-001",
+      "profession_id": "JOB-COM-ESTOQUE-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-010",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-COM-FORNECEDOR-001",
+      "profession_id": "JOB-COM-FORNECEDOR-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-010",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-COM-INTERMED-001",
+      "profession_id": "JOB-COM-INTERMED-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-010",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-COM-MENS-001",
+      "profession_id": "JOB-COM-MENS-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-010",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-COM-MERCADOR-001",
+      "profession_id": "JOB-COM-MERCADOR-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-010",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-COM-SUPRIMENTOS-001",
+      "profession_id": "JOB-COM-SUPRIMENTOS-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-010",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-CON-MONT-001",
+      "profession_id": "JOB-CON-MONT-001",
+      "institution_id": "ORG-MAR-002",
+      "poi_id": "POI-021",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-CON-OPER-001",
+      "profession_id": "JOB-CON-OPER-001",
+      "institution_id": "ORG-MAR-002",
+      "poi_id": "POI-021",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-CONT-ESP-001",
+      "profession_id": "JOB-CONT-ESP-001",
+      "institution_id": "ORG-MAR-008",
+      "poi_id": "POI-038",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-CONT-ISO-001",
+      "profession_id": "JOB-CONT-ISO-001",
+      "institution_id": "ORG-MAR-008",
+      "poi_id": "POI-038",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-CONT-MESTRE-001",
+      "profession_id": "JOB-CONT-MESTRE-001",
+      "institution_id": "ORG-MAR-008",
+      "poi_id": "POI-038",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-EMERG-BRIG-001",
+      "profession_id": "JOB-EMERG-BRIG-001",
+      "institution_id": "ORG-MAR-008",
+      "poi_id": "POI-038",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-EMERG-DESP-001",
+      "profession_id": "JOB-EMERG-DESP-001",
+      "institution_id": "ORG-MAR-008",
+      "poi_id": "POI-038",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-EMERG-EVAC-001",
+      "profession_id": "JOB-EMERG-EVAC-001",
+      "institution_id": "ORG-MAR-008",
+      "poi_id": "POI-038",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-EMERG-RESG-001",
+      "profession_id": "JOB-EMERG-RESG-001",
+      "institution_id": "ORG-MAR-008",
+      "poi_id": "POI-038",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-EMERG-RESP-001",
+      "profession_id": "JOB-EMERG-RESP-001",
+      "institution_id": "ORG-MAR-008",
+      "poi_id": "POI-038",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-EXPL-CAC-001",
+      "profession_id": "JOB-EXPL-CAC-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-005",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-EXPL-RAST-001",
+      "profession_id": "JOB-EXPL-RAST-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-005",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-FER-CIRC-001",
+      "profession_id": "JOB-FER-CIRC-001",
+      "institution_id": "ORG-MAR-006",
+      "poi_id": "POI-008",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-FER-COND-001",
+      "profession_id": "JOB-FER-COND-001",
+      "institution_id": "ORG-MAR-006",
+      "poi_id": "POI-008",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-FER-ESTACAO-001",
+      "profession_id": "JOB-FER-ESTACAO-001",
+      "institution_id": "ORG-MAR-006",
+      "poi_id": "POI-008",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-FER-MANUT-001",
+      "profession_id": "JOB-FER-MANUT-001",
+      "institution_id": "ORG-MAR-006",
+      "poi_id": "POI-008",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-FISC-INST-001",
+      "profession_id": "JOB-FISC-INST-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-010",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-GOV-AUTORIDADE-001",
+      "profession_id": "JOB-GOV-AUTORIDADE-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-010",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-GOV-GUARDIAMOR-001",
+      "profession_id": "JOB-GOV-GUARDIAMOR-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-010",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-GOV-PRIMEIRACOND-001",
+      "profession_id": "JOB-GOV-PRIMEIRACOND-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-010",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-GOV-PRIMEIRACOROA-001",
+      "profession_id": "JOB-GOV-PRIMEIRACOROA-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-010",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-IND-OPER-001",
+      "profession_id": "JOB-IND-OPER-001",
+      "institution_id": "ORG-MAR-001",
+      "poi_id": "POI-003",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-IND-QUAL-001",
+      "profession_id": "JOB-IND-QUAL-001",
+      "institution_id": "ORG-MAR-001",
+      "poi_id": "POI-003",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-INV-INV-001",
+      "profession_id": "JOB-INV-INV-001",
+      "institution_id": "ORG-MAR-008",
+      "poi_id": "POI-038",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-JUR-CONTRATOS-001",
+      "profession_id": "JOB-JUR-CONTRATOS-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-010",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-LOG-MOVCARGA-001",
+      "profession_id": "JOB-LOG-MOVCARGA-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-008",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-LOG-ROBOTICA-001",
+      "profession_id": "JOB-LOG-ROBOTICA-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-008",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-MAG-MAGO-001",
+      "profession_id": "JOB-MAG-MAGO-001",
+      "institution_id": "ORG-MAR-004",
+      "poi_id": "POI-024",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-MAG-REIMAGO-001",
+      "profession_id": "JOB-MAG-REIMAGO-001",
+      "institution_id": "ORG-MAR-004",
+      "poi_id": "POI-024",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-MAG-SUPREMO-001",
+      "profession_id": "JOB-MAG-SUPREMO-001",
+      "institution_id": "ORG-MAR-004",
+      "poi_id": "POI-024",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-MAN-AGENTE-001",
+      "profession_id": "JOB-MAN-AGENTE-001",
+      "institution_id": "ORG-MAR-001",
+      "poi_id": "POI-003",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-MED-MEDIADOR-001",
+      "profession_id": "JOB-MED-MEDIADOR-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-010",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-MFG-FAB-001",
+      "profession_id": "JOB-MFG-FAB-001",
+      "institution_id": "ORG-MAR-001",
+      "poi_id": "POI-003",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-MFG-REPARO-001",
+      "profession_id": "JOB-MFG-REPARO-001",
+      "institution_id": "ORG-MAR-001",
+      "poi_id": "POI-003",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-MIN-INSP-001",
+      "profession_id": "JOB-MIN-INSP-001",
+      "institution_id": "ORG-MAR-002",
+      "poi_id": "POI-021",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-MIN-OPER-001",
+      "profession_id": "JOB-MIN-OPER-001",
+      "institution_id": "ORG-MAR-002",
+      "poi_id": "POI-021",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-MIN-PATIO-001",
+      "profession_id": "JOB-MIN-PATIO-001",
+      "institution_id": "ORG-MAR-002",
+      "poi_id": "POI-021",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-MNT-CAMPO-001",
+      "profession_id": "JOB-MNT-CAMPO-001",
+      "institution_id": "ORG-MAR-001",
+      "poi_id": "POI-003",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-MNT-INSP-001",
+      "profession_id": "JOB-MNT-INSP-001",
+      "institution_id": "ORG-MAR-001",
+      "poi_id": "POI-003",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-MNT-RECUP-001",
+      "profession_id": "JOB-MNT-RECUP-001",
+      "institution_id": "ORG-MAR-001",
+      "poi_id": "POI-003",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-ORDEM-DISC-001",
+      "profession_id": "JOB-ORDEM-DISC-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-010",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-PEC-INSET-001",
+      "profession_id": "JOB-PEC-INSET-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-005",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-PEC-LEIT-001",
+      "profession_id": "JOB-PEC-LEIT-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-005",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-PEC-MAN-001",
+      "profession_id": "JOB-PEC-MAN-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-005",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-RUN-AUT-001",
+      "profession_id": "JOB-RUN-AUT-001",
+      "institution_id": "ORG-MAR-003",
+      "poi_id": "POI-012",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-RUN-GRAV-001",
+      "profession_id": "JOB-RUN-GRAV-001",
+      "institution_id": "ORG-MAR-003",
+      "poi_id": "POI-012",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-RUN-MATRIZ-001",
+      "profession_id": "JOB-RUN-MATRIZ-001",
+      "institution_id": "ORG-MAR-003",
+      "poi_id": "POI-012",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-RUN-MNT-001",
+      "profession_id": "JOB-RUN-MNT-001",
+      "institution_id": "ORG-MAR-003",
+      "poi_id": "POI-012",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-RUN-OPER-001",
+      "profession_id": "JOB-RUN-OPER-001",
+      "institution_id": "ORG-MAR-003",
+      "poi_id": "POI-012",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-RUR-AGR-001",
+      "profession_id": "JOB-RUR-AGR-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-005",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-RUR-COL-001",
+      "profession_id": "JOB-RUR-COL-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-005",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-RUR-HID-001",
+      "profession_id": "JOB-RUR-HID-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-005",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-RUR-MAQ-001",
+      "profession_id": "JOB-RUR-MAQ-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-005",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-RUR-PROC-001",
+      "profession_id": "JOB-RUR-PROC-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-005",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-SAU-CUR-001",
+      "profession_id": "JOB-SAU-CUR-001",
+      "institution_id": "ORG-MAR-007",
+      "poi_id": "POI-011",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-SAU-EQCLIN-001",
+      "profession_id": "JOB-SAU-EQCLIN-001",
+      "institution_id": "ORG-MAR-007",
+      "poi_id": "POI-011",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-SAU-RISCO-001",
+      "profession_id": "JOB-SAU-RISCO-001",
+      "institution_id": "ORG-MAR-007",
+      "poi_id": "POI-011",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-SEG-COMAND-001",
+      "profession_id": "JOB-SEG-COMAND-001",
+      "institution_id": "ORG-MAR-008",
+      "poi_id": "POI-038",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-SEG-GUARDA-001",
+      "profession_id": "JOB-SEG-GUARDA-001",
+      "institution_id": "ORG-MAR-008",
+      "poi_id": "POI-038",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-SEG-INFRA-001",
+      "profession_id": "JOB-SEG-INFRA-001",
+      "institution_id": "ORG-MAR-008",
+      "poi_id": "POI-038",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-SEG-MERC-001",
+      "profession_id": "JOB-SEG-MERC-001",
+      "institution_id": "ORG-MAR-008",
+      "poi_id": "POI-038",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-SEG-VIGIA-001",
+      "profession_id": "JOB-SEG-VIGIA-001",
+      "institution_id": "ORG-MAR-008",
+      "poi_id": "POI-038",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-SEG-VIGRAD-001",
+      "profession_id": "JOB-SEG-VIGRAD-001",
+      "institution_id": "ORG-MAR-008",
+      "poi_id": "POI-038",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-SRV-ABRIGO-001",
+      "profession_id": "JOB-SRV-ABRIGO-001",
+      "institution_id": "ORG-MAR-009",
+      "poi_id": "POI-010",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-TEC-ICAMENTO-001",
+      "profession_id": "JOB-TEC-ICAMENTO-001",
+      "institution_id": "ORG-MAR-001",
+      "poi_id": "POI-003",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-TEC-OFI-AUX-001",
+      "profession_id": "JOB-TEC-OFI-AUX-001",
+      "institution_id": "ORG-MAR-001",
+      "poi_id": "POI-003",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-TEC-OFI-RESP-001",
+      "profession_id": "JOB-TEC-OFI-RESP-001",
+      "institution_id": "ORG-MAR-001",
+      "poi_id": "POI-003",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-TEC-OFICINA-001",
+      "profession_id": "JOB-TEC-OFICINA-001",
+      "institution_id": "ORG-MAR-001",
+      "poi_id": "POI-003",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-TEC-RESFRIAMENTO-001",
+      "profession_id": "JOB-TEC-RESFRIAMENTO-001",
+      "institution_id": "ORG-MAR-001",
+      "poi_id": "POI-003",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-TRN-MOTORISTA-001",
+      "profession_id": "JOB-TRN-MOTORISTA-001",
+      "institution_id": "ORG-MAR-005",
+      "poi_id": "POI-008",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-TRN-MOTORISTA-CARGA-001",
+      "profession_id": "JOB-TRN-MOTORISTA-CARGA-001",
+      "institution_id": "ORG-MAR-005",
+      "poi_id": "POI-008",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    },
+    {
+      "id": "PB-INS-JOB-TRN-MOTORISTA-COLETIVO-001",
+      "profession_id": "JOB-TRN-MOTORISTA-COLETIVO-001",
+      "institution_id": "ORG-MAR-005",
+      "poi_id": "POI-008",
+      "relation_type_id": "DEP-009",
+      "status": "VALIDADO"
+    }
+  ],
+  "count": 91
+}

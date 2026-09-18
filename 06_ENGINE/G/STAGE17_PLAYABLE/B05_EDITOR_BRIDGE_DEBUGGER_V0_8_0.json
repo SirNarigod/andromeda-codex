@@ -1,0 +1,52 @@
+{
+  "record_id": "ANDROMEDA-ARPG-STAGE16B-B05-EDITOR-BRIDGE-DEBUGGER-V0.8.0",
+  "captured_at": "2026-08-21T03:27:56-03:00",
+  "godot_version": "4.7.1.stable.official.a13da4feb",
+  "project_path": "C:/Users/thall/Documents/andromeda-argp/ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/07_GODOT_ARPG_STAGE16B",
+  "bridge": "EXISTING_LOCAL_ANDROMEDA_EDITOR_BRIDGE",
+  "runs": [
+    {
+      "id": "B05_EDITOR_BRIDGE_R1_INVALIDATED",
+      "scene": "res://tests/godot/B05RuntimeGate.tscn",
+      "functional_checks": "210/210",
+      "result": "INVALIDATED_WARNING_PRESENT",
+      "warnings": 4,
+      "errors": 0,
+      "warning_details": [
+        "Two unnecessary await keywords in the B05 gate",
+        "Two explicit enum casts missing in B05 synthetic input helpers"
+      ]
+    },
+    {
+      "id": "B05_EDITOR_BRIDGE_FINAL",
+      "scene": "res://tests/godot/B05RuntimeGate.tscn",
+      "result": "PASS",
+      "passed": 210,
+      "failed": 0,
+      "debugger_errors": 0,
+      "debugger_warnings": 0,
+      "controlled_stop_final_errors": 0
+    },
+    {
+      "id": "B05_MAIN_DIRECT_EDITOR_BRIDGE_FINAL",
+      "scene": "res://scenes/Main.tscn",
+      "result": "PASS",
+      "debugger_errors": 0,
+      "debugger_warnings": 0,
+      "controlled_stop_final_errors": 0
+    }
+  ],
+  "final_debugger": {
+    "errors": 0,
+    "warnings": 0,
+    "timeouts": 0,
+    "incomplete_runs": 0,
+    "status": "PASS"
+  },
+  "user_editor_preserved": {
+    "pid": 10524,
+    "command_line": "Godot.exe --path C:/Users/thall/Documents/andromeda-argp --editor",
+    "terminated_by_b05": false
+  }
+}
+

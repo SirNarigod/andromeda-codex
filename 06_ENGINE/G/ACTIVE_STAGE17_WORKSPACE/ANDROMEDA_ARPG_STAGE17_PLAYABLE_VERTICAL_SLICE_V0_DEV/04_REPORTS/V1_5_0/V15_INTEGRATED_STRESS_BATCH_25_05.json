@@ -1,0 +1,101 @@
+{
+  "record_id": "V15-INTEGRATED-STRESS-BATCH",
+  "start": 25,
+  "worlds": 5,
+  "passed": 5,
+  "failed": 0,
+  "rows": [
+    {
+      "seed": 15025,
+      "npc": "NPC-01-01-01-002",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 9,
+      "health": "PASS",
+      "transform_delta_max_m": 4.0713814087212086e-05,
+      "environment": {
+        "temp": 19.03,
+        "rain": true,
+        "daylight": 0.0
+      }
+    },
+    {
+      "seed": 15026,
+      "npc": "NPC-01-02-01-008",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 9,
+      "health": "PASS",
+      "transform_delta_max_m": 1.6662779671605676e-05,
+      "environment": {
+        "temp": 13.34,
+        "rain": true,
+        "daylight": 0.0
+      }
+    },
+    {
+      "seed": 15027,
+      "npc": "NPC-01-01-03-006",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 9,
+      "health": "PASS",
+      "transform_delta_max_m": 2.485059667378664e-05,
+      "environment": {
+        "temp": 13.8,
+        "rain": true,
+        "daylight": 0.0
+      }
+    },
+    {
+      "seed": 15028,
+      "npc": "NPC-01-01-01-004",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 10,
+      "health": "PASS",
+      "transform_delta_max_m": 4.365493077784777e-05,
+      "environment": {
+        "temp": 12.15,
+        "rain": false,
+        "daylight": 0.0
+      }
+    },
+    {
+      "seed": 15029,
+      "npc": "NPC-01-01-01-017",
+      "moves": {
+        "PASS": 3,
+        "COLLISION_BLOCKED": 0
+      },
+      "path_status": "PASS",
+      "dungeon_move": "PASS",
+      "known": 10,
+      "health": "PASS",
+      "transform_delta_max_m": 3.7483987398445606e-05,
+      "environment": {
+        "temp": 21.19,
+        "rain": false,
+        "daylight": 0.0
+      }
+    }
+  ],
+  "failures": [],
+  "status": "PASS"
+}

@@ -1,0 +1,34 @@
+{
+  "record_id": "ARPG-STAGE07-CORRECTION-LEDGER-V0.8.0",
+  "stage": "07/23",
+  "status": "CLOSED",
+  "entries": [
+    {
+      "id": "S07-C01",
+      "result": "FIXED",
+      "note": "Eager materialization of ~491 actor overlays made suites scale poorly; replaced with lazy active-set/LOD materialization while Country remains source authority."
+    },
+    {
+      "id": "S07-C02",
+      "result": "FIXED",
+      "note": "Initial grouped Stage07 persistence/unit execution exceeded harness budget; suites split and lazy bootstrap corrected; conclusive results obtained."
+    },
+    {
+      "id": "S07-C03",
+      "result": "FIXED",
+      "note": "Lore coverage file generation hit an environment write-permission path once; regenerated through project filesystem and audited 25/25; runtime unaffected."
+    },
+    {
+      "id": "S07-C04",
+      "result": "RESOLVED_HARNESS",
+      "note": "Grouped Stage02 regression timed out after unit completion; validation and stress were rerun independently and passed."
+    },
+    {
+      "id": "S07-C05",
+      "result": "FIXED",
+      "note": "Fresh-world combat variance traced to runtime UUID in stable-roll seed; changed to simulation world seed + immutable event reference + roll channel and verified identical independent stress metrics."
+    }
+  ],
+  "open_corrections": 0,
+  "generated_at": "2026-08-18T18:32:18.747667+00:00"
+}

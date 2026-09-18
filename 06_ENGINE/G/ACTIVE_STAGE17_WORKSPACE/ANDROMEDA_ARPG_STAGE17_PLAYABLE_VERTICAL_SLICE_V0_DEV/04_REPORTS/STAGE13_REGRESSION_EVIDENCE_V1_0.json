@@ -1,0 +1,103 @@
+{
+  "record_id": "STAGE13-REGRESSION-EVIDENCE-V1.0",
+  "execution_mode": "SEPARATE_MODULE_RUNS_TO_AVOID_MONOLITHIC_TOOL_WINDOW",
+  "upstream_python_tests": 611,
+  "upstream_modules": [
+    {
+      "module": "runtime_core",
+      "test_file": "test_runtime_core.py",
+      "tests": 59,
+      "status": "PASS",
+      "stage13_module_sha256": "1b1dfb052bf679af8a7820805fda88590dd4b56bb41b58d8b1d46b8239eadf72",
+      "stage12_module_sha256": "1b1dfb052bf679af8a7820805fda88590dd4b56bb41b58d8b1d46b8239eadf72",
+      "byte_identical": true
+    },
+    {
+      "module": "consequence_engine",
+      "test_file": "test_consequence_engine.py",
+      "tests": 56,
+      "status": "PASS",
+      "stage13_module_sha256": "6924d3d43e16a94b4318a7ad41bf4acb27f5069e78abdda8f2824148fd95d6ea",
+      "stage12_module_sha256": "6924d3d43e16a94b4318a7ad41bf4acb27f5069e78abdda8f2824148fd95d6ea",
+      "byte_identical": true
+    },
+    {
+      "module": "agent_brain",
+      "test_file": "test_agent_brain.py",
+      "tests": 90,
+      "status": "PASS",
+      "stage13_module_sha256": "2fb42c08b16abcda52927c0cdc8c7daa28d69895c80f6c94fd2eb374c72e6b02",
+      "stage12_module_sha256": "2fb42c08b16abcda52927c0cdc8c7daa28d69895c80f6c94fd2eb374c72e6b02",
+      "byte_identical": true
+    },
+    {
+      "module": "social_memory",
+      "test_file": "test_social_memory.py",
+      "tests": 72,
+      "status": "PASS",
+      "stage13_module_sha256": "b290ad3f0f51edfa263e7595bf2646a2823250281649f5f6aa625eeb062996e2",
+      "stage12_module_sha256": "b290ad3f0f51edfa263e7595bf2646a2823250281649f5f6aa625eeb062996e2",
+      "byte_identical": true
+    },
+    {
+      "module": "ecology_brain",
+      "test_file": "test_ecology_brain.py",
+      "tests": 77,
+      "status": "PASS",
+      "stage13_module_sha256": "22caf44e94cf17d67caf1628d863ad0556de9844b0277cb0eb6ca516a9622a72",
+      "stage12_module_sha256": "22caf44e94cf17d67caf1628d863ad0556de9844b0277cb0eb6ca516a9622a72",
+      "byte_identical": true
+    },
+    {
+      "module": "object_environment",
+      "test_file": "test_object_environment.py",
+      "tests": 73,
+      "status": "PASS",
+      "stage13_module_sha256": "2a5720cd9583f46c87750e6016dcef67f3f7e3d9b3a47ab725df5e97dc10b170",
+      "stage12_module_sha256": "2a5720cd9583f46c87750e6016dcef67f3f7e3d9b3a47ab725df5e97dc10b170",
+      "byte_identical": true
+    },
+    {
+      "module": "world_orchestrator",
+      "test_file": "test_world_orchestrator.py",
+      "tests": 54,
+      "status": "PASS",
+      "stage13_module_sha256": "1a403f78ea3615477d84ef525ff86ea15445c2698cd47da7d240899dc8d9a6b4",
+      "stage12_module_sha256": "1a403f78ea3615477d84ef525ff86ea15445c2698cd47da7d240899dc8d9a6b4",
+      "byte_identical": true
+    },
+    {
+      "module": "world_systems",
+      "test_file": "test_world_systems.py",
+      "tests": 51,
+      "status": "PASS",
+      "stage13_module_sha256": "4cefb8dbead39063ec0088fd5d7a507926cb407b6b4f49c633b35108f162dd65",
+      "stage12_module_sha256": "4cefb8dbead39063ec0088fd5d7a507926cb407b6b4f49c633b35108f162dd65",
+      "byte_identical": true
+    },
+    {
+      "module": "long_horizon",
+      "test_file": "test_long_horizon.py",
+      "tests": 44,
+      "status": "PASS",
+      "stage13_module_sha256": "148fcce347e93c61c0cd4af2c4e64e64dadad665e709bbe42d97deba5cde74ee",
+      "stage12_module_sha256": "148fcce347e93c61c0cd4af2c4e64e64dadad665e709bbe42d97deba5cde74ee",
+      "byte_identical": true
+    },
+    {
+      "module": "llm_gateway",
+      "test_file": "test_llm_gateway.py",
+      "tests": 35,
+      "status": "PASS",
+      "stage13_module_sha256": "15dfe9ef9f7672e1d81bf3bf507a9d2fbfbaa36df7944a9976ef69f1f5ecd681",
+      "stage12_module_sha256": "15dfe9ef9f7672e1d81bf3bf507a9d2fbfbaa36df7944a9976ef69f1f5ecd681",
+      "byte_identical": true
+    }
+  ],
+  "stage13_python_tests": 61,
+  "stage13_python_status": "PASS",
+  "stage13_js_unit_checks": 7,
+  "stage13_js_status": "PASS",
+  "total_python_tests_evidence": 672,
+  "status": "PASS"
+}

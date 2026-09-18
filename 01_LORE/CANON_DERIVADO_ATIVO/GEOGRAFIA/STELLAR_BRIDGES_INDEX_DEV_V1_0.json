@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-BRIDGES-INDEX-DEV-V1.0",
+  "title": "Pontes de escalas diferentes - so em cruzamentos aquaticos/pantanosos/montanhosos/gelo",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "r2_guard": "Toda ponte referencia uma rota (ROT-XXX) e opcionalmente uma paisagem (PAI-XXX) ja reais - nenhuma geografia nova alem do ja definido nas fases 36/37/53.",
+  "bridges": [
+    {
+      "bridge_id": "PON-001",
+      "name": "Ponte das Ilhas de Navyr",
+      "scale": "MEDIA",
+      "route_ref": "ROT-007",
+      "landscape_ref": "PAI-011",
+      "safety": "FICTIONAL_LOCATION_ONLY"
+    },
+    {
+      "bridge_id": "PON-002",
+      "name": "Ponte dos Jardins de Rubra-Viva",
+      "scale": "PEQUENA",
+      "route_ref": "ROT-013",
+      "landscape_ref": "PAI-020",
+      "safety": "FICTIONAL_LOCATION_ONLY"
+    },
+    {
+      "bridge_id": "PON-003",
+      "name": "Ponte do Pantano da Serpente",
+      "scale": "PEQUENA",
+      "route_ref": "ROT-041",
+      "landscape_ref": "PAI-060",
+      "safety": "FICTIONAL_LOCATION_ONLY"
+    },
+    {
+      "bridge_id": "PON-004",
+      "name": "Ponte das Fendas da Nevoa",
+      "scale": "MEDIA",
+      "route_ref": "ROT-025",
+      "landscape_ref": "PAI-036",
+      "safety": "FICTIONAL_LOCATION_ONLY"
+    },
+    {
+      "bridge_id": "PON-005",
+      "name": "Ponte de Gelo da Fenda Congelada",
+      "scale": "PEQUENA",
+      "route_ref": "ROT-035",
+      "landscape_ref": "PAI-051",
+      "safety": "FICTIONAL_LOCATION_ONLY"
+    },
+    {
+      "bridge_id": "PON-006",
+      "name": "Ponte Eterea das Correntes",
+      "scale": "GRANDE",
+      "route_ref": "ROT-036",
+      "landscape_ref": "PAI-053",
+      "safety": "FICTIONAL_LOCATION_ONLY"
+    },
+    {
+      "bridge_id": "PON-007",
+      "name": "Ponte da Passagem Secreta",
+      "scale": "PEQUENA",
+      "route_ref": "ROT-029",
+      "landscape_ref": "PAI-042",
+      "safety": "FICTIONAL_LOCATION_ONLY"
+    },
+    {
+      "bridge_id": "PON-008",
+      "name": "Ponte de Pedra dos Tuneis",
+      "scale": "MEDIA",
+      "route_ref": "ROT-017",
+      "landscape_ref": "PAI-026",
+      "safety": "FICTIONAL_LOCATION_ONLY"
+    },
+    {
+      "bridge_id": "PON-009",
+      "name": "Grande Ponte Costeira de Luminor-Navyr",
+      "scale": "GRANDE",
+      "route_ref": "ROT-045",
+      "landscape_ref": null,
+      "safety": "FICTIONAL_LOCATION_ONLY"
+    },
+    {
+      "bridge_id": "PON-010",
+      "name": "Comporta Abissal de Navyr",
+      "scale": "GRANDE",
+      "route_ref": "ROT-046",
+      "landscape_ref": null,
+      "safety": "FICTIONAL_LOCATION_ONLY"
+    }
+  ]
+}

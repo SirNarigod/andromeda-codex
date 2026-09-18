@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-005-002",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Laboratório Central",
+  "parent_subregion": "SUB-005-002",
+  "parent_political_unit": "TER-005",
+  "function": "Principal centro de pesquisa tecnomágica do principado.",
+  "notable_link": "Laboratórios de Convergência (SUB-005-002)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-005-002",
+  "settlement_tier": "COMPLEXO",
+  "history": "Diferente da Oficina de Convergência, voltada pra manutenção prática, o Laboratório Central existe pra pesquisa pura — tentativas de expandir o que fusão tecnomágica consegue fazer além dos chassis sintéticos já estabelecidos. A maioria dos experimentos fracassa sem consequência visível; uma minoria pequena, mas memorável, deixou marcas permanentes na estrutura do próprio prédio que ninguém nunca reparou completamente, como lembrete silencioso dos riscos envolvidos.",
+  "sensory": "Salas de teste isoladas por portas reforçadas guardam experimentos em andamento, cada uma com um pequeno visor de vidro-runa pra observação segura de fora. O ar carrega um cheiro metálico mais intenso que na Oficina, misturado a algo quimicamente adocicado que pesquisadores mais antigos identificam como sinal de instabilidade rúnica próxima demais da superfície. Marcas de queimadura antigas, nunca completamente removidas, aparecem em paredes específicas — cada uma com uma pequena placa discreta indicando apenas a data, sem detalhes do que aconteceu.",
+  "figures": [
+    {
+      "role": "Diretora de Pesquisa",
+      "name": "Vessa Tecnorruna",
+      "note": "Supervisiona todos os experimentos ativos com rigor que alguns consideram paranoico e outros consideram exatamente o necessário, dado o histórico do prédio — perdeu um mentor num dos incidentes marcados nas paredes, décadas atrás, embora raramente fale sobre isso diretamente."
+    },
+    {
+      "role": "Pesquisador ambicioso",
+      "name": "Dorian Convergefundo",
+      "note": "Está convencido de ter encontrado uma forma de estender a técnica de fusão além de chassis pra criar ferramentas rúnico-tecnológicas de uso geral — Vessa aprovou testes preliminares com relutância visível, cautelosa demais pra confiar totalmente na segurança dele."
+    }
+  ],
+  "hook": "O próximo teste de Dorian exige nível de energia rúnica próximo ao que causou o incidente que matou o mentor de Vessa — ela precisa decidir entre negar autorização, arriscando a acusação de deixar medo pessoal atrapalhar avanço científico legítimo, ou aprovar e conviver com o próprio desconforto durante todo o teste.",
+  "detail": "Todo experimento aprovado no Laboratório recebe um número sequencial que nunca é reutilizado, mesmo quando um experimento fracassa sem incidente — Vessa insiste que a numeração contínua serve como lembrete de quantas tentativas realmente aconteceram ali, sucesso ou fracasso.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION", "NO_MAGIC_LAW_REWRITE"]
+}

@@ -1,0 +1,27 @@
+{
+  "loc_id": "LOC-018-002",
+  "record_id": "LOC-018-002",
+  "name": "Vila dos Recifes",
+  "parent_subregion": "SUB-018-002",
+  "function": "Assentamento principal junto aos Recifes Luminosos.",
+  "notable_link": "TER-018 Fossa Abissal (fase 51, território novo)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "settlement_tier": "VILA",
+  "history": "Diferente da Cúpula da Trincheira, a Vila dos Recifes não precisa de casco pressurizado — foi construída numa saliência rasa o bastante pra receber luz solar filtrada, onde os Recifes Luminosos crescem em formações que emitem brilho próprio à noite. Os primeiros moradores eram, em sua maioria, ex-trabalhadores da Cúpula que buscavam uma vida menos dependente de bombas e cotas de ar — a Vila cresceu como alternativa deliberada ao estilo de vida da cidade pressurizada, e uma rivalidade cultural discreta existe entre os dois assentamentos até hoje.",
+  "sensory": "Os recifes ao redor da vila brilham em tons de azul e violeta suave assim que a luz do dia diminui, iluminando as ruas de casas construídas sobre plataformas ancoradas na própria formação coralínea. O som da água é constante, mas suave — nada como o ronco de bombas da Cúpula — e moradores costumam dizer que dormem melhor ali do que em qualquer outro lugar da Fossa Abissal. O cheiro é de sal e de uma leve doçura mineral que vem do próprio recife, algo que visitantes da Cúpula acham estranhamente agradável na primeira visita.",
+  "figures": [
+    {
+      "role": "Cuidadora dos Recifes",
+      "name": "Mira Luzcoral",
+      "note": "Dedica a vida a monitorar a saúde das formações que sustentam e iluminam a vila, preocupada com sinais recentes de embranquecimento em uma seção específica do recife — algo que nunca tinha visto antes e não sabe explicar."
+    },
+    {
+      "role": "Ex-trabalhador da Cúpula",
+      "name": "Fenn Arletorto",
+      "note": "Deixou a Cúpula há três anos depois de vender cota de ar demais e quase não sobreviver a um turno — carrega ressentimento profundo contra o sistema de lá e desestimula qualquer jovem da Vila que considere ir trabalhar na cidade pressurizada por dinheiro melhor."
+    }
+  ],
+  "hook": "O embranquecimento que Mira notou está se espalhando mais rápido do que ela consegue documentar, e ela suspeita que tem relação com atividade de extração da Cúpula perto demais dos recifes — uma acusação que, se verdadeira, reacenderia a tensão antiga entre os dois assentamentos exatamente quando menos gente quer conflito.",
+  "detail": "Nenhuma construção nova na Vila pode encostar diretamente no recife vivo — toda plataforma é ancorada em pontos de coral já morto, identificados cuidadosamente por Mira antes de qualquer expansão, uma regra que a comunidade segue rigorosamente mesmo sem fiscalização formal.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION"]
+}

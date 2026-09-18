@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-003-001",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Estação Central",
+  "parent_subregion": "SUB-003-001",
+  "parent_political_unit": "TER-003",
+  "function": "Maior estação de trem da república, hub de todas as linhas.",
+  "notable_link": "Nó Ferroviário Central (SUB-003-001)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-003-001",
+  "settlement_tier": "COMPLEXO",
+  "history": "A Estação Central foi construída para unir a República de Ortheon, mas suas plataformas acabaram dividindo a cidade entre quem pode esperar e quem precisa partir imediatamente.",
+  "sensory": "Relógios discordam uns dos outros; anúncios ecoam por túneis onde o ar cheira a cobre molhado.",
+  "hook": "Um manifesto de passageiros inclui nomes de pessoas ainda vivas.",
+  "secondary_hook": "Sena pede silêncio para evitar pânico antes da próxima composição.",
+  "detail": "Bilhetes antigos podem ser trocados por passagem se alguém confirmar a memória do viajante.",
+  "figures": [
+    {
+      "role": "Sena Horária",
+      "name": "Sena Horária",
+      "note": "chefe de plataforma que altera prioridades"
+    },
+    {
+      "role": "Bram-Sete",
+      "name": "Bram-Sete",
+      "note": "carregador que memoriza passageiros desaparecidos"
+    }
+  ]
+}

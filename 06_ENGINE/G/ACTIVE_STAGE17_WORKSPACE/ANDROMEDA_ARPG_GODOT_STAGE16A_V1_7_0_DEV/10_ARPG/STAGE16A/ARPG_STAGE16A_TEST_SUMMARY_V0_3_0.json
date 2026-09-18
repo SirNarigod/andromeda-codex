@@ -1,0 +1,49 @@
+{
+  "record_id": "ARPG-STAGE16A-TEST-SUMMARY-V0.3.0",
+  "status": "PASS_PARTIAL_PRE_GODOT",
+  "checks": 78,
+  "passed": 78,
+  "failed": 0,
+  "suites": [
+    {
+      "name": "interaction_intent",
+      "checks": 14,
+      "passed": 14
+    },
+    {
+      "name": "ground_loot",
+      "checks": 10,
+      "passed": 10
+    },
+    {
+      "name": "terrain_traversal_streaming",
+      "checks": 18,
+      "passed": 18
+    },
+    {
+      "name": "realtime_dialogue",
+      "checks": 18,
+      "passed": 18
+    },
+    {
+      "name": "minimal_hud",
+      "checks": 18,
+      "passed": 18
+    }
+  ],
+  "regression": [
+    {
+      "name": "stage12_narrative",
+      "checks": 21,
+      "passed": 21
+    },
+    {
+      "name": "stage07_actor",
+      "checks": 17,
+      "passed": 17
+    }
+  ],
+  "godot_runtime_validation": "PENDING_PC_ON_AND_EDITOR_BRIDGE_AVAILABLE",
+  "visual_candidate_values": "NOT_FINAL_UNTIL_STAGE16B",
+  "canon_mutations": 0
+}

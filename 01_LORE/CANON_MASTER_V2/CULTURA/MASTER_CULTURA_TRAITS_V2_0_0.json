@@ -1,0 +1,2741 @@
+{
+  "record_id": "MASTER-CULTURA-TRAITS-V2.0.0",
+  "title": "Traços culturais oficiais do MASTER V2.0.1 por território (416 entradas)",
+  "provenance": {
+    "master_release": "ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE",
+    "master_release_zip_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "source_files": [
+      "01_CANON/ANDROMEDA_CODEX_CANON_MASTER_V2_0_0.json (entities, domain=cultura/idiomas/crenças)"
+    ],
+    "authority": "CANON_MASTER_V2_CONFIRMADO",
+    "namespace_check": "Todas as 416 entradas usam o prefixo SOC-PROP-XXX-NNN - nenhuma colisao com nosso namespace CUL-001..013 (que permanece intocado).",
+    "import_note": "416 tracos culturais oficiais do Master V2.0.1, organizados por territorio/cultura (13 x ~32 tracos cada = 416). Cada traco documenta uma norma social concreta (hospitalidade, alimentacao, vestuario, ritual, luto, jogos, musica, danca, etc.) especifica daquele povo - enriquecimento direto dos nossos 13 arquivos CUL-XXX (que continuam intocados; este arquivo e um complemento aditivo, nao uma substituicao).",
+    "category_label_note": "Rótulo inferido a partir do padrão de texto das próprias entradas - o pacote-fonte não documenta o significado oficial da sigla."
+  },
+  "count_total": 416,
+  "count_territories": 13,
+  "category_legend": [
+    {
+      "code": "ART",
+      "label_inferred": "Artesanato/materiais"
+    },
+    {
+      "code": "VES",
+      "label_inferred": "Vestuário"
+    },
+    {
+      "code": "HOSF",
+      "label_inferred": "Hospitalidade alimentar"
+    },
+    {
+      "code": "HOS",
+      "label_inferred": "Hospitalidade geral"
+    },
+    {
+      "code": "SIM",
+      "label_inferred": "Simbologia/pertencimento"
+    },
+    {
+      "code": "ALI",
+      "label_inferred": "Alimentação"
+    },
+    {
+      "code": "FND",
+      "label_inferred": "Fundação/identidade (nome do povo)"
+    },
+    {
+      "code": "EDU",
+      "label_inferred": "Educação/aprendizagem"
+    },
+    {
+      "code": "EXP",
+      "label_inferred": "Expressão"
+    },
+    {
+      "code": "ESP",
+      "label_inferred": "Espiritualidade"
+    },
+    {
+      "code": "CIV",
+      "label_inferred": "Civilidade/convivência pública"
+    },
+    {
+      "code": "RIT",
+      "label_inferred": "Ritual"
+    },
+    {
+      "code": "MUS",
+      "label_inferred": "Música"
+    },
+    {
+      "code": "CEL",
+      "label_inferred": "Celebração"
+    },
+    {
+      "code": "EST",
+      "label_inferred": "Estética"
+    },
+    {
+      "code": "JOG",
+      "label_inferred": "Jogos"
+    },
+    {
+      "code": "TRB",
+      "label_inferred": "Trabalho"
+    },
+    {
+      "code": "REP",
+      "label_inferred": "Reputação"
+    },
+    {
+      "code": "CFL",
+      "label_inferred": "Conflito/resolução"
+    },
+    {
+      "code": "ORA",
+      "label_inferred": "Tradição oral"
+    },
+    {
+      "code": "REF",
+      "label_inferred": "Refúgio/acolhimento"
+    },
+    {
+      "code": "LAZ",
+      "label_inferred": "Lazer"
+    },
+    {
+      "code": "FAM",
+      "label_inferred": "Família"
+    },
+    {
+      "code": "DAN",
+      "label_inferred": "Dança"
+    },
+    {
+      "code": "CMP",
+      "label_inferred": "Campo/território compartilhado"
+    },
+    {
+      "code": "FUN",
+      "label_inferred": "Ritos fúnebres"
+    },
+    {
+      "code": "ETQ",
+      "label_inferred": "Etiqueta"
+    },
+    {
+      "code": "LUT",
+      "label_inferred": "Luto"
+    },
+    {
+      "code": "UNI",
+      "label_inferred": "União/casamento"
+    },
+    {
+      "code": "COM",
+      "label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)"
+    }
+  ],
+  "cultural_profiles": [
+    {
+      "territory_id": "TER-001",
+      "cul_ref": "CUL-001",
+      "territory_name": "Confederação de Lúminor",
+      "culture_name_master_confirmed": "Luminari",
+      "traits": [
+        {
+          "id": "SOC-PROP-ALI-001",
+          "category_code": "ALI",
+          "category_label_inferred": "Alimentação",
+          "name": "Separação entre convivência alimentar e transação"
+        },
+        {
+          "id": "SOC-PROP-ART-001",
+          "category_code": "ART",
+          "category_label_inferred": "Artesanato/materiais",
+          "name": "Acabamento reparável para circulação e troca"
+        },
+        {
+          "id": "SOC-PROP-CEL-001",
+          "category_code": "CEL",
+          "category_label_inferred": "Celebração",
+          "name": "Participação plural nas observâncias civis"
+        },
+        {
+          "id": "SOC-PROP-CFL-001",
+          "category_code": "CFL",
+          "category_label_inferred": "Conflito/resolução",
+          "name": "Conflito de escopo entre troca e reciprocidade em Lúminor"
+        },
+        {
+          "id": "SOC-PROP-CIV-001",
+          "category_code": "CIV",
+          "category_label_inferred": "Civilidade/convivência pública",
+          "name": "Autonomia progressiva sem herdar reputação comercial em Lúminor"
+        },
+        {
+          "id": "SOC-PROP-CMP-001",
+          "category_code": "CMP",
+          "category_label_inferred": "Campo/território compartilhado",
+          "name": "Cumprimento de reconhecimento contextual em Lúminor"
+        },
+        {
+          "id": "SOC-PROP-COM-001",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Pertencimento comunitário em camadas de Lúminor"
+        },
+        {
+          "id": "SOC-PROP-COM-002",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Reciprocidade por confiabilidade observada em Lúminor"
+        },
+        {
+          "id": "SOC-PROP-COM-003",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Convivência entre circulação e residência em Lúminor"
+        },
+        {
+          "id": "SOC-PROP-DAN-001",
+          "category_code": "DAN",
+          "category_label_inferred": "Dança",
+          "name": "Dança como convivência negociada, não protocolo"
+        },
+        {
+          "id": "SOC-PROP-EDU-001",
+          "category_code": "EDU",
+          "category_label_inferred": "Educação/aprendizagem",
+          "name": "Aprendizagem cotidiana sobre tipos de troca em Lúminor"
+        },
+        {
+          "id": "SOC-PROP-ESP-001",
+          "category_code": "ESP",
+          "category_label_inferred": "Espiritualidade",
+          "name": "Competições entre comunidades sem hierarquia permanente"
+        },
+        {
+          "id": "SOC-PROP-EST-001",
+          "category_code": "EST",
+          "category_label_inferred": "Estética",
+          "name": "Legibilidade de composição sem ostentação obrigatória"
+        },
+        {
+          "id": "SOC-PROP-ETQ-001",
+          "category_code": "ETQ",
+          "category_label_inferred": "Etiqueta",
+          "name": "Separação entre trato público e vínculo pessoal em Lúminor"
+        },
+        {
+          "id": "SOC-PROP-EXP-001",
+          "category_code": "EXP",
+          "category_label_inferred": "Expressão",
+          "name": "Arte pública de autoria e associação múltiplas"
+        },
+        {
+          "id": "SOC-PROP-FAM-001",
+          "category_code": "FAM",
+          "category_label_inferred": "Família",
+          "name": "Cuidado sem tarifação automática em Lúminor"
+        },
+        {
+          "id": "SOC-PROP-FND-001",
+          "category_code": "FND",
+          "category_label_inferred": "Fundação/identidade (nome do povo)",
+          "name": "Luminari"
+        },
+        {
+          "id": "SOC-PROP-FUN-001",
+          "category_code": "FUN",
+          "category_label_inferred": "Ritos fúnebres",
+          "name": "Despedida com memória distribuída"
+        },
+        {
+          "id": "SOC-PROP-HOS-001",
+          "category_code": "HOS",
+          "category_label_inferred": "Hospitalidade geral",
+          "name": "Acolhimento sem compromisso comercial em Lúminor"
+        },
+        {
+          "id": "SOC-PROP-HOSF-001",
+          "category_code": "HOSF",
+          "category_label_inferred": "Hospitalidade alimentar",
+          "name": "Oferta alimentar sem obrigação mercantil"
+        },
+        {
+          "id": "SOC-PROP-JOG-001",
+          "category_code": "JOG",
+          "category_label_inferred": "Jogos",
+          "name": "Jogos de coordenação e leitura de interesses"
+        },
+        {
+          "id": "SOC-PROP-LAZ-001",
+          "category_code": "LAZ",
+          "category_label_inferred": "Lazer",
+          "name": "Tempo social explicitamente fora da barganha"
+        },
+        {
+          "id": "SOC-PROP-LUT-001",
+          "category_code": "LUT",
+          "category_label_inferred": "Luto",
+          "name": "Luto sem obrigação de presença pública"
+        },
+        {
+          "id": "SOC-PROP-MUS-001",
+          "category_code": "MUS",
+          "category_label_inferred": "Música",
+          "name": "Repertórios de encontro entre comunidades"
+        },
+        {
+          "id": "SOC-PROP-ORA-001",
+          "category_code": "ORA",
+          "category_label_inferred": "Tradição oral",
+          "name": "Contraste público de versões e autoria"
+        },
+        {
+          "id": "SOC-PROP-REF-001",
+          "category_code": "REF",
+          "category_label_inferred": "Refúgio/acolhimento",
+          "name": "Mesa de conversa com mudança explícita de contexto"
+        },
+        {
+          "id": "SOC-PROP-REP-001",
+          "category_code": "REP",
+          "category_label_inferred": "Reputação",
+          "name": "Reputação comercial não hereditária em Lúminor"
+        },
+        {
+          "id": "SOC-PROP-RIT-001",
+          "category_code": "RIT",
+          "category_label_inferred": "Ritual",
+          "name": "Passagem como ampliação de responsabilidade cívica"
+        },
+        {
+          "id": "SOC-PROP-SIM-001",
+          "category_code": "SIM",
+          "category_label_inferred": "Simbologia/pertencimento",
+          "name": "Marcas contextuais de procedência sem brasão novo"
+        },
+        {
+          "id": "SOC-PROP-TRB-001",
+          "category_code": "TRB",
+          "category_label_inferred": "Trabalho",
+          "name": "Escopo de trabalho separado de favor em Lúminor"
+        },
+        {
+          "id": "SOC-PROP-UNI-001",
+          "category_code": "UNI",
+          "category_label_inferred": "União/casamento",
+          "name": "União em redes de pertencimento sobrepostas"
+        },
+        {
+          "id": "SOC-PROP-VES-001",
+          "category_code": "VES",
+          "category_label_inferred": "Vestuário",
+          "name": "Apresentação modular entre troca, comunidade e vida privada"
+        }
+      ]
+    },
+    {
+      "territory_id": "TER-002",
+      "cul_ref": "CUL-002",
+      "territory_name": "Reino Ferral de Kharveth",
+      "culture_name_master_confirmed": "Ferralinos",
+      "traits": [
+        {
+          "id": "SOC-PROP-ALI-002",
+          "category_code": "ALI",
+          "category_label_inferred": "Alimentação",
+          "name": "Alimentação separada de risco e operação"
+        },
+        {
+          "id": "SOC-PROP-ART-002",
+          "category_code": "ART",
+          "category_label_inferred": "Artesanato/materiais",
+          "name": "Cultura de conserto e prolongamento de uso"
+        },
+        {
+          "id": "SOC-PROP-CEL-002",
+          "category_code": "CEL",
+          "category_label_inferred": "Celebração",
+          "name": "Celebração sem culto à produção"
+        },
+        {
+          "id": "SOC-PROP-CFL-002",
+          "category_code": "CFL",
+          "category_label_inferred": "Conflito/resolução",
+          "name": "Conflito de jurisdição funcional em Kharveth"
+        },
+        {
+          "id": "SOC-PROP-CIV-002",
+          "category_code": "CIV",
+          "category_label_inferred": "Civilidade/convivência pública",
+          "name": "Experiência técnica sem supremacia etária em Kharveth"
+        },
+        {
+          "id": "SOC-PROP-CMP-002",
+          "category_code": "CMP",
+          "category_label_inferred": "Campo/território compartilhado",
+          "name": "Cumprimento com leitura de contexto seguro em Kharveth"
+        },
+        {
+          "id": "SOC-PROP-COM-004",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Pertencimento por comunidade e contribuição técnica em Kharveth"
+        },
+        {
+          "id": "SOC-PROP-COM-005",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Auxílio técnico sem servidão em Kharveth"
+        },
+        {
+          "id": "SOC-PROP-COM-006",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Vizinhança orientada por segurança compartilhada em Kharveth"
+        },
+        {
+          "id": "SOC-PROP-DAN-002",
+          "category_code": "DAN",
+          "category_label_inferred": "Dança",
+          "name": "Movimento fora da lógica produtiva"
+        },
+        {
+          "id": "SOC-PROP-EDU-002",
+          "category_code": "EDU",
+          "category_label_inferred": "Educação/aprendizagem",
+          "name": "Transmissão informal de prudência material em Kharveth"
+        },
+        {
+          "id": "SOC-PROP-ESP-002",
+          "category_code": "ESP",
+          "category_label_inferred": "Espiritualidade",
+          "name": "Desempenho medido sem culto à força industrial"
+        },
+        {
+          "id": "SOC-PROP-EST-002",
+          "category_code": "EST",
+          "category_label_inferred": "Estética",
+          "name": "Construção aparente e reparo como qualidade material"
+        },
+        {
+          "id": "SOC-PROP-ETQ-002",
+          "category_code": "ETQ",
+          "category_label_inferred": "Etiqueta",
+          "name": "Etiqueta de risco compartilhado em Kharveth"
+        },
+        {
+          "id": "SOC-PROP-EXP-002",
+          "category_code": "EXP",
+          "category_label_inferred": "Expressão",
+          "name": "Marcas de uso e reparo como linguagem artística proposta"
+        },
+        {
+          "id": "SOC-PROP-FAM-002",
+          "category_code": "FAM",
+          "category_label_inferred": "Família",
+          "name": "Rede de cuidado separada da hierarquia técnica em Kharveth"
+        },
+        {
+          "id": "SOC-PROP-FND-002",
+          "category_code": "FND",
+          "category_label_inferred": "Fundação/identidade (nome do povo)",
+          "name": "Ferralinos"
+        },
+        {
+          "id": "SOC-PROP-FUN-002",
+          "category_code": "FUN",
+          "category_label_inferred": "Ritos fúnebres",
+          "name": "Despedida sem transformar trabalho em identidade total"
+        },
+        {
+          "id": "SOC-PROP-HOS-002",
+          "category_code": "HOS",
+          "category_label_inferred": "Hospitalidade geral",
+          "name": "Hospitalidade com limites de segurança em Kharveth"
+        },
+        {
+          "id": "SOC-PROP-HOSF-002",
+          "category_code": "HOSF",
+          "category_label_inferred": "Hospitalidade alimentar",
+          "name": "Hospitalidade alimentar com informação de risco"
+        },
+        {
+          "id": "SOC-PROP-JOG-002",
+          "category_code": "JOG",
+          "category_label_inferred": "Jogos",
+          "name": "Desafios de montagem abstrata e lógica segura"
+        },
+        {
+          "id": "SOC-PROP-LAZ-002",
+          "category_code": "LAZ",
+          "category_label_inferred": "Lazer",
+          "name": "Descompressão separada do turno e da produtividade"
+        },
+        {
+          "id": "SOC-PROP-LUT-002",
+          "category_code": "LUT",
+          "category_label_inferred": "Luto",
+          "name": "Luto e segurança no trabalho"
+        },
+        {
+          "id": "SOC-PROP-MUS-002",
+          "category_code": "MUS",
+          "category_label_inferred": "Música",
+          "name": "Contraste entre precisão mecânica e interpretação humana"
+        },
+        {
+          "id": "SOC-PROP-ORA-002",
+          "category_code": "ORA",
+          "category_label_inferred": "Tradição oral",
+          "name": "Memória de manutenção, falha e reconstrução"
+        },
+        {
+          "id": "SOC-PROP-REF-002",
+          "category_code": "REF",
+          "category_label_inferred": "Refúgio/acolhimento",
+          "name": "Pausa alimentar sem extensão de autoridade técnica"
+        },
+        {
+          "id": "SOC-PROP-REP-002",
+          "category_code": "REP",
+          "category_label_inferred": "Reputação",
+          "name": "Prestígio por competência contextual em Kharveth"
+        },
+        {
+          "id": "SOC-PROP-RIT-002",
+          "category_code": "RIT",
+          "category_label_inferred": "Ritual",
+          "name": "Maioridade sem prova de dureza industrial"
+        },
+        {
+          "id": "SOC-PROP-SIM-002",
+          "category_code": "SIM",
+          "category_label_inferred": "Simbologia/pertencimento",
+          "name": "Sinalização de responsabilidade sem patente social"
+        },
+        {
+          "id": "SOC-PROP-TRB-002",
+          "category_code": "TRB",
+          "category_label_inferred": "Trabalho",
+          "name": "Responsabilidade técnica sem autoridade doméstica em Kharveth"
+        },
+        {
+          "id": "SOC-PROP-UNI-002",
+          "category_code": "UNI",
+          "category_label_inferred": "União/casamento",
+          "name": "União separada de patente ocupacional"
+        },
+        {
+          "id": "SOC-PROP-VES-002",
+          "category_code": "VES",
+          "category_label_inferred": "Vestuário",
+          "name": "Durabilidade visível sem militarização cultural"
+        }
+      ]
+    },
+    {
+      "territory_id": "TER-003",
+      "cul_ref": "CUL-003",
+      "territory_name": "República de Ortheon",
+      "culture_name_master_confirmed": "Ortheanos",
+      "traits": [
+        {
+          "id": "SOC-PROP-ALI-003",
+          "category_code": "ALI",
+          "category_label_inferred": "Alimentação",
+          "name": "Refeição como pausa de fluxo, não como pressa obrigatória"
+        },
+        {
+          "id": "SOC-PROP-ART-003",
+          "category_code": "ART",
+          "category_label_inferred": "Artesanato/materiais",
+          "name": "Organização portátil e manutenção de uso intenso"
+        },
+        {
+          "id": "SOC-PROP-CEL-003",
+          "category_code": "CEL",
+          "category_label_inferred": "Celebração",
+          "name": "Celebração compatível com fluxo ferroviário, não dependente dele"
+        },
+        {
+          "id": "SOC-PROP-CFL-003",
+          "category_code": "CFL",
+          "category_label_inferred": "Conflito/resolução",
+          "name": "Conflito de prioridade em fluxos compartilhados em Ortheon"
+        },
+        {
+          "id": "SOC-PROP-CIV-003",
+          "category_code": "CIV",
+          "category_label_inferred": "Civilidade/convivência pública",
+          "name": "Participação social por capacidade de circulação em Ortheon"
+        },
+        {
+          "id": "SOC-PROP-CMP-003",
+          "category_code": "CMP",
+          "category_label_inferred": "Campo/território compartilhado",
+          "name": "Cumprimento breve em trânsito e ampliado em permanência em Ortheon"
+        },
+        {
+          "id": "SOC-PROP-COM-007",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Pertencimento residencial e de rota em Ortheon"
+        },
+        {
+          "id": "SOC-PROP-COM-008",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Reciprocidade de cobertura e continuidade em Ortheon"
+        },
+        {
+          "id": "SOC-PROP-COM-009",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Convivência de fluxo e acesso em Ortheon"
+        },
+        {
+          "id": "SOC-PROP-DAN-003",
+          "category_code": "DAN",
+          "category_label_inferred": "Dança",
+          "name": "Coreografias sociais de fluxo sem culto à pontualidade"
+        },
+        {
+          "id": "SOC-PROP-EDU-003",
+          "category_code": "EDU",
+          "category_label_inferred": "Educação/aprendizagem",
+          "name": "Aprendizagem de convivência em fluxos compartilhados em Ortheon"
+        },
+        {
+          "id": "SOC-PROP-ESP-003",
+          "category_code": "ESP",
+          "category_label_inferred": "Espiritualidade",
+          "name": "Revezamentos e coordenação fora da ferrovia ativa"
+        },
+        {
+          "id": "SOC-PROP-EST-003",
+          "category_code": "EST",
+          "category_label_inferred": "Estética",
+          "name": "Ritmo visual e ordenação sequencial"
+        },
+        {
+          "id": "SOC-PROP-ETQ-003",
+          "category_code": "ETQ",
+          "category_label_inferred": "Etiqueta",
+          "name": "Etiqueta de fluxo sem culto à pontualidade em Ortheon"
+        },
+        {
+          "id": "SOC-PROP-EXP-003",
+          "category_code": "EXP",
+          "category_label_inferred": "Expressão",
+          "name": "Teatro e recitação de circulação pública"
+        },
+        {
+          "id": "SOC-PROP-FAM-003",
+          "category_code": "FAM",
+          "category_label_inferred": "Família",
+          "name": "Convivência familiar compatível com circulação em Ortheon"
+        },
+        {
+          "id": "SOC-PROP-FND-003",
+          "category_code": "FND",
+          "category_label_inferred": "Fundação/identidade (nome do povo)",
+          "name": "Ortheanos"
+        },
+        {
+          "id": "SOC-PROP-FUN-003",
+          "category_code": "FUN",
+          "category_label_inferred": "Ritos fúnebres",
+          "name": "Morte confirmada antes de qualquer lógica de trânsito"
+        },
+        {
+          "id": "SOC-PROP-HOS-003",
+          "category_code": "HOS",
+          "category_label_inferred": "Hospitalidade geral",
+          "name": "Hospitalidade de pausa e continuidade em Ortheon"
+        },
+        {
+          "id": "SOC-PROP-HOSF-003",
+          "category_code": "HOSF",
+          "category_label_inferred": "Hospitalidade alimentar",
+          "name": "Acolhimento alimentar sem reter o viajante"
+        },
+        {
+          "id": "SOC-PROP-JOG-003",
+          "category_code": "JOG",
+          "category_label_inferred": "Jogos",
+          "name": "Jogos de rota abstrata sem cartografia canônica"
+        },
+        {
+          "id": "SOC-PROP-LAZ-003",
+          "category_code": "LAZ",
+          "category_label_inferred": "Lazer",
+          "name": "Lazer entre fluxos, sem transformar espera em identidade"
+        },
+        {
+          "id": "SOC-PROP-LUT-003",
+          "category_code": "LUT",
+          "category_label_inferred": "Luto",
+          "name": "Luto sem penalização por ritmo urbano"
+        },
+        {
+          "id": "SOC-PROP-MUS-003",
+          "category_code": "MUS",
+          "category_label_inferred": "Música",
+          "name": "Canções de trabalho ferroviário como possibilidade contextual"
+        },
+        {
+          "id": "SOC-PROP-ORA-003",
+          "category_code": "ORA",
+          "category_label_inferred": "Tradição oral",
+          "name": "Rotas, estações e rumores com marcação de incerteza"
+        },
+        {
+          "id": "SOC-PROP-REF-003",
+          "category_code": "REF",
+          "category_label_inferred": "Refúgio/acolhimento",
+          "name": "Encontro alimentar compatível com chegada e partida"
+        },
+        {
+          "id": "SOC-PROP-REP-003",
+          "category_code": "REP",
+          "category_label_inferred": "Reputação",
+          "name": "Confiabilidade de transição em Ortheon"
+        },
+        {
+          "id": "SOC-PROP-RIT-003",
+          "category_code": "RIT",
+          "category_label_inferred": "Ritual",
+          "name": "Autonomia progressiva sem rito ferroviário obrigatório"
+        },
+        {
+          "id": "SOC-PROP-SIM-003",
+          "category_code": "SIM",
+          "category_label_inferred": "Simbologia/pertencimento",
+          "name": "Identificação temporária para coordenação de tarefas"
+        },
+        {
+          "id": "SOC-PROP-TRB-003",
+          "category_code": "TRB",
+          "category_label_inferred": "Trabalho",
+          "name": "Trabalho por handoff e disponibilidade em Ortheon"
+        },
+        {
+          "id": "SOC-PROP-UNI-003",
+          "category_code": "UNI",
+          "category_label_inferred": "União/casamento",
+          "name": "Vínculo preservado em rotinas de mobilidade"
+        },
+        {
+          "id": "SOC-PROP-VES-003",
+          "category_code": "VES",
+          "category_label_inferred": "Vestuário",
+          "name": "Mobilidade e leitura rápida em ambientes de fluxo"
+        }
+      ]
+    },
+    {
+      "territory_id": "TER-004",
+      "cul_ref": "CUL-004",
+      "territory_name": "Arquipélago Livre de Navyr",
+      "culture_name_master_confirmed": "Navyrianos",
+      "traits": [
+        {
+          "id": "SOC-PROP-ALI-004",
+          "category_code": "ALI",
+          "category_label_inferred": "Alimentação",
+          "name": "Pluralidade alimentar entre comunidades sem culinária marítima presumida"
+        },
+        {
+          "id": "SOC-PROP-ART-004",
+          "category_code": "ART",
+          "category_label_inferred": "Artesanato/materiais",
+          "name": "Fixação, acondicionamento e reparo portátil"
+        },
+        {
+          "id": "SOC-PROP-CEL-004",
+          "category_code": "CEL",
+          "category_label_inferred": "Celebração",
+          "name": "Celebrações civis adaptadas sem festival marítimo novo"
+        },
+        {
+          "id": "SOC-PROP-CFL-004",
+          "category_code": "CFL",
+          "category_label_inferred": "Conflito/resolução",
+          "name": "Conflito por uso de recurso compartilhado em Navyr"
+        },
+        {
+          "id": "SOC-PROP-CIV-004",
+          "category_code": "CIV",
+          "category_label_inferred": "Civilidade/convivência pública",
+          "name": "Ciclo de vida sem fixar permanência territorial em Navyr"
+        },
+        {
+          "id": "SOC-PROP-CMP-004",
+          "category_code": "CMP",
+          "category_label_inferred": "Campo/território compartilhado",
+          "name": "Cumprimento de chegada sem posse em Navyr"
+        },
+        {
+          "id": "SOC-PROP-COM-010",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Pertencimento multilocal Navyriano"
+        },
+        {
+          "id": "SOC-PROP-COM-011",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Reciprocidade de acolhimento em trânsito em Navyr"
+        },
+        {
+          "id": "SOC-PROP-COM-012",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Convivência entre permanentes e temporários em Navyr"
+        },
+        {
+          "id": "SOC-PROP-DAN-004",
+          "category_code": "DAN",
+          "category_label_inferred": "Dança",
+          "name": "Dança de encontro entre comunidades marítimas"
+        },
+        {
+          "id": "SOC-PROP-EDU-004",
+          "category_code": "EDU",
+          "category_label_inferred": "Educação/aprendizagem",
+          "name": "Transmissão informal de reciprocidade entre chegada e partida em Navyr"
+        },
+        {
+          "id": "SOC-PROP-ESP-004",
+          "category_code": "ESP",
+          "category_label_inferred": "Espiritualidade",
+          "name": "Coordenação coletiva sem definir modalidade aquática"
+        },
+        {
+          "id": "SOC-PROP-EST-004",
+          "category_code": "EST",
+          "category_label_inferred": "Estética",
+          "name": "Leveza compositiva e variação entre comunidades"
+        },
+        {
+          "id": "SOC-PROP-ETQ-004",
+          "category_code": "ETQ",
+          "category_label_inferred": "Etiqueta",
+          "name": "Etiqueta de multilocalidade Navyriana"
+        },
+        {
+          "id": "SOC-PROP-EXP-004",
+          "category_code": "EXP",
+          "category_label_inferred": "Expressão",
+          "name": "Arte móvel e compartilhável sem inventar tecnologia naval"
+        },
+        {
+          "id": "SOC-PROP-FAM-004",
+          "category_code": "FAM",
+          "category_label_inferred": "Família",
+          "name": "Laços de cuidado multilocais em Navyr"
+        },
+        {
+          "id": "SOC-PROP-FND-004",
+          "category_code": "FND",
+          "category_label_inferred": "Fundação/identidade (nome do povo)",
+          "name": "Navyrianos"
+        },
+        {
+          "id": "SOC-PROP-FUN-004",
+          "category_code": "FUN",
+          "category_label_inferred": "Ritos fúnebres",
+          "name": "Despedida sem presumir sepultamento aquático"
+        },
+        {
+          "id": "SOC-PROP-HOS-004",
+          "category_code": "HOS",
+          "category_label_inferred": "Hospitalidade geral",
+          "name": "Acolhimento temporário sem dívida em Navyr"
+        },
+        {
+          "id": "SOC-PROP-HOSF-004",
+          "category_code": "HOSF",
+          "category_label_inferred": "Hospitalidade alimentar",
+          "name": "Comida de acolhimento sem transformar visitante em tripulação"
+        },
+        {
+          "id": "SOC-PROP-JOG-004",
+          "category_code": "JOG",
+          "category_label_inferred": "Jogos",
+          "name": "Simulações abstratas de decisão de viagem"
+        },
+        {
+          "id": "SOC-PROP-LAZ-004",
+          "category_code": "LAZ",
+          "category_label_inferred": "Lazer",
+          "name": "Convivência entre permanência e circulação"
+        },
+        {
+          "id": "SOC-PROP-LUT-004",
+          "category_code": "LUT",
+          "category_label_inferred": "Luto",
+          "name": "Luto entre presença e distância"
+        },
+        {
+          "id": "SOC-PROP-MUS-004",
+          "category_code": "MUS",
+          "category_label_inferred": "Música",
+          "name": "Canções de navegação sem repertório marítimo único"
+        },
+        {
+          "id": "SOC-PROP-ORA-004",
+          "category_code": "ORA",
+          "category_label_inferred": "Tradição oral",
+          "name": "Memória de rotas navegadas com versões locais"
+        },
+        {
+          "id": "SOC-PROP-REF-004",
+          "category_code": "REF",
+          "category_label_inferred": "Refúgio/acolhimento",
+          "name": "Partilha portátil sem cardápio arquipelágico único"
+        },
+        {
+          "id": "SOC-PROP-REP-004",
+          "category_code": "REP",
+          "category_label_inferred": "Reputação",
+          "name": "Reputação de contribuição compartilhada em Navyr"
+        },
+        {
+          "id": "SOC-PROP-RIT-004",
+          "category_code": "RIT",
+          "category_label_inferred": "Ritual",
+          "name": "Passagem por autonomia comunitária, não por navegação compulsória"
+        },
+        {
+          "id": "SOC-PROP-SIM-004",
+          "category_code": "SIM",
+          "category_label_inferred": "Simbologia/pertencimento",
+          "name": "Pertencimento local sem emblema arquipelágico obrigatório"
+        },
+        {
+          "id": "SOC-PROP-TRB-004",
+          "category_code": "TRB",
+          "category_label_inferred": "Trabalho",
+          "name": "Cooperação de prontidão sem hierarquia naval em Navyr"
+        },
+        {
+          "id": "SOC-PROP-UNI-004",
+          "category_code": "UNI",
+          "category_label_inferred": "União/casamento",
+          "name": "União entre comunidades confederadas sem modelo único"
+        },
+        {
+          "id": "SOC-PROP-VES-004",
+          "category_code": "VES",
+          "category_label_inferred": "Vestuário",
+          "name": "Adaptação portátil para circulação entre comunidades"
+        }
+      ]
+    },
+    {
+      "territory_id": "TER-005",
+      "cul_ref": "CUL-005",
+      "territory_name": "Principado de Ithra",
+      "culture_name_master_confirmed": "Ithrianos",
+      "traits": [
+        {
+          "id": "SOC-PROP-ALI-005",
+          "category_code": "ALI",
+          "category_label_inferred": "Alimentação",
+          "name": "Refeição social independente de acesso tecnomágico"
+        },
+        {
+          "id": "SOC-PROP-ART-005",
+          "category_code": "ART",
+          "category_label_inferred": "Artesanato/materiais",
+          "name": "Ajuste fino e manutenção de componentes permitidos"
+        },
+        {
+          "id": "SOC-PROP-CEL-005",
+          "category_code": "CEL",
+          "category_label_inferred": "Celebração",
+          "name": "Tecnologia como suporte, não requisito festivo"
+        },
+        {
+          "id": "SOC-PROP-CFL-005",
+          "category_code": "CFL",
+          "category_label_inferred": "Conflito/resolução",
+          "name": "Conflito entre acesso, experimento e responsabilidade em Ithra"
+        },
+        {
+          "id": "SOC-PROP-CIV-005",
+          "category_code": "CIV",
+          "category_label_inferred": "Civilidade/convivência pública",
+          "name": "Autonomia pessoal distinta de capacidade tecnomágica em Ithra"
+        },
+        {
+          "id": "SOC-PROP-CMP-005",
+          "category_code": "CMP",
+          "category_label_inferred": "Campo/território compartilhado",
+          "name": "Cumprimento independente de credencial em Ithra"
+        },
+        {
+          "id": "SOC-PROP-COM-013",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Pertencimento além da competência tecnomágica em Ithra"
+        },
+        {
+          "id": "SOC-PROP-COM-014",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Reciprocidade de conhecimento com limites em Ithra"
+        },
+        {
+          "id": "SOC-PROP-COM-015",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Convivência entre acesso técnico e vida privada em Ithra"
+        },
+        {
+          "id": "SOC-PROP-DAN-005",
+          "category_code": "DAN",
+          "category_label_inferred": "Dança",
+          "name": "Movimento com resposta luminosa ou sonora opcional"
+        },
+        {
+          "id": "SOC-PROP-EDU-005",
+          "category_code": "EDU",
+          "category_label_inferred": "Educação/aprendizagem",
+          "name": "Aprendizagem informal com limite de competência em Ithra"
+        },
+        {
+          "id": "SOC-PROP-ESP-005",
+          "category_code": "ESP",
+          "category_label_inferred": "Espiritualidade",
+          "name": "Categorias mágicas e não mágicas sem superioridade automática"
+        },
+        {
+          "id": "SOC-PROP-EST-005",
+          "category_code": "EST",
+          "category_label_inferred": "Estética",
+          "name": "Precisão técnica sem converter complexidade em status"
+        },
+        {
+          "id": "SOC-PROP-ETQ-005",
+          "category_code": "ETQ",
+          "category_label_inferred": "Etiqueta",
+          "name": "Etiqueta de competência sem ingerência em Ithra"
+        },
+        {
+          "id": "SOC-PROP-EXP-005",
+          "category_code": "EXP",
+          "category_label_inferred": "Expressão",
+          "name": "Arte rúnica reativa com transparência funcional"
+        },
+        {
+          "id": "SOC-PROP-FAM-005",
+          "category_code": "FAM",
+          "category_label_inferred": "Família",
+          "name": "Privacidade técnica dentro das relações de cuidado em Ithra"
+        },
+        {
+          "id": "SOC-PROP-FND-005",
+          "category_code": "FND",
+          "category_label_inferred": "Fundação/identidade (nome do povo)",
+          "name": "Ithrianos"
+        },
+        {
+          "id": "SOC-PROP-FUN-005",
+          "category_code": "FUN",
+          "category_label_inferred": "Ritos fúnebres",
+          "name": "Despedida com limites sobre registros e dispositivos pessoais"
+        },
+        {
+          "id": "SOC-PROP-HOS-005",
+          "category_code": "HOS",
+          "category_label_inferred": "Hospitalidade geral",
+          "name": "Hospitalidade por camadas de acesso em Ithra"
+        },
+        {
+          "id": "SOC-PROP-HOSF-005",
+          "category_code": "HOSF",
+          "category_label_inferred": "Hospitalidade alimentar",
+          "name": "Hospitalidade alimentar sem demonstração técnica obrigatória"
+        },
+        {
+          "id": "SOC-PROP-JOG-005",
+          "category_code": "JOG",
+          "category_label_inferred": "Jogos",
+          "name": "Jogos rúnicos de efeito limitado e auditável"
+        },
+        {
+          "id": "SOC-PROP-LAZ-005",
+          "category_code": "LAZ",
+          "category_label_inferred": "Lazer",
+          "name": "Demonstração tecnomágica separada de certificação"
+        },
+        {
+          "id": "SOC-PROP-LUT-005",
+          "category_code": "LUT",
+          "category_label_inferred": "Luto",
+          "name": "Luto sem diagnóstico por tecnologia ou magia"
+        },
+        {
+          "id": "SOC-PROP-MUS-005",
+          "category_code": "MUS",
+          "category_label_inferred": "Música",
+          "name": "Performance mista rúnica e não rúnica"
+        },
+        {
+          "id": "SOC-PROP-ORA-005",
+          "category_code": "ORA",
+          "category_label_inferred": "Tradição oral",
+          "name": "Oralidade técnica sem fetiche de registro perfeito"
+        },
+        {
+          "id": "SOC-PROP-REF-005",
+          "category_code": "REF",
+          "category_label_inferred": "Refúgio/acolhimento",
+          "name": "Convivência alimentar por camada de acesso"
+        },
+        {
+          "id": "SOC-PROP-REP-005",
+          "category_code": "REP",
+          "category_label_inferred": "Reputação",
+          "name": "Reputação por transparência de limites em Ithra"
+        },
+        {
+          "id": "SOC-PROP-RIT-005",
+          "category_code": "RIT",
+          "category_label_inferred": "Ritual",
+          "name": "Maioridade sem exame tecnomágico"
+        },
+        {
+          "id": "SOC-PROP-SIM-005",
+          "category_code": "SIM",
+          "category_label_inferred": "Simbologia/pertencimento",
+          "name": "Estado funcional separado de identidade social"
+        },
+        {
+          "id": "SOC-PROP-TRB-005",
+          "category_code": "TRB",
+          "category_label_inferred": "Trabalho",
+          "name": "Qualificação, acesso e autoridade separados em Ithra"
+        },
+        {
+          "id": "SOC-PROP-UNI-005",
+          "category_code": "UNI",
+          "category_label_inferred": "União/casamento",
+          "name": "União não mediada por dispositivo ou aptidão mágica"
+        },
+        {
+          "id": "SOC-PROP-VES-005",
+          "category_code": "VES",
+          "category_label_inferred": "Vestuário",
+          "name": "Integração vestível subordinada à manutenção"
+        }
+      ]
+    },
+    {
+      "territory_id": "TER-006",
+      "cul_ref": "CUL-006",
+      "territory_name": "Reino Aéreo de Altavela",
+      "culture_name_master_confirmed": "Altavelanos",
+      "traits": [
+        {
+          "id": "SOC-PROP-ALI-006",
+          "category_code": "ALI",
+          "category_label_inferred": "Alimentação",
+          "name": "Refeição pública sem adesão política"
+        },
+        {
+          "id": "SOC-PROP-ART-006",
+          "category_code": "ART",
+          "category_label_inferred": "Artesanato/materiais",
+          "name": "Preparação e conservação de peças de apresentação"
+        },
+        {
+          "id": "SOC-PROP-CEL-006",
+          "category_code": "CEL",
+          "category_label_inferred": "Celebração",
+          "name": "Celebração civil sem aclamação obrigatória de autoridade"
+        },
+        {
+          "id": "SOC-PROP-CFL-006",
+          "category_code": "CFL",
+          "category_label_inferred": "Conflito/resolução",
+          "name": "Conflito entre voz pessoal e representação em Altavela"
+        },
+        {
+          "id": "SOC-PROP-CIV-006",
+          "category_code": "CIV",
+          "category_label_inferred": "Civilidade/convivência pública",
+          "name": "Maturidade sem equivalência a elegibilidade em Altavela"
+        },
+        {
+          "id": "SOC-PROP-CMP-006",
+          "category_code": "CMP",
+          "category_label_inferred": "Campo/território compartilhado",
+          "name": "Cumprimento ajustado ao papel presente em Altavela"
+        },
+        {
+          "id": "SOC-PROP-COM-016",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Pertencimento separado de proximidade ao trono em Altavela"
+        },
+        {
+          "id": "SOC-PROP-COM-017",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Reciprocidade por serviço reconhecido em Altavela"
+        },
+        {
+          "id": "SOC-PROP-COM-018",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Convivência com autoridade temporária em Altavela"
+        },
+        {
+          "id": "SOC-PROP-DAN-006",
+          "category_code": "DAN",
+          "category_label_inferred": "Dança",
+          "name": "Dança pública sem função de corte obrigatória"
+        },
+        {
+          "id": "SOC-PROP-EDU-006",
+          "category_code": "EDU",
+          "category_label_inferred": "Educação/aprendizagem",
+          "name": "Aprendizagem informal de escuta e representação em Altavela"
+        },
+        {
+          "id": "SOC-PROP-ESP-006",
+          "category_code": "ESP",
+          "category_label_inferred": "Espiritualidade",
+          "name": "Representação esportiva sem equivaler a representação política"
+        },
+        {
+          "id": "SOC-PROP-EST-006",
+          "category_code": "EST",
+          "category_label_inferred": "Estética",
+          "name": "Reconhecibilidade pública com liberdade privada"
+        },
+        {
+          "id": "SOC-PROP-ETQ-006",
+          "category_code": "ETQ",
+          "category_label_inferred": "Etiqueta",
+          "name": "Etiqueta entre pessoa e mandato em Altavela"
+        },
+        {
+          "id": "SOC-PROP-EXP-006",
+          "category_code": "EXP",
+          "category_label_inferred": "Expressão",
+          "name": "Sátira e arte cívica sem propaganda compulsória"
+        },
+        {
+          "id": "SOC-PROP-FAM-006",
+          "category_code": "FAM",
+          "category_label_inferred": "Família",
+          "name": "Parentesco separado de representação em Altavela"
+        },
+        {
+          "id": "SOC-PROP-FND-006",
+          "category_code": "FND",
+          "category_label_inferred": "Fundação/identidade (nome do povo)",
+          "name": "Altavelanos"
+        },
+        {
+          "id": "SOC-PROP-FUN-006",
+          "category_code": "FUN",
+          "category_label_inferred": "Ritos fúnebres",
+          "name": "Funeral privado separado da vacância institucional"
+        },
+        {
+          "id": "SOC-PROP-HOS-006",
+          "category_code": "HOS",
+          "category_label_inferred": "Hospitalidade geral",
+          "name": "Hospitalidade sem adesão política em Altavela"
+        },
+        {
+          "id": "SOC-PROP-HOSF-006",
+          "category_code": "HOSF",
+          "category_label_inferred": "Hospitalidade alimentar",
+          "name": "Oferta de refeição politicamente neutra"
+        },
+        {
+          "id": "SOC-PROP-JOG-006",
+          "category_code": "JOG",
+          "category_label_inferred": "Jogos",
+          "name": "Jogos de coalizão sem valor eleitoral"
+        },
+        {
+          "id": "SOC-PROP-LAZ-006",
+          "category_code": "LAZ",
+          "category_label_inferred": "Lazer",
+          "name": "Convivência cívica sem transformar lazer em assembleia"
+        },
+        {
+          "id": "SOC-PROP-LUT-006",
+          "category_code": "LUT",
+          "category_label_inferred": "Luto",
+          "name": "Luto sem dever de espetáculo público"
+        },
+        {
+          "id": "SOC-PROP-MUS-006",
+          "category_code": "MUS",
+          "category_label_inferred": "Música",
+          "name": "Música cívica plural sem hino eleitoral inventado"
+        },
+        {
+          "id": "SOC-PROP-ORA-006",
+          "category_code": "ORA",
+          "category_label_inferred": "Tradição oral",
+          "name": "Recitação crítica de mandatos e decisões"
+        },
+        {
+          "id": "SOC-PROP-REF-006",
+          "category_code": "REF",
+          "category_label_inferred": "Refúgio/acolhimento",
+          "name": "Formalidade alimentar contextual, não hierarquia fixa"
+        },
+        {
+          "id": "SOC-PROP-REP-006",
+          "category_code": "REP",
+          "category_label_inferred": "Reputação",
+          "name": "Reputação sem transferência de mandato em Altavela"
+        },
+        {
+          "id": "SOC-PROP-RIT-006",
+          "category_code": "RIT",
+          "category_label_inferred": "Ritual",
+          "name": "Maioridade distinta de elegibilidade política"
+        },
+        {
+          "id": "SOC-PROP-SIM-006",
+          "category_code": "SIM",
+          "category_label_inferred": "Simbologia/pertencimento",
+          "name": "Mandato contextual sem heráldica nova"
+        },
+        {
+          "id": "SOC-PROP-TRB-006",
+          "category_code": "TRB",
+          "category_label_inferred": "Trabalho",
+          "name": "Função de trabalho separada de mandato em Altavela"
+        },
+        {
+          "id": "SOC-PROP-UNI-006",
+          "category_code": "UNI",
+          "category_label_inferred": "União/casamento",
+          "name": "União sem efeito dinástico automático"
+        },
+        {
+          "id": "SOC-PROP-VES-006",
+          "category_code": "VES",
+          "category_label_inferred": "Vestuário",
+          "name": "Distinção entre representação pública e cotidiano"
+        }
+      ]
+    },
+    {
+      "territory_id": "TER-007",
+      "cul_ref": "CUL-007",
+      "territory_name": "Rubra-Viva",
+      "culture_name_master_confirmed": "Rubravivos",
+      "traits": [
+        {
+          "id": "SOC-PROP-ALI-007",
+          "category_code": "ALI",
+          "category_label_inferred": "Alimentação",
+          "name": "Alimentação orientada por consentimento e necessidade declarada"
+        },
+        {
+          "id": "SOC-PROP-ART-007",
+          "category_code": "ART",
+          "category_label_inferred": "Artesanato/materiais",
+          "name": "Reparo cuidadoso e adaptação para acessibilidade"
+        },
+        {
+          "id": "SOC-PROP-CEL-007",
+          "category_code": "CEL",
+          "category_label_inferred": "Celebração",
+          "name": "Celebração com continuidade de cuidados essenciais"
+        },
+        {
+          "id": "SOC-PROP-CFL-007",
+          "category_code": "CFL",
+          "category_label_inferred": "Conflito/resolução",
+          "name": "Conflito entre urgência, recurso e limite clínico em Rubra-Viva"
+        },
+        {
+          "id": "SOC-PROP-CIV-007",
+          "category_code": "CIV",
+          "category_label_inferred": "Civilidade/convivência pública",
+          "name": "Dependência e autonomia como estados não morais em Rubra-Viva"
+        },
+        {
+          "id": "SOC-PROP-CMP-007",
+          "category_code": "CMP",
+          "category_label_inferred": "Campo/território compartilhado",
+          "name": "Cumprimento sem contato presumido em Rubra-Viva"
+        },
+        {
+          "id": "SOC-PROP-COM-019",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Pertencimento não condicionado ao papel de cuidado em Rubra-Viva"
+        },
+        {
+          "id": "SOC-PROP-COM-020",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Cuidado consentido como reciprocidade em Rubra-Viva"
+        },
+        {
+          "id": "SOC-PROP-COM-021",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Privacidade de saúde na convivência Rubraviva"
+        },
+        {
+          "id": "SOC-PROP-DAN-007",
+          "category_code": "DAN",
+          "category_label_inferred": "Dança",
+          "name": "Participação corporal ajustável e consentida"
+        },
+        {
+          "id": "SOC-PROP-EDU-007",
+          "category_code": "EDU",
+          "category_label_inferred": "Educação/aprendizagem",
+          "name": "Transmissão informal de cuidado básico sem qualificação clínica em Rubra-Viva"
+        },
+        {
+          "id": "SOC-PROP-ESP-007",
+          "category_code": "ESP",
+          "category_label_inferred": "Espiritualidade",
+          "name": "Esporte com segurança e consentimento sem moral da aptidão"
+        },
+        {
+          "id": "SOC-PROP-EST-007",
+          "category_code": "EST",
+          "category_label_inferred": "Estética",
+          "name": "Clareza funcional sem estética clínica universal"
+        },
+        {
+          "id": "SOC-PROP-ETQ-007",
+          "category_code": "ETQ",
+          "category_label_inferred": "Etiqueta",
+          "name": "Etiqueta de consentimento e privacidade em Rubra-Viva"
+        },
+        {
+          "id": "SOC-PROP-EXP-007",
+          "category_code": "EXP",
+          "category_label_inferred": "Expressão",
+          "name": "Arte sobre fragilidade e recuperação sem exposição clínica"
+        },
+        {
+          "id": "SOC-PROP-FAM-007",
+          "category_code": "FAM",
+          "category_label_inferred": "Família",
+          "name": "Cuidado com consentimento em Rubra-Viva"
+        },
+        {
+          "id": "SOC-PROP-FND-007",
+          "category_code": "FND",
+          "category_label_inferred": "Fundação/identidade (nome do povo)",
+          "name": "Rubravivos"
+        },
+        {
+          "id": "SOC-PROP-FUN-007",
+          "category_code": "FUN",
+          "category_label_inferred": "Ritos fúnebres",
+          "name": "Despedida após confirmação e cuidado digno do corpo"
+        },
+        {
+          "id": "SOC-PROP-HOS-007",
+          "category_code": "HOS",
+          "category_label_inferred": "Hospitalidade geral",
+          "name": "Hospitalidade compatível com restrições de saúde em Rubra-Viva"
+        },
+        {
+          "id": "SOC-PROP-HOSF-007",
+          "category_code": "HOSF",
+          "category_label_inferred": "Hospitalidade alimentar",
+          "name": "Hospitalidade alimentar sem medicalização do hóspede"
+        },
+        {
+          "id": "SOC-PROP-JOG-007",
+          "category_code": "JOG",
+          "category_label_inferred": "Jogos",
+          "name": "Jogos cooperativos com acomodação voluntária"
+        },
+        {
+          "id": "SOC-PROP-LAZ-007",
+          "category_code": "LAZ",
+          "category_label_inferred": "Lazer",
+          "name": "Lazer acessível sem obrigação de produtividade corporal"
+        },
+        {
+          "id": "SOC-PROP-LUT-007",
+          "category_code": "LUT",
+          "category_label_inferred": "Luto",
+          "name": "Luto não reduzido a patologia"
+        },
+        {
+          "id": "SOC-PROP-MUS-007",
+          "category_code": "MUS",
+          "category_label_inferred": "Música",
+          "name": "Música de cuidado sem alegação terapêutica automática"
+        },
+        {
+          "id": "SOC-PROP-ORA-007",
+          "category_code": "ORA",
+          "category_label_inferred": "Tradição oral",
+          "name": "Relatos de cuidado separados de conselho clínico"
+        },
+        {
+          "id": "SOC-PROP-REF-007",
+          "category_code": "REF",
+          "category_label_inferred": "Refúgio/acolhimento",
+          "name": "Participação em refeição sem obrigação de consumir"
+        },
+        {
+          "id": "SOC-PROP-REP-007",
+          "category_code": "REP",
+          "category_label_inferred": "Reputação",
+          "name": "Reputação de cuidado sem culto ao resultado em Rubra-Viva"
+        },
+        {
+          "id": "SOC-PROP-RIT-007",
+          "category_code": "RIT",
+          "category_label_inferred": "Ritual",
+          "name": "Passagem com autonomia de consentimento progressiva"
+        },
+        {
+          "id": "SOC-PROP-SIM-007",
+          "category_code": "SIM",
+          "category_label_inferred": "Simbologia/pertencimento",
+          "name": "Sinal de disponibilidade de cuidado sem autoridade automática"
+        },
+        {
+          "id": "SOC-PROP-TRB-007",
+          "category_code": "TRB",
+          "category_label_inferred": "Trabalho",
+          "name": "Cuidado profissional com fronteiras de responsabilidade em Rubra-Viva"
+        },
+        {
+          "id": "SOC-PROP-UNI-007",
+          "category_code": "UNI",
+          "category_label_inferred": "União/casamento",
+          "name": "União com confidencialidade de cuidado"
+        },
+        {
+          "id": "SOC-PROP-VES-007",
+          "category_code": "VES",
+          "category_label_inferred": "Vestuário",
+          "name": "Acesso, limpeza e consentimento em contextos de cuidado"
+        }
+      ]
+    },
+    {
+      "territory_id": "TER-008",
+      "cul_ref": "CUL-008",
+      "territory_name": "Santuários do Coração",
+      "culture_name_master_confirmed": "Povos das Copas",
+      "traits": [
+        {
+          "id": "SOC-PROP-ALI-008",
+          "category_code": "ALI",
+          "category_label_inferred": "Alimentação",
+          "name": "Pluralidade local sem alimento sagrado inventado"
+        },
+        {
+          "id": "SOC-PROP-ART-008",
+          "category_code": "ART",
+          "category_label_inferred": "Artesanato/materiais",
+          "name": "Conservação, transmissão e reparo de objetos existentes"
+        },
+        {
+          "id": "SOC-PROP-CEL-008",
+          "category_code": "CEL",
+          "category_label_inferred": "Celebração",
+          "name": "Observâncias civis sem conversão em culto"
+        },
+        {
+          "id": "SOC-PROP-CFL-008",
+          "category_code": "CFL",
+          "category_label_inferred": "Conflito/resolução",
+          "name": "Conflito de uso e interpretação em espaço compartilhado nas Copas"
+        },
+        {
+          "id": "SOC-PROP-CIV-008",
+          "category_code": "CIV",
+          "category_label_inferred": "Civilidade/convivência pública",
+          "name": "Memória entre gerações sem autoridade espiritual automática nas Copas"
+        },
+        {
+          "id": "SOC-PROP-CMP-008",
+          "category_code": "CMP",
+          "category_label_inferred": "Campo/território compartilhado",
+          "name": "Cumprimento sem teste de adesão entre os Povos das Copas"
+        },
+        {
+          "id": "SOC-PROP-COM-022",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Pertencimentos sobrepostos entre os Povos das Copas"
+        },
+        {
+          "id": "SOC-PROP-COM-023",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Reciprocidade de custódia e memória nos Santuários do Coração"
+        },
+        {
+          "id": "SOC-PROP-COM-024",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Convivência entre tradição e vida laica nos Santuários do Coração"
+        },
+        {
+          "id": "SOC-PROP-DAN-008",
+          "category_code": "DAN",
+          "category_label_inferred": "Dança",
+          "name": "Dança plural sem rito sagrado presumido"
+        },
+        {
+          "id": "SOC-PROP-EDU-008",
+          "category_code": "EDU",
+          "category_label_inferred": "Educação/aprendizagem",
+          "name": "Transmissão oral e documental de memória sem doutrina nova nas Copas"
+        },
+        {
+          "id": "SOC-PROP-ESP-008",
+          "category_code": "ESP",
+          "category_label_inferred": "Espiritualidade",
+          "name": "Competições comunitárias sem legitimação espiritual"
+        },
+        {
+          "id": "SOC-PROP-EST-008",
+          "category_code": "EST",
+          "category_label_inferred": "Estética",
+          "name": "Continuidade local acima de padronização territorial"
+        },
+        {
+          "id": "SOC-PROP-ETQ-008",
+          "category_code": "ETQ",
+          "category_label_inferred": "Etiqueta",
+          "name": "Etiqueta de pluralidade nos Santuários do Coração"
+        },
+        {
+          "id": "SOC-PROP-EXP-008",
+          "category_code": "EXP",
+          "category_label_inferred": "Expressão",
+          "name": "Memoriais e plantios sem símbolo sagrado novo"
+        },
+        {
+          "id": "SOC-PROP-FAM-008",
+          "category_code": "FAM",
+          "category_label_inferred": "Família",
+          "name": "Família e pertencimento espiritual não equivalentes nos Santuários do Coração"
+        },
+        {
+          "id": "SOC-PROP-FND-008",
+          "category_code": "FND",
+          "category_label_inferred": "Fundação/identidade (nome do povo)",
+          "name": "Povos das Copas"
+        },
+        {
+          "id": "SOC-PROP-FUN-008",
+          "category_code": "FUN",
+          "category_label_inferred": "Ritos fúnebres",
+          "name": "Funerais diversos sem rito sagrado universal"
+        },
+        {
+          "id": "SOC-PROP-HOS-008",
+          "category_code": "HOS",
+          "category_label_inferred": "Hospitalidade geral",
+          "name": "Hospitalidade sem rito compulsório nos Santuários do Coração"
+        },
+        {
+          "id": "SOC-PROP-HOSF-008",
+          "category_code": "HOSF",
+          "category_label_inferred": "Hospitalidade alimentar",
+          "name": "Acolhimento alimentar com respeito ao limite local declarado"
+        },
+        {
+          "id": "SOC-PROP-JOG-008",
+          "category_code": "JOG",
+          "category_label_inferred": "Jogos",
+          "name": "Jogos locais sem apropriar elementos sagrados"
+        },
+        {
+          "id": "SOC-PROP-LAZ-008",
+          "category_code": "LAZ",
+          "category_label_inferred": "Lazer",
+          "name": "Lazer explicitamente não devocional quando desejado"
+        },
+        {
+          "id": "SOC-PROP-LUT-008",
+          "category_code": "LUT",
+          "category_label_inferred": "Luto",
+          "name": "Luto sem interpretação espiritual obrigatória"
+        },
+        {
+          "id": "SOC-PROP-MUS-008",
+          "category_code": "MUS",
+          "category_label_inferred": "Música",
+          "name": "Repertórios locais com fronteira entre sagrado e laico"
+        },
+        {
+          "id": "SOC-PROP-ORA-008",
+          "category_code": "ORA",
+          "category_label_inferred": "Tradição oral",
+          "name": "Memória plural e versões sobrepostas"
+        },
+        {
+          "id": "SOC-PROP-REF-008",
+          "category_code": "REF",
+          "category_label_inferred": "Refúgio/acolhimento",
+          "name": "Convivência alimentar sem rito compulsório"
+        },
+        {
+          "id": "SOC-PROP-REP-008",
+          "category_code": "REP",
+          "category_label_inferred": "Reputação",
+          "name": "Reputação de custódia sem hierarquia sagrada automática nas Copas"
+        },
+        {
+          "id": "SOC-PROP-RIT-008",
+          "category_code": "RIT",
+          "category_label_inferred": "Ritual",
+          "name": "Passagem sem iniciação sagrada inventada"
+        },
+        {
+          "id": "SOC-PROP-SIM-008",
+          "category_code": "SIM",
+          "category_label_inferred": "Simbologia/pertencimento",
+          "name": "Proteção de significados locais sem símbolo sagrado novo"
+        },
+        {
+          "id": "SOC-PROP-TRB-008",
+          "category_code": "TRB",
+          "category_label_inferred": "Trabalho",
+          "name": "Serviço material separado de autoridade espiritual nas Copas"
+        },
+        {
+          "id": "SOC-PROP-UNI-008",
+          "category_code": "UNI",
+          "category_label_inferred": "União/casamento",
+          "name": "Uniões plurais sem religião presumida"
+        },
+        {
+          "id": "SOC-PROP-VES-008",
+          "category_code": "VES",
+          "category_label_inferred": "Vestuário",
+          "name": "Pluralidade local e não apropriação entre comunidades"
+        }
+      ]
+    },
+    {
+      "territory_id": "TER-009",
+      "cul_ref": "CUL-009",
+      "territory_name": "Liga Subcristal",
+      "culture_name_master_confirmed": "Subcristalinos",
+      "traits": [
+        {
+          "id": "SOC-PROP-ALI-009",
+          "category_code": "ALI",
+          "category_label_inferred": "Alimentação",
+          "name": "Partilha alimentar com fronteiras claras entre comum e privado"
+        },
+        {
+          "id": "SOC-PROP-ART-009",
+          "category_code": "ART",
+          "category_label_inferred": "Artesanato/materiais",
+          "name": "Compactação, reforço e manutenção para uso compartilhado"
+        },
+        {
+          "id": "SOC-PROP-CEL-009",
+          "category_code": "CEL",
+          "category_label_inferred": "Celebração",
+          "name": "Celebração e inventário sem festival subterrâneo novo"
+        },
+        {
+          "id": "SOC-PROP-CFL-009",
+          "category_code": "CFL",
+          "category_label_inferred": "Conflito/resolução",
+          "name": "Conflito por impacto acumulado na Liga Subcristal"
+        },
+        {
+          "id": "SOC-PROP-CIV-009",
+          "category_code": "CIV",
+          "category_label_inferred": "Civilidade/convivência pública",
+          "name": "Responsabilidade por impacto sem idade fixa na Liga Subcristal"
+        },
+        {
+          "id": "SOC-PROP-CMP-009",
+          "category_code": "CMP",
+          "category_label_inferred": "Campo/território compartilhado",
+          "name": "Cumprimento de presença em contexto compartilhado na Liga Subcristal"
+        },
+        {
+          "id": "SOC-PROP-COM-025",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Pertencimento local e de liga entre Subcristalinos"
+        },
+        {
+          "id": "SOC-PROP-COM-026",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Reciprocidade de continuidade compartilhada na Liga Subcristal"
+        },
+        {
+          "id": "SOC-PROP-COM-027",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Convivência orientada por impacto estrutural compartilhado na Liga Subcristal"
+        },
+        {
+          "id": "SOC-PROP-DAN-009",
+          "category_code": "DAN",
+          "category_label_inferred": "Dança",
+          "name": "Movimento ajustado ao espaço sem arquitetura presumida"
+        },
+        {
+          "id": "SOC-PROP-EDU-009",
+          "category_code": "EDU",
+          "category_label_inferred": "Educação/aprendizagem",
+          "name": "Aprendizagem informal de limites compartilhados na Liga Subcristal"
+        },
+        {
+          "id": "SOC-PROP-ESP-009",
+          "category_code": "ESP",
+          "category_label_inferred": "Espiritualidade",
+          "name": "Esportes compactáveis sem uso de áreas de escavação"
+        },
+        {
+          "id": "SOC-PROP-EST-009",
+          "category_code": "EST",
+          "category_label_inferred": "Estética",
+          "name": "Contraste de função e leitura tátil sem paleta fixa"
+        },
+        {
+          "id": "SOC-PROP-ETQ-009",
+          "category_code": "ETQ",
+          "category_label_inferred": "Etiqueta",
+          "name": "Etiqueta de impacto compartilhado na Liga Subcristal"
+        },
+        {
+          "id": "SOC-PROP-EXP-009",
+          "category_code": "EXP",
+          "category_label_inferred": "Expressão",
+          "name": "Arte material sem cristalização estética obrigatória"
+        },
+        {
+          "id": "SOC-PROP-FAM-009",
+          "category_code": "FAM",
+          "category_label_inferred": "Família",
+          "name": "Cuidado doméstico com fronteiras de recurso na Liga Subcristal"
+        },
+        {
+          "id": "SOC-PROP-FND-009",
+          "category_code": "FND",
+          "category_label_inferred": "Fundação/identidade (nome do povo)",
+          "name": "Subcristalinos"
+        },
+        {
+          "id": "SOC-PROP-FUN-009",
+          "category_code": "FUN",
+          "category_label_inferred": "Ritos fúnebres",
+          "name": "Despedida compatível com segurança, sem rito subterrâneo inventado"
+        },
+        {
+          "id": "SOC-PROP-HOS-009",
+          "category_code": "HOS",
+          "category_label_inferred": "Hospitalidade geral",
+          "name": "Hospitalidade com fronteiras de uso na Liga Subcristal"
+        },
+        {
+          "id": "SOC-PROP-HOSF-009",
+          "category_code": "HOSF",
+          "category_label_inferred": "Hospitalidade alimentar",
+          "name": "Hospitalidade alimentar limitada ao que foi efetivamente oferecido"
+        },
+        {
+          "id": "SOC-PROP-JOG-009",
+          "category_code": "JOG",
+          "category_label_inferred": "Jogos",
+          "name": "Jogos espaciais abstratos sem mapa subterrâneo real"
+        },
+        {
+          "id": "SOC-PROP-LAZ-009",
+          "category_code": "LAZ",
+          "category_label_inferred": "Lazer",
+          "name": "Lazer de proximidade sem isolamento cultural presumido"
+        },
+        {
+          "id": "SOC-PROP-LUT-009",
+          "category_code": "LUT",
+          "category_label_inferred": "Luto",
+          "name": "Luto com continuidade comunitária sem invisibilização"
+        },
+        {
+          "id": "SOC-PROP-MUS-009",
+          "category_code": "MUS",
+          "category_label_inferred": "Música",
+          "name": "Som em espaços fechados sem instrumento cristalino inventado"
+        },
+        {
+          "id": "SOC-PROP-ORA-009",
+          "category_code": "ORA",
+          "category_label_inferred": "Tradição oral",
+          "name": "Memória de escavação e percurso com cautela operacional"
+        },
+        {
+          "id": "SOC-PROP-REF-009",
+          "category_code": "REF",
+          "category_label_inferred": "Refúgio/acolhimento",
+          "name": "Uso compartilhado sem apropriação automática"
+        },
+        {
+          "id": "SOC-PROP-REP-009",
+          "category_code": "REP",
+          "category_label_inferred": "Reputação",
+          "name": "Reputação por respeito a limites de recurso na Liga Subcristal"
+        },
+        {
+          "id": "SOC-PROP-RIT-009",
+          "category_code": "RIT",
+          "category_label_inferred": "Ritual",
+          "name": "Passagem vinculada a responsabilidade compartilhada, não mineração"
+        },
+        {
+          "id": "SOC-PROP-SIM-009",
+          "category_code": "SIM",
+          "category_label_inferred": "Simbologia/pertencimento",
+          "name": "Marcação de responsabilidade compartilhada sem casta técnica"
+        },
+        {
+          "id": "SOC-PROP-TRB-009",
+          "category_code": "TRB",
+          "category_label_inferred": "Trabalho",
+          "name": "Impacto sobre recurso compartilhado como limite laboral na Liga Subcristal"
+        },
+        {
+          "id": "SOC-PROP-UNI-009",
+          "category_code": "UNI",
+          "category_label_inferred": "União/casamento",
+          "name": "União entre núcleos da liga sem domicílio obrigatório"
+        },
+        {
+          "id": "SOC-PROP-VES-009",
+          "category_code": "VES",
+          "category_label_inferred": "Vestuário",
+          "name": "Organização compacta e segurança sem “traje de mina” universal"
+        }
+      ]
+    },
+    {
+      "territory_id": "TER-010",
+      "cul_ref": "CUL-010",
+      "territory_name": "Domínio dos Reis Magos",
+      "culture_name_master_confirmed": "Enoharianos",
+      "traits": [
+        {
+          "id": "SOC-PROP-ALI-010",
+          "category_code": "ALI",
+          "category_label_inferred": "Alimentação",
+          "name": "Refeição sem prova de linhagem, magia ou posição"
+        },
+        {
+          "id": "SOC-PROP-ART-010",
+          "category_code": "ART",
+          "category_label_inferred": "Artesanato/materiais",
+          "name": "Conservação de peças formais sem artesanato de elite obrigatório"
+        },
+        {
+          "id": "SOC-PROP-CEL-010",
+          "category_code": "CEL",
+          "category_label_inferred": "Celebração",
+          "name": "Celebração civil sem culto aos Reis Magos"
+        },
+        {
+          "id": "SOC-PROP-CFL-010",
+          "category_code": "CFL",
+          "category_label_inferred": "Conflito/resolução",
+          "name": "Conflito entre deferência social e autoridade funcional em Enohar"
+        },
+        {
+          "id": "SOC-PROP-CIV-010",
+          "category_code": "CIV",
+          "category_label_inferred": "Civilidade/convivência pública",
+          "name": "Autonomia sem prova de poder em Enohar"
+        },
+        {
+          "id": "SOC-PROP-CMP-010",
+          "category_code": "CMP",
+          "category_label_inferred": "Campo/território compartilhado",
+          "name": "Cumprimento sem demonstração mágica obrigatória em Enohar"
+        },
+        {
+          "id": "SOC-PROP-COM-028",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Pertencimento não reduzido a status mágico em Enohar"
+        },
+        {
+          "id": "SOC-PROP-COM-029",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Reciprocidade sob assimetria de status em Enohar"
+        },
+        {
+          "id": "SOC-PROP-COM-030",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Convivência transversal a hierarquias em Enohar"
+        },
+        {
+          "id": "SOC-PROP-DAN-010",
+          "category_code": "DAN",
+          "category_label_inferred": "Dança",
+          "name": "Performance corporal sem cerimônia aristocrática presumida"
+        },
+        {
+          "id": "SOC-PROP-EDU-010",
+          "category_code": "EDU",
+          "category_label_inferred": "Educação/aprendizagem",
+          "name": "Aprendizagem informal sobre limites de status em Enohar"
+        },
+        {
+          "id": "SOC-PROP-ESP-010",
+          "category_code": "ESP",
+          "category_label_inferred": "Espiritualidade",
+          "name": "Desempenho separado de grau mágico e linhagem"
+        },
+        {
+          "id": "SOC-PROP-EST-010",
+          "category_code": "EST",
+          "category_label_inferred": "Estética",
+          "name": "Pluralidade visível sob hierarquias existentes"
+        },
+        {
+          "id": "SOC-PROP-ETQ-010",
+          "category_code": "ETQ",
+          "category_label_inferred": "Etiqueta",
+          "name": "Etiqueta sob assimetria de status em Enohar"
+        },
+        {
+          "id": "SOC-PROP-EXP-010",
+          "category_code": "EXP",
+          "category_label_inferred": "Expressão",
+          "name": "Arte rúnica pública sem vigilância ou arma oculta"
+        },
+        {
+          "id": "SOC-PROP-FAM-010",
+          "category_code": "FAM",
+          "category_label_inferred": "Família",
+          "name": "Parentesco sem hereditariedade mágica presumida em Enohar"
+        },
+        {
+          "id": "SOC-PROP-FND-010",
+          "category_code": "FND",
+          "category_label_inferred": "Fundação/identidade (nome do povo)",
+          "name": "Enoharianos"
+        },
+        {
+          "id": "SOC-PROP-FUN-010",
+          "category_code": "FUN",
+          "category_label_inferred": "Ritos fúnebres",
+          "name": "Funeral sem hierarquia metafísica por título"
+        },
+        {
+          "id": "SOC-PROP-HOS-010",
+          "category_code": "HOS",
+          "category_label_inferred": "Hospitalidade geral",
+          "name": "Hospitalidade sem patronagem automática em Enohar"
+        },
+        {
+          "id": "SOC-PROP-HOSF-010",
+          "category_code": "HOSF",
+          "category_label_inferred": "Hospitalidade alimentar",
+          "name": "Oferta alimentar de alto status sem dívida implícita"
+        },
+        {
+          "id": "SOC-PROP-JOG-010",
+          "category_code": "JOG",
+          "category_label_inferred": "Jogos",
+          "name": "Competições mágicas regulamentadas com alternativa não mágica"
+        },
+        {
+          "id": "SOC-PROP-LAZ-010",
+          "category_code": "LAZ",
+          "category_label_inferred": "Lazer",
+          "name": "Lazer que não exige posição aristocrática"
+        },
+        {
+          "id": "SOC-PROP-LUT-010",
+          "category_code": "LUT",
+          "category_label_inferred": "Luto",
+          "name": "Luto sem prova de controle arcano"
+        },
+        {
+          "id": "SOC-PROP-MUS-010",
+          "category_code": "MUS",
+          "category_label_inferred": "Música",
+          "name": "Música mágica e não mágica sem hierarquia de valor"
+        },
+        {
+          "id": "SOC-PROP-ORA-010",
+          "category_code": "ORA",
+          "category_label_inferred": "Tradição oral",
+          "name": "Recitação de juramentos, contratos e crítica com distinção documental"
+        },
+        {
+          "id": "SOC-PROP-REF-010",
+          "category_code": "REF",
+          "category_label_inferred": "Refúgio/acolhimento",
+          "name": "Convivência entre posições sem patronagem automática"
+        },
+        {
+          "id": "SOC-PROP-REP-010",
+          "category_code": "REP",
+          "category_label_inferred": "Reputação",
+          "name": "Reputação funcional sem prova de poder em Enohar"
+        },
+        {
+          "id": "SOC-PROP-RIT-010",
+          "category_code": "RIT",
+          "category_label_inferred": "Ritual",
+          "name": "Maioridade não condicionada a manifestação mágica"
+        },
+        {
+          "id": "SOC-PROP-SIM-010",
+          "category_code": "SIM",
+          "category_label_inferred": "Simbologia/pertencimento",
+          "name": "Autoridade verificável sem símbolo mágico universal"
+        },
+        {
+          "id": "SOC-PROP-TRB-010",
+          "category_code": "TRB",
+          "category_label_inferred": "Trabalho",
+          "name": "Especialização profissional separada de posição mágica em Enohar"
+        },
+        {
+          "id": "SOC-PROP-UNI-010",
+          "category_code": "UNI",
+          "category_label_inferred": "União/casamento",
+          "name": "União sem transferência de estatuto mágico"
+        },
+        {
+          "id": "SOC-PROP-VES-010",
+          "category_code": "VES",
+          "category_label_inferred": "Vestuário",
+          "name": "Separação entre poder formal, magia e aparência cotidiana"
+        }
+      ]
+    },
+    {
+      "territory_id": "TER-011",
+      "cul_ref": "CUL-011",
+      "territory_name": "Terras Livres",
+      "culture_name_master_confirmed": "Fronteiriços",
+      "traits": [
+        {
+          "id": "SOC-PROP-ALI-011",
+          "category_code": "ALI",
+          "category_label_inferred": "Alimentação",
+          "name": "Recursos alimentares fronteiriços sem transformar combinação em tradição universal"
+        },
+        {
+          "id": "SOC-PROP-ART-011",
+          "category_code": "ART",
+          "category_label_inferred": "Artesanato/materiais",
+          "name": "Reuso, adaptação e reparo comunitário"
+        },
+        {
+          "id": "SOC-PROP-CEL-011",
+          "category_code": "CEL",
+          "category_label_inferred": "Celebração",
+          "name": "Celebração local voluntária e não uniformizada"
+        },
+        {
+          "id": "SOC-PROP-CFL-011",
+          "category_code": "CFL",
+          "category_label_inferred": "Conflito/resolução",
+          "name": "Conflito por promessa, entrega e responsabilidade na Fronteira"
+        },
+        {
+          "id": "SOC-PROP-CIV-011",
+          "category_code": "CIV",
+          "category_label_inferred": "Civilidade/convivência pública",
+          "name": "Autonomia prática sem rito universal na Fronteira"
+        },
+        {
+          "id": "SOC-PROP-CMP-011",
+          "category_code": "CMP",
+          "category_label_inferred": "Campo/território compartilhado",
+          "name": "Cumprimento situacional entre Fronteiriços"
+        },
+        {
+          "id": "SOC-PROP-COM-031",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Pertencimento por prática e reconhecimento nas Terras Livres"
+        },
+        {
+          "id": "SOC-PROP-COM-032",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Ajuda prática sem dívida automática na Fronteira"
+        },
+        {
+          "id": "SOC-PROP-COM-033",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Vizinhança de recursos compartilhados nas Terras Livres"
+        },
+        {
+          "id": "SOC-PROP-DAN-011",
+          "category_code": "DAN",
+          "category_label_inferred": "Dança",
+          "name": "Variação de assentamento acima de estilo único"
+        },
+        {
+          "id": "SOC-PROP-EDU-011",
+          "category_code": "EDU",
+          "category_label_inferred": "Educação/aprendizagem",
+          "name": "Aprendizagem informal por acompanhamento de tarefas na Fronteira"
+        },
+        {
+          "id": "SOC-PROP-ESP-011",
+          "category_code": "ESP",
+          "category_label_inferred": "Espiritualidade",
+          "name": "Provas práticas sem transformar risco em prestígio"
+        },
+        {
+          "id": "SOC-PROP-EST-011",
+          "category_code": "EST",
+          "category_label_inferred": "Estética",
+          "name": "História de uso sem padronização comunitária"
+        },
+        {
+          "id": "SOC-PROP-ETQ-011",
+          "category_code": "ETQ",
+          "category_label_inferred": "Etiqueta",
+          "name": "Etiqueta de autonomia prática nas Terras Livres"
+        },
+        {
+          "id": "SOC-PROP-EXP-011",
+          "category_code": "EXP",
+          "category_label_inferred": "Expressão",
+          "name": "Arte de reaproveitamento sem estética de pobreza obrigatória"
+        },
+        {
+          "id": "SOC-PROP-FAM-011",
+          "category_code": "FAM",
+          "category_label_inferred": "Família",
+          "name": "Redes de cuidado não hereditárias nas Terras Livres"
+        },
+        {
+          "id": "SOC-PROP-FND-011",
+          "category_code": "FND",
+          "category_label_inferred": "Fundação/identidade (nome do povo)",
+          "name": "Fronteiriços"
+        },
+        {
+          "id": "SOC-PROP-FUN-011",
+          "category_code": "FUN",
+          "category_label_inferred": "Ritos fúnebres",
+          "name": "Funeral sem converter desaparecimento em morte"
+        },
+        {
+          "id": "SOC-PROP-HOS-011",
+          "category_code": "HOS",
+          "category_label_inferred": "Hospitalidade geral",
+          "name": "Hospitalidade de recurso disponível nas Terras Livres"
+        },
+        {
+          "id": "SOC-PROP-HOSF-011",
+          "category_code": "HOSF",
+          "category_label_inferred": "Hospitalidade alimentar",
+          "name": "Oferta de comida fronteiriça sem dívida de serviço"
+        },
+        {
+          "id": "SOC-PROP-JOG-011",
+          "category_code": "JOG",
+          "category_label_inferred": "Jogos",
+          "name": "Jogos portáteis de regra curta sem objeto exclusivo"
+        },
+        {
+          "id": "SOC-PROP-LAZ-011",
+          "category_code": "LAZ",
+          "category_label_inferred": "Lazer",
+          "name": "Lazer flexível entre trabalho e circulação"
+        },
+        {
+          "id": "SOC-PROP-LUT-011",
+          "category_code": "LUT",
+          "category_label_inferred": "Luto",
+          "name": "Luto apoiado por ajuda prática sem exigência de estoicismo"
+        },
+        {
+          "id": "SOC-PROP-MUS-011",
+          "category_code": "MUS",
+          "category_label_inferred": "Música",
+          "name": "Repertórios fronteiriços mistos e não centralizados"
+        },
+        {
+          "id": "SOC-PROP-ORA-011",
+          "category_code": "ORA",
+          "category_label_inferred": "Tradição oral",
+          "name": "Rotas, fauna e reputação com fonte declarada"
+        },
+        {
+          "id": "SOC-PROP-REF-011",
+          "category_code": "REF",
+          "category_label_inferred": "Refúgio/acolhimento",
+          "name": "Refeição simples por disponibilidade, sem menu fixo"
+        },
+        {
+          "id": "SOC-PROP-REP-011",
+          "category_code": "REP",
+          "category_label_inferred": "Reputação",
+          "name": "Reputação prática limitada ao contexto nas Terras Livres"
+        },
+        {
+          "id": "SOC-PROP-RIT-011",
+          "category_code": "RIT",
+          "category_label_inferred": "Ritual",
+          "name": "Passagem por autonomia prática sem abandono de proteção"
+        },
+        {
+          "id": "SOC-PROP-SIM-011",
+          "category_code": "SIM",
+          "category_label_inferred": "Simbologia/pertencimento",
+          "name": "Reputação não convertida em distintivo oficial"
+        },
+        {
+          "id": "SOC-PROP-TRB-011",
+          "category_code": "TRB",
+          "category_label_inferred": "Trabalho",
+          "name": "Compromisso de tarefa sem servidão implícita na Fronteira"
+        },
+        {
+          "id": "SOC-PROP-UNI-011",
+          "category_code": "UNI",
+          "category_label_inferred": "União/casamento",
+          "name": "União por reconhecimento sem tutela comunitária"
+        },
+        {
+          "id": "SOC-PROP-VES-011",
+          "category_code": "VES",
+          "category_label_inferred": "Vestuário",
+          "name": "Reparo visível, modularidade e autonomia de uso"
+        }
+      ]
+    },
+    {
+      "territory_id": "TER-012",
+      "cul_ref": "CUL-012",
+      "territory_name": "Zonas de Contenção",
+      "culture_name_master_confirmed": "Deslocados e equipes de contenção",
+      "traits": [
+        {
+          "id": "SOC-PROP-ALI-012",
+          "category_code": "ALI",
+          "category_label_inferred": "Alimentação",
+          "name": "Separação entre ração operacional e identidade de deslocado"
+        },
+        {
+          "id": "SOC-PROP-ART-012",
+          "category_code": "ART",
+          "category_label_inferred": "Artesanato/materiais",
+          "name": "Reparo emergencial sem criar “artesanato da contenção”"
+        },
+        {
+          "id": "SOC-PROP-CEL-012",
+          "category_code": "CEL",
+          "category_label_inferred": "Celebração",
+          "name": "Celebrações sob emergência sem obrigação de normalidade"
+        },
+        {
+          "id": "SOC-PROP-CFL-012",
+          "category_code": "CFL",
+          "category_label_inferred": "Conflito/resolução",
+          "name": "Conflito entre restrição de segurança e status social nas Zonas de Contenção"
+        },
+        {
+          "id": "SOC-PROP-CIV-012",
+          "category_code": "CIV",
+          "category_label_inferred": "Civilidade/convivência pública",
+          "name": "Proteção do ciclo de vida sob regras temporárias de contenção"
+        },
+        {
+          "id": "SOC-PROP-CMP-012",
+          "category_code": "CMP",
+          "category_label_inferred": "Campo/território compartilhado",
+          "name": "Identificação funcional sem apagamento pessoal na Contenção"
+        },
+        {
+          "id": "SOC-PROP-COM-034",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Pertencimento temporário sem apagamento de origem nas Zonas de Contenção"
+        },
+        {
+          "id": "SOC-PROP-COM-035",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Solidariedade operacional sob risco nas Zonas de Contenção"
+        },
+        {
+          "id": "SOC-PROP-COM-036",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Convivência temporária com privacidade nas Zonas de Contenção"
+        },
+        {
+          "id": "SOC-PROP-DAN-012",
+          "category_code": "DAN",
+          "category_label_inferred": "Dança",
+          "name": "Dança como continuidade voluntária, não terapia obrigatória"
+        },
+        {
+          "id": "SOC-PROP-EDU-012",
+          "category_code": "EDU",
+          "category_label_inferred": "Educação/aprendizagem",
+          "name": "Orientação informal de segurança sem tradição de contenção"
+        },
+        {
+          "id": "SOC-PROP-ESP-012",
+          "category_code": "ESP",
+          "category_label_inferred": "Espiritualidade",
+          "name": "Atividade física adaptável sem teste de aptidão para merecimento"
+        },
+        {
+          "id": "SOC-PROP-EST-012",
+          "category_code": "EST",
+          "category_label_inferred": "Estética",
+          "name": "Heterogeneidade protegida contra uniformização de crise"
+        },
+        {
+          "id": "SOC-PROP-ETQ-012",
+          "category_code": "ETQ",
+          "category_label_inferred": "Etiqueta",
+          "name": "Etiqueta operacional temporária nas Zonas de Contenção"
+        },
+        {
+          "id": "SOC-PROP-EXP-012",
+          "category_code": "EXP",
+          "category_label_inferred": "Expressão",
+          "name": "Arte temporária e memorial com consentimento de sobreviventes"
+        },
+        {
+          "id": "SOC-PROP-FAM-012",
+          "category_code": "FAM",
+          "category_label_inferred": "Família",
+          "name": "Preservação de vínculos de cuidado durante deslocamento e contenção"
+        },
+        {
+          "id": "SOC-PROP-FND-012",
+          "category_code": "FND",
+          "category_label_inferred": "Fundação/identidade (nome do povo)",
+          "name": "Deslocados e equipes de contenção"
+        },
+        {
+          "id": "SOC-PROP-FUN-012",
+          "category_code": "FUN",
+          "category_label_inferred": "Ritos fúnebres",
+          "name": "Despedida digna com identidade de origem preservada"
+        },
+        {
+          "id": "SOC-PROP-HOS-012",
+          "category_code": "HOS",
+          "category_label_inferred": "Hospitalidade geral",
+          "name": "Acolhimento humanitário sob contenção"
+        },
+        {
+          "id": "SOC-PROP-HOSF-012",
+          "category_code": "HOSF",
+          "category_label_inferred": "Hospitalidade alimentar",
+          "name": "Alimentação humanitária sem consentimento ampliado"
+        },
+        {
+          "id": "SOC-PROP-JOG-012",
+          "category_code": "JOG",
+          "category_label_inferred": "Jogos",
+          "name": "Jogos cooperativos que não simulem trauma por padrão"
+        },
+        {
+          "id": "SOC-PROP-LAZ-012",
+          "category_code": "LAZ",
+          "category_label_inferred": "Lazer",
+          "name": "Lazer de baixa obrigação em ambiente emergencial"
+        },
+        {
+          "id": "SOC-PROP-LUT-012",
+          "category_code": "LUT",
+          "category_label_inferred": "Luto",
+          "name": "Luto sem apagar culturas de origem"
+        },
+        {
+          "id": "SOC-PROP-MUS-012",
+          "category_code": "MUS",
+          "category_label_inferred": "Música",
+          "name": "Repertórios de origem preservados durante deslocamento"
+        },
+        {
+          "id": "SOC-PROP-ORA-012",
+          "category_code": "ORA",
+          "category_label_inferred": "Tradição oral",
+          "name": "Memória de evacuação separada de protocolo atual"
+        },
+        {
+          "id": "SOC-PROP-REF-012",
+          "category_code": "REF",
+          "category_label_inferred": "Refúgio/acolhimento",
+          "name": "Distribuição alimentar sob contenção sem caráter punitivo"
+        },
+        {
+          "id": "SOC-PROP-REP-012",
+          "category_code": "REP",
+          "category_label_inferred": "Reputação",
+          "name": "Reputação portátil sem culpa coletiva nas Zonas de Contenção"
+        },
+        {
+          "id": "SOC-PROP-RIT-012",
+          "category_code": "RIT",
+          "category_label_inferred": "Ritual",
+          "name": "Passagens de vida sem rito emergencial"
+        },
+        {
+          "id": "SOC-PROP-SIM-012",
+          "category_code": "SIM",
+          "category_label_inferred": "Simbologia/pertencimento",
+          "name": "Identificador operacional temporário não é identidade cultural"
+        },
+        {
+          "id": "SOC-PROP-TRB-012",
+          "category_code": "TRB",
+          "category_label_inferred": "Trabalho",
+          "name": "Papel emergencial não define identidade nas Zonas de Contenção"
+        },
+        {
+          "id": "SOC-PROP-UNI-012",
+          "category_code": "UNI",
+          "category_label_inferred": "União/casamento",
+          "name": "Uniões preservadas durante deslocamento e contenção"
+        },
+        {
+          "id": "SOC-PROP-VES-012",
+          "category_code": "VES",
+          "category_label_inferred": "Vestuário",
+          "name": "Portabilidade e preservação de identidades anteriores"
+        }
+      ]
+    },
+    {
+      "territory_id": "TER-013",
+      "cul_ref": "CUL-013",
+      "territory_name": "Fortaleza do Trovão",
+      "culture_name_master_confirmed": "Seguidores e contratados",
+      "traits": [
+        {
+          "id": "SOC-PROP-ALI-013",
+          "category_code": "ALI",
+          "category_label_inferred": "Alimentação",
+          "name": "Alimentação no domínio sem converter vínculo em cultura culinária"
+        },
+        {
+          "id": "SOC-PROP-ART-013",
+          "category_code": "ART",
+          "category_label_inferred": "Artesanato/materiais",
+          "name": "Manutenção e personalização dentro de exigências funcionais"
+        },
+        {
+          "id": "SOC-PROP-CEL-013",
+          "category_code": "CEL",
+          "category_label_inferred": "Celebração",
+          "name": "Celebração sem juramento ou propaganda compulsória"
+        },
+        {
+          "id": "SOC-PROP-CFL-013",
+          "category_code": "CFL",
+          "category_label_inferred": "Conflito/resolução",
+          "name": "Conflito por ordem além do escopo na Fortaleza do Trovão"
+        },
+        {
+          "id": "SOC-PROP-CIV-013",
+          "category_code": "CIV",
+          "category_label_inferred": "Civilidade/convivência pública",
+          "name": "Ciclo de vida sem equivaler maturidade a subordinação contratual na Fortaleza"
+        },
+        {
+          "id": "SOC-PROP-CMP-013",
+          "category_code": "CMP",
+          "category_label_inferred": "Campo/território compartilhado",
+          "name": "Cumprimento com papel contextual na Fortaleza do Trovão"
+        },
+        {
+          "id": "SOC-PROP-COM-037",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Pertencimentos distintos entre seguidores e contratados da Fortaleza do Trovão"
+        },
+        {
+          "id": "SOC-PROP-COM-038",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Reciprocidade contratual e pessoal separadas na Fortaleza do Trovão"
+        },
+        {
+          "id": "SOC-PROP-COM-039",
+          "category_code": "COM",
+          "category_label_inferred": "Comunidade/convivência (pertencimento, reciprocidade, vizinhança)",
+          "name": "Convivência sem adesão presumida na Fortaleza do Trovão"
+        },
+        {
+          "id": "SOC-PROP-DAN-013",
+          "category_code": "DAN",
+          "category_label_inferred": "Dança",
+          "name": "Dança fora da cadeia de lealdade"
+        },
+        {
+          "id": "SOC-PROP-EDU-013",
+          "category_code": "EDU",
+          "category_label_inferred": "Educação/aprendizagem",
+          "name": "Aprendizagem informal de papéis sem doutrina de lealdade na Fortaleza"
+        },
+        {
+          "id": "SOC-PROP-ESP-013",
+          "category_code": "ESP",
+          "category_label_inferred": "Espiritualidade",
+          "name": "Competições mistas sem teste de lealdade"
+        },
+        {
+          "id": "SOC-PROP-EST-013",
+          "category_code": "EST",
+          "category_label_inferred": "Estética",
+          "name": "Coexistência de aparência pessoal e disciplina contextual"
+        },
+        {
+          "id": "SOC-PROP-ETQ-013",
+          "category_code": "ETQ",
+          "category_label_inferred": "Etiqueta",
+          "name": "Etiqueta de vínculo declarado na Fortaleza do Trovão"
+        },
+        {
+          "id": "SOC-PROP-EXP-013",
+          "category_code": "EXP",
+          "category_label_inferred": "Expressão",
+          "name": "Expressão individual sem emblema oficial inventado"
+        },
+        {
+          "id": "SOC-PROP-FAM-013",
+          "category_code": "FAM",
+          "category_label_inferred": "Família",
+          "name": "Vida privada separada de contrato e lealdade na Fortaleza do Trovão"
+        },
+        {
+          "id": "SOC-PROP-FND-013",
+          "category_code": "FND",
+          "category_label_inferred": "Fundação/identidade (nome do povo)",
+          "name": "Seguidores e contratados"
+        },
+        {
+          "id": "SOC-PROP-FUN-013",
+          "category_code": "FUN",
+          "category_label_inferred": "Ritos fúnebres",
+          "name": "Decisões funerárias não pertencem ao contratante"
+        },
+        {
+          "id": "SOC-PROP-HOS-013",
+          "category_code": "HOS",
+          "category_label_inferred": "Hospitalidade geral",
+          "name": "Hospitalidade sem juramento na Fortaleza do Trovão"
+        },
+        {
+          "id": "SOC-PROP-HOSF-013",
+          "category_code": "HOSF",
+          "category_label_inferred": "Hospitalidade alimentar",
+          "name": "Oferta alimentar sem recrutamento ou contraprestação automática"
+        },
+        {
+          "id": "SOC-PROP-JOG-013",
+          "category_code": "JOG",
+          "category_label_inferred": "Jogos",
+          "name": "Jogos entre grupos sem aposta ou lealdade obrigatória"
+        },
+        {
+          "id": "SOC-PROP-LAZ-013",
+          "category_code": "LAZ",
+          "category_label_inferred": "Lazer",
+          "name": "Tempo fora do contrato reconhecido como vida privada"
+        },
+        {
+          "id": "SOC-PROP-LUT-013",
+          "category_code": "LUT",
+          "category_label_inferred": "Luto",
+          "name": "Luto não usado como teste de lealdade"
+        },
+        {
+          "id": "SOC-PROP-MUS-013",
+          "category_code": "MUS",
+          "category_label_inferred": "Música",
+          "name": "Repertórios de contratados e seguidores sem uniformização"
+        },
+        {
+          "id": "SOC-PROP-ORA-013",
+          "category_code": "ORA",
+          "category_label_inferred": "Tradição oral",
+          "name": "Histórias de contrato sem alterar termos do contrato"
+        },
+        {
+          "id": "SOC-PROP-REF-013",
+          "category_code": "REF",
+          "category_label_inferred": "Refúgio/acolhimento",
+          "name": "Refeição conjunta sem prova de lealdade ou contrato"
+        },
+        {
+          "id": "SOC-PROP-REP-013",
+          "category_code": "REP",
+          "category_label_inferred": "Reputação",
+          "name": "Reputação por cumprimento de escopo na Fortaleza do Trovão"
+        },
+        {
+          "id": "SOC-PROP-RIT-013",
+          "category_code": "RIT",
+          "category_label_inferred": "Ritual",
+          "name": "Maioridade sem juramento de serviço"
+        },
+        {
+          "id": "SOC-PROP-SIM-013",
+          "category_code": "SIM",
+          "category_label_inferred": "Simbologia/pertencimento",
+          "name": "Afiliação reversível sem emblema de ancestralidade"
+        },
+        {
+          "id": "SOC-PROP-TRB-013",
+          "category_code": "TRB",
+          "category_label_inferred": "Trabalho",
+          "name": "Contrato separado de lealdade pessoal na Fortaleza do Trovão"
+        },
+        {
+          "id": "SOC-PROP-UNI-013",
+          "category_code": "UNI",
+          "category_label_inferred": "União/casamento",
+          "name": "União independente de contrato ou lealdade"
+        },
+        {
+          "id": "SOC-PROP-VES-013",
+          "category_code": "VES",
+          "category_label_inferred": "Vestuário",
+          "name": "Vínculo de função separado de origem pessoal"
+        }
+      ]
+    }
+  ]
+}

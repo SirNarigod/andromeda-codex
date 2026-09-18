@@ -1,0 +1,74 @@
+{
+  "record_id": "ARPG-STAGE05-TEST-SUMMARY-V0.6.0",
+  "stage": "05/20",
+  "version": "V0.6.0",
+  "status": "PASS_PRESEAL",
+  "stage05": {
+    "unit": {
+      "tests": 22,
+      "passed": 22,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "validation": {
+      "checks": 68,
+      "passed": 68,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "stress": {
+      "checks": 62,
+      "passed": 62,
+      "failed": 0,
+      "status": "PASS",
+      "profiles": 4,
+      "npc_owners": 4,
+      "item_events": 32,
+      "idempotent_replays": 8
+    }
+  },
+  "regression": {
+    "stage04": {
+      "unit": "16/16 PASS",
+      "validation": "53/53 PASS",
+      "stress": "24/24 PASS"
+    },
+    "stage03": {
+      "unit": "14/14 PASS",
+      "validation": "67/67 PASS",
+      "stress": "17/17 PASS"
+    },
+    "stage02": {
+      "unit": "11/11 PASS",
+      "validation": "51/51 PASS",
+      "stress": "15/15 PASS"
+    },
+    "stage01": {
+      "unit": "12/12 PASS",
+      "validation": "58/58 PASS",
+      "stress": "35/35 PASS"
+    },
+    "stage00": {
+      "validation": "51/51 PASS",
+      "stress": "PASS; 20 worlds; 10/10 determinism pairs"
+    },
+    "country_v15_critical": {
+      "core": "7/7 PASS",
+      "gameplay": "6/6 PASS",
+      "integration": "5/5 PASS",
+      "security_persistence": "6/6 PASS",
+      "total": "24/24 PASS"
+    },
+    "master": {
+      "suites": 29,
+      "checks": 393,
+      "passed": 393,
+      "failed": 0,
+      "status": "PASS"
+    }
+  },
+  "harness_corrections_ref": "04_REPORTS/ARPG_STAGE05/ARPG_STAGE05_CORRECTION_LEDGER_V0_6_0.json",
+  "restore_gate": "PENDING_PACKAGING",
+  "canon_mutations": 0,
+  "art_dependency": "NONE"
+}

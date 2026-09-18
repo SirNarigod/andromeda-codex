@@ -1,0 +1,16 @@
+{
+  "record_id": "STELLAR-SYMBIOSIS-LAW-V1.0",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.0",
+  "status": "CANON_DERIVADO_ATIVO_R2_GUARDED",
+  "authority": {"r2": ["MAGIA_ARMAS_E_COMBATE.md", "RESUMO_MESTRE_CANONICO.md", "ART-001", "PER-002", "PER-003"], "scope": "ESPINHO_NEGRO_KENUA_BIOLOGICAL_COST_AND_AGENCY"},
+  "dependencies": ["STELLAR_COSMOLOGY_CANON_V1_2.json", "STELLAR_MAGIC_TECHNOLOGY_LAW_V1_1.json", "../../01_LORE/STELLAR_REBASE_R2/R2_SOURCE_AUTHORITY_INDEX_V1_0.json"],
+  "invariants": ["KENUA_REMAINS_A_PERSON_WITH_AGENCY", "ESPINHO_NEGRO_LEARNS_LANGUAGE_AND_MORALITY_THROUGH_THE_HOST", "ALL_FORMS_CONSERVE_MATTER_AND_ENERGY", "REGENERATION_REQUIRES_FOOD_WATER_MINERALS_VITAMINS_AND_ORGANIC_RESERVES", "SERLIS_SUPPORTS_GRADUAL_CONTROL_NOT_IMMEDIATE_DOMINATION", "SEASON_1_NEVER_GRANTS_FULL_MASTERY"],
+  "prohibitions": ["NO_POSSESSION_DECLARED_FROM_AUTOMATIC_REACTION_ALONE", "NO_INSTANT_WEAPON_OR_BODY_FORM_MASTERY", "NO_SIMBIOSIS_COST_AS_GENERIC_MANA", "NO_AMADON_IDENTIFICATION_BEFORE_S01E08", "NO_IRREVERSIBLE_INTEGRATION_WITHOUT_AUTHORIAL_GATE"],
+  "r2_thresholds": [{"range": "0-20", "state": "KENUA_DOMINANT"}, {"range": "20-40", "state": "AUTOMATIC_REACTIONS"}, {"range": "40-60", "state": "MIXED_DECISIONS"}, {"range": "60-80", "state": "IMPORTANT_FUNCTIONS_ASSUMED"}, {"range": "80-99", "state": "SURVIVAL_MOTOR_CONTROL"}, {"range": "100", "state": "UNSTABLE_IRREVERSIBLE_INTEGRATION_OR_SUBSTITUTION", "requires": "AUTHORIAL_GATE"}],
+  "season_1_boundaries": {"episode_1": "Flower remains closed and only responds to Kenua.", "episode_2": "Selection and involuntary symbiosis begin.", "episodes_3_6": "Hunger, automatic defense, nutrition and containment.", "episode_7": "Eighty-percent state.", "episode_8": "First conscious pact; first Kenua connection to Amadon.", "after_season_1": "Control, communication and limits may develop over seasons with Serlis."},
+  "material_trace_model": {"tracked_categories": ["FOOD", "WATER", "MINERALS", "VITAMINS", "ORGANIC_RESERVES"], "deficit_effects": ["weakened regeneration", "unreliable defensive reaction", "physical strain", "need for care or trade", "local ecological or social consequence"], "recovery_rule": "Recovery requires supplied, compatible material and time; it is never a free reset."},
+  "simulation_effects": ["Each Espinho-Negro manifestation records threshold band, consent context, material draw and bodily consequence.", "Automatic defense can protect Kenua while creating relationship, legal or moral consequences; it never proves permanent loss of agency.", "At 100%, runtime must reject transition unless an authorial gate records the exact irreversible outcome."],
+  "allowed_states": ["DORMANT", "RESPONSIVE", "INVOLUNTARY", "CONTAINED", "NEGOTIATED", "SURVIVAL_OVERRIDE", "IRREVERSIBLE_GATED", "RECOVERING"],
+  "story_generators": ["A community can feed the symbiosis, but demands dangerous work from Kenua in return.", "A defensive reaction saves someone Kenua feared harming and complicates his reputation.", "Serlis discovers that an apparent control gain is actually a nutritional deficit in disguise."]
+}

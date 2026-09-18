@@ -1,0 +1,94 @@
+[gd_scene load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://scripts/interaction/dropped_bag.gd" id="1_bag"]
+[ext_resource type="Script" path="res://scripts/world/water_world_item_presenter.gd" id="2_water_item"]
+
+[sub_resource type="BoxShape3D" id="Shape_bag"]
+size = Vector3(0.72, 0.48, 0.58)
+
+[sub_resource type="SphereShape3D" id="Shape_recovery"]
+radius = 0.5
+
+[sub_resource type="StandardMaterial3D" id="Material_bag"]
+albedo_color = Color(0.91, 0.88, 0.78, 1)
+roughness = 0.88
+
+[sub_resource type="BoxMesh" id="Mesh_bag"]
+material = SubResource("Material_bag")
+size = Vector3(0.72, 0.48, 0.58)
+
+[sub_resource type="StandardMaterial3D" id="Material_marker"]
+transparency = 1
+shading_mode = 0
+albedo_color = Color(1, 0.72, 0.35, 0.65)
+
+[sub_resource type="CylinderMesh" id="Mesh_marker"]
+material = SubResource("Material_marker")
+top_radius = 0.52
+bottom_radius = 0.52
+height = 0.02
+
+[node name="DroppedBag" type="RigidBody3D"]
+collision_layer = 4096
+collision_mask = 2177
+mass = 1.2
+freeze = true
+script = ExtResource("1_bag")
+target_ref = ""
+target_kind = "DROPPED_BAG"
+display_name = "Bolsa caída"
+pointer_aim_offset = Vector3(0, 0.34, 0)
+bag_ref = ""
+original_owner_ref = ""
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+position = Vector3(0, 0.24, 0)
+shape = SubResource("Shape_bag")
+
+[node name="PlaceholderVisual" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.24, 0)
+mesh = SubResource("Mesh_bag")
+
+[node name="RecoverySensor" type="Area3D" parent="."]
+position = Vector3(0, 0.28, 0)
+collision_layer = 4096
+collision_mask = 2
+monitoring = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RecoverySensor"]
+shape = SubResource("Shape_recovery")
+
+[node name="FloatAnchor" type="Marker3D" parent="."]
+position = Vector3(0, 0.34, 0)
+
+[node name="OptionalOwnerHint" type="Label3D" parent="."]
+visible = false
+position = Vector3(0, 1.05, 0)
+modulate = Color(0.85, 0.63, 0.37, 1)
+text = "Bolsa · origem preservada"
+font_size = 21
+outline_size = 7
+billboard = 1
+no_depth_test = true
+
+[node name="HoverFeedback" type="Node3D" parent="."]
+
+[node name="HoverHint" type="Label3D" parent="HoverFeedback"]
+visible = false
+position = Vector3(0, 0.9, 0)
+modulate = Color(1, 0.72, 0.35, 1)
+text = "RECOVER"
+font_size = 24
+outline_size = 8
+billboard = 1
+no_depth_test = true
+
+[node name="SelectionIndicator" type="MeshInstance3D" parent="HoverFeedback"]
+visible = false
+position = Vector3(0, 0.02, 0)
+mesh = SubResource("Mesh_marker")
+
+[node name="WaterWorldItemPresenter" type="Node" parent="."]
+script = ExtResource("2_water_item")
+item_kind = "DROPPED_BAG"

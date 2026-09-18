@@ -1,0 +1,38 @@
+[
+ {
+  "id": "VARGA-POI-001",
+  "title": "Abrigo de Chegada",
+  "function": "temporary shelter and orientation for displaced travelers",
+  "story_use": "The protagonist receives conditional welcome, not authority."
+ },
+ {
+  "id": "VARGA-POI-002",
+  "title": "Quadro de Travessia",
+  "function": "local contracts, route warnings and evidence requests",
+  "story_use": "Urgency can conflict with proof."
+ },
+ {
+  "id": "VARGA-POI-003",
+  "title": "Passagem das Estacas",
+  "function": "blocked community route",
+  "story_use": "The blocked path forces a choice between delay, safety and trust."
+ },
+ {
+  "id": "VARGA-POI-004",
+  "title": "Barranco de Vidro",
+  "function": "defensive Vespa-de-Vidro nest zone",
+  "story_use": "Containment and observation reveal possible provocation."
+ },
+ {
+  "id": "VARGA-POI-005",
+  "title": "Marco de Retorno",
+  "function": "safe reporting point",
+  "story_use": "The result is recorded as contextual reputation, not canon."
+ },
+ {
+  "id": "VARGA-POI-006",
+  "title": "Desvio Luminal",
+  "function": "optional low-risk alternate route",
+  "story_use": "Avoidance protects travelers but leaves the evidence unresolved."
+ }
+]

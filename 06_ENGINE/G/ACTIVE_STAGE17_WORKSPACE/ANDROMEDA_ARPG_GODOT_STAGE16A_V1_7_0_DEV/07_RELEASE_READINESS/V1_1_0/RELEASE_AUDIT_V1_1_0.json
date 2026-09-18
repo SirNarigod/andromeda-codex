@@ -1,0 +1,141 @@
+{
+  "record_id": "LIVING-SIM-V1.1.0-RELEASE-AUDIT",
+  "checks": 24,
+  "passed": 24,
+  "failed": 0,
+  "status": "PASS",
+  "failures": [],
+  "results": [
+    {
+      "check": "master_exists",
+      "status": "PASS",
+      "detail": "/mnt/data/ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE.zip"
+    },
+    {
+      "check": "master_sha256",
+      "status": "PASS",
+      "detail": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2"
+    },
+    {
+      "check": "required_runtime:living_runtime.py",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "required_runtime:domain_integration.py",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "required_runtime:commerce_system.py",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "required_runtime:combat_system.py",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "required_runtime:mobility_biology.py",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "required_runtime:society_labor.py",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "required_runtime:system_health.py",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "required_runtime:integrated_engine.py",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "required_runtime:world_systems.py",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "required_runtime:world_orchestrator.py",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "runtime_compile",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "check": "no_forbidden_artifacts",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "check": "master_not_bundled",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "check": "validation_summary_present",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "validation_summary_pass",
+      "status": "PASS",
+      "detail": "PASS"
+    },
+    {
+      "check": "python_745_pass",
+      "status": "PASS",
+      "detail": {
+        "passed": 745,
+        "failed": 0,
+        "status": "PASS"
+      }
+    },
+    {
+      "check": "resolution_matrix_present",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "no_open_p0_p1",
+      "status": "PASS",
+      "detail": {
+        "closed": 14,
+        "closed_core": 5,
+        "partial_non_blocking": 1,
+        "authorial_spec_required": 1,
+        "author_review": 1,
+        "open_p0_p1": 0
+      }
+    },
+    {
+      "check": "resolution_gate_pass",
+      "status": "PASS",
+      "detail": "PASS"
+    },
+    {
+      "check": "readme_v1_1_present",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "runtime_noncanon_markers",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "read_only_markers",
+      "status": "PASS",
+      "detail": null
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "functional": {
+    "failed": 0,
+    "passed": 18,
+    "status": "PASS",
+    "tests": 18
+  },
+  "generated_at": "2026-08-18T21:26:48.175587+00:00",
+  "persistence": {
+    "failed": 0,
+    "passed": 1,
+    "status": "PASS",
+    "tests": 1
+  },
+  "record_id": "ARPG-STAGE10-UNIT-REPORT-V1.1.0",
+  "stage": "10/23",
+  "status": "PASS",
+  "version": "V1.1.0"
+}

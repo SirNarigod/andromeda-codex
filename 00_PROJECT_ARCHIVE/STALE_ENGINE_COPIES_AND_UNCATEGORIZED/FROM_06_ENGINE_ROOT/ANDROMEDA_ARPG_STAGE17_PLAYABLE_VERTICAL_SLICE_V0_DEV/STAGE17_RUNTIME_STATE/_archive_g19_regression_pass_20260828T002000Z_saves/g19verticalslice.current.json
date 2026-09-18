@@ -1,0 +1,27 @@
+{
+  "authority": "ARPG_STAGE15_SAVE_PERSISTENCE_DEATH_RECOVERY",
+  "created_unix": 1787886271,
+  "db_sha256": "00661004a4bddae76fcfc547de112baee390c1255f85cbc9e4f47b568118e149",
+  "fingerprint": {
+    "arpg_character_state": 1,
+    "arpg_item_instances": 6,
+    "arpg_item_inventories": 11,
+    "arpg_player_profiles": 1,
+    "arpg_world_profile_state": 1,
+    "clocks": 1,
+    "worlds": 1
+  },
+  "generation": "current",
+  "kind": "MANUAL",
+  "master_release_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+  "master_version": "V2.0.1",
+  "offline_policy": {
+    "cap_seconds": 21600,
+    "mode": "EXPLICIT_CATCHUP_ONLY"
+  },
+  "seed": 160800,
+  "slot_ref": "g19verticalslice",
+  "version": "V1.6.0",
+  "world_instance_id": "rt:world:877f9fa0-9d5d-47e0-8694-3b3812cdd099",
+  "world_status": "ACTIVE"
+}

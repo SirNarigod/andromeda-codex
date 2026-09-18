@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-PLAYER-PROGRESSION-PROFILE-DEV-V1.0",
+  "title": "Progressão de Jogador — liga o jogador ao sistema de 4 classes/skills do MAR",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "canonical_status": "GAMEPLAY_DERIVED_DEV",
+
+  "compatibility_note": "ARPG_SKILL_CORE_CONTRACT_V0_7_0.json (02_REGRAS/.../ARPG_STAGE06/) foi escrito sob class_model='EMERGENT_FROM_PLAYER_CHOICES_NO_FIXED_CLASS_LABEL'. Esse rótulo já foi substituído pela decisão autoral de classes fixas (ARPG_AUTHORIAL_DECISIONS_V0_2_0.json, fase 3 desta sessão: Nativos/Soldados/Androids/Magos). Este arquivo assume as 4 classes fixas como fonte de verdade para o jogador e NÃO edita o contrato de engine (fora do escopo de conteúdo/lore) — apenas documenta a incompatibilidade de rótulo para quem for atualizar o Stage06 futuramente.",
+
+  "engine_slots_reused": {
+    "source": "ARPG_SKILL_CORE_CONTRACT_V0_7_0.json",
+    "active_slots": 8,
+    "passive_slots": 4,
+    "skill_ranks": "1_TO_10_BY_USE_MASTERY (10 pontos por uso bem-sucedido, 2 por prática passiva) — mecânica reaproveitada sem redefinição."
+  },
+
+  "class_progression": [
+    {
+      "class_name": "Nativos",
+      "passive_pool": ["NAT-P-COURACA", "NAT-P-INSTINTO", "NAT-P-FOLEGO", "NAT-P-PELE"],
+      "active_pool": ["NAT-A-INVESTIDA", "NAT-A-FURIA", "NAT-A-CATAPLASMA", "NAT-A-SALTO"],
+      "slot_usage_note": "4/4 passive slots preenchidos, 4/8 active slots preenchidos (4 vagos para expansão futura).",
+      "weapon_access_ref": "MAR_CLASS_ARMAMENT_MATRIX_DEV_V1_0.json#Nativos (16 armas, WPN-LAM-001..008 + WPN-IMP-001..008)"
+    },
+    {
+      "class_name": "Soldados",
+      "passive_pool": ["SOL-P-COLETE", "SOL-P-FOLEGO", "SOL-P-MIRA"],
+      "active_pool": ["SOL-A-AVANCO", "SOL-A-CURA", "SOL-A-RAJADA", "SOL-A-REFORCO"],
+      "slot_usage_note": "3/4 passive slots preenchidos (Soldados tem só 3 passivas únicas no roster — SOL-P-FOLEGO é compartilhada entre os papéis MÉDICO e FRANCO — 1 slot passivo vago), 4/8 active slots preenchidos.",
+      "weapon_access_ref": "MAR_CLASS_ARMAMENT_MATRIX_DEV_V1_0.json#Soldados (32 armas, 8 famílias de fogo/tático)"
+    },
+    {
+      "class_name": "Androids",
+      "passive_pool": ["AND-P-AUTORREPARO", "AND-P-BLINDAGEM", "AND-P-VENTILACAO", "AND-P-PLACAS"],
+      "active_pool": ["AND-A-SOBRECARGA", "AND-A-PICO", "AND-A-REPARO", "AND-A-SALTO"],
+      "slot_usage_note": "4/4 passive slots preenchidos, 4/8 active slots preenchidos (4 vagos para expansão futura).",
+      "weapon_access_ref": "MAR_CLASS_ARMAMENT_MATRIX_DEV_V1_0.json#Androids (16 armas, WPN-TEC-001..016)"
+    },
+    {
+      "class_name": "Magos",
+      "passive_pool": ["MAG-P-FLUXO", "MAG-P-RESILIENCIA", "MAG-P-CANAL", "MAG-P-PELE"],
+      "active_pool": ["MAG-A-IMPULSO", "MAG-A-CONVERGENCIA", "MAG-A-BENCAO", "MAG-A-PASSO"],
+      "slot_usage_note": "4/4 passive slots preenchidos, 4/8 active slots preenchidos (4 vagos para expansão futura).",
+      "weapon_access_ref": "MAR_CLASS_ARMAMENT_MATRIX_DEV_V1_0.json#Magos (16 armas, WPN-MAG-001..016)"
+    }
+  ],
+
+  "r2_guard": "Nenhum skill_id/weapon_id novo é criado aqui — todos já existem nos 4 MAR_NPC_ROSTER_*.json e na matriz de armamento. Este arquivo só é a camada que faltava ligando o JOGADOR (antes só o perfil inicial de Varga) ao sistema de classe/skill/arma já construído para os NPCs."
+}

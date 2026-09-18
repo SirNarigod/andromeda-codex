@@ -1,0 +1,38 @@
+{
+  "est_id": "EST-051",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Mercado dos Terraços",
+  "building_type": "COMERCIAL",
+  "parent_locality": "LOC-014-003",
+  "parent_subregion": "SUB-014-003",
+  "parent_political_unit": "TER-014",
+  "function": "Venda da produção agrícola cultivada nos terraços de cinza vulcânica.",
+  "economic_role": {
+    "is_vendor": true,
+    "sells": [
+      "produção agrícola dos Campos de Cinza (qualitativo, sem código formal de zona agrícola)"
+    ],
+    "produces": [],
+    "regulation_factor": 0.4
+  },
+  "capacity": {
+    "jobs": 4,
+    "residents": 2
+  },
+  "professions_linked": [
+    "JOB-002 Preparador e conservador de alimento"
+  ],
+  "notable_link": "TER-014 Cadeia de Cinzas (fase 44/45); solo vulcânico fértil, sem AGZ-XXX formal (as 8 zonas já são um fato fixo do cânone)",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "MADEIRA_E_ALVENARIA",
+    "flammability": "ALTA",
+    "recovery_days": 7
+  }
+}

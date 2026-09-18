@@ -1,0 +1,59 @@
+{
+  "record_id": "STAGE14-CORRUPTION-MATRIX-V1.0",
+  "status": "PASS",
+  "cases": 10,
+  "detected": 10,
+  "missed": 0,
+  "results": [
+    {
+      "case": "entity_state_hash",
+      "status": "PASS",
+      "detail": "DETECTED"
+    },
+    {
+      "case": "event_hash",
+      "status": "PASS",
+      "detail": "DETECTED"
+    },
+    {
+      "case": "causal_ledger_hash",
+      "status": "PASS",
+      "detail": "DETECTED"
+    },
+    {
+      "case": "social_relationship_hash",
+      "status": "PASS",
+      "detail": "DETECTED"
+    },
+    {
+      "case": "ecology_population_hash",
+      "status": "PASS",
+      "detail": "DETECTED"
+    },
+    {
+      "case": "world_system_binding_hash",
+      "status": "PASS",
+      "detail": "DETECTED"
+    },
+    {
+      "case": "orchestrator_run_hash",
+      "status": "PASS",
+      "detail": "DETECTED"
+    },
+    {
+      "case": "long_horizon_segment_hash",
+      "status": "PASS",
+      "detail": "DETECTED"
+    },
+    {
+      "case": "llm_profile_hash",
+      "status": "PASS",
+      "detail": "DETECTED"
+    },
+    {
+      "case": "atlas_state_hash",
+      "status": "PASS",
+      "detail": "DETECTED"
+    }
+  ]
+}

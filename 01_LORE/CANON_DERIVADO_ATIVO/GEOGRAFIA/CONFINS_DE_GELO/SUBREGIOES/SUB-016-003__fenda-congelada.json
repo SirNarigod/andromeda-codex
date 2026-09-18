@@ -1,0 +1,42 @@
+{
+  "record_id": "SUB-016-003",
+  "record_kind": "DERIVED_SUBREGION_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Fenda Congelada",
+  "parent_political_unit": "TER-016",
+  "provenance": {
+    "approval": "AUTHORIAL_DECISION_FASE_49",
+    "r2_anchors": [],
+    "compatibility": "Territorio 100% novo por decisao explicita do autor (fase 49)."
+  },
+  "function": "Rede de fendas profundas na geleira, rota perigosa mas mais curta entre assentamentos.",
+  "locality_references": [
+    "LOC-016-003"
+  ],
+  "permitted_catalog_links": {
+    "npc_roles": [],
+    "professions": [
+      "guarda de vigia"
+    ],
+    "encounters": [],
+    "resources": []
+  },
+  "local_conflicts": [
+    "atalho arriscado versus rota longa e segura"
+  ],
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY_BEYOND_FASE_49_GATE",
+    "NO_AUTOMATIC_KENUA_SCENE",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_FIXED_BORDER_COORDINATE"
+  ],
+  "story_generators": [
+    "Uma crise em Fenda Congelada testa a resistencia da comunidade ao isolamento glacial."
+  ],
+  "root_corruption": {
+    "status": "CORROMPIDA",
+    "intensity": "BAIXA",
+    "since_note": "Aplicado pelo portao autoral fase 57 (STELLAR_ROOT_CORRUPTION_GATE_DEV_V1_0.json) - fato do mundo em 842 EC, fase Alimentacao Silenciosa->Corrupcao da Raiz Profunda (COR-001)."
+  }
+}

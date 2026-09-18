@@ -1,0 +1,19 @@
+{
+  "record_id": "STAGE12-FUZZ-STRESS-V1.0",
+  "status": "PASS",
+  "same_request_callers": 64,
+  "same_request_converged": true,
+  "unique_requests_attempted": 1200,
+  "unique_results": 1200,
+  "guard_pass": 720,
+  "guard_rejected": 480,
+  "errors": [],
+  "persisted_requests": 1201,
+  "persisted_turns": 1201,
+  "intent_executions": 0,
+  "gateway_integrity": "PASS",
+  "runtime_integrity": "PASS",
+  "social_integrity": "PASS",
+  "sqlite_integrity": "ok",
+  "foreign_key_failures": 0
+}

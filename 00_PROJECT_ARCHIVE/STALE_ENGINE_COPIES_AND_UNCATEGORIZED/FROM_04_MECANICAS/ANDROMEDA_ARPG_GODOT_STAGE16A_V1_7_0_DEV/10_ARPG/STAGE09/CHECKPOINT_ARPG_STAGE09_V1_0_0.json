@@ -1,0 +1,59 @@
+{
+  "backup_authorized": true,
+  "benchmark_seed_90909": {
+    "by_activity": {
+      "AGRICULTURE": 11,
+      "FISHING": 2,
+      "FORAGING": 24,
+      "HUNTING": 63,
+      "LOGGING": 11,
+      "MINING": 116
+    },
+    "note": "seed-dependent benchmark, not a universal fixed content count",
+    "resource_nodes": 227
+  },
+  "candidate_restore": "PASS",
+  "canon_mutations": 0,
+  "checkpoint_authorized": true,
+  "closed_at": "2026-08-18T20:53:47.737860+00:00",
+  "generated_at": "2026-08-18T20:47:28.987657+00:00",
+  "master_release_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+  "next_stage": 10,
+  "open_blockers": 0,
+  "open_corrections": 0,
+  "parent_checkpoint_sha256": "76e4956c81d9991349b7ee9c9daa834d472b2e024637153515f9d16a59cbdd4f",
+  "profession_snapshots": 91,
+  "project": "ANDRÔMEDA CÓDEX",
+  "record_id": "CHECKPOINT-ARPG-STAGE09-V1.0.0",
+  "release_authorized": false,
+  "result": "ARPG_STAGE09_GATHERING_WORK_PASS",
+  "stage": "09/23",
+  "stage_name": "GATHERING / HUNTING / FISHING / WORK",
+  "status": "PASS",
+  "tests": {
+    "country_v15": "24/24 PASS",
+    "master": "393/393 PASS",
+    "recursive_health": "PASS through ARPG V0.2-V0.9",
+    "stage05_regression": "21/21 functional + 1/1 persistence + 68/68 validation + 62/62 stress PASS",
+    "stage06_regression": "33/33 validation + 33/33 stress PASS",
+    "stage07_regression": "30/30 validation + 31/31 stress PASS",
+    "stage08_regression": "20/20 unit + 47/47 validation + 15/15 stress PASS",
+    "stress": {
+      "failed": 0,
+      "operations": 18,
+      "passed": 59,
+      "profiles": 3,
+      "replays": 18
+    },
+    "unit": {
+      "failed": 0,
+      "note": "19 functional + 1 persistence executed isolated after cumulative harness timeout",
+      "passed": 20
+    },
+    "validation": {
+      "failed": 0,
+      "passed": 40
+    }
+  },
+  "version": "V1.0.0"
+}

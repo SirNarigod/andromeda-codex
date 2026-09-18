@@ -1,0 +1,44 @@
+{
+  "record_id": "ARPG-STAGE03-CORRECTION-LEDGER-V0.4.0",
+  "stage": "03/18",
+  "corrections": [
+    {
+      "id": "ARPG-S03-001",
+      "finding": "No dedicated deterministic ARPG combat authority existed between the Stage02 player CharacterCore and Living NPC state.",
+      "resolution": "Added ARPGCombatCore with player-health delegation to CharacterCore, enemy gameplay overlays and isolated combat-event persistence.",
+      "status": "FIXED"
+    },
+    {
+      "id": "ARPG-S03-002",
+      "finding": "Initial unit harness selected an NPC explicitly marked combat_targetable=false and expected damage.",
+      "resolution": "Kept the runtime guard; corrected the harness to select a valid combat target. TARGET_NOT_COMBAT_TARGETABLE remains enforced.",
+      "status": "FIXED_HARNESS"
+    },
+    {
+      "id": "ARPG-S03-003",
+      "finding": "Stage03 initially replaced the exact legacy implementation_stage string used by Stage01 consumers.",
+      "resolution": "Restored the legacy field unchanged and added combat_activation_policy as a separate backward-compatible field.",
+      "status": "FIXED"
+    },
+    {
+      "id": "ARPG-S03-004",
+      "finding": "Expanded validation expected an enemy counterattack while that enemy was still under hit-recovery/stagger.",
+      "resolution": "Advanced authoritative combat time before the counterattack; retained stagger action blocking. Validation reran to 67/67 PASS.",
+      "status": "FIXED_HARNESS"
+    },
+    {
+      "id": "ARPG-S03-005",
+      "finding": "Initial grouped Stage03 stress execution exceeded the harness execution window.",
+      "resolution": "Reran the stress suite independently while preserving multiple profiles/targets, replay, status ticks and persistence invariants; completed 17/17 PASS.",
+      "status": "FIXED_HARNESS"
+    },
+    {
+      "id": "ARPG-S03-006",
+      "finding": "Grouped V1.5 legacy regression runs exceeded the execution window because each case rebuilds a country-scale world.",
+      "resolution": "Executed the four critical V1.5 suites by isolated cases; aggregate result 24/24 PASS. Grouped timeouts remain recorded as inconclusive rather than PASS.",
+      "status": "FIXED_HARNESS"
+    }
+  ],
+  "open_corrections": 0,
+  "status": "PASS"
+}

@@ -1,0 +1,22 @@
+{
+  "build": "V0.1.21 DEV",
+  "baseline": "V0.1.20 DEV — author approved",
+  "status": "STATIC_PASS_RUNTIME_PENDING",
+  "checks": 27,
+  "passed": 27,
+  "failed": 0,
+  "control_contract": {
+    "left_empty_ground": "MOVE",
+    "left_selectable_object": "SELECT_AND_STOP_NO_MOVE",
+    "left_scene_transition": "APPROACH_AND_TRANSITION",
+    "space_hostile_selected": "ATTACK_SELECTED",
+    "space_non_hostile_selected": "NO_ATTACK_FEEDBACK",
+    "right_click": "CONTEXTUAL_ACTION"
+  },
+  "selectable_groups": [
+    "interactable",
+    "wildlife",
+    "hoverable"
+  ],
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1"
+}

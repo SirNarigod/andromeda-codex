@@ -1,0 +1,63 @@
+{
+  "art_dependency": "NONE",
+  "authority": "ARPG_STAGE15_SAVE_PERSISTENCE_DEATH_RECOVERY",
+  "canon_policy": "MASTER_V2.0.1_READ_ONLY_ZERO_MUTATIONS",
+  "death_recovery": {
+    "health_ratio": 0.5,
+    "instance_context_after": "OVERWORLD",
+    "item_loss": false,
+    "post_death_autosave": "BEST_EFFORT",
+    "resource_ratio": 0.35,
+    "respawn": "LAST_SAFE_WAYPOINT",
+    "xp_loss": false
+  },
+  "godot_required": false,
+  "integrity": {
+    "auto_repair_corrupt_bytes": false,
+    "critical_table_fingerprint": true,
+    "foreign_key_check": true,
+    "master_release_binding": true,
+    "rollback_only_to_verified_previous": true,
+    "sha256": true,
+    "sqlite_integrity_check": true
+  },
+  "offline": {
+    "cap_seconds": 21600,
+    "mode": "EXPLICIT_CATCHUP_ONLY",
+    "silent_time_skip": false
+  },
+  "record_id": "ARPG-SAVE-RECOVERY-CONTRACT-V1.6.0",
+  "resume": {
+    "arpg_cores_attached_in_order": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "global_health_runs": 1,
+    "living_rehydrated_once": true,
+    "strategy": "LINEAR_REHYDRATION"
+  },
+  "save_slots": {
+    "atomic_promotion": true,
+    "generations": [
+      "current",
+      "previous"
+    ],
+    "max_slots": 8,
+    "snapshot": "SQLITE_FULL_DATABASE_BACKUP"
+  },
+  "stage": "15/23",
+  "status": "PASS",
+  "version": "V1.6.0"
+}

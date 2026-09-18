@@ -1,0 +1,22 @@
+{
+  "record_id": "V15-DETERMINISM-BATCH",
+  "start": 8,
+  "pairs": 2,
+  "matched": 2,
+  "failed_seeds": [],
+  "rows": [
+    {
+      "seed": 16008,
+      "hash_a": "b5963e23092a85cae4f18986e22ae981064772621203611350b7bbbe72aecf36",
+      "hash_b": "b5963e23092a85cae4f18986e22ae981064772621203611350b7bbbe72aecf36",
+      "match": true
+    },
+    {
+      "seed": 16009,
+      "hash_a": "af2f2532f1b6100d5da266655df6090b526f7c432889705e85cec2b3b6b5da9a",
+      "hash_b": "af2f2532f1b6100d5da266655df6090b526f7c432889705e85cec2b3b6b5da9a",
+      "match": true
+    }
+  ],
+  "status": "PASS"
+}

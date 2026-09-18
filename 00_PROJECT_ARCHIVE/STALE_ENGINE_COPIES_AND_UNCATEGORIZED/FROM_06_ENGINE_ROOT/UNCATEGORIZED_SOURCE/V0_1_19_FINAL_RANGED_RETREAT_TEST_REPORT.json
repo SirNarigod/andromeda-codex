@@ -1,0 +1,41 @@
+{
+  "build": "V0.1.19 DEV",
+  "baseline": "V0.1.18 DEV — runtime PASS informado pelo autor",
+  "status": "STATIC_PASS_RUNTIME_PENDING",
+  "checks": 23,
+  "passed": 23,
+  "failed": 0,
+  "details": {
+    "project_v0_1_19": true,
+    "hud_v0_1_19": true,
+    "global_cooldown_2s": true,
+    "retreat_time_preserved": true,
+    "settle_time_preserved": true,
+    "retreat_source_state": true,
+    "damage_retreat_trigger_api": true,
+    "damage_reaction_update": true,
+    "damage_event_has_source_node": true,
+    "damage_event_triggers_retreat": true,
+    "wildlife_passes_self_as_source": true,
+    "no_proximity_danger_helper": true,
+    "no_proximity_retreat_check": true,
+    "no_projectile_retreat_trigger": true,
+    "combat_waits_during_damage_reaction": true,
+    "retreat_happens_on_next_physics_update": true,
+    "ranged_projectile_impact_preserved": true,
+    "aggro_preserved": true,
+    "tiers_preserved": true,
+    "inventory_selection_preserved": true,
+    "left_transition_preserved": true,
+    "right_click_preserved": true,
+    "gate_v0_1_19": true
+  },
+  "final_ranged_rule": {
+    "proximity_retreat": false,
+    "damage_received_is_only_retreat_trigger": true,
+    "retreat_time_s": 0.32,
+    "settle_time_s": 0.18,
+    "global_attack_cooldown_s": 2.0
+  },
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1"
+}

@@ -1,0 +1,17 @@
+{
+  "record_id": "ARPG-STAGE03-VALIDATION-V0.4.0",
+  "stage": "03/18",
+  "checks": 67,
+  "passed": 67,
+  "failed": 0,
+  "status": "PASS",
+  "failures": [],
+  "metrics": {
+    "combat_events": 9,
+    "enemy_states": 3,
+    "overlays": 5
+  },
+  "canon_mutations": 0,
+  "player_health_authority": "CHARACTER_CORE_ONLY",
+  "art_pipeline": "LOCKED"
+}

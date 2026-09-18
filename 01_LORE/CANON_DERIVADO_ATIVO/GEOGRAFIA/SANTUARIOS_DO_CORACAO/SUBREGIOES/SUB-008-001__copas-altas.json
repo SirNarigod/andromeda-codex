@@ -1,0 +1,11 @@
+{
+  "record_id": "SUB-008-001", "record_kind": "DERIVED_SUBREGION_PROFILE", "authority": "CANON_DERIVADO_ATIVO", "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Copas Altas", "parent_political_unit": "TER-008",
+  "provenance": {"approval": "GAMEPLAY_DERIVED_DEV_SOURCE", "r2_anchors": ["TER-008", "genes-arvath"], "compatibility": "Camada administrativa e narrativa local; não cria fronteira, cidade, soberania ou nova autoridade."},
+  "function": "Assentamentos suspensos nas copas das árvores gigantes, moradia dos Povos das Copas.",
+  "locality_references": ["LOC-008-001 Santuário das Copas"],
+  "permitted_catalog_links": {"npc_roles": ["classe:Nativos"], "professions": [], "encounters": [], "resources": []},
+  "local_conflicts": ["tradição de altura versus necessidade de contato com forasteiros de baixo"],
+  "prohibitions": ["NO_NEW_SOVEREIGNTY", "NO_AUTOMATIC_KENUA_SCENE", "NO_R2_EPISODE_REWRITE", "NO_FIXED_BORDER_COORDINATE"],
+  "story_generators": ["Uma doença nas árvores gigantes ameaça um santuário inteiro e exige ajuda externa."]
+}

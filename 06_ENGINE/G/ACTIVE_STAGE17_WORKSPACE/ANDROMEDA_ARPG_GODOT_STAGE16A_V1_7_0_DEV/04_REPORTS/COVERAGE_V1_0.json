@@ -1,0 +1,20 @@
+{
+  "record_id": "LIVING-SIM-ETAPA-08-COVERAGE-V1.0",
+  "scope": "STAGE08_OBJECT_ENVIRONMENT_MODULE_WITH_73_STAGE08_TESTS",
+  "statements": 335,
+  "covered_lines": 322,
+  "missing_lines": 13,
+  "percent": 96.12,
+  "files": {
+    "01_RUNTIME/object_environment.py": {
+      "statements": 335,
+      "covered_lines": 322,
+      "missing_lines": 13,
+      "percent": 96.12
+    }
+  },
+  "inherited_stage07_global_coverage_percent": 88.62,
+  "full_stage08_global_coverage_recomputed": false,
+  "reason": "Full accumulated coverage instrumentation exceeded operational execution window; unit/regression validation executed separately without coverage instrumentation.",
+  "status": "PASS"
+}

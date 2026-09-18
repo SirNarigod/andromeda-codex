@@ -1,0 +1,23 @@
+{
+  "record_id": "ARPG-STAGE-PLAN-V2.1.0-DEV",
+  "project": "ANDROMEDA CODEX ARPG",
+  "stages_total": 23,
+  "completed_through": 15,
+  "current": "16",
+  "stage16": {
+    "16A": {
+      "status": "CLOSED_PRE_GODOT_READY_FOR_HANDOFF_WATER_BAG_SURVIVAL_REVISION",
+      "checkpoint": "V0.8.0",
+      "checks": 209,
+      "stress": 20
+    },
+    "16B": {
+      "status": "PENDING_CODEX_LOCAL_GODOT",
+      "acceptance_gates": 28,
+      "start_here": "CODEX_GODOT_HANDOFF_START_HERE_V0_8_0.md"
+    }
+  },
+  "backup_stage16_authorized": false,
+  "art_gate": "DEFERRED",
+  "next_after_stage16_pass": "17"
+}

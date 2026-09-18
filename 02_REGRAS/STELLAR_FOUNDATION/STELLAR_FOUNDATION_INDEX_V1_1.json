@@ -1,0 +1,23 @@
+{
+  "record_id": "STELLAR_FOUNDATION_INDEX_V1_1",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.1",
+  "status": "ACTIVE_R2_REBASED_AUTHORIAL_INDEX",
+  "supersedes": "STELLAR_FOUNDATION_INDEX_V1_0",
+  "authority": {"r2": "PRIMARY_LORE_ORIGIN", "scope": "DISCOVERY_AND_PRECEDENCE", "master_v2_0_1": "READ_ONLY_TECHNICAL_EXTENSION", "living_sim_engine_v1_0_0": "READ_ONLY_TECHNICAL_EXTENSION"},
+  "dependencies": ["../../01_LORE/STELLAR_REBASE_R2/R2_SOURCE_AUTHORITY_INDEX_V1_0.json", "../STELLAR_REBASE_R2/R2_REBASE_DECISION_LEDGER_V1_0.json"],
+  "invariants": ["ACTIVE_FOUNDATION_NEVER_RETCONS_R2", "V1_0_RECORDS_ARE_HISTORICAL_NOT_DELETED", "UNREVIEWED_DOMAIN_LAWS_REMAIN_PENDING_R2_COMPATIBILITY_REVIEW"],
+  "precedence": ["R2_LORE_ORIGIN", "AUTHORIAL_APPROVED_R2_COMPATIBLE_DERIVATION", "MASTER_V2_0_1_TECHNICAL_EXTENSION", "LIVING_SIM_ENGINE_TECHNICAL_EXTENSION", "RUNTIME_STATE", "LLM_OR_PLAYER_PROPOSAL"],
+  "active_contracts": [
+    {"id": "STELLAR_COSMOLOGY_CANON_V1_1", "path": "01_LORE/STELLAR_FOUNDATION/STELLAR_COSMOLOGY_CANON_V1_1.json", "role": "COSMOLOGICAL_TRUTH"},
+    {"id": "STELLAR_CANON_CONSTITUTION_V1_1", "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_CANON_CONSTITUTION_V1_1.json", "role": "GOVERNANCE"},
+    {"id": "STELLAR_OPEN_QUESTIONS_REGISTER_V1_1", "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_OPEN_QUESTIONS_REGISTER_V1_1.json", "role": "MYSTERY_BOUNDARIES"},
+    {"id": "STELLAR_LORE_PROPOSAL_GUARD_V1_1", "path": "02_REGRAS/STELLAR_FOUNDATION/STELLAR_LORE_PROPOSAL_GUARD_V1_1.json", "role": "PROMOTION_GATE"}
+  ],
+  "pending_review_contracts": ["STELLAR_CAUSALITY_LAW_V1_0", "STELLAR_LIFE_DEATH_REBIRTH_LAW_V1_0", "STELLAR_INFORMATION_MEMORY_LAW_V1_0", "STELLAR_MAGIC_TECHNOLOGY_LAW_V1_0", "STELLAR_AUTONOMY_RESPONSIBILITY_LAW_V1_0", "STELLAR_SOVEREIGNTY_TERRITORY_LAW_V1_0", "STELLAR_ECONOMY_ECOLOGY_TIME_LAW_V1_0", "STELLAR_PROGRESSION_QUEST_CONSEQUENCE_LAW_V1_0"],
+  "historical_index": "STELLAR_FOUNDATION_INDEX_V1_0.json",
+  "prohibitions": ["NO_UNINDEXED_ACTIVE_AUTHORIAL_CONTRACT", "NO_UNSOURCED_KENUA_RETCON", "NO_AMADON_PRE_S01E08_REVEAL", "NO_DELETION_WITHOUT_LEDGER_APPROVAL"],
+  "simulation_effects": ["Resolve active authorial contracts through this index after verifying the R2 source authority.", "Keep pending-review contracts out of automatic canon promotion."],
+  "allowed_states": ["ACTIVE", "PENDING_R2_REVIEW", "HISTORICAL", "SUPERSEDED"],
+  "story_generators": ["Um contrato pendente torna-se fonte de uma descoberta quando sua compatibilidade é demonstrada.", "Uma versão histórica registra uma visão que uma facção ainda defende.", "Um limite de revelação força personagens a interpretar sinais incompletos."]
+}

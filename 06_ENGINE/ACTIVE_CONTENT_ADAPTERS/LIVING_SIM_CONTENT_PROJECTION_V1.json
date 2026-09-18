@@ -1,0 +1,63 @@
+{
+  "record_id": "LIVING_SIM_CONTENT_PROJECTION_V1",
+  "status": "ACTIVE_ENGINE_NEUTRAL_READ_ONLY",
+  "authority": "R2_AND_APPROVED_DERIVATION_READ_ONLY",
+  "routing_registry": "01_LORE/CONTENT_ROUTING_REGISTRY_V1.json",
+  "layers": {
+    "LIVE_ENTITY_STATE": [
+      "PER",
+      "LID"
+    ],
+    "LIVE_ROUTES": [
+      "TER",
+      "CIT"
+    ],
+    "LIVE_ECONOMY": [
+      "BIO",
+      "CRI",
+      "FLO",
+      "TEC"
+    ],
+    "LIVE_POPULATION": [
+      "TER",
+      "CIT"
+    ],
+    "LIVE_FACTIONS": [
+      "FAC",
+      "CUL",
+      "TER"
+    ],
+    "LIVE_ENVIRONMENT": [
+      "BIO",
+      "CIT",
+      "ART"
+    ],
+    "LIVE_EVENTS": [
+      "HIS",
+      "EPI"
+    ],
+    "LIVE_ECOLOGY": [
+      "BIO",
+      "CRI",
+      "FLO",
+      "COR"
+    ],
+    "LIVE_SOCIAL": [
+      "PER",
+      "LID",
+      "FAC"
+    ],
+    "LIVE_CAUSAL": [
+      "HIS",
+      "EPI"
+    ]
+  },
+  "prohibitions": [
+    "NO_CANON_WRITE",
+    "NO_R2_EPISODE_MUTATION",
+    "NO_SOVEREIGNTY_MUTATION",
+    "NO_AUTHORIAL_DEATH_RESOLUTION",
+    "NO_AMADON_PRE_S01E08",
+    "NO_IRREVERSIBLE_ROOT_TRANSITION"
+  ]
+}

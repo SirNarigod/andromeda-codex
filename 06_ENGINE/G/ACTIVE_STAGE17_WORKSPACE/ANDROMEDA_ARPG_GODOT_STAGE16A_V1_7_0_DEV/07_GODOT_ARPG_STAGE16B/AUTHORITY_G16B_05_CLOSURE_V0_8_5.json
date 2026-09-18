@@ -1,0 +1,111 @@
+{
+  "record_id": "ANDROMEDA-STAGE16B-G16B-05-CLOSURE-V0.8.5",
+  "captured_at": "2026-08-23T14:10:00-03:00",
+  "gate": "G16B-05",
+  "status": "PASS",
+  "previous_status": "PARTIAL_EVIDENCE",
+  "requirement": "Tree/rock/ore/flora/agriculture/hunt/fish/enemy physical output appears as Ground Loot before inventory.",
+
+  "work_item_1_enemy_clause": {
+    "scope": "AuthorityCombatRuntimeGate only, as authorised",
+    "loot_rule_changed": false,
+    "non_lethal_case_preserved": "NON_LETHAL_NO_PHYSICAL_OUTPUT and NO_GDSCRIPT_ENEMY_LOOT_AUTHORITY were kept and still pass. The gate now proves both directions of the same rule.",
+    "new_checks": [
+      {"check": "ENEMY_DEFEAT_AUTHORITATIVE_PASS", "proves": "real REQUEST_ATTACK commands through the authority until the server itself reports the defeat"},
+      {"check": "ENEMY_PHYSICAL_OUTPUT_CREATED", "proves": "source_kind ENEMY, output_form GROUND_LOOT"},
+      {"check": "ENEMY_DROP_STABLE_TARGET_REF", "proves": "DROP-S16A- identity consistent between the result and the drop payload"},
+      {"check": "ENEMY_DROP_INITIAL_UNSETTLED", "proves": "settled == false at creation, read from the authoritative creation payload so there is no race with the client settle"},
+      {"check": "ENEMY_OUTPUT_PHYSICAL_WORLD_FIRST", "proves": "physical_world_first true and direct_to_inventory false"},
+      {"check": "ENEMY_NO_INVENTORY_GRANT_BEFORE_PICKUP", "proves": "the defeat alone grants nothing"},
+      {"check": "ENEMY_GROUND_LOOT_CLIENT_PROJECTED", "proves": "the drop is projected as a Ground Loot node in real Godot"},
+      {"check": "ENEMY_DROP_AUTHORITATIVE_SETTLED", "proves": "the authority confirms the settle in a snapshot"},
+      {"check": "ENEMY_PICKUP_CORE_PASS", "proves": "authoritative pickup of the same target_ref"},
+      {"check": "ENEMY_INVENTORY_CHANGED_ONLY_AFTER_AUTHORITY", "proves": "quantity rises by the authoritative amount only after the pickup, counted through inventory_projection.routing so an equipped Bag is followed"},
+      {"check": "ENEMY_PICKUP_CLIENT_PROJECTED_COLLECTED", "proves": "client state COLLECTED"},
+      {"check": "ENEMY_GROUND_LOOT_REMOVED_FROM_ACTIVE", "proves": "the drop leaves the active set"},
+      {"check": "ENEMY_PICKUP_REPLAY_SUPPRESSED", "proves": "replayed command_ref is suppressed"},
+      {"check": "ENEMY_PICKUP_REPLAY_NO_SECOND_GRANT", "proves": "no second grant"}
+    ]
+  },
+
+  "work_item_2_gathering_isolation": {
+    "scope": "AuthorityGatheringRuntimeGate only, as authorised",
+    "runtime_changed": false,
+    "interaction_range_unchanged": 1.25,
+    "gathering_rule_unchanged": true,
+    "resource_node_unchanged": true,
+    "root_cause": {
+      "summary": "Test-setup defect, not runtime. The gate built its distance scenario before the player node had finished its initial settle, so the node moved out from under the placement.",
+      "instrumented_trace": [
+        {"at": "BEFORE_PLACEMENT", "player": [-7.0, 0.0, 0.0], "tree": [-6.0, 0.0, 5.0], "distance_m": 5.099020},
+        {"at": "SAME_FRAME_AFTER_WRITE", "player": [-7.0, 0.0, 0.0], "tree": [-6.25, 0.0, 0.0], "distance_m": 0.750000},
+        {"at": "PHYSICS_FRAME_1", "player": [-7.0, 0.0, 0.0], "tree": [-6.25, 0.0, 0.0], "distance_m": 0.750000},
+        {"at": "PHYSICS_FRAME_2", "player": [-7.632804, 0.308608, 0.0], "tree": [-6.25, 0.0, 0.0], "distance_m": 1.416823},
+        {"at": "PHYSICS_FRAME_3", "player": [-7.770649, 0.305886, 0.0], "tree": [-6.25, 0.0, 0.0], "distance_m": 1.551109},
+        {"at": "AT_EVALUATION", "player": [-7.770649, 0.305886, 0.0], "tree": [-6.25, 0.0, 0.0], "distance_m": 1.551109, "interaction_range_m": 1.25}
+      ],
+      "who_moved": "The player node. The tree never moved after the write. The controller was still settling the node onto the terrain (Y rose 0 -> 0.3086) and drifting horizontally (X fell 0.633 then a further 0.138).",
+      "why_order_mattered": "Running GroundLoot first absorbed the settle, so by the time Gathering ran the node was already static. That is why the gate passed only in that order.",
+      "hypotheses_disproved": [
+        "Resource re-projection from the snapshot: the snapshot carries no position for a resource entry (position field empty); Godot owns a deterministic placeholder grid instead.",
+        "Physics fall of the resource: ResourceNode is a StaticBody3D and does not fall.",
+        "Interaction anchor offset: ResourceNode.interaction_anchor_world_position() returns global_position, and root/anchor coincided in the trace."
+      ]
+    },
+    "fix": "The gate waits for the player node to be stable for 20 consecutive physics frames before building the scenario, then asserts the resulting range against the contract.",
+    "new_precondition_checks": [
+      "GATHERING_PLAYER_INTERACTION_STATE_CLEAN",
+      "TREE_INITIAL_RANGE_WITHIN_CONTRACT"
+    ],
+    "order_independence": [
+      {"configuration": "Gathering isolated on a clean world", "checks": 77, "passed": 77, "failed": 0},
+      {"configuration": "Gathering repeated immediately", "checks": 77, "passed": 77, "failed": 0},
+      {"configuration": "GroundLoot then Gathering", "checks": 77, "passed": 77, "failed": 0},
+      {"configuration": "Gathering then GroundLoot", "checks": 77, "passed": 77, "failed": 0},
+      {"configuration": "Combat then Gathering", "checks": 77, "passed": 77, "failed": 0}
+    ]
+  },
+
+  "promotion_criteria": {
+    "combat_isolated": {"checks": 89, "passed": 89, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+    "ground_loot_isolated": {"checks": 53, "passed": 53, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+    "gathering_isolated": {"checks": 77, "passed": 77, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+    "eight_sources_valid": {
+      "TREE": "gathering gate", "ROCK": "gathering gate", "ORE": "gathering gate",
+      "FLORA": "gathering gate", "AGRICULTURE": "gathering gate",
+      "HUNTING": "gathering gate", "FISHING": "gathering gate",
+      "ENEMY": "combat gate, new lethal sequence"
+    },
+    "backend_validation_v0_8_5": {"status": "PASS", "steps": 16, "python_tests": 341, "failures": 0},
+    "regression": {
+      "b03": {"checks": 357, "passed": 357, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+      "b04": {"checks": 156, "passed": 156, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+      "b11": {"checks": 343, "passed": 343, "failed": 0, "exit_code": 0, "stderr_bytes": 0}
+    },
+    "stage16a_checkpoint": {"entries": 724, "verified": 724, "changed": 0},
+    "master_v2_0_1_sha256": "6D9AC3CCE7DCF6A65FDCF73859C332A0211C1AF52D149077BEEF554BF7BBD0B2",
+    "runtime_or_canon_altered": false,
+    "godot_debugger": "0 errors / 0 warnings on every run"
+  },
+
+  "known_fragility_reported_not_fixed": {
+    "check": "REPLAY_WORLD_HP_NOT_REAPPLIED",
+    "gate": "AuthorityCombatRuntimeGate",
+    "observation": "Failed once (88/89) when Combat ran on a world already exercised by several GroundLoot and Gathering runs. It passed on every isolated clean-world run (89/89, three times).",
+    "assessment": "Pre-existing check, world-state sensitive, unrelated to the ENEMY clause and outside the authorised scope of this round. Reported rather than changed.",
+    "recommendation": "Treat like the other placement fragilities already fixed: make the check sample the authoritative HP around the replay instead of relying on ambient world state."
+  },
+
+  "matrix_position": {
+    "pass": 19,
+    "partial_evidence": 9,
+    "promoted_this_record": ["G16B-05"],
+    "partial_gates": ["G16B-09","G16B-17","G16B-18","G16B-19","G16B-24","G16B-25","G16B-26","G16B-27","G16B-28"],
+    "g16b_19": "PARTIAL_EVIDENCE - the integrated harness still injects fixtures and issues no authoritative command",
+    "stage16b_global_status": "NOT_PASS",
+    "checkpoint_final_created": false,
+    "final_backup_created": false,
+    "stage17_started": false,
+    "water_bag_ttl_block_started": false
+  }
+}

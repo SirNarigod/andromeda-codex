@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-006-003",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Salão Eletivo",
+  "parent_subregion": "SUB-006-003",
+  "parent_political_unit": "TER-006",
+  "function": "Recinto onde ocorrem as eleições da monarquia.",
+  "notable_link": "Câmara Eletiva (SUB-006-003)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-006-003",
+  "settlement_tier": "CIDADE",
+  "history": "Diferente da Plataforma Real, que muda fisicamente a cada monarca, o Salão Eletivo permanece deliberadamente idêntico eleição após eleição — os fundadores do sistema atual insistiram nisso como forma de garantir que o processo em si nunca fosse influenciado por vaidade de qualquer monarca de plantão, presente ou futuro. Nenhum reparo estrutural pode alterar a aparência original, só restaurar o que já existia.",
+  "sensory": "Fileiras de assentos de pedra clara se dispõem em semicírculo voltado pra uma tribuna central simples, sem ornamento que favoreça visualmente qualquer candidato sobre outro. O eco natural da câmara foi calculado pelos construtores originais pra amplificar igualmente qualquer voz vinda da tribuna, garantindo que nenhum candidato tenha vantagem acústica sobre outro por posição ou altura.",
+  "figures": [
+    {
+      "role": "Guardiã do Protocolo Eletivo",
+      "name": "Sela Votoclaro",
+      "note": "Memorizou cada regra do processo eleitoral e fiscaliza pessoalmente qualquer tentativa de vantagem indevida entre candidatos — é respeitada precisamente por não favorecer ninguém, nem mesmo Vaelora Aereth, que ela tratou com o mesmo rigor imparcial durante a própria eleição da monarca atual."
+    },
+    {
+      "role": "Candidato ambicioso",
+      "name": "Ferrin Altovoo",
+      "note": "Já anunciou intenção de concorrer na próxima eleição, ainda distante, e vem cultivando apoio de forma que Sela considera perigosamente próxima da linha entre campanha legítima e influência indevida antecipada."
+    }
+  ],
+  "hook": "Sela recebeu denúncia de que Ferrin está distribuindo favores a possíveis eleitores muito antes do período oficial de campanha permitir — ela precisa decidir se investiga formalmente agora, arriscando parecer estar perseguindo um candidato específico, ou espera o período oficial começar e talvez perder a chance de documentar a irregularidade a tempo.",
+  "detail": "O Salão só é aberto formalmente durante o período eleitoral em si — no resto do tempo, permanece trancado e vazio, mantido por uma pequena equipe de zeladores que respondem diretamente a Sela e a mais ninguém, nem mesmo à monarca reinante.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION"]
+}

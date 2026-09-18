@@ -1,0 +1,142 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-MEDICINE-CATALOG-DEV-V1.0",
+  "title": "Catálogo de medicamentos, ligado a Jardins Medicinais, Botica, Enfermaria e recursos já catalogados",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "canonical_status": "GAMEPLAY_DERIVED_DEV",
+  "supplements": [
+    "STELLAR_RESOURCE_CATALOG_V1_0.json",
+    "STELLAR_RUNE_CATALOG_DEV_V1_0.json"
+  ],
+  "r2_guard": "RES-009/RES-010 (BIOLOGICAL_HAZARD) usados aqui como insumo de antídoto contra o próprio efeito — uso legítimo de tratamento, não loot direto (respeita NO_HAZARD_AS_DEFAULT_LOOT já declarado em STELLAR_RESOURCE_CATALOG_V1_0.json). Elixir de Restauração usa RUNA-007 já catalogada, sem inventar novo efeito de runa. Toda origem/construção já existe.",
+  "medicines": [
+    {
+      "med_id": "MED-001",
+      "name": "Pomada de Ervas",
+      "category": "CURATIVO",
+      "source": "AGZ-091",
+      "produced_at": "EST-012",
+      "price_tier": "BAIXO",
+      "notable_link": "AND-CIV-002 (Sintetizador Farmacêutico)",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-007",
+        "CUR-000"
+      ],
+      "weight_kg": 0.18,
+      "description": "Curativo — AND-CIV-002 (Sintetizador Farmacêutico)."
+    },
+    {
+      "med_id": "MED-002",
+      "name": "Antitóxico de Vidro",
+      "category": "ANTITOXINA",
+      "source": "RES-009",
+      "produced_at": "EST-025",
+      "price_tier": "ALTO",
+      "notable_link": "trata a paralisia da toxina de Vespa-de-Vidro (CRI-010)",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-007",
+        "CUR-000"
+      ],
+      "weight_kg": 0.27,
+      "description": "Antitoxina — trata a paralisia da toxina de Vespa-de-Vidro (CRI-010)."
+    },
+    {
+      "med_id": "MED-003",
+      "name": "Cataplasma de Besouro",
+      "category": "ANTITOXINA",
+      "source": "RES-010",
+      "produced_at": "EST-025",
+      "price_tier": "MÉDIO",
+      "notable_link": "trata a queimadura da secreção de Besouro-Rubro (CRI-011)",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-007",
+        "CUR-000"
+      ],
+      "weight_kg": 0.27,
+      "description": "Antitoxina — trata a queimadura da secreção de Besouro-Rubro (CRI-011)."
+    },
+    {
+      "med_id": "MED-004",
+      "name": "Elixir de Restauração",
+      "category": "CURATIVO",
+      "source": "RUNA-007",
+      "produced_at": "EST-044",
+      "price_tier": "ALTO",
+      "notable_link": "classe Magos; Ateliê de Encantamento",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-010",
+        "CUR-000"
+      ],
+      "weight_kg": 0.18,
+      "description": "Curativo — classe Magos; Ateliê de Encantamento."
+    },
+    {
+      "med_id": "MED-005",
+      "name": "Tônico de Raizel",
+      "category": "TÔNICO",
+      "source": "RES-004",
+      "produced_at": "EST-041",
+      "price_tier": "BAIXO",
+      "notable_link": "distribuído a deslocados nas Tendas de Acolhimento",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-012",
+        "CUR-000"
+      ],
+      "weight_kg": 0.36,
+      "description": "Tônico — distribuído a deslocados nas Tendas de Acolhimento."
+    },
+    {
+      "med_id": "MED-006",
+      "name": "Analgésico de Jardim",
+      "category": "CURATIVO",
+      "source": "AGZ-091",
+      "produced_at": "EST-012",
+      "price_tier": "BAIXO",
+      "notable_link": "AND-CIV-001/002 (Médico)",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-007",
+        "CUR-000"
+      ],
+      "weight_kg": 0.18,
+      "description": "Curativo — AND-CIV-001/002 (Médico)."
+    },
+    {
+      "med_id": "MED-007",
+      "name": "Soro Reidratante",
+      "category": "TÔNICO",
+      "source": "MAT-004",
+      "produced_at": "EST-025",
+      "price_tier": "BAIXO",
+      "notable_link": "uso geral em enfermaria",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-007",
+        "CUR-000"
+      ],
+      "weight_kg": 0.36,
+      "description": "Tônico — uso geral em enfermaria."
+    },
+    {
+      "med_id": "MED-008",
+      "name": "Kit de Sutura Sintética",
+      "category": "CIRÚRGICO",
+      "source": "MIN-COPPER",
+      "produced_at": "EST-025",
+      "price_tier": "MÉDIO",
+      "notable_link": "AND-CIV-001 (Assistente Diagnóstico)",
+      "safety": "FICTIONAL_GAME_STATS_ONLY",
+      "currency_tags": [
+        "CUR-007",
+        "CUR-000"
+      ],
+      "weight_kg": 0.46,
+      "description": "Cirúrgico — AND-CIV-001 (Assistente Diagnóstico)."
+    }
+  ]
+}

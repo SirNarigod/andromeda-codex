@@ -1,0 +1,17 @@
+{
+  "record_id": "ARPG-STAGE16A-GODOT-HANDOFF-REPORT-V0.6.0",
+  "stage": "16A/23",
+  "status": "READY_FOR_CODEX_GODOT_HANDOFF",
+  "manifest": "02_CONTRACTS/ARPG_STAGE16A/ARPG_GODOT_HANDOFF_MANIFEST_V0_6_0.json",
+  "acceptance_matrix": "02_CONTRACTS/ARPG_STAGE16A/ARPG_STAGE16B_GODOT_ACCEPTANCE_MATRIX_V0_6_0.json",
+  "codex_start_here": "10_ARPG/STAGE16A/CODEX_GODOT_HANDOFF_START_HERE_V0_6_0.md",
+  "expected_stage16a_accumulated_tests": 143,
+  "expected_stage16a_stress": 20,
+  "handoff_validator": "20/20 PASS",
+  "stage16_complete": false,
+  "backup_authorized": false,
+  "godot_gate": "PENDING_CODEX_LOCAL_GODOT",
+  "canon_mutations": 0,
+  "accumulated_tests_total": "163/163 PASS",
+  "stress": "20/20 PASS"
+}

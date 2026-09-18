@@ -1,0 +1,1065 @@
+{
+  "checks": 59,
+  "failed": 0,
+  "operations": 18,
+  "passed": 59,
+  "profiles": 3,
+  "record_id": "ARPG-STAGE09-STRESS-V1.0.0",
+  "replays": 18,
+  "results": [
+    {
+      "detail": {
+        "idempotent_replay": false,
+        "order": {
+          "activity_type": "MINING",
+          "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+          "duration_s": 4.8,
+          "node_ref": "GTH-02B290084C729D977C8E",
+          "order_ref": "WKO-6CE166A9C2C6F140C925C815",
+          "requested_units": 2,
+          "role": {
+            "activity_type": "MINING",
+            "authority": "GAMEPLAY_DERIVED_STAGE09_REBALANCEABLE",
+            "canonical_candidate_not_bound_reason": "PROFESSION_DISTRIBUTION_OUTSIDE_TER_011",
+            "profession_name": null,
+            "profession_ref": null,
+            "role_ref": "ROLE-GTH-MINER",
+            "territory_ref": "TER-011"
+          },
+          "status": "READY",
+          "tool_instance_ref": "itm:dea87b9326f017d79da63ad02a5c",
+          "tool_item_ref": "ITEM-TOOL",
+          "worker_kind": "PLAYER_PROFILE",
+          "worker_ref": "rt:player_profile:b2c554ea-c96c-4f17-9cc4-73c0fb7adb69",
+          "world_instance_id": "rt:world:9e9b584c-4c1a-414b-8604-db2874dda196"
+        },
+        "status": "PASS"
+      },
+      "name": "s:0:MINING:create",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "activity_type": "MINING",
+        "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+        "duration_s": 4.8,
+        "idempotent_replay": false,
+        "mastery_rank": 1,
+        "mastery_xp_gained": 12,
+        "order_ref": "WKO-6CE166A9C2C6F140C925C815",
+        "output_item_ref": "MIN-MANA-ORE",
+        "produced_units": 2,
+        "remaining_units": 9226,
+        "resource_consumed": 2,
+        "role_authority": "GAMEPLAY_DERIVED_STAGE09_REBALANCEABLE",
+        "status": "PASS",
+        "success": true,
+        "tool_durability": 98.12,
+        "tool_instance_ref": "itm:dea87b9326f017d79da63ad02a5c"
+      },
+      "name": "s:0:MINING:execute",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "s:0:MINING:replay",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "idempotent_replay": false,
+        "order": {
+          "activity_type": "LOGGING",
+          "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+          "duration_s": 4.2,
+          "node_ref": "GTH-1CFA3569126031EB1479",
+          "order_ref": "WKO-9874ABF6A9CCD135E86E24C0",
+          "requested_units": 2,
+          "role": {
+            "activity_type": "LOGGING",
+            "authority": "GAMEPLAY_DERIVED_STAGE09_REBALANCEABLE",
+            "canon_guard": "Activity role is gameplay-derived; no canonical profession is asserted.",
+            "profession_name": null,
+            "profession_ref": null,
+            "role_ref": "ROLE-GTH-FORESTRY",
+            "territory_ref": "TER-011"
+          },
+          "status": "READY",
+          "tool_instance_ref": "itm:dea87b9326f017d79da63ad02a5c",
+          "tool_item_ref": "ITEM-TOOL",
+          "worker_kind": "PLAYER_PROFILE",
+          "worker_ref": "rt:player_profile:b2c554ea-c96c-4f17-9cc4-73c0fb7adb69",
+          "world_instance_id": "rt:world:9e9b584c-4c1a-414b-8604-db2874dda196"
+        },
+        "status": "PASS"
+      },
+      "name": "s:0:LOGGING:create",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "activity_type": "LOGGING",
+        "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+        "duration_s": 4.2,
+        "idempotent_replay": false,
+        "mastery_rank": 1,
+        "mastery_xp_gained": 12,
+        "order_ref": "WKO-9874ABF6A9CCD135E86E24C0",
+        "output_item_ref": "ITEM-HARVEST-FLR-HARDWOOD",
+        "produced_units": 2,
+        "remaining_units": 3017,
+        "resource_consumed": 2,
+        "role_authority": "GAMEPLAY_DERIVED_STAGE09_REBALANCEABLE",
+        "status": "PASS",
+        "success": true,
+        "tool_durability": 97.68,
+        "tool_instance_ref": "itm:dea87b9326f017d79da63ad02a5c"
+      },
+      "name": "s:0:LOGGING:execute",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "s:0:LOGGING:replay",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "idempotent_replay": false,
+        "order": {
+          "activity_type": "FORAGING",
+          "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+          "duration_s": 2.6,
+          "node_ref": "GTH-3EE909CCCB6A0FFCE6EF",
+          "order_ref": "WKO-1481E20C9A2CFF5C001E8407",
+          "requested_units": 2,
+          "role": {
+            "activity_type": "FORAGING",
+            "authority": "GAMEPLAY_DERIVED_STAGE09_REBALANCEABLE",
+            "canon_guard": "Activity role is gameplay-derived; no canonical profession is asserted.",
+            "profession_name": null,
+            "profession_ref": null,
+            "role_ref": "ROLE-GTH-FORAGER",
+            "territory_ref": "TER-011"
+          },
+          "status": "READY",
+          "tool_instance_ref": "itm:dea87b9326f017d79da63ad02a5c",
+          "tool_item_ref": "ITEM-TOOL",
+          "worker_kind": "PLAYER_PROFILE",
+          "worker_ref": "rt:player_profile:b2c554ea-c96c-4f17-9cc4-73c0fb7adb69",
+          "world_instance_id": "rt:world:9e9b584c-4c1a-414b-8604-db2874dda196"
+        },
+        "status": "PASS"
+      },
+      "name": "s:0:FORAGING:create",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "activity_type": "FORAGING",
+        "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+        "duration_s": 2.6,
+        "idempotent_replay": false,
+        "mastery_rank": 1,
+        "mastery_xp_gained": 12,
+        "order_ref": "WKO-1481E20C9A2CFF5C001E8407",
+        "output_item_ref": "ITEM-HARVEST-FLR-MEDICINAL",
+        "produced_units": 2,
+        "remaining_units": 2060,
+        "resource_consumed": 2,
+        "role_authority": "GAMEPLAY_DERIVED_STAGE09_REBALANCEABLE",
+        "status": "PASS",
+        "success": true,
+        "tool_durability": 97.24,
+        "tool_instance_ref": "itm:dea87b9326f017d79da63ad02a5c"
+      },
+      "name": "s:0:FORAGING:execute",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "s:0:FORAGING:replay",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "idempotent_replay": false,
+        "order": {
+          "activity_type": "AGRICULTURE",
+          "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+          "duration_s": 3.4,
+          "node_ref": "GTH-3F9BD20C43452A6429AB",
+          "order_ref": "WKO-AC2B9E1153D09B5F7D19C809",
+          "requested_units": 2,
+          "role": {
+            "activity_type": "AGRICULTURE",
+            "authority": "MASTER_PROFESSION_READ_ONLY_BINDING",
+            "profession_name": "Trabalhador agrícola",
+            "profession_ref": "JOB-RUR-AGR-001",
+            "role_ref": "ROLE-GTH-AGRICULTURE",
+            "territory_ref": "TER-011"
+          },
+          "status": "READY",
+          "tool_instance_ref": "itm:dea87b9326f017d79da63ad02a5c",
+          "tool_item_ref": "ITEM-TOOL",
+          "worker_kind": "PLAYER_PROFILE",
+          "worker_ref": "rt:player_profile:b2c554ea-c96c-4f17-9cc4-73c0fb7adb69",
+          "world_instance_id": "rt:world:9e9b584c-4c1a-414b-8604-db2874dda196"
+        },
+        "status": "PASS"
+      },
+      "name": "s:0:AGRICULTURE:create",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "activity_type": "AGRICULTURE",
+        "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+        "duration_s": 3.4,
+        "idempotent_replay": false,
+        "mastery_rank": 1,
+        "mastery_xp_gained": 12,
+        "order_ref": "WKO-AC2B9E1153D09B5F7D19C809",
+        "output_item_ref": "ITEM-HARVEST-FLR-GRAIN",
+        "produced_units": 2,
+        "remaining_units": 4022,
+        "resource_consumed": 2,
+        "role_authority": "MASTER_PROFESSION_READ_ONLY_BINDING",
+        "status": "PASS",
+        "success": true,
+        "tool_durability": 96.8,
+        "tool_instance_ref": "itm:dea87b9326f017d79da63ad02a5c"
+      },
+      "name": "s:0:AGRICULTURE:execute",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "s:0:AGRICULTURE:replay",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "idempotent_replay": false,
+        "order": {
+          "activity_type": "HUNTING",
+          "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+          "duration_s": 6.4,
+          "node_ref": "GTH-13FB1772336E2129990D",
+          "order_ref": "WKO-FCEDE8D8924CFD7A7EB46519",
+          "requested_units": 2,
+          "role": {
+            "activity_type": "HUNTING",
+            "authority": "MASTER_PROFESSION_READ_ONLY_BINDING",
+            "profession_name": "Caçador",
+            "profession_ref": "JOB-EXPL-CAC-001",
+            "role_ref": "ROLE-GTH-HUNTER",
+            "territory_ref": "TER-011"
+          },
+          "status": "READY",
+          "tool_instance_ref": "itm:ebda65d7fbbb266a517e0de0a1e1",
+          "tool_item_ref": "WPN-001",
+          "worker_kind": "PLAYER_PROFILE",
+          "worker_ref": "rt:player_profile:b2c554ea-c96c-4f17-9cc4-73c0fb7adb69",
+          "world_instance_id": "rt:world:9e9b584c-4c1a-414b-8604-db2874dda196"
+        },
+        "status": "PASS"
+      },
+      "name": "s:0:HUNTING:create",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "activity_type": "HUNTING",
+        "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+        "duration_s": 6.4,
+        "idempotent_replay": false,
+        "mastery_rank": 1,
+        "mastery_xp_gained": 12,
+        "order_ref": "WKO-FCEDE8D8924CFD7A7EB46519",
+        "output_item_ref": "ITEM-FAUNA-FAU-BROWSER",
+        "produced_units": 2,
+        "remaining_units": 128,
+        "resource_consumed": 2,
+        "role_authority": "MASTER_PROFESSION_READ_ONLY_BINDING",
+        "status": "PASS",
+        "success": true,
+        "tool_durability": 104.56,
+        "tool_instance_ref": "itm:ebda65d7fbbb266a517e0de0a1e1"
+      },
+      "name": "s:0:HUNTING:execute",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "s:0:HUNTING:replay",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "idempotent_replay": false,
+        "order": {
+          "activity_type": "FISHING",
+          "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+          "duration_s": 5.6,
+          "node_ref": "GTH-A2308E6CC7774FAD7926",
+          "order_ref": "WKO-5998F74786686C0CDA01BE92",
+          "requested_units": 2,
+          "role": {
+            "activity_type": "FISHING",
+            "authority": "GAMEPLAY_DERIVED_STAGE09_REBALANCEABLE",
+            "canon_guard": "Activity role is gameplay-derived; no canonical profession is asserted.",
+            "profession_name": null,
+            "profession_ref": null,
+            "role_ref": "ROLE-GTH-FISHER",
+            "territory_ref": "TER-011"
+          },
+          "status": "READY",
+          "tool_instance_ref": "itm:dea87b9326f017d79da63ad02a5c",
+          "tool_item_ref": "ITEM-TOOL",
+          "worker_kind": "PLAYER_PROFILE",
+          "worker_ref": "rt:player_profile:b2c554ea-c96c-4f17-9cc4-73c0fb7adb69",
+          "world_instance_id": "rt:world:9e9b584c-4c1a-414b-8604-db2874dda196"
+        },
+        "status": "PASS"
+      },
+      "name": "s:0:FISHING:create",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "activity_type": "FISHING",
+        "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+        "idempotent_replay": false,
+        "mastery_xp_gained": 2,
+        "order_ref": "WKO-5998F74786686C0CDA01BE92",
+        "output_item_ref": "ITEM-FISH-CATCH",
+        "produced_units": 0,
+        "resource_consumed": 0,
+        "status": "PASS",
+        "success": false
+      },
+      "name": "s:0:FISHING:execute",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "s:0:FISHING:replay",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "idempotent_replay": false,
+        "order": {
+          "activity_type": "MINING",
+          "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+          "duration_s": 4.8,
+          "node_ref": "GTH-0411E609634AB84E270D",
+          "order_ref": "WKO-07A4483C0E8C4634EE5773BD",
+          "requested_units": 2,
+          "role": {
+            "activity_type": "MINING",
+            "authority": "GAMEPLAY_DERIVED_STAGE09_REBALANCEABLE",
+            "canonical_candidate_not_bound_reason": "PROFESSION_DISTRIBUTION_OUTSIDE_TER_011",
+            "profession_name": null,
+            "profession_ref": null,
+            "role_ref": "ROLE-GTH-MINER",
+            "territory_ref": "TER-011"
+          },
+          "status": "READY",
+          "tool_instance_ref": "itm:6dc6e3f6cd8010d2bee07cd47f2d",
+          "tool_item_ref": "ITEM-TOOL",
+          "worker_kind": "PLAYER_PROFILE",
+          "worker_ref": "rt:player_profile:3f64b681-72a5-4ac3-b784-cb70dd51e082",
+          "world_instance_id": "rt:world:9e9b584c-4c1a-414b-8604-db2874dda196"
+        },
+        "status": "PASS"
+      },
+      "name": "s:1:MINING:create",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "activity_type": "MINING",
+        "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+        "duration_s": 4.8,
+        "idempotent_replay": false,
+        "mastery_rank": 1,
+        "mastery_xp_gained": 12,
+        "order_ref": "WKO-07A4483C0E8C4634EE5773BD",
+        "output_item_ref": "MIN-MAGNETITE",
+        "produced_units": 2,
+        "remaining_units": 7753,
+        "resource_consumed": 2,
+        "role_authority": "GAMEPLAY_DERIVED_STAGE09_REBALANCEABLE",
+        "status": "PASS",
+        "success": true,
+        "tool_durability": 91.08,
+        "tool_instance_ref": "itm:6dc6e3f6cd8010d2bee07cd47f2d"
+      },
+      "name": "s:1:MINING:execute",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "s:1:MINING:replay",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "idempotent_replay": false,
+        "order": {
+          "activity_type": "LOGGING",
+          "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+          "duration_s": 4.2,
+          "node_ref": "GTH-4169107056D89EAC8DA1",
+          "order_ref": "WKO-C1F1866501DE141E1649ED69",
+          "requested_units": 2,
+          "role": {
+            "activity_type": "LOGGING",
+            "authority": "GAMEPLAY_DERIVED_STAGE09_REBALANCEABLE",
+            "canon_guard": "Activity role is gameplay-derived; no canonical profession is asserted.",
+            "profession_name": null,
+            "profession_ref": null,
+            "role_ref": "ROLE-GTH-FORESTRY",
+            "territory_ref": "TER-011"
+          },
+          "status": "READY",
+          "tool_instance_ref": "itm:6dc6e3f6cd8010d2bee07cd47f2d",
+          "tool_item_ref": "ITEM-TOOL",
+          "worker_kind": "PLAYER_PROFILE",
+          "worker_ref": "rt:player_profile:3f64b681-72a5-4ac3-b784-cb70dd51e082",
+          "world_instance_id": "rt:world:9e9b584c-4c1a-414b-8604-db2874dda196"
+        },
+        "status": "PASS"
+      },
+      "name": "s:1:LOGGING:create",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "activity_type": "LOGGING",
+        "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+        "duration_s": 4.2,
+        "idempotent_replay": false,
+        "mastery_rank": 1,
+        "mastery_xp_gained": 12,
+        "order_ref": "WKO-C1F1866501DE141E1649ED69",
+        "output_item_ref": "ITEM-HARVEST-FLR-HARDWOOD",
+        "produced_units": 2,
+        "remaining_units": 2620,
+        "resource_consumed": 2,
+        "role_authority": "GAMEPLAY_DERIVED_STAGE09_REBALANCEABLE",
+        "status": "PASS",
+        "success": true,
+        "tool_durability": 90.64,
+        "tool_instance_ref": "itm:6dc6e3f6cd8010d2bee07cd47f2d"
+      },
+      "name": "s:1:LOGGING:execute",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "s:1:LOGGING:replay",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "idempotent_replay": false,
+        "order": {
+          "activity_type": "FORAGING",
+          "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+          "duration_s": 2.6,
+          "node_ref": "GTH-4F9EFAB5D31483E3BCA4",
+          "order_ref": "WKO-2B10FC0CF236A7CF7ABD789B",
+          "requested_units": 2,
+          "role": {
+            "activity_type": "FORAGING",
+            "authority": "GAMEPLAY_DERIVED_STAGE09_REBALANCEABLE",
+            "canon_guard": "Activity role is gameplay-derived; no canonical profession is asserted.",
+            "profession_name": null,
+            "profession_ref": null,
+            "role_ref": "ROLE-GTH-FORAGER",
+            "territory_ref": "TER-011"
+          },
+          "status": "READY",
+          "tool_instance_ref": "itm:6dc6e3f6cd8010d2bee07cd47f2d",
+          "tool_item_ref": "ITEM-TOOL",
+          "worker_kind": "PLAYER_PROFILE",
+          "worker_ref": "rt:player_profile:3f64b681-72a5-4ac3-b784-cb70dd51e082",
+          "world_instance_id": "rt:world:9e9b584c-4c1a-414b-8604-db2874dda196"
+        },
+        "status": "PASS"
+      },
+      "name": "s:1:FORAGING:create",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "activity_type": "FORAGING",
+        "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+        "duration_s": 2.6,
+        "idempotent_replay": false,
+        "mastery_rank": 1,
+        "mastery_xp_gained": 12,
+        "order_ref": "WKO-2B10FC0CF236A7CF7ABD789B",
+        "output_item_ref": "ITEM-HARVEST-FLR-RUNIC_MOSS",
+        "produced_units": 2,
+        "remaining_units": 3860,
+        "resource_consumed": 2,
+        "role_authority": "GAMEPLAY_DERIVED_STAGE09_REBALANCEABLE",
+        "status": "PASS",
+        "success": true,
+        "tool_durability": 90.2,
+        "tool_instance_ref": "itm:6dc6e3f6cd8010d2bee07cd47f2d"
+      },
+      "name": "s:1:FORAGING:execute",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "s:1:FORAGING:replay",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "idempotent_replay": false,
+        "order": {
+          "activity_type": "AGRICULTURE",
+          "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+          "duration_s": 3.4,
+          "node_ref": "GTH-5F6F502F0DD3A87F1438",
+          "order_ref": "WKO-FF0C0B2DD701B238DE1FE152",
+          "requested_units": 2,
+          "role": {
+            "activity_type": "AGRICULTURE",
+            "authority": "MASTER_PROFESSION_READ_ONLY_BINDING",
+            "profession_name": "Trabalhador agrícola",
+            "profession_ref": "JOB-RUR-AGR-001",
+            "role_ref": "ROLE-GTH-AGRICULTURE",
+            "territory_ref": "TER-011"
+          },
+          "status": "READY",
+          "tool_instance_ref": "itm:6dc6e3f6cd8010d2bee07cd47f2d",
+          "tool_item_ref": "ITEM-TOOL",
+          "worker_kind": "PLAYER_PROFILE",
+          "worker_ref": "rt:player_profile:3f64b681-72a5-4ac3-b784-cb70dd51e082",
+          "world_instance_id": "rt:world:9e9b584c-4c1a-414b-8604-db2874dda196"
+        },
+        "status": "PASS"
+      },
+      "name": "s:1:AGRICULTURE:create",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "activity_type": "AGRICULTURE",
+        "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+        "duration_s": 3.4,
+        "idempotent_replay": false,
+        "mastery_rank": 1,
+        "mastery_xp_gained": 12,
+        "order_ref": "WKO-FF0C0B2DD701B238DE1FE152",
+        "output_item_ref": "ITEM-HARVEST-FLR-GRAIN",
+        "produced_units": 2,
+        "remaining_units": 4175,
+        "resource_consumed": 2,
+        "role_authority": "MASTER_PROFESSION_READ_ONLY_BINDING",
+        "status": "PASS",
+        "success": true,
+        "tool_durability": 89.76,
+        "tool_instance_ref": "itm:6dc6e3f6cd8010d2bee07cd47f2d"
+      },
+      "name": "s:1:AGRICULTURE:execute",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "s:1:AGRICULTURE:replay",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "idempotent_replay": false,
+        "order": {
+          "activity_type": "HUNTING",
+          "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+          "duration_s": 6.4,
+          "node_ref": "GTH-3EEFF6970CD41CD57EEC",
+          "order_ref": "WKO-8A43CC7ECA956E28DAE531E7",
+          "requested_units": 2,
+          "role": {
+            "activity_type": "HUNTING",
+            "authority": "MASTER_PROFESSION_READ_ONLY_BINDING",
+            "profession_name": "Caçador",
+            "profession_ref": "JOB-EXPL-CAC-001",
+            "role_ref": "ROLE-GTH-HUNTER",
+            "territory_ref": "TER-011"
+          },
+          "status": "READY",
+          "tool_instance_ref": "itm:1775457910418825cc8e94e19c9d",
+          "tool_item_ref": "WPN-001",
+          "worker_kind": "PLAYER_PROFILE",
+          "worker_ref": "rt:player_profile:3f64b681-72a5-4ac3-b784-cb70dd51e082",
+          "world_instance_id": "rt:world:9e9b584c-4c1a-414b-8604-db2874dda196"
+        },
+        "status": "PASS"
+      },
+      "name": "s:1:HUNTING:create",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "activity_type": "HUNTING",
+        "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+        "idempotent_replay": false,
+        "mastery_xp_gained": 2,
+        "order_ref": "WKO-8A43CC7ECA956E28DAE531E7",
+        "output_item_ref": "ITEM-FAUNA-FAU-INSECT-POLL",
+        "produced_units": 0,
+        "resource_consumed": 0,
+        "status": "PASS",
+        "success": false
+      },
+      "name": "s:1:HUNTING:execute",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "s:1:HUNTING:replay",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "idempotent_replay": false,
+        "order": {
+          "activity_type": "FISHING",
+          "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+          "duration_s": 5.6,
+          "node_ref": "GTH-3012520FAA8E9F1A4463",
+          "order_ref": "WKO-F8F3927F215CA0A728B6D306",
+          "requested_units": 2,
+          "role": {
+            "activity_type": "FISHING",
+            "authority": "GAMEPLAY_DERIVED_STAGE09_REBALANCEABLE",
+            "canon_guard": "Activity role is gameplay-derived; no canonical profession is asserted.",
+            "profession_name": null,
+            "profession_ref": null,
+            "role_ref": "ROLE-GTH-FISHER",
+            "territory_ref": "TER-011"
+          },
+          "status": "READY",
+          "tool_instance_ref": "itm:6dc6e3f6cd8010d2bee07cd47f2d",
+          "tool_item_ref": "ITEM-TOOL",
+          "worker_kind": "PLAYER_PROFILE",
+          "worker_ref": "rt:player_profile:3f64b681-72a5-4ac3-b784-cb70dd51e082",
+          "world_instance_id": "rt:world:9e9b584c-4c1a-414b-8604-db2874dda196"
+        },
+        "status": "PASS"
+      },
+      "name": "s:1:FISHING:create",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "activity_type": "FISHING",
+        "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+        "duration_s": 5.6,
+        "idempotent_replay": false,
+        "mastery_rank": 1,
+        "mastery_xp_gained": 12,
+        "order_ref": "WKO-F8F3927F215CA0A728B6D306",
+        "output_item_ref": "ITEM-FISH-CATCH",
+        "produced_units": 2,
+        "remaining_units": 154,
+        "resource_consumed": 2,
+        "role_authority": "GAMEPLAY_DERIVED_STAGE09_REBALANCEABLE",
+        "status": "PASS",
+        "success": true,
+        "tool_durability": 89.32,
+        "tool_instance_ref": "itm:6dc6e3f6cd8010d2bee07cd47f2d"
+      },
+      "name": "s:1:FISHING:execute",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "s:1:FISHING:replay",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "idempotent_replay": false,
+        "order": {
+          "activity_type": "MINING",
+          "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+          "duration_s": 4.8,
+          "node_ref": "GTH-0467B91C46D983E8B246",
+          "order_ref": "WKO-26FAD83E12E3E58B1CA9E488",
+          "requested_units": 2,
+          "role": {
+            "activity_type": "MINING",
+            "authority": "GAMEPLAY_DERIVED_STAGE09_REBALANCEABLE",
+            "canonical_candidate_not_bound_reason": "PROFESSION_DISTRIBUTION_OUTSIDE_TER_011",
+            "profession_name": null,
+            "profession_ref": null,
+            "role_ref": "ROLE-GTH-MINER",
+            "territory_ref": "TER-011"
+          },
+          "status": "READY",
+          "tool_instance_ref": "itm:55ddfdfee4916b135461179d9ef6",
+          "tool_item_ref": "ITEM-TOOL",
+          "worker_kind": "PLAYER_PROFILE",
+          "worker_ref": "rt:player_profile:7a5fdfeb-e1b3-4ac4-84eb-239c91575465",
+          "world_instance_id": "rt:world:9e9b584c-4c1a-414b-8604-db2874dda196"
+        },
+        "status": "PASS"
+      },
+      "name": "s:2:MINING:create",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "activity_type": "MINING",
+        "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+        "duration_s": 4.8,
+        "idempotent_replay": false,
+        "mastery_rank": 1,
+        "mastery_xp_gained": 12,
+        "order_ref": "WKO-26FAD83E12E3E58B1CA9E488",
+        "output_item_ref": "MIN-QUARTZ",
+        "produced_units": 2,
+        "remaining_units": 6569,
+        "resource_consumed": 2,
+        "role_authority": "GAMEPLAY_DERIVED_STAGE09_REBALANCEABLE",
+        "status": "PASS",
+        "success": true,
+        "tool_durability": 95.48,
+        "tool_instance_ref": "itm:55ddfdfee4916b135461179d9ef6"
+      },
+      "name": "s:2:MINING:execute",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "s:2:MINING:replay",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "idempotent_replay": false,
+        "order": {
+          "activity_type": "LOGGING",
+          "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+          "duration_s": 4.2,
+          "node_ref": "GTH-5AE04B626417703BEB1A",
+          "order_ref": "WKO-0BB1A3A6FF22585F17F066F9",
+          "requested_units": 2,
+          "role": {
+            "activity_type": "LOGGING",
+            "authority": "GAMEPLAY_DERIVED_STAGE09_REBALANCEABLE",
+            "canon_guard": "Activity role is gameplay-derived; no canonical profession is asserted.",
+            "profession_name": null,
+            "profession_ref": null,
+            "role_ref": "ROLE-GTH-FORESTRY",
+            "territory_ref": "TER-011"
+          },
+          "status": "READY",
+          "tool_instance_ref": "itm:55ddfdfee4916b135461179d9ef6",
+          "tool_item_ref": "ITEM-TOOL",
+          "worker_kind": "PLAYER_PROFILE",
+          "worker_ref": "rt:player_profile:7a5fdfeb-e1b3-4ac4-84eb-239c91575465",
+          "world_instance_id": "rt:world:9e9b584c-4c1a-414b-8604-db2874dda196"
+        },
+        "status": "PASS"
+      },
+      "name": "s:2:LOGGING:create",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "activity_type": "LOGGING",
+        "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+        "duration_s": 4.2,
+        "idempotent_replay": false,
+        "mastery_rank": 1,
+        "mastery_xp_gained": 12,
+        "order_ref": "WKO-0BB1A3A6FF22585F17F066F9",
+        "output_item_ref": "ITEM-HARVEST-FLR-HARDWOOD",
+        "produced_units": 2,
+        "remaining_units": 4078,
+        "resource_consumed": 2,
+        "role_authority": "GAMEPLAY_DERIVED_STAGE09_REBALANCEABLE",
+        "status": "PASS",
+        "success": true,
+        "tool_durability": 95.04,
+        "tool_instance_ref": "itm:55ddfdfee4916b135461179d9ef6"
+      },
+      "name": "s:2:LOGGING:execute",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "s:2:LOGGING:replay",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "idempotent_replay": false,
+        "order": {
+          "activity_type": "FORAGING",
+          "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+          "duration_s": 2.6,
+          "node_ref": "GTH-583D3EFFA4419C71DC84",
+          "order_ref": "WKO-2992890C02F9C8D576DC06FE",
+          "requested_units": 2,
+          "role": {
+            "activity_type": "FORAGING",
+            "authority": "GAMEPLAY_DERIVED_STAGE09_REBALANCEABLE",
+            "canon_guard": "Activity role is gameplay-derived; no canonical profession is asserted.",
+            "profession_name": null,
+            "profession_ref": null,
+            "role_ref": "ROLE-GTH-FORAGER",
+            "territory_ref": "TER-011"
+          },
+          "status": "READY",
+          "tool_instance_ref": "itm:55ddfdfee4916b135461179d9ef6",
+          "tool_item_ref": "ITEM-TOOL",
+          "worker_kind": "PLAYER_PROFILE",
+          "worker_ref": "rt:player_profile:7a5fdfeb-e1b3-4ac4-84eb-239c91575465",
+          "world_instance_id": "rt:world:9e9b584c-4c1a-414b-8604-db2874dda196"
+        },
+        "status": "PASS"
+      },
+      "name": "s:2:FORAGING:create",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "activity_type": "FORAGING",
+        "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+        "duration_s": 2.6,
+        "idempotent_replay": false,
+        "mastery_rank": 1,
+        "mastery_xp_gained": 12,
+        "order_ref": "WKO-2992890C02F9C8D576DC06FE",
+        "output_item_ref": "ITEM-HARVEST-FLR-MEDICINAL",
+        "produced_units": 2,
+        "remaining_units": 3444,
+        "resource_consumed": 2,
+        "role_authority": "GAMEPLAY_DERIVED_STAGE09_REBALANCEABLE",
+        "status": "PASS",
+        "success": true,
+        "tool_durability": 94.6,
+        "tool_instance_ref": "itm:55ddfdfee4916b135461179d9ef6"
+      },
+      "name": "s:2:FORAGING:execute",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "s:2:FORAGING:replay",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "idempotent_replay": false,
+        "order": {
+          "activity_type": "AGRICULTURE",
+          "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+          "duration_s": 3.4,
+          "node_ref": "GTH-73137B626A8CCE6DEC33",
+          "order_ref": "WKO-70B4CA6D76A59FBC4DC833F9",
+          "requested_units": 2,
+          "role": {
+            "activity_type": "AGRICULTURE",
+            "authority": "MASTER_PROFESSION_READ_ONLY_BINDING",
+            "profession_name": "Trabalhador agrícola",
+            "profession_ref": "JOB-RUR-AGR-001",
+            "role_ref": "ROLE-GTH-AGRICULTURE",
+            "territory_ref": "TER-011"
+          },
+          "status": "READY",
+          "tool_instance_ref": "itm:55ddfdfee4916b135461179d9ef6",
+          "tool_item_ref": "ITEM-TOOL",
+          "worker_kind": "PLAYER_PROFILE",
+          "worker_ref": "rt:player_profile:7a5fdfeb-e1b3-4ac4-84eb-239c91575465",
+          "world_instance_id": "rt:world:9e9b584c-4c1a-414b-8604-db2874dda196"
+        },
+        "status": "PASS"
+      },
+      "name": "s:2:AGRICULTURE:create",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "activity_type": "AGRICULTURE",
+        "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+        "duration_s": 3.4,
+        "idempotent_replay": false,
+        "mastery_rank": 1,
+        "mastery_xp_gained": 12,
+        "order_ref": "WKO-70B4CA6D76A59FBC4DC833F9",
+        "output_item_ref": "ITEM-HARVEST-FLR-GRAIN",
+        "produced_units": 2,
+        "remaining_units": 3760,
+        "resource_consumed": 2,
+        "role_authority": "MASTER_PROFESSION_READ_ONLY_BINDING",
+        "status": "PASS",
+        "success": true,
+        "tool_durability": 94.16,
+        "tool_instance_ref": "itm:55ddfdfee4916b135461179d9ef6"
+      },
+      "name": "s:2:AGRICULTURE:execute",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "s:2:AGRICULTURE:replay",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "idempotent_replay": false,
+        "order": {
+          "activity_type": "HUNTING",
+          "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+          "duration_s": 6.4,
+          "node_ref": "GTH-4633A64D8C5CE6EF6D1E",
+          "order_ref": "WKO-AD0E1E6B41546E82AFC23390",
+          "requested_units": 2,
+          "role": {
+            "activity_type": "HUNTING",
+            "authority": "MASTER_PROFESSION_READ_ONLY_BINDING",
+            "profession_name": "Caçador",
+            "profession_ref": "JOB-EXPL-CAC-001",
+            "role_ref": "ROLE-GTH-HUNTER",
+            "territory_ref": "TER-011"
+          },
+          "status": "READY",
+          "tool_instance_ref": "itm:9918fadf5bee4de9e932e07412bd",
+          "tool_item_ref": "WPN-001",
+          "worker_kind": "PLAYER_PROFILE",
+          "worker_ref": "rt:player_profile:7a5fdfeb-e1b3-4ac4-84eb-239c91575465",
+          "world_instance_id": "rt:world:9e9b584c-4c1a-414b-8604-db2874dda196"
+        },
+        "status": "PASS"
+      },
+      "name": "s:2:HUNTING:create",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "activity_type": "HUNTING",
+        "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+        "idempotent_replay": false,
+        "mastery_xp_gained": 2,
+        "order_ref": "WKO-AD0E1E6B41546E82AFC23390",
+        "output_item_ref": "ITEM-FAUNA-FAU-INSECT-POLL",
+        "produced_units": 0,
+        "resource_consumed": 0,
+        "status": "PASS",
+        "success": false
+      },
+      "name": "s:2:HUNTING:execute",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "s:2:HUNTING:replay",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "idempotent_replay": false,
+        "order": {
+          "activity_type": "FISHING",
+          "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+          "duration_s": 5.6,
+          "node_ref": "GTH-A2308E6CC7774FAD7926",
+          "order_ref": "WKO-E822AAA8682BC7062B1B7BCA",
+          "requested_units": 2,
+          "role": {
+            "activity_type": "FISHING",
+            "authority": "GAMEPLAY_DERIVED_STAGE09_REBALANCEABLE",
+            "canon_guard": "Activity role is gameplay-derived; no canonical profession is asserted.",
+            "profession_name": null,
+            "profession_ref": null,
+            "role_ref": "ROLE-GTH-FISHER",
+            "territory_ref": "TER-011"
+          },
+          "status": "READY",
+          "tool_instance_ref": "itm:55ddfdfee4916b135461179d9ef6",
+          "tool_item_ref": "ITEM-TOOL",
+          "worker_kind": "PLAYER_PROFILE",
+          "worker_ref": "rt:player_profile:7a5fdfeb-e1b3-4ac4-84eb-239c91575465",
+          "world_instance_id": "rt:world:9e9b584c-4c1a-414b-8604-db2874dda196"
+        },
+        "status": "PASS"
+      },
+      "name": "s:2:FISHING:create",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "activity_type": "FISHING",
+        "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+        "idempotent_replay": false,
+        "mastery_xp_gained": 2,
+        "order_ref": "WKO-E822AAA8682BC7062B1B7BCA",
+        "output_item_ref": "ITEM-FISH-CATCH",
+        "produced_units": 0,
+        "resource_consumed": 0,
+        "status": "PASS",
+        "success": false
+      },
+      "name": "s:2:FISHING:execute",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "s:2:FISHING:replay",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "activities": {
+          "AGRICULTURE": 9,
+          "FISHING": 2,
+          "FORAGING": 22,
+          "HUNTING": 71,
+          "LOGGING": 11,
+          "MINING": 145
+        },
+        "authority": "ANDROMEDA_ARPG_STAGE09_GATHERING_WORK",
+        "failures": [],
+        "nodes": 260,
+        "profession_snapshots": 91,
+        "status": "PASS"
+      },
+      "name": "verify",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "all_nodes_nonnegative",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "workers_progress",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "profession_bridge",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "deterministic_topology",
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS"
+}

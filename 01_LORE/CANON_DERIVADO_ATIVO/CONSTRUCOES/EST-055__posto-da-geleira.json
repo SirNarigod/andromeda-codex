@@ -1,0 +1,38 @@
+{
+  "est_id": "EST-055",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Posto da Geleira",
+  "building_type": "INDUSTRIAL",
+  "parent_locality": "LOC-016-001",
+  "parent_subregion": "SUB-016-001",
+  "parent_political_unit": "TER-016",
+  "function": "Extracao e processamento de gelo puro da Geleira Perene.",
+  "economic_role": {
+    "is_vendor": false,
+    "sells": [],
+    "produces": [
+      "gelo puro"
+    ],
+    "regulation_factor": 0.4
+  },
+  "capacity": {
+    "jobs": 6,
+    "residents": 4
+  },
+  "professions_linked": [
+    "JOB-016 Extrator de recursos (mineracao e coleta)"
+  ],
+  "notable_link": "TER-016 Confins de Gelo (fase 49)",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "METAL_E_MADEIRA",
+    "flammability": "MEDIA_COM_RISCO_EXPLOSAO",
+    "recovery_days": 10
+  }
+}

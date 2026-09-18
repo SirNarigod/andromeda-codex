@@ -1,0 +1,1025 @@
+{
+  "record_id": "STELLAR-CULTURAL-TRAITS-NEW-TERRITORIES-DEV-V1.0",
+  "title": "Traços Culturais dos 6 Territórios Novos (TER-014..019) — nivelamento com o padrão do Master V2",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "r2_guard": "TER-014..019 sao territorios criados nesta sessao (fases 44-52), fora do escopo do pacote MASTER V2.0.1 (que so cobre os 13 territorios originais). Para nivelar a riqueza (mesma estrutura de 32 tracos por territorio usada pelo Master em MASTER_CULTURA_TRAITS_V2_0_0.json), geramos aqui o equivalente proprio, grounded nos fatos ja reais de cada territorio (lideranca, especialidade economica, tema ambiental, risco local) - nenhum fato novo e inventado fora do que ja estava estabelecido nas fases 44-56.",
+  "pattern_source": "Espelha a estrutura de 32 traços por território usada em 01_LORE/CANON_MASTER_V2/CULTURA/MASTER_CULTURA_TRAITS_V2_0_0.json (mesmas 29 categorias + COM×3).",
+  "count_territories": 6,
+  "count_traits_total": 192,
+  "cultural_profiles": [
+    {
+      "territory_id": "TER-014",
+      "territory_name": "Cadeia de Cinzas",
+      "demonym": "Fundidores",
+      "council_ref": "Conselho de Fundidores",
+      "trait_count": 32,
+      "traits": [
+        {
+          "category_code": "FND",
+          "category_label": "Fundação/identidade",
+          "name": "Fundidores"
+        },
+        {
+          "category_code": "HOS",
+          "category_label": "Hospitalidade geral",
+          "name": "Acolhimento condicionado à familiaridade com cinza vulcânica e calor extremo, comum entre os Fundidores."
+        },
+        {
+          "category_code": "HOSF",
+          "category_label": "Hospitalidade alimentar",
+          "name": "Refeição de boas-vindas sempre inclui algo derivado de cultivo pós-vulcânico dos Campos de Cinza."
+        },
+        {
+          "category_code": "ALI",
+          "category_label": "Alimentação",
+          "name": "Dieta adaptada a mineração vulcânica e fundição, com pouco desperdício por escassez local."
+        },
+        {
+          "category_code": "VES",
+          "category_label": "Vestuário",
+          "name": "Traje utilitário resistente a cinza vulcânica e calor extremo (ver TRJ de Cadeia de Cinzas)."
+        },
+        {
+          "category_code": "ART",
+          "category_label": "Artesanato/materiais",
+          "name": "Objetos utilitários feitos com sobras de Barra de Basalto Fundido (REG-001)."
+        },
+        {
+          "category_code": "SIM",
+          "category_label": "Simbologia/pertencimento",
+          "name": "Insígnia informal ligada ao Conselho de Fundidores, sem hierarquia rígida."
+        },
+        {
+          "category_code": "EDU",
+          "category_label": "Educação/aprendizagem",
+          "name": "Aprendizado prático transmitido por quem já sobrevive a cinza vulcânica e calor extremo."
+        },
+        {
+          "category_code": "EXP",
+          "category_label": "Expressão",
+          "name": "Narrativas orais sobre encontros com cinza vulcânica e calor extremo."
+        },
+        {
+          "category_code": "ESP",
+          "category_label": "Espiritualidade",
+          "name": "Respeito difuso ao território, sem religião oficial nomeada."
+        },
+        {
+          "category_code": "CIV",
+          "category_label": "Civilidade/convivência pública",
+          "name": "Decisões coletivas discutidas em assembleia informal do Conselho de Fundidores."
+        },
+        {
+          "category_code": "RIT",
+          "category_label": "Ritual",
+          "name": "Marco de passagem ligado à primeira extração bem-sucedida de Barra de Basalto Fundido."
+        },
+        {
+          "category_code": "MUS",
+          "category_label": "Música",
+          "name": "Cantos de trabalho ritmados pelo ciclo de mineração vulcânica e fundição."
+        },
+        {
+          "category_code": "CEL",
+          "category_label": "Celebração",
+          "name": "Festa sazonal de colheita/extração de Barra de Basalto Fundido."
+        },
+        {
+          "category_code": "EST",
+          "category_label": "Estética",
+          "name": "Preferência por tons e formas que remetem a mineração vulcânica e fundição."
+        },
+        {
+          "category_code": "JOG",
+          "category_label": "Jogos",
+          "name": "Competições informais de habilidade ligadas a cinza vulcânica e calor extremo (quem resiste mais, quem detecta primeiro)."
+        },
+        {
+          "category_code": "TRB",
+          "category_label": "Trabalho",
+          "name": "Trabalho organizado em turnos curtos por causa de cinza vulcânica e calor extremo."
+        },
+        {
+          "category_code": "REP",
+          "category_label": "Reputação",
+          "name": "Reputação medida por confiabilidade em lidar com cinza vulcânica e calor extremo, não por riqueza."
+        },
+        {
+          "category_code": "CFL",
+          "category_label": "Conflito/resolução",
+          "name": "Disputas mediadas pelo Conselho de Fundidores, sem tribunal formal."
+        },
+        {
+          "category_code": "ORA",
+          "category_label": "Tradição oral",
+          "name": "Histórias de sobreviventes de cinza vulcânica e calor extremo passadas adiante sem registro escrito."
+        },
+        {
+          "category_code": "REF",
+          "category_label": "Refúgio/acolhimento",
+          "name": "Abrigo emergencial sempre disponível contra cinza vulcânica e calor extremo."
+        },
+        {
+          "category_code": "LAZ",
+          "category_label": "Lazer",
+          "name": "Descanso coletivo em torno do resultado do dia de mineração vulcânica e fundição."
+        },
+        {
+          "category_code": "FAM",
+          "category_label": "Família",
+          "name": "Estrutura familiar flexível, adaptada à rotatividade de quem trabalha com mineração vulcânica e fundição."
+        },
+        {
+          "category_code": "DAN",
+          "category_label": "Dança",
+          "name": "Dança de celebração após um dia seguro apesar de cinza vulcânica e calor extremo."
+        },
+        {
+          "category_code": "CMP",
+          "category_label": "Campo/território compartilhado",
+          "name": "Uso compartilhado das zonas de cultivo pós-vulcânico dos Campos de Cinza."
+        },
+        {
+          "category_code": "FUN",
+          "category_label": "Ritos fúnebres",
+          "name": "Homenagem simples a quem morreu por causa de cinza vulcânica e calor extremo."
+        },
+        {
+          "category_code": "ETQ",
+          "category_label": "Etiqueta",
+          "name": "Regra não-escrita de sempre avisar o Conselho de Fundidores antes de se afastar sozinho."
+        },
+        {
+          "category_code": "LUT",
+          "category_label": "Luto",
+          "name": "Luto breve e coletivo, sem interromper o trabalho essencial por muito tempo."
+        },
+        {
+          "category_code": "UNI",
+          "category_label": "União/casamento",
+          "name": "União reconhecida por declaração pública ao Conselho de Fundidores, sem cerimônia obrigatória."
+        },
+        {
+          "category_code": "COM",
+          "category_label": "Comunidade/pertencimento",
+          "name": "Pertencimento por contribuição prática à sobrevivência coletiva contra cinza vulcânica e calor extremo."
+        },
+        {
+          "category_code": "COM",
+          "category_label": "Comunidade/reciprocidade",
+          "name": "Reciprocidade medida por ajuda mútua em emergências de cinza vulcânica e calor extremo."
+        },
+        {
+          "category_code": "COM",
+          "category_label": "Comunidade/convivência",
+          "name": "Convivência cotidiana organizada em torno do ciclo de mineração vulcânica e fundição."
+        }
+      ]
+    },
+    {
+      "territory_id": "TER-015",
+      "territory_name": "Vale das Ruínas",
+      "demonym": "Valenses",
+      "council_ref": "Conselho de Guias",
+      "trait_count": 32,
+      "traits": [
+        {
+          "category_code": "FND",
+          "category_label": "Fundação/identidade",
+          "name": "Valenses"
+        },
+        {
+          "category_code": "HOS",
+          "category_label": "Hospitalidade geral",
+          "name": "Acolhimento condicionado à familiaridade com tempestades de areia, comum entre os Valenses."
+        },
+        {
+          "category_code": "HOSF",
+          "category_label": "Hospitalidade alimentar",
+          "name": "Refeição de boas-vindas sempre inclui algo derivado de subsistência do Oásis do Poço Fundo."
+        },
+        {
+          "category_code": "ALI",
+          "category_label": "Alimentação",
+          "name": "Dieta adaptada a arqueologia e guia de deserto, com pouco desperdício por escassez local."
+        },
+        {
+          "category_code": "VES",
+          "category_label": "Vestuário",
+          "name": "Traje utilitário resistente a tempestades de areia (ver TRJ de Vale das Ruínas)."
+        },
+        {
+          "category_code": "ART",
+          "category_label": "Artesanato/materiais",
+          "name": "Objetos utilitários feitos com sobras de Relíquia de Ouro Restaurada (REG-002)."
+        },
+        {
+          "category_code": "SIM",
+          "category_label": "Simbologia/pertencimento",
+          "name": "Insígnia informal ligada ao Conselho de Guias, sem hierarquia rígida."
+        },
+        {
+          "category_code": "EDU",
+          "category_label": "Educação/aprendizagem",
+          "name": "Aprendizado prático transmitido por quem já sobrevive a tempestades de areia."
+        },
+        {
+          "category_code": "EXP",
+          "category_label": "Expressão",
+          "name": "Narrativas orais sobre encontros com tempestades de areia."
+        },
+        {
+          "category_code": "ESP",
+          "category_label": "Espiritualidade",
+          "name": "Respeito difuso ao território, sem religião oficial nomeada."
+        },
+        {
+          "category_code": "CIV",
+          "category_label": "Civilidade/convivência pública",
+          "name": "Decisões coletivas discutidas em assembleia informal do Conselho de Guias."
+        },
+        {
+          "category_code": "RIT",
+          "category_label": "Ritual",
+          "name": "Marco de passagem ligado à primeira extração bem-sucedida de Relíquia de Ouro Restaurada."
+        },
+        {
+          "category_code": "MUS",
+          "category_label": "Música",
+          "name": "Cantos de trabalho ritmados pelo ciclo de arqueologia e guia de deserto."
+        },
+        {
+          "category_code": "CEL",
+          "category_label": "Celebração",
+          "name": "Festa sazonal de colheita/extração de Relíquia de Ouro Restaurada."
+        },
+        {
+          "category_code": "EST",
+          "category_label": "Estética",
+          "name": "Preferência por tons e formas que remetem a arqueologia e guia de deserto."
+        },
+        {
+          "category_code": "JOG",
+          "category_label": "Jogos",
+          "name": "Competições informais de habilidade ligadas a tempestades de areia (quem resiste mais, quem detecta primeiro)."
+        },
+        {
+          "category_code": "TRB",
+          "category_label": "Trabalho",
+          "name": "Trabalho organizado em turnos curtos por causa de tempestades de areia."
+        },
+        {
+          "category_code": "REP",
+          "category_label": "Reputação",
+          "name": "Reputação medida por confiabilidade em lidar com tempestades de areia, não por riqueza."
+        },
+        {
+          "category_code": "CFL",
+          "category_label": "Conflito/resolução",
+          "name": "Disputas mediadas pelo Conselho de Guias, sem tribunal formal."
+        },
+        {
+          "category_code": "ORA",
+          "category_label": "Tradição oral",
+          "name": "Histórias de sobreviventes de tempestades de areia passadas adiante sem registro escrito."
+        },
+        {
+          "category_code": "REF",
+          "category_label": "Refúgio/acolhimento",
+          "name": "Abrigo emergencial sempre disponível contra tempestades de areia."
+        },
+        {
+          "category_code": "LAZ",
+          "category_label": "Lazer",
+          "name": "Descanso coletivo em torno do resultado do dia de arqueologia e guia de deserto."
+        },
+        {
+          "category_code": "FAM",
+          "category_label": "Família",
+          "name": "Estrutura familiar flexível, adaptada à rotatividade de quem trabalha com arqueologia e guia de deserto."
+        },
+        {
+          "category_code": "DAN",
+          "category_label": "Dança",
+          "name": "Dança de celebração após um dia seguro apesar de tempestades de areia."
+        },
+        {
+          "category_code": "CMP",
+          "category_label": "Campo/território compartilhado",
+          "name": "Uso compartilhado das zonas de subsistência do Oásis do Poço Fundo."
+        },
+        {
+          "category_code": "FUN",
+          "category_label": "Ritos fúnebres",
+          "name": "Homenagem simples a quem morreu por causa de tempestades de areia."
+        },
+        {
+          "category_code": "ETQ",
+          "category_label": "Etiqueta",
+          "name": "Regra não-escrita de sempre avisar o Conselho de Guias antes de se afastar sozinho."
+        },
+        {
+          "category_code": "LUT",
+          "category_label": "Luto",
+          "name": "Luto breve e coletivo, sem interromper o trabalho essencial por muito tempo."
+        },
+        {
+          "category_code": "UNI",
+          "category_label": "União/casamento",
+          "name": "União reconhecida por declaração pública ao Conselho de Guias, sem cerimônia obrigatória."
+        },
+        {
+          "category_code": "COM",
+          "category_label": "Comunidade/pertencimento",
+          "name": "Pertencimento por contribuição prática à sobrevivência coletiva contra tempestades de areia."
+        },
+        {
+          "category_code": "COM",
+          "category_label": "Comunidade/reciprocidade",
+          "name": "Reciprocidade medida por ajuda mútua em emergências de tempestades de areia."
+        },
+        {
+          "category_code": "COM",
+          "category_label": "Comunidade/convivência",
+          "name": "Convivência cotidiana organizada em torno do ciclo de arqueologia e guia de deserto."
+        }
+      ]
+    },
+    {
+      "territory_id": "TER-016",
+      "territory_name": "Confins de Gelo",
+      "demonym": "Confinos",
+      "council_ref": "Conselho do Gelo",
+      "trait_count": 32,
+      "traits": [
+        {
+          "category_code": "FND",
+          "category_label": "Fundação/identidade",
+          "name": "Confinos"
+        },
+        {
+          "category_code": "HOS",
+          "category_label": "Hospitalidade geral",
+          "name": "Acolhimento condicionado à familiaridade com frio extremo e fendas ocultas, comum entre os Confinos."
+        },
+        {
+          "category_code": "HOSF",
+          "category_label": "Hospitalidade alimentar",
+          "name": "Refeição de boas-vindas sempre inclui algo derivado de caça e coleta sob condições glaciais."
+        },
+        {
+          "category_code": "ALI",
+          "category_label": "Alimentação",
+          "name": "Dieta adaptada a sobrevivência glacial e extração sob o gelo, com pouco desperdício por escassez local."
+        },
+        {
+          "category_code": "VES",
+          "category_label": "Vestuário",
+          "name": "Traje utilitário resistente a frio extremo e fendas ocultas (ver TRJ de Confins de Gelo)."
+        },
+        {
+          "category_code": "ART",
+          "category_label": "Artesanato/materiais",
+          "name": "Objetos utilitários feitos com sobras de Cristal de Gelo Puro (REG-003)."
+        },
+        {
+          "category_code": "SIM",
+          "category_label": "Simbologia/pertencimento",
+          "name": "Insígnia informal ligada ao Conselho do Gelo, sem hierarquia rígida."
+        },
+        {
+          "category_code": "EDU",
+          "category_label": "Educação/aprendizagem",
+          "name": "Aprendizado prático transmitido por quem já sobrevive a frio extremo e fendas ocultas."
+        },
+        {
+          "category_code": "EXP",
+          "category_label": "Expressão",
+          "name": "Narrativas orais sobre encontros com frio extremo e fendas ocultas."
+        },
+        {
+          "category_code": "ESP",
+          "category_label": "Espiritualidade",
+          "name": "Respeito difuso ao território, sem religião oficial nomeada."
+        },
+        {
+          "category_code": "CIV",
+          "category_label": "Civilidade/convivência pública",
+          "name": "Decisões coletivas discutidas em assembleia informal do Conselho do Gelo."
+        },
+        {
+          "category_code": "RIT",
+          "category_label": "Ritual",
+          "name": "Marco de passagem ligado à primeira extração bem-sucedida de Cristal de Gelo Puro."
+        },
+        {
+          "category_code": "MUS",
+          "category_label": "Música",
+          "name": "Cantos de trabalho ritmados pelo ciclo de sobrevivência glacial e extração sob o gelo."
+        },
+        {
+          "category_code": "CEL",
+          "category_label": "Celebração",
+          "name": "Festa sazonal de colheita/extração de Cristal de Gelo Puro."
+        },
+        {
+          "category_code": "EST",
+          "category_label": "Estética",
+          "name": "Preferência por tons e formas que remetem a sobrevivência glacial e extração sob o gelo."
+        },
+        {
+          "category_code": "JOG",
+          "category_label": "Jogos",
+          "name": "Competições informais de habilidade ligadas a frio extremo e fendas ocultas (quem resiste mais, quem detecta primeiro)."
+        },
+        {
+          "category_code": "TRB",
+          "category_label": "Trabalho",
+          "name": "Trabalho organizado em turnos curtos por causa de frio extremo e fendas ocultas."
+        },
+        {
+          "category_code": "REP",
+          "category_label": "Reputação",
+          "name": "Reputação medida por confiabilidade em lidar com frio extremo e fendas ocultas, não por riqueza."
+        },
+        {
+          "category_code": "CFL",
+          "category_label": "Conflito/resolução",
+          "name": "Disputas mediadas pelo Conselho do Gelo, sem tribunal formal."
+        },
+        {
+          "category_code": "ORA",
+          "category_label": "Tradição oral",
+          "name": "Histórias de sobreviventes de frio extremo e fendas ocultas passadas adiante sem registro escrito."
+        },
+        {
+          "category_code": "REF",
+          "category_label": "Refúgio/acolhimento",
+          "name": "Abrigo emergencial sempre disponível contra frio extremo e fendas ocultas."
+        },
+        {
+          "category_code": "LAZ",
+          "category_label": "Lazer",
+          "name": "Descanso coletivo em torno do resultado do dia de sobrevivência glacial e extração sob o gelo."
+        },
+        {
+          "category_code": "FAM",
+          "category_label": "Família",
+          "name": "Estrutura familiar flexível, adaptada à rotatividade de quem trabalha com sobrevivência glacial e extração sob o gelo."
+        },
+        {
+          "category_code": "DAN",
+          "category_label": "Dança",
+          "name": "Dança de celebração após um dia seguro apesar de frio extremo e fendas ocultas."
+        },
+        {
+          "category_code": "CMP",
+          "category_label": "Campo/território compartilhado",
+          "name": "Uso compartilhado das zonas de caça e coleta sob condições glaciais."
+        },
+        {
+          "category_code": "FUN",
+          "category_label": "Ritos fúnebres",
+          "name": "Homenagem simples a quem morreu por causa de frio extremo e fendas ocultas."
+        },
+        {
+          "category_code": "ETQ",
+          "category_label": "Etiqueta",
+          "name": "Regra não-escrita de sempre avisar o Conselho do Gelo antes de se afastar sozinho."
+        },
+        {
+          "category_code": "LUT",
+          "category_label": "Luto",
+          "name": "Luto breve e coletivo, sem interromper o trabalho essencial por muito tempo."
+        },
+        {
+          "category_code": "UNI",
+          "category_label": "União/casamento",
+          "name": "União reconhecida por declaração pública ao Conselho do Gelo, sem cerimônia obrigatória."
+        },
+        {
+          "category_code": "COM",
+          "category_label": "Comunidade/pertencimento",
+          "name": "Pertencimento por contribuição prática à sobrevivência coletiva contra frio extremo e fendas ocultas."
+        },
+        {
+          "category_code": "COM",
+          "category_label": "Comunidade/reciprocidade",
+          "name": "Reciprocidade medida por ajuda mútua em emergências de frio extremo e fendas ocultas."
+        },
+        {
+          "category_code": "COM",
+          "category_label": "Comunidade/convivência",
+          "name": "Convivência cotidiana organizada em torno do ciclo de sobrevivência glacial e extração sob o gelo."
+        }
+      ]
+    },
+    {
+      "territory_id": "TER-017",
+      "territory_name": "Arquipélago Etéreo",
+      "demonym": "Etéreos",
+      "council_ref": "Círculo dos Ilhéus",
+      "trait_count": 32,
+      "traits": [
+        {
+          "category_code": "FND",
+          "category_label": "Fundação/identidade",
+          "name": "Etéreos"
+        },
+        {
+          "category_code": "HOS",
+          "category_label": "Hospitalidade geral",
+          "name": "Acolhimento condicionado à familiaridade com instabilidade de flutuação das ilhas, comum entre os Etéreos."
+        },
+        {
+          "category_code": "HOSF",
+          "category_label": "Hospitalidade alimentar",
+          "name": "Refeição de boas-vindas sempre inclui algo derivado de economia não-agrária baseada em éter."
+        },
+        {
+          "category_code": "ALI",
+          "category_label": "Alimentação",
+          "name": "Dieta adaptada a estabilização de ilha e comércio de éter, com pouco desperdício por escassez local."
+        },
+        {
+          "category_code": "VES",
+          "category_label": "Vestuário",
+          "name": "Traje utilitário resistente a instabilidade de flutuação das ilhas (ver TRJ de Arquipélago Etéreo)."
+        },
+        {
+          "category_code": "ART",
+          "category_label": "Artesanato/materiais",
+          "name": "Objetos utilitários feitos com sobras de Frasco de Éter Estabilizado (REG-004)."
+        },
+        {
+          "category_code": "SIM",
+          "category_label": "Simbologia/pertencimento",
+          "name": "Insígnia informal ligada ao Círculo dos Ilhéus, sem hierarquia rígida."
+        },
+        {
+          "category_code": "EDU",
+          "category_label": "Educação/aprendizagem",
+          "name": "Aprendizado prático transmitido por quem já sobrevive a instabilidade de flutuação das ilhas."
+        },
+        {
+          "category_code": "EXP",
+          "category_label": "Expressão",
+          "name": "Narrativas orais sobre encontros com instabilidade de flutuação das ilhas."
+        },
+        {
+          "category_code": "ESP",
+          "category_label": "Espiritualidade",
+          "name": "Respeito difuso ao território, sem religião oficial nomeada."
+        },
+        {
+          "category_code": "CIV",
+          "category_label": "Civilidade/convivência pública",
+          "name": "Decisões coletivas discutidas em assembleia informal do Círculo dos Ilhéus."
+        },
+        {
+          "category_code": "RIT",
+          "category_label": "Ritual",
+          "name": "Marco de passagem ligado à primeira extração bem-sucedida de Frasco de Éter Estabilizado."
+        },
+        {
+          "category_code": "MUS",
+          "category_label": "Música",
+          "name": "Cantos de trabalho ritmados pelo ciclo de estabilização de ilha e comércio de éter."
+        },
+        {
+          "category_code": "CEL",
+          "category_label": "Celebração",
+          "name": "Festa sazonal de colheita/extração de Frasco de Éter Estabilizado."
+        },
+        {
+          "category_code": "EST",
+          "category_label": "Estética",
+          "name": "Preferência por tons e formas que remetem a estabilização de ilha e comércio de éter."
+        },
+        {
+          "category_code": "JOG",
+          "category_label": "Jogos",
+          "name": "Competições informais de habilidade ligadas a instabilidade de flutuação das ilhas (quem resiste mais, quem detecta primeiro)."
+        },
+        {
+          "category_code": "TRB",
+          "category_label": "Trabalho",
+          "name": "Trabalho organizado em turnos curtos por causa de instabilidade de flutuação das ilhas."
+        },
+        {
+          "category_code": "REP",
+          "category_label": "Reputação",
+          "name": "Reputação medida por confiabilidade em lidar com instabilidade de flutuação das ilhas, não por riqueza."
+        },
+        {
+          "category_code": "CFL",
+          "category_label": "Conflito/resolução",
+          "name": "Disputas mediadas pelo Círculo dos Ilhéus, sem tribunal formal."
+        },
+        {
+          "category_code": "ORA",
+          "category_label": "Tradição oral",
+          "name": "Histórias de sobreviventes de instabilidade de flutuação das ilhas passadas adiante sem registro escrito."
+        },
+        {
+          "category_code": "REF",
+          "category_label": "Refúgio/acolhimento",
+          "name": "Abrigo emergencial sempre disponível contra instabilidade de flutuação das ilhas."
+        },
+        {
+          "category_code": "LAZ",
+          "category_label": "Lazer",
+          "name": "Descanso coletivo em torno do resultado do dia de estabilização de ilha e comércio de éter."
+        },
+        {
+          "category_code": "FAM",
+          "category_label": "Família",
+          "name": "Estrutura familiar flexível, adaptada à rotatividade de quem trabalha com estabilização de ilha e comércio de éter."
+        },
+        {
+          "category_code": "DAN",
+          "category_label": "Dança",
+          "name": "Dança de celebração após um dia seguro apesar de instabilidade de flutuação das ilhas."
+        },
+        {
+          "category_code": "CMP",
+          "category_label": "Campo/território compartilhado",
+          "name": "Uso compartilhado das zonas de economia não-agrária baseada em éter."
+        },
+        {
+          "category_code": "FUN",
+          "category_label": "Ritos fúnebres",
+          "name": "Homenagem simples a quem morreu por causa de instabilidade de flutuação das ilhas."
+        },
+        {
+          "category_code": "ETQ",
+          "category_label": "Etiqueta",
+          "name": "Regra não-escrita de sempre avisar o Círculo dos Ilhéus antes de se afastar sozinho."
+        },
+        {
+          "category_code": "LUT",
+          "category_label": "Luto",
+          "name": "Luto breve e coletivo, sem interromper o trabalho essencial por muito tempo."
+        },
+        {
+          "category_code": "UNI",
+          "category_label": "União/casamento",
+          "name": "União reconhecida por declaração pública ao Círculo dos Ilhéus, sem cerimônia obrigatória."
+        },
+        {
+          "category_code": "COM",
+          "category_label": "Comunidade/pertencimento",
+          "name": "Pertencimento por contribuição prática à sobrevivência coletiva contra instabilidade de flutuação das ilhas."
+        },
+        {
+          "category_code": "COM",
+          "category_label": "Comunidade/reciprocidade",
+          "name": "Reciprocidade medida por ajuda mútua em emergências de instabilidade de flutuação das ilhas."
+        },
+        {
+          "category_code": "COM",
+          "category_label": "Comunidade/convivência",
+          "name": "Convivência cotidiana organizada em torno do ciclo de estabilização de ilha e comércio de éter."
+        }
+      ]
+    },
+    {
+      "territory_id": "TER-018",
+      "territory_name": "Fossa Abissal",
+      "demonym": "Profundos",
+      "council_ref": "Conselho das Profundezas",
+      "trait_count": 32,
+      "traits": [
+        {
+          "category_code": "FND",
+          "category_label": "Fundação/identidade",
+          "name": "Profundos"
+        },
+        {
+          "category_code": "HOS",
+          "category_label": "Hospitalidade geral",
+          "name": "Acolhimento condicionado à familiaridade com pressão das profundezas, comum entre os Profundos."
+        },
+        {
+          "category_code": "HOSF",
+          "category_label": "Hospitalidade alimentar",
+          "name": "Refeição de boas-vindas sempre inclui algo derivado de cultivo de Coral Luminoso nos Recifes Luminosos."
+        },
+        {
+          "category_code": "ALI",
+          "category_label": "Alimentação",
+          "name": "Dieta adaptada a pressão extrema e bioluminescência, com pouco desperdício por escassez local."
+        },
+        {
+          "category_code": "VES",
+          "category_label": "Vestuário",
+          "name": "Traje utilitário resistente a pressão das profundezas (ver TRJ de Fossa Abissal)."
+        },
+        {
+          "category_code": "ART",
+          "category_label": "Artesanato/materiais",
+          "name": "Objetos utilitários feitos com sobras de Placa de Titânio Abissal (REG-005)."
+        },
+        {
+          "category_code": "SIM",
+          "category_label": "Simbologia/pertencimento",
+          "name": "Insígnia informal ligada ao Conselho das Profundezas, sem hierarquia rígida."
+        },
+        {
+          "category_code": "EDU",
+          "category_label": "Educação/aprendizagem",
+          "name": "Aprendizado prático transmitido por quem já sobrevive a pressão das profundezas."
+        },
+        {
+          "category_code": "EXP",
+          "category_label": "Expressão",
+          "name": "Narrativas orais sobre encontros com pressão das profundezas."
+        },
+        {
+          "category_code": "ESP",
+          "category_label": "Espiritualidade",
+          "name": "Respeito difuso ao território, sem religião oficial nomeada."
+        },
+        {
+          "category_code": "CIV",
+          "category_label": "Civilidade/convivência pública",
+          "name": "Decisões coletivas discutidas em assembleia informal do Conselho das Profundezas."
+        },
+        {
+          "category_code": "RIT",
+          "category_label": "Ritual",
+          "name": "Marco de passagem ligado à primeira extração bem-sucedida de Placa de Titânio Abissal."
+        },
+        {
+          "category_code": "MUS",
+          "category_label": "Música",
+          "name": "Cantos de trabalho ritmados pelo ciclo de pressão extrema e bioluminescência."
+        },
+        {
+          "category_code": "CEL",
+          "category_label": "Celebração",
+          "name": "Festa sazonal de colheita/extração de Placa de Titânio Abissal."
+        },
+        {
+          "category_code": "EST",
+          "category_label": "Estética",
+          "name": "Preferência por tons e formas que remetem a pressão extrema e bioluminescência."
+        },
+        {
+          "category_code": "JOG",
+          "category_label": "Jogos",
+          "name": "Competições informais de habilidade ligadas a pressão das profundezas (quem resiste mais, quem detecta primeiro)."
+        },
+        {
+          "category_code": "TRB",
+          "category_label": "Trabalho",
+          "name": "Trabalho organizado em turnos curtos por causa de pressão das profundezas."
+        },
+        {
+          "category_code": "REP",
+          "category_label": "Reputação",
+          "name": "Reputação medida por confiabilidade em lidar com pressão das profundezas, não por riqueza."
+        },
+        {
+          "category_code": "CFL",
+          "category_label": "Conflito/resolução",
+          "name": "Disputas mediadas pelo Conselho das Profundezas, sem tribunal formal."
+        },
+        {
+          "category_code": "ORA",
+          "category_label": "Tradição oral",
+          "name": "Histórias de sobreviventes de pressão das profundezas passadas adiante sem registro escrito."
+        },
+        {
+          "category_code": "REF",
+          "category_label": "Refúgio/acolhimento",
+          "name": "Abrigo emergencial sempre disponível contra pressão das profundezas."
+        },
+        {
+          "category_code": "LAZ",
+          "category_label": "Lazer",
+          "name": "Descanso coletivo em torno do resultado do dia de pressão extrema e bioluminescência."
+        },
+        {
+          "category_code": "FAM",
+          "category_label": "Família",
+          "name": "Estrutura familiar flexível, adaptada à rotatividade de quem trabalha com pressão extrema e bioluminescência."
+        },
+        {
+          "category_code": "DAN",
+          "category_label": "Dança",
+          "name": "Dança de celebração após um dia seguro apesar de pressão das profundezas."
+        },
+        {
+          "category_code": "CMP",
+          "category_label": "Campo/território compartilhado",
+          "name": "Uso compartilhado das zonas de cultivo de Coral Luminoso nos Recifes Luminosos."
+        },
+        {
+          "category_code": "FUN",
+          "category_label": "Ritos fúnebres",
+          "name": "Homenagem simples a quem morreu por causa de pressão das profundezas."
+        },
+        {
+          "category_code": "ETQ",
+          "category_label": "Etiqueta",
+          "name": "Regra não-escrita de sempre avisar o Conselho das Profundezas antes de se afastar sozinho."
+        },
+        {
+          "category_code": "LUT",
+          "category_label": "Luto",
+          "name": "Luto breve e coletivo, sem interromper o trabalho essencial por muito tempo."
+        },
+        {
+          "category_code": "UNI",
+          "category_label": "União/casamento",
+          "name": "União reconhecida por declaração pública ao Conselho das Profundezas, sem cerimônia obrigatória."
+        },
+        {
+          "category_code": "COM",
+          "category_label": "Comunidade/pertencimento",
+          "name": "Pertencimento por contribuição prática à sobrevivência coletiva contra pressão das profundezas."
+        },
+        {
+          "category_code": "COM",
+          "category_label": "Comunidade/reciprocidade",
+          "name": "Reciprocidade medida por ajuda mútua em emergências de pressão das profundezas."
+        },
+        {
+          "category_code": "COM",
+          "category_label": "Comunidade/convivência",
+          "name": "Convivência cotidiana organizada em torno do ciclo de pressão extrema e bioluminescência."
+        }
+      ]
+    },
+    {
+      "territory_id": "TER-019",
+      "territory_name": "Mata Perdida",
+      "demonym": "Silvanos",
+      "council_ref": "Guardiões da Mata",
+      "trait_count": 32,
+      "traits": [
+        {
+          "category_code": "FND",
+          "category_label": "Fundação/identidade",
+          "name": "Silvanos"
+        },
+        {
+          "category_code": "HOS",
+          "category_label": "Hospitalidade geral",
+          "name": "Acolhimento condicionado à familiaridade com vegetação hostil e ruínas instáveis, comum entre os Silvanos."
+        },
+        {
+          "category_code": "HOSF",
+          "category_label": "Hospitalidade alimentar",
+          "name": "Refeição de boas-vindas sempre inclui algo derivado de exportação de Orquídea-Sombria."
+        },
+        {
+          "category_code": "ALI",
+          "category_label": "Alimentação",
+          "name": "Dieta adaptada a selva densa e ruínas cobertas, com pouco desperdício por escassez local."
+        },
+        {
+          "category_code": "VES",
+          "category_label": "Vestuário",
+          "name": "Traje utilitário resistente a vegetação hostil e ruínas instáveis (ver TRJ de Mata Perdida)."
+        },
+        {
+          "category_code": "ART",
+          "category_label": "Artesanato/materiais",
+          "name": "Objetos utilitários feitos com sobras de Extrato de Raiz Purificado (REG-006)."
+        },
+        {
+          "category_code": "SIM",
+          "category_label": "Simbologia/pertencimento",
+          "name": "Insígnia informal ligada ao Guardiões da Mata, sem hierarquia rígida."
+        },
+        {
+          "category_code": "EDU",
+          "category_label": "Educação/aprendizagem",
+          "name": "Aprendizado prático transmitido por quem já sobrevive a vegetação hostil e ruínas instáveis."
+        },
+        {
+          "category_code": "EXP",
+          "category_label": "Expressão",
+          "name": "Narrativas orais sobre encontros com vegetação hostil e ruínas instáveis."
+        },
+        {
+          "category_code": "ESP",
+          "category_label": "Espiritualidade",
+          "name": "Respeito difuso ao território, sem religião oficial nomeada."
+        },
+        {
+          "category_code": "CIV",
+          "category_label": "Civilidade/convivência pública",
+          "name": "Decisões coletivas discutidas em assembleia informal do Guardiões da Mata."
+        },
+        {
+          "category_code": "RIT",
+          "category_label": "Ritual",
+          "name": "Marco de passagem ligado à primeira extração bem-sucedida de Extrato de Raiz Purificado."
+        },
+        {
+          "category_code": "MUS",
+          "category_label": "Música",
+          "name": "Cantos de trabalho ritmados pelo ciclo de selva densa e ruínas cobertas."
+        },
+        {
+          "category_code": "CEL",
+          "category_label": "Celebração",
+          "name": "Festa sazonal de colheita/extração de Extrato de Raiz Purificado."
+        },
+        {
+          "category_code": "EST",
+          "category_label": "Estética",
+          "name": "Preferência por tons e formas que remetem a selva densa e ruínas cobertas."
+        },
+        {
+          "category_code": "JOG",
+          "category_label": "Jogos",
+          "name": "Competições informais de habilidade ligadas a vegetação hostil e ruínas instáveis (quem resiste mais, quem detecta primeiro)."
+        },
+        {
+          "category_code": "TRB",
+          "category_label": "Trabalho",
+          "name": "Trabalho organizado em turnos curtos por causa de vegetação hostil e ruínas instáveis."
+        },
+        {
+          "category_code": "REP",
+          "category_label": "Reputação",
+          "name": "Reputação medida por confiabilidade em lidar com vegetação hostil e ruínas instáveis, não por riqueza."
+        },
+        {
+          "category_code": "CFL",
+          "category_label": "Conflito/resolução",
+          "name": "Disputas mediadas pelo Guardiões da Mata, sem tribunal formal."
+        },
+        {
+          "category_code": "ORA",
+          "category_label": "Tradição oral",
+          "name": "Histórias de sobreviventes de vegetação hostil e ruínas instáveis passadas adiante sem registro escrito."
+        },
+        {
+          "category_code": "REF",
+          "category_label": "Refúgio/acolhimento",
+          "name": "Abrigo emergencial sempre disponível contra vegetação hostil e ruínas instáveis."
+        },
+        {
+          "category_code": "LAZ",
+          "category_label": "Lazer",
+          "name": "Descanso coletivo em torno do resultado do dia de selva densa e ruínas cobertas."
+        },
+        {
+          "category_code": "FAM",
+          "category_label": "Família",
+          "name": "Estrutura familiar flexível, adaptada à rotatividade de quem trabalha com selva densa e ruínas cobertas."
+        },
+        {
+          "category_code": "DAN",
+          "category_label": "Dança",
+          "name": "Dança de celebração após um dia seguro apesar de vegetação hostil e ruínas instáveis."
+        },
+        {
+          "category_code": "CMP",
+          "category_label": "Campo/território compartilhado",
+          "name": "Uso compartilhado das zonas de exportação de Orquídea-Sombria."
+        },
+        {
+          "category_code": "FUN",
+          "category_label": "Ritos fúnebres",
+          "name": "Homenagem simples a quem morreu por causa de vegetação hostil e ruínas instáveis."
+        },
+        {
+          "category_code": "ETQ",
+          "category_label": "Etiqueta",
+          "name": "Regra não-escrita de sempre avisar o Guardiões da Mata antes de se afastar sozinho."
+        },
+        {
+          "category_code": "LUT",
+          "category_label": "Luto",
+          "name": "Luto breve e coletivo, sem interromper o trabalho essencial por muito tempo."
+        },
+        {
+          "category_code": "UNI",
+          "category_label": "União/casamento",
+          "name": "União reconhecida por declaração pública ao Guardiões da Mata, sem cerimônia obrigatória."
+        },
+        {
+          "category_code": "COM",
+          "category_label": "Comunidade/pertencimento",
+          "name": "Pertencimento por contribuição prática à sobrevivência coletiva contra vegetação hostil e ruínas instáveis."
+        },
+        {
+          "category_code": "COM",
+          "category_label": "Comunidade/reciprocidade",
+          "name": "Reciprocidade medida por ajuda mútua em emergências de vegetação hostil e ruínas instáveis."
+        },
+        {
+          "category_code": "COM",
+          "category_label": "Comunidade/convivência",
+          "name": "Convivência cotidiana organizada em torno do ciclo de selva densa e ruínas cobertas."
+        }
+      ]
+    }
+  ]
+}

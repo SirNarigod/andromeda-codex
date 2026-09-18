@@ -1,0 +1,36 @@
+{
+  "est_id": "EST-023",
+  "record_kind": "DERIVED_ESTABLISHMENT_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Terminal de Carga Aérea",
+  "building_type": "COMERCIAL",
+  "parent_locality": "LOC-006-002",
+  "parent_subregion": "SUB-006-002",
+  "parent_political_unit": "TER-006",
+  "function": "Recepção e despacho de carga transportada por naves aéreas.",
+  "economic_role": {
+    "is_vendor": true,
+    "sells": [
+      "fretes aéreos"
+    ],
+    "produces": [],
+    "regulation_factor": 0.6
+  },
+  "capacity": {
+    "jobs": 9,
+    "residents": 0
+  },
+  "professions_linked": [],
+  "notable_link": "Ancoradouro de Naves (SUB-006-002)",
+  "prohibitions": [
+    "NO_NEW_SOVEREIGNTY",
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION"
+  ],
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "environmental_material_profile": {
+    "material": "MADEIRA_E_ALVENARIA",
+    "flammability": "ALTA",
+    "recovery_days": 7
+  }
+}

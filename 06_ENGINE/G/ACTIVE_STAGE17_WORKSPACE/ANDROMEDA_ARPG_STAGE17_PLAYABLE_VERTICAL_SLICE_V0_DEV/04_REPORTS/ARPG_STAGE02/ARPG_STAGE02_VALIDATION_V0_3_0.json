@@ -1,0 +1,15 @@
+{
+  "record_id": "ARPG-STAGE02-VALIDATION-V0.3.0",
+  "stage": "02/18",
+  "checks": 51,
+  "passed": 51,
+  "failed": 0,
+  "status": "PASS",
+  "failures": [],
+  "metrics": {
+    "events": 5
+  },
+  "canon_mutations": 0,
+  "numeric_authority": "GAMEPLAY_DERIVED_NOT_CANON",
+  "art_pipeline": "LOCKED"
+}

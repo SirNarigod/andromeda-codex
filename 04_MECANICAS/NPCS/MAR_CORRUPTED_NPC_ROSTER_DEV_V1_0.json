@@ -1,0 +1,330 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "MAR-CORRUPTED-NPC-ROSTER-DEV-V1.0",
+  "title": "NPCs Corrompidos Conscientes (fase 59) - 1 por subregiao corrompida",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "balance_model": "Mesmo Total Power Budget (TPB) por tier ja usado nos 4 rosters MAR: BAIXO=80, MEDIO=100, ALTO=120.",
+  "r2_guard": "Nenhum PER-XXX/LID-XXX/CIV-XXX real e corrompido retroativamente - os 10 NPCs sao pessoas novas e 100% anonimas em sua origem. STELLAR_SYMBIOSIS_LAW permanece exclusiva de Kenua/Espinho-Negro; estes NPCs usam um mecanismo de corrupcao sistemico diferente (parasitismo comum da Raiz). Toda fala residual (memory_echo) e um 'eco' subjetivo (STELLAR_INFORMATION_MEMORY_LAW), nunca fato confirmado.",
+  "npcs": [
+    {
+      "npc_id": "ZUM-001",
+      "name": "Corrompido do Perimetro",
+      "former_role": "Ex-guarda do Perimetro de Contencao Alfa",
+      "subregion_id": "SUB-012-001",
+      "tier": "ALTO",
+      "power_budget": {
+        "hp": 50,
+        "speed": 15,
+        "damage_mod": 40,
+        "armor": 15,
+        "total": 120
+      },
+      "memory_echo": "\"...o portao... nao fechem o portao...\"",
+      "passive_skill": {
+        "skill_id": "ZUM-P-CASCA",
+        "skill_kind": "PASSIVE",
+        "name": "Casca Radicular",
+        "effect": "reduz dano fisico recebido em 10% (flat)"
+      },
+      "active_skill": {
+        "skill_id": "ZUM-A-AGARRE",
+        "skill_kind": "ACTIVE",
+        "name": "Agarre de Raiz",
+        "effect": "prende um alvo proximo por 2s, impedindo movimento",
+        "resource_cost": 20,
+        "cooldown_s": 10.0
+      },
+      "distinction_note": "Corrompido comum pela Raiz Profunda - um parasitismo que pode afetar qualquer ser exposto a ela, um mecanismo bem diferente do vinculo unico entre Kenua e o Espinho-Negro, que continua exclusivo dela. Nenhuma pessoa ja conhecida foi corrompida aqui - e sempre alguem novo e sem nome previo.",
+      "memory_note": "Fala residual classificada como eco - e uma alegacao subjetiva, nao prova identidade nem e um fato historico confirmado.",
+      "safety": "FICTIONAL_CHARACTER_ONLY"
+    },
+    {
+      "npc_id": "ZUM-002",
+      "name": "Corrompido do Campo",
+      "former_role": "Ex-morador do Campo de Deslocados",
+      "subregion_id": "SUB-012-002",
+      "tier": "MEDIO",
+      "power_budget": {
+        "hp": 30,
+        "speed": 30,
+        "damage_mod": 25,
+        "armor": 15,
+        "total": 100
+      },
+      "memory_echo": "\"...minha familia estava na segunda fila... segunda fila...\"",
+      "passive_skill": {
+        "skill_id": "ZUM-P-CASCA",
+        "skill_kind": "PASSIVE",
+        "name": "Casca Radicular",
+        "effect": "reduz dano fisico recebido em 10% (flat)"
+      },
+      "active_skill": {
+        "skill_id": "ZUM-A-UIVO",
+        "skill_kind": "ACTIVE",
+        "name": "Uivo Fragmentado",
+        "effect": "atrai a atencao de outros corrompidos proximos",
+        "resource_cost": 15,
+        "cooldown_s": 12.0
+      },
+      "distinction_note": "Corrompido comum pela Raiz Profunda - um parasitismo que pode afetar qualquer ser exposto a ela, um mecanismo bem diferente do vinculo unico entre Kenua e o Espinho-Negro, que continua exclusivo dela. Nenhuma pessoa ja conhecida foi corrompida aqui - e sempre alguem novo e sem nome previo.",
+      "memory_note": "Fala residual classificada como eco - e uma alegacao subjetiva, nao prova identidade nem e um fato historico confirmado.",
+      "safety": "FICTIONAL_CHARACTER_ONLY"
+    },
+    {
+      "npc_id": "ZUM-003",
+      "name": "Corrompido do Comando",
+      "former_role": "Ex-assistente do Comando Emergencial",
+      "subregion_id": "SUB-012-003",
+      "tier": "BAIXO",
+      "power_budget": {
+        "hp": 20,
+        "speed": 25,
+        "damage_mod": 20,
+        "armor": 15,
+        "total": 80
+      },
+      "memory_echo": "\"...relatorio pendente... assinatura pendente...\"",
+      "passive_skill": {
+        "skill_id": "ZUM-P-CASCA",
+        "skill_kind": "PASSIVE",
+        "name": "Casca Radicular",
+        "effect": "reduz dano fisico recebido em 10% (flat)"
+      },
+      "active_skill": {
+        "skill_id": "ZUM-A-AGARRE",
+        "skill_kind": "ACTIVE",
+        "name": "Agarre de Raiz",
+        "effect": "prende um alvo proximo por 2s, impedindo movimento",
+        "resource_cost": 20,
+        "cooldown_s": 10.0
+      },
+      "distinction_note": "Corrompido comum pela Raiz Profunda - um parasitismo que pode afetar qualquer ser exposto a ela, um mecanismo bem diferente do vinculo unico entre Kenua e o Espinho-Negro, que continua exclusivo dela. Nenhuma pessoa ja conhecida foi corrompida aqui - e sempre alguem novo e sem nome previo.",
+      "memory_note": "Fala residual classificada como eco - e uma alegacao subjetiva, nao prova identidade nem e um fato historico confirmado.",
+      "safety": "FICTIONAL_CHARACTER_ONLY"
+    },
+    {
+      "npc_id": "ZUM-004",
+      "name": "Corrompido das Raizes",
+      "former_role": "Ex-guardiao das Raizes Sagradas",
+      "subregion_id": "SUB-008-002",
+      "tier": "ALTO",
+      "power_budget": {
+        "hp": 55,
+        "speed": 10,
+        "damage_mod": 35,
+        "armor": 20,
+        "total": 120
+      },
+      "memory_echo": "\"...eu protegia... ainda protejo... protejo o que restou...\"",
+      "passive_skill": {
+        "skill_id": "ZUM-P-RAIZ_FUNDA",
+        "skill_kind": "PASSIVE",
+        "name": "Raiz Funda",
+        "effect": "regenera 1% do HP maximo/s enquanto imovel"
+      },
+      "active_skill": {
+        "skill_id": "ZUM-A-AGARRE",
+        "skill_kind": "ACTIVE",
+        "name": "Agarre de Raiz",
+        "effect": "prende um alvo proximo por 2s, impedindo movimento",
+        "resource_cost": 20,
+        "cooldown_s": 10.0
+      },
+      "distinction_note": "Corrompido comum pela Raiz Profunda - um parasitismo que pode afetar qualquer ser exposto a ela, um mecanismo bem diferente do vinculo unico entre Kenua e o Espinho-Negro, que continua exclusivo dela. Nenhuma pessoa ja conhecida foi corrompida aqui - e sempre alguem novo e sem nome previo.",
+      "memory_note": "Fala residual classificada como eco - e uma alegacao subjetiva, nao prova identidade nem e um fato historico confirmado.",
+      "safety": "FICTIONAL_CHARACTER_ONLY"
+    },
+    {
+      "npc_id": "ZUM-005",
+      "name": "Corrompido das Ruinas Cobertas",
+      "former_role": "Ex-pesquisador das Ruinas Cobertas",
+      "subregion_id": "SUB-019-002",
+      "tier": "MEDIO",
+      "power_budget": {
+        "hp": 25,
+        "speed": 35,
+        "damage_mod": 25,
+        "armor": 15,
+        "total": 100
+      },
+      "memory_echo": "\"...a inscricao dizia... eu ia anotar... onde esta meu caderno...\"",
+      "passive_skill": {
+        "skill_id": "ZUM-P-CASCA",
+        "skill_kind": "PASSIVE",
+        "name": "Casca Radicular",
+        "effect": "reduz dano fisico recebido em 10% (flat)"
+      },
+      "active_skill": {
+        "skill_id": "ZUM-A-UIVO",
+        "skill_kind": "ACTIVE",
+        "name": "Uivo Fragmentado",
+        "effect": "atrai a atencao de outros corrompidos proximos",
+        "resource_cost": 15,
+        "cooldown_s": 12.0
+      },
+      "distinction_note": "Corrompido comum pela Raiz Profunda - um parasitismo que pode afetar qualquer ser exposto a ela, um mecanismo bem diferente do vinculo unico entre Kenua e o Espinho-Negro, que continua exclusivo dela. Nenhuma pessoa ja conhecida foi corrompida aqui - e sempre alguem novo e sem nome previo.",
+      "memory_note": "Fala residual classificada como eco - e uma alegacao subjetiva, nao prova identidade nem e um fato historico confirmado.",
+      "safety": "FICTIONAL_CHARACTER_ONLY"
+    },
+    {
+      "npc_id": "ZUM-006",
+      "name": "Corrompido das Fendas",
+      "former_role": "Ex-batedor das Fendas da Nevoa",
+      "subregion_id": "SUB-011-006",
+      "tier": "MEDIO",
+      "power_budget": {
+        "hp": 20,
+        "speed": 40,
+        "damage_mod": 25,
+        "armor": 15,
+        "total": 100
+      },
+      "memory_echo": "\"...a nevoa engana... eu conhecia a rota... conhecia...\"",
+      "passive_skill": {
+        "skill_id": "ZUM-P-CASCA",
+        "skill_kind": "PASSIVE",
+        "name": "Casca Radicular",
+        "effect": "reduz dano fisico recebido em 10% (flat)"
+      },
+      "active_skill": {
+        "skill_id": "ZUM-A-AGARRE",
+        "skill_kind": "ACTIVE",
+        "name": "Agarre de Raiz",
+        "effect": "prende um alvo proximo por 2s, impedindo movimento",
+        "resource_cost": 20,
+        "cooldown_s": 10.0
+      },
+      "distinction_note": "Corrompido comum pela Raiz Profunda - um parasitismo que pode afetar qualquer ser exposto a ela, um mecanismo bem diferente do vinculo unico entre Kenua e o Espinho-Negro, que continua exclusivo dela. Nenhuma pessoa ja conhecida foi corrompida aqui - e sempre alguem novo e sem nome previo.",
+      "memory_note": "Fala residual classificada como eco - e uma alegacao subjetiva, nao prova identidade nem e um fato historico confirmado.",
+      "safety": "FICTIONAL_CHARACTER_ONLY"
+    },
+    {
+      "npc_id": "ZUM-007",
+      "name": "Corrompido dos Tuneis",
+      "former_role": "Ex-mineiro dos Tuneis de Extracao",
+      "subregion_id": "SUB-009-002",
+      "tier": "BAIXO",
+      "power_budget": {
+        "hp": 25,
+        "speed": 15,
+        "damage_mod": 25,
+        "armor": 15,
+        "total": 80
+      },
+      "memory_echo": "\"...o cristal chamava... ainda chama... escuto daqui...\"",
+      "passive_skill": {
+        "skill_id": "ZUM-P-RAIZ_FUNDA",
+        "skill_kind": "PASSIVE",
+        "name": "Raiz Funda",
+        "effect": "regenera 1% do HP maximo/s enquanto imovel"
+      },
+      "active_skill": {
+        "skill_id": "ZUM-A-UIVO",
+        "skill_kind": "ACTIVE",
+        "name": "Uivo Fragmentado",
+        "effect": "atrai a atencao de outros corrompidos proximos",
+        "resource_cost": 15,
+        "cooldown_s": 12.0
+      },
+      "distinction_note": "Corrompido comum pela Raiz Profunda - um parasitismo que pode afetar qualquer ser exposto a ela, um mecanismo bem diferente do vinculo unico entre Kenua e o Espinho-Negro, que continua exclusivo dela. Nenhuma pessoa ja conhecida foi corrompida aqui - e sempre alguem novo e sem nome previo.",
+      "memory_note": "Fala residual classificada como eco - e uma alegacao subjetiva, nao prova identidade nem e um fato historico confirmado.",
+      "safety": "FICTIONAL_CHARACTER_ONLY"
+    },
+    {
+      "npc_id": "ZUM-008",
+      "name": "Corrompido da Passagem",
+      "former_role": "Ex-guarda da Passagem Secreta",
+      "subregion_id": "SUB-013-003",
+      "tier": "MEDIO",
+      "power_budget": {
+        "hp": 30,
+        "speed": 20,
+        "damage_mod": 30,
+        "armor": 20,
+        "total": 100
+      },
+      "memory_echo": "\"...ordem de Serverus... ningem passa... ninguem...\"",
+      "passive_skill": {
+        "skill_id": "ZUM-P-CASCA",
+        "skill_kind": "PASSIVE",
+        "name": "Casca Radicular",
+        "effect": "reduz dano fisico recebido em 10% (flat)"
+      },
+      "active_skill": {
+        "skill_id": "ZUM-A-AGARRE",
+        "skill_kind": "ACTIVE",
+        "name": "Agarre de Raiz",
+        "effect": "prende um alvo proximo por 2s, impedindo movimento",
+        "resource_cost": 20,
+        "cooldown_s": 10.0
+      },
+      "distinction_note": "Corrompido comum pela Raiz Profunda - um parasitismo que pode afetar qualquer ser exposto a ela, um mecanismo bem diferente do vinculo unico entre Kenua e o Espinho-Negro, que continua exclusivo dela. Nenhuma pessoa ja conhecida foi corrompida aqui - e sempre alguem novo e sem nome previo. A mencao a Serverus e so uma lembranca subjetiva desse NPC anonimo - nao confirma nada sobre as acoes reais de Serverus Vaelkor.",
+      "memory_note": "Fala residual classificada como eco - e uma alegacao subjetiva, nao prova identidade nem e um fato historico confirmado.",
+      "safety": "FICTIONAL_CHARACTER_ONLY"
+    },
+    {
+      "npc_id": "ZUM-009",
+      "name": "Corrompido das Ruinas Antigas",
+      "former_role": "Ex-arqueologo das Ruinas de Antes-do-Pacto",
+      "subregion_id": "SUB-015-002",
+      "tier": "MEDIO",
+      "power_budget": {
+        "hp": 20,
+        "speed": 35,
+        "damage_mod": 30,
+        "armor": 15,
+        "total": 100
+      },
+      "memory_echo": "\"...quase decifrei... a camara... quase...\"",
+      "passive_skill": {
+        "skill_id": "ZUM-P-CASCA",
+        "skill_kind": "PASSIVE",
+        "name": "Casca Radicular",
+        "effect": "reduz dano fisico recebido em 10% (flat)"
+      },
+      "active_skill": {
+        "skill_id": "ZUM-A-UIVO",
+        "skill_kind": "ACTIVE",
+        "name": "Uivo Fragmentado",
+        "effect": "atrai a atencao de outros corrompidos proximos",
+        "resource_cost": 15,
+        "cooldown_s": 12.0
+      },
+      "distinction_note": "Corrompido comum pela Raiz Profunda - um parasitismo que pode afetar qualquer ser exposto a ela, um mecanismo bem diferente do vinculo unico entre Kenua e o Espinho-Negro, que continua exclusivo dela. Nenhuma pessoa ja conhecida foi corrompida aqui - e sempre alguem novo e sem nome previo. A identidade da civilizacao das ruinas por perto continua nao revelada.",
+      "memory_note": "Fala residual classificada como eco - e uma alegacao subjetiva, nao prova identidade nem e um fato historico confirmado.",
+      "safety": "FICTIONAL_CHARACTER_ONLY"
+    },
+    {
+      "npc_id": "ZUM-010",
+      "name": "Corrompido da Fenda Gelada",
+      "former_role": "Ex-vigia da Fenda Congelada",
+      "subregion_id": "SUB-016-003",
+      "tier": "ALTO",
+      "power_budget": {
+        "hp": 50,
+        "speed": 10,
+        "damage_mod": 30,
+        "armor": 30,
+        "total": 120
+      },
+      "memory_echo": "\"...o gelo rachou... eu gritei... alguem ouviu?...\"",
+      "passive_skill": {
+        "skill_id": "ZUM-P-RAIZ_FUNDA",
+        "skill_kind": "PASSIVE",
+        "name": "Raiz Funda",
+        "effect": "regenera 1% do HP maximo/s enquanto imovel"
+      },
+      "active_skill": {
+        "skill_id": "ZUM-A-AGARRE",
+        "skill_kind": "ACTIVE",
+        "name": "Agarre de Raiz",
+        "effect": "prende um alvo proximo por 2s, impedindo movimento",
+        "resource_cost": 20,
+        "cooldown_s": 10.0
+      },
+      "distinction_note": "Corrompido comum pela Raiz Profunda - um parasitismo que pode afetar qualquer ser exposto a ela, um mecanismo bem diferente do vinculo unico entre Kenua e o Espinho-Negro, que continua exclusivo dela. Nenhuma pessoa ja conhecida foi corrompida aqui - e sempre alguem novo e sem nome previo.",
+      "memory_note": "Fala residual classificada como eco - e uma alegacao subjetiva, nao prova identidade nem e um fato historico confirmado.",
+      "safety": "FICTIONAL_CHARACTER_ONLY"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "record_id": "STELLAR-ECOLOGY-TEMPORAL-ROUTINE-LAW-V1.0",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.0",
+  "status": "CANON_DERIVADO_ATIVO_R2_COMPATIBLE",
+  "authority": {"r2": ["PLA-001", "COR-001", "ART-001"], "derived_sources": ["ATLAS_ECOLOGY_BINDINGS_V1_0", "STELLAR_CLIMATE_SPATIAL_MODEL_V1_0", "ANIMAL_CREATURE_BRAIN_ECOLOGICAL_BEHAVIOR_CONTRACT_V1_0"], "scope": "FINITE_ECOLOGY_AND_LIMITED_OFFLINE_TIME"},
+  "dependencies": ["STELLAR_ECONOMY_ECOLOGY_TIME_LAW_V1_1.json", "STELLAR_ROOT_PROGRESSION_LAW_V1_0.json", "STELLAR_SYMBIOSIS_LAW_V1_0.json", "../../01_LORE/STELLAR_REBASE_R2/R2_SOURCE_AUTHORITY_INDEX_V1_0.json"],
+  "invariants": ["FAUNA_DISTRIBUTION_BY_TERRITORY_AND_BIOME_IS_SOURCE_BACKED", "ECOLOGICAL_CONSUMPTION_IS_BOUNDED", "RECOVERY_REQUIRES_TIME_AND_RESOURCES", "OFFLINE_ROUTINE_IS_LIMITED_AND_IDEMPOTENT", "RUNTIME_DIETS_AND_BEHAVIOR_PROFILES_ARE_NONCANONICAL", "ROOT_AND_SIMBIOSIS_GATES_REMAIN_AUTHORIAL"],
+  "prohibitions": ["NO_CANONICAL_FAUNA_REDISTRIBUTION_BY_RUNTIME", "NO_OFFLINE_EXTRAORDINARY_MIGRATION", "NO_OFFLINE_CROSS_TERRITORY_CASCADE", "NO_OFFLINE_ROOT_PHASE_TRANSITION", "NO_OFFLINE_SOVEREIGNTY_OR_IRREVERSIBLE_LOSS", "NO_LLM_AUTHORITY_FOR_ECOLOGICAL_ACTION"],
+  "temporal_policy": {"offline_allowed": ["bounded production", "bounded consumption", "climate routine", "ecological recovery", "bounded aggregate population variation", "same-territory routine fauna variation"], "offline_blocked": ["extraordinary migration", "new settlement", "political change", "Root phase transition", "sealed revelation", "irreversible destruction"], "idempotency_key": "world_instance_id + routine_tick_key"},
+  "engine_neutral_interface": {"inputs": ["territory_ref", "biome_ref", "climate_state", "resource_state", "route_capacity", "routine_tick_key"], "outputs": ["regional_snapshot", "scarcity_state", "ecological_pressure", "recovery_state", "authorial_gate_request"], "write_authority": "ACTIVE_LIVING_COUNTRY_OR_LIVING_SIM_LAYER_ONLY", "future_engine": "UNREAL_ENGINE_5"},
+  "simulation_effects": ["Routine ticks use bounded, idempotent updates and reject unknown territory or biome references.", "Resource use and predation may affect local ecological pressure but not rewrite canonical distribution.", "Any result that would cross a protected boundary emits an authorial gate request instead of applying itself."],
+  "allowed_states": ["ROUTINE_SAFE", "RESOURCE_STRAINED", "ECOLOGICALLY_RECOVERING", "CLIMATE_PRESSURED", "GATE_REQUIRED", "CORRUPT_BLOCKED"],
+  "story_generators": ["A routine drought reveals which community maintained its water stores without deciding the political outcome.", "A local food-web imbalance creates an investigation rather than a global catastrophe.", "A blocked offline escalation becomes a player-facing crisis when someone returns to the affected route."]
+}

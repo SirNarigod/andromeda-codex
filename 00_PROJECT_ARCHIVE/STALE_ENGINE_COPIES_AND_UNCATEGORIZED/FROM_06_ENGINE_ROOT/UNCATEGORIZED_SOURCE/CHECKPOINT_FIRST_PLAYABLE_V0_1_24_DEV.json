@@ -1,0 +1,37 @@
+{
+  "checkpoint": "FIRST_PLAYABLE_V0_1_24_DEV",
+  "parent_checkpoint": "FIRST_PLAYABLE_V0_1_23_RUNTIME_PASS",
+  "status": "STATIC_VALIDATED_RUNTIME_PENDING",
+  "functional_scope": [
+    "player_hp_stamina_protection_bars",
+    "enemy_hp_bars",
+    "alpha_hp_and_shield_bars",
+    "weapon_specific_hp_shield_damage_split"
+  ],
+  "invariants": {
+    "alpha_max_shield_lt_max_health": true,
+    "same_hit_hp_and_shield_damage_never_equal_when_both_positive": true,
+    "player_protection_no_auto_regen": true
+  },
+  "preserved_contracts": {
+    "selection_preserves_active_movement": true,
+    "E_selected_non_enemy": "APPROACH_AND_CONTEXT_ACTION",
+    "space_selected_enemy": "ATTACK_SELECTED",
+    "right_click": "DIRECT_CONTEXT_ACTION",
+    "global_attack_cooldown_s": 2.0,
+    "ranged_rule_v0_1_19": "CLOSED_UNCHANGED"
+  },
+  "authority": {
+    "master_v2_0_1": "READ_ONLY_UNCHANGED",
+    "living_engine_v1_0_0": "READ_ONLY_UNCHANGED",
+    "defense_values": "DEV_BALANCE_TUNING"
+  },
+  "static_checks": {
+    "checks": 30,
+    "passed": 30,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1",
+  "backup_authorized": false
+}

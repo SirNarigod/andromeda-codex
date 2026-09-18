@@ -1,0 +1,53 @@
+{
+  "record_id": "ANDROMEDA-STAGE16B-AUTHORITY-RECOVERY-FINAL-BLOCKERS-V0.8.0",
+  "captured_at": "2026-08-21T22:30:45.3065332-03:00",
+  "stage16b_global_status": "NOT_PASS",
+  "pass_count": 11,
+  "partial_evidence_count": 17,
+  "fail_count": 0,
+  "blocked_count": 0,
+  "resolved_local_gaps": [
+    {"gate": "G16B-14", "status": "PASS", "resolution": "Real multi-occluder material fade executed on Godot."},
+    {"gate": "G16B-23", "status": "PASS", "resolution": "Crafting runtime UI completed the unified visual-family coverage without local craft authority."}
+  ],
+  "backend_blocker": {
+    "summary": "No compatible, tested Stage16B-authoritative server process was found.",
+    "historical_server_found": true,
+    "historical_server": "Living V1.5 FastAPI bridge",
+    "why_insufficient": [
+      "Does not load integrated_arpg_engine_v16a.",
+      "Rejects MOVE_TO_POINT.",
+      "Ignores submitted session_ref in favor of a hard-coded session.",
+      "Provides no snapshot session_ref, snapshot_id or snapshot sequence.",
+      "Applies duplicate commands again.",
+      "Does not strictly reject submitted authority fields.",
+      "Its own approval suite fails in the discovered state."
+    ]
+  },
+  "partial_gates": [
+    {"id": "G16B-03", "missing": "Live cooldown/chase/attack authority round-trip."},
+    {"id": "G16B-04", "missing": "Live authoritative pickup result round-trip."},
+    {"id": "G16B-05", "missing": "Live authoritative gathering/enemy/hunt/fish output pipeline to Ground Loot."},
+    {"id": "G16B-06", "missing": "Authoritative Auto Pickup profile persistence and action continuity."},
+    {"id": "G16B-08", "missing": "Authoritative stamina effects from slope, surface and load."},
+    {"id": "G16B-09", "missing": "Living SYSTEMIC streaming state round-trip."},
+    {"id": "G16B-16", "missing": "Live authoritative vendor quote/execute/economy result."},
+    {"id": "G16B-17", "missing": "Authoritative save/reload persistence across all required state."},
+    {"id": "G16B-18", "missing": "Authoritative death policy result."},
+    {"id": "G16B-19", "missing": "Fully authoritative integrated end-to-end vertical slice."},
+    {"id": "G16B-21", "missing": "Authoritative MAIN_HAND state and inactive-modifier behavior."},
+    {"id": "G16B-22", "missing": "Authoritative weapon-state round-trip while preserving input routing."},
+    {"id": "G16B-24", "missing": "Authoritative shallow-water/current/stamina/vehicle consequences."},
+    {"id": "G16B-25", "missing": "Authoritative deep-water exhaustion/grace/defeat consequences."},
+    {"id": "G16B-26", "missing": "Authoritative Bag/container, protected-item and equipment-retention outcomes."},
+    {"id": "G16B-27", "missing": "Authoritative TTL plus save/reload continuity for Ground Loot and Bags."},
+    {"id": "G16B-28", "missing": "Authoritative ownership/recovery/context round-trip for NPC Bags."}
+  ],
+  "required_next_artifact": "A real entrypoint that composes the protected Stage01-16A ARPG/Living cores behind the existing B01 session/snapshot/command contract, with passing backend-owned tests and replay/session safety.",
+  "prohibited_shortcuts": [
+    "Do not patch the historical V1.5 server into a fake Stage16B authority.",
+    "Do not invent endpoints or a substitute server.",
+    "Do not promote fixtures or projections to authoritative PASS.",
+    "Do not create final checkpoint, restore or backup before 28/28 PASS."
+  ]
+}

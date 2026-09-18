@@ -1,0 +1,383 @@
+[gd_scene load_steps=46 format=3]
+
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_main"]
+[ext_resource type="PackedScene" path="res://scenes/actors/Player.tscn" id="2_player"]
+[ext_resource type="PackedScene" path="res://scenes/camera/IsometricCameraRig.tscn" id="3_camera"]
+[ext_resource type="PackedScene" path="res://scenes/actors/NPC.tscn" id="4_npc"]
+[ext_resource type="PackedScene" path="res://scenes/actors/Enemy.tscn" id="5_enemy"]
+[ext_resource type="PackedScene" path="res://scenes/actors/Animal.tscn" id="6_animal"]
+[ext_resource type="PackedScene" path="res://scenes/interaction/ResourceNode.tscn" id="7_resource"]
+[ext_resource type="PackedScene" path="res://scenes/interaction/InteractiveObject.tscn" id="8_object"]
+[ext_resource type="PackedScene" path="res://scenes/interaction/Vehicle.tscn" id="9_vehicle"]
+[ext_resource type="PackedScene" path="res://scenes/interaction/GroundLoot.tscn" id="10_loot"]
+[ext_resource type="PackedScene" path="res://scenes/world/TerrainFoundation.tscn" id="11_terrain"]
+[ext_resource type="PackedScene" path="res://scenes/ui/HUD.tscn" id="12_hud"]
+[ext_resource type="Script" path="res://scripts/interaction/ground_loot_pickup_client.gd" id="13_ground_loot_client"]
+[ext_resource type="Script" path="res://scripts/interaction/gathering_client.gd" id="14_gathering_client"]
+[ext_resource type="PackedScene" path="res://scenes/actors/VendorNPC.tscn" id="15_vendor_npc"]
+[ext_resource type="Script" path="res://scripts/interaction/vendor_client.gd" id="16_vendor_client"]
+[ext_resource type="Script" path="res://scripts/inventory/inventory_client.gd" id="17_inventory_client"]
+[ext_resource type="Script" path="res://scripts/quest/quest_client.gd" id="18_quest_client"]
+[ext_resource type="Script" path="res://scripts/interaction/dropped_bag_client.gd" id="19_dropped_bag_client"]
+[ext_resource type="Script" path="res://scripts/runtime/death_respawn_client.gd" id="20_death_respawn_client"]
+[ext_resource type="Script" path="res://scripts/runtime/save_reload_client.gd" id="21_save_reload_client"]
+[ext_resource type="Script" path="res://scripts/runtime/vertical_slice_client_harness.gd" id="22_b11_vertical_slice"]
+[ext_resource type="Script" path="res://scripts/runtime/b11_performance_probe.gd" id="23_b11_performance"]
+[ext_resource type="PackedScene" path="res://scenes/camera/CameraOccluder.tscn" id="24_camera_occluder"]
+[ext_resource type="Script" path="res://scripts/world/traversal_authority_client.gd" id="25_traversal_client"]
+[ext_resource type="Script" path="res://scripts/interaction/combat_authority_client.gd" id="26_combat_authority_client"]
+[ext_resource type="Script" path="res://scripts/interaction/npc_dialogue_client.gd" id="27_npc_dialogue_client"]
+[ext_resource type="PackedScene" path="res://scenes/ui/AuthorityConnectionStatus.tscn" id="28_connection_status"]
+[ext_resource type="Script" path="res://scripts/runtime/authority_space_mapper.gd" id="29_authority_space_mapper"]
+[ext_resource type="Script" path="res://scripts/runtime/movement_authority_client.gd" id="30_movement_authority_client"]
+[ext_resource type="Script" path="res://scripts/interaction/interaction_spatial_binding_registry.gd" id="31_interaction_spatial_registry"]
+
+[sub_resource type="StandardMaterial3D" id="Material_blocker"]
+albedo_color = Color(0.37, 0.39, 0.4, 1)
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="Mesh_blocker"]
+material = SubResource("Material_blocker")
+size = Vector3(2, 2, 8)
+
+[sub_resource type="BoxShape3D" id="Shape_blocker"]
+size = Vector3(2, 2, 8)
+
+[sub_resource type="StandardMaterial3D" id="Material_target"]
+albedo_color = Color(0.96, 0.68, 0.34, 1)
+roughness = 0.8
+
+[sub_resource type="CylinderMesh" id="Mesh_target"]
+material = SubResource("Material_target")
+top_radius = 0.4
+bottom_radius = 0.4
+height = 1.3
+
+[sub_resource type="CylinderShape3D" id="Shape_target"]
+radius = 0.45
+height = 1.4
+
+[sub_resource type="StandardMaterial3D" id="Material_loot"]
+albedo_color = Color(0.92, 0.86, 0.28, 1)
+roughness = 0.7
+
+[sub_resource type="SphereMesh" id="Mesh_loot"]
+material = SubResource("Material_loot")
+radius = 0.24
+height = 0.48
+
+[sub_resource type="SphereShape3D" id="Shape_loot"]
+radius = 0.3
+
+[sub_resource type="BoxMesh" id="Mesh_b03_blocker"]
+material = SubResource("Material_blocker")
+size = Vector3(1.5, 2, 1.5)
+
+[sub_resource type="BoxShape3D" id="Shape_b03_blocker"]
+size = Vector3(1.5, 2, 1.5)
+
+[sub_resource type="BoxMesh" id="Mesh_resource_los_blocker"]
+material = SubResource("Material_blocker")
+size = Vector3(0.2, 2, 1.2)
+
+[sub_resource type="BoxShape3D" id="Shape_resource_los_blocker"]
+size = Vector3(0.2, 2, 1.2)
+
+[sub_resource type="Environment" id="Environment_b02"]
+background_mode = 1
+background_color = Color(0.16, 0.18, 0.2, 1)
+ambient_light_source = 3
+ambient_light_color = Color(0.8, 0.82, 0.86, 1)
+ambient_light_energy = 0.65
+
+[node name="AndromedaARPG" type="Node"]
+script = ExtResource("1_main")
+
+[node name="RuntimeBridge" type="Node" parent="."]
+metadata/_authority = "AUTOLOAD_ANDROMEDA_BRIDGE_B01"
+
+[node name="AuthoritySpaceMapper" type="Node" parent="."]
+script = ExtResource("29_authority_space_mapper")
+
+[node name="MovementAuthorityClient" type="Node" parent="."]
+script = ExtResource("30_movement_authority_client")
+
+[node name="InteractionSpatialBindingRegistry" type="Node" parent="."]
+script = ExtResource("31_interaction_spatial_registry")
+
+[node name="GroundLootPickupClient" type="Node" parent="."]
+script = ExtResource("13_ground_loot_client")
+
+[node name="GatheringClient" type="Node" parent="."]
+script = ExtResource("14_gathering_client")
+
+[node name="CombatAuthorityClient" type="Node" parent="."]
+script = ExtResource("26_combat_authority_client")
+
+[node name="TraversalAuthorityClient" type="Node" parent="."]
+script = ExtResource("25_traversal_client")
+
+[node name="VendorClient" type="Node" parent="."]
+script = ExtResource("16_vendor_client")
+
+[node name="InventoryClient" type="Node" parent="."]
+script = ExtResource("17_inventory_client")
+
+[node name="QuestClient" type="Node" parent="."]
+script = ExtResource("18_quest_client")
+
+[node name="NpcDialogueClient" type="Node" parent="."]
+script = ExtResource("27_npc_dialogue_client")
+
+[node name="DroppedBagClient" type="Node" parent="."]
+script = ExtResource("19_dropped_bag_client")
+
+[node name="DeathRespawnClient" type="Node" parent="."]
+script = ExtResource("20_death_respawn_client")
+
+[node name="SaveReloadClient" type="Node" parent="."]
+script = ExtResource("21_save_reload_client")
+
+[node name="B11PerformanceProbe" type="Node" parent="."]
+script = ExtResource("23_b11_performance")
+
+[node name="B11VerticalSliceClient" type="Node" parent="."]
+script = ExtResource("22_b11_vertical_slice")
+metadata/inert_until_explicit_gate_call = true
+metadata/external_projection_fixture = true
+metadata/authoritative_roundtrip = false
+
+[node name="WorldStreamRoot" type="Node3D" parent="."]
+
+[node name="TerrainFoundation" parent="WorldStreamRoot" instance=ExtResource("11_terrain")]
+
+[node name="VisualSurface" type="Node3D" parent="WorldStreamRoot"]
+metadata/role = "B02_PATH_COMPATIBILITY_FACADE"
+
+[node name="BlockerPlaceholder" type="MeshInstance3D" parent="WorldStreamRoot/VisualSurface"]
+position = Vector3(0, 1, 0)
+mesh = SubResource("Mesh_blocker")
+
+[node name="B03RaycastBlockerVisual" type="MeshInstance3D" parent="WorldStreamRoot/VisualSurface"]
+position = Vector3(-10, 1, -5)
+mesh = SubResource("Mesh_b03_blocker")
+
+[node name="ResourceGatherLosBlockerVisual" type="MeshInstance3D" parent="WorldStreamRoot/VisualSurface"]
+position = Vector3(-11.75, 1, -9)
+mesh = SubResource("Mesh_resource_los_blocker")
+metadata/role = "STAGE17_OFFLINE_AUTHORED_SOLID_BLOCKER_PRESENTATION"
+
+[node name="CollisionSurface" type="Node3D" parent="WorldStreamRoot"]
+metadata/role = "B02_BLOCKER_COMPATIBILITY_FACADE"
+
+[node name="CentralBlocker" type="StaticBody3D" parent="WorldStreamRoot/CollisionSurface"]
+position = Vector3(0, 1, 0)
+collision_layer = 1
+collision_mask = 0
+metadata/pointer_kind = "GROUND"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WorldStreamRoot/CollisionSurface/CentralBlocker"]
+shape = SubResource("Shape_blocker")
+
+[node name="B03RaycastBlocker" type="StaticBody3D" parent="WorldStreamRoot/CollisionSurface"]
+position = Vector3(-10, 1, -5)
+collision_layer = 128
+collision_mask = 2
+metadata/pointer_blocker = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WorldStreamRoot/CollisionSurface/B03RaycastBlocker"]
+shape = SubResource("Shape_b03_blocker")
+
+[node name="ResourceGatherLosBlocker" type="StaticBody3D" parent="WorldStreamRoot/CollisionSurface"]
+position = Vector3(-11.75, 1, -9)
+collision_layer = 128
+collision_mask = 2
+metadata/pointer_blocker = true
+metadata/authority_role = "OFFLINE_AUTHORING_SOURCE_ONLY_RUNTIME_BACKEND_MATERIALIZATION_WINS"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WorldStreamRoot/CollisionSurface/ResourceGatherLosBlocker"]
+shape = SubResource("Shape_resource_los_blocker")
+
+[node name="B03CameraOccluder" type="StaticBody3D" parent="WorldStreamRoot/CollisionSurface"]
+position = Vector3(-10, 1, -5)
+collision_layer = 256
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WorldStreamRoot/CollisionSurface/B03CameraOccluder"]
+shape = SubResource("Shape_b03_blocker")
+
+[node name="CameraOccluderRoot" type="Node3D" parent="WorldStreamRoot"]
+metadata/role = "G16B14_REAL_MATERIAL_FADE_PLACEHOLDERS"
+metadata/final_art = false
+metadata/gameplay_authority = false
+
+[node name="TreeOccluder" parent="WorldStreamRoot/CameraOccluderRoot" instance=ExtResource("24_camera_occluder")]
+position = Vector3(-3.31, 4, 3.69)
+scale = Vector3(1.1, 8, 1.1)
+occluder_ref = "OCCLUDER-G16B14-TREE-001"
+occluder_kind = "TREE"
+
+[node name="WallOccluder" parent="WorldStreamRoot/CameraOccluderRoot" instance=ExtResource("24_camera_occluder")]
+position = Vector3(-4.44, 3, 2.56)
+scale = Vector3(4, 6, 0.55)
+occluder_ref = "OCCLUDER-G16B14-WALL-001"
+occluder_kind = "WALL"
+
+[node name="TallObjectOccluder" parent="WorldStreamRoot/CameraOccluderRoot" instance=ExtResource("24_camera_occluder")]
+position = Vector3(-5.58, 2, 1.42)
+scale = Vector3(0.9, 4, 0.9)
+occluder_ref = "OCCLUDER-G16B14-TALL-001"
+occluder_kind = "TALL_OBJECT"
+
+[node name="TraversalSurface" type="Node3D" parent="WorldStreamRoot"]
+metadata/role = "B02_BASE_NAVIGATION_COMPATIBILITY_CELL"
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="WorldStreamRoot/TraversalSurface"]
+use_edge_connections = true
+
+[node name="ActorRoot" type="Node3D" parent="."]
+
+[node name="Player" parent="ActorRoot" instance=ExtResource("2_player")]
+position = Vector3(-7, 0, 0)
+
+[node name="NPCB03" parent="ActorRoot" instance=ExtResource("4_npc")]
+position = Vector3(8, 0, 8)
+target_ref = "NPC-B03-NEUTRAL-001"
+display_name = "Viajante Placeholder"
+
+[node name="NPCB05DialoguePeer" parent="ActorRoot" instance=ExtResource("4_npc")]
+position = Vector3(12, 0, -14)
+target_ref = "NPC-B05-DIALOGUE-PEER-001"
+display_name = "Moradora Placeholder"
+
+[node name="VendorNPCB09" parent="ActorRoot" instance=ExtResource("15_vendor_npc")]
+position = Vector3(-6, 0, -2.5)
+
+[node name="EnemyB03" parent="ActorRoot" instance=ExtResource("5_enemy")]
+position = Vector3(8, 0, -8)
+target_ref = "ENEMY-B03-HOSTILE-001"
+
+[node name="EnemyB06Alpha" parent="ActorRoot" instance=ExtResource("5_enemy")]
+position = Vector3(15, 0, -15)
+target_ref = "ENEMY-B06-ALPHA-001"
+display_name = "Alpha Placeholder"
+metadata/combat_rank = "ALPHA"
+
+[node name="AnimalB03" parent="ActorRoot" instance=ExtResource("6_animal")]
+position = Vector3(5, 0, 9.5)
+target_ref = "ANIMAL-B03-NEUTRAL-001"
+
+[node name="NpcPointerPlaceholder" type="Area3D" parent="ActorRoot"]
+position = Vector3(-4.5, 0.7, -3)
+collision_layer = 8
+collision_mask = 0
+monitoring = false
+monitorable = true
+metadata/pointer_kind = "NPC"
+metadata/target_ref = "NPC-B02-PLACEHOLDER"
+metadata/hostile = false
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ActorRoot/NpcPointerPlaceholder"]
+mesh = SubResource("Mesh_target")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ActorRoot/NpcPointerPlaceholder"]
+shape = SubResource("Shape_target")
+
+[node name="GroundLootRoot" type="Node3D" parent="."]
+
+[node name="DroppedBagRoot" type="Node3D" parent="."]
+
+[node name="GroundLootB03" parent="GroundLootRoot" instance=ExtResource("10_loot")]
+position = Vector3(4, 0, 9)
+target_ref = "LOOT-B03-REACHABLE-001"
+
+[node name="GroundLootUnreachableB03" parent="GroundLootRoot" instance=ExtResource("10_loot")]
+position = Vector3(14.5, 0, 14.5)
+target_ref = "LOOT-B03-UNREACHABLE-001"
+
+[node name="GroundLootUnsettledB03" parent="GroundLootRoot" instance=ExtResource("10_loot")]
+position = Vector3(6, 0, 10.5)
+target_ref = "LOOT-B03-UNSETTLED-001"
+settled = false
+
+[node name="GroundLootBlockedB03" parent="GroundLootRoot" instance=ExtResource("10_loot")]
+position = Vector3(-10, 0, -8.8)
+target_ref = "LOOT-B03-BLOCKED-001"
+
+[node name="GroundLootPlaceholder" type="Area3D" parent="GroundLootRoot"]
+position = Vector3(-3.5, 0.3, 3)
+collision_layer = 16
+collision_mask = 0
+monitoring = false
+monitorable = true
+metadata/pointer_kind = "GROUND_LOOT"
+metadata/target_ref = "LOOT-B02-PLACEHOLDER"
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="GroundLootRoot/GroundLootPlaceholder"]
+mesh = SubResource("Mesh_loot")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GroundLootRoot/GroundLootPlaceholder"]
+shape = SubResource("Shape_loot")
+
+[node name="B03InteractionTargets" type="Node3D" parent="WorldStreamRoot"]
+
+[node name="TreeB03" parent="WorldStreamRoot/B03InteractionTargets" instance=ExtResource("7_resource")]
+position = Vector3(-11, 0, -9)
+target_ref = "RESOURCE-B03-TREE-001"
+display_name = "Tree Placeholder"
+resource_kind = "TREE"
+
+[node name="RockB03" parent="WorldStreamRoot/B03InteractionTargets" instance=ExtResource("7_resource")]
+position = Vector3(-7, 0, -10)
+target_ref = "RESOURCE-B03-ROCK-001"
+display_name = "Rock Placeholder"
+resource_kind = "ROCK"
+
+[node name="OreB03" parent="WorldStreamRoot/B03InteractionTargets" instance=ExtResource("7_resource")]
+position = Vector3(-4, 0, -10)
+target_ref = "RESOURCE-B03-ORE-001"
+display_name = "Ore Placeholder"
+resource_kind = "ORE"
+
+[node name="FloraB03" parent="WorldStreamRoot/B03InteractionTargets" instance=ExtResource("7_resource")]
+position = Vector3(-1.5, 0, -10)
+target_ref = "RESOURCE-B03-FLORA-001"
+display_name = "Flora Placeholder"
+resource_kind = "FLORA"
+
+[node name="AgricultureB08" parent="WorldStreamRoot/B03InteractionTargets" instance=ExtResource("7_resource")]
+position = Vector3(2, 0, -10)
+target_ref = "RESOURCE-B08-AGRICULTURE-001"
+display_name = "Agriculture Placeholder"
+resource_kind = "AGRICULTURE"
+
+[node name="InteractiveObjectB03" parent="WorldStreamRoot/B03InteractionTargets" instance=ExtResource("8_object")]
+position = Vector3(10, 0, 5.5)
+target_ref = "OBJECT-B03-001"
+
+[node name="VehicleB03" parent="WorldStreamRoot/B03InteractionTargets" instance=ExtResource("9_vehicle")]
+position = Vector3(10, 0, -5.5)
+target_ref = "VEHICLE-B03-001"
+
+[node name="BlockedObjectB03" parent="WorldStreamRoot/B03InteractionTargets" instance=ExtResource("8_object")]
+position = Vector3(-10, 0, -8)
+target_ref = "OBJECT-B03-BLOCKED-001"
+
+[node name="EffectsRoot" type="Node3D" parent="."]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="EffectsRoot"]
+environment = SubResource("Environment_b02")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="EffectsRoot"]
+rotation_degrees = Vector3(-55, -35, 0)
+light_energy = 1.1
+shadow_enabled = true
+
+[node name="IsometricCameraRig" parent="." instance=ExtResource("3_camera")]
+
+[node name="UILayer" type="CanvasLayer" parent="."]
+layer = 10
+
+[node name="MinimalHUD" parent="UILayer" instance=ExtResource("12_hud")]
+
+[node name="AuthorityConnectionStatus" parent="UILayer" instance=ExtResource("28_connection_status")]

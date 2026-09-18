@@ -1,0 +1,25 @@
+{
+  "record_id": "STELLAR-NPC-ROLE-CATALOG-V1.0",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "QUALITATIVE_ENGINE_NEUTRAL_CATALOG",
+  "rule": "NPC is a runtime interaction role, never a second identity for a named R2 person.",
+  "generic_roles": [
+    {"id":"NPC-ROLE-001","title":"Guia local","profession_refs":["JOB-003"],"functions":["orientation","route warning","local rumor"],"cannot_do":["grant sovereignty","confirm sealed R2 fact"]},
+    {"id":"NPC-ROLE-002","title":"Cuidador de fauna","profession_refs":["JOB-001"],"functions":["animal care","contamination alert","food-source request"],"cannot_do":["create infinite resource"]},
+    {"id":"NPC-ROLE-003","title":"Preparador de alimento","profession_refs":["JOB-002"],"functions":["safe preparation","ration request","food-safety evidence"],"cannot_do":["set canonical price"]},
+    {"id":"NPC-ROLE-004","title":"Investigador de campo","profession_refs":["JOB-004"],"functions":["evidence gathering","incident report","local lead"],"cannot_do":["resolve sealed case"]},
+    {"id":"NPC-ROLE-005","title":"Mediador comunitário","profession_refs":["JOB-005"],"functions":["local dispute","access negotiation","contextual reputation"],"cannot_do":["change political borders"]},
+    {"id":"NPC-ROLE-006","title":"Artesão de oficina","profession_refs":["JOB-006"],"functions":["repair request","maintenance warning","craft context"],"cannot_do":["invent R2 artifact"]},
+    {"id":"NPC-ROLE-007","title":"Instrutor ou aprendiz","profession_refs":["JOB-007"],"functions":["training hook","safety practice","workplace consequence"],"cannot_do":["assign a fixed class"]},
+    {"id":"NPC-ROLE-008","title":"Agente de licença","profession_refs":["JOB-008"],"functions":["voluntary contract","chapter verification","commercial dispute"],"cannot_do":["control territory"]},
+    {"id":"NPC-ROLE-009","title":"Coordenador de abastecimento","profession_refs":["JOB-009","JOB-010"],"functions":["route pressure","maintenance request","shortage context"],"cannot_do":["resolve quest offline"]},
+    {"id":"NPC-ROLE-010","title":"Curador de campo","profession_refs":["JOB-011"],"functions":["triage","consent-aware treatment","resource demand"],"cannot_do":["overwrite death law"]},
+    {"id":"NPC-ROLE-011","title":"Especialista em contenção","profession_refs":["JOB-012","JOB-013"],"functions":["hazard assessment","containment request","evidence warning"],"cannot_do":["reveal Amadon before S01E08"]},
+    {"id":"NPC-ROLE-012","title":"Armeiro rúnico","profession_refs":["JOB-014"],"functions":["maintenance context","compatibility warning","licensed service"],"cannot_do":["invent rune effect"]},
+    {"id":"NPC-ROLE-013","title":"Respondente de risco","profession_refs":["JOB-015"],"functions":["evacuation","nonlethal containment","hazard briefing"],"cannot_do":["make authorial death decision"]}
+  ],
+  "runtime_requirements": ["locality reference", "role provenance", "interaction scope", "spoiler level", "relationship context"],
+  "runtime_only_fields": ["name", "appearance", "schedule", "inventory", "voice", "reputation value", "quest state"],
+  "prohibitions": ["NO_REPEATABLE_NAMED_R2_PERSON", "NO_AUTOMATIC_KENUA_INTERACTION", "NO_SEALED_EPISODE_DIALOGUE", "NO_RUNTIME_CANON_WRITE"],
+  "story_generators": ["Um agente de licença sabe que um contrato é válido, mas ignora se ele é justo.", "Um curador precisa escolher quais provas aceita antes de tratar alguém.", "Um aprendiz preserva uma técnica que seu mestre quer esconder."]
+}

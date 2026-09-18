@@ -1,0 +1,58 @@
+{
+  "record_id": "MAG-001",
+  "record_kind": "R2_CANONICAL_ENTRY_MIRROR",
+  "authority": "CANON_R2_CONFIRMADO",
+  "canonical_home": "01_LORE/CANON_R2/SISTEMAS/MAGIA/MAG-001__leis-da-magia.json",
+  "source": {
+    "archive_sha256": "257e456a5d0396310ec2355b3dfc0f11f4e0a5264cf6e764591c8760f5070cb0",
+    "lineage": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json",
+    "document_sha256": "1b61234705f4845f72a555050adb97149104b9ecb507749d2937e52955234726"
+  },
+  "entry": {
+    "code": "MAG-001",
+    "slug": "leis-da-magia",
+    "title": "Leis da magia",
+    "subtitle": "Fonte, método, custo e consequência",
+    "category": "MAG",
+    "secondaryCategories": [],
+    "canon": "Cânone consolidado",
+    "spoiler": 1,
+    "sealed": false,
+    "image": null,
+    "imageStatus": null,
+    "summary": "Toda magia exige fonte, método, portador, objetivo, alvo, custo e consequência; ela transforma energia existente e não cria energia infinita.",
+    "facts": {
+      "Variáveis obrigatórias": "Fonte, método, portador, objetivo, alvo, custo e consequência",
+      "Aumentam o custo": "Distância, complexidade, permanência, resistência e compatibilidade"
+    },
+    "sections": [
+      {
+        "heading": "Fontes",
+        "body": "Corpo, ambiente, Corrente Planetária, cristais, energia espiritual, energia orgânica e energia corrompida."
+      },
+      {
+        "heading": "Métodos",
+        "body": "Fórmula falada, runa, gesto, vínculo, foco, ritual e instinto mágico."
+      }
+    ],
+    "relations": [
+      {
+        "slug": "runas",
+        "label": "Método estruturado"
+      },
+      {
+        "slug": "corrente-planetaria",
+        "label": "Fonte planetária"
+      }
+    ],
+    "keywords": [
+      "magia",
+      "fonte",
+      "custo",
+      "consequência"
+    ],
+    "sources": [
+      "MAGIA_ARMAS_E_COMBATE.md"
+    ]
+  }
+}

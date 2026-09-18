@@ -1,0 +1,56 @@
+{
+  "record_id": "QUEST-TER-005-V1.0",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "LOCAL_AUDITABLE_QUEST_TEMPLATE",
+  "title": "Vazamento Tecnomágico",
+  "locality": "SUB-005-002",
+  "anchor_reference": "SUB-005-002 Laboratórios de Convergência",
+  "premise": "Um vazamento controlado nos Laboratórios de Convergência exige contenção antes que a pesquisa seja comprometida.",
+  "phases": [
+    {
+      "id": "WELCOME",
+      "objective": "Aceitar a tarefa local e receber o briefing da situação."
+    },
+    {
+      "id": "EVIDENCE",
+      "objective": "Investigar a causa e reunir evidência local (testemunhos, marcas, registros)."
+    },
+    {
+      "id": "DECISION",
+      "objective": "Escolher uma resposta local com custo documentado."
+    },
+    {
+      "id": "REPORT",
+      "objective": "Reportar a resolução à autoridade/profissão local competente."
+    }
+  ],
+  "resolutions": [
+    {
+      "id": "AVOID",
+      "title": "Contenção Mínima",
+      "effect": "A situação é isolada sem resolver a causa raiz.",
+      "local_consequence": "Risco imediato cai, mas o problema pode reaparecer."
+    },
+    {
+      "id": "REPAIR",
+      "title": "Reparo Direto",
+      "effect": "A causa é corrigida com recursos e tempo, reabrindo a atividade normal.",
+      "local_consequence": "Consome recursos/tempo, mas resolve a causa."
+    },
+    {
+      "id": "ESCALATE_REPORT",
+      "title": "Escalonamento Formal",
+      "effect": "O caso é formalmente reportado à autoridade/profissão competente para decisão institucional.",
+      "local_consequence": "Resolução mais lenta, mas gera registro formal e reduz risco de repetição."
+    }
+  ],
+  "evidence_rule": "Evidência sustenta apenas relatório local e reputação contextual — não identifica culpado como fato canônico sem portão autoral.",
+  "rewards": "reputação contextual de runtime, acesso temporário e progressão prática; nenhum item, título, território ou fato canônico.",
+  "prohibitions": [
+    "NO_OFFLINE_RESOLUTION",
+    "NO_CANON_PROMOTION",
+    "NO_NAMED_R2_APPEARANCE",
+    "NO_AUTHORIAL_DEATH",
+    "NO_ROOT_ESCALATION"
+  ]
+}

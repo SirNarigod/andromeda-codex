@@ -1,0 +1,40 @@
+[
+ {
+  "n": "CLINCH",
+  "m": 1.0,
+  "melee": 1.15,
+  "ranged": 0,
+  "evm": 0.7,
+  "grapple": true
+ },
+ {
+  "n": "IN_FIGHTING",
+  "m": 2.75,
+  "melee": 1.05,
+  "ranged": 0.5,
+  "evm": 0.85
+ },
+ {
+  "n": "ECQ",
+  "m": 6.0,
+  "melee": 0.9,
+  "ranged": 0.75,
+  "evm": 1.0,
+  "longpen": 0.7
+ },
+ {
+  "n": "MID_RANGE",
+  "m": 20.0,
+  "melee": 0,
+  "ranged": 1.0,
+  "evm": 1.1
+ },
+ {
+  "n": "LONG_RANGE",
+  "m": 999.0,
+  "melee": 0,
+  "ranged": 1.0,
+  "evm": 1.15,
+  "sniper": 1.1
+ }
+]

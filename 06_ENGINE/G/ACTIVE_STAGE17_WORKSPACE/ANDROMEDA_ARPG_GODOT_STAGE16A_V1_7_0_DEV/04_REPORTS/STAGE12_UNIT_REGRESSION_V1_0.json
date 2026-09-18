@@ -1,0 +1,81 @@
+{
+  "record_id": "STAGE12-UNIT-REGRESSION-V1.0",
+  "execution_mode": "MODULE_ISOLATED_DUE_TO_AGGREGATE_TOOL_WINDOW",
+  "modules": [
+    {
+      "module": "runtime_core",
+      "tests": 59,
+      "passed": 59,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "module": "consequence_engine",
+      "tests": 56,
+      "passed": 56,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "module": "agent_brain",
+      "tests": 90,
+      "passed": 90,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "module": "social_memory",
+      "tests": 72,
+      "passed": 72,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "module": "ecology_brain",
+      "tests": 77,
+      "passed": 77,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "module": "object_environment",
+      "tests": 73,
+      "passed": 73,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "module": "world_orchestrator",
+      "tests": 54,
+      "passed": 54,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "module": "world_systems",
+      "tests": 51,
+      "passed": 51,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "module": "long_horizon",
+      "tests": 44,
+      "passed": 44,
+      "failed": 0,
+      "status": "PASS"
+    },
+    {
+      "module": "llm_gateway",
+      "tests": 35,
+      "passed": 35,
+      "failed": 0,
+      "status": "PASS"
+    }
+  ],
+  "tests": 611,
+  "passed": 611,
+  "failed": 0,
+  "status": "PASS",
+  "note": "Each module completed explicitly in PASS; the aggregate runner itself exceeded the tool execution window and is not used as evidence."
+}

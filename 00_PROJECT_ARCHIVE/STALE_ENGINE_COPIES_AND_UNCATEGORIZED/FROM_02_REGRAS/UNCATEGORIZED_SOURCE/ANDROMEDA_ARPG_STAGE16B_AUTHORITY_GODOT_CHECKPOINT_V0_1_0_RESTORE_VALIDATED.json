@@ -1,0 +1,163 @@
+{
+  "record_id": "ANDROMEDA-STAGE16B-AUTHORITY-GODOT-CHECKPOINT-V0.1.0-RESTORE-VALIDATED",
+  "created_at": "2026-08-27T00:00:00-03:00",
+  "checkpoint": {
+    "zip_filename": "ANDROMEDA_ARPG_STAGE16B_AUTHORITY_GODOT_CHECKPOINT_V0_1_0.zip",
+    "zip_sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc",
+    "zip_size_bytes": 852793,
+    "zip_entry_count": 304,
+    "sha256sums_file": "ANDROMEDA_ARPG_STAGE16B_AUTHORITY_GODOT_CHECKPOINT_SHA256SUMS_V0_1_0",
+    "source_file_count": 304,
+    "source_total_bytes": 2898116,
+    "source_manifest_hash": "024ef9adfb1192f6ed9019d4feac0dd496db335326d6087abedffcc1f21028e9",
+    "is_first_stage16b_checkpoint": true,
+    "naming_rationale": "No prior Stage16B checkpoint/package of any kind exists anywhere on disk (exhaustively searched). V0_8_2 belongs to the Stage16A checkpoint lineage and was not used. The V0_8_9 audit-record version number is a sequential technical-record identity, not reused for the ZIP per this round's own instruction. This begins Stage16B's own independent checkpoint lineage at V0_1_0, following the Stage16A naming shape but with a distinct identity.",
+    "scope_owned_by_this_checkpoint": ["12_AUTHORITY_BACKEND source/tests/reports", "07_GODOT_ARPG_STAGE16B source/scenes/ui/tests/tools + one load-bearing .godot cache file"],
+    "excluded_from_scope": [
+      "ARPG_STAGE16B_GODOT_ACCEPTANCE_MATRIX_V0_8_0.json -- already one of the Stage16A checkpoint's own 724 protected files, byte-identical, confirmed by direct comparison; Stage16B reads it, does not own it",
+      "~180 stray backend_stdout_*/backend_stderr_*.log files (temporary test artifacts, not deleted from the workspace, only excluded from the checkpoint)",
+      "07_GODOT_ARPG_STAGE16B/Godot/ (app_userdata runtime), reports/ (all logs), top-level *.log/*.err, CLAUDE_GODOT_LIVE_TEST.tscn (trivial throwaway scene, not referenced anywhere)",
+      ".godot/{editor,imported,shader_cache,uid_cache.bin,scene_groups_cache.cfg} and stray b08_*_attempt*.log inside .godot/ -- regenerable Godot editor state, confirmed NOT needed by the restore test"
+    ],
+    "load_bearing_generated_cache": {
+      "file": ".godot/global_script_class_cache.cfg",
+      "reason": "Godot headless does not auto-regenerate the global class registry for a newly added class_name script (confirmed empirically during G16B-19C2: AndromedaNpcDialogueClient failed to resolve until this file was updated). Included explicitly per this round's Section 4 instruction rather than assumed regenerable.",
+      "restore_confirmation": "Confirmed sufficient on its own -- the restored copy's B01/Dialogue/G19/etc. gates all parsed and ran correctly using ONLY this one included cache file, with no other .godot/ state present and no dependency on the original editor."
+    }
+  },
+
+  "restore_procedure": {
+    "architecture": "Two-checkpoint overlay: extract the already-sealed Stage16A V0_8_1.zip (724 files, protected, unchanged) AND this new Stage16B V0_1_0.zip into the SAME fresh restore directory. Recreates the complete, bootable project tree from two independently-verifiable lineages, matching the project's own frozen/mutable layering philosophy. This checkpoint never duplicates 01_RUNTIME or Master content.",
+    "restore_root": "isolated temp workspace outside the source tree and outside the staging directory (session scratchpad, not part of the live project)",
+    "stage16a_zip_extracted": {"file": "ANDROMEDA_ARPG_STAGE16A_PRE_GODOT_V1_8_0_DEV_CHECKPOINT_V0_8_1.zip", "sha256": "03bc6b621a5ae8e0bf6542803412611855b32503154221ec7ea1b7aaf28befc4", "entries": 724},
+    "stage16b_zip_extracted": {"file": "ANDROMEDA_ARPG_STAGE16B_AUTHORITY_GODOT_CHECKPOINT_V0_1_0.zip", "sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc", "entries": 304},
+    "zip_safety_checks": "No path traversal, no absolute paths, no entries escaping restore root -- verified programmatically for both zips before extraction",
+    "master_reference": "external, shared, absolute-path resolved (C:\\Users\\thall\\ANDROMEDA_PRODUCT\\ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE.zip via ANDROMEDA_MASTER_RELEASE env var / hardcoded fallback) -- never embedded in any checkpoint, confirmed the restored copy resolves it correctly without any source-tree dependency",
+    "python_interpreter": "shared external venv (C:\\Users\\thall\\ANDROMEDA_PRODUCT\\.venv) -- toolchain, not project source, same convention as the Master zip reference"
+  },
+
+  "hash_round_trip": {
+    "staging_vs_source": "MATCH -- 304/304 files, identical SHA256",
+    "restore_vs_source": "MATCH -- 304/304 files, identical SHA256, identical total bytes (2898116)",
+    "restore_vs_staging": "MATCH",
+    "restore_file_count_match": true,
+    "restore_total_bytes_match": true,
+    "restore_no_missing_files": true,
+    "restore_no_extra_source_files": true
+  },
+
+  "restore_independence": {
+    "python_path_resolution": "authority_config.py::PROJECT_ROOT = Path(__file__).resolve().parents[1] -- self-relative, confirmed the restored copy computes its own project root and 01_RUNTIME path independently of the original tree",
+    "var_directory": "isolated per-run (ANDROMEDA_S16B_VAR pointed inside the restore root for every gate/backend run), never touched the original var/",
+    "no_source_import": "backend processes were always launched with cwd = restore_root/.../12_AUTHORITY_BACKEND; module resolution (`-m uvicorn stage16b_authority_api:app`) is directory-relative, confirmed no accidental import from the original source tree",
+    "godot_project": "every gate invoked with --path pointing exclusively at the restored 07_GODOT_ARPG_STAGE16B directory"
+  },
+
+  "restore_backend_boot": {
+    "status": "PASS",
+    "health_check": {"service": "ANDROMEDA_STAGE16B_AUTHORITY_ADAPTER", "bootstrap_mode": "CREATED", "request_npc_dialogue_enabled": true}
+  },
+
+  "restore_backend_full_validation": {
+    "status": "PASS",
+    "failures": [],
+    "seconds": 1817.455,
+    "evidence_file": "12_AUTHORITY_BACKEND/reports/STAGE16B_RESTORE_VALIDATION_V0_1_0.json (inside the restore workspace)",
+    "steps": {
+      "master_v2_0_1_integrity": "PASS",
+      "stage16a_protected_checkpoint": "PASS (724/724, 0 altered -- verified FROM WITHIN the restored tree)",
+      "test_stage16b_authority_npc_dialogue_suite": 36,
+      "test_stage16b_authority_living_systemic_suite": 26,
+      "stage16a_regression": 209,
+      "test_stage16a_item_definitions_verify_contract_suite": 9,
+      "test_stage16a_checkpoint_governance_suite": 8,
+      "test_stage16b_authority_save_death_water_suite": 24,
+      "test_stage16b_authority_dev_water_time_suite": 13,
+      "test_stage16b_authority_dev_npc_bag_recovery_suite": 12,
+      "test_stage16b_authority_bag_recovery_spatial_retry_suite": 5,
+      "test_stage16b_authority_clothes_suite": 13,
+      "all_other_suites_matched_original_counts": true
+    }
+  },
+
+  "restore_godot_gates": {
+    "b01_runtime_gate": {"checks": 54, "passed": 54, "failed": 0},
+    "authority_npc_dialogue_runtime_gate": {"checks": 30, "passed": 30, "failed": 0, "note": "critical set -- confirms AndromedaNpcDialogueClient resolves without the original editor"},
+    "authority_vertical_slice_runtime_gate": {"checks": 71, "passed": 71, "failed": 0},
+    "authority_living_systemic_runtime_gate": {
+      "first_attempt": {"checks": 59, "passed": 59, "failed": 0, "note": "SEED MISMATCH, not a restore defect -- see anomaly below"},
+      "retry_with_default_seed": {"checks": 51, "passed": 51, "failed": 0}
+    },
+    "authority_save_reload_resync_runtime_gate": {"checks": 103, "passed": 103, "failed": 0},
+    "authority_save_reload_client_slot_guard_gate": {"checks": 32, "passed": 32, "failed": 0},
+    "authority_save_death_runtime_gate": {"checks": 194, "passed": 194, "failed": 0},
+    "authority_npc_bag_ownership_runtime_gate": {"checks": 62, "passed": 62, "failed": 0},
+    "authority_water_ttl_runtime_gate": {
+      "A": {"checks": 19, "passed": 19, "failed": 0},
+      "B": {"checks": 26, "passed": 26, "failed": 0},
+      "C": {"checks": 22, "passed": 22, "failed": 0},
+      "D": {"checks": 30, "passed": 30, "failed": 0},
+      "E": {"checks": 28, "passed": 28, "failed": 0}
+    },
+    "authority_combat_runtime_gate": {"checks": 91, "passed": 91, "failed": 0},
+    "authority_ground_loot_runtime_gate": {"checks": 53, "passed": 53, "failed": 0},
+    "authority_gathering_runtime_gate": {"checks": 77, "passed": 77, "failed": 0},
+    "b03_runtime_gate": {"checks": 357, "passed": 357, "failed": 0},
+    "b04_runtime_gate": {"checks": 156, "passed": 156, "failed": 0},
+    "b11_runtime_gate": {"checks": 343, "passed": 343, "failed": 0},
+    "all_debugger_errors": 0,
+    "all_debugger_warnings": 0,
+    "all_results_match_original_matrix_exactly": true
+  },
+
+  "anomaly_seed_mismatch_diagnosed": {
+    "observed": "authority_living_systemic_runtime_gate reported 59/59 on its first restore run instead of the expected 51/51",
+    "root_cause": "Operator error, not a restore/source defect: ANDROMEDA_S16B_SEED=990111 was mistakenly carried over from an earlier Python smoke-test habit into this restore run's backend launch, while every other regression run in this entire engagement (including the one that established 51/51) used the DEFAULT_WORLD_SEED=160800 (env var unset). Different seed -> different but equally valid procedurally-generated zone/fauna population -> this specific gate's check count legitimately scales with real dynamic zone/fauna data it iterates over.",
+    "verification": "authority_living_systemic_runtime_gate.gd confirmed byte-identical (SHA256) between the original source and the restored copy before investigating further -- ruled out any copy/packaging defect.",
+    "resolution": "Retried with the default seed (env var unset) -- 51/51 PASS, exact match. B01/Dialogue/G19 (already run with the mismatched seed) were NOT affected, since their check counts are fixed regardless of world content specifics; not re-run.",
+    "classification": "TEST_METHODOLOGY_ERROR, not PACKAGING_ERROR / MISSING_FILE / GENERATED_CACHE_DEPENDENCY / SOURCE_DEFECT / RESTORE_ENVIRONMENT_ERROR"
+  },
+
+  "b08_handling": {
+    "disposition": "HISTORICAL_PRESENTATION_REGRESSION_SUPERSEDED (per AUTHORITY_STAGE16B_FINAL_AUDIT_EVIDENCE_CONSOLIDATION_V0_8_9.json)",
+    "file_preserved_in_checkpoint": true,
+    "verified_present_in_restore": true,
+    "re_executed_in_restore": false,
+    "reason_not_re_executed": "Not part of the mandatory restore PASS set per this round's own Section 23 -- its disposition is already established and does not gate release."
+  },
+
+  "protected_integrity": {
+    "verified_from_within_restore": true,
+    "stage16a_v0_8_1_sha256": "03bc6b621a5ae8e0bf6542803412611855b32503154221ec7ea1b7aaf28befc4",
+    "stage16a_v0_8_0_sha256": "21626a3152cb37e167eee24bff9d3142c5d389a8ca2827594b34211591525a6a",
+    "master_v2_0_1_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "stage16a_checkpoint_within_restore": {"entries": 724, "verified": 724, "altered": 0, "missing": 0},
+    "reconfirmed_externally_after_all_restore_tests": true
+  },
+
+  "original_source_unchanged": {
+    "source_manifest_hash_before": "024ef9adfb1192f6ed9019d4feac0dd496db335326d6087abedffcc1f21028e9",
+    "source_manifest_hash_after": "024ef9adfb1192f6ed9019d4feac0dd496db335326d6087abedffcc1f21028e9",
+    "match": true,
+    "checkpoint_zip_sha256_reconfirmed_on_disk": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc",
+    "process_note": "The post-restore verification re-ran the same build script (packaging + hashing in one pass) rather than a hash-only reader; the resulting ZIP was byte-identical (same SHA256) to the immutable candidate, so no actual content change occurred, but this was a methodology imprecision against Section 14's letter (external hash-only tooling would have been cleaner) -- reported here rather than silently omitted."
+  },
+
+  "housekeeping": {
+    "restore_backend_shutdown": true,
+    "listener_8000_after": "NONE",
+    "user_godot_editor_preserved_pid_9040": true,
+    "original_var_clean": true,
+    "restore_var_cleaned_between_each_gate": true,
+    "no_broad_deletion_performed": true
+  },
+
+  "checkpoint_validated": true,
+  "restore_validated": true,
+  "backup_ready": true,
+  "stage17_status": "NOT_STARTED",
+
+  "decision": "STAGE16B_FINAL_CHECKPOINT_VALIDATED / RESTORE_VALIDATED",
+  "next_stage": "STAGE16B_FINAL_BACKUP_AND_RELEASE_HANDOFF",
+  "note": "This checkpoint is validated and restorable. It is NOT a final release package and no backup was created this round."
+}

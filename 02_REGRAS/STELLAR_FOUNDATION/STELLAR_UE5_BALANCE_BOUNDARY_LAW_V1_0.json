@@ -1,0 +1,13 @@
+{
+  "record_id":"STELLAR-UE5-BALANCE-BOUNDARY-LAW-V1.0",
+  "project":"ANDROMEDA CODEX",
+  "version":"V1.0",
+  "status":"ACTIVE_TECHNICAL_GOVERNANCE",
+  "authority":{"scope":"UE5_BALANCE_AND_RUNTIME_TUNING","lore_authority":"NONE","source":"STELLAR_UE5_BALANCE_BASELINE_V1_0"},
+  "dependencies":["STELLAR_PLAYABLE_TAXONOMY_LAW_V1_0.json","STELLAR_LIFE_DEATH_REBIRTH_LAW_V1_1.json","STELLAR_ROOT_PROGRESSION_LAW_V1_0.json"],
+  "invariants":["NUMBERS_ARE_VERSIONED_TECHNICAL_TUNING","PLAYER_HAS_NO_FIXED_CLASS","ZERO_HEALTH_DEFAULTS_TO_RECOVERABLE_INCAPACITY","SUBREGION_CONTEXT_DOES_NOT_SET_CANONICAL_DIFFICULTY","ROOT_REQUIRES_AUTHORIAL_GATE"],
+  "prohibitions":["NO_NUMERIC_CANON_PROMOTION","NO_LOOT_OR_PRICE_CANON_PROMOTION","NO_AUTOMATIC_LITERAL_DEATH","NO_NAMED_R2_STAT_BLOCK_BY_DEFAULT","NO_ROOT_HP_DAMAGE_OR_REWARD_TABLE"],
+  "runtime_effects":["UE5 may calculate HP, damage, guard, stamina, resistance, cooldown and TTK using versioned DataTables.","LivingSim may read pressure and encounter context but cannot write numerical balance into canon.","Balance revisions require a test report, version increment and preservation of prior technical baselines."],
+  "allowed_states":["DRAFT_TUNING","TESTED_TUNING","REBALANCE_CANDIDATE","DEPRECATED_TUNING"],
+  "story_generators":["Uma luta difícil evidencia falta de preparo, não inferioridade permanente do personagem.","Uma incapacidade cria resgate, dívida ou risco sem banalizar morte literal.","Uma rota perigosa muda a estratégia de viagem sem se tornar uma hierarquia canônica de regiões."]
+}

@@ -1,0 +1,45 @@
+{
+  "record_id": "FAC-010",
+  "record_kind": "DERIVED_CANONICAL_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Liga de Oficinas Licenciadas da Fronteira",
+  "scope": "TRANSREGIONAL_NON_SOVEREIGN",
+  "provenance": {
+    "approval": "R2-REBASE-LOT-007",
+    "derived_from": "ARPG_NARRATIVE_CULTURE_CONTRACT_V1_3_0",
+    "source_sha256": "a4e57f054dbc3055ab53fc67531c811a46bdb51bab6efd890799a324ec43bae5",
+    "r2_compatibility": "No R2 faction, territory, character or episode fact is changed."
+  },
+  "identity": {
+    "purpose": "Coordena licenças, contratos verificáveis, abastecimento e reconhecimento comercial entre oficinas que aderem voluntariamente.",
+    "local_presence": "Núcleos existem apenas por carta local, adesão de oficina ou acordo de rota.",
+    "does_not_control": ["territory", "borders", "sovereignty", "government", "Kenua"],
+    "may_coordinate": ["license registry", "supply contracts", "maintenance schedules", "route-facing commercial standards"]
+  },
+  "relations": [
+    {
+      "target": "FAC-009",
+      "type": "PARTNERS_IN_TENSION",
+      "shared_need": "Continuidade segura de oficinas e rotas de manutenção.",
+      "legitimate_disputes": ["licensing cost", "contract terms", "workshop autonomy", "minimum safety standard"]
+    }
+  ],
+  "simulation_permissions": {
+    "LivingSim": ["local license availability", "contract demand", "supply dependency", "maintenance backlog"],
+    "LivingScale": ["local chartered presence only"],
+    "UE5": ["read-only faction catalog", "local chapter data asset", "contract and route quest hooks without canonical mutation"]
+  },
+  "prohibitions": [
+    "NO_TERRITORIAL_CONTROL",
+    "NO_AUTOMATIC_KENUA_LINK",
+    "NO_R2_EPISODE_MUTATION",
+    "NO_RUNTIME_CANON_PROMOTION",
+    "NO_PLANETARY_GOVERNMENT_INFERENCE"
+  ],
+  "story_generators": [
+    "Uma licença de emergência salva uma rota, mas expõe quem ficou fora do registro comercial.",
+    "Uma oficina independente rejeita a Liga e precisa provar publicamente que seus reparos são seguros.",
+    "Um contrato de abastecimento entra em choque com a obrigação do Colegiado de não colocar aprendizes em risco."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "record_id": "SUB-011-005",
+  "record_kind": "DERIVED_SUBREGION_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Charneira das Oficinas",
+  "parent_political_unit": "TER-011",
+  "provenance": {"approval":"R2-REBASE-LOT-009","r2_anchors":["TER-011","FAC-009","FAC-010","TEC-003","ART-015"],"compatibility":"Local service and workshop overlay. FAC-009/FAC-010 remain transregional non-sovereign organizations with presence only by charter."},
+  "function":"Concentração local de manutenção, aprendizagem, licenças voluntárias e contratos de oficina.",
+  "locality_references":[],
+  "permitted_catalog_links":{"npc_roles":["NPC-ROLE-006","NPC-ROLE-007","NPC-ROLE-008","NPC-ROLE-012"],"professions":["JOB-006","JOB-007","JOB-008","JOB-014"],"encounters":["ENCOUNTER-010","ENCOUNTER-011"],"resources":[]},
+  "local_conflicts":["segurança de aprendiz versus prazo de contrato","autonomia de oficina versus licença coletiva","manutenção comunitária versus cliente que paga mais"],
+  "prohibitions":["NO_FACTION_SOVEREIGNTY","NO_MANDATORY_LICENSE","NO_INVENTED_RUNE_EFFECT","NO_AUTOMATIC_R2_ARTIFACT"],
+  "story_generators":["Uma oficina recusa licença, mas precisa de ajuda quando uma matriz se torna insegura.","Uma aprendiz descobre que o atraso de segurança encobria um conflito de contrato.","Duas organizações precisam cooperar para reparar uma rota que nenhuma delas controla."]
+}

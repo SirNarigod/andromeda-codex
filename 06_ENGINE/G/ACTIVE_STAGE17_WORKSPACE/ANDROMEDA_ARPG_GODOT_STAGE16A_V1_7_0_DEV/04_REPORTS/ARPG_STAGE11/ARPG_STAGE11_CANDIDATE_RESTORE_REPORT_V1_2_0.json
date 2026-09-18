@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-08-18T22:05:20.443578+00:00",
+  "integrity_post_test": {
+    "ledger": "580/580 PASS",
+    "manifest": "579/579 PASS",
+    "transients": 0
+  },
+  "integrity_pre_test": {
+    "ledger": "580/580 PASS",
+    "manifest": "579/579 PASS"
+  },
+  "record_id": "ARPG-STAGE11-CANDIDATE-RESTORE-REPORT-V1.2.0",
+  "source": "ANDROMEDA_ARPG_TECH_STAGE11_V1_2_0_CANDIDATE.zip",
+  "source_sha256": "b8eab29783300687566e4c16b2a78389bba31ee6c9d46205c8ec945e5157a807",
+  "stage": "11/23",
+  "status": "PASS",
+  "tests": {
+    "stress": "39/39 PASS",
+    "unit_and_persistence": "21/21 PASS",
+    "validation": "36/36 PASS"
+  },
+  "version": "V1.2.0"
+}

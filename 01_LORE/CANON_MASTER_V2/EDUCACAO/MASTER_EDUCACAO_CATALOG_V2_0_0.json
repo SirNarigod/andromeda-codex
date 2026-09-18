@@ -1,0 +1,4729 @@
+{
+  "record_id": "MASTER-EDUCACAO-CATALOG-V2.0.0",
+  "title": "Nos oficiais de educacao/ciencia do MASTER V2.0.1 (62 entradas)",
+  "provenance": {
+    "master_release": "ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE",
+    "master_release_zip_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "source_files": [
+      "01_CANON/ANDROMEDA_CODEX_CANON_MASTER_V2_0_0.json (entities, domain=educacao/ciencia)"
+    ],
+    "authority": "CANON_MASTER_V2_CONFIRMADO",
+    "namespace_check": "IDs ANDROMEDA-EDUCIENCIA-* (compostos, sem colisao com JOB-/EDU-XXX/EST-/LOC-). OPERATIONAL_NODEs do atlas (camadas EDUCATION/SCIENCE), nao profissoes nem escolas-ficha: os 8 EDU-XXX stubs seguem stubs (detalhe nao incluido neste release).",
+    "structure_note": "62 nos operacionais validados (alfabetizacao, acessibilidade, curriculo, formacao por etapa etc.), ancorados em POI-XXX/TER-XXX/BIO-XXX ja conhecidos do Master. Camada de confirmacao, nao descricao pedagogica."
+  },
+  "count_total": 62,
+  "items": [
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-ACESSIBILIDADE-ETAPA-003-V0_1",
+      "name": "Acessibilidade Etapa 003 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "VALIDADO",
+      "summary": "Acessibilidade Etapa 003 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-ACESSIBILIDADE-ETAPA-003-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "CÂNONE_EM_DESENVOLVIMENTO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-ALFABETIZACAO-ETAPA-003-V0_1",
+      "name": "Alfabetizacao Etapa 003 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "VALIDADO",
+      "summary": "Alfabetizacao Etapa 003 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-ALFABETIZACAO-ETAPA-003-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "CÂNONE_EM_DESENVOLVIMENTO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-APRENDIZAGEM-PROFISSIONAL-ETAPA-005-V0_1",
+      "name": "Aprendizagem Profissional Etapa 005 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "VALIDADO",
+      "summary": "Aprendizagem Profissional Etapa 005 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-APRENDIZAGEM-PROFISSIONAL-ETAPA-005-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "CÂNONE_EM_DESENVOLVIMENTO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-ARQUIVOS-BIBLIOTECAS-ETAPA-008-V0_1",
+      "name": "Arquivos Bibliotecas Etapa 008 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "VALIDADO",
+      "summary": "Arquivos Bibliotecas Etapa 008 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-ARQUIVOS-BIBLIOTECAS-ETAPA-008-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "CÂNONE_EM_DESENVOLVIMENTO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-AUDITORIA-FONTES-ETAPA-008-V0_1",
+      "name": "Auditoria Fontes Etapa 008 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "REGISTRO_OPERACIONAL_PRESERVADO",
+      "summary": "Auditoria Fontes Etapa 008 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-AUDITORIA-FONTES-ETAPA-008-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "REGISTRO_OPERACIONAL_PRESERVADO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "AUDITORIA-FONTES-ETAPA-009-V0_1",
+      "name": "Auditoria Fontes Etapa 009 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "REGISTRO_OPERACIONAL_PRESERVADO",
+      "summary": "Auditoria Fontes Etapa 009 V0_1",
+      "description_ref": "codex://entity/AUDITORIA-FONTES-ETAPA-009-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "REGISTRO_OPERACIONAL_PRESERVADO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-AUTORIDADES-DOMINIO-ETAPA-006-V0_1",
+      "name": "Autoridades Dominio Etapa 006 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "REGISTRO_OPERACIONAL_PRESERVADO",
+      "summary": "Autoridades Dominio Etapa 006 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-AUTORIDADES-DOMINIO-ETAPA-006-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "REGISTRO_OPERACIONAL_PRESERVADO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-CENTROS-REDES-PESQUISA-ETAPA-007-V0_1",
+      "name": "Centros Redes Pesquisa Etapa 007 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "REGISTRO_OPERACIONAL_PRESERVADO",
+      "summary": "Centros Redes Pesquisa Etapa 007 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-CENTROS-REDES-PESQUISA-ETAPA-007-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "REGISTRO_OPERACIONAL_PRESERVADO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-CICLO-DOCUMENTAL-ACESSO-PRESERVACAO-ETAPA-008-V0_1",
+      "name": "Ciclo Documental Acesso Preservacao Etapa 008 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "VALIDADO",
+      "summary": "Ciclo Documental Acesso Preservacao Etapa 008 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-CICLO-DOCUMENTAL-ACESSO-PRESERVACAO-ETAPA-008-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "CÂNONE_EM_DESENVOLVIMENTO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-CIENCIA-METODO-FORMACAO-ETAPA-007-V0_1",
+      "name": "Ciencia Metodo Formacao Etapa 007 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "VALIDADO",
+      "summary": "Ciencia Metodo Formacao Etapa 007 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-CIENCIA-METODO-FORMACAO-ETAPA-007-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "CÂNONE_EM_DESENVOLVIMENTO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-CREDENCIAMENTO-ETAPA-005-V0_1",
+      "name": "Credenciamento Etapa 005 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "VALIDADO",
+      "summary": "Credenciamento Etapa 005 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-CREDENCIAMENTO-ETAPA-005-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "CÂNONE_EM_DESENVOLVIMENTO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-CROSSWALK-91-JOBS-ETAPA-005-V0_1",
+      "name": "Crosswalk 91 Jobs Etapa 005 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "REGISTRO_OPERACIONAL_PRESERVADO",
+      "summary": "Crosswalk 91 Jobs Etapa 005 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-CROSSWALK-91-JOBS-ETAPA-005-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "REGISTRO_OPERACIONAL_PRESERVADO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-CROSSWALK-91-JOBS-ETAPA-006-V0_1",
+      "name": "Crosswalk 91 Jobs Etapa 006 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "REGISTRO_OPERACIONAL_PRESERVADO",
+      "summary": "Crosswalk 91 Jobs Etapa 006 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-CROSSWALK-91-JOBS-ETAPA-006-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "REGISTRO_OPERACIONAL_PRESERVADO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-CROSSWALK-ETAPA-002-V0_1",
+      "name": "Crosswalk Etapa 002 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "VALIDADO",
+      "summary": "Crosswalk Etapa 002 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-CROSSWALK-ETAPA-002-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "CÂNONE_EM_DESENVOLVIMENTO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-CROSSWALK-ETAPA-003-V0_1",
+      "name": "Crosswalk Etapa 003 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "VALIDADO",
+      "summary": "Crosswalk Etapa 003 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-CROSSWALK-ETAPA-003-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "CÂNONE_EM_DESENVOLVIMENTO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-CROSSWALK-ETAPA-004-V0_1",
+      "name": "Crosswalk Etapa 004 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "VALIDADO",
+      "summary": "Crosswalk Etapa 004 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-CROSSWALK-ETAPA-004-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "CÂNONE_EM_DESENVOLVIMENTO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-CROSSWALK-MAGIA-RUNAS-PROFISSOES-ETAPA-009-V0_1",
+      "name": "Crosswalk Magia Runas Profissoes Etapa 009 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "REGISTRO_OPERACIONAL_PRESERVADO",
+      "summary": "Crosswalk Magia Runas Profissoes Etapa 009 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-CROSSWALK-MAGIA-RUNAS-PROFISSOES-ETAPA-009-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "REGISTRO_OPERACIONAL_PRESERVADO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-CROSSWALK-MEMORIA-PROFISSOES-ETAPA-008-V0_1",
+      "name": "Crosswalk Memoria Profissoes Etapa 008 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "REGISTRO_OPERACIONAL_PRESERVADO",
+      "summary": "Crosswalk Memoria Profissoes Etapa 008 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-CROSSWALK-MEMORIA-PROFISSOES-ETAPA-008-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "REGISTRO_OPERACIONAL_PRESERVADO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-CROSSWALK-PESQUISA-PROFISSOES-ETAPA-007-V0_1",
+      "name": "Crosswalk Pesquisa Profissoes Etapa 007 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "REGISTRO_OPERACIONAL_PRESERVADO",
+      "summary": "Crosswalk Pesquisa Profissoes Etapa 007 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-CROSSWALK-PESQUISA-PROFISSOES-ETAPA-007-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "REGISTRO_OPERACIONAL_PRESERVADO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-DEPENDENCIAS-ETAPA-006-V0_1",
+      "name": "Dependencias Etapa 006 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "REGISTRO_OPERACIONAL_PRESERVADO",
+      "summary": "Dependencias Etapa 006 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-DEPENDENCIAS-ETAPA-006-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "REGISTRO_OPERACIONAL_PRESERVADO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-DEPENDENCIAS-ETAPA-007-V0_1",
+      "name": "Dependencias Etapa 007 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "REGISTRO_OPERACIONAL_PRESERVADO",
+      "summary": "Dependencias Etapa 007 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-DEPENDENCIAS-ETAPA-007-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "REGISTRO_OPERACIONAL_PRESERVADO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-DEPENDENCIAS-ETAPA-008-V0_1",
+      "name": "Dependencias Etapa 008 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "REGISTRO_OPERACIONAL_PRESERVADO",
+      "summary": "Dependencias Etapa 008 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-DEPENDENCIAS-ETAPA-008-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "REGISTRO_OPERACIONAL_PRESERVADO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-DEPENDENCIAS-GATES-ETAPA-009-V0_1",
+      "name": "Dependencias Gates Etapa 009 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "REGISTRO_OPERACIONAL_PRESERVADO",
+      "summary": "Dependencias Gates Etapa 009 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-DEPENDENCIAS-GATES-ETAPA-009-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "REGISTRO_OPERACIONAL_PRESERVADO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-EDUCACAO-BASICA-SHELL-ETAPA-004-V0_1",
+      "name": "Educacao Basica Shell Etapa 004 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "VALIDADO",
+      "summary": "Educacao Basica Shell Etapa 004 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-EDUCACAO-BASICA-SHELL-ETAPA-004-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "CÂNONE_EM_DESENVOLVIMENTO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-EDUCACAO-INFANTIL-SHELL-ETAPA-004-V0_1",
+      "name": "Educacao Infantil Shell Etapa 004 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "VALIDADO",
+      "summary": "Educacao Infantil Shell Etapa 004 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-EDUCACAO-INFANTIL-SHELL-ETAPA-004-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "CÂNONE_EM_DESENVOLVIMENTO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-ESQUEMA-PROVENIENCIA-V0_1",
+      "name": "Esquema Proveniencia V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "VALIDADO",
+      "summary": "Esquema Proveniencia V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-ESQUEMA-PROVENIENCIA-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "CÂNONE_EM_DESENVOLVIMENTO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-ETICA-BIOSSEGURANCA-ETAPA-007-V0_1",
+      "name": "Etica Biosseguranca Etapa 007 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "REGISTRO_OPERACIONAL_PRESERVADO",
+      "summary": "Etica Biosseguranca Etapa 007 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-ETICA-BIOSSEGURANCA-ETAPA-007-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "REGISTRO_OPERACIONAL_PRESERVADO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-FORMACAO-TECNICA-ETAPA-005-V0_1",
+      "name": "Formacao Tecnica Etapa 005 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "VALIDADO",
+      "summary": "Formacao Tecnica Etapa 005 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-FORMACAO-TECNICA-ETAPA-005-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "CÂNONE_EM_DESENVOLVIMENTO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-FORMACOES-ESPECIALIZADAS-ETAPA-006-V0_1",
+      "name": "Formacoes Especializadas Etapa 006 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "VALIDADO",
+      "summary": "Formacoes Especializadas Etapa 006 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-FORMACOES-ESPECIALIZADAS-ETAPA-006-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "CÂNONE_EM_DESENVOLVIMENTO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-GUARDA-EDUCACIONAL-INFANTOJUVENIL-ETAPA-004-V0_1",
+      "name": "Guarda Educacional Infantojuvenil Etapa 004 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "VALIDADO",
+      "summary": "Guarda Educacional Infantojuvenil Etapa 004 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-GUARDA-EDUCACIONAL-INFANTOJUVENIL-ETAPA-004-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "CÂNONE_EM_DESENVOLVIMENTO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-INTEGRACAO-FAC019-FAC020-ETAPA-005-V0_1",
+      "name": "Integracao Fac019 Fac020 Etapa 005 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "VALIDADO",
+      "summary": "Integracao Fac019 Fac020 Etapa 005 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-INTEGRACAO-FAC019-FAC020-ETAPA-005-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "CÂNONE_EM_DESENVOLVIMENTO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-INTEGRACAO-FAC029-ETAPA-008-V0_1",
+      "name": "Integracao Fac029 Etapa 008 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "REGISTRO_OPERACIONAL_PRESERVADO",
+      "summary": "Integracao Fac029 Etapa 008 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-INTEGRACAO-FAC029-ETAPA-008-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "REGISTRO_OPERACIONAL_PRESERVADO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-INVENTARIO-INICIAL-V0_1",
+      "name": "Inventario Inicial V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "REGISTRO_OPERACIONAL_PRESERVADO",
+      "summary": "Inventario Inicial V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-INVENTARIO-INICIAL-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "REGISTRO_OPERACIONAL_PRESERVADO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-LINHAS-PESQUISA-ETAPA-007-V0_1",
+      "name": "Linhas Pesquisa Etapa 007 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "REGISTRO_OPERACIONAL_PRESERVADO",
+      "summary": "Linhas Pesquisa Etapa 007 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-LINHAS-PESQUISA-ETAPA-007-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "REGISTRO_OPERACIONAL_PRESERVADO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-MAGIA-RUNAS-FORMACAO-CONTROLADA-ETAPA-009-V0_1",
+      "name": "Magia Runas Formacao Controlada Etapa 009 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "VALIDADO",
+      "summary": "Magia Runas Formacao Controlada Etapa 009 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-MAGIA-RUNAS-FORMACAO-CONTROLADA-ETAPA-009-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "CÂNONE_EM_DESENVOLVIMENTO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-MATRIZ-ACESSO-APRENDIZAGEM-ETAPA-003-V0_1",
+      "name": "Matriz Acesso Aprendizagem Etapa 003 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "VALIDADO",
+      "summary": "Matriz Acesso Aprendizagem Etapa 003 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-MATRIZ-ACESSO-APRENDIZAGEM-ETAPA-003-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "CÂNONE_EM_DESENVOLVIMENTO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-MATRIZ-ACESSO-RISCO-ARCANO-ETAPA-009-V0_1",
+      "name": "Matriz Acesso Risco Arcano Etapa 009 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "VALIDADO",
+      "summary": "Matriz Acesso Risco Arcano Etapa 009 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-MATRIZ-ACESSO-RISCO-ARCANO-ETAPA-009-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "CÂNONE_EM_DESENVOLVIMENTO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-MODALIDADES-ETAPA-003-V0_1",
+      "name": "Modalidades Etapa 003 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "VALIDADO",
+      "summary": "Modalidades Etapa 003 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-MODALIDADES-ETAPA-003-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "CÂNONE_EM_DESENVOLVIMENTO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-PROGRESSAO-RELATIVA-ETAPA-004-V0_1",
+      "name": "Progressao Relativa Etapa 004 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "VALIDADO",
+      "summary": "Progressao Relativa Etapa 004 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-PROGRESSAO-RELATIVA-ETAPA-004-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "CÂNONE_EM_DESENVOLVIMENTO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "SYS-EDU-001",
+      "name": "Quadro funcional de educação e ciência",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "VALIDADO",
+      "summary": "Quadro funcional de educação e ciência",
+      "description_ref": "codex://entity/SYS-EDU-001",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "NOVO_AUTORIZADO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-RAIZ-PROFUNDA-FORMACAO-CONTROLADA-ETAPA-009-V0_1",
+      "name": "Raiz Profunda Formacao Controlada Etapa 009 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "VALIDADO",
+      "summary": "Raiz Profunda Formacao Controlada Etapa 009 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-RAIZ-PROFUNDA-FORMACAO-CONTROLADA-ETAPA-009-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 3,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "CÂNONE_EM_DESENVOLVIMENTO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-REGRAS-CLASSIFICACAO-V0_1",
+      "name": "Regras Classificacao V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "VALIDADO",
+      "summary": "Regras Classificacao V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-REGRAS-CLASSIFICACAO-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "CÂNONE_EM_DESENVOLVIMENTO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-ROADMAP-001-010-V0_1",
+      "name": "Roadmap 001 010 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "ARTEFATO_OPERACIONAL",
+      "summary": "Roadmap 001 010 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-ROADMAP-001-010-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "ARTEFATO_OPERACIONAL",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-ROADMAP-001-010-V0_2",
+      "name": "Roadmap 001 010 V0_2",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "ARTEFATO_OPERACIONAL",
+      "summary": "Roadmap 001 010 V0_2",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-ROADMAP-001-010-V0_2",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "ARTEFATO_OPERACIONAL",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-ROADMAP-001-010-V0_3",
+      "name": "Roadmap 001 010 V0_3",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "ARTEFATO_OPERACIONAL",
+      "summary": "Roadmap 001 010 V0_3",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-ROADMAP-001-010-V0_3",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "ARTEFATO_OPERACIONAL",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-ROADMAP-001-010-V0_4",
+      "name": "Roadmap 001 010 V0_4",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "ARTEFATO_OPERACIONAL",
+      "summary": "Roadmap 001 010 V0_4",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-ROADMAP-001-010-V0_4",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "ARTEFATO_OPERACIONAL",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-ROADMAP-001-010-V0_5",
+      "name": "Roadmap 001 010 V0_5",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "ARTEFATO_OPERACIONAL",
+      "summary": "Roadmap 001 010 V0_5",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-ROADMAP-001-010-V0_5",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "ARTEFATO_OPERACIONAL",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-ROADMAP-001-010-V0_6",
+      "name": "Roadmap 001 010 V0_6",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "ARTEFATO_OPERACIONAL",
+      "summary": "Roadmap 001 010 V0_6",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-ROADMAP-001-010-V0_6",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "ARTEFATO_OPERACIONAL",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-ROADMAP-001-010-V0_7",
+      "name": "Roadmap 001 010 V0_7",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "ARTEFATO_OPERACIONAL",
+      "summary": "Roadmap 001 010 V0_7",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-ROADMAP-001-010-V0_7",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "ARTEFATO_OPERACIONAL",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-ROADMAP-001-010-V0_8",
+      "name": "Roadmap 001 010 V0_8",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "ARTEFATO_OPERACIONAL",
+      "summary": "Roadmap 001 010 V0_8",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-ROADMAP-001-010-V0_8",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "ARTEFATO_OPERACIONAL",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-ROADMAP-001-010-V0_9",
+      "name": "Roadmap 001 010 V0_9",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "ARTEFATO_OPERACIONAL",
+      "summary": "Roadmap 001 010 V0_9",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-ROADMAP-001-010-V0_9",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "ARTEFATO_OPERACIONAL",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-TAXONOMIA-CONHECIMENTO-V0_1",
+      "name": "Taxonomia Conhecimento V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "VALIDADO",
+      "summary": "Taxonomia Conhecimento V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-TAXONOMIA-CONHECIMENTO-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "CÂNONE_EM_DESENVOLVIMENTO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-TRADICAO-ORAL-CONHECIMENTO-TRADICIONAL-ETAPA-008-V0_1",
+      "name": "Tradicao Oral Conhecimento Tradicional Etapa 008 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "VALIDADO",
+      "summary": "Tradicao Oral Conhecimento Tradicional Etapa 008 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-TRADICAO-ORAL-CONHECIMENTO-TRADICIONAL-ETAPA-008-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "CÂNONE_EM_DESENVOLVIMENTO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-VALIDACAO-ETAPA-001-V0_1",
+      "name": "Validacao Etapa 001 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "REGISTRO_OPERACIONAL_PRESERVADO",
+      "summary": "Validacao Etapa 001 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-VALIDACAO-ETAPA-001-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "REGISTRO_OPERACIONAL_PRESERVADO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-VALIDACAO-ETAPA-002-V0_1",
+      "name": "Validacao Etapa 002 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "REGISTRO_OPERACIONAL_PRESERVADO",
+      "summary": "Validacao Etapa 002 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-VALIDACAO-ETAPA-002-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "REGISTRO_OPERACIONAL_PRESERVADO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-VALIDACAO-ETAPA-003-V0_1",
+      "name": "Validacao Etapa 003 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "REGISTRO_OPERACIONAL_PRESERVADO",
+      "summary": "Validacao Etapa 003 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-VALIDACAO-ETAPA-003-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "REGISTRO_OPERACIONAL_PRESERVADO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-VALIDACAO-ETAPA-004-V0_1",
+      "name": "Validacao Etapa 004 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "REGISTRO_OPERACIONAL_PRESERVADO",
+      "summary": "Validacao Etapa 004 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-VALIDACAO-ETAPA-004-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "REGISTRO_OPERACIONAL_PRESERVADO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-VALIDACAO-ETAPA-005-V0_1",
+      "name": "Validacao Etapa 005 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "REGISTRO_OPERACIONAL_PRESERVADO",
+      "summary": "Validacao Etapa 005 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-VALIDACAO-ETAPA-005-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "REGISTRO_OPERACIONAL_PRESERVADO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-VALIDACAO-ETAPA-006-V0_1",
+      "name": "Validacao Etapa 006 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "REGISTRO_OPERACIONAL_PRESERVADO",
+      "summary": "Validacao Etapa 006 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-VALIDACAO-ETAPA-006-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "REGISTRO_OPERACIONAL_PRESERVADO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "ANDROMEDA-EDUCIENCIA-VALIDACAO-ETAPA-007-V0_1",
+      "name": "Validacao Etapa 007 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "REGISTRO_OPERACIONAL_PRESERVADO",
+      "summary": "Validacao Etapa 007 V0_1",
+      "description_ref": "codex://entity/ANDROMEDA-EDUCIENCIA-VALIDACAO-ETAPA-007-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "REGISTRO_OPERACIONAL_PRESERVADO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "VALIDACAO-ANDROMEDA-EDUCIENCIA-ETAPA-008-V0_1",
+      "name": "Validacao Etapa 008 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "REGISTRO_OPERACIONAL_PRESERVADO",
+      "summary": "Validacao Etapa 008 V0_1",
+      "description_ref": "codex://entity/VALIDACAO-ANDROMEDA-EDUCIENCIA-ETAPA-008-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "REGISTRO_OPERACIONAL_PRESERVADO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    },
+    {
+      "id": "VALIDACAO-ANDROMEDA-EDUCIENCIA-ETAPA-009-V0_1",
+      "name": "Validacao Etapa 009 V0_1",
+      "aliases": [],
+      "domain": "educação/ciência",
+      "type": "OPERATIONAL_NODE",
+      "canonical_status": "REGISTRO_OPERACIONAL_PRESERVADO",
+      "summary": "Validacao Etapa 009 V0_1",
+      "description_ref": "codex://entity/VALIDACAO-ANDROMEDA-EDUCIENCIA-ETAPA-009-V0_1",
+      "parent_id": "POI-012",
+      "location_refs": [
+        "POI-012"
+      ],
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007",
+        "BIO-010"
+      ],
+      "route_refs": [
+        "RTE-001",
+        "RTE-002",
+        "RTE-005",
+        "RTE-014",
+        "RTE-020",
+        "RTE-023",
+        "RTE-021",
+        "RTE-022"
+      ],
+      "entity_refs": [],
+      "layer_refs": [
+        "EDUCATION",
+        "SCIENCE"
+      ],
+      "timeline_refs": [],
+      "asset_refs": [],
+      "spoiler_level": 0,
+      "representation_type": "OPERATIONAL_NODE",
+      "geometry": {
+        "longitude": 0.04,
+        "latitude": 12.03,
+        "altitude_m": 546,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1",
+        "precision_class": "P4",
+        "authority": "CANON_DERIVED"
+      },
+      "provenance": [
+        {
+          "source": "Etapa 3 inventário funcional + Etapa 4 regra PLR-GENERIC",
+          "original_state": "REGISTRO_OPERACIONAL_PRESERVADO",
+          "spatialization_method": "FUNCTIONAL_NETWORK_ANCHOR",
+          "derived_from": [
+            "POI-012",
+            "TER-001",
+            "BIO-002",
+            "BIO-007",
+            "BIO-010",
+            "RTE-001",
+            "RTE-002",
+            "RTE-005",
+            "RTE-014",
+            "RTE-020",
+            "RTE-023",
+            "RTE-021",
+            "RTE-022"
+          ],
+          "timestamp": "2026-08-14T00:00:00Z",
+          "version": "V1.0",
+          "authority": "TERRA MAX"
+        }
+      ],
+      "atlas_visibility": "LOCAL",
+      "fallback": false
+    }
+  ]
+}

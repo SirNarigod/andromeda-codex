@@ -1,0 +1,67 @@
+{
+  "record_id": "GODOT-ISOMETRIC-STREAMING-CONTRACT-V1.4",
+  "version": "1.4.0",
+  "status": "RELEASE_CONTRACT",
+  "authority": "LIVING_RUNTIME_PROJECTION_NOT_CANON_MUTATION",
+  "world_units": {
+    "metric": "meter",
+    "chunk_size_m": 4096,
+    "tile_size_m": 2,
+    "stellar_mean_radius_m": 6172666.667
+  },
+  "hierarchy": [
+    "COUNTRY",
+    "STATE",
+    "BLOCK",
+    "SUBREGION",
+    "CITY_BIOME_POI",
+    "DUNGEON",
+    "SCENE_ENTITY"
+  ],
+  "streaming": {
+    "ownership_rule": "one entity_ref -> exactly one owning chunk",
+    "preload_radius_chunks": 1,
+    "unload_rule": "reject unload while active ownership unless explicitly serialized/forced",
+    "persistence": "SQLite snapshot + hash"
+  },
+  "godot_handoff": {
+    "authoritative_coordinates": "geodetic + metric local projection",
+    "isometric_coordinates": "render/navigation projection only",
+    "runtime_authority": "Living V1.4",
+    "scene_authority": "Godot client may render but must not invent canonical/runtime state"
+  },
+  "access_projection": {
+    "PUBLIC": {
+      "max_lod": 4,
+      "blocked_layers": [
+        "resources",
+        "commerce",
+        "population",
+        "root",
+        "threat"
+      ],
+      "purpose": "public-safe Atlas projection"
+    },
+    "PLAYER_RUNTIME": {
+      "max_lod": 6,
+      "blocked_layers": [],
+      "purpose": "local game runtime projection; authentication/discovery is gateway responsibility"
+    },
+    "ADMIN": {
+      "max_lod": 6,
+      "blocked_layers": [],
+      "purpose": "operational/admin projection"
+    }
+  },
+  "process_resume": {
+    "supported": true,
+    "api": "IntegratedLivingEngineV14.resume_world(world_instance_id)",
+    "new_world_created": false,
+    "requirements": [
+      "same Master V2.1 hash",
+      "hash-valid country snapshot",
+      "persisted orchestration descriptors",
+      "persisted chunk ownership"
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "checkpoint": "FIRST_PLAYABLE_V0_1_19_DEV",
+  "parent_checkpoint": "FIRST_PLAYABLE_V0_1_18_RUNTIME_PASS",
+  "status": "STATIC_VALIDATED_RUNTIME_PENDING",
+  "functional_scope": [
+    "ranged_retreat_triggered_only_by_received_damage",
+    "retreat_direction_uses_actual_damage_source",
+    "proximity_based_retreat_removed"
+  ],
+  "final_ranged_contract": {
+    "enemy_near_without_hit": "NO_RETREAT",
+    "player_receives_damage_with_ranged_weapon": "SHORT_RETREAT",
+    "retreat_time_s": 0.32,
+    "settle_time_s": 0.18,
+    "fire_during_retreat": false,
+    "global_attack_cooldown_s": 2.0
+  },
+  "preserved_contracts": {
+    "enemy_tiers": [
+      "FRACO",
+      "MEDIO",
+      "FORTE",
+      "ALFA"
+    ],
+    "damage_triggered_enemy_aggro": true,
+    "ranged_damage_on_projectile_impact": true,
+    "inventory_weapon_selection": true,
+    "left_scene_transition": "approach_and_transition",
+    "right_click": "contextual_click_only"
+  },
+  "authority": {
+    "master_v2_0_1": "READ_ONLY_UNCHANGED",
+    "living_engine_v1_0_0": "READ_ONLY_UNCHANGED"
+  },
+  "static_checks": {
+    "checks": 23,
+    "passed": 23,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1",
+  "backup_authorized": false
+}

@@ -1,0 +1,549 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "MAR-BESTIARY-GAMEPLAY-STATS-DEV-V1.0",
+  "title": "Bestiário — stats de gameplay para as 13 criaturas canônicas de ECOLOGIA/FAUNA",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "canonical_status": "GAMEPLAY_DERIVED_DEV",
+  "master_integration_status": "NOT_SUBMITTED",
+  "behavior_contract_reference": "02_REGRAS/ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/02_CONTRACTS/ANIMAL_CREATURE_BRAIN_ECOLOGICAL_BEHAVIOR_CONTRACT_V1_0.json",
+  "r2_guard": "As 13 criaturas de origem (CRI-001 a CRI-013, em 01_LORE/CANON_R2/ECOLOGIA/FAUNA/) permanecem cânone R2 imutável — nome, aparição e descrição textual não são alterados aqui. Este arquivo apenas adiciona stats de gameplay (hp/defense/speed/threat) e campos de comportamento (group_structure, primary_action) já previstos como 'runtime_only_fields' no contrato comportamental (diet, social_structure, cognition_mode, activity_mode, thresholds, territoriality — nossa extensão é do mesmo tipo). Nenhum threat_tier ou special_trait foi inventado além do que já está escrito no summary/subtitle canônico de cada criatura (ex.: 'peçonhenta', 'predador de emboscada' já são texto do R2). CRI-014 (fase 46) é gameplay 100% novo, sem base R2 — criatura de bioma vulcânico para TER-014 (território derivado, fase 44/45). CRI-015 (fase 48) e gameplay 100% novo - criatura de bioma desertico para TER-015 (territorio derivado). CRI-016 (fase 49) e gameplay 100% novo - criatura de bioma glacial para TER-016 (territorio derivado). CRI-017 (fase 50) e gameplay 100% novo - criatura de bioma etereo para TER-017 (territorio derivado). CRI-018 (fase 51) e gameplay 100% novo - criatura de bioma abissal para TER-018 (territorio derivado). CRI-019 (fase 52) e gameplay 100% novo - criatura de bioma de selva/pantano para TER-019 (territorio derivado, ultimo desta serie). CRI-020..026 (fase 58) sao criaturas corrompidas pela Raiz Profunda, cada uma ancorada numa das 10 subregioes ja marcadas com root_corruption (fase 57, portao autoral). Nenhuma e uma versao 'inteligente'/NPC - sao monstros puros, tema planta/raiz corrompida. Fase 59 ENTREGUE: os 10 NPCs conscientes (ZUM-001..010, MAR_CORRUPTED_NPC_ROSTER_DEV_V1_0.json) cobrem 1:1 as 10 subregioes corrompidas (verificado fase 63) - mecanismo de parasitismo comum, sem reaproveitar STELLAR_SYMBIOSIS_LAW. CRI-027..029 (fase 60) sao os 3 primeiros peixes do catalogo (pesca marinha/oasis, todos PASSIVO/SCHOOL, com resource_yield de carne). CRI-030..032 (fase 61) sao os 3 peixes de rio (PAI-066..068) - fechamento total do gap 'sem peixe' da fase de mastery.",
+  "note_incomplete_source": "RESOLVIDO fase 62: STELLAR_FAUNA_DISTRIBUTION_V1_0.json (64 especies) importado do pacote Master para 01_LORE/CANON_MASTER_V2/FAUNA/MASTER_FAUNA_DISTRIBUTION_V2_0_0.json (verbatim + proveniencia). As 13 fichas R2 individuais (CRI-001..013) continuam a base dos stats deste arquivo; CRI-014+ sao gameplay derivado.",
+  "fauna_distribution_ref": "01_LORE/CANON_MASTER_V2/FAUNA/MASTER_FAUNA_DISTRIBUTION_V2_0_0.json",
+  "creatures": [
+    {
+      "creature_id": "CRI-001",
+      "name": "Cortassom",
+      "threat_tier": "PASSIVO",
+      "group_structure": "SOLITARY",
+      "primary_action": "ECO_FLEE",
+      "stats": {
+        "hp": 30,
+        "defense": 15,
+        "speed": 40,
+        "threat": 5
+      },
+      "special_trait": "encontrado ferido e deslocado por mineração ilegal (ep. 1) — comportamento fugidio",
+      "resource_yield": null,
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "creature_id": "CRI-002",
+      "name": "Velúrio",
+      "threat_tier": "PASSIVO",
+      "group_structure": "HERD",
+      "primary_action": "ECO_FORAGE",
+      "stats": {
+        "hp": 55,
+        "defense": 25,
+        "speed": 30,
+        "threat": 0
+      },
+      "special_trait": "gregário, dorso largo, criado por comunidades fronteiriças",
+      "resource_yield": "leite proteico",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "creature_id": "CRI-003",
+      "name": "Brumante",
+      "threat_tier": "PASSIVO",
+      "group_structure": "HERD",
+      "primary_action": "ECO_FORAGE",
+      "stats": {
+        "hp": 50,
+        "defense": 22,
+        "speed": 28,
+        "threat": 0
+      },
+      "special_trait": "seis membros, adaptado ao frio das terras altas",
+      "resource_yield": "leite denso",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "creature_id": "CRI-004",
+      "name": "Lúmara",
+      "threat_tier": "PASSIVO",
+      "group_structure": "HERD",
+      "primary_action": "ECO_FLEE",
+      "stats": {
+        "hp": 40,
+        "defense": 15,
+        "speed": 45,
+        "threat": 0
+      },
+      "special_trait": "marcas bioluminescentes, cervídeo de bosques abertos",
+      "resource_yield": "leite claro",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "creature_id": "CRI-005",
+      "name": "Raizel manso",
+      "threat_tier": "PASSIVO",
+      "group_structure": "PAIR",
+      "primary_action": "ECO_FORAGE",
+      "stats": {
+        "hp": 45,
+        "defense": 28,
+        "speed": 20,
+        "threat": 0
+      },
+      "special_trait": "encontra tubérculos sem danificar raízes vitais",
+      "resource_yield": "leite âmbar",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "creature_id": "CRI-006",
+      "name": "Luzipólen",
+      "threat_tier": "PASSIVO",
+      "group_structure": "SWARM",
+      "primary_action": "ECO_FORAGE",
+      "stats": {
+        "hp": 5,
+        "defense": 2,
+        "speed": 35,
+        "threat": 0
+      },
+      "special_trait": "polinizador luminoso noturno, evita seres de grande porte",
+      "resource_yield": null,
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "creature_id": "CRI-007",
+      "name": "Fio-de-Orvalho",
+      "threat_tier": "PASSIVO",
+      "group_structure": "COLONY",
+      "primary_action": "ECO_FORAGE",
+      "stats": {
+        "hp": 5,
+        "defense": 2,
+        "speed": 15,
+        "threat": 0
+      },
+      "special_trait": "decompositor inofensivo, acelera decomposição de folhas mortas",
+      "resource_yield": null,
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "creature_id": "CRI-008",
+      "name": "Grilo-Cobre",
+      "threat_tier": "PASSIVO",
+      "group_structure": "SWARM",
+      "primary_action": "ECO_FORAGE",
+      "stats": {
+        "hp": 8,
+        "defense": 5,
+        "speed": 20,
+        "threat": 0
+      },
+      "special_trait": "criado em caixas de argila, consumido torrado ou moído",
+      "resource_yield": "carne de inseto",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "creature_id": "CRI-009",
+      "name": "Larva-de-Véu",
+      "threat_tier": "PASSIVO",
+      "group_structure": "COLONY",
+      "primary_action": "ECO_FORAGE",
+      "stats": {
+        "hp": 6,
+        "defense": 3,
+        "speed": 5,
+        "threat": 0
+      },
+      "special_trait": "criada em fibras vegetais limpas, casca macia",
+      "resource_yield": "carne de inseto",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "creature_id": "CRI-010",
+      "name": "Vespa-de-Vidro",
+      "threat_tier": "HOSTIL",
+      "combat_tier": "BAIXO",
+      "group_structure": "SWARM",
+      "primary_action": "ECO_HUNT",
+      "stats": {
+        "hp": 15,
+        "defense": 10,
+        "speed": 55,
+        "threat": 50
+      },
+      "special_trait": "ferrão libera toxina neuromuscular — paralisia curta (poucos minutos)",
+      "resource_yield": null,
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "creature_id": "CRI-011",
+      "name": "Besouro-Rubro",
+      "threat_tier": "HOSTIL",
+      "combat_tier": "BAIXO",
+      "group_structure": "SOLITARY",
+      "primary_action": "ECO_FLEE",
+      "stats": {
+        "hp": 20,
+        "defense": 35,
+        "speed": 15,
+        "threat": 35
+      },
+      "special_trait": "libera secreção rubra irritante quando esmagado ou ameaçado (defesa, não predação)",
+      "resource_yield": null,
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "creature_id": "CRI-012",
+      "name": "Louva-Fenda",
+      "threat_tier": "HOSTIL",
+      "combat_tier": "MÉDIO",
+      "group_structure": "SOLITARY",
+      "primary_action": "ECO_HUNT",
+      "stats": {
+        "hp": 35,
+        "defense": 20,
+        "speed": 60,
+        "threat": 65
+      },
+      "special_trait": "camufla-se em fendas de pedra, emboscada por projeção das patas dianteiras",
+      "resource_yield": null,
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "creature_id": "CRI-013",
+      "name": "Mandíbula-de-Névoa",
+      "threat_tier": "HOSTIL",
+      "combat_tier": "ALTO",
+      "group_structure": "SWARM",
+      "primary_action": "ECO_HUNT",
+      "stats": {
+        "hp": 20,
+        "defense": 15,
+        "speed": 45,
+        "threat": 75
+      },
+      "special_trait": "caça em pequenos enxames coordenados por vibração e mudanças de pressão — perigo coletivo, não individual",
+      "resource_yield": null,
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "creature_id": "CRI-014",
+      "name": "Salamandra de Cinzas",
+      "threat_tier": "HOSTIL",
+      "combat_tier": "BAIXO",
+      "group_structure": "SOLITARY",
+      "primary_action": "ECO_FLEE",
+      "stats": {
+        "hp": 25,
+        "defense": 30,
+        "speed": 20,
+        "threat": 40
+      },
+      "special_trait": "pele resistente ao calor libera vapor abrasivo quando ameaçada (defesa, não predação) — coerente com o bioma vulcânico de TER-014 Cadeia de Cinzas",
+      "resource_yield": null,
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "creature_id": "CRI-015",
+      "name": "Escorpiao de Vidro-de-Areia",
+      "threat_tier": "HOSTIL",
+      "combat_tier": "BAIXO",
+      "group_structure": "SOLITARY",
+      "primary_action": "ECO_HUNT",
+      "stats": {
+        "hp": 20,
+        "defense": 25,
+        "speed": 35,
+        "threat": 45
+      },
+      "special_trait": "carapaca vitrea formada pelo calor da areia; ferrao perfurante - predador de emboscada nas dunas, coerente com o bioma desertico de TER-015 Vale das Ruinas",
+      "resource_yield": null,
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "creature_id": "CRI-016",
+      "name": "Lobo de Gelo",
+      "threat_tier": "HOSTIL",
+      "combat_tier": "MEDIO",
+      "group_structure": "PACK",
+      "primary_action": "ECO_HUNT",
+      "stats": {
+        "hp": 30,
+        "defense": 20,
+        "speed": 50,
+        "threat": 55
+      },
+      "special_trait": "caca em matilha coordenada nas fendas geladas, pelagem branca de camuflagem - coerente com o bioma glacial de TER-016 Confins de Gelo",
+      "resource_yield": null,
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "creature_id": "CRI-017",
+      "name": "Serpente de Nuvem",
+      "threat_tier": "HOSTIL",
+      "combat_tier": "MEDIO",
+      "group_structure": "SOLITARY",
+      "primary_action": "ECO_HUNT",
+      "stats": {
+        "hp": 28,
+        "defense": 18,
+        "speed": 60,
+        "threat": 58
+      },
+      "special_trait": "desliza entre correntes de eter, ataque de emboscada em ilhas errantes - coerente com o bioma etereo de TER-017 Arquipelago Etereo",
+      "resource_yield": null,
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "creature_id": "CRI-018",
+      "name": "Devorador das Trincheiras",
+      "threat_tier": "HOSTIL",
+      "combat_tier": "ALTO",
+      "group_structure": "SOLITARY",
+      "primary_action": "ECO_HUNT",
+      "stats": {
+        "hp": 40,
+        "defense": 30,
+        "speed": 40,
+        "threat": 70
+      },
+      "special_trait": "predador de emboscada adaptado a pressao extrema, ataca a partir de fendas escuras da trincheira - coerente com o bioma abissal de TER-018 Fossa Abissal",
+      "resource_yield": null,
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "creature_id": "CRI-019",
+      "name": "Serpente Esmeralda",
+      "threat_tier": "HOSTIL",
+      "combat_tier": "MEDIO",
+      "group_structure": "SOLITARY",
+      "primary_action": "ECO_HUNT",
+      "stats": {
+        "hp": 32,
+        "defense": 22,
+        "speed": 45,
+        "threat": 60
+      },
+      "special_trait": "camuflagem perfeita nas aguas do pantano, ataque de emboscada subita - coerente com o bioma de selva/pantano de TER-019 Mata Perdida",
+      "resource_yield": null,
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "creature_id": "CRI-020",
+      "name": "Enraizado de Contencao",
+      "threat_tier": "HOSTIL",
+      "combat_tier": "ALTO",
+      "group_structure": "SOLITARY",
+      "primary_action": "ECO_HUNT",
+      "stats": {
+        "hp": 45,
+        "defense": 35,
+        "speed": 25,
+        "threat": 75
+      },
+      "special_trait": "humanoide tomado por raizes na linha de contencao do Perimetro Alfa (SUB-012-001) - ataca com extensoes radiculares rigidas, mantem residuo de postura de guarda.",
+      "resource_yield": null,
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "creature_id": "CRI-021",
+      "name": "Sombra-Raiz",
+      "threat_tier": "HOSTIL",
+      "combat_tier": "MEDIO",
+      "group_structure": "PACK",
+      "primary_action": "ECO_HUNT",
+      "stats": {
+        "hp": 30,
+        "defense": 20,
+        "speed": 45,
+        "threat": 60
+      },
+      "special_trait": "vagueia entre tendas abandonadas do Campo de Deslocados (SUB-012-002), atraida por movimento e calor - forma pequenos grupos.",
+      "resource_yield": null,
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "creature_id": "CRI-022",
+      "name": "Guardiao de Galhos",
+      "threat_tier": "HOSTIL",
+      "combat_tier": "ALTO",
+      "group_structure": "SOLITARY",
+      "primary_action": "ECO_HUNT",
+      "stats": {
+        "hp": 55,
+        "defense": 40,
+        "speed": 20,
+        "threat": 70
+      },
+      "special_trait": "estrutura animada de galhos e raizes que protege as Ruinas Cobertas (SUB-019-002) - lento mas extremamente resistente.",
+      "resource_yield": null,
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "creature_id": "CRI-023",
+      "name": "Verme-Raiz",
+      "threat_tier": "HOSTIL",
+      "combat_tier": "MEDIO",
+      "group_structure": "SOLITARY",
+      "primary_action": "ECO_HUNT",
+      "stats": {
+        "hp": 35,
+        "defense": 25,
+        "speed": 35,
+        "threat": 58
+      },
+      "special_trait": "escava atraves da rocha dos Tuneis de Extracao (SUB-009-002), emerge para emboscadas subitas.",
+      "resource_yield": null,
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "creature_id": "CRI-024",
+      "name": "Sentinela Espinhosa",
+      "threat_tier": "HOSTIL",
+      "combat_tier": "MEDIO",
+      "group_structure": "SOLITARY",
+      "primary_action": "ECO_HUNT",
+      "stats": {
+        "hp": 32,
+        "defense": 30,
+        "speed": 30,
+        "threat": 55
+      },
+      "special_trait": "bloqueia a Passagem Secreta (SUB-013-003) com espinhos rigidos que perfuram armadura leve.",
+      "resource_yield": null,
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "creature_id": "CRI-025",
+      "name": "Espectro de Cinza-Raiz",
+      "threat_tier": "HOSTIL",
+      "combat_tier": "MEDIO",
+      "group_structure": "SOLITARY",
+      "primary_action": "ECO_HUNT",
+      "stats": {
+        "hp": 28,
+        "defense": 18,
+        "speed": 50,
+        "threat": 62
+      },
+      "special_trait": "forma quase incorporea de cinza e raiz seca que vaga pelas Ruinas de Antes-do-Pacto (SUB-015-002), some e reaparece entre dunas.",
+      "resource_yield": null,
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "creature_id": "CRI-026",
+      "name": "Raiz Gelida",
+      "threat_tier": "HOSTIL",
+      "combat_tier": "ALTO",
+      "group_structure": "SOLITARY",
+      "primary_action": "ECO_HUNT",
+      "stats": {
+        "hp": 48,
+        "defense": 38,
+        "speed": 22,
+        "threat": 72
+      },
+      "special_trait": "raiz corrompida que se adaptou ao gelo da Fenda Congelada (SUB-016-003), superficie cristalizada que rompe em lascas cortantes.",
+      "resource_yield": null,
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "creature_id": "CRI-027",
+      "name": "Peixe-Vela de Navyr",
+      "threat_tier": "PASSIVO",
+      "group_structure": "SCHOOL",
+      "primary_action": "ECO_FORAGE",
+      "stats": {
+        "hp": 12,
+        "defense": 4,
+        "speed": 55,
+        "threat": 0
+      },
+      "special_trait": "cardume costeiro das Ilhas de Pesca (SUB-004-002), vela dorsal que capta correnteza - base da pesca artesanal de Navyr.",
+      "resource_yield": "carne branca",
+      "habitat_ref": "SUB-004-002",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "creature_id": "CRI-028",
+      "name": "Peixe-Lanterna do Recife",
+      "threat_tier": "PASSIVO",
+      "group_structure": "SCHOOL",
+      "primary_action": "ECO_FORAGE",
+      "stats": {
+        "hp": 10,
+        "defense": 3,
+        "speed": 50,
+        "threat": 0
+      },
+      "special_trait": "cardume bioluminescente dos Recifes Luminosos (SUB-018-002), segue o Coral Luminoso (FLO-017) - pescado com armadilha luminosa.",
+      "resource_yield": "carne + oleo de lanterna",
+      "habitat_ref": "SUB-018-002",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "creature_id": "CRI-029",
+      "name": "Peixe do Poco",
+      "threat_tier": "PASSIVO",
+      "group_structure": "SCHOOL",
+      "primary_action": "ECO_FORAGE",
+      "stats": {
+        "hp": 8,
+        "defense": 3,
+        "speed": 45,
+        "threat": 0
+      },
+      "special_trait": "pequeno peixe de agua permanente do Oasis do Poco Fundo (SUB-015-003), indicador de pureza da agua como a Flor-de-Areia (FLO-014).",
+      "resource_yield": "carne magra",
+      "habitat_ref": "SUB-015-003",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "creature_id": "CRI-030",
+      "name": "Peixe do Raizel",
+      "threat_tier": "PASSIVO",
+      "group_structure": "SCHOOL",
+      "primary_action": "ECO_FORAGE",
+      "stats": {
+        "hp": 10,
+        "defense": 4,
+        "speed": 52,
+        "threat": 0
+      },
+      "special_trait": "peixe de correnteza do Rio Raizel (PAI-066, SUB-011-004), pescado no Vau de Raizel (LOC-011-004) - carne branca base das racoes da fronteira.",
+      "resource_yield": "carne branca",
+      "habitat_ref": "SUB-011-004",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "creature_id": "CRI-031",
+      "name": "Peixe Rubro",
+      "threat_tier": "PASSIVO",
+      "group_structure": "SCHOOL",
+      "primary_action": "ECO_FORAGE",
+      "stats": {
+        "hp": 9,
+        "defense": 3,
+        "speed": 48,
+        "threat": 0
+      },
+      "special_trait": "peixe de escamas rosadas do Rio Rubro (PAI-067, SUB-007-002), pescado sob a PON-002 - carne rosada usada nas dietas das Casas de Cura.",
+      "resource_yield": "carne rosada",
+      "habitat_ref": "SUB-007-002",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    },
+    {
+      "creature_id": "CRI-032",
+      "name": "Traira da Serpente",
+      "threat_tier": "PASSIVO",
+      "group_structure": "SOLITARY",
+      "primary_action": "ECO_FORAGE",
+      "stats": {
+        "hp": 16,
+        "defense": 6,
+        "speed": 40,
+        "threat": 4
+      },
+      "special_trait": "peixe solitario de fundo do Rio da Serpente (PAI-068, SUB-019-003), pescado so com guia - carne densa, captura com cota pelo risco do pantano.",
+      "resource_yield": "carne densa",
+      "habitat_ref": "SUB-019-003",
+      "safety": "FICTIONAL_GAME_STATS_ONLY"
+    }
+  ]
+}

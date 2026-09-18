@@ -1,0 +1,9 @@
+{
+  "record_id": "FLO-009", "record_kind": "DERIVED_CANONICAL_PROFILE", "authority": "CANON_DERIVADO_ATIVO",
+  "title": "Vinha do Temporal", "subtitle": "Trepadeira resistente dos Picos de Tempestade",
+  "summary": "Trepadeira de caule fibroso capaz de suportar ventos extremos, cresce presa às Muralhas do Trovão.",
+  "facts": {"Habitat": "Muralhas do Trovão (SUB-013-001), Fortaleza do Trovão", "Uso": "Fibra resistente para cordas e reforço estrutural"},
+  "relations": [{"code": "SUB-013-001", "label": "Habitat — Muralhas do Trovão"}, {"code": "BIO-005", "label": "Bioma — Picos de Tempestade"}],
+  "r2_compatibility": "Espécie nova, sem precedente R2; ancorada no bioma BIO-005 já vinculado a TER-013 (fase 10).",
+  "safety": "FICTIONAL_LOCATION_ONLY"
+}

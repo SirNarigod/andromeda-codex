@@ -1,0 +1,42 @@
+[
+ {
+  "id": "CONTENCAO",
+  "icon": "⛓",
+  "name": "Contenção não-letal (WPN-CNT)",
+  "dur": null,
+  "atk": -4,
+  "evm": 0.7,
+  "dot": 0,
+  "desc": "IMPACTO_NÃO_LETAL; imobiliza (sem mover/dragar); evasão ×0.7; ataques -4; CD 12 (FOR) para soltar por rodada."
+ },
+ {
+  "id": "OFUSCADO",
+  "icon": "✨",
+  "name": "Ofuscamento (WPN-FLA)",
+  "dur": 1,
+  "atk": -5,
+  "evm": 1.0,
+  "dot": 0,
+  "desc": "Luz/som SEM_IMPACTO_FÍSICO; próximo ataque -5; consome-se ao atacar ou no fim da rodada."
+ },
+ {
+  "id": "ESPORO",
+  "icon": "☣",
+  "name": "Contaminação de esporos (WPN-PRO)",
+  "dur": 3,
+  "atk": 0,
+  "evm": 1.0,
+  "dot": 2,
+  "desc": "PERFURAÇÃO_E_CONTAMINAÇÃO; 2 de dano por rodada; expira em 3 rodadas."
+ },
+ {
+  "id": "RAIZ",
+  "icon": "🌿",
+  "name": "Perfuração radicular (WPN-RAD)",
+  "dur": 3,
+  "atk": 0,
+  "evm": 0.7,
+  "dot": 2,
+  "desc": "Raiz de corrompido; não move; evasão ×0.7; 2 de dano por rodada; expira em 3."
+ }
+]

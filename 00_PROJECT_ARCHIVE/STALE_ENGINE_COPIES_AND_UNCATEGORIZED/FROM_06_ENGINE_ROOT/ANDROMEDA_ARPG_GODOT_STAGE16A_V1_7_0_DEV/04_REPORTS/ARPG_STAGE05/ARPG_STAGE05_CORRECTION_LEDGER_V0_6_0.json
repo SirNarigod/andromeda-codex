@@ -1,0 +1,49 @@
+{
+  "record_id": "ARPG-STAGE05-CORRECTION-LEDGER-V0.6.0",
+  "stage": "05/20",
+  "version": "V0.6.0",
+  "status": "CLOSED",
+  "open_corrections": 0,
+  "entries": [
+    {
+      "id": "S05-C01",
+      "kind": "FUNCTIONAL_CONTRACT",
+      "finding": "Stage05 item commands required explicit acceptance by the Game Core authority catalog.",
+      "correction": "Added USE_ITEM/EQUIP_ITEM/UNEQUIP_ITEM routes with deterministic item event references derived from the command stream.",
+      "retest": "Stage05 unit 22/22 PASS; Stage01 unit 12/12, validation 58/58 and stress 35/35 PASS.",
+      "status": "CLOSED"
+    },
+    {
+      "id": "S05-C02",
+      "kind": "HARNESS_TIMEOUT",
+      "finding": "Combined Stage05 validation+stress execution exceeded the harness limit after validation completed.",
+      "correction": "Validation and stress were executed as independent gates.",
+      "retest": "Validation 68/68 PASS; stress 62/62 PASS.",
+      "status": "CLOSED"
+    },
+    {
+      "id": "S05-C03",
+      "kind": "HARNESS_TIMEOUT",
+      "finding": "Grouped upstream regression commands exceeded the harness window even though earlier suites had completed.",
+      "correction": "Upstream regressions were rerun as isolated suites.",
+      "retest": "Stage04 16/16 + 53/53 + 24/24; Stage03 14/14 + 67/67 + 17/17; Stage02 11/11 + 51/51 + 15/15; Stage01 12/12 + 58/58 + 35/35; Stage00 validation 51/51 and stress PASS.",
+      "status": "CLOSED"
+    },
+    {
+      "id": "S05-C04",
+      "kind": "UNIT_HARNESS_SCOPE",
+      "finding": "The Stage05 unittest suite redundantly called full global country relationship-integrity health after item integrity had already passed, causing the unit runner to exceed 240 seconds.",
+      "correction": "Kept item integrity in the unit scope and preserved full Stage05/global health in bootstrap, validation, stress and persistence/restore gates. Unit report runner was isolated in a subprocess. No gameplay rule was weakened.",
+      "retest": "Direct Stage05 unit suite 22/22 PASS; isolated unit-report runner 22/22 PASS.",
+      "status": "CLOSED"
+    },
+    {
+      "id": "S05-C05",
+      "kind": "LEGACY_HARNESS_TIMEOUT",
+      "finding": "Grouped Country V1.5 core execution timed out after six completed cases.",
+      "correction": "All V1.5 critical cases were executed individually.",
+      "retest": "Core 7/7, gameplay 6/6, integration 5/5, security/persistence 6/6 = 24/24 PASS.",
+      "status": "CLOSED"
+    }
+  ]
+}

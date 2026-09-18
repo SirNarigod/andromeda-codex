@@ -1,0 +1,23 @@
+{
+  "record_id": "STELLAR-COSMOLOGY-CANON-V1.1",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.1",
+  "status": "ACTIVE_R2_REBASED_AUTHORIAL_CANON",
+  "supersedes": "STELLAR_COSMOLOGY_CANON_V1_0",
+  "authority": {"primary_source": "ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2", "scope": "LORE_CHARACTERS_EPISODES_COSMOLOGY", "master_v2_0_1": "TECHNICAL_EXTENSION_ONLY", "living_sim_engine_v1_0_0": "TECHNICAL_EXTENSION_ONLY"},
+  "dependencies": ["../../STELLAR_REBASE_R2/R2_SOURCE_AUTHORITY_INDEX_V1_0.json", "../../02_REGRAS/STELLAR_FOUNDATION/STELLAR_CANON_CONSTITUTION_V1_1.json"],
+  "r2_facts": {
+    "stellar": "Planeta vivo onde natureza, tecnologia, magia, sociedades e espíritos coexistem em equilíbrio instável.",
+    "amadon": "Consciência guardiã conectada a Stellar pela Corrente Planetária; criador conhecido do Espinho-Negro.",
+    "espinho_negro": "Planta fóssil inteligente criada para localizar e combater a corrupção radicular da Raiz Profunda.",
+    "revelation_boundary": "Kenua não identifica Amadon antes do Episódio 8 da Temporada 1, O Hospedeiro.",
+    "current_year": "842 EC",
+    "planetary_government": "Não existe; o Conselho de Convergência negocia crises e rotas, mas não governa territórios."
+  },
+  "invariants": ["R2_LORE_FACTS_ARE_IMMUTABLE", "AMADON_IS_STELLAR_GUARDIAN_INTERFACE", "STELLAR_IS_A_LIVING_PLANET", "R2_REVELATION_BOUNDARIES_MUST_BE_PRESERVED", "NO_FACTION_OWNS_STELLAR"],
+  "prohibitions": ["NO_UNSOURCED_KENUA_RETCON", "NO_AMADON_IDENTIFICATION_BEFORE_S01E08", "NO_R2_EPISODE_RETCON", "NO_DIRECT_DIVINE_COMMAND_AS_CANON", "NO_OFFICIAL_RELIGION_OR_LANGUAGE_WITHOUT_R2_OR_AUTHORIAL_SOURCE"],
+  "simulation_effects": ["Planetary reactions must be modeled as effects of a living Stellar or its guarded systems, with event provenance.", "Amadon cannot be surfaced in gameplay or dialogue before the R2 revelation boundary.", "The Espinho-Negro requires material limits, gradual symbiosis and preservation of Kenua's agency."],
+  "allowed_states": ["R2_CONFIRMED", "CANON_DERIVADO_ATIVO", "DIVERGENCIA_FORMAL_AGUARDANDO_DECISAO", "CONFLITO_COM_R2_CONGELADO"],
+  "story_generators": ["A cicatriz de uma resposta planetária torna-se evidência sem antecipar Amadon.", "Kenua enfrenta uma reação do Espinho-Negro sem perder agência corporal ou identidade.", "Uma facção interpreta a Corrente Planetária de forma política, mas não ganha autoridade sobre Stellar."],
+  "r2_evidence": ["Projeto Andromeda.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json: PLA-001, COS-002, ART-001, COR-001, PER-002"]
+}

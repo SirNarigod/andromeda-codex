@@ -1,0 +1,18 @@
+{
+  "record_id": "SUB-002-003",
+  "record_kind": "DERIVED_SUBREGION_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Trilhos do Minério",
+  "parent_political_unit": "TER-002",
+  "provenance": {"approval": "GAMEPLAY_DERIVED_DEV_SOURCE", "r2_anchors": ["TER-002"], "compatibility": "Camada administrativa e narrativa local; não cria fronteira, cidade, soberania ou nova autoridade."},
+  "function": "Linhas ferroviárias de extração de minério que abastecem o Cinturão das Forjas.",
+  "locality_references": ["LOC-002-003 Posto dos Trilhos"],
+  "permitted_catalog_links": {"npc_roles": ["classe:Soldados"], "professions": [], "encounters": [], "resources": ["minério"]},
+  "local_conflicts": ["segurança da carga versus assaltos de rota", "exploração mineral versus comunidades deslocadas"],
+  "prohibitions": ["NO_NEW_SOVEREIGNTY", "NO_AUTOMATIC_KENUA_SCENE", "NO_R2_EPISODE_REWRITE", "NO_FIXED_BORDER_COORDINATE"],
+  "story_generators": [
+    "Um comboio de minério é emboscado e a guarda real precisa decidir perseguir ou proteger o restante da carga.",
+    "Uma comunidade deslocada pela expansão dos trilhos exige compensação que a coroa relutar em pagar."
+  ]
+}

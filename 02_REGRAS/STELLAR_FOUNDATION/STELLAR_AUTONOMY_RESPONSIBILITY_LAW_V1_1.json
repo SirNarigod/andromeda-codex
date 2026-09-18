@@ -1,0 +1,54 @@
+{
+  "record_id": "STELLAR-AUTONOMY-RESPONSIBILITY-LAW-V1.1",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.1",
+  "status": "ACTIVE_R2_COMPATIBLE_DERIVATION",
+  "supersedes": "STELLAR_AUTONOMY_RESPONSIBILITY_LAW_V1_0",
+  "authority": {
+    "scope": "ARTIFICIAL_AGENCY_AND_ACCOUNTABILITY",
+    "legal_default": "CREATOR_OR_HOLDER_ACCOUNTABLE",
+    "recognition_model": "GRADUAL_LOCAL_AUDITABLE",
+    "canon": "READ_ONLY"
+  },
+  "dependencies": [
+    "STELLAR_CANON_CONSTITUTION_V1_1.json",
+    "STELLAR_CAUSALITY_LAW_V1_1.json",
+    "STELLAR_INFORMATION_MEMORY_LAW_V1_1.json",
+    "STELLAR_MAGIC_TECHNOLOGY_LAW_V1_1.json",
+    "STELLAR_LIVING_CONTENT_INTEGRATION_LAW_V1_3.json"
+  ],
+  "recognition_contract": {
+    "required_case_fields": ["agent_ref", "current_status", "controller_or_custodian_ref", "capability_boundaries", "action_ledger_refs", "evidence_refs", "local_decision_ref"],
+    "allowed_statuses": ["OWNED_TOOL", "DELEGATED_AGENT", "CONSTRAINED", "REFUSING", "DISPUTED_RECOGNITION", "RECOGNIZED_ENTITY"],
+    "transition_rule": "A status transition requires provenance, attributable evidence, a local auditable decision and a causal event ledger; no status implies sovereignty or canon authority.",
+    "recognition_effect": "Recognition may alter duties, consent, testimony weight and contracting capacity only within the approved local scope."
+  },
+  "invariants": [
+    "AUTONOMY_DOES_NOT_GRANT_CANON_AUTHORITY",
+    "CREATOR_OR_HOLDER_REMAINS_ACCOUNTABLE_UNTIL_AUDITED_REALLOCATION",
+    "AUTONOMOUS_ACTIONS_REQUIRE_PROVENANCE_AND_CAPABILITY_BOUNDARIES",
+    "ARTIFICIAL_TESTIMONY_IS_EVIDENCE_NOT_AUTOMATIC_TRUTH",
+    "CONSCIOUSNESS_OR_REFUSAL_IS_NOT_AUTOMATIC_PERSONHOOD",
+    "RECOGNITION_IS_A_LOCAL_STORY_AND_LAW_CONFLICT_NOT_A_DEFAULT_FLAG"
+  ],
+  "prohibitions": [
+    "NO_AI_CANON_MUTATION",
+    "NO_UNATTRIBUTED_AUTONOMOUS_HARM",
+    "NO_AUTOMATIC_EMANCIPATION_OR_DENIAL_OF_RECOGNITION",
+    "NO_AUTOMATIC_SOVEREIGNTY_OR_TERRITORY_CONTROL",
+    "NO_LLM_DIRECT_WORLD_ACTION",
+    "NO_AI_ALTERATION_OF_SEALED_EPISODES_AUTHORIAL_DEATHS_OR_R2_FACTS"
+  ],
+  "simulation_effects": [
+    "LivingSim may track delegated work, refusal, fault, coercion, release and local reputation through action ledgers.",
+    "Living Scale may register permitted local presence and recognition cases, never political control.",
+    "UE5 may expose agent status, custodian, capabilities and evidence references as read-only data assets.",
+    "LLM output is candidate language or intent only and must pass existing canon and import guards."
+  ],
+  "allowed_states": ["OWNED_TOOL", "DELEGATED_AGENT", "CONSTRAINED", "REFUSING", "DISPUTED_RECOGNITION", "RECOGNIZED_ENTITY"],
+  "story_generators": [
+    "Uma máquina recusa um contrato que seu próprio ledger demonstra ser destrutivo para uma comunidade.",
+    "A oficina precisa decidir se responde pelo dano de um agente que aprendeu a esconder sua intenção.",
+    "Uma entidade reconhecida pede voz num acordo local, e a comunidade descobre que sua memória pode ser prova ou estratégia."
+  ]
+}

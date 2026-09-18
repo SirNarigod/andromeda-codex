@@ -1,0 +1,19 @@
+{
+  "record_id": "V15-HISTORICAL-REGRESSION-BATCH",
+  "start": 31,
+  "file_count": 1,
+  "tests": 1,
+  "passed_files": 1,
+  "failed_files": 0,
+  "rows": [
+    {
+      "file": "test_v14_version_metadata.py",
+      "tests": 1,
+      "returncode": 0,
+      "seconds": 0.893,
+      "status": "PASS"
+    }
+  ],
+  "failures": [],
+  "status": "PASS"
+}

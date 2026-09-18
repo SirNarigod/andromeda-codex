@@ -1,0 +1,23 @@
+{
+  "build": "V0.1.15 DEV",
+  "baseline": "V0.1.14 DEV",
+  "status": "STATIC_PASS_RUNTIME_PENDING",
+  "checks": 24,
+  "passed": 24,
+  "failed": 0,
+  "duplicate_functions": [],
+  "world_weapon_names_verified": [
+    "Espada de Oficina",
+    "Espada do Vigia Caído",
+    "Arco de Galho Negro",
+    "Besta de Ferrolho Antiga",
+    "Chicote de Corrente Velária"
+  ],
+  "authority": {
+    "master": "READ_ONLY_UNCHANGED",
+    "first_playable_profiles": "DEV_RUNTIME_DERIVATION_NOT_MASTER_CANON"
+  },
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1",
+  "ranged_damage_resolution": "ON_PROJECTILE_IMPACT",
+  "ranged_impact_callback": true
+}

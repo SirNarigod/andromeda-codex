@@ -1,0 +1,27 @@
+{
+  "loc_id": "LOC-016-003",
+  "record_id": "LOC-016-003",
+  "name": "Vigia da Fenda",
+  "parent_subregion": "SUB-016-003",
+  "function": "Posto de observação e resgate na rota da Fenda Congelada.",
+  "notable_link": "TER-016 Confins de Gelo (fase 49, território novo)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "settlement_tier": "POSTO",
+  "history": "A Fenda Congelada engole viajantes desavisados com regularidade suficiente pra justificar um posto dedicado só a resgatá-los — coberta por uma fina camada de neve que a torna quase indistinguível do terreno ao redor até que já é tarde demais pra quem pisou nela. O posto foi erguido depois que uma caravana inteira de comerciantes desapareceu nela numa única tempestade, décadas atrás, e a comunidade de Abrigo Central decidiu que nunca mais aconteceria sem alguém de vigília ali.",
+  "sensory": "Bandeiras vermelhas marcam a borda visível da fenda, tremulando com violência mesmo em ventos moderados — um aviso visual que os moradores renovam a cada temporada, já que a neve cobre e descobre a borda real de formas imprevisíveis. Cordas de resgate ficam sempre prontas, enroladas em suportes de metal fixados à rocha, e o vigia de plantão as verifica compulsivamente a cada hora, mesmo sabendo que estão em perfeito estado. O silêncio ali é diferente do resto do território — mais pesado, como se o próprio vento soubesse que aquele lugar já engoliu gente e evitasse fazer barulho por respeito.",
+  "figures": [
+    {
+      "role": "Vigia Sênior",
+      "name": "Torvald Cordaforte",
+      "note": "Puxou sete pessoas vivas da fenda ao longo dos anos e perdeu contato de três que nunca encontrou a tempo — carrega os nomes dos três tatuados no antebraço, um lembrete permanente que ele mostra a qualquer aprendiz novo no primeiro dia de treinamento."
+    },
+    {
+      "role": "Aprendiz de vigia",
+      "name": "Sigrun Neveclara",
+      "note": "Perdeu um irmão mais velho na fenda antes mesmo de o posto existir formalmente e se voluntariou pra vigília assim que teve idade — Torvald a treina com cuidado redobrado, temendo que a motivação pessoal dela a leve a arriscar demais numa emergência real."
+    }
+  ],
+  "hook": "Uma tempestade repentina isolou um grupo de viajantes perto da borda da fenda, e os rastros somem exatamente onde a neve mais recente cobriu a borda real — Torvald hesita em mandar Sigrun na frente, sabendo o quanto ela quer provar valor, mas ele mesmo está ferido de um resgate anterior naquela mesma semana.",
+  "detail": "Todo resgate bem-sucedido é marcado com uma pequena pedra pintada de vermelho, empilhada ao lado da entrada do posto — a pilha cresce devagar, e os vigias contam as pedras em voz baixa antes de cada turno, como se isso garantisse que o número continuasse subindo.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION"]
+}

@@ -1,0 +1,94 @@
+{
+  "record_id": "ARPG-STAGE16B-B11-PERFORMANCE-REPORT-V0.8.0",
+  "captured_at": "2026-08-21T21:35:05.0625097-03:00",
+  "policy": "No formal FPS/frame-time threshold exists in the approved contract. Metrics are reported without inventing a numeric PASS threshold; only unequivocal regression or error is a failure.",
+  "environment": {
+    "godot": "4.7.1.stable.official.a13da4feb",
+    "renderer": "OpenGL 3.3 Compatibility",
+    "gpu_vendor": "NVIDIA",
+    "gpu": "NVIDIA GeForce GTX 1650",
+    "driver": "NVIDIA 560.94"
+  },
+  "editor_bridge_integrated_capture": {
+    "duration_s": 0.811893,
+    "sampled_frame_count": 57,
+    "process_frame_count": 57,
+    "observed_fps_from_process_frames": 70.2062956571864,
+    "engine_fps_monitor_at_end": 22.0,
+    "frame_time_ms": {
+      "average": 16.9501169590643,
+      "p95": 25.019,
+      "maximum": 141.949666666667,
+      "sample_count": 57
+    },
+    "static_memory_bytes": {
+      "start": 73338108,
+      "end": 75671034,
+      "peak_sampled_during_capture": 75669782,
+      "delta": 2332926
+    },
+    "object_counts": {
+      "nodes_start": 586,
+      "nodes_end": 619,
+      "nodes_delta": 33,
+      "objects_start": 2727,
+      "objects_end": 2780,
+      "objects_delta": 53
+    }
+  },
+  "final_headless_integrated_capture": {
+    "duration_s": 0.60406,
+    "sampled_frame_count": 89,
+    "process_frame_count": 89,
+    "observed_fps_from_process_frames": 147.336357315498,
+    "frame_time_ms": {
+      "average": 8.46234831460675,
+      "p95": 6.94444444444444,
+      "maximum": 147.972,
+      "sample_count": 89
+    },
+    "static_memory_bytes": {
+      "start": 66637896,
+      "end": 68562546,
+      "peak_sampled_during_capture": 68560550,
+      "delta": 1924650
+    },
+    "object_counts": {
+      "nodes_start": 586,
+      "nodes_end": 619,
+      "nodes_delta": 33,
+      "objects_start": 2744,
+      "objects_end": 2802,
+      "objects_delta": 58
+    }
+  },
+  "workload": {
+    "integrated_stage_events": 12,
+    "stage_order": ["SPAWN", "EXPLORE", "WATER_TERRAIN_TRAVERSAL", "DIALOGUE", "QUEST", "COMBAT", "LOOT", "GATHER", "VENDOR", "SAVE", "DEATH_BAG_DROP", "RESPAWN"],
+    "ground_loot_density": 6,
+    "npc_density": 3,
+    "enemy_density": 2,
+    "resource_density": 5,
+    "streaming_transitions": 4,
+    "expected_persistent_additions": ["LOOT-B11-ENEMY", "LOOT-B11-TREE", "BAG-B11-DROPPED-LAND"]
+  },
+  "observations": {
+    "streaming_hitch_error": false,
+    "autosave_hitch_error": false,
+    "camera_or_movement_jitter_error": false,
+    "runaway_allocation_detected": false,
+    "duplicate_node_growth_detected": false,
+    "timer_or_process_leak_detected": false,
+    "reload_or_death_respawn_functional_degradation": false,
+    "unequivocal_performance_regression_detected": false,
+    "formal_numeric_threshold_available": false,
+    "numeric_pass_threshold_invented": false
+  },
+  "watch_items": [
+    "The short Editor Bridge capture observed one 141.950 ms maximum frame sample; without a formal threshold and without a sustained trend it is recorded, not converted into an invented failure or PASS target.",
+    "The capture is a bounded vertical-slice workload, not a long-duration soak; long-horizon memory trend remains future evidence.",
+    "Node/object deltas match deliberate persistent projections and were accompanied by identity/no-duplication checks."
+  ],
+  "classification": "MEASURED_NO_UNEQUIVOCAL_REGRESSION",
+  "gameplay_authority": false
+}

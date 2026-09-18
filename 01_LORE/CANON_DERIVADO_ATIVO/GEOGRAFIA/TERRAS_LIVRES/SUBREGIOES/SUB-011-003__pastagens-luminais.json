@@ -1,0 +1,15 @@
+{
+  "record_id": "SUB-011-003",
+  "record_kind": "DERIVED_SUBREGION_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "ACTIVE_R2_COMPATIBLE",
+  "title": "Pastagens Luminais",
+  "parent_political_unit": "TER-011",
+  "provenance": {"approval":"R2-REBASE-LOT-009","r2_anchors":["TER-011","BIO-002","CRI-002","RES-001"],"compatibility":"Local grazing and food-production overlay based on R2 velúrio habitat; no ownership, price or population fact is asserted."},
+  "function":"Criação de velúrios, cuidado de solo, preparo de alimento e circulação de suprimentos comunitários.",
+  "locality_references":[],
+  "permitted_catalog_links":{"npc_roles":["NPC-ROLE-002","NPC-ROLE-003","NPC-ROLE-009"],"professions":["JOB-001","JOB-002","JOB-009"],"encounters":["ENCOUNTER-002","ENCOUNTER-008"],"resources":["RES-001","RES-005"]},
+  "local_conflicts":["produção de alimento versus recuperação do solo","urgência de transporte versus rastreabilidade de contaminação","cuidado de rebanho versus expansão de rota"],
+  "prohibitions":["NO_CANONICAL_PRICE","NO_INFINITE_HERD","NO_AUTOMATIC_CONTAMINATION_FACT","NO_TERRITORIAL_CLAIM"],
+  "story_generators":["A queda na qualidade do leite força uma investigação sobre um solo que todos julgavam seguro.","Uma caravana quer comprar a reserva de inverno de uma comunidade.","A proteção de um rebanho revela que o perigo não é predador, mas a rota que o atravessa."]
+}

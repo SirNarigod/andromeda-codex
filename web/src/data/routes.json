@@ -1,0 +1,498 @@
+[
+ {
+  "id": "ROT-001",
+  "name": "Trilha de Feira Central de Lúminor a Rota das Caravanas",
+  "from": "SUB-001-001",
+  "to": "SUB-001-002",
+  "mode": "TERRESTRE",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-002",
+  "name": "Trilha de Rota das Caravanas a Câmara dos Mercadores",
+  "from": "SUB-001-002",
+  "to": "SUB-001-003",
+  "mode": "TERRESTRE",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-003",
+  "name": "Trilha de Cinturão das Forjas a Distrito Portuário de Kharveth",
+  "from": "SUB-002-001",
+  "to": "SUB-002-002",
+  "mode": "FERROVIARIA",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-004",
+  "name": "Trilha de Distrito Portuário de Kharveth a Trilhos do Minério",
+  "from": "SUB-002-002",
+  "to": "SUB-002-003",
+  "mode": "FERROVIARIA",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-005",
+  "name": "Trilha de Nó Ferroviário Central a Distrito das Oficinas Ferroviárias",
+  "from": "SUB-003-001",
+  "to": "SUB-003-002",
+  "mode": "FERROVIARIA",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-006",
+  "name": "Trilha de Distrito das Oficinas Ferroviárias a Assembleia de Ortheon",
+  "from": "SUB-003-002",
+  "to": "SUB-003-003",
+  "mode": "FERROVIARIA",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-007",
+  "name": "Trilha de Porto Livre de Navyr a Ilhas de Pesca",
+  "from": "SUB-004-001",
+  "to": "SUB-004-002",
+  "mode": "NAVAL",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-008",
+  "name": "Trilha de Ilhas de Pesca a Conselho das Ondas",
+  "from": "SUB-004-002",
+  "to": "SUB-004-003",
+  "mode": "NAVAL",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-009",
+  "name": "Trilha de Distrito Tecnomágico a Laboratórios de Convergência",
+  "from": "SUB-005-001",
+  "to": "SUB-005-002",
+  "mode": "TERRESTRE",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-010",
+  "name": "Trilha de Laboratórios de Convergência a Corte de Ithra",
+  "from": "SUB-005-002",
+  "to": "SUB-005-003",
+  "mode": "TERRESTRE",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-011",
+  "name": "Trilha de Plataformas Altas a Ancoradouro de Naves",
+  "from": "SUB-006-001",
+  "to": "SUB-006-002",
+  "mode": "AEREA",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-012",
+  "name": "Trilha de Ancoradouro de Naves a Câmara Eletiva",
+  "from": "SUB-006-002",
+  "to": "SUB-006-003",
+  "mode": "AEREA",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-013",
+  "name": "Trilha de Jardins Medicinais a Casas de Cura",
+  "from": "SUB-007-001",
+  "to": "SUB-007-002",
+  "mode": "TERRESTRE",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-014",
+  "name": "Trilha de Casas de Cura a Conselho de Saúde",
+  "from": "SUB-007-002",
+  "to": "SUB-007-003",
+  "mode": "TERRESTRE",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-015",
+  "name": "Trilha de Copas Altas a Raízes Sagradas",
+  "from": "SUB-008-001",
+  "to": "SUB-008-002",
+  "mode": "TERRESTRE",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-016",
+  "name": "Trilha de Raízes Sagradas a Círculo dos Anciãos",
+  "from": "SUB-008-002",
+  "to": "SUB-008-003",
+  "mode": "TERRESTRE",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-017",
+  "name": "Trilha de Câmaras de Cristal a Túneis de Extração",
+  "from": "SUB-009-001",
+  "to": "SUB-009-002",
+  "mode": "SUBTERRANEA",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-018",
+  "name": "Trilha de Túneis de Extração a Assembleia Subcristal",
+  "from": "SUB-009-002",
+  "to": "SUB-009-003",
+  "mode": "SUBTERRANEA",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-019",
+  "name": "Trilha de Anel do Conselho Enohariano a Vertente dos Aprendizes",
+  "from": "SUB-010-001",
+  "to": "SUB-010-002",
+  "mode": "TERRESTRE",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-020",
+  "name": "Trilha de Vertente dos Aprendizes a Marcas da Corrente",
+  "from": "SUB-010-002",
+  "to": "SUB-010-003",
+  "mode": "TERRESTRE",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-021",
+  "name": "Trilha de Fronteira de Varga a Corredor Oriental",
+  "from": "SUB-011-001",
+  "to": "SUB-011-002",
+  "mode": "TERRESTRE_FERROVIARIA",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-022",
+  "name": "Trilha de Corredor Oriental a Pastagens Luminais",
+  "from": "SUB-011-002",
+  "to": "SUB-011-003",
+  "mode": "TERRESTRE_FERROVIARIA",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-023",
+  "name": "Trilha de Pastagens Luminais a Baixios de Raizel",
+  "from": "SUB-011-003",
+  "to": "SUB-011-004",
+  "mode": "TERRESTRE_FERROVIARIA",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-024",
+  "name": "Trilha de Baixios de Raizel a Charneira das Oficinas",
+  "from": "SUB-011-004",
+  "to": "SUB-011-005",
+  "mode": "TERRESTRE_FERROVIARIA",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-025",
+  "name": "Trilha de Charneira das Oficinas a Fendas da Névoa",
+  "from": "SUB-011-005",
+  "to": "SUB-011-006",
+  "mode": "TERRESTRE_FERROVIARIA",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-026",
+  "name": "Trilha de Perímetro de Contenção Alfa a Campo de Deslocados",
+  "from": "SUB-012-001",
+  "to": "SUB-012-002",
+  "mode": "TERRESTRE_RESTRITA",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-027",
+  "name": "Trilha de Campo de Deslocados a Comando Emergencial",
+  "from": "SUB-012-002",
+  "to": "SUB-012-003",
+  "mode": "TERRESTRE_RESTRITA",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-028",
+  "name": "Trilha de Muralhas do Trovão a Salão dos Contratados",
+  "from": "SUB-013-001",
+  "to": "SUB-013-002",
+  "mode": "TERRESTRE",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-029",
+  "name": "Trilha de Salão dos Contratados a Passagem Secreta",
+  "from": "SUB-013-002",
+  "to": "SUB-013-003",
+  "mode": "TERRESTRE",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-030",
+  "name": "Trilha de Caldeira Ativa a Assentamento da Cratera",
+  "from": "SUB-014-001",
+  "to": "SUB-014-002",
+  "mode": "TERRESTRE",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-031",
+  "name": "Trilha de Assentamento da Cratera a Campos de Cinza",
+  "from": "SUB-014-002",
+  "to": "SUB-014-003",
+  "mode": "TERRESTRE",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-032",
+  "name": "Trilha de Dunas Ocultas a Ruinas de Antes-do-Pacto",
+  "from": "SUB-015-001",
+  "to": "SUB-015-002",
+  "mode": "TERRESTRE",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-033",
+  "name": "Trilha de Ruinas de Antes-do-Pacto a Oasis do Poco Fundo",
+  "from": "SUB-015-002",
+  "to": "SUB-015-003",
+  "mode": "TERRESTRE",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-034",
+  "name": "Trilha de Geleira Perene a Abrigo sob o Gelo",
+  "from": "SUB-016-001",
+  "to": "SUB-016-002",
+  "mode": "TERRESTRE",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-035",
+  "name": "Trilha de Abrigo sob o Gelo a Fenda Congelada",
+  "from": "SUB-016-002",
+  "to": "SUB-016-003",
+  "mode": "TERRESTRE",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-036",
+  "name": "Trilha de Ilha-Ancora a Correntes de Eter",
+  "from": "SUB-017-001",
+  "to": "SUB-017-002",
+  "mode": "AEREA",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-037",
+  "name": "Trilha de Correntes de Eter a Ilhas Errantes",
+  "from": "SUB-017-002",
+  "to": "SUB-017-003",
+  "mode": "AEREA",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-038",
+  "name": "Trilha de Trincheira Profunda a Recifes Luminosos",
+  "from": "SUB-018-001",
+  "to": "SUB-018-002",
+  "mode": "SUBMERSA",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-039",
+  "name": "Trilha de Recifes Luminosos a Camaras de Pressao",
+  "from": "SUB-018-002",
+  "to": "SUB-018-003",
+  "mode": "SUBMERSA",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-040",
+  "name": "Trilha de Dossel Verde a Ruinas Cobertas",
+  "from": "SUB-019-001",
+  "to": "SUB-019-002",
+  "mode": "TERRESTRE",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-041",
+  "name": "Trilha de Ruinas Cobertas a Pantano da Serpente",
+  "from": "SUB-019-002",
+  "to": "SUB-019-003",
+  "mode": "TERRESTRE",
+  "scale": "LOCAL"
+ },
+ {
+  "id": "ROT-042",
+  "name": "Rota Continental de Terras Livres a Reino Ferral de Kharveth",
+  "from": "TER-011",
+  "to": "TER-002",
+  "mode": "FERROVIARIA",
+  "scale": "CONTINENTAL"
+ },
+ {
+  "id": "ROT-043",
+  "name": "Rota Continental de Terras Livres a República de Ortheon",
+  "from": "TER-011",
+  "to": "TER-003",
+  "mode": "FERROVIARIA",
+  "scale": "CONTINENTAL"
+ },
+ {
+  "id": "ROT-044",
+  "name": "Rota Continental de Terras Livres a Confederação de Lúminor",
+  "from": "TER-011",
+  "to": "TER-001",
+  "mode": "TERRESTRE",
+  "scale": "CONTINENTAL"
+ },
+ {
+  "id": "ROT-045",
+  "name": "Rota Continental de Confederação de Lúminor a Arquipélago Livre de Navyr",
+  "from": "TER-001",
+  "to": "TER-004",
+  "mode": "NAVAL",
+  "scale": "CONTINENTAL"
+ },
+ {
+  "id": "ROT-046",
+  "name": "Rota Continental de Arquipélago Livre de Navyr a Fossa Abissal",
+  "from": "TER-004",
+  "to": "TER-018",
+  "mode": "SUBMERSA",
+  "scale": "CONTINENTAL"
+ },
+ {
+  "id": "ROT-047",
+  "name": "Rota Continental de Terras Livres a Zonas de Contenção",
+  "from": "TER-011",
+  "to": "TER-012",
+  "mode": "TERRESTRE_RESTRITA",
+  "scale": "CONTINENTAL"
+ },
+ {
+  "id": "ROT-048",
+  "name": "Rota Continental de Terras Livres a Fortaleza do Trovão",
+  "from": "TER-011",
+  "to": "TER-013",
+  "mode": "TERRESTRE",
+  "scale": "CONTINENTAL"
+ },
+ {
+  "id": "ROT-049",
+  "name": "Rota Continental de Fortaleza do Trovão a Cadeia de Cinzas",
+  "from": "TER-013",
+  "to": "TER-014",
+  "mode": "TERRESTRE",
+  "scale": "CONTINENTAL"
+ },
+ {
+  "id": "ROT-050",
+  "name": "Rota Continental de Terras Livres a Santuários do Coração",
+  "from": "TER-011",
+  "to": "TER-008",
+  "mode": "TERRESTRE",
+  "scale": "CONTINENTAL"
+ },
+ {
+  "id": "ROT-051",
+  "name": "Rota Continental de Santuários do Coração a Mata Perdida",
+  "from": "TER-008",
+  "to": "TER-019",
+  "mode": "TERRESTRE",
+  "scale": "CONTINENTAL"
+ },
+ {
+  "id": "ROT-052",
+  "name": "Rota Continental de Santuários do Coração a Rubra-Viva",
+  "from": "TER-008",
+  "to": "TER-007",
+  "mode": "TERRESTRE",
+  "scale": "CONTINENTAL"
+ },
+ {
+  "id": "ROT-053",
+  "name": "Rota Continental de Rubra-Viva a Vale das Ruinas",
+  "from": "TER-007",
+  "to": "TER-015",
+  "mode": "TERRESTRE",
+  "scale": "CONTINENTAL"
+ },
+ {
+  "id": "ROT-054",
+  "name": "Rota Continental de Domínio dos Reis Magos a Principado de Ithra",
+  "from": "TER-010",
+  "to": "TER-005",
+  "mode": "TERRESTRE",
+  "scale": "CONTINENTAL"
+ },
+ {
+  "id": "ROT-055",
+  "name": "Rota Continental de Domínio dos Reis Magos a Terras Livres",
+  "from": "TER-010",
+  "to": "TER-011",
+  "mode": "TERRESTRE",
+  "scale": "CONTINENTAL"
+ },
+ {
+  "id": "ROT-056",
+  "name": "Rota Continental de Liga Subcristal a Principado de Ithra",
+  "from": "TER-009",
+  "to": "TER-005",
+  "mode": "SUBTERRANEA",
+  "scale": "CONTINENTAL"
+ },
+ {
+  "id": "ROT-057",
+  "name": "Rota Continental de Reino Aéreo de Altavela a Arquipélago Livre de Navyr",
+  "from": "TER-006",
+  "to": "TER-004",
+  "mode": "AEREA",
+  "scale": "CONTINENTAL"
+ },
+ {
+  "id": "ROT-058",
+  "name": "Rota Continental de Arquipelago Etereo a Reino Aéreo de Altavela",
+  "from": "TER-017",
+  "to": "TER-006",
+  "mode": "AEREA",
+  "scale": "CONTINENTAL"
+ },
+ {
+  "id": "ROT-059",
+  "name": "Rota Continental de Confins de Gelo a Fortaleza do Trovão",
+  "from": "TER-016",
+  "to": "TER-013",
+  "mode": "TERRESTRE",
+  "scale": "CONTINENTAL"
+ },
+ {
+  "id": "ROT-060",
+  "name": "Rota de Núcleo entre Nérion e Ithra",
+  "from": "TER-020",
+  "to": "TER-005",
+  "mode": "TECNOLOGICA",
+  "scale": "CONTINENTAL"
+ },
+ {
+  "id": "ROT-061",
+  "name": "Corredor de Refugiados entre Nérion e Zonas de Contenção",
+  "from": "TER-020",
+  "to": "TER-012",
+  "mode": "TERRESTRE",
+  "scale": "CONTINENTAL"
+ },
+ {
+  "id": "ROT-062",
+  "name": "Rota de Sucata entre Nérion e Terras Livres",
+  "from": "TER-020",
+  "to": "TER-011",
+  "mode": "TERRESTRE",
+  "scale": "CONTINENTAL"
+ }
+]

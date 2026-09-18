@@ -1,0 +1,85 @@
+{
+  "record_id": "ANDROMEDA-STAGE16B-REVALIDATION-POST-G16B04-V0.8.4",
+  "captured_at": "2026-08-23T11:05:00-03:00",
+  "scope": "REVALIDATION_ONLY_NO_CODE_CHANGED",
+  "code_changed_this_round": false,
+  "world": "FRESH_WORLD_CREATED_FOR_THIS_RUN",
+
+  "g16b_05": {
+    "verdict": "PARTIAL_EVIDENCE",
+    "promoted": false,
+    "requirement": "Tree/rock/ore/flora/agriculture/hunt/fish/enemy physical output appears as Ground Loot before inventory.",
+    "was_position_divergence_the_only_reason": false,
+    "explanation": "The G16B-04 position divergence never gated G16B-05. G16B-05 was PARTIAL because the ENEMY source produced no authoritative physical output at all (enemy_loot_authority_status was MISSING_STAGE16A_LOOT_ROLL_RESULT). That gap was closed at authority level this session, but it still has no real-Godot observation.",
+    "sources_with_real_godot_roundtrip": {
+      "TREE": "AuthorityGatheringRuntimeGate TREE_DROP_REF_CREATED / TREE_PHYSICAL_WORLD_FIRST / TREE_NO_DIRECT_INVENTORY / TREE_GROUND_LOOT_CLIENT_PROJECTED",
+      "ROCK": "ROCK_PHYSICAL_OUTPUT / ROCK_OUTPUT_SOURCE_CONTRACT / ROCK_NOT_DIRECT_INVENTORY",
+      "ORE": "ORE_PHYSICAL_OUTPUT / ORE_OUTPUT_SOURCE_CONTRACT / ORE_NOT_DIRECT_INVENTORY",
+      "FLORA": "FLORA_PHYSICAL_OUTPUT / FLORA_OUTPUT_SOURCE_CONTRACT / FLORA_NOT_DIRECT_INVENTORY",
+      "AGRICULTURE": "AGRICULTURE_PHYSICAL_OUTPUT / AGRICULTURE_OUTPUT_SOURCE_CONTRACT / AGRICULTURE_NOT_DIRECT_INVENTORY",
+      "HUNTING": "HUNTING_AUTHORITY_OUTPUT (source_kind HUNTING) / HUNTING_PHYSICAL_BEFORE_INVENTORY",
+      "FISHING": "FISHING_AUTHORITY_OUTPUT (source_kind FISHING) / FISHING_PHYSICAL_BEFORE_INVENTORY"
+    },
+    "pipeline_coverage": {
+      "authoritative_origin": "PROVED - TREE_YIELD_SERVER_SIDE / TREE_TOOL_SERVER_SIDE / TREE_LOCATION_SERVER_SIDE / TREE_DEPLETION_SERVER_SIDE",
+      "drop_creation": "PROVED - <KIND>_PHYSICAL_OUTPUT, drop_ref prefixed DROP-S16A-",
+      "identity_target_ref": "PROVED - EXACT_STABLE_TARGET_REF (ground loot gate), TREE_REPLAY_SAME_DROP",
+      "settling": "PROVED - TREE_DROP_INITIAL_UNSETTLED / TREE_SETTLE_STAGE16A_PASS / TREE_SETTLE_FROM_GODOT_PHYSICS / TREE_AUTHORITATIVE_SETTLED_PROJECTED",
+      "godot_projection": "PROVED - TREE_GROUND_LOOT_CLIENT_PROJECTED / ALL_PROBE_DROPS_PROJECTED",
+      "subsequent_pickup": "PROVED - AuthorityGroundLootRuntimeGate PICKUP_CORE_PASS on a drop created by REQUEST_GATHER",
+      "itemcore_bag_mutation": "PROVED - INVENTORY_CHANGED_ONLY_AFTER_AUTHORITY, counted through inventory_projection.routing so an equipped Bag is followed",
+      "drop_removal_or_reduction": "PROVED - PICKUP_CLIENT_PROJECTED_COLLECTED, REJECTED_DROPS_NOT_REMOVED",
+      "no_duplication_or_replay": "PROVED - PICKUP_REPLAY_SUPPRESSED / PICKUP_REPLAY_RESULT_SEQUENCE_STABLE / PICKUP_REPLAY_NO_SECOND_GRANT / TREE_REPLAY_SUPPRESSED"
+    },
+    "missing_requirement": {
+      "clause": "enemy physical output appears as Ground Loot before inventory",
+      "state": "Proved at authority level only.",
+      "authority_evidence": "tests/test_stage16b_authority_combat.py::test_12 (each carried item becomes a source_kind ENEMY drop, state ACTIVE, physical_world_first, direct_to_inventory false, Bag emptied exactly once) and ::test_12b (ENEMY drops reach the client ground_loot projection).",
+      "why_not_proved_in_godot": "AuthorityCombatRuntimeGate only performs non-lethal attacks. It asserts the absence of output (NON_LETHAL_NO_PHYSICAL_OUTPUT, NO_GDSCRIPT_ENEMY_LOOT_AUTHORITY) and never reaches an authoritative defeat, so no ENEMY drop is created, projected or picked up on real Godot.",
+      "what_would_close_it": "A Godot gate step that drives attacks until the authority reports defeat, then asserts the ENEMY drop is projected as Ground Loot and is pickable. Requires a gate change, not a rule change."
+    }
+  },
+
+  "g16b_19": {
+    "verdict": "PARTIAL_EVIDENCE",
+    "promoted": false,
+    "requirement": "Full vertical slice spawn->explore->water/terrain traversal->dialogue->quest->combat->loot->gather->vendor->save->death/bag drop->respawn completes without debugger errors.",
+    "reexecution": {"gate": "B11RuntimeGate", "checks": 343, "passed": 343, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+    "decisive_finding": "The integrated harness performs no authoritative round-trip at all. scripts/runtime/vertical_slice_client_harness.gd contains zero calls to bridge.submit_command, and injects external results labelled B11_EXTERNAL_PROJECTION_FIXTURE_NOT_LIVE_AUTHORITY into stamina, enemy combat vitals, loot entries and quest context.",
+    "authoritative_steps_this_round": [],
+    "fixture_driven_steps": [
+      "SPAWN", "EXPLORE", "WATER_TERRAIN_TRAVERSAL", "DIALOGUE", "QUEST",
+      "COMBAT", "LOOT", "GATHER", "VENDOR", "SAVE", "DEATH_BAG_DROP", "RESPAWN"
+    ],
+    "note": "Every one of the twelve stages now has a live authoritative counterpart proved by a dedicated gate (roundtrip, profile, traversal, gathering, combat, economy/quest, save/death, ground loot). What is missing is a single integrated session that drives them through the backend instead of injecting projections.",
+    "what_would_close_it": "Rewrite the harness to submit real commands through AndromedaRuntimeBridge for all twelve stages within one session, and drop the PROJECTION_SOURCE injections. That is a substantial client change and was not attempted in a revalidation-only round."
+  },
+
+  "test_results": {
+    "authority_ground_loot_gate": {"checks": 53, "passed": 53, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+    "authority_gathering_gate": {"checks": 75, "passed": 75, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+    "authority_combat_gate": {"checks": 75, "passed": 75, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+    "b11_gate": {"checks": 343, "passed": 343, "failed": 0, "exit_code": 0, "stderr_bytes": 0},
+    "backend_validation": {
+      "record": "12_AUTHORITY_BACKEND/reports/STAGE16B_AUTHORITY_BACKEND_VALIDATION_V0_8_4.json",
+      "status": "PASS", "steps": 16, "python_tests": 341, "failures": 0
+    },
+    "godot_debugger": "0 errors / 0 warnings: stderr 0 bytes and exit 0 on every gate",
+    "stage16a_checkpoint": {"entries": 724, "verified": 724, "changed": 0},
+    "master_v2_0_1_sha256": "6D9AC3CCE7DCF6A65FDCF73859C332A0211C1AF52D149077BEEF554BF7BBD0B2",
+    "regressions_detected": 0
+  },
+
+  "matrix_position": {
+    "pass": 18,
+    "partial_evidence": 10,
+    "pass_gates": ["G16B-01","G16B-02","G16B-03","G16B-04","G16B-06","G16B-07","G16B-08","G16B-10","G16B-11","G16B-12","G16B-13","G16B-14","G16B-15","G16B-16","G16B-20","G16B-21","G16B-22","G16B-23"],
+    "partial_gates": ["G16B-05","G16B-09","G16B-17","G16B-18","G16B-19","G16B-24","G16B-25","G16B-26","G16B-27","G16B-28"],
+    "promoted_this_round": [],
+    "stage16b_global_status": "NOT_PASS",
+    "checkpoint_final_created": false,
+    "final_backup_created": false,
+    "stage17_started": false,
+    "water_bag_ttl_block_started": false
+  }
+}

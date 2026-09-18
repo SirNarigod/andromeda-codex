@@ -1,0 +1,20 @@
+{
+  "record_id": "V14-LOD-CATALOG-STRESS",
+  "status": "PASS",
+  "stats": {
+    "worlds": 300,
+    "states": 1500,
+    "blocks": 4446,
+    "subregions": 8953,
+    "cities": 9161,
+    "dungeons": 2979,
+    "rooms": 17906,
+    "scene_objects": 106286,
+    "npcs": 183215,
+    "canonical_routes_seen": 1500,
+    "public_redactions": 1500
+  },
+  "failure_count": 0,
+  "failures": [],
+  "seconds": 18.049
+}

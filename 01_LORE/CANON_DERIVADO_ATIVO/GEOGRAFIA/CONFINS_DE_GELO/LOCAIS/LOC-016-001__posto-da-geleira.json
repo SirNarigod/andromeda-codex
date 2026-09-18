@@ -1,0 +1,27 @@
+{
+  "loc_id": "LOC-016-001",
+  "record_id": "LOC-016-001",
+  "name": "Posto da Geleira",
+  "parent_subregion": "SUB-016-001",
+  "function": "Ponto de extração e processamento de gelo puro.",
+  "notable_link": "TER-016 Confins de Gelo (fase 49, território novo)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "settlement_tier": "POSTO",
+  "history": "O gelo puro extraído ali não é gelo comum — retém propriedades de preservação muito além do normal, o suficiente pra manter alimento fresco por meses sem apodrecer, e essa descoberta transformou um posto de observação climática esquecido em ponto de extração ativa em poucos anos. Os primeiros extratores aprenderam, à custa própria, que cortar a geleira rápido demais provoca rachaduras que se propagam de forma imprevisível — hoje existe um protocolo rígido de corte lento que ninguém ousa acelerar, mesmo sob pressão de compradores impacientes.",
+  "sensory": "Blocos de gelo azulado, quase translúcido, são cortados em segmentos regulares e empilhados sob lonas isolantes antes de seguir pra processamento. O ar é seco e cortante o bastante pra rachar lábios desprotegidos em minutos, e o som predominante é o rangido grave do gelo se ajustando sob o próprio peso, um som que os trabalhadores aprenderam a distinguir de rachaduras perigosas por experiência amarga. À noite, a geleira reflete qualquer luz disponível com um brilho fantasmagórico que torna difícil dormir pra quem não está acostumado.",
+  "figures": [
+    {
+      "role": "Mestre Extrator",
+      "name": "Holgar Gelofundo",
+      "note": "Sobreviveu a uma rachadura que engoliu dois companheiros nos primeiros anos do posto e desde então impõe o protocolo de corte lento com rigidez quase religiosa. Rejeita qualquer proposta de acelerar a extração, mesmo quando isso significa perder contratos lucrativos."
+    },
+    {
+      "role": "Comprador impaciente",
+      "name": "Dresk Comércio-Rápido",
+      "note": "Representa interessados de fora do território dispostos a pagar significativamente mais por entrega mais rápida, e não entende — ou finge não entender — por que Holgar se recusa terminantemente a acelerar o corte."
+    }
+  ],
+  "hook": "Dresk trouxe uma oferta grande demais pra o posto recusar facilmente, condicionada a triplicar o ritmo de extração dentro de um mês — Holgar sabe que isso é fisicamente perigoso, mas o resto do posto, endividado após um inverno ruim, está inclinado a aceitar mesmo contra o próprio julgamento dele.",
+  "detail": "Nenhum bloco de gelo sai do posto sem a marca pessoal de Holgar entalhada na base — uma garantia informal de que foi cortado dentro do ritmo seguro. Compradores experientes sabem procurar por essa marca; os inexperientes, como os que trabalham com Dresk, nem sabem que ela existe.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION"]
+}

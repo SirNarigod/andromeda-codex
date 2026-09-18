@@ -1,0 +1,73 @@
+{
+  "schema_version": "S17_RESOURCE_PLACEMENT_AUTHORING_V1",
+  "placement_revision": "S17-RESOURCE-PLACEMENT-DEV-R0001",
+  "placement_model": "HYBRID_PLACEMENT_OFFLINE_BAKED_RUNTIME_MATERIALIZED",
+  "source_scene": "13_GODOT_ARPG_STAGE17/scenes/Main.tscn",
+  "world_binding": {
+    "owner_scope": "stage17:playable-v0-dev",
+    "world_seed": 160800,
+    "zone_policy": "CURRENT_PROFILE_ZONE_AT_BAKE",
+    "authority_anchor": {
+      "kind": "SERVER_AUTHORITATIVE_PLAYER_MOTION_SNAPSHOT_DEV_AUTHORING_ANCHOR",
+      "resolver": "SERVER_SIDE_BOUND_PROFILE_PLAYER",
+      "development_initial_bake_only": true,
+      "gameplay_client_supplied": false
+    }
+  },
+  "coordinate_contract": {
+    "local_anchor_node_path": "ActorRoot/Player",
+    "local_x_to_authority": "+iso_x_m",
+    "local_z_to_authority": "+iso_y_m",
+    "scale_m_per_local_unit": 1.0,
+    "surface_altitude_m": 0.0,
+    "surface_altitude_is_explicit_authored_value": true,
+    "altitude_source": "OFFLINE_AUTHORED_BAKE"
+  },
+  "placement_algorithm_version": "S17_EXPLICIT_AUTHORIAL_BAKE_V1",
+  "resources": [
+    {
+      "authoring_object_ref": "TREE_PRIMARY",
+      "node_path": "WorldStreamRoot/B03InteractionTargets/TreeB03",
+      "resource_kind": "TREE",
+      "placement_mode": "EXPLICIT",
+      "ordinal": 0,
+      "logical_selector": {
+        "activity_type": "LOGGING",
+        "source_kind": "FLORA"
+      }
+    },
+    {
+      "authoring_object_ref": "ORE_PRIMARY",
+      "node_path": "WorldStreamRoot/B03InteractionTargets/OreB03",
+      "resource_kind": "ORE",
+      "placement_mode": "EXPLICIT",
+      "ordinal": 0,
+      "logical_selector": {
+        "activity_type": "MINING",
+        "source_kind": "MINERAL",
+        "source_ref": "MIN-MANA-ORE"
+      }
+    }
+  ],
+  "solid_constraints": [
+    {
+      "constraint_ref": "RESOURCE-LOS-BLOCKER-S17-001",
+      "node_path": "WorldStreamRoot/CollisionSurface/ResourceGatherLosBlocker",
+      "shape_child_path": "CollisionShape3D",
+      "constraint_kind": "AXIS_ALIGNED_SOLID_BLOCKER",
+      "blocks_los": true,
+      "active": true
+    }
+  ],
+  "future_generated_contract": {
+    "supported": true,
+    "required_fields": [
+      "placement_region_ref",
+      "seed",
+      "ordinal",
+      "algorithm_version",
+      "constraint_hash"
+    ],
+    "runtime_generation_allowed": false
+  }
+}

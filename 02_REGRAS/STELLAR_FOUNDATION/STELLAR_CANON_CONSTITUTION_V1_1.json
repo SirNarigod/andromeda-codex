@@ -1,0 +1,18 @@
+{
+  "record_id": "STELLAR-CANON-CONSTITUTION-V1.1",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.1",
+  "status": "ACTIVE_R2_REBASED_GOVERNANCE_CONTRACT",
+  "supersedes": "STELLAR_CANON_CONSTITUTION_V1_0",
+  "authority": {"scope": "CANON_GOVERNANCE", "r2": "IMMUTABLE_LORE_ORIGIN", "master_v2_0_1": "READ_ONLY_TECHNICAL_COMPATIBLE_EXTENSION", "living_sim_engine_v1_0_0": "READ_ONLY_TECHNICAL_COMPATIBLE_EXTENSION", "runtime": "DERIVED_ONLY"},
+  "dependencies": ["../STELLAR_REBASE_R2/R2_REBASE_DECISION_LEDGER_V1_0.json", "../../01_LORE/STELLAR_REBASE_R2/R2_SOURCE_AUTHORITY_INDEX_V1_0.json"],
+  "precedence": ["R2_LORE_ORIGIN", "AUTHORIAL_APPROVED_R2_COMPATIBLE_DERIVATION", "MASTER_V2_0_1_TECHNICAL_EXTENSION", "LIVING_SIM_ENGINE_TECHNICAL_EXTENSION", "RUNTIME_STATE", "LLM_OR_PLAYER_PROPOSAL"],
+  "invariants": ["R2_LORE_EPISODES_CHARACTERS_AND_COSMOLOGY_ARE_IMMUTABLE", "MASTER_AND_LIVING_BASELINES_ARE_NEVER_EDITED", "RUNTIME_STATE_IS_NOT_CANON", "DERIVED_CANON_CANNOT_RETCON_R2", "FORMAL_DIVERGENCES_REQUIRE_USER_DECISION", "PHYSICAL_DELETION_REQUIRES_RECORDED_USER_APPROVAL"],
+  "prohibitions": ["NO_SILENT_CANON_PROMOTION", "NO_RETCON_BY_RUNTIME", "NO_UNSOURCED_GLOBAL_FACT", "NO_UNSOURCED_KENUA_RETCON", "NO_AMADON_PRE_S01E08_REVEAL", "NO_PHYSICAL_DELETION_WITHOUT_APPROVAL"],
+  "classification_states": ["CANON_R2_CONFIRMADO", "CANON_DERIVADO_ATIVO", "DIVERGENCIA_FORMAL_AGUARDANDO_DECISAO", "EVIDENCIA_TECNICA_NAO_CANONICA", "CONFLITO_COM_R2_CONGELADO"],
+  "promotion_record": {"required_fields": ["proposal_id", "claim", "scope", "r2_evidence_or_derivation", "narrative_yield", "conflict_review", "user_approval", "effective_version"], "derived_canon_rule": "A compatible expansion may be active only after R2 compatibility is recorded.", "deletion_rule": "No source or divergence is deleted until a user-approved ledger entry names exact targets."},
+  "simulation_effects": ["Every active derived rule carries R2 compatibility provenance.", "Conflicts with R2 are frozen and cannot drive runtime or canon decisions.", "Technical variants remain evidence and do not enter the narrative decision queue."],
+  "allowed_states": ["R2_CONFIRMED", "DERIVED_ACTIVE", "DECISION_PENDING", "FROZEN_CONFLICT", "HISTORICAL"],
+  "story_generators": ["Uma extensão compatível cria uma história nova sem mudar o resultado de um episódio selado.", "Uma regra derivada é aceita porque torna visível um custo já implícito no R2.", "Uma proposta é congelada e sua investigação revela por que ela contradizia um fato de origem."],
+  "guard_interface": {"proposal_schema": "STELLAR_LORE_PROPOSAL_V1_1", "minimum_story_generators": 1, "failure_mode": "FREEZE_AND_REPORT"}
+}

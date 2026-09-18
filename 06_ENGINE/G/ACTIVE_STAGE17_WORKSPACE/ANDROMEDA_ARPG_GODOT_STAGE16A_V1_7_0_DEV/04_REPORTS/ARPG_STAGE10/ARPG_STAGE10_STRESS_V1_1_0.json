@@ -1,0 +1,286 @@
+{
+  "checks": 31,
+  "failed": 0,
+  "metrics": {
+    "profiles": 4,
+    "replays": 4,
+    "travels": 4,
+    "vehicles": 8
+  },
+  "passed": 31,
+  "record_id": "ARPG-STAGE10-STRESS-V1.1.0",
+  "results": [
+    {
+      "detail": {
+        "destination_zone": "ZONE-STA-01-BLK-03",
+        "distance_km": 640.09,
+        "integrity_loss": 5.12072,
+        "origin_zone": "ZONE-STA-01-BLK-04",
+        "propulsion_used": 51.2072,
+        "segment_ref": "DRV-ROAD-1B8E47F4F5DBF91DE6",
+        "speed_kmh_effective": 42.0,
+        "status": "PASS",
+        "travel_hours": 15.240238,
+        "vehicle": {
+          "authority": "GAMEPLAY_DERIVED_STAGE10_REBALANCEABLE",
+          "driver_ref": "rt:player_profile:1e7c7cc5-41dc-4c8f-8edd-d9bb7af9af58",
+          "integrity": 94.87928,
+          "odometer_km": 640.09,
+          "owner_ref": "rt:player_profile:1e7c7cc5-41dc-4c8f-8edd-d9bb7af9af58",
+          "passenger_refs": [
+            "rt:player_profile:1e7c7cc5-41dc-4c8f-8edd-d9bb7af9af58"
+          ],
+          "profile_ref": "VEH-PROFILE-SERVICE-LIGHT",
+          "propulsion": 48.7928,
+          "status": "PARKED",
+          "vehicle_ref": "VEH-2E7622AA3B583D7E1A",
+          "zone_ref": "ZONE-STA-01-BLK-03"
+        },
+        "vehicle_ref": "VEH-2E7622AA3B583D7E1A"
+      },
+      "name": "travel_0",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "replay_0",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "cargo_0",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "destination_zone": "ZONE-STA-02-BLK-01",
+        "distance_km": 512.637,
+        "integrity_loss": 12.815925,
+        "origin_zone": "ZONE-STA-01-BLK-02",
+        "propulsion_used": 35.88459,
+        "segment_ref": "DRV-ROAD-22F42261127F93D1AA",
+        "speed_kmh_effective": 21.76,
+        "status": "PASS",
+        "travel_hours": 23.558686,
+        "vehicle": {
+          "authority": "GAMEPLAY_DERIVED_STAGE10_REBALANCEABLE",
+          "driver_ref": "rt:player_profile:316000cc-99bf-4976-a7be-755420cca7a1",
+          "integrity": 117.184075,
+          "odometer_km": 512.637,
+          "owner_ref": "rt:player_profile:316000cc-99bf-4976-a7be-755420cca7a1",
+          "passenger_refs": [
+            "rt:player_profile:316000cc-99bf-4976-a7be-755420cca7a1"
+          ],
+          "profile_ref": "VEH-PROFILE-UTILITY-CARGO",
+          "propulsion": 104.11541,
+          "status": "PARKED",
+          "vehicle_ref": "VEH-B09C45AFF10614BD7E",
+          "zone_ref": "ZONE-STA-02-BLK-01"
+        },
+        "vehicle_ref": "VEH-B09C45AFF10614BD7E"
+      },
+      "name": "travel_1",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "replay_1",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "cargo_1",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "destination_zone": "ZONE-STA-02-BLK-02",
+        "distance_km": 504.022,
+        "integrity_loss": 4.032176,
+        "origin_zone": "ZONE-STA-01-BLK-04",
+        "propulsion_used": 40.32176,
+        "segment_ref": "DRV-ROAD-739303DBB21D6EAD68",
+        "speed_kmh_effective": 38.0,
+        "status": "PASS",
+        "travel_hours": 13.263737,
+        "vehicle": {
+          "authority": "GAMEPLAY_DERIVED_STAGE10_REBALANCEABLE",
+          "driver_ref": "rt:player_profile:232929a4-56c1-4b32-a757-dd05a439423d",
+          "integrity": 105.967824,
+          "odometer_km": 504.022,
+          "owner_ref": "rt:player_profile:232929a4-56c1-4b32-a757-dd05a439423d",
+          "passenger_refs": [
+            "rt:player_profile:232929a4-56c1-4b32-a757-dd05a439423d"
+          ],
+          "profile_ref": "VEH-PROFILE-SCOUT",
+          "propulsion": 69.67824,
+          "status": "PARKED",
+          "vehicle_ref": "VEH-4FE6466D0269CDAD8B",
+          "zone_ref": "ZONE-STA-02-BLK-02"
+        },
+        "vehicle_ref": "VEH-4FE6466D0269CDAD8B"
+      },
+      "name": "travel_2",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "replay_2",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "cargo_2",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "destination_zone": "ZONE-STA-02-BLK-02",
+        "distance_km": 752.367,
+        "integrity_loss": 6.018936,
+        "origin_zone": "ZONE-STA-03-BLK-01",
+        "propulsion_used": 60.18936,
+        "segment_ref": "DRV-ROAD-7416C6A23C2B2CB24E",
+        "speed_kmh_effective": 42.0,
+        "status": "PASS",
+        "travel_hours": 17.9135,
+        "vehicle": {
+          "authority": "GAMEPLAY_DERIVED_STAGE10_REBALANCEABLE",
+          "driver_ref": "rt:player_profile:5a490946-65d8-4d3c-a76d-1b6e4015a3fb",
+          "integrity": 93.981064,
+          "odometer_km": 752.367,
+          "owner_ref": "rt:player_profile:5a490946-65d8-4d3c-a76d-1b6e4015a3fb",
+          "passenger_refs": [
+            "rt:player_profile:5a490946-65d8-4d3c-a76d-1b6e4015a3fb"
+          ],
+          "profile_ref": "VEH-PROFILE-SERVICE-LIGHT",
+          "propulsion": 39.81064,
+          "status": "PARKED",
+          "vehicle_ref": "VEH-79F7AA594C84A7ACE8",
+          "zone_ref": "ZONE-STA-02-BLK-02"
+        },
+        "vehicle_ref": "VEH-79F7AA594C84A7ACE8"
+      },
+      "name": "travel_3",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "replay_3",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "cargo_3",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "bridge_100",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "bridge_70",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "bridge_30",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "bridge_5",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "bridge_100",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "npc_zone_0",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "npc_board_0",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "npc_zone_1",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "npc_board_1",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "npc_zone_2",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "npc_board_2",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "npc_zone_3",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "npc_board_3",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "health",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "art_dependency": "NONE_PLACEHOLDER_READY",
+        "authority": "ANDROMEDA_ARPG_STAGE10_MOBILITY_INFRASTRUCTURE",
+        "boundary_routes": 3,
+        "bridges": 6,
+        "canonical_bridge": "POI-046",
+        "derived_local_connectors": 15,
+        "failures": [],
+        "segments": 19,
+        "status": "PASS",
+        "vehicle_profiles": 3,
+        "vehicles": 8
+      },
+      "name": "verify",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "vehicle_count",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "boundary_locked",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "cargo_integrity",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "deterministic_segments",
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS"
+}

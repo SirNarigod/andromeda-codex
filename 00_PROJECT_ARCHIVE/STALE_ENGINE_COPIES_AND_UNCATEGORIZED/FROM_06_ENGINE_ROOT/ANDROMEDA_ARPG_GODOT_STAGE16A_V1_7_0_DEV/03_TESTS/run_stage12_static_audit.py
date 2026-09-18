@@ -1,0 +1,14 @@
+import ast,json,re,hashlib
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]; SRC=ROOT/'01_RUNTIME/llm_gateway.py'; OUT=ROOT/'04_REPORTS/STAGE12_STATIC_AUDIT_V1_0.json'; text=SRC.read_text(); tree=ast.parse(text); checks=[]
+def ck(n,v): checks.append({'name':n,'status':'PASS' if v else 'FAIL'})
+imports=set()
+for n in ast.walk(tree):
+ if isinstance(n,ast.Import): imports.update(a.name.split('.')[0] for a in n.names)
+ if isinstance(n,ast.ImportFrom) and n.module: imports.add(n.module.split('.')[0])
+for bad in ['requests','urllib','httpx','aiohttp','socket','openai']: ck('no-network-import-'+bad,bad not in imports)
+ck('no-eval','eval(' not in text); ck('no-exec','exec(' not in text); ck('no-subprocess','subprocess' not in imports); ck('gateway-never-calls-apply-action','.apply_action(' not in text); ck('uses-ingest-llm-candidate','ingest_llm_candidate' in text); ck('uses-intent-validator','validate_intent' in text); ck('offline-block','ROUTINE_OFFLINE' in text and 'OfflinePolicyError' in text); ck('authority-key-filter','FORBIDDEN_AUTHORITY_KEYS' in text); ck('safe-context-allowlist','SAFE_CONTEXT_PATHS' in text); ck('subjective-label','subjective' in text and 'memories' in text); ck('immutable-requests','llm_request_immutable' in text); ck('immutable-responses','llm_response_immutable' in text); ck('immutable-turns','llm_turn_immutable' in text); ck('hash-requests','request_hash' in text); ck('hash-responses','guard_hash' in text and 'raw_hash' in text); ck('hash-turns','turn_hash' in text); ck('idempotency-unique','UNIQUE(world_instance_id, request_key)' in text); ck('provider-rebind-memory-only','_providers' in text and 'bind_provider' in text); ck('no-canon-write-symbol','canon_mutation' in text and 'FORBIDDEN_AUTHORITY_KEYS' in text); ck('no-world-state-authority','world_state' in text and 'FORBIDDEN_AUTHORITY_KEYS' in text); ck('conversation-memory-unknown','truth_status="UNKNOWN"' in text); ck('candidate-source-llm','LLM_CANDIDATE' in (ROOT/'01_RUNTIME/agent_brain.py').read_text()); ck('master-release-untouched',Path('/mnt/data/ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE.zip').exists())
+# Upstream hashes must match stage11 for all pre-stage12 runtime modules
+for name in ['living_runtime.py','consequence_engine.py','agent_brain.py','social_memory.py','ecology_brain.py','object_environment.py','world_orchestrator.py','world_systems.py','long_horizon.py']:
+ a=(ROOT/'01_RUNTIME'/name).read_bytes(); b=(Path('/mnt/data/ANDROMEDA_LIVING_SIM_ETAPA_11/01_RUNTIME')/name).read_bytes(); ck('upstream-identical-'+name,hashlib.sha256(a).digest()==hashlib.sha256(b).digest())
+failed=[x for x in checks if x['status']=='FAIL']; rep={'record_id':'STAGE12-STATIC-AUDIT-V1.0','checks':len(checks),'passed':len(checks)-len(failed),'failed':len(failed),'status':'PASS' if not failed else 'FAIL','failures':failed}; OUT.write_text(json.dumps(rep,indent=2)); print(json.dumps(rep)); raise SystemExit(1 if failed else 0)

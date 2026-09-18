@@ -1,0 +1,77 @@
+{
+  "build": "V0.1.17 DEV",
+  "baseline": "V0.1.16 DEV — runtime PASS informado pelo autor",
+  "status": "STATIC_PASS_RUNTIME_PENDING",
+  "checks": 28,
+  "passed": 28,
+  "failed": 0,
+  "details": {
+    "project_v0_1_17": true,
+    "hud_v0_1_17": true,
+    "global_cooldown_2s": true,
+    "ranged_cycle_state": true,
+    "ranged_cycle_fire_retreat_settle": true,
+    "no_fire_during_retreat": true,
+    "ranged_retreat_after_projectile": true,
+    "ranged_retreat_step_2_4": true,
+    "ranged_settle_0_22": true,
+    "aggro_on_damage_preserved": true,
+    "tier_profiles": true,
+    "weak_speed": true,
+    "medium_speed": true,
+    "strong_speed": true,
+    "alpha_speed": true,
+    "tier_attack_damage": true,
+    "tier_attack_interval": true,
+    "tier_health_multiplier": true,
+    "tier_visual_scale": true,
+    "alpha_assignment": true,
+    "strong_assignment": true,
+    "medium_assignment": true,
+    "weak_assignment": true,
+    "inventory_selection_preserved": true,
+    "left_transition_preserved": true,
+    "right_click_preserved": true,
+    "projectile_impact_preserved": true,
+    "gate_v0_1_17": true
+  },
+  "ranged_cycle": [
+    "FIRE",
+    "RETREAT",
+    "SETTLE",
+    "FIRE"
+  ],
+  "global_attack_cooldown_s": 2.0,
+  "enemy_tiers": {
+    "FRACO": {
+      "speed_m_s": 2.0,
+      "attack_damage": 8,
+      "health_multiplier": 0.85,
+      "attack_interval_s": 1.9,
+      "visual_scale": 0.92
+    },
+    "MEDIO": {
+      "display": "MÉDIO",
+      "speed_m_s": 2.3,
+      "attack_damage": 11,
+      "health_multiplier": 1.0,
+      "attack_interval_s": 1.7,
+      "visual_scale": 1.0
+    },
+    "FORTE": {
+      "speed_m_s": 2.6,
+      "attack_damage": 16,
+      "health_multiplier": 1.35,
+      "attack_interval_s": 1.55,
+      "visual_scale": 1.1
+    },
+    "ALFA": {
+      "speed_m_s": 2.9,
+      "attack_damage": 23,
+      "health_multiplier": 1.85,
+      "attack_interval_s": 1.35,
+      "visual_scale": 1.25
+    }
+  },
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1"
+}

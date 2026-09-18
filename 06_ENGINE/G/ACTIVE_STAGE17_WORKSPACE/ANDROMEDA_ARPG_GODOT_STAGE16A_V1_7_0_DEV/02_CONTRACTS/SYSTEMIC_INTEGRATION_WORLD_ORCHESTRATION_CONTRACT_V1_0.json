@@ -1,0 +1,73 @@
+{
+  "record_id": "SYSTEMIC-INTEGRATION-WORLD-ORCHESTRATION-CONTRACT-V1.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "stage": "ETAPA_09",
+  "authority": "RUNTIME_ORCHESTRATION_NOT_CANON",
+  "baseline": {
+    "master_version": "V2.0.1",
+    "release_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "read_only": true
+  },
+  "purpose": "Coordinate validated subsystem authorities into deterministic world ticks without replacing their ownership boundaries.",
+  "phase_order": [
+    "PRE_GUARD",
+    "RECOVERY",
+    "ENVIRONMENT",
+    "ECOLOGY_AGGREGATE",
+    "ECOLOGY_INDIVIDUAL",
+    "SOCIAL_PROJECTION",
+    "NPC_AUTONOMY",
+    "EXTENSIONS",
+    "CONSEQUENCE_DRAIN",
+    "POST_GUARD",
+    "CLOCK_ADVANCE"
+  ],
+  "lod": {
+    "FULL": "Individual NPC and ecology decisions plus aggregate/environment routines.",
+    "ACTIVE": "Individual decisions with reduced budgets plus aggregate/environment routines.",
+    "AGGREGATE": "No individual NPC/ecology decisions; bounded aggregate ecology/environment/recovery only.",
+    "ROUTINE_OFFLINE": "Only routine-safe bounded processes and recovery; individual autonomous decisions remain blocked."
+  },
+  "scope_lod_rule": "Effective LOD is never higher fidelity than the global world simulation mode; per-scope LOD may only reduce fidelity.",
+  "determinism": {
+    "fixed_phase_order": true,
+    "participant_sort": "priority desc, next_due asc, entity_ref asc",
+    "tick_idempotency": "UNIQUE(world_instance_id,tick_key)",
+    "configuration_snapshot_per_run": true,
+    "run_hash_chain": true
+  },
+  "causal_backpressure": {
+    "root_budget_per_cascade_max": 64,
+    "max_roots_per_run_default": 256,
+    "policy_invariant": "max_roots_per_run >= full_npc_budget + full_ecology_budget + extension_budget + 4",
+    "clock_event_generated_after_drain": "processed on following tick unless unrelated"
+  },
+  "extensions": {
+    "descriptors_persisted": true,
+    "handlers_not_serialized": true,
+    "restart_rebind_required": true,
+    "bind_identity": "module:qualname must match persisted descriptor",
+    "missing_handler": "preflight ConflictError before a run is created",
+    "offline": "requires explicit routine_safe and ROUTINE_OFFLINE mode membership"
+  },
+  "failure_policy": {
+    "integrity_failure": "CORRUPT_BLOCKED",
+    "unexpected_failure_after_run_start": "PAUSED when configured fail-closed",
+    "expected participant rejection": "record and continue",
+    "missing_extension_binding": "preflight block without creating run"
+  },
+  "authority_boundaries": {
+    "runtime_core": "state, events, clock, recoveries",
+    "consequence_engine": "causal propagation",
+    "agent_brain_intent_validator": "NPC choice and authorization",
+    "social_memory": "memory/knowledge/relationship/reputation",
+    "ecology": "animal/creature and aggregate population",
+    "object_environment": "non-sentient reactive world",
+    "orchestrator": "schedule/order/budget/LOD/audit only"
+  },
+  "shared_world": {
+    "mode_schema_supported": true,
+    "distributed_reconciliation_implemented": false
+  },
+  "status": "VALIDATED"
+}

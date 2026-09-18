@@ -1,0 +1,23 @@
+{
+  "record_id": "R2-MYS-CATEGORY-INDEX-V1",
+  "authority": "CANON_R2_CONFIRMADO",
+  "category": "MYS",
+  "category_name": "Mistérios",
+  "items": [
+    {
+      "id": "MYS-001",
+      "title": "A voz além da planta",
+      "path": "01_LORE/CANON_R2/MISTERIOS/MYS-001__voz-alem-da-planta.json",
+      "spoiler": 4,
+      "sealed": true
+    },
+    {
+      "id": "MYS-002",
+      "title": "Segunda etapa de Serverus",
+      "path": "01_LORE/CANON_R2/MISTERIOS/MYS-002__segunda-etapa-de-serverus.json",
+      "spoiler": 2,
+      "sealed": true
+    }
+  ],
+  "source": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json"
+}

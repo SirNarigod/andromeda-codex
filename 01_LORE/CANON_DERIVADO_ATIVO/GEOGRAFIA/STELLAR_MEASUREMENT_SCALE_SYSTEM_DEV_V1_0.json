@@ -1,0 +1,146 @@
+{
+  "record_id": "STELLAR-MEASUREMENT-SCALE-SYSTEM-DEV-V1.0",
+  "title": "Sistema de Medidas e Escala de Stellar",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "r2_guard": "Unidades reais (metro, quilômetro, quilograma) - nenhuma unidade fictícia foi inventada, pois nada no cânone exige isso (personagens são descritos em anos/idade humana comum, sem physiologia alienígena que justificasse outra escala). O fator de conversão grau→km NÃO foi inventado: foi CALIBRADO a partir das 9 rotas locais reais do MASTER V2.0.1 (SRTE-001..009), que já têm distance_km E coordenadas exatas - ver calibration_data.",
+  "base_units": {
+    "comprimento": "metro (m) / quilômetro (km)",
+    "massa": "quilograma (kg)",
+    "área": "metro quadrado (m²) / quilômetro quadrado (km²)"
+  },
+  "calibration_data": {
+    "method": "km_per_deg = distance_km / distância_euclidiana_em_graus, calculado para cada uma das 9 rotas locais oficiais (SRTE-001..009) que têm geometry.origin/destination reais.",
+    "routes": [
+      {
+        "route": "SRTE-001",
+        "deg": 0.06001,
+        "km": 6.18,
+        "km_per_deg": 103.0
+      },
+      {
+        "route": "SRTE-002",
+        "deg": 0.0422,
+        "km": 4.44,
+        "km_per_deg": 105.2
+      },
+      {
+        "route": "SRTE-003",
+        "deg": 0.04028,
+        "km": 3.53,
+        "km_per_deg": 87.6
+      },
+      {
+        "route": "SRTE-004",
+        "deg": 0.03399,
+        "km": 3.6,
+        "km_per_deg": 105.9
+      },
+      {
+        "route": "SRTE-005",
+        "deg": 0.02236,
+        "km": 2.41,
+        "km_per_deg": 107.8
+      },
+      {
+        "route": "SRTE-006",
+        "deg": 0.03162,
+        "km": 3.4,
+        "km_per_deg": 107.5
+      },
+      {
+        "route": "SRTE-007",
+        "deg": 0.02236,
+        "km": 2.24,
+        "km_per_deg": 100.2
+      },
+      {
+        "route": "SRTE-009",
+        "deg": 0.01414,
+        "km": 1.52,
+        "km_per_deg": 107.5
+      },
+      {
+        "route": "SRTE-008",
+        "deg": 0.01118,
+        "km": 2.4,
+        "km_per_deg": 214.7,
+        "excluded": true,
+        "exclusion_reason": "outlier estatístico (deg muito pequeno amplifica ruído de arredondamento)"
+      }
+    ],
+    "result": "105.0 km por grau (mediana das 8 rotas válidas, SRTE-008 excluída como outlier)",
+    "usage": "Aplicável APENAS a coordenadas na escala LOCAL (dentro do mesmo território/subregião, ex. STELLAR_LOCAL_CONSTRUCTION_COORDINATES_DEV_V1_0.json) - km ≈ sqrt(Δlon² + Δlat²) × 105.",
+    "usage_warning": "NÃO aplicar este fator ao layout circular MACRO de territórios (STELLAR_REGION_COORDINATE_INDEX_DEV_V1_0.json, fase 37) - aquele raio é explicitamente simbólico/não-métrico; aplicar 105 km/grau a ele produz territórios continentais (~1,5 milhão km²) que contradizem a regra já existente de 'mesmo território = horas de viagem'. Ver STELLAR_TERRITORY_AREA_ESTIMATE_DEV_V1_0.json para o método correto (derivado das rotas locais, não do layout macro)."
+  },
+  "human_reference_height_m": "1.60–1.85 (adulto comum, sem evidência de escala não-humana em nenhum personagem catalogado)",
+  "building_area_m2_by_type": [
+    {
+      "building_type": "ACAMPAMENTO",
+      "range_m2": "30–80"
+    },
+    {
+      "building_type": "RESIDENCIAL",
+      "range_m2": "60–150"
+    },
+    {
+      "building_type": "COMERCIAL",
+      "range_m2": "100–300"
+    },
+    {
+      "building_type": "LOJA",
+      "range_m2": "40–120"
+    },
+    {
+      "building_type": "INSTITUCIONAL",
+      "range_m2": "300–1200"
+    },
+    {
+      "building_type": "MILITAR",
+      "range_m2": "200–800"
+    },
+    {
+      "building_type": "INDUSTRIAL",
+      "range_m2": "500–3000"
+    }
+  ],
+  "item_weight_kg_by_category": [
+    {
+      "category": "Arma corpo-a-corpo (LAM/IMP)",
+      "range_kg": "0.8–3.5"
+    },
+    {
+      "category": "Arma de fogo leve (REV/ESP/FUZ)",
+      "range_kg": "1.5–5"
+    },
+    {
+      "category": "Arma de fogo pesada/precisão (PRE)",
+      "range_kg": "4–9"
+    },
+    {
+      "category": "Arma tecnológica/mágica (TEC/MAG)",
+      "range_kg": "2–6"
+    },
+    {
+      "category": "Barra/lingote processado (bens regionais)",
+      "range_kg": "3–8"
+    },
+    {
+      "category": "Armadura leve (VST tier BAIXO)",
+      "range_kg": "4–8"
+    },
+    {
+      "category": "Armadura pesada (VST tier ALTO)",
+      "range_kg": "10–20"
+    },
+    {
+      "category": "Veículo terrestre pequeno",
+      "range_kg": "300–1200"
+    },
+    {
+      "category": "Veículo terrestre/naval grande (locomotiva, caravela)",
+      "range_kg": "5000–40000"
+    }
+  ],
+  "territory_area_note": "Área estimada por território em STELLAR_TERRITORY_AREA_ESTIMATE_DEV_V1_0.json (mesma pasta), derivada da distância ao território vizinho mais próximo × fator de calibração acima.",
+  "building_area_note": "Área exata por construção em STELLAR_CONSTRUCTION_AREA_INDEX_DEV_V1_0.json, um valor determinístico dentro da faixa do tipo (não aleatório - hash do próprio EST-XXX)."
+}

@@ -1,0 +1,37 @@
+{
+  "record_id": "R2-HIS-CATEGORY-INDEX-V1",
+  "authority": "CANON_R2_CONFIRMADO",
+  "category": "HIS",
+  "category_name": "História",
+  "items": [
+    {
+      "id": "HIS-001",
+      "title": "Pacto de Convergência",
+      "path": "01_LORE/CANON_R2/HISTORIA/HIS-001__pacto-de-convergencia.json",
+      "spoiler": 1,
+      "sealed": false
+    },
+    {
+      "id": "HIS-002",
+      "title": "Guerra dos Veios Partidos",
+      "path": "01_LORE/CANON_R2/HISTORIA/HIS-002__guerra-dos-veios-partidos.json",
+      "spoiler": 3,
+      "sealed": true
+    },
+    {
+      "id": "HIS-003",
+      "title": "Caso Aelyra",
+      "path": "01_LORE/CANON_R2/HISTORIA/HIS-003__caso-aelyra.json",
+      "spoiler": 2,
+      "sealed": true
+    },
+    {
+      "id": "HIS-004",
+      "title": "Redescoberta do Espinho-Negro",
+      "path": "01_LORE/CANON_R2/HISTORIA/HIS-004__redescoberta-do-espinho-negro.json",
+      "spoiler": 2,
+      "sealed": true
+    }
+  ],
+  "source": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json"
+}

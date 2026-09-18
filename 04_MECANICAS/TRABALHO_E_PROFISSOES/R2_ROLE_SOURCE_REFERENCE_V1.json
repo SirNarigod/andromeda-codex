@@ -1,0 +1,126 @@
+{
+  "record_id": "R2_ROLE_SOURCE_REFERENCE_V1",
+  "scope": "REFERENCE_ONLY",
+  "canonical_references": [
+    {
+      "id": "PER-001",
+      "path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-001__aelyra-voss.json",
+      "summary": "Exploradora botânica, curadora e pesquisadora arcano-botânica; antiga companheira de Serlis e hospedeira anterior do Espinho-Negro.",
+      "formal_job_system_state": "RESOLVED_VIA_MASTER_V2",
+      "master_v2_profession_ids": [
+        "JOB-CIE-CAMPO-001",
+        "JOB-CIE-EXPBOT-001",
+        "JOB-CIE-PESQ-001",
+        "JOB-MAG-MAGO-001",
+        "JOB-SAU-CUR-001"
+      ],
+      "master_v2_note": "Profissao(oes) oficial(is) do MASTER V2.0.1 (01_LORE/CANON_MASTER_V2/PROFISSOES/MASTER_CHARACTER_PROFESSION_BINDINGS_V2_0_0.json) - nao inventado, proveniencia direta do pacote canonico."
+    },
+    {
+      "id": "PER-002",
+      "path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-002__kenua-vaarn.json",
+      "summary": "Caçador, rastreador, investigador e mercenário das Terras Livres da Fronteira. Hospedeiro do Espinho-Negro.",
+      "formal_job_system_state": "RESOLVED_VIA_MASTER_V2",
+      "master_v2_profession_ids": [
+        "JOB-EXPL-CAC-001",
+        "JOB-EXPL-RAST-001",
+        "JOB-INV-INV-001",
+        "JOB-SEG-MERC-001"
+      ],
+      "master_v2_note": "Profissao(oes) oficial(is) do MASTER V2.0.1 (01_LORE/CANON_MASTER_V2/PROFISSOES/MASTER_CHARACTER_PROFESSION_BINDINGS_V2_0_0.json) - nao inventado, proveniencia direta do pacote canonico."
+    },
+    {
+      "id": "PER-003",
+      "path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-003__serlis-aftermoon.json",
+      "summary": "Mago de alta hierarquia das Árvores Anciãs, especialista em contenção, runas, anatomia mágica e simbiose; fugitivo após o Caso Aelyra e portador de uma marca inselável.",
+      "formal_job_system_state": "RESOLVED_VIA_MASTER_V2",
+      "master_v2_profession_ids": [
+        "JOB-CONT-ESP-001",
+        "JOB-CONT-MESTRE-001",
+        "JOB-FISC-INST-001",
+        "JOB-MAG-MAGO-001"
+      ],
+      "master_v2_note": "Profissao(oes) oficial(is) do MASTER V2.0.1 (01_LORE/CANON_MASTER_V2/PROFISSOES/MASTER_CHARACTER_PROFESSION_BINDINGS_V2_0_0.json) - nao inventado, proveniencia direta do pacote canonico."
+    },
+    {
+      "id": "PER-004",
+      "path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-004__genes-arvath.json",
+      "summary": "Supremo Mago das Árvores Anciãs, defensor de preservação e contenção. Ama Serlis como um filho e deseja trazê-lo de volta à ordem, mesmo que para isso precise enviar discípulos atrás dele.",
+      "formal_job_system_state": "RESOLVED_VIA_MASTER_V2",
+      "master_v2_profession_ids": [
+        "JOB-MAG-SUPREMO-001"
+      ],
+      "master_v2_note": "Profissao(oes) oficial(is) do MASTER V2.0.1 (01_LORE/CANON_MASTER_V2/PROFISSOES/MASTER_CHARACTER_PROFESSION_BINDINGS_V2_0_0.json) - nao inventado, proveniencia direta do pacote canonico."
+    },
+    {
+      "id": "PER-005",
+      "path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-005__serverus-vaelkor.json",
+      "summary": "Rei Mago paciente, persuasivo e controlador que manipula o encontro entre Kenua, Serlis e o Espinho-Negro.",
+      "formal_job_system_state": "RESOLVED_VIA_MASTER_V2",
+      "master_v2_profession_ids": [
+        "JOB-MAG-REIMAGO-001"
+      ],
+      "master_v2_note": "Profissao(oes) oficial(is) do MASTER V2.0.1 (01_LORE/CANON_MASTER_V2/PROFISSOES/MASTER_CHARACTER_PROFESSION_BINDINGS_V2_0_0.json) - nao inventado, proveniencia direta do pacote canonico."
+    },
+    {
+      "id": "PER-006",
+      "path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-006__kaenna-vor.json",
+      "summary": "Caçadora, mediadora e líder das Terras Livres; aliada antiga de Kenua e portadora de uma prótese mecânica no braço direito.",
+      "formal_job_system_state": "RESOLVED_VIA_MASTER_V2",
+      "master_v2_profession_ids": [
+        "JOB-EXPL-CAC-001",
+        "JOB-GOV-GUARDIAMOR-001",
+        "JOB-MED-MEDIADOR-001"
+      ],
+      "master_v2_note": "Profissao(oes) oficial(is) do MASTER V2.0.1 (01_LORE/CANON_MASTER_V2/PROFISSOES/MASTER_CHARACTER_PROFESSION_BINDINGS_V2_0_0.json) - nao inventado, proveniencia direta do pacote canonico."
+    },
+    {
+      "id": "PER-007",
+      "path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-007__ishara-veyn.json",
+      "summary": "Sobrevivente contaminada que defende transparência e contenção severa, mas esconde a própria condição.",
+      "formal_job_system_state": "RESOLVED_VIA_MASTER_V2",
+      "master_v2_profession_ids": [
+        "JOB-SEG-COMAND-001",
+        "JOB-SEG-VIGRAD-001"
+      ],
+      "master_v2_note": "Profissao(oes) oficial(is) do MASTER V2.0.1 (01_LORE/CANON_MASTER_V2/PROFISSOES/MASTER_CHARACTER_PROFESSION_BINDINGS_V2_0_0.json) - nao inventado, proveniencia direta do pacote canonico."
+    },
+    {
+      "id": "PER-008",
+      "path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-008__maelkar-enohar.json",
+      "summary": "Especialista em contratos e juramentos que considera a possibilidade de negociar uma sobrevivência parcial de Stellar.",
+      "formal_job_system_state": "RESOLVED_VIA_MASTER_V2",
+      "master_v2_profession_ids": [
+        "JOB-GOV-PRIMEIRACOROA-001",
+        "JOB-JUR-CONTRATOS-001"
+      ],
+      "master_v2_note": "Profissao(oes) oficial(is) do MASTER V2.0.1 (01_LORE/CANON_MASTER_V2/PROFISSOES/MASTER_CHARACTER_PROFESSION_BINDINGS_V2_0_0.json) - nao inventado, proveniencia direta do pacote canonico."
+    },
+    {
+      "id": "PER-009",
+      "path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-009__daren-vaarn.json",
+      "summary": "Pai de Kenua, desaparecido em 824 EC. Existem indícios de que sobreviveu ao desaparecimento inicial.",
+      "formal_job_system_state": "PENDING",
+      "pending_reason_fase_61": "Sem binding oficial no Master; TIM-022 registra so o desaparecimento (fato minimo). Atribuir profissão inventaria biografia — PENDING vigiado, nao lacuna de import."
+    },
+    {
+      "id": "PER-010",
+      "path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-010__meyra-vaarn.json",
+      "summary": "Mãe de Kenua, falecida em 832 EC durante uma epidemia agravada pelo atraso de medicamentos.",
+      "formal_job_system_state": "CLOSED_NOT_APPLICABLE_DECEASED",
+      "closure_note_fase_61": "Fechado via TIM-023 (fato minimo: falecimento). Profissao formal nao se aplica a personagem falecida; nenhum binding sera aguardado."
+    },
+    {
+      "id": "PER-011",
+      "path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-011__ilyan-morveth.json",
+      "summary": "Pesquisador importante responsável por proteger a flor fóssil e preservar o programa de estudo após a morte de Aelyra.",
+      "formal_job_system_state": "RESOLVED_VIA_MASTER_V2",
+      "master_v2_profession_ids": [
+        "JOB-CIE-PESQ-001",
+        "JOB-CIE-PESQMOR-001"
+      ],
+      "master_v2_note": "Profissao(oes) oficial(is) do MASTER V2.0.1 (01_LORE/CANON_MASTER_V2/PROFISSOES/MASTER_CHARACTER_PROFESSION_BINDINGS_V2_0_0.json) - nao inventado, proveniencia direta do pacote canonico."
+    }
+  ],
+  "rule": "Profession mechanics require a future approved contract; narrative descriptions are not automatically jobs."
+}

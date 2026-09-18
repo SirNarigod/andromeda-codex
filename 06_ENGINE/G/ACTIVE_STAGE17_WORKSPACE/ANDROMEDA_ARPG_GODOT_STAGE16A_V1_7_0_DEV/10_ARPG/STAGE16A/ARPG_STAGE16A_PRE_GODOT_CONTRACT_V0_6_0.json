@@ -1,0 +1,38 @@
+{
+  "record_id": "ARPG-STAGE16A-PRE-GODOT-CONTRACT-V0.6.0",
+  "stage": "16A/23",
+  "status": "CLOSED_PRE_GODOT_READY_FOR_HANDOFF",
+  "baseline_checkpoint": "V0.5.0",
+  "accumulated_pre_godot_tests": 143,
+  "stress_checks": 20,
+  "blocks": [
+    "INTERACTION_INTENT",
+    "UNIVERSAL_GROUND_LOOT",
+    "TERRAIN_TRAVERSAL_STREAMING",
+    "REALTIME_DIALOGUE",
+    "MINIMAL_HUD",
+    "CAMERA_PRESENTATION",
+    "GAMEFEEL_FEEDBACK",
+    "VERTICAL_SLICE_ASSEMBLY",
+    "GODOT_HANDOFF_MANIFEST"
+  ],
+  "authorial_rules": [
+    "minimal contextual HUD",
+    "realtime no-next-button dialogue",
+    "white rounded dialogue bubble/medium gray normal text/light orange important text",
+    "NPC name on hover only",
+    "terrain relevance through stamina/load but no body balance",
+    "variable map scale and streaming phases",
+    "universal physical Ground Loot",
+    "Auto Pickup ON/OFF",
+    "pickup maximum distance 0.5m",
+    "icons by item type/category"
+  ],
+  "godot_gate": "PENDING_STAGE16B_CODEX_GODOT_VALIDATION",
+  "stage16_complete": false,
+  "backup_authorized": false,
+  "canon_mutations": 0,
+  "accumulated_pre_godot_tests_before_handoff": 143,
+  "handoff_validator_checks": 20,
+  "accumulated_tests_total": 163
+}

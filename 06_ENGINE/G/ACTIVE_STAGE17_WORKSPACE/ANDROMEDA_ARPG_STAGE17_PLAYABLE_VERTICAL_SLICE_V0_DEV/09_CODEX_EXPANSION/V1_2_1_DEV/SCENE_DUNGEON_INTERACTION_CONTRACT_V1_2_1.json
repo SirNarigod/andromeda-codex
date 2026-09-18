@@ -1,0 +1,60 @@
+{
+  "record_id": "SCENE-DUNGEON-INTERACTION-CONTRACT-V1.2.1",
+  "status": "DEV_VALIDATED",
+  "authority": "AUTHOR_AUTHORIZED_PENDING_MASTER_CONSOLIDATION",
+  "locality": {
+    "scene_interaction_requires_same_block": true,
+    "dungeon_interaction_requires_entered_dungeon": true,
+    "shop_interaction_requires_same_city": true
+  },
+  "object_state_machines": {
+    "DOOR": [
+      "CLOSED",
+      "OPEN"
+    ],
+    "TRAPDOOR": [
+      "CLOSED",
+      "OPEN"
+    ],
+    "CHAIR": [
+      "FREE",
+      "OCCUPIED"
+    ],
+    "BOOK": [
+      "READABLE"
+    ],
+    "TORCH": [
+      "AVAILABLE",
+      "TAKEN",
+      "LIT",
+      "EXTINGUISHED"
+    ],
+    "GROUND_WEAPON": [
+      "AVAILABLE",
+      "TAKEN",
+      "EQUIPPED",
+      "UNEQUIPPED"
+    ],
+    "CHEST": [
+      "CLOSED",
+      "OPEN",
+      "LOOTED"
+    ],
+    "LEVER": [
+      "UNPULLED",
+      "PULLED"
+    ],
+    "RUNE_PEDESTAL": [
+      "DORMANT",
+      "ACTIVATED"
+    ],
+    "CONSOLE": [
+      "READY",
+      "USED"
+    ]
+  },
+  "darkness_rule": "Dark dungeon reading requires active portable light when darkness threshold is high.",
+  "inventory_rule": "Taking scene items removes them from scene availability and adds them to actor inventory; hierarchy reconciles through country.",
+  "protection_rule": "Children cannot enter hazardous dungeons; protected workers cannot be assigned hazardous dungeon entry.",
+  "persistence_rule": "Scene state is part of country runtime snapshot and integrity checks."
+}

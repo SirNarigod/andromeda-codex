@@ -1,0 +1,62 @@
+{
+  "record_id": "STELLAR-LIFE-DEATH-REBIRTH-LAW-V1.1",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.1",
+  "status": "ACTIVE_R2_COMPATIBLE_DERIVATION",
+  "supersedes": "STELLAR_LIFE_DEATH_REBIRTH_LAW_V1_0",
+  "authority": {
+    "scope": "LIFE_CYCLE_AND_PLAYER_CONTINUITY",
+    "body_death": "FINAL",
+    "incapacitation": "RECOVERABLE",
+    "rebirth": "ECHO_BASED_SEPARATE_BODY"
+  },
+  "dependencies": [
+    "STELLAR_COSMOLOGY_CANON_V1_2.json",
+    "STELLAR_PLAYER_CAMPAIGN_LAW_V1_0.json",
+    "STELLAR_INFORMATION_MEMORY_LAW_V1_1.json"
+  ],
+  "invariants": [
+    "INCAPACITATION_IS_NOT_LITERAL_DEATH",
+    "DEATH_ENDS_THE_BODY_LIFECYCLE",
+    "REBIRTH_CREATES_A_SEPARATE_BODY_AND_NEVER_RESTORES_THE_PREVIOUS_BODY",
+    "ECHOES_MAY_CARRY_AFFINITIES_PARTIAL_MASTERY_AND_UNFINISHED_BONDS",
+    "ECHOES_DO_NOT_TRANSFER_FACTUAL_MEMORY_IDENTITY_INVENTORY_CURRENCY_OR_REPUTATION_BY_DEFAULT",
+    "LITERAL_MEMORY_REQUIRES_EXCEPTIONAL_EVIDENCE_COST_AND_AUTHORIAL_EVENT",
+    "OFFLINE_CANNOT_RESOLVE_DEATH_OR_ASSIGN_INHERITANCE"
+  ],
+  "prohibitions": [
+    "NO_FREE_RESURRECTION",
+    "NO_RESPAWN_CLAIMED_AS_BODILY_CONTINUITY",
+    "NO_AUTOMATIC_MEMORY_TRANSFER_AS_REBIRTH",
+    "NO_AUTOMATIC_ITEM_CURRENCY_OR_REPUTATION_TRANSFER",
+    "NO_ERASURE_OF_DEATH_CONSEQUENCES",
+    "NO_AUTOMATIC_CANONICAL_LINEAGE_CLAIM"
+  ],
+  "simulation_effects": [
+    "Incapacity produces recovery, rescue, treatment, debt, delay or local exposure without falsifying a death event.",
+    "Literal death writes an immutable death event; a later rebirth candidate receives only tagged echoes with UNKNOWN truth status.",
+    "The new body's social standing, possessions and factual knowledge begin independently unless an evidenced recovery event changes them.",
+    "Partial mastery can influence starting aptitude but cannot unlock a sealed spell, rune, identity or R2 revelation."
+  ],
+  "allowed_states": [
+    "ALIVE",
+    "AT_RISK",
+    "INCAPACITATED",
+    "RECOVERING",
+    "DEAD",
+    "MOURNED",
+    "ECHO_DETECTED",
+    "REBIRTH_CANDIDATE",
+    "EXCEPTION_REVIEW"
+  ],
+  "story_generators": [
+    "Após morrer salvando uma caravana, um novo corpo reconhece instintivamente o filho de uma pessoa que nunca conheceu.",
+    "Uma comunidade cobra a dívida do morto do novo ciclo, que sente o vínculo mas não possui prova de ser a mesma pessoa.",
+    "Uma relíquia parece devolver memórias factuais a um renascido; confirmar a verdade exige um sacrifício que pode destruir a única testemunha."
+  ],
+  "compatibility": {
+    "v1_0": "Preserved as historical source; V1.1 makes incapacity and player echo inheritance explicit.",
+    "r2": "Does not alter Kenua, Espinho-Negro, Serlis or any R2 death event.",
+    "gameplay": "Death loops are narrative lifecycle transitions, not free technical respawns."
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "record_id": "LIVING_SCALE_CONTENT_PROJECTION_V1",
+  "status": "ACTIVE_ENGINE_NEUTRAL_READ_ONLY",
+  "routing_registry": "01_LORE/CONTENT_ROUTING_REGISTRY_V1.json",
+  "hierarchy": [
+    "PLANET",
+    "COUNTRY",
+    "POLITICAL_UNIT",
+    "REGION",
+    "SUBREGION",
+    "BIOME_CITY_POI",
+    "SCENE",
+    "ENTITY_ITEM_INSTANCE"
+  ],
+  "r2_bindings": {
+    "PLANET": [
+      "PLA-001"
+    ],
+    "POLITICAL_UNIT": [
+      "TER-001",
+      "TER-002",
+      "TER-003",
+      "TER-004",
+      "TER-005",
+      "TER-006",
+      "TER-007",
+      "TER-008",
+      "TER-009",
+      "TER-010",
+      "TER-011",
+      "TER-012",
+      "TER-013"
+    ],
+    "BIOME": [
+      "BIO-001",
+      "BIO-002",
+      "BIO-003",
+      "BIO-004",
+      "BIO-005",
+      "BIO-006"
+    ],
+    "CITY_POI": [
+      "CIT-001",
+      "CIT-002"
+    ]
+  },
+  "rules": [
+    "STATE_MEANS_POLITICAL_UNIT",
+    "UNDEFINED_REGIONS_AND_SUBREGIONS_REMAIN_PENDING",
+    "EXACT_COUNTS_POSITIONS_STOCKS_PRICES_AND_INSTANCE_STATE_ARE_RUNTIME_ONLY",
+    "NO_CANON_WRITE"
+  ]
+}

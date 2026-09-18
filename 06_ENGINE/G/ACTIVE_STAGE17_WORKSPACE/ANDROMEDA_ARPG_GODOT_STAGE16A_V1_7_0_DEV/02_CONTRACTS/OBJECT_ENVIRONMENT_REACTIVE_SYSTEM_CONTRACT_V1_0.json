@@ -1,0 +1,87 @@
+{
+  "record_id": "OBJECT-ENVIRONMENT-REACTIVE-SYSTEM-CONTRACT-V1.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "module": "LIVING_SIMULATION_ENGINE/OBJECT_ENVIRONMENT",
+  "version": "V1.0",
+  "baseline": {
+    "master": "ANDRÔMEDA CÓDEX MASTER V2.0.1",
+    "release_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "authority": "READ_ONLY"
+  },
+  "principle": "OBJECTS_DO_NOT_THINK; THEY_EXPOSE_STATE_PROPERTIES_INTERACTIONS_AND_DETERMINISTIC_REACTIONS",
+  "authority_boundaries": {
+    "canonical_references": "MASTER_ONLY",
+    "reactive_material_profiles": "RUNTIME_REACTIVE_PROFILE_NOT_CANON",
+    "spatial_reaction_links": "RUNTIME_SPATIAL_REACTION_LINK_NOT_CANON",
+    "state_mutation_authority": "LivingRuntime.apply_action only",
+    "llm_authority": "NONE",
+    "agent_brain_authority": "NONE_INSIDE_OBJECT_SYSTEM",
+    "canon_write": "PROHIBITED"
+  },
+  "object_classes": ["DOOR","CONTAINER","WEAPON","VEHICLE","STRUCTURE","MACHINE","FLORA","RESOURCE_NODE","BRIDGE","GENERIC_OBJECT"],
+  "material_classes": ["WOOD","METAL","STONE","GLASS","ORGANIC","COMPOSITE","LIQUID","UNKNOWN"],
+  "state_contract": {
+    "integrity": {"range": [0,100], "nonnegative": true},
+    "functional": "boolean",
+    "open": "boolean",
+    "locked": "boolean",
+    "active": "boolean",
+    "temperature": {"range": [-200,5000]},
+    "wetness": {"range": [0,100]},
+    "burning": "boolean",
+    "fire_intensity": {"range": [0,100]},
+    "resource_quantity": {"minimum": 0},
+    "zone_ref": "runtime ENVIRONMENT_ZONE or null"
+  },
+  "interactions": {
+    "state_machine": ["OPEN","CLOSE","LOCK","UNLOCK","ACTIVATE","DEACTIVATE"],
+    "physical": ["DAMAGE","REPAIR","CUT"],
+    "thermal": ["IGNITE","EXTINGUISH","HEAT","COOL"],
+    "water": ["SOAK","DRY"],
+    "resource": ["HARVEST"]
+  },
+  "invariants": [
+    "locked object cannot be open",
+    "nonflammable object cannot ignite",
+    "wetness above ignition threshold blocks ignition",
+    "destroyed reactive object is nonfunctional",
+    "resource quantity never becomes negative",
+    "integrity never becomes negative",
+    "reaction logs are append-only",
+    "environment tick and fire propagation are idempotent by explicit keys",
+    "fire propagation is bounded by visited-set, max depth and budget"
+  ],
+  "environment": {
+    "zone_fields": ["temperature","humidity","fire_intensity","smoke","water_level","contamination"],
+    "link_types": ["ADJACENT","CONTAINED_BY","SUPPORTED_BY","CONNECTED_TO","ENVIRONMENT_MEMBER"],
+    "fire_max_depth": 4,
+    "fire_default_budget": 32,
+    "cycle_policy": "VISITED_SET_STOP",
+    "tick_idempotency": "world_instance_id + tick_key"
+  },
+  "recovery": {
+    "policy": "REGENERATE_7_UNIVERSE_DAYS",
+    "destroyed_at_to_due_days": 7,
+    "physical_restore": ["lifecycle=ACTIVE","functional=true","integrity=profile.base_integrity","active=false","burning=false","fire_intensity=0"],
+    "history_erasure": false,
+    "social_memory_erasure": false,
+    "causal_history_erasure": false
+  },
+  "offline": {
+    "mode": "ROUTINE_OFFLINE",
+    "manual_interactions": "BLOCKED",
+    "extraordinary_fire_propagation": "BLOCKED",
+    "fire_zone_heating_and_fire_escalation": "FROZEN",
+    "bounded_water_humidity_reactions": "ROUTINE_SAFE_ALLOWED",
+    "scheduled_recovery": "ROUTINE_SAFE_ALLOWED"
+  },
+  "persistence": {
+    "reactive_profiles": "HASHED",
+    "environment_links": "HASHED",
+    "reaction_logs": "HASHED_APPEND_ONLY",
+    "environment_ticks": "HASHED_IDEMPOTENT",
+    "propagation_runs": "HASHED_IDEMPOTENT",
+    "object_truth": "LivingRuntime event-sourced state"
+  },
+  "status": "APPROVED_FOR_STAGE08_RUNTIME"
+}

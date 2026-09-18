@@ -1,0 +1,43 @@
+{
+  "record_id": "STELLAR-CONTENT-ROUTING-CONSTITUTION-V1.0",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.0",
+  "status": "ACTIVE_R2_COMPATIBLE_DERIVATION",
+  "authority": {
+    "scope": "CONTENT_ORGANIZATION",
+    "r2": "READ_ONLY_ORIGIN"
+  },
+  "dependencies": [
+    "STELLAR_CANON_CONSTITUTION_V1_1.json",
+    "STELLAR_FOUNDATION_INDEX_V1_5.json",
+    "../../01_LORE/CONTENT_ROUTING_REGISTRY_V1.json"
+  ],
+  "invariants": [
+    "ONE_CANONICAL_HOME_PER_CONTENT_ITEM",
+    "ROUTING_REQUIRES_AUTHORITY_AND_PROVENANCE",
+    "SIMULATION_READS_BUT_NEVER_WRITES_CANON",
+    "EXTERNAL_TOOL_OUTPUT_IS_PENDING_DERIVATION"
+  ],
+  "prohibitions": [
+    "NO_DUPLICATE_CANONICAL_COPY",
+    "NO_RUNTIME_CANON_PROMOTION",
+    "NO_EXTERNAL_IMPORT_CANON_WRITE",
+    "NO_SEALED_CONTENT_EXPORT_BY_DEFAULT"
+  ],
+  "simulation_effects": [
+    "LivingSim and Living Scale read routing references and filtered projections.",
+    "Tool exports consume only permitted authority and spoiler scopes.",
+    "Validated imports move to staging and await authorial promotion."
+  ],
+  "allowed_states": [
+    "CANON_R2_CONFIRMADO",
+    "CANON_DERIVADO_ATIVO",
+    "PENDING_DERIVATION",
+    "EVIDENCIA_TECNICA_NAO_CANONICA"
+  ],
+  "story_generators": [
+    "Uma arma encontrada em uma rota passa a ligar economia, personagem e conflito sem criar três versões do mesmo fato.",
+    "Um NPC procedural ganha história local, mas sua promoção exige fonte e não apaga personagens R2.",
+    "Uma sub-região proposta revela um problema ecológico sem se tornar geografia canônica automaticamente."
+  ]
+}

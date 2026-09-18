@@ -1,0 +1,30 @@
+{
+  "record_id": "R2-COS-CATEGORY-INDEX-V1",
+  "authority": "CANON_R2_CONFIRMADO",
+  "category": "COS",
+  "category_name": "Cósmico",
+  "items": [
+    {
+      "id": "COS-001",
+      "title": "YAH-Hi",
+      "path": "01_LORE/CANON_R2/COSMOLOGIA_E_PLANETA/COSMOLOGIA/COS-001__yah-hi.json",
+      "spoiler": 4,
+      "sealed": true
+    },
+    {
+      "id": "COS-002",
+      "title": "Amadon",
+      "path": "01_LORE/CANON_R2/COSMOLOGIA_E_PLANETA/COSMOLOGIA/COS-002__amadon.json",
+      "spoiler": 4,
+      "sealed": true
+    },
+    {
+      "id": "COS-003",
+      "title": "Votakhel",
+      "path": "01_LORE/CANON_R2/COSMOLOGIA_E_PLANETA/COSMOLOGIA/COS-003__votakhel.json",
+      "spoiler": 4,
+      "sealed": true
+    }
+  ],
+  "source": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json"
+}

@@ -1,0 +1,44 @@
+{
+  "record_id": "STELLAR-LIVING-CONTENT-INTEGRATION-LAW-V1.0",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.0",
+  "status": "ACTIVE_R2_COMPATIBLE_DERIVATION",
+  "authority": {
+    "scope": "LIVING_SIM_AND_LIVING_SCALE",
+    "write_authority": "NONE"
+  },
+  "dependencies": [
+    "STELLAR_CONTENT_ROUTING_CONSTITUTION_V1_0.json",
+    "STELLAR_ECONOMY_ECOLOGY_TIME_LAW_V1_1.json",
+    "STELLAR_ECOLOGY_TEMPORAL_ROUTINE_LAW_V1_0.json"
+  ],
+  "invariants": [
+    "LIVING_SIM_READS_CANON_THROUGH_VERSIONED_PROJECTIONS",
+    "LIVING_SCALE_USES_R2_GEOGRAPHY_WITHOUT_INVENTING_LEVELS",
+    "STATE_MEANS_POLITICAL_UNIT",
+    "RUNTIME_VALUES_REMAIN_NONCANONICAL"
+  ],
+  "prohibitions": [
+    "NO_SIMULATION_EPISODE_RETCON",
+    "NO_SIMULATION_SOVEREIGNTY_CHANGE",
+    "NO_SIMULATION_AUTHORIAL_DEATH_RESOLUTION",
+    "NO_AMADON_PRE_S01E08",
+    "NO_IRREVERSIBLE_ROOT_TRANSITION"
+  ],
+  "simulation_effects": [
+    "LivingSim receives allowed entity, ecology, social and economy references.",
+    "Living Scale receives planet-to-POI hierarchy only where R2 defines it.",
+    "Unresolved regions, NPC roles and resource profiles remain pending instead of becoming facts."
+  ],
+  "allowed_states": [
+    "READ_ONLY_PROJECTION",
+    "RUNTIME_OVERLAY",
+    "PENDING_AUTHORIAL_GATE",
+    "BLOCKED"
+  ],
+  "story_generators": [
+    "Uma rota simulada mostra pressão sobre uma cidade sem mudar sua soberania.",
+    "Uma fauna conhecida gera uma ameaça local, mas a ficha de inimigo só se fecha quando há definição autoral.",
+    "Uma região ainda não mapeada vira uma proposta de expansão rastreável."
+  ]
+}

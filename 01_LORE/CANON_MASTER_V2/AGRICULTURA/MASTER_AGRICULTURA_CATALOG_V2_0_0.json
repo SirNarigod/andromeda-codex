@@ -1,0 +1,168 @@
+{
+  "record_id": "MASTER-AGRICULTURA-CATALOG-V2.0.0",
+  "title": "Zonas agrícolas oficiais do MASTER V2.0.1 - AGZ-001..008 (8 entradas)",
+  "provenance": {
+    "master_release": "ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE",
+    "master_release_zip_sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+    "authority": "CANON_MASTER_V2_CONFIRMADO",
+    "source_files": [
+      "01_CANON/ANDROMEDA_CODEX_CANON_MASTER_V2_0_0.json (domain=Agricultura)"
+    ],
+    "collision_found_and_resolved": {
+      "issue": "AGZ-001..008 oficiais do Master (Campos Velurianos, Cinturão de Cultivos Luminais, Criação de GriloCobre, Encostas Brumantes, Manejo de LarvaVéu, Manejo de Torvaco, Manejo Lumara dos Santuários, Sub-bosques Raizel) colidiam com nossas próprias AGZ-001..008 (Pastagens Luminais, Jardins Medicinais, Pomares das Copas, Fungicultura das Câmaras, Hortas do Acolhimento, Maricultura das Ilhas, Campos de Grão do Domínio, Hidroponia das Plataformas) - criadas na fase 15 desta sessão, mesma numeração, conteúdo diferente.",
+      "resolution": "Nossas 8 zonas renumeradas para AGZ-090..097 em 6 arquivos de conteúdo + 8 arquivos de zona renomeados + índice atualizado. Nenhum fato alterado, só o código. Confirmamos ainda que o próprio motor do jogo (arpg_gathering_work_core.py, código pré-existente) já referenciava AGZ-001 e RSZ-003 - exatamente os códigos oficiais do Master - coincidência que confirma que essa colisão já existia silenciosamente antes desta sessão.",
+      "files_updated": [
+        "01_LORE/CANON_DERIVADO_ATIVO/AGRICULTURA/AGZ-001..008 -> AGZ-090..097 (8 arquivos renomeados + índice)",
+        "04_MECANICAS/TRABALHO_E_PROFISSOES/STELLAR_MASTERY_PROGRESSION_SYSTEM_DEV_V1_0.json",
+        "01_LORE/CANON_DERIVADO_ATIVO/COSMOLOGIA/STELLAR_CALENDAR_SYSTEM_DEV_V1_0.json",
+        "04_MECANICAS/ECONOMIA_E_RECURSOS/STELLAR_MEDICINE_CATALOG_DEV_V1_0.json",
+        "04_MECANICAS/ECONOMIA_E_RECURSOS/STELLAR_DERIVED_FOOD_DEV_V1_0.json",
+        "04_MECANICAS/ECONOMIA_E_RECURSOS/STELLAR_CRAFT_RESOURCE_CATALOG_DEV_V1_0.json"
+      ],
+      "engine_files_left_untouched": "arpg_gathering_work_core.py e outros artefatos de engine pré-existentes que citam AGZ-001/RSZ-003 NÃO foram tocados - eles já apontavam corretamente para os códigos oficiais do Master."
+    }
+  },
+  "count": 8,
+  "agricultural_zones": [
+    {
+      "id": "AGZ-001",
+      "name": "Campos Velurianos",
+      "territory_refs": [
+        "TER-011"
+      ],
+      "biome_refs": [
+        "BIO-008"
+      ],
+      "anchor_poi_or_loc": "POI-005",
+      "systems": [
+        "manejo de Velúrio",
+        "forragem de planície"
+      ],
+      "species_refs": [
+        "CRI-002",
+        "FAS-001",
+        "FAD-001"
+      ]
+    },
+    {
+      "id": "AGZ-002",
+      "name": "Encostas Brumantes",
+      "territory_refs": [
+        "TER-002"
+      ],
+      "biome_refs": [
+        "BIO-005"
+      ],
+      "anchor_poi_or_loc": "LOC-002",
+      "systems": [
+        "manejo de altitude"
+      ],
+      "species_refs": [
+        "CRI-003"
+      ]
+    },
+    {
+      "id": "AGZ-003",
+      "name": "Manejo Lumara dos Santuários",
+      "territory_refs": [
+        "TER-008"
+      ],
+      "biome_refs": [
+        "BIO-001",
+        "BIO-007"
+      ],
+      "anchor_poi_or_loc": "LOC-008",
+      "systems": [
+        "manejo protegido de bosque"
+      ],
+      "species_refs": [
+        "CRI-004"
+      ]
+    },
+    {
+      "id": "AGZ-004",
+      "name": "Sub-bosques Raizel",
+      "territory_refs": [
+        "TER-005"
+      ],
+      "biome_refs": [
+        "BIO-007",
+        "BIO-009"
+      ],
+      "anchor_poi_or_loc": "LOC-005",
+      "systems": [
+        "manejo de sub-bosque úmido"
+      ],
+      "species_refs": [
+        "CRI-005"
+      ]
+    },
+    {
+      "id": "AGZ-005",
+      "name": "Criação de GriloCobre",
+      "territory_refs": [
+        "TER-011"
+      ],
+      "biome_refs": [
+        "BIO-008"
+      ],
+      "anchor_poi_or_loc": "POI-005",
+      "systems": [
+        "criação de inseto alimentar"
+      ],
+      "species_refs": [
+        "CRI-008"
+      ]
+    },
+    {
+      "id": "AGZ-006",
+      "name": "Manejo de LarvaVéu",
+      "territory_refs": [
+        "TER-011"
+      ],
+      "biome_refs": [
+        "BIO-008"
+      ],
+      "anchor_poi_or_loc": "POI-006",
+      "systems": [
+        "criação controlada"
+      ],
+      "species_refs": [
+        "CRI-009"
+      ]
+    },
+    {
+      "id": "AGZ-007",
+      "name": "Manejo de Torvaco",
+      "territory_refs": [
+        "TER-011"
+      ],
+      "biome_refs": [
+        "BIO-008"
+      ],
+      "anchor_poi_or_loc": "POI-005",
+      "systems": [
+        "criação de carga e tração"
+      ],
+      "species_refs": [
+        "FAD-002"
+      ]
+    },
+    {
+      "id": "AGZ-008",
+      "name": "Cinturão de Cultivos Luminais",
+      "territory_refs": [
+        "TER-001"
+      ],
+      "biome_refs": [
+        "BIO-002",
+        "BIO-007"
+      ],
+      "anchor_poi_or_loc": "POI-014",
+      "systems": [
+        "cultivo e armazenamento regional"
+      ],
+      "species_refs": []
+    }
+  ]
+}

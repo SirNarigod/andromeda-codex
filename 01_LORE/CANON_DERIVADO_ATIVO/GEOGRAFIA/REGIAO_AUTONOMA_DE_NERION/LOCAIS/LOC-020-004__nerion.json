@@ -1,0 +1,30 @@
+{
+  "loc_id": "LOC-020-004",
+  "record_id": "LOC-020-004",
+  "name": "Mercado de Núcleos",
+  "parent_subregion": "SUB-020-002",
+  "function": "Comércio de energia, peças, ligas e componentes MAR.",
+  "notable_link": "TER-020 Nérion — Região Autônoma dos Despertos",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "settlement_tier": "COMPLEXO",
+  "history": "Nasceu de uma troca clandestina de baterias entre trabalhadores, antes de possuir bancas e fiscais escolhidos pelo Conselho.",
+  "figures": [
+    {
+      "name": "Kilo-8",
+      "note": "corretor de peças rastreáveis"
+    },
+    {
+      "name": "Mara-Linha",
+      "note": "catadora que acusa o mercado de esconder protótipos"
+    }
+  ],
+  "hook": "Uma caixa de núcleos traz a mesma assinatura do laboratório de Alber.",
+  "secondary_hook": "A disputa local revela uma escolha difícil entre autonomia, segurança e memória.",
+  "detail": "Preço varia conforme ciclos de energia e procedência da memória do componente.",
+  "prohibitions": [
+    "NO_R2_EPISODE_REWRITE",
+    "NO_RUNTIME_CANON_PROMOTION",
+    "NO_NAME_FOR_MYSTERIOUS_MAGE_YET"
+  ],
+  "sensory": "Ímãs vibram nas bancas e vendedores testam núcleos com melodias de diagnóstico."
+}

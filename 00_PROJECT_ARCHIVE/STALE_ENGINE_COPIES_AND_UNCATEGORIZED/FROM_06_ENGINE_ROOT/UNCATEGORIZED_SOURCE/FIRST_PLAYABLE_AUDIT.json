@@ -1,0 +1,230 @@
+{
+  "build": "V0.1.13",
+  "status": "PASS_STATIC",
+  "checks_passed": 44,
+  "checks_total": 44,
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1",
+  "scope": "right-click click-only + inventory toggle + regression guards",
+  "checks": [
+	{
+	  "name": "PROJECT_VERSION_0_1_13",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "HUD_VERSION_0_1_13",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "GATE_VERSION_0_1_13",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "README_VERSION_0_1_13",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "RIGHT_HOLD_STATE_REMOVED",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "RIGHT_RELEASE_STATE_REMOVED",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "RIGHT_GROUND_DIRECT_CLICK",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "RIGHT_DOES_NOT_ENTER_POINTER_HOLD",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "PRESS_CANDIDATE_LEFT_ONLY",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "HOLD_RUNTIME_LEFT_ONLY",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "LEFT_DUAL_MODE_PRESERVED",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "CLICK_HOLD_THRESHOLD_PRESERVED",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "RIGHT_CONTEXT_INTERACT",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "RIGHT_CONTEXT_ATTACK",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "RIGHT_CONTEXT_INSPECT",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "INVENTORY_PANEL_DECLARED",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "INVENTORY_LABEL_DECLARED",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "INVENTORY_DEFAULT_CLOSED",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "INVENTORY_PANEL_HIDDEN_ON_BUILD",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "I_TOGGLES_INVENTORY",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "TOGGLE_INVENTORY_METHOD",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "INVENTORY_REFRESH_METHOD",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "PERMANENT_HUD_NO_INVENTORY",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "INVENTORY_PANEL_HAS_CLOSE_HINT",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "ATTACK_INTERVAL_2S",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "ATTACK_COOLDOWN_GUARD",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "A_STAR_PATH_API",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "WATER_GUARD_CLICK",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "LEFT_TRANSITION_PRESERVED",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "INTERACTION_DEFERRED",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "MAIN_TYPED_RING_ARRAY",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "NO_DUPLICATE_PLAYER_FUNCTIONS",
+	  "pass": true,
+	  "detail": "58 functions; duplicates=[]"
+	},
+	{
+	  "name": "PAREN_BALANCE",
+	  "pass": true,
+	  "detail": "531/531"
+	},
+	{
+	  "name": "BRACKET_BALANCE",
+	  "pass": true,
+	  "detail": "21/21"
+	},
+	{
+	  "name": "BRACE_BALANCE",
+	  "pass": true,
+	  "detail": "10/10"
+	},
+	{
+	  "name": "MAIN_SCENE_CONFIGURED",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "FILE_MAIN_GD",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "FILE_MAIN_TSCN",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "FILE_PLAYER_GD",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "FILE_WILDLIFE_GD",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "FILE_INTERACTABLE_GD",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "FILE_LIVINGWORLDCLIENT_GD",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "FILE_GODOTRUNTIMEGATE_GD",
+	  "pass": true,
+	  "detail": ""
+	},
+	{
+	  "name": "FILE_FIRSTPLAYABLEGATE_GD",
+	  "pass": true,
+	  "detail": ""
+	}
+  ]
+}

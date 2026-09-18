@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/streaming_cell.gd" id="1_cell"]
+
+[sub_resource type="StandardMaterial3D" id="Material_active"]
+shading_mode = 0
+albedo_color = Color(0.96, 0.69, 0.34, 0.72)
+
+[sub_resource type="StandardMaterial3D" id="Material_preload"]
+shading_mode = 0
+albedo_color = Color(0.76, 0.78, 0.76, 0.45)
+
+[sub_resource type="BoxMesh" id="Mesh_active"]
+material = SubResource("Material_active")
+size = Vector3(4.8, 0.12, 4.8)
+
+[sub_resource type="BoxMesh" id="Mesh_preload"]
+material = SubResource("Material_preload")
+size = Vector3(4.2, 0.08, 4.2)
+
+[node name="StreamingCell" type="Node3D"]
+script = ExtResource("1_cell")
+
+[node name="DetailedVisual" type="Node3D" parent="."]
+
+[node name="CellActivePlaceholder" type="MeshInstance3D" parent="DetailedVisual"]
+mesh = SubResource("Mesh_active")
+
+[node name="ReducedVisual" type="Node3D" parent="."]
+
+[node name="CellPreloadPlaceholder" type="MeshInstance3D" parent="ReducedVisual"]
+mesh = SubResource("Mesh_preload")
+
+[node name="CollisionProxy" type="Node3D" parent="."]
+metadata/role = "PRELOAD_COLLISION_REFERENCE"
+
+[node name="TraversalProxy" type="Node3D" parent="."]
+metadata/role = "PRELOAD_NAVIGATION_REFERENCE"

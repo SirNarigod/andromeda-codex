@@ -1,0 +1,49 @@
+{
+  "record_id": "SYSTEMIC-ECONOMY-FACTIONS-POPULATION-CONTRACT-V1.0",
+  "stage": "ETAPA_10",
+  "status": "RUNTIME_CONTRACT",
+  "baseline": "ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE.zip",
+  "authority": {
+    "master": "READ_ONLY",
+    "numeric_population": "RUNTIME_ONLY_NOT_CANON",
+    "prices_stock_treasury_influence": "RUNTIME_ONLY_NOT_CANON",
+    "faction_influence": "NEVER_IMPLIES_SOVEREIGNTY"
+  },
+  "master_inputs": {
+    "economic_flows": 7,
+    "faction_influence_records": 3,
+    "population_distribution_records": 14,
+    "primary_routes": 25,
+    "secondary_routes": 9
+  },
+  "systems": {
+    "economy": ["production", "stock", "consumption", "shortage_pressure", "price", "route_capacity"],
+    "population": ["aggregate_count", "births", "deaths", "migration", "labor_force", "employment", "food_security", "welfare"],
+    "factions": ["influence", "treasury", "security", "stability", "directed_relations"],
+    "routes": ["operational", "capacity_factor"]
+  },
+  "offline_policy": {
+    "economy": "ROUTINE_SAFE",
+    "aggregate_birth_death": "ROUTINE_SAFE",
+    "migration": "FROZEN",
+    "faction_influence_change": "FROZEN",
+    "territorial_sovereignty_change": "PROHIBITED"
+  },
+  "orchestration": {
+    "extension_key": "world_systems",
+    "order": ["ECONOMY", "POPULATION", "FACTION"],
+    "rebind_required_after_process_restart": true
+  },
+  "invariants": [
+    "stock >= 0",
+    "price >= 0",
+    "0 <= shortage_pressure <= 100",
+    "population >= 0",
+    "employed + unemployed == labor_force",
+    "labor_force <= population",
+    "0 <= faction influence <= 100",
+    "influence_not_sovereignty == true",
+    "0 <= route capacity_factor <= 1",
+    "master snapshots are immutable"
+  ]
+}

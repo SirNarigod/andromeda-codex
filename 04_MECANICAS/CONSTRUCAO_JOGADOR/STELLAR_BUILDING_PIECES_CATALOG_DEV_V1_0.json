@@ -1,0 +1,497 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-BUILDING-PIECES-CATALOG-DEV-V1.0",
+  "title": "Peças de Construção do Jogador — estilo jogo de sobrevivência",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "canonical_status": "GAMEPLAY_DERIVED_DEV",
+  "r2_guard": "Categoria 100% nova de gameplay (construção do JOGADOR, não confundir com 01_LORE/CANON_DERIVADO_ATIVO/CONSTRUCOES/EST-XXX, que são locais fixos do mundo). Nenhum recurso/construção novo é inventado — todo inputs/produced_at já existe (MAT-001, MIN-STONE, MIN-IRON, MIN-CRYSTAL, RUNA-003, EST-004, EST-044). Sem número de jogo (HP/tempo) — só qualificação BAIXA/MÉDIA/ALTA, mesma disciplina de price_tier já usada na economia.",
+  "piece_types": [
+    "FUNDACAO",
+    "CHAO",
+    "PAREDE",
+    "TETO",
+    "PORTA",
+    "JANELA",
+    "RAMPA",
+    "PILAR"
+  ],
+  "tiers": [
+    "MADEIRA",
+    "PEDRA_METAL",
+    "RUNICO"
+  ],
+  "pieces": [
+    {
+      "piece_id": "BLD-FUNDACAO-T1",
+      "name": "Fundação de Madeira",
+      "piece_type": "FUNDACAO",
+      "tier": "MADEIRA",
+      "inputs": [
+        {
+          "resource_id": "MAT-001",
+          "resource_name": "Madeira de Copas"
+        }
+      ],
+      "durability_note": "BAIXA",
+      "produced_at": "EST-004 Oficina de Charneira",
+      "safety": "FICTIONAL_BUILDING_PIECE_ONLY",
+      "weight_kg": 8.5,
+      "description": "Fundação de tier madeira, durabilidade baixa."
+    },
+    {
+      "piece_id": "BLD-CHAO-T1",
+      "name": "Chão de Madeira",
+      "piece_type": "CHAO",
+      "tier": "MADEIRA",
+      "inputs": [
+        {
+          "resource_id": "MAT-001",
+          "resource_name": "Madeira de Copas"
+        }
+      ],
+      "durability_note": "BAIXA",
+      "produced_at": "EST-004 Oficina de Charneira",
+      "safety": "FICTIONAL_BUILDING_PIECE_ONLY",
+      "weight_kg": 7.22,
+      "description": "Chão de tier madeira, durabilidade baixa."
+    },
+    {
+      "piece_id": "BLD-PAREDE-T1",
+      "name": "Parede de Madeira",
+      "piece_type": "PAREDE",
+      "tier": "MADEIRA",
+      "inputs": [
+        {
+          "resource_id": "MAT-001",
+          "resource_name": "Madeira de Copas"
+        }
+      ],
+      "durability_note": "BAIXA",
+      "produced_at": "EST-004 Oficina de Charneira",
+      "safety": "FICTIONAL_BUILDING_PIECE_ONLY",
+      "weight_kg": 7.65,
+      "description": "Parede de tier madeira, durabilidade baixa."
+    },
+    {
+      "piece_id": "BLD-TETO-T1",
+      "name": "Teto de Madeira",
+      "piece_type": "TETO",
+      "tier": "MADEIRA",
+      "inputs": [
+        {
+          "resource_id": "MAT-001",
+          "resource_name": "Madeira de Copas"
+        }
+      ],
+      "durability_note": "BAIXA",
+      "produced_at": "EST-004 Oficina de Charneira",
+      "safety": "FICTIONAL_BUILDING_PIECE_ONLY",
+      "weight_kg": 7.65,
+      "description": "Teto de tier madeira, durabilidade baixa."
+    },
+    {
+      "piece_id": "BLD-PORTA-T1",
+      "name": "Porta de Madeira",
+      "piece_type": "PORTA",
+      "tier": "MADEIRA",
+      "inputs": [
+        {
+          "resource_id": "MAT-001",
+          "resource_name": "Madeira de Copas"
+        }
+      ],
+      "durability_note": "BAIXA",
+      "produced_at": "EST-004 Oficina de Charneira",
+      "safety": "FICTIONAL_BUILDING_PIECE_ONLY",
+      "weight_kg": 3.4,
+      "description": "Porta de tier madeira, durabilidade baixa."
+    },
+    {
+      "piece_id": "BLD-JANELA-T1",
+      "name": "Janela de Madeira",
+      "piece_type": "JANELA",
+      "tier": "MADEIRA",
+      "inputs": [
+        {
+          "resource_id": "MAT-001",
+          "resource_name": "Madeira de Copas"
+        }
+      ],
+      "durability_note": "BAIXA",
+      "produced_at": "EST-004 Oficina de Charneira",
+      "safety": "FICTIONAL_BUILDING_PIECE_ONLY",
+      "weight_kg": 2.55,
+      "description": "Janela de tier madeira, durabilidade baixa."
+    },
+    {
+      "piece_id": "BLD-RAMPA-T1",
+      "name": "Rampa de Madeira",
+      "piece_type": "RAMPA",
+      "tier": "MADEIRA",
+      "inputs": [
+        {
+          "resource_id": "MAT-001",
+          "resource_name": "Madeira de Copas"
+        }
+      ],
+      "durability_note": "BAIXA",
+      "produced_at": "EST-004 Oficina de Charneira",
+      "safety": "FICTIONAL_BUILDING_PIECE_ONLY",
+      "weight_kg": 5.95,
+      "description": "Rampa de tier madeira, durabilidade baixa."
+    },
+    {
+      "piece_id": "BLD-PILAR-T1",
+      "name": "Pilar de Madeira",
+      "piece_type": "PILAR",
+      "tier": "MADEIRA",
+      "inputs": [
+        {
+          "resource_id": "MAT-001",
+          "resource_name": "Madeira de Copas"
+        }
+      ],
+      "durability_note": "BAIXA",
+      "produced_at": "EST-004 Oficina de Charneira",
+      "safety": "FICTIONAL_BUILDING_PIECE_ONLY",
+      "weight_kg": 5.1,
+      "description": "Pilar de tier madeira, durabilidade baixa."
+    },
+    {
+      "piece_id": "BLD-FUNDACAO-T2",
+      "name": "Fundação de Pedra Metal",
+      "piece_type": "FUNDACAO",
+      "tier": "PEDRA_METAL",
+      "inputs": [
+        {
+          "resource_id": "MIN-STONE",
+          "resource_name": "Rocha Estrutural"
+        },
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        }
+      ],
+      "durability_note": "MEDIA",
+      "produced_at": "EST-004 Oficina de Charneira",
+      "safety": "FICTIONAL_BUILDING_PIECE_ONLY",
+      "weight_kg": 21.5,
+      "description": "Fundação de tier pedra/metal, durabilidade media."
+    },
+    {
+      "piece_id": "BLD-CHAO-T2",
+      "name": "Chão de Pedra Metal",
+      "piece_type": "CHAO",
+      "tier": "PEDRA_METAL",
+      "inputs": [
+        {
+          "resource_id": "MIN-STONE",
+          "resource_name": "Rocha Estrutural"
+        },
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        }
+      ],
+      "durability_note": "MEDIA",
+      "produced_at": "EST-004 Oficina de Charneira",
+      "safety": "FICTIONAL_BUILDING_PIECE_ONLY",
+      "weight_kg": 18.27,
+      "description": "Chão de tier pedra/metal, durabilidade media."
+    },
+    {
+      "piece_id": "BLD-PAREDE-T2",
+      "name": "Parede de Pedra Metal",
+      "piece_type": "PAREDE",
+      "tier": "PEDRA_METAL",
+      "inputs": [
+        {
+          "resource_id": "MIN-STONE",
+          "resource_name": "Rocha Estrutural"
+        },
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        }
+      ],
+      "durability_note": "MEDIA",
+      "produced_at": "EST-004 Oficina de Charneira",
+      "safety": "FICTIONAL_BUILDING_PIECE_ONLY",
+      "weight_kg": 19.35,
+      "description": "Parede de tier pedra/metal, durabilidade media."
+    },
+    {
+      "piece_id": "BLD-TETO-T2",
+      "name": "Teto de Pedra Metal",
+      "piece_type": "TETO",
+      "tier": "PEDRA_METAL",
+      "inputs": [
+        {
+          "resource_id": "MIN-STONE",
+          "resource_name": "Rocha Estrutural"
+        },
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        }
+      ],
+      "durability_note": "MEDIA",
+      "produced_at": "EST-004 Oficina de Charneira",
+      "safety": "FICTIONAL_BUILDING_PIECE_ONLY",
+      "weight_kg": 19.35,
+      "description": "Teto de tier pedra/metal, durabilidade media."
+    },
+    {
+      "piece_id": "BLD-PORTA-T2",
+      "name": "Porta de Pedra Metal",
+      "piece_type": "PORTA",
+      "tier": "PEDRA_METAL",
+      "inputs": [
+        {
+          "resource_id": "MIN-STONE",
+          "resource_name": "Rocha Estrutural"
+        },
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        }
+      ],
+      "durability_note": "MEDIA",
+      "produced_at": "EST-004 Oficina de Charneira",
+      "safety": "FICTIONAL_BUILDING_PIECE_ONLY",
+      "weight_kg": 8.6,
+      "description": "Porta de tier pedra/metal, durabilidade media."
+    },
+    {
+      "piece_id": "BLD-JANELA-T2",
+      "name": "Janela de Pedra Metal",
+      "piece_type": "JANELA",
+      "tier": "PEDRA_METAL",
+      "inputs": [
+        {
+          "resource_id": "MIN-STONE",
+          "resource_name": "Rocha Estrutural"
+        },
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        }
+      ],
+      "durability_note": "MEDIA",
+      "produced_at": "EST-004 Oficina de Charneira",
+      "safety": "FICTIONAL_BUILDING_PIECE_ONLY",
+      "weight_kg": 6.45,
+      "description": "Janela de tier pedra/metal, durabilidade media."
+    },
+    {
+      "piece_id": "BLD-RAMPA-T2",
+      "name": "Rampa de Pedra Metal",
+      "piece_type": "RAMPA",
+      "tier": "PEDRA_METAL",
+      "inputs": [
+        {
+          "resource_id": "MIN-STONE",
+          "resource_name": "Rocha Estrutural"
+        },
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        }
+      ],
+      "durability_note": "MEDIA",
+      "produced_at": "EST-004 Oficina de Charneira",
+      "safety": "FICTIONAL_BUILDING_PIECE_ONLY",
+      "weight_kg": 15.05,
+      "description": "Rampa de tier pedra/metal, durabilidade media."
+    },
+    {
+      "piece_id": "BLD-PILAR-T2",
+      "name": "Pilar de Pedra Metal",
+      "piece_type": "PILAR",
+      "tier": "PEDRA_METAL",
+      "inputs": [
+        {
+          "resource_id": "MIN-STONE",
+          "resource_name": "Rocha Estrutural"
+        },
+        {
+          "resource_id": "MIN-IRON",
+          "resource_name": "Ferral Bruto"
+        }
+      ],
+      "durability_note": "MEDIA",
+      "produced_at": "EST-004 Oficina de Charneira",
+      "safety": "FICTIONAL_BUILDING_PIECE_ONLY",
+      "weight_kg": 12.9,
+      "description": "Pilar de tier pedra/metal, durabilidade media."
+    },
+    {
+      "piece_id": "BLD-FUNDACAO-T3",
+      "name": "Fundação de Runico",
+      "piece_type": "FUNDACAO",
+      "tier": "RUNICO",
+      "inputs": [
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        },
+        {
+          "resource_id": "RUNA-003",
+          "resource_name": "Runa de Proteção"
+        }
+      ],
+      "durability_note": "ALTA",
+      "produced_at": "EST-044 Ateliê de Encantamento da Vertente",
+      "safety": "FICTIONAL_BUILDING_PIECE_ONLY",
+      "weight_kg": 32.5,
+      "description": "Fundação de tier runico, durabilidade alta."
+    },
+    {
+      "piece_id": "BLD-CHAO-T3",
+      "name": "Chão de Runico",
+      "piece_type": "CHAO",
+      "tier": "RUNICO",
+      "inputs": [
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        },
+        {
+          "resource_id": "RUNA-003",
+          "resource_name": "Runa de Proteção"
+        }
+      ],
+      "durability_note": "ALTA",
+      "produced_at": "EST-044 Ateliê de Encantamento da Vertente",
+      "safety": "FICTIONAL_BUILDING_PIECE_ONLY",
+      "weight_kg": 27.62,
+      "description": "Chão de tier runico, durabilidade alta."
+    },
+    {
+      "piece_id": "BLD-PAREDE-T3",
+      "name": "Parede de Runico",
+      "piece_type": "PAREDE",
+      "tier": "RUNICO",
+      "inputs": [
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        },
+        {
+          "resource_id": "RUNA-003",
+          "resource_name": "Runa de Proteção"
+        }
+      ],
+      "durability_note": "ALTA",
+      "produced_at": "EST-044 Ateliê de Encantamento da Vertente",
+      "safety": "FICTIONAL_BUILDING_PIECE_ONLY",
+      "weight_kg": 29.25,
+      "description": "Parede de tier runico, durabilidade alta."
+    },
+    {
+      "piece_id": "BLD-TETO-T3",
+      "name": "Teto de Runico",
+      "piece_type": "TETO",
+      "tier": "RUNICO",
+      "inputs": [
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        },
+        {
+          "resource_id": "RUNA-003",
+          "resource_name": "Runa de Proteção"
+        }
+      ],
+      "durability_note": "ALTA",
+      "produced_at": "EST-044 Ateliê de Encantamento da Vertente",
+      "safety": "FICTIONAL_BUILDING_PIECE_ONLY",
+      "weight_kg": 29.25,
+      "description": "Teto de tier runico, durabilidade alta."
+    },
+    {
+      "piece_id": "BLD-PORTA-T3",
+      "name": "Porta de Runico",
+      "piece_type": "PORTA",
+      "tier": "RUNICO",
+      "inputs": [
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        },
+        {
+          "resource_id": "RUNA-003",
+          "resource_name": "Runa de Proteção"
+        }
+      ],
+      "durability_note": "ALTA",
+      "produced_at": "EST-044 Ateliê de Encantamento da Vertente",
+      "safety": "FICTIONAL_BUILDING_PIECE_ONLY",
+      "weight_kg": 13.0,
+      "description": "Porta de tier runico, durabilidade alta."
+    },
+    {
+      "piece_id": "BLD-JANELA-T3",
+      "name": "Janela de Runico",
+      "piece_type": "JANELA",
+      "tier": "RUNICO",
+      "inputs": [
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        },
+        {
+          "resource_id": "RUNA-003",
+          "resource_name": "Runa de Proteção"
+        }
+      ],
+      "durability_note": "ALTA",
+      "produced_at": "EST-044 Ateliê de Encantamento da Vertente",
+      "safety": "FICTIONAL_BUILDING_PIECE_ONLY",
+      "weight_kg": 9.75,
+      "description": "Janela de tier runico, durabilidade alta."
+    },
+    {
+      "piece_id": "BLD-RAMPA-T3",
+      "name": "Rampa de Runico",
+      "piece_type": "RAMPA",
+      "tier": "RUNICO",
+      "inputs": [
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        },
+        {
+          "resource_id": "RUNA-003",
+          "resource_name": "Runa de Proteção"
+        }
+      ],
+      "durability_note": "ALTA",
+      "produced_at": "EST-044 Ateliê de Encantamento da Vertente",
+      "safety": "FICTIONAL_BUILDING_PIECE_ONLY",
+      "weight_kg": 22.75,
+      "description": "Rampa de tier runico, durabilidade alta."
+    },
+    {
+      "piece_id": "BLD-PILAR-T3",
+      "name": "Pilar de Runico",
+      "piece_type": "PILAR",
+      "tier": "RUNICO",
+      "inputs": [
+        {
+          "resource_id": "MIN-CRYSTAL",
+          "resource_name": "Cristal Rúnico"
+        },
+        {
+          "resource_id": "RUNA-003",
+          "resource_name": "Runa de Proteção"
+        }
+      ],
+      "durability_note": "ALTA",
+      "produced_at": "EST-044 Ateliê de Encantamento da Vertente",
+      "safety": "FICTIONAL_BUILDING_PIECE_ONLY",
+      "weight_kg": 19.5,
+      "description": "Pilar de tier runico, durabilidade alta."
+    }
+  ]
+}

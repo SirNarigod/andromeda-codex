@@ -1,0 +1,44 @@
+{
+  "record_id": "CHECKPOINT-ARPG-STAGE16A-PRE-GODOT-V0.8.0",
+  "stage": "16A/23",
+  "version": "V0.8.0",
+  "status": "PASS_PRE_GODOT_READY_FOR_CODEX_HANDOFF_WATER_BAG_SURVIVAL_REVISION",
+  "parent_checkpoint": "V0.7.0",
+  "scope": "AUTHORIAL_WATER_TRAVERSAL_SWIM_STAMINA_BAG_INVENTORY_DEATH_TTL_OWNERSHIP_HANDOFF_REVISION",
+  "tests": {
+    "stage16a_total": 209,
+    "stage16a_passed": 209,
+    "stage16a_failed": 0,
+    "stress": 20,
+    "stress_passed": 20,
+    "stage05_item_core": 22,
+    "stage05_passed": 22,
+    "stage15_validation": 24,
+    "stage15_passed": 24,
+    "stage15_stress": 23,
+    "stage15_stress_passed": 23,
+    "stage13_economy": 22,
+    "stage13_economy_passed": 22,
+    "stage15_stress_resume_seconds": 1.283
+  },
+  "authorial_additions": [
+    "shallow river/current/under-bridge traversal with stamina effects for living actors and traction effects for vehicles",
+    "deep-water swim with higher stamina consumption and water-exhaustion defeat eligibility",
+    "real Bag container plus reduced base inventory without Bag",
+    "equipped weapons and equipped armor/clothes retained on death; quest/critical unique items protected",
+    "water Ground Loot recoverable for 15 minutes; water Bag floats for 30 minutes; land Bag persists indefinitely until recovery",
+    "player may recover NPC Bag while preserving ownership/reaction context; NPC auto-theft disabled"
+  ],
+  "godot_gate": "PENDING_STAGE16B_CODEX_LOCAL_GODOT",
+  "stage16_complete": false,
+  "backup_authorized": false,
+  "canon_mutations": 0,
+  "open_corrections": 0,
+  "godot_acceptance_gates": 28,
+  "delta_from_parent": {
+    "modified_existing": 6,
+    "added": 11,
+    "removed": 0,
+    "transients": 0
+  }
+}

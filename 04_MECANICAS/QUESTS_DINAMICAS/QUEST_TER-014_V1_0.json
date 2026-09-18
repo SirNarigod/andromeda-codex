@@ -1,0 +1,23 @@
+{
+  "record_id": "QUEST-TER-014-V1.0",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "LOCAL_AUDITABLE_QUEST_TEMPLATE",
+  "title": "Fumaça na Caldeira",
+  "locality": "SUB-014-001",
+  "anchor_reference": "EST-049 Fundição da Caldeira, JOB-016 Extrator de recursos",
+  "premise": "Uma mudança repentina na fumaça da Caldeira Ativa levanta dúvida sobre a segurança da extração de minério vulcânico em curso.",
+  "phases": [
+    {"id": "WELCOME", "objective": "Aceitar a tarefa local e receber o briefing da situação na Fundição da Caldeira."},
+    {"id": "EVIDENCE", "objective": "Investigar mudanças de temperatura, fumaça e relatos dos fundidores."},
+    {"id": "DECISION", "objective": "Escolher uma resposta local com custo documentado."},
+    {"id": "REPORT", "objective": "Reportar a resolução ao Conselho de Fundidores."}
+  ],
+  "resolutions": [
+    {"id": "AVOID", "title": "Evacuação Preventiva", "effect": "A extração é suspensa até nova avaliação.", "local_consequence": "Risco imediato cai, mas a produção de minério para."},
+    {"id": "REPAIR", "title": "Reforço de Contenção Térmica", "effect": "Equipamento de segurança é reforçado, permitindo retomada controlada da extração.", "local_consequence": "Consome recursos/tempo, mas resolve a causa."},
+    {"id": "ESCALATE_REPORT", "title": "Escalonamento Formal", "effect": "O caso é reportado ao Conselho de Fundidores para decisão institucional.", "local_consequence": "Resolução mais lenta, mas gera registro formal e reduz risco de repetição."}
+  ],
+  "evidence_rule": "Evidência sustenta apenas relatório local e reputação contextual — não identifica culpado como fato canônico sem portão autoral.",
+  "rewards": "reputação contextual de runtime, acesso temporário e progressão prática; nenhum item, título, território ou fato canônico.",
+  "prohibitions": ["NO_OFFLINE_RESOLUTION", "NO_CANON_PROMOTION", "NO_NAMED_R2_APPEARANCE", "NO_AUTHORIAL_DEATH", "NO_ROOT_ESCALATION"]
+}

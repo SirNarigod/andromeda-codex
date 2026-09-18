@@ -1,0 +1,36 @@
+{
+  "record_id": "ARPG-ITEMIZATION-CONTRACT-V0.6.0",
+  "stage": "05/20",
+  "version": "V0.6.0",
+  "item_identity_policy": "MASTER_READ_ONLY_WHERE_CANON_EXISTS; GAMEPLAY_DERIVED_DEV_SOURCE_OTHERWISE",
+  "rules": {
+    "universal_item_definition_contract": true,
+    "same_inventory_contract_can_serve_player_and_npc": true,
+    "canonical_names_and_identity_are_not_mutated": true,
+    "rarity_quality_affixes_numeric_stats_are_gameplay_derived": true,
+    "unique_equipment_uses_instance_identity": true,
+    "materials_consumables_components_use_stack_identity": true,
+    "slot_and_weight_capacity_are_enforced": true,
+    "durability_and_broken_state_are_persistent": true,
+    "broken_equipment_contributes_no_combat_modifiers": true,
+    "sockets_exist_as_empty_framework": true,
+    "rune_application_is_not_silently_invented": true,
+    "singular_items_require_authored_unique_definition": true,
+    "consumables_use_adaptive_primary_resource_not_fixed_mana": true,
+    "legacy_stage04_placeholder_consumables_remain_compatibility_only": true,
+    "legacy_commerce_inventory_is_not_deleted_or_rewritten": true,
+    "art_dependency": "NONE"
+  },
+  "rarity_internal_keys": ["COMMON", "ATTUNED", "EXCEPTIONAL", "RELIC", "SINGULAR"],
+  "rarity_display_labels": ["Comum", "Sintonizado", "Excepcional", "Relíquia", "Singular"],
+  "rarity_label_authority": "GAMEPLAY_DERIVED_RENAMEABLE",
+  "equipment_slots": ["MAIN_HAND", "OFF_HAND", "HEAD", "CHEST", "HANDS", "LEGS", "FEET", "NECK", "RING_LEFT", "RING_RIGHT", "UTILITY"],
+  "future_bindings": {
+    "skills": "STAGE06",
+    "actors_and_loot_sources": "STAGE07",
+    "world_drop_surfaces": "STAGE08",
+    "gathering_work_resources": "STAGE09",
+    "economy_crafting_repair_cost": "STAGE11"
+  },
+  "authority": "GAMEPLAY_DERIVED_NOT_CANON"
+}

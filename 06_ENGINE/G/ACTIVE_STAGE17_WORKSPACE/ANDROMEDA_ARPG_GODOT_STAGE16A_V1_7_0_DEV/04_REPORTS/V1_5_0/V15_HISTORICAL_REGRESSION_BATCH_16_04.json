@@ -1,0 +1,40 @@
+{
+  "record_id": "V15-HISTORICAL-REGRESSION-BATCH",
+  "start": 16,
+  "file_count": 4,
+  "tests": 22,
+  "passed_files": 4,
+  "failed_files": 0,
+  "rows": [
+    {
+      "file": "test_economic_locality_v1_1.py",
+      "tests": 6,
+      "returncode": 0,
+      "seconds": 1.979,
+      "status": "PASS"
+    },
+    {
+      "file": "test_faction_integration_v1_1.py",
+      "tests": 3,
+      "returncode": 0,
+      "seconds": 1.382,
+      "status": "PASS"
+    },
+    {
+      "file": "test_godot_chunk_dungeon_v1_4.py",
+      "tests": 4,
+      "returncode": 0,
+      "seconds": 4.438,
+      "status": "PASS"
+    },
+    {
+      "file": "test_integrated_engine_v1_1.py",
+      "tests": 9,
+      "returncode": 0,
+      "seconds": 7.28,
+      "status": "PASS"
+    }
+  ],
+  "failures": [],
+  "status": "PASS"
+}

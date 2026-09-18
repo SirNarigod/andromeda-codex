@@ -1,0 +1,239 @@
+{
+  "record_id": "ANDROMEDA-STAGE16B-AUTHORITY-BACKEND-VALIDATION-V0.8.0",
+  "captured_at": "2026-08-22T11:12:53-0300",
+  "status": "FAIL",
+  "python": "3.14.6",
+  "python_executable": "C:\\Users\\thall\\ANDROMEDA_PRODUCT\\.venv\\Scripts\\python.exe",
+  "master_version": "V2.0.1",
+  "master_promotion_to_v2_1_0": false,
+  "protected_checkpoint_bytes_changed": 0,
+  "backend_suites_registered": 9,
+  "python_tests_total": 331,
+  "failures": [
+    "test_stage16b_authority_combat_suite"
+  ],
+  "steps": [
+    {
+      "step": "master_v2_0_1_integrity",
+      "status": "PASS",
+      "master_path": "C:\\Users\\thall\\ANDROMEDA_PRODUCT\\ANDROMEDA_CODEX_MASTER_V2_0_1_RELEASE.zip",
+      "sha256": "6D9AC3CCE7DCF6A65FDCF73859C332A0211C1AF52D149077BEEF554BF7BBD0B2",
+      "expected_sha256": "6D9AC3CCE7DCF6A65FDCF73859C332A0211C1AF52D149077BEEF554BF7BBD0B2",
+      "forbidden_tokens_in_path": [],
+      "read_only": true
+    },
+    {
+      "step": "stage16a_protected_checkpoint",
+      "status": "PASS",
+      "entries": 724,
+      "verified": 724,
+      "missing": [],
+      "mismatch": [],
+      "protected_bytes_changed": 0
+    },
+    {
+      "step": "backend_suite_coverage",
+      "status": "PASS",
+      "suites_on_disk": 9,
+      "suites_registered": 9,
+      "unregistered_suites": [],
+      "registered_but_missing": []
+    },
+    {
+      "step": "test_stage16b_authority_adapter_suite",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 35,
+      "seconds": 45.524,
+      "tail": [
+        "test_72_snapshot_projection_shape_matches_b01 (tests.test_stage16b_authority_adapter.Stage16BAuthorityAdapterTests.test_72_snapshot_projection_shape_matches_b01) ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 35 tests in 45.131s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "test_stage16b_authority_http_suite",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 16,
+      "seconds": 25.132,
+      "tail": [
+        "test_90_server_restart_preserves_authority_state (tests.test_stage16b_authority_http.Stage16BAuthorityHttpTests.test_90_server_restart_preserves_authority_state) ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 16 tests in 24.804s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "test_stage16b_authority_profile_loadout_suite",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 6,
+      "seconds": 34.652,
+      "tail": [
+        "test_06_profile_state_survives_adapter_restart (tests.test_stage16b_authority_profile_loadout.Stage16BAuthorityProfileLoadoutTests.test_06_profile_state_survives_adapter_restart) ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 6 tests in 34.268s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "test_stage16b_authority_traversal_suite",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 8,
+      "seconds": 24.331,
+      "tail": [
+        "test_08_snapshot_reflects_the_persisted_core_value (tests.test_stage16b_authority_traversal.Stage16BAuthorityTraversalTests.test_08_snapshot_reflects_the_persisted_core_value) ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 8 tests in 24.019s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "test_stage16b_authority_ground_loot_suite",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 10,
+      "seconds": 23.233,
+      "tail": [
+        "test_10_collected_drop_leaves_active_snapshot_and_active_drop_remains (tests.test_stage16b_authority_ground_loot.Stage16BAuthorityGroundLootTests.test_10_collected_drop_leaves_active_snapshot_and_active_drop_remains) ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 10 tests in 22.911s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "test_stage16b_authority_gathering_suite",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 11,
+      "seconds": 65.624,
+      "tail": [
+        "test_11_hunting_depletion_survives_real_engine_restart (tests.test_stage16b_authority_gathering.Stage16BGatheringRestartContinuityTests.test_11_hunting_depletion_survives_real_engine_restart) ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 11 tests in 65.227s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "test_stage16b_authority_combat_suite",
+      "status": "FAIL",
+      "exit_code": 1,
+      "tests": 13,
+      "seconds": 43.748,
+      "tail": [
+        "AssertionError: '' is not true : no lethal attack was journalled",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 13 tests in 43.386s",
+        "",
+        "FAILED (failures=2)"
+      ]
+    },
+    {
+      "step": "test_stage16b_authority_economy_inventory_quest_suite",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 11,
+      "seconds": 34.455,
+      "tail": [
+        "test_11_wrong_session_and_forged_authority_are_inert (tests.test_stage16b_authority_economy_inventory_quest.Stage16BAuthorityEconomyInventoryQuestTests.test_11_wrong_session_and_forged_authority_are_inert) ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 11 tests in 34.148s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "test_stage16b_authority_save_death_water_suite",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 12,
+      "seconds": 60.17,
+      "tail": [
+        "test_12_no_client_authority_fields_are_accepted_for_b10 (tests.test_stage16b_authority_save_death_water.Stage16BAuthoritySaveDeathWaterTests.test_12_no_client_authority_fields_are_accepted_for_b10) ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 12 tests in 59.690s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "stage16a_regression",
+      "status": "PASS",
+      "exit_code": 0,
+      "tests": 209,
+      "seconds": 270.236,
+      "tail": [
+        ".................................................................................................................................................................................................................",
+        "----------------------------------------------------------------------",
+        "Ran 209 tests in 269.633s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "step": "stage16a_vertical_slice_stress",
+      "status": "PASS",
+      "exit_code": 0,
+      "report": {
+        "status": "PASS",
+        "checks": 20,
+        "passed": 20,
+        "failed": 0
+      },
+      "seconds": 41.575,
+      "tail": [
+        "{\"status\": \"PASS\", \"checks\": 20, \"passed\": 20, \"failed\": 0}"
+      ]
+    },
+    {
+      "step": "stage15_validation",
+      "status": "PASS",
+      "exit_code": 0,
+      "report": {
+        "status": "PASS",
+        "checks": 24,
+        "passed": 24,
+        "failed": 0
+      },
+      "seconds": 40.708,
+      "tail": [
+        "{\"status\": \"PASS\", \"checks\": 24, \"passed\": 24, \"failed\": 0}"
+      ]
+    },
+    {
+      "step": "stage15_stress",
+      "status": "PASS",
+      "exit_code": 0,
+      "report": {
+        "status": "PASS",
+        "checks": 23,
+        "passed": 23,
+        "failed": 0,
+        "resume_seconds": 4.673
+      },
+      "seconds": 43.204,
+      "tail": [
+        "{\"status\": \"PASS\", \"checks\": 23, \"passed\": 23, \"failed\": 0, \"resume_seconds\": 4.673}"
+      ]
+    }
+  ],
+  "seconds": 752.947
+}

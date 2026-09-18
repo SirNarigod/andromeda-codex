@@ -1,0 +1,1138 @@
+{
+  "record_id": "STELLAR-WEAPON-MODEL-SHEET-DEV-V1.0",
+  "title": "Model Sheets de Arma — Dimensões Físicas das 96 Armas Catalogadas",
+  "authority": "GAMEPLAY_DERIVED_DEV_SOURCE",
+  "r2_guard": "Dimensão determinística por família de arma (14 famílias) ou por palavra-chave de nome (30 canônicas) - mesma disciplina já usada em STELLAR_COMBAT_PHYSICS_SYSTEM_DEV_V1_0.json. Nenhum efeito de runa isolado ou stat de combate é redefinido, só a dimensão física para referência visual/3D.",
+  "scale_reference_note": "Escala de referência: humano adulto médio = 1.75m (mesma unidade métrica de STELLAR_MEASUREMENT_SCALE_SYSTEM_DEV_V1_0.json).",
+  "family_defaults": {
+    "WPN-FUZ": {
+      "length_cm": 100,
+      "weight_class": "MÉDIO",
+      "form": "arma longa de cano único"
+    },
+    "WPN-REV": {
+      "length_cm": 28,
+      "weight_class": "LEVE",
+      "form": "arma curta de tambor"
+    },
+    "WPN-ESP": {
+      "length_cm": 95,
+      "weight_class": "MÉDIO",
+      "form": "arma longa de cano largo"
+    },
+    "WPN-PRE": {
+      "length_cm": 115,
+      "weight_class": "MÉDIO",
+      "form": "arma longa com ótica"
+    },
+    "WPN-ARR": {
+      "length_cm": 20,
+      "weight_class": "LEVE",
+      "form": "item de arremesso de mão"
+    },
+    "WPN-EXP": {
+      "length_cm": 15,
+      "weight_class": "LEVE",
+      "form": "dispositivo esférico/cilíndrico de mão"
+    },
+    "WPN-CNT": {
+      "length_cm": 40,
+      "weight_class": "MÉDIO",
+      "form": "dispositivo de lançamento de rede/campo"
+    },
+    "WPN-FLA": {
+      "length_cm": 12,
+      "weight_class": "LEVE",
+      "form": "dispositivo cilíndrico de mão"
+    },
+    "WPN-LAM": {
+      "length_cm": 75,
+      "weight_class": "MÉDIO",
+      "form": "lâmina longa de corpo-a-corpo"
+    },
+    "WPN-IMP": {
+      "length_cm": 60,
+      "weight_class": "MÉDIO",
+      "form": "ferramenta adaptada de corpo-a-corpo"
+    },
+    "WPN-TEC": {
+      "length_cm": 65,
+      "weight_class": "MÉDIO",
+      "form": "extensão mecânica de chassi"
+    },
+    "WPN-MAG": {
+      "length_cm": 90,
+      "weight_class": "LEVE",
+      "form": "foco/cajado rúnico"
+    },
+    "WPN-RAD": {
+      "length_cm": 70,
+      "weight_class": "MÉDIO",
+      "form": "extensão radicular de corpo-a-corpo"
+    },
+    "WPN-PRO": {
+      "length_cm": 18,
+      "weight_class": "LEVE",
+      "form": "projétil de esporo de mão"
+    }
+  },
+  "count": 96,
+  "weapons": [
+    {
+      "weapon_id": "WPN-FUZ-003",
+      "name": "Fuzil Convencional",
+      "length_cm": 100,
+      "weight_class": "MÉDIO",
+      "form_factor": "arma longa de cano único",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-FUZ-004",
+      "name": "Fuzil de Vínculo Sincronizado",
+      "length_cm": 100,
+      "weight_class": "MÉDIO",
+      "form_factor": "arma longa de cano único",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-REV-003",
+      "name": "Revólver de Marcação Simples",
+      "length_cm": 28,
+      "weight_class": "LEVE",
+      "form_factor": "arma curta de tambor",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-REV-004",
+      "name": "Revólver Selado de Vínculo",
+      "length_cm": 28,
+      "weight_class": "LEVE",
+      "form_factor": "arma curta de tambor",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-ESP-003",
+      "name": "Espingarda de Caça Convencional",
+      "length_cm": 95,
+      "weight_class": "MÉDIO",
+      "form_factor": "arma longa de cano largo",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-ESP-004",
+      "name": "Espingarda Rúnica de Concentração Dupla",
+      "length_cm": 95,
+      "weight_class": "MÉDIO",
+      "form_factor": "arma longa de cano largo",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-PRE-003",
+      "name": "Fuzil de Longa Distância Convencional",
+      "length_cm": 115,
+      "weight_class": "MÉDIO",
+      "form_factor": "arma longa com ótica",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-PRE-004",
+      "name": "Fuzil de Precisão com Ótica Rúnica Avançada",
+      "length_cm": 115,
+      "weight_class": "MÉDIO",
+      "form_factor": "arma longa com ótica",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-LAM-003",
+      "name": "Lâmina Comum de Ferreiro",
+      "length_cm": 75,
+      "weight_class": "MÉDIO",
+      "form_factor": "lâmina longa de corpo-a-corpo",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-LAM-004",
+      "name": "Lâmina de Vínculo Perpétuo",
+      "length_cm": 75,
+      "weight_class": "MÉDIO",
+      "form_factor": "lâmina longa de corpo-a-corpo",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-ARR-003",
+      "name": "Lança de Retorno Simples",
+      "length_cm": 20,
+      "weight_class": "LEVE",
+      "form_factor": "item de arremesso de mão",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-ARR-004",
+      "name": "Disco de Vínculo Adaptativo",
+      "length_cm": 20,
+      "weight_class": "LEVE",
+      "form_factor": "item de arremesso de mão",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-EXP-003",
+      "name": "Carga Convencional de Mineração",
+      "length_cm": 15,
+      "weight_class": "LEVE",
+      "form_factor": "dispositivo esférico/cilíndrico de mão",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-EXP-004",
+      "name": "Carga de Vínculo Rúnico Total",
+      "length_cm": 15,
+      "weight_class": "LEVE",
+      "form_factor": "dispositivo esférico/cilíndrico de mão",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-CNT-003",
+      "name": "Rede Mecânica Comum",
+      "length_cm": 40,
+      "weight_class": "MÉDIO",
+      "form_factor": "dispositivo de lançamento de rede/campo",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-CNT-004",
+      "name": "Prisão Rúnica de Vínculo Total",
+      "length_cm": 40,
+      "weight_class": "MÉDIO",
+      "form_factor": "dispositivo de lançamento de rede/campo",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-FLA-003",
+      "name": "Dispositivo de Clarão Aprimorado",
+      "length_cm": 12,
+      "weight_class": "LEVE",
+      "form_factor": "dispositivo cilíndrico de mão",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-FLA-004",
+      "name": "Prisma de Vínculo Sensorial Total",
+      "length_cm": 12,
+      "weight_class": "LEVE",
+      "form_factor": "dispositivo cilíndrico de mão",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-IMP-003",
+      "name": "Ferramenta Adaptada com Matriz Reaproveitada",
+      "length_cm": 60,
+      "weight_class": "MÉDIO",
+      "form_factor": "ferramenta adaptada de corpo-a-corpo",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-IMP-004",
+      "name": "Peça de Máquina com Vínculo Instável",
+      "length_cm": 60,
+      "weight_class": "MÉDIO",
+      "form_factor": "ferramenta adaptada de corpo-a-corpo",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-RAD-001",
+      "name": "Garra Enraizada Bruta",
+      "length_cm": 70,
+      "weight_class": "MÉDIO",
+      "form_factor": "extensão radicular de corpo-a-corpo",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-RAD-002",
+      "name": "Chicote de Raiz Fresca",
+      "length_cm": 70,
+      "weight_class": "MÉDIO",
+      "form_factor": "extensão radicular de corpo-a-corpo",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-RAD-003",
+      "name": "Lamina de Espinho Corrompido",
+      "length_cm": 70,
+      "weight_class": "MÉDIO",
+      "form_factor": "extensão radicular de corpo-a-corpo",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-RAD-004",
+      "name": "Maca de No Radicular",
+      "length_cm": 70,
+      "weight_class": "MÉDIO",
+      "form_factor": "extensão radicular de corpo-a-corpo",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-RAD-005",
+      "name": "Lanca de Raiz Cristalizada",
+      "length_cm": 70,
+      "weight_class": "MÉDIO",
+      "form_factor": "extensão radicular de corpo-a-corpo",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-RAD-006",
+      "name": "Foice de Casca Negra",
+      "length_cm": 70,
+      "weight_class": "MÉDIO",
+      "form_factor": "extensão radicular de corpo-a-corpo",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-RAD-007",
+      "name": "Espada de Nucleo Vivo",
+      "length_cm": 70,
+      "weight_class": "MÉDIO",
+      "form_factor": "extensão radicular de corpo-a-corpo",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-RAD-008",
+      "name": "Punhos de Sangue de Raiz",
+      "length_cm": 70,
+      "weight_class": "MÉDIO",
+      "form_factor": "extensão radicular de corpo-a-corpo",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-PRO-001",
+      "name": "Lancador de Esporos Simples",
+      "length_cm": 18,
+      "weight_class": "LEVE",
+      "form_factor": "projétil de esporo de mão",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-PRO-002",
+      "name": "Funda de Sementes Endurecidas",
+      "length_cm": 18,
+      "weight_class": "LEVE",
+      "form_factor": "projétil de esporo de mão",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-PRO-003",
+      "name": "Cajado Cuspidor de Seiva",
+      "length_cm": 18,
+      "weight_class": "LEVE",
+      "form_factor": "projétil de esporo de mão",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-PRO-004",
+      "name": "Arco de Fibra Radicular",
+      "length_cm": 18,
+      "weight_class": "LEVE",
+      "form_factor": "projétil de esporo de mão",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-PRO-005",
+      "name": "Canhao de Esporos Concentrados",
+      "length_cm": 18,
+      "weight_class": "LEVE",
+      "form_factor": "projétil de esporo de mão",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-PRO-006",
+      "name": "Lancador de Espinhos Cristalizados",
+      "length_cm": 18,
+      "weight_class": "LEVE",
+      "form_factor": "projétil de esporo de mão",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-PRO-007",
+      "name": "Nucleo Disparador de Sangue de Raiz",
+      "length_cm": 18,
+      "weight_class": "LEVE",
+      "form_factor": "projétil de esporo de mão",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-PRO-008",
+      "name": "Chicote-Canhao de Cinza Viva",
+      "length_cm": 18,
+      "weight_class": "LEVE",
+      "form_factor": "projétil de esporo de mão",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-FUZ-001",
+      "name": "Fuzil de Patrulha",
+      "length_cm": 100,
+      "weight_class": "MÉDIO",
+      "form_factor": "arma longa de cano único",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-FUZ-002",
+      "name": "Fuzil Rúnico de Vanguarda",
+      "length_cm": 100,
+      "weight_class": "MÉDIO",
+      "form_factor": "arma longa de cano único",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-REV-001",
+      "name": "Revólver de Fronteira",
+      "length_cm": 28,
+      "weight_class": "LEVE",
+      "form_factor": "arma curta de tambor",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-REV-002",
+      "name": "Revólver Selado de Marcação",
+      "length_cm": 28,
+      "weight_class": "LEVE",
+      "form_factor": "arma curta de tambor",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-ESP-001",
+      "name": "Espingarda de Guarda",
+      "length_cm": 95,
+      "weight_class": "MÉDIO",
+      "form_factor": "arma longa de cano largo",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-ESP-002",
+      "name": "Espingarda Rúnica de Ruptura",
+      "length_cm": 95,
+      "weight_class": "MÉDIO",
+      "form_factor": "arma longa de cano largo",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-PRE-001",
+      "name": "Fuzil de Observação",
+      "length_cm": 115,
+      "weight_class": "MÉDIO",
+      "form_factor": "arma longa com ótica",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-PRE-002",
+      "name": "Fuzil de Precisão Convergente",
+      "length_cm": 115,
+      "weight_class": "MÉDIO",
+      "form_factor": "arma longa com ótica",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-MAG-009",
+      "name": "Talismã de Fluxo Instável",
+      "length_cm": 90,
+      "weight_class": "LEVE",
+      "form_factor": "foco/cajado rúnico",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-MAG-010",
+      "name": "Bastão de Ecoação",
+      "length_cm": 90,
+      "weight_class": "LEVE",
+      "form_factor": "foco/cajado rúnico",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-MAG-011",
+      "name": "Círculo Rúnico de Convergência Dupla",
+      "length_cm": 90,
+      "weight_class": "LEVE",
+      "form_factor": "foco/cajado rúnico",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-MAG-012",
+      "name": "Cetro da Última Maré Planetária",
+      "length_cm": 90,
+      "weight_class": "LEVE",
+      "form_factor": "foco/cajado rúnico",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-MAG-013",
+      "name": "Pingente de Corrente Latente",
+      "length_cm": 90,
+      "weight_class": "LEVE",
+      "form_factor": "foco/cajado rúnico",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-MAG-014",
+      "name": "Manopla de Gesto Ritual",
+      "length_cm": 90,
+      "weight_class": "LEVE",
+      "form_factor": "foco/cajado rúnico",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-MAG-015",
+      "name": "Véu Rúnico de Interrupção Arcana",
+      "length_cm": 90,
+      "weight_class": "LEVE",
+      "form_factor": "foco/cajado rúnico",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-MAG-016",
+      "name": "Trono Portátil de Convergência",
+      "length_cm": 90,
+      "weight_class": "LEVE",
+      "form_factor": "foco/cajado rúnico",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-LAM-001",
+      "name": "Facão de Oficina",
+      "length_cm": 75,
+      "weight_class": "MÉDIO",
+      "form_factor": "lâmina longa de corpo-a-corpo",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-LAM-002",
+      "name": "Lâmina Rúnica Vibrante",
+      "length_cm": 75,
+      "weight_class": "MÉDIO",
+      "form_factor": "lâmina longa de corpo-a-corpo",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-ARR-001",
+      "name": "Faca de Arremesso Simples",
+      "length_cm": 20,
+      "weight_class": "LEVE",
+      "form_factor": "item de arremesso de mão",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-ARR-002",
+      "name": "Disco Rúnico de Trajetória",
+      "length_cm": 20,
+      "weight_class": "LEVE",
+      "form_factor": "item de arremesso de mão",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-EXP-001",
+      "name": "Carga de Demolição",
+      "length_cm": 15,
+      "weight_class": "LEVE",
+      "form_factor": "dispositivo esférico/cilíndrico de mão",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-EXP-002",
+      "name": "Granada Rúnica de Onda Dirigida",
+      "length_cm": 15,
+      "weight_class": "LEVE",
+      "form_factor": "dispositivo esférico/cilíndrico de mão",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-CNT-001",
+      "name": "Rede de Ancoragem",
+      "length_cm": 40,
+      "weight_class": "MÉDIO",
+      "form_factor": "dispositivo de lançamento de rede/campo",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-CNT-002",
+      "name": "Campo Rúnico de Barreira",
+      "length_cm": 40,
+      "weight_class": "MÉDIO",
+      "form_factor": "dispositivo de lançamento de rede/campo",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-FLA-001",
+      "name": "Dispositivo de Clarão Simples",
+      "length_cm": 12,
+      "weight_class": "LEVE",
+      "form_factor": "dispositivo cilíndrico de mão",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-FLA-002",
+      "name": "Prisma Rúnico de Interrupção",
+      "length_cm": 12,
+      "weight_class": "LEVE",
+      "form_factor": "dispositivo cilíndrico de mão",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-IMP-001",
+      "name": "Gancho de Ferragem",
+      "length_cm": 60,
+      "weight_class": "MÉDIO",
+      "form_factor": "ferramenta adaptada de corpo-a-corpo",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-IMP-002",
+      "name": "Barra Reforçada com Runa Emprestada",
+      "length_cm": 60,
+      "weight_class": "MÉDIO",
+      "form_factor": "ferramenta adaptada de corpo-a-corpo",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-LAM-005",
+      "name": "Punhal Comum de Viajante",
+      "length_cm": 75,
+      "weight_class": "MÉDIO",
+      "form_factor": "lâmina longa de corpo-a-corpo",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-LAM-006",
+      "name": "Machado de Reforço Simples",
+      "length_cm": 75,
+      "weight_class": "MÉDIO",
+      "form_factor": "lâmina longa de corpo-a-corpo",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-LAM-007",
+      "name": "Espada Rúnica de Retorno",
+      "length_cm": 75,
+      "weight_class": "MÉDIO",
+      "form_factor": "lâmina longa de corpo-a-corpo",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-LAM-008",
+      "name": "Lança-Lâmina de Vínculo Total",
+      "length_cm": 75,
+      "weight_class": "MÉDIO",
+      "form_factor": "lâmina longa de corpo-a-corpo",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-IMP-005",
+      "name": "Corrente de Ferragem",
+      "length_cm": 60,
+      "weight_class": "MÉDIO",
+      "form_factor": "ferramenta adaptada de corpo-a-corpo",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-IMP-006",
+      "name": "Cano Reforçado com Runa Emprestada",
+      "length_cm": 60,
+      "weight_class": "MÉDIO",
+      "form_factor": "ferramenta adaptada de corpo-a-corpo",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-IMP-007",
+      "name": "Machadinha com Matriz Dupla Reaproveitada",
+      "length_cm": 60,
+      "weight_class": "MÉDIO",
+      "form_factor": "ferramenta adaptada de corpo-a-corpo",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-IMP-008",
+      "name": "Ferramenta de Vínculo Triplo Instável",
+      "length_cm": 60,
+      "weight_class": "MÉDIO",
+      "form_factor": "ferramenta adaptada de corpo-a-corpo",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-TEC-005",
+      "name": "Garra Retrátil Padrão",
+      "length_cm": 65,
+      "weight_class": "MÉDIO",
+      "form_factor": "extensão mecânica de chassi",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-TEC-006",
+      "name": "Disruptor de Curto Alcance",
+      "length_cm": 65,
+      "weight_class": "MÉDIO",
+      "form_factor": "extensão mecânica de chassi",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-TEC-007",
+      "name": "Canhão de Trilho Portátil",
+      "length_cm": 65,
+      "weight_class": "MÉDIO",
+      "form_factor": "extensão mecânica de chassi",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-TEC-008",
+      "name": "Enxame de Nanolâminas",
+      "length_cm": 65,
+      "weight_class": "MÉDIO",
+      "form_factor": "extensão mecânica de chassi",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-MAG-005",
+      "name": "Amuleto de Corrente Bruta",
+      "length_cm": 90,
+      "weight_class": "LEVE",
+      "form_factor": "foco/cajado rúnico",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-MAG-006",
+      "name": "Anel de Vínculo Simples",
+      "length_cm": 90,
+      "weight_class": "LEVE",
+      "form_factor": "foco/cajado rúnico",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-MAG-007",
+      "name": "Espelho Rúnico de Duplo Foco",
+      "length_cm": 90,
+      "weight_class": "LEVE",
+      "form_factor": "foco/cajado rúnico",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-MAG-008",
+      "name": "Coroa de Convergência Planetária",
+      "length_cm": 90,
+      "weight_class": "LEVE",
+      "form_factor": "foco/cajado rúnico",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-TEC-001",
+      "name": "Lâmina de Servo Básica",
+      "length_cm": 65,
+      "weight_class": "MÉDIO",
+      "form_factor": "extensão mecânica de chassi",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-TEC-002",
+      "name": "Emissor de Pulso Sináptico",
+      "length_cm": 65,
+      "weight_class": "MÉDIO",
+      "form_factor": "extensão mecânica de chassi",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-TEC-003",
+      "name": "Rifle de Convergência Cinética",
+      "length_cm": 65,
+      "weight_class": "MÉDIO",
+      "form_factor": "extensão mecânica de chassi",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-TEC-004",
+      "name": "Núcleo de Sobrecarga Modular",
+      "length_cm": 65,
+      "weight_class": "MÉDIO",
+      "form_factor": "extensão mecânica de chassi",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-MAG-001",
+      "name": "Foco de Corrente Planetária",
+      "length_cm": 90,
+      "weight_class": "LEVE",
+      "form_factor": "foco/cajado rúnico",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-MAG-002",
+      "name": "Cajado de Fórmula Falada",
+      "length_cm": 90,
+      "weight_class": "LEVE",
+      "form_factor": "foco/cajado rúnico",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-MAG-003",
+      "name": "Grimório de Vínculo Ritual",
+      "length_cm": 90,
+      "weight_class": "LEVE",
+      "form_factor": "foco/cajado rúnico",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-MAG-004",
+      "name": "Relicário de Estase Convergente",
+      "length_cm": 90,
+      "weight_class": "LEVE",
+      "form_factor": "foco/cajado rúnico",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-TEC-009",
+      "name": "Escudo Reativo Compacto",
+      "length_cm": 65,
+      "weight_class": "MÉDIO",
+      "form_factor": "extensão mecânica de chassi",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-TEC-010",
+      "name": "Lançador de Fragmentos Sintéticos",
+      "length_cm": 65,
+      "weight_class": "MÉDIO",
+      "form_factor": "extensão mecânica de chassi",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-TEC-011",
+      "name": "Torreta Portátil de Convergência",
+      "length_cm": 65,
+      "weight_class": "MÉDIO",
+      "form_factor": "extensão mecânica de chassi",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-TEC-012",
+      "name": "Exoesqueleto de Assalto",
+      "length_cm": 65,
+      "weight_class": "MÉDIO",
+      "form_factor": "extensão mecânica de chassi",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-TEC-013",
+      "name": "Faca Vibracional Padrão",
+      "length_cm": 65,
+      "weight_class": "MÉDIO",
+      "form_factor": "extensão mecânica de chassi",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-TEC-014",
+      "name": "Escudo de Choque Sináptico",
+      "length_cm": 65,
+      "weight_class": "MÉDIO",
+      "form_factor": "extensão mecânica de chassi",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-TEC-015",
+      "name": "Lâmina de Plasma Contida",
+      "length_cm": 65,
+      "weight_class": "MÉDIO",
+      "form_factor": "extensão mecânica de chassi",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    },
+    {
+      "weapon_id": "WPN-TEC-016",
+      "name": "Núcleo Gêmeo de Sobrecarga",
+      "length_cm": 65,
+      "weight_class": "MÉDIO",
+      "form_factor": "extensão mecânica de chassi",
+      "views_required": [
+        "PERFIL",
+        "3/4"
+      ]
+    }
+  ]
+}

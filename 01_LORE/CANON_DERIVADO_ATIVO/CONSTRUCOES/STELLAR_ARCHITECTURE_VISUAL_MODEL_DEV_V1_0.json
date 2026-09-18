@@ -1,0 +1,1278 @@
+{
+  "record_id": "STELLAR-ARCHITECTURE-VISUAL-MODEL-DEV-V1.0",
+  "title": "Modelo Visual das 68 Construções — Footprint, Altura e Material Exatos",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "r2_guard": "Footprint (largura x profundidade) é derivado da área real já calibrada (STELLAR_CONSTRUCTION_AREA_INDEX_DEV_V1_0.json) usando uma proporção fixa e determinística por building_type (7 regras, uma por tipo) - não redefine a área, só a formata em dimensões retangulares. Altura e material reaproveitam dados já existentes (environmental_material_profile) ou uma regra fixa nova por tipo (altura), documentada abaixo.",
+  "scale_reference_note": "Escala de referência: humano adulto médio = 1.75m (mesma unidade métrica de STELLAR_MEASUREMENT_SCALE_SYSTEM_DEV_V1_0.json).",
+  "visual_rules_by_type": {
+    "ACAMPAMENTO": {
+      "aspect_ratio": 1.6,
+      "height_m": 3,
+      "floors": 1,
+      "roof_note": "lona/telhado inclinado leve"
+    },
+    "RESIDENCIAL": {
+      "aspect_ratio": 1.2,
+      "height_m": 5,
+      "floors": 1,
+      "roof_note": "telhado inclinado simples"
+    },
+    "COMERCIAL": {
+      "aspect_ratio": 1.4,
+      "height_m": 6,
+      "floors": 1,
+      "roof_note": "telhado amplo, fachada aberta"
+    },
+    "LOJA": {
+      "aspect_ratio": 1.0,
+      "height_m": 4,
+      "floors": 1,
+      "roof_note": "fachada estreita, vitrine frontal"
+    },
+    "INSTITUCIONAL": {
+      "aspect_ratio": 1.1,
+      "height_m": 9,
+      "floors": 2,
+      "roof_note": "fachada monumental, telhado em duas águas"
+    },
+    "MILITAR": {
+      "aspect_ratio": 1.3,
+      "height_m": 6,
+      "floors": 1,
+      "roof_note": "telhado reforçado, poucas aberturas"
+    },
+    "INDUSTRIAL": {
+      "aspect_ratio": 1.5,
+      "height_m": 10,
+      "floors": 1,
+      "roof_note": "telhado alto tipo galpão, chaminés/dutos visíveis"
+    }
+  },
+  "count": 68,
+  "constructions": [
+    {
+      "est_id": "EST-001",
+      "name": "Mercado Central de Lúminor",
+      "building_type": "COMERCIAL",
+      "footprint_width_m": 19.88,
+      "footprint_depth_m": 14.2,
+      "footprint_area_m2_check": 282.3,
+      "height_m": 6,
+      "floors": 1,
+      "roof_note": "telhado amplo, fachada aberta",
+      "material": "MADEIRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-002",
+      "name": "Entreposto da Doca",
+      "building_type": "COMERCIAL",
+      "footprint_width_m": 16.53,
+      "footprint_depth_m": 11.81,
+      "footprint_area_m2_check": 195.2,
+      "height_m": 6,
+      "floors": 1,
+      "roof_note": "telhado amplo, fachada aberta",
+      "material": "MADEIRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-003",
+      "name": "Forja Real de Kharveth (edifício)",
+      "building_type": "INDUSTRIAL",
+      "footprint_width_m": 46.8,
+      "footprint_depth_m": 31.2,
+      "footprint_area_m2_check": 1460.2,
+      "height_m": 10,
+      "floors": 1,
+      "roof_note": "telhado alto tipo galpão, chaminés/dutos visíveis",
+      "material": "METAL_E_MADEIRA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-004",
+      "name": "Oficina de Charneira (edifício)",
+      "building_type": "INDUSTRIAL",
+      "footprint_width_m": 28.45,
+      "footprint_depth_m": 18.97,
+      "footprint_area_m2_check": 539.7,
+      "height_m": 10,
+      "floors": 1,
+      "roof_note": "telhado alto tipo galpão, chaminés/dutos visíveis",
+      "material": "METAL_E_MADEIRA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-005",
+      "name": "Casario de Varga",
+      "building_type": "RESIDENCIAL",
+      "footprint_width_m": 11.87,
+      "footprint_depth_m": 9.89,
+      "footprint_area_m2_check": 117.4,
+      "height_m": 5,
+      "floors": 1,
+      "roof_note": "telhado inclinado simples",
+      "material": "MADEIRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-006",
+      "name": "Casario da Vila dos Pescadores",
+      "building_type": "RESIDENCIAL",
+      "footprint_width_m": 9.36,
+      "footprint_depth_m": 7.8,
+      "footprint_area_m2_check": 73.0,
+      "height_m": 5,
+      "floors": 1,
+      "roof_note": "telhado inclinado simples",
+      "material": "MADEIRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-007",
+      "name": "Acampamento de Caravana",
+      "building_type": "ACAMPAMENTO",
+      "footprint_width_m": 9.46,
+      "footprint_depth_m": 5.91,
+      "footprint_area_m2_check": 55.9,
+      "height_m": 3,
+      "floors": 1,
+      "roof_note": "lona/telhado inclinado leve",
+      "material": "TECIDO_MADEIRA_LEVE",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-008",
+      "name": "Acampamento dos Trilhos",
+      "building_type": "ACAMPAMENTO",
+      "footprint_width_m": 8.42,
+      "footprint_depth_m": 5.26,
+      "footprint_area_m2_check": 44.3,
+      "height_m": 3,
+      "floors": 1,
+      "roof_note": "lona/telhado inclinado leve",
+      "material": "TECIDO_MADEIRA_LEVE",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-009",
+      "name": "Guarnição de Contenção",
+      "building_type": "MILITAR",
+      "footprint_width_m": 17.56,
+      "footprint_depth_m": 13.51,
+      "footprint_area_m2_check": 237.2,
+      "height_m": 6,
+      "floors": 1,
+      "roof_note": "telhado reforçado, poucas aberturas",
+      "material": "PEDRA_REFORCADA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-010",
+      "name": "Guarda da Fortaleza",
+      "building_type": "MILITAR",
+      "footprint_width_m": 20.12,
+      "footprint_depth_m": 15.48,
+      "footprint_area_m2_check": 311.5,
+      "height_m": 6,
+      "floors": 1,
+      "roof_note": "telhado reforçado, poucas aberturas",
+      "material": "PEDRA_REFORCADA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-011",
+      "name": "Armeria Rúnica da Forja Real",
+      "building_type": "LOJA",
+      "footprint_width_m": 8.91,
+      "footprint_depth_m": 8.91,
+      "footprint_area_m2_check": 79.4,
+      "height_m": 4,
+      "floors": 1,
+      "roof_note": "fachada estreita, vitrine frontal",
+      "material": "MADEIRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-012",
+      "name": "Botica do Jardim Central",
+      "building_type": "LOJA",
+      "footprint_width_m": 9.89,
+      "footprint_depth_m": 9.89,
+      "footprint_area_m2_check": 97.8,
+      "height_m": 4,
+      "floors": 1,
+      "roof_note": "fachada estreita, vitrine frontal",
+      "material": "MADEIRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-013",
+      "name": "Câmara Mercantil",
+      "building_type": "INSTITUCIONAL",
+      "footprint_width_m": 31.39,
+      "footprint_depth_m": 28.54,
+      "footprint_area_m2_check": 895.9,
+      "height_m": 9,
+      "floors": 2,
+      "roof_note": "fachada monumental, telhado em duas águas",
+      "material": "PEDRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-014",
+      "name": "Bilheteria e Armazém da Estação",
+      "building_type": "COMERCIAL",
+      "footprint_width_m": 19.66,
+      "footprint_depth_m": 14.04,
+      "footprint_area_m2_check": 276.0,
+      "height_m": 6,
+      "floors": 1,
+      "roof_note": "telhado amplo, fachada aberta",
+      "material": "MADEIRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-015",
+      "name": "Galpão de Manutenção Ferroviária",
+      "building_type": "INDUSTRIAL",
+      "footprint_width_m": 47.47,
+      "footprint_depth_m": 31.65,
+      "footprint_area_m2_check": 1502.4,
+      "height_m": 10,
+      "floors": 1,
+      "roof_note": "telhado alto tipo galpão, chaminés/dutos visíveis",
+      "material": "METAL_E_MADEIRA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-016",
+      "name": "Plenário da Assembleia",
+      "building_type": "INSTITUCIONAL",
+      "footprint_width_m": 25.49,
+      "footprint_depth_m": 23.17,
+      "footprint_area_m2_check": 590.6,
+      "height_m": 9,
+      "floors": 2,
+      "roof_note": "fachada monumental, telhado em duas águas",
+      "material": "PEDRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-017",
+      "name": "Armazém do Cais",
+      "building_type": "COMERCIAL",
+      "footprint_width_m": 16.91,
+      "footprint_depth_m": 12.08,
+      "footprint_area_m2_check": 204.3,
+      "height_m": 6,
+      "floors": 1,
+      "roof_note": "telhado amplo, fachada aberta",
+      "material": "MADEIRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-018",
+      "name": "Câmara do Conselho das Ondas",
+      "building_type": "INSTITUCIONAL",
+      "footprint_width_m": 31.34,
+      "footprint_depth_m": 28.49,
+      "footprint_area_m2_check": 892.9,
+      "height_m": 9,
+      "floors": 2,
+      "roof_note": "fachada monumental, telhado em duas águas",
+      "material": "PEDRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-019",
+      "name": "Oficina de Fusão Tecnomágica",
+      "building_type": "INDUSTRIAL",
+      "footprint_width_m": 59.8,
+      "footprint_depth_m": 39.87,
+      "footprint_area_m2_check": 2384.2,
+      "height_m": 10,
+      "floors": 1,
+      "roof_note": "telhado alto tipo galpão, chaminés/dutos visíveis",
+      "material": "METAL_E_MADEIRA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-020",
+      "name": "Ala de Pesquisa Central",
+      "building_type": "INSTITUCIONAL",
+      "footprint_width_m": 34.38,
+      "footprint_depth_m": 31.25,
+      "footprint_area_m2_check": 1074.4,
+      "height_m": 9,
+      "floors": 2,
+      "roof_note": "fachada monumental, telhado em duas águas",
+      "material": "PEDRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-021",
+      "name": "Corte Principesca",
+      "building_type": "INSTITUCIONAL",
+      "footprint_width_m": 22.5,
+      "footprint_depth_m": 20.45,
+      "footprint_area_m2_check": 460.1,
+      "height_m": 9,
+      "floors": 2,
+      "roof_note": "fachada monumental, telhado em duas águas",
+      "material": "PEDRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-022",
+      "name": "Residência Real Suspensa",
+      "building_type": "RESIDENCIAL",
+      "footprint_width_m": 9.92,
+      "footprint_depth_m": 8.27,
+      "footprint_area_m2_check": 82.0,
+      "height_m": 5,
+      "floors": 1,
+      "roof_note": "telhado inclinado simples",
+      "material": "MADEIRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-023",
+      "name": "Terminal de Carga Aérea",
+      "building_type": "COMERCIAL",
+      "footprint_width_m": 13.89,
+      "footprint_depth_m": 9.92,
+      "footprint_area_m2_check": 137.8,
+      "height_m": 6,
+      "floors": 1,
+      "roof_note": "telhado amplo, fachada aberta",
+      "material": "MADEIRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-024",
+      "name": "Câmara Eletiva (edifício)",
+      "building_type": "INSTITUCIONAL",
+      "footprint_width_m": 34.33,
+      "footprint_depth_m": 31.21,
+      "footprint_area_m2_check": 1071.4,
+      "height_m": 9,
+      "floors": 2,
+      "roof_note": "fachada monumental, telhado em duas águas",
+      "material": "PEDRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-025",
+      "name": "Enfermaria Principal",
+      "building_type": "INSTITUCIONAL",
+      "footprint_width_m": 30.45,
+      "footprint_depth_m": 27.68,
+      "footprint_area_m2_check": 842.9,
+      "height_m": 9,
+      "floors": 2,
+      "roof_note": "fachada monumental, telhado em duas águas",
+      "material": "PEDRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-026",
+      "name": "Sede do Conselho de Saúde",
+      "building_type": "INSTITUCIONAL",
+      "footprint_width_m": 30.22,
+      "footprint_depth_m": 27.47,
+      "footprint_area_m2_check": 830.1,
+      "height_m": 9,
+      "floors": 2,
+      "roof_note": "fachada monumental, telhado em duas águas",
+      "material": "PEDRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-027",
+      "name": "Moradas das Copas",
+      "building_type": "RESIDENCIAL",
+      "footprint_width_m": 11.68,
+      "footprint_depth_m": 9.73,
+      "footprint_area_m2_check": 113.6,
+      "height_m": 5,
+      "floors": 1,
+      "roof_note": "telhado inclinado simples",
+      "material": "MADEIRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-028",
+      "name": "Templo Sagrado das Raízes",
+      "building_type": "INSTITUCIONAL",
+      "footprint_width_m": 34.62,
+      "footprint_depth_m": 31.47,
+      "footprint_area_m2_check": 1089.5,
+      "height_m": 9,
+      "floors": 2,
+      "roof_note": "fachada monumental, telhado em duas águas",
+      "material": "PEDRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-029",
+      "name": "Círculo de Conselho dos Anciãos",
+      "building_type": "INSTITUCIONAL",
+      "footprint_width_m": 25.03,
+      "footprint_depth_m": 22.75,
+      "footprint_area_m2_check": 569.4,
+      "height_m": 9,
+      "floors": 2,
+      "roof_note": "fachada monumental, telhado em duas águas",
+      "material": "PEDRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-030",
+      "name": "Moradas de Cristal",
+      "building_type": "RESIDENCIAL",
+      "footprint_width_m": 9.79,
+      "footprint_depth_m": 8.16,
+      "footprint_area_m2_check": 79.9,
+      "height_m": 5,
+      "floors": 1,
+      "roof_note": "telhado inclinado simples",
+      "material": "MADEIRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-031",
+      "name": "Galeria de Extração",
+      "building_type": "INDUSTRIAL",
+      "footprint_width_m": 54.28,
+      "footprint_depth_m": 36.19,
+      "footprint_area_m2_check": 1964.4,
+      "height_m": 10,
+      "floors": 1,
+      "roof_note": "telhado alto tipo galpão, chaminés/dutos visíveis",
+      "material": "METAL_E_MADEIRA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-032",
+      "name": "Plenário Subcristal",
+      "building_type": "INSTITUCIONAL",
+      "footprint_width_m": 32.18,
+      "footprint_depth_m": 29.25,
+      "footprint_area_m2_check": 941.3,
+      "height_m": 9,
+      "floors": 2,
+      "roof_note": "fachada monumental, telhado em duas águas",
+      "material": "PEDRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-033",
+      "name": "Câmara do Conselho Enohariano",
+      "building_type": "INSTITUCIONAL",
+      "footprint_width_m": 25.78,
+      "footprint_depth_m": 23.44,
+      "footprint_area_m2_check": 604.3,
+      "height_m": 9,
+      "floors": 2,
+      "roof_note": "fachada monumental, telhado em duas águas",
+      "material": "PEDRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-034",
+      "name": "Academia de Formação Mágica",
+      "building_type": "INSTITUCIONAL",
+      "footprint_width_m": 29.54,
+      "footprint_depth_m": 26.85,
+      "footprint_area_m2_check": 793.1,
+      "height_m": 9,
+      "floors": 2,
+      "roof_note": "fachada monumental, telhado em duas águas",
+      "material": "PEDRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-035",
+      "name": "Estação de Captação da Corrente",
+      "building_type": "INDUSTRIAL",
+      "footprint_width_m": 41.76,
+      "footprint_depth_m": 27.84,
+      "footprint_area_m2_check": 1162.6,
+      "height_m": 10,
+      "floors": 1,
+      "roof_note": "telhado alto tipo galpão, chaminés/dutos visíveis",
+      "material": "METAL_E_MADEIRA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-036",
+      "name": "Entreposto do Entroncamento",
+      "building_type": "COMERCIAL",
+      "footprint_width_m": 12.95,
+      "footprint_depth_m": 9.25,
+      "footprint_area_m2_check": 119.8,
+      "height_m": 6,
+      "floors": 1,
+      "roof_note": "telhado amplo, fachada aberta",
+      "material": "MADEIRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-037",
+      "name": "Curral e Estábulo",
+      "building_type": "INDUSTRIAL",
+      "footprint_width_m": 51.68,
+      "footprint_depth_m": 34.45,
+      "footprint_area_m2_check": 1780.4,
+      "height_m": 10,
+      "floors": 1,
+      "roof_note": "telhado alto tipo galpão, chaminés/dutos visíveis",
+      "material": "METAL_E_MADEIRA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-038",
+      "name": "Acampamento do Vau",
+      "building_type": "ACAMPAMENTO",
+      "footprint_width_m": 7.76,
+      "footprint_depth_m": 4.85,
+      "footprint_area_m2_check": 37.6,
+      "height_m": 3,
+      "floors": 1,
+      "roof_note": "lona/telhado inclinado leve",
+      "material": "TECIDO_MADEIRA_LEVE",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-039",
+      "name": "Guarnição do Abrigo",
+      "building_type": "MILITAR",
+      "footprint_width_m": 26.64,
+      "footprint_depth_m": 20.49,
+      "footprint_area_m2_check": 545.9,
+      "height_m": 6,
+      "floors": 1,
+      "roof_note": "telhado reforçado, poucas aberturas",
+      "material": "PEDRA_REFORCADA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-040",
+      "name": "Posto Avançado do Perímetro",
+      "building_type": "MILITAR",
+      "footprint_width_m": 29.41,
+      "footprint_depth_m": 22.62,
+      "footprint_area_m2_check": 665.3,
+      "height_m": 6,
+      "floors": 1,
+      "roof_note": "telhado reforçado, poucas aberturas",
+      "material": "PEDRA_REFORCADA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-041",
+      "name": "Tendas de Acolhimento",
+      "building_type": "ACAMPAMENTO",
+      "footprint_width_m": 9.89,
+      "footprint_depth_m": 6.18,
+      "footprint_area_m2_check": 61.1,
+      "height_m": 3,
+      "floors": 1,
+      "roof_note": "lona/telhado inclinado leve",
+      "material": "TECIDO_MADEIRA_LEVE",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-042",
+      "name": "Salão de Audiências de Serverus",
+      "building_type": "INSTITUCIONAL",
+      "footprint_width_m": 36.07,
+      "footprint_depth_m": 32.79,
+      "footprint_area_m2_check": 1182.7,
+      "height_m": 9,
+      "floors": 2,
+      "roof_note": "fachada monumental, telhado em duas águas",
+      "material": "PEDRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-043",
+      "name": "Posto da Passagem Oculta",
+      "building_type": "MILITAR",
+      "footprint_width_m": 28.25,
+      "footprint_depth_m": 21.73,
+      "footprint_area_m2_check": 613.9,
+      "height_m": 6,
+      "floors": 1,
+      "roof_note": "telhado reforçado, poucas aberturas",
+      "material": "PEDRA_REFORCADA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-044",
+      "name": "Ateliê de Encantamento da Vertente",
+      "building_type": "INDUSTRIAL",
+      "footprint_width_m": 42.38,
+      "footprint_depth_m": 28.25,
+      "footprint_area_m2_check": 1197.2,
+      "height_m": 10,
+      "floors": 1,
+      "roof_note": "telhado alto tipo galpão, chaminés/dutos visíveis",
+      "material": "METAL_E_MADEIRA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-045",
+      "name": "Posto de Vigia da Estação Oriental",
+      "building_type": "MILITAR",
+      "footprint_width_m": 22.61,
+      "footprint_depth_m": 17.39,
+      "footprint_area_m2_check": 393.2,
+      "height_m": 6,
+      "floors": 1,
+      "roof_note": "telhado reforçado, poucas aberturas",
+      "material": "PEDRA_REFORCADA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-046",
+      "name": "Oficina de Carruagens de Lúminor",
+      "building_type": "INDUSTRIAL",
+      "footprint_width_m": 31.93,
+      "footprint_depth_m": 21.29,
+      "footprint_area_m2_check": 679.8,
+      "height_m": 10,
+      "floors": 1,
+      "roof_note": "telhado alto tipo galpão, chaminés/dutos visíveis",
+      "material": "METAL_E_MADEIRA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-047",
+      "name": "Estaleiro de Navyr",
+      "building_type": "INDUSTRIAL",
+      "footprint_width_m": 45.66,
+      "footprint_depth_m": 30.44,
+      "footprint_area_m2_check": 1389.9,
+      "height_m": 10,
+      "floors": 1,
+      "roof_note": "telhado alto tipo galpão, chaminés/dutos visíveis",
+      "material": "METAL_E_MADEIRA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-048",
+      "name": "Hangar de Naves de Altavela",
+      "building_type": "INDUSTRIAL",
+      "footprint_width_m": 64.05,
+      "footprint_depth_m": 42.7,
+      "footprint_area_m2_check": 2734.9,
+      "height_m": 10,
+      "floors": 1,
+      "roof_note": "telhado alto tipo galpão, chaminés/dutos visíveis",
+      "material": "METAL_E_MADEIRA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-049",
+      "name": "Fundição da Caldeira",
+      "building_type": "INDUSTRIAL",
+      "footprint_width_m": 45.21,
+      "footprint_depth_m": 30.14,
+      "footprint_area_m2_check": 1362.6,
+      "height_m": 10,
+      "floors": 1,
+      "roof_note": "telhado alto tipo galpão, chaminés/dutos visíveis",
+      "material": "METAL_E_MADEIRA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-050",
+      "name": "Casario da Cratera",
+      "building_type": "RESIDENCIAL",
+      "footprint_width_m": 10.96,
+      "footprint_depth_m": 9.13,
+      "footprint_area_m2_check": 100.1,
+      "height_m": 5,
+      "floors": 1,
+      "roof_note": "telhado inclinado simples",
+      "material": "MADEIRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-051",
+      "name": "Mercado dos Terraços",
+      "building_type": "COMERCIAL",
+      "footprint_width_m": 19.29,
+      "footprint_depth_m": 13.78,
+      "footprint_area_m2_check": 265.8,
+      "height_m": 6,
+      "floors": 1,
+      "roof_note": "telhado amplo, fachada aberta",
+      "material": "MADEIRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-052",
+      "name": "Acampamento das Dunas",
+      "building_type": "ACAMPAMENTO",
+      "footprint_width_m": 7.71,
+      "footprint_depth_m": 4.82,
+      "footprint_area_m2_check": 37.2,
+      "height_m": 3,
+      "floors": 1,
+      "roof_note": "lona/telhado inclinado leve",
+      "material": "TECIDO_MADEIRA_LEVE",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-053",
+      "name": "Sitio Arqueologico das Ruinas",
+      "building_type": "INSTITUCIONAL",
+      "footprint_width_m": 25.16,
+      "footprint_depth_m": 22.87,
+      "footprint_area_m2_check": 575.4,
+      "height_m": 9,
+      "floors": 2,
+      "roof_note": "fachada monumental, telhado em duas águas",
+      "material": "PEDRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-054",
+      "name": "Poco Fundo",
+      "building_type": "RESIDENCIAL",
+      "footprint_width_m": 13.34,
+      "footprint_depth_m": 11.12,
+      "footprint_area_m2_check": 148.3,
+      "height_m": 5,
+      "floors": 1,
+      "roof_note": "telhado inclinado simples",
+      "material": "MADEIRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-055",
+      "name": "Posto da Geleira",
+      "building_type": "INDUSTRIAL",
+      "footprint_width_m": 30.38,
+      "footprint_depth_m": 20.25,
+      "footprint_area_m2_check": 615.2,
+      "height_m": 10,
+      "floors": 1,
+      "roof_note": "telhado alto tipo galpão, chaminés/dutos visíveis",
+      "material": "METAL_E_MADEIRA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-056",
+      "name": "Abrigo Central",
+      "building_type": "RESIDENCIAL",
+      "footprint_width_m": 11.48,
+      "footprint_depth_m": 9.57,
+      "footprint_area_m2_check": 109.9,
+      "height_m": 5,
+      "floors": 1,
+      "roof_note": "telhado inclinado simples",
+      "material": "MADEIRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-057",
+      "name": "Vigia da Fenda",
+      "building_type": "MILITAR",
+      "footprint_width_m": 29.2,
+      "footprint_depth_m": 22.46,
+      "footprint_area_m2_check": 655.8,
+      "height_m": 6,
+      "floors": 1,
+      "roof_note": "telhado reforçado, poucas aberturas",
+      "material": "PEDRA_REFORCADA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-058",
+      "name": "Doca Eterea",
+      "building_type": "COMERCIAL",
+      "footprint_width_m": 15.02,
+      "footprint_depth_m": 10.73,
+      "footprint_area_m2_check": 161.2,
+      "height_m": 6,
+      "floors": 1,
+      "roof_note": "telhado amplo, fachada aberta",
+      "material": "MADEIRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-059",
+      "name": "Posto das Correntes",
+      "building_type": "INDUSTRIAL",
+      "footprint_width_m": 51.12,
+      "footprint_depth_m": 34.08,
+      "footprint_area_m2_check": 1742.2,
+      "height_m": 10,
+      "floors": 1,
+      "roof_note": "telhado alto tipo galpão, chaminés/dutos visíveis",
+      "material": "METAL_E_MADEIRA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-060",
+      "name": "Refugio Errante",
+      "building_type": "ACAMPAMENTO",
+      "footprint_width_m": 9.3,
+      "footprint_depth_m": 5.81,
+      "footprint_area_m2_check": 54.0,
+      "height_m": 3,
+      "floors": 1,
+      "roof_note": "lona/telhado inclinado leve",
+      "material": "TECIDO_MADEIRA_LEVE",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-061",
+      "name": "Cupula da Trincheira",
+      "building_type": "INDUSTRIAL",
+      "footprint_width_m": 61.61,
+      "footprint_depth_m": 41.07,
+      "footprint_area_m2_check": 2530.3,
+      "height_m": 10,
+      "floors": 1,
+      "roof_note": "telhado alto tipo galpão, chaminés/dutos visíveis",
+      "material": "METAL_E_MADEIRA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-062",
+      "name": "Vila dos Recifes",
+      "building_type": "RESIDENCIAL",
+      "footprint_width_m": 12.46,
+      "footprint_depth_m": 10.38,
+      "footprint_area_m2_check": 129.3,
+      "height_m": 5,
+      "floors": 1,
+      "roof_note": "telhado inclinado simples",
+      "material": "MADEIRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-063",
+      "name": "Estacao de Pressao",
+      "building_type": "INSTITUCIONAL",
+      "footprint_width_m": 18.6,
+      "footprint_depth_m": 16.91,
+      "footprint_area_m2_check": 314.5,
+      "height_m": 9,
+      "floors": 2,
+      "roof_note": "fachada monumental, telhado em duas águas",
+      "material": "PEDRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-064",
+      "name": "Posto do Dossel",
+      "building_type": "COMERCIAL",
+      "footprint_width_m": 19.61,
+      "footprint_depth_m": 14.01,
+      "footprint_area_m2_check": 274.7,
+      "height_m": 6,
+      "floors": 1,
+      "roof_note": "telhado amplo, fachada aberta",
+      "material": "MADEIRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-065",
+      "name": "Sitio das Ruinas Cobertas",
+      "building_type": "INSTITUCIONAL",
+      "footprint_width_m": 30.07,
+      "footprint_depth_m": 27.34,
+      "footprint_area_m2_check": 822.1,
+      "height_m": 9,
+      "floors": 2,
+      "roof_note": "fachada monumental, telhado em duas águas",
+      "material": "PEDRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-066",
+      "name": "Vigia do Pantano",
+      "building_type": "MILITAR",
+      "footprint_width_m": 24.91,
+      "footprint_depth_m": 19.16,
+      "footprint_area_m2_check": 477.3,
+      "height_m": 6,
+      "floors": 1,
+      "roof_note": "telhado reforçado, poucas aberturas",
+      "material": "PEDRA_REFORCADA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-067",
+      "name": "Entreposto do Trovao",
+      "building_type": "COMERCIAL",
+      "footprint_width_m": 15.82,
+      "footprint_depth_m": 11.3,
+      "footprint_area_m2_check": 178.8,
+      "height_m": 6,
+      "floors": 1,
+      "roof_note": "telhado amplo, fachada aberta",
+      "material": "MADEIRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    },
+    {
+      "est_id": "EST-068",
+      "name": "Entreposto de Ithra",
+      "building_type": "COMERCIAL",
+      "footprint_width_m": 15.76,
+      "footprint_depth_m": 11.26,
+      "footprint_area_m2_check": 177.5,
+      "height_m": 6,
+      "floors": 1,
+      "roof_note": "telhado amplo, fachada aberta",
+      "material": "MADEIRA_E_ALVENARIA",
+      "views_required": [
+        "FRENTE",
+        "PERFIL",
+        "COSTAS",
+        "3/4"
+      ]
+    }
+  ]
+}

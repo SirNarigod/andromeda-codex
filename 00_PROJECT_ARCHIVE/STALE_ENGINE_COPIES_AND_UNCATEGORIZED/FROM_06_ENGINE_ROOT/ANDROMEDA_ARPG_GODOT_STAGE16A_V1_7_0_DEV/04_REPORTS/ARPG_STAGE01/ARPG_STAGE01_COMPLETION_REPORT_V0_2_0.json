@@ -1,0 +1,40 @@
+{
+  "record_id": "ARPG-STAGE01-COMPLETION-REPORT-V0.2.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "stage": "01/18",
+  "stage_name": "GAME CORE",
+  "version": "V0.2.0",
+  "result": "ARPG_GAME_CORE_STAGE01_FUNCTIONAL",
+  "status": "PASS",
+  "implemented": [
+    "created and canonical player profiles",
+    "runtime-derived PLAYER_AVATAR separate from canonical source",
+    "emergent class contract with no fixed class at creation",
+    "mouse pointer click-to-move intent",
+    "target selection and context action routing",
+    "server-authoritative command stream",
+    "ownership validation",
+    "client command sequencing and idempotent replay",
+    "per-controller active profile model",
+    "pause/resume",
+    "persistent command/input/profile state",
+    "process restoration",
+    "country reconciliation performance correction"
+  ],
+  "deferred_by_design": {
+    "attributes_xp_levels": "STAGE02",
+    "full_combat": "STAGE03",
+    "resources_potions_cooldowns": "STAGE04",
+    "itemization": "STAGE05",
+    "loot": "STAGE06",
+    "skills_builds": "STAGE07",
+    "rendered_godot_vertical_slice": "STAGE15",
+    "art": "AFTER_STAGE17_PASS"
+  },
+  "canon_mutations": 0,
+  "master_baseline": "V2.0.1 READ_ONLY",
+  "living_baseline": "V1.0.0 SEALED",
+  "open_blockers": 0,
+  "backup_authorized": true,
+  "next_stage": "02_CHARACTER_ATTRIBUTES_XP_LEVELS"
+}

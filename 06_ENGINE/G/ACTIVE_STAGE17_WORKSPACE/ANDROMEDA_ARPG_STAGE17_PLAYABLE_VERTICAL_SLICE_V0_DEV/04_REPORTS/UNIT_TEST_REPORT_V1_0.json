@@ -1,0 +1,12 @@
+{
+  "record_id": "LIVING-SIM-ETAPA-08-UNIT-TEST-REPORT-V1.0",
+  "tests_run": 427,
+  "passed": 427,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "elapsed_seconds": 29.876,
+  "failure_details": [],
+  "error_details": [],
+  "status": "PASS"
+}

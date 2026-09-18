@@ -1,0 +1,14 @@
+{
+  "record_id": "STELLAR-MAGIC-TECHNOLOGY-LAW-V1.0",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.0",
+  "status": "AUTHORIAL_GAMEPLAY_OVERLAY",
+  "authority": {"scope": "MAGIC_AND_TECHNOLOGY", "magic": "LIVING_TERRITORIAL_FORCE", "technology": "MATERIAL_SYSTEM_SUBJECT_TO_WORLD_LIMITS"},
+  "dependencies": ["STELLAR_COSMOLOGY_CANON_V1_0.json", "STELLAR_CAUSALITY_LAW_V1_0.json", "../../05_CRIACAO_PROCEDURAL/ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/09_CODEX_EXPANSION/V1_2_0_DEV/CODEX_COUNTRY_SCALE_CANON_RULES_V1_2.json"],
+  "invariants": ["MAGIC_IS_NEVER_COSTLESS", "MAGIC_REQUIRES_CONTEXT_OR_ANCHOR", "MAGICAL_USE_LEAVES_RESIDUE_OR_REACTION", "TECHNOLOGY_CANNOT_NULLIFY_LIVING_LIMITS", "NO_FIXED_PLAYER_CLASS_IS_CREATED"],
+  "prohibitions": ["NO_UNLIMITED_MAGIC_SOURCE", "NO_SPELL_BECOMES_CANONICALLY_AUTO_CASTABLE", "NO_TECHNOLOGICAL_EXCEPTION_TO_ECOLOGICAL_CONSEQUENCE", "NO_NEW_MAGIC_ORIGIN_WITHOUT_PROMOTION"],
+  "simulation_effects": ["Magic actions may alter local residue, attention, scarcity or ecological pressure.", "Technology may measure, redirect or contain a response but cannot erase its causal record.", "Existing skill and item contracts retain control of mechanical activation."],
+  "allowed_states": ["BALANCED", "ANCHORED", "RESIDUAL", "OVERDRAWN", "CONTAINED", "RECOVERING"],
+  "story_generators": ["Uma oficina tecnológica resolve uma crise de magia, mas transfere o resíduo para uma rota vital.", "Um poder antigo só funciona onde uma comunidade decidiu preservar um ecossistema específico.", "Uma arma eficiente deixa uma cicatriz que revela um fragmento da verdade perdida."],
+  "compatibility": {"skills": "ARPG_STAGE06_SKILL_CONTRACT_REMAINS_MECHANICAL_AUTHORITY", "itemization": "ARPG_STAGE05_ITEMIZATION_CONTRACT_REMAINS_MECHANICAL_AUTHORITY"}
+}

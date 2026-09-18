@@ -1,0 +1,78 @@
+{
+  "record_id": "BUG-CORRECTION-LEDGER-V1.2",
+  "status": "PASS",
+  "known_open_bugs": 0,
+  "items": [
+    {
+      "id": "BUG-12-001",
+      "issue": "Procedural generation could create zero Root Deep blocks",
+      "fix": "mandatory feature guarantee chooses highest-magic eligible block",
+      "tests": [
+        "200 seeds",
+        "root predator-only invariant"
+      ],
+      "status": "FIXED"
+    },
+    {
+      "id": "BUG-12-002",
+      "issue": "Country inventory omitted nested shop/NPC/industry/bridge item totals",
+      "fix": "hierarchical reconciled aggregation through subregion→block→state→country",
+      "tests": [
+        "inventory reconciliation",
+        "local action propagation"
+      ],
+      "status": "FIXED"
+    },
+    {
+      "id": "BUG-12-003",
+      "issue": "Region/subregion hierarchy absent",
+      "fix": "1-3 subregions per region-block with exact inventory projection",
+      "tests": [
+        "subregion total equality",
+        "coordinate containment"
+      ],
+      "status": "FIXED"
+    },
+    {
+      "id": "BUG-12-004",
+      "issue": "Flora/fauna pools too generic for climate",
+      "fix": "biome-conditioned adaptation pools and abundance policy",
+      "tests": [
+        "200 seeds",
+        "adaptation validator"
+      ],
+      "status": "FIXED"
+    },
+    {
+      "id": "BUG-12-005",
+      "issue": "Remote interaction possible without actor location constraints",
+      "fix": "explicit NPC/shop location + relocation + locality preconditions",
+      "tests": [
+        "remote purchase rejected",
+        "local harvest/hunt/purchase pass"
+      ],
+      "status": "FIXED"
+    },
+    {
+      "id": "BUG-12-006",
+      "issue": "Magic realms and legendary creatures absent from country inventory",
+      "fix": "state-conditioned magic realm generation with mage classes and legendary creature stats",
+      "tests": [
+        "realm coverage over 200 seeds",
+        "deep audit"
+      ],
+      "status": "FIXED"
+    },
+    {
+      "id": "BUG-12-007",
+      "issue": "MAR lacked unified RPG gameplay stat scale",
+      "fix": "canonical authorized normalized 0-100 gameplay stat layer for all 30 weapons",
+      "tests": [
+        "30/30 stats range",
+        "tier coverage",
+        "no strict dominant weapon"
+      ],
+      "status": "FIXED"
+    }
+  ]
+}

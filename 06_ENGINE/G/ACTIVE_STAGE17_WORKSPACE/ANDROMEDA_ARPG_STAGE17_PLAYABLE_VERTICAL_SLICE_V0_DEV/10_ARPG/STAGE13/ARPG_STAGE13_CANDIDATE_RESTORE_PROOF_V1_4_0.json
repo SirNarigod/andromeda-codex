@@ -1,0 +1,20 @@
+{
+  "record_id": "ARPG-STAGE13-CANDIDATE-RESTORE-PROOF-V1.4.0",
+  "source": "ANDROMEDA_ARPG_ECONOMY_STAGE13_V1_4_0_CANDIDATE.zip",
+  "pre_test_integrity": {
+    "manifest": "616/616 PASS",
+    "ledger": "617/617 PASS"
+  },
+  "tests": {
+    "functional": "21/21 PASS",
+    "persistence": "1/1 PASS",
+    "validation": "35/35 PASS",
+    "stress": "35/35 PASS"
+  },
+  "post_test_integrity": {
+    "manifest": "616/616 PASS",
+    "ledger": "617/617 PASS",
+    "transients": 0
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,48 @@
+{
+  "record_id": "ARPG-GAME-CORE-CONTRACT-V0.2.0",
+  "project": "ANDRÔMEDA CÓDEX",
+  "stage": "01/18",
+  "version": "V0.2.0",
+  "authority": "GAMEPLAY_DERIVED",
+  "canon_policy": "MASTER_V2.0.1_READ_ONLY",
+  "living_policy": "LIVING_SIM_ENGINE_V1.0.0_BASELINE_PRESERVED",
+  "control": {
+    "primary": "MOUSE_POINTER_DIABLO_LIKE",
+    "client_role": "SUBMIT_INTENT_AND_RENDER",
+    "server_role": "VALIDATE_SEQUENCE_OWNERSHIP_STATE_AND_EXECUTE",
+    "click_semantics": ["GROUND_CLICK_MOVE", "TARGET_CLICK_SELECT_AND_CONTEXT_ACTION"]
+  },
+  "player_model": {
+    "profiles": ["CREATED", "CANONICAL"],
+    "canonical_profile_rule": "canonical_ref must resolve to narrativa/personagens and name cannot be overridden",
+    "created_profile_rule": "player-defined runtime identity; no canonical_ref",
+    "avatar": "runtime-derived PLAYER_AVATAR; not promoted to canon",
+    "max_profiles_per_world": 12
+  },
+  "class_model": {
+    "type": "EMERGENT_FROM_PLAYER_CHOICES",
+    "fixed_class_at_creation": false,
+    "stage01_behavior": "emergent_class remains null until progression evidence exists"
+  },
+  "network_readiness": {
+    "mode": "SINGLE_PLAYER_FIRST_MULTIPLAYER_READY",
+    "server_authoritative": true,
+    "client_sequence_required": true,
+    "idempotent_replay": true,
+    "ownership_scope_required": true,
+    "multiplayer_transport": "NOT_IMPLEMENTED_STAGE01"
+  },
+  "persistent_state": ["player_profiles", "active_profile", "selected_target", "pointer_move_intent", "client_sequence", "command_stream"],
+  "deferred_systems": {
+    "attributes_xp_levels": "STAGE02",
+    "full_combat": "STAGE03",
+    "resources_potions_cooldowns": "STAGE04",
+    "itemization": "STAGE05",
+    "loot": "STAGE06",
+    "skills_builds": "STAGE07",
+    "dialogue_quests": "STAGE11",
+    "rendered_godot_vertical_slice": "STAGE15",
+    "art": "LOCKED_UNTIL_STAGE17_PASS"
+  },
+  "status": "ACTIVE_DEV_CONTRACT"
+}

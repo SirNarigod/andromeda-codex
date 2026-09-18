@@ -1,0 +1,15 @@
+{
+  "record_id": "STELLAR-LORE-PROPOSAL-GUARD-V1.0",
+  "project": "ANDROMEDA CODEX",
+  "version": "V1.0",
+  "status": "VALIDATION_INTERFACE",
+  "authority": {"scope": "PROPOSAL_SCREENING", "llm": "UNTRUSTED_CANDIDATE_ONLY", "final_authority": "AUTHORIAL_PROMOTION"},
+  "dependencies": ["STELLAR_CANON_CONSTITUTION_V1_0.json", "STELLAR_OPEN_QUESTIONS_REGISTER_V1_0.json", "../ANDROMEDA_ARPG_GODOT_STAGE16A_V1_7_0_DEV/02_CONTRACTS/CONTROLLED_GENERATIVE_AI_LLM_GATEWAY_CANON_GUARD_CONTRACT_V1_0.json"],
+  "invariants": ["PROPOSALS_MUST_DECLARE_SCOPE", "PROPOSALS_MUST_CITE_EVIDENCE", "PROPOSALS_MUST_DECLARE_NARRATIVE_YIELD", "CONFLICTS_FAIL_CLOSED"],
+  "prohibitions": ["NO_OFFICIAL_RELIGION_PROPOSAL", "NO_OFFICIAL_LANGUAGE_PROPOSAL", "NO_KENUA_BINDING_PROPOSAL", "NO_PLANETARY_CLAIM_WITHOUT_PROMOTION", "NO_CANON_MUTATION_BY_LLM"],
+  "proposal_schema": {"required": ["proposal_id", "claim", "scope", "change_type", "evidence_refs", "story_generators"], "scope_values": ["LOCAL", "REGIONAL", "PLANETARY"], "change_type_values": ["ADDITION", "INTERPRETATION", "PROMOTION"], "planetary_extra_required": ["authorial_approval"]},
+  "rejection_codes": ["MISSING_REQUIRED_FIELD", "NO_STORY_YIELD", "PROTECTED_TOPIC", "UNSOURCED_CANON_CLAIM", "PLANETARY_PROMOTION_MISSING_APPROVAL", "BASELINE_MUTATION_ATTEMPT", "CONFLICT_UNRESOLVED"],
+  "simulation_effects": ["A rejected proposal produces a report only; it changes no runtime or canon state."],
+  "allowed_states": ["ACCEPTED_FOR_REVIEW", "REJECTED", "PROMOTION_PENDING"],
+  "story_generators": ["Uma proposta rejeitada contém uma pista que outra pessoa usa de forma legítima.", "A recusa de uma promoção transforma-se em disputa institucional.", "Um autor de rumor explora deliberadamente a diferença entre interpretação e fato." ]
+}

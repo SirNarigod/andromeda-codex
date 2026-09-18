@@ -1,0 +1,40 @@
+{
+  "build": "V0.1.18 DEV",
+  "baseline": "V0.1.17 DEV — runtime PASS informado pelo autor",
+  "status": "STATIC_PASS_RUNTIME_PENDING",
+  "checks": 21,
+  "passed": 21,
+  "failed": 0,
+  "details": {
+    "project_v0_1_18": true,
+    "hud_v0_1_18": true,
+    "global_cooldown_2s": true,
+    "retreat_time_0_32": true,
+    "settle_time_0_18": true,
+    "retreat_timer_state": true,
+    "danger_distance_api": true,
+    "danger_uses_min_range": true,
+    "ready_checks_close_before_retreat": true,
+    "long_range_does_not_force_retreat": true,
+    "retreat_timer_stops_path": true,
+    "retreat_clears_path_after_timer": true,
+    "aiming_state": true,
+    "no_shot_while_retreating": true,
+    "projectile_impact_damage_preserved": true,
+    "aggro_damage_preserved": true,
+    "enemy_tiers_preserved": true,
+    "inventory_selection_preserved": true,
+    "left_transition_preserved": true,
+    "right_click_preserved": true,
+    "gate_v0_1_18": true
+  },
+  "ranged_behavior": {
+    "far_enemy": "STOP_AND_FIRE_NO_RETREAT",
+    "close_enemy": "SHORT_RETREAT_SETTLE_AIM_FIRE",
+    "danger_threshold": "weapon.min_range_m",
+    "retreat_time_s": 0.32,
+    "settle_time_s": 0.18,
+    "global_attack_cooldown_s": 2.0
+  },
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1"
+}

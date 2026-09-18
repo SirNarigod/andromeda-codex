@@ -1,0 +1,203 @@
+{
+  "record_identity": "S17_C3R5_PLAYER_AUTHORITY_POSITION_RECOVERY_ACCEPTANCE_V0_1_0_DEV",
+  "created_at_utc": "2026-08-29T15:58:58.7670295Z",
+  "stage": "STAGE17_ETAPA_31",
+  "scope": "S17_C3R5_CONTROLLED_PLAYER_AUTHORITY_POSITION_RECOVERY",
+  "recovery_execution_status": "PASS",
+  "acceptance_status": "FAIL_VALIDATION_GATE_C2_BLOCKED_SETUP",
+  "apply_execution_count": 1,
+  "apply_authorization_consumed": true,
+  "apply_repeated": false,
+  "player_authority_position_recovered": true,
+  "movement_owner_consistent": true,
+  "stage17_current_world_resumable": true,
+  "guards": {
+    "tool_path": "STAGE17_TOOLS/recovery/repair_stage17_player_position.py",
+    "tool_sha256": "a33b0b7a50794ab58fa382becb52ffcc6eef52f0a718b09096bc44e09b039854",
+    "tool_sha_matches_expected": true,
+    "manifest_path": "STAGE17_CONTENT/RESOURCE_PLACEMENT/CANONICAL/S17_RESOURCE_METRIC_PLACEMENTS_R0001.json",
+    "manifest_file_sha256": "88ab7eaff058120692c1412cc28f0c5f8b6a5accd8eebcb0ebaa55b4a85f71ad",
+    "canonical_manifest_sha256": "f0c79305c4fe6adad277b4a026311124c5ce865db399e327750e55c2d660ec92",
+    "canonical_manifest_sha_matches_expected": true,
+    "world_match": true,
+    "world_instance_id": "rt:world:bd0f78f5-7018-4cc6-8f47-34f8f2875e47",
+    "backend_off_before_apply": true,
+    "listener_8000_before_apply": "NONE",
+    "wal_before_apply": false,
+    "shm_before_apply": false
+  },
+  "identity": {
+    "profile_ref": "rt:player_profile:50db4148-ac36-403c-9d96-d2ccf6f90ea6",
+    "avatar_ref": "PLY-455FEDE6124F42819BDA63A8E82355F4",
+    "resolution": "bootstrap.profile_ref -> profile.avatar_ref -> movement.state",
+    "anchor_player_provenance": "MATCH"
+  },
+  "anchor": {
+    "source": "canonical_manifest.world_binding.anchor_position",
+    "kind": "SERVER_AUTHORITATIVE_PLAYER_MOTION_SNAPSHOT_DEV_AUTHORING_ANCHOR",
+    "position": {
+      "iso_x_m": 137108.156775035,
+      "iso_y_m": -1336956.95467694,
+      "altitude_m": 0.0
+    },
+    "expected_chunk": "CHK--000208--000255"
+  },
+  "fresh_backup": {
+    "path": "STAGE17_RUNTIME_STATE/_archive_pre_s17_c3r5_player_recovery_20260829T154552Z_authority/stage17_world.sqlite",
+    "sha256": "481d0eea38071ce3bdd93c580c93e6b44582fa216c1a99ae55812f3c747764e1",
+    "size": 15077376,
+    "byte_identical_to_post_r4b_live_db": true,
+    "world_validated": true,
+    "migration_marker": "COMPLETE",
+    "gathering_nodes": 312,
+    "allowed_mutable_capacity_drift": 0,
+    "structural_drift": 0,
+    "unsupported_drift": 0,
+    "placements": 2,
+    "movement_verify": "PASS_BY_BYTE_IDENTITY_WITH_ACCEPTED_R4B_FINAL_DB",
+    "wal_copied": false,
+    "shm_copied": false
+  },
+  "dry_run": {
+    "exit_code": 0,
+    "status": "DRY_RUN_VALIDATED_MANIFEST_AND_WORLD_GUARD_ONLY",
+    "mutation_applied": false,
+    "db_sha_before": "481d0eea38071ce3bdd93c580c93e6b44582fa216c1a99ae55812f3c747764e1",
+    "db_sha_after": "481d0eea38071ce3bdd93c580c93e6b44582fa216c1a99ae55812f3c747764e1"
+  },
+  "apply": {
+    "exit_code": 0,
+    "final_status": "RECOVERY_APPLIED",
+    "mutation_applied": true,
+    "before_position": {
+      "iso_x_m": 102897.27635042791,
+      "iso_y_m": 857054.6075093196,
+      "altitude_m": 430.0
+    },
+    "before_distance_from_anchor_m": 2194278.2684396296,
+    "before_chunk": "CHK-+000165-+000130",
+    "verify_before": {
+      "status": "PASS",
+      "states": 826,
+      "failures": []
+    },
+    "sync_to_geodetic": "PASS",
+    "transfer_needed": true,
+    "transfer_scope": "RESOLVED_AVATAR_ONLY",
+    "transfer_result": "PASS_INFERRED_FROM_FINAL_OWNERSHIP_AND_VERIFY",
+    "verify_after": {
+      "status": "PASS",
+      "states": 826,
+      "failures": []
+    },
+    "after_position": {
+      "iso_x_m": 137108.15677503493,
+      "iso_y_m": -1336956.95467694,
+      "altitude_m": 0.0
+    },
+    "after_error_from_anchor_m": 5.820766091346741e-11,
+    "after_chunk": "CHK--000208--000255",
+    "post_apply_db_sha256": "0c1c23070a3ffb0b95c85314f4d17a8771c253de093a3207e890292a4ba12264"
+  },
+  "restart_persistence": {
+    "launcher_pid": 9288,
+    "startup_ms": 7243.023,
+    "health": "PASS",
+    "stage16a_health": "PASS",
+    "health_failures": [],
+    "session_bind": "PASS",
+    "snapshot": "PASS",
+    "server_authoritative": true,
+    "persisted_position": {
+      "iso_x_m": 137108.15677503493,
+      "iso_y_m": -1336956.95467694,
+      "altitude_m": 0.0
+    },
+    "controlled_shutdown": "PASS",
+    "listener_8000_after_shutdown": "NONE"
+  },
+  "gathering_integrity": {
+    "stage16a_health": "PASS",
+    "migration_marker": "COMPLETE",
+    "migration_dry_run_status": "ALREADY_APPLIED",
+    "nodes": 312,
+    "allowed_mutable_capacity_drift": 0,
+    "structural_drift": 0,
+    "unsupported_drift": 0,
+    "country_scale_state_self_consistent": true,
+    "main_db_unchanged_by_dry_run": true
+  },
+  "resource_placements": {
+    "count": 2,
+    "tree": {
+      "placement_ref": "RESOURCE-PLACEMENT-S17-DCC60BB7E7C256C1BF9E",
+      "logical_node_ref": "GTH-CA3D9A47934BD64A24B4"
+    },
+    "ore": {
+      "placement_ref": "RESOURCE-PLACEMENT-S17-3BDA3343A505268017CE",
+      "logical_node_ref": "GTH-34AC1BC54C33917F0553"
+    },
+    "canonical_manifest_hash": "f0c79305c4fe6adad277b4a026311124c5ce865db399e327750e55c2d660ec92"
+  },
+  "smokes": {
+    "s17_b1": {"checks": 36, "passed": 36, "failed": 0, "status": "PASS", "exit_code": 0},
+    "s17_b2": {"checks": 73, "passed": 73, "failed": 0, "status": "PASS", "exit_code": 0},
+    "s17_c1": {"checks": 64, "passed": 64, "failed": 0, "status": "PASS", "exit_code": 0},
+    "s17_c2": {
+      "checks": 91,
+      "passed": 86,
+      "failed": 5,
+      "status": "FAIL",
+      "exit_code": 1,
+      "tree_normal_path": "PASS",
+      "ore_normal_path": "PASS",
+      "failure_scope": "NEGATIVE_BLOCKER_SETUP_DESTINATION_REJECTED_BY_LOCAL_NAVIGATION",
+      "source_change_required_for_retest": true
+    },
+    "combat": {"status": "NOT_RUN", "reason": "S17_G19_COMMON_TARGET_UNBOUNDED_SELECTION_GAP"},
+    "c0": {"status": "NOT_RUN", "reason": "ENEMY_APPROACH_ATTACK_RISK_WHILE_COMMON_TARGET_GAP_OPEN"},
+    "g19": {"status": "NOT_RUN", "reason": "S17_G19_COMMON_TARGET_UNBOUNDED_SELECTION_GAP_CONFIRMED_NOT_FIXED"},
+    "ground_loot": {"status": "NOT_RUN", "historical": "51/53", "limitation": "GROUND_LOOT_REACHABLE_AUTO_SETTLE_LIMITATION_OPEN"}
+  },
+  "debugger": {
+    "clean_runs_errors": 0,
+    "clean_runs_warnings": 0,
+    "c2_gate_assertion_failures": 5,
+    "c2_parser_or_runtime_errors": 0
+  },
+  "final_runtime_state": {
+    "position_after_allowed_smokes": {
+      "iso_x_m": 137112.656875171,
+      "iso_y_m": -1336966.95467695,
+      "altitude_m": 0.0
+    },
+    "distance_from_anchor_after_allowed_smokes_m": 10.965897201308588,
+    "chunk": "CHK--000208--000255",
+    "backend": "OFF",
+    "listener_8000": "NONE",
+    "godot_headless_runners": "NONE",
+    "sqlite_wal_preserved": true,
+    "sqlite_shm_preserved": true
+  },
+  "historical_limbo_event": {
+    "status": "RECORDED",
+    "authoritative_impact": "UNPROVEN",
+    "large_displacement_attribution": "NOT_ASSIGNED_TO_LIMBO_EVENT",
+    "direct_far_target_pursuit_evidence_exists": true
+  },
+  "source_diff": {
+    "stage17_source_files_modified_during_c3r5": 0,
+    "stage16b_source_modified": false
+  },
+  "stage16b_integrity": {
+    "status": "CLOSED_READ_ONLY",
+    "checkpoint_sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc",
+    "backup_sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc"
+  },
+  "open_gaps": [
+    "S17_C3R5_C2_BLOCKED_SETUP_NAV_DESTINATION_GAP",
+    "S17_G19_COMMON_TARGET_UNBOUNDED_SELECTION_GAP",
+    "GROUND_LOOT_REACHABLE_AUTO_SETTLE_LIMITATION"
+  ],
+  "next_recommended_block": "SOURCE_AUTHORIZED_C2_BLOCKED_SETUP_DESTINATION_FIX_AND_C3R5_VALIDATION_RERUN_WITHOUT_RECOVERY_APPLY"
+}

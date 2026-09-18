@@ -1,0 +1,32 @@
+{
+  "checkpoint": "FIRST_PLAYABLE_V0_1_17_DEV",
+  "parent_checkpoint": "FIRST_PLAYABLE_V0_1_16_RUNTIME_PASS",
+  "status": "STATIC_VALIDATED_RUNTIME_PENDING",
+  "functional_scope": [
+    "ranged_fire_retreat_stop_fire_cycle",
+    "enemy_tiers_weak_medium_strong_alpha",
+    "tier_speed_damage_health_attack_rate_visual_scale"
+  ],
+  "preserved_contracts": {
+    "global_attack_cooldown_s": 2.0,
+    "damage_triggered_aggro": true,
+    "ranged_damage_on_projectile_impact": true,
+    "inventory_weapon_selection": true,
+    "left_common_world_target": "movement_only",
+    "left_scene_transition": "approach_and_transition",
+    "right_click": "contextual_click_only"
+  },
+  "authority": {
+    "master_v2_0_1": "READ_ONLY_UNCHANGED",
+    "living_engine_v1_0_0": "READ_ONLY_UNCHANGED",
+    "tier_values": "DEV_BALANCE_TUNING"
+  },
+  "static_checks": {
+    "checks": 28,
+    "passed": 28,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "runtime_gate": "PENDING_USER_GODOT_4_7_1",
+  "backup_authorized": false
+}

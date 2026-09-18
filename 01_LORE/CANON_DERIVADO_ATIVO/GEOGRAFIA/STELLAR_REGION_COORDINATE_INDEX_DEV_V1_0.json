@@ -1,0 +1,954 @@
+{
+  "schema_version": "1.0.0",
+  "record_id": "STELLAR-REGION-COORDINATE-INDEX-DEV-V1.0",
+  "title": "Índice de coordenadas — 1 ponto-centro por território e subregião",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "canonical_status": "ACTIVE_R2_COMPATIBLE",
+  "policy_change_note": "SUPERSEDE explícito e autorizado pelo autor do projeto: as guardas NO_FIXED_BORDER_COORDINATE (fichas de subregião) e NO_FIXED_COORDINATES_OR_POPULATION (índices de território) foram cunhadas nesta própria sessão como precaução de design, não são texto de lei-fonte imutável. O autor decidiu explicitamente introduzir coordenadas para toda região — este arquivo atende essa decisão.",
+  "r2_guard": "Reaproveita o crs_id já usado pelo motor em country_scale.py ('ACRS-STELLAR-GEODETIC-V1') em vez de inventar um novo padrão. Coordenadas são SINTÉTICAS e DETERMINÍSTICAS (geradas por layout circular por código de território/subregião, não por medição real nem aleatoriedade) — representam um PONTO-CENTRO de referência (útil para mapa/UI/distância relativa), não uma fronteira poligonal fixa. Nenhuma soberania, população ou fronteira política é definida ou alterada por este arquivo.",
+  "generation_method": "13 territórios dispostos em círculo abstrato (raio 40, ângulo = 360/13 × índice do código TER-XXX). Cada subregião recebe um offset determinístico (raio 3, ângulo = 360/8 × sufixo numérico do código SUB-XXX-0NN) a partir do centro do seu território-pai.",
+  "regions": [
+    {
+      "region_id": "TER-001",
+      "region_type": "TERRITORY",
+      "coordinate_center": {
+        "longitude": 40.0,
+        "latitude": 0.0,
+        "altitude_m": -2.43,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": null
+    },
+    {
+      "region_id": "TER-002",
+      "region_type": "TERRITORY",
+      "coordinate_center": {
+        "longitude": 37.833,
+        "latitude": 12.988,
+        "altitude_m": -2.1,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": null
+    },
+    {
+      "region_id": "TER-003",
+      "region_type": "TERRITORY",
+      "coordinate_center": {
+        "longitude": 31.566,
+        "latitude": 24.569,
+        "altitude_m": 2.27,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": null
+    },
+    {
+      "region_id": "TER-004",
+      "region_type": "TERRITORY",
+      "coordinate_center": {
+        "longitude": 21.878,
+        "latitude": 33.487,
+        "altitude_m": -2.07,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": null
+    },
+    {
+      "region_id": "TER-005",
+      "region_type": "TERRITORY",
+      "coordinate_center": {
+        "longitude": 9.819,
+        "latitude": 38.776,
+        "altitude_m": 2.82,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": null
+    },
+    {
+      "region_id": "TER-006",
+      "region_type": "TERRITORY",
+      "coordinate_center": {
+        "longitude": -3.303,
+        "latitude": 39.863,
+        "altitude_m": 768.84,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": null
+    },
+    {
+      "region_id": "TER-007",
+      "region_type": "TERRITORY",
+      "coordinate_center": {
+        "longitude": -16.068,
+        "latitude": 36.631,
+        "altitude_m": 2.84,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": null
+    },
+    {
+      "region_id": "TER-008",
+      "region_type": "TERRITORY",
+      "coordinate_center": {
+        "longitude": -27.091,
+        "latitude": 29.429,
+        "altitude_m": 1.49,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": null
+    },
+    {
+      "region_id": "TER-009",
+      "region_type": "TERRITORY",
+      "coordinate_center": {
+        "longitude": -35.179,
+        "latitude": 19.038,
+        "altitude_m": -87.92,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": null
+    },
+    {
+      "region_id": "TER-010",
+      "region_type": "TERRITORY",
+      "coordinate_center": {
+        "longitude": -39.454,
+        "latitude": 6.584,
+        "altitude_m": -2.59,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": null
+    },
+    {
+      "region_id": "TER-011",
+      "region_type": "TERRITORY",
+      "coordinate_center": {
+        "longitude": -39.454,
+        "latitude": -6.584,
+        "altitude_m": -1.92,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": null
+    },
+    {
+      "region_id": "TER-012",
+      "region_type": "TERRITORY",
+      "coordinate_center": {
+        "longitude": -35.179,
+        "latitude": -19.038,
+        "altitude_m": -0.22,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": null
+    },
+    {
+      "region_id": "TER-013",
+      "region_type": "TERRITORY",
+      "coordinate_center": {
+        "longitude": -27.091,
+        "latitude": -29.429,
+        "altitude_m": 1.25,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": null
+    },
+    {
+      "region_id": "SUB-004-001",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 6.942,
+        "latitude": 41.829,
+        "altitude_m": -1.91,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-004"
+    },
+    {
+      "region_id": "SUB-004-002",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 4.821,
+        "latitude": 42.708,
+        "altitude_m": -2.37,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-004"
+    },
+    {
+      "region_id": "SUB-004-003",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 2.7,
+        "latitude": 41.829,
+        "altitude_m": -2.03,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-004"
+    },
+    {
+      "region_id": "SUB-001-001",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 42.121,
+        "latitude": 2.121,
+        "altitude_m": -2.7,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-001"
+    },
+    {
+      "region_id": "SUB-001-002",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 40.0,
+        "latitude": 3.0,
+        "altitude_m": 0.0,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-001"
+    },
+    {
+      "region_id": "SUB-001-003",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 37.879,
+        "latitude": 2.121,
+        "altitude_m": -2.58,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-001"
+    },
+    {
+      "region_id": "SUB-010-001",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": -12.063,
+        "latitude": -35.28,
+        "altitude_m": 0.77,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-010"
+    },
+    {
+      "region_id": "SUB-010-002",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": -14.184,
+        "latitude": -34.401,
+        "altitude_m": 1.85,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-010"
+    },
+    {
+      "region_id": "SUB-010-003",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": -16.305,
+        "latitude": -35.28,
+        "altitude_m": -0.6,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-010"
+    },
+    {
+      "region_id": "SUB-013-001",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 37.539,
+        "latitude": -16.468,
+        "altitude_m": -2.24,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-013"
+    },
+    {
+      "region_id": "SUB-013-002",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 35.418,
+        "latitude": -15.589,
+        "altitude_m": -2.4,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-013"
+    },
+    {
+      "region_id": "SUB-013-003",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 33.297,
+        "latitude": -16.468,
+        "altitude_m": 0.39,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-013"
+    },
+    {
+      "region_id": "SUB-009-001",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": -27.819,
+        "latitude": -24.404,
+        "altitude_m": -83.55,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-009"
+    },
+    {
+      "region_id": "SUB-009-002",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": -29.94,
+        "latitude": -23.525,
+        "altitude_m": -65.28,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-009"
+    },
+    {
+      "region_id": "SUB-009-003",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": -32.061,
+        "latitude": -24.404,
+        "altitude_m": -67.87,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-009"
+    },
+    {
+      "region_id": "SUB-005-001",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": -12.063,
+        "latitude": 39.522,
+        "altitude_m": -1.63,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-005"
+    },
+    {
+      "region_id": "SUB-005-002",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": -14.184,
+        "latitude": 40.401,
+        "altitude_m": 0.62,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-005"
+    },
+    {
+      "region_id": "SUB-005-003",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": -16.305,
+        "latitude": 39.522,
+        "altitude_m": -2.67,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-005"
+    },
+    {
+      "region_id": "SUB-006-001",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": -27.819,
+        "latitude": 28.646,
+        "altitude_m": 797.85,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-006"
+    },
+    {
+      "region_id": "SUB-006-002",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": -29.94,
+        "latitude": 29.525,
+        "altitude_m": 901.18,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-006"
+    },
+    {
+      "region_id": "SUB-006-003",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": -32.061,
+        "latitude": 28.646,
+        "altitude_m": 792.86,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-006"
+    },
+    {
+      "region_id": "SUB-002-001",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 37.539,
+        "latitude": 20.71,
+        "altitude_m": 2.15,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-002"
+    },
+    {
+      "region_id": "SUB-002-002",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 35.418,
+        "latitude": 21.589,
+        "altitude_m": 1.87,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-002"
+    },
+    {
+      "region_id": "SUB-002-003",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 33.297,
+        "latitude": 20.71,
+        "altitude_m": -0.03,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-002"
+    },
+    {
+      "region_id": "SUB-003-001",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 24.844,
+        "latitude": 35.04,
+        "altitude_m": -2.11,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-003"
+    },
+    {
+      "region_id": "SUB-003-002",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 22.723,
+        "latitude": 35.919,
+        "altitude_m": 1.67,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-003"
+    },
+    {
+      "region_id": "SUB-003-003",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 20.602,
+        "latitude": 35.04,
+        "altitude_m": -0.56,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-003"
+    },
+    {
+      "region_id": "SUB-007-001",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": -36.717,
+        "latitude": 11.694,
+        "altitude_m": 1.98,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-007"
+    },
+    {
+      "region_id": "SUB-007-002",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": -38.838,
+        "latitude": 12.573,
+        "altitude_m": 2.95,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-007"
+    },
+    {
+      "region_id": "SUB-007-003",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": -40.959,
+        "latitude": 11.694,
+        "altitude_m": 1.31,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-007"
+    },
+    {
+      "region_id": "SUB-008-001",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": -36.717,
+        "latitude": -7.452,
+        "altitude_m": -2.96,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-008"
+    },
+    {
+      "region_id": "SUB-008-002",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": -38.838,
+        "latitude": -6.573,
+        "altitude_m": 1.19,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-008"
+    },
+    {
+      "region_id": "SUB-008-003",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": -40.959,
+        "latitude": -7.452,
+        "altitude_m": -0.47,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-008"
+    },
+    {
+      "region_id": "SUB-011-001",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 6.942,
+        "latitude": -37.587,
+        "altitude_m": 1.17,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-011"
+    },
+    {
+      "region_id": "SUB-011-002",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 4.821,
+        "latitude": -36.708,
+        "altitude_m": 0.1,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-011"
+    },
+    {
+      "region_id": "SUB-011-003",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 2.7,
+        "latitude": -37.587,
+        "altitude_m": -2.71,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-011"
+    },
+    {
+      "region_id": "SUB-011-004",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 1.821,
+        "latitude": -39.708,
+        "altitude_m": 1.29,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-011"
+    },
+    {
+      "region_id": "SUB-011-005",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 2.7,
+        "latitude": -41.829,
+        "altitude_m": 1.28,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-011"
+    },
+    {
+      "region_id": "SUB-011-006",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 4.821,
+        "latitude": -42.708,
+        "altitude_m": 346.97,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-011"
+    },
+    {
+      "region_id": "SUB-012-001",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 24.844,
+        "latitude": -30.798,
+        "altitude_m": -0.16,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-012"
+    },
+    {
+      "region_id": "SUB-012-002",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 22.723,
+        "latitude": -29.919,
+        "altitude_m": 2.78,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-012"
+    },
+    {
+      "region_id": "SUB-012-003",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 20.602,
+        "latitude": -30.798,
+        "altitude_m": 1.73,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-012"
+    },
+    {
+      "region_id": "TER-014",
+      "region_type": "TERRITORY",
+      "coordinate_center": {
+        "longitude": -16.068,
+        "latitude": -36.631,
+        "altitude_m": 250.08,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": null
+    },
+    {
+      "region_id": "SUB-014-001",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 38.16,
+        "latitude": -15.234,
+        "altitude_m": 210.81,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-014"
+    },
+    {
+      "region_id": "SUB-014-002",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 36.039,
+        "latitude": -14.355,
+        "altitude_m": 280.25,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-014"
+    },
+    {
+      "region_id": "SUB-014-003",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 33.918,
+        "latitude": -15.234,
+        "altitude_m": -2.47,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-014"
+    },
+    {
+      "region_id": "TER-015",
+      "region_type": "TERRITORY",
+      "coordinate_center": {
+        "longitude": -3.303,
+        "latitude": -39.863,
+        "altitude_m": -0.39,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": null
+    },
+    {
+      "region_id": "SUB-015-001",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 38.663,
+        "latitude": -14.148,
+        "altitude_m": 1.16,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-015"
+    },
+    {
+      "region_id": "SUB-015-002",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 36.542,
+        "latitude": -13.269,
+        "altitude_m": 2.01,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-015"
+    },
+    {
+      "region_id": "SUB-015-003",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 34.421,
+        "latitude": -14.148,
+        "altitude_m": 1.22,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-015"
+    },
+    {
+      "region_id": "TER-016",
+      "region_type": "TERRITORY",
+      "coordinate_center": {
+        "longitude": 9.819,
+        "latitude": -38.776,
+        "altitude_m": 116.33,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": null
+    },
+    {
+      "region_id": "SUB-016-001",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 39.076,
+        "latitude": -13.186,
+        "altitude_m": 141.78,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-016"
+    },
+    {
+      "region_id": "SUB-016-002",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 36.955,
+        "latitude": -12.307,
+        "altitude_m": 139.4,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-016"
+    },
+    {
+      "region_id": "SUB-016-003",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 34.834,
+        "latitude": -13.186,
+        "altitude_m": 123.55,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-016"
+    },
+    {
+      "region_id": "TER-017",
+      "region_type": "TERRITORY",
+      "coordinate_center": {
+        "longitude": 21.878,
+        "latitude": -33.487,
+        "altitude_m": 1476.15,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": null
+    },
+    {
+      "region_id": "SUB-017-001",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 39.42,
+        "latitude": -12.329,
+        "altitude_m": 1463.39,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-017"
+    },
+    {
+      "region_id": "SUB-017-002",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 37.299,
+        "latitude": -11.45,
+        "altitude_m": 1441.62,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-017"
+    },
+    {
+      "region_id": "SUB-017-003",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 35.178,
+        "latitude": -12.329,
+        "altitude_m": 1491.35,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-017"
+    },
+    {
+      "region_id": "TER-018",
+      "region_type": "TERRITORY",
+      "coordinate_center": {
+        "longitude": 31.566,
+        "latitude": -24.569,
+        "altitude_m": -523.19,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": null
+    },
+    {
+      "region_id": "SUB-018-001",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 39.709,
+        "latitude": -11.56,
+        "altitude_m": -647.38,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-018"
+    },
+    {
+      "region_id": "SUB-018-002",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 37.588,
+        "latitude": -10.681,
+        "altitude_m": -530.25,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-018"
+    },
+    {
+      "region_id": "SUB-018-003",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 35.467,
+        "latitude": -11.56,
+        "altitude_m": -682.29,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-018"
+    },
+    {
+      "region_id": "TER-019",
+      "region_type": "TERRITORY",
+      "coordinate_center": {
+        "longitude": 37.833,
+        "latitude": -12.988,
+        "altitude_m": 2.25,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": null
+    },
+    {
+      "region_id": "SUB-019-001",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 39.954,
+        "latitude": -10.867,
+        "altitude_m": -0.46,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-019"
+    },
+    {
+      "region_id": "SUB-019-002",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 37.833,
+        "latitude": -9.988,
+        "altitude_m": -0.58,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-019"
+    },
+    {
+      "region_id": "SUB-019-003",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 35.712,
+        "latitude": -10.867,
+        "altitude_m": -1.39,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-019"
+    },
+    {
+      "region_id": "TER-020",
+      "region_type": "TERRITORY",
+      "coordinate_center": {
+        "longitude": 44.2,
+        "latitude": -12.8,
+        "altitude_m": 0.15,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": null
+    },
+    {
+      "region_id": "SUB-020-001",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 44.2,
+        "latitude": -12.8,
+        "altitude_m": 0.2,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-020"
+    },
+    {
+      "region_id": "SUB-020-002",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 45.1,
+        "latitude": -12.8,
+        "altitude_m": 0.4,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-020"
+    },
+    {
+      "region_id": "SUB-020-003",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 44.2,
+        "latitude": -13.7,
+        "altitude_m": 0.0,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-020"
+    },
+    {
+      "region_id": "SUB-020-004",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 43.3,
+        "latitude": -12.8,
+        "altitude_m": 0.1,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-020"
+    },
+    {
+      "region_id": "SUB-020-005",
+      "region_type": "SUBREGION",
+      "coordinate_center": {
+        "longitude": 44.2,
+        "latitude": -11.9,
+        "altitude_m": 0.3,
+        "crs_id": "ACRS-STELLAR-GEODETIC-V1"
+      },
+      "parent_territory": "TER-020"
+    }
+  ],
+  "update_note_fase_44": "TER-014 Cadeia de Cinzas adicionado; layout circular recalculado para 14 territórios (era 13) — mesmo método determinístico, nenhuma coordenada aleatória.",
+  "update_note_fase_48": "TER-015 Vale das Ruinas adicionado; layout circular recalculado para 15 territorios (era 14).",
+  "update_note_fase_49": "TER-016 Confins de Gelo adicionado; layout circular recalculado para 16 territorios (era 15).",
+  "update_note_fase_50": "TER-017 Arquipelago Etereo adicionado; layout circular recalculado para 17 territorios (era 16).",
+  "update_note_fase_51": "TER-018 Fossa Abissal adicionado; layout circular recalculado para 18 territorios (era 17).",
+  "update_note_fase_52": "TER-019 Mata Perdida adicionado; layout circular recalculado para 19 territorios (era 18) - ultimo recalculo desta serie.",
+  "policy_change_note_v1_1": "V1.1 (mesma sessão, etapa 2 do Atlas): altitude_m deixa de ser sempre 0 e passa a refletir o terrain_type já classificado em STELLAR_TERRAIN_TRAVEL_SYSTEM_DEV_V1_0.json (tabela ALTITUDE_TIER_BY_TERRAIN, gameplay-derived/NOT_CANON) — não é medição real, é profundidade/altitude relativa qualitativa tornada numérica para o motor/atlas."
+}

@@ -1,0 +1,17 @@
+{
+  "record_id": "ANDROMEDA_AUTHORITY_MATRIX_V3_R2_REBASED",
+  "project": "ANDROMEDA CODEX",
+  "version": "V3",
+  "status": "ACTIVE_AFTER_R2_REBASE_LOT_002",
+  "supersedes": "ANDROMEDA_AUTHORITY_MATRIX_V2_R2_REBASED",
+  "decision_rule": "R2 is immutable for lore, characters, episodes and cosmology. A lower layer can add story-bearing material only after compatibility, provenance and user approval are recorded.",
+  "layers": [
+    {"rank": 1, "source": "ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2", "authority": "IMMUTABLE_ORIGIN", "classification_default": "CANON_R2_CONFIRMADO"},
+    {"rank": 2, "source": "USER_APPROVED_R2_COMPATIBLE_DERIVATION", "authority": "ACTIVE_WITH_PROVENANCE", "classification_default": "CANON_DERIVADO_ATIVO", "lot_002": ["MAG-008 to MAG-030", "magic-technology coexistence", "material symbiosis traces", "Root global clock with gates", "post-S01E08 Amadon counsellor"]},
+    {"rank": 3, "source": "MASTER_V2_0_1_AND_LIVING_SIM_ENGINE_V1_0_0", "authority": "READ_ONLY_TECHNICAL_EXTENSION", "classification_default": "EVIDENCIA_TECNICA_NAO_CANONICA_UNLESS_PROMOTED"},
+    {"rank": 4, "source": "STAGE16_STAGE17_ARPG_RUNTIME_PROTOTYPES", "authority": "DERIVED_EVIDENCE_ONLY", "classification_default": "EVIDENCIA_TECNICA_NAO_CANONICA"},
+    {"rank": 5, "source": "LLM_PLAYER_OR_UNAPPROVED_PROPOSAL", "authority": "NO_CANON_AUTHORITY", "classification_default": "DIVERGENCIA_FORMAL_AGUARDANDO_DECISAO"}
+  ],
+  "conflict_handling": {"r2_conflict": "CONFLITO_COM_R2_CONGELADO", "formal_rule_divergence": "DIVERGENCIA_FORMAL_AGUARDANDO_DECISAO", "technical_variant": "EVIDENCIA_TECNICA_NAO_CANONICA", "approved_expansion": "CANON_DERIVADO_ATIVO"},
+  "story_generators": ["A finite technique changes a local conflict without becoming a universal shortcut.", "A global clock turns ecological evidence into competing local stakes.", "Advice from Amadon transforms information into choice rather than command."]
+}

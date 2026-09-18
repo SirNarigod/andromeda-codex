@@ -1,0 +1,27 @@
+{
+  "record_id": "STELLAR-PROFESSION-CATALOG-V1.0",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "status": "QUALITATIVE_ENGINE_NEUTRAL_CATALOG",
+  "rule": "A profession is a learnable social practice. It does not assign a fixed player class or rewrite an R2 character identity.",
+  "professions": [
+    {"id":"JOB-001","title":"Criador e cuidador de fauna","domains":["food","ecology"],"sources":["CRI-002","CRI-003","CRI-004","CRI-005"],"narrative_cost":"Exige cuidado ambiental e lida com contaminação."},
+    {"id":"JOB-002","title":"Preparador e conservador de alimento","domains":["food","health"],"sources":["RES-001 through RES-006"],"narrative_cost":"Segurança alimentar depende de técnica e tempo."},
+    {"id":"JOB-003","title":"Guia, caçador e rastreador","domains":["travel","wildlife"],"sources":["PER-002","PER-006","CRI-001","CRI-027","CRI-028","CRI-029","CRI-030","CRI-031","CRI-032"],"narrative_cost":"Conhecer uma trilha não concede posse sobre ela. Pesca artesanal (CRI-027..032, fases 60/61) segue cota local, sem fazenda de loot."},
+    {"id":"JOB-004","title":"Investigador de campo","domains":["evidence","routes","hazards"],"sources":["PER-002","HIS-004"],"narrative_cost":"Provas podem contrariar rumores ou interesses locais."},
+    {"id":"JOB-005","title":"Mediador comunitário","domains":["social","contracts"],"sources":["PER-006","FAC-010"],"narrative_cost":"Acordos resolvem acesso local, não soberania."},
+    {"id":"JOB-006","title":"Artesão e reparador de oficina","domains":["maintenance","production"],"sources":["FAC-009","FAC-010","TEC-003"],"narrative_cost":"Reparo consome materiais, tempo e confiança."},
+    {"id":"JOB-007","title":"Instrutor de ofício e segurança","domains":["training","workplace_safety"],"sources":["FAC-009"],"narrative_cost":"Padrões de segurança podem atrasar uma necessidade urgente."},
+    {"id":"JOB-008","title":"Agente de licenças e contratos","domains":["trade","routes"],"sources":["FAC-010","PER-008"],"narrative_cost":"Uma licença voluntária pode excluir quem não consegue cumprir seu custo."},
+    {"id":"JOB-009","title":"Coordenador de abastecimento","domains":["economy","logistics"],"sources":["FAC-010","TEC-001"],"narrative_cost":"Toda prioridade de rota deixa outra comunidade esperando."},
+    {"id":"JOB-010","title":"Técnico ferroviário e de rota","domains":["infrastructure","travel"],"sources":["TEC-001"],"narrative_cost":"Infraestrutura conecta pessoas, mas falhas expõem dependências."},
+    {"id":"JOB-011","title":"Curador de campo","domains":["health","care"],"sources":["PER-001","FAC-001"],"narrative_cost":"Tratamento exige evidência, consentimento e recursos."},
+    {"id":"JOB-012","title":"Especialista em contenção","domains":["magic","hazards"],"sources":["PER-003","FAC-001","FAC-004"],"narrative_cost":"Conter uma ameaça frequentemente cria custo social ou logístico."},
+    {"id":"JOB-013","title":"Pesquisador arcano-botânico","domains":["research","magic","ecology"],"sources":["PER-001","PER-003","PER-011","FAC-005"],"narrative_cost":"Pesquisa não concede direito automático de experimentar em vidas ou territórios."},
+    {"id":"JOB-014","title":"Armeiro rúnico e mantenedor","domains":["technology","magic","equipment"],"sources":["ART-004 through ART-015","MAG-002"],"narrative_cost":"Toda matriz rúnica exige compatibilidade, carga e manutenção."},
+    {"id":"JOB-015","title":"Guarda e resposta a risco","domains":["defense","containment"],"sources":["ART-012","ART-013","FAC-004"],"narrative_cost":"Força de contenção não substitui investigação ou reconhecimento local."},
+    {"id":"JOB-016","title":"Extrator de recursos (mineração e coleta)","domains":["resources","ecology"],"sources":["MINERAL_RESOURCE_LOCALITY_LINKS_DEV_V1_0","FLO-001 through FLO-012"],"narrative_cost":"Extração consome capacidade ecológica finita e depende de manutenção de rota/construção (fase 41)."}
+  ],
+  "forbidden_class_assumptions": ["fixed player class", "exclusive faction ownership of a profession", "automatic R2 character role transfer"],
+  "runtime_only_fields": ["rank", "pay", "labor_supply", "skill_level", "training_time", "tool_efficiency"],
+  "story_generators": ["Uma aprendiz precisa decidir entre um contrato lucrativo e o padrão de segurança que aprendeu.", "Um guia sabe como atravessar uma zona, mas não consegue fazê-lo sem apoio de curadores e mantenedores.", "Uma profissão em falta transforma uma oficina comum em foco político local."]
+}

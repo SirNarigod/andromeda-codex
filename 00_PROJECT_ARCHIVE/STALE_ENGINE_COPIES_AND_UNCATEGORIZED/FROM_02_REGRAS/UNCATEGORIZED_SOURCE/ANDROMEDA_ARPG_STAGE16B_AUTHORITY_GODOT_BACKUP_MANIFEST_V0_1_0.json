@@ -1,0 +1,82 @@
+{
+  "record_id": "ANDROMEDA-ARPG-STAGE16B-AUTHORITY-GODOT-BACKUP-MANIFEST-V0.1.0",
+  "created_at": "2026-08-27T15:31:49-03:00",
+  "project": "ANDRÔMEDA CÓDEX ARPG",
+  "stage": "STAGE16B",
+  "backup_identity": "ANDROMEDA_ARPG_STAGE16B_AUTHORITY_GODOT_BACKUP_V0_1_0",
+  "convention": {
+    "basis": [
+      "ANDROMEDA_CODEX_MASTER_V2_0_1_BACKUP.zip",
+      "ANDROMEDA_LIVING_SIM_ENGINE_V1_0_0_BACKUP.zip"
+    ],
+    "backup_destination_root": "C:\\Users\\thall\\Documents\\Projeto Andromeda\\Andromeda Atlas\\Backups Andromeda",
+    "control_records_root": "C:\\Users\\thall\\Documents\\ARPG CODEX",
+    "metadata_detached_from_zip": true
+  },
+  "source_checkpoint": {
+    "identity": "ANDROMEDA_ARPG_STAGE16B_AUTHORITY_GODOT_CHECKPOINT_V0_1_0",
+    "filename": "ANDROMEDA_ARPG_STAGE16B_AUTHORITY_GODOT_CHECKPOINT_V0_1_0.zip",
+    "sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc",
+    "size_bytes": 852793,
+    "entry_count": 304,
+    "zip_integrity": "CLEAN",
+    "immutable": true
+  },
+  "backup": {
+    "filename": "ANDROMEDA_ARPG_STAGE16B_AUTHORITY_GODOT_BACKUP_V0_1_0.zip",
+    "sha256": "77276aa0bcff0475193d2b85a89fdee7d27564b8b5c83af09f8725b414cd67cc",
+    "size_bytes": 852793,
+    "entry_count": 304,
+    "zip_integrity": "CLEAN",
+    "byte_identical_to_checkpoint": true,
+    "copy_method": "BINARY_FILE_COPY_WITH_FLUSH_REOPEN_AND_BYTE_COMPARE",
+    "validated": true,
+    "immutable_after_validation": true
+  },
+  "functional_matrix": {
+    "pass": 28,
+    "partial_evidence": 0,
+    "fail": 0,
+    "blocked": 0,
+    "total": 28
+  },
+  "final_audit": {
+    "file": "AUTHORITY_STAGE16B_FINAL_AUDIT_EVIDENCE_CONSOLIDATION_V0_8_9.json",
+    "record_id": "ANDROMEDA-STAGE16B-FINAL-AUDIT-EVIDENCE-CONSOLIDATION-V0.8.9",
+    "status": "PASS"
+  },
+  "restore": {
+    "file": "ANDROMEDA_ARPG_STAGE16B_AUTHORITY_GODOT_CHECKPOINT_V0_1_0_RESTORE_VALIDATED.json",
+    "checkpoint_validated": true,
+    "restore_validated": true,
+    "backup_ready": true
+  },
+  "protected_baselines": {
+    "stage16a_v0_8_1": {
+      "sha256": "03bc6b621a5ae8e0bf6542803412611855b32503154221ec7ea1b7aaf28befc4",
+      "entries": 724,
+      "verified": 724,
+      "missing": 0,
+      "divergent": 0
+    },
+    "stage16a_v0_8_0": {
+      "sha256": "21626a3152cb37e167eee24bff9d3142c5d389a8ca2827594b34211591525a6a",
+      "status": "SEALED_HISTORICAL_PREDECESSOR_INTACT"
+    },
+    "master_v2_0_1": {
+      "sha256": "6d9ac3cce7dcf6a65fdcf73859c332a0211c1af52d149077beef554bf7bbd0b2",
+      "mode": "READ_ONLY",
+      "status": "PRESERVED"
+    },
+    "living_simulation_engine_v1_0_0": {
+      "release_sha256": "6f12c9db0976e234ef55cdfe23b998c07240fa8d80eb0d0c247d12bbd16ebabc",
+      "status": "SEALED_VALIDATED_AND_PRESERVED"
+    }
+  },
+  "stage17": {
+    "readiness": "READY_TO_START",
+    "execution": "NOT_STARTED"
+  },
+  "immutability_policy": "The backup ZIP is a byte-identical copy of the already validated checkpoint. It was not extracted, rebuilt, recompressed, or opened for write after validation. All release metadata is external.",
+  "status": "STAGE16B_FINAL_BACKUP_VALIDATED"
+}

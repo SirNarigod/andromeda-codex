@@ -1,0 +1,30 @@
+{
+  "record_id": "LOC-005-003",
+  "record_kind": "DERIVED_LOCALITY_PROFILE",
+  "authority": "CANON_DERIVADO_ATIVO",
+  "name": "Salão do Principado",
+  "parent_subregion": "SUB-005-003",
+  "parent_political_unit": "TER-005",
+  "function": "Corte de Saelyra Ithren.",
+  "notable_link": "Saelyra Ithren (autoridade máxima)",
+  "safety": "FICTIONAL_LOCATION_ONLY",
+  "loc_id": "LOC-005-003",
+  "settlement_tier": "CIDADE",
+  "history": "Ithra é o único território com identidade explícita de fusão tecnomágica, e Saelyra Ithren governa a partir de um salão que reflete essa dualidade de propósito: metade da estrutura construída em pedra tradicional, metade em painéis de metal e circuito rúnico visível, uma escolha arquitetônica deliberada dos antepassados dela pra sinalizar que o Principado nunca escolheria um caminho em detrimento do outro.",
+  "sensory": "A metade tradicional do salão tem tapeçarias e móveis de madeira entalhada como qualquer corte principesca esperaria; a metade tecnomágica exibe painéis que emitem luz própria em padrões sutis, refletindo o estado de sistemas de monitoramento territorial que só a própria Saelyra sabe interpretar por completo. A transição entre as duas metades é abrupta o bastante que visitantes de primeira vez frequentemente hesitam no meio do salão, incertos de qual lado deveriam se aproximar da corte.",
+  "figures": [
+    {
+      "role": "Princesa reinante",
+      "name": "Saelyra Ithren",
+      "note": "Governa equilibrando cuidadosamente as duas identidades do próprio território, recebendo tanto delegações tradicionais quanto técnicas com igual formalidade — carrega, em segredo, preocupação crescente de que o Enclave Sintético está se tornando influente demais dentro do Principado pra continuar sendo tratado como presença meramente contratada."
+    },
+    {
+      "role": "Emissário do Enclave",
+      "name": "Unidade Corvin-3, linhagem SOCIÁVEL",
+      "note": "Representa interesses de manutenção e reparo do Enclave junto à corte, sempre educado e formalmente correto — Saelyra confia na competência dele, mas nunca totalmente na neutralidade das prioridades que ele representa."
+    }
+  ],
+  "hook": "Corvin-3 trouxe um pedido de expansão de presença técnica do Enclave dentro do Principado, argumentando necessidade crescente de manutenção — Saelyra suspeita que aceitar consolidaria uma dependência que será difícil reverter depois, mas recusar pode prejudicar relações comerciais importantes que o próprio Principado cultivou com esforço.",
+  "detail": "Toda audiência formal no Salão exige que o peticionário escolha, ao entrar, de qual lado da sala se aproximar primeiro — tradicional ou tecnomágico — uma escolha simbólica que a corte observa atentamente, embora Saelyra insista publicamente que não influencia em nada o resultado da audiência.",
+  "prohibitions": ["NO_R2_EPISODE_REWRITE", "NO_RUNTIME_CANON_PROMOTION"]
+}

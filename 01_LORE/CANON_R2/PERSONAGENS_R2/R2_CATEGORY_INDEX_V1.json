@@ -1,0 +1,86 @@
+{
+  "record_id": "R2-PER-CATEGORY-INDEX-V1",
+  "authority": "CANON_R2_CONFIRMADO",
+  "category": "PER",
+  "category_name": "Personagens",
+  "items": [
+    {
+      "id": "PER-001",
+      "title": "Aelyra Voss",
+      "path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-001__aelyra-voss.json",
+      "spoiler": 2,
+      "sealed": true
+    },
+    {
+      "id": "PER-002",
+      "title": "Kenua Vaarn",
+      "path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-002__kenua-vaarn.json",
+      "spoiler": 1,
+      "sealed": false
+    },
+    {
+      "id": "PER-003",
+      "title": "Serlis Aftermoon",
+      "path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-003__serlis-aftermoon.json",
+      "spoiler": 1,
+      "sealed": false
+    },
+    {
+      "id": "PER-004",
+      "title": "Genes Arvath",
+      "path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-004__genes-arvath.json",
+      "spoiler": 2,
+      "sealed": true
+    },
+    {
+      "id": "PER-005",
+      "title": "Serverus Vaelkor",
+      "path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-005__serverus-vaelkor.json",
+      "spoiler": 1,
+      "sealed": false
+    },
+    {
+      "id": "PER-006",
+      "title": "Kaenna Vor",
+      "path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-006__kaenna-vor.json",
+      "spoiler": 1,
+      "sealed": false
+    },
+    {
+      "id": "PER-007",
+      "title": "Ishara Veyn",
+      "path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-007__ishara-veyn.json",
+      "spoiler": 2,
+      "sealed": true
+    },
+    {
+      "id": "PER-008",
+      "title": "Maelkar Enohar",
+      "path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-008__maelkar-enohar.json",
+      "spoiler": 3,
+      "sealed": true
+    },
+    {
+      "id": "PER-009",
+      "title": "Daren Vaarn",
+      "path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-009__daren-vaarn.json",
+      "spoiler": 3,
+      "sealed": true
+    },
+    {
+      "id": "PER-010",
+      "title": "Meyra Vaarn",
+      "path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-010__meyra-vaarn.json",
+      "spoiler": 2,
+      "sealed": true
+    },
+    {
+      "id": "PER-011",
+      "title": "Ilyan Morveth",
+      "path": "01_LORE/CANON_R2/PERSONAGENS_R2/PER-011__ilyan-morveth.json",
+      "spoiler": 3,
+      "sealed": true
+    }
+  ],
+  "source": "Projeto Andromeda.zip!/Projeto Andromeda/Andromeda Atlas/Cópia Oficial - Andromeda Codex V1/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2.zip!/ANDROMEDA_CODEX_V1_0_1_MASTER_DELIVERY_R2/ACTIVE/ANDROMEDA_CODEX_V1_0_1_FINAL.zip!/ANDROMEDA_CODEX_V1_0_1/codex/canonical/codex.json"
+}
