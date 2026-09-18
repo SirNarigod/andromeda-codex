@@ -25,6 +25,7 @@ Thumbs.db
 node_modules/
 dist/
 package-lock.json
+*.zip
 
 # Agentes / local only
 .agents/
